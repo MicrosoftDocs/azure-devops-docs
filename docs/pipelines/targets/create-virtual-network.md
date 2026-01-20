@@ -2,7 +2,7 @@
 title: Create a virtual network for build-deploy-test
 description: Provision and manage VMs in SCVMM - Create a virtual network for build-deploy-test scenarios using Network Virtualization
 ms.assetid: 64620E9B-D2D1-4516-921A-40A159019513
-ms.topic: conceptual
+ms.topic: concept-article
 ms.author: ronai
 author: RoopeshNair
 ms.date: 02/01/2022

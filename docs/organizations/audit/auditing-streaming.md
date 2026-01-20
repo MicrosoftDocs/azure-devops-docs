@@ -7,8 +7,8 @@ ms.assetid:
 ms.author: chcomley
 author: chcomley
 ms.topic: quickstart
-monikerRange: '= azure-devops'
-ms.date: 11/11/2024
+monikerRange: 'azure-devops'
+ms.date: 12/01/2025
 ms.custom: sfi-image-nochange
 ---
 
@@ -32,7 +32,7 @@ Audit streams represent a pipeline that flows audit events from your Azure DevOp
 Private linked workspaces aren't supported today.
 
 > [!NOTE]
-> Auditing isn't available for on-premises deployments of Azure DevOps Server. It is possible to connect an audit stream to an on-premises or cloud-based instance of Splunk, but make sure you allow IP ranges for inbound connections. For details, see [Allowed address lists and network connections, IP addresses and range restrictions](../security/allow-list-ip-url.md#range-restrictions).
+> Auditing isn't available for on-premises deployments. It's possible to connect an audit stream to an on-premises or cloud-based instance of Splunk, but make sure you allow IP ranges for inbound connections. For details, see [Allowed address lists and network connections, IP addresses and range restrictions](../security/allow-list-ip-url.md#range-restrictions).
 
 ## Prerequisites
 
@@ -50,7 +50,7 @@ Private linked workspaces aren't supported today.
    ![Select Auditing in Organization settings](media/auditing-streaming/select-auditing-organization-settings.png)
    
 > [!NOTE]
-> If you don't see *Auditing* in Organization Settings, then auditing is not currently enabled for your organization. Someone in the organization owner or Project Collection Administrators (PCAs) group must [enable Auditing](azure-devops-auditing.md#enable-and-disable-auditing) in Organization Policies. You will then be able to see events on the Auditing page if you have the appropriate permissions.
+> If you don't see *Auditing* in Organization Settings, then auditing isn't currently enabled for your organization. Someone in the organization owner or Project Collection Administrators (PCAs) group must [enable Auditing](azure-devops-auditing.md#enable-and-disable-auditing) in Organization Policies. You can see events on the Auditing page if you have the appropriate permissions.
 
 4. Go to the **Streams** tab, and then select **New stream**. 
 
@@ -63,7 +63,7 @@ Private linked workspaces aren't supported today.
    - [Azure Monitor Log](#set-up-an-azure-monitor-log-stream)
 
 > [!NOTE]
-> At this time, you can only have 2 streams for each target type.
+> At this time, you can only have two streams for each target type.
 
    :::image type="content" source="media/auditing-streaming/create-stream-dialog.png" alt-text="Create your stream dialog pop out":::
 
@@ -76,7 +76,7 @@ Streams send data to Splunk via the HTTP Event Collector endpoint.
    Once enabled, you should have an HTTP Event Collector token and the URL to your Splunk instance. You need both the token and URL to create a Splunk stream.
 
    > [!NOTE]
-   > When you're creating a new Event Collector token in Splunk, don't check “Enable indexer acknowledgement”. If it's checked, then no events flow into Splunk. You can edit the token in Splunk to remove that setting. 
+   > When you're creating a new Event Collector token in Splunk, don't check “Enable indexer acknowledgment.” If it's checked, then no events flow into Splunk. You can edit the token in Splunk to remove that setting. 
 
 2. Enter your Splunk URL, which is the pointer to your Splunk instance. Ensure that you specify a port at the end of the URL. The default port is `8088`, so your URL would be similar to `https://prd-p-2k3mp2xhznbs.cloud.splunk.com:8088` or `https://prd-p-2k3mp2xhznbs.splunkcloud.com`. 
 
@@ -93,9 +93,9 @@ Your stream gets configured and events begin to arrive on Splunk within half an 
 1. Create an Event Grid topic on Azure.
 
 > [!NOTE]
-> Go to the **Advanced** tab and ensure that the Event Schema is set to **Event Grid Schema**. Other schemas are not supported by Azure DevOps. 
+> Go to the **Advanced** tab and ensure that the Event Schema is set to **Event Grid Schema**. Other schemas aren't supported by Azure DevOps. 
 
-2. Make note of the "Topic Endpoint" and one of the two "Access Keys". Use this information to create the Event Grid connection.
+2. Make note of the "Topic Endpoint" and one of the two "Access Keys." Use this information to create the Event Grid connection.
 
    :::image type="content" source="media/auditing-streaming/azure-event-grid.png" alt-text="Azure Event Grid information":::
 
@@ -108,23 +108,32 @@ Once you have your Event Grid stream configured, you can set up subscriptions on
 ### Set up an Azure Monitor Log stream
 
 1. Create a [Log Analytics workspace](/azure/azure-monitor/learn/quick-create-workspace).
-2. Open the workspace and select **Agents**.
-3. Select **Log Analytics agent instructions** to view the workspace ID and primary key.
-4. Make note of the workspace ID and primary key.
+2. Open the workspace and select **Overview**.
+3. Make note of the workspace ID, Resource group, and Workspace name.
+4. Get the shared key using one of the following methods:
+  - **Using PowerShell and the Az.OperationalInsights module:**
+    ```PowerShell
+    Get-AzOperationalInsightsWorkspaceSharedKey -ResourceGroupName <Resource group> -Name <Workspace name>
+    ```
+  - **Using Azure CLI:**
+    ```Azure CLI
+    az monitor log-analytics workspace get-shared-keys --resource-group <Resource group> --workspace-name <Workspace name>
+    ```
+  - **Using the REST API:** Call the [Get Shared Keys API](/rest/api/loganalytics/shared-keys/get-shared-keys?view=rest-loganalytics-2025-07-01&tabs=HTTP&preserve-view=true )
 
-   :::image type="content" source="media/auditing-streaming/azure-monitor-log-keys.png" alt-text="Make note of workspace ID and primary key":::
-
-6. Set up your Azure Monitor log stream by proceeding through the same initial steps to create a stream.
-7. For target options, select **Azure Monitor Logs**.
-
-8. Enter the workspace ID and primary key, and then select **Set up**. The primary key is stored securely within Azure DevOps and never displayed again in the UI. Rotate the key regularly, which you can do by getting a new key from Azure Monitor Log and editing the stream.
+> [!NOTE]
+> Direct access to workspace keys through the Azure portal is deprecated. Use PowerShell, Azure CLI, or REST API methods to retrieve shared keys programmatically.
+ 
+5. Set up your Azure Monitor log stream by proceeding through the same initial steps to create a stream.
+6. For target options, select **Azure Monitor Logs**.
+7. Enter the workspace ID and primary key, and then select **Set up**. The primary key is stored securely within Azure DevOps and never displayed again in the UI. Rotate the key regularly, which you can do by getting a new key from Azure Monitor Log and editing the stream.
 
    :::image type="content" source="media/auditing-streaming/create-stream-azure-monitor-logs.png" alt-text="Enter workspace ID and primary key and then select Set up.":::
 
 The stream is enabled and new events begin to flow within half an hour or less. You can reference the AzureDevOpsAuditing table.
 
 > [!NOTE]
-> The default retention time for Azure Monitor Logs is 30 days only. You can configure and chose longer retention by selecting **Data Retention** under **Usage and estimated costs** in your workspace settings. This incurs additional charges. Check the [documentation](/azure/azure-monitor/platform/manage-cost-storage#change-the-data-retention-period) to manage usage and costs with Azure Monitor Logs for more details.
+> The default retention time for Azure Monitor Logs is 30 days only. You can configure and chose longer retention by selecting **Data Retention** under **Usage and estimated costs** in your workspace settings. This action incurs more charges. Check the [documentation](/azure/azure-monitor/platform/manage-cost-storage#change-the-data-retention-period) to manage usage and costs with Azure Monitor Logs for more details.
 
 ## Edit a stream
 
@@ -150,14 +159,14 @@ Parameters available for editing differ per stream type.
 You can re-enable a disabled stream. It catches up on any audit events that were missed for up to the previous seven days. That way you don't miss any events from the duration that the stream was disabled. 
 
 > [!NOTE]
-> Events older than 7 days aren't included in the catch-up if a stream is disabled for more than 7 days.
+> Events older than seven days aren't included in the catch-up if a stream is disabled for more than seven days.
 
 ## Delete a stream
 
 To delete a stream, make sure that you have the *Delete audit streams* permission.
 
 > [!IMPORTANT]
-> Once you delete a stream you can't get it back.
+> Once you delete a stream, you can't get it back.
 
 1. Hover over the stream you want to delete and select the vertical three dots on the far right. 
 2. Select **Delete stream**.

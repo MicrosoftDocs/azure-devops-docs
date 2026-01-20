@@ -74,7 +74,7 @@ The following table summarizes the integration points between Azure Boards and A
       Manually link work items to builds.
    :::column-end::: 
    :::column span="2":::
-      ::: moniker range=">= azure-devops-2020"
+      ::: moniker range="<=azure-devops"
       Link work items to builds in the same or other project within the organization or collection.
       ::: moniker-end
       
@@ -100,7 +100,7 @@ The following table summarizes the integration points between Azure Boards and A
 :::row-end:::
 --- 
 ::: moniker-end
-::: moniker range=">= azure-devops-2020"
+::: moniker range="<=azure-devops"
 :::row:::
    :::column span="1":::
       Set integration option to automatically create *Integrated in release stage* links to work items linked to a branch, commit, or pull request associated with a release.
@@ -111,17 +111,7 @@ The following table summarizes the integration points between Azure Boards and A
 :::row-end:::
 --- 
 ::: moniker-end
-::: moniker range="azure-devops-2020"
-:::row:::
-   :::column span="1":::
-      View list of work items linked to a Classic release pipeline
-   :::column-end::: 
-   :::column span="2":::
-      Lists all work items linked to a build or release. 
-   :::column-end:::
-:::row-end:::
---- 
-::: moniker-end
+
 ::: moniker range="azure-devops"
 :::row:::
    :::column span="1":::
@@ -151,7 +141,7 @@ The following table summarizes the integration points between Azure Boards and A
    :::column-end:::
 :::row-end:::
 --- 
-::: moniker range=">= azure-devops-2020"
+::: moniker range="<=azure-devops"
 :::row:::
    :::column span="1":::
       View and quickly navigate to release stages a work item is linked to.
@@ -162,17 +152,7 @@ The following table summarizes the integration points between Azure Boards and A
 :::row-end:::
 ---  
 ::: moniker-end
-::: moniker range="azure-devops-2020"
-:::row:::
-   :::column span="1":::
-      Create a work item on failure, optionally set values for a work item field (Classic)
-   :::column-end::: 
-   :::column span="2":::
-      [Automatically create a work item and set fields when a build fails](../pipelines/build/options.md).
-   :::column-end:::
-:::row-end:::
----
-::: moniker-end
+
 ::: moniker range="azure-devops"
 :::row:::
    :::column span="1":::
@@ -184,7 +164,7 @@ The following table summarizes the integration points between Azure Boards and A
 :::row-end:::
 ---
 ::: moniker-end
-::: moniker range=">= azure-devops-2020"
+::: moniker range="<=azure-devops"
 :::row:::
    :::column span="1":::
       Query Work Items task. Ensure the number of matching work items returned from a query is within a threshold.

@@ -4,6 +4,7 @@ description: See the Sprint 252 feature updates for Azure DevOps, including next
 author: ckanyika
 ms.author: glmorale
 ms.date: 2/24/2025
+ms.topic: release-notes
 ---
 
 # Azure DevOps - Sprint 252 Update

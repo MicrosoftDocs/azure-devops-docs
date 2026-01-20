@@ -3,7 +3,7 @@ title: Prevent the deletion of an active area or iteration path
 author: danhellem
 ms.author: dahellem
 ms.date: 04/26/2024
-ms.topic: article
+ms.topic: whats-new
 ms.service: azure-devops
 ms.subservice: azure-devops-release-notes
 description: Prevent the deletion of an active area or iteration path 

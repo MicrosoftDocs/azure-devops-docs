@@ -8,33 +8,25 @@ ms.author: chcomley
 author: chcomley
 monikerRange: '<= azure-devops'
 ms.topic: overview
-ms.date: 04/11/2025
-ms.custom:
-  - engagement-fy23
-  - sfi-image-nochange
+ms.date: 12/01/2025
+ms.custom: engagement-fy23, sfi-image-nochange
 ---
 
 # Extensibility points
 
 [!INCLUDE [version-lt-eq-azure-devops](../../../includes/version-lt-eq-azure-devops.md)]
 
-Extensions enhance the Azure DevOps user experience by contributing new capabilities. This article highlights the most common extensibility points that your extension can target. Extensibility points allow packages to add functionality in a manner defined by the operating system. For more information about the Azure DevOps extensibility model, see the [Contribution model](../../develop/contributions-overview.md).
+Extensions add capabilities to the Azure DevOps UI and REST surface. This article lists the most common extensibility points you can target and shows the IDs you use in your extension manifest. For an overview of the extension model and contribution patterns, see the [Contribution model](../../develop/contributions-overview.md).
 
-The [Contributions Guide extension](https://marketplace.visualstudio.com/items/ms-samples.samples-contributions-guide) is a sample extension. Install this extension into your organization. Once it's installed, you see the extensibility points that are available. We recommend you install this extension into a personal or test organization. The [source code for this extension](https://github.com/Microsoft/vso-extension-samples/tree/master/contributions-guide) is also available. 
-
-For more information, see the following references:
-- [azure-devops-extension-api](/javascript/api/azure-devops-extension-api/)
-- [azure-devops-extension-sdk](/javascript/api/azure-devops-extension-sdk/)
-- [azure-devops-extension-sample](https://github.com/microsoft/azure-devops-extension-sample)
-- [installed extension API](/rest/api/azure/devops/extensionmanagement/installed-extensions?view=azure-devops-rest-6.0&preserve-view=true)
+[!INCLUDE [extension-samples-tip](../../includes/extension-samples-tip.md)]
 
 <a name="hubs"></a>
 
 ## Hubs and hub groups
 
-Hubs and hub groups are the primary navigation elements in Azure DevOps. **Files**, **Releases**, **Backlogs**, and **Queries** are examples of hubs. A hub belongs to a hub group. The **Files** hub, for example, belongs to the project-level **Azure Repos** hub group. Hub groups can exist at the organization or collection level or at the project level. Most extensions contribute to the project level.
+Hubs and hub groups provide primary navigation in Azure DevOps (for example, **Files**, **Releases**, **Backlogs**, **Queries**). A hub belongs to a hub group; for example, the **Files** hub belongs to the project-level **Azure Repos** hub group. Hub groups can exist at the organization/collection level or at the project level. Most extensions contribute at the project level.
 
-The following table describes the most common hub groups in Azure DevOps where you can contribute hubs.
+The following table lists common hub groups and their contribution IDs.
 
 ::: moniker range="<=azure-devops"
 
@@ -45,42 +37,41 @@ The following table describes the most common hub groups in Azure DevOps where y
 | Azure Pipelines     | `ms.vss-build-web.build-release-hub-group` | Project/team             | :::image type="content" source="media/build/azure-pipelines.png" alt-text="Screenshot of custom hub added to Azure Pipelines."::: |
 | Azure Test Plans    | `ms.vss-test-web.test-hub-group`           | Project/team             | :::image type="content" source="media/test/azure-test-plans.png" alt-text="Screenshot of custom hub added to Azure Test Plans."::: |
 | Project settings    | `ms.vss-web.project-admin-hub-group`       | Project                  | :::image type="content" source="media/test/project-settings.png" alt-text="Screenshot of custom project admin hub."::: |
-| Organization settings  | `ms.vss-web.collection-admin-hub-group` | Organization or collection  | :::image type="content" source="media/test/organization-settings.png" alt-text="Screenshot of custom organization admin hub."::: |
+| Organization settings | `ms.vss-web.collection-admin-hub-group`  | Organization/collection  | :::image type="content" source="media/test/organization-settings.png" alt-text="Screenshot of custom organization admin hub."::: |
 ::: moniker-end
 
-### Example
+### Contribute a hub
 
-The following example shows how to contribute a hub to the Code hub group:
+This example shows a hub contribution that targets the Code hub group:
 
 ```json
 {
-    ...
-    "contributions": [
-        {
-            "id": "my-custom-hub",
-            "type": "ms.vss-web.hub",
-            "targets": [
-                "ms.vss-code-web.code-hub-group"
-            ],
-            "properties": {
-                "name": "Code Hub",
-                "order": 30,
-                "uri": "/views/code/custom.html"
-            }
-        }
-    ]
+  "contributions": [
+    {
+      "id": "my-custom-hub",
+      "type": "ms.vss-web.hub",
+      "targets": [
+        "ms.vss-code-web.code-hub-group"
+      ],
+      "properties": {
+        "name": "Code Hub",
+        "order": 30,
+        "uri": "/views/code/custom.html"
+      }
+    }
+  ]
 }
 ```
 
-* `ms.vss-web.hub` is the type of contribution. This type is defined in the `vss-web` extension published under the `ms` publisher. This type declares optional and required properties that are required by contributions of this type (for example, name, order, and so on).
-* `ms.vss-code-web.code-hub-group` is the full ID of the hub group contribution that this hub targets. This contribution is declared in the `vss-code-web` extension published under the `ms` publisher.
+* `ms.vss-web.hub` is the type of contribution. The `vss-web` extension published under the `ms` publisher defines this type. This type defines the optional and required properties for contributions of this type (for example, name, order).
+* `ms.vss-code-web.code-hub-group` is the full ID of the hub group contribution that this hub targets. The `vss-code-web` extension published under the `ms` publisher declares this contribution.
 * `my-custom-hub` is the short ID of this contribution; `{publisherId}.{extensionId}.my-custom-hub` is the full ID.
 
 <a name="menus"></a>
 
 ## Add an icon to your menu or toolbar
 
-Add an icon property, so it can be used directly by name.
+Add an icon property so you can reference it directly by name.
 
 We recommend providing your own icon.
 Using your own icon example:
@@ -102,6 +93,9 @@ Using the [Office UI Fabric Icons](https://uifabricicons.azurewebsites.net/) exa
             "uri": "/views/code/custom.html"
         }
 ```
+
+> [!NOTE]
+> Icons, `icon` and `iconName` properties, don't support tab contributions. They only work for hubs, menus, and toolbars.
 
 ## Settings for menus and toolbars
 
@@ -135,23 +129,6 @@ Using the [Office UI Fabric Icons](https://uifabricicons.azurewebsites.net/) exa
 | Product backlog pane                 | `ms.vss-work-web.requirement-backlog-toolpane`         | :::image type="content" source="media/work/product-backlog-pane.png" alt-text="Screenshot of Product Backlog Custom Pane.":::   |
 | Iteration backlog pane               | `ms.vss-work-web.iteration-backlog-toolpane`           | :::image type="content" source="media/work/iteration-backlog-pane.png" alt-text="Screenshot of Iteration Backlog Custom Pane."::: |
 
-::: moniker-end
-
-::: moniker range="=azure-devops-2020"
-
-## Azure Pipelines menu and toolbar
-
-| Name                                   | Target ID                                                               | Preview                  |
-| -------------------------------------- | ----------------------------------------------------------------------- | ------------------------ |
-| Completed build menu                   | `ms.vss-build-web.completed-build-menu`                                 | :::image type="content" source="media/build/completed-build-actions.png" alt-text="Screenshot of completed build actions.":::              |
-| Build definitions menu                 | `ms.vss-build-web.build-definition-menu`                                | :::image type="content" source="media/build/build-definition-actions.png" alt-text="Screenshot of build definition actions.":::            |
-| Test results toolbar action            | `ms.vss-test-web.test-results-actions-menu`                             | :::image type="content" source="../../media/extension-test-custom-action.png" alt-text="Screenshot of test results toolbar action.":::     |
-| Test result details tab                | `ms.vss-test-web.test-result-details-tab-items`                         | :::image type="content" source="../../media/extension-test-custom-tab.png" alt-text="Screenshot of test result details tab.":::            |
-| Release pipeline explorer context menu | `ms.vss-releaseManagement-web.release-definition-explorer-context-menu` | :::image type="content" source="media/release/definition-explorer-context-menu.png" alt-text="Screenshot of definition explorer context menu."::: |
-| Release pipeline explorer toolbar menu | `ms.vss-releaseManagement-web.release-definition-explorer-toolbar-menu` | :::image type="content" source="media/release/definition-explorer-toolbar-menu.png" alt-text="Screenshot of definition explorer toolbar menu."::: |
-| Release summary toolbar menu           | `ms.vss-releaseManagement-web.release-editor-tool-bar-menu`             | :::image type="content" source="media/release/release-summary-toolbar-menu.png" alt-text="Screenshot of release summary toolbar menu.":::  |
-| Release summary tab                    | `ms.vss-releaseManagement-web.release-details-view`                     | :::image type="content" source="media/release/release-summary-tab.png" alt-text="Screenshot of release summary tab.":::                    |
-| Release summary section                | `ms.vss-releaseManagement-web.release-details-summary-tab`              | :::image type="content" source="media/release/release-summary-section.png" alt-text="Screenshot of release summary section.":::            |
 ::: moniker-end
 
 ::: moniker range="azure-devops"
@@ -214,16 +191,6 @@ Tasks perform work in a build or release. For more information, see [Add a custo
 
 ## Other extensibility points
 
-- **Dashboard widget**: An extension can contribute a new type of widget that can be added by users to a [dashboard](../../../report/dashboards/overview.md). Learn how to [contribute a dashboard widget](../../develop/add-dashboard-widget.md).
-- **Work item form**: The work item form is enhanced by extensions with new sections, tabs, actions, and custom field renderers. For more information, learn how to [extend the work item form](../../develop/add-workitem-extension.md).
-- **Service hooks**: A *consumer* is the service that events are sent to in Service Hooks. An extension can contribute consumer services. These services get configured by a user (or programmatically), to send events to that service. For more information, see [Create a custom consumer for service hooks](../../develop/add-service-hook.md).
-::: moniker range="azure-devops"
-- **Features**:
-    **Name:** Preview feature (hosted only)  
-    **Target ID:** ms.vss-web.managed-features  
-::: moniker-end
-::: moniker range="< azure-devops"
-- **Features**:
-    **Name:** Feature (on-premises only)  
-    **Target ID:** ms.vss-web.managed-features-onprem  
-::: moniker-end
+- **Dashboard widget**: An extension can contribute a new type of widget that users can add to a [dashboard](../../../report/dashboards/overview.md). Learn how to [contribute a dashboard widget](../../develop/add-dashboard-widget.md).
+- **Work item form**: Extensions enhance the work item form with new sections, tabs, actions, and custom field renderers. For more information, learn how to [extend the work item form](../../develop/add-workitem-extension.md).
+- **Service hooks**: A *consumer* is the service that Service Hooks sends events to. An extension can contribute consumer services. A user (or programmatically) configures these services to send events to that service. For more information, see [Create a custom consumer for service hooks](../../develop/add-service-hook.md).

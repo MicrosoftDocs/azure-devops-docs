@@ -4,6 +4,7 @@ author: gloridelmorales
 ms.author: glmorale
 ms.date: 10/4/2022
 description: With this update, move work items to a column or swimlane from the work item action menu.
+ms.topic: release-notes
 ---
 # Move work items to a column or swimlane from the work item action menu
 

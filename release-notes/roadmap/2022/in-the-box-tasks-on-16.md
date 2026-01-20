@@ -3,7 +3,7 @@ title: All in-the-box tasks run on Node 16
 author: gloridelmorales
 ms.author: glmorale
 ms.date: 10/12/2022
-ms.topic: article
+ms.topic: whats-new
 ms.service: azure-devops
 ms.subservice: azure-devops-release-notes
 description: All in-the-box tasks run on Node 16

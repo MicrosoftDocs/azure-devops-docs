@@ -6,11 +6,12 @@ ms.custom: devx-track-python
 ms.date: 11/17/2023
 monikerRange: "<=azure-devops"
 "recommendations": "true"
+ms.topic: how-to
 ---
 
 # Use packages from Python package index (PyPI)
 
-[!INCLUDE [version-gt-eq-azure-devops-2019](../../includes/version-gt-eq-2019.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 Using Azure Artifacts, developers can publish and consume packages from both Azure Artifacts feeds and external registries such as PyPI.org. By enabling upstream sources, you can streamline your package management, using a single feed to manage both your own packages and those consumed from public registries. Once enabled, Azure Artifacts automatically saves a copy of any package installed by a collaborator or higher from an upstream source. This article will guide you through setting up your project and using the command line to efficiently consume Python packages from PyPI. 
 

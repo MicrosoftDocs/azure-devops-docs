@@ -1,24 +1,25 @@
 ---
-title: Query by area or iteration path in Azure Boards and Azure DevOps
+title: Query By Area Or Iteration Path
 titleSuffix: Azure Boards
-description: Learn how to query for work items based on their area or iteration path in Azure Boards and Azure DevOps.
+description: Learn how to query for work items based on their area or iteration path in Azure Boards.
 ms.custom: boards-queries
 ms.service: azure-devops-boards
 ms.assetid: 65066197-F5BE-45F3-898E-1BA3C7BFDCA3
 ms.author: chcomley
 author: chcomley
 ms.topic: example-scenario
+ai-usage: ai-assisted
 monikerRange: '<= azure-devops'
-ms.date: 10/24/2021 
+ms.date: 10/27/2025 
 ---
 
 # Query by area or iteration path 
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
-The Area Path and Iteration Path are two fields that appear on the work tracking form for all work item types. You define them for a project&mdash;[area paths](../../organizations/settings/set-area-paths.md) and [iteration paths](../../organizations/settings/set-iteration-paths-sprints.md)&mdash;and then select the ones you want to associate with a team. 
+Area Path and Iteration Path fields appear on all work item forms for every work item type. You define these paths for your project—[area paths](../../organizations/settings/set-area-paths.md) and [iteration paths](../../organizations/settings/set-iteration-paths-sprints.md)—and then select the ones you want to associate with a team. 
 
-To better understand how to work with area and iteration paths, see [About teams and Agile tools](../../organizations/settings/about-teams-and-settings.md).  
+To understand how to work with area and iteration paths, see [About teams and Agile tools](../../organizations/settings/about-teams-and-settings.md).  
 
 ## Prerequisites
 
@@ -28,66 +29,66 @@ To better understand how to work with area and iteration paths, see [About teams
 
 ## Supported operators and macros 
 
-When creating queries and specifying the Area Path and Iteration Path fields, you can use the following operators: 
+When you create queries and specify Area Path and Iteration Path fields, you can use the following operators: 
 
 > [!div class="mx-tdCol2BreakAll"]  
 > |Operator     | Use when you want to...| 
 > |-------------|--------------|
 > | `=`           | Specify one specific area or iteration path  |
-> | `<>`          | Filter out one, specific area or iteration path. |
-> | `In`          | Filter for a set of area or iteration paths.  |
-> | `Not In`      | Exclude items that are assigned to a set of area or iteration paths. |
-> | `Under`       | Specify all paths under a select area or iteration path. |
-> | `Not Under`   | Exclude items assigned under a specific area or iteration path.  |
+> | `<>`          | Filter out one specific area or iteration path |
+> | `In`          | Filter for a set of area or iteration paths  |
+> | `Not In`      | Exclude items assigned to a set of area or iteration paths |
+> | `Under`       | Specify all paths under a selected area or iteration path |
+> | `Not Under`   | Exclude items assigned under a specific area or iteration path  |
 
-Along with these operators, you can use the following macros when you select the Iteration Path. For examples, see [Query by date or current iteration](query-by-area-iteration-path.md). 
+You can use the following macros when you select the Iteration Path field. For examples, see the query examples on this page.
 
 > [!div class="mx-tdCol2BreakAll"]  
 > 
 > |            Macro      |               Use when you want to...                              |
-|-------------------------|---------------------------------------------------------------|
-> |  `@CurrentIteration`  |                  Specify the current iteration associated with the selected team context.                  |
-> | `@CurrentIteration +/- n` | Filter items based on assignment to a sliding window of sprints associated with the selected team context. |
-> | `@TeamAreas`       |        Filter items based on area path(s) assigned to a specific team.                       |
+> |----------------------|---------------------------------------------------------------|
+> |  `@CurrentIteration`  | Specify the current iteration associated with the selected team context |
+> | `@CurrentIteration +/- n` | Filter items based on assignment to a sliding window of sprints associated with the selected team context |
+> | `@TeamAreas`       | Filter items based on area path(s) assigned to a specific team |
 
 > [!NOTE]
-> The `@CurrentIteration +/- n` and `@TeamAreas` macros are supported for Azure DevOps Server 2020 and later versions. These macros are only supported from the web portal. Queries that contain these macros don't work when opened in Visual Studio/Team Explorer, Microsoft Excel, or Microsoft Project.
+> The Azure DevOps web portal evaluates macros such as `@CurrentIteration`, `@CurrentIteration +/- n`, and `@TeamAreas` (Services and Server). Non-web clients (Visual Studio/Team Explorer, Excel, Project) and direct WIQL/REST calls require explicit area/iteration paths and don't accept raw macro tokens. When you save a query in the web UI, the portal typically expands macros to concrete values in the stored WIQL—verify this behavior in your environment if you need to use queries outside the web UI.
 
 ## Area path queries 
 
-You can specify to filter for work items assigned to several area paths by using the **In** operator as shown in the following example.  
+You can filter for work items assigned to several area paths by using the **In** operator as shown in the following example.  
 
 > [!div class="mx-imgBorder"]
-> ![Query on Area Path for several areas](media/query-area-iteration/query-with-in-operator.png)
+> ![Screenshot that shows a query on Area Path for several areas.](media/query-area-iteration/query-with-in-operator.png)
 
 ## Node Name and keyword-based queries  
 
-Use the **Node Name** field to filter on work items assigned to area paths based on a keyword using the **Contains** operator. The **Node Name** specifies the last node of an **Area Path**, which corresponds to the last node in the tree hierarchy.  
+Use the **Node Name** field to filter work items assigned to area paths based on a keyword using the **Contains** operator. The **Node Name** specifies the last node of an **Area Path**, which corresponds to the last node in the tree hierarchy.  
 
-The following query yields the same result as the previous example.  
-
-> [!div class="mx-imgBorder"]
-> ![Query on Node Name for several areas](media/query-area-iteration/query-with-in-operator-node-name.png)
-
-In this example, the filter returns any work items assigned to an area path whose last node contains the word "Azure".
+The following query produces the same result as the previous example.  
 
 > [!div class="mx-imgBorder"]
-> ![Query for several sprints](media/query-area-iteration/query-filter-contains-node-name.png)
+> ![Screenshot that shows a query on Node Name for several areas.](media/query-area-iteration/query-with-in-operator-node-name.png)
+
+In this example, the filter returns work items assigned to an area path whose last node contains the word "Azure."
+
+> [!div class="mx-imgBorder"]
+> ![Screenshot that shows a query for several sprints.](media/query-area-iteration/query-filter-contains-node-name.png)
 
 Here's another example that uses the **Node Name** and the **In** operator. 
 
 > [!div class="mx-imgBorder"]
-> ![Query on Node Name for several areas](media/query-area-iteration/query-with-in-operator-node-name.png)
+> ![Screenshot that shows a query on Node Name for several areas.](media/query-area-iteration/query-with-in-operator-node-name.png)
 
 ::: moniker range="<=azure-devops"
 <a id="team-area-path"></a> 
 
 ## Team area path queries  
 
-Use the <strong>@TeamAreas</strong> macro to quickly find items assigned to the area paths assigned to a specific team. Specify the **=** operator. The Query Editor automatically prompts for you to enter the name of the team. You can add it by entering the name of the team and choosing the team value that appears in the search filter criteria.   
+Use the <strong>@TeamAreas</strong> macro to find items assigned to the area paths that a specific team uses. Specify the **=** operator. The Query Editor prompts you to enter the team name; select the team from the suggested list.
 
 > [!div class="mx-imgBorder"]
-> ![Query on area paths assigned to a team](media/query-area-iteration/teamareas-macro-example.png)
+> ![Screenshot that shows a query on area paths assigned to a team.](media/query-area-iteration/teamareas-macro-example.png)
 
 ::: moniker-end
 
@@ -104,20 +105,20 @@ Use the <strong>@TeamAreas</strong> macro to quickly find items assigned to the 
 
 For each field, data path=```TreePath```, reportable type=```Dimension```, index attribute=```True```. 
 
-If you define a path name that is longer than 256 characters, you can't specify it in Microsoft Project. To avoid this problem, define path names of no more than 10 characters, and don't nest nodes more than 14 levels deep.
+If you define a path name longer than 256 characters, you can't specify it in Microsoft Project. To avoid this problem, define path names of no more than 10 characters, and don't nest nodes more than 14 levels deep.
 
 You can't apply most field rules to system fields, such as System.AreaPath and System.IterationPath fields. For more information, see [Rules and rule evaluation](../../organizations/settings/work/rule-reference.md).
 
-The following fields don't appear on work item forms but are tracked for each work item type. These fields provide a numeric value for each classification value that is defined for a project. You can use these fields to filter queries and create reports.
+The following fields don't appear on work item forms but Azure DevOps tracks them for each work item type. These fields provide a numeric value for each classification value that you define for a project. You can use these fields to filter queries and create reports.
 
 > [!div class="mx-tdCol2BreakAll"]  
 > |**Field name**|**Description**|**Reference name**|**Data type**|
 > |---|---|---|---|
-> |Area ID|The unique ID of the area to which this work item is assigned.|System.AreaId|Integer|
-> |Iteration ID|The unique ID of the iteration to which this work item is assigned.|System.IterationId|Integer|
+> |Area ID|The unique ID of the area where you assign this work item.|System.AreaId|Integer|
+> |Iteration ID|The unique ID of the iteration where you assign this work item.|System.IterationId|Integer|
 > |Node Name|The name of the last node of an area path. For example, if the area path is Project\A1\B2\C3, the node name is C3.|System.NodeName|String|
 
-The default reportable type is none. Area ID and Iteration ID are indexed, Node Name isn't. To learn more about field attributes, see [Work item fields and attributes](../work-items/work-item-fields.md).
+The default reportable type is none. Area ID and Iteration ID have indexes. Node Name doesn't. To learn more about field attributes, see [Work item fields and attributes](../work-items/work-item-fields.md).
 
 ## Related content 
 

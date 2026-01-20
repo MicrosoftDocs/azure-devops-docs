@@ -4,7 +4,7 @@ titleSuffix: Azure Boards
 description: Learn about query operators, macros, and sample queries used to list work items for Azure Boards and Azure DevOps.
 ms.custom: work-items, engagement-fy23
 ms.service: azure-devops-boards
-ms.topic: conceptual
+ms.topic: overview
 ms.author: chcomley
 author: chcomley
 monikerRange: '<= azure-devops'
@@ -70,13 +70,13 @@ Use this index to quickly access concepts and tasks related to work items and in
       **Boards and backlogs**
       - [Delivery plans](../backlogs/backlogs-boards-plans.md)  
       - [Filtering](../backlogs/filter-backlogs-boards-plans.md)  
-      ::: moniker range=">= azure-devops-2020"
+      ::: moniker range="<=azure-devops"
       - [Rollup](../backlogs/display-rollup.md)  
       ::: moniker-end
    :::column-end:::
    :::column span="1":::
       **Queries and reporting**
-      ::: moniker range=">= azure-devops-2020"
+      ::: moniker range="<=azure-devops"
       - [Queries](../queries/about-managed-queries.md)  
       ::: moniker-end
       - [Charts](../../report/dashboards/charts.md)  
@@ -115,13 +115,13 @@ The following tasks are available to users with **Contributor** permissions and 
       - [Add tasks](../sprints/add-tasks.md)  
       - [Apply a template to a work item](../backlogs/work-item-template.md)  
       - [Capture work item as a template](../backlogs/work-item-template.md#capture-a-work-item-as-a-template)  
-      ::: moniker range=">= azure-devops-2020"
+      ::: moniker range="<=azure-devops"
       - [Define a work item template](../backlogs/work-item-template.md)
       ::: moniker-end
       
       **View and navigate work items**
       - [Open work items](view-add-work-items.md)  
-      ::: moniker range=">= azure-devops-2020"
+      ::: moniker range="<=azure-devops"
       - [View work items (mobile)](../../project/navigation/mobile-work.md)  
       - [View work items (web)](view-add-work-items.md)  
       - [View work assigned to me](view-add-work-items.md)  
@@ -169,7 +169,7 @@ The following tasks are available to users with **Contributor** permissions and 
       **Tags and organization**
       - [Add tags](../queries/add-tags-to-work-items.md)  
       - [Manage work item tags](../queries/add-tags-to-work-items.md#delete-remove-or-manage-tags)  
-      ::: moniker range=">= azure-devops-2020"
+      ::: moniker range="<=azure-devops"
       - [Delete work item tags](../queries/add-tags-to-work-items.md#delete-remove-or-manage-tags)  
       ::: moniker-end
       - [Group work items](../backlogs/organize-backlog.md#map-items-to-group-them-under-a-feature-or-epic)  
@@ -188,7 +188,7 @@ The following tasks are available to users with **Contributor** permissions and 
       - [Query for work items](../queries/using-queries.md)  
       - [List work items](../queries/using-queries.md)  
       - [Query work item history](../queries/history-and-auditing.md#query-history)  
-      ::: moniker range=">= azure-devops-2020"
+      ::: moniker range="<=azure-devops"
       - [View history](../queries/history-and-auditing.md#view-history)  
       ::: moniker-end
       - [Filter the History tab](../queries/history-and-auditing.md#filter-history)  
@@ -204,7 +204,7 @@ The following tasks are available to users with **Contributor** permissions and 
       **Planning and forecasting**
       - [Forecast work items](../sprints/forecast.md)  
       - [Track dependencies](../plans/track-dependencies.md)  
-      ::: moniker range=">= azure-devops-2020"
+      ::: moniker range="<=azure-devops"
       - [Display rollup](../backlogs/display-rollup.md)  
       ::: moniker-end
       
@@ -221,7 +221,7 @@ The following tasks are available to users with **Contributor** permissions and 
       - [Print work items](email-work-items.md#print-items)  
       
       **Delete and restore**
-      ::: moniker range=">= azure-devops-2020"
+      ::: moniker range="<=azure-devops"
       - [Delete work items](../backlogs/remove-delete-work-items.md)  
       ::: moniker-end
       - [Remove work items](../backlogs/remove-delete-work-items.md#remove-work-items)  
@@ -250,7 +250,7 @@ You customize work item types using either the Inheritance process model or On-p
 
 ::: moniker-end
 
-::: moniker range=">= azure-devops-2020"
+::: moniker range="<=azure-devops"
 ---
 :::row:::
    :::column span="1":::

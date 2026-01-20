@@ -4,19 +4,17 @@ titleSuffix: Azure DevOps
 description: Delete or remove a project from your organization in Azure DevOps. Restore a recently deleted project.
 ms.assetid: f8638962-1732-4600-94bb-3dc34e0ac48e
 ms.subservice: azure-devops-projects
-ms.topic: conceptual
+ms.topic: how-to
 ms.author: chcomley
 author: chcomley
 monikerRange: "<=azure-devops"
 ms.date: 03/11/2025
-ms.custom:
-  - engagement-fy23
-  - sfi-image-nochange
+ms.custom: engagement-fy23, sfi-image-nochange
 ---
 
 # Delete a project
 
-[!INCLUDE [version-gt-eq-2019](../../includes/version-gt-eq-2019.md)] 
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)] 
 
 If a project becomes obsolete, you can [delete it](#delete-project) from your organization or collection in Azure DevOps. If you're migrating from an on-premises Azure DevOps Server to Azure DevOps Services, you might also need to delete the project. Removing unused projects can enhance navigation by limiting it to only those projects that are currently in use.
 
@@ -52,10 +50,10 @@ Use the following procedures to save data that users most care about, such as so
 
 * **Source code and custom build templates:** Download your files as a zip file. Select ![Repository actions](../../media/icons/actions-icon.png) for the repository, file, or folder and select **Download as Zip**. Or, select :::image type="icon" source="../../boards/media/icons/download-icon.png" border="false"::: **Download** to download either all of the files in the currently selected folder, or the currently selected file.
 
-  > [!div class="mx-imgBorder"]
+    > [!div class="mx-imgBorder"]
   > ![Screenshot of Downloading code.](media/public/download-zip-file.png)
-
-  This process doesn't save any change history or links to other artifacts. If you use Git, [clone your repositories](../../repos/git/gitquickstart.md) to retain the full project history and all the branches.
+  
+    This process doesn't save any change history or links to other artifacts. If you use Git, [clone your repositories](../../repos/git/gitquickstart.md) to retain the full project history and all the branches.
 
 * **Build data**: To save logs and data in your drop build folders, see [View build results](/previous-versions/ms181733(v=vs.140)).
 
@@ -65,7 +63,7 @@ Use the following procedures to save data that users most care about, such as so
 
 For more information, see our [Data Protection Overview](../../organizations/security/data-protection.md).
 
-::: moniker range=">= azure-devops-2020"
+::: moniker range="<=azure-devops"
 
 ## Delete project
 
@@ -79,18 +77,18 @@ Use your web browser to perform a soft-delete. After 28 days, projects are  perm
 
 1. Sign in to your organization (```https://dev.azure.com/{yourorganization}```).
 
-2. Select ![gear icon](../../media/icons/gear-icon.png) **Organization settings**.
+1. Select ![gear icon](../../media/icons/gear-icon.png) **Organization settings**.
 
    ![Screenshot of selection, Organization settings.](../../media/settings/open-admin-settings-vert.png)
-
+   
 3. Select **Projects**, check one or more projects to delete, and then select **Delete**. 
 
    :::image type="content" source="media/delete-project/delete-project-organization-settings.png" alt-text="Screenshot of sequence selected Projects, check each project, and delete.":::
 
-4. Confirm deletion by entering the project name, and then select **Delete** in the popup screen.
+1. Confirm deletion by entering the project name, and then select **Delete** in the popup screen.
 
     ![Screenshot of popup confirmation delete project screen.](media/delete-project/confirm-delete-project.png)
-
+   
 ::: moniker-end
 
 Your project is deleted and can be restored up to 28 days afterward. Your deleted project is removed from your projects list.
@@ -178,32 +176,32 @@ If you inadvertently delete a project in Azure DevOps, you can restore it within
 ::: moniker range="azure-devops"
 
 1. Sign in to your organization (```https://dev.azure.com/{Your_Organization}```).
-2. Select ![gear icon](../../media/icons/gear-icon.png) **Organization settings**.
+1. Select ![gear icon](../../media/icons/gear-icon.png) **Organization settings**.
 
    ![Screenshot showing the gear icon, Organization settings.](../../media/settings/open-admin-settings-vert.png)
-
-3. Select **Overview**, and then scroll down to "recently deleted projects."
+   
+1. Select **Overview**, and then scroll down to "recently deleted projects."
 
    ![Screenshot that shows recently deleted projects.](media/delete-project/recently-deleted-projects.png)
-
-4. Highlight the project you want to restore, and then select **Restore**.
+   
+1. Highlight the project you want to restore, and then select **Restore**.
 
    ![Screenshot showing highlighted project, and Restore button.](media/restore-project/recently-deleted-projects.png)
-
+   
 ::: moniker-end
 
 ::: moniker range="<azure-devops"
 
 1. Sign in to your instance (```http://{ServerName:8080/tfs/}/{CollectionName}```).
-2. Choose ![gear icon](../../media/icons/gear-icon.png) **Admin settings**.
+1. Choose ![gear icon](../../media/icons/gear-icon.png) **Admin settings**.
 
-   :::image type="content" source="../../media/settings/open-admin-settings-server.png" alt-text="Screenshot showing Admin settings button surrounded by red box.":::
+      :::image type="content" source="../../media/settings/open-admin-settings-server.png" alt-text="Screenshot showing Admin settings button surrounded by red box.":::
 
 3. Select **Projects**, and then scroll down to **Recently deleted projects**.
-4. Highlight the project you want to restore, and then select **Restore**.
+1. Highlight the project you want to restore, and then select **Restore**.
 
    ![Screenshot showing how to Highlight the project, and then select Restore for Azure DevOps Server. ](media/restore-project/recently-deleted-projects.png)
-
+   
 ::: moniker-end
 
 ### Restore project with REST API
@@ -271,7 +269,7 @@ See the following frequently asked questions about deleting projects in Azure De
 
 ### Q: After you delete one project, why do work items in a remaining project still have links to the deleted project work items? 
 
-A: Work items get deleted within 24 hours after your project is deleted.
+A: Work item links pointing to deleted project work items will remain until the project is permanently deleted. Once the project is permanently deleted, the work item links are automatically cleaned up within 24 hours. If you need the work item links cleaned up quicker than that, you can manually remove them from the work item form directly.
 
 ### Q: I deleted a project in Azure DevOps, but in Visual Studio Team Explorer it's still there, what do I do?
 

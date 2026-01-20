@@ -4,6 +4,7 @@ author: gloridelmorales
 ms.author: glmorale
 ms.date: 6/21/2023
 description: Change organization profile image.
+ms.topic: release-notes
 ---
 # Change organization profile image
 

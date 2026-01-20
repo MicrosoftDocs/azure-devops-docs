@@ -4,7 +4,7 @@ titleSuffix: Azure DevOps
 description: Learn how to choose and use burndown/burnup charts to review sprints and releases in Azure DevOps.
 ms.custom: dashboards
 ms.subservice: azure-devops-analytics
-ms.topic: conceptual
+ms.topic: overview
 ms.author: chcomley
 author: chcomley
 monikerRange: "<=azure-devops"
@@ -13,7 +13,7 @@ ms.date: 01/02/2024
 
 # Burndown and burnup guidance
 
-[!INCLUDE [version-gt-eq-2019](../../includes/version-gt-eq-2019.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 Burndown and burnup charts support project management to visually track work completed over time.
 - Burndown charts begin with the total amount of planned work and then as work is completed graphs the remaining work. With the progression of time, the amount of to-do work decreases. 
@@ -99,7 +99,6 @@ Teams should meet immediately to course correct and either reassign work, recrui
 
 - [View and configure velocity](team-velocity.md)
 - [Implement Scrum practices for your team in Azure Boards](../../boards/sprints/scrum-overview.md)
-- [Query by date or current iteration, List work items moved out of a sprint](../../boards/queries/query-by-date-or-current-iteration.md#list-work-items-moved-out-of-a-sprint)
-- [Query by date or current iteration, List work items added to a sprint after the start date](../../boards/queries/query-by-date-or-current-iteration.md#list-work-items-added-to-a-sprint-after-the-start-date)
+- [Query by date or current iteration](../../boards/queries/query-by-date-or-current-iteration.md)
 - [Manage priorities and gain visibility across teams](../../boards/plans/visibility-across-teams.md)
 - [Understand the Scrum Burndown Chart](https://www.methodsandtools.com/archive/scrumburndown.php)  

@@ -6,8 +6,8 @@ ms.service: azure-devops
 ms.subservice: azure-devops-service-hooks
 ms.topic: how-to 
 ms.custom: cross-service
-ms.author: rgundogmus
-author: rgundogmusm
+ms.author: chcomley
+author: chcomley
 monikerRange: 'azure-devops'
 ms.date: 06/13/2025
 ---

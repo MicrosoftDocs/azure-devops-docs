@@ -4,6 +4,7 @@ author: ckanyika
 ms.author: glmorale
 ms.date: 2/9/2024
 description: General availability of Workload identity federation for Azure Resource Manager service connections 
+ms.topic: release-notes
 ---
 # General availability of Workload identity federation for Azure Resource Manager service connections 
 

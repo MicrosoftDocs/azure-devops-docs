@@ -10,7 +10,7 @@ monikerRange: "<=azure-devops"
 
 # YAML pipeline editor
 
-[!INCLUDE [version-gt-eq-2019](../../includes/version-gt-eq-2019.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 Azure Pipelines provides a YAML pipeline editor that you can use to author and edit your pipelines. The YAML editor is based on the [Monaco Editor](https://github.com/microsoft/monaco-editor). The editor provides tools like Intellisense support and a task assistant to provide guidance while you edit a pipeline.
 
@@ -18,7 +18,7 @@ This article shows you how to edit your pipelines using the YAML Pipeline editor
 
 ## Edit a YAML pipeline
 
-:::moniker range=">= azure-devops-2020"
+:::moniker range="<=azure-devops"
 
 To access the YAML pipeline editor, do the following steps.
 
@@ -40,7 +40,7 @@ To access the YAML pipeline editor, do the following steps.
 
 :::moniker-end
 
-:::moniker range=">= azure-devops-2020 < azure-devops"
+:::moniker range="<azure-devops"
 
 5. Choose **Save**. You can commit directly to your branch, or create a new branch and optionally start a pull request.
 
@@ -90,7 +90,7 @@ The task assistant provides a method for adding tasks to your YAML pipeline.
 
 - Choose **Add** to insert the task YAML into your pipeline.
 
-:::moniker range=">= azure-devops-2020"
+:::moniker range="<=azure-devops"
 
    :::image type="content" source="media/yaml-pipeline-editor/yaml-pipeline-task-assistant-task-added.png" alt-text="Task assistant added.":::
 
@@ -98,7 +98,7 @@ The task assistant provides a method for adding tasks to your YAML pipeline.
 
 :::moniker-end
 
-:::moniker range=">= azure-devops-2020"
+:::moniker range="<=azure-devops"
 
 ## Validate
 
@@ -122,7 +122,7 @@ Azure Pipelines detects incorrect variable definitions defined at the pipeline, 
 
 :::moniker-end
 
-:::moniker range=">= azure-devops-2020"
+:::moniker range="<=azure-devops"
 
 ## Download full YAML
 

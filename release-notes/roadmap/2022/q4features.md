@@ -3,7 +3,7 @@ title: Azure DevOps 2023 Q4 Features
 author: gloridelmorales
 ms.author: glmorale
 ms.date: 10/12/2022
-ms.topic: article
+ms.topic: whats-new
 ms.service: azure-devops
 ms.subservice: azure-devops-release-notes
 description: Azure DevOps 2023 Q4 Features

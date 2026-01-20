@@ -5,14 +5,14 @@ description: CalendarDate, Project, and User properties and enumerated members m
 ms.subservice: azure-devops-analytics
 ms.author: chcomley
 author: chcomley
-ms.topic: conceptual
+ms.topic: reference
 monikerRange: "<=azure-devops"
 ms.date: 11/07/2022
 ---
 
 # Calendar date, Project, and User metadata reference for Azure DevOps Analytics
 
-[!INCLUDE [version-gt-eq-2019](../../includes/version-gt-eq-2019.md)] 
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)] 
 
 The entity types and entity sets listed in the following table can be used to filter and build reports based on Analytics data. 
 

@@ -1,16 +1,19 @@
 ---
 title: Pipeline runs
-description: Learn how Azure Pipelines runs jobs, tasks, and scripts.
-ms.topic: conceptual
+description: Understand how Azure Pipelines handles jobs, stages, and agents during pipeline runs. Learn to resolve issues and improve your pipelines.
+ms.topic: concept-article
 ms.custom: devx-track-azurecli, ai-assisted
 ms.assetid: 0d207cb2-fcef-49f8-b2bf-ddb4fcf5c47a
-ms.date: 06/09/2025
+ms.date: 11/20/2025
+ms.update-cycle: 180-days
 monikerRange: "<=azure-devops"
+ms.collection: ce-skilling-ai-copilot
+#customer intent: As a developer, I want to understand how Azure Pipelines processes pipeline runs so that I can troubleshoot and optimize my CI/CD workflows.
 ---
 
 # Pipeline runs
 
-[!INCLUDE [version-gt-eq-2019](../../includes/version-gt-eq-2019.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 This article explains the sequence of activities in Azure Pipelines pipeline runs. A run represents one execution of a pipeline. Both continuous integration (CI) and continuous delivery (CD) pipelines consist of runs. During a run, Azure Pipelines processes the pipeline, and [agents](../agents/agents.md) process one or more [jobs, steps, and tasks](../get-started/key-pipelines-concepts.md).
 
@@ -223,6 +226,40 @@ Delete a tag from a pipeline run in your project using the [az pipelines runs ta
 ```azurecli 
 az pipelines runs tag delete --run-id 123 --tag YAML
 ```
+## Manage runs with the Azure DevOps MCP Server
+
+You can manage pipeline runs in Copilot with the Azure DevOps MCP server. To get started, see [Enable AI assistance with Azure DevOps MCP Server](../../mcp-server/mcp-server-overview.md).
+
+### List pipeline runs
+
+List the pipeline runs for a particular pipeline.
+
+```copilot-prompt
+Show the three most recent runs for the Tailspin pipeline.
+```
+
+This prompt lists the last three pipeline runs with a link to view each run.
+
+### Show pipeline run details
+
+Fetch the status of a specific build.
+
+```copilot-prompt
+Show the status and details for build 12345678.9.
+```
+
+This prompt returns returns the status, result, start/finish time, and summary for a build. 
+
+### Start a new pipeline run
+
+Begin a new run of a pipeline.
+
+```copilot-prompt
+Start the Tailspin pipeline and provide a direct link to the run, including the project name in the URL.
+```
+
+This prompt starts your pipeline and and provides a link to the pipeline run.
+
 
 ::: moniker-end
 

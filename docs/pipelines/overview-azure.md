@@ -1,21 +1,25 @@
 ---
-title: Deploy to Azure services
-description: See articles that describe how different Azure services support continuous integration (CI) and continuous delivery (CD) with Azure Pipelines.
+title: Deploy to Azure services with Azure Pipelines
+description: Discover how Azure Pipelines connects with Azure services like App Service, Kubernetes, and databases to optimize your CI/CD processes.
 ms.assetid: BC7FACEF-6E79-4BBA-BF53-07BD27EEB235
 ms.author: jukullam
+ms.reviewer: juliakm
 author: juliakm
-ms.date: 07/15/2024
+ms.date: 01/07/2026
 ms.topic: overview
 monikerRange: '<= azure-devops'
+#customer intent: As a DevOps engineer, I want to understand how Azure Pipelines integrates with Azure services so that I can streamline my CI/CD workflows and accelerate application delivery.
 ---
 
 # Deploy to Azure services
 
 [!INCLUDE [version-lt-eq-azure-devops](../includes/version-lt-eq-azure-devops.md)]
 
-Azure Pipelines combines continuous integration (CI) and continuous delivery (CD) to test and build your code and ship it to any target. While you don't have to use Azure services with Azure Pipelines, you can use Azure Pipelines to integrate your CI/CD process with most Azure services. Azure Pipelines CI/CD helps you take the best advantage of your Azure services.
+## Overview
 
-The following articles describe how different Azure services support CI and CD with Azure Pipelines.
+Azure Pipelines enables continuous integration (CI) and continuous delivery (CD) to test and build your code and ship it to any target. By integrating Azure Pipelines with Azure services, you can automate testing, building, and deployment processes.
+
+This article provides links to detailed guides for integrating Azure Pipelines with specific Azure services. Use the sections below to find the service you're working with, or see [Build and release tasks](tasks/index.md) for a comprehensive list of available tasks.
 
 **Azure App Configuration**
 - [Push settings to App Configuration with Azure Pipelines](/azure/azure-app-configuration/push-kv-devops-pipeline)
@@ -64,4 +68,4 @@ The following articles describe how different Azure services support CI and CD w
 - [Deploy to Azure VMs using deployment groups in Azure Pipelines](release/deployment-groups/deploying-azure-vms-deployment-groups.md)
 - [Tutorial: Deploy a Java app to a virtual machine scale set](apps/cd/azure/deploy-virtual-scale-set-java.md) 
 
-For a complete list of Azure Pipelines tasks, see [Build and release tasks](tasks/index.md) and the [Azure Pipelines task reference](/azure/devops/pipelines/tasks/reference).
+For a complete list of Azure Pipelines tasks, see the [Azure Pipelines task reference](/azure/devops/pipelines/tasks/reference).

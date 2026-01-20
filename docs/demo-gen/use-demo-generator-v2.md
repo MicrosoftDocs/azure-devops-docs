@@ -3,14 +3,16 @@ title: Use Azure DevOps Demo Generator
 description: Use the Azure DevOps Services Demo Generator V2 to create and populate a demo project.
 ms.subservice: azure-devops-new-user
 ms.author: sdanie
-ms.topic: conceptual
+ms.topic: quickstart
 monikerRange: 'azure-devops'
-ms.date: 06/06/2025    
+ms.date: 10/31/2025    
 ---
 
 # Get started creating and populating demo Azure DevOps Services projects
 
 [!INCLUDE [version-eq-azure-devops](../includes/version-eq-azure-devops.md)] 
+
+[!INCLUDE [demo-generator-discontinued-note](includes/demo-generator-discontinued-note.md)]
 
 This article explains how to use the **Azure DevOps Demo Generator** application to quickly create a new Azure DevOps project prepopulated with sample content, such as work items, repositories, and other resources needed for labs and demonstrations. 
 
@@ -61,7 +63,6 @@ To create your demo project, do the following steps:
    - **eShopOnWeb**: a .NET app that deploys to Azure App Service
    - **PartsUnlimited**: an ASP.NET app with customized CI/CD pipelines
    - **MyShuttle**: a Java app with Azure App Service deployment. 
-    If you're following a lab from [Azure DevOps Labs](https://www.azuredevopslabs.com), select the **DevOps Labs** section to choose the relevant template.
 
    Use templates that provide fictional Azure DevOps users, prepopulated Agile work items and data, source code in an Azure Repos Git repo, and access to Azure Pipelines.
 4. (Optional) Manually install any required extensions by selecting the provided link for each extension. This link opens the extension's page in the Azure DevOps Marketplace, where you can install it. 

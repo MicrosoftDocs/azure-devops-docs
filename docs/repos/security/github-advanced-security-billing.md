@@ -4,15 +4,13 @@ titleSuffix: Azure Repos
 description: Configure billing for GitHub Advanced Security for Azure DevOps
 ms.service: azure-devops
 ms.subservice: azure-devops-integration
-ms.topic: conceptual
+ms.topic: overview
 ms.author: laurajiang
 author: laurajjiang
 monikerRange: 'azure-devops'
 ms.date: 08/11/2025
 zone_pivot_groups: configure-ghazdo-bundled-individual-products
-ms.custom:
-  - cross-service
-  - sfi-image-nochange
+ms.custom: cross-service, sfi-image-nochange
 ---
 
 #  Advanced Security billing
@@ -22,7 +20,8 @@ To access results and use [GitHub Advanced Security for Azure DevOps](configure-
 
 Advanced Security gets billed monthly and directly to the Azure subscription associated with your Azure DevOps organization. Daily charges emit to your Azure subscription based off of the total number of active committers per day across your organizations.
 
-Active committers are deduplicated across an Azure subscription. Users can contribute to multiple repositories or organizations and only get counted once, as long as those organizations are associated with the same Azure subscription. 
+> [!IMPORTANT]
+> Active committers are deduplicated across an Azure subscription. Users can contribute to multiple repositories or organizations and only get counted once, as long as those organizations are associated with the same Azure subscription. 
 
 [!INCLUDE [GitHub Advanced Security for Azure DevOps is different from GitHub Advanced Security.](includes/github-advanced-security.md)]
 
@@ -50,7 +49,7 @@ Use the following table for an example of how active committers and your potenti
 | March 1 | A project collection administrator (PCA) enables Advanced Security for the Fabrikam repository. Fabrikam has 30 active committers over the past 90 days. | **30** |
 | March 19 | A PCA disables Advanced Security for the Fabrikam repository. The active committers from Fabrikam don't get counted.| 30 - 30 = **0** |
 | July 15 | A PCA re-enables Advanced Security for Fabrikam. Fabrikam has 20 active committers over the past 90 days. | **20** |
-| August 1 | A PCA enables Advanced Security for a second repository, AdventureWorks. In the last 90 days, 30 developers committed to that repository. 10 of those developers also committed to Fabrikam and don't consume more licenses. | 20 + 20 = **40** | 
+| August 1 | A PCA enables Advanced Security for a second repository, AdventureWorks. In the last 90 days, 30 developers committed to that repository. 10 of those developers also committed to Fabrikam and don't consume more licenses, so AdventureWorks only contributes 20 additional unique committers. | 20 + 20 = **40** | 
 
 ### Migrating to standalone experiences 
 For existing customers, there is no disruption to your current Advanced Security experience. If you're interested in moving to the Secret Protection and Code Security products, contact Azure DevOps support via the **Azure Portal**. File a support ticket for the GitHub Advanced Security for Azure DevOps service and select "Billing migration from bundled to standalone products" as the problem type. 
@@ -63,7 +62,8 @@ To access results and use [GitHub Advanced Security for Azure DevOps](configure-
 
 Secret Protection and Code Security are billed monthly and directly to the Azure subscription associated with your Azure DevOps organization. Daily charges emit to your Azure subscription based off of the total number of active committers per product per day across your organizations.
 
-Active committers are deduplicated across an Azure subscription per product. Users can contribute to multiple repositories or organizations and only get counted once, as long as those organizations are associated with the same Azure subscription and for the same product (i.e.: Secret Protection or Code Security). 
+> [!IMPORTANT]
+> Active committers are deduplicated across an Azure subscription. Users can contribute to multiple repositories or organizations and only get counted once, as long as those organizations are associated with the same Azure subscription and for the same product (i.e.: Secret Protection or Code Security). 
 
 [!INCLUDE [GitHub Advanced Security for Azure DevOps is different from GitHub Advanced Security.](includes/github-advanced-security.md)]
 
@@ -91,7 +91,8 @@ Use the following table for an example of how active committers and your potenti
 | March 1 | A project collection administrator (PCA) enables Secret Protection for the Fabrikam repository. Fabrikam has 30 active committers over the past 90 days. | **30** |
 | March 19 | A PCA disables Secret Protection for the Fabrikam repository. The active committers from Fabrikam don't get counted.| 30 - 30 = **0** |
 | July 15 | A PCA re-enables Secret Protection for Fabrikam. Fabrikam has 20 active committers over the past 90 days. | **20** |
-| August 1 | A PCA enables Secret Protection for a second repository, AdventureWorks. In the last 90 days, 30 developers committed to that repository. 10 of those developers also committed to Fabrikam and don't consume more licenses. | 20 + 20 = **40** |
+| August 1 | A PCA enables Secret Protection for a second repository, AdventureWorks. In the last 90 days, 30 developers committed to that repository. 10 of those developers also committed to Fabrikam and don't consume more licenses, so AdventureWorks only contributes 20 additional unique committers. | 20 + 20 = **40** |
+
 :::zone-end
 
 ## Related articles

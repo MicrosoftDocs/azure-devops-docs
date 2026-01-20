@@ -264,6 +264,8 @@
     href: agents/osx-agent.md
   - name: Self-hosted Windows agents
     href: agents/windows-agent.md
+  - name: Node.js runners
+    href: agents/nodejs-runners.md
   - name: Scale set agents
     displayName: byos, elastic agents, VMSS, autoscale
     href: agents/scale-set-agents.md
@@ -328,6 +330,8 @@
         - name: Azure Resource Manager special cases
           displayName: agent-assigned identity, publish profile
           href: library/azure-resource-manager-alternate-approaches.md
+        - name: Manually configure an ARM service connection with a secret
+          href: release/configure-app-secret.md
         - name: Manually configure workload identity service connections
           href: release/configure-workload-identity.md
         - name: Troubleshoot workload identity service connections
@@ -607,10 +611,8 @@
       href: test/review-continuous-test-results-after-build.md
     - name: Review test Analytics
       href: test/test-analytics.md
-    - name: Review code coverage
+    - name: Review & configure code coverage
       href: test/review-code-coverage-results.md
-    - name: Review pull request code coverage
-      href: test/codecoverage-for-pullrequests.md
 - name: Monitor & Troubleshoot
   items:
   - name: Troubleshoot pipeline runs
@@ -693,7 +695,7 @@
       href: security/overview.md
     - name: Use a script to update project security settings
       displayName: security, project, script
-      href: security/project-security-script.md     
+      href: security/project-security-script.md
     - name: Approach to securing YAML pipelines
       displayName: template permissions, repositories
       href: security/approach.md
@@ -723,7 +725,7 @@
     href: release/approvals/servicenow.md
 - name: Migrate
   items:
-  - name: Migrate Classic pipelines to YAML 
+  - name: Migrate Classic pipelines to YAML
     href: release/from-classic-pipelines.md
   - name: Migrate from Jenkins
     href: migrate/from-jenkins.md

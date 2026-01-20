@@ -15,7 +15,7 @@ ms.date: 03/05/2025
 
 # About GitHub integration
 
-[!INCLUDE [version-gt-eq-2019](../includes/version-gt-eq-2019.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../includes/version-lt-eq-azure-devops.md)]
 
 Azure Boards and Azure Pipelines offer multiple integration points with GitHub and GitHub Enterprise. These integrations enable seamless collaboration between development and project management, enhancing traceability, workflow efficiency, and overall productivity. By connecting your GitHub repositories with Azure DevOps, you can streamline your development processes and gain better insights into your projects.
 
@@ -31,7 +31,7 @@ Azure Boards and Azure Pipelines offer multiple integration points with GitHub a
 
 ::: moniker-end
 
-::: moniker range=">= azure-devops-2020 < azure-devops"
+::: moniker range="<azure-devops"
 
 | **Feature** | **Description** |
 |-------------|-----------------|
@@ -104,6 +104,15 @@ Additionally, you can map your GitHub repositories to one or more projects in Az
 | **Use build tags to trace GitHub sources** | Use build tags to trace GitHub sources to builds. While choosing a GitHub repository in a build definition, you can select the types of builds you want to tag, along with the tag format. For more information, see [Build GitHub repositories, Label sources](../pipelines/repos/github.md#label-sources). |
 
 ::: moniker-end
+
+## Key GitHub integration features
+
+Azure DevOps provides several ways to integrate with GitHub:
+
+- **[Use GitHub Copilot with Azure Boards](../boards/github/work-item-integration-github-copilot.md)**: Delegate work items to GitHub Copilot for automated code generation and pull request creation
+- **Link work items to commits and pull requests**: Automatically link development artifacts
+- **Status badges**: Display build and deployment status in your GitHub repository
+- **Azure Boards app**: Install the Azure Boards app in GitHub for enhanced integration
 
 ## Related content
 

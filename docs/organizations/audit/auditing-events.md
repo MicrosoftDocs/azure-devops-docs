@@ -6,9 +6,9 @@ ms.subservice: azure-devops-audit
 ms.assetid: 9F1D0A0F-02D5-4E06-A5EC-C220472A0F66
 ms.author: chcomley
 author: chcomley
-ms.topic: conceptual
+ms.topic: overview
 monikerRange: '= azure-devops'
-ms.date: 11/22/2024
+ms.date: 11/17/2025
 ---
 
 # Auditing events list
@@ -162,6 +162,7 @@ The following tables describe the type of events (or actions) that are available
 | `Library.ServiceConnectionCreatedForMultipleProjects` | Created Service Connection "{ConnectionName}" of type {ConnectionType} for multiple projects. |
 | `Library.ServiceConnectionDeleted` | Deleted Service Connection "{ConnectionName}" of type {ConnectionType} from project {ResolveProjectId:ProjectId}. |
 | `Library.ServiceConnectionDeletedFromMultipleProjects` | Deleted Service Connection "{ConnectionName}" of type {ConnectionType} from multiple projects. |
+| `Library.ServiceConnectionExecuted` | Service Connection "{ConnectionName}" of type {ConnectionType} executed in project {ResolveProjectId:ProjectId}. |
 | `Library.ServiceConnectionForProjectModified` | Modified Service Connection "{ConnectionName}" in project {ResolveProjectId:ProjectId}. |
 | `Library.ServiceConnectionModified` | Modified Service Connection "{ConnectionName}" of type {ConnectionType}. |
 | `Library.ServiceConnectionPropertyChanged` | One or more properties of Service Connection "{ConnectionName}" of type {ConnectionType} were changed: IsDisabled = {IsDisabled}. |
@@ -231,13 +232,13 @@ The following tables describe the type of events (or actions) that are available
 | `Pipelines.ResourceUnauthorizedForProject` | Successfully unauthorized {ResourceType} resource {ResourceId} for the project. |
 | `Pipelines.RunRetained` | Pipeline run "{RunName}" in project {ResolveProjectId:ProjectId} granted lease ID {RetentionLeaseId} to {RetentionOwnerId}. |
 | `Pipelines.RunUnretained` | Pipeline run "{RunName}" in project {ResolveProjectId:ProjectId} no longer retained. |
-| `Pipelines.VariablesSetAtRuntime` | A run of pipeline "{PipelineName}" in project {ResolveProjectId:ProjectId}, has defined variable(s) that are not marked as "Settable at queue time".|
-| `CheckConfiguration.ApprovalCheckOrderChanged`| >A check with id {CheckId} for {ResourceType} "{ResourceName}" in project "{ResolveProjectId:ProjectId}" has been changed from {OriginalApprovalType} to {FinalApprovalType} |
-| `CheckConfiguration.Created`| A check of type {Type} has been added to {ResourceType} "{ResourceName}" in project "{ResolveProjectId:ProjectId}" |
-| `CheckConfiguration.Deleted`| A check of type {Type} has been removed from {ResourceType} "{ResourceName}" in project "{ResolveProjectId:ProjectId}" |
-| `CheckConfiguration.Disabled` | A check of type {Type} has been disabled for {ResourceType} "{ResourceName}" in project "{ResolveProjectId:ProjectId}" |
-| `CheckConfiguration.Enabled`| A check of type {Type} has been enabled for {ResourceType} "{ResourceName}" in project "{ResolveProjectId:ProjectId}" |
-| `CheckConfiguration.Updated`| A check of type {Type} has been updated for {ResourceType} "{ResourceName}" in project "{ResolveProjectId:ProjectId}" |
+| `Pipelines.VariablesSetAtRuntime` | A run of pipeline "{PipelineName}" in project {ResolveProjectId:ProjectId}, has defined variables that aren't marked as "Settable at queue time".|
+| `CheckConfiguration.ApprovalCheckOrderChanged`| >A check with ID {CheckId} for {ResourceType} "{ResourceName}" in project "{ResolveProjectId:ProjectId}" was changed from {OriginalApprovalType} to {FinalApprovalType} |
+| `CheckConfiguration.Created`| A check of type {Type} was added to {ResourceType} "{ResourceName}" in project "{ResolveProjectId:ProjectId}" |
+| `CheckConfiguration.Deleted`| A check of type {Type} was removed from {ResourceType} "{ResourceName}" in project "{ResolveProjectId:ProjectId}" |
+| `CheckConfiguration.Disabled` | A check of type {Type} was disabled for {ResourceType} "{ResourceName}" in project "{ResolveProjectId:ProjectId}" |
+| `CheckConfiguration.Enabled`| A check of type {Type} was enabled for {ResourceType} "{ResourceName}" in project "{ResolveProjectId:ProjectId}" |
+| `CheckConfiguration.Updated`| A check of type {Type} was updated for {ResourceType} "{ResourceName}" in project "{ResolveProjectId:ProjectId}" |
 
 
 ### Policy events
@@ -320,9 +321,9 @@ The following tables describe the type of events (or actions) that are available
 | `Project.UpdateRenameQueued` | Rename for project {PreviousProjectName} to {ProjectName} was started. |
 | `Project.UpdateVisibilityCompleted` | Project {ResolveProjectId:ProjectId} visibility change from {PreviousProjectVisibility} to {ProjectVisibility} was successful. |
 | `Project.UpdateVisibilityQueued` | Project {ResolveProjectId:ProjectId} visibility change from {PreviousProjectVisibility} to {ProjectVisibility} was started. |
-| `Project.IterationPath.Create` | IterationPath {Path} has been created. |
-| `Project.IterationPath.Update` | IterationPath {Path} has been updated. |
-| `Project.IterationPath.Delete` | IterationPath {Path} has been deleted. |
+| `Project.IterationPath.Create` | IterationPath {Path} was created. |
+| `Project.IterationPath.Update` | IterationPath {Path} was updated. |
+| `Project.IterationPath.Delete` | IterationPath {Path} was deleted. |
 | `Project.Process.Modify` | Process for project {ResolveProjectId:ProjectId} was changed from {OldProcessName} to {ProcessName}. |
 | `Project.Process.ModifyWithoutOldProcess` | Process for project {ResolveProjectId:ProjectId} was changed to {ProcessName}. |
 
@@ -344,6 +345,7 @@ The following tables describe the type of events (or actions) that are available
 
 | Action | Description |
 |--------|-------------|
+| `Security.ChangeInheritance` | Permission inheritance for {NamespaceName} was changed (details include namespace, token, and inheritFlag). |
 | `Security.ModifyAccessControlLists` | Permission "{NamespaceName}\{ChangedPermission}" was set to {PermissionModifiedTo} for {ResolveIdentity:SubjectDescriptor}. |
 | `Security.ModifyPermission` | Permission "{NamespaceName}\{ChangedPermission}" was set to {PermissionModifiedTo} for {ResolveIdentity:SubjectDescriptor}. |
 | `Security.RemoveAccessControlLists` | All access control lists were removed on namespace {NamespaceName} on tokens {Tokens}. |

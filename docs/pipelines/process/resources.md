@@ -1,7 +1,7 @@
 ---
 title: Resources in YAML pipelines
 description: Learn about defining YAML resources that you can consume in your pipelines and using them to download artifacts, call variables, or trigger pipeline automation.
-ms.topic: conceptual
+ms.topic: concept-article
 ms.assetid: b3ca305c-b587-4cb2-8ac5-52f6bd46c25e
 ms.date: 08/05/2025
 monikerRange: "<=azure-devops"
@@ -10,7 +10,7 @@ monikerRange: "<=azure-devops"
 
 # Resources in YAML pipelines
 
-[!INCLUDE [version-gt-eq-2019](../../includes/version-gt-eq-2019.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 This article discusses resources for YAML pipelines. A resource is anything a pipeline uses that exists outside that pipeline. Resources in YAML pipelines can be other pipelines, builds, containers, packages, repositories, or webhooks.
 
@@ -146,7 +146,6 @@ resources:
     - PreProduction
 ```
 
-
 <a name="triggers"></a>
 #### Pipeline resource triggers
 
@@ -273,7 +272,7 @@ The optional `patterns` property defines patterns that represent files to downlo
 
 Artifacts from the `pipeline` resource download to the *$(PIPELINE.WORKSPACE)/\<pipeline-identifier>/\<artifact-identifier>* folder. For more information, see [Publish and download pipeline artifacts](../artifacts/pipeline-artifacts.md). For an alternative way to download pipeline artifacts, see [Download artifacts](../artifacts/pipeline-artifacts.md#download-artifacts).
 
-:::moniker range=">=azure-devops-2020"
+:::moniker range="<=azure-devops"
 
 #### Pipeline resource variables
 
@@ -388,7 +387,7 @@ The following table describes the `repository` resource types:
 
 #### Repository resource variables
 
-:::moniker range=">=azure-devops-2020 <azure-devops"
+:::moniker range="<azure-devops"
 
 The metadata for a repository resource is available to all jobs in every run as runtime variables. The `<alias>` is the `repository` identifier from your `repository` resource definition.
 
@@ -555,7 +554,7 @@ steps:
 
 ```
 
-::: moniker range=">= azure-devops-2020"
+::: moniker range="<=azure-devops"
 
 <a name="define-a-packages-resource"></a>
 ### Packages resource

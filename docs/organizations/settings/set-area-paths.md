@@ -8,12 +8,8 @@ ms.author: chcomley
 author: chcomley
 ms.topic: how-to
 monikerRange: '<= azure-devops'
-ms.date: 11/14/2024
-ms.custom:
-  - teams
-  - engagement-fy23
-  - devx-track-azurecli
-  - sfi-image-nochange
+ms.date: 12/22/2025
+ms.custom: teams, engagement-fy23, devx-track-azurecli, sfi-image-nochange
 ---
 
 # Define area paths and assign to a team
@@ -54,7 +50,7 @@ If you're new to managing projects and teams, follow these steps to configure yo
 1. **Assign area paths to work items**: Assign work items to the defined area paths using [bulk modify](../../boards/backlogs/bulk-modify-work-items.md) to update multiple items at once.
 
 > [!NOTE]
-> Assigning the same area path to multiple teams may cause conflicts over work item ownership. For more information, see [Limitations of multi-team board views](../../boards/boards/kanban-overview.md).
+> Assigning the same area path to multiple teams may cause conflicts over work item ownership and can lead to unexpected behavior on team boards. For more information, see [Limitations of multi-team board views](../../boards/boards/kanban-overview.md).
 
 As needed, you can do the following actions at any time:
 
@@ -82,7 +78,7 @@ From your web portal, select (1) **Project settings** > (2) **Project configurat
 
 [List project area paths](#list-project-areas) | [Add a project area path](#add-an-area-path) | [List team areas paths](#list-team-area-paths) | [Set team area paths](#set-team-area-paths) | [Rename or move a project area path](#rename-or-move-an-area-path) | [Remove area path from a team](#remove-an-area-path-from-a-team)
 
-You can list the area paths defined for a project using [az boards area project list](/cli/azure/boards/area/project#az-boards-area-project-list). To get started, see [Get started with Azure DevOps CLI](../../cli/index.md).  
+You can list area paths defined for a project using the [az boards area project list](/cli/azure/boards/area/project#az-boards-area-project-list) command. To get started with the CLI, see [Get started with Azure DevOps CLI](../../cli/index.md).  
 
 > [!div class="tabbedCodeSnippets"]
 ```azurecli
@@ -136,7 +132,7 @@ You can also add new and child area paths to a team. For more information, see [
 
 To add a new area path, do the following steps:
 
-1. Highlight the area path and then choose **New child**. Optionally, you can select:::image type="icon" source="../../media/icons/actions-icon.png" border="false"::: for an area path and choose **New**, or select the **New** menu item at the top of the area list.
+1. Highlight the area path and then choose **New child**. Alternatively, you can select :::image type="icon" source="../../media/icons/actions-icon.png" border="false"::: for an area path and choose **New**, or select the **New** menu item at the top of the area list.
 
 1. Enter a name (255 characters or less) for the node. For more name restrictions, see [About areas and iterations, Naming restrictions](about-areas-iterations.md#naming-restrictions).
 
@@ -149,7 +145,7 @@ All new areas are added as a child node to the root area path.
 
 To add a child area path, do the following steps:
 
-1. Highlight the area path and then choose **New child**. Optionally, you can select:::image type="icon" source="../../media/icons/actions-icon.png" border="false"::: for the area path and choose **New child** or select **New child** from the menu at the top of the area list.  
+1. Highlight the area path and then choose **New child**. Alternatively, you can select :::image type="icon" source="../../media/icons/actions-icon.png" border="false"::: for the area path and choose **New child** or select **New child** from the menu at the top of the area list.  
 
 1. Enter a name (255 characters or less) for the node. For more name restrictions, see [About areas and iterations, Naming restrictions](about-areas-iterations.md#naming-restrictions). 
 
@@ -293,16 +289,16 @@ You define both areas and iterations from **Project Settings > Team configuratio
 All work items that are assigned to a team area path appear on the backlogs and boards for that team. You can select one or more area paths and optionally include their subarea paths. Choose to include subarea paths when you want to support rollup views of work done across several teams or areas.
 
 > [!NOTE]  
-> Teams can be assigned a maximum of 300 **Area Paths**. For more information, see [Work tracking, process, and project limits](work/object-limits.md). 
+> Teams can be assigned a maximum of 300 **Area Paths** for efficient work organization and performance. For more information about limits, see [Work tracking, process, and project limits](../settings/work/object-limits.md).
 
 The default area path determines the default area path assigned to work items that are created from the team context.  
 
 > [!IMPORTANT]  
-> Work items that appear on more than one team's board can yield query results that don't meet your expectations. Because each team can customize the board [columns](../../boards/boards/add-columns.md) and [swimlanes](../../boards/boards/expedite-work.md), the values assigned to work items which appear on different boards may not be the same. The primary work around for this issue is to maintain single ownership of work items by team area path.   
+> Work items that appear on more than one team's board can produce unexpected query results. Since each team can customize their board [columns](../../boards/boards/add-columns.md) and [swimlanes](../../boards/boards/expedite-work.md), work item values may vary across different team boards. To avoid this issue, maintain single ownership of work items by assigning them to specific team area paths.   
 
 #### [Browser](#tab/browser/)
 
-::: moniker range=">= azure-devops-2020"  
+::: moniker range="<=azure-devops"
 
 You can select existing area paths or create new or child area paths from the team settings. 
 

@@ -1,6 +1,6 @@
 ---
 title: Create and Manage Agent Pools
-ms.topic: conceptual
+ms.topic: concept-article
 ms.custom: devx-track-azurecli
 description: Learn how to organize agents into pools for builds and releases in Azure Pipelines and Azure DevOps Server.
 ms.assetid: BD5478A8-48CF-4859-A0CB-6E1948CE2C89

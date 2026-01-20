@@ -9,7 +9,7 @@ ms.author: chcomley
 author: chcomley
 ms.topic: overview
 monikerRange: '<= azure-devops'
-ms.date: 10/16/2024
+ms.date: 12/22/2025
 #customer intent: As a project administrator, I want to understand backlogs in Azure Boards and how to use them to plan and improve my team workflow.
 ---
 
@@ -23,11 +23,11 @@ If you're a project administrator, see [Configure and customize Azure Boards](..
 
 ## About backlogs
 
-An Azure Boards backlog is a prioritized list of work items that guides your developments team's effort. A backlog helps manage project scope and facilitates effective communication and collaboration through the software development lifecycle.
+An Azure Boards backlog is a prioritized list of work items that guides your development team's effort. A backlog helps manage project scope and facilitates effective communication and collaboration throughout the software development lifecycle.
 
 Use backlogs to do the following tasks:
 
-::: moniker range=">= azure-devops-2020"  
+::: moniker range="<=azure-devops"
 
 - [Define user stories, product backlog items, or requirements](create-your-backlog.md)
 - [Reorder your backlog](create-your-backlog.md#reorder-your-backlog)
@@ -47,7 +47,7 @@ Use backlogs to do the following tasks:
 
 ## Product and portfolio backlogs
 
-Backlogs present work items as lists. A *product backlog* represents your project plan, the roadmap for what your team plans to deliver. It also provides a repository of all the information  need to track and share with your team.
+Backlogs present work items as lists. A *product backlog* represents your project plan, the roadmap for what your team plans to deliver. It also provides a repository of all the information you need to track and share with your team.
 
 In [Agile methodologies](/devops/plan/what-is-agile), a *portfolio backlog* lets you group and organize your backlog into a hierarchy. You can display high-level initiatives, epics, or projects that your organization plans to work on over a longer period of time. These initiatives are often too large or complex to fit in the scope of a single team's backlog. They require coordination and planning at a higher organizational level.
 
@@ -77,7 +77,7 @@ For more information, see the following articles:
 ### Common backlog configurations for multiple teams
 
 **Question**: *Can you define a backlog configuration that multiple teams can subscribe to?*
-**Answer**: *No. Each team controls their own team settings and backlog configurations.*
+**Answer**: *No. Each team controls their own team settings and backlog configurations independently.*
 
 ::: moniker range="azure-devops"
 Because each user can configure their own **Column Options** and **View Options**, there's no way to configure a common backlog view for all teams. Also, there's no default column options that can be set for each team.  
@@ -123,7 +123,7 @@ When you have many initiatives your teams are working on, you might want to grou
 
 For example, here the Customer Service team organized several backlog items under two features and one epic.
 
-::: moniker range=">= azure-devops-2020"  
+::: moniker range="<=azure-devops"
 
 :::image type="content" source="media/overview/customer-service-backlog-parents-on.png" alt-text="Screenshot of Backlog that shows parents and multi-team ownership.":::  
 
@@ -145,7 +145,7 @@ When you have several teams, your hierarchical views can show items that belong 
 
 Your team's product backlog lists only those items whose area path matches items assigned to your team. If you show parents, you see the parent epic of the features and backlog items, even if another team owns the epic or feature.
 
-::: moniker range=">= azure-devops-2020"  
+::: moniker range="<=azure-devops"
 
 Other team-owned items appear with an information icon :::image type="icon" source="../../media/icons/info.png" border="false":::.
 
@@ -164,7 +164,7 @@ For more information, see [Define area paths and assign to a team](../../organiz
 
 Here's another example that shows the **Epics** backlog for the **Management** team. Drilling down, you can see all the backlog items and features, even though they belong to one of three different teams: Customer Service, Phone, and Web.  
 
-::: moniker range=">= azure-devops-2020"  
+::: moniker range="<=azure-devops"
 
 :::image type="content" source="media/multi-ownership/management-team-backlog-epics-s155.png" alt-text="Screenshot of view Epics and child items owned by other teams.":::
 
@@ -181,7 +181,7 @@ This organization enables management teams to focus on high-level features and e
 For more information about hierarchical team and backlog structures, see [Manage your product and portfolio backlogs](../plans/portfolio-management.md).
 
 > [!IMPORTANT]
-> You have the flexibility to establish child links with work items from different projects. However, if the processes differ between projects, the hierarchy won't be visible on the backlog for those child items that reside in the separate projects. Nonetheless, you can view all of the associated child items directly on the work item form.
+> You have the flexibility to establish child links with work items from different projects. However, if the processes differ between projects, the hierarchy isn't visible on the backlog for those child items that reside in the separate projects. Nonetheless, you can view all of the associated child items directly on the work item form.
 
 ### Reordering and reparenting work items
 
@@ -233,7 +233,7 @@ For more information about using each of these controls, see [Configure your bac
       [Switch to backlog view](create-your-backlog.md)
    :::column-end:::
 :::row-end:::
-::: moniker range=">= azure-devops-2020"
+::: moniker range="<=azure-devops"
 :::row:::
    :::column span="":::
       **Analytics**  
@@ -256,7 +256,7 @@ For more information about using each of these controls, see [Configure your bac
    :::column span="2":::
       [Switch backlog view](create-your-backlog.md)
 :::row-end:::
-::: moniker range=">= azure-devops-2020"
+::: moniker range="<=azure-devops"
 :::row:::
    :::column span="":::
       :::image type="icon" source="../../media/icons/view-options-icon.png" border="false":::  

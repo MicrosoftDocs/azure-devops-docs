@@ -12,7 +12,7 @@ ms.date: 07/12/2023
 
 # Add status badges for your GitHub repo 
 
-[!INCLUDE [version-gt-eq-2020](../../includes/version-gt-eq-2020.md)] 
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)] 
  
 You can add Markdown syntax to a GitHub repo `README.md` file to display your board status in that repo. Show the status by adding the syntax you choose from your board settings.  
 
@@ -37,7 +37,7 @@ The syntax shown works whether you [connected your project to a GitHub.com or yo
 
 3. Select **Status badge** and then check or uncheck the **Allow anonymous users to access the status badge**. When it's unchecked, users who aren't signed in can still view the status badge.
 
-   ::: moniker range=">= azure-devops-2020"
+   ::: moniker range="<=azure-devops"
    :::image type="content" source="media/badges/status-badge-s188.png" alt-text="Screenshot of board Settings dialog, Status badge tab.":::
    ::: moniker-end
    

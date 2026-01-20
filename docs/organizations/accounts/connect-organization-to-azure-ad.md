@@ -1,13 +1,14 @@
 ---
 title: Connect organization to Microsoft Entra ID
 titleSuffix: Azure DevOps Services
-description: Learn how to connect your organization to your Microsoft Entra ID
+description: Connect Azure DevOps to Microsoft Entra ID for enterprise security, single sign-on, centralized user management, and seamless authentication.
 ms.subservice: azure-devops-organizations
 ms.assetid: 629a48b6-b2ab-4706-8256-d187c8ed5ce7
+ai-usage: ai-assisted
 ms.topic: how-to
 ms.author: chcomley
 author: chcomley
-ms.date: 10/22/2024
+ms.date: 01/13/2026
 monikerRange: 'azure-devops'
 ms.custom: sfi-image-nochange
 ---
@@ -16,9 +17,19 @@ ms.custom: sfi-image-nochange
 
 [!INCLUDE [version-eq-azure-devops](../../includes/version-eq-azure-devops.md)]
 
-This article shows how to connect your Azure DevOps organization to [Microsoft Entra ID](/azure/active-directory/fundamentals/active-directory-whatis). You can sign in with the same credentials that you use with Microsoft services. Add members to your Azure DevOps organization who are already a part of your work organization. You can also enforce policies for accessing your team's critical resources and key assets. 
+Connect your Azure DevOps organization to [Microsoft Entra ID](/azure/active-directory/fundamentals/active-directory-whatis) to enable enterprise-grade security, streamlined user management, and unified authentication across your organization's Microsoft services.
 
-For more information about using Microsoft Entra ID with Azure DevOps, see the [conceptual overview](access-with-azure-ad.md).
+**Key benefits of connecting to Microsoft Entra ID:**
+- **Single sign-on**: Users authenticate with their existing work credentials
+- **Centralized user management**: Use your organization's existing identity infrastructure
+- **Enhanced security**: Apply conditional access policies and security controls
+- **Seamless collaboration**: Add existing organization members without separate account creation
+- **Compliance**: Meet enterprise security and governance requirements
+
+This article provides step-by-step guidance for connecting your Azure DevOps organization to Microsoft Entra ID, including preparation, connection procedures, and post-connection validation.
+
+> [!TIP]
+> For comprehensive information about using Microsoft Entra ID with Azure DevOps, see the [conceptual overview](access-with-azure-ad.md).
 
 ## Prerequisites
 
@@ -36,39 +47,72 @@ For more information about using Microsoft Entra ID with Azure DevOps, see the [
 
 ## Connect your organization to Microsoft Entra ID
 
-To connect your organization to Microsoft Entra ID, do the following steps:
+Follow these steps to establish the connection between your Azure DevOps organization and Microsoft Entra ID:
 
-1. Sign in to your organization (```https://dev.azure.com/{yourorganization}```).
+1. **Access organization settings**: Sign in to your organization at `https://dev.azure.com/{yourorganization}` and select ![gear icon](../../media/icons/gear-icon.png) **Organization settings**.
 
-2. Select ![gear icon](../../media/icons/gear-icon.png) **Organization settings**.
+    :::image type="content" source="../../media/settings/open-admin-settings-vert.png" alt-text="Screenshot showing highlighted Organization settings button.":::
 
-    ![Screenshot showing highlighted Organization settings button.](../../media/settings/open-admin-settings-vert.png)
-3. Select **Microsoft Entra ID**, and then select **Connect directory**.
+1. **Initiate directory connection**: In the organization settings, select **Microsoft Entra ID** from the left navigation, then select **Connect directory** to begin the connection process.
 
-   ![Select Connect directory to connect your organization to Microsoft Entra ID](media/shared/select-azure-ad-connect-directory.png)
+   :::image type="content" source="media/shared/select-azure-ad-connect-directory.png" alt-text="Screenshot shows the Connect directory button for connecting your organization to Microsoft Entra ID.":::
 
-4. Select a directory from the dropdown menu, and then select **Connect**.
+1. **Configure directory connection**: From the dropdown menu, select your target Microsoft Entra ID directory, then select **Connect** to establish the connection.
 
-   ![Select your Microsoft Entra ID, and then Connect](media/shared/select-directory-connect.png)
+   :::image type="content" source="media/shared/select-directory-connect.png" alt-text="Screenshot shows your Microsoft Entra ID selection, and then the Connect button.":::
    
-   If you can't find your directory, contact your Microsoft Entra administrator and request that they add you as a member to the Microsoft Entra ID.
+   > [!NOTE]
+   > If your directory doesn't appear in the dropdown, contact your Microsoft Entra administrator to request membership in the Microsoft Entra ID.
 
-5. Select **Sign out**.
+1. **Complete the connection**: When prompted, select **Sign out** to finalize the connection.
 
-   ![Connect success dialog - select Sign out](media/shared/connect-success-dialog.png)
+   :::image type="content" source="media/shared/connect-success-dialog.png" alt-text="Screenshot shows Connect success dialog - select Sign out.":::
 
-    Your organization is connected to your Microsoft Entra ID.
+   Your organization is now connected to your Microsoft Entra ID.
 
-6. Confirm that the process is complete. Sign out, and then open your browser in a private session and sign in to your organization with your Microsoft Entra ID or work credentials.
+1. **Resolve user mapping**: Sign back in to Azure DevOps with your Microsoft Entra ID credentials. Navigate to **Organization settings** > **Users** to review user status. For any disconnected members, select **Resolve** to map them to their Microsoft Entra identities or invite them as guests.
 
-7. Sign back in to Azure DevOps and map any disconnected members to their Microsoft Entra identities. Or, you can invite them as guests into the Microsoft Entra ID. For more information, see the [FAQs](./faq-azure-access.yml#faq-connect).
+   :::image type="content" source="media/shared/azure-ad-select-resolve-for-disconnected-users.png" alt-text="Screenshot shows selecting the Resolve button to invite unmapped users.":::
 
-   ![Select Resolve to invite unmapped users](media/shared/azure-ad-select-resolve-for-disconnected-users.png)
+   :::image type="content" source="media/shared/resolve-disconnected-users.png" alt-text="Screenshot shows mapping disconnected users.":::
 
-   ![Mapping disconnected users](media/shared/resolve-disconnected-users.png)
+> [!TIP]
+> For detailed guidance on resolving user mapping issues, see the [connection FAQs](./faq-azure-access.yml#faq-connect).
 
 <a name='inform-users-microsoft-entra-change'></a>
 [!INCLUDE [inform-users-microsoft-entra-change](includes/inform-users-microsoft-entra-change.md)]
+
+## Post-connection validation
+
+After successfully connecting your organization to Microsoft Entra ID, verify these key aspects:
+
+### Security and access validation
+
+> [!div class="checklist"]
+> * **Authentication testing**: Sign out completely, then open a private browser session and sign in to your organization using your Microsoft Entra ID credentials
+> * **Access verification**: Confirm you can access your organization at `https://dev.azure.com/{yourorganization}` with your work credentials
+> * **Single sign-on functionality**: Users can sign in with their existing work credentials
+> * **User mapping completeness**: All active users are properly mapped to Microsoft Entra identities
+> * **Permissions integrity**: User roles and permissions remain intact after connection
+> * **External user access**: Guest users can still access resources as intended
+
+### Operational verification
+
+> [!div class="checklist"]
+> * **Project access**: Teams can access their projects and repositories without issues
+> * **Service connections**: Build and release pipelines function correctly
+> * **Integrations**: Non-microsoft tools and extensions continue working
+> * **SSH access**: Users recreated SSH keys if needed
+
+### Administrative monitoring
+
+> [!div class="checklist"]
+> * **Audit logs**: Review connection events in Microsoft Entra ID audit log
+> * **User feedback**: Monitor for any authentication or access issues
+> * **Support requests**: Address any user questions or connection problems
+
+> [!TIP]
+> Keep communication channels open with your users for the first few days after connection to quickly address any issues.
 
 ## Related content
 

@@ -14,4 +14,4 @@ To update application connection, security, or user policies for your organizati
 
 3. Select **Policies**, then toggle the desired policy **on** or **off**.
 
-   ![Screenshot of policies list and their on and off toggles.](../media/change-policies-preview.png)
+   ![Screenshot of policies list and their on and off toggles.](../media/organization-level-policies.png)

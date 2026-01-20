@@ -3,7 +3,7 @@ title: Delete, remove users from team, project, organization
 titleSuffix: Azure DevOps
 description: Steps for how to delete or remove organization users from Azure DevOps and remove users from a team or project.
 ms.subservice: azure-devops-organizations
-ms.topic: conceptual
+ms.topic: how-to
 ms.assetid: d3a31878-a869-45a9-9bca-f46cc2682596
 ms.author: chcomley
 author: chcomley
@@ -13,7 +13,7 @@ monikerRange: "<=azure-devops"
 
 # Remove users from Azure DevOps  
 
-[!INCLUDE [version-gt-eq-2019](../../includes/version-gt-eq-2019.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 If users no longer require access to a team, project, or organization, you can remove their access. Removing access ensures that only authorized users can view and interact with your organization's data and resources. This article provides step-by-step instructions on how to remove user access from a team, project, or organization in Azure DevOps. By following these guidelines, you can ensure that your organization's security and resource management practices remain robust and up-to-date. 
 
@@ -35,7 +35,7 @@ If users no longer require access to a team, project, or organization, you can r
 
 #### [Browser](#tab/browser)
 
-::: moniker range=">= azure-devops-2020"
+::: moniker range="<=azure-devops"
 
 1. Sign in to your organization: ```https://dev.azure.com/{yourorganization}```.
 

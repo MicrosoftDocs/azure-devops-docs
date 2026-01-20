@@ -4,16 +4,13 @@ description: How to create Azure Key vaults, store secrets, and use them in your
 ms.topic: tutorial
 ms.date: 04/23/2024
 monikerRange: '>= azure-devops'
-ms.custom:
-  - devx-track-azurecli
-  - arm2024
-  - sfi-image-nochange
+ms.custom: devx-track-azurecli, arm2024, sfi-image-nochange
 "recommendations": "true"
 ---
 
 # Use Azure Key Vault secrets in Azure Pipelines
 
-[!INCLUDE [version-gt-eq-2019](../../includes/version-gt-eq-2019.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 Azure Key Vault allows developers to securely store and manage sensitive information like API keys, credentials, or certificates. 
 Azure Key Vault service supports two types of containers: vaults and managed HSM (Hardware Security Module) pools. Vaults can store both software and HSM-backed keys, secrets, and certificates, while managed HSM pools exclusively support HSM-backed keys.
@@ -30,7 +27,7 @@ In this tutorial, you will learn how to:
 
 - An Azure DevOps organization and a project. Create an [organization](../../organizations/accounts/create-organization.md) or a [project](../../organizations/projects/create-project.md#create-a-project) if you haven't already.
 
-- An Azure subscription. [Create an Azure account for free](https://azure.microsoft.com/free/?WT.mc_id=A261C142F) if you don't have one already.
+- An Azure subscription. [Create an Azure account for free](https://azure.microsoft.com/pricing/purchase-options/azure-account?cid=msft_learn) if you don't have one already.
 
 ## Get the sample code
 

@@ -6,14 +6,14 @@ ms.service: azure-devops-boards
 ms.custom: cross-service
 ms.author: chcomley
 ms.topic: how-to
-monikerRange: '<= azure-devops'
+monikerRange: 'azure-devops'
 ms.date: 07/15/2025
 ---
 
 
 # Automate work item state transitions
 
-[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
+[!INCLUDE [version-eq-azure-devops](../../includes/version-eq-azure-devops.md)]
 
 Automatically update the state of a work item according to the state of its child tasks. For example, if one task is changed to `Doing`, then the parent gets set to `Doing`. And if all tasks are in `Closed` state, then the parent gets `Closed`.
 
@@ -24,21 +24,9 @@ Rules are established at the team backlog level and are applicable to all work i
 
 ## Prerequisites
 
-::: moniker range="azure-devops"
-
 | Category | Requirements |
 |:-------------|:------------|
 |**Permissions**| To configure work item automation rules for your team: [Team Administrator](../../organizations/settings/add-team-administrator.md) role or member of the [**Project Administrators**](../../organizations/security/change-project-level-permissions.md) group.|
-
-::: moniker-end
-
-::: moniker range="< azure-devops"
-
-| Category | Requirements |
-|:-------------|:------------|
-|**Permissions**| To configure team settings: [Team Administrator](../../organizations/settings/add-team-administrator.md) role or member of the [**Project Administrators**](../../organizations/security/change-project-level-permissions.md) group.|
-
-::: moniker-end
 
 ## Set rules
 

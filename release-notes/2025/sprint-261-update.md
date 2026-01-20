@@ -4,6 +4,7 @@ author: gloridelmorales
 ms.author: glmorale
 ms.date: 09/04/2025
 description: Newly generated OAuth client secrets will be shown only at time of creation 
+ms.topic: release-notes
 ---
 
 # Newly generated OAuth client secrets will be shown only at time of creation  

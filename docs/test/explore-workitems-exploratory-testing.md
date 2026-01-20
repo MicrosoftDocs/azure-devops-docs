@@ -4,7 +4,7 @@ description: Test tools - Manual and exploratory testing - explore work items fr
 ms.assetid: AFD66FBF-5DEC-4457-8867-A47FFB8EF407
 ms.service: azure-devops-test-plans
 ms.custom: UpdateFrequency3
-ms.topic: conceptual
+ms.topic: how-to
 ms.author: jeom
 author: rohit-batra 
 monikerRange: '<= azure-devops'

@@ -4,7 +4,7 @@ titleSuffix: Azure DevOps
 description: Learn about keyboard shortcuts for the web portal for Azure DevOps and Team Explorer, including wikis.
 ms.custom: Navigation
 ms.subservice: azure-devops-projects
-ms.topic: conceptual 
+ms.topic: overview
 ms.author: chcomley
 author: chcomley
 monikerRange: '<= azure-devops'
@@ -106,7 +106,7 @@ You can use these keyboard shortcuts when you work in a list in the web portal f
 
 You can use the following keyboard shortcuts when you [manage or edit wiki pages](../../project/wiki/add-edit-wiki.md). To view valid shortcuts, from the wiki page, select **?**. 
 
-::: moniker range=">= azure-devops-2020"
+::: moniker range="<=azure-devops"
 
 ### Manage wiki page shortcuts
 

@@ -4,6 +4,7 @@ description: See the Sprint 234 feature updates for GitHub Advanced Security for
 author: laurajiang
 ms.author: laurajiang
 ms.date: 2/9/2024
+ms.topic: release-notes
 ---
 
 # GitHub Advanced Security for Azure DevOps - Sprint 234 Update

@@ -6,13 +6,13 @@ ms.topic: how-to
 ms.author: rabououn
 author: ramiMSFT
 ms.date: 05/14/2025
-monikerRange: '>= azure-devops-2020'
+monikerRange: "<=azure-devops"
 "recommendations": "true"
 ---
 
 # Publish Maven packages to an Azure Artifacts feed
 
-[!INCLUDE [version-gt-eq-2020](../../includes/version-gt-eq-2020.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 Azure Artifacts provides a centralized way to host and manage your packages in a single feed. This article guides you through connecting to an Azure Artifacts feed and publishing your Maven packages.
 
@@ -47,7 +47,6 @@ If you already have a feed, you can skip this section. Otherwise, follow the ste
 1. Once published, navigate to your feed. You should see your packages listed, as shown in the example below:
     
     :::image type="content" source="media/publish-package-maven.png" alt-text="A screenshot displaying a Maven package successfully published to the feed.":::
-
 
 ## Related content
 

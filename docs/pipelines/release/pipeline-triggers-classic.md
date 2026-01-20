@@ -1,7 +1,7 @@
 ---
 title: Configure build completion triggers (classic)
 description: Configure build completion triggers (classic)
-ms.topic: conceptual
+ms.topic: concept-article
 ms.author: sdanie
 author: steved0x
 ms.date: 01/25/2023
@@ -10,7 +10,7 @@ monikerRange: "<=azure-devops"
 
 # Trigger one pipeline after another (classic)
 
-[!INCLUDE [version-gt-eq-2019](../../includes/version-gt-eq-2019.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 > [!div class="op_single_selector"]
 > - [YAML pipelines](../process/pipeline-triggers.md)

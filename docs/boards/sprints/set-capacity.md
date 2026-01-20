@@ -9,7 +9,7 @@ ms.author: chcomley
 author: chcomley
 ms.topic: tutorial
 monikerRange: '<= azure-devops'
-ms.date: 10/14/2024
+ms.date: 01/07/2026
 #customer intent: As a team member, I want to understand how to set capacity for a sprint and how to use capacity to track progress durning a sprint.
 ---
 
@@ -21,7 +21,7 @@ ms.date: 10/14/2024
 
 <a id="set-capacity">  </a>
 
-While velocity correlates to how your team estimates requirements, *capacity* correlates to actual task time. Time is calculated in either hours or days. Capacity takes into consideration the variation in work hours by team members. It also considers holidays, vacation days, and nonworking days.
+While velocity correlates to how your team estimates requirements, *capacity* correlates to actual task time. Time is calculated in either hours or days. Capacity takes into consideration the variation in work hours by team members, as well as holidays, vacation days, and nonworking days.
 
 Because days off and time available for each team member might vary from sprint to sprint, set capacity for each sprint. The capacity tool helps you make sure your team isn't overcommitted or undercommitted for the sprint. As you work day-to-day, you see if your team is on track.
 
@@ -41,7 +41,7 @@ To set up sprints yet for your team, see [Manage sprint timelines](define-sprint
 | Category | Requirements |
 |----------------------|----------------------|
 | **Project access**   | [Project member](../../organizations/security/add-users-team-project.md). |
-| **Permissions**      | - To view capacity: Be a member of the [**Contributors**](../../organizations/security/add-users-team-project.md) security group in your project. <br/> - To edit capacity: Be a member of the [**Project Administrators**](../../organizations/security/change-project-level-permissions.md) security group or a [**Team Administrator**](../../organizations/settings/add-team-administrator.md) of the team. |
+| **Permissions**      | - To view capacity: Member of the [**Contributors**](../../organizations/security/add-users-team-project.md) security group in your project. <br/> - To edit capacity: Member of the [**Project Administrators**](../../organizations/security/change-project-level-permissions.md) security group or a [**Team Administrator**](../../organizations/settings/add-team-administrator.md) of the team. |
 | **Access levels**    | To view or set capacity: At least **[Basic](../../organizations/security/access-levels.md)**[ access](../../organizations/security/access-levels.md). Users with **Stakeholder** access can't view or set capacity. For more information, see [Stakeholder access quick reference](../../organizations/security/stakeholder-access.md). |
 
 <a id="customize-activity-list">  </a> 
@@ -100,7 +100,7 @@ From the **Capacity** page, you can add team members, enter the team time off, a
 
    :::image type="content" source="media/capacity/add-team-members.png" alt-text="Screenshot of Capacity page, Add team members.":::
 
-   The **Add all team members** action retrieves a maximum of 100 team members. If you have more team members to add, you can add them one-by-one by choosing **Add user**.
+   The **Add all team members** action retrieves a maximum of 100 team members. If you have more team members to add, you can add them individually by choosing **Add user**.
 
 2. If you need to add other contributors to your project, choose the :::image type="icon" source="../../media/icons/blue-add-icon.png" border="false"::: **Add user**.  
 
@@ -111,7 +111,7 @@ From the **Capacity** page, you can add team members, enter the team time off, a
    In the **Days off for** dialog, select the start and end days during the sprint for the team member or team days off.
 
    > [!TIP]
-   > Your sprint planning and tracking tools automatically consider days off when calculating capacity and sprint burndown. You only have to indicate planned days off for the team. For more information, see [Set capacity for the team and team members](../../boards/sprints/set-capacity.md#set-capacity-for-the-team-and-team-members).
+   > Your sprint planning and tracking tools automatically consider days off when calculating capacity and sprint burndown. You only need to indicate planned days off for the team. For more information, see [Set capacity for the team and team members](../../boards/sprints/set-capacity.md#set-capacity-for-the-team-and-team-members).
 
 4. Set the **Activity/Discipline** and **Capacity** per day for each team member. If you track capacity simply by team member, you can leave the Activity or Discipline selection unassigned.
 
@@ -125,7 +125,7 @@ From the **Capacity** page, you can add team members, enter the team time off, a
 
 ## Copy capacity planning from the previous sprint 
 
-By copying the capacity from the previous sprint, you save time. With the basics defined, all you have to do is adjust the capacity based on individual and team days off and capacity allocation per activity.
+By copying the capacity from the previous sprint, you save time. With the basics defined, all you need to do is adjust the capacity based on individual and team days off and capacity allocation per activity.
 
 Only the capacity-per-day value and activity value are copied over. Individual and team days off remain unset. The copy operation always copies the latest updates made to the previous sprint. So you can repeat the copy operation if you made changes to the previous sprint that you want to copy to the latest sprint.
 

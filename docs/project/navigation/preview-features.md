@@ -15,7 +15,7 @@ ms.date: 01/27/2025
 
 # Manage preview features 
 
-[!INCLUDE [version-gt-eq-2020](../../includes/version-lt-eq-azure-devops.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 ::: moniker range="azure-devops"
 
@@ -104,17 +104,6 @@ The following table lists the preview features that you can turn on or off based
 |[Project Permissions Settings page](../../organizations/security/change-project-level-permissions.md)| ✔️ | ✔️ |     
 |[Task Insights for Failed Pipeline Runs](../../pipelines/troubleshooting/troubleshooting.md#task-insights-for-failed-pipeline-runs)| ✔️ | ✔️ |  
 |[YAML templates editor](../../pipelines/get-started/yaml-pipeline-editor.md#view-and-edit-templates)| ✔️ | ✔️ |   
-
-::: moniker-end
-
-::: moniker range="azure-devops-2020"
-
-The following table shows the features you can turn on or off based on your role: user, project administrator, or project collection administrator. 
-
-|**Feature**|**User**|**Project** | **Collection**|
-|--------------------|--------------|-----------------||-----------------|
-|[New service connections experience](../../pipelines/library/service-endpoints.md)| ✔️ |   |  ✔️ |     
-|[Selective artifacts download feature for collection/project](../../pipelines/process/phases.md#artifact-download)|   | ✔️ |  ✔️ |   
 
 ::: moniker-end
 

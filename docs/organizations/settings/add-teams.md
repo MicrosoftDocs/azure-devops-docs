@@ -9,10 +9,7 @@ author: chcomley
 ms.topic: tutorial
 monikerRange: '<= azure-devops'
 ms.date: 11/12/2024
-ms.custom:
-  - teams
-  - devx-track-azurecli
-  - sfi-image-nochange
+ms.custom: teams, devx-track-azurecli, sfi-image-nochange
 ---
 
 # Create or add a team 
@@ -350,11 +347,7 @@ For teams to work autonomously, give them permissions that they don't have by de
 
 For more information on setting permissions and access for select users, see [Set permissions and access for work tracking](../security/set-permissions-access-work-tracking.md).
 
-::: moniker range="< azure-devops-2022" 
-
-If your deployment is integrated with SQL Server Reports, you need to [Grant permissions to view or create SQL Server reports to team members](/previous-versions/azure/devops/report/admin/grant-permissions-to-reports). 
-
-::: moniker-end 
+ 
 
 ## Next steps
 

@@ -3,13 +3,14 @@ title: Publish symbols for debugging
 description: How to publish symbols to Azure Artifacts symbol server and file shares using Azure Pipelines
 ms.assetid: 8794A5F8-B646-4E2F-A426-47CC62ABFF5D
 ms.date: 09/22/2023
-monikerRange: '>= azure-devops-2020'
+monikerRange: "<=azure-devops"
 "recommendations": "true"
+ms.topic: how-to
 ---
 
 # Publish symbols with Azure Pipelines
 
-[!INCLUDE [version-gt-eq-2020](../../includes/version-gt-eq-2020.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 With Azure Pipelines, you can publish your symbols to Azure Artifacts symbol server using the *Index sources and publish symbols* task. You can use the debugger to connect and automatically retrieve the correct symbol files without knowing product names, build numbers, or package names. Using Azure Pipelines, you can also publish your symbols to files shares and portable PDBs.
 

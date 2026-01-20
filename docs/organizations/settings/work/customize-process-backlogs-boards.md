@@ -40,19 +40,16 @@ In the following example, we added a third-level portfolio backlog labeled *Init
 
 <a id="add-oob-to-backlog"></a> 
 
-::: moniker range=">= azure-devops-2020"
+::: moniker range="<=azure-devops"
 
 ## Add a system work item type to a backlog  
 
 If you want to track Issues or Impediments or other inherited work item types (WIT) within a backlog or board, edit the corresponding backlog. The following table lists the available WITs you can add to a backlog.
 ::: moniker-end 
 
-::: moniker range="azure-devops-2020"
-> [!NOTE]
-> This feature requires Azure DevOps Server 2020.1 update or later version.
-::: moniker-end 
+ 
 
-::: moniker range=">= azure-devops-2020"
+::: moniker range="<=azure-devops"
 
 | **Process** | **Work item types** |
 | ----------- | ------------------- |
@@ -133,7 +130,7 @@ You can add a portfolio backlog and custom work item type following these steps.
 
 5. Name the backlog level, select the backlog level color, and add the work item type to associate with this level, and then select **Add**. 
 
-	::: moniker range=">= azure-devops-2020"
+	::: moniker range="<=azure-devops"
 
    :::image type="content" source="media/backlogs/add-portfolio-backlog-initiative-s173.png" alt-text="Screenshot showing Web portal, Add a portfolio backlog dialog, Add new work item type.":::
 
@@ -141,7 +138,7 @@ You can add a portfolio backlog and custom work item type following these steps.
 
 6. If you're associating only one work item type with the backlog, then choose **Save** to save your changes. Otherwise, you can add more work item types as needed. 
 
-	::: moniker range=">= azure-devops-2020"
+	::: moniker range="<=azure-devops"
 
    :::image type="content" source="media/backlogs/add-portfolio-backlog-initiative-save.png" alt-text="Screenshot showing Web portal, Add a portfolio backlog dialog, Save changes.":::
 
@@ -170,7 +167,7 @@ The Requirement backlog, also referred to as the product backlog, defines the wo
 
 You can rename the backlog, change the color, add work item types, and change the default work item type. Open the Edit backlog dialog from the context menu for the Requirements backlog. 
 
-::: moniker range=">= azure-devops-2020"
+::: moniker range="<=azure-devops"
 
 In the following example, we renamed the backlog, added **Customer Ticket** and **Issue**, and changed the default type to *Customer Ticket*. Check those boxes of the work item types to include on the backlog. 
 

@@ -3,7 +3,7 @@ title: Integrate with Service Hooks
 description: Become familiar with service hooks and find out how to use them to perform tasks in other services when events happen in your Azure DevOps project.
 ms.assetid: c0617128-b67c-4ec4-b1c9-e65e1b3ab82c
 ms.subservice: azure-devops-service-hooks
-ms.topic: conceptual
+ms.topic: overview
 ms.author: chcomley
 author: chcomley
 monikerRange: '<= azure-devops'
@@ -14,7 +14,7 @@ ms.custom: sfi-image-nochange
 
 # Integrate with service hooks
 
-[!INCLUDE [Azure DevOps Services | Azure DevOps Server 2022 | Azure DevOps Server 2020](../includes/version-gt-eq-2020.md)]
+[!INCLUDE [Azure DevOps Services | Azure DevOps Server 2022 | Azure DevOps Server 2020](../includes/version-lt-eq-azure-devops.md)]
 
 You can use service hooks to run tasks on other services when events happen in your Azure DevOps project.
 
@@ -68,7 +68,7 @@ The following services are available as targets of service hooks. For more infor
 
 ::: moniker-end
 
-::: moniker range="<= azure-devops-2022"
+::: moniker range="=azure-devops-2022"
 
 |Service  |Supported events  | Supported actions | Subscription management |
 |---------|---------|---------|---------|

@@ -4,6 +4,7 @@ author: gloridelmorales
 ms.author: glmorale
 ms.date: 05/26/2021
 description: In this sprint, Delivery Plans 2.0 is now generally available. 
+ms.topic: release-notes
 ---
 
 # Delivery Plans 2.0 general availability 

@@ -4,13 +4,13 @@ description: Learn how to create, target, secure, and view deployment history fo
 ms.topic: how-to
 ms.assetid: 4abec444-5d74-4959-832d-20fd0acee81d
 ms.date: 04/09/2025
-monikerRange: '>= azure-devops-2020'
+monikerRange: "<=azure-devops"
 keywords: Azure DevOps environments, CI/CD pipelines, Kubernetes, virtual machines, deployment history, secure environments
 ---
 
 # Create and target Azure DevOps environments
 
-[!INCLUDE [version-gt-eq-2020](../../includes/version-gt-eq-2020.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 This article explains how to create and target Azure Pipelines environments. An environment is a group of [resources](about-resources.md) that you can target with deployments from a pipeline.
 
@@ -39,11 +39,10 @@ If a YAML pipeline refers to an environment that doesn't exist:
 
 ## Prerequisites
 
-
 | Category | Requirements |
 |--------------|-------------|
 | **Azure DevOps** | - An [Azure DevOps project](../../organizations/projects/create-project.md).<br>   - An ability to run pipelines on Microsoft-hosted agents. You can either purchase a [parallel job](../licensing/concurrent-jobs.md) or you can request a free tier.  <br> - Basic knowledge of YAML and Azure Pipelines. For more information, see [Create your first pipeline](../create-first-pipeline.md). <br> - **Permissions:**<br>      &nbsp;&nbsp;&nbsp;&nbsp; To add environments, the [Creator role for environments](../library/add-resource-protection.md#environments) in your project.  By default, members of the **Build Administrators**, **Release Administrators**, and **Project Administrators** groups can also create environments. |
-| **Azure** | An [Azure subscription](https://azure.microsoft.com/free/). |
+| **Azure** | An [Azure subscription](https://azure.microsoft.com/pricing/purchase-options/azure-account?cid=msft_learn). |
 
 ## Create an environment
 

@@ -2,8 +2,8 @@
 title: Azure DevOps Released Features
 author: gloridelmorales
 ms.author: glmorale
-ms.date: 09/05/2025
-ms.topic: article
+ms.date: 12/19/2025
+ms.topic: release-notes
 ms.service: azure-devops
 ms.subservice: azure-devops-release-notes
 description: Azure DevOps release notes and server build numbers
@@ -38,14 +38,63 @@ You can also [view the build numbers for each version](#azure-devops-server-buil
         </tr>
     </thead>
 <tr>
-    <td rowspan="5"><a href="2025/sprint-261-update.md" data-raw-source="[4 September 2025](2025/sprint-261-update.md)"> September 4 2025</a></td>
+    <td rowspan="8"><a href="2025/sprint-266-update.md" data-raw-source="[19 December 2025](2025/sprint-266-update.md)">December 19 2025</a></td>
+    <td>Secret asset metadata generally available via API</td><td>GitHub Advanced Security for Azure DevOps</td><td>N/A</td></tr>
+    <td>Code scanning now supports Rust</td><td>GitHub Advanced Security for Azure DevOps</td><td>N/A</td></tr>
+    <td>Expanded CodeQL buildless scanning for C/C++</td><td>GitHub Advanced Security for Azure DevOps</td><td>N/A</td></tr>
+    <td>Disabling the save operation for obsolete TFVC policies</td><td>Repos</td><td>Future</td></tr>
+    <td>Clearer artifact selection for YAML CD deployments</td><td>Pipelines</td><td>Future</td></tr>
+    <td>Associate test cases from work item is now generally available</td><td>Test Plans</td><td>Future</td></tr>
+    <td>Support for data-driven tests with VSTest task</td><td>Test Plans</td><td>Future</td></tr>
+    <td>Bug fixes and accessibility improvements</td><td>Test Plans</td><td>Future</td></tr>
+<tr>
+<tr>
+    <td rowspan="7"><a href="2025/sprint-265-update.md" data-raw-source="[25 November 2025](2025/sprint-265-update.md)">November 25 2025</a></td>
+    <td>Group rules now apply to existing users</td><td>General</td><td>N/A</td></tr>
+    <td>Azure subscription required for new organizations</td><td>General</td><td>N/A</td></tr>
+    <td>Required upgrade of TFVC Proxy when used with hosted (cloud) TFVC repositories</td><td>Repos</td><td>Future</td></tr>
+    <td>Improved comment navigation by the link in pull requests</td><td>Repos</td><td>Future</td></tr>
+    <td>Target branches now available in pull request branch dropdown</td><td>Repos</td><td>Future</td></tr>
+    <td>New run pipeline panel</td><td>Pipelines</td><td>Future</td></tr>
+    <td>UX improvements</td><td>Test Plans</td><td>Future</td></tr>
+<tr>
+<tr>
+    <td rowspan="8"><a href="2025/sprint-264-update.md" data-raw-source="[4 November 2025](2025/sprint-264-update.md)">November 4 2025</a></td>
+    <td>Work item linking for Advanced Security alerts generally available</td><td>GitHub Advanced Security for Azure DevOps</td><td>N/A</td></tr>
+    <td>One-click enablement for dependency scanning generally available</td><td>GitHub Advanced Security for Azure DevOps</td><td>N/A</td></tr>
+    <td>Resolving throttling for automatic installation of CodeQL toolchain</td><td>GitHub Advanced Security for Azure DevOps</td><td>N/A</td></tr>
+    <td>Azure DevOps local MCP Server generally available</td><td>Boards</td><td>N/A</td></tr>
+    <td>Reduce authorization timeout</td><td>Pipelines</td><td>Future</td></tr>
+    <td>Pipeline parameters</td><td>Pipelines</td><td>Future</td></tr>
+    <td>Focused test point history panel</td><td>Test Plans</td><td>Future</td></tr>
+    <td>Fixed Back Button navigation in Test Plans</td><td>Test Plans</td><td>Future</td></tr>
+<tr>
+    <td rowspan="6"><a href="2025/sprint-263-update.md" data-raw-source="[14 October 2025](2025/sprint-263-update.md)"> October 14 2025</a></td>
+    <td>Improved secret rotation support for Azure service connection</td><td>Pipelines</td><td>Future</td></tr>
+    <td>AzureAppServiceManageV0 versioned extension support (preview)</td><td>Pipelines</td><td>N/A</td></tr>
+    <td>Ability to disable release pipelines</td><td>Pipelines</td><td>Future</td></tr>
+    <td>Tester column renamed in test points to Current Tester</td><td>Test Plans</td><td>Future</td></tr>
+    <td>Fixed query results pane resizing issue</td><td>Test Plans</td><td>Future</td></tr>
+    <td>Fixed missing screenshots for individual steps</td><td>Test Plans</td><td>Future</td></tr>
+<tr>
+<tr>
+    <td rowspan="6"><a href="2025/sprint-262-update.md" data-raw-source="[25 September 2025](2025/sprint-262-update.md)"> September 25 2025</a></td>
+    <td>New state filter available for Coverage in security overview</td><td>GitHub Advanced Security for Azure DevOps</td><td>N/A</td></tr>
+    <td>Enhanced filtering and search capabilities for Coverage</td><td>GitHub Advanced Security for Azure DevOps</td><td>N/A</td></tr>
+    <td>Granular enablement panels now available for project and organization-level enablement</td><td>GitHub Advanced Security for Azure DevOps</td><td>N/A</td></tr>
+    <td>Azure Boards integration with GitHub Copilot (private preview)</td><td>Boards</td><td>Future</td></tr>
+    <td>Deprecating clone work item</td><td>Boards</td><td>Future</td></tr>
+    <td>AzureAppServiceManageV0 Versioned Extension Support (public preview)</td><td>Boards</td><td>Future</td></tr>
+<tr>
+    <td rowspan="6"><a href="2025/sprint-261-update.md" data-raw-source="[4 September 2025](2025/sprint-261-update.md)"> September 4 2025</a></td>
     <td>New SARIF processing completed service hook event</td><td>GitHub Advanced Security for Azure DevOps</td><td>N/A</td></tr>
     <td>OAuth client secrets now shown only once</td><td>General</td><td>N/A</td></tr>
     <td>Dynamic checklist support in work item Markdown fields</td><td>Boards</td><td>Future</td></tr>
     <td>Improved navigation for pull request threads and discussions</td><td>Repos</td><td>Future</td></tr>
     <td>Associate automated tests to test cases</td><td>Test Plans</td><td>Future</td></tr>
+    <td>Fixed missing link cleanup when deleting shared steps</td><td>Test Plans</td><td>Future</td></tr>
 <tr>
-    <td rowspan="9"><a href="2025/sprint-260-update.md" data-raw-source="[11 August 2025](2025/sprint-260-update.md)"> August 11 2025</a></td>
+    <td rowspan="10"><a href="2025/sprint-260-update.md" data-raw-source="[11 August 2025](2025/sprint-260-update.md)"> August 11 2025</a></td>
     <td>Only organizations with existing public projects can create new ones</td><td>General</td><td>N/A</td></tr>
     <td>Azure DevOps login flow no longer relies on Azure Resource Manager audience</td><td>General</td><td>N/A</td></tr>
     <td>Continuous Access Evaluation on Azure DevOps</td><td>General</td><td>N/A</td></tr>
@@ -55,6 +104,7 @@ You can also [view the build numbers for each version](#azure-devops-server-buil
     <td>Validity checking for secrets now generally available</td><td>GitHub Advanced Security for Azure DevOps</td><td>N/A</td></tr>
     <td>Azure Boards and Pipelines integration for GitHub Enterprise Cloud with Data Residency</td><td>Boards</td><td>Future</td></tr>
     <td>Improved screen reader support for pull request experience</td><td>Repos</td><td>Future</td></tr>
+    <td>Resolved multiple issues</td><td>Test Plans</td><td>Future</td></tr>
 <tr>
 <tr>
     <td rowspan="6"><a href="2025/sprint-259-update.md" data-raw-source="[30 June 2025](2025/sprint-259-update.md)"> July 17 2025</a></td>
@@ -66,13 +116,14 @@ You can also [view the build numbers for each version](#azure-devops-server-buil
     <td>Enhanced diagram support in wiki pages and file preview</td><td>Repos</td><td>Future</td></tr>
 <tr>
 <tr>
-    <td rowspan="6"><a href="2025/sprint-258-update.md" data-raw-source="[30 June 2025](2025/sprint-258-update.md)"> June 30 2025</a></td>
+    <td rowspan="7"><a href="2025/sprint-258-update.md" data-raw-source="[30 June 2025](2025/sprint-258-update.md)"> June 30 2025</a></td>
     <td>Azure DevOps MCP Server public preview</td><td>General</td><td>N/A</td></tr>
     <td>New organizations won't offer public projects</td><td>General</td><td>N/A</td></tr>
     <td>One click enablement for dependency scanning now in public preview</td><td>GitHub Advanced Security for Azure DevOps</td><td>N/A</td></tr>
     <td>Service hooks for GitHub Advanced Security for Azure DevOps alerts generally available</td><td>GitHub Advanced Security for Azure DevOps</td><td>N/A</td></tr>
     <td>Syntax highlighting support for Kusto Query Language</td><td>Repos</td><td>Future</td></tr>
     <td>Ability to associate Java, JavaScript and Python tests to manual test cases</td><td>Test Plans</td><td>Future</td></tr>
+    <td>Improved tester assignment and configuration changes messaging</td><td>Test Plans</td><td>Future</td></tr>
 <tr>
 <tr>
     <td rowspan="13"><a href="2025/sprint-257-update.md" data-raw-source="[16 June 2025](2025/sprint-257-update.md)"> June 16 2025</a></td>
@@ -96,9 +147,9 @@ You can also [view the build numbers for each version](#azure-devops-server-buil
     <td>GitHub Integration: Pull Request Mentions</td><td>Boards</td><td>Future</td></tr>
     <td>Windows Server 2019 hosted image deprecation schedule</td><td>Pipelines</td><td>N/A</td></tr>
     <td>Support for Jupyter Notebook Diffing in PR</td><td>Repos</td><td>Future</td></tr>
-    <td>Support for YAML pipelines in Test Plans</td><td>Test Plans</td><td>Future</td></tr>
+    <td>Support for YAML pipelines in Test Plans</td><td>Test Plans</td><td>Azure DevOps Server</td></tr>
     <td>View Recent Test Results in Test Case</td><td>Test Plans</td><td>Future</td></tr>
-    <td>Available Data for Rollup Columns in backlog</td><td>Reporting</td><td>Future</td></tr>
+    <td>Available Data for Rollup Columns in backlog</td><td>Reporting</td><td>Azure DevOps Server</td></tr>
 <tr>
     <td rowspan="3"><a href="2025/sprint-255-update.md" data-raw-source="[23 April 2025](2025/sprint-255-update.md)"> 23 April 2025</a></td>
     <td>Manage high privilege scopes, pipeline decorators, and unpublished extensions</td><td>General</td><td>Future</td></tr>
@@ -109,12 +160,12 @@ You can also [view the build numbers for each version](#azure-devops-server-buil
     <td>No new Azure DevOps OAuth apps beginning April 2025 </td><td>General</td><td>Future</td></tr>
     <td>Server Name Indication (SNI) now mandatory for Azure DevOps Services </td><td>General</td><td>Future</td></tr>
     <td>GitHub Integration: Improvements linking to commits, branches and pull requests</td><td>Boards</td><td>Future</td></tr>
-    <td>GitHub Integration: Show build status for YAML pipelines</td><td>Boards</td><td>Future</td></tr>
-    <td>Delivery Plans limit increased</td><td>Boards</td><td>Future</td></tr>
-    <td>TFVC check-in policies changes </td><td>Repos</td><td>Future</td></tr>
-    <td>Enhancement to GetRepository API</td><td>Repos</td><td>Future</td></tr>
+    <td>GitHub Integration: Show build status for YAML pipelines</td><td>Boards</td><td>Azure DevOps Server</td></tr>
+    <td>Delivery Plans limit increased</td><td>Boards</td><td>Azure DevOps Server</td></tr>
+    <td>TFVC check-in policies changes </td><td>Repos</td><td>Azure DevOps Server</td></tr>
+    <td>Enhancement to GetRepository API</td><td>Repos</td><td>Azure DevOps Server</td></tr>
     <td>Enhancement to Pull Requests Query API</td><td>Repos</td><td>Future</td></tr>
-    <td>Improved visibility into YAML pipeline stage dependencies</td><td>Pipelines</td><td>Future</td></tr>
+    <td>Improved visibility into YAML pipeline stage dependencies</td><td>Pipelines</td><td>Azure DevOps Server</td></tr>
     <td>New Agent CDN</td><td>Pipelines</td><td>Future</td></tr>
     <td>Node 16 will be removed from pipelines-* Pipeline agent packages</td><td>Pipelines</td><td>Future</td></tr>
     <td>Retirement of action logging and switch to screen recording</td><td>Test Plans</td><td>Future</td></tr>
@@ -123,7 +174,7 @@ You can also [view the build numbers for each version](#azure-devops-server-buil
     <td rowspan="13"><a href="2025/sprint-253-update.md" data-raw-source="[20 March  2025](2025/sprint-253-update.md)"> 20 March  2025</a></td>
     <td>Overlapping secrets for Azure DevOps OAuth </td><td>General</td><td>Future</td></tr>
     <td>Deprecation of Languages statistics tags from the Project Summary Page </td><td>General</td><td>Future</td></tr>
-    <td>Delivery Plans permission added </td><td>General</td><td>Future</td></tr>
+    <td>Delivery Plans permission added </td><td>General</td><td>Azure DevOps Server</td></tr>
     <td>Security overview risk page enhanced with new columns and filtering options</td><td>GitHub Advanced Security for Azure DevOps</td><td>N/A</td></tr>
     <td>Multi-repository publishing scenarios supported for GitHub Advanced Security for Azure DevOps</td><td>GitHub Advanced Security for Azure DevOps</td><td>N/A</td></tr>
     <td>Service hooks for GitHub Advanced Security alerts for Azure DevOps (preview)</td><td>GitHub Advanced Security for Azure DevOps</td><td>N/A</td></tr>
@@ -132,7 +183,7 @@ You can also [view the build numbers for each version](#azure-devops-server-buil
     <td>Workload identity federation uses Entra issuer</td><td>Pipelines</td><td>Future</td></tr>
     <td>Gradle@4 task</td><td>Pipelines</td><td>Future</td></tr>
     <td>Identity of user who requested a stage to run</td><td>Pipelines</td><td>Future</td></tr>
-    <td>Improvements on the Publish code coverage results v2 task</td><td>Test Plans</td><td>Future</td></tr>
+    <td>Improvements on the Publish code coverage results v2 task</td><td>Test Plans</td><td>Azure DevOps Server</td></tr>
     <td>Export test cases with custom columns in XLSX</td><td>Test Plans</td><td>Future</td></tr>
   <tr>
     <td rowspan="11"><a href="2025/sprint-252-update.md" data-raw-source="[24 February  2025](2025/sprint-253-update.md)"> 24 February  2025</a></td>
@@ -146,7 +197,7 @@ You can also [view the build numbers for each version](#azure-devops-server-buil
     <td>Update on New Boards Hub Rollout</td><td>Boards</td><td>Future</td></tr>
     <td>Pipelines using Ubuntu 24.04 will show warnings for certain tasks</td><td>Pipelines</td><td>Future</td></tr>
     <td>Informational runs</td><td>Pipelines</td><td>Future</td></tr>
-    <td>Undo test step in web and desktop runner</td><td>Test Plans</td><td>Future</td></tr>    
+    <td>Undo test step in web and desktop runner</td><td>Test Plans</td><td>Azure DevOps Server</td></tr>    
 <tr>
     <td rowspan="14"><a href="2025/sprint-251-update.md" data-raw-source="[12 February  2025](2025/sprint-251-update.md)"> 12 February  2025</a></td>
     <td>Removal of Generate Git Credentials Button in Repos and Wiki </td><td>General</td><td>Future</td></tr>
@@ -161,14 +212,14 @@ You can also [view the build numbers for each version](#azure-devops-server-buil
     <td>New tasks to implement secret-less access to Azure storage accounts</td><td>Pipelines</td><td>Future</td></tr>
     <td>Direct link from Test Plan work item to Test Plans page</td><td>Test Plans</td><td>Future</td></tr>
     <td>Azure Test Plans bug fixes</td><td>Test Plans</td><td>Future</td></tr>
-    <td>Export test cases with custom columns in XLSX</td><td>Test Plans</td><td>N/A</td></tr>
+    <td>Export test cases with custom columns in XLSX</td><td>Test Plans</td><td>Azure DevOps Server</td></tr>
     <td>Auto-pause manual test case run</td><td>Test Plans</td><td>Future</td></tr>
 <tr>
     <td rowspan="7"><a href="2025/sprint-248-update.md" data-raw-source="[17 January 2025](2025/sprint-248-update.md)"> 17 January 2025</a></td>
     <td>Tool specific security overview coverage</td><td>GitHub Advanced Security for Azure DevOps</td><td>N/A</td></tr>
     <td>Azure Boards Integration with GitHub Enterprise Cloud with Data Residency </td><td>Boards</td><td>Future</td></tr>
-    <td>Sparse checkout for Azure Repos</td><td>Repos</td><td>Future</td></tr>
-    <td>Make cross-repo policies case-sensitive</td><td>Repos</td><td>Future</td></tr>
+    <td>Sparse checkout for Azure Repos</td><td>Repos</td><td>Azure DevOps Server</td></tr>
+    <td>Make cross-repo policies case-sensitive</td><td>Repos</td><td>Azure DevOps Server</td></tr>
     <td>New pipeline expression function</td><td>Pipelines</td><td>N/A</td></tr>
     <td>Enhancements to ManualValidation task</td><td>Pipelines</td><td>N/A</td></tr>
     <td>Azure Test Plans bug fixes</td><td>Test Plans</td><td>Future</td></tr>
@@ -176,33 +227,33 @@ You can also [view the build numbers for each version](#azure-devops-server-buil
     <td rowspan="10"><a href="2024/sprint-247-update.md" data-raw-source="[13 November 2024](2024/sprint-247-update.md)"> 13 November 2024</a></td>
     <td>Commit-less builds supported for dependency scanning</td><td>GitHub Advanced Security for Azure DevOps</td><td>N/A</td></tr>
     <td>File previews and annotations for CodeQL scans using sourcesFolder</td><td>GitHub Advanced Security for Azure DevOps</td><td>N/A</td></tr>
-    <td>New REST API limit on work item comments </td><td>Boards</td><td>Future</td></tr>
-    <td>Search pull requests by title on PR listing page</td><td>Repos</td><td>Future</td></tr>
+    <td>New REST API limit on work item comments </td><td>Boards</td><td>Azure DevOps Server</td></tr>
+    <td>Search pull requests by title on PR listing page</td><td>Repos</td><td>Azure DevOps Server</td></tr>
     <td>macOS-15 Sequoia is available in preview</td><td>Pipelines</td><td>N/A</td></tr>
     <td>Improvements to service connection App registration attribution</td><td>Pipelines</td><td>N/A</td></tr>
     <td>Azure Test Runner version 1.2.2</td><td>Test Plans</td><td>Future</td></tr>
-    <td>New sorting capabilities in Test Plans directory</td><td>Test Plans</td><td>Future</td></tr>
+    <td>New sorting capabilities in Test Plans directory</td><td>Test Plans</td><td>Azure DevOps Server</td></tr>
     <td>Auto Pause for Test Case Run preview</td><td>Test Plans</td><td>Future</td></tr>
     <td>New release version for Test and Feedback Extensions (TFE)</td><td>Test Plans</td><td>Future</td></tr>
 <tr>
 <tr>
     <td rowspan="16"><a href="2024/sprint-246-update.md" data-raw-source="[16 October 2024](2024/sprint-246-update.md)"> 16 October 2024</a></td>
-    <td>Copy code block to clipboard </td><td>General</td><td>Future</td></tr>
+    <td>Copy code block to clipboard </td><td>General</td><td>Azure DevOps Server</td></tr>
     <td>Entra Profile information </td><td>General</td><td>Future</td></tr>
     <td>Pull request annotations for dependency and code scanning</td><td>GitHub Advanced Security for Azure DevOps</td><td>N/A</td></tr>
     <td>New pip detection strategy for dependency scanning</td><td>GitHub Advanced Security for Azure DevOps</td><td>N/A</td></tr>
     <td>Alert rule IDs now integrated into result fingerprints </td><td>GitHub Advanced Security for Azure DevOps</td><td>N/A</td></tr>
-    <td>Enhanced tag management on work item form </td><td>Boards</td><td>N/A</td></tr>
-    <td>Improved image support in work item comments</td><td>Boards</td><td>N/A</td></tr>
+    <td>Enhanced tag management on work item form </td><td>Boards</td><td>Azure DevOps Server</td></tr>
+    <td>Improved image support in work item comments</td><td>Boards</td><td>Azure DevOps Server</td></tr>
     <td>GitHub pull request insights</td><td>Boards</td><td>N/A</td></tr>
-    <td>Configure target branches for pull requests</td><td>Repos</td><td>Future</td></tr>
-    <td>Support mermaid diagrams in markdown file preview</td><td>Repos</td><td>Future</td></tr>
+    <td>Configure target branches for pull requests</td><td>Repos</td><td>Azure DevOps Server</td></tr>
+    <td>Support mermaid diagrams in markdown file preview</td><td>Repos</td><td>Azure DevOps Server</td></tr>
     <td>Ubuntu 24.04 on Azure Pipelines hosted agents</td><td>Pipelines</td><td>Future</td></tr>
     <td>Use Workload identity federation in Azure integration tests</td><td>Pipelines</td><td>Future</td></tr>
     <td>New Azure service connection creation experience with improved Managed identity support</td><td>Pipelines</td><td>Future</td></tr>
     <td>Run children stages when parent stage fails</td><td>Pipelines</td><td>Future</td></tr>
     <td>Authentication to Azure Artifacts using a public feed and Cargo</td><td>Artifacts</td><td>N/A</td></tr>
-    <td>Improve pasting of HTML based content into Wikis</td><td>Wiki</td><td>Future</td></tr>
+    <td>Improve pasting of HTML based content into Wikis</td><td>Wiki</td><td>Azure DevOps Server</td></tr>
 <tr>
 <tr>
     <td rowspan="12"><a href="2024/sprint-245-update.md" data-raw-source="[26 September 2024](2024/sprint-245-update.md)"> 26 September 2024</a></td>
@@ -211,12 +262,12 @@ You can also [view the build numbers for each version](#azure-devops-server-buil
     <td>Generic third-party SARIF support for Advanced Security</td><td>GitHub Advanced Security for Azure DevOps</td><td>N/A</td></tr>
     <td>Alert rule IDs now integrated into result fingerprints </td><td>GitHub Advanced Security for Azure DevOps</td><td>N/A</td></tr>
     <td>Pull request annotations feature in public preview </td><td>GitHub Advanced Security for Azure DevOps</td><td>N/A</td></tr>
-    <td>AB# links on GitHub pull requests</td><td>Boards</td><td>N/A</td></tr>
-    <td>REST API support for connecting GitHub repositories</td><td>Boards</td><td>N/A</td></tr>
+    <td>AB# links on GitHub pull requests</td><td>Boards</td><td>Azure DevOps Server</td></tr>
+    <td>REST API support for connecting GitHub repositories</td><td>Boards</td><td>Azure DevOps Server</td></tr>
     <td>Permanently delete attachments</td><td>Boards</td><td>Future</td></tr>
     <td>New Health and usage panel in repo file hub </td><td>Repos</td><td>Future</td></tr>
-    <td>Azure Pipeline agent v4 runs on .NET 8</td><td>Pipelines</td><td>Future</td></tr>
-    <td>Seamless build Pipeline integration for test case execution</td><td>Test Plans</td><td>Future</td></tr>
+    <td>Azure Pipeline agent v4 runs on .NET 8</td><td>Pipelines</td><td>Azure DevOps Server</td></tr>
+    <td>Seamless build Pipeline integration for test case execution</td><td>Test Plans</td><td>Azure DevOps Server</td></tr>
     <td>Test and feedback extension in Manifest V3 (Edge release)</td><td>Test Plans</td><td>Future</td></tr>
 <tr>
 <tr>
@@ -224,7 +275,7 @@ You can also [view the build numbers for each version](#azure-devops-server-buil
     <td>New Advanced Security API endpoint to retrieve all branches with successful Advanced Security analyses</td><td>GitHub Advanced Security for Azure DevOps</td><td>N/A</td></tr>
     <td>Advanced Security List Alerts API return all alerts across all branches</td><td>GitHub Advanced Security for Azure DevOps</td><td>N/A</td></tr>
     <td>Area and iteration level fields</td><td>Boards</td><td>Future</td></tr>
-    <td>UI support of Git Submodules</td><td>Repos</td><td>Future</td></tr>
+    <td>UI support of Git Submodules</td><td>Repos</td><td>Azure DevOps Server</td></tr>
     <td>Announcing deprecation of Pipeline Tasks</td><td>Pipelines</td><td>Future</td></tr>
     <td>The Pipelines agent will show warnings for agents running Operating Systems not supported by .NET 8</td><td>Pipelines</td><td>Future</td></tr>
     <td>Enhanced Visibility for Usage Limits in Azure DevOps</td><td>Reporting</td><td>Future</td></tr>
@@ -241,7 +292,7 @@ You can also [view the build numbers for each version](#azure-devops-server-buil
     <td>Manually triggered YAML pipeline stages</td><td>Pipelines</td><td>Future</td></tr>
 <tr>
     <td rowspan="3"><a href="2024/sprint-242-update.md" data-raw-source="[25 July 2024](2024/sprint-242-update.md)"> 25 July  2024</a></td>
-    <td>Connect to GitHub repository search improvements</td><td>Boards</td><td>Future</td></tr>
+    <td>Connect to GitHub repository search improvements</td><td>Boards</td><td>Azure DevOps Server</td></tr>
     <td>Create GitHub branch from work item</td><td>Boards</td><td>Future</td></tr>
     <td>Unskippable stages</td><td>Pipelines</td><td>Future</td></tr>
 <tr>
@@ -253,14 +304,14 @@ You can also [view the build numbers for each version](#azure-devops-server-buil
 <tr>
     <td rowspan="9"><a href="2024/sprint-240-update.md" data-raw-source="[14 June 2024](2024/sprint-240-update.md)"> 14 June  2024</a></td>
     <td>Security overview API documentation now available</td><td>GitHub Advanced Security for Azure DevOps</td><td>N/A</td></tr>
-    <td>Change for deleting area and iteration paths</td><td>Boards</td><td>Future</td></tr>
-    <td>Access Azure Bus from Pipelines using Microsoft Entra ID authentication</td><td>Pipelines</td><td>Future</td></tr>
+    <td>Change for deleting area and iteration paths</td><td>Boards</td><td>Azure DevOps Server</td></tr>
+    <td>Access Azure Bus from Pipelines using Microsoft Entra ID authentication</td><td>Pipelines</td><td>Azure DevOps Server</td></tr>
     <td>Pipelines and tasks populate variables to customize Workload identity federation authentication</td><td>Pipelines</td><td>N/A</td></tr>
     <td>Retries for server tasks </td><td>Pipelines</td><td>Future</td></tr>
-    <td>Tasks that use an end-of-life Node runner version to execute emit warnings</td><td>Pipelines</td><td>Future</td></tr>
-    <td>DockerCompose@0 uses Docker Compose v2 in v1 compatibility mode</td><td>Pipelines</td><td>Future</td></tr>
+    <td>Tasks that use an end-of-life Node runner version to execute emit warnings</td><td>Pipelines</td><td>Azure DevOps Server</td></tr>
+    <td>DockerCompose@0 uses Docker Compose v2 in v1 compatibility mode</td><td>Pipelines</td><td>Azure DevOps Server</td></tr>
     <td>New setting to disable creation of TFVC repositories</td><td>Repos</td><td>Future</td></tr>
-    <td>Test and Feedback Extension in Manifest V3 </td><td>Test Plans</td><td>Future</td></tr>
+    <td>Test and Feedback Extension in Manifest V3 </td><td>Test Plans</td><td>Azure DevOps Server</td></tr>
 <tr>
     <td rowspan="5"><a href="2024/sprint-238-update.md" data-raw-source="[2 May 2024](2024/sprint-238-update.md)"> 2 May  2024</a></td>
     <td>Improve Search Results with wildcard prefixes and substrings</td><td>General</td><td>Future</td></tr>
@@ -277,7 +328,7 @@ You can also [view the build numbers for each version](#azure-devops-server-buil
     <td>AB# links on GitHub pull requests (preview)</td><td>Boards</td><td>Future</td></tr>
     <td>Connect to GitHub repository search improvements</td><td>Boards</td><td>Future</td></tr>
     <td>Edit queue build configuration permission</td><td>Pipelines</td><td>Future</td></tr>
-    <td>TFX validates whether a task is using an End or Life Node runner</td><td>Pipelines</td><td>Future</td></tr>
+    <td>TFX validates whether a task is using an End or Life Node runner</td><td>Pipelines</td><td>Azure DevOps Server</td></tr>
 <tr>
 <tr>
     <td rowspan="4"><a href="2024/sprint-236-update.md" data-raw-source="[26 March 2024](2024/sprint-236-update.md)"> 26 March  2024</a></td>
@@ -4975,6 +5026,61 @@ You can also [view the build numbers for each version](#azure-devops-server-buil
         </tr>
 </thead>
 <tbody>
+        <tr>
+          <td><a href="/azure/devops/server/release-notes/azuredevopsserver?view=azure-devops#azure-devops-server-release-date-december-9-2025&preserve-view=true" data-raw-source="[Azure DevOps Server](/azure/devops/server/release-notes/azuredevopsserver?view=azure-devops#azure-devops-server-release-date-december-9-2025)">Azure DevOps Server</a></td>
+          <td>December 9, 2025</td>
+          <td>20.0.36719.1</td>
+        </tr>
+        <tr>
+          <td><a href="/azure/devops/server/release-notes/azuredevopsserver?view=azure-devops#azure-devops-server-rc-release-date-october-7-2025&preserve-view=true" data-raw-source="[Azure DevOps Server RC](/azure/devops/server/release-notes/azuredevopsserver?view=azure-devops#azure-devops-server-rc-release-date-october-7-2025)">Azure DevOps Server RC</a></td>
+          <td>October 7, 2025</td>
+          <td>20.0.36503.1</td>
+        </tr>
+        <tr>
+          <td><a href="/azure/devops/server/release-notes/azuredevopsserver?view=azure-devops#azure-devops-server-rc-release-date-october-7-2025&preserve-view=true" data-raw-source="[Azure DevOps Server RC](/azure/devops/server/release-notes/azuredevops2022u2?view=azure-devops#azure-devops-server-20222-rtw-release-date-july-9-2024)">Azure DevOps Server RC</a></td>
+          <td>October 7, 2025</td>
+          <td>20.0.36503.1</td>
+        </tr>
+        <tr>
+          <td><a href="/azure/devops/server/release-notes/azuredevops2022u2?view=azure-devops#azure-devops-server-20222-rtw-release-date-july-9-2024&preserve-view=true" data-raw-source="[2022.2 re-release](/azure/devops/server/release-notes/azuredevops2022u2?view=azure-devops#azure-devops-server-20222-rtw-release-date-july-9-2024)">2022.2 re-release</a></td>
+          <td>August 13, 2024</td>
+          <td>19.235.35206.7</td>
+        </tr>
+        <tr>
+          <td><a href="/azure/devops/server/release-notes/azuredevops2022u2?view=azure-devops#azure-devops-server-2022-update-2-rc-release-date-may-7-2024&preserve-view=true" data-raw-source="[2022.2 RTW](/azure/devops/server/release-notes/azuredevops2022u2?view=azure-devops#azure-devops-server-2022-update-2-rc-release-date-may-7-2024)">2022.2 RTW</a></td>
+          <td>July 9, 2024</td>
+          <td>19.235.35102.1</td>
+        </tr>
+        <tr>
+          <td><a href="/azure/devops/server/release-notes/azuredevops2022u2?view=azure-devops#azure-devops-server-2022-update-2-rc-release-date-may-7-2024&preserve-view=true" data-raw-source="[2022.2 RC](/azure/devops/server/release-notes/azuredevops2022u2?view=azure-devops#azure-devops-server-2022-update-2-rc-release-date-may-7-2024)">2022.2 RC</a></td>
+          <td>May 7, 2024</td>
+          <td>19.235.34823.2</td>
+        </tr>
+        <tr>
+          <td><a href="/azure/devops/server/release-notes/azuredevops2022u1?view=azure-devops&tabs=yaml#azure-devops-server-2022-update-1-release-date-november-28-2023&preserve-view=true" data-raw-source="[2022.1 RTW](/azure/devops/server/release-notes/azuredevops2022u1?view=azure-devops&tabs=yaml#azure-devops-server-2022-update-1-release-date-november-28-2023)">2022.1 RTW</a></td>
+          <td>November 28, 2023</td>
+          <td>19.225.34309.2</td>
+        </tr>
+        <tr>
+          <td><a href="/azure/devops/server/release-notes/azuredevops2022u1?view=azure-devops&tabs=yaml#azure-devops-server-2022-update-1-rc2-release-date-october-31-2023&preserve-view=true" data-raw-source="[2022.1 RC2](/azure/devops/server/release-notes/azuredevops2022u1?view=azure-devops&tabs=yaml#azure-devops-server-2022-update-1-rc2-release-date-october-31-2023)">2022.1 RC2</a></td>
+          <td>October 31, 2023</td>
+          <td>19.225.34212.1</td>
+        </tr>
+        <tr>
+          <td><a href="/azure/devops/server/release-notes/azuredevops2022u1?view=azure-devops&tabs=yaml#azure-devops-server-2022-update-1-rc1-release-date-september-19-2023&preserve-view=true" data-raw-source="[2022.1 RC1](/azure/devops/server/release-notes/azuredevops2022u1?view=azure-devops&tabs=yaml#azure-devops-server-2022-update-1-rc1-release-date-september-19-2023)">2022.1 RC1</a></td>
+          <td>September 19, 2023</td>
+          <td>19.225.34108.1</td>
+        </tr>
+        <tr>
+          <td><a href="/azure/devops/server/release-notes/azuredevopsserver?view=azure-devops&preserve-view=true" data-raw-source="[2022 RTW](/azure/devops/server/release-notes/azuredevops2022)">2022 RTW</a></td>
+          <td>December 6, 2022</td>
+          <td>19.205.33122.1</td>
+        </tr>
+        <tr>
+          <td><a href="/azure/devops/server/release-notes/azuredevopsserver?view=azure-devops&preserve-view=true" data-raw-source="[Azure DevOps Server RC](/azure/devops/server/release-notes/azuredevopsserver?view=azure-devops#azure-devops-server-rc-release-date-october-7-2025)">Azure DevOps Server RC</a></td>
+          <td>October 7, 2025</td>
+          <td>19.205.33011.1</td>
+        </tr>
         <tr>
           <td><a href="/azure/devops/server/release-notes/azuredevops2022?view=azure-devops&preserve-view=true" data-raw-source="[2022 RTW](/azure/devops/server/release-notes/azuredevops2022)">2022 RTW</a></td>
           <td>December 6, 2022</td>

@@ -4,7 +4,7 @@ titleSuffix: Azure Repos
 description: Learn how to specify a list of branches as potential pull request targets.
 ms.assetid: 1D70C33E-FFBB-44B2-82A6-CE9BF8169BE7
 ms.service: azure-devops-repos
-ms.topic: conceptual
+ms.topic: how-to
 ms.author: dstolee
 author: dstolee
 ms.date: 08/19/2024
@@ -60,6 +60,12 @@ There are multiple entry points to using a dynamic target branch.
    request creation page using a `sourceRef` parameter but omitting the
    `targetRef` parameter, Azure DevOps selects a target branch based on
    this dynamic choice.
+
+- **Branch Dropdown.** When a user opens the branch dropdown in Azure 
+  DevOps, branches specified in the pull request targets will appear 
+  in a section called "Targets" between the "Mine" and "All" sections.
+
+  ![Screenshot of the branch dropdowns with the Targets section.](media/pull-request-targets/target-branch-dropdown.png)
 
 There's a capability for client tools to create pull requests using this
 dynamic choice, but those clients need to add an optional signal that the
@@ -152,7 +158,7 @@ first parent history still demonstrates a preference for `feature/targets`.
 ### Breaking Ties
 
 If two branches have the same first-parent history intersection, then
-Azure Devops selects the branch that appears earlier in the
+Azure DevOps selects the branch that appears earlier in the
 `pull_request_targets` list. If multiple branches are still tied based on
 the `pull_request_targets` list due to a prefix match, then the earliest
 in alphabetical order wins.

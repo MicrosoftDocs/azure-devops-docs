@@ -5,7 +5,7 @@ ms.assetid: B64E70C5-E5B2-49E6-BD05-FF5932F9894C
 ms.subservice: azure-devops-search
 ms.custom: cross-service, cross-project
 ai-usage: ai-assisted
-ms.topic: conceptual
+ms.topic: overview
 ms.author: chcomley
 author: chcomley
 ms.date: 10/17/2024
@@ -189,10 +189,10 @@ If you're using a portrait orientation screen, use the **Preview pane: Right** l
 
 You can use APIs to extend or supplement the capabilities listed in this article. For information about Work Item Search with REST API, see [Fetch Work Item Search Results](/rest/api/azure/devops/search/work-item-search-results/fetch-work-item-search-results).
 
-## Next steps
+## Next step
 
 > [!div class="nextstepaction"]
-> [Supported filter functions and more for work items](../../boards/backlogs/filter-backlogs-boards-plans.md#supported-filter-functions)
+> [Use supported filter functions and more for work items](../../boards/backlogs/filter-backlogs-boards-plans.md)
 
 ## Related content
 

@@ -1,25 +1,34 @@
 ---
 title: Template expressions
-description: How to use expressions in templates
-ms.topic: conceptual
-ms.date: 10/25/2024
-monikerRange: '>=azure-devops-2020'
+description: Discover how to use Azure Pipelines template expressions to pass parameters, insert collections, and conditionally include pipeline elements.
+ms.topic: concept-article
+ms.date: 01/12/2026
+ms.author: jukullam
+author: juliakm
+monikerRange: "<=azure-devops"
+ai-usage: ai-assisted
+#customer intent: As a DevOps engineer, I want to understand how to use template expressions in Azure Pipelines so that I can create dynamic and reusable templates.
 ---
 
 # Template expressions
 
+Template expressions make your Azure Pipelines templates more dynamic and reusable. By using template expressions, you can:
+- **Parameterize templates**: Pass values to templates to customize their behavior without duplicating code.
+- **Conditionally include content**: Dynamically add or exclude pipeline steps, jobs, or stages based on parameter values.
+- **Insert and iterate over collections**: Generate multiple pipeline elements from arrays or key-value pairs.
+- **Reduce repetition**: Create flexible, reusable templates that work across different scenarios and teams.
+
 Use template [expressions](expressions.md) to specify how values are dynamically resolved during pipeline initialization.
 Wrap your template expression inside this syntax: `${{ }}`. 
 
-Template expressions can expand template parameters, and also variables.
-You can use parameters to influence how a template is expanded.
+Template expressions can expand template parameters and variables.
+Use parameters to influence how a template is expanded.
 The `parameters` object works like the [`variables` object](expressions.md#variables)
 in an expression. Only predefined variables can be used in template expressions.
 
 > [!NOTE]
 > Expressions are only expanded for `stages`, `jobs`, `steps`, and `containers` (inside `resources`).
-> You cannot, for example, use an expression inside `trigger` or a resource like `repositories`.
-> Additionally, on Azure DevOps 2020 RTW, you can't use template expressions inside `containers`.
+> You can't, for example, use an expression inside `trigger` or a resource like `repositories`.
 
 For example, you define a template:
 
@@ -55,12 +64,11 @@ steps:
 
 ### Context
 
-Within a template expression, you have access to the `parameters` context that contains the values of parameters passed in.
+Within a template expression, you have access to the `parameters` context (the set of data available within the expression, such as parameters and variables passed to the template) that contains the values of parameters passed in.
 Additionally, you have access to the `variables` context that contains all the variables specified in the YAML file plus 
 many of the [predefined variables](../build/variables.md) (noted on each variable in that article). 
 Importantly, it doesn't have runtime variables such as those stored on the pipeline or given when you start a run.
 Template expansion happens [early in the run](runs.md#process-the-pipeline), so those variables aren't available.
-
 
 ### Template expression functions
 
@@ -68,31 +76,36 @@ You can use [general functions](expressions.md#functions) in your templates. You
 
 #### format
 * Simple string token replacement
-* Min parameters: 2. Max parameters: N
+* Minimum parameters: 2. Maximum parameters: N
 * Example: `${{ format('{0} Build', parameters.os) }}` &rarr; `'Windows Build'`
 
 #### coalesce
 * Evaluates to the first non-empty, non-null string argument
-* Min parameters: 2. Max parameters: N
+* Minimum parameters: 2. Maximum parameters: N
 * Example:
 
 ```yaml
 parameters:
-- name: 'restoreProjects'
-  default: ''
+- name: 'customVersion'
   type: string
-- name: 'buildProjects'
   default: ''
+- name: 'defaultVersion'
   type: string
+  default: '1.0.0'
 
 steps:
-- script: echo ${{ coalesce(parameters.foo, parameters.bar, 'Nothing to see') }}
+- script: echo Version is ${{ coalesce(parameters.customVersion, parameters.defaultVersion) }}
 ```
+
+> [!NOTE]
+> String parameters with `default: ''` (empty string) behave differently depending on how you trigger the pipeline:
+> * **In the pipeline editor**: You can run the pipeline directly and the empty string default is respected, allowing `coalesce` to fall back to the next value.
+> * **In the Run Pipeline pane**: Azure DevOps requires you to provide a non-empty value for parameters with empty string defaults, preventing `coalesce` from falling back. 
 
 ### Insertion
 
-You can use template expressions to alter the structure of a YAML pipeline.
-For instance, to insert into a sequence:
+Use template expressions to change the structure of a YAML pipeline.
+For example, use the following expression to insert into a sequence:
 
 ```yaml
 # File: jobs/build.yml
@@ -134,9 +147,9 @@ jobs:
     - script: echo hello from pre-test
 ```
 
-When an array is inserted into an array, the nested array is flattened.
+When you insert an array into an array, you flatten the nested array.
 
-To insert into a mapping, use the special property `${{ insert }}`.
+To insert into a mapping (a collection of key-value pairs, similar to a dictionary or object in YAML), use the special property `${{ insert }}`.
 
 ```yaml
 # Default values
@@ -249,7 +262,6 @@ steps:
 
 You can also set variables based on the values of other variables. In the following pipeline, `myVar` is used to set the value of `conditionalVar`. 
 
-
 ```yaml
 trigger:
 - main
@@ -277,10 +289,9 @@ steps:
   - script: echo "the value of myVar is set in the elseif condition" # runs when myVar=baz
 ```
 
-
 ### Iterative insertion
 
-The `each` directive allows iterative insertion based on a YAML sequence (array) or mapping (key-value pairs).
+The `each` directive enables iterative insertion based on a YAML sequence (array) or mapping (key-value pairs).
 
 For example, you can wrap the steps of each job with other pre- and post-steps:
 
@@ -317,11 +328,10 @@ jobs:
       - script: echo So will this!
 ```
 
-You can also use `stringList` to define and interate over parameters that contain a list of items. 
+You can also use `stringList` to define and iterate over parameters that contain a list of items. 
 
 > [!NOTE]
 > The `stringList` data type isn't available in templates. Use the `object` data type in templates instead.
-
 
 ```yaml
 parameters:
@@ -345,7 +355,6 @@ stages:
       steps:
       - script: ./deploy ${{stage}}
 ```
-
 
 You can also manipulate the properties of whatever you're iterating over.
 For example, to add more dependencies:
@@ -389,4 +398,4 @@ jobs:
 
 ### Escape a value
 
-If you need to escape a value that literally contains `${{`, then wrap the value in an expression string. For example, `${{ 'my${{value' }}` or `${{ 'my${{value with a '' single quote too' }}`
+If you need to escape a value that literally contains `${{`, wrap the value in an expression string. For example, use `${{ 'my${{value' }}` or `${{ 'my${{value with a '' single quote too' }}`.

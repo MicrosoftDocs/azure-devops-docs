@@ -3,10 +3,10 @@ title: Service connections
 ms.custom: pipelinesresourcesrefresh, arm2024
 description: Learn how to manage Azure Pipelines service connections and get a reference to service connection types.
 ms.assetid: A40435C0-2053-4D99-9A75-CCB97FBB15D2
-ms.topic: conceptual
+ms.topic: concept-article
 ms.author: ronai
 author: RoopeshNair
-ms.date: 10/16/2024
+ms.date: 11/03/2025
 monikerRange: '<= azure-devops'
 ---
 
@@ -16,7 +16,7 @@ monikerRange: '<= azure-devops'
 
 This article covers service connections in Azure Pipelines. Service connections are authenticated connections between Azure Pipelines and external or remote services that you use to execute tasks in a job.
 
-For example, your pipelines might use the following categories of service connections:
+For example, your pipelines might use the following categories of service connections: 
 
 - Azure subscriptions, to use for Azure Web Site Deployment tasks.
 - Different build servers or file servers, such as a standard GitHub Enterprise Server service connection to a GitHub repository.
@@ -467,7 +467,7 @@ Use the following parameters to define a connection to the Jenkins service.
 
 You can select **Verify** to verify your credentials before entering the rest of the parameters.
 
-For more information, see [Azure Pipelines Integration with Jenkins](https://azuredevopslabs.com/labs/vstsextend/jenkins/) and [Artifact sources - Jenkins](../release/artifacts.md#jenkins).
+For more information, see [Artifact sources - Jenkins](../release/artifacts.md#jenkins).
 
 ### Jira service connection
 
@@ -487,6 +487,9 @@ Use the following parameters when you define a connection to a Kubernetes cluste
 * Kubeconfig
 * Service account
 * Azure subscription
+
+> [!NOTE]
+> The Kubernetes service connection option does not work if your cluster is private or hidden from the network. In these cases, you need to use an [Azure Resource Manager-based service connection](#azure-resource-manager-service-connection) and ensure your pipeline runs on an agent with direct network access to the cluster, such as one in a [Managed DevOps pool](/azure/devops/managed-devops-pools/overview).
 
 #### Kubeconfig option
 

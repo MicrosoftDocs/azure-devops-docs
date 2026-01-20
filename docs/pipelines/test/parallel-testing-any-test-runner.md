@@ -2,7 +2,7 @@
 title: Run any tests in parallel
 description: Speed up testing by running tests in parallel for any test runner
 ms.assetid: 21D3C181-5067-45C7-8A98-1F0ECB2CCB01
-ms.topic: conceptual
+ms.topic: concept-article
 ms.custom: continuous-test, cross-service
 ms.author: jeom
 author: raviLiftr
@@ -12,7 +12,7 @@ monikerRange: "<=azure-devops"
 
 # Run tests in parallel for any test runner
 
-[!INCLUDE [version-gt-eq-2019](../../includes/version-gt-eq-2019.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 Running tests to validate changes to code is key to maintaining quality.
 For continuous integration practice to be successful, it is essential you have a good test suite

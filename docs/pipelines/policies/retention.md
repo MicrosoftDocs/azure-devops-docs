@@ -1,6 +1,6 @@
 ---
 title: Retention policies for builds, releases, and test
-ms.topic: conceptual
+ms.topic: concept-article
 description: Builds, releases, and tests retention policies in Azure Pipelines
 ms.assetid: A9AC68EB-E013-4F86-8604-E69BB330817B
 ms.author: rabououn
@@ -67,7 +67,7 @@ You can also buy monthly access to Azure Test Plans and assign the [Basic + Test
 In most cases, you don't need to retain completed runs longer than a certain number of days. 
 Using retention policies, you can control **how many days** you want to keep each run before deleting it. 
 
-::: moniker range=">= azure-devops-2020"
+::: moniker range="<=azure-devops"
 
 1. Go to the ![gear icon](../../media/icons/gear-icon.png) **Settings** tab of your project's settings.
 
@@ -165,7 +165,7 @@ You can manually set a pipeline run to be retained using the [More actions menu]
 
 ::: moniker-end
 
-::: moniker range=">=azure-devops-2020"
+::: moniker range="<=azure-devops"
 
 ## Delete a run
 
@@ -191,7 +191,7 @@ The retention timer on a release is reset every time a release is modified or de
 
 As an author of a release pipeline, you can customize retention policies for releases of your pipeline on the **Retention** tab.
 
-::: moniker range=">=azure-devops-2020"
+::: moniker range="<=azure-devops"
 
 The retention policy for YAML and build pipelines is the same. You can see your pipeline's retention settings in **Project Settings** for **Pipelines** in the **Settings** section.
 
@@ -217,7 +217,7 @@ The **default retention policy** sets the default retention values for all the r
 
 The **destruction policy** helps you keep the releases for a certain period of time after they are deleted. This policy cannot be overridden in individual release pipelines.
 
-::: moniker range="=azure-devops-2020"
+::: moniker range="<=azure-devops"
 
 ## Set collection-level retention policies
 
@@ -227,7 +227,7 @@ For on-premises servers, you can also set the collection-level retention policie
 
 ::: moniker-end
 
-::: moniker range=">=azure-devops-2020"
+::: moniker range="<=azure-devops"
 
 ## Use the Copy Files task to save data longer
 

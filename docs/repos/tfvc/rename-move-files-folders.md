@@ -4,7 +4,7 @@ titleSuffix: Azure Repos
 description: Rename or move files and folders using Team Foundation Version Control (TFVC) in Visual Studio.
 ms.assetid: 90839209-cb51-4c00-ae19-08e7343093ea
 ms.service: azure-devops-repos
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 11/29/2022
 monikerRange: '<= azure-devops'
 ms.subservice: azure-devops-repos-tfvc

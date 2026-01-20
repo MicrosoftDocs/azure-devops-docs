@@ -8,14 +8,12 @@ author: chcomley
 ms.topic: overview
 monikerRange: "<=azure-devops"
 ms.date: 11/02/2023
-ms.custom:
-  - analytics
-  - sfi-image-nochange
+ms.custom: analytics, sfi-image-nochange
 ---
 
 # Analytics best practices 
 
-[!INCLUDE [version-gt-eq-2019](../../includes/version-gt-eq-2019.md)] 
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)] 
 
 Analytics is the reporting platform for Azure DevOps, which allows you to gain insights from your data and make data-driven decisions. Analytics is optimized for fast read-access and server-based aggregations, and it provides various tools to visualize and analyze your data. In this article, we share some best practices for using Analytics in Azure DevOps.
 

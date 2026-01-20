@@ -13,7 +13,7 @@ ms.date: 02/07/2023
 
 # Create an active bugs report in Power BI based on a custom Analytics view
 
-[!INCLUDE [version-gt-eq-2019](../../includes/version-gt-eq-2019.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 Analytics views support creating status and trend reports for work items based on teams or field criteria of your choosing. This article provides a tutorial for creating a custom Analytics view, loading it into Power BI, and then creating a stacked area trend report similar to the following image. 
 

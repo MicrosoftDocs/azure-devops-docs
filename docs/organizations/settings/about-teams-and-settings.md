@@ -7,7 +7,7 @@ ms.custom: teams
 ms.assetid: 24C97BED-88F4-4D91-98D1-4AC0B39AB7D7
 ms.author: chcomley
 author: chcomley
-ms.topic: conceptual
+ms.topic: overview
 ai-usage: ai-assisted
 monikerRange: '<= azure-devops'
 ms.date: 12/23/2024
@@ -65,7 +65,7 @@ Each team you create gains access to a suite of Agile tools and team assets. The
 
 ![Screenshot showing Agile tools, team assets.](media/agile-tools/agile-tools-team-assets-post-2018.png)
 
-::: moniker range=">= azure-devops-2020"
+::: moniker range="<=azure-devops"
 
 > [!NOTE] 
 > In addition to team dashboards, you can add a project dashboard, which isn't specific to any one team. For more information, see [Add, rename, and delete dashboards](../../report/dashboards/dashboards.md). 
@@ -102,7 +102,6 @@ Several tools also reference the team's default and selected Iteration Path or s
 
 > [!NOTE]   
 > New work items added through the **Work Items** page or the **New Work Items** widget on a team dashboard don't reference the **Default Iteration Path** assigned to the team. Instead, new work items are assigned the last **Iteration Path** selected by the user. New work items added through a team's **Sprints** backlog or taskboard are always assigned the **Iteration Path** associated with the selected sprint backlog or taskboard. 
-
 
 :::row::: 
    :::column span="1":::
@@ -194,14 +193,12 @@ Several tools also reference the team's default and selected Iteration Path or s
    :::column-end:::
 :::row-end:::
 
-
 > [!NOTE]  
 > 1. Agile tools filter items based on the team's selected area path(s). Teams can choose [whether to include or exclude items assigned to subarea paths](../../organizations/settings/set-area-paths.md#set-team-area-paths).  
 > 2. Work items whose **State** equals *Closed*, *Done*, or *Removed* (corresponding to a *Completed* category state) don't appear on portfolio and product backlogs.  
 > 3. You can add custom workflow states and assign them to one of three state categories. The [state categories](../../boards/work-items/workflow-and-state-categories.md)"> determine which work items appear on backlog and board views.   
 > 4. Boards, sprint backlogs, and taskboards only show the last node in a hierarchy, called the leaf node. For example, if you link items within a hierarchy that is four levels deep, only the items at the fourth level appear on the board, sprint backlog, and task board. For more information, see [parent-child links between items](../../boards/backlogs/resolve-backlog-reorder-issues.md).  
 > 5. Work items whose **State** equals *Removed* don't appear on boards.   
-
 
 ## Structure hierarchical teams or scale agility within an enterprise 
 
@@ -210,7 +207,6 @@ Although there's no concept of subteams, you can create teams whose area paths a
 Also, the following articles walk you through the steps for configuring teams, area paths, and iterations to support portfolio management or enterprise organizations: 
 - [Portfolio management](../../boards/plans/portfolio-management.md)
 - [Implement Scaled Agile Framework to support epics, release trains, and multiple backlogs](../../boards/plans/scaled-agile-framework.md)
-
 
 ## Team groups 
 
@@ -249,8 +245,6 @@ For more information about limiting access, see [Set permissions and access for 
 - [Add another team](add-teams.md)  
 - [Configure team settings](manage-teams.md)      
 - [Work across projects](../../project/navigation/work-across-projects.md)  
-
-
 
 <!--- IN ADDITION: Favorites (query, build); assigned to <team> PRs, Default reviewers for PRs, @CurrentIteration, @Mention a group, team is a group  -->   
 

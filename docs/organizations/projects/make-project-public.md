@@ -17,13 +17,14 @@ ms.date: 08/27/2025
 
 Learn how to change the visibility of your Azure DevOps project between public and private, and understand the security and access implications of each visibility setting.
 
-> [!IMPORTANT]
-> - When you change a private project to public visibility, **all project contents become publicly accessible**. You can't selectively keep certain repositories, area paths, or build artifacts private within a public project.
-> - Only organizations with the [Allow public project policy already enabled](#step-1-enable-public-projects-for-your-organization) can create projects of change the visibility of a project to public. The policy is no longer available to organizations that aren't using it already. Microsoft recommends using [GitHub](https://github.com/) for all your public project needs.
+[!INCLUDE [allow-public-project-policy](includes/allow-public-project-policy.md)]
 
 ## What changes when you make a project public
 
-Making a project public affects permissions, access levels, and available features:
+Making a project public affects permissions, access levels, and available features.
+
+> [!IMPORTANT]
+> When you change a private project to public visibility, **all project contents become publicly accessible**. You can't selectively keep certain repositories, area paths, or build artifacts private within a public project.
 
 ### Security and permissions changes
 

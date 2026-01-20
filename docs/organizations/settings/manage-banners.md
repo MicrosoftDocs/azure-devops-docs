@@ -11,9 +11,9 @@ monikerRange: "<=azure-devops"
 ms.date: 09/11/2024
 ---
 
-# Add and manage information banners in Azure Devops
+# Add and manage information banners in Azure DevOps
 
-[!INCLUDE [version-gt-eq-2019](../../includes/version-gt-eq-2019.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 Use information banners to quickly and effectively communicate with your Azure DevOps users. Alert users to upcoming changes or events without sending mass emails.
 

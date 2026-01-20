@@ -6,14 +6,14 @@ ms.custom: "analytics"
 ms.subservice: azure-devops-analytics
 ms.author: chcomley
 author: chcomley
-ms.topic: conceptual
+ms.topic: overview
 monikerRange: "<=azure-devops"
 ms.date: 08/12/2022
 ---
 
 # Analytics query tools in Azure DevOps
 
-[!INCLUDE [version-gt-eq-2019](../../includes/version-gt-eq-2019.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
  
 You can query Analytics from a web browser or other supported tools. To create reports, we recommend you use [Power BI](https://powerbi.microsoft.com/). Power BI is free and provides a suite of business analytics tools that you can use to perform impromptu analysis, produce reports, and publish reports for enterprise consumption.
 

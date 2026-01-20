@@ -3,14 +3,14 @@ title: Use npm scopes
 description: How to use npm scopes in Azure Artifacts 
 ms.assetid: c88868bd-8101-48f3-b76d-17c858181fda
 ms.service: azure-devops-artifacts
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 09/11/2023
-monikerRange: '>= azure-devops-2020'
+monikerRange: "<=azure-devops"
 ---
 
 # Use Npm scopes in Azure Artifacts
 
-[!INCLUDE [version-gt-eq-2020](../../includes/version-gt-eq-2020.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 Npm scopes serve as a means to categorize related packages into groups. These scopes enable you to create packages with identical names to those created by different users without encountering conflicts. By using scopes, you have the ability to segregate public and private packages by adding the scope prefix *@scopeName* and configuring the .npmrc file to exclusively use a feed with that particular scope.
 
@@ -59,7 +59,6 @@ Make sure to include both the scope and package names in your package.json file 
     ```
 
 - **Example**:
-
 
     ```.npmrc file
     @local:registry=https://pkgs.dev.azure.com/FabrikamOrg/NpmDemo/_packaging/FabrikamFeed/npm/registry/

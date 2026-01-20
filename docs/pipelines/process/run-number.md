@@ -1,7 +1,7 @@
 ---
 title: Run and build numbers
 description: Learn about Azure Pipelines run numbers and build numbers and how you can configure them in your pipelines.
-ms.topic: conceptual
+ms.topic: concept-article
 ms.assetid: 7C469647-117D-4867-B094-8BC811C0003E
 ms.date: 08/12/2025
 monikerRange: "<=azure-devops"
@@ -115,7 +115,7 @@ The time zone is the same as the operating system of the machine that runs your 
 
 ::: moniker-end
 
-::: moniker range=">=azure-devops-2020"
+::: moniker range="<=azure-devops"
 
 ### How can I set the build number dynamically with conditions?
 

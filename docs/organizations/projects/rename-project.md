@@ -15,7 +15,7 @@ ms.date: 11/11/2024
 
 # Rename a project in Azure DevOps
 
-[!INCLUDE [version-gt-eq-2019](../../includes/version-gt-eq-2019.md)] 
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)] 
 
 Renaming a project in Azure DevOps updates the project name in version control paths, work items, queries, and other project artifacts. You can rename a single project multiple times, and use old names. Some [actions might be required from team members](#required-user-actions-for-working-with-the-renamed-project) after you rename the project.
 

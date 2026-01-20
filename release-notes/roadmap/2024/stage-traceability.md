@@ -3,7 +3,7 @@ title: Stage traceability
 author: silviuandrica
 ms.author: sandrica
 ms.date: 11/8/2023
-ms.topic: article
+ms.topic: whats-new
 ms.service: azure-devops
 ms.subservice: azure-devops-release-notes
 description: Stage traceability

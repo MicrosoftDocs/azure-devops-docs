@@ -4,6 +4,7 @@ description: See the Sprint 220 feature updates for Reporting, including next st
 author: ckanyika
 ms.author: glmorale
 ms.date: 4/20/2023
+ms.topic: release-notes
 ---
 
 # Reporting - Sprint 220 Update

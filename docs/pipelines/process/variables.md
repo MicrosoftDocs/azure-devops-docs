@@ -1,10 +1,10 @@
 ---
 title: Define variables
-ms.custom: devx-track-azurecli
+ms.custom: devx-track-azurecli, copilot-scenario-highlight
 description: Variables are name-value pairs defined by you for use in a pipeline. You can use variables as inputs to tasks and in your scripts.
-ms.topic: conceptual
+ms.topic: concept-article
 ms.assetid: 4751564b-aa99-41a0-97e9-3ef0c0fce32a
-ms.date: 10/03/2024
+ms.date: 10/01/2025
 ai-usage: ai-assisted
 ---
 
@@ -19,7 +19,7 @@ To learn more how to work with variables defined at the job, stage, and root lev
 
 You can use variables with [expressions](expressions.md) to conditionally assign values and further customize pipelines.
 
-::: moniker range=">=azure-devops-2020"
+::: moniker range="<=azure-devops"
 Variables are different from [runtime parameters](runtime-parameters.md). Runtime parameters are typed and available during template parsing. 
 ::: moniker-end
 
@@ -148,6 +148,21 @@ Use macro syntax if you're providing a secure string or a [predefined variable](
 Choose a runtime expression if you're working with [conditions](conditions.md) and [expressions](expressions.md). However, don't use a runtime expression if you don't want your empty variable to print (example: `$[variables.var]`). For example, if you have conditional logic that relies on a variable having a specific value or no value. In that case, you should use a macro expression. 
 
 Typically a template variable is the standard to use. By leveraging template variables, your pipeline will fully inject the variable value into your pipeline at pipeline compilation. This is helpful when attempting to debug pipelines. You can download the log files and evaluate the fully expanded value that is being substituted in. Since the variable is substituted in, you shouldn't leverage template syntax for sensitive values.
+
+### Use AI to identify variable syntax issues
+
+This is an example prompt for Copilot Chat that identifies what types of variables are used in a pipeline and when the variables will resolve. Highlight your YAML code and then enter the following Copilot Chat prompt.
+
+```copilot-prompt
+What types of Azure DevOps variables are used in this YAML pipeline? Give specific examples.
+When does each variable process in the pipeline? 
+How will each variable render when not found? 
+What stages and jobs will the variables be available for? 
+```
+
+Customize your prompt to add specifics as needed. 
+
+Copilot is powered by AI, so surprises and mistakes are possible. For more information, see [Copilot FAQs](https://aka.ms/copilot-general-use-faqs). 
 
 ## Set variables in pipeline
 
@@ -568,7 +583,7 @@ To share variables across multiple pipelines in your project, use the web interf
 
 ## Use output variables from tasks
 
-::: moniker range=">=azure-devops-2020"
+::: moniker range="<=azure-devops"
 Some tasks define output variables, which you can consume in downstream steps, jobs, and stages.
 In YAML, you can access variables across jobs and stages by using [dependencies](expressions.md#dependencies). 
 
@@ -617,7 +632,7 @@ jobs:
   steps:
   - script: echo $(varFromA) # this step uses the mapped-in variable
 ```
-::: moniker range=">=azure-devops-2020"
+::: moniker range="<=azure-devops"
 
 ### Use outputs in a different stage
 
@@ -874,7 +889,7 @@ this is the value
 ```
 ::: moniker-end
 
-::: moniker range=">=azure-devops-2020"
+::: moniker range="<=azure-devops"
 
 If you're setting a variable from one stage to another, use `stageDependencies`. 
 

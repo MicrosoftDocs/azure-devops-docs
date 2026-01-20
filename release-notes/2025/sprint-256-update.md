@@ -4,11 +4,9 @@ author: gloridelmorales
 ms.author: glmorale
 ms.date: 5/19/2025
 description: Support for YAML in Test Plans and Jupyter Notebook diffing
+ms.topic: release-notes
 ---
 # Support for YAML in Test Plans and Jupyter Notebook diffing
-
-> [!NOTE]
-> **Updated June 26,2025:** We’ve temporarily disabled the support for YAML in Test Plans feature due to a bug and are working to resolve it as quickly as possible. We will share additional updates in this article as soon as the issue is resolved. 
 
 In response to your feedback, we have prioritized multiple features in Test Plans and Repos. In Test Plans, you can now use your YAML pipelines while configuring or executing automated Test Plans. In addition, we've added a new recent test results section to the test case work item to make it easier to monitor test progress without switching or navigating through test plans. 
 

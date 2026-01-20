@@ -5,22 +5,22 @@ description: Find information about events in Azure DevOps projects that service
 ms.assetid: 1DC15791-5614-405E-8372-79A5ED6E66EE
 ms.custom: engagement-fy23
 ms.subservice: azure-devops-service-hooks
-ms.topic: conceptual
+ms.topic: overview
 ms.author: chcomley
 author: chcomley
 ai-usage: ai-assisted
 monikerRange: '<= azure-devops'
-ms.date: 06/16/2025
+ms.date: 01/07/2026
 # customer intent: As a developer, I want to access reference information about events in Azure DevOps projects so that I can programmatically create service hook subscriptions that take action when events happen.
 ---
 
 # Service hook events
 
-[!INCLUDE [Azure DevOps Services | Azure DevOps Server 2022 | Azure DevOps Server 2020](../includes/version-gt-eq-2020.md)]
+[!INCLUDE [Azure DevOps Services | Azure DevOps Server 2022 | Azure DevOps Server 2020](../includes/version-lt-eq-azure-devops.md)]
 
 You can use service hooks to run tasks on other services when events happen in your Azure DevOps project. This article provides information about the Azure DevOps events that a service hook can trigger on.
 
-For each event, the article lists the ID values and settings that you use when you create a subscription for the event programmatically. Each event section also provides an example of a payload that's sent when the service hook for the event is triggered.
+For each event, the article lists the ID values and settings that you use when you create a subscription for the event programmatically. Each event section also provides an example of a payload that gets sent when the service hook for the event triggers.
 
 ## Available event types
 
@@ -35,7 +35,7 @@ The following types of events are available for use in service hooks. For a list
   * [Release deployment completed](#ms.azure-devops-release.deployment-completed-event)
   * [Release deployment started](#ms.azure-devops-release.deployment-started-event)
 
-::: moniker range=">= azure-devops-2020 < azure-devops"
+::: moniker range="<azure-devops"
 
 * **Pipeline**
   * [Run state changed](#run.statechanged)
@@ -1923,13 +1923,15 @@ Event: A changeset is checked into Team Foundation Version Control (TFVC).
     "createdDate": "2014-05-12T22:41:16Z",
     "comment": "Dropping in new Java sample"
   },
-  "resourceVersion": "1.0",
+  "resourceVersion": "2.0",
   "resourceContainers": {
     "collection": {
-      "id": "b1b1b1b1-cccc-dddd-eeee-f2f2f2f2f2f2"
+      "id": "b1b1b1b1-cccc-dddd-eeee-f2f2f2f2f2f2",
+      "baseUrl": "https://dev.azure.com/fabrikam-fiber-inc/"
     },
     "account": {
-      "id": "bbbb1b1b-cc2c-dd3d-ee4e-ffffff5f5f5f"
+      "id": "bbbb1b1b-cc2c-dd3d-ee4e-ffffff5f5f5f",
+      "baseUrl": "https://dev.azure.com/fabrikam-fiber-inc/"
     }
   },
   "createdDate": "2024-09-19T13:03:26.2056408Z"
@@ -2018,16 +2020,19 @@ Event: Code is pushed to a Git repository.
     "date": "2014-05-02T19:17:13.3309587Z",
     "url": "https://dev.azure.com/fabrikam-fiber-inc/DefaultCollection/_apis/repos/git/repositories/f5f5f5f5-aaaa-bbbb-cccc-d6d6d6d6d6d6/pushes/14"
   },
-  "resourceVersion": "1.0",
+  "resourceVersion": "2.0",
   "resourceContainers": {
     "collection": {
-      "id": "b1b1b1b1-cccc-dddd-eeee-f2f2f2f2f2f2"
+      "id": "b1b1b1b1-cccc-dddd-eeee-f2f2f2f2f2f2",
+      "baseUrl": "https://dev.azure.com/fabrikam-fiber-inc/"
     },
     "account": {
-      "id": "bbbb1b1b-cc2c-dd3d-ee4e-ffffff5f5f5f"
+      "id": "bbbb1b1b-cc2c-dd3d-ee4e-ffffff5f5f5f",
+      "baseUrl": "https://dev.azure.com/fabrikam-fiber-inc/"
     },
     "project": {
-      "id": "00aa00aa-bb11-cc22-dd33-44ee44ee44ee"
+      "id": "00aa00aa-bb11-cc22-dd33-44ee44ee44ee",
+      "baseUrl": "https://dev.azure.com/fabrikam-fiber-inc/"
     }
   },
   "createdDate": "2024-09-19T13:03:27.0379153Z"
@@ -2126,16 +2131,19 @@ Event: A pull request is created in a Git repository.
     ],
     "url": "https://dev.azure.com/fabrikam/DefaultCollection/_apis/repos/git/repositories/b1b1b1b1-cccc-dddd-eeee-f2f2f2f2f2f2/pullRequests/1"
   },
-  "resourceVersion": "1.0",
+  "resourceVersion": "2.0",
   "resourceContainers": {
     "collection": {
-      "id": "b1b1b1b1-cccc-dddd-eeee-f2f2f2f2f2f2"
+      "id": "b1b1b1b1-cccc-dddd-eeee-f2f2f2f2f2f2",
+      "baseUrl": "https://dev.azure.com/fabrikam/"
     },
     "account": {
-      "id": "bbbb1b1b-cc2c-dd3d-ee4e-ffffff5f5f5f"
+      "id": "bbbb1b1b-cc2c-dd3d-ee4e-ffffff5f5f5f",
+      "baseUrl": "https://dev.azure.com/fabrikam/"
     },
     "project": {
-      "id": "00aa00aa-bb11-cc22-dd33-44ee44ee44ee"
+      "id": "00aa00aa-bb11-cc22-dd33-44ee44ee44ee",
+      "baseUrl": "https://dev.azure.com/fabrikam/"
     }
   },
   "createdDate": "2024-09-19T13:03:27.2879096Z"
@@ -2277,7 +2285,7 @@ Event: A pull request merge is attempted in a Git repository.
 
 ### Pull request updated
 
-Event: A pull request is updated: the status, review list, or a reviewer vote changes, or the source branch is updated by a push.
+Event: A pull request is updated: the status, review list, or a reviewer vote changes, or a push updates the source branch.
 
 * Publisher ID: `tfs`
 * Event ID: `git.pullrequest.updated`
@@ -2378,16 +2386,19 @@ Event: A pull request is updated: the status, review list, or a reviewer vote ch
     ],
     "url": "https://dev.azure.com/fabrikam/DefaultCollection/_apis/repos/git/repositories/c2c2c2c2-dddd-eeee-ffff-a3a3a3a3a3a3/pullRequests/1"
   },
-  "resourceVersion": "1.0",
+  "resourceVersion": "2.0",
   "resourceContainers": {
     "collection": {
-      "id": "b1b1b1b1-cccc-dddd-eeee-f2f2f2f2f2f2"
+      "id": "b1b1b1b1-cccc-dddd-eeee-f2f2f2f2f2f2",
+      "baseUrl": "https://dev.azure.com/fabrikam/"
     },
     "account": {
-      "id": "bbbb1b1b-cc2c-dd3d-ee4e-ffffff5f5f5f"
+      "id": "bbbb1b1b-cc2c-dd3d-ee4e-ffffff5f5f5f",
+      "baseUrl": "https://dev.azure.com/fabrikam/"
     },
     "project": {
-      "id": "00aa00aa-bb11-cc22-dd33-44ee44ee44ee"
+      "id": "00aa00aa-bb11-cc22-dd33-44ee44ee44ee",
+      "baseUrl": "https://dev.azure.com/fabrikam/"
     }
   },
   "createdDate": "2024-09-19T13:03:27.2813828Z"
@@ -3107,16 +3118,19 @@ Event: A work item is created.
     },
     "url": "https://dev.azure.com/fabrikam-fiber-inc/DefaultCollection/_apis/wit/workItems/5"
   },
-  "resourceVersion": "1.0",
+  "resourceVersion": "2.0",
   "resourceContainers": {
       "collection": {
-          "id": "b1b1b1b1-cccc-dddd-eeee-f2f2f2f2f2f2"
+          "id": "b1b1b1b1-cccc-dddd-eeee-f2f2f2f2f2f2",
+          "baseUrl": "https://dev.azure.com/fabrikam-fiber-inc/"
       },
       "account": {
-          "id": "bbbb1b1b-cc2c-dd3d-ee4e-ffffff5f5f5f"
+          "id": "bbbb1b1b-cc2c-dd3d-ee4e-ffffff5f5f5f",
+          "baseUrl": "https://dev.azure.com/fabrikam-fiber-inc/"
       },
       "project": {
-          "id": "00aa00aa-bb11-cc22-dd33-44ee44ee44ee"
+          "id": "00aa00aa-bb11-cc22-dd33-44ee44ee44ee",
+          "baseUrl": "https://dev.azure.com/fabrikam-fiber-inc/"
       }
   },
   "createdDate": "2024-09-19T13:03:29.7688022Z"
@@ -3188,7 +3202,7 @@ Event: A work item is deleted.
     },
     "url": "https://dev.azure.com/fabrikam-fiber-inc/DefaultCollection/_apis/wit/recyclebin/5"
   },
-  "resourceVersion": "1.0",
+  "resourceVersion": "2.0",
   "resourceContainers": {
       "collection": {
           "id": "b1b1b1b1-cccc-dddd-eeee-f2f2f2f2f2f2"

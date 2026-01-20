@@ -8,19 +8,19 @@ ai-usage: ai-assisted
 ms.topic: concept-article
 ms.author: chcomley
 author: chcomley
-ms.date: 07/02/2025
+ms.date: 10/03/2025
 monikerRange: "<=azure-devops"
 ---
 
 # Add a dashboard widget
 
-[!INCLUDE [version-gt-eq-2019](../../includes/version-gt-eq-2019.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
-Widgets on a dashboard are implemented as [contributions](./contributions-overview.md) in the [extension framework](../overview.md). A single extension can have multiple contributions. Learn how to create an extension with multiple widgets as contributions.
-
-This article is divided into three parts, each building on the previous. You begin with a simple widget and end with a comprehensive widget.
+Widgets are implemented as [contributions](./contributions-overview.md) in the [extension framework](../overview.md). A single extension can include multiple widget contributions. This article shows how to create an extension that provides one or more widgets.
 
 [!INCLUDE [extension-docs-new-sdk](../../includes/extension-docs-new-sdk.md)]
+
+[!INCLUDE [extension-samples-tip](../includes/extension-samples-tip.md)]
 
 ## Prerequisites
 
@@ -44,7 +44,7 @@ This tutorial teaches widget development through three progressive examples:
 | [Part 3: Widget configuration](#part-3) | User customization | Implement configuration options for your widget |
 
 > [!TIP]
-> **Skip the tutorial:** Download the complete [sample extension](https://github.com/Microsoft/azure-devops-extension-sample), go to the `widgets` folder, and jump to [Step 6](#package-publish-share) to publish three ready-to-use example widgets.
+> If you prefer to jump straight to working examples, the included samples (see the previous note) show a set of widgets you can package and publish.
 
 Before you begin, review the [basic widget styles](./styles-from-widget-sdk.md) and structural guidance we provide.
 
@@ -1213,12 +1213,11 @@ Update `vss-extension.json` to include two new contributions:
 ```json
 {
     "contributions": [
-        // ...existing contributions..., 
         {
              "id": "HelloWorldWidget3",
              "type": "ms.vss-dashboards-web.widget",
              "targets": [
-                 "ms.vss-dashboards-web.widget-catalog",
+                 "ms.vss-dashboards-web.widget-catalog",  
                  "fabrikam.azuredevops-extensions-myExtensions.HelloWorldWidget.Configuration"
              ],
              "properties": {
@@ -1227,11 +1226,15 @@ Update `vss-extension.json` to include two new contributions:
                  "previewImageUrl": "img/preview3.png",                       
                  "uri": "hello-world3.html",
                  "supportedSizes": [
-                      {
-                             "rowSpan": 1,
-                             "columnSpan": 2
-                         }
-                     ],
+                    {
+                        "rowSpan": 1,
+                        "columnSpan": 2
+                    },
+                    {
+                        "rowSpan": 2,
+                        "columnSpan": 2
+                    }
+                 ],
                  "supportedScopes": ["project_team"]
              }
          },

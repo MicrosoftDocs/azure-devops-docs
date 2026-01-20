@@ -5,12 +5,13 @@ description: Learn how to add, edit, reorder, and manage pages for your team pro
 ms.subservice: azure-devops-wiki
 ms.custom: wiki, devx-track-azurecli, devdivchpfy22
 ms.assetid: BD03B9EE-D4DC-4EDC-B0BF-5C11B34E14C9 
+ai-usage: ai-assisted
 ms.author: chcomley
 author: chcomley
 ms.reviewer: gopinach
 ms.topic: how-to
 monikerRange: '<= azure-devops'
-ms.date: 06/03/2025
+ms.date: 01/07/2026
 #customer intent: As an Azure DevOps developer, I want to understand how to add, update, delete, and arrange pages for my team project wiki, so I can manage the wiki as needed.  
 ---
 
@@ -84,7 +85,7 @@ You can also use keyboard shortcuts to add pages. Select the current page, and t
 
 #### Page title and file name
 
-Enter a unique title for the page. The value is case-sensitive. The title is used as the file name for the page. In the file name, spaces in the page title are replaced by hyphens (`-`). For example, the page title "How to contribute" corresponds to the file name _How-to-contribute.md_. The fully qualified path to the file should be 235 characters or less.
+Enter a unique title for the page. The value is case-sensitive. The title is used as the file name for the page. In the file name, spaces in the page title get replaced by hyphens (`-`). For example, the page title "How to contribute" corresponds to the file name _How-to-contribute.md_. The fully qualified path to the file should be 235 characters or less.
 
 For other file name restrictions, see [Wiki Git repository files and file structure, File naming conventions](wiki-file-structure.md#file-naming-conventions).
 
@@ -174,7 +175,7 @@ There are several ways to edit an existing wiki page in the browser:
 
 For more information about specific editing functions, see [Use Markdown guidance](markdown-guidance.md).
 
-::: moniker range="> azure-devops-2020"
+::: moniker range="<=azure-devops"
 
 #### Edit in Repos for code wikis
 
@@ -329,6 +330,18 @@ To fix a broken link after you move a page in the wiki sequence, follow these st
 You can use keyboard shortcuts to reorder top-level pages in the wiki sequence. This action doesn't work for subpages.
 
 Select a page in the wiki page list and use the **CTRL + UP ARROW** or **CTRL + DOWN ARROW** shortcut to move the page within the sequence. The change applies immediately.
+
+### Reorder subpages under the same parent
+
+To reorder subpages under the same parent page, you can use drag-and-drop in the wiki tree view:
+
+1. In the wiki page list, locate the subpages you want to reorder under their parent page.
+
+1. Select and drag a subpage to a new position within the same parent page's subpage list.
+
+1. Drop the subpage in the desired position to reorder it relative to other subpages.
+
+The subpage order changes immediately and doesn't affect any page links since the pages remain under the same parent.
 
 ### Change page/sub-page order
 

@@ -1,14 +1,14 @@
 ---
 ms.subservice: azure-devops-ecosystem
 title: Create modal dialogs in Azure DevOps extensions
-description: Learn how to implement modal dialogs using HostDialogService in Azure DevOps extensions with the azure-devops-extension-sdk package. Build interactive dialogs with custom content, validation, and user interactions.
+description: Learn how to implement modal dialogs in Azure DevOps extensions with the azure-devops-extension-sdk package. Build interactive dialogs with custom content, validation, and user interactions.
 ms.assetid: 59748E0E-2D5E-FF79-ED0E-4B76037A8010
 ms.topic: how-to
 ai-usage: ai-assisted
 monikerRange: '<= azure-devops'
 ms.author: chcomley
 author: chcomley
-ms.date: 07/02/2025
+ms.date: 12/01/2025
 # customer-intent: As an Azure DevOps extension developer, I want to create modal dialogs that block user interaction with the entire page so I can collect user input, display forms, and provide focused user experiences in my extensions.
 ---
 
@@ -16,7 +16,7 @@ ms.date: 07/02/2025
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
-Modal dialogs provide a powerful way to create focused user experiences in Azure DevOps extensions. The HostDialogService lets you present a modal dialog that blocks user interaction with the entire Azure DevOps interface until the dialog gets dismissed. This action ensures that users complete important tasks or provide required information.
+Modal dialogs provide a powerful way to create focused user experiences in Azure DevOps extensions. The dialog service lets you present a modal dialog that blocks user interaction with the entire Azure DevOps interface until the dialog gets dismissed. This action ensures that users complete important tasks or provide required information.
 
 Use modal dialogs in your extensions to:
 - Collect user input through forms
@@ -25,11 +25,9 @@ Use modal dialogs in your extensions to:
 - Guide users through multi-step processes
 
 > [!IMPORTANT]
-> When you create modal dialogs with `HostDialogService`, they block interaction with the entire Azure DevOps page, not just your extension. This approach provides a true modal experience but you should use it thoughtfully to avoid disrupting the user workflow.
+> When you create modal dialogs, they block interaction with the entire Azure DevOps page, not just your extension. This approach provides a true modal experience but you should use it thoughtfully to avoid disrupting the user workflow.
 
 ## Prerequisites 
-
-Before you can create modal dialogs in your Azure DevOps extension, ensure you have the following:
 
 | Category | Requirement | Details |
 |----------|-------------|---------|
@@ -42,7 +40,7 @@ Before you can create modal dialogs in your Azure DevOps extension, ensure you h
 | **Required packages** | Extension SDK | Install: `npm install azure-devops-extension-sdk` |
 | | Extension API | Install: `npm install azure-devops-extension-api` |
 | **Extension permissions** | Manifest scopes | Include appropriate scopes in `vss-extension.json`, for example: `"vso.work"`, `"vso.project"` |
-| **SDK imports** | Required modules | Import SDK and services: `import * as SDK from "azure-devops-extension-sdk"` and `import { CommonServiceIds, IHostDialogService } from "azure-devops-extension-api"` |
+| **SDK imports** | Required modules | Import SDK and services: `import * as SDK from "azure-devops-extension-sdk"` |
 
 ## Dialog contents
 
@@ -140,78 +138,76 @@ The `uri` property references a page that is rendered within the content area of
 
 ## Show the dialog
 
-To show the dialog (for example, when a user selects an action on a toolbar or menu), call the `openDialog` function on an instance of the HostDialogService, passing the fully qualified identifier of the dialog content, for example `my-publisher.my-extension.registration-form` and any dialog options:
+To show the dialog (for example, when a user selects an action on a toolbar or menu), call the `openDialog` function on an instance of the dialog service:
 
 ```javascript
-    import * as SDK from "azure-devops-extension-sdk";
-    
-    SDK.getService<IHostDialogService>(CommonServiceIds.HostDialogService).then((dialogService) => {
-        const extensionCtx = SDK.getExtensionContext();
-        // Build absolute contribution ID for dialogContent
-        const contributionId = `${extensionCtx.publisherId}.${extensionCtx.extensionId}.registration-form`;
+import * as SDK from "azure-devops-extension-sdk";
 
-        // Show dialog
-        const dialogOptions = {
-            title: "My Dialog",
-            width: 800,
-            height: 600
-        };
+SDK.getService(SDK.CommonServiceIds.Dialog).then((dialogService) => {
+    const extensionCtx = SDK.getExtensionContext();
+    // Build absolute contribution ID for dialogContent
+    const contributionId = `${extensionCtx.publisherId}.${extensionCtx.extensionId}.registration-form`;
 
-        dialogService.openDialog(contributionId, dialogOptions);
-    });
+    // Show dialog
+    const dialogOptions = {
+        title: "My Dialog",
+        width: 800,
+        height: 600
+    };
+
+    dialogService.openDialog(contributionId, dialogOptions);
+});
 ```
 
 ## Advanced dialog features
 
-A function can be called when the OK button is selected. This function is specified by `getDialogResult` in the options you provide when showing the dialog.
+A function can be called when the OK button is selected. You specify this function by setting `getDialogResult` in the options you provide when showing the dialog.
 
 If a call to `getDialogResult` returns a non-null value, this value is then passed to the function specified by `okCallback` (also in the options) and the dialog is closed.
 
 In this example, the `attachFormChanged` callback gets called when inputs on the form change. Based on whether the form is valid or not, the OK button is enabled or disabled.
 
 ```javascript
-    import * as SDK from "azure-devops-extension-sdk";
-    import { CommonServiceIds, IHostDialogService } from "azure-devops-extension-api";
-    
-    SDK.getService<IHostDialogService>(CommonServiceIds.HostDialogService).then((dialogService) => {
-        let registrationForm: any;
-        const extensionCtx = SDK.getExtensionContext();
-        const contributionId = `${extensionCtx.publisherId}.${extensionCtx.extensionId}.registration-form`;
+import * as SDK from "azure-devops-extension-sdk";
 
-        const dialogOptions = {
-            title: "Registration Form",
-            width: 800,
-            height: 600,
-            getDialogResult: () => {
-                // Get the result from registrationForm object
-                return registrationForm ? registrationForm.getFormData() : null;
-            },
-            okCallback: (result: any) => {
-                // Log the result to the console
-                console.log(JSON.stringify(result));
-            }
-        };
+SDK.getService(SDK.CommonServiceIds.Dialog).then((dialogService) => {
+    let registrationForm;
+    const extensionCtx = SDK.getExtensionContext();
+    const contributionId = `${extensionCtx.publisherId}.${extensionCtx.extensionId}.registration-form`;
 
-        dialogService.openDialog(contributionId, dialogOptions).then((dialog) => {
-            // Get registrationForm instance which is registered in registrationFormContent.html
-            dialog.getContributionInstance("registration-form").then((registrationFormInstance) => {
+    const dialogOptions = {
+        title: "Registration Form",
+        width: 800,
+        height: 600,
+        getDialogResult: () => {
+            // Get the result from registrationForm object
+            return registrationForm ? registrationForm.getFormData() : null;
+        },
+        okCallback: (result) => {
+            // Log the result to the console
+            console.log(JSON.stringify(result));
+        }
+    };
+
+    dialogService.openDialog(contributionId, dialogOptions).then((dialog) => {
+        // Get registrationForm instance which is registered in registration-form.html
+        dialog.getContributionInstance("registration-form").then((registrationFormInstance) => {
+        
+            // Keep a reference of registration form instance (to be used previously in dialog options)
+            registrationForm = registrationFormInstance;
             
-                // Keep a reference of registration form instance (to be used previously in dialog options)
-                registrationForm = registrationFormInstance;
-                
-                // Subscribe to form input changes and update the Ok enabled state
-                registrationForm.attachFormChanged((isValid: boolean) => {
-                    dialog.updateOkButton(isValid);
-                });
-                
-                // Set the initial ok enabled state
-                registrationForm.isFormValid().then((isValid: boolean) => {
-                    dialog.updateOkButton(isValid);
-                });
-            });                            
-        });
+            // Subscribe to form input changes and update the Ok enabled state
+            registrationForm.attachFormChanged((isValid) => {
+                dialog.updateOkButton(isValid);
+            });
+            
+            // Set the initial ok enabled state
+            registrationForm.isFormValid().then((isValid) => {
+                dialog.updateOkButton(isValid);
+            });
+        });                            
     });
-
+});
 ```
 
 ## Control the OK button
@@ -227,7 +223,7 @@ Initially, the OK button is disabled. However, you can enable/disable this butto
 
 ## Pass values to the dialog
 
-It's possible to pass initial values to dialog content when it is opened in the host dialog.
+It's possible to pass initial values to dialog content when you open it in the host dialog.
 
 ```json
     {
@@ -241,7 +237,7 @@ It's possible to pass initial values to dialog content when it is opened in the 
     }
 ```
 
-When the dialog is opened, following options need to be specified to pass `myId`:
+When the dialog opens, the following options must be specified to pass `myId`:
 
 ```javascript
     const dialogOptions = {

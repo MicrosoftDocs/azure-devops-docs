@@ -2,26 +2,19 @@
 ms.topic: include
 ---
 
-* [Sorry, something went wrong. Please try again.](#sorry-something-went-wrong-please-try-again)
-* [Configuration failed. Please make sure that the organization '{organization name}' exists and that you have sufficient 
-permissions.](#configuration-failed-please-make-sure-that-the-organization-organization-name-exists-and-that-you-have-sufficient-permissions)
+### Configuration failed. Make sure that the organization '{organization name}' exists and that you have sufficient permissions.
 
-### Sorry, something went wrong. Please try again.
+To resolve this authentication issue, complete the following steps:
 
-The Azure Boards app uses the OAuth authentication protocol, and requires [Third-party application access via OAuth for the 
-organization](../../../organizations/accounts/change-application-access-policies.md) to be enabled. 
-To enable this setting, go to **Organization settings** > **Security** > **Policies**, and set the **Third-party application access
- via OAuth for the organization** setting to **On**.
+1. Sign out of Azure DevOps by going to `https://aka.ms/VsSignout` in your browser.
 
-> [!div class="mx-imgBorder"]
-> ![Enable the Third-party application access via OAuth for the organization setting](../media/troubleshooting/third-party-app-consent.png)
+2. Open an **InPrivate** (Microsoft Edge) or **Incognito** (Chrome) browser window.
 
-### Configuration failed. Please make sure that the organization '{organization name}' exists and that you have sufficient permissions.
+3. Go to `https://aex.dev.azure.com/me` and sign in with your credentials.
 
-Sign out of Azure DevOps by going to `https://aka.ms/VsSignout` using your browser.
+4. Select the correct directory from the dropdown menu under your profile icon. Choose the directory that contains the organization with the project you want to link.
 
-Open an **In private** or **incognito** browser window and go to `https://aex.dev.azure.com/me` and sign in. In the dropdown under the profile 
-icon to the left, select the directory that contains the organization containing the project that you want to link.
+   > [!div class="mx-imgBorder"]
+   > ![Screenshot that shows selecting the directory that contains the organization that contains the project.](../media/troubleshooting/profile-page.png)
 
-> [!div class="mx-imgBorder"]
-> ![Select the directory that contains the organization that contains the project](../media/troubleshooting/profile-page.png)
+5. In the **same browser**, start a new tab, go to `https://slack.com`, and sign in to your work space (**use web client**). Run the `/azboards signout` command followed by the `/azboards signin` command.

@@ -1,12 +1,12 @@
 ---
 title: Pipeline deployment approvals
 description: Use approvals to determine when a deployment stage can run.
-ms.topic: conceptual
+ms.topic: concept-article
 ms.assetid: 94977D91-5EC7-471D-9D1A-E100390B8FDD
 ms.author: sandrica
 author: silviuandrica
 ms.date: 08/29/2024
-monikerRange: ">= azure-devops-2020"
+monikerRange: "<=azure-devops"
 ms.custom: sfi-image-nochange
 ---
 
@@ -103,7 +103,7 @@ To define the branch control check:
 
 2. Navigate to **Approvals and Checks** for the resource.
 
-3. Choose the **Branch control** check and provide a comma-separated list of allowed branches. You can mandate that the branch should have protection enabled. You can also define the behavior of the check if the protection status for one of the branches isn't known. A branch is considered protected if at least one policy has been applied (including policies applied at the repository level).
+3. Choose the **Branch control** check and provide a comma-separated list of allowed branches. You can mandate that the branch should have protection enabled. You can also define the behavior of the check if the protection status for one of the branches isn't known. A branch is considered protected if at least one policy has been applied including policies applied at the repository level, such as enabling push protection from [GitHub Advanced Security for Azure DevOps](../../repos/security/configure-github-advanced-security-features.md)."
 
     :::image type="content" source="media/checks/branch-control-check.png" alt-text="Configuring branch control check.":::
 
@@ -172,13 +172,11 @@ To define a required template approval:
     * **Ref**: The branch or tag of the required template. 
     * **Path to required template**: The name of your template. 
 
-
 You can have multiple required templates for the same service connection. In this example, the required template is `production_template.yaml`.
 
 :::image type="content" source="media/checks/required-template.png" alt-text="Configuring required template check.":::
 
 ::: moniker range=">=azure-devops-2022"
-
 
 ## Disable a check
 
@@ -191,7 +189,6 @@ When debugging a check, you might want to temporarily disable and then enable it
 3. In the contextual menu, select **Disable** or **Enable**. 
 
     :::image type="content" source="media/checks/disable-check-approvals.png" alt-text="Screenshot of disable a check option.":::
-
 
 ## Bypass a check
 
@@ -219,7 +216,6 @@ To define a custom policy evaluation over the artifacts, follow the below steps.
 1. In your Azure DevOps Services project, navigate to the environment that needs to be protected. Learn more about [creating an environment](environments.md).
 
     :::image type="content" source="media/checks/environments.png" alt-text="View environment.":::
-
 
 2. Navigate to **Approvals and checks** for the environment.
 
@@ -255,7 +251,7 @@ You can also see the complete logs of the policy checks from the pipeline view.
 
 ## Exclusive lock
 
-:::moniker range="> azure-devops-2020"
+:::moniker range="<=azure-devops"
 
 The **exclusive lock** check allows only a single run from the pipeline to proceed and can be set at the stage or pipeline level. All stages in all runs of that pipeline that use the resource are paused. When the stage using the lock completes, then another stage can proceed to use the resource. Also, only one stage is allowed to continue.
 
@@ -299,16 +295,6 @@ If you don't specify a `lockBehavior` and a lock is set on a resource, the defau
 
 :::moniker-end
 
-:::moniker range="=azure-devops-2020"
-
-The **exclusive lock** check allows only a single run from the pipeline to proceed.
-All stages in all runs of that pipeline that use the resource are paused.
-When the stage using the lock completes, then another stage can proceed to use the resource.
-Also, only one stage is allowed to continue.
-Any other stages that tried to take the lock will be canceled.
-
-:::moniker-end
-
 ## ServiceNow Change Management
 
 **This checks needs the [ServiceNow Change Management extension](https://marketplace.visualstudio.com/items?itemName=ms-vscs-rm.vss-services-servicenowchangerequestmanagement) to be installed from the marketplace**
@@ -316,7 +302,6 @@ Any other stages that tried to take the lock will be canceled.
 The **servicenow change management** check allows for an integration of ServiceNow change management process in the pipelines. 
 By adding the check, a new change request in ServiceNow can be automatically created at the start of the stage. The pipeline waits for the change process to complete before starting the stage.
 More details are available [here](../release/approvals/servicenow.md).
-
 
 ## Multiple Approvals and Checks
 
@@ -377,7 +362,6 @@ Using the Invoke REST API check, you can add a check to wait on the API in the s
 
 ### How can I use output variables from previous stages in a check?
 By default, only predefined variables are available to checks. You can use a linked variable group to access other variables. The output variable from the previous stage can be written to the variable group and accessed in the check.
-
 
 ## Learn more
 - [Invoke Azure Function / REST API checks](invoke-checks.md)

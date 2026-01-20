@@ -7,3 +7,4 @@ ms.topic: include
 ---
 
 - [Associate automated tests to test cases](#associate-automated-tests-to-test-cases)
+- [Fixed missing link cleanup when deleting shared steps](#fixed-missing-link-cleanup-when-deleting-shared-steps)

@@ -76,7 +76,7 @@ Open a command prompt (on Windows, use Windows Command Prompt or PowerShell) and
       }
     }
 
-    resource pool 'microsoft.devopsinfrastructure/pools@2025-01-21' = {
+    resource pool 'microsoft.devopsinfrastructure/pools@2025-09-20' = {
       name: poolName
       location: location
       properties: {

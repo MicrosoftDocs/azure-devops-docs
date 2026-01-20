@@ -2,7 +2,7 @@
 title: YAML pipeline container jobs
 description: Learn about configuring and running Azure Pipelines YAML pipeline jobs inside containers.
 ms.assetid: 8d35f78a-f386-4699-9280-7bd933de9e7b
-ms.topic: conceptual
+ms.topic: concept-article
 ms.date: 08/19/2025
 monikerRange: "<=azure-devops"
 #customer intent: As an Azure Pipelines builder and tester, I want to learn about running pipeline jobs in containers so I can build and test pipelines in various agent configurations.
@@ -10,7 +10,7 @@ monikerRange: "<=azure-devops"
 
 # Container jobs in YAML pipelines
 
-[!INCLUDE [version-gt-eq-2019](../../includes/version-gt-eq-2019.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 This article explains container jobs in Azure Pipelines. Containers are lightweight abstractions from the host operating system that provide all the necessary elements to run a job in a specific environment.
 

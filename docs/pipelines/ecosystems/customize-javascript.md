@@ -1,7 +1,7 @@
 ---
 title: Pipelines for JavaScript apps
 description: Learn about ways to customize pipelines to support building, testing, running, and publishing JavaScript apps.
-ms.topic: conceptual
+ms.topic: concept-article
 ms.custom: devx-track-js, freshness-fy22q2
 ms.date: 09/11/2025
 monikerRange: '<= azure-devops'

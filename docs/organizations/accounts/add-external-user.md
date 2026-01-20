@@ -4,10 +4,10 @@ titleSuffix: Azure DevOps Services
 description: Learn how to invite an external user or outside guest to your organization.
 ms.subservice: azure-devops-organizations
 ms.assetid: ec935536-6a5e-4b62-adf2-4207a70440bd
-ms.topic: conceptual
+ms.topic: how-to
 ms.author: chcomley
 author: chcomley
-ms.date: 10/22/2024
+ms.date: 12/22/2025
 monikerRange: 'azure-devops'
 ---
 
@@ -20,17 +20,17 @@ Learn how to invite external users to your organization. If you access Azure Dev
 ## Prerequisites
 
 | Category | Requirements |
-|--------------|-------------|
+|----------|-------------|
 |**Permissions** | Member of the [Project Collection Administrators group](../security/look-up-project-collection-administrators.md). Organization owners are automatically members of this group.|
 | **Microsoft Entra tenant** |The Microsoft Entra tenant to which you want to invite external users allows adding new users, as per your Microsoft Entra guest policies. For more information, see [how to become eligible to invite external users on your Microsoft Entra tenant](/azure/active-directory/active-directory-b2b-delegate-invitations).|
 | **Policies** |- **External guest access** turned **On** for the organization to which you want to invite external users.<br>- Team and Project Administrators can only invite external users if the user policy, **Allow team and project administrators to invite new users**, is **On**. For more information, see [Restrict invitations from Project and Team Administrators](../security/restrict-invitations.md).<br>- If the **Invite GitHub users** policy displays, you're recognized as a GitHub user and the GitHub invitation experience is available. For more information, see [Enable GitHub invitations](../../repos/get-started/sign-up-invite-teammates.md).|
 
 > [!IMPORTANT]
-> **Required:** Use a different email address or user principal name (UPN) for your personal and business accounts. This eliminates the challenge of disambiguating between your business and personal accounts when the email or UPN is the same.
+> **Required:** Use a different email address or user principal name (UPN) for your personal and business accounts. This action eliminates the challenge of disambiguating between your business and personal accounts when the email or UPN is the same.
 
 ## Invite external user
 
-1. Sign in to your organization (```https://dev.azure.com/{yourorganization}```).
+1. Sign in to your organization (`https://dev.azure.com/{yourorganization}`).
 
 2. Select ![gear icon](../../media/icons/gear-icon.png) **Organization settings**.
 
@@ -52,7 +52,7 @@ Learn how to invite external users to your organization. If you access Azure Dev
 
    :::image type="content" source="media/add-external-user/external-user-email-invitation.png" alt-text="Screenshot showing External user's invitation email.":::
 
->[!Note]
+> [!NOTE]
 > If you need to resend the invitation email, go to **Users** > select the user > **Resend invite**.
 
 The external user is added to the organization to which they were invited and has immediate access.

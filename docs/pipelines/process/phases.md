@@ -2,7 +2,7 @@
 title: Jobs in Azure Pipelines
 description: Understand jobs in Azure Pipelines and Azure DevOps Server
 ms.assetid: B05BCE88-73BA-463E-B35E-B54787631B3F
-ms.topic: conceptual
+ms.topic: concept-article
 ms.date: 01/08/2025
 monikerRange: '<= azure-devops'
 ---
@@ -57,7 +57,7 @@ jobs:
   - bash: echo "B"
 ```
 
-::: moniker range=">=azure-devops-2020"
+::: moniker range="<=azure-devops"
 
 Your pipeline can have multiple stages, each with multiple jobs. In that case, use the `stages` keyword.
 
@@ -139,7 +139,7 @@ The full syntax to specify a job is:
 
 ::: moniker-end
 
-::: moniker range=">=azure-devops-2020"
+::: moniker range="<=azure-devops"
 
 If the primary intent of your job is to deploy your app (as opposed to build or test your app), then you can use a special type of job called **deployment job**.
 
@@ -178,7 +178,7 @@ To add jobs to your release pipeline, edit the pipeline from **Pipelines** > **R
 
 Jobs can be of different types, depending on where they run.
 
-::: moniker range=">=azure-devops-2020"
+::: moniker range="<=azure-devops"
 
 # [YAML](#tab/yaml)
 

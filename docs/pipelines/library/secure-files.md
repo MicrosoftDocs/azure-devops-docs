@@ -3,25 +3,24 @@ title: Secure files for Azure Pipelines
 description: Understand how to add and consume secure files for Azure Pipelines.
 ms.assetid: 1B115D68-5667-445C-9130-00D658EEFE39
 monikerRange: '<= azure-devops'
-ms.date: 07/31/2024
+ms.date: 01/12/2026
 ms.topic: how-to
-ms.custom:
-  - pipelinesresourcesrefresh
-  - sfi-image-nochange
+ms.custom: pipelinesresourcesrefresh, sfi-image-nochange
+ai-usage: ai-assisted
 ---
 
 # Use secure files
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
-This article describes secure files and how to use them in Azure Pipelines. Secure files are a way to store files that you can use in pipelines without having to commit them to your repository.
+This article explains how to securely store and use sensitive files, such as certificates and keys, in Azure Pipelines with the secure files library. Secure files help protect sensitive data by encrypting it on the server and restricting access to authorized pipelines, ensuring your credentials and other critical files remain safe.
 
-You can use the secure files [library](index.md) to store files such as:
+Use the secure files [library](index.md) to store files such as:
 
-- Signing certificates.
-- Apple provisioning profiles.
-- Android keystore files.
-- SSH keys.
+- Signing certificates
+- Apple provisioning profiles
+- Android keystore files
+- SSH keys
 
 The size limit for each secure file is 10 MB.
 
@@ -29,8 +28,10 @@ Secure files are stored on the server in encrypted form and can be consumed only
 
 ## Prerequisites
 
-- An Azure DevOps project where you have permissions to create pipelines and add library items.
-- A certificate, keystore, or provisioning file you want to use securely in your pipeline.
+| **Requirement** | **Details** |
+|---|---|
+| **Azure DevOps Project** | - An [Azure DevOps project](../../organizations/projects/create-project.md).<br> - Permissions to create pipelines and add library items.<br> - **Required roles:**<br>      &nbsp;&nbsp;&nbsp;&nbsp; - Project Administrator, Contributor, or a custom role with permissions to manage Library items.<br>      &nbsp;&nbsp;&nbsp;&nbsp; - To manage Library security and permissions, you need Project Administrator or equivalent permissions.<br> - **Settings:**<br>      &nbsp;&nbsp;&nbsp;&nbsp; - Ensure your Azure DevOps organization allows pipeline resource access.<br>      &nbsp;&nbsp;&nbsp;&nbsp; - Verify that the project's pipeline settings don't restrict secure file usage. |
+| **Secure File** | - A certificate, keystore, or provisioning file you want to use securely in your pipeline.<br> - File size must not exceed 10 MB. |
 
 ## Add a secure file
 
@@ -38,15 +39,15 @@ Secure files are stored on the server in encrypted form and can be consumed only
 
    :::image type="content" source="media/secure-files-tab.png" alt-text="Screenshot of selecting the Secure Files tab.":::
 
-1. To upload a secure file, select **+ Secure file**, then browse to upload or drag and drop your file.
+1. Select **+ Secure file** to upload a secure file. Browse to upload or drag and drop your file.
 
    :::image type="content" source="media/upload-secure-file.png" alt-text="Screenshot of uploading your file.":::
 
-1. Select **OK**. Once you upload the file, you can delete it but not replace it.
+1. Select **OK**. After you upload the file, you can delete it but you can't replace it.
 
 ## Define security roles and permissions
 
-You can define security role restrictions and permissions for all items in a library, or for individual items.
+You can define security role restrictions and permissions for all items in a library or for individual items.
 
 - To assign security roles for all items in a library, select **Security** on the **Library** page.
 - To define permissions for an individual file:
@@ -61,7 +62,7 @@ You can define security role restrictions and permissions for all items in a lib
 <a name="secure-file-authorization"></a>
 ## Authorize a YAML pipeline to use a secure file
 
-To use a secure file in YAML pipelines, you must authorize the pipeline to use the file. All Classic pipelines can access secure files.
+To use a secure file in YAML pipelines, authorize the pipeline to use the file. All classic pipelines can access secure files.
 
 To authorize a pipeline or all pipelines to use a secure file:
 

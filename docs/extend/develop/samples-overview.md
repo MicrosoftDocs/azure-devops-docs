@@ -4,7 +4,7 @@ title: Samples overview | Extensions for Azure DevOps
 description: Overview of the available extension samples for Azure DevOps, including a description, the link to the repo and the contributions they touch.
 ms.assetid: 2639a776-d2f7-4866-b54f-1da3883b1b91
 ms.custom: engagement-fy23
-ms.topic: conceptual
+ms.topic: overview
 monikerRange: '<= azure-devops'
 ms.author: chcomley
 author: chcomley
@@ -49,7 +49,7 @@ Other open source examples that you might be interested in.
 | [Retrospectives](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.team-retrospectives) | [GitHub](https://github.com/microsoft/vsts-extension-retrospectives) | Hub | First-class experience for retrospectives and general feedback board scenarios. Collect feedback on your project milestones, organize and prioritize, and create and track actionable tasks, which can help your team improve over time. |
 | [Estimate](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.estimate) | [GitHub](https://github.com/microsoft/azure-boards-estimate) | Hub, Work item action menu| Play Planning Poker in Azure DevOps. Select work from an iteration, query, or your backlog, estimate the effort of those items with your team, and immediately update the work items. |
 | [Multivalue control](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.vsts-extensions-multivalue-control) | [GitHub](https://github.com/Microsoft/vsts-extension-multivalue-control) | Work item form | A work item form control, which allows selection of multiple values. |
-| [Azure DevOps Extension Tasks](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.vsts-developer-tools-build-tasks) | [GitHub](https://github.com/Microsoft/azure-devops-extension-tasks) | Build and release tasks | Azure Pipelines tasks for packaging and publishing Azure Devops and Visual Studio extensions to the Visual Studio Marketplace. |
+| [Azure DevOps Extension Tasks](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.vsts-developer-tools-build-tasks) | [GitHub](https://github.com/Microsoft/azure-devops-extension-tasks) | Build and release tasks | Azure Pipelines tasks for packaging and publishing Azure DevOps and Visual Studio extensions to the Visual Studio Marketplace. |
 
 ## Get started
 

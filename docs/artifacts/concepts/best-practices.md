@@ -2,16 +2,16 @@
 title: Azure Artifacts best practices
 description: Learn best practices for publishing, consuming, and managing packages with Azure Artifacts.
 ms.service: azure-devops-artifacts
-ms.topic: conceptual
+ms.topic: best-practice
 ms.date: 03/11/2025
 ms.custom: engagement-fy23
-monikerRange: '>= azure-devops-2020'
+monikerRange: "<=azure-devops"
 "recommendations": "true"
 ---
 
 # Azure Artifacts best practices
 
-[!INCLUDE [version-gt-eq-2020](../../includes/version-gt-eq-2020.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 Managing software packages can be a complex and time-consuming process, particularly when working with large-scale projects. Azure Artifacts provides a reliable package management solution that streamlines workflows and enhances team collaboration. 
 

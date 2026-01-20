@@ -1,11 +1,11 @@
 ---
 title: Using Invoke Azure Function / REST API checks
 description: Use Invoke Azure Function / REST API checks to determine when a deployment stage can run
-ms.topic: conceptual
+ms.topic: concept-article
 ms.author: sandrica
 author: silviuandrica
 ms.date: 07/18/2023
-monikerRange: ">= azure-devops-2020"
+monikerRange: "<=azure-devops"
 ---
 
 # Invoke Azure Function / REST API checks

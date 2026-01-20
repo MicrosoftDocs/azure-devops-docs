@@ -2,7 +2,7 @@
 title: Pipeline reports
 description: Get meaningful insights with pipeline reports in the pipeline
 ms.assetid: 678DF283-CE38-4CAF-BA74-D331B357F510
-ms.topic: conceptual
+ms.topic: concept-article
 ms.custom: continuous-test
 ms.date: 08/21/2019
 monikerRange: "<=azure-devops"
@@ -10,7 +10,7 @@ monikerRange: "<=azure-devops"
 
 # Pipeline reports
 
-[!INCLUDE [version-gt-eq-2019](../../includes/version-gt-eq-2019.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 Teams track their pipeline health and efficiency to ensure continuous delivery to their customers. You can gain visibility into your team's pipeline(s) using Pipeline analytics. The source of information for pipeline analytics is the set of runs for your pipeline. These analytics are accrued over a period of time, and form the basis of the rich insights offered. Pipelines reports show you metrics, trends, and can help you identify insights to improve the efficiency of your pipeline.  
 

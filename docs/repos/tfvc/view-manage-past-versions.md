@@ -4,7 +4,7 @@ titleSuffix: Azure Repos
 description: Access Team Foundation Version Control information about viewing changes in files, taking snapshots, viewing changesets, and rolling back changesets.
 ms.assetid: 752b4a6f-4212-4117-a994-03856d0c8ea9
 ms.service: azure-devops-repos
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 11/22/2022
 monikerRange: '<= azure-devops'
 ms.subservice: azure-devops-repos-tfvc

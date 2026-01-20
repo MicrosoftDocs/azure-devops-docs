@@ -4,7 +4,7 @@ description: Find information about Azure DevOps service hook consumers, includi
 ms.custom: engagement-fy23, devx-track-jenkins
 ms.assetid: CDACB8A1-4BAB-499F-B9ED-BD1680743B26
 ms.subservice: azure-devops-service-hooks
-ms.topic: conceptual
+ms.topic: overview
 ms.author: chcomley
 author: chcomley
 monikerRange: '<= azure-devops'
@@ -14,7 +14,7 @@ ms.date: 06/30/2025
 
 # Service hook consumers
 
-[!INCLUDE [Azure DevOps Services | Azure DevOps Server 2022 | Azure DevOps Server 2020](../includes/version-gt-eq-2020.md)]
+[!INCLUDE [Azure DevOps Services | Azure DevOps Server 2022 | Azure DevOps Server 2020](../includes/version-lt-eq-azure-devops.md)]
 
 You can use a service hook to perform an action on a consumer service when an event occurs in an Azure DevOps project. For example, a service hook can notify a consumer when a build fails. 
 

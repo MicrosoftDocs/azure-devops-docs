@@ -3,7 +3,7 @@ title: Code coverage policy at a folder level
 author: gloridelmorales
 ms.author: glmorale
 ms.date: 10/6/2023
-ms.topic: article
+ms.topic: concept-article
 ms.service: azure-devops
 ms.subservice: azure-devops-release-notes
 description: Code coverage policy at a folder level

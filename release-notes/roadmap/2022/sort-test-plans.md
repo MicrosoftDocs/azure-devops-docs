@@ -3,7 +3,7 @@ title: Sort test plans by any column
 author: aaronhallberg
 ms.author: aaronha
 ms.date: 10/10/2022
-ms.topic: article
+ms.topic: concept-article
 ms.service: azure-devops
 ms.subservice: azure-devops-release-notes
 description: Sort test plans by any column

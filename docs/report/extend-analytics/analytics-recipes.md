@@ -6,14 +6,14 @@ ms.subservice: azure-devops-analytics
 ms.assetid: 1320852A-5C62-4954-9E9D-508D670777A4
 ms.author: chcomley
 author: chcomley
-ms.topic: conceptual
+ms.topic: how-to
 monikerRange: "<=azure-devops"
 ms.date: 11/04/2022
 ---
 
 # Query work tracking data using Analytics  
 
-[!INCLUDE [version-gt-eq-2019](../../includes/version-gt-eq-2019.md)] 
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)] 
 
 You can query your Azure DevOps work tracking data using the basic queries provided in this article. These queries address everyday needs while demonstrating various capabilities of Analytics. You can adapt most of these queries to meet your needs.
 

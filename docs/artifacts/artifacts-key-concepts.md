@@ -2,15 +2,15 @@
 title: Azure Artifacts key concepts 
 description: Understand the key concepts in Azure Artifacts.
 ms.service: azure-devops-artifacts
-ms.topic: conceptual
+ms.topic: concept-article
 ms.date: 02/12/2025
-monikerRange: '>= azure-devops-2020'
+monikerRange: "<=azure-devops"
 "recommendations": "true"
 ---
 
 # Azure Artifacts key concepts 
 
-[!INCLUDE [version-gt-eq-2020](../includes/version-gt-eq-2020.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../includes/version-lt-eq-azure-devops.md)]
 
 Azure Artifacts enable developers to host and share various types of packages to streamline collaboration and package distribution. This article covers the key concepts when working with Azure Artifacts.
 

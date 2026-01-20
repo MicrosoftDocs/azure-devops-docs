@@ -4,6 +4,7 @@ description: Learn how to use Azure Artifacts public feeds to share packages pub
 ms.service: azure-devops-artifacts
 ms.date: 07/30/2025
 monikerRange: 'azure-devops'
+ms.topic: how-to
 ---
 
 # Share packages publicly with public feeds
@@ -22,6 +23,8 @@ Azure Artifacts provides an easy way to share packages with users outside your o
 > Public feeds are only available in Azure DevOps Services.
 
 ## Create a public feed
+
+[!INCLUDE [allow-public-project-policy](../../organizations/projects/includes/allow-public-project-policy.md)]
 
 Public feeds are project-scoped feeds in a public project. Public feeds inherit the visibility settings of the hosting project.
 

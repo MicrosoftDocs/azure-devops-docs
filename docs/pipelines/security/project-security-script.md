@@ -4,11 +4,12 @@ description: Learn how to use PowerShell scripts to automate Azure DevOps pipeli
 ms.date: 08/12/2025
 monikerRange: "<=azure-devops"
 ai-usage: ai-assisted
+ms.topic: how-to
 ---
 
 # Use a script to update security settings
 
-[!INCLUDE [version-gt-eq-2020](../../includes/version-gt-eq-2020.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 Use the [Azure DevOps REST API](/rest/api/azure/devops/build/general-settings/update/) to automate updates to some Azure DevOps pipeline settings at the project level. Some settings aren't available through the REST API. For organization-level settings, you'll need to make configuration changes within the Azure  DevOps UI.  
 

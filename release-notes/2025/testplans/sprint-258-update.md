@@ -4,6 +4,7 @@ description: See the Sprint 258 feature updates for Azure Test Plans, including 
 author: gloridelmorales
 ms.author: glmorale
 ms.date: 6/30/2025
+ms.topic: release-notes
 ---
 
 # Azure Test Plans - Sprint 258 Update
@@ -11,5 +12,7 @@ ms.date: 6/30/2025
 ## Features
 
 [!INCLUDE [sprint-258-update-links](../includes/testplans/sprint-258-update-links.md)]
+
+[!INCLUDE [sprint-258-update](../includes/testplans/sprint-258-update.md)]
 
 [!INCLUDE [nextsteps](../includes/nextsteps.md)]

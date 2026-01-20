@@ -1,7 +1,7 @@
 ---
 title: Run an Agent with a Self-Signed Certificate
 description: Learn how to run the build and release an agent with a self-signed certificate for Azure Pipelines and Azure DevOps Server.
-ms.topic: conceptual
+ms.topic: concept-article
 ms.assetid: 09E36E4D-D94B-4F5B-BE4D-9E7B4E7B68E2
 ms.reviewer: chrispat
 ms.date: 08/05/2025
@@ -29,7 +29,7 @@ The agent diagnostic log shows:
 [2017-11-06 20:55:33Z ERR  AgentServer] System.Net.Http.HttpRequestException: An error occurred while sending the request. ---> System.Net.Http.WinHttpException: A security error occurred
 ```
 
-The previous security error might indicate that the build machine doesn't trust the server certificate that you used on your Azure Devops Server host machine. Make sure that you install your self-signed SSL server certificate into the OS certificate store.
+The previous security error might indicate that the build machine doesn't trust the server certificate that you used on your Azure DevOps Server host machine. Make sure that you install your self-signed SSL server certificate into the OS certificate store.
 
 ```
 Windows: Windows certificate store

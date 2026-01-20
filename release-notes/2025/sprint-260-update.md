@@ -4,6 +4,7 @@ author: gloridelmorales
 ms.author: glmorale
 ms.date: 8/11/2025
 description: Azure Boards and Azure Pipelines integration with GitHub Enterprise Cloud
+ms.topic: release-notes
 ---
 
 # Azure Boards and Azure Pipelines integration with GitHub Enterprise Cloud
@@ -30,6 +31,10 @@ Check out the release notes for details.
 
 [!INCLUDE [sprint-260-update-links](includes/repos/sprint-260-update-links.md)]
 
+### Azure Test Plans
+
+[!INCLUDE [sprint-260-update-links](includes/testplans/sprint-260-update-links.md)]
+
 ## GitHub Advanced Security for Azure DevOps
 
 [!INCLUDE [sprint-260-update](includes/ghazdo/sprint-260-update.md)]
@@ -45,6 +50,10 @@ Check out the release notes for details.
 ## Azure Repos
 
 [!INCLUDE [sprint-260-update](includes/repos/sprint-260-update.md)]
+
+## Azure Test Plans
+
+[!INCLUDE [sprint-260-update](includes/testplans/sprint-260-update.md)]
 
 ## Next steps
 

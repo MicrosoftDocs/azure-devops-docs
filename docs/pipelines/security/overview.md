@@ -5,11 +5,12 @@ ms.assetid: 1ef377e9-e684-4e72-8486-a42d754761ac
 ms.custom: peer-review-program
 ms.date: 03/04/2025
 monikerRange: "<=azure-devops"
+ms.topic: best-practice
 ---
 
 # Secure your Azure Pipelines
 
-[!INCLUDE [version-gt-eq-2020](../../includes/version-gt-eq-2020.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 Pipelines offer powerful capabilities for executing scripts and deploying code to production environments, but it's crucial to balance this power with security. You never want a pipeline to become a conduit for malicious code. Balancing security with the flexibility and power needed by development teams is essential.
 
@@ -42,6 +43,7 @@ To enhance security, consider separating your projects, using branch policies, a
 - **Minimize the scope of service connections**: Service connections should only have access to necessary resources. When you create a new Azure Resource Manager service connection, always choose a specific resource group. Make sure that the resource group contains only the necessary VMs or resources required for the build. For instructions on how to set up service connections, see [Use an Azure Resource Manager service connection](../library/connect-to-azure.md). 
 - **Use workload identity federation for authentication**: Whenever possible, use workload identity federation instead of a service principal for your Azure service connection. Workload identity federation uses Open ID Connect (OIDC), an industry-standard technology, to facilitate authentication between Azure and Azure DevOps without relying on secrets. For instructions on how to do this, see [Create a service connection with workload identity federation (automatic)](../library/connect-to-azure.md#create-an-azure-resource-manager-service-connection-using-workload-identity-federation).
 - **Minimize GitHub App access**: When you configure the GitHub app to Azure DevOps, grant access only to the repositories you intend to build using pipelines.
+- **Restrict service connections to specific branches**: Use a [branch control check](../process/approvals.md#branch-control) to limit which branches can use your service connection. Having a branch control check ensures that service connections only run on authorized branches and all linked pipeline resources are built from allowed branches.
 
 ## Use YAML pipelines instead of Classic pipelines
 

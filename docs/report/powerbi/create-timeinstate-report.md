@@ -3,17 +3,18 @@ title: Add a time-in-state measure to a Power BI report
 titleSuffix: Azure DevOps
 description: Learn how to add a time-in-state measure to an existing Power BI report based on Analytics for Azure DevOps.
 ms.subservice: azure-devops-analytics
+ai-usage: ai-assisted
 ms.custom: analytics-views, engagement-fy23 
 ms.author: chcomley
 author: chcomley
 ms.topic: how-to
 monikerRange: "<=azure-devops"
-ms date: 09/16/2024
+ms date: 01/07/2026
 ---
 
 # Add a time-in-state measure to your Power BI report
 
-[!INCLUDE [version-gt-eq-2019](../../includes/version-gt-eq-2019.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 The time a work item spends in a specific workflow state or series of states is an important aspect for understanding efficiency. The [Cycle Time and Lead Time](../dashboards/cycle-time-and-lead-time.md) Analytics widgets provide some measures of time-in-state. However, these widgets might not have the level of detail that you want. 
 
@@ -40,11 +41,11 @@ This article provides recipes using Data Analysis Expressions (DAX) to evaluate 
 > * When adding a calculated column or measure per the examples shown in this article, replace *View Name* with the table name for the Analytics view  or data table. For example, replace *View Name* with *Active Bugs*.  
 > :::image type="content" source="media/measure/view-name.png" alt-text="Screenshot of Power BI Table tools tab, Data table name.":::  
 > * Analytics doesn't support intra-day revisions. These examples have the most precision when using a **Daily** interval when referencing an Analytics view. 
-> * All intra-day or intra-period (weekly/monthly) revisions are ignored by the calculations. This can result in unexpected results for specific scenarios like a work item showing no time "In Progress" when a work item is "In Progress" for less than a day.   
+> * All intra-day or intra-period (weekly/monthly) revisions get ignored by the calculations, which can result in unexpected results for specific scenarios like a work item showing no time "In Progress" when a work item is "In Progress" for less than a day.   
 > * Power BI default aggregations are used whenever possible instead of building measures.  
 > * Some calculations include **+0** to ensure that a numeric value is included for every row instead of BLANK.
 > * You might need to revise some of the calculated column definitions based on the workflow states used by your project. For example, if your project uses *New*, *Active*, and *Closed* in place of *Proposed*, *In Progress*, and *Completed*.
-> * The **Date** column referred to in this article isn't a native column in Azure DevOps; It's a derived column created within PowerBI to facilitate the **Time in State** report. You can build this column using the existing date-related columns, such as "Changed Date" or "State Changed Date."
+> * The **Date** column referred to in this article isn't a native column in Azure DevOps; It's a derived column created within Power BI to facilitate the **Time in State** report. You can build this column using the existing date-related columns, such as "Changed Date" or "State Changed Date."
 
 ## Prerequisites
 
@@ -118,7 +119,7 @@ By default, Power BI shows states sorted alphabetically in a visualization. It c
 	:::image type="content" source="media/measure/state-sort-order-column.png" alt-text="Screenshot of Power BI Table tools tab, state category entry.":::
 
 	> [!NOTE]   
-	> You may need to revise the definition if you need more granularity than *State Category* provides. *State Category* provides correct sorting across all work item types regardless of any *State* customizations.
+	> You might need to revise the definition if you need more granularities than *State Category* provides. *State Category* provides correct sorting across all work item types regardless of any *State* customizations.
 
 3. Open the **Data** view and select the **State** column.
 
@@ -169,7 +170,7 @@ The **Date Previous** calculated column uses three DAX functions, [`MAX`](/dax/m
 *Date Previous* calculates the difference between the previous and current date for each row. With *Date Diff in Days*, we calculate a count of days between each of those periods. For most rows in a daily snapshot, the value equals **1**. However, for many work items that have gaps in the dataset, the value is greater than **1**.  
 
 > [!IMPORTANT]  
-> Requires that you have added the *Date Previous* calculated column to the table.
+> Requires that you added the *Date Previous* calculated column to the table.
 
 It's important to consider the first day of the dataset where *Date Previous* is blank. In this example, we give that row a standard value of 1 to keep the calculation consistent.
 
@@ -213,7 +214,7 @@ From the **Modeling** tab, choose **New Column** and then replace the default te
 The time that a work item spent in a specific state can now be calculated by summing the *Date Diff in Days* for each work item. This calculation includes all of the time spent in a specific state even if it switched between states multiple times. It's possible to evaluate each row as a trend using *Date* or the latest information by using *Is Last Day In State*.
 
 > [!IMPORTANT]  
-> Requires that you have added the *Date Diff in Days* and *Is Last Day in State* calculated columns to the table.
+> Requires that you added the *Date Diff in Days* and *Is Last Day in State* calculated columns to the table.
 
 From the **Modeling** tab, choose **New Column** and then replace the default text with the following code and select the :::image type="icon" source="media/checkmark.png" border="false"::: checkmark.
 
@@ -267,7 +268,7 @@ From the **Modeling** tab, choose **New Column** and then replace the default te
 > ```
 > 
 > [!NOTE]
-> You may need to revise the definition based on the workflow states used by your project. For example, the project used in the examples in this article use the 'In Progress' workflow state, however, Agile, Scrum, and CMMI processes typically use the 'Active' or 'Committed' states to represent work in progress. For an overview, see [Workflow states and state categories](../../boards/work-items/workflow-and-state-categories.md).
+> You might need to revise the definition based on the workflow states used by your project. For example, the project used in the examples in this article uses the 'In Progress' workflow state, however, Agile, Scrum, and CMMI processes typically use the 'Active' or 'Committed' states to represent work in progress. For an overview, see [Workflow states and state categories](../../boards/work-items/workflow-and-state-categories.md).
 
 The following image shows the effect of considering all time-in-state for every existing work item (shown left) versus only those work items in a specific state on a given day (shown right).
 
@@ -291,7 +292,7 @@ From the **Modeling** tab, choose **New Column** and then replace the default te
 > ```
 > 
 > [!NOTE]
-> You may need to revise the definition based on the workflow states used by your project. For example, if your project uses 'Active' in place of 'Committed' or 'Proposed'. 
+> You might need to revise the definition based on the workflow states used by your project. For example, if your project uses 'Active' in place of 'Committed' or 'Proposed.' 
 
 The chart of the left shows combined average while the right-hand side shows each individual state.
 
@@ -310,7 +311,7 @@ You use the *State Time in Days- Latest* calculated column when creating a trend
 The *Date Previous* calculated column can also be used to look up past values such as previous state for each work item.
 
 > [!IMPORTANT]  
-> Requires that you have added the [*Date Previous* calculated column](#date-previous) to the table.
+> Requires that you added the [*Date Previous* calculated column](#date-previous) to the table.
 
 From the **Modeling** tab, choose **New Column** and then replace the default text with the following code and select the :::image type="icon" source="media/checkmark.png" border="false"::: checkmark.
 
@@ -339,10 +340,10 @@ And, the last parameter, `'View Name'[Date], 'View Name'[Date Previous]`, specif
 
 Using the *State Previous* column, we can flag the rows for each work item where a state transition occurred. The *Stage Changed* calculated column has two special considerations:
 * Blank values of *State Previous, which we set to the *Created Date* of the work item
-* Creation of a work item is considered a state transition
+* Creation of a work item is considered as a state transition
 
 > [!IMPORTANT]  
-> Requires that you have added the [*State Previous*](#add-state-previous) calculated column to the table.
+> Requires that you added the [*State Previous*](#add-state-previous) calculated column to the table.
 
 From the **Modeling** tab, choose **New Column** and then replace the default text with the following code and select the :::image type="icon" source="media/checkmark.png" border="false"::: checkmark.
 
@@ -365,7 +366,7 @@ The calculated column is a boolean value that identifies whether the row is a st
 With *State Previous* and *State Changed* calculated columns, you can create a column that illustrates the **State Flow** for a given work item. Creating this column is optional for the purposes of this article.
 
 > [!IMPORTANT]  
-> Requires that you have added the [*State Previous*](#add-state-previous) and [*State Changed*](#state-changed) calculated columns to the table.
+> Requires that you added the [*State Previous*](#add-state-previous) and [*State Changed*](#state-changed) calculated columns to the table.
 
 From the **Modeling** tab, choose **New Column** and then replace the default text with the following code and select the :::image type="icon" source="media/checkmark.png" border="false"::: checkmark.
 
@@ -380,7 +381,7 @@ From the **Modeling** tab, choose **New Column** and then replace the default te
 As we move into the more complicated measures, we need to have a representation of the total number of state changes to compare the rows of a data for a given work item. We get the representation by adding a *State Change Count* calculated column.
 
 > [!IMPORTANT]
-> Requires that you have added the [*State Changed*](#state-changed) calculated column to the table.
+> Requires that you added the [*State Changed*](#state-changed) calculated column to the table.
 
 From the **Modeling** tab, choose **New Column** and then replace the default text with the following code and select the :::image type="icon" source="media/checkmark.png" border="false"::: checkmark. 
 
@@ -400,7 +401,7 @@ From the **Modeling** tab, choose **New Column** and then replace the default te
 *State Restart Time in Days* is a fairly complex calculation. The first step is to find the last time a work item was in a proposed state. Add the *State Change Count - Last Proposed* calculated column. 
 
 > [!NOTE]   
-> You might need to revise the following definitions based on the workflow states used by your project. For example, if your project uses 'New' in place of 'Proposed'. 
+> You might need to revise the following definitions based on the workflow states used by your project. For example, if your project uses 'New' in place of 'Proposed.'
 
 From the **Modeling** tab, choose **New column** and then replace the default text with the following code and select the :::image type="icon" source="media/checkmark.png" border="false"::: checkmark.
 
@@ -445,11 +446,11 @@ Similar to *State Restart Time in Days*, the *State Rework Time in Days* looks f
     > VAR CompletedState = "Completed"
     > RETURN
     > CALCULATE(
-    >    COUNTROWS('YourTable'),
+    >    COUNTROWS('View Name'),
     >    FILTER(
-    >        'YourTable',
-    >        'YourTable'[State] = CompletedState
-    >        && 'YourTable'[State Change Date] = MIN('YourTable'[State Change Date])
+    >        'View Name',
+    >        'View Name'[State] = CompletedState
+    >        && 'View Name'[State Changed] = TRUE()
     >    )
     > )
 

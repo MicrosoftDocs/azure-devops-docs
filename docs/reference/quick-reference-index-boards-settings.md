@@ -86,7 +86,7 @@ You customize Azure Boards work tracking using either the Inheritance process mo
 With the Inheritance process, you apply a process to a project. 
  
 ::: moniker-end
-::: moniker range=">= azure-devops-2020"
+::: moniker range="<=azure-devops"
 - [Create and manage inherited processes](../organizations/settings/work/manage-process.md)
 - [Customize a project using an inherited process](../organizations/settings/work/customize-process.md)
 - [Change the reference process from Agile to Scrum](../organizations/settings/work/change-process-agile-to-scrum.md)  
@@ -212,13 +212,11 @@ With the Hosted XML process model, you customize work tracking objects and Agile
       - [Add rules to a field](add-modify-field.md#add-rules)  
       - [Change a field label](add-modify-field.md#change-label)  
       - [Add a custom control field](add-modify-field.md#custom-control)  
-      - [Remove a field](add-modify-field.md#change-label)  
-      - [Define global lists](/previous-versions/azure/devops/reference/xml/define-global-lists)  
+      - [Remove a field](add-modify-field.md#change-label)
             
             
       **Work item types**
       - [Add or modify a work item type](add-modify-wit.md)
-      - [Customize the form](/previous-versions/azure/devops/reference/xml/change-work-item-form-layout)
       - [Specify the work item type color](xml/process-configuration-xml-element.md#wit-colors)
       - [Specify the work item type icon](xml/process-configuration-xml-element.md)
       - [Customize the workflow (States, Reasons, Transitions)](xml/change-workflow-wit.md)  
@@ -234,9 +232,7 @@ With the Hosted XML process model, you customize work tracking objects and Agile
       - [Set default weekend days (Scrum)](xml/process-configuration-xml-element.md#weekend_days)  
       - [Set default bug management behavior](xml/process-configuration-xml-element.md#behaviors)  
       - [Set default hidden backlogs](xml/process-configuration-xml-element.md#behaviors)  
-      - [Change process configuration](xml/process-configuration-xml-element.md)  
-      - [Add custom categories](xml/categories-xml-element-reference.md)  
-            
+      - [Change process configuration](xml/process-configuration-xml-element.md)           
             
       **Process templates** 
       - [Import a process template](../organizations/settings/work/import-process/import-process.md#import-from-TFS) 
@@ -268,7 +264,6 @@ With the On-premises XML process model, you modify the XML definition of work it
             
       **Work item types**
       - [Add or modify a work item type](add-modify-wit.md)
-      - [Customize the form](/previous-versions/azure/devops/reference/xml/change-work-item-form-layout)
       - [Specify the work item type color](xml/process-configuration-xml-element.md#wit-colors)
       - [Specify the work item type icon](xml/process-configuration-xml-element.md)
       - [Customize the workflow (States, Reasons, Transitions)](xml/change-workflow-wit.md)  
@@ -285,7 +280,6 @@ With the On-premises XML process model, you modify the XML definition of work it
       - [Set default bug management behavior](xml/process-configuration-xml-element.md#behaviors)  
       - [Set default hidden backlogs](xml/process-configuration-xml-element.md#behaviors)  
       - [Change process configuration](xml/process-configuration-xml-element.md)  
-      - [Add custom categories](/previous-versions/azure/devops/reference/xml/categories-xml-element-reference)  
    :::column-end:::
 :::row-end:::
 ---

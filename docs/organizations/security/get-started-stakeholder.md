@@ -8,7 +8,7 @@ ms.author: chcomley
 author: chcomley
 ms.topic: how-to
 monikerRange: '<= azure-devops'
-ms.date: 10/11/2024
+ms.date: 12/22/2025
 #customer intent: As a stakeholder, I want to understand how to use my access to manage work items for my team in Azure Boards. 
 ---
 
@@ -24,7 +24,7 @@ ms.date: 10/11/2024
 *Stakeholders* are users with free but limited access to Azure DevOps features and functions. With Stakeholder access, you can add and modify work items, view and approve pipelines, and view dashboards. You can check project status and provide direction, feedback, feature ideas, and business alignment to a team.
 ::: moniker-end  
 
-For more information, see the [Stakeholder access quick reference](stakeholder-access.md) and the [feature matrix](https://azure.microsoft.com/services/devops/compare-features/).
+For more information, see the [Stakeholder access quick reference](stakeholder-access.md) and the [feature matrix](https://azure.microsoft.com/pricing/details/devops/azure-devops-services/).
 
 ## Prerequisites
 
@@ -59,7 +59,7 @@ For more information, see the [Stakeholder access quick reference](stakeholder-a
 1. Select the link provided in your email invitation or open a browser window and enter the URL for the web portal.
 
    ::: moniker range="azure-devops"  
-   `https://dev.azure.com/OrganizationName/ProjectName`
+   `https://dev.azure.com/{OrganizationName}/{ProjectName}`
    ::: moniker-end
    ::: moniker range="< azure-devops"
    `http://ServerName:8080/tfs/DefaultCollection/ProjectName`
@@ -71,9 +71,9 @@ For more information, see the [Stakeholder access quick reference](stakeholder-a
 
 ## Understand work items and types
 
-Work items support planning and tracking work. Each work item is based on a work item type. Each work item is assigned an identifier, which is unique in an organization or project collection.
+Work items support planning and tracking work. Each work item is based on a work item type and is assigned a unique identifier within an organization or project collection.
 
-Different work items track different types of work. The work item types available are based on the [process that was used when your project was created](../../boards/work-items/guidance/choose-process.md). The options are *Agile*, *Basic*, *Scrum*, or *Capability Maturity Model Integration (CMMI)*, as illustrated in the following images. For more information, see [About work items and work item types](../../boards/work-items/about-work-items.md).
+Different work items track different types of work. The work item types available are based on the [process used when your project was created](../../boards/work-items/guidance/choose-process.md): *Agile*, *Basic*, *Scrum*, or *Capability Maturity Model Integration (CMMI)*, as illustrated in the following images. For more information, see [About work items and work item types](../../boards/work-items/about-work-items.md).
 
 [!INCLUDE [work item types](../../boards/includes/work-item-types.md)]
 
@@ -116,7 +116,7 @@ After you connect to a project, you can view work items.
    > [!TIP]
    > Select the :::image type="icon" source="../../media/icons/icon-favorite-star.png" border="false"::: star icon to make a team board a favorite. Favorite artifacts (:::image type="icon" source="../../media/icons/icon-favorited.png" border="false"::: favorite icon) appear at the top of the team selector list.
 
-1. Check that for the backlog level  you selected:
+1. Check that for the backlog level you selected:
 
     - **Stories** for Agile.
     - **Issues** for Basic.
@@ -130,18 +130,18 @@ After you connect to a project, you can view work items.
 ## Add work items
 
 ::: moniker range="azure-devops"
-From your board, select the :::image type="icon" source="../../media/icons/add-icon.png" border="false"::: plus sign, enter a title, and then select **Enter**.
+From your board, select the :::image type="icon" source="../../media/icons/add-icon.png" border="false"::: plus sign, enter a title, and then press **Enter**.
 
 :::image type="content" source="../../boards/boards/media/quickstart/add-new-item-agile-s155.png" alt-text="Screenshot that shows the highlighted New item button.":::
 ::: moniker-end  
 
 ::: moniker range="< azure-devops"
-From the board, you can't add work items, but you can open them and annotate them. To add work items, open the backlog by selecting the **Backlog** link. Also, you can't update the status of a work item by using the drag-and-drop method to move a different column or reorder cards within a column.
+From the board, you can't add work items, but you can open them and add comments. To add work items, open the backlog by selecting the **Backlog** link. Also, you can't update the status of a work item by using the drag-and-drop method to move to a different column or reorder cards within a column.
 ::: moniker-end  
 
 For more information, see [View and add work items](../../boards/work-items/view-add-work-items.md).
 
-::: moniker range=">= azure-devops-2020"
+::: moniker range="<=azure-devops"
 
 ## Update work items
 
@@ -154,10 +154,6 @@ Drag a work item downstream as you finish work.
 :::image type="content" source="../../boards/boards/media/alm-cc-move-card.png" alt-text="Screenshot that shows a board that uses an Agile template to update the status of a work item.":::
 
 ::: moniker-end  
-::: moniker range="azure-devops-2020"
-> [!NOTE]
-> Stakeholders can only use the drag-and-drop method to move cards to different columns with the Azure DevOps Server 2020.1 update. For more information, see the [Release Notes](/azure/devops/server/release-notes/azuredevops2020u1#stakeholders-can-move-work-items-across-board-columns).
-::: moniker-end
 
 ### Add details
 
@@ -196,7 +192,7 @@ This example assigns the Requirement work item to Jamal Hartnett. When you're fi
 To add more details, change field values, add a description or tags, and add comments. For more information, see:
 
 - [Plan and track work in Azure Boards](../../boards/get-started/plan-track-work.md).
-- [Add tags to work items](../../boards/queries/add-tags-to-work-items.md). As a Stakeholder, you can add existing tags to a work item, but you can't add new tags.
+- [Add tags to work items](../../boards/queries/add-tags-to-work-items.md). As a Stakeholder, you can add existing tags to a work item, but you can't create new tags.
 - [Capture comments in the Discussion section](../../boards/get-started/plan-track-work.md#capture-comments-in-the-discussion-section).
 
 ## View as backlog

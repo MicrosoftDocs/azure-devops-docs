@@ -1,7 +1,7 @@
 ---
 title: Manage pipelines with the Azure DevOps CLI
 description: Learn about the Azure DevOps CLI extension and about the az pipelines list, show, run, and update commands for managing your pipelines.
-ms.topic: conceptual
+ms.topic: get-started
 ms.custom: devx-track-azurecli
 ms.author: sandrica
 author: silviuandrica
@@ -11,7 +11,7 @@ ms.date: 08/06/2024
 
 # Manage pipelines with the Azure DevOps CLI
 
-[!INCLUDE [version-gt-eq-2020](../../includes/version-gt-eq-2020.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 This article describes how you can manage existing pipelines in your Azure DevOps project by using the following [az pipelines](/cli/azure/pipelines) commands:
 

@@ -3,7 +3,7 @@ title: Hosted macOS agents on Apple Silicon
 author: geekzter
 ms.author: ericvan
 ms.date: 11/22/2024
-ms.topic: article
+ms.topic: concept-article
 ms.service: azure-devops
 ms.subservice: azure-devops-release-notes
 description: Hosted macOS agents on Apple Silicon

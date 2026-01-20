@@ -1,5 +1,5 @@
 ---
-title: Enable AI Assistance with the Azure DevOps MCP Server
+title: Enable AI assistance with the Azure DevOps MCP Server
 titleSuffix: Azure Boards
 description: Learn about the Azure DevOps Model Context Protocol (MCP) Server, which enhances your AI assistant with real-time Azure DevOps context for smarter, more accurate project insights and decision-making capabilities.
 ms.service: azure-devops-boards
@@ -8,7 +8,7 @@ ms.topic: overview
 ms.author: chcomley
 author: chcomley
 monikerRange: 'azure-devops'
-ms.date: 09/11/2025
+ms.date: 12/11/2025
 #customer intent: As a project member, I want to understand what the Azure DevOps MCP Server is and how it can enhance my AI assistant with real-time Azure DevOps context to improve my productivity and decision-making.
 ---
 
@@ -21,23 +21,28 @@ Consider asking your AI assistant "Get my current sprint work items, then identi
 Unlike cloud-based solutions that require sending your data externally, the Azure DevOps MCP Server runs locally within your secure environment, ensuring your sensitive project information never leaves your network while still delivering enterprise-grade AI capabilities.
 
 > [!IMPORTANT]
-> - The Azure DevOps MCP Server is in public preview. Features and functionality might change before general availability. For issues or feedback, visit the [GitHub repository](https://github.com/microsoft/azure-devops-mcp).
 > - The Azure DevOps MCP Server is free to use. However, standard Azure DevOps pricing applies to your organization and any data access through the service. AI assistant usage might have separate costs depending on your chosen AI platform.
 > - The Azure DevOps MCP Server requires your AI assistant to operate in agent-mode to access Azure DevOps data and perform operations.
 
 ## Prerequisites
 
-| Requirement | Description | Download/Installation |
-|-------------|-------------|----------------------|
-| **Node.js** | Version 18.0 or higher required for running the MCP Server | [Download Node.js](https://nodejs.org/) |
-| **Azure DevOps organization** | Active Azure DevOps Services organization with project access | [Create organization](../organizations/accounts/create-organization.md) |
-| **AI coding environment** | Compatible AI assistant with agent-mode support (GitHub Copilot, Claude, etc.) | See [installation section](#install-mcp-server)  |
+**System requirements:** [Node.js 18.0+](https://nodejs.org/) and an active [Azure DevOps organization](../organizations/accounts/create-organization.md)
 
-## Install MCP Server
+## Install Azure DevOps MCP Server
 
-Ready to enhance your AI assistant with Azure DevOps context? The Azure DevOps MCP Server works with popular AI coding environments like Visual Studio Code with GitHub Copilot, Visual Studio 2022, Cursor, and Claude Code.
+The Azure DevOps MCP Server integrates with various development environments and AI assistants. Choose your preferred environment for instructions. The prerequisites listed in the table are environment-specific requirements in addition to the system requirements previously listed.
 
-For detailed installation instructions and setup for your preferred environment, see [Install Azure DevOps MCP Server](https://github.com/microsoft/azure-devops-mcp/blob/main/docs/GETTINGSTARTED.md).
+| Environment | Prerequisites | Installation | Features |
+|-------------|---------------|--------------|----------|
+| **Visual Studio Code (recommended)** | [GitHub Copilot](https://marketplace.visualstudio.com/items?itemName=GitHub.copilot) or [Claude Dev](https://marketplace.visualstudio.com/items?itemName=saoudrizwan.claude-dev) extension | [**One-click install**](https://insiders.vscode.dev/redirect/mcp/install?name=ado&config=%7B%20%22type%22%3A%20%22stdio%22%2C%20%22command%22%3A%20%22npx%22%2C%20%22args%22%3A%20%5B%22-y%22%2C%20%22%40azure-devops%2Fmcp%22%2C%20%22%24%7Binput%3Aado_org%7D%22%5D%7D&inputs=%5B%7B%22id%22%3A%20%22ado_org%22%2C%20%22type%22%3A%20%22promptString%22%2C%20%22description%22%3A%20%22Azure%20DevOps%20organization%20name%20%20%28e.g.%20%27contoso%27%29%22%7D%5D) | Extensive MCP support with multiple AI assistant options |
+| **Visual Studio (2022 and later)** | [GitHub Copilot component](https://learn.microsoft.com/visualstudio/ide/visual-studio-github-copilot-install-and-states?view=visualstudio) | [Visual Studio setup guide](https://github.com/microsoft/azure-devops-mcp/blob/main/README.md#visual-studio) | Full IntelliSense integration with Azure DevOps data |
+| **Cursor** | Built-in AI assistant (no extensions needed) | [Cursor setup guide](https://github.com/microsoft/azure-devops-mcp/blob/main/README.md#cursor) | Native MCP integration |
+| **Claude Desktop** | Claude Desktop application | [Claude Desktop setup guide](https://github.com/microsoft/azure-devops-mcp/blob/main/README.md#claude-desktop) | Standalone application with full Azure DevOps integration |
+| **JetBrains IDEs** | Compatible AI assistant plugin | [JetBrains setup guide](https://github.com/microsoft/azure-devops-mcp/blob/main/README.md#jetbrains) | IDE-specific integration via plugins |
+| **Other environments** | Varies by environment | [Azure DevOps MCP Server docs repository](https://github.com/microsoft/azure-devops-mcp) | See repository for all options |
+
+> [!TIP]
+> Having installation issues? Check the [troubleshooting section](https://github.com/microsoft/azure-devops-mcp/blob/main/docs/TROUBLESHOOTING.md) or report issues on the [Azure DevOps MCP Server GitHub repository](https://github.com/microsoft/azure-devops-mcp/issues).
 
 ## Why use Azure DevOps MCP Server?
 
@@ -80,6 +85,9 @@ Your AI assistant processes this data to provide:
 ## Common use cases and examples
 
 For more examples, see [Example usage](https://github.com/microsoft/azure-devops-mcp/blob/main/docs/EXAMPLES.md).
+
+> [!TIP]
+> To avoid using stale or cached data from previous queries, add to your prompt, "Do not use previously fetched data."
 
 ### Daily standup preparation
 
@@ -217,7 +225,7 @@ For more examples, see [Example usage](https://github.com/microsoft/azure-devops
         |----------|------------|--------|
         | ✅ **Recommended** | Epic #3401: "User Profile Enhancement" - High business value, no dependencies<br>Bug #3456: "Search results time out on large datasets" - Critical user impact<br>Feature #3378: "Export dashboard to PDF" - Frequently requested<br>Story #3489: "Implement password reset flow" - Security priority<br>Task #3512: "Upgrade React components to v18" - Technical debt<br>Story #3467: "Add dark mode toggle" - Quick win | **60 total**<br>(13 + 8 + 13 + 8 + 13 + 5) |
         | ⏳ **Deferred** | Epic #3234: "Mobile app rewrite" - Too large for single sprint<br>Feature #3445: "AI-powered recommendations" - Waiting for data science team<br>Story #3523: "Integration with external CRM" - Blocked by vendor API | 34, 21, 13 |
-        **Planning recommendations**|- **Balance**: Mix of features (3), bugs (1), technical debt (1), quick wins (1)<br>- **Risk level**: Low-medium risk items for predictable delivery<br>- **Dependencies**: All selected items have resolved dependencies<br>- **Skills**: Work distribution matches current team expertise<br>- **Business value**: Prioritized customer-facing features and critical fixes|
+        |**Planning recommendations**|- **Balance**: Mix of features (3), bugs (1), technical debt (1), quick wins (1)<br>- **Risk level**: Low-medium risk items for predictable delivery<br>- **Dependencies**: All selected items have resolved dependencies<br>- **Skills**: Work distribution matches current team expertise<br>- **Business value**: Prioritized customer-facing features and critical fixes|
        :::column-end:::
 :::row-end:::
 ---
@@ -285,7 +293,7 @@ For more examples, see [Example usage](https://github.com/microsoft/azure-devops
        :::column span="2":::
         | Component | Details |
         |-----------|---------|
-        | **Pull Request** | PR #67: "Implement caching layer for user preferences"<br>Author: Sarah Chen, Status: Active (awaiting review)<br>Files: 8 changed (+156, -42 lines), Created: Two days ago |
+        | **Pull Request** | PR #67: "Implement caching layer for user preferences"<br>Author: Christie Church, Status: Active (awaiting review)<br>Files: 8 changed (+156, -42 lines), Created: Two days ago |
         | **Linked Work Items** | 🎯 User Story #2847: "Improve app performance for returning users" (High priority)<br>└── Target: Page load time < 2 seconds for logged-in users<br><br>🐛 Bug #2901: "Settings page loads slowly for users with many preferences" (Medium severity)<br>└── Impact: Affects 15% of premium users, causing support tickets |
         |**Business impact summary**| - 💼 **Strategic Alignment**: Supports Q3 user retention goal (20% improvement)<br>Addresses premium user experience issues affecting revenue<br>Enables future personalization features<br>- 📊 **Expected Outcomes**: Performance: 60% reduction in preference loading time (2.5s → 1.0s)<br>User Experience: Eliminates loading delays in settings and profile pages<br>Support Impact: Expected 40% reduction in performance-related tickets<br>- 🔍 **Review Focus Areas**: Cache invalidation logic (data consistency)<br>Error handling for cache unavailability<br>Performance monitoring implementation<br>Security considerations for cached user data |
        :::column-end:::

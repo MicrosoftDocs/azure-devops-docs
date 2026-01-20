@@ -3,15 +3,15 @@ title: Publish npm packages with Azure Pipelines
 ms.custom: devx-track-js
 description: Learn how to publish npm packages to internal and external feed using Azure Pipelines.
 ms.assetid: F4C61B91-2C5B-4848-A4BF-B658F549673A
-ms.topic: conceptual
+ms.topic: concept-article
 ms.date: 11/14/2024
-monikerRange: '>= azure-devops-2020'
+monikerRange: "<=azure-devops"
 "recommendations": "true"
 ---
 
 # Publish npm packages with Azure Pipelines (YAML/Classic)
 
-[!INCLUDE [version-gt-eq-2020](../../includes/version-gt-eq-2020.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 With Azure Pipelines, you can publish your npm packages to Azure Artifacts feeds within your organization and in other organizations. This article will guide you through publishing your npm packages to internal and external feeds using YAML and Classic pipelines.
 

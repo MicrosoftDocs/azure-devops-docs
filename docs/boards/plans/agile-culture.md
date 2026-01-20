@@ -8,31 +8,32 @@ ms.author: chcomley
 author: chcomley
 ms.topic: best-practice
 monikerRange: '<= azure-devops'
-ms.date: 06/05/2023
+ms.date: 10/27/2025
+ai-usage: ai-assisted
 ---
 
 # Promote an Agile culture within your team  
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
-As your team grows, you want your tools to grow with it. And if you're an enterprise adopting Agile methodologies, you want your Agile tools to support the business goals of your enterprise.  
+As your team grows, you want your tools to grow with it. If you're an enterprise adopting Agile methodologies, you want your Agile tools to support your enterprise's business goals.  
 
-However, successfully scaling Agile requires addressing both the culture and tools within your organization.  
+However, successfully scaling Agile requires you to address both the culture and tools within your organization.  
 
 > [!NOTE] 
 > New to Agile? For more information, see [Agile Culture](/devops/plan/adopting-agile) and [Scaling Agile to Large Teams](/devops/plan/scaling-agile).
 
 ## Enable autonomy
 
-Organizations that aspire to be agile need to consider the twin obligations of creating alignment across the enterprise and supporting team autonomy. A team needs autonomy to be efficient. And enterprises need alignment across teams and the organization to be efficient.  
+Organizations that aspire to be agile need to consider the twin obligations of creating alignment across the enterprise and supporting team autonomy. A team needs autonomy to be efficient. Enterprises need alignment across teams and the organization to be efficient.  
 
-Too much alignment with insufficient team autonomy leads doesn't support innovation or agility of teams to get things done. Too little alignment with each team running their own program doesn't provide the insight and coordination required to meet business goals.  
+Too much alignment with insufficient team autonomy stifles innovation and prevents teams from working agilely to accomplish tasks. Too little alignment with each team running their own program prevents the insight and coordination required to meet business goals.  
 
-With the right level of alignment across the organization and team autonomy, individuals get empowered to innovate and inspired to collaborate to meet business goals. 
+With the right level of alignment across the organization and team autonomy, you empower individuals to innovate and inspire them to collaborate to meet business goals. 
 
 ## Create alignment
 
-As you plan how you want to grow your Agile tool set, consider the following areas. These areas are key to creating enterprise alignment while developing team autonomy.  
+As you plan how you want to grow your Agile tool set, consider the following areas. These areas help you create enterprise alignment while developing team autonomy.  
 
 
 :::row:::
@@ -51,7 +52,7 @@ As you plan how you want to grow your Agile tool set, consider the following are
       Product vision
    :::column-end:::
    :::column span="2":::
-      The organization defines the goals and roadmap for the organization. You can define goals as epics and features that show up on the [portfolio backlog](portfolio-management.md). 
+      The organization defines the goals and roadmap for the organization. You can define goals as epics and features that appear on the [portfolio backlog](portfolio-management.md). 
    :::column-end:::
    :::column span="2":::
       A team determines how to best meet the roadmap. The team breaks down goals into user stories or product backlog items using their [team backlogs](portfolio-management.md#feature-team-backlog).
@@ -65,7 +66,7 @@ As you plan how you want to grow your Agile tool set, consider the following are
       Based on business goals, organizations determine the number and size of teams. [Vertically structured feature teams](#horizontal-vs-vertical) lead to greater autonomy and efficiency. 
    :::column-end:::
    :::column span="2":::
-      With teams, there should be some established roles, such as product owner and development leads, but also room to rotate roles. For example, team members can take turns acting as Scrum Master, developing sprint demos, running sprint retrospectives, or crafting sprint emails. 
+      Within teams, you should establish some roles, such as product owner and development leads, but also provide room to rotate roles. For example, team members can take turns acting as Scrum Master, developing sprint demos, running sprint retrospectives, or crafting sprint emails. 
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -74,12 +75,12 @@ As you plan how you want to grow your Agile tool set, consider the following are
    :::column-end:::
    :::column span="2":::
       Agile organizations need to release products and feature updates at regular intervals. Establishing regular release and sprint schedules promotes the rhythm of the business.  
-      Each sprint--a time boxed iteration of constant duration between two and four weeks&mdash;includes planning, executing, delivering value, reflecting, and engaging in continuous improvement.
+      Each sprint—a time-boxed iteration of constant duration between two and four weeks—includes planning, executing, delivering value, reflecting, and engaging in continuous improvement.
    :::column-end:::
    :::column span="2":::
       All teams manage their work within the set sprint cadence. The team provides input into the length of sprint that works best for them.  
       The team chooses the Agile methods that work for them, [Scrum](../sprints/assign-work-sprint.md), [Kanban](../boards/kanban-quickstart.md), or a mix of both. The team also takes ownership of starting and acting on their own set of continuous improvement practices.  
-      It's possible for some teams to execute in shorter sprints. For example, if an organization sets a 2-week sprint cadence, some teams may choose to operate in 1-week sprints, while still aligning with the organizational schedule. 
+      Some teams can execute in shorter sprints. For example, if an organization sets a 2-week sprint cadence, some teams might choose to operate in 1-week sprints, while still aligning with the organizational schedule. 
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -87,11 +88,11 @@ As you plan how you want to grow your Agile tool set, consider the following are
       Communication cadence
    :::column-end:::
    :::column span="2":::
-      Just as sprints bring a natural rhythm to the flow of work, so too do regular communications. By setting expectations for the types of communications they want to see to stay aligned and how often they occur, organizations naturally create alignment across teams and the enterprise.  
+      Just as sprints bring a natural rhythm to the flow of work, regular communications do too. By setting expectations for the types of communications they want to see to stay aligned and how often they occur, organizations naturally create alignment across teams and the enterprise.  
       Team sprint emails, bug bar status, and release team feature delivery status are examples of such regular communications. 
    :::column-end:::
    :::column span="2":::
-      A team determines the details that they communicate and who develops the communication. Their sprint emails may contain a summary of previous sprint accomplishments and the next sprint plans or include a demo of recently completed features.
+      A team determines the details that they communicate and who develops the communication. Their sprint emails might contain a summary of previous sprint accomplishments and the next sprint plans or include a demo of recently completed features.
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -99,11 +100,11 @@ As you plan how you want to grow your Agile tool set, consider the following are
       Quality
    :::column-end:::
    :::column span="2":::
-      Each organization needs to set the criteria and standards by which they assess quality and set expectations for quality standards. A few ways they define the criteria are to set exit criteria for new feature development, standards to manage technical debt, and bug caps for teams or individuals.  
+      Each organization needs to set the criteria and standards by which they assess quality and set expectations for quality standards. They can define the criteria by setting exit criteria for new feature development, standards to manage technical debt, and bug caps for teams or individuals.  
       Also, they can monitor bug status and trends by creating bug dashboards.  
    :::column-end:::
    :::column span="2":::
-      A team chooses how they meet the quality standards. They may stage bug bashes for new features or at the end of each sprint. They may choose an individual to function as a bug shield on a rotating basis.
+      A team chooses how they meet the quality standards. They might stage bug bashes for new features or at the end of each sprint. They might choose an individual to function as a bug shield on a rotating basis.
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -111,12 +112,12 @@ As you plan how you want to grow your Agile tool set, consider the following are
       Manage risk, track work 
    :::column-end::: 
    :::column span="2"::: 
-      The organization determines how each functional unit communicates status and risk. They establish a &quot;contract of communication&quot; as to the minimum required information the organization needs.  
+      The organization determines how each functional unit communicates status and risk. They establish a "contract of communication" as to the minimum required information the organization needs.  
       Also, the organization provides the infrastructure to reduce risks. The organization owes the teams anything they can do to reduce risks that are common across teams. 
    :::column-end:::
    :::column span="2":::
       Beyond meeting the needs set by the organization, teams determine any other details they need to manage and track to reduce their risks. Whether they use a white board with sticky notes or a full Gantt chart, they manage the details.
-      For example, teams may add a backlog item to track a dependency they have on another team. Or they may track their risks via a list of issues or impediments. Also, teams regularly contribute to improving the process and infrastructure to support the organization's ability to manage risk and gain insights.
+      For example, teams might add a backlog item to track a dependency they have on another team. Or they might track their risks via a list of issues or impediments. Also, teams regularly contribute to improving the process and infrastructure to support the organization's ability to manage risk and gain insights.
    :::column-end:::
 :::row-end:::
 
@@ -131,7 +132,7 @@ As you scale, one of the most important tasks to consider is how you structure y
 
 However, with the adoption of Agile practices, vertical team structures that span the architecture provide greater team autonomy. Vertical teams can deliver on the features they own by working across the software architecture. They also spread the knowledge needed to work at all architecture levels throughout all the teams.
 
-Configure your teams along the value streams that your organization wants to deliver. For example, Fabrikam Fiber, organizes their teams into the following seven feature teams.
+Configure your teams along the value streams that your organization wants to deliver. For example, Fabrikam Fiber organizes their teams into the following seven feature teams.
 
 ![Chart showing seven feature teams: Shopping cart, Customer profile, Service status, Email, Voice, Internet, and TV](media/seven-feature-teams.png)  
 
@@ -142,7 +143,7 @@ Each team plans the features to deliver. They have the autonomy to determine how
 
 As your organization grows, you can scale your Agile tools in the following ways.     
 
-- **[Add teams and filtered backlog views](../../organizations/settings/add-teams.md):** You add teams to support team autonomy and provide them with the tools they can configure and manage that supports how they want to work. These tools include product backlogs, boards, sprint backlogs, Taskboards, and others.
+- **[Add teams and filtered backlog views](../../organizations/settings/add-teams.md):** You add teams to support team autonomy and provide them with the tools they can configure and manage that support how they want to work. These tools include product backlogs, boards, sprint backlogs, Taskboards, and others.
 
     Also, you can configure teams to support a hierarchy of backlogs and portfolio backlogs so that portfolio managers can review priority and progress across several teams.
 
@@ -154,20 +155,20 @@ As your organization grows, you can scale your Agile tools in the following ways
 
 - **[Configure dashboards](../../report/dashboards/dashboards.md):** With team dashboards, you can configure charts that track progress within a team or across teams. Specifically, you can add status and trend charts based on queries you create.
 
-- **Group or categorize work:**  There are several ways to group work that you want to track. Backlogs filter work items based on team area assignments. And portfolio backlogs allow you to [group backlog items under Features and Epics](../backlogs/organize-backlog.md).
+- **Group or categorize work:** There are several ways to group work that you want to track. Backlogs filter work items based on team area assignments. Portfolio backlogs allow you to [group backlog items under Features and Epics](../backlogs/organize-backlog.md).
 
     If you want to track and report on work items based on other groupings, you can. You can [add tags to work items and then filter backlogs or queries based on tags](../queries/add-tags-to-work-items.md). Also, you can [add subarea paths](../../organizations/settings/set-area-paths.md) to represent more granular feature areas.
 
-- **Add folders and use team favorites:**  As your teams grow, you see a growing list of work item queries, build definitions, and source code folders. By using folders, subfolders, and team favorites, you can manage many of these lists more easily. You can add team favorites for shared queries, source code, and build definitions.
+- **Add folders and use team favorites:** As your teams grow, you see a growing list of work item queries, build definitions, and source code folders. By using folders, subfolders, and team favorites, you can manage many of these lists more easily. You can add team favorites for shared queries, source code, and build definitions.
 
 ## Scale with teams and not projects  
 
 Often, organizations look at adding a project for each software development project. 
 
 We recommend that you add teams to scale your tools rather than add projects for the following reasons:  
-- **Visibility:**  It's easier to view progress across all teams  
-- **Tracking and auditing:**  It's easier to [link work items to other objects](../backlogs/add-link.md) for tracking and auditing purposes
-- **Maintainability:**  You minimize the maintenance of security groups and process updates.  
+- **Visibility:** You can more easily view progress across all teams  
+- **Tracking and auditing:** You can more easily [link work items to other objects](../backlogs/add-link.md) for tracking and auditing purposes
+- **Maintainability:** You minimize the maintenance of security groups and process updates.  
 
 For more information, see [About projects and scaling your organization](../../organizations/projects/about-projects.md).
 
@@ -189,4 +190,4 @@ For more information, see these articles:
 - [Culture over process](https://blog.crisp.se/wp-content/uploads/2013/09/culture-over-process.pdf)
 - [The Culture Game - Tools for the Agile Manager](https://www.amazon.com/The-Culture-Game-Tools-Manager/dp/0984875301)  
 - [Scaled Agile Framework (SAFe)](https://www.scaledagileframework.com/)  
-- [Scaling Agile Software Development, - Disciplined Agility at Scale (White Paper)](https://disciplinedagileconsortium.org/Resources/Documents/ScalingAgileSoftwareDevelopment.pdf)   
+- [Scaling Agile Software Development, - Disciplined Agility at Scale (White Paper)](https://disciplinedagileconsortium.org/Resources/Documents/ScalingAgileSoftwareDevelopment.pdf)

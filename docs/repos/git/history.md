@@ -4,7 +4,7 @@ titleSuffix: Azure Repos
 description: Overview of Git history
 ms.assetid: 0094b6c0-d841-48e6-bb5d-82596198ef08
 ms.service: azure-devops-repos
-ms.topic: conceptual
+ms.topic: overview
 ms.date: 07/30/2018
 monikerRange: '<= azure-devops'
 ms.subservice: azure-devops-repos-git

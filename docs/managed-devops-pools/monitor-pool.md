@@ -2,6 +2,7 @@
 title: Monitor
 description: Learn how to view the health of your Managed DevOps Pools.
 ms.date: 04/25/2025
+ms.topic: concept-article
 ---
 
 # Monitor Managed DevOps Pools

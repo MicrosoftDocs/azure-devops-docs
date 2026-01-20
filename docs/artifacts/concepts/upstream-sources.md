@@ -5,13 +5,13 @@ ms.assetid: 7cb70122-7c5b-46c1-b07e-1382cfc7d62b
 ms.service: azure-devops-artifacts
 ms.topic: overview
 ms.date: 09/11/2025
-monikerRange: '>= azure-devops-2020'
+monikerRange: "<=azure-devops"
 "recommendations": "true"
 ---
 
 # What are upstream sources?
 
-[!INCLUDE [version-gt-eq-2020](../../includes/version-gt-eq-2020.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 Azure Artifacts upstream sources allow developers to store packages from various origins in a single feed, including packages published to the feed and those installed from public registries like *NuGet.org* or *npmjs.com*. Once upstream sources are enabled, any package installed from an upstream source is automatically saved to your feed.
 
@@ -152,4 +152,4 @@ If a feed has a failing upstream source, metadata for packages using the same pr
 
 - [Use upstream sources in a public feed](../how-to/public-feeds-upstream-sources.md)
 
-- [Manage permissions](../feeds/feed-permissions.md)
+- [Restore packages from upstream sources](../tutorials/protect-oss-packages-with-upstream-sources.md)

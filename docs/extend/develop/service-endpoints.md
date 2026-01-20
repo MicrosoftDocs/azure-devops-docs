@@ -4,7 +4,7 @@ title: Create service endpoints | Extensions for Azure DevOps
 description: Browse through the places where your extension can extend GitHub Codespaces for Azure DevOps.
 ms.custom: engagment-fy23
 ms.assetid: ad0ea9de-620e-4605-8fcd-3c1443b26d8c
-ms.topic: conceptual
+ms.topic: tutorial
 monikerRange: '<= azure-devops'
 ms.author: chcomley
 author: chcomley

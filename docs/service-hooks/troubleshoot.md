@@ -5,16 +5,17 @@ title: Troubleshoot Service Hook Integrations
 description: Find out how to access the history of service hook subscriptions in Azure DevOps. Get information about HTTP response failures that affect subscription states.
 ms.assetid: dcf00653-24c5-4ab6-b9e8-19ec098bbb66
 ms.custom: engagement-fy23
+ms.collection: ce-skilling-ai-copilot
 ms.author: chcomley
 author: chcomley
 monikerRange: '<= azure-devops'
-ms.date: 07/03/2025
+ms.date: 12/03/2025
 # customer intent: As a team member, I want to become familiar with service hook failure types and find out how to access the history of subscriptions so that I can troubleshoot problems with service hooks in Azure DevOps.
 ---
 
 # Troubleshoot service hooks
 
-[!INCLUDE [Azure DevOps Services | Azure DevOps Server 2022 | Azure DevOps Server 2020](../includes/version-gt-eq-2020.md)]
+[!INCLUDE [Azure DevOps Services | Azure DevOps Server 2022 | Azure DevOps Server 2020](../includes/version-lt-eq-azure-devops.md)]
 
 This article offers general troubleshooting guidance for Azure DevOps service hooks. It also provides answers to frequently asked questions (FAQs).
 
@@ -101,6 +102,21 @@ The following table lists approximate backoff times and total probation times fo
 | 7 | 15 hours | 36 |
 
 If the subscription receives a successful response while on probation, it gets restored to a fully enabled state, and events are published again. If all seven retries fail, the subscription state gets set to _DisabledBySystem_.
+
+## Use AI to troubleshoot a service hook
+
+The following example prompt for Copilot Chat helps Copilot troubleshoot your error code and message. Copy and paste this prompt into Copilot Chat, replacing the placeholder with your specific error message. 
+
+```copilot-prompt
+I'm getting this Azure DevOps service hook error: [PASTE YOUR ERROR MESSAGE HERE]
+
+Can you help me troubleshoot this issue? Please provide step-by-step instructions to:
+1. Identify the root cause
+2. Fix the issue
+3. Verify the solution works
+
+Context: This is for a service hook in Azure DevOps.
+```
 
 ## FAQs
 

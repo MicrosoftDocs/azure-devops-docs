@@ -11,9 +11,9 @@ ai-usage: ai-assisted
 
 # Use YAML templates in pipelines for reusable and secure processes
 
-[!INCLUDE [version-gt-eq-2019](../../includes/version-gt-eq-2019.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
-::: moniker range=">=azure-devops-2020"
+::: moniker range="<=azure-devops"
 
 Templates let you define reusable content, logic, and parameters in YAML pipelines. To work with templates effectively, you need to have a basic understanding of [Azure Pipelines key concepts](../get-started/key-pipelines-concepts.md) such as stages, steps, and jobs. 
 
@@ -34,8 +34,7 @@ To take full advantage of templates, you should also use [template expressions](
 |---|---|
 | **Azure DevOps** | - An [Azure DevOps project](../../organizations/projects/create-project.md).<br>   - An ability to run pipelines on Microsoft-hosted agents. You can either purchase a [parallel job](../licensing/concurrent-jobs.md) or you can request a free tier.  <br> - Basic knowledge of YAML and Azure Pipelines. For more information, see [Create your first pipeline](../create-first-pipeline.md). <br> - **Permissions:**<br>      &nbsp;&nbsp;&nbsp;&nbsp; - To create a pipeline: you must be in the **Contributors** group and the group needs to have *Create build pipeline* permission set to Allow. Members of the [Project Administrators group](../../organizations/security/permissions.md) can manage pipelines. <br> &nbsp;&nbsp;&nbsp;&nbsp;- To create service connections: You must have the *Administrator* or *Creator* role for [service connections](../library/add-resource-protection.md).
 | **GitHub** | - A [GitHub](https://github.com) account. <br>   - A [GitHub service connection](../library/service-endpoints.md) to authorize Azure Pipelines.|
-| **Azure** | An [Azure subscription](https://azure.microsoft.com/free/). |
-
+| **Azure** | An [Azure subscription](https://azure.microsoft.com/pricing/purchase-options/azure-account?cid=msft_learn). |
 
 ## Imposed limits on template updates
 
@@ -52,7 +51,7 @@ To help prevent runaway growth, Azure Pipelines imposes the following limits:
 
 ## Extend from a template
 
-::: moniker range=">=azure-devops-2020"
+::: moniker range="<=azure-devops"
 
 To increase security, you can enforce that a pipeline extends from a particular template. The file `start-extends-template.yml` defines the parameter `buildSteps`, which is then used in the pipeline `azure-pipelines.yml`. 
 In `start-extends-template.yml`, if a `buildStep` gets passed with a script step, then it's rejected and the pipeline build fails. 
@@ -141,7 +140,7 @@ steps:
 
 ## Insert a template
 
-::: moniker range=">=azure-devops-2020"
+::: moniker range="<=azure-devops"
 
 You can insert content from one YAML and reuse it in a different YAML. Inserting content from one YAML to another saves you from having to manually include the same logic in multiple places. The `insert-npm-steps.yml` file template contains steps that are reused in `azure-pipelines.yml`.  
 

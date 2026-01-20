@@ -10,6 +10,16 @@
       items:
         - name: "2025"
           items:
+          - name: December 19
+            href: 2025/sprint-266-update.md
+          - name: November 25
+            href: 2025/sprint-265-update.md
+          - name: November 4
+            href: 2025/sprint-264-update.md
+          - name: October 14
+            href: 2025/sprint-263-update.md
+          - name: September 25
+            href: 2025/sprint-262-update.md
           - name: September 4
             href: 2025/sprint-261-update.md
           - name: August 11
@@ -298,6 +308,10 @@
         items:
         - name: "2025"
           items:
+          - name: November 4
+            href: 2025/boards/sprint-264-update.md
+          - name: September 25
+            href: 2025/boards/sprint-262-update.md
           - name: September 4
             href: 2025/boards/sprint-261-update.md
           - name: August 11
@@ -468,6 +482,10 @@
         items:
         - name: "2025"
           items:
+          - name: December 19
+            href: 2025/repos/sprint-266-update.md
+          - name: November 25
+            href: 2025/repos/sprint-265-update.md
           - name: September 4
             href: 2025/repos/sprint-261-update.md
           - name: August 11
@@ -568,6 +586,16 @@
         items:
         - name: "2025"
           items:
+          - name: December 19
+            href: 2025/pipelines/sprint-266-update.md
+          - name: November 25
+            href: 2025/pipelines/sprint-265-update.md
+          - name: November 4
+            href: 2025/pipelines/sprint-264-update.md
+          - name: October 14
+            href: 2025/pipelines/sprint-263-update.md
+          - name: September 25
+            href: 2025/pipelines/sprint-262-update.md
           - name: June 16
             href: 2025/pipelines/sprint-257-update.md
           - name: May 16
@@ -798,12 +826,24 @@
         items:
         - name: "2025"
           items:
+          - name: December 19
+            href: 2025/testplans/sprint-266-update.md
+          - name: November 25
+            href: 2025/testplans/sprint-265-update.md
+          - name: November 4
+            href: 2025/testplans/sprint-264-update.md
+          - name: October 14
+            href: 2025/testplans/sprint-263-update.md
           - name: September 4
             href: 2025/testplans/sprint-261-update.md
+          - name: August 11
+            href: 2025/testplans/sprint-260-update.md
           - name: June 30
             href: 2025/testplans/sprint-258-update.md
           - name: June 16
             href: 2025/testplans/sprint-257-update.md
+          - name: May 19
+            href: 2025/testplans/sprint-256-update.md
           - name: April 3
             href: 2025/testplans/sprint-254-update.md
           - name: March 20
@@ -922,6 +962,12 @@
         items:
         - name: "2025"
           items:
+          - name: December 19
+            href: 2025/ghazdo/sprint-266-update.md
+          - name: November 4
+            href: 2025/ghazdo/sprint-264-update.md
+          - name: September 25
+            href: 2025/ghazdo/sprint-262-update.md
           - name: September 4
             href: 2025/ghazdo/sprint-261-update.md
           - name: August 11
@@ -985,6 +1031,8 @@
         items:
         - name: "2025"
           items:
+          - name: November 25
+            href: 2025/general/sprint-265-update.md
           - name: September 4
             href: 2025/general/sprint-261-update.md
           - name: August 11

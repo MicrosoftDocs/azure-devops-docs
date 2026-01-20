@@ -3,13 +3,14 @@ title: Securely use variables and parameters
 description: Find out how to safely accept input from pipeline users in Azure Pipelines.
 ms.assetid: ada3e166-c606-48b3-8e5e-7d83b1c1c962
 ms.date: 08/15/2025
-monikerRange: '>= azure-devops-2020'
+monikerRange: "<=azure-devops"
 #customer intent: As an Azure Pipeline administrator, I want to understand how to securely accept user input so I can avoid security risks from variable and parameter usage in my pipelines.
+ms.topic: best-practice
 ---
 
 # Securely use pipeline variables and parameters
 
-[!INCLUDE [version-gt-eq-2020](../../includes/version-gt-eq-2020.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 In Azure Pipelines, you can allow users to customize pipeline execution by collecting their input with variables and parameters. However, accepting user input can also introduce security risks if not handled properly. In this article, you learn how to securely use variables and parameters in your pipeline.
 

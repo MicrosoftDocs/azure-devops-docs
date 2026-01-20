@@ -5,16 +5,13 @@ description: Learn how to create work items and monitor work item activity in an
 ms.service: azure-devops
 ms.subservice: azure-devops-integration
 ms.topic: how-to
-ms.reviewer: karrg
-ms.author: karrg
+ms.author: chcomley
 author: chcomley
 monikerRange: 'azure-devops'
-ms.date: 08/13/2024
-ms.custom:
-  - cross-service
-  - sfi-image-nochange
+ms.date: 10/17/2025
+ms.custom: cross-service, sfi-image-nochange
 ---
- 
+
 # Use Azure Boards in Microsoft Teams
 
 [!INCLUDE [version-eq-azure-devops](../../includes/version-eq-azure-devops.md)] 
@@ -40,7 +37,6 @@ By using the Azure Boards app for Microsoft Teams, you can:
 |--------------|-------------|
 | **Access levels** | - **Contributor** for the project.<br> - Access to a team and channel in Microsoft Teams where you can install an app. |
 | **Permissions** | To create subscriptions in a Slack channel for work item events: Member of the [Project Administrators](../../organizations/security/change-project-level-permissions.md) or [Team Administrators](../../organizations/settings/add-team-administrator.md) group. |
-| **Policies** | To receive notifications: [**Third party application access via OAuth** policy enabled for the organization](../../organizations/accounts/change-application-access-policies.md). |
 
 ## Add the Azure Boards app to Teams
 
@@ -68,8 +64,8 @@ You can use the following `@azure boards` commands to interact with the Azure Bo
 
 | Command        | Functionality  |
 | -------------------- |----------------|
-|@azure boards sign in | Sign in to your Azure Boards organization.|
-|@azure boards sign out | Sign out from your Azure Boards organization.|
+|@azure boards signin | Sign in to your Azure Boards organization.|
+|@azure boards signout | Sign out from your Azure Boards organization.|
 |@azure boards link \<project url> |Link a project to this channel to create work items and receive notifications.|
 |@azure boards unlink| Unlink a project from this channel.|
 |@azure boards subscriptions | Add or remove subscriptions for this channel.|
@@ -183,6 +179,7 @@ To return to the channel and collapse the thread, select **Go to channel**.
 :::image type="content" source="media/integrations-teams/threads-boards-expanded-view.png" alt-text="Screenshot showing the expanded thread view.":::
 
 <a name="configure-azure-devops-services-tabs-in-microsoft-teams"></a>
+
 ## Configure Azure DevOps tabs
 
 To bring your project dashboard or Kanban board into Teams, you can install the Azure DevOps app in a tab in your Teams channel. The Azure DevOps app lets you insert content from the app in messages, and get notifications from the app in your channels.

@@ -3,15 +3,13 @@ title: Repeat a test with different data
 description: Learn about manual and exploratory testing. Repeat a test with different data in Azure Test Plans.
 ms.assetid: C9953A56-9BD6-408B-899B-FAD816B9FC0C
 ms.service: azure-devops-test-plans
-ms.topic: conceptual
+ms.topic: how-to
 ms.author: jeom
 author: rohit-batra
 monikerRange: '<= azure-devops'
 ms.date: 09/14/2021
 ms.update-cycle: 1095-days
-ms.custom:
-  - UpdateFrequency3
-  - sfi-image-nochange
+ms.custom: UpdateFrequency3, sfi-image-nochange
 ---
 
 # Repeat a test with different data
@@ -32,7 +30,7 @@ With shared steps and shared parameters, you can run multiple test cases with th
 
 ## Add parameters to a test case
 
-::: moniker range=">=azure-devops-2020"
+::: moniker range="<=azure-devops"
 
 Do the following steps to add parameters to your tests.
 
@@ -45,7 +43,7 @@ Do the following steps to add parameters to your tests.
 ::: moniker-end
 
 ## Share parameters between test cases
-::: moniker range=">=azure-devops-2020"
+::: moniker range="<=azure-devops"
 
 Do the following steps to convert existing parameters to shared parameters, so you can use them and the associated data in other test cases.
 
@@ -86,7 +84,7 @@ You can also copy the data from your grid back into Excel.
 ::: moniker-end
 
 ## Run a test case with parameters
-::: moniker range=">=azure-devops-2020"
+::: moniker range="<=azure-devops"
 Do the following steps to run a test case that uses parameters.
 
 1. Select a test case with parameters and start running it.
@@ -106,7 +104,7 @@ Do the following steps to run a test case that uses parameters.
 ::: moniker-end
 
 ## Review the test results 
-::: moniker range=">=azure-devops-2020"
+::: moniker range="<=azure-devops"
 
 The outcome of the test is based on a precedence hierarchy of all the iteration outcomes. The hierarchy order is Paused, Failed, Blocked, Passed, Not Applicable, and Unspecified (Active). For example, if you marked any iteration as *failed* and all the rest as *passed*, the outcome of the entire test shows as *failed*. This result is different from test cases that don't have parameters, where the outcome displays the status of the last run.
 

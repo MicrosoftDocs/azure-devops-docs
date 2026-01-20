@@ -6,7 +6,7 @@ ms.assetid: fcd84ee1-909c-4837-9c39-bf036afe6232
 toc: show
 ms.service: azure-devops-repos
 ms.custom: wiki, devdivchpfy22
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 06/13/2022
 monikerRange: '<= azure-devops'
 ms.subservice: azure-devops-repos-git

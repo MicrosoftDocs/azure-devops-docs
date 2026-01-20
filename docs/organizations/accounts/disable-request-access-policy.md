@@ -5,7 +5,7 @@ ms.custom:
 description: Learn how to stop your users from requesting access to your organization or project within your organization by disabling the Request Access policy.
 ms.subservice: azure-devops-organizations
 ms.assetid: 
-ms.topic: conceptual
+ms.topic: how-to
 ms.author: chcomley
 author: chcomley
 ms.date: 06/05/2025
@@ -17,6 +17,9 @@ monikerRange: 'azure-devops'
 [!INCLUDE [version-eq-azure-devops](../../includes/version-eq-azure-devops.md)]
 
 This article explains how to disable the 'Request Access' policy in Azure DevOps to prevent users from requesting access to your organization or projects. When this policy is enabled, users can request access, and administrators receive email notifications for review and approval. Disabling the policy stops these requests and notifications, helping you control access more tightly.
+
+>[!Note]
+> If you have a large number of administrators in your organization, only a subset of them will receive the access request email notifications when the 'Request Access' policy is enabled.
 
 ## Prerequisites
 
@@ -30,17 +33,14 @@ This article explains how to disable the 'Request Access' policy in Azure DevOps
 1. Sign in to your organization (```https://dev.azure.com/{Your_Organization}```).
 
 2. Choose ![gear icon](../../media/icons/gear-icon.png) **Organization settings**.
-
    ![Screenshot shows Choose the gear icon and Organization settings button.](../../media/settings/open-admin-settings-vert.png)
-
-3. Select **Policies**, find the 'Request Access' policy, and switch it to **Off**.
    
+3. Select **Policies**, find the 'Request Access' policy, and switch it to **Off**.
    ![Screenshot shows Disable the Request Access policy in Organization settings.](media/request-access-policy-settings.png)
-
+   
 4. Provide the URL to your internal process for gaining access.
-
    ![Screenshot shows prompt for entering the URL to your organization's internal process for gaining access.](media/disable-request-access-provide-url.png)
-
+   
 **Result:**
 
 When users try to access a project without the required permissions, the error message includes the **request access URL**. This link is shown on the error page to maintain confidentiality, regardless of whether the project exists.

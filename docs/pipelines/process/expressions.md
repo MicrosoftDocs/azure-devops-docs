@@ -1,19 +1,21 @@
 ---
 title: Expressions
-description: Learn about how you can use expressions in Azure Pipelines.
-ms.topic: conceptual
+description: Discover how to use expressions in Azure Pipelines. Define conditions, evaluate variables, and streamline your CI/CD workflows with this guide.
+ms.topic: concept-article
 ms.assetid: 4df37b09-67a8-418e-a0e8-c17d001f0ab3
-ms.date: 11/18/2024
+ms.date: 01/09/2026
+ms.author: jukullam
+author: juliakm
 monikerRange: "<=azure-devops"
 ---
 
 # Expressions
 
-[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-gt-eq-2019.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 [!INCLUDE [version-selector](../../includes/version-selector.md)]
 
-Expressions can be used in many places where you need to specify a string, boolean, or number value when authoring a pipeline. When an expression returns an array, normal indexing rules apply and the index starts with `0`. 
+Use expressions when you need to specify a string, boolean, or number value while authoring a pipeline. When an expression returns an array, normal indexing rules apply and the index starts with `0`. 
 
 The most common use of expressions is in [conditions](conditions.md) to determine whether a job or step should run. 
 
@@ -26,8 +28,8 @@ steps:
 ```
 
 Another common use of expressions is in defining variables.
-Expressions can be evaluated at [compile time](runs.md#process-the-pipeline) or at [run time](runs.md#run-each-step).
-Compile time expressions can be used anywhere; runtime expressions can be used in variables and conditions. Runtime expressions are intended as a way to compute the contents of variables and state (example: `condition`). 
+You can evaluate expressions at [compile time](runs.md#process-the-pipeline) or at [run time](runs.md#run-each-step).
+Use compile time expressions anywhere; use runtime expressions in variables and conditions. Use runtime expressions to compute the contents of variables and state (example: `condition`). 
 
 ```yaml
 # Two examples of expressions used to define variables
@@ -60,7 +62,7 @@ steps:
 
 ::: moniker-end
 
-An expression can be a literal, a reference to a variable, a reference to a dependency, a function, or a valid nested combination of these.
+An expression can be a literal, a reference to a variable, a reference to a dependency, a function, or a valid nested combination of these types.
 
 ## Literals
 
@@ -106,60 +108,60 @@ For example: `1.2.3.4`.
 
 ## Variables
 
-As part of an expression, you may access variables using one of two syntaxes:
+As part of an expression, you can access variables by using one of two syntaxes:
 
 * Index syntax: `variables['MyVar']`
 * Property dereference syntax: `variables.MyVar`
 
-In order to use property dereference syntax, the property name must:
+To use property dereference syntax, the property name must:
 - Start with `a-Z` or `_`
-- Be followed by `a-Z` `0-9` or `_`
+- Be followed by `a-Z`, `0-9`, or `_`
 
-Depending on the execution context, different variables are available.
+Different variables are available depending on the execution context.
 - If you create pipelines using YAML, then [pipeline variables](../build/variables.md) are available.
 - If you create build pipelines using classic editor, then [build variables](../build/variables.md) are available.
 - If you create release pipelines using classic editor, then [release variables](../release/variables.md) are available.
 
-Variables are always strings. If you want to use typed values, then you should use [parameters](runtime-parameters.md) instead.
+Variables are always strings. If you want to use typed values, use [parameters](runtime-parameters.md).
 
 > [!NOTE]
 > There is a limitation for using variables with expressions for both Classical and YAML pipelines when setting up such variables via variables tab UI. Variables that are defined as expressions shouldn't depend on another variable with expression in value since **it isn't guaranteed** that both expressions will be evaluated properly. For example we have variable `a` whose value `$[ <expression> ]` is used as a part for the value of variable `b`. Since the order of processing variables isn't guaranteed variable `b` could have an incorrect value of variable `a` after evaluation.
 >
-> Described constructions are only allowed while setup variables through [variables keyword](./variables.md#set-variables-in-pipeline) in YAML pipeline. It is required to place the variables in the order they should be processed to get the correct values after processing.
+> You can only use these constructions when you set up variables through the [variables keyword](./variables.md#set-variables-in-pipeline) in a YAML pipeline. You need to place the variables in the order they should be processed to get the correct values after processing.
 
 ## Functions
 
-The following built-in functions can be used in expressions.
+You can use the following built-in functions in expressions.
 
 ### and
-* Evaluates to `True` if all parameters are `True`
-* Min parameters: 2. Max parameters: N
-* Casts parameters to Boolean for evaluation
-* Short-circuits after first `False`
+* Evaluates to `True` if all parameters are `True`.
+* Minimum parameters: 2. Maximum parameters: N.
+* Casts parameters to Boolean for evaluation.
+* Short-circuits after first `False`.
 * Example: `and(eq(variables.letters, 'ABC'), eq(variables.numbers, 123))`
 
 ::: moniker range="<=azure-devops"
 
 ### coalesce
-* Evaluates the parameters in order (left to right), and returns the first value that doesn't equal null or empty-string.
-* No value is returned if the parameter values all are null or empty strings.
-* Min parameters: 2. Max parameters: N
+* Evaluates the parameters in order (left to right), and returns the first value that isn't null or an empty string.
+* Returns no value if all parameter values are null or empty strings.
+* Minimum parameters: 2. Maximum parameters: N.
 * Example: `coalesce(variables.couldBeNull, variables.couldAlsoBeNull, 'literal so it always works')`
 
 ::: moniker-end
 
 ### contains
-* Evaluates `True` if left parameter String contains right parameter
-* Min parameters: 2. Max parameters: 2
-* Casts parameters to String for evaluation
-* Performs ordinal ignore-case comparison
-* Example: `contains('ABCDE', 'BCD')` (returns True)
+* Evaluates to `True` if the left parameter string contains the right parameter.
+* Minimum parameters: 2. Maximum parameters: 2.
+* Casts parameters to string for evaluation.
+* Performs ordinal ignore-case comparison.
+* Example: `contains('ABCDE', 'BCD')` (returns True).
 
 ### containsValue
 * Evaluates `True` if the left parameter is an array, and any item equals the right parameter. Also evaluates `True` if the left parameter is an object, and the value of any property equals the right parameter.
-* Min parameters: 2. Max parameters: 2
+* Minimum parameters: 2. Maximum parameters: 2.
 * If the left parameter is an array, convert each item to match the type of the right parameter. If the left parameter is an object, convert the value of each property to match the type of the right parameter.  The equality comparison for each specific item evaluates `False` if the conversion fails.
-* Ordinal ignore-case comparison for Strings
+* Ordinal ignore-case comparison for strings.
 * Short-circuits after the first match
 
 > [!NOTE]
@@ -229,13 +231,13 @@ Script output:
 ```
 
 ### counter
-* This function can only be used in an expression that defines a variable. It can't be used as part of a condition for a step, job, or stage.
-* Evaluates a number that is incremented with each run of a pipeline.
-* Parameters: 2. `prefix` and `seed`.
-* Prefix is a string expression. A separate value of counter is tracked for each unique value of prefix. The `prefix` should use UTF-16 characters.
-* Seed is the starting value of the counter
+* Use this function only in an expression that defines a variable. Don't use it as part of a condition for a step, job, or stage.
+* Evaluates a number that increments with each run of a pipeline.
+* Takes two parameters: `prefix` and `seed`.
+* `prefix` is a string expression. The function tracks a separate counter value for each unique `prefix`. Use UTF-16 characters in the `prefix`.
+* `seed` is the starting value of the counter.
 
-You can create a counter that is automatically incremented by one in each execution of your pipeline. When you define a counter, you provide a `prefix` and a `seed`. Here's an example that demonstrates this. 
+You can create a counter that automatically increments by one each time your pipeline runs. When you define a counter, provide a `prefix` and a `seed`. The following example demonstrates this concept. 
 
 ```yaml
 variables:
@@ -247,17 +249,17 @@ steps:
 - bash: echo $(minor)
 ```
 
-The value of `minor` in the above example in the first run of the pipeline is 100. In the second run it is 101, provided the value of `major` is still 1.
+The value of `minor` in the preceding example is 100 during the first run of the pipeline. In the second run, the value is 101, as long as the value of `major` remains 1.
 
-If you edit the YAML file, and update the value of the variable `major` to be 2, then in the next run of the pipeline, the value of `minor` will be 100. Subsequent runs increment the counter to 101, 102, 103, ...
+If you edit the YAML file and update the value of the variable `major` to 2, the value of `minor` is 100 in the next run of the pipeline. Subsequent runs increment the counter to 101, 102, 103, and so on.
 
-Later, if you edit the YAML file, and set the value of `major` back to 1, then the value of the counter resumes where it left off for that prefix. In this example, it resumes at 102.
+If you later edit the YAML file and set the value of `major` back to 1, the counter value resumes where it left off for that prefix. In this example, it resumes at 102.
 
-Here's another example of setting a variable to act as a counter that starts at 100, gets incremented by 1 for every run, and gets reset to 100 every day.
+The following example shows how to set a variable to act as a counter that starts at 100, increments by 1 for every run, and resets to 100 every day.
 
 > [!NOTE]
-> `pipeline.startTime` is not available outside of expressions. `pipeline.startTime`
->  formats `system.pipelineStartTime` into a date and time object so that it is available to work with expressions.
+> `pipeline.startTime` isn't available outside of expressions. `pipeline.startTime`
+>  formats `system.pipelineStartTime` into a date and time object so that expressions can use it.
 > The default time zone for `pipeline.startTime` is UTC. You can [change the time zone](../../organizations/accounts/change-time-zone.md) for your organization.
 
 ```yaml
@@ -269,29 +271,29 @@ jobs:
   - bash: echo $(a)
 ```
 
-Here's an example of having a counter that maintains a separate value for PRs and CI runs.
+The following example shows a counter that maintains a separate value for PRs and CI runs.
 
 ```yaml
 variables:
   patch: $[counter(variables['build.reason'], 0)]
 ```
 
-Counters are scoped to a pipeline. In other words, its value is incremented for each run of that pipeline. There are no project-scoped counters.
+Counters are scoped to a pipeline. In other words, the pipeline increments the counter value for each run. No counters are project-scoped.
 
 ::: moniker-end
 
 ### endsWith
 * Evaluates `True` if left parameter String ends with right parameter
-* Min parameters: 2. Max parameters: 2
-* Casts parameters to String for evaluation
-* Performs ordinal ignore-case comparison
+* Minimum parameters: 2. Maximum parameters: 2.
+* Casts parameters to string for evaluation.
+* Performs ordinal ignore-case comparison.
 * Example: `endsWith('ABCDE', 'DE')` (returns True)
 
 ### eq
 * Evaluates `True` if parameters are equal
-* Min parameters: 2. Max parameters: 2
+* Minimum parameters: 2. Maximum parameters: 2.
 * Converts right parameter to match type of left parameter. Returns `False` if conversion fails.
-* Ordinal ignore-case comparison for Strings
+* Ordinal ignore-case comparison for strings.
 * Example: `eq(variables.letters, 'ABC')`
 
 ::: moniker range="<=azure-devops"
@@ -308,23 +310,23 @@ Counters are scoped to a pipeline. In other words, its value is incremented for 
 
 ### ge
 * Evaluates `True` if left parameter is greater than or equal to the right parameter
-* Min parameters: 2. Max parameters: 2
+* Minimum parameters: 2. Maximum parameters: 2.
 * Converts right parameter to match type of left parameter. Errors if conversion fails.
-* Ordinal ignore-case comparison for Strings
+* Ordinal ignore-case comparison for strings.
 * Example: `ge(5, 5)` (returns True)
 
 ### gt
 * Evaluates `True` if left parameter is greater than the right parameter
-* Min parameters: 2. Max parameters: 2
+* Minimum parameters: 2. Maximum parameters: 2.
 * Converts right parameter to match type of left parameter. Errors if conversion fails.
-* Ordinal ignore-case comparison for Strings
+* Ordinal ignore-case comparison for strings.
 * Example: `gt(5, 2)` (returns True)
 
 ### in
 * Evaluates `True` if left parameter is equal to any right parameter
 * Min parameters: 1. Max parameters: N
 * Converts right parameters to match type of left parameter. Equality comparison evaluates `False` if conversion fails.
-* Ordinal ignore-case comparison for Strings
+* Ordinal ignore-case comparison for strings.
 * Short-circuits after first match
 * Example: `in('B', 'A', 'B', 'C')` (returns True)
 
@@ -340,7 +342,7 @@ Counters are scoped to a pipeline. In other words, its value is incremented for 
 
 ### join
 * Concatenates all elements in the right parameter array, separated by the left parameter string.
-* Min parameters: 2. Max parameters: 2
+* Minimum parameters: 2. Maximum parameters: 2.
 * Each element in the array is converted to a string. Complex objects are converted to empty string.
 * If the right parameter isn't an array, the result is the right parameter converted to a string.
 
@@ -366,37 +368,37 @@ steps:
 
 ### le
 * Evaluates `True` if left parameter is less than or equal to the right parameter
-* Min parameters: 2. Max parameters: 2
+* Minimum parameters: 2. Maximum parameters: 2.
 * Converts right parameter to match type of left parameter. Errors if conversion fails.
-* Ordinal ignore-case comparison for Strings
+* Ordinal ignore-case comparison for strings.
 * Example: `le(2, 2)` (returns True)
 
 ### length
 * Returns the length of a string or an array, either one that comes from the system or that comes from a parameter
-* Min parameters: 1. Max parameters 1
-* Example: `length('fabrikam')` returns 8
+* Minimum parameters: 1. Maximum parameters: 1.
+* Example: `length('fabrikam')` returns 8.
 
 ::: moniker range="<=azure-devops"
 ### lower
-* Converts a string or variable value to all lowercase characters
-* Min parameters: 1. Max parameters 1
-* Returns the lowercase equivalent of a string
-* Example: `lower('FOO')` returns `foo`
+* Converts a string or variable value to all lowercase characters.
+* Minimum parameters: 1. Maximum parameters: 1.
+* Returns the lowercase equivalent of a string.
+* Example: `lower('FOO')` returns `foo`.
 ::: moniker-end
 
 ### lt
-* Evaluates `True` if left parameter is less than the right parameter
-* Min parameters: 2. Max parameters: 2
+* Evaluates `True` if left parameter is less than the right parameter.
+* Minimum parameters: 2. Maximum parameters: 2.
 * Converts right parameter to match type of left parameter. Errors if conversion fails.
-* Ordinal ignore-case comparison for Strings
+* Ordinal ignore-case comparison for strings.
 * Example: `lt(2, 5)` (returns True)
 
 ### ne
 * Evaluates `True` if parameters are not equal
-* Min parameters: 2. Max parameters: 2
+* Minimum parameters: 2. Maximum parameters: 2.
 * Converts right parameter to match type of left parameter. Returns `True` if conversion fails.
-* Ordinal ignore-case comparison for Strings
-* Example: `ne(1, 2)` (returns True)
+* Ordinal ignore-case comparison for strings.
+* Example: `ne(1, 2)` returns `True`.
 
 ### not
 * Evaluates `True` if parameter is `False`
@@ -408,33 +410,33 @@ steps:
 * Evaluates `True` if left parameter isn't equal to any right parameter
 * Min parameters: 1. Max parameters: N
 * Converts right parameters to match type of left parameter. Equality comparison evaluates `False` if conversion fails.
-* Ordinal ignore-case comparison for Strings
+* Ordinal ignore-case comparison for strings.
 * Short-circuits after first match
 * Example: `notIn('D', 'A', 'B', 'C')` (returns True)
 
 ### or
 * Evaluates `True` if any parameter is `True`
-* Min parameters: 2. Max parameters: N
-* Casts parameters to Boolean for evaluation
+* Minimum parameters: 2. Maximum parameters: N.
+* Casts parameters to Boolean for evaluation.
 * Short-circuits after first `True`
 * Example: `or(eq(1, 1), eq(2, 3))` (returns True, short-circuits)
 
 ::: moniker range="<=azure-devops"
 ### replace
-* Returns a new string in which all instances of a string in the current instance are replaced with another string
-* Min parameters: 3. Max parameters: 3
-* `replace(a, b, c)`: returns a, with all instances of b replaced by c
-* Example: `replace('https://www.tinfoilsecurity.com/saml/consume','https://www.tinfoilsecurity.com','http://server')` (returns `http://server/saml/consume`)
+* Returns a new string in which all instances of a string in the current instance are replaced with another string.
+* Minimum parameters: 3. Maximum parameters: 3.
+* `replace(a, b, c)`: returns `a`, with all instances of `b` replaced by `c`.
+* Example: `replace('https://www.tinfoilsecurity.com/saml/consume','https://www.tinfoilsecurity.com','http://server')` (returns `http://server/saml/consume`).
 ::: moniker-end
 
 ::: moniker range=">= azure-devops-2022"
 
 ### split
-* Splits a string into substrings based on the specified delimiting characters 
-* Min parameters: 2. Max parameters: 2
-* The first parameter is the string to split
-* The second parameter is the delimiting characters
-* Returns an array of substrings. The array includes empty strings when the delimiting characters appear consecutively or at the end of the string
+* Splits a string into substrings based on the specified delimiting characters. 
+* Minimum parameters: 2. Maximum parameters: 2.
+* The first parameter is the string to split.
+* The second parameter is the delimiting characters.
+* Returns an array of substrings. The array includes empty strings when the delimiting characters appear consecutively or at the end of the string.
 * Example:
   ```yml
   variables:
@@ -471,10 +473,10 @@ steps:
 
 ### startsWith
 * Evaluates `True` if left parameter string starts with right parameter
-* Min parameters: 2. Max parameters: 2
-* Casts parameters to String for evaluation
-* Performs ordinal ignore-case comparison
-* Example: `startsWith('ABCDE', 'AB')` (returns True)
+* Minimum parameters: 2. Maximum parameters: 2.
+* Casts parameters to string for evaluation.
+* Performs ordinal ignore-case comparison.
+* Example: `startsWith('ABCDE', 'AB')` (returns True).
 
 ::: moniker range=">= azure-devops"
 ### trim
@@ -486,67 +488,60 @@ steps:
 ::: moniker range="<=azure-devops"
 ### upper
 * Converts a string or variable value to all uppercase characters
-* Min parameters: 1. Max parameters 1
+* Minimum parameters: 1. Maximum parameters: 1.
 * Returns the uppercase equivalent of a string
 * Example: `upper('bah')` returns `BAH`
 ::: moniker-end
 
 ### xor
 * Evaluates `True` if exactly one parameter is `True`
-* Min parameters: 2. Max parameters: 2
-* Casts parameters to Boolean for evaluation
+* Minimum parameters: 2. Maximum parameters: 2.
+* Casts parameters to Boolean for evaluation.
 * Example: `xor(True, False)` (returns True)
 
 <h2 id="job-status-functions">Job status check functions</h2>
 
-You can use the following status check functions as expressions in conditions, but not in variable definitions.
+Use the following status check functions as expressions in conditions, but not in variable definitions.
 
 <h3 id="always">always</h3>
 
-* Always evaluates to `True` (even when canceled). Note: A critical failure may still prevent a task from running. For example, if getting sources failed.
+* Always evaluates to `True` (even when canceled). Note: A critical failure might still prevent a task from running. For example, if getting sources failed.
 
 ### canceled
-* Evaluates to `True` if the pipeline was canceled.
+* Evaluates to `True` if the pipeline is canceled.
 
 ### failed
 * For a step, equivalent to `eq(variables['Agent.JobStatus'], 'Failed')`.
 * For a job:
-  * With no arguments, evaluates to `True` only if any previous job in the dependency graph failed.
-  * With job names as arguments, evaluates to `True` only if any of those jobs failed.
+  * With no arguments, evaluates to `True` if any previous job in the dependency graph failed.
+  * With job names as arguments, evaluates to `True` if any of those jobs failed.
 
 ### succeeded
-* For a step, equivalent to `in(variables['Agent.JobStatus'], 'Succeeded', 'SucceededWithIssues')`
-* Use with `dependsOn` when working with jobs and you want to evaluate whether a previous job was successful. Jobs are designed to run in parallel while stages run sequentially.
+* For a step, equivalent to `in(variables['Agent.JobStatus'], 'Succeeded', 'SucceededWithIssues')`.
+* Use with `dependsOn` when working with jobs and you want to check if a previous job was successful. Jobs run in parallel, while stages run sequentially.
 * For a job:
-  * With no arguments, evaluates to `True` only if all previous jobs in the dependency graph succeeded or partially succeeded.
+  * With no arguments, evaluates to `True` if all previous jobs in the dependency graph succeeded or partially succeeded.
   * With job names as arguments, evaluates to `True` if all of those jobs succeeded or partially succeeded.
   * Evaluates to `False` if the pipeline is canceled.
 
 ### succeededOrFailed
-* For a step, equivalent to `in(variables['Agent.JobStatus'], 'Succeeded', 'SucceededWithIssues', 'Failed')`
+* For a step, equivalent to `in(variables['Agent.JobStatus'], 'Succeeded', 'SucceededWithIssues', 'Failed')`.
 * For a job:
   * With no arguments, evaluates to `True` regardless of whether any jobs in the dependency graph succeeded or failed.
   * With job names as arguments, evaluates to `True` whether any of those jobs succeeded or failed.
-  * You may want to use `not(canceled())` instead when there are previous skipped jobs in the dependency graph. 
+  * You might want to use `not(canceled())` instead when previous jobs in the dependency graph are skipped. 
 
-  > This is like `always()`, except it will evaluate `False` when the pipeline is canceled.
+  > This function is like `always()`, except it evaluates to `False` when the pipeline is canceled.
 
 ## Conditional insertion
 
 ::: moniker range=">=azure-devops-2022"
-You can use `if`, `elseif`, and `else` clauses to conditionally assign variable values or set inputs for tasks. You can also conditionally run a step when a condition is met.
+Use `if`, `elseif`, and `else` clauses to conditionally assign variable values or set inputs for tasks. You can also conditionally run a step when a condition is met.
 ::: moniker-end
 
-::: moniker range="< azure-devops-2022"
-You can use `if`  to conditionally assign variable values or set inputs for tasks. You can also conditionally run a step when a condition is met.
+Conditionals only work when you use template syntax. For more information, see [variable syntax](variables.md#understand-variable-syntax).
 
-The `elseif` and `else` clauses are available starting with Azure DevOps 2022 and aren't available for Azure DevOps Server 2020 and earlier versions of Azure DevOps.
-
-::: moniker-end
-
-Conditionals only work when using template syntax. Learn more about [variable syntax](variables.md#understand-variable-syntax).
-
-For templates, you can use conditional insertion when adding a sequence or mapping. Learn more about [conditional insertion in templates](templates.md).
+For templates, you can use conditional insertion when adding a sequence or mapping. For more information, see [conditional insertion in templates](templates.md).
 
 ### Conditionally assign a variable
 ```yml
@@ -581,7 +576,7 @@ steps:
 
 ### Conditionally run a step
 
-If there's no variable set, or the value of `foo` doesn't match the `if` conditions, the `else` statement runs. Here the value of `foo` returns true in the `elseif` condition.
+If there's no variable set, or the value of `foo` doesn't match the `if` conditions, the `else` statement runs. In this example, the value of `foo` returns true in the `elseif` condition.
 
 ```yaml
 variables:
@@ -602,11 +597,11 @@ steps:
 ```
 ::: moniker-end
 
-::: moniker range=">=azure-devops-2020"
+::: moniker range="<=azure-devops"
 
 ## Each keyword
 
-You can use the `each` keyword to loop through parameters with the object type.
+Use the `each` keyword to loop through parameters with the object type.
 
 ```yaml
 parameters:
@@ -621,7 +616,7 @@ steps:
   - script: echo ${{ value }}
 ```
 
-Additionally, you can iterate through nested elements within an object.
+You can also iterate through nested elements within an object.
 
 ```yaml
 parameters:
@@ -640,7 +635,7 @@ steps:
 
 ## Dependencies
 
-Expressions can use the dependencies context to reference previous jobs or stages. You can use dependencies to:
+Expressions can use the dependencies context to reference previous jobs or stages. Use dependencies to:
 
 * Reference the job status of a previous job
 * Reference the stage status of a previous stage
@@ -651,7 +646,7 @@ Expressions can use the dependencies context to reference previous jobs or stage
 The context is called `dependencies` for jobs and stages and works much like variables.
 If you refer to an output variable from a job in another stage, the context is called `stageDependencies`.
 
-If you experience issues with output variables having quote characters (`'` or `"`) in them, see [this troubleshooting guide](../troubleshooting/troubleshooting.md#variables-having--single-quote-appended).
+If you experience problems with output variables having quote characters (`'` or `"`) in them, see [this troubleshooting guide](../troubleshooting/troubleshooting.md#variables-having--single-quote-appended).
 
 ### Dependency syntax overview
 
@@ -716,11 +711,11 @@ The syntax of referencing output variables with dependencies varies depending on
     :::column-end:::
 :::row-end:::
 
-There are also different syntaxes for output variables in deployment jobs depending on the deployment strategy. For more information, see [Deployment jobs](deployment-jobs.md#support-for-output-variables).
+The syntax for output variables in deployment jobs varies depending on the deployment strategy. For more information, see [Deployment jobs](deployment-jobs.md#support-for-output-variables).
 
 ### Stage to stage dependencies
 Structurally, the `dependencies` object is a map of job and stage names to `results` and `outputs`.
-Expressed as JSON, it would look like:
+Expressed as JSON, it looks like:
 
 ```json
 "dependencies": {
@@ -737,11 +732,11 @@ Expressed as JSON, it would look like:
 ```
 
 > [!NOTE]
-> The following examples use standard pipeline syntax. If you're using deployment pipelines, both variable and conditional variable syntax will differ. For information about the specific syntax to use, see [Deployment jobs](deployment-jobs.md).
+> The following examples use standard pipeline syntax. If you're using deployment pipelines, both variable and conditional variable syntax differ. For information about the specific syntax to use, see [Deployment jobs](deployment-jobs.md).
 
 Use this form of `dependencies` to map in variables or check conditions at a stage level.
 
-In this example, there are two stages, A and B. Stage A has the condition `false` and won't ever run as a result. Stage B runs if the result of Stage A is `Succeeded`, `SucceededWithIssues`, or `Skipped`. Stage B runs because Stage A was skipped.
+In this example, two stages exist, A and B. Stage A has the condition `false` and doesn't run. Stage B runs if the result of Stage A is `Succeeded`, `SucceededWithIssues`, or `Skipped`. Stage B runs because Stage A was skipped.
 
 ```yaml
 stages:
@@ -760,7 +755,7 @@ stages:
 ```
 
 Stages can also use output variables from another stage.
-In this example, there are also two stages. Stage A includes a job, A1, that sets an output variable `shouldrun` to `true`. Stage B runs when `shouldrun` is `true`. Because `shouldrun` is `true`, Stage B runs.
+In this example, two stages exist. Stage A includes a job, A1, that sets an output variable `shouldrun` to `true`. Stage B runs when `shouldrun` is `true`. Because `shouldrun` is `true`, Stage B runs.
 
 ```yaml
 stages:
@@ -786,7 +781,7 @@ stages:
 > By default, each stage in a pipeline depends on the one just before it in the YAML file.
 > If you need to refer to a stage that isn't immediately prior to the current one, you can override this automatic default by adding a `dependsOn` section to the stage.
 
-### Job to job dependencies within one stage
+### Job-to-job dependencies within one stage
 
 At the job level within a single stage, the `dependencies` data doesn't contain stage-level information.
 
@@ -804,8 +799,8 @@ At the job level within a single stage, the `dependencies` data doesn't contain 
 }
 ```
 
-In this example, there are three jobs (a, b, and c). Job a will always be skipped because of `condition: false`.
-Job b runs because there are no associated conditions.
+In this example, there are three jobs (a, b, and c). Job a is always skipped because of `condition: false`.
+Job b runs because it has no associated conditions.
 Job c runs because all of its dependencies either succeed (job b) or are skipped (job a).
 
 ```yaml
@@ -850,7 +845,7 @@ jobs:
 ```
 
 ::: moniker-end
-::: moniker range=">=azure-devops-2020"
+::: moniker range="<=azure-devops"
 
 ### Job to job dependencies across stages
 
@@ -904,7 +899,7 @@ stages:
 ```
 ::: moniker-end
 
-::: moniker range=">=azure-devops-2020"
+::: moniker range="<=azure-devops"
 
 If a job depends on a variable defined by a deployment job in a different stage, then the syntax is different. In the following example, the job `run_tests` runs if the `build_job` deployment job set `runTests` to `true`. Notice that the key used for the `outputs` dictionary is `build_job.setRunTests.runTests`.
 
@@ -941,7 +936,7 @@ stages:
 
 ::: moniker-end
 
-::: moniker range=">=azure-devops-2020"
+::: moniker range="<=azure-devops"
 
 ### Deployment job output variables
 
@@ -1017,9 +1012,9 @@ stages:
 
 ## Filtered arrays
 
-When operating on a collection of items, you can use the `*` syntax to apply a filtered array. A filtered array returns all objects/elements regardless their names.
+When you work with a collection of items, use the `*` syntax to apply a filtered array. A filtered array returns all objects or elements regardless of their names.
 
-As an example, consider an array of objects named `foo`. We want to get an array of the values of the `id` property in each object in our array.
+For example, consider an array of objects named `foo`. You want to get an array of the values of the `id` property in each object in your array.
 
 ```json
 [
@@ -1029,13 +1024,13 @@ As an example, consider an array of objects named `foo`. We want to get an array
 ]
 ```
 
-We could do the following:
+Use the following expression:
 
 `foo.*.id`
 
-This tells the system to operate on `foo` as a filtered array and then select the `id` property.
+This expression tells the system to treat `foo` as a filtered array and then select the `id` property from each object.
 
-This would return:
+This expression returns:
 
 ```json
 [ 1, 2, 3 ]
@@ -1043,10 +1038,10 @@ This would return:
 
 ## Type casting
 
-Values in an expression may be converted from one type to another as the expression gets evaluated.
-When an expression is evaluated, the parameters are coalesced to the relevant data type and then turned back into strings.
+Values in an expression might be converted from one type to another as the expression gets evaluated.
+When you evaluate an expression, the process converts parameters to the relevant data type and then turns them back into strings.
 
-For example, in this YAML, the values `True` and `False` are converted  to `1` and `0` when the expression is evaluated.
+For example, in this YAML, the values `True` and `False` convert to `1` and `0` when the expression is evaluated.
 The function `lt()` returns `True` when the left parameter is less than the right parameter.
 
 ```yaml
@@ -1072,7 +1067,7 @@ steps:
 ```
 
 In this next example, the values `variables.emptyString` and the empty string both evaluate as empty strings.
-The function `coalesce()` evaluates the parameters in order, and returns the first value that doesn't equal null or empty-string.
+The function `coalesce()` evaluates the parameters in order, and returns the first value that isn't null or an empty string.
 
 ```yaml
 variables:
@@ -1132,10 +1127,10 @@ runs C#'s `Version.TryParse`. Must contain Major and Minor component at minimum.
 
 <!-- BEGINSECTION class="md-qanda" -->
 
-### I want to do something that isn't supported by expressions. What options do I have for extending Pipelines functionality?
+### I want to do something that expressions don't support. What options do I have for extending Pipelines functionality?
 
-You can customize your Pipeline with a script that includes an expression. For example, this snippet takes the `BUILD_BUILDNUMBER` variable and splits it with Bash. This script outputs two new variables, `$MAJOR_RUN` and `$MINOR_RUN`, for the major and minor run numbers.
-The two variables are then used to create two pipeline variables, `$major` and `$minor` with [task.setvariable](../scripts/logging-commands.md#task-commands). These variables are available to downstream steps. To share variables across pipelines see [Variable groups](../../pipelines/library/variable-groups.md).
+You can customize your pipeline by using a script that includes an expression. For example, this snippet takes the `BUILD_BUILDNUMBER` variable and splits it by using Bash. This script outputs two new variables, `$MAJOR_RUN` and `$MINOR_RUN`, for the major and minor run numbers.
+The two variables are then used to create two pipeline variables, `$major` and `$minor` by using [task.setvariable](../scripts/logging-commands.md#task-commands). These variables are available to downstream steps. To share variables across pipelines see [Variable groups](../../pipelines/library/variable-groups.md).
 
 ```yaml
 steps:

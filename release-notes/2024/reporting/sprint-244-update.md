@@ -4,6 +4,7 @@ description: See the Sprint 244 feature updates for Reporting, including next st
 author: ckanyika
 ms.author: glmorale
 ms.date: 9/4/2024
+ms.topic: release-notes
 ---
 
 # Reporting - Sprint 244 Update

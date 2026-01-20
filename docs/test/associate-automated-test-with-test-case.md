@@ -7,7 +7,7 @@ ms.custom: UpdateFrequency3
 ms.topic: how-to
 ms.author: jeom
 author: rohit-batra
-ms.date: 01/28/2025
+ms.date: 11/03/2025
 ms.update-cycle: 1095-days
 monikerRange: '<= azure-devops'
 ---
@@ -85,6 +85,16 @@ For more information, see the following articles:
    > [!div class="mx-imgBorder"]
    > ![Screenshot showing the process of associating an automated test to a test case within a CI/CD pipeline interface.](media/associate-automated-test-with-test-case/associate-automated-test-to-test-case-pipelines.png)
 
+### Associate your test from a work item 
+
+1.  Open any test case and go to the **Associated Automation** tab. 
+2.  Select **Browse**. 
+3.  From the side panel, choose the pipeline and the specific run where the test was previously executed.
+4.  Choose the test you want to associate to the work item and select **Associate test**.
+
+   > [!div class="mx-imgBorder"]
+   > ![Screenshot showing associating an automated test to a test case within a CI/CD pipeline interface.](media/associate-automated-test-with-test-case/associate-automated-test-to-test-case-work-item.png)
+
 After you associate your automated tests with their corresponding test cases, you can utilize the [Azure Test Plan task](/azure/devops/pipelines/tasks/reference/azure-test-plan-v0) to execute them as part of a pipeline.
 
 ## FAQs about associating automated tests
@@ -113,6 +123,15 @@ Tests that use the .NET core framework **can** be associated with a test case
   work item when using Visual Studio 15.9 Preview 2 or later.
   Run the .NET core tests. The appropriate target framework must be specified
   in a [.runsettings file](/visualstudio/test/configure-unit-tests-by-using-a-dot-runsettings-file?).
+
+<a name="xaml-build"></a>
+
+### Q: How can I use the "Automation Status" field on the test case?
+The Automation Status field on the test case work item reflects whether the test case is linked to an automated test method. Although the field supports three values: Not Automated, Planned, and Automated - the availability of these values depends on whether the test case has an associated automation method.
+- **Not Automated / Planned:** Shown only when the test case has no associated test method.
+- **Automated:** Shown only when the test case has associated test method.
+
+If the default values don’t match the state of your test cases, you can create a custom [pick-list field](https://www.learn.microsoft.com/en-us/azure/devops/organizations/settings/work/customize-process-field?view=azure-devops#add-a-picklist) on the Test Case work item type and define values that better align with your organization’s needs.
 
 <a name="xaml-build"></a>
 

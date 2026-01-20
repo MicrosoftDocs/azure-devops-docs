@@ -6,14 +6,14 @@ ms.custom: pipelinesresourcesrefresh
 ms.assetid: b318851c-4240-4dc2-8688-e70aba1cec55
 ms.manager: mijacobs
 ms.date: 09/08/2025
-monikerRange: '>= azure-devops-2020'
+monikerRange: "<=azure-devops"
 #customer intent: As an Azure Pipelines user, I want to learn how to create and add VM resources to environments so I can deploy pipeline jobs to different targets like Test or Production.
 
 ---
 
 # Manage VM resources in environments
 
-[!INCLUDE [version-gt-eq-2020](../../includes/version-gt-eq-2020.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 An Azure Pipelines [environment](environments.md) is a group of [resources](about-resources.md) that you can target with deployments from a pipeline. Typical environments include Development, Test, or Production.
 

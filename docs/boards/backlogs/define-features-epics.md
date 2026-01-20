@@ -9,7 +9,7 @@ ms.author: chcomley
 author: chcomley
 ms.topic: how-to
 monikerRange: '<= azure-devops'
-ms.date: 10/11/2024
+ms.date: 12/22/2025
 #customer intent: As a team member, I want to understand how to organize work items into features and epics in Azure Boards to better organize my project.
 ---
 
@@ -17,7 +17,7 @@ ms.date: 10/11/2024
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
-When you have a list of work items, it can be helpful to group related items into a hierarchical structure. Do so by breaking down major features or scenarios into smaller deliverables. If you have an existing backlog, you can organize it with features and epics. For more information, see [Organize your backlog and map child work items to parents](organize-backlog.md).
+When you have a list of work items, it can be helpful to group related items into a hierarchical structure by breaking down major features or scenarios into smaller, more manageable deliverables. If you have an existing backlog, you can organize it with features and epics. For more information, see [Organize your backlog and map child work items to parents](organize-backlog.md).
 
 ## Portfolio backlogs
 
@@ -44,16 +44,16 @@ The following image shows a *features* portfolio backlog that consists of a flat
 
 Epics and features are higher-level containers used to organize work. Typically, user stories or backlog items roll up into features. Features roll up into epics. Keep this hierarchy in mind when naming your features and epics.
 
-- **Feature:** A feature is a significant piece of functionality that delivers value to the user. It usually includes several user stories or backlog items. A feature might take one or more sprints to complete.
-- **Epic:** An epic is a large body of work that can be broken down into multiple features. It represents a major initiative or goal. An epic might span several sprints or even releases.
+- **Feature:** A feature is a significant piece of functionality that delivers value to the user. It typically includes several user stories or backlog items and might take one or more sprints to complete.
+- **Epic:** An epic is a large body of work that can be broken down into multiple features. It represents a major initiative or goal and might span several sprints or even releases.
 
-When you define features and epics, consider the time required to complete them. Generally, you should complete backlog items, such as user stories or tasks, within a sprint. Features and epics might take one or more sprints to complete.
+When you define features and epics, consider the time required to complete them. Generally, you should complete backlog items, such as user stories or tasks, within a sprint, while features and epics might take one or more sprints to complete.
 
 ## View a backlog
 
 To focus on one level of a backlog at a time, select the name of the backlog. You should see three backlog levels: **Epics**, **Features**, and **Backlog items**. If you don't have these values, see [Select backlog navigation levels for your team](../../organizations/settings/select-backlog-navigation-levels.md).
 
-::: moniker range=">= azure-devops-2020"
+::: moniker range="<=azure-devops"
 
 1. Sign in to your project (`https://dev.azure.com/{Your_Organization/Your_Project}`).
 1. Select **Boards** > **Backlogs**.

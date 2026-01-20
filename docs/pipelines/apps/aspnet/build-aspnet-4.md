@@ -1,18 +1,28 @@
 ---
 title: Build apps with .NET Framework
 description: Use .NET Framework to build ASP.NET apps in Azure Pipelines.
-ms.topic: conceptual
+ms.topic: how-to
 ms.assetid: 840F4B48-D9F1-4B5F-98D9-00945501FA98
 ms.custom: devx-track-dotnet
-ms.date: 10/16/2024
+ms.date: 01/12/2026
 monikerRange: '<= azure-devops'
+ai-usage: ai-assisted
+# Customer intent: As an Azure DevOps user, I want to build and deploy ASP.NET apps with the .NET Framework so that I can automate my CI/CD workflows and ensure consistent, reliable deployments.
 ---
 
 # Build ASP.NET apps with .NET Framework
 
 [!INCLUDE [version-lt-eq-azure-devops](../../../includes/version-lt-eq-azure-devops.md)]
 
-This article describes how to build a .NET Framework project with Azure Pipelines. For .NET Core projects, see [Build, test, and deploy .NET Core apps](../../ecosystems/dotnet-core.md).
+This article describes how to build a .NET Framework project with Azure Pipelines. This guide is intended for Azure DevOps users who are building and deploying ASP.NET applications using the .NET Framework. For .NET Core projects, see [Build, test, and deploy .NET Core apps](../../ecosystems/dotnet-core.md).
+
+## Prerequisites
+
+| **Product** | **Requirements** |
+|---|---|
+| **Azure DevOps** | - An [Azure DevOps project](../../../organizations/projects/create-project.md).<br>   - An ability to run pipelines on Microsoft-hosted agents. You can either purchase a [parallel job](../../licensing/concurrent-jobs.md) or you can request a free tier.<br> - Basic knowledge of YAML and Azure Pipelines. For more information, see [Create your first pipeline](../../create-first-pipeline.md).<br> - **Permissions:**<br>      &nbsp;&nbsp;&nbsp;&nbsp; - To create a pipeline: you must be in the **Contributors** group and the group needs to have *Create build pipeline* permission set to Allow. Members of the [Project Administrators group](../../../organizations/security/permissions.md) can manage pipelines.<br> &nbsp;&nbsp;&nbsp;&nbsp;- To create service connections: You must have the *Administrator* or *Creator* [role for service connections](../../library/add-resource-protection.md). |
+| **.NET Framework** | - A .NET Framework project (version 4.5 or later recommended).<br> - Experience with Visual Studio or another .NET development environment.<br> - The appropriate [.NET Framework SDK](https://dotnet.microsoft.com/download) installed on your local machine. |
+| **GitHub** | - A [GitHub](https://github.com) account. <br>   - A [GitHub service connection](../../library/service-endpoints.md) to authorize Azure Pipelines.|
 
 ## Create an Azure DevOps project
 
@@ -23,16 +33,11 @@ This article describes how to build a .NET Framework project with Azure Pipeline
 
 ## Get the sample app
 
-The sample app is a Visual Studio solution that uses .NET 4.8. To get the app, fork the GitHub repo at: 
-
-``` html
-https://github.com/Azure-Samples/app-service-web-dotnet-get-started
-
-```
+If you do not have an existing ASP.NET project, follow the App Service guide to [Create an ASP.NET 4.8 web app](/azure/app-service/quickstart-dotnetcore#create-an-aspnet-web-app?tabs=netframework48&pivots=development-environment-vs). 
 
 ## Create and build the pipeline
 
-Once you have the sample code in your own repository, create a pipeline in your Azure DevOps project by using the instructions in [Create your first pipeline](../../create-first-pipeline.md).
+After you add the sample code to your own repository, create a pipeline in your Azure DevOps project. For more information, see [Create your first pipeline](../../create-first-pipeline.md).
 
 Select the **ASP.NET** template. This choice automatically adds the *azure-pipelines.yml* file with the tasks required to build the code to the sample repository. The template includes the VSTest@3 task to run tests. The sample repository doesn't contain tests, so you can remove the VSTest@3 task from the pipeline.  
 
@@ -145,7 +150,7 @@ To publish the build artifacts, add the following task to the end of your YAML f
 
 ::: moniker range=">=azure-devops"
 
-You can use Azure Pipelines to build your .NET Framework projects without needing to set up any infrastructure of your own. The [Microsoft-hosted agents](../../agents/hosted.md) in Azure Pipelines have several released versions of Visual Studio preinstalled to help you build your projects. Use `windows-2022` for Windows Server 2022 with Visual Studio 2022.
+You can use Azure Pipelines to build your .NET Framework projects without setting up any infrastructure. The [Microsoft-hosted agents](../../agents/hosted.md) in Azure Pipelines include several released versions of Visual Studio to help you build your projects. Use `windows-2025` for Windows Server 2025 with Visual Studio 2022.
 
 You can also use a [self-hosted agent](../../agents/agents.md#install) to run your builds. Using a self-hosted agent is helpful if you have a large repository and you want to avoid downloading the source code to a fresh machine for every build.
 
@@ -171,11 +176,11 @@ You might need to build your app in multiple configurations. The following steps
    - Select **Multi-configuration**.
    - Specify **Multipliers:** `BuildConfiguration, BuildPlatform`
 
-1. Select **Parallel** if you have multiple build agents and want to build your configuration/platform pairings in parallel.
+1. Select **Parallel** if you have multiple build agents and want to build your configuration and platform pairings in parallel.
 
 ## Restore dependencies
 
-You can use the [NuGet task](/azure/devops/pipelines/tasks/reference/nuget-command-v2) to install and update NuGet package dependencies. You can also use the NuGet task to download NuGet packages from Azure Artifacts, NuGet.org, or other external or internal NuGet repositories.
+Use the [NuGet task](/azure/devops/pipelines/tasks/reference/nuget-command-v2) to install and update NuGet package dependencies. You can also use the NuGet task to download NuGet packages from Azure Artifacts, NuGet.org, or other external or internal NuGet repositories.
 
 The following example restores a solution from a project-scoped feed in the same organization.
 

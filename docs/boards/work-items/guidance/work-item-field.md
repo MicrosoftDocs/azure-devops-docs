@@ -280,6 +280,4 @@ The following articles describe fields that are commonly used by several work it
 - [Define a work item query](../../queries/using-queries.md)
 - [Learn about default processes and process templates](choose-process.md)  
 
-::: moniker range="< azure-devops-2022"
-- [Explore the reportable fields reference](/previous-versions/azure/devops/reference/xml/reportable-fields-reference) (On-premises XML process model only)
-::: moniker-end     
+     

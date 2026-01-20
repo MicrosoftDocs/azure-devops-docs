@@ -112,7 +112,7 @@ Select **Validate and save**, then **Save**, **Run**, and **Run** again.
 
 After your pipeline runs, verify that the job ran successfully and that you see a published artifact.
 
-::: moniker range=">=azure-devops-2020"
+::: moniker range="<=azure-devops"
 
 :::image type="content" source="media/node-artifact-run.png" alt-text="Screenshot of successful pipeline run with an artifact.":::
 
@@ -154,8 +154,6 @@ Congratulations, you successfully created and ran a pipeline that built and test
 - Publish as a [NPM package](../artifacts/npm.md)
 - Deploy a static hosting service like [Azure Static Web Apps](/azure/devops/pipelines/tasks/reference/azure-static-web-app-v0)
 - Containerize and deploy [Azure Kubernetes Service](/azure/aks/devops-pipeline) or other container orchestration platforms
-
-
 
 ## Next steps
 

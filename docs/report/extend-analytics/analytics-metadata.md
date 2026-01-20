@@ -12,7 +12,7 @@ ms.date: 11/08/2022
 
 # Analytics OData metadata
 
-[!INCLUDE [version-gt-eq-2019](../../includes/version-gt-eq-2019.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 Understanding the metadata associated with the entity model for Analytics is a prerequisite for programmatically querying the [Data model for Analytics](data-model-analytics-service.md). OData metadata is a machine-readable description of the entity model designed to enable client consumption. 
 

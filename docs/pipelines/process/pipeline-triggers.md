@@ -1,16 +1,16 @@
 ---
 title: Configure pipeline triggers
 description: Configure pipeline triggers
-ms.topic: conceptual
+ms.topic: concept-article
 ms.author: sdanie
 author: steved0x
 ms.date: 04/05/2024
-monikerRange: ">=azure-devops-2020"
+monikerRange: "<=azure-devops"
 ---
 
 # Trigger one pipeline after another
 
-[!INCLUDE [version-gt-eq-2020](../../includes/version-gt-eq-2020.md)] 
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)] 
 
 > [!div class="op_single_selector"]
 > - [YAML pipelines](pipeline-triggers.md)
@@ -25,8 +25,6 @@ In situations like these, add a pipeline trigger to run your pipeline upon the s
 > Previously, you may have navigated to the classic editor for your YAML pipeline and configured **build completion triggers** in the UI. While that model still works, it is no longer recommended. The recommended approach is to specify **pipeline triggers** directly within the YAML file. Build completion triggers as defined in the classic editor have various drawbacks, which have now been addressed in pipeline triggers. For instance, there is no way to trigger a pipeline on the same branch as that of the triggering pipeline using build completion triggers.
 >
 > Triggers defined using the pipeline settings UI take precedence over YAML triggers. To delete UI scheduled triggers from a YAML pipeline, see [UI settings override YAML scheduled triggers](../troubleshooting/troubleshoot-triggers.md#ui-settings-override-yaml-scheduled-triggers).
-
-
 
 ## Configure pipeline resource triggers
 
@@ -173,7 +171,6 @@ A typical scenario in which the pipeline completion trigger doesn't fire is when
 
 - Update the branch filters in the pipeline in the `Default branch for manual and scheduled builds` branch so that they match the new branch.
 - Update the [Default branch for manual and scheduled builds](pipeline-default-branch.md) setting to a branch that has a version of the pipeline with the branch filters that match the new branch.
-
 
 ## Combining trigger types
 

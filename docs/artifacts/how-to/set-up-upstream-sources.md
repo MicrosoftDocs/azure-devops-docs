@@ -2,14 +2,14 @@
 title: Set up upstream sources for your feed
 description: How to set up external feeds and public registries as upstream sources for your feed
 ms.service: azure-devops-artifacts
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 03/21/2024
 monikerRange: "<=azure-devops"
 ---
 
 # Set up upstream sources
 
-[!INCLUDE [version-gt-eq-azure-devops-2019](../../includes/version-gt-eq-2019.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 With Azure Artifacts upstream sources, you can streamline your package management by using a single feed to store both the packages you publish and those you consume from external feeds and public registries such as npmjs.com, NuGet.org. When an upstream source is enabled on your feed, Azure Artifacts will automatically save a copy of any package installed by a collaborator or higher from upstream.
 
@@ -136,8 +136,39 @@ With Azure Artifacts upstream sources, you can streamline your package managemen
 > [!NOTE]
 > You must be a **Feed and Upstream Reader (Collaborator)**, a **Feed Publisher (Contributor)**, or a **Feed Owner** to install new packages from upstream. A copy of each upstream package is saved to the feed on first use. Packages already saved from upstream sources can be used by **Feed Readers**.
 
+## FAQs
+
+##### Q: I can't find my package even though I can see it in one of my feed's upstreams?
+
+A: Packages from upstream sources become available in the feed soon after they're published, but they only appear to readers once they’re saved to the feed.
+
+A package is saved when a user with [Feed and Upstream Reader (Collaborator)](../feeds/feed-permissions.md#feed-roles-and-permissions) or higher permissions installs that package version. Azure Artifacts then automatically saves a copy of the package to the feed, making it permanently available to all readers and visible in the web UI.
+
+##### Q: I can’t find the feed I want to configure as an upstream source?
+
+A: Make sure that the feed owner has shared a view as an upstream source. See [Add a feed in a different organization as an upstream source](../how-to/set-up-upstream-sources.md#add-a-feed-in-a-different-organization-as-an-upstream-source) for more details.
+
+##### Q: What are feed views?
+
+A: Feed views let you share a subset of package versions that have been tested and validated, excluding those still in development or not meeting quality criteria. See [What are feed views](../concepts/views.md) for more details.
+
+##### Q: Can a user with the **Feed Reader** role download packages from an upstream source?
+
+A: No. **Feed Reader** can only download packages already saved to the feed. Packages are saved when a **Feed and Upstream Reader (Collaborator)**, **Feed Publisher (Contributor)**, or **Feed Owner** installs them from upstream.
+
+##### Q: What happens if a user deletes or unpublishes a package saved from an upstream source?
+
+A: The package becomes unavailable for download, and its version number is permanently reserved. It will no longer sync from upstream, but earlier and later versions remain unaffected.
+
+##### Q: What happens if a user deprecates a package saved from an upstream source?
+
+A: A warning message is added to the package’s metadata. This warning appears whenever the package is viewed or installed from the feed.
+
 ## Related articles
 
 - [Search for packages in upstream sources](./search-upstream.md)
-- [Configure permissions](../feeds/feed-permissions.md)
+
 - [Use feed views to share packages](../feeds/views.md)
+
+- [Restore packages from upstream sources](../tutorials/protect-oss-packages-with-upstream-sources.md)
+

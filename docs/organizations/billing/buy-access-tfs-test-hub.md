@@ -5,7 +5,7 @@ ms.custom: freshness-fy22q1, engagement-fy23
 description: Steps for how to buy monthly access to Azure Test Plans.
 ms.subservice: azure-devops-billing
 ms.assetid: B6BED64A-DA53-4AB0-B200-85F86A869D7B
-ms.topic: conceptual
+ms.topic: how-to
 ms.author: chcomley
 author: chcomley
 ms.date: 03/05/2025
@@ -43,7 +43,7 @@ For more information about the requirements to access Azure Test Plans, see [Cha
 3. As the Azure DevOps Server Administrator, [add these same users to Azure DevOps Server](../../organizations/security/add-users-team-project.md#add-project-users). 
 4. [Assign access levels for users](../../organizations/security/change-access-levels.md).
 
-::: moniker range=" < azure-devops > azure-devops-2020"
+::: moniker range="<azure-devops"
 
 ## Buy monthly access to Test Plans
 

@@ -9,13 +9,13 @@ ms.author: chcomley
 author: chcomley
 ms.topic: how-to
 monikerRange: "<=azure-devops"
-ms.date: 09/02/2025
+ms.date: 12/01/2025
 #customer intent: As a team member or administrator, I want to integrate Azure DevOps Analytics views with Power BI so that I can create reports and dashboards from Analytics data.
 ---
 
 # Connect Analytics with Power BI Data Connector
 
-[!INCLUDE [version-gt-eq-2020](../../includes/version-gt-eq-2020.md)] 
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)] 
 
 Learn how to establish a seamless connection between Power BI and Azure DevOps using the Power BI Data Connector. This integration lets you extract valuable insights from your Azure DevOps data and create compelling reports and dashboards within Power BI using [Analytics views](what-are-analytics-views.md).
 
@@ -56,6 +56,29 @@ Ensure you meet the following requirements before connecting Power BI to Azure D
 ::: moniker-end
 
 [!INCLUDE [alt-creds-deprecation-notice](../../includes/alt-creds-deprecation-notice.md)]
+
+## Create a new report and connect to Azure DevOps
+
+Follow these steps to create a new Power BI report and establish a connection to your Azure DevOps Analytics data:
+
+1. **Open Power BI Desktop** and create a new report:
+   - Launch Power BI Desktop on your computer
+   - If the startup screen appears, select **Get data** 
+   - If you're already in Power BI Desktop, select **Home** > **Get Data** from the ribbon
+
+   :::image type="content" source="media/data-connector/get-data-splash-screen.png" alt-text="Screenshot of Power BI Desktop with Get data option highlighted on the startup screen and Home ribbon.":::
+
+2. **Find the Azure DevOps connector**:
+   - In the **Get Data** dialog, select **Online Services**
+   - Look for your Azure DevOps instance
+   - Select the appropriate connector and then select **Connect**
+
+   If you don't see the Azure DevOps connector in the Online Services category:
+   - Ensure you have the latest version of Power BI Desktop installed
+   - Search for "Azure DevOps" in the search box at the top of the Get Data dialog
+   - Look in the **Other** category if it's not in Online Services
+
+   :::image type="content" source="media/data-connector/get-data-azure-devops.png" alt-text="Screenshot of Power BI Get Data dialog with Online Services selected and Azure DevOps (Boards only) connector highlighted.":::
 
 [!INCLUDE [connect to an analytics view](../includes/connect-analytics-view.md)]
 
@@ -109,17 +132,40 @@ To get the most out of your Power BI and Analytics integration:
 
 ### Common error scenarios
 
+#### Azure DevOps connector not visible
+
+**Issue**: Can't find "Azure DevOps" in the data source list in Power BI Desktop
+
+**Possible causes and solutions**:
+
+1. **Outdated Power BI Desktop version**: 
+   - Download and install the [latest version of Power BI Desktop](https://aka.ms/pbidesktopstore)
+   - The Azure DevOps connector was added in later versions
+
+2. **Looking in the wrong category**:
+   - Check **Online Services** category first
+   - If not found, search for "Azure DevOps" using the search box
+   - Try looking in the **Other** category as a fallback
+
+3. **Regional availability**: 
+   - Ensure your Power BI region supports the Azure DevOps connector
+   - Contact your administrator if using Power BI through organizational licensing
+
+4. **Power BI licensing**:
+   - Verify you have appropriate Power BI licensing
+   - Some connector limitations might apply based on licensing tier
+
 <a id="QueryExceedsPreferredMaxSizeException"></a>
 
 #### Query result exceeds maximum size
 
-Error message: "Query result exceeds maximum size. Reduce the number of records by applying additional filters"
+Error message: "Query result exceeds maximum size. Reduce the number of records by applying more filters"
 
 Cause: Your Analytics view returns more than 250,000 records.
 
 Solutions:
 1. Reduce the time range in your Analytics view
-2. Apply additional filters to limit work item types or states
+2. Apply more filters to limit work item types or states
 3. Use multiple smaller views instead of one large view
 4. Consider aggregating data at a higher level
 

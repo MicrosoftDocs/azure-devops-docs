@@ -60,7 +60,7 @@ If your organization uses self-hosted agents, add the following URLs to your All
 | `https://{organization_name}.visualstudio.com`  | For organizations using the {organization_name}.visualstudio.com domain to access their DevOps instance | 
 | `https://{organization_name}.advsec.visualstudio.com` | For organizations using the {organization_name}.visualstudio.com domain to access their DevOps instance
 
-* Run a compatible version of the .NET runtime (currently .NET 8.x). If a compatible version isn't present on the agent, the dependency scanning build task downloads [.NET](https://visualstudio.microsoft.com/downloads/). 
+* Run a compatible version of the .NET runtime. As of December 2025, this is still .NET 8.x. If a compatible version isn't present on the agent, the dependency scanning build task downloads [.NET](https://visualstudio.microsoft.com/downloads/). 
 
 * Ensure the CodeQL bundle is installed to the agent tool cache on your agent. You might utilize the `enableAutomaticCodeQLInstall: true` variable with the `AdvancedSecurity-Codeql-Init@1` pipeline task for YAML pipelines or select the `Enable automatic CodeQL detection and installation` checkbox for classic pipelines. Alternatively, for manual installation instructions, see [Code scanning for GitHub Advanced Security for Azure DevOps](github-advanced-security-code-scanning-troubleshoot.md#manual-installation-of-codeql-bundle-to-self-hosted-agent).
   
@@ -80,18 +80,18 @@ You can enable Advanced Security at the organization, project, or repository lev
 1. Go to your **Project settings** for your Azure DevOps project. 
 1. Select **Repos**. 
 1. Select the **Settings** tab. 
-1. Select **Enable all** and see an estimate for the number of active committers for your project appear. 
+1. Select **Enable all** and see an estimate for the number of active committers for your project appear.  This will only enable the product for existing repositories.
 1. Select **Begin billing** to activate Advanced Security for every existing repository in your project. 
-1. Optionally, select **Automatically enable Advanced Security for new repositories** so that any newly created repositories have Advanced Security enabled upon creation. 
+1. Optionally, select **Automatically enable Advanced Security for new repositories** so that any newly created repositories in the future have Advanced Security enabled upon creation. This setting is separate from the **Enable all** action and must be selected independently.
 
 :::image type="content" source="media/enable-github-advanced-security-project.png" lightbox="media/enable-github-advanced-security-project.png" alt-text="Screenshot of project-level enablement for Advanced Security.":::
 
 #### Organization-level onboarding
 1. Go to your **Organization settings** for your Azure DevOps organization. 
 1. Select **Repositories**. 
-1. Select **Enable all** and see an estimate for the number of active committers for your organization appear. 
+1. Select **Enable all** and see an estimate for the number of active committers for your organization appear.  This will only enable the product for existing repositories.
 1. Select **Begin billing** to activate Advanced Security for every existing repository in each project in your organization. 
-1. Optionally, select **Automatically enable Advanced Security for new repositories** so that any newly created projects have Advanced Security enabled upon creation. 
+1. Optionally, select **Automatically enable Advanced Security for new projects** so that any newly created projects in the future have Advanced Security enabled upon creation. This setting is separate from the **Enable all** action and must be selected independently.
 
 :::image type="content" source="media/enable-github-advanced-security-organization.png" lightbox="media/enable-github-advanced-security-organization.png" alt-text="Screenshot of org-level enablement for Advanced Security.":::
 
@@ -123,20 +123,20 @@ You can enable Secret Protection or Code Security at the organization, project, 
 1. Go to your **Project settings** for your Azure DevOps project. 
 1. Select **Repos**. 
 1. Select the **Settings** tab. 
-1. Select **Enable all** and see an estimate for the number of active committers per product for your project appear.
-1. Toggle your desired products of **Secret Protection** or **Code Security**.
+1. Select **Enable all** and see an estimate for the number of active committers per product for your project appear. This will only enable the selected product for existing repositories.
+1. Toggle your desired products of **Secret Protection** or **Code Security** and all associated sub-features.
 1. Select **Begin billing** to activate Secret Protection and/or Code Security for every existing repository in your project. 
-1. Optionally, toggle **Automatically enable Advanced Security for new repositories** so that any newly created repositories have **Secret Protection** or **Code Security** enabled upon creation. 
+1. Optionally, toggle **Automatically enable Advanced Security for new repositories** so that any newly created repositories in the future have **Secret Protection** or **Code Security** enabled upon creation. This setting is separate from the **Enable all** action and must be selected independently.
 
 :::image type="content" source="media/adv-sec-project-settings-plans-enabled.png" lightbox="media/adv-sec-project-settings-plans-enabled.png" alt-text="Screenshot of project-level enablement for Advanced Security.":::
 
 #### Organization-level onboarding
 1. Go to your **Organization settings** for your Azure DevOps organization. 
 1. Select **Repositories**. 
-1. Select **Enable all** and see an estimate for the number of active committers per product for your organization appear.
-1. Toggle your desired products of **Secret Protection** or **Code Security**.
+1. Select **Enable all** and see an estimate for the number of active committers per product for your organization appear. This will only enable the selected product for existing repositories.
+1. Toggle your desired products of **Secret Protection** or **Code Security** and all associated sub-features.
 1. Select **Begin billing** to activate Advanced Security for every existing repository in each project in your organization. 
-1. Optionally, toggle **Automatically enable Advanced Security for new repositories** so that any newly created projects have **Secret Protection** or **Code Security** enabled upon creation. 
+1. Optionally, toggle **Automatically enable Advanced Security for new projects** so that any newly created projects in the future have **Secret Protection** or **Code Security** enabled upon creation. This setting is separate from the **Enable all** action and must be selected independently.
 
 :::image type="content" source="media/adv-sec-organization-settings-plans-enabled.png" lightbox="media/adv-sec-organization-settings-plans-enabled.png" alt-text="Screenshot of org-level enablement for Advanced Security.":::
 

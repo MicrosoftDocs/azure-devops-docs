@@ -4,7 +4,7 @@ titleSuffix: Azure Repos
 description: Learn about pull request guidelines, management, and considerations when working in an Azure Repos Git repository.
 ms.assetid: 4C9DFD24-E894-454A-A080-DA511C90CA74
 ms.service: azure-devops-repos
-ms.topic: conceptual
+ms.topic: overview
 ms.date: 11/05/2021
 monikerRange: '<= azure-devops'
 ms.subservice: azure-devops-repos-git
@@ -143,7 +143,7 @@ The following table summarizes the policies you can define to customize a branch
    :::column-end:::
 :::row-end:::
 
-::: moniker range=">= azure-devops-2020"
+::: moniker range="<=azure-devops"
 :::row:::
    :::column span="2":::
       [**Limit merge types**](branch-policies.md#limit-merge-types)

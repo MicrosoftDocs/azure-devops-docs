@@ -48,29 +48,6 @@ If you don't have permissions to install extensions, you can request extensions 
 
 ::: moniker-end
 
-::: moniker range="=azure-devops-2020"
-
-1. Sign in to your organization (```https://dev.azure.com/{Your_Organization}```).
-
-2. Select ![gear icon](../media/icons/gear-icon.png) **Admin settings**.
-
-    ![Screenshot showing Admin settings button.](../media/settings/open-admin-settings-server.png)
-
-3. Select **Extensions** > **Browse Marketplace**.
-
-    ![Screenshot showing Browse Marketplace selection.](media/browse-marketplace-2019.png)
-
-4. Select an extension to install.
-5. If you don't have permission to install the extension, request it.
-
-   Review your requests after the Marketplace sends the request to your Project Collection Administrator.
-
-   Your requests appear on the **Extensions** page, **Requested** tab.
-
-   ![Screenshot showing the Requested tab for extensions page.](media/requested-extensions-2019.png)
-
-::: moniker-end
-
 To approve extensions, have [**edit collection-level information** permissions](../organizations/security/permissions.md#collection).
 
 ## Approve an extension request

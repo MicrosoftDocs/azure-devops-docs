@@ -1,7 +1,7 @@
 ---
 title: Configure schedules to run pipelines
 description: Configure schedules to run pipelines
-ms.topic: conceptual
+ms.topic: concept-article
 ms.custom: copilot-scenario-highlight
 ms.author: sdanie
 author: steved0x
@@ -40,20 +40,6 @@ You can combine scheduled and event-based triggers in your pipelines, for exampl
 
 Scheduled triggers configure a pipeline to run on a schedule defined using [cron syntax](#cron-syntax).
 
-::: moniker range="<azure-devops-2022"
-
-```yaml
-schedules:
-- cron: string # cron syntax defining a schedule
-  displayName: string # friendly name given to a specific schedule
-  branches:
-    include: [ string ] # which branches the schedule applies to
-    exclude: [ string ] # which branches to exclude from the schedule
-  always: boolean # whether to always run the pipeline or only if there have been source code or pipeline settings changes since the last successful scheduled run. The default is false.
-```
-
-::: moniker-end
-
 ::: moniker range="> azure-devops-2022"
 
 ```yaml
@@ -76,6 +62,7 @@ Scheduled pipelines in YAML have the following constraints.
 - If you specify an `exclude` clause without an `include` clause for `branches`, it's equivalent to specifying `*` in the `include` clause.
 - You can't use pipeline variables when specifying schedules.
 - If you use [templates in your YAML file](templates.md), then the schedules must be specified in the main YAML file and not in the template files.
+- If a pipeline is disabled, updates made to its YAML file won't automatically refresh the schedule triggers.
 
 ### Branch considerations for scheduled triggers
 
@@ -603,5 +590,4 @@ schedules:
 ```
 
 For more information, see [Branch considerations for scheduled triggers](#branch-considerations-for-scheduled-triggers).
-
 

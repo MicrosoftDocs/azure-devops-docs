@@ -1,24 +1,17 @@
 ---
 ms.topic: include
+ms.date: 09/30/2025
 ---
 
-[Stakeholders](../../organizations/security/get-started-stakeholder.md)
-can respond to feedback requests for user stories and 
-features generated in Azure DevOps using
-a lightweight end-to-end flow based on the 
-[Test &amp; Feedback extension](../perform-exploratory-tests.md).
-Only users with Basic access can request feedback. Basic users
-can provide feedback using the flow described in
-[this topic](../provide-stakeholder-feedback.md#non-stakeholder-feedback).
+Stakeholders can respond to feedback requests in Azure DevOps by using the Test & Feedback extension, [Exploratory testing](../perform-exploratory-tests.md).
 
-* [Request feedback](../request-stakeholder-feedback.md#request)
-* [Provide feedback](../provide-stakeholder-feedback.md#provide)
-* [Voluntary feedback](../voluntary-stakeholder-feedback.md#voluntary)
-* [Track requests](../track-stakeholder-feedback.md#track)
+Users with Basic access can request feedback from stakeholders by using the work-item shortcut menu. If you have Basic access and want to provide feedback, follow the non‑stakeholder workflow described in [Provide stakeholder feedback](../provide-stakeholder-feedback.md#non-stakeholder-feedback).
+
+Quick links
+- [Request feedback](../request-stakeholder-feedback.md)
+- [Provide feedback](../provide-stakeholder-feedback.md)
+- [Voluntary feedback](../voluntary-stakeholder-feedback.md)
+- [Track requests](../track-stakeholder-feedback.md)
 
 > [!NOTE]
-> This lightweight end-to-end flow is applicable only for web apps
-> and by using Azure DevOps. To get feedback for desktop apps, or for
-> earlier versions of TFS, use the feedback flow described in
-> [Get feedback](/previous-versions/azure/devops/project/feedback/get-feedback)
-> about the Microsoft Feedback Client.
+> The end-to-end flow described here applies to web apps and to Azure DevOps. To collect feedback for desktop apps or for older versions, use the [Get feedback](/previous-versions/azure/devops/project/feedback/get-feedback) workflow.

@@ -1,12 +1,10 @@
 ---
 title: Register an agent using a service principal
 description: Learn how to register a self-hosted agent using a Service Principal
-ms.topic: conceptual
+ms.topic: concept-article
 ms.date: 04/26/2024
 monikerRange: 'azure-devops'
-ms.custom:
-  - arm2024
-  - sfi-image-nochange
+ms.custom: arm2024, sfi-image-nochange
 ---
 
 # Register an agent using a service principal

@@ -14,7 +14,7 @@ ms.custom: sfi-image-nochange
 
 # Access data through Excel 
 
-[!INCLUDE [version-gt-eq-2019](../../includes/version-gt-eq-2019.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 You can access data through Excel, generate reports, and then publish the charts to Power BI or use the Excel file as a basis for Power BI reports. At this time, you need alternate credentials enabled to access data Analytics via Excel.
 

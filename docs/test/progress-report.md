@@ -4,17 +4,17 @@ description: Learn how to use the Test Plans Progress report
 ms.assetid: cd74abc1-44c0-4390-8d5d-4d1afbd4606c
 ms.service: azure-devops-test-plans
 ms.custom: UpdateFrequency3
-ms.topic: conceptual
+ms.topic: how-to
 ms.author: jeom
 author: rohit-batra
-monikerRange: '>= azure-devops-2020'
+monikerRange: "<=azure-devops"
 ms.date: 09/14/2021
 ms.update-cycle: 1095-days
 ---
 
-# Progress Report
+# Use the Progress Report
 
-[!INCLUDE [version-gt-eq-2020](../includes/version-gt-eq-2020.md)]  
+[!INCLUDE [version-lt-eq-azure-devops](../includes/version-lt-eq-azure-devops.md)]  
   
 To track the progress of more than one test plan or test suite, use the Progress Report. The Progress Reports helps you track status of passed, failed, or blocked tests, estimations, rate of execution, progress, and more for your team.
 
@@ -79,7 +79,6 @@ Filter by **Test Suites**, **Configuration**, **Tester**, Test Case **Priority**
 > [!NOTE]   
 > The test plan is considered Level 1. Its child suites are considered level 2. Their child suites in turn are considered level 3. The Test Suites filter shows only the Level 3 test suites inside the selected test plans. To select a Level 2 test suite select all the Level 3 test suites underneath it. This assumes the Level 2 test suites itself does not have any test points.
 
-
  
   
 
@@ -87,5 +86,4 @@ Filter by **Test Suites**, **Configuration**, **Tester**, Test Case **Priority**
 
 - [Control how long to keep test results](how-long-to-keep-test-results.md)
 - [FAQs for manual testing](reference-qa.yml#trackstatus)
-
 

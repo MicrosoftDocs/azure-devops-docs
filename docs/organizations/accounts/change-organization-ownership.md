@@ -5,10 +5,10 @@ ms.custom: linked-from-support
 description: Learn how to assign a different user as the owner for your organization and which permissions are required.
 ms.subservice: azure-devops-organizations
 ms.assetid: ec935536-6a5e-4b62-adf2-4207a70440bd
-ms.topic: conceptual
+ms.topic: how-to
 ms.author: chcomley
 author: chcomley
-ms.date: 10/22/2024
+ms.date: 12/22/2025
 monikerRange: 'azure-devops'
 ---
 
@@ -19,7 +19,7 @@ monikerRange: 'azure-devops'
 As roles and responsibilities change, you can change the owner for your organization.
 
 > [!NOTE]  
-> When you change the organization owner, the old owner is not removed from the Project Collection Administrators group.
+> When you change the organization owner, the old owner isn't removed from the Project Collection Administrators group.
 
 ## Prerequisites
 
@@ -49,7 +49,7 @@ To change the organization owner, do the following steps:
 
    :::image type="content" source="media/change-organization-ownership/save-new-organization-owner.png" alt-text="Screenshot showing Change button emphasized.":::
 
-Your organization has a new owner. The new owner has full administrative control over the organization, including the ability to manage users, projects, and settings. They can also configure security policies, access levels, and billing information. Ensure the new owner is aware of their responsibilities and has the necessary permissions to effectively manage the organization.
+Your organization has a new owner. The new owner has full administrative control over the organization, including the ability to manage users, projects, and settings. They can also configure security policies, access levels, and billing information. The new owner is now responsible for the organization's management and should be informed of their administrative responsibilities.
 
 ## Related content
 

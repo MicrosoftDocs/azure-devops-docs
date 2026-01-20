@@ -33,7 +33,7 @@ Work item links are associations between two work items or a work item and anoth
 
 ::: moniker-end
 
-::: moniker range=">= azure-devops-2020 < azure-devops"
+::: moniker range="<azure-devops"
 
 | Category | Requirements |
 |:-------------|:------------|
@@ -50,6 +50,7 @@ The following types of links help you manage the relationships between work item
 
 | Link type category | Description |
 |:----------|:------------|
+| **Advanced Security** | Connects a work item to an Advanced Security alert. |
 | **Build** | Connects a work item to a build number, found in build, or integrated in build. |
 | **Code** | Connects a work item to a branch, changeset, commit, pull request, tag, or versioned item. |
 | **GitHub** | Connects a work item to a GitHub repository branch, commit, issue, or pull request. |
@@ -172,7 +173,7 @@ To view the information for the linked work items, enter one of the URLs listed 
 
 ---
 
-::: moniker range=">= azure-devops-2020"
+::: moniker range="<=azure-devops"
 
 ## Link work items to pull requests
 
@@ -257,7 +258,7 @@ Do the following steps to link work items to objects defined in other Azure DevO
 
    :::image type="content" source="media/add-link/add-remote-related-link.png" alt-text="Screenshot of removing a work item link.":::
 
-   The link tab maintains a count of all links to the work item. The **Remote Link Count** [field](../queries/linking-attachments.md) maintains a count of the number of links added to a work item that link to a work item defined in another project or organization.
+   The link tab maintains a count of all links to the work item. The **Remote Link Count** [field](../queries/linking-attachments.md) maintains a count of the number of links added to a work item that links to a work item defined in another project or organization.
 
    The following example shows two remote links, indicated by the :::image type="icon" source="../../media/icons/cloud-link.png" border="false"::: cloud icon, added to a user story.
 
@@ -268,14 +269,31 @@ Do the following steps to link work items to objects defined in other Azure DevO
 
 ## Link work items to GitHub objects
 
-::: moniker range=">= azure-devops-2020"
+::: moniker range="<=azure-devops"
 When you connect Azure Boards with GitHub repositories, you can link work items to a **GitHub Branch**, **GitHub Commit**, **GitHub Issue**, and **GitHub Pull Request**. You can use GitHub for software development while you use Azure Boards to plan and track your work.
 ::: moniker-end
 
 > [!IMPORTANT]  
 > You can only link work items to GitHub objects that have repositories connected to Azure Boards. For more information, see [Connect Azure Boards to GitHub](../github/connect-to-github.md), and [Link to work items from pull requests, commits, and comments](../../organizations/notifications/add-links-to-work-items.md#link-wit-id).
 
-For more information, see [Link GitHub commits, pull requests, branches, and issues to work items](../github/link-to-from-github.md) and [Auto complete work items with pull requests](../work-items/auto-complete-work-items-pull-requests.md).
+For more information, see [Link GitHub commits, pull requests, branches, and issues to work items](../github/link-to-from-github.md) and [Auto complete work items with pull requests](../work-items/auto-complete-work-items-pull-requests.md). 
+
+## Link work items to Advanced Security alerts 
+
+Advanced Security alerts can be linked to work items from a work item or from an Advanced Security alert itself. 
+
+1. From your work item, select **Links** > **Add link** > **Existing item**.
+
+2. Select a repository, which must have Advanced Security enabled, and select a security alert from the dropdown. You also must have Advanced Security: view alerts permission for this repository.
+
+:::image type="content" source="media/add-link/advsec-boards-security-alert-link-type.png" alt-text="Screenshot of work item selection with security alert link type."::: 
+
+Alternatively, you can also link to a work item from an Advanced Security alert. Navigate to a specific Advanced Security alert and select **Add** from the Related Work section.
+
+:::image type="content" source="media/add-link/advsec-boards-security-alert-link.png" alt-text="Screenshot of Advanced Security alert to link related work items.":::
+
+> [!IMPORTANT]  
+> You can only link work items to repositories that have Advanced Security enabled and the ability to view security alerts. For more information, see [Configure Advanced Security](../../repos/security/configure-github-advanced-security-features.md), and [Advanced Security permissions](../../repos/security/github-advanced-security-permissions.md).
 
 ## Link several work items to new git branches
 
@@ -288,12 +306,7 @@ For more information, see [Link GitHub commits, pull requests, branches, and iss
 
 Do the following steps to link work items to existing builds. These builds can be in your project or to other projects in your organization or collection.
 
-::: moniker range="azure-devops-2020"
-> [!NOTE]
-> This feature requires installation of Azure DevOps Server 2020.1 update. For more information, see [Azure DevOps Server 2020 Update 1 RC1 Release Notes, Boards](/azure/devops/server/release-notes/azuredevops2020u1#customize-work-item-state-when-pull-request-is-merged).  
-::: moniker-end
-
-::: moniker range=">= azure-devops-2020"
+::: moniker range="<=azure-devops"
 
 1. From your work item, select **Links** > **Add link** > **Existing item**.
 

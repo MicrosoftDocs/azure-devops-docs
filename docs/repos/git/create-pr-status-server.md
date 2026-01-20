@@ -4,13 +4,11 @@ titleSuffix: Azure Repos
 description: Create a web server to listen to pull request events and post status on pull request status API.
 ms.assetid: 2653589c-d15e-4dab-b8b0-4f8236c4a67b
 ms.service: azure-devops-repos
-ms.topic: conceptual
+ms.topic: tutorial
 ms.date: 07/02/2025
 monikerRange: '<= azure-devops'
 ms.subservice: azure-devops-repos-git
-ms.custom:
-  - devx-track-js
-  - sfi-image-nochange
+ms.custom: devx-track-js, sfi-image-nochange
 # customer-intent: As a developer, I want to create a Node.js server that integrates with Azure DevOps pull request events so I can implement custom status checks and automated validation workflows using Microsoft Entra ID authentication.
 ---
 

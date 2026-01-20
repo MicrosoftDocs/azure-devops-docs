@@ -11,7 +11,7 @@ author: chcomley
 ms.reviewer: gopinach
 ms.topic: concept-article
 monikerRange: '<= azure-devops'
-ms.date: 09/15/2025
+ms.date: 01/07/2026
 #customer intent: As an Azure DevOps developer, I want to use Markdown to create tables, lists, headings, and more, so I can share my project information in pull requests, README files, dashboards, and wikis.
 ---
 
@@ -104,7 +104,7 @@ This is the second line, which will appear directly below the first.
 This renders as:
 
 This is the first line with two spaces at the end.  
-This is the second line, which will appear directly below the first.
+This is the second line, which appears directly below the first.
 
 If you press **Enter** without two trailing spaces, the lines combine into a single paragraph in the published output.
 
@@ -259,7 +259,7 @@ sudo npm install vsoagent-installer -g
 This example shows how to highlight a portion of text as an inline code segment in the Markdown widget:
 
 ```md
-To install the Microsoft Cross Platform Build and Release Agent, run the following: <!-- ` - Single backtick --> $ sudo npm install vsoagent-installer -g <!-- ` - Single backtick -->
+To install the Microsoft Cross Platform Build and Release Agent, run the following: `$ sudo npm install vsoagent-installer -g`
 ``` 
 
 This image shows the published view of the Markdown for a portion of text highlighted as an inline code segment:
@@ -539,8 +539,8 @@ When a Markdown file renders as HTML, the system assigns an anchor ID to each he
 
 - Replace spaces in the header text with hyphens `-`
 - Change uppercase letters to lowercase
-- Ignore most special characters, such as `#`, `@`, `$`
-- Ignore most punctuation, such as `:`, `"`, `?`
+- Convert most special characters and punctuation to hyphens, including `:`, `"`, `?`, `@`, `$`, `#`
+- Remove or convert other special characters according to the rendering engine's rules
 
 Use the hash mark `#` to link to the header in the document, as in `[Display text](#<header-anchor>)`.
 
@@ -557,6 +557,9 @@ Here's the published view:
 #### Team #1 : Release Wiki!
 
 Welcome to the Release wiki. For more information, [Visit the Project Wiki](#team-1--release-wiki).
+
+> [!TIP]
+> To determine the exact anchor ID for a header, inspect the rendered HTML or use the browser's developer tools to find the actual `id` attribute assigned to the header element.
 
 Link to a heading in another Markdown file by specifying the file name with the anchor ID in the link:
 
@@ -1357,7 +1360,7 @@ When you edit pages directly in code, use the following pattern, `@<{identity-gu
 
 ::: moniker-end
 
-::: moniker range=">= azure-devops-2020"
+::: moniker range="<=azure-devops"
 
 ## Page visit count for a wiki page
 

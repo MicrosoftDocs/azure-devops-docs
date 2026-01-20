@@ -5,12 +5,12 @@ ms.assetid: C7D75946-1F00-4BD7-87C8-225BBAE9982B
 ms.service: azure-devops-artifacts
 ms.topic: tutorial
 ms.date: 01/14/2025
-monikerRange: '>= azure-devops-2020'
+monikerRange: "<=azure-devops"
 ---
 
 # Publish NuGet packages from the command line (NuGet.exe)
 
-[!INCLUDE [version-gt-eq-2020](../../includes/version-gt-eq-2020.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 This article guides you through setting up your project and publishing your NuGet packages using the NuGet command-line interface.
 
@@ -58,7 +58,7 @@ This article guides you through setting up your project and publishing your NuGe
 
 ::: moniker-end
 
-::: moniker range="azure-devops-2020 || azure-devops-2022"
+::: moniker range="=azure-devops-2022"
 
 1. Sign in to your Azure DevOps server, and then navigate to your project.
 
@@ -117,9 +117,9 @@ nuget push nupkgs/mypackage.1.1.8.nupkg -src MySource -ApiKey AZ
 
 ## Related content
 
-- [Restore NuGet packages (NuGet.exe)](restore-nuget-packages-nuget-exe.md)
+- [Publish NuGet packages (dotnet)](dotnet-exe.md)
 
 - [Publish packages with Azure Pipelines (YAML/Classic)](../../pipelines/artifacts/nuget.md)
 
-- [Use packages from NuGet.org](./upstream-sources.md)
+- [Restore NuGet packages (NuGet.exe)](restore-nuget-packages-nuget-exe.md)
 

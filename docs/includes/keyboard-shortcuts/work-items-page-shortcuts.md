@@ -10,7 +10,7 @@ You can use these keyboard shortcuts on a **Boards** > **Work items** page or a 
 
 ::: moniker-end
 
-::: moniker range=">= azure-devops-2020"
+::: moniker range="<=azure-devops"
 
 |Shortcut|Action|
 |---|---|

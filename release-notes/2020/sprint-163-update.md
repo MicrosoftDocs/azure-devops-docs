@@ -4,6 +4,7 @@ author: gloridelmorales
 ms.author: glmorale
 ms.date: 01/13/2020
 description: In the **Sprint 163 Update** of Azure DevOps, we've added release and pipelines events to the audit logs..
+ms.topic: release-notes
 ---
 
 # Release and pipelines events available in the audit logs - Sprint 163 Update

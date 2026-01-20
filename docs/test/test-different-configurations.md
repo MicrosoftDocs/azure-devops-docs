@@ -3,15 +3,13 @@ title: Test different configurations
 description: Learn about manual and exploratory testing. You can test different configurations with Azure Test Plans and Team Foundation Server.
 ms.assetid: 750F033E-A39E-4C85-BF85-012629C33DE6
 ms.service: azure-devops-test-plans
-ms.topic: conceptual
+ms.topic: how-to
 ms.author: jeom
 author: rohit-batra
 monikerRange: '<= azure-devops'
 ms.date: 12/20/2021
 ms.update-cycle: 1095-days
-ms.custom:
-  - UpdateFrequency3
-  - sfi-image-nochange
+ms.custom: UpdateFrequency3, sfi-image-nochange
 ---
 
 # Test different configurations
@@ -102,7 +100,7 @@ Id        Name
 <a name="create-configs"></a>
 
 ## Create configurations and variables
-::: moniker range=">=azure-devops-2020"
+::: moniker range="<=azure-devops"
 
 A test configuration is a combination of configuration variable values.
 Your configuration variables could be, for example, operating system, browser, CPU type, database.
@@ -143,7 +141,7 @@ Then combine multiple variable values to create a configuration.
 <a name="assign-configs"></a>
 
 ## Assign configurations to test plans and suites
-::: moniker range=">=azure-devops-2020"
+::: moniker range="<=azure-devops"
 
 You can assign configurations to a test suite or an individual test case.
 Configurations assigned to a test suite apply to all tests or suites within it.
@@ -170,7 +168,7 @@ Configurations assigned to a test suite apply to all tests or suites within it.
 <a name="run-configs"></a>
 
 ## Run tests with each configuration
-::: moniker range=">=azure-devops-2020"
+::: moniker range="<=azure-devops"
 
 Set up a testing platform for a particular configuration, such as testing the app using Google Chrome on Windows 10.
 
@@ -186,7 +184,7 @@ Set up a testing platform for a particular configuration, such as testing the ap
 <a name="track-configs"></a>
 
 ## Track test results for each configuration
-::: moniker range=">=azure-devops-2020"
+::: moniker range="<=azure-devops"
 
 1. Open the **Charts** page for your test suite, select **New**, and select **New test result chart**.
 

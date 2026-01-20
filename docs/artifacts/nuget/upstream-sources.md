@@ -5,13 +5,13 @@ ms.assetid: 301f954f-a35a-4fe2-b7fd-c78e534d9b16
 ms.service: azure-devops-artifacts
 ms.topic: how-to
 ms.date: 09/5/2025
-monikerRange: '>= azure-devops-2020'
+monikerRange: "<=azure-devops"
 "recommendations": "true"
 ---
 
 # Use packages from the NuGet Gallery
 
-[!INCLUDE [version-gt-eq-2020](../../includes/version-gt-eq-2020.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 Azure Artifacts upstream sources make it easy for developers to pull packages from public registries like *nuget.org* and *npmjs.com*. In this article, you learn how to set up your project and use the command line to consume NuGet packages from the NuGet Gallery.
 
@@ -57,16 +57,6 @@ If you checked the Upstream sources checkbox when creating your feed (as shown i
 
 ::: moniker-end
 
-::: moniker range="=azure-devops-2020"
-
-1. Select **Upstream Sources**, and then select **Add upstream source**.
-
-1. Select **Public source**, and then select **NuGet Gallery** from the dropdown menu.
-
-1. Select **Add** when you're done.
-
-::: moniker-end
-
 ## Connect to your feed
 
 In this section, you learn how to set up your project to authenticate with your Azure Artifacts feed and save packages from upstream sources such as the NuGet Gallery.
@@ -109,7 +99,7 @@ In this section, you learn how to set up your project to authenticate with your 
 
 ::: moniker-end
 
-::: moniker range="azure-devops-2020 || azure-devops-2022"
+::: moniker range="=azure-devops-2022"
 
 1. Sign in to your Azure DevOps collection, and then navigate to your project.
 

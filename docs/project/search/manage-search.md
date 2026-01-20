@@ -66,28 +66,6 @@ To check the indexing status after Search is configured, or after the extension 
 
 ::: moniker-end
 
-::: moniker range="< azure-devops-2022"
-
-1. Execute the `CheckIndexingStatus.ps1` script with **administrative privileges** and enter the following information: 
-
-   - The **SQL server instance name** where the **TFS configuration database** is located.
-   - The name of the **TFS collection database**.
-   - The name of the **TFS configuration database**.
-   - The name of the **collection**.
-   - The number of previous days to check indexing status.
-
-2. Review the following outputs:
-   - **Collection indexing was triggered successfully:** Indicates that indexing is in progress.
-   - **Repositories Indexing Completed:** Lists repositories whose indexing completed and is searchable.
-   - **Repositories in File Discovery Phase:** Repositories where files are yet to be discovered. These files are indexed after this stage.
-   - **Repositories Indexing In Progress:** Repositories that are partially indexed and should be searchable, even if the results are only partial. It might take some time for indexing to complete.
-
-3. Monitor progress:
-   1. Execute the `CheckIndexingStatus.ps1` script at intervals for indexing progress.
-   2. If indexing isn’t working or if the number of pending files doesn't change for some time, execute the `TriggerCollectionIndexing.ps1` script with administrative permission. 
-
-::: moniker-end
-
    If you encounter any issues, get support on the [Developer Community](https://developercommunity.visualstudio.com/spaces/21/index.html). 
 
 ### Pause indexing

@@ -1,6 +1,6 @@
 ---
 title: Run manual tests
-description: Learn about test tools to run manual tests with Azure Test Plans to make sure each of the deliverables meets your user's needs.
+description: Run manual tests with Azure Test Plans using Microsoft Test Runner for web and desktop applications. Learn to execute test cases, capture diagnostic data, create bugs, and manage test results.
 ms.assetid: 616919f3-7339-4813-9dcf-82ead3476b1a
 ms.service: azure-devops-test-plans
 ms.custom: UpdateFrequency3
@@ -8,7 +8,7 @@ ms.topic: quickstart
 ms.author: jeom
 author: rohit-batra
 monikerRange: '<= azure-devops'
-ms.date: 09/11/2024
+ms.date: 11/25/2025
 ms.update-cycle: 1095-days
 ---
 
@@ -29,10 +29,10 @@ Include test steps, screenshots, and comments in the bug.
 
 > [!NOTE]
 > You execute test points and not test cases.
-> When you add a test case to a test suite, test point(s) are generated.
+> When you add a test case to a test suite, test points are generated.
 > A test point represents a unique combination of test case, test suite, configuration, and tester.
 >
-> For example, a test case named *Test login functionality*, which has two configurations for the Edge and Chrome browsers, generates two test points.
+> For example, a test case named *Test login functionality*, which has two configurations for the Microsoft Edge and Chrome browsers, generates two test points.
 > You can execute or run each of these test points.
 > On execution, test results are generated.
 > Through the test results view, or execution history, you can see all executions of a test point.
@@ -78,22 +78,21 @@ To get Microsoft Test Manager, install [Visual Studio Enterprise](https://visual
 
 Follow these steps to run tests for web applications.
 
-::: moniker range=">=azure-devops-2020"
 1. From the web portal, open your project and select **Test Plans** > **Test plans**.
 
-1. If you haven't already, [create your manual tests](create-test-cases.md#test-cases).
+2. If you haven't already, [create your manual tests](create-test-cases.md#test-cases).
 
-1. Select **Mine** or **All**, or use **Filter by title** to find your test plan and select it. Select the **Execute** tab.
+3. Select **Mine** or **All**, or use **Filter by title** to find your test plan and select it. Select the **Execute** tab.
 
    ![Screenshot shows a test suite selected with the Execute tab selected](media/run-manual-tests/test-suite-execute-tab.png)
 
-1. Select one or more tests, or all the tests from a test suite. Then select **Run for web application**.
+4. Select one or more tests, or all the tests from a test suite. Then select **Run for web application**.
 
    ![Screenshot shows how to select and run a specific test.](media/run-manual-tests/run-test-web-application.png)
 
    Microsoft Test Runner opens and runs in a new browser.
 
-1. Start the app that you want to test.
+5. Start the app that you want to test.
 
    ![Screenshot shows Test Runner recording your test results.](media/run-manual-tests/test-runner-results.png)
 
@@ -102,17 +101,15 @@ Follow these steps to run tests for web applications.
 
    For example, you might run Test Runner on a desktop computer and run your store app for Windows 8 that you test on a Windows 8 tablet.
 
-1. Mark each test step as either passed or failed based on the expected results.
+6. Mark each test step as either passed or failed based on the expected results.
 
    ![Screenshot shows Test Runner open to a failed test where you can enter a comment.](media/run-manual-tests/test-result-enter-comment.png)
 
    If a test step fails, you can enter a comment on why it failed or [collect diagnostic data for the test](collect-diagnostic-data.md).
    You can also [Create or add to a bug](#create-or-add-to-a-bug).
 
-::: moniker-end
-
    > [!IMPORTANT]
-   > Any test step that has expected result is called a *validation test step*. Testers must mark a test step with a status if it is a validation test step. The overall result for a test case reflects the status of all the test steps that the tester marked. Therefore, the test case will have a status of failed if the tester marked any test step as failed or not marked.
+   > Any test step that has an expected result is called a *validation test step*. Testers must mark a test step with a status if it's a validation test step. The overall result for a test case reflects the status of all the test steps that the tester marked. Therefore, the test case has a status of failed if the tester marked any test step as failed or not marked.
 
 ## Create or add to a bug
 
@@ -120,32 +117,26 @@ If a test step fails, enter a comment about the behavior and collect diagnostic 
 You can create a bug to capture and track the issue.
 You can also update an existing bug with information about the failure.
 
-::: moniker range=">=azure-devops-2020"
 1. When a step fails, enter a comment and select **Create bug**.
 
    ![Screenshot shows Test Runner with a failed test and Create bug highlighted.](media/run-manual-tests/create-bug-button.png)
 
    > [!NOTE]
+   > If the **Create bug** button doesn't launch a bug work item, verify the team settings at the area and iteration levels:
    >
-   > If the create bug button does not launch bug workitem, then verify if the teams settings are correct at Area and Iteration level as below: 
-   >
-   > Go to the project settings and Team, check if the correct Team is set as default. 
-   >
-   > From that Team, click on the Iterations and Area paths hyperlink near to Team name. It will take you to Team configuration page. 
-   >
-   > In the Team configuration page, select Iterations, Default and Backlog iteration must match the Team for which the test case is running. 
-   >
-   > In the Team configuration page, select Areas, Default area must match the Team for which the test case is running. 
+   > 1. Go to **Project settings** > **Team** and verify that the correct team is set as default.
+   > 2. Select the **Iterations and Area paths** link next to the team name to open the Team configuration page.
+   > 3. Verify that the **Iterations**, **Default**, and **Backlog iterations** match the team for the test case.
+   > 4. In the Team configuration page, select **Areas** and verify that the **Default area** matches the team for the test case.
    
-
-1. In the **New bug** dialog box, enter a name for the bug.
+2. In the **New bug** dialog box, enter a name for the bug.
 
    ![Screenshot shows Test Runner with Create bug selected and the new bug dialog box open.](media/run-manual-tests/create-bug-test-fail.png)
 
    The steps and your comments are automatically added to the bug.
    If Test Runner is running in a web browser window, you can copy a screenshot from the clipboard directly into the bug.
 
-1. You can assign the bug, enter comments, or link to other issues. Select **Save & Close** when done.
+3. You can assign the bug, enter comments, or link to other issues. Select **Save & Close** when done.
    The test case is linked to the bug you created.
 
 You can see any bugs reported during your test session.
@@ -155,54 +146,48 @@ You can see any bugs reported during your test session.
 Instead of creating a bug, you can update an existing bug with information about this step. Select **Add to existing bug** from the **Create bug** drop-down menu.
 
 ![Screenshot shows Test Runner with Add to existing bug selected](media/run-manual-tests/find-existing-bug.png)
-::: moniker-end
 
 ## Save results, close the session, and review results
 
 After you complete testing, save your results, close the session, and review test results.
 
-1. When you've run all your tests, select **Save and close**.
+1. When all your tests run, select **Save and close**.
    All the test results are stored in Azure Test Plans.
 
-1. View the testing status for your test suite.
+2. View the testing status for your test suite.
    You see the most recent results for each test.
 
-   ::: moniker range=">=azure-devops-2020"
    ![Screenshot shows the result of running test cases, with outcomes of Active, Failed, and Passed displayed.](media/run-manual-tests/test-case-outcome.png)
-   ::: moniker-end
    
-
    If you haven't run a test yet, its state is active.
    Reset the state of a test to active if you want to rerun it.  
 
-1. Open a test suite and choose the test case in the **Related Work** section.
+3. Open a test suite and choose the test case in the **Related Work** section.
    Then use the child links in the **Related Work** section of that work item to view the bugs filed by the tester.
 
-   ::: moniker range=">=azure-devops-2020"
-   ![Screenshot shows the Related Work section of a work item to view bugs filed for that test.](media/run-manual-tests/related-work-shows-bugs.png)  
-   ::: moniker-end
-     
+   ![Screenshot shows the Related Work section of a work item to view bugs filed for that test.](media/run-manual-tests/related-work-shows-bugs.png)     
 
 You can run tests offline and then import the results. For more information, see the [Offline Test Execution extension](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.OfflineTestExecution).
 
 <a name="run-desktop"></a>
 
 ## Run tests for desktop apps
-::: moniker range=">=azure-devops-2020"
+
+[!INCLUDE [retirement-test-runner-client-windows](includes/retirement-test-runner-client-windows.md)]
 
 If you want to collect more diagnostic data for your desktop application, run your tests using Test Runner client.
 
 1. From the web portal, open your project and select **Test Plans** > **Test plans**.
 
-1. Select **Mine** or **All**, or use **Filter by title** to find your test plan and select it. Select the **Execute** tab.
+2. Select **Mine** or **All**, or use **Filter by title** to find your test plan and select it. Select the **Execute** tab.
 
    ![Screenshot shows a test suite selected with the Execute tab selected](media/run-manual-tests/test-suite-execute-tab.png)
 
-1. Launch Test Runner from Azure Test Plans by selecting **Run for desktop application** from the dropdown menu.
+3. Launch Test Runner from Azure Test Plans by selecting **Run for desktop application** from the dropdown menu.
 
    ![Screenshot shows launching the Test Runner client.](media/run-manual-tests/run-test-desktop-application.png)
 
-1. If necessary, download and install the [Test Runner desktop client](https://aka.ms/ATPTestRunnerDownload).
+4. If necessary, download and install the [Test Runner desktop client](https://aka.ms/ATPTestRunnerDownload).
 
    ![Screenshot shows the Run for desktop application dialog box with options to download and launch Test Runner.](media/run-manual-tests/tr-atp-launch.png)
 
@@ -210,33 +195,27 @@ If you want to collect more diagnostic data for your desktop application, run yo
    > - Check that the Test Runner client is available for your platform. Currently, the Test Runner client is available only for x64.
    > - Azure Test Runner might not work if your organization uses a conditional access policy via Microsoft Entra. For more information, see [Conditional access common decisions](/entra/identity/conditional-access/overview#common-decisions)
 
-1. Select **Launch** and start testing as described in the previous section. For more information about data collection, see [Collect diagnostic data while testing](collect-diagnostic-data.md).
-
-::: moniker-end
+5. Select **Launch** and start testing as described in the previous section. For more information about data collection, see [Collect diagnostic data while testing](collect-diagnostic-data.md).
 
 ## Run all tests
 
 You can run all the tests in a test suite at once.
 
-::: moniker range=">=azure-devops-2020"
 Select a test suite and select **Run for web application** or **Run for desktop application** to run all the active tests.
 
 ![Screenshot shows how to select and run all active tests in a test suite.](media/run-manual-tests/run-test-test-suite.png)
-::: moniker-end
 
 ## Run tests for a build
 
 Choose a build to run tests against.
 
-::: moniker range=">=azure-devops-2020"
 1. From the dropdown, select **Run with options**.
 
    ![Screenshot shows running a test for web application with options.](media/run-manual-tests/run-web-application-test-options.png)
 
-1. In the **Run with options** dialog box, select the build you want.
+2. In the **Run with options** dialog box, select the build you want.
 
    ![Screenshot shows the Run with options dialog box with a build selected.](media/run-manual-tests/run-test-select-build.png)
-::: moniker-end
 
    > [!NOTE]
    > The selected build must be from the project in which the tests are defined.
@@ -251,23 +230,19 @@ The fields that the dialog box offers differ depending on which option you selec
 For more information, see [Supported clients and run options](#supported-clients-and-run-options).
 
 Any bug filed during the run is associated with the selected build.
-The test outcome will be published against that build.
+The test outcome publishes against that build.
 
 ## Modify a test step during a test run
 
 Fix problems with your test steps while the test is still running.
 Select the **Edit test step** icon.
 
-::: moniker range=">=azure-devops-2020"
 ![Screenshot shows how to select the edit icon to edit test steps.](media/run-manual-tests/edit-icon-test-run.png)
-::: moniker-end
 
 You can insert, reorder, or delete steps.
 You can also edit the text itself.
 
-::: moniker range=">=azure-devops-2020"
 ![Screenshot shows the tool to edit test steps when you run a test.](media/run-manual-tests/edit-test-step.png)
-::: moniker-end
 
 ## Capture rich diagnostic data
 
@@ -280,9 +255,7 @@ Add a screenshot to the test results while running a test.
 If you use Google Chrome or Firefox, use the web runner to take screenshots of the web app while testing.
 For Microsoft Internet Explorer or Microsoft Edge browsers, or for desktop app testing, use the [Test Runner desktop client](https://aka.ms/ATPTestRunnerDownload).
 
-::: moniker range=">=azure-devops-2020"
 ![Screenshot shows the button for capturing a screenshot during a test.](media/run-manual-tests/test-capture-screen.png)
-::: moniker-end
 
 For more information, see [Collect diagnostic data](collect-diagnostic-data.md#web-screenshot).
 
@@ -293,9 +266,7 @@ Capture your actions on the application as a log.
 If you use Google Chrome or Firefox, use the web runner capture your actions on the web app as image logs while testing.
 For Microsoft Internet Explorer or Microsoft Edge browsers, or for desktop app testing, use the [Test Runner desktop client](https://aka.ms/ATPTestRunnerDownload).
 
-::: moniker range=">=azure-devops-2020"
 ![Screenshot shows the button for capturing an image action log from the app.](media/run-manual-tests/test-capture-action.png)
-::: moniker-end
 
 For more information, see [Collect diagnostic data](collect-diagnostic-data.md#web-log).
 
@@ -306,9 +277,7 @@ Capture screen recordings of my app during testing.
 If you use Google Chrome or Firefox, use the web runner to capture screen recordings of your web and desktop apps while testing.
 For Microsoft Internet Explorer or Microsoft Edge browsers, or for desktop app testing, use the [Test Runner desktop client](https://aka.ms/ATPTestRunnerDownload).
 
-::: moniker range=">=azure-devops-2020"
 ![Screenshot show the button for capturing a screen recording from the app.](media/run-manual-tests/test-capture-screen-recording.png)
-::: moniker-end
 
 For more information, see [Collect diagnostic data](collect-diagnostic-data.md#web-recording).
 
@@ -322,7 +291,7 @@ You can run tests that are part of a test plan using the TCM command-line tool. 
 
 ### List test runs  
 
-Use `tcm run /list` to list the runs available in a test plan and to show their **ID**.  The **ID** corresponds to the work item ID defined when the run was created.
+Use `tcm run /list` to list the runs available in a test plan and to show their **ID**. The **ID** corresponds to the work item ID defined when the run was created.
 
 ```tcm 
 tcm run /list /collection:teamprojectcollectionurl /teamproject:project 
@@ -379,7 +348,7 @@ tcm run /create /title:title /planid:id /collection:CollectionURL /teamproject:p
 |**/owner**:`owner`| Optional. Specifies the owner of the test run.    |
 |**/builddir**:`directory`| Optional. Specifies the build directory to use to locate the test assemblies for the test. If this isn't specified, the build location is used based on the build that is currently assigned to the test plan.    |
 |**/testenvironment**:`name`| Optional. Specifies the test environment that you want to use for this test run. If you don't select a test environment, the default test environment in the test plan is used.    |
-|**/include**| Optional. Specifies that all tests that are selected for the test run are included, even if the tests are not currently set to the Active state.    |
+|**/include**| Optional. Specifies that all tests that are selected for the test run are included, even if the tests aren't currently set to the Active state.    |
 
 [!INCLUDE [prerequisites-define](includes/common-tcm-parameters.md)]
 
@@ -447,7 +416,7 @@ tcm run /abort /id:id /collection:teamprojectcollectionurl /teamproject:project 
 
 **Example**
 
-The following command stops the test run with the **ID** *1000082* for the *Fabrikam Fiber* project hosted in the *fabrikamprime* organization. The results confirm the **ID** and **Title** of the cancelled run.
+The following command stops the test run with the **ID** *1000082* for the *Fabrikam Fiber* project hosted in the *fabrikamprime* organization. The results confirm the **ID** and **Title** of the canceled run.
 
 ```tcm 
 tcm run /abort /id:1000082 /collection:https://fabrikamprime.visualstudio.com /teamproject:"Fabrikam Fiber"
@@ -575,8 +544,8 @@ Select the build you want from the drop-down list.
 
 ![Selecting the build to include a link to in the results](media/run-manual-tests/select-build-for-webrunner.png) 
 
-Any bug filed during the run will automatically be associated with the selected build.
-The test outcome will be published against that build.
+Any bug filed during the run is automatically associated with the selected build.
+The test outcome is published against that build.
 
 > [!NOTE]
 > The selected build must be from the project in which the tests are defined.
@@ -621,9 +590,9 @@ For Microsoft Internet Explorer or Microsoft Edge browsers, or for desktop app t
 
 For more information, see [Collect diagnostic data](collect-diagnostic-data.md#web-recording).
 
-### Q: Some of the attachments for the test run are not showing the preview option?
+### Q: Some of the attachments for the test run aren't showing the preview option?
 
-**A:** You can only preview files with txt and log extensions. Click on the preview option for txt or log extension files, and another UI will open up with the drop down field showing all the attachments for the test run. If you select a file with an extension type other than txt or log, the following message is shown: "You can only preview files with txt and log extensions, click here to download the attachment"
+**A:** You can only preview files with txt and log extensions. Select the preview option for txt or log extension files, and another UI opens with the drop-down field showing all the attachments for the test run. If you select a file with an extension type other than txt or log, the following message displays: "You can only preview files with txt and log extensions, click here to download the attachment"
 
 ### Q: How do I control how long I keep my test data?
 
@@ -637,13 +606,13 @@ For more information, see [Collect diagnostic data](collect-diagnostic-data.md#w
 
 **A:** The Test Runner desktop client is currently supported only on Windows x64 platform.
 
-### Q: I am observing test run failures when using the Azure Test Runner desktop client.
+### Q: I'm observing test run failures when using the Azure Test Runner desktop client.
 
-**A:** Make sure you are using latest version of Test Runner desktop client. Download the [Test Runner desktop client](https://aka.ms/ATPTestRunnerDownload)
+**A:** Make sure you're using latest version of Test Runner desktop client. Download the [Test Runner desktop client](https://aka.ms/ATPTestRunnerDownload)
 
 ### Q: Does the Azure Test Runner desktop client work on devices with Microsoft Entra Conditional Access enabled?
 
-**A:** Azure Test Runner might not work if your organization uses a conditional access policy via Microsoft Entra. For more information, see [Conditional access common decisions](/entra/identity/conditional-access/overview#common-decisions). This is a known limitation and our recommendation is to use web runner in this scenario.
+**A:** Azure Test Runner might not work if your organization uses a conditional access policy via Microsoft Entra. For more information, see [Conditional access common decisions](/entra/identity/conditional-access/overview#common-decisions). This experience is a known limitation and our recommendation is to use web runner in this scenario.
 
 ### Q: Can I opt out of telemetry for the Test Runner client?
 

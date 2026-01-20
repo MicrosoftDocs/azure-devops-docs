@@ -2,13 +2,13 @@
 title: Complete post migration tasks
 titleSuffix: Azure DevOps
 description: Guidance on how to configure an organization after it migrates to Azure DevOps Services.
-ms.topic: conceptual
+ms.topic: how-to
 ms.subservice: azure-devops-migrate
 ms.contentid: db186305-0d82-4152-bb04-e7b44b56305f
 ms.author: chcomley
 author: chcomley
 monikerRange: '<= azure-devops'
-ms.date: 09/18/2025
+ms.date: 10/14/2025
 ---
 
 # Complete post migration tasks
@@ -26,18 +26,18 @@ We recommend validating the following:
 - **Build history**: Verify that the complete build history is intact and matches expectations.
 - **Area paths**: Ensure all area paths are present and correctly structured.
 - **Work items**: Review a representative sample of work items to confirm data integrity and relationships.
-- **Permissions & security**: Validate that user permissions, groups, and access controls are correctly configured.
+- **Permissions & security**: Validate that user permissions, groups, and access controls are correctly configured. Depending on how users are set up in your Azure DevOps Server, they might not appear in the Users hub of your new organization until after they sign in for the first time. If any users are missing post-migration, have them sign in and then recheck their status.
 - **Service connections & pipelines**: Check that service connections and pipeline configurations are functional.
 - **Dashboards & widgets**: Confirm that dashboards render correctly and widgets display expected data.
 
 This validation helps identify any missing, incomplete, or misconfigured data before opening the organization to your broader user base, ensuring a smooth transition and minimizing disruption.
 
 > [!IMPORTANT]
-> Do not remove or destroy your on-premises data or decommission systems until you confirm that all expected data and functionality exist in the migrated organization.
+> Don't remove or destroy your on-premises data or decommission systems until you confirm that all expected data and functionality exist in the migrated organization.
 
 ## Rename organization (optional) 
 
-In the [Get started phase](migration-get-started.md), you might have already created organizations with the final Azure DevOps Services organization names that you want to use. If this is your final migration, you can rename your newly migrated Azure DevOps Services organization to that desired name. For more information, see [Rename your organization](../organizations/accounts/rename-organization.md). 
+If you created a placeholder organization with your desired name during the [Get started phase](migration-get-started.md), you can now rename your migrated organization to replace it. This step is only necessary if this is your final migration and you want to use a specific organization name. For more information, see [Rename your organization](../organizations/accounts/rename-organization.md). 
 
 ## Set up billing 
 

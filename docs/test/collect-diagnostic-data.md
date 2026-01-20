@@ -4,7 +4,7 @@ description: Learn about collecting diagnostic data while testing web and deskto
 ms.assetid: F536C364-BEFC-48A8-B977-19233941EF6A
 ms.service: azure-devops-test-plans
 ms.custom: UpdateFrequency3
-ms.topic: conceptual
+ms.topic: how-to
 ms.author: jeom
 author: rohit-batra
 monikerRange: '<= azure-devops'
@@ -104,7 +104,7 @@ Do the following steps to capture screen recordings from your apps.
 
 1. Choose the entire screen, or choose an app to start recording.
 
-   ::: moniker range=">=azure-devops-2020"
+   ::: moniker range="<=azure-devops"
    ![Screenshot showing selection of the screen or app to share.](media/collect-diagnostic-data/choose-test-feedback-share.png)
    ::: moniker-end
    

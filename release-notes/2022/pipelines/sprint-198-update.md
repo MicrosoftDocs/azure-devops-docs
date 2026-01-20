@@ -4,6 +4,7 @@ description: See the Sprint 198 feature updates for Azure Pipelines, including n
 author: gloridelmorales
 ms.author: glmorale
 ms.date: 1/19/2022
+ms.topic: release-notes
 ---
 
 # Azure Pipelines - Sprint 198 Update

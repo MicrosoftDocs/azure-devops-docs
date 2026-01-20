@@ -1,16 +1,16 @@
 ---
 title: Use runtime and type-safe parameters
 description: Learn how to use runtime parameters to customize pipeline behavior, control data types, and dynamically pass values.
-ms.topic: conceptual
+ms.topic: concept-article
 ms.date: 07/15/2025
-monikerRange: '>=azure-devops-2020'
+monikerRange: "<=azure-devops"
 ai-usage: ai-assisted
 #customer intent: As a developer, I want to use runtime parameters in Azure Pipelines so that I can customize pipeline behavior dynamically.
 ---
 
 # Runtime parameters
 
-[!INCLUDE [version-gt-eq-2020](../../includes/version-gt-eq-2020.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 Runtime parameters give you more control over the values you pass to a pipeline. With runtime parameters, you can:
 - Supply different values to scripts and tasks at runtime
@@ -147,7 +147,6 @@ stages:
     steps:
     - script: echo running Build
 
-
 - stage: UnitTest
   displayName: Unit Test
   dependsOn: Build
@@ -155,7 +154,6 @@ stages:
   - job: UnitTest
     steps:
     - script: echo running UnitTest
-
 
 - ${{ if eq(parameters.runPerfTests, true) }}:
   - stage: PerfTest
@@ -166,7 +164,6 @@ stages:
       steps:
       - script: echo running PerfTest
 
-
 - stage: Deploy
   displayName: Deploy
   dependsOn: UnitTest
@@ -175,7 +172,6 @@ stages:
     steps:
     - script: echo running UnitTest
 ```
-
 
 ### Check for an empty parameter object
 
