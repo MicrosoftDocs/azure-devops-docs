@@ -1,40 +1,40 @@
 ---
-title: Strengthening Test Planning and Advancing Security Coverage
+title: Placeholder
 author: gloridelmorales
 ms.author: glmorale
-ms.date: 12/18/2025
-description: Strengthening Test Planning and Advancing Security Coverage
+ms.date: 1/26/2025
+description: Placeholder
 ---
 
-# Strengthening Test Planning and Advancing Security Coverage
+# TBD
 
-Sprint 266 delivers focused improvements to security, reliability, and usability across Azure DevOps. This update includes refinements to Azure Test Plans that improve testing workflows and reporting, along with enhancements to GitHub Advanced Security for Azure DevOps to help teams better identify and manage code vulnerabilities. 
+Placeholder 
 
 Check out the release notes for details.
 
 ### GitHub Advanced Security for Azure DevOps
-[!INCLUDE [sprint-266-update-links](includes/ghazdo/sprint-266-update-links.md)]
+[!INCLUDE [sprint-268-update-links](includes/ghazdo/sprint-268-update-links.md)]
+
+### Boards
+[!INCLUDE [sprint-268-update-links](includes/repos/sprint-268-update-links.md)]
 
 ### Repos
-[!INCLUDE [sprint-266-update-links](includes/repos/sprint-266-update-links.md)]
-
-### Pipelines
-[!INCLUDE [sprint-266-update-links](includes/pipelines/sprint-266-update-links.md)]
+[!INCLUDE [sprint-268-update-links](includes/repos/sprint-268-update-links.md)]
 
 ### Test Plans
-[!INCLUDE [sprint-266-update-links](includes/testplans/sprint-266-update-links.md)]
+[!INCLUDE [sprint-268-update-links](includes/testplans/sprint-268-update-links.md)]
 
 ## GitHub Advanced Security for Azure DevOps
-[!INCLUDE [sprint-266-update](includes/ghazdo/sprint-266-update.md)]
+[!INCLUDE [sprint-268-update](includes/ghazdo/sprint-268-update.md)]
+
+## Boards
+[!INCLUDE [sprint-268-update](includes/boards/sprint-268-update.md)]
 
 ## Repos
-[!INCLUDE [sprint-266-update](includes/repos/sprint-266-update.md)]
-
-## Pipelines
-[!INCLUDE [sprint-266-update](includes/pipelines/sprint-266-update.md)]
+[!INCLUDE [sprint-268-update](includes/repos/sprint-268-update.md)]
 
 ## Test Plans
-[!INCLUDE [sprint-266-update](includes/testplans/sprint-266-update.md)]
+[!INCLUDE [sprint-268-update](includes/testplans/sprint-268-update.md)]
 
 ## Next steps
 

@@ -2,10 +2,13 @@
 author:gloridelmorales
 ms.author: glmorale
 ms.technology: devops-release-notes
-ms.date: 12/19/2025
+ms.date: 1/26/2026
 ms.topic: include
 ---
 
-- [Associate test cases from work item is now generally available](#associate-test-cases-from-work-item-is-now-generally-available)
-- [Support for data-driven tests with VSTest task](#support-for-data-driven-tests-with-vstest-task)
-- [Bug fixes and accessibility improvements](#bug-fixes-and-accessibility-improvements)
+- [New Test Case import](#new-test-case-import)
+- [Focused test point history panel](#focused-test-point-history-panel)
+- [Recent test result in user story](#recent-test-result-in-user-story)
+- [New Test Run hub](#new-test-run-hub)
+- [Test and feedback extension](#test-and-feedback-extension)
+- [Resuming Paused Test Cases is the Default Action](#resuming-paused-test-cases-is-the-default-action)

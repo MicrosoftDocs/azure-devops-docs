@@ -14,7 +14,7 @@ If you're interested in trying this feature out in private preview, fill out you
 
 ### CodeQL build task updated to Node.js v24
 
-The Advanced Security CodeQL tasks ([`AdvancedSecurity-CodeQL-Init@1`](/azure/devops/pipelines/tasks/reference/advanced-security-codeql-init-v1) and [`AdvancedSecurity-Codeql-Analyze@1`](/azure/devops/pipelines/tasks/reference/advanced-security-codeql-analyze-v1)) now require Node.js v24, aligning with Azure Pipelines agent updates. If you're using self-hosted agents, ensure Node.js v24 is installed on your agent machines to continue running CodeQL scans. Microsoft-hosted agents are already updated with Node.js v24 support.
+The Advanced Security CodeQL tasks [`AdvancedSecurity-CodeQL-Init@1`](/azure/devops/pipelines/tasks/reference/advanced-security-codeql-init-v1) and [`AdvancedSecurity-Codeql-Analyze@1`](/azure/devops/pipelines/tasks/reference/advanced-security-codeql-analyze-v1) now require Node.js v24, aligning with Azure Pipelines agent updates. If you're using self-hosted agents, ensure Node.js v24 is installed on your agent machines to continue running CodeQL scans. Microsoft-hosted agents are already updated with Node.js v24 support.
 
 ### CodeQL autobuild task deprecated
 

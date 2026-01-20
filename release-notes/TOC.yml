@@ -311,6 +311,11 @@
       items:
       - name: Azure Boards
         items:
+        - name: "2026"
+          items:
+          - name: January 26
+            href: 2026/boards/sprint-268-update.md
+          expanded: false
         - name: "2025"
           items:
           - name: November 4
@@ -485,6 +490,11 @@
             href: 2019/boards/sprint-146-update.md
       - name: Azure Repos
         items:
+        - name: "2026"
+          items:
+          - name: January 26
+            href: 2026/repos/sprint-268-update.md
+          expanded: false
         - name: "2025"
           items:
           - name: December 19
@@ -829,6 +839,11 @@
         expanded: false
       - name: Azure Test Plans
         items:
+        - name: "2026"
+          items:
+          - name: January 26
+            href: 2026/testplans/sprint-268-update.md
+          expanded: false
         - name: "2025"
           items:
           - name: December 19
@@ -965,6 +980,11 @@
         expanded: false
       - name: GitHub Advanced Security for Azure DevOps
         items:
+        - name: "2026"
+          items:
+          - name: January 26
+            href: 2026/ghazdo/sprint-268-update.md
+          expanded: false
         - name: "2025"
           items:
           - name: December 19
