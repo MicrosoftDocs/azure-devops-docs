@@ -23,6 +23,10 @@
       "redirect_document_id": false
     },
     {
+      "source_path_from_root": "/docs/pipelines/agents/hosted.md#how-to-identify-pipelines-using-a-deprecated-hosted-image",
+      "redirect_url": "/azure/devops/pipelines/agents/hosted-lifecycle#how-to-identify-pipelines-using-a-deprecated-hosted-image"
+    },
+    {
       "source_path_from_root": "/docs/pipelines/library/government-cloud.md",
       "redirect_url": "/azure/azure-government/connect-with-azure-pipelines",
       "redirect_document_id": false
