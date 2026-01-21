@@ -109,8 +109,7 @@ To update classic pipelines:
 
 If you still need to use an image scheduled to be deprecated after its deprecation, consider the following alternatives:
 
-- Use a container job to specify the ImageX container independently of the hosted image.
-Example:
+- Use a container job to specify the container independently of the hosted image. In the following example, an Ubuntu 20.04 container that's hosted on the `ubuntu-latest` image is used to run the pipeline.
 
 ```yml
   jobs:
