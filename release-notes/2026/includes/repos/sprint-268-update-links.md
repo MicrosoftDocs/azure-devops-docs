@@ -6,6 +6,6 @@ ms.date: 1/26/2026
 ms.topic: include
 ---
 
-- [Pull Request Notification Improvements](#pull-request-notification-improvements)
-- [Pull Request Templates for Multi-Level Branches](#pull-request-templates-for-multi-level-branches)
-- [Breaking Change: Disabling of obsolete TFVC Check-In Policies](#breaking-change-disabling-of-obsolete-tfvc-check-in-policies)
+- [Pull request notification improvements](#pull-request-notification-improvements)
+- [Pull request templates for multi-level branches](#pull-request-templates-for-multi-level-branches)
+- [Breaking Change: Disabling of obsolete TFVC check-in policies](#breaking-change-disabling-of-obsolete-tfvc-check-in-policies)

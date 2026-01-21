@@ -18,13 +18,13 @@ The Advanced Security CodeQL tasks [`AdvancedSecurity-CodeQL-Init@1`](/azure/dev
 
 ### CodeQL autobuild task deprecated
 
-The `AdvancedSecurity-Codeql-Autobuild` task is now deprecated in favor of buildless scanning with `buildtype: none`. Buildless scanning simplifies pipeline configuration by eliminating the need for explicit build steps while maintaining analysis coverage for supported languages. If you're currently using the Autobuild task, update your pipelines to use `buildtype: none` in the [`AdvancedSecurity-CodeQL-Init@1`](/azure/devops/pipelines/tasks/reference/advanced-security-codeql-init-v1) task instead. The Autobuild task will no longer function and will be completely removed by March 1, 2026. For migration guidance, see [Configure code scanning](/azure/devops/repos/security/github-advanced-security-code-scanning?view=azure-devops).
+The `AdvancedSecurity-Codeql-Autobuild` task is now deprecated in favor of buildless scanning with `buildtype: none`. Buildless scanning simplifies pipeline configuration by eliminating the need for explicit build steps while maintaining analysis coverage for supported languages. If you're currently using the Autobuild task, update your pipelines to use `buildtype: none` in the [`AdvancedSecurity-CodeQL-Init@1`](/azure/devops/pipelines/tasks/reference/advanced-security-codeql-init-v1) task instead. The Autobuild task will stop working and will be completely removed by March 1, 2026. For migration guidance, see [Configure code scanning](/azure/devops/repos/security/github-advanced-security-code-scanning?view=azure-devops).
 
 ### Service hooks event for secret validation status
 
 A new service hooks event is now available for secret scanning alerts: **Advanced Security alerts validity status updated**. This event triggers when a detected secret is validated. You can configure this event in your service hooks subscriptions to integrate secret validation workflows with external systems, enabling automated responses to validated credential leaks. For more information, see [Configure service hooks](/azure/devops/service-hooks/overview?view=azure-devops).
 
-### Secrets tab now default in repository view
+### Secrets tab is now the default in repository view
 
 The Advanced Security tab order in repository settings has been updated. The **Secrets** tab now appears first, followed by **Dependencies** and **Code**. This change reflects usage patterns where secret scanning alerts are typically the highest priority for immediate remediation, improving navigation for security teams reviewing repository findings.
 

@@ -6,11 +6,11 @@ ms.date: 1/26/2026
 ms.topic: include
 ---
 
-### Pull Request Notification Improvements
+### Pull request notification improvements
 
 To help teams focus on the most relevant pull request activity, we’ve improved Azure DevOps email notifications to reduce noise and highlight meaningful changes. Several low-value notifications, including draft transitions and auto-complete updates, have been removed entirely. For remaining notifications, we’ve simplified the content to emphasize what changed, such as affected files, while removing redundant details like full reviewer and commit lists. These updates are designed to make pull request emails easier to scan, more actionable, and better aligned with how teams review and collaborate together.
 
-### Pull Request Templates for Multi-Level Branches
+### Pull request templates for multi-level branches
 [Pull request templates](/azure/devops/repos/git/pull-request-templates?view=azure-devops) will now support a nested folder structure corresponding with multi-level branches. If you open a PR against a branch called `feature/foo/december`, a template will be searched for in the following locations in order of preference:
 
 1.  `<pull request template path>/branches/feature/foo/december.md`
@@ -20,7 +20,7 @@ To help teams focus on the most relevant pull request activity, we’ve improved
 
 The most specific template will be applied to the PR, in this case `feature/foo/december.md` if it exists. If not, `feature/foo.md` will be applied, and if that doesn't exist, `feature.md` will be used.
 
-### Breaking Change: Disabling of obsolete TFVC Check-In Policies
+### Breaking Change: Disabling of obsolete TFVC check-in policies
 
 In April 2025, [we announced changes](https://devblogs.microsoft.com/devops/tfvc-policies-storage-updates) to how TFVC check-in policies are stored. These changes affect any TFVC projects that use check-in policies such as Build (require the last build to succeed), Work Item (require an associated work item), Changeset Comments (require users to add a comment to their check-in), and others.
 

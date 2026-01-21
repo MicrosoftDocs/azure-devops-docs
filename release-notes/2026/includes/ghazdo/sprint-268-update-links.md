@@ -10,5 +10,5 @@ ms.topic: include
 - [CodeQL build task updated to Node.js v24](#codeql-build-task-updated-to-nodejs-v24)
 - [CodeQL autobuild task deprecated](#codeql-autobuild-task-deprecated)
 - [Service hooks event for secret validation status](#service-hooks-event-for-secret-validation-status)
-- [Secrets tab now default in repository view](#secrets-tab-now-default-in-repository-view)
+- [Secrets tab is now the default in repository view](#secrets-tab-is-now-the-default-in-repository-view)
 - [Work item linking API for alerts](#work-item-linking-api-for-alerts)

@@ -6,4 +6,4 @@ ms.date: 1/26/2026
 ms.topic: include
 ---
 
-- [GitHub Copilot integration for Azure Boards](#github-copilot-integration-for-azure-boards)
+- [General availability of GitHub Copilot integration for Azure Boards](#general-availability-of-github-copilot-integration-for-azure-boards)

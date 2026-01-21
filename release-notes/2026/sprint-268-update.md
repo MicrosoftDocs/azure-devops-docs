@@ -1,14 +1,18 @@
 ---
-title: Placeholder
+title: Streamlined Test Plans with Improved Visibility and Faster Execution
 author: gloridelmorales
 ms.author: glmorale
 ms.date: 1/26/2025
-description: Placeholder
+description: Streamlined Test Plans with Improved Visibility and Faster Execution
 ---
 
-# TBD
+# Streamlined Test Plans with Improved Visibility and Faster Execution
 
-Placeholder 
+This release introduces a set of enhancements to Azure DevOps Test Plans aimed at improving productivity, visibility, and test traceability across the testing workflow. Teams can now import test cases more efficiently, view focused execution history at the test point level, track recent test results directly from user stories, and take advantage of a new Test Run Hub with improved usability and richer diagnostics. Together, these updates reduce navigation friction, make test progress easier to understand at a glance, and help testers move faster while staying focused on the most relevant results.
+
+Alongside the general availability of the Test Run Hub, the GitHub Copilot integration is now also generally available. 
+
+In addition, CodeQL scanning gets simpler with default setup in preview, Node.js v24 alignment, and a move away from legacy Autobuild configurations.
 
 Check out the release notes for details.
 
@@ -16,7 +20,7 @@ Check out the release notes for details.
 [!INCLUDE [sprint-268-update-links](includes/ghazdo/sprint-268-update-links.md)]
 
 ### Boards
-[!INCLUDE [sprint-268-update-links](includes/repos/sprint-268-update-links.md)]
+[!INCLUDE [sprint-268-update-links](includes/boards/sprint-268-update-links.md)]
 
 ### Repos
 [!INCLUDE [sprint-268-update-links](includes/repos/sprint-268-update-links.md)]
