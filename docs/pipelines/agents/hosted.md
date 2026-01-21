@@ -126,9 +126,9 @@ The macOS 15 Sequoia ARM64 Azure Pipelines hosted agent image has following know
 
 ### How to identify pipelines using a deprecated hosted image
 
-To identify pipelines that are using a deprecated image, browse to the following location in your organization: `https://dev.azure.com/{organization}/{project}/_settings/agentqueues`, and filter on the image name to check. The following example checks the `vs2017-win2016` image.
+To identify pipelines that are using a deprecated image, browse to the following location in your organization: `https://dev.azure.com/{organization}/{project}/_settings/agentqueues`, and filter on the image name to check. The following example checks the `macos-13` image.
 
-:::image type="content" source="media/pool-filter-vs2017-win2016.png" alt-text="Screenshot of filtering pipelines by image name.":::
+:::image type="content" source="media/pool-filter.png" alt-text="Screenshot of filtering pipelines by image name.":::
 
 You can also query job history for deprecated images across projects using the script located [here](https://github.com/microsoft/azure-pipelines-agent/tree/master/tools/FindPipelinesUsingRetiredImages), as shown in the following example.
 
