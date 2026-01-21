@@ -212,6 +212,15 @@ Use the service connection with artifact authentication tasks:
 - Verify that the target organization name is correctly spelled in the service connection configuration.
 - Confirm that the service principal has the required permissions in the target organization.
 
+### Common error messages
+
+| Message | Meaning & mitigation |
+|---------|----------------------|
+| _The Managed Identity / Service Principal `<sp/msi name>` does not have access to Azure DevOps organization `<org>`. Please make sure the identity has been added to the organization. See https://aka.ms/azdosc#prerequisites_  | Verify that you added the service principal [as a user](/azure/devops/integrate/get-started/authentication/service-principal-managed-identity#step-2-add-the-identity-to-azure-devops) to your organization |
+| _You don't have permission to the selected identity. Service connection is saved as draft. To complete the configuration, contact the owner of the identity to create a federated credential in the Azure portal using the Issuer and Subject Identifier below._ | If the logged-in user does not have sufficient permissions, follow the instructions displayed to create federated credentials directly on the identity. |
+| _ERROR: TF401444: Please sign-in at least once as 72f988bf-86f1-41af-91ab-2d7cd011db47\72f988bf-86f1-41af-91ab-2d7cd011db47\115c3ab3-943b-4e0c-96ed-1a1763fbaa44 in a web browser to enable access to the service._ | Verify that you added the service principal [as a user](/azure/devops/integrate/get-started/authentication/service-principal-managed-identity#step-2-add-the-identity-to-azure-devops) to your organization |
+| _VS800075: The project with id 'vstfs:///Classification/TeamProject/fecf8af7-f0ac-4389-a0ae-06dbd40fcb75' does not exist, or you do not have permission to access it._  | If a user is not added to a project, e.g. the `Readers` group - Navigate service connection details page > 'View access in the current organization' > 'Member of' > Select a group to add the identity to.   Alternatively, navigate to Organization Settings > Users > The identity used for the service connection > Manage access > select the project(s) the identity needs to access|
+
 ## Next steps
 
 - [Use service connections in your pipeline](service-endpoints.md)
