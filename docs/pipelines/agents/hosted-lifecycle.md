@@ -6,7 +6,7 @@ ms.date: 01/21/2026
 monikerRange: 'azure-devops'
 ---
 
-# Microsoft-hosted agent lifecycle
+# Microsoft-hosted agent deprecation schedule
 
 [!INCLUDE [version-eq-azure-devops](../../includes/version-eq-azure-devops.md)]
 
@@ -14,11 +14,11 @@ The Azure Pipelines team supports (at maximum) 2 GA hosted images and 1 hosted b
 
 The following hosted agent images are scheduled for deprecation:
 
-* **Windows hosted agent images**: No Windows hosted agent images are currently scheduled for deprecation.
-* **Linux hosted agent images**: No Linux hosted agent images are currently scheduled for deprecation.
-* **macOS hosted agent images**: [macOS 14 Sonoma hosted image deprecation schedule](?tabs=macos-images#macos-14-sonoma-hosted-image-deprecation-schedule)
+* [macOS 14 Sonoma hosted image deprecation schedule](?tabs=macos-images#macos-14-sonoma-hosted-image-deprecation-schedule)
 
 For more information on the software lifecycle and deprecation schedule of images and software, see [GitHub Actions Runner Images - Software and Image Support](https://github.com/actions/runner-images/tree/main?tab=readme-ov-file#software-and-image-support).
+
+## Deprecation schedules
 
 #### [Windows images](#tab/windows-images/)
 

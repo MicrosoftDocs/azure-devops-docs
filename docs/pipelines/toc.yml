@@ -260,7 +260,7 @@
     items:
     - name: Hosted agents
       href: agents/hosted.md
-    - name: Hosted agent lifecycle
+    - name: Deprecation schedule
       href: agents/hosted-lifecycle.md
   - name: Self-hosted Linux agents
     href: agents/linux-agent.md
