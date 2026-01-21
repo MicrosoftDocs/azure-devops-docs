@@ -40,7 +40,6 @@ You can see the installed software for each Windows hosted agent image by choosi
 
 * The Windows Server 2019 hosted agent image was retired on December 31, 2025.
 * [[Windows & Ubuntu] .NET 6 was removed from the images on August 1, 2025.](https://github.com/actions/runner-images/issues/12241)
-* [Windows Server 2019 hosted image deprecation schedule](#windows-server-2019-hosted-image-deprecation-schedule)
 
 #### [Linux images](#tab/linux-images/)
 
@@ -66,7 +65,7 @@ You can see the installed software for each macOS hosted agent by choosing the *
 | --- | --- | --- | --- |
 | macOS 15 Sequoia | *macOS-15* | `macOS-latest` OR `macOS-15` | [Link](https://github.com/actions/runner-images/blob/main/images/macos/macos-15-Readme.md) |
 | macOS 15 Sequoia ARM64<br>*limited public preview* | *macOS-15-arm64* | `macOS-15-arm64` | [Link](https://github.com/actions/runner-images/blob/main/images/macos/macos-15-arm64-Readme.md) |
-| macOS 14 Sonoma<br>*[macOS 14 Sonoma hosted image deprecation schedule](./hosted-lifecycle.md#macos-14-sonoma-hosted-image-deprecation-schedule?tabs=macos-images)* | *macOS-14* | `macOS-14` | [Link](https://aka.ms/macOS-14-readme) |
+| macOS 14 Sonoma<br>*[macOS 14 Sonoma hosted image deprecation schedule](./hosted-lifecycle.md?tabs=macos-images#macos-14-sonoma-hosted-image-deprecation-schedule)* | *macOS-14* | `macOS-14` | [Link](https://aka.ms/macOS-14-readme) |
 
 #### macOS 15 ARM64 image limited public preview
 
@@ -83,7 +82,7 @@ The macOS 15 Sequoia ARM64 Azure Pipelines hosted agent image has following know
 
 #### macOS images updates
 
-* The macOS 14 Sonoma image will be deprecated starting July 6, 2026. For more information, see [macOS 14 Sonoma hosted image deprecation schedule](./hosted-lifecycle.md#macos-14-sonoma-hosted-image-deprecation-schedule?tabs=macos-images).
+* The macOS 14 Sonoma image will be deprecated starting July 6, 2026. For more information, see [macOS 14 Sonoma hosted image deprecation schedule](./hosted-lifecycle.md?tabs=macos-images#macos-14-sonoma-hosted-image-deprecation-schedule).
 * The macOS 15 Sequoia ARM64 Azure Pipelines hosted agent image is in preview.
 * The macOS 13 Ventura image was deprecated starting September 1, 2025, and was retired on December 4, 2025.
 * [[macOS] Starting August 11, 2025, if your workflow is running on a macOS 15 based image and depends on one of the platform versions (iOS/watchOS/tvOS/visionOS) lower than Xcode 16.3 compatible, they will be broken](https://github.com/actions/runner-images/issues/12541).
