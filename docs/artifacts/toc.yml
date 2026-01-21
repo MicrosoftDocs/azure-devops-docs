@@ -23,9 +23,9 @@
   - name: Limits on package sizes and counts
     displayName: size, count, package, limit, storage, consumption
     href: reference/limits.md
-  - name: Follow a package for publish alerts
-    displayName: notification, package, alert, follow
+  - name: Package notifications
     href: how-to/follow-package-notifications.md
+    displayName: notification, package, alert, follow
   - name: Search packages
     displayName: search, packages
     href: ../project/search/functional-package-search.md?toc=/azure/devops/artifacts/toc.json
