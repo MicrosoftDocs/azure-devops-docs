@@ -118,7 +118,8 @@ To update classic pipelines:
 
 ## Alternative methods to use a deprecated image
 
-If you still need to use ImageX after its deprecation, consider the following alternatives:
+If you still need to use an image scheduled to be deprecated after its deprecation, consider the following alternatives:
+
 - Use a container job to specify the ImageX container independently of the hosted image.
 Example:
 
@@ -135,18 +136,23 @@ Example:
 
 ## FAQ
 
-Q: How to know if my Azure DevOps organization or pipelines are impacted?
-A: Use the detection script or check the agent queues as described above.
+### How to know if my Azure DevOps organization or pipelines are impacted?
 
-Q: I am using ImageX in Self Hosted Agents. Is my pipeline impacted?
-A: No, only Microsoft Hosted images are impacted.
+Use the detection script or check the agent queues as described in [How to identify pipelines using a deprecated hosted image](#how-to-identify-pipelines-using-a-deprecated-hosted-image).
 
-Q: I am using ImageX in MDP. Is my pipeline impacted?
-A: No, MDP usage is not impacted.
+### I am using an image scheduled to be deprecated in self-hosted agents. Is my pipeline impacted?
 
-Q: I am using ImageX in classic pipeline. Is my pipeline impacted?
-A: Yes, classic pipelines using ImageX are impacted.
+No, only Microsoft Hosted images are impacted.
 
-Q: I am using ImageX container image. Is my pipeline impacted?
-A: No, container images are not impacted by the hosted image deprecation.
+### I am using an image scheduled to be deprecated in Managed DevOps Pools. Is my pipeline impacted?
+
+Managed DevOps Pools does offer [Azure Pipelines images](../../managed-devops-pools/configure-images.md#azure-pipelines-images), but they are not directly impacted by the Microsoft-hosted image deprecations. Managed DevOps Pools images have their own lifecycle and deprecation schedule. For more information, see [Azure Pipelines images: Image lifecycle](../../managed-devops-pools/configure-images.md#image-lifecycle).
+
+### I am using an image scheduled to be deprecated in classic pipeline. Is my pipeline impacted?
+
+Yes, if your classic pipeline is using a Microsoft-hosted image that is scheduled for deprecation, it is are impacted.
+
+### I am using a container image with an image scheduled to be deprecated. Is my pipeline impacted?
+
+No, container images are not impacted by the hosted image deprecation.
 
