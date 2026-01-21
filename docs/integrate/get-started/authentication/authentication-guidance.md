@@ -149,3 +149,4 @@ After you choose the authentication method for your scenario, finish the impleme
 - [Azure DevOps Services REST API reference](/rest/api/azure/devops)
 - [Security and identity in Azure DevOps](../../../organizations/security/about-security-identity.md)
 - [Azure DevOps data protection overview](../../../organizations/security/data-protection.md)
+- [Access Azure DevOps with Entra workload identity](../../../pipelines/library/add-devops-entra-service-connection.md)
