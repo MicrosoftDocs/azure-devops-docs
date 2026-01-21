@@ -1,8 +1,8 @@
 ---
-title: Microsoft-hosted agent lifecycle for Azure Pipelines
-description: Learn about the lifecycle of Microsoft-hosted agents provided in Azure Pipelines
+title: Microsoft-hosted agent deprecations for Azure Pipelines
+description: Learn about the lifecycle and deprecation schedule of Microsoft-hosted agents provided in Azure Pipelines
 ms.topic: concept-article
-ms.date: 01/20/2026
+ms.date: 01/21/2026
 monikerRange: 'azure-devops'
 ---
 
@@ -14,23 +14,19 @@ The Azure Pipelines team supports (at maximum) 2 GA hosted images and 1 hosted b
 
 The following hosted agent images are scheduled for deprecation:
 
-* [macOS 14 Sonoma hosted image deprecation schedule](?tabs=macos-images#macos-14-sonoma-hosted-image-deprecation-schedule)
+* **Windows hosted agent images**: No Windows hosted agent images are currently scheduled for deprecation.
+* **Linux hosted agent images**: No Linux hosted agent images are currently scheduled for deprecation.
+* **macOS hosted agent images**: [macOS 14 Sonoma hosted image deprecation schedule](?tabs=macos-images#macos-14-sonoma-hosted-image-deprecation-schedule)
 
 For more information on the software lifecycle and deprecation schedule of images and software, see [GitHub Actions Runner Images - Software and Image Support](https://github.com/actions/runner-images/tree/main?tab=readme-ov-file#software-and-image-support).
 
 #### [Windows images](#tab/windows-images/)
 
-#### Windows image updates
-
-* Windows 2019 hosted image was retired on December 31, 2025.
-* [[Windows & Ubuntu] .NET 6 was removed from the images on August 1, 2025.](https://github.com/actions/runner-images/issues/12241)
+No Windows hosted agent images are currently scheduled for deprecation.
 
 #### [Linux images](#tab/linux-images/)
 
-#### Linux images updates
-
-* [[Windows & Ubuntu] .NET 6 was removed from the images on August 1, 2025.](https://github.com/actions/runner-images/issues/12241)
-* [The Ubuntu 20.04 image is retired](https://devblogs.microsoft.com/devops/upcoming-updates-for-azure-pipelines-agents-images/#ubuntu).
+No Linux hosted agent images are currently scheduled for deprecation.
 
 #### [macOS images](#tab/macos-images/)
 
@@ -65,13 +61,6 @@ Workflows using the macOS 14 Sonoma hosted image should be updated to `macos-lat
 To identify your pipelines that are using the macOS 14 Sonoma hosted image, follow the instructions in the [How to identify pipelines using a deprecated hosted image](#how-to-identify-pipelines-using-a-deprecated-hosted-image) section.
 
 To update your affected YAML pipelines to a new image, see [Update classic pipelines to use a new image](#update-classic-pipelines-to-use-a-new-image). To update your classic pipelines see [Update classic pipelines to use a new image](#update-classic-pipelines-to-use-a-new-image).
-
-#### macOS images updates
-
-* The macOS 15 Sequoia ARM64 Azure Pipelines hosted agent image is in preview.
-* The macOS 13 Ventura image was deprecated starting September 1, 2025, and was retired on December 4, 2025. For more information, see [Upcoming Updates for Azure Pipelines Agents Images - macOS 13 Ventura](https://devblogs.microsoft.com/devops/upcoming-updates-for-azure-pipelines-agents-images/#mac-os).
-* [[macOS] Starting August 11, 2025, if your workflow is running on a macOS 15 based image and depends on one of the platform versions (iOS/watchOS/tvOS/visionOS) lower than Xcode 16.3 compatible, they will be broken](https://github.com/actions/runner-images/issues/12541).
-* [[macOS] Xcode 15.4 was removed from macOS15 images on May 29, 2025](https://github.com/actions/runner-images/issues/12195)
 
 * * *
 

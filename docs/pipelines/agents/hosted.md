@@ -3,7 +3,7 @@ title: Microsoft-hosted agents for Azure Pipelines
 description: Learn about using the Microsoft-hosted agents provided in Azure Pipelines
 ms.topic: concept-article
 ms.assetid: D17E9C01-8026-41E8-B44A-AB17EDE4AFBD
-ms.date: 12/16/2025
+ms.date: 01/21/2026
 monikerRange: '<= azure-devops'
 ---
 
@@ -35,23 +35,12 @@ You can see the installed software for each Windows hosted agent image by choosi
 | --- | --- | --- | --- |
 | Windows Server 2025 with Visual Studio 2022 | *windows-2025* | `windows-latest` OR `windows-2025` | [Link](https://github.com/actions/runner-images/blob/main/images/windows/Windows2025-Readme.md) |
 | Windows Server 2022 with Visual Studio 2022 | *windows-2022* | `windows-2022` | [Link](https://aka.ms/windows-2022-readme) |
-| Windows Server 2019 with Visual Studio 2019 - See [Windows Server 2019 hosted image deprecation schedule](#windows-server-2019-hosted-image-deprecation-schedule)| *windows-2019* | `windows-2019` | [Link](https://aka.ms/windows-2019-readme) |
-
-The **windows-2019** image is the default image for classic build pipelines. For more information, see [Designate a pool in your pipeline](pools-queues.md#designate-a-pool-in-your-pipeline).
 
 #### Windows image updates
 
+* The Windows Server 2019 hoted agent image was retired on December 31, 2025.
 * [[Windows & Ubuntu] .NET 6 was removed from the images on August 1, 2025.](https://github.com/actions/runner-images/issues/12241)
 * [Windows Server 2019 hosted image deprecation schedule](#windows-server-2019-hosted-image-deprecation-schedule)
-
-##### Windows Server 2019 hosted image deprecation schedule
-
-The Windows Server 2019 image deprecation schedule:
-* Deprecation start date: June 1, 2025
-* Brownout period: June 3, 2025 to June 24, 2025
-* Scheduled removal date for Windows Server 2019 hosted image: December 31, 2025
-
-For more information, see [Upcoming Updates for Azure Pipelines Agents Images - Windows](https://aka.ms/azdo-windows)
 
 #### [Linux images](#tab/linux-images/)
 
@@ -69,25 +58,6 @@ The `ubuntu-latest` image is the default image for YAML pipelines if no image is
 * [[Windows & Ubuntu] .NET 6 was removed from the images on August 1, 2025.](https://github.com/actions/runner-images/issues/12241)
 * [The Ubuntu 20.04 image is retired](https://devblogs.microsoft.com/devops/upcoming-updates-for-azure-pipelines-agents-images/#ubuntu).
 
-##### Ubuntu 22.04 hosted image deprecation schedule
-
-The Ubuntu 22.04 hosted image deprecation affects Azure DevOps customers using the Ubuntu 22.04 agent image in their Microsoft-hosted pipelines. This deprecation does not impact customers using Ubtuntu 22.04 agents in self-hosted agents, including scale set agents or Managed DevOps Pools.
-
-The Ubuntu 22.04 image deprecation schedule:
-* Deprecation start date: TBD
-* Brownout period: TBD
-  * TBD date: 21:00 - 5:00 UTC
-  * TBD data: 5:00 - 13:00 UTC
-* Scheduled removal date: TBD
-
-Starting from TBD, organizations using the Ubuntu 22.04 image will begin to see a banner indicating the upcoming deprecation. To raise awareness about the upcoming deprecation we will temporarily fail jobs (brownout) using Ubuntu 22.04 from TBD to TBD. From TBD, the Ubuntu 22.04 image will be fully removed from our hosted agents, and any pipelines still using this image will fail to run.
-
-###### Recommended action
-
-To avoid disruptions, we recommend updating your pipelines to use the Ubuntu 24.04 image. The updated Ubuntu images offer improved performance, security, and support for the latest tools and libraries.
-
-To indentify your pipelines that are using the Ubuntu 22.04 image, follow the instructions in the [How to identify pipelines using a deprecated hosted image](#how-to-identify-pipelines-using-a-deprecated-hosted-image) section.
-
 #### [macOS images](#tab/macos-images/)
 
 You can see the installed software for each macOS hosted agent by choosing the **Included Software** link in the table. When using macOS images, you can manually select from tool versions. [Read more](#mac-pick-tools).
@@ -96,7 +66,7 @@ You can see the installed software for each macOS hosted agent by choosing the *
 | --- | --- | --- | --- |
 | macOS 15 Sequoia | *macOS-15* | `macOS-latest` OR `macOS-15` | [Link](https://github.com/actions/runner-images/blob/main/images/macos/macos-15-Readme.md) |
 | macOS 15 Sequoia ARM64<br>*limited public preview* | *macOS-15-arm64* | `macOS-15-arm64` | [Link](https://github.com/actions/runner-images/blob/main/images/macos/macos-15-arm64-Readme.md) |
-| macOS 14 Sonoma | *macOS-14* | `macOS-14` | [Link](https://aka.ms/macOS-14-readme) |
+| macOS 14 Sonoma<br>[macOS 14 Sonoma hosted image deprecation schedule](./hosted-lifecycle.md#macos-14-sonoma-hosted-image-deprecation-schedule?tabs=macos-images). | *macOS-14* | `macOS-14` | [Link](https://aka.ms/macOS-14-readme) |
 
 #### macOS 15 ARM64 image limited public preview
 
@@ -113,8 +83,9 @@ The macOS 15 Sequoia ARM64 Azure Pipelines hosted agent image has following know
 
 #### macOS images updates
 
+* The macOS 14 Sonoma image will be deprecated starting July 6, 2026. For more information, see [macOS 14 Sonoma hosted image deprecation schedule](./hosted-lifecycle.md#macos-14-sonoma-hosted-image-deprecation-schedule?tabs=macos-images).
 * The macOS 15 Sequoia ARM64 Azure Pipelines hosted agent image is in preview.
-* The macOS 13 Ventura image was deprecated starting September 1, 2025, and was retired on December 4, 2025. For more information, see [Upcoming Updates for Azure Pipelines Agents Images - macOS 13 Ventura](https://devblogs.microsoft.com/devops/upcoming-updates-for-azure-pipelines-agents-images/#mac-os).
+* The macOS 13 Ventura image was deprecated starting September 1, 2025, and was retired on December 4, 2025.
 * [[macOS] Starting August 11, 2025, if your workflow is running on a macOS 15 based image and depends on one of the platform versions (iOS/watchOS/tvOS/visionOS) lower than Xcode 16.3 compatible, they will be broken](https://github.com/actions/runner-images/issues/12541).
 * [[macOS] Xcode 15.4 was removed from macOS15 images on May 29, 2025](https://github.com/actions/runner-images/issues/12195)
 
