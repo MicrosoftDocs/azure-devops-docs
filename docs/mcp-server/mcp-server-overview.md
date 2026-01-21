@@ -4,6 +4,8 @@ titleSuffix: Azure Boards
 description: Learn about the Azure DevOps Model Context Protocol (MCP) Server, which enhances your AI assistant with real-time Azure DevOps context for smarter, more accurate project insights and decision-making capabilities.
 ms.service: azure-devops-boards
 ms.custom: peer-review-program
+ms.collection: ce-skilling-ai-copilot
+ms.update-cycle: 180-days
 ms.topic: overview
 ms.author: chcomley
 author: chcomley
