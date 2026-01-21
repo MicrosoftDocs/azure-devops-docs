@@ -66,7 +66,7 @@ You can see the installed software for each macOS hosted agent by choosing the *
 | --- | --- | --- | --- |
 | macOS 15 Sequoia | *macOS-15* | `macOS-latest` OR `macOS-15` | [Link](https://github.com/actions/runner-images/blob/main/images/macos/macos-15-Readme.md) |
 | macOS 15 Sequoia ARM64<br>*limited public preview* | *macOS-15-arm64* | `macOS-15-arm64` | [Link](https://github.com/actions/runner-images/blob/main/images/macos/macos-15-arm64-Readme.md) |
-| macOS 14 Sonoma<br>[macOS 14 Sonoma hosted image deprecation schedule](./hosted-lifecycle.md#macos-14-sonoma-hosted-image-deprecation-schedule?tabs=macos-images). | *macOS-14* | `macOS-14` | [Link](https://aka.ms/macOS-14-readme) |
+| macOS 14 Sonoma<br>*[macOS 14 Sonoma hosted image deprecation schedule](./hosted-lifecycle.md#macos-14-sonoma-hosted-image-deprecation-schedule?tabs=macos-images)* | *macOS-14* | `macOS-14` | [Link](https://aka.ms/macOS-14-readme) |
 
 #### macOS 15 ARM64 image limited public preview
 
