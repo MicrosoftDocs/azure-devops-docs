@@ -38,7 +38,7 @@ You can see the installed software for each Windows hosted agent image by choosi
 
 #### Windows image updates
 
-* The Windows Server 2019 hoted agent image was retired on December 31, 2025.
+* The Windows Server 2019 hosted agent image was retired on December 31, 2025.
 * [[Windows & Ubuntu] .NET 6 was removed from the images on August 1, 2025.](https://github.com/actions/runner-images/issues/12241)
 * [Windows Server 2019 hosted image deprecation schedule](#windows-server-2019-hosted-image-deprecation-schedule)
 
