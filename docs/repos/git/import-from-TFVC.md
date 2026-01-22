@@ -5,7 +5,7 @@ description: Import and migrate your repositories from TFVC to Git repositories 
 ms.assetid: cf1a4dc8-7143-4b0e-8a43-1680533fb3cb
 ms.service: azure-devops-repos
 ms.topic: how-to
-ms.date: 02/14/2025
+ms.date: 01/22/2026
 monikerRange: '<= azure-devops'
 ms.subservice: azure-devops-repos-git
 ---
@@ -43,7 +43,7 @@ The import experience is ideal for small, simple TFVC repositories. It's also su
 
 3. Select TFVC from the **Source type** dropdown
 
-4. Type the path to the repository / branch / folder that you want to import to the Git repository. For example, `$/Fabrikam/FabrikamWebsite`
+4. Type the path to the TFVC repository that you want to import to the Git repository. The path should be in the format `$/TFVCRepositoryName`. To import a specific branch, use the format `$/TFVCRepositoryName/BranchName`.
 
 5. If you want to migrate history from the TFVC repository, select **Migrate history** and select the number of days. You can migrate up to 180 days of history starting from the most recent changeset. 
    A link to the TFVC repository is added in the commit message of the first changeset that is migrated to Git, which makes it easy to find older history when needed.
