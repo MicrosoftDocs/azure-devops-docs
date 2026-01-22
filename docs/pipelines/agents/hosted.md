@@ -189,7 +189,7 @@ To determine your geography, navigate to `https://dev.azure.com/<your_organizati
 ### To identify the possible IP ranges for Microsoft-hosted agents
 
 1. Identify the [region for your organization](../../organizations/accounts/change-organization-location.md) in **Organization settings**.
-2. Identify the [Azure Geography](https://azure.microsoft.com/global-infrastructure/geographies/) for your organization's region.
+2. Identify the [Azure Geography](https://azure.microsoft.com/global-infrastructure/geographies/) for your organization's region by reviewing the [Azure regions list](/azure/reliability/regions-list), which is grouped by geography.
 3. Map the names of the regions in your geography to the format used in the weekly file, following the format of `AzureCloud.<region>`, such as `AzureCloud.westus`. You can map the names of the regions from the [Azure Geography](https://azure.microsoft.com/global-infrastructure/geographies/) list to the format used in the weekly file by reviewing the region names passed to the constructor of the regions defined in the [source code for the Region class](https://github.com/Azure/azure-libraries-for-net/blob/master/src/ResourceManagement/ResourceManager/Region.cs), from the [Azure Management Libraries for .NET](https://github.com/Azure/azure-libraries-for-net).
     > [!NOTE]
     > Since there is no API in the [Azure Management Libraries for .NET](https://github.com/Azure/azure-libraries-for-net) to list the regions for a geography, you must list them manually as shown in the following example.
@@ -198,9 +198,9 @@ To determine your geography, navigate to `https://dev.azure.com/<your_organizati
 >[!NOTE]
 >Due to capacity restrictions, some organizations in the **Brazil South** or **West Europe** regions may occasionally see their hosted agents located outside their expected geography. In these cases, in addition to including the IP ranges for all the regions in your geography as described in the previous section, additional IP ranges must be included for the regions in the capacity fallback geography.
 >
->If your organization is in the **Brazil South** region, your capacity fallback geography is **United States**.
+>If your organization is in the **Brazil South** region, your capacity fallback geography is **United States**, and you must include the IP ranges for all regions in the **United States** geography in addition to the IP ranges for all regions in the **Brazil South** geography.
 >
->If your organization is in the **West Europe** region, the capacity fallback geography is **France**.
+>If your organization is in the **West Europe** region, the capacity fallback geography is **France**, and you must include the IP ranges for all regions in the **France** geography in addition to the IP ranges for all regions in the **West Europe** geography.
 >
 >Our Mac IP ranges aren't included in the Azure IPs above, as they are hosted in GitHub's macOS cloud. IP ranges can be retrieved using the [GitHub metadata API](https://docs.github.com/en/rest/reference/meta#get-github-meta-information) using the instructions provided [here](https://docs.github.com/en/actions/using-github-hosted-runners/about-github-hosted-runners#ip-addresses).
 
