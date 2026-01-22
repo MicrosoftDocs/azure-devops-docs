@@ -43,7 +43,8 @@ The import experience is ideal for small, simple TFVC repositories. It's also su
 
 3. Select TFVC from the **Source type** dropdown
 
-4. Type the path to the TFVC repository that you want to import to the Git repository. The path should be in the format `$/TFVCRepositoryName`. To import a specific branch, use the format `$/TFVCRepositoryName/BranchName`.
+4. Type the path to the TFVC repository that you want to import to the Git repository. The path should be in the format `$/TFVCRepositoryName`. To import a specific branch, use the format `$/TFVCRepositoryName/BranchName`. The TFVC import process only migrates the contents of root or a branch. For example, if you have a TFVC project at `$/Fabrikam` which has one branch and one folder under it, a path to import `$/Fabrikam` would import the folder 
+while `$/Fabrikam/<branch>` would only import the branch.  
 
 5. If you want to migrate history from the TFVC repository, select **Migrate history** and select the number of days. You can migrate up to 180 days of history starting from the most recent changeset. 
    A link to the TFVC repository is added in the commit message of the first changeset that is migrated to Git, which makes it easy to find older history when needed.
