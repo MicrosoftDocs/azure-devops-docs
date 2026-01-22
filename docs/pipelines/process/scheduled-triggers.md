@@ -549,7 +549,7 @@ For more information, see [pr definition](/azure/devops/pipelines/yaml-schema/pr
 
 * There's a limit on the number of runs you can schedule for a pipeline. Read more about [limits](#limits).
 
-* If there are no changes to your code, they Azure Pipelines may not start new runs. Learn how to [override](#always) this behavior.
+* If there are no changes to your code, then Azure Pipelines may not start new runs. Learn how to [override](#always) this behavior.
 
 ### My YAML schedules were working fine. But, they stopped working now. How do I debug this?
 
