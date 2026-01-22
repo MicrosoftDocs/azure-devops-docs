@@ -14,15 +14,11 @@ ms.subservice: azure-devops-repos-tfvc
 > [!WARNING]
 > To use the provided migration method do **not** remove the old implementations of the policies prior to following this guide.
 
-The guidance below explains how to migrate your policies to client-side configuration so your development workflows continue without interruption. See [TFVC policy updates](https://devblogs.microsoft.com/devops/tfvc-policies-storage-updates/#phase-iii-%E2%80%93-full-disabling-(~-january-2026)) for further details.
-
-## Steps outlined in this migration guide
-- Azure DevOps Services - [Updates required based on configuration](#updates-required-based-on-configuration)
-- Azure DevOps Server - [Azure DevOps Server - Removing existing obsolete policies](#azure-devops-server---removing-existing-obsolete-policies)
+The guidance below explains how to migrate your obsolete policies, so your development workflows continue without interruption. See [TFVC policy updates](https://devblogs.microsoft.com/devops/tfvc-policies-storage-updates/#phase-iii-%E2%80%93-full-disabling-(~-january-2026)) for further details.
 
 ----------------------------------------------------
 
-## Updates required based on configuration
+## Required code changes
 
 ### Step 1: Replace `PolicyBase` with `CheckinPolicyBase`
 To migrate your custom policies, first create a new class with the same methods but inheriting `CheckinPolicyBase` class (`IPolicyCompatibilityJson` for `IPolicyCompatibility`) instead of `PolicyBase`.
@@ -141,9 +137,9 @@ To migrate, use the package's `GetCheckinClientPoliciesForServerPaths`/`GetCheck
 
 ----------------------------------
 
-## Azure DevOps Server - using predefined methods to migrate policies
+## Using predefined methods to migrate policies
    > [!NOTE]
-   > Automatic policy migration is supported **only for custom policies**.
+   > Automatic policy migration is supported **only for custom policies**, as standard Visual Studio policies don't support this capability.
    > If you don't plan to use the migration method provided by NuGet package, no further steps are required.
 
 To remove obsolete custom policies via code, follow further steps in this guide.
@@ -175,7 +171,7 @@ This method must:
       
 3. Call `MigrateFromOldPolicies` method
 
-## Azure DevOps Server - Removing existing obsolete policies
+## Removing existing obsolete policies
   > [!WARNING]
   > This part of the guide is a **workaround** to remove existing obsolete policies when server fully (read and write operations) disables them and before Visual Studio team implements UI solution.
 
