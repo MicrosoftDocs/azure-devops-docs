@@ -82,6 +82,7 @@ The macOS 15 Sequoia ARM64 Azure Pipelines hosted agent image has following know
 
 #### macOS images updates
 
+* [[macOS] Deprecation of simulator runtimes for Xcode 16.3 and older on macOS 15 on January 12th, 2026.](https://github.com/actions/runner-images/issues/13392)
 * The macOS 14 Sonoma image will be deprecated starting July 6, 2026. For more information, see [macOS 14 Sonoma hosted image deprecation schedule](./hosted-lifecycle.md?tabs=macos-images#macos-14-sonoma-hosted-image-deprecation-schedule).
 * The macOS 15 Sequoia ARM64 Azure Pipelines hosted agent image is in preview.
 * The macOS 13 Ventura image was deprecated starting September 1, 2025, and was retired on December 4, 2025.

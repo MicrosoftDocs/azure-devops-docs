@@ -3,12 +3,22 @@ title: Microsoft-hosted agent deprecations for Azure Pipelines
 description: Learn about the lifecycle and deprecation schedule of Microsoft-hosted agents provided in Azure Pipelines
 ms.topic: concept-article
 ms.date: 01/21/2026
-monikerRange: 'azure-devops'
+monikerRange: '<=azure-devops'
 ---
 
 # Microsoft-hosted agent deprecation schedule
 
-[!INCLUDE [version-eq-azure-devops](../../includes/version-eq-azure-devops.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-eq-azure-devops.md)]
+
+::: moniker range="< azure-devops"
+
+Microsoft-hosted agents are only available with Azure DevOps Services, which is hosted in the cloud. You can't use Microsoft-hosted agents or the Azure Pipelines agent pool with on-premises Azure DevOps Server. With these on-premises versions, you must use [self-hosted agents](agents.md).
+
+[!INCLUDE [include](../../includes/version-selector.md)]
+
+::: moniker-end
+
+::: moniker range="azure-devops"
 
 The Azure Pipelines team supports (at maximum) 2 GA hosted images and 1 hosted beta image at a time. We begin the deprecation process of the oldest image label once the newest OS image label has been released to GA. This article provides the deprecation schedule for the oldest hosted images to allow time for planning and migration to the newer images.
 
@@ -56,7 +66,7 @@ To raise awareness of the upcoming removal, we will temporarily fail jobs using 
 
 ##### Recommended action
 
-Workflows using the macOS 14 Sonoma hosted image should be updated to `macos-latest` or `macos-15` prior to the scheduled removal date to avoid disruptions.
+Pipelines using the macOS 14 Sonoma hosted image should be updated to `macos-latest` or `macos-15` prior to the scheduled removal date to avoid disruptions.
 
 To identify your pipelines that are using the macOS 14 Sonoma hosted image, follow the instructions in the [How to identify pipelines using a deprecated hosted image](#how-to-identify-pipelines-using-a-deprecated-hosted-image) section.
 
@@ -144,3 +154,4 @@ Yes, if your classic pipeline is using a Microsoft-hosted image that is schedule
 
 No, container images are not impacted by the hosted image deprecation.
 
+::: moniker-end
