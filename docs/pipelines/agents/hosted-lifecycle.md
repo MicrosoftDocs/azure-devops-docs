@@ -22,13 +22,15 @@ Microsoft-hosted agents are only available with Azure DevOps Services, which is 
 
 The Azure Pipelines team supports (at maximum) 2 GA hosted images and 1 hosted beta image at a time. We begin the deprecation process of the oldest image label once the newest OS image label has been released to GA. This article provides the deprecation schedule for the oldest hosted images to allow time for planning and migration to the newer images.
 
+For more information on the software lifecycle and deprecation schedule of images and software, see [GitHub Actions Runner Images - Software and Image Support](https://github.com/actions/runner-images/tree/main?tab=readme-ov-file#software-and-image-support).
+
+## Deprecation schedules
+
 The following hosted agent images are scheduled for deprecation:
 
 * [macOS 14 Sonoma hosted image deprecation schedule](?tabs=macos-images#macos-14-sonoma-hosted-image-deprecation-schedule)
 
-For more information on the software lifecycle and deprecation schedule of images and software, see [GitHub Actions Runner Images - Software and Image Support](https://github.com/actions/runner-images/tree/main?tab=readme-ov-file#software-and-image-support).
-
-## Deprecation schedules
+For more information, see the following **Windows images**, **Linux images**, and **macOS images** sections.
 
 #### [Windows images](#tab/windows-images/)
 
