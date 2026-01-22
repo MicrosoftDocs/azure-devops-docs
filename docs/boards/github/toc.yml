@@ -1,5 +1,7 @@
 - name: GitHub integration
   href: index.md
+- name: Roadmap and features timeline
+  href: features-timeline.md
 - name: Install the Azure Boards app
   href: install-github-app.md
 - name: Connect Azure Boards (cloud)
