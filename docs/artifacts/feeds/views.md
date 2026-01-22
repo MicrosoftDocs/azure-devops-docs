@@ -22,7 +22,7 @@ You can change the default view in **Feed Settings** > **Views**. However, chang
 
 | **Product**        | **Requirements**   |
 |--------------------|--------------------|
-| **Azure DevOps**   | - An Azure DevOps [organization](../../organizations/accounts/create-organization.md) and a [project](../../organizations/projects/create-project.md).<br>- An Azure Artifacts [feed](../get-started-npm.md#create-a-feed). |
+| **Azure DevOps**   | - An Azure DevOps [organization](../../organizations/accounts/create-organization.md) and a [project](../../organizations/projects/create-project.md).<br>- An Azure Artifacts [feed](../concepts/feeds.md#create-a-new-feed). |
 
 
 ## Promote a package to a view
@@ -251,8 +251,12 @@ $ curl -X PATCH "YOUR_ENDPOINT_URL" \
 
 ---
 
+::: moniker range="azure-devops"
+
 > [!NOTE]
 > All feed views in a public project are publicly accessible and can be viewed by anyone on the internet.
+
+::: moniker-end
 
 ## Manage views
 
