@@ -56,7 +56,7 @@ To raise awareness of the upcoming removal, we will temporarily fail jobs using 
 
 ##### Recommended action
 
-Workflows using the macOS 14 Sonoma hosted image should be updated to `macos-latest` or `macos-15` prior to the scheduled removal date to avoid disruptions.
+Pipelines using the macOS 14 Sonoma hosted image should be updated to `macos-latest` or `macos-15` prior to the scheduled removal date to avoid disruptions.
 
 To identify your pipelines that are using the macOS 14 Sonoma hosted image, follow the instructions in the [How to identify pipelines using a deprecated hosted image](#how-to-identify-pipelines-using-a-deprecated-hosted-image) section.
 
