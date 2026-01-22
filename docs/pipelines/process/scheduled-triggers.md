@@ -193,9 +193,9 @@ To create or edit a schedule, edit your pipeline and select the **Triggers** tab
 
 Select the days and times when you want to run the build using the classic editor.
 
-If your repository is Azure Repos Git, GitHub, or Other Git, then you can also specify branches to include and exclude. If you want to use wildcard characters, then type the branch specification (for example, `features/modules/*`) and then press Enter.
-
 ![Scheduled trigger UTC + 5:30 time zone](media/triggers/scheduled-trigger-git-india.png)
+
+If your repository is Azure Repos Git, GitHub, or Other Git, then you can also specify branches to include and exclude. If you want to use wildcard characters, then type the branch specification (for example, `features/modules/*`) and then press Enter.
 
 :::zone-end 
 
