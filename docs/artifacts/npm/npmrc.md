@@ -20,13 +20,13 @@ Azure Artifacts enables developers to manage packages from various sources, incl
 
 | **Product**        | **Requirements**   |
 |--------------------|--------------------|
-| **Azure DevOps**   | - An Azure DevOps [organization](../../organizations/accounts/create-organization.md).<br>- An Azure DevOps [project](../../organizations/projects/create-project.md).<br>- An Azure Artifacts [feed](../get-started-npm.md#create-a-feed)<br> - [Download and install Node.js and npm](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm).|
+| **Azure DevOps**   | - An Azure DevOps [organization](../../organizations/accounts/create-organization.md).<br>- An Azure DevOps [project](../../organizations/projects/create-project.md).<br>- An Azure Artifacts [feed](../get-started-npm.md#create-a-feed). |
 
 ## Connect to a feed
 
-Azure Artifacts recommends using two separate *.npmrc* configuration files. One should be stored locally to store your credentials, while the other should be added to your project directory alongside your *package.json* to define your feed URL. This approach allows you to share your project-level configuration without exposing sensitive information.
+Azure Artifacts recommends using two separate *npmrc* configuration files. One should be stored locally to store your credentials, while the other should be added to your project directory alongside your *package.json* to define your feed URL. This approach allows you to share your project-level configuration without exposing sensitive information.
 
-To set up the credentials file, create or update the *.npmrc* file and include all necessary registry credentials. This enables the npm client to easily access your credentials for authentication.
+To set up the credentials file, create or update the *npmrc* file and include all necessary registry credentials. This enables the npm client to easily access your credentials for authentication.
 
 The following steps guide you through setting up the project-level configuration file. Select the tab that corresponds to your development environment:
 
@@ -47,11 +47,13 @@ The following steps guide you through setting up the project-level configuration
 
 1. Select **Connect to Feed** and then select **npm** from the left navigation pane. 
 
+1. If this is your first time using Azure Artifacts with npm, select **Get the tools** and follow the instructions to install the prerequisites. You’ll first need to download *Node.js* and *npm*, then install *vsts-npm-auth* (Windows users) or set up credentials (non‑Windows users), depending on your operating system.
+
 1. Add a *.npmrc* to your project, in the same directory as your *package.json* and paste the provided snippet from the **Project setup** section into the file.
 
     :::image type="content" source="../media/npm-project-setup-azure-devops.png" alt-text="A screenshot displaying how to set up your npm project and connect to a feed.":::
 
-1. Run the following command to get an Azure Artifacts token added to your user-level *.npmrc* file. You don’t need to run this every time—npm will return a **401 Unauthorized** error when it’s time to refresh the token.
+1. Run the following command to get an Azure Artifacts token added to your user-level *npmrc* file. You don’t need to run this every time—npm will return a **401 Unauthorized** error when it’s time to refresh the token.
 
     ```
     vsts-npm-auth -config .npmrc
@@ -65,9 +67,11 @@ The following steps guide you through setting up the project-level configuration
 
 1. Select **Connect to Feed** and then select **npm** from the left navigation pane. 
 
+1. If this is your first time using Azure Artifacts with npm, select **Get the tools** and follow the instructions to install the prerequisites. You’ll first need to download *Node.js* and *npm*, then install *vsts-npm-auth* (Windows users) or set up credentials (non‑Windows users), depending on your operating system.
+
 1. Add a *.npmrc* file to your project's directory. This should be the same directory where your *package.json* file is located. 
 
-1. Paste the snippet provided in the **Project setup** section into your *.npmrc* file. Your file should look similar to the following:
+1. Paste the snippet provided in the **Project setup** section into your *npmrc* file. Your file should look similar to the following:
 
     ```
     registry=https://pkgs.dev.azure.com/<ORGANIZATION_NAME>/<PROJECT_NAME>/_packaging/<FEED_NAME>/npm/registry/ 
@@ -161,7 +165,7 @@ The following steps guide you through setting up the project-level configuration
 
 ### Setup credentials
 
-1. Copy the following snippet and paste it into your user-level *.npmrc* file:
+1. Copy the following snippet and paste it into your user-level *npmrc* file:
 
     - **Collection-scoped feed**:
 
@@ -201,7 +205,7 @@ The following steps guide you through setting up the project-level configuration
     > As of July 2024, Azure DevOps Personal Access Tokens (PATs) are [82 characters long](../../organizations/accounts/use-personal-access-tokens-to-authenticate.md#changes-to-format). Some tools may insert automatic line breaks when encoding tokens to Base64. To avoid this, use the `-w0` flag with the *base64* command to ensure the output stays on a single line. 
     > In this tutorial, we use Node’s Buffer method, which produces a single-line *Base64* string by default.
 
-1. Replace the placeholders *[BASE64_ENCODED_PERSONAL_ACCESS_TOKEN]* in your user-level *.npmrc* file with the Base64-encoded personal access token you generated in the previous step.
+1. Replace the placeholders *[BASE64_ENCODED_PERSONAL_ACCESS_TOKEN]* in your user-level *npmrc* file with the Base64-encoded personal access token you generated in the previous step.
 
 * * *
 
