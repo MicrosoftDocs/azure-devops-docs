@@ -138,7 +138,7 @@ Managed DevOps Pools does offer [Azure Pipelines images](../../managed-devops-po
 
 ### I am using an image scheduled to be deprecated in classic pipeline. Is my pipeline impacted?
 
-Yes, if your classic pipeline is using a Microsoft-hosted image that is scheduled for deprecation, it is are impacted.
+Yes, if your classic pipeline is using a Microsoft-hosted image that is scheduled for deprecation, it is impacted.
 
 ### I am using a container image with an image scheduled to be deprecated. Is my pipeline impacted?
 
