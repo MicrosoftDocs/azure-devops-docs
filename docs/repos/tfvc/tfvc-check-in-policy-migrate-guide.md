@@ -14,12 +14,22 @@ ms.subservice: azure-devops-repos-tfvc
 > [!WARNING]
 > To use the provided migration method do **not** remove the old implementations of the policies prior to following this guide.
 
-## Code updates
-1. To migrate your custom policies, first create a new class with the same methods but inheriting `CheckinPolicyBase` class (`IPolicyCompatibilityJson` for `IPolicyCompatibility`) instead of `PolicyBase`.
+The guidance below explains how to migrate your policies to client-side configuration so your development workflows continue without interruption. See [TFVC policy updates](https://devblogs.microsoft.com/devops/tfvc-policies-storage-updates/#phase-iii-%E2%80%93-full-disabling-(~-january-2026)) for further details.
+
+## Steps outlined in this migration guide
+- Azure DevOps Services - [Updates required based on configuration](#updates-required-based-on-configuration)
+- Azure DevOps Server - [Azure DevOps Server - Removing existing obsolete policies](#azure-devops-server---removing-existing-obsolete-policies)
+
+----------------------------------------------------
+
+## Updates required based on configuration
+
+### Step 1: Replace `PolicyBase` with `CheckinPolicyBase`
+To migrate your custom policies, first create a new class with the same methods but inheriting `CheckinPolicyBase` class (`IPolicyCompatibilityJson` for `IPolicyCompatibility`) instead of `PolicyBase`.
    
-   **Examples:**
-      
-   **Obsolete:**
+- **Example:**
+   
+   **Obsolete: `PolicyBase`**
    ```csharp
     [Serializable]
     public class Simple : PolicyBase
@@ -29,7 +39,7 @@ ms.subservice: azure-devops-repos-tfvc
     }
    ```
 
-   **Updated:**
+   **Updated: `CheckinPolicyBase`**
    ```csharp
     [Serializable]
     public class SimpleNew : CheckinPolicyBase
@@ -37,10 +47,11 @@ ms.subservice: azure-devops-repos-tfvc
         public override string Description => "SimplePolicyDescription";
         ...
     }
-   ```
-2. If `GetBinaryFormatter` was overridden, also implement `GetJsonSerializerSettings` using the same serialization logic. Configure `JsonSerializerSettings` with `TypeNameHandling` set to `Objects`.
+      ```
+### Step 2: If `GetBinaryFormatter` was overridden
+Also implement `GetJsonSerializerSettings` using the same serialization logic. Configure `JsonSerializerSettings` with `TypeNameHandling` set to `Objects`.
    
-   **Example:**
+- **Example:**
 
    **Obsolete:**
    ```csharp
@@ -74,8 +85,10 @@ ms.subservice: azure-devops-repos-tfvc
     }
    ```
 
-   For extensions targeting Visual Studio version 16 and earlier, extra code is required even if `BinaryFormatter` wasn't previously overridden.
+### Step 3: Extensions targeting Visual Studio version 16 or earlier
+If your extensions are targeting Visual Studio version 16 or earlier, there are additional changes required. This change is required even if `BinaryFormatter` wasn't previously overridden, see below example.
 
+- **Example**
    **JsonSerializerSettings for extensions targeting older versions of Visual Studio:**
    ```csharp
     public class CheckinSerializationBinder : ISerializationBinder
@@ -107,9 +120,10 @@ ms.subservice: azure-devops-repos-tfvc
         ...
     }
    ```
-3. Private properties that were previously serialized are skipped in the new policy type. Add `[JsonProperty]` to ensure they're saved to the database.
+### Step 4: Private properties 
+Private properties that were previously serialized are skipped in the new policy type. Add `[JsonProperty]` to ensure they're saved to the database.
    
-   **Example:**
+- **Example:**
    ```csharp
     [Serializable]
     public class SimpleNew : CheckinPolicyBase
@@ -121,56 +135,57 @@ ms.subservice: azure-devops-repos-tfvc
    ```
 
 
-4. Replace legacy policy-loading APIs
+### Step 5: Replace legacy policy-loading APIs
+Legacy methods such as `GetCheckinPoliciesForServerPaths`/`GetCheckinPolicies`/`SetCheckinPolicies` are now obsolete.
+To migrate, use the package's `GetCheckinClientPoliciesForServerPaths`/`GetCheckinClientPolicies`/`SetCheckinClientPolicies` accordingly.
 
-   Legacy methods such as `GetCheckinPoliciesForServerPaths`/`GetCheckinPolicies`/`SetCheckinPolicies` are obsolete. Use the package's `GetCheckinClientPoliciesForServerPaths`/`GetCheckinClientPolicies`/`SetCheckinClientPolicies` accordingly.
+----------------------------------
 
-   Automatic policy migration is supported **only for custom policies**. Built-in Visual Studio policies support the new policy model and migration.
-
-## Using predefined method to migrate policies on server
+## Azure DevOps Server - using predefined methods to migrate policies
    > [!NOTE]
-   > Further automigration is available only for custom policies, as standard Visual Studio policies don't support this capability.
-   > If you don't plan to use migration method provided by NuGet package, further instructions can be omitted and the obsolete policies can be removed. No more steps are required. You can find removal of obsolete custom policies via code further in this guide.
+   > Automatic policy migration is supported **only for custom policies**.
+   > If you don't plan to use the migration method provided by NuGet package, no further steps are required.
+
+To remove obsolete custom policies via code, follow further steps in this guide.
 
 1. Add migration interface to policies
-
-   Add the `IPolicyMigration` interface for each obsolete custom policy.
-   This interface marked as deprecated only to signalize that it also will be removed in future together with `PolicyBase` / `IPolicyCompatibility`.
+Add the `IPolicyMigration` interface for each obsolete custom policy.
+- This interface is marked as deprecated, only to signalize that it also will be removed in future together with `PolicyBase` / `IPolicyCompatibility`.
 
     > [!WARNING]
-    > Obsolete policies that don’t inherit this interface is **skipped** during migration and **not** saved as new policies.
+    > Obsolete policies that don’t inherit this interface are **skipped** during migration and will **not** be saved as new policies.
 
 2. Implement the `ToNewPolicyType` method on the obsolete policy
+This method must:
+1. Return an instance of the new policy class
+2. Populate the new instance using values from the obsolete policy
 
-   This method must:
-   - Return an instance of the new policy class
-   - Populate the new instance using values from the obsolete policy
-
-   **Example:**
-   ```csharp
-    [Serializable]
-    public class Simple : PolicyBase, IPolicyMigration
-    {
-        ...
-        public CheckinPolicyBase ToNewPolicyType()
-        {
-            return new SimpleNew();
-        }
-    }
-   ```
+  - **Example:**
+      ```csharp
+       [Serializable]
+       public class Simple : PolicyBase, IPolicyMigration
+       {
+           ...
+           public CheckinPolicyBase ToNewPolicyType()
+           {
+               return new SimpleNew();
+           }
+       }
+      ```
+      
 3. Call `MigrateFromOldPolicies` method
 
- ## Remove existing obsolete policies
-  > [!NOTE]
-   > This part of the guide is a workaround to remove existing obsolete policies when server fully (read and write operations) disables them and before Visual Studio team implements UI solution.
+## Azure DevOps Server - Removing existing obsolete policies
+  > [!WARNING]
+  > This part of the guide is a **workaround** to remove existing obsolete policies when server fully (read and write operations) disables them and before Visual Studio team implements UI solution.
 
-1. Create an empty C# project.
+1. Create an empty C# project
 
 2. Add dependency to [Microsoft.TeamFoundationServer.ExtendedClient](https://www.nuget.org/packages/Microsoft.TeamFoundationServer.ExtendedClient/latest).
 
 3. Connect to your project using `ExtendedClient` package. You can do it several ways. Here's example for one of them.
 
-**Example:**
+- **Example:**
    ```csharp
     var collectionUri = "{UrlToYourCollection}";
     var currentProjectName = "{YourProjectName}";
@@ -181,7 +196,7 @@ ms.subservice: azure-devops-repos-tfvc
    ```
 
 4. Connect to the TFVC service and set obsolete checking policies to null.
-**Example:**
+- **Example:**
    ```csharp
     var versionControlServer = tpc.GetService<VersionControlServer>();
     TeamProject teamProject = versionControlServer.GetTeamProject(currentProjectName);
