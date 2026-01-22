@@ -70,7 +70,7 @@ Pipelines using the macOS 14 Sonoma hosted image should be updated to `macos-lat
 
 To identify your pipelines that are using the macOS 14 Sonoma hosted image, follow the instructions in the [How to identify pipelines using a deprecated hosted image](#how-to-identify-pipelines-using-a-deprecated-hosted-image) section.
 
-To update your affected YAML pipelines to a new image, see [Update classic pipelines to use a new image](#update-classic-pipelines-to-use-a-new-image). To update your classic pipelines see [Update classic pipelines to use a new image](#update-classic-pipelines-to-use-a-new-image).
+To update your affected YAML pipelines to a new image, see [Update YAML pipelines to use a new image](#update-yaml-pipelines-to-use-a-new-image). To update your classic pipelines see [Update classic pipelines to use a new image](#update-classic-pipelines-to-use-a-new-image).
 
 * * *
 
@@ -148,7 +148,7 @@ Managed DevOps Pools does offer [Azure Pipelines images](../../managed-devops-po
 
 ### I am using an image scheduled to be deprecated in classic pipeline. Is my pipeline impacted?
 
-Yes, if your classic pipeline is using a Microsoft-hosted image that is scheduled for deprecation, it is are impacted.
+Yes, if your classic pipeline is using a Microsoft-hosted image that is scheduled for deprecation, it is impacted.
 
 ### I am using a container image with an image scheduled to be deprecated. Is my pipeline impacted?
 
