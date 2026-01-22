@@ -5,7 +5,7 @@ ms.topic: concept-article
 ms.custom: copilot-scenario-highlight
 ms.author: sdanie
 author: steved0x
-ms.date: 09/04/2025
+ms.date: 01/22/2026
 ms.update-cycle: 180-days
 zone_pivot_groups: pipelines-version
 monikerRange: '<= azure-devops'
@@ -186,6 +186,10 @@ For more examples, see [schedules.cron examples](/azure/devops/pipelines/yaml-sc
 :::zone-end 
 
 :::zone pivot="pipelines-classic"
+
+To create or edit a schedule, edit your pipeline and select the **Triggers** tab. To create a new schedule, select **+ Add** in the **Scheduled** section. To edit an existing schedule, select the schedule to edit.
+
+:::image type="content" source="media/triggers/create-scheduled-trigger.png" alt-text="Screenshot of creating a classic scheduled pipeline.":::
 
 Select the days and times when you want to run the build using the classic editor.
 
