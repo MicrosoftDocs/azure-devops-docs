@@ -46,7 +46,11 @@ Classic pipelines allow you to configure your pipeline to perform multiple tasks
 
 1. Modify the tasks as needed, or leave the default configuration. Select **Save & queue** when you're done to queue your pipeline.
 
+    :::image type="content" source="media/classic-pipeline-definition.png" alt-text="A screenshot displaying how to configure a Classic pipeline in Azure Pipelines.":::
+
 1. Select your **Agent pool**, **Agent Specification**, and **Branch**, then select **Save and run**. Your pipeline is then queued and begins running the configured tasks.
+
+    :::image type="content" source="media/queue-classic-pipeline.png" alt-text="A screenshot displaying how to queue a Classic pipeline.":::
 
 ## Related content
 
