@@ -28,7 +28,7 @@ A deployment group installs a deployment agent on each target server in the grou
 
 ## Set up resources in Azure
 
-This section guides you through setting up your Azure resources by using an Azure Resource Manger template. It provisions six virtual machine (VM) web servers with IIS configured, a SQL Server VM (database server), an Azure load balancer, and all necessary network connections.
+This section guides you through setting up your Azure resources by using an Azure Resource Manager template. It provisions six virtual machine (VM) web servers with IIS configured, a SQL Server VM (database server), an Azure load balancer, and all necessary network connections.
 
 1. Select the [![Deploy to Azure](https://aka.ms/deploytoazurebutton)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FramiMSFT%2FDeploymentTemplate%2Fmain%2Fazurewebdeploy.json) button to start the deployment of your resources in Azure.
 
