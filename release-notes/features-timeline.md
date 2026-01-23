@@ -140,9 +140,9 @@ Azure DevOps supports many different authentication mechanisms, including basic 
 
 ### Improved Boards + GitHub Integration
 
-The existing Azure Boards + GitHub integration has been in place for several years now. The integration is a great starting point, but it does not offer the level of traceability that our customers have grown accustomed to. Based on customer feedback, we have put together set of investments to enhance this integration. Our goal is to improve upon it so that Azure Boards customers who choose to use GitHub repositories can maintain an equivalent level of traceability to having repositories in Azure DevOps.
+The Azure DevOps and GitHub integration continues to be of major strategic importance. Our goal is to keep improving this integration to make it easier for customers to move their repositories to GitHub while continuing to use Azure Boards, Pipelines, and Test Plans. All of this is done while maintaining a high level of traceability between work and code.
 
-These recent investments include:
+Below is a list of investments currently on our roadmap.
 
 <table>
     <thead>
@@ -172,9 +172,19 @@ These recent investments include:
          <td><a href="/azure/devops/release-notes/roadmap/2026/boards-increase-repo-limit" data-raw-source="[Increase limit of connected GitHub repositories](/azure/devops/release-notes/roadmap/2026/boards-increase-repo-limit)">Increase limit of connected GitHub repositories</a></td>
          <td>Boards</td>
          <td>2026 Q1</td>
+      </tr>   
+      <tr>
+        <td>
+            <a href="/azure/devops/release-notes/roadmap/2026/general-remote-ado-mcp-server" data-raw-source="[Remote Azure DevOps MCP Server](/azure/devops/release-notes/roadmap/2026/general-remote-ado-mcp-server)">Remote Azure DevOps MCP Server</a>
+         </td>
+         <td>Boards</td>
+         <td>2026 Q1</td>
       </tr>         
     </tbody>
 </table>
+
+You can also view a detailed list of planned and recent investments on our [features timeline](/azure/devops/boards/github/features-timeline).
+
 
 ### Migrate to Managed DevOps Pools
 
