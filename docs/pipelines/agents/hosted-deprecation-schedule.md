@@ -26,8 +26,6 @@ For more information on the software lifecycle and deprecation schedule of image
 
 ## Deprecation schedules
 
-The following hosted agent images are scheduled for deprecation:
-
 | Hosted agent image OS | Scheduled deprecation |
 |-----------------------|-----------------------|
 | macOS | [macOS 14 Sonoma hosted image deprecation schedule](#macos-14-sonoma-hosted-image-deprecation-schedule) |
