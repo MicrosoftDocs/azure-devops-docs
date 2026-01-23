@@ -134,23 +134,28 @@ If you still need to use an image scheduled to be deprecated after its deprecati
 
 ## FAQ
 
-### How to know if my Azure DevOps organization or pipelines are impacted?
+* [How to know if my Azure DevOps organization or pipelines are impacted?](#how-to-know-if-my-azure-devops-organization-or-pipelines-are-impacted)
+* [I am using an image scheduled to be deprecated in self-hosted agents. Is my pipeline impacted?](#i-am-using-an-image-scheduled-to-be-deprecated-in-self-hosted-agents-is-my-pipeline-impacted)
+* [I am using an image scheduled to be deprecated in Managed DevOps Pools. Is my pipeline impacted?](#i-am-using-an-image-scheduled-to-be-deprecated-in-managed-devops-pools-is-my-pipeline-impacted)
+* [I am using an image scheduled to be deprecated in classic pipeline. Is my pipeline impacted?](#i-am-using-an-image-scheduled-to-be-deprecated-in-classic-pipeline-is-my-pipeline-impacted)
+* [I am using a container image with an image scheduled to be deprecated. Is my pipeline impacted?](#i-am-using-a-container-image-with-an-image-scheduled-to-be-deprecated-is-my-pipeline-impacted)
+
+###### How to know if my Azure DevOps organization or pipelines are impacted?
 
 Use the detection script or check the agent queues as described in [How to identify pipelines using a deprecated hosted image](#how-to-identify-pipelines-using-a-deprecated-hosted-image).
 
-### I am using an image scheduled to be deprecated in self-hosted agents. Is my pipeline impacted?
+###### I am using an image scheduled to be deprecated in self-hosted agents. Is my pipeline impacted?
 
 No, only Microsoft Hosted images are impacted.
 
-### I am using an image scheduled to be deprecated in Managed DevOps Pools. Is my pipeline impacted?
-
+###### I am using an image scheduled to be deprecated in Managed DevOps Pools. Is my pipeline impacted?
 Managed DevOps Pools does offer [Azure Pipelines images](../../managed-devops-pools/configure-images.md#azure-pipelines-images), but they are not directly impacted by the Microsoft-hosted image deprecations. Managed DevOps Pools images have their own lifecycle and deprecation schedule. For more information, see [Azure Pipelines images: Image lifecycle](../../managed-devops-pools/configure-images.md#image-lifecycle).
 
-### I am using an image scheduled to be deprecated in classic pipeline. Is my pipeline impacted?
+###### I am using an image scheduled to be deprecated in classic pipeline. Is my pipeline impacted?
 
 Yes, if your classic pipeline is using a Microsoft-hosted image that is scheduled for deprecation, it is impacted.
 
-### I am using a container image with an image scheduled to be deprecated. Is my pipeline impacted?
+###### I am using a container image with an image scheduled to be deprecated. Is my pipeline impacted?
 
 No, container images are not impacted by the hosted image deprecation.
 
