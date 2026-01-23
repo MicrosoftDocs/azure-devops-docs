@@ -25,13 +25,13 @@ Microsoft-hosted agents are only available with Azure DevOps Services, which is 
 
 ## Software
 
-The **Azure Pipelines** agent pool offers several virtual machine images to choose from, each including a broad range of tools and software. You can see the installed software for each image by choosing the **Included Software** link in the following table. For more information on the software lifecycle and deprecation schedule of images and software, see [GitHub Actions Runner Images - Software and Image Support](https://github.com/actions/runner-images/tree/main?tab=readme-ov-file#software-and-image-support).
+The **Azure Pipelines** agent pool offers several virtual machine images to choose from, each including a broad range of tools and software. You can see the installed software for each image by choosing the **Included software** link in the following table. For more information on the software lifecycle and deprecation schedule of images and software, see [GitHub Actions Runner Images - Software and Image Support](https://github.com/actions/runner-images/tree/main?tab=readme-ov-file#software-and-image-support).
 
 #### [Windows images](#tab/windows-images/)
 
-You can see the installed software for each Windows hosted agent image by choosing the **Included Software** link in the table.
+You can see the installed software for each Windows hosted agent image by choosing the **Included software** link in the table.
 
-| Image | Classic Editor Agent Specification | YAML VM Image Label | Included Software |
+| Image | Classic Editor Agent Specification | YAML VM Image Label | Included software |
 | --- | --- | --- | --- |
 | Windows Server 2025 with Visual Studio 2022 | *windows-2025* | `windows-latest` OR `windows-2025` | [Link](https://github.com/actions/runner-images/blob/main/images/windows/Windows2025-Readme.md) |
 | Windows Server 2022 with Visual Studio 2022 | *windows-2022* | `windows-2022` | [Link](https://aka.ms/windows-2022-readme) |
@@ -43,9 +43,9 @@ You can see the installed software for each Windows hosted agent image by choosi
 
 #### [Linux images](#tab/linux-images/)
 
-You can see the installed software for each Linux hosted agent image by choosing the **Included Software** link in the table.
+You can see the installed software for each Linux hosted agent image by choosing the **Included software** link in the table.
 
-| Image | Classic Editor Agent Specification | YAML VM Image Label | Included Software |
+| Image | Classic Editor Agent Specification | YAML VM Image Label | Included software |
 | --- | --- | --- | --- |
 | Ubuntu 24.04 | *ubuntu-24.04* | `ubuntu-latest` OR `ubuntu-24.04` | [Link](https://github.com/actions/runner-images/blob/main/images/ubuntu/Ubuntu2404-Readme.md) |
 | Ubuntu 22.04 | *ubuntu-22.04* | `ubuntu-22.04` | [Link](https://aka.ms/ubuntu-22.04-readme) |
@@ -59,9 +59,9 @@ The `ubuntu-latest` image is the default image for YAML pipelines if no image is
 
 #### [macOS images](#tab/macos-images/)
 
-You can see the installed software for each macOS hosted agent by choosing the **Included Software** link in the table. When using macOS images, you can manually select from tool versions. [Read more](#mac-pick-tools).
+You can see the installed software for each macOS hosted agent by choosing the **Included software** link in the table. When using macOS images, you can manually select from tool versions. [Read more](#mac-pick-tools).
 
-| Image | Classic Editor Agent Specification | YAML VM Image Label | Included Software |
+| Image | Classic Editor Agent Specification | YAML VM Image Label | Included software |
 | --- | --- | --- | --- |
 | macOS 15 Sequoia | *macOS-15* | `macOS-latest` OR `macOS-15` | [Link](https://github.com/actions/runner-images/blob/main/images/macos/macos-15-Readme.md) |
 | macOS 15 Sequoia ARM64<br>*limited public preview* | *macOS-15-arm64* | `macOS-15-arm64` | [Link](https://github.com/actions/runner-images/blob/main/images/macos/macos-15-arm64-Readme.md) |

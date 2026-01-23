@@ -64,7 +64,7 @@ Pipelines using the macOS 14 Sonoma hosted image should be updated to `macos-lat
 
 To identify your pipelines that are using the macOS 14 Sonoma hosted image, follow the instructions in the [How to identify pipelines using a deprecated hosted image](#how-to-identify-pipelines-using-a-deprecated-hosted-image) section.
 
-To update your affected YAML pipelines to a new image, see [Update YAML pipelines to use a new image](#update-yaml-pipelines-to-use-a-new-image). To update your classic pipelines see [Update classic pipelines to use a new image](#update-classic-pipelines-to-use-a-new-image).
+To update your affected YAML pipelines to a new image, see [Update YAML pipelines to use a new image](#update-yaml-pipelines-to-use-a-new-image). To update your affected classic pipelines, see [Update classic pipelines to use a new image](#update-classic-pipelines-to-use-a-new-image).
 
 #### [Windows images](#tab/windows-images/)
 
@@ -94,7 +94,7 @@ To update your YAML pipelines to use a new image:
 
 1. [Open your pipeline YAML file](../get-started/yaml-pipeline-editor.md#edit-a-yaml-pipeline).
 2. Locate the `vmImage` property.
-3. Change the value from to the new image. For example, to replace an older version of a Linux agent with the latest, change:
+3. Change the value from the old image to the new image. For example, to replace an older version of a Linux agent with the latest version, change:
 
    ```yaml
    pool:
@@ -110,12 +110,16 @@ To update your YAML pipelines to use a new image:
 
 4. Save and run your pipeline to validate the changes.
 
+To see the versions of the software that are installed on each hosted image, see [Microsoft-hosted agents: Software](agents/hosted.md#software), and click the **Included software** link for the specific image. 
+
 ## Update classic pipelines to use a new image
 
 To update classic pipelines:
 - Navigate to the pipeline settings in the Azure DevOps portal.
 - Locate the agent specification and update the **Agent Specification** to the newer version.
 - Save and queue a new run to verify the update.
+
+To see the versions of the software that are installed on each hosted image, see [Microsoft-hosted agents: Software](agents/hosted.md#software), and click the **Included software** link for the specific image.
 
 ## Alternative methods to use a deprecated image
 
