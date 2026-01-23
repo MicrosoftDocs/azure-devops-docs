@@ -2,7 +2,7 @@
 title: Microsoft-hosted image deprecations for Azure Pipelines
 description: Learn about the lifecycle and deprecation schedule of Microsoft-hosted images provided in Azure Pipelines
 ms.topic: concept-article
-ms.date: 01/21/2026
+ms.date: 01/23/2026
 monikerRange: '<=azure-devops'
 ---
 
@@ -110,7 +110,7 @@ To update your YAML pipelines to use a new image:
 
 4. Save and run your pipeline to validate the changes.
 
-To see the versions of the software that are installed on each hosted image, see [Microsoft-hosted agents: Software](agents/hosted.md#software), and click the **Included software** link for the specific image. 
+To see the versions of the software that are installed on each hosted image, see [Microsoft-hosted agents: Software](hosted.md#software), and click the **Included software** link for the specific image. 
 
 ## Update classic pipelines to use a new image
 
@@ -119,7 +119,7 @@ To update classic pipelines:
 - Locate the agent specification and update the **Agent Specification** to the newer version.
 - Save and queue a new run to verify the update.
 
-To see the versions of the software that are installed on each hosted image, see [Microsoft-hosted agents: Software](agents/hosted.md#software), and click the **Included software** link for the specific image.
+To see the versions of the software that are installed on each hosted image, see [Microsoft-hosted agents: Software](hosted.md#software), and click the **Included software** link for the specific image.
 
 ## Alternative methods to use a deprecated image
 
