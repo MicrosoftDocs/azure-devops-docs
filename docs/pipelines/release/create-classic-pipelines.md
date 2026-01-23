@@ -20,7 +20,7 @@ With Classic pipelines, you configure your pipeline using a visual editor. You c
 
 | **Product**        | **Requirements**  |
 |--------------------|-------------------|
-| **Azure DevOps**   | - An [Azure DevOps organization](../../organizations/accounts/create-organization.md).<br> - An [Azure DevOps project](../../organizations/projects/create-project.md). |
+| **Azure DevOps**   | - An [Azure DevOps organization](../../organizations/accounts/create-organization.md).<br> - An [Azure DevOps project](../../organizations/projects/create-project.md).<br> - A [GitHub](https://github.com) account. |
 
 ## Get the code
 
