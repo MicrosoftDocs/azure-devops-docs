@@ -261,7 +261,7 @@
     - name: Hosted agents
       href: agents/hosted.md
     - name: Deprecation schedule
-      href: agents/deprecation-schedule.md
+      href: agents/hosted-deprecation-schedule.md
   - name: Self-hosted Linux agents
     href: agents/linux-agent.md
   - name: Self-hosted macOS agents
