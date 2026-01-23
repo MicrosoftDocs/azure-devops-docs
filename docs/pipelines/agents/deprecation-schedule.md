@@ -30,8 +30,6 @@ The following hosted agent images are scheduled for deprecation:
 
 * [macOS 14 Sonoma hosted image deprecation schedule](?tabs=macos-images#macos-14-sonoma-hosted-image-deprecation-schedule)
 
-For more information, see the following **Windows images**, **Linux images**, and **macOS images** sections.
-
 #### [macOS images](#tab/macos-images/)
 
 #### macOS 14 Sonoma hosted image deprecation schedule
