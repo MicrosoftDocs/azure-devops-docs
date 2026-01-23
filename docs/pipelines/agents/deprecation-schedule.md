@@ -1,12 +1,12 @@
 ---
-title: Microsoft-hosted agent deprecations for Azure Pipelines
-description: Learn about the lifecycle and deprecation schedule of Microsoft-hosted agents provided in Azure Pipelines
+title: Microsoft-hosted image deprecations for Azure Pipelines
+description: Learn about the lifecycle and deprecation schedule of Microsoft-hosted images provided in Azure Pipelines
 ms.topic: concept-article
 ms.date: 01/21/2026
 monikerRange: '<=azure-devops'
 ---
 
-# Microsoft-hosted agent deprecation schedule
+# Microsoft-hosted image deprecation schedule
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-eq-azure-devops.md)]
 
@@ -31,14 +31,6 @@ The following hosted agent images are scheduled for deprecation:
 * [macOS 14 Sonoma hosted image deprecation schedule](?tabs=macos-images#macos-14-sonoma-hosted-image-deprecation-schedule)
 
 For more information, see the following **Windows images**, **Linux images**, and **macOS images** sections.
-
-#### [Windows images](#tab/windows-images/)
-
-No Windows hosted agent images are currently scheduled for deprecation.
-
-#### [Linux images](#tab/linux-images/)
-
-No Linux hosted agent images are currently scheduled for deprecation.
 
 #### [macOS images](#tab/macos-images/)
 
@@ -73,6 +65,14 @@ Pipelines using the macOS 14 Sonoma hosted image should be updated to `macos-lat
 To identify your pipelines that are using the macOS 14 Sonoma hosted image, follow the instructions in the [How to identify pipelines using a deprecated hosted image](#how-to-identify-pipelines-using-a-deprecated-hosted-image) section.
 
 To update your affected YAML pipelines to a new image, see [Update YAML pipelines to use a new image](#update-yaml-pipelines-to-use-a-new-image). To update your classic pipelines see [Update classic pipelines to use a new image](#update-classic-pipelines-to-use-a-new-image).
+
+#### [Windows images](#tab/windows-images/)
+
+No Windows hosted agent images are currently scheduled for deprecation.
+
+#### [Linux images](#tab/linux-images/)
+
+No Linux hosted agent images are currently scheduled for deprecation.
 
 * * *
 
