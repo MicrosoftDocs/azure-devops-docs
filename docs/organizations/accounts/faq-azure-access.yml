@@ -7,6 +7,7 @@ metadata:
     - has-azure-ad-ps-ref
     - azure-ad-ref-level-one-done
     - sfi-image-nochange
+    - support-driven-update
   description: Learn the answers to frequently asked questions (FAQs), like how to understand Microsoft Entra groups, add users, connect to, disconnect from, or switch your directory.
   ms.subservice: azure-devops-organizations
   ms.assetid: d51de748-c53e-4468-ad9b-275d6bf1a4dd
