@@ -33,9 +33,9 @@ The CSV approach offers several advantages over direct web editing:
 
 ## Prerequisites
 
-**Permissions**:
-- Export work items: Member of the **Project Administrators** group or **View project-level information** permission set to **Allow**.
-- Import work items: Member of the **Project Administrators** or **Team Foundation Administrators** security group.
+| Category | Requirements |
+|----------|--------------|
+| **Permissions** | - **Export work items**: Member of the **Project Administrators** group or **View project-level information** permission set to **Allow**. <br> - **Import work items**: Member of the **Project Administrators** or **Team Foundation Administrators** security group. |
 
 ## Export work items to a CSV file
 
