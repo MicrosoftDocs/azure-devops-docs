@@ -13,7 +13,7 @@ metadata:
   ms.topic: faq
   ms.author: chcomley
   author: chcomley
-  ms.date: 10/23/2024
+  ms.date: 01/26/2026
   monikerRange: 'azure-devops'
 title: Access via Microsoft Entra FAQs
 summary: |
@@ -152,35 +152,35 @@ sections:
           Select from the following two options:
           
           * Have a Microsoft Entra administrator remove your account from the directory and readd it, making you a *member*, rather than a *guest*. For more information, see [Can Microsoft Entra B2B users be added as members instead of guests?](/azure/active-directory/b2b/user-properties#can-azure-ad-b2b-users-be-added-as-members-instead-of-guests).
-          * [Change the UserType of the Microsoft Entra guest using Microsoft Graph PowerShell](#convert-the-usertype-from-guest-to-member-using-microsoft-graph-powershell). [We don't advise](/azure/active-directory/external-identities/user-properties#convert-usertype) using this advanced process, but it allows the user to query Microsoft Entra ID from the Azure DevOps organization.
+          * [Change the UserType of the Microsoft Entra guest using Microsoft Graph PowerShell](#convert-the-usertype-from-guest-to-member-using-microsoft-graph-powershell). [Microsoft doesn't recommend](/azure/active-directory/external-identities/user-properties#convert-usertype) this advanced process, but it allows the user to query Microsoft Entra ID from the Azure DevOps organization.
 
           #### Convert the UserType from guest to member using Microsoft Graph PowerShell
 
           > [!WARNING]
-          > [We don't recommend](/azure/active-directory/external-identities/user-properties#convert-usertype) this advanced process, but it allows the user to query Microsoft Entra ID from the Azure DevOps organization.
+          > This process allows the user to query Microsoft Entra ID from the Azure DevOps organization, but [Microsoft doesn't recommend it](/azure/active-directory/external-identities/user-properties#convert-usertype).
           
           **Prerequisites**
 
-          As the user making the UserType change, have the following items:
+          The user making the UserType change must have:
 
           * A work/school account (WSA)/native user in Microsoft Entra ID. You can't change the UserType with a Microsoft Account.
           * User Administrator permissions
 
           > [!IMPORTANT]
-          > We recommend creating a new (native) Microsoft Entra user with User Administrator permissions in Microsoft Entra ID. Complete the following steps with this user to eliminate the possibility of connecting to the wrong Microsoft Entra ID. You can delete the new user when you're done.
+          > Create a new (native) Microsoft Entra user with User Administrator permissions in Microsoft Entra ID. Complete the following steps with this user to eliminate the possibility of connecting to the wrong Microsoft Entra ID. You can delete the new user when you're done.
           
           **Process**
 
           1. Sign in to the [Azure portal](https://portal.azure.com) as User Administrator for your organization's directory.
           2. Go to the tenant that backs your Azure DevOps organization.
           3. Open an Administrative Windows PowerShell prompt to use Microsoft Graph PowerShell.
-          4. Execute `Install-Module -Name Microsoft.Graph -Scope CurrentUser`. The [Microsoft Graph](/powershell/microsoftgraph/installation) downloads from the PowerShell Gallery.
-          5. Once the installation completes, execute `Connect-MgGraph -Scopes "User.ReadWrite.All"`. Sign in to the Microsoft Entra ID. Be sure to use an ID that meets the previously mentioned criteria and consent to the permissions.
-          6. Execute `Get-MgUser -Filter "DisplayName eq '<display name'" -property DisplayName, ID, UserPrincipalName, UserType | Select DisplayName, ID, UserPrincipalName, UserType`, where <display_name> is the display name for the user, as seen inside the Azure portal. We want to change the userType to `Member`.
-          7. Execute `Update-MgUser -UserId string -UserType Member`, where `string` is the value of ID returned by the previous command. The user is set to member status.
-          8. Execute `Get-MgUser -Filter "DisplayName eq '<display name'" -property DisplayName, ID, UserPrincipalName, UserType | Select DisplayName, ID, UserPrincipalName, UserType` again to verify the UserType changed. You can also verify in the Microsoft Entra ID section of the Azure portal.
+          4. Run `Install-Module -Name Microsoft.Graph -Scope CurrentUser`. The [Microsoft Graph](/powershell/microsoftgraph/installation) module downloads from the PowerShell Gallery.
+          5. After the installation completes, run `Connect-MgGraph -Scopes "User.ReadWrite.All"`. Sign in to Microsoft Entra ID. Use an ID that meets the previously mentioned criteria and consent to the permissions.
+          6. Run `Get-MgUser -Filter "DisplayName eq '<display_name>'" -property DisplayName, ID, UserPrincipalName, UserType | Select DisplayName, ID, UserPrincipalName, UserType`, where `<display_name>` is the display name for the user as shown in the Azure portal.
+          7. Run `Update-MgUser -UserId <string> -UserType Member`, where `<string>` is the value of ID returned by the previous command. This command sets the user to member status.
+          8. Run `Get-MgUser -Filter "DisplayName eq '<display_name>'" -property DisplayName, ID, UserPrincipalName, UserType | Select DisplayName, ID, UserPrincipalName, UserType` again to verify the UserType changed. You can also verify in the Microsoft Entra ID section of the Azure portal.
 
-          While not the norm, it could take several hours, or even days before this change reflects in Azure DevOps. If it doesn't fix your Azure DevOps issue immediately, give it some time and keep trying.
+          While not the norm, this change could take several hours or even days to reflect in Azure DevOps. If it doesn't fix your Azure DevOps issue immediately, wait and try again.
           
           <a name="azure-ad-groups"></a>
 
@@ -255,6 +255,11 @@ sections:
         answer: |
           The team capacity pane shows only users who previously signed in to your organization.
           To set capacity, manually add users to your team.
+
+      - question: |
+          Why does Azure DevOps display only 200 members of a Microsoft Entra group?
+        answer: |
+          For performance reasons, Azure DevOps shows only the first 200 members of a Microsoft Entra group. All members, whether shown or not, are still honored during permission checks. To view all the members of a Microsoft Entra ID group, use the Microsoft Entra ID blade in the [Azure portal](https://portal.azure.com).
  
       - question: |
           Why doesn't Azure DevOps reclaim access levels from users who aren't Microsoft Entra group members anymore?
