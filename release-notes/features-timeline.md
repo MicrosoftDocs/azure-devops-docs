@@ -383,15 +383,15 @@ Below, you will find several investments that we plan to deliver as part of this
         <td>GitHub Advanced Security for Azure DevOps</td>
       </tr>
       <tr>
-         <td><a href="/azure/devops/release-notes/2026/testplans/TFE-Improved-Reliability" data-raw-source="[Improve Reliability of Test & Feedback Extension for Edge and Chrome](/azure/devops/release-notes/2026/testplans/TFE-Improved-Reliability)">Improve Reliability of Test & Feedback Extension for Edge and Chrome</a></td>
+         <td><a href="/azure/devops/release-notes/roadmap/2026/testplans/TFE-Improved-Reliability" data-raw-source="[Improve Reliability of Test & Feedback Extension for Edge and Chrome](/azure/devops/release-notes/roadmap/2026/testplans/TFE-Improved-Reliability)">Improve Reliability of Test & Feedback Extension for Edge and Chrome</a></td>
          <td>Test Plans</td>
       </tr>
       <tr>
-         <td><a href="/azure/devops/release-notes/2026/testplans/Actual-Test-Result" data-raw-source="[Support Capturing of Actual Test Result](/azure/devops/release-notes/2026/testplans/Actual-Test-Result)">Support Capturing of Actual Test Result</a></td>
+         <td><a href="/azure/devops/release-notes/roadmap/2026/testplans/Actual-Test-Result" data-raw-source="[Support Capturing of Actual Test Result](/azure/devops/release-notes/roadmap/2026/testplans/Actual-Test-Result)">Support Capturing of Actual Test Result</a></td>
          <td>Test Plans</td>
       </tr>
       <tr>
-         <td><a href="/azure/devops/release-notes/2026/testplans/New-Web-Runner" data-raw-source="[Revamp of the Web Runner](/azure/devops/release-notes/2026/testplans/New-Web-Runner)">Revamp of the Web Runner</a></td>
+         <td><a href="/azure/devops/release-notes/roadmap/2026/testplans/New-Web-Runner" data-raw-source="[Revamp of the Web Runner](/azure/devops/release-notes/roadmap/2026/testplans/New-Web-Runner)">Revamp of the Web Runner</a></td>
          <td>Test Plans</td>
       </tr>
       <td rowspan="20"><strong>Future</strong></td>
