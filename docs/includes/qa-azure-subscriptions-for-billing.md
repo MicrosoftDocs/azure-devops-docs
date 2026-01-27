@@ -1,8 +1,8 @@
 <a name="which-azure-sub-for-billing"></a>
 
-#### Q: Which Azure subscriptions can I link to my organization and use for billing?
+### Which Azure subscriptions can I link to my organization and use for billing?
 
-A: You can use an [Azure subscription](https://azure.microsoft.com/pricing/purchase-options/) 
+You can use an [Azure subscription](https://azure.microsoft.com/pricing/purchase-options/) 
 that's not the following:
 
 *	An [Azure Free Trial](https://azure.microsoft.com/offers/ms-azr-0044p/)
