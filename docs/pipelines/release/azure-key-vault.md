@@ -160,73 +160,75 @@ To access your Azure Key Vault, you must first set up a service principal to gra
 
 1. [Create a service principal](/cli/azure/azure-cli-sp-tutorial-1#create-a-service-principal)
 
-1. Navigate to [Azure portal](https://portal.azure.com/), and then use the search bar to find the key vault you created earlier.
+1. Navigate to [Azure portal](https://portal.azure.com/), and use the search bar to locate the Azure Key Vault you created earlier.
 
 1. Select **Access policies**, and then select **Create**.
 
 1. Under **Secret permissions**, add the **Get** and **List** permissions, and then select **Next**.
 
-1. For **Principal**, paste your service principal's *Object ID*, select it, and then select **Next**.
+1. For **Principal**, paste the *Object ID* of your service principal, select the service principal, and then select **Next**.
 
-1. Select **Next** once more, review your policies, and then select **Save** when you're done.
+1. Select **Next** again, review the access policy, and then select **Save**.
 
 ## Add role assignment
 
-In the next step, you’ll create an ARM service connection for your service principal. Before verifying the connection, you need to: (1) grant the service principal *Read* access at the subscription level, and (2) create a federated credential for your service principal.
+In the next step, you’ll create an ARM service connection for your service principal. Before verifying the connection, you need to:
+- Grant the service principal *Reader* access at the subscription level
+- Create a federated credential for your service principal
 
-The following steps outline how to grant *Read* access at the subscription level:
+Follow these steps to grant Reader access at the subscription level:
 
-1. Navigate to [Azure portal](https://portal.azure.com/), select **Subscriptions**, and then find and select your subscription.
+1. Navigate to [Azure portal](https://portal.azure.com/), select **Subscriptions**, and then select your subscription.
 
-1. Select **Access control**, and then select **Add** > **Add role assignment**.
+1. Select **Access control (IAM)**, and then select **Add** > **Add role assignment**.
 
-1. Select **Reader** under the **Role** tab, and then select **Next**.
+1. On the **Role** tab, select **Reader**, and then select **Next**.
 
 1. Select **User, group, or service principal**, and then select **Select members**. 
 
-1. Paste your service principal's Object ID in the search bar, select it, and then **Select**.
+1. Paste the *Object ID* of your service principal into the search bar, select it, and then select **Select**.
  
-1. Select **Review + assign**, review your settings, and then select **Review + assign** once more to confirm your choices and add the role assignment.
+1. Select **Review + assign**, review the settings, and then select **Review + assign** again to apply the role assignment.
 
 ## Create a service connection
 
-1. Sign in to your Azure DevOps organization, and then navigate to your project.
+1. Sign in to Azure DevOps, then navigate to your project.
 
-1. Select **Project settings**, and then select **Service connections**.
+1. Select **Project settings**, then select **Service connections**.
 
 1. Select **New service connection**, select **Azure Resource Manager**, and then select **Next**.
 
 1. Select **Service principal (manual)**, and then select **Next**.
 
-1. For **Identity Type**, select **App registration or managed identity (manual)** from the dropdown menu.
+1. For **Identity Type**, select **App registration or managed identity (manual)**.
 
 1. For **Credential**, select **Workload identity federation**.
 
-1. Provide a name for your service connection, and then select **Next**.
+1. Enter a name for the service connection, and then select **Next**.
 
-1. Select **Azure Cloud** for **Environment**, and **Subscription** for the **Subscription scope**.
+1. For **Environment**, select **Azure Cloud**, and for Subscription scope, select **Subscription**.
 
 1. Enter your Azure **Subscription ID** and **Subscription name**.
 
 1. For **Authentication**, paste your service principal's **Application (client) ID** and **Directory (tenant) ID**
 
-1. In **Security**, selecting **Grant access permission to all pipelines** lets all pipelines use this connection. This option isn't recommended. Instead, [authorize each pipeline individually to use the service connection](../library/service-endpoints.md#authorize-pipelines).
+1. Under **Security**, the **Grant access permission to all pipelines** option allows all pipelines to use this service connection. This option isn’t recommended. Instead, [authorize each pipeline individually to use the service connection](../library/service-endpoints.md#authorize-pipelines).
 
-1. Leave this window open, you'll return to verify and save your service connection once you've created the federated credential in Azure.
+1. Leave this window open. You’ll return later to verify and save the service connection after creating the federated credential.
 
 ## Create a service principal federated credential
 
-1. Navigate to [Azure portal](https://portal.azure.com/), then enter your service principal's *ClientID* in the search bar, and then select your *Application*.
+1. Navigate to [Azure portal](https://portal.azure.com/), enter the Client ID of your service principal in the search bar, and then select your *Application*.
 
 1. Under **Manage**, select **Certificates & secrets** > **Federated credentials**.
 
-1. Select **Add credential**, and then for **Federated credential scenario**, select **Other issuer**.
+1. Select **Add credential**, and then choose **Other issuer** for **Federated credential scenario**.
 
-1. For **Issuer**, paste the *Issuer* you copied from your service connection earlier.
+1. For **Issuer**, paste the *Issuer* value you copied from the service connection.
 
-1. For **Subject identifier**, paste the *Subject identifier* you copied from your service connection earlier.
+1. For **Subject identifier**, paste the *Subject identifier* value you copied from the service connection.
 
-1. Provide a **Name** for your federated credential, and then select **Add** when you're done.
+1. Enter a **Name** for the federated credential, and then select **Add**.
 
 1. Return to your service connection window, select **Verify and Save** to save your service connection.
 
@@ -234,19 +236,22 @@ The following steps outline how to grant *Read* access at the subscription level
 
 ## Access key vault secrets from your pipeline
 
+> [!WARNING]
+> This tutorial is for educational purposes only. For security best practices and guidance on safely working with secrets, see [Manage secrets in your server apps with Azure Key Vault](/training/modules/manage-secrets-with-azure-key-vault/).
+
 #### [YAML](#tab/yaml)
 
-1. Sign in to your Azure DevOps organization, and then navigate to your project.
+1. Sign in to Azure DevOps, then navigate to your project.
 
-1. Select **Pipelines**, and then select **New Pipeline**.
+1. Select **Pipelines**, then select **New Pipeline**.
 
 1. Select **Azure Repos Git** (YAML), and then select your repository.
 
 1. Select the **Starter pipeline** template.
 
-1. The default pipeline will include a script that runs echo commands. Those are not needed so we can delete them.
+1. The default pipeline includes sample echo commands. These aren’t needed and can be removed.
 
-1. Add the AzureKeyVault task, replacing the placeholders with the name of the service connection you created earlier and your key vault name. Your YAML file should resemble the following snippet:
+1. Add the *Azure Key Vault task* to your pipeline. Replace the placeholders with the name of the service connection you created earlier and your Key Vault name. Your YAML file should look similar to the following example:
 
     ```yml
     trigger:
@@ -265,7 +270,7 @@ The following steps outline how to grant *Read* access at the subscription level
         RunAsPreJob: false
     ```
 
-1. Let's add the following tasks to copy and publish our secret. This example is for demonstration purposes only and should not be implemented in a production environment.
+1. Add the following tasks to copy and publish the secret. This example is for **demonstration purposes only** and shouldn’t be used in a production environment.
 
     ```YAML
     trigger:
@@ -302,55 +307,55 @@ The following steps outline how to grant *Read* access at the subscription level
         publishLocation: 'Container'
     ```
 
-1. Select **Save and run**, and then select it once more to commit your changes and trigger the pipeline. You may be asked to allow the pipeline access to Azure resources, if prompted select **Allow**. You will only have to approve your pipeline once.
+1. Select **Save and run**, and then select it once more to commit your changes and trigger the pipeline. If prompted, select **Allow** to grant the pipeline access to Azure resources.
 
-1. Select the **CmdLine** task to view the logs.
+1. After the pipeline starts, select the **CmdLine** task to view the logs.
 
     :::image type="content" border="false" source="media/azure-key-vault/command-line-task.png" alt-text="A screenshot showing the command-line task logs.":::
 
-1. Once the pipeline run is complete, return to the pipeline summary and select the published artifact.
+1. When the pipeline run completes, return to the pipeline summary and select the published artifact.
 
     :::image type="content" border="false" source="media/azure-key-vault/pipeline-summary.png" alt-text="A screenshot showing the published artifact in the summary tab.":::
 
-1. Select **drop** > **secret.txt** to download it.
+1. Select **drop** > **secret.txt** to download the file.
 
     :::image type="content" border="false" source="media/azure-key-vault/view-artifact.png" alt-text="A screenshot showing how to download the published artifact.":::
 
-1. Open the text file you just downloaded, the text file should contain the secret from your Azure key vault.
+1. Open the downloaded text file. It should contain the secret retrieved from your Azure Key Vault.
 
 #### [Classic](#tab/classic)
 
-1. Sign in to your Azure DevOps organization, and then navigate to your project.
+1. Sign in to Azure DevOps, then navigate to your project.
 
 1. Select **Pipelines**, and then select **New Pipeline**.
 
-1. Select **Use the classic editor** to create a classic pipeline.
+1. Select **Use the classic editor** to create a Classic pipeline.
 
 1. Select **Azure Repos Git**, select your repository and default branch, and then select **Continue**.
 
 1. Select the **.Net Desktop** pipeline template.
 
-1. For this example, we will only need the last two tasks. Press CTRL and then select the first five tasks, right-click and choose **Remove selected tasks(s)** to delete them.
+1. For this example, only the last two tasks are required. Hold **CTRL** and then select the first five tasks, right-click and then select **Remove selected tasks(s)** to delete them.
 
     :::image type="content" border="false" source="media/delete-tasks.png" alt-text="A screenshot showing how to delete multiple pipeline tasks.":::
 
-1. Select **+** to add a new task. Search for the **Command line** task, select it, and then select **Add** to add it to your pipeline. Once added, configure it as follows:
+1. Select **+** to add a new task. Search for the **Command line** task, select it, and then select **Add**. Configure the task as follows:
     
     - **Display name**: Create file
     - **Script**: `echo $(SECRET_NAME) > secret.txt`
 
     :::image type="content" border="false" source="media/create-secret-file.png" alt-text="A screenshot showing how to configure the command line task.":::
 
-1. Select **+** to add a new task. Search for the **Azure Key Vault** task, select it, and then select *Add** to add it to your pipeline. Once added, configure it as follows:
+1. Select **+** to add a new task. Search for the **Azure Key Vault** task, select it, and then select **Add**. Configure the task as follows:
 
     - **Display name**: Azure Key Vault
-    - **Azure subscription**: select the service connection you created earlier
-    - **Key vault**: select your key vault
-    - **Secret filter**: A comma separated list of secret names or leave * to download all secrets from the selected key vault
+    - **Azure subscription**: Select the service connection you created earlier
+    - **Key vault**: Select your Key Vault
+    - **Secret filter**: Enter a comma‑separated list of secret names, or use * to download all secrets
     
     :::image type="content" border="false" source="media/azure-key-vault-classic-task-setup.png" alt-text="A screenshot showing how to set up the Azure Key Vault task in classic pipelines.":::
 
-1. Select the **Copy files** task and fill out the required fields as follows:
+1. Select the **Copy files** task and configure the following fields:
     
     - **Display name**: Copy File
     - **Contents**: secret.txt
@@ -358,7 +363,7 @@ The following steps outline how to grant *Read* access at the subscription level
 
     :::image type="content" border="false" source="media/copy-files-task-classic-pipeline.png" alt-text="A screenshot showing how to set up the copy files task in classic pipelines.":::
 
-1. Select the **Publish Artifacts** task and fill out the required fields as follows:
+1. Select the **Publish Artifacts** task and configure the following fields:
 
     - **Display name**: Publish Artifact
     - **Path to publish**: $(build.artifactstagingdirectory)
@@ -367,52 +372,53 @@ The following steps outline how to grant *Read* access at the subscription level
     
     :::image type="content" border="false" source="media/publish-artifacts-classic-pipeline.png" alt-text="A screenshot showing how to set up the publish artifacts task in classic pipelines.":::
 
-1. Select **Save and queue**, and then select **Run** to run your pipeline.
+1. Select **Save and queue**, and then select **Run** to start the pipeline.
 
-1. Once the pipeline run is complete, return to the pipeline summary and select the published artifact.
+1. After the pipeline completes, return to the pipeline summary and select the published artifact.
 
-1. Select **drop** > **secret.txt** to download the published artifact.
+1. Select **drop** > **secret.txt** to download the artifact.
 
     :::image type="content" border="false" source="media/azure-key-vault/view-artifact.png" alt-text="A screenshot showing how to download the published artifact.":::
 
-1. Open the text file you just downloaded, the text file should contain the secret from your Azure key vault.
+1. Open the downloaded text file. It should contain the secret retrieved from your Azure Key Vault.
 
 
-***
+* * *
 
-> [!WARNING]
-> This tutorial is for educational purposes only. For security best practices and how to safely work with secrets, see [Manage secrets in your server apps with Azure Key Vault](/training/modules/manage-secrets-with-azure-key-vault/).
 
 ## Clean up resources
 
-Follow the steps below to delete the resources you created:
+Follow these steps to delete the resources you created:
 
-1. If you've created a new organization to host your project, see [how to delete your organization](../../organizations/accounts/delete-your-organization.md), otherwise [delete your project](../../organizations/projects/delete-project.md).
+1. If you created a new organization to host your project, see [how to delete your organization](../../organizations/accounts/delete-your-organization.md), otherwise [delete your project](../../organizations/projects/delete-project.md).
 
-1. All Azure resources created during this tutorial are hosted under a single resource group. Run the following command to delete your resource group and all of its resources.
+1. All Azure resources created during this tutorial are hosted in a single resource group. Run the following command to delete the resource group and all of its resources.
 
     ```azurecli
     az group delete --name <YOUR_RESOURCE_GROUP_NAME>
     ```
 
-## FAQ
+## Troubleshooting
 
-#### Q: I'm getting the following error: "the user or group does not have secrets list permission" what should I do?
+#### Error: “The user or group does not have secrets list permission”:
 
-A: If you encounter an error indicating that the user or group does not have secrets list permission on key vault, run the following commands to authorize your application to access the key or secret in the Azure Key Vault:
+This error occurs when the service principal or managed identity used by your pipeline doesn’t have permission to list secrets in the Azure Key Vault. To resolve this issue, make sure the identity has the **Get** and **List** permissions for secrets. Run the following commands to grant the required permissions to your service principal:
+
 
 ```azurecli
-az account set --subscription <YOUR_SUBSCRIPTION_ID>
-
 az login
+
+az account set --subscription <YOUR_SUBSCRIPTION_ID>
 
 $spnObjectId = az ad sp show --id <YOUR_SERVICE_PRINCIPAL_ID>
 
 az keyvault set-policy --name <YOUR_KEY_VAULT_NAME> --object-id $spnObjectId --secret-permissions get list
 ```
 
-## Related articles
+## Related content
+
+- [Access a private key vault from your pipeline](key-vault-access.md)
 
 - [Publish and download pipeline artifacts](../artifacts/pipeline-artifacts.md)
-- [Release artifacts and artifact sources](artifacts.md)
-- [Use gates and approvals to control deployment](deploy-using-approvals.md)
+
+- [Manage service connections](../library/service-endpoints.md)
