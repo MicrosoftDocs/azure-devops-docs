@@ -2,39 +2,27 @@
 
 ### Which Azure subscriptions can I link to my organization and use for billing?
 
-You can use an [Azure subscription](https://azure.microsoft.com/pricing/purchase-options/) 
-that's not the following:
+You can link most [Azure subscriptions](https://azure.microsoft.com/pricing/purchase-options/) to your organization for billing, except the following:
 
-*	An [Azure Free Trial](https://azure.microsoft.com/offers/ms-azr-0044p/)
-*	A [free Microsoft Entra subscription](/microsoft-365/compliance/use-your-free-azure-ad-subscription-in-office-365)
+* [Azure Free Trial](https://azure.microsoft.com/offers/ms-azr-0044p/)
+* [Free Microsoft Entra subscription](/microsoft-365/compliance/use-your-free-azure-ad-subscription-in-office-365)
 
-If you have one of these subscriptions, set up a separate 
-[Pay-As-You-Go Azure subscription](https://azure.microsoft.com/offers/ms-azr-0003p/) 
-instead. 
+If you have one of these subscription types, set up a separate [pay-as-you-go Azure subscription](https://azure.microsoft.com/offers/ms-azr-0003p/).
 
-**Important for Visual Studio subscribers and Visual Studio Dev Essentials members**:
+> [!IMPORTANT]
+> **Visual Studio subscribers and Visual Studio Dev Essentials members:**
+> 
+> - You can't use [monthly credits for Visual Studio subscriptions](https://azure.microsoft.com/pricing/member-offers/msdn-benefits-details/) or [monthly credits for Visual Studio Dev Essentials](https://azure.microsoft.com/offers/ms-azr-0022p/) to pay for Azure DevOps purchases. You can still link these Azure subscriptions for billing, but Azure charges your credit card instead of applying credits.
+> - Before you use these subscriptions for billing, [remove the default spending limit indefinitely](https://azure.microsoft.com/pricing/spending-limits/). If you don't remove the limit, Azure disables your subscription when monthly charges are billed, which suspends all resources including Azure DevOps purchases, Visual Studio Marketplace purchases, and Azure resources.
 
-* You can't use [monthly credits for Visual Studio subscriptions](https://azure.microsoft.com/pricing/member-offers/msdn-benefits-details/) 
-  or [monthly credits for Visual Studio Dev Essentials](https://azure.microsoft.com/offers/ms-azr-0022p/) to pay for Azure DevOps purchases. 
-  You can still use these types of Azure subscriptions for billing, 
-  but the monthly credits won't apply, so your credit card will be billed for charges instead.
- 
-* Before you use these Azure subscriptions for billing, you must remove their [default spending limit indefinitely](https://azure.microsoft.com/pricing/spending-limits/).
+#### Remove the spending limit
 
-    This prevents disabling your Azure subscription 
-    when your monthly charges are billed the next month. 
-    Otherwise, all resources billed to this subscription 
-    will be suspended, including Azure DevOps purchases,
-    Visual Studio Marketplace purchases, and Azure resources.
+If you have Administrator permissions for your subscription, remove the spending limit in the [Azure portal](https://portal.azure.com):
 
-    <img alt="Spending limit" src="../media/spending-limit.png" />
+1. Sign in to the [Azure portal](https://portal.azure.com) and go to **Cost Management + Billing** > **Subscriptions**.
+2. Select your Azure subscription.
+3. Select **Remove spending limit indefinitely**.
 
-    <img alt="Remove spending limit indefinitely" src="../media/azure-remove-spending-limit.png" />
+:::image type="content" source="../media/spending-limit.png" alt-text="Screenshot showing spending limit option.":::
 
-	If you have Administrator permissions for your subscription, 
-	remove the spending limit by visiting the 
-	[Azure Account Center](https://account.windowsazure.com):
-	
-  1. Sign in to [Azure Account Center (**Account** > **subscriptions**)](https://portal.azure.com). 
-  2. Select your Azure subscription. 
-  3. Remove your spending limit **indefinitely**.
+:::image type="content" source="../media/azure-remove-spending-limit.png" alt-text="Screenshot showing how to remove spending limit indefinitely.":::

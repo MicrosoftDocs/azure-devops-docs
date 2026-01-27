@@ -11,5 +11,5 @@ or try [Azure Support](https://azure.microsoft.com/support/options/).
 
 ### Why can't I link more organizations to my Azure subscription? What does the error "The resource is blocked to receive any update" mean?
 
-There is a limit to the number of organizations that you can link to your Azure subscription.  After you add 25 organizations, Azure stops you from adding more organizations.
+You can link up to 25 organizations to your Azure subscription. After you add 25 organizations, Azure stops you from adding more organizations.
 
