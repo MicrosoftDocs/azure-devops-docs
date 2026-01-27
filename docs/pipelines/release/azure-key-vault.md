@@ -1,8 +1,8 @@
 ---
 title: Use Azure Key Vault secrets in Azure Pipelines
-description: How to create Azure Key vaults, store secrets, and use them in your Azure Pipelines.
+description: Learn how to create Azure Key vaults, store secrets, and use them in your Azure Pipelines.
 ms.topic: tutorial
-ms.date: 04/23/2024
+ms.date: 01/27/2026
 monikerRange: '>= azure-devops'
 ms.custom: devx-track-azurecli, arm2024, sfi-image-nochange
 "recommendations": "true"
@@ -12,30 +12,23 @@ ms.custom: devx-track-azurecli, arm2024, sfi-image-nochange
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
-Azure Key Vault allows developers to securely store and manage sensitive information like API keys, credentials, or certificates. 
-Azure Key Vault service supports two types of containers: vaults and managed HSM (Hardware Security Module) pools. Vaults can store both software and HSM-backed keys, secrets, and certificates, while managed HSM pools exclusively support HSM-backed keys.
-
-In this tutorial, you will learn how to:
-
-> [!div class="checklist"]
->
-> * Create an Azure Key Vault using Azure CLI
-> * Add a secret and configure access to Azure key vault
-> * Use secrets in your pipeline
+Azure Key Vault  is a cloud service that helps developers securely store and manage sensitive information such as API keys, credentials, and certificates. 
+Azure Key Vault service supports two types of containers: vaults and managed HSM (Hardware Security Module) pools. Vaults can store both software and HSM-backed keys, secrets, and certificates, while managed HSM pools exclusively support HSM-backed keys. In this article, you’ll learn how to create an Azure Key Vault, add a secret and configure access permissions, and then use that secret securely in Azure pipeline.
 
 ## Prerequisites
 
-- An Azure DevOps organization and a project. Create an [organization](../../organizations/accounts/create-organization.md) or a [project](../../organizations/projects/create-project.md#create-a-project) if you haven't already.
+| Category           | Requirements              |
+|--------------------|---------------------------|
+| **Azure DevOps**   | - An [Azure DevOps organization](../../organizations/accounts/create-organization.md).<br> - An [Azure DevOps project](../../organizations/projects/create-project.md). |
+| **Azure**          | An [Azure subscription](https://azure.microsoft.com/pricing/purchase-options/azure-account?cid=msft_learn). |
 
-- An Azure subscription. [Create an Azure account for free](https://azure.microsoft.com/pricing/purchase-options/azure-account?cid=msft_learn) if you don't have one already.
+## Get the code
 
-## Get the sample code
+If you don't have your own project, import the following sample repository into your Azure Repo.
 
-If you already have your own repository, proceed to the next step. Otherwise, import the following sample repository into your Azure Repo.
+1. Sign in to your Azure DevOps organization, then navigate to your project.
 
-1. Sign in to your Azure DevOps organization, and then navigate to your project.
-
-1. Select **Repos**, and then select **Import**. Enter the following repository URL, and then select **Import**.
+1. Select **Repos**, then select **Import**. Enter the following repository URL, then select **Import**.
 
     ```
     https://github.com/MicrosoftDocs/pipelines-dotnet-core
@@ -43,15 +36,17 @@ If you already have your own repository, proceed to the next step. Otherwise, im
 
 ## Create an Azure Key Vault
 
-1. Sign in to the [Azure portal](https://portal.azure.com/), and then select the [Cloud Shell](/azure/cloud-shell/overview) button in the upper-right corner.
+Follow these steps to create a new Azure Key Vault in Azure Using Azure CLI:
 
-1. If you have more than one Azure subscription associated with your account, use the command below to specify a default subscription. You can use `az account list` to generate a list of your subscriptions.
+1. Navigate to [Azure portal](https://portal.azure.com/), then select [Cloud Shell](/azure/cloud-shell/overview) in the upper-right corner.
+
+1. If your account is associated with multiple Azure subscriptions, set your default subscription:
 
     ```azurecli
     az account set --subscription <YOUR_SUBSCRIPTION_NAME_OR_ID>
     ```
 
-1. Set your default Azure region. You can use `az account list-locations` to generate a list of available regions.
+1. Set a default Azure region. To see a list of available regions, run `az account list-locations`.
 
     ```azurecli
     az config set defaults.location=<YOUR_REGION>
@@ -71,7 +66,7 @@ If you already have your own repository, proceed to the next step. Otherwise, im
       --resource-group <YOUR_RESOURCE_GROUP_NAME>
     ```
 
-1. Create a new secret in your Azure key vault.
+1. Add a secret to your Azure Key Vault:
 
     ```azurecli
     az keyvault secret set \
@@ -82,74 +77,76 @@ If you already have your own repository, proceed to the next step. Otherwise, im
 
 ## Set up authentication
 
+Now that you've created your Azure Key Vault, the next step is to set up authentication. Select *Managed Identity* or *Service Principal*, and follow the instructions to configure authentication.
+
 # [Managed Identity](#tab/managedidentity)
 
 ## Create a user-assigned managed identity
 
-1. Sign in to the [Azure portal](https://portal.azure.com/), then search for the **Managed Identities** service in the search bar.
+1. Navigate to [Azure portal](https://portal.azure.com/), then search for **Managed Identities** in the search bar.
 
-1. Select Create, and fill out the required fields as follows:
+1. Select **Create**, and provide the following information:
 
-    - **Subscription**: Select your subscription from the dropdown menu.
+    - **Subscription**: Select your Azure subscription from the dropdown menu.
     - **Resource group**: Select an existing resource group or create a new one.
-    - **Region**: Select a region from the dropdown menu.
-    - **Name**: Enter a name for your user-assigned managed identity.
+    - **Region**: Select the region where the managed identity will be created.
+    - **Name**: Enter a name for the user-assigned managed identity.
 
-1. Select **Review + create** when you're done.
+1. Select **Review + create**, then select **Create** to start the deployment.
 
-1. Once the deployment is complete, select **Go to resource**, then copy the **Subscription** and **Client ID** values to use in upcoming steps.
+1. After the deployment completes, select **Go to resource**, and copy the **Subscription ID** and **Client ID** values. You’ll need these values in later steps.
 
-1. Navigate to **Settings** > **Properties**, and copy your managed identity's **Tenant ID** value for later use.
+1. Under **Settings**, select **Properties**, and copy your managed identity's **Tenant ID** value for later use.
 
 ## Set up key vault access policies
 
-1. Navigate to [Azure portal](https://portal.azure.com/), and use the search bar to find the key vault you created earlier.
+1. Navigate to [Azure portal](https://portal.azure.com/), and use the search bar to locate the Azure Key Vault you created earlier.
 
 1. Select **Access policies**, then select **Create** to add a new policy.
 
 1. Under **Secret permissions**, select **Get** and **List** checkboxes.
 
-1. Select **Next**, then paste the **Client ID** of the managed identity you created earlier into the search bar. Select your managed identity.
+1. Select **Next**, paste the **Client ID** of the managed identity you created earlier into the search bar, and then select the managed identity.
 
-1. Select **Next**, then **Next** once more.
+1. Select **Next**, then **Next** again.
 
-1. Review your new policies, and then select **Create** when you're done.
+1. Review the access policy details, and then select **Create** to apply the policy.
 
 ## Create a service connection
 
-1. Sign in to your Azure DevOps organization, and then navigate to your project.
+1. Sign in to Azure DevOps, then navigate to your project.
 
-1. Select **Project settings** > **Service connections**, and then select **New service connection** to create a new service connection.
+1. Select **Project settings** > **Service connections**, and then select **New service connection**.
 
 1. Select **Azure Resource Manager**, then select **Next**.
 
-1. For **Identity Type**, select **Managed identity** from the dropdown menu.
+1. For **Identity Type**, select **Managed identity**.
 
-1. For **Step 1: Managed identity details**, fill out the fields as follows:
+1. Under **Step 1: Managed identity details**, provide the following information:
 
-    - **Subscription for managed identity**: Select the subscription containing your managed identity.
+    - **Subscription for managed identity**: Select the subscription that contains your managed identity.
     
-    - **Resource group for managed identity**: Select the resource group hosting your managed identity.
+    - **Resource group for managed identity**: Select the resource group that hosts your managed identity.
     
-    - **Managed Identity**: Select your managed identity from the dropdown menu.
+    - **Managed Identity**: Select your managed identity from the dropdown list.
 
-1. For **Step 2: Azure Scope**, fill out the fields as follows:
+1. For **Step 2: Azure Scope**, provide the following information:
 
-    - **Scope level for service connection**: Select Subscription.
+    - **Scope level for service connection**: Select **Subscription**.
     
-    - **Subscription for service connection**: Select the subscription your managed identity will access.
+    - **Subscription for service connection**: Select the subscription the managed identity will access.
     
-    - **Resource group for Service connection**: (Optional) Specify to limit managed identity access to one resource group.
+    - **Resource group for Service connection**: (Optional) Specify a resource group to limit the managed identity’s access to one resource group.
 
-1. For **Step 3: Service connection details**:
+1. For **Step 3: Service connection details**, provide the following information:
 
-    - **Service connection name**: Provide a name for your service connection.
+    - **Service connection name**: Enter a name for the service connection.
     
     - **Service Management Reference**: (Optional) Context information from an ITSM database.
     
-    - **Description**: (Optional) Add a description.
+    - **Description**: (Optional) Enter a description.
 
-1. In **Security**, selecting **Grant access permission to all pipelines** lets all pipelines use this connection. This option isn't recommended. Instead, [authorize each pipeline individually to use the service connection](../library/service-endpoints.md#authorize-pipelines).
+1. Under **Security**, the **Grant access permission to all pipelines** option allows all pipelines to use this service connection. This option isn't recommended. Instead, [authorize each pipeline individually to use the service connection](../library/service-endpoints.md#authorize-pipelines).
 
 1. Select **Save** to validate and create the service connection.
 
