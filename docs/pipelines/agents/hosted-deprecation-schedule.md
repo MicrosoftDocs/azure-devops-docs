@@ -2,7 +2,7 @@
 title: Microsoft-hosted image deprecations for Azure Pipelines
 description: Learn about the lifecycle and deprecation schedule of Microsoft-hosted images provided in Azure Pipelines
 ms.topic: concept-article
-ms.date: 01/23/2026
+ms.date: 01/28/2026
 monikerRange: '<=azure-devops'
 ---
 
