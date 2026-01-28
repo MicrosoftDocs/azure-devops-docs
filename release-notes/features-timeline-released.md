@@ -2,7 +2,7 @@
 title: Azure DevOps Released Features
 author: gloridelmorales
 ms.author: glmorale
-ms.date: 12/19/2025
+ms.date: 1/27/2026
 ms.topic: release-notes
 ms.service: azure-devops
 ms.subservice: azure-devops-release-notes
@@ -37,6 +37,24 @@ You can also [view the build numbers for each version](#azure-devops-server-buil
             <th>Server</th>
         </tr>
     </thead>
+<tr>
+    <td rowspan="15"><a href="2026/sprint-268-update.md" data-raw-source="[26 January 2026](2026/sprint-268-update.md)">January 26 2026</a></td>
+    <td>CodeQL default setup now in private preview</td><td>GitHub Advanced Security for Azure DevOps</td><td>N/A</td></tr>
+    <td>CodeQL build task updated to Node.js v24</td><td>GitHub Advanced Security for Azure DevOps</td><td>N/A</td></tr>
+    <td>CodeQL autobuild task deprecated</td><td>GitHub Advanced Security for Azure DevOps</td><td>N/A</td></tr>
+    <td>Service hooks event for secret validation status</td><td>GitHub Advanced Security for Azure DevOps</td><td>N/A</td></tr>
+    <td>Secrets tab is now the default in repository view</td><td>GitHub Advanced Security for Azure DevOps</td><td>N/A</td></tr>
+    <td>Work item linking API for alerts</td><td>GitHub Advanced Security for Azure DevOps</td><td>N/A</td></tr>
+    <td>General availability of GitHub Copilot integration for Azure Boards</td><td>Boards</td><td>Future</td></tr>
+    <td>Breaking Change: Disabling of obsolete TFVC check-in policies</td><td>Repos</td><td>Future</td></tr>
+    <td>Pull request notification improvements</td><td>Repos</td><td>Future</td></tr>
+    <td>Pull request templates for multi-level branches</td><td>Repos</td><td>Future</td></tr>
+    <td>New Test Run hub</td><td>Test Plans</td><td>Future</td></tr>
+    <td>Improved test case import wizard</td><td>Test Plans</td><td>Future</td></tr>
+    <td>Focused test point history panel</td><td>Test Plans</td><td>Future</td></tr>
+    <td>Recent test result in user story</td><td>Test Plans</td><td>Future</td></tr>
+    <td>Resume is now the default action for paused test cases</td><td>Test Plans</td><td>Future</td></tr>
+<tr>
 <tr>
     <td rowspan="8"><a href="2025/sprint-266-update.md" data-raw-source="[19 December 2025](2025/sprint-266-update.md)">December 19 2025</a></td>
     <td>Secret asset metadata generally available via API</td><td>GitHub Advanced Security for Azure DevOps</td><td>N/A</td></tr>
