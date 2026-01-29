@@ -20,7 +20,7 @@ The following table compares features of Managed DevOps Pools and scale set agen
 
 | Feature | Managed DevOps Pools | Azure virtual machine scale set agent pools |
 |---------|----------------------|------------------|
-| [Pricing](./pricing.md) | Pricing is the same for Managed DevOps Pools and Scale set agents. You pay a fixed monthly cost for [Azure DevOps Services self-hosted parallel jobs](./pricing.md#azure-devops-services-parallel-job-pricing), combined with the cost of the [Azure services used by your pool](./pricing.md#azure-services-pricing). See [Managed DevOps Pools pricing](./pricing.md) for more information. | Same as Managed DevOps Pools pricing |
+| [Pricing](./pricing.md) | Pricing is the same for Managed DevOps Pools and Scale set agents<sup>*</sup>. You pay a fixed monthly cost for [Azure DevOps Services self-hosted parallel jobs](./pricing.md#azure-devops-services-parallel-job-pricing), combined with the cost of the [Azure services used by your pool](./pricing.md#azure-services-pricing). See [Managed DevOps Pools pricing](./pricing.md) for more information. | Same as Managed DevOps Pools pricing |
 | Virtual machine hosting | Agents run on an Azure subscription owned and managed by Microsoft. For more information, see [Microsoft Managed DevOps Pools architecture overview](./architecture-overview.md) | Agents run on your Azure subscription |
 | [Standby agent schedule](./configure-scaling.md#standby-agent-mode) | Provides [flexible scheduling options](./configure-scaling.md#standby-agent-mode) to configure the number of standby agents available at different times as well as an [automatic standby agent option](./configure-scaling.md#automatic) | Supports a single standby agent count setting (equivalent to Managed DevOps Pools [All Week Scheme](./configure-scaling.md#all-week-scheme)) |
 | Scaling granularity | Scale out is done in increments of one | Scale out is done in increments of a percentage of the maximum pool size, potentially resulting in extra idle agents for which you are billed |
@@ -37,6 +37,8 @@ The following table compares features of Managed DevOps Pools and scale set agen
 | Spot Virtual Machine support | [On product roadmap](./features-timeline.md) | Not supported |
 | Containers | [On product roadmap](./features-timeline.md) | Not supported |
 | BCDR | Not yet planned, but will be prioritized [based on customer feedback](https://developercommunity.visualstudio.com/AzureDevOps) | [Supports availability sets and zones](/azure/virtual-machine-scale-sets/virtual-machine-scale-sets-faq#do-scale-sets-work-with-azure-availability-sets-) |
+
+<sup>*</sup> Although pricing is the same for both, VM Reservations *cannot* be used with Managed DevOps Pools.
 
 ### Map scale set agent settings to Managed DevOps Pools
 
