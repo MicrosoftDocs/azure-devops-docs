@@ -304,7 +304,10 @@
     - name: Cache NuGet packages
       displayName: caching, cache
       href: artifacts/caching-nuget.md
-    - name: View pipeline history (Classic)
+    - name: Create Classic pipelines
+      href: release/create-classic-pipelines.md
+      displayName: classic pipelines
+    - name: View Classic pipeline history
       displayName: history
       href: release/history.md
     - name: Classic pipelines configuration
