@@ -260,9 +260,11 @@ For more information on Managed DevOps Pools images lifecycle, see [Image lifecy
 
 #### [Azure portal](#tab/azure-portal/)
 
-When you specify an Azure Pipelines image by using the Azure portal, the latest version of the image is used by default. If a new version of an Azure Pipelines image breaks your pipeline, you can choose a previous version from the **Version** list.
+To specify an Azure Pipelines image, choose it from the list.
 
 :::image type="content" source="./media/configure-images/image-library-azure-pipelines-images.png" alt-text="Screenshot that shows Azure Pipelines images.":::
+
+When you specify an Azure Pipelines image by using the Azure portal, the latest version of the image is used by default. If a new version of an Azure Pipelines image breaks your pipeline, you can choose a previous version from the **Version** list.
 
 #### [ARM template](#tab/arm/)
 
@@ -565,7 +567,7 @@ Managed DevOps Pools agent images are retired when the image's operating system 
 
 ### Image deprecation schedule
 
-There are no current image deprecations in Managed DevOps Pools at this time. The following images have been deprecated and removed.
+There are no pending image deprecations in Managed DevOps Pools at this time. The following images have been deprecated and removed.
 
 - **Windows Server 2019** has been removed from [Azure Pipelines images](#azure-pipelines-images).
 - **Ubuntu 20.04** has been removed from [Azure Pipelines images](#azure-pipelines-images) and [selected marketplace images](#selected-marketplace-images).
