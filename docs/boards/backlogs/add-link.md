@@ -44,7 +44,7 @@ Work item links are associations between two work items or a work item and anoth
 
 ::: moniker-end
 
-
+[!INCLUDE [ai-assistance-mcp-server-tip](../../includes/ai-assistance-mcp-server-tip.md)]
 
 ## Types of links
 
