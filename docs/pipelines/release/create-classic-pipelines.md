@@ -41,7 +41,7 @@ Classic pipelines allow you to configure your pipeline to perform multiple tasks
 
 1. Select **Use the classic editor** to create a Classic pipeline.
 
-1. Select your repository source and fill in the required fields. In this example, the source is **Azure Repos Git** with the appropriate **Team project**, **Respository**, and **Default branch** as shown in the screenshot. Select **Continue** when you're done.
+1. Select your repository source and fill in the required fields. In this example, the source is **Azure Repos Git** with the appropriate **Team project**, **Repository**, and **Default branch** as shown in the screenshot. Select **Continue** when you're done.
 
     :::image type="content" source="media/classic-pipeline-select-repository.png" alt-text="A screenshot showing how to select your repository in a Classic pipeline.":::
 
