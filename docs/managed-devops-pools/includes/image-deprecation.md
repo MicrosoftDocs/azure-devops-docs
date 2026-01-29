@@ -1,9 +1,11 @@
 ---
 ms.topic: include
-ms.date: 06/05/2025
+ms.date: 01/29/2026
 ---
 
-The following images are being deprecated in Managed DevOps Pools:
+<!--- When there are active deprecations, change these contents to include a NOTE or WARNING --->
+
+The following images are deprecated and have been removed.
 
 * Azure Pipelines - Windows Server 2019
 * Ubuntu 20.04
