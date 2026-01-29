@@ -44,6 +44,8 @@ Work item links are associations between two work items or a work item and anoth
 
 ::: moniker-end
 
+
+
 ## Types of links
 
 The following types of links help you manage the relationships between work items and other objects.
@@ -529,11 +531,13 @@ After a work item gets linked to a commit or pull request, it continues to appea
 
 To remove the work item from participating in future builds and releases, delete the link to the most recent commit and pull request.
 
+<a id="use-ai-assistance"></a>
+
 ## Use AI to manage work item links
 
 ::: moniker range="azure-devops"
 
-If you have the [Azure DevOps MCP Server](../mcp-server/mcp-server-overview.md) configured, you can use AI assistants to manage work item links using natural language prompts. The MCP Server provides your AI assistant with secure access to your Azure DevOps data, allowing you to view, add, and remove links without navigating through the web interface.
+If you have the [Azure DevOps MCP Server](../../mcp-server/mcp-server-overview.md) configured, you can use AI assistants to manage work item links using natural language prompts. The MCP Server provides your AI assistant with secure access to your Azure DevOps data, allowing you to view, add, and remove links without navigating through the web interface.
 
 ### Example prompts for managing links
 
@@ -546,9 +550,7 @@ If you have the [Azure DevOps MCP Server](../mcp-server/mcp-server-overview.md) 
 | **Create and link test cases** | ```copilot-prompt</br>Create a Test Case with test steps based on user story <1234> and link it back to the story</br>   ``` |
 
 > [!TIP]
-> To avoid using stale or cached data from previous queries, add to your prompt, "Do not use previously fetched data."
-
-For setup instructions and more examples, see [Enable AI assistance with Azure DevOps MCP Server](../mcp-server/mcp-server-overview.md).
+> To avoid using stale or cached data from previous queries, add to your prompt, `Do not use previously fetched data`.
 
 ::: moniker-end
 
