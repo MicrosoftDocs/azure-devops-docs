@@ -4,7 +4,7 @@ titleSuffix: Azure DevOps
 description: Azure DevOps extension command line interface troubleshooting 
 ms.topic: troubleshooting 
 ms.subservice: azure-devops-reference
-ms.collection: ce-skilling-ai-copilot
+ms.custom: copilot-scenario-highlight
 ai-usage: ai-assisted
 ms.manager: mijacobs 
 ms.author: chcomley
