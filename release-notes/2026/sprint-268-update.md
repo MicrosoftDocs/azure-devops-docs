@@ -8,7 +8,7 @@ description: Streamlined Test Plans with Improved Visibility and Faster Executio
 
 # Streamlined Test Plans with Improved Visibility and Faster Execution
 
-This release introduces a set of enhancements to Azure DevOps Test Plans aimed at improving productivity, visibility, and test traceability across the testing workflow. Teams can now import test cases more efficiently, view focused execution history at the test point level, track recent test results directly from user stories, and take advantage of a new Test Run Hub with improved usability and richer diagnostics. Together, these updates reduce navigation friction, make test progress easier to understand at a glance, and help testers move faster while staying focused on the most relevant results.
+The release of Sprint 268 introduces a set of enhancements to Azure DevOps Test Plans aimed at improving productivity, visibility, and test traceability across the testing workflow. Teams can now import test cases more efficiently, view focused execution history at the test point level, track recent test results directly from user stories, and take advantage of a new Test Run Hub with improved usability and richer diagnostics. Together, these updates reduce navigation friction, make test progress easier to understand at a glance, and help testers move faster while staying focused on the most relevant results.
 
 Alongside the general availability of the Test Run Hub, the GitHub Copilot for Azure Boards integration is now also generally available. 
 
