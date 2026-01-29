@@ -38,7 +38,7 @@ The following table compares features of Managed DevOps Pools and scale set agen
 | Containers | [On product roadmap](./features-timeline.md) | Not supported |
 | BCDR | Not yet planned, but will be prioritized [based on customer feedback](https://developercommunity.visualstudio.com/AzureDevOps) | [Supports availability sets and zones](/azure/virtual-machine-scale-sets/virtual-machine-scale-sets-faq#do-scale-sets-work-with-azure-availability-sets-) |
 
-<sup>*</sup> While pricing is the same for both, note that VM Reservations **cannot** be used with Managed DevOps Pools.
+<sup>*</sup> Although pricing is the same for both, VM Reservations *cannot* be used with Managed DevOps Pools.
 
 ### Map scale set agent settings to Managed DevOps Pools
 
