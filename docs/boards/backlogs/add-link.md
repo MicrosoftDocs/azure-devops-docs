@@ -2,7 +2,7 @@
 title: Link work items to objects
 titleSuffix: Azure Boards
 description: Learn how to link work items to user stories, bugs, remote work items, a git branch, and other elements in Azure Boards.
-ms.custom: cross-project, devx-track-azurecli, engagement-fy24, peer-review-program
+ms.custom: cross-project, devx-track-azurecli, engagement-fy24, peer-review-program, copilot-scenario-highlight
 ms.service: azure-devops-boards
 ms.assetid: 7130A14B-C760-4622-B97A-8DA27A1B3D02  
 ai-usage: ai-assisted
@@ -10,7 +10,7 @@ ms.author: chcomley
 author: chcomley
 ms.topic: how-to
 monikerRange: '<= azure-devops'
-ms.date: 05/08/2025
+ms.date: 01/29/2026
 #customer intent: As a team member, I want to understand how links between work items and other elements operate and help project planning and development.
 ---
 
@@ -44,6 +44,12 @@ Work item links are associations between two work items or a work item and anoth
 
 ::: moniker-end
 
+::: moniker range=" azure-devops"
+
+[!INCLUDE [ai-assistance-mcp-server-tip](../../includes/ai-assistance-mcp-server-tip.md)]
+
+::: moniker-end
+
 ## Types of links
 
 The following types of links help you manage the relationships between work items and other objects.
@@ -64,7 +70,7 @@ For more information about work link types, including remote link types, hyperli
 
 ### Manage parent/child links
 
-You can use various features to link or modify links that use the **Parent/Child** link type. Some features depend on the version of Azure DevOps you are using. Refer to the following options for managing these links:
+You can use various features to link or modify links that use the **Parent/Child** link type. Some features depend on the version of Azure DevOps you're using. Refer to the following options for managing these links:
 
 - **Organize your backlog**: [Use the mapping pane](../backlogs/organize-backlog.md) to link backlog items to portfolio backlog items or change the link structure. You can also choose **Show Parents** and [drag-and-drop items within the tree hierarchy](organize-backlog.md).
 - **Sprint backlog**: [Create and link tasks to backlog items](../sprints/assign-work-sprint.md) using the sprint backlog page. You can also drag-and-drop items to adjust the link structure directly in the web portal.
@@ -529,6 +535,29 @@ After a work item gets linked to a commit or pull request, it continues to appea
 
 To remove the work item from participating in future builds and releases, delete the link to the most recent commit and pull request.
 
+::: moniker range="azure-devops"
+
+<a id="use-ai-assistance"></a>
+
+## Use AI to manage work item links
+
+If you have the [Azure DevOps MCP Server](../../mcp-server/mcp-server-overview.md) configured, you can use AI assistants to manage work item links using natural language prompts. The MCP Server provides your AI assistant with secure access to your Azure DevOps data, allowing you to view, add, and remove links without navigating through the web interface.
+
+### Example prompts for managing links
+
+| Task | Example prompt |
+|------|----------------|
+| **View existing links** | ```copilot-prompt Get work item <1234> in <Contoso> project and show me the relations ``` |
+| **Add artifact links** | ```copilot-prompt Link pull request <#67> to work item <1234> ``` or ```copilot-prompt Add a branch artifact link to work item <1234> ``` |
+| **Remove specific links** | ```copilot-prompt Remove link <5678> from work item <1234> ``` |
+| **Remove links by type** | ```copilot-prompt Remove all related links from work item <1234> ``` |
+| **Create and link test cases** | ```copilot-prompt Create a Test Case with test steps based on user story <1234> and link it back to the story ``` |
+
+> [!TIP]
+> To avoid using stale or cached data from previous queries, add to your prompt, `Do not use previously fetched data`.
+
+::: moniker-end
+
 ## Related content
 
 - [Review the reference guide for link types](../queries/link-type-reference.md)
@@ -536,3 +565,5 @@ To remove the work item from participating in future builds and releases, delete
 - [Track dependencies by using Delivery Plans](../plans/track-dependencies.md)
 - [Organize your backlog and map child work items](../backlogs/organize-backlog.md)
 - [Download the Work item visualization extension](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.WorkItemVisualization)
+
+
