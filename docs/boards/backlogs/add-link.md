@@ -44,7 +44,11 @@ Work item links are associations between two work items or a work item and anoth
 
 ::: moniker-end
 
+::: moniker range=" azure-devops"
+
 [!INCLUDE [ai-assistance-mcp-server-tip](../../includes/ai-assistance-mcp-server-tip.md)]
+
+::: moniker-end
 
 ## Types of links
 
@@ -531,11 +535,11 @@ After a work item gets linked to a commit or pull request, it continues to appea
 
 To remove the work item from participating in future builds and releases, delete the link to the most recent commit and pull request.
 
+::: moniker range="azure-devops"
+
 <a id="use-ai-assistance"></a>
 
 ## Use AI to manage work item links
-
-::: moniker range="azure-devops"
 
 If you have the [Azure DevOps MCP Server](../../mcp-server/mcp-server-overview.md) configured, you can use AI assistants to manage work item links using natural language prompts. The MCP Server provides your AI assistant with secure access to your Azure DevOps data, allowing you to view, add, and remove links without navigating through the web interface.
 
@@ -543,11 +547,11 @@ If you have the [Azure DevOps MCP Server](../../mcp-server/mcp-server-overview.m
 
 | Task | Example prompt |
 |------|----------------|
-| **View existing links** | ```copilot-prompt</br>Get work item <1234> in <Contoso> project and show me the relations</br>   ``` |
-| **Add artifact links** | ```copilot-prompt</br>Link pull request <#67> to work item <1234></br> or </br>Add a branch artifact link to work item <1234></br>   ``` |
-| **Remove specific links** | ```copilot-prompt</br>Remove link <5678> from work item <1234></br>   ``` |
-| **Remove links by type** | ```copilot-prompt</br>Remove all related links from work item <1234></br>   ``` |
-| **Create and link test cases** | ```copilot-prompt</br>Create a Test Case with test steps based on user story <1234> and link it back to the story</br>   ``` |
+| **View existing links** | ```copilot-prompt Get work item <1234> in <Contoso> project and show me the relations ``` |
+| **Add artifact links** | ```copilot-prompt Link pull request <#67> to work item <1234> ``` or ```copilot-prompt Add a branch artifact link to work item <1234> ``` |
+| **Remove specific links** | ```copilot-prompt Remove link <5678> from work item <1234> ``` |
+| **Remove links by type** | ```copilot-prompt Remove all related links from work item <1234> ``` |
+| **Create and link test cases** | ```copilot-prompt Create a Test Case with test steps based on user story <1234> and link it back to the story ``` |
 
 > [!TIP]
 > To avoid using stale or cached data from previous queries, add to your prompt, `Do not use previously fetched data`.
