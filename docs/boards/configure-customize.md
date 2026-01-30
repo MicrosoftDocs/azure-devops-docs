@@ -4,11 +4,13 @@ titleSuffix: Azure Boards
 description: Explore options for customizing and configuring Azure Boards and the effect on tools available.
 ms.service: azure-devops-boards
 ms.topic: concept-article
+ai-usage: ai-assisted
+ms.custom: copilot-scenario-highlight
 ms.assetid: 
 ms.author: chcomley
 author: chcomley
 monikerRange: '<= azure-devops'
-ms.date: 09/29/2025
+ms.date: 01/29/2026
 #customer intent: As an Azure DevOps developer, I want to explore options for customizing and configuring Azure Boards, so I can best support my specific portfolio, dependencies, and monitoring needs.
 ---
 
@@ -16,7 +18,7 @@ ms.date: 09/29/2025
 
 [!INCLUDE [version-lt-eq-azure-devops](../includes/version-lt-eq-azure-devops.md)]
 
-Customize Azure Boards to match your team's processes and portfolio needs. This article describes recommended tasks and considerations for administrators who configure area/iteration structure, work item types (WITs), workflows, and board behavior.
+Customize Azure Boards to match your team's processes and portfolio needs. This article describes recommended tasks and considerations for administrators who configure area and iteration structure, work item types (WITs), workflows, and board behavior.
 
 If you already know the configuration tasks you want, start with these articles:
 
@@ -26,11 +28,13 @@ If you already know the configuration tasks you want, start with these articles:
 - [Configure your backlog view](backlogs/configure-your-backlog-view.md)
 
 > [!NOTE]  
-> Most guidance here applies to both cloud and on-premises deployments. Some features (for example, Rollup, Analytics, and portfolio planning tools) are cloud-only.
+> Most guidance here applies to both cloud and on-premises deployments. Some features, such as Rollup, Analytics, and portfolio planning tools, are cloud-only.
+
+[!INCLUDE [ai-assistance](../includes/ai-assistance-mcp-server-callout.md)]
 
 ## Key considerations
 
-Before you change settings, decide how teams will work and what management needs to see. Consider:
+Before you change settings, decide how teams work and what management needs to see. Consider:
 
 - Project vs. team structure: How many teams, area path hierarchy, and rollup views do you need?
 - Iterations: Sprint cadence, release grouping, and forecast horizon.
@@ -47,15 +51,15 @@ Choose a process (Agile, Basic, Scrum, or CMMI) when you create a project. Each 
 
 [!INCLUDE [work-item-types](includes/work-item-types.md)]
 
-Use custom WITs and portfolio backlogs when you need additional planning layers (for example, Objectives and Key Results).
+Use custom WITs and portfolio backlogs when you need extra planning layers (for example, Objectives and Key Results).
 
 :::image type="content" source="media/config-custom/portfolio-backlogs-objectives-results.png" alt-text="Screenshot showing a project that adds Objectives and Key Results as custom portfolio backlogs.":::
 
 ## Recommended tracking options
 
-Pick one of these high-level tracking approaches based on team practices:
+Choose one of these high-level tracking approaches based on team practices:
 
-- Tasks only — Not recommended. Offers limited prioritization and no portfolio planning.
+- Tasks only — Don't use this approach. It offers limited prioritization and no portfolio planning.
 - Requirements with child tasks — Good for Scrum teams that estimate and track time.
 - Requirements only — Good for Kanban or Scrumban teams that don't track time.
 - Requirements grouped under portfolio WITs — Use when multiple teams need rollups and cross-team calendars.
@@ -68,9 +72,9 @@ Explain the chosen approach to teams and update process documentation.
 
 Use area paths to partition work by product, feature, or business area. Use iteration paths for sprints, releases, or milestones.
 
-Recommendations:
+Use these recommendations:
 - Create area path hierarchies that reflect how managers want rollups reported.
-- Give each team a default area and iteration subscription so work items inherit correct context.
+- Give each team a default area and iteration subscription so work items inherit the correct context.
 - Use consistent iteration cadences across teams that deliver together.
 
 :::image type="content" source="media/config-custom/area-path-team-assignments.png" alt-text="Screenshot showing area paths and team assignments.":::
@@ -116,19 +120,19 @@ Related content:
 
 Custom fields let you capture project-specific data. They can power rollups and reports but apply across the process.
 
-Recommendations:
+Use these recommendations:
 - Limit custom fields to those that support reporting or automation.
 - Use numeric custom fields for rollup sums; use picklists for consistent reporting.
-- Remember: process-level fields are shared across projects in the collection/organization.
+- Remember: process-level fields are shared across projects in the collection or organization.
 
 > [!NOTE]  
 > You can define up to 1,024 fields per process.
 
 ## Custom WITs and process changes
 
-Adding or modifying WITs and workflows affects many tools:
+Adding or modifying work item types (WITs) and workflows affects many tools:
 
-- New requirement-level WITs appear on product backlogs and may appear on sprint backlogs.
+- New requirement-level WITs appear on product backlogs and might appear on sprint backlogs.
 - New task-level WITs appear on taskboards.
 - Teams must update boards and mappings to display custom WITs.
 
@@ -136,10 +140,10 @@ Process-level changes affect all teams. Limit disruptive changes and communicate
 
 ## Permissions and who can change what
 
-Control who changes processes, area/iteration trees, and team configuration:
+Control who changes processes, area and iteration trees, and team configuration:
 
 - Process-level changes: Project Collection Administrators or users with appropriate process permissions.
-- Project-level changes (areas/iterations): Project Administrators or users with node permissions.
+- Project-level changes (areas and iterations): Project Administrators or users with node permissions.
 - Team-level changes: Team administrators or Project Administrators.
 
 Related content:
@@ -148,7 +152,7 @@ Related content:
 
 ## Time tracking and sprint planning
 
-Use Remaining Work, Original Estimate, and Completed Work fields for sprint planning and capacity. If you track time for billing or other purposes, evaluate Marketplace extensions for richer time-tracking support.
+Use **Remaining Work**, **Original Estimate**, and **Completed Work** fields for sprint planning and capacity. If you track time for billing or other purposes, evaluate Marketplace extensions for richer time-tracking support.
 
 Related content:
 - [Sprint capacity](sprints/set-capacity.md)
@@ -156,11 +160,11 @@ Related content:
 
 ## Practical checklist for admins
 
-- Decide process and WIT strategy (inherit or customize).
+- Decide process and work item type strategy (inherit or customize).
 - Design area and iteration hierarchies.
-- Configure teams and set default area/iteration subscriptions.
+- Configure teams and set default area and iteration subscriptions.
 - Create necessary shared query folders and permissions.
-- Add rollup columns and dashboard widgets that execs need.
+- Add rollup columns and dashboard widgets that executives need.
 - Pilot changes with one team before applying wide-scope updates.
 - Communicate changes and update your project wiki.
 
