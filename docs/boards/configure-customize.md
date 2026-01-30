@@ -5,7 +5,6 @@ description: Explore options for customizing and configuring Azure Boards and th
 ms.service: azure-devops-boards
 ms.topic: concept-article
 ai-usage: ai-assisted
-ms.custom: copilot-scenario-highlight
 ms.assetid: 
 ms.author: chcomley
 author: chcomley
