@@ -285,7 +285,7 @@ The following settings influence the type and number of work items that appear i
 
 ## Use AI to manage your backlog
 
-If you configure the [Azure DevOps MCP Server](../mcp-server/mcp-server-overview.md), you can use AI assistants to manage your backlog by using natural language prompts.
+If you configure the [Azure DevOps MCP Server](../../mcp-server/mcp-server-overview.md), you can use AI assistants to manage your backlog by using natural language prompts.
 
 ### Example prompts for backlog management
 
@@ -300,8 +300,6 @@ If you configure the [Azure DevOps MCP Server](../mcp-server/mcp-server-overview
 
 > [!TIP]
 > To avoid using stale or cached data from previous queries, add to your prompt, "Do not use previously fetched data."
-
-For setup instructions and more examples, see [Enable AI assistance with Azure DevOps MCP Server](../mcp-server/mcp-server-overview.md).
 
 ::: moniker-end
 
