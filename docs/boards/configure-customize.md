@@ -29,7 +29,7 @@ If you already know the configuration tasks you want, start with these articles:
 > [!NOTE]  
 > Most guidance here applies to both cloud and on-premises deployments. Some features, such as Rollup, Analytics, and portfolio planning tools, are cloud-only.
 
-[!INCLUDE [ai-assistance](../includes/ai-assistance-mcp-server-callout.md)]
+[!INCLUDE [ai-assistance](../includes/ai-assistance-callout.md)]
 
 ## Key considerations
 
