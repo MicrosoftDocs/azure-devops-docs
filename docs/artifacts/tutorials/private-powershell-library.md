@@ -427,6 +427,20 @@ steps:
     nuget install <PACKAGE_NAME> -Source "https://pkgs.dev.azure.com/<ORGANIZATION_NAME>/<PROJECT_NAME>/_packaging/<FEED_NAME>/nuget/v3/index.json"
   displayName: 'Install module'
 ```
+
+For enterprise deployments and enhanced security, independent from named user accounts, the [SYSTEM_ACCESSTOKEN](../../pipelines/build/variables.md#systemaccesstoken) can be used to access the Azure Artifact feed. A username is not required in this context and can be any arbitrary string to fullfil the parameter requirements.
+
+```yaml
+steps:
+  - powershell: |
+      $token = $env:SYSTEM_ACCESSTOKEN | ConvertTo-SecureString -AsPlainText -Force
+      $credential  = New-Object System.Management.Automation.PSCredential('ArbitraryPipelineUser', $token)
+      Register-PSRepository -Name <REPOSITORY_NAME> -SourceLocation "$(PackageFeedEndpoint)" -InstallationPolicy Trusted -Credential $credential
+    displayName: 'Register PSRepository'
+    env:
+      SYSTEM_ACCESSTOKEN: $(System.AccessToken)
+```
+
 :::zone-end
 
 
