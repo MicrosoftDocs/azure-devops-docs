@@ -12,8 +12,6 @@ ms.topic: overview
 
 The following section describes new features that are in development for our Azure Boards integration with GitHub.
 
- - **Coding Agent**: Developers will be able to invoke Copilot directly from an Azure Boards work item, select a target GitHub repository and branch, and create a draft pull request that remains linked to the originating work item. This provides end-to-end traceability from work planning through code changes.
-
  - **Custom Agents for Coding Agent**: When using the Coding Agent from a work item, users will be able to select from a set of custom agents.
 
  - **Remote MCP Server**: We are introducing a hosted, remote MCP Server that exposes a limited set of tools from the local Azure DevOps MCP Server. This initial release will focus on core platform capabilities and the most commonly used work item tools, allowing customers to integrate with Azure DevOps without running or managing a local MCP Server.
@@ -22,6 +20,15 @@ The following section describes new features that are in development for our Azu
 
 
 ## Delivered Features
+
+### GitHub Copilot Coding Agent for Azure Boards
+
+The GitHub Copilot integration for Azure Boards enables teams to move more seamlessly from planning to implementation by generating code changes directly from Azure Boards work items. 
+
+From a work item, developers can invoke Copilot, select a target GitHub repository and branch, and create a draft pull request that remains linked to the original work item, providing end-to-end traceability from work tracking to code.
+
+> [![Screenshot for create draft PR from work item.](/azure/devops/release-notes/2026/media/268-boards-01.png "Screenshot for create draft PR from work item..")](/azure/devops/release-notes/2026/media/268-boards-01.png#lightbox)
+
 
 #### Azure DevOps local MCP Server
 

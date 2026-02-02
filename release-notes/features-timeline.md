@@ -164,7 +164,7 @@ Below is a list of investments currently on our roadmap.
          <td><img src="roadmap/2023/media/checkmark.png" alt="Done" />2025 Q4</td>
       </tr> 
       <tr>
-         <td><a href="/azure/devops/release-notes/roadmap/2025/boards/work-item-integration-with-github-coding-agent" data-raw-source="[Work item integration wth GitHub coding agent](/azure/devops/release-notes/roadmap/2025/boards/work-item-integration-with-github-coding-agent)">Support work item integration with the <br/>GitHub Copilot coding agent (private preview)</a></td>
+         <td><a href="/azure/devops/release-notes/2026/sprint-268-update#general-availability-of-github-copilot-integration-for-azure-boards" data-raw-source="[GitHub Coding Agent for Azure Boards](azure/devops/release-notes/2026/sprint-268-update#general-availability-of-github-copilot-integration-for-azure-boards)">GitHub Coding Agent for Azure Boards</a></td>
          <td>Boards</td>
          <td><img src="roadmap/2023/media/checkmark.png" alt="Done" />2025 Q4</td>
       </tr>    
