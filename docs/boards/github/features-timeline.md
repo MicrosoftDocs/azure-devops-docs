@@ -27,7 +27,7 @@ The GitHub Copilot integration for Azure Boards enables teams to move more seaml
 
 From a work item, developers can invoke Copilot, select a target GitHub repository and branch, and create a draft pull request that remains linked to the original work item, providing end-to-end traceability from work tracking to code.
 
-> [![Screenshot for create draft PR from work item.](../../media/268-boards-01.png "Screenshot for create draft PR from work item..")](../../media/268-boards-01.png#lightbox)
+> [![Screenshot for create draft PR from work item.](/azure/devops/release-notes/2026/268-boards-01.png "Screenshot for create draft PR from work item..")](../../media/268-boards-01.png#lightbox)
 
 
 #### Azure DevOps local MCP Server
