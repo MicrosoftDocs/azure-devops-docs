@@ -3,7 +3,7 @@ title: Microsoft-hosted agents for Azure Pipelines
 description: Learn about using the Microsoft-hosted agents provided in Azure Pipelines
 ms.topic: concept-article
 ms.assetid: D17E9C01-8026-41E8-B44A-AB17EDE4AFBD
-ms.date: 01/06/2026
+ms.date: 01/28/2026
 monikerRange: '<= azure-devops'
 ---
 
@@ -25,36 +25,27 @@ Microsoft-hosted agents are only available with Azure DevOps Services, which is 
 
 ## Software
 
-The **Azure Pipelines** agent pool offers several virtual machine images to choose from, each including a broad range of tools and software. You can see the installed software for each image by choosing the **Included Software** link in the following table. For more information on the software lifecycle and deprecation schedule of images and software, see [GitHub Actions Runner Images - Software and Image Support](https://github.com/actions/runner-images/tree/main?tab=readme-ov-file#software-and-image-support).
+The **Azure Pipelines** agent pool offers several virtual machine images to choose from, each including a broad range of tools and software. You can see the installed software for each image by choosing the **Included software** link in the following table. For more information on the software lifecycle and deprecation schedule of images and software, see [GitHub Actions Runner Images - Software and Image Support](https://github.com/actions/runner-images/tree/main?tab=readme-ov-file#software-and-image-support) and [Microsoft-hosted image deprecation schedule](./hosted-deprecation-schedule.md).
 
 #### [Windows images](#tab/windows-images/)
 
-You can see the installed software for each Windows hosted agent image by choosing the **Included Software** link in the table.
+You can see the installed software for each Windows hosted agent image by choosing the **Included software** link in the table.
 
-| Image | Classic Editor Agent Specification | YAML VM Image Label | Included Software |
+| Image | Classic Editor Agent Specification | YAML VM Image Label | Included software |
 | --- | --- | --- | --- |
 | Windows Server 2025 with Visual Studio 2022 | *windows-2025* | `windows-latest` OR `windows-2025` | [Link](https://github.com/actions/runner-images/blob/main/images/windows/Windows2025-Readme.md) |
 | Windows Server 2022 with Visual Studio 2022 | *windows-2022* | `windows-2022` | [Link](https://aka.ms/windows-2022-readme) |
 
 #### Windows image updates
 
+* The Windows Server 2019 hosted agent image was retired on December 31, 2025.
 * [[Windows & Ubuntu] .NET 6 was removed from the images on August 1, 2025.](https://github.com/actions/runner-images/issues/12241)
-* [Windows Server 2019 hosted image deprecation schedule](#windows-server-2019-hosted-image-deprecation-schedule)
-
-##### Windows Server 2019 hosted image deprecation schedule
-
-The Windows Server 2019 image deprecation schedule:
-* Deprecation start date: June 1, 2025
-* Brownout period: June 3, 2025 to June 24, 2025
-* Scheduled removal date for Windows Server 2019 hosted image: December 31, 2025
-
-For more information, see [Upcoming Updates for Azure Pipelines Agents Images - Windows](https://aka.ms/azdo-windows)
 
 #### [Linux images](#tab/linux-images/)
 
-You can see the installed software for each Linux hosted agent image by choosing the **Included Software** link in the table.
+You can see the installed software for each Linux hosted agent image by choosing the **Included software** link in the table.
 
-| Image | Classic Editor Agent Specification | YAML VM Image Label | Included Software |
+| Image | Classic Editor Agent Specification | YAML VM Image Label | Included software |
 | --- | --- | --- | --- |
 | Ubuntu 24.04 | *ubuntu-24.04* | `ubuntu-latest` OR `ubuntu-24.04` | [Link](https://github.com/actions/runner-images/blob/main/images/ubuntu/Ubuntu2404-Readme.md) |
 | Ubuntu 22.04 | *ubuntu-22.04* | `ubuntu-22.04` | [Link](https://aka.ms/ubuntu-22.04-readme) |
@@ -68,13 +59,13 @@ The `ubuntu-latest` image is the default image for YAML pipelines if no image is
 
 #### [macOS images](#tab/macos-images/)
 
-You can see the installed software for each macOS hosted agent by choosing the **Included Software** link in the table. When using macOS images, you can manually select from tool versions. [Read more](#mac-pick-tools).
+You can see the installed software for each macOS hosted agent by choosing the **Included software** link in the table. When using macOS images, you can manually select from tool versions. [Read more](#mac-pick-tools).
 
-| Image | Classic Editor Agent Specification | YAML VM Image Label | Included Software |
+| Image | Classic Editor Agent Specification | YAML VM Image Label | Included software |
 | --- | --- | --- | --- |
 | macOS 15 Sequoia | *macOS-15* | `macOS-latest` OR `macOS-15` | [Link](https://github.com/actions/runner-images/blob/main/images/macos/macos-15-Readme.md) |
 | macOS 15 Sequoia ARM64<br>*limited public preview* | *macOS-15-arm64* | `macOS-15-arm64` | [Link](https://github.com/actions/runner-images/blob/main/images/macos/macos-15-arm64-Readme.md) |
-| macOS 14 Sonoma | *macOS-14* | `macOS-14` | [Link](https://aka.ms/macOS-14-readme) |
+| macOS 14 Sonoma<br>*[macOS 14 Sonoma hosted image deprecation schedule](./hosted-deprecation-schedule.md?tabs=macos-images#macos-14-sonoma-hosted-image-deprecation-schedule)* | *macOS-14* | `macOS-14` | [Link](https://aka.ms/macOS-14-readme) |
 
 #### macOS 15 ARM64 image limited public preview
 
@@ -91,8 +82,10 @@ The macOS 15 Sequoia ARM64 Azure Pipelines hosted agent image has following know
 
 #### macOS images updates
 
+* [[macOS] Deprecation of simulator runtimes for Xcode 16.3 and older on macOS 15 on January 12th, 2026.](https://github.com/actions/runner-images/issues/13392)
+* The macOS 14 Sonoma image will be deprecated starting July 6, 2026. For more information, see [macOS 14 Sonoma hosted image deprecation schedule](./hosted-deprecation-schedule.md?tabs=macos-images#macos-14-sonoma-hosted-image-deprecation-schedule).
 * The macOS 15 Sequoia ARM64 Azure Pipelines hosted agent image is in preview.
-* The macOS 13 Ventura image was deprecated starting September 1, 2025, and was retired on December 4, 2025. For more information, see [Upcoming Updates for Azure Pipelines Agents Images - macOS 13 Ventura](https://devblogs.microsoft.com/devops/upcoming-updates-for-azure-pipelines-agents-images/#mac-os).
+* The macOS 13 Ventura image was deprecated starting September 1, 2025, and was retired on December 4, 2025.
 * [[macOS] Starting August 11, 2025, if your workflow is running on a macOS 15 based image and depends on one of the platform versions (iOS/watchOS/tvOS/visionOS) lower than Xcode 16.3 compatible, they will be broken](https://github.com/actions/runner-images/issues/12541).
 * [[macOS] Xcode 15.4 was removed from macOS15 images on May 29, 2025](https://github.com/actions/runner-images/issues/12195)
 
@@ -100,19 +93,6 @@ The macOS 15 Sequoia ARM64 Azure Pipelines hosted agent image has following know
 
 > [!IMPORTANT]
 > To request software to be added to Microsoft-hosted agents, don't create a feedback request on this document or open a support ticket. Instead, open an issue on our [repository](https://github.com/actions/runner-images), where we manage the scripts to generate various images.
-
-
-### How to identify pipelines using a deprecated hosted image
-
-To identify pipelines that are using a deprecated image, browse to the following location in your organization: `https://dev.azure.com/{organization}/{project}/_settings/agentqueues`, and filter on the image name to check. The following example checks the `vs2017-win2016` image.
-
-:::image type="content" source="media/pool-filter-vs2017-win2016.png" alt-text="Screenshot of filtering pipelines by image name.":::
-
-You can also query job history for deprecated images across projects using the script located [here](https://github.com/microsoft/azure-pipelines-agent/tree/master/tools/FindPipelinesUsingRetiredImages), as shown in the following example.
-
-```powershell
-./QueryJobHistoryForRetiredImages.ps1 -accountUrl https://dev.azure.com/{org} -pat {pat}
-```
 
 ## Use a Microsoft-hosted agent
 
