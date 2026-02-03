@@ -1,7 +1,7 @@
 ---
 title: Configure pool settings
 description: Learn how to configure settings in Managed DevOps Pools.
-ms.date: 11/18/2025
+ms.date: 01/29/2026
 ms.custom: sfi-image-nochange
 ms.topic: how-to
 ---
@@ -485,8 +485,7 @@ resource managedDevOpsPools 'Microsoft.DevOpsInfrastructure/pools@2025-09-20' = 
 
 Managed DevOps Pools provides you with several VM image options to use to run pipelines in your pool. You can create your pool by using selected marketplace VM images, your own custom images in an Azure Compute Gallery instance, or the same Windows and Linux images that are used by Azure Pipelines Microsoft-hosted agents.
 
-> [!IMPORTANT]
-> [!INCLUDE [image-deprecation](./includes/image-deprecation.md)]
+[!INCLUDE [image-deprecation](./includes/image-deprecation.md)]
 
 :::image type="content" source="./media/configure-images/configure-pool-image.png" alt-text="Screenshot that shows how to configure an image.":::
 
