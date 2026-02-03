@@ -15,7 +15,7 @@ monikerRange: 'azure-devops'
 
 [!INCLUDE [version-eq-azure-devops](../includes/version-eq-azure-devops.md)]
 
-Azure Artifacts uses a consumption‑based billing model and supports storign various package types, including NuGet, npm, Python, Maven, , Cargo, and Universal Packages. The free tier provides 2 GiB of storage but if you exceed this limit, you can either upgrade to a paid subscription or delete existing artifacts.
+Azure Artifacts uses a consumption‑based billing model and supports storing various package types, including NuGet, npm, Python, Maven, Cargo, and Universal Packages. The free tier provides 2 GiB of storage but if you exceed this limit, you can either upgrade to a paid subscription or delete existing artifacts.
 The artifact storage UI in your organization and project settings lets you monitor storage usage at both the organization and project levels. Storage is also grouped by project and artifact type.
 
 ## Prerequisites
@@ -85,13 +85,21 @@ The following table illustrates the supported size and count limits for each pac
 
 ## Increase Artifacts storage limit 
 
-[!INCLUDE [](includes/increase-storage-limit.md)]
+Azure Artifacts includes 2 GiB of free storage per organization. Once your organization reaches the storage limit, you won’t be able to publish new artifacts. To continue, you can either delete some of your existing artifacts or increase your storage limit by following these steps:
+
+1. [Set up billing for your organization](../organizations/billing/set-up-billing-for-your-organization-vs.md#set-up-billing-for-your-organization).
+
+1. Sign in to your Azure DevOps organization, select **Organization settings** > **Billing**, then select **No limit, pay for what you use** from the **Usage limit** dropdown.
+
+1. Select **Save** when you're done.
+
+   :::image type="content" source="../media/adjust-artifacts-usage-limit.png" alt-text="A screenshot displaying how to increase Artifacts storage limit.":::
 
 ## FAQs
 
 #### Q: What counts toward my total billed storage?
 
-A: All package types: npm, NuGet, Python, Maven, Cargo, and Universal Packages are included in your billed storage. Packages saved from upstream sources also count toward your billed storage. However, Pipeline Artifacts and Pipeline Caching do not contribute to storage charges.
+A: All package types, including npm, NuGet, Python, Maven, Cargo, and Universal Packages count toward your billed storage. Packages saved from upstream sources also count toward your billed storage. However, Pipeline Artifacts and Pipeline Caching do not contribute to storage charges.
 
 #### Q: Do packages in the recycle bin affect my storage usage?
 
@@ -120,8 +128,10 @@ A: You can configure retention policies to automatically delete outdated package
 
 A: See [Delete and recover packages](how-to/delete-and-recover-packages.md) for step-by-step instructions.
 
-## Related articles
+## Related content
 
-- [Get started with NuGet packages in Azure Artifacts](get-started-nuget.md)
-- [Publish NuGet packages with Azure Pipelines (YAML/classic)](../pipelines/artifacts/nuget.md)
+- [Delete and recover packages](how-to/delete-and-recover-packages.md)
+
+- [Set up upstream sources](how-to/set-up-upstream-sources.md)
+
 - [Azure DevOps blog: Artifacts billing](https://devblogs.microsoft.com/devops/azure-artifacts-billing-changes-coming-october-2020/)
