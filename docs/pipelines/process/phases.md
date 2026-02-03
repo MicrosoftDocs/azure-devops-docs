@@ -3,7 +3,7 @@ title: Jobs in Azure Pipelines
 description: Understand jobs in Azure Pipelines and Azure DevOps Server
 ms.assetid: B05BCE88-73BA-463E-B35E-B54787631B3F
 ms.topic: concept-article
-ms.date: 01/08/2025
+ms.date: 02/03/2026
 monikerRange: '<= azure-devops'
 ---
 
@@ -475,6 +475,9 @@ time the job is queued or is waiting for an agent.
 The `timeoutInMinutes` allows a limit to be set for the job execution time. When not specified, the default is 60 minutes. When `0` is specified, the maximum limit is used.
 
 The `cancelTimeoutInMinutes` allows a limit to be set for the job cancel time when the deployment task is set to keep running if a previous task failed. When not specified, the default is 5 minutes. The value should be in range from **1** to **35790** minutes.
+
+> [!NOTE]
+> The maximum job length for Microsoft hosted agents is 360 minutes (60 minutes for free pipelines), so setting the `timeoutInMinutes` or `cancelTimeoutInMinutes` value higher than this limit will have no effect.
 
 ```yaml
 jobs:
