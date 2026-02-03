@@ -86,7 +86,7 @@ Welcome to what's new in the Azure DevOps docs from January 1, 2026 through Janu
 - [Azure Pipelines architecture for IaaS](/azure/devops/pipelines/architectures/devops-pipelines-iaas-vms-architecture)
 - [Tutorial: Use a canary deployment strategy for Kubernetes](/azure/devops/pipelines/ecosystems/kubernetes/canary-demo)
 - [Manage variables in variable groups with the Azure DevOps CLI](/azure/devops/pipelines/scripts/cli/pipeline-variable-group-secret-nonsecret-variables)
-- [Title not found in: #8714](/azure/devops/pipelines/integrations/slack.md)
+- [Use Azure Pipelines with Slack](/azure/devops/pipelines/integrations/slack)
 - [Resources in Azure Pipelines](/azure/devops/pipelines/process/about-resources)
 - [Build ASP.NET apps with .NET Framework](/azure/devops/pipelines/apps/aspnet/build-aspnet-4)
 - [Use secure files](/azure/devops/pipelines/library/secure-files)
