@@ -477,7 +477,7 @@ The `timeoutInMinutes` allows a limit to be set for the job execution time. When
 The `cancelTimeoutInMinutes` allows a limit to be set for the job cancel time when the deployment task is set to keep running if a previous task failed. When not specified, the default is 5 minutes. The value should be in range from **1** to **35790** minutes.
 
 > [!NOTE]
-> Setting `timeoutInMinutes` or `cancelTimeoutInMinutes` higher than the Microsoft hosted agent maximum job length has no effect on hosted agent pipelines, as those jobs will timeout based on the hosted agent limits. For more information, see the preceeding [Timeouts](#timeouts) section.
+> Setting `timeoutInMinutes` or `cancelTimeoutInMinutes` higher than the Microsoft-hosted agent maximum job length has no effect on hosted agent pipelines, as those jobs will timeout based on the hosted agent limits. For more information, see the preceeding [Timeouts](#timeouts) section.
 
 ```yaml
 jobs:
