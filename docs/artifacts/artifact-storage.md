@@ -93,7 +93,7 @@ Azure Artifacts includes 2 GiB of free storage per organization. Once your org
 
 1. Select **Save** when you're done.
 
-   :::image type="content" source="../media/adjust-artifacts-usage-limit.png" alt-text="A screenshot displaying how to increase Artifacts storage limit.":::
+   :::image type="content" source="media/increase-usage-limit.png" alt-text="A screenshot displaying how to increase Artifacts storage limit." lightbox="media/increase-usage-limit.png":::
 
 ## FAQs
 
