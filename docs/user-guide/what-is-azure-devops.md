@@ -69,23 +69,23 @@ Azure DevOps includes the following integrated services:
 The following diagram shows how the services integrate throughout the development lifecycle:
 
 ```
-┌─────────────────┐    ┌─────────────────┐    ┌─────────────────┐
-│   Azure Boards  │    │   Azure Repos   │    │ Azure Pipelines │
-│                 │    │                 │    │                 │
-│ • Plan features │────│ • Store code    │────│ • Build apps    │
-│ • Track bugs    │    │ • Code reviews  │    │ • Run tests     │
-│ • Manage sprints│    │ • Branch policies│   │ • Deploy code   │
-└─────────────────┘    └─────────────────┘    └─────────────────┘
+┌─────────────────┐    ┌──────────────────┐    ┌─────────────────┐
+│   Azure Boards  │    │   Azure Repos    │    │ Azure Pipelines │
+│                 │    │                  │    │                 │
+│ • Plan features │────│ • Store code     │────│ • Build apps    │
+│ • Track bugs    │    │ • Code reviews   │    │ • Run tests     │
+│ • Manage sprints│    │ • Branch policies│    │ • Deploy code   │
+└─────────────────┘    └──────────────────┘    └─────────────────┘
          │                       │                       │
          │                       │                       │
          ▼                       ▼                       ▼
-┌─────────────────┐    ┌─────────────────┐    ┌─────────────────┐
-│ Azure Test Plans│    │ Azure Artifacts │    │   Dashboards    │
-│                 │    │                 │    │                 │
-│ • Test planning │    │ • Package feeds │    │ • Project views │
+┌─────────────────┐    ┌──────────────────┐    ┌─────────────────┐
+│ Azure Test Plans│    │ Azure Artifacts  │    │   Dashboards    │
+│                 │    │                  │    │                 │
+│ • Test planning │    │ • Package feeds  │    │ • Project views │
 │ • Manual testing│◄───│ • Version control│───►│ • Team metrics  │
-│ • Test reporting│    │ • Dependency mgmt│   │ • Build status  │
-└─────────────────┘    └─────────────────┘    └─────────────────┘
+│ • Test reporting│    │ • Dependency mgmt│    │ • Build status  │
+└─────────────────┘    └──────────────────┘    └─────────────────┘
 
 Flow: Plan → Code → Build → Test → Deploy → Monitor → Repeat
 ```
