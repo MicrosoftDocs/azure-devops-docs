@@ -19,12 +19,16 @@ ms.custom: sfi-image-nochange
 
 :::moniker range="azure-devops"
 
-This article shows how to add users or groups to a team or project. For organizations with large user bases, use Microsoft Entra ID to add and manage new users through security groups. However, to enable flexibility for all size organizations, Azure DevOps supports the procedures described in this article.
+Whether you're onboarding new team members or expanding your project collaboration, adding users to your Azure DevOps teams and projects is straightforward. This article walks you through the various ways to add users or groups, from quick dashboard widgets to detailed project settings.
+
+For larger organizations, we recommend using Microsoft Entra ID security groups to streamline user management at scale. However, all the methods described here work well for organizations of any size.
 
 :::moniker-end
 ::: moniker range="< azure-devops"
 
-This article shows how to add users to a team or project. For organizations with large user bases, use Active Directory or Windows Group to manage users through security groups. However, to enable flexibility for all size organizations, Azure DevOps supports the procedures described in this article.
+Whether you're onboarding new team members or expanding your project collaboration, adding users to your Azure DevOps teams and projects is straightforward. This article walks you through the various ways to add existing users or groups to your teams and projects.
+
+For larger organizations, we recommend using Active Directory or Windows Groups to streamline user management at scale. However, all the methods described here work well for organizations of any size.
  
 :::moniker-end
 
