@@ -12,7 +12,7 @@ ms.subservice: azure-devops-repos-tfvc
 # Migrate custom check-in policies
 
 > [!WARNING]
-> Do not delete your existing policies before completing the migration steps. Ccomplete the migration steps first.
+> Do not delete your existing policies before completing the migration steps. Complete the migration steps first.
 
 
 ## Code updates
