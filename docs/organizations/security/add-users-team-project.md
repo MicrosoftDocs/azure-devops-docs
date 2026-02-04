@@ -275,7 +275,7 @@ The first time you add a user or group to Azure DevOps, you can't browse directl
 
 :::moniker range="azure-devops" 
 
-1. Select **Boards** > **Boards** > **Show team profile** (people icon) > **Team Settings**:
+1. Select **Boards** > **Boards** > select the team profile icon (people icon) > **Team Settings**:
 
    :::image type="content" source="../settings/media/team-defaults/open-team-profile-choose-team-settings-preview.png" alt-text="Screenshot that shows how to access the Team Settings by selecting the Show team profile icon.":::
 
