@@ -4,11 +4,12 @@ titleSuffix: Azure DevOps
 description: Add another user to the team administrator role in Azure DevOps.  
 ms.subservice: azure-devops-settings
 ms.assetid: 843D5E56-D24E-4DEA-9915-19B1F76E9A56
+ai-usage: ai-assisted
 ms.author: chcomley
 author: chcomley
 ms.topic: how-to
 monikerRange: '<= azure-devops'
-ms.date: 11/12/2024
+ms.date: 02/04/2026
 ms.custom: teams, sfi-image-nochange
 ---
 
@@ -39,37 +40,37 @@ To add a team, see [Add teams](add-teams.md). To add or remove a project adminis
 
 #### [New Teams Page](#tab/preview-page) 
 
-1. Sign in to your organization (```https://dev.azure.com/{Your_Organization}```) and select a project.
-2. Select **Project settings** > **Teams**. 
+1. Sign in to your organization (`https://dev.azure.com/{Your_Organization}`) and select a project.
+1. Select **Project settings** > **Teams**. 
     
 	> [!div class="mx-imgBorder"]
     > ![Screenshot of Project settings and Teams buttons for selection.](media/shared/open-project-settings-teams-preview.png)
 
-3. Select the team to configure, and then select **Settings** > **Add**. 
+1. Select the team to configure, and then select **Settings** > **Add**. 
 
 	> [!div class="mx-imgBorder"]
 	> ![Screenshot of dialog for adding user identity, new teams page view for Azure DevOps Services.](media/add-team-admin/settings-add-team-administrator-preview.png)  
 
-4. Enter the user's identity you want to add to the administrator role, and then select **Save**.     
+1. Enter the user's identity you want to add to the administrator role, and then select **Save**.     
 	    
 	> [!div class="mx-imgBorder"]
 	> ![Screenshot of Add team administrator dialog on the New Teams page.](media/add-team-admin/add-team-administrator-dialog-preview.png)
 
 #### [Current page](#tab/current-page) 
 
-1. Sign in to your organization (```https://dev.azure.com/{Your_Organization}```) and select a project.
+1. Sign in to your organization (`https://dev.azure.com/{Your_Organization}`) and select a project.
 
-2. Choose **Project settings** > **Teams**. 
+1. Choose **Project settings** > **Teams**. 
 
 	> [!div class="mx-imgBorder"]
     > ![Screenshot of selected Project settings and Teams buttons.](media/shared/open-project-settings-team-new-nav.png)
 
-3. Select the team to configure, and then select **Settings** > **Add**. 
+1. Select the team to configure, and then select **Settings** > **Add**. 
 
 	> [!div class="mx-imgBorder"]
 	> ![Screenshot of the Add button for selection.](media/add-team-admin/settings-add-team-administrator.png)  
 
-4. Enter the user identity that you want to add to the administrator role, and then select **Save**.     
+1. Enter the user identity that you want to add to the administrator role, and then select **Save**.     
 	    
 	> [!div class="mx-imgBorder"]
 	> ![Screenshot of Add team administrator dialog on current page for Azure DevOps Server 2019 and up.](media/add-team-admin/add-administrators-dialog.png)
@@ -85,7 +86,7 @@ To add a team, see [Add teams](add-teams.md). To add or remove a project adminis
 	> [!div class="mx-imgBorder"]
     > ![Screenshot of selected Project settings and Teams buttons.](media/shared/open-project-settings-team-new-nav.png)
 
-2. Select the team to configure, and then select **Settings** > **Add**. 
+1. Select the team to configure, and then select **Settings** > **Add**. 
 
 	> [!div class="mx-imgBorder"]
 	> ![Screenshot of the Add button for selection.](media/add-team-admin/settings-add-team-administrator.png)  
@@ -107,18 +108,21 @@ Each team has at least one administrator. To remove an administrator, first add 
 
 Open the **Teams** page as described in the previous section.
 
+> [!NOTE]
+> If you don't see the remove option on the **Teams** page, you can also manage team administrators through **Project settings** > **Permissions** > select your team > **Administrators**.
+
 ::: moniker range="azure-devops"
 
 #### [New Teams Page](#tab/preview-page) 
  
-Select **Settings** and scroll down to the Administrators section. Select ![remove icon](../../media/icons/remove-icon.png) for the user that you want to remove as a team administrator. 
+Select **Settings** and scroll down to the **Administrators** section. Select ![remove icon](../../media/icons/remove-icon.png) for the user that you want to remove as a team administrator. 
 
 ![Screenshot of X selected to remove team administrator.](media/add-team-admin/remove-admin-new-ui-page.png)
 
 
 #### [Current page](#tab/current-page) 
 
-From the Administrators section, choose ![delete icon](../../media/icons/delete-icon.png) for the user that you want to remove as a team administrator. 
+From the **Administrators** section, choose ![delete icon](../../media/icons/delete-icon.png) for the user that you want to remove as a team administrator. 
 
 > [!div class="mx-imgBorder"]
 > ![Screenshot shows removing a team administrator.](media/add-team-admin/remove-admin-prev-ui.png)  
@@ -129,7 +133,7 @@ From the Administrators section, choose ![delete icon](../../media/icons/delete-
 
 ::: moniker range=" < azure-devops"
 
-From the Administrators section, choose ![delete icon](../../media/icons/delete-icon.png) for the user that you want to remove as a team administrator. 
+From the **Administrators** section, choose ![delete icon](../../media/icons/delete-icon.png) for the user that you want to remove as a team administrator. 
 
 > [!div class="mx-imgBorder"]
 > ![Screenshot shows removing a team administrator.](media/add-team-admin/remove-admin-prev-ui.png)  
