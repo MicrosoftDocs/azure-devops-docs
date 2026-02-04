@@ -4,10 +4,11 @@ description: Get instructions for how to check, pause, resume, and reindex a rep
 ms.assetid: 
 ms.custom: engagement-fy23
 ms.subservice: azure-devops-search
+ai-usage: ai-assisted
 ms.topic: how-to
 ms.author: chcomley
 author: chcomley
-ms.date: 03/04/2024
+ms.date: 02/04/2026
 monikerRange: '< azure-devops'
 ---
 
@@ -40,8 +41,6 @@ The PowerShell scripts require the SQL script files, so ensure the **SqlScripts*
 
 To check the indexing status after Search is configured, or after the extension is installed for a collection, do the following steps.
 
-::: moniker range=" azure-devops-2022"
-
 1. Execute the `ExtensionInstallIndexingStatus.ps1` script with **administrative privileges** and enter the following information:
 
    - The SQL server instance name where the Azure DevOps Server configuration database is located.
@@ -50,13 +49,13 @@ To check the indexing status after Search is configured, or after the extension 
    - The name of the collection.
    - The number of previous days to check indexing status.
  
-2. Review the following outputs:
+1. Review the following outputs:
 
    - **Collection indexing was triggered successfully:** Indicates that indexing is in progress.
    - **Repositories Indexing Completed:** Lists repositories whose indexing completed and is searchable.
    - **Status of repositories currently indexing:** Lists the names of all the repositories that are still being indexed and are partially searchable. It takes some time for indexing to complete.
  
-3. Execute the `RecentIndexingActivity.ps1` script at intervals for indexing progress. This script takes the same parameters as the `ExtensionInstallIndexingStatus.ps1` script:
+1. Execute the `RecentIndexingActivity.ps1` script at intervals for indexing progress. This script takes the same parameters as the `ExtensionInstallIndexingStatus.ps1` script:
 
    - **Repositories completed fresh indexing:** Shows number of repositories for which indexing completed within the specified time interval.
    - **Count of repositories with fresh indexing in progress:**  Shows the number of repositories for which indexing isn't complete. These repositories are still being indexed and are partially searchable.
@@ -64,9 +63,7 @@ To check the indexing status after Search is configured, or after the extension 
    - **Count of repositories with continuous indexing in progress:** Shows the number of repositories for which the commits are still being processed. These repositories show incomplete results until indexing is completed.
    - **Count of indexing job failures:**  Shows the number of indexing jobs that failed. Repositories associated with these indexing jobs could potentially show incomplete results until later indexing jobs for the same repositories patched the failed indexing.
 
-::: moniker-end
-
-   If you encounter any issues, get support on the [Developer Community](https://developercommunity.visualstudio.com/spaces/21/index.html). 
+If you encounter any issues, get support on the [Developer Community](https://developercommunity.visualstudio.com/spaces/21/index.html). 
 
 ### Pause indexing
 
