@@ -12,7 +12,8 @@ ms.subservice: azure-devops-repos-tfvc
 # Migrate custom check-in policies
 
 > [!WARNING]
-> To use the provided migration method do **not** remove the old implementations of the policies prior to following this guide.
+> Do not delete your existing policies before completing the migration steps. Ccomplete the migration steps first.
+
 
 ## Code updates
 1. To migrate your custom policies, first create a new class with the same methods but inheriting `CheckinPolicyBase` class (`IPolicyCompatibilityJson` for `IPolicyCompatibility`) instead of `PolicyBase`.
