@@ -186,6 +186,8 @@ Use the service connection with artifact authentication tasks:
                         -Body $body
 ```
 
+The AzureCLI@3 task uses the [Azure DevOps CLI](/azure/devops/cli), which is pre-installed on our [Microsoft-hosted agents](/azure/devops/pipelines/agents/hosted). On your self-hosted agents, the [Azure CLI](/cli/azure/install-azure-cli) is required with azure-devops extension. If the azure-devops extension is not installed, the AzureCLI@3 task will install it at run time.  
+
 ## Security best practices
 
 - **Minimal permissions**: Assign the service principal only the permissions it needs for your specific pipeline tasks.
