@@ -5,11 +5,12 @@ description: Explore the default and system work item fields used by the Agile a
 ms.custom: work-items, engagement-fy23
 ms.service: azure-devops-boards
 ms.assetid: 9720b88e-474c-451b-b3fe-5253ba24a653
+ai-usage: ai-usage
 ms.topic: concept-article 
 ms.author: chcomley
 author: chcomley
 monikerRange: '<= azure-devops'
-ms.date: 07/22/2025
+ms.date: 02/04/2026
 #customer intent: As an Azure DevOps developer, I want to explore the fields used by the Agile and Scrum processes and process templates for Azure Boards and Azure DevOps, so I can use the fields in my development.
 ---
 
@@ -44,14 +45,14 @@ To support other tracking needs, define your own custom work item fields by usin
 
 The alphabetical index of fields uses annotations to denote the following criteria about the fields:
 
-- (System) - Core system field assigned to all work item types for all processes  
-- (Agile) - Used only by the Agile process
-- (CMMI) - Used only by the CMMI process
-- (Scrum) - Used only by the Scrum process
-- (TCM) - Used to support test case management
-- (1) - Available in Azure DevOps Services and Azure DevOps Server 2020 and later versions
-- (2) - Available in Azure DevOps Services only
-- (3) - Not used by the Agile and Scrum processes or Azure Boards and Azure DevOps
+- **(System)** - Core system field assigned to all work item types for all processes.  
+- **(Agile)** - Used only by the Agile process.
+- **(CMMI)** - Used only by the CMMI process.
+- **(Scrum)** - Used only by the Scrum process.
+- **(TCM)** - Used to support test case management.
+- **(1)** - Available in Azure DevOps Services and Azure DevOps Server 2020 and later versions.
+- **(2)** - Available in Azure DevOps Services only.
+- **(3)** - Not used by the Agile and Scrum processes or Azure Boards and Azure DevOps.
 
 :::row:::
    :::column span="1":::
@@ -63,6 +64,7 @@ The alphabetical index of fields uses annotations to denote the following criter
    - [Activated By](../../queries/query-by-workflow-changes.md#fields)
    - [Activated Date](../../queries/query-by-workflow-changes.md#fields)
    - [Activity](../../queries/query-numeric.md#fields)
+   - [Activity Date](../../queries/history-and-auditing.md#fields) (System) (2)
    - [Actual Attendee 1-8](/previous-versions/azure/devops/boards/work-items/guidance/cmmi/guidance-review-meeting-field-reference-cmmi#fields) (CMMI)
    - [Analysis](cmmi/guidance-bugs-issues-risks-field-reference-cmmi.md#issue-tracking-fields) (CMMI)
    - [Application Launch Instructions](guidance-code-review-feedback-field-reference.md#fields)
@@ -238,7 +240,7 @@ The alphabetical index of fields uses annotations to denote the following criter
    :::column-end:::
 :::row-end:::
 
-Use system fields or custom fields added to your project collection and enable meaningful cross-project reports and queries. Any nonsystem field referenced in the workflow or forms section of the work item type definition must have a `FIELD` element defined in the `FIELDS` section of the work item type definition XML file. Specify any nonsystem field you want to use for generating queries or reports in the `FIELDS` section. 
+Use system fields or custom fields that you add to your project collection to enable meaningful cross-project reports and queries. If you reference any nonsystem field in the workflow or forms section of the work item type definition, you must define a `FIELD` element for that field in the `FIELDS` section of the work item type definition XML file. Specify any nonsystem field you want to use for generating queries or reports in the `FIELDS` section. 
 
 ## Field reference articles 
 
@@ -278,6 +280,6 @@ The following articles describe fields that are commonly used by several work it
 - [List work item fields and attributes](../work-item-fields.md)
 - [Track your work by using managed queries in Azure Boards](../../queries/about-managed-queries.md)
 - [Define a work item query](../../queries/using-queries.md)
-- [Learn about default processes and process templates](choose-process.md)  
+- [Learn about default processes and process templates](choose-process.md)
 
-     
+
