@@ -138,6 +138,7 @@ Use the service connection with artifact authentication tasks:
 - task: AzureCLI@3
   displayName: Secret-less
   inputs:
+    connectionType: 'azureDevOps'
     azureDevOpsServiceConnection: 'my-azdo-connection'
     scriptType: 'pscore'
     scriptLocation: 'inlineScript'
@@ -159,6 +160,7 @@ Use the service connection with artifact authentication tasks:
 - task: AzureCLI@3
   displayName: Use Entra access token
   inputs:
+    connectionType: 'azureDevOps'
     azureDevOpsServiceConnection: 'my-azdo-connection'
     scriptType: 'pscore'
     scriptLocation: 'inlineScript'
