@@ -1,10 +1,9 @@
 ---
 title: Migrate your Classic pipeline to YAML
-titleSuffix: Azure Pipelines
 description: Learn how to migrate from Classic pipelines to YAML.
 ms.subservice: azure-devops-pipelines-migrate
 ms.topic: quickstart
-ms.date: 06/26/2025
+ms.date: 02/06/2026
 monikerRange: azure-devops
 ---
 
@@ -12,51 +11,47 @@ monikerRange: azure-devops
 
 [!INCLUDE [version-eq-azure-devops](../../includes/version-eq-azure-devops.md)]
 
-Azure Pipelines lets you manage your CI/CD process as code, making it easier to track changes, compare versions, annotate, and more.
+Azure Pipelines provides a quick, easy, and safe way to automate building and deploying your project across different environments. This article walks you through converting your Classic pipelines to YAML.
 
-When you convert a Classic pipeline, you’ll end up with two pipelines: a new YAML pipeline and the original Classic one, which can then be retired. Your Classic pipeline's run history remains in the Classic pipeline. 
-
-> [!NOTE]
-> You can only export a YAML file from a Classic pipeline created using the classic build designer. If you don’t see an option to export to YAML or JSON, your pipeline likely doesn’t support exporting. Classic release pipelines don’t support YAML export, you’ll need to export each task individually. 
+> [!IMPORTANT]
+> Only Classic pipelines created using the classic build designer can be exported a YAML.
+> If you don’t see an option to export to YAML or JSON, your pipeline likely doesn’t support exporting.
+> Classic release pipelines don’t support YAML export, you’ll need to export each task individually. 
 
 ## Prerequisites
 
 | **Product**        | **Requirements**   |
 |--------------------|--------------------|
-| **Azure**   | - An Azure account with an active [subscription](https://azure.microsoft.com/pricing/purchase-options/azure-account?cid=msft_learn). |
-| **Azure DevOps**   | - An Azure DevOps [organization](../../organizations/accounts/create-organization.md).<br>- An Azure DevOps [project](../../organizations/projects/create-project.md).<br> - Allow [Azure Artifacts Domain URLs and IP addresses](../../organizations/security/allow-list-ip-url.md) if your organization is using a firewall or a proxy server.<br> - A working Classic pipeline.  |
+| **Azure DevOps**   | - An Azure DevOps [organization](../../organizations/accounts/create-organization.md).<br>- An Azure DevOps [project](../../organizations/projects/create-project.md).<br> - A working [Classic pipeline](create-classic-pipelines).  |
 
 ## Create a sample YAML pipeline
 
-Follow these steps to create a starter YAML pipeline, which you’ll later update with code exported from the Classic UI editor:
+Follow these steps to create a starter YAML pipeline, which you’ll later update with the YAML snippet exported from the Classic pipeline editor:
 
-1. Sign in to your organization, and navigate to your project.
+1. Sign in to your organization and navigate to your project.
 
-1. Select **Pipelines**, and then select **New pipeline**.
+1. Select **Pipelines**, then select **New pipeline**.
 
-   :::image type="content" source="media/pipelines-new-pipeline.png" alt-text="A screenshot displaying how to create a new pipeline.":::
+1. Select your source code location either **GitHub** or **Azure Repos Git**, then select your repository.
 
-1. Select your source code location either **GitHub** or **Azure Repos Git**, and then select your repository.
+1. On the **Configure your pipeline** page, select the **Starter pipeline** to start with a minimal pipeline that you can customize as needed.
 
-   :::image type="content" source="media/source-code-location.png" alt-text="A screenshot displaying source code locations.":::
-
-1. On the **Configure your pipeline page**, select the **Starter pipeline**.
-
-   :::image type="content" source="media/select-pipeline-template.png" alt-text="A screenshot displaying the available pipeline templates.":::
-
-1. Select **Save and run**, and then enter your commit message. Select **Commit directly to the main branch**, and then select **Save and run** once more. This will start a new run and commit the yaml pipeline to your repository.
-
-   :::image type="content" source="media/commit-save-run.png" alt-text="A screenshot displaying how to save and run a new yaml pipeline.":::
+1. Select **Save and run**, enter a commit message, and then select **Save and run** again to start a new run and commit the YAML pipeline to your repository.
 
 ## Export a Classic pipeline to YAML
 
-1. Sign in to your Azure DevOps organization, and navigate to your project.
+Follow these steps to export your Classic pipeline to YAML:
 
-1. Select **Pipelines** > **Pipelines**. 
- 
-1. Find your Classic pipeline, select the ellipses (...) next to it, and then select **Export to YAML**. Make sure you're in the pipeline definition view, not a specific run, to see the **Export to YAML** option.
+1. Sign in to your Azure DevOps organization and navigate to your project.
+
+1. Select **Pipelines**, then find and select your Classic pipeline definition.
+
+1. Select the three vertical dots icon on the top right, and then select **Export to YAML**.
 
     :::image type="content" source="media/export-yaml.png" alt-text="A screenshot displaying how to export a Classic pipeline to YAML.":::
+
+> [!NOTE]
+> Make sure you're in the pipeline definition view, not a specific run, to see the **Export to YAML** option.
 
 1. Open the downloaded YAML file in your code editor.
 
