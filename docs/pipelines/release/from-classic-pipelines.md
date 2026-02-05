@@ -16,7 +16,7 @@ Azure Pipelines provides a quick, easy, and safe way to automate building and de
 > [!IMPORTANT]
 > Only Classic pipelines created using the classic build designer can be exported a YAML.
 > If you don’t see an option to export to YAML or JSON, your pipeline likely doesn’t support exporting.
-> Classic release pipelines don’t support YAML export, you’ll need to export each task individually. 
+> Classic release pipelines don’t support YAML export, you'll need to export each task individually. 
 
 ## Prerequisites
 
@@ -46,12 +46,12 @@ Follow these steps to export your Classic pipeline to YAML:
 
 1. Select **Pipelines**, then find and select your Classic pipeline definition.
 
-1. Select the three vertical dots icon on the top right, and then select **Export to YAML**. A YAML file will be downloaded to your machine.
+1. Select the three vertical dots icon on the top right, and then select **Export to YAML**. A YAML file is downloaded to your machine.
 
     :::image type="content" source="media/export-yaml.png" alt-text="A screenshot displaying how to export a Classic pipeline to YAML.":::
 
-> [!NOTE]
-> Make sure you're in the pipeline definition view, not a specific run, to see the **Export to YAML** option.
+> [!IMPORTANT]
+> You must be in the pipeline definition view (not a specific run) to see the **Export to YAML** option.
 
 ## Update your YAML pipeline
 
@@ -69,7 +69,7 @@ After exporting your Classic pipeline and downloading the *.yml* file to your ma
 
 1. Select **Save and run** once you're done to run your new YAML pipeline.
 
-If your Classic pipeline used variables defined in the Classic UI editor, you’ll need to redefine them either in the YAML file or in the pipeline settings. See [Define variables](../process/variables.md) for more details.
+If your Classic pipeline used variables defined in the Classic UI editor, you need to redefine them either in the YAML file or in the pipeline settings. See [Define variables](../process/variables.md) for more details.
 
 You should also review any cron schedules in your YAML file. YAML schedules use UTC by default, while Classic pipelines use your organization’s local time zone. See [Configure schedules for pipelines](../process/scheduled-triggers.md) for more details.
 
