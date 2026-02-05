@@ -9,7 +9,7 @@ ms.date: 01/19/2026
 monikerRange: 'azure-devops'
 ms.subservice: azure-devops-repos-tfvc
 ---
-# Migrate custom check-in policies
+# Migrate check-in policies
 
 > [!WARNING]
 > Do not delete your existing policies before completing the migration steps. Complete the migration steps first.
