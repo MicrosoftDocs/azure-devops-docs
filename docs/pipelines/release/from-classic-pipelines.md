@@ -2,7 +2,7 @@
 title: Migrate your Classic pipeline to YAML
 description: Learn how to migrate from Classic pipelines to YAML.
 ms.subservice: azure-devops-pipelines-migrate
-ms.topic: quickstart
+ms.topic: how-to
 ms.date: 02/06/2026
 monikerRange: azure-devops
 ---
@@ -46,24 +46,32 @@ Follow these steps to export your Classic pipeline to YAML:
 
 1. Select **Pipelines**, then find and select your Classic pipeline definition.
 
-1. Select the three vertical dots icon on the top right, and then select **Export to YAML**.
+1. Select the three vertical dots icon on the top right, and then select **Export to YAML**. A YAML file will be downloaded to your machine.
 
     :::image type="content" source="media/export-yaml.png" alt-text="A screenshot displaying how to export a Classic pipeline to YAML.":::
 
 > [!NOTE]
 > Make sure you're in the pipeline definition view, not a specific run, to see the **Export to YAML** option.
 
-1. Open the downloaded YAML file in your code editor.
+## Update your YAML pipeline
 
-1. If your Classic pipeline used variables defined in the Classic UI editor, you’ll need to redefine them either in the YAML file or in the pipeline settings. See [Define variables](../process/variables.md) for more details.
+After exporting your Classic pipeline and downloading the *.yml* file to your machine, you’re ready to update the starter YAML pipeline you created earlier. Follow these steps to update your starter YAML pipeline:
 
-1. Review any `cron` schedules in your YAML file. YAML schedules use UTC by default, while Classic pipelines use your organization’s local time zone. See [Configure schedules for pipelines](../process/scheduled-triggers.md) for more details.
+1. Sign in to your Azure DevOps organization and navigate to your project.
 
-1. Use the **Task Assistant** (the pane on the right side of the editor) to help you add or modify steps in your YAML file.
+1. Locate the starter YAML pipeline you created earlier and select it. Delete the content of the starter pipeline.
 
-    :::image type="content" source="media/task-assistant-yaml.png" alt-text="A screenshot displaying how to configure pipeline tasks with the Task Assistant.":::
+1. Open the YAML file you downloaded earlier in your code editor.
 
-1. Select **Save and run** once you're done.
+1. Copy the content of the exported YAML file and paste it into the now empty starter pipeline.
+
+1. You can use the **Task Assistant** (the pane on the right side of the editor) to help you add or modify tasks in your YAML file.
+
+1. Select **Save and run** once you're done to run your new YAML pipeline.
+
+If your Classic pipeline used variables defined in the Classic UI editor, you’ll need to redefine them either in the YAML file or in the pipeline settings. See [Define variables](../process/variables.md) for more details.
+
+You should also review any cron schedules in your YAML file. YAML schedules use UTC by default, while Classic pipelines use your organization’s local time zone. See [Configure schedules for pipelines](../process/scheduled-triggers.md) for more details.
 
 ## Related content
 
