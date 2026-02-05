@@ -48,7 +48,7 @@ Follow these steps to export your Classic pipeline to YAML:
 
 1. Select the three vertical dots icon on the top right, and then select **Export to YAML**. A YAML file is downloaded to your machine.
 
-    :::image type="content" source="media/export-yaml.png" alt-text="A screenshot displaying how to export a Classic pipeline to YAML.":::
+    :::image type="content" source="media/export-to-yaml.png" alt-text="A screenshot displaying how to export a Classic pipeline to YAML.":::
 
 > [!IMPORTANT]
 > You must be in the pipeline definition view (not a specific run) to see the **Export to YAML** option.
