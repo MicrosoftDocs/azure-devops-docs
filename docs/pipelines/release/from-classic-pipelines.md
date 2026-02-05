@@ -67,6 +67,8 @@ After exporting your Classic pipeline and downloading the *.yml* file to your ma
 
 1. You can use the **Task Assistant** (the pane on the right side of the editor) to help you add or modify tasks in your YAML file.
 
+  :::image type="content" source="media/yaml-task-assistant.png" alt-text="A screenshot displaying how to use the Task Assistant in YAML pipelines.":::
+
 1. Select **Save and run** once you're done to run your new YAML pipeline.
 
 If your Classic pipeline used variables defined in the Classic UI editor, you need to redefine them either in the YAML file or in the pipeline settings. See [Define variables](../process/variables.md) for more details.
@@ -80,3 +82,5 @@ You should also review any cron schedules in your YAML file. YAML schedules use 
 - [Customize your pipeline](../customize-pipeline.md)
 
 - [YAML pipeline editor](../get-started/yaml-pipeline-editor.md)
+
+
