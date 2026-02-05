@@ -50,19 +50,19 @@ When you use Microsoft tools, your Microsoft account or Microsoft Entra ID is re
 
 ::: moniker-end
   
-1. From your home page, open user settings :::image type="icon" source="../../media/icons/user-settings-gear.png" border="false"::: and select **Personal access tokens**.
+2. From your home page, open user settings :::image type="icon" source="../../media/icons/user-settings-gear.png" border="false"::: and select **Personal access tokens**.
 
    :::image type="content" source="media/pats/select-personal-access-tokens.png" alt-text="Screenshot that shows selecting Personal access tokens.":::
 
-1. Select **+ New Token**.
+3. Select **+ New Token**.
 
    :::image type="content" source="media/pats/select-new-token.png" alt-text="Screenshot that shows selecting New Token.":::
 
-1. Name your token, select the organization where you want to use the token, and then set your token to automatically expire after a set number of days.
+4. Name your token, select the organization where you want to use the token, and then set your token to automatically expire after a set number of days.
 
    :::image type="content" source="media/pats/create-new-pat.png" alt-text="Screenshot that shows entry of basic token information.":::
 
-1. Select the [scopes](../../integrate/get-started/authentication/oauth.md#available-scopes)
+5. Select the [scopes](../../integrate/get-started/authentication/oauth.md#available-scopes)
    for this token to authorize for *your specific tasks*.
 
       For example, to create a token for a [build and release agent](../../pipelines/agents/agents.md) to authenticate to Azure DevOps, set the token's scope to **Agent Pools (Read & manage)**. To read audit log events and manage or delete streams, select **Read Audit Log**, and then select **Create**.
@@ -71,7 +71,7 @@ When you use Microsoft tools, your Microsoft account or Microsoft Entra ID is re
 
    Your administrator might [restrict you from creating full-scoped PATs or limit you to packaging-scope PATs only](manage-pats-with-policies-for-administrators.md). Reach out to your admin to get on the allow list if you need access to more scopes. Some scopes, for example, `vso.governance`, might not be available in the user interface (UI) if they aren't for widespread public use.
 
-1. When you're finished, copy the token and store it in a secure location. For your security, it doesn't display again.
+6. When you're finished, copy the token and store it in a secure location. For your security, it doesn't display again.
 
    :::image type="content" source="media/pats/copy-token-to-clipboard.png" alt-text="Screenshot that shows how to copy the token to your clipboard.":::
 
