@@ -22,7 +22,7 @@ Azure Pipelines provides a quick, easy, and safe way to automate building and de
 
 | **Product**        | **Requirements**   |
 |--------------------|--------------------|
-| **Azure DevOps**   | - An Azure DevOps [organization](../../organizations/accounts/create-organization.md).<br>- An Azure DevOps [project](../../organizations/projects/create-project.md).<br> - A working [Classic pipeline](create-classic-pipelines).  |
+| **Azure DevOps**   | - An Azure DevOps [organization](../../organizations/accounts/create-organization.md).<br>- An Azure DevOps [project](../../organizations/projects/create-project.md).<br> - A working [Classic pipeline](create-classic-pipelines.md).  |
 
 ## Create a sample YAML pipeline
 
