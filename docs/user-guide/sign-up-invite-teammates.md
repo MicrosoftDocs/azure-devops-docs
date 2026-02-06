@@ -9,7 +9,7 @@ ms.topic: how-to
 ms.author: chcomley
 author: chcomley
 ms.update: 90-days
-ms.date: 01/12/2026
+ms.date: 02/06/2026
 monikerRange: 'azure-devops'
 ---
 
@@ -31,7 +31,7 @@ Sign up for Azure DevOps and start with the [free tier of services](https://azur
 
 ## Sign up
 
-Sign up for Azure DevOps with either a Microsoft account or a GitHub account.
+Sign up for Azure DevOps by using either a Microsoft account or a GitHub account.
 
 # [Microsoft account](#tab/microsoft-account)
 
@@ -46,9 +46,9 @@ Sign up for Azure DevOps with either a Microsoft account or a GitHub account.
 After you create an organization, add teammates so they can access projects and repositories.
 
 Quick invite steps
-1. Open your organization settings and choose **Organization settings** > **Users** (or **Manage users**)
-2. Select **Invite users** and enter email addresses. Assign access levels and project roles as needed
-3. Optionally, add users to teams or groups to control permissions and project access
+1. Open your organization settings and choose **Organization settings** > **Users** (or **Manage users**).
+2. Select **Invite users** and enter email addresses. Assign access levels and project roles as needed.
+3. Optionally, add users to teams or groups to control permissions and project access.
 
 For detailed steps, see:
 - [Add users to your organization](../organizations/accounts/add-organization-users.md)

@@ -243,7 +243,7 @@ Code highlighting in the Markdown widget renders code as plain preformatted text
 This example shows how to highlight a text block as code in the Markdown widget:
 
 ```bash
-<!-- ```  Three backticks to start block " -->
+<!-- ```  Three backticks to start block -->
 sudo npm install vsoagent-installer -g
 <!-- ```  Three backticks to end block -->
 ``` 
