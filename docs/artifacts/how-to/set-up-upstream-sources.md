@@ -1,9 +1,9 @@
 ---
 title: Set up upstream sources for your feed
-description: How to set up external feeds and public registries as upstream sources for your feed
+description: Learn how to set up external feeds and public registries as upstream sources for your Azure Artifacts feed.
 ms.service: azure-devops-artifacts
 ms.topic: how-to
-ms.date: 03/21/2024
+ms.date: 02/06/2026
 monikerRange: "<=azure-devops"
 ---
 
@@ -11,40 +11,47 @@ monikerRange: "<=azure-devops"
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
-With Azure Artifacts upstream sources, you can streamline your package management by using a single feed to store both the packages you publish and those you consume from external feeds and public registries such as npmjs.com, NuGet.org. When an upstream source is enabled on your feed, Azure Artifacts will automatically save a copy of any package installed by a collaborator or higher from upstream.
+With Azure Artifacts upstream sources, you can simplify package management by using a single feed for both the packages you publish and those you consume from external feeds and public registries like *npmjs.com* and *NuGet.org*. When upstream sources are enabled, Azure Artifacts automatically saves a copy of any package installed to your feed. However, you must be a collaborator or higher to install packages from upstream sources.
 
 > [!NOTE]
 > Maven snapshots are not supported in upstream sources.
 
-## Enable upstream sources in a new feed
+## Prerequisites
 
-1. Sign in to your Azure DevOps organization, and then navigate to your project.
+| **Product**        | **Requirements**                       |
+|--------------------|----------------------------------------|
+| **Azure DevOps**   | - An Azure DevOps [organization](../../organizations/accounts/create-organization.md).<br>- An Azure DevOps [project](../../organizations/projects/create-project.md).<br> - An Azure Artifacts [feed](../get-started-nuget.md#create-a-feed). |
 
-1. Select **Artifacts**, and then select **Create Feed**.
+## Enable upstream sources for a new feed
 
-1. Provide a **Name** for your feed and select its **Visibility** and **Scope** settings. Make sure to check the **Include packages from common public sources** checkbox to enable upstream sources. 
+If you don't have a feed yet, follow these steps to create a new feed and enable upstream sources:
+
+1. Sign in to Azure DevOps, then navigate to your project.
+
+1. Select **Artifacts**, then select **Create Feed**.
+
+1. Provide a **Name** for your feed and choose its **Visibility** and **Scope** settings. Make sure to select the **Include packages from common public sources** checkbox to enable upstream sources. 
     
 1. Select **Create** when you're done.
 
-    :::image type="content" source="../media/new-feed-dialog-azure-devops.png" alt-text="A screenshot showing how to create a new feed.":::
+    :::image type="content" source="../media/new-feed-with-enabled-upstreams.png" alt-text="A screenshot showing how to create a new feed with upstream sources enabled in Azure Artifacts.":::
+
+## Enable upstream sources for an existing feed
+
+Follow these steps to enable upstream sources for an existing feed:
+
+1. Sign in to Azure DevOps, then navigate to your project.
+
+1. Select the gear icon button ![gear icon](../../media/icons/gear-icon.png) to open your feed settings.
+
+1. Select **Upstream sources** > **Add upstream source**.
+
+1. Select **Public source**, then choose a **Public source** from the dropdown.
+
+1. Select **Add**, then select **Save** in the top-right corner to apply your changes.
 
 > [!NOTE]
-> You must be a feed owner or a feed administrator to add or remove upstream sources.
-
-## Enable upstream sources in an existing feed
-
-1. Sign in to your Azure DevOps organization, and then navigate to your project.
-
-1. Select the gear icon button ![gear icon](../../media/icons/gear-icon.png) to navigate to your feed settings.
-
-1. Select **Upstream sources**, and then select **Add upstream source**.
-
-1. Select **Public source**, and then select a **Public source** from the dropdown menu.
-
-1. Select **Add** when you're done, and then select **Save** once more in the top right corner to preserve your changes.
-
-> [!NOTE]
-> Custom public upstream sources are only supported with npm registries.
+> You must be a feed owner or feed administrator to add or remove upstream sources.
 
 ## Add a feed in the same organization as an upstream source
 
