@@ -116,7 +116,7 @@ sections:
           A: Azure DevOps shows a banner in **Organization settings** > **Users** if your organization has impacted users. Users with an expired subscription are identified with an invalid access level but continue to have full access during February and March. Use the **Access Level** filter to show only users with an invalid Visual Studio subscription.
 
           > [!div class="mx-imgBorder"]
-          >![Screenshot showing access level filter for users with inactive Visual Studio subscription.](media/faq/access-level-filter-shows-users-with-invalid-subscription.png)
+          > ![Screenshot showing access level filter for users with inactive Visual Studio subscription.](media/faq/access-level-filter-shows-users-with-invalid-subscription.png)
 
       - question: |
           Q: What about free pipelines for Visual Studio Enterprise users?
@@ -124,7 +124,7 @@ sections:
           A: If you have expiring Visual Studio Enterprise (VSE) subscribers, you can see how many free VSE self-hosted pipeline concurrency will be lost. Check your [self-hosted concurrency report](../../pipelines/agents/pool-consumption-report.md) and consider increasing [paid self-hosted concurrency](../../pipelines/licensing/concurrent-jobs.md) as needed. You won't lose any self-hosted concurrency from expiring Visual Studio Enterprise subscribers until April 2026.
 
           > [!div class="mx-imgBorder"]
-          > ![Screenshot showing self-hosted concurrency report with expiring Visual Studio Enterprise subscribers.
+          > ![Screenshot showing self-hosted concurrency report with expiring Visual Studio Enterprise subscribers.](media/faq/self-hosted-concurrency-report.png)
 
       - question: |
           Q: Will users lose access immediately?
