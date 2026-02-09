@@ -299,7 +299,8 @@ If you configure the [Azure DevOps MCP Server](../../mcp-server/mcp-server-overv
 | **Triage work** | ```copilot-prompt List work items for <Stories> backlog, find all security-related bugs, and assign the first <4> to the current iteration ``` |
 
 > [!TIP]
-> To avoid using stale or cached data from previous queries, add to your prompt, "Do not use previously fetched data."
+> - If you're using Visual Studio Code, [agent mode](/visualstudio/ide/copilot-chat-context#agent-mode) is especially helpful for troubleshooting complex backlog scenarios.
+> - To avoid using stale or cached data from previous queries, add to your prompt, "Do not use previously fetched data."
 
 ::: moniker-end
 
