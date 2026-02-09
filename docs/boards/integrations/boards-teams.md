@@ -16,6 +16,8 @@ ms.custom: cross-service, sfi-image-nochange
 
 [!INCLUDE [version-eq-azure-devops](../../includes/version-eq-azure-devops.md)] 
 
+[!INCLUDE [ai-assistance-callout](../../includes/ai-assistance-callout.md)]
+
 This article describes how to use the Azure Boards and Azure DevOps apps for Microsoft Teams to create and monitor Azure Boards work items from your Teams channels.
 
 [!INCLUDE [temp](../../includes/feature-support-cloud-only.md)]
