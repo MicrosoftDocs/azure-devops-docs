@@ -66,8 +66,11 @@ sections:
       - question: |
           Q: How are Visual Studio subscribers detected?
         answer: |
-          A: Azure DevOps automatically recognizes Visual Studio subscribers who have Azure DevOps as a benefit based on the users' email address or alternate identity associated with the subscription. Administrators can choose the “Visual Studio Subscriber” access level, but regardless of what access level they assign initially, the users Visual Studio subscription access will be detected when they sign in.
+          A: Azure DevOps automatically recognizes Visual Studio subscribers who have Azure DevOps as a benefit based on the users' email address or [alternate identity](/visualstudio/subscriptions/use-connected-identities) associated with the subscription. Administrators can choose the “Visual Studio Subscriber” access level, but regardless of what access level they assign initially, the users Visual Studio subscription access will be detected when they sign in.
       
+          > [!div class="mx-imgBorder"]
+          > ![Screenshot showing notification banner for inactive Visual Studio subscription.](media/faq/notification-banner-inactive-visual-studio-subscription.png)
+
       - question: |
           Q: When do I select "Visual Studio/MSDN Subscriber"?
         answer: |
@@ -112,34 +115,40 @@ sections:
         answer: |
           A: Azure DevOps shows a banner in **Organization settings** > **Users** if your organization has impacted users. Users with an expired subscription are identified with an invalid access level but continue to have full access during February and March. Use the **Access Level** filter to show only users with an invalid Visual Studio subscription.
 
+          > [!div class="mx-imgBorder"]
+          >![Screenshot showing access level filter for users with inactive Visual Studio subscription.](media/faq/access-level-filter-shows-users-with-invalid-subscription.png)
+
       - question: |
           Q: What about free pipelines for Visual Studio Enterprise users?
         answer: |
-          A: If you have expiring Visual Studio Enterprise (VSE) subscribers, you can see how many free VSE self-hosted pipeline concurrency will be lost. Check your self-hosted concurrency report and consider increasing paid self-hosted concurrency as needed. You won't lose any self-hosted concurrency from expiring Visual Studio Enterprise subscribers until April 2026.
+          A: If you have expiring Visual Studio Enterprise (VSE) subscribers, you can see how many free VSE self-hosted pipeline concurrency will be lost. Check your [self-hosted concurrency report](../../pipelines/agents/pool-consumption-report.md) and consider increasing [paid self-hosted concurrency](../../pipelines/licensing/concurrent-jobs.md) as needed. You won't lose any self-hosted concurrency from expiring Visual Studio Enterprise subscribers until April 2026.
+
+          > [!div class="mx-imgBorder"]
+          > ![Screenshot showing self-hosted concurrency report with expiring Visual Studio Enterprise subscribers.
 
       - question: |
           Q: Will users lose access immediately?
         answer: |
-          A: No. In February and March 2026, expired Visual Studio subscribers retain their current access in Azure DevOps. During these months, the goal is to make admins aware and give them time to adjust licenses or group rules. Visual Studio subscribers with expired subscriptions begin expiring in April 2026, and after that they expire in Azure DevOps when they lose access in the Visual Studio management portal.
+          A: No. In February and March 2026, expired Visual Studio subscribers retain their current access in Azure DevOps. During these months, the goal is to make admins aware and give them time to adjust licenses or [group rules](assign-access-levels-by-group-membership.md). Visual Studio subscribers with expired subscriptions begin expiring in April 2026, and after that they expire in Azure DevOps when they lose access in the [Visual Studio management portal](https://visualstudio.microsoft.com/subscriptions-administration/).
 
       - question: |
           Q: What happens when a Visual Studio subscription is no longer detected?
         answer: |
           A: When a user no longer has a Visual Studio subscription, they're treated like a new user.
           
-          - If your organization's default access level is Basic, they get assigned Basic automatically.
-          - If your organization established group rules, the user receives the access specified by their group membership.
+          - If your organization's [default access level](../billing/buy-basic-access-add-users.md#select-default-access-level-for-new-users) is Basic, they get assigned Basic automatically.
+          - If your organization established [group rules](assign-access-levels-by-group-membership.md), the user receives the access specified by their group membership.
           - If the user has a GitHub Enterprise license, they're assigned GitHub Enterprise.
           - Otherwise, users who no longer have access through a Visual Studio subscription maintain Stakeholder access until an administrator assigns them paid access.
           
-          In February and March 2026, if your organization's default access level or a group rule provides the expired subscriber with the same level of access (for example, Basic for a Visual Studio Professional subscriber), they're assigned a new access level automatically. However, if the user has Basic + Test Plans access (for example, a Visual Studio Enterprise subscriber), but the default access level or group rule would provide only Basic, they continue access with their Visual Studio subscriber access level.
+          In February and March 2026, if your organization's [default access level](../billing/buy-basic-access-add-users.md#select-default-access-level-for-new-users) or a [group rule](assign-access-levels-by-group-membership.md) provides the expired subscriber with the same level of access (for example, Basic for a Visual Studio Professional subscriber), they're assigned a new access level automatically. However, if the user has Basic + Test Plans access (for example, a Visual Studio Enterprise subscriber), but the [default access level](../billing/buy-basic-access-add-users.md#select-default-access-level-for-new-users) or [group rule](assign-access-levels-by-group-membership.md) would provide only Basic, they continue access with their Visual Studio subscriber access level.
           
-          Starting in April 2026, a user without an active Visual Studio subscription is downgraded. They're assigned a new access level based on the organization's default access level or applicable group rules. If neither apply, they're marked as invalid with Stakeholder access.
+          Starting in April 2026, a user without an active Visual Studio subscription is downgraded. They're assigned a new access level based on the organization's [default access level](../billing/buy-basic-access-add-users.md#select-default-access-level-for-new-users) or applicable [group rules](assign-access-levels-by-group-membership.md). If neither apply, they're marked as invalid with Stakeholder access.
 
       - question: |
           Q: Can I automate access level assignment before Visual Studio subscriptions expire?
         answer: |
-          A: Yes. Consider updating your organization's default access level or establish group rules so that users who lose access to a Visual Studio subscription, or new users joining the organization, can automatically receive the access they need without any manual intervention.
+          A: Yes. Consider updating your organization's [default access level](../billing/buy-basic-access-add-users.md#select-default-access-level-for-new-users) or establish [group rules](assign-access-levels-by-group-membership.md) so that users who lose access to a Visual Studio subscription, or new users joining the organization, can automatically receive the access they need without any manual intervention.
 
       - question: |
           Q: How do I restore access to users who no longer have an active Visual Studio subscription?
@@ -204,8 +213,8 @@ sections:
           Q: What happens when a GitHub Enterprise license is no longer detected?
         answer: |
           A: When a user no longer has GitHub Enterprise, they're treated like a new user.  
-          - If your organization's default access level is Basic, they get assigned Basic automatically. 
-          - If your organization established Group Rules, the user receives the access specified by their group membership.
+          - If your organization's [default access level](../billing/buy-basic-access-add-users.md#select-default-access-level-for-new-users) is Basic, they get assigned Basic automatically. 
+          - If your organization established [group rules](assign-access-levels-by-group-membership.md), the user receives the access specified by their group membership.
           
           Otherwise, users who no longer have access through GitHub Enterprise maintain Stakeholder access until an administrator assigns them paid access.
 
