@@ -150,10 +150,12 @@ sections:
 
           2. Select the **Access level** filter and choose an invalid subscription type, such as **Visual Studio Enterprise subscription (Invalid)**.
           
+              > [!div class="mx-imgBorder"]  
               ![Screenshot showing checked box for Visual Studio Enterprise subscription invalid.](media/faq/visual-studio-subscription-invalid.png)
           
           3. Check the box for **All**.
           
+              > [!div class="mx-imgBorder"]  
               ![Screenshot showing checked box for All.](media/faq/all-checkbox-selected.png)
           
           4. Select :::image type="icon" source="../../media/icons/more-actions.png" border="false"::: **More actions** and **Change access level**.
@@ -162,6 +164,7 @@ sections:
           
           5. Select **Basic** or **Basic + Test Plans**.
           
+              > [!div class="mx-imgBorder"]  
               ![Screenshot showing Basic access level selected.](media/faq/change-access-level-basic.png)
 
           6. **Save** your changes.
