@@ -16,11 +16,11 @@ ms.date: 10/28/2025
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)] 
 
-[!INCLUDE [ai-assistance-callout](../../includes/ai-assistance-callout.md)]
-
 Scrum methods use *iteration paths*, or *sprints*, to plan work for teams within specific time periods and cadences. Useful tools for implementing Scrum practices in Azure Boards include filtered backlogs and boards based on iteration paths. You can use Scrum to schedule and plan sprints, update your board, and monitor sprint burndown.
 
 For an introduction to Scrum, see [What is Scrum?](/devops/plan/what-is-scrum)
+
+[!INCLUDE [ai-assistance-callout](../../includes/ai-assistance-callout.md)]
 
 ## Scrum in Azure Boards
 

@@ -14,9 +14,9 @@ ms.date: 09/03/2025
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
-[!INCLUDE [ai-assistance-callout](../../includes/ai-assistance-callout.md)]
-
 As organizations grow, Azure Boards provides scalable tools to extend Agile practices across multiple teams and projects. The platform's team-based architecture enables both team autonomy and organizational visibility, supporting everything from small startups to large organizations.
+
+[!INCLUDE [ai-assistance-callout](../../includes/ai-assistance-callout.md)]
 
 ## Core scaling approach
 

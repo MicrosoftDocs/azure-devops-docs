@@ -16,9 +16,9 @@ ms.date: 09/26/2025
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
-[!INCLUDE [ai-assistance-callout](../../includes/ai-assistance-callout.md)]
-
 Azure Boards is a web-based service that teams use to plan, track, and discuss work throughout the development lifecycle. It supports agile methodologies and provides a customizable platform for managing work items, collaborating across teams, and streamlining workflows. To get started, [sign up and invite teammates](sign-up-invite-teammates.md), [customize your boards](../configure-customize.md), and explore the following benefits.
+
+[!INCLUDE [ai-assistance-callout](../../includes/ai-assistance-callout.md)]
 
 ## Azure Boards hubs
 

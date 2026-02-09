@@ -18,8 +18,6 @@ ai-usage: ai-assisted
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
-[!INCLUDE [ai-assistance-callout](../../includes/ai-assistance-callout.md)]
-
 Use queries to list bugs, user stories, or other work items based on the field criteria you specify. Teams run these lists to triage work, bulk-update items, or review hierarchies. Semantic search offers overlapping and complementary capabilities worth exploring.
 
 Use managed queries to:
@@ -29,6 +27,8 @@ Use managed queries to:
 - Share a list of work items with a teammate
 
 You can create queries and query folders from the web portal or Visual Studio Team Explorer. Changes you make in one client appear in the others because all changes store in the work tracking data store.
+
+[!INCLUDE [ai-assistance-callout](../../includes/ai-assistance-callout.md)]
 
 ## Get started using queries
 

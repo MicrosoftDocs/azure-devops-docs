@@ -16,8 +16,6 @@ ms.custom: cross-service, sfi-image-nochange
 
 [!INCLUDE [version-eq-azure-devops](../../includes/version-eq-azure-devops.md)] 
 
-[!INCLUDE [ai-assistance-callout](../../includes/ai-assistance-callout.md)]
-
 This article describes how to use the Azure Boards and Azure DevOps apps for Microsoft Teams to create and monitor Azure Boards work items from your Teams channels.
 
 [!INCLUDE [temp](../../includes/feature-support-cloud-only.md)]
@@ -39,6 +37,8 @@ By using the Azure Boards app for Microsoft Teams, you can:
 |--------------|-------------|
 | **Access levels** | - **Contributor** for the project.<br> - Access to a team and channel in Microsoft Teams where you can install an app. |
 | **Permissions** | To create subscriptions in a Slack channel for work item events: Member of the [Project Administrators](../../organizations/security/change-project-level-permissions.md) or [Team Administrators](../../organizations/settings/add-team-administrator.md) group. |
+
+[!INCLUDE [ai-assistance-callout](../../includes/ai-assistance-callout.md)]
 
 ## Add the Azure Boards app to Teams
 

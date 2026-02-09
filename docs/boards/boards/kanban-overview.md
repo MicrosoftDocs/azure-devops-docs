@@ -16,8 +16,6 @@ ms.date: 07/24/2025
 # What is a Kanban board?
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
-
-[!INCLUDE [ai-assistance-callout](../../includes/ai-assistance-callout.md)]
  
 A Kanban board in Azure DevOps is a visual tool used to manage work items and track progress in a project. It provides a clear overview of tasks, their status, and their flow through different stages. Teams can use Kanban boards to visualize work, limit work in progress, and optimize their workflow. Each work item is represented as a card on the board, and columns represent different stages, such as "To Do," "In Progress," and "Done." As work progresses, cards move across columns, allowing teams to monitor and improve their efficiency. Kanban boards are commonly used in agile methodologies and are essential for effective project management.
 
@@ -33,6 +31,8 @@ Each [product and portfolio backlog](../backlogs/backlogs-overview.md) correspon
 To enhance consistent delivery of high-quality software, Kanban emphasizes two key practices. The first practice is to [**visualize the flow of work**](kanban-quickstart.md#map-the-flow-of-how-your-team-works) by mapping your team's workflow stages and configuring the board appropriately. The next practice is to **constrain work in progress**, by [setting work-in-progress (WIP) limits](kanban-quickstart.md#set-wip-limits). With these practices in place, you can track progress and monitor metrics to reduce lead or cycle time. You can get started by exploring how to [use your board](../boards/kanban-quickstart.md).
 
 :::image type="content" source="../work-items/media/about-agile/view-boards-agile.png" border="false" alt-text="Screenshot of a Kanban board showing backlog items with an Agile template.":::
+
+[!INCLUDE [ai-assistance-callout](../../includes/ai-assistance-callout.md)]
 
 ## Kanban concepts and terms 
 

@@ -16,14 +16,14 @@ ms.date: 09/29/2025
 
 [!INCLUDE [version-lt-eq-azure-devops](../includes/version-lt-eq-azure-devops.md)]
 
-[!INCLUDE [ai-assistance-callout](../includes/ai-assistance-callout.md)]
-
 This guide helps product managers get started with Azure Boards. It summarizes practical recommendations for configuring teams, planning work, and using Boards, Backlogs, Iterations, and Delivery Plans to deliver value predictably.
 
 > [!NOTE]
 > If your team follows Kanban or Scrum specifically, see [About Boards and Kanban](boards/kanban-overview.md) or the [Scrum tutorials](./sprints/scrum-overview.md).
 
 Most recommendations apply to both Azure DevOps Services (cloud) and Azure DevOps Server (on-premises). Some features, including Rollup, Analytics, and some portfolio planning tools, are available only in the cloud.
+
+[!INCLUDE [ai-assistance-callout](../includes/ai-assistance-callout.md)]
 
 ## Configure teams
 

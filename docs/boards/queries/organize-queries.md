@@ -17,8 +17,6 @@ ms.date: 10/27/2025
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 [!INCLUDE [version-vs-gt-eq-2019.md](../../includes/version-vs-gt-eq-2019.md)]
 
-[!INCLUDE [ai-assistance-callout](../../includes/ai-assistance-callout.md)]
-
 You can organize your personal or shared queries by adding query folders. You can then add queries to or move existing queries into those folders. You can create queries and query folders from the web portal or from a supported client, such as Visual Studio Team Explorer.
 
 ::: moniker range="azure-devops"
@@ -30,6 +28,8 @@ You can organize your personal or shared queries by adding query folders. You ca
 ## Prerequisites
 
 [!INCLUDE [temp](../includes/prerequisites-queries.md)]
+
+[!INCLUDE [ai-assistance-callout](../../includes/ai-assistance-callout.md)]
 
 ## Open a query 
 
