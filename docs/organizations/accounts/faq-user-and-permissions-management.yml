@@ -148,7 +148,7 @@ sections:
           
           1. Select ![gear icon](../../media/icons/gear-icon.png) **Organization settings**.
           2. Select **Users**.
-          3. Select the **Access level** filter and choose **Visual Studio Enterprise subscription (Invalid)**, **Visual Studio Professional subscription (Invalid)**, **MSDN Platforms subscription (Invalid)**, or **Visual Studio Test Professional subscription (Invalid)**.
+          3. Select the **Access level** filter and choose an invalid subscription type, such as **Visual Studio Enterprise subscription (Invalid)**.
           
               ![Screenshot showing checked box for Visual Studio Enterprise subscription invalid.](media/faq/visual-studio-subscription-invalid.png)
           
