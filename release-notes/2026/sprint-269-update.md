@@ -12,14 +12,14 @@ Check out the release notes for details.
 ### Boards
 [!INCLUDE [sprint-269-update-links](includes/boards/sprint-269-update-links.md)]
 
-### Wiki
-[!INCLUDE [sprint-269-update-links](includes/wiki/sprint-269-update-links.md)]
+### Repos
+[!INCLUDE [sprint-269-update-links](includes/repos/sprint-269-update-links.md)]
 
 ## Boards
 [!INCLUDE [sprint-269-update](includes/boards/sprint-269-update.md)]
 
-## Wiki
-[!INCLUDE [sprint-269-update](includes/wiki/sprint-269-update.md)]
+## Repos
+[!INCLUDE [sprint-269-update](includes/repos/sprint-269-update.md)]
 
 ## Next steps
 
