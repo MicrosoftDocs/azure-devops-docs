@@ -68,9 +68,6 @@ sections:
         answer: |
           A: Azure DevOps automatically recognizes Visual Studio subscribers who have Azure DevOps as a benefit based on the users' email address or [alternate identity](/visualstudio/subscriptions/use-connected-identities) associated with the subscription. Administrators can choose the “Visual Studio Subscriber” access level, but regardless of what access level they assign initially, the users Visual Studio subscription access will be detected when they sign in.
       
-          > [!div class="mx-imgBorder"]
-          > ![Screenshot showing notification banner for inactive Visual Studio subscription.](media/faq/notification-banner-inactive-visual-studio-subscription.png)
-
       - question: |
           Q: When do I select "Visual Studio/MSDN Subscriber"?
         answer: |
@@ -109,6 +106,9 @@ sections:
           Q: What is changing for expired Visual Studio subscribers in Azure DevOps?
         answer: |
           A: Historically, users with expired Visual Studio subscriptions continued to access Azure DevOps in organizations where they were added while their subscription was active. Starting February 2026, administrators can see which users have expired subscriptions. Admins have a grace period during February and March to act before these expired subscribers begin receiving Stakeholder access in April.
+
+          > [!div class="mx-imgBorder"]
+          > ![Screenshot showing notification banner for inactive Visual Studio subscription.](media/faq/notification-banner-inactive-visual-studio-subscription.png)
 
       - question: |
           Q: How can I tell if my users are impacted?
