@@ -16,6 +16,8 @@ ms.date: 09/29/2025
 
 [!INCLUDE [version-lt-eq-azure-devops](../includes/version-lt-eq-azure-devops.md)]
 
+[!INCLUDE [ai-assistance-callout](../includes/ai-assistance-callout.md)]
+
 This guide helps product managers get started with Azure Boards. It summarizes practical recommendations for configuring teams, planning work, and using Boards, Backlogs, Iterations, and Delivery Plans to deliver value predictably.
 
 > [!NOTE]

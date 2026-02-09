@@ -17,6 +17,8 @@ ms.date: 12/22/2025
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
+[!INCLUDE [ai-assistance-callout](../../includes/ai-assistance-callout.md)]
+
 With *backlogs*, you can plan your project by adding user stories or requirements to your product backlog. With your plan in place, you can start driving code development efforts.
 
 If you're a project administrator, see [Configure and customize Azure Boards](../configure-customize.md), which shows you how to define area and iteration paths and customize your work item types. When you create a project or add a team, Azure Boards automatically creates a backlog. Each team has access to their own product, portfolio, and sprint backlogs. For more information, see [About teams and Agile tools](../../organizations/settings/about-teams-and-settings.md#each-team-gets-their-own-set-of-tools).

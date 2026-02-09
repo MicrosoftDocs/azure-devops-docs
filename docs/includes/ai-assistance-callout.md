@@ -7,4 +7,4 @@ ms.topic: include
 -->
 
 > [!TIP]
-> You can use AI to help with Azure Boards tasks. See [Enable AI assistance with Azure DevOps MCP Server](../mcp-server/mcp-server-overview.md) to get started.
+> You can use AI to help with Azure DevOps tasks. See [Enable AI assistance with Azure DevOps MCP Server](/azure/devops/mcp-server/mcp-server-overview) to get started.

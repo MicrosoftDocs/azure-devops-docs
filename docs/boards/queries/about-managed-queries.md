@@ -18,6 +18,8 @@ ai-usage: ai-assisted
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
+[!INCLUDE [ai-assistance-callout](../../includes/ai-assistance-callout.md)]
+
 Use queries to list bugs, user stories, or other work items based on the field criteria you specify. Teams run these lists to triage work, bulk-update items, or review hierarchies. Semantic search offers overlapping and complementary capabilities worth exploring.
 
 Use managed queries to:
