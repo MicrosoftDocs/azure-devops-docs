@@ -146,25 +146,25 @@ sections:
         answer: |
           A: Assign Basic or Basic + Test Plans access to users who no longer have a Visual Studio subscription:
           
-          1. Select ![gear icon](../../media/icons/gear-icon.png) **Organization settings**.
-          2. Select **Users**.
-          3. Select the **Access level** filter and choose an invalid subscription type, such as **Visual Studio Enterprise subscription (Invalid)**.
+          1. Select ![gear icon](../../media/icons/gear-icon.png) **Organization settings** > **Users**.
+
+          2. Select the **Access level** filter and choose an invalid subscription type, such as **Visual Studio Enterprise subscription (Invalid)**.
           
               ![Screenshot showing checked box for Visual Studio Enterprise subscription invalid.](media/faq/visual-studio-subscription-invalid.png)
           
-          4. Check the box for **All**.
+          3. Check the box for **All**.
           
               ![Screenshot showing checked box for All.](media/faq/all-checkbox-selected.png)
           
-          5. Select :::image type="icon" source="../../media/icons/more-actions.png" border="false"::: **More actions** and **Change access level**.
+          4. Select :::image type="icon" source="../../media/icons/more-actions.png" border="false"::: **More actions** and **Change access level**.
           
               ![Screenshot showing Manage and Change access level selections.](media/faq/change-access-level.png)
           
-          6. Select **Basic** or **Basic + Test Plans**.
+          5. Select **Basic** or **Basic + Test Plans**.
           
               ![Screenshot showing Basic access level selected.](media/faq/change-access-level-basic.png)
 
-          7. **Save** your changes.
+          6. **Save** your changes.
           
           <a name="github-enterprise"></a>
 
