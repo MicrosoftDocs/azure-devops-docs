@@ -107,24 +107,21 @@ sections:
         answer: |
           A: Historically, users with expired Visual Studio subscriptions continued to access Azure DevOps in organizations where they were added while their subscription was active. Starting February 2026, administrators can see which users have expired subscriptions. Admins have a grace period during February and March to act before these expired subscribers begin receiving Stakeholder access in April.
 
-          > [!div class="mx-imgBorder"]
-          > ![Screenshot showing notification banner for inactive Visual Studio subscription.](media/faq/notification-banner-inactive-visual-studio-subscription.png)
+          :::image type="content" source="media/faq/notification-banner-inactive-visual-studio-subscription.png" alt-text="Screenshot showing notification banner for inactive Visual Studio subscription." lightbox="media/faq/notification-banner-inactive-visual-studio-subscription.png":::
 
       - question: |
           Q: How can I tell if my users are impacted?
         answer: |
           A: Azure DevOps shows a banner in **Organization settings** > **Users** if your organization has impacted users. Users with an expired subscription are identified with an invalid access level but continue to have full access during February and March. Use the **Access Level** filter to show only users with an invalid Visual Studio subscription.
 
-          > [!div class="mx-imgBorder"]
-          > ![Screenshot showing access level filter for users with inactive Visual Studio subscription.](media/faq/access-level-filter-shows-users-with-invalid-subscription.png)
+          :::image type="content" source="media/faq/access-level-filter-shows-users-with-invalid-subscription.png" alt-text="Screenshot showing access level filter for users with inactive Visual Studio subscription." lightbox="media/faq/access-level-filter-shows-users-with-invalid-subscription.png":::
 
       - question: |
           Q: What about free pipelines for Visual Studio Enterprise users?
         answer: |
           A: If you have expiring Visual Studio Enterprise (VSE) subscribers, you can see how many free VSE self-hosted pipeline concurrency will be lost. Check your [self-hosted concurrency report](../../pipelines/agents/pool-consumption-report.md) and consider increasing [paid self-hosted concurrency](../../pipelines/licensing/concurrent-jobs.md) as needed. You won't lose any self-hosted concurrency from expiring Visual Studio Enterprise subscribers until April 2026.
 
-          > [!div class="mx-imgBorder"]
-          > ![Screenshot showing self-hosted concurrency report with expiring Visual Studio Enterprise subscribers.](media/faq/self-hosted-concurrency-report.png)
+          :::image type="content" source="media/faq/self-hosted-concurrency-report.png" alt-text="Screenshot showing self-hosted concurrency report with expiring Visual Studio Enterprise subscribers." lightbox="media/faq/self-hosted-concurrency-report.png":::
 
       - question: |
           Q: Will users lose access immediately?
@@ -159,22 +156,19 @@ sections:
 
           2. Select the **Access level** filter and choose an invalid subscription type, such as **Visual Studio Enterprise subscription (Invalid)**.
           
-              > [!div class="mx-imgBorder"]  
-              ![Screenshot showing checked box for Visual Studio Enterprise subscription invalid.](media/faq/visual-studio-subscription-invalid.png)
+              :::image type="content" source="media/faq/visual-studio-subscription-invalid.png" alt-text="Screenshot showing checked box for Visual Studio Enterprise subscription invalid." lightbox="media/faq/visual-studio-subscription-invalid.png":::
           
           3. Check the box for **All**.
           
-              > [!div class="mx-imgBorder"]  
-              ![Screenshot showing checked box for All.](media/faq/all-checkbox-selected.png)
+              :::image type="content" source="media/faq/all-checkbox-selected.png" alt-text="Screenshot showing checked box for All." lightbox="media/faq/all-checkbox-selected.png":::
           
           4. Select :::image type="icon" source="../../media/icons/more-actions.png" border="false"::: **More actions** and **Change access level**.
           
-              ![Screenshot showing Manage and Change access level selections.](media/faq/change-access-level.png)
+              :::image type="content" source="media/faq/change-access-level.png" alt-text="Screenshot showing Manage and Change access level selections." lightbox="media/faq/change-access-level.png":::
           
           5. Select **Basic** or **Basic + Test Plans**.
           
-              > [!div class="mx-imgBorder"]  
-              ![Screenshot showing Basic access level selected.](media/faq/change-access-level-basic.png)
+              :::image type="content" source="media/faq/change-access-level-basic.png" alt-text="Screenshot showing Basic access level selected." lightbox="media/faq/change-access-level-basic.png":::
 
           6. **Save** your changes.
           
