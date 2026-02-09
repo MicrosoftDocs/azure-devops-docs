@@ -1,12 +1,14 @@
 ---
-title: Placeholder
+title: Support for GitHub Copilot Custom Agents in Azure Boards
 author: gloridelmorales
 ms.author: glmorale
 ms.date: 2/11/2026
-description: Placeholder
+description: Support for GitHub Copilot Custom Agents in Azure Boards
 ---
 
-# tbd
+# Support for GitHub Copilot Custom Agents in Azure Boards
+
+Azure Boards now supports selecting GitHub Copilot custom agents when creating a pull request from a work item. Custom agents created at the repository or organization level in GitHub automatically appear in Azure DevOps, and your selected agent will generate the code changes and create the pull request in the chosen repository.
 
 Check out the release notes for details.
 
