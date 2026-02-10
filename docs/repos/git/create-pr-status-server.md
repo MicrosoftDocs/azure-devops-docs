@@ -5,7 +5,7 @@ description: Create a web server to listen to pull request events and post statu
 ms.assetid: 2653589c-d15e-4dab-b8b0-4f8236c4a67b
 ms.service: azure-devops-repos
 ms.topic: tutorial
-ms.date: 07/02/2025
+ms.date: 02/10/2026
 monikerRange: '<= azure-devops'
 ms.subservice: azure-devops-repos-git
 ms.custom: devx-track-js, sfi-image-nochange
@@ -159,7 +159,7 @@ To receive the service hook notifications, expose a port to the public internet.
     POST /                         200 OK
     ```
 
-    In the Test Notification window, select the *Response* tab to see the details of the response from your server. You should see a status code of 200, and in this case a content length of 17 that matches the length of the string from your POST handler (for example, "Received the POST"). Also note you can examine the request body from the *Request* tab.
+    In the Test Notification window, select the *Response* tab to see the details of the response from your server. You should see a status code of 200, and in this case a content length of 17 that matches the length of the string from your POST handler (for example, "Received the POST"). You can examine the request body from the *Request* tab.
 
     ![Screenshot shows selected response tab for results of the test.](media/create-pr-status-server/test-notification.png)
 
