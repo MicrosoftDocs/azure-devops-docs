@@ -179,7 +179,7 @@ The following steps are a way to remove existing obsolete policies when the serv
     }
    ```
 
-1. Connect to the TFVC service and set obsolete checking policies to null. For example:
+1. Connect to the TFVC service and set obsolete checking policies to `null`. For example:
 
    ```csharp
     var versionControlServer = tpc.GetService<VersionControlServer>();
