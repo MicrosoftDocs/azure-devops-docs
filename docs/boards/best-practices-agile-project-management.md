@@ -23,6 +23,8 @@ This guide helps product managers get started with Azure Boards. It summarizes p
 
 Most recommendations apply to both Azure DevOps Services (cloud) and Azure DevOps Server (on-premises). Some features, including Rollup, Analytics, and some portfolio planning tools, are available only in the cloud.
 
+[!INCLUDE [ai-assistance-callout](../includes/ai-assistance-callout.md)]
+
 ## Configure teams
 
 Define a team for each delivery group that should work autonomously. Configure teams along value streams so each team can plan, track, and deliver independently while still rolling up to product-level roadmaps.

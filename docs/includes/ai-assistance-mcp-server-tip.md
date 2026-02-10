@@ -11,6 +11,6 @@ ms.topic: include
 -->
 
 > [!TIP]
-> You can [use AI to help with this task](#use-ai-assistance) later in this article, or see [Enable AI assistance with Azure DevOps MCP Server](../mcp-server/mcp-server-overview.md) to get started.
+> You can [use AI to help with this task](#use-ai-assistance) later in this article, or see [Enable AI assistance with Azure DevOps MCP Server](/azure/devops/mcp-server/mcp-server-overview) to get started.
 
 
