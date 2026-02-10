@@ -1,41 +1,50 @@
 ---
 ms.topic: include
 ms.service: azure-devops-boards
-ms.date: 12/01/2022
+ms.date: 02/10/2026
 ---
 
 
 <a id="run-witadmin-tool"></a>
 
-## Run the `witadmin` command-line tool  
+## Run the witadmin command-line tool  
 
-To run the `witadmin` command-line tool, open a Command Prompt window where Visual Studio is installed. The `witadmin` command-line tool installs with any version of Visual Studio. You can access this tool by installing the free version of [Visual Studio Community or Visual Studio Team Explorer](https://visualstudio.microsoft.com/downloads/).  
+The witadmin command-line tool installs with Visual Studio. Open a Command Prompt window and navigate to the directory where Visual Studio is installed. You can also install the free [Visual Studio Community](https://visualstudio.microsoft.com/downloads/) edition.
+
 ::: moniker range="azure-devops"
 > [!NOTE]   
-> To connect to Azure DevOps Services, we recommend that you use the latest version of Visual Studio or Visual Studio Community.  
+> For Azure DevOps Services, use the latest version of Visual Studio.  
 ::: moniker-end
 
 ::: moniker range="< azure-devops"
 > [!NOTE]   
-> To connect to an on-premises server, we recommend that you use the same or later version of Visual Studio as your Azure DevOps Server. For example, if you connect to Azure DevOps Server 2019, then connect to your project from a version of Visual Studio 2019. 
+> For on-premises Azure DevOps Server, use the same or later version of Visual Studio. For example, use Visual Studio 2019 or later to connect to Azure DevOps Server 2019. 
 ::: moniker-end
 
-**For Visual Studio 2022** 
+#### [Visual Studio 2022](#tab/visual-studio-2022)
 
-`%programfiles(x86)%\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\TeamFoundation\Team Explorer`
+```
+%programfiles(x86)%\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\TeamFoundation\Team Explorer
+```
 
-or `Professional` or `Enterprise` in place of `Community`, depending on the version you installed.  
+Replace `Community` with `Professional` or `Enterprise`, depending on the version you installed.
 
-**For Visual Studio 2019**
+#### [Visual Studio 2019](#tab/visual-studio-2019)
 
-`%programfiles(x86)%\Microsoft Visual Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\TeamFoundation\Team Explorer`
+```
+%programfiles(x86)%\Microsoft Visual Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\TeamFoundation\Team Explorer
+```
 
-or `Professional` or `Enterprise` in place of `Community`, depending on the version you installed.  
+Replace `Community` with `Professional` or `Enterprise`, depending on the version you installed.
 
-**For Visual Studio 2017**
+#### [Visual Studio 2017](#tab/visual-studio-2017)
 
-`%programfiles(x86)%\Microsoft Visual Studio\2017\Enterprise\Common7\IDE\CommonExtensions\Microsoft\TeamFoundation\Team Explorer`
+```
+%programfiles(x86)%\Microsoft Visual Studio\2017\Enterprise\Common7\IDE\CommonExtensions\Microsoft\TeamFoundation\Team Explorer
+```
 
-or `TeamExplorer` or `Professional` in place of `Enterprise`, depending on the version you installed.  
+Replace `Enterprise` with `Professional` or `TeamExplorer`, depending on the version you installed.
 
-On a 32-bit edition of Windows, replace **%programfiles(x86)%** with **%programfiles%**. You can [install Visual Studio Community (which provides access to Team Explorer) or Visual Studio Team Explorer 2017](https://visualstudio.microsoft.com/downloads/download-visual-studio-vs) for free. 
+---
+
+On a 32-bit edition of Windows, replace `%programfiles(x86)%` with `%programfiles%`. 
