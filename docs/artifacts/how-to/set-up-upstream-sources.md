@@ -38,48 +38,52 @@ If you don't have a feed yet, follow these steps to create a new feed and enable
 
 ## Enable upstream sources for an existing feed
 
-Follow these steps to enable upstream sources for an existing feed:
+If you've created a feed without enabling upstream sources, you can enable it on later to consume packages from common public sources. Follow these steps to enable upstream sources for an existing feed:
 
 1. Sign in to Azure DevOps, then navigate to your project.
 
-1. Select the gear icon button ![gear icon](../../media/icons/gear-icon.png) to open your feed settings.
+1. Select the gear icon button ![gear icon](../../media/icons/gear-icon.png) to open **Feed settings**.
 
-1. Select **Upstream sources** > **Add upstream source**.
+1. Select **Upstream sources** > **Add Upstream**.
 
-1. Select **Public source**, then choose a **Public source** from the dropdown.
+1. Select **Public source**, choose a **Public source** from the dropdown, then select **Add**.
 
-1. Select **Add**, then select **Save** in the top-right corner to apply your changes.
+1. Select **Save** in the top-right corner to apply the changes.
 
 > [!NOTE]
 > You must be a feed owner or feed administrator to add or remove upstream sources.
 
-## Add a feed in the same organization as an upstream source
+## Add a feed from the same organization as an upstream source
 
-1. Sign in to your Azure DevOps organization, and then navigate to your project.
+Follow these steps to add a feed from the same organization as an upstream source:
 
-1. Select the gear icon button![gear icon](../../media/icons/gear-icon.png) to access your feed's settings.
+1. Sign in to Azure DevOps, then navigate to your project.
 
-1. Select **Upstream sources**, and then select **Add Upstream**.
+1. Select the gear icon button![gear icon](../../media/icons/gear-icon.png) to navigate to **Feed settings**.
+
+1. Select **Upstream sources**, then select **Add Upstream**.
 
 1. Select **Azure Artifacts feed in this organization**.
 
-1. Select the desired **Feed** from the dropdown menu to add it as an upstream source. Then, select the **View** and choose the **Package type(s)** you wish to use. Optionally, you can also modify the name of your upstream source.
+1. From the dropdown menu, select the feed you want to add as an upstream source. Select the desired **View**, then choose the **Package type(s)** to include. Optionally, you can also modify the upstream source name.
 
 1. Select **Add** when you're done.
 
-    :::image type="content" source="../media/add-upstream-same-org.png" alt-text="A screenshot showing how to add a feed in your organization as an upstream source.":::
+    :::image type="content" source="../media/add-upstream-same-org.png" alt-text="A screenshot displaying how to add a feed from your organization as an upstream source.":::
 
-## Add a feed in a different organization as an upstream source
+## Add a feed from a different organization as an upstream source
 
-1. Sign in to your Azure DevOps organization, and then navigate to your project.
+Follow these steps to add a feed from a different organization as an upstream source:
 
-1. Select the gear icon button![gear icon](../../media/icons/gear-icon.png) to access your feed's settings.
+1. Sign in to Azure DevOps, then navigate to your project.
 
-1. Select **Upstream sources**, and then select **Add Upstream**.
+1. Select the gear icon button![gear icon](../../media/icons/gear-icon.png) to access **Feed settings**.
+
+1. Select **Upstream sources**, then select **Add Upstream**.
 
 1. Select **Azure Artifacts feed in another organization**.
 
-1. Enter your **Azure Artifacts feed locator** in the following format:
+1. Enter your **Azure Artifacts feed locator** using one of the following formats:
 
     - **Organization scoped feed**: 
         
@@ -93,14 +97,14 @@ Follow these steps to enable upstream sources for an existing feed:
         azure-feed://ORGANIZATION_NAME/PROJECT_NAME/FEED_NAME@VIEW
         ```
 
-1. Select the **Package type(s)** you wish to use and provide a name for your upstream source.
+1. Select the **Package type(s)** you want to use and provide a name for your upstream source.
 
 1. Select **Add** when you're done.
 
-    :::image type="content" source="../media/add-upstream-diff-org.png" alt-text="A screenshot showing how to add a feed in a different organization as an upstream source.":::
+    :::image type="content" source="../media/add-upstream-diff-org.png" alt-text="A screenshot displaying how to add a feed from a different organization as an upstream source.":::
 
-> [!NOTE]
-> To add a feed from a different organization as an upstream source, the target feed owner must share the target view with **All feeds and people in organizations associated with my Microsoft Entra tenant** by navigating to **Feed Settings** > **Views** > Select the ellipsis button on the right for the specified view > **Edit** .
+> [!IMPORTANT]
+> To add a feed from a different organization as an upstream source, the target feed owner must share the target view with **All feeds and people in organizations associated with my Microsoft Entra tenant** by navigating to **Feed Settings** > **Views** > Select the ellipsis button for the specified view > **Edit**.
 
 ## Examples
 
