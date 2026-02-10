@@ -33,7 +33,7 @@ For example, change:
     }
    ```
 
-To:
+   To:
 
    ```csharp
     [Serializable]
@@ -114,7 +114,7 @@ To:
 
 1. In the new policy type, skip private properties that were previously serialized. Add `[JsonProperty]` to ensure they're saved to the database.
 
-For example:
+   For example:
 
    ```csharp
     [Serializable]
