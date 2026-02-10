@@ -126,7 +126,7 @@ A package is saved when a user with [Feed and Upstream Reader (Collaborator)](..
 
 ##### Q: Why can’t I find the feed I want to configure as an upstream source?
 
-A: If the feed is in a different organization, make sure that the target feed owner the target has shared a view with *All feeds and people in organizations associated with my Microsoft Entra tenant*. See [Add a feed in a different organization as an upstream source](../how-to/set-up-upstream-sources.md#add-a-feed-in-a-different-organization-as-an-upstream-source) for more details.
+A: If the feed is in a different organization, make sure that the target feed owner the target has shared a view with *All feeds and people in organizations associated with my Microsoft Entra tenant*. See [Add a feed in a different organization as an upstream source](../how-to/set-up-upstream-sources.md#add-a-feed-from-a-different-organization-as-an-upstream-source) for more details.
 
 ##### Q: What are feed views?
 
