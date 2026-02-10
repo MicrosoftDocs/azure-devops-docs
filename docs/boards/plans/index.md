@@ -16,6 +16,8 @@ ms.date: 09/03/2025
 
 As organizations grow, Azure Boards provides scalable tools to extend Agile practices across multiple teams and projects. The platform's team-based architecture enables both team autonomy and organizational visibility, supporting everything from small startups to large organizations.
 
+[!INCLUDE [ai-assistance-callout](../../includes/ai-assistance-callout.md)]
+
 ## Core scaling approach
 
 Azure Boards scales through a flexible team model where each team operates independently while contributing to larger organizational goals. This approach provides:

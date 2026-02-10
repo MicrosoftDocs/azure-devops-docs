@@ -32,6 +32,8 @@ To enhance consistent delivery of high-quality software, Kanban emphasizes two k
 
 :::image type="content" source="../work-items/media/about-agile/view-boards-agile.png" border="false" alt-text="Screenshot of a Kanban board showing backlog items with an Agile template.":::
 
+[!INCLUDE [ai-assistance-callout](../../includes/ai-assistance-callout.md)]
+
 ## Kanban concepts and terms 
 
 The following table describes terms and tools commonly used for tracking work with Kanban boards and Kanban methods.
