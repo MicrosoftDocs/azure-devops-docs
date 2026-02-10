@@ -108,56 +108,25 @@ Follow these steps to add a feed from a different organization as an upstream so
 
 ## Examples
 
-# [NuGet](#tab/nuget)
-
-- [Use packages from NuGet.org](../nuget/upstream-sources.md)
-
-# [Npm](#tab/npm)
-
-- [Use packages from npmjs.com](../npm/upstream-sources.md)
-
-# [Python](#tab/python)
-
-- [Use packages from Python package index (PyPI)](../python/use-packages-from-pypi.md)
-
-# [Maven](#tab/maven)
-
-- [Use packages from Maven Central](../maven/upstream-sources.md)
-
-- [Use packages from Google Maven Repository](../maven/google-maven.md)
-
-- [Use packages from Gradle Plugins](../maven/gradle-plugins.md)
-
-- [Use packages from JitPack](../maven/jitpack-upstream.md)
-
-# [Cargo](#tab/cargo)
-
-- [Use packages from Crates.io](../cargo/cargo-upstream-source.md)
-
-# [Universal Packages](#tab/universalpackages)
-
-- [Universal Packages upstream sources](../universal-packages/universal-packages-upstream.md)
-
-# [PowerShell](#tab/powershell)
-
-- [Use packages from the PowerShell Gallery](../tutorials/powershell-upstream-source.md)
-
----
+| NuGet | Npm | Python | Maven | Cargo | Universal Packages | PowerShell |
+|------|-----|--------|-------|-------|--------------------|------------|
+| [Use packages from NuGet.org](../nuget/upstream-sources.md) | [Use packages from npmjs.com](../npm/upstream-sources.md) | [Use packages from Python Package Index (PyPI)](../python/use-packages-from-pypi.md) | [Use packages from Maven Central](../maven/upstream-sources.md)<br>[Google Maven Repository](../maven/google-maven.md)<br>[Gradle Plugins](../maven/gradle-plugins.md)<br>[JitPack](../maven/jitpack-upstream.md) | [Use packages from Crates.io](../cargo/cargo-upstream-source.md) | [Universal Packages upstream sources](../universal-packages/universal-packages-upstream.md) | [Use packages from the PowerShell Gallery](../tutorials/powershell-upstream-source.md) |
 
 > [!NOTE]
-> You must be a **Feed and Upstream Reader (Collaborator)**, a **Feed Publisher (Contributor)**, or a **Feed Owner** to install new packages from upstream. A copy of each upstream package is saved to the feed on first use. Packages already saved from upstream sources can be used by **Feed Readers**.
+> To install packages from upstream sources, You must be a **Feed and Upstream Reader (Collaborator)**, **Feed Publisher (Contributor)**, or a **Feed Owner**.
+> The first time a package is installed from an upstream source, a copy is automatically saved to the feed. Any packages already saved to the feed can then be used by **Feed Readers**.
 
 ## FAQs
 
-##### Q: I can't find my package even though I can see it in one of my feed's upstreams?
+##### Q: Why can’t I find my package even though I can see it in one of my feed's upstreams?
 
-A: Packages from upstream sources become available in the feed soon after they're published, but they only appear to readers once they’re saved to the feed.
+A: Packages from upstream sources become available in the feed soon after they're published, but they aren’t visible to readers until they’re saved to the feed.
 
-A package is saved when a user with [Feed and Upstream Reader (Collaborator)](../feeds/feed-permissions.md#feed-roles-and-permissions) or higher permissions installs that package version. Azure Artifacts then automatically saves a copy of the package to the feed, making it permanently available to all readers and visible in the web UI.
+A package is saved when a user with [Feed and Upstream Reader (Collaborator)](../feeds/feed-permissions.md#feed-roles-and-permissions) or higher permissions installs it. Azure Artifacts then automatically saves a copy of the package to the feed, making it permanently available to all readers and visible in the web UI.
 
-##### Q: I can’t find the feed I want to configure as an upstream source?
+##### Q: Why can’t I find the feed I want to configure as an upstream source?
 
-A: Make sure that the feed owner has shared a view as an upstream source. See [Add a feed in a different organization as an upstream source](../how-to/set-up-upstream-sources.md#add-a-feed-in-a-different-organization-as-an-upstream-source) for more details.
+A: If the feed is in a different organization, make sure that the target feed owner the target has shared a view with *All feeds and people in organizations associated with my Microsoft Entra tenant*. See [Add a feed in a different organization as an upstream source](../how-to/set-up-upstream-sources.md#add-a-feed-in-a-different-organization-as-an-upstream-source) for more details.
 
 ##### Q: What are feed views?
 
@@ -165,21 +134,21 @@ A: Feed views let you share a subset of package versions that have been tested a
 
 ##### Q: Can a user with the **Feed Reader** role download packages from an upstream source?
 
-A: No. **Feed Reader** can only download packages already saved to the feed. Packages are saved when a **Feed and Upstream Reader (Collaborator)**, **Feed Publisher (Contributor)**, or **Feed Owner** installs them from upstream.
+A: No. **Feed Reader** can only download packages that are already saved to the feed. Packages are saved when a **Feed and Upstream Reader (Collaborator)**, **Feed Publisher (Contributor)**, or **Feed Owner** installs them from an upstream source.
 
-##### Q: What happens if a user deletes or unpublishes a package saved from an upstream source?
+##### Q: What happens if a package saved from an upstream source is deleted or unpublished?
 
-A: The package becomes unavailable for download, and its version number is permanently reserved. It will no longer sync from upstream, but earlier and later versions remain unaffected.
+A: The package becomes unavailable for download, and the version number is permanently reserved. That version will no longer sync from upstream, but earlier and later versions remain unaffected.
 
-##### Q: What happens if a user deprecates a package saved from an upstream source?
+##### Q: What happens if a package saved from an upstream source is deprecated
 
-A: A warning message is added to the package’s metadata. This warning appears whenever the package is viewed or installed from the feed.
+A: A warning message is added to the package metadata. This warning appears whenever the package is viewed or installed from the feed.
 
-## Related articles
+## Related content
 
-- [Search for packages in upstream sources](./search-upstream.md)
+- [Use upstream sources in a public feed](public-feeds-upstream-sources.md)
 
-- [Use feed views to share packages](../feeds/views.md)
+- [Use packages from the NuGet Gallery](../nuget/upstream-sources.md)
 
 - [Restore packages from upstream sources](../tutorials/protect-oss-packages-with-upstream-sources.md)
 
