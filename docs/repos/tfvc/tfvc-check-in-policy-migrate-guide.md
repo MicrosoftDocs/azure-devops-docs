@@ -22,7 +22,7 @@ Here's how to migrate your custom check-in policies in Team Foundation Version C
 To migrate your custom policies:
 
 1. Create a new class with the same methods, but inheriting the `CheckinPolicyBase` class (`IPolicyCompatibilityJson` for `IPolicyCompatibility`) instead of the `PolicyBase` class.  
-For example, change:
+Here's an obsolete example.
 
    ```csharp
     [Serializable]
@@ -33,7 +33,7 @@ For example, change:
     }
    ```
 
-   To:
+   Here's an updated example.
 
    ```csharp
     [Serializable]
@@ -45,7 +45,8 @@ For example, change:
    ```
 
 1. If `GetBinaryFormatter` was overridden, also implement `GetJsonSerializerSettings`. Use the same serialization logic. Configure `JsonSerializerSettings`, with `TypeNameHandling` set to `Objects`.
-   For example, change:
+
+   Here's an obsolete example.
 
    ```csharp
     [Serializable]
@@ -61,7 +62,7 @@ For example, change:
     }
    ```
 
-   To:
+   Here's an updated example.
 
    ```csharp
     [Serializable]
@@ -133,12 +134,12 @@ For example, change:
 
 ## Use a predefined method to migrate policies on server
 
-Further automigration is available only for custom policies. Standard Visual Studio policies don't support this capability. If you don't plan to use the migration method provided by a NuGet package, you can skip this section, and proceed to the next section in this article.
+Further automigration is available only for custom policies. Standard Visual Studio policies don't support this capability. If you don't plan to use the migration method provided by a NuGet package, you can skip this section and proceed to the next section in this article.
 
 1. Add the `IPolicyMigration` interface for each obsolete custom policy. This interface is marked as deprecated only to indicate that its status is similar to `PolicyBase` and `IPolicyCompatibility`.
 
     > [!IMPORTANT]
-    > Obsolete policies that don’t inherit this interface are skipped during migration. They're not saved as new policies.
+    > Obsolete policies that don't inherit this interface are skipped during migration. They're not saved as new policies.
 
 1. Implement the `ToNewPolicyType` method on the obsolete policy. This method must:
    - Return an instance of the new policy class.
