@@ -15,14 +15,15 @@ ms.subservice: azure-devops-repos-tfvc
 Here's how to migrate your custom check-in policies in Team Foundation Version Control (TFVC). You can update code, you can use a predefined method for further automigration, and you can use a workaround to remove obsolete policies.
 
 > [!IMPORTANT]
-> Don't delete your existing policies before completing the migration steps. Complete the migration steps first.
+> Complete the migration steps before you delete your existing policies.
 
 ## Code updates
 
 To migrate your custom policies:
 
 1. Create a new class with the same methods, but inheriting the `CheckinPolicyBase` class (`IPolicyCompatibilityJson` for `IPolicyCompatibility`) instead of the `PolicyBase` class.  
-Here's an obsolete example.
+
+   Here's an obsolete example.
 
    ```csharp
     [Serializable]
@@ -129,7 +130,8 @@ Here's an obsolete example.
 
 1. Replace legacy policy-loading APIs.
 
-   For example, the following legacy methods are obsolete: `GetCheckinPoliciesForServerPaths`, `GetCheckinPolicies`, and `SetCheckinPolicies`. Use the following methods from the package, accordingly: `GetCheckinClientPoliciesForServerPaths`, `GetCheckinClientPolicies`, and `SetCheckinClientPolicies`.  
+   For example, the following legacy methods are obsolete: `GetCheckinPoliciesForServerPaths`, `GetCheckinPolicies`, and `SetCheckinPolicies`. Use the following methods from the package, accordingly: `GetCheckinClientPoliciesForServerPaths`, `GetCheckinClientPolicies`, and `SetCheckinClientPolicies`.
+
    Automatic policy migration is supported only for custom policies. Built-in Visual Studio policies support the new policy model and migration.
 
 ## Use a predefined method to migrate policies on server
