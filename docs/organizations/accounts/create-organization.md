@@ -1,24 +1,25 @@
 ---
 title: Create an organization
 titleSuffix: Azure DevOps
-description: Learn how to create an organization or project collection with a personal Microsoft account, GitHub account, or work or school account.
+description: Learn how to create an Azure DevOps organization using a personal Microsoft account, GitHub account, or work or school account.
 ms.subservice: azure-devops-organizations
 ms.assetid: e2eacd25-e6be-4294-b1da-5529195f30d0
 ms.topic: how-to
 ms.author: chcomley
 author: chcomley
-ms.date: 12/03/2025
-monikerRange: '<= azure-devops'
+ms.date: 02/11/2026
+monikerRange: 'azure-devops'
+#customer intent: As a new Azure DevOps user, I want to create an organization so that I can start managing projects and collaborating with my team.
 ---
 
 # Create an organization
 
-[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
+[!INCLUDE [version-eq-azure-devops](../../includes/version-eq-azure-devops.md)]
 
-Use an organization to connect groups of related projects and help scale up your enterprise. You can use a personal Microsoft account, GitHub account, or a work or school account. Using your work or school account *automatically connects* your organization to your Microsoft Entra ID.
+Use an organization to connect groups of related projects and help scale up your enterprise. You can use a personal Microsoft account, GitHub account, or a work or school account. When you use your work or school account, you *automatically connect* your organization to your Microsoft Entra ID.
 
 > [!NOTE]
-> All organizations must be manually created via the web portal. Automated creation of organizations is not supported. However, we do support automated organization configuration, project creation, and resource provisioning via the [REST API](/rest/api/azure/devops).
+> You must create all organizations manually through the web portal. Automated creation of organizations isn't supported. However, automated organization configuration, project creation, and resource provisioning are supported through the [REST API](/rest/api/azure/devops).
 
 <a name="how-sign-up"></a>
 
@@ -26,7 +27,8 @@ Use an organization to connect groups of related projects and help scale up your
 
 | Category | Requirements |
 |--------------|-------------|
-|**Authentication**| Determine whether you want to use only Microsoft accounts or authenticate users with Microsoft Entra ID. For more information, see [Choosing your organization administrator account type](../../user-guide/plan-your-azure-devops-org-structure.md#choose-your-organization-administrator-account-type).|
+|**Azure subscription**| You need an active Azure subscription to create new organizations. Existing organizations and free tier limits aren't affected.|
+|**Authentication**| Decide whether you want to use only Microsoft accounts or authenticate users with Microsoft Entra ID. For more information, see [Choosing your organization administrator account type](../../user-guide/plan-your-azure-devops-org-structure.md#choose-your-organization-administrator-account-type).|
 |**Planning**| Understand how to [plan your organizational structure](../../user-guide/plan-your-azure-devops-org-structure.md).|
 
 <a name="SignIn"></a>
@@ -49,7 +51,7 @@ Use an organization to connect groups of related projects and help scale up your
 
    Congratulations, you're an organization owner!
 
-   Sign in to your organization at any time, `https://dev.azure.com/{YourOrganization}`.
+   Sign in to your organization at any time by using `https://dev.azure.com/{YourOrganization}`.
 
 ### Free tier benefits
 
@@ -57,7 +59,7 @@ Your new organization includes the following free tier benefits:
 
 [!INCLUDE [free-tier](../../includes/free-tier.md)]
 
-If you exceed these free tier limits, your linked Azure subscription gets billed for additional usage. For more information, see [What happens when free tier limits are reached?](../billing/billing-faq.yml#q--what-happens-when-free-tier-limits-are-reached-).
+If you exceed these free tier limits, you pay for extra usage through your linked Azure subscription. For more information, see [What happens when free tier limits are reached?](../billing/billing-faq.yml#q--what-happens-when-free-tier-limits-are-reached-)
 
 ## Next steps
 
