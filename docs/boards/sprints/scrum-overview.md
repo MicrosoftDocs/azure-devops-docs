@@ -20,6 +20,8 @@ Scrum methods use *iteration paths*, or *sprints*, to plan work for teams within
 
 For an introduction to Scrum, see [What is Scrum?](/devops/plan/what-is-scrum)
 
+[!INCLUDE [ai-assistance-callout](../../includes/ai-assistance-callout.md)]
+
 ## Scrum in Azure Boards
 
 The general sequence of steps for implementing Scrum in Azure Boards is as follows. For more information, select each linked article.

@@ -29,6 +29,8 @@ You can organize your personal or shared queries by adding query folders. You ca
 
 [!INCLUDE [temp](../includes/prerequisites-queries.md)]
 
+[!INCLUDE [ai-assistance-callout](../../includes/ai-assistance-callout.md)]
+
 ## Open a query 
 
 [!INCLUDE [temp](../includes/open-queries.md)] 
