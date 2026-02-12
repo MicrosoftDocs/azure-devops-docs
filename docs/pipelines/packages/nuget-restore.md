@@ -66,7 +66,7 @@ With NuGet Package Restore you can install all your project's dependency without
 * * *
 
 > [!NOTE]
-> Make sure that The NuGet Gallery upstream is enabled in your feed. See [Enable upstream sources in an existing feed](../../artifacts/how-to/set-up-upstream-sources.md#enable-upstream-sources-for-an-existing-feed) for details.
+> Make sure that the NuGet Gallery upstream is enabled in your feed. See [Enable upstream sources for an existing feed](../../artifacts/how-to/set-up-upstream-sources.md#enable-upstream-sources-for-an-existing-feed) for details.
 
 ## Restore NuGet packages from a feed in another organization
 

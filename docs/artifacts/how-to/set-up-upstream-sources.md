@@ -38,7 +38,7 @@ If you don't have a feed yet, follow these steps to create a new feed and enable
 
 ## Enable upstream sources for an existing feed
 
-If you've created a feed without enabling upstream sources, you can enable it on later to consume packages from common public sources. Follow these steps to enable upstream sources for an existing feed:
+If you've created a feed without enabling upstream sources, you can enable it later to consume packages from common public sources. Follow these steps to enable upstream sources for an existing feed:
 
 1. Sign in to Azure DevOps, then navigate to your project.
 
@@ -113,7 +113,7 @@ Follow these steps to add a feed from a different organization as an upstream so
 | [Use packages from NuGet.org](../nuget/upstream-sources.md) | [Use packages from npmjs.com](../npm/upstream-sources.md) | [Use packages from Python Package Index (PyPI)](../python/use-packages-from-pypi.md) | [Use packages from Maven Central](../maven/upstream-sources.md)<br>[Google Maven Repository](../maven/google-maven.md)<br>[Gradle Plugins](../maven/gradle-plugins.md)<br>[JitPack](../maven/jitpack-upstream.md) | [Use packages from Crates.io](../cargo/cargo-upstream-source.md) | [Universal Packages upstream sources](../universal-packages/universal-packages-upstream.md) | [Use packages from the PowerShell Gallery](../tutorials/powershell-upstream-source.md) |
 
 > [!NOTE]
-> To install packages from upstream sources, You must be a **Feed and Upstream Reader (Collaborator)**, **Feed Publisher (Contributor)**, or a **Feed Owner**.
+> To install packages from upstream sources, you must be a **Feed and Upstream Reader (Collaborator)**, **Feed Publisher (Contributor)**, or a **Feed Owner**.
 > The first time a package is installed from an upstream source, a copy is automatically saved to the feed. Any packages already saved to the feed can then be used by **Feed Readers**.
 
 ## FAQs
@@ -126,7 +126,7 @@ A package is saved when a user with [Feed and Upstream Reader (Collaborator)](..
 
 ##### Q: Why can’t I find the feed I want to configure as an upstream source?
 
-A: If the feed is in a different organization, make sure that the target feed owner the target has shared a view with *All feeds and people in organizations associated with my Microsoft Entra tenant*. See [Add a feed in a different organization as an upstream source](../how-to/set-up-upstream-sources.md#add-a-feed-from-a-different-organization-as-an-upstream-source) for more details.
+A: If the feed is in a different organization, make sure that the target feed owner has shared a view with *All feeds and people in organizations associated with my Microsoft Entra tenant*. See [Add a feed in a different organization as an upstream source](../how-to/set-up-upstream-sources.md#add-a-feed-from-a-different-organization-as-an-upstream-source) for more details.
 
 ##### Q: What are feed views?
 
@@ -140,7 +140,7 @@ A: No. **Feed Reader** can only download packages that are already saved to the 
 
 A: The package becomes unavailable for download, and the version number is permanently reserved. That version will no longer sync from upstream, but earlier and later versions remain unaffected.
 
-##### Q: What happens if a package saved from an upstream source is deprecated
+##### Q: What happens if a package saved from an upstream source is deprecated?
 
 A: A warning message is added to the package metadata. This warning appears whenever the package is viewed or installed from the feed.
 
