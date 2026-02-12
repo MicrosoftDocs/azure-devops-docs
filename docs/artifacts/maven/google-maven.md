@@ -72,7 +72,7 @@ Before saving packages from Google Maven Repository, make sure you have set up y
 
 1. Run the following command from the same path as your *pom.xml* file to install your dependencies:
 
-    ```command
+    ```
     mvn install
     ```
 
