@@ -1,7 +1,7 @@
 ﻿---
 title: Migrate Custom Check-in Policies
 titleSuffix: Azure Repos
-description: Learn how to migrate custom TFVC check-in policies from one class to another.
+description: Learn how to migrate custom TFVC check-in policies from PolicyBase to CheckinPolicyBase class.
 ms.assetid:
 ms.service: azure-devops-repos
 ms.topic: how-to
@@ -136,14 +136,15 @@ To migrate your custom policies:
 
 ## Use a predefined method to migrate policies on server
 
-Further automigration is available only for custom policies. Standard Visual Studio policies don't support this capability. If you don't plan to use the migration method provided by a NuGet package, you can skip this section and proceed to the next section in this article.
+Further automigration is available **only for custom policies**. Standard Visual Studio policies don't support this capability. If you don't plan to use the migration method provided by a NuGet package, you can skip this section and proceed to the next section in this article.
 
-1. Add the `IPolicyMigration` interface for each obsolete custom policy. This interface is marked as deprecated only to indicate that its status is similar to `PolicyBase` and `IPolicyCompatibility`.
+1. Add the `IPolicyMigration` interface for each obsolete custom policy.
+   This interface is deprecated and slated for removal in a future release along with `PolicyBase` and `IPolicyCompatibility`.
 
     > [!IMPORTANT]
-    > Obsolete policies that don't inherit this interface are skipped during migration. They're not saved as new policies.
+    > Obsolete policies that don't inherit this interface are **skipped** during migration. They're **not** saved as new policies.
 
-1. Implement the `ToNewPolicyType` method on the obsolete policy. This method must:
+2. Implement the `ToNewPolicyType` method on the obsolete policy. This method must:
    - Return an instance of the new policy class.
    - Populate the new instance with values from the obsolete policy.
 
@@ -161,7 +162,7 @@ Further automigration is available only for custom policies. Standard Visual Stu
     }
    ```
 
-1. Call the `MigrateFromOldPolicies` method.
+3. Call the `MigrateFromOldPolicies` method.
 
 ## Remove existing obsolete policies
 
