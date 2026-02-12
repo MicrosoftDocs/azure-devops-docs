@@ -12,7 +12,7 @@ monikerRange: "<=azure-devops"
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
-With Azure Artifacts, developers can enable upstream sources to consume packages from different public registries such as Google Maven Repository. Once enabled, Azure Artifacts will automatically save a copy of any package installed from the upstream. Additionally, Azure Artifacts supports other Maven upstream sources such as Maven Central, Gradle Plugins, and JitPack. In this article, you'll learn how to:
+With Azure Artifacts, developers can enable upstream sources to consume packages from different public registries such as Google Maven Repository. Once enabled, Azure Artifacts will automatically save a copy of any package installed from the upstream. Additionally, Azure Artifacts supports other Maven upstream sources such as Maven Central, Gradle Plugins, and JitPack. In this article, you learn how to:
 
 > [!div class="checklist"]    
 > * Add Google Maven Repository as an upstream source 
