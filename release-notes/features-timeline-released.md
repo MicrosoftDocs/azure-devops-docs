@@ -38,10 +38,11 @@ You can also [view the build numbers for each version](#azure-devops-server-buil
         </tr>
     </thead>
 <tr>
-    <td rowspan="3"><a href="2026/sprint-269-update.md" data-raw-source="[11 February 2026](2026/sprint-269-update.md)">February 11 2026</a></td>
+    <td rowspan="4"><a href="2026/sprint-269-update.md" data-raw-source="[11 February 2026](2026/sprint-269-update.md)">February 11 2026</a></td>
     <td>Azure Boards integration with GitHub Copilot now supports custom agents</td><td>Boards</td><td>Future</td></tr>
     <td>Increased maximum limit for connected GitHub repositories</td><td>Boards</td><td>Future</td></tr>
     <td>Improved Git policy configuration API</td><td>Repos</td><td>N/A</td></tr>
+    <td>Improved pipeline run debugging</td><td>Pipelines</td><td>N/A</td></tr>
 <tr>
 <tr>
     <td rowspan="15"><a href="2026/sprint-268-update.md" data-raw-source="[26 January 2026](2026/sprint-268-update.md)">January 26 2026</a></td>

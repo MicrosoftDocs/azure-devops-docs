@@ -2,7 +2,7 @@
 title: Support for GitHub Copilot Custom Agents in Azure Boards
 author: gloridelmorales
 ms.author: glmorale
-ms.date: 2/11/2026
+ms.date: 2/12/2026
 description: Support for GitHub Copilot Custom Agents in Azure Boards
 ---
 
@@ -18,11 +18,17 @@ Check out the release notes for details.
 ### Repos
 [!INCLUDE [sprint-269-update-links](includes/repos/sprint-269-update-links.md)]
 
+### Pipelines
+[!INCLUDE [sprint-269-update-links](includes/pipelines/sprint-269-update-links.md)]
+
 ## Boards
 [!INCLUDE [sprint-269-update](includes/boards/sprint-269-update.md)]
 
 ## Repos
 [!INCLUDE [sprint-269-update](includes/repos/sprint-269-update.md)]
+
+## Pipelines
+[!INCLUDE [sprint-269-update](includes/pipelines/sprint-269-update.md)]
 
 ## Next steps
 
