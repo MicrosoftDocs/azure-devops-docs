@@ -2,7 +2,7 @@
 ms.topic: include
 ms.service: azure-devops-pipelines
 ms.manager: mijacobs
-ms.date: 06/04/2020
+ms.date: 02/13/2026
 ---
 
 ## Checkout
@@ -295,11 +295,11 @@ jobs:
 
 This gives the following clean options.
 
-* **outputs**: Same operation as the clean setting described in the previous checkout task, plus: Deletes and recreates `$(Build.BinariesDirectory)`. Note that the `$(Build.ArtifactStagingDirectory)` and `$(Common.TestResultsDirectory)` are always deleted and recreated prior to every build regardless of any of these settings.
+* **outputs**: Same operation as the clean setting described in the previous checkout task, plus: Deletes and recreates [`$(Build.BinariesDirectory)`](../../build/variables.md#build-variables). Note that the [`$(Build.ArtifactStagingDirectory)`](../../build/variables.md#build-variables) and [`$(Common.TestResultsDirectory)`](../../build/variables.md#build-variables) are always deleted and recreated prior to every build regardless of any of these settings.
 
-* **resources**: Deletes and recreates `$(Build.SourcesDirectory)`. This results in initializing a new, local Git repository for every build.
+* **resources**: Deletes and recreates [`$(Build.SourcesDirectory)`](../../build/variables.md#build-variables). This results in initializing a new, local Git repository for every build.
 
-* **all**: Deletes and recreates `$(Agent.BuildDirectory)`. This results in initializing a new, local Git repository for every build.
+* **all**: Deletes and recreates [`$(Agent.BuildDirectory)`](../../build/variables.md#agent-variables). This results in initializing a new, local Git repository for every build.
 
 # [Classic](#tab/classic/)
 
@@ -307,17 +307,17 @@ Select the **Clean** setting from the properties of the `Get sources` task in yo
 
 ![Select the Clean setting.](../media/github/github-clean-sources.png)
 
-* **Sources**: The build pipeline performs an undo of any changes in `$(Build.SourcesDirectory)`. More specifically, the following Git commands are executed prior to fetching the source.
+* **Sources**: The build pipeline performs an undo of any changes in [`$(Build.SourcesDirectory)`](../../build/variables.md#build-variables). More specifically, the following Git commands are executed prior to fetching the source.
   ```
   git clean -ffdx
   git reset --hard HEAD
   ```
 
-* **Sources and output directory**: Same operation as **Sources** option above, plus: Deletes and recreates `$(Build.BinariesDirectory)`. Note that the `$(Build.ArtifactStagingDirectory)` and `$(Common.TestResultsDirectory)` are always deleted and recreated prior to every build regardless of any of these settings.
+* **Sources and output directory**: Same operation as **Sources** option above, plus: Deletes and recreates [`$(Build.BinariesDirectory)`](../../build/variables.md#build-variables). Note that the [`$(Build.ArtifactStagingDirectory)`](../../build/variables.md#build-variables) and [`$(Common.TestResultsDirectory)`](../../build/variables.md#build-variables) are always deleted and recreated prior to every build regardless of any of these settings.
 
-* **Sources directory**: Deletes and recreates `$(Build.SourcesDirectory)`. This results in initializing a new, local Git repository for every build.
+* **Sources directory**: Deletes and recreates [`$(Build.SourcesDirectory)`](../../build/variables.md#build-variables). This results in initializing a new, local Git repository for every build.
 
-* **All build directories**: Deletes and recreates `$(Agent.BuildDirectory)`. This results in initializing a new, local Git repository for every build.
+* **All build directories**: Deletes and recreates [`$(Agent.BuildDirectory)`](../../build/variables.md#agent-variables). This results in initializing a new, local Git repository for every build.
 
 ---
 
@@ -355,4 +355,4 @@ The pipeline labels your sources with a [Git tag](https://git-scm.com/book/en/v2
 
 Some build variables might yield a value that isn't a valid label. For example, variables such as `$(Build.RequestedFor)` and `$(Build.DefinitionName)` can contain white space. If the value contains white space, the tag isn't created.
 
-After the sources are tagged by your build pipeline, an artifact with the Git ref `refs/tags/{tag}` is automatically added to the completed build. This gives your team additional traceability and a more user-friendly way to navigate from the build to the code that was built. The tag is considered a build artifact since it is produced by the build. When the build is deleted either manually or through a retention policy, the tag is also deleted.
+After the sources are tagged by your build pipeline, an artifact with the Git ref `refs/tags/{tag}` is automatically added to the completed build. This gives your team additional traceability and a more user-friendly way to navigate from the build to the code that was built. The tag is considered as a build artifact since it is produced by the build. When the build is deleted either manually or through a retention policy, the tag is also deleted.

@@ -16,6 +16,8 @@ ms.date: 08/07/2025
 
 [!INCLUDE [version-lt-eq-azure-devops](../../../includes/version-lt-eq-azure-devops.md)]
 
+[!INCLUDE [deprecate-office-integration](../../includes/deprecate-office-integration.md)]
+
 ::: moniker range="<=azure-devops"
 
 To support your work tracking efforts, you can use Microsoft Excel. You can either work in online mode, where you're connected to either Azure Boards or Azure DevOps Server. Or, work in offline mode, where you access the local computer and document.

@@ -8,7 +8,7 @@ ms.date: 02/13/2026
 ---
 <a id="agent-variables"></a>
 
-## Agent variables (Azure DevOps Server 2022)
+## Agent variables (Azure DevOps Server)
 
 > [!NOTE]
 > You can use agent variables as environment variables in your scripts and as parameters in your build tasks.
@@ -43,7 +43,7 @@ Example of **Agent.ContainerMapping**:
 }
 ```
 
-## Build variables (Azure DevOps Server 2022)
+## Build variables (Azure DevOps Server)
 
 <a id="build-variables"></a>
 
@@ -89,7 +89,7 @@ When you use a variable in a template that isn't marked as available in template
 | Build.TriggeredBy.ProjectID | If [another build triggers](../../process/pipeline-triggers.md) the build, then this variable is set to ID of the project that contains the triggering build. In Classic pipelines, a build completion trigger triggers this variable. <br><br>It can be used as an environment variable in a script and as a parameter in a build task. It can't be used as part of the build number or as a version control tag. <br><br>If you're triggering a YAML pipeline using `resources`, you should use the [resources variables](/azure/devops/pipelines/yaml-schema/resources-pipelines-pipeline#the-pipeline-resource-metadata-as-predefined-variables) instead. | No |
 | Common.TestResultsDirectory | The local path on the agent where the test results are created. For example: `c:\agent_work\1\TestResults`. For more information about the agent directory structure, see [Agent directory structure](../../agents/agents.md#agent-directory-structure).<br><br>It can be used as an environment variable in a script and as a parameter in a build task. It can't be used as part of the build number or as a version control tag. | No |
 
-## Pipeline variables (Azure DevOps Server 2022)
+## Pipeline variables (Azure DevOps Server)
 
 <a id="pipeline-variables"></a>
 
@@ -100,7 +100,7 @@ When you use a variable in a template that isn't marked as available in template
 > [!TIP]
 > If you're using classic release pipelines, you can use [classic releases and artifacts variables](../../release/variables.md) to store and access data throughout your pipeline.
 
-##  Deployment job variables (Azure DevOps Server 2022)
+##  Deployment job variables (Azure DevOps Server)
 
 <a id="deployment-job-variables"></a>
 
@@ -115,7 +115,7 @@ These variables are scoped to a specific [Deployment job](../../process/deployme
 | Strategy.Name | The name of the deployment strategy: `canary`, `runOnce`, or `rolling`. |
 | Strategy.CycleName | The current cycle name in a deployment. Options are `PreIteration`, `Iteration`, or `PostIteration`. |
 
-## System variables (Azure DevOps Server 2022)
+## System variables (Azure DevOps Server)
 
 <a id="system-variables"></a>
 
@@ -153,7 +153,7 @@ When you use a variable in a template that isn't marked as available in template
 | System.TimelineId | A string-based identifier for the execution details and logs of a single pipeline run. | No |
 | TF_BUILD | Set to `True` if a build task runs the script. <br><br>It can be used as an environment variable in a script and as a parameter in a build task. It can't be used as part of the build number or as a version control tag. | No |
 
-## Checks variables (Azure DevOps Server 2022)
+## Checks variables (Azure DevOps Server)
 
 <a id="checks-variables"></a>
 

@@ -16,6 +16,8 @@ title: FAQs about working in Excel connected to Azure Boards
 summary: | 
   [!INCLUDE [version-lt-eq-azure-devops](../../../includes/version-lt-eq-azure-devops.md)]  
 
+  [!INCLUDE [deprecate-office-integration](../../../boards/includes/deprecate-office-integration.md)]
+
   Find answers to common questions about using Microsoft Excel to add or modify work items in Azure DevOps.
 
   If you experience connection issues, confirm you meet the prerequisites in [Bulk add or modify work items with Excel](bulk-add-modify-work-items-excel.md). For more information, see [Azure Boards and Office integration](track-work.md).

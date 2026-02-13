@@ -5,7 +5,7 @@ ms.topic: reference
 ms.assetid: 3A1C529F-DF6B-470A-9047-2758644C3D95
 ms.author: jukullam
 author: juliakm
-ms.date: 12/12/2024
+ms.date: 02/13/2026
 ms.custom:  copilot-scenario-highlight 
 monikerRange: '<= azure-devops'
 ---
@@ -110,6 +110,12 @@ For more information, see [Review logs to diagnose pipeline issues](../troublesh
 ::: moniker range=">=azure-devops"
 
 [!INCLUDE [include](includes/variables-hosted.md)]
+
+::: moniker-end
+
+::: moniker range="= azure-devops-server"
+
+[!INCLUDE [include](includes/variables-server.md)]
 
 ::: moniker-end
 
