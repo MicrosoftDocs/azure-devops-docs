@@ -19,4 +19,4 @@ After selecting a custom agent and clicking **Create**, that agent will be used 
 
 ### Increased maximum limit for connected GitHub repositories
 
-We’ve increased the per-connection limit when linking GitHub repositories to an Azure DevOps project. The new maximum limit in the web experience is now **2,000**, matching the limit already available through the [Update REST API](/rest/api/azure/devops/wit/github-connections/update?view=azure-devops-rest-7.2&tabs=HTTP).
+We’ve increased the per-connection limit when linking GitHub repositories to an Azure DevOps project. The new maximum limit in the web experience is now **2,000**, matching the limit already available through the [Update REST API](/rest/api/azure/devops/wit/github-connections/update?view=azure-devops-rest-7.2&tabs=HTTP&preserve-view=true).

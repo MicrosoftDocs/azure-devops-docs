@@ -605,6 +605,11 @@
           expanded: false
       - name: Azure Pipelines
         items:
+        - name: "2026"
+          items:
+          - name: February 11
+            href: 2026/pipelines/sprint-269-update.md
+          expanded: false
         - name: "2025"
           items:
           - name: December 19
