@@ -12,7 +12,7 @@ monikerRange: "<=azure-devops"
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
-With Azure Artifacts, developers can enable upstream sources to consume packages from different public registries such as Google Maven Repository. Once enabled, Azure Artifacts will automatically save a copy of any package installed from the upstream. Additionally, Azure Artifacts supports other Maven upstream sources such as Maven Central, Gradle Plugins, and JitPack. In this article, you'll learn how to:
+With Azure Artifacts, developers can enable upstream sources to consume packages from different public registries such as Google Maven Repository. Once enabled, Azure Artifacts will automatically save a copy of any package installed from the upstream. Additionally, Azure Artifacts supports other Maven upstream sources such as Maven Central, Gradle Plugins, and JitPack. In this article, you learn how to:
 
 > [!div class="checklist"]    
 > * Add Google Maven Repository as an upstream source 
@@ -52,27 +52,27 @@ If you checked the *upstream sources* checkbox when creating your feed, Google M
 
 Before saving packages from Google Maven Repository, make sure you have set up your project to connect to your feed. If you haven't done so already, follow the instruction in the [project setup](project-setup-maven.md) to set up your Maven project and connect to your feed. The following example illustrates how to save the Zipflinger Library from Google Maven Repository.
 
-If you want to save/restore your packages using Azure Pipelines instead, follow the steps in the [Restore Maven packages with Azure Pipelines (YAML/Classic)](../../pipelines/packages/maven-restore.md) tutorial. 
+1. Navigate to the Google Maven Repository `https://maven.google.com`.
 
-1. Navigate to Google Maven Repository at `https://mvnrepository.com/`.
+1. Search for the *Zipflinger* library, then select the package and the version you want to use.
 
-1. Search for the Zipflinger library. Select the **Zipflinger** package, and then select the version you wish to install.
+1. Copy the **Group ID**, **Artifact ID**, and **Version** for the *Zipflinger* package.
 
-1. Copy the `<dependency>` snippet from the **Maven** tab. 
+1. Replace the placeholders in the following snippet with the values you just copied: 
 
     ```xml
     <dependency>
-        <groupId>com.android</groupId>
-        <artifactId>zipflinger</artifactId>
-        <version>8.3.0-alpha13</version>
+        <groupId>GROUP_ID</groupId>
+        <artifactId>ARTIFACT_ID</artifactId>
+        <version>VERSION</version>
     </dependency>
     ```
 
-1. Open your *pom.xml* file and paste the snippet inside your `<dependencies>` tag, and then save your file.
+1. Open your *pom.xml* file, paste the snippet inside the `<dependencies>` section, then save your file.
 
 1. Run the following command from the same path as your *pom.xml* file to install your dependencies:
 
-    ```command
+    ```
     mvn install
     ```
 
