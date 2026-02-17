@@ -3,7 +3,7 @@ title: Collaborate on code
 titleSuffix: Azure Repos
 description: What do you get with Azure Repos  
 ms.subservice: azure-devops-new-user
-ms.date: 01/02/2024
+ms.date: 02/16/2026
 ms.topic: overview
 monikerRange: '<= azure-devops'
 ---
@@ -12,6 +12,8 @@ monikerRange: '<= azure-devops'
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)] 
 [!INCLUDE [version-vs-gt-eq-2019](../../includes/version-vs-gt-eq-2019.md)]
+
+[!INCLUDE [ai-assistance-callout](../../includes/ai-assistance-callout.md)]
 
 Azure Repos is a set of version control tools that you can use to manage your code. Whether your software project is large or small, using version control as soon as possible is a good idea. 
 

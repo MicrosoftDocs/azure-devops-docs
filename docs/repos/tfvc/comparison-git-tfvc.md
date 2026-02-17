@@ -5,7 +5,7 @@ description: Choose which type of version control to use in Azure Repos.
 ms.assetid: A4D7295A-22AB-4990-BE68-EF81A1C31F01
 ms.service: azure-devops-repos
 ms.topic: overview
-ms.date: 10/22/2022
+ms.date: 02/16/2026
 monikerRange: '<= azure-devops'
 ms.subservice: azure-devops-repos-tfvc
 ---
@@ -16,6 +16,8 @@ ms.subservice: azure-devops-repos-tfvc
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 [!INCLUDE [version-vs-gt-eq-2019](../../includes/version-vs-gt-eq-2019.md)]
+
+[!INCLUDE [ai-assistance-callout](../../includes/ai-assistance-callout.md)]
 
 Whether your software project is large or small, using version control as soon as possible is a good idea. Azure Repos supports two types of version control: [Git](../../repos/git/gitquickstart.md)
 and [Team Foundation Version Control](./what-is-tfvc.md) (TFVC).

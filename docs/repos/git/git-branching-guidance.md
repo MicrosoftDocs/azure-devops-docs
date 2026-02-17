@@ -5,7 +5,7 @@ description: Git branching guidance
 ms.assetid: 9445be16-3bf4-46ff-bef8-52b72da03d0a
 ms.service: azure-devops-repos
 ms.topic: overview
-ms.date: 09/18/2020
+ms.date: 02/16/2026
 monikerRange: '<= azure-devops'
 ms.subservice: azure-devops-repos-git
 ---
@@ -13,6 +13,8 @@ ms.subservice: azure-devops-repos-git
 # Adopt a Git branching strategy
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
+
+[!INCLUDE [ai-assistance-callout](../../includes/ai-assistance-callout.md)]
 
 Distributed version control systems like Git give you flexibility in how you use version control to share and manage code.
 Your team should find a balance between this flexibility and the need to collaborate and share code in a consistent manner.

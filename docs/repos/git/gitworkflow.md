@@ -5,7 +5,7 @@ description: Learn about version control in Git with Azure DevOps.
 ms.assetid: 0270b0fa-461b-4079-9703-cdcf53bdf39f
 ms.service: azure-devops-repos
 ms.topic: overview
-ms.date: 02/14/2025
+ms.date: 02/16/2026
 ai-usage: ai-assisted
 monikerRange: '<= azure-devops'
 ms.subservice: azure-devops-repos-git
@@ -14,6 +14,8 @@ ms.subservice: azure-devops-repos-git
 # Git workflow
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
+
+[!INCLUDE [ai-assistance-callout](../../includes/ai-assistance-callout.md)]
 
 Use version control to save your work and coordinate code changes across your team. Even if you're a single developer, version control helps you stay organized as you fix bugs and develop new features. It maintains a history of your development, allowing you to review and roll back to any version of your code with ease.
 

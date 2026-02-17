@@ -5,7 +5,7 @@ description: Learn how to authenticate with Azure Repos using Microsoft Entra OA
 ms.assetid: 138f12d0-e3fd-4fde-a727-1b39d45c05c4
 ms.service: azure-devops-repos
 ms.topic: overview
-ms.date: 07/02/2025
+ms.date: 02/16/2026
 monikerRange: '<= azure-devops'
 ms.subservice: azure-devops-repos-git
 ms.custom: sfi-ropc-nochange
@@ -15,6 +15,8 @@ ms.custom: sfi-ropc-nochange
 # Authentication with Azure Repos
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
+
+[!INCLUDE [ai-assistance-callout](../../includes/ai-assistance-callout.md)]
 
 Secure authentication is fundamental to protecting your Azure Repos and Azure DevOps Server Git repositories. With multiple authentication options available—Microsoft Entra OAuth tokens, Personal Access Tokens, and SSH keys—choosing the right method ensures both security and productivity for your development workflow.
 

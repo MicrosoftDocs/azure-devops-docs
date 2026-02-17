@@ -5,7 +5,7 @@ description: Learn about branch policies in Azure DevOps Services & TFS
 ms.service: azure-devops-repos
 ms.assetid: 36A4986E-BFB8-422B-BFC9-8A0CB75D0603    
 ms.topic: overview
-ms.date: 06/01/2020
+ms.date: 02/16/2026
 monikerRange: '<= azure-devops'
 ms.subservice: azure-devops-repos-git
 ---
@@ -13,6 +13,8 @@ ms.subservice: azure-devops-repos-git
 # About branches and branch policies
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
+
+[!INCLUDE [ai-assistance-callout](../../includes/ai-assistance-callout.md)]
 
 Branch policies are an important part of the Git workflow and enable you to:
 
