@@ -10,7 +10,7 @@ ms.topic: reference
 ms.author: chcomley
 author: chcomley
 monikerRange: '<= azure-devops'
-ms.date: 02/10/2026
+ms.date: 02/17/2026
 ---
 
 # witAdmin: Customize and manage objects for tracking work 
@@ -30,6 +30,8 @@ The following diagram shows the scope of work tracking objects. Categories and w
 To run most witadmin commands, you must be a member of the **Project Administrators** or **Project Collection Administrators** group. For more information, see [Change project collection-level permissions](../../organizations/security/change-organization-collection-level-permissions.md). 
 
 [!INCLUDE [temp](../../includes/witadmin-run-tool.md)]  
+
+[!INCLUDE [ai-assistance-callout](../../includes/ai-assistance-callout.md)]
 
 <a name="global"></a> 
 

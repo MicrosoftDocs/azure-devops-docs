@@ -7,7 +7,7 @@ ms.topic: overview
 ms.author: chcomley
 author: chcomley
 monikerRange: '<= azure-devops'
-ms.date: 03/05/2025
+ms.date: 02/17/2026
 ---
 
 # Manage Agile requirements 
@@ -16,15 +16,17 @@ ms.date: 03/05/2025
 
 In this article, learn the key concepts and tasks associated with managing project requirements with Agile tools and features in Azure DevOps.
 
-> [!TIP]
-> *Requirements management is a continuous process throughout a project lifecycle&mdash;encompassing the processes of documenting, analyzing, prioritizing, tracking, and collaborating with stakeholders to agree on work to be performed. A single requirement corresponds to a capability which a project outcome&mdash;product, service, architecture, performance&mdash;should conform.*
+[!INCLUDE [ai-assistance-callout](../includes/ai-assistance-callout.md)]
 
 ## Capture requirements  
 
 Use work items to capture requirements. Each work item has a type, which depends on the [process you choose](../boards/work-items/guidance/choose-process.md). You can also create a custom work item type.
 
 [!INCLUDE [temp](../boards/includes/note-requirements-terms.md)] 
- 
+
+> [!TIP]
+> *Requirements management is a continuous process throughout a project lifecycle&mdash;encompassing the processes of documenting, analyzing, prioritizing, tracking, and collaborating with stakeholders to agree on work to be performed. A single requirement corresponds to a capability which a project outcome&mdash;product, service, architecture, performance&mdash;should conform.*
+
 ### Work item types 
 
 Work items let you capture different information and workflows. Each work item has a type, which depends on the process you choose. You can use these default work item types for requirements and defects:

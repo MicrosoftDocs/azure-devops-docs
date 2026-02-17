@@ -10,7 +10,7 @@ ms.author: chcomley
 author: chcomley
 ms.topic: overview
 monikerRange: '<= azure-devops'
-ms.date: 08/13/2025
+ms.date: 02/17/2026
 ---
 
 # Default permissions quick reference
@@ -20,6 +20,8 @@ ms.date: 08/13/2025
 To use Azure DevOps features, users must be added to a security group with the appropriate permissions and granted access to the web portal. Limitations to select features are based on the *access level* and *security group* to which a user is assigned.
 
 The **Basic** access level and all higher levels support full access to most Azure DevOps services, except for Azure Test Plans. **Stakeholder** access level provides partial support for Azure Boards and Azure Pipelines. To learn more about access levels, see [About access levels](access-levels.md) and [Stakeholder access quick reference](stakeholder-access.md).
+
+[!INCLUDE [ai-assistance-callout](../../includes/ai-assistance-callout.md)]
 
 ## Assign users to a security group
 

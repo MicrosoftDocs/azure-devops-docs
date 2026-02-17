@@ -9,7 +9,7 @@ ms.author: chcomley
 author: chcomley
 ms.topic: how-to
 monikerRange: '<= azure-devops'
-ms.date: 03/12/2025
+ms.date: 02/17/2026
 #customer intent: As an Azure Boards user, I want to create charts to track the status of work in progress.
 ---
 
@@ -36,6 +36,8 @@ This article describes how to configure work tracking query charts. For more inf
 The following image shows two charts created from the same flat-list query.
 
 :::image type="content" source="media/overview/active-bug-charts-on-dashboards-2019.png" alt-text="Screenshot of Active bug charts added to dashboards.":::
+
+[!INCLUDE [ai-assistance-callout](../../includes/ai-assistance-callout.md)]
 
 ## Prerequisites
 

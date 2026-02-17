@@ -8,7 +8,7 @@ ms.custom: content-health, FY22Q3, freshness
 monikerRange: 'azure-devops'
 ms.author: chcomley
 author: chcomley
-ms.date: 04/11/2025
+ms.date: 02/17/2026
 ms.topic: best-practice
 ---
 
@@ -19,6 +19,8 @@ ms.topic: best-practice
 [!INCLUDE [version-eq-azure-devops](../../includes/version-eq-azure-devops.md)]
 
 Tools and integrations between services improve efficiencies for Azure DevOps Services. If you aren't careful, automated tools can get out of control and execute a high rate of requests. The requests can cause Azure DevOps to enforce [rate limits](./rate-limits.md) on your organization. To help reduce your risk of hitting rate limits, follow these best practices when you use the REST APIs to integrate with Azure DevOps.
+
+[!INCLUDE [ai-assistance-callout](../../includes/ai-assistance-callout.md)]
 
 ## Push only actionable work items
 

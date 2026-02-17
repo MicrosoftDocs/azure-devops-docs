@@ -7,7 +7,7 @@ ms.custom: cross-service, cross-project
 ms.topic: how-to
 ms.author: chcomley
 author: chcomley
-ms.date: 08/01/2025
+ms.date: 02/17/2026
 monikerRange: '<= azure-devops'
 ---
 
@@ -16,6 +16,8 @@ monikerRange: '<= azure-devops'
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 Azure DevOps provides powerful search capabilities that help you quickly find work items, code files, wiki pages, and packages across your projects and organization. Use keywords, wildcards, and advanced search filters to locate exactly what you need.
+
+[!INCLUDE [ai-assistance-callout](../../includes/ai-assistance-callout.md)]
 
 ## What you can search
 

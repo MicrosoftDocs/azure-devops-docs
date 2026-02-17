@@ -10,7 +10,7 @@ ms.author: chcomley
 author: chcomley
 monikerRange: '<= azure-devops'
 ai-usage: ai-assisted
-ms.date: 02/10/2025
+ms.date: 02/17/2026
 ---
 
 # About permissions and security groups
@@ -22,6 +22,8 @@ In this article, learn about access levels and permissions via inheritance, secu
 For an overview of default permissions, see [Default permissions quick reference](permissions-access.md).
 
 For more information, see [Security overview](security-overview.md).
+
+[!INCLUDE [ai-assistance-callout](../../includes/ai-assistance-callout.md)]
 
 ## Access levels 
 
