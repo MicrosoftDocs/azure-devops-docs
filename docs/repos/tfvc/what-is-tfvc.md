@@ -5,7 +5,7 @@ description: Find out how to get started with Team Foundation Version Control (T
 ms.assetid: 1d629052-c65d-4c5d-81eb-eaa4413fe285
 ms.service: azure-devops-repos
 ms.topic: overview
-ms.date: 02/16/2026
+ms.date: 02/17/2026
 monikerRange: '<= azure-devops'
 ms.subservice: azure-devops-repos-tfvc
 ---
@@ -16,13 +16,13 @@ ms.subservice: azure-devops-repos-tfvc
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)] 
 [!INCLUDE [version-vs-gt-eq-2019.md](../../includes/version-vs-gt-eq-2019.md)]
 
-[!INCLUDE [ai-assistance-callout](../../includes/ai-assistance-callout.md)]
-
 Whether your software project is large or small, using version control as soon as possible is a good idea. 
 Version control systems consist of software that helps you track changes you make in your code over time. As you edit your code, you tell the version control system to take a snapshot of your files. 
 The version control system saves that snapshot permanently so you can recall it later if you need it.
 
 Azure DevOps Services and TFS provide two models of version control: [Git](../../repos/git/index.yml), which is distributed version control, and [Team Foundation Version Control (TFVC)](#team-foundation-version-control), which is centralized version control. This article provides an overview and a starting point for using TFVC. If you're deciding which type of Azure DevOps Services/TFS version control to use, see [Choosing the right version control for your project](comparison-git-tfvc.md).
+
+[!INCLUDE [ai-assistance-callout](../../includes/ai-assistance-callout.md)]
 
 ## Why use version control?
 

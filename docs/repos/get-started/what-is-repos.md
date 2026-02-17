@@ -13,8 +13,6 @@ monikerRange: '<= azure-devops'
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)] 
 [!INCLUDE [version-vs-gt-eq-2019](../../includes/version-vs-gt-eq-2019.md)]
 
-[!INCLUDE [ai-assistance-callout](../../includes/ai-assistance-callout.md)]
-
 Azure Repos is a set of version control tools that you can use to manage your code. Whether your software project is large or small, using version control as soon as possible is a good idea. 
 
 Version control systems are software that helps you track changes you make in your code over time. As you edit your code, you tell the version control system to take a snapshot of your files. The version control system saves that snapshot permanently so you can recall it later if you need it. Use version control to save your work and coordinate code changes across your team. 
@@ -25,6 +23,8 @@ Azure Repos provides two types of version control:
 
 - [Git](#git): distributed version control
 - [Team Foundation Version Control (TFVC)](#tfvc): centralized version control
+
+[!INCLUDE [ai-assistance-callout](../../includes/ai-assistance-callout.md)]
 
 ## Git
 

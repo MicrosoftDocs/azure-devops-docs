@@ -6,7 +6,7 @@ description: Follow these steps to share code within a Git repo and project in A
 ms.subservice: azure-devops-new-user
 ms.author: chcomley
 author: chcomley
-ms.date: 01/13/2026
+ms.date: 02/17/2026
 ms.topic: how-to
 monikerRange: '<= azure-devops'
 ---
@@ -16,6 +16,8 @@ monikerRange: '<= azure-devops'
 [!INCLUDE [version-lt-eq-azure-devops](../includes/version-lt-eq-azure-devops.md)]
 
 Share your code with others in Azure DevOps when you use a Git repository. 
+
+[!INCLUDE [ai-assistance-callout](../includes/ai-assistance-callout.md)]
 
 ## Prerequisites
 
