@@ -9,7 +9,7 @@ ms.topic: overview
 ms.author: chcomley
 author: chcomley
 monikerRange: '<= azure-devops'
-ms.date: 03/05/2025
+ms.date: 02/17/2026
 ---
  
 
@@ -22,6 +22,8 @@ With Azure DevOps, you can connect to and collaborate across its core services. 
 Links to more information:
 - [Power Automate, Azure DevOps](https://powerautomate.microsoft.com/connectors/details/shared_visualstudioteamservices/azure-devops/)
 - [Power Automate templates for Azure DevOps](https://powerautomate.microsoft.com/connectors/details/shared_visualstudioteamservices/azure-devops/)
+
+[!INCLUDE [ai-assistance-callout](../includes/ai-assistance-callout.md)]
 
 ## Collaboration across Azure DevOps 
 

@@ -10,7 +10,7 @@ author: chcomley
 ms.topic: overview
 monikerRange: '<= azure-devops'
 ai-usage: ai-assisted
-ms.date: 10/27/2025
+ms.date: 02/17/2026
 ---
 
 # Customize your work tracking experience 
@@ -20,6 +20,8 @@ ms.date: 10/27/2025
 As you plan and track your project, consider configuring features or customizing your experience to align with your team's tracking requirements. The approach for customizing projects, which affects all teams, depends on the process model you use.
 
 This article gives you an overview of the customizations available and how they vary across the three process models. For specific guidance on customizations to support business decisions, see [Configure and customize Azure Boards](../boards/configure-customize.md). For more information, see [What is Azure Boards?](../boards/get-started/what-is-azure-boards.md) and [About work items](../boards/work-items/about-work-items.md). 
+
+[!INCLUDE [ai-assistance-callout](../includes/ai-assistance-callout.md)]
 
 ## Understanding customization levels
 

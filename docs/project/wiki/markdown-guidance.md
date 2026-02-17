@@ -11,7 +11,7 @@ author: chcomley
 ms.reviewer: gopinach
 ms.topic: concept-article
 monikerRange: '<= azure-devops'
-ms.date: 01/07/2026
+ms.date: 02/17/2026
 #customer intent: As an Azure DevOps developer, I want to use Markdown to create tables, lists, headings, and more, so I can share my project information in pull requests, README files, dashboards, and wikis.
 ---
 
@@ -24,6 +24,8 @@ ms.date: 01/07/2026
 This article describes the basic syntax for using Markdown (*.md*) format with Azure DevOps features, including [Wiki pages](#markdown-in-an-azure-devops-wiki). Markdown syntax lets you add special formatting to your page content, like headings, lists, tables, and images. Use Markdown to format your README files, dashboards, pull request content, and more.
 
 There are two formatting options: common [Markdown conventions](https://daringfireball.net/projects/markdown/syntax), and [Markdown extensions for GitHub](https://docs.github.com/get-started/writing-on-github).
+
+[!INCLUDE [ai-assistance-callout](../../includes/ai-assistance-callout.md)]
 
 ## Support for Azure DevOps features
 

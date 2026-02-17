@@ -10,7 +10,7 @@ author: chcomley
 ms.topic: overview
 ai-usage: ai-assisted
 monikerRange: '<= azure-devops'
-ms.date: 03/12/2025
+ms.date: 02/17/2026
 #customer intent:  As an administrator or team member, I want to understand how using a dashboard can provide visibility into projects for my team.
 ---
 
@@ -23,6 +23,8 @@ Gain visibility into your team's progress by adding one or more widgets or chart
 If you're just starting out, read [Add, rename, and delete dashboards](dashboards.md). Looking for instructions on a specific task, in-context chart, widget, or report? See [Dashboards, charts, and quick reference](quick-ref.md). For more information, see the [Reporting roadmap](../powerbi/reporting-roadmap.md).
 
 [!INCLUDE [version selector](../../includes/version-selector.md)]
+
+[!INCLUDE [ai-assistance-callout](../../includes/ai-assistance-callout.md)]
 
 ## Supported capabilities, permissions, and access
 

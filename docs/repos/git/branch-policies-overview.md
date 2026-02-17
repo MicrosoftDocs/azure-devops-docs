@@ -5,7 +5,7 @@ description: Learn about branch policies in Azure DevOps Services & TFS
 ms.service: azure-devops-repos
 ms.assetid: 36A4986E-BFB8-422B-BFC9-8A0CB75D0603    
 ms.topic: overview
-ms.date: 06/01/2020
+ms.date: 02/17/2026
 monikerRange: '<= azure-devops'
 ms.subservice: azure-devops-repos-git
 ---
@@ -120,7 +120,7 @@ The following table summarizes the policies you can define to customize a branch
    :::column-end:::
 :::row-end:::
 
- 
+[!INCLUDE [ai-assistance-callout](../../includes/ai-assistance-callout.md)]
 
 ## Adopt a Git branching strategy
 

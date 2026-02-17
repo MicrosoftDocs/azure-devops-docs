@@ -7,7 +7,7 @@ ms.topic: overview
 ms.author: chcomley
 author: chcomley
 monikerRange: '<= azure-devops'
-ms.date: 06/16/2025
+ms.date: 02/17/2026
 ms.custom: sfi-image-nochange
 ---
 
@@ -33,6 +33,8 @@ You configure resources either for yourself or for your team, project, or projec
 If you're just getting started as a Project Administrator, see [Get started as an administrator](../../user-guide/project-admin-tutorial.md). 
 
 ::: moniker-end  
+
+[!INCLUDE [ai-assistance-callout](../../includes/ai-assistance-callout.md)]
 
 ## User settings
 

@@ -141,10 +141,10 @@ If you still need to use an image scheduled to be deprecated after its deprecati
 ## FAQ
 
 * [How to know if my Azure DevOps organization or pipelines are impacted?](#how-to-know-if-my-azure-devops-organization-or-pipelines-are-impacted)
-* [I'm using an image scheduled to be deprecated in self-hosted agents. Is my pipeline impacted?](#i-am-using-an-image-scheduled-to-be-deprecated-in-self-hosted-agents-is-my-pipeline-impacted)
-* [I'm using an image scheduled to be deprecated in Managed DevOps Pools. Is my pipeline impacted?](#i-am-using-an-image-scheduled-to-be-deprecated-in-managed-devops-pools-is-my-pipeline-impacted)
-* [I'm using an image scheduled to be deprecated in classic pipeline. Is my pipeline impacted?](#i-am-using-an-image-scheduled-to-be-deprecated-in-classic-pipeline-is-my-pipeline-impacted)
-* [I'm using a container image with an image scheduled to be deprecated. Is my pipeline impacted?](#i-am-using-a-container-image-with-an-image-scheduled-to-be-deprecated-is-my-pipeline-impacted)
+* [I'm using an image scheduled to be deprecated in self-hosted agents. Is my pipeline impacted?](#im-using-an-image-scheduled-to-be-deprecated-in-self-hosted-agents-is-my-pipeline-impacted)
+* [I'm using an image scheduled to be deprecated in Managed DevOps Pools. Is my pipeline impacted?](#im-using-an-image-scheduled-to-be-deprecated-in-managed-devops-pools-is-my-pipeline-impacted)
+* [I'm using an image scheduled to be deprecated in classic pipeline. Is my pipeline impacted?](#im-using-an-image-scheduled-to-be-deprecated-in-classic-pipeline-is-my-pipeline-impacted)
+* [I'm using a container image with an image scheduled to be deprecated. Is my pipeline impacted?](#im-using-a-container-image-with-an-image-scheduled-to-be-deprecated-is-my-pipeline-impacted)
 
 ###### How to know if my Azure DevOps organization or pipelines are impacted?
 
