@@ -60,8 +60,8 @@ The following table shows default permissions for collaboration tools including 
 |Powerful work tracking search     | ✔️ | ✔️ | ✔️ | ✔️ | ✔️  |
 
 **Notes:**
-1. Stakeholders can view project READMEs, but not READMEs defined for a repository.
-1. Project Administrators or Team Administrators with contribute permission can publish code as wiki. Project Administrators have this permission by default.
+- Stakeholders can view project READMEs, but not READMEs defined for a repository.
+- Project Administrators or Team Administrators with contribute permission can publish code as wiki. Project Administrators have this permission by default.
 
 ## Manage permissions for project wikis
 
