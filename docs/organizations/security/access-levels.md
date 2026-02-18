@@ -8,7 +8,7 @@ ms.topic: overview
 ms.author: chcomley
 author: chcomley
 monikerRange: '<= azure-devops'
-ms.date: 01/14/2026
+ms.date: 02/17/2026
 ---
 
 # About access levels
@@ -20,6 +20,8 @@ Access levels in Azure DevOps control which web portal features are available or
 [!INCLUDE [temp](../../includes/version-selector.md)] 
 
 When you add a user or group to a team or project, they automatically gain access to the features associated with the default access level and security group. For most users, assigning them to the **Basic** access level and the **Contributors** security group provides access to most features. For a simplified overview of the permissions assigned to the most common groups **Readers**, **Contributors**, and **Project Administrators**, see [Default permissions](permissions-access.md).
+
+[!INCLUDE [ai-assistance-callout](../../includes/ai-assistance-callout.md)]
 
 ## Supported access levels
 

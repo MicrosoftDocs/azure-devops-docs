@@ -8,7 +8,7 @@ ms.author: chcomley
 author: chcomley
 ms.topic: concept-article
 monikerRange: '<= azure-devops'
-ms.date: 04/25/2025
+ms.date: 02/17/2026
 #customer intent: As a developer, I want to understand the tools and clients that support connecting to Azure DevOps, so I can use the appropriate tools for my development.
 ---
 
@@ -17,6 +17,8 @@ ms.date: 04/25/2025
 [!INCLUDE [version-lt-eq-azure-devops](../includes/version-lt-eq-azure-devops.md)]
 
 The Microsoft platform of software development tools is well established. The Visual Basic and Visual Studio integrated development environment (IDE) supports teams in their software development, and offers a catalog of plug-ins to extend the product functionality. In particular, the Team Explorer plug-in allows the Visual Studio client to connect to Azure DevOps to support source control, work tracking, build, and test operations. This article describes various tools and clients you can use to connect with Azure DevOps and enhance your development.
+
+[!INCLUDE [ai-assistance-callout](../includes/ai-assistance-callout.md)]
 
 ## Desktop client developer tools
 

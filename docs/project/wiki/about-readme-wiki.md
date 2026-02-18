@@ -9,7 +9,7 @@ ms.author: chcomley
 author: chcomley
 ms.reviewer: gopinach
 ms.topic: concept-article
-ms.date: 05/19/2025
+ms.date: 02/17/2026
 #customer intent: As an Azure DevOps developer, I want to explore options for sharing information about my project and Git repositories, so I can best support my project users and contributors.
 ---
 
@@ -18,6 +18,8 @@ ms.date: 05/19/2025
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 You can support your team and project contributors by using [Markdown](https://en.wikipedia.org/wiki/Markdown) to add rich formatting, tables, and images to your team project. The Markdown format enhances team project wiki pages, content you add to a dashboard, your team project README file, or other repository README files.  
+
+[!INCLUDE [ai-assistance-callout](../../includes/ai-assistance-callout.md)]
 
 ## Set up a project wiki
 

@@ -7,7 +7,7 @@ ms.author: chcomley
 author: chcomley
 ms.topic: overview
 monikerRange: '<= azure-devops'
-ms.date: 02/05/2025
+ms.date: 02/17/2026
 ---
 
 # Manage your organization or collection
@@ -23,6 +23,8 @@ Each organization is associated with one and only one collection. If you need to
 ::: moniker range="< azure-devops"
 When you install Azure DevOps Server, you automatically create a default collection. If you need to create another project collection, see [Manage project collections](/azure/devops/server/admin/manage-project-collections).
 ::: moniker-end
+
+[!INCLUDE [ai-assistance-callout](../includes/ai-assistance-callout.md)]
 
 ## Prerequisites
 

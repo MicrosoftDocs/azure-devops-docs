@@ -9,7 +9,7 @@ ms.topic: overview
 ms.author: chcomley
 author: chcomley
 monikerRange: '<= azure-devops'
-ms.date: 03/12/2025
+ms.date: 02/17/2026
 #customer intent: As an administrator or team member, I want to understand the widgets I can use on a team or project dashboard in Azure DevOps.
 ---
 
@@ -24,6 +24,8 @@ For example, you can add the **Build History** widget from the dashboard's **Add
 :::image type="content" source="media/widget-build-history-chart.png" alt-text="Screenshot shows the Build History Widget which includes an icon and description.":::
 
 This article provides a quick reference of all out-of-box (OOB) widgets that you can add to your dashboard. In addition to these widgets, you might find more widgets in the [Marketplace](#marketplace) or create your own.
+
+[!INCLUDE [ai-assistance-callout](../../includes/ai-assistance-callout.md)]
 
 ## Supported OOB widgets
 

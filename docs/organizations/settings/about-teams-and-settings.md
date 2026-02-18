@@ -10,7 +10,7 @@ author: chcomley
 ms.topic: overview
 ai-usage: ai-assisted
 monikerRange: '<= azure-devops'
-ms.date: 12/23/2024
+ms.date: 02/17/2026
 ---
 
 # About teams and Agile tools
@@ -31,6 +31,8 @@ The following scenarios apply:
 - Each management team, which focuses on a set of features, can choose several area paths to monitor.
 - Each feature team has its distinct backlog to plan, determine priority, and track work.
 - Portfolio or product owners can create their vision, roadmap, and goals for each release, monitor progress across their portfolio of projects, and manage risks and dependencies. For more information, see [Portfolio management](../../boards/plans/portfolio-management.md).
+
+[!INCLUDE [ai-assistance-callout](../../includes/ai-assistance-callout.md)]
 
 ## About area paths, feature teams, and management teams 
 

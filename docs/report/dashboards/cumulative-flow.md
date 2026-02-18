@@ -9,7 +9,7 @@ ms.author: chcomley
 author: chcomley
 ms.topic: tutorial
 monikerRange: '<= azure-devops' 
-ms.date: 05/08/2025
+ms.date: 02/17/2026
 # customer intent: As a team member, I want to find out how to use cumulative flow diagrams (CFDs) so that I can monitor the lead time, work in progress, and workflow of my system.
 ---
 
@@ -31,6 +31,8 @@ In this tutorial, you:
 > [!div class="checklist"]
 > * View and configure the CFD in-context report (Analytics)
 > * Configure the Cumulative Flow Diagram widget (Analytics)
+
+[!INCLUDE [ai-assistance-callout](../../includes/ai-assistance-callout.md)]
 
 ## Prerequisites
 

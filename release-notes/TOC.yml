@@ -993,6 +993,8 @@
         items:
         - name: "2026"
           items:
+          - name: February 11
+            href: 2026/ghazdo/sprint-269-update.md
           - name: January 26
             href: 2026/ghazdo/sprint-268-update.md
           expanded: false

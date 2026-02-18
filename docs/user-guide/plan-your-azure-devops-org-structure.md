@@ -9,7 +9,7 @@ robots: NOINDEX, NOFOLLOW
 ai-usage: ai-assisted
 ms.topic: overview
 monikerRange: '<= azure-devops'
-ms.date: 01/13/2026
+ms.date: 02/17/2026
 ---
 
 # Plan your organizational structure
@@ -17,6 +17,8 @@ ms.date: 01/13/2026
 [!INCLUDE [version-lt-eq-azure-devops](../includes/version-lt-eq-azure-devops.md)]
 
 Use your business structure as a guide for the number of organizations, projects, and teams you create in Azure DevOps. This comprehensive planning guide helps you design optimal organizational structures that align development workflows with business objectives.  
+
+[!INCLUDE [ai-assistance-callout](../includes/ai-assistance-callout.md)]
 
 ## Strategic planning framework
 

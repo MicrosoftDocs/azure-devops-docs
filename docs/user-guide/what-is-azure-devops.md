@@ -8,7 +8,7 @@ ms.subservice: azure-devops-new-user
 ms.author: chcomley
 author: chcomley
 monikerRange: '<= azure-devops'
-ms.date: 07/18/2025
+ms.date: 02/17/2026
 ms.update-cycle: 1095-days
 #customer intent: As a developer, I want to understand Azure DevOps so I can plan, code, collaborate, and ship my applications.
 ---
@@ -28,6 +28,8 @@ Azure DevOps offers a spectrum of service models to accommodate the unique needs
 - **Client/server model delivery**: Azure DevOps operates on a client/server model, offering flexibility in how you interact with its services. The web interface provides a convenient way to utilize most services and is compatible with all major browsers. Additionally, certain services like source control, build pipelines, and work tracking offer client-based management options for enhanced control.
 
 - **Flexible and scalable service options**: Azure DevOps caters to teams of all sizes by offering a range of service options. For small teams, many services are complimentary, ensuring that you have access to robust project management tools without any initial investment. For larger teams or more advanced needs, services are accessible through a subscription model or on a pay-per-use basis.
+
+[!INCLUDE [ai-assistance-callout](../includes/ai-assistance-callout.md)]
 
 ## Core services
 
