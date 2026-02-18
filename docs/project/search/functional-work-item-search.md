@@ -8,7 +8,7 @@ ai-usage: ai-assisted
 ms.topic: overview
 ms.author: chcomley
 author: chcomley
-ms.date: 10/17/2024
+ms.date: 02/18/2026
 monikerRange: '<= azure-devops'
 ---
 
@@ -26,7 +26,7 @@ Work Item Search lets you do the following tasks and more.
 |[Search across all work item fields](#search-across-all-fields)   | Quickly and easily find relevant work items by searching across all work item fields, including custom fields. Use a full text search across all fields to efficiently locate relevant work items. The snippet view indicates where matches were found.        |
 |[Search in specific fields](#quick-filters-for-matching-in-specific-fields)  | Use the quick in-line search filters to narrow down to a list of work items in seconds. Use the filters on any work item field. The list of suggestions helps complete your search faster. For example, a search such as **AssignedTo:Chris WorkItemType:Bug State:Active** finds all active bugs assigned to a user named Chris.        |
 |Search across test   |Search across Test Plans, Test Suites, and other test work item types.         |
-|[Take advantage of integration with work item tracking](#search-by-work-item-id)   | The Work Item Search interface integrates with familiar controls for managing your work items; letting you view, edit, comment, share, and more.        |
+|[Take advantage of integration with work item tracking](#search-by-work-item-id)   | The Work Item Search interface integrates with familiar controls for managing your work items, letting you view, edit, comment, share, and more.        |
 
 ## Prerequisites
 
@@ -48,12 +48,12 @@ Search all work item fields, including custom ones, for natural searches. The fo
 
 <img alt="Screenshot of Searching across all work item fields." src="media/work-item-search-get-started/NewSearchAcross.gif" width="710" height="400" border="0"></img>  
 
-- Use simple search strings for words or phrases. Work item search matches derived forms of your search terms; for example, a search for "updating" also finds instances of the word "updated" and "update." Searches aren't case-sensitive.
+- Use simple search strings for words or phrases. Work item search matches derived forms of your search terms. For example, a search for "updating" also finds instances of the word "updated" and "update." Searches aren't case-sensitive.
 - Search from a project to, by default, search only within that project. 
 - Search from inside a team to, by default, search only within the default area path of that team. 
   - Select a project to view a list of area paths in that project for which you have Read access.
   - Select area paths in the tree to narrow your search if necessary.
-- View hit counts for all projects, even one that you don't select. 
+- View hit counts for all projects, even ones that you don't select. 
 - Open the search results in a new browser tab from either the main search function or by selecting **Ctrl** + **Shift** + **Enter**.
 
 ## Best practices
@@ -61,11 +61,11 @@ Search all work item fields, including custom ones, for natural searches. The fo
 - **Text search across all fields:** Use a text search across all fields to efficiently locate relevant work items. This search is useful for finding work items with similar exception traces.
 - **Quick in-line search filters:** Use quick in-line search filters on any work item field to narrow down the list of work items in seconds. The list of suggestions helps you complete your search faster.
 
-## Compare search vs. managed work item queries
+## Compare search and managed work item queries
 
 The main search function and managed queries are two ways to find and list work items. For a single work item, use the main search. For a list of work items that you want to triage, update, chart, or share, use a managed query.
 
-You can search more fields with the main search function than with managed queries. 
+You can search more fields by using the main search function than by using managed queries. 
 
 ---
 :::row:::
@@ -123,24 +123,24 @@ For more information, see the following articles:
    * `s:` for **State** 
    * `t:` for **Work item type**
  
-2. Start entering the name of a field in your work items; for example, enter `ta`.
+1. Start entering the name of a field in your work items. For example, enter `ta`.
 
    :::image type="content" source="media/work-item-search-get-started/dyna-dropdown.png" alt-text="Quick filters as you enter the name of a field":::
 
    The dropdown list shows work item field name suggestions that match user input. These suggestions help you complete the search faster. For example, a search such as `tags:Critical` finds all work items tagged 'Critical.' 
 
-3. Add more filters to further narrow your search, and use Boolean operators to combine terms if necessary. For example, **a: Chris t: Bug s: Active** finds all active bugs assigned to a user named Chris.
+1. Add more filters to further narrow your search, and use Boolean operators to combine terms if necessary. For example, **a: Chris t: Bug s: Active** finds all active bugs assigned to a user named Chris.
 
-4. Narrow your search to specific types and states, by using the selector lists at the top of the results page.
-5. Widen your search across all projects, or narrow it to specific types and states. Use the filter to show the selector lists.
+1. Narrow your search to specific types and states, by using the selector lists at the top of the results page.
+1. Widen your search across all projects, or narrow it to specific types and states. Use the filter to show the selector lists.
 
    ![Screenshot showing the filter lists.](media/shared/show-filters.png)    
 
-6. Select the criteria you want in the drop-down selector lists, or search across the entire organization.
+1. Select the criteria you want in the drop-down selector lists, or search across the entire organization.
 
    ![Screenshot of selector drop-down lists.](media/work-item-search-get-started/area-selectors.png)    
 
-7. Sort the results with the drop-down list of field names, work item types, or by relevance.
+1. Sort the results with the drop-down list of field names, work item types, or by relevance.
 
    ![Screenshot showing sort drop-down list.](media/work-item-search-get-started/sort-order.png)    
 
@@ -174,9 +174,9 @@ Narrow the search to a specific location using the `proj`, `area`, `iteration`, 
 |Enclose the argument to the filter in double-quotes if it contains a space.  | `Wiki path:"Contoso/Windows Phones and Devices/Services"`        |
 |Finds backlog comments | `comment:todo` |
 
-## See more of the work item
+## View more of the work item
 
-You can quickly get a full screen view of the selected work item using ![Expand the file to fullscreen](media/shared/fullscreen-icon-expand.png) **expand** and ![Shrink the file to a window](media/shared/fullscreen-icon-shrink.png) **shrink** in the toolbar. However, another way to see more of the work item, while you can still
+You can quickly get a full screen view of the selected work item using ![Expand the file to fullscreen](media/shared/fullscreen-icon-expand.png) **expand** and ![Shrink the file to a window](media/shared/fullscreen-icon-shrink.png) **shrink** in the toolbar. However, another way to view more of the work item, while you can still
 select work items from the list of matching results, is to hide the left column filter pane
 by choosing **&lt;** at the top left of the column. Use **&gt;** to restore the filter pane. 
 
