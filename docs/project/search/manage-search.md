@@ -1,6 +1,6 @@
 ---
 title: Manage Search, indexing
-description: Get instructions for how to check, pause, resume, and reindex a repository or collection.
+description: Check indexing status, pause, resume, and reindex repositories or collections for Search in Azure DevOps Server.
 ms.assetid: 
 ms.custom: engagement-fy23
 ms.subservice: azure-devops-search
@@ -8,15 +8,15 @@ ai-usage: ai-assisted
 ms.topic: how-to
 ms.author: chcomley
 author: chcomley
-ms.date: 02/04/2026
+ms.date: 02/18/2026
 monikerRange: '< azure-devops'
 ---
 
-# Manage Search indexing
+# Manage search indexing
 
 [!INCLUDE [version-lt-azure-devops](../../includes/version-lt-azure-devops.md)]
 
-You can manage your search extension and indexing status, which include the following actions:
+You can manage your search extension and indexing status. These actions include the following tasks:
 - [Check indexing status](#check-indexing-status)
 - [Pause indexing](#pause-indexing)
 - [Resume indexing](#resume-indexing)
@@ -31,17 +31,20 @@ You can manage your search extension and indexing status, which include the foll
 
 ## Manage indexing
 
-Search gets managed by running PowerShell and SQL scripts. All of these scripts are available to download from the **[Code-Search GitHub repository](https://github.com/Microsoft/Code-Search)**. You can download all scripts into a local folder on the server. This server runs the database for Azure DevOps Server using the **Download ZIP** option. 
+To manage search, run PowerShell and SQL scripts.
+You can download all of these scripts from the **[Code-Search GitHub repository](https://github.com/Microsoft/Code-Search)**.
+Use the **Download ZIP** option to download all scripts into a local folder on the server that runs the database for Azure DevOps Server.
 
-The PowerShell scripts require the SQL script files, so ensure the **SqlScripts** folder and its contents are present, along with the PowerShell scripts.
+The PowerShell scripts require the SQL script files.
+Make sure the **SqlScripts** folder and its contents are present, along with the PowerShell scripts.
 
-![Screenshot showing download script files for administration.](media/administration/script-filesv2.png)
+:::image type="content" source="media/administration/script-filesv2.png" alt-text="Screenshot showing download script files for administration." border="true":::
 
 ### Check indexing status
 
-To check the indexing status after Search is configured, or after the extension is installed for a collection, do the following steps.
+To check the indexing status after you configure Search, or after you install the extension for a collection, complete the following steps.
 
-1. Execute the `ExtensionInstallIndexingStatus.ps1` script with **administrative privileges** and enter the following information:
+1. Run the `ExtensionInstallIndexingStatus.ps1` script with **administrative privileges** and enter the following information:
 
    - The SQL server instance name where the Azure DevOps Server configuration database is located.
    - The name of the Azure DevOps Server collection database.
@@ -55,7 +58,7 @@ To check the indexing status after Search is configured, or after the extension 
    - **Repositories Indexing Completed:** Lists repositories whose indexing completed and is searchable.
    - **Status of repositories currently indexing:** Lists the names of all the repositories that are still being indexed and are partially searchable. It takes some time for indexing to complete.
  
-1. Execute the `RecentIndexingActivity.ps1` script at intervals for indexing progress. This script takes the same parameters as the `ExtensionInstallIndexingStatus.ps1` script:
+1. Run the `RecentIndexingActivity.ps1` script at intervals for indexing progress. This script takes the same parameters as the `ExtensionInstallIndexingStatus.ps1` script:
 
    - **Repositories completed fresh indexing:** Shows number of repositories for which indexing completed within the specified time interval.
    - **Count of repositories with fresh indexing in progress:**  Shows the number of repositories for which indexing isn't complete. These repositories are still being indexed and are partially searchable.
@@ -63,24 +66,26 @@ To check the indexing status after Search is configured, or after the extension 
    - **Count of repositories with continuous indexing in progress:** Shows the number of repositories for which the commits are still being processed. These repositories show incomplete results until indexing is completed.
    - **Count of indexing job failures:**  Shows the number of indexing jobs that failed. Repositories associated with these indexing jobs could potentially show incomplete results until later indexing jobs for the same repositories patched the failed indexing.
 
-If you encounter any issues, get support on the [Developer Community](https://developercommunity.visualstudio.com/spaces/21/index.html). 
+If you encounter any problems, get support on the [Developer Community](https://developercommunity.visualstudio.com/spaces/21/index.html). 
 
 ### Pause indexing
 
-To pause all indexing, execute: `PauseSearchIndexing.ps1`, which is useful if you see spikes in CPU utilization after configuring Search. You're prompted to enter the following information.
+To pause all indexing, run `PauseSearchIndexing.ps1`.
+Pausing indexing is useful if there are spikes in CPU utilization after configuring Search.
+You're prompted to enter the following information.
 * The SQL server instance name where the Azure DevOps Server configuration database is
 * The name of the Azure DevOps Server configuration database
 
 ### Resume indexing
 
-If you paused indexing, execute: `ResumeIndexing.ps1` to start again. You're prompted to enter the following information.
+If you paused indexing, run `ResumeIndexing.ps1` to start it again.
+You're prompted to enter the following information.
 * The SQL server instance name where the Azure DevOps Server configuration database is
 * The name of the Azure DevOps Server configuration database
 
 ### Reindex a repository or collection
 
-To reindex a Git or TFVC repository, execute the appropriate
-version of the script, `Re-IndexingRepository.ps1`, for your Azure DevOps Server version. 
+To reindex a Git or TFVC repository, run the appropriate version of the script, `Re-IndexingRepository.ps1`, for your Azure DevOps Server version.
 You're prompted to enter the following information.
 
 * The SQL server instance name where the Azure DevOps Server configuration database is
@@ -90,7 +95,7 @@ You're prompted to enter the following information.
 * The name of the collection
 * The name of the repository to reindex
 
-To reindex a **collection**, execute the script: `TriggerCollectionIndexing.ps1`.
+To reindex a **collection**, run the script `TriggerCollectionIndexing.ps1`.
 You're prompted to enter the following information.
 * The SQL server instance name where the Azure DevOps Server configuration database is
 * The name of the Azure DevOps Server collection database
