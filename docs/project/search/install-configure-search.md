@@ -22,8 +22,10 @@ This article shows you how to install, [configure](#configure-search), and [unin
 
 ## Prerequisites
 
-**Permissions:** Member of the **Project Collection Administrators** group for the organization. Non-administrative users can also request to add the extension to their PCA.
-For more information, see [Install and configure Azure DevOps Server](/azure/devops/server/install/get-started) and [Requirements and compatibility](/azure/devops/server/requirements).
+| Category | Requirements |
+|----------|-------------|
+| **Permissions** | Member of the **Project Collection Administrators** group for the organization. Non-administrative users can also request to add the extension to their PCA. |
+| **Setup** | For more information, see [Install and configure Azure DevOps Server](/azure/devops/server/install/get-started) and [Requirements and compatibility](/azure/devops/server/requirements). |
 
 ### Hardware recommendations
 

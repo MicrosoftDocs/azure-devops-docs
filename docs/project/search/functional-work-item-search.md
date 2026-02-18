@@ -30,11 +30,11 @@ Work Item Search lets you do the following tasks and more.
 
 ## Prerequisites
 
-- **Access levels:**
-  - **All project members:** Every project member can use the search functions, including users with Stakeholder, Basic, and higher levels of access.
-::: moniker range=" azure-devops"
-- Work Item Search is available by default when the Boards service is installed and enabled.
-::: moniker-end
+| Category | Requirements |
+|----------|-------------|
+| **Project access** | Member of the project. |
+| **Access levels** | Every project member can use the search functions, including users with **Stakeholder**, **Basic**, and higher levels of access. |
+| **Service availability** | Work Item Search is available by default when the Boards service is installed and enabled. |
 
 ### Search by work item ID
 
