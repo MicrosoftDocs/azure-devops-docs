@@ -8,7 +8,7 @@ ms.assetid:
 ms.author: chcomley
 author: chcomley 
 monikerRange: '<= azure-devops'
-ms.date: 03/03/2025
+ms.date: 02/17/2026
 ---
 
 # About requesting and providing feedback 
@@ -19,6 +19,8 @@ In Azure DevOps, gathering feedback is essential for improving your software app
 
 > [!NOTE]  
 > This article is about using Azure DevOps feedback tools. For more information about providing feedback about Azure DevOps, see [Provide product and content feedback](../../user-guide/provide-feedback.md?bc=%252fazure%252fdevops%252fproject%252ffeedback%252fbreadcrumb%252ftoc.json&toc=%252fazure%252fdevops%252fproject%252ffeedback%252ftoc.json). 
+
+[!INCLUDE [ai-assistance-callout](../../includes/ai-assistance-callout.md)]
 
 ## Learn about the Test & Feedback extension
 

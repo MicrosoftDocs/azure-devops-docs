@@ -8,7 +8,7 @@ ai-usage: ai-assisted
 monikerRange: '<= azure-devops'
 ms.author: chcomley
 author: chcomley
-ms.date: 07/14/2025
+ms.date: 02/17/2026
 ---
 
 # Build secure applications with Azure DevOps
@@ -16,6 +16,8 @@ ms.date: 07/14/2025
 [!INCLUDE [version-lt-eq-azure-devops](../includes/version-lt-eq-azure-devops.md)]
 
 Build secure, scalable applications and services that integrate with Azure DevOps to access user resources and automate processes programmatically. Whether you're creating internal automation tools or building commercial products, Azure DevOps provides robust APIs and modern authentication options to support your integration needs.
+
+[!INCLUDE [ai-assistance-callout](../includes/ai-assistance-callout.md)]
 
 ## Why integrate with Azure DevOps?
 

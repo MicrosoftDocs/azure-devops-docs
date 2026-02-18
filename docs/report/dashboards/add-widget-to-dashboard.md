@@ -9,7 +9,7 @@ ms.author: chcomley
 author: chcomley
 ms.topic: quickstart
 monikerRange: '<= azure-devops'
-ms.date: 10/25/2024
+ms.date: 02/17/2026
 ---
 
 # Add widgets to a dashboard
@@ -20,6 +20,8 @@ Widgets smartly format data to provide access to easily consumable data. You add
 
 Each widget provides access to a chart, user-configurable information, or a set of links that open a feature or function. 
 You can add one or more charts or widgets to your dashboard. Up to 200 widgets total. You add several widgets at a time simply by selecting each one.   
+
+[!INCLUDE [ai-assistance-callout](../../includes/ai-assistance-callout.md)]
 
 ## Prerequisites
 

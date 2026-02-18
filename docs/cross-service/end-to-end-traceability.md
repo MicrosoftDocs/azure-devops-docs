@@ -9,7 +9,7 @@ ai-usage: ai-assisted
 ms.author: chcomley
 author: chcomley
 monikerRange: 'azure-devops'
-ms.date: 03/05/2025
+ms.date: 02/17/2026
 ---
  
 
@@ -20,6 +20,8 @@ ms.date: 03/05/2025
 Azure DevOps supports end-to-end traceability by linking various objects in your development process, such as work items, branches, commits, pull requests, builds, and releases. You can use built-in reports and Analytics to monitor traceability in real time.
 
 This article provides an overview of how Azure DevOps enables and supports traceability, with links to more detailed information.
+
+[!INCLUDE [ai-assistance-callout](../includes/ai-assistance-callout.md)]
 
 ## Traceability and linking 
 

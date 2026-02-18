@@ -9,7 +9,7 @@ ms.topic: how-to
 ms.author: chcomley
 author: chcomley
 ms.update: 90-days
-ms.date: 02/06/2026
+ms.date: 02/17/2026
 monikerRange: 'azure-devops'
 ---
 
@@ -18,6 +18,8 @@ monikerRange: 'azure-devops'
 [!INCLUDE [version-eq-azure-devops](../includes/version-eq-azure-devops.md)]
 
 Sign up for Azure DevOps and start with the [free tier of services](https://azure.microsoft.com/pricing/details/devops/azure-devops-services/). For an overview of the service, see [What is Azure DevOps?](what-is-azure-devops.md)
+
+[!INCLUDE [ai-assistance-callout](../includes/ai-assistance-callout.md)]
 
 ## Prerequisites
 

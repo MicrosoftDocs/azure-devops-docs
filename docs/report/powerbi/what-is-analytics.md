@@ -8,7 +8,7 @@ author: chcomley
 ms.topic: overview
 monikerRange: "<=azure-devops"
 ai-usage: ai-assisted
-ms.date: 10/27/2025
+ms.date: 02/17/2026
 ---
 
 # What is Analytics?
@@ -50,6 +50,8 @@ Analytics offers several advantages over legacy reporting solutions:
 - **Cloud-ready**: Designed for both cloud and on-premises deployments
 
 [!INCLUDE [temp](../includes/analytics-preview.md)]
+
+[!INCLUDE [ai-assistance-callout](../../includes/ai-assistance-callout.md)]
 
 ## Data available in Analytics
 
