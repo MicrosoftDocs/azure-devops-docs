@@ -531,7 +531,7 @@ You can [buy monthly access](../billing/buy-access-tfs-test-hub.md#buy-monthly-a
 You can manage access levels programmatically by using the [`az devops user add` (Azure DevOps Services only)](../accounts/add-organization-users.md) or the [User Entitlement - Add REST API](/rest/api/azure/devops/memberentitlementmanagement/user-entitlements/add).
 The following table provides a mapping of the access level selected through the user interface and the `AccountLicenseType`, `licensingSource`, and `msdnLicenseType` parameters.
 
-| Access level (user interface)<br/>licenseDisplayName  | accountLicenseType | licensingSource | msdnLicenseType | gitHubLicenseType |
+| Access level (user interface)<br/>licenseDisplayName  | accountLicenseType | licensingSource | msdnLicenseType | GitHubLicenseType |
 | ------------------------------------------------------|--------------------|----------------|------------------|-------------------|
 | Basic                                                 | express            | account        | none             | none              |
 | Basic + Test Plans                                    | advanced           | account        | none             | none              |

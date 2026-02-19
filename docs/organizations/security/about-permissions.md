@@ -329,13 +329,13 @@ For more information, see [About pipeline security roles](about-security-roles.m
 ::: moniker range="azure-devops"
 The following image illustrates how security groups defined at the project and collection level can assign permissions to objects, projects, and the organization.
  
-:::image type="content" source="media/about-security/security-groups-permission-management-cloud.png" border="true" alt-text="Conceptual image mapping default security groups to permission levels, cloud":::
+:::image type="content" source="media/about-security/security-groups-permission-management-cloud.png" border="true" alt-text="Conceptual diagram mapping default security groups to permission levels, cloud.":::
 ::: moniker-end
 
 ::: moniker range="< azure-devops"
 The following image illustrates how security groups defined at the project and collection-level can be assigned to permissions assigned at the object, project, and collection level. You can only define server-level security groups to server-level permissions. 
 
-:::image type="content" source="media/about-security/security-groups-permission-management-on-premises.png" border="true" alt-text="Conceptual image mapping default security groups to permission levels, on-premises":::
+:::image type="content" source="media/about-security/security-groups-permission-management-on-premises.png" border="true" alt-text="Conceptual diagram mapping default security groups to permission levels, on-premises.":::
 ::: moniker-end
 
 Members of the Project Administrators or Project Collection Administrators groups manage all team tools for all teams.
