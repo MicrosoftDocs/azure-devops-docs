@@ -163,32 +163,3 @@ Further automigration is available **only for custom policies**. Standard Visual
    ```
 
 3. Call the `MigrateFromOldPolicies` method.
-
-## Remove existing obsolete policies
-
-The following steps are a way to remove existing obsolete policies when the server fully disables them, including read and write operations.
-
-1. Create an empty C# project.
-
-1. Add a dependency to [Microsoft.TeamFoundationServer.ExtendedClient](https://www.nuget.org/packages/Microsoft.TeamFoundationServer.ExtendedClient/latest).
-
-1. Connect to your project by using the `ExtendedClient` package. For example:
-
-   ```csharp
-    var collectionUri = "{UrlToYourCollection}";
-    var currentProjectName = "{YourProjectName}";
-    using (TfsTeamProjectCollection tpc = new TfsTeamProjectCollection(new Uri(collectionUri)))
-    {
-        ... // Further code here
-    }
-   ```
-
-1. Connect to the TFVC service and set obsolete checking policies to `null`. For example:
-
-   ```csharp
-    var versionControlServer = tpc.GetService<VersionControlServer>();
-    TeamProject teamProject = versionControlServer.GetTeamProject(currentProjectName);
-    teamProject.SetCheckinPolicies(null);
-   ```
-
-1. Run the application.
