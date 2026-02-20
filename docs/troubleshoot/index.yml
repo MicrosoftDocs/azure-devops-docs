@@ -14,7 +14,7 @@ metadata:
   ai-usage: ai-assisted
 
 landingContent:
-  - title: Connections and access
+  - title: Connections, access, and accounts
     linkLists:
       - linkListType: how-to-guide
         links:
@@ -22,6 +22,26 @@ landingContent:
             url: ../user-guide/troubleshoot-connection.md?toc=/azure/devops/troubleshoot/toc.json
           - text: Troubleshoot access and permission issues
             url: ../organizations/security/troubleshoot-permissions.md?toc=/azure/devops/troubleshoot/toc.json
+      - linkListType: concept
+        links:
+          - text: Microsoft Entra access FAQs
+            url: ../organizations/accounts/faq-azure-access.yml?toc=/azure/devops/troubleshoot/toc.json
+          - text: User and permissions management FAQs
+            url: ../organizations/accounts/faq-user-and-permissions-management.yml?toc=/azure/devops/troubleshoot/toc.json
+          - text: Visual Studio setup FAQs
+            url: ../organizations/accounts/faq-set-up-vs.yml?toc=/azure/devops/troubleshoot/toc.json
+  - title: Azure Boards
+    linkLists:
+      - linkListType: concept
+        links:
+          - text: Azure Boards FAQs
+            url: ../boards/faqs.yml?toc=/azure/devops/troubleshoot/toc.json
+          - text: Azure Boards with Office FAQs
+            url: ../boards/backlogs/office/faqs.yml?toc=/azure/devops/troubleshoot/toc.json
+          - text: Delivery Plans FAQs
+            url: ../boards/plans/faqs.yml?toc=/azure/devops/troubleshoot/toc.json
+          - text: Work item query FAQs
+            url: ../boards/queries/query-faqs.yml?toc=/azure/devops/troubleshoot/toc.json
   - title: Azure Pipelines
     linkLists:
       - linkListType: how-to-guide
@@ -54,12 +74,32 @@ landingContent:
             url: ../organizations/notifications/troubleshoot-delayed-email.md?toc=/azure/devops/troubleshoot/toc.json
           - text: Troubleshoot unexpected notification emails
             url: ../organizations/notifications/troubleshoot-unexpected-email.md?toc=/azure/devops/troubleshoot/toc.json
+      - linkListType: concept
+        links:
+          - text: Notifications FAQs
+            url: ../organizations/notifications/faq-notifications.yml?toc=/azure/devops/troubleshoot/toc.json
+  - title: Organizations and settings
+    linkLists:
+      - linkListType: concept
+        links:
+          - text: Organization configuration FAQs
+            url: ../organizations/accounts/faq-configure-customize-organization.yml?toc=/azure/devops/troubleshoot/toc.json
+          - text: Billing FAQs
+            url: ../organizations/billing/billing-faq.yml?toc=/azure/devops/troubleshoot/toc.json
+          - text: Process customization FAQs
+            url: ../organizations/settings/work/faqs.yml?toc=/azure/devops/troubleshoot/toc.json
+          - text: Cross-project FAQs
+            url: ../project/work-across-projects-faqs.yml?toc=/azure/devops/troubleshoot/toc.json
   - title: Reporting and Analytics
     linkLists:
       - linkListType: how-to-guide
         links:
           - text: Troubleshoot Analytics views
             url: ../report/powerbi/troubleshooting-views.md?toc=/azure/devops/troubleshoot/toc.json
+      - linkListType: concept
+        links:
+          - text: Dashboards FAQs
+            url: ../report/dashboards/faqs.yml?toc=/azure/devops/troubleshoot/toc.json
   - title: Migration
     linkLists:
       - linkListType: how-to-guide
@@ -72,6 +112,10 @@ landingContent:
         links:
           - text: Troubleshoot Managed DevOps Pools
             url: ../managed-devops-pools/troubleshooting.md?toc=/azure/devops/troubleshoot/toc.json
+      - linkListType: concept
+        links:
+          - text: Managed DevOps Pools FAQs
+            url: ../managed-devops-pools/faq.md?toc=/azure/devops/troubleshoot/toc.json
   - title: CLI and service hooks
     linkLists:
       - linkListType: how-to-guide
@@ -80,39 +124,3 @@ landingContent:
             url: ../cli/troubleshooting.md?toc=/azure/devops/troubleshoot/toc.json
           - text: Troubleshoot service hook integrations
             url: ../service-hooks/troubleshoot.md?toc=/azure/devops/troubleshoot/toc.json
-  - title: FAQs
-    linkLists:
-      - linkListType: concept
-        links:
-          - text: Azure Boards FAQs
-            url: ../boards/faqs.yml?toc=/azure/devops/troubleshoot/toc.json
-          - text: Delivery Plans FAQs
-            url: ../boards/plans/faqs.yml?toc=/azure/devops/troubleshoot/toc.json
-          - text: Work item query FAQs
-            url: ../boards/queries/query-faqs.yml?toc=/azure/devops/troubleshoot/toc.json
-          - text: Azure Boards with Office FAQs
-            url: ../boards/backlogs/office/faqs.yml?toc=/azure/devops/troubleshoot/toc.json
-          - text: Billing FAQs
-            url: ../organizations/billing/billing-faq.yml?toc=/azure/devops/troubleshoot/toc.json
-          - text: Microsoft Entra access FAQs
-            url: ../organizations/accounts/faq-azure-access.yml?toc=/azure/devops/troubleshoot/toc.json
-  - title: More FAQs
-    linkLists:
-      - linkListType: concept
-        links:
-          - text: Organization configuration FAQs
-            url: ../organizations/accounts/faq-configure-customize-organization.yml?toc=/azure/devops/troubleshoot/toc.json
-          - text: Visual Studio setup FAQs
-            url: ../organizations/accounts/faq-set-up-vs.yml?toc=/azure/devops/troubleshoot/toc.json
-          - text: User and permissions management FAQs
-            url: ../organizations/accounts/faq-user-and-permissions-management.yml?toc=/azure/devops/troubleshoot/toc.json
-          - text: Notifications FAQs
-            url: ../organizations/notifications/faq-notifications.yml?toc=/azure/devops/troubleshoot/toc.json
-          - text: Process customization FAQs
-            url: ../organizations/settings/work/faqs.yml?toc=/azure/devops/troubleshoot/toc.json
-          - text: Cross-project FAQs
-            url: ../project/work-across-projects-faqs.yml?toc=/azure/devops/troubleshoot/toc.json
-          - text: Dashboards FAQs
-            url: ../report/dashboards/faqs.yml?toc=/azure/devops/troubleshoot/toc.json
-          - text: Managed DevOps Pools FAQs
-            url: ../managed-devops-pools/faq.md?toc=/azure/devops/troubleshoot/toc.json
