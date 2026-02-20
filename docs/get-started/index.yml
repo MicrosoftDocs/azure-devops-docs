@@ -168,7 +168,7 @@ landingContent:
             url: ../migrate/migration-post-migration.md
           - text: Troubleshoot
             url: ../migrate/migration-troubleshooting.md
-  - title: Troubleshoot & FAQs
+  - title: Troubleshooting & FAQs
     linkLists:
       - linkListType: how-to-guide
         links:

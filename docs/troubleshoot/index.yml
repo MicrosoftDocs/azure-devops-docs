@@ -1,9 +1,9 @@
 ### YamlMime:Landing
 
-title: Troubleshoot & FAQs
+title: Troubleshooting & FAQs
 summary: Find troubleshooting guides and FAQs for common issues across Azure DevOps.
 metadata:
-  title: Troubleshoot & FAQs
+  title: Troubleshooting & FAQs
   titleSuffix: Azure DevOps
   description: Find troubleshooting guides and FAQs for connections, pipelines, security, notifications, migrations, and more in Azure DevOps.
   ms.subservice: azure-devops-new-user
