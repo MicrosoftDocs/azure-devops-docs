@@ -1,7 +1,7 @@
 ---
 title: Manage wikis via CLI
 titleSuffix: Azure DevOps
-description: Learn how to manage wikis with the command-line interface (CLI) in Azure DevOps.
+description: Manage wikis with the command-line interface (CLI) in Azure DevOps.
 ms.subservice: azure-devops-wiki
 ms.custom: wiki, devx-track-azurecli
 ms.topic: how-to
@@ -9,7 +9,8 @@ ms.assetid:
 ms.author: chcomley
 author: chcomley
 ms.reviewer: sancha
-ms.date: 01/05/2024
+ms.date: 02/18/2026
+ai-usage: ai-assisted
 monikerRange: 'azure-devops'
 ---
 
@@ -17,7 +18,8 @@ monikerRange: 'azure-devops'
 
 [!INCLUDE [version-eq-azure-devops](../../includes/version-eq-azure-devops.md)]
 
-Learn the following CLI commands for managing wikis.
+You can use the Azure DevOps CLI to create, list, show, and delete wikis, as well as create wiki pages.
+The CLI is useful for automating wiki management tasks or integrating wiki operations into scripts and pipelines.
 
 > [!NOTE]
 > You can't delete project wikis with the CLI.
@@ -28,7 +30,7 @@ Learn the following CLI commands for managing wikis.
 
 ## Commands
 
-|Commands  |description  |
+|Commands  |Description  |
 |---------|---------|
 |[az devops wiki create](#create-a-wiki)     | Create a wiki.        |
 |[az devops wiki delete](#delete-a-wiki)   | Delete a wiki.        |
@@ -42,7 +44,7 @@ Learn the following CLI commands for managing wikis.
 
 ## Create a wiki
 
-To create a wiki, enter the `az devops wiki create` command.
+Enter the `az devops wiki create` command to create a wiki.
 
 > [!div class="tabbedCodeSnippets"]
 ```azurecli
@@ -58,9 +60,9 @@ az devops wiki create [--mapped-path]
 
 - **--mapped-path**: [Required for `codewiki` type] Mapped path of the new wiki, for example, `/` to publish from root of repository.
 - **--name**: Name of the new wiki.
-- **--project -p**: Optional. Name or ID of the project. Configure the default project using `az devops configure -d project=NAME_OR_ID`. Required if not configured as default or picked up via git config.
+- **--project -p**: Optional. Name or ID of the project. Configure the default project by using `az devops configure -d project=NAME_OR_ID`. Required if not configured as default or picked up via git config.
 - **--repository -r**: [Required for `codewiki` type] Name or ID of the repository to publish the wiki from.
-- **--subscription**: Optional. Name or ID of subscription. Configure the default subscription using `az account set -s NAME_OR_ID`.
+- **--subscription**: Optional. Name or ID of subscription. Configure the default subscription by using `az account set -s NAME_OR_ID`.
 - **--type --wiki-type**: Type of wiki to create. Accepted values: `codewiki`, `projectwiki`. Default value: `projectwiki`.
 
 ### Examples
@@ -85,7 +87,7 @@ az devops wiki create --name WIKI_NAME --type codewiki
 To delete a wiki, enter the `az devops wiki delete` command.
 
 > [!NOTE]
-> You can only use this command only to delete a code wiki, not to delete a project wiki.
+> You can use this command only to delete a code wiki, not a project wiki.
 
 > [!div class="tabbedCodeSnippets"]
 ```azurecli
@@ -99,8 +101,8 @@ az devops wiki delete
 ### Parameters
 
 - **--wiki**: Required. Name or ID of the wiki to delete.
-- **--project -p**: Optional. Name or ID of the project. You can configure the default project using `az devops configure -d project=NAME_OR_ID`. Required if not configured as default or picked up via git config.
-- **--subscription**: Optional. Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
+- **--project -p**: Optional. Name or ID of the project. You can configure the default project by using `az devops configure -d project=NAME_OR_ID`. Required if not configured as default or picked up via git config.
+- **--subscription**: Optional. Name or ID of subscription. You can configure the default subscription by using `az account set -s NAME_OR_ID`.
 - **--yes -y**: Optional. Don't prompt for confirmation.
 
 ### Example
@@ -128,7 +130,7 @@ az devops wiki list
 
 - **--project -p**: Optional. Name or ID of the project.
 - **--scope**: Optional. List the wikis at project or organization level. Accepted values: `organization`, `project`. Default value: `project`.
-- **--subscription**: Optional. Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
+- **--subscription**: Optional. Name or ID of subscription. You can configure the default subscription by using `az account set -s NAME_OR_ID`.
 
 ### Examples
 
@@ -163,7 +165,7 @@ az devops wiki show --wiki
 - **--wiki**: Required. Name or ID of the wiki.
 - **--open**: Optional. Open the wiki page in your web browser.
 - **--project -p**: Optional. Name or ID of the project.
-- **--subscription**: Optional. Name or ID of subscription. Configure the default subscription using `az account set -s NAME_OR_ID`.
+- **--subscription**: Optional. Name or ID of subscription. Configure the default subscription by using `az account set -s NAME_OR_ID`.
 
 ### Example
 
@@ -194,23 +196,23 @@ az devops wiki page create --path
 
 - **--path**: Required. Path of the wiki page.
 - **--wiki**: Required. Name or ID of the wiki.
-- **--comment**: Optional. Comment in the commit message of file add operation. Default value: `added a new page using Azure DevOps CLI`.
+- **--comment**: Optional. Comment in the commit message for the file add operation. Default value: `added a new page using Azure DevOps CLI`.
 - **--content**: Optional. Content of the wiki page. Ignored if `--file-path` is specified.
 - **--encoding**: Optional. Encoding of the file. Used with `--file-path` parameter.
 - **--file-path**: Optional. Path of the file input if content is specified in the file.
 - **--project -p**: Optional. Name or ID of the project.
-- **--subscription**: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
+- **--subscription**: Name or ID of subscription. You can configure the default subscription by using `az account set -s NAME_OR_ID`.
 
 ### Examples
 
-Create a new page with path `my page` in a wiki named `myprojectwiki` with inline content.
+Create a new page with the path `my page` in a wiki named `myprojectwiki` by using inline content.
 
 > [!div class="tabbedCodeSnippets"]
 ```azurecli
 az devops wiki page create --path 'my page' --wiki myprojectwiki --content "Hello World"
 ```
 
-Create a new page with path 'my page' in a wiki named 'myprojectwiki' with content from a file.
+Create a new page with the path `my page` in a wiki named `myprojectwiki` by using content from a file.
 
 > [!div class="tabbedCodeSnippets"]
 ```azurecli

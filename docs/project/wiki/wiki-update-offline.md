@@ -10,7 +10,8 @@ ms.author: chcomley
 author: chcomley
 ms.reviewer: gopinach
 monikerRange: "<=azure-devops"
-ms.date: 06/06/2025
+ms.date: 02/18/2026
+ai-usage: ai-assisted
 #customer intent: As an Azure DevOps developer, I want to author pages offline for my team project wiki, so I can work in my local branch before pushing changes to the main repo.
 ---
 
@@ -18,7 +19,9 @@ ms.date: 06/06/2025
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)] 
 
-The process for updating wiki offline is the same as developing code in a Git repository. You can use your preferred client and git command-line tools to update your wiki pages offline. For details on working with Git repositories and supported tools, see the [Azure Repos Git Documentation](../../repos/git/index.yml).
+The process for updating a wiki offline is the same as developing code in a Git repository.
+You can use your preferred client and Git command-line tools to update your wiki pages offline.
+For details on working with Git repositories and supported tools, see the [Azure Repos Git Documentation](../../repos/git/index.yml).
 
 The basic steps to update wiki content offline include:
 
@@ -34,14 +37,15 @@ The basic steps to update wiki content offline include:
 
 | Category | Requirements |
 |----------|--------------|
-| **Project access** | Member of the project where the wikis located. You can request access from your Project Administrator, as needed. |
-| **Permissions**    | - Member of the **Contributors** group. <br> - To publish code as wiki, **Create Repository** permission. By default, this permission is set for members of the [Project Administrators group](../../repos/git/set-git-repository-permissions.md).  |
+| **Project access** | Member of the project where the wiki is located. You can request access from your project administrator, as needed. |
+| **Permissions**    | - Member of the **Contributors** group. <br> - To publish code as wiki, **Create Repository** permission. By default, this permission is set for members of the [Project Administrators group](../../repos/git/set-git-repository-permissions.md). |
 | **Access levels**  | At least **Basic** access. |
 | **Tasks**          | - [Understand the underlying structure of your wiki Git repo](wiki-file-structure.md). <br> - Understand the [differences between a provisioned wiki and a published code as wiki](provisioned-vs-published-wiki.md). |
 
 ## Clone your wiki
 
-Your wiki repository stores pages, images, attachments, and the sequence of pages and subpages. Clone your wiki to begin.
+Your wiki repository stores pages, images, attachments, and the sequence of pages and subpages.
+Clone your wiki to begin.
 
 1. Sign in to your project (`https://dev.azure.com/<Organization>/<Project>`).
 
@@ -53,12 +57,15 @@ Your wiki repository stores pages, images, attachments, and the sequence of page
 
    :::image type="content" source="media/wiki/copy-clone-url-to-clipboard.png" alt-text="Screenshot that shows the wiki repository to clone in the Clone repository dialog.":::
 
-1. Paste the URL into your browser. The Git repository page opens where you can view the files defined under the wikiMain branch. The following example shows the files in the Git repo for the CanaryBuilds project:
+1. Paste the URL into your browser.
+   The Git repository page opens where you can view the files defined under the wikiMain branch.
+   The following example shows the files in the Git repo for the CanaryBuilds project:
 
    :::image type="content" source="media/wiki/work-offline-wiki-main-branch-files.png" alt-text="Screenshot that shows the Git repository page with the files defined under the wikiMain branch.":::
 
    > [!IMPORTANT]
-   > The **Generate Git Credentials** feature is planned for removal. Review the Git Authentication documentation for all authentication methods available to you for git clone operations.
+   > The **Generate Git Credentials** feature is planned for removal.
+   > Review the Git Authentication documentation for all authentication methods available to you for Git clone operations.
 
 1. Use the URL that you copied to clone the repo in your preferred IDE. For more information, see the following articles:
 
@@ -68,19 +75,27 @@ Your wiki repository stores pages, images, attachments, and the sequence of page
 
 ## Add pages to your local Git repository
 
-Git repo pages are formatted as [Markdown](./markdown-guidance.md) (_.md_) files. For each page you want to add to your wiki, you create a Markdown file in your local branch. After you add pages, you update the _.order_ file to adjust the page sequence to include the new pages.
+Git repo pages are formatted as [Markdown](./markdown-guidance.md) (_.md_) files.
+For each page you want to add to your wiki, create a Markdown file in your local branch.
+After you add pages, update the _.order_ file to adjust the page sequence to include the new pages.
 
 ### Add pages
 
 You can add pages at the top of the wiki structure in the root (`\`) folder and also in other folders.
 
-1. Create the Markdown (_.md_) file with the content for the new page. In most cases, the file name matches the page title. In the file name, replace any spaces in the title with hyphens (`-`). For more information about creating page content, see [Add a wiki page](add-edit-wiki.md#add-a-wiki-page).
+1. Create the Markdown (_.md_) file with the content for the new page.
+   In most cases, the file name matches the page title.
+   In the file name, replace any spaces in the title with hyphens (`-`).
+   For more information about creating page content, see [Add a wiki page](add-edit-wiki.md#add-a-wiki-page).
 
-1. Place the file in the desired folder within the wiki structure in your local branch, such as the root folder. The CanaryBuilds project example root folder is `C:\Users\UserName\Source\Repos\CanaryBuilds.wiki`:
+1. Place the file in the desired folder within the wiki structure in your local branch, such as the root folder.
+   The CanaryBuilds project example root folder is `C:\Users\UserName\Source\Repos\CanaryBuilds.wiki`:
 
     :::image type="content" source="media/wiki/add-pages.png" alt-text="Screenshot that shows the local branch of the wiki Git repo for the CanaryBuilds project.":::
 
-1. Update the _.order_ file in the same folder where you placed the new page file. The entry text for the page is the file name without the Markdown extension (_.md_). The CanaryBuilds project example adds the new page "How to contribute," which corresponds to the entry text _How-to-contribute_:
+1. Update the _.order_ file in the same folder where you placed the new page file.
+   The entry text for the page is the file name without the Markdown extension (_.md_).
+   The CanaryBuilds project example adds the new page "How to contribute," which corresponds to the entry text _How-to-contribute_:
 
    ```
    Welcome
@@ -98,7 +113,8 @@ You can also create subpages for a page in your wiki:
 
 1. Create a folder to serve as the parent page. For more information, see [Repository files and folder structure](wiki-file-structure.md#repository-files-and-folder-structure).
 
-1. Create the Markdown file for each subpage and place the file in the parent page folder. The CanaryBuilds project example adds the _How-to-contribute_ folder as the parent page: 
+1. Create the Markdown file for each subpage and place the file in the parent page folder.
+   The CanaryBuilds project example adds the _How-to-contribute_ folder as the parent page:
 
    :::image type="content" source="media/wiki/add-sub-pages.png" alt-text="Screenshot that shows the How-to-contribute folder in the CanaryBuilds project with new subpages.":::
 
@@ -115,7 +131,8 @@ You can also create subpages for a page in your wiki:
 
 When your local updates are ready, [push the files to the Git repository](../../repos/git/pushing.md).
 
-The added pages and subpages appear immediately in your wiki. The following example shows the updates for the CanaryBuilds project:
+The added pages and subpages appear immediately in your wiki.
+The following example shows the updates for the CanaryBuilds project:
 
 :::image type="content" source="media/wiki/wiki-tree-updated-offline.png" alt-text="Screenshot that shows the updated wiki structure for the CanaryBuilds project.":::
 
