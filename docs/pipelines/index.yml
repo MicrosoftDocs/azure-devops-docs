@@ -183,12 +183,20 @@ landingContent:
     linkLists:
       - linkListType: how-to-guide
         links:
-          - text: Troubleshoot builds and releases
-            url: troubleshooting/troubleshooting.md
+          - text: Troubleshoot pipeline runs
+            url: ./troubleshooting/troubleshooting.md
+          - text: Troubleshoot pipeline failure to start
+            url: ./troubleshooting/troubleshoot-start.md
+          - text: Troubleshoot pipeline triggers
+            url: ./troubleshooting/troubleshoot-triggers.md
           - text: Run a release in debug mode
             url: ./release/variables.md#run-a-release-in-debug-mode
           - text: Troubleshoot Azure Resource Manager service connections
             url: ./release/azure-rm-endpoint.md
+          - text: Troubleshoot workload identity service connections
+            url: ./release/troubleshoot-workload-identity.md
+          - text: All troubleshooting guides & FAQs
+            url: ../troubleshoot/index.yml
   - title: Publish packages
     linkLists:
       - linkListType: tutorial
@@ -217,17 +225,3 @@ landingContent:
             url: ./integrations/microsoft-teams.md
           - text: Integrate with service hooks
             url: ../service-hooks/overview.md
-  - title: Troubleshoot
-    linkLists:
-      - linkListType: how-to-guide
-        links:
-          - text: Troubleshoot pipeline runs
-            url: ./troubleshooting/troubleshooting.md
-          - text: Troubleshoot pipeline failure to start
-            url: ./troubleshooting/troubleshoot-start.md
-          - text: Troubleshoot pipeline triggers
-            url: ./troubleshooting/troubleshoot-triggers.md
-          - text: Troubleshoot workload identity service connections
-            url: ./release/troubleshoot-workload-identity.md
-          - text: All troubleshooting guides & FAQs
-            url: ../troubleshoot/index.yml
