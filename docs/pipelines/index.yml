@@ -217,3 +217,17 @@ landingContent:
             url: ./integrations/microsoft-teams.md
           - text: Integrate with service hooks
             url: ../service-hooks/overview.md
+  - title: Troubleshoot
+    linkLists:
+      - linkListType: how-to-guide
+        links:
+          - text: Troubleshoot pipeline runs
+            url: ./troubleshooting/troubleshooting.md
+          - text: Troubleshoot pipeline failure to start
+            url: ./troubleshooting/troubleshoot-start.md
+          - text: Troubleshoot pipeline triggers
+            url: ./troubleshooting/troubleshoot-triggers.md
+          - text: Troubleshoot workload identity service connections
+            url: ./release/troubleshoot-workload-identity.md
+          - text: All troubleshooting guides & FAQs
+            url: ../troubleshoot/index.yml
