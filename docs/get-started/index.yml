@@ -168,3 +168,15 @@ landingContent:
             url: ../migrate/migration-post-migration.md
           - text: Troubleshoot
             url: ../migrate/migration-troubleshooting.md
+  - title: Troubleshoot & FAQs
+    linkLists:
+      - linkListType: how-to-guide
+        links:
+          - text: Troubleshoot connection and access
+            url: ../user-guide/troubleshoot-connection.md?toc=/azure/devops/get-started/toc.json
+          - text: Troubleshoot permissions
+            url: ../organizations/security/troubleshoot-permissions.md?toc=/azure/devops/get-started/toc.json
+          - text: Troubleshoot pipelines
+            url: ../pipelines/troubleshooting/troubleshooting.md?toc=/azure/devops/get-started/toc.json
+          - text: All troubleshooting guides & FAQs
+            url: ../troubleshoot/index.yml?toc=/azure/devops/get-started/toc.json

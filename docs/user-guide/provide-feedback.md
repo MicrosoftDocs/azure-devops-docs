@@ -58,9 +58,6 @@ For more information, see the following section of related articles.
 
 ## Related content
 
+* [All troubleshooting guides & FAQs](../troubleshoot/index.yml)
 * [View the Azure DevOps Roadmap](/azure/devops/release-notes/features-timeline)
-* [View Azure Boards FAQs](../boards/faqs.yml)
-* [Troubleshoot Azure Pipelines](../pipelines/troubleshooting/troubleshooting.md)
-* [Troubleshoot migration errors](../migrate/migration-troubleshooting.md)
-* [Troubleshoot common errors with Azure DevOps CLI](../cli/troubleshooting.md)
 * [Report a problem with Visual Studio](/visualstudio/ide/how-to-report-a-problem-with-visual-studio-2017)

@@ -152,3 +152,13 @@ landingContent:
         links:
           - text: Set test retention policies
             url: ../test/how-long-to-keep-test-results.md?toc=/azure/devops/organizations/toc.json
+  - title: Troubleshoot
+    linkLists:
+      - linkListType: how-to-guide
+        links:
+          - text: Troubleshoot access and permission issues
+            url: ./security/troubleshoot-permissions.md?toc=/azure/devops/organizations/toc.json
+          - text: Troubleshoot not receiving notification emails
+            url: ./notifications/troubleshoot-not-getting-email.md?toc=/azure/devops/organizations/toc.json
+          - text: All troubleshooting guides & FAQs
+            url: ../troubleshoot/index.yml

@@ -52,6 +52,8 @@
     href: roles.md?toc=/azure/devops/get-started/toc.json
 - name: Troubleshooting
   items:
+  - name: All troubleshooting guides & FAQs
+    href: ../troubleshoot/index.yml?toc=/azure/devops/get-started/toc.json
   - name: Troubleshoot connection
     href: troubleshoot-connection.md?toc=/azure/devops/get-started/toc.json
   - name: Capture browser trace
