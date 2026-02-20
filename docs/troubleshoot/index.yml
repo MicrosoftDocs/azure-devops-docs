@@ -1,11 +1,11 @@
 ### YamlMime:Landing
 
-title: Troubleshoot Azure DevOps
-summary: Find troubleshooting guides and resources for common issues across Azure DevOps services.
+title: Troubleshoot & FAQs
+summary: Find troubleshooting guides and FAQs for common issues across Azure DevOps services.
 metadata:
-  title: Troubleshoot Azure DevOps
+  title: Troubleshoot & FAQs
   titleSuffix: Azure DevOps
-  description: Find troubleshooting guides for connections, pipelines, security, notifications, migrations, and more in Azure DevOps.
+  description: Find troubleshooting guides and FAQs for connections, pipelines, security, notifications, migrations, and more in Azure DevOps.
   ms.subservice: azure-devops-new-user
   ms.topic: landing-page
   author: chcomley
