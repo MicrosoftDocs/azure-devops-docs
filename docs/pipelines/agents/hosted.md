@@ -179,7 +179,7 @@ To determine your geography, navigate to `https://dev.azure.com/<your_organizati
 >
 >If your organization is in the **West Europe** region, the capacity fallback geography is **France**, and you must include the IP ranges for all regions in the **France** geography in addition to the IP ranges for all regions in the **West Europe** geography.
 >
->Our Mac IP ranges aren't included in the Azure IPs above, as they are hosted in GitHub's macOS cloud. IP ranges can be retrieved using the [GitHub metadata API](https://docs.github.com/en/rest/reference/meta#get-github-meta-information) using the instructions provided [here](https://docs.github.com/en/actions/using-github-hosted-runners/about-github-hosted-runners#ip-addresses).
+>Our Mac IP ranges aren't included in the Azure IPs above, as they are hosted in GitHub's macOS cloud. IP ranges can be retrieved using the [GitHub metadata API](https://docs.github.com/en/rest/reference/meta#get-github-meta-information) using the instructions provided [here](https://docs.github.com/en/actions/reference/runners/github-hosted-runners#ip-addresses).
 
 #### Example
 
