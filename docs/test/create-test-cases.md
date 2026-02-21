@@ -77,11 +77,7 @@ For more information, see [Test different configurations](test-different-configu
 
 ## Reorder test cases
 
-You can reorder manual test cases in static suites, requirement-based suites, and query-based suites.
-
-Open a test case, and then use the up and down arrows to change the order.
-
-![Screenshot showing the arrows used to move test steps up or down.](media/create-test-cases/change-step-order.png)
+Currently you cannot reorder manual test cases in static suites, requirement-based suites, and query-based suites from the user interface.
 
 ## Add existing test cases to a test suite
 
