@@ -28,6 +28,13 @@ Before you begin, you need:
 - Access to the [data pipeline solution](https://github.com/MicrosoftDocs/azure-devops-docs-samples/tree/main/azure-data-pipeline) in GitHub. 
 - [DevOps for Azure Databricks](https://marketplace.visualstudio.com/items?itemName=riserrad.azdo-databricks).
 
+  > DevOps for Azure Databricks extension is no longer available. Here is the pipeline yml file that referes to the unavailable extension:
+  > https://github.com/MicrosoftDocs/azure-devops-docs-samples/blob/main/azure-data-pipeline/data_pipeline_ci_cd.yml
+  > Customer's have reported this issue and requested alternate methods. See here: https://github.com/microsoft/azdo-databricks/pull/43
+  > This documentation needs to be updated to provide our own custom script for deployment to Azure Databricks and ADF or documentation to be removed.
+  > There is an alternate third-party extension:
+  > https://marketplace.visualstudio.com/items?itemName=DataThirstLtd.databricksDeployScriptsTasks
+
 
 ## Provision Azure resources
 
