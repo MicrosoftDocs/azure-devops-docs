@@ -30,9 +30,9 @@ sections:
   - name: General
     questions:
       - question: |
-          Q: Which users can join for free, and what benefits do they receive from joining Azure DevOps?
+          Which users can join for free, and what benefits do they receive from joining Azure DevOps?
         answer: |
-          A: Get the following benefits from joining Azure DevOps:
+          Get the following benefits from joining Azure DevOps:
 
           [!INCLUDE [free-tier](../../includes/free-tier.md)]
           
@@ -41,31 +41,31 @@ sections:
           <a name="browser-problems"></a>
           
       - question: |
-          Q: Why won't my browser work with Azure DevOps?
+          Why won't my browser work with Azure DevOps?
         answer: |
-          A: You might be using an unsupported browser. For the best experience, ensure you're using a [supported browser](/azure/devops/server/compatibility#supported-browsers).
+          You might be using an unsupported browser. For the best experience, ensure you're using a [supported browser](/azure/devops/server/compatibility#supported-browsers).
           
       - question: |
-          Q:  Which Visual Studio subscriptions can I use with Azure DevOps?
+          Which Visual Studio subscriptions can I use with Azure DevOps?
         answer: |
-          A: [Find Visual Studio subscriptions that include Azure DevOps](faq-user-and-permissions-management.yml#EligibleMSDNSubscriptions).
+          [Find Visual Studio subscriptions that include Azure DevOps](faq-user-and-permissions-management.yml#EligibleMSDNSubscriptions).
           
       - question: |
-          Q: How do I sign in to Azure DevOps if I forgot my organization name?
+          How do I sign in to Azure DevOps if I forgot my organization name?
         answer: |
-          A: If you forgot your organization name, [sign in to your Visual Studio profile](https://go.microsoft.com/fwlink/?LinkId=309329), where you can view a list of your organizations.
+          If you forgot your organization name, [sign in to your Visual Studio profile](https://go.microsoft.com/fwlink/?LinkId=309329), where you can view a list of your organizations.
 
           <a name="organization-location"></a>
           
       - question: |
-          Q: How do I find the geography where my organization is located? 
+          How do I find the geography where my organization is located? 
         answer: |
-          A: [Find your organization's geography](./change-organization-location.md).
+          [Find your organization's geography](./change-organization-location.md).
           
       - question: |
-          Q: How do I change my project name, organization location, or project process? 
+          How do I change my project name, organization location, or project process? 
         answer: |
-          A: See the following articles:
+          See the following articles:
           
           - [Change your project name](../../organizations/projects/rename-project.md)
           - [Change your organization geography](./change-organization-location.md)
@@ -80,14 +80,14 @@ sections:
           For more information, see [Plan your Azure DevOps organization structure](../../user-guide/plan-your-azure-devops-org-structure.md?view=azure-devops).
       
       - question: |
-          Q: Is localization supported in the Azure DevOps service?
+          Is localization supported in the Azure DevOps service?
         answer: |
-          A: Sorry, we don't support localization in the Azure DevOps service. We do support localization in the on-premises version of Azure DevOps.
+          Sorry, we don't support localization in the Azure DevOps service. We do support localization in the on-premises version of Azure DevOps.
 
       - question: |
-          Q: How many Azure DevOps organizations can I create?
+          How many Azure DevOps organizations can I create?
         answer: |
-          A: Azure DevOps limits the number of organizations you can create to help protect the service and ensure a reliable experience for all customers.
+          Azure DevOps limits the number of organizations you can create to help protect the service and ensure a reliable experience for all customers.
           The number you can create varies based on your Azure subscription and usage history.
 
           If you've reached your limit, this is expected behavior.
@@ -97,44 +97,44 @@ sections:
           Microsoft accounts can create a single Azure DevOps organization.
           
       - question: |
-          Q: Why are some features not available in my organization?
+          Why are some features not available in my organization?
         answer: |
-          A: Some features require you to install an extension, which might be available for free or paid.
+          Some features require you to install an extension, which might be available for free or paid.
           
           <a name="create-another-organization"></a>
           
       - question: |
-          Q: How do I create another organization?
+          How do I create another organization?
         answer: |
-          A: [Create an organization](create-organization.md).
+          [Create an organization](create-organization.md).
           
           <a name="another-team-project"></a>
           
       - question: |
-          Q: Can I create more than one project?
+          Can I create more than one project?
         answer: |
-          A: Yes, multiple projects help you keep work separate when you have development projects for different teams. Only one project collection is supported.
+          Yes, multiple projects help you keep work separate when you have development projects for different teams. Only one project collection is supported.
           
           For more information, see the following articles:
           - [About projects and scaling your organization](../projects/about-projects.md)
           - [Create a project](../projects/create-project.md)
           
       - question: |
-          Q: Can I delete a project that I created?
+          Can I delete a project that I created?
         answer: |
-          A: Yes, you can [delete a project](../projects/delete-project.md) that you don't use anymore.
+          Yes, you can [delete a project](../projects/delete-project.md) that you don't use anymore.
           
       - question: |
-          Q: Can I delete an organization that I don't need anymore? 
+          Can I delete an organization that I don't need anymore? 
         answer: |
-          A: Yes. See [Delete or recover your organization](./delete-your-organization.md).
+          Yes. See [Delete or recover your organization](./delete-your-organization.md).
           
           <a name="SignInOrganizationDifferences"></a>
           
       - question: |
-          Q: What's the difference between using a Microsoft account and a work or school account to sign up?
+          What's the difference between using a Microsoft account and a work or school account to sign up?
         answer: |
-          A: Your choice of account type affects how you control access and authenticate users for your organization.
+          Your choice of account type affects how you control access and authenticate users for your organization.
           
           When you sign up with a Microsoft account:
           
@@ -163,38 +163,38 @@ sections:
           <a name="ChangeDirectory"></a>
 
       - question: |
-          Q: Can I change the directory after sign-in?
+          Can I change the directory after sign-in?
         answer: |
-          A: Yes, see [Disconnect your organization from Microsoft Entra ID](disconnect-organization-from-azure-ad.md) and  [Connect your organization to Microsoft Entra ID](connect-organization-to-azure-ad.md).
+          Yes, see [Disconnect your organization from Microsoft Entra ID](disconnect-organization-from-azure-ad.md) and  [Connect your organization to Microsoft Entra ID](connect-organization-to-azure-ad.md).
       
       - question: |
-          Q: How do you store, secure, and protect my data?
+          How do you store, secure, and protect my data?
         answer: |
-          A: See the [Data protection overview](../security/data-protection.md).
+          See the [Data protection overview](../security/data-protection.md).
           
       - question: |
-          Q: Do I still own my code and intellectual property? What do you do with my personal information?
+          Do I still own my code and intellectual property? What do you do with my personal information?
         answer: |
-          A: Yes, your code and your intellectual property are yours. Review our [terms of service](https://go.microsoft.com/fwlink/?LinkID=266231) and [privacy policy](https://go.microsoft.com/fwlink/?LinkID=264782).
+          Yes, your code and your intellectual property are yours. Review our [terms of service](https://go.microsoft.com/fwlink/?LinkID=266231) and [privacy policy](https://go.microsoft.com/fwlink/?LinkID=264782).
           
       - question: |
-          Q: Where can I find the Azure DevOps Service Level Agreement (SLA)?
+          Where can I find the Azure DevOps Service Level Agreement (SLA)?
         answer: |
-          A: You can find it here: [Azure DevOps SLA](https://azure.microsoft.com/support/legal/sla/visual-studio-team-services/v1_2/).
+          You can find it here: [Azure DevOps SLA](https://azure.microsoft.com/support/legal/sla/visual-studio-team-services/v1_2/).
           
       - question: |
-          Q: I'm having problems with my Visual Studio subscription. How can I get help?
+          I'm having problems with my Visual Studio subscription. How can I get help?
         answer: |
-          A: You can try [Subscription Support](https://visualstudio.microsoft.com/support/subscription-support-vs) or for more information, see [Set up Visual Studio FAQs](faq-set-up-vs.yml). 
+          You can try [Subscription Support](https://visualstudio.microsoft.com/support/subscription-support-vs) or for more information, see [Set up Visual Studio FAQs](faq-set-up-vs.yml). 
                     
           <a name="configure-organization-faqs"></a>
           
   - name: Configure an organization
     questions:
       - question: |
-          Q: Why can't I find the user who I want to make the new owner?
+          Why can't I find the user who I want to make the new owner?
         answer: |
-          A: You might not find the user for one of the following reasons:
+          You might not find the user for one of the following reasons:
           
           * The user isn't in your organization, or the user doesn't have organization access. Learn how to [add a user to your organization](add-organization-users.md).  
           * The user didn't create a Visual Studio profile or agree to the Terms of Service.  
@@ -202,51 +202,51 @@ sections:
           * If your organization uses Microsoft Entra ID to control access, directory members don't appear in the possible organization owners list until they meet the requirements. For more information, see [Access Microsoft Entra FAQs](faq-azure-access.yml).
           
       - question: |
-          Q: What if the owner of my organization left the company/isn't active?
+          What if the owner of my organization left the company/isn't active?
         answer: |
-          A: Azure DevOps Administrators can claim ownership of organizations where the current owner and any members of the Project Collection Administrators group are inactive in the Microsoft Entra tenant connected to your organization. For more information, see [Resolve inactive organization owner](resolve-orphaned-organization.md).
+          Azure DevOps Administrators can claim ownership of organizations where the current owner and any members of the Project Collection Administrators group are inactive in the Microsoft Entra tenant connected to your organization. For more information, see [Resolve inactive organization owner](resolve-orphaned-organization.md).
           
       - question: |
-          Q: Can I change my organization owner?
+          Can I change my organization owner?
         answer: |
-          A: Yes. If you're a Project Collection Administrator, you can change the organization owner in your organization settings. For more information, see [Change the organization owner](./change-organization-ownership.md).
+          Yes. If you're a Project Collection Administrator, you can change the organization owner in your organization settings. For more information, see [Change the organization owner](./change-organization-ownership.md).
           
       - question: |
-          Q: Can I change the organization name (URL)?
+          Can I change the organization name (URL)?
         answer: |
-          A: Only the organization owner can change the URL. If you're the organization owner, see [Rename your organization](./rename-organization.md).
+          Only the organization owner can change the URL. If you're the organization owner, see [Rename your organization](./rename-organization.md).
           
       - question: |
-          Q: Can I reverse an organization owner change?
+          Can I reverse an organization owner change?
         answer: |
-          A: Yes, if you're a Project Collection Administrator.
+          Yes, if you're a Project Collection Administrator.
           
       - question: |
-          Q: How many organization owners can I have?
+          How many organization owners can I have?
         answer: |
-          A: Your organization can have only one owner. Only organization owners can [do certain actions](#owner-differences), so make sure you keep your organization owner updated.
+          Your organization can have only one owner. Only organization owners can [do certain actions](#owner-differences), so make sure you keep your organization owner updated.
           
       - question: |
-          Q: Can I assign a new owner to my organization when the current owner is no longer active?
+          Can I assign a new owner to my organization when the current owner is no longer active?
         answer: |
-          A: Yes. For more information, see [Resolve orphaned organization ownership](resolve-orphaned-organization.md).
+          Yes. For more information, see [Resolve orphaned organization ownership](resolve-orphaned-organization.md).
           
       - question: |
-          Q: Why did you ask for extra information when I signed in?
+          Why did you ask for extra information when I signed in?
         answer: |
-          A: If our Terms of Service changed since you last signed in, you might need to agree and confirm that your information is up to date.
+          If our Terms of Service changed since you last signed in, you might need to agree and confirm that your information is up to date.
           
           <a name="owner-differences"></a>
           
       - question: |
-          Q: When I change ownership from myself (as PCA) to a different user, my own account gets removed from the PCA group. Is this behavior a bug?
+          When I change ownership from myself (as PCA) to a different user, my own account gets removed from the PCA group. Is this behavior a bug?
         answer: |
-          A: No, this behavior isn't a bug and is currently by design, although we hope to address this behavior soon.
+          No, this behavior isn't a bug and is currently by design, although we hope to address this behavior soon.
           
       - question: |
-          Q: What makes the organization owner different from other organization users?
+          What makes the organization owner different from other organization users?
         answer: |
-          A: The organization owner can do the following tasks, which other users don't have permissions to do: 
+          The organization owner can do the following tasks, which other users don't have permissions to do: 
           
           - Manage billing in the [Azure portal](https://ms.portal.azure.com/#home)
           - [Pay for users to access the organization](../billing/buy-basic-access-add-users.md)
@@ -258,9 +258,9 @@ sections:
           Project collection administrators (PCAs) can perform all actions done by organization owners, except for recovering a deleted organization, which is a current limitation we're working to resolve.
           
       - question: |
-          Q: Why don't I see the organizations that I own after I sign in to my Visual Studio profile on visualstudio.com?
+          Why don't I see the organizations that I own after I sign in to my Visual Studio profile on visualstudio.com?
         answer: |
-          A: Your list of organizations is associated with the identity that you use to sign in to Azure DevOps.
+          Your list of organizations is associated with the identity that you use to sign in to Azure DevOps.
           
           If you're asked to choose between your personal Microsoft account or your work or school account when you sign in, maybe you selected the wrong identity.
           
@@ -286,14 +286,14 @@ sections:
   - name: Delete or restore your organization
     questions:
       - question: |
-          Q: How do I delete my organization?
+          How do I delete my organization?
         answer: |
-          A: See [Delete your organization](delete-your-organization.md), which includes prerequisites, precautions, and helpful tips.
+          See [Delete your organization](delete-your-organization.md), which includes prerequisites, precautions, and helpful tips.
           
       - question: |
-          Q: How do I restore my organization?
+          How do I restore my organization?
         answer: |
-          A: See [Recover your organization](./recover-your-organization.md).
+          See [Recover your organization](./recover-your-organization.md).
           
           <a name="get-support"></a>
           
