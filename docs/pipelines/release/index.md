@@ -54,7 +54,7 @@ For each deployment, Azure Pipelines runs the following sequence of steps:
    
     After deployment to the stage completes, Azure Pipelines checks whether a post-deployment approval is required. Once approval is granted, or if no approval is required, the pipeline proceeds to the next stage.
 
-    :::image type="content" source="media/what-is-release-management/understand-rm-05.png" alt-text="A screenshot showing the deployment steps in Azure Pipelines.":::
+    :::image type="content" source="media/what-is-release-management/understand-rm-05.png" alt-text="Diagram of a release pipeline showing stages for pre-deployment approval, queue job, agent selection, download artifacts, run tasks, generate logs, and post-deployment approval.":::
 
 ## Deployment model
 
@@ -64,7 +64,7 @@ In this model, the release pipeline consumes two build artifacts produced by sep
 
 Each production ring represents multiple instances of the same web application deployed to different geographic locations. This ring‑based approach enables gradual rollouts, controlled validation, and reduced risk during production deployments.
 
-:::image type="content" source="media/definition-01.png" alt-text="A screenshot showing a release pipeline deployment steps.":::
+:::image type="content" source="media/definition-01.png" alt-text="Screenshot of a release pipeline with two build artifacts deploying through Dev, QA, and two production ring stages.":::
 
 ## Releases vs deployments 
 
@@ -77,7 +77,7 @@ When you create a release, Azure Pipelines initiates deployments based on the po
 
 The following diagram shows the relationship between release pipelines, releases, and deployments.
 
-:::image type="content" source="media/release-deploy.png" alt-text="A diagram illustrating the difference between releases and deployments.":::
+:::image type="content" source="media/release-deploy.png" alt-text="Diagram that shows the relationship between a release pipeline, releases, and deployments across stages.":::
 
 ## Related content
 
