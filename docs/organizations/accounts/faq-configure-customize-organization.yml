@@ -8,7 +8,7 @@ metadata:
   ms.topic: faq
   ms.author: chcomley
   author: chcomley
-  ms.date: 01/15/2025
+  ms.date: 02/23/2026
   monikerRange: '<= azure-devops'
 title: Organization FAQs
 summary: |
@@ -84,11 +84,16 @@ sections:
           A: Sorry, we don't support localization in the Azure DevOps service. We do support localization in the on-premises version of Azure DevOps.
 
       - question: |
-          Q: How many organizations can I create?
+          Q: How many Azure DevOps organizations can I create?
         answer: |
-          A: You can [create multiple organizations](#create-another-organization). But instead of creating another organization, you might consider [creating another project](#another-team-project). Your organization can have unlimited private projects by using Git or Microsoft Team Foundation Version Control.
-          
-          There's no limit to the number of organizations that you can join.  
+          A: Azure DevOps limits the number of organizations you can create to help protect the service and ensure a reliable experience for all customers.
+          The number you can create varies based on your Azure subscription and usage history.
+
+          If you've reached your limit, this is expected behavior.
+          The limit resets automatically over time, and support can't manually increase it.
+          If you need to create more organizations sooner, you can use a different Azure subscription.
+          This behavior applies to Microsoft Entra ID accounts (work or school accounts).
+          Microsoft accounts can create a single Azure DevOps organization.
           
       - question: |
           Q: Why are some features not available in my organization?
