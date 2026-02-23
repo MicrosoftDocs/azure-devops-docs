@@ -1,12 +1,12 @@
 ---
 title: Classic release pipelines
-description: Overview of classic release pipelines
+description: Overview of Classic release pipelines
 ms.assetid: 126C3E1C-9DB3-4E46-918D-FF5600BF8FC9
 ms.topic: concept-article
 ms.custom: engagement-fy23
 ms.author: ronai
 author: RoopeshNair
-ms.date: 06/02/2023
+ms.date: 02/23/2026
 monikerRange: '<= azure-devops'
 ---
 
@@ -14,47 +14,55 @@ monikerRange: '<= azure-devops'
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
-Classic release pipelines provide developers with a framework for deploying applications to multiple environments efficiently and securely. Using classic release pipelines, you can automate testing and deployment processes, set up flexible deployment strategies, incorporate approval workflows, and ensure smooth application transitions across various stages.
+Classic release pipelines help you deploy applications to multiple environments in a secure and reliable way. Using classic release pipelines, you can automate testing and deployments, define flexible deployment strategies, add approval gates, and manage deployments across stages.
+
+## Prerequisites
+
+| **Product**        | **Requirements**  |
+|--------------------|-------------------|
+| **Azure DevOps**   | - An [Azure DevOps organization](../../organizations/accounts/create-organization.md).<br> - An [Azure DevOps project](../../organizations/projects/create-project.md). |
 
 ## How do release pipelines work
 
-As part of every deployment, Azure Pipelines executes the following steps:
+For each deployment, Azure Pipelines runs the following sequence of steps:
 
 1. **Pre-deployment approval**:
    
-    When a new deployment request is triggered, Azure Pipelines verifies if a predeployment approval is necessary before deploying a release to a stage. If approval is required, it sends email notifications to the relevant approvers.
+    When a deployment is triggered, Azure Pipelines checks whether a pre-deployment approval is required for the stage. If approval is required, it sends notifications to the configured approvers and waits for approval before continuing.
 
 1. **Queue deployment job**:
    
-    Azure Pipelines schedules the deployment job on an available [Agent](../agents/agents.md).
+    Azure Pipelines queues the deployment job and schedules it on an available [Agent](../agents/agents.md).
 
-1. **Agent selection**:
+1. **Select an agent**:
    
-    An available agent picks up the deployment job. A release pipeline can be configured to dynamically select a suitable agent during runtime.
+    An available agent picks up the deployment job. Release pipelines can be configured to dynamically select an appropriate agent at runtime.
 
 1. **Download artifacts**:
    
-    The agent retrieves and downloads all the artifacts specified in the release.
+    The agent downloads all artifacts associated with the release.
 
-1. **Run the deployment tasks**:
+1. **Run deployment tasks**:
    
-    The agent executes all the tasks in the deployment job.
+    The agent executes the tasks defined in the deployment job for the stage.
 
-1. **Generate progress logs**:
+1. **Generate deployment logs**:
    
-    The agent generates comprehensive logs for each deployment step and sends them back to Azure Pipelines.
+    The agent generates detailed logs for each deployment step and sends them back to Azure Pipelines.
 
 1. **Post-deployment approval**:
    
-    After the deployment to a stage is finished, Azure Pipelines verifies if a post-deployment approval is necessary for that particular stage. If no approval is needed, or once a required approval is obtained, it proceeds to initiate the deployment to the next stage.
+    After deployment to the stage completes, Azure Pipelines checks whether a post-deployment approval is required. Once approval is granted, or if no approval is required, the pipeline proceeds to the next stage.
 
-:::image type="content" source="media/what-is-release-management/understand-rm-05.png" alt-text="A screenshot showing the deployment steps in Azure Pipelines.":::
+    :::image type="content" source="media/what-is-release-management/understand-rm-05.png" alt-text="A screenshot showing the deployment steps in Azure Pipelines.":::
 
 ## Deployment model
 
-Azure release pipelines support a wide range of [artifact sources](artifacts.md#artifact-sources) including Jenkins, Azure Artifacts, and Team City. The following example illustrates a deployment model using Azure release pipelines:
+Azure release pipelines support a wide range of [artifact sources](artifacts.md#artifact-sources) including Jenkins, Azure Artifacts, and Team City. This flexibility allows you to design deployment models that span multiple build systems and environments. The following example illustrates a deployment model using Azure release pipelines.
 
-In the following example, the pipeline consists of two build artifacts originating from separate build pipelines. The application is initially deployed to the *Dev* stage and then to two separate *QA* stages. If the deployment is successful in both QA stages, the application will be deployed to *Prod ring 1* and then to *Prod ring 2*. Each production ring represents multiple instances of the same web app, deployed to different locations across the world.
+In this model, the release pipeline consumes two build artifacts produced by separate build pipelines. The application is first deployed to the Dev stage, followed by deployment to two parallel QA stages. After the application is successfully validated in both QA stages, it is deployed to *Prod ring 1* and then to *Prod ring 2*.
+
+Each production ring represents multiple instances of the same web application deployed to different geographic locations. This ring‑based approach enables gradual rollouts, controlled validation, and reduced risk during production deployments.
 
 :::image type="content" source="media/definition-01.png" alt-text="A screenshot showing a release pipeline deployment steps.":::
 
