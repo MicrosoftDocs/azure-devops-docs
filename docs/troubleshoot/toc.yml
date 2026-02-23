@@ -32,6 +32,8 @@
       href: ../pipelines/troubleshooting/troubleshoot-triggers.md?toc=/azure/devops/troubleshoot/toc.json
     - name: Troubleshoot workload identity service connections
       href: ../pipelines/release/troubleshoot-workload-identity.md?toc=/azure/devops/troubleshoot/toc.json
+    - name: Troubleshoot Azure Web App deployment
+      href: ../pipelines/troubleshooting/troubleshoot-azure-web-app-deploy.md?toc=/azure/devops/troubleshoot/toc.json
 - name: Azure Repos
   items:
     - name: Troubleshoot code scanning (GitHub Advanced Security)

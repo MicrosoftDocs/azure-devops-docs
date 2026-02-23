@@ -6,7 +6,7 @@ ms.assetid: B43E78DE-5D73-4303-981F-FB86D46F0CAE
 ms.topic: troubleshooting
 ms.author: jukullam
 author: juliakm
-ms.date: 11/13/2025
+ms.date: 02/23/2026
 ai-usage: ai-assisted
 monikerRange: '<= azure-devops'
 "recommendations": "true"
@@ -205,16 +205,18 @@ The token for your service principal or secret is now renewed for three more mon
 
 This issue occurs when you try to save a service connection that has an expired secret or other issues at the Microsoft Entra ID level.
 
+A service connection in this state might also not appear in pipeline task dropdowns (such as Azure App Service Deploy or Azure PowerShell), even though it's visible under **Project settings** > **Service connections**.
+This happens when the underlying service principal was deleted or the `isReady` status of the connection is `false`.
+
 To resolve this issue:
 
 1. Go to **Project settings** > **Service connections**, and then select the service connection you want to modify.
-
-1. Select **Edit** in the upper-right corner, and then make any change to your service connection. The easiest and recommended change is to add a description.
-
-1. Select **Save** to save the service connection.
+1. Select **Edit**, and then select **Verify** to check the connection status.
+1. If verification fails with an `AADSTS700016` error ("Application with identifier was not found in the directory"), the service principal was deleted. Create a new service connection, or for manual connections, update the connection with new service principal details.
+1. If verification succeeds, select **Save** to save the service connection.
 
 > [!NOTE]
-> If you get an error like `Failed to obtain the Json Web Token(JWT) using service principal client ID. Exception message: AADSTS7000112: Application is disabled.`, work with your Microsoft Entra ID team to confirm that the option [Enabled for users to sign-in](/troubleshoot/entra/entra-id/app-integration/error-code-aadsts7000112-application-is-disabled) in the enterprise application linked with your service principal isn't disabled. 
+> If you get an error like `Failed to obtain the Json Web Token(JWT) using service principal client ID. Exception message: AADSTS7000112: Application is disabled.`, work with your Microsoft Entra ID team to confirm that the option [Enabled for users to sign-in](/troubleshoot/entra/entra-id/app-integration/error-code-aadsts7000112-application-is-disabled) in the enterprise application linked with your service principal isn't disabled.
 
 ## Azure subscription isn't passed from the previous task output
 
@@ -243,6 +245,80 @@ To learn about managed identities for virtual machines, see [Assigning roles](/a
 
 > [!NOTE]
 > Microsoft-hosted agents don't support managed identities. In this scenario, you must [set up a self-hosted agent](../agents/agents.md#install) on an Azure VM and configure a managed identity for that VM.
+
+## AuthorizationFailed error when running pipeline tasks
+
+When a pipeline task runs against an Azure resource, you might see the following error:
+
+```
+AuthorizationFailed: The client '<ClientName>' with object id '<ObjectId>' does not have authorization 
+to perform action '<ActionName>' over scope '/subscriptions/<SubscriptionId>/...'
+```
+
+The client and object ID in the error message refer to the service principal that backs your service connection.
+
+To resolve this issue:
+
+1. In the Azure portal, go to the resource or resource group referenced in the error's scope.
+2. Select **Access control (IAM)** > **Role assignments**.
+3. Verify that the service principal listed in the error has a role that includes the required action (for example, **Contributor** or a custom role).
+4. If the role assignment is missing, select **Add** > **Add role assignment** and assign the appropriate role to the service principal.
+5. Wait a few minutes for the role assignment to propagate, then retry the pipeline.
+
+For more information about Azure RBAC, see [Azure built-in roles](/azure/role-based-access-control/built-in-roles).
+
+## Service connection not authorized for pipeline
+
+When a pipeline runs, you might see the following error:
+
+```
+Resource not authorized. You need to authorize the resource before it can be used.
+```
+
+This error occurs when the service connection hasn't been granted permission to the pipeline that's trying to use it.
+
+To resolve this issue:
+
+1. Go to **Project settings** > **Service connections**.
+2. Select the service connection that the pipeline uses.
+3. Select **More actions** (**...**) > **Security**.
+4. Under **Pipeline permissions**, select **+** and add the pipeline that needs access.
+
+Alternatively, you can grant access to all pipelines:
+
+1. On the service connection's security page, select **More actions** > **Open access**.
+
+> [!NOTE]
+> Open access allows any pipeline in the project to use the service connection. For tighter control, grant access to specific pipelines only.
+
+For more information, see [Service connection security](../library/service-endpoints.md#service-connection-security).
+
+## Create a service principal without Azure subscription permissions
+
+If you don't have the required permissions on the Azure subscription or Microsoft Entra ID to create a service connection through the automatic method, ask an administrator to create the service principal manually.
+You can then enter the service principal details in Azure DevOps to create the service connection.
+
+1. Ask a user who has the required Azure subscription and Microsoft Entra ID permissions to [create a service principal in Microsoft Entra ID](/azure/active-directory/develop/howto-create-service-principal-portal) and assign it the appropriate role on the subscription.
+2. Get the following details from the administrator: **Application (client) ID**, **Directory (tenant) ID**, **Subscription ID**, and a **client secret** or **certificate**.
+3. In Azure DevOps, go to **Project settings** > **Service connections** > **New service connection** > **Azure Resource Manager** > **Service principal (manual)**.
+4. Enter the details provided by the administrator and save the connection.
+
+For more information, see [Create an Azure Resource Manager service connection with an existing service principal](../library/connect-to-azure.md#create-a-service-connection-that-uses-an-existing-service-principal).
+
+## Unable to delete a service connection
+
+When you try to delete an Azure RM service connection, you might receive an error such as "Failed to remove Azure permission" or "Failed to remove the service principal from Microsoft Entra ID." In some cases, the connection remains in the list even though no error is displayed.
+
+To resolve this issue:
+
+1. Select the service connection and select **Delete**. Even if error messages appear about Azure permissions or the service principal, the connection should still be removed from Azure DevOps.
+2. If deletion fails, use the [Service Endpoint REST API](/rest/api/azure/devops/serviceendpoint/endpoints/delete) to delete it directly. Set the `deep` parameter to `false` to skip the underlying service principal cleanup:
+
+   ```
+   DELETE https://dev.azure.com/{organization}/{project}/_apis/serviceendpoint/endpoints/{endpointId}?deep=false&api-version=7.1
+   ```
+
+3. After deleting the connection, manually remove or update the associated service principal from [App registrations](https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/RegisteredApps) in the Azure portal.
 
 ## Use AI to troubleshoot an Azure DevOps service connection error
 
