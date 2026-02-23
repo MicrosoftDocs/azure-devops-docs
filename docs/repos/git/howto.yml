@@ -2,7 +2,7 @@
 metadata:
   title: Git frequently asked questions
   titleSuffix: Azure Repos
-  description: Learn some tips and how-to address less-common Git tasks.
+  description: Find answers to frequently asked questions about Git in Azure Repos, including branch management, commit practices, proxy and SSL configuration, and authentication troubleshooting.
   ms.assetid: b1262306-214c-4422-8eda-d03d05825241
   ms.service: azure-devops-repos
   ms.topic: faq
@@ -14,7 +14,7 @@ title:  Git FAQs
 summary: | 
   [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
-  In this article, find answers to frequently asked questions about Git, specifically tailored for Azure Repos. Whether you're looking to manage remote branches, identify your current branch, or handle other less-common Git tasks, this guide provides helpful tips and solutions. Dive into the following sections to enhance your Git workflow and resolve common issues.
+  Find answers to frequently asked questions about using Git with Azure Repos, including branch management, commit practices, configuration, and troubleshooting clone, push, proxy, SSL, and authentication issues.
 sections:
   - name: Ignored
     questions:
