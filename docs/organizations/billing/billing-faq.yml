@@ -12,7 +12,7 @@ metadata:
   ms.topic: faq
   ms.author: chcomley
   author: chcomley
-  ms.date: 12/09/2025
+  ms.date: 02/23/2026
   monikerRange: '<= azure-devops'
 title: Billing FAQs
 summary: |
@@ -28,9 +28,9 @@ sections:
       - question: |
           Q: What types of Azure subscriptions can be used to create an Azure DevOps organization?
         answer: |
-          A: You can create an organization with most common types of Azure subscriptions, including Pay-As-You-Go, Cloud Solution Provider, and Enterprise Agreement. Azure Free Trial and Visual Studio benefit subscriptions are not yet supported but will be in early 2026. 
-
-          Azure DevOps is only available in Azure public cloud, so only public cloud subscriptions are supported.  
+          A: You can create an Azure DevOps organization using most Azure subscription types in the Azure public cloud. This includes common paid subscriptions (such as Pay‑As‑You‑Go, CSP, and Enterprise Agreement) as well as benefit‑based subscriptions (for example, Visual Studio, student, trial, and sponsorship subscriptions).
+          
+          Azure DevOps is available only in the Azure public cloud, so subscriptions in other Azure clouds are not supported.
   
       - question: |
           Q: What happens when free tier limits are reached?
