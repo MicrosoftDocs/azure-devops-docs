@@ -291,7 +291,7 @@ Alternatively, you can grant access to all pipelines:
 > [!NOTE]
 > Open access allows any pipeline in the project to use the service connection. For tighter control, grant access to specific pipelines only.
 
-For more information, see [Service connection security](../library/service-endpoints.md#service-connection-security).
+For more information, see [Service connection security](../library/service-endpoints.md).
 
 ## Create a service principal without Azure subscription permissions
 
