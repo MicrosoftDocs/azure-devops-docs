@@ -5,6 +5,7 @@ metadata:
   description: Learn the answers to frequently asked questions (FAQs) about creating, deleting, restoring, and configuring your organization in Azure DevOps.
   ms.subservice: azure-devops-organizations
   ms.assetid: e0fe24d4-f76b-43af-b0fd-125a7fb39042
+  ms.custom: support-driven-update
   ms.topic: faq
   ms.author: chcomley
   author: chcomley
