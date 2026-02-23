@@ -977,9 +977,9 @@ jobs:
   pool:
     vmImage: 'ubuntu-latest'
   variables:
-    myVarFromJobsA1: $[ dependencies.A.outputs['job1.setvarStep.myOutputVar'] ]
+    myVarFromJobsA: $[ dependencies.A.outputs['setvarStep.myOutputVar'] ]
   steps:
-  - script: "echo $(myVarFromJobsA1)"
+  - script: "echo $(myVarFromJobsA)"
     name: echovar
 ```
 
