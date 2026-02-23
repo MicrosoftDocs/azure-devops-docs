@@ -6,7 +6,8 @@ metadata:
   ms.assetid: b1262306-214c-4422-8eda-d03d05825241
   ms.service: azure-devops-repos
   ms.topic: faq
-  ms.date: 08/22/2024
+  ms.date: 02/23/2026
+  ai-usage: ai-assisted
   monikerRange: '<= azure-devops'  
   ms.subservice: azure-devops-repos-git
 title:  Git FAQs 
@@ -134,3 +135,109 @@ sections:
           Visual Studio 2019 version 16.8 and later versions provides a Git version control experience while maintaining the **Team Explorer** Git user interface. To use **Team Explorer**, uncheck **Tools** > **Options** > **Preview Features** > **New Git user experience** from the menu bar. You can exercise Git features from either interface interchangeably.
           
           In Team Explorer, choose **Settings** and under **Git**, select the **Global Settings** or **Repository Settings** link.  
+
+      - question: |
+          How can I troubleshoot Git clone or push failures?
+        answer: |
+          Enable verbose tracing to get detailed error information.
+          Set the following environment variables before running your Git command:
+
+          ```
+          set GIT_TRACE=1
+          set GIT_TRACE_PACKET=1
+          set GIT_CURL_VERBOSE=1
+          ```
+
+          The trace output helps identify whether the failure is related to network connectivity, proxy configuration, SSL certificates, or authentication.
+          For more information about Git environment variables, see [Git Internals - Environment Variables](https://git-scm.com/book/en/v2/Git-Internals-Environment-Variables).
+
+      - question: |
+          How do I configure Git to connect through a proxy server?
+        answer: |
+          If you're behind a proxy server and Git isn't configured to use it, clone and push operations fail with `407`, `502`, or "unable to access" errors.
+
+          Run `git config --list` to check whether a proxy is already configured.
+          If not, set the proxy globally:
+
+          > [!div class="tabbedCodeSnippets"]
+          ```Git CLI
+          > git config --global http.proxy http://proxyUsername:proxyPassword@proxy.server.com:port
+          ```
+
+          To configure a proxy for a specific URL only:
+
+          > [!div class="tabbedCodeSnippets"]
+          ```Git CLI
+          > git config --global http.https://dev.azure.com.proxy http://proxyUsername:proxyPassword@proxy.server.com:port
+          ```
+
+          For more information, see [Git config documentation](https://git-scm.com/docs/git-config).
+
+      - question: |
+          How do I fix authentication errors when cloning or pushing to Azure DevOps?
+        answer: |
+          If your password changed or cached credentials are stale, Git clone or push operations fail with authentication errors.
+          Reset the Git Credential Manager (GCM) to resolve the issue:
+
+          > [!div class="tabbedCodeSnippets"]
+          ```Git CLI
+          > git config --global --unset credential.helper
+          > git config --global credential.helper manager
+          ```
+
+          You can also remove cached credentials directly in Windows Credential Manager:
+
+          1. Open **Control Panel** > **User Accounts** > **Credential Manager**.
+          2. Select **Windows Credentials**.
+          3. Find and remove entries for `git:https://dev.azure.com/<orgname>`.
+
+          Alternatively, use the command line:
+
+          > [!div class="tabbedCodeSnippets"]
+          ```Git CLI
+          > cmdkey /list | findstr "git"
+          > cmdkey /delete:git:https://dev.azure.com/<orgname>
+          ```
+
+          On macOS, run `git credential reject` to clear stored credentials:
+
+          ```
+          echo url=https://dev.azure.com/<orgname> | git credential reject
+          ```
+
+          After clearing credentials, retry the clone or push operation. Git prompts you to reauthenticate.
+
+      - question: |
+          How do I fix SSL certificate errors when connecting to Azure DevOps Server?
+        answer: |
+          When you clone or push to an Azure DevOps Server instance that uses a self-signed or internal-CA certificate, Git fails with:
+
+          `fatal: unable to access '...': SSL certificate problem: unable to get local issuer certificate`
+
+          **Option 1: Use Windows SChannel (recommended on Windows)**
+
+          Configure Git to use the Windows certificate store instead of its bundled OpenSSL CA bundle.
+          If your server's certificate or CA is trusted by Windows, no further steps are needed:
+
+          > [!div class="tabbedCodeSnippets"]
+          ```Git CLI
+          > git config --global http.sslBackend schannel
+          ```
+
+          For more information about configuring the SSL backend in Visual Studio, see [Git settings - Cryptographic network provider](git-config.md).
+
+          **Option 2: Point Git to your CA certificate**
+
+          Export your root or intermediate CA certificate as a Base-64 encoded `.crt` file, then tell Git where to find it:
+
+          > [!div class="tabbedCodeSnippets"]
+          ```Git CLI
+          > git config --global http.sslCAInfo C:/Users/<yourname>/my-ca-cert.crt
+          ```
+
+          You can also append the certificate to Git's existing CA bundle (typically at `C:\Program Files\Git\mingw64\etc\ssl\certs\ca-bundle.crt`) instead of overriding the entire bundle.
+
+          > [!WARNING]
+          > Avoid setting `http.sslVerify` to `false` except for temporary testing. Disabling SSL verification removes protection against man-in-the-middle attacks.
+
+          For pipeline agent scenarios with self-signed certificates, see [Run a self-hosted agent behind a proxy or with self-signed certificates](../../pipelines/agents/certificate.md).
