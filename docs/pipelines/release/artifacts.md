@@ -22,7 +22,7 @@ Azure Pipelines supports a wide range of repositories, services, and CI/CD platf
 
 :::image type="content" source="media/classic-release-pipeline-add-artifact-souce.png" alt-text="A screenshot that shows how to add an artifact to a classic release pipeline.":::
 
-If you link multiple artifacts, you can specify which one is the primary source (default). The primary artifact source is used to set several predefined [variables](variables.md#release-artifacts-variables) and can also be used for [naming releases](index.md#q-how-do-i-manage-the-naming-of-new-releases).
+If you link multiple artifacts, you can specify which one is the primary source (default). The primary artifact source is used to set several predefined [variables](variables.md#release-artifacts-variables) and can also be used for naming releases.
 
 :::image type="content" source="media/classic-release-pipeline-set-primary-souce.png" alt-text="A screenshot that shows how to set a primary source artifact.":::
 
