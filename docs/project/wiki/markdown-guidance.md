@@ -11,7 +11,7 @@ author: chcomley
 ms.reviewer: gopinach
 ms.topic: concept-article
 monikerRange: '<= azure-devops'
-ms.date: 01/07/2026
+ms.date: 02/18/2026
 #customer intent: As an Azure DevOps developer, I want to use Markdown to create tables, lists, headings, and more, so I can share my project information in pull requests, README files, dashboards, and wikis.
 ---
 
@@ -23,7 +23,9 @@ ms.date: 01/07/2026
 
 This article describes the basic syntax for using Markdown (*.md*) format with Azure DevOps features, including [Wiki pages](#markdown-in-an-azure-devops-wiki). Markdown syntax lets you add special formatting to your page content, like headings, lists, tables, and images. Use Markdown to format your README files, dashboards, pull request content, and more.
 
-There are two formatting options: common [Markdown conventions](https://daringfireball.net/projects/markdown/syntax), and [Markdown extensions for GitHub](https://docs.github.com/get-started/writing-on-github).
+Two formatting options are available: common [Markdown conventions](https://daringfireball.net/projects/markdown/syntax), and [Markdown extensions for GitHub](https://docs.github.com/get-started/writing-on-github).
+
+[!INCLUDE [ai-assistance-callout](../../includes/ai-assistance-callout.md)]
 
 ## Support for Azure DevOps features
 
@@ -101,7 +103,7 @@ This is the first line with two spaces at the end.
 This is the second line, which will appear directly below the first.
 ```
 
-This renders as:
+This Markdown renders as:
 
 This is the first line with two spaces at the end.  
 This is the second line, which appears directly below the first.
@@ -169,7 +171,7 @@ The following image shows the published view of the Markdown for quoted text:
 
 ## Horizontal rules
 
-Underline or separate content and page sections with horizontal rules. You can add separators in a [Definition of Done (board)](../../boards/boards/add-columns.md#definition-of-done), the [Markdown widget](../../report/dashboards/add-markdown-to-dashboard.md), pull requests, readme files, and wiki files.
+Underline or separate content and page sections with horizontal rules. You can add separators in a [Definition of Done (board)](../../boards/boards/add-columns.md#definition-of-done), the [Markdown widget](../../report/dashboards/add-markdown-to-dashboard.md), pull requests, Readme files, and wiki files.
 
 To add a horizontal rule, enter a blank line, then another line with three hyphens (dashes) `---`.
 
@@ -210,7 +212,7 @@ Combine these styles to add emphasis. You can use emphasis styles in a [Definiti
 
 ### Example: Emphasize text
 
-Here's some Markdown that shows how to emphasize text with different and combined styles:
+Here's some Markdown that shows how to emphasize text by using different and combined styles:
 
 ```md
 **Italics** highlights text in a larger block like _new terminology_.
@@ -234,7 +236,7 @@ Highlight text blocks or inline text as code by using code highlights. You can a
 
 To format a text block as code, enclose the block within three backtick (` ``` `) characters. The backticks that start and end the section must be on a separate line from the code block to highlight.
 
-You can also format a portion of text within a larger text block as an inline code segment. For this style, enclose the inline code within single backticks. The backticks are inline with the text and not on separate lines.
+You can also format a portion of text within a larger text block as an inline code segment. For this style, enclose the inline code within single backticks. The backticks are inline with the text and aren't on separate lines.
 
 Code highlighting in the Markdown widget renders code as plain preformatted text.
 
@@ -243,7 +245,7 @@ Code highlighting in the Markdown widget renders code as plain preformatted text
 This example shows how to highlight a text block as code in the Markdown widget:
 
 ```bash
-<!-- ```  Three backticks to start block " -->
+<!-- ```  Three backticks to start block -->
 sudo npm install vsoagent-installer -g
 <!-- ```  Three backticks to end block -->
 ``` 
@@ -268,13 +270,13 @@ This image shows the published view of the Markdown for a portion of text highli
 
 ### Example: Convert text to code, identify code language
 
-There's another way to convert a text block into code. When a line of text in Markdown starts with four spaces in the left margin, the text automatically converts to a code block. This example demonstrates this behavior:
+You can convert a text block into code by using another method. When a line of text in Markdown starts with four spaces in the left margin, the text automatically converts to a code block. This example demonstrates this behavior:
 
 ```md
     This article is a Markdown file (_.md_). This line of text automatically formats as code because the line starts with four spaces in the left margin.
 ```
 
-The preferred approach is to enclose the text within three backticks so you can specify the language identifier. The identifier applies syntax highlighting to the code according to the conventions of the specified language. Identifier labels are available for most programming languages, like JavaScript (`js`), C# (`csharp`), and Markdown (`md`). For the list of supported languages, see the [highlightjs](https://github.com/highlightjs/highlight.js/tree/stable-11/src/languages) GitHub repository.
+Use the preferred approach to enclose the text within three backticks so you can specify the language identifier. The identifier applies syntax highlighting to the code according to the conventions of the specified language. Identifier labels are available for most programming languages, like JavaScript (`js`), C# (`csharp`), and Markdown (`md`). For the list of supported languages, see the [highlightjs](https://github.com/highlightjs/highlight.js/tree/stable-11/src/languages) GitHub repository.
 
 These examples show how to identify a text block as JavaScript or C#. Add the language identifier label after the first three backticks, as in ` ```md `.
 
@@ -308,7 +310,7 @@ Console.WriteLine("Hello, World!");
 
 ## Suggest change
 
-GitHub pull requests support the **Comment** feature, which lets contributors provide input and suggest changes. Add a comment for a specific line or multiple lines in a file. The pull request author applies the suggested change in a comment by selecting **Apply Change**. This action commits the change to the pull request and starts a build.
+GitHub pull requests support the **Comment** feature, which contributors use to provide input and suggest changes. Add a comment for a specific line or multiple lines in a file. The pull request author applies the suggested change in a comment by selecting **Apply Change**. This action commits the change to the pull request and starts a build.
 
 When you add a comment that includes code highlighting in the Markdown widget, the code shows in a differences format. The changes in the modified line are annotated to show the differences. The minus symbol `-` indicates removed content, and the plus symbol `+` highlights new content.
 
@@ -330,15 +332,15 @@ For more information, see [Suggest changes in comments](../../repos/git/review-p
 
 ## Tables
 
-Organize structured data with Markdown tables. Add tables in the Markdown widget, pull requests, Readme files, and wiki files. Tables are especially useful for describing function parameters, object methods, and other data with a clear name-to-description mapping.
+Organize structured data by using Markdown tables. Add tables in the Markdown widget, pull requests, Readme files, and wiki files. Tables are especially useful for describing function parameters, object methods, and other data with a clear name-to-description mapping.
 
 Here are some points about working with tables in Markdown:
 
 - Create each row on a separate line and end each row with a carriage return (CR) or line feed (LF).
-- Create columns with hyphens `-` and the pipe symbol `|`, like `|---|---|---|`.
-- Define the column headers in the first row, like `| First | Middle | Last |`.
-- Set the column alignment (left, center, right) by using colons `:` in the second row, like `|:--|:--:|--:|`.
-- Escape the pipe symbol with a backslash `\|` when you use it in table text, like `| Describe the pipe \| symbol. |`
+- Create columns by using hyphens `-` and the pipe symbol `|`, such as `|---|---|---|`.
+- Define the column headers in the first row, such as `| First | Middle | Last |`.
+- Set the column alignment (left, center, right) by using colons `:` in the second row, such as `|:--|:--:|--:|`.
+- Escape the pipe symbol with a backslash `\|` when you use it in table text, such as `| Describe the pipe \| symbol. |`.
 - Add line breaks within a cell by using the HTML break tag `<br/>`. This approach works in a wiki but not elsewhere.
 - Add a blank space before and after a work item or pull request mentioned in table text.
 
@@ -460,13 +462,13 @@ Here's the published view of the list with nested lists:
 
 ## Links
 
-Link to work items by entering the hash mark `#` followed by a work item ID, then select the work item from the list. Add different types of links in a [Definition of Done (board)](../../boards/boards/add-columns.md#definition-of-done), the [Markdown widget](../../report/dashboards/add-markdown-to-dashboard.md), pull requests, Readme files, and wiki files.
+Link to work items by entering the hash mark `#` followed by a work item ID, and then select the work item from the list. Add different types of links in a [Definition of Done (board)](../../boards/boards/add-columns.md#definition-of-done), the [Markdown widget](../../report/dashboards/add-markdown-to-dashboard.md), pull requests, Readme files, and wiki files.
 
 Here are some points about working with links in Markdown:
 
 - The standard Markdown syntax for a link is `[Link display text](Link path)`.
 - In pull request comments and wikis, URLs that start with HTTP or HTTPS automatically format as links.
-- If you use the hash mark `#` in other ways, like color hex codes, you can avoid auto suggestions for work items by prefixing the hash mark `#` with a backslash `\`.
+- If you use the hash mark `#` in other ways, like color hex codes, prefix the hash mark `#` with a backslash `\` to avoid auto suggestions for work items.
 - In Markdown files and widgets, create text hyperlinks for a URL by using the standard Markdown link syntax. The `Link path` can be relative or absolute.
 
   The following example shows how to specify a relative link in Markdown. The text renders as a hyperlink:
@@ -484,7 +486,7 @@ Here are some points about working with links in Markdown:
 When you link to another Markdown page in the same Git or Team Foundation Version Control (TFVC) repository, specify the link target as a relative or absolute path.
 
 > [!NOTE]  
-> Links to documents on file shares (`file://...`) aren't supported for security reasons.
+> For security reasons, you can't use links to documents on file shares (`file://...`).
 
 The following sections show examples for different Markdown scenarios.
 
@@ -517,7 +519,7 @@ Here are some examples of relative links in a wiki page:
 
 ### Source control relative links
 
-Relative links to source control files are interpreted differently in a Welcome page and a Markdown widget:
+A Welcome page and a Markdown widget interpret relative links to source control files differently:
 
 #### Example: Welcome page relative links
 
@@ -537,10 +539,10 @@ Relative links in a Markdown widget are relative to the team project collection 
 
 When a Markdown file renders as HTML, the system assigns an anchor ID to each header on the page. The ID is a converted form of the header text. The system applies the following changes to create the ID:
 
-- Replace spaces in the header text with hyphens `-`
-- Change uppercase letters to lowercase
-- Convert most special characters and punctuation to hyphens, including `:`, `"`, `?`, `@`, `$`, `#`
-- Remove or convert other special characters according to the rendering engine's rules
+- Replace spaces in the header text with hyphens `-`.
+- Change uppercase letters to lowercase.
+- Convert most special characters and punctuation to hyphens, including `:`, `"`, `?`, `@`, `, `#`.
+- Remove or convert other special characters according to the rendering engine's rules.
 
 Use the hash mark `#` to link to the header in the document, as in `[Display text](#<header-anchor>)`.
 
@@ -603,7 +605,7 @@ The path to the image file can be a relative path or an absolute path in Git or 
 
 ### Image size
 
-Set the image size with the `Image-path =Image-widthxImage-height` syntax:
+Set the image size by using the `Image-path =Image-widthxImage-height` syntax:
 
 - The letter `x` represents the "by" in the width-by-height expression.
 - Don't add a space before or after the letter `x`.
@@ -620,15 +622,15 @@ Here's an example of Markdown syntax for an image with a width of 500 and a heig
 
 ## Checklist or task list
 
-Track the progress of your assignments and action items with lightweight task lists. Add checklists or task lists in pull requests and wiki files. This feature is useful in the pull request description to track input from reviewers or in a wiki project page to track task status.
+Track the progress of your assignments and action items by using lightweight task lists. Add checklists or task lists in pull requests and wiki files. This feature is useful in the pull request description to track input from reviewers or in a wiki project page to track task status.
 
 ### Example: Create checklist in Markdown
 
 Create a checklist directly in the Markdown:
 
-- Use empty square brackets `[<space>]` to create a new task.
+- Use empty square brackets `[ ]` to create a new task.
 - Show a task as completed by including the letter `x` inside the square brackets `[x]`.
-- Precede each task with a hyphen and space `-<space>[<space>]` or a number and space `1.<space>[<space>]`. Use any numeral.
+- Precede each task with a hyphen and space `- [ ]` or a number and space `1. [ ]`. Use any numeral.
 - Don't use a checklist inside a Markdown table.
 
 The following example creates a checklist with four items, where the first item is marked as completed:
@@ -678,7 +680,7 @@ This image shows the published view of the emoji reactions:
 
 ### Example: Escape emoji syntax in Markdown
 
-This example shows how to escape emoji syntax with the backslash `\` character in Markdown:
+This example shows how to escape emoji syntax by using the backslash `\` character in Markdown:
 
 ```md
 Markdown syntax for some emoji reactions:
@@ -699,13 +701,13 @@ In a pull request comment, use two backslashes `\\` to escape the emoji syntax c
 
 Use the backslash `\` as an escape character in Markdown to publish special characters as literal text. The backslash tells the publishing system to show the special character as literal text and not interpret or convert it.
 
-Use ignore and escape syntax in a [Definition of Done (board)](../../boards/boards/add-columns.md#definition-of-done), the [Markdown widget](../../report/dashboards/add-markdown-to-dashboard.md), pull requests, Readme files, and wiki files.
+Use the `ignore` and `escape` syntax in a [Definition of Done (board)](../../boards/boards/add-columns.md#definition-of-done), the [Markdown widget](../../report/dashboards/add-markdown-to-dashboard.md), pull requests, Readme files, and wiki files.
 
 ### Example: Publish special characters
 
 The Markdown syntax \`Enclose text in backticks\` shows as `Enclose text in backticks` in the published view. The publishing system applies the `inline code` format to the text within the backticks (\`) and doesn't publish the backticks.
 
-If you prefix the backtick (\`) with a backslash (\\), the text format within the backticks doesn't change, and the backticks are published. This behavior works for most special characters, including parentheses `()`, square brackets `[]`, underscore `_`, hyphen `-`, hash mark `#`, asterisk `*`, backtick \` , and the backslash `\` itself.
+If you prefix the backtick (\`) with a backslash (\\), the text format within the backticks doesn't change, and the publishing system includes the backticks. This behavior works for most special characters, including parentheses `()`, square brackets `[]`, underscore `_`, hyphen `-`, hash mark `#`, asterisk `*`, backtick \` , and the backslash `\` itself.
 
 The following Markdown uses the backslash `\` character to show special characters as literal text:
 
@@ -803,7 +805,7 @@ MOV (_.mov_), MP4 (_.mp4_)
 :::row-end:::
 
 > [!NOTE]
-> Not all file formats are supported as attachments in pull request comments, such as Microsoft Office Message (_.msg_) files.
+> Pull request comments don't support all file formats as attachments. For example, Microsoft Office Message (_.msg_) files aren't supported.
 
 ### Attach images or files
 
@@ -886,16 +888,16 @@ Here's the published view of the expressions in the Markdown file:
 
 ## Markdown in an Azure DevOps wiki
 
-There are many ways you can use Markdown to enhance your Azure DevOps wiki. The following sections provide syntax examples for various tasks:
+You can use Markdown in many ways to enhance your Azure DevOps wiki. The following sections provide syntax examples for various tasks:
 
-- Add Mermaid diagrams like sequences, flowcharts, and user journeys
-- Create a table of contents (TOC) for pages and subpages
-- Configure collapsible page sections
-- Embed videos and Azure Boards query results
-- Link to work items with the hash mark `#`
-- Use `@<alias>` mentions for users and groups
-- Include HTML elements like `<font>` for rich text 
-- Check the page visit count
+- Add Mermaid diagrams like sequences, flowcharts, and user journeys.
+- Create a table of contents (TOC) for pages and subpages.
+- Configure collapsible page sections.
+- Embed videos and Azure Boards query results.
+- Link to work items by using the hash mark `#`.
+- Use `@<alias>` mentions for users and groups.
+- Include HTML elements like `<font>` for rich text. 
+- Check the page visit count.
 
 The availability of these features depends on your version of Azure DevOps.
 
@@ -1147,7 +1149,7 @@ Here's the published view of the requirements diagram:
 
 #### Example: Gitgraph diagram
 
-A git graph diagram (type `gitGraph`) is used to visualize Git operations like commits, branches, and merges.
+Use a git graph diagram (type `gitGraph`) to visualize Git operations like commits, branches, and merges.
 
 The following example shows how to add a git graph diagram to a wiki page:
 
@@ -1177,7 +1179,7 @@ Here's the published view of the git graph diagram:
 
 #### Example: Entity Relationship diagram
 
-An entity relationship diagram (type `erDiagram`) is used to model the relationships between entities in a system, such as a database or an application. These diagrams help in understanding and designing the structure of data and its interrelationships.
+Use an entity relationship diagram (type `erDiagram`) to model the relationships between entities in a system, such as a database or an application. These diagrams help you understand and design the structure of data and its interrelationships.
 
 The following example shows how to add an entity relationship diagram to a wiki page:
 
@@ -1202,7 +1204,7 @@ Here's the published view of the entity relationship diagram:
 
 #### Example: Timeline diagram
 
-A timeline diagram (type `timeline`) is used to visualize events in chronological order, making it easier to track progress or historical events.
+Use a timeline diagram (type `timeline`) to visualize events in chronological order, making it easier to track progress or historical events.
 
 The following example shows how to add a Timeline diagram to a wiki page:
 
@@ -1236,13 +1238,13 @@ Here's the published view of the timeline diagram:
 
 ## Table of contents for a wiki page
 
-Create a table of contents (TOC) for your wiki page by using the `[[_TOC_]]` syntax tag. When the publishing system encounters the tag and confirms at least one heading on the wiki page, it generates the TOC for the page. The title of the TOC on the page is "Contents." 
+Create a table of contents (TOC) for your wiki page by using the `[[_TOC_]]` syntax tag. When the publishing system encounters the tag and finds at least one heading on the wiki page, it generates the TOC for the page. The TOC title on the page is "Contents." 
 
 :::image type="content" source="media/toc-sample.png" alt-text="Screenshot that shows how to apply the TOC syntax tag to generate a TOC for a wiki page.":::
 
-To create the TOC, you can add the `[[_TOC_]]` syntax tag to the wiki page in the Markdown or select **More options** (**...**) > **Table of Contents** in the **Edit** view for the page.
+To create the TOC, add the `[[_TOC_]]` syntax tag to the wiki page in Markdown or select **More options** (**...**) > **Table of Contents** in the **Edit** view for the page.
 
-Here are some points about adding a TOC:
+Consider the following points about adding a TOC:
 
 - The syntax for the `[[_TOC_]]` tag is case-sensitive. If you specify the syntax by using lowercase `[[_toc_]]`, the TOC might not render.
 - The publishing system renders the TOC for the first instance of the `[[_TOC_]]` tag in the Markdown page. It ignores other instances of the tag on the same page.
@@ -1262,7 +1264,7 @@ The following example shows how the publishing system ignores extra formatting f
 
 Add a table of subpages for a wiki page by using the `[[_TOSP_]]` syntax tag. The title of the table on the page is "Child Pages." The table includes an entry for each subpage of the wiki page.
 
-To create the table of subpages, you can add the `[[_TOSP_]]` syntax tag to the wiki page in the Markdown or select **More options** (**...**) > **Table of Subpages** in the **Edit** view for the page.
+To create the table of subpages, add the `[[_TOSP_]]` syntax tag to the wiki page in Markdown or select **More options** (**...**) > **Table of Subpages** in the **Edit** view for the page.
 
 Here are some points about adding a table of subpages:
 
@@ -1278,7 +1280,7 @@ Here are some points about adding a table of subpages:
 
 ## Collapsible sections in a wiki page
 
-Add a collapsible section in a wiki page with the HTML `<details><summary>` syntax. You can use a collapsible section to limit visibility of specific content on the page, such as outdated or archived data, or set up a question/answer scenario.
+Add a collapsible section in a wiki page by using the HTML `<details><summary>` syntax. Use a collapsible section to limit visibility of specific content on the page, such as outdated or archived data, or set up a question and answer scenario.
 
 When the wiki page opens, the collapsible section is closed (collapsed), but the section summary is visible. Users can select the title to expand (open) and collapse the section as needed. 
 
@@ -1346,11 +1348,11 @@ In the **Query Results** dialog, select the query results, and then select **Ins
 
 For more information about how to copy the query URL, which provides a GUID for the query, see [Email query items or share query URL](../../boards/queries/view-run-query.md#email-query-items-or-share-a-query-url).
 
-## Notifications with @ mentions
+## Notifications by using @ mentions
 
-Create mentions for users or groups with the _at_ symbol `@`, as in `@<user-alias>`. When you enter the _at_ `@` symbol, the **Autosuggest** dialog opens where you can select users or groups to receive email notifications:
+Create mentions for users or groups by using the _at_ symbol `@`, as in `@<user-alias>`. When you enter the _at_ `@` symbol, the **Autosuggest** dialog opens where you can select users or groups to receive email notifications:
 
-:::image type="content" source="media/mention-autosuggest.png" border="false" alt-text="Screenshot that shows how to select a user in the Autosuggest dialog to add an @ mention in the wiki page.":::
+:::image type="content" source="media/mention-autosuggest.png" border="true" alt-text="Screenshot that shows how to select a user in the Autosuggest dialog to add an @ mention in the wiki page.":::
 
 You can also select **More options** (**...**) > **@ Mention** on the toolbar:
 
@@ -1426,7 +1428,7 @@ The following image shows the published view of the HTML rich text content in a 
 
 Here's the same published page in Dark theme view:
 
-:::image type="content" source="media/wiki/green-red-dark-theme.png" border="false" alt-text="Screenshot of a published wiki page that uses HTML rich text formatting, as shown in Dark theme view.":::
+:::image type="content" source="media/wiki/green-red-dark-theme.png" border="true" alt-text="Screenshot of a published wiki page that uses HTML rich text formatting, as shown in Dark theme view.":::
 
 ## Related content  
 

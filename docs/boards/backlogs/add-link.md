@@ -554,7 +554,8 @@ If you have the [Azure DevOps MCP Server](../../mcp-server/mcp-server-overview.m
 | **Create and link test cases** | ```copilot-prompt Create a Test Case with test steps based on user story <1234> and link it back to the story ``` |
 
 > [!TIP]
-> To avoid using stale or cached data from previous queries, add to your prompt, `Do not use previously fetched data`.
+> - If you're using Visual Studio Code, [agent mode](/visualstudio/ide/copilot-chat-context#agent-mode) is especially helpful for troubleshooting complex linking scenarios.
+> - To avoid using stale or cached data from previous queries, add to your prompt, `Do not use previously fetched data`.
 
 ::: moniker-end
 

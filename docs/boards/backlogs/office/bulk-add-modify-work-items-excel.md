@@ -18,6 +18,8 @@ ms.date: 08/18/2025
 
 [!INCLUDE [version-lt-eq-azure-devops](../../../includes/version-lt-eq-azure-devops.md)]
 
+[!INCLUDE [deprecate-office-integration](../../includes/deprecate-office-integration.md)]
+
 This article shows how you can save time with Microsoft Excel when you need to add or modify many work items, add links and attachments to multiple work items, and more. You can also use native Excel features to perform actions such as summing a column, copying and pasting rows, or filling down data into cells.
 
 > [!TIP]

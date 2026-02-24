@@ -7,7 +7,7 @@ ms.custom: quarterly-update, engagement-fy23
 ms.author: chcomley
 author: chcomley
 ms.topic: concept-article
-ms.date: 05/08/2025
+ms.date: 02/17/2026
 #customer intent: As a developer, I want to configure and manage notifications in Azure DevOps organizations so I can stay informed and improve collaboration within my development teams.
 ---
 
@@ -18,6 +18,8 @@ ms.date: 05/08/2025
 Notifications in Azure DevOps keep you and your team informed about project activity, including changes to work items, code reviews, pull requests, source control files, and builds. When an event occurs in Azure DevOps, the event content is compared with every subscription of that event type. A notification is generated for every subscription/event match that meets the filter conditions. Notifications are delivered through email or service hook, based on the delivery properties defined in the subscription. 
 
 For more information, see the list of [supported event types](oob-supported-event-types.md) and [learn more about email delivery options](concepts-email-recipients.md).
+
+[!INCLUDE [ai-assistance-callout](../../includes/ai-assistance-callout.md)]
 
 ## Notification types
 

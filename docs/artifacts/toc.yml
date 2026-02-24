@@ -9,9 +9,9 @@
   - name: Publish your first package
     displayName: publish, dotnet
     href: get-started-artifacts-ai.md
-  - name: Monitor Artifacts storage
-    displayName: storage, consumption, usage, billing
+  - name: Monitor storage consumption
     href: artifact-storage.md
+    displayName: storage, consumption, usage, billing
   - name: Key concepts
     displayName: concepts, artifacts
     href: artifacts-key-concepts.md

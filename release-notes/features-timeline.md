@@ -281,17 +281,12 @@ Below, you will find several investments that we plan to deliver as part of this
          <td>2026 Q1</td>
       </tr>
       <tr>
-         <td><a href="/azure/devops/release-notes/roadmap/2026/testplans/tfe-improved-reliability" data-raw-source="[Improve Reliability of Test & Feedback Extension for Edge and Chrome](/azure/devops/release-notes/roadmap/2026/testplans/tfe-improved-reliability)">Improve Reliability of Test & Feedback Extension for Edge and Chrome</a></td>
+         <td><a href="/azure/devops/release-notes/roadmap/2026/testplans/TFE-Improved-Reliability" data-raw-source="[Improve Reliability of Test & Feedback Extension for Edge and Chrome](/azure/devops/release-notes/roadmap/2026/testplans/TFE-Improved-Reliability)">Improve Reliability of Test & Feedback Extension for Edge and Chrome</a></td>
          <td>Test Plans</td>
          <td>2026 Q2</td>
       </tr>
       <tr>
-         <td><a href="/azure/devops/release-notes/2026/testplans/sprint-268-update" data-raw-source="[Support Capturing of Actual Test Result](/azure/devops/release-notes/2026/testplans/sprint-268-update)">Support Capturing of Actual Test Result</a></td>
-         <td>Test Plans</td>
-         <td>2026 Q2</td>
-      </tr>
-      <tr>
-         <td><a href="/azure/devops/release-notes/roadmap/2026/testplans/new-web-runner" data-raw-source="[Revamp of the Web Runner](/azure/devops/release-notes/roadmap/2026/testplans/new-web-runner)">Revamp of the Web Runner</a></td>
+         <td><a href="/azure/devops/release-notes/roadmap/2026/testplans/Actual-Test-Result" data-raw-source="[Support Capturing of Actual Test Result](/azure/devops/release-notes/roadmap/2026/testplans/Actual-Test-Result)">Support Capturing of Actual Test Result</a></td>
          <td>Test Plans</td>
          <td>2026 Q2</td>
       </tr>
@@ -388,7 +383,7 @@ Below, you will find several investments that we plan to deliver as part of this
          <td><a href="/azure/devops/release-notes/roadmap/2026/wiki-monaco-editor" data-raw-source="[Replace existing Wiki editor with Monaco Editor](/azure/devops/release-notes/roadmap/2026/wiki-monaco-editor)">Replace existing Wiki editor with Monaco Editor</a></td>
          <td>Wiki</td>
       </tr>
-      <td rowspan="4"><strong>2026 Q2</strong></td>
+      <td rowspan="3"><strong>2026 Q2</strong></td>
       <td><a href="/azure/devops/release-notes/roadmap/2025/ghazdo/default-setup" data-raw-source="[CodeQL default setup (one-click enablement)](/azure/devops/release-notes/roadmap/2025/ghazdo/default-setup)">CodeQL default setup (one-click enablement)</a></td>
         <td>GitHub Advanced Security for Azure DevOps</td>
       </tr>
@@ -398,10 +393,6 @@ Below, you will find several investments that we plan to deliver as part of this
       </tr>
       <tr>
          <td><a href="/azure/devops/release-notes/roadmap/2026/testplans/Actual-Test-Result" data-raw-source="[Support Capturing of Actual Test Result](/azure/devops/release-notes/roadmap/2026/testplans/Actual-Test-Result)">Support Capturing of Actual Test Result</a></td>
-         <td>Test Plans</td>
-      </tr>
-      <tr>
-         <td><a href="/azure/devops/release-notes/roadmap/2026/testplans/New-Web-Runner" data-raw-source="[Revamp of the Web Runner](/azure/devops/release-notes/roadmap/2026/testplans/New-Web-Runner)">Revamp of the Web Runner</a></td>
          <td>Test Plans</td>
       </tr>
       <td rowspan="20"><strong>Future</strong></td>

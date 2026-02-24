@@ -9,7 +9,7 @@ ms.custom: copilot-scenario-highlight
 ms.author: chcomley
 author: chcomley
 ms.topic: troubleshooting
-ms.date: 01/07/2026
+ms.date: 02/12/2026
 ---
 
 # Resolve Azure DevOps and Office integration issues
@@ -20,6 +20,8 @@ Azure DevOps integrates with Microsoft Office applications, primarily Excel and 
 
 > [!div class="mx-imgBorder"]
 > ![Screenshot of Excel and Azure DevOps/Office integration Team ribbon.](media/excel-team-ribbon.png)
+
+[!INCLUDE [deprecate-office-integration](../../includes/deprecate-office-integration.md)]
 
 Common scenarios where you might encounter integration issues include:
 

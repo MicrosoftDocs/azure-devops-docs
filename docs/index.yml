@@ -327,6 +327,17 @@ additionalContent:
               url: ./service-hooks/overview.md?toc=/azure/devops/marketplace-extensibility/toc.json
             - text: See more >
               url: ./marketplace-extensibility/index.yml
+        # Card
+        - title: Troubleshooting & FAQs
+          links:
+            - text: Troubleshoot connection and access
+              url: ./user-guide/troubleshoot-connection.md
+            - text: Troubleshoot permissions
+              url: ./organizations/security/troubleshoot-permissions.md
+            - text: Troubleshoot pipelines
+              url: ./pipelines/troubleshooting/troubleshooting.md
+            - text: All troubleshooting guides & FAQs
+              url: ./troubleshoot/index.yml
 
   # footer (optional)
   footer: "[Blogs](https://devblogs.microsoft.com/devops/) - [Twitter](https://twitter.com/AzureDevOps) - [Stack Overflow](https://stackoverflow.com/questions/tagged/azure-devops) - [Issue Reporting](https://azure.microsoft.com/support/devops/) - [Developer Community](https://azure.microsoft.com/support/devops/) - [Service Status](https://status.dev.azure.com/)"

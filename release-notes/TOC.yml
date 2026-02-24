@@ -10,6 +10,8 @@
       items:
         - name: "2026"
           items:
+          - name: February 11
+            href: 2026/sprint-269-update.md
           - name: January 26
             href: 2026/sprint-268-update.md
             expanded: true
@@ -313,6 +315,8 @@
         items:
         - name: "2026"
           items:
+          - name: February 11
+            href: 2026/boards/sprint-269-update.md
           - name: January 26
             href: 2026/boards/sprint-268-update.md
           expanded: false
@@ -492,6 +496,8 @@
         items:
         - name: "2026"
           items:
+          - name: February 11
+            href: 2026/repos/sprint-269-update.md
           - name: January 26
             href: 2026/repos/sprint-268-update.md
           expanded: false
@@ -599,6 +605,11 @@
           expanded: false
       - name: Azure Pipelines
         items:
+        - name: "2026"
+          items:
+          - name: February 11
+            href: 2026/pipelines/sprint-269-update.md
+          expanded: false
         - name: "2025"
           items:
           - name: December 19
@@ -982,6 +993,8 @@
         items:
         - name: "2026"
           items:
+          - name: February 11
+            href: 2026/ghazdo/sprint-269-update.md
           - name: January 26
             href: 2026/ghazdo/sprint-268-update.md
           expanded: false

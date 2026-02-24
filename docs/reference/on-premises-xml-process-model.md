@@ -8,7 +8,7 @@ ms.author: chcomley
 author: chcomley
 ms.topic: overview
 monikerRange: '< azure-devops'
-ms.date: 01/17/2023 
+ms.date: 02/17/2026 
 ---
 
 # On-premises XML process customization
@@ -33,6 +33,8 @@ For Azure DevOps Server 2019 and later versions, you have a choice of process mo
 > Migration of projects or collections from Hosted XML to the inherited model is not support for Azure DevOps Server. It is only available on the Azure DevOps Services.
 > 
 > To customize an Azure DevOps Services project, see [About process customization and inherited processes](../organizations/settings/work/inheritance-process-model.md). This article applies to on-premises deployments only.  
+
+[!INCLUDE [ai-assistance-callout](../includes/ai-assistance-callout.md)]
 
 ## Supported customizations  
 

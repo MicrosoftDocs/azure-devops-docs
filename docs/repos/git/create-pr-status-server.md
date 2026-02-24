@@ -5,7 +5,7 @@ description: Create a web server to listen to pull request events and post statu
 ms.assetid: 2653589c-d15e-4dab-b8b0-4f8236c4a67b
 ms.service: azure-devops-repos
 ms.topic: tutorial
-ms.date: 07/02/2025
+ms.date: 02/10/2026
 monikerRange: '<= azure-devops'
 ms.subservice: azure-devops-repos-git
 ms.custom: devx-track-js, sfi-image-nochange
@@ -159,7 +159,7 @@ To receive the service hook notifications, expose a port to the public internet.
     POST /                         200 OK
     ```
 
-    In the Test Notification window, select the Response tab to see the details of the response from your server. You should see a content length of 17 that matches the length of the string from your POST handler (for example, "Received the POST").
+    In the Test Notification window, select the *Response* tab to see the details of the response from your server. You should see a status code of 200, and in this case a content length of 17 that matches the length of the string from your POST handler (for example, "Received the POST"). You can examine the request body from the *Request* tab.
 
     ![Screenshot shows selected response tab for results of the test.](media/create-pr-status-server/test-notification.png)
 
@@ -231,6 +231,8 @@ Now that your server can receive service hook events when new PRs are created, u
     setx TOKEN "your-entra-id-token-here"
     ```
 
+---
+
 ### Obtaining Microsoft Entra ID tokens programmatically (Recommended for production)
 
 For production applications, you should obtain Microsoft Entra ID tokens programmatically rather than using static tokens. Here's how to implement this using the Microsoft Authentication Library (MSAL) for Node.js:
@@ -289,6 +291,7 @@ For production applications, you should obtain Microsoft Entra ID tokens program
         }
     });
     ```
+---
 
 8. Update the `post()` function to read the PR details from the service hook payload. You need these values to post back status.
 
@@ -408,7 +411,7 @@ Now that your server is running and listening for service hook notifications, cr
 
     ![Screenshot shows added WIP to the default PR title.](media/create-pr-status-server/new-pr-wip.png)
 
-6. Once the PR is create, the status section shows with the **Work in progress** entry that links to the URL specified in the payload.
+6. Once the PR is created, the status section shows with the **Work in progress** entry that links to the URL specified in the payload.
 
     ![Screenshot shows status section with the Work in progress entry.](media/create-pr-status-server/pr-with-status.png)
 

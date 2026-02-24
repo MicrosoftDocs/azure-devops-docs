@@ -5,7 +5,7 @@ ms.assetid: BFCB144F-9E9B-4FCB-9CD1-260D6873BC2E
 ms.author: sdanie
 ms.reviewer: steved0x
 ms.topic: how-to
-ms.date: 04/25/2025
+ms.date: 02/23/2026
 monikerRange: '<= azure-devops'
 author: steved0x
 ---
@@ -291,7 +291,27 @@ On Windows, tools like [Process Monitor](/sysinternals/downloads/procmon) can be
 
 #### Anti-virus exclusion
 
-Anti-virus software scanning your files can cause file or folder in use errors during a build or release. Adding an anti-virus exclusion for your agent directory and configured "work folder" can help to identify anti-virus software as the interfering process.
+Anti-virus software scanning your files can cause file or folder in use errors during a build or release, and builds might take longer to complete.
+Adding anti-virus exclusions for your self-hosted agent directories and processes can help resolve these issues.
+
+> [!WARNING]
+> Excluding files or processes from antivirus scanning can make your device or data more vulnerable. Evaluate the risks and only exclude paths you're confident are safe.
+
+**Processes to exclude:**
+
+- `Agent.Listener.exe`
+- `Agent.Worker.exe`
+- `AgentService.exe`
+
+**Directories to exclude (and their subdirectories):**
+
+- The agent installation directory (for example, `C:\agent` or `/home/user/myagent`)
+- The agent work folder: `<agent_directory>\_work`
+- The agent diagnostics folder: `<agent_directory>\_diag`
+- Build output folders configured for your pipelines, such as staging directories, artifact drop locations, and symbol publish paths
+- `%ProgramFiles%\Microsoft Visual Studio\<VersionNumber>` (Windows)
+- `C:\Windows\Microsoft.NET\Framework\<VersionNumber>\Temporary ASP.NET Files` (Windows)
+- `C:\Windows\Microsoft.NET\Framework64\<VersionNumber>\Temporary ASP.NET Files` (Windows)
 
 #### MSBuild and /nodeReuse:false
 

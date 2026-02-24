@@ -9,7 +9,8 @@ ms.author: chcomley
 author: chcomley
 ms.reviewer: gopinach
 ms.topic: concept-article
-ms.date: 05/19/2025
+ms.date: 02/18/2026
+ai-usage: ai-assisted
 #customer intent: As an Azure DevOps developer, I want to explore options for sharing information about my project and Git repositories, so I can best support my project users and contributors.
 ---
 
@@ -17,7 +18,9 @@ ms.date: 05/19/2025
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
-You can support your team and project contributors by using [Markdown](https://en.wikipedia.org/wiki/Markdown) to add rich formatting, tables, and images to your team project. The Markdown format enhances team project wiki pages, content you add to a dashboard, your team project README file, or other repository README files.  
+You can support your team and project contributors by using [Markdown](https://en.wikipedia.org/wiki/Markdown) to add rich formatting, tables, and images to your team project. The Markdown format enhances team project wiki pages, content you add to a dashboard, your team project README file, and other repository README files.  
+
+[!INCLUDE [ai-assistance-callout](../../includes/ai-assistance-callout.md)]
 
 ## Set up a project wiki
 
@@ -62,12 +65,12 @@ The following links describe the supported features for a team project wiki.
 
 Many teams document their code by using Markdown files, which they check in to the repository along with their code. While Git supports the maintenance and review of code documentation files by using the standard pull request process, these files can present challenges to consumers of the content.
 
-- User must often sift through many files and folders to find the content of interest.
+- Users must often sift through many files and folders to find the content of interest.
 - Content lacks organization and structure. There's no inherent page hierarchy to support readers.
 - Content versioning isn't supported.
-- Searching through content relies on searching the code rather than a search experience optimized for searching content.
+- Searching through content relies on searching the code rather than a search experience optimized for content.
 
-With the **Publish code as wiki** feature, you can publish one or more Git repositories defined in your team project to a wiki. This feature provides a way to maintain your code documentation synchronously with your code base, and lets you selectively publish and update your documentation to a wiki.  
+By using the **Publish code as wiki** feature, you can publish one or more Git repositories defined in your team project to a wiki. This feature provides a way to maintain your code documentation synchronously with your code base and lets you selectively publish and update your documentation to a wiki.
 
 There are significant differences between how you manage the content in a wiki for a team project versus wiki pages that you publish from a Git repository. For details, see [Publish a Git repo to a wiki](publish-repo-to-wiki.md).
 
@@ -75,7 +78,7 @@ There are significant differences between how you manage the content in a wiki f
 
 The Markdown format makes it easy to format text and include images. You can also link to documents within your project pages, README files, dashboards, and pull requests.
 
-You can use Markdown to provide guidance to your team in the following ways:
+Use Markdown to provide guidance to your team in the following ways:
 
 - [Team project wiki](add-edit-wiki.md)
 - [Code published as wiki](publish-repo-to-wiki.md)
@@ -103,7 +106,7 @@ Consider adding the following guidance:
 
 ### README examples
 
-Here are some examples of project READMEs in GitHub that support all audiences for reference and inspiration:
+The following examples of project READMEs in GitHub support all audiences for reference and inspiration:
 
 - [ASP.NET Core](https://github.com/aspnet/Home)
 - [Visual Studio Code](https://github.com/Microsoft/vscode)

@@ -8,7 +8,7 @@ ms.reviewer: jominana
 ms.author: chcomley
 author: chcomley
 monikerRange: '<= azure-devops'
-ms.date: 07/02/2025
+ms.date: 02/10/2026
 ---
 
 # Allowed IP addresses and domain URLs
@@ -49,10 +49,6 @@ Ensure the following IP addresses are allowed for outbound connections on **port
 
 ```IP V4 ranges
 
-13.107.6.0/24
-13.107.9.0/24
-13.107.42.0/24
-13.107.43.0/24
 150.171.22.0/24 
 150.171.23.0/24 
 150.171.73.0/24 
@@ -65,10 +61,6 @@ Ensure the following IP addresses are allowed for outbound connections on **port
 
 ```IP V6 ranges
 
-2620:1ec:4::/48
-2620:1ec:a92::/48
-2620:1ec:21::/48
-2620:1ec:22::/48
 2620:1ec:50::/48 
 2620:1ec:51::/48 
 2603:1061:10::/48
@@ -149,18 +141,6 @@ If your organization uses ExpressRoute, ensure the following IP addresses are al
 #### [IP V4 ranges](#tab/IP-V4)
 
 ```IP V4 ranges
-13.107.6.175/32
-13.107.6.176/32
-13.107.6.183/32
-13.107.9.175/32
-13.107.9.176/32
-13.107.9.183/32
-13.107.42.18/32
-13.107.42.19/32
-13.107.42.20/32
-13.107.43.18/32
-13.107.43.19/32
-13.107.43.20/32
 150.171.73.14/32
 150.171.73.15/32
 150.171.73.16/32
@@ -184,18 +164,6 @@ If your organization uses ExpressRoute, ensure the following IP addresses are al
 #### [IP V6 ranges](#tab/IP-V6)
 
 ```IP V6 ranges
-2620:1ec:a92::175/128
-2620:1ec:a92::176/128
-2620:1ec:a92::183/128
-2620:1ec:4::175/128
-2620:1ec:4::176/128
-2620:1ec:4::183/128
-2620:1ec:21::18/128
-2620:1ec:21::19/128
-2620:1ec:21::20/128
-2620:1ec:22::18/128
-2620:1ec:22::19/128
-2620:1ec:22::20/128
 2603:1061:10::14/128
 2603:1061:10::15/128
 2603:1061:10::16/128

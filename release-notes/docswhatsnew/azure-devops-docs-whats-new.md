@@ -1,100 +1,134 @@
 ---
-title: "Azure DevOps docs: What's new for December 1, 2025 - December 31, 2025"
-description: "What's new in the Azure DevOps docs for December 1, 2025 - December 31, 2025."
-ms.date: 01/05/2026
-ms.topic: whats-new
+title: "Azure DevOps docs: What's new for January 1, 2026 - January 31, 2026"
+description: "What's new in the Azure DevOps docs for January 1, 2026 - January 31, 2026."
+ms.date: 02/03/2026
 ---
 
-# Azure DevOps docs: What's new for December 1, 2025 - December 31, 2025
+# Azure DevOps docs: What's new for January 1, 2026 - January 31, 2026
 
-Welcome to what's new in the Azure DevOps docs from December 1, 2025 through December 31, 2025. This article lists some of the major changes to docs during this period.
+Welcome to what's new in the Azure DevOps docs from January 1, 2026 through January 31, 2026. This article lists some of the major changes to docs during this period.
 
 ## Administration
 
 ### Updated articles
 
-- [Define iteration paths (sprints) and configure team iterations](/azure/devops/organizations/settings/set-iteration-paths-sprints)
-- [Billing FAQs](/azure/devops/organizations/billing/billing-faq)
-- [Not getting emails from subscriptions or notifications](/azure/devops/organizations/notifications/troubleshoot-not-getting-email)
-- [Troubleshoot access and permission issues](/azure/devops/organizations/security/troubleshoot-permissions)
-- [Resolve validation errors for process import](/azure/devops/organizations/settings/work/import-process/resolve-errors)
-- [Create audit streaming](/azure/devops/organizations/audit/auditing-streaming)
+- [Access via Microsoft Entra FAQs](/azure/devops/organizations/accounts/faq-azure-access)
+- [Change your organization connection to a different Microsoft Entra ID](/azure/devops/organizations/accounts/change-azure-ad-connection)
+- [Connect your organization to Microsoft Entra ID](/azure/devops/organizations/accounts/connect-organization-to-azure-ad)
+- [Customize the workflow (Inheritance process)](/azure/devops/organizations/settings/work/customize-process-workflow)
+- [Change project-level permissions](/azure/devops/organizations/security/change-project-level-permissions)
+- [View permissions and effective access](/azure/devops/organizations/security/view-permissions)
+- [Automate security auditing and administration](/azure/devops/organizations/security/security-scripts)
 
 ## Artifacts
 
 ### Updated articles
 
-- [Publish npm packages from the command line](/azure/devops/artifacts/npm/publish)
-- [What are feed views?](/azure/devops/artifacts/concepts/views)
-- [What are Azure Artifacts feeds?](/azure/devops/artifacts/concepts/feeds)
+- [Use an Azure Artifacts feed as a private PowerShell repository](/azure/devops/artifacts/tutorials/private-powershell-library)
+- [Promote packages and manage feed views](/azure/devops/artifacts/feeds/views)
+- [Connect to an Azure Artifacts feed - npm](/azure/devops/artifacts/npm/npmrc)
+- [Quickstart: Use GitHub Actions to push to Azure Artifacts](/azure/devops/artifacts/quickstarts/github-actions)
+- [Package notifications](/azure/devops/artifacts/how-to/follow-package-notifications)
 
 ## Azure Boards
 
+### New articles
+
+- [Integration with GitHub features timeline and roadmap](/azure/devops/boards/github/features-timeline)
+
 ### Updated articles
 
+- [Configure and customize Azure Boards](/azure/devops/boards/configure-customize)
+- [Link work items to objects](/azure/devops/boards/backlogs/add-link)
+- [Create and manage your backlog](/azure/devops/boards/backlogs/create-your-backlog)
+- [Export, update, and import bulk work items with CSV files](/azure/devops/boards/queries/import-work-items-from-csv)
+- [Modify work items in bulk in Azure Boards](/azure/devops/boards/backlogs/bulk-modify-work-items)
+- [Filter and focus your work in Azure Boards](/azure/devops/boards/backlogs/filter-backlogs-boards-plans)
+- [Define, capture, triage, and manage bugs in Azure Boards](/azure/devops/boards/backlogs/manage-bugs)
+- [Manage work items effectively](/azure/devops/boards/backlogs/manage-work-items)
 - [Manage columns on your board](/azure/devops/boards/boards/add-columns)
-- [Resolve Azure DevOps and Office integration issues](/azure/devops/boards/backlogs/office/tfs-office-integration-issues)
-- [Troubleshoot reordering and nesting issues](/azure/devops/boards/backlogs/resolve-backlog-reorder-issues)
-- [Connect Azure Boards to an Office client](/azure/devops/boards/backlogs/office/track-work)
+- [Use your board](/azure/devops/boards/boards/kanban-quickstart)
+- [Sign up for Azure Boards](/azure/devops/boards/get-started/sign-up-invite-teammates)
+- [View and add work items](/azure/devops/boards/work-items/view-add-work-items)
 
 ## Azure DevOps Reporting and Analytics service
 
 ### Updated articles
 
-- [Resolve errors associated with an Analytics view](/azure/devops/report/powerbi/troubleshooting-views)
-- [View and configure team velocity](/azure/devops/report/dashboards/team-velocity)
-- [Connect Analytics with Power BI Data Connector](/azure/devops/report/powerbi/data-connector-connect)
+- [Quickstart: Add, rename, and delete dashboards](/azure/devops/report/dashboards/dashboards)
+- [Add a time-in-state measure to your Power BI report](/azure/devops/report/powerbi/create-timeinstate-report)
 
 ## Azure Pipelines
 
-### Updated articles
+### New articles
 
-- [View Classic pipeline history](/azure/devops/pipelines/release/history)
-- [Manage security in Azure Pipelines](/azure/devops/pipelines/policies/permissions)
-- [Classic process parameters](/azure/devops/pipelines/release/parameters)
-- [Microsoft-hosted agents](/azure/devops/pipelines/agents/hosted)
-- [Publish NuGet packages with Azure Pipelines (YAML/Classic)](/azure/devops/pipelines/artifacts/nuget)
-- [Build Azure Repos Git or TFS Git repositories](/azure/devops/pipelines/repos/azure-repos-git)
-- [Quickstart: Use an ARM template to deploy a Linux web app to Azure](/azure/devops/pipelines/apps/cd/azure/deploy-arm-template)
-- [Tutorial: Deploy a Java app to a virtual machine scale set](/azure/devops/pipelines/apps/cd/azure/deploy-virtual-scale-set-java)
-- [Build, test, and deploy Xcode apps](/azure/devops/pipelines/ecosystems/xcode)
-- [Self-hosted Linux agents](/azure/devops/pipelines/agents/linux-agent)
-- [Self-hosted macOS agents](/azure/devops/pipelines/agents/osx-agent)
-- [Self-hosted Windows agents](/azure/devops/pipelines/agents/windows-agent)
-
-## CLI
+- [Create Classic pipelines](/azure/devops/pipelines/release/create-classic-pipelines)
 
 ### Updated articles
 
-- [Troubleshoot common errors in Azure DevOps CLI](/azure/devops/cli/troubleshooting)
+- [Use Azure Key Vault secrets in Azure Pipelines](/azure/devops/pipelines/release/azure-key-vault)
+- [Build, test, and deploy .NET Core projects](/azure/devops/pipelines/ecosystems/dotnet-core)
+- [Use variables in Classic release pipelines](/azure/devops/pipelines/release/variables)
+- [Build and test Go projects](/azure/devops/pipelines/ecosystems/go)
+- [Azure Resource Manager service connection special cases](/azure/devops/pipelines/library/azure-resource-manager-alternate-approaches)
+- [Secure agents, projects, and containers](/azure/devops/pipelines/security/misc)
+- [Quickstart: Build and deploy to a Java web app](/azure/devops/pipelines/ecosystems/java-webapp)
+- [Migrate from Jenkins to Azure Pipelines](/azure/devops/pipelines/migrate/from-jenkins)
+- [Migrate from Travis to Azure Pipelines](/azure/devops/pipelines/migrate/from-travis)
+- [Protect a repository resource](/azure/devops/pipelines/process/repository-resource)
+- [Deployment group jobs](/azure/devops/pipelines/release/deployment-group-phases)
+- [Deploy web apps to Azure VMs by using deployment groups](/azure/devops/pipelines/release/deployment-groups/deploying-azure-vms-deployment-groups)
+- [Provision agents for deployment groups](/azure/devops/pipelines/release/deployment-groups/howto-provision-deployment-group-agents)
+- [Use deployment groups in classic release pipelines](/azure/devops/pipelines/release/deployment-groups/index)
+- [Build a data pipeline by using Azure Data Factory, Azure DevOps, and Azure Machine Learning](/azure/devops/pipelines/apps/cd/azure/build-data-pipeline)
+- [Azure Pipelines architecture for Azure Web Apps](/azure/devops/pipelines/architectures/devops-pipelines-azure-web-apps-architecture)
+- [Azure Pipelines architecture with Azure DevTest Labs](/azure/devops/pipelines/architectures/devops-pipelines-devtest-iaas-architecture)
+- [Azure Pipelines architecture for IaaS](/azure/devops/pipelines/architectures/devops-pipelines-iaas-vms-architecture)
+- [Tutorial: Use a canary deployment strategy for Kubernetes](/azure/devops/pipelines/ecosystems/kubernetes/canary-demo)
+- [Manage variables in variable groups with the Azure DevOps CLI](/azure/devops/pipelines/scripts/cli/pipeline-variable-group-secret-nonsecret-variables)
+- [Use Azure Pipelines with Slack](/azure/devops/pipelines/integrations/slack)
+- [Resources in Azure Pipelines](/azure/devops/pipelines/process/about-resources)
+- [Build ASP.NET apps with .NET Framework](/azure/devops/pipelines/apps/aspnet/build-aspnet-4)
+- [Use secure files](/azure/devops/pipelines/library/secure-files)
+- [Set secret variables](/azure/devops/pipelines/process/set-secret-variables)
+- [Template expressions](/azure/devops/pipelines/process/template-expressions)
+- [Manually set an Azure Resource Manager workload identity service connection](/azure/devops/pipelines/release/configure-workload-identity)
+- [Publish and download pipeline artifacts](/azure/devops/pipelines/artifacts/pipeline-artifacts)
+- [Connect to Azure with an Azure Resource Manager service connection](/azure/devops/pipelines/library/connect-to-azure)
+- [Expressions](/azure/devops/pipelines/process/expressions)
+- [Use Azure Pipelines to build and push container images to registries](/azure/devops/pipelines/ecosystems/containers/push-image)
+- [Configure pipelines to support work tracking](/azure/devops/pipelines/integrations/configure-pipelines-work-tracking)
+- [Deploy to Azure services](/azure/devops/pipelines/overview-azure)
 
-## Extend
+## Azure Repos
 
 ### Updated articles
 
-- [Extensibility points](/azure/devops/extend/reference/targets/overview)
+- [Configure GitHub Advanced Security for Azure DevOps](/azure/devops/repos/security/configure-github-advanced-security-features)
+- [Migrate custom check-in policies](/azure/devops/repos/tfvc/tfvc-check-in-policy-migrate-guide)
 
 ## Managed DevOps Pools
 
-### New articles
+### Updated articles
 
-- [Configure advanced settings](/azure/devops/managed-devops-pools/configure-advanced-settings)
+- [Managed DevOps Pools features timeline and roadmap](/azure/devops/managed-devops-pools/features-timeline)
 
-## Migrate
+## Project
 
 ### Updated articles
 
-- [Resolve migration errors](/azure/devops/migrate/migration-troubleshooting)
+- [Add and edit wiki pages](/azure/devops/project/wiki/add-edit-wiki)
 
 ## Service-hooks
 
 ### Updated articles
 
-- [Troubleshoot service hooks](/azure/devops/service-hooks/troubleshoot)
+- [Service hook events](/azure/devops/service-hooks/events)
 
 ## User guide
 
 ### Updated articles
 
-- [Troubleshoot connecting to a project](/azure/devops/user-guide/troubleshoot-connection)
+- [Share your code by using Git](/azure/devops/user-guide/code-with-git)
+- [Plan your organizational structure](/azure/devops/user-guide/plan-your-azure-devops-org-structure)
 

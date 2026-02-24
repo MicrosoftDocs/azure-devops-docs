@@ -10,25 +10,25 @@ author: chcomley
 ms.topic: how-to
 monikerRange: '<= azure-devops'
 ms.update: 90-days
-ms.date: 01/12/2026
+ms.date: 02/04/2026
 ---
 
 # View permissions and effective access
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
-This article shows how to view permissions and check effective access for users and groups at the organization, project, and repository (or other object) levels. It explains permission states (Allow, Deny, Inherit), how inheritance and group membership affect effective permissions, and steps to troubleshoot common access issues.
+This article shows how to view permissions and check effective access for users and groups at the organization, project, and repository (or other object) levels. It explains permission states (Allow, Deny, Inherit), how inheritance and group membership affect effective permissions, and steps to troubleshoot common access problems.
 
-What you learn:
+You learn about:
 - Where to view permission assignments in the web portal
 - How to check effective permissions for users and groups
 - Common reasons permissions don't work as expected (inheritance, denies, Stakeholder access, Microsoft Entra ID group mapping)
 
 Quick steps:
-1. Open **Organization settings** or **Project settings** > **Security** (or **Permissions**)
-2. Select the object (project, repository, or group) and view assigned permissions
-3. Use the Users/Groups or Effective Permissions UI to inspect effective access
-4. If needed, examine group memberships and deny rules that override allows
+1. Open **Organization settings** or **Project settings** > **Security** (or **Permissions**).
+1. Select the object (project, repository, or group) and view assigned permissions.
+1. Use the **Users/Groups** or **Permissions** UI to inspect effective access.
+1. If needed, examine group memberships and deny rules that override allows.
 
 > [!NOTE]
 > Permission management features and UI vary slightly between Azure DevOps Services (cloud) and on-premises Azure DevOps Server. The following guidance calls out UI differences where applicable.
@@ -46,7 +46,7 @@ Effective permissions are computed by evaluating assignments across:
 - Group memberships (built-in groups, custom groups, Microsoft Entra ID groups)
 - Explicit Deny assignments (take precedence)
 
-What "effective" permissions mean:
+### What effective permissions mean
 
 Effective permissions are the net access a user or group actually has on an object after Azure DevOps evaluates every relevant permission assignment. The system combines explicit Allow and Deny assignments across the object, parent scopes, and all group memberships; explicit Deny entries take priority. In practice, "effective permissions" show the final result (what someone can actually do), not every individual assignment that contributed to that result.
 
@@ -56,50 +56,53 @@ For a deep dive on permission resolution and inheritance, see [About permissions
 
 You can view permissions at multiple places in the web portal depending on the object:
 
-- Organization or collection level: **Organization settings** > **Security** (or O**rganization settings** > **Permissions**).
+- Organization or collection level: **Organization settings** > **Security** (or **Organization settings** > **Permissions**).
 - Project level: **Project settings** > **Permissions** (or **Project settings** > **Security** in older UIs).
 - Repository, pipeline, board, or other resource: Open the resource, then **Settings** or **Security** (for example, **Repos** > select **repository** > **Security**).
 
 The **Security**/**Permissions** page shows assigned groups and users and a permission matrix you can filter by user or group.
 
-## Check effective permissions (UI)
+## View permissions for a user or group
 
 ::: moniker range="azure-devops"
 1. Sign in to `https://dev.azure.com/{Your_Organization}`.
-2. Go to the object you want to inspect (Organization, Project, Repository, etc.).
-3. Select **Project settings** or **Organization settings** > **Permissions** (or **Security**).
-4. Choose **Users** or **Groups**, select the identity you want to inspect, then view the permission grid.
-5. Use any provided "Effective permissions" link or button (if present) to calculate the final effective permission for the selected identity on the chosen object.
+1. Go to the object you want to inspect (Organization, Project, Repository, etc.).
+1. Select **Project settings** or **Organization settings** > **Permissions**.
+1. Select **Users** or **Groups**, then select the identity you want to inspect.
+1. View the permission grid to see the assigned permissions. The grid shows the effective result for each permission based on group memberships and inheritance.
 
-    :::image type="content" source="media/view-permissions/open-security-project-level-vert.png" alt-text="Open security or permissions for a project.":::
+   > [!NOTE]
+   > The permission grid displays the computed effective permissions for the selected user or group. To understand why a permission has a specific value, review the user's group memberships and check for explicit **Allow** or **Deny** assignments at parent scopes.
+
+   :::image type="content" source="media/view-permissions/open-security-project-level-vert.png" alt-text="Screenshot showing project-level permissions page.":::
 ::: moniker-end
 
 ::: moniker range="<azure-devops"
 1. Sign in to your server or collection portal.
-2. Go to **Project settings** > **Security** (or Organization/Collection settings > Security).
-3. Select the group or user and examine the permission matrix. Use the filter and effective-permission controls in the dialog.
+1. Go to **Project settings** > **Security** (or Organization/Collection settings > Security).
+1. Select the group or user and examine the permission matrix. Use the filter and effective-permission controls in the dialog.
 ::: moniker-end
 
-## Check effective permissions (command line / REST)
+## Check permissions (command line / REST)
 
 If you prefer automation, use the REST API to read ACLs or the Azure DevOps CLI/PowerShell modules to script permission checks. Look up the security namespace for the resource and evaluate ACL bits to compute effective access.
 
 ## Common scenarios and troubleshooting
 
-- Deny overrides Allow: An explicit Deny on any scope wins. Check for denies on higher or lower scopes and across group memberships.
-- Membership in multiple groups: Effective permissions combine group assignments; a Deny in any group applies.
-- Inheritance from parent scopes: If a permission is Inherit at the current level, check parent scopes for assignments.
-- Microsoft Entra ID group mapping: If users are added through Microsoft Entra groups, ensure the correct group is synced to Azure DevOps and that the group's membership is what you expect.
-- Stakeholder access limits: Users with Stakeholder access experience limited feature availability regardless of permission assignments—verify access level if a user can't perform an action.
-- Dynamic or temporary access: Some policies (like conditional access) or external provisioning might affect sign-in/access—check Microsoft Entra conditional access policies if sign-in fails.
+- **Deny** overrides **Allow**: An explicit **Deny** on any scope always wins. Check for denies on higher or lower scopes and across group memberships.
+- Membership in multiple groups: Effective permissions combine group assignments; a **Deny** in any group applies.
+- Inheritance from parent scopes: If a permission is **Inherit** at the current level, check parent scopes for assignments.
+- Microsoft Entra ID group mapping: If you add users through Microsoft Entra groups, ensure the correct group is synced to Azure DevOps and that the group's membership is what you expect.
+- Stakeholder access limits: Users with Stakeholder access experience limited feature availability regardless of permission assignments - verify access level if a user can't perform an action.
+- Dynamic or temporary access: Some policies (like conditional access) or external provisioning might affect sign-in or access. Check Microsoft Entra conditional access policies if sign-in fails.
 
 Quick troubleshooting checklist
-1. Confirm the user account being used to sign in (matches the identity shown in Azure DevOps).
-2. Inspect the user's direct and indirect group memberships.
-3. Search for any explicit Deny assignments at the object and parent scopes.
-4. Check the user's access level (Stakeholder vs Basic) and licensing limits.
-5. If you're using Microsoft Entra groups, confirm group sync and membership.
-6. If needed, use REST/CLI to list ACLs for the resource and evaluate programmatically.
+1. Confirm the user account used to sign in matches the identity shown in Azure DevOps.
+1. Inspect the user's direct and indirect group memberships.
+1. Search for any explicit Deny assignments at the object and parent scopes.
+1. Check the user's access level (Stakeholder vs Basic) and licensing limits.
+1. If you're using Microsoft Entra groups, confirm group sync and membership.
+1. If needed, use REST or CLI to list ACLs for the resource and evaluate programmatically.
 
 ## Audit and history
 

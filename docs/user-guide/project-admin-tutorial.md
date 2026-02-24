@@ -7,7 +7,7 @@ ms.author: chcomley
 author: chcomley
 ms.topic: concept-article
 monikerRange: '<= azure-devops'
-ms.date: 05/05/2025
+ms.date: 02/17/2026
 #customer intent: As a project administrator, I want to structure my projects and manage users in Azure DevOps, so I can support my development teams.
 ---
 
@@ -18,6 +18,8 @@ ms.date: 05/05/2025
 With most Azure DevOps Services, you can start using the service and configure resources as you go. No up-front work is required. Most settings define defaults. 
 
 If you created a project or you're added to the **Project Administrators** group, get familiar with the administrative tasks you're charged with. There are a few tasks you might want to do to ensure a smooth operational experience. 
+
+[!INCLUDE [ai-assistance-callout](../includes/ai-assistance-callout.md)]
 
 ## Prerequisites
 

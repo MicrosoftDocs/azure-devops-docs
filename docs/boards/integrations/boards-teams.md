@@ -38,6 +38,8 @@ By using the Azure Boards app for Microsoft Teams, you can:
 | **Access levels** | - **Contributor** for the project.<br> - Access to a team and channel in Microsoft Teams where you can install an app. |
 | **Permissions** | To create subscriptions in a Slack channel for work item events: Member of the [Project Administrators](../../organizations/security/change-project-level-permissions.md) or [Team Administrators](../../organizations/settings/add-team-administrator.md) group. |
 
+[!INCLUDE [ai-assistance-callout](../../includes/ai-assistance-callout.md)]
+
 ## Add the Azure Boards app to Teams
 
 To add the Azure Boards app to your Teams channels, do the following steps.

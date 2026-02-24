@@ -9,7 +9,7 @@ ai-usage: ai-assisted
 ms.author: chcomley
 author: chcomley
 monikerRange: "<=azure-devops"
-ms.date: 03/05/2025
+ms.date: 02/17/2026
 ---
  
 
@@ -18,6 +18,8 @@ ms.date: 03/05/2025
 [!INCLUDE [version-lt-eq-azure-devops](../includes/version-lt-eq-azure-devops.md)]
 
 Azure Boards and Azure Pipelines offer multiple integration points with GitHub and GitHub Enterprise. These integrations enable seamless collaboration between development and project management, enhancing traceability, workflow efficiency, and overall productivity. By connecting your GitHub repositories with Azure DevOps, you can streamline your development processes and gain better insights into your projects.
+
+[!INCLUDE [ai-assistance-callout](../includes/ai-assistance-callout.md)]
 
 ## Authenticate and collaborate with GitHub
 

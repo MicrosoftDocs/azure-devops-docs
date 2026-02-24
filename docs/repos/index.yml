@@ -136,3 +136,15 @@ landingContent:
             url: /rest/api/azure/devops/git/
           - text: TFVC REST API
             url: /rest/api/azure/devops/tfvc/
+  - title: Troubleshoot
+    linkLists:
+      - linkListType: how-to-guide
+        links:
+          - text: Troubleshoot code scanning (GitHub Advanced Security)
+            url: ./security/github-advanced-security-code-scanning-troubleshoot.md
+          - text: Troubleshoot dependency scanning (GitHub Advanced Security)
+            url: ./security/github-advanced-security-dependency-scanning-troubleshoot.md
+          - text: Troubleshoot secret scanning (GitHub Advanced Security)
+            url: ./security/github-advanced-security-secret-scanning-troubleshoot.md
+          - text: All troubleshooting guides & FAQs
+            url: ../troubleshoot/index.yml

@@ -9,7 +9,7 @@ ms.author: chcomley
 author: chcomley
 ms.topic: overview
 monikerRange: '<= azure-devops'
-ms.date: 01/13/2023
+ms.date: 02/17/2026
 ---
 
 # Process templates overview  
@@ -30,6 +30,8 @@ For on-premises deployments and Azure DevOps Services, you can [upload/download 
 If you use the Hosted XML process model, you can [import/export a process](../../organizations/settings/work/import-process/import-process.md?toc=/azure/devops/reference/toc.json).
 
 For details on creating a project using the process of your choice, see [Create a project](../../organizations/projects/create-project.md). 
+
+[!INCLUDE [ai-assistance-callout](../../includes/ai-assistance-callout.md)]
 
 ## Related resources
 

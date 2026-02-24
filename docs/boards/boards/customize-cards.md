@@ -5,11 +5,12 @@ description: Learn how to customize cards to show relevant information and highl
 ms.custom: boards-kanban, engagement-fy23
 ms.service: azure-devops-boards
 ms.assetid: 951A73EA-7411-4A2A-B3F0-ACBBC7EFC68F
+ai-usage: ai-assisted
 ms.author: chcomley
 author: chcomley
 ms.topic: how-to
 monikerRange: '<= azure-devops'
-ms.date: 09/03/2025
+ms.date: 02/05/2026
 ---
  
 # Customize cards on a board  
@@ -134,7 +135,7 @@ Assign colors to specific tags for visual categorization.
 
 ## Manage annotations
 
-Annotations display icons on cards showing related items like tasks, tests, or GitHub commits.
+Annotations display icons on cards that show related items like tasks, tests, or GitHub commits.
 
 1. In your board settings, select **Annotations**.
 2. Check the box next to the annotations that you want to use.
@@ -150,16 +151,17 @@ Enabled annotations appear as numbered icons on cards:
 | Tasks | ![Screenshot of task annotations enabled.](media/annotate-task.png) |
 | Tests | ![Screenshot of test annotations enabled.](media/annotate-test.png) |
 
-> [!NOTE]
-> Disabling an annotation also disables the ability to add those items directly from the board.
+> [!IMPORTANT]
+> - When you disable an annotation, you also disable the ability to add those items directly from the board.
+> - Test annotations appear on cards only when a requirement-based test suite exists for the work item. Creating tests directly from the card automatically creates this suite. However, linking tests to a work item from the work item form alone doesn't create a requirement-based suite, so those tests don't appear as annotations on the card. For more information, see [Manage tests inline](add-run-update-tests.md).
 
 <a id="configure-inline-tests">  </a>
 
 ## Configure tests
 
-Control how inline tests are organized when created from boards.
+Control how inline tests are organized when you create them from boards.
 
-1. In your board settings, select **Tests** (requires Test annotation to be enabled).
+1. In your board settings, select **Tests** (requires **Test** annotation to be enabled).
 
 2. Choose test organization options:
    - Create new test plan for each test
@@ -175,7 +177,7 @@ Control how inline tests are organized when created from boards.
 
 ## Configure card reordering
 
-Control how card order is maintained when moving cards between columns.
+Control how card order is maintained when you move cards between columns.
 
 1. In your board settings, select **Card reordering**.
 
@@ -200,10 +202,10 @@ Control how card order is maintained when moving cards between columns.
 
 ## Best practices
 
-- **Start simple**: Begin with essential fields and add more as needed
-- **Use consistent styling**: Apply style rules that support your team's workflow
-- **Regular review**: Periodically assess which customizations provide value
-- **Team alignment**: Ensure all team members understand the visual conventions
+- **Start simple**: Begin with essential fields and add more as needed.
+- **Use consistent styling**: Apply style rules that support your team's workflow.
+- **Regular review**: Periodically assess which customizations provide value.
+- **Team alignment**: Ensure all team members understand the visual conventions.
 
 ## Related content
 

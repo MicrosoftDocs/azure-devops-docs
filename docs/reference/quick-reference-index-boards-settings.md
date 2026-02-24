@@ -8,7 +8,7 @@ ms.topic: reference
 ms.author: chcomley
 author: chcomley
 monikerRange: '<= azure-devops'
-ms.date: 01/17/2023 
+ms.date: 02/17/2026 
 ---
 
 # Quick reference index for Azure Boards settings 
@@ -16,6 +16,8 @@ ms.date: 01/17/2023
 [!INCLUDE [version-lt-eq-azure-devops](../includes/version-lt-eq-azure-devops.md)]
 
 Use this index to quickly access concepts and tasks related to configuring and customizing Azure Boards. If you're new to the Azure Boards, see [What is Azure Boards?](../boards/get-started/what-is-azure-boards.md). 
+
+[!INCLUDE [ai-assistance-callout](../includes/ai-assistance-callout.md)]
 
 <a id="concepts"></a>
 
