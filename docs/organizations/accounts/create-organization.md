@@ -51,7 +51,7 @@ Use an organization to connect groups of related projects and help scale up your
 
    Congratulations, you're an organization owner!
 
-   Sign in to your organization at any time by using `https://dev.azure.com/{YourOrganization}`.
+   Sign in to your organization at any time by using `https://dev.azure.com/{Your_Organization}`.
 
 ### Free tier benefits
 
@@ -59,7 +59,7 @@ Your new organization includes the following free tier benefits:
 
 [!INCLUDE [free-tier](../../includes/free-tier.md)]
 
-If you exceed these free tier limits, you pay for extra usage through your linked Azure subscription. For more information, see [What happens when free tier limits are reached?](../billing/billing-faq.yml#q--what-happens-when-free-tier-limits-are-reached-)
+If you exceed these free tier limits, you pay for extra usage through your linked Azure subscription. For more information, see [What happens when free tier limits are reached?](../billing/billing-faq.yml#what-happens-when-free-tier-limits-are-reached-)
 
 ## Next steps
 
