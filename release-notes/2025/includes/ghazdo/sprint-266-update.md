@@ -8,7 +8,7 @@ ms.topic: include
 
 ### Secret asset metadata generally available via API
 
-This feature adds richer context and classification to detected secrets, helping teams more quickly understand risk and prioritize remediation. Additional metadata is available via the [Alerts API](/azure/devops/advancedsecurity/alerts/get), with upcoming UI enhancements planned to surface this information directly in the product experience.
+This feature adds richer context and classification to detected secrets, helping teams more quickly understand risk and prioritize remediation. Additional metadata is available via the [Alerts API](/rest/api/azure/devops/advancedsecurity/alerts/get), with upcoming UI enhancements planned to surface this information directly in the product experience.
 
 ### Code scanning now supports Rust
 
