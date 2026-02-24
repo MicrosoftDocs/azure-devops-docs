@@ -7,7 +7,7 @@ ms.assetid: 2fdfbfe2-b9b2-4d61-ad3e-45f11953ef3e
 ms.topic: how-to
 ms.author: chcomley
 author: chcomley
-ms.date: 02/23/2026
+ms.date: 02/24/2026
 ai-usage: ai-assisted
 monikerRange: 'azure-devops'
 ---
@@ -43,14 +43,14 @@ Based on these conditions, you can grant access, require more checks like multif
    1. Under **Exclude**: 
       - Select **Users and groups**. 
          - Choose your organization's emergency access or break-glass accounts.
-1. Under **Target resources** > **Resources (formerly cloud apps)** > **Include**, **Select resources**, add _"Azure DevOps"_ or _"Microsoft Visual Studio Team Services"_ resource (resource id: 499b84ac-1321-427f-aa17-267ca6975798) to the list of target resources.
+1. Under **Target resources** > **Resources (formerly cloud apps)** > **Include**, **Select resources**, add _"Azure DevOps"_ or _"Microsoft Visual Studio Team Services"_ resource (resource ID: 499b84ac-1321-427f-aa17-267ca6975798) to the list of target resources.
 1. Under **Access controls** > **Grant**, select **Grant access**, **Require authentication strength**, select **Multifactor authentication**, and then select **Select**.
 1. Confirm your settings and set **Enable policy** to **Report-only**.
 1. Select **Create** to enable your policy.
 
 After confirming your settings by using [policy impact or report-only mode](/entra/identity/conditional-access/concept-conditional-access-report-only#reviewing-results), move the **Enable policy** toggle from **Report-only** to **On**.
 
-:::image type="content" source="./media/setup-ado-cap.png" border="true" alt-text="Microsoft Entra portal, showing how to add Azure DevOps as a target resource on a new Conditional Access policy.":::
+:::image type="content" source="./media/setup-ado-cap.png" border="true" alt-text="Microsoft Entra admin center, showing how to add Azure DevOps as a target resource on a new Conditional Access policy.":::
 
 ## Conditional Access behavior on web
 
@@ -77,13 +77,13 @@ If users access the Microsoft Entra sign-in page from a different IP address tha
 > [!NOTE]
 > These changes took effect in September 2025. For more information, see the [Azure DevOps blog post](https://devblogs.microsoft.com/devops/removing-azure-resource-manager-reliance-on-azure-devops-sign-ins/).
 
-Azure DevOps doesn't depend on the Azure Resource Manager (ARM) resource (`https://management.azure.com`) when you sign in or refresh Microsoft Entra access tokens. Previously, Azure DevOps required the ARM audience during sign-in and token refresh flows, which meant administrators had to allow all Azure DevOps users to bypass ARM Conditional Access policies.
+Azure DevOps doesn't depend on the Azure Resource Manager (ARM) resource (`https://management.azure.com`) when you sign in or refresh Microsoft Entra access tokens. Previously, Azure DevOps required the Azure Resource Manager audience during sign-in and token refresh flows, which meant administrators had to allow all Azure DevOps users to bypass Azure Resource Manager Conditional Access policies.
 
-If you previously set up a Conditional Access policy for Azure Resource Manager or the associated [Windows Azure Service Management API application](/entra/identity/conditional-access/concept-conditional-access-cloud-apps#windows-azure-service-management-api), that policy no longer covers Azure DevOps sign-ins. Set up a new Azure DevOps Conditional Access policy for continued coverage.
+If you previously set up a Conditional Access policy for Azure Resource Manager or the associated [Microsoft Azure classic deployment model application](/entra/identity/conditional-access/concept-conditional-access-cloud-apps#windows-azure-service-management-api), that policy no longer covers Azure DevOps sign-ins. Set up a new Azure DevOps Conditional Access policy for continued coverage.
 
-The following groups still require access to ARM. Consider adding them as exclusions to any ARM or Windows Azure Service Management API Conditional Access policies.
-- **Billing administrators** need access to ARM to set up billing and access subscriptions.
-- **Service Connection creators** require access to ARM for ARM role assignments and updates to managed service identities (MSIs).
+The following groups still require access to Azure Resource Manager. Consider adding them as exclusions to any Azure Resource Manager or Microsoft Azure classic deployment model Conditional Access policies.
+- **Billing administrators** need access to Azure Resource Manager to set up billing and access subscriptions.
+- **Service Connection creators** require access to Azure Resource Manager for Azure Resource Manager role assignments and updates to managed service identities (MSIs).
 
 ## Continuous Access Evaluation
 
