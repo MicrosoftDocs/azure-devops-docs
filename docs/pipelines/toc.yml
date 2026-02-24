@@ -359,6 +359,8 @@
         - name: Create a multistage pipeline
           displayName: multi stage, multi stage pipelines
           href: process/create-multistage-pipeline.md
+        - name: Troubleshoot deployment
+          href: troubleshooting/troubleshoot-azure-web-app-deploy.md
       - name: Azure Resource Manager (ARM) templates
         items:
         - name: Use a Resource Manager template to deploy
@@ -632,6 +634,8 @@
     href: release/variables.md#run-a-release-in-debug-mode
   - name: Troubleshoot ARM service connections
     href: release/azure-rm-endpoint.md
+  - name: Troubleshoot Azure Web App deployment
+    href: troubleshooting/troubleshoot-azure-web-app-deploy.md
   - name: Review logs
     href: troubleshooting/review-logs.md
   - name: Pipeline reports
