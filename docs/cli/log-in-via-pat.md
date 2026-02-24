@@ -1,14 +1,16 @@
 ---
-title: Sign in with a Personal Access Token (PAT), Azure DevOps CLI 
+title: Sign in with a personal access token (PAT), Azure DevOps CLI 
 titleSuffix: Azure DevOps 
-description: Use a Personal Access Token (PAT) with Azure DevOps CLI 
+description: Learn how to sign in to Azure DevOps CLI with a personal access token (PAT).
 ms.topic: how-to
 ms.subservice: azure-devops-reference
 ms.manager: mijacobs 
 ms.author: chcomley  
 author: chcomley
 monikerRange: 'azure-devops'
-ms.date: 06/05/2025
+ms.date: 02/24/2026
+ai-usage: ai-assisted
+ms.custom: pat-deprecation
 ---
 
 # Sign in with a personal access token
@@ -19,24 +21,33 @@ This article explains how to sign in using an Azure DevOps personal access token
 
 [!INCLUDE [use-microsoft-entra-reduce-pats](../includes/use-microsoft-entra-reduce-pats.md)]
 
+## Prerequisites
+
+| Category | Requirements |
+|----------|-------------|
+| **Access levels** | At least **Basic** access. |
+| **Permissions** | Member of the **Project Collection Valid Users** group. |
+| **Tokens** | A [personal access token (PAT)](../organizations/accounts/use-personal-access-tokens-to-authenticate.md#create-a-pat) with the appropriate scopes for the commands you want to run. |
+| **Tools** | [Azure CLI](/cli/azure/install-azure-cli) with the [Azure DevOps CLI extension](index.md). |
+
 To use a PAT with the Azure DevOps CLI, choose one of these methods:
 
-- Run `az devops login` and [enter the PAT token when prompted](#sign-in-with-a-personal-access-token).
-- Pipe the [PAT token to StdIn](#pipe-a-pat-to-az-devops-login) and use it with `az devops login`.  
+- Run `az devops login` and [enter the PAT when prompted](#sign-in-with-a-personal-access-token).
+- Pipe the [PAT to stdin](#pipe-a-pat-to-az-devops-login) and use it with `az devops login`.  
   > [!NOTE]  
   > This method works only in a non-interactive shell.
 - Set the `AZURE_DEVOPS_EXT_PAT` [environment variable](#authenticate-with-the-azure_devops_ext_pat-environment-variable) and run CLI commands without using `az devops login`.
 
 ## Sign in with az devops login and enter your PAT
 
-After you run the `az devops login` command, enter your personal access token (PAT) when prompted:
+Run the `az devops login` command and enter your PAT when prompted:
 
 ```azurecli
 az devops login --organization https://dev.azure.com/contoso
 Token:
 ```
 
-If you already signed in interactively with `az login` or used a user name and password, you don't need to provide a PAT. The `az devops` commands now support sign-in through `az login`.
+If you already signed in interactively with `az login`, you don't need to provide a PAT. The `az devops` commands support sign-in through `az login`.
 
 When you sign in successfully, this command can also set your default organization if none is configured.
 
@@ -71,13 +82,12 @@ Set the environment variable at the process level before running CLI commands to
 
 #### [Windows](#tab/windows)
 
-
 ```powershell
 # set environment variable for current process
 $env:AZURE_DEVOPS_EXT_PAT = 'xxxxxxxxxx'
 ```
 
-##### [macOS and Linux](#tab/unix)
+#### [macOS and Linux](#tab/unix)
 
 ```bash
 export AZURE_DEVOPS_EXT_PAT=xxxxxxxxxx

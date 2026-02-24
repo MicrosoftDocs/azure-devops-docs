@@ -1,5 +1,5 @@
 ---
-title: About authentication, authorization, and security policies 
+title: About authentication, authorization, and security policies
 titleSuffix: Azure DevOps
 description: Understand how Azure DevOps manages security through authentication, authorization, and policies.
 ms.subservice: azure-devops-security
@@ -8,7 +8,8 @@ author: chcomley
 ai-usage: ai-assisted
 ms.topic: overview
 monikerRange: '<= azure-devops'
-ms.date: 02/19/2026
+ms.date: 02/24/2026
+ms.custom: pat-deprecation
 ---
 
 # About authentication, authorization, and security policies
@@ -40,9 +41,9 @@ It helps administrators understand the different account types, authentication a
       - Two-factor authentication (2FA)
       - SSH key authentication
       - Microsoft Entra token
-      - Personal access token
-      - OAuth configuration 
-      - Active Directory authentication library  
+      - Personal access tokens
+      - OAuth configuration
+      - Active Directory authentication library
    :::column-end:::
    :::column span="1":::
       **Authorization**
@@ -119,7 +120,7 @@ While human user accounts are the primary focus, Azure DevOps also supports vari
 ::: moniker range="azure-devops"
 - **Organization owner**: The creator of an Azure DevOps Services organization or assigned owner.
   To find the owner for your organization, see [Look up the organization owner](look-up-organization-owner.md).
-- **Service accounts**: Internal Azure DevOps organization used to support a specific service, such as Agent Pool Service, PipelinesSDK.
+- **Service accounts**: Internal Azure DevOps accounts used to support a specific service, such as Agent Pool Service, PipelinesSDK.
   For descriptions of service accounts, see [Security groups, service accounts, and permissions](permissions.md#collection-level-groups).
 - **Service principals or managed identities**: [Microsoft Entra applications or managed identities](../../integrate/get-started/authentication/service-principal-managed-identity.md) added to your organization to perform actions on behalf of a non-Microsoft application.
   Some service principals refer to internal Azure DevOps organization to support internal operations.
@@ -131,7 +132,7 @@ Throughout the security-related articles, "users" refers to all identities added
 ::: moniker-end
 
 ::: moniker range="< azure-devops"
-- **Service accounts**: Internal Azure DevOps organization used to support a specific service, such as Agent Pool Service, PipelinesSDK.
+- **Service accounts**: Internal Azure DevOps accounts used to support a specific service, such as Agent Pool Service, PipelinesSDK.
   For descriptions of service accounts, see [Security groups, service accounts, and permissions](permissions.md#collection-level-groups).
 - **Service principals or managed identities**: Microsoft Entra applications or managed identities added to your organization to perform actions on behalf of a non-Microsoft application.
   Some service principals refer to internal Azure DevOps organization to support internal operations.
@@ -233,7 +234,7 @@ Review and configure these policies to strengthen your organization's security p
 
 <a id="project-scoped-user-group"></a> 
 
-### Project-Scoped Users group 
+### Project-scoped Users group 
 
 By default, users you add to an organization can view all organization and project information and settings.
 To limit access for specific users, you can enable the **Limit user visibility and collaboration to specific projects** preview feature.
@@ -255,7 +256,7 @@ For more information, see the following articles:
 
 ## Azure Repos and Azure Pipelines security 
 
-Since repositories and build and release pipelines pose unique security challenges, employ additional features beyond those discussed in this article.
+Repositories and build and release pipelines pose unique security challenges that require additional security features.
 For more information, see the following articles.
 
 - [Securing Azure Pipelines](../../pipelines/security/overview.md)
