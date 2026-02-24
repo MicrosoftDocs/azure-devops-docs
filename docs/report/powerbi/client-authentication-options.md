@@ -50,7 +50,7 @@ Microsoft Entra ID is also known as "Organizational Credential" in Power BI Desk
 
 1. When you connect with Power BI Desktop, you're prompted to enter your credentials for the data source. Select **Organizational account** as shown here:
 
-	:::image type="content" source="media/power-bi-organizational.png" border="true" alt-text="Power BI Desktop, Organizational account prompt."::: 
+	:::image type="content" source="media/power-bi-organizational.png" border="true" alt-text="Screenshot of Power BI Desktop authentication dialog with the Organizational account option selected."::: 
 
 2. Choose **Sign in** and enter your Microsoft Entra credentials. After that, you're done.
 
@@ -66,7 +66,7 @@ You can use Windows authentication in [Power BI](https://powerbi.microsoft.com) 
 
 1. When you connect with Power BI Desktop, you're prompted to enter your credentials for the data source. Select **Windows** as shown here:
 
-	:::image type="content" source="media/power-bi-windowsauth.png" border="true" alt-text="Power BI Desktop, Windows authentication prompt.":::
+	:::image type="content" source="media/power-bi-windowsauth.png" border="true" alt-text="Screenshot of Power BI Desktop authentication dialog with the Windows option selected.":::
 
 2. Enter your Windows credentials and choose **Connect**.
 
@@ -90,13 +90,13 @@ This walkthrough uses Power BI Desktop but also applies to Excel.
 
 	::: moniker range="azure-devops"
 
-    :::image type="content" source="media/authentication-6.png" alt-text="OData Feed URL":::
+    :::image type="content" source="media/authentication-6.png" border="true" alt-text="Screenshot of OData Feed dialog with the URL field for the Analytics endpoint.":::
 	
 	::: moniker-end  
 
 	::: moniker range="<azure-devops"
 
-    :::image type="content" source="media/authentication-6-onprem.png" alt-text="OData Feed URL":::
+    :::image type="content" source="media/authentication-6-onprem.png" border="true" alt-text="Screenshot of OData Feed dialog with the URL field for the on-premises Analytics endpoint.":::
 
 	::: moniker-end
 
@@ -144,13 +144,13 @@ If you receive an access denied message, you might need to change your authentic
 
 	::: moniker range="azure-devops"
 
-    :::image type="content" source="media/authentication-8.png" alt-text="Data source settings":::
+    :::image type="content" source="media/authentication-8.png" border="true" alt-text="Screenshot of Data Source Settings dialog with the OData feed URL and Edit button.":::
 
 	::: moniker-end
 
 	::: moniker range="<azure-devops"
 
-    :::image type="content" source="media/authentication-8-onprem.png" alt-text="Data source settings":::
+    :::image type="content" source="media/authentication-8-onprem.png" border="true" alt-text="Screenshot of Data Source Settings dialog with the on-premises OData feed URL and Edit button.":::
 
 	::: moniker-end
 
@@ -158,13 +158,13 @@ If you receive an access denied message, you might need to change your authentic
 
 	::: moniker range="azure-devops"
 
-    :::image type="content" source="media/authentication-9.png" alt-text="Data source settings, 2nd dialog":::
+    :::image type="content" source="media/authentication-9.png" border="true" alt-text="Screenshot of Data Source Settings dialog with the Edit button under Credentials.":::
 
 	::: moniker-end
 
 	::: moniker range="<azure-devops"
 
-    :::image type="content" source="media/authentication-9-onprem.png" alt-text="Data source settings, 2nd dialog":::
+    :::image type="content" source="media/authentication-9-onprem.png" border="true" alt-text="Screenshot of Data Source Settings dialog with the Edit button under Credentials for on-premises.":::
 
 	::: moniker-end
 
@@ -172,41 +172,39 @@ If you receive an access denied message, you might need to change your authentic
 
 ### Update credentials in Excel
 
-1. Open **Excel** and select the **Data** tab.  
+1. Open **Excel** and select **Get data** > **Data Source Settings**.  
 
-2. Select **New Query** > **Data Source Settings...**
+    :::image type="content" source="media/client-auth-excel-open-data-source-settings.png" border="true" alt-text="Screenshot of Excel Data tab with the Data Source Settings option highlighted.":::
 
-    :::image type="content" source="media/client-auth-excel-open-data-source-settings.png" border="true" alt-text="Excel Data tab, Data Source Settings option.":::
-
-3. Select the correct URL to the OData Feed and select **Edit**.  
+2. Select the correct URL to the OData feed and select **Edit**.  
 
 	::: moniker range="azure-devops"
 
-    :::image type="content" source="media/authentication-8.png" alt-text="Select the correct URL to the OData Feed and select Edit.":::
+    :::image type="content" source="media/authentication-8.png" border="true" alt-text="Screenshot of Data Source Settings dialog with the OData feed URL and Edit button.":::
 
 	::: moniker-end
 
 	::: moniker range="<azure-devops"
 
-    :::image type="content" source="media/authentication-8-onprem.png" alt-text="Select the correct URL to the OData Feed and select Edit, on-premises version.":::
+    :::image type="content" source="media/authentication-8-onprem.png" border="true" alt-text="Screenshot of Data Source Settings dialog with the on-premises OData feed URL and Edit button.":::
 
 	::: moniker-end
 
-4. In the next **Data Source Settings** dialog, select the **Edit** button under the **Credentials** setting.
+3. In the next **Data Source Settings** dialog, select the **Edit** button under the **Credentials** setting.
  
 	::: moniker range="azure-devops"
 
-    :::image type="content" source="media/authentication-9.png" alt-text="Data source settings, next dialog.":::
+    :::image type="content" source="media/authentication-9.png" border="true" alt-text="Screenshot of Data Source Settings dialog with the Edit button under Credentials.":::
 
 	::: moniker-end
 
 	::: moniker range="<azure-devops"
 
-    :::image type="content" source="media/authentication-9-onprem.png" alt-text="Data source settings, next dialog.":::
+    :::image type="content" source="media/authentication-9-onprem.png" border="true" alt-text="Screenshot of Data Source Settings dialog with the Edit button under Credentials for on-premises.":::
 
 	::: moniker-end
 
-5. Edit the credentials as described earlier, select **Save**, then **Done**, then **Close**.
+4. Edit the credentials as described earlier, and then **Save** your update.
 
 ## Publish to Power BI
 
