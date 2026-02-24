@@ -8,14 +8,15 @@ ai-usage: ai-assisted
 monikerRange: '<= azure-devops'
 ms.author: chcomley
 author: chcomley
-ms.date: 02/17/2026
+ms.date: 02/24/2026
 ---
 
 # Build secure applications with Azure DevOps
 
 [!INCLUDE [version-lt-eq-azure-devops](../includes/version-lt-eq-azure-devops.md)]
 
-Build secure, scalable applications and services that integrate with Azure DevOps to access user resources and automate processes programmatically. Whether you're creating internal automation tools or building commercial products, Azure DevOps provides robust APIs and modern authentication options to support your integration needs.
+Build secure, scalable applications and services that integrate with Azure DevOps to access user resources and automate processes programmatically.
+Whether you create internal automation tools or build commercial products, Azure DevOps provides robust APIs and modern authentication options to support your integration needs.
 
 [!INCLUDE [ai-assistance-callout](../includes/ai-assistance-callout.md)]
 
@@ -23,13 +24,13 @@ Build secure, scalable applications and services that integrate with Azure DevOp
 
 Azure DevOps integration enables you to:
 
-**🔧 Automate workflows**
+**Automate workflows**
 - [Create and track bugs](./quickstarts/create-bug-quickstart.md) automatically from customer reports
 - [Monitor work items](./quickstarts/work-item-quickstart.md) and display status on custom dashboards
 - Sync data between Azure DevOps and external systems
 - Generate reports and analytics from Azure DevOps data
 
-**🏗️ Build commercial solutions**
+**Build commercial solutions**
 - Develop marketplace extensions for Azure DevOps customers
 - Create SaaS products that integrate with Azure DevOps
 - Build mobile apps that connect to Azure DevOps services
@@ -37,7 +38,7 @@ Azure DevOps integration enables you to:
 
 ## Getting started: Choose your path
 
-### 🚀 Quick start options
+### Quick start options
 
 | **Need** | **Recommended approach** | **Best for** |
 |----------|-------------------------|--------------|
@@ -46,26 +47,26 @@ Azure DevOps integration enables you to:
 | **Interactive applications** | [Microsoft Entra authentication](./get-started/authentication/entra.md) | User-facing apps, desktop tools |
 | **Custom UI components** | [Azure DevOps extensions](../extend/overview.md) | Team customizations, marketplace products |
 
-### 🔐 Authentication: Security first
+### Authentication: Security first
 
-**Choose the right authentication method:**
+Choose the right authentication method for your scenario.
 
-**✅ Recommended for production:**
+**Recommended for production:**
 - **[Managed Identity](./get-started/authentication/service-principal-managed-identity.md)** - For Azure-hosted applications (most secure)
 - **[Service Principal](./get-started/authentication/service-principal-managed-identity.md)** - For CI/CD pipelines and automated services
 - **[Microsoft Entra ID](./get-started/authentication/entra.md)** - For user-facing applications requiring OAuth flows
 
-**⚡ Quick development:**
-- **[Personal Access Tokens (PATs)](./get-started/authentication/authentication-guidance.md)** - For testing and personal automation only
+**Quick development:**
+- **[Personal access tokens (PATs)](./get-started/authentication/authentication-guidance.md)** - For testing and personal automation only
 
-**❌ Avoid for production:**
+**Avoid for production:**
 - Username/password authentication (deprecated)
 - Hardcoded credentials in source code
 - Overly broad permission scopes
 
 ## Development approaches
 
-### 🔌 REST API integration
+### REST API integration
 
 **Best for:** Direct HTTP calls, platform-agnostic development, simple automation
 
@@ -82,7 +83,7 @@ Azure DevOps integration enables you to:
 - [Try APIs in the browser](https://docs.microsoft.com/rest/api/azure/devops/)
 ```
 
-### 📚 .NET client libraries
+### .NET client libraries
 
 **Best for:** C# applications, enterprise development, complex integrations
 
@@ -99,7 +100,7 @@ Azure DevOps integration enables you to:
 - [Client library concepts](./concepts/dotnet-client-libraries.md)
 ```
 
-### 🔔 Event-driven integration
+### Event-driven integration
 
 **Best for:** Real-time responses, webhook-based automation, external system synchronization
 
@@ -116,7 +117,7 @@ Azure DevOps integration enables you to:
 - [Event reference documentation](../service-hooks/events.md)
 ```
 
-### 🧩 Platform extensions
+### Platform extensions
 
 **Best for:** Custom UI components, team-specific features, marketplace products
 
@@ -135,7 +136,7 @@ Azure DevOps integration enables you to:
 
 ## Architecture patterns
 
-### 🏛️ Recommended architectures
+### Recommended architectures
 
 **Microservices integration:**
 ```markdown
@@ -163,15 +164,19 @@ Web/Mobile App → Microsoft Entra OAuth → Azure DevOps on behalf of user
 
 ## Security and compliance
 
-### 🛡️ Security best practices
+### Security best practices
 
 **Authentication security:**
-- ✅ Use managed identities when possible
+- ✅ Use [Microsoft Entra tokens](./get-started/authentication/entra.md) instead of personal access tokens (PATs) for new integrations — Entra ID provides shorter token lifespans, automatic credential management, Conditional Access policy enforcement, and centralized auditing
+- ✅ Use [managed identities](./get-started/authentication/service-principal-managed-identity.md) for Azure-hosted workloads to eliminate credential management entirely
+- ✅ Use [service principals](./get-started/authentication/service-principal-managed-identity.md) for automation scenarios that can't use managed identities
 - ✅ Implement proper token refresh logic
-- ✅ Apply principle of least privilege
+- ✅ Apply the principle of least privilege
 - ✅ Enable audit logging for all API calls
+- ✅ [Restrict PAT creation](../organizations/accounts/manage-pats-with-policies-for-administrators.md) with organization policies when possible
 - ❌ Never commit credentials to source control
 - ❌ Don't use overly broad PAT scopes
+- ❌ Don't create long-lived PATs when short-lived Entra tokens work
 
 **Application security:**
 - Implement proper error handling and logging
@@ -182,17 +187,17 @@ Web/Mobile App → Microsoft Entra OAuth → Azure DevOps on behalf of user
 
 **Compliance considerations:**
 - Review [Azure DevOps security overview](../organizations/security/security-overview.md)
-- Understand data residency requirements
-- Implement proper access controls and auditing
-- Follow industry-specific compliance guidelines
+- Understand data residency requirements.
+- Implement proper access controls and auditing.
+- Follow industry-specific compliance guidelines.
 
 ## Resources and next steps
 
-### 📖 Essential documentation
+### Essential documentation
 
 **Core concepts:**
-- [Authentication guidance](./get-started/authentication/authentication-guidance.md) - Choose the right auth method
-- [Microsoft Entra integration](./get-started/authentication/entra.md) - OAuth and modern auth patterns
+- [Authentication guidance](./get-started/authentication/authentication-guidance.md) - Choose the right authentication method
+- [Microsoft Entra integration](./get-started/authentication/entra.md) - OAuth and modern authentication patterns
 - [Integration best practices](./concepts/integration-bestpractices.md) - Production-ready development patterns
 
 **API references:**
@@ -205,7 +210,7 @@ Web/Mobile App → Microsoft Entra OAuth → Azure DevOps on behalf of user
 - [Azure DevOps auth samples](https://github.com/microsoft/azure-devops-auth-samples) - Authentication examples
 - [Extension samples](../extend/develop/samples-overview.md) - Platform extension examples
 
-### 🎯 Quick actions
+### Quick actions
 
 **Start building today:**
 1. **[Set up authentication](./get-started/authentication/authentication-guidance.md)** - Choose your auth method
