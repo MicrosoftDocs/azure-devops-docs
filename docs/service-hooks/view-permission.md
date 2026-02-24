@@ -5,7 +5,7 @@ description: Learn the steps for defining the *View* permission for a group in S
 ms.service: azure-devops
 ms.subservice: azure-devops-service-hooks
 ms.topic: how-to 
-ms.custom: cross-service
+ms.custom: cross-service, pat-deprecation
 ms.author: chcomley
 author: chcomley
 monikerRange: 'azure-devops'

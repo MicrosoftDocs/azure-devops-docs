@@ -3,13 +3,13 @@ title: .NET Client Library Samples for Azure DevOps
 description: Learn how to extend and integrate with Azure DevOps by using C# samples with modern authentication and best practices.
 ms.assetid: 9ff78e9c-63f7-45b1-a70d-42aa6a9dbc57
 ms.subservice: azure-devops-ecosystem
-ms.custom: devx-track-dotnet
+ms.custom: devx-track-dotnet, pat-deprecation
 ai-usage: ai-assisted
 ms.topic: concept-article
 monikerRange: '<= azure-devops'
 ms.author: chcomley
 author: chcomley
-ms.date: 07/14/2025
+ms.date: 02/24/2026
 ---
 
 # .NET client library samples for Azure DevOps
@@ -326,19 +326,13 @@ public static VssConnection CreateInteractiveConnection(string organizationUrl)
 
 ### Personal access token authentication (Legacy)
 
-> [!WARNING]
-> Personal access tokens are being deprecated. Use modern authentication methods instead. See [Authentication guidance](../authentication/authentication-guidance.md) for migration options.
+[!INCLUDE [use-microsoft-entra-reduce-pats](../../../includes/use-microsoft-entra-reduce-pats.md)]
+
+If you must use a PAT, see [Use personal access tokens](../../../organizations/accounts/use-personal-access-tokens-to-authenticate.md) to create one. Then pass it as a `VssBasicCredential`:
 
 ```csharp
-/// <summary>
-/// Personal Access Token authentication (legacy - use modern auth instead)
-/// Only use for migration scenarios or when modern auth isn't available
-/// </summary>
-public static VssConnection CreatePATConnection(string organizationUrl, string personalAccessToken)
-{
-    var credentials = new VssBasicCredential(string.Empty, personalAccessToken);
-    return new VssConnection(new Uri(organizationUrl), credentials);
-}
+var credentials = new VssBasicCredential(string.Empty, personalAccessToken);
+var connection = new VssConnection(new Uri(organizationUrl), credentials);
 ```
 
 ## Complete usage examples

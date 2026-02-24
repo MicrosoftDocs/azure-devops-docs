@@ -3,12 +3,13 @@ title: Get work items programmatically from Azure DevOps Services
 description: Use REST APIs and .NET client libraries to fetch work items from Azure DevOps Services with queries in your own custom apps.
 ms.assetid: e48d9d34-24dd-4e3e-abe8-8f5498e08083
 ms.subservice: azure-devops-ecosystem
-ms.topic: how-to
+ms.topic: quickstart
 monikerRange: 'azure-devops'
 ms.author: chcomley
 author: chcomley
 ai-usage: ai-assisted
-ms.date: 07/16/2025
+ms.date: 02/24/2026
+ms.custom: pat-deprecation
 ---
 
 # Fetch work items with queries programmatically 
@@ -25,14 +26,13 @@ Fetching work items using queries is a common scenario in Azure DevOps Services.
 |**Authentication** | Choose one of the following methods:<br>- [Microsoft Entra ID authentication](../get-started/authentication/entra.md) (recommended for interactive apps)<br>- [Service Principal authentication](../get-started/authentication/service-principal-managed-identity.md) (recommended for automation)<br>- [Managed Identity authentication](../get-started/authentication/service-principal-managed-identity.md) (recommended for Azure-hosted apps)<br>- [Personal Access Token](../../organizations/accounts/use-personal-access-tokens-to-authenticate.md) (for testing) |
 |**Development environment**| A C# development environment. You can use [Visual Studio](https://visualstudio.microsoft.com/vs/) |
 
-> [!IMPORTANT]
-> For production applications, we recommend using [Microsoft Entra ID authentication](../get-started/authentication/entra.md) instead of Personal Access Tokens (PATs). PATs are suitable for testing and development scenarios. For guidance on choosing the right authentication method, see [Authentication guidance](../get-started/authentication/authentication-guidance.md).
+[!INCLUDE [use-microsoft-entra-reduce-pats](../../includes/use-microsoft-entra-reduce-pats.md)]
 
 ## Authentication options
 
 This article demonstrates multiple authentication methods to suit different scenarios:
 
-### Microsoft Entra ID authentication (Recommended for interactive apps)
+### Microsoft Entra ID authentication (recommended for interactive apps)
 
 For production applications with user interaction, use Microsoft Entra ID authentication:
 
@@ -42,7 +42,7 @@ For production applications with user interaction, use Microsoft Entra ID authen
 <PackageReference Include="Microsoft.Identity.Client" Version="4.61.3" />
 ```
 
-### Service Principal authentication (Recommended for automation)
+### Service principal authentication (recommended for automation)
 
 For automated scenarios, CI/CD pipelines, and server applications:
 
@@ -51,7 +51,7 @@ For automated scenarios, CI/CD pipelines, and server applications:
 <PackageReference Include="Microsoft.Identity.Client" Version="4.61.3" />
 ```
 
-### Managed Identity authentication (Recommended for Azure-hosted apps)
+### Managed identity authentication (recommended for Azure-hosted apps)
 
 For applications running on Azure services (Functions, App Service, etc.):
 
@@ -60,7 +60,7 @@ For applications running on Azure services (Functions, App Service, etc.):
 <PackageReference Include="Azure.Identity" Version="1.10.4" />
 ```
 
-### Personal Access Token authentication
+### Personal access token authentication
 
 For development and testing scenarios:
 
@@ -72,7 +72,7 @@ For development and testing scenarios:
 
 The following examples show how to fetch work items using different authentication methods.
 
-### Example 1: Microsoft Entra ID authentication (Interactive)
+### Example 1: Microsoft Entra ID authentication (interactive)
 
 ```cs
 // NuGet packages:
@@ -159,7 +159,7 @@ public class EntraIdQueryExecutor
 }
 ```
 
-### Example 2: Service Principal authentication (Automated scenarios)
+### Example 2: Service principal authentication (automated scenarios)
 
 ```cs
 // NuGet packages:
@@ -188,7 +188,7 @@ public class ServicePrincipalQueryExecutor
     /// <param name="orgName">Your Azure DevOps organization name</param>
     /// <param name="clientId">Service principal client ID</param>
     /// <param name="clientSecret">Service principal client secret</param>
-    /// <param name="tenantId">Azure AD tenant ID</param>
+    /// <param name="tenantId">Microsoft Entra tenant ID</param>
     public ServicePrincipalQueryExecutor(string orgName, string clientId, string clientSecret, string tenantId)
     {
         this.uri = new Uri($"https://dev.azure.com/{orgName}");
@@ -248,7 +248,7 @@ public class ServicePrincipalQueryExecutor
 }
 ```
 
-### Example 3: Managed Identity authentication (Azure-hosted apps)
+### Example 3: Managed identity authentication (Azure-hosted apps)
 
 ```cs
 // NuGet packages:
@@ -324,7 +324,7 @@ public class ManagedIdentityQueryExecutor
 }
 ```
 
-### Example 4: Personal Access Token authentication
+### Example 4: Personal access token authentication
 
 ```cs
 // NuGet package: Microsoft.TeamFoundationServer.Client
@@ -398,7 +398,9 @@ public class PatQueryExecutor
 
 ## Usage examples
 
-### Using Microsoft Entra ID authentication (Interactive)
+The following examples demonstrate how to call each authentication class.
+
+### Using Microsoft Entra ID authentication (interactive)
 
 ```cs
 class Program
@@ -411,7 +413,7 @@ class Program
 }
 ```
 
-### Using Service Principal authentication (CI/CD scenarios)
+### Using service principal authentication (CI/CD scenarios)
 
 ```cs
 class Program
@@ -435,7 +437,7 @@ class Program
 }
 ```
 
-### Using Managed Identity authentication (Azure Functions/App Service)
+### Using managed identity authentication (Azure Functions/App Service)
 
 ```cs
 public class WorkItemQueryFunction
@@ -460,7 +462,7 @@ public class WorkItemQueryFunction
 }
 ```
 
-### Using Personal Access Token authentication (Development/Testing)
+### Using personal access token authentication (development/testing)
 
 ```cs
 class Program
@@ -484,12 +486,12 @@ class Program
 
 ### Authentication
 - **Use Microsoft Entra ID** for interactive applications with user sign-in
-- **Use Service Principal** for automated scenarios, CI/CD pipelines, and server applications
-- **Use Managed Identity** for applications running on Azure services (Functions, App Service, VMs)
-- **Avoid Personal Access Tokens** in production; use only for development and testing
+- **Use service principals** for automated scenarios, CI/CD pipelines, and server applications
+- **Use managed identities** for applications running on Azure services (Functions, App Service, VMs)
+- **Avoid personal access tokens** in production; use only for development and testing
 - **Never hardcode credentials** in source code; use environment variables or Azure Key Vault
 - **Implement credential rotation** for long-running applications
-- **Ensure proper scopes**: Work item queries require appropriate read permissions in Azure DevOps
+- **Ensure proper scopes** - Work item queries require appropriate read permissions in Azure DevOps
 
 ### Error handling
 - **Implement retry logic** with exponential backoff for transient failures
@@ -499,7 +501,7 @@ class Program
 
 ### Performance
 - **Batch work item retrievals** when querying multiple items
-- **Limit query results** using TOP clause for large datasets
+- **Limit query results** using the TOP clause for large datasets
 - **Cache frequently accessed data** to reduce API calls
 - **Use appropriate fields** to minimize data transfer
 
@@ -512,28 +514,28 @@ class Program
 ## Troubleshooting
 
 ### Authentication issues
-- **Microsoft Entra ID authentication failures**: Ensure the user has proper permissions and is signed in to Azure DevOps
-- **Service Principal authentication failures**: Verify client ID, secret, and tenant ID are correct; check service principal permissions in Azure DevOps
-- **Managed Identity authentication failures**: Ensure the Azure resource has a managed identity enabled and proper permissions
-- **PAT authentication failures**: Verify the token is valid and has appropriate scopes (`vso.work` for work item access)
-- **Token expiration**: Check if your PAT expired and generate a new one if needed
+- **Microsoft Entra ID authentication failures** - Ensure the user has proper permissions and is signed in to Azure DevOps
+- **Service principal authentication failures** - Verify client ID, secret, and tenant ID are correct; check service principal permissions in Azure DevOps
+- **Managed identity authentication failures** - Ensure the Azure resource has a managed identity enabled and proper permissions
+- **PAT authentication failures** - Verify the token is valid and has appropriate scopes (`vso.work` for work item access)
+- **Token expiration** - Check if your PAT expired and generate a new one if needed
 
 ### Query issues
-- **Invalid WIQL syntax**: Ensure your Work Item Query Language syntax is correct
-- **Project name errors**: Verify the project name exists and is spelled correctly
-- **Field name errors**: Use the correct system field names (for example, `System.Id`, `System.Title`)
+- **Invalid WIQL syntax** - Ensure your Work Item Query Language syntax is correct
+- **Project name errors** - Verify the project name exists and is spelled correctly
+- **Field name errors** - Use the correct system field names (for example, `System.Id`, `System.Title`)
 
 ### Common exceptions
-- **VssUnauthorizedException**: Check authentication credentials and permissions
-- **ArgumentException**: Verify all required parameters are provided and valid
-- **HttpRequestException**: Check network connectivity and service availability
+- **VssUnauthorizedException** - Check authentication credentials and permissions
+- **ArgumentException** - Verify all required parameters are provided and valid
+- **HttpRequestException** - Check network connectivity and service availability
 
 ### Performance issues
-- **Slow queries**: Add appropriate WHERE clauses and limit result sets
-- **Memory usage**: Process large result sets in batches
-- **Rate limiting**: Implement retry logic with exponential backoff
+- **Slow queries** - Add appropriate WHERE clauses and limit result sets
+- **Memory usage** - Process large result sets in batches
+- **Rate limiting** - Implement retry logic with exponential backoff
 
-## Next steps
+## Related content
 
 - [Learn about authentication options](../get-started/authentication/authentication-guidance.md)
 - [Explore REST API samples](../get-started/rest/samples.md)
