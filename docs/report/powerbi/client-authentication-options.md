@@ -19,8 +19,8 @@ ms.custom: sfi-image-nochange
 
 ::: moniker range="azure-devops"
 
-When you connect from Power BI or Excel to Analytics by using the OData feed, choose Microsoft Entra ID (**Microsoft Entra ID**) for the most secure option.
-You can also authenticate with personal access tokens (**PATs**), but this method is less secure.
+When you connect from Power BI or Excel to Analytics by using the OData feed, choose **Microsoft Entra ID** for the most secure option.
+You can also authenticate with personal access tokens (PATs), but this method is less secure.
 
 ::: moniker-end
 
@@ -74,18 +74,6 @@ To change an existing URL to use Windows instead of a PAT, see [Change authentic
 
 ::: moniker-end
 
-## Create a personal access token (if needed)
-
-> [!IMPORTANT]
-> Use Microsoft Entra ID (Azure DevOps Services) or Windows authentication (Azure DevOps Server) instead of PATs whenever possible.
-> PATs are less secure and require manual rotation. For more information, see [Microsoft Entra ID](#azure-active-directory-azure-ad) earlier in this article.
-
-1. Follow the steps in [Create a PAT](../../organizations/accounts/use-personal-access-tokens-to-authenticate.md#create-a-pat) with scope: **Analytics (read)** (`vso.analytics`).
-
-2. Copy the token that displays. If you go to a different page, you can't retrieve it later.
-
-3. If you need to revoke a token, go to this page and choose the **Revoke** link. That token is immediately denied access to Azure DevOps Services.
-	
 ## Enter credentials within a client
 
 Both Power BI and Excel use Power Query when accessing OData.
@@ -132,10 +120,14 @@ This walkthrough uses Power BI Desktop but also applies to Excel.
 
 ### Use a PAT instead (not recommended)
 
-If you can't use Microsoft Entra ID or Windows authentication, you can authenticate with a PAT by choosing **Basic** in the authentication dialog and entering your PAT as the password.
+If you can't use Microsoft Entra ID or Windows authentication, you can authenticate with a PAT:
+
+1. [Create a PAT](../../organizations/accounts/use-personal-access-tokens-to-authenticate.md#create-a-pat) with scope **Analytics (read)** (`vso.analytics`).
+2. Copy the token. If you go to a different page, you can't retrieve it later.
+3. In the authentication dialog, choose **Basic** and enter the PAT as the password.
 
 > [!WARNING]
-> PATs are less secure than Microsoft Entra ID or Windows authentication.
+> PATs are less secure than Microsoft Entra ID or Windows authentication and require manual rotation.
 > Use PATs only when other authentication methods aren't available for your scenario.
 
 <a id="update-credentials">  </a>
