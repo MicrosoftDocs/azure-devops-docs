@@ -307,7 +307,7 @@ For more information, see [Create an Azure Resource Manager service connection w
 
 ## Unable to delete a service connection
 
-When you try to delete an Azure RM service connection, you might receive an error such as "Failed to remove Azure permission" or "Failed to remove the service principal from Microsoft Entra ID." In some cases, the connection remains in the list even though no error is displayed.
+When you try to delete an Azure Resource Manager service connection, you might receive an error such as "Failed to remove Azure permission" or "Failed to remove the service principal from Microsoft Entra ID." In some cases, the connection remains in the list even though no error is displayed.
 
 To resolve this issue:
 
