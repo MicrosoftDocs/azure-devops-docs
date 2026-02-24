@@ -336,7 +336,7 @@ Below, you will find several investments that we plan to deliver as part of this
         <td>Boards</td>
       </tr>
       <tr>
-         <td><a href="/azure/devops/release-notes/roadmap/2025/boards/boards-condensed-views" data-raw-source="[Condensed views for kanban and sprint boards](/azure/devops/release-notes/roadmap/2025/boards/boards-condensed-views)">Condensed views for kanban and sprint boards</a></td>
+         <td><a href="/azure/devops/release-notes/roadmap/2026/boards-condensed-views" data-raw-source="[Condensed views for kanban and sprint boards](/azure/devops/release-notes/roadmap/2026/boards-condensed-views)">Condensed views for kanban and sprint boards</a></td>
          <td>Boards</td>
       </tr>
       <tr>
