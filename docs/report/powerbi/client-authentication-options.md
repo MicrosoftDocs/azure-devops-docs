@@ -8,7 +8,8 @@ ms.author: chcomley
 author: chcomley
 ms.topic: how-to
 monikerRange: "<=azure-devops"
-ms.date: 07/14/2020
+ms.date: 02/24/2026
+ai-usage: ai-assisted
 ms.custom: sfi-image-nochange
 ---
 
@@ -18,13 +19,15 @@ ms.custom: sfi-image-nochange
 
 ::: moniker range="azure-devops"
 
-When connecting from Power BI or Excel to Analytics using the OData feed, choose Microsoft Entra ID (**Microsoft Entra ID**) for the most secure option. It is also possible to authenticate with Personal Access Tokens (**PATs**), but this is less recommended.
+When you connect from Power BI or Excel to Analytics by using the OData feed, choose Microsoft Entra ID (**Microsoft Entra ID**) for the most secure option.
+You can also authenticate with personal access tokens (**PATs**), but this method is less secure.
 
 ::: moniker-end
 
 ::: moniker range="<azure-devops"
 
-When connecting from Power BI or Excel to Analytics using the OData feed, choose Windows credentials as the most secure option. It is also possible to authenticate with Personal Access Tokens (**PATs**), but this is less recommended.
+When you connect from Power BI or Excel to Analytics by using the OData feed, choose Windows credentials as the most secure option.
+You can also authenticate with personal access tokens (**PATs**), but this method is less secure.
 
 ::: moniker-end
 
@@ -45,11 +48,11 @@ When connecting from Power BI or Excel to Analytics using the OData feed, choose
 
 Microsoft Entra ID is also known as "Organizational Credential" in Power BI Desktop. You can use it in  [Power BI](https://powerbi.microsoft.com) through OAuth selection when configuring data refresh.
 
-1. When connecting with Power BI Desktop, you'll be prompted to enter your credentials for the data source. Select Organizational account as shown here:
+1. When you connect with Power BI Desktop, you're prompted to enter your credentials for the data source. Select **Organizational account** as shown here:
 
-	![Organizational account prompt](media/power-bi-organizational.png) 
+	:::image type="content" source="media/power-bi-organizational.png" border="true" alt-text="Power BI Desktop, Organizational account prompt."::: 
 
-2. Choose <strong>Sign in</strong> and enter your Microsoft Entra credentials. After that, you're done.
+2. Choose **Sign in** and enter your Microsoft Entra credentials. After that, you're done.
 
 To change an existing URL to use Microsoft Entra ID instead of a PAT, see [Change authentication credentials](#update-credentials) later in this article.
 
@@ -61,41 +64,41 @@ To change an existing URL to use Microsoft Entra ID instead of a PAT, see [Chang
 
 You can use Windows authentication in [Power BI](https://powerbi.microsoft.com) through OAuth selection when configuring data refresh.
 
-1. When connecting with Power BI Desktop, you'll be prompted to enter your credentials for the data source. Select Windows as shown here:
+1. When you connect with Power BI Desktop, you're prompted to enter your credentials for the data source. Select **Windows** as shown here:
 
-	![Windows authentication prompt](media/power-bi-windowsauth.png)
+	:::image type="content" source="media/power-bi-windowsauth.png" border="true" alt-text="Power BI Desktop, Windows authentication prompt.":::
 
-2. Enter your Windows credentials and choose <strong>Connect</strong>.
+2. Enter your Windows credentials and choose **Connect**.
 
 To change an existing URL to use Windows instead of a PAT, see [Change authentication credentials](#update-credentials) later in this article.
 
 ::: moniker-end
 
-## Create a Personal Access Token  
+## Create a personal access token (if needed)
 
-> [!NOTE]
-> PATs are a less desirable option compared to connecting Power BI with Microsoft Entra ID or Windows Authentication.
-> Consider them an extension of your identity. When used, the token is acting as you. Keep your tokens secret.
-> To help keep your token more secure, consider using credential managers. If you use a credential manager, you won't have to enter your credentials every time you push.
+> [!IMPORTANT]
+> Use Microsoft Entra ID (Azure DevOps Services) or Windows authentication (Azure DevOps Server) instead of PATs whenever possible.
+> PATs are less secure and require manual rotation. For more information, see [Microsoft Entra ID](#azure-active-directory-azure-ad) earlier in this article.
 
-1. Follow the steps on the [Create a PAT](../../organizations/accounts/use-personal-access-tokens-to-authenticate.md#create-a-pat) with scope: **Analytics (read)** (`vso.analytics`).
-	
-2. Copy the token that displays. If you navigate away from the page, you can't retrieve it later.  
+1. Follow the steps in [Create a PAT](../../organizations/accounts/use-personal-access-tokens-to-authenticate.md#create-a-pat) with scope: **Analytics (read)** (`vso.analytics`).
 
-3. If you need to revoke a token, navigate to this page and choose the **Revoke** link. That token will immediately be denied access to Azure DevOps Services.
+2. Copy the token that displays. If you go to a different page, you can't retrieve it later.
+
+3. If you need to revoke a token, go to this page and choose the **Revoke** link. That token is immediately denied access to Azure DevOps Services.
 	
 ## Enter credentials within a client
 
-Both Power BI and Excel work using Power Query when accessing OData. The authentication mechanism, including the various
-authentication screens, are identical. This walkthrough is done using Power BI Desktop. It also applies to Excel.
+Both Power BI and Excel use Power Query when accessing OData.
+The authentication mechanism, including the various authentication screens, is identical.
+This walkthrough uses Power BI Desktop but also applies to Excel.
 
-1. Open <strong>Power BI Desktop</strong>.  
+1. Open **Power BI Desktop**.
 
-2. Choose <strong>Get Data</strong>.  
+2. Choose **Get Data**.
 
-3. Select <strong>OData Feed</strong> (or <strong>More>Other>OData Feed</strong>).  
+3. Select **OData Feed** (or **More > Other > OData Feed**).
 
-4. Enter the URL for the OData endpoint and choose <strong>OK</strong>.  
+4. Enter the URL for the OData endpoint and choose **OK**.  
 
 	::: moniker range="azure-devops"
 
@@ -109,25 +112,37 @@ authentication screens, are identical. This walkthrough is done using Power BI D
 
 	::: moniker-end
 
-5. In the authentication dialog, choose **Basic**, enter your credentials, and then choose **Connect**.  
+::: moniker range="azure-devops"
 
-     ::: moniker range="azure-devops"
+5. In the authentication dialog, choose **Organizational account**, then select **Sign in** and enter your Microsoft Entra credentials.
 
-     :::image type="content" source="media/authentication-7.png" alt-text="Authentication information":::
+::: moniker-end
 
-     ::: moniker-end
+::: moniker range="<azure-devops"
 
-     ::: moniker range="<azure-devops"
+5. In the authentication dialog, choose **Windows** and enter your Windows credentials.
 
-     :::image type="content" source="media/authentication-7-onprem.png" alt-text="Authentication information":::
+::: moniker-end
 
-     ::: moniker-end
+6. Choose **Connect**.
+
+> [!TIP]
+> If you previously connected with a PAT (Basic auth), update your stored credentials to use Microsoft Entra ID or Windows authentication instead.
+> For steps, see [Change authentication credentials](#update-credentials).
+
+### Use a PAT instead (not recommended)
+
+If you can't use Microsoft Entra ID or Windows authentication, you can authenticate with a PAT by choosing **Basic** in the authentication dialog and entering your PAT as the password.
+
+> [!WARNING]
+> PATs are less secure than Microsoft Entra ID or Windows authentication.
+> Use PATs only when other authentication methods aren't available for your scenario.
 
 <a id="update-credentials">  </a>
 
 ## Change authentication credentials
 
-If you receive an access denied message, you may need to change your authentication credentials. Power Query caches your credential information so you only have to enter it once. However, Personal Access Tokens expire and you may need to update or change your authentication information. 
+If you receive an access denied message, you might need to change your authentication credentials. Power Query caches your credential information so you only have to enter it once. However, personal access tokens expire and you might need to update or change your authentication information.
 
 ### Update credentials in Power BI Desktop
 
@@ -147,7 +162,7 @@ If you receive an access denied message, you may need to change your authenticat
 
 	::: moniker-end
 
-3. In the next **Data Source Settings** dialog, select the Edit button under the Credentials setting.   
+3. In the next **Data Source Settings** dialog, select the **Edit** button under the **Credentials** setting.
 
 	::: moniker range="azure-devops"
 
@@ -161,15 +176,15 @@ If you receive an access denied message, you may need to change your authenticat
 
 	::: moniker-end
 
-4. Edit the credentials as noted above, select **Save**, then **Done**, then **Close**. 
+4. Edit the credentials as described earlier, select **Save**, then **Done**, then **Close**.
 
-### Update credentials in Excel 
+### Update credentials in Excel
 
 1. Open **Excel** and select the **Data** tab.  
 
 2. Select **New Query** > **Data Source Settings...**
 
-    :::image type="content" source="media/client-auth-excel-open-data-source-settings.png" alt-text="Excel, Open Data source settings":::
+    :::image type="content" source="media/client-auth-excel-open-data-source-settings.png" border="true" alt-text="Excel Data tab, Data Source Settings option.":::
 
 3. Select the correct URL to the OData Feed and select **Edit**.  
 
@@ -185,7 +200,7 @@ If you receive an access denied message, you may need to change your authenticat
 
 	::: moniker-end
 
-4. In the next **Data Source Settings** dialog, select the Edit button under the Credentials setting. 
+4. In the next **Data Source Settings** dialog, select the **Edit** button under the **Credentials** setting.
  
 	::: moniker range="azure-devops"
 
@@ -199,22 +214,16 @@ If you receive an access denied message, you may need to change your authenticat
 
 	::: moniker-end
 
-5. Edit the credentials as noted above, select **Save**, then **Done**, then **Close**.
+5. Edit the credentials as described earlier, select **Save**, then **Done**, then **Close**.
 
 ## Publish to Power BI
 
-After you've created a model and loaded it with data, you can [publish it to Power BI](publish-power-bi-desktop-to-power-bi.md). When using Microsoft Entra ID or Windows, make sure to select
-the **oAuth2** option. 
+After you create a model and load it with data, you can [publish it to Power BI](publish-power-bi-desktop-to-power-bi.md).
+When you use Microsoft Entra ID or Windows, make sure to select the **oAuth2** option.
 
-## Related articles
+## Related content
  
 - [Authenticate your identity with personal access tokens](../../organizations/accounts/use-personal-access-tokens-to-authenticate.md)  
 - [Access data through Excel](access-analytics-excel.md)  
 - [Access data through Power BI desktop](access-analytics-power-bi.md)  
-- [Publish a Power BI Desktop file to Power BI](publish-power-bi-desktop-to-power-bi.md)  
-
-<!---
-From the Personal access tokens page, choose **Add**:  
-
-:::image type="content" source="../../media/security-personal-access-tokens.png" alt-text="Personal Access Tokens, Added":::
--->
+- [Publish a Power BI Desktop file to Power BI](publish-power-bi-desktop-to-power-bi.md)
