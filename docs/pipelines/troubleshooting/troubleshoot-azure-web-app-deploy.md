@@ -16,6 +16,8 @@ monikerRange: '<= azure-devops'
 
 This article helps you resolve common errors that occur when you use the [Azure Web App (`AzureWebApp@1`)](/azure/devops/pipelines/tasks/reference/azure-web-app-v1) or [Azure App Service Deploy (`AzureRmWebAppDeployment@4`)](/azure/devops/pipelines/tasks/reference/azure-rm-web-app-deployment-v4) tasks in Azure Pipelines.
 
+This is a troubleshooting article. To learn more about App Service deployments, see [Deploy to Azure App Service by using Azure Pipelines](/azure/app-service/deploy-azure-pipelines), which covers `AzureWebApp@1` and advanced scenarios with `AzureRmWebAppDeployment@4`. For container-based deployments, see [Deploy a custom container to App Service using Azure Pipelines](/azure/app-service/deploy-container-azure-pipelines), which includes `AzureRmWebAppDeployment@4` examples.
+
 > [!TIP]
 > Before you troubleshoot, gather debug logs by [enabling verbose logging](review-logs.md) for your pipeline run. You can also collect diagnostic logs from the [Kudu service](https://github.com/projectkudu/kudu/wiki/Diagnostic-Log-Stream) and the **Diagnose and solve problems** feature in the Azure portal for your App Service. Check [Azure DevOps status](https://status.dev.azure.com/) and [Azure status](https://azure.status.microsoft/status) to rule out service outages.
 

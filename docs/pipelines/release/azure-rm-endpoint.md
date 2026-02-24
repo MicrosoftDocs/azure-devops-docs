@@ -284,9 +284,9 @@ To resolve this issue:
 3. Select **More actions** (**...**) > **Security**.
 4. Under **Pipeline permissions**, select **+** and add the pipeline that needs access.
 
-Alternatively, you can grant access to all pipelines:
+Alternatively, you can grant access to all pipelines. This is not recommended. To grant access to all pipelines:
 
-1. On the service connection's security page, select **More actions** > **Open access**.
+On the service connection's security page, select **More actions** > **Open access**.
 
 > [!NOTE]
 > Open access allows any pipeline in the project to use the service connection. For tighter control, grant access to specific pipelines only.
