@@ -18,11 +18,11 @@ To support integration and traceability across Azure DevOps Services with pipeli
 
 ## Supported pipeline and work tracking integration features 
 
-Several features provide support for end-to-end traceability as user stories and features move through the development cycle. As with Azure Repos, you can link work items to pipeline objects with the following link types: *Build, Integrated in build*, and *Integrated in release*. You can create the *Integrated in release environment* link by enabling the **Report release status to Boards** option in Classic release pipelines. 
+Several features provide support for end-to-end traceability as user stories and features move through the development cycle. You can link work items to pipeline objects with the following link types: *Build, Integrated in build*, and *Integrated in release*. These link types work with both Azure Repos and GitHub repositories. For YAML pipelines with GitHub repos, you can enable automatic *Integrated in build* links on associated work items. You can create the *Integrated in release environment* link by enabling the **Report release status to Boards** option in Classic release pipelines. 
 
 :::image type="content" source="media/pipelines-integration/concept-link-types-pipelines.png" alt-text="Screenshot of conceptual diagram showing link types that connect work items to Azure Pipelines objects.":::
 
-The following table summarizes the integration points between Azure Boards and Azure Pipelines. Options and configuration steps differ depending on whether you're configuring a YAML or Classic pipeline, and your Azure DevOps version. Most options are supported for pipelines run against an Azure Repos Git repository unless otherwise noted. 
+The following table summarizes the integration points between Azure Boards and Azure Pipelines. Options and configuration steps differ depending on whether you're configuring a YAML or Classic pipeline, and your Azure DevOps version. Most options are supported for pipelines run against an Azure Repos Git repository or a GitHub repository unless otherwise noted. 
  
 :::row:::
    :::column span="2":::
@@ -65,7 +65,7 @@ The following table summarizes the integration points between Azure Boards and A
       Automatically link work items to builds  
    :::column-end:::
    :::column span="2":::
-      Required to populate the **Development** control with *Integrated in build* links. The work items or commits that are part of a release are computed from the versions of artifacts. For example, each build in Azure Pipelines is associated with a set of work items and commits. For more information, see [Automatically link work items](#auto-link-work-items-builds) later in this article. 
+      Required to populate the **Development** control with *Integrated in build* links. The work items or commits that are part of a release are computed from the versions of artifacts. For example, each build in Azure Pipelines is associated with a set of work items and commits. This option is supported for both Azure Repos and GitHub repositories. For more information, see [Automatically link work items](#auto-link-work-items-builds) later in this article. 
    :::column-end:::
    :::column span="1":::
       YAML, Azure DevOps Server 2020 and later
@@ -187,6 +187,8 @@ For more information on each setting, see:
 ## Automatically link work items to builds or releases 
 
 By enabling automatic linking, you can track the builds or releases that incorporated work without having to manually search through a large set of builds or releases. Every successful build associated with the work item automatically appears in the **Development** control of the work item form. Each release stage associated with the work item automatically appears in the **Deployment** control of the work item form.
+
+This feature works for both Azure Repos and GitHub repositories. For YAML pipelines that build code from a connected GitHub repository, enabling this option creates *Integrated in build* links on associated work items, providing the same build traceability experience as Azure Repos. For more information about GitHub integration, see [Link GitHub commits, pull requests, branches, and issues to work items](../../boards/github/link-to-from-github.md).
 
 ::: moniker-end 
 

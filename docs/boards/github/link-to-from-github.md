@@ -8,14 +8,14 @@ ms.author: chcomley
 author: chcomley
 ms.topic: quickstart
 monikerRange: "<=azure-devops"
-ms.date: 12/01/2025
+ms.date: 02/25/2026
 ---
 
 # Link GitHub commits, pull requests, branches, and issues to work items in Azure Boards
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)] 
 
-In this article, learn how to link work items to GitHub commits, pull requests, and branches after connecting your Azure Boards project with a GitHub repository. You can use the **#mention** syntax for commits and branches or add a GitHub commit, pull request, or branch link directly from the Azure Boards work item.
+In this article, learn how to link work items to GitHub commits, pull requests, branches, and builds after connecting your Azure Boards project with a GitHub repository. You can use the **#mention** syntax for commits and branches or add a GitHub commit, pull request, or branch link directly from the Azure Boards work item.
 
 [!INCLUDE[temp](../includes/github-platform-support.md)]
 
@@ -131,6 +131,23 @@ The Development section within the work item form lists the links created to Git
 
 Choose the link provided to open the commit or pull request in GitHub.  
 
+## View build status for YAML pipelines (Integrated in build)
+
+When you use Azure Pipelines YAML to build code hosted in a GitHub repository, you can automatically create *Integrated in build* links on associated work items. This feature provides build traceability for GitHub repos, achieving parity with the experience available for Azure Repos.
+
+To enable this feature:
+
+1. Open your YAML pipeline, select :::image type="icon" source="../../media/icons/more-actions.png" border="false"::: **More actions**, and then select **Settings**.
+2. In the **Pipeline settings** dialog, enable **Automatically link new work items in this build**.
+
+   :::image type="content" source="media/link/yaml-pipeline-auto-link-setting.png" alt-text="Screenshot of YAML Pipeline settings dialog showing the Automatically link new work items in this build option.":::
+
+Once the build completes, an *Integrated in build* link automatically appears in the **Development** section of each associated work item, giving your team full traceability from work item to build.
+
+:::image type="content" source="media/link/integrated-in-build-link.png" alt-text="Screenshot of work item showing the Integrated in build link in the Development section.":::
+
+For more information about configuring this setting, see [Configure pipelines to support work tracking](../../pipelines/integrations/configure-pipelines-work-tracking.md).
+
 <a id="view-github-objects-on-board"> </a>
 
 ## View GitHub objects on a board
@@ -147,6 +164,7 @@ With GitHub annotations enabled on the board, you can quickly open linked GitHub
 ## Related content
 
 - [Integrate Azure Boards with GitHub](index.md)
+- [Configure pipelines to support work tracking](../../pipelines/integrations/configure-pipelines-work-tracking.md)
 - [Understand how workflow category states are used in Azure Boards backlogs and boards](../work-items/workflow-and-state-categories.md)
 - [Link work items to objects](../backlogs/add-link.md)
 - [Troubleshoot GitHub and Azure Boards integration](troubleshoot-github-connection.md)
