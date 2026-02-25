@@ -8,14 +8,14 @@ ms.author: chcomley
 author: chcomley
 ms.topic: quickstart
 monikerRange: "<=azure-devops"
-ms.date: 12/01/2025
+ms.date: 02/25/2026
 ---
 
 # Link GitHub commits, pull requests, branches, and issues to work items in Azure Boards
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)] 
 
-In this article, learn how to link work items to GitHub commits, pull requests, and branches after connecting your Azure Boards project with a GitHub repository. You can use the **#mention** syntax for commits and branches or add a GitHub commit, pull request, or branch link directly from the Azure Boards work item.
+In this article, learn how to link work items to GitHub commits, pull requests, branches, and builds after connecting your Azure Boards project with a GitHub repository. You can use the **#mention** syntax for commits and branches, use `!` mentions to reference GitHub pull requests from work item discussions, or add a GitHub commit, pull request, or branch link directly from the Azure Boards work item.
 
 [!INCLUDE[temp](../includes/github-platform-support.md)]
 
@@ -130,6 +130,14 @@ The Development section within the work item form lists the links created to Git
 :::image type="content" source="media/link/git-hub-development-links.png" alt-text="Screenshot of work item form, Development section shows GitHub links.":::
 
 Choose the link provided to open the commit or pull request in GitHub.  
+
+## Mention GitHub pull requests with `!`
+
+You can use `!` mentions to reference and discuss GitHub pull requests directly from any work item rich-text field or discussion comment. When you type `!` in a text field, a picker appears that lets you search for and select a GitHub pull request from a connected repository. The selected pull request is inserted as a clickable link.
+
+This feature makes it easy to reference related pull requests in work item descriptions, acceptance criteria, or discussion threads without manually copying URLs.
+
+:::image type="content" source="media/link/github-pr-mentions.png" alt-text="Screenshot showing how to use the ! mention to reference a GitHub pull request from a work item discussion.":::
 
 <a id="view-github-objects-on-board"> </a>
 
