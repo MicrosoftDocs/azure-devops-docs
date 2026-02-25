@@ -4,7 +4,7 @@ description: Learn the fundamental concepts and patterns for Azure DevOps REST A
 ms.assetid: 14ac2881-2aaf-4291-8dfe-3f7e3f591861
 ms.subservice: azure-devops-ecosystem
 ms.topic: quickstart
-ms.custom: 
+ms.custom: pat-deprecation
 monikerRange: '<= azure-devops'
 ms.author: chcomley
 author: chcomley

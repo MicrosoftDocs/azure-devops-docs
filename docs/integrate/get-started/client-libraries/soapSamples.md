@@ -4,12 +4,12 @@ description: C# samples showing how to integrate with Azure DevOps using legacy 
 ms.assetid: 9ff78e9c-63f7-45b1-a70d-42aa6a9dbc57
 ms.subservice: azure-devops-ecosystem
 ai-usage: ai-assisted
-ms.custom: devx-track-dotnet
+ms.custom: devx-track-dotnet, pat-deprecation
 ms.topic: sample
 monikerRange: '<= azure-devops'
 ms.author: chcomley
 author: chcomley
-ms.date: 07/14/2025
+ms.date: 02/24/2026
 ---
 
 # SOAP client library samples for Azure DevOps
@@ -62,7 +62,7 @@ This article contains samples for integrating with Azure DevOps Server and Azure
 - Evaluate authentication requirements
 
 **Step 2: Plan migration strategy**
-- **Immediate**: Update authentication to use PATs or Microsoft Entra ID
+- **Immediate**: Update authentication to use Microsoft Entra ID
 - **Short-term**: Migrate to REST-based clients while keeping .NET Framework
 - **Long-term**: Modernize to .NET Core/.NET 5+ with REST clients
 
@@ -183,29 +183,17 @@ public static class LegacySoapExample
 
 ### Personal access token authentication (not recommended)
 
+[!INCLUDE [use-microsoft-entra-reduce-pats](../../../includes/use-microsoft-entra-reduce-pats.md)]
+
+If you must use a PAT, see [Use personal access tokens](../../../organizations/accounts/use-personal-access-tokens-to-authenticate.md) to create one.
+Then pass it as a `VssBasicCredential`:
+
 ```csharp
-/// <summary>
-/// Authenticate SOAP client using Personal Access Token
-/// Most secure option for legacy SOAP clients
-/// </summary>
-public static void AuthenticateWithPAT(string collectionUri, string personalAccessToken)
+var credentials = new VssBasicCredential(string.Empty, personalAccessToken);
+
+using (var tpc = new TfsTeamProjectCollection(new Uri(collectionUri), credentials))
 {
-    try
-    {
-        var credentials = new VssBasicCredential(string.Empty, personalAccessToken);
-        
-        using (var tpc = new TfsTeamProjectCollection(new Uri(collectionUri), credentials))
-        {
-            tpc.Authenticate();
-            Console.WriteLine($"Successfully authenticated to: {tpc.DisplayName}");
-            Console.WriteLine($"Instance ID: {tpc.InstanceId}");
-        }
-    }
-    catch (Exception ex)
-    {
-        Console.WriteLine($"PAT authentication failed: {ex.Message}");
-        throw;
-    }
+    tpc.Authenticate();
 }
 ```
 
@@ -271,14 +259,14 @@ public static void AuthenticateInteractively(string collectionUri)
 ### Username/password authentication (Deprecated)
 
 > [!CAUTION]
-> Username/password authentication is deprecated and insecure. Use PATs or modern authentication methods instead.
+> Username/password authentication is deprecated and insecure. Use modern authentication methods instead.
 
 ```csharp
 /// <summary>
 /// Username/password authentication - DEPRECATED AND INSECURE
 /// Only use for legacy on-premises scenarios where no alternatives exist
 /// </summary>
-[Obsolete("Username/password authentication is deprecated. Use PATs or modern authentication.")]
+[Obsolete("Username/password authentication is deprecated. Use modern authentication.")]
 public static void AuthenticateWithUsernamePassword(string collectionUri, string username, string password)
 {
     try
@@ -294,7 +282,7 @@ public static void AuthenticateWithUsernamePassword(string collectionUri, string
     catch (Exception ex)
     {
         Console.WriteLine($"Username/password authentication failed: {ex.Message}");
-        Console.WriteLine("This method is deprecated. Please migrate to PATs or modern authentication.");
+        Console.WriteLine("This method is deprecated. Migrate to modern authentication.");
         throw;
     }
 }
@@ -339,7 +327,7 @@ class LegacySoapProgram
             
             if (!string.IsNullOrEmpty(personalAccessToken))
             {
-                // Recommended: Use PAT authentication
+                // Use PAT authentication (consider migrating to modern auth)
                 credentials = new VssBasicCredential(string.Empty, personalAccessToken);
                 Console.WriteLine("Using Personal Access Token authentication");
             }

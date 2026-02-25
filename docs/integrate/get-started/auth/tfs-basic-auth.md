@@ -5,9 +5,11 @@ title: Cross-platform CLI authentication for Azure DevOps
 description: Learn authentication options for the cross-platform CLI for Azure DevOps, including Microsoft Entra ID tokens and personal access tokens.
 ms.assetid: 6dc7f977-4b62-4bd6-b77a-1c6cade1ffa8
 monikerRange: '<= azure-devops'
+ms.custom: pat-deprecation
 ms.author: chcomley
 author: chcomley
-ms.date: 07/14/2025
+ai-usage: ai-assisted
+ms.date: 02/24/2026
 ---
 
 # Cross-platform CLI authentication for Azure DevOps
@@ -17,7 +19,11 @@ ms.date: 07/14/2025
 This article explains authentication approaches for the cross-platform CLI (tfx-cli) and Azure DevOps.
 
 > [!IMPORTANT]
-> We recommend using [Microsoft Entra ID authentication](../authentication/entra.md) as the primary method for authentication. Personal access tokens (PATs) should be used only when Microsoft Entra ID authentication isn't available. Basic authentication is deprecated and not recommended.
+> Use [Microsoft Entra ID authentication](../authentication/entra.md) as the primary method for authentication.
+> Personal access tokens (PATs) should be used only when Microsoft Entra ID authentication isn't available.
+> Basic authentication is deprecated and not recommended.
+
+[!INCLUDE [use-microsoft-entra-reduce-pats](../../../includes/use-microsoft-entra-reduce-pats.md)]
 
 ## Prerequisites
 
@@ -39,7 +45,7 @@ Choose the appropriate authentication method based on your environment:
 | Method | Recommended for | 
 |--------|----------------|
 | Microsoft Entra ID | Azure DevOps Services | 
-| PAT | Azure DevOps Server, automation scripts | 
+| PAT | Azure DevOps Server when Entra ID isn't available | 
 | Basic Authentication | Azure DevOps Server only | 
 
 ## Microsoft Entra ID authentication (Recommended)
@@ -105,7 +111,7 @@ If you must use basic authentication with Azure DevOps Server installations:
    - Open Server Manager.
    - Install the Basic Authentication feature for IIS.
    - In IIS Manager, go to your Azure DevOps Server website.
-   - Double-select **Authentication** in the Features view.
+   - Double-click **Authentication** in the Features view.
    - Enable Basic Authentication.
    - Leave domain and realm settings empty.
 
