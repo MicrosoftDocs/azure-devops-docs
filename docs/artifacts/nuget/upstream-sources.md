@@ -113,6 +113,9 @@ In this section, you learn how to set up your project to authenticate with your 
 
 ## Install packages from NuGet Gallery
 
+> [!NOTE]
+> To save packages from upstream sources, you must be a **Feed and Upstream Reader (Collaborator)** or higher. See [Manage permissions](../feeds/feed-permissions.md) for more details.
+
 Now that your project is configured to authenticate with your Azure Artifacts feed, you can proceed to install packages from the NuGet Gallery upstream. In this example, you'll install the *MCP C# SDK* for the Model Context Protocol for .NET applications to interact with MCP clients and servers:
 
 1. Navigate to the NuGet Gallery at `https://www.nuget.org/`.

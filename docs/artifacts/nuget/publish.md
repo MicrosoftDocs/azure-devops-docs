@@ -72,6 +72,9 @@ This article guides you through setting up your project and publishing your NuGe
 
 ## Publish packages to a feed in the same organization
 
+> [!NOTE]
+> To publish packages to a feed, you must be a **Feed Publisher (Contributor)** or higher. See [Manage permissions](../feeds/feed-permissions.md) for more details.
+
 Run the following command to publish a package to your feed. Replace the placeholders with the appropriate values:
 
 ```CLI
