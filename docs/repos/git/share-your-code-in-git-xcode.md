@@ -5,10 +5,11 @@ description: Learn how to share and collaborate on Xcode projects using Azure Re
 ms.assetid: "f1fedd72-d9b9-45cf-99aa-2e624c899c45"
 ms.service: azure-devops-repos
 ms.topic: how-to
-ms.date: 07/02/2025
+ms.date: 02/24/2026
 monikerRange: '<= azure-devops'
 ms.subservice: azure-devops-repos-git
-ms.custom: sfi-image-nochange
+ms.custom: sfi-image-nochange, pat-deprecation
+ai-usage: ai-assisted
 # customer-intent: As an iOS developer using Xcode, I want to securely share my project code with Azure Repos using modern authentication methods so I can collaborate with my team and manage version control for my iOS applications.
 ---
 
@@ -17,7 +18,9 @@ ms.custom: sfi-image-nochange
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
-This guide shows you how to share your Xcode projects using Azure Repos. 
+[!INCLUDE [use-microsoft-entra-reduce-pats](../../includes/use-microsoft-entra-reduce-pats.md)]
+
+This guide shows you how to share your Xcode projects using Azure Repos.
 
 ## Prerequisites
 
@@ -31,7 +34,7 @@ Choose the authentication method that best fits your workflow:
 |--------|----------|------------------|----------|
 | **SSH keys** | Individual developers, long-term use | Medium (one-time setup) | High | 
 | **Microsoft Entra ID tokens** | Enterprise environments, temporary access | Medium | Very High |
-| **Personal Access Tokens** | Specific scenarios, automation | Low | Medium | 
+| **Personal access tokens** | Specific scenarios, automation | Low | Medium |
 
 > [!TIP]
 > For most developers, **SSH keys** provide the best balance of security and usability with Xcode. Set them up once and they work seamlessly.
@@ -79,7 +82,7 @@ Create a new Git repo in Azure Repos for your Xcode project.
    > **Choose your authentication method:**
    > - **SSH keys** (recommended for simplicity): Set up once and works seamlessly with Xcode. See [Use SSH keys](use-ssh-keys-to-authenticate.md).
    > - **Microsoft Entra ID tokens** (recommended for enterprise): Modern, secure authentication. See [Microsoft Entra ID authentication](../../integrate/get-started/authentication/entra.md).
-   > - **Personal Access Tokens**: Alternative method for specific scenarios. See [Personal Access Tokens](../../organizations/accounts/use-personal-access-tokens-to-authenticate.md).
+   > - **Personal access tokens** - Alternative method for specific scenarios. See [Personal access tokens](../../organizations/accounts/use-personal-access-tokens-to-authenticate.md).
    > 
    > When using SSH, use the SSH clone URL when configuring your remote.
 
@@ -104,13 +107,15 @@ Now connect your local Xcode project to Azure Repos and push your code.
 5. If prompted for credentials, choose your authentication method:
 
    > [!IMPORTANT]
-   > We recommend using SSH keys or Microsoft Entra ID tokens for secure authentication. Only use personal access tokens when other methods aren't available.
+   > Use SSH keys or Microsoft Entra ID tokens for secure authentication.
+   > Only use personal access tokens when other methods aren't available.
 
-   ### Option 1: SSH Authentication (Recommended)
+   ### Option 1: SSH authentication (recommended)
    
-   If you configured SSH keys, Xcode authenticates automatically. No other credentials needed.
+   If you configured SSH keys, Xcode authenticates automatically.
+   No other credentials needed.
    
-   ### Option 2: Microsoft Entra ID Token
+   ### Option 2: Microsoft Entra ID token
    
    For **Username**: Enter your Azure DevOps username.
    For **Password**: Use a Microsoft Entra ID access token.
@@ -120,16 +125,17 @@ Now connect your local Xcode project to Azure Repos and push your code.
    az account get-access-token --resource 499b84ac-1321-427f-aa17-267ca6975798 --query "accessToken" --output tsv
    ```
    
-   ### Option 3: Personal Access Token (alternative)
+   ### Option 3: Personal access token (alternative)
    
    For **Username**: Enter your Azure DevOps username.
-   For **Password**: Create a [Personal Access Token](../../organizations/accounts/use-personal-access-tokens-to-authenticate.md) with **Code (read and write)** scope.
+   For **Password**: Create a [personal access token](../../organizations/accounts/use-personal-access-tokens-to-authenticate.md) with **Code (read and write)** scope.
    
-   Select **OK** to complete authentication. 
+   Select **OK** to complete authentication.
 
    ![Screenshot that shows how to authenticate using a token.](media/share-your-code-in-git-xcode/xcodeauthentication.png)
 
-After successful authentication, Xcode [pushes](pushing.md) your project to Azure Repos. Your code is now available for your team to collaborate on.
+After successful authentication, Xcode [pushes](pushing.md) your project to Azure Repos.
+Your code is now available for your team to collaborate on.
 
 > [!TIP]
 > Once you set up authentication, future pushes and pulls use the same credentials automatically.
