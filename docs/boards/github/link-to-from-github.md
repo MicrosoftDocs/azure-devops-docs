@@ -137,7 +137,24 @@ You can use `!` mentions to reference and discuss GitHub pull requests directly 
 
 This feature makes it easy to reference related pull requests in work item descriptions, acceptance criteria, or discussion threads without manually copying URLs.
 
-:::image type="content" source="media/link/github-pr-mentions.png" alt-text="Screenshot showing how to use the ! mention to reference a GitHub pull request from a work item discussion.":::
+:::image type="content" source="media/link/github-pr-mentions.gif" alt-text="Gif showing how to use the ! mention to reference a GitHub pull request from a work item discussion.":::
+
+## View build status for YAML pipelines (Integrated in build)
+
+When you use Azure Pipelines YAML to build code hosted in a GitHub repository, you can automatically create *Integrated in build* links on associated work items. This feature provides build traceability for GitHub repos, achieving parity with the experience available for Azure Repos.
+
+To enable this feature:
+
+1. Open your YAML pipeline, select :::image type="icon" source="../../media/icons/more-actions.png" border="false"::: **More actions**, and then select **Settings**.
+2. In the **Pipeline settings** dialog, enable **Automatically link new work items in this build**.
+
+   :::image type="content" source="media/link/yaml-pipeline-auto-link-setting.png" alt-text="Screenshot of YAML Pipeline settings dialog showing the Automatically link new work items in this build option.":::
+
+Once the build completes, an *Integrated in build* link automatically appears in the **Development** section of each associated work item, giving your team full traceability from work item to build.
+
+:::image type="content" source="media/link/integrated-in-build-link.png" alt-text="Screenshot of work item showing the Integrated in build link in the Development section.":::
+
+For more information about configuring this setting, see [Configure pipelines to support work tracking](../../pipelines/integrations/configure-pipelines-work-tracking.md).
 
 <a id="view-github-objects-on-board"> </a>
 
@@ -155,6 +172,7 @@ With GitHub annotations enabled on the board, you can quickly open linked GitHub
 ## Related content
 
 - [Integrate Azure Boards with GitHub](index.md)
+- [Configure pipelines to support work tracking](../../pipelines/integrations/configure-pipelines-work-tracking.md)
 - [Understand how workflow category states are used in Azure Boards backlogs and boards](../work-items/workflow-and-state-categories.md)
 - [Link work items to objects](../backlogs/add-link.md)
 - [Troubleshoot GitHub and Azure Boards integration](troubleshoot-github-connection.md)

@@ -59,7 +59,7 @@ After you define a pipeline to build and release the code changes, you can track
 
 When you open the work item form, it displays the stages to which the requirement is deployed. You can drill down for greater details with the dropdown menu. 
 
-- **Development** section: Open branches, commits, or pull requests linked to the work item.
+- **Development** section: Open branches, commits, pull requests, or builds linked to the work item. For GitHub repositories, *Integrated in build* links are also shown in this section when you enable the automatic linking option in your YAML pipeline settings. For more information, see [View build status for YAML pipelines](../boards/github/link-to-from-github.md#view-build-status-for-yaml-pipelines-integrated-in-build).
 - **Deployment** section: Find release information for work items associated with a Git commit that's part of a build being released.
 
 For more information, see [About kanban boards](../boards/boards/kanban-overview.md).
