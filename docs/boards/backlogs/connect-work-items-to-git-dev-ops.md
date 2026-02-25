@@ -181,6 +181,9 @@ Hovering over any entry listed under the Development section activates the hyper
 
 The link types you can add within the development section are Branch, Build, Changeset, Commit, Found in build, Integrated in build, Pull Request, and Versioned Item. 
 
+> [!TIP]
+> The *Integrated in build* link type also works for GitHub repositories when you use YAML pipelines. For more information, see [View build status for YAML pipelines](../github/link-to-from-github.md#view-build-status-for-yaml-pipelines-integrated-in-build).
+
 ![Screenshot shows Artifact-to-artifact link types.](../queries/media/link-tracking-artifact-to-artifact-link-types.png)
 
 ## Related content
