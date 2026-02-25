@@ -5,7 +5,9 @@ description: Keep your repository's branch layout clean and understandable by re
 ms.assetid: dd0fa717-0150-4fd3-8677-29d80b979e65
 ms.service: azure-devops-repos
 ms.topic: how-to
-ms.date: 07/02/2025
+ms.date: 02/24/2026
+ms.custom: pat-deprecation
+ai-usage: ai-assisted
 monikerRange: '<= azure-devops'
 ms.subservice: azure-devops-repos-git
 ---
@@ -14,6 +16,8 @@ ms.subservice: azure-devops-repos-git
 # Require branches to be created in folders
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
+
+[!INCLUDE [use-microsoft-entra-reduce-pats](../../includes/use-microsoft-entra-reduce-pats.md)]
 
 When you have many people collaborating in a repository, the number and names of branches can quickly get out of control.
 Hierarchical branch folders are an effective way to organize the structure.
@@ -25,7 +29,7 @@ Azure Repos can enforce the correct use of branch folders.
 ## Planning
 
 Decide on the folder structure you want to allow.
-As an example, we configure our repository to enforce the following rules:
+As an example, the following rules configure a repository to enforce this structure:
 
 * Only `main` can exist at the repository root.
 * All users are allowed to create branches under the `feature/` and `users/` folders.
@@ -53,7 +57,8 @@ Before you begin, ensure you have the following items:
 ## Enforce permissions
 
 Run the following commands in the Developer Command Prompt, under **Start** > **Visual Studio** > **Developer Command Prompt**.
-Each command includes an explanation of what it's doing. If you don't have a token cached, for example by signing in to the Azure DevOps Services web portal, you're prompted to sign in.
+Each command includes an explanation of what it does.
+If you don't have a token cached, for example by signing in to the Azure DevOps Services web portal, you're prompted to sign in.
 
 1. Block the Create Branch permission at the repository root for the project's contributors:
 
@@ -93,15 +98,15 @@ tf git permission /allow:CreateBranch /group:"[FabrikamProject]\Project Administ
 2. Locate your existing branch. If you don't see it, you might need to look on the **All** tab.
 3. Choose its context menu (the `...` button) and choose **New branch**.
 
-   ![Create branch menu](media/require-branch-folders/create-new-branch-menu.png)
+   :::image type="content" source="media/require-branch-folders/create-new-branch-menu.png" alt-text="Screenshot showing the context menu with New branch option." border="true":::
 
 4. Type the new name of the branch, for example *users/frank/readme-fix*. Choose **Create branch**.
 
-   ![Create new branch](media/require-branch-folders/create-new-branch.png)
+   :::image type="content" source="media/require-branch-folders/create-new-branch.png" alt-text="Screenshot showing the Create a branch dialog with the new branch name." border="true":::
 
 5. Choose the red trashcan icon next to the old branch name to delete it.
 
-   ![Delete old branch](media/require-branch-folders/delete-old-branch.png)
+   :::image type="content" source="media/require-branch-folders/delete-old-branch.png" alt-text="Screenshot showing the delete icon next to the old branch name." border="true":::
 
 
 >[!NOTE] 

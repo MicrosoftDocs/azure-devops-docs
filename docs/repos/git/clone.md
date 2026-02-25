@@ -5,9 +5,11 @@ description: Learn how to create a local clone of any remote Git repo using Visu
 ms.assetid: b6240e2f-2d3d-4874-9953-7e554d5e3b97
 ms.service: azure-devops-repos
 ms.topic: tutorial
-ms.date: 07/02/2025
+ms.date: 02/24/2026
 monikerRange: '<= azure-devops'
 ms.subservice: azure-devops-repos-git
+ms.custom: pat-deprecation
+ai-usage: ai-assisted
 ---
 
 # Clone an existing Git repo
@@ -15,7 +17,13 @@ ms.subservice: azure-devops-repos-git
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 [!INCLUDE [version-vs-gt-eq-2019](../../includes/version-vs-gt-eq-2019.md)]
 
-You can create a local copy of a remote Git repo by cloning it into a local folder on your computer. Cloning a remote repo downloads all [commits](commits.md) on all [branches](./create-branch.md) of the repo, unless you use the `--single-branch` clone option. Cloning links each branch in your new local repo with the corresponding branch in the remote repo. That way, when you [push](pushing.md) to share your local branch changes with your team, the corresponding remote branch is updated. Similarly, when you [pull](pulling.md) to update your local branch with changes made by your team, updates from the corresponding remote branch are retrieved. The remote repo can be an **Azure Repos** Git repo, a **GitHub** repo, or other hosted Git repo.
+[!INCLUDE [use-microsoft-entra-reduce-pats](../../includes/use-microsoft-entra-reduce-pats.md)]
+
+You can create a local copy of a remote Git repo by cloning it into a local folder on your computer. Cloning a remote repo downloads all [commits](commits.md) on all [branches](./create-branch.md) of the repo, unless you use the `--single-branch` clone option.
+Cloning links each branch in your new local repo with the corresponding branch in the remote repo.
+That way, when you [push](pushing.md) to share your local branch changes with your team, the corresponding remote branch is updated.
+Similarly, when you [pull](pulling.md) to update your local branch with changes made by your team, updates from the corresponding remote branch are retrieved.
+The remote repo can be an **Azure Repos** Git repo, a **GitHub** repo, or other hosted Git repo.
 
 This article provides procedures for the following tasks:
 
@@ -37,7 +45,8 @@ For an overview of the Git workflow, see [Azure Repos Git tutorial](gitworkflow.
 
 ## Get the clone URL of an **Azure Repos** Git repo
 
-Typically, you need to know the clone URL of the remote repo that you want to clone. The clone URL uniquely identifies the remote repo.
+Typically, you need to know the clone URL of the remote repo that you want to clone.
+The clone URL uniquely identifies the remote repo.
 
 > [!NOTE]
 > When you're signed into an Azure DevOps project, Visual Studio supports searching for and cloning project repos without needing to know the clone URL.
@@ -52,38 +61,45 @@ Typically, you need to know the clone URL of the remote repo that you want to cl
 
 1. Copy the clone URL from the **Clone Repository** popup.
 
-   :::image type="content" source="media/clone/visual-studio-2019/common/azure-clone-repo.png" border="true" alt-text="Screenshot of the 'Clone Repository' popup on the Azure DevOps project site." lightbox="media/clone/visual-studio-2019/common/azure-clone-repo-lrg.png":::
+   :::image type="content" source="media/clone/visual-studio-2019/common/azure-clone-repo.png" border="true" alt-text="Screenshot of the Clone Repository popup on the Azure DevOps project site." lightbox="media/clone/visual-studio-2019/common/azure-clone-repo-lrg.png":::
 
 [!INCLUDE [project-urls](../../includes/project-urls.md)]
 
 ## Get the clone URL of a **GitHub** repo
 
-Typically, you need to know the clone URL of the remote repo that you want to clone. The clone URL uniquely identifies the remote repo. 
+Typically, you need to know the clone URL of the remote repo that you want to clone.
+The clone URL uniquely identifies the remote repo. 
 
 > [!NOTE]
 > When you're signed into **GitHub**, Visual Studio supports searching for and cloning GitHub repos without needing to know the clone URL.
 
-1. Open a browser and navigate to your **GitHub** account, select the **Repositories** tab, and choose the repository to clone.
+1. Open a browser and go to your **GitHub** account, select the **Repositories** tab, and choose the repository to clone.
 
    :::image type="content" source="media/clone/visual-studio-2019/common/github-repo.png" border="true" alt-text="Screenshot of the repository page on the GitHub site." lightbox="media/clone/visual-studio-2019/common/github-repo-lrg.png":::
 
-1. On the **GitHub** repository page, choose **Code** to launch the **Clone** popup. Copy the clone URL from the **Clone** popup.
+1. On the **GitHub** repository page, choose **Code** to launch the **Clone** popup.
+   Copy the clone URL from the **Clone** popup.
 
-   :::image type="content" source="media/clone/visual-studio-2019/common/github-clone-repo.png" border="true" alt-text="Screenshot of the Clone popup on the  page on the GitHub site." lightbox="media/clone/visual-studio-2019/common/github-clone-repo-lrg.png":::
+   :::image type="content" source="media/clone/visual-studio-2019/common/github-clone-repo.png" border="true" alt-text="Screenshot of the Clone popup on the GitHub site." lightbox="media/clone/visual-studio-2019/common/github-clone-repo-lrg.png":::
 
 > [!TIP]
-> **Microsoft Entra ID tokens are the recommended authentication method** for Git operations. The "Generate Git Credentials" button was removed in January 2025 to encourage the use of more secure authentication methods. For all available authentication options, including the preferred Microsoft Entra OAuth tokens, see the [Authentication overview](auth-overview.md).
+> **Microsoft Entra ID tokens are the recommended authentication method** for Git operations.
+> The "Generate Git Credentials" button was removed in January 2025 to encourage the use of more secure authentication methods.
+> For all available authentication options, including the preferred Microsoft Entra OAuth tokens, see the [Authentication overview](auth-overview.md).
 
 ## Clone an Azure Repos Git repo
 
-By signing in as a member of an Azure DevOps project, you can clone private repos that are accessible to you, and public repos. Visual Studio supports search, clone, and sync operations on repos that are accessible through authentication.
+By signing in as a member of an Azure DevOps project, you can clone private repos that are accessible to you, and public repos.
+Visual Studio supports search, clone, and sync operations on repos that are accessible through authentication.
 
 > [!NOTE]
 > You can clone a public **Azure Repos** Git repo without signing in as a member of its parent Azure DevOps project. To clone a public Git repo without signing in, see [Clone any Git repo](#clone-any-git-repo) and then connect to a project in Azure DevOps.
 
 #### [Visual Studio 2022](#tab/visual-studio-2022)
 
-Visual Studio 2022 provides a Git version control experience by using the **Git** menu, **Git Changes**, and through context menus in **Solution Explorer**. Visual Studio 2019 version 16.8 also offers the **Team Explorer** Git user interface. For more information, see the **Visual Studio 2019 - Team Explorer** tab.
+Visual Studio 2022 provides a Git version control experience by using the **Git** menu, **Git Changes**, and through context menus in **Solution Explorer**.
+Visual Studio 2019 version 16.8 also offers the **Team Explorer** Git user interface.
+For more information, see the **Visual Studio 2019 - Team Explorer** tab.
 
 [!INCLUDE [Clone an Azure Repos Git repo](includes/clone-azure-repos-git.md)]
 
@@ -95,13 +111,18 @@ Visual Studio 2019 provides a Git version control experience by using the **Git*
 
 #### [Visual Studio 2019 - Team Explorer](#tab/visual-studio-2019-team-explorer)
 
-Visual Studio 2019 version 16.8 and later versions provides a Git version control experience while maintaining the **Team Explorer** Git user interface. To use **Team Explorer**, uncheck **Tools** > **Options** > **Preview Features** > **New Git user experience** from the menu bar. You can use Git features from either interface interchangeably.
+Visual Studio 2019 version 16.8 and later versions provides a Git version control experience while maintaining the **Team Explorer** Git user interface.
+To use **Team Explorer**, uncheck **Tools** > **Options** > **Preview Features** > **New Git user experience** from the menu bar.
+You can use Git features from either interface interchangeably.
 
 1. In **Team Explorer**, select **Connect** to open the **Connect** page, and then choose **Manage Connections** > **Connect to Project**.
 
    :::image type="content" source="media/clone/visual-studio-2019/team-explorer/manage-connections.png" border="true" alt-text="Screenshot of the 'Connect to a Project' link in Team Explorer in Visual Studio 2019." lightbox="media/clone/visual-studio-2019/team-explorer/manage-connections-lrg.png":::
 
-1. In the **Connect to a Project** window, sign in to Azure DevOps and choose the remote repo you want to clone. You can use the search box to filter the list of remote repos. If you don't see the remote repo, select **Add Azure DevOps Server** to add the server that hosts the repo. Verify the local folder path where you want the local clone to be created, and then select **Clone**.
+1. In the **Connect to a Project** window, sign in to Azure DevOps and choose the remote repo you want to clone.
+   You can use the search box to filter the list of remote repos.
+   If you don't see the remote repo, select **Add Azure DevOps Server** to add the server that hosts the repo.
+   Verify the local folder path where you want the local clone to be created, and then select **Clone**.
 
    :::image type="content" source="media/clone/visual-studio-2019/team-explorer/connect-add-server.png" border="true" alt-text="Screenshot of the 'Connect to a Project' window in Visual Studio 2019." lightbox="media/clone/visual-studio-2019/team-explorer/connect-add-server-lrg.png":::
 
@@ -161,7 +182,8 @@ You can clone any Git repo that's accessible to you by using the clone URL of th
 
    :::image type="content" source="media/clone/visual-studio-2019/team-explorer/connect-clone.png" border="true" alt-text="Screenshot of the Clone link in the  Connect view of Team Explorer in Visual Studio 2019." lightbox="media/clone/visual-studio-2019/team-explorer/connect-clone-lrg.png":::
 
-1. Enter the clone URL of the remote Git repo that you want to clone, verify the local folder path where you want to create the local clone, and then choose **Clone**. To clone the remote Git repo _and_ any Git repos that are nested within it, leave **Recursively Clone Submodules** checked.
+1. Enter the clone URL of the remote Git repo that you want to clone, verify the local folder path where you want to create the local clone, and then choose **Clone**.
+   To clone the remote Git repo _and_ any Git repos that are nested within it, leave **Recursively Clone Submodules** checked.
 
    :::image type="content" source="media/clone/visual-studio-2019/team-explorer/clone-remote-repo.png" border="true" alt-text="Screenshot of the Clone options in the 'Local Git Repositories' section of the 'Team Explorer' Connect view in Visual Studio 2019." lightbox="media/clone/visual-studio-2019/team-explorer/clone-remote-repo-lrg.png":::
 
@@ -179,13 +201,15 @@ After you clone a remote Git repo, Visual Studio detects the local clone and add
 git clone <clone URL>
 ```
 
-The Git clone command also let's you specify a folder path after the clone URL to create the repo in a specific location. For example:
+The Git clone command also lets you specify a folder path after the clone URL to create the repo in a specific location.
+For example:
 
 ```console
 git clone https://fiber-teams@dev.azure.com/fiber-teams/FiberTests/_git/FiberTests C:\Repos\FiberTests
 ```
 
-The Git clone command also let's you clone just a single branch. This option is useful when only one branch of a large repo is of interest to you.
+The Git clone command also lets you clone just a single branch.
+This option is useful when only one branch of a large repo is of interest to you.
 
 ```console
 git clone <clone URL> --branch <branch name> --single-branch
@@ -241,6 +265,6 @@ start C:\Repos\FiberTests\FiberTests.sln
 > [!div class="nextstepaction"]
 > [Save work with commits](commits.md)
 
-## Related articles
+## Related content
 
 - [New to Git repos? Learn more](/devops/develop/git/set-up-a-git-repository)
