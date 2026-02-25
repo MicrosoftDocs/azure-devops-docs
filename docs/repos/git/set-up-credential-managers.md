@@ -7,8 +7,9 @@ ms.service: azure-devops-repos
 ms.topic: how-to
 monikerRange: '<= azure-devops'
 ms.subservice: azure-devops-repos-git
-ms.date: 07/02/2025
+ms.date: 02/24/2026
 ms.custom: sfi-image-nochange, pat-deprecation
+ai-usage: ai-assisted
 ---
 
 # Use Git Credential Manager to authenticate to Azure Repos
@@ -16,15 +17,17 @@ ms.custom: sfi-image-nochange, pat-deprecation
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 [!INCLUDE [version-vs-gt-eq-2019](../../includes/version-vs-gt-eq-2019.md)]
 
-Git Credential Manager simplifies authentication with your Azure Repos Git repositories. Credential managers let you use the same credentials that you use for the Azure DevOps web portal, supporting secure authentication through Microsoft account or Microsoft Entra ID with built-in multifactor authentication. Git Credential Manager also supports [two-factor authentication](https://help.github.com/articles/about-two-factor-authentication/) with GitHub repositories.
+Git Credential Manager simplifies authentication with your Azure Repos Git repositories.
+Credential managers let you use the same credentials that you use for the Azure DevOps web portal, supporting secure authentication through Microsoft account or Microsoft Entra ID with built-in multifactor authentication.
+Git Credential Manager also supports [two-factor authentication](https://help.github.com/articles/about-two-factor-authentication/) with GitHub repositories.
 
 ## Authentication options
 
 Git Credential Manager supports multiple authentication methods, with Microsoft Entra ID tokens being the recommended approach for enhanced security:
 
-- **Microsoft Entra ID tokens (recommended)**: Provides enhanced security with shorter token lifespans and better integration with organizational policies.
-- **Microsoft account authentication**: Personal Microsoft accounts with multifactor authentication support.
-- **Personal Access Tokens**: Available as an alternative, though we recommend using Microsoft Entra ID tokens when possible.
+- **Microsoft Entra ID tokens (recommended)** - Provides enhanced security with shorter token lifespans and better integration with organizational policies.
+- **Microsoft account authentication** - Personal Microsoft accounts with multifactor authentication support.
+- **Personal access tokens** - Available as an alternative. Use Microsoft Entra ID tokens when possible.
 
 ## IDE integration
 
@@ -33,7 +36,7 @@ Azure Repos provides IDE support for Microsoft account and Microsoft Entra authe
 - [Team Explorer in Visual Studio](../../organizations/projects/connect-to-projects.md)
 - [IntelliJ and Android Studio with the Azure Repos Plugin for IntelliJ](/previous-versions/azure/devops/all/java/download-intellij-plug-in) 
 
-If your environment doesn't have an integration available, you can configure your IDE with [Microsoft Entra ID tokens](../../integrate/get-started/authentication/entra.md) (recommended), [Personal Access Tokens](../../organizations/accounts/use-personal-access-tokens-to-authenticate.md), or [SSH](use-ssh-keys-to-authenticate.md) to connect to your repositories.
+If your environment doesn't have an integration available, you can configure your IDE with [Microsoft Entra ID tokens](../../integrate/get-started/authentication/entra.md) (recommended), [personal access tokens](../../organizations/accounts/use-personal-access-tokens-to-authenticate.md), or [SSH](use-ssh-keys-to-authenticate.md) to connect to your repositories.
 
 [!INCLUDE [use-microsoft-entra-reduce-pats](../../includes/use-microsoft-entra-reduce-pats.md)]
 
@@ -50,36 +53,45 @@ Download and run the latest [Git for Windows installer](https://git-scm.com/down
 You can [use SSH keys](use-ssh-keys-to-authenticate.md) to authenticate to Azure Repos, or use [Git Credential Manager](https://github.com/GitCredentialManager/git-credential-manager).
 
 Installation instructions are included in the GitHub repository for GCM.
-On Mac, we recommend using [Homebrew](https://github.com/git-ecosystem/git-credential-manager/blob/release/docs/install.md#macos).
+On macOS, using [Homebrew](https://github.com/git-ecosystem/git-credential-manager/blob/release/docs/install.md#macos) is recommended.
 On Linux, you can install from a [.deb](https://github.com/GitCredentialManager/git-credential-manager#ubuntudebian-distributions) or a [tarball](https://github.com/GitCredentialManager/git-credential-manager#other-distributions).
 
 ## Using the Git Credential Manager
 
-When you connect to a Git repository from your Git client for the first time, the credential manager prompts for credentials. Provide your Microsoft account or Microsoft Entra credentials. If your account has multifactor authentication enabled, the credential manager prompts you to go through that process as well.
+When you connect to a Git repository from your Git client for the first time, the credential manager prompts for credentials.
+Provide your Microsoft account or Microsoft Entra credentials.
+If your account has multifactor authentication enabled, the credential manager prompts you to go through that process as well.
 
 ![Git Credential Manager prompting during Git pull](media/gcm_login_prompt.gif)
 
-Once authenticated, the credential manager creates and caches a token for future connections to the repo. Git commands that connect to this account don't prompt for user credentials until the token expires. A token can be revoked through Azure Repos.
+Once authenticated, the credential manager creates and caches a token for future connections to the repo.
+Git commands that connect to this account don't prompt for user credentials until the token expires.
+A token can be revoked through Azure Repos.
 
 ### Configure Microsoft Entra ID authentication (recommended)
 
-By default, GCM can request different types of authentication tokens from Azure Repos. You can [configure the default Git authentication](https://github.com/git-ecosystem/git-credential-manager/blob/main/docs/configuration.md#credentialazreposcredentialtype) to use [Microsoft Entra ID tokens](../../integrate/get-started/authentication/entra.md), which provide enhanced security through OAuth protocols. We recommend this approach for better security and integration with organizational policies. Learn more about [using GCM with Azure Repos](https://github.com/git-ecosystem/git-credential-manager/blob/main/docs/azrepos-users-and-tokens.md#set-default-credential-type).
+By default, GCM can request different types of authentication tokens from Azure Repos.
+You can [configure the default Git authentication](https://github.com/git-ecosystem/git-credential-manager/blob/main/docs/configuration.md#credentialazreposcredentialtype) to use [Microsoft Entra ID tokens](../../integrate/get-started/authentication/entra.md), which provide enhanced security through OAuth protocols.
+This approach provides better security and integration with organizational policies.
+Learn more about [using GCM with Azure Repos](https://github.com/git-ecosystem/git-credential-manager/blob/main/docs/azrepos-users-and-tokens.md#set-default-credential-type).
 
 ```
 git config --global credential.azreposCredentialType oauth
 ```
 
 ### Use service principal as authentication
-You can also provide a [service principal](../../integrate/get-started/authentication/service-principal-managed-identity.md) for [authentication with GCM](https://github.com/git-ecosystem/git-credential-manager/blob/main/docs/configuration.md#credentialazreposserviceprincipal). Specify the client and tenant IDs of a service principal in this format: `{tenantId}/{clientId}`.
+
+You can also provide a [service principal](../../integrate/get-started/authentication/service-principal-managed-identity.md) for [authentication with GCM](https://github.com/git-ecosystem/git-credential-manager/blob/main/docs/configuration.md#credentialazreposserviceprincipal).
+Specify the client and tenant IDs of a service principal in this format: `{tenantId}/{clientId}`.
 
 ```
 git config --global credential.azreposServicePrincipal "11111111-1111-1111-1111-111111111111/22222222-2222-2222-2222-222222222222"
 ```
 
 You must also set at least one authentication mechanism if you set this value:
-* [credential.azreposServicePrincipalSecret](https://github.com/git-ecosystem/git-credential-manager/blob/main/docs/configuration.md#credentialazreposserviceprincipalsecret)
-* [credential.azreposServicePrincipalCertificateThumbprint](https://github.com/git-ecosystem/git-credential-manager/blob/main/docs/configuration.md#credentialazreposserviceprincipalcertificatethumbprint)
-* [credential.azreposServicePrincipalCertificateSendX5C](https://github.com/git-ecosystem/git-credential-manager/blob/main/docs/configuration.md#credentialazreposserviceprincipalcertificatesendx5c)
+- [credential.azreposServicePrincipalSecret](https://github.com/git-ecosystem/git-credential-manager/blob/main/docs/configuration.md#credentialazreposserviceprincipalsecret)
+- [credential.azreposServicePrincipalCertificateThumbprint](https://github.com/git-ecosystem/git-credential-manager/blob/main/docs/configuration.md#credentialazreposserviceprincipalcertificatethumbprint)
+- [credential.azreposServicePrincipalCertificateSendX5C](https://github.com/git-ecosystem/git-credential-manager/blob/main/docs/configuration.md#credentialazreposserviceprincipalcertificatesendx5c)
 
 ## Get help
 

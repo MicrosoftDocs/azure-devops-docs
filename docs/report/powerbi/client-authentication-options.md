@@ -10,12 +10,14 @@ ms.topic: how-to
 monikerRange: "<=azure-devops"
 ms.date: 02/24/2026
 ai-usage: ai-assisted
-ms.custom: sfi-image-nochange
+ms.custom: sfi-image-nochange, pat-deprecation
 ---
 
 # Enter client credentials in Power BI or Excel 
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
+
+[!INCLUDE [use-microsoft-entra-reduce-pats](../../includes/use-microsoft-entra-reduce-pats.md)]
 
 ::: moniker range="azure-devops"
 
