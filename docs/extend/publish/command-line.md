@@ -1,36 +1,44 @@
 ---
 ms.subservice: azure-devops-ecosystem
-title: Publishing and packaging an extension from the Command Line
-description: How to package and publish your Azure DevOps or Team Foundation Server (TFS) extension from the command line.
+title: Publish an extension from the command line
+description: Learn how to package and publish your Azure DevOps extension from the command line.
 ms.assetid: 7adcb1a2-1894-4751-8bed-7c04d084b5cf
 ms.topic: how-to
 monikerRange: '<= azure-devops'
 ms.author: chcomley
 author: chcomley
-ms.date: 11/15/2021
+ai-usage: ai-assisted
+ms.custom: pat-deprecation
+ms.date: 02/24/2026
 ---
 
 # Publish from the command line
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
-You can use the Cross-platform CLI for Azure DevOps (tfx-cli) to publish your extension to the Visual Studio Marketplace.
-
+Use the Cross-platform CLI for Azure DevOps (tfx-cli) to publish your extension to the Visual Studio Marketplace.
 For more information, see the overview of [publish, install, and share](./overview.md).
 
-### Prerequisites
+## Prerequisites
 
-Get the TFX CLI from Node Package Manager and generate a Microsoft Entra token or a personal access token (PAT). Also, if you haven't already, set up a Publisher in the Gallery.
+| Category | Requirements |
+|----------|-------------|
+| **Tools** | [Cross-platform CLI for Azure DevOps (tfx-cli)](#acquire-the-cross-platform-cli-for-azure-devops) installed via npm |
+| **Authentication** | A [Microsoft Entra token](#publish-with-a-microsoft-entra-token-as-a-service-principal) (recommended) or a [personal access token (PAT)](../../organizations/accounts/use-personal-access-tokens-to-authenticate.md) with **Marketplace (publish)** scope |
+| **Publisher** | A [publisher account](./overview.md) set up in the Visual Studio Marketplace |
 
-### Acquire the Cross-platform CLI for Azure DevOps
+[!INCLUDE [use-microsoft-entra-reduce-pats](../../includes/use-microsoft-entra-reduce-pats.md)]
+
+## Acquire the Cross-platform CLI for Azure DevOps
 
 [!INCLUDE [Control](../includes/procedures/acquire-tfx-cli.md)]
 
-### Publish with a Microsoft Entra token as a service principal
+## Publish with a Microsoft Entra token as a service principal
 
-It is also possible to publish an extension as a [service principal](../../integrate/get-started/authentication/service-principal-managed-identity.md).
+You can publish an extension as a [service principal](../../integrate/get-started/authentication/service-principal-managed-identity.md).
 
-1. Add the service principal as a member to a publisher account. You can get the service principal's ID through the REST API by logging in via the az cli and querying the service principal's profile. This can be done with the following commands:
+1. Add the service principal as a member to a publisher account.
+   Get the service principal's ID through the REST API by signing in via the Azure CLI and querying the service principal's profile:
 
 # [Bash](#tab/bash)
 
@@ -65,28 +73,30 @@ Then, you can [add the service principal as a member](/visualstudio/extensibilit
 tfx extension publish --publisher my-publisher --vsix my-publisher.my-extension-1.0.0.vsix --auth-type pat -t <ENTRA_TOKEN>
 ```
 
-### Publish with a personal access token
+## Publish with a personal access token
 
-[!INCLUDE [Control](../includes/procedures/acquire-pat.md)]
+Create a [personal access token (PAT)](../../organizations/accounts/use-personal-access-tokens-to-authenticate.md) with **Marketplace (publish)** scope and **All accessible organizations** selected.
 
-Once TFX CLI is installed and you have your token, you can use the tool to package and publish your extension.
+After you install tfx-cli and have your PAT, package and publish your extension.
 
 1. Open a command prompt to the root directory of your extension.
-1. Run the following command to publish your extension. When prompted, enter your token to authenticate. 
+1. Run the following command to publish your extension.
+   When prompted, enter your token to authenticate.
 
 ```Command
 tfx extension publish --publisher <YOUR_PUBLISHER_ID> --manifest-js <YOUR_EXTENSION_MANIFEST> --share-with <ACCOUNT_NAME>
 ```
 
-## Potential Errors
+## Potential errors
 
-You may receive the following error if your extension has already been published:
+You might receive the following error if your extension is already published:
 
 ```
 Failed Request: Internal Server Error(500) - Version number must increase each time an extension is published. Extension: fabrikam.my-extension  Current version: 0.1.9  Updated version: 0.1.9
 ```
 
-You can add the `--rev-version` flag to automatically increment the *patch* version of your extension. This also saves the new version to your manifest.
+Add the `--rev-version` flag to automatically increment the *patch* version of your extension.
+This flag also saves the new version to your manifest.
 
 > [!NOTE]
 > All options available for `create` are available for the `publish` command.

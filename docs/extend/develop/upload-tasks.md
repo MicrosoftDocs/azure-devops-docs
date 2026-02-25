@@ -2,6 +2,7 @@
 title: Uploading tasks to the Azure DevOps collection
 description: Uploading tasks to the Azure DevOps collection using the Node CLI for Azure DevOps
 ms.topic: how-to
+ms.custom: pat-deprecation
 ms.date: 01/20/2022
 monikerRange: 'azure-devops'
 ---

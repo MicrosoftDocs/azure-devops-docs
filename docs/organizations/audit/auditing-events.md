@@ -1,14 +1,16 @@
 ---
-title: Auditing events available for Azure DevOps
-titleSuffix: Azure DevOps 
-description: Learn which events are available through Azure DevOps Auditing.  
+title: Auditing events list
+titleSuffix: Azure DevOps
+description: Learn which events are available through Azure DevOps Auditing.
 ms.subservice: azure-devops-audit
 ms.assetid: 9F1D0A0F-02D5-4E06-A5EC-C220472A0F66
 ms.author: chcomley
 author: chcomley
 ms.topic: overview
 monikerRange: '= azure-devops'
-ms.date: 11/17/2025
+ms.date: 02/24/2026
+ai-usage: ai-assisted
+ms.custom: pat-deprecation
 ---
 
 # Auditing events list
@@ -16,16 +18,16 @@ ms.date: 11/17/2025
 [!INCLUDE [version-eq-azure-devops](../../includes/version-eq-azure-devops.md)]
 
 > [!NOTE]
-> - Auditing is still in public preview.
-> - We continually add new actions to this list. To view an event that isn't currently included in the following tables, share your feedback in the [Developer Community](https://developercommunity.visualstudio.com/search?space=21). 
+> - Auditing is in public preview.
+> - New actions are continually added to this list. To request an event that isn't currently included in the following tables, share your feedback in the [Developer Community](https://developercommunity.visualstudio.com/search?space=21).
 
-The following tables describe the type of events (or actions) that are available for auditing through the Azure DevOps Auditing feature.
+The following tables describe the events (or actions) available through Azure DevOps Auditing.
 
 [!INCLUDE [important-backed-by-azure-active-directory](includes/important-backed-by-azure-active-directory.md)]
 
-* Identify the *Product Area* for any given event. Refer to the full list in the [Area table](#areas).
-* Determine the *Category* field of an event to understand the type of action performed. See the list of possible action types in the [Categories table](#categories).
-* Find the list of all possible actions grouped by *Product Area* in the [Actions section](#actions).
+- Identify the *Product Area* for any given event. Refer to the full list in the [Area table](#areas).
+- Determine the *Category* field of an event to understand the type of action performed. See the list of possible action types in the [Categories table](#categories).
+- Find the list of all possible actions grouped by *Product Area* in the [Actions section](#actions).
 
 ## Areas
 
@@ -63,7 +65,8 @@ The following tables describe the type of events (or actions) that are available
 ## Actions
 
 > [!NOTE]
-> Want to find out what actions your organization logs? Be sure to check out the [Audit Log Query API](/rest/api/azure/devops/audit/audit-log/query): `https://auditservice.dev.azure.com/{YOUR_ORGANIZATION}/_apis/audit/actions`, replacing {YOUR_ORGANIZATION} with the name of your organization. This API returns a list of all audit events your organization could emit.
+> Want to find out what actions your organization logs? Use the [Audit Log Query API](/rest/api/azure/devops/audit/audit-log/query): `https://auditservice.dev.azure.com/{YOUR_ORGANIZATION}/_apis/audit/actions`, replacing {YOUR_ORGANIZATION} with the name of your organization.
+> This API returns a list of all audit events your organization can emit.
 
 ### Artifacts events
 
@@ -216,8 +219,8 @@ The following tables describe the type of events (or actions) that are available
 | `Pipelines.HostedParallelismPrivate` | Organization's hosted pipeline capacity set to free tier limit for private projects. |
 | `Pipelines.HostedParallelismPublic` | Organization's hosted pipeline capacity set to free tier limit for public projects. |
 | `Pipelines.OAuthConfigurationCreated` | Created OAuth configuration '{ConfigName}' for '{SourceType}'. |
-| `Pipelines.OAuthConfigurationDeleted` | Updated OAuth configuration '{ConfigName}' for '{SourceType}'. |
-| `Pipelines.OAuthConfigurationUpdated` | Deleted OAuth configuration '{ConfigName}' for '{SourceType}'. |
+| `Pipelines.OAuthConfigurationDeleted` | Deleted OAuth configuration '{ConfigName}' for '{SourceType}'. |
+| `Pipelines.OAuthConfigurationUpdated` | Updated OAuth configuration '{ConfigName}' for '{SourceType}'. |
 | `Pipelines.OrganizationSettings` | Pipelines setting "{SettingName}" changed from "{OldValue}" to "{NewValue}" at organization level. |
 | `Pipelines.PipelineCreated` | Created pipeline "{PipelineName}" in project {ResolveProjectId:ProjectId}. |
 | `Pipelines.PipelineDeleted` | Deleted pipeline "{PipelineName}" in project {ResolveProjectId:ProjectId}. |
@@ -233,7 +236,7 @@ The following tables describe the type of events (or actions) that are available
 | `Pipelines.RunRetained` | Pipeline run "{RunName}" in project {ResolveProjectId:ProjectId} granted lease ID {RetentionLeaseId} to {RetentionOwnerId}. |
 | `Pipelines.RunUnretained` | Pipeline run "{RunName}" in project {ResolveProjectId:ProjectId} no longer retained. |
 | `Pipelines.VariablesSetAtRuntime` | A run of pipeline "{PipelineName}" in project {ResolveProjectId:ProjectId}, has defined variables that aren't marked as "Settable at queue time".|
-| `CheckConfiguration.ApprovalCheckOrderChanged`| >A check with ID {CheckId} for {ResourceType} "{ResourceName}" in project "{ResolveProjectId:ProjectId}" was changed from {OriginalApprovalType} to {FinalApprovalType} |
+| `CheckConfiguration.ApprovalCheckOrderChanged` | A check with ID {CheckId} for {ResourceType} "{ResourceName}" in project "{ResolveProjectId:ProjectId}" was changed from {OriginalApprovalType} to {FinalApprovalType}. |
 | `CheckConfiguration.Created`| A check of type {Type} was added to {ResourceType} "{ResourceName}" in project "{ResolveProjectId:ProjectId}" |
 | `CheckConfiguration.Deleted`| A check of type {Type} was removed from {ResourceType} "{ResourceName}" in project "{ResolveProjectId:ProjectId}" |
 | `CheckConfiguration.Disabled` | A check of type {Type} was disabled for {ResourceType} "{ResourceName}" in project "{ResolveProjectId:ProjectId}" |

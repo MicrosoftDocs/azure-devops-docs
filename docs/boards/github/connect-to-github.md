@@ -8,7 +8,7 @@ ms.author: chcomley
 author: chcomley
 monikerRange: 'azure-devops'
 ms.date: 02/10/2025
-ms.custom: sfi-image-nochange
+ms.custom: sfi-image-nochange, pat-deprecation
 ---
 
 # Connect Azure Boards to GitHub (cloud) 

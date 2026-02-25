@@ -8,8 +8,8 @@ ms.topic: how-to
 monikerRange: '<= azure-devops'
 ms.author: chcomley
 author: chcomley
-ms.date: 07/16/2025
-ms.custom: quickstart, devx-track-dotnet
+ms.date: 02/24/2026
+ms.custom: quickstart, devx-track-dotnet, pat-deprecation
 ---
 
 # Create a bug in Azure DevOps Services using .NET client libraries
@@ -26,8 +26,7 @@ Creating work items programmatically is a common automation scenario in Azure De
 |**Authentication** | Choose one of the following:<br>- [Microsoft Entra ID authentication](../get-started/authentication/entra.md) (recommended)<br>- [Personal Access Token (PAT)](../../organizations/accounts/use-personal-access-tokens-to-authenticate.md) (for testing) |
 |**Development environment**| A C# development environment. You can use [Visual Studio](https://visualstudio.microsoft.com/vs/) |
 
-> [!IMPORTANT]
-> For production applications, we recommend using [Microsoft Entra ID authentication](../get-started/authentication/entra.md) instead of Personal Access Tokens. PATs are suitable for testing and development scenarios. For guidance on choosing the right authentication method, see [Authentication guidance](../get-started/authentication/authentication-guidance.md).
+[!INCLUDE [use-microsoft-entra-reduce-pats](../../includes/use-microsoft-entra-reduce-pats.md)]
 
 ## Authentication options
 

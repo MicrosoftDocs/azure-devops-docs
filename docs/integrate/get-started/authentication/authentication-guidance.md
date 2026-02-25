@@ -5,28 +5,30 @@ description: Choose the right authentication method for your Azure DevOps integr
 ms.assetid: 15CCEB1E-F42B-4439-8C35-B8A225F5546C
 ms.subservice: azure-devops-security
 ms.topic: concept-article
-ms.custom: arm2024
+ms.custom: arm2024, pat-deprecation
 ai-usage: ai-assisted
 monikerRange: '<= azure-devops'
 ms.author: chcomley
 author: chcomley
-ms.date: 07/21/2025
+ms.date: 02/24/2026
 ---
 
 # Authentication methods for Azure DevOps
 
 [!INCLUDE [version-lt-eq-azure-devops](../../../includes/version-lt-eq-azure-devops.md)]
 
-This article describes authentication methods for Azure DevOps integration and helps you choose the best option for your scenario. Modern authentication approaches like Microsoft Entra ID provide enhanced security and the best approach for new applications.
+This article describes authentication methods for Azure DevOps integration and helps you choose the best option for your scenario.
+Modern authentication approaches like Microsoft Entra ID provide enhanced security and the best approach for new applications.
 
 > [!IMPORTANT]
-> We recommend Microsoft Entra ID authentication for new applications that integrate with Azure DevOps Services.
-> Use personal access tokens sparingly, and use them only when Microsoft Entra ID isn't available.
+> Use Microsoft Entra ID authentication for new applications that integrate with Azure DevOps Services.
+> Use personal access tokens sparingly, and only when Microsoft Entra ID isn't available.
+
+[!INCLUDE [use-microsoft-entra-reduce-pats](../../../includes/use-microsoft-entra-reduce-pats.md)]
 
 OAuth 2.0 and Microsoft Entra ID authentication are available for Azure DevOps Services only, not Azure DevOps Server.
 
 For on-premises scenarios, use [.NET client libraries](../../concepts/dotnet-client-libraries.md), Windows authentication, or [personal access tokens](../../../organizations/accounts/use-personal-access-tokens-to-authenticate.md).
-
 ## Authentication methods by scenario
 
 Choose the appropriate authentication method based on your application type and requirements.

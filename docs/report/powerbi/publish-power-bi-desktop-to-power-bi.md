@@ -1,22 +1,23 @@
 ---
-title: Publish a Power BI Desktop file to Power BI  
-titleSuffix: Azure DevOps 
-description: Learn how to publish and enable refresh of a Power BI Desktop file to Power BI that uses Analytics for Azure DevOps. 
+title: Publish a Power BI Desktop file to Power BI
+titleSuffix: Azure DevOps
+description: Learn how to publish and enable refresh of a Power BI Desktop file to Power BI that uses Analytics for Azure DevOps.
 ms.subservice: azure-devops-analytics
 ms.topic: how-to
-ms.assetid: C03A04EC-F011-4043-A38E-5C5394F777CE 
+ms.assetid: C03A04EC-F011-4043-A38E-5C5394F777CE
 ms.author: chcomley
 monikerRange: "<=azure-devops"
 author: chcomley
-ms.date: 06/13/2025
-ms.custom: sfi-image-nochange
+ai-usage: ai-assisted
+ms.date: 02/24/2026
+ms.custom: sfi-image-nochange, pat-deprecation
 ---
 
 # Publish a Power BI Desktop file to Power BI 
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
-This article explains how to share your Power BI Desktop file, along with its datasets, measures, and charts, by creating a dashboard in Power BI.  
+This article explains how to share your Power BI Desktop file, along with its datasets, measures, and charts, by creating a dashboard in Power BI.
 
 ## Prerequisites
 
@@ -30,13 +31,13 @@ This article explains how to share your Power BI Desktop file, along with its da
 
 3. On the **Home** tab, select **Publish**.
 
-   :::image type="content" source="media/publish-1.png" alt-text="Screenshot shows highlighted Publish button for Power BI Desktop file.":::
+   :::image type="content" source="media/publish-1.png" border="true" alt-text="Screenshot of highlighted Publish button for Power BI Desktop file.":::
 
 4. Follow the prompts for signing in. If you don't have a Power BI account, create one when prompted. Select **Sign in**.
 
 5. After publishing, to view your report in Power BI, select the **Open 'file name' in Power BI** link.
 
-   :::image type="content" source="media/publish-2.png" alt-text="Screenshot shows successful publish and link to open pbix file.":::
+   :::image type="content" source="media/publish-2.png" border="true" alt-text="Screenshot of successful publish and link to open the .pbix file.":::
 
 ## Configure refresh schedule
 
@@ -45,39 +46,41 @@ Scheduled refresh allows datasets to be updated automatically at specified inter
 1. Ensure that your Power BI report is saved to your Power BI workspace.
 2. In your Power BI workspace, select the ellipsis (**...**) next to your dataset and select **Schedule Data Refresh**.
 3. On the schedule refresh page, choose which data connections you want to refresh.
-4. Set the refresh frequency and specify the time of day for the refresh to occur. The refresh can start as early as five minutes before the scheduled time, but delays of up to one hour might occur.
+4. Set the refresh frequency and specify the time of day for the refresh to occur.
+   The refresh can start as early as five minutes before the scheduled time, but delays of up to one hour might occur.
 
 5. Find the dataset for your report, named after your file, and select the ellipsis **...** next to it.
 
-    :::image type="content" source="media/publish-3.png" alt-text="Select the dataset":::
+    :::image type="content" source="media/publish-3.png" border="true" alt-text="Screenshot of the dataset for your report in Power BI.":::
 
+6. Under **Data source credentials**, select the **Edit credentials** link next to **ODATA**.
 
-6. Under Data source credentials, select the **Edit credentials** link next to ODATA.
-
-    :::image type="content" source="media/publish-4.png" alt-text="Update odata credentials":::
+    :::image type="content" source="media/publish-4.png" border="true" alt-text="Screenshot of Edit credentials link next to OData.":::
 
 7. Choose the appropriate authentication method:
    
       [!INCLUDE [use-microsoft-entra-reduce-pats](../../includes/use-microsoft-entra-reduce-pats.md)]
 
-    - **oAuth2** (recommended) for Microsoft Entra ID.
-    
-    ![Configure Areas dialog](media/aad-auth-power-bi.png)
+    - **OAuth2** (recommended) for Microsoft Entra ID.
 
-    - Basic for Personal Access Token (PAT) credentials.
+    :::image type="content" source="media/aad-auth-power-bi.png" border="true" alt-text="Screenshot of OAuth2 authentication configuration for Microsoft Entra ID.":::
+
+    - **Basic** for personal access token (PAT) credentials.
 
     > [!IMPORTANT]
-    > If you use a PAT, remember it expires after a set interval. When it expires, [update the credentials](client-authentication-options.md#update-credentials). Otherwise, the report stops updating with the latest data, even though it still displays existing data.
+    > If you use a PAT, it expires after a set interval.
+    > When it expires, [update the credentials](client-authentication-options.md#update-credentials).
+    > Otherwise, the report stops updating with the latest data, even though it still displays existing data.
 
 8. Select **Sign in**.
 
 After you complete these steps, Power BI refreshes your data on the schedule you configure, using the credentials you provided.
 
 > [!IMPORTANT]
-> Any data included in the Analytics view and published to Power BI is accessible to all users with access to the report, regardless of the project permissions set in Azure DevOps.    
+> Any data included in the Analytics view and published to Power BI is accessible to all users with access to the report, regardless of the project permissions set in Azure DevOps.
 
-## Related articles
+## Related content
 
-- [Learn about Power BI integration](overview.md)  
-- [Access data through Excel](access-analytics-excel.md)  
-- [Access data through Power BI desktop](access-analytics-power-bi.md)  
+- [Power BI integration overview](overview.md)
+- [Access data through Excel](access-analytics-excel.md)
+- [Access data through Power BI Desktop](access-analytics-power-bi.md)

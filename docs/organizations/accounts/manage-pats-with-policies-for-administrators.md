@@ -7,17 +7,19 @@ ms.topic: how-to
 ms.author: chcomley
 author: chcomley
 ai-usage: ai-assisted
-ms.date: 06/12/2025
+ms.date: 02/24/2026
 monikerRange: 'azure-devops'
+ms.custom: pat-deprecation
 ---
 
 # Manage personal access tokens using policies (for administrators)
 
 [!INCLUDE [version-eq-azure-devops](../../includes/version-eq-azure-devops.md)]
 
-This article provides guidance on how to use our tenant and organization policies to manage personal access tokens (PATs) in Azure DevOps. It explains how to limit the creation, scope, and lifespan of new or renewed PATs, and how to handle the automatic revocation of leaked PATs. 
+This article provides guidance on how to use tenant and organization policies to manage personal access tokens (PATs) in Azure DevOps.
+It explains how to limit the creation, scope, and lifespan of new or renewed PATs, and how to handle the automatic revocation of leaked PATs.
 
-Each section details the default behavior of the respective policies, helping administrators effectively control and secure PAT usage within their organization.
+Each section details the default behavior of the respective policies to help administrators effectively control and secure PAT usage within their organization.
 
 [!INCLUDE [use-microsoft-entra-reduce-pats](../../includes/use-microsoft-entra-reduce-pats.md)]
 
@@ -34,21 +36,25 @@ Existing PATs, created through both the UI and APIs, remain valid for the rest o
 ### Add Microsoft Entra users or groups to policy allowlists
 
 > [!WARNING]
-> We generally recommend using groups for your allowlists. If you list a named user, a reference to their identity resides in the United States, Europe (EU), and Southeast Asia (Singapore).
+> Use groups for your allowlists. If you list a named user, a reference to their identity resides in the United States, Europe (EU), and Southeast Asia (Singapore).
 
-Users or groups on the allowlist for any of these policies are exempt from the restrictions and enforcements when policies are enabled. 
+Users or groups on the allowlist for any of these policies are exempt from the restrictions and enforcements when policies are enabled.
 
-Each policy has its own unique allowlist. To exempt a user from all policies, they must be added to each allowlist. For the tenant policies, select **Add Microsoft Entra user or group**, then select **Add**. 
+Each policy has its own unique allowlist.
+To exempt a user from all policies, add them to each allowlist.
+For the tenant policies, select **Add Microsoft Entra user or group**, then select **Add**.
 
 ## Restrict creation of global PATs (tenant policy)
 
-Azure DevOps Administrators can restrict users from creating global PATs, which can be used in all accessible organizations rather than a single organization. When this policy is enabled, new PATs must be associated with specific Azure DevOps organizations. By default, this policy is set to *off*.
+Azure DevOps Administrators can restrict users from creating global PATs, which can be used in all accessible organizations rather than a single organization.
+When this policy is enabled, new PATs must be associated with specific Azure DevOps organizations.
+By default, this policy is set to *off*.
 
 1. Sign in to your organization (```https://dev.azure.com/{Your_Organization}```).
 
 2. Select ![gear icon](../../media/icons/gear-icon.png) **Organization settings**.
 
-   ![Screenshot showing Choose the gear icon, Organization settings.](../../media/settings/open-admin-settings-vert.png)
+   :::image type="content" source="../../media/settings/open-admin-settings-vert.png" border="true" alt-text="Screenshot showing Organization settings button in the sidebar.":::
 
 3. Select **Microsoft Entra**, find the *Restrict global personal access token creation* policy and move the toggle *on*.
 
@@ -56,7 +62,9 @@ Azure DevOps Administrators can restrict users from creating global PATs, which 
 
 ## Restrict creation of full-scoped PATs (tenant policy)
 
-Azure DevOps Administrators can restrict users from creating full-scoped PATs. Enabling this policy requires new PATs to be limited to a specific, custom-defined set of scopes. By default, this policy is set to *off*.
+Azure DevOps Administrators can restrict users from creating full-scoped PATs.
+Enabling this policy requires new PATs to be limited to a specific, custom-defined set of scopes.
+By default, this policy is set to *off*.
 
 1. Sign in to your organization (```https://dev.azure.com/{yourorganization}```).
 
@@ -68,7 +76,8 @@ Azure DevOps Administrators can restrict users from creating full-scoped PATs. E
 
 ## Set maximum lifespan for new PATs (tenant policy)
 
-Azure DevOps Administrators can define the maximum lifespan of a PAT, specifying it in days. By default, this policy is set to *off*.
+Azure DevOps Administrators can define the maximum lifespan of a PAT, specifying it in days.
+By default, this policy is set to *off*.
 
 1. Sign in to your organization (```https://dev.azure.com/{yourorganization}```).
 
@@ -85,15 +94,17 @@ Azure DevOps Administrators can define the maximum lifespan of a PAT, specifying
 ## Restrict personal access token creation (organization policy)
 
 > [!NOTE]
-> - This policy is in public preview.
-> - This policy is only available for Microsoft Entra-backed organizations.
+> This policy is only available for Microsoft Entra-backed organizations.
 
-Project Collection Administrators are able to control who can create and regenerate PATs in the organizations they manage. By default, this policy is set to *off*. Existing PATs continue working until the PAT's expiration date.
+Project Collection Administrators can control who creates and regenerates PATs in the organizations they manage.
+By default, this policy is set to *off*.
+Existing PATs continue working until the PAT's expiration date.
 
 > [!TIP]
 > Combine this policy with a short duration set for the "Set maximum lifespan for new PATs" policy to drive down PAT usage in your organization.
 
-The policy also blocks global PAT usage in the organization. Global PAT users must be added to the allowlist to continue to use their global PAT in the organization.
+The policy also blocks global PAT usage in the organization.
+Global PAT users must be added to the allowlist to continue to use their global PAT in the organization.
 
 1. Sign in to your organization (```https://dev.azure.com/{Your_Organization}```).
 
@@ -103,20 +114,28 @@ The policy also blocks global PAT usage in the organization. Global PAT users mu
 
    :::image type="content" source="media/disable-pat-policy/disable-pat-policy.png" alt-text="Screenshot of toggle moved to on position and subpolicies checked for Restrict personal access token creation policy.":::
 
-4. If your organization members regularly use packaging PATs, select the *Allow creation of PAT with packaging scope only* checkbox. Many packaging scenarios still rely on PATs and haven't fully transitioned to Microsoft Entra-based authentication. When this policy is enabled, users who aren't on the allowlist have access only to packaging scopes on their "Personal access tokens" page.
+4. If your organization members regularly use packaging PATs, select the *Allow creation of PAT with packaging scope only* checkbox.
+   Many packaging scenarios still rely on PATs and haven't fully transitioned to Microsoft Entra-based authentication.
+   When this policy is enabled, users who aren't on the allowlist have access only to packaging scopes on their "Personal access tokens" page.
 
    :::image type="content" source="media/disable-pat-policy/disable-pat-packaging-only.png" alt-text="Screenshot of packaging scopes available only on the user's Create a new personal access token modal.":::
 
-6. If any Microsoft Entra users or groups require continued access to PATs, add them to the allowlist by selecting *Manage* and searching for the user or group in the dropdown. Once allowlist updates are complete, select the checkbox next to *Allow creation of PAT of any scope for selected Microsoft Entra users and groups*.
+5. If any Microsoft Entra users or groups require continued access to PATs, add them to the allowlist by selecting *Manage* and searching for the user or group in the dropdown.
+   After allowlist updates are complete, select the checkbox next to *Allow creation of PAT of any scope for selected Microsoft Entra users and groups*.
 
-7. Move the toggle to *on* in order for the restriction policy to apply. Selected subpolicies don't apply until the toggle is on.
+6. Move the toggle to *on* for the restriction policy to apply.
+   Selected subpolicies don't apply until the toggle is on.
 
 ## Revoke leaked PATs automatically (tenant policy)
 
-Azure DevOps Administrators can manage the policy that automatically revokes leaked PATs. This policy applies to all PATs within organizations linked to your Microsoft Entra tenant. By default, this policy is set to *on*. If Azure DevOps PATs are checked into public GitHub repositories, they're automatically revoked.
+Azure DevOps Administrators can manage the policy that automatically revokes leaked PATs.
+This policy applies to all PATs within organizations linked to your Microsoft Entra tenant.
+By default, this policy is set to *on*.
+If Azure DevOps PATs are checked into public GitHub repositories, they're automatically revoked.
 
 > [!WARNING]
-> Disabling this policy means any PATs checked into public GitHub repositories remain active, potentially compromising your Azure DevOps organization and data, and putting your applications and services at significant risk. Even with the policy disabled, you still receive an email notification if a PAT is leaked, but it isn't revoked automatically.
+> Disabling this policy means any PATs checked into public GitHub repositories remain active, potentially compromising your Azure DevOps organization and data, and putting your applications and services at significant risk.
+> Even with the policy disabled, you still receive an email notification if a PAT is leaked, but it isn't revoked automatically.
 
 ### Turn off automatic revocation of leaked PATs
 
@@ -128,7 +147,7 @@ Azure DevOps Administrators can manage the policy that automatically revokes lea
 
 The policy is disabled and any PATs checked into public GitHub repositories remain active.
 
-## Next steps
+## Next step
 
 > [!div class="nextstepaction"]
 > [Change application access policies](change-application-access-policies.md)
