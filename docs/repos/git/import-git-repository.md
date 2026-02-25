@@ -6,9 +6,10 @@ ms.assetid: 5439629e-23fd-44f1-a345-f00a435f1430
 ms.service: azure-devops-repos
 ms.topic: how-to
 monikerRange: '<= azure-devops'
-ms.date: 07/02/2025
+ms.date: 02/24/2026
 ms.subservice: azure-devops-repos-git
-ms.custom: sfi-image-nochange
+ms.custom: sfi-image-nochange, pat-deprecation
+ai-usage: ai-assisted
 # customer-intent: As a developer, I want to import an existing Git repository from GitHub, GitLab, or other providers into Azure DevOps so I can consolidate my source code and use Azure DevOps features for my project.
 ---
 
@@ -16,13 +17,15 @@ ms.custom: sfi-image-nochange
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
+[!INCLUDE [use-microsoft-entra-reduce-pats](../../includes/use-microsoft-entra-reduce-pats.md)]
+
 This article shows you how to import an existing Git repo from GitHub, Bitbucket, GitLab, or other location into a new or empty existing repo in your Azure DevOps project.
 
 ## Prerequisites
 
 [!INCLUDE [azure-repos-prerequisites](includes/azure-repos-prerequisites.md)]
 
-## Import into a new repo  
+## Import into a new repo
 
 Do the following steps to import into a new repo:
 
@@ -31,15 +34,15 @@ Do the following steps to import into a new repo:
 
 1. In your browser, sign in to your organization and select **Repos** > **Files**.
 
-   ![Screenshot shows view of branches.](media/repos-navigation/repos-files.png)
+   :::image type="content" source="media/repos-navigation/repos-files.png" alt-text="Screenshot showing the Repos Files view." border="true":::
 
 2. From the repo drop-down, select **Import repository**.
 
-   ![Screenshot shows Manage repositories screen.](media/repo-mgmt/import-repository.png)
+   :::image type="content" source="media/repo-mgmt/import-repository.png" alt-text="Screenshot showing the Import repository option." border="true":::
 
 3. [Enter the clone URL](clone.md#clone_url) of the source repository and a name for your new Git repository.
 
-  ![Screenshot shows Import Repository Dialog with publicly available sample repo URL.](media/Import-Repo/ImportRepoDialog.png)
+   :::image type="content" source="media/Import-Repo/ImportRepoDialog.png" alt-text="Screenshot showing the Import Repository dialog with a sample repo URL." border="true":::
 
 4. Select **Import a repository**.
 
@@ -49,10 +52,10 @@ The repo gets imported.
 
 On the **Files** page of the empty Git repository, select **Import** and [enter the clone URL](clone.md#clone_url). Provide credentials if the source repository requires authentication. 
 
-![Screenshot shows Import Repository into an existing repository.](media/Import-Repo/ImportRepofromEmptyRepo.png)
+:::image type="content" source="media/Import-Repo/ImportRepofromEmptyRepo.png" alt-text="Screenshot showing the Import option for an empty repository." border="true":::
 
 > [!NOTE]
-> The import feature disables automated linking for work items mentioned in a commit comment since the work item IDs in the destination project might not be the same as ones in the source project. Automatic linking for work items mentioned in a commit can be re-enabled by navigating to **Settings**, **Version Control**,  selecting your repository, and choosing **Options**. For more information on linking commits with work items, see [Link work items to commits](share-your-code-in-git-vs.md#link-work-items)
+> The import feature disables automated linking for work items mentioned in a commit comment since the work item IDs in the destination project might not be the same as ones in the source project. Automatic linking for work items mentioned in a commit can be re-enabled by going to **Settings**, **Version Control**, selecting your repository, and choosing **Options**. For more information on linking commits with work items, see [Link work items to commits](share-your-code-in-git-vs.md#link-work-items)
  
 ::: moniker range=" azure-devops"
 
@@ -84,7 +87,7 @@ az repos import create --git-source-url
 |`org`, `organization`| Azure DevOps organization URL. You can configure the default organization by using `az devops configure -d organization=<ORG_URL>`. **Required** if not configured as default or picked up via git config. Example: `https://dev.azure.com/MyOrganizationName/`.|
 |`project`, `p`|Name or ID of the project. You can configure the default project using `az devops configure -d project=<NAME_OR_ID>`. **Required** if not configured as default or picked up via git config. 
 |`repository`| Name or ID of the repository to create the import request in.  |
-|`requires-authorization`| Flag to indicate if the source git repository is private. If you require authentication, then generate an authentication token on the source repo and set the environment variable `AZURE_DEVOPS_EXT_GIT_SOURCE_PASSWORD_OR_PAT` to the value of the token. For enhanced security, we recommend using Microsoft Entra ID tokens when possible. Then the import request includes authentication. |
+|`requires-authorization`| Flag to indicate if the source git repository is private. If you require authentication, then generate an authentication token on the source repo and set the environment variable `AZURE_DEVOPS_EXT_GIT_SOURCE_PASSWORD_OR_PAT` to the value of the token. For enhanced security, use Microsoft Entra ID tokens when possible. Then the import request includes authentication. |
 |`subscription`| Name or ID of subscription. You can configure the default subscription using `az account set -s <NAME_OR_ID>`.|
 |`user-name`| User name to specify when the git repository is private.|
 
@@ -156,7 +159,9 @@ az repos import create --git-source-url https://github.com/fabrikamprime/fabrika
 ## Manually import a repo using git CLI
 
 
-1. Clone the source repo to a temporary folder on your computer using the `bare` option, as shown in the following command line example, and then navigate to the repo's folder. When cloning using the `bare` option, the folder name includes the `.git` suffix. In this example, `https://github.com/contoso/old-contoso-repo.git` is the source repo to be manually imported.
+1. Clone the source repo to a temporary folder on your computer using the `bare` option, as shown in the following command line example, and then go to the repo's folder.
+   When cloning using the `bare` option, the folder name includes the `.git` suffix.
+   In this example, `https://github.com/contoso/old-contoso-repo.git` is the source repo to be manually imported.
 
     ```
     git clone --bare https://github.com/contoso/old-contoso-repo.git
@@ -242,22 +247,29 @@ git clone https://<<username>>:<<password>>@<<remaining clone Url>>
 
 ### Q: Can I import from TFVC?
 
-A: You can migrate code from an existing TFVC repository to a new Git repository within the same account. While migrating to Git has many benefits, it's an involved process for large TFVC repositories and teams. Centralized version control systems, like TFVC, behave different than Git in fundamental ways. The switch involves a lot more than learning new commands. It's a disruptive change that requires careful planning. For more information, see [Import from TFVC to Git](import-from-tfvc.md).
+A: You can migrate code from an existing TFVC repository to a new Git repository within the same account. While migrating to Git has many benefits, it's an involved process for large TFVC repositories and teams.
+Centralized version control systems, like TFVC, behave differently than Git in fundamental ways.
+The switch involves a lot more than learning new commands.
+It's a disruptive change that requires careful planning.
+For more information, see [Import from TFVC to Git](import-from-tfvc.md).
 
 ### Q: What if my source repository contains Git LFS objects?
 
 A: Git import doesn't import Git LFS objects.
 
 LFS objects can be moved using the following steps:
-- Import the repository using import repository feature into Azure DevOps.
-	This action copies over all the Git objects from source to Azure DevOps, which also imports the LFS pointers that are Git objects, but not the LFS files
 
-To move over the LFS files, you need both Git.exe and LFS client in the same box and access to both source repository and destination repository
-- Clone the imported repository from Azure DevOps to local system. Clone works, but it fails while performing checkout of LFS files
-- Add the source repository as remote, for example, "source"
-- Perform `git lfs fetch source --all`, which brings over all LFS files from source to your local repository
-- Assuming the destination VSTS repository is your "target" remote 
-- Perform `git lfs push target --all`
+- Import the repository using the import repository feature into Azure DevOps.
+  This action copies over all the Git objects from source to Azure DevOps, which also imports the LFS pointers that are Git objects, but not the LFS files.
+
+To move over the LFS files, you need both Git.exe and the LFS client on the same machine, with access to both source repository and destination repository.
+
+- Clone the imported repository from Azure DevOps to your local system.
+  Clone works, but it fails while performing checkout of LFS files.
+- Add the source repository as remote, for example, "source".
+- Run `git lfs fetch source --all`, which brings over all LFS files from source to your local repository.
+- Assuming the destination Azure DevOps repository is your "target" remote.
+- Run `git lfs push target --all`.
 
 ### Q: Can I import updates if the source changes later?
 
@@ -265,7 +277,7 @@ A: The import service is for initially importing an entire repository.
 To mirror later changes, you need a local clone of the repository with remotes set to both source and destination.
 
 You can sync changes using the following commands.
-We treat the Azure Repos import as `origin` and the original repo as `upstream`.
+The following example treats the Azure Repos import as `origin` and the original repo as `upstream`.
 
 ```shell
 git clone --bare <Azure-Repos-clone-URL>.git
@@ -280,6 +292,6 @@ git push origin --all
 > [!div class="nextstepaction"]
 > [New to Git repos? Learn more](/devops/develop/git/set-up-a-git-repository)
 
-## Related articles
+## Related content
 
 - [Learn more about Git workflow](gitworkflow.md)

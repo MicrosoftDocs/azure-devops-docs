@@ -5,10 +5,11 @@ description: Create a web server to listen to pull request events and post statu
 ms.assetid: 2653589c-d15e-4dab-b8b0-4f8236c4a67b
 ms.service: azure-devops-repos
 ms.topic: tutorial
-ms.date: 02/10/2026
+ms.date: 02/24/2026
 monikerRange: '<= azure-devops'
 ms.subservice: azure-devops-repos-git
 ms.custom: devx-track-js, sfi-image-nochange
+ai-usage: ai-assisted
 # customer-intent: As a developer, I want to create a Node.js server that integrates with Azure DevOps pull request events so I can implement custom status checks and automated validation workflows using Microsoft Entra ID authentication.
 ---
 
@@ -17,7 +18,11 @@ ms.custom: devx-track-js, sfi-image-nochange
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
-The pull request (PR) workflow provides developers with an opportunity to get feedback on their code from peers and from automated tools. Non-Microsoft tools and services can participate in the PR workflow by using the PR [Status API](/rest/api/azure/devops/git/pull%20request%20statuses). This article guides you through the process of creating a status server to validate PRs in an Azure DevOps Services Git repository. For more information about PR status, see [Customize and extend pull request workflows with pull request status](pull-request-status.md).
+
+The pull request (PR) workflow provides developers with an opportunity to get feedback on their code from peers and from automated tools.
+Non-Microsoft tools and services can participate in the PR workflow by using the PR [Status API](/rest/api/azure/devops/git/pull%20request%20statuses).
+This article guides you through the process of creating a status server to validate PRs in an Azure DevOps Services Git repository.
+For more information about PR status, see [Customize and extend pull request workflows with pull request status](pull-request-status.md).
 
 ## Prerequisites
 
@@ -128,27 +133,27 @@ To receive the service hook notifications, expose a port to the public internet.
 
 4. From the navigation menu, hover over the **gear** and select **Service Hooks**.
 
-    ![Screenshot shows Choose Service hooks from the admin menu.](media/create-pr-status-server/service-hooks-menu.png)
+    :::image type="content" source="media/create-pr-status-server/service-hooks-menu.png" alt-text="Screenshot showing Service Hooks option in the admin menu." border="true":::
 
 5. If it's your first service hook, select **+ Create subscription**. 
 
-    ![Screenshot shows selected Create a new subscription from the toolbar.](media/create-pr-status-server/service-hooks-create-first-service-hook.png)
+    :::image type="content" source="media/create-pr-status-server/service-hooks-create-first-service-hook.png" alt-text="Screenshot showing Create a new subscription button on the toolbar." border="true":::
 
     If you already have other service hooks configured, select the plus `(+)` to create a new service hook subscription.
 
-    ![Screenshot shows selected the plus to create a new service hook subscription.](media/create-pr-status-server/service-hooks-create.png)
+    :::image type="content" source="media/create-pr-status-server/service-hooks-create.png" alt-text="Screenshot showing the plus button to create a new service hook subscription." border="true":::
 
 6. On the New Service Hooks Subscription dialog, select **Web Hooks** from the list of services, then select **Next**.
 
-    ![Screenshot shows selected web hooks from the list of services.](media/create-pr-status-server/service-hooks-web-hook.png)
+    :::image type="content" source="media/create-pr-status-server/service-hooks-web-hook.png" alt-text="Screenshot showing Web Hooks selected from the list of services." border="true":::
 
 7. Select **Pull request created** from the list of event triggers, then select **Next**.
 
-    ![Screenshot shows selected pull request created from the list of event triggers.](media/create-pr-status-server/service-hooks-trigger.png)
+    :::image type="content" source="media/create-pr-status-server/service-hooks-trigger.png" alt-text="Screenshot showing Pull request created selected from the list of event triggers." border="true":::
 
 8. In the Action page, enter the URL from ngrok in the **URL** box. Select **Test** to send a test event to your server.
 
-    ![Screenshot shows entered URL and selected test to test the service hook.](media/create-pr-status-server/service-hooks-action.png)
+    :::image type="content" source="media/create-pr-status-server/service-hooks-action.png" alt-text="Screenshot showing the URL field and Test button for the service hook." border="true":::
 
     In the ngrok console window, an incoming `POST` returns a `200 OK`, indicating your server received the service hook event.
 
@@ -159,9 +164,11 @@ To receive the service hook notifications, expose a port to the public internet.
     POST /                         200 OK
     ```
 
-    In the Test Notification window, select the *Response* tab to see the details of the response from your server. You should see a status code of 200, and in this case a content length of 17 that matches the length of the string from your POST handler (for example, "Received the POST"). You can examine the request body from the *Request* tab.
+    In the Test Notification window, select the *Response* tab to see the details of the response from your server.
+    You should see a status code of 200, and in this case a content length of 17 that matches the length of the string from your POST handler (for example, "Received the POST").
+    You can examine the request body from the *Request* tab.
 
-    ![Screenshot shows selected response tab for results of the test.](media/create-pr-status-server/test-notification.png)
+    :::image type="content" source="media/create-pr-status-server/test-notification.png" alt-text="Screenshot showing the Response tab in the Test Notification window." border="true":::
 
 9. Close the Test Notification window, and select **Finish** to create the service hook.  
 
@@ -393,31 +400,31 @@ Now that your server is running and listening for service hook notifications, cr
 
 1. Start in the files view. Edit the readme.md file in your repo (or any other file if you don't have a readme.md).
 
-    ![Screenshot shows selected Edit button from the context menu.](media/create-pr-status-server/edit-readme.png)
+    :::image type="content" source="media/create-pr-status-server/edit-readme.png" alt-text="Screenshot showing the Edit button in the context menu." border="true":::
 
 2. Make an edit and commit the changes to the repo.
 
-    ![Screenshot shows editing the file and selected Commit button from the toolbar.](media/create-pr-status-server/commit-changes.png)
+    :::image type="content" source="media/create-pr-status-server/commit-changes.png" alt-text="Screenshot showing the file editor and Commit button on the toolbar." border="true":::
 
 3. Be sure to commit the changes to a new branch so you can create a PR in the next step.
 
-    ![Screenshot shows entered new branch name and selected Commit button.](media/create-pr-status-server/commit-to-branch.png)
+    :::image type="content" source="media/create-pr-status-server/commit-to-branch.png" alt-text="Screenshot showing new branch name field and Commit button." border="true":::
 
 4. Select the **Create a pull request** link.
 
-    ![Screenshot shows selected Create a pull request from the suggestion bar.](media/create-pr-status-server/create-pr.png)
+    :::image type="content" source="media/create-pr-status-server/create-pr.png" alt-text="Screenshot showing the Create a pull request link in the suggestion bar." border="true":::
 
 5. Add **WIP** in the title to test the functionality of the app. Select **Create** to create the PR.
 
-    ![Screenshot shows added WIP to the default PR title.](media/create-pr-status-server/new-pr-wip.png)
+    :::image type="content" source="media/create-pr-status-server/new-pr-wip.png" alt-text="Screenshot showing WIP added to the default PR title." border="true":::
 
 6. Once the PR is created, the status section shows with the **Work in progress** entry that links to the URL specified in the payload.
 
-    ![Screenshot shows status section with the Work in progress entry.](media/create-pr-status-server/pr-with-status.png)
+    :::image type="content" source="media/create-pr-status-server/pr-with-status.png" alt-text="Screenshot showing the status section with the Work in progress entry." border="true":::
 
 7. Update the PR title and remove the **WIP** text and note that the status changes from **Work in progress** to **Ready for review**.
 
-## Related articles
+## Related content
 
 - [REST API documentation](/rest/api/azure/devops/git/pull%20request%20statuses)
 - [Configure a branch policy for an external service](./pr-status-policy.md)

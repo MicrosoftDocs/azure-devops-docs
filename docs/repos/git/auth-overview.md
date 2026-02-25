@@ -5,10 +5,11 @@ description: Learn how to authenticate with Azure Repos using Microsoft Entra OA
 ms.assetid: 138f12d0-e3fd-4fde-a727-1b39d45c05c4
 ms.service: azure-devops-repos
 ms.topic: overview
-ms.date: 02/17/2026
+ms.date: 02/24/2026
 monikerRange: '<= azure-devops'
 ms.subservice: azure-devops-repos-git
-ms.custom: sfi-ropc-nochange
+ms.custom: sfi-ropc-nochange, pat-deprecation
+ai-usage: ai-assisted
 # customer-intent: As a developer, I want to understand the different authentication methods available for Azure Repos so I can choose the most secure option (Microsoft Entra OAuth tokens) for accessing my Git repositories.
 ---
 
@@ -16,21 +17,29 @@ ms.custom: sfi-ropc-nochange
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
-Secure authentication is fundamental to protecting your Azure Repos and Azure DevOps Server Git repositories. With multiple authentication options available—Microsoft Entra OAuth tokens, Personal Access Tokens, and SSH keys—choosing the right method ensures both security and productivity for your development workflow.
+Secure authentication is fundamental to protecting your Azure Repos and Azure DevOps Server Git repositories.
+With multiple authentication options available—Microsoft Entra OAuth tokens, personal access tokens, and SSH keys—choosing the right method ensures both security and productivity for your development workflow.
 
-**Microsoft Entra OAuth tokens are the recommended approach** for modern development teams, offering enhanced security through OAuth 2.0 standards and seamless integration with enterprise identity systems. Whether you're working from the command line, using Git clients, or integrating with CI/CD pipelines, selecting an authentication method with appropriate scope limits reduces security risks while maintaining the access you need.
+**Microsoft Entra OAuth tokens are the recommended approach** for modern development teams, offering enhanced security through OAuth 2.0 standards and seamless integration with enterprise identity systems.
+Whether you're working from the command line, using Git clients, or integrating with CI/CD pipelines, selecting an authentication method with appropriate scope limits reduces security risks while maintaining the access you need.
 
-Always revoke or rotate credentials when they're no longer needed. This practice maintains repository security and follows the principle of least privilege access.
+Always revoke or rotate credentials when they're no longer needed.
+This practice maintains repository security and follows the principle of least privilege access.
+
+[!INCLUDE [use-microsoft-entra-reduce-pats](../../includes/use-microsoft-entra-reduce-pats.md)]
 
 [!INCLUDE [ai-assistance-callout](../../includes/ai-assistance-callout.md)]
 
 ## Authentication mechanisms
 
-### Microsoft Entra OAuth tokens (Recommended)
+### Microsoft Entra OAuth tokens (recommended)
 
-[Microsoft Entra tokens](../../integrate/get-started/authentication/entra.md) are the **preferred authentication method** for Git operations and [REST APIs](/rest/api/azure/devops/). They offer enhanced security features and can be used wherever personal access tokens are used. These tokens are generated for a user principal or a [managed identity and/or service principal](../../integrate/get-started/authentication/service-principal-managed-identity.md). 
+[Microsoft Entra tokens](../../integrate/get-started/authentication/entra.md) are the **preferred authentication method** for Git operations and [REST APIs](/rest/api/azure/devops/).
+They offer enhanced security features and can be used wherever personal access tokens are used.
+These tokens are generated for a user principal or a [managed identity and/or service principal](../../integrate/get-started/authentication/service-principal-managed-identity.md).
 
-**Quick start with Azure CLI**: You can obtain a Microsoft Entra token for immediate use with Git operations using the Azure CLI. This method is ideal for testing or one-time operations.
+**Quick start with Azure CLI:** You can obtain a Microsoft Entra token for immediate use with Git operations using the Azure CLI.
+This method is ideal for testing or one-time operations.
 
 **For user authentication:**
 ```bash
@@ -52,12 +61,10 @@ $accessToken = az account get-access-token --resource 499b84ac-1321-427f-aa17-26
 git -c http.extraheader="AUTHORIZATION: bearer $accessToken" clone https://dev.azure.com/{yourOrgName}/{yourProjectName}/_git/{yourRepoName}
 ```
 
-### Personal access tokens (Alternative option)
+### Personal access tokens (alternative option)
 
-> [!NOTE]
-> While Personal Access Tokens are still supported, **Microsoft Entra OAuth tokens are recommended** for better security and modern authentication practices.
-
-[Personal access tokens (PATs)](../../organizations/accounts/use-personal-access-tokens-to-authenticate.md) provide access to Azure DevOps without using your username and password directly. These tokens expire and allow you to restrict the scope of the data they can access.
+[Personal access tokens (PATs)](../../organizations/accounts/use-personal-access-tokens-to-authenticate.md) provide access to Azure DevOps without using your username and password directly.
+These tokens expire and allow you to restrict the scope of the data they can access.
 
 **Use PATs when:**
 - You don't have SSH keys set up on your system
@@ -93,13 +100,15 @@ git --config-env=http.extraheader=HEADER_VALUE clone https://dev.azure.com/yourO
 
 ### SSH keys
 
-Key authentication with SSH works through a public and private key pair that you create on your computer. 
-You associate the public key with your username from the web. Azure DevOps encrypts the data sent to you with that key when you work with Git.
+Key authentication with SSH works through a public and private key pair that you create on your computer.
+You associate the public key with your username from the web.
+Azure DevOps encrypts the data sent to you with that key when you work with Git.
 You decrypt the data on your computer with the private key, which is never shared or sent over the network.
 
-![Animated GIF showing adding of a SSH public key to Azure DevOps](media/ssh_add_public_key.gif)
+![Animated GIF showing adding an SSH public key to Azure DevOps.](media/ssh_add_public_key.gif)
 
-SSH is a great option if it's already set up on your system&mdash;just add a public key to Azure DevOps and clone your repos using SSH. SSH might be preferred for Linux, macOS, or Windows running [Git for Windows](https://www.git-scm.com/download/win) who can't use [Git credential managers](../../repos/git/set-up-credential-managers.md) or [personal access tokens](../../organizations/accounts/use-personal-access-tokens-to-authenticate.md) for HTTPS authentication.
+SSH is a great option if it's already set up on your system&mdash;just add a public key to Azure DevOps and clone your repos using SSH.
+SSH might be preferred for Linux, macOS, or Windows running [Git for Windows](https://www.git-scm.com/download/win) where [Git credential managers](../../repos/git/set-up-credential-managers.md) or [personal access tokens](../../organizations/accounts/use-personal-access-tokens-to-authenticate.md) for HTTPS authentication aren't available.
 
 For more information, see [Set up SSH with Azure DevOps](use-ssh-keys-to-authenticate.md).
 
@@ -107,23 +116,27 @@ For more information, see [Set up SSH with Azure DevOps](use-ssh-keys-to-authent
 
 <a name="use-credential-managers-to-generate-tokens"></a>
 
-Use the [Git Credential Manager (GCM)](set-up-credential-managers.md) to avoid entering your credentials every time and keep your token more secure when accessing Azure Repos. Sign in to the web portal, generate a token, and then use the token as your password when you're connecting to Azure Repos. Microsoft Entra tokens (preferred) or PATs are generated on demand when you have the credential manager installed and saved locally for use with the Git command line or other client. 
+Use the [Git Credential Manager (GCM)](set-up-credential-managers.md) to avoid entering your credentials every time and keep your token more secure when accessing Azure Repos.
+Sign in to the web portal, generate a token, and then use the token as your password when you're connecting to Azure Repos.
+Microsoft Entra tokens (preferred) or PATs are generated on demand when you have the credential manager installed and saved locally for use with the Git command line or other client.
 
 ## Existing repositories
 
-- **Remove existing origin:** If you previously added the origin using a username, remove it by running the following command:
+- **Remove existing origin** - If you previously added the origin using a username, remove it by running the following command:
 
    ``git remote remove origin``
 
-- **Authenticate with a PAT:** If you encounter issues with standard authentication, run the following command to authenticate via the command line:  
+- **Authenticate with a PAT** - If you encounter issues with standard authentication, run the following command to authenticate via the command line:
 
    ``git remote add origin https://dev.azure.com/<PAT>@<company_machineName>:/<project-name>/_git/<repo_name>``
 
    ``git push -u origin --all``
 
-   The `path to git repo = /_git/do` refers to the URL path structure used in Azure DevOps for Git repositories. The `/_git/` segment indicates that you're accessing a Git repository, and you should replace `do` with the actual name of your repository. For example, if your repository is named `my-repo`, the path would be '`/_git/my-repo`'.
+   The `path to git repo = /_git/do` refers to the URL path structure used in Azure DevOps for Git repositories.
+   The `/_git/` segment indicates that you're accessing a Git repository, and you should replace `do` with the actual name of your repository.
+   For example, if your repository is named `my-repo`, the path would be `/_git/my-repo`.
 
-- **Clone repository:** If you're using Git and need to authenticate, run the following command:
+- **Clone repository** - If you're using Git and need to authenticate, run the following command:
 
    ``git clone https://{organization}@dev.azure.com/{organization}/_git/{repository}``
 

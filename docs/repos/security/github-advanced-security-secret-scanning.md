@@ -8,15 +8,19 @@ ms.topic: how-to
 ms.author: laurajiang
 author: laurajjiang
 monikerRange: 'azure-devops'
-ms.date: 07/02/2025
-ms.custom: cross-service, sfi-image-nochange
+ms.date: 02/24/2026
+ms.custom: cross-service, sfi-image-nochange, pat-deprecation
+ai-usage: ai-assisted
 ---
 
 # Set up secret scanning 
 
-Exposed credentials in engineering systems provide easily exploitable opportunities for attackers. To defend against this threat, GitHub Advanced Security for Azure DevOps scans for credentials and other sensitive content in your source code. Push protection also prevents any credentials from being leaked in the first place. You need either GitHub Advanced Security for Azure DevOps or, if you're using the standalone experience, GitHub Secret Protection for Azure DevOps enabled. 
+Exposed credentials in engineering systems provide easily exploitable opportunities for attackers.
+To defend against this threat, GitHub Advanced Security for Azure DevOps scans for credentials and other sensitive content in your source code.
+Push protection also prevents any credentials from being leaked in the first place.
+You need either GitHub Advanced Security for Azure DevOps or, if you're using the standalone experience, GitHub Secret Protection for Azure DevOps enabled.
 
-Secret scanning for your repository scans for any secrets that might already exist in your source code across history and push protection prevents any new secrets from being exposed in source code. 
+Secret scanning for your repository scans for any secrets that might already exist in your source code across history and push protection prevents any new secrets from being exposed in source code.
 
 [!INCLUDE [GitHub Advanced Security for Azure DevOps is different from GitHub Advanced Security.](includes/github-advanced-security.md)]
 
@@ -28,42 +32,58 @@ Secret scanning for your repository scans for any secrets that might already exi
 
 When you enable Advanced Security or Secret Protection specifically, it scans repositories for secrets issued by various service providers and generates secret scanning alerts.
 
-If access to a resource requires paired credentials, secret scanning creates an alert only when both parts of the pair are detected in the same file. Pairing ensures that the most critical leaks aren't hidden behind information about partial leaks. Pair matching also helps reduce false positives since both elements of a pair must be used together to access the provider's resource.
+If access to a resource requires paired credentials, secret scanning creates an alert only when both parts of the pair are detected in the same file.
+Pairing ensures that the most critical leaks aren't hidden behind information about partial leaks.
+Pair matching also helps reduce false positives since both elements of a pair must be used together to access the provider's resource.
 
-The Advanced Security tab at **Repos** > **Advanced Security** in Azure DevOps is the hub to view your security alerts. Select the **Secrets** tab to view secret scanning alerts. You can filter by state and secret type. Navigate into an alert for more details, including remediation guidance. After you enable Advanced Security, a scan kicks off for the selected repository, including all historical commits. Over time, alerts will start to appear as the scan progresses.
+The Advanced Security tab at **Repos** > **Advanced Security** in Azure DevOps is the hub to view your security alerts.
+Select the **Secrets** tab to view secret scanning alerts.
+You can filter by state and secret type.
+Go to an alert for more details, including remediation guidance.
+After you enable Advanced Security, a scan kicks off for the selected repository, including all historical commits.
+Over time, alerts start to appear as the scan progresses.
 
 Renaming branches doesn't affect the results. However, it might take up to 24 hours for the new name to display.
 
 ![Screenshot showing active secret scanning alerts.](./media/secret-scanning-alerts.png)
 
-To remediate exposed secrets, invalidate the exposed credential and create a new one in its place. The newly created secret should then be stored securely in a way that doesn't directly push it back into the code. For example, the secret could be stored in Azure Key Vault. Most resources have both a primary and secondary credential. The method to roll a primary credential over versus a secondary credential are identical, unless otherwise noted.  
+To remediate exposed secrets, invalidate the exposed credential and create a new one in its place.
+The newly created secret should then be stored securely in a way that doesn't directly push it back into the code.
+For example, the secret could be stored in Azure Key Vault.
+Most resources have both a primary and secondary credential.
+The method to roll a primary credential over versus a secondary credential are identical, unless otherwise noted.  
 
 ## Manage secret scanning alerts
 
-### Viewing alerts for a repository 
+### Viewing alerts for a repository
 
 Select the **Secrets** tab to view all secret scanning alerts.
 
-If Advanced Security was recently enabled for your repository, you might see a card indicating that Advanced Security is still scanning your repository. 
+If Advanced Security was recently enabled for your repository, you might see a card indicating that Advanced Security is still scanning your repository.
 
 ![Screenshot showing scanning for secrets.](./media/secret-scanning-kickoff.png)
 
-Once the scan is complete, any results are displayed. A single alert gets generated for each detected unique credential, across all branches and history of your repository. There are no branch filters as they're rolled up into one alert. 
+Once the scan is complete, any results are displayed.
+A single alert gets generated for each detected unique credential, across all branches and history of your repository.
+There are no branch filters as they're rolled up into one alert.
 
-Nonprovider secrets are viewable by selecting "Other" from the confidence dropdown on the secret scanning tab. 
+Nonprovider secrets are viewable by selecting "Other" from the confidence dropdown on the secret scanning tab.
 
 :::image type="content" source="media/secret-scanning-confidence-filter.png" lightbox="media/secret-scanning-confidence-filter.png" alt-text="Screenshot of GitHub Advanced Security secret scanning confidence filter."::: 
 
-### Alert details 
+### Alert details
 
-When you navigate into an alert, a detailed alert view appears and reveals more details about the finding and provide specific remediation guidance to resolve the alert.
+When you go to an alert, a detailed alert view appears and reveals more details about the finding and provides specific remediation guidance to resolve the alert.
 
 ![Screenshot showing details for a secret scanning alert](./media/secret-scanning-detail.png)
 
 
 > [!NOTE]
 > The image contains a value formatted to resemble a personal access token (PAT). This value is not a valid PAT and is used for illustrative purposes only.
-> GitHub Advanced Security for Azure DevOps performs validity checks on detected secrets. While the tool may initially detect values that match the expected format of a PAT, it performs additional validation to verify authenticity. If a token fails this validation check (that is, is not an actual valid PAT), secret scanning will recognize it as invalid and will not trigger a detection alert. This helps reduce false positives and ensures that only actual, valid secrets generate alerts.
+> GitHub Advanced Security for Azure DevOps performs validity checks on detected secrets.
+> While the tool may initially detect values that match the expected format of a PAT, it performs additional validation to verify authenticity.
+> If a token fails this validation check (that is, is not an actual valid PAT), secret scanning recognizes it as invalid and doesn't trigger a detection alert.
+> This helps reduce false positives and ensures that only actual, valid secrets generate alerts.
 
 
 | Section  | Explanation  |
@@ -74,7 +94,7 @@ When you navigate into an alert, a detailed alert view appears and reveals more 
 | Severity | All secret scanning alerts are set as critical. Any exposed credential is potentially an opportunity for a malicious actor. |
 | Finding details | The type of credential and rule used to find the credential are listed under the **Finding details** on the sidebar of the alert details page. |
 
-With nonprovider secrets, the **Confidence: other** tag also appears by the severity badge in the alert detail view. 
+With nonprovider secrets, the **Confidence: other** tag also appears by the severity badge in the alert detail view.
 
 :::image type="content" source="media/secret-scanning-detail-confidence-other.png" lightbox="media/secret-scanning-detail-confidence-other.png" alt-text="Screenshot of GitHub Advanced Security secret scanning generic alert detail.":::
 
@@ -82,20 +102,21 @@ With nonprovider secrets, the **Confidence: other** tag also appears by the seve
 
 Each secret has unique remediation steps to guide you through how to revoke and regenerate a new secret in its place. The alert detail shares specific steps or documentation for each alert.
 
-A secret scanning alert stays open until closed. To attest that a secret scanning alert is fixed: 
+A secret scanning alert stays open until closed.
+To attest that a secret scanning alert is fixed:
 
-1. Navigate to the alert you wish to close and select the alert.
+1. Go to the alert you wish to close and select the alert.
 1. Select the **Close alert** drop-down.
 1. If not already selected, select **Fixed**.
 1. Select **Close** to submit and close the alert.
 
 ![Screenshot showing how to close a secret scanning alert](./media/secret-scanning-close-alert.png)
 
-### Dismissing secret scanning alerts 
+### Dismissing secret scanning alerts
 
-To dismiss an alert, do the following steps: 
+To dismiss an alert, do the following steps:
 
-1. Navigate to the alert you wish to close and select on the alert.
+1. Go to the alert you wish to close and select on the alert.
 1. Select the **Close alert** drop-down.
 1. If not already selected, select either **Risk accepted** or **False positive** as the closure reason.
 1. Add an optional comment into the **Comment** text box. 
@@ -106,9 +127,10 @@ To dismiss an alert, do the following steps:
 
 You can manually open any previously dismissed alert.
 
-### Make compromised secrets secure 
+### Make compromised secrets secure
 
-Once a secret gets committed to a repository, the secret is compromised. Microsoft recommends the following actions for compromised secrets:
+Once a secret gets committed to a repository, the secret is compromised.
+Microsoft recommends the following actions for compromised secrets:
 
 [!INCLUDE [use-microsoft-entra-reduce-pats](../../includes/use-microsoft-entra-reduce-pats.md)]
 
@@ -116,19 +138,25 @@ Once a secret gets committed to a repository, the secret is compromised. Microso
 * For all other secrets, first verify that the secret committed to Azure Repos is valid. If so, create a new secret, update any services that use the old secret, and then delete the old secret.
 * Identify any actions taken by the compromised token on your enterprise's resources. 
 
-When you update a secret, store the new secret securely and ensure that it never gets stored as plaintext. One option is to use Azure Key Vault or other secret management solutions.
+When you update a secret, store the new secret securely and ensure that it never gets stored as plaintext.
+One option is to use Azure Key Vault or other secret management solutions.
 
 ## Secret push protection 
 
-Push protection checks any incoming pushes for high-confidence secrets and prevent the push from going through. An error message displays all identified secrets for you to remove them or continue to push the secrets if needed. 
+Push protection checks any incoming pushes for high-confidence secrets and prevents the push from going through.
+An error message displays all identified secrets for you to remove them or continue to push the secrets if needed.
 
 ### About push protection alerts
 
 Push protection alerts are user alerts that reported by push protection. Secret scanning as a push protection currently scans repositories for secrets issued by some service providers.
 
-If access to a resource requires paired credentials, then secret scanning might create an alert only when both parts of the pair are detected in the same file. The pairing ensures that the most critical leaks aren't hidden behind information about partial leaks. Pair matching also helps reduce false positives since both elements of a pair must be used together to access the provider's resource.
+If access to a resource requires paired credentials, then secret scanning might create an alert only when both parts of the pair are detected in the same file.
+The pairing ensures that the most critical leaks aren't hidden behind information about partial leaks.
+Pair matching also helps reduce false positives since both elements of a pair must be used together to access the provider's resource.
 
-Push protection might not block older versions of certain tokens as these tokens might generate a higher number of false positives than their most recent version. Push protection might also not block legacy tokens. For tokens such as Azure Storage Keys, Advanced Security only supports recently created tokens, not tokens that match the legacy patterns. 
+Push protection might not block older versions of certain tokens as these tokens might generate a higher number of false positives than their most recent version.
+Push protection might also not block legacy tokens.
+For tokens such as Azure Storage Keys, Advanced Security only supports recently created tokens, not tokens that match the legacy patterns.
 
 ### Push protection from the command line 
 
@@ -136,19 +164,23 @@ Push protection is built natively into Azure DevOps Git. If your commits contain
 
 ![Screenshot showing a git push being blocked from VS Code](./media/secret-scanning-push-protection-block.png) 
 
-### Push protection from the web interface 
+### Push protection from the web interface
 
-Push protection also works from the web interface. If a secret is identified in a commit, the following error block displays, which stops you from pushing your changes:
+Push protection also works from the web interface.
+If a secret is identified in a commit, the following error block displays, which stops you from pushing your changes:
 
 ![Screenshot showing a git push being blocked from AzDO web UI](./media/secret-scanning-push-protection-block-web.png)  
 
-### What to do if your push was blocked 
+### What to do if your push was blocked
 
-Push protection blocks secrets found in plain text files that are usually (but not limited to) text files such as source code or JSON configuration files. These secrets are stored in plaintext. If a bad actor gains access to the files and they get published to a public repository, the secrets are usable by anyone. 
+Push protection blocks secrets found in plain text files that are usually (but not limited to) text files such as source code or JSON configuration files.
+These secrets are stored in plaintext.
+If a bad actor gains access to the files and they get published to a public repository, the secrets are usable by anyone.
 
-Remove the secret from the flagged file, and then remove the secret from the commit history. If the flagged secret is a placeholder or example secret, update the fake secret to prepend the string `Placeholder` in front of the fake secret.
+Remove the secret from the flagged file, and then remove the secret from the commit history.
+If the flagged secret is a placeholder or example secret, update the fake secret to prepend the string `Placeholder` in front of the fake secret.
 
-If the secret was added in your immediate previous commit, amend the commit and create a new commit:  
+If the secret was added in your immediate previous commit, amend the commit and create a new commit:
 1. Remove the secret from your code.
 2. Commit the changes by using `git commit --amend`
 3. Push your changes again.
@@ -164,13 +196,17 @@ If the secret was added further back in history, edit your commits using an inte
 
 ### Push a blocked secret
 
-Don't bypass flagged secrets because doing so can put your company’s security at risk. If you confirm that an identified secret isn't a false positive, remove the secret from your entire branch history before you attempt to push your changes again.
+Don't bypass flagged secrets because doing so can put your company's security at risk.
+If you confirm that an identified secret isn't a false positive, remove the secret from your entire branch history before you attempt to push your changes again.
 
-If you believe a blocked secret is a false positive or safe to push, you can bypass push protection. Include the string `skip-secret-scanning:true` in your commit message. Even if you bypass push protection, a secret scanning alert is generated in the alert UX once the secret gets pushed.
+If you believe a blocked secret is a false positive or safe to push, you can bypass push protection.
+Include the string `skip-secret-scanning:true` in your commit message.
+Even if you bypass push protection, a secret scanning alert is generated in the alert UX once the secret gets pushed.
 
 ## About validity checks
 
-Secret validity checks help you prioritize alerts by indicating if a detected secret is still usable. For supported secret types, GitHub Advanced Security for Azure DevOps automatically asks the issuing provider whether the credential is active, no separate feature toggle is required once secret scanning is enabled.
+Secret validity checks help you prioritize alerts by indicating if a detected secret is still usable.
+For supported secret types, GitHub Advanced Security for Azure DevOps automatically asks the issuing provider whether the credential is active, no separate feature toggle is required once secret scanning is enabled.
 
 ![Screenshot of Advanced Security Secret validation list.](./media/secret-validity-checking-alert-list.png)
 
@@ -200,7 +236,7 @@ Having the GitHub Advanced Security for Azure DevOps bundle or Secret protection
 Use "verify secret" (in the alert detail) after following its Recommendations & Remediation or when a prior attempt returned Unknown. The timestamp updates on completion.
 
 
-## Related articles
+## Related content
 
 - [Troubleshoot secret scanning](github-advanced-security-secret-scanning-troubleshoot.md)
 - [Learn about secret scanning patterns](github-advanced-security-secret-scan-patterns.md)
