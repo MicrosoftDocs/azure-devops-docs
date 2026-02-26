@@ -35,9 +35,6 @@ Because test plans refer to test cases, updates to a test case automatically ref
 
 In the next version of the product, you can reuse the existing test cases. However, a better option might be to [copy or clone the test cases](copy-clone-test-items.md). A copy creates a new baseline. Changes to these new test cases don't affect your previous test plans.
 
-> [!TIP]
-> For more information about the ways you can work with test plans, test suites, and test cases, see the [FAQs for manual testing](reference-qa.yml#testplans).
-
 ## Prerequisites
 
 [!INCLUDE [prerequisites-define](includes/prerequisites-define.md)] 
