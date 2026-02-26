@@ -98,7 +98,7 @@ Do the following steps to start your exploratory testing session and create bugs
 
    ![Save the bug or task](media/connected-mode-exploratory-testing/create-bugs-04.png)
 
-   You can also [add your findings to an existing similar bug](reference-qa.yml#can-i-edit-an-existing-bug-instead-of-creating-a-new-bug-when-using-the-test--feedback-extension). 
+   You can also [add your findings to an existing similar bug](reference-qa.yml#can-i-edit-an-existing-bug-instead-of-creating-a-new-bug-when-using-the-test---feedback-extension). 
 
 1. View a list of all your activities in reverse chronological order
    in the **Session timeline** page. The timeline shows all the screenshots, videos, notes, the work items such as bugs, tasks, and test cases you already

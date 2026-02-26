@@ -98,4 +98,4 @@ If you have trouble connecting, see [Troubleshoot connection](../user-guide/trou
 
 ## Related content
 
-* [FAQs for manual testing](reference-qa.yml#test--feedback-extension)
+* [FAQs for manual testing](reference-qa.yml#test---feedback-extension)
