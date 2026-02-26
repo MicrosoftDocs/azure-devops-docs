@@ -29,8 +29,6 @@ summary: |
   - [Track test status](track-test-status.md)
   - [Manage test access and permissions](manual-test-permissions.md)
 
-  <a name="testplans" />
-
 sections:
 
   - name: Permissions and access
