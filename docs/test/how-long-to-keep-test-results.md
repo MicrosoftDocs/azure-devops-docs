@@ -73,4 +73,4 @@ Clean up automated test results left over from deleted builds or test results th
 ## Related content
 
 - [Delete test artifacts](../boards/backlogs/delete-test-artifacts.md)
-- [FAQs for manual testing](reference-qa.yml#manageresults)
+- [FAQs for manual testing](reference-qa.yml#test-results-and-retaining-test-data)

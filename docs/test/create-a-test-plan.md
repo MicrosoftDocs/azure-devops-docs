@@ -33,7 +33,7 @@ Repeat this development-test-release cycle by importing the same test cases into
 
 Because test plans refer to test cases, updates to a test case automatically reflect in all the test plans and test suites that use it.
 
-In the next version of the product, you can reuse the existing test cases. However, a better option might be to [copy or clone the test cases](reference-qa.yml#create-manual-test-cases). A copy creates a new baseline. Changes to these new test cases don't affect your previous test plans.
+In the next version of the product, you can reuse the existing test cases. However, a better option might be to [copy or clone the test cases](reference-qa.yml#test-cases). A copy creates a new baseline. Changes to these new test cases don't affect your previous test plans.
 
 > [!TIP]
 > For more information about the ways you can work with test plans, test suites, and test cases, see the [FAQs for manual testing](reference-qa.yml#testplans).

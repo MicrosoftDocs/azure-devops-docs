@@ -136,7 +136,7 @@ up to that point gets included in the bug that you create. You can view it befor
 
 ![Screenshot showing viewing the diagnostic data in the bug you are creating.](media/collect-diagnostic-data/collect-diagnostic-data-15.png) 
 
-[How do I play the video recordings I created with the extension?](reference-qa.yml#recording-playback)
+[How do I play the video recordings I created with the extension?](reference-qa.yml#how-do-i-play-the-video-recordings-i-created-with-the-extension)
 
 To collect advanced diagnostic data such as code coverage, IntelliTrace, and Test Impact data (in addition to the previously listed data items), you must [configure the data collectors](/previous-versions/azure/devops/test/mtm/collect-more-diagnostic-data-in-manual-tests) and other run settings in Microsoft Test Manager and run your tests using Microsoft Test Manager. For more information, see 
 [Run manual tests with Microsoft Test Manager](/previous-versions/azure/devops/test/mtm/plan-manual-tests-with-microsoft-test-manager).
@@ -153,4 +153,4 @@ To collect advanced diagnostic data such as code coverage, IntelliTrace, and Tes
 - [Overview of manual and exploratory testing](index.yml)
 - [Testing different configurations](test-different-configurations.md)
 - [Manage test results](how-long-to-keep-test-results.md)
-- [FAQs for manual testing](reference-qa.yml#repeatdifferent)
+- [FAQs for manual testing](reference-qa.yml#test-configurations)

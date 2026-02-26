@@ -27,7 +27,7 @@ Organize your test cases by adding them to test plans and test suites, and then 
 > [!NOTE]
 > Test iterations are designed to support data-driven scenarios, not workflow-driven scenarios.
   From a best practice perspective, if you have two test scenarios where the workflows are
-  different, consider creating separate test cases. Also see [FAQs for manual testing](reference-qa.yml#testcases).
+  different, consider creating separate test cases. Also see [FAQs for manual testing](reference-qa.yml#test-cases).
 
 ## Prerequisites
 
@@ -244,7 +244,7 @@ To permanently delete test plans and test suites, be a member of the Project Adm
 
 - [Copy or clone stories, issues and other work items](../boards/backlogs/copy-clone-work-items.md)
 - [Delete test artifacts in Azure Boards](../boards/backlogs/delete-test-artifacts.md)
-- [FAQs for manual testing](reference-qa.yml#testcases)
+- [FAQs for manual testing](reference-qa.yml#test-cases)
 - [Repeat a test with different data](repeat-test-with-different-data.md)
 - [Share steps between test cases](share-steps-between-test-cases.md)
 - [Test different configurations](test-different-configurations.md)

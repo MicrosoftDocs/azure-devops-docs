@@ -94,7 +94,7 @@ For more information, see [View your sessions and gain insights](insights-explor
 
 ## Related content
 
-* [Find answers to FAQs for manual testing](reference-qa.yml#tandfext)
+* [Find answers to FAQs for manual testing](reference-qa.yml#test--feedback-extension)
 * [Use the Test & Feedback extension in Connected mode](connected-mode-exploratory-testing.md)
 * [Add findings to existing bugs with exploratory testing](add-to-bugs-exploratory-testing.md)
 * [Gain insights across your exploratory testing sessions](insights-exploratory-testing.md)

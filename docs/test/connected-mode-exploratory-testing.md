@@ -98,7 +98,7 @@ Do the following steps to start your exploratory testing session and create bugs
 
    ![Save the bug or task](media/connected-mode-exploratory-testing/create-bugs-04.png)
 
-   You can also [add your findings to an existing similar bug](reference-qa.yml#addsimilar). 
+   You can also [add your findings to an existing similar bug](reference-qa.yml#can-i-edit-an-existing-bug-instead-of-creating-a-new-bug-when-using-the-test--feedback-extension). 
 
 1. View a list of all your activities in reverse chronological order
    in the **Session timeline** page. The timeline shows all the screenshots, videos, notes, the work items such as bugs, tasks, and test cases you already
@@ -117,7 +117,7 @@ Do the following steps to start your exploratory testing session and create bugs
 
    ![Screenshot of the bug or task.](media/connected-mode-exploratory-testing/create-bugs-10.png)
 
-[How do I play the video recordings I created with the extension?](reference-qa.yml#recording-playback)
+[How do I play the video recordings I created with the extension?](reference-qa.yml#how-do-i-play-the-video-recordings-i-created-with-the-extension)
  
 <a name="create-testcase"></a>
 
@@ -160,4 +160,4 @@ After you file bugs, create tasks, or create test cases, they show up in the "Re
 
 See how you can [view your sessions and get insights](insights-exploratory-testing.md).
 
-[How do I play the video recordings I created with the extension?](reference-qa.yml#recording-playback)
+[How do I play the video recordings I created with the extension?](reference-qa.yml#how-do-i-play-the-video-recordings-i-created-with-the-extension)

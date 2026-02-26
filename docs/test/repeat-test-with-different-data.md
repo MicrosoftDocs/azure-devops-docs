@@ -119,7 +119,7 @@ You can view the results in the **Test Case Results** dialog box.
 
 ## Related content
 
-* [FAQs for manual testing](reference-qa.yml#repeatdifferent)
+* [FAQs for manual testing](reference-qa.yml#test-configurations)
 * [Overview of manual and exploratory testing](index.yml)
 * [Testing different configurations](test-different-configurations.md)
 * [Collect diagnostic data](collect-diagnostic-data.md)

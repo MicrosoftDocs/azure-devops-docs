@@ -235,6 +235,6 @@ You can [configure the dashboard widget](../report/dashboards/widget-catalog.md)
 
 - [Progress report](progress-report.md) 
 - [Control how long to keep test results](how-long-to-keep-test-results.md)
-- [FAQs for manual testing](reference-qa.yml#trackstatus)
+- [FAQs for manual testing](reference-qa.yml#test-status-tracking-charts)
 - [Widget catalog](../report/dashboards/widget-catalog.md)
 - [Team administration](../organizations/settings/manage-teams.md)

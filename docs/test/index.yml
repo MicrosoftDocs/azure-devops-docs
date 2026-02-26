@@ -62,6 +62,10 @@ landingContent:
             url: ../test/how-long-to-keep-test-results.md?toc=/azure/devops/organizations/toc.json 
           - text: Manage test runs
             url: ../test/test-runs.md
+      - linkListType: reference
+        links:
+          - text: Test Plans FAQs
+            url: ../test/reference-qa.yml
   - title: Run automated tests
     linkLists:
       - linkListType: concept

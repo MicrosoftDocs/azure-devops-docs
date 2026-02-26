@@ -86,7 +86,7 @@ Users don't need an Azure DevOps subscription to use this mode.
 
 3. The report saves in the default **Downloads** folder of your web browser. Share it with the rest of your team as an email attachment, or copy it to OneNote, Word, or in any other format you prefer.
 
-   [How do I play the video recordings I created with the extension?](reference-qa.yml#recording-playback)
+   [How do I play the video recordings I created with the extension?](reference-qa.yml#how-do-i-play-the-video-recordings-i-created-with-the-extension)
 
 ## Next steps
 
