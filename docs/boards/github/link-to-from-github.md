@@ -151,6 +151,8 @@ To see pull request insights, go to the [Azure Boards app in GitHub](https://git
 
 3. Hover over a status indicator to see more details, or select the pull request link to open it directly in GitHub.
 
+<a id="mention-github-pull-requests">  </a>
+
 ## Mention GitHub pull requests by using `!`
 
 Use `!` mentions to reference and discuss GitHub pull requests directly from any work item rich-text field or discussion comment. When you type `!` in a text field, a picker appears that you can use to search for and select a GitHub pull request from a connected repository. The selected pull request is inserted as a clickable link.
