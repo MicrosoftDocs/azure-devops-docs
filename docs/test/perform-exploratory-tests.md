@@ -6,7 +6,7 @@ ai-usage: ai-assisted
 ms.service: azure-devops-test-plans
 ms.custom: UpdateFrequency3
 ms.topic: how-to
-ms.author: jeom
+ms.author: pliaros
 author: rohit-batra
 monikerRange: '<= azure-devops'
 ms.date: 11/24/2025

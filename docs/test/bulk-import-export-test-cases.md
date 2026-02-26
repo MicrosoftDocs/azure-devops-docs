@@ -5,7 +5,7 @@ description: Import and export test cases in bulk using CSV or Excel files in Az
 ai-usage: ai-assisted
 ms.service: azure-devops-test-plans
 ms.custom: cross-project, UpdateFrequency3
-ms.author: jeom
+ms.author: pliaros
 author: wisdeom
 ms.topic: how-to
 monikerRange: '= azure-devops'

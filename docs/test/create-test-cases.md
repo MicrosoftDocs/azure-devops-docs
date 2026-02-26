@@ -6,7 +6,7 @@ ms.assetid: C3C10A82-C7F2-4AB6-9CED-B43DAF722800
 ms.service: azure-devops-test-plans
 ms.custom: UpdateFrequency3
 ms.topic: quickstart
-ms.author: jeom
+ms.author: pliaros
 author: rohit-batra
 monikerRange: '<= azure-devops'
 ms.date: 11/10/2025

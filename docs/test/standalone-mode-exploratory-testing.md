@@ -5,7 +5,7 @@ ms.assetid: 762A75FB-0B6D-47C3-9232-371348D8D529
 ms.service: azure-devops-test-plans
 ms.custom: UpdateFrequency3
 ms.topic: quickstart
-ms.author: jeom
+ms.author: pliaros
 author: rohit-batra
 ms.date: 12/07/2018
 ms.update-cycle: 1095-days

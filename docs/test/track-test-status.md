@@ -5,7 +5,7 @@ description: Learn how to view the status of your planned testing using an out-o
 ms.service: azure-devops-test-plans
 ms.custom: UpdateFrequency3
 ms.topic: how-to
-ms.author: jeom
+ms.author: pliaros
 author: rohit-batra
 monikerRange: '<= azure-devops'
 ms.date: 12/08/2021

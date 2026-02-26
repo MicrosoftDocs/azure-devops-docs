@@ -5,7 +5,7 @@ ms.assetid: F536C364-BEFC-48A8-B977-19233941EF6A
 ms.service: azure-devops-test-plans
 ms.custom: UpdateFrequency3
 ms.topic: how-to
-ms.author: jeom
+ms.author: pliaros
 author: rohit-batra
 monikerRange: '<= azure-devops'
 ms.date: 12/06/2021

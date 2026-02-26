@@ -4,7 +4,7 @@ description: Learn about manual and exploratory testing. Repeat a test with diff
 ms.assetid: C9953A56-9BD6-408B-899B-FAD816B9FC0C
 ms.service: azure-devops-test-plans
 ms.topic: how-to
-ms.author: jeom
+ms.author: pliaros
 author: rohit-batra
 monikerRange: '<= azure-devops'
 ms.date: 09/14/2021
