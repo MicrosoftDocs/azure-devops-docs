@@ -5,7 +5,7 @@ ms.assetid: 99FD819E-A861-4F28-A486-FD452DB65D69
 ms.service: azure-devops-test-plans
 ms.custom: UpdateFrequency3
 ms.topic: quickstart
-ms.author: jeom
+ms.author: pliaros
 author: rohit-batra
 monikerRange: '<= azure-devops'
 ms.date: 11/02/2021
@@ -33,10 +33,7 @@ Repeat this development-test-release cycle by importing the same test cases into
 
 Because test plans refer to test cases, updates to a test case automatically reflect in all the test plans and test suites that use it.
 
-In the next version of the product, you can reuse the existing test cases. However, a better option might be to [copy or clone the test cases](reference-qa.yml#create-manual-test-cases). A copy creates a new baseline. Changes to these new test cases don't affect your previous test plans.
-
-> [!TIP]
-> For more information about the ways you can work with test plans, test suites, and test cases, see the [FAQs for manual testing](reference-qa.yml#testplans).
+In the next version of the product, you can reuse the existing test cases. However, a better option might be to [copy or clone the test cases](copy-clone-test-items.md). A copy creates a new baseline. Changes to these new test cases don't affect your previous test plans.
 
 ## Prerequisites
 
@@ -164,5 +161,5 @@ In **Test Plans** for your test plan, use the :::image type="icon" source="media
 ## Related content
 
 * [Test objects and terms](test-objects-overview.md) 
-* [FAQs for manual testing](reference-qa.yml#testplans)
+* [FAQs for manual testing](reference-qa.yml)
 * [End-to-end traceability](../cross-service/end-to-end-traceability.md)

@@ -5,7 +5,7 @@ ms.assetid: 616919f3-7339-4813-9dcf-82ead3476b1a
 ms.service: azure-devops-test-plans
 ms.custom: UpdateFrequency3
 ms.topic: quickstart
-ms.author: jeom
+ms.author: pliaros
 author: rohit-batra
 monikerRange: '<= azure-devops'
 ms.date: 11/25/2025
@@ -207,7 +207,7 @@ Select a test suite and select **Run for web application** or **Run for desktop 
 
 ## Run tests for a build
 
-Choose a build to run tests against.
+To run tests against a specific build, choose the build from the run options.
 
 1. From the dropdown, select **Run with options**.
 
@@ -263,7 +263,7 @@ For more information, see [Collect diagnostic data](collect-diagnostic-data.md#w
 
 Capture your actions on the application as a log.
 
-If you use Google Chrome or Firefox, use the web runner capture your actions on the web app as image logs while testing.
+If you use Google Chrome or Firefox, use the web runner to capture your actions on the web app as image logs while testing.
 For Microsoft Internet Explorer or Microsoft Edge browsers, or for desktop app testing, use the [Test Runner desktop client](https://aka.ms/ATPTestRunnerDownload).
 
 ![Screenshot shows the button for capturing an image action log from the app.](media/run-manual-tests/test-capture-action.png)
@@ -272,18 +272,18 @@ For more information, see [Collect diagnostic data](collect-diagnostic-data.md#w
 
 ### Capture screen recordings of your app being tested
 
-Capture screen recordings of my app during testing.
+Capture screen recordings of your app during testing.
 
 If you use Google Chrome or Firefox, use the web runner to capture screen recordings of your web and desktop apps while testing.
 For Microsoft Internet Explorer or Microsoft Edge browsers, or for desktop app testing, use the [Test Runner desktop client](https://aka.ms/ATPTestRunnerDownload).
 
-![Screenshot show the button for capturing a screen recording from the app.](media/run-manual-tests/test-capture-screen-recording.png)
+![Screenshot shows the button for capturing a screen recording from the app.](media/run-manual-tests/test-capture-screen-recording.png)
 
 For more information, see [Collect diagnostic data](collect-diagnostic-data.md#web-recording).
 
 ## Run tests with TCM
 
-You can run tests that are part of a test plan using the TCM command-line tool. This tool lets you create and start a test run, and then manage all your existing test runs. Use the tcm commands documented here to accomplish these tasks.
+You can run tests that are part of a test plan using the Test Case Management (TCM) command-line tool. This tool lets you create and start a test run, and then manage all your existing test runs. Use the tcm commands documented here to accomplish these tasks.
 
 [List test runs](#list-test-runs) | [Create test runs](#create-test-runs) | [Execute test runs](#execute-test-runs) | [Abort test runs](#abort-test-runs) | [Delete test runs](#delete-test-runs) | [Export test runs](#export-test-runs) | [Publish test runs](#publish-test-runs) 
 
@@ -300,7 +300,7 @@ tcm run /list /collection:teamprojectcollectionurl /teamproject:project
 
 | Parameter | Description |  
 |----------|------------| 
-|**/planid**:`id`| Optional. Indicates that only those test runs associated with the specified test plan are returned in the list.    |
+|**/planid**:`id`| Optional. Returns only those test runs that are associated with the specified test plan.    |
 |**/querytext**:`query`| Optional. Specifies the query to use to list a subset of test runs.    |
 
 [!INCLUDE [prerequisites-define](includes/common-tcm-parameters.md)] 
@@ -346,9 +346,9 @@ tcm run /create /title:title /planid:id /collection:CollectionURL /teamproject:p
 |**/querytext**:`query`| Optional if you specify `suiteid` and `configid`. Specifies the query to use to select the tests that you want to run. <br><br>**Tip:** You can use the `/querytest` parameter to run more than one test suite. For example: `querytext:“SELECT * FROM TestPoint WHERE (ConfigurationId=20 OR ConfigurationId=21) AND (Suiteid=1185 OR Suiteid=1186)”`.    |
 |**/settingsname**:`name`| Optional. Specifies the test settings that you want to use for this test run. If you don't select test settings, the default test settings in the test plan are used.    |
 |**/owner**:`owner`| Optional. Specifies the owner of the test run.    |
-|**/builddir**:`directory`| Optional. Specifies the build directory to use to locate the test assemblies for the test. If this isn't specified, the build location is used based on the build that is currently assigned to the test plan.    |
+|**/builddir**:`directory`| Optional. Specifies the build directory to use to locate the test assemblies for the test. If this parameter isn't specified, the build location is used based on the build that is currently assigned to the test plan.    |
 |**/testenvironment**:`name`| Optional. Specifies the test environment that you want to use for this test run. If you don't select a test environment, the default test environment in the test plan is used.    |
-|**/include**| Optional. Specifies that all tests that are selected for the test run are included, even if the tests aren't currently set to the Active state.    |
+|**/include**| Optional. Includes all tests selected for the test run, even if the tests aren't currently in the Active state.    |
 
 [!INCLUDE [prerequisites-define](includes/common-tcm-parameters.md)]
 
@@ -369,7 +369,7 @@ Run created with ID: 1000082.
 
 ### Execute test runs  
 
-Use `tcm run /execute` to kick off one of the runs in your test plan. The **ID** you specify corresponds to the work item ID defined when the run was created. You can see a list of all test run IDs with the [tcm run /list](#list-test-runs) command.
+Use `tcm run /execute` to kick off one of the runs in your test plan. The **ID** you specify corresponds to the work item ID defined when the run was created. You can see a list of all test run identifiers with the [tcm run /list](#list-test-runs) command.
 
 ```tcm
 tcm run /execute /id:id /collection:teamprojectcollectionurl /teamproject:project [/login:username,[password]]
@@ -497,7 +497,7 @@ tcm run /publish /suiteid:id /configid:id /resultowner:owner /resultsfile:path
 |**/suiteid**:`id`| Specifies the test suite to use when you publish a test run.   |
 |**/configid**:`id`| Specifies which test configuration you want to use when you publish a test run.    |
 |**/resultowner**:`owner`| Specifies the owner for the test results.    |
-|**/resultsfile**:`path`| Specifies the location of the test run you want to publish. For example, "c:\temp\ResultsForDeveloper.trx".    |
+|**/resultsfile**:`path`| Specifies the location of the test run you want to publish, for example, "c:\temp\ResultsForDeveloper.trx."    |
 |**/title**:`runtitle`| Optional. Specifies a title that you want to use for the test run that you publish.    |
 |**/runowner**:`owner`| Optional. Specifies the owner of the test run.    |
 |**/build**:`buildnumber`| Optional. Specifies the build number to use to publish a test run. This parameter must be used with `/builddefinition`.    |
@@ -536,7 +536,7 @@ You can reset the state of a test to active if you want to rerun it.
 
 ### Q: Can I choose a build to run tests against?
 
-**A:** Yes, Choose **Run** and then select **Run with options**.
+**A:** Yes, choose **Run** and then select **Run with options**.
 
 ![Starting a test with options](media/shared/collect-diagnostic-data-16.png)
 
@@ -574,7 +574,7 @@ For more information, see [Collect diagnostic data](collect-diagnostic-data.md#w
 
 ### Q: Can I capture my actions on the app as a log?
 
-**A:** If you're using Google Chrome or Firefox, use the web runner capture your actions on the web app as image logs while testing.
+**A:** If you're using Google Chrome or Firefox, use the web runner to capture your actions on the web app as image logs while testing.
 For Microsoft Internet Explorer or Microsoft Edge browsers, or for desktop app testing, you can download and use the [Test Runner desktop client](https://aka.ms/ATPTestRunnerDownload).
 
 ![Capturing an image action log from the app](media/shared/collect-diagnostic-data-06.png)
@@ -608,7 +608,7 @@ For more information, see [Collect diagnostic data](collect-diagnostic-data.md#w
 
 ### Q: I'm observing test run failures when using the Azure Test Runner desktop client.
 
-**A:** Make sure you're using latest version of Test Runner desktop client. Download the [Test Runner desktop client](https://aka.ms/ATPTestRunnerDownload)
+**A:** Make sure you're using the latest version of Test Runner desktop client. Download the [Test Runner desktop client](https://aka.ms/ATPTestRunnerDownload).
 
 ### Q: Does the Azure Test Runner desktop client work on devices with Microsoft Entra Conditional Access enabled?
 
@@ -632,7 +632,7 @@ For more information, see [Microsoft Privacy policy](https://privacy.microsoft.c
 
 ## Related content
 
-- [FAQs for manual testing](reference-qa.yml#runtests)
+- [FAQs for manual testing](reference-qa.yml#test-status-tracking-charts)
 - [Collect diagnostic data while testing](collect-diagnostic-data.md)
 - [Exploratory testing with the Test & Feedback extension in Connected mode](connected-mode-exploratory-testing.md)
 - [Run automated tests from test plans](run-automated-tests-from-test-hub.md)

@@ -5,7 +5,7 @@ description: Learn how to view the status of your planned testing using an out-o
 ms.service: azure-devops-test-plans
 ms.custom: UpdateFrequency3
 ms.topic: how-to
-ms.author: jeom
+ms.author: pliaros
 author: rohit-batra
 monikerRange: '<= azure-devops'
 ms.date: 12/08/2021
@@ -235,6 +235,6 @@ You can [configure the dashboard widget](../report/dashboards/widget-catalog.md)
 
 - [Progress report](progress-report.md) 
 - [Control how long to keep test results](how-long-to-keep-test-results.md)
-- [FAQs for manual testing](reference-qa.yml#trackstatus)
+- [FAQs for manual testing](reference-qa.yml#test-status-tracking-charts)
 - [Widget catalog](../report/dashboards/widget-catalog.md)
 - [Team administration](../organizations/settings/manage-teams.md)

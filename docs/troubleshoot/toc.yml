@@ -42,6 +42,8 @@
       href: ../repos/security/github-advanced-security-dependency-scanning-troubleshoot.md?toc=/azure/devops/troubleshoot/toc.json
     - name: Troubleshoot secret scanning (GitHub Advanced Security)
       href: ../repos/security/github-advanced-security-secret-scanning-troubleshoot.md?toc=/azure/devops/troubleshoot/toc.json
+    - name: Git FAQs
+      href: ../repos/git/howto.yml?toc=/azure/devops/troubleshoot/toc.json
 - name: Notifications
   items:
     - name: Troubleshoot not receiving notification emails
@@ -62,6 +64,10 @@
       href: ../organizations/settings/work/faqs.yml?toc=/azure/devops/troubleshoot/toc.json
     - name: Cross-project FAQs
       href: ../project/work-across-projects-faqs.yml?toc=/azure/devops/troubleshoot/toc.json
+- name: Azure Test Plans
+  items:
+    - name: Test Plans FAQs
+      href: ../test/reference-qa.yml?toc=/azure/devops/troubleshoot/toc.json
 - name: Reporting and Analytics
   items:
     - name: Troubleshoot Analytics views

@@ -5,7 +5,7 @@ ms.assetid: 4A7DE54F-FE15-49AA-B88B-B3B848EC68F9
 ms.service: azure-devops-test-plans
 ms.custom: UpdateFrequency3
 ms.topic: how-to
-ms.author: jeom
+ms.author: pliaros
 author: rohit-batra
 ms.date: 12/07/2018
 ms.update-cycle: 1095-days
