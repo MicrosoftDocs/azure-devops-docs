@@ -64,6 +64,10 @@ landingContent:
             url: ../repos/security/github-advanced-security-dependency-scanning-troubleshoot.md?toc=/azure/devops/troubleshoot/toc.json
           - text: Troubleshoot secret scanning (GitHub Advanced Security)
             url: ../repos/security/github-advanced-security-secret-scanning-troubleshoot.md?toc=/azure/devops/troubleshoot/toc.json
+      - linkListType: concept
+        links:
+          - text: Git FAQs
+            url: ../repos/git/howto.yml?toc=/azure/devops/troubleshoot/toc.json
   - title: Notifications
     linkLists:
       - linkListType: how-to-guide
@@ -90,6 +94,12 @@ landingContent:
             url: ../organizations/settings/work/faqs.yml?toc=/azure/devops/troubleshoot/toc.json
           - text: Cross-project FAQs
             url: ../project/work-across-projects-faqs.yml?toc=/azure/devops/troubleshoot/toc.json
+  - title: Azure Test Plans
+    linkLists:
+      - linkListType: concept
+        links:
+          - text: Test Plans FAQs
+            url: ../test/reference-qa.yml?toc=/azure/devops/troubleshoot/toc.json
   - title: Reporting and Analytics
     linkLists:
       - linkListType: how-to-guide

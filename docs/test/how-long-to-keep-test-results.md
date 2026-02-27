@@ -5,7 +5,7 @@ ms.assetid: 7a9e6fbe-bdd0-4cb5-8e57-f4d8d2126218
 ms.service: azure-devops-test-plans
 ms.custom: UpdateFrequency3
 ms.topic: how-to
-ms.author: jeom
+ms.author: pliaros
 author: rohit-batra
 monikerRange: '<= azure-devops'
 ms.date: 4/04/2022
@@ -73,4 +73,4 @@ Clean up automated test results left over from deleted builds or test results th
 ## Related content
 
 - [Delete test artifacts](../boards/backlogs/delete-test-artifacts.md)
-- [FAQs for manual testing](reference-qa.yml#manageresults)
+- [FAQs for manual testing](reference-qa.yml#test-results-and-retaining-test-data)

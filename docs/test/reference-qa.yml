@@ -1,47 +1,71 @@
 ### YamlMime:FAQ
 metadata:
   title: Test plans frequently asked questions 
-  description: Learn about frequently asked questions (FAQs) on test plans in Azure DevOps.
+  description: Get answers to common questions about test plans, test suites, test cases, permissions, automated testing, test configurations, the Test & Feedback extension, and test data retention in Azure Test Plans.
   titleSuffix: Azure Test Plans
   ms.service: azure-devops-test-plans
   ms.custom:
     - UpdateFrequency3
     - sfi-image-nochange
-  ms.author: jeom
-  author: raviLiftr
+  ms.author: pliaros
+  author: chcomley
   ms.topic: FAQ
   monikerRange: '<= azure-devops'
-  ms.date: 02/16/2022
+  ms.date: 02/26/2026
   ms.update-cycle: 1095-days
 
-title: Access and permissions FAQs 
+title: Test Plans FAQs
 
 summary: | 
   [!INCLUDE [version-lt-eq-azure-devops](../includes/version-lt-eq-azure-devops.md)]
 
-  Find answers to frequently asked questions when using Azure Test Plans. For how-to guides, see the following articles:  
+  Get answers to common questions about creating and managing test plans, test cases, test suites, permissions and access levels, running manual and automated tests, test configurations, tracking charts, test data retention, and the Test & Feedback extension in Azure Test Plans.
+
+  For step-by-step guidance, see the following articles:  
   - [Create test plans and test suites](create-a-test-plan.md)
   - [Create manual test cases](create-test-cases.md)
+  - [Run manual tests](run-manual-tests.md)
+  - [Run automated tests from test plans](run-automated-tests-from-test-hub.md)
   - [Track test status](track-test-status.md)
-  - [Repeat a test with different data](repeat-test-with-different-data.md)
-  - [Set test retention policies](how-long-to-keep-test-results.md)
-  - [Install the Test & Feedback extension](perform-exploratory-tests.md)
-
-  <a name="testplans" /> 
-  <a name="query-based-suites"></a> 
+  - [Manage test access and permissions](manual-test-permissions.md)
 
 sections:
+
+  - name: Permissions and access
+    
+    questions: 
+
+      - question: What access level do I need to use Azure Test Plans?
+        answer: |
+            Azure Test Plans uses three access levels:
+
+            - **Stakeholder**: Can provide feedback through the Test & Feedback extension but can't access the Test Plans portal.
+            - **Basic**: Can execute test cases, mark test outcomes, and view charts and reports.
+            - **Basic + Test Plans**: Full capabilities, including creating and managing test plans, test suites, test cases, configurations, and parameters. Visual Studio Enterprise, Visual Studio Test Professional, and MSDN Platforms subscriptions include equivalent access.
+
+            For the complete permissions matrix, see [Manual test access and permissions](manual-test-permissions.md).
+
+      - question: Why can't I see the Define tab in Test Plans?
+        answer: |
+            The **Define** tab is only available to users with **Basic + Test Plans** access or equivalent. Users with **Basic** access can use the **Execute** and **Chart** tabs but can't author or manage test cases through the **Define** tab. To get access, ask your admin to assign you the **Basic + Test Plans** access level.
 
   - name: Test plans and test suites
     
     questions: 
 
+      - question: What's the difference between static, requirement-based, and query-based test suites?
+        answer: |
+            Azure Test Plans supports three types of test suites:
+
+            - **Static test suites**: Manually organize test cases into groups. Use static suites when you want to hand-pick which test cases belong together.
+            - **Requirement-based test suites**: Automatically link test cases to backlog items (user stories, product backlog items). Use requirement-based suites to track test coverage against requirements — this suite type is the **only** way to support end-to-end requirement traceability.
+            - **Query-based test suites**: Automatically populate test cases based on a work item query (for example, all test cases with Priority=1). The suite updates whenever the query results change.
+
+            For more information, see [Test objects and terms](test-objects-overview.md).
+
       - question: What are query-based test suites?
         answer: |
-            <a name="query-based-suites"></a> 
             Query-based test suites use a query to group together test cases that have a particular characteristic, for example, all tests that have Priority=1. The test suite automatically includes every test case returned by the query.
-
-            <a name="copyclonetce"></a>
 
       - question: Can I copy or clone test plans and test suites?
         answer: |
@@ -63,15 +87,19 @@ sections:
             The test case still exists in your project, but the test case is removed from the test suite.
             Also, it's no longer linked to the backlog item for that test suite.
 
-            <a name="ViewAssignedTests" />
-
       - question: Why do I see the wrong test suite and tests when I select View Tests from the notification email about tests that are assigned to me?
         answer: |
             This situation might happen if you were prompted to enter credentials for Azure DevOps when you clicked the link.
             Without signing out of Azure DevOps, select **View Tests** again to see the correct test suite and tests.
 
-            <a name="testcases" />
-            <a name="create-manual-test-cases" />
+      - question: How do I find and navigate test plans?
+        answer: |
+            In **Test Plans**, use the directory to find your test plans:
+
+            - **Mine**: Shows test plans for teams you belong to, plus your favorites. Plans are grouped by team.
+            - **All**: Shows all test plans in the project. You can add plans to favorites from this view.
+
+            Use the filter controls to search by name, team, state, or iteration. For more information, see [Navigate Test Plans](navigate-test-plans.md).
 
   - name: Test cases
 
@@ -89,8 +117,6 @@ sections:
         answer: |
             Select a test step. Press **Alt**+**P** to insert a new test step above the selected step.
 
-            <a name="add-multiple-test-cases"></a>
-
       - question: How can I find out if a test case was added to other test suites?
         answer: |
             ::: moniker range="<=azure-devops"
@@ -107,9 +133,54 @@ sections:
         answer: |
             See [Delete test artifacts](../boards/backlogs/delete-test-artifacts.md).
 
-            <a name="runtests"></a>
-            <a name="qanda"></a>
-            <a name="trackstatus"></a>
+      - question: How do I bulk import or export test cases?
+        answer: |
+            You can import and export test cases in bulk using CSV or XLSX files. Import lets you create new test cases or update existing ones (by including test case IDs). Export lets you download test case details, including custom columns.
+
+            For step-by-step instructions, see [Bulk import and export test cases](bulk-import-export-test-cases.md).
+
+            > [!NOTE]
+            > Bulk import/export is available in Azure DevOps Services only.
+
+      - question: What are shared steps and how do I use them?
+        answer: |
+            Shared steps let you define a reusable sequence of test steps (such as a common sign-in flow) that can be referenced by multiple test cases. When you update shared steps, the changes automatically apply to all test cases that use them.
+
+            To create shared steps, select one or more steps in a test case, then choose the **Create shared steps** icon. For more information, see [Share steps between test cases](share-steps-between-test-cases.md).
+
+  - name: Running tests
+
+    questions:
+
+      - question: What's the difference between a test case and a test point?
+        answer: |
+            You execute **test points**, not test cases directly. A test point is a unique combination of a test case, test suite, configuration, and tester. For example, if a test case is assigned two browser configurations (Chrome and Edge), that creates two test points — one for each configuration. The **Execute** tab shows the latest execution result for each test point.
+
+      - question: What test runner options are available?
+        answer: |
+            When you run tests from the **Execute** tab, you can choose from the following runners:
+
+            - **Web browser-based runner**: Runs manual tests in the browser. You can optionally select a specific build to associate results with.
+            - **Test Runner client (desktop)**: A desktop application for testing desktop applications.
+            - **Automated tests using a release stage**: Triggers automated test execution from a build and release pipeline.
+
+            For more information, see [Run manual tests](run-manual-tests.md).
+
+      - question: Is the desktop Test Runner client being retired?
+        answer: |
+            **Yes**. The Test Runner Client for Windows is scheduled for retirement. After the retirement date, it will no longer be available or supported. Transition to the **web-based test runner**, which provides the same functionality with improved performance and ongoing development.
+
+            For more information, see [Run manual tests](run-manual-tests.md).
+
+      - question: What diagnostic data can I collect during a test run?
+        answer: |
+            During a manual test run, you can collect the following diagnostic data:
+
+            - **Screen captures**: Take annotated screenshots during test execution.
+            - **Image action log**: Automatically captures your interactions with the application as a step-by-step visual log.
+            - **Screen recordings**: Record your screen during testing. Recordings auto-stop after 10 minutes.
+
+            For more information, see [Collect diagnostic data while testing](collect-diagnostic-data.md).
 
   - name: Test status tracking charts
 
@@ -130,7 +201,17 @@ sections:
 
             :::image type="content" source="media/track-test-status/test-chart-options-context-menu.png" alt-text="Screenshot of test tracking chart configure options menu.":::
 
-            <a name="repeatdifferent"></a>
+      - question: What are the limitations of the Progress Report?
+        answer: |
+            The Progress Report has the following limitations:
+
+            - Shows data for one or more test plans in a **single project** only. For cross-project reporting, use OData APIs.
+            - Data updates approximately every **15 minutes** and isn't real-time.
+            - Percentage values don't display decimal places.
+            - Outcomes like **Blocked** and **Not Applicable** aren't reflected in Passed% or Failed%, which can show a gap between Run% and the sum of Passed% and Failed%.
+            - Data from test plans **migrated from on-premises** Azure DevOps Server doesn't appear.
+
+            For more information, see [Progress Report](progress-report.md).
 
   - name: Test configurations
 
@@ -142,7 +223,44 @@ sections:
             With test case parameters, you run the different parameter values one after another, which makes it difficult to switch from one platform to another.
             For more information, see [Test different configurations](test-different-configurations.md).
 
-            <a name="manageresults"></a>
+      - question: What permissions do I need to manage test configurations?
+        answer: |
+            You need the project-level **Manage test configurations** permission set to **Allow**. By default, this permission is granted to members of the **Contributors** and **Project Administrator** groups.
+
+      - question: What happens when I change configurations on a child test suite?
+        answer: |
+            > [!WARNING]
+            > Changing configurations at a child suite breaks inheritance from its parent suites while still propagating to lower child suites, unless inheritance is already broken. Unassigning configurations hides the related test points. You can restore them by reassigning the configuration.
+
+  - name: Automated testing
+
+    questions:
+
+      - question: How do I associate automated tests with test cases?
+        answer: |
+            You can associate automated test methods with test case work items so that you can run them from Test Plans. In Visual Studio, open **Test Explorer**, select a test method, and choose **Associate to Test Case**. You can also associate tests through a build pipeline in Azure DevOps.
+
+            > [!NOTE]
+            > - A single test method can be associated with multiple test cases, but each test case can only be associated with one test method.
+            > - Parameters defined in test cases are for manual testing only; they aren't passed to associated automated tests.
+
+            For more information, see [Associate automated tests with test cases](associate-automated-test-with-test-case.md).
+
+      - question: What test frameworks are supported for automated test association?
+        answer: |
+            The following test frameworks are supported:
+
+            - **Visual Studio association**: MSTest v1/v2, NUnit, xUnit, Selenium, Coded UI
+            - **Azure DevOps association**: Java (Maven/Gradle with JUnit), JavaScript (Jest), Python (PyTest)
+            - **.NET Core**: Supported via Visual Studio 15.9 or later with a `.runsettings` file
+
+            Tests from GitHub repositories are also supported when run through Azure Pipelines with the VSTest or PublishTestResults tasks.
+
+      - question: Can I run automated tests from Test Plans using YAML pipelines?
+        answer: |
+            **Yes**. You can use both YAML and Classic pipelines to run automated tests from Test Plans. Configure the build pipeline in the test plan settings, and set up a release pipeline (Classic or YAML) for on-demand automated test execution.
+
+            For setup instructions, see [Run automated tests from test plans](run-automated-tests-from-test-hub.md).
 
   - name: Test results and retaining test data
 
@@ -150,33 +268,26 @@ sections:
 
       - question: What are the default retention limits?
         answer: |
-            For projects created before October 2015, Azure DevOps doesn't delete results from automated tests and manual tests unless you change the retention limit.  
-            For new projects created after October 2015, Azure DevOps deletes all test results after one year (365 days), unless you chose to indefinitely retain a build associated with those results.
+            By default, Azure DevOps deletes all test results after one year (365 days), unless you indefinitely retain a build associated with those results. Older projects may have no automatic deletion configured.
+
+            For more information, see [Set test retention policies](how-long-to-keep-test-results.md).
 
       - question: How do I control how long I keep my test data?
         answer: |
             See [Set test retention policies](how-long-to-keep-test-results.md).
 
-      - question: What is the default test retention policy for XAML builds?
-        answer: |
-            By default, a XAML build pipeline is set up to delete builds older than the 10 most recent builds.
-            But related test results aren't automatically deleted when those builds are deleted.  
-
-            For more information, see [Create or edit a build definition](/previous-versions/visualstudio/visual-studio-2013/ms181716(v=vs.120)).
-
-      - question: Why isn't test data deleted for XAML builds by default?
-        answer: |
-            By default, this behavior is turned off because 10 builds can happen quickly, especially with continuous integration builds.
-            Test results are often deleted before you can analyze them. 
-
-            <a name="keep-build-indefinitely"></a>
-
       - question: How do I keep a build indefinitely?
         answer: |
             See [Set retention policies for builds, releases, and tests](../pipelines/policies/retention.md).
 
-            <a name="tandfext" />
-            <a name="recording-playback" />
+      - question: What is the Test Run Hub?
+        answer: |
+            The Test Run Hub provides an enhanced interface for managing test execution in Azure Test Plans. You can view both manual and automated test runs, filter by timeline and run type, search by test run ID, customize columns, and drill into run details including pass rates, attachments, and analytics breakdowns by outcome, priority, configuration, and failure type.
+
+            Access the Test Run Hub from **Test Plans** > **Runs**. For more information, see [Test runs](test-runs.md).
+
+            > [!NOTE]
+            > The Test Run Hub is available in Azure DevOps Services only.
 
   - name: Test & Feedback extension 
 
@@ -186,13 +297,11 @@ sections:
         answer: |
             You can view the video recordings created by the Test & Feedback extension in [Google Chrome](https://www.google.com/chrome/) browser and in the [VLC Video Player](https://www.videolan.org/vlc/download-windows.html).
 
-      - question: Does the extension support Team Foundation Server?
+      - question: Does the extension support Azure DevOps Server?
         answer: |
-            The Test & Feedback extension supports Team Foundation Server 2015 and later versions.
+            The Test & Feedback extension supports Azure DevOps Server (formerly Team Foundation Server) 2015 and later versions.
             All users, including users granted **Stakeholder** access, can use the extension in Connected mode. Functionality associated with 
-            session insights and the request and provide feedback flow require Team Foundation Server 2017 or later versions.
-
-            <a name="addsimilar"></a>
+            session insights and the request and provide feedback flow require Azure DevOps Server 2017 or later versions.
 
       - question: Can I edit an existing bug instead of creating a new bug when using the Test & Feedback extension?
         answer: |
@@ -200,18 +309,22 @@ sections:
             and allows you to add your screenshots, notes, and videos to this existing bug.
             For more information, see [Add findings to existing bugs with exploratory testing](add-to-bugs-exploratory-testing.md).
 
-      - question: On Google Chrome, the mouse offset towards the left makes it difficult to use. Do you have a workaround?
+      - question: What browsers support the Test & Feedback extension?
         answer: |
-            Do the following steps as a workaround.  
-            1. Navigate to **chrome://flags/#enable-use-zoom-for-dsf**.
-            1. Search for 'Use Blink's zoom for device scale factor.'
-            1. Change it to **Disabled**.
+            The Test & Feedback extension is available for **Google Chrome** and **Microsoft Edge**. Feature availability varies by browser — for the full compatibility matrix, see [Install the Test & Feedback extension](perform-exploratory-tests.md).
+
+      - question: What's the difference between Connected mode and Standalone mode?
+        answer: |
+            - **Connected mode**: The extension connects to Azure DevOps or Azure DevOps Server. You can create bugs and tasks that are automatically linked to your exploratory testing session, view session insights, and use the request/provide feedback flow.
+            - **Standalone mode**: Use the extension without connecting to Azure DevOps. You can capture screenshots, notes, and screen recordings, then export them as an HTML report. Standalone mode is useful for ad-hoc testing.
+
+            For more information, see [Exploratory testing with the Test & Feedback extension in Connected mode](connected-mode-exploratory-testing.md) and [Standalone mode](standalone-mode-exploratory-testing.md).
 
 additionalContent: | 
   ## Related content
-  - [Run automated tests from test plans](run-automated-tests-from-test-hub.md)
+  - [Create a test plan](create-a-test-plan.md)
+  - [Create test cases](create-test-cases.md)
   - [Run manual tests](run-manual-tests.md)
+  - [Run automated tests from test plans](run-automated-tests-from-test-hub.md)
   - [Track test status](track-test-status.md)
-  - [Repeat a test with different data](repeat-test-with-different-data.md)
-  - [Set test retention policies](how-long-to-keep-test-results.md)
-  - [Install the Test & Feedback extension](perform-exploratory-tests.md)
+  - [Manage test access and permissions](manual-test-permissions.md)

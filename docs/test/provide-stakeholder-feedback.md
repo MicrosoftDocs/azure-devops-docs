@@ -6,7 +6,7 @@ ms.service: azure-devops-test-plans
 ms.custom: UpdateFrequency3
 ai-usage: ai-assisted
 ms.topic: how-to
-ms.author: jeom
+ms.author: pliaros
 author: rohit-batra
 ms.date: 09/30/2025
 ms.update-cycle: 1095-days

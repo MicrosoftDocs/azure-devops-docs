@@ -5,7 +5,7 @@ ms.assetid: DADC6608-1830-4FDA-9007-6539859F4866
 ms.service: azure-devops-test-plans
 ms.custom: UpdateFrequency3
 ms.topic: how-to
-ms.author: jeom
+ms.author: pliaros
 author: rohit-batra
 ms.date: 11/30/2021
 ms.update-cycle: 1095-days

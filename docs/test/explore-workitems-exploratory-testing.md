@@ -5,7 +5,7 @@ ms.assetid: AFD66FBF-5DEC-4457-8867-A47FFB8EF407
 ms.service: azure-devops-test-plans
 ms.custom: UpdateFrequency3
 ms.topic: how-to
-ms.author: jeom
+ms.author: pliaros
 author: rohit-batra 
 monikerRange: '<= azure-devops'
 ms.date: 02/13/2025
@@ -94,7 +94,7 @@ For more information, see [View your sessions and gain insights](insights-explor
 
 ## Related content
 
-* [Find answers to FAQs for manual testing](reference-qa.yml#tandfext)
+* [Find answers to FAQs for manual testing](reference-qa.yml#test---feedback-extension)
 * [Use the Test & Feedback extension in Connected mode](connected-mode-exploratory-testing.md)
 * [Add findings to existing bugs with exploratory testing](add-to-bugs-exploratory-testing.md)
 * [Gain insights across your exploratory testing sessions](insights-exploratory-testing.md)
