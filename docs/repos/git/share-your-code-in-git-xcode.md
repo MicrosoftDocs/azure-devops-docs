@@ -8,7 +8,7 @@ ms.topic: how-to
 ms.date: 02/24/2026
 monikerRange: '<= azure-devops'
 ms.subservice: azure-devops-repos-git
-ms.custom: sfi-image-nochange, pat-deprecation
+ms.custom: sfi-image-nochange, pat-reduction
 ai-usage: ai-assisted
 # customer-intent: As an iOS developer using Xcode, I want to securely share my project code with Azure Repos using modern authentication methods so I can collaborate with my team and manage version control for my iOS applications.
 ---

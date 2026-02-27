@@ -6,7 +6,7 @@ ai-usage: ai-assisted
 ms.service: azure-devops-repos
 ms.topic: how-to
 ms.date: 02/24/2026
-ms.custom: pat-deprecation
+ms.custom: pat-reduction
 monikerRange: '<= azure-devops'
 ms.subservice: azure-devops-repos-git
 # customer-intent: As a Go developer, I want to use the go install command to download packages from Azure Repos Git repositories so I can manage dependencies in my Go projects with proper authentication.

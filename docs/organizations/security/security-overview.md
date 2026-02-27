@@ -1,32 +1,30 @@
 ---
 title: Make your Azure DevOps secure
 titleSuffix: Azure DevOps 
-description: An overview of actions to ensure the security of your Azure DevOps environment, data, and users.
+description: Learn how to secure Azure DevOps with network protection, Zero Trust, access controls, service account alternatives, and automated security scanning.
 ms.topic: overview
 ms.subservice: azure-devops-security
-ms.custom: horz-security
+ms.custom: horz-security, pat-reduction
 ms.author: chcomley
 author: chcomley
 monikerRange: '<= azure-devops'
-ms.date: 02/17/2026
+ms.date: 02/26/2026
 --- 
 
 # Make your Azure DevOps secure
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
-When you're handling information and data, especially in a cloud-based solution like Azure DevOps Services, security should be your top priority. While Microsoft ensures the security of the underlying cloud infrastructure, it's your responsibility to configure security within Azure DevOps. This article provides an overview of necessary security-related configurations to protect your Azure DevOps environment against threats and vulnerabilities. 
-
-[!INCLUDE [ai-assistance-callout](../../includes/ai-assistance-callout.md)]
+When you're handling information and data, especially in a cloud-based solution like Azure DevOps Services, security should be your top priority. While Microsoft ensures the security of the underlying cloud infrastructure, you're responsible for configuring security within Azure DevOps. This article provides an overview of necessary security-related configurations to protect your Azure DevOps environment against threats and vulnerabilities. 
 
 ## Protect your network and data
 
-Securing your network is crucial when you're working with Azure DevOps to protect your data and resources from unauthorized access and potential threats. Implement network security and data protection measures to help ensure that only trusted sources can access your Azure DevOps environment. To secure your network when you're working with Azure DevOps, do the following actions:
+Securing your network is crucial when you're working with Azure DevOps. Protect your data and resources from unauthorized access and potential threats. Implement network security and data protection measures to help ensure that only trusted sources can access your Azure DevOps environment. To secure your network when you're working with Azure DevOps, take the following actions:
 
-- **[Set up IP allowlisting](allow-list-ip-url.md):** Restrict access to specific IP addresses to allow traffic only from trusted sources, reducing the attack surface. If your organization is secured with a firewall or proxy server, add IPs and URLs to the allowlist.
-- **[Use data encryption](data-protection.md):** Protect your data by using encryption, backup, and recovery strategies. Always encrypt data in transit and at rest. Secure communication channels using protocols like HTTPS. Learn more about [Azure Encryption](/azure/security/fundamentals/encryption-overview).
+- **[Set up IP allowlisting](allow-list-ip-url.md):** Restrict access to specific IP addresses to allow traffic only from trusted sources, reducing the attack surface. If your organization is secured by using a firewall or proxy server, add IPs and URLs to the allowlist.
+- **[Use data encryption](data-protection.md):** Protect your data by using encryption, backup, and recovery strategies. Always encrypt data in transit and at rest. Secure communication channels by using protocols like HTTPS. Learn more about [Azure Encryption](/azure/security/fundamentals/encryption-overview).
 - **[Validate certificates](/azure/security/fundamentals/azure-ca-details?tabs=root-and-subordinate-cas-list):** Ensure certificates are valid and issued by trusted authorities when establishing connections.
-- **[Implement Web Application Firewalls (WAFs)](/azure/web-application-firewall/):** Filter, monitor, and block malicious web-based traffic with WAFs for an extra layer of protection against common attacks.
+- **[Implement Web Application Firewalls (WAFs)](/azure/web-application-firewall/):** Filter, monitor, and block malicious web-based traffic by using WAFs for an extra layer of protection against common attacks.
 - **[Network security groups (NSGs) overview](/azure/virtual-network/network-security-groups-overview):** Use NSGs to control inbound and outbound traffic to Azure resources, ensuring only authorized traffic is allowed.
 - **[Use Azure Firewall](/azure/firewall/overview):** Deploy Azure Firewall to provide a centralized network security policy across multiple Azure subscriptions and virtual networks.
 - **[Monitor network traffic with Azure Network Watcher](/azure/network-watcher/network-watcher-monitoring-overview):** Use Azure Network Watcher to monitor and diagnose network issues, ensuring the security and performance of your network.
@@ -42,7 +40,7 @@ Adopt [Zero Trust](/azure/security/fundamentals/zero-trust) principles across yo
 - Safeguard your [development environment](/security/zero-trust/develop/secure-dev-environment-zero-trust)
 - Integrate Zero Trust seamlessly into your [developer workflows](/security/zero-trust/develop/embed-zero-trust-dev-workflow)
 
-Zero Trust helps to protect against lateral movement within the network, ensuring that even if there's a compromised part of the network, the threat is contained and can't spread. For more information, see the [Zero Trust Assessment guide](https://microsoft.github.io/zerotrustassessment/guide).
+Zero Trust helps protect against lateral movement within the network, ensuring that even if there's a compromised part of the network, the threat is contained and can't spread. For more information, see the [Zero Trust Assessment guide](https://microsoft.github.io/zerotrustassessment/guide).
 
 ## Comply with industry standards
 
@@ -58,7 +56,7 @@ Ensure your Azure DevOps environment complies with industry standards and regula
 
 ## Control and restrict access
 
-Review through all the security policies available to administrators to restrict and control who has access to the organization. Maintain control of the organization by preventing unnecessary project creation.
+Review all the security policies available to administrators to restrict and control who has access to the organization. Maintain control of the organization by preventing unnecessary project creation.
 
 - **Disable *"Allow public projects"*:** Disable the option to [create public projects](../projects/make-project-public.md). Switch project visibility from public to private as needed. Users who never signed in have read-only access to public projects, while signed-in users can be granted access to private projects and make permitted changes.
   - Automate switching project visibility with the [Change project visibility script](security-scripts.md#change-project-visibility-public--private-using-microsoft-entra-id), which requires a Microsoft Entra token. 
@@ -84,7 +82,7 @@ For more information, see [B2B guests in the Microsoft Entra ID](/azure/active-d
 [Removing inactive or unauthorized users from your organization](../accounts/delete-organization-users.md) helps maintain a secure environment and reduces the risk of potential security breaches.
 
 - **Directly remove inactive Microsoft account users (MSAs):** Directly remove inactive users from your organization if they're using MSAs. You can't create queries for work items assigned to removed MSA accounts.
-- **Disable or delete Microsoft Entra user accounts:** If connected to Microsoft Entra ID, disable or delete the Microsoft Entra user account while keeping the Azure DevOps user account active. You may continue querying work item history using their Azure DevOps user ID.
+- **Disable or delete Microsoft Entra user accounts:** If connected to Microsoft Entra ID, disable or delete the Microsoft Entra user account while keeping the Azure DevOps user account active. You can continue querying work item history by using their Azure DevOps user ID.
 - **[Revoke user PATs for administrators](../accounts/admin-revoke-user-pats.md):** Ensure secure management of these critical authentication tokens by regularly reviewing and revoking any existing user PATs.
 - **Revoke special permissions granted to individual users:** Audit and revoke any special permissions granted to individual users to ensure alignment with the principle of least privilege.
 - **Reassign work from removed users:** Before removing users, reassign their work items to current team members to distribute the load effectively.
@@ -101,7 +99,7 @@ Learn more about permissions:
 
 To ensure secure and efficient management of permissions, properly scope [permissions](permissions.md) within your Azure DevOps environment. Scoping permissions involves defining and assigning the appropriate level of access to users and groups based on their roles and responsibilities. This practice helps to minimize the risk of unauthorized access and potential data breaches by ensuring that only authorized individuals have access to sensitive information and critical actions. 
 
-To scope permissions effectively, do the following actions:
+To scope permissions effectively, complete the following actions:
 
 - **Disable inheritance:** Avoid [permissions inheritance](about-permissions.md#permission-inheritance) and prevent unintended access. Inheritance can inadvertently grant permissions to users who shouldn't have them, due to its allow-by-default nature. Carefully manage and explicitly set permissions to ensure that only the intended users have access.
 - **Segment environments:** Use separate Azure accounts for different environments, such as Development, Testing, and Production, to enhance security and prevent conflicts. This approach minimizes the risk of resource conflicts and data contamination between environments and allows for better management and isolation of resources. For more information, see [Azure Landing Zone](/azure/cloud-adoption-framework/ready/landing-zone/).
@@ -114,16 +112,16 @@ To scope permissions effectively, do the following actions:
   - Keep groups as small as possible, restricting access.
   - Implement [just-in-time access](../accounts/manage-azure-active-directory-groups.md#configure-just-in-time-access-for-admin-groups) with a Microsoft Entra [Privileged Identity Management (PIM) group](/azure/active-directory/privileged-identity-management/concept-pim-for-groups). Grant elevated permissions only when needed, reducing the risk associated with permanent access.
 
-## Ditch service accounts
+## Replace service accounts with modern alternatives
 
-Historically, service accounts were used with [personal access tokens (PATs)](../accounts/use-personal-access-tokens-to-authenticate.md) to build tools that run automated processes and services. As a result, they often have elevated permissions. Before choosing to continue building with a service account, explore if it's still the right authentication approach for you.
+Service accounts with [personal access tokens (PATs)](../accounts/use-personal-access-tokens-to-authenticate.md) have long been used for automated processes and services, but they often accumulate elevated permissions and create security risks. Modern alternatives like Microsoft Entra tokens, service principals, and managed identities provide stronger security with less management overhead. Before continuing with a service account, evaluate whether a more secure authentication approach better fits your needs.
 
-- **Replace your PATs with Microsoft Entra tokens:** [Microsoft Entra tokens are short-lived (one-hour) tokens](../../integrate/get-started/authentication/entra.md) that can be used in place of most PATs. PATs are popular due to their ease of use, but they're also a popular vector of attack due to the ease in which they're leaked.
+- **Replace your PATs with Microsoft Entra tokens:** [Microsoft Entra tokens are short-lived (one-hour) tokens](../../integrate/get-started/authentication/entra.md) that you can use in place of most PATs. PATs are popular due to their ease of use, but they're also a popular vector of attack due to the ease in which they're leaked.
 - Read up on all the [authentication mechanisms available](../../integrate/get-started/authentication/authentication-guidance.md) before choosing one.
 - **Use service principals instead:** [Service principals](../../integrate/get-started/authentication/service-principal-managed-identity.md) represent a Microsoft Entra application's identity and have their own permissions that define what the application can do in a given tenant. Service principals are the recommended choice to manage the permissions needed by the app. Replace any service accounts' PATs with Microsoft Entra tokens acquired for the service principal.
-  - Take it one step further by authenticating using a managed identity if you're building on top of Azure resources. Managed identities take care of all credential management for you.
+  - Take it one step further by authenticating by using a managed identity if you're building on top of Azure resources. Managed identities take care of all credential management for you.
 - **Use service connections:** Service connections allow you to use service principals inside a pipeline. Use service connections whenever possible to securely connect to services without passing secret variables directly to builds. Restrict connections to specific use cases. for more information, see the [Scope service connections](#scope-service-connections) section in this article.
-  - Authenticate with Azure resources using [workload identity federation](../../pipelines/library/connect-to-azure.md#create-an-azure-resource-manager-service-connection-that-uses-workload-identity-federation) with either an app registration or managed identity instead of using an app registration with a secret.
+  - Authenticate with Azure resources by using [workload identity federation](../../pipelines/library/connect-to-azure.md#create-an-azure-resource-manager-service-connection-that-uses-workload-identity-federation) with either an app registration or managed identity instead of using an app registration with a secret.
 
 While a service account remains in use:
 - **Create single-purpose service accounts:** Each service should have its dedicated account to minimize risk. Avoid using regular user accounts as [service accounts](permissions.md#service-accounts).
@@ -135,19 +133,19 @@ While a service account remains in use:
 
 ## Scope service connections
 
-To ensure secure and efficient access to Azure resources, properly scope service connections. Service connections allow Azure DevOps to connect to external services and resources, and by scoping these connections, you can limit access to only the necessary resources and reduce the risk of unauthorized access.
+To ensure secure and efficient access to Azure resources, properly scope service connections. Service connections allow Azure DevOps to connect to external services and resources. By scoping these connections, you can limit access to only the necessary resources and reduce the risk of unauthorized access.
 
 - **Limit access:** Limit access by scoping your [Azure Resource Manager](/azure/azure-resource-manager/management/overview) service connections to specific resources and groups. Don't grant broad contributor rights across the entire Azure subscription.
-- **Use Azure Resource Manager:** Authenticate with Azure resources using workload identity federation with either an app registration or managed identity instead of using an app registration with a secret. For more information, see [Create an Azure Resource Manager service connection that uses workload identity federation](../../pipelines/library/connect-to-azure.md#create-an-azure-resource-manager-service-connection-that-uses-workload-identity-federation).
+- **Use Azure Resource Manager:** Authenticate with Azure resources by using workload identity federation with either an app registration or managed identity instead of using an app registration with a secret. For more information, see [Create an Azure Resource Manager service connection that uses workload identity federation](../../pipelines/library/connect-to-azure.md#create-an-azure-resource-manager-service-connection-that-uses-workload-identity-federation).
 - **Scope resource groups:** Ensure resource groups contain only the Virtual Machines (VMs) or resources needed for the build process.
 - **Avoid classic service connections:** Opt for modern Azure Resource Manager service connections instead of classic ones, which lack scoping options.
-- **Use purpose-specific team service accounts:** Authenticate service connections using purpose-specific team service accounts to maintain security and control.
+- **Use purpose-specific team service accounts:** Authenticate service connections by using purpose-specific team service accounts to maintain security and control.
 
 For more information, see [Common service connection types](../../pipelines/library/service-endpoints.md).
 
 ## Review auditing events
  
-Auditing can be used to track user actions, permissions changes, and usage patterns within your organization. Use these tools to identify and address potential security incidents promptly.
+Auditing can track user actions, permissions changes, and usage patterns within your organization. Use these tools to identify and address potential security incidents promptly.
 
 - **[Enable auditing](../audit/azure-devops-auditing.md#enable-and-disable-auditing):** Track and view events related to user actions, permissions, changes, and security incidents.
 - **[Review audit logs and streams regularly](../audit/azure-devops-auditing.md#review-audit-log):** Regularly review audit logs to monitor user activities and detect any suspicious behavior. Look for unexpected usage patterns, especially by administrators and other users. This action helps identify potential security breaches and takes corrective actions. Learn more about the [auditing events we track](../audit/auditing-events.md).
@@ -186,26 +184,26 @@ To ensure the security and integrity of your services in Azure DevOps, implement
 
 ## Automate security scanning
 
-Monitor for code and secret vulnerabilities with the following automated security tools:
+Monitor for code and secret vulnerabilities by using the following automated security tools:
 
-- **Use code scanning and analysis:** Utilize tools like [Microsoft Defender](https://apps.microsoft.com/detail/9p6pmztm93lr?hl=en-US&gl=US) to scan your code for vulnerabilities, secrets, and misconfigurations.
+- **Use code scanning and analysis:** Use tools like [Microsoft Defender](https://apps.microsoft.com/detail/9p6pmztm93lr?hl=en-US&gl=US) to scan your code for vulnerabilities, secrets, and misconfigurations.
 - **Use GitHub Advanced Security for Azure DevOps:** Identify credentials and vulnerabilities within your code. For more information, see [Configure GitHub Advanced Security for Azure DevOps](../../repos/security/configure-github-advanced-security-features.md).
-- **Use native secret scanning for GitHub:** Identify secrets within code using GitHub's native scanning features. For more information, see [About secret scanning](https://docs.github.com/en/code-security/secret-scanning/introduction/about-secret-scanning).
+- **Use native secret scanning for GitHub:** Identify secrets within code by using GitHub's native scanning features. For more information, see [About secret scanning](https://docs.github.com/en/code-security/secret-scanning/introduction/about-secret-scanning).
 
 For more information, see the [GitHub advanced security overview](../../repos/security/github-advanced-security-security-overview.md).
 
-## Automate security administration with PowerShell scripts
+## Automate security administration by using PowerShell scripts
 
 Streamline administrative security tasks by using PowerShell scripts to automate user management, auditing, and policy enforcement across your Azure DevOps organization.
 
-- **[Use scripts to update global security settings](security-scripts.md):** Access PowerShell scripts designed to automate security administration tasks including user auditing, service connection management, and project visibility control.
+- **[Use scripts to update global security settings](security-scripts.md):** Access PowerShell scripts designed to automate security administration tasks, including user auditing, service connection management, and project visibility control.
 
 ### Available administrative automation scripts
 
-- **User access auditing:** Audit user permissions and identify security risks
-- **Service connection security audit:** Scan for connection security issues  
-- **Project visibility management:** Automate public/private project settings
-- **User and group management:** Streamline user lifecycle processes
+- **User access auditing:** Audit user permissions and identify security risks.
+- **Service connection security audit:** Scan for connection security issues.  
+- **Project visibility management:** Automate public/private project settings.
+- **User and group management:** Streamline user lifecycle processes.
 
 For detailed implementation guidance, see [Use scripts to update global security settings](security-scripts.md).
 

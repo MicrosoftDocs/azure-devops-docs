@@ -10,7 +10,7 @@ monikerRange: "<=azure-devops"
 author: chcomley
 ai-usage: ai-assisted
 ms.date: 02/24/2026
-ms.custom: sfi-image-nochange, pat-deprecation
+ms.custom: sfi-image-nochange, pat-reduction
 ---
 
 # Publish a Power BI Desktop file to Power BI 

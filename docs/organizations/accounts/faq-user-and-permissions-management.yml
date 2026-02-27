@@ -6,13 +6,14 @@ metadata:
     - has-azure-ad-ps-ref
     - azure-ad-ref-level-one-done
     - sfi-image-nochange
+    - pat-reduction
   description: Learn the answers to frequently asked questions (FAQs), like the permissions that are required to manage users and user access, manage Visual Studio subscriptions, and more.
   ms.subservice: azure-devops-organizations
   ms.assetid: 7107fb6c-c132-45c2-a0d1-d44e9270e907
   ms.topic: faq
   ms.author: chcomley
   author: chcomley
-  ms.date: 02/09/2026
+  ms.date: 02/26/2026
   monikerRange: '<= azure-devops'
 title: User and permissions management FAQs
 summary: |
@@ -342,7 +343,14 @@ sections:
       - question: |
           Q: Can I still use PATs for authentication?
         answer: |
-          A: You can still use personal access tokens (PATs) for authentication, but we recommend using the more secure method, Microsoft Entra tokens, whenever possible. For more information, see [Authenticate to Azure DevOps with Microsoft Entra](../../integrate/get-started/authentication/entra.md).
+          A: Yes, [personal access tokens (PATs)](use-personal-access-tokens-to-authenticate.md) still work for authentication, but Microsoft Entra tokens are the recommended alternative whenever possible. Microsoft Entra tokens are short-lived (one hour), automatically managed, and reduce the risk of credential leaks that long-lived PATs can introduce.
+          
+          If you're using PATs for automated processes or service accounts, consider these more secure alternatives:
+          - **Microsoft Entra tokens** - Use in place of most PATs for user-based scenarios. For more information, see [Authenticate to Azure DevOps with Microsoft Entra](../../integrate/get-started/authentication/entra.md).
+          - **Service principals** - Use for applications and services that need their own identity and permissions. For more information, see [Use service principals and managed identities](../../integrate/get-started/authentication/service-principal-managed-identity.md).
+          - **Managed identities** - Use for workloads running on Azure resources to eliminate credential management entirely.
+          
+          For a full comparison of authentication methods, see [Authentication guidance](../../integrate/get-started/authentication/authentication-guidance.md).
 
       - question: |
           Q: If I deny access to one authentication method in one organization, does that affect all the organizations that I own?

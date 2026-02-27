@@ -8,7 +8,7 @@ ms.topic: how-to
 monikerRange: '<= azure-devops'
 ms.date: 02/24/2026
 ms.subservice: azure-devops-repos-git
-ms.custom: sfi-image-nochange, pat-deprecation
+ms.custom: sfi-image-nochange, pat-reduction
 ai-usage: ai-assisted
 # customer-intent: As a developer, I want to import an existing Git repository from GitHub, GitLab, or other providers into Azure DevOps so I can consolidate my source code and use Azure DevOps features for my project.
 ---
