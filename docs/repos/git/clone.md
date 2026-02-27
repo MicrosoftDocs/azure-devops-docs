@@ -8,7 +8,7 @@ ms.topic: tutorial
 ms.date: 02/24/2026
 monikerRange: '<= azure-devops'
 ms.subservice: azure-devops-repos-git
-ms.custom: pat-deprecation
+ms.custom: pat-reduction
 ai-usage: ai-assisted
 ---
 

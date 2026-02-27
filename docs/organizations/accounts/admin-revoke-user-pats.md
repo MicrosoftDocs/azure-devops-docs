@@ -9,7 +9,7 @@ author: chcomley
 ms.date: 02/24/2026
 ai-usage: ai-assisted
 monikerRange: '<= azure-devops'
-ms.custom: pat-deprecation
+ms.custom: pat-reduction
 ---
 
 # Revoke personal access tokens for organization users (for admins)

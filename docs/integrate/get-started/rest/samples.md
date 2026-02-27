@@ -5,7 +5,7 @@ ms.assetid: 9E17A266-051F-403F-A285-7F21D9CC52F0
 ai-usage: ai-assisted
 ms.subservice: azure-devops-ecosystem
 ms.topic: sample
-ms.custom: devx-track-dotnet, pat-deprecation
+ms.custom: devx-track-dotnet, pat-reduction
 monikerRange: '<= azure-devops'
 ms.author: chcomley
 author: chcomley

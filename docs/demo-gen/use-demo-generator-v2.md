@@ -4,7 +4,7 @@ description: Use the Azure DevOps Services Demo Generator V2 to create and popul
 ms.subservice: azure-devops-new-user
 ms.author: sdanie
 ms.topic: quickstart
-ms.custom: pat-deprecation
+ms.custom: pat-reduction
 monikerRange: 'azure-devops'
 ms.date: 10/31/2025    
 ---

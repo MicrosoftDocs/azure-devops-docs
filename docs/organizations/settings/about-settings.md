@@ -8,7 +8,7 @@ ms.author: chcomley
 author: chcomley
 monikerRange: '<= azure-devops'
 ms.date: 02/17/2026
-ms.custom: sfi-image-nochange, pat-deprecation
+ms.custom: sfi-image-nochange, pat-reduction
 ---
 
 # About settings for users, teams, projects, or organizations

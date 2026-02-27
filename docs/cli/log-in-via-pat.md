@@ -9,8 +9,8 @@ ms.author: chcomley
 author: chcomley
 monikerRange: 'azure-devops'
 ms.date: 02/24/2026
+ms.custom: pat-reduction
 ai-usage: ai-assisted
-ms.custom: pat-deprecation
 ---
 
 # Sign in with a personal access token
@@ -30,9 +30,9 @@ This article explains how to sign in using an Azure DevOps personal access token
 | **Tokens** | A [personal access token (PAT)](../organizations/accounts/use-personal-access-tokens-to-authenticate.md#create-a-pat) with the appropriate scopes for the commands you want to run. |
 | **Tools** | [Azure CLI](/cli/azure/install-azure-cli) with the [Azure DevOps CLI extension](index.md). |
 
-To use a PAT with the Azure DevOps CLI, choose one of these methods:
+To use a PAT with the Azure DevOps CLI, choose one of the following methods:
 
-- Run `az devops login` and [enter the PAT when prompted](#sign-in-with-a-personal-access-token).
+- Run `az devops login` and [enter the PAT when prompted](#sign-in-with-az-devops-login-and-enter-your-pat).
 - Pipe the [PAT to stdin](#pipe-a-pat-to-az-devops-login) and use it with `az devops login`.  
   > [!NOTE]  
   > This method works only in a non-interactive shell.

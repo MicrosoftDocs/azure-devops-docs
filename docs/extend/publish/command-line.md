@@ -8,7 +8,7 @@ monikerRange: '<= azure-devops'
 ms.author: chcomley
 author: chcomley
 ai-usage: ai-assisted
-ms.custom: pat-deprecation
+ms.custom: pat-reduction
 ms.date: 02/24/2026
 ---
 

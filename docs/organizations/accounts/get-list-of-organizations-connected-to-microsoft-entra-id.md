@@ -10,7 +10,7 @@ author: chcomley
 ai-usage: ai-assisted
 ms.date: 02/24/2026
 monikerRange: 'azure-devops'
-ms.custom: pat-deprecation
+ms.custom: pat-reduction
 ---
 
 # Get list of organizations backed by Microsoft Entra ID

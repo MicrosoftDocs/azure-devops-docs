@@ -10,7 +10,6 @@ ms.topic: overview
 monikerRange: '= azure-devops'
 ms.date: 02/24/2026
 ai-usage: ai-assisted
-ms.custom: pat-deprecation
 ---
 
 # Auditing events list

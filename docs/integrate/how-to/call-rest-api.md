@@ -4,7 +4,7 @@ description: Learn the fundamental concepts and patterns for Azure DevOps REST A
 ms.assetid: 14ac2881-2aaf-4291-8dfe-3f7e3f591861
 ms.subservice: azure-devops-ecosystem
 ms.topic: quickstart
-ms.custom: pat-deprecation
+ms.custom: pat-reduction
 monikerRange: '<= azure-devops'
 ms.author: chcomley
 author: chcomley
@@ -65,8 +65,7 @@ Azure DevOps REST APIs support several authentication methods:
 - **OAuth 2.0** - For non-Microsoft applications
 - **Service principals** - For automated scenarios
 
-> [!IMPORTANT]
-> Microsoft Entra ID authentication is the recommended approach for production applications. For implementation examples and complete authentication guidance, see [REST API samples](../get-started/rest/samples.md) and [Authentication guidance](../get-started/authentication/authentication-guidance.md).
+[!INCLUDE [use-microsoft-entra-reduce-pats](../../includes/use-microsoft-entra-reduce-pats.md)]
 
 ## Response format
 
