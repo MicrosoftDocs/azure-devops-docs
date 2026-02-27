@@ -48,8 +48,6 @@ The following authentication options are supported:
 
 You can connect up to 250 GitHub repositories to an Azure Boards project. 
 
- 
-
 1. Open the web portal for your Azure DevOps Server.   
 
 2. Select the :::image type="icon" source="../../media/icons/project-icon.png" border="false"::: Azure DevOps logo to open  **Projects**, and then choose the Azure Boards project you want to configure to connect to your GitHub Enterprise repositories.
@@ -72,7 +70,7 @@ You can connect up to 250 GitHub repositories to an Azure Boards project.
 
 ## Connect Azure DevOps Server with a GitHub Personal Access Token  
 
-1.	To create a GitHub PAT, see [Create a GitHub PAT](https://help.github.com/en/articles/creating-a-personal-access-token-for-the-command-line).
+1.	To create a GitHub PAT, see [Create a GitHub PAT](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens).
 
 	> [!TIP]  
 	> When you create your GitHub PAT, make sure that you include these scopes: `repo, admin:repo_hook, read:user, user:email`. 

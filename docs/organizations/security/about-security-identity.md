@@ -177,7 +177,7 @@ Use the following methods to automate workflows, integrate with REST APIs, or bu
   These methods issue Microsoft Entra tokens on behalf of the application itself.
 - Use [Microsoft Entra ID](../../integrate/get-started/authentication/entra.md) for secure, cloud-based authentication and user management.
 - Use [personal access tokens (PATs)](../accounts/use-personal-access-tokens-to-authenticate.md) for ad-hoc requests or early prototyping.
-  Avoid PATs for long-term app development, as they're more susceptible to leaks and misuse.
+  [!INCLUDE [use-microsoft-entra-reduce-pats](../../includes/use-microsoft-entra-reduce-pats.md)]
 
 > [!TIP]
 > Always [store credentials securely](credential-storage.md) and follow best practices for managing authentication methods.

@@ -26,6 +26,8 @@ Service principals and managed identities provide secure, scalable authenticatio
 - **Automatic rotation**: Managed identities handle credential rotation automatically.
 - **No stored secrets**: The need to store long-lived credentials in code or configuration is eliminated.
 
+[!INCLUDE [use-microsoft-entra-reduce-pats](../../../includes/use-microsoft-entra-reduce-pats.md)]
+
 #### Operational excellence
 
 - **Centralized management**: Control access through Microsoft Entra ID policies and Azure DevOps permissions.

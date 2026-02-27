@@ -7,9 +7,9 @@ ms.subservice: azure-devops-security
 ms.author: chcomley
 author: chcomley
 ms.reviewer: jominana
-ms.date: 06/20/2025
+ms.date: 02/26/2026
 monikerRange: 'azure-devops'
-ms.custom: freshness-fy22, sfi-ropc-nochange
+ms.custom: freshness-fy22, sfi-ropc-nochange, pat-deprecation
 ---
 # Data protection overview
 
@@ -158,6 +158,8 @@ Microsoft is committed to ensuring that your projects remain safe and secure, wi
 * Raw PATs generate in-memory on the server side. 32 bytes randomly generate through the RNGCryptoServiceProvider and get shared with the caller as a base-32-encoded string. This value is NOT stored.
 * PAT hash generates in-memory on the server side as an *HMACSHA256Hash* of the raw PAT using a 64-byte symmetric signing key stored in our key vault. 
 * Hash gets stored in our database.
+
+[!INCLUDE [use-microsoft-entra-reduce-pats](../../includes/use-microsoft-entra-reduce-pats.md)]
 
 #### Secure shell (SSH) keys
 
