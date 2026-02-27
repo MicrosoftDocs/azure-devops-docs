@@ -68,24 +68,21 @@ If you’re using a different technology, see the corresponding project setup gu
 
 ::: moniker range="azure-devops"
 
-|      Type          | 
-|--------------------|
-| **NuGet**: [Project setup](../nuget/nuget-exe.md) |
-| **Npm**: [Project setup](../npm/npmrc.md)|
-| **Maven**: [Project setup](../maven/project-setup-maven.md)|
-| **Python**: [Project setup](../python/project-setup-python.md)|
-| **Universal Packages**: [Project setup](../universal-packages/project-setup-universal-packages.md) |
+- **NuGet**: [Project setup](../nuget/nuget-exe.md) 
+- **Npm**: [Project setup](../npm/npmrc.md)
+- **Maven**: [Project setup](../maven/project-setup-maven.md)
+- **Python**: [Project setup](../python/project-setup-python.md)
+- **Universal Packages**: [Project setup](../universal-packages/project-setup-universal-packages.md)
 
 ::: moniker-end
 
 ::: moniker range="azure-devops-2022"
 
-|      Type          | 
-|--------------------|
-| **NuGet**: [Project setup](../nuget/nuget-exe.md) |
-| **Npm**: [Project setup](../npm/npmrc.md)|
-| **Maven**: [Project setup](../maven/project-setup-maven.md)|
-| **Python**: [Project setup](../python/project-setup-python.md)|
+
+- **NuGet**: [Project setup](../nuget/nuget-exe.md) 
+- **Npm**: [Project setup](../npm/npmrc.md)
+- **Maven**: [Project setup](../maven/project-setup-maven.md)
+- **Python**: [Project setup](../python/project-setup-python.md)
 
 ::: moniker-end
 
