@@ -9,7 +9,7 @@ ms.author: laurajiang
 author: laurajjiang
 monikerRange: 'azure-devops'
 ms.date: 02/24/2026
-ms.custom: cross-service, sfi-image-nochange, pat-deprecation
+ms.custom: cross-service, sfi-image-nochange, pat-reduction
 ai-usage: ai-assisted
 # customer-intent: As a project administrator, I want to configure permissions and authentication for GitHub Advanced Security so I can control access to security alerts and enable secure API access for my development team.
 ---

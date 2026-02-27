@@ -4,7 +4,7 @@ titleSuffix: Azure DevOps
 description: Learn how to add and manage service principals and managed identities in your Azure DevOps organizations.
 ms.subservice: azure-devops-security
 ms.assetid:
-ms.custom: pat-deprecation
+ms.custom: pat-reduction
 ms.topic: how-to
 ms.author: wonga
 author: wonga

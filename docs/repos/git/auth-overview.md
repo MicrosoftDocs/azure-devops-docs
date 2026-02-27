@@ -8,7 +8,7 @@ ms.topic: overview
 ms.date: 02/24/2026
 monikerRange: '<= azure-devops'
 ms.subservice: azure-devops-repos-git
-ms.custom: sfi-ropc-nochange, pat-deprecation
+ms.custom: sfi-ropc-nochange, pat-reduction
 ai-usage: ai-assisted
 # customer-intent: As a developer, I want to understand the different authentication methods available for Azure Repos so I can choose the most secure option (Microsoft Entra OAuth tokens) for accessing my Git repositories.
 ---

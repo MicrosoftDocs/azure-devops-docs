@@ -9,7 +9,7 @@ author: chcomley
 ai-usage: ai-assisted
 ms.date: 02/24/2026
 monikerRange: 'azure-devops'
-ms.custom: pat-deprecation
+ms.custom: pat-reduction
 ---
 
 # Manage personal access tokens using policies (for administrators)

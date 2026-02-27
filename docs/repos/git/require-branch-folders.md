@@ -6,7 +6,7 @@ ms.assetid: dd0fa717-0150-4fd3-8677-29d80b979e65
 ms.service: azure-devops-repos
 ms.topic: how-to
 ms.date: 02/24/2026
-ms.custom: pat-deprecation
+ms.custom: pat-reduction
 ai-usage: ai-assisted
 monikerRange: '<= azure-devops'
 ms.subservice: azure-devops-repos-git

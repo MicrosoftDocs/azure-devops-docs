@@ -10,7 +10,7 @@ ms.topic: how-to
 monikerRange: "<=azure-devops"
 ms.date: 02/24/2026
 ai-usage: ai-assisted
-ms.custom: sfi-image-nochange, pat-deprecation
+ms.custom: sfi-image-nochange, pat-reduction
 ---
 
 # Enter client credentials in Power BI or Excel 

@@ -8,7 +8,7 @@ ms.topic: how-to
 monikerRange: '<= azure-devops'
 ms.subservice: azure-devops-repos-git
 ms.date: 02/24/2026
-ms.custom: sfi-image-nochange, pat-deprecation
+ms.custom: sfi-image-nochange, pat-reduction
 ai-usage: ai-assisted
 ---
 

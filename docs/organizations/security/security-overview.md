@@ -4,7 +4,7 @@ titleSuffix: Azure DevOps
 description: Learn how to secure Azure DevOps with network protection, Zero Trust, access controls, service account alternatives, and automated security scanning.
 ms.topic: overview
 ms.subservice: azure-devops-security
-ms.custom: horz-security, pat-deprecation
+ms.custom: horz-security, pat-reduction
 ms.author: chcomley
 author: chcomley
 monikerRange: '<= azure-devops'

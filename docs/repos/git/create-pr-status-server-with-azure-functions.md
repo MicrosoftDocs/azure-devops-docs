@@ -8,7 +8,7 @@ ms.topic: tutorial
 ms.date: 07/02/2025
 monikerRange: '<= azure-devops'
 ms.subservice: azure-devops-repos-git
-ms.custom: sfi-image-nochange, pat-deprecation
+ms.custom: sfi-image-nochange, pat-reduction
 ---
 
 # Use Azure Functions to create custom branch policies

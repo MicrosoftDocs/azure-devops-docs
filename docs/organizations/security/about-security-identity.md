@@ -9,7 +9,7 @@ ai-usage: ai-assisted
 ms.topic: overview
 monikerRange: '<= azure-devops'
 ms.date: 02/24/2026
-ms.custom: pat-deprecation
+ms.custom: pat-reduction
 ---
 
 # About authentication, authorization, and security policies

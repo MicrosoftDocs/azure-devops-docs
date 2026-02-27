@@ -9,6 +9,7 @@ ms.author: chcomley
 author: chcomley
 monikerRange: 'azure-devops'
 ms.date: 02/24/2026
+ms.custom: pat-reduction
 ai-usage: ai-assisted
 ---
 

@@ -9,7 +9,7 @@ monikerRange: '<= azure-devops'
 ms.author: chcomley
 author: chcomley
 ms.date: 02/24/2026
-ms.custom: quickstart, devx-track-dotnet, pat-deprecation
+ms.custom: quickstart, devx-track-dotnet, pat-reduction
 ---
 
 # Create a bug in Azure DevOps Services using .NET client libraries
