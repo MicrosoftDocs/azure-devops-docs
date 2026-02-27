@@ -28,7 +28,7 @@ Unlike cloud-based solutions that require sending your data externally, the Azur
 
 ## Prerequisites
 
-**System requirements:** [Node.js 18.0+](https://nodejs.org/) and an active [Azure DevOps organization](../organizations/accounts/create-organization.md)
+**System requirements:** [Node.js 20.0+](https://nodejs.org/) and an active [Azure DevOps organization](../organizations/accounts/create-organization.md)
 
 ## Install Azure DevOps MCP Server
 
