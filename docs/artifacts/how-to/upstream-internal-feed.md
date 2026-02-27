@@ -36,13 +36,13 @@ If you don’t already have a feed, follow these steps to create one and add com
 
 ## Connect to your feed
 
-Use the following steps to configure your project and authenticate with your feed. This example uses a Rust project. For other technologies, see the project setup links in the table below.
+Use the following steps to configure your project and authenticate with your feed. This example uses a Rust project. For other technologies, see the project setup links in the following section.
 
 1. Sign in to Azure DevOps, and go to your project.
 
 1. Select **Artifacts**, choose your feed from the dropdown menu, and then select **Connect to feed**.
 
-1. From the left navigation pane, selec **Cargo**.
+1. From the left navigation pane, select **Cargo**.
 
 1. In the **Project setup** section, copy the first snippet and add it to the *cargo/config.toml* file in your source repository. Your *config.toml* file should resemble the following:
 
@@ -51,7 +51,7 @@ Use the following steps to configure your project and authenticate with your fee
     FEED_NAME = { index = "sparse+https://pkgs.dev.azure.com/ORGANIZATION_NAME/PROJECT_NAME/_packaging/FEED_NAME/Cargo/index/" }
     ```
 
-1. Copy the second snippet from the Project setup section and add it to cargo/config.toml to replace the crates.io source with your feed. Your file should resemble the following:
+1. Copy the second snippet from the **Project setup** section and add it to cargo/config.toml to replace the crates.io source with your feed. Your file should resemble the following:
     
     ```
     [source.crates-io]
@@ -62,9 +62,13 @@ Use the following steps to configure your project and authenticate with your fee
 
 1. [Log in to the registry](../cargo/project-setup-cargo.md#log-in-to-the-registry)
 
+#### Project setup for other package types
+
+If you’re using a different technology, see the corresponding project setup guidance below to connect to your feed:
+
 ::: moniker range="azure-devops"
 
-| Package Type       | 
+|      Type          | 
 |--------------------|
 | **NuGet**: [Project setup](../nuget/nuget-exe.md) |
 | **Npm**: [Project setup](../npm/npmrc.md)|
@@ -76,12 +80,14 @@ Use the following steps to configure your project and authenticate with your fee
 
 ::: moniker range="azure-devops-2022"
 
-| Package Type       | 
+|      Type          | 
 |--------------------|
 | **NuGet**: [Project setup](../nuget/nuget-exe.md) |
 | **Npm**: [Project setup](../npm/npmrc.md)|
 | **Maven**: [Project setup](../maven/project-setup-maven.md)|
 | **Python**: [Project setup](../python/project-setup-python.md)|
+
+::: moniker-end
 
 ## Set up the upstream feed
 
