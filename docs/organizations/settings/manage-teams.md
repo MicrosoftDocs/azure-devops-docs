@@ -56,7 +56,7 @@ All members of a team can favorite team artifacts and define work item templates
 - [Set personal or team favorites](../../project/navigation/set-favorites.md)
 - [Use work item templates](../../boards/backlogs/work-item-template.md)
 
-If team members don't have access to all the features they want, make sure they have [the permissions needed for those features](../security/set-permissions-access-work-tracking.md).  
+If team members don't have access to all the features they want, make sure they have [permissions needed for those features](../security/set-permissions-access-work-tracking.md).  
 
 ## Add an administrator
 
@@ -72,12 +72,10 @@ After project administrators add the project's area and iteration paths by using
 
 :::image type="content" source="media/manage-iterations-areas.png" alt-text="Screenshot of Iterations and areas highlighted.":::
 
-Settings include making the following associations for each team:  
+Settings include making the following associations for each team.
 
-- **Select team area paths**   
-	You can select the default area paths associated with the team. These settings affect many Agile tools available to the team.	
-- **Select team iteration paths or sprints** 
-	You can select the default iteration paths associated with the team. These settings affect many Agile tools available to the team. 
+- **Select team area paths**: You can select the default area paths associated with the team. These settings affect many Agile tools available to the team.	
+- **Select team iteration paths or sprints**: You can select the default iteration paths associated with the team. These settings affect many Agile tools available to the team. 
  
 For more information, see [Define area paths and assign to a team](set-area-paths.md) and 
 [Define iteration paths and configure team iterations](set-iteration-paths-sprints.md). 
@@ -104,7 +102,7 @@ Most of these team settings can be easily configured from the common configurati
 
    :::image type="content" source="media/general-board-settings-cloud.png" alt-text="Screenshot of gear icon selection for general board settings.":::
 
-1. Choose a tab under **Cards, Board**, **Charts**, or **General** to configure the cards or boards, the cumulative flow chart, or other team settings. When you're done configuring the settings, select **Save and close**.   
+1. Choose a tab under **General**, **Cards**, **Board**, or **Charts** to configure the cards or boards, the cumulative flow chart, or other team settings. When you're done configuring the settings, select **Save and close**.   
 
 	:::image type="content" source="media/team-settings-page.png" alt-text="Screenshot of team settings page.":::
 

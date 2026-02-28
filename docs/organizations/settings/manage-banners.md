@@ -154,7 +154,7 @@ az devops admin banner add --message
 
 #### Example 
 
-For example, the following command adds an information banner, which expires on September 4, 2026. When an ID isn't specified, a unique ID is automatically assigned. 
+The following command adds an information banner, which expires on September 4, 2026. When an ID isn't specified, a unique ID is automatically assigned. 
 
 > [!div class="tabbedCodeSnippets"]
 ```azurecli
@@ -237,7 +237,7 @@ az devops admin banner remove --id
 
 #### Example 
 
-For example, the following command removes the banner with `id=d3d3d3d3-eeee-ffff-aaaa-b4b4b4b4b4b4`. No response is returned. 
+The following command removes the banner with `id=d3d3d3d3-eeee-ffff-aaaa-b4b4b4b4b4b4`. No response is returned. 
 
 > [!div class="tabbedCodeSnippets"]
 ```azurecli
