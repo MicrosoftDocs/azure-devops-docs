@@ -881,10 +881,10 @@ If you have the [Azure Boards MCP Server](../../mcp-server/mcp-server-overview.m
 
 | Task | Example prompt |
 |------|----------------|
-| Find reactivated bugs | ```copilot-prompt\nList all bugs that moved from Resolved back to Active in the last 30 days\n``` |
-| Track reassignments | ```copilot-prompt\nFind work items reassigned to <me> in the last 7 days\n``` |
-| Monitor state changes | ```copilot-prompt\nShow user stories whose state changed from Active to Closed during the current sprint\n``` |
-| Check workflow history | ```copilot-prompt\nList all work items where the Assigned To field changed in the last 2 weeks\n``` |
+| Find reactivated bugs | ```copilot-prompt List all bugs that moved from Resolved back to Active in the last 30 days``` |
+| Track reassignments | ```copilot-prompt Find work items reassigned to <me> in the last 7 days``` |
+| Monitor state changes | ```copilot-prompt Show user stories whose state changed from Active to Closed during the current sprint``` |
+| Check workflow history | ```copilot-prompt List all work items where the Assigned To field changed in the last 2 weeks``` |
 
 > [!NOTE]
 > Agent mode and the MCP Server use natural language, so you can adjust these prompts or ask follow-up questions to refine the results.

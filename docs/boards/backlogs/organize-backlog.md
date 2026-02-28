@@ -215,10 +215,10 @@ If you have the [Azure Boards MCP Server](../../mcp-server/mcp-server-overview.m
 
 | Task | Example prompt |
 |------|----------------|
-| Set parent items | ```copilot-prompt\nSet feature 'User Authentication' as the parent of user stories #101, #102, and #103\n``` |
-| Find unparented items | ```copilot-prompt\nList all user stories that don't have a parent feature assigned\n``` |
-| Build a hierarchy | ```copilot-prompt\nCreate a feature called 'Payment Processing' under epic #50 and add three child user stories for checkout, refund, and receipt\n``` |
-| View item hierarchy | ```copilot-prompt\nShow me the hierarchy of all work items under epic 'Q2 Release'\n``` |
+| Set parent items | ```copilot-prompt Set feature 'User Authentication' as the parent of user stories #101, #102, and #103``` |
+| Find unparented items | ```copilot-prompt List all user stories that don't have a parent feature assigned``` |
+| Build a hierarchy | ```copilot-prompt Create a feature called 'Payment Processing' under epic #50 and add three child user stories for checkout, refund, and receipt``` |
+| View item hierarchy | ```copilot-prompt Show me the hierarchy of all work items under epic 'Q2 Release'``` |
 
 > [!NOTE]
 > Agent mode and the MCP Server use natural language, so you can adjust these prompts or ask follow-up questions to refine the results.

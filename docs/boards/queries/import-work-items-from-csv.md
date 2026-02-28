@@ -303,10 +303,10 @@ If you have the [Azure Boards MCP Server](../../mcp-server/mcp-server-overview.m
 
 | Task | Example prompt |
 |------|----------------|
-| Create items in bulk | ```copilot-prompt\nCreate 5 user stories for the <Contoso> project with titles for a new login feature\n``` |
-| Bulk update fields | ```copilot-prompt\nSet the iteration path to Sprint 5 for all active tasks assigned to <Jamal>\n``` |
-| Find items to export | ```copilot-prompt\nList all work items modified in the last 7 days in the <Contoso> area path\n``` |
-| Update imported items | ```copilot-prompt\nUpdate the state to Closed for bugs 1234, 1235, and 1236\n``` |
+| Create items in bulk | ```copilot-prompt Create 5 user stories for the <Contoso> project with titles for a new login feature``` |
+| Bulk update fields | ```copilot-prompt Set the iteration path to Sprint 5 for all active tasks assigned to <Jamal>``` |
+| Find items to export | ```copilot-prompt List all work items modified in the last 7 days in the <Contoso> area path``` |
+| Update imported items | ```copilot-prompt Update the state to Closed for bugs 1234, 1235, and 1236``` |
 
 > [!NOTE]
 > Agent mode and the MCP Server use natural language, so you can adjust these prompts or ask follow-up questions to refine the results. For large-scale data migration or offline editing, use the CSV import/export feature described in this article.

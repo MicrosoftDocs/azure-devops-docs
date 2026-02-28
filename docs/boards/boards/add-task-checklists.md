@@ -120,10 +120,10 @@ If you have the [Azure Boards MCP Server](../../mcp-server/mcp-server-overview.m
 
 | Task | Example prompt |
 |------|----------------|
-| Add a child task | ```copilot-prompt\nAdd a task called 'Write unit tests' as a child of user story 1234\n``` |
-| Create multiple subtasks | ```copilot-prompt\nCreate three tasks under bug 5678: reproduce the issue, apply the fix, and verify the fix\n``` |
-| View child items | ```copilot-prompt\nShow all child tasks for user story 1234 and their current states\n``` |
-| Find incomplete tasks | ```copilot-prompt\nList all tasks in the current sprint that are still in the 'To Do' state\n``` |
+| Add a child task | ```copilot-prompt Add a task called 'Write unit tests' as a child of user story 1234``` |
+| Create multiple subtasks | ```copilot-prompt Create three tasks under bug 5678: reproduce the issue, apply the fix, and verify the fix``` |
+| View child items | ```copilot-prompt Show all child tasks for user story 1234 and their current states``` |
+| Find incomplete tasks | ```copilot-prompt List all tasks in the current sprint that are still in the 'To Do' state``` |
 
 > [!NOTE]
 > Agent mode and the MCP Server use natural language, so you can adjust these prompts or ask follow-up questions to refine the results.

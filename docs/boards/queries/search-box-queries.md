@@ -262,10 +262,10 @@ If you have the [Azure Boards MCP Server](../../mcp-server/mcp-server-overview.m
 
 | Task | Example prompt |
 |------|----------------|
-| Find by keyword | ```copilot-prompt\nFind all work items that mention "authentication" in the title or description\n``` |
-| Search by assignee | ```copilot-prompt\nShow all active work items assigned to <Jamal>\n``` |
-| Search by type and state | ```copilot-prompt\nList all new bugs created this week in my project\n``` |
-| Search across projects | ```copilot-prompt\nFind user stories with "API" in the title across all my projects\n``` |
+| Find by keyword | ```copilot-prompt Find all work items that mention "authentication" in the title or description``` |
+| Search by assignee | ```copilot-prompt Show all active work items assigned to <Jamal>``` |
+| Search by type and state | ```copilot-prompt List all new bugs created this week in my project``` |
+| Search across projects | ```copilot-prompt Find user stories with "API" in the title across all my projects``` |
 
 > [!NOTE]
 > Agent mode and the MCP Server use natural language, so you can adjust these prompts or ask follow-up questions to refine the results.

@@ -410,10 +410,10 @@ If you have the [Azure Boards MCP Server](../../mcp-server/mcp-server-overview.m
 
 | Task | Example prompt |
 |------|----------------|
-| Find high-effort items | ```copilot-prompt\nFind all user stories with story points greater than 8 that are still active\n``` |
-| Check estimate accuracy | ```copilot-prompt\nList tasks where completed work exceeds the original estimate\n``` |
-| Track remaining work | ```copilot-prompt\nShow active sprint tasks with remaining work greater than zero\n``` |
-| Find unestimated items | ```copilot-prompt\nFind user stories where the effort field is empty or not set\n``` |
+| Find high-effort items | ```copilot-prompt Find all user stories with story points greater than 8 that are still active``` |
+| Check estimate accuracy | ```copilot-prompt List tasks where completed work exceeds the original estimate``` |
+| Track remaining work | ```copilot-prompt Show active sprint tasks with remaining work greater than zero``` |
+| Find unestimated items | ```copilot-prompt Find user stories where the effort field is empty or not set``` |
 
 > [!NOTE]
 > Agent mode and the MCP Server use natural language, so you can adjust these prompts or ask follow-up questions to refine the results.

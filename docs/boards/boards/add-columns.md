@@ -226,10 +226,10 @@ If you have the [Azure Boards MCP Server](../../mcp-server/mcp-server-overview.m
 
 | Task | Example prompt |
 |------|----------------|
-| View items in a column | ```copilot-prompt\nShow me all work items currently in the 'In Progress' column on my board\n``` |
-| Find items by state | ```copilot-prompt\nList all user stories in the 'Active' state for the <Contoso> project\n``` |
-| Move items between states | ```copilot-prompt\nUpdate user story 1234 to the 'Resolved' state\n``` |
-| Analyze column distribution | ```copilot-prompt\nHow many work items are in each workflow state for my team's backlog?\n``` |
+| View items in a column | ```copilot-prompt Show me all work items currently in the 'In Progress' column on my board``` |
+| Find items by state | ```copilot-prompt List all user stories in the 'Active' state for the <Contoso> project``` |
+| Move items between states | ```copilot-prompt Update user story 1234 to the 'Resolved' state``` |
+| Analyze column distribution | ```copilot-prompt How many work items are in each workflow state for my team's backlog?``` |
 
 > [!NOTE]
 > Agent mode and the MCP Server use natural language, so you can adjust these prompts or ask follow-up questions to refine the results.

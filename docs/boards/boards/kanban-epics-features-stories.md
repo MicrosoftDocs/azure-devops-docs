@@ -67,10 +67,10 @@ If you have the [Azure Boards MCP Server](../../mcp-server/mcp-server-overview.m
 
 | Task | Example prompt |
 |------|----------------|
-| Create a feature | ```copilot-prompt\nCreate a new feature called 'User Authentication' in the <Contoso> project\n``` |
-| Add child stories | ```copilot-prompt\nAdd three user stories under the 'Payment Processing' feature: checkout flow, payment validation, and receipt generation\n``` |
-| View epics by state | ```copilot-prompt\nShow me all epics that are currently in the 'In Progress' state\n``` |
-| Check feature progress | ```copilot-prompt\nList all child user stories under feature 2345 and their current states\n``` |
+| Create a feature | ```copilot-prompt Create a new feature called 'User Authentication' in the <Contoso> project``` |
+| Add child stories | ```copilot-prompt Add three user stories under the 'Payment Processing' feature: checkout flow, payment validation, and receipt generation``` |
+| View epics by state | ```copilot-prompt Show me all epics that are currently in the 'In Progress' state``` |
+| Check feature progress | ```copilot-prompt List all child user stories under feature 2345 and their current states``` |
 
 > [!NOTE]
 > Agent mode and the MCP Server use natural language, so you can adjust these prompts or ask follow-up questions to refine the results.

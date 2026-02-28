@@ -260,10 +260,10 @@ If you have the [Azure Boards MCP Server](../../mcp-server/mcp-server-overview.m
 
 | Task | Example prompt |
 |------|----------------|
-| Compare creator and assignee | ```copilot-prompt\nFind work items where Created By is different from Assigned To\n``` |
-| Check estimate accuracy | ```copilot-prompt\nList tasks where Completed Work exceeds Original Estimate\n``` |
-| Find early completions | ```copilot-prompt\nShow work items that were closed before their target date\n``` |
-| Compare change history | ```copilot-prompt\nFind bugs where the person who last changed the item differs from the creator\n``` |
+| Compare creator and assignee | ```copilot-prompt Find work items where Created By is different from Assigned To``` |
+| Check estimate accuracy | ```copilot-prompt List tasks where Completed Work exceeds Original Estimate``` |
+| Find early completions | ```copilot-prompt Show work items that were closed before their target date``` |
+| Compare change history | ```copilot-prompt Find bugs where the person who last changed the item differs from the creator``` |
 
 > [!NOTE]
 > Agent mode and the MCP Server use natural language, so you can adjust these prompts or ask follow-up questions to refine the results.

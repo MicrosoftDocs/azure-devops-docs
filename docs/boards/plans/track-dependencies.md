@@ -102,10 +102,10 @@ If you have the [Azure Boards MCP Server](../../mcp-server/mcp-server-overview.m
 
 | Task | Example prompt |
 |------|----------------|
-| Add a dependency link | ```copilot-prompt\nAdd a predecessor link from user story #456 to user story #123\n``` |
-| Find blocking items | ```copilot-prompt\nShow all work items that have successor links and are still in progress\n``` |
-| View dependencies for a team | ```copilot-prompt\nList all predecessor-successor links for work items assigned to the API team\n``` |
-| Check for conflicts | ```copilot-prompt\nFind work items with predecessor links where the predecessor is scheduled after the successor\n``` |
+| Add a dependency link | ```copilot-prompt Add a predecessor link from user story #456 to user story #123``` |
+| Find blocking items | ```copilot-prompt Show all work items that have successor links and are still in progress``` |
+| View dependencies for a team | ```copilot-prompt List all predecessor-successor links for work items assigned to the API team``` |
+| Check for conflicts | ```copilot-prompt Find work items with predecessor links where the predecessor is scheduled after the successor``` |
 
 > [!NOTE]
 > Agent mode and the MCP Server use natural language, so you can adjust these prompts or ask follow-up questions to refine the results.

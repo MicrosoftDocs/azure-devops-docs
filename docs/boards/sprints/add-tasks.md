@@ -215,10 +215,10 @@ If you have the [Azure Boards MCP Server](../../mcp-server/mcp-server-overview.m
 
 | Task | Example prompt |
 |------|----------------|
-| Add tasks to a user story | ```copilot-prompt\nAdd three tasks (Design, Implement, Test) to user story #1234 and set remaining work to 4 hours each\n``` |
-| Create tasks in bulk | ```copilot-prompt\nFor each active user story in Sprint 12, add a Code Review task assigned to <me> with 2 hours remaining work\n``` |
-| List sprint tasks | ```copilot-prompt\nList all tasks in Sprint 12 for <Contoso Team> grouped by parent work item\n``` |
-| Update task estimates | ```copilot-prompt\nSet remaining work to 0 for all completed tasks in Sprint 11 in project <Contoso>\n``` |
+| Add tasks to a user story | ```copilot-prompt Add three tasks (Design, Implement, Test) to user story #1234 and set remaining work to 4 hours each``` |
+| Create tasks in bulk | ```copilot-prompt For each active user story in Sprint 12, add a Code Review task assigned to <me> with 2 hours remaining work``` |
+| List sprint tasks | ```copilot-prompt List all tasks in Sprint 12 for <Contoso Team> grouped by parent work item``` |
+| Update task estimates | ```copilot-prompt Set remaining work to 0 for all completed tasks in Sprint 11 in project <Contoso>``` |
 
 > [!NOTE]
 > Agent mode and the MCP Server use natural language, so you can adjust these prompts or ask follow-up questions to refine the results.

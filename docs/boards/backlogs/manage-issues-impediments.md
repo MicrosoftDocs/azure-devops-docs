@@ -53,9 +53,7 @@ In this article you'll learn:
 
 ## Prerequisites
 
-[!INCLUDE [temp](../includes/prerequisites-work-items.md)]   
-
-[!INCLUDE [temp](../includes/image-differences-with-wits.md)]   
+[!INCLUDE [temp](../includes/prerequisites-work-items.md)] 
 
 ## Define a task
 
@@ -125,10 +123,10 @@ If you have the [Azure Boards MCP Server](../../mcp-server/mcp-server-overview.m
 
 | Task | Example prompt |
 |------|----------------|
-| Create an impediment | ```copilot-prompt\nCreate a new impediment titled 'Test environment unavailable' with priority 1 and assign it to <me>\n``` |
-| List active impediments | ```copilot-prompt\nList all active impediments in the current sprint for my team\n``` |
-| Create an issue | ```copilot-prompt\nCreate an issue to track the decision about the API versioning strategy and assign it to <Jamal>\n``` |
-| Resolve an impediment | ```copilot-prompt\nUpdate impediment 456 to the Resolved state and add a comment that the environment issue is fixed\n``` |
+| Create an impediment | ```copilot-prompt Create a new impediment titled 'Test environment unavailable' with priority 1 and assign it to <me>``` |
+| List active impediments | ```copilot-prompt List all active impediments in the current sprint for my team``` |
+| Create an issue | ```copilot-prompt Create an issue to track the decision about the API versioning strategy and assign it to <Jamal>``` |
+| Resolve an impediment | ```copilot-prompt Update impediment 456 to the Resolved state and add a comment that the environment issue is fixed``` |
 
 > [!NOTE]
 > Agent mode and the MCP Server use natural language, so you can adjust these prompts or ask follow-up questions to refine the results.

@@ -156,10 +156,10 @@ If you have the [Azure Boards MCP Server](../../mcp-server/mcp-server-overview.m
 
 | Task | Example prompt |
 |------|----------------|
-| Find tagged items | ```copilot-prompt\nFind all active work items tagged with "security" in my project\n``` |
-| Add tags in bulk | ```copilot-prompt\nAdd the tag "tech-debt" to all active bugs in the current sprint\n``` |
-| Find untagged items | ```copilot-prompt\nList work items with no tags assigned in the <Contoso> area path\n``` |
-| Query by multiple tags | ```copilot-prompt\nFind user stories tagged with both "performance" and "P1"\n``` |
+| Find tagged items | ```copilot-prompt Find all active work items tagged with "security" in my project``` |
+| Add tags in bulk | ```copilot-prompt Add the tag "tech-debt" to all active bugs in the current sprint``` |
+| Find untagged items | ```copilot-prompt List work items with no tags assigned in the <Contoso> area path``` |
+| Query by multiple tags | ```copilot-prompt Find user stories tagged with both "performance" and "P1"``` |
 
 > [!NOTE]
 > Agent mode and the MCP Server use natural language, so you can adjust these prompts or ask follow-up questions to refine the results.

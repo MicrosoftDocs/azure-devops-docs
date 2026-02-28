@@ -251,10 +251,10 @@ If you have the [Azure Boards MCP Server](../../mcp-server/mcp-server-overview.m
 
 | Task | Example prompt |
 |------|----------------|
-| Find my work items | ```copilot-prompt\nShow all active work items assigned to <me> in my project\n``` |
-| Query by state | ```copilot-prompt\nList all bugs in the Resolved state for the current sprint\n``` |
-| Search across criteria | ```copilot-prompt\nFind user stories created in the last 7 days that are still in the New state\n``` |
-| Get work item details | ```copilot-prompt\nShow me the details for work item 1234 including all comments\n``` |
+| Find my work items | ```copilot-prompt Show all active work items assigned to <me> in my project``` |
+| Query by state | ```copilot-prompt List all bugs in the Resolved state for the current sprint``` |
+| Search across criteria | ```copilot-prompt Find user stories created in the last 7 days that are still in the New state``` |
+| Get work item details | ```copilot-prompt Show me the details for work item 1234 including all comments``` |
 
 > [!NOTE]
 > Agent mode and the MCP Server use natural language, so you can adjust these prompts or ask follow-up questions to refine the results.

@@ -148,10 +148,10 @@ If you have the [Azure Boards MCP Server](../../mcp-server/mcp-server-overview.m
 
 | Task | Example prompt |
 |------|----------------|
-| Find misassigned items | ```copilot-prompt\nList all bugs in area path <Contoso>\\OldTeam that should be moved to the new team\n``` |
-| Check items before moving | ```copilot-prompt\nShow me all work items assigned to <Jamal> in the <Contoso> project with their work item types and states\n``` |
-| Update fields after move | ```copilot-prompt\nUpdate the area path of work items #101, #102, and #103 to <Contoso>\\NewTeam\n``` |
-| Find items by wrong type | ```copilot-prompt\nList all tasks in the backlog that have story points assigned, which might need to be user stories instead\n``` |
+| Find misassigned items | ```copilot-prompt List all bugs in area path <Contoso>\\OldTeam that should be moved to the new team``` |
+| Check items before moving | ```copilot-prompt Show me all work items assigned to <Jamal> in the <Contoso> project with their work item types and states``` |
+| Update fields after move | ```copilot-prompt Update the area path of work items #101, #102, and #103 to <Contoso>\\NewTeam``` |
+| Find items by wrong type | ```copilot-prompt List all tasks in the backlog that have story points assigned, which might need to be user stories instead``` |
 
 > [!NOTE]
 > Agent mode and the MCP Server use natural language, so you can adjust these prompts or ask follow-up questions to refine the results. The MCP Server can update fields like area path and iteration path but can't change work item types or move items between projects.

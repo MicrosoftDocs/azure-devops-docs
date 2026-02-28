@@ -196,10 +196,10 @@ If you have the [Azure Boards MCP Server](../../mcp-server/mcp-server-overview.m
 
 | Task | Example prompt |
 |------|----------------|
-| Link a work item to a PR | ```copilot-prompt\nAdd a pull request link from user story #234 to pull request #567\n``` |
-| Find linked work items | ```copilot-prompt\nShow me all work items that have pull request links in the current sprint\n``` |
-| Check development status | ```copilot-prompt\nList all user stories in the 'Active' state that don't have any development links\n``` |
-| View links for a work item | ```copilot-prompt\nShow me all links for work item #890, including commits and pull requests\n``` |
+| Link a work item to a PR | ```copilot-prompt Add a pull request link from user story #234 to pull request #567``` |
+| Find linked work items | ```copilot-prompt Show me all work items that have pull request links in the current sprint``` |
+| Check development status | ```copilot-prompt List all user stories in the 'Active' state that don't have any development links``` |
+| View links for a work item | ```copilot-prompt Show me all links for work item #890, including commits and pull requests``` |
 
 > [!NOTE]
 > Agent mode and the MCP Server use natural language, so you can adjust these prompts or ask follow-up questions to refine the results.

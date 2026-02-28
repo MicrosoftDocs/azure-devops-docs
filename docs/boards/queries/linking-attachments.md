@@ -313,10 +313,10 @@ If you have the [Azure Boards MCP Server](../../mcp-server/mcp-server-overview.m
 
 | Task | Example prompt |
 |------|----------------|
-| Find unlinked items | ```copilot-prompt\nFind active user stories with no child task links\n``` |
-| Query for attachments | ```copilot-prompt\nList bugs that have attached files\n``` |
-| Check development links | ```copilot-prompt\nShow work items with no linked commits or pull requests\n``` |
-| Find heavily linked items | ```copilot-prompt\nFind work items with more than 3 related links\n``` |
+| Find unlinked items | ```copilot-prompt Find active user stories with no child task links``` |
+| Query for attachments | ```copilot-prompt List bugs that have attached files``` |
+| Check development links | ```copilot-prompt Show work items with no linked commits or pull requests``` |
+| Find heavily linked items | ```copilot-prompt Find work items with more than 3 related links``` |
 
 > [!NOTE]
 > Agent mode and the MCP Server use natural language, so you can adjust these prompts or ask follow-up questions to refine the results.

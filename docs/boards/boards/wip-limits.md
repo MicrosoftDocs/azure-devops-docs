@@ -146,10 +146,10 @@ If you have the [Azure Boards MCP Server](../../mcp-server/mcp-server-overview.m
 
 | Task | Example prompt |
 |------|----------------|
-| Count items per column | ```copilot-prompt\nHow many work items are in each workflow state for my team's backlog?\n``` |
-| Find overloaded columns | ```copilot-prompt\nShow me all active work items in the 'In Progress' state for the <Contoso> project\n``` |
-| Identify stale items | ```copilot-prompt\nFind work items in the 'Active' state that haven't been updated in the last 14 days\n``` |
-| Check team capacity | ```copilot-prompt\nList all work items assigned to <Jamal> that are currently in progress\n``` |
+| Count items per column | ```copilot-prompt How many work items are in each workflow state for my team's backlog?``` |
+| Find overloaded columns | ```copilot-prompt Show me all active work items in the 'In Progress' state for the <Contoso> project``` |
+| Identify stale items | ```copilot-prompt Find work items in the 'Active' state that haven't been updated in the last 14 days``` |
+| Check team capacity | ```copilot-prompt List all work items assigned to <Jamal> that are currently in progress``` |
 
 > [!NOTE]
 > Agent mode and the MCP Server use natural language, so you can adjust these prompts or ask follow-up questions to refine the results.

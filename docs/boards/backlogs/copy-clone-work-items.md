@@ -145,10 +145,10 @@ If you have the [Azure Boards MCP Server](../../mcp-server/mcp-server-overview.m
 
 | Task | Example prompt |
 |------|----------------|
-| Create a similar work item | ```copilot-prompt\nCreate a new user story with the same title and description as work item #234 but assign it to Sprint 5\n``` |
-| Create multiple similar items | ```copilot-prompt\nCreate five tasks similar to task #100 with titles 'Setup environment for Service A' through 'Service E'\n``` |
-| Get work item details | ```copilot-prompt\nGet the details of work item #567 so I can create a similar one for another team\n``` |
-| Duplicate with changes | ```copilot-prompt\nCreate a new bug with the same repro steps as bug #890 but in the area path <Contoso>\\Mobile App\n``` |
+| Create a similar work item | ```copilot-prompt Create a new user story with the same title and description as work item #234 but assign it to Sprint 5``` |
+| Create multiple similar items | ```copilot-prompt Create five tasks similar to task #100 with titles 'Setup environment for Service A' through 'Service E'``` |
+| Get work item details | ```copilot-prompt Get the details of work item #567 so I can create a similar one for another team``` |
+| Duplicate with changes | ```copilot-prompt Create a new bug with the same repro steps as bug #890 but in the area path <Contoso>\\Mobile App``` |
 
 > [!NOTE]
 > Agent mode and the MCP Server use natural language, so you can adjust these prompts or ask follow-up questions to refine the results.

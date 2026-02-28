@@ -217,10 +217,10 @@ If you have the [Azure Boards MCP Server](../../mcp-server/mcp-server-overview.m
 
 | Task | Example prompt |
 |------|----------------|
-| Find items by tag | ```copilot-prompt\nShow me all work items on my board that have the 'blocked' tag\n``` |
-| View items with specific fields | ```copilot-prompt\nList all active user stories with their priority, assigned to, and story points\n``` |
-| Update fields on work items | ```copilot-prompt\nSet the priority of bug 4567 to 1 and add the tag 'regression'\n``` |
-| Find items by style criteria | ```copilot-prompt\nShow me all work items assigned to <me> that are past their target date\n``` |
+| Find items by tag | ```copilot-prompt Show me all work items on my board that have the 'blocked' tag``` |
+| View items with specific fields | ```copilot-prompt List all active user stories with their priority, assigned to, and story points``` |
+| Update fields on work items | ```copilot-prompt Set the priority of bug 4567 to 1 and add the tag 'regression'``` |
+| Find items by style criteria | ```copilot-prompt Show me all work items assigned to <me> that are past their target date``` |
 
 > [!NOTE]
 > Agent mode and the MCP Server use natural language, so you can adjust these prompts or ask follow-up questions to refine the results.

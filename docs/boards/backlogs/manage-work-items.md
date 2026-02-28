@@ -301,10 +301,10 @@ If you have the [Azure Boards MCP Server](../../mcp-server/mcp-server-overview.m
 
 | Task | Example prompt |
 |------|----------------|
-| Create a work item | ```copilot-prompt\nCreate a user story titled 'Add search functionality' with priority 2 and assign it to <Jamal>\n``` |
-| Update work item fields | ```copilot-prompt\nUpdate the state of bug #456 to Resolved and set the reason to 'Fixed'\n``` |
-| Query work items | ```copilot-prompt\nShow me all active work items assigned to <me> in the current sprint\n``` |
-| Add links and comments | ```copilot-prompt\nAdd a comment to work item #789 with the status update 'API integration complete, pending review'\n``` |
+| Create a work item | ```copilot-prompt Create a user story titled 'Add search functionality' with priority 2 and assign it to <Jamal>``` |
+| Update work item fields | ```copilot-prompt Update the state of bug #456 to Resolved and set the reason to 'Fixed'``` |
+| Query work items | ```copilot-prompt Show me all active work items assigned to <me> in the current sprint``` |
+| Add links and comments | ```copilot-prompt Add a comment to work item #789 with the status update 'API integration complete, pending review'``` |
 
 > [!NOTE]
 > Agent mode and the MCP Server use natural language, so you can adjust these prompts or ask follow-up questions to refine the results.

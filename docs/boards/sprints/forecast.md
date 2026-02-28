@@ -292,10 +292,10 @@ If you have the [Azure Boards MCP Server](../../mcp-server/mcp-server-overview.m
 
 | Task | Example prompt |
 |------|----------------|
-| Review backlog estimates | ```copilot-prompt\nList all user stories on the <Contoso Team> backlog that have no story points assigned\n``` |
-| Backlog size | ```copilot-prompt\nWhat is the total story points remaining in the product backlog for <Contoso Team>?\n``` |
-| Sprint completion history | ```copilot-prompt\nHow many story points did <Contoso Team> complete in each of the last 5 sprints?\n``` |
-| Estimate sprint count | ```copilot-prompt\nBased on a velocity of 25 story points, how many sprints to complete the remaining backlog for <Contoso Team>?\n``` |
+| Review backlog estimates | ```copilot-prompt List all user stories on the <Contoso Team> backlog that have no story points assigned``` |
+| Backlog size | ```copilot-prompt What is the total story points remaining in the product backlog for <Contoso Team>?``` |
+| Sprint completion history | ```copilot-prompt How many story points did <Contoso Team> complete in each of the last 5 sprints?``` |
+| Estimate sprint count | ```copilot-prompt Based on a velocity of 25 story points, how many sprints to complete the remaining backlog for <Contoso Team>?``` |
 
 > [!NOTE]
 > Agent mode and the MCP Server use natural language, so you can adjust these prompts or ask follow-up questions to refine the results.

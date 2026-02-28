@@ -299,10 +299,10 @@ If you have the [Azure Boards MCP Server](../../mcp-server/mcp-server-overview.m
 
 | Task | Example prompt |
 |------|----------------|
-| Find high-priority bugs | ```copilot-prompt\nList all Priority 1 bugs that are still active in my project\n``` |
-| Query by business value | ```copilot-prompt\nFind active user stories sorted by stack rank with business value greater than 5\n``` |
-| Find unprioritized items | ```copilot-prompt\nShow work items with no priority assigned\n``` |
-| Group by severity | ```copilot-prompt\nList bugs grouped by severity for the current sprint\n``` |
+| Find high-priority bugs | ```copilot-prompt List all Priority 1 bugs that are still active in my project``` |
+| Query by business value | ```copilot-prompt Find active user stories sorted by stack rank with business value greater than 5``` |
+| Find unprioritized items | ```copilot-prompt Show work items with no priority assigned``` |
+| Group by severity | ```copilot-prompt List bugs grouped by severity for the current sprint``` |
 
 > [!NOTE]
 > Agent mode and the MCP Server use natural language, so you can adjust these prompts or ask follow-up questions to refine the results.

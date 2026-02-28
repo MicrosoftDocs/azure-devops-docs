@@ -84,10 +84,10 @@ If you have the [Azure Boards MCP Server](../../mcp-server/mcp-server-overview.m
 
 | Task | Example prompt |
 |------|----------------|
-| List defined sprints | ```copilot-prompt\nList all iteration paths and their start and end dates for project <Contoso>\n``` |
-| Check sprint dates | ```copilot-prompt\nWhat are the start and end dates for Sprint 12 in project <Contoso>?\n``` |
-| Find sprints without dates | ```copilot-prompt\nWhich sprints in project <Contoso> have no start or end date assigned?\n``` |
-| Review team sprint assignments | ```copilot-prompt\nWhich sprints are assigned to <Contoso Team>?\n``` |
+| List defined sprints | ```copilot-prompt List all iteration paths and their start and end dates for project <Contoso>``` |
+| Check sprint dates | ```copilot-prompt What are the start and end dates for Sprint 12 in project <Contoso>?``` |
+| Find sprints without dates | ```copilot-prompt Which sprints in project <Contoso> have no start or end date assigned?``` |
+| Review team sprint assignments | ```copilot-prompt Which sprints are assigned to <Contoso Team>?``` |
 
 > [!NOTE]
 > Agent mode and the MCP Server use natural language, so you can adjust these prompts or ask follow-up questions to refine the results.

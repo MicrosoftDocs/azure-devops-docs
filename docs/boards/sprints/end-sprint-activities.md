@@ -109,10 +109,10 @@ If you have the [Azure Boards MCP Server](../../mcp-server/mcp-server-overview.m
 
 | Task | Example prompt |
 |------|----------------|
-| Find incomplete work | ```copilot-prompt\nList all work items in Sprint 11 for <Contoso Team> that are still Active or In Progress\n``` |
-| Move items to next sprint | ```copilot-prompt\nMove all incomplete user stories from Sprint 11 to Sprint 12 in project <Contoso>\n``` |
-| Zero out remaining work | ```copilot-prompt\nSet remaining work to 0 for all tasks in Sprint 11 that are in the Done state\n``` |
-| Sprint completion summary | ```copilot-prompt\nSummarize Sprint 11 for <Contoso Team>: count completed vs. incomplete items and total story points completed\n``` |
+| Find incomplete work | ```copilot-prompt List all work items in Sprint 11 for <Contoso Team> that are still Active or In Progress``` |
+| Move items to next sprint | ```copilot-prompt Move all incomplete user stories from Sprint 11 to Sprint 12 in project <Contoso>``` |
+| Zero out remaining work | ```copilot-prompt Set remaining work to 0 for all tasks in Sprint 11 that are in the Done state``` |
+| Sprint completion summary | ```copilot-prompt Summarize Sprint 11 for <Contoso Team>: count completed vs. incomplete items and total story points completed``` |
 
 > [!NOTE]
 > Agent mode and the MCP Server use natural language, so you can adjust these prompts or ask follow-up questions to refine the results.

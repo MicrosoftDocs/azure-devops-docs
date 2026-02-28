@@ -245,10 +245,10 @@ If you have the [Azure Boards MCP Server](../../mcp-server/mcp-server-overview.m
 
 | Task | Example prompt |
 |------|----------------|
-| Update task state | ```copilot-prompt\nMove tasks #3001, #3002, and #3003 to Done in project <Contoso>\n``` |
-| Update remaining work | ```copilot-prompt\nSet remaining work to 2 hours for task #3004 in project <Contoso>\n``` |
-| Sprint progress report | ```copilot-prompt\nShow a summary of task states (To Do, In Progress, Done) for Sprint 12 on <Contoso Team>\n``` |
-| Find stale tasks | ```copilot-prompt\nList all tasks in the current sprint for <Contoso Team> that are still in To Do state and were created more than 3 days ago\n``` |
+| Update task state | ```copilot-prompt Move tasks #3001, #3002, and #3003 to Done in project <Contoso>``` |
+| Update remaining work | ```copilot-prompt Set remaining work to 2 hours for task #3004 in project <Contoso>``` |
+| Sprint progress report | ```copilot-prompt Show a summary of task states (To Do, In Progress, Done) for Sprint 12 on <Contoso Team>``` |
+| Find stale tasks | ```copilot-prompt List all tasks in the current sprint for <Contoso Team> that are still in To Do state and were created more than 3 days ago``` |
 
 > [!NOTE]
 > Agent mode and the MCP Server use natural language, so you can adjust these prompts or ask follow-up questions to refine the results.

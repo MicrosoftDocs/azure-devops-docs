@@ -361,10 +361,10 @@ If you have the [Azure Boards MCP Server](../../mcp-server/mcp-server-overview.m
 
 | Task | Example prompt |
 |------|----------------|
-| Search by keyword | ```copilot-prompt\nFind all work items with 'performance' in the title\n``` |
-| Search descriptions | ```copilot-prompt\nList bugs where the description contains 'null reference exception'\n``` |
-| Find empty fields | ```copilot-prompt\nShow user stories with empty acceptance criteria\n``` |
-| Query by ID range | ```copilot-prompt\nFind work items with IDs between 5000 and 5100\n``` |
+| Search by keyword | ```copilot-prompt Find all work items with 'performance' in the title``` |
+| Search descriptions | ```copilot-prompt List bugs where the description contains 'null reference exception'``` |
+| Find empty fields | ```copilot-prompt Show user stories with empty acceptance criteria``` |
+| Query by ID range | ```copilot-prompt Find work items with IDs between 5000 and 5100``` |
 
 > [!NOTE]
 > Agent mode and the MCP Server use natural language, so you can adjust these prompts or ask follow-up questions to refine the results.

@@ -130,10 +130,10 @@ If you have the [Azure Boards MCP Server](../../mcp-server/mcp-server-overview.m
 
 | Task | Example prompt |
 |------|----------------|
-| Query by area path | ```copilot-prompt\nList all active bugs under the area path <Contoso>\\Backend and its children\n``` |
-| Find current iteration items | ```copilot-prompt\nFind work items assigned to the current iteration for my team\n``` |
-| Check past iterations | ```copilot-prompt\nShow user stories in past iterations that are not yet closed\n``` |
-| Query child area paths | ```copilot-prompt\nList all tasks under any child area path of <Contoso>\\Frontend\n``` |
+| Query by area path | ```copilot-prompt List all active bugs under the area path <Contoso>\\Backend and its children``` |
+| Find current iteration items | ```copilot-prompt Find work items assigned to the current iteration for my team``` |
+| Check past iterations | ```copilot-prompt Show user stories in past iterations that are not yet closed``` |
+| Query child area paths | ```copilot-prompt List all tasks under any child area path of <Contoso>\\Frontend``` |
 
 > [!NOTE]
 > Agent mode and the MCP Server use natural language, so you can adjust these prompts or ask follow-up questions to refine the results.

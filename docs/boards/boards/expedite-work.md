@@ -189,10 +189,10 @@ If you have the [Azure Boards MCP Server](../../mcp-server/mcp-server-overview.m
 
 | Task | Example prompt |
 |------|----------------|
-| Find high-priority items | ```copilot-prompt\nShow me all work items with Priority 1 on my team's board\n``` |
-| View items by board lane | ```copilot-prompt\nList all work items in the 'Expedite' board lane for the <Contoso> project\n``` |
-| Triage items for expediting | ```copilot-prompt\nFind all active bugs with Severity 1 that might need to be expedited\n``` |
-| Check blocked work | ```copilot-prompt\nShow me all work items tagged 'blocked' that are currently in progress\n``` |
+| Find high-priority items | ```copilot-prompt Show me all work items with Priority 1 on my team's board``` |
+| View items by board lane | ```copilot-prompt List all work items in the 'Expedite' board lane for the <Contoso> project``` |
+| Triage items for expediting | ```copilot-prompt Find all active bugs with Severity 1 that might need to be expedited``` |
+| Check blocked work | ```copilot-prompt Show me all work items tagged 'blocked' that are currently in progress``` |
 
 > [!NOTE]
 > Agent mode and the MCP Server use natural language, so you can adjust these prompts or ask follow-up questions to refine the results.

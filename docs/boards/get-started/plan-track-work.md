@@ -234,10 +234,10 @@ If you have the [Azure Boards MCP Server](../../mcp-server/mcp-server-overview.m
 
 | Task | Example prompt |
 |------|----------------|
-| Create a work item | ```copilot-prompt\nCreate a user story called 'Add search functionality to the product page' and assign it to <me>\n``` |
-| Add child tasks | ```copilot-prompt\nAdd three tasks to user story #1234: design the UI mockup, implement the backend API, and write unit tests\n``` |
-| Create a bug | ```copilot-prompt\nCreate a new bug titled 'Login timeout on slow connections' with priority 1 and assign it to the current sprint\n``` |
-| Update a work item | ```copilot-prompt\nUpdate the state of task #5678 to Done and set Completed Work to 4 hours\n``` |
+| Create a work item | ```copilot-prompt Create a user story called 'Add search functionality to the product page' and assign it to <me>``` |
+| Add child tasks | ```copilot-prompt Add three tasks to user story #1234: design the UI mockup, implement the backend API, and write unit tests``` |
+| Create a bug | ```copilot-prompt Create a new bug titled 'Login timeout on slow connections' with priority 1 and assign it to the current sprint``` |
+| Update a work item | ```copilot-prompt Update the state of task #5678 to Done and set Completed Work to 4 hours``` |
 
 > [!NOTE]
 > Agent mode and the MCP Server use natural language, so you can adjust these prompts or ask follow-up questions to refine the results.

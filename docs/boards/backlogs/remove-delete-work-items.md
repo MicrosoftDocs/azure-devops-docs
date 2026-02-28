@@ -219,10 +219,10 @@ If you have the [Azure Boards MCP Server](../../mcp-server/mcp-server-overview.m
 
 | Task | Example prompt |
 |------|----------------|
-| Change state to Removed | ```copilot-prompt\nChange the state of work items #101, #102, and #103 to Removed\n``` |
-| Find items in Removed state | ```copilot-prompt\nList all work items in the Removed state in area path <Contoso>\\OldFeature\n``` |
-| Find stale items to clean up | ```copilot-prompt\nShow me all work items in the 'New' state that haven't been updated in the last 90 days\n``` |
-| Identify closed items | ```copilot-prompt\nList all work items closed more than a year ago in the <Contoso> project\n``` |
+| Change state to Removed | ```copilot-prompt Change the state of work items #101, #102, and #103 to Removed``` |
+| Find items in Removed state | ```copilot-prompt List all work items in the Removed state in area path <Contoso>\\OldFeature``` |
+| Find stale items to clean up | ```copilot-prompt Show me all work items in the 'New' state that haven't been updated in the last 90 days``` |
+| Identify closed items | ```copilot-prompt List all work items closed more than a year ago in the <Contoso> project``` |
 
 > [!NOTE]
 > Agent mode and the MCP Server use natural language, so you can adjust these prompts or ask follow-up questions to refine the results. The MCP Server can update work item states but can't delete, restore, or destroy work items.

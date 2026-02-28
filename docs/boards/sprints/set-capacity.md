@@ -207,10 +207,10 @@ If you have the [Azure Boards MCP Server](../../mcp-server/mcp-server-overview.m
 
 | Task | Example prompt |
 |------|----------------|
-| Check capacity vs. work | ```copilot-prompt\nShow the total remaining work vs. capacity for Sprint 12 on <Contoso Team>\n``` |
-| Find overloaded members | ```copilot-prompt\nList team members whose assigned remaining work exceeds their capacity in the current sprint\n``` |
-| Find unassigned tasks | ```copilot-prompt\nList all tasks in the current sprint that have no assignee for <Contoso Team>\n``` |
-| Review work distribution | ```copilot-prompt\nShow remaining work grouped by team member for the current sprint in <Contoso Team>\n``` |
+| Check capacity vs. work | ```copilot-prompt Show the total remaining work vs. capacity for Sprint 12 on <Contoso Team>``` |
+| Find overloaded members | ```copilot-prompt List team members whose assigned remaining work exceeds their capacity in the current sprint``` |
+| Find unassigned tasks | ```copilot-prompt List all tasks in the current sprint that have no assignee for <Contoso Team>``` |
+| Review work distribution | ```copilot-prompt Show remaining work grouped by team member for the current sprint in <Contoso Team>``` |
 
 > [!NOTE]
 > Agent mode and the MCP Server use natural language, so you can adjust these prompts or ask follow-up questions to refine the results.

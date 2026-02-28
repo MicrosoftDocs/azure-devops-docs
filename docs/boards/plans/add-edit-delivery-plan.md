@@ -197,10 +197,10 @@ If you have the [Azure Boards MCP Server](../../mcp-server/mcp-server-overview.m
 
 | Task | Example prompt |
 |------|----------------|
-| View scheduled work | ```copilot-prompt\nShow me all work items assigned to Sprint 5 for the Web team\n``` |
-| Check cross-team progress | ```copilot-prompt\nList all features in progress across all teams in the <Contoso> project\n``` |
-| Reschedule work items | ```copilot-prompt\nMove user story #1234 from Sprint 3 to Sprint 4\n``` |
-| Find unscheduled items | ```copilot-prompt\nList all user stories that don't have an iteration path assigned\n``` |
+| View scheduled work | ```copilot-prompt Show me all work items assigned to Sprint 5 for the Web team``` |
+| Check cross-team progress | ```copilot-prompt List all features in progress across all teams in the <Contoso> project``` |
+| Reschedule work items | ```copilot-prompt Move user story #1234 from Sprint 3 to Sprint 4``` |
+| Find unscheduled items | ```copilot-prompt List all user stories that don't have an iteration path assigned``` |
 
 > [!NOTE]
 > Agent mode and the MCP Server use natural language, so you can adjust these prompts or ask follow-up questions to refine the results.
