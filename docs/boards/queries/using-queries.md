@@ -10,7 +10,7 @@ ms.author: chcomley
 author: chcomley
 ms.topic: tutorial
 monikerRange: '<= azure-devops'
-ms.date: 02/27/2026
+ms.date: 02/28/2026
 ---
 
 # Define a work item query

@@ -8,7 +8,7 @@ ms.custom: cross-service, copilot-scenario-highlight
 ms.author: chcomley
 ms.topic: how-to
 monikerRange: '<= azure-devops'
-ms.date: 10/27/2025
+ms.date: 02/28/2026
 ---
 
 # Autocomplete work items with pull requests 

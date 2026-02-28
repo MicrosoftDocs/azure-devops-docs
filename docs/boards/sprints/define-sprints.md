@@ -9,7 +9,7 @@ ms.author: chcomley
 author: chcomley
 ms.topic: quickstart
 monikerRange: '<= azure-devops'
-ms.date: 10/27/2025
+ms.date: 02/28/2026
 #customer intent: As an Azure Boards project administrator, I want to set dates and assign teams to sprints and iterations so I can assign teams their own boards and backlogs to manage.
 ---
 

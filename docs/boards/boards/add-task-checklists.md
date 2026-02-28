@@ -9,7 +9,7 @@ ms.author: chcomley
 author: chcomley
 ms.topic: tutorial
 monikerRange: '<= azure-devops'
-ms.date: 07/30/2025
+ms.date: 02/28/2026
 #customer intent: As a team member with organizational responsibilities, I want to use Azure Boards to visualize tasks, track progress, and manage work items efficiently.
 ---
 

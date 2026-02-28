@@ -9,7 +9,7 @@ ms.author: chcomley
 author: chcomley
 ms.topic: how-to
 monikerRange: '<= azure-devops'
-ms.date: 08/27/2025
+ms.date: 02/28/2026
 #customer intent: As a team member or administrator, I want to understand how to remove or restore work items in Azure Boards to manage them.
 ---
 

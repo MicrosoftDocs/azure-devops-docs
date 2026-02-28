@@ -9,7 +9,7 @@ author: chcomley
 ms.topic: tutorial
 ms.custom: copilot-scenario-highlight
 monikerRange: '<= azure-devops'
-ms.date: 10/14/2025
+ms.date: 02/28/2026
 ai-usage: ai-assisted
 ---
 

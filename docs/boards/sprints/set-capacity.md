@@ -9,7 +9,7 @@ ms.author: chcomley
 author: chcomley
 ms.topic: tutorial
 monikerRange: '<= azure-devops'
-ms.date: 01/07/2026
+ms.date: 02/28/2026
 #customer intent: As a team member, I want to understand how to set capacity for a sprint and how to use capacity to track progress durning a sprint.
 ---
 

@@ -10,7 +10,7 @@ ms.topic: tutorial
 ms.custom: cross-project, copilot-scenario-highlight
 ai-usage: ai-assisted
 monikerRange: '>= azure-devops-2022'
-ms.date: 10/23/2025
+ms.date: 02/28/2026
 #customer intent: As a product and portfolio owner, I want to understand delivery plans so I can use them to interact with multiple deliverables and schedules and review them with my teams.
 ---
 

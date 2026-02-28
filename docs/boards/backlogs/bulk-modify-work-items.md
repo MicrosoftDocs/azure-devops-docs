@@ -19,12 +19,12 @@ ms.date: 01/13/2026
 
 Use bulk modify when you need to quickly make the same change to many work items. For example, you might want to change the priority of several bugs or reassign several tasks to the same team member. Use the web portal to quickly modify one or more fields for work items that contain the same value.  
 
-[!INCLUDE [ai-assistance-mcp-server-tip](../../includes/ai-assistance-mcp-server-tip.md)]
-
 > [!TIP]
 > To add work items in bulk or update multiple fields with different values, use [CSV Import](../queries/import-work-items-from-csv.md). You can't complete a bulk add of work items through the web portal.
 
 By using bulk modify, you can edit fields and add or remove tags. You can also reassign work or move work to a specific sprint. You can also use bulk modify to change the work item type or move work items to other projects. The options available to you depend on the platform you work from and the permissions assigned to you.
+
+[!INCLUDE [ai-assistance-mcp-server-tip](../../includes/ai-assistance-mcp-server-tip.md)]
 
 ## Prerequisites
 

@@ -14,7 +14,7 @@ author: chcomley
 ms.topic: quickstart
 monikerRange: "<=azure-devops"
 ms.update: 90-days
-ms.date: 01/12/2026
+ms.date: 02/28/2026
 ---
 
 # View and add work items

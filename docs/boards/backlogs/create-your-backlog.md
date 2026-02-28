@@ -10,7 +10,7 @@ ms.author: chcomley
 author: chcomley
 ms.topic: how-to
 monikerRange: '<= azure-devops'
-ms.date: 01/29/2026
+ms.date: 02/28/2026
 #customer intent: As a team member, I want to understand how to create and manage backlogs in Azure Boards to improve my team's workflow.
 ---
 

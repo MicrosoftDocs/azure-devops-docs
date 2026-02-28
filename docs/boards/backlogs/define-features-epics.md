@@ -9,7 +9,7 @@ ms.author: chcomley
 author: chcomley
 ms.topic: how-to
 monikerRange: '<= azure-devops'
-ms.date: 12/22/2025
+ms.date: 02/28/2026
 #customer intent: As a team member, I want to understand how to organize work items into features and epics in Azure Boards to better organize my project.
 ---
 

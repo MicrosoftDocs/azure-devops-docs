@@ -10,7 +10,7 @@ ms.author: chcomley
 author: chcomley
 ms.topic: how-to
 monikerRange: '<= azure-devops'
-ms.date: 02/05/2026
+ms.date: 02/28/2026
 ---
  
 # Customize cards on a board  

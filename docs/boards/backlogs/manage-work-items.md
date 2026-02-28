@@ -9,7 +9,7 @@ ai-usage: ai-assisted
 ms.author: chcomley
 monikerRange: '<= azure-devops'
 ms.topic: concept-article
-ms.date: 01/13/2026
+ms.date: 02/28/2026
 ---
 
 # Manage work items effectively

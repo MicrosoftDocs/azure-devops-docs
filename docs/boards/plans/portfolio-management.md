@@ -10,7 +10,7 @@ ms.topic: how-to
 ms.custom: copilot-scenario-highlight
 ai-usage: ai-assisted
 monikerRange: '<= azure-devops'
-ms.date: 10/20/2025
+ms.date: 02/28/2026
 #customer intent: As a portfolio manager, I want to understand how to manage backlogs in Azure Boards so I can assign and track work and let teams manage their own backlogs.
 ---
 

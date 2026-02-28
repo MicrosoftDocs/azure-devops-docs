@@ -10,7 +10,7 @@ ms.author: chcomley
 author: chcomley
 ms.topic: example-scenario
 monikerRange: '<= azure-devops'
-ms.date: 02/27/2026
+ms.date: 02/28/2026
 #customer intent: As an Azure DevOps developer, I want to query work item history and comments, so I can support audit requirements in Azure Boards.
 ---
 

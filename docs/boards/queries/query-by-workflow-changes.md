@@ -10,7 +10,7 @@ ms.author: chcomley
 author: chcomley
 ms.topic: example-scenario
 monikerRange: '<= azure-devops'
-ms.date: 10/09/2025
+ms.date: 02/28/2026
 ---
 
 # Query by assignment or workflow changes

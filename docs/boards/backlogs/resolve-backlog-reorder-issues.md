@@ -10,7 +10,7 @@ ms.topic: troubleshooting
 ms.author: chcomley
 author: chcomley
 monikerRange: '<= azure-devops'
-ms.date: 12/03/2025
+ms.date: 02/28/2026
 #customer intent: as a team member or lead, I want to address warnings or errors that occur in Azure Boards regarding reordering or nesting work items.
 ---
 

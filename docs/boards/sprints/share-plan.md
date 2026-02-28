@@ -9,7 +9,7 @@ ms.author: chcomley
 author: chcomley
 ms.topic: tutorial
 monikerRange: '<= azure-devops'
-ms.date: 09/20/2021
+ms.date: 02/28/2026
 ---
 
 # 5. Share your sprint plan

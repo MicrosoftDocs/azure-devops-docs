@@ -9,7 +9,7 @@ ms.author: chcomley
 author: chcomley
 ms.topic: tutorial
 monikerRange: '<= azure-devops'
-ms.date: 11/27/2024
+ms.date: 02/28/2026
 ---
 
 # 6. Update and monitor your Taskboard

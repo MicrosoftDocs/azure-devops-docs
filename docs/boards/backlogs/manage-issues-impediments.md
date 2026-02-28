@@ -8,7 +8,7 @@ ms.assetid: 5B126205-599D-40EB-BC95-23CF1444EF2A
 ms.author: chcomley
 author: chcomley
 ms.topic: tutorial
-ms.date: 07/26/2022
+ms.date: 02/28/2026
 ---
 
 # Manage issues or impediments in Azure Boards

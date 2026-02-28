@@ -9,7 +9,7 @@ ms.author: chcomley
 author: chcomley
 ms.topic: how-to
 monikerRange: "<=azure-devops"
-ms.date: 05/05/2025
+ms.date: 02/28/2026
 ---
 
 # Bulk move work items and change the work item type in Azure Boards

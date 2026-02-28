@@ -8,7 +8,7 @@ ms.author: chcomley
 author: chcomley
 ms.topic: quickstart
 monikerRange: '<= azure-devops'
-ms.date: 10/27/2025
+ms.date: 02/28/2026
 ##customer intent: As an Azure Boards user, I want to learn how to use Azure Boards queries so I can easily access, run, and share queries for my team's work items.
 
 ---

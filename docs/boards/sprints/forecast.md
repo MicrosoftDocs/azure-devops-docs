@@ -10,7 +10,7 @@ author: chcomley
 ms.topic: tutorial
 monikerRange: '<= azure-devops'
 ai-usage: ai-assisted
-ms.date: 10/27/2025
+ms.date: 02/28/2026
 ---
 
 # Forecast your product backlog

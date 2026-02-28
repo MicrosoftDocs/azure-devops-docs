@@ -9,7 +9,7 @@ ms.author: chcomley
 author: chcomley
 ms.topic: tutorial
 monikerRange: '<= azure-devops'
-ms.date: 07/31/2025
+ms.date: 02/28/2026
 #customer intent: As a team member, I want to learn how to create a sprint from backlog items in Azure Boards.
 ---
 

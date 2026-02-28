@@ -11,7 +11,7 @@ author: chcomley
 ai-usage: ai-assisted
 ms.topic: how-to
 monikerRange: '<= azure-devops'
-ms.date: 09/19/2025
+ms.date: 02/28/2026
 ---
 
 # Expedite work using swimlanes

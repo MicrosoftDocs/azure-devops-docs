@@ -9,7 +9,7 @@ ai-usage: ai-assisted
 ms.custom: cross-project, copilot-scenario-highlight
 ms.topic: how-to
 monikerRange: '>= azure-devops-2022'
-ms.date: 10/27/2025
+ms.date: 02/28/2026
 ---
 
 # Add or edit a Delivery Plan 

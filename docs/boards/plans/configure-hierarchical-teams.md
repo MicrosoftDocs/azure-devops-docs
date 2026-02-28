@@ -7,7 +7,7 @@ ms.author: chcomley
 author: chcomley
 ms.topic: tutorial
 monikerRange: '<= azure-devops'
-ms.date: 10/21/2025
+ms.date: 02/28/2026
 ms.custom: sfi-image-nochange, copilot-scenario-highlight
 ##customer intent: As a project administrator, I want to understand how to create a hierarchy of teams in Azure Boards so feature teams can manage their own backlogs while management teams track and manage overall work.
 

@@ -10,7 +10,7 @@ author: chcomley
 ai-usage: ai-assisted
 ms.topic: example-scenario
 monikerRange: '<= azure-devops'
-ms.date: 10/08/2025
+ms.date: 02/28/2026
 ---
 
 # Query by titles, IDs, and rich-text fields

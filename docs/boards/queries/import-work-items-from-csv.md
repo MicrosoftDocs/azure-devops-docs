@@ -9,7 +9,7 @@ ms.author: chcomley
 author: chcomley
 ms.topic: how-to
 monikerRange: "<=azure-devops"
-ms.date: 01/26/2026
+ms.date: 02/28/2026
 #customer intent: As a team member, I want to export, update, and import work items in CSV format to manage them in bulk using Excel or other tools.
 ---
 

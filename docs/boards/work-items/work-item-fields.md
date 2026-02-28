@@ -9,7 +9,7 @@ ms.author: chcomley
 author: chcomley
 monikerRange: '<= azure-devops'
 ms.topic: how-to
-ms.date: 10/27/2025
+ms.date: 02/28/2026
 ---
 
 # List work item fields and attributes

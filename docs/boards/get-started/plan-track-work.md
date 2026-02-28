@@ -8,7 +8,7 @@ ms.author: chcomley
 author: chcomley
 ms.topic: how-to
 monikerRange: '<= azure-devops'
-ms.date: 09/29/2025
+ms.date: 02/28/2026
 #customer intent: As a team member, I want to understand how to use the different processes to manage our team projects.
 ---
 

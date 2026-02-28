@@ -9,7 +9,7 @@ ms.author: chcomley
 author: chcomley
 ms.topic: how-to
 monikerRange: '<= azure-devops'
-ms.date: 10/15/2025
+ms.date: 02/28/2026
 #customer intent: As an Azure Boards user, I want to duplicate work items, copy work item details or URLs, or copy lists of selected work items so I can distribute them to my teammates and stakeholders.
 
 ---
