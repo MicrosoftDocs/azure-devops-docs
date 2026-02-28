@@ -2,7 +2,7 @@
 title: Manage columns on your board
 titleSuffix: Azure Boards
 description: Learn how to map, add, and edit columns on your team's board to effectively manage your workflow in Azure Boards or Azure DevOps.
-ms.custom: boards-kanban, engagement-fy23
+ms.custom: boards-kanban, engagement-fy23, copilot-scenario-highlight
 ms.service: azure-devops-boards
 ms.assetid: 8afd3481-6fab-401d-90ff-0dd443da0f0e
 ai-usage: ai-assisted
@@ -18,6 +18,8 @@ ms.date: 01/13/2026
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)] 
 
 Managing columns on your board is essential for visualizing your team's workflow. Each column corresponds to a stage of work, such as "To do," "In progress," and "Done." You can customize these columns to match your specific process. Each card on the board represents a work item, such as a user story, bug, or task.
+
+[!INCLUDE [ai-assistance-mcp-server-tip](../../includes/ai-assistance-mcp-server-tip.md)]
 
 > [!NOTE]    
 > - To manage columns on a sprint Taskboard, see [Customize a Taskboard](../sprints/customize-taskboard.md). 
@@ -215,6 +217,22 @@ The following table lists tasks and their associated articles so you can do more
 |[Customize cards](customize-cards.md)    | View and quickly assign values to key field.        |
 |[Track board column status](#track-column-status)   | Create queries and charts based on board columns.        |
 |[View and configure a cumulative flow diagram](../../report/dashboards/cumulative-flow.md)   |Review a cumulative flow diagram based on column assignments.         |
+
+<a id="use-ai-assistance"></a>
+
+## Use AI to manage board columns
+
+If you have the [Azure Boards MCP Server](../../mcp-server/azure-boards-mcp-overview.md) connected to your AI agent in agent mode, you can use natural language prompts to manage work items related to your board columns.
+
+| Task | Example prompt |
+|------|----------------|
+| View items in a column | ```copilot-prompt\nShow me all work items currently in the 'In Progress' column on my board\n``` |
+| Find items by state | ```copilot-prompt\nList all user stories in the 'Active' state for the <Contoso> project\n``` |
+| Move items between states | ```copilot-prompt\nUpdate user story 1234 to the 'Resolved' state\n``` |
+| Analyze column distribution | ```copilot-prompt\nHow many work items are in each workflow state for my team's backlog?\n``` |
+
+> [!NOTE]
+> Agent mode and the MCP Server use natural language, so you can adjust these prompts or ask follow-up questions to refine the results.
 
 ## Related content
 

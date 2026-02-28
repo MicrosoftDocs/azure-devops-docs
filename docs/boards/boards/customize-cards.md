@@ -2,7 +2,7 @@
 title: Customize cards on a board
 titleSuffix: Azure Boards
 description: Learn how to customize cards to show relevant information and highlight important work items on your team's board in Azure Boards.
-ms.custom: boards-kanban, engagement-fy23
+ms.custom: boards-kanban, engagement-fy23, copilot-scenario-highlight
 ms.service: azure-devops-boards
 ms.assetid: 951A73EA-7411-4A2A-B3F0-ACBBC7EFC68F
 ai-usage: ai-assisted
@@ -18,6 +18,8 @@ ms.date: 02/05/2026
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]  
 
 Customize board cards to display the information your team needs most. Cards show work items as visual elements that facilitate quick updates, progress tracking, and at-a-glance status assessment. You can update fields directly on cards without opening work items, and apply visual styling to highlight important items.
+
+[!INCLUDE [ai-assistance-mcp-server-tip](../../includes/ai-assistance-mcp-server-tip.md)]
 
 > [!NOTE] 
 > This article covers board card customization. For Taskboard card customization, see [Customize sprint Taskboards](../sprints/customize-taskboard.md). 
@@ -206,6 +208,22 @@ Control how card order is maintained when you move cards between columns.
 - **Use consistent styling**: Apply style rules that support your team's workflow.
 - **Regular review**: Periodically assess which customizations provide value.
 - **Team alignment**: Ensure all team members understand the visual conventions.
+
+<a id="use-ai-assistance"></a>
+
+## Use AI to query work items displayed on cards
+
+If you have the [Azure Boards MCP Server](../../mcp-server/azure-boards-mcp-overview.md) connected to your AI agent in agent mode, you can use natural language prompts to query and update the work items that appear on your board cards.
+
+| Task | Example prompt |
+|------|----------------|
+| Find items by tag | ```copilot-prompt\nShow me all work items on my board that have the 'blocked' tag\n``` |
+| View items with specific fields | ```copilot-prompt\nList all active user stories with their priority, assigned to, and story points\n``` |
+| Update fields on work items | ```copilot-prompt\nSet the priority of bug 4567 to 1 and add the tag 'regression'\n``` |
+| Find items by style criteria | ```copilot-prompt\nShow me all work items assigned to <me> that are past their target date\n``` |
+
+> [!NOTE]
+> Agent mode and the MCP Server use natural language, so you can adjust these prompts or ask follow-up questions to refine the results.
 
 ## Related content
 

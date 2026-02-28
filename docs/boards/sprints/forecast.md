@@ -2,7 +2,7 @@
 title: Forecast your product backlog in Azure Boards
 titleSuffix: Azure Boards   
 description: Learn how to determine how much work your team can deliver across several sprints by forecasting in Azure Boards. 
-ms.custom: boards-sprints    
+ms.custom: boards-sprints, copilot-scenario-highlight
 ms.service: azure-devops-boards
 ms.assetid: C46ED4AA-4B8F-4D5D-BC51-52F6D67BF8C6
 ms.author: chcomley
@@ -24,6 +24,8 @@ The forecast tool helps teams answer critical planning questions:
 - **Release planning**: When can we expect to complete all items in our backlog?
 - **Resource planning**: What velocity do we need to meet our target delivery dates?
 - **Scope management**: Which features should we prioritize for upcoming releases?
+
+[!INCLUDE [ai-assistance-mcp-server-tip](../../includes/ai-assistance-mcp-server-tip.md)]
 
 Use this article to learn: 
 
@@ -281,6 +283,22 @@ When team composition changes during a project:
 
 > [!div class="nextstepaction"]
 > [Assign work to a sprint](assign-work-sprint.md)
+
+<a id="use-ai-assistance"></a>
+
+## Use AI for sprint forecasting
+
+If you have the [Azure Boards MCP Server](../../mcp-server/azure-boards-mcp-overview.md) connected to your AI agent in agent mode, you can use natural language prompts to review backlog estimates and velocity data that support forecasting.
+
+| Task | Example prompt |
+|------|----------------|
+| Review backlog estimates | ```copilot-prompt\nList all user stories on the <Contoso Team> backlog that have no story points assigned\n``` |
+| Backlog size | ```copilot-prompt\nWhat is the total story points remaining in the product backlog for <Contoso Team>?\n``` |
+| Sprint completion history | ```copilot-prompt\nHow many story points did <Contoso Team> complete in each of the last 5 sprints?\n``` |
+| Estimate sprint count | ```copilot-prompt\nBased on a velocity of 25 story points, how many sprints to complete the remaining backlog for <Contoso Team>?\n``` |
+
+> [!NOTE]
+> Agent mode and the MCP Server use natural language, so you can adjust these prompts or ask follow-up questions to refine the results.
 
 ## Related content
 

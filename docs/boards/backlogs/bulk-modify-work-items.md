@@ -3,7 +3,7 @@ title: Edit user stories and other work items in bulk
 titleSuffix: Azure Boards
 description: Learn how to make the same change to many work items in Azure Boards using the bulk modify feature in Azure Boards.
 ms.service: azure-devops-boards
-ms.custom: boards-backlogs, linked-from-support
+ms.custom: boards-backlogs, linked-from-support, copilot-scenario-highlight
 ms.assetid: 152CAFE0-2360-470A-98AC-F613A67C24D2
 ms.author: chcomley
 author: chcomley
@@ -18,6 +18,8 @@ ms.date: 01/13/2026
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 Use bulk modify when you need to quickly make the same change to many work items. For example, you might want to change the priority of several bugs or reassign several tasks to the same team member. Use the web portal to quickly modify one or more fields for work items that contain the same value.  
+
+[!INCLUDE [ai-assistance-mcp-server-tip](../../includes/ai-assistance-mcp-server-tip.md)]
 
 > [!TIP]
 > To add work items in bulk or update multiple fields with different values, use [CSV Import](../queries/import-work-items-from-csv.md). You can't complete a bulk add of work items through the web portal.
@@ -190,6 +192,22 @@ From the **Edit work items** dialog, select **Tags (Add)** or **Tags (Remove)**.
 This example adds the *Service* tag to the selected work items.
 
 :::image type="content" source="media/bulk-modify/edit-tags-dialog.png" alt-text="Screenshot of Edit work items dialog where you can add tags.":::
+
+<a id="use-ai-assistance"></a>
+
+## Use AI to bulk modify work items
+
+If you configure the [Azure DevOps MCP Server](../../mcp-server/mcp-server-overview.md), you can describe bulk changes in natural language instead of selecting and editing items manually.
+
+| Task | Example prompt |
+|------|----------------|
+| **Reassign items** | ```copilot-prompt Reassign all active user stories in Sprint 12 from <Jamal> to <Raisa> in project <Contoso>``` |
+| **Change priority** | ```copilot-prompt Set priority to 1 for all bugs tagged "regression" in project <Contoso>``` |
+| **Add tags in bulk** | ```copilot-prompt Add tag "security-review" to all active work items in area path <Contoso\\Auth> ``` |
+| **Move items to a sprint** | ```copilot-prompt Move all uncommitted user stories from Sprint 5 to Sprint 6 in project <Contoso>``` |
+
+> [!NOTE]
+> - If you're using Visual Studio Code, [agent mode](/visualstudio/ide/copilot-chat-context#agent-mode) is especially helpful for complex bulk operations.
 
 ## Related content
 

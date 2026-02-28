@@ -2,7 +2,7 @@
 title: Plan and track work in Azure Boards
 titleSuffix: Azure Boards 
 description: Learn how to plan and track work by using Azure Boards using the Agile, Basic, Scrum, or Capability Maturity Model Integration (CMMI) processes.
-ms.custom: boards-get-started
+ms.custom: boards-get-started, copilot-scenario-highlight
 ms.service: azure-devops-boards
 ms.author: chcomley
 author: chcomley
@@ -17,6 +17,8 @@ ms.date: 09/29/2025
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 Use Azure Boards to plan and track work with the Agile, Basic, Scrum, or Capability Maturity Model Integration (CMMI) processes. For more information about process choices, see [About processes and process templates](../work-items/guidance/choose-process.md).
+
+[!INCLUDE [ai-assistance-mcp-server-tip](../../includes/ai-assistance-mcp-server-tip.md)]
 
 [!INCLUDE [basic process](../includes/basic-process-note.md)]
 
@@ -223,6 +225,22 @@ You can use these fields on backlog items and tasks to support planning and capa
 :::row-end:::
 
 [!INCLUDE [discussion comments](../includes/discussion-tip-azure-devops.md)]
+
+<a id="use-ai-assistance"></a>
+
+## Use AI to plan and track work
+
+If you have the [Azure Boards MCP Server](../../mcp-server/azure-boards-mcp-overview.md) connected to your AI agent in agent mode, you can use natural language prompts to create and manage work items.
+
+| Task | Example prompt |
+|------|----------------|
+| Create a work item | ```copilot-prompt\nCreate a user story called 'Add search functionality to the product page' and assign it to <me>\n``` |
+| Add child tasks | ```copilot-prompt\nAdd three tasks to user story #1234: design the UI mockup, implement the backend API, and write unit tests\n``` |
+| Create a bug | ```copilot-prompt\nCreate a new bug titled 'Login timeout on slow connections' with priority 1 and assign it to the current sprint\n``` |
+| Update a work item | ```copilot-prompt\nUpdate the state of task #5678 to Done and set Completed Work to 4 hours\n``` |
+
+> [!NOTE]
+> Agent mode and the MCP Server use natural language, so you can adjust these prompts or ask follow-up questions to refine the results.
 
 ## Related content
 

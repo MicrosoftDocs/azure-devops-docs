@@ -2,7 +2,7 @@
 title: List work item fields and attributes in Azure Boards
 titleSuffix: Azure Boards
 description: Learn about work item fields, their attributes, and how to modify them in Azure Boards. 
-ms.custom: work-items, engagement-fy23
+ms.custom: work-items, engagement-fy23, copilot-scenario-highlight
 ms.service: azure-devops-boards
 ai-usage: ai-assisted
 ms.author: chcomley
@@ -31,6 +31,8 @@ Work item fields track information within Azure DevOps. The system defines these
 ::: moniker-end
 
 For a description of each field defined with a system process, see [Work item field index](guidance/work-item-field.md).  
+
+[!INCLUDE [ai-assistance-mcp-server-tip](../../includes/ai-assistance-mcp-server-tip.md)]
 
 ## Why work item fields matter
 
@@ -831,6 +833,22 @@ Common issues and solutions when working with work item fields:
 - **Invalid values**: Check if the field has restricted allowed values or validation rules
 - **Read-only fields**: Verify the field's `IsEditable` attribute
 - **Format requirements**: Ensure data matches the expected field data type
+
+<a id="use-ai-assistance"></a>
+
+## Use AI to explore work item fields
+
+If you configure the [Azure DevOps MCP Server](../../mcp-server/mcp-server-overview.md), you can explore and query work item fields using natural language.
+
+| Task | Example prompt |
+|------|----------------|
+| **List fields for a work item type** | ```copilot-prompt Show me all fields available for the Bug work item type in project <Contoso>``` |
+| **Find custom fields** | ```copilot-prompt List all custom fields defined in my organization``` |
+| **Check field usage** | ```copilot-prompt Which work item types use the "Story Points" field in project <Contoso>?``` |
+| **Query by field values** | ```copilot-prompt Show all user stories where Story Points is greater than 8 in <Contoso>``` |
+
+> [!NOTE]
+> - If you're using Visual Studio Code, [agent mode](/visualstudio/ide/copilot-chat-context#agent-mode) is especially helpful for exploring field definitions and attributes.
 
 ## Related content  
 

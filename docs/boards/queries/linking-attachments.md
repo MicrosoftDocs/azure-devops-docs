@@ -2,7 +2,7 @@
 title: Query Work Items By Link Or Attachment Count In Azure Boards  
 titleSuffix: Azure Boards
 description: Learn how to query work items based on link type, link count, link restrictions, and attached file count in Azure Boards.
-ms.custom: boards-queries, engagement-fy23
+ms.custom: boards-queries, engagement-fy23, copilot-scenario-highlight
 ms.service: azure-devops-boards
 ms.assetid: 219717a0-de6e-4f70-8558-54f813f82507
 ms.author: chcomley
@@ -18,6 +18,8 @@ ms.date: 10/27/2025
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 Link work items to track related work and dependencies, and attach files to share information with your team. Query work items using the following fields:
+
+[!INCLUDE [ai-assistance-mcp-server-tip](../../includes/ai-assistance-mcp-server-tip.md)]
 
 ::: moniker range="azure-devops"
 - Attached File Count
@@ -302,6 +304,22 @@ All tabs that support creating links between work items use the **LinksControl**
 You can add or remove columns from the list of links, and you can customize the default columns and the column order. For more information, see [LinksControlOptions XML elements](/previous-versions/azure/devops/reference/xml/linkscontroloptions-xml-elements?view=tfs-2017&preserve-view=true).
 
 ::: moniker-end
+
+<a id="use-ai-assistance"></a>
+
+## Use AI to query by links and attachments
+
+If you have the [Azure Boards MCP Server](../../mcp-server/azure-boards-mcp-overview.md) connected to your AI agent in agent mode, you can use natural language prompts to find work items based on their links and attachments.
+
+| Task | Example prompt |
+|------|----------------|
+| Find unlinked items | ```copilot-prompt\nFind active user stories with no child task links\n``` |
+| Query for attachments | ```copilot-prompt\nList bugs that have attached files\n``` |
+| Check development links | ```copilot-prompt\nShow work items with no linked commits or pull requests\n``` |
+| Find heavily linked items | ```copilot-prompt\nFind work items with more than 3 related links\n``` |
+
+> [!NOTE]
+> Agent mode and the MCP Server use natural language, so you can adjust these prompts or ask follow-up questions to refine the results.
 
 ## Related content
 

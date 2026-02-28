@@ -2,7 +2,7 @@
 title: Query by field values
 titleSuffix: Azure Boards
 description: Learn how to create a query by filtering on field values that are compared to other field values in Azure Boards and Azure DevOps.
-ms.custom: boards-queries
+ms.custom: boards-queries, copilot-scenario-highlight
 ms.service: azure-devops-boards
 ms.author: chcomley
 author: chcomley
@@ -17,6 +17,8 @@ ms.date: 10/08/2025
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 Use comparison field operators when you want to filter work items by comparing one field's value to another field's value. Common uses include:
+
+[!INCLUDE [ai-assistance-mcp-server-tip](../../includes/ai-assistance-mcp-server-tip.md)]
 
 - Find work items where the creator differs from the assignee or the closer.
 - Find tasks whose Original Estimate is less than the Completed Work.
@@ -249,6 +251,22 @@ The table below lists fields that support comparison queries. Not all fields are
 
 > [!NOTE]
 > Field-to-field comparison support differs by client. The web Query Editor supports most field comparisons; complex comparisons (for example, some uses of `WAS EVER` or advanced WIQL expressions) require editing WIQL directly (WIQL Editor extension). When in doubt, build the clause in the web Query Editor and inspect the saved WIQL.
+
+<a id="use-ai-assistance"></a>
+
+## Use AI to query by field value comparisons
+
+If you have the [Azure Boards MCP Server](../../mcp-server/azure-boards-mcp-overview.md) connected to your AI agent in agent mode, you can use natural language prompts to find work items based on field-to-field comparisons.
+
+| Task | Example prompt |
+|------|----------------|
+| Compare creator and assignee | ```copilot-prompt\nFind work items where Created By is different from Assigned To\n``` |
+| Check estimate accuracy | ```copilot-prompt\nList tasks where Completed Work exceeds Original Estimate\n``` |
+| Find early completions | ```copilot-prompt\nShow work items that were closed before their target date\n``` |
+| Compare change history | ```copilot-prompt\nFind bugs where the person who last changed the item differs from the creator\n``` |
+
+> [!NOTE]
+> Agent mode and the MCP Server use natural language, so you can adjust these prompts or ask follow-up questions to refine the results.
 
 ## Related content
 

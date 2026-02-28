@@ -6,7 +6,7 @@ ms.service: azure-devops-boards
 ms.author: chcomley
 author: chcomley
 ai-usage: ai-assisted
-ms.custom: cross-project  
+ms.custom: cross-project, copilot-scenario-highlight
 ms.topic: how-to
 monikerRange: '>= azure-devops-2022'
 ms.date: 10/27/2025
@@ -17,6 +17,8 @@ ms.date: 10/27/2025
 [!INCLUDE [version-gt-eq-2022](../../includes/version-gt-eq-2022.md)] 
 
 Delivery Plans provide a highly interactive calendar view of multiple team backlogs. This article shows how to add and edit a plan. For the use cases, benefits, and interactions you can perform, see [Review team Delivery Plans](review-team-plans.md).
+
+[!INCLUDE [ai-assistance-mcp-server-tip](../../includes/ai-assistance-mcp-server-tip.md)]
 
 > [!NOTE]   
 > This article describes how to add or edit Delivery Plans 2.0, which is available for Azure DevOps Services and Azure DevOps Server 2022 and later versions. For information on the Delivery Plans Marketplace extension, which supports Azure DevOps Server 2020 and earlier versions, see [Delivery Plans 1.0](../extensions/delivery-plans.md).
@@ -186,6 +188,22 @@ Before you set tag colors, [add tags to backlog items](../queries/add-tags-to-wo
 
    > [!TIP]
    > If tags don't display on the cards, select **Fields** and make sure you checked **Show Tags**. 
+
+<a id="use-ai-assistance"></a>
+
+## Use AI to manage delivery plan work items
+
+If you have the [Azure Boards MCP Server](../../mcp-server/azure-boards-mcp-overview.md) connected to your AI agent in agent mode, you can use natural language prompts to query and manage the work items that appear in your delivery plans.
+
+| Task | Example prompt |
+|------|----------------|
+| View scheduled work | ```copilot-prompt\nShow me all work items assigned to Sprint 5 for the Web team\n``` |
+| Check cross-team progress | ```copilot-prompt\nList all features in progress across all teams in the <Contoso> project\n``` |
+| Reschedule work items | ```copilot-prompt\nMove user story #1234 from Sprint 3 to Sprint 4\n``` |
+| Find unscheduled items | ```copilot-prompt\nList all user stories that don't have an iteration path assigned\n``` |
+
+> [!NOTE]
+> Agent mode and the MCP Server use natural language, so you can adjust these prompts or ask follow-up questions to refine the results.
 
 ## Related content  
 <a id="plans-rest-api">  </a>

@@ -2,7 +2,7 @@
 title: Configure WIP limits
 titleSuffix: Azure Boards
 description: Learn how to set Work In Progress Limits on a board in Azure Boards.
-ms.custom: boards-kanban 
+ms.custom: boards-kanban, copilot-scenario-highlight
 ms.service: azure-devops-boards
 ms.assetid: d18351c1-e9e1-4c16-869d-e15ca478c748
 ms.author: chcomley
@@ -20,6 +20,8 @@ ms.date: 06/07/2024
 Work-in-Progress (WIP) limits, a crucial [Kanban](kanban-overview.md) practice, restrict the work your team takes on at each stage. By emphasizing completion before starting new work, teams often experience increased productivity and improved software quality.  
 
 Setting WIP limits for each stage adds soft constraints on the number of items allowed in the corresponding columns. Exceeding these limits is possible, but your board displays item counts next to each limit. Use this article as a guide for setting and implementing WIP limits.
+
+[!INCLUDE [ai-assistance-mcp-server-tip](../../includes/ai-assistance-mcp-server-tip.md)]
 
 ## Prerequisites
 
@@ -135,6 +137,22 @@ Your team should engage in discussions after several weeks of using WIP limits. 
 * **Make metrics-driven adjustments:** Monitor WIP and lead time metrics for process adjustments.
 
 * **Manage culture change:** Apply change management principles and promote team ownership during WIP limit implementation.
+
+<a id="use-ai-assistance"></a>
+
+## Use AI to analyze work in progress
+
+If you have the [Azure Boards MCP Server](../../mcp-server/azure-boards-mcp-overview.md) connected to your AI agent in agent mode, you can use natural language prompts to analyze work-in-progress across your board columns.
+
+| Task | Example prompt |
+|------|----------------|
+| Count items per column | ```copilot-prompt\nHow many work items are in each workflow state for my team's backlog?\n``` |
+| Find overloaded columns | ```copilot-prompt\nShow me all active work items in the 'In Progress' state for the <Contoso> project\n``` |
+| Identify stale items | ```copilot-prompt\nFind work items in the 'Active' state that haven't been updated in the last 14 days\n``` |
+| Check team capacity | ```copilot-prompt\nList all work items assigned to <Jamal> that are currently in progress\n``` |
+
+> [!NOTE]
+> Agent mode and the MCP Server use natural language, so you can adjust these prompts or ask follow-up questions to refine the results.
 
 ## Related content
 

@@ -2,7 +2,7 @@
 title: "Tutorial: Organize Your Product Backlog in Azure Boards"
 titleSuffix: Azure Boards
 description: Learn how to map or parent backlog items to features. Then learn how to map features to epics in Azure Boards.
-ms.custom: boards-backlogs
+ms.custom: boards-backlogs, copilot-scenario-highlight
 ms.service: azure-devops-boards
 ms.assetid: C294ACBD-00A3-4FCF-8777-B354BC0CC1EF
 ms.author: chcomley
@@ -18,6 +18,8 @@ ms.date: 07/29/2025
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 In this tutorial, you learn how to organize your backlog in Azure Boards. After you add features or epics to your portfolio backlog, you can map backlog items. You can add and group items into a hierarchy. Also, drill up or down in the hierarchy, reorder and reparent items, and filter hierarchical views.
+
+[!INCLUDE [ai-assistance-mcp-server-tip](../../includes/ai-assistance-mcp-server-tip.md)]
 
 In this article, you learn how to:
  
@@ -204,6 +206,22 @@ From a product or portfolio backlog, you can multiple select several work items 
 [!INCLUDE [temp](../includes/add-portfolio-backlogs.md)]
 
 [!INCLUDE [temp](../includes/display-rollup-section.md)]
+
+<a id="use-ai-assistance"></a>
+
+## Use AI to organize your backlog
+
+If you have the [Azure Boards MCP Server](../../mcp-server/azure-boards-mcp-overview.md) connected to your AI agent in agent mode, you can use natural language prompts to organize and manage your backlog hierarchy.
+
+| Task | Example prompt |
+|------|----------------|
+| Set parent items | ```copilot-prompt\nSet feature 'User Authentication' as the parent of user stories #101, #102, and #103\n``` |
+| Find unparented items | ```copilot-prompt\nList all user stories that don't have a parent feature assigned\n``` |
+| Build a hierarchy | ```copilot-prompt\nCreate a feature called 'Payment Processing' under epic #50 and add three child user stories for checkout, refund, and receipt\n``` |
+| View item hierarchy | ```copilot-prompt\nShow me the hierarchy of all work items under epic 'Q2 Release'\n``` |
+
+> [!NOTE]
+> Agent mode and the MCP Server use natural language, so you can adjust these prompts or ask follow-up questions to refine the results.
 
 ## Related content  
 

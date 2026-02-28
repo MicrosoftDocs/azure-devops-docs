@@ -2,7 +2,7 @@
 title: Manage and resolve issues or impediments in Azure Boards
 titleSuffix: Azure Boards
 description: Learn how to track issues or impediments to more effectively execute plans or stay on schedule by using Azure Boards.
-ms.custom: boards-backlogs
+ms.custom: boards-backlogs, copilot-scenario-highlight
 ms.service: azure-devops-boards
 ms.assetid: 5B126205-599D-40EB-BC95-23CF1444EF2A
 ms.author: chcomley
@@ -18,6 +18,8 @@ ms.date: 07/26/2022
 <a name="manage-impediments"></a>
 
 If you have known issues you want to track, you can do so by defining an impediment (Scrum) or issue (Agile or CMMI). Impediments and issues represent unplanned activities. Resolving them requires more work beyond what's tracked for actual requirements. Use the impediment work item type to help you track and manage these issues until you can resolve and close them. 
+
+[!INCLUDE [ai-assistance-mcp-server-tip](../../includes/ai-assistance-mcp-server-tip.md)]
 
 Don't confuse impediments with bugs. You track impediments that may cause problems with delivering one or more requirements. For example, you may have to fix feature ambiguity, personnel or resource issues, problems with environments, or other risks that influence scope, quality, or schedule. Other issues that deserve tracking are decisions that require several stakeholders or product teams to weigh in on.
 
@@ -114,6 +116,22 @@ If you want to track issues or impediments along with your requirements or a por
 - **For the Inherited process**: [Customize your backlogs or boards (Inheritance process)](../../organizations/settings/work/customize-process-backlogs-boards.md#edit-product-backlog).
 - **For the On-premise XML process**: [Process configuration XML element reference)](../../reference/xml/process-configuration-xml-element.md#configure-a-backlog).
 ::: moniker-end
+
+<a id="use-ai-assistance"></a>
+
+## Use AI to manage issues and impediments
+
+If you have the [Azure Boards MCP Server](../../mcp-server/azure-boards-mcp-overview.md) connected to your AI agent in agent mode, you can use natural language prompts to create and manage issues or impediments.
+
+| Task | Example prompt |
+|------|----------------|
+| Create an impediment | ```copilot-prompt\nCreate a new impediment titled 'Test environment unavailable' with priority 1 and assign it to <me>\n``` |
+| List active impediments | ```copilot-prompt\nList all active impediments in the current sprint for my team\n``` |
+| Create an issue | ```copilot-prompt\nCreate an issue to track the decision about the API versioning strategy and assign it to <Jamal>\n``` |
+| Resolve an impediment | ```copilot-prompt\nUpdate impediment 456 to the Resolved state and add a comment that the environment issue is fixed\n``` |
+
+> [!NOTE]
+> Agent mode and the MCP Server use natural language, so you can adjust these prompts or ask follow-up questions to refine the results.
 
 ## Related content 
 

@@ -2,7 +2,7 @@
 title: View and add work items
 titleSuffix: Azure Boards
 description: Learn how to view and filter work items like user stories, issues, and bugs, as well as create them.
-ms.custom: boards-work-items, devx-track-azurecli, engagement-fy23
+ms.custom: boards-work-items, devx-track-azurecli, engagement-fy23, copilot-scenario-highlight
 f1_keywords: 
 - vs.tfc.teamexplorer.workitems
 - vs.tfc.teamexplorer.TeamExplorer
@@ -285,6 +285,22 @@ Use the following three controls to manage your views in the web portal.
 
 > [!div class="nextstepaction"]
 > [Manage work items](../backlogs/manage-work-items.md)
+
+<a id="use-ai-assistance"></a>
+
+## Use AI to view and add work items
+
+If you configure the [Azure DevOps MCP Server](../../mcp-server/mcp-server-overview.md), you can view, filter, and create work items using natural language.
+
+| Task | Example prompt |
+|------|----------------|
+| **Create a work item** | ```copilot-prompt Create a user story titled "Implement login page" with acceptance criteria and assign it to <me> in project <Contoso>``` |
+| **View active items** | ```copilot-prompt Show all active bugs assigned to my team in the current sprint for <Contoso>``` |
+| **Filter by recent updates** | ```copilot-prompt List work items updated in the last 3 days in area path <Contoso\\Web>``` |
+| **Create a task under a parent** | ```copilot-prompt Create a task "Write unit tests" under user story #1234 with 4 hours estimated effort``` |
+
+> [!NOTE]
+> - If you're using Visual Studio Code, [agent mode](/visualstudio/ide/copilot-chat-context#agent-mode) is especially helpful for creating and managing work items.
 
 ## Related content
 

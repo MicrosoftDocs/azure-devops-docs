@@ -3,7 +3,7 @@ title: Build and test integration queries
 titleSuffix: Azure DevOps
 description: Learn how to track work by creating queries based on build and test integration fields in Azure Boards.
 ms.service: azure-devops-boards
-ms.custom: cross-service  
+ms.custom: cross-service, copilot-scenario-highlight
 ms.assetid: 6e162a82-c98b-4c94-862c-addcdcbc182d
 ms.author: chcomley
 author: chcomley
@@ -19,6 +19,8 @@ ms.date: 10/08/2025
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 Use work item fields that support build and test integration to improve traceability, analyze quality trends, and automate test-related workflows. Typical scenarios include:
+
+[!INCLUDE [ai-assistance-mcp-server-tip](../../includes/ai-assistance-mcp-server-tip.md)]
 
 - Associate bugs with the specific builds where they were discovered or resolved.
 - Query bugs by build to identify trends and prioritize fixes.
@@ -433,6 +435,22 @@ Key limitations when querying by test case:
 - Field limitations: Some detailed execution results aren't available as standard fields and might require custom reporting or API usage.
 - Performance and rate limits: Azure DevOps enforces request and resource limits; nonoptimized queries or excessive API calls can cause delays or throttling.
 - Test case linking: Test cases don’t automatically link to other work items in a way that supports complex hierarchical queries.
+
+<a id="use-ai-assistance"></a>
+
+## Use AI to query build and test integration fields
+
+If you have the [Azure Boards MCP Server](../../mcp-server/azure-boards-mcp-overview.md) connected to your AI agent in agent mode, you can use natural language prompts to find work items related to builds and test integration.
+
+| Task | Example prompt |
+|------|----------------|
+| Find bugs by build | ```copilot-prompt\nFind all bugs found in build number 20250115.2\n``` |
+| Check test automation | ```copilot-prompt\nList test cases marked as Automated that have no automation test ID\n``` |
+| Track build integration | ```copilot-prompt\nShow bugs that were integrated in the latest build\n``` |
+| Query test case status | ```copilot-prompt\nFind all test cases in the current sprint with their automation status\n``` |
+
+> [!NOTE]
+> Agent mode and the MCP Server use natural language, so you can adjust these prompts or ask follow-up questions to refine the results.
 
 ## Related content
 

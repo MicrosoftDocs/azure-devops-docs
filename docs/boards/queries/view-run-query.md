@@ -2,7 +2,7 @@
 title: View, run, or email a query
 titleSuffix: Azure Boards
 description: Learn how to view, run, favorite, or email queries in Azure Boards.
-ms.custom: boards-queries
+ms.custom: boards-queries, copilot-scenario-highlight
 ms.service: azure-devops-boards
 ms.author: chcomley
 author: chcomley
@@ -20,6 +20,8 @@ ms.date: 10/27/2025
 **Visual Studio 2022**
 
 This article describes how to access and interact with Azure Boards work items by running and sharing queries. You can view and run built-in or shared queries to identify work items assigned to you or that meet other criteria.
+
+[!INCLUDE [ai-assistance-mcp-server-tip](../../includes/ai-assistance-mcp-server-tip.md)]
 
 ## Prerequisites
 
@@ -240,6 +242,22 @@ You can also create work items by selecting **New Work Item** and entering a wor
 
 > [!div class="nextstepaction"]
 > [Define a work item query](using-queries.md)
+
+<a id="use-ai-assistance"></a>
+
+## Use AI to query work items
+
+If you have the [Azure Boards MCP Server](../../mcp-server/azure-boards-mcp-overview.md) connected to your AI agent in agent mode, you can use natural language prompts to find work items without building formal queries.
+
+| Task | Example prompt |
+|------|----------------|
+| Find my work items | ```copilot-prompt\nShow all active work items assigned to <me> in my project\n``` |
+| Query by state | ```copilot-prompt\nList all bugs in the Resolved state for the current sprint\n``` |
+| Search across criteria | ```copilot-prompt\nFind user stories created in the last 7 days that are still in the New state\n``` |
+| Get work item details | ```copilot-prompt\nShow me the details for work item 1234 including all comments\n``` |
+
+> [!NOTE]
+> Agent mode and the MCP Server use natural language, so you can adjust these prompts or ask follow-up questions to refine the results.
 
 ## Related content
 

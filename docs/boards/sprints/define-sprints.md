@@ -2,7 +2,7 @@
 title: Manage sprint timelines
 titleSuffix: Azure Boards
 description: Learn how to set and add dates for sprints, releases, or iterations to implement Scrum in Azure Boards.
-ms.custom: boards-sprints
+ms.custom: boards-sprints, copilot-scenario-highlight
 ms.service: azure-devops-boards
 ms.assetid: 1DB81E71-36D7-43A5-9C9A-38AA1777715A
 ms.author: chcomley
@@ -22,6 +22,8 @@ In the Scrum framework, teams plan and track work item assignments in regular ti
 Agile tools use the **Iteration path** field to track sprints and releases. Iteration paths and sprints are shared resources by all the teams that use them. Teams can choose two or three-week cadences, but you can also specify shorter or longer sprint cycles or create a release schedule that encompasses several sprints.
 
 Use the guidance in this article to set or change sprint dates. To define iteration paths and tree structure or associate teams with sprints, see [Define iteration paths (sprints) and configure team iterations](../../organizations/settings/set-iteration-paths-sprints.md).
+
+[!INCLUDE [ai-assistance-mcp-server-tip](../../includes/ai-assistance-mcp-server-tip.md)]
 
 ## Prerequisites
 
@@ -73,6 +75,22 @@ Each sprint selected for a team provides a backlog, board, and other planning an
 
 > [!div class="nextstepaction"]
 > [Assign work to a sprint](assign-work-sprint.md)
+
+<a id="use-ai-assistance"></a>
+
+## Use AI to manage sprint definitions
+
+If you have the [Azure Boards MCP Server](../../mcp-server/azure-boards-mcp-overview.md) connected to your AI agent in agent mode, you can use natural language prompts to review sprint and iteration path configurations.
+
+| Task | Example prompt |
+|------|----------------|
+| List defined sprints | ```copilot-prompt\nList all iteration paths and their start and end dates for project <Contoso>\n``` |
+| Check sprint dates | ```copilot-prompt\nWhat are the start and end dates for Sprint 12 in project <Contoso>?\n``` |
+| Find sprints without dates | ```copilot-prompt\nWhich sprints in project <Contoso> have no start or end date assigned?\n``` |
+| Review team sprint assignments | ```copilot-prompt\nWhich sprints are assigned to <Contoso Team>?\n``` |
+
+> [!NOTE]
+> Agent mode and the MCP Server use natural language, so you can adjust these prompts or ask follow-up questions to refine the results.
 
 ## Related content 
 

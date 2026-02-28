@@ -2,7 +2,7 @@
 title: Send an email with work items
 titleSuffix: Azure Boards
 description: Learn how to send an email with work items in Azure Boards, Azure DevOps, and Visual Studio Team Explorer. Also learn how to print a list of work items.
-ms.custom: work-items, engagement-fy23
+ms.custom: work-items, engagement-fy23, copilot-scenario-highlight
 ms.service: azure-devops-boards
 ms.assetid: B2E9B082-15BE-448C-96D8-3EF048A15560
 ai-usage: ai-assisted
@@ -19,6 +19,8 @@ ms.date: 10/27/2025
 [!INCLUDE [version-vs-gt-eq-2019.md](../../includes/version-vs-gt-eq-2019.md)] 
 
 Using work items to track your work provides many benefits, including the ability to easily share information. You can capture most information within the work item Description or other rich-text formatted fields. If you need to maintain the information in a different format, you can easily link to or attach a file. 
+
+[!INCLUDE [ai-assistance-mcp-server-tip](../../includes/ai-assistance-mcp-server-tip.md)]
 
 ## Supported tasks 
 
@@ -287,6 +289,22 @@ If you encounter problems when emailing work items:
 ## Marketplace extensions  
 
 You might find other ways to share information by exporting work items to other applications such as Microsoft Word. For more information, review the [Marketplace extensions that support Microsoft Word](https://marketplace.visualstudio.com/search?term=word&target=AzureDevOps&category=Azure%20Boards&sortBy=Relevance). 
+
+<a id="use-ai-assistance"></a>
+
+## Use AI to gather work item details for sharing
+
+If you configure the [Azure DevOps MCP Server](../../mcp-server/mcp-server-overview.md), you can gather work item information for sharing using natural language.
+
+| Task | Example prompt |
+|------|----------------|
+| **Get details of specific items** | ```copilot-prompt Show me the title, state, and assigned-to for work items #100, #101, and #102 in project <Contoso>``` |
+| **Summarize a sprint** | ```copilot-prompt List all completed work items in Sprint 12 for team <Contoso Team> with their titles and states``` |
+| **Export active bugs** | ```copilot-prompt Show all active bugs in project <Contoso> with priority, assigned-to, and created date``` |
+| **Prepare a status report** | ```copilot-prompt Summarize work items changed this week in area path <Contoso\\Web> grouped by state``` |
+
+> [!NOTE]
+> - If you're using Visual Studio Code, [agent mode](/visualstudio/ide/copilot-chat-context#agent-mode) is especially helpful for gathering work item details across multiple queries.
 
 ## Related content  
 

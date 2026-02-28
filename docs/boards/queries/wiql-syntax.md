@@ -2,7 +2,7 @@
 title: Work Item Query Language (WIQL) reference syntax   
 titleSuffix: Azure Boards   
 description: Learn about the reference syntax for the Work Item Query Language used by Azure Boards. 
-ms.custom: boards-queries  
+ms.custom: boards-queries, copilot-scenario-highlight  
 ms.service: azure-devops-boards
 ms.topic: reference
 ai-usage: ai-assisted
@@ -20,6 +20,8 @@ ms.date: 09/17/2025
 You can use WIQL syntax to [define a query as a hyperlink](using-queries.md#define-a-query-as-a-hyperlink) or when using the [Work Item Query Language (REST API)](/rest/api/azure/devops/wit/wiql).
 
 WIQL supports all functions available through the web portal Query Editor plus a few more. You can specify the fields to return and logical grouping of query clauses. You can also use an `ASOF` clause to filter based on assignments as of a previous date.
+
+[!INCLUDE [ai-assistance-mcp-server-tip](../../includes/ai-assistance-mcp-server-tip.md)]
 
 > [!IMPORTANT]
 > WIQL syntax is used to execute the [Query By Wiql REST API](/rest/api/azure/devops/wit/wiql/query%20by%20wiql). The API only returns work item IDs, regardless of which fields you include in the `SELECT` statement. To get full information, (1) get the IDs from WIQL, then (2) get the work items via [Get a list of work items by ID and for specific fields](/rest/api/azure/devops/wit/work-items/list).
@@ -625,6 +627,8 @@ WHERE
         OR EVER [System.AssignedTo] = 'Christie Church <fabrikamfiber1@hotmail.com>'
     )
 ```
+
+<a id="use-ai-assistance"></a>
 
 ## Use Copilot to write, fix, and optimize WIQL
 

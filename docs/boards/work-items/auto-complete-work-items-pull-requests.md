@@ -4,7 +4,7 @@ titleSuffix: Azure Boards
 description: Learn how to automatically complete work items and transition their workflow states when you merge pull requests in Azure Boards and Azure DevOps.  
 ms.service: azure-devops-boards
 ai-usage: ai-assisted
-ms.custom: cross-service
+ms.custom: cross-service, copilot-scenario-highlight
 ms.author: chcomley
 ms.topic: how-to
 monikerRange: '<= azure-devops'
@@ -18,6 +18,8 @@ ms.date: 10/27/2025
 When you link a work item to a pull request (PR), you can automatically complete those work items when you complete the PR. Alternatively, you can specify the workflow state to transition the work item to upon merging the PR. 
 
 This automation streamlines your development workflow by ensuring that work items reflect the current state of your code changes without manual intervention.
+
+[!INCLUDE [ai-assistance-mcp-server-tip](../../includes/ai-assistance-mcp-server-tip.md)]
 
 For more information, see [Create, view, and manage pull requests](../../repos/git/pull-requests.md).
 
@@ -102,6 +104,22 @@ If work items don't automatically complete as expected:
 3. **Validate work item links**: Confirm the work items are properly linked to the pull request.
 4. **Check current state**: Verify the work item isn't already in a completed state.
 5. **Review repository settings**: Ensure automatic completion is enabled in repository settings.
+
+<a id="use-ai-assistance"></a>
+
+## Use AI to manage work items linked to pull requests
+
+If you configure the [Azure DevOps MCP Server](../../mcp-server/mcp-server-overview.md), you can query and manage work items linked to pull requests using natural language.
+
+| Task | Example prompt |
+|------|----------------|
+| **Find linked items** | ```copilot-prompt Show all work items linked to open pull requests in project <Contoso>``` |
+| **Check completion status** | ```copilot-prompt List work items linked to merged PRs that are still in the Active state in <Contoso>``` |
+| **Link a work item to a PR** | ```copilot-prompt Link work item #3456 to pull request #789 in project <Contoso>``` |
+| **Audit PR-linked items** | ```copilot-prompt Show all pull requests merged this sprint with their linked work items for <Contoso>``` |
+
+> [!NOTE]
+> - If you're using Visual Studio Code, [agent mode](/visualstudio/ide/copilot-chat-context#agent-mode) is especially helpful for managing work item and pull request relationships.
 
 ## Related content
 

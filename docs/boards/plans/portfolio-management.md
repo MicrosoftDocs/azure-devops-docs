@@ -7,6 +7,7 @@ ms.assetid: F6FF6E6B-C9AA-4681-9205-D48C8F29D94B
 ms.author: chcomley
 author: chcomley
 ms.topic: how-to
+ms.custom: copilot-scenario-highlight
 ai-usage: ai-assisted
 monikerRange: '<= azure-devops'
 ms.date: 10/20/2025
@@ -18,6 +19,8 @@ ms.date: 10/20/2025
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 Portfolio backlogs let product owners track the work of multiple agile feature teams, monitor progress across projects, and manage risks and dependencies. Product owners create their vision and roadmap for each release and define high-level goals as Epics or Features. Feature teams break down the Epics or Features into Stories for prioritization and development. This structure gives each feature team its own backlog for planning, prioritizing, and tracking its work.
+
+[!INCLUDE [ai-assistance-mcp-server-tip](../../includes/ai-assistance-mcp-server-tip.md)]
 
 :::image type="content" source="media/pm-team-structure.png" alt-text="Diagram showing each team has its own view of the work." border="false":::
 
@@ -100,6 +103,22 @@ To view feature progress based on linked requirements, add a rollup column or vi
 
 > [!div class="nextstepaction"]
 > [Configure a hierarchy of teams](configure-hierarchical-teams.md)
+
+<a id="use-ai-assistance"></a>
+
+## Use AI to manage portfolio backlogs
+
+If you have the [Azure Boards MCP Server](../../mcp-server/azure-boards-mcp-overview.md) connected to your AI agent in agent mode, you can use natural language prompts to create and manage epics, features, and stories across teams.
+
+| Task | Example prompt |
+|------|----------------|
+| Create an epic | ```copilot-prompt\nCreate a new epic called 'Cloud Migration' and assign it to the Platform team's area path\n``` |
+| Check feature progress | ```copilot-prompt\nList all features under epic #50 and their current states\n``` |
+| View team backlogs | ```copilot-prompt\nShow me all active user stories for the Web team in the current sprint\n``` |
+| Assign work across teams | ```copilot-prompt\nUpdate the area path of user story #789 to <Contoso>\\Mobile\n``` |
+
+> [!NOTE]
+> Agent mode and the MCP Server use natural language, so you can adjust these prompts or ask follow-up questions to refine the results.
 
 ## Related content
  

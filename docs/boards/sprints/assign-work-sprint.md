@@ -2,7 +2,7 @@
 title: "Tutorial: Assign Backlog Items to a Sprint"
 titleSuffix: Azure Boards
 description: Learn how to assign work to a sprint or iteration by using Agile processes and tools in Azure Boards.
-ms.custom: boards-sprints
+ms.custom: boards-sprints, copilot-scenario-highlight
 ms.service: azure-devops-boards
 ms.assetid: 
 ms.author: chcomley
@@ -18,6 +18,8 @@ ms.date: 07/31/2025
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)] 
 
 In this tutorial, you plan a sprint by assigning work items from your backlog to that sprint. Each sprint corresponds to a time-boxed interval that supports your team's ability to work using Agile processes and tools. Your product owner works with your team to identify those stories or backlog items to complete in the sprint.
+
+[!INCLUDE [ai-assistance-mcp-server-tip](../../includes/ai-assistance-mcp-server-tip.md)]
 	
 In this article, you learn how to:
 
@@ -136,6 +138,22 @@ With multi-select, you can complete several actions on several work items at onc
 To select several items in a sequence, hold down the shift key. To select several nonsequential items, use the Ctrl key. Then, you can either drag the selected items to a new position within the backlog, to a different sprint, or select an option from the context (:::image type="icon" source="../media/icons/context_menu.png":::) or action (:::image type="icon" source="../media/icons/actions-icon.png":::) menu of one of the items. 
 
 For more information, see [Bulk modify work items](../backlogs/bulk-modify-work-items.md). 
+
+<a id="use-ai-assistance"></a>
+
+## Use AI to assign work to sprints
+
+If you configure the [Azure DevOps MCP Server](../../mcp-server/mcp-server-overview.md), you can assign backlog items to sprints using natural language instead of dragging items manually.
+
+| Task | Example prompt |
+|------|----------------|
+| **Assign items to a sprint** | ```copilot-prompt Move user stories 1234, 1235, and 1236 to Sprint 12 in project <Contoso>``` |
+| **Plan a sprint by priority** | ```copilot-prompt Assign the top 10 priority-1 backlog items to the current sprint in <Contoso>``` |
+| **Rebalance sprints** | ```copilot-prompt Move all incomplete items from Sprint 5 to Sprint 6 in project <Contoso>``` |
+| **Check sprint assignments** | ```copilot-prompt List all work items assigned to Sprint 12 for team <Contoso Team> grouped by assignee``` |
+
+> [!NOTE]
+> - If you're using Visual Studio Code, [agent mode](/visualstudio/ide/copilot-chat-context#agent-mode) is especially helpful for sprint planning scenarios.
 
 ## Next step
 

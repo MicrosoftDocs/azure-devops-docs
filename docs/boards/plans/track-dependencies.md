@@ -3,7 +3,7 @@ title: Track dependencies in Delivery Plans
 titleSuffix: Azure Boards
 description: Learn how to view and manage work item dependencies using dependency tracking features in Delivery Plans.
 ms.service: azure-devops-boards
-ms.custom: cross-project  
+ms.custom: cross-project, copilot-scenario-highlight
 ms.author: chcomley
 author: chcomley
 ms.topic: how-to
@@ -17,6 +17,8 @@ ms.date: 09/03/2025
 [!INCLUDE [version-gt-eq-2022](../../includes/version-gt-eq-2022.md)] 
 
 Delivery Plans provide visual dependency tracking for work items linked with **Predecessor/Successor** relationships. Dependency visualization helps you identify scheduling conflicts and manage cross-team dependencies effectively.
+
+[!INCLUDE [ai-assistance-mcp-server-tip](../../includes/ai-assistance-mcp-server-tip.md)]
 
 Cards display dependency status icons:
 - :::image type="icon" source="media/dependencies/dependency-green-icon.png" border="false"::: **Green icon**: No dependency scheduling issues
@@ -91,6 +93,22 @@ Dependency conflicts occur when a successor work item is scheduled to complete b
 - **Regular review**: Check dependency status during sprint planning and reviews
 - **Cross-team coordination**: Expand team rows to visualize dependencies across teams
 - **Proactive management**: Address red dependency indicators promptly to avoid delays
+
+<a id="use-ai-assistance"></a>
+
+## Use AI to track dependencies
+
+If you have the [Azure Boards MCP Server](../../mcp-server/azure-boards-mcp-overview.md) connected to your AI agent in agent mode, you can use natural language prompts to create and query dependency links between work items.
+
+| Task | Example prompt |
+|------|----------------|
+| Add a dependency link | ```copilot-prompt\nAdd a predecessor link from user story #456 to user story #123\n``` |
+| Find blocking items | ```copilot-prompt\nShow all work items that have successor links and are still in progress\n``` |
+| View dependencies for a team | ```copilot-prompt\nList all predecessor-successor links for work items assigned to the API team\n``` |
+| Check for conflicts | ```copilot-prompt\nFind work items with predecessor links where the predecessor is scheduled after the successor\n``` |
+
+> [!NOTE]
+> Agent mode and the MCP Server use natural language, so you can adjust these prompts or ask follow-up questions to refine the results.
 
 ## Related content
 

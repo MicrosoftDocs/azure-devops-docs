@@ -2,14 +2,14 @@
 title: Filter backlogs, boards, and plans for focused work management
 titleSuffix: Azure Boards
 description: Streamline your workflow with powerful filtering capabilities across Azure Boards tools. Learn to apply field, keyword, tag, and parent filters effectively.
-ms.custom: boards-backlogs, boards-kanban
+ms.custom: boards-backlogs, boards-kanban, copilot-scenario-highlight
 ms.service: azure-devops-boards
 ai-usage: ai-assisted
 ms.author: chcomley
 author: chcomley
 ms.topic: how-to
 monikerRange: '<= azure-devops'
-ms.date: 01/13/2026
+ms.date: 02/27/2026
 ---
 
 # Filter and focus your work in Azure Boards
@@ -27,6 +27,8 @@ To access advanced filtering capabilities, select the :::image type="icon" sourc
 :::image type="content" source="media/filter/filter-backlogs.png" alt-text="Screenshot of choosing Filter function in the latest versions.":::
 
 By using interactive filtering, you can apply multiple criteria simultaneously to create highly focused views that support specific workflows and team needs.
+
+[!INCLUDE [ai-assistance-mcp-server-tip](../../includes/ai-assistance-mcp-server-tip.md)]
 
 ## Strategic filtering use cases
 
@@ -798,6 +800,21 @@ To quickly find revisions that contain a keyword, or revisions made by specific 
 For more information, see [Query work item history and discussion fields](../queries/history-and-auditing.md#filter-history).
 
 :::moniker-end
+
+<a id="use-ai-assistance"></a>
+
+## Use AI to filter and find work items
+
+If you configure the [Azure DevOps MCP Server](../../mcp-server/mcp-server-overview.md), you can ask complex filtering questions in natural language instead of building interactive filters manually.
+
+| Task | Example prompt |
+|------|----------------|
+| **Find blocked items** | ```copilot-prompt Show me all work items tagged 'blocked' in the current sprint for project <Contoso>``` |
+| **Filter by assignee and state** | ```copilot-prompt List active bugs assigned to <me> in <Contoso> project``` |
+| **Cross-team query** | ```copilot-prompt Get all features under epic <1234> that aren't yet completed``` |
+
+> [!NOTE]
+> - If you're using Visual Studio Code, [agent mode](/visualstudio/ide/copilot-chat-context#agent-mode) is especially helpful for complex filtering scenarios.
 
 ## Related content  
 

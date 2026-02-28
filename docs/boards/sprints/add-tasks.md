@@ -3,6 +3,7 @@ title: Add tasks to support sprint planning
 titleSuffix: Azure Boards
 description: Learn how to add tasks to user stories assigned to a sprint. You can also add tasks to an iteration working with Scrum methods in Azure Boards.
 ms.service: azure-devops-boards
+ms.custom: copilot-scenario-highlight
 ms.assetid: 
 ms.author: chcomley
 author: chcomley
@@ -28,6 +29,8 @@ Adding tasks to backlog items is essential for tracking the work required to imp
   - **Initial tasks:** Alternatively, a development lead can define the initial tasks for a story or requirement.
 
 When you add and manage tasks, your team gains a clear understanding of the importance and required effort for each item. This action ensures better workload distribution and project planning.
+
+[!INCLUDE [ai-assistance-mcp-server-tip](../../includes/ai-assistance-mcp-server-tip.md)]
 
 ## Prerequisites
 
@@ -203,6 +206,22 @@ Unparenting a work item removes its association with a parent backlog item or us
 
 > [!div class="nextstepaction"]
 > [3. Set sprint capacity](set-capacity.md)
+
+<a id="use-ai-assistance"></a>
+
+## Use AI to add and manage sprint tasks
+
+If you have the [Azure Boards MCP Server](../../mcp-server/azure-boards-mcp-overview.md) connected to your AI agent in agent mode, you can use natural language prompts to create and manage sprint tasks.
+
+| Task | Example prompt |
+|------|----------------|
+| Add tasks to a user story | ```copilot-prompt\nAdd three tasks (Design, Implement, Test) to user story #1234 and set remaining work to 4 hours each\n``` |
+| Create tasks in bulk | ```copilot-prompt\nFor each active user story in Sprint 12, add a Code Review task assigned to <me> with 2 hours remaining work\n``` |
+| List sprint tasks | ```copilot-prompt\nList all tasks in Sprint 12 for <Contoso Team> grouped by parent work item\n``` |
+| Update task estimates | ```copilot-prompt\nSet remaining work to 0 for all completed tasks in Sprint 11 in project <Contoso>\n``` |
+
+> [!NOTE]
+> Agent mode and the MCP Server use natural language, so you can adjust these prompts or ask follow-up questions to refine the results.
 
 ## Related content
 

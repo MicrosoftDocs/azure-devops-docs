@@ -2,7 +2,7 @@
 title: Manage work items effectively
 titleSuffix: Azure Boards 
 description: Optimize work item management in Azure Boards. Learn to create, update, link, track, and organize work items with best practices for team collaboration.
-ms.custom: devx-track-azurecli
+ms.custom: devx-track-azurecli, copilot-scenario-highlight
 ms.service: azure-devops-boards
 ms.assetid: 9474A25E-A9D8-433D-8370-C94624B4ACD6  
 ai-usage: ai-assisted
@@ -25,6 +25,8 @@ Work items are the foundation of project management in Azure Boards, enabling te
 - **Maintain visibility** across project stakeholders and management
 
 This comprehensive guide covers essential work item management capabilities in Azure DevOps.
+
+[!INCLUDE [ai-assistance-mcp-server-tip](../../includes/ai-assistance-mcp-server-tip.md)]
 
 
 [!INCLUDE [temp](../includes/prerequisites-work-items.md)] 
@@ -290,6 +292,22 @@ Implement proven practices to maximize the effectiveness of work item management
 > [!div class="nextstepaction"]
 > [Create your backlog](create-your-backlog.md) or 
 > [Kanban board quickstart](../boards/kanban-quickstart.md) 
+
+<a id="use-ai-assistance"></a>
+
+## Use AI to manage work items
+
+If you have the [Azure Boards MCP Server](../../mcp-server/azure-boards-mcp-overview.md) connected to your AI agent in agent mode, you can use natural language prompts to create, update, and track work items.
+
+| Task | Example prompt |
+|------|----------------|
+| Create a work item | ```copilot-prompt\nCreate a user story titled 'Add search functionality' with priority 2 and assign it to <Jamal>\n``` |
+| Update work item fields | ```copilot-prompt\nUpdate the state of bug #456 to Resolved and set the reason to 'Fixed'\n``` |
+| Query work items | ```copilot-prompt\nShow me all active work items assigned to <me> in the current sprint\n``` |
+| Add links and comments | ```copilot-prompt\nAdd a comment to work item #789 with the status update 'API integration complete, pending review'\n``` |
+
+> [!NOTE]
+> Agent mode and the MCP Server use natural language, so you can adjust these prompts or ask follow-up questions to refine the results.
 
 ## Related content
 

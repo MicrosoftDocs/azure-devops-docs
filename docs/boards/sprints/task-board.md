@@ -3,7 +3,7 @@ title: Track progress and individual items on the Taskboard
 titleSuffix: Azure Boards 
 description: Learn how to implement scrum by using the sprint dashboard in Azure Boards.
 ms.service: azure-devops-boards
-ms.custom: boards-sprints, engagement-fy23 
+ms.custom: boards-sprints, engagement-fy23, copilot-scenario-highlight
 ms.assetid: 278BF8D9-E34F-4D14-BACC-D3BA704C2C47
 ms.author: chcomley
 author: chcomley
@@ -17,6 +17,8 @@ ms.date: 11/27/2024
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 Adding tasks to backlog items is essential for tracking the work required to implement them. Tasks also help estimate the effort assigned to individual team members and the team as a whole. The capacity tool indicates how much work your team can commit to. To effectively compare capacity with planned work, define and estimate tasks for each backlog item.
+
+[!INCLUDE [ai-assistance-mcp-server-tip](../../includes/ai-assistance-mcp-server-tip.md)]
 
 ### Define comprehensive tasks
 
@@ -234,6 +236,22 @@ Or, if your project uses an On-premises XML process, you can [increase the maxim
 
 > [!div class="nextstepaction"]
 > [End of sprint activities](end-sprint-activities.md) 
+
+<a id="use-ai-assistance"></a>
+
+## Use AI to update sprint progress
+
+If you have the [Azure Boards MCP Server](../../mcp-server/azure-boards-mcp-overview.md) connected to your AI agent in agent mode, you can use natural language prompts to update and monitor sprint progress.
+
+| Task | Example prompt |
+|------|----------------|
+| Update task state | ```copilot-prompt\nMove tasks #3001, #3002, and #3003 to Done in project <Contoso>\n``` |
+| Update remaining work | ```copilot-prompt\nSet remaining work to 2 hours for task #3004 in project <Contoso>\n``` |
+| Sprint progress report | ```copilot-prompt\nShow a summary of task states (To Do, In Progress, Done) for Sprint 12 on <Contoso Team>\n``` |
+| Find stale tasks | ```copilot-prompt\nList all tasks in the current sprint for <Contoso Team> that are still in To Do state and were created more than 3 days ago\n``` |
+
+> [!NOTE]
+> Agent mode and the MCP Server use natural language, so you can adjust these prompts or ask follow-up questions to refine the results.
 
 ## Related content
 

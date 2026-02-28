@@ -2,7 +2,7 @@
 title: "Tutorial: Add Tasks or Other Child Work Items to Checklists"
 titleSuffix: Azure Boards
 description: Add tasks, subtasks, to do lists, bugs, or other child work items as checklists to your board for lightweight tracking in Azure Board and Azure DevOps.
-ms.custom: boards-kanban 
+ms.custom: boards-kanban, copilot-scenario-highlight
 ms.service: azure-devops-boards
 ms.assetid: D4CE68D6-8056-4CB7-ACFA-1FCD05223040 
 ms.author: chcomley
@@ -18,6 +18,8 @@ ms.date: 07/30/2025
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 In this tutorial, you learn how Azure Boards lets you visualize your team's tasks, track progress, and manage work items efficiently. This article provides step-by-step instructions on how to add task checklists to items on your board, enhancing your team's productivity and transparency.
+
+[!INCLUDE [ai-assistance-mcp-server-tip](../../includes/ai-assistance-mcp-server-tip.md)]
 
 ## Prerequisites
 
@@ -109,6 +111,22 @@ Checklist items show the avatar of the team member assigned to the item. You can
 ## Configure your board
 
 To configure or change the layout of your board, see [Customize your boards](../configure-customize.md). 
+
+<a id="use-ai-assistance"></a>
+
+## Use AI to add tasks and child items
+
+If you have the [Azure Boards MCP Server](../../mcp-server/azure-boards-mcp-overview.md) connected to your AI agent in agent mode, you can use natural language prompts to create and manage child work items.
+
+| Task | Example prompt |
+|------|----------------|
+| Add a child task | ```copilot-prompt\nAdd a task called 'Write unit tests' as a child of user story 1234\n``` |
+| Create multiple subtasks | ```copilot-prompt\nCreate three tasks under bug 5678: reproduce the issue, apply the fix, and verify the fix\n``` |
+| View child items | ```copilot-prompt\nShow all child tasks for user story 1234 and their current states\n``` |
+| Find incomplete tasks | ```copilot-prompt\nList all tasks in the current sprint that are still in the 'To Do' state\n``` |
+
+> [!NOTE]
+> Agent mode and the MCP Server use natural language, so you can adjust these prompts or ask follow-up questions to refine the results.
 
 ## Related content
 

@@ -2,7 +2,7 @@
 title: Use Semantic Work Item Searches
 titleSuffix: Azure Boards
 description: Learn how to use the search box to quickly filter for assigned to, created by, state, or work item type in Azure Boards.  
-ms.custom: boards-queries
+ms.custom: boards-queries, copilot-scenario-highlight
 ms.service: azure-devops-boards
 ms.assetid: D5A98F10-AAD2-46DD-91DE-41497CF5ECEF 
 ms.author: chcomley
@@ -26,6 +26,8 @@ You can find work items by using shortcut filters or by specifying keywords or p
 - Review work items assigned to a specific team member
 - Search against specific work item fields to quickly narrow down a list of work items
 - Determine what key words support a managed search
+
+[!INCLUDE [ai-assistance-mcp-server-tip](../../includes/ai-assistance-mcp-server-tip.md)]
  
 ## Prerequisites
 
@@ -251,6 +253,22 @@ The following examples show how to use operators when you create a search string
 ### Q: Does the search box support less than/greater than operators?
 
 **A:** No. The search box doesn't recognize comparison operators such as greater than (>) or less than (<). It translates queries with these operators into a search phrase.
+
+<a id="use-ai-assistance"></a>
+
+## Use AI to search for work items
+
+If you have the [Azure Boards MCP Server](../../mcp-server/azure-boards-mcp-overview.md) connected to your AI agent in agent mode, you can use natural language prompts to search for work items without learning search syntax.
+
+| Task | Example prompt |
+|------|----------------|
+| Find by keyword | ```copilot-prompt\nFind all work items that mention "authentication" in the title or description\n``` |
+| Search by assignee | ```copilot-prompt\nShow all active work items assigned to <Jamal>\n``` |
+| Search by type and state | ```copilot-prompt\nList all new bugs created this week in my project\n``` |
+| Search across projects | ```copilot-prompt\nFind user stories with "API" in the title across all my projects\n``` |
+
+> [!NOTE]
+> Agent mode and the MCP Server use natural language, so you can adjust these prompts or ask follow-up questions to refine the results.
 
 ## Related content
 

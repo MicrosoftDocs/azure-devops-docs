@@ -2,7 +2,7 @@
 title: Query by title, ID, or rich-text fields in Azure Boards and Azure DevOps 
 titleSuffix: Azure Boards
 description: Learn about work queries based on titles, IDs, and rich-text fields in Azure Boards and Azure DevOps.
-ms.custom: boards-queries
+ms.custom: boards-queries, copilot-scenario-highlight
 ms.service: azure-devops-boards
 ms.assetid: c0b1fcb1-c4f4-4651-a401-171fa4372518
 ms.author: chcomley
@@ -18,6 +18,8 @@ ms.date: 10/08/2025
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 Filter work items by keywords, IDs, or empty text fields by using single-line text (String), multi-line text (PlainText), and rich-text (HTML) fields. If queries take too long to return, see [Create a query, Best practices](using-queries.md#best-practices).
+
+[!INCLUDE [ai-assistance-mcp-server-tip](../../includes/ai-assistance-mcp-server-tip.md)]
 
 ## Prerequisites
 
@@ -350,6 +352,22 @@ This table describes common fields used in queries. The ID uniquely identifies a
    All
    :::column-end:::
 :::row-end:::
+
+<a id="use-ai-assistance"></a>
+
+## Use AI to query by title, ID, or description
+
+If you have the [Azure Boards MCP Server](../../mcp-server/azure-boards-mcp-overview.md) connected to your AI agent in agent mode, you can use natural language prompts to find work items by keywords, IDs, or text content.
+
+| Task | Example prompt |
+|------|----------------|
+| Search by keyword | ```copilot-prompt\nFind all work items with 'performance' in the title\n``` |
+| Search descriptions | ```copilot-prompt\nList bugs where the description contains 'null reference exception'\n``` |
+| Find empty fields | ```copilot-prompt\nShow user stories with empty acceptance criteria\n``` |
+| Query by ID range | ```copilot-prompt\nFind work items with IDs between 5000 and 5100\n``` |
+
+> [!NOTE]
+> Agent mode and the MCP Server use natural language, so you can adjust these prompts or ask follow-up questions to refine the results.
 
 ## Related content
 

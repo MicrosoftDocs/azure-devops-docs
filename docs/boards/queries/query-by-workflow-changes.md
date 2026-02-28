@@ -2,7 +2,7 @@
 title: Query by account, user, workflow, or board changes
 titleSuffix: Azure Boards
 description: Learn how to list work items based on changes made to their assignment, state, or board column or swimlane in Azure Boards. 
-ms.custom: boards-queries
+ms.custom: boards-queries, copilot-scenario-highlight
 ms.service: azure-devops-boards
 ms.assetid: 1FD042F2-D503-40A3-A6C7-1E25A0F664C6  
 ai-usage: ai-assisted
@@ -18,6 +18,8 @@ ms.date: 10/09/2025
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 Efficiently tracking assignment and workflow changes in your work items is essential for maintaining project visibility and ensuring smooth progress. This article shows how to create queries that monitor these changes, enabling better management and oversight of your team's work.
+
+[!INCLUDE [ai-assistance-mcp-server-tip](../../includes/ai-assistance-mcp-server-tip.md)]
 
 ## Track work status in workflows
 
@@ -870,6 +872,22 @@ Then the Activated By and Activated Date fields are set to `READONLY`.
 ::: moniker-end
 
 [!INCLUDE [activated-resolved-by-fields](../includes/activated-resolved-by-fields.md)]
+
+<a id="use-ai-assistance"></a>
+
+## Use AI to query assignment and workflow changes
+
+If you have the [Azure Boards MCP Server](../../mcp-server/azure-boards-mcp-overview.md) connected to your AI agent in agent mode, you can use natural language prompts to find work items based on assignment and workflow changes.
+
+| Task | Example prompt |
+|------|----------------|
+| Find reactivated bugs | ```copilot-prompt\nList all bugs that moved from Resolved back to Active in the last 30 days\n``` |
+| Track reassignments | ```copilot-prompt\nFind work items reassigned to <me> in the last 7 days\n``` |
+| Monitor state changes | ```copilot-prompt\nShow user stories whose state changed from Active to Closed during the current sprint\n``` |
+| Check workflow history | ```copilot-prompt\nList all work items where the Assigned To field changed in the last 2 weeks\n``` |
+
+> [!NOTE]
+> Agent mode and the MCP Server use natural language, so you can adjust these prompts or ask follow-up questions to refine the results.
 
 ## Related content
 

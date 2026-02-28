@@ -2,7 +2,7 @@
 title: Query By Area Or Iteration Path
 titleSuffix: Azure Boards
 description: Learn how to query for work items based on their area or iteration path in Azure Boards.
-ms.custom: boards-queries
+ms.custom: boards-queries, copilot-scenario-highlight
 ms.service: azure-devops-boards
 ms.assetid: 65066197-F5BE-45F3-898E-1BA3C7BFDCA3
 ms.author: chcomley
@@ -18,6 +18,8 @@ ms.date: 10/27/2025
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 Area Path and Iteration Path fields appear on all work item forms for every work item type. You define these paths for your project—[area paths](../../organizations/settings/set-area-paths.md) and [iteration paths](../../organizations/settings/set-iteration-paths-sprints.md)—and then select the ones you want to associate with a team. 
+
+[!INCLUDE [ai-assistance-mcp-server-tip](../../includes/ai-assistance-mcp-server-tip.md)]
 
 To understand how to work with area and iteration paths, see [About teams and Agile tools](../../organizations/settings/about-teams-and-settings.md).  
 
@@ -119,6 +121,22 @@ The following fields don't appear on work item forms but Azure DevOps tracks the
 > |Node Name|The name of the last node of an area path. For example, if the area path is Project\A1\B2\C3, the node name is C3.|System.NodeName|String|
 
 The default reportable type is none. Area ID and Iteration ID have indexes. Node Name doesn't. To learn more about field attributes, see [Work item fields and attributes](../work-items/work-item-fields.md).
+
+<a id="use-ai-assistance"></a>
+
+## Use AI to query by area or iteration path
+
+If you have the [Azure Boards MCP Server](../../mcp-server/azure-boards-mcp-overview.md) connected to your AI agent in agent mode, you can use natural language prompts to find work items by area or iteration path.
+
+| Task | Example prompt |
+|------|----------------|
+| Query by area path | ```copilot-prompt\nList all active bugs under the area path <Contoso>\\Backend and its children\n``` |
+| Find current iteration items | ```copilot-prompt\nFind work items assigned to the current iteration for my team\n``` |
+| Check past iterations | ```copilot-prompt\nShow user stories in past iterations that are not yet closed\n``` |
+| Query child area paths | ```copilot-prompt\nList all tasks under any child area path of <Contoso>\\Frontend\n``` |
+
+> [!NOTE]
+> Agent mode and the MCP Server use natural language, so you can adjust these prompts or ask follow-up questions to refine the results.
 
 ## Related content 
 

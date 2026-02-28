@@ -2,7 +2,7 @@
 title: Adjust work to fit sprint capacity
 titleSuffix: Azure Boards
 description: Learn how to adjust items assigned to a sprint to align with a team's sprint capacity. 
-ms.custom: boards-sprints
+ms.custom: boards-sprints, copilot-scenario-highlight
 ms.service: azure-devops-boards
 ms.assetid: 
 ms.author: chcomley
@@ -21,6 +21,8 @@ ms.date: 09/20/2021
 Check your team's capacity after you've defined all the tasks for all the sprint backlog items. You can consider adding more items onto the sprint if your team is under capacity. If over capacity, you'll want to remove items out of the backlog.  
 
 Next, check whether any team member is under, at, or over capacity. Or, if someone hasn't even been assigned any work. Use the capacity bars to make these determinations. If you haven't yet [set capacity for your team](set-capacity.md), do that now.
+
+[!INCLUDE [ai-assistance-mcp-server-tip](../../includes/ai-assistance-mcp-server-tip.md)]
 
 ![Over capacity](media/IC795969.png)  
 
@@ -101,6 +103,22 @@ As you reassign tasks, capacity bars automatically update.
 > ![Capacity bars adjusted](media/adjust-work/adjusted-work.png)   
 
 ::: moniker-end
+
+<a id="use-ai-assistance"></a>
+
+## Use AI to adjust sprint work
+
+If you have the [Azure Boards MCP Server](../../mcp-server/azure-boards-mcp-overview.md) connected to your AI agent in agent mode, you can use natural language prompts to identify and adjust work across your sprint.
+
+| Task | Example prompt |
+|------|----------------|
+| Find overloaded members | ```copilot-prompt\nWhich team members are over capacity in Sprint 12 for <Contoso Team>? Show assigned work vs. capacity\n``` |
+| Reassign tasks | ```copilot-prompt\nReassign task #5678 from <Jamal> to <me> in project <Contoso>\n``` |
+| Move excess items to backlog | ```copilot-prompt\nMove the lowest-priority user stories from Sprint 12 back to the backlog in <Contoso>\n``` |
+| Check sprint balance | ```copilot-prompt\nShow remaining capacity per team member for the current sprint in <Contoso Team>\n``` |
+
+> [!NOTE]
+> Agent mode and the MCP Server use natural language, so you can adjust these prompts or ask follow-up questions to refine the results.
 
 ## Next step
 > [!div class="nextstepaction"]
