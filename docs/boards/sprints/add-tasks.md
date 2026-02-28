@@ -211,7 +211,7 @@ Unparenting a work item removes its association with a parent backlog item or us
 
 ## Use AI to add and manage sprint tasks
 
-If you have the [Azure Boards MCP Server](../../mcp-server/azure-boards-mcp-overview.md) connected to your AI agent in agent mode, you can use natural language prompts to create and manage sprint tasks.
+If you have the [Azure Boards MCP Server](../../mcp-server/mcp-server-overview.md) connected to your AI agent in agent mode, you can use natural language prompts to create and manage sprint tasks.
 
 | Task | Example prompt |
 |------|----------------|

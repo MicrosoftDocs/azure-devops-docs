@@ -222,7 +222,7 @@ The following table lists tasks and their associated articles so you can do more
 
 ## Use AI to manage board columns
 
-If you have the [Azure Boards MCP Server](../../mcp-server/azure-boards-mcp-overview.md) connected to your AI agent in agent mode, you can use natural language prompts to manage work items related to your board columns.
+If you have the [Azure Boards MCP Server](../../mcp-server/mcp-server-overview.md) connected to your AI agent in agent mode, you can use natural language prompts to manage work items related to your board columns.
 
 | Task | Example prompt |
 |------|----------------|

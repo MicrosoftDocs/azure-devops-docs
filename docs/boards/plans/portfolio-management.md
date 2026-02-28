@@ -108,7 +108,7 @@ To view feature progress based on linked requirements, add a rollup column or vi
 
 ## Use AI to manage portfolio backlogs
 
-If you have the [Azure Boards MCP Server](../../mcp-server/azure-boards-mcp-overview.md) connected to your AI agent in agent mode, you can use natural language prompts to create and manage epics, features, and stories across teams.
+If you have the [Azure Boards MCP Server](../../mcp-server/mcp-server-overview.md) connected to your AI agent in agent mode, you can use natural language prompts to create and manage epics, features, and stories across teams.
 
 | Task | Example prompt |
 |------|----------------|

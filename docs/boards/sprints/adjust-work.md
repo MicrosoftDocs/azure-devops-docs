@@ -108,7 +108,7 @@ As you reassign tasks, capacity bars automatically update.
 
 ## Use AI to adjust sprint work
 
-If you have the [Azure Boards MCP Server](../../mcp-server/azure-boards-mcp-overview.md) connected to your AI agent in agent mode, you can use natural language prompts to identify and adjust work across your sprint.
+If you have the [Azure Boards MCP Server](../../mcp-server/mcp-server-overview.md) connected to your AI agent in agent mode, you can use natural language prompts to identify and adjust work across your sprint.
 
 | Task | Example prompt |
 |------|----------------|

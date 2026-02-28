@@ -215,7 +215,7 @@ To programmatically delete, restore, and destroy work items, see one of the foll
 
 ## Use AI to find work items to remove
 
-If you have the [Azure Boards MCP Server](../../mcp-server/azure-boards-mcp-overview.md) connected to your AI agent in agent mode, you can use natural language prompts to find and update work items before removing or deleting them.
+If you have the [Azure Boards MCP Server](../../mcp-server/mcp-server-overview.md) connected to your AI agent in agent mode, you can use natural language prompts to find and update work items before removing or deleting them.
 
 | Task | Example prompt |
 |------|----------------|

@@ -151,7 +151,7 @@ The main workaround is to maintain single ownership of work items by [defining a
 
 ## Use AI to manage hierarchical team work items
 
-If you have the [Azure Boards MCP Server](../../mcp-server/azure-boards-mcp-overview.md) connected to your AI agent in agent mode, you can use natural language prompts to create and manage work items across your team hierarchy.
+If you have the [Azure Boards MCP Server](../../mcp-server/mcp-server-overview.md) connected to your AI agent in agent mode, you can use natural language prompts to create and manage work items across your team hierarchy.
 
 | Task | Example prompt |
 |------|----------------|

@@ -288,7 +288,7 @@ When team composition changes during a project:
 
 ## Use AI for sprint forecasting
 
-If you have the [Azure Boards MCP Server](../../mcp-server/azure-boards-mcp-overview.md) connected to your AI agent in agent mode, you can use natural language prompts to review backlog estimates and velocity data that support forecasting.
+If you have the [Azure Boards MCP Server](../../mcp-server/mcp-server-overview.md) connected to your AI agent in agent mode, you can use natural language prompts to review backlog estimates and velocity data that support forecasting.
 
 | Task | Example prompt |
 |------|----------------|

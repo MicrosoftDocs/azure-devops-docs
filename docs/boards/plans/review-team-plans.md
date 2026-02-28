@@ -183,7 +183,7 @@ To share a delivery plan with team members, copy the URL and send the copied URL
 
 ## Use AI to review team delivery plans
 
-If you have the [Azure Boards MCP Server](../../mcp-server/azure-boards-mcp-overview.md) connected to your AI agent in agent mode, you can use natural language prompts to query work items across team backlogs and sprints.
+If you have the [Azure Boards MCP Server](../../mcp-server/mcp-server-overview.md) connected to your AI agent in agent mode, you can use natural language prompts to query work items across team backlogs and sprints.
 
 | Task | Example prompt |
 |------|----------------|

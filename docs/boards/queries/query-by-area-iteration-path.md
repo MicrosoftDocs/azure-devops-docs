@@ -126,7 +126,7 @@ The default reportable type is none. Area ID and Iteration ID have indexes. Node
 
 ## Use AI to query by area or iteration path
 
-If you have the [Azure Boards MCP Server](../../mcp-server/azure-boards-mcp-overview.md) connected to your AI agent in agent mode, you can use natural language prompts to find work items by area or iteration path.
+If you have the [Azure Boards MCP Server](../../mcp-server/mcp-server-overview.md) connected to your AI agent in agent mode, you can use natural language prompts to find work items by area or iteration path.
 
 | Task | Example prompt |
 |------|----------------|

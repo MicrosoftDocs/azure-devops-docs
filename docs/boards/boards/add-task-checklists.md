@@ -116,7 +116,7 @@ To configure or change the layout of your board, see [Customize your boards](../
 
 ## Use AI to add tasks and child items
 
-If you have the [Azure Boards MCP Server](../../mcp-server/azure-boards-mcp-overview.md) connected to your AI agent in agent mode, you can use natural language prompts to create and manage child work items.
+If you have the [Azure Boards MCP Server](../../mcp-server/mcp-server-overview.md) connected to your AI agent in agent mode, you can use natural language prompts to create and manage child work items.
 
 | Task | Example prompt |
 |------|----------------|

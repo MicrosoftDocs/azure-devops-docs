@@ -247,7 +247,7 @@ You can also create work items by selecting **New Work Item** and entering a wor
 
 ## Use AI to query work items
 
-If you have the [Azure Boards MCP Server](../../mcp-server/azure-boards-mcp-overview.md) connected to your AI agent in agent mode, you can use natural language prompts to find work items without building formal queries.
+If you have the [Azure Boards MCP Server](../../mcp-server/mcp-server-overview.md) connected to your AI agent in agent mode, you can use natural language prompts to find work items without building formal queries.
 
 | Task | Example prompt |
 |------|----------------|

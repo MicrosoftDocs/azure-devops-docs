@@ -258,7 +258,7 @@ The following examples show how to use operators when you create a search string
 
 ## Use AI to search for work items
 
-If you have the [Azure Boards MCP Server](../../mcp-server/azure-boards-mcp-overview.md) connected to your AI agent in agent mode, you can use natural language prompts to search for work items without learning search syntax.
+If you have the [Azure Boards MCP Server](../../mcp-server/mcp-server-overview.md) connected to your AI agent in agent mode, you can use natural language prompts to search for work items without learning search syntax.
 
 | Task | Example prompt |
 |------|----------------|

@@ -193,7 +193,7 @@ Before you set tag colors, [add tags to backlog items](../queries/add-tags-to-wo
 
 ## Use AI to manage delivery plan work items
 
-If you have the [Azure Boards MCP Server](../../mcp-server/azure-boards-mcp-overview.md) connected to your AI agent in agent mode, you can use natural language prompts to query and manage the work items that appear in your delivery plans.
+If you have the [Azure Boards MCP Server](../../mcp-server/mcp-server-overview.md) connected to your AI agent in agent mode, you can use natural language prompts to query and manage the work items that appear in your delivery plans.
 
 | Task | Example prompt |
 |------|----------------|

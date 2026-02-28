@@ -230,7 +230,7 @@ You can use these fields on backlog items and tasks to support planning and capa
 
 ## Use AI to plan and track work
 
-If you have the [Azure Boards MCP Server](../../mcp-server/azure-boards-mcp-overview.md) connected to your AI agent in agent mode, you can use natural language prompts to create and manage work items.
+If you have the [Azure Boards MCP Server](../../mcp-server/mcp-server-overview.md) connected to your AI agent in agent mode, you can use natural language prompts to create and manage work items.
 
 | Task | Example prompt |
 |------|----------------|

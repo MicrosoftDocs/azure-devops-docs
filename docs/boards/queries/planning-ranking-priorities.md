@@ -295,7 +295,7 @@ To add the field to the form:
 
 ## Use AI to query by priority and ranking
 
-If you have the [Azure Boards MCP Server](../../mcp-server/azure-boards-mcp-overview.md) connected to your AI agent in agent mode, you can use natural language prompts to find work items by priority, severity, and ranking fields.
+If you have the [Azure Boards MCP Server](../../mcp-server/mcp-server-overview.md) connected to your AI agent in agent mode, you can use natural language prompts to find work items by priority, severity, and ranking fields.
 
 | Task | Example prompt |
 |------|----------------|

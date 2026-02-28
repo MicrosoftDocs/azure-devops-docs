@@ -185,7 +185,7 @@ You can track which work items get added to a board swimlane by creating a query
 
 ## Use AI to manage work across swimlanes
 
-If you have the [Azure Boards MCP Server](../../mcp-server/azure-boards-mcp-overview.md) connected to your AI agent in agent mode, you can use natural language prompts to query and manage work items across swimlanes.
+If you have the [Azure Boards MCP Server](../../mcp-server/mcp-server-overview.md) connected to your AI agent in agent mode, you can use natural language prompts to query and manage work items across swimlanes.
 
 | Task | Example prompt |
 |------|----------------|

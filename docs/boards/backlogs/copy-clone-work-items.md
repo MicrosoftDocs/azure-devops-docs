@@ -141,7 +141,7 @@ If the **Change type** option isn't available, you can export a set of work item
 
 ## Use AI to create similar work items
 
-If you have the [Azure Boards MCP Server](../../mcp-server/azure-boards-mcp-overview.md) connected to your AI agent in agent mode, you can use natural language prompts to create new work items based on existing ones.
+If you have the [Azure Boards MCP Server](../../mcp-server/mcp-server-overview.md) connected to your AI agent in agent mode, you can use natural language prompts to create new work items based on existing ones.
 
 | Task | Example prompt |
 |------|----------------|

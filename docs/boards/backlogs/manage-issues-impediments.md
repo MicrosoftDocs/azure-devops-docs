@@ -121,7 +121,7 @@ If you want to track issues or impediments along with your requirements or a por
 
 ## Use AI to manage issues and impediments
 
-If you have the [Azure Boards MCP Server](../../mcp-server/azure-boards-mcp-overview.md) connected to your AI agent in agent mode, you can use natural language prompts to create and manage issues or impediments.
+If you have the [Azure Boards MCP Server](../../mcp-server/mcp-server-overview.md) connected to your AI agent in agent mode, you can use natural language prompts to create and manage issues or impediments.
 
 | Task | Example prompt |
 |------|----------------|

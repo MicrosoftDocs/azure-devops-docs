@@ -297,7 +297,7 @@ Implement proven practices to maximize the effectiveness of work item management
 
 ## Use AI to manage work items
 
-If you have the [Azure Boards MCP Server](../../mcp-server/azure-boards-mcp-overview.md) connected to your AI agent in agent mode, you can use natural language prompts to create, update, and track work items.
+If you have the [Azure Boards MCP Server](../../mcp-server/mcp-server-overview.md) connected to your AI agent in agent mode, you can use natural language prompts to create, update, and track work items.
 
 | Task | Example prompt |
 |------|----------------|

@@ -213,7 +213,7 @@ Control how card order is maintained when you move cards between columns.
 
 ## Use AI to query work items displayed on cards
 
-If you have the [Azure Boards MCP Server](../../mcp-server/azure-boards-mcp-overview.md) connected to your AI agent in agent mode, you can use natural language prompts to query and update the work items that appear on your board cards.
+If you have the [Azure Boards MCP Server](../../mcp-server/mcp-server-overview.md) connected to your AI agent in agent mode, you can use natural language prompts to query and update the work items that appear on your board cards.
 
 | Task | Example prompt |
 |------|----------------|

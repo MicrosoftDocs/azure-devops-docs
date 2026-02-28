@@ -758,7 +758,7 @@ For complete CLI reference, see [Azure DevOps CLI documentation](../../cli/index
 
 ## Use AI to manage SAFe® work items
 
-If you have the [Azure Boards MCP Server](../../mcp-server/azure-boards-mcp-overview.md) connected to your AI agent in agent mode, you can use natural language prompts to create and manage work items across your SAFe® portfolio, program, and team levels.
+If you have the [Azure Boards MCP Server](../../mcp-server/mcp-server-overview.md) connected to your AI agent in agent mode, you can use natural language prompts to create and manage work items across your SAFe® portfolio, program, and team levels.
 
 | Task | Example prompt |
 |------|----------------|

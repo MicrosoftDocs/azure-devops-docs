@@ -309,7 +309,7 @@ You can add or remove columns from the list of links, and you can customize the 
 
 ## Use AI to query by links and attachments
 
-If you have the [Azure Boards MCP Server](../../mcp-server/azure-boards-mcp-overview.md) connected to your AI agent in agent mode, you can use natural language prompts to find work items based on their links and attachments.
+If you have the [Azure Boards MCP Server](../../mcp-server/mcp-server-overview.md) connected to your AI agent in agent mode, you can use natural language prompts to find work items based on their links and attachments.
 
 | Task | Example prompt |
 |------|----------------|

@@ -299,7 +299,7 @@ When you import from CSV, for performance reasons, the identity picker doesn't g
 
 ## Use AI to manage work items in bulk
 
-If you have the [Azure Boards MCP Server](../../mcp-server/azure-boards-mcp-overview.md) connected to your AI agent in agent mode, you can use natural language prompts to create and update multiple work items without exporting to CSV.
+If you have the [Azure Boards MCP Server](../../mcp-server/mcp-server-overview.md) connected to your AI agent in agent mode, you can use natural language prompts to create and update multiple work items without exporting to CSV.
 
 | Task | Example prompt |
 |------|----------------|

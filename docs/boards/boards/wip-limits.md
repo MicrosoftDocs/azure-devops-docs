@@ -142,7 +142,7 @@ Your team should engage in discussions after several weeks of using WIP limits. 
 
 ## Use AI to analyze work in progress
 
-If you have the [Azure Boards MCP Server](../../mcp-server/azure-boards-mcp-overview.md) connected to your AI agent in agent mode, you can use natural language prompts to analyze work-in-progress across your board columns.
+If you have the [Azure Boards MCP Server](../../mcp-server/mcp-server-overview.md) connected to your AI agent in agent mode, you can use natural language prompts to analyze work-in-progress across your board columns.
 
 | Task | Example prompt |
 |------|----------------|

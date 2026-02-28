@@ -63,7 +63,7 @@ To add many items at once, continue typing titles and press Enter after each one
 
 ## Use AI to manage features and epics on your board
 
-If you have the [Azure Boards MCP Server](../../mcp-server/azure-boards-mcp-overview.md) connected to your AI agent in agent mode, you can use natural language prompts to create and manage features and epics.
+If you have the [Azure Boards MCP Server](../../mcp-server/mcp-server-overview.md) connected to your AI agent in agent mode, you can use natural language prompts to create and manage features and epics.
 
 | Task | Example prompt |
 |------|----------------|

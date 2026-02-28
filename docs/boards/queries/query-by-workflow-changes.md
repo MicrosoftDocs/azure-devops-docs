@@ -877,7 +877,7 @@ Then the Activated By and Activated Date fields are set to `READONLY`.
 
 ## Use AI to query assignment and workflow changes
 
-If you have the [Azure Boards MCP Server](../../mcp-server/azure-boards-mcp-overview.md) connected to your AI agent in agent mode, you can use natural language prompts to find work items based on assignment and workflow changes.
+If you have the [Azure Boards MCP Server](../../mcp-server/mcp-server-overview.md) connected to your AI agent in agent mode, you can use natural language prompts to find work items based on assignment and workflow changes.
 
 | Task | Example prompt |
 |------|----------------|

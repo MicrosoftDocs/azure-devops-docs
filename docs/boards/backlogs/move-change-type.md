@@ -144,7 +144,7 @@ When you realize that a work item is assigned to the wrong project within your o
 
 ## Use AI to find and update misclassified work items
 
-If you have the [Azure Boards MCP Server](../../mcp-server/azure-boards-mcp-overview.md) connected to your AI agent in agent mode, you can use natural language prompts to find work items that need to be moved or reclassified.
+If you have the [Azure Boards MCP Server](../../mcp-server/mcp-server-overview.md) connected to your AI agent in agent mode, you can use natural language prompts to find work items that need to be moved or reclassified.
 
 | Task | Example prompt |
 |------|----------------|

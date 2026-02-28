@@ -203,7 +203,7 @@ If your name isn't listed in the capacity view, you need to be added as a team m
 
 ## Use AI to manage sprint capacity
 
-If you have the [Azure Boards MCP Server](../../mcp-server/azure-boards-mcp-overview.md) connected to your AI agent in agent mode, you can use natural language prompts to review capacity and workload for your sprint.
+If you have the [Azure Boards MCP Server](../../mcp-server/mcp-server-overview.md) connected to your AI agent in agent mode, you can use natural language prompts to review capacity and workload for your sprint.
 
 | Task | Example prompt |
 |------|----------------|

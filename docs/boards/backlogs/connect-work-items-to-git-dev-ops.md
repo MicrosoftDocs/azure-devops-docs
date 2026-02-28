@@ -192,7 +192,7 @@ The link types you can add within the development section are Branch, Build, Cha
 
 ## Use AI to link work items to development
 
-If you have the [Azure Boards MCP Server](../../mcp-server/azure-boards-mcp-overview.md) connected to your AI agent in agent mode, you can use natural language prompts to manage links between work items and development objects.
+If you have the [Azure Boards MCP Server](../../mcp-server/mcp-server-overview.md) connected to your AI agent in agent mode, you can use natural language prompts to manage links between work items and development objects.
 
 | Task | Example prompt |
 |------|----------------|

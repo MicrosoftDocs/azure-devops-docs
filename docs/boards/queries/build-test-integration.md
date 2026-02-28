@@ -440,7 +440,7 @@ Key limitations when querying by test case:
 
 ## Use AI to query build and test integration fields
 
-If you have the [Azure Boards MCP Server](../../mcp-server/azure-boards-mcp-overview.md) connected to your AI agent in agent mode, you can use natural language prompts to find work items related to builds and test integration.
+If you have the [Azure Boards MCP Server](../../mcp-server/mcp-server-overview.md) connected to your AI agent in agent mode, you can use natural language prompts to find work items related to builds and test integration.
 
 | Task | Example prompt |
 |------|----------------|

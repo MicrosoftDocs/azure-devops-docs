@@ -256,7 +256,7 @@ The table below lists fields that support comparison queries. Not all fields are
 
 ## Use AI to query by field value comparisons
 
-If you have the [Azure Boards MCP Server](../../mcp-server/azure-boards-mcp-overview.md) connected to your AI agent in agent mode, you can use natural language prompts to find work items based on field-to-field comparisons.
+If you have the [Azure Boards MCP Server](../../mcp-server/mcp-server-overview.md) connected to your AI agent in agent mode, you can use natural language prompts to find work items based on field-to-field comparisons.
 
 | Task | Example prompt |
 |------|----------------|

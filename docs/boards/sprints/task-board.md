@@ -241,7 +241,7 @@ Or, if your project uses an On-premises XML process, you can [increase the maxim
 
 ## Use AI to update sprint progress
 
-If you have the [Azure Boards MCP Server](../../mcp-server/azure-boards-mcp-overview.md) connected to your AI agent in agent mode, you can use natural language prompts to update and monitor sprint progress.
+If you have the [Azure Boards MCP Server](../../mcp-server/mcp-server-overview.md) connected to your AI agent in agent mode, you can use natural language prompts to update and monitor sprint progress.
 
 | Task | Example prompt |
 |------|----------------|

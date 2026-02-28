@@ -152,7 +152,7 @@ To add the **Tags** field as a column field for the product backlog, modify the 
 
 ## Use AI to query and manage work item tags
 
-If you have the [Azure Boards MCP Server](../../mcp-server/azure-boards-mcp-overview.md) connected to your AI agent in agent mode, you can use natural language prompts to find and update work items based on tags.
+If you have the [Azure Boards MCP Server](../../mcp-server/mcp-server-overview.md) connected to your AI agent in agent mode, you can use natural language prompts to find and update work items based on tags.
 
 | Task | Example prompt |
 |------|----------------|

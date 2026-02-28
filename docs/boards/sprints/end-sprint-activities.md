@@ -105,7 +105,7 @@ For more information, see [Define iteration paths (sprints) and configure team i
 
 ## Use AI for end-of-sprint activities
 
-If you have the [Azure Boards MCP Server](../../mcp-server/azure-boards-mcp-overview.md) connected to your AI agent in agent mode, you can use natural language prompts to find and update work items at the end of a sprint.
+If you have the [Azure Boards MCP Server](../../mcp-server/mcp-server-overview.md) connected to your AI agent in agent mode, you can use natural language prompts to find and update work items at the end of a sprint.
 
 | Task | Example prompt |
 |------|----------------|

@@ -406,7 +406,7 @@ This table describes activity-based and numeric fields you can use to track work
 
 ## Use AI to query numeric fields
 
-If you have the [Azure Boards MCP Server](../../mcp-server/azure-boards-mcp-overview.md) connected to your AI agent in agent mode, you can use natural language prompts to find work items based on effort, story points, and time-tracking fields.
+If you have the [Azure Boards MCP Server](../../mcp-server/mcp-server-overview.md) connected to your AI agent in agent mode, you can use natural language prompts to find work items based on effort, story points, and time-tracking fields.
 
 | Task | Example prompt |
 |------|----------------|

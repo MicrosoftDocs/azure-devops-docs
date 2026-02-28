@@ -98,7 +98,7 @@ Dependency conflicts occur when a successor work item is scheduled to complete b
 
 ## Use AI to track dependencies
 
-If you have the [Azure Boards MCP Server](../../mcp-server/azure-boards-mcp-overview.md) connected to your AI agent in agent mode, you can use natural language prompts to create and query dependency links between work items.
+If you have the [Azure Boards MCP Server](../../mcp-server/mcp-server-overview.md) connected to your AI agent in agent mode, you can use natural language prompts to create and query dependency links between work items.
 
 | Task | Example prompt |
 |------|----------------|

@@ -80,7 +80,7 @@ Each sprint selected for a team provides a backlog, board, and other planning an
 
 ## Use AI to manage sprint definitions
 
-If you have the [Azure Boards MCP Server](../../mcp-server/azure-boards-mcp-overview.md) connected to your AI agent in agent mode, you can use natural language prompts to review sprint and iteration path configurations.
+If you have the [Azure Boards MCP Server](../../mcp-server/mcp-server-overview.md) connected to your AI agent in agent mode, you can use natural language prompts to review sprint and iteration path configurations.
 
 | Task | Example prompt |
 |------|----------------|

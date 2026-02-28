@@ -211,7 +211,7 @@ From a product or portfolio backlog, you can multiple select several work items 
 
 ## Use AI to organize your backlog
 
-If you have the [Azure Boards MCP Server](../../mcp-server/azure-boards-mcp-overview.md) connected to your AI agent in agent mode, you can use natural language prompts to organize and manage your backlog hierarchy.
+If you have the [Azure Boards MCP Server](../../mcp-server/mcp-server-overview.md) connected to your AI agent in agent mode, you can use natural language prompts to organize and manage your backlog hierarchy.
 
 | Task | Example prompt |
 |------|----------------|

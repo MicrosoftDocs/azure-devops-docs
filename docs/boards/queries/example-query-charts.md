@@ -245,7 +245,7 @@ In addition to the query charts provided earlier in this article, the following 
 
 ## Use AI to create queries for charts
 
-If you have the [Azure Boards MCP Server](../../mcp-server/azure-boards-mcp-overview.md) connected to your AI agent in agent mode, you can use natural language prompts to build the underlying queries that support your charts.
+If you have the [Azure Boards MCP Server](../../mcp-server/mcp-server-overview.md) connected to your AI agent in agent mode, you can use natural language prompts to build the underlying queries that support your charts.
 
 | Task | Example prompt |
 |------|----------------|
