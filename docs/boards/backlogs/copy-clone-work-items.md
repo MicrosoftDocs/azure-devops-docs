@@ -149,6 +149,12 @@ If you have the [Azure Boards MCP Server](../../mcp-server/mcp-server-overview.m
 | Create multiple similar items | ```copilot-prompt Create five tasks similar to task #100 with titles 'Setup environment for Service A' through 'Service E'``` |
 | Get work item details | ```copilot-prompt Get the details of work item #567 so I can create a similar one for another team``` |
 | Duplicate with changes | ```copilot-prompt Create a new bug with the same repro steps as bug #890 but in the area path <Contoso>\\Mobile App``` |
+| Replicate a sprint template | ```copilot-prompt Create the same set of tasks that exist under user story <1234> as new tasks under user story <5678>``` |
+| Create variations | ```copilot-prompt Create 3 user stories for localization: one each for French, German, and Japanese, all under feature <1500> in <Contoso>``` |
+| Scaffold test scenarios | ```copilot-prompt Based on user story <1234>, create 4 test case work items covering the happy path, error handling, edge cases, and performance``` |
+| Duplicate across areas | ```copilot-prompt Create a copy of bug <890> in each of these area paths: <Contoso\\iOS>, <Contoso\\Android>, and <Contoso\\Web>``` |
+| Replicate with new assignees | ```copilot-prompt Create a task identical to <100> for each team member: <Jamal>, <Raisa>, and <Christie>``` |
+| Template from existing | ```copilot-prompt Get the fields of user story <1234> and create a new user story with the same acceptance criteria but titled 'Add export functionality'``` |
 
 > [!NOTE]
 > Agent mode and the MCP Server use natural language, so you can adjust these prompts or ask follow-up questions to refine the results.

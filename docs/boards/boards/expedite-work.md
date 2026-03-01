@@ -193,6 +193,12 @@ If you have the [Azure Boards MCP Server](../../mcp-server/mcp-server-overview.m
 | View items by board lane | ```copilot-prompt List all work items in the 'Expedite' board lane for the <Contoso> project``` |
 | Triage items for expediting | ```copilot-prompt Find all active bugs with Severity 1 that might need to be expedited``` |
 | Check blocked work | ```copilot-prompt Show me all work items tagged 'blocked' that are currently in progress``` |
+| Identify expedite candidates | ```copilot-prompt List active work items in <Contoso> with priority 1 that are past their target date and not yet in the Expedite lane``` |
+| Track expedited item age | ```copilot-prompt Show work items in the Expedite board lane for <Contoso> sorted by how many days they've been active``` |
+| Review lane distribution | ```copilot-prompt Show the count of work items in each board lane for the current sprint in <Contoso>``` |
+| Find items to demote | ```copilot-prompt List work items in the Expedite lane for <Contoso> where priority was changed from 1 to 2 or lower``` |
+| Monitor expedite throughput | ```copilot-prompt Show work items that moved out of the Expedite lane in <Contoso> in the last 2 weeks and how long they stayed there``` |
+| Escalate stalled items | ```copilot-prompt List work items tagged 'blocked' in <Contoso> that haven't been updated in more than 3 days``` |
 
 > [!NOTE]
 > Agent mode and the MCP Server use natural language, so you can adjust these prompts or ask follow-up questions to refine the results.

@@ -150,6 +150,12 @@ If you have the [Azure Boards MCP Server](../../mcp-server/mcp-server-overview.m
 | Find overloaded columns | ```copilot-prompt Show me all active work items in the 'In Progress' state for the <Contoso> project``` |
 | Identify stale items | ```copilot-prompt Find work items in the 'Active' state that haven't been updated in the last 14 days``` |
 | Check team capacity | ```copilot-prompt List all work items assigned to <Jamal> that are currently in progress``` |
+| Analyze per-person WIP | ```copilot-prompt Show the count of active work items per team member in area path <Contoso\\Frontend> and flag anyone with more than 5``` |
+| Detect WIP spikes | ```copilot-prompt Compare the count of in-progress work items this week vs last week for my team in <Contoso>``` |
+| Find multitasking risks | ```copilot-prompt List team members in <Contoso> who have active work items across more than 2 different features``` |
+| Review column throughput | ```copilot-prompt Show how many work items moved from Active to Resolved per week over the last 4 weeks in <Contoso>``` |
+| Identify flow blockers | ```copilot-prompt List work items in <Contoso> that have been in the same state for longer than the average time items spend in that state``` |
+| Suggest WIP rebalancing | ```copilot-prompt Show team members in <Contoso> with no active work items alongside those with more than 3``` |
 
 > [!NOTE]
 > Agent mode and the MCP Server use natural language, so you can adjust these prompts or ask follow-up questions to refine the results.

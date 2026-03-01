@@ -329,9 +329,15 @@ If you configure the [Azure DevOps MCP Server](../../mcp-server/mcp-server-overv
 | **Reassign by work item type** | ```copilot-prompt Change the area path for all bugs assigned to <Jamal> from <Contoso\\Frontend> to <Contoso\\Backend>``` |
 | **Find items to move** | ```copilot-prompt List all work items in area path <Contoso\\OldTeam> grouped by work item type``` |
 | **Verify after move** | ```copilot-prompt Show all work items moved to area path <Contoso\\NewTeam> in the last 7 days``` |
+| **Preview move impact** | ```copilot-prompt How many work items are currently under area path <Contoso\\TeamAlpha> and what are their states? I'm planning to move them to <Contoso\\TeamBeta>``` |
+| **Move and reassign** | ```copilot-prompt Move all active tasks under <Contoso\\Platform> to <Contoso\\Infrastructure> and reassign them from <Raisa> to <Christie>``` |
+| **Find orphaned items after reorg** | ```copilot-prompt List work items whose area path doesn't match any active team's configured area paths in project <Contoso>``` |
+| **Bulk move by sprint** | ```copilot-prompt Move all incomplete work items from Sprint 11 in area path <Contoso\\TeamAlpha> to area path <Contoso\\TeamBeta> and assign to Sprint 12``` |
+| **Audit cross-team moves** | ```copilot-prompt Show all work items that changed area path in the last 30 days in project <Contoso>, grouped by source and destination team``` |
+| **Move with child items** | ```copilot-prompt Move feature #4500 and all its child user stories and tasks from <Contoso\\Frontend> to <Contoso\\FullStack>``` |
 
 > [!NOTE]
-> - If you're using Visual Studio Code, [agent mode](/visualstudio/ide/copilot-chat-context#agent-mode) is especially helpful for bulk moves across teams.
+> If you're using Visual Studio Code, [agent mode](/visualstudio/ide/copilot-chat-context#agent-mode) is especially helpful for bulk moves across teams.
 
 ## Related content
 

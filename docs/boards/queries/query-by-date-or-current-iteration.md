@@ -134,9 +134,15 @@ If you configure the [Azure DevOps MCP Server](../../mcp-server/mcp-server-overv
 | **Query by current sprint** | ```copilot-prompt List all active bugs in the current sprint for team <Contoso Team>``` |
 | **Find stale items** | ```copilot-prompt Show user stories that haven't been updated in the last 30 days in <Contoso>``` |
 | **Query resolved items by date range** | ```copilot-prompt List bugs resolved between January 1 and January 31 in project <Contoso>``` |
+| **Weekly closed summary** | ```copilot-prompt Show the count of work items closed each day this week in <Contoso> broken down by type``` |
+| **Find items approaching deadline** | ```copilot-prompt List work items in <Contoso> with a target date within the next 5 days that are still active``` |
+| **Sprint burn-down check** | ```copilot-prompt Show how many story points remain incomplete vs total planned for the current sprint in <Contoso>``` |
+| **Late-sprint additions** | ```copilot-prompt List work items added to the current sprint in <Contoso> in the second half of the sprint``` |
+| **Month-over-month comparison** | ```copilot-prompt Compare the number of bugs created this month vs last month in <Contoso>``` |
+| **Holiday impact analysis** | ```copilot-prompt Show work items in <Contoso> that had no updates between December 23 and January 2``` |
 
 > [!NOTE]
-> - If you're using Visual Studio Code, [agent mode](/visualstudio/ide/copilot-chat-context#agent-mode) is especially helpful for complex date-based queries.
+> If you're using Visual Studio Code, [agent mode](/visualstudio/ide/copilot-chat-context#agent-mode) is especially helpful for complex date-based queries.
 
 ## Related content
 

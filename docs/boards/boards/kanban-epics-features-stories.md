@@ -71,6 +71,12 @@ If you have the [Azure Boards MCP Server](../../mcp-server/mcp-server-overview.m
 | Add child stories | ```copilot-prompt Add three user stories under the 'Payment Processing' feature: checkout flow, payment validation, and receipt generation``` |
 | View epics by state | ```copilot-prompt Show me all epics that are currently in the 'In Progress' state``` |
 | Check feature progress | ```copilot-prompt List all child user stories under feature 2345 and their current states``` |
+| Review portfolio board | ```copilot-prompt Show all features in <Contoso> grouped by their parent epic with completion percentage of child stories``` |
+| Find features without epics | ```copilot-prompt List features in <Contoso> that don't have a parent epic assigned``` |
+| Track epic timelines | ```copilot-prompt Show all epics in <Contoso> with their start date, target date, and count of active vs completed features``` |
+| Identify at-risk features | ```copilot-prompt List features in <Contoso> that have active child stories with no one assigned``` |
+| Balance feature workload | ```copilot-prompt Show the count of active user stories per feature in the current sprint for <Contoso>``` |
+| Plan next increment | ```copilot-prompt List all features in <Contoso> that are in the New state and have acceptance criteria defined``` |
 
 > [!NOTE]
 > Agent mode and the MCP Server use natural language, so you can adjust these prompts or ask follow-up questions to refine the results.

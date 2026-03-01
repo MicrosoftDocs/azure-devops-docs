@@ -414,6 +414,12 @@ If you have the [Azure Boards MCP Server](../../mcp-server/mcp-server-overview.m
 | Check estimate accuracy | ```copilot-prompt List tasks where completed work exceeds the original estimate``` |
 | Track remaining work | ```copilot-prompt Show active sprint tasks with remaining work greater than zero``` |
 | Find unestimated items | ```copilot-prompt Find user stories where the effort field is empty or not set``` |
+| Calculate sprint capacity | ```copilot-prompt Show total story points committed vs completed for the current sprint in <Contoso>``` |
+| Find outlier estimates | ```copilot-prompt List tasks in <Contoso> where remaining work is greater than 16 hours``` |
+| Sum effort by assignee | ```copilot-prompt Show total story points assigned to each team member in the current sprint for <Contoso>``` |
+| Identify untracked time | ```copilot-prompt List active tasks in the current sprint for <Contoso> that have original estimate set but completed work is still zero``` |
+| Compare effort across sprints | ```copilot-prompt Show total story points completed per sprint for the last 4 sprints in <Contoso>``` |
+| Find sizing inconsistencies | ```copilot-prompt List user stories in <Contoso> with story points of 1 that have more than 3 child tasks``` |
 
 > [!NOTE]
 > Agent mode and the MCP Server use natural language, so you can adjust these prompts or ask follow-up questions to refine the results.

@@ -576,9 +576,15 @@ If you configure the [Azure DevOps MCP Server](../../mcp-server/mcp-server-overv
 | **Query across iterations** | ```copilot-prompt Show user stories completed in the last three sprints for <Contoso>``` |
 | **Build a tree query** | ```copilot-prompt Get all tasks that are children of features in area path <Contoso\\Web>``` |
 | **Find recently updated items** | ```copilot-prompt Show work items changed in the last 7 days that are tagged "performance" in <Contoso>``` |
+| **Multi-condition query** | ```copilot-prompt Find active bugs in <Contoso> with priority 1, severity 2 or higher, and no one assigned``` |
+| **Generate WIQL** | ```copilot-prompt Write a WIQL query that returns all user stories in the current iteration for <Contoso> with story points between 3 and 8``` |
+| **Summarize query results** | ```copilot-prompt Run a query for all active work items in <Contoso> and give me a breakdown by type, state, and area path``` |
+| **Build a one-hop query** | ```copilot-prompt Show all bugs in <Contoso> along with their related work items``` |
+| **Create a trend query** | ```copilot-prompt Show bugs created per week for the last 8 weeks in <Contoso> grouped by area path``` |
+| **Query with negation** | ```copilot-prompt List active user stories in <Contoso> that are not tagged "tech-debt" and not in area path <Contoso\\Maintenance>``` |
 
 > [!NOTE]
-> - If you're using Visual Studio Code, [agent mode](/visualstudio/ide/copilot-chat-context#agent-mode) is especially helpful for building complex queries.
+> If you're using Visual Studio Code, [agent mode](/visualstudio/ide/copilot-chat-context#agent-mode) is especially helpful for building complex queries.
 
 ## Related content
 

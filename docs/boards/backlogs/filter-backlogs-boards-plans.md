@@ -812,9 +812,15 @@ If you configure the [Azure DevOps MCP Server](../../mcp-server/mcp-server-overv
 | **Find blocked items** | ```copilot-prompt Show me all work items tagged 'blocked' in the current sprint for project <Contoso>``` |
 | **Filter by assignee and state** | ```copilot-prompt List active bugs assigned to <me> in <Contoso> project``` |
 | **Cross-team query** | ```copilot-prompt Get all features under epic <1234> that aren't yet completed``` |
+| **Filter by recent changes** | ```copilot-prompt Show work items in <Contoso> that changed state in the last 3 days``` |
+| **Find unparented items** | ```copilot-prompt List user stories in area path <Contoso\\Frontend> that don't have a parent feature``` |
+| **Filter by multiple tags** | ```copilot-prompt Show active work items in <Contoso> tagged both 'security' and 'high-priority'``` |
+| **Spot items missing fields** | ```copilot-prompt List user stories in the current sprint for <Contoso> that have no story points assigned``` |
+| **Filter across iterations** | ```copilot-prompt Show all work items assigned to <me> across the next 3 sprints in <Contoso>``` |
+| **Find items at risk** | ```copilot-prompt List active tasks in the current sprint for <Contoso> where remaining work is greater than 8 hours and the sprint ends within 2 days``` |
 
 > [!NOTE]
-> - If you're using Visual Studio Code, [agent mode](/visualstudio/ide/copilot-chat-context#agent-mode) is especially helpful for complex filtering scenarios.
+> If you're using Visual Studio Code, [agent mode](/visualstudio/ide/copilot-chat-context#agent-mode) is especially helpful for complex filtering scenarios.
 
 ## Related content  
 

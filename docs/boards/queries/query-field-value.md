@@ -264,6 +264,12 @@ If you have the [Azure Boards MCP Server](../../mcp-server/mcp-server-overview.m
 | Check estimate accuracy | ```copilot-prompt List tasks where Completed Work exceeds Original Estimate``` |
 | Find early completions | ```copilot-prompt Show work items that were closed before their target date``` |
 | Compare change history | ```copilot-prompt Find bugs where the person who last changed the item differs from the creator``` |
+| Detect underestimated work | ```copilot-prompt List tasks in the current sprint for <Contoso> where remaining work is more than double the original estimate``` |
+| Find overdue items | ```copilot-prompt Show active work items in <Contoso> where the target date is before today``` |
+| Spot effort mismatches | ```copilot-prompt List user stories in <Contoso> with story points greater than 8 but only 1 child task``` |
+| Compare planned vs actual | ```copilot-prompt For completed tasks in the current sprint for <Contoso>, show original estimate vs completed work side by side``` |
+| Find zero-effort items | ```copilot-prompt List active tasks in the current sprint for <Contoso> where both original estimate and remaining work are zero or empty``` |
+| Identify self-assigned work | ```copilot-prompt Show work items in <Contoso> where Created By equals Assigned To and state is still New``` |
 
 > [!NOTE]
 > Agent mode and the MCP Server use natural language, so you can adjust these prompts or ask follow-up questions to refine the results.

@@ -255,6 +255,12 @@ If you have the [Azure Boards MCP Server](../../mcp-server/mcp-server-overview.m
 | Query by state | ```copilot-prompt List all bugs in the Resolved state for the current sprint``` |
 | Search across criteria | ```copilot-prompt Find user stories created in the last 7 days that are still in the New state``` |
 | Get work item details | ```copilot-prompt Show me the details for work item 1234 including all comments``` |
+| Quick team dashboard | ```copilot-prompt Show active work items for each team member in the current sprint for <Contoso> with their states``` |
+| Morning triage list | ```copilot-prompt List all new and unassigned work items in <Contoso> created since yesterday, sorted by priority``` |
+| End-of-day summary | ```copilot-prompt Show work items I updated today in <Contoso> with what changed``` |
+| Spot blocked work | ```copilot-prompt Find active work items in the current sprint for <Contoso> that are tagged "blocked" or have the word "blocked" in their latest comment``` |
+| Review query results by type | ```copilot-prompt Show active work items in <Contoso> grouped by work item type with counts``` |
+| Export-ready list | ```copilot-prompt List all completed user stories in the current sprint for <Contoso> with ID, title, story points, and closed date``` |
 
 > [!NOTE]
 > Agent mode and the MCP Server use natural language, so you can adjust these prompts or ask follow-up questions to refine the results.

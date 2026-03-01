@@ -160,6 +160,12 @@ If you have the [Azure Boards MCP Server](../../mcp-server/mcp-server-overview.m
 | Add tags in bulk | ```copilot-prompt Add the tag "tech-debt" to all active bugs in the current sprint``` |
 | Find untagged items | ```copilot-prompt List work items with no tags assigned in the <Contoso> area path``` |
 | Query by multiple tags | ```copilot-prompt Find user stories tagged with both "performance" and "P1"``` |
+| List all tags in use | ```copilot-prompt Show all distinct tags used on work items in project <Contoso> sorted by usage count``` |
+| Clean up obsolete tags | ```copilot-prompt List tags in <Contoso> that are used on fewer than 2 work items``` |
+| Replace a tag | ```copilot-prompt Find all work items in <Contoso> tagged "wontfix" and replace that tag with "by-design"``` |
+| Tag by criteria | ```copilot-prompt Add tag "needs-review" to all user stories in <Contoso> that were resolved in the last week but have no linked pull request``` |
+| Analyze tag patterns | ```copilot-prompt Show the count of active work items per tag in area path <Contoso\\Frontend>``` |
+| Find tag mismatches | ```copilot-prompt List work items in <Contoso> tagged "sprint-goal" that aren't assigned to the current sprint``` |
 
 > [!NOTE]
 > Agent mode and the MCP Server use natural language, so you can adjust these prompts or ask follow-up questions to refine the results.

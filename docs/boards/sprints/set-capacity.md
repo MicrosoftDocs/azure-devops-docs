@@ -211,6 +211,12 @@ If you have the [Azure Boards MCP Server](../../mcp-server/mcp-server-overview.m
 | Find overloaded members | ```copilot-prompt List team members whose assigned remaining work exceeds their capacity in the current sprint``` |
 | Find unassigned tasks | ```copilot-prompt List all tasks in the current sprint that have no assignee for <Contoso Team>``` |
 | Review work distribution | ```copilot-prompt Show remaining work grouped by team member for the current sprint in <Contoso Team>``` |
+| Account for days off | ```copilot-prompt <Jamal> has 3 days off next week. What is his effective capacity for Sprint 12 if his daily rate is 6 hours?``` |
+| Identify underutilized members | ```copilot-prompt Which team members on <Contoso Team> have less than 50% of their Sprint 12 capacity allocated to tasks?``` |
+| Plan capacity for activity types | ```copilot-prompt Show remaining work by activity type (Development, Testing, Design) for each team member in the current sprint``` |
+| Capacity trend across sprints | ```copilot-prompt Compare capacity utilization for <Contoso Team> across the last 4 sprints — show assigned work as a percentage of capacity``` |
+| Flag capacity mismatches | ```copilot-prompt Find tasks in Sprint 12 assigned to people who aren't members of <Contoso Team>``` |
+| Simulate adding a member | ```copilot-prompt If we add a developer with 6 hours/day capacity to <Contoso Team> for Sprint 13, how would the workload distribution change?``` |
 
 > [!NOTE]
 > Agent mode and the MCP Server use natural language, so you can adjust these prompts or ask follow-up questions to refine the results.

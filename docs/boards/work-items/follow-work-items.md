@@ -262,7 +262,7 @@ If you configure the [Azure DevOps MCP Server](../../mcp-server/mcp-server-overv
 | **Query with @Follows** | ```copilot-prompt Create a query for all work items I follow that are in the Active state``` |
 
 > [!NOTE]
-> - If you're using Visual Studio Code, [agent mode](/visualstudio/ide/copilot-chat-context#agent-mode) is especially helpful for tracking followed items across projects.
+> If you're using Visual Studio Code, [agent mode](/visualstudio/ide/copilot-chat-context#agent-mode) is especially helpful for tracking followed items across projects.
 
 ## Related content
 

@@ -305,6 +305,12 @@ If you have the [Azure Boards MCP Server](../../mcp-server/mcp-server-overview.m
 | Update work item fields | ```copilot-prompt Update the state of bug #456 to Resolved and set the reason to 'Fixed'``` |
 | Query work items | ```copilot-prompt Show me all active work items assigned to <me> in the current sprint``` |
 | Add links and comments | ```copilot-prompt Add a comment to work item #789 with the status update 'API integration complete, pending review'``` |
+| Summarize a work item | ```copilot-prompt Get work item <1234> and summarize the description, acceptance criteria, and current discussion``` |
+| Clone work item structure | ```copilot-prompt Create a new user story in <Contoso> with the same title, description, and acceptance criteria as work item <1234> but assign it to <Raisa>``` |
+| Track recent updates | ```copilot-prompt Show work items in <Contoso> that I updated today with their current states``` |
+| Check field completeness | ```copilot-prompt List active user stories in the current sprint for <Contoso> that are missing acceptance criteria or a description``` |
+| Get work item history | ```copilot-prompt Show me the revision history of work item <1234> including who made each change``` |
+| Compare work items | ```copilot-prompt Show work items <1234> and <5678> side by side and highlight the differences in their fields``` |
 
 > [!NOTE]
 > Agent mode and the MCP Server use natural language, so you can adjust these prompts or ask follow-up questions to refine the results.

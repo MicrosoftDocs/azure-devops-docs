@@ -117,9 +117,15 @@ If you configure the [Azure DevOps MCP Server](../../mcp-server/mcp-server-overv
 | **Check completion status** | ```copilot-prompt List work items linked to merged PRs that are still in the Active state in <Contoso>``` |
 | **Link a work item to a PR** | ```copilot-prompt Link work item #3456 to pull request #789 in project <Contoso>``` |
 | **Audit PR-linked items** | ```copilot-prompt Show all pull requests merged this sprint with their linked work items for <Contoso>``` |
+| **Find items missing PR links** | ```copilot-prompt List all completed user stories in Sprint 12 that have no linked pull request in project <Contoso>``` |
+| **Detect stale PR links** | ```copilot-prompt Find work items linked to pull requests that were abandoned or closed without merging in <Contoso>``` |
+| **Verify auto-complete worked** | ```copilot-prompt Which work items linked to PRs merged today are still not in the Done or Closed state in project <Contoso>?``` |
+| **Track PR activity by assignee** | ```copilot-prompt For each team member on <Contoso Team>, list their work items that have linked PRs currently in review``` |
+| **Find items with multiple PRs** | ```copilot-prompt Show work items in project <Contoso> that are linked to more than one pull request``` |
+| **Sprint PR coverage report** | ```copilot-prompt What percentage of completed work items in Sprint 12 have at least one linked pull request in <Contoso>?``` |
 
 > [!NOTE]
-> - If you're using Visual Studio Code, [agent mode](/visualstudio/ide/copilot-chat-context#agent-mode) is especially helpful for managing work item and pull request relationships.
+> If you're using Visual Studio Code, [agent mode](/visualstudio/ide/copilot-chat-context#agent-mode) is especially helpful for managing work item and pull request relationships.
 
 ## Related content
 

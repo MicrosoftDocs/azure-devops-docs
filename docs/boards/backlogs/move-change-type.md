@@ -152,6 +152,12 @@ If you have the [Azure Boards MCP Server](../../mcp-server/mcp-server-overview.m
 | Check items before moving | ```copilot-prompt Show me all work items assigned to <Jamal> in the <Contoso> project with their work item types and states``` |
 | Update fields after move | ```copilot-prompt Update the area path of work items #101, #102, and #103 to <Contoso>\\NewTeam``` |
 | Find items by wrong type | ```copilot-prompt List all tasks in the backlog that have story points assigned, which might need to be user stories instead``` |
+| Identify cross-team items | ```copilot-prompt List work items in <Contoso> where the assigned team member's team doesn't match the work item's area path``` |
+| Audit recent moves | ```copilot-prompt Show work items in <Contoso> where the area path changed in the last 14 days``` |
+| Find items needing reclassification | ```copilot-prompt List bugs in <Contoso> that have child tasks, which might need to be user stories instead``` |
+| Bulk reassign area path | ```copilot-prompt Update all active work items in area path <Contoso>\\TeamAlpha> to area path <Contoso>\\TeamBeta>``` |
+| Preview move impact | ```copilot-prompt Show the count of work items by type and state in area path <Contoso>\\OldTeam> so I can plan the move``` |
+| Find stranded items after reorg | ```copilot-prompt List work items in <Contoso> with area paths that don't match any current team's area path configuration``` |
 
 > [!NOTE]
 > Agent mode and the MCP Server use natural language, so you can adjust these prompts or ask follow-up questions to refine the results. The MCP Server can update fields like area path and iteration path but can't change work item types or move items between projects.

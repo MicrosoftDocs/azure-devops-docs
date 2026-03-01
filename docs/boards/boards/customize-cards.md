@@ -221,6 +221,12 @@ If you have the [Azure Boards MCP Server](../../mcp-server/mcp-server-overview.m
 | View items with specific fields | ```copilot-prompt List all active user stories with their priority, assigned to, and story points``` |
 | Update fields on work items | ```copilot-prompt Set the priority of bug 4567 to 1 and add the tag 'regression'``` |
 | Find items by style criteria | ```copilot-prompt Show me all work items assigned to <me> that are past their target date``` |
+| Spot missing card fields | ```copilot-prompt List active user stories in the current sprint for <Contoso> that are missing priority or effort values``` |
+| Audit tag consistency | ```copilot-prompt Show all distinct tags used on work items in area path <Contoso\\Frontend> sorted by usage count``` |
+| Highlight overdue items | ```copilot-prompt List work items in <Contoso> where the target date is in the past and the state is not Closed or Removed``` |
+| Review card annotations | ```copilot-prompt For each active user story in the current sprint for <Contoso>, show the count of child tasks, linked bugs, and linked tests``` |
+| Identify untagged items | ```copilot-prompt List active work items in the current sprint for <Contoso> that have no tags assigned``` |
+| Bulk tag update | ```copilot-prompt Add tag 'Q2-release' to all user stories under feature <1500> in <Contoso>``` |
 
 > [!NOTE]
 > Agent mode and the MCP Server use natural language, so you can adjust these prompts or ask follow-up questions to refine the results.

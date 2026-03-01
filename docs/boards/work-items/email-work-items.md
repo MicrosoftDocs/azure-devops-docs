@@ -304,7 +304,7 @@ If you configure the [Azure DevOps MCP Server](../../mcp-server/mcp-server-overv
 | **Prepare a status report** | ```copilot-prompt Summarize work items changed this week in area path <Contoso\\Web> grouped by state``` |
 
 > [!NOTE]
-> - If you're using Visual Studio Code, [agent mode](/visualstudio/ide/copilot-chat-context#agent-mode) is especially helpful for gathering work item details across multiple queries.
+> If you're using Visual Studio Code, [agent mode](/visualstudio/ide/copilot-chat-context#agent-mode) is especially helpful for gathering work item details across multiple queries.
 
 ## Related content  
 
