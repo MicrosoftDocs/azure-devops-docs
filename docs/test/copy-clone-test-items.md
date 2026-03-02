@@ -621,29 +621,7 @@ From the web portal, you can perform a bulk import or export of test cases from/
 
 ## Import automated test cases (TCM) 
 
-To import automated test cases to a test suite, use `tcm testcase /import`. You must specify a .dll file for the test assembly that contains your tests. 
-
-```tcm 
-tcm testcase /import /collection:teamprojectcollectionurl /teamproject:project
-             /storage:path
-             [/maxpriority:priority]
-             [/minpriority:priority]
-             [/category:filter]
-             [/syncsuite:id [/include]]
-             [/login:username,[password]]
-```
-
-| Parameter | Description |  
-|----------|------------|  
-|**/storage**:`path`|Specifies the path and name of the test assembly that contains your automated tests that you want to import.| 
-|**/maxpriority**:`priority`|Optional. Specifies which tests to import based on the maximum priority of the test method. For example, if the parameter is `/maxpriority:1`, only tests with a priority attribute for the test method less than or equal to 1 are imported as test cases from the assembly.| 
-|**/minpriority**:`priority`|Optional. Specifies which tests to import based on the minimum priority of the test method. For example, if the parameter is `/minpriority:2`, only tests with a priority attribute for the test method equal or greater than 2 are imported as test cases from the assembly.| 
-|**/category**:`filter`|Optional. Specifies which tests to import based on the category of each test method in the test assembly. You can use this parameter together with `/syncsuite` to import tests with a certain category into a specific test suite.<br/> For more information about test categories, see [Run unit tests with Test Explorer](/visualstudio/test/run-unit-tests-with-test-explorer).| 
-|**/syncsuite**:`id`|Optional. Specifies the suite ID for the test suite in your test plan to which you want to add the test cases that you import. This suite can't be a dynamic suite or a query-based suite. If you specify a test suite to synchronize to update added tests, the tests that aren't imported are removed from the test suite but not from the test plan itself.  |
-
-[!INCLUDE [prerequisites-define](includes/common-tcm-parameters.md)] 
-
-[!INCLUDE [limitations-import](includes/limitations-import.md)]
+For information about importing automated test cases by using `tcm testcase /import`, see [Import automated test cases (TCM)](bulk-import-export-test-cases.md#import-automated-test-cases-tcm).
 
  
 
