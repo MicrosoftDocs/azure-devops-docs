@@ -1,7 +1,8 @@
 ---
 ms.subservice: azure-devops-ecosystem
-title: Publish an extension from the command line
-description: Learn how to package and publish your Azure DevOps extension from the command line.
+title: Publish an Azure DevOps Extension From the Command Line
+description: Learn how to publish your Azure DevOps extension from the command line using tfx-cli. Follow step-by-step instructions for Microsoft Entra or PAT authentication.
+#customer intent: As a developer, I want to learn how to publish an Azure DevOps extension from the command line so that I can automate the deployment process.
 ms.assetid: 7adcb1a2-1894-4751-8bed-7c04d084b5cf
 ms.topic: how-to
 monikerRange: '<= azure-devops'
@@ -9,10 +10,10 @@ ms.author: chcomley
 author: chcomley
 ai-usage: ai-assisted
 ms.custom: pat-reduction
-ms.date: 02/24/2026
+ms.date: 03/02/2026
 ---
 
-# Publish from the command line
+# Publish an Azure DevOps extension from the command line
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
@@ -32,6 +33,12 @@ For more information, see the overview of [publish, install, and share](./overvi
 ## Acquire the Cross-platform CLI for Azure DevOps
 
 [!INCLUDE [Control](../includes/procedures/acquire-tfx-cli.md)]
+
+## Install the Cross-platform CLI for Azure DevOps
+
+```bash
+npm install -g tfx-cli
+```
 
 ## Publish with a Microsoft Entra token as a service principal
 
@@ -66,16 +73,16 @@ $response
 
 ---
 
-Then, you can [add the service principal as a member](/visualstudio/extensibility/walkthrough-publishing-a-visual-studio-extension#add-additional-users-to-manage-your-publisher-account) to the publisher using the ID from the previous step.
+Then, use the ID from the previous step to [add the service principal as a member](/visualstudio/extensibility/walkthrough-publishing-a-visual-studio-extension#add-additional-users-to-manage-your-publisher-account) to the publisher.
 
-2. Publish an extension via [TFX CLI](/azure/devops/extend/publish/command-line) using a service principal. Execute the following [TFX CLI](https://github.com/microsoft/tfs-cli/blob/master/docs/extensions.md) command to use its access token:
+1. Publish an extension via [TFX CLI](/azure/devops/extend/publish/command-line) using a service principal. Run the following [TFX CLI](https://github.com/microsoft/tfs-cli/blob/master/docs/extensions.md) command to use its access token:
 ```
 tfx extension publish --publisher my-publisher --vsix my-publisher.my-extension-1.0.0.vsix --auth-type pat -t <ENTRA_TOKEN>
 ```
 
 ## Publish with a personal access token
 
-Create a [personal access token (PAT)](../../organizations/accounts/use-personal-access-tokens-to-authenticate.md) with **Marketplace (publish)** scope and **All accessible organizations** selected.
+Create a [personal access token (PAT)](../../organizations/accounts/use-personal-access-tokens-to-authenticate.md) with **Marketplace (publish)** scope.
 
 After you install tfx-cli and have your PAT, package and publish your extension.
 
@@ -101,7 +108,7 @@ This flag also saves the new version to your manifest.
 > [!NOTE]
 > All options available for `create` are available for the `publish` command.
 
-#### Example
+### Example
 
 ```
 C:\vso-team-calendar>tfx extension publish --publisher publishFabrikam --manifest-js fabrikam.config.js --share-with fabrikam --rev-version
