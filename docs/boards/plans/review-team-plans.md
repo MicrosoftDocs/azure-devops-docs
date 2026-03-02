@@ -7,10 +7,10 @@ ms.assetid: 3B41D55E-B7B1-41B1-B68F-7A83BA2890A5
 ms.author: chcomley
 author: chcomley
 ms.topic: tutorial
-ms.custom: cross-project  
+ms.custom: cross-project, copilot-scenario-highlight
 ai-usage: ai-assisted
 monikerRange: '>= azure-devops-2022'
-ms.date: 10/23/2025
+ms.date: 02/28/2026
 #customer intent: As a product and portfolio owner, I want to understand delivery plans so I can use them to interact with multiple deliverables and schedules and review them with my teams.
 ---
 
@@ -19,6 +19,8 @@ ms.date: 10/23/2025
 [!INCLUDE [version-gt-eq-2022](../../includes/version-gt-eq-2022.md)] 
 
 Delivery plans in Azure Boards let you visualize and review the work items that your teams plan to deliver. A delivery plan shows selected teams' scheduled work items by sprint or iteration path in a calendar view.
+
+[!INCLUDE [ai-assistance-mcp-server-tip](../../includes/ai-assistance-mcp-server-tip.md)]
 
 You can use Delivery Plans to review multiple backlogs and teams across your Azure DevOps organization. The delivery plan drives alignment with organizational goals while letting each team remain autonomous.
 
@@ -176,6 +178,22 @@ You can print all or part of your delivery plan. Depending on the view you want 
 To print a portion of a plan, select the **Fullscreen** icon on the delivery plan's top bar, and then expand or collapse teams and zoom in or out to get the desired view. Take a screenshot of the view or use your browser's **Print** function.
 
 To share a delivery plan with team members, copy the URL and send the copied URL to your team members.
+
+<a id="use-ai-assistance"></a>
+
+## Use AI to review team delivery plans
+
+If you have the [Azure Boards MCP Server](../../mcp-server/mcp-server-overview.md) connected to your AI agent in agent mode, you can use natural language prompts to query work items across team backlogs and sprints.
+
+| Task | Example prompt |
+|------|----------------|
+| Review sprint work | ```copilot-prompt Show all work items assigned to Sprint 8 for the Web team``` |
+| Find cross-sprint features | ```copilot-prompt List features that have child items spanning multiple sprints``` |
+| Check team progress | ```copilot-prompt What epics are in progress across all teams in the <Contoso> project?``` |
+| Reschedule items | ```copilot-prompt Move user story #1234 to Sprint 9``` |
+
+> [!NOTE]
+> Agent mode and the MCP Server use natural language, so you can adjust these prompts or ask follow-up questions to refine the results.
 
 ## Related content  
  

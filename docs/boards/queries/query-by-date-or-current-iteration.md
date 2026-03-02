@@ -2,7 +2,7 @@
 title: Query by date or current iteration in Azure Boards 
 titleSuffix: Azure Boards
 description: Learn how to query for work items based on a date, a team's current iteration, or a sliding window of sprints in Azure Boards. 
-ms.custom: boards-queries
+ms.custom: boards-queries, copilot-scenario-highlight
 ms.service: azure-devops-boards
 ms.assetid: 95D9F558-E3C4-4D5F-BB69-76A3BD7625D8
 ms.author: chcomley
@@ -10,7 +10,7 @@ author: chcomley
 ms.topic: example-scenario
 ai-usage: ai-assisted
 monikerRange: '<= azure-devops'
-ms.date: 02/04/2026
+ms.date: 02/28/2026
 #customer intent: As a team member, I want to learn how to query work items in Azure Boards so I can find items based on when they were created, which iteration they belong to, or other factors.
 ---
 
@@ -19,6 +19,8 @@ ms.date: 02/04/2026
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 This article shows how to list work items by creation, change, resolution, or closed dates. It also shows how to use date macros, such as `@Today`, and iteration macros for team sprints. For iteration path fundamentals and client or macro restrictions, see [Query by area or iteration path](query-by-area-iteration-path.md).
+
+[!INCLUDE [ai-assistance-mcp-server-tip](../../includes/ai-assistance-mcp-server-tip.md)]
 
 ## Prerequisites
 
@@ -119,6 +121,28 @@ Use WIQL when:
 - Query Editor blocks or marks a clause as unsupported (for example, some `Was Ever` uses). The WIQL Editor extension lets you author those queries and save them.
 
 See [Work Item Query Language (WIQL) syntax](../queries/wiql-syntax.md) and the WIQL Editor marketplace extension for examples.
+
+<a id="use-ai-assistance"></a>
+
+## Use AI to query by date or iteration
+
+If you configure the [Azure DevOps MCP Server](../../mcp-server/mcp-server-overview.md), you can ask date-based and iteration-based questions in natural language instead of building query clauses manually.
+
+| Task | Example prompt |
+|------|----------------|
+| **Find items created recently** | ```copilot-prompt Show all work items created in the last 7 days in project <Contoso>``` |
+| **Query by current sprint** | ```copilot-prompt List all active bugs in the current sprint for team <Contoso Team>``` |
+| **Find stale items** | ```copilot-prompt Show user stories that haven't been updated in the last 30 days in <Contoso>``` |
+| **Query resolved items by date range** | ```copilot-prompt List bugs resolved between January 1 and January 31 in project <Contoso>``` |
+| **Weekly closed summary** | ```copilot-prompt Show the count of work items closed each day this week in <Contoso> broken down by type``` |
+| **Find items approaching deadline** | ```copilot-prompt List work items in <Contoso> with a target date within the next 5 days that are still active``` |
+| **Sprint burn-down check** | ```copilot-prompt Show how many story points remain incomplete vs total planned for the current sprint in <Contoso>``` |
+| **Late-sprint additions** | ```copilot-prompt List work items added to the current sprint in <Contoso> in the second half of the sprint``` |
+| **Month-over-month comparison** | ```copilot-prompt Compare the number of bugs created this month vs last month in <Contoso>``` |
+| **Holiday impact analysis** | ```copilot-prompt Show work items in <Contoso> that had no updates between December 23 and January 2``` |
+
+> [!NOTE]
+> If you're using Visual Studio Code, [agent mode](/visualstudio/ide/copilot-chat-context#agent-mode) is especially helpful for complex date-based queries.
 
 ## Related content
 

@@ -2,7 +2,7 @@
 title: Follow work items and pull requests
 titleSuffix: Azure Boards & Azure Repos
 description: Track updates to work items and pull requests by following them to receive targeted notifications in Azure DevOps.
-ms.custom: work-items, cross-project
+ms.custom: work-items, cross-project, copilot-scenario-highlight
 ms.service: azure-devops-boards
 ms.assetid: 77CAEE8E-BF1A-47DA-9818-A0C52BAC813C
 ai-usage: ai-assisted
@@ -10,7 +10,7 @@ ms.author: chcomley
 author: chcomley
 ms.topic: how-to
 monikerRange: '<= azure-devops'
-ms.date: 10/27/2025
+ms.date: 02/28/2026
 ---
 
 # Follow work items and pull requests  
@@ -20,6 +20,8 @@ ms.date: 10/27/2025
 <a id="follow"></a>  
 
 Stay informed about changes to specific work items or pull requests by using the Follow feature. This feature provides targeted notifications on a case-by-case basis, helping you track items that matter most to your work without information overload.
+
+[!INCLUDE [ai-assistance-mcp-server-tip](../../includes/ai-assistance-mcp-server-tip.md)]
 
  > [!TIP]
 > **Quick start**: Select the :::image type="icon" source="../media/icons/follow-icon.png" border="false"::: **Follow** icon on any work item or pull request to start receiving notifications when it changes.
@@ -245,6 +247,22 @@ For team-wide notifications, see [Manage team notifications](../../organizations
 
 > [!div class="nextstepaction"]
 > [Add and update work items](../backlogs/add-work-items.md) 
+
+<a id="use-ai-assistance"></a>
+
+## Use AI to track followed work items
+
+If you configure the [Azure DevOps MCP Server](../../mcp-server/mcp-server-overview.md), you can query and manage followed items using natural language.
+
+| Task | Example prompt |
+|------|----------------|
+| **List followed items** | ```copilot-prompt Show me all work items I'm following in project <Contoso>``` |
+| **Check recent changes** | ```copilot-prompt List recent changes to work items I follow in the last 7 days``` |
+| **Find items by state** | ```copilot-prompt Show active bugs I'm following that are assigned to the current sprint``` |
+| **Query with @Follows** | ```copilot-prompt Create a query for all work items I follow that are in the Active state``` |
+
+> [!NOTE]
+> If you're using Visual Studio Code, [agent mode](/visualstudio/ide/copilot-chat-context#agent-mode) is especially helpful for tracking followed items across projects.
 
 ## Related content
 

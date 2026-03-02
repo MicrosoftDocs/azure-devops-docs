@@ -163,13 +163,13 @@ You add query folders from the **Boards > Queries > All** page.
 
     :::image type="content" source="media/organize-queries/select-new-folder.png" alt-text="Screenshot of Open Actions menu, choose New folder.":::
 
-1. Enter the name for the folder in the New folder dialog. If you want to change the location of the folder, select it from the Folder drop down menu.  
+1. Enter the name for the folder in the **New folder** dialog. If you want to change the location of the folder, select it from the **Folder** dropdown menu.  
 
     :::image type="content" source="media/organize-queries/new-folder-dialog.png" alt-text="Screenshot of new folder dialog.":::
 
 1. To move items into a folder, drag-and-drop a query onto the folder. From the web portal, you can only drag a single query from outside a folder into a folder. 
 
-    Optionally, you can select **More commands** :::image type="icon" source="../media/icons/actions-icon.png" border="false":::   for an existing query, select **Edit**, and then select **Save As**. In the **Save query** as dialog, select the folder you want to save the query in. 
+    Optionally, you can select **More commands** :::image type="icon" source="../media/icons/actions-icon.png" border="false":::   for an existing query, select **Edit**, and then select **Save As**. In the **Save query as** dialog, select the folder you want to save the query in. 
 
     :::image type="content" source="media/organize-queries/save-query-as-dialog.png" alt-text="Screenshot of Save query as dialog.":::
   
@@ -185,13 +185,13 @@ You add query folders from the **Boards > Queries > All** page.
 
     :::image type="content" source="media/view-run-queries/select-new-folder-new-boards-hubs.png" alt-text="Screenshot of New folder selection.":::
     
-1. Enter the name for the folder in the New folder dialog. If you want to change the location of the folder, select it from the Folder drop down menu.  
+1. Enter the name for the folder in the **New folder** dialog. If you want to change the location of the folder, select it from the **Folder** dropdown menu.  
 
     :::image type="content" source="media/view-run-queries/new-folder-dialog-new-boards-hubs.png" alt-text="Screenshot of new folder dialog.":::
 
 1. To move items into a folder, drag-and-drop a query onto the folder. From the web portal, you can only drag a single query from outside a folder into a folder. 
 
-    Optionally, you can select **More commands** :::image type="icon" source="../media/icons/actions-icon.png" border="false":::   for an existing query, select **Edit**, and then select **Save As**. In the **Save query** as dialog, select the folder you want to save the query in. 
+    Optionally, you can select **More commands** :::image type="icon" source="../media/icons/actions-icon.png" border="false":::   for an existing query, select **Edit**, and then select **Save As**. In the **Save query as** dialog, select the folder you want to save the query in. 
     
     :::image type="content" source="media/view-run-queries/save-as-dialog-new-boards-hubs.png" alt-text="Screenshot of Save query as dialog.":::
 
@@ -219,7 +219,7 @@ All changes you make to your query folder structure in Visual Studio appear in t
 
 To save a shared query as a team favorite, you must be a member of the team.
 
-You can add a shared query to team favorites. You share queries with your team by adding them to a folder under the **Shared Queries** container. To save a query to a **Shared Queries** folder, get added to the [**Project Collection Administrators** group](../../organizations/security/change-organization-collection-level-permissions.md) or have your [permissions set for a folder under Shared Queries](set-query-permissions.md). 
+You can add a shared query to team favorites. To share queries with your team, add the queries to a folder under the **Shared Queries** container. To save a query to a **Shared Queries** folder, you must be a member of the [**Project Collection Administrators** group](../../organizations/security/change-organization-collection-level-permissions.md) or have your [permissions set for a folder under Shared Queries](set-query-permissions.md). 
 
 You can only add shared queries as team favorites if you have [team administrator or project administrator permissions](../../organizations/settings/manage-teams.md). 
 

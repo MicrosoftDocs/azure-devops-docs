@@ -2,14 +2,14 @@
 title: Use Semantic Work Item Searches
 titleSuffix: Azure Boards
 description: Learn how to use the search box to quickly filter for assigned to, created by, state, or work item type in Azure Boards.  
-ms.custom: boards-queries
+ms.custom: boards-queries, copilot-scenario-highlight
 ms.service: azure-devops-boards
 ms.assetid: D5A98F10-AAD2-46DD-91DE-41497CF5ECEF 
 ms.author: chcomley
 author: chcomley
 ms.topic: how-to
 monikerRange: '<= azure-devops'
-ms.date: 10/27/2025
+ms.date: 02/28/2026
 ---
 
 # Run a semantic work item search
@@ -26,6 +26,8 @@ You can find work items by using shortcut filters or by specifying keywords or p
 - Review work items assigned to a specific team member
 - Search against specific work item fields to quickly narrow down a list of work items
 - Determine what key words support a managed search
+
+[!INCLUDE [ai-assistance-mcp-server-tip](../../includes/ai-assistance-mcp-server-tip.md)]
  
 ## Prerequisites
 
@@ -251,6 +253,28 @@ The following examples show how to use operators when you create a search string
 ### Q: Does the search box support less than/greater than operators?
 
 **A:** No. The search box doesn't recognize comparison operators such as greater than (>) or less than (<). It translates queries with these operators into a search phrase.
+
+<a id="use-ai-assistance"></a>
+
+## Use AI to search for work items
+
+If you have the [Azure Boards MCP Server](../../mcp-server/mcp-server-overview.md) connected to your AI agent in agent mode, you can use natural language prompts to search for work items without learning search syntax.
+
+| Task | Example prompt |
+|------|----------------|
+| Find by keyword | ```copilot-prompt Find all work items that mention "authentication" in the title or description``` |
+| Search by assignee | ```copilot-prompt Show all active work items assigned to <Jamal>``` |
+| Search by type and state | ```copilot-prompt List all new bugs created this week in my project``` |
+| Search across projects | ```copilot-prompt Find user stories with "API" in the title across all my projects``` |
+| Search by description content | ```copilot-prompt Find work items in <Contoso> whose description mentions "database migration"``` |
+| Combine search criteria | ```copilot-prompt Find active bugs in <Contoso> with "timeout" in the title that are priority 1 or 2``` |
+| Search acceptance criteria | ```copilot-prompt List user stories in <Contoso> whose acceptance criteria mention "performance" or "latency"``` |
+| Find items by ID range | ```copilot-prompt Show work items <1000> through <1050> in <Contoso> with their titles and states``` |
+| Search recent comments | ```copilot-prompt Find work items in <Contoso> where someone mentioned "deployment" in the discussion in the last 7 days``` |
+| Fuzzy search by topic | ```copilot-prompt Find all work items in <Contoso> related to single sign-on, SSO, or federated authentication``` |
+
+> [!NOTE]
+> Agent mode and the MCP Server use natural language, so you can adjust these prompts or ask follow-up questions to refine the results.
 
 ## Related content
 

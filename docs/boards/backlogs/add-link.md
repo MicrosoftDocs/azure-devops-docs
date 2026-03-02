@@ -10,7 +10,7 @@ ms.author: chcomley
 author: chcomley
 ms.topic: how-to
 monikerRange: '<= azure-devops'
-ms.date: 01/29/2026
+ms.date: 02/28/2026
 #customer intent: As a team member, I want to understand how links between work items and other elements operate and help project planning and development.
 ---
 
@@ -552,9 +552,15 @@ If you have the [Azure DevOps MCP Server](../../mcp-server/mcp-server-overview.m
 | **Remove specific links** | ```copilot-prompt Remove link <5678> from work item <1234> ``` |
 | **Remove links by type** | ```copilot-prompt Remove all related links from work item <1234> ``` |
 | **Create and link test cases** | ```copilot-prompt Create a Test Case with test steps based on user story <1234> and link it back to the story ``` |
+| **Build parent-child hierarchy** | ```copilot-prompt Create 3 child tasks under user story <1234> in <Contoso> for design, implementation, and testing``` |
+| **Find broken dependencies** | ```copilot-prompt Show work items in <Contoso> that have predecessor links to items that are removed or closed``` |
+| **Trace requirements** | ```copilot-prompt Starting from epic <1000> in <Contoso>, show me the full hierarchy of features, user stories, and tasks``` |
+| **Discover duplicate links** | ```copilot-prompt List work items in <Contoso> that have duplicate links and show the linked item states``` |
+| **Cross-project linking** | ```copilot-prompt Link work item <1234> in <Contoso> as related to work item <5678> in <Fabrikam>``` |
+| **Audit link completeness** | ```copilot-prompt List user stories in the current sprint for <Contoso> that don't have any child tasks``` |
 
 > [!TIP]
-> - If you're using Visual Studio Code, [agent mode](/visualstudio/ide/copilot-chat-context#agent-mode) is especially helpful for troubleshooting complex linking scenarios.
+> If you're using Visual Studio Code, [agent mode](/visualstudio/ide/copilot-chat-context#agent-mode) is especially helpful for troubleshooting complex linking scenarios.
 > - To avoid using stale or cached data from previous queries, add to your prompt, `Do not use previously fetched data`.
 
 ::: moniker-end

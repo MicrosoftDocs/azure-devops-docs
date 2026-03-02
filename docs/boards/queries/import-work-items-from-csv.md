@@ -2,14 +2,14 @@
 title: Export, update, and import bulk work items with CSV files
 titleSuffix: Azure Boards
 description: Learn how to export, update, and import work items in bulk from a CSV formatted file in Azure Boards. 
-ms.custom: "boards-queries, linked-from-support"
+ms.custom: "boards-queries, linked-from-support, copilot-scenario-highlight"
 ms.service: azure-devops-boards
 ai-usage: ai-assisted
 ms.author: chcomley
 author: chcomley
 ms.topic: how-to
 monikerRange: "<=azure-devops"
-ms.date: 01/26/2026
+ms.date: 02/28/2026
 #customer intent: As a team member, I want to export, update, and import work items in CSV format to manage them in bulk using Excel or other tools.
 ---
 
@@ -30,6 +30,8 @@ The CSV approach offers several advantages over direct web editing:
 - **Speed**: Make changes to hundreds of work items simultaneously.
 - **Flexibility**: Work offline and import changes when ready.
 - **No Excel add-in required**: Unlike the [Excel integration](../backlogs/office/bulk-add-modify-work-items-excel.md), the CSV feature works with any spreadsheet application.
+
+[!INCLUDE [ai-assistance-mcp-server-tip](../../includes/ai-assistance-mcp-server-tip.md)]
 
 ## Prerequisites
 
@@ -292,6 +294,22 @@ The work item results always list the data errors found for individual work item
 A: When you use the web UI, the identity picker goes through extra steps to validate the user. First it checks to see if the person is a valid user in the organization. If not, it searches on the identity in Microsoft Entra ID. If the user's in Microsoft Entra ID but not in the organization, that user gets added to the valid identities.
 
 When you import from CSV, for performance reasons, the identity picker doesn't go through these extra steps. It only checks to see if there's a matching User Principal Name (UPN) already in the organization. If it doesn't find a matching UPN, it reports that the identity is unknown.
+
+<a id="use-ai-assistance"></a>
+
+## Use AI to manage work items in bulk
+
+If you have the [Azure Boards MCP Server](../../mcp-server/mcp-server-overview.md) connected to your AI agent in agent mode, you can use natural language prompts to create and update multiple work items without exporting to CSV.
+
+| Task | Example prompt |
+|------|----------------|
+| Create items in bulk | ```copilot-prompt Create 5 user stories for the <Contoso> project with titles for a new login feature``` |
+| Bulk update fields | ```copilot-prompt Set the iteration path to Sprint 5 for all active tasks assigned to <Jamal>``` |
+| Find items to export | ```copilot-prompt List all work items modified in the last 7 days in the <Contoso> area path``` |
+| Update imported items | ```copilot-prompt Update the state to Closed for bugs 1234, 1235, and 1236``` |
+
+> [!NOTE]
+> Agent mode and the MCP Server use natural language, so you can adjust these prompts or ask follow-up questions to refine the results. For large-scale data migration or offline editing, use the CSV import/export feature described in this article.
 
 ## Related content
 

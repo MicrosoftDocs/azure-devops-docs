@@ -3,7 +3,7 @@ title: Edit user stories and other work items in bulk
 titleSuffix: Azure Boards
 description: Learn how to make the same change to many work items in Azure Boards using the bulk modify feature in Azure Boards.
 ms.service: azure-devops-boards
-ms.custom: boards-backlogs, linked-from-support
+ms.custom: boards-backlogs, linked-from-support, copilot-scenario-highlight
 ms.assetid: 152CAFE0-2360-470A-98AC-F613A67C24D2
 ms.author: chcomley
 author: chcomley
@@ -23,6 +23,8 @@ Use bulk modify when you need to quickly make the same change to many work items
 > To add work items in bulk or update multiple fields with different values, use [CSV Import](../queries/import-work-items-from-csv.md). You can't complete a bulk add of work items through the web portal.
 
 By using bulk modify, you can edit fields and add or remove tags. You can also reassign work or move work to a specific sprint. You can also use bulk modify to change the work item type or move work items to other projects. The options available to you depend on the platform you work from and the permissions assigned to you.
+
+[!INCLUDE [ai-assistance-mcp-server-tip](../../includes/ai-assistance-mcp-server-tip.md)]
 
 ## Prerequisites
 
@@ -191,16 +193,38 @@ This example adds the *Service* tag to the selected work items.
 
 :::image type="content" source="media/bulk-modify/edit-tags-dialog.png" alt-text="Screenshot of Edit work items dialog where you can add tags.":::
 
-## Related content
-
-To add fields or customize a work item form, see [Customize your work tracking experience](../../reference/customize-work.md). The method you use depends on the process model that supports your project.  
-
-### Migrate or change a large number of work items
+## Migrate or change a large number of work items
 
 For large scale, organizational moves, use the REST API calls for [Work item batch operations](/rest/api/azure/devops/wit/work%20items#operations).
 
 At this time, you can't move work items to a different organization or collection. You can only migrate work item information by exporting and then importing them by using [Excel](../backlogs/office/bulk-add-modify-work-items-excel.md).
 
-### Add multiple values to a field  
+## Add multiple values to a field  
 
 If you implemented a [custom control that supports multiple values](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.vsts-extensions-multivalue-control), you can use Excel to bulk edit the field. You can't modify it by using the web portal. You can only select a single value for the field.
+
+<a id="use-ai-assistance"></a>
+
+## Use AI to bulk modify work items
+
+If you configure the [Azure DevOps MCP Server](../../mcp-server/mcp-server-overview.md), you can describe bulk changes in natural language instead of selecting and editing items manually.
+
+| Task | Example prompt |
+|------|----------------|
+| **Reassign items** | ```copilot-prompt Reassign all active user stories in Sprint 12 from <Jamal> to <Raisa> in project <Contoso>``` |
+| **Change priority** | ```copilot-prompt Set priority to 1 for all bugs tagged "regression" in project <Contoso>``` |
+| **Add tags in bulk** | ```copilot-prompt Add tag "security-review" to all active work items in area path <Contoso\\Auth> ``` |
+| **Move items to a sprint** | ```copilot-prompt Move all uncommitted user stories from Sprint 5 to Sprint 6 in project <Contoso>``` |
+| **Close completed items** | ```copilot-prompt Close all resolved bugs in <Contoso> that have been resolved for more than 14 days``` |
+| **Bulk update area paths** | ```copilot-prompt Move all work items in area path <Contoso\\OldTeam> to <Contoso\\NewTeam>``` |
+| **Remove stale tags** | ```copilot-prompt Remove tag "sprint-goal" from all work items in completed sprints in project <Contoso>``` |
+| **Set story points** | ```copilot-prompt Set story points to 3 for all user stories in <Contoso> that are sized as Small and have no story points``` |
+| **Bulk assign to iteration** | ```copilot-prompt Assign all unparented tasks in <Contoso\\Backend> to the current sprint``` |
+| **Update multiple fields** | ```copilot-prompt For all active bugs in area path <Contoso\\Frontend>, set priority to 2 and add tag "frontend-triage"``` |
+
+> [!NOTE]
+> If you're using Visual Studio Code, [agent mode](/visualstudio/ide/copilot-chat-context#agent-mode) is especially helpful for complex bulk operations.
+
+## Related content
+
+To add fields or customize a work item form, see [Customize your work tracking experience](../../reference/customize-work.md). The method you use depends on the process model that supports your project.  

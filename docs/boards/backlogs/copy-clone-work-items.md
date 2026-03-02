@@ -2,14 +2,14 @@
 title: Copy or clone work items
 titleSuffix: Azure Boards
 description: Learn how to copy or clone single or multiple Azure Boards work items, and add lists of work items to emails or other apps.
-ms.custom: cross-project
+ms.custom: cross-project, copilot-scenario-highlight
 ms.service: azure-devops-boards
 ms.assetid: 743A3914-CD86-403D-AA4F-42CDBBB69F95
 ms.author: chcomley
 author: chcomley
 ms.topic: how-to
 monikerRange: '<= azure-devops'
-ms.date: 10/15/2025
+ms.date: 02/28/2026
 #customer intent: As an Azure Boards user, I want to duplicate work items, copy work item details or URLs, or copy lists of selected work items so I can distribute them to my teammates and stakeholders.
 
 ---
@@ -19,6 +19,8 @@ ms.date: 10/15/2025
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)] 
 
 This article describes how to create copies of Azure Boards work items or their details, and how to copy and add lists of work items to emails or other apps.
+
+[!INCLUDE [ai-assistance-mcp-server-tip](../../includes/ai-assistance-mcp-server-tip.md)]
 
 - To duplicate a single work item, use **Create copy of work item**.
 - To copy a list of work items, multiselect the work items and select **Copy as HTML**. You can then paste the list into Excel, other apps, or email.
@@ -134,6 +136,28 @@ The email sends through your default mail client, and includes a link to a query
 To change a large number of work item types, select **Change type** from the context menu for the multiselected list. For more information, see [Change work item type](move-change-type.md).
 
 If the **Change type** option isn't available, you can export a set of work items to Excel or CSV, copy them to a new list, and reimport them specifying a different work item type. For more information, see [Bulk add or modify work items with Excel](office/bulk-add-modify-work-items-excel.md) or [Import or update work items in bulk by using CSV files](../queries/import-work-items-from-csv.md).
+
+<a id="use-ai-assistance"></a>
+
+## Use AI to create similar work items
+
+If you have the [Azure Boards MCP Server](../../mcp-server/mcp-server-overview.md) connected to your AI agent in agent mode, you can use natural language prompts to create new work items based on existing ones.
+
+| Task | Example prompt |
+|------|----------------|
+| Create a similar work item | ```copilot-prompt Create a new user story with the same title and description as work item #234 but assign it to Sprint 5``` |
+| Create multiple similar items | ```copilot-prompt Create five tasks similar to task #100 with titles 'Setup environment for Service A' through 'Service E'``` |
+| Get work item details | ```copilot-prompt Get the details of work item #567 so I can create a similar one for another team``` |
+| Duplicate with changes | ```copilot-prompt Create a new bug with the same repro steps as bug #890 but in the area path <Contoso>\\Mobile App``` |
+| Replicate a sprint template | ```copilot-prompt Create the same set of tasks that exist under user story <1234> as new tasks under user story <5678>``` |
+| Create variations | ```copilot-prompt Create 3 user stories for localization: one each for French, German, and Japanese, all under feature <1500> in <Contoso>``` |
+| Scaffold test scenarios | ```copilot-prompt Based on user story <1234>, create 4 test case work items covering the happy path, error handling, edge cases, and performance``` |
+| Duplicate across areas | ```copilot-prompt Create a copy of bug <890> in each of these area paths: <Contoso\\iOS>, <Contoso\\Android>, and <Contoso\\Web>``` |
+| Replicate with new assignees | ```copilot-prompt Create a task identical to <100> for each team member: <Jamal>, <Raisa>, and <Christie>``` |
+| Template from existing | ```copilot-prompt Get the fields of user story <1234> and create a new user story with the same acceptance criteria but titled 'Add export functionality'``` |
+
+> [!NOTE]
+> Agent mode and the MCP Server use natural language, so you can adjust these prompts or ask follow-up questions to refine the results.
 
 ## Related content
 

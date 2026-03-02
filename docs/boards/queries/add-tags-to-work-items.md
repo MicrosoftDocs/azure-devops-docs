@@ -2,14 +2,14 @@
 title: Add Tags to Work Items to Categorize Lists and Boards 
 titleSuffix: Azure Boards
 description: Learn how to add work item tags to categorize and filter lists & boards when working in Azure Boards.
-ms.custom: boards-queries
+ms.custom: boards-queries, copilot-scenario-highlight
 ms.service: azure-devops-boards
 ms.assetid: 79A08F31-BB8A-48BD-AD17-477EE0B76BC7
 ms.author: chcomley
 author: chcomley
 ms.topic: how-to
 monikerRange: '<= azure-devops'
-ms.date: 07/31/2025
+ms.date: 02/28/2026
 #customer intent: As a team member with organizational responsibilities, I want to use tags to organize team activities.
 ---
 
@@ -22,6 +22,8 @@ Tag work items to quickly filter the product backlog or a work item query by cat
 You can add and modify tags from the web portal or from Team Explorer plug-in for Visual Studio. Also, you can open a query in [Excel](../backlogs/office/bulk-add-modify-work-items-excel.md) to modify tags in bulk.
 
 Tags are a better choice for filtering work items than using text strings as described in [Define a work item query](using-queries.md). Tags are a shared resource associated with a project and not a team. If your project contains multiple teams, all teams add to and work from the same set of tags.
+
+[!INCLUDE [ai-assistance-mcp-server-tip](../../includes/ai-assistance-mcp-server-tip.md)]
 
 ## Prerequisites
 
@@ -145,6 +147,28 @@ Limit queries to fewer than 25 tags. More than that amount and the query likely 
 To add the **Tags** field as a column field for the product backlog, modify the ProcessConfiguration file to include `System.Tags` For more information, see the [Process configuration XML element reference](../../reference/xml/process-configuration-xml-element.md).
 
 ::: moniker-end
+
+<a id="use-ai-assistance"></a>
+
+## Use AI to query and manage work item tags
+
+If you have the [Azure Boards MCP Server](../../mcp-server/mcp-server-overview.md) connected to your AI agent in agent mode, you can use natural language prompts to find and update work items based on tags.
+
+| Task | Example prompt |
+|------|----------------|
+| Find tagged items | ```copilot-prompt Find all active work items tagged with "security" in my project``` |
+| Add tags in bulk | ```copilot-prompt Add the tag "tech-debt" to all active bugs in the current sprint``` |
+| Find untagged items | ```copilot-prompt List work items with no tags assigned in the <Contoso> area path``` |
+| Query by multiple tags | ```copilot-prompt Find user stories tagged with both "performance" and "P1"``` |
+| List all tags in use | ```copilot-prompt Show all distinct tags used on work items in project <Contoso> sorted by usage count``` |
+| Clean up obsolete tags | ```copilot-prompt List tags in <Contoso> that are used on fewer than 2 work items``` |
+| Replace a tag | ```copilot-prompt Find all work items in <Contoso> tagged "wontfix" and replace that tag with "by-design"``` |
+| Tag by criteria | ```copilot-prompt Add tag "needs-review" to all user stories in <Contoso> that were resolved in the last week but have no linked pull request``` |
+| Analyze tag patterns | ```copilot-prompt Show the count of active work items per tag in area path <Contoso\\Frontend>``` |
+| Find tag mismatches | ```copilot-prompt List work items in <Contoso> tagged "sprint-goal" that aren't assigned to the current sprint``` |
+
+> [!NOTE]
+> Agent mode and the MCP Server use natural language, so you can adjust these prompts or ask follow-up questions to refine the results.
 
 ## Related content
 
