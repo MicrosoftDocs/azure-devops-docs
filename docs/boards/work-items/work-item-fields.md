@@ -2,14 +2,14 @@
 title: List work item fields and attributes in Azure Boards
 titleSuffix: Azure Boards
 description: Learn about work item fields, their attributes, and how to modify them in Azure Boards. 
-ms.custom: work-items, engagement-fy23
+ms.custom: work-items, engagement-fy23, copilot-scenario-highlight
 ms.service: azure-devops-boards
 ai-usage: ai-assisted
 ms.author: chcomley
 author: chcomley
 monikerRange: '<= azure-devops'
 ms.topic: how-to
-ms.date: 10/27/2025
+ms.date: 02/28/2026
 ---
 
 # List work item fields and attributes
@@ -31,6 +31,8 @@ Work item fields track information within Azure DevOps. The system defines these
 ::: moniker-end
 
 For a description of each field defined with a system process, see [Work item field index](guidance/work-item-field.md).  
+
+[!INCLUDE [ai-assistance-mcp-server-tip](../../includes/ai-assistance-mcp-server-tip.md)]
 
 ## Why work item fields matter
 
@@ -831,6 +833,28 @@ Common issues and solutions when working with work item fields:
 - **Invalid values**: Check if the field has restricted allowed values or validation rules
 - **Read-only fields**: Verify the field's `IsEditable` attribute
 - **Format requirements**: Ensure data matches the expected field data type
+
+<a id="use-ai-assistance"></a>
+
+## Use AI to explore work item fields
+
+If you configure the [Azure DevOps MCP Server](../../mcp-server/mcp-server-overview.md), you can explore and query work item fields using natural language.
+
+| Task | Example prompt |
+|------|----------------|
+| **List fields for a work item type** | ```copilot-prompt Show me all fields available for the Bug work item type in project <Contoso>``` |
+| **Find custom fields** | ```copilot-prompt List all custom fields defined in my organization``` |
+| **Check field usage** | ```copilot-prompt Which work item types use the "Story Points" field in project <Contoso>?``` |
+| **Query by field values** | ```copilot-prompt Show all user stories where Story Points is greater than 8 in <Contoso>``` |
+| **Find empty required fields** | ```copilot-prompt List all active work items in project <Contoso> where the Priority field is empty``` |
+| **Compare field values across types** | ```copilot-prompt Show which fields are shared between Bug and User Story work item types in project <Contoso>``` |
+| **Audit field consistency** | ```copilot-prompt Find all work items in <Contoso> where the Remaining Work field is set but the Original Estimate is blank``` |
+| **Explore picklist values** | ```copilot-prompt What are the allowed values for the Severity field on the Bug work item type in project <Contoso>?``` |
+| **Find rarely used fields** | ```copilot-prompt Which custom fields in project <Contoso> have values set on fewer than 10 work items?``` |
+| **Identify field data issues** | ```copilot-prompt Show work items in <Contoso> where the Closed Date is set but the state is not Done or Closed``` |
+
+> [!NOTE]
+> If you're using Visual Studio Code, [agent mode](/visualstudio/ide/copilot-chat-context#agent-mode) is especially helpful for exploring field definitions and attributes.
 
 ## Related content  
 

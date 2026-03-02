@@ -10,7 +10,7 @@ ms.author: chcomley
 author: chcomley
 ms.topic: how-to
 monikerRange: '<= azure-devops'
-ms.date: 01/29/2026
+ms.date: 02/28/2026
 #customer intent: As a team member, I want to understand how to create and manage backlogs in Azure Boards to improve my team's workflow.
 ---
 
@@ -297,9 +297,15 @@ If you configure the [Azure DevOps MCP Server](../../mcp-server/mcp-server-overv
 | **Update work items** | ```copilot-prompt Update work item <1234> with Story Points = <5> and State = <Active> ``` |
 | **Prioritize backlog** | ```copilot-prompt Get all work items in the product backlog for <Contoso> and prioritize them for a <two-week> sprint with <three> developers ``` |
 | **Triage work** | ```copilot-prompt List work items for <Stories> backlog, find all security-related bugs, and assign the first <4> to the current iteration ``` |
+| **Find backlog gaps** | ```copilot-prompt List features in <Contoso> that have no child user stories``` |
+| **Estimate effort** | ```copilot-prompt Show all user stories in <Contoso> project that are active but have no story points assigned``` |
+| **Backlog health check** | ```copilot-prompt List all work items in <Contoso> backlog that have been in the New state for more than 30 days``` |
+| **Split large items** | ```copilot-prompt Show user stories in <Contoso> with story points greater than 13 that are still in the New state``` |
+| **Balance workload** | ```copilot-prompt Show the count of active backlog items per team member in area path <Contoso\\Frontend>``` |
+| **Track dependencies** | ```copilot-prompt List user stories in <Contoso> that have predecessor links to items that aren't yet completed``` |
 
 > [!TIP]
-> - If you're using Visual Studio Code, [agent mode](/visualstudio/ide/copilot-chat-context#agent-mode) is especially helpful for troubleshooting complex backlog scenarios.
+> If you're using Visual Studio Code, [agent mode](/visualstudio/ide/copilot-chat-context#agent-mode) is especially helpful for troubleshooting complex backlog scenarios.
 > - To avoid using stale or cached data from previous queries, add to your prompt, "Do not use previously fetched data."
 
 ::: moniker-end

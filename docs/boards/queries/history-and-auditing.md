@@ -3,14 +3,14 @@ title: Query Work Items By History
 titleSuffix: Azure Boards
 description: Learn how to query work item history and comments to support audit requirements when working in Azure Boards.
 ms.service: azure-devops-boards
-ms.custom: boards-queries, engagement-fy23
+ms.custom: boards-queries, engagement-fy23, copilot-scenario-highlight
 ms.assetid: A5AC271A-8DF0-40AD-9867-1B1E9E5B1FE9
 ai-usage: ai-assisted
 ms.author: chcomley
 author: chcomley
 ms.topic: example-scenario
 monikerRange: '<= azure-devops'
-ms.date: 10/08/2025
+ms.date: 02/28/2026
 #customer intent: As an Azure DevOps developer, I want to query work item history and comments, so I can support audit requirements in Azure Boards.
 ---
 
@@ -19,6 +19,8 @@ ms.date: 10/08/2025
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 A work item's history records who created the item, what changed, and why the change occurred. This information supports traceability and auditing. When you add entries to the History field, include enough detail to help the next owner understand context and next steps.
+
+[!INCLUDE [ai-assistance-mcp-server-tip](../../includes/ai-assistance-mcp-server-tip.md)]
 
 > [!NOTE]
 > There is no separate **Discussion** field. To find comments added in the Discussion area, filter on the **History** field—all text entered into the Discussion box is appended to History.
@@ -352,3 +354,31 @@ Use these fields to filter queries and build reports. Some fields update as an i
   <SERVERDEFAULT from="clock" />
 </FIELD>
 ```
+
+<a id="use-ai-assistance"></a>
+
+## Use AI to query work item history
+
+If you configure the [Azure DevOps MCP Server](../../mcp-server/mcp-server-overview.md), you can ask history and audit questions in natural language instead of building query clauses manually.
+
+| Task | Example prompt |
+|------|----------------|
+| **Find items mentioning a keyword in history** | ```copilot-prompt Show me all work items whose history contains "regression" in project <Contoso>``` |
+| **Find reopened items** | ```copilot-prompt List bugs that were closed and then reactivated in the current sprint for <Contoso>``` |
+| **Audit changes by a person** | ```copilot-prompt Show work items where <Jamal> made changes in the last 30 days in project <Contoso>``` |
+| **Find items with discussion activity** | ```copilot-prompt List user stories with discussion comments added this week in <Contoso>``` |
+| **Track priority changes** | ```copilot-prompt Show work items in <Contoso> where priority was changed from 2 or lower to 1 in the last 14 days``` |
+| **Audit reassignments** | ```copilot-prompt List work items in the current sprint for <Contoso> where the Assigned To field changed more than twice``` |
+| **Find reverted items** | ```copilot-prompt Show work items in <Contoso> that moved from Resolved back to Active in the last 30 days and who made the change``` |
+| **Review sprint changes** | ```copilot-prompt List work items in <Contoso> where the iteration path changed during the current sprint``` |
+| **Track scope changes** | ```copilot-prompt Show work items added to or removed from the current sprint for <Contoso> after the sprint start date``` |
+| **Audit field modifications** | ```copilot-prompt List work items in <Contoso> where the area path was changed in the last week and show the old and new values``` |
+
+> [!NOTE]
+> If you're using Visual Studio Code, [agent mode](/visualstudio/ide/copilot-chat-context#agent-mode) is especially helpful for complex history and audit queries.
+
+## Related content
+
+- [Query by date or current iteration](query-by-date-or-current-iteration.md)
+- [Query fields, operators, and macros](query-operators-variables.md)
+- [View and run queries](view-run-query.md)

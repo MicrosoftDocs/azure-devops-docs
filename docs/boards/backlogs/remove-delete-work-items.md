@@ -2,14 +2,14 @@
 title: Remove, delete, and restore work items in Azure Boards
 titleSuffix: Azure Boards
 description: Learn how to remove, delete, or restore work items in Azure Boards to manage backlogs and boards more efficiently.
-ms.custom: boards-backlogs, linked-from-support
+ms.custom: boards-backlogs, linked-from-support, copilot-scenario-highlight
 ms.service: azure-devops-boards
 ms.assetid: 306929CA-DB58-45E3-AD45-B774901789D3
 ms.author: chcomley
 author: chcomley
 ms.topic: how-to
 monikerRange: '<= azure-devops'
-ms.date: 08/27/2025
+ms.date: 02/28/2026
 #customer intent: As a team member or administrator, I want to understand how to remove or restore work items in Azure Boards to manage them.
 ---
 
@@ -18,6 +18,8 @@ ms.date: 08/27/2025
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 Work items can live forever in your work tracking data store. You never have to delete them. However, you might want to set up a work item management process for one of the following actions:
+
+[!INCLUDE [ai-assistance-mcp-server-tip](../../includes/ai-assistance-mcp-server-tip.md)]
 
 | Action | Description |
 |:-------|:------------|
@@ -209,6 +211,28 @@ To programmatically delete, restore, and destroy work items, see one of the foll
 - [Recycle bin REST API Reference](/rest/api/azure/devops/wit/recyclebin)
 - [Work Items - Delete REST API Reference](/rest/api/azure/devops/wit/work-items/delete)
   
+<a id="use-ai-assistance"></a>
+
+## Use AI to find work items to remove
+
+If you have the [Azure Boards MCP Server](../../mcp-server/mcp-server-overview.md) connected to your AI agent in agent mode, you can use natural language prompts to find and update work items before removing or deleting them.
+
+| Task | Example prompt |
+|------|----------------|
+| Change state to Removed | ```copilot-prompt Change the state of work items #101, #102, and #103 to Removed``` |
+| Find items in Removed state | ```copilot-prompt List all work items in the Removed state in area path <Contoso>\\OldFeature``` |
+| Find stale items to clean up | ```copilot-prompt Show me all work items in the 'New' state that haven't been updated in the last 90 days``` |
+| Identify closed items | ```copilot-prompt List all work items closed more than a year ago in the <Contoso> project``` |
+| Find abandoned work | ```copilot-prompt List active work items in <Contoso> assigned to people who are no longer on the team``` |
+| Identify duplicate candidates | ```copilot-prompt Show bugs in <Contoso> with the same title or very similar titles``` |
+| Find items with no activity | ```copilot-prompt List work items in <Contoso> that have never had a state change and were created more than 60 days ago``` |
+| Preview removal impact | ```copilot-prompt Show all child work items linked to user story <1234> so I can review before removing it``` |
+| Bulk state change | ```copilot-prompt Set all user stories in area path <Contoso\\DeprecatedModule> to the Removed state``` |
+| Audit removed items | ```copilot-prompt List all work items in <Contoso> that were moved to the Removed state in the last 30 days and show who changed them``` |
+
+> [!NOTE]
+> Agent mode and the MCP Server use natural language, so you can adjust these prompts or ask follow-up questions to refine the results. The MCP Server can update work item states but can't delete, restore, or destroy work items.
+
 ## Related content
 
 - [View and add work items using the Work Items page](../work-items/view-add-work-items.md)

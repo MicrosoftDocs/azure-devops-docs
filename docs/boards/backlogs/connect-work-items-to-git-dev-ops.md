@@ -2,7 +2,7 @@
 title: Drive Git development from work items
 titleSuffix: Azure Boards
 description: Learn how to create a branch, commit, or a pull request in Azure Boards. Also, automatically link work items with source control branches, builds, and commits.
-ms.custom: boards-backlogs
+ms.custom: boards-backlogs, copilot-scenario-highlight
 ms.service: azure-devops-boards
 ms.assetid: BD7CE3C1-9E15-4BD6-B9CD-F78569C74D0D
 ai-usage: ai-assisted
@@ -10,7 +10,7 @@ ms.author: chcomley
 author: chcomley
 ms.topic: tutorial
 monikerRange: '<= azure-devops'
-ms.date: 11/22/2024
+ms.date: 02/28/2026
 ---
 
 # Drive Git development from a work item in Azure Boards   
@@ -18,6 +18,8 @@ ms.date: 11/22/2024
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 Linking your work items to development objects such as branches, commits, pull requests, and builds is a powerful way to drive development and keep your team synchronized. By creating branches directly from work items, you establish a clear connection between tasks and code changes. As development progresses, you can associate pull requests and commits with these work items, ensuring a comprehensive record of the operations performed to complete specific work.
+
+[!INCLUDE [ai-assistance-mcp-server-tip](../../includes/ai-assistance-mcp-server-tip.md)]
 
 This article covers how to create new branches, add links to commits, and manage pull requests in a Git repository hosted on Azure DevOps. For instructions on linking GitHub commits and pull requests to work items, see [Link GitHub commits and pull requests to work items](../github/link-to-from-github.md).
 
@@ -185,6 +187,22 @@ The link types you can add within the development section are Branch, Build, Cha
 > The *Integrated in build* link type also works for GitHub repositories when you use YAML pipelines. For more information, see [View build status for YAML pipelines](../github/link-to-from-github.md#view-build-status-for-yaml-pipelines-integrated-in-build).
 
 ![Screenshot shows Artifact-to-artifact link types.](../queries/media/link-tracking-artifact-to-artifact-link-types.png)
+
+<a id="use-ai-assistance"></a>
+
+## Use AI to link work items to development
+
+If you have the [Azure Boards MCP Server](../../mcp-server/mcp-server-overview.md) connected to your AI agent in agent mode, you can use natural language prompts to manage links between work items and development objects.
+
+| Task | Example prompt |
+|------|----------------|
+| Link a work item to a PR | ```copilot-prompt Add a pull request link from user story #234 to pull request #567``` |
+| Find linked work items | ```copilot-prompt Show me all work items that have pull request links in the current sprint``` |
+| Check development status | ```copilot-prompt List all user stories in the 'Active' state that don't have any development links``` |
+| View links for a work item | ```copilot-prompt Show me all links for work item #890, including commits and pull requests``` |
+
+> [!NOTE]
+> Agent mode and the MCP Server use natural language, so you can adjust these prompts or ask follow-up questions to refine the results.
 
 ## Related content
 

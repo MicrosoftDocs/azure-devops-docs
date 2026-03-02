@@ -2,14 +2,14 @@
 title: Define, capture, triage, and manage bugs in Azure Boards
 titleSuffix: Azure Boards
 description: Effectively define, capture, triage, and manage bugs and code defects using Azure Boards to maintain high software quality and control technical debt.
-ms.custom: boards-backlogs
+ms.custom: boards-backlogs, copilot-scenario-highlight
 ms.service: azure-devops-boards
 ms.assetid: 6E5710EE-21C8-4264-AD65-A827D186F134
 ms.author: chcomley
 author: chcomley
 ms.topic: how-to
 monikerRange: '<= azure-devops'
-ms.date: 01/13/2026
+ms.date: 02/28/2026
 #customer intent: As a team administrator, I want to manage how the team tracks bugs to provide a good workflow process.
 ---
 
@@ -30,6 +30,8 @@ Bugs also provide the following features:
 - Built-in integration across Azure DevOps to track bugs linked to builds, releases, and tests
 
 [!INCLUDE [no bugs in basic process](../includes/basic-process-bug-note.md)]
+
+[!INCLUDE [ai-assistance-mcp-server-tip](../../includes/ai-assistance-mcp-server-tip.md)]
 
 ## Prerequisites
 
@@ -476,6 +478,28 @@ For more information on extensions, see [Azure Boards extensions developed by Mi
 
 > [!div class="nextstepaction"]
 > [Use templates to add and update work items](work-item-template.md)
+
+<a id="use-ai-assistance"></a>
+
+## Use AI to manage bugs
+
+If you configure the [Azure DevOps MCP Server](../../mcp-server/mcp-server-overview.md), you can triage and manage bugs using natural language.
+
+| Task | Example prompt |
+|------|----------------|
+| **List new bugs** | ```copilot-prompt Show all new bugs created in the last week in project <Contoso>``` |
+| **Triage by priority** | ```copilot-prompt List unassigned bugs with priority 1 in <Contoso> sorted by created date``` |
+| **Find regressions** | ```copilot-prompt Show bugs tagged "regression" that are still active in <Contoso>``` |
+| **Assign bugs to a team member** | ```copilot-prompt Assign all unassigned bugs in area path <Contoso\\Backend> to <Jamal>``` |
+| **Summarize bug trends** | ```copilot-prompt Show me a count of bugs created vs resolved per week for the last month in <Contoso>``` |
+| **Find stale bugs** | ```copilot-prompt List active bugs in <Contoso> that haven't been updated in more than 30 days``` |
+| **Check bug debt by area** | ```copilot-prompt Show the count of active bugs grouped by area path in project <Contoso>``` |
+| **Escalate high-severity bugs** | ```copilot-prompt List active bugs in <Contoso> with severity 1 - Critical that aren't assigned to a sprint``` |
+| **Link bugs to recent builds** | ```copilot-prompt Show bugs in <Contoso\\Backend> that were created after the last completed build``` |
+| **Bulk update bug states** | ```copilot-prompt Move all resolved bugs in area path <Contoso\\Frontend> that have been resolved for more than 14 days to Closed``` |
+
+> [!NOTE]
+> If you're using Visual Studio Code, [agent mode](/visualstudio/ide/copilot-chat-context#agent-mode) is especially helpful for complex bug triage scenarios.
 
 ## Related content
 

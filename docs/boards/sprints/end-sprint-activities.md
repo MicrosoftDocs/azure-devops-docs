@@ -2,14 +2,14 @@
 title: End-of-sprint activities when working in Scrum and Azure Boards
 titleSuffix: Azure Boards  
 description: Learn about tasks to perform to close a sprint when using Scrum in Azure Boards. 
-ms.custom: boards-sprints, engagement-fy23 
+ms.custom: boards-sprints, engagement-fy23, copilot-scenario-highlight
 ms.service: azure-devops-boards 
 ai-usage: ai-assisted
 ms.author: chcomley
 author: chcomley
 ms.topic: how-to
 monikerRange: '<= azure-devops'
-ms.date: 05/06/2025
+ms.date: 02/28/2026
 ---
 
 
@@ -25,6 +25,8 @@ Key actions to take include:
 - Review items in a prioritized order to maintain focus and efficiency.  
 
 Perform end-of-sprint activities before or after a [sprint review meeting](best-practices-scrum.md#sprint-review-meetings) and before a [sprint retrospective](best-practices-scrum.md#sprint-retrospective-meetings). These activities help maintain accurate views and metrics to support sprint reviews, retrospectives, and future sprint planning.
+
+[!INCLUDE [ai-assistance-mcp-server-tip](../../includes/ai-assistance-mcp-server-tip.md)]
 
 ## Goals for end-of-sprint activities  
 
@@ -98,6 +100,28 @@ As a project or team administrator, make sure to meet the following guidance for
 - Several future sprints should be defined for your project and selected for your teams.  
  
 For more information, see [Define iteration paths (sprints) and configure team iterations](../../organizations/settings/set-iteration-paths-sprints.md).
+
+<a id="use-ai-assistance"></a>
+
+## Use AI for end-of-sprint activities
+
+If you have the [Azure Boards MCP Server](../../mcp-server/mcp-server-overview.md) connected to your AI agent in agent mode, you can use natural language prompts to find and update work items at the end of a sprint.
+
+| Task | Example prompt |
+|------|----------------|
+| Find incomplete work | ```copilot-prompt List all work items in Sprint 11 for <Contoso Team> that are still Active or In Progress``` |
+| Move items to next sprint | ```copilot-prompt Move all incomplete user stories from Sprint 11 to Sprint 12 in project <Contoso>``` |
+| Zero out remaining work | ```copilot-prompt Set remaining work to 0 for all tasks in Sprint 11 that are in the Done state``` |
+| Sprint completion summary | ```copilot-prompt Summarize Sprint 11 for <Contoso Team>: count completed vs. incomplete items and total story points completed``` |
+| Generate retrospective data | ```copilot-prompt For Sprint 11, show items that were added mid-sprint, items removed, and items that changed priority``` |
+| Identify rollover patterns | ```copilot-prompt Which work items have rolled over from two or more consecutive sprints in project <Contoso>? Flag them as chronic carryover``` |
+| Close stale tasks | ```copilot-prompt Find tasks in Sprint 11 that have been in Active state with no updates in the last 7 days and set them to Removed``` |
+| Calculate sprint velocity | ```copilot-prompt What was the completed story point total for each of the last 5 sprints for <Contoso Team>?``` |
+| Tag incomplete items | ```copilot-prompt Add the tag "Carryover" to all work items moved from Sprint 11 to Sprint 12 in project <Contoso>``` |
+| End-of-sprint audit | ```copilot-prompt Are there any tasks in Sprint 11 still assigned to team members who are no longer on <Contoso Team>?``` |
+
+> [!NOTE]
+> Agent mode and the MCP Server use natural language, so you can adjust these prompts or ask follow-up questions to refine the results.
 
 ## Related content
 

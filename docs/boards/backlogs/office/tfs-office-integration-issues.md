@@ -9,7 +9,7 @@ ms.custom: copilot-scenario-highlight
 ms.author: chcomley
 author: chcomley
 ms.topic: troubleshooting
-ms.date: 02/12/2026
+ms.date: 02/28/2026
 ---
 
 # Resolve Azure DevOps and Office integration issues

@@ -15,9 +15,6 @@ ms.date: 11/19/2025
 
 [!INCLUDE [version-eq-azure-devops](../../includes/version-eq-azure-devops.md)]
 
-> [!NOTE]
-> This feature is in Private Preview. Access is limited and functionality might change before general availability.
-
 Azure Boards integrates with GitHub Copilot to streamline your development workflow. You can use work items directly with Copilot, which automatically creates branches, implements code changes, and generates draft pull requests while keeping your work item updated with progress.
 
 This integration allows you to:

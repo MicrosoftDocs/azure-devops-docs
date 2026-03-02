@@ -3,7 +3,7 @@ title: Expedite work using swimlanes
 titleSuffix: Azure Boards
 ms.global_help.title: Add swimlanes
 description: Learn how to use swimlanes to differentiate different types of work you track on the board in Azure Boards.
-ms.custom: boards-kanban, engagement-fy23 
+ms.custom: boards-kanban, engagement-fy23, copilot-scenario-highlight
 ms.service: azure-devops-boards
 ms.assetid: 0BBD90C3-7156-4027-B100-9E46F5BD53FB
 ms.author: chcomley
@@ -11,7 +11,7 @@ author: chcomley
 ai-usage: ai-assisted
 ms.topic: how-to
 monikerRange: '<= azure-devops'
-ms.date: 09/19/2025
+ms.date: 02/28/2026
 ---
 
 # Expedite work using swimlanes
@@ -19,6 +19,8 @@ ms.date: 09/19/2025
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]  
 
 Your board helps you visualize the flow of work as it moves from defined to completed. Swimlanes let you separate and track different classes of work on your board (for example, high‑priority items, expedited work, or technical debt). You can create swimlanes to represent any dimension that supports your tracking and flow needs.
+
+[!INCLUDE [ai-assistance-mcp-server-tip](../../includes/ai-assistance-mcp-server-tip.md)]
 
 What you'll learn:
 - What swimlanes are and when to use them.
@@ -178,6 +180,28 @@ You can track which work items get added to a board swimlane by creating a query
 
 > [!div class="nextstepaction"] 
 > [Customize cards](../../boards/boards/customize-cards.md)  
+
+<a id="use-ai-assistance"></a>
+
+## Use AI to manage work across swimlanes
+
+If you have the [Azure Boards MCP Server](../../mcp-server/mcp-server-overview.md) connected to your AI agent in agent mode, you can use natural language prompts to query and manage work items across swimlanes.
+
+| Task | Example prompt |
+|------|----------------|
+| Find high-priority items | ```copilot-prompt Show me all work items with Priority 1 on my team's board``` |
+| View items by board lane | ```copilot-prompt List all work items in the 'Expedite' board lane for the <Contoso> project``` |
+| Triage items for expediting | ```copilot-prompt Find all active bugs with Severity 1 that might need to be expedited``` |
+| Check blocked work | ```copilot-prompt Show me all work items tagged 'blocked' that are currently in progress``` |
+| Identify expedite candidates | ```copilot-prompt List active work items in <Contoso> with priority 1 that are past their target date and not yet in the Expedite lane``` |
+| Track expedited item age | ```copilot-prompt Show work items in the Expedite board lane for <Contoso> sorted by how many days they've been active``` |
+| Review lane distribution | ```copilot-prompt Show the count of work items in each board lane for the current sprint in <Contoso>``` |
+| Find items to demote | ```copilot-prompt List work items in the Expedite lane for <Contoso> where priority was changed from 1 to 2 or lower``` |
+| Monitor expedite throughput | ```copilot-prompt Show work items that moved out of the Expedite lane in <Contoso> in the last 2 weeks and how long they stayed there``` |
+| Escalate stalled items | ```copilot-prompt List work items tagged 'blocked' in <Contoso> that haven't been updated in more than 3 days``` |
+
+> [!NOTE]
+> Agent mode and the MCP Server use natural language, so you can adjust these prompts or ask follow-up questions to refine the results.
 
 ## Related content
 

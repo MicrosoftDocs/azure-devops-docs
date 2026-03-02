@@ -3,13 +3,13 @@ title: Move work items from one team to another team
 titleSuffix: Azure Boards 
 description: Learn how to move work items assigned to one team to another team.  
 ms.subservice: azure-devops-settings
-ms.custom: devx-track-azurecli
+ms.custom: devx-track-azurecli, copilot-scenario-highlight
 ai-usage: ai-assisted
 ms.author: chcomley
 author: chcomley
 ms.topic: how-to
 monikerRange: '<= azure-devops'
-ms.date: 10/27/2025
+ms.date: 02/28/2026
 ---
 
 # Move work items from one team to another team
@@ -19,6 +19,8 @@ ms.date: 10/27/2025
 When you add a team or reorganize existing teams, you need to transfer work items from one team to another by updating their Area Paths. Every work item in Azure DevOps assigns to an Area Path, which determines team ownership and influences how work items appear on backlogs and boards.
 
 Work items categorized under the Requirements category appear on a team backlog based on their assignment to the team Area Path. Similarly, assigning other work items to a team's Area Path supports queries and reporting based on team ownership.
+
+[!INCLUDE [ai-assistance-mcp-server-tip](../../includes/ai-assistance-mcp-server-tip.md)]
 
 ## Why move work items between teams
 
@@ -314,6 +316,28 @@ Create queries to gradually transition work items:
 - Filter by creation date to move newer items first
 - Use work item states to move completed items separately
 - Group by work item type for systematic transitions
+
+<a id="use-ai-assistance"></a>
+
+## Use AI to move work items between teams
+
+If you configure the [Azure DevOps MCP Server](../../mcp-server/mcp-server-overview.md), you can move work items between teams using natural language instead of manually updating area paths.
+
+| Task | Example prompt |
+|------|----------------|
+| **Move items to another team** | ```copilot-prompt Move all active user stories in area path <Contoso\\TeamAlpha> to <Contoso\\TeamBeta>``` |
+| **Reassign by work item type** | ```copilot-prompt Change the area path for all bugs assigned to <Jamal> from <Contoso\\Frontend> to <Contoso\\Backend>``` |
+| **Find items to move** | ```copilot-prompt List all work items in area path <Contoso\\OldTeam> grouped by work item type``` |
+| **Verify after move** | ```copilot-prompt Show all work items moved to area path <Contoso\\NewTeam> in the last 7 days``` |
+| **Preview move impact** | ```copilot-prompt How many work items are currently under area path <Contoso\\TeamAlpha> and what are their states? I'm planning to move them to <Contoso\\TeamBeta>``` |
+| **Move and reassign** | ```copilot-prompt Move all active tasks under <Contoso\\Platform> to <Contoso\\Infrastructure> and reassign them from <Raisa> to <Christie>``` |
+| **Find orphaned items after reorg** | ```copilot-prompt List work items whose area path doesn't match any active team's configured area paths in project <Contoso>``` |
+| **Bulk move by sprint** | ```copilot-prompt Move all incomplete work items from Sprint 11 in area path <Contoso\\TeamAlpha> to area path <Contoso\\TeamBeta> and assign to Sprint 12``` |
+| **Audit cross-team moves** | ```copilot-prompt Show all work items that changed area path in the last 30 days in project <Contoso>, grouped by source and destination team``` |
+| **Move with child items** | ```copilot-prompt Move feature #4500 and all its child user stories and tasks from <Contoso\\Frontend> to <Contoso\\FullStack>``` |
+
+> [!NOTE]
+> If you're using Visual Studio Code, [agent mode](/visualstudio/ide/copilot-chat-context#agent-mode) is especially helpful for bulk moves across teams.
 
 ## Related content
 
