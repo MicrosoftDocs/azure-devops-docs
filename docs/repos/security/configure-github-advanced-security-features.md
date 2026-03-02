@@ -171,7 +171,7 @@ For more advanced setup or if you want to scan all branches, we recommend that y
 To gain access to code scanning features, you need the **Code Security** product enabled for your repository.
 :::zone-end
 
-Code scanning is also a pipeline-based scanning tool where results are aggregated per repository. You can enable code scanning using **default setup** or **advanced setup**.
+Code scanning is also a pipeline-based scanning tool where results are aggregated per repository. You can enable code scanning using **default setup** or **advanced setup**. You can run both in the same organization, depending on your needs and level of scanning control.
 
 **Default setup** is the quickest way to enable code scanning. Default setup automatically runs  on a scheduled basis using a selected self-hosted agent pool or Managed DevOps Pool. No pipeline configuration is required.
 
