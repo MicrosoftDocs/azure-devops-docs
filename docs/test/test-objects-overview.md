@@ -398,7 +398,7 @@ The following table describes several terms used in manual and exploratory testi
      **Test points**
    :::column-end:::
    :::column span="3":::
-      Test cases by themselves are not executable. When you add a test case to a test suite then test point(s) are generated. A test point is a unique combination of test case, test suite, configuration, and tester. For example, if you have a test case named Test login functionality and you add two configurations for the *Edge* and *Chrome* browsers, you have two test points. You can execute or run each of these test points. On execution, test results are generated. Through the test results view, or execution history, you can see all executions of a test point. The latest execution for the test point is what you see in the Execute tab.
+      [!INCLUDE [test-point-definition](includes/test-point-definition.md)]
    :::column-end:::
 :::row-end:::
 :::row:::
