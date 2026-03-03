@@ -21,7 +21,7 @@ Managed DevOps Pools:
 * Has agents in the geographical region closest to your dependencies.
 * Scales up and down based on your configuration.
 * Can maintain the state of your agents up to seven days, so your builds are faster due to cache hits.
-* Supports long-running jobs up to two days long, with the ability to run longer pipelines by splitting them into multiple shorter jobs that each complete in two days or less.
+* Supports long-running [jobs](../pipelines/process/phases.md) up to two days long, with the ability to run longer pipelines by splitting them into multiple shorter jobs that each complete in two days or less.
 * Can access resources in your company network or isolate your workload to only access specific endpoints.
 * Can create agents that have the same software as Azure Pipelines Microsoft-hosted agents.
 * Can view all active agents and the status of agent provisioning and reimaging.
