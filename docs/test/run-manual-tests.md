@@ -28,15 +28,9 @@ If you find an issue when testing, use Test Runner to create a bug.
 Include test steps, screenshots, and comments in the bug.
 
 > [!NOTE]
-> You execute test points and not test cases.
-> When you add a test case to a test suite, test points are generated.
-> A test point represents a unique combination of test case, test suite, configuration, and tester.
->
-> For example, a test case named *Test login functionality*, which has two configurations for the Microsoft Edge and Chrome browsers, generates two test points.
-> You can execute or run each of these test points.
-> On execution, test results are generated.
-> Through the test results view, or execution history, you can see all executions of a test point.
-> The latest execution for the test point is what you see in the **Execute** tab.
+> You execute test points, not test cases.
+
+[!INCLUDE [test-point-definition](includes/test-point-definition.md)]
 
 ## Supported clients and run options
 
