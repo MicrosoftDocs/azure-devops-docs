@@ -38,11 +38,11 @@ To move a work item from one project to another, or to change the work item type
 
 | Category | Requirements |
 |----------|-------------|
-| **General Access** | - To remove, delete, and restore work items: Member of the **Contributors** group<br>- To permanently delete work items: Member of the **Project Administrators** group or granted the required permission<br>- Users with **Stakeholder** access can view the **Recycle Bin** contents but can't restore or permanently delete items regardless of permissions granted |
-| **Change state to Remove or Cut** | - **Area Path** permission set to **Allow**: **Edit work items in this node**<br>- By default, members of the **Contributors** group have this permission |
-| **Delete and restore work items** | - Project-level permission set to **Allow**: **Delete and restore work items**<br>- At least [**Basic** access](../../organizations/security/access-levels.md)<br>- By default, members of the **Contributors** group have this permission |
-| **Permanently delete or destroy work items** | - Project-level permission set to **Allow**: **Permanently delete work items**<br>- By default, members of the **Project Administrators** group have this permission |
-| **Delete or destroy work items from command line** | - Project-level permission set to **Allow**: **Permanently delete work items**<br>- By default, members of the **Project Administrators** group have this permission |
+| General Access | - To remove, delete, and restore work items: Member of the **Contributors** group<br>- To permanently delete work items: Member of the **Project Administrators** group or granted the required permission<br>- Users with **Stakeholder** access can view the **Recycle Bin** contents but can't restore or permanently delete items regardless of permissions granted |
+| Change state to Remove or Cut | - **Area Path** permission set to **Allow**: **Edit work items in this node**<br>- By default, members of the **Contributors** group have this permission |
+| Delete and restore work items | - Project-level permission set to **Allow**: **Delete and restore work items**<br>- At least [**Basic** access](../../organizations/security/access-levels.md)<br>- By default, members of the **Contributors** group have this permission |
+| Permanently delete or destroy work items | - Project-level permission set to **Allow**: **Permanently delete work items**<br>- By default, members of the **Project Administrators** group have this permission |
+| Delete or destroy work items from command line | - Project-level permission set to **Allow**: **Permanently delete work items**<br>- By default, members of the **Project Administrators** group have this permission |
 
 For a simplified view of permissions assigned to built-in groups, see [Permissions and access](../get-started/permissions-access-boards.md).  
 
@@ -219,16 +219,16 @@ If you have the [Azure Boards MCP Server](../../mcp-server/mcp-server-overview.m
 
 | Task | Example prompt |
 |------|----------------|
-| Change state to Removed | ```copilot-prompt Change the state of work items #101, #102, and #103 to Removed``` |
-| Find items in Removed state | ```copilot-prompt List all work items in the Removed state in area path <Contoso>\\OldFeature``` |
-| Find stale items to clean up | ```copilot-prompt Show me all work items in the 'New' state that haven't been updated in the last 90 days``` |
-| Identify closed items | ```copilot-prompt List all work items closed more than a year ago in the <Contoso> project``` |
-| Find abandoned work | ```copilot-prompt List active work items in <Contoso> assigned to people who are no longer on the team``` |
-| Identify duplicate candidates | ```copilot-prompt Show bugs in <Contoso> with the same title or very similar titles``` |
-| Find items with no activity | ```copilot-prompt List work items in <Contoso> that have never had a state change and were created more than 60 days ago``` |
-| Preview removal impact | ```copilot-prompt Show all child work items linked to user story <1234> so I can review before removing it``` |
-| Bulk state change | ```copilot-prompt Set all user stories in area path <Contoso\\DeprecatedModule> to the Removed state``` |
-| Audit removed items | ```copilot-prompt List all work items in <Contoso> that were moved to the Removed state in the last 30 days and show who changed them``` |
+| Change state to Removed | `Change the state of work items #101, #102, and #103 to Removed` |
+| Find items in Removed state | `List all work items in the Removed state in area path <Contoso>\\OldFeature` |
+| Find stale items to clean up | `Show me all work items in the 'New' state that haven't been updated in the last 90 days` |
+| Identify closed items | `List all work items closed more than a year ago in the <Contoso> project` |
+| Find abandoned work | `List active work items in <Contoso> assigned to people who are no longer on the team` |
+| Identify duplicate candidates | `Show bugs in <Contoso> with the same title or very similar titles` |
+| Find items with no activity | `List work items in <Contoso> that have never had a state change and were created more than 60 days ago` |
+| Preview removal impact | `Show all child work items linked to user story <1234> so I can review before removing it` |
+| Bulk state change | `Set all user stories in area path <Contoso\\DeprecatedModule> to the Removed state` |
+| Audit removed items | `List all work items in <Contoso> that were moved to the Removed state in the last 30 days and show who changed them` |
 
 > [!NOTE]
 > Agent mode and the MCP Server use natural language, so you can adjust these prompts or ask follow-up questions to refine the results. The MCP Server can update work item states but can't delete, restore, or destroy work items.

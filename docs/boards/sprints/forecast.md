@@ -43,9 +43,9 @@ Use this article to learn:
 
 | Category | Requirements |
 |--------------|-------------|
-| **Project membership** | [Project member](../../organizations/projects/create-project.md). |
-| **Permissions** | Member of the **Contributors** security group. |
-| **Access levels** | At least [**Basic** access](../../organizations/security/access-levels.md). |
+| Project membership | [Project member](../../organizations/projects/create-project.md). |
+| Permissions | Member of the **Contributors** security group. |
+| Access levels | At least [**Basic** access](../../organizations/security/access-levels.md). |
 
 > [!NOTE]  
 > Users with **Stakeholder** access for a public project have full access to backlog and board features just like users with **Basic** access. For more information, see [Stakeholder access quick reference](../../organizations/security/stakeholder-access.md).
@@ -292,16 +292,16 @@ If you have the [Azure Boards MCP Server](../../mcp-server/mcp-server-overview.m
 
 | Task | Example prompt |
 |------|----------------|
-| Review backlog estimates | ```copilot-prompt List all user stories on the <Contoso Team> backlog that have no story points assigned``` |
-| Backlog size | ```copilot-prompt What is the total story points remaining in the product backlog for <Contoso Team>?``` |
-| Sprint completion history | ```copilot-prompt How many story points did <Contoso Team> complete in each of the last 5 sprints?``` |
-| Estimate sprint count | ```copilot-prompt Based on a velocity of 25 story points, how many sprints to complete the remaining backlog for <Contoso Team>?``` |
-| Forecast a release date | ```copilot-prompt Using the average velocity from the last 5 sprints, estimate when <Contoso Team> will complete all priority-1 backlog items``` |
-| Identify estimation gaps | ```copilot-prompt Which user stories in the <Contoso Team> backlog have story points that differ significantly from similar-sized stories?``` |
-| Compare velocity trends | ```copilot-prompt Show a sprint-by-sprint velocity trend for <Contoso Team> over the last 8 sprints and flag any sprints that were outliers``` |
-| Forecast with reduced capacity | ```copilot-prompt If <Contoso Team> velocity drops to 18 story points due to holidays, how many additional sprints are needed to clear the backlog?``` |
-| Predict feature completion | ```copilot-prompt How many sprints until all child stories under feature #3050 are complete, based on <Contoso Team> average velocity?``` |
-| Backlog grooming priorities | ```copilot-prompt List the top 20 backlog items by priority for <Contoso Team> and flag any that are missing story point estimates``` |
+| Review backlog estimates | `List all user stories on the <Contoso Team> backlog that have no story points assigned` |
+| Backlog size | `What is the total story points remaining in the product backlog for <Contoso Team>?` |
+| Sprint completion history | `How many story points did <Contoso Team> complete in each of the last 5 sprints?` |
+| Estimate sprint count | `Based on a velocity of 25 story points, how many sprints to complete the remaining backlog for <Contoso Team>?` |
+| Forecast a release date | `Using the average velocity from the last 5 sprints, estimate when <Contoso Team> will complete all priority-1 backlog items` |
+| Identify estimation gaps | `Which user stories in the <Contoso Team> backlog have story points that differ significantly from similar-sized stories?` |
+| Compare velocity trends | `Show a sprint-by-sprint velocity trend for <Contoso Team> over the last 8 sprints and flag any sprints that were outliers` |
+| Forecast with reduced capacity | `If <Contoso Team> velocity drops to 18 story points due to holidays, how many additional sprints are needed to clear the backlog?` |
+| Predict feature completion | `How many sprints until all child stories under feature #3050 are complete, based on <Contoso Team> average velocity?` |
+| Backlog grooming priorities | `List the top 20 backlog items by priority for <Contoso Team> and flag any that are missing story point estimates` |
 
 > [!NOTE]
 > Agent mode and the MCP Server use natural language, so you can adjust these prompts or ask follow-up questions to refine the results.

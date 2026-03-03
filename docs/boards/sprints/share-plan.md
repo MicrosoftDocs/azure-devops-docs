@@ -85,10 +85,10 @@ If you have the [Azure Boards MCP Server](../../mcp-server/mcp-server-overview.m
 
 | Task | Example prompt |
 |------|----------------|
-| Summarize sprint plan | ```copilot-prompt Summarize the Sprint 12 backlog for <Contoso Team> including item count, total story points, and assignees``` |
-| Export sprint data | ```copilot-prompt List all work items in Sprint 12 for <Contoso Team> with title, assignee, state, and story points``` |
-| Check sprint readiness | ```copilot-prompt Are there any user stories in Sprint 12 for <Contoso Team> that have no tasks assigned?``` |
-| Compare sprints | ```copilot-prompt Compare planned work in Sprint 11 vs. Sprint 12 for <Contoso Team> by total story points and item count``` |
+| Summarize sprint plan | `Summarize the Sprint 12 backlog for <Contoso Team> including item count, total story points, and assignees` |
+| Export sprint data | `List all work items in Sprint 12 for <Contoso Team> with title, assignee, state, and story points` |
+| Check sprint readiness | `Are there any user stories in Sprint 12 for <Contoso Team> that have no tasks assigned?` |
+| Compare sprints | `Compare planned work in Sprint 11 vs. Sprint 12 for <Contoso Team> by total story points and item count` |
 
 > [!NOTE]
 > Agent mode and the MCP Server use natural language, so you can adjust these prompts or ask follow-up questions to refine the results.

@@ -215,16 +215,16 @@ If you have the [Azure Boards MCP Server](../../mcp-server/mcp-server-overview.m
 
 | Task | Example prompt |
 |------|----------------|
-| Set parent items | ```copilot-prompt Set feature 'User Authentication' as the parent of user stories #101, #102, and #103``` |
-| Find unparented items | ```copilot-prompt List all user stories that don't have a parent feature assigned``` |
-| Build a hierarchy | ```copilot-prompt Create a feature called 'Payment Processing' under epic #50 and add three child user stories for checkout, refund, and receipt``` |
-| View item hierarchy | ```copilot-prompt Show me the hierarchy of all work items under epic 'Q2 Release'``` |
-| Rebalance across features | ```copilot-prompt Show the count of child user stories per feature in <Contoso> and list features with more than 10 children``` |
-| Identify misplaced items | ```copilot-prompt List user stories in area path <Contoso\\Backend> whose parent feature is in area path <Contoso\\Frontend>``` |
-| Flatten and reorganize | ```copilot-prompt Move all child tasks of user story <1234> to be children of user story <5678> in <Contoso>``` |
-| Check hierarchy depth | ```copilot-prompt Show epics in <Contoso> that have features with user stories that still have no child tasks``` |
-| Audit area path alignment | ```copilot-prompt List work items in <Contoso> where the child's area path doesn't match the parent's area path``` |
-| Map stories to sprints | ```copilot-prompt Show all user stories under feature <1500> grouped by sprint iteration``` |
+| Set parent items | `Set feature 'User Authentication' as the parent of user stories #101, #102, and #103` |
+| Find unparented items | `List all user stories that don't have a parent feature assigned` |
+| Build a hierarchy | `Create a feature called 'Payment Processing' under epic #50 and add three child user stories for checkout, refund, and receipt` |
+| View item hierarchy | `Show me the hierarchy of all work items under epic 'Q2 Release'` |
+| Rebalance across features | `Show the count of child user stories per feature in <Contoso> and list features with more than 10 children` |
+| Identify misplaced items | `List user stories in area path <Contoso\\Backend> whose parent feature is in area path <Contoso\\Frontend>` |
+| Flatten and reorganize | `Move all child tasks of user story <1234> to be children of user story <5678> in <Contoso>` |
+| Check hierarchy depth | `Show epics in <Contoso> that have features with user stories that still have no child tasks` |
+| Audit area path alignment | `List work items in <Contoso> where the child's area path doesn't match the parent's area path` |
+| Map stories to sprints | `Show all user stories under feature <1500> grouped by sprint iteration` |
 
 > [!NOTE]
 > Agent mode and the MCP Server use natural language, so you can adjust these prompts or ask follow-up questions to refine the results.

@@ -35,10 +35,10 @@ Azure Boards uses access levels to control what features users can access. For c
 
 | Access Level | Azure Boards Capabilities |
 |--------------|---------------------------|
-| **Stakeholder** | View work items, add and modify work items they create, view dashboards, limited query access |
-| **Basic** | Full access to work items, queries, dashboards, boards, and backlogs |
-| **Basic + Test Plans** | Includes Basic access plus Test Plans features |
-| **Visual Studio Enterprise** | Includes all Basic features plus advanced capabilities |
+| Stakeholder | View work items, add and modify work items they create, view dashboards, limited query access |
+| Basic | Full access to work items, queries, dashboards, boards, and backlogs |
+| Basic + Test Plans | Includes Basic access plus Test Plans features |
+| Visual Studio Enterprise | Includes all Basic features plus advanced capabilities |
 
 For more information, see [About access levels](../organizations/security/access-levels.md).
 
@@ -66,10 +66,10 @@ Azure Boards uses security groups to manage permissions efficiently. For more in
 
 | Security Group | Default Permissions |
 |----------------|-------------------|
-| **Project Administrators** | Full control over project settings, work item types, and team configuration |
-| **Contributors** | Create, modify, and delete work items; manage boards and backlogs |
-| **Readers** | View work items and project artifacts |
-| **Project Collection Administrators** | Organization-wide administration including security settings |
+| Project Administrators | Full control over project settings, work item types, and team configuration |
+| Contributors | Create, modify, and delete work items; manage boards and backlogs |
+| Readers | View work items and project artifacts |
+| Project Collection Administrators | Organization-wide administration including security settings |
 
 ### Work item permissions
 
@@ -77,11 +77,11 @@ Control access to work items through these key permissions. For step-by-step ins
 
 | Permission | Description |
 |------------|-------------|
-| **View work items in this node** | Read access to work items in specific area paths |
-| **Edit work items in this node** | Modify work items in specific area paths |
-| **Create child nodes** | Add new area paths under existing nodes |
-| **Delete and restore work items** | Remove work items and recover deleted items |
-| **Move work items out of this project** | Transfer work items to other projects |
+| View work items in this node | Read access to work items in specific area paths |
+| Edit work items in this node | Modify work items in specific area paths |
+| Create child nodes | Add new area paths under existing nodes |
+| Delete and restore work items | Remove work items and recover deleted items |
+| Move work items out of this project | Transfer work items to other projects |
 
 ### Area path security
 

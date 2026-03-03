@@ -74,12 +74,12 @@ The table below lists representative Microsoft extensions and useful categories.
 
 | Category | Extensions |
 |--------------|-------------|
-| **Automation** | [Power Automate, Azure DevOps](https://powerautomate.microsoft.com/connectors/details/shared_visualstudioteamservices/azure-devops/) |
-| **Command-line interface** | [Azure DevOps CLI](../../cli/index.md) |
-| **Customizing work item types** | - [Cascading Lists](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.cascading-picklists-extension)<br>- [Color picklist control](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.color-form-control)<br>- [Multi-value control](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.vsts-extensions-multivalue-control)<br>- [Work Item Visualization](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.WorkItemVisualization)<br>- [WSJF (Weighted Shortest Job First)](https://marketplace.visualstudio.com/items?itemName=MS-Agile-SAFe.WSJF-extension) |
-| **Dashboard widgets** | - [Azure Application Insights widget](https://marketplace.visualstudio.com/items?itemName=ms-appinsights.ApplicationInsightsWidgets)<br>- [Work Item Details widget](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.WorkItemDetails)<br>- [Roll-up Board widget](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.RollUpBoard) |
-| **Product planning** | - [Azure DevOps Open in Excel](https://marketplace.visualstudio.com/items?itemName=blueprint.vsts-open-work-items-in-excel)<br>- [Epic Roadmap extension](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.workitem-feature-timeline-extension) |
-| **Querying and reporting** | [WIQL to OData](https://marketplace.visualstudio.com/items?itemName=ms-eswm.wiql-to-odata) |
+| Automation | [Power Automate, Azure DevOps](https://powerautomate.microsoft.com/connectors/details/shared_visualstudioteamservices/azure-devops/) |
+| Command-line interface | [Azure DevOps CLI](../../cli/index.md) |
+| Customizing work item types | - [Cascading Lists](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.cascading-picklists-extension)<br>- [Color picklist control](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.color-form-control)<br>- [Multi-value control](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.vsts-extensions-multivalue-control)<br>- [Work Item Visualization](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.WorkItemVisualization)<br>- [WSJF (Weighted Shortest Job First)](https://marketplace.visualstudio.com/items?itemName=MS-Agile-SAFe.WSJF-extension) |
+| Dashboard widgets | - [Azure Application Insights widget](https://marketplace.visualstudio.com/items?itemName=ms-appinsights.ApplicationInsightsWidgets)<br>- [Work Item Details widget](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.WorkItemDetails)<br>- [Roll-up Board widget](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.RollUpBoard) |
+| Product planning | - [Azure DevOps Open in Excel](https://marketplace.visualstudio.com/items?itemName=blueprint.vsts-open-work-items-in-excel)<br>- [Epic Roadmap extension](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.workitem-feature-timeline-extension) |
+| Querying and reporting | [WIQL to OData](https://marketplace.visualstudio.com/items?itemName=ms-eswm.wiql-to-odata) |
 
 > [!TIP]
 > When you evaluate extensions for migration or integration, verify compatibility with your Azure DevOps Server or Services version and test in a nonproduction environment.

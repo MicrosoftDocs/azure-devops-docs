@@ -29,7 +29,7 @@ Use the guidance in this article to set or change sprint dates. To define iterat
 
 | Category | Requirements |
 |--------------|-------------|
-| **Permissions** | To change sprint dates: Member of the [Project Administrators](../../organizations/security/change-project-level-permissions.md) group, or **Edit this node** permission for the iteration child node, which is the team name. By default, the user who created the project has these permissions. For more information, see [Change project-level permissions](../../organizations/security/change-project-level-permissions.md) or [Set permissions and access for work tracking](../../organizations/security/set-permissions-access-work-tracking.md). | 
+| Permissions | To change sprint dates: Member of the [Project Administrators](../../organizations/security/change-project-level-permissions.md) group, or **Edit this node** permission for the iteration child node, which is the team name. By default, the user who created the project has these permissions. For more information, see [Change project-level permissions](../../organizations/security/change-project-level-permissions.md) or [Set permissions and access for work tracking](../../organizations/security/set-permissions-access-work-tracking.md). | 
 
 <a id="quick-start-schedule">   </a>
 ## Start scheduling sprints
@@ -84,16 +84,16 @@ If you have the [Azure Boards MCP Server](../../mcp-server/mcp-server-overview.m
 
 | Task | Example prompt |
 |------|----------------|
-| List defined sprints | ```copilot-prompt List all iteration paths and their start and end dates for project <Contoso>``` |
-| Check sprint dates | ```copilot-prompt What are the start and end dates for Sprint 12 in project <Contoso>?``` |
-| Find sprints without dates | ```copilot-prompt Which sprints in project <Contoso> have no start or end date assigned?``` |
-| Review team sprint assignments | ```copilot-prompt Which sprints are assigned to <Contoso Team>?``` |
-| Identify sprint gaps | ```copilot-prompt Are there any date gaps or overlaps between consecutive sprints in project <Contoso>?``` |
-| Plan future sprints | ```copilot-prompt List the next 6 sprints for <Contoso Team> with their dates and show which ones have work items assigned``` |
-| Audit sprint naming | ```copilot-prompt List all iteration paths in project <Contoso> that don't follow the naming pattern "Sprint ##"``` |
-| Compare team sprint schedules | ```copilot-prompt Show the sprint schedules for <Contoso Team> and <Backend Team> side by side so I can check alignment``` |
-| Check sprint duration consistency | ```copilot-prompt Are all sprints in project <Contoso> the same length? Flag any sprints that differ from the standard 2-week cadence``` |
-| Find sprints with no work | ```copilot-prompt Which upcoming sprints for <Contoso Team> have zero work items assigned so far?``` |
+| List defined sprints | `List all iteration paths and their start and end dates for project <Contoso>` |
+| Check sprint dates | `What are the start and end dates for Sprint 12 in project <Contoso>?` |
+| Find sprints without dates | `Which sprints in project <Contoso> have no start or end date assigned?` |
+| Review team sprint assignments | `Which sprints are assigned to <Contoso Team>?` |
+| Identify sprint gaps | `Are there any date gaps or overlaps between consecutive sprints in project <Contoso>?` |
+| Plan future sprints | `List the next 6 sprints for <Contoso Team> with their dates and show which ones have work items assigned` |
+| Audit sprint naming | `List all iteration paths in project <Contoso> that don't follow the naming pattern "Sprint ##"` |
+| Compare team sprint schedules | `Show the sprint schedules for <Contoso Team> and <Backend Team> side by side so I can check alignment` |
+| Check sprint duration consistency | `Are all sprints in project <Contoso> the same length? Flag any sprints that differ from the standard 2-week cadence` |
+| Find sprints with no work | `Which upcoming sprints for <Contoso Team> have zero work items assigned so far?` |
 
 > [!NOTE]
 > Agent mode and the MCP Server use natural language, so you can adjust these prompts or ask follow-up questions to refine the results.

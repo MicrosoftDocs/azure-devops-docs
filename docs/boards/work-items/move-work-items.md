@@ -38,8 +38,8 @@ Common scenarios for moving work items include:
 
 | Category | Requirements |
 |--------------|-------------|
-| **Permissions** | - To view, follow, and edit work items: **View work items in this node** and **Edit work items in this node** permissions set to **Allow**. By default, the **Contributors** group has these permissions. For more information, see [Set work tracking permissions](../../organizations/security/set-permissions-access-work-tracking.md). <br> - To add tags to work items: Project-level **Create new tag definition** permission set to **Allow**. By default, the **Contributors** group has this permission. |
-| **Access levels** | - [Project member](../../organizations/security/add-users-team-project.md). <br> - To add new tags to work items or to view or follow pull requests: At least [**Basic** access](../../organizations/security/access-levels.md). <br> - To view or follow work items: At least **Stakeholder** access. For more information, see [About access levels](../../organizations/security/access-levels.md). <br> - All project members, including members in the **Readers** group, can send emails containing work items. |
+| Permissions | - To view, follow, and edit work items: **View work items in this node** and **Edit work items in this node** permissions set to **Allow**. By default, the **Contributors** group has these permissions. For more information, see [Set work tracking permissions](../../organizations/security/set-permissions-access-work-tracking.md). <br> - To add tags to work items: Project-level **Create new tag definition** permission set to **Allow**. By default, the **Contributors** group has this permission. |
+| Access levels | - [Project member](../../organizations/security/add-users-team-project.md). <br> - To add new tags to work items or to view or follow pull requests: At least [**Basic** access](../../organizations/security/access-levels.md). <br> - To view or follow work items: At least **Stakeholder** access. For more information, see [About access levels](../../organizations/security/access-levels.md). <br> - All project members, including members in the **Readers** group, can send emails containing work items. |
 |**Area Path permissions**| **View** and **Edit** work items under the Area Path nodes. For more information, see [Modify work items under an area or iteration path](../../organizations/security/set-permissions-access-work-tracking.md#create-child-nodes-modify-work-items-under-an-area-or-iteration-path).|
 |**Configured area paths**| The target team has correctly configured Area Paths. If not, set up the required Area Paths before you transfer work items.|
 |**Consistent process model**| Your team uses a compatible process model (Inherited, Hosted XML, or On-premises XML) to ensure seamless movement of work items.|
@@ -52,8 +52,8 @@ Common scenarios for moving work items include:
 
 | Category | Requirements |
 |--------------|-------------|
-| **Permissions** | - To view, follow, and edit work items: **View work items in this node** and **Edit work items in this node** permissions set to **Allow**. By default, the **Contributors** group has these permissions. For more information, see [Set work tracking permissions](../../organizations/security/set-permissions-access-work-tracking.md). <br> - To add tags to work items: Project-level **Create new tag definition** permission set to **Allow**. By default, the **Contributors** group has this permission. |
-| **Access levels** | - [Project member](../../organizations/security/add-users-team-project.md). <br> - To add new tags to work items or to view or follow pull requests: At least [**Basic** access](../../organizations/security/access-levels.md). <br> - To view or follow work items: At least **Stakeholder** access. For more information, see [About access levels](../../organizations/security/access-levels.md). <br> - All project members, including members in the **Readers** group, can send emails containing work items. |
+| Permissions | - To view, follow, and edit work items: **View work items in this node** and **Edit work items in this node** permissions set to **Allow**. By default, the **Contributors** group has these permissions. For more information, see [Set work tracking permissions](../../organizations/security/set-permissions-access-work-tracking.md). <br> - To add tags to work items: Project-level **Create new tag definition** permission set to **Allow**. By default, the **Contributors** group has this permission. |
+| Access levels | - [Project member](../../organizations/security/add-users-team-project.md). <br> - To add new tags to work items or to view or follow pull requests: At least [**Basic** access](../../organizations/security/access-levels.md). <br> - To view or follow work items: At least **Stakeholder** access. For more information, see [About access levels](../../organizations/security/access-levels.md). <br> - All project members, including members in the **Readers** group, can send emails containing work items. |
 |**Area Path permissions**| **View** and **Edit** work items under the **Area Path** nodes. For more information, see [Modify work items under an area or iteration path](../../organizations/security/set-permissions-access-work-tracking.md#create-child-nodes-modify-work-items-under-an-area-or-iteration-path).|
 
 ::: moniker-end  
@@ -273,10 +273,10 @@ After you move work items from one team to another team, follow these steps if y
 
 | Issue | Solution |
 |-------|----------|
-| **Work items don't appear on backlog** | Verify the Area Path matches the team's configured area paths |
-| **Permission errors during move** | Check that you have Edit permissions for both source and target Area Paths |
-| **Work items missing from sprint** | Update the Iteration Path to match the target team's sprint schedule |
-| **Filters hiding work items** | Review backlog filters and work item type settings |
+| Work items don't appear on backlog | Verify the Area Path matches the team's configured area paths |
+| Permission errors during move | Check that you have Edit permissions for both source and target Area Paths |
+| Work items missing from sprint | Update the Iteration Path to match the target team's sprint schedule |
+| Filters hiding work items | Review backlog filters and work item type settings |
 
 ### Verification steps
 - **Refresh**: Refresh the board or select **Show more items** if newly added work items don't appear.
@@ -325,16 +325,16 @@ If you configure the [Azure DevOps MCP Server](../../mcp-server/mcp-server-overv
 
 | Task | Example prompt |
 |------|----------------|
-| **Move items to another team** | ```copilot-prompt Move all active user stories in area path <Contoso\\TeamAlpha> to <Contoso\\TeamBeta>``` |
-| **Reassign by work item type** | ```copilot-prompt Change the area path for all bugs assigned to <Jamal> from <Contoso\\Frontend> to <Contoso\\Backend>``` |
-| **Find items to move** | ```copilot-prompt List all work items in area path <Contoso\\OldTeam> grouped by work item type``` |
-| **Verify after move** | ```copilot-prompt Show all work items moved to area path <Contoso\\NewTeam> in the last 7 days``` |
-| **Preview move impact** | ```copilot-prompt How many work items are currently under area path <Contoso\\TeamAlpha> and what are their states? I'm planning to move them to <Contoso\\TeamBeta>``` |
-| **Move and reassign** | ```copilot-prompt Move all active tasks under <Contoso\\Platform> to <Contoso\\Infrastructure> and reassign them from <Raisa> to <Christie>``` |
-| **Find orphaned items after reorg** | ```copilot-prompt List work items whose area path doesn't match any active team's configured area paths in project <Contoso>``` |
-| **Bulk move by sprint** | ```copilot-prompt Move all incomplete work items from Sprint 11 in area path <Contoso\\TeamAlpha> to area path <Contoso\\TeamBeta> and assign to Sprint 12``` |
-| **Audit cross-team moves** | ```copilot-prompt Show all work items that changed area path in the last 30 days in project <Contoso>, grouped by source and destination team``` |
-| **Move with child items** | ```copilot-prompt Move feature #4500 and all its child user stories and tasks from <Contoso\\Frontend> to <Contoso\\FullStack>``` |
+| Move items to another team | `Move all active user stories in area path <Contoso\\TeamAlpha> to <Contoso\\TeamBeta>` |
+| Reassign by work item type | `Change the area path for all bugs assigned to <Jamal> from <Contoso\\Frontend> to <Contoso\\Backend>` |
+| Find items to move | `List all work items in area path <Contoso\\OldTeam> grouped by work item type` |
+| Verify after move | `Show all work items moved to area path <Contoso\\NewTeam> in the last 7 days` |
+| Preview move impact | `How many work items are currently under area path <Contoso\\TeamAlpha> and what are their states? I'm planning to move them to <Contoso\\TeamBeta>` |
+| Move and reassign | `Move all active tasks under <Contoso\\Platform> to <Contoso\\Infrastructure> and reassign them from <Raisa> to <Christie>` |
+| Find orphaned items after reorg | `List work items whose area path doesn't match any active team's configured area paths in project <Contoso>` |
+| Bulk move by sprint | `Move all incomplete work items from Sprint 11 in area path <Contoso\\TeamAlpha> to area path <Contoso\\TeamBeta> and assign to Sprint 12` |
+| Audit cross-team moves | `Show all work items that changed area path in the last 30 days in project <Contoso>, grouped by source and destination team` |
+| Move with child items | `Move feature #4500 and all its child user stories and tasks from <Contoso\\Frontend> to <Contoso\\FullStack>` |
 
 > [!NOTE]
 > If you're using Visual Studio Code, [agent mode](/visualstudio/ide/copilot-chat-context#agent-mode) is especially helpful for bulk moves across teams.

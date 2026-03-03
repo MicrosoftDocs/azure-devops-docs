@@ -294,16 +294,16 @@ If you configure the [Azure DevOps MCP Server](../../mcp-server/mcp-server-overv
 
 | Task | Example prompt |
 |------|----------------|
-| **Create a work item** | ```copilot-prompt Create a user story titled "Implement login page" with acceptance criteria and assign it to <me> in project <Contoso>``` |
-| **View active items** | ```copilot-prompt Show all active bugs assigned to my team in the current sprint for <Contoso>``` |
-| **Filter by recent updates** | ```copilot-prompt List work items updated in the last 3 days in area path <Contoso\\Web>``` |
-| **Create a task under a parent** | ```copilot-prompt Create a task "Write unit tests" under user story #1234 with 4 hours estimated effort``` |
-| **Batch create work items** | ```copilot-prompt Create 5 user stories for a new search feature: design search UI, implement search API, add filtering, write integration tests, and update documentation. Assign all to <Contoso\\Backend>``` |
-| **Daily work summary** | ```copilot-prompt Show all work items assigned to <me> across all sprints, grouped by state, in project <Contoso>``` |
-| **Find recently created items** | ```copilot-prompt List work items created in the last 48 hours in project <Contoso> and show who created them``` |
-| **Quick triage view** | ```copilot-prompt Show all new bugs and user stories in project <Contoso> that haven't been assigned to anyone or any sprint yet``` |
-| **Create from a template pattern** | ```copilot-prompt Create a bug titled "Performance regression in checkout" with priority 1, repro steps "1. Open checkout page 2. Observe 5-second delay", and assign to <Raisa> in <Contoso>``` |
-| **View items by tag** | ```copilot-prompt Show all active work items tagged "security" in project <Contoso> sorted by priority``` |
+| Create a work item | `Create a user story titled "Implement login page" with acceptance criteria and assign it to <me> in project <Contoso>` |
+| View active items | `Show all active bugs assigned to my team in the current sprint for <Contoso>` |
+| Filter by recent updates | `List work items updated in the last 3 days in area path <Contoso\\Web>` |
+| Create a task under a parent | `Create a task "Write unit tests" under user story #1234 with 4 hours estimated effort` |
+| Batch create work items | `Create 5 user stories for a new search feature: design search UI, implement search API, add filtering, write integration tests, and update documentation. Assign all to <Contoso\\Backend>` |
+| Daily work summary | `Show all work items assigned to <me> across all sprints, grouped by state, in project <Contoso>` |
+| Find recently created items | `List work items created in the last 48 hours in project <Contoso> and show who created them` |
+| Quick triage view | `Show all new bugs and user stories in project <Contoso> that haven't been assigned to anyone or any sprint yet` |
+| Create from a template pattern | `Create a bug titled "Performance regression in checkout" with priority 1, repro steps "1. Open checkout page 2. Observe 5-second delay", and assign to <Raisa> in <Contoso>` |
+| View items by tag | `Show all active work items tagged "security" in project <Contoso> sorted by priority` |
 
 > [!NOTE]
 > If you're using Visual Studio Code, [agent mode](/visualstudio/ide/copilot-chat-context#agent-mode) is especially helpful for creating and managing work items.
