@@ -8,7 +8,7 @@ ms.author: chcomley
 author: chcomley
 ms.topic: tutorial
 monikerRange: '<= azure-devops'
-ms.date: 03/02/2026
+ms.date: 03/03/2026
 ms.custom: teams, devx-track-azurecli, sfi-image-nochange
 ---
 
