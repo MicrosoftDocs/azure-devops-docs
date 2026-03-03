@@ -4,11 +4,12 @@ titleSuffix: Azure DevOps Services
 description: Learn about best practices for integrating Azure DevOps Services.
 ms.subservice: azure-devops-ecosystem
 ms.assetid: 9E1F3FD7-E1C1-44D9-B265-5368B3BD621E
-ms.custom: content-health, FY22Q3, freshness
+ms.custom: content-health, FY22Q3, freshness, copilot-scenario-highlight
+ai-usage: ai-assisted
 monikerRange: 'azure-devops'
 ms.author: chcomley
 author: chcomley
-ms.date: 02/17/2026
+ms.date: 03/02/2026
 ms.topic: best-practice
 ---
 
@@ -20,7 +21,7 @@ ms.topic: best-practice
 
 Tools and integrations between services improve efficiencies for Azure DevOps Services. If you aren't careful, automated tools can get out of control and execute a high rate of requests. The requests can cause Azure DevOps to enforce [rate limits](./rate-limits.md) on your organization. To help reduce your risk of hitting rate limits, follow these best practices when you use the REST APIs to integrate with Azure DevOps.
 
-[!INCLUDE [ai-assistance-callout](../../includes/ai-assistance-callout.md)]
+[!INCLUDE [ai-assistance-mcp-server-tip](../../includes/ai-assistance-mcp-server-tip.md)]
 
 ## Push only actionable work items
 
@@ -90,6 +91,24 @@ Limit the number of links per work item as much as possible, to avoid enforcemen
 Using queries and individual *get work item* calls is the top way to get rate limits enforced on your organization. Don't execute queries to return large lists of work items. Use the reporting [work item links](/rest/api/azure/devops/wit/reporting%20work%20item%20links) and [work item revisions](/rest/api/azure/devops/wit/reporting%20work%20item%20revisions) REST APIs instead.
 
 For more information, see our [C# sample on GitHub](https://github.com/sferg-msft/vsts-wit-reporting-example).
+
+<a id="use-ai-assistance"></a>
+
+## Use AI to improve your integration design
+
+If you have the [Azure DevOps MCP Server](../../mcp-server/mcp-server-overview.md) connected to your AI agent in agent mode, you can use natural language prompts to design efficient integrations.
+
+| Task | Example prompt |
+|------|----------------|
+| Avoid rate limits | ```copilot-prompt How do I design my Azure DevOps integration to avoid hitting rate limits when syncing thousands of work items?``` |
+| Use reporting APIs | ```copilot-prompt Show me how to use the Azure DevOps reporting work item revisions API instead of individual queries for bulk data retrieval``` |
+| Implement caching | ```copilot-prompt Write code that caches Azure DevOps REST API responses to reduce redundant calls and stay within rate limits``` |
+| Handle failures gracefully | ```copilot-prompt Help me implement retry logic with exponential backoff for Azure DevOps REST API calls in C#``` |
+| Design webhook integration | ```copilot-prompt Show me how to set up Azure DevOps service hooks to push events instead of polling the REST API``` |
+| Optimize batch operations | ```copilot-prompt What's the most efficient way to create many work items in Azure DevOps without exceeding rate limits?``` |
+
+> [!NOTE]
+> Agent mode and the MCP Server use natural language, so you can adjust these prompts or ask follow-up questions to refine the results.
 
 ## Related content
 

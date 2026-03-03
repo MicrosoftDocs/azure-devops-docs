@@ -4,16 +4,19 @@ description: Learn the fundamental concepts and patterns for Azure DevOps REST A
 ms.assetid: 14ac2881-2aaf-4291-8dfe-3f7e3f591861
 ms.subservice: azure-devops-ecosystem
 ms.topic: quickstart
-ms.custom: pat-reduction
+ms.custom: pat-reduction, copilot-scenario-highlight
+ai-usage: ai-assisted
 monikerRange: '<= azure-devops'
 ms.author: chcomley
 author: chcomley
-ms.date: 07/16/2025
+ms.date: 03/02/2026
 ---
 
 # Get started with the REST APIs
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
+
+[!INCLUDE [ai-assistance-mcp-server-tip](../../includes/ai-assistance-mcp-server-tip.md)]
 
 Azure DevOps REST APIs provide powerful programmatic access to work items, repositories, builds, releases, and more. Whether you're building custom integrations, automating workflows, or extending Azure DevOps capabilities, understanding the fundamental patterns and concepts is essential for successful implementation.
 
@@ -78,7 +81,7 @@ Azure DevOps REST APIs typically return JSON responses. Here's an example respon
             "id": "00000000-0000-0000-0000-000000000000",
             "name": "Fabrikam-Fiber-TFVC",
             "url": "https://dev.azure.com/fabrikam-fiber-inc/_apis/projects/00000000-0000-0000-0000-000000000000",
-            "description": "TeamFoundationVersionControlprojects"
+            "description": "Team Foundation Version Control projects"
         }
     ],
     "count": 1
@@ -98,7 +101,7 @@ Azure DevOps REST APIs use standard HTTP methods:
 |:-------|:------------|:--------|
 | GET    | Get a resource or list of resources | Get projects, work items |
 | POST   | Create a resource, or get resources using advanced queries | Create work items, query work items |
-| PUT    | Create or completely replace a resource | Create/update work item |
+| PUT    | Create or completely replace a resource | Replace a build definition, update a policy |
 | PATCH  | Update specific fields of a resource | Update work item fields |
 | DELETE | Delete a resource | Delete work item |
 
@@ -190,6 +193,24 @@ For practical implementation guidance and complete code examples, see:
 * [Authentication guidance](../get-started/authentication/authentication-guidance.md) - Detailed authentication options
 * [REST API versioning](../concepts/rest-api-versioning.md) - API lifecycle information
 * [OAuth 2.0](../get-started/authentication/oauth.md) - OAuth implementation details
+
+<a id="use-ai-assistance"></a>
+
+## Use AI to build REST API calls
+
+If you have the [Azure DevOps MCP Server](../../mcp-server/mcp-server-overview.md) connected to your AI agent in agent mode, you can use natural language prompts to generate and troubleshoot REST API calls.
+
+| Task | Example prompt |
+|------|----------------|
+| Build a GET request | ```copilot-prompt Show me how to construct a GET request to list all projects in my Azure DevOps organization using the REST API``` |
+| Construct a POST body | ```copilot-prompt Generate the JSON-patch body for creating a work item using the Azure DevOps REST API``` |
+| Handle authentication | ```copilot-prompt Write C# code to call the Azure DevOps REST API with a Bearer token from Microsoft Entra ID``` |
+| Explore API areas | ```copilot-prompt What Azure DevOps REST API endpoints are available for managing Git pull requests?``` |
+| Parse API responses | ```copilot-prompt Show me how to deserialize an Azure DevOps REST API response into C# objects and handle pagination with continuation tokens``` |
+| Debug API errors | ```copilot-prompt I'm getting a 400 error when calling the Azure DevOps work item update API — help me understand the correct PATCH format``` |
+
+> [!NOTE]
+> Agent mode and the MCP Server use natural language, so you can adjust these prompts or ask follow-up questions to refine the results.
 
 ## Next steps
 

@@ -4,18 +4,20 @@ description: Learn how to use Azure DevOps .NET client libraries to integrate wo
 ms.assetid: 474cdb4f-9a5e-49fb-84b2-9c540ebcf98b
 ai-usage: ai-assisted
 ms.subservice: azure-devops-ecosystem
-ms.custom: devx-track-dotnet
+ms.custom: devx-track-dotnet, copilot-scenario-highlight
 ms.topic: overview
 monikerRange: '<= azure-devops'
 ms.author: chcomley
 author: chcomley
-ms.date: 07/02/2025
+ms.date: 03/02/2026
 #customer intent: As a .NET developer, I want to integrate my C# applications with Azure DevOps services like work items, Git repositories, builds, and pipelines using official client libraries and REST APIs.
 ---
 
 # .NET client libraries
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
+
+[!INCLUDE [ai-assistance-mcp-server-tip](../../includes/ai-assistance-mcp-server-tip.md)]
 
 Client libraries are available for .NET developers who build Windows apps and services that integrate with Azure DevOps. Client libraries integrate with work item tracking, version control, build, and other services. These packages make it easy to acquire and redistribute the libraries needed by your app or service.
 
@@ -203,3 +205,28 @@ The [Microsoft.TeamFoundationServer.ExtendedClient](https://www.nuget.org/packag
 
 > [!IMPORTANT]
 > This package includes our older SOAP object model, which we replaced by our newer REST object model. We're no longer investing in the older SOAP object model, and have no plans to create a NetStandard version of it.
+
+<a id="use-ai-assistance"></a>
+
+## Use AI to work with .NET client libraries
+
+If you have the [Azure DevOps MCP Server](../../mcp-server/mcp-server-overview.md) connected to your AI agent in agent mode, you can use natural language prompts to generate .NET client library code.
+
+| Task | Example prompt |
+|------|----------------|
+| Choose the right NuGet package | ```copilot-prompt Which Azure DevOps .NET NuGet packages do I need to work with work items and Git repositories?``` |
+| Set up a connection | ```copilot-prompt Write C# code to create a VssConnection to Azure DevOps using Microsoft Entra authentication with the .NET client libraries``` |
+| Get an HTTP client | ```copilot-prompt Show me how to get a WorkItemTrackingHttpClient from a VssConnection and create a work item``` |
+| Use with dependency injection | ```copilot-prompt How do I register Azure DevOps .NET client library services in an ASP.NET Core application using dependency injection?``` |
+| Handle NetStandard compatibility | ```copilot-prompt Which Azure DevOps .NET client library packages support NetStandard 2.0 for cross-platform development?``` |
+| Migrate from SOAP to REST | ```copilot-prompt Help me replace my TeamFoundationServer.ExtendedClient SOAP calls with the modern REST-based .NET client libraries``` |
+
+> [!NOTE]
+> Agent mode and the MCP Server use natural language, so you can adjust these prompts or ask follow-up questions to refine the results.
+
+## Related content
+
+- [.NET client library samples](../get-started/client-libraries/samples.md)
+- [Authentication guidance](../get-started/authentication/authentication-guidance.md)
+- [Migration guide from WIT Client OM](migration-guide.md)
+- [REST API samples](../get-started/rest/samples.md)
