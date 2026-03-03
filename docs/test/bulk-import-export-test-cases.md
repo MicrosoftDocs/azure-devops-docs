@@ -104,28 +104,6 @@ If you modify mappings after importing a template, the system alerts you to prev
 
 4. Save the file and import it back to the test suite. For details, see [Import test cases](#import-test-cases). 
 
-## Import automated test cases (TCM) 
-
-To import automated test cases to a test suite, use `tcm testcase /import`. Specify the .dll file for the test assembly that contains your tests. 
-
-```tcm 
-tcm testcase /import /collection:teamprojectcollectionurl /teamproject:project
-             /storage:path
-             [/maxpriority:priority]
-             [/minpriority:priority]
-             [/category:filter]
-             [/syncsuite:id [/include]]
-             [/login:username,[password]]
-```
-
-| Parameter | Description |  
-|----------|------------|  
-|**/storage**:`path`|Path and name of the test assembly that contains the automated tests to import.| 
-|**/maxpriority**:`priority`|Optional. Import only tests with a priority attribute less than or equal to the specified value. For example, `/maxpriority:1` imports only priority 0 and 1 tests.| 
-|**/minpriority**:`priority`|Optional. Import only tests with a priority attribute equal to or greater than the specified value. For example, `/minpriority:2` imports only priority 2 and higher tests.| 
-|**/category**:`filter`|Optional. Import tests based on the category of each test method. You can combine this parameter with `/syncsuite` to import tests with a specific category into a test suite. For more information, see [Run unit tests with Test Explorer](/visualstudio/test/run-unit-tests-with-test-explorer).| 
-|**/syncsuite**:`id`|Optional. Specify the suite ID to add imported test cases to. The suite can't be a dynamic or query-based suite. When synchronizing, unsupported tests are removed from the suite but not from the test plan.|
-
 ## Frequently asked questions
 
 ### Q: Can I create new test cases and update existing ones in the same file?
