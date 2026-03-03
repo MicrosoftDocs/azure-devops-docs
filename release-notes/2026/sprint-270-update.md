@@ -18,9 +18,6 @@ Check out the release notes for details.
 ### Boards
 [!INCLUDE [sprint-270-update-links](includes/boards/sprint-270-update-links.md)]
 
-### Pipelines
-[!INCLUDE [sprint-270-update-links](includes/pipelines/sprint-270-update-links.md)]
-
 ### Test Plans
 [!INCLUDE [sprint-270-update-links](includes/testplans/sprint-270-update-links.md)]
 
@@ -29,9 +26,6 @@ Check out the release notes for details.
 
 ## Boards
 [!INCLUDE [sprint-270-update](includes/boards/sprint-270-update.md)]
-
-## Pipelines
-[!INCLUDE [sprint-270-update](includes/pipelines/sprint-270-update.md)]
 
 ## Test Plans
 [!INCLUDE [sprint-270-update](includes/testplans/sprint-270-update.md)]
