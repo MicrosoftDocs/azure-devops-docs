@@ -106,6 +106,8 @@ In this section, you set up an internal feed from the same organization as an up
 
 1. Select **Save** to apply your changes.
 
+    :::image type="content" source="../media/new-internal-feed-upstream-source.png" alt-text="A screenshot showing how to add a new internal feed as an upstream source in Azure Artifacts.":::
+
 ## Install packages from upstream
 
 The following example illustrates a scenario where *Test_Feed* has *CargoDemoFeed* configured as an upstream source. For domonstration purposes *Test_Feed* is empty and contains no packages.
@@ -117,6 +119,8 @@ When a collaborator (or higher) installs a package from *CargoDemoFeed*, Azure A
 1. Select Artifacts, then from the dropdown menu, select the upstream feed (CargoDemoFeed).
 
 1. Select the package you want to install. On the **Overview** tab, copy the install command.
+
+     :::image type="content" source="../media/install-package-from-internal-upstream.png" alt-text="A screenshot showing how to install a package from an internal feed in Azure Artifacts.":::
 
 1. Open a local command prompt, navigate to the root of your project, paste the command, and run it.
 
