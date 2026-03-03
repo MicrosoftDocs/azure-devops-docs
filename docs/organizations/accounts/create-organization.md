@@ -5,9 +5,11 @@ description: Learn how to create an Azure DevOps organization using a personal M
 ms.subservice: azure-devops-organizations
 ms.assetid: e2eacd25-e6be-4294-b1da-5529195f30d0
 ms.topic: how-to
+ms.custom: copilot-scenario-highlight
 ms.author: chcomley
 author: chcomley
-ms.date: 02/11/2026
+ms.date: 03/03/2026
+ai-usage: ai-assisted
 monikerRange: 'azure-devops'
 #customer intent: As a new Azure DevOps user, I want to create an organization so that I can start managing projects and collaborating with my team.
 ---
@@ -22,6 +24,8 @@ Use an organization to connect groups of related projects and help scale up your
 > You must create all organizations manually through the web portal. Automated creation of organizations isn't supported. However, automated organization configuration, project creation, and resource provisioning are supported through the [REST API](/rest/api/azure/devops).
 
 <a name="how-sign-up"></a>
+
+[!INCLUDE [ai-assistance-mcp-server-tip](../../includes/ai-assistance-mcp-server-tip.md)]
 
 ## Prerequisites
 
@@ -65,6 +69,27 @@ If you exceed these free tier limits, you pay for extra usage through your linke
 
 > [!div class="nextstepaction"]
 > [Create a project](../projects/create-project.md)
+
+<a id="use-ai-assistance"></a>
+
+## Use AI to manage your organization
+
+If you have the [Azure DevOps MCP Server](../../mcp-server/mcp-server-overview.md) configured, you can use AI assistants to manage your Azure DevOps organization using natural language prompts. The MCP Server provides your AI assistant with secure access to your Azure DevOps data, allowing you to create projects, manage settings, and configure resources without navigating through the web interface.
+
+### Example prompts for organization management
+
+| Task | Example prompt |
+|------|----------------|
+| **Set up a new organization end-to-end** | `Create a new project called <project-name> in <organization-name> using Agile process with Git repos, then add <user-email> as a project administrator` |
+| **Compare organization settings** | `Show the process templates, version control defaults, and security policies configured for <organization-name>` |
+| **Bootstrap development infrastructure** | `In <organization-name>, create a project <project-name>, initialize a Git repo called <repo-name>, and set up a basic CI pipeline for a .NET application` |
+| **Review organization limits** | `How many projects exist in <organization-name>, how many users have Basic access, and what Azure subscription is linked for billing?` |
+| **Set up team structure** | `In the <project-name> project, create teams for Frontend, Backend, and QA, each with their own area path and iteration schedule` |
+| **Configure initial security** | `Set up <organization-name> security: disable alternate credentials, require minimum PAT scope, and restrict project creation to admins only` |
+
+> [!TIP]
+> If you're using Visual Studio Code, [agent mode](/visualstudio/ide/copilot-chat-context#agent-mode) is especially helpful for setting up a new organization and creating initial projects.
+> - To avoid using stale or cached data from previous queries, add to your prompt, `Do not use previously fetched data`.
 
 ## Related content
 

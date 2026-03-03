@@ -7,9 +7,10 @@ ms.subservice: azure-devops-projects
 ms.topic: how-to
 ms.author: chcomley
 author: chcomley
+ai-usage: ai-assisted
 monikerRange: "<=azure-devops"
-ms.date: 03/11/2025
-ms.custom: engagement-fy23, sfi-image-nochange
+ms.date: 03/03/2026
+ms.custom: engagement-fy23, sfi-image-nochange, copilot-scenario-highlight
 ---
 
 # Delete a project
@@ -23,6 +24,8 @@ If a project becomes obsolete, you can [delete it](#delete-project) from your or
 > - In rare cases, our deletion process might take up to 70 days due to backend retries and the need to delete data from multiple sources.
 > - Hard-deleted projects from the on-premises Azure DevOps Administration Console can't be restored.
 > For more information, see [Restore a project](#restore-a-deleted-project) and [Save project data](#save-project-data).
+
+[!INCLUDE [ai-assistance-mcp-server-tip](../../includes/ai-assistance-mcp-server-tip.md)]
 
 ## Prerequisites
 
@@ -274,6 +277,28 @@ A: Work item links pointing to deleted project work items will remain until the 
 ### Q: I deleted a project in Azure DevOps, but in Visual Studio Team Explorer it's still there, what do I do?
 
 A: Wait 28 days before the project is permanently deleted.
+
+<a id="use-ai-assistance"></a>
+
+## Use AI to manage project deletion and restoration
+
+[!INCLUDE [ai-assistance-mcp-server-tip](../../includes/ai-assistance-mcp-server-tip.md)]
+
+If you use GitHub Copilot, the [Azure DevOps MCP Server](../../mcp-server/overview.md) can help you safely delete, restore, and clean up Azure DevOps projects through natural language prompts.
+
+### Example prompts for project deletion and restoration
+
+| **Task** | **Example prompt** |
+|---|---|
+| Plan a safe project deletion | `I need to delete an obsolete project but want to preserve its build definitions and work item history first. Walk me through exporting the critical data before I delete the project` |
+| Restore an accidentally deleted project | `A team member accidentally deleted our staging project yesterday. Show me how to restore it before the 28-day permanent deletion window expires and verify all repos and pipelines are intact` |
+| Clean up after a migration | `We migrated from Azure DevOps Server to Azure DevOps Services and have leftover projects in the old collection. Guide me through identifying which ones are safe to hard-delete from the admin console` |
+| Audit projects for deletion candidates | `List all projects in my organization that have had zero commits, no pipeline runs, and no work item updates in the last 6 months so I can evaluate them for deletion` |
+| Automate project deletion via CLI | `I need to delete 5 test projects we created during a proof of concept. Show me how to use the Azure DevOps CLI to delete them in batch and verify each deletion completed` |
+| Troubleshoot broken work item links | `After deleting a project, work items in our other projects still show links to the deleted project. Explain when these links get cleaned up and how to remove them manually if needed` |
+
+> [!TIP]
+> For the best results, use these prompts in agent mode with the Azure DevOps MCP Server connected. Customize the prompts with your specific project name, organization, or migration scenario.
 
 ## Related content
 

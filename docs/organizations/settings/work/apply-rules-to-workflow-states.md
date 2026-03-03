@@ -2,13 +2,14 @@
 title: Restrict workflow transitions and apply rules to workflow states 
 titleSuffix: Azure DevOps Services
 description: Learn how to apply rules to workflow states to restrict transitions.
-ms.custom: inherited-process
+ms.custom: inherited-process, copilot-scenario-highlight
 ms.service: azure-devops-boards
 ms.author: chcomley
 author: chcomley
+ai-usage: ai-assisted
 monikerRange: "<=azure-devops"
 ms.topic: tutorial
-ms.date: 09/11/2024 
+ms.date: 03/03/2026
 ---
 
 # Apply rules to workflow states (Inheritance process)   
@@ -36,6 +37,8 @@ After you add or modify your workflow states for a work item type, define rules 
 ::: moniker-end
 
 [!INCLUDE [temp](../includes/note-on-prem-link.md)]
+
+[!INCLUDE [ai-assistance-mcp-server-tip](../../../includes/ai-assistance-mcp-server-tip.md)]
 
 ## Prerequisites
 
@@ -528,6 +531,28 @@ The Agile process bug work item type previously had a rule that reassigned the b
 **When** `A work item state changes to` *Resolved* **Then** `Copy the value from `*Created By* **to** *Assigned To*.
 
 ::: moniker-end
+
+<a id="use-ai-assistance"></a>
+
+## Use AI to configure workflow rules
+
+[!INCLUDE [ai-assistance-mcp-server-tip](../../../includes/ai-assistance-mcp-server-tip.md)]
+
+If you use GitHub Copilot, the [Azure DevOps MCP Server](../../../mcp-server/overview.md) can help you design and implement workflow state rules through natural language prompts.
+
+### Example prompts for workflow rules
+
+| **Task** | **Example prompt** |
+|---|---|
+| Build an approval workflow | `Create workflow rules for my Bug work item type so that when the state changes to 'Ready for Review', the Assigned To field is set to the team lead and the Priority field becomes read-only until it moves to Approved` |
+| Restrict state transitions by role | `Configure rules so that only members of the 'Release Managers' group can move User Stories from 'Testing' to 'Done', and prevent anyone else from making that transition` |
+| Enforce required fields on state change | `Add rules to my Task work item type that require the 'Resolution' field and 'Root Cause' field to be filled in before a task can be moved from Active to Resolved` |
+| Auto-close parent work items | `Set up rules to automatically close a Feature when all its child User Stories reach the Done state. Explain how the auto-complete parent rule works and any limitations I should know about` |
+| Troubleshoot conflicting rules | `I'm getting a VS1640113 error about duplicate rules with the same conditions. Help me identify which rules in my inherited process conflict and show me how to fix the overlap` |
+| Design a regulated workflow | `Our team needs to meet SOC 2 compliance for state transitions. Design workflow rules that enforce separation of duties — the person who created a work item can't be the one to approve it, and all state changes must be auditable` |
+
+> [!TIP]
+> For the best results, use these prompts in agent mode with the Azure DevOps MCP Server connected. Customize the prompts with your specific work item types, fields, or compliance requirements.
 
 ## Related content
 

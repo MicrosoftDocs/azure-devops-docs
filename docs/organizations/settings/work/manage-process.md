@@ -2,14 +2,15 @@
 title: Create and Manage an Inherited Process 
 titleSuffix: Azure DevOps Services
 description: Create and apply an inherited process to a project, manage the process by adding work item types, states, fields, rules to track your work.
-ms.custom: inherited-process
+ms.custom: inherited-process, copilot-scenario-highlight
 ms.service: azure-devops-boards
 ms.assetid: 6EB45080-22E2-43AD-92F9-77D03D5C136F  
 ms.author: chcomley
 author: chcomley
+ai-usage: ai-assisted
 ms.topic: tutorial
 monikerRange: '<= azure-devops'
-ms.date: 08/08/2025
+ms.date: 03/03/2026
 #customer intent: As an Azure DevOps developer, I want to follow tutorials for creating and applying an inherited process to a project, so I can work with custom fields and work item types.
 ---
 
@@ -35,6 +36,8 @@ In this tutorial, you:
 > * Create a new project from a defined process
 > * Copy a process and make customizations
 > * Enable and disable processes, and set the default process
+
+[!INCLUDE [ai-assistance-mcp-server-tip](../../../includes/ai-assistance-mcp-server-tip.md)]
 
 ## Prerequisites
 
@@ -186,6 +189,28 @@ You can have an inherited process preselected for other projects you plan to cre
 To set a process as the default, open the :::image type="icon" source="../../../media/icons/actions-icon.png"::: **More actions** menu for the inherited process and select **Set as default process**. This option isn't available with any of the system processes. 
 
 **Project Collection Administrators** can [add projects](../../projects/create-project.md) from the **Projects** page. 
+
+<a id="use-ai-assistance"></a>
+
+## Use AI to manage inherited processes
+
+[!INCLUDE [ai-assistance-mcp-server-tip](../../../includes/ai-assistance-mcp-server-tip.md)]
+
+If you use GitHub Copilot, the [Azure DevOps MCP Server](../../../mcp-server/overview.md) can help you create, manage, and apply inherited processes through natural language prompts.
+
+### Example prompts for process management
+
+| **Task** | **Example prompt** |
+|---|---|
+| Create a standardized process | `Create an inherited process based on Agile for our organization's web development projects. Include custom fields for 'Sprint Goal', 'Definition of Done', and 'Tech Stack', and set it as the default process for new projects` |
+| Migrate a project to a new process | `Move my 'Legacy App' project from the default Scrum process to our customized 'Engineering-Scrum' inherited process. Explain what changes automatically and what I need to update manually` |
+| Copy and customize a process | `I want to create a variation of our 'Engineering-Agile' process for our Data Science team. Clone the process, add a 'Model Training' work item type, and add 'Dataset' and 'Accuracy Metric' fields` |
+| Audit process usage across projects | `List all inherited processes in my organization, which projects use each process, and identify any processes that aren't assigned to any project so I can consider disabling or removing them` |
+| Set up a process governance model | `We have 15 teams and need a process governance strategy. Help me design a process hierarchy with a base process for shared customizations and team-specific derived processes for teams with unique needs` |
+| Troubleshoot process migration | `After changing my project from Agile to our custom inherited process, some work items show incorrect state mappings and fields are missing. Walk me through diagnosing and fixing the state category mismatches` |
+
+> [!TIP]
+> For the best results, use these prompts in agent mode with the Azure DevOps MCP Server connected. Customize the prompts with your specific process names, project names, or organizational requirements.
 
 ## Next step
 

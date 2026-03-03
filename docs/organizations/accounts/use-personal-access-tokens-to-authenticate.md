@@ -1,7 +1,7 @@
 ---
 title: Use personal access tokens
 titleSuffix: Azure DevOps
-ms.custom: ai-video-demo, pat-reduction
+ms.custom: ai-video-demo, pat-reduction, copilot-scenario-highlight
 ai-usage: ai-assisted
 description: Learn how to create and manage personal access tokens (PATs) as alternate passwords to authenticate to Azure DevOps.
 ms.subservice: azure-devops-security
@@ -9,7 +9,7 @@ ms.assetid: d980d58e-4240-47c7-977c-baaa7028a1d8
 ms.topic: how-to
 ms.author: chcomley
 author: chcomley
-ms.date: 02/24/2026
+ms.date: 03/03/2026
 monikerRange: '<= azure-devops'
 ---
 
@@ -30,6 +30,8 @@ When you use Microsoft tools, your Microsoft account or Microsoft Entra ID is re
 If you use tools that don't support Microsoft Entra accounts, or if you prefer not to share your primary credentials, consider using PATs as an alternative authentication method.
 
 [!INCLUDE [use-microsoft-entra-reduce-pats](../../includes/use-microsoft-entra-reduce-pats.md)]
+
+[!INCLUDE [ai-assistance-mcp-server-tip](../../includes/ai-assistance-mcp-server-tip.md)]
 
 ## Prerequisites
 
@@ -318,8 +320,28 @@ These inactive tokens stay visible for several months after expiration or revoca
 A. Your tenant's security policies require admin consent before applications can access organization resources.
 Reach out to your tenant administrator.
 
+<a id="use-ai-assistance"></a>
+
+## Use AI to manage personal access tokens
+
+If you have the [Azure DevOps MCP Server](../../mcp-server/mcp-server-overview.md) configured, you can use AI assistants to manage and review your personal access tokens using natural language prompts. The MCP Server provides your AI assistant with secure access to your Azure DevOps data, allowing you to list tokens, check expiration dates, and review token scopes without navigating through the web interface.
+
+### Example prompts for managing personal access tokens
+
+| Task | Example prompt |
+|------|----------------|
+| **Create a least-privilege token** | `Help me create a PAT for <organization-name> that only has read access to work items and code in the <project-name> project, valid for 30 days` |
+| **Rotate expiring tokens** | `Show me all my PATs in <organization-name> expiring in the next 14 days, their scopes, and what I need to update when I regenerate them` |
+| **Audit my token hygiene** | `List all my active PATs in <organization-name>, when each was last used, and flag any that have broader scopes than necessary` |
+| **Troubleshoot authentication failures** | `My PAT stopped working for Git push to <repo-name> in <project-name> - help me check if it expired, has the right scope, or if a policy is blocking it` |
+| **Find tokens to replace with Entra auth** | `Show me which of my PATs in <organization-name> are used for interactive scenarios that could switch to Microsoft Entra authentication instead` |
+| **Set up a CI/CD service connection** | `What's the minimum PAT scope needed for an Azure Pipelines service connection to <organization-name> that runs builds and deploys releases?` |
+
+> [!TIP]
+> If you're using Visual Studio Code, [agent mode](/visualstudio/ide/copilot-chat-context#agent-mode) is especially helpful for reviewing and auditing your PATs, including identifying tokens that need rotation or have excessive scopes.
+> - To avoid using stale or cached data from previous queries, add to your prompt, `Do not use previously fetched data`.
+
 ## Related content
 
-- [Use policies to manage personal access tokens for users](manage-pats-with-policies-for-administrators.md)
 - [Revoke user PATs (for admins)](admin-revoke-user-pats.md)
 - [Authenticate with Microsoft Entra tokens](../../integrate/get-started/authentication/entra.md)

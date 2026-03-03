@@ -6,10 +6,10 @@ ms.subservice: azure-devops-security
 ms.topic: how-to
 ms.author: chcomley
 author: chcomley
-ms.date: 02/24/2026
+ms.date: 03/03/2026
 ai-usage: ai-assisted
 monikerRange: '<= azure-devops'
-ms.custom: pat-reduction
+ms.custom: pat-reduction, copilot-scenario-highlight
 ---
 
 # Revoke personal access tokens for organization users (for admins)
@@ -33,6 +33,8 @@ Revoking user PATs is essential for the following reasons:
 - **Permission changes** - Invalidate tokens that reflect old permissions.
 - **Security breach** - Mitigate unauthorized access during a breach.
 - **Regular security practices** - Regularly revoke and reissue tokens as part of a security policy.
+
+[!INCLUDE [ai-assistance-mcp-server-tip](../../includes/ai-assistance-mcp-server-tip.md)]
 
 ## Prerequisites
 
@@ -92,6 +94,27 @@ A: After a user is removed from Microsoft Entra ID, the PATs and FedAuth tokens 
 A: If you have JWTs that you believe should be revoked, revoke them promptly.
 Revoke JWTs issued as part of the OAuth flow using the [PowerShell script](https://github.com/Microsoft/vsts-script-samples/tree/master/PowerShell/TokenAdmin).
 Be sure to use the date range option in the script.
+
+<a id="use-ai-assistance"></a>
+
+## Use AI to manage personal access tokens
+
+If you have the [Azure DevOps MCP Server](../../mcp-server/mcp-server-overview.md) configured, you can use AI assistants to review and manage personal access tokens for your organization's users using natural language prompts. The MCP Server provides your AI assistant with secure access to your Azure DevOps data, allowing you to audit tokens, check user access, and review security settings without navigating through the web interface.
+
+### Example prompts for PAT management
+
+| Task | Example prompt |
+|------|----------------|
+| **Respond to a security incident** | `Immediately list all active PATs for <user-email> in <organization-name> and show their scopes and last used dates` |
+| **Clean up after employee departure** | `Find all PATs and active sessions for <user-email> in <organization-name> that should be revoked` |
+| **Find overly broad tokens** | `List all full-scoped PATs in <organization-name> that have been active in the last 90 days and who owns them` |
+| **Audit tokens about to expire** | `Show PATs expiring within the next 7 days in <organization-name> and notify me which ones have Code Write or Build Execute scopes` |
+| **Check for stale tokens** | `Find PATs in <organization-name> that were created more than a year ago and haven't been used in the last 60 days` |
+| **Review admin-scoped tokens** | `List all PATs in <organization-name> that have Full access or manage scopes, grouped by user` |
+
+> [!TIP]
+> If you're using Visual Studio Code, [agent mode](/visualstudio/ide/copilot-chat-context#agent-mode) is especially helpful for auditing PAT usage and reviewing security policies across your organization.
+> - To avoid using stale or cached data from previous queries, add to your prompt, `Do not use previously fetched data`.
 
 ## Related content
 

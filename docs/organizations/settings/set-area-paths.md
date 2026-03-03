@@ -8,8 +8,9 @@ ms.author: chcomley
 author: chcomley
 ms.topic: how-to
 monikerRange: '<= azure-devops'
-ms.date: 12/22/2025
-ms.custom: teams, engagement-fy23, devx-track-azurecli, sfi-image-nochange
+ms.date: 03/03/2026
+ms.custom: teams, engagement-fy23, devx-track-azurecli, sfi-image-nochange, copilot-scenario-highlight
+ai-usage: ai-assisted
 ---
 
 # Define area paths and assign to a team
@@ -23,6 +24,8 @@ After you define area paths at the project level, assign them to teams within th
 [!INCLUDE [temp](../../boards/includes/list-area-dependent-tools-tasks.md)] 
 
 To understand how the system uses area paths, see [About area and iteration paths](about-areas-iterations.md).
+
+[!INCLUDE [ai-assistance-mcp-server-tip](../../includes/ai-assistance-mcp-server-tip.md)]
 
 ## Prerequisites
 
@@ -474,6 +477,28 @@ When you delete an **Area Path**, you must provide an **Area Path** to use to up
 You can quickly generate [queries](../../boards/queries/using-queries.md) to view the progress based on an area path. For example, [visualize progress of work items that are assigned to each team's area path](../../report/dashboards/charts.md), as shown in the following stacked bar chart. Choose Node Name to get the leaf node of the area path.
 
 ![Screenshot shows stacked bar chart by area and state.](media/areas/stacked-bar-chart.png)
+
+<a id="use-ai-assistance"></a>
+
+## Use AI to manage area paths
+
+[!INCLUDE [ai-assistance-mcp-server-tip](../../includes/ai-assistance-mcp-server-tip.md)]
+
+If you use GitHub Copilot, the [Azure DevOps MCP Server](../../mcp-server/overview.md) can help you design area path hierarchies, assign teams, and organize work items through natural language prompts.
+
+### Example prompts for area path management
+
+| **Task** | **Example prompt** |
+|---|---|
+| Design an area path hierarchy | `Create an area path structure for a product with three components — Backend API, Web Frontend, and Mobile App — each with sub-areas for features, bugs, and technical debt. Assign each component to its respective team` |
+| Restructure after a reorg | `Our Platform team split into Infrastructure and Developer Experience teams. Help me create new area paths, reassign work items from the old Platform area to the appropriate new team areas, and update team configurations` |
+| Audit area path assignments | `List all area paths in my project and show which team owns each one. Identify any area paths with no team assignment or any work items assigned to area paths that don't match their team` |
+| Set up cross-team visibility | `Configure area paths so that our management team can see work items across all feature teams on a single backlog, while each feature team only sees its own area path on their team backlog` |
+| Clean up unused area paths | `Find all area paths in my project that have zero work items assigned and haven't been used in the last 6 months, then help me safely remove them without affecting any active work` |
+| Migrate area paths between projects | `We're moving the Authentication feature from Project A to Project B. Walk me through recreating the area path hierarchy in the new project and bulk-updating the work items to point to the new area paths` |
+
+> [!TIP]
+> For the best results, use these prompts in agent mode with the Azure DevOps MCP Server connected. Customize the prompts with your specific project, team names, or area path structure.
 
 ## Next steps
 

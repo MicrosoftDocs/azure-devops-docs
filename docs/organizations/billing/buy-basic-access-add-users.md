@@ -1,14 +1,15 @@
 ---
 title: Manage paid access for users
 titleSuffix: Azure DevOps
-ms.custom: freshness-fy22q1, engagement-fy23
+ms.custom: freshness-fy22q1, engagement-fy23, copilot-scenario-highlight
 description: Assign paid access and control the default access of your new users in Azure DevOps.
 ms.subservice: azure-devops-billing
 ms.assetid: 02cb8774-6d1d-4f15-8818-b56541033b1f
+ai-usage: ai-assisted
 ms.topic: how-to
 ms.author: chcomley
 author: chcomley
-ms.date: 03/05/2025
+ms.date: 03/03/2026
 monikerRange: '<= azure-devops'
 ---
 
@@ -23,6 +24,8 @@ For more information, learn how to manage paid access to [Azure Boards](https://
 Visual Studio subscribers get access included with their subscription, and their subscription gets detected when they sign in to Azure DevOps for the first time.
 
 [!INCLUDE [pricing-calculator-tip](../../includes/pricing-calculator-tip.md)]
+
+[!INCLUDE [ai-assistance-mcp-server-tip](../../includes/ai-assistance-mcp-server-tip.md)]
 
 ::: moniker range=" azure-devops"
 
@@ -151,7 +154,29 @@ You're entitled to the same number of user licenses to be used in the server.
 
 ::: moniker-end
 
-## Next steps
+<a id="use-ai-assistance"></a>
+
+## Use AI to manage paid access
+
+[!INCLUDE [ai-assistance-mcp-server-tip](../../includes/ai-assistance-mcp-server-tip.md)]
+
+If you use GitHub Copilot, the [Azure DevOps MCP Server](../../mcp-server/overview.md) can help you manage user access levels, optimize license costs, and automate billing tasks through natural language prompts.
+
+### Example prompts for managing paid access
+
+| **Task** | **Example prompt** |
+|---|---|
+| Audit inactive users | `Identify all users in my organization who haven't signed in during the last 90 days and still have Basic or Basic + Test Plans access, so I can reclaim those licenses` |
+| Optimize license costs | `Compare the number of Basic licenses I'm paying for against actual usage across my organization and recommend where I can downgrade users to Stakeholder access` |
+| Onboard a new team | `A new team of 8 developers and 3 project managers is joining next week. Recommend the most cost-effective access level assignments based on their roles` |
+| Set up group-based licensing | `Create a group rule that automatically assigns Basic + Test Plans access to members of our QA team so I don't have to manually manage their access levels` |
+| Enable multi-org billing | `I manage three Azure DevOps organizations under the same Azure subscription. Walk me through enabling multi-organization billing so I only pay once per user` |
+| Plan for contractor access | `We're bringing on 15 short-term contractors who only need to view work items and dashboards. What's the most cost-effective way to give them access without increasing our paid user count?` |
+
+> [!TIP]
+> For the best results, use these prompts in agent mode with the Azure DevOps MCP Server connected. Customize the prompts with your specific organization name, team details, or access level requirements.
+
+## Next step
 
 > [!div class="nextstepaction"]
 > [Buy parallel jobs](../../pipelines/licensing/concurrent-jobs.md#how-much-do-parallel-jobs-cost)

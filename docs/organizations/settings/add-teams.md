@@ -8,8 +8,9 @@ ms.author: chcomley
 author: chcomley
 ms.topic: tutorial
 monikerRange: '<= azure-devops'
-ms.date: 11/12/2024
-ms.custom: teams, devx-track-azurecli, sfi-image-nochange
+ms.date: 03/03/2026
+ms.custom: teams, devx-track-azurecli, sfi-image-nochange, copilot-scenario-highlight
+ai-usage: ai-assisted
 ---
 
 # Create or add a team 
@@ -28,6 +29,8 @@ To maintain Agile practices while scaling teams, review [Scale Agile to Large Te
 > This article explains how to add teams or team members to an Azure DevOps project. For information on Microsoft Teams or integrating it with Azure Boards, see [Welcome to Microsoft Teams](/microsoftteams/teams-overview) or [Use the Azure Boards app in Microsoft Teams](../../boards/integrations/boards-teams.md).
 >
 > To move work items between teams, see [Move work items from one team to another](../../boards/work-items/move-work-items.md).
+
+[!INCLUDE [ai-assistance-mcp-server-tip](../../includes/ai-assistance-mcp-server-tip.md)]
 
 ## Prerequisites
 
@@ -348,6 +351,28 @@ For teams to work autonomously, give them permissions that they don't have by de
 For more information on setting permissions and access for select users, see [Set permissions and access for work tracking](../security/set-permissions-access-work-tracking.md).
 
  
+
+<a id="use-ai-assistance"></a>
+
+## Use AI to create and manage teams
+
+[!INCLUDE [ai-assistance-mcp-server-tip](../../includes/ai-assistance-mcp-server-tip.md)]
+
+If you use GitHub Copilot, the [Azure DevOps MCP Server](../../mcp-server/overview.md) can help you create teams, configure their settings, and manage team membership through natural language prompts.
+
+### Example prompts for team management
+
+| **Task** | **Example prompt** |
+|---|---|
+| Bootstrap teams for a new project | `I'm setting up a new project with three Scrum teams — API, Frontend, and QA. Create each team, assign a team administrator, set up their area paths, and configure 2-week sprint iterations starting next Monday` |
+| Scale from one team to many | `Our single default team has grown to 30 people working on different features. Help me split into three feature teams, redistribute existing work items based on area paths, and set up independent backlogs for each team` |
+| Audit team membership | `List all teams in my project with their members and administrators. Identify any teams with no administrator, teams with members who left the organization, or teams with overlapping membership that might cause confusion` |
+| Set up a virtual team for cross-cutting work | `Create a DevOps team that spans Backend and Frontend teams for infrastructure and deployment work. Configure their area path to include sub-areas from both teams so they can track cross-cutting concerns` |
+| Automate team creation via CLI | `Generate Azure DevOps CLI commands to create 5 teams from a list of names, add specific members to each, and set the default team for our project` |
+| Configure team defaults and permissions | `I just created a new Platform team. Walk me through setting their default area path, backlog iteration, sprint iterations, working days, and granting the team lead permissions to manage the team settings` |
+
+> [!TIP]
+> For the best results, use these prompts in agent mode with the Azure DevOps MCP Server connected. Customize the prompts with your specific team names, member lists, or project structure.
 
 ## Next steps
 

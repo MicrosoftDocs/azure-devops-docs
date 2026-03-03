@@ -4,11 +4,12 @@ titleSuffix: Azure DevOps
 description: Configure email notifications for your team, project, or organization when changes occur to source code, git, work items, and builds in Azure DevOps.
 ms.subservice: azure-devops-notifications
 ms.assetid: 6edc44d0-2729-46f5-8108-c8a5160a6a7a
-ms.custom: cross-project
+ms.custom: cross-project, copilot-scenario-highlight
 ms.author: chcomley
 author: chcomley
+ai-usage: ai-assisted
 ms.topic: how-to
-ms.date: 05/14/2025
+ms.date: 03/03/2026
 monikerRange: '<= azure-devops'
 #customer intent: As a developer, I want to set notifications for my team, project, or organization, so I can receive email about changes to source code, git, work items, and builds in Azure DevOps.
 ---
@@ -20,6 +21,8 @@ monikerRange: '<= azure-devops'
 You can manage email notifications for your team, project, organization, or collection and receive notifications when changes occur to work items, code reviews, pull requests, source control files, and builds.
 
 For example, when a high priority work item is assigned to your team's area path, a notification email is sent to the team. For more information, see [Notification types](about-notifications.md#notification-types).
+
+[!INCLUDE [ai-assistance-mcp-server-tip](../../includes/ai-assistance-mcp-server-tip.md)]
 
 ## Prerequisites
 
@@ -122,6 +125,28 @@ Global notifications apply to all **projects** defined for an organization or co
 ::: moniker-end
 
 [!INCLUDE [opt-out-notification](includes/opt-out-notification.md)]
+
+<a id="use-ai-assistance"></a>
+
+## Use AI to manage team and project notifications
+
+[!INCLUDE [ai-assistance-mcp-server-tip](../../includes/ai-assistance-mcp-server-tip.md)]
+
+If you use GitHub Copilot, the [Azure DevOps MCP Server](../../mcp-server/overview.md) can help you configure and optimize notification subscriptions for your team, project, or organization through natural language prompts.
+
+### Example prompts for notification management
+
+| **Task** | **Example prompt** |
+|---|---|
+| Reduce notification noise | `My team complains about too many email notifications from Azure DevOps. Review our current team notification subscriptions and recommend which ones to consolidate or disable to reduce noise without missing critical events` |
+| Monitor high-priority bugs | `Create a notification subscription for my team that sends an email whenever a Severity 1 or Severity 2 bug is created or changes state in our project's area path` |
+| Set up a new project's notifications | `We just created a new project for our mobile team. Walk me through setting up notification subscriptions so the team gets alerted on PR reviews, failed builds, and work items assigned to their area path` |
+| Route alerts to a shared channel | `I want our team's critical build failure and deployment notifications to go to a shared distribution list instead of individual team members. Show me how to configure the delivery settings` |
+| Audit notification subscriptions | `List all custom notification subscriptions configured at the project level for my project and identify any that overlap or are outdated so I can clean them up` |
+| Configure role-based PR notifications | `Set up notification subscriptions so that only the assigned reviewers and the PR author get notified about pull request comments and vote resets, and skip notifications for the person who initiated each change` |
+
+> [!TIP]
+> For the best results, use these prompts in agent mode with the Azure DevOps MCP Server connected. Customize the prompts with your specific team name, project, or notification criteria.
 
 ## Related content
 

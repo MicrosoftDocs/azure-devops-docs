@@ -5,10 +5,12 @@ description: Learn how to view and update your project summary page to share pro
 ms.topic: quickstart
 ms.subservice: azure-devops-projects
 ms.assetid: A9ED2BF5-BD0B-4114-A7BD-693C5D747E16
+ms.custom: copilot-scenario-highlight
 ms.author: chcomley
 author: chcomley
+ai-usage: ai-assisted
 monikerRange: "<=azure-devops"
-ms.date: 11/11/2024
+ms.date: 03/03/2026
 ---
 
 # View and update project summary page
@@ -57,6 +59,8 @@ Use the project summary page to also perform more specific tasks:
 ::: moniker-end
 
 :::image type="content" source="media/summary/project-summary-page-intro.png" alt-text="Screenshot of summary page.":::
+
+[!INCLUDE [ai-assistance-mcp-server-tip](../../includes/ai-assistance-mcp-server-tip.md)]
 
 ## Prerequisites
 
@@ -240,6 +244,28 @@ For projects that selected TFVC for version control, the README.md file needs to
 
    > [!div class="mx-imgBorder"]  
    > ![Screenshot of Project summary page with the README file displayed.](media/share-project/tfvc-project-summary-with-readme.png)
+
+<a id="use-ai-assistance"></a>
+
+## Use AI to manage your project summary page
+
+[!INCLUDE [ai-assistance-mcp-server-tip](../../includes/ai-assistance-mcp-server-tip.md)]
+
+If you use GitHub Copilot, the [Azure DevOps MCP Server](../../mcp-server/overview.md) can help you set up and maintain your project summary page through natural language prompts.
+
+### Example prompts for project summary management
+
+| **Task** | **Example prompt** |
+|---|---|
+| Create a project README | `Generate a README for my Azure DevOps project that includes sections for project overview, architecture diagram placeholder, getting started guide, team contacts, and links to our wiki and CI/CD pipelines` |
+| Audit project activity | `Show me the recent activity for my project including the latest commits, pull requests, and work item changes so I can prepare a status update for our weekly standup` |
+| Onboard new team members | `I need to invite 5 new developers to my Azure DevOps project with Contributor access. Walk me through adding them and point me to the key resources they should review on the summary page` |
+| Set up project tags and metadata | `Configure project tags for our microservices project so it's discoverable by other teams. Add tags for the technology stack, team name, and business domain` |
+| Compare project health across projects | `I manage four Azure DevOps projects. Help me check the summary pages and recent activity for each to identify which ones are active and which might need attention` |
+| Improve project discoverability | `Our organization has 30+ projects and teams can't find what they need. Help me update project descriptions, README files, and tags to make projects easier to discover and understand` |
+
+> [!TIP]
+> For the best results, use these prompts in agent mode with the Azure DevOps MCP Server connected. Customize the prompts with your specific project name, team details, or documentation goals.
 
 ## Related content
 

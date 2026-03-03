@@ -1,13 +1,14 @@
 ---
 title: Add group rule, assign access levels
 titleSuffix: Azure DevOps Services
-ms.custom: engagement-fy23
+ms.custom: engagement-fy23, copilot-scenario-highlight
 description: Automate access level management by creating group rules for Microsoft Entra ID and Azure DevOps groups. Streamline user permissions and project access efficiently.
 ms.subservice: azure-devops-organizations
 ms.topic: how-to
 ms.author: chcomley
 author: chcomley
-ms.date: 11/17/2025
+ai-usage: ai-assisted
+ms.date: 03/03/2026
 monikerRange: 'azure-devops'
 ---
 
@@ -24,6 +25,8 @@ Assign a group rule to manage both access levels and project memberships. When a
 When a user leaves a Microsoft Entra group, Azure DevOps adjusts their access level according to the group's defined rules. If the group was the user's sole source of access, Azure DevOps automatically removes them from the organization. If the user belongs to other groups, their access level and permissions are reevaluated.
 
 [!INCLUDE [note-group-rules](../security/includes/note-group-rules.md)]
+
+[!INCLUDE [ai-assistance-mcp-server-tip](../../includes/ai-assistance-mcp-server-tip.md)]
 
 ## Prerequisites
 
@@ -122,7 +125,26 @@ A:
 - When a user no longer has a valid GitHub Enterprise license: 
   - If your organization configures group rules: The user receives the access specified by their group membership. 
   - If your organization doesn't configure group rules: The user receives the organization’s default access level. 
+<a id="use-ai-assistance"></a>
 
+## Use AI to manage group rules and access levels
+
+If you have the [Azure DevOps MCP Server](../../mcp-server/mcp-server-overview.md) configured, you can use AI assistants to manage group rules and access level assignments using natural language prompts. The MCP Server provides your AI assistant with secure access to your Azure DevOps data, allowing you to review group memberships, check access levels, and audit user permissions without navigating through the web interface.
+
+### Example prompts for group rule management
+
+| Task | Example prompt |
+|------|----------------|
+| **Optimize license costs** | `Find users in <organization-name> with Basic access who haven't signed in within the last 90 days and could be downgraded to Stakeholder` |
+| **Set up group-based licensing** | `Show me which Microsoft Entra groups are configured as group rules in <organization-name> and what access level each grants` |
+| **Find conflicting group rules** | `List users in <organization-name> who belong to multiple group rules with different access levels and show which rule wins` |
+| **Plan access for a new team** | `Create a group rule in <organization-name> that assigns Basic + Test Plans access to members of the <Entra-group-name> group` |
+| **Audit group rule coverage** | `Show me users in <organization-name> whose access level was set by a group rule versus manually assigned` |
+| **Compare group memberships** | `For <user-email>, show all group rules that apply in <organization-name> and explain their effective access level` |
+
+> [!TIP]
+> If you're using Visual Studio Code, [agent mode](/visualstudio/ide/copilot-chat-context#agent-mode) is especially helpful for auditing group-based access levels and verifying user permissions across projects.
+> - To avoid using stale or cached data from previous queries, add to your prompt, `Do not use previously fetched data`.
 ## Related content
 
 * [Install Active Directory and Microsoft Entra users or groups to a built-in security group](../security/add-ad-aad-built-in-security-groups.md)

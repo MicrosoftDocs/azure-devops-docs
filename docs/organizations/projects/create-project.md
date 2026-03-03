@@ -1,7 +1,7 @@
 ---
 title: Create a project
 titleSuffix: Azure DevOps
-ms.custom: devx-track-azurecli, engagement-fy23
+ms.custom: devx-track-azurecli, engagement-fy23, copilot-scenario-highlight
 description: Learn how to create a project in Azure DevOps to plan, track, and collaborate on software development. Follow step-by-step instructions to get started.
 ms.assetid: 21F3C364-34F4-41B0-9EFC-6D4A141D81E0
 ms.subservice: azure-devops-projects
@@ -10,7 +10,7 @@ ai-usage: ai-assisted
 ms.author: chcomley
 author: chcomley
 monikerRange: "<=azure-devops"
-ms.date: 03/02/2026
+ms.date: 03/03/2026
 #customer intent: As a project administrator, I want to create a new Azure DevOps project so that my team can plan, track progress, and collaborate effectively.
 ---
 
@@ -26,6 +26,8 @@ Create an Azure DevOps project to set up a source code repository and organize y
 > [!NOTE]
 > If you don't want to manage an on-premises server, [sign up for Azure DevOps Services](../accounts/create-organization.md) and create a project.
 ::: moniker-end
+
+[!INCLUDE [ai-assistance-mcp-server-tip](../../includes/ai-assistance-mcp-server-tip.md)]
 
 ## Prerequisites
 
@@ -319,6 +321,28 @@ ID                                    Name            Visibility    Process     
 ## Add a repository to your project
 
 You can add Git (distributed) or TFVC (centralized) repositories to your project. You can create many Git repositories, but only a single TFVC repository for a project. You might need to take extra steps to address permissions. For more information, see [Use Git and TFVC repos in the same project](../../repos/git/team-projects.md).
+
+<a id="use-ai-assistance"></a>
+
+## Use AI to create and configure projects
+
+[!INCLUDE [ai-assistance-mcp-server-tip](../../includes/ai-assistance-mcp-server-tip.md)]
+
+If you use GitHub Copilot, the [Azure DevOps MCP Server](../../mcp-server/overview.md) can help you create and configure Azure DevOps projects through natural language prompts.
+
+### Example prompts for project creation
+
+| **Task** | **Example prompt** |
+|---|---|
+| Bootstrap a new project | `Create a new Azure DevOps project for our mobile app team using the Agile process template, initialize it with a Git repo, and set up the default area and iteration paths for a 2-week sprint cadence` |
+| Migrate project structure | `We're splitting a monorepo project into separate microservice projects. Walk me through creating the new projects, moving repos, and preserving work item links across projects` |
+| Set up a project from a template | `I need to create standardized projects for each client engagement. Show me how to create a project with predefined teams, area paths, and iteration paths that match our delivery framework` |
+| Troubleshoot project creation | `I'm getting a TF30321 error when trying to create a project with a name I used before. Explain why this happens and how to resolve it so I can reuse the name` |
+| Audit existing projects | `List all projects in my organization, show when each was created and last accessed, and identify any that might be candidates for deletion or archiving` |
+| Configure project permissions | `I just created a new project and need to set up security so that only the core team has Contributor access, external stakeholders get Stakeholder access, and the tech lead group can manage repos and pipelines` |
+
+> [!TIP]
+> For the best results, use these prompts in agent mode with the Azure DevOps MCP Server connected. Customize the prompts with your specific organization name, process template, or team structure.
 
 ## Next steps
 

@@ -5,9 +5,10 @@ description: Set up Microsoft Entra Conditional Access policies to grant or rest
 ms.subservice: azure-devops-organizations
 ms.assetid: 2fdfbfe2-b9b2-4d61-ad3e-45f11953ef3e
 ms.topic: how-to
+ms.custom: copilot-scenario-highlight
 ms.author: chcomley
 author: chcomley
-ms.date: 02/24/2026
+ms.date: 03/03/2026
 ai-usage: ai-assisted
 monikerRange: 'azure-devops'
 ---
@@ -22,6 +23,8 @@ With Microsoft Entra ID, tenant admins control which users access Microsoft reso
 - Use of a managed and enabled device
 
 Based on these conditions, you can grant access, require more checks like multifactor authentication, or block access entirely. For more information, see [Conditional Access policies](/entra/identity/conditional-access/concept-conditional-access-policies) in the Microsoft Entra documentation.
+
+[!INCLUDE [ai-assistance-mcp-server-tip](../../includes/ai-assistance-mcp-server-tip.md)]
 
 ## Prerequisites
 
@@ -92,6 +95,27 @@ Azure DevOps supports [Continuous Access Evaluation (CAE) via Microsoft Entra ID
 App developers who use the latest [.NET client library version](../../integrate/concepts/dotnet-client-libraries.md) (20.259.0-preview and later) should support CAE-enabled tokens by [gracefully handling claims challenges](/entra/identity-platform/claims-challenge?tabs=dotnet).
 
 <!-- TODO: Verify CAE support status for Python and Go client libraries — the original target was latter half of 2025. Update or remove this comment once confirmed. -->
+
+<a id="use-ai-assistance"></a>
+
+## Use AI to manage Conditional Access policies
+
+If you have the [Azure DevOps MCP Server](../../mcp-server/mcp-server-overview.md) configured, you can use AI assistants to review and manage Conditional Access policy settings for your Azure DevOps organization using natural language prompts. The MCP Server provides your AI assistant with secure access to your Azure DevOps data, allowing you to check policy configurations and organization security settings without navigating through multiple portals.
+
+### Example prompts for Conditional Access policies
+
+| Task | Example prompt |
+|------|----------------|
+| **Troubleshoot blocked access** | `A user <user-email> can't access <organization-name> from their home network - what conditional access policies might be blocking them?` |
+| **Audit policy coverage** | `What authentication and conditional access policies are currently enforced for <organization-name> and are there any gaps?` |
+| **Check IP-based restrictions** | `Is IP conditional access validation enabled for <organization-name> and which client flows does it apply to - web, non-interactive, both?` |
+| **Verify compliant device policy** | `Can users access <organization-name> from personal devices, or is there a compliant/hybrid-joined device requirement?` |
+| **Test third-party tool access** | `If I have a conditional access policy requiring MFA on <organization-name>, will third-party CI/CD tools using PATs be affected?` |
+| **Review policy for guest users** | `What conditional access policies apply to external guest users accessing <organization-name> and do they differ from member policies?` |
+
+> [!TIP]
+> If you're using Visual Studio Code, [agent mode](/visualstudio/ide/copilot-chat-context#agent-mode) is especially helpful for reviewing Conditional Access policy configurations across your organizations.
+> - To avoid using stale or cached data from previous queries, add to your prompt, `Do not use previously fetched data`.
 
 ## Related content
 * [Change application connection & security policies for your organization](change-application-access-policies.md)

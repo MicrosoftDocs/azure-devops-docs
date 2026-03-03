@@ -1,7 +1,7 @@
 ---
 title: Add users to organizations and manage access
 titleSuffix: Azure DevOps
-ms.custom: devx-track-azurecli
+ms.custom: devx-track-azurecli, copilot-scenario-highlight
 description: Learn how to add users to an organization and manage users' access levels, direct assignments, invitations, and more.
 ms.topic: how-to
 ms.subservice: azure-devops-organizations
@@ -10,7 +10,7 @@ ai-usage: ai-assisted
 ms.author: chcomley
 author: chcomley
 monikerRange: 'azure-devops'
-ms.date: 11/10/2025
+ms.date: 03/03/2026
 ---
 
 # Add organization users and manage access
@@ -30,6 +30,8 @@ The following types of users can join your organization for free:
 
 > [!NOTE]
 > For information about inviting external users, see [Add external user](add-external-user.md).
+
+[!INCLUDE [ai-assistance-mcp-server-tip](../../includes/ai-assistance-mcp-server-tip.md)]
 
 ## Prerequisites
 
@@ -314,6 +316,27 @@ After you add members to your project, each member receives an invitation email 
 ### Q: How is *access* different from *permissions*?
 
 **A:** Access levels determine a user's access to specific web portal features based on their subscription. Permissions control a user's ability to perform specific operations, which get governed by security group membership or specific Access Control Level (ACL) assignments made to a user or group.
+
+<a id="use-ai-assistance"></a>
+
+## Use AI to add and manage organization users
+
+If you have the [Azure DevOps MCP Server](../../mcp-server/mcp-server-overview.md) configured, you can use AI assistants to add users to your organization and manage their access using natural language prompts. The MCP Server provides your AI assistant with secure access to your Azure DevOps data, allowing you to list users, check access levels, and manage user assignments without navigating through the web interface.
+
+### Example prompts for managing organization users
+
+| Task | Example prompt |
+|------|----------------|
+| **Onboard a new team member** | `Add <user-email> to the <project-name> project in <organization-name> with Basic access and add them to the <team-name> team` |
+| **Find users without project access** | `List users in <organization-name> who have Basic access but aren't members of any project` |
+| **Audit Visual Studio subscribers** | `Show me all Visual Studio Enterprise subscribers in <organization-name> and which projects they belong to` |
+| **Identify Stakeholder candidates** | `Find users in <organization-name> with Basic access who only have activity in work items and could use Stakeholder access instead` |
+| **Compare access across projects** | `For <user-email> in <organization-name>, show which projects they belong to and what permissions they have in each` |
+| **Review recently added users** | `Show me all users added to <organization-name> in the last 30 days and their current access levels` |
+
+> [!TIP]
+> If you're using Visual Studio Code, [agent mode](/visualstudio/ide/copilot-chat-context#agent-mode) is especially helpful for reviewing user access levels and managing bulk user operations.
+> - To avoid using stale or cached data from previous queries, add to your prompt, `Do not use previously fetched data`.
 
 ## Next steps
 

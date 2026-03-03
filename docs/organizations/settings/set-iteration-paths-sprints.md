@@ -3,13 +3,14 @@ title:  Define iteration paths and configure team iterations
 titleSuffix: Azure Boards 
 description: Learn how to define the iteration and sprint fields when you assign work items and configure dashboards in Azure DevOps.
 ms.subservice: azure-devops-settings
-ms.custom: teams, engagement-fy23, devx-track-azurecli
+ms.custom: teams, engagement-fy23, devx-track-azurecli, copilot-scenario-highlight
 ms.assetid: 27631A15-9EB1-4E79-814E-8145BB7707C8
 ms.author: chcomley
 author: chcomley
+ai-usage: ai-assisted
 ms.topic: how-to
 monikerRange: '<= azure-devops'
-ms.date: 12/22/2025
+ms.date: 03/03/2026
 ---
 
 # Define iteration paths (sprints) and configure team iterations 
@@ -24,6 +25,8 @@ For information about naming restrictions and limits placed on addition of Itera
 
 > [!TIP]
 > To quickly update iteration dates, see [Change sprint dates](../../boards/sprints/define-sprints.md). However, if you need to define the iteration paths and tree structure, then follow the guidance provided in this article. 
+
+[!INCLUDE [ai-assistance-mcp-server-tip](../../includes/ai-assistance-mcp-server-tip.md)]
 
 ## Prerequisites
 
@@ -516,6 +519,28 @@ Before you archive the iterations, consider if you captured all the reports that
 You can quickly generate [queries](../../boards/queries/using-queries.md) to view the progress for those areas. For example, you can [visualize progress of work items that are assigned to sprints](../../report/dashboards/charts.md), as shown in the following stacked bar chart.  
 
 ![Stacked bar chart by area](media/areas/ALM_CW_StackedBarChart.png)
+
+<a id="use-ai-assistance"></a>
+
+## Use AI to manage iteration paths and sprints
+
+[!INCLUDE [ai-assistance-mcp-server-tip](../../includes/ai-assistance-mcp-server-tip.md)]
+
+If you use GitHub Copilot, the [Azure DevOps MCP Server](../../mcp-server/overview.md) can help you define iteration paths, configure sprint cadences, and manage team iterations through natural language prompts.
+
+### Example prompts for iteration path management
+
+| **Task** | **Example prompt** |
+|---|---|
+| Design a sprint structure | `Set up a quarterly release cadence for my project with 6 two-week sprints per quarter, including a hardening sprint before each release. Create all the iteration paths and set the start and end dates` |
+| Reorganize iterations mid-project | `We're switching from 3-week sprints to 2-week sprints starting next month. Help me archive the old iterations, create the new ones, and reassign any open work items to the new sprint structure` |
+| Set up iterations for multiple teams | `I have three teams sharing one project — Platform, Mobile, and Web. Configure team-specific sprint selections so each team can plan independently while sharing the same iteration hierarchy` |
+| Audit sprint date gaps | `Check my project's iteration paths for date gaps or overlaps between sprints. List any sprints with missing dates or date ranges that conflict with adjacent sprints` |
+| Plan a release train | `We follow SAFe with Program Increments containing 5 sprints plus an Innovation & Planning sprint. Create the iteration path structure for the next two PIs with proper dates and hierarchy` |
+| Migrate work between sprints | `Sprint 12 is ending and we have 15 unfinished work items. Show me how to bulk-move them to Sprint 13 and generate a report of carryover items for our retrospective` |
+
+> [!TIP]
+> For the best results, use these prompts in agent mode with the Azure DevOps MCP Server connected. Customize the prompts with your specific project name, sprint cadence, or team structure.
 
 ## Related content 
 

@@ -5,9 +5,11 @@ description: Steps for how to delete or remove organization users from Azure Dev
 ms.subservice: azure-devops-organizations
 ms.topic: how-to
 ms.assetid: d3a31878-a869-45a9-9bca-f46cc2682596
+ms.custom: copilot-scenario-highlight
 ms.author: chcomley
 author: chcomley
-ms.date: 10/23/2024
+ms.date: 03/03/2026
+ai-usage: ai-assisted
 monikerRange: "<=azure-devops"
 ---
 
@@ -24,6 +26,8 @@ If users no longer require access to a team, project, or organization, you can r
 >    - Removing a user from Microsoft Entra ID prevents assigning new artifacts (for example, work items or pull requests) to that user. However, the history of already assigned artifacts is preserved.
 >    - Removing a user from the organization doesn't remove their memberships in any Microsoft Entra groups. If the user is a member of an access-granting Microsoft Entra group, they still have access to Azure DevOps. To completely remove the user, ensure they aren't in any access-granting Microsoft Entra groups. For more information, see [Manage access with Microsoft Entra groups](manage-azure-active-directory-groups.md).
 > - For Managed Service Account (MSA)-backed organizations: Removing a user from your MSA-backed organization doesn't remove them from the tenant, and they can be re-added at any time.
+
+[!INCLUDE [ai-assistance-mcp-server-tip](../../includes/ai-assistance-mcp-server-tip.md)]
 
 ## Prerequisites  
 
@@ -105,6 +109,27 @@ az devops user remove --user contoso@contoso.com --org https://dev.azure.com/con
 To remove users from a project, remove them from the **Teams** groups they belong to or the **Contributors** group for the project. For more information, see [Add users to a project or specific team](../../organizations/security/add-users-team-project.md). You can remove a user from the **Members** page of a team group or security group.
 
 ![Screenshot showing removal of a user from a security group, new navigation.](media/delete-user/remove-user-vert.png)
+
+<a id="use-ai-assistance"></a>
+
+## Use AI to manage user access
+
+If you have the [Azure DevOps MCP Server](../../mcp-server/mcp-server-overview.md) configured, you can use AI assistants to review and manage user access in your organization using natural language prompts. The MCP Server provides your AI assistant with secure access to your Azure DevOps data, allowing you to list users, check access levels, and review team memberships without navigating through the web interface.
+
+### Example prompts for user management
+
+| Task | Example prompt |
+|------|----------------|
+| **Offboard a team member** | `Remove <user-email> from all teams and projects in <organization-name> and show me what work items were assigned to them` |
+| **Find orphaned assignments** | `List all active work items, pull requests, and pending approvals assigned to <user-email> in <organization-name> before I remove them` |
+| **Bulk clean up inactive users** | `Show me all users in <organization-name> who haven't signed in for over 180 days and their current access levels` |
+| **Pre-removal impact check** | `Before removing <user-email> from <organization-name>, show their team memberships, owned pipelines, and any service connections they created` |
+| **Reassign and remove** | `Transfer all work items currently assigned to <user-email> in <project-name> to <new-user-email>, then remove them from the project` |
+| **Audit removal history** | `Show me the audit log of users removed from <organization-name> in the last 30 days` |
+
+> [!TIP]
+> If you're using Visual Studio Code, [agent mode](/visualstudio/ide/copilot-chat-context#agent-mode) is especially helpful for auditing user access and reviewing team memberships across projects.
+> - To avoid using stale or cached data from previous queries, add to your prompt, `Do not use previously fetched data`.
 
 ## Related content
 

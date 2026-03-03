@@ -8,9 +8,9 @@ ai-usage: ai-assisted
 ms.topic: how-to
 ms.author: chcomley
 author: chcomley
-ms.date: 02/11/2026
+ms.date: 03/03/2026
 monikerRange: 'azure-devops'
-ms.custom: freshness-fy22q1, engagement-fy23, sfi-image-nochange
+ms.custom: freshness-fy22q1, engagement-fy23, sfi-image-nochange, copilot-scenario-highlight
 ---
 
 # Manage billing
@@ -29,6 +29,8 @@ This article guides you through managing billing in Azure DevOps, which is essen
 >    - Microsoft-hosted CI/CD
 >    - Self-hosted CI/CD
 > - When you cancel or change billing, a resource group remains in the old Azure subscription. Despite Azure's warning that "Dependent resources will be deleted," it's safe to delete these resource groups. The Azure DevOps organization isn't deleted or harmed. These resource groups use the naming format, `VisualStudioOnline-<DEVOPS-ORG-HOSTID-WITHOUT-DASHES>`.
+
+[!INCLUDE [ai-assistance-mcp-server-tip](../../includes/ai-assistance-mcp-server-tip.md)]
 
 ## Prerequisites
 
@@ -119,6 +121,28 @@ Assign the [Owner](/azure/role-based-access-control/built-in-roles#owner) or [Co
 
 > [!NOTE]
 > The user must accept their email invitation before they can access the Azure subscription, if they aren't in your directory.
+
+<a id="use-ai-assistance"></a>
+
+## Use AI to manage billing
+
+[!INCLUDE [ai-assistance-mcp-server-tip](../../includes/ai-assistance-mcp-server-tip.md)]
+
+If you use GitHub Copilot, the [Azure DevOps MCP Server](../../mcp-server/overview.md) can help you set up and manage billing for your Azure DevOps organization through natural language prompts.
+
+### Example prompts for billing management
+
+| **Task** | **Example prompt** |
+|---|---|
+| Migrate billing after a reorg | `Our team moved to a new Azure subscription after a company reorganization. Walk me through changing the billing subscription for my Azure DevOps organization without losing any paid features` |
+| Troubleshoot billing removal | `I removed the billing subscription from my organization and users lost their access levels. Explain what happened and how to restore paid access quickly` |
+| Set up billing for a new org | `I just created a new Azure DevOps organization and need to connect it to our corporate Azure subscription for billing. Guide me through the setup and explain what happens if the subscription is in a different Microsoft Entra tenant` |
+| Audit billing access | `List everyone who currently has Owner or Contributor access to the Azure subscription we use for Azure DevOps billing, so I can verify only authorized people can change billing settings` |
+| Delegate billing to finance | `Our finance team needs to monitor and manage Azure DevOps billing costs. Walk me through granting the minimum permissions they need on the Azure subscription without giving them access to DevOps projects` |
+| Prepare for subscription change | `We're switching from a Pay-As-You-Go subscription to an Enterprise Agreement. What steps should I take to change billing subscriptions with zero downtime for my Azure DevOps users?` |
+
+> [!TIP]
+> For the best results, use these prompts in agent mode with the Azure DevOps MCP Server connected. Customize the prompts with your specific organization name, subscription details, or billing scenario.
 
 ## Next step
 

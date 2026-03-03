@@ -3,12 +3,13 @@ title: Add and Manage Information Banners
 titleSuffix: Azure DevOps 
 description: Learn how to add, update, or remove an information banner to your organization or collection.
 ms.subservice: azure-devops-settings
-ms.custom: devx-track-azurecli
+ms.custom: devx-track-azurecli, copilot-scenario-highlight
 ms.author: chcomley
 author: chcomley
+ai-usage: ai-assisted
 ms.topic: how-to
 monikerRange: "<=azure-devops"
-ms.date: 02/27/2026
+ms.date: 03/03/2026
 ---
 
 # Add and manage information banners in Azure DevOps
@@ -24,6 +25,8 @@ The following image shows an information message. Users can close the message by
 :::image type="content" source="media/banners/show-banner-info.png" alt-text="Information banner"::: 
 
 We limit banners to 30 words, prioritized by level. So, if you post both a warning message and an information message, the information message only shows after the user closes the warning message or you delete it.
+
+[!INCLUDE [ai-assistance-mcp-server-tip](../../includes/ai-assistance-mcp-server-tip.md)]
 
 ## Prerequisites 
 
@@ -320,6 +323,28 @@ az devops admin banner update --id f5f5f5f5-aaaa-bbbb-cccc-d6d6d6d6d6d6 --messag
 ::: moniker-end
 
 * * *
+
+<a id="use-ai-assistance"></a>
+
+## Use AI to manage information banners
+
+[!INCLUDE [ai-assistance-mcp-server-tip](../../includes/ai-assistance-mcp-server-tip.md)]
+
+If you use GitHub Copilot, the [Azure DevOps MCP Server](../../mcp-server/overview.md) can help you create, update, and manage organization-wide information banners through natural language prompts.
+
+### Example prompts for banner management
+
+| **Task** | **Example prompt** |
+|---|---|
+| Announce a maintenance window | `Create a warning banner in my Azure DevOps organization that says 'Scheduled maintenance this Saturday 2am-6am UTC — expect intermittent service disruptions' and set it to expire after the maintenance window` |
+| Rotate banners for sprint milestones | `I want to display a different information banner at the start of each sprint with the sprint goals. Show me how to automate this with the Azure DevOps CLI so I can script it into our sprint kickoff process` |
+| Audit and clean up stale banners | `List all active banners in my organization using the CLI, show their expiration dates, and remove any that are past their expiration or no longer relevant` |
+| Communicate a policy change | `Post an error-level banner across our Azure DevOps organization announcing that all repos now require branch policies for main branches, effective next Monday, with a link to our wiki page explaining the new policy` |
+| Create banners for multiple collections | `I manage three Azure DevOps Server collections. Generate CLI commands to post the same maintenance notification banner to all three collections simultaneously` |
+| Set up a welcome banner for new users | `Create a persistent information banner that welcomes users to our Azure DevOps organization with a link to our onboarding wiki. Make sure it stays visible until I manually remove it` |
+
+> [!TIP]
+> For the best results, use these prompts in agent mode with the Azure DevOps MCP Server connected. Customize the prompts with your specific organization name, banner message, or schedule.
 
 ## Related content
 

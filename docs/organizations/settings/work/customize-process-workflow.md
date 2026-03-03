@@ -2,14 +2,15 @@
 title: Customize the workflow of an inherited process
 titleSuffix: Azure DevOps Services
 description: Learn how to add or remove workflow states to a work item type for an inherited process in Azure Boards.
-ms.custom: inherited-process
+ms.custom: inherited-process, copilot-scenario-highlight
 ms.service: azure-devops-boards
 ms.assetid: 35971F8F-26EF-4C99-9825-4AC072A6EBE4  
 ms.author: chcomley
 author: chcomley
+ai-usage: ai-assisted
 monikerRange: "<=azure-devops"
 ms.topic: tutorial
-ms.date: 01/13/2026
+ms.date: 03/03/2026
 #customer intent: As a team lead or administrator, I want to learn how to customize states in a work item type to optimize our team's workflow.
 ---
 
@@ -117,6 +118,8 @@ For detailed guidance, see [Customize backlogs and boards](customize-process-bac
 - Document current state before changes
 - Plan communication for any necessary rollbacks
 - Maintain backup documentation of previous configurations
+
+[!INCLUDE [ai-assistance-mcp-server-tip](../../../includes/ai-assistance-mcp-server-tip.md)]
 
 ## Prerequisites
 
@@ -378,6 +381,28 @@ For example, if you customize the Bug workflow to include a **Triaged** state, t
 
 > [!NOTE]
 > Azure Boards and the product team don't support the State Model Visualization extension. For questions, suggestions, or problems, visit the [extension page](https://marketplace.visualstudio.com/items?itemName=taavi-koosaar.StateModelVisualization).
+
+<a id="use-ai-assistance"></a>
+
+## Use AI to customize workflows
+
+[!INCLUDE [ai-assistance-mcp-server-tip](../../../includes/ai-assistance-mcp-server-tip.md)]
+
+If you use GitHub Copilot, the [Azure DevOps MCP Server](../../../mcp-server/overview.md) can help you design, add, and manage workflow states for your inherited processes through natural language prompts.
+
+### Example prompts for workflow customization
+
+| **Task** | **Example prompt** |
+|---|---|
+| Design a custom workflow | `Design a workflow for my Bug work item type that adds 'Triaged', 'In Code Review', and 'Ready for Test' states between New and Closed. Map each to the correct state category and explain the board column impact` |
+| Add a QA gate to the workflow | `Add a 'QA Approved' state to my User Story work item type in the Resolved category. Configure it so stories must pass through QA Approved before they can move to Done, and explain how this affects my Kanban board` |
+| Hide deprecated states | `We no longer use the 'On Hold' state for Tasks but have historical data in that state. Walk me through hiding the state so it doesn't appear as an option while preserving existing work items` |
+| Migrate workflows between processes | `I customized the Bug workflow in my 'TeamAlpha-Agile' process and want the same states in my 'TeamBeta-Agile' process. List the states I added and the steps to recreate them in the second process` |
+| Visualize the state model | `Show me all the states and transitions for the User Story work item type in my inherited process, organized by state category. Include which transitions are allowed and which are restricted by rules` |
+| Troubleshoot board column misalignment | `My Kanban board columns don't match my workflow states after I added custom states. Help me understand the relationship between state categories and board columns, and fix the mapping` |
+
+> [!TIP]
+> For the best results, use these prompts in agent mode with the Azure DevOps MCP Server connected. Customize the prompts with your specific process name, work item types, or workflow requirements.
 
 ## Next step
 

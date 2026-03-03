@@ -4,11 +4,12 @@ titleSuffix: Azure DevOps
 description: Set up and manage personal notifications in Azure DevOps and receive messages when changes occur to source code, git, work items, and builds.
 ms.subservice: azure-devops-notifications
 ms.assetid: 644687b3-e30e-46b0-8d3e-3d4a4e34d13a
-ms.custom: cross-project
+ms.custom: cross-project, copilot-scenario-highlight
 ms.topic: how-to
 ms.author: chcomley
 author: chcomley
-ms.date: 05/13/2025
+ai-usage: ai-assisted
+ms.date: 03/03/2026
 monikerRange: '<= azure-devops'
 #customer intent: As a developer, I want to manage my personal notifications in Azure DevOps, so I can receive messages when changes occur to source code, git, work items, and builds.
 ---
@@ -30,6 +31,8 @@ You receive personal notifications as email messages when changes occur to build
 For information about team and project-level notifications, see [Team and project-level notifications](about-notifications.md#team-and-project-level-notifications) and [Manage team or group notifications](manage-team-group-global-organization-notifications.md).
 
 [!INCLUDE [note-smtp-server](includes/note-smtp-server.md)]
+
+[!INCLUDE [ai-assistance-mcp-server-tip](../../includes/ai-assistance-mcp-server-tip.md)]
 
 ## Prerequisites
 
@@ -148,6 +151,28 @@ Keep in mind that custom notification subscriptions aren't the same as default n
    ::: moniker-end  
 
 [!INCLUDE [opt-out-notification](includes/opt-out-notification.md)]
+
+<a id="use-ai-assistance"></a>
+
+## Use AI to manage personal notifications
+
+[!INCLUDE [ai-assistance-mcp-server-tip](../../includes/ai-assistance-mcp-server-tip.md)]
+
+If you use GitHub Copilot, the [Azure DevOps MCP Server](../../mcp-server/overview.md) can help you configure and fine-tune your personal notification settings through natural language prompts.
+
+### Example prompts for personal notification management
+
+| **Task** | **Example prompt** |
+|---|---|
+| Cut notification overload | `I'm getting too many Azure DevOps notification emails. Show me my current personal subscriptions and recommend which ones to disable or consolidate so I only get notified about events that need my direct action` |
+| Track critical work item changes | `Set up a personal notification that alerts me whenever a work item with Priority 1 is created, reassigned, or moved to the Resolved state in any project I'm a member of` |
+| Monitor PR activity in specific repos | `Create a personal notification subscription that sends me an email whenever a pull request is created or updated in the main branch of our API and frontend repositories` |
+| Consolidate cross-project alerts | `I work across four Azure DevOps projects. Help me set up personal notifications so I get a single consolidated view of build failures and blocked pull requests across all of them` |
+| Watch for deployment-related changes | `I want to be notified when any release pipeline targeting our production environment fails or is manually intervened. Walk me through creating a personal subscription with the right filter criteria` |
+| Temporarily reduce notifications | `I'm going into a focus sprint and want to disable all non-critical personal notifications for the next two weeks, keeping only Severity 1 bug assignments and failed builds. Show me how to adjust my subscriptions` |
+
+> [!TIP]
+> For the best results, use these prompts in agent mode with the Azure DevOps MCP Server connected. Customize the prompts with your specific projects, repos, or notification preferences.
 
 ## Related content
 
