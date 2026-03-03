@@ -5,11 +5,11 @@ ms.assetid: 9E17A266-051F-403F-A285-7F21D9CC52F0
 ai-usage: ai-assisted
 ms.subservice: azure-devops-ecosystem
 ms.topic: sample
-ms.custom: devx-track-dotnet, pat-reduction
+ms.custom: devx-track-dotnet, pat-reduction, copilot-scenario-highlight
 monikerRange: '<= azure-devops'
 ms.author: chcomley
 author: chcomley
-ms.date: 07/16/2025
+ms.date: 03/02/2026
 ---
 
 # REST API samples for Azure DevOps
@@ -18,8 +18,7 @@ ms.date: 07/16/2025
 
 This article provides practical REST API examples for Azure DevOps Services. These samples demonstrate common operations like retrieving projects, managing work items, and using secure authentication patterns with Microsoft Entra ID.
 
-> [!IMPORTANT]
-> These samples use Microsoft Entra ID authentication, which is the recommended approach for production applications. While personal access tokens (PATs) can be used for simple scripts, Microsoft Entra ID provides better security and governance capabilities.
+[!INCLUDE [use-microsoft-entra-reduce-pats](../../../includes/use-microsoft-entra-reduce-pats.md)]
 
 ## Authentication overview
 
@@ -30,7 +29,7 @@ Azure DevOps REST APIs support several authentication methods:
 - **OAuth 2.0** - For third-party applications
 - **Service principals** - For automated scenarios
 
-[!INCLUDE [use-microsoft-entra-reduce-pats](../../../includes/use-microsoft-entra-reduce-pats.md)]
+[!INCLUDE [ai-assistance-mcp-server-tip](../../../includes/ai-assistance-mcp-server-tip.md)]
 
 ### Microsoft Entra ID authentication
 
@@ -39,7 +38,7 @@ For Microsoft Entra ID authentication, you'll need to register an application an
 First, install the required NuGet package:
 
 ```xml
-<PackageReference Include="Microsoft.Identity.Client" Version="4.61.3" />
+<PackageReference Include="Microsoft.Identity.Client" Version="4.67.2" />
 ```
 
 ```csharp
@@ -117,20 +116,19 @@ public async Task<string> GetProjectsAsync(string organization)
 #### PowerShell example
 
 ```powershell
-# Install required module if not already installed
-# Install-Module -Name MSAL.PS -Force
+# Install the Az.Accounts module if not already installed
+# Install-Module -Name Az.Accounts -Force
 
-Import-Module MSAL.PS
+# Sign in (interactive prompt) or use Connect-AzAccount -Identity for managed identity
+Connect-AzAccount -TenantId "your-tenant-id"
 
-$clientId = "your-client-id"
-$tenantId = "your-tenant-id"
 $organization = "your-organization"
 
-# Get access token
-$token = Get-MsalToken -ClientId $clientId -TenantId $tenantId -Scopes "https://app.vssps.visualstudio.com/.default"
+# Get access token for Azure DevOps
+$token = Get-AzAccessToken -ResourceUrl "https://app.vssps.visualstudio.com/"
 
 $headers = @{
-    'Authorization' = "Bearer $($token.AccessToken)"
+    'Authorization' = "Bearer $($token.Token)"
     'Accept' = 'application/json'
 }
 
@@ -169,18 +167,15 @@ public async Task<string> CreateWorkItemAsync(string organization, string projec
     client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
     client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", entraIdAccessToken);
     
-    var workItem = new
+    var patchOperations = new[]
     {
-        fields = new
-        {
-            SystemTitle = "Sample work item",
-            SystemDescription = "Created via REST API with Microsoft Entra ID",
-            SystemTags = "api; sample; entra-id"
-        }
+        new { op = "add", path = "/fields/System.Title", value = "Sample work item" },
+        new { op = "add", path = "/fields/System.Description", value = "Created via REST API with Microsoft Entra ID" },
+        new { op = "add", path = "/fields/System.Tags", value = "api; sample; entra-id" }
     };
     
-    var json = JsonConvert.SerializeObject(workItem);
-    var content = new StringContent(json, Encoding.UTF8, "application/json");
+    var json = JsonConvert.SerializeObject(patchOperations);
+    var content = new StringContent(json, Encoding.UTF8, "application/json-patch+json");
     
     try
     {
@@ -200,28 +195,37 @@ public async Task<string> CreateWorkItemAsync(string organization, string projec
 #### PowerShell example
 
 ```powershell
-Import-Module MSAL.PS
+# Sign in (interactive prompt) or use Connect-AzAccount -Identity for managed identity
+Connect-AzAccount -TenantId "your-tenant-id"
 
-$clientId = "your-client-id"
-$tenantId = "your-tenant-id"
 $organization = "your-organization"
 $project = "your-project"
 
-# Get access token
-$token = Get-MsalToken -ClientId $clientId -TenantId $tenantId -Scopes "https://app.vssps.visualstudio.com/.default"
+# Get access token for Azure DevOps
+$token = Get-AzAccessToken -ResourceUrl "https://app.vssps.visualstudio.com/"
 
 $headers = @{
-    'Authorization' = "Bearer $($token.AccessToken)"
-    'Content-Type' = 'application/json'
+    'Authorization' = "Bearer $($token.Token)"
+    'Content-Type' = 'application/json-patch+json'
 }
 
-$body = @{
-    fields = @{
-        'System.Title' = 'Sample work item'
-        'System.Description' = 'Created via REST API with Microsoft Entra ID'
-        'System.Tags' = 'api; sample; entra-id'
+$body = @(
+    @{
+        op = "add"
+        path = "/fields/System.Title"
+        value = "Sample work item"
+    },
+    @{
+        op = "add"
+        path = "/fields/System.Description"
+        value = "Created via REST API with Microsoft Entra ID"
+    },
+    @{
+        op = "add"
+        path = "/fields/System.Tags"
+        value = "api; sample; entra-id"
     }
-} | ConvertTo-Json
+) | ConvertTo-Json
 
 $uri = "https://dev.azure.com/$organization/$project/_apis/wit/workitems/`$Task?api-version=7.2"
 
@@ -294,19 +298,18 @@ public async Task<string> UpdateWorkItemAsync(string organization, string projec
 #### PowerShell example
 
 ```powershell
-Import-Module MSAL.PS
+# Sign in (interactive prompt) or use Connect-AzAccount -Identity for managed identity
+Connect-AzAccount -TenantId "your-tenant-id"
 
-$clientId = "your-client-id"
-$tenantId = "your-tenant-id"
 $organization = "your-organization"
 $project = "your-project"
 $workItemId = 123  # Replace with actual work item ID
 
-# Get access token
-$token = Get-MsalToken -ClientId $clientId -TenantId $tenantId -Scopes "https://app.vssps.visualstudio.com/.default"
+# Get access token for Azure DevOps
+$token = Get-AzAccessToken -ResourceUrl "https://app.vssps.visualstudio.com/"
 
 $headers = @{
-    'Authorization' = "Bearer $($token.AccessToken)"
+    'Authorization' = "Bearer $($token.Token)"
     'Content-Type' = 'application/json-patch+json'
 }
 
@@ -377,9 +380,9 @@ For .NET applications, use the Azure DevOps .NET client libraries for better typ
 Add these NuGet packages to your project:
 
 ```xml
-<PackageReference Include="Microsoft.TeamFoundationServer.Client" Version="19.225.1" />
-<PackageReference Include="Microsoft.VisualStudio.Services.Client" Version="19.225.1" />
-<PackageReference Include="Microsoft.Identity.Client" Version="4.61.3" />
+<PackageReference Include="Microsoft.TeamFoundationServer.Client" Version="19.232.1" />
+<PackageReference Include="Microsoft.VisualStudio.Services.Client" Version="19.232.1" />
+<PackageReference Include="Microsoft.Identity.Client" Version="4.67.2" />
 ```
 
 ### Get projects using .NET client
@@ -502,6 +505,24 @@ catch (Exception ex)
 - **Validate inputs**: Always validate user inputs before making API calls
 - **Log appropriately**: Log API interactions for debugging, but never log credentials
 - **Token management**: Implement proper token caching and refresh logic for Microsoft Entra ID tokens
+
+<a id="use-ai-assistance"></a>
+
+## Use AI to generate REST API code
+
+If you have the [Azure DevOps MCP Server](../../../mcp-server/mcp-server-overview.md) connected to your AI agent in agent mode, you can use natural language prompts to generate REST API code for Azure DevOps.
+
+| Task | Example prompt |
+|------|----------------|
+| List projects | `Show me how to list all projects in my Azure DevOps organization using the REST API with Microsoft Entra ID authentication in C#` |
+| Create a work item | `Write a REST API call to create a bug in Azure DevOps with proper authentication headers and JSON-patch body` |
+| Get Git repos | `Create a C# HttpClient example that retrieves Git repositories from Azure DevOps using a Bearer token from MSAL` |
+| Update work item fields | `Show me how to update work item fields using the Azure DevOps REST API PATCH method with proper content type headers` |
+| Query with WIQL | `Write a REST API call to execute a WIQL query against Azure DevOps and deserialize the response` |
+| Handle pagination | `Show me how to handle continuation tokens when listing Azure DevOps resources with the REST API in C#` |
+
+> [!NOTE]
+> Agent mode and the MCP Server use natural language, so you can adjust these prompts or ask follow-up questions to refine the results.
 
 ## Related content
 

@@ -3,13 +3,13 @@ title: .NET Client Library Samples for Azure DevOps
 description: Learn how to extend and integrate with Azure DevOps by using C# samples with modern authentication and best practices.
 ms.assetid: 9ff78e9c-63f7-45b1-a70d-42aa6a9dbc57
 ms.subservice: azure-devops-ecosystem
-ms.custom: devx-track-dotnet, pat-reduction
+ms.custom: devx-track-dotnet, pat-reduction, copilot-scenario-highlight
 ai-usage: ai-assisted
-ms.topic: concept-article
+ms.topic: sample
 monikerRange: '<= azure-devops'
 ms.author: chcomley
 author: chcomley
-ms.date: 02/24/2026
+ms.date: 03/02/2026
 ---
 
 # .NET client library samples for Azure DevOps
@@ -17,6 +17,8 @@ ms.date: 02/24/2026
 [!INCLUDE [version-lt-eq-azure-devops](../../../includes/version-lt-eq-azure-devops.md)]
 
 Learn how to extend and integrate with Azure DevOps using the [.NET client libraries](../../concepts/dotnet-client-libraries.md) with modern authentication methods and secure coding practices.
+
+[!INCLUDE [ai-assistance-mcp-server-tip](../../../includes/ai-assistance-mcp-server-tip.md)]
 
 ## Prerequisites
 
@@ -183,11 +185,28 @@ public static VssConnection CreateEntraConnection(string organizationUrl, string
 }
 
 /// <summary>
-/// For username/password scenarios (less secure, avoid when possible)
+/// For device code flow (cross-platform interactive authentication)
+/// Works with .NET Core, .NET 5+, and .NET Framework
 /// </summary>
-public static VssConnection CreateEntraUsernameConnection(string organizationUrl, string username, string password)
+public static async Task<VssConnection> CreateEntraDeviceCodeConnectionAsync(
+    string organizationUrl, string clientId, string tenantId)
 {
-    var credentials = new VssAadCredential(username, password);
+    var app = PublicClientApplicationBuilder
+        .Create(clientId)
+        .WithAuthority(new Uri($"https://login.microsoftonline.com/{tenantId}"))
+        .Build();
+
+    var result = await app
+        .AcquireTokenWithDeviceCode(
+            new[] { "https://app.vssps.visualstudio.com/.default" },
+            callback =>
+            {
+                Console.WriteLine(callback.Message);
+                return Task.CompletedTask;
+            })
+        .ExecuteAsync();
+
+    var credentials = new VssOAuthAccessTokenCredential(result.AccessToken);
     return new VssConnection(new Uri(organizationUrl), credentials);
 }
 ```
@@ -308,9 +327,11 @@ public static async Task<VssConnection> CreateUserAssignedManagedIdentityConnect
 }
 ```
 
-### Interactive authentication (.NET Framework only)
+### Interactive authentication
 
 For desktop applications requiring user sign-in:
+
+#### .NET Framework
 
 ```csharp
 /// <summary>
@@ -322,6 +343,25 @@ public static VssConnection CreateInteractiveConnection(string organizationUrl)
     var credentials = new VssClientCredentials();
     return new VssConnection(new Uri(organizationUrl), credentials);
 }
+```
+
+#### .NET Core / .NET 5+
+
+Use the MSAL device code or system browser flow for cross-platform interactive authentication. See the `CreateEntraDeviceCodeConnectionAsync` example in [Microsoft Entra authentication](#microsoft-entra-authentication-recommended), or use the system browser approach:
+
+```csharp
+var app = PublicClientApplicationBuilder
+    .Create(clientId)
+    .WithRedirectUri("http://localhost")
+    .WithAuthority(new Uri($"https://login.microsoftonline.com/{tenantId}"))
+    .Build();
+
+var result = await app
+    .AcquireTokenInteractive(new[] { "https://app.vssps.visualstudio.com/.default" })
+    .ExecuteAsync();
+
+var credentials = new VssOAuthAccessTokenCredential(result.AccessToken);
+var connection = new VssConnection(new Uri(organizationUrl), credentials);
 ```
 
 ### Personal access token authentication (Legacy)
@@ -520,6 +560,24 @@ private static bool IsTransientError(Exception ex)
 - Monitor for authentication issues
 
 For detailed migration guidance, see [Replace PATs with Microsoft Entra tokens](../authentication/entra.md#migration-from-legacy-authentication).
+
+<a id="use-ai-assistance"></a>
+
+## Use AI to generate .NET client code
+
+If you have the [Azure DevOps MCP Server](../../../mcp-server/mcp-server-overview.md) connected to your AI agent in agent mode, you can use natural language prompts to generate .NET client library code for Azure DevOps.
+
+| Task | Example prompt |
+|------|----------------|
+| Create a work item query | `Write C# code using the Azure DevOps .NET client library to create a work item query, execute it, and process the results` |
+| List Git repos and commits | `Show me how to use the Azure DevOps GitHttpClient to list repositories and get recent commits in a project` |
+| Connect with managed identity | `Create a .NET application that connects to Azure DevOps using managed identity and retrieves build definitions` |
+| Interactive Entra sign-in | `Write code to authenticate to Azure DevOps using the .NET client library with interactive Microsoft Entra sign-in` |
+| Manage team settings | `Write C# code using the Azure DevOps .NET client to get team members and iteration paths for a project` |
+| Create a pipeline run | `Show me how to trigger a pipeline run in Azure DevOps using the .NET client libraries with service principal authentication` |
+
+> [!NOTE]
+> Agent mode and the MCP Server use natural language, so you can adjust these prompts or ask follow-up questions to refine the results.
 
 ## Related resources
 
