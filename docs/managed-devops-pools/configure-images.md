@@ -248,7 +248,7 @@ You can select from the following types of images:
 
 * [Azure Pipelines images](#azure-pipelines-images): Select from the same images that Microsoft-hosted agents use.
 * [Selected marketplace images](#selected-marketplace-images): Select from a curated set of Microsoft-published marketplace VM images.
-* [Azure Compute Gallery images](#azure-compute-gallery-images): Select from your own Azure Compute Gallery images. You must assign the **Reader** role to the `DevOpsInfrastructure` service principal for the Azure Compute Gallery images that you want to use. For more information, see [Grant Reader role access to the `DevOpsInfrastructure` service principal](#grant-reader-role-access-to-the-devopsinfrastructure-service-principal).
+* [Azure Compute Gallery images](#azure-compute-gallery-images): Select from your own Azure Compute Gallery images. You must assign the **Compute Gallery Image Reader** role to the `DevOpsInfrastructure` service principal for the Azure Compute Gallery images that you want to use. For more information, see [Grant Reader role access to the `DevOpsInfrastructure` service principal](#grant-compute-gallery-image-reader-role-access-to-the-devopsinfrastructure-service-principal).
 
 ### Azure Pipelines images
 
@@ -430,10 +430,10 @@ images: [
 
 * * *
 
-### Grant Reader role access to the DevOpsInfrastructure service principal
+### Grant Compute Gallery Image Reader role access to the DevOpsInfrastructure service principal
 
 > [!IMPORTANT]
-> Assign the **Reader** role to the `DevOpsInfrastructure` service principal for the Azure Compute Gallery images that you want to use. If you select an Azure Compute Gallery image that doesn't have this access configured, pool creation fails. You can assign the **Reader** role individually at the image level, or at the image gallery level for all images in the gallery.
+> Assign the **Compute Gallery Image Reader** role to the `DevOpsInfrastructure` service principal for the Azure Compute Gallery images that you want to use. If you select an Azure Compute Gallery image that doesn't have this access configured, pool creation fails. You can assign the **Compute Gallery Image Reader** role individually at the image level, or at the image gallery level for all images in the gallery.
 
 1. Go to the desired resource in the Azure portal. To use all images in a gallery, go to **Azure Compute Gallery** in the Azure portal. To only use a specific image, go to that image.
 1. Select **Access control (IAM)**.
@@ -442,7 +442,7 @@ images: [
 
     | Setting | Value |
     | --- | --- |
-    | Role | Reader |
+    | Role | Compute Gallery Image Reader |
     | Assign access to | service principal |
     | Members | `DevOpsInfrastructure` |
 
