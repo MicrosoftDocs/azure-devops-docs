@@ -97,16 +97,16 @@ If you have the [Azure DevOps MCP Server](../mcp-server/mcp-server-overview.md) 
 
 | Task | Example prompt |
 |------|----------------|
-| Find change requests | ```copilot-prompt List all work items tagged 'change-request' in project <Contoso>``` |
-| Triage scope changes | ```copilot-prompt Show work items added to Sprint 10 for <Contoso Team> after the sprint start date``` |
-| Check sprint scope creep | ```copilot-prompt Compare the original sprint scope to the current scope for Sprint 10 for <Contoso Team>``` |
-| Review velocity trends | ```copilot-prompt Show the planned vs. completed story points for <Contoso Team> over the last 6 sprints``` |
-| Identify unplanned work | ```copilot-prompt List work items in the current sprint for <Contoso Team> that were added after sprint planning``` |
-| Tag items for change tracking | ```copilot-prompt Add tag 'scope-change' to user story #345 in project <Contoso>``` |
-| Query acceptance criteria gaps | ```copilot-prompt List user stories in the current sprint for <Contoso Team> that have empty acceptance criteria``` |
-| Create a change request | ```copilot-prompt Create a change request work item titled 'Add OAuth support' with priority 2 in project <Contoso>``` |
-| Audit sprint burndown | ```copilot-prompt Show the remaining work for Sprint 10 for <Contoso Team> grouped by work item state``` |
-| Cross-link change to requirements | ```copilot-prompt Link change request #890 as related to user stories #101 and #102 in project <Contoso>``` |
+| Find change requests | `List all work items tagged 'change-request' in project <Contoso>` |
+| Triage scope changes | `Show work items added to Sprint 10 for <Contoso Team> after the sprint start date` |
+| Check sprint scope creep | `Compare the original sprint scope to the current scope for Sprint 10 for <Contoso Team>` |
+| Review velocity trends | `Show the planned vs. completed story points for <Contoso Team> over the last 6 sprints` |
+| Identify unplanned work | `List work items in the current sprint for <Contoso Team> that were added after sprint planning` |
+| Tag items for change tracking | `Add tag 'scope-change' to user story #345 in project <Contoso>` |
+| Query acceptance criteria gaps | `List user stories in the current sprint for <Contoso Team> that have empty acceptance criteria` |
+| Create a change request | `Create a change request work item titled 'Add OAuth support' with priority 2 in project <Contoso>` |
+| Audit sprint burndown | `Show the remaining work for Sprint 10 for <Contoso Team> grouped by work item state` |
+| Cross-link change to requirements | `Link change request #890 as related to user stories #101 and #102 in project <Contoso>` |
 
 > [!NOTE]
 > Agent mode and the MCP Server use natural language, so you can adjust these prompts or ask follow-up questions to refine the results.

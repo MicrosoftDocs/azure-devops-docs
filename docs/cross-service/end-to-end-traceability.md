@@ -113,16 +113,16 @@ If you have the [Azure DevOps MCP Server](../mcp-server/mcp-server-overview.md) 
 
 | Task | Example prompt |
 |------|----------------|
-| Create a linked branch | ```copilot-prompt Create a new branch from user story #123 in project <Contoso> and link it to the work item``` |
-| Trace a requirement | ```copilot-prompt Starting from user story #456 in <Contoso>, show the linked branches, pull requests, builds, and releases``` |
-| Check deployment status | ```copilot-prompt Show the deployment stages for work item #789 in project <Contoso>``` |
-| Find unlinked work items | ```copilot-prompt List user stories in the current sprint for <Contoso Team> that have no linked branches or pull requests``` |
-| Review test coverage | ```copilot-prompt Show all test cases linked to user story #456 in project <Contoso> and their pass/fail status``` |
-| Audit commit history | ```copilot-prompt List all commits linked to work item #123 in project <Contoso> with author and date``` |
-| Identify untested requirements | ```copilot-prompt List user stories in project <Contoso> that have no linked test cases``` |
-| Check build associations | ```copilot-prompt Show the builds associated with pull request #234 in project <Contoso> and their status``` |
-| Trace a bug to code | ```copilot-prompt Show the commits and pull requests linked to bug #567 in project <Contoso>``` |
-| Sprint traceability audit | ```copilot-prompt For all user stories in Sprint 10 for <Contoso Team>, show which ones have linked builds and which don't``` |
+| Create a linked branch | `Create a new branch from user story #123 in project <Contoso> and link it to the work item` |
+| Trace a requirement | `Starting from user story #456 in <Contoso>, show the linked branches, pull requests, builds, and releases` |
+| Check deployment status | `Show the deployment stages for work item #789 in project <Contoso>` |
+| Find unlinked work items | `List user stories in the current sprint for <Contoso Team> that have no linked branches or pull requests` |
+| Review test coverage | `Show all test cases linked to user story #456 in project <Contoso> and their pass/fail status` |
+| Audit commit history | `List all commits linked to work item #123 in project <Contoso> with author and date` |
+| Identify untested requirements | `List user stories in project <Contoso> that have no linked test cases` |
+| Check build associations | `Show the builds associated with pull request #234 in project <Contoso> and their status` |
+| Trace a bug to code | `Show the commits and pull requests linked to bug #567 in project <Contoso>` |
+| Sprint traceability audit | `For all user stories in Sprint 10 for <Contoso Team>, show which ones have linked builds and which don't` |
 
 > [!NOTE]
 > Agent mode and the MCP Server use natural language, so you can adjust these prompts or ask follow-up questions to refine the results.

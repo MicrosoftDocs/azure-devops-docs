@@ -257,16 +257,16 @@ If you connect the [Azure DevOps MCP Server](../mcp-server/mcp-server-overview.m
 
 | Task | Example prompt |
 |------|----------------|
-| Create a requirement | ```copilot-prompt Create a user story titled 'Add single sign-on support' with acceptance criteria in project <Contoso>``` |
-| Build a feature hierarchy | ```copilot-prompt Create a feature called 'Authentication Module' and add user stories #101, #102, and #103 as children in project <Contoso>``` |
-| Tag nonfunctional requirements | ```copilot-prompt Add tag 'nonfunctional' to all work items in area path <Contoso\Performance>``` |
-| Find unsized backlog items | ```copilot-prompt List all user stories on the <Contoso Team> backlog that have no story points assigned``` |
-| Forecast delivery | ```copilot-prompt Based on a velocity of 25 story points, how many sprints to complete the remaining backlog for <Contoso Team>?``` |
-| Check sprint assignments | ```copilot-prompt List all user stories in Sprint 10 for <Contoso Team> and show their state and assigned-to fields``` |
-| Track rollup progress | ```copilot-prompt Show all features in project <Contoso> with the percentage of child user stories completed``` |
-| Identify missing parents | ```copilot-prompt List user stories in project <Contoso> that aren't linked to a parent feature``` |
-| Review dependencies | ```copilot-prompt Show work items in project <Contoso> that have predecessor links to items that are still active``` |
-| Audit backlog completeness | ```copilot-prompt List the top 20 backlog items by priority for <Contoso Team> and flag any that are missing acceptance criteria or story points``` |
+| Create a requirement | `Create a user story titled 'Add single sign-on support' with acceptance criteria in project <Contoso>` |
+| Build a feature hierarchy | `Create a feature called 'Authentication Module' and add user stories #101, #102, and #103 as children in project <Contoso>` |
+| Tag nonfunctional requirements | `Add tag 'nonfunctional' to all work items in area path <Contoso\Performance>` |
+| Find unsized backlog items | `List all user stories on the <Contoso Team> backlog that have no story points assigned` |
+| Forecast delivery | `Based on a velocity of 25 story points, how many sprints to complete the remaining backlog for <Contoso Team>?` |
+| Check sprint assignments | `List all user stories in Sprint 10 for <Contoso Team> and show their state and assigned-to fields` |
+| Track rollup progress | `Show all features in project <Contoso> with the percentage of child user stories completed` |
+| Identify missing parents | `List user stories in project <Contoso> that aren't linked to a parent feature` |
+| Review dependencies | `Show work items in project <Contoso> that have predecessor links to items that are still active` |
+| Audit backlog completeness | `List the top 20 backlog items by priority for <Contoso Team> and flag any that are missing acceptance criteria or story points` |
 
 > [!NOTE]
 > Agent mode and the MCP Server use natural language, so you can adjust these prompts or ask follow-up questions to refine the results.
