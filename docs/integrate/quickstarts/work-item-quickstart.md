@@ -120,7 +120,7 @@ public class EntraIdQueryExecutor
             Query = "SELECT [System.Id], [System.Title], [System.State] " +
                     "FROM WorkItems " +
                     "WHERE [Work Item Type] = 'Bug' " +
-                    "AND [System.TeamProject] = '" + project + "' " +
+                    "AND [System.TeamProject] = @project " +
                     "AND [System.State] <> 'Closed' " +
                     "ORDER BY [System.State] ASC, [System.ChangedDate] DESC",
         };
@@ -129,7 +129,7 @@ public class EntraIdQueryExecutor
         {
             try
             {
-                var result = await httpClient.QueryByWiqlAsync(wiql).ConfigureAwait(false);
+                var result = await httpClient.QueryByWiqlAsync(wiql, project).ConfigureAwait(false);
                 var ids = result.WorkItems.Select(item => item.Id).ToArray();
 
                 if (ids.Length == 0)
@@ -232,7 +232,7 @@ public class ServicePrincipalQueryExecutor
         {
             try
             {
-                var queryResult = await httpClient.QueryByWiqlAsync(wiql).ConfigureAwait(false);
+                var queryResult = await httpClient.QueryByWiqlAsync(wiql, project).ConfigureAwait(false);
                 var ids = queryResult.WorkItems.Select(item => item.Id).ToArray();
 
                 if (ids.Length == 0)
@@ -308,7 +308,7 @@ public class ManagedIdentityQueryExecutor
         {
             try
             {
-                var queryResult = await httpClient.QueryByWiqlAsync(wiql).ConfigureAwait(false);
+                var queryResult = await httpClient.QueryByWiqlAsync(wiql, project).ConfigureAwait(false);
                 var ids = queryResult.WorkItems.Select(item => item.Id).ToArray();
 
                 if (ids.Length == 0)
@@ -380,7 +380,7 @@ public class PatQueryExecutor
         {
             try
             {
-                var result = await httpClient.QueryByWiqlAsync(wiql).ConfigureAwait(false);
+                var result = await httpClient.QueryByWiqlAsync(wiql, project).ConfigureAwait(false);
                 var ids = result.WorkItems.Select(item => item.Id).ToArray();
 
                 if (ids.Length == 0)
