@@ -100,12 +100,12 @@ If you have the [Azure DevOps MCP Server](../../mcp-server/mcp-server-overview.m
 
 | Task | Example prompt |
 |------|----------------|
-| Avoid rate limits | ```copilot-prompt How do I design my Azure DevOps integration to avoid hitting rate limits when syncing thousands of work items?``` |
-| Use reporting APIs | ```copilot-prompt Show me how to use the Azure DevOps reporting work item revisions API instead of individual queries for bulk data retrieval``` |
-| Implement caching | ```copilot-prompt Write code that caches Azure DevOps REST API responses to reduce redundant calls and stay within rate limits``` |
-| Handle failures gracefully | ```copilot-prompt Help me implement retry logic with exponential backoff for Azure DevOps REST API calls in C#``` |
-| Design webhook integration | ```copilot-prompt Show me how to set up Azure DevOps service hooks to push events instead of polling the REST API``` |
-| Optimize batch operations | ```copilot-prompt What's the most efficient way to create many work items in Azure DevOps without exceeding rate limits?``` |
+| Avoid rate limits | `How do I design my Azure DevOps integration to avoid hitting rate limits when syncing thousands of work items?` |
+| Use reporting APIs | `Show me how to use the Azure DevOps reporting work item revisions API instead of individual queries for bulk data retrieval` |
+| Implement caching | `Write code that caches Azure DevOps REST API responses to reduce redundant calls and stay within rate limits` |
+| Handle failures gracefully | `Help me implement retry logic with exponential backoff for Azure DevOps REST API calls in C#` |
+| Design webhook integration | `Show me how to set up Azure DevOps service hooks to push events instead of polling the REST API` |
+| Optimize batch operations | `What's the most efficient way to create many work items in Azure DevOps without exceeding rate limits?` |
 
 > [!NOTE]
 > Agent mode and the MCP Server use natural language, so you can adjust these prompts or ask follow-up questions to refine the results.

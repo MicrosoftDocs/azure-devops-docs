@@ -16,9 +16,9 @@ monikerRange: 'azure-devops'
 
 [!INCLUDE [version-eq-azure-devops](../../../includes/version-eq-azure-devops.md)]
 
-[!INCLUDE [ai-assistance-mcp-server-tip](../../../includes/ai-assistance-mcp-server-tip.md)]
-
 Service principals and managed identities provide secure, scalable authentication for Azure DevOps automation workflows. These [Microsoft Entra](entra.md) identity types offer enhanced security over traditional personal access tokens (PATs). They use automatic credential management, shorter token lifespans, and enterprise-grade access controls.
+
+[!INCLUDE [ai-assistance-mcp-server-tip](../../../includes/ai-assistance-mcp-server-tip.md)]
 
 ## Benefits of service principals and managed identities
 
@@ -468,12 +468,12 @@ If you have the [Azure DevOps MCP Server](../../../mcp-server/mcp-server-overvie
 
 | Task | Example prompt |
 |------|----------------|
-| Set up managed identity | ```copilot-prompt Walk me through setting up a managed identity for an Azure Function that needs to access Azure DevOps APIs``` |
-| Create a service principal | ```copilot-prompt Show me how to create a service principal in Microsoft Entra ID and add it to my Azure DevOps organization with the correct permissions``` |
-| Acquire a token | ```copilot-prompt Write C# code to acquire a Microsoft Entra token for Azure DevOps using a service principal with certificate authentication``` |
-| Cross-tenant access | ```copilot-prompt How do I configure a service principal to access Azure DevOps in a different tenant?``` |
-| Troubleshoot auth errors | ```copilot-prompt I'm getting a VssUnauthorizedException when using a managed identity to call Azure DevOps APIs — help me troubleshoot``` |
-| Migrate from PATs | ```copilot-prompt Help me migrate my Azure DevOps automation from PAT-based authentication to a managed identity for an Azure-hosted application``` |
+| Set up managed identity | `Walk me through setting up a managed identity for an Azure Function that needs to access Azure DevOps APIs` |
+| Create a service principal | `Show me how to create a service principal in Microsoft Entra ID and add it to my Azure DevOps organization with the correct permissions` |
+| Acquire a token | `Write C# code to acquire a Microsoft Entra token for Azure DevOps using a service principal with certificate authentication` |
+| Cross-tenant access | `How do I configure a service principal to access Azure DevOps in a different tenant?` |
+| Troubleshoot auth errors | `I'm getting a VssUnauthorizedException when using a managed identity to call Azure DevOps APIs — help me troubleshoot` |
+| Migrate from PATs | `Help me migrate my Azure DevOps automation from PAT-based authentication to a managed identity for an Azure-hosted application` |
 
 > [!NOTE]
 > Agent mode and the MCP Server use natural language, so you can adjust these prompts or ask follow-up questions to refine the results.

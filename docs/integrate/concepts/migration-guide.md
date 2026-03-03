@@ -4,7 +4,6 @@ titleSuffix: Azure DevOps Services
 description: Step-by-step migration guide for upgrading from legacy WIT Client OM to modern REST-based .NET client libraries with secure authentication.
 ms.subservice: azure-devops-ecosystem
 ai-usage: ai-assisted
-ms.custom: copilot-scenario-highlight
 ms.topic: overview
 ms.assetid: 30272A34-2CE1-41B3-BA7A-815D69309CBE
 ms.author: chcomley
@@ -18,8 +17,6 @@ ms.date: 03/02/2026
 # Migrate from WIT Client OM to REST APIs
 
 [!INCLUDE [version-eq-azure-devops](../../includes/version-eq-azure-devops.md)]
-
-[!INCLUDE [ai-assistance-mcp-server-tip](../../includes/ai-assistance-mcp-server-tip.md)]
 
 > [!IMPORTANT]
 > **Legacy technology replacement required**
@@ -113,24 +110,6 @@ var witClient = connection.GetClient<WorkItemTrackingHttpClient>();
 ### 🔄 Related migrations
 - **[Migrate data from Azure DevOps Server to Azure DevOps Services](../../migrate/migration-overview.md)** - Service migration guidance
 - **[Legacy SOAP client samples](../get-started/client-libraries/soapSamples.md)** - Reference for other legacy client patterns
-
-<a id="use-ai-assistance"></a>
-
-## Use AI to migrate from WIT Client OM
-
-If you have the [Azure DevOps MCP Server](../../mcp-server/mcp-server-overview.md) connected to your AI agent in agent mode, you can use natural language prompts to help migrate your legacy code.
-
-| Task | Example prompt |
-|------|----------------|
-| Convert WIQL queries | ```copilot-prompt Convert this legacy WIT Client OM WIQL query to use the modern WorkItemTrackingHttpClient``` |
-| Replace WorkItemStore | ```copilot-prompt Show me how to replace WorkItemStore.Query calls with WorkItemTrackingHttpClient.QueryByWiqlAsync``` |
-| Update field access | ```copilot-prompt How do I access work item fields using the REST-based .NET client instead of WorkItem.Fields["System.Title"]?``` |
-| Migrate link handling | ```copilot-prompt Convert my WIT Client OM code that creates work item links to use the modern REST-based JsonPatchDocument approach``` |
-| Set up modern auth | ```copilot-prompt Replace my TfsTeamProjectCollection connection with a VssConnection using Microsoft Entra authentication``` |
-| Assess migration scope | ```copilot-prompt Analyze my C# project for WIT Client OM usage and suggest a migration plan to the REST-based .NET client libraries``` |
-
-> [!NOTE]
-> Agent mode and the MCP Server use natural language, so you can adjust these prompts or ask follow-up questions to refine the results.
 
 > [!TIP]
 > **Start your migration:** Begin with [authentication guidance](../get-started/authentication/authentication-guidance.md) to choose the right approach, then see [.NET client library samples](../get-started/client-libraries/samples.md) for working code examples.

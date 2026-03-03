@@ -16,9 +16,9 @@ ms.custom: pat-reduction, copilot-scenario-highlight
 
 [!INCLUDE [version-eq-azure-devops](../../includes/version-eq-azure-devops.md)]
 
-[!INCLUDE [ai-assistance-mcp-server-tip](../../includes/ai-assistance-mcp-server-tip.md)]
-
 Fetching work items using queries is a common scenario in Azure DevOps Services. This article explains how to implement this scenario programmatically using REST APIs or .NET client libraries.
+
+[!INCLUDE [ai-assistance-mcp-server-tip](../../includes/ai-assistance-mcp-server-tip.md)]
 
 ## Prerequisites
 
@@ -556,12 +556,12 @@ If you have the [Azure DevOps MCP Server](../../mcp-server/mcp-server-overview.m
 
 | Task | Example prompt |
 |------|----------------|
-| Generate query code | ```copilot-prompt Write C# code to query all active bugs assigned to me in Azure DevOps using the .NET client libraries with Microsoft Entra authentication``` |
-| REST API query | ```copilot-prompt Create a REST API call to fetch work items from Azure DevOps using a WIQL query with a personal access token``` |
-| Run a saved query | ```copilot-prompt Show me how to use the Azure DevOps .NET client to run a saved query and retrieve work item details including custom fields``` |
-| Export to CSV | ```copilot-prompt Build a .NET app that fetches work items from Azure DevOps and exports them to CSV using managed identity authentication``` |
-| Filter by area path | ```copilot-prompt Write C# code to query work items under area path <Contoso\Backend> that were modified in the last 7 days``` |
-| Paginate large results | ```copilot-prompt Show me how to query Azure DevOps work items in batches of 200 using the .NET client libraries with proper pagination``` |
+| Generate query code | `Write C# code to query all active bugs assigned to me in Azure DevOps using the .NET client libraries with Microsoft Entra authentication` |
+| REST API query | `Create a REST API call to fetch work items from Azure DevOps using a WIQL query with a personal access token` |
+| Run a saved query | `Show me how to use the Azure DevOps .NET client to run a saved query and retrieve work item details including custom fields` |
+| Export to CSV | `Build a .NET app that fetches work items from Azure DevOps and exports them to CSV using managed identity authentication` |
+| Filter by area path | `Write C# code to query work items under area path <Contoso\Backend> that were modified in the last 7 days` |
+| Paginate large results | `Show me how to query Azure DevOps work items in batches of 200 using the .NET client libraries with proper pagination` |
 
 > [!NOTE]
 > Agent mode and the MCP Server use natural language, so you can adjust these prompts or ask follow-up questions to refine the results.

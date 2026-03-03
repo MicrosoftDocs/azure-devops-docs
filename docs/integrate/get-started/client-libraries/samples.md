@@ -5,7 +5,7 @@ ms.assetid: 9ff78e9c-63f7-45b1-a70d-42aa6a9dbc57
 ms.subservice: azure-devops-ecosystem
 ms.custom: devx-track-dotnet, pat-reduction, copilot-scenario-highlight
 ai-usage: ai-assisted
-ms.topic: concept-article
+ms.topic: sample
 monikerRange: '<= azure-devops'
 ms.author: chcomley
 author: chcomley
@@ -16,9 +16,9 @@ ms.date: 03/02/2026
 
 [!INCLUDE [version-lt-eq-azure-devops](../../../includes/version-lt-eq-azure-devops.md)]
 
-[!INCLUDE [ai-assistance-mcp-server-tip](../../../includes/ai-assistance-mcp-server-tip.md)]
-
 Learn how to extend and integrate with Azure DevOps using the [.NET client libraries](../../concepts/dotnet-client-libraries.md) with modern authentication methods and secure coding practices.
+
+[!INCLUDE [ai-assistance-mcp-server-tip](../../../includes/ai-assistance-mcp-server-tip.md)]
 
 ## Prerequisites
 
@@ -569,12 +569,12 @@ If you have the [Azure DevOps MCP Server](../../../mcp-server/mcp-server-overvie
 
 | Task | Example prompt |
 |------|----------------|
-| Create a work item query | ```copilot-prompt Write C# code using the Azure DevOps .NET client library to create a work item query, execute it, and process the results``` |
-| List Git repos and commits | ```copilot-prompt Show me how to use the Azure DevOps GitHttpClient to list repositories and get recent commits in a project``` |
-| Connect with managed identity | ```copilot-prompt Create a .NET application that connects to Azure DevOps using managed identity and retrieves build definitions``` |
-| Interactive Entra sign-in | ```copilot-prompt Write code to authenticate to Azure DevOps using the .NET client library with interactive Microsoft Entra sign-in``` |
-| Manage team settings | ```copilot-prompt Write C# code using the Azure DevOps .NET client to get team members and iteration paths for a project``` |
-| Create a pipeline run | ```copilot-prompt Show me how to trigger a pipeline run in Azure DevOps using the .NET client libraries with service principal authentication``` |
+| Create a work item query | `Write C# code using the Azure DevOps .NET client library to create a work item query, execute it, and process the results` |
+| List Git repos and commits | `Show me how to use the Azure DevOps GitHttpClient to list repositories and get recent commits in a project` |
+| Connect with managed identity | `Create a .NET application that connects to Azure DevOps using managed identity and retrieves build definitions` |
+| Interactive Entra sign-in | `Write code to authenticate to Azure DevOps using the .NET client library with interactive Microsoft Entra sign-in` |
+| Manage team settings | `Write C# code using the Azure DevOps .NET client to get team members and iteration paths for a project` |
+| Create a pipeline run | `Show me how to trigger a pipeline run in Azure DevOps using the .NET client libraries with service principal authentication` |
 
 > [!NOTE]
 > Agent mode and the MCP Server use natural language, so you can adjust these prompts or ask follow-up questions to refine the results.

@@ -16,9 +16,9 @@ ms.custom: quickstart, devx-track-dotnet, pat-reduction, copilot-scenario-highli
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
-[!INCLUDE [ai-assistance-mcp-server-tip](../../includes/ai-assistance-mcp-server-tip.md)]
-
 Creating work items programmatically is a common automation scenario in Azure DevOps Services. This article shows how to create a bug (or any work item) using .NET client libraries with modern authentication methods.
+
+[!INCLUDE [ai-assistance-mcp-server-tip](../../includes/ai-assistance-mcp-server-tip.md)]
 
 ## Prerequisites
 
@@ -670,12 +670,12 @@ If you have the [Azure DevOps MCP Server](../../mcp-server/mcp-server-overview.m
 
 | Task | Example prompt |
 |------|----------------|
-| Generate bug creation code | ```copilot-prompt Write a C# console app that creates a bug in Azure DevOps project <Contoso> using Microsoft Entra ID authentication and the .NET client libraries``` |
-| Create with custom fields | ```copilot-prompt Write code to create a work item with priority, severity, and repro steps fields in Azure DevOps using a managed identity``` |
-| Batch create work items | ```copilot-prompt Show me how to create multiple bugs in Azure DevOps from a CSV file using the .NET client libraries with service principal authentication``` |
-| Create from Azure Function | ```copilot-prompt Generate an Azure Function that creates bugs in Azure DevOps project <Contoso> using a system-assigned managed identity``` |
-| Add attachments | ```copilot-prompt Write C# code to create a bug in Azure DevOps and attach a log file using the .NET client libraries``` |
-| Create linked work items | ```copilot-prompt Write code to create a bug in Azure DevOps and link it to an existing user story using the .NET client libraries``` |
+| Generate bug creation code | `Write a C# console app that creates a bug in Azure DevOps project <Contoso> using Microsoft Entra ID authentication and the .NET client libraries` |
+| Create with custom fields | `Write code to create a work item with priority, severity, and repro steps fields in Azure DevOps using a managed identity` |
+| Batch create work items | `Show me how to create multiple bugs in Azure DevOps from a CSV file using the .NET client libraries with service principal authentication` |
+| Create from Azure Function | `Generate an Azure Function that creates bugs in Azure DevOps project <Contoso> using a system-assigned managed identity` |
+| Add attachments | `Write C# code to create a bug in Azure DevOps and attach a log file using the .NET client libraries` |
+| Create linked work items | `Write code to create a bug in Azure DevOps and link it to an existing user story using the .NET client libraries` |
 
 > [!NOTE]
 > Agent mode and the MCP Server use natural language, so you can adjust these prompts or ask follow-up questions to refine the results.

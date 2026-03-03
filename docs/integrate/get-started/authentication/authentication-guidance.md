@@ -10,27 +10,27 @@ ai-usage: ai-assisted
 monikerRange: '<= azure-devops'
 ms.author: chcomley
 author: chcomley
-ms.date: 03/02/2026
+ms.date: 03/03/2026
 ---
 
 # Authentication methods for Azure DevOps
 
 [!INCLUDE [version-lt-eq-azure-devops](../../../includes/version-lt-eq-azure-devops.md)]
 
-[!INCLUDE [ai-assistance-mcp-server-tip](../../../includes/ai-assistance-mcp-server-tip.md)]
-
 This article describes authentication methods for Azure DevOps integration and helps you choose the best option for your scenario.
 Modern authentication approaches like Microsoft Entra ID provide enhanced security and the best approach for new applications.
 
-> [!IMPORTANT]
-> Use Microsoft Entra ID authentication for new applications that integrate with Azure DevOps Services.
-> Use personal access tokens sparingly, and only when Microsoft Entra ID isn't available.
+Use Microsoft Entra ID authentication for new applications that integrate with Azure DevOps Services.
+Use personal access tokens sparingly, and only when Microsoft Entra ID isn't available.
 
 [!INCLUDE [use-microsoft-entra-reduce-pats](../../../includes/use-microsoft-entra-reduce-pats.md)]
 
 OAuth 2.0 and Microsoft Entra ID authentication are available for Azure DevOps Services only, not Azure DevOps Server.
 
 For on-premises scenarios, use [.NET client libraries](../../concepts/dotnet-client-libraries.md), Windows authentication, or [personal access tokens](../../../organizations/accounts/use-personal-access-tokens-to-authenticate.md).
+
+[!INCLUDE [ai-assistance-mcp-server-tip](../../../includes/ai-assistance-mcp-server-tip.md)]
+
 ## Authentication methods by scenario
 
 Choose the appropriate authentication method based on your application type and requirements.
@@ -152,12 +152,12 @@ If you have the [Azure DevOps MCP Server](../../../mcp-server/mcp-server-overvie
 
 | Task | Example prompt |
 |------|----------------|
-| Choose auth for a background service | ```copilot-prompt Which authentication method should I use for a background Azure Function that needs to access Azure DevOps APIs?``` |
-| Compare auth options | ```copilot-prompt Help me choose between service principals, managed identities, and personal access tokens for my Azure DevOps integration``` |
-| Auth for a web app | ```copilot-prompt I'm building a React web app that needs to access Azure DevOps on behalf of signed-in users — what authentication approach should I use?``` |
-| Migrate from PATs | ```copilot-prompt Help me plan a migration from personal access tokens to Microsoft Entra ID authentication for my Azure DevOps integrations``` |
-| Auth for CI/CD | ```copilot-prompt What's the most secure way to authenticate Azure DevOps REST API calls from a GitHub Actions workflow?``` |
-| Troubleshoot auth failures | ```copilot-prompt I'm getting 401 errors when calling the Azure DevOps REST API with my token — help me diagnose the issue``` |
+| Choose auth for a background service | `Which authentication method should I use for a background Azure Function that needs to access Azure DevOps APIs?` |
+| Compare auth options | `Help me choose between service principals, managed identities, and personal access tokens for my Azure DevOps integration` |
+| Auth for a web app | `I'm building a React web app that needs to access Azure DevOps on behalf of signed-in users — what authentication approach should I use?` |
+| Migrate from PATs | `Help me plan a migration from personal access tokens to Microsoft Entra ID authentication for my Azure DevOps integrations` |
+| Auth for CI/CD | `What's the most secure way to authenticate Azure DevOps REST API calls from a GitHub Actions workflow?` |
+| Troubleshoot auth failures | `I'm getting 401 errors when calling the Azure DevOps REST API with my token — help me diagnose the issue` |
 
 > [!NOTE]
 > Agent mode and the MCP Server use natural language, so you can adjust these prompts or ask follow-up questions to refine the results.

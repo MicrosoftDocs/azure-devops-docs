@@ -16,12 +16,9 @@ ms.date: 03/02/2026
 
 [!INCLUDE [version-lt-eq-azure-devops](../../../includes/version-lt-eq-azure-devops.md)]
 
-[!INCLUDE [ai-assistance-mcp-server-tip](../../../includes/ai-assistance-mcp-server-tip.md)]
-
 This article provides practical REST API examples for Azure DevOps Services. These samples demonstrate common operations like retrieving projects, managing work items, and using secure authentication patterns with Microsoft Entra ID.
 
-> [!IMPORTANT]
-> These samples use Microsoft Entra ID authentication, which is the recommended approach for production applications. While personal access tokens (PATs) can be used for simple scripts, Microsoft Entra ID provides better security and governance capabilities.
+[!INCLUDE [use-microsoft-entra-reduce-pats](../../../includes/use-microsoft-entra-reduce-pats.md)]
 
 ## Authentication overview
 
@@ -32,7 +29,7 @@ Azure DevOps REST APIs support several authentication methods:
 - **OAuth 2.0** - For third-party applications
 - **Service principals** - For automated scenarios
 
-[!INCLUDE [use-microsoft-entra-reduce-pats](../../../includes/use-microsoft-entra-reduce-pats.md)]
+[!INCLUDE [ai-assistance-mcp-server-tip](../../../includes/ai-assistance-mcp-server-tip.md)]
 
 ### Microsoft Entra ID authentication
 
@@ -517,12 +514,12 @@ If you have the [Azure DevOps MCP Server](../../../mcp-server/mcp-server-overvie
 
 | Task | Example prompt |
 |------|----------------|
-| List projects | ```copilot-prompt Show me how to list all projects in my Azure DevOps organization using the REST API with Microsoft Entra ID authentication in C#``` |
-| Create a work item | ```copilot-prompt Write a REST API call to create a bug in Azure DevOps with proper authentication headers and JSON-patch body``` |
-| Get Git repos | ```copilot-prompt Create a C# HttpClient example that retrieves Git repositories from Azure DevOps using a Bearer token from MSAL``` |
-| Update work item fields | ```copilot-prompt Show me how to update work item fields using the Azure DevOps REST API PATCH method with proper content type headers``` |
-| Query with WIQL | ```copilot-prompt Write a REST API call to execute a WIQL query against Azure DevOps and deserialize the response``` |
-| Handle pagination | ```copilot-prompt Show me how to handle continuation tokens when listing Azure DevOps resources with the REST API in C#``` |
+| List projects | `Show me how to list all projects in my Azure DevOps organization using the REST API with Microsoft Entra ID authentication in C#` |
+| Create a work item | `Write a REST API call to create a bug in Azure DevOps with proper authentication headers and JSON-patch body` |
+| Get Git repos | `Create a C# HttpClient example that retrieves Git repositories from Azure DevOps using a Bearer token from MSAL` |
+| Update work item fields | `Show me how to update work item fields using the Azure DevOps REST API PATCH method with proper content type headers` |
+| Query with WIQL | `Write a REST API call to execute a WIQL query against Azure DevOps and deserialize the response` |
+| Handle pagination | `Show me how to handle continuation tokens when listing Azure DevOps resources with the REST API in C#` |
 
 > [!NOTE]
 > Agent mode and the MCP Server use natural language, so you can adjust these prompts or ask follow-up questions to refine the results.

@@ -16,14 +16,14 @@ ms.date: 03/02/2026
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
-[!INCLUDE [ai-assistance-mcp-server-tip](../../includes/ai-assistance-mcp-server-tip.md)]
-
 Azure DevOps REST APIs provide powerful programmatic access to work items, repositories, builds, releases, and more. Whether you're building custom integrations, automating workflows, or extending Azure DevOps capabilities, understanding the fundamental patterns and concepts is essential for successful implementation.
 
 > [!TIP]
 > Ready to start coding? Skip to [REST API samples](../get-started/rest/samples.md) for complete working examples with modern authentication patterns.
 
 This article covers the fundamental concepts and patterns for Azure DevOps REST APIs. For practical implementation examples, see [REST API samples](../get-started/rest/samples.md).
+
+[!INCLUDE [ai-assistance-mcp-server-tip](../../includes/ai-assistance-mcp-server-tip.md)]
 
 ## URL structure
 
@@ -36,7 +36,7 @@ VERB https://{instance}/{collection}/{team-project}/_apis/{area}/{resource}?api-
 > [!TIP]
 > As APIs evolve, we recommend that you include an API version in every request. This practice can help you avoid unexpected changes in the API that could break.
 
-### Azure DevOps Services
+### [Azure DevOps Services](#tab/services)
 
 For Azure DevOps Services, `instance` is `dev.azure.com/{organization}` and `collection` is `DefaultCollection`, so the pattern looks like the following example:
 
@@ -49,7 +49,7 @@ VERB https://dev.azure.com/{organization}/_apis/{area}/{resource}?api-version={v
 GET https://dev.azure.com/{organization}/_apis/projects?api-version=7.2
 ```
 
-### Azure DevOps Server
+### [Azure DevOps Server](#tab/server)
 
 For Azure DevOps Server, `instance` is `{server:port}`. The default port for a non-SSL connection is 8080.
 
@@ -58,6 +58,8 @@ The default collection is `DefaultCollection`, but you can use any collection.
 **Examples:**
 - SSL: `https://{server}/DefaultCollection/_apis/projects?api-version=7.2`
 - Non-SSL: `http://{server}:8080/DefaultCollection/_apis/projects?api-version=7.2`
+
+---
 
 ## Authentication
 
@@ -202,12 +204,12 @@ If you have the [Azure DevOps MCP Server](../../mcp-server/mcp-server-overview.m
 
 | Task | Example prompt |
 |------|----------------|
-| Build a GET request | ```copilot-prompt Show me how to construct a GET request to list all projects in my Azure DevOps organization using the REST API``` |
-| Construct a POST body | ```copilot-prompt Generate the JSON-patch body for creating a work item using the Azure DevOps REST API``` |
-| Handle authentication | ```copilot-prompt Write C# code to call the Azure DevOps REST API with a Bearer token from Microsoft Entra ID``` |
-| Explore API areas | ```copilot-prompt What Azure DevOps REST API endpoints are available for managing Git pull requests?``` |
-| Parse API responses | ```copilot-prompt Show me how to deserialize an Azure DevOps REST API response into C# objects and handle pagination with continuation tokens``` |
-| Debug API errors | ```copilot-prompt I'm getting a 400 error when calling the Azure DevOps work item update API — help me understand the correct PATCH format``` |
+| Build a GET request | `Show me how to construct a GET request to list all projects in my Azure DevOps organization using the REST API` |
+| Construct a POST body | `Generate the JSON-patch body for creating a work item using the Azure DevOps REST API` |
+| Handle authentication | `Write C# code to call the Azure DevOps REST API with a Bearer token from Microsoft Entra ID` |
+| Explore API areas | `What Azure DevOps REST API endpoints are available for managing Git pull requests?` |
+| Parse API responses | `Show me how to deserialize an Azure DevOps REST API response into C# objects and handle pagination with continuation tokens` |
+| Debug API errors | `I'm getting a 400 error when calling the Azure DevOps work item update API — help me understand the correct PATCH format` |
 
 > [!NOTE]
 > Agent mode and the MCP Server use natural language, so you can adjust these prompts or ask follow-up questions to refine the results.
