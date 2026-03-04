@@ -3,13 +3,13 @@ title: End-to-end traceability
 titleSuffix: Azure DevOps
 description: Overview of the tools and features that support traceability from requirements to deployment.    
 ms.subservice: azure-devops-cross-service
-ms.custom: cross-service, cross-project
+ms.custom: cross-service, cross-project, copilot-scenario-highlight
 ms.topic: overview
 ai-usage: ai-assisted
 ms.author: chcomley
 author: chcomley
 monikerRange: 'azure-devops'
-ms.date: 02/17/2026
+ms.date: 03/02/2026
 ---
  
 
@@ -21,11 +21,11 @@ Azure DevOps supports end-to-end traceability by linking various objects in your
 
 This article provides an overview of how Azure DevOps enables and supports traceability, with links to more detailed information.
 
-[!INCLUDE [ai-assistance-callout](../includes/ai-assistance-callout.md)]
+[!INCLUDE [ai-assistance-mcp-server-tip](../includes/ai-assistance-mcp-server-tip.md)]
 
 ## Traceability and linking 
 
-You can track the code changes, builds, and releases that are [linked to a work item](../boards/backlogs/add-link.md) throughout the development lifecycle. This way, your team can see the audit trail of how the work was done or how a bug was fixed by looking at the changes in the code base.
+You can track the code changes, builds, and releases that are [linked to a work item](../boards/backlogs/add-link.md) throughout the development lifecycle. When you use this process, your team can see the audit trail of how the work was done or how a bug was fixed by looking at the changes in the code base.
 
 The link types used for Git repositories are *Build*, *Found in build*, *Integrated in build*, *Branch*, *Commit*, *Pull Request*, and *Integrated in release stage*.
 
@@ -37,7 +37,7 @@ The link types used for Git repositories are *Build*, *Found in build*, *Integra
 
    :::image type="content" source="media/traceability/board-card-menu-new-branch.png" alt-text="Screenshot shows board card with highlighted New branch selection.":::
 
-- **Pull request:** Once the code changes are done in the new branch, developers can create a pull request from the work item. Using the board and the work item to drive software development encourages developers to add comments as they work, documenting the changes and the reasons behind them. This way, the work item becomes a rich source of information and history for the code changes.
+- **Pull request:** After you make code changes in the new branch, developers can create a pull request from the work item. By using the board and the work item to drive software development, developers add comments as they work, documenting the changes and the reasons behind them. This way, the work item becomes a rich source of information and history for the code changes.
 
    :::image type="content" source="media/traceability/work-item-form-pull-request.png" alt-text="Screenshot shows highlighted selection, Create a pull request, in the work item form.":::
  
@@ -45,19 +45,19 @@ The link types used for Git repositories are *Build*, *Found in build*, *Integra
 
 Link a test to a set of requirements and validate that the application works as expected. From the board, you can add tests to the work item. Then, you can run your new tests from the board and set the test status. 
 
-Test integration with the board makes it easy for teams to get started with manual testing and then take advantage of the full testing capabilities provided by Azure Test Plans. The board shows the test added to support the requirement when test cases are created from the board or when requirement-based test suites are created under Test Plans.
+By integrating test with the board, teams can easily get started with manual testing and then take advantage of the full testing capabilities provided by Azure Test Plans. The board shows the test added to support the requirement when you create test cases from the board or when you create requirement-based test suites under Test Plans.
 
 :::image type="content" source="media/traceability/board-card-menu-add-test.png" alt-text="Screenshot shows highlighted Add test selection made from board card.":::
 
 ### Manual and automated testing
 
-You can [run automated tests](../boards/boards/add-run-update-tests.md) in a pipeline or on demand. You can also [link them to test cases](../test/associate-automated-test-with-test-case.md) in a test plan and run them from Test Plans. This way, you can track the quality of your requirements with automated tests, which is called *planned testing*.
+You can [run automated tests](../boards/boards/add-run-update-tests.md) in a pipeline or on demand. You can also [link them to test cases](../test/associate-automated-test-with-test-case.md) in a test plan and run them from Test Plans. By using this approach, you can track the quality of your requirements with automated tests, which is called *planned testing*.
 
 ## Deploy changes into production
  
 After you define a pipeline to build and release the code changes, you can track the deployment of the work item requirement to each release stage. From the work item form, you can quickly open the links to builds and releases from the **Deployment** and **Development** sections. 
 
-When you open the work item form, it displays the stages to which the requirement is deployed. You can drill down for greater details with the dropdown menu. 
+When you open the work item form, it displays the stages to which the requirement is deployed. You can drill down for greater details by using the dropdown menu. 
 
 - **Development** section: Open branches, commits, pull requests, or builds linked to the work item. For GitHub repositories, *Integrated in build* links are also shown in this section when you enable the automatic linking option in your YAML pipeline settings. For more information, see [View build status for YAML pipelines](../boards/github/link-to-from-github.md#view-build-status-for-yaml-pipelines-integrated-in-build).
 - **Deployment** section: Find release information for work items associated with a Git commit that's part of a build being released.
@@ -85,7 +85,7 @@ The Requirements Traceability Matrix (RTM) ensures that all requirements defined
 
 ### Requirements traceability reports
 
-Requirements traceability reports are a way of showing how different phases of a development process are related and documented. They help teams to measure the quality and completeness of their requirements, and to assess their readiness for delivery. They also help to track the code changes, tests, bugs, and deployments that are linked to the requirements.
+Requirements traceability reports show how different phases of a development process are related and documented. They help teams measure the quality and completeness of their requirements and assess their readiness for delivery. They also help track the code changes, tests, bugs, and deployments that are linked to the requirements.
 
 ![Screenshot of the Requirements quality widget.](/azure/devops/pipelines/test/media/requirements-traceability/requirements-quality-widget.png) 
 
@@ -104,6 +104,28 @@ Based on the build or release pipeline, you can choose the timeline or pipeline 
 ## Test Analytics
 
 For more information about Test Analytics for builds and releases, tracking the quality of requirements, and test failures, see [Test Analytics](../pipelines/test/test-analytics.md).
+
+<a id="use-ai-assistance"></a>
+
+## Use AI for end-to-end traceability
+
+If you have the [Azure DevOps MCP Server](../mcp-server/mcp-server-overview.md) connected to your AI agent in agent mode, you can use natural language prompts to trace requirements through development, testing, and deployment.
+
+| Task | Example prompt |
+|------|----------------|
+| Create a linked branch | `Create a new branch from user story #123 in project <Contoso> and link it to the work item` |
+| Trace a requirement | `Starting from user story #456 in <Contoso>, show the linked branches, pull requests, builds, and releases` |
+| Check deployment status | `Show the deployment stages for work item #789 in project <Contoso>` |
+| Find unlinked work items | `List user stories in the current sprint for <Contoso Team> that have no linked branches or pull requests` |
+| Review test coverage | `Show all test cases linked to user story #456 in project <Contoso> and their pass/fail status` |
+| Audit commit history | `List all commits linked to work item #123 in project <Contoso> with author and date` |
+| Identify untested requirements | `List user stories in project <Contoso> that have no linked test cases` |
+| Check build associations | `Show the builds associated with pull request #234 in project <Contoso> and their status` |
+| Trace a bug to code | `Show the commits and pull requests linked to bug #567 in project <Contoso>` |
+| Sprint traceability audit | `For all user stories in Sprint 10 for <Contoso Team>, show which ones have linked builds and which don't` |
+
+> [!NOTE]
+> Agent mode and the MCP Server use natural language, so you can adjust these prompts or ask follow-up questions to refine the results.
 
 ## Related content 
 
