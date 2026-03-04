@@ -313,16 +313,16 @@ If you have the [Azure Boards MCP Server](../../mcp-server/mcp-server-overview.m
 
 | Task | Example prompt |
 |------|----------------|
-| Find unlinked items | ```copilot-prompt Find active user stories with no child task links``` |
-| Query for attachments | ```copilot-prompt List bugs that have attached files``` |
-| Check development links | ```copilot-prompt Show work items with no linked commits or pull requests``` |
-| Find heavily linked items | ```copilot-prompt Find work items with more than 3 related links``` |
-| Trace dependency chains | ```copilot-prompt Show all work items in <Contoso> that have predecessor links and list what they depend on``` |
-| Find items with external links | ```copilot-prompt List work items in <Contoso> that have hyperlinks in their links``` |
-| Audit parent-child integrity | ```copilot-prompt Show child work items in <Contoso> whose parent is in the Closed state but the child is still Active``` |
-| Find items linked to test cases | ```copilot-prompt List user stories in the current sprint for <Contoso> that have linked test cases and show the test outcome``` |
-| Identify attachment bloat | ```copilot-prompt Show work items in <Contoso> that have more than 5 attachments``` |
-| Find cross-project links | ```copilot-prompt List work items in <Contoso> that have related links to work items in other projects``` |
+| Find unlinked items | `Find active user stories with no child task links` |
+| Query for attachments | `List bugs that have attached files` |
+| Check development links | `Show work items with no linked commits or pull requests` |
+| Find heavily linked items | `Find work items with more than 3 related links` |
+| Trace dependency chains | `Show all work items in <Contoso> that have predecessor links and list what they depend on` |
+| Find items with external links | `List work items in <Contoso> that have hyperlinks in their links` |
+| Audit parent-child integrity | `Show child work items in <Contoso> whose parent is in the Closed state but the child is still Active` |
+| Find items linked to test cases | `List user stories in the current sprint for <Contoso> that have linked test cases and show the test outcome` |
+| Identify attachment bloat | `Show work items in <Contoso> that have more than 5 attachments` |
+| Find cross-project links | `List work items in <Contoso> that have related links to work items in other projects` |
 
 > [!NOTE]
 > Agent mode and the MCP Server use natural language, so you can adjust these prompts or ask follow-up questions to refine the results.

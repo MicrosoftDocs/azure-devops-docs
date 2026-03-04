@@ -198,16 +198,16 @@ If you configure the [Azure DevOps MCP Server](../../mcp-server/mcp-server-overv
 
 | Task | Example prompt |
 |------|----------------|
-| **Create a feature with children** | ```copilot-prompt Create a feature called "Search improvements" with 3 child user stories in project <Contoso>``` |
-| **List features by state** | ```copilot-prompt Show all active features under epic 1234 in project <Contoso>``` |
-| **Organize hierarchy** | ```copilot-prompt Move user stories 2001, 2002, and 2003 under feature 1500 in <Contoso>``` |
-| **Check rollup** | ```copilot-prompt List all epics in <Contoso> with a count of incomplete child features``` |
-| **Find orphaned stories** | ```copilot-prompt List user stories in <Contoso> that don't have a parent feature``` |
-| **Identify scope creep** | ```copilot-prompt Show features in <Contoso> where child user story count increased in the last 2 weeks``` |
-| **Review epic progress** | ```copilot-prompt For each epic in <Contoso>, show the percentage of child features that are completed``` |
-| **Plan feature breakdown** | ```copilot-prompt Create 5 user stories under feature 1500 in <Contoso> for building a REST API with authentication, CRUD operations, error handling, logging, and tests``` |
-| **Cross-area feature report** | ```copilot-prompt List all active features grouped by area path in project <Contoso>``` |
-| **Find stale features** | ```copilot-prompt Show features in <Contoso> that have been active for more than 90 days with no child items updated in the last 30 days``` |
+| Create a feature with children | `Create a feature called "Search improvements" with 3 child user stories in project <Contoso>` |
+| List features by state | `Show all active features under epic 1234 in project <Contoso>` |
+| Organize hierarchy | `Move user stories 2001, 2002, and 2003 under feature 1500 in <Contoso>` |
+| Check rollup | `List all epics in <Contoso> with a count of incomplete child features` |
+| Find orphaned stories | `List user stories in <Contoso> that don't have a parent feature` |
+| Identify scope creep | `Show features in <Contoso> where child user story count increased in the last 2 weeks` |
+| Review epic progress | `For each epic in <Contoso>, show the percentage of child features that are completed` |
+| Plan feature breakdown | `Create 5 user stories under feature 1500 in <Contoso> for building a REST API with authentication, CRUD operations, error handling, logging, and tests` |
+| Cross-area feature report | `List all active features grouped by area path in project <Contoso>` |
+| Find stale features | `Show features in <Contoso> that have been active for more than 90 days with no child items updated in the last 30 days` |
 
 > [!NOTE]
 > If you're using Visual Studio Code, [agent mode](/visualstudio/ide/copilot-chat-context#agent-mode) is especially helpful for building work item hierarchies.

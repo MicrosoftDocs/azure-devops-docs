@@ -120,16 +120,16 @@ If you have the [Azure Boards MCP Server](../../mcp-server/mcp-server-overview.m
 
 | Task | Example prompt |
 |------|----------------|
-| Add a child task | ```copilot-prompt Add a task called 'Write unit tests' as a child of user story 1234``` |
-| Create multiple subtasks | ```copilot-prompt Create three tasks under bug 5678: reproduce the issue, apply the fix, and verify the fix``` |
-| View child items | ```copilot-prompt Show all child tasks for user story 1234 and their current states``` |
-| Find incomplete tasks | ```copilot-prompt List all tasks in the current sprint that are still in the 'To Do' state``` |
-| Break down a story | ```copilot-prompt Create child tasks for user story <1234> covering design, front-end implementation, back-end implementation, testing, and documentation``` |
-| Check task coverage | ```copilot-prompt List user stories in the current sprint for <Contoso> that have fewer than 2 child tasks``` |
-| Estimate remaining work | ```copilot-prompt Show all incomplete child tasks under user story <1234> with their remaining work hours``` |
-| Reassign child tasks | ```copilot-prompt Reassign all tasks under user story <1234> that are assigned to <Jamal> to <Raisa>``` |
-| Find overloaded stories | ```copilot-prompt Show user stories in the current sprint for <Contoso> that have more than 8 child tasks``` |
-| Track checklist progress | ```copilot-prompt For each user story in the current sprint for <Contoso>, show the count of completed vs total child tasks``` |
+| Add a child task | `Add a task called 'Write unit tests' as a child of user story 1234` |
+| Create multiple subtasks | `Create three tasks under bug 5678: reproduce the issue, apply the fix, and verify the fix` |
+| View child items | `Show all child tasks for user story 1234 and their current states` |
+| Find incomplete tasks | `List all tasks in the current sprint that are still in the 'To Do' state` |
+| Break down a story | `Create child tasks for user story <1234> covering design, front-end implementation, back-end implementation, testing, and documentation` |
+| Check task coverage | `List user stories in the current sprint for <Contoso> that have fewer than 2 child tasks` |
+| Estimate remaining work | `Show all incomplete child tasks under user story <1234> with their remaining work hours` |
+| Reassign child tasks | `Reassign all tasks under user story <1234> that are assigned to <Jamal> to <Raisa>` |
+| Find overloaded stories | `Show user stories in the current sprint for <Contoso> that have more than 8 child tasks` |
+| Track checklist progress | `For each user story in the current sprint for <Contoso>, show the count of completed vs total child tasks` |
 
 > [!NOTE]
 > Agent mode and the MCP Server use natural language, so you can adjust these prompts or ask follow-up questions to refine the results.

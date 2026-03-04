@@ -52,18 +52,18 @@ Visual Studio provides flexibility in how you interact with work items by offeri
 
 | Feature | Description | Benefits |
 |---------|-------------|----------|
-| **Web portal consistency** | Mirrors the **Boards** > **Work Items** page in Azure DevOps | Familiar interface across platforms |
-| **Modern interface** | Updated design with improved usability | Enhanced productivity and user experience |
-| **Latest features** | Access to newest Azure DevOps capabilities | Stay current with platform updates |
-| **Performance optimizations** | Faster loading and better responsiveness | Improved development workflow |
+| Web portal consistency | Mirrors the **Boards** > **Work Items** page in Azure DevOps | Familiar interface across platforms |
+| Modern interface | Updated design with improved usability | Enhanced productivity and user experience |
+| Latest features | Access to newest Azure DevOps capabilities | Stay current with platform updates |
+| Performance optimizations | Faster loading and better responsiveness | Improved development workflow |
 
 ### Legacy view (Deprecated)
 
 | Feature | Description | Considerations |
 |---------|-------------|----------------|
-| **Traditional layout** | Maintains the Work Items page from earlier Visual Studio versions | Limited feature updates |
-| **Familiar interface** | Consistent with previous Visual Studio experiences | might lack newer capabilities |
-| **Transition support** | Helps users migrate from older versions | Temporary solution during migration |
+| Traditional layout | Maintains the Work Items page from earlier Visual Studio versions | Limited feature updates |
+| Familiar interface | Consistent with previous Visual Studio experiences | might lack newer capabilities |
+| Transition support | Helps users migrate from older versions | Temporary solution during migration |
 
 > [!WARNING]
 > The legacy view is deprecated and will be removed in future Visual Studio releases. Plan to transition to the default view to ensure continued access to work item management features.
@@ -104,10 +104,10 @@ If you experience issues when switching between views:
 
 | Issue | Possible Cause | Solution |
 |-------|----------------|----------|
-| **Toggle not visible** | Visual Studio needs updates | Update to the latest Visual Studio 2019 version |
-| **View doesn't change** | Cache or connection issues | Restart Visual Studio and reconnect to your project |
-| **Features missing** | Using legacy view | Switch to default view for full feature access |
-| **Performance issues** | Outdated Visual Studio version | Update Visual Studio and Azure DevOps extensions |
+| Toggle not visible | Visual Studio needs updates | Update to the latest Visual Studio 2019 version |
+| View doesn't change | Cache or connection issues | Restart Visual Studio and reconnect to your project |
+| Features missing | Using legacy view | Switch to default view for full feature access |
+| Performance issues | Outdated Visual Studio version | Update Visual Studio and Azure DevOps extensions |
 
 ### Verification steps
 

@@ -2,14 +2,15 @@
 title: Add and Manage Fields for an Inherited Process
 titleSuffix: Azure DevOps 
 description: Learn how to add and manage fields in the web form of a work item type for an Inheritance process. 
-ms.custom: inherited-process
+ms.custom: inherited-process, copilot-scenario-highlight
 ms.service: azure-devops-boards
 ms.assetid: D6616411-43D4-4A81-8951-772D98BD1569  
 ms.author: chcomley
 author: chcomley
+ai-usage: ai-assisted
 monikerRange: "<=azure-devops"
 ms.topic: how-to
-ms.date: 05/08/2025
+ms.date: 03/03/2026
 ---
 
 # Add and manage fields (Inheritance process)   
@@ -23,6 +24,8 @@ You can customize your work tracking system by adding custom fields or modifying
 To view all fields defined for your organization, including system and inherited fields, see [View work item fields and attributes](../../../boards/work-items/work-item-fields.md#review-fields).
 
 After you add a custom field, you can use it to create [queries](../../../boards/queries/using-queries.md), [charts](../../../report/dashboards/charts.md), or [Analytics views and Power BI reports](../../../report/powerbi/create-quick-report.md) to track and analyze related data.
+
+[!INCLUDE [ai-assistance-mcp-server-tip](../../../includes/ai-assistance-mcp-server-tip.md)]
 
 ## Prerequisites
 
@@ -301,6 +304,28 @@ To delete a custom field, do the following steps:
 
 	![Screenshot shows Delete field, confirmation dialog.](media/process/cpfield-delete-confirmation.png) 
  
+
+<a id="use-ai-assistance"></a>
+
+## Use AI to manage custom fields
+
+[!INCLUDE [ai-assistance-mcp-server-tip](../../../includes/ai-assistance-mcp-server-tip.md)]
+
+If you use GitHub Copilot, the [Azure DevOps MCP Server](../../../mcp-server/mcp-server-overview.md) can help you add, modify, and manage custom fields for your inherited processes through natural language prompts.
+
+### Example prompts for field management
+
+| Task | Example prompt |
+|---|---|
+| Add fields for a tracking scenario | `Add a 'Business Value' integer field and a 'Customer Impact' picklist field with values High, Medium, and Low to my User Story work item type. Place them in a new 'Prioritization' group on the Details page` |
+| Create a cascading picklist | `I need a 'Category' picklist field and a 'Subcategory' picklist on my Bug work item type where the subcategory values depend on the selected category. Walk me through the best approach since cascading picklists aren't natively supported` |
+| Audit custom fields across processes | `List all custom fields I've added to my inherited process, which work item types each field is used on, and whether any fields are unused or duplicated across different WITs` |
+| Relabel inherited fields | `Rename the 'Story Points' field label to 'Effort Points' and the 'Activity' field to 'Work Category' on my Task work item type without changing the underlying field references` |
+| Clean up deprecated fields | `I have 5 custom fields on my Bug work item type that we no longer use. Walk me through hiding them from the form, checking if any rules or queries reference them, and safely deleting the ones that are truly orphaned` |
+| Set up identity and rich-text fields | `Add an 'Approved By' identity field and a 'Release Notes' rich-text HTML field to my Feature work item type. Configure a rule that makes 'Approved By' required when the state changes to Done` |
+
+> [!TIP]
+> For the best results, use these prompts in agent mode with the Azure DevOps MCP Server connected. Customize the prompts with your specific process name, work item types, or field requirements.
 
 ## Related content  
 

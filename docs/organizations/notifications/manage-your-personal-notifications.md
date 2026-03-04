@@ -4,11 +4,12 @@ titleSuffix: Azure DevOps
 description: Set up and manage personal notifications in Azure DevOps and receive messages when changes occur to source code, git, work items, and builds.
 ms.subservice: azure-devops-notifications
 ms.assetid: 644687b3-e30e-46b0-8d3e-3d4a4e34d13a
-ms.custom: cross-project
+ms.custom: cross-project, copilot-scenario-highlight
 ms.topic: how-to
 ms.author: chcomley
 author: chcomley
-ms.date: 05/13/2025
+ai-usage: ai-assisted
+ms.date: 03/03/2026
 monikerRange: '<= azure-devops'
 #customer intent: As a developer, I want to manage my personal notifications in Azure DevOps, so I can receive messages when changes occur to source code, git, work items, and builds.
 ---
@@ -31,6 +32,8 @@ For information about team and project-level notifications, see [Team and projec
 
 [!INCLUDE [note-smtp-server](includes/note-smtp-server.md)]
 
+[!INCLUDE [ai-assistance-mcp-server-tip](../../includes/ai-assistance-mcp-server-tip.md)]
+
 ## Prerequisites
 
 [!INCLUDE [prerequisites-project-member-only](../../includes/prerequisites-project-member-only.md)]
@@ -41,11 +44,11 @@ The following table lists examples of events for which you might receive persona
 
 | Category | Notification triggers |
 |----------|-----------------------|
-| **Work item** | - You're assigned a work item <br> - You're unassigned from a work item <br> - Comments are added/changed on a work item to which you're assigned |
-| **Code reviews** | - A code review to which you're assigned changes <br> - A code review to which you're assigned completes |
-| **Pull request** | - You're added or removed as a reviewer on a pull request <br> - A pull request to which you're assigned fails to build <br> - Comments are added/changed on a pull request to which you're assigned |
-| **Code under source control** | - A code file is added to a project under version or source control <br> - A commit is pushed to a code file under version or source control |
-| **Build** | - A build succeeds <br> - A build fails |
+| Work item | - You're assigned a work item <br> - You're unassigned from a work item <br> - Comments are added/changed on a work item to which you're assigned |
+| Code reviews | - A code review to which you're assigned changes <br> - A code review to which you're assigned completes |
+| Pull request | - You're added or removed as a reviewer on a pull request <br> - A pull request to which you're assigned fails to build <br> - Comments are added/changed on a pull request to which you're assigned |
+| Code under source control | - A code file is added to a project under version or source control <br> - A commit is pushed to a code file under version or source control |
+| Build | - A build succeeds <br> - A build fails |
 
 Follow these steps to view your personal notifications:
 
@@ -53,11 +56,11 @@ Follow these steps to view your personal notifications:
 
 1. Sign in to your organization (`https://dev.azure.com/<organization>`).
 
-1. Select **User settings** :::image type="icon" source="../../media/icons/user-settings-gear.png":::, and then select **Notifications**:
+1. Select User settings :::image type="icon" source="../../media/icons/user-settings-gear.png":::, and then select Notifications:
 
    :::image type="content" source="media/personal-notifications-preview.png" alt-text="Screenshot that shows how to select the User settings, Notifications option in Azure DevOps.":::
 
-   Your personal **Notifications** page opens:
+   Your personal Notifications page opens:
 
    :::image type="content" source="media/unsubscribe-personal-notifications-preview.png" alt-text="Screenshot showing personal notification subscriptions in Azure DevOps." lightbox="media/unsubscribe-personal-notifications-preview.png":::
 
@@ -66,11 +69,11 @@ Follow these steps to view your personal notifications:
 
 1. Sign in to your organization (`https://dev.azure.com/<organization>`).
 
-1. Open **User settings**, and then select **Notification settings**:
+1. Open User settings, and then select Notification settings:
 
    :::image type="content" source="media/nav-personal-notifications-hub-newnav.png" alt-text="Screenshot that shows how to select the User settings, Notifications option in earlier versions of Azure DevOps.":::
 
-   Your personal **Notifications** page opens:
+   Your personal Notifications page opens:
 
    :::image type="content" source="media/unsubscribe-personal-notifications.png" border="false" alt-text="Screenshot showing personal notification subscriptions in earlier versions of Azure DevOps." lightbox="media/unsubscribe-personal-notifications.png":::
 
@@ -86,7 +89,7 @@ Custom personal notification subscriptions let you identify precise criteria abo
 
 Keep in mind that custom notification subscriptions aren't the same as default notification subscriptions. A default notification sends email only to users or groups directly associated with an event. Custom notifications enable you to define the set of message recipients.
 
-1. From your **Notifications** page, select **New subscription**:
+1. From your Notifications page, select New subscription:
 
    ::: moniker range=" azure-devops"
 
@@ -99,7 +102,7 @@ Keep in mind that custom notification subscriptions aren't the same as default n
 
    ::: moniker-end  
 
-1. Select the **Category** and the **Template** type to use in the new subscription, and then select **Next**. For a list of supported templates, see [Default and supported notifications](oob-built-in-notifications.md).
+1. Select the Category and the Template type to use in the new subscription, and then select Next. For a list of supported templates, see [Default and supported notifications](oob-built-in-notifications.md).
 
    The following example shows a subscription to receive notifications when a pull request is created within a specific project:
 
@@ -134,7 +137,7 @@ Keep in mind that custom notification subscriptions aren't the same as default n
    > [!NOTE]
    > The fields available for filtering event criteria differ depending on the category and template you select. For more information about event types, see [Supported event types](oob-supported-event-types.md).
 
-1. Select **Finish**. The new notification subscription appears in the list under the category you selected:
+1. Select Finish. The new notification subscription appears in the list under the category you selected:
 
    ::: moniker range=" azure-devops"
 
@@ -148,6 +151,28 @@ Keep in mind that custom notification subscriptions aren't the same as default n
    ::: moniker-end  
 
 [!INCLUDE [opt-out-notification](includes/opt-out-notification.md)]
+
+<a id="use-ai-assistance"></a>
+
+## Use AI to manage personal notifications
+
+[!INCLUDE [ai-assistance-mcp-server-tip](../../includes/ai-assistance-mcp-server-tip.md)]
+
+If you use GitHub Copilot, the [Azure DevOps MCP Server](../../mcp-server/mcp-server-overview.md) can help you configure and fine-tune your personal notification settings through natural language prompts.
+
+### Example prompts for personal notification management
+
+| Task | Example prompt |
+|---|---|
+| Cut notification overload | `I'm getting too many Azure DevOps notification emails. Show me my current personal subscriptions and recommend which ones to disable or consolidate so I only get notified about events that need my direct action` |
+| Track critical work item changes | `Set up a personal notification that alerts me whenever a work item with Priority 1 is created, reassigned, or moved to the Resolved state in any project I'm a member of` |
+| Monitor PR activity in specific repos | `Create a personal notification subscription that sends me an email whenever a pull request is created or updated in the main branch of our API and frontend repositories` |
+| Consolidate cross-project alerts | `I work across four Azure DevOps projects. Help me set up personal notifications so I get a single consolidated view of build failures and blocked pull requests across all of them` |
+| Watch for deployment-related changes | `I want to be notified when any release pipeline targeting our production environment fails or is manually intervened. Walk me through creating a personal subscription with the right filter criteria` |
+| Temporarily reduce notifications | `I'm going into a focus sprint and want to disable all non-critical personal notifications for the next two weeks, keeping only Severity 1 bug assignments and failed builds. Show me how to adjust my subscriptions` |
+
+> [!TIP]
+> For the best results, use these prompts in agent mode with the Azure DevOps MCP Server connected. Customize the prompts with your specific projects, repos, or notification preferences.
 
 ## Related content
 

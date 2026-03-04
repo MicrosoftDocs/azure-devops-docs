@@ -36,8 +36,8 @@ This article shows you as a member of the **Project Collection Administrators** 
 
 |Category  | Requirements |
 |-------------|-------------|
-| **Permissions** | Member of the [Project Collection Administrators](look-up-project-collection-administrators.md) group. The creator of the organization or collection is automatically a member of this group. |
-| **Directory services** | Security groups defined in Microsoft Entra ID or Active Directory before being added to Azure DevOps. For more information, see [Add an Active Directory / Microsoft Entra group to a built-in security group](add-ad-aad-built-in-security-groups.md). |
+| Permissions | Member of the [Project Collection Administrators](look-up-project-collection-administrators.md) group. The creator of the organization or collection is automatically a member of this group. |
+| Directory services | Security groups defined in Microsoft Entra ID or Active Directory before being added to Azure DevOps. For more information, see [Add an Active Directory / Microsoft Entra group to a built-in security group](add-ad-aad-built-in-security-groups.md). |
 
 > [!NOTE]
 > Users with **Stakeholder** access can't access certain features even if they have permissions to those features. For more information, see [Stakeholder access quick reference](stakeholder-access.md).

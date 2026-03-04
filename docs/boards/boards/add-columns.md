@@ -226,16 +226,16 @@ If you have the [Azure Boards MCP Server](../../mcp-server/mcp-server-overview.m
 
 | Task | Example prompt |
 |------|----------------|
-| View items in a column | ```copilot-prompt Show me all work items currently in the 'In Progress' column on my board``` |
-| Find items by state | ```copilot-prompt List all user stories in the 'Active' state for the <Contoso> project``` |
-| Move items between states | ```copilot-prompt Update user story 1234 to the 'Resolved' state``` |
-| Analyze column distribution | ```copilot-prompt How many work items are in each workflow state for my team's backlog?``` |
-| Detect bottlenecks | ```copilot-prompt Show the count of work items per state in the current sprint for <Contoso> and highlight states with more than 5 items``` |
-| Find column aging | ```copilot-prompt List work items in <Contoso> that have been in the Active state for more than 10 days``` |
-| Track WIP limits | ```copilot-prompt Count the number of active user stories assigned to each team member in area path <Contoso\\Frontend>``` |
-| Identify blocked flow | ```copilot-prompt Show work items in <Contoso> that are in the Resolved state but have unresolved child tasks``` |
-| Review done criteria | ```copilot-prompt List user stories in <Contoso> that moved to Closed in the last week without any linked pull requests``` |
-| Monitor cycle time | ```copilot-prompt For user stories closed this sprint in <Contoso>, show how many days each spent in the Active state``` |
+| View items in a column | `Show me all work items currently in the 'In Progress' column on my board` |
+| Find items by state | `List all user stories in the 'Active' state for the <Contoso> project` |
+| Move items between states | `Update user story 1234 to the 'Resolved' state` |
+| Analyze column distribution | `How many work items are in each workflow state for my team's backlog?` |
+| Detect bottlenecks | `Show the count of work items per state in the current sprint for <Contoso> and highlight states with more than 5 items` |
+| Find column aging | `List work items in <Contoso> that have been in the Active state for more than 10 days` |
+| Track WIP limits | `Count the number of active user stories assigned to each team member in area path <Contoso\\Frontend>` |
+| Identify blocked flow | `Show work items in <Contoso> that are in the Resolved state but have unresolved child tasks` |
+| Review done criteria | `List user stories in <Contoso> that moved to Closed in the last week without any linked pull requests` |
+| Monitor cycle time | `For user stories closed this sprint in <Contoso>, show how many days each spent in the Active state` |
 
 > [!NOTE]
 > Agent mode and the MCP Server use natural language, so you can adjust these prompts or ask follow-up questions to refine the results.

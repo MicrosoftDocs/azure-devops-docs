@@ -37,8 +37,8 @@ To sign up for all Azure DevOps Services, see [Sign up, sign in to Azure DevOps]
 
 | Category | Requirements |
 |----------|--------------|
-| **Browser** | Latest version of Microsoft Edge, Safari (macOS), Firefox, or Chrome. |
-| **Account** | A Microsoft account, Microsoft Entra organizational account, or GitHub account. |
+| Browser | Latest version of Microsoft Edge, Safari (macOS), Firefox, or Chrome. |
+| Account | A Microsoft account, Microsoft Entra organizational account, or GitHub account. |
 
 ## Sign up
 

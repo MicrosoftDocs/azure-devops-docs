@@ -363,16 +363,16 @@ If you configure the [Azure DevOps MCP Server](../../mcp-server/mcp-server-overv
 
 | Task | Example prompt |
 |------|----------------|
-| **Find items mentioning a keyword in history** | ```copilot-prompt Show me all work items whose history contains "regression" in project <Contoso>``` |
-| **Find reopened items** | ```copilot-prompt List bugs that were closed and then reactivated in the current sprint for <Contoso>``` |
-| **Audit changes by a person** | ```copilot-prompt Show work items where <Jamal> made changes in the last 30 days in project <Contoso>``` |
-| **Find items with discussion activity** | ```copilot-prompt List user stories with discussion comments added this week in <Contoso>``` |
-| **Track priority changes** | ```copilot-prompt Show work items in <Contoso> where priority was changed from 2 or lower to 1 in the last 14 days``` |
-| **Audit reassignments** | ```copilot-prompt List work items in the current sprint for <Contoso> where the Assigned To field changed more than twice``` |
-| **Find reverted items** | ```copilot-prompt Show work items in <Contoso> that moved from Resolved back to Active in the last 30 days and who made the change``` |
-| **Review sprint changes** | ```copilot-prompt List work items in <Contoso> where the iteration path changed during the current sprint``` |
-| **Track scope changes** | ```copilot-prompt Show work items added to or removed from the current sprint for <Contoso> after the sprint start date``` |
-| **Audit field modifications** | ```copilot-prompt List work items in <Contoso> where the area path was changed in the last week and show the old and new values``` |
+| Find items mentioning a keyword in history | `Show me all work items whose history contains "regression" in project <Contoso>` |
+| Find reopened items | `List bugs that were closed and then reactivated in the current sprint for <Contoso>` |
+| Audit changes by a person | `Show work items where <Jamal> made changes in the last 30 days in project <Contoso>` |
+| Find items with discussion activity | `List user stories with discussion comments added this week in <Contoso>` |
+| Track priority changes | `Show work items in <Contoso> where priority was changed from 2 or lower to 1 in the last 14 days` |
+| Audit reassignments | `List work items in the current sprint for <Contoso> where the Assigned To field changed more than twice` |
+| Find reverted items | `Show work items in <Contoso> that moved from Resolved back to Active in the last 30 days and who made the change` |
+| Review sprint changes | `List work items in <Contoso> where the iteration path changed during the current sprint` |
+| Track scope changes | `Show work items added to or removed from the current sprint for <Contoso> after the sprint start date` |
+| Audit field modifications | `List work items in <Contoso> where the area path was changed in the last week and show the old and new values` |
 
 > [!NOTE]
 > If you're using Visual Studio Code, [agent mode](/visualstudio/ide/copilot-chat-context#agent-mode) is especially helpful for complex history and audit queries.

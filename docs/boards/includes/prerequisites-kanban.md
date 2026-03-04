@@ -12,8 +12,8 @@ A board is created when you create a project or add a team. Each team has access
 
 | Category | Requirements |
 |--------------|-------------|
-| **Access levels** | - [Project member](../../organizations/security/add-users-team-project.md). <br> - To add work items and use all board features: At least [**Basic** access](../../organizations/security/access-levels.md). <br> - Users with **Stakeholder** access: <br> - Public project: Full access to board features, similar to users with Basic access. <br> - Private project: Can add work items and update status through drag-and-drop but can't update fields displayed on cards, and can add tasks and change task status. |
-| **Permissions** | To view or modify work items: **View work items in this node** and **Edit work items in this node** permissions set to **Allow**. By default, the **Contributors** group has these permissions. For more information, see [Set permissions and access for work tracking](../../organizations/security/set-permissions-access-work-tracking.md). |
+| Access levels | - [Project member](../../organizations/security/add-users-team-project.md). <br> - To add work items and use all board features: At least [**Basic** access](../../organizations/security/access-levels.md). <br> - Users with **Stakeholder** access: <br> - Public project: Full access to board features, similar to users with Basic access. <br> - Private project: Can add work items and update status through drag-and-drop but can't update fields displayed on cards, and can add tasks and change task status. |
+| Permissions | To view or modify work items: **View work items in this node** and **Edit work items in this node** permissions set to **Allow**. By default, the **Contributors** group has these permissions. For more information, see [Set permissions and access for work tracking](../../organizations/security/set-permissions-access-work-tracking.md). |
 
 ::: moniker-end
 
@@ -21,8 +21,8 @@ A board is created when you create a project or add a team. Each team has access
 
 | Category | Requirements |
 |--------------|-------------|
-| **Access levels** | - [Project member](../../organizations/security/add-users-team-project.md). <br> - To add work items and use all board features: At least [**Basic** access](../../organizations/security/access-levels.md). <br> - Users with **Stakeholder** access for a private project can add work items and update status through drag-and-drop but can't update fields displayed on cards. They can add tasks and change task status. |
-| **Permissions** | To view or modify work items: **View work items in this node** and **Edit work items in this node** permissions set to **Allow**. By default, the **Contributors** group has these permissions. For more information, see [Set permissions and access for work tracking](../../organizations/security/set-permissions-access-work-tracking.md). |
+| Access levels | - [Project member](../../organizations/security/add-users-team-project.md). <br> - To add work items and use all board features: At least [**Basic** access](../../organizations/security/access-levels.md). <br> - Users with **Stakeholder** access for a private project can add work items and update status through drag-and-drop but can't update fields displayed on cards. They can add tasks and change task status. |
+| Permissions | To view or modify work items: **View work items in this node** and **Edit work items in this node** permissions set to **Allow**. By default, the **Contributors** group has these permissions. For more information, see [Set permissions and access for work tracking](../../organizations/security/set-permissions-access-work-tracking.md). |
 
 ::: moniker-end
 

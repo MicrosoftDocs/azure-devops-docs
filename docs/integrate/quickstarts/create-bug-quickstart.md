@@ -8,8 +8,8 @@ ms.topic: how-to
 monikerRange: '<= azure-devops'
 ms.author: chcomley
 author: chcomley
-ms.date: 02/24/2026
-ms.custom: quickstart, devx-track-dotnet, pat-reduction
+ms.date: 03/02/2026
+ms.custom: quickstart, devx-track-dotnet, pat-reduction, copilot-scenario-highlight
 ---
 
 # Create a bug in Azure DevOps Services using .NET client libraries
@@ -17,6 +17,8 @@ ms.custom: quickstart, devx-track-dotnet, pat-reduction
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 Creating work items programmatically is a common automation scenario in Azure DevOps Services. This article shows how to create a bug (or any work item) using .NET client libraries with modern authentication methods.
+
+[!INCLUDE [ai-assistance-mcp-server-tip](../../includes/ai-assistance-mcp-server-tip.md)]
 
 ## Prerequisites
 
@@ -37,9 +39,9 @@ This article demonstrates multiple authentication methods to suit different scen
 For production applications with user interaction, use Microsoft Entra ID authentication:
 
 ```xml
-<PackageReference Include="Microsoft.TeamFoundationServer.Client" Version="19.225.1" />
-<PackageReference Include="Microsoft.VisualStudio.Services.InteractiveClient" Version="19.225.1" />
-<PackageReference Include="Microsoft.Identity.Client" Version="4.61.3" />
+<PackageReference Include="Microsoft.TeamFoundationServer.Client" Version="19.232.1" />
+<PackageReference Include="Microsoft.VisualStudio.Services.InteractiveClient" Version="19.232.1" />
+<PackageReference Include="Microsoft.Identity.Client" Version="4.67.2" />
 ```
 
 ### Service Principal authentication (Recommended for automation)
@@ -47,8 +49,8 @@ For production applications with user interaction, use Microsoft Entra ID authen
 For automated scenarios, CI/CD pipelines, and server applications:
 
 ```xml
-<PackageReference Include="Microsoft.TeamFoundationServer.Client" Version="19.225.1" />
-<PackageReference Include="Microsoft.Identity.Client" Version="4.61.3" />
+<PackageReference Include="Microsoft.TeamFoundationServer.Client" Version="19.232.1" />
+<PackageReference Include="Microsoft.Identity.Client" Version="4.67.2" />
 ```
 
 ### Managed Identity authentication (Recommended for Azure-hosted apps)
@@ -56,8 +58,8 @@ For automated scenarios, CI/CD pipelines, and server applications:
 For applications running on Azure services (Functions, App Service, etc.):
 
 ```xml
-<PackageReference Include="Microsoft.TeamFoundationServer.Client" Version="19.225.1" />
-<PackageReference Include="Azure.Identity" Version="1.10.4" />
+<PackageReference Include="Microsoft.TeamFoundationServer.Client" Version="19.232.1" />
+<PackageReference Include="Azure.Identity" Version="1.13.1" />
 ```
 
 ### Personal Access Token authentication
@@ -65,7 +67,7 @@ For applications running on Azure services (Functions, App Service, etc.):
 For development and testing scenarios:
 
 ```xml
-<PackageReference Include="Microsoft.TeamFoundationServer.Client" Version="19.225.1" />
+<PackageReference Include="Microsoft.TeamFoundationServer.Client" Version="19.232.1" />
 ```
 
 ## C# code examples
@@ -73,6 +75,9 @@ For development and testing scenarios:
 The following examples show how to create work items using different authentication methods.
 
 ### Example 1: Microsoft Entra ID authentication (Interactive)
+
+> [!NOTE]
+> The `VssAadCredential` class used in this example requires the `Microsoft.VisualStudio.Services.InteractiveClient` package and targets .NET Framework. For .NET Core/.NET 5+ applications, use the MSAL-based approach shown in [Example 2 (Service Principal)](#example-2-service-principal-authentication-automated-scenarios) or [Example 3 (Managed Identity)](#example-3-managed-identity-authentication-azure-hosted-apps) with `VssOAuthAccessTokenCredential`.
 
 ```cs
 // NuGet packages:
@@ -197,7 +202,7 @@ public class ServicePrincipalBugCreator
     /// <param name="orgName">Your Azure DevOps organization name</param>
     /// <param name="clientId">Service principal client ID</param>
     /// <param name="clientSecret">Service principal client secret</param>
-    /// <param name="tenantId">Azure AD tenant ID</param>
+    /// <param name="tenantId">Microsoft Entra tenant ID</param>
     public ServicePrincipalBugCreator(string orgName, string clientId, string clientSecret, string tenantId)
     {
         this.uri = new Uri($"https://dev.azure.com/{orgName}");
@@ -480,7 +485,7 @@ class Program
         var bug = await bugCreator.CreateBugAsync(
             project: "your-project-name",
             title: "Authorization Errors with Microsoft Accounts",
-            reproSteps: "Our authorization logic needs to allow for users with Microsoft accounts (formerly Live IDs) - https://docs.microsoft.com/library/live/hh826547.aspx",
+            reproSteps: "Our authorization logic needs to allow for users with Microsoft accounts (formerly Live IDs) - https://learn.microsoft.com/entra/identity-platform/",
             priority: 1,
             severity: "2 - High"
         );
@@ -522,10 +527,16 @@ class Program
 ```cs
 public class BugReportFunction
 {
-    [FunctionName("CreateBugReport")]
-    public static async Task<IActionResult> Run(
-        [HttpTrigger(AuthorizationLevel.Function, "post")] HttpRequest req,
-        ILogger log)
+    private readonly ILogger<BugReportFunction> _logger;
+
+    public BugReportFunction(ILogger<BugReportFunction> logger)
+    {
+        _logger = logger;
+    }
+
+    [Function("CreateBugReport")]
+    public async Task<HttpResponseData> Run(
+        [HttpTrigger(AuthorizationLevel.Function, "post")] HttpRequestData req)
     {
         var bugCreator = new ManagedIdentityBugCreator("your-organization-name");
         
@@ -536,8 +547,10 @@ public class BugReportFunction
             priority: 3,
             severity: "4 - Low"
         );
-        
-        return new OkObjectResult($"Bug created: {bug.Id}");
+
+        var response = req.CreateResponse(System.Net.HttpStatusCode.OK);
+        await response.WriteStringAsync($"Bug created: {bug.Id}");
+        return response;
     }
 }
 ```
@@ -648,6 +661,24 @@ When creating work items, you'll commonly use these fields:
 - **Slow API responses**: Check network connectivity and Azure DevOps service status
 - **Memory usage**: Dispose of connections and clients properly
 - **Rate limiting**: Implement appropriate delays between API calls
+
+<a id="use-ai-assistance"></a>
+
+## Use AI to create work items programmatically
+
+If you have the [Azure DevOps MCP Server](../../mcp-server/mcp-server-overview.md) connected to your AI agent in agent mode, you can use natural language prompts to generate code for creating work items.
+
+| Task | Example prompt |
+|------|----------------|
+| Generate bug creation code | `Write a C# console app that creates a bug in Azure DevOps project <Contoso> using Microsoft Entra ID authentication and the .NET client libraries` |
+| Create with custom fields | `Write code to create a work item with priority, severity, and repro steps fields in Azure DevOps using a managed identity` |
+| Batch create work items | `Show me how to create multiple bugs in Azure DevOps from a CSV file using the .NET client libraries with service principal authentication` |
+| Create from Azure Function | `Generate an Azure Function that creates bugs in Azure DevOps project <Contoso> using a system-assigned managed identity` |
+| Add attachments | `Write C# code to create a bug in Azure DevOps and attach a log file using the .NET client libraries` |
+| Create linked work items | `Write code to create a bug in Azure DevOps and link it to an existing user story using the .NET client libraries` |
+
+> [!NOTE]
+> Agent mode and the MCP Server use natural language, so you can adjust these prompts or ask follow-up questions to refine the results.
 
 ## Next steps
 
