@@ -6,4 +6,4 @@ ms.date: 3/5/2026
 ms.topic: include
 ---
 
-- [Condensed Views](#condensed-views)
+- [Condensed card display on Kanban and sprint boards](#condensed-card-display-on-kanban-and-sprint-boards)

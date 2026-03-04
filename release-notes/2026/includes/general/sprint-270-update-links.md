@@ -7,3 +7,4 @@ ms.topic: include
 ---
 
 - [Retirement of Global Personal Access Tokens in Azure DevOps](#retirement-of-global-personal-access-tokens-in-azure-devops)
+- [Auto-complete pull requests by default](#auto-complete-pull-requests-by-default)

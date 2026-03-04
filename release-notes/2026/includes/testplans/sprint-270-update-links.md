@@ -6,4 +6,4 @@ ms.date: 3/5/2026
 ms.topic: include
 ---
 
-- [Dedicated user interface entry point for exploratory sessions](#dedicated-user-interface-entry-point-for)
+- [New entry point for exploratory sessions](#new-entry-point-for-exploratory-sessions)
