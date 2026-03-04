@@ -17,19 +17,25 @@ Check out the release notes for details.
 ### General
 [!INCLUDE [sprint-270-update-links](includes/general/sprint-270-update-links.md)]
 
-### Boards
+### Azure Boards
 [!INCLUDE [sprint-270-update-links](includes/boards/sprint-270-update-links.md)]
 
-### Test Plans
+### Azure Repos
+[!INCLUDE [sprint-270-update-links](includes/repos/sprint-270-update-links.md)]
+
+### Azure Test Plans
 [!INCLUDE [sprint-270-update-links](includes/testplans/sprint-270-update-links.md)]
 
 ## General
 [!INCLUDE [sprint-270-update](includes/general/sprint-270-update.md)]
 
-## Boards
+## Azure Boards
 [!INCLUDE [sprint-270-update](includes/boards/sprint-270-update.md)]
 
-## Test Plans
+## Azure Repos
+[!INCLUDE [sprint-270-update](includes/repos/sprint-270-update.md)]
+
+## Azure Test Plans
 [!INCLUDE [sprint-270-update](includes/testplans/sprint-270-update.md)]
 
 ## Next steps
