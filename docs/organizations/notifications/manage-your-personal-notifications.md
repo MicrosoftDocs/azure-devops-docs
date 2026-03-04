@@ -158,7 +158,7 @@ Keep in mind that custom notification subscriptions aren't the same as default n
 
 [!INCLUDE [ai-assistance-mcp-server-tip](../../includes/ai-assistance-mcp-server-tip.md)]
 
-If you use GitHub Copilot, the [Azure DevOps MCP Server](../../mcp-server/overview.md) can help you configure and fine-tune your personal notification settings through natural language prompts.
+If you use GitHub Copilot, the [Azure DevOps MCP Server](../../mcp-server/mcp-server-overview.md) can help you configure and fine-tune your personal notification settings through natural language prompts.
 
 ### Example prompts for personal notification management
 

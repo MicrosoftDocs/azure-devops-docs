@@ -330,7 +330,7 @@ az devops admin banner update --id f5f5f5f5-aaaa-bbbb-cccc-d6d6d6d6d6d6 --messag
 
 [!INCLUDE [ai-assistance-mcp-server-tip](../../includes/ai-assistance-mcp-server-tip.md)]
 
-If you use GitHub Copilot, the [Azure DevOps MCP Server](../../mcp-server/overview.md) can help you create, update, and manage organization-wide information banners through natural language prompts.
+If you use GitHub Copilot, the [Azure DevOps MCP Server](../../mcp-server/mcp-server-overview.md) can help you create, update, and manage organization-wide information banners through natural language prompts.
 
 ### Example prompts for banner management
 

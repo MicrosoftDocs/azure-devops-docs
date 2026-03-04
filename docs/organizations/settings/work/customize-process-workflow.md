@@ -388,7 +388,7 @@ For example, if you customize the Bug workflow to include a Triaged state, the v
 
 [!INCLUDE [ai-assistance-mcp-server-tip](../../../includes/ai-assistance-mcp-server-tip.md)]
 
-If you use GitHub Copilot, the [Azure DevOps MCP Server](../../../mcp-server/overview.md) can help you design, add, and manage workflow states for your inherited processes through natural language prompts.
+If you use GitHub Copilot, the [Azure DevOps MCP Server](../../../mcp-server/mcp-server-overview.md) can help you design, add, and manage workflow states for your inherited processes through natural language prompts.
 
 ### Example prompts for workflow customization
 

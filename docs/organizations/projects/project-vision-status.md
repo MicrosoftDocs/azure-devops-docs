@@ -251,7 +251,7 @@ For projects that selected TFVC for version control, the README.md file needs to
 
 [!INCLUDE [ai-assistance-mcp-server-tip](../../includes/ai-assistance-mcp-server-tip.md)]
 
-If you use GitHub Copilot, the [Azure DevOps MCP Server](../../mcp-server/overview.md) can help you set up and maintain your project summary page through natural language prompts.
+If you use GitHub Copilot, the [Azure DevOps MCP Server](../../mcp-server/mcp-server-overview.md) can help you set up and maintain your project summary page through natural language prompts.
 
 ### Example prompts for project summary management
 

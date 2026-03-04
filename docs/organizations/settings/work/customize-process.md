@@ -230,7 +230,7 @@ For more information, see [Change a project's process](manage-process.md#migrate
 
 [!INCLUDE [ai-assistance-mcp-server-tip](../../../includes/ai-assistance-mcp-server-tip.md)]
 
-If you use GitHub Copilot, the [Azure DevOps MCP Server](../../../mcp-server/overview.md) can help you customize inherited processes for your projects through natural language prompts.
+If you use GitHub Copilot, the [Azure DevOps MCP Server](../../../mcp-server/mcp-server-overview.md) can help you customize inherited processes for your projects through natural language prompts.
 
 ### Example prompts for process customization
 

@@ -484,7 +484,7 @@ You can quickly generate [queries](../../boards/queries/using-queries.md) to vie
 
 [!INCLUDE [ai-assistance-mcp-server-tip](../../includes/ai-assistance-mcp-server-tip.md)]
 
-If you use GitHub Copilot, the [Azure DevOps MCP Server](../../mcp-server/overview.md) can help you design area path hierarchies, assign teams, and organize work items through natural language prompts.
+If you use GitHub Copilot, the [Azure DevOps MCP Server](../../mcp-server/mcp-server-overview.md) can help you design area path hierarchies, assign teams, and organize work items through natural language prompts.
 
 ### Example prompts for area path management
 

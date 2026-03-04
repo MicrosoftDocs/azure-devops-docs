@@ -311,7 +311,7 @@ To delete a custom field, do the following steps:
 
 [!INCLUDE [ai-assistance-mcp-server-tip](../../../includes/ai-assistance-mcp-server-tip.md)]
 
-If you use GitHub Copilot, the [Azure DevOps MCP Server](../../../mcp-server/overview.md) can help you add, modify, and manage custom fields for your inherited processes through natural language prompts.
+If you use GitHub Copilot, the [Azure DevOps MCP Server](../../../mcp-server/mcp-server-overview.md) can help you add, modify, and manage custom fields for your inherited processes through natural language prompts.
 
 ### Example prompts for field management
 

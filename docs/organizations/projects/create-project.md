@@ -328,7 +328,7 @@ You can add Git (distributed) or TFVC (centralized) repositories to your project
 
 [!INCLUDE [ai-assistance-mcp-server-tip](../../includes/ai-assistance-mcp-server-tip.md)]
 
-If you use GitHub Copilot, the [Azure DevOps MCP Server](../../mcp-server/overview.md) can help you create and configure Azure DevOps projects through natural language prompts.
+If you use GitHub Copilot, the [Azure DevOps MCP Server](../../mcp-server/mcp-server-overview.md) can help you create and configure Azure DevOps projects through natural language prompts.
 
 ### Example prompts for project creation
 

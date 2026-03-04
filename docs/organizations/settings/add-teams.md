@@ -360,7 +360,7 @@ For more information on setting permissions and access for select users, see [Se
 
 [!INCLUDE [ai-assistance-mcp-server-tip](../../includes/ai-assistance-mcp-server-tip.md)]
 
-If you use GitHub Copilot, the [Azure DevOps MCP Server](../../mcp-server/overview.md) can help you create teams, configure their settings, and manage team membership through natural language prompts.
+If you use GitHub Copilot, the [Azure DevOps MCP Server](../../mcp-server/mcp-server-overview.md) can help you create teams, configure their settings, and manage team membership through natural language prompts.
 
 ### Example prompts for team management
 

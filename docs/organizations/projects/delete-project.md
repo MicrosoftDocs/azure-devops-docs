@@ -284,7 +284,7 @@ A: Wait 28 days before the project is permanently deleted.
 
 [!INCLUDE [ai-assistance-mcp-server-tip](../../includes/ai-assistance-mcp-server-tip.md)]
 
-If you use GitHub Copilot, the [Azure DevOps MCP Server](../../mcp-server/overview.md) can help you safely delete, restore, and clean up Azure DevOps projects through natural language prompts.
+If you use GitHub Copilot, the [Azure DevOps MCP Server](../../mcp-server/mcp-server-overview.md) can help you safely delete, restore, and clean up Azure DevOps projects through natural language prompts.
 
 ### Example prompts for project deletion and restoration
 

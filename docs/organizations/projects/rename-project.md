@@ -117,7 +117,7 @@ If you created custom Analytics views using the old project name, you need to up
 
 [!INCLUDE [ai-assistance-mcp-server-tip](../../includes/ai-assistance-mcp-server-tip.md)]
 
-If you use GitHub Copilot, the [Azure DevOps MCP Server](../../mcp-server/overview.md) can help you plan and execute project renames and handle all the follow-up actions through natural language prompts.
+If you use GitHub Copilot, the [Azure DevOps MCP Server](../../mcp-server/mcp-server-overview.md) can help you plan and execute project renames and handle all the follow-up actions through natural language prompts.
 
 ### Example prompts for renaming projects
 

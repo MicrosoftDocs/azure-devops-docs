@@ -538,7 +538,7 @@ When `A work item state changes to` *Resolved* Then `Copy the value from `*Creat
 
 [!INCLUDE [ai-assistance-mcp-server-tip](../../../includes/ai-assistance-mcp-server-tip.md)]
 
-If you use GitHub Copilot, the [Azure DevOps MCP Server](../../../mcp-server/overview.md) can help you design and implement workflow state rules through natural language prompts.
+If you use GitHub Copilot, the [Azure DevOps MCP Server](../../../mcp-server/mcp-server-overview.md) can help you design and implement workflow state rules through natural language prompts.
 
 ### Example prompts for workflow rules
 
