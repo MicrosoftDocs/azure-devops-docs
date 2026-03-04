@@ -114,11 +114,11 @@ Select the Current UI tab. The New Teams Page UI is only available for Azure Dev
 1. Sign in to your organization (```https://dev.azure.com/{Your_Organization}```).
 2. Select Project settings > Teams.   
 
-	![Screenshot of Open Project settings button, and then Teams button selection on Current page](media/shared/open-project-settings-team-new-nav.png)
+	![Screenshot of Open Project settings button, and then Teams button selection on Current page.](media/shared/open-project-settings-team-new-nav.png)
 
 3. Select New team. Give the team a name, and optionally a description. Choose a security group to add team members to.  
 
-	![Screenshot of New team subteam with its own area path on Current page](media/add-team/create-new-team-new-nav.png)
+	![Screenshot of New team subteam with its own area path on Current page.](media/add-team/create-new-team-new-nav.png)
 
 4. When you're ready, select Create team. As the creator of the team, you automatically get added as the team administrator. You can remove yourself as an administrator and assign others to that role in the following steps.
 
