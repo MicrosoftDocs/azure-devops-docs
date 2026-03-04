@@ -234,7 +234,7 @@ If you use GitHub Copilot, the [Azure DevOps MCP Server](../../../mcp-server/ove
 
 ### Example prompts for process customization
 
-| **Task** | **Example prompt** |
+| Task | Example prompt |
 |---|---|
 | Plan a full process customization | `I'm adopting an inherited Agile process for a regulated healthcare project. Walk me through adding custom fields for Compliance Status and Regulatory Reference, a new 'Compliance Review' state, and rules that enforce sign-off before items can move to Done` |
 | Add a custom work item type | `Create a 'Risk' work item type in my inherited process with fields for Likelihood, Impact, Mitigation Plan, and Risk Owner. Add it to the Requirements backlog level so it shows on our board` |

@@ -136,7 +136,7 @@ If you use GitHub Copilot, the [Azure DevOps MCP Server](../../mcp-server/overvi
 
 ### Example prompts for notification management
 
-| **Task** | **Example prompt** |
+| Task | Example prompt |
 |---|---|
 | Reduce notification noise | `My team complains about too many email notifications from Azure DevOps. Review our current team notification subscriptions and recommend which ones to consolidate or disable to reduce noise without missing critical events` |
 | Monitor high-priority bugs | `Create a notification subscription for my team that sends an email whenever a Severity 1 or Severity 2 bug is created or changes state in our project's area path` |

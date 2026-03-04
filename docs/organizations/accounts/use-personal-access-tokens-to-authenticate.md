@@ -330,12 +330,12 @@ If you have the [Azure DevOps MCP Server](../../mcp-server/mcp-server-overview.m
 
 | Task | Example prompt |
 |------|----------------|
-| **Create a least-privilege token** | `Help me create a PAT for <organization-name> that only has read access to work items and code in the <project-name> project, valid for 30 days` |
-| **Rotate expiring tokens** | `Show me all my PATs in <organization-name> expiring in the next 14 days, their scopes, and what I need to update when I regenerate them` |
-| **Audit my token hygiene** | `List all my active PATs in <organization-name>, when each was last used, and flag any that have broader scopes than necessary` |
-| **Troubleshoot authentication failures** | `My PAT stopped working for Git push to <repo-name> in <project-name> - help me check if it expired, has the right scope, or if a policy is blocking it` |
-| **Find tokens to replace with Entra auth** | `Show me which of my PATs in <organization-name> are used for interactive scenarios that could switch to Microsoft Entra authentication instead` |
-| **Set up a CI/CD service connection** | `What's the minimum PAT scope needed for an Azure Pipelines service connection to <organization-name> that runs builds and deploys releases?` |
+| Create a least-privilege token | `Help me create a PAT for <organization-name> that only has read access to work items and code in the <project-name> project, valid for 30 days` |
+| Rotate expiring tokens | `Show me all my PATs in <organization-name> expiring in the next 14 days, their scopes, and what I need to update when I regenerate them` |
+| Audit my token hygiene | `List all my active PATs in <organization-name>, when each was last used, and flag any that have broader scopes than necessary` |
+| Troubleshoot authentication failures | `My PAT stopped working for Git push to <repo-name> in <project-name> - help me check if it expired, has the right scope, or if a policy is blocking it` |
+| Find tokens to replace with Entra auth | `Show me which of my PATs in <organization-name> are used for interactive scenarios that could switch to Microsoft Entra authentication instead` |
+| Set up a CI/CD service connection | `What's the minimum PAT scope needed for an Azure Pipelines service connection to <organization-name> that runs builds and deploys releases?` |
 
 > [!TIP]
 > If you're using Visual Studio Code, [agent mode](/visualstudio/ide/copilot-chat-context#agent-mode) is especially helpful for reviewing and auditing your PATs, including identifying tokens that need rotation or have excessive scopes.

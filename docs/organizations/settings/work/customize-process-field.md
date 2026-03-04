@@ -315,7 +315,7 @@ If you use GitHub Copilot, the [Azure DevOps MCP Server](../../../mcp-server/ove
 
 ### Example prompts for field management
 
-| **Task** | **Example prompt** |
+| Task | Example prompt |
 |---|---|
 | Add fields for a tracking scenario | `Add a 'Business Value' integer field and a 'Customer Impact' picklist field with values High, Medium, and Low to my User Story work item type. Place them in a new 'Prioritization' group on the Details page` |
 | Create a cascading picklist | `I need a 'Category' picklist field and a 'Subcategory' picklist on my Bug work item type where the subcategory values depend on the selected category. Walk me through the best approach since cascading picklists aren't natively supported` |

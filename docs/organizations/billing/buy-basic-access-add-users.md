@@ -35,8 +35,8 @@ Ensure you have the following items in place:
 
 | Category | Requirements |
 |--------------|-------------|
-|**Permissions**| Member of the [Project Collection Administrators group](../security/look-up-project-collection-administrators.md). Organization owners are automatically members of this group.  |
-|**Billing**| [Billing is set up](set-up-billing-for-your-organization-vs.md#set-up-billing) for your organization.|
+|Permissions| Member of the [Project Collection Administrators group](../security/look-up-project-collection-administrators.md). Organization owners are automatically members of this group.  |
+|Billing| [Billing is set up](set-up-billing-for-your-organization-vs.md#set-up-billing) for your organization.|
 
 ::: moniker-end
 
@@ -46,8 +46,8 @@ Ensure you have the following items in place:
 
 | Category | Requirements |
 |--------------|-------------|
-|**Permissions**| Member of the [Project Collection Administrators group](../security/look-up-project-collection-administrators.md). Organization owners are automatically members of this group.  |
-|**Licensing**| [Licensing set up for your organization via Azure](https://azure.microsoft.com/pricing/details/devops/server/)|
+|Permissions| Member of the [Project Collection Administrators group](../security/look-up-project-collection-administrators.md). Organization owners are automatically members of this group.  |
+|Licensing| [Licensing set up for your organization via Azure](https://azure.microsoft.com/pricing/details/devops/server/)|
 
 ::: moniker-end
 
@@ -61,11 +61,11 @@ The easiest way to control paid access is to manually assign an access level. Yo
 
 Keep the following information in mind:
 
-- **Visual Studio** subscribers get detected automatically when they sign in. There's no extra charge for users with a Visual Studio subscription.
-- **GitHub Enterprise** users get detected automatically when they sign in. There's no extra charge for users with a GitHub Enterprise license.
-- **Stakeholder** access is a [free access level with limited functionality](../security/get-started-stakeholder.md).
-- **Basic** access is free for the first 5 users and paid for 6 or more users.
-- **Basic + Test Plans** access is paid only, but [free to try for 30 days](try-additional-features-vs.md).
+- Visual Studio subscribers get detected automatically when they sign in. There's no extra charge for users with a Visual Studio subscription.
+- GitHub Enterprise users get detected automatically when they sign in. There's no extra charge for users with a GitHub Enterprise license.
+- Stakeholder access is a [free access level with limited functionality](../security/get-started-stakeholder.md).
+- Basic access is free for the first 5 users and paid for 6 or more users.
+- Basic + Test Plans access is paid only, but [free to try for 30 days](try-additional-features-vs.md).
 
 ## Select default access level for new users
 
@@ -75,15 +75,15 @@ To change the access level for new users added to projects, do the following ste
 
 1. Sign in to your organization (```https://dev.azure.com/{Your_Organization}```).
 
-2. Select ![gear icon](../../media/icons/gear-icon.png) **Organization settings**.
+2. Select ![gear icon](../../media/icons/gear-icon.png) Organization settings.
 
    ![Screenshot showing highlighted  Organization settings button.](../../media/settings/open-admin-settings-vert.png)
 
-3. Select **Billing**.
+3. Select Billing.
 
    :::image type="content" source="media/shared/select-billing-organization-settings.png" alt-text="Screenshot showing highlighted Billing selection in Organization settings.":::
 
-4. Next to **Default access level for new users**, choose **Basic** from the dropdown menu.
+4. Next to Default access level for new users, choose Basic from the dropdown menu.
 
    :::image type="content" source="media/shared/default-access-level-basic.png" alt-text="Screenshot showing Access level dropdown menu.":::
 
@@ -92,7 +92,7 @@ To change the access level for new users added to projects, do the following ste
 Group rules provide a great way to automate access level assignment for your organization. This way, you don't have to manually assign access each time a user gets added or removed. For more information, see [Group rules](../accounts/assign-access-levels-by-group-membership.md).
 
 > [!NOTE]
-> A group rule supersedes the default access level. For instance, if a user's part of a group  assigned the **Basic** access level, they get **Basic** access, even if the default access is set to Stakeholder. The default access level applies to users who aren't part of any group rules.
+> A group rule supersedes the default access level. For instance, if a user's part of a group  assigned the Basic access level, they get Basic access, even if the default access is set to Stakeholder. The default access level applies to users who aren't part of any group rules.
 
 ## Reduce charges for users with no access
 
@@ -102,39 +102,39 @@ To find out if you have users who are no longer using Azure DevOps, do the follo
 
 1. Sign in to your organization (```https://dev.azure.com/{yourorganization}```).
 
-2. Select ![gear icon](../../media/icons/gear-icon.png) **Organization settings**.
+2. Select ![gear icon](../../media/icons/gear-icon.png) Organization settings.
 
    ![Screenshot showing highlighted Organization settings button.](../../media/settings/open-admin-settings-vert.png)
 
-3. Select **Users** and then sort by **Last Access**.
+3. Select Users and then sort by Last Access.
 
    :::image type="content" source="media/shared/last-access.png" alt-text="Screenshot showing select Users and then sort by Last Access.":::
  
-4. If there are users who haven't signed in, you can find out how recently they were added by exporting the list of users and checking the **Date Created** column. 
+4. If there are users who haven't signed in, you can find out how recently they were added by exporting the list of users and checking the Date Created column. 
 
    :::image type="content" source="media/shared/export-users.png" alt-text="Screenshot showing Export users.":::
 
 ## Pay for a user once across multiple organizations
 
-If you're a member of more than one Azure DevOps organization, you can turn on multi-organization billing and pay for each **Basic** or **Basic + Test Plans** human user once, for all organizations under the same billing Azure subscription. Multi-organization billing doesn't apply to [service principals](../../integrate/get-started/authentication/service-principal-managed-identity.md), which you must pay for each organization the service principal was added to where the service principal has **Basic** or **Basic + Test Plans**.
+If you're a member of more than one Azure DevOps organization, you can turn on multi-organization billing and pay for each Basic or Basic + Test Plans human user once, for all organizations under the same billing Azure subscription. Multi-organization billing doesn't apply to [service principals](../../integrate/get-started/authentication/service-principal-managed-identity.md), which you must pay for each organization the service principal was added to where the service principal has Basic or Basic + Test Plans.
 
 For more information, see [multi-organization billing FAQs](./billing-faq.yml). To pay for a user once across multiple organizations, do the following steps:
 
 1. Sign in to your organization (```https://dev.azure.com/{Your_Organization}```).
 
-2. Select ![gear icon](../../media/icons/gear-icon.png) **Organization settings**.
+2. Select ![gear icon](../../media/icons/gear-icon.png) Organization settings.
 
    ![Screenshot showing highlighted Organization settings button.](../../media/settings/open-admin-settings-vert.png)
 
-3. Select **Billing**.
+3. Select Billing.
 
    ![Screenshot showing highlighted Billing selection in Organization settings.](media/shared/select-billing-organization-settings.png)
 
-4. Select **Configure user billing**.
+4. Select Configure user billing.
    
    ![Screenshot showing selected button, Configure user billing.](media/buy-more-basic-access/select-configure-user-billing.png)
 
-5. Select **Multi-organization** > **Save**.
+5. Select Multi-organization > Save.
 
    ![Screenshot showing selected Multi-organization in Configure user billing screen.](media/buy-more-basic-access/select-multi-organization-billing.png)
 
@@ -164,7 +164,7 @@ If you use GitHub Copilot, the [Azure DevOps MCP Server](../../mcp-server/overvi
 
 ### Example prompts for managing paid access
 
-| **Task** | **Example prompt** |
+| Task | Example prompt |
 |---|---|
 | Audit inactive users | `Identify all users in my organization who haven't signed in during the last 90 days and still have Basic or Basic + Test Plans access, so I can reclaim those licenses` |
 | Optimize license costs | `Compare the number of Basic licenses I'm paying for against actual usage across my organization and recommend where I can downgrade users to Stakeholder access` |

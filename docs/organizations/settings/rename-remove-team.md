@@ -291,7 +291,7 @@ If you use GitHub Copilot, the [Azure DevOps MCP Server](../../mcp-server/overvi
 
 ### Example prompts for team rename and removal
 
-| **Task** | **Example prompt** |
+| Task | Example prompt |
 |---|---|
 | Plan a team rename | `I need to rename our 'Backend' team to 'Platform Engineering'. Walk me through the rename, explain which artifacts update automatically, and list anything I need to update manually like saved queries referencing the old security group name` |
 | Consolidate teams after a reorg | `After a reorganization, we need to merge the 'Services' and 'Infrastructure' teams into one 'Platform' team. Help me move members, reassign work items, update area paths, and then safely delete the old teams` |

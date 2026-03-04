@@ -80,12 +80,12 @@ If you have the [Azure DevOps MCP Server](../../mcp-server/mcp-server-overview.m
 
 | Task | Example prompt |
 |------|----------------|
-| **Set up a new organization end-to-end** | `Create a new project called <project-name> in <organization-name> using Agile process with Git repos, then add <user-email> as a project administrator` |
-| **Compare organization settings** | `Show the process templates, version control defaults, and security policies configured for <organization-name>` |
-| **Bootstrap development infrastructure** | `In <organization-name>, create a project <project-name>, initialize a Git repo called <repo-name>, and set up a basic CI pipeline for a .NET application` |
-| **Review organization limits** | `How many projects exist in <organization-name>, how many users have Basic access, and what Azure subscription is linked for billing?` |
-| **Set up team structure** | `In the <project-name> project, create teams for Frontend, Backend, and QA, each with their own area path and iteration schedule` |
-| **Configure initial security** | `Set up <organization-name> security: disable alternate credentials, require minimum PAT scope, and restrict project creation to admins only` |
+| Set up a new organization end-to-end | `Create a new project called <project-name> in <organization-name> using Agile process with Git repos, then add <user-email> as a project administrator` |
+| Compare organization settings | `Show the process templates, version control defaults, and security policies configured for <organization-name>` |
+| Bootstrap development infrastructure | `In <organization-name>, create a project <project-name>, initialize a Git repo called <repo-name>, and set up a basic CI pipeline for a .NET application` |
+| Review organization limits | `How many projects exist in <organization-name>, how many users have Basic access, and what Azure subscription is linked for billing?` |
+| Set up team structure | `In the <project-name> project, create teams for Frontend, Backend, and QA, each with their own area path and iteration schedule` |
+| Configure initial security | `Set up <organization-name> security: disable alternate credentials, require minimum PAT scope, and restrict project creation to admins only` |
 
 > [!TIP]
 > If you're using Visual Studio Code, [agent mode](/visualstudio/ide/copilot-chat-context#agent-mode) is especially helpful for setting up a new organization and creating initial projects.

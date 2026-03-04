@@ -38,8 +38,8 @@ To maintain Agile practices while scaling teams, review [Scale Agile to Large Te
 
 | Category | Requirements |
 |--------------|-------------|
-| **Permissions** | - Member of the **Project Administrators** security group.<br>- To add members to a team or change its configuration, be a [team administrator](add-team-administrator.md) or member of the [Project Administrators](../security/change-project-level-permissions.md) group. |
-|**Tools**| To use Azure CLI commands: [Azure DevOps CLI](../../cli/index.md).|  
+| Permissions | - Member of the Project Administrators security group.<br>- To add members to a team or change its configuration, be a [team administrator](add-team-administrator.md) or member of the [Project Administrators](../security/change-project-level-permissions.md) group. |
+|Tools| To use Azure CLI commands: [Azure DevOps CLI](../../cli/index.md).|  
 
 ::: moniker-end
 
@@ -47,7 +47,7 @@ To maintain Agile practices while scaling teams, review [Scale Agile to Large Te
 
 | Category | Requirements |
 |--------------|-------------|
-| **Permissions** | - Member of the **Project Administrators** security group.<br>- To add members to a team or change its configuration, be a [team administrator](add-team-administrator.md) or member of the [Project Administrators](../security/change-project-level-permissions.md) group. |
+| Permissions | - Member of the Project Administrators security group.<br>- To add members to a team or change its configuration, be a [team administrator](add-team-administrator.md) or member of the [Project Administrators](../security/change-project-level-permissions.md) group. |
 
 ::: moniker-end 
 
@@ -58,7 +58,7 @@ To maintain Agile practices while scaling teams, review [Scale Agile to Large Te
 To create a team, do the following steps.
 
 > [!NOTE]
-> When you create a team, you can automatically generate the **Area Path** as a child node of the main project. To establish a hierarchical team structure, first define the **Area Paths** at the project level, then create your teams, and assign the appropriate **Area Paths** to each team. For more information, see [Configure a hierarchy of teams](../../boards/plans/configure-hierarchical-teams.md).
+> When you create a team, you can automatically generate the Area Path as a child node of the main project. To establish a hierarchical team structure, first define the Area Paths at the project level, then create your teams, and assign the appropriate Area Paths to each team. For more information, see [Configure a hierarchy of teams](../../boards/plans/configure-hierarchical-teams.md).
 
 ::: moniker range="azure-devops"
 
@@ -72,32 +72,32 @@ From the Azure CLI tool, you can [list teams](#list-teams), [create a team](#add
 
 ::: moniker range="azure-devops"
 1. Sign in to your organization (```https://dev.azure.com/{Your_Organization}```). 
-2. Select **Project settings** > **Teams**.   
+2. Select Project settings > Teams.   
 
   ![Screenshot of Open Project settings, and then Teams buttons on New Teams page.](media/shared/open-project-settings-teams-preview.png)
 
-3. Select **New team**.   
+3. Select New team.   
 
 	:::image type="content" source="media/add-team/new-team-button-new-teams-preview.png" alt-text="Screenshot of choose New Team button, New Teams preview feature enabled.":::
 
-4. Enter a team name and the names of project members who you want to assign to the team. Optionally, enter a description. Add at least one name as a team **Administrator**. Select **Create an area path with the name of the team**, or leave it unchecked and assign the **Area Path** for the team after it gets created. You can choose an existing area path or add a new one at that time. 
+4. Enter a team name and the names of project members who you want to assign to the team. Optionally, enter a description. Add at least one name as a team Administrator. Select Create an area path with the name of the team, or leave it unchecked and assign the Area Path for the team after it gets created. You can choose an existing area path or add a new one at that time. 
 
 	:::image type="content" source="media/add-team/create-new-team-dialog-new-teams-preview.png" alt-text="Screenshot of Create a new team dialog, New Teams preview feature enabled.":::
 
 	> [!NOTE] 
 	> Consider adding one or more users as team administrators. Team administrators have the necessary permissions to add team members and configure all team settings&mdash;including backlogs, boards, and Taskboards. For more information, see [Manage and configure team tools](manage-teams.md).   
 
-5. When you're ready, select **Create**.  
+5. When you're ready, select Create.  
 
 6. Select the team to add a team image, or configure other team elements.
 
-7. Select **Settings** to upload an image, change the team name, add a team administrator, or delete the team.   
+7. Select Settings to upload an image, change the team name, add a team administrator, or delete the team.   
 
 	:::image type="content" source="media/add-team/team-settings-dialog-new-teams-preview.png" alt-text="Screenshot of Team Settings dialog, New Teams preview feature enabled.":::
 
-8. Choose **Save**. 
+8. Choose Save. 
 
-9. Select **Iterations and areas** to set the **Area Paths** and **Iteration Paths** for the team to use.   
+9. Select Iterations and areas to set the Area Paths and Iteration Paths for the team to use.   
 
 	:::image type="content" source="media/add-team/team-settings-select-iterations-areas-new-teams-preview.png" alt-text="Screenshot of team settings, Iterations and areas highlighted, New Teams preview feature enabled.":::
 
@@ -108,21 +108,21 @@ From the Azure CLI tool, you can [list teams](#list-teams), [create a team](#add
 ::: moniker-end
 
 ::: moniker range="< azure-devops"
-Select the **Current UI** tab. The New Teams Page UI is only available for Azure DevOps Services. 
+Select the Current UI tab. The New Teams Page UI is only available for Azure DevOps Services. 
 ::: moniker-end
 
 #### [Current UI](#tab/current-page)  
 
 1. Sign in to your organization (```https://dev.azure.com/{Your_Organization}```).
-2. Select **Project settings** > **Teams**.   
+2. Select Project settings > Teams.   
 
 	![Screenshot of Open Project settings button, and then Teams button selection on Current page](media/shared/open-project-settings-team-new-nav.png)
 
-3. Select **New team**. Give the team a name, and optionally a description. Choose a security group to add team members to.  
+3. Select New team. Give the team a name, and optionally a description. Choose a security group to add team members to.  
 
 	![Screenshot of New team subteam with its own area path on Current page](media/add-team/create-new-team-new-nav.png)
 
-4. When you're ready, select **Create team**. As the creator of the team, you automatically get added as the team administrator. You can remove yourself as an administrator and assign others to that role in the following steps.
+4. When you're ready, select Create team. As the creator of the team, you automatically get added as the team administrator. You can remove yourself as an administrator and assign others to that role in the following steps.
 
 5. Select the team to add team administrators, team members, configure iterations and areas. The Team Profile opens.   
 	
@@ -148,13 +148,13 @@ az devops team create --name [--description] [--project]
 
 #### Parameters
  
-- **name**: Required. Name of the new team.  
-- **description**: Optional. Description of the new team enclosed within parenthesis.    
-- **project**: Optional. Name or ID of the project. Example: `--project "Fabrikam Fiber"`.  
+- name: Required. Name of the new team.  
+- description: Optional. Description of the new team enclosed within parenthesis.    
+- project: Optional. Name or ID of the project. Example: `--project "Fabrikam Fiber"`.  
 
 #### Example
 
-The following command adds a team named **Production Planning** to the *fabrikamprime* organization, *Fabrikam Fiber* project, and returns many properties assigned to the team in YAML output format.  
+The following command adds a team named Production Planning to the *fabrikamprime* organization, *Fabrikam Fiber* project, and returns many properties assigned to the team in YAML output format.  
 
 > [!div class="tabbedCodeSnippets"]
 ```azurecli
@@ -233,14 +233,14 @@ url: https://fabrikamprime.visualstudio.com/_apis/projects/854a3f67-9962-43d1-a9
 * * *
 
 Upon creation of a team, the following items are automatically configured:  
-- Security group with the team name containing the members assigned to the team, for example, **[Fabrikam Fiber]\Production Planning**. You can use this name to filter queries or to **@mention** all members of the team. 
+- Security group with the team name containing the members assigned to the team, for example, [Fabrikam Fiber]\Production Planning. You can use this name to filter queries or to @mention all members of the team. 
 - Default notifications assigned to the team. For more information, see [Manage notifications for a team, project, or organization](../../organizations/notifications/manage-team-group-global-organization-notifications.md).
-- Default dashboard named **Overview** assigned to the team. To configure the dashboard, see [Add widgets to a dashboard](../../report/dashboards/add-widget-to-dashboard.md).
+- Default dashboard named Overview assigned to the team. To configure the dashboard, see [Add widgets to a dashboard](../../report/dashboards/add-widget-to-dashboard.md).
 
 > [!IMPORTANT]   
-> Configuring the **Area Paths** and **Iteration Paths** used by the team is essential for many of the Azure Board tools to work, such as Backlogs, Boards, Sprints, and Delivery Plans. Team tools aren't available until the team's default area path is set. **Area Paths** and **Iteration Paths** are first configured for the project and then assigned or selected by the team.  
+> Configuring the Area Paths and Iteration Paths used by the team is essential for many of the Azure Board tools to work, such as Backlogs, Boards, Sprints, and Delivery Plans. Team tools aren't available until the team's default area path is set. Area Paths and Iteration Paths are first configured for the project and then assigned or selected by the team.  
 >
-> If you are moving from one team to two or more teams, you may want to review and revise the **Area Paths** assigned to the default project team. 
+> If you are moving from one team to two or more teams, you may want to review and revise the Area Paths assigned to the default project team. 
 
 To configure other team features, see [Manage teams and configure team tools](manage-teams.md).
 
@@ -252,24 +252,24 @@ Each project has a default team assigned. You can change which project is assign
 
 #### [New Teams UI](#tab/preview-page) 
 ::: moniker range="azure-devops"
-1. Open **Project settings > Teams** as indicated in the previous section. 
+1. Open Project settings > Teams as indicated in the previous section. 
 
-2. Choose :::image type="icon" source="../../media/icons/more-actions.png" border="false"::: **More options** for the team you want to designate as the default, and choose **Set team as project default**. 
+2. Choose :::image type="icon" source="../../media/icons/more-actions.png" border="false"::: More options for the team you want to designate as the default, and choose Set team as project default. 
 
 	 ![Screenshot of Teams page, More options menu selection, New Teams Page enabled.](media/add-team/set-team-project-default-new-ui.png)  
 ::: moniker-end
 
 ::: moniker range="< azure-devops"
-Choose the **Current UI** tab. The New Teams Page UI is only available for Azure DevOps Services. 
+Choose the Current UI tab. The New Teams Page UI is only available for Azure DevOps Services. 
 ::: moniker-end
 
 #### [Current UI](#tab/current-page) 
 
 ::: moniker range="<=azure-devops"
-1. Open **Project settings > Teams** as indicated in the previous section. 
+1. Open Project settings > Teams as indicated in the previous section. 
 ::: moniker-end
  
-2. Choose :::image type="icon" source="../../media/icons/actions-icon.png" border="false"::: to open the context menu for the team you want to designate as the default, and choose **Set team as project default**. 
+2. Choose :::image type="icon" source="../../media/icons/actions-icon.png" border="false"::: to open the context menu for the team you want to designate as the default, and choose Set team as project default. 
 
 	 ![Screenshot of Teams page, More options menu selection, New Teams Page enabled.](media/add-team/set-team-project-default-current.png)  
 
@@ -299,13 +299,13 @@ az devops team list [--project]
 ```
 
 > [!TIP]
-> If you don't specify a **top** number, 100 teams are returned. To list all teams in a project, specify a number for **top** which is greater than the current number of teams defined.  
+> If you don't specify a top number, 100 teams are returned. To list all teams in a project, specify a number for top which is greater than the current number of teams defined.  
 
 #### Parameters
 
-- **project**: Optional. Name or ID of the project. Example: --project "Fabrikam Fiber."  You can configure the default project using `az devops configure -d project=NAME_OR_ID`. Required if not configured as default or picked up via git config.
-- **skip**: Optional. Number of teams to skip.  
-- **top**: Optional. Maximum number of teams to return. 
+- project: Optional. Name or ID of the project. Example: --project "Fabrikam Fiber."  You can configure the default project using `az devops configure -d project=NAME_OR_ID`. Required if not configured as default or picked up via git config.
+- skip: Optional. Number of teams to skip.  
+- top: Optional. Maximum number of teams to return. 
 
 #### Example
 
@@ -346,7 +346,7 @@ cda2b9b0-0335-4a0d-8bd0-67611d64ce9d  Voice               Feature team focused o
 For teams to work autonomously, give them permissions that they don't have by default. Suggested tasks include providing team administrators or team leads permissions to:  
 
 - [Create and edit child nodes under their default area path](../security/set-permissions-access-work-tracking.md#create-child-nodes-modify-work-items-under-an-area-or-iteration-path) 
-- [Create shared queries and folders under the **Shared Queries** folder](../../boards/queries/set-query-permissions.md)
+- [Create shared queries and folders under the Shared Queries folder](../../boards/queries/set-query-permissions.md)
 
 For more information on setting permissions and access for select users, see [Set permissions and access for work tracking](../security/set-permissions-access-work-tracking.md).
 
@@ -362,7 +362,7 @@ If you use GitHub Copilot, the [Azure DevOps MCP Server](../../mcp-server/overvi
 
 ### Example prompts for team management
 
-| **Task** | **Example prompt** |
+| Task | Example prompt |
 |---|---|
 | Bootstrap teams for a new project | `I'm setting up a new project with three Scrum teams — API, Frontend, and QA. Create each team, assign a team administrator, set up their area paths, and configure 2-week sprint iterations starting next Monday` |
 | Scale from one team to many | `Our single default team has grown to 30 people working on different features. Help me split into three feature teams, redistribute existing work items based on area paths, and set up independent backlogs for each team` |

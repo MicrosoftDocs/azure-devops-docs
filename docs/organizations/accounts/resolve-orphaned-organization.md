@@ -89,12 +89,12 @@ If you have the [Azure DevOps MCP Server](../../mcp-server/mcp-server-overview.m
 
 | Task | Example prompt |
 |------|----------------|
-| **Check organization owner** | `Who is the current owner of the <organization-name> organization?` |
-| **List administrators** | `List all Project Collection Administrators in the <organization-name> organization` |
-| **Check Microsoft Entra connection** | `Is the <organization-name> organization connected to Microsoft Entra ID?` |
-| **List organization members** | `Show me all users in the <organization-name> organization and their last access dates` |
-| **Verify your role** | `What is my role and permissions in the <organization-name> organization?` |
-| **List all organizations** | `List all Azure DevOps organizations I have access to` |
+| Check organization owner | `Who is the current owner of the <organization-name> organization?` |
+| List administrators | `List all Project Collection Administrators in the <organization-name> organization` |
+| Check Microsoft Entra connection | `Is the <organization-name> organization connected to Microsoft Entra ID?` |
+| List organization members | `Show me all users in the <organization-name> organization and their last access dates` |
+| Verify your role | `What is my role and permissions in the <organization-name> organization?` |
+| List all organizations | `List all Azure DevOps organizations I have access to` |
 
 > [!TIP]
 > If you're using Visual Studio Code, [agent mode](/visualstudio/ide/copilot-chat-context#agent-mode) is especially helpful for investigating organization ownership and identifying inactive administrators.

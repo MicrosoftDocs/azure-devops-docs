@@ -31,17 +31,17 @@ Renaming a project in Azure DevOps updates the project name in version control p
 
 | Category | Requirements |
 |--------------|-------------|
-|**Permissions**| Member of the **Project Administrators** group or project-level **Rename team project** permission set to **Allow**. For more information, see [Change project-level permissions](../security/change-project-level-permissions.md).|
+|Permissions| Member of the Project Administrators group or project-level Rename team project permission set to Allow. For more information, see [Change project-level permissions](../security/change-project-level-permissions.md).|
 
 ## Rename a project
 
 1. Sign in to your project (```https://dev.azure.com/{Your_Organization}/{Your_Project}```).
 
-2. Select **Project settings** > **Overview**, and then enter a new name and select **Save**. 
+2. Select Project settings > Overview, and then enter a new name and select Save. 
 
    ![Screenshot showing new name entry and highlighted save button.](media/rename-project/rename-project-azure-devops.png)
 
-3. To confirm the rename, enter the new project name, check the box next to, "I understand the consequences of renaming this project," and then select **Save**.
+3. To confirm the rename, enter the new project name, check the box next to, "I understand the consequences of renaming this project," and then select Save.
 
    ![Screenshot showing new name confirmation screen with save button.](media/rename-project/rename-project-confirm.png)
 
@@ -121,7 +121,7 @@ If you use GitHub Copilot, the [Azure DevOps MCP Server](../../mcp-server/overvi
 
 ### Example prompts for renaming projects
 
-| **Task** | **Example prompt** |
+| Task | Example prompt |
 |---|---|
 | Plan a rename with impact analysis | `I need to rename my Azure DevOps project from 'ProjectAlpha' to 'Platform-Core'. List everything that will break, including Git remotes, TFVC workspaces, OData feeds, and service connections, and give me a step-by-step remediation plan` |
 | Communicate a rename to the team | `Draft an announcement for my team explaining that our Azure DevOps project is being renamed, what actions each developer needs to take to update their Git remotes and local workspaces, and a timeline for the change` |

@@ -105,12 +105,12 @@ If you have the [Azure DevOps MCP Server](../../mcp-server/mcp-server-overview.m
 
 | Task | Example prompt |
 |------|----------------|
-| **Respond to a security incident** | `Immediately list all active PATs for <user-email> in <organization-name> and show their scopes and last used dates` |
-| **Clean up after employee departure** | `Find all PATs and active sessions for <user-email> in <organization-name> that should be revoked` |
-| **Find overly broad tokens** | `List all full-scoped PATs in <organization-name> that have been active in the last 90 days and who owns them` |
-| **Audit tokens about to expire** | `Show PATs expiring within the next 7 days in <organization-name> and notify me which ones have Code Write or Build Execute scopes` |
-| **Check for stale tokens** | `Find PATs in <organization-name> that were created more than a year ago and haven't been used in the last 60 days` |
-| **Review admin-scoped tokens** | `List all PATs in <organization-name> that have Full access or manage scopes, grouped by user` |
+| Respond to a security incident | `Immediately list all active PATs for <user-email> in <organization-name> and show their scopes and last used dates` |
+| Clean up after employee departure | `Find all PATs and active sessions for <user-email> in <organization-name> that should be revoked` |
+| Find overly broad tokens | `List all full-scoped PATs in <organization-name> that have been active in the last 90 days and who owns them` |
+| Audit tokens about to expire | `Show PATs expiring within the next 7 days in <organization-name> and notify me which ones have Code Write or Build Execute scopes` |
+| Check for stale tokens | `Find PATs in <organization-name> that were created more than a year ago and haven't been used in the last 60 days` |
+| Review admin-scoped tokens | `List all PATs in <organization-name> that have Full access or manage scopes, grouped by user` |
 
 > [!TIP]
 > If you're using Visual Studio Code, [agent mode](/visualstudio/ide/copilot-chat-context#agent-mode) is especially helpful for auditing PAT usage and reviewing security policies across your organization.

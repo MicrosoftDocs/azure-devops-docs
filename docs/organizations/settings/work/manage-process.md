@@ -200,7 +200,7 @@ If you use GitHub Copilot, the [Azure DevOps MCP Server](../../../mcp-server/ove
 
 ### Example prompts for process management
 
-| **Task** | **Example prompt** |
+| Task | Example prompt |
 |---|---|
 | Create a standardized process | `Create an inherited process based on Agile for our organization's web development projects. Include custom fields for 'Sprint Goal', 'Definition of Done', and 'Tech Stack', and set it as the default process for new projects` |
 | Migrate a project to a new process | `Move my 'Legacy App' project from the default Scrum process to our customized 'Engineering-Scrum' inherited process. Explain what changes automatically and what I need to update manually` |

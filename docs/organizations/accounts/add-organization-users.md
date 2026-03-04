@@ -327,12 +327,12 @@ If you have the [Azure DevOps MCP Server](../../mcp-server/mcp-server-overview.m
 
 | Task | Example prompt |
 |------|----------------|
-| **Onboard a new team member** | `Add <user-email> to the <project-name> project in <organization-name> with Basic access and add them to the <team-name> team` |
-| **Find users without project access** | `List users in <organization-name> who have Basic access but aren't members of any project` |
-| **Audit Visual Studio subscribers** | `Show me all Visual Studio Enterprise subscribers in <organization-name> and which projects they belong to` |
-| **Identify Stakeholder candidates** | `Find users in <organization-name> with Basic access who only have activity in work items and could use Stakeholder access instead` |
-| **Compare access across projects** | `For <user-email> in <organization-name>, show which projects they belong to and what permissions they have in each` |
-| **Review recently added users** | `Show me all users added to <organization-name> in the last 30 days and their current access levels` |
+| Onboard a new team member | `Add <user-email> to the <project-name> project in <organization-name> with Basic access and add them to the <team-name> team` |
+| Find users without project access | `List users in <organization-name> who have Basic access but aren't members of any project` |
+| Audit Visual Studio subscribers | `Show me all Visual Studio Enterprise subscribers in <organization-name> and which projects they belong to` |
+| Identify Stakeholder candidates | `Find users in <organization-name> with Basic access who only have activity in work items and could use Stakeholder access instead` |
+| Compare access across projects | `For <user-email> in <organization-name>, show which projects they belong to and what permissions they have in each` |
+| Review recently added users | `Show me all users added to <organization-name> in the last 30 days and their current access levels` |
 
 > [!TIP]
 > If you're using Visual Studio Code, [agent mode](/visualstudio/ide/copilot-chat-context#agent-mode) is especially helpful for reviewing user access levels and managing bulk user operations.

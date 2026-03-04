@@ -30,7 +30,7 @@ Based on these conditions, you can grant access, require more checks like multif
 
 | Category | Requirements |
 |----------|-------------|
-| **Permissions** | At least **Conditional Access Administrator** in your tenant. For more information, see [Create a Conditional Access policy](/entra/identity/conditional-access/policy-all-users-mfa-strength). |
+| Permissions | At least **Conditional Access Administrator** in your tenant. For more information, see [Create a Conditional Access policy](/entra/identity/conditional-access/policy-all-users-mfa-strength). |
 
 ## Create a Conditional Access policy for Azure DevOps
 
@@ -106,12 +106,12 @@ If you have the [Azure DevOps MCP Server](../../mcp-server/mcp-server-overview.m
 
 | Task | Example prompt |
 |------|----------------|
-| **Troubleshoot blocked access** | `A user <user-email> can't access <organization-name> from their home network - what conditional access policies might be blocking them?` |
-| **Audit policy coverage** | `What authentication and conditional access policies are currently enforced for <organization-name> and are there any gaps?` |
-| **Check IP-based restrictions** | `Is IP conditional access validation enabled for <organization-name> and which client flows does it apply to - web, non-interactive, both?` |
-| **Verify compliant device policy** | `Can users access <organization-name> from personal devices, or is there a compliant/hybrid-joined device requirement?` |
-| **Test third-party tool access** | `If I have a conditional access policy requiring MFA on <organization-name>, will third-party CI/CD tools using PATs be affected?` |
-| **Review policy for guest users** | `What conditional access policies apply to external guest users accessing <organization-name> and do they differ from member policies?` |
+| Troubleshoot blocked access | `A user <user-email> can't access <organization-name> from their home network - what conditional access policies might be blocking them?` |
+| Audit policy coverage | `What authentication and conditional access policies are currently enforced for <organization-name> and are there any gaps?` |
+| Check IP-based restrictions | `Is IP conditional access validation enabled for <organization-name> and which client flows does it apply to - web, non-interactive, both?` |
+| Verify compliant device policy | `Can users access <organization-name> from personal devices, or is there a compliant/hybrid-joined device requirement?` |
+| Test third-party tool access | `If I have a conditional access policy requiring MFA on <organization-name>, will third-party CI/CD tools using PATs be affected?` |
+| Review policy for guest users | `What conditional access policies apply to external guest users accessing <organization-name> and do they differ from member policies?` |
 
 > [!TIP]
 > If you're using Visual Studio Code, [agent mode](/visualstudio/ide/copilot-chat-context#agent-mode) is especially helpful for reviewing Conditional Access policy configurations across your organizations.

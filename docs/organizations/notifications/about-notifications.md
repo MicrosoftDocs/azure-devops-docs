@@ -50,14 +50,14 @@ For team and project-level notifications, you can create a subscription for the 
 
 |Category |Templates |
 |---------|----------|
-| **Build** | _Build completes_, _Build fails_, <br> _Status changes for legacy XAML build controller or agent_, <br> _Quality changes for legacy XAML build_ |
-| **Code (Git)** | _Commit pushed_, _Comment added to pull request_, <br> _Pull request created or updated_, <br> _Pull request in review by my team updated_ |
-| **Code (TFVC)** | _Code checked in_, _Code checked in with policy override_, <br> _Changes to code review_, _File in specific path checked in_, <br> _File with specific extension checked in_  |
-| **Pipelines** | _Run stage waiting for approval_, <br> _Run stage waiting for manual validation_ |
-| **Work** | _Work item created_, _Work item changed_, _Work item deleted_, <br> _Work item restored_, _Work item moved from this team project_ |
-| **Artifacts** | _Package changed_ |
-| **Extension management** | _Extension modified_ |
-| **Release** | _Deployment approval pending_, _Deployment completes_, <br> _Release creation request fails_, <br> _Manual intervention for deployment pending_ |
+| Build | _Build completes_, _Build fails_, <br> _Status changes for legacy XAML build controller or agent_, <br> _Quality changes for legacy XAML build_ |
+| Code (Git) | _Commit pushed_, _Comment added to pull request_, <br> _Pull request created or updated_, <br> _Pull request in review by my team updated_ |
+| Code (TFVC) | _Code checked in_, _Code checked in with policy override_, <br> _Changes to code review_, _File in specific path checked in_, <br> _File with specific extension checked in_  |
+| Pipelines | _Run stage waiting for approval_, <br> _Run stage waiting for manual validation_ |
+| Work | _Work item created_, _Work item changed_, _Work item deleted_, <br> _Work item restored_, _Work item moved from this team project_ |
+| Artifacts | _Package changed_ |
+| Extension management | _Extension modified_ |
+| Release | _Deployment approval pending_, _Deployment completes_, <br> _Release creation request fails_, <br> _Manual intervention for deployment pending_ |
 
 > [!NOTE]
 > You can also create a custom notification subscription for pull requests created or updated in a **draft state**. For more information, see [Custom notification subscription for draft pull requests](/azure/devops/release-notes/2020/repos/sprint-165-update#custom-notification-subscription-for-draft-pull-requests).

@@ -126,12 +126,12 @@ If you have the [Azure DevOps MCP Server](../../mcp-server/mcp-server-overview.m
 
 | Task | Example prompt |
 |------|----------------|
-| **Pre-migration identity check** | `List all users in <organization-name> and show which ones have Microsoft accounts versus Microsoft Entra accounts that need mapping` |
-| **Find potential identity conflicts** | `Are there users in <organization-name> whose Microsoft account email matches an identity in the <tenant-name> Microsoft Entra tenant?` |
-| **Validate post-connection status** | `After connecting <organization-name> to Microsoft Entra, show me any users whose access changed or who lost permissions` |
-| **Check administrator readiness** | `Who are the Project Collection Administrators in <organization-name> and do they all have accounts in the <tenant-name> Entra tenant?` |
-| **Audit external users** | `After connecting to Entra ID, list any guest or external users in <organization-name> and their current access levels` |
-| **Review organization connection** | `Show me the Microsoft Entra tenant details for <organization-name> including tenant ID, domain, and connection status` |
+| Pre-migration identity check | `List all users in <organization-name> and show which ones have Microsoft accounts versus Microsoft Entra accounts that need mapping` |
+| Find potential identity conflicts | `Are there users in <organization-name> whose Microsoft account email matches an identity in the <tenant-name> Microsoft Entra tenant?` |
+| Validate post-connection status | `After connecting <organization-name> to Microsoft Entra, show me any users whose access changed or who lost permissions` |
+| Check administrator readiness | `Who are the Project Collection Administrators in <organization-name> and do they all have accounts in the <tenant-name> Entra tenant?` |
+| Audit external users | `After connecting to Entra ID, list any guest or external users in <organization-name> and their current access levels` |
+| Review organization connection | `Show me the Microsoft Entra tenant details for <organization-name> including tenant ID, domain, and connection status` |
 
 > [!TIP]
 > If you're using Visual Studio Code, [agent mode](/visualstudio/ide/copilot-chat-context#agent-mode) is especially helpful for verifying Microsoft Entra ID configurations and user mappings after connecting your organization.

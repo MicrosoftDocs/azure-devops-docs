@@ -135,12 +135,12 @@ If you have the [Azure DevOps MCP Server](../../mcp-server/mcp-server-overview.m
 
 | Task | Example prompt |
 |------|----------------|
-| **Optimize license costs** | `Find users in <organization-name> with Basic access who haven't signed in within the last 90 days and could be downgraded to Stakeholder` |
-| **Set up group-based licensing** | `Show me which Microsoft Entra groups are configured as group rules in <organization-name> and what access level each grants` |
-| **Find conflicting group rules** | `List users in <organization-name> who belong to multiple group rules with different access levels and show which rule wins` |
-| **Plan access for a new team** | `Create a group rule in <organization-name> that assigns Basic + Test Plans access to members of the <Entra-group-name> group` |
-| **Audit group rule coverage** | `Show me users in <organization-name> whose access level was set by a group rule versus manually assigned` |
-| **Compare group memberships** | `For <user-email>, show all group rules that apply in <organization-name> and explain their effective access level` |
+| Optimize license costs | `Find users in <organization-name> with Basic access who haven't signed in within the last 90 days and could be downgraded to Stakeholder` |
+| Set up group-based licensing | `Show me which Microsoft Entra groups are configured as group rules in <organization-name> and what access level each grants` |
+| Find conflicting group rules | `List users in <organization-name> who belong to multiple group rules with different access levels and show which rule wins` |
+| Plan access for a new team | `Create a group rule in <organization-name> that assigns Basic + Test Plans access to members of the <Entra-group-name> group` |
+| Audit group rule coverage | `Show me users in <organization-name> whose access level was set by a group rule versus manually assigned` |
+| Compare group memberships | `For <user-email>, show all group rules that apply in <organization-name> and explain their effective access level` |
 
 > [!TIP]
 > If you're using Visual Studio Code, [agent mode](/visualstudio/ide/copilot-chat-context#agent-mode) is especially helpful for auditing group-based access levels and verifying user permissions across projects.

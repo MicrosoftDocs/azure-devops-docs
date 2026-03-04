@@ -24,7 +24,7 @@ You can grant other services access to Azure DevOps using the OAuth 2.0 framewor
 
 | Category | Requirements |
 |--------------|-------------|
-| **Permissions** | - Member of the **Project Administrators** security group.<br>- The service has the **Contributor** role or a custom role with similar permissions on the resources it needs to access.|
+| Permissions | - Member of the **Project Administrators** security group.<br>- The service has the **Contributor** role or a custom role with similar permissions on the resources it needs to access.|
 |**Service compatibility**| The service you intend to authorize supports OAuth 2.0 integration with Azure DevOps.|
 
 ## Authorize a service

@@ -213,12 +213,12 @@ If you configure the [Azure DevOps MCP Server](../../mcp-server/mcp-server-overv
 
 | Task | Example prompt |
 |------|----------------|
-| **Investigate permission changes** | `Show me all permission changes in <organization-name> over the last 7 days, including who made the change and what was modified` |
-| **Track user activity after incident** | `Find all audit events for <user-email> in <organization-name> from the last 48 hours, grouped by action category` |
-| **Detect unusual deletions** | `List all resource deletions in <organization-name> in the past 30 days, including repos, pipelines, and projects, and who performed each deletion` |
-| **Audit PAT and token events** | `Show me all PAT creation, modification, and revocation events in <organization-name> this month and flag any full-scope tokens that were created` |
-| **Review policy modifications** | `What security policy or organization setting changes were made in <organization-name> in the last 14 days and by whom?` |
-| **Compliance spot check** | `Generate a summary of audit activity in <organization-name> for the last 90 days, grouped by category - permissions, groups, policy changes, and resource modifications` |
+| Investigate permission changes | `Show me all permission changes in <organization-name> over the last 7 days, including who made the change and what was modified` |
+| Track user activity after incident | `Find all audit events for <user-email> in <organization-name> from the last 48 hours, grouped by action category` |
+| Detect unusual deletions | `List all resource deletions in <organization-name> in the past 30 days, including repos, pipelines, and projects, and who performed each deletion` |
+| Audit PAT and token events | `Show me all PAT creation, modification, and revocation events in <organization-name> this month and flag any full-scope tokens that were created` |
+| Review policy modifications | `What security policy or organization setting changes were made in <organization-name> in the last 14 days and by whom?` |
+| Compliance spot check | `Generate a summary of audit activity in <organization-name> for the last 90 days, grouped by category - permissions, groups, policy changes, and resource modifications` |
 
 > [!TIP]
 > If you're using Visual Studio Code, [agent mode](/visualstudio/ide/copilot-chat-context#agent-mode) is especially helpful for correlating audit events across multiple categories to investigate security incidents.

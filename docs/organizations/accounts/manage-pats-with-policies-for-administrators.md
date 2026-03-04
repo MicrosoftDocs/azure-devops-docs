@@ -159,12 +159,12 @@ If you have the [Azure DevOps MCP Server](../../mcp-server/mcp-server-overview.m
 
 | Task | Example prompt |
 |------|----------------|
-| **Enforce least-privilege token policy** | `Restrict full-scoped PATs in <organization-name> and set the maximum lifetime to 90 days for all new tokens` |
-| **Generate a token compliance report** | `Show all PATs in <organization-name> that exceed the 90-day lifetime policy or have full access scope, grouped by user` |
-| **Prepare for Managed Identity migration** | `List all PATs in <organization-name> used for automated pipelines and suggest which ones could be replaced with managed identity or service principal authentication` |
-| **Set up allowlisted PATs** | `Configure the PAT policy for <organization-name> to allow only tokens with Code Read, Work Items Read, and Build Execute scopes` |
-| **Monitor policy violations** | `Show me the audit log entries for PAT creation events in <organization-name> over the last 30 days that violated any active policy` |
-| **Review token usage patterns** | `For each user in <organization-name>, show the count of active PATs, their broadest scope, and when each was last used` |
+| Enforce least-privilege token policy | `Restrict full-scoped PATs in <organization-name> and set the maximum lifetime to 90 days for all new tokens` |
+| Generate a token compliance report | `Show all PATs in <organization-name> that exceed the 90-day lifetime policy or have full access scope, grouped by user` |
+| Prepare for Managed Identity migration | `List all PATs in <organization-name> used for automated pipelines and suggest which ones could be replaced with managed identity or service principal authentication` |
+| Set up allowlisted PATs | `Configure the PAT policy for <organization-name> to allow only tokens with Code Read, Work Items Read, and Build Execute scopes` |
+| Monitor policy violations | `Show me the audit log entries for PAT creation events in <organization-name> over the last 30 days that violated any active policy` |
+| Review token usage patterns | `For each user in <organization-name>, show the count of active PATs, their broadest scope, and when each was last used` |
 
 > [!TIP]
 > If you're using Visual Studio Code, [agent mode](/visualstudio/ide/copilot-chat-context#agent-mode) is especially helpful for auditing PAT usage and identifying tokens that need rotation or revocation.

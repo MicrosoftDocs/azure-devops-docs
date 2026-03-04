@@ -123,12 +123,12 @@ If you have the [Azure DevOps MCP Server](../../mcp-server/mcp-server-overview.m
 
 | Task | Example prompt |
 |------|----------------|
-| **Map Entra groups to project roles** | `Add the <entra-group-name> Microsoft Entra group to the Contributors group in the <project-name> project in <organization-name>` |
-| **Audit nested group permissions** | `Show the effective permissions for the <entra-group-name> group in <project-name>, including any inherited from parent groups` |
-| **Find groups with excessive access** | `List all Microsoft Entra groups in <organization-name> that have Project Collection Administrator or Project Administrator permissions` |
-| **Compare group access across projects** | `Show me which projects the <entra-group-name> group has access to in <organization-name> and at what permission level` |
-| **Clean up stale group assignments** | `Find Microsoft Entra groups in <organization-name> that have no active members or whose members haven't signed in for 90 days` |
-| **Set up cross-project team access** | `Add the <entra-group-name> group to the Contributors role in projects <project-1>, <project-2>, and <project-3> in <organization-name>` |
+| Map Entra groups to project roles | `Add the <entra-group-name> Microsoft Entra group to the Contributors group in the <project-name> project in <organization-name>` |
+| Audit nested group permissions | `Show the effective permissions for the <entra-group-name> group in <project-name>, including any inherited from parent groups` |
+| Find groups with excessive access | `List all Microsoft Entra groups in <organization-name> that have Project Collection Administrator or Project Administrator permissions` |
+| Compare group access across projects | `Show me which projects the <entra-group-name> group has access to in <organization-name> and at what permission level` |
+| Clean up stale group assignments | `Find Microsoft Entra groups in <organization-name> that have no active members or whose members haven't signed in for 90 days` |
+| Set up cross-project team access | `Add the <entra-group-name> group to the Contributors role in projects <project-1>, <project-2>, and <project-3> in <organization-name>` |
 
 > [!TIP]
 > If you're using Visual Studio Code, [agent mode](/visualstudio/ide/copilot-chat-context#agent-mode) is especially helpful for auditing group membership and permissions across multiple projects.

@@ -120,12 +120,12 @@ If you have the [Azure DevOps MCP Server](../../mcp-server/mcp-server-overview.m
 
 | Task | Example prompt |
 |------|----------------|
-| **Offboard a team member** | `Remove <user-email> from all teams and projects in <organization-name> and show me what work items were assigned to them` |
-| **Find orphaned assignments** | `List all active work items, pull requests, and pending approvals assigned to <user-email> in <organization-name> before I remove them` |
-| **Bulk clean up inactive users** | `Show me all users in <organization-name> who haven't signed in for over 180 days and their current access levels` |
-| **Pre-removal impact check** | `Before removing <user-email> from <organization-name>, show their team memberships, owned pipelines, and any service connections they created` |
-| **Reassign and remove** | `Transfer all work items currently assigned to <user-email> in <project-name> to <new-user-email>, then remove them from the project` |
-| **Audit removal history** | `Show me the audit log of users removed from <organization-name> in the last 30 days` |
+| Offboard a team member | `Remove <user-email> from all teams and projects in <organization-name> and show me what work items were assigned to them` |
+| Find orphaned assignments | `List all active work items, pull requests, and pending approvals assigned to <user-email> in <organization-name> before I remove them` |
+| Bulk clean up inactive users | `Show me all users in <organization-name> who haven't signed in for over 180 days and their current access levels` |
+| Pre-removal impact check | `Before removing <user-email> from <organization-name>, show their team memberships, owned pipelines, and any service connections they created` |
+| Reassign and remove | `Transfer all work items currently assigned to <user-email> in <project-name> to <new-user-email>, then remove them from the project` |
+| Audit removal history | `Show me the audit log of users removed from <organization-name> in the last 30 days` |
 
 > [!TIP]
 > If you're using Visual Studio Code, [agent mode](/visualstudio/ide/copilot-chat-context#agent-mode) is especially helpful for auditing user access and reviewing team memberships across projects.
