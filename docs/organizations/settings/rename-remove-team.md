@@ -1,5 +1,5 @@
 ---
-title: Rename or remove/delete a team 
+title: Rename or Remove a Team 
 titleSuffix: Azure DevOps 
 description: Learn how to rename or remove, delete a team in Azure DevOps. 
 ms.subservice: azure-devops-settings
@@ -24,7 +24,7 @@ When you rename a team, the new name automatically propagates throughout Azure D
 - Team backlogs and boards
 - Team dashboards
 
-Automatic renaming maintains access controls, project tracking, and dashboard configurations without manual updates. Removing a team deletes its configurations and reassigns its members to other teams, ensuring workflow continuity and organizational clarity.
+Automatic renaming maintains access controls, project tracking, and dashboard configurations without manual updates. Removing a team deletes its configuration settings, including dashboards, backlogs, and boards. The team's members are reassigned to other teams, ensuring workflow continuity and organizational clarity. Work item data remains unchanged. Team configurations can't be recovered after deletion.
 
 > [!TIP]    
 > Update any queries that reference the old team security group name.
@@ -39,40 +39,23 @@ Deleting a team removes all configuration settings, including dashboards, backlo
 
 ## Rename a team
 
-::: moniker range="azure-devops"
-
-> [!NOTE]   
-> To enable the user interface for the **New Teams Page**, see [Manage or enable features](../../project/navigation/preview-features.md).
-
-::: moniker-end
-
-#### [New Teams Page](#tab/preview-page) 
+#### [Web portal](#tab/preview-page) 
 
 ::: moniker range="azure-devops"
 
 1. From your project in the web portal, select **Project settings** > **Teams**. 
 
-   ![Screenshot of Open Project settings, and then Teams, new Teams page.](media/shared/open-project-settings-teams-preview.png)
-   
-2. Choose the team you want to rename, and then select **Settings**.  
+	:::image type="content" source="media/shared/open-project-settings-teams-preview.png" alt-text="Screenshot of Open Project settings, and then Teams, new Teams page.":::
 
-3. Under **Team Details**, enter a new name for the team. Optionally, add a new description.  
+1. Choose the team you want to rename, and then select **Settings**.  
 
-4. **Save** your changes.
+1. Under **Team Details**, enter a new name for the team. Optionally, add a new description.  
+
+1. **Save** your changes.
 
 ::: moniker-end
 
-[!INCLUDE [temp](../../includes/note-new-teams-not-supported.md)]  
-
-#### [Current page](#tab/current-page)
-
-1. From your project in the web portal, select **Project settings** > **Teams**. 
-
-   ![Screenshot of Open Project settings, and then Teams, current page.](media/shared/open-project-settings-team-new-nav.png)
-   
-2. Choose the team you want to rename. Under the Team Profile, enter the new name and optionally update the description. **Save** your changes. 
-
-To configure other team features, see [Manage teams and configure team tools](manage-teams.md).
+[!INCLUDE [temp](../../includes/note-new-teams-not-supported.md)]
 
 #### [Azure DevOps CLI](#tab/azure-devops-cli) 
 
@@ -80,7 +63,7 @@ To configure other team features, see [Manage teams and configure team tools](ma
 
 ::: moniker range="azure-devops"
 
-You can rename a team or its description using [Azure DevOps team update](/cli/azure/devops/team#az-devops-team-update). For more information, see [Get started with Azure DevOps CLI](../../cli/index.md).  
+You can rename a team or its description by using [Azure DevOps team update](/cli/azure/devops/team#az-devops-team-update). For more information, see [Get started with Azure DevOps CLI](../../cli/index.md).  
 
 > [!div class="tabbedCodeSnippets"]
 ```azurecli
@@ -92,28 +75,32 @@ az devops team update --team
 ```
 
 #### Parameters
-- **team**: Optional. Name or ID of a team.  
-- **description**: Optional. Description to apply to the team.  
-- **name**: Optional. Name to apply to rename the team.   
-- **org**: Optional. URL of organization. You can configure the default organization using `az devops configure -d org=URL`. Required if not configured as default or picked up via git config.
-- **project**: Optional. Name or ID of the project. Example: --project "Fabrikam Fiber."  You can configure the default project using `az devops configure -d project=NAME_OR_ID`. Required if not configured as default or picked up via git config.
+
+- `team`: Optional. Name or ID of a team.  
+- `description`: Optional. Description to apply to the team.  
+- `name`: Optional. Name to apply to rename the team.   
+- `org`: Optional. URL of organization. You can configure the default organization by using `az devops configure -d org=URL`. Required if not configured as default or picked up via git config.
+- `project`: Optional. Name or ID of the project. Example: `--project "Fabrikam Fiber"`. You can configure the default project by using `az devops configure -d project=NAME_OR_ID`. Required if not configured as default or picked up via git config.
 
 #### Example
 
-For example, the following command renames the Account Management team to Organization Management. For addition output formats, see [Output formats for Azure CLI commands](/cli/azure/format-output-azure-cli). 
+The following command renames the Account Management team to Organization Management. The Azure CLI uses JSON as its default output format. For additional output formats, see [Output formats for Azure CLI commands](/cli/azure/format-output-azure-cli). 
 
 > [!div class="tabbedCodeSnippets"]
 ```azurecli
 az devops team update --team "Account Management" --name "Organization Management" --description "Management team focused on creating and maintaining customer services for organizations"
+```
+
+```output
 {
   "description": "Management team focused on creating and maintaining customer services for organizations",
-  "id": "7f099146-29a2-4798-9949-77c9f5f79653",
+  "id": "a0a0a0a0-bbbb-cccc-dddd-e1e1e1e1e1e1",
   "identity": {
     "descriptor": "Microsoft.TeamFoundation.Identity;S-1-9-1551374245-227716950-993605186-2584159299-2630527068-1-4146437839-3810360391-2614259327-2922617790",
-    "id": "7f099146-29a2-4798-9949-77c9f5f79653",
+    "id": "a0a0a0a0-bbbb-cccc-dddd-e1e1e1e1e1e1",
     "isActive": true,
     "isContainer": true,
-    "masterId": "7f099146-29a2-4798-9949-77c9f5f79653",
+    "masterId": "a0a0a0a0-bbbb-cccc-dddd-e1e1e1e1e1e1",
     "memberOf": [],
     "members": [],
     "metaTypeId": 255,
@@ -128,11 +115,11 @@ az devops team update --team "Account Management" --name "Organization Managemen
       },
       "Domain": {
         "$type": "System.String",
-        "$value": "vstfs:///Classification/TeamProject/56af920d-393b-4236-9a07-24439ccaa85c"
+        "$value": "vstfs:///Classification/TeamProject/b1b1b1b1-cccc-dddd-eeee-f2f2f2f2f2f2"
       },
       "LocalScopeId": {
         "$type": "System.String",
-        "$value": "56af920d-393b-4236-9a07-24439ccaa85c"
+        "$value": "b1b1b1b1-cccc-dddd-eeee-f2f2f2f2f2f2"
       },
       "Microsoft.TeamFoundation.Team": {
         "$type": "System.String",
@@ -144,7 +131,7 @@ az devops team update --team "Account Management" --name "Organization Managemen
       },
       "ScopeId": {
         "$type": "System.String",
-        "$value": "e03662ad-bec4-4a33-bb0f-86e365ee2d88"
+        "$value": "c2c2c2c2-dddd-eeee-ffff-a3a3a3a3a3a3"
       },
       "ScopeName": {
         "$type": "System.String",
@@ -156,7 +143,7 @@ az devops team update --team "Account Management" --name "Organization Managemen
       },
       "SecuringHostId": {
         "$type": "System.String",
-        "$value": "380ed149-33d0-4d78-a7ed-89921802f389"
+        "$value": "d3d3d3d3-eeee-ffff-aaaa-b4b4b4b4b4b4"
       },
       "SecurityGroup": {
         "$type": "System.String",
@@ -175,11 +162,11 @@ az devops team update --team "Account Management" --name "Organization Managemen
     "resourceVersion": 2,
     "subjectDescriptor": "vssgp.Uy0xLTktMTU1MTM3NDI0NS0yMjc3MTY5NTAtOTkzNjA1MTg2LTI1ODQxNTkyOTktMjYzMDUyNzA2OC0xLTQxNDY0Mzc4MzktMzgxMDM2MDM5MS0yNjE0MjU5MzI3LTI5MjI2MTc3OTA"
   },
-  "identityUrl": "https://spsprodeus21.vssps.visualstudio.com/A380ed149-33d0-4d78-a7ed-89921802f389/_apis/Identities/7f099146-29a2-4798-9949-77c9f5f79653",
+  "identityUrl": "https://spsprodeus21.vssps.visualstudio.com/A380ed149-33d0-4d78-a7ed-89921802f389/_apis/Identities/a0a0a0a0-bbbb-cccc-dddd-e1e1e1e1e1e1",
   "name": "Organization Management",
-  "projectId": "56af920d-393b-4236-9a07-24439ccaa85c",
+  "projectId": "b1b1b1b1-cccc-dddd-eeee-f2f2f2f2f2f2",
   "projectName": "Fabrikam Fiber",
-  "url": "https://dev.azure.com/fabrikam/_apis/projects/56af920d-393b-4236-9a07-24439ccaa85c/teams/7f099146-29a2-4798-9949-77c9f5f79653"
+  "url": "https://dev.azure.com/fabrikam/_apis/projects/b1b1b1b1-cccc-dddd-eeee-f2f2f2f2f2f2/teams/a0a0a0a0-bbbb-cccc-dddd-e1e1e1e1e1e1"
 }
 ```
 ::: moniker-end
@@ -193,57 +180,33 @@ az devops team update --team "Account Management" --name "Organization Managemen
 When a project gets created, a default team also gets created based on the project name. 
 
 1. Open **Project settings** > **Teams**.
-2. Select :::image type="icon" source="../../media/icons/more-actions.png" border="false"::: **More options** next to the team you want as the new default, and then select **Set team as project default**.   
+
+1. Select :::image type="icon" source="../../media/icons/more-actions.png" border="false"::: **More options** next to the team you want as the new default, and then select **Set team as project default**.   
 
 ## Delete a team 
 
 You can delete any team except the default team. At least one team must be defined for a project.
 
 > [!IMPORTANT]   
-> Deleting a team removes all team configuration settings (dashboards, backlogs, boards). Work item data remains unchanged. Team configurations cannot be recovered once deleted.
+> Deleting a team removes all team configuration settings, including dashboards, backlogs, and boards. Work item data remains unchanged. Team configurations can't be recovered once deleted.
 
-::: moniker range="azure-devops"
-
-> [!NOTE]   
-> To enable the user interface for the **New Teams Page**, see [Manage or enable features](../../project/navigation/preview-features.md).
-
-::: moniker-end
-
-#### [New Teams Page](#tab/preview-page) 
+#### [Web portal](#tab/preview-page) 
 
 ::: moniker range="azure-devops"
 
 1. From your project in the web portal, select **Project settings** > **Teams** as shown in the previous section.
 
-2. Select the team you want to delete and then select **Settings**. 
-3. Scroll down and select **Delete Team**.    
+1. Select the team you want to delete and then select **Settings**.
 
-4. Select **Delete** in the confirmation box to complete the delete operation. 
+1. Scroll down and select **Delete Team**.    
 
-   > [!div class="mx-imgBorder"]
-   > ![Screenshot of Delete team confirmation dialog, new teams page.](media/rename-remove-team/delete-team-confirmation.png) 
-   
+1. Select **Delete** in the confirmation box to complete the delete operation. 
+
+  :::image type="content" source="media/rename-remove-team/delete-team-confirmation.png" alt-text="Screenshot of Delete team confirmation dialog, new teams page.":::    
+
 ::: moniker-end
 
 [!INCLUDE [temp](../../includes/note-new-teams-not-supported.md)]  
-
-#### [Current page](#tab/current-page) 
-
-::: moniker range="<=azure-devops"
-
-1. From your project in the web portal, select **Project settings** > **Teams** > **&hellip;** for the team you want to delete, and then select **Delete**.   
-
-	> [!div class="mx-imgBorder"]  
-	> ![Screenshot of Project Settings > Teams > Delete team sequence of choices.](media/add-team/delete-team-vert.png)  
-
-	> [!IMPORTANT]   
-	> Deleting a team deletes all team configuration settings, including team dashboards, backlogs, and boards. Data defined for work items assigned to the team are left unchanged. Once deleted, you can't recover the team configurations. 
-
-2. To complete the delete operation, you must enter the name of the work item type as shown in the following example. 
-
-	![Screenshot of Delete team confirmation dialog.](media/add-team/multiple-teams-delete-team-confirmation-dialog.png)
-
-::: moniker-end
 
 #### [Azure DevOps CLI](#tab/azure-devops-cli)
 
@@ -251,7 +214,7 @@ You can delete any team except the default team. At least one team must be defin
 
 ::: moniker range="azure-devops"
 
-You can delete a team using [az devops team delete](/cli/azure/devops/team#az-devops-team-delete).  
+You can delete a team by using [az devops team delete](/cli/azure/devops/team#az-devops-team-delete).  
 
 > [!div class="tabbedCodeSnippets"]
 ```azurecli
@@ -262,17 +225,16 @@ az devops team delete --id
 
 #### Parameters
 
-- **id**: Required. The ID of the team to delete.
-- **project**: Optional. Name or ID of the project. Example: --project "Fabrikam Fiber."
-- **yes**: Optional. Specify to not prompt for confirmation. 
+- `id`: Required. The ID of the team to delete.
+- `project`: Optional. Name or ID of the project. Example: `--project "Fabrikam Fiber"`
+- `yes`: Optional. Specify to not prompt for confirmation. 
 
 #### Example
 
 > [!div class="tabbedCodeSnippets"]
 ```azurecli
-az devops team delete --id 5385556a-254d-4ad4-bd11-71955e3a7070 --project "Fabrikam Fiber"
+az devops team delete --id a0a0a0a0-bbbb-cccc-dddd-e1e1e1e1e1e1 --project "Fabrikam Fiber"
 Are you sure you want to delete this team? (y/n): y
-
 ```
 
 ::: moniker-end
@@ -305,7 +267,7 @@ If you use GitHub Copilot, the [Azure DevOps MCP Server](../../mcp-server/overvi
 
 ## Related content
 
-- [Add teams](add-teams.md)  
+- [Create or add a team](add-teams.md)  
 - [Learn about teams and Agile tools](about-teams-and-settings.md)  
 - [Use the Azure DevOps Teams CLI](/cli/azure/devops/team)  
 - [Use the Teams REST API](/rest/api/azure/devops/core/teams)  
