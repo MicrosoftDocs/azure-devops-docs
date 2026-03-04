@@ -19,7 +19,8 @@ ms.subservice: azure-devops-repos-git
 Remove unused Git repos from your project when they're no longer needed. The steps in this article show how to delete a Git repo from your Azure DevOps project. If you want to delete the entire project, see [Delete a project](../../organizations/projects/delete-project.md).
 
 > [!IMPORTANT]
-> You can't remove a repo if it's the only Git repo in the Azure DevOps project. If you need to delete the only Git repo in a project, [create a new Git repo](create-new-repo.md) first, then delete the repo.
+> - Deleted Git repositories are soft-deleted and remain in a recycle bin for 30 days. During this period, you can restore a deleted repository by using the [Repositories - Restore Repository From Recycle Bin](/rest/api/azure/devops/git/repositories/restore-repository-from-recycle-bin) REST API. After 30 days, repositories are permanently deleted and can't be recovered.
+> - You can't remove a repo if it's the only Git repo in the Azure DevOps project. If you need to delete the only Git repo in a project, [create a new Git repo](create-new-repo.md) first, then delete the repo.
 
 ## Prerequisites 
 
@@ -36,33 +37,21 @@ Remove unused Git repos from your project when they're no longer needed. The ste
 ## Delete a Git repo from the web 
 
 > [!TIP]
-> Consider [renaming](repo-rename.md) the repo and [locking](lock-branches.md) its default branch instead of removing it.
-
-> [!NOTE]
-> Deleted Git repositories are soft-deleted and remain in a recycle bin for 30 days. During this period, you can restore a deleted repository by using the [Repositories - Restore Repository From Recycle Bin](/rest/api/azure/devops/git/repositories/restore-repository-from-recycle-bin) REST API. After 30 days, repositories are permanently deleted and can't be recovered.
- 
+> Instead of deleting a repo, consider [renaming](repo-rename.md) it with an `_archived` prefix and [locking](lock-branches.md) its default branch. This approach retires the repo from active use while preserving commit history, pull request records, and existing links.
 
 # [Browser](#tab/browser)
 
-::: moniker range="<=azure-devops"
+1. Sign in to your project (`https://dev.azure.com/{Your-Organization}/{Your-Project}`).
+2. Select **Project settings**.
+3. Select **Repositories** > the name of the repository from the **Repositories** list > **...** more actions > **Delete**.
 
-1. Select **Repos**, **Files**.
+   ![Screenshot showing the Delete repository action.](media/repo-mgmt/delete-repository-action.png)
 
-   ![View your branches](media/repos-navigation/repos-files.png)
+4. To confirm the deletion of the repository, enter the repo's name and select **Delete**.
 
-2. From the repo drop-down, select **Manage repositories**.
+   ![Screenshot showing the Delete repository confirmation dialog.](media/repo-mgmt/delete-repository-confirm.png)
 
-   ![Manage repositories](media/repo-mgmt/manage-repositories.png)
-
-3. Select the name of the repository from the **Repositories** list, choose the **...** menu, and then choose **Delete repository**.
-
-   ![Delete repository](media/repo-mgmt/delete-repository.png)
-
-4. Confirm the deletion of the repository by typing the repo's name and selecting **Delete**.
-
-   ![Delete repository confirm](media/repo-mgmt/delete-repository-confirm.png)
-
-::: moniker-end
+   The repository is removed from the **Repositories** list. It remains in the recycle bin for 30 days before permanent deletion.
 
 # [Azure DevOps CLI](#tab/azure-devops-cli)
 
