@@ -31,7 +31,7 @@ Work items, tags, test plans, and other test artifacts are subject to the securi
 
 | Category | Requirements |
 |--------------|-------------|
-| **Permissions** | Member of the **Project Administrators** group or explicit permissions through the individual object security dialog.|
+| Permissions | Member of the **Project Administrators** group or explicit permissions through the individual object security dialog.|
 
 > [!NOTE]
 > TFVC only supports a single repository per project. You can set permissions for the repository or repo folders/branches, which inherit from the repo.

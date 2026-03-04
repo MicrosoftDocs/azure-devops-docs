@@ -3,12 +3,13 @@ title: Add and Manage Information Banners
 titleSuffix: Azure DevOps 
 description: Learn how to add, update, or remove an information banner to your organization or collection.
 ms.subservice: azure-devops-settings
-ms.custom: devx-track-azurecli
+ms.custom: devx-track-azurecli, copilot-scenario-highlight
 ms.author: chcomley
 author: chcomley
+ai-usage: ai-assisted
 ms.topic: how-to
 monikerRange: "<=azure-devops"
-ms.date: 02/27/2026
+ms.date: 03/03/2026
 ---
 
 # Add and manage information banners in Azure DevOps
@@ -25,14 +26,16 @@ The following image shows an information message. Users can close the message by
 
 We limit banners to 30 words, prioritized by level. So, if you post both a warning message and an information message, the information message only shows after the user closes the warning message or you delete it.
 
+[!INCLUDE [ai-assistance-mcp-server-tip](../../includes/ai-assistance-mcp-server-tip.md)]
+
 ## Prerequisites 
 
 ::: moniker range="azure-devops"
 
 | Category | Requirements |
 |--------------|-------------|
-|**Permissions** | Member of the [Project Collection Administrators](../security/change-organization-collection-level-permissions.md) group.|
-|**Extensions** |- [Banner Settings](https://marketplace.visualstudio.com/items?itemName=ms-eswm.banner-settings-hub). For more information, see [Install extensions](../../marketplace/install-extension.md).<br>- [Azure DevOps CLI](../../cli/index.md).<br>- Sign into Azure DevOps using the `az login` command.<br>- For the examples in this article, set the default organization using `az devops configure --defaults organization=<your-organization-URL>`.|
+|Permissions | Member of the [Project Collection Administrators](../security/change-organization-collection-level-permissions.md) group.|
+|Extensions |- [Banner Settings](https://marketplace.visualstudio.com/items?itemName=ms-eswm.banner-settings-hub). For more information, see [Install extensions](../../marketplace/install-extension.md).<br>- [Azure DevOps CLI](../../cli/index.md).<br>- Sign into Azure DevOps using the `az login` command.<br>- For the examples in this article, set the default organization using `az devops configure --defaults organization=<your-organization-URL>`.|
 
 ::: moniker-end
 
@@ -40,18 +43,18 @@ We limit banners to 30 words, prioritized by level. So, if you post both a warni
 
 | Category | Requirements |
 |--------------|-------------|
-|**Permissions** | Member of the [Project Collection Administrators](../security/change-organization-collection-level-permissions.md) group.|
-|**Extensions** | [Banner Settings](https://marketplace.visualstudio.com/items?itemName=ms-eswm.banner-settings-hub). For more information, see [Install extensions](../../marketplace/install-extension.md).|
+|Permissions | Member of the [Project Collection Administrators](../security/change-organization-collection-level-permissions.md) group.|
+|Extensions | [Banner Settings](https://marketplace.visualstudio.com/items?itemName=ms-eswm.banner-settings-hub). For more information, see [Install extensions](../../marketplace/install-extension.md).|
 
 ::: moniker-end
 
 ## Manage banners using the Banner Settings extension 
 
 ::: moniker range="azure-devops"
-The Banner Settings extension provides a settings pane under **Organization settings** to add and manage sitewide banners. The extension supports the following features: 
+The Banner Settings extension provides a settings pane under Organization settings to add and manage sitewide banners. The extension supports the following features: 
 ::: moniker-end
 ::: moniker range="< azure-devops"
-The Banner Settings extension provides a settings pane under **Collection settings** to add and manage sitewide banners. The extension supports the following features: 
+The Banner Settings extension provides a settings pane under Collection settings to add and manage sitewide banners. The extension supports the following features: 
 ::: moniker-end
 
 - Show banners on any page in Azure DevOps
@@ -63,11 +66,11 @@ The Banner Settings extension provides a settings pane under **Collection settin
 
 ### Open Organization settings
 
-To add or delete a banner, open **Organization settings**, scroll down to the **Extensions** section, and choose **Banner**.
+To add or delete a banner, open Organization settings, scroll down to the Extensions section, and choose Banner.
 
 Organization settings configure resources for all projects respectively for the entire organization. For an overview of all organization settings, see [Project Collection Administrator role and managing collections of projects](about-settings.md#admin).
 
-- Choose the :::image type="icon" source="../../media/icons/project-icon.png" border="false"::: Azure DevOps logo to open **Projects**, and then choose **Organization settings**.
+- Choose the :::image type="icon" source="../../media/icons/project-icon.png" border="false"::: Azure DevOps logo to open Projects, and then choose Organization settings.
 
   :::image type="content" source="../../media/settings/open-admin-settings-vert.png" alt-text="Screenshot of opening Organization settings.":::
 
@@ -77,11 +80,11 @@ Organization settings configure resources for all projects respectively for the 
 
 ### Open Admin settings
 
-To add or delete a banner, open **Admin settings**, scroll down to the **Extensions** section, and choose **Banner**. 
+To add or delete a banner, open Admin settings, scroll down to the Extensions section, and choose Banner. 
 
 Admin settings configure resources for all projects in a project collection. For an overview of all collection settings, see [Project collection administrator role and managing collections of projects](about-settings.md#admin).
 
-- Choose the :::image type="icon" source="../../media/icons/project-icon.png" border="false"::: Azure DevOps logo to open **Collections**, and then choose **Admin settings**.
+- Choose the :::image type="icon" source="../../media/icons/project-icon.png" border="false"::: Azure DevOps logo to open Collections, and then choose Admin settings.
 
   :::image type="content" source="../../media/settings/open-admin-settings-server.png" alt-text="Screenshot of opening Admin settings.":::
 
@@ -91,7 +94,7 @@ Admin settings configure resources for all projects in a project collection. For
 
 #### [Web portal](#tab/browser)
 
-1. If no banners are defined, select **Create a new banner**. Otherwise, select **Edit more** for the banner and go to step 3.
+1. If no banners are defined, select Create a new banner. Otherwise, select Edit more for the banner and go to step 3.
 
 	::: moniker range="azure-devops"
 	:::image type="content" source="media/banners/open-banner-extension-cloud.png" alt-text="Screenshot showing Create first banner, on-premises in Azure Devops.":::
@@ -100,13 +103,13 @@ Admin settings configure resources for all projects in a project collection. For
 	:::image type="content" source="media/banners/open-banner-extension-on-premises.png" alt-text="Screenshot showing Create first banner, on-premises."::: 
 	::: moniker-end
 
-1. Enter the banner text into the text box. Select **Edit more** to change the message level and set the expiration date. 
+1. Enter the banner text into the text box. Select Edit more to change the message level and set the expiration date. 
 
 	:::image type="content" source="media/banners/banner-extension-test-message.png" alt-text="Screenshot showing Add test banner message."::: 
 
-1. **Save** your changes.   
+1. Save your changes.   
 
-1. (Optional) **Delete all banners** or select the trash can icon to delete a specific banner.
+1. (Optional) Delete all banners or select the trash can icon to delete a specific banner.
 
 #### [Azure CLI](#tab/AzureCLI/)
 
@@ -320,6 +323,28 @@ az devops admin banner update --id f5f5f5f5-aaaa-bbbb-cccc-d6d6d6d6d6d6 --messag
 ::: moniker-end
 
 * * *
+
+<a id="use-ai-assistance"></a>
+
+## Use AI to manage information banners
+
+[!INCLUDE [ai-assistance-mcp-server-tip](../../includes/ai-assistance-mcp-server-tip.md)]
+
+If you use GitHub Copilot, the [Azure DevOps MCP Server](../../mcp-server/mcp-server-overview.md) can help you create, update, and manage organization-wide information banners through natural language prompts.
+
+### Example prompts for banner management
+
+| Task | Example prompt |
+|---|---|
+| Announce a maintenance window | `Create a warning banner in my Azure DevOps organization that says 'Scheduled maintenance this Saturday 2am-6am UTC — expect intermittent service disruptions' and set it to expire after the maintenance window` |
+| Rotate banners for sprint milestones | `I want to display a different information banner at the start of each sprint with the sprint goals. Show me how to automate this with the Azure DevOps CLI so I can script it into our sprint kickoff process` |
+| Audit and clean up stale banners | `List all active banners in my organization using the CLI, show their expiration dates, and remove any that are past their expiration or no longer relevant` |
+| Communicate a policy change | `Post an error-level banner across our Azure DevOps organization announcing that all repos now require branch policies for main branches, effective next Monday, with a link to our wiki page explaining the new policy` |
+| Create banners for multiple collections | `I manage three Azure DevOps Server collections. Generate CLI commands to post the same maintenance notification banner to all three collections simultaneously` |
+| Set up a welcome banner for new users | `Create a persistent information banner that welcomes users to our Azure DevOps organization with a link to our onboarding wiki. Make sure it stays visible until I manually remove it` |
+
+> [!TIP]
+> For the best results, use these prompts in agent mode with the Azure DevOps MCP Server connected. Customize the prompts with your specific organization name, banner message, or schedule.
 
 ## Related content
 

@@ -9,7 +9,8 @@ author: chcomley
 ms.topic: how-to
 monikerRange: '<= azure-devops'
 ms.date: 03/03/2026
-ms.custom: sfi-image-nochange
+ms.custom: sfi-image-nochange, copilot-scenario-highlight
+ai-usage: ai-assisted
 ---
 
 # Rename or remove a team  
@@ -27,6 +28,10 @@ Automatic renaming maintains access controls, project tracking, and dashboard co
 
 > [!TIP]    
 > Update any queries that reference the old team security group name.
+
+Deleting a team removes all configuration settings, including dashboards, backlogs, and boards. Work item data remains unchanged. Team configurations cannot be recovered after deletion.
+ 
+[!INCLUDE [ai-assistance-mcp-server-tip](../../includes/ai-assistance-mcp-server-tip.md)]
 
 ## Prerequisites 
 
@@ -237,6 +242,28 @@ Are you sure you want to delete this team? (y/n): y
 [!INCLUDE [temp](../../includes/note-cli-not-supported.md)]  
 
 * * *
+
+<a id="use-ai-assistance"></a>
+
+## Use AI to rename or remove teams
+
+[!INCLUDE [ai-assistance-mcp-server-tip](../../includes/ai-assistance-mcp-server-tip.md)]
+
+If you use GitHub Copilot, the [Azure DevOps MCP Server](../../mcp-server/mcp-server-overview.md) can help you rename, reorganize, and remove teams through natural language prompts.
+
+### Example prompts for team rename and removal
+
+| Task | Example prompt |
+|---|---|
+| Plan a team rename | `I need to rename our 'Backend' team to 'Platform Engineering'. Walk me through the rename, explain which artifacts update automatically, and list anything I need to update manually like saved queries referencing the old security group name` |
+| Consolidate teams after a reorg | `After a reorganization, we need to merge the 'Services' and 'Infrastructure' teams into one 'Platform' team. Help me move members, reassign work items, update area paths, and then safely delete the old teams` |
+| Change the default team | `Our project's default team is still named after the original project. Help me create a new default team with a better name, transfer the default team's configuration, and then rename or remove the old one` |
+| Bulk-delete test teams | `I have 8 test teams left over from a proof of concept that are cluttering our project. Generate CLI commands to delete them all and confirm nothing important gets lost` |
+| Audit before removing a team | `Before I delete the 'Legacy-App' team, show me what will be lost — their dashboards, board configurations, and active work items — so I can preserve anything important first` |
+| Recover from an accidental team deletion | `Someone accidentally deleted our 'Release Engineering' team. What data was lost and what's the fastest way to recreate the team with similar settings, members, and area path assignments?` |
+
+> [!TIP]
+> For the best results, use these prompts in agent mode with the Azure DevOps MCP Server connected. Customize the prompts with your specific team names or project structure.
 
 ## Related content
 

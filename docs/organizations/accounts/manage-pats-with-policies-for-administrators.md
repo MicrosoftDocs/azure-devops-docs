@@ -7,9 +7,9 @@ ms.topic: how-to
 ms.author: chcomley
 author: chcomley
 ai-usage: ai-assisted
-ms.date: 02/24/2026
+ms.date: 03/03/2026
 monikerRange: 'azure-devops'
-ms.custom: pat-reduction
+ms.custom: pat-reduction, copilot-scenario-highlight
 ---
 
 # Manage personal access tokens using policies (for administrators)
@@ -24,6 +24,8 @@ Each section details the default behavior of the respective policies to help adm
 [!INCLUDE [use-microsoft-entra-reduce-pats](../../includes/use-microsoft-entra-reduce-pats.md)]
 
 Existing PATs, created through both the UI and APIs, remain valid for the rest of their lifespan. Update your existing PATs to comply with the new restrictions to ensure successful renewal.
+
+[!INCLUDE [ai-assistance-mcp-server-tip](../../includes/ai-assistance-mcp-server-tip.md)]
 
 ## Prerequisites
 
@@ -146,6 +148,27 @@ If Azure DevOps PATs are checked into public GitHub repositories, they're automa
 3. Select **Microsoft Entra**, find the *Automatically revoke leaked personal access tokens* policy and move the toggle to *off*.
 
 The policy is disabled and any PATs checked into public GitHub repositories remain active.
+
+<a id="use-ai-assistance"></a>
+
+## Use AI to manage PAT policies
+
+If you have the [Azure DevOps MCP Server](../../mcp-server/mcp-server-overview.md) configured, you can use AI assistants to manage and audit personal access token policies using natural language prompts. The MCP Server provides your AI assistant with secure access to your Azure DevOps data, allowing you to check policy settings, list tokens, and review PAT activity without navigating through the web interface.
+
+### Example prompts for managing PAT policies
+
+| Task | Example prompt |
+|------|----------------|
+| Enforce least-privilege token policy | `Restrict full-scoped PATs in <organization-name> and set the maximum lifetime to 90 days for all new tokens` |
+| Generate a token compliance report | `Show all PATs in <organization-name> that exceed the 90-day lifetime policy or have full access scope, grouped by user` |
+| Prepare for Managed Identity migration | `List all PATs in <organization-name> used for automated pipelines and suggest which ones could be replaced with managed identity or service principal authentication` |
+| Set up allowlisted PATs | `Configure the PAT policy for <organization-name> to allow only tokens with Code Read, Work Items Read, and Build Execute scopes` |
+| Monitor policy violations | `Show me the audit log entries for PAT creation events in <organization-name> over the last 30 days that violated any active policy` |
+| Review token usage patterns | `For each user in <organization-name>, show the count of active PATs, their broadest scope, and when each was last used` |
+
+> [!TIP]
+> If you're using Visual Studio Code, [agent mode](/visualstudio/ide/copilot-chat-context#agent-mode) is especially helpful for auditing PAT usage and identifying tokens that need rotation or revocation.
+> - To avoid using stale or cached data from previous queries, add to your prompt, `Do not use previously fetched data`.
 
 ## Next step
 

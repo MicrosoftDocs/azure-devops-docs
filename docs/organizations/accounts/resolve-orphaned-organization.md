@@ -8,8 +8,9 @@ ms.topic: how-to
 ms.author: chcomley
 author: chcomley
 ai-usage: ai-assisted
-ms.date: 10/24/2024
+ms.date: 03/02/2026
 monikerRange: 'azure-devops'
+ms.custom: copilot-scenario-highlight
 ---
 
 # Assign an owner to an orphaned organization
@@ -17,6 +18,9 @@ monikerRange: 'azure-devops'
 [!INCLUDE [version-eq-azure-devops](../../includes/version-eq-azure-devops.md)]
 
 When the organization owner and all project collection administrators are inactive, the organization is considered orphaned. An orphaned organization doesn't have an administrator, so there's no way to transfer administrator rights to another user.
+
+[!INCLUDE [ai-assistance-mcp-server-tip](../../includes/ai-assistance-mcp-server-tip.md)]
+
 
 But, organizations connected to Microsoft Entra ID can transfer ownership to an active user.
 
@@ -75,9 +79,29 @@ When your Azure DevOps Administrator in Microsoft Entra ID *isn't* a member of t
 
    You're redirected to the organization overview page. To transfer ownership to another user, see [Change organization owner](change-organization-ownership.md).
 
+<a id="use-ai-assistance"></a>
+
+## Use AI to resolve orphaned organizations
+
+If you have the [Azure DevOps MCP Server](../../mcp-server/mcp-server-overview.md) configured, you can use AI assistants to investigate orphaned organizations and gather ownership details using natural language prompts. The MCP Server provides your AI assistant with secure access to your Azure DevOps data, allowing you to check organization ownership, list administrators, and verify Microsoft Entra connections without navigating through the web interface.
+
+### Example prompts for resolving orphaned organizations
+
+| Task | Example prompt |
+|------|----------------|
+| Check organization owner | `Who is the current owner of the <organization-name> organization?` |
+| List administrators | `List all Project Collection Administrators in the <organization-name> organization` |
+| Check Microsoft Entra connection | `Is the <organization-name> organization connected to Microsoft Entra ID?` |
+| List organization members | `Show me all users in the <organization-name> organization and their last access dates` |
+| Verify your role | `What is my role and permissions in the <organization-name> organization?` |
+| List all organizations | `List all Azure DevOps organizations I have access to` |
+
+> [!TIP]
+> If you're using Visual Studio Code, [agent mode](/visualstudio/ide/copilot-chat-context#agent-mode) is especially helpful for investigating organization ownership and identifying inactive administrators.
+> - To avoid using stale or cached data from previous queries, add to your prompt, `Do not use previously fetched data`.
+
 ## Related content
 
-- [Change the organization owner](change-organization-ownership.md)
 - [Review administrator role permissions in Microsoft Entra ID](/azure/active-directory/users-groups-roles/directory-assign-admin-roles)
 - [Delete an organization](delete-your-organization.md)
 - [Get a list of organizations backed by Microsoft Entra ID](get-list-of-organizations-connected-to-microsoft-entra-id.md)
