@@ -1,13 +1,13 @@
 ---
-title: Timezone settings and usage
+title: Time Zone Settings and Usage
 titleSuffix: Azure DevOps  
-description: Understand time zones settings and usage in Azure DevOps  
+description: Understand time zone settings and usage in Azure DevOps.
 ms.subservice: azure-devops-settings
 ms.author: chcomley
 author: chcomley
 ms.topic: overview
 monikerRange: '<= azure-devops'
-ms.date: 02/29/2024
+ms.date: 03/03/2026
 ---
 
 # Time zone settings and usage
@@ -18,19 +18,19 @@ There are three time zone settings that can be referenced by Azure DevOps:
 
 - Your browser's settings for the time and date formats
 - Your organization or server's time and date formats
-- Your personal profile **Time and Locale** setting.
+- Your personal profile **Time and Locale** setting
 
-Most times displayed in the web portal are based on your browser settings for the time and date formats as well as non-pipeline timezones.
+Most times displayed in the web portal are based on your browser settings for the time and date formats, and for nonpipeline time zones.
 
-By default, all Azure DevOps organizations and user accounts are set to UTC (Coordinated Universal Time) irrespective of what zones they are hosted in. Even if your organization migrated from an on-premises server to Azure DevOps Services, your timezone is set to UTC time.
+By default, all Azure DevOps organizations and user accounts are set to UTC (Coordinated Universal Time) irrespective of what zones they're hosted in. Even if your organization migrated from an on-premises server to Azure DevOps Services, your time zone is set to UTC time.
 
-To configure the time zone settings, see [Change the time zone in Azure DevOps](../accounts/change-time-zone.md).
+To configure time zone settings, see [Change time zone](../accounts/change-time-zone.md).
 
 ## Organization time zone
 
-The organization time zone setting is the time zone setting that's used for data that doesn't specify a time zone. All date and time data is stored in UTC and localized using this setting if the time and date isn't localized using profile settings. In other words, when you set your organization to EST, all timestamps that don't follow client localization appear in EST time zone.
+The organization time zone setting is used for data that doesn't specify a time zone. All date and time data is stored in UTC and localized using this setting if the time and date isn't localized using profile settings. In other words, when you set your organization to EST, all timestamps that don't follow client localization appear in EST time zone.
 
-Most areas of Azure DevOps localize using your Profile settings, but the following areas don't: 
+Most areas of Azure DevOps localize using your profile settings, but the following areas don't: 
 
 - Audit TimeStamps are always in UTC.
 
