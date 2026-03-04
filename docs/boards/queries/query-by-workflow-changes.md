@@ -881,16 +881,16 @@ If you have the [Azure Boards MCP Server](../../mcp-server/mcp-server-overview.m
 
 | Task | Example prompt |
 |------|----------------|
-| Find reactivated bugs | ```copilot-prompt List all bugs that moved from Resolved back to Active in the last 30 days``` |
-| Track reassignments | ```copilot-prompt Find work items reassigned to <me> in the last 7 days``` |
-| Monitor state changes | ```copilot-prompt Show user stories whose state changed from Active to Closed during the current sprint``` |
-| Check workflow history | ```copilot-prompt List all work items where the Assigned To field changed in the last 2 weeks``` |
-| Spot ping-pong items | ```copilot-prompt Find bugs in <Contoso> that changed state more than 3 times in the last 30 days``` |
-| Track unassigned work | ```copilot-prompt List active work items in the current sprint for <Contoso> that have never been assigned to anyone``` |
-| Find workflow violations | ```copilot-prompt Show work items in <Contoso> that moved directly from New to Closed, skipping Active and Resolved``` |
-| Monitor team handoffs | ```copilot-prompt List work items in <Contoso> where the Assigned To changed from someone in area path <Contoso\\Dev> to someone in <Contoso\\QA> this sprint``` |
-| Identify abandoned work | ```copilot-prompt Show work items in <Contoso> that were moved to Active more than 2 weeks ago but have had no further state changes``` |
-| Audit reason codes | ```copilot-prompt List work items closed in <Contoso> this sprint grouped by the Reason field``` |
+| Find reactivated bugs | `List all bugs that moved from Resolved back to Active in the last 30 days` |
+| Track reassignments | `Find work items reassigned to <me> in the last 7 days` |
+| Monitor state changes | `Show user stories whose state changed from Active to Closed during the current sprint` |
+| Check workflow history | `List all work items where the Assigned To field changed in the last 2 weeks` |
+| Spot ping-pong items | `Find bugs in <Contoso> that changed state more than 3 times in the last 30 days` |
+| Track unassigned work | `List active work items in the current sprint for <Contoso> that have never been assigned to anyone` |
+| Find workflow violations | `Show work items in <Contoso> that moved directly from New to Closed, skipping Active and Resolved` |
+| Monitor team handoffs | `List work items in <Contoso> where the Assigned To changed from someone in area path <Contoso\\Dev> to someone in <Contoso\\QA> this sprint` |
+| Identify abandoned work | `Show work items in <Contoso> that were moved to Active more than 2 weeks ago but have had no further state changes` |
+| Audit reason codes | `List work items closed in <Contoso> this sprint grouped by the Reason field` |
 
 > [!NOTE]
 > Agent mode and the MCP Server use natural language, so you can adjust these prompts or ask follow-up questions to refine the results.

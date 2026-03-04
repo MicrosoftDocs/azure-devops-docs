@@ -40,10 +40,10 @@ Your product **Backlog**, **Board**, and sprint backlogs display work items base
 
 | Process | Work Item Type | Backlog Name |
 |---------|----------------|--------------|
-| [Basic](../get-started/plan-track-work.md) | Issue | **Issues** |
-| [Agile](../work-items/guidance/agile-process.md) | User Story | **Stories** |
-| [Scrum](../work-items/guidance/scrum-process.md) | Product Backlog Item | **Backlog items** |
-| [CMMI](../work-items/guidance/cmmi-process.md) | Requirement | **Requirements** |
+| [Basic](../get-started/plan-track-work.md) | Issue | Issues |
+| [Agile](../work-items/guidance/agile-process.md) | User Story | Stories |
+| [Scrum](../work-items/guidance/scrum-process.md) | Product Backlog Item | Backlog items |
+| [CMMI](../work-items/guidance/cmmi-process.md) | Requirement | Requirements |
 
 More filtering criteria:
 - **Area Path** matches one of your team's selected Area Paths
@@ -291,18 +291,18 @@ If you configure the [Azure DevOps MCP Server](../../mcp-server/mcp-server-overv
 
 | Task | Example prompt |
 |------|----------------|
-| **Get backlog items** | ```copilot-prompt Get list of work items for <Stories> backlog in <Contoso> project ``` |
-| **View my work items** | ```copilot-prompt Get my work items for project <Contoso> ``` |
-| **Create work items** | ```copilot-prompt Create a new user story in <Contoso> project with title '<Add search functionality>' ``` |
-| **Update work items** | ```copilot-prompt Update work item <1234> with Story Points = <5> and State = <Active> ``` |
-| **Prioritize backlog** | ```copilot-prompt Get all work items in the product backlog for <Contoso> and prioritize them for a <two-week> sprint with <three> developers ``` |
-| **Triage work** | ```copilot-prompt List work items for <Stories> backlog, find all security-related bugs, and assign the first <4> to the current iteration ``` |
-| **Find backlog gaps** | ```copilot-prompt List features in <Contoso> that have no child user stories``` |
-| **Estimate effort** | ```copilot-prompt Show all user stories in <Contoso> project that are active but have no story points assigned``` |
-| **Backlog health check** | ```copilot-prompt List all work items in <Contoso> backlog that have been in the New state for more than 30 days``` |
-| **Split large items** | ```copilot-prompt Show user stories in <Contoso> with story points greater than 13 that are still in the New state``` |
-| **Balance workload** | ```copilot-prompt Show the count of active backlog items per team member in area path <Contoso\\Frontend>``` |
-| **Track dependencies** | ```copilot-prompt List user stories in <Contoso> that have predecessor links to items that aren't yet completed``` |
+| Get backlog items | `Get list of work items for <Stories> backlog in <Contoso> project ` |
+| View my work items | `Get my work items for project <Contoso> ` |
+| Create work items | `Create a new user story in <Contoso> project with title '<Add search functionality>' ` |
+| Update work items | `Update work item <1234> with Story Points = <5> and State = <Active> ` |
+| Prioritize backlog | `Get all work items in the product backlog for <Contoso> and prioritize them for a <two-week> sprint with <three> developers ` |
+| Triage work | `List work items for <Stories> backlog, find all security-related bugs, and assign the first <4> to the current iteration ` |
+| Find backlog gaps | `List features in <Contoso> that have no child user stories` |
+| Estimate effort | `Show all user stories in <Contoso> project that are active but have no story points assigned` |
+| Backlog health check | `List all work items in <Contoso> backlog that have been in the New state for more than 30 days` |
+| Split large items | `Show user stories in <Contoso> with story points greater than 13 that are still in the New state` |
+| Balance workload | `Show the count of active backlog items per team member in area path <Contoso\\Frontend>` |
+| Track dependencies | `List user stories in <Contoso> that have predecessor links to items that aren't yet completed` |
 
 > [!TIP]
 > If you're using Visual Studio Code, [agent mode](/visualstudio/ide/copilot-chat-context#agent-mode) is especially helpful for troubleshooting complex backlog scenarios.

@@ -147,16 +147,16 @@ If you configure the [Azure DevOps MCP Server](../../mcp-server/mcp-server-overv
 
 | Task | Example prompt |
 |------|----------------|
-| **Assign items to a sprint** | ```copilot-prompt Move user stories 1234, 1235, and 1236 to Sprint 12 in project <Contoso>``` |
-| **Plan a sprint by priority** | ```copilot-prompt Assign the top 10 priority-1 backlog items to the current sprint in <Contoso>``` |
-| **Rebalance sprints** | ```copilot-prompt Move all incomplete items from Sprint 5 to Sprint 6 in project <Contoso>``` |
-| **Check sprint assignments** | ```copilot-prompt List all work items assigned to Sprint 12 for team <Contoso Team> grouped by assignee``` |
-| **Fill sprint to capacity** | ```copilot-prompt Assign unplanned backlog items to Sprint 13 until <Contoso Team> reaches 90% capacity, starting with the highest-priority items``` |
-| **Distribute evenly across members** | ```copilot-prompt Assign the next 12 backlog items to Sprint 12, distributing them evenly across <Jamal>, <Raisa>, and <Christie>``` |
-| **Find unplanned high-priority work** | ```copilot-prompt List all priority-1 backlog items not yet assigned to any sprint in project <Contoso>``` |
-| **Sprint carryover report** | ```copilot-prompt Which items were moved from Sprint 11 to Sprint 12? Show their original and current state``` |
-| **Validate sprint scope** | ```copilot-prompt What is the total story points assigned to Sprint 12 for <Contoso Team> and how does it compare to the last three sprints?``` |
-| **Assign by area path** | ```copilot-prompt Assign all unplanned backlog items under area path <Contoso>\\Backend to Sprint 13``` |
+| Assign items to a sprint | `Move user stories 1234, 1235, and 1236 to Sprint 12 in project <Contoso>` |
+| Plan a sprint by priority | `Assign the top 10 priority-1 backlog items to the current sprint in <Contoso>` |
+| Rebalance sprints | `Move all incomplete items from Sprint 5 to Sprint 6 in project <Contoso>` |
+| Check sprint assignments | `List all work items assigned to Sprint 12 for team <Contoso Team> grouped by assignee` |
+| Fill sprint to capacity | `Assign unplanned backlog items to Sprint 13 until <Contoso Team> reaches 90% capacity, starting with the highest-priority items` |
+| Distribute evenly across members | `Assign the next 12 backlog items to Sprint 12, distributing them evenly across <Jamal>, <Raisa>, and <Christie>` |
+| Find unplanned high-priority work | `List all priority-1 backlog items not yet assigned to any sprint in project <Contoso>` |
+| Sprint carryover report | `Which items were moved from Sprint 11 to Sprint 12? Show their original and current state` |
+| Validate sprint scope | `What is the total story points assigned to Sprint 12 for <Contoso Team> and how does it compare to the last three sprints?` |
+| Assign by area path | `Assign all unplanned backlog items under area path <Contoso>\\Backend to Sprint 13` |
 
 > [!NOTE]
 > If you're using Visual Studio Code, [agent mode](/visualstudio/ide/copilot-chat-context#agent-mode) is especially helpful for sprint planning scenarios.

@@ -112,16 +112,16 @@ If you have the [Azure Boards MCP Server](../../mcp-server/mcp-server-overview.m
 
 | Task | Example prompt |
 |------|----------------|
-| Find overloaded members | ```copilot-prompt Which team members are over capacity in Sprint 12 for <Contoso Team>? Show assigned work vs. capacity``` |
-| Reassign tasks | ```copilot-prompt Reassign task #5678 from <Jamal> to <me> in project <Contoso>``` |
-| Move excess items to backlog | ```copilot-prompt Move the lowest-priority user stories from Sprint 12 back to the backlog in <Contoso>``` |
-| Check sprint balance | ```copilot-prompt Show remaining capacity per team member for the current sprint in <Contoso Team>``` |
-| Identify at-risk items | ```copilot-prompt Which work items in Sprint 12 have remaining work greater than the days left in the sprint?``` |
-| Suggest scope cuts | ```copilot-prompt List the lowest-priority items in Sprint 12 that could be deferred to free up 16 hours of capacity``` |
-| Split oversized stories | ```copilot-prompt Find user stories in Sprint 12 with more than 20 hours of remaining task work and suggest how to split them``` |
-| Compare planned vs. actual | ```copilot-prompt Compare the original estimated hours vs. current remaining work for each team member in Sprint 12``` |
-| Redistribute after absence | ```copilot-prompt <Raisa> is out for the rest of Sprint 12. Show her active tasks and suggest team members to reassign them to based on capacity``` |
-| Mid-sprint health check | ```copilot-prompt We're halfway through Sprint 12. Summarize completion percentage, remaining work, and flag any items with no progress``` |
+| Find overloaded members | `Which team members are over capacity in Sprint 12 for <Contoso Team>? Show assigned work vs. capacity` |
+| Reassign tasks | `Reassign task #5678 from <Jamal> to <me> in project <Contoso>` |
+| Move excess items to backlog | `Move the lowest-priority user stories from Sprint 12 back to the backlog in <Contoso>` |
+| Check sprint balance | `Show remaining capacity per team member for the current sprint in <Contoso Team>` |
+| Identify at-risk items | `Which work items in Sprint 12 have remaining work greater than the days left in the sprint?` |
+| Suggest scope cuts | `List the lowest-priority items in Sprint 12 that could be deferred to free up 16 hours of capacity` |
+| Split oversized stories | `Find user stories in Sprint 12 with more than 20 hours of remaining task work and suggest how to split them` |
+| Compare planned vs. actual | `Compare the original estimated hours vs. current remaining work for each team member in Sprint 12` |
+| Redistribute after absence | `<Raisa> is out for the rest of Sprint 12. Show her active tasks and suggest team members to reassign them to based on capacity` |
+| Mid-sprint health check | `We're halfway through Sprint 12. Summarize completion percentage, remaining work, and flag any items with no progress` |
 
 > [!NOTE]
 > Agent mode and the MCP Server use natural language, so you can adjust these prompts or ask follow-up questions to refine the results.

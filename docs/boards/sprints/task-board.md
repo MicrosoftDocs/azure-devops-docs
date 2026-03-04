@@ -39,10 +39,10 @@ By effectively adding and managing tasks, your team gains a clear understanding 
 
 | Category | Requirements |
 |--------------|-------------|
-| **Project access** | [Project member](../../organizations/security/add-users-team-project.md). |
-| **Permissions** | - Member of the **Contributors** or **Project Administrators** security group. To get added, see [Add users to a project or team](../../organizations/security/add-users-team-project.md). <br> - To view or modify work items: **View work items in this node** and **Edit work items in this node** permissions set to **Allow**. By default, the **Contributors** group has this permission. For more information, see [Set permissions and access for work tracking](../../organizations/security/set-permissions-access-work-tracking.md). |
-| **Access levels** | To add work items and exercise all board features: At least [**Basic** access](../../organizations/security/access-levels.md). |
-| **Sprint backlog** | [Tasks on your sprint backlog](add-tasks.md). |
+| Project access | [Project member](../../organizations/security/add-users-team-project.md). |
+| Permissions | - Member of the **Contributors** or **Project Administrators** security group. To get added, see [Add users to a project or team](../../organizations/security/add-users-team-project.md). <br> - To view or modify work items: **View work items in this node** and **Edit work items in this node** permissions set to **Allow**. By default, the **Contributors** group has this permission. For more information, see [Set permissions and access for work tracking](../../organizations/security/set-permissions-access-work-tracking.md). |
+| Access levels | To add work items and exercise all board features: At least [**Basic** access](../../organizations/security/access-levels.md). |
+| Sprint backlog | [Tasks on your sprint backlog](add-tasks.md). |
 
 ::: moniker range=">= azure-devops-2022"
 
@@ -245,10 +245,10 @@ If you have the [Azure Boards MCP Server](../../mcp-server/mcp-server-overview.m
 
 | Task | Example prompt |
 |------|----------------|
-| Update task state | ```copilot-prompt Move tasks #3001, #3002, and #3003 to Done in project <Contoso>``` |
-| Update remaining work | ```copilot-prompt Set remaining work to 2 hours for task #3004 in project <Contoso>``` |
-| Sprint progress report | ```copilot-prompt Show a summary of task states (To Do, In Progress, Done) for Sprint 12 on <Contoso Team>``` |
-| Find stale tasks | ```copilot-prompt List all tasks in the current sprint for <Contoso Team> that are still in To Do state and were created more than 3 days ago``` |
+| Update task state | `Move tasks #3001, #3002, and #3003 to Done in project <Contoso>` |
+| Update remaining work | `Set remaining work to 2 hours for task #3004 in project <Contoso>` |
+| Sprint progress report | `Show a summary of task states (To Do, In Progress, Done) for Sprint 12 on <Contoso Team>` |
+| Find stale tasks | `List all tasks in the current sprint for <Contoso Team> that are still in To Do state and were created more than 3 days ago` |
 
 > [!NOTE]
 > Agent mode and the MCP Server use natural language, so you can adjust these prompts or ask follow-up questions to refine the results.

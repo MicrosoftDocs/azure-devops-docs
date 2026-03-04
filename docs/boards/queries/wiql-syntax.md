@@ -30,7 +30,7 @@ WIQL supports all functions available through the web portal Query Editor plus a
 
 | Category | Requirements |
 |----------|-------------|
-| **Permissions** | **View work items** or **View work items in this node** permission set to **Allow**. These permissions are typically granted to members of the **Readers** and **Contributors** groups for each team project. For more information, see [Permissions and groups](../../organizations/security/permissions.md). |
+| Permissions | **View work items** or **View work items in this node** permission set to **Allow**. These permissions are typically granted to members of the **Readers** and **Contributors** groups for each team project. For more information, see [Permissions and groups](../../organizations/security/permissions.md). |
 
 ## Query language overview
 
@@ -666,14 +666,14 @@ Use prompts like these to have Copilot generate WIQL for common scenarios:
 
 | Scenario | Prompt | Key WIQL concepts |
 |----------|--------|-------------------|
-| **Tree query for parent-child** | "Write a WIQL tree query that returns all Features and their child User Stories in project Contoso" | `FROM workItemLinks`, `[Source]`/`[Target]` prefixes, `TreeMode` |
-| **Historical snapshot** | "Write WIQL showing all bugs that were Active on January 15, 2026 in Fabrikam" | `ASOF '2026-01-15T00:00:00Z'` |
-| **One-hop link query** | "Return bugs with their related work items in project Contoso" | `FROM workItemLinks WHERE ... mode(MustContain)` |
-| **WAS EVER operator** | "Find user stories in Contoso that were ever assigned to Jamal" | `[System.AssignedTo] WAS EVER 'Jamal'` |
-| **Compound date ranges** | "Find work items created this quarter but not updated in the last 14 days" | `@Today - N` with `AND`/`NOT` |
-| **IN operator with multiple tags** | "Return work items tagged security, compliance, or audit in Contoso" | `[System.Tags] CONTAINS 'security'` with `OR` grouping |
-| **SELECT only what you need** | "Optimize this query to return the minimum fields for a sprint burndown chart" | Minimizing `SELECT` fields for performance |
-| **Current iteration macro** | "Write WIQL for all incomplete tasks in the current iteration for the Web team" | `@CurrentIteration('[Contoso]\\Web')` |
+| Tree query for parent-child | "Write a WIQL tree query that returns all Features and their child User Stories in project Contoso" | `FROM workItemLinks`, `[Source]`/`[Target]` prefixes, `TreeMode` |
+| Historical snapshot | "Write WIQL showing all bugs that were Active on January 15, 2026 in Fabrikam" | `ASOF '2026-01-15T00:00:00Z'` |
+| One-hop link query | "Return bugs with their related work items in project Contoso" | `FROM workItemLinks WHERE ... mode(MustContain)` |
+| WAS EVER operator | "Find user stories in Contoso that were ever assigned to Jamal" | `[System.AssignedTo] WAS EVER 'Jamal'` |
+| Compound date ranges | "Find work items created this quarter but not updated in the last 14 days" | `@Today - N` with `AND`/`NOT` |
+| IN operator with multiple tags | "Return work items tagged security, compliance, or audit in Contoso" | `[System.Tags] CONTAINS 'security'` with `OR` grouping |
+| SELECT only what you need | "Optimize this query to return the minimum fields for a sprint burndown chart" | Minimizing `SELECT` fields for performance |
+| Current iteration macro | "Write WIQL for all incomplete tasks in the current iteration for the Web team" | `@CurrentIteration('[Contoso]\\Web')` |
 
 ### Automate WIQL queries with REST API and AI
 

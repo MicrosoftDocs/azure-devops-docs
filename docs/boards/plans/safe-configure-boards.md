@@ -42,10 +42,10 @@ Complete these requirements before implementing SAFe® with Azure Boards.
 
 | Category | Requirement | Details |
 |----------|-------------|---------|
-| **SAFe® Knowledge** | Review SAFe® framework fundamentals | If you're new to SAFe®, start with [SAFe® framework fundamentals](https://www.scaledagileframework.com/). |
-| **Permissions** | Project Administrator access | Ensure you have [Project Administrator permissions](../../organizations/security/change-project-level-permissions.md) to configure teams, areas, and iterations. |
-| **Organization Planning** | Understand your SAFe® structure | Document your organization's portfolio themes, value streams, and Agile Release Trains (ARTs). |
-| **Stakeholder Alignment** | Identify key stakeholders | Engage Portfolio Managers, Program Managers, and Scrum Masters early in the planning process. |
+| SAFe® Knowledge | Review SAFe® framework fundamentals | If you're new to SAFe®, start with [SAFe® framework fundamentals](https://www.scaledagileframework.com/). |
+| Permissions | Project Administrator access | Ensure you have [Project Administrator permissions](../../organizations/security/change-project-level-permissions.md) to configure teams, areas, and iterations. |
+| Organization Planning | Understand your SAFe® structure | Document your organization's portfolio themes, value streams, and Agile Release Trains (ARTs). |
+| Stakeholder Alignment | Identify key stakeholders | Engage Portfolio Managers, Program Managers, and Scrum Masters early in the planning process. |
 
 <a id="safe-concepts"></a>
 
@@ -762,10 +762,10 @@ If you have the [Azure Boards MCP Server](../../mcp-server/mcp-server-overview.m
 
 | Task | Example prompt |
 |------|----------------|
-| Create portfolio-level items | ```copilot-prompt Create a new epic called 'Platform Modernization' and assign it to the Portfolio team's area path``` |
-| Plan program increments | ```copilot-prompt List all features assigned to PI 2 iterations for the Program team``` |
-| Track team-level work | ```copilot-prompt Show all active user stories for the Mobile team in the current sprint``` |
-| Check cross-team progress | ```copilot-prompt List all in-progress features across all teams under the <Contoso> area path with their current states``` |
+| Create portfolio-level items | `Create a new epic called 'Platform Modernization' and assign it to the Portfolio team's area path` |
+| Plan program increments | `List all features assigned to PI 2 iterations for the Program team` |
+| Track team-level work | `Show all active user stories for the Mobile team in the current sprint` |
+| Check cross-team progress | `List all in-progress features across all teams under the <Contoso> area path with their current states` |
 
 > [!NOTE]
 > Agent mode and the MCP Server use natural language, so you can adjust these prompts or ask follow-up questions to refine the results.

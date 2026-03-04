@@ -109,16 +109,16 @@ If you have the [Azure Boards MCP Server](../../mcp-server/mcp-server-overview.m
 
 | Task | Example prompt |
 |------|----------------|
-| Find incomplete work | ```copilot-prompt List all work items in Sprint 11 for <Contoso Team> that are still Active or In Progress``` |
-| Move items to next sprint | ```copilot-prompt Move all incomplete user stories from Sprint 11 to Sprint 12 in project <Contoso>``` |
-| Zero out remaining work | ```copilot-prompt Set remaining work to 0 for all tasks in Sprint 11 that are in the Done state``` |
-| Sprint completion summary | ```copilot-prompt Summarize Sprint 11 for <Contoso Team>: count completed vs. incomplete items and total story points completed``` |
-| Generate retrospective data | ```copilot-prompt For Sprint 11, show items that were added mid-sprint, items removed, and items that changed priority``` |
-| Identify rollover patterns | ```copilot-prompt Which work items have rolled over from two or more consecutive sprints in project <Contoso>? Flag them as chronic carryover``` |
-| Close stale tasks | ```copilot-prompt Find tasks in Sprint 11 that have been in Active state with no updates in the last 7 days and set them to Removed``` |
-| Calculate sprint velocity | ```copilot-prompt What was the completed story point total for each of the last 5 sprints for <Contoso Team>?``` |
-| Tag incomplete items | ```copilot-prompt Add the tag "Carryover" to all work items moved from Sprint 11 to Sprint 12 in project <Contoso>``` |
-| End-of-sprint audit | ```copilot-prompt Are there any tasks in Sprint 11 still assigned to team members who are no longer on <Contoso Team>?``` |
+| Find incomplete work | `List all work items in Sprint 11 for <Contoso Team> that are still Active or In Progress` |
+| Move items to next sprint | `Move all incomplete user stories from Sprint 11 to Sprint 12 in project <Contoso>` |
+| Zero out remaining work | `Set remaining work to 0 for all tasks in Sprint 11 that are in the Done state` |
+| Sprint completion summary | `Summarize Sprint 11 for <Contoso Team>: count completed vs. incomplete items and total story points completed` |
+| Generate retrospective data | `For Sprint 11, show items that were added mid-sprint, items removed, and items that changed priority` |
+| Identify rollover patterns | `Which work items have rolled over from two or more consecutive sprints in project <Contoso>? Flag them as chronic carryover` |
+| Close stale tasks | `Find tasks in Sprint 11 that have been in Active state with no updates in the last 7 days and set them to Removed` |
+| Calculate sprint velocity | `What was the completed story point total for each of the last 5 sprints for <Contoso Team>?` |
+| Tag incomplete items | `Add the tag "Carryover" to all work items moved from Sprint 11 to Sprint 12 in project <Contoso>` |
+| End-of-sprint audit | `Are there any tasks in Sprint 11 still assigned to team members who are no longer on <Contoso Team>?` |
 
 > [!NOTE]
 > Agent mode and the MCP Server use natural language, so you can adjust these prompts or ask follow-up questions to refine the results.

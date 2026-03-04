@@ -361,16 +361,16 @@ If you have the [Azure Boards MCP Server](../../mcp-server/mcp-server-overview.m
 
 | Task | Example prompt |
 |------|----------------|
-| Search by keyword | ```copilot-prompt Find all work items with 'performance' in the title``` |
-| Search descriptions | ```copilot-prompt List bugs where the description contains 'null reference exception'``` |
-| Find empty fields | ```copilot-prompt Show user stories with empty acceptance criteria``` |
-| Query by ID range | ```copilot-prompt Find work items with IDs between 5000 and 5100``` |
-| Find similar titles | ```copilot-prompt List work items in <Contoso> with titles containing "login", "sign in", or "authentication"``` |
-| Audit description quality | ```copilot-prompt List active user stories in <Contoso> where the description is shorter than 50 characters``` |
-| Search repro steps | ```copilot-prompt Find bugs in <Contoso> whose repro steps mention "intermittent" or "random"``` |
-| Find naming patterns | ```copilot-prompt List work items in <Contoso> whose title starts with "[SPIKE]" or "[POC]"``` |
-| Identify potential duplicates | ```copilot-prompt Show pairs of active bugs in <Contoso> that have similar titles``` |
-| Review incomplete items | ```copilot-prompt List user stories in the current sprint for <Contoso> where either the title contains "TBD" or the description is empty``` |
+| Search by keyword | `Find all work items with 'performance' in the title` |
+| Search descriptions | `List bugs where the description contains 'null reference exception'` |
+| Find empty fields | `Show user stories with empty acceptance criteria` |
+| Query by ID range | `Find work items with IDs between 5000 and 5100` |
+| Find similar titles | `List work items in <Contoso> with titles containing "login", "sign in", or "authentication"` |
+| Audit description quality | `List active user stories in <Contoso> where the description is shorter than 50 characters` |
+| Search repro steps | `Find bugs in <Contoso> whose repro steps mention "intermittent" or "random"` |
+| Find naming patterns | `List work items in <Contoso> whose title starts with "[SPIKE]" or "[POC]"` |
+| Identify potential duplicates | `Show pairs of active bugs in <Contoso> that have similar titles` |
+| Review incomplete items | `List user stories in the current sprint for <Contoso> where either the title contains "TBD" or the description is empty` |
 
 > [!NOTE]
 > Agent mode and the MCP Server use natural language, so you can adjust these prompts or ask follow-up questions to refine the results.

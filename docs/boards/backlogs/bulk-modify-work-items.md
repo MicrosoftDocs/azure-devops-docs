@@ -211,16 +211,16 @@ If you configure the [Azure DevOps MCP Server](../../mcp-server/mcp-server-overv
 
 | Task | Example prompt |
 |------|----------------|
-| **Reassign items** | ```copilot-prompt Reassign all active user stories in Sprint 12 from <Jamal> to <Raisa> in project <Contoso>``` |
-| **Change priority** | ```copilot-prompt Set priority to 1 for all bugs tagged "regression" in project <Contoso>``` |
-| **Add tags in bulk** | ```copilot-prompt Add tag "security-review" to all active work items in area path <Contoso\\Auth> ``` |
-| **Move items to a sprint** | ```copilot-prompt Move all uncommitted user stories from Sprint 5 to Sprint 6 in project <Contoso>``` |
-| **Close completed items** | ```copilot-prompt Close all resolved bugs in <Contoso> that have been resolved for more than 14 days``` |
-| **Bulk update area paths** | ```copilot-prompt Move all work items in area path <Contoso\\OldTeam> to <Contoso\\NewTeam>``` |
-| **Remove stale tags** | ```copilot-prompt Remove tag "sprint-goal" from all work items in completed sprints in project <Contoso>``` |
-| **Set story points** | ```copilot-prompt Set story points to 3 for all user stories in <Contoso> that are sized as Small and have no story points``` |
-| **Bulk assign to iteration** | ```copilot-prompt Assign all unparented tasks in <Contoso\\Backend> to the current sprint``` |
-| **Update multiple fields** | ```copilot-prompt For all active bugs in area path <Contoso\\Frontend>, set priority to 2 and add tag "frontend-triage"``` |
+| Reassign items | `Reassign all active user stories in Sprint 12 from <Jamal> to <Raisa> in project <Contoso>` |
+| Change priority | `Set priority to 1 for all bugs tagged "regression" in project <Contoso>` |
+| Add tags in bulk | `Add tag "security-review" to all active work items in area path <Contoso\\Auth> ` |
+| Move items to a sprint | `Move all uncommitted user stories from Sprint 5 to Sprint 6 in project <Contoso>` |
+| Close completed items | `Close all resolved bugs in <Contoso> that have been resolved for more than 14 days` |
+| Bulk update area paths | `Move all work items in area path <Contoso\\OldTeam> to <Contoso\\NewTeam>` |
+| Remove stale tags | `Remove tag "sprint-goal" from all work items in completed sprints in project <Contoso>` |
+| Set story points | `Set story points to 3 for all user stories in <Contoso> that are sized as Small and have no story points` |
+| Bulk assign to iteration | `Assign all unparented tasks in <Contoso\\Backend> to the current sprint` |
+| Update multiple fields | `For all active bugs in area path <Contoso\\Frontend>, set priority to 2 and add tag "frontend-triage"` |
 
 > [!NOTE]
 > If you're using Visual Studio Code, [agent mode](/visualstudio/ide/copilot-chat-context#agent-mode) is especially helpful for complex bulk operations.

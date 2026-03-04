@@ -30,10 +30,10 @@ This integration allows you to:
 
 | Category | Requirements |
 |----------|-------------|
-| **Licensing** | Active GitHub Copilot subscription |
-| **Repository** | GitHub repository (not Azure Repos) with appropriate permissions |
-| **Authentication** | GitHub App authentication configured between Azure DevOps and GitHub (personal access tokens not supported) |
-| **Permissions** | **Contribute** access in Azure DevOps to work items and ability to link artifacts |
+| Licensing | Active GitHub Copilot subscription |
+| Repository | GitHub repository (not Azure Repos) with appropriate permissions |
+| Authentication | GitHub App authentication configured between Azure DevOps and GitHub (personal access tokens not supported) |
+| Permissions | **Contribute** access in Azure DevOps to work items and ability to link artifacts |
 | Azure Boards connection | [Connect Azure Boards to GitHub](connect-to-github.md)|
 
 ## Supported work item types

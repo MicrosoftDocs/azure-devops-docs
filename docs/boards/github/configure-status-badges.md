@@ -22,10 +22,10 @@ The syntax shown works whether you [connected your project to a GitHub.com or yo
 
 | Category | Requirements |
 |--------------|-------------|
-| **Permissions** | [Team administrator](../../organizations/settings/add-team-administrator.md) for the team's settings you want to modify or  member of the [**Project Administrators**](../../organizations/security/change-project-level-permissions.md) group. |
-| **Integration with GitHub** | [Connect your project to the GitHub repository](index.md) where the commits and pull requests you want to link to or from exist. |
-| **Board configuration** | A board you want to configure. When you add a team, you add a board for that team. For more information, see [About teams and Agile tools](../../organizations/settings/about-teams-and-settings.md). |
-| **Repository access** | To add the status badge to the GitHub.com repository: Contributor to the repository. |
+| Permissions | [Team administrator](../../organizations/settings/add-team-administrator.md) for the team's settings you want to modify or  member of the [**Project Administrators**](../../organizations/security/change-project-level-permissions.md) group. |
+| Integration with GitHub | [Connect your project to the GitHub repository](index.md) where the commits and pull requests you want to link to or from exist. |
+| Board configuration | A board you want to configure. When you add a team, you add a board for that team. For more information, see [About teams and Agile tools](../../organizations/settings/about-teams-and-settings.md). |
+| Repository access | To add the status badge to the GitHub.com repository: Contributor to the repository. |
 
 ## Add a status badge
 
