@@ -16,23 +16,23 @@ ms.date: 03/31/2022
 
 [!INCLUDE [version-eq-azure-devops](../../includes/version-eq-azure-devops.md)]
 
-Permissions grant access to perform a specific action on a specific resource as described in [Get started with permissions, access, and security groups](about-permissions.md). You manage most permissions through the web portal. However, you can manage permissions using command line tools or the REST API.  
+Permissions grant access to perform a specific action on a specific resource, as described in [Get started with permissions, access, and security groups](about-permissions.md). You manage most permissions through the web portal. However, you can manage permissions by using command line tools or the REST API.  
 
-Azure DevOps grants many permissions by default to members of default security groups. You can add and manage permissions at a more granular level with the `az devops security permission` commands. Use these commands to:
+Azure DevOps grants many permissions by default to members of default security groups. You can add and manage permissions at a more granular level by using the `az devops security permission` commands. Use these commands to:
 
 - View the permissions associated with security namespaces
 - View details about those permissions
 - Update or reset permissions
 
 > [!NOTE]   
-> Namespaces and tokens are valid for all versions of Azure DevOps. Namespaces are subject to change over time. To get the latest list of namespaces, exercise one of the command line tools or REST API. Some namespaces have been deprecated as listed in the [Security namespace and permission reference, Deprecated and read-only namespaces](namespace-reference.md#deprecated-namespaces). 
+> Namespaces and tokens are valid for all versions of Azure DevOps. However, namespaces can change over time. To get the latest list of namespaces, use one of the command line tools or REST API. Some namespaces are deprecated as listed in the [Security namespace and permission reference, Deprecated and read-only namespaces](namespace-reference.md#deprecated-namespaces). 
 > 
 ## Prerequisites 
 
 | Category | Requirements |
 |--------------|-------------|
 |**Permissions**| Member of the [Project Collection Administrators group](../security/look-up-project-collection-administrators.md). Organization owners are automatically members of this group. For more information on tokens, see [Security namespace and permission reference](namespace-reference.md).  |
-|**Tools**| [Azure DevOps CLI extension](../../cli/index.md).<br>- Sign in using `az login`.<br>- For the examples in this article, set the default organization as follows:<br>- **Azure DevOps Services**:  `az devops configure --defaults organization=YourOrganizationURL`.<br>- **Azure DevOps Server**: `az devops configure --defaults organization=https://ServerName/CollectionName`|
+|**Tools**| [Azure DevOps CLI extension](../../cli/index.md).<br>- Sign in by using `az login`.<br>- For the examples in this article, set the default organization as follows:<br>- **Azure DevOps Services**:  `az devops configure --defaults organization=YourOrganizationURL`.<br>- **Azure DevOps Server**: `az devops configure --defaults organization=https://ServerName/CollectionName`|
 
 ## Security permission commands
 
@@ -40,7 +40,7 @@ Enter the following command to list all available commands.
 
 `az devops security permission -h`
 
-For more information on concepts related to security permissions, see the [Security REST API documentation](/rest/api/azure/devops/security)
+For more information on concepts related to security permissions, see the [Security REST API documentation](/rest/api/azure/devops/security).
 
 
 > [!div class="mx-tdBreakAll"]  
@@ -49,21 +49,21 @@ For more information on concepts related to security permissions, see the [Secur
 > | `az devops security permission list` | List tokens for specified user or group and namespace. |
 > | `az devops security permission namespace list` | List all available namespaces for an organization. |
 > | `az devops security permission namespace show` | Show details of permissions available in each namespace. |
-> | `az devops security permission reset` | Reset permission for specified permission bit(s). |
+> | `az devops security permission reset` | Reset permission for specified permission bits. |
 > | `az devops security permission reset-all` | Clear all permissions of this token for a user or group. |
-> | `az devops security permission show` | Show permissions for specified token, namespace and user or group. |
+> | `az devops security permission show` | Show permissions for specified token, namespace, and user or group. |
 > | `az devops security permission update` | Assign allow or deny permission to specified user or group. |
 
-The following parameters are optional for all commands, and not listed in the examples provided in this article. 
+The following parameters are optional for all commands. The examples in this article don't show these parameters. 
 
 - **detect**: Automatically detect organization. Accepted values: false, true. Default is true.
-- **org**: Azure DevOps organization URL. You can configure the default organization using az devops configure -d organization=ORG_URL. Required if not configured as default or picked up via git config. Example: `--org https://dev.azure.com/MyOrganizationName/`. 
+- **org**: Azure DevOps organization URL. You can configure the default organization by using `az devops configure -d organization=ORG_URL`. Required if not configured as default or picked up via git config. Example: `--org https://dev.azure.com/MyOrganizationName/`. 
 
 <a id="list-namespaces"></a>
 
 ## List security namespaces 
 
-You can list all available namespaces for an organization with the [az devops security permission namespace list](/cli/azure/devops/security/permission/namespace#az-devops-security-permission-namespace-list) command. For a description of all security namespaces and associated tokens, see [Security namespace and permission reference](namespace-reference.md).
+Use the [az devops security permission namespace list](/cli/azure/devops/security/permission/namespace#az-devops-security-permission-namespace-list) command to list all available namespaces for an organization. For a description of all security namespaces and associated tokens, see [Security namespace and permission reference](namespace-reference.md).
 
 > [!div class="tabbedCodeSnippets"]
 ```azurecli
@@ -74,12 +74,12 @@ az devops security permission namespace list [--local-only]
 
 **local-only**: Optional. If true, retrieve only local security namespaces.
 
-Security namespaces might have their data managed in one microservice, but still be visible in other microservices. If a security namespace's data is managed in microservice X, it's local to that microservice. Otherwise, it's remote.
+You might see security namespaces that are visible in one microservice, but their data is managed in another microservice. If a microservice manages a security namespace's data, that security namespace is local to the microservice. Otherwise, the security namespace is remote.
 
 Enter `az devops security permission namespace list` to list the namespaces defined for your organization or on-premises server.   
 
 > [!NOTE]   
-> Some namespaces listed are deprecated and should not be used. For a list of deprecated namespaces, see the [Namespace reference, Deprecated and read-only namespaces](namespace-reference.md#deprecated-namespaces). 
+> Some namespaces are deprecated and shouldn't be used. For a list of deprecated namespaces, see the [Namespace reference, Deprecated and read-only namespaces](namespace-reference.md#deprecated-namespaces). 
 
 
 > [!div class="tabbedCodeSnippets"]
@@ -221,7 +221,7 @@ bf7bfa03-b2b7-47db-8113-fa2e002cc5b1  Iteration
 
 ## List tokens for a security namespace 
 
-You can list the tokens for a specified namespace and user or group with the [az devops security permission list](/cli/azure/devops/security/permission#az-devops-security-permission-list) command.
+You can list the tokens for a specified namespace and user or group by using the [az devops security permission list](/cli/azure/devops/security/permission#az-devops-security-permission-list) command.
 
 > [!div class="tabbedCodeSnippets"]
 ```azurecli
@@ -233,14 +233,14 @@ az devops security permission list --id
 
 ### Parameters
 
-- **id** or **namespace-id**: Required. ID of security namespace. To obtain the ID, use the [az devops security permission namespace list](#list-namespaces) command.
+- **id** or **namespace-id**: Required. ID of security namespace. To get the ID, use the [az devops security permission namespace list](#list-namespaces) command.
 - **subject**: Required. The email address or group descriptor of the user.
 - **recurse**: Optional. If true, and the namespace is hierarchical, this parameter returns the child ACLs of the tokens.
 - **token**: Optional. Specify an individual security token.
 
 ### Example
 
-The following command lists the tokens in table format for the specified namespace, which corresponds to Analytics, and associated with the user  contoso@contoso.com.
+The following command lists the tokens in table format for the specified namespace, which corresponds to Analytics, and associates with the user  contoso@contoso.com.
 
 > [!div class="tabbedCodeSnippets"]
 ```azurecli
@@ -264,7 +264,7 @@ $/69265579-a1e0-4a30-a141-ac9e3bb82572  0                  0
 
 ## Show namespace details
 
-Show details of permissions available in each namespace with the [az devops security permission namespace show](/cli/azure/devops/security/permission/namespace#az-devops-security-permission-namespace-show) command.
+Show details of permissions available in each namespace by using the [az devops security permission namespace show](/cli/azure/devops/security/permission/namespace#az-devops-security-permission-namespace-show) command.
 
 > [!div class="tabbedCodeSnippets"]
 ```azurecli
@@ -295,7 +295,7 @@ ReadEuii                  Read EUII data                                        
 
 ## Reset permissions
 
-Reset the permission bits for a specified user or group with the [az devops security permission reset](/cli/azure/devops/security/permission#az-devops-security-permission-reset) command. 
+Reset the permission bits for a specified user or group by using the [az devops security permission reset](/cli/azure/devops/security/permission#az-devops-security-permission-reset) command. 
 
 > [!div class="tabbedCodeSnippets"]
 ```azurecli
@@ -308,7 +308,7 @@ az devops security permission reset --id
 ### Parameters
 
 - **id** or **namespace-id**: Required. ID of security namespace.
-- **permission-bit**: Required. Permission bit or addition of permission bits which needs to be reset for given user or group and token.
+- **permission-bit**: Required. Permission bit or addition of permission bits to reset for the given user or group and token.
 - **subject**: Required. The email address or group descriptor of the user.
 - **token**: Required. Individual security token.
 
@@ -327,7 +327,7 @@ ExecuteUnrestrictedQuery  8      Execute query without any restrictions on the q
 
 ## Reset all permissions
 
-You can clear all permissions of a token for a user or group with the [az devops security permission reset-all](/cli/azure/devops/security/permission#az-devops-security-permission-reset-all) command.
+You can clear all permissions of a token for a user or group by using the [az devops security permission reset-all](/cli/azure/devops/security/permission#az-devops-security-permission-reset-all) command.
 
 > [!div class="tabbedCodeSnippets"]
 ```azurecli
@@ -359,7 +359,7 @@ True
 
 ## Show permissions
 
-You can show the permissions for a specified token, namespace, and user or group with the [az devops security permission show](/cli/azure/devops/security/permission#az-devops-security-permission-show) command.
+You can show the permissions for a specified token, namespace, and user or group by using the [az devops security permission show](/cli/azure/devops/security/permission#az-devops-security-permission-show) command.
 
 > [!div class="tabbedCodeSnippets"]
 ```azurecli
@@ -393,7 +393,7 @@ ReadEuii                  16     Read EUII data                                 
 
 ## Update permissions
 
-You can assign *allow* or *deny* permissions to a specified user or group with the [az devops security permission update](/cli/azure/devops/security/permission#az-devops-security-permission-update) command. 
+Use the [az devops security permission update](/cli/azure/devops/security/permission#az-devops-security-permission-update) command to assign *allow* or *deny* permissions to a specified user or group. 
 
 > [!div class="tabbedCodeSnippets"]
 ```azurecli
