@@ -38,6 +38,15 @@ You can also [view the build numbers for each version](#azure-devops-server-buil
         </tr>
     </thead>
 <tr>
+    <td rowspan="6"><a href="2026/sprint-270-update.md" data-raw-source="[5 March 2026](2026/sprint-270-update.md)">March 5 2026</a></td>
+    <td>Retirement of Global Personal Access Tokens in Azure DevOps</td><td>General</td><td>Future</td></tr>
+    <td>Auto-complete pull requests by default</td><td>General</td><td>Future</td></tr>
+    <td>Condensed card display on Kanban and sprint boards</td><td>Boards</td><td>Future</td></tr>
+    <td>Auto-complete pull requests by default</td><td>Repos</td><td>Future</td></tr>
+    <td>New repository setting for pull request ID in commit messages</td><td>Repos</td><td>Future</td></tr>
+    <td>New entry point for exploratory sessions</td><td>Test Plans</td><td>Future</td></tr>
+<tr>
+<tr>
     <td rowspan="7"><a href="2026/sprint-269-update.md" data-raw-source="[11 February 2026](2026/sprint-269-update.md)">February 11 2026</a></td>
     <td>Permissions enforcement in security overview</td><td>GitHub Advanced Security for Azure DevOps</td><td>N/A</td></tr>
     <td>Build identity access restricted for Advanced Security APIs</td><td>GitHub Advanced Security for Azure DevOps</td><td>N/A</td></tr>
