@@ -2,6 +2,7 @@
 title: Check out multiple repositories in your pipeline
 description: Learn how to check out multiple repositories in your pipeline
 ms.topic: reference
+ms.custom: doc-kit-assisted
 ms.date: 01/25/2023
 monikerRange: "<=azure-devops"
 ---
@@ -10,7 +11,7 @@ monikerRange: "<=azure-devops"
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
-Pipelines often rely on multiple repositories that contain source, tools, scripts, or other items that you need to build your code. By using multiple `checkout` steps in your pipeline, you can fetch and check out other repositories in addition to the one you use to store your YAML pipeline.
+Pipelines often rely on multiple repositories that contain source code, tools, scripts, or other items you need to build your code. By using multiple `checkout` steps in your pipeline, you can fetch and check out other repositories in addition to the one you use to store your YAML pipeline.
 
 ## Specify multiple repositories
 
@@ -225,6 +226,42 @@ If you are using inline syntax, designate the ref by appending `@<ref>`. For exa
 - checkout: git://MyProject/MyRepo@refs/heads/features/tools # also checks out the features/tools branch
 - checkout: git://MyProject/MyRepo@refs/tags/MyTag # checks out the commit referenced by MyTag.
 ```
+    
+> [!IMPORTANT]
+> The `checkout` value, including the inline `@<ref>` portion, resolves at compile time as a resource reference. **Macro syntax variables (`$(var)`) aren't expanded** in the `checkout` value. For example, `checkout: git://MyProject/MyRepo@$(branch)` doesn't resolve the variable — the pipeline tries to check out a ref literally named `$(branch)`, which typically fails with a "ref not found" error.
+>
+> To parameterize the branch, use [template expressions](../process/template-expressions.md) (`${{ }}`) with [runtime parameters](../process/runtime-parameters.md). `${{ variables.myVar }}` only works for variables defined as literal values in YAML (known at compile time), not for queue-time or dynamically set variables.
+>
+> **Use a parameter with inline syntax:**
+>
+> ```yaml
+> parameters:
+>   - name: branch
+>     type: string
+>     default: 'main'
+>
+> steps:
+>   - checkout: git://MyProject/MyRepo@${{ parameters.branch }}
+> ```
+>
+> **Use a parameter with a repository resource:**
+>
+> ```yaml
+> parameters:
+>   - name: branch
+>     type: string
+>     default: 'main'
+>
+> resources:
+>   repositories:
+>     - repository: MyRepo
+>       type: git
+>       name: MyProject/MyRepo
+>       ref: ${{ parameters.branch }}
+>
+> steps:
+>   - checkout: MyRepo
+> ```
 
 When using a repository resource, specify the ref using the `ref` property. The following example checks out the `features/tools/` branch of the designated repository.
 
