@@ -7,3 +7,4 @@ ms.topic: include
 ---
 
 - [Auto-complete pull requests by default](#auto-complete-pull-requests-by-default)
+- [New repository setting for pull request ID in commit messages](new-repository-setting-for-pull-request-id-in-commit-messages)
