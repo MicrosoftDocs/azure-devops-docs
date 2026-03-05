@@ -132,7 +132,7 @@ When a collaborator (or higher) installs a package from *CargoDemoFeed*, Azure A
 
 1. Verify that the package you installed locally now appears in your consuming feed. Azure Artifacts automatically saves a copy of the package when it’s installed from an upstream source.
 
-    :::image type="content" source="../media/package-saved-from-internal-upstream.png" alt-text="A screenshot showing a package saved from an internal upstream in Azure Artifacts.":::
+    :::image type="content" source="../media/package-saved-from-internal-upstream.png" alt-text="A screenshot showing a package saved from an internal upstream in Azure Artifacts. lightbox="../media/package-saved-from-internal-upstream.png"":::
 
 ## Related content
 

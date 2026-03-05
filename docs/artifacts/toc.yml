@@ -210,6 +210,9 @@
   - name: Set up upstream sources
     displayName: configure, upstreams
     href: how-to/set-up-upstream-sources.md
+  - name: Upstream from internal feeds
+    href: how-to/upstream-internal-feed.md
+    displayName: upstream, internal feed
   - name: Use upstream sources with public feeds
     displayName: upstream, public feed
     href: how-to/public-feeds-upstream-sources.md
