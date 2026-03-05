@@ -106,19 +106,31 @@ The following example illustrates a scenario where *Test_Feed* has *CargoDemoFee
 
 When a collaborator (or higher) installs a package from *CargoDemoFeed*, Azure Artifacts automatically saves a copy of that package to *Test_Feed*. That package can then be consumed by all readers of *Test_Feed*.
 
-1. Sign in to Azure DevOps, then navigate to the project that hosts the upstream feed (in this example, CargoDemoFeed).
+1. Sign in to Azure DevOps, then navigate to the project that hosts the upstream feed (in this example, *CargoDemoFeed*).
 
-1. Select Artifacts, then from the dropdown menu, select the upstream feed (CargoDemoFeed).
+1. Select Artifacts, then from the dropdown menu, select the upstream feed (*CargoDemoFeed*).
 
-1. Select the package you want to install. On the **Overview** tab, copy the install command.
+1. Find the package you want to install and note its name. In this example, *atomic-waker* is the package name.
 
-     :::image type="content" source="../media/install-package-from-internal-upstream.png" alt-text="A screenshot showing how to install a package from an internal feed in Azure Artifacts.":::
+1. Navigate to the root of your project and open your *Cargo.toml*. Add the package under **[dependencies]**. Because this is a private crate dependency, you must specify the registry name in your *Cargo.toml* file. Cargo assumes *crates.io* as the default registry unless otherwise specified. Add the dependency as follows:
 
-1. Open a local command prompt, navigate to the root of your project, paste the command, and run it.
+```
+CRATE_NAME = { version = "VERSION_NUMBER", registry = "FEED_NAME" }
 
-1. After the package is installed, return to **Azure DevOps** > **Artifacts** and select your consuming feed (in this example Test_Feed).
+# Example:
+# [dependencies]
+# atomic-waker = { version = "1.1.2", registry = "Test_Feed" }
+```
 
-1. Verify that the package you installed locally now appears in your consuming feed. Azure Artifacts automatically saved a copy of the package when it was installed from the upstream source.
+1. Open a local command prompt, navigate to the root of your project, and run the following command to build your project and download the crate:
+
+    ```
+    cargo build
+    ```
+
+1. Once the build completes, return to **Azure DevOps** > **Artifacts** and select your consuming feed (in this example, *Test_Feed*).
+
+1. Verify that the package you installed locally now appears in your consuming feed. Azure Artifacts automatically saves a copy of the package when it’s installed from an upstream source.
 
 ## Related content
 
