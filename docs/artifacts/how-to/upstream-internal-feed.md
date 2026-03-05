@@ -51,38 +51,30 @@ Use the following steps to configure your project and authenticate with your fee
     FEED_NAME = { index = "sparse+https://pkgs.dev.azure.com/ORGANIZATION_NAME/PROJECT_NAME/_packaging/FEED_NAME/Cargo/index/" }
     ```
 
-1. Copy the second snippet from the **Project setup** section and add it to cargo/config.toml to replace the crates.io source with your feed. Your file should resemble the following:
-    
-    ```
-    [source.crates-io]
-    replace-with = "FEED_NAME"
-    ```
-
 1. [Configure a credential provider](../cargo/project-setup-cargo.md#configure-a-credential-provider)
 
 1. [Log in to the registry](../cargo/project-setup-cargo.md#log-in-to-the-registry)
 
 #### Project setup for other package types
 
-If you’re using a different technology, see the corresponding project setup guidance below to connect to your feed:
+If you’re using a different technology, use the links below to follow the appropriate project setup guidance to connect to your feed:
 
 ::: moniker range="azure-devops"
 
-- **NuGet**: [Project setup](../nuget/nuget-exe.md) 
-- **Npm**: [Project setup](../npm/npmrc.md)
-- **Maven**: [Project setup](../maven/project-setup-maven.md)
-- **Python**: [Project setup](../python/project-setup-python.md)
-- **Universal Packages**: [Project setup](../universal-packages/project-setup-universal-packages.md)
+- [NuGet](../nuget/nuget-exe.md) 
+- [Npm](../npm/npmrc.md)
+- [Maven](../maven/project-setup-maven.md)
+- [Python](../python/project-setup-python.md)
+- [Universal Packages](../universal-packages/project-setup-universal-packages.md)
 
 ::: moniker-end
 
 ::: moniker range="azure-devops-2022"
 
-
-- **NuGet**: [Project setup](../nuget/nuget-exe.md) 
-- **Npm**: [Project setup](../npm/npmrc.md)
-- **Maven**: [Project setup](../maven/project-setup-maven.md)
-- **Python**: [Project setup](../python/project-setup-python.md)
+- [NuGet](../nuget/nuget-exe.md) 
+- [Npm](../npm/npmrc.md)
+- [Maven](../maven/project-setup-maven.md)
+- [Python](../python/project-setup-python.md)
 
 ::: moniker-end
 
