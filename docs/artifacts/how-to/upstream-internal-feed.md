@@ -80,7 +80,7 @@ If you’re using a different technology, use the links below to follow the appr
 
 ## Set up the upstream feed
 
-In this section, you set up an internal feed from the same organization as an upstream source.
+Follow these steps to set up an internal feed from the same organization as an upstream source:
 
 1. Sign in to Azure DevOps, then navigate to your project.
 
@@ -114,13 +114,13 @@ When a collaborator (or higher) installs a package from *CargoDemoFeed*, Azure A
 
 1. Navigate to the root of your project and open your *Cargo.toml*. Add the package under **[dependencies]**. Because this is a private crate dependency, you must specify the registry name in your *Cargo.toml* file. Cargo assumes *crates.io* as the default registry unless otherwise specified. Add the dependency as follows:
 
-```
-CRATE_NAME = { version = "VERSION_NUMBER", registry = "FEED_NAME" }
-
-# Example:
-# [dependencies]
-# atomic-waker = { version = "1.1.2", registry = "Test_Feed" }
-```
+    ```
+    CRATE_NAME = { version = "VERSION_NUMBER", registry = "FEED_NAME" }
+    
+    # Example:
+    # [dependencies]
+    # atomic-waker = { version = "1.1.2", registry = "Test_Feed" }
+    ```
 
 1. Open a local command prompt, navigate to the root of your project, and run the following command to build your project and download the crate:
 
@@ -131,6 +131,8 @@ CRATE_NAME = { version = "VERSION_NUMBER", registry = "FEED_NAME" }
 1. Once the build completes, return to **Azure DevOps** > **Artifacts** and select your consuming feed (in this example, *Test_Feed*).
 
 1. Verify that the package you installed locally now appears in your consuming feed. Azure Artifacts automatically saves a copy of the package when it’s installed from an upstream source.
+
+    :::image type="content" source="../media/package-saved-from-internal-upstream.png" alt-text="A screenshot showing a package saved from an internal upstream in Azure Artifacts.":::
 
 ## Related content
 
