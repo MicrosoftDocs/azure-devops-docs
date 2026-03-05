@@ -31,7 +31,11 @@ for example, up to a year.
   
 <a name="manual-test-results-limits"></a> 
 
-## Set retention period for test results
+## Set retention period for manual test results
+
+> [!IMPORTANT]
+> When retention deletes test runs and test results, their related test points outcome is set as Active.
+> Due to the outcome change, progress reports may reflect decreased run rates.
 
 To delete manual test results after a specific number of days, 
 set the retention limit at the project level. 
