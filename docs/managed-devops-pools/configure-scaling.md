@@ -1,7 +1,7 @@
 ---
 title: Configure scaling
 description: Learn about performance options for Managed DevOps Pools.
-ms.date: 11/18/2025
+ms.date: 03/05/2026
 ms.topic: how-to
 ---
 
@@ -177,7 +177,7 @@ When you enable **Same agent can be used by multiple builds** (the `"kind": "sta
 * **Grace Period** (`gracePeriodTimeSpan`) configures the amount of time an agent in a stateful pool waits for new jobs before shutting down after all current and queued jobs finish. The format for **Grace Period** is `dd.hh:mm:ss` and the default is no grace period.
 
   > [!IMPORTANT]
-  > If a job is running when the **Max time to live for standby agents** interval expires, the agent won't shut down until the job finishes, unless the job takes longer than two days to run. Individual jobs in Managed DevOps Pools can run for a maximum of two days, even if they're running on a standby agent with more than two days configured for **Max time to live for standby agents**. Contact support if your workflow requires that you run a single job that takes more than two days to finish.
+  > If a job is running when the **Max time to live for standby agents** interval expires, the agent won't shut down until the job finishes, unless the job takes longer than two days to run. Individual jobs in Managed DevOps Pools can run for a maximum of two days, even if they're running on a standby agent with more than two days configured for **Max time to live for standby agents**. (Managed DevOps Pool supports pipelines that run longer than two days, by splitting them into multiple shorter jobs that each complete in two days or less.)
 
 Agents in stateless pools are shut down and discarded after every job. Agents in stateful pools continue running if any of the following conditions are met:
 
