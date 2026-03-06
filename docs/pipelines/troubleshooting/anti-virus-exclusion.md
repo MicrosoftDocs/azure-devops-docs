@@ -1,5 +1,5 @@
 ---
-title: Antivirus scanning exclusions
+title: Antivirus scanning exclusions for Azure DevOps
 description: This article describes the system processes that you should consider excluding from antivirus scanning on computers that are running Azure DevOps Server or self-hosted agents.
 ms.date: 03/25/2024
 ms.custom: sap:Installation, Migration, and Move
@@ -15,7 +15,7 @@ _Original KB number:_ &nbsp; 2636507
 
 ## Symptoms
 
-Target files will be locked when the antivirus software is scanning. Builds may take longer time to complete and you might encounter errors if proper folders aren't added to the antivirus software's directory exclusion list. These errors might include intermittent instances where the Team Foundation Server Application Pool crashes. The following list includes errors that you might encounter:
+Target files will be locked when the antivirus software is scanning. Builds may take a longer time to complete and you might encounter errors if proper folders aren't added to the antivirus software's directory exclusion list. These errors might include intermittent instances where the Team Foundation Server Application Pool crashes. The following list includes errors that you might encounter:
 
 - The following event is added to the system's Application log:
 
@@ -36,35 +36,35 @@ If you encounter the issue described previously, you might have to configure you
 
 TFS, Azure DevOps Server:
 
-- _%ProgramFiles%\Azure DevOps Server \<VersionNumber\>_
-- _%ProgramFiles%\Azure DevOps Server \<VersionNumber\>\Application Tier\TFSJobAgent_
-- _C:\Users\\<TFS_Service_Account\>\AppData\Local\Temp_
-- _C:\inetpub\temp_
-- _%ProgramFiles%\Azure DevOps Server <VersionNumber\>\Application Tier\Web Services\bin_
-- _C:\AzureDevOpsData\ApplicationTier\\\_fileCache_
+- `%ProgramFiles%\Azure DevOps Server \<VersionNumber\>`
+- `%ProgramFiles%\Azure DevOps Server \<VersionNumber\>\Application Tier\TFSJobAgent`
+- `C:\Users\<TFS_Service_Account\>\AppData\Local\Temp`
+- `C:\inetpub\temp`
+- `%ProgramFiles%\Azure DevOps Server <VersionNumber\>\Application Tier\Web Services\bin`
+- `C:\AzureDevOpsData\ApplicationTier\_fileCache`
 - TFS/Azure DevOps Server cache folder
-  - On the server: _C:\Users\\<ServiceAccountName\>\AppData\Local\Microsoft\Azure DevOps\\<VersionNumber\>\Cache_
-  - On the client: _C:\Users\\<UserName\>\AppData\Local\Microsoft\Azure DevOps\\<VersionNumber\>\Cache_
+  - On the server: `C:\Users\<ServiceAccountName\>\AppData\Local\Microsoft\Azure DevOps\<VersionNumber\>\Cache`
+  - On the client: `C:\Users\<UserName\>\AppData\Local\Microsoft\Azure DevOps\<VersionNumber\>\Cache`
 - The _TFSJobAgent.exe_ process that is typically located at:
-   - _%ProgramFiles%\Microsoft Team Foundation Server \<VersionNumber\>\Application Tier\TFSJobAgent\TFSJobAgent.exe_ (for TFS)
-   - _%ProgramFiles%\Azure DevOps Server \<VersionNumber\>\Application Tier\TFSJobAgent\TFSJobAgent.exe_ (for Azure DevOps Server)
+   - `%ProgramFiles%\Microsoft Team Foundation Server \<VersionNumber\>\Application Tier\TFSJobAgent\TFSJobAgent.exe` (for TFS)
+   - `%ProgramFiles%\Azure DevOps Server\<VersionNumber\>\Application Tier\TFSJobAgent\TFSJobAgent.exe` (for Azure DevOps Server)
 
 Azure DevOps Server, Azure DevOps Services (self-hosted agents):
 
 - Pipeline agent folders
-- _TFSbuildServicehost.exe_ process for XAML builds
-- Processes for vNext builds like _Agent.Listener.exe_, _Agent.Worker.exe_, and _AgentService.exe_
-- Self-Hosted Agent folders like _\Builds, \Symbols, \Drop, \bin, \_diag, \_work_
-- _%ProgramFiles%\Microsoft Visual Studio\\<VersionNumber\>_
-- _C:\Windows\Microsoft.NET\Framework_
-- _C:\Windows\Microsoft.NET\Framework\\<VersionNumber\>\Temporary ASP.NET Files_
-- _C:\Windows\Microsoft.NET\Framework64\\<VersionNumber\>\Temporary ASP.NET Files_
+- `TFSbuildServicehost.exe` process for XAML builds
+- Processes for vNext builds like `Agent.Listener.exe`, `Agent.Worker.exe`, and `AgentService.exe`
+- Self-Hosted Agent folders like `\Builds`, `\Symbols`, `\Drop`, `\bin`, `\_diag`, `\_work`
+- `%ProgramFiles%\Microsoft Visual Studio\<VersionNumber\>`
+- `C:\Windows\Microsoft.NET\Framework\`
+- `C:\Windows\Microsoft.NET\Framework\<VersionNumber>\Temporary ASP.NET Files\`
+- `C:\Windows\Microsoft.NET\Framework64\<VersionNumber>\Temporary ASP.NET Files\`
 
 ## More information
 
-For better performance of source control and other TFS/Azure DevOps Server operations, we recommend adding the Internet Information Services (IIS) worker process (_w3wp.exe_) to the list of antivirus exclusions. This is not a requirement for Azure DevOps Services.
+For better performance of source control and other TFS/Azure DevOps Server operations, we recommend adding the Internet Information Services (IIS) worker process (`w3wp.exe`) to the list of antivirus exclusions. This is not a requirement for Azure DevOps Services.
 
-The _w3wp.exe_ process is typically located at _C:\Windows\System32\inetsrv\w3wp.exe_. You can also locate this process by following these steps:
+The `w3wp.exe` process is typically located at `C:\Windows\System32\inetsrv\w3wp.exe`. You can also locate this process by following these steps:
 
 1. Make a TFS/Azure DevOps Server web request by connecting to the server using Team Explorer.
 2. On the TFS/Azure DevOps Server application tier or the TFS/Azure DevOps Server proxy machine, open **Task Manager**, and then select the **Details** tab.
