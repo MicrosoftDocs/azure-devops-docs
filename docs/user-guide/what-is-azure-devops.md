@@ -365,9 +365,6 @@ If you configure the [Azure DevOps MCP Server](../mcp-server/mcp-server-overview
 | Recent deployment summary | `List the last 5 deployments to production in <Contoso> with their status and associated work items` |
 | Find untested features | `Show features in <Contoso> that have been completed but have no linked test cases` |
 
-> [!NOTE]
-> If you're using Visual Studio Code, [agent mode](/visualstudio/ide/copilot-chat-context#agent-mode) is especially helpful for cross-service queries that span work items, repos, pipelines, and test plans.
-
 ## Related content
 
 - [Azure DevOps pricing](https://azure.microsoft.com/pricing/details/devops/azure-devops-services/)
