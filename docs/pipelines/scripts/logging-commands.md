@@ -2,8 +2,9 @@
 title: Logging commands
 description: How scripts can request work from the agent
 ms.topic: reference
+ms.custom: doc-kit-assisted
 ms.assetid: 3ec13da9-e7cf-4895-b5b8-735c1883cc7b
-ms.date: 11/19/2024
+ms.date: 03/05/2026
 monikerRange: '<= azure-devops'
 ai-usage: ai-assisted
 ---
@@ -12,8 +13,7 @@ ai-usage: ai-assisted
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
-Logging commands are how [tasks](../process/tasks.md) and scripts communicate with the agent.
-They cover actions like creating new [variables](../process/variables.md), marking a step as failed, and uploading [artifacts](../artifacts/pipeline-artifacts.md). Logging commands are useful when you're troubleshooting a pipeline. 
+Logging commands are how [tasks](../process/tasks.md) and scripts communicate with the Azure Pipelines agent. When a pipeline step writes a specially formatted string to standard output (stdout), the agent intercepts it and performs the requested action—such as setting a variable, uploading an artifact, or marking the step as failed. Logging commands are useful for customizing pipeline behavior and troubleshooting.
 
 > [!IMPORTANT]
 > We make an effort to mask secrets from appearing in Azure Pipelines output, but you still need to take precautions. Never echo secrets as output.
@@ -24,6 +24,24 @@ They cover actions like creating new [variables](../process/variables.md), marki
 > This is to avoid masking secrets at too granular of a level, making the logs unreadable.
 > For this reason, secrets shouldn't contain structured data. If, for example, "{ "foo": "bar" }" is set as a secret,
 > "bar" isn't masked from the logs.
+
+## How logging commands work
+
+The Azure Pipelines agent processes logging commands by scanning **standard output (stdout)** from each task and script step in real time as the step executes. When the agent detects a line that matches the `##vso[...]` or `##[...]` pattern in stdout, it interprets the command and takes the requested action (for example, setting a variable or uploading an artifact).
+
+> [!IMPORTANT]
+> Logging commands are **only** processed when written to stdout by tasks and scripts running directly on the agent. They are **not** parsed from:
+>
+> - Log files uploaded with `##vso[build.uploadlog]` or `##vso[task.uploadfile]`
+> - Test result files or attachments
+> - Output from external tools or test frameworks (such as CloudTest) that write to files rather than stdout
+> - Container logs or sidecar process output that isn't captured by the agent
+>
+> If you need logging commands from an external tool to be processed, pipe or redirect that tool's output through your script's stdout. For example:
+>
+> ```bash
+> ./my-external-tool 2>&1 | while IFS= read -r line; do echo "$line"; done
+> ```
 
 |Type  |Commands  |
 |---------|---------|
@@ -270,7 +288,7 @@ Creates and updates timeline records.
 This is primarily used internally by Azure Pipelines to report about steps, jobs, and stages.
 While customers can add entries to the timeline, they won't typically be shown in the UI.
 
-The first time we see `##vso[task.detail]` during a step, we create a "detail timeline" record for the step. We can create and update nested timeline records base on `id` and `parentid`.
+The first time we see `##vso[task.logdetail]` during a step, we create a "detail timeline" record for the step. We can create and update nested timeline records base on `id` and `parentid`.
 
 Task authors must remember which GUID they used for each timeline record.
 The logging system keeps track of the GUID for each timeline record, so any new GUID results a new timeline record.
@@ -648,7 +666,7 @@ Upload user interested log to build's container "`logs\tool`" folder.
 
 #### Usage
 
-You can automatically generate a build number from tokens you specify in the [pipeline options](../build/options.md). However, if you want to use your own logic to set the build number, then you can use this logging command.
+You can automatically generate a build number from tokens you specify in the [pipeline options](../release/options.md). However, if you want to use your own logic to set the build number, then you can use this logging command.
 
 #### Example
 
@@ -668,12 +686,12 @@ Add a tag for current build. You can expand the tag with a predefined or user-de
 
 ```yaml
 - task: Bash@3
-    inputs:
+  inputs:
     targetType: 'inline'
     script: |
-        last_scanned="last_scanned-$(currentDate)"
-        echo "##vso[build.addbuildtag]$last_scanned"
-    displayName: 'Apply last scanned tag'
+      last_scanned="last_scanned-$(currentDate)"
+      echo "##vso[build.addbuildtag]$last_scanned"
+  displayName: 'Apply last scanned tag'
 ```
 
 ## Release commands
@@ -694,3 +712,28 @@ Update the release name for the running release.
 ```
 ##vso[release.updatereleasename]my-new-release-name
 ```
+
+## Troubleshoot logging commands
+
+### Logging commands aren't processed
+
+Logging commands must be written to stdout during step execution by the agent. If your commands appear in the raw logs but aren't being processed:
+
+- **External tools writing to files**: If a tool writes `##vso[...]` strings to a log file rather than stdout, the agent doesn't parse them. Redirect the tool's output to stdout in your script.
+- **Buffered output**: Some programs buffer stdout when it's not connected to a terminal. Use language-specific options to flush output (for example, `python -u` or set `PYTHONUNBUFFERED=1`).
+- **`set -x` interference on Linux/macOS**: The `set -x` option can corrupt logging commands. See [troubleshooting](../troubleshooting/troubleshooting.md#variables-having--single-quote-appended) for a workaround.
+- **Encoding**: Logging commands must use UTF-8 encoding. Other encodings might cause the agent to skip the command.
+- **Newlines within commands**: Each logging command must be on a single line. If a newline character appears within the `##vso[...]` string, the agent doesn't recognize the command.
+
+### Special characters in values
+
+Some characters must be escaped when used in logging command values. These escape sequences are defined in the [agent source code](https://github.com/microsoft/azure-pipelines-agent/blob/master/src/Agent.Sdk/CommandStringConvertor.cs):
+
+| Character            | Escape sequence |
+|----------------------|-----------------|
+| Semicolon `;`        | `%3B`           |
+| Newline `\n`         | `%0A`           |
+| Carriage return `\r` | `%0D`           |
+| Close bracket `]`    | `%5D`           |
+
+To escape percent signs in values, use `%AZP25` instead of `%`. This behavior is controlled by the `DECODE_PERCENTS` variable. For more information, see [percent encoding](https://github.com/microsoft/azure-pipelines-agent/blob/master/docs/design/percentEncoding.md).
