@@ -6,7 +6,7 @@ ms.custom: sap:Installation, Migration, and Move
 ms.reviewer: vimalt, manojm
 ---
 
-# Antivirus exclusions for Azure DevOps
+# Antivirus scanning exclusions for Azure DevOps
 
 This article provides information about the processes and folders that may have to be excluded from antivirus scanning on computers that are running Team Foundation Server (TFS), Azure DevOps Server or self-hosted agents of Azure DevOps Services. It also provides links to Microsoft Knowledge Base articles that discuss antivirus exclusions that may be defined on servers hosting deployments of Microsoft SQL Server and SharePoint Server that have been integrated with Azure DevOps Server.
 
@@ -17,15 +17,9 @@ _Original KB number:_ &nbsp; 2636507
 
 Target files will be locked when the antivirus software is scanning. Builds may take a longer time to complete and you might encounter errors if proper folders aren't added to the antivirus software's directory exclusion list. These errors might include intermittent instances where the Team Foundation Server Application Pool crashes. The following list includes errors that you might encounter:
 
-- The following event is added to the system's Application log:
+- The following event is added to the system's Application log: `Event ID 5002 Application pool Team Foundation Server Application Pool is being automatically disabled due to a series of failures in the process(es) serving that application pool.`
 
-    > Event ID 5002  
-      Application pool Team Foundation Server Application Pool is being automatically disabled due to a series of failures in the process(es) serving that application pool.
-
-- The following event is added to the system's Application log before the Team Foundation Server Application Pool crashes:
-
-   > TF400850: The request context was not disposed by the caller  
-     Exception Message: Cannot access a disposed object.
+- The following event is added to the system's Application log before the Team Foundation Server Application Pool crashes: `TF400850: The request context was not disposed by the caller. Exception Message: Cannot access a disposed object.`
 
 ## Exclusion list
 
@@ -36,8 +30,8 @@ If you encounter the issue described previously, you might have to configure you
 
 TFS, Azure DevOps Server:
 
-- `%ProgramFiles%\Azure DevOps Server \<VersionNumber\>`
-- `%ProgramFiles%\Azure DevOps Server \<VersionNumber\>\Application Tier\TFSJobAgent`
+- `%ProgramFiles%\Azure DevOps Server\<VersionNumber\>`
+- `%ProgramFiles%\Azure DevOps Server\<VersionNumber\>\Application Tier\TFSJobAgent`
 - `C:\Users\<TFS_Service_Account\>\AppData\Local\Temp`
 - `C:\inetpub\temp`
 - `%ProgramFiles%\Azure DevOps Server <VersionNumber\>\Application Tier\Web Services\bin`
@@ -46,7 +40,7 @@ TFS, Azure DevOps Server:
   - On the server: `C:\Users\<ServiceAccountName\>\AppData\Local\Microsoft\Azure DevOps\<VersionNumber\>\Cache`
   - On the client: `C:\Users\<UserName\>\AppData\Local\Microsoft\Azure DevOps\<VersionNumber\>\Cache`
 - The _TFSJobAgent.exe_ process that is typically located at:
-   - `%ProgramFiles%\Microsoft Team Foundation Server \<VersionNumber\>\Application Tier\TFSJobAgent\TFSJobAgent.exe` (for TFS)
+   - `%ProgramFiles%\Microsoft Team Foundation Server\<VersionNumber\>\Application Tier\TFSJobAgent\TFSJobAgent.exe` (for TFS)
    - `%ProgramFiles%\Azure DevOps Server\<VersionNumber\>\Application Tier\TFSJobAgent\TFSJobAgent.exe` (for Azure DevOps Server)
 
 Azure DevOps Server, Azure DevOps Services (self-hosted agents):
