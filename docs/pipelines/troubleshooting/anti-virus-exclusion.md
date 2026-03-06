@@ -73,6 +73,6 @@ The _w3wp.exe_ process is typically located at _C:\Windows\System32\inetsrv\w3wp
 
 For more information about SQL Server and SharePoint Server folder exclusions, see the following articles:
 
-- [Configure antivirus software to work with SQL Server](../../sql/database-engine/security/antivirus-and-sql-server.md)
+- [Configure antivirus software to work with SQL Server](/troubleshoot/sql/database-engine/security/antivirus-and-sql-server)
 
 - [Certain folders may have to be excluded from antivirus scanning when you use file-level antivirus software in SharePoint](https://support.microsoft.com/office/certain-folders-may-have-to-be-excluded-from-antivirus-scanning-when-you-use-file-level-antivirus-software-in-sharepoint-01cbc532-a24e-4bba-8d67-0b1ed733a3d9)
