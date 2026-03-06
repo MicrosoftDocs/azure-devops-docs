@@ -638,6 +638,8 @@
     href: troubleshooting/troubleshoot-azure-web-app-deploy.md
   - name: Review logs
     href: troubleshooting/review-logs.md
+  - name: Antivirus exclusions
+    href: troubleshooting/anti-virus-exclusion.md
   - name: Pipeline reports
     items:
     - name: View pipeline reports
