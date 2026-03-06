@@ -19,25 +19,25 @@ Check out the release notes for details.
 ### GitHub Advanced Security for Azure DevOps
 [!INCLUDE [sprint-268-update-links](includes/ghazdo/sprint-268-update-links.md)]
 
-### Boards
+### Azure Boards
 [!INCLUDE [sprint-268-update-links](includes/boards/sprint-268-update-links.md)]
 
-### Repos
+### Azure Repos
 [!INCLUDE [sprint-268-update-links](includes/repos/sprint-268-update-links.md)]
 
-### Test Plans
+### Azure Test Plans
 [!INCLUDE [sprint-268-update-links](includes/testplans/sprint-268-update-links.md)]
 
 ## GitHub Advanced Security for Azure DevOps
 [!INCLUDE [sprint-268-update](includes/ghazdo/sprint-268-update.md)]
 
-## Boards
+## Azure Boards
 [!INCLUDE [sprint-268-update](includes/boards/sprint-268-update.md)]
 
-## Repos
+## Azure Repos
 [!INCLUDE [sprint-268-update](includes/repos/sprint-268-update.md)]
 
-## Test Plans
+## Azure Test Plans
 [!INCLUDE [sprint-268-update](includes/testplans/sprint-268-update.md)]
 
 ## Next steps

@@ -15,25 +15,25 @@ Check out the release notes for details.
 ### GitHub Advanced Security for Azure DevOps
 [!INCLUDE [sprint-269-update-links](includes/ghazdo/sprint-269-update-links.md)]
 
-### Boards
+### Azure Boards
 [!INCLUDE [sprint-269-update-links](includes/boards/sprint-269-update-links.md)]
 
-### Repos
+### Azure Repos
 [!INCLUDE [sprint-269-update-links](includes/repos/sprint-269-update-links.md)]
 
-### Pipelines
+### Azure Pipelines
 [!INCLUDE [sprint-269-update-links](includes/pipelines/sprint-269-update-links.md)]
 
 ## GitHub Advanced Security for Azure DevOps
 [!INCLUDE [sprint-269-update](includes/ghazdo/sprint-269-update.md)]
 
-## Boards
+## Azure Boards
 [!INCLUDE [sprint-269-update](includes/boards/sprint-269-update.md)]
 
-## Repos
+## Azure Repos
 [!INCLUDE [sprint-269-update](includes/repos/sprint-269-update.md)]
 
-## Pipelines
+## Azure Pipelines
 [!INCLUDE [sprint-269-update](includes/pipelines/sprint-269-update.md)]
 
 ## Next steps
