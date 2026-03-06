@@ -313,6 +313,8 @@ Adding anti-virus exclusions for your self-hosted agent directories and processe
 - `C:\Windows\Microsoft.NET\Framework\<VersionNumber>\Temporary ASP.NET Files` (Windows)
 - `C:\Windows\Microsoft.NET\Framework64\<VersionNumber>\Temporary ASP.NET Files` (Windows)
 
+For more information, see [Antivirus scanning exclusions](./anti-virus-exclusion.md).
+
 #### MSBuild and /nodeReuse:false
 
 If you invoke MSBuild during your build, make sure to pass the argument `/nodeReuse:false` (short form `/nr:false`). Otherwise MSBuild processes continue running after the build completes. The processes remain for some time in anticipation of a potential subsequent build.
