@@ -80,4 +80,4 @@ Follow these steps to add a feed from a different organization as an upstream so
 
 - [Safeguard against malicious public packages](../concepts/upstream-behavior.md)
 
-- [Manage permissions](../feeds/feed-permission.md)
+- [Manage permissions](../feeds/feed-permissions.md)
