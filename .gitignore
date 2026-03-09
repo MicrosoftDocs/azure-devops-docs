@@ -11,3 +11,9 @@
 .env
 .env.example
 requirements.txt
+
+# Doc-Kit overrides
+!.github/agents/azuredevops-standards-check.agent.md
+!.dockit/instructions/moniker-rules.instructions.md
+!.dockit/instructions/repo-structure.md
+!.dockit/instructions/team-standards.instructions.md
