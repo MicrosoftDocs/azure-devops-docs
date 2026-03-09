@@ -1,14 +1,15 @@
 ---
-title: Find or look up the organization owner 
+title: Look up the organization owner
 titleSuffix: Azure DevOps
 description: How-to guide for finding the owner of your organization.
 ms.subservice: azure-devops-security
+ai-usage: ai-assisted
 ms.custom: security-refresh
 ms.author: chcomley
 author: chcomley
 ms.topic: how-to
 monikerRange: 'azure-devops'
-ms.date: 07/29/2024
+ms.date: 03/09/2026
 ---
 
 # Look up the organization owner
@@ -27,7 +28,7 @@ To change the **Organization owner**, see [Change organization owner](../account
 
 ## Find the organization owner 
 
-1. Sign in to your organization (```https://dev.azure.com/{Your_Organization}```).
+1. Sign in to your organization (`https://dev.azure.com/{Your_Organization}`).
 
    :::image type="content" source="../../media/open-organization-settings-preview.png" alt-text="Screenshot showing Organization settings button in Azure DevOps."::: 
 
@@ -50,4 +51,4 @@ To change the **Organization owner**, see [Change organization owner](../account
 - [Request an increase in permission levels](request-changes-permissions.md)
 - [Look up a project administrator](look-up-project-administrators.md)
 - [Permissions lookup guide](permissions-lookup-guide.md)
-- [About permissions, access, & security](about-permissions.md)
+- [About permissions, access, and security](about-permissions.md)
