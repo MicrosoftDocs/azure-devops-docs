@@ -632,9 +632,6 @@ If you configure the [Azure DevOps MCP Server](../mcp-server/mcp-server-overview
 | Agent capabilities | `Do we already have custom agent capabilities this pipeline needs in <Contoso>?` |
 | Suggest improvements | `Suggest improvements to this pipeline in <Contoso>` |
 
-> [!NOTE]
-> If you're using Visual Studio Code, [agent mode](/visualstudio/ide/copilot-chat-context#agent-mode) is especially helpful for cross-referencing Azure Repos, Azure Pipelines, and project settings to give context in one conversational step.
-
 ## Next steps
 
 :::moniker range="azure-devops"
