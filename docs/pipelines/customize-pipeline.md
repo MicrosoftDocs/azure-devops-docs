@@ -411,8 +411,6 @@ If you configure the [Azure DevOps MCP Server](../mcp-server/mcp-server-overview
 | Review pipeline security | `Are there any security best practices missing from this pipeline in <Contoso>?` |
 | Compare configurations | `Compare the build settings of pipeline "CI-Main" and "CI-Feature" in <Contoso>` |
 
-> [!NOTE]
-> If you're using Visual Studio Code, [agent mode](/visualstudio/ide/copilot-chat-context#agent-mode) is especially helpful for iterating on pipeline YAML changes and validating customizations in real time.
 
 ## Next steps
 
