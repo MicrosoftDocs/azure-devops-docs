@@ -150,9 +150,6 @@ If you configure the [Azure DevOps MCP Server](../../mcp-server/mcp-server-overv
 | Identify approval blockers | `Are there any pending approvals blocking pipeline runs in <Contoso>?` |
 | Review variable groups | `What variable groups are used by pipelines in project <Contoso>?` |
 
-> [!NOTE]
-> If you're using Visual Studio Code, [agent mode](/visualstudio/ide/copilot-chat-context#agent-mode) is especially helpful for exploring pipeline architecture and diagnosing build issues.
-
 ## Related content
 
 - [Approvals and checks](../process/approvals.md)
