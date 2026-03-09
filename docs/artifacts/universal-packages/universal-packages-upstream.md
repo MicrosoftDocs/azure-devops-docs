@@ -18,7 +18,7 @@ Universal Packages in Azure Artifacts allow developers to store various types of
 
 | **Product**        | **Requirements**       |
 |--------------------|------------------------|
-| **Azure DevOps**   | - An Azure DevOps [organization](../../organizations/accounts/create-organization.md).<br>- An Azure DevOps [project](../../organizations/projects/create-project.md).<br> - Download and install [Azure CLI](/cli/azure/install-azure-cli).<br> - Install the [Azure DevOps extension](#install-azure-devops-extension). |
+| **Azure DevOps**   | - An Azure DevOps [organization](../../organizations/accounts/create-organization.md).<br>- An Azure DevOps [project](../../organizations/projects/create-project.md).<br> - Download and install [Azure CLI](/cli/azure/install-azure-cli).<br> - Install the [Azure DevOps extension](/azure/devops/cli/index#install-and-update). |
 
 > [!NOTE]
 > Universal Packages are only available in Azure DevOps Services.
