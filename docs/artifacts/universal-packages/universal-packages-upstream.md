@@ -1,9 +1,9 @@
 ---
 title: Universal Packages upstream sources
-description: How to add Universal Packages upstream sources
+description: Learn how to set up internal and external feeds as Universal Packages upstream sources in Azure Artifacts.
 ms.service: azure-devops-artifacts
 ms.topic: how-to
-ms.date: 05/12/2022
+ms.date: 03/09/2026
 monikerRange: 'azure-devops'
 "recommendations": "true"
 ---
@@ -12,25 +12,40 @@ monikerRange: 'azure-devops'
 
 [!INCLUDE [version-eq-azure-devops](../../includes/version-eq-azure-devops.md)]
 
-With Azure Artifacts, you can enable upstream sources to start consuming packages from public registries such as NuGet.org or npmjs.com. Once you enable upstream sources, Azure Artifacts will save a copy of any packages you install from upstream. Azure Artifacts also supports using other feeds as upstream sources. In this article, you'll learn how to add a new Universal Packages upstream source with a feed in your organization or other organizations within the same Microsoft Entra ID. See [Manage access with Microsoft Entra ID](../../organizations/accounts/connect-organization-to-azure-ad.md) to learn how to connect your organization to Microsoft Entra ID.
+Universal Packages in Azure Artifacts allow developers to store various types of packages bundled into a single package. This article walks you through setting up internal and external feeds as upstream sources for Universal Packages.
+
+## Prerequisites
+
+| **Product**        | **Requirements**       |
+|--------------------|------------------------|
+| **Azure DevOps**   | - An Azure DevOps [organization](../../organizations/accounts/create-organization.md).<br>- An Azure DevOps [project](../../organizations/projects/create-project.md).<br> - Download and install [Azure CLI](/cli/azure/install-azure-cli).<br> - Install the [Azure DevOps extension](#install-azure-devops-extension). |
+
+> [!NOTE]
+> Universal Packages are only available in Azure DevOps Services.
 
 ## Add a feed in your organization as an upstream source
 
-1. Select the ![gear icon](../../media/icons/gear-icon.png) at the top right corner to navigate to **Feed Settings**.
+Follow these steps to add a feed from the same organization as an upstream source for Universal Packages:
 
-1. Select **Upstream sources**, and then select **Add Upstream**.
+1. Sign in to Azure DevOps, then navigate to your project.
+
+1. Select **Artifacts**, then select your feed from the dropdown menu.
+
+1. Select the ![gear icon](../../media/icons/gear-icon.png) in the upper‑right corner to open **Feed Settings**.
+
+1. Select **Upstream sources**, then select **Add Upstream**.
 
     :::image type="content" source="./media/upack-add-upstream.png" alt-text="A screenshot showing how to add upstream.":::
 
-1. Select **Azure Artifacts feed in this organization** to use packages from a feed in your organization.
+1. Select **Azure Artifacts feed in this organization** to use a feed in your organization.
 
     :::image type="content" source="./media/same-org-feed.png" alt-text="A screenshot showing the types of upstream sources - same org.":::
 
-1. Select your **Feed** from the dropdown menu, select a **View** and give your upstream source a name. Make sure you check the **UPack** package type.
-
-1. Select **Add** when you're done, and then select **Save** one more time from the top right corner to save your changes.
+1. Select your **Feed** from the dropdown menu, choose a **View**, and enter a name for your upstream source. Make sure the **UPack**  package type is selected.
 
     :::image type="content" source="./media/upack-upstream.png" alt-text="A screenshot showing how to set up a new Universal Packages upstream source.":::
+
+1. Select **Add**, and then select **Save** to apply your changes.
 
 ## Add a feed in another organization as an upstream source
 
