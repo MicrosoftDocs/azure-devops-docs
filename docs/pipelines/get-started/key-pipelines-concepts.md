@@ -4,12 +4,16 @@ description: Learn the key concepts of how Azure Pipelines works with your code 
 ms.topic: overview
 ms.date: 08/08/2025
 monikerRange: 'azure-devops'
+ai-usage: ai-assisted
+ms.custom: copilot-scenario-highlight
 #customer intent: As a new Azure Pipelines user, I want to understand the key concepts and components that make up Azure Pipelines so I can more effectively build, test, and deploy my code.
 ---
 
 # Key Azure Pipelines concepts
 
 [!INCLUDE [version-eq-azure-devops](../../includes/version-eq-azure-devops.md)]
+
+[!INCLUDE [ai-assistance](../../includes/ai-assistance-mcp-server-tip.md)]
 
 This article presents the key concepts and components that make up Azure Pipelines. Understanding the basic terms and parts of a pipeline can help you more effectively build, test, and deploy your code.
 
@@ -126,6 +130,28 @@ A [task](../process/tasks.md) is a prepackaged script or procedure abstracted wi
 ### Triggers
 
 A trigger is an event that causes a pipeline to run. You can trigger a pipeline manually or to run on a set schedule. You can also trigger a pipeline to run automatically upon a push to a repository, upon the completion of another build, or under other conditions. For more information, see [Specify events that trigger pipelines](../build/triggers.md) and [Classic release triggers](../release/triggers.md).
+
+<a id="use-ai-assistance"></a>
+
+## AI-Assisted Pipeline Operations with Copilot
+
+If you configure the [Azure DevOps MCP Server](../../mcp-server/mcp-server-overview.md), you can explore pipeline concepts and troubleshoot pipelines using natural language.
+
+| Task | Example prompt |
+|------|----------------|
+| Show failed builds | `Show me failed builds this week in project <Contoso>` |
+| Check agent capacity | `Which agents have capacity issues or long queue times in <Contoso>?` |
+| List pipeline stages | `What stages are defined in the "CI-Main" pipeline in <Contoso>?` |
+| View recent pipeline runs | `Show the last 10 pipeline runs for project <Contoso> and their results` |
+| Find slow jobs | `Which jobs in the "Release-Prod" pipeline in <Contoso> are taking the longest?` |
+| Inspect triggers | `What triggers are configured for the "Build-API" pipeline in <Contoso>?` |
+| Review artifacts | `List the artifacts published by the latest run of "CI-Main" in <Contoso>` |
+| Check environment deployments | `Show recent deployments to the "production" environment in <Contoso>` |
+| Identify approval blockers | `Are there any pending approvals blocking pipeline runs in <Contoso>?` |
+| Review variable groups | `What variable groups are used by pipelines in project <Contoso>?` |
+
+> [!NOTE]
+> If you're using Visual Studio Code, [agent mode](/visualstudio/ide/copilot-chat-context#agent-mode) is especially helpful for exploring pipeline architecture and diagnosing build issues.
 
 ## Related content
 
