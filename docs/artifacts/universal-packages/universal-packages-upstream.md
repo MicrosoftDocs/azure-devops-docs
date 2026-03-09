@@ -49,31 +49,35 @@ Follow these steps to add a feed from the same organization as an upstream sourc
 
 ## Add a feed in another organization as an upstream source
 
-1. Select the ![gear icon](../../media/icons/gear-icon.png) at the top right corner to navigate to **Feed Settings**.
+Follow these steps to add a feed from a different organization as an upstream source for Universal Packages:
+
+1. Sign in to Azure DevOps, then navigate to your project.
+
+1. Select **Artifacts**, then select your feed from the dropdown menu.
+
+1. Select the ![gear icon](../../media/icons/gear-icon.png) in the upper‑right corner to navigate to **Feed Settings**.
 
 1. Select **Upstream sources**, and then select **Add Upstream**.
 
     :::image type="content" source="./media/upack-add-upstream.png" alt-text="A screenshot showing how to add an upstream source.":::
 
-1. Select **Azure Artifacts feed in another organization** to use packages from a feed in a different organization within the same Microsoft Entra ID.
+1. Select **Azure Artifacts feed in another organization** to use a feed in a different organization within the same Microsoft Entra ID.
 
     :::image type="content" source="./media/other-org-feed.png" alt-text="A screenshot showing the types of upstream sources - feed in another org.":::
 
-1. Enter your **Azure Artifacts feed locator**, and give your upstream source a name. Make sure you check the **UPack** package type.
-
-1. Select **Add** when you're done, and then select **Save** one more time from the top right corner to save your changes.
+1. Enter your **Azure Artifacts feed locator**, and give your upstream source a name. Make sure the **UPack**  package type is selected.
 
     :::image type="content" source="./media/upack-upstream-other-org.png" alt-text="A screenshot showing how to set up a new Universal Packages upstream source with a feed in another organization.":::
 
-## View saved packages from upstream
+1. Select **Add**, and then select **Save** in the upper-right corne to apply your changes.
 
-To view the packages saved from your Universal Packages upstream source, select your UPack source from the dropdown menu.
+> [!NOTE]
+> To add a feed from a different organization as an upstream source, the target feed owner must share the target view with **All feeds and people in organizations associated with my Microsoft Entra tenant**. To do this, navigate to **Feed Settings** > **Views** > select the ellipsis for the view, select **Edit**.
 
-:::image type="content" source="./media/filter-packages.png" alt-text="A screenshot showing how to filter for packages from UPack upstream source.":::
+## Related content
 
-## Related articles
+- [Use upstream sources with public feeds](../how-to/public-feeds-upstream-sources.md)
 
-- [DevBlogs - Universal Packages upstream sources](https://devblogs.microsoft.com/devops/azure-artifacts-introduces-new-upstreaming-capabilities/)
-- [Configure upstream sources](../how-to/set-up-upstream-sources.md)
-- [Publish packages to NuGet.org](../nuget/publish-to-nuget-org.md)
-- [Configure upstream behavior](../concepts/upstream-behavior.md)
+- [Safeguard against malicious public packages](../concepts/upstream-behavior.md)
+
+- [Manage permissions](../feeds/feed-permission.md)
