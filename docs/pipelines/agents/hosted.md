@@ -33,11 +33,14 @@ You can see the installed software for each Windows hosted agent image by choosi
 
 | Image | Classic Editor Agent Specification | YAML VM Image Label | Included software |
 | --- | --- | --- | --- |
+| Windows Server 2025 with Visual Studio 2026 | *windows-2025-vs2026* | `windows-2025-vs2026` | [Link]
+(https://github.com/actions/runner-images/blob/main/images/windows/Windows2025-VS2026-Readme.md) |
 | Windows Server 2025 with Visual Studio 2022 | *windows-2025* | `windows-latest` OR `windows-2025` | [Link](https://github.com/actions/runner-images/blob/main/images/windows/Windows2025-Readme.md) |
 | Windows Server 2022 with Visual Studio 2022 | *windows-2022* | `windows-2022` | [Link](https://aka.ms/windows-2022-readme) |
 
 #### Windows image updates
 
+* Windows Server 2025 with Visual Studio 2026 is now available from 9th March'2026. 
 * The Windows Server 2019 hosted agent image was retired on December 31, 2025.
 * [[Windows & Ubuntu] .NET 6 was removed from the images on August 1, 2025.](https://github.com/actions/runner-images/issues/12241)
 
