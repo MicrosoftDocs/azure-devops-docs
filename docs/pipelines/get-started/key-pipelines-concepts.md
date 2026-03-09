@@ -13,11 +13,11 @@ ms.custom: copilot-scenario-highlight
 
 [!INCLUDE [version-eq-azure-devops](../../includes/version-eq-azure-devops.md)]
 
-[!INCLUDE [ai-assistance](../../includes/ai-assistance-mcp-server-tip.md)]
-
 This article presents the key concepts and components that make up Azure Pipelines. Understanding the basic terms and parts of a pipeline can help you more effectively build, test, and deploy your code.
 
 > [!VIDEO https://learn-video.azurefd.net/vod/player?id=20e737aa-cadc-4603-9685-3816085087e9]
+
+[!INCLUDE [ai-assistance](../../includes/ai-assistance-mcp-server-tip.md)]
 
 ## Key concepts overview
 
