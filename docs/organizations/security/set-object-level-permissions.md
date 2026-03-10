@@ -3,24 +3,25 @@ title: Set object-level permissions
 titleSuffix: Azure DevOps
 description: How to grant permission and access at the object-level - repos, pipelines, work items, area paths, queries, wikis, dashboards, and more.
 ms.subservice: azure-devops-security
+ai-usage: ai-assisted
 ms.assetid: 5AD0BF62-C91E-46DD-8C1A-C8D1F8F8D05F
 ms.author: chcomley
 author: chcomley
 ms.topic: how-to
 monikerRange: '<= azure-devops'
-ms.date: 07/15/2024
+ms.date: 03/09/2026
 --- 
 
 # Set object-level permissions
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
-As you manage security for your organization, you can set permissions at the organization/collection-level, project-level, and object-level. This article helps you go to the security dialogs for setting permissions at the object-level, as the user interface varies somewhat across Azure DevOps. For more information, see [Get started with permissions, access, and security groups](about-permissions.md#permissions).
+As you manage security for your organization, set permissions at the organization/collection level, project level, and object level. This article helps you access the security dialogs for setting permissions at the object level, as the user interface varies somewhat across Azure DevOps. For more information, see [Get started with permissions, access, and security groups](about-permissions.md#permissions).
 
 The following items are considered objects:
 
 - **General**: Dashboards, Analytic views, Wikis, and notifications
-- Azure Boards: Area Paths, Iteration Paths, Shared queries and query folders, and more
+- **Azure Boards**: Area Paths, Iteration Paths, Shared queries and query folders, and more
 - **Azure Pipelines**: Build and release pipelines, deployment groups, task groups, and more
 - **Azure Repos**: Git repositories and branches, TFVC folders or branches
 - **Azure Artifacts**: Artifacts and feeds
@@ -34,7 +35,7 @@ Work items, tags, test plans, and other test artifacts are subject to the securi
 | Permissions | Member of the **Project Administrators** group or explicit permissions through the individual object security dialog.|
 
 > [!NOTE]
-> TFVC only supports a single repository per project. You can set permissions for the repository or repo folders/branches, which inherit from the repo.
+> TFVC supports only a single repository per project. You can set permissions for the repository or repo folders and branches, which inherit from the repo.
 
 ## Open the permissions dialog for an object section
 
@@ -46,22 +47,22 @@ To access the Permissions dialog for an object, follow these steps:
 :::image type="content" source="media/permissions-dialog.png" alt-text="Screenshot showing how to get to permission settings for an object.":::
 
 > [!NOTE]
-> Some objects, such as repositories and Analytics views, require at least Basic access levels. For more information, see [Access levels](access-levels.md).
+> Some objects, such as repositories and Analytics views, require at least Basic access. For more information, see [Access levels](access-levels.md).
 
 ## Set permissions for Dashboards, Wikis, and Analytic views
 
-You can set permissions at the project-level and organization/collection-level for some general items, such as creating, deleting, and renaming projects. The following table provides information about setting permissions at the object-level for Dashboards, Wiki, and Analytic views.
+You can set permissions at the project level and organization or collection level for some general items, such as creating, deleting, and renaming projects. The following table provides information about setting permissions at the object level for Dashboards, Wiki, and Analytic views.
 
 |Object  |Default group membership  |How to access security|Inherited?  |
 |---------|---------|---------|---------|
-|[Dashboards](../../report/dashboards/dashboard-permissions.md)| Contributor  | Open **Dashboards**, select the area path, and then  **More** ... > **Security**. | ✔️ (project settings for team dashboard)|
+|[Dashboards](../../report/dashboards/dashboard-permissions.md)| Contributor  | Open **Dashboards**, select the dashboard, and then **More** ... > **Security**. | ✔️ (project settings for team dashboard)|
 |[Wiki](../../project/wiki/manage-readme-wiki-permissions.md) |Contributor |Open the wiki, choose **More** ... > **Wiki security**. For more information, see [Manage Wiki permissions](../../project/wiki/manage-readme-wiki-permissions.md). | no        |
 |[Analytic views](../../report/powerbi/analytics-security.md) | Contributor & Basic|Open the analytic view, choose **More** ... > **Security**.  | no |
 
 
 ## Set permissions for Boards objects
 
-The following table provides information about setting permissions at the object-level for area and iteration paths, work items, and more.
+The following table provides information about setting permissions at the object level for area and iteration paths, work items, and more.
 
 
 |Object  |Default group membership  |How to access security  |Inherited?  |
@@ -74,25 +75,25 @@ The following table provides information about setting permissions at the object
 |[Process](../../boards/get-started/permissions-access-boards.md)  | [Project Administrator](../../organizations/security/permissions.md#project-level-groups)        | Select **More** ... > **Security**.        | ✔️ (from Organization/Collection settings)        |
 
 > [!NOTE]
-> Work item tags - permissions get set at the project level, **Create tag definition**. Work item tags don't qualify as an object, they're defined through work items.
+> Set permissions for work item tags at the project level by using **Create tag definition**. Work item tags don't qualify as an object because they're defined through work items.
 
 ### Tips
 
 Let's break down the following roles related to reviewers:
 
 - **Changed reviewers:**
-  - This role applies to any reviewer who was added or removed, due to policies defined for a set of files. 
-  - For example, consider a pull request (PR) where changes are made to `File1.cs`. 
+  - This role applies to any reviewer who was added or removed, based on policies defined for a set of files. 
+  - For example, consider a pull request (PR) where you make changes to `File1.cs`. 
   - If a policy specifies that Person A needs to review changes to `File1.cs`, they fall into the "Changed reviewers" role for that iteration of the PR.
 - **Reset reviewers:** 
-  - This role is related to the "reset votes" policy. 
-  - Suppose the repository has the policy “Reset votes on new pushes” configured. 
-  - If Person B, who was required to review the PR, already approved it, their vote gets reset due to the policy. 
+  - This role relates to the "reset votes" policy. 
+  - Suppose the repository has the policy **Reset votes on new pushes** configured. 
+  - If Person B, who was required to review the PR, already approved it, the policy resets their vote. 
   - As a result, they're in the "Reset reviewers" role for that iteration.
 
 ## Set permissions for Repos objects
 
-The following table provides information about setting permissions at the object-level for repos, Git repos, Git branches, and TFVC repos.
+The following table provides information about setting permissions at the object level for repos, Git repos, Git branches, and TFVC repos.
 
 | Object | Default group membership | How to access security | Inherited? |
 |--|--|--|--|
@@ -105,12 +106,12 @@ The following table provides information about setting permissions at the object
 
 - **Branch permissions:**
   - Branches inherit a subset of permissions from assignments made at the repository level. 
-  - For more information, see [Set branch permissions](../../repos/git/branch-permissions.md) and [Improve code quality with branch policies](../../repos/git/branch-policies.md)
+  - For more information, see [Set branch permissions](../../repos/git/branch-permissions.md) and [Improve code quality with branch policies](../../repos/git/branch-policies.md).
 - **Shared query folders:**
   - Create a shared query folder for each team.
   - Provide permissions to create and edit queries under that folder to all team members.
 - **Contributors group:**
-  - Adding a user to the Contributors group allows them to add and modify work items. 
+  - When you add a user to the Contributors group, they can add and modify work items. 
   - You can restrict user and group permissions based on the area path. For more information, see [Set permissions and access for work tracking, Modify work items under an area path](set-permissions-access-work-tracking.md#set-permissions-area-path).
 ::: moniker range="azure-devops"
 - **Permissions report:**
@@ -120,7 +121,7 @@ The following table provides information about setting permissions at the object
 
 ## Set permissions for Pipelines objects
 
-The following table provides information about setting permissions at the object-level for build pipelines, release pipelines, deployment groups, and more.
+The following table provides information about setting permissions at the object level for build pipelines, release pipelines, deployment groups, and more.
 
 | Object | Default group membership | How to access security | Inherited? |
 |--|--|--|--|
@@ -137,7 +138,7 @@ The following table provides information about setting permissions at the object
 
 ## Set permissions for Artifacts objects
 
-The following table provides information about setting permissions at the object-level for artifacts and feeds.
+The following table provides information about setting permissions at the object level for artifacts and feeds.
 
 | Object | Default group membership | How to access security | Inherited? |
 |--|--|--|--|
@@ -146,19 +147,19 @@ The following table provides information about setting permissions at the object
 
 ## Set permissions for Test plans objects
 
-- Test plans, test suites, test cases, and other test objects are managed similarly to work items because they represent test-specific work item types, as discussed in [Test objects and terms](/azure/devops/organizations/security/set-permissions-access-test).
-- You can manage test-level permissions through project-level settings or through Area Path object-level settings. For more information, see [Set permissions and access for testing](/azure/devops/organizations/security/set-permissions-access-test).
+- Manage test plans, test suites, test cases, and other test objects similarly to work items because they represent test-specific work item types, as discussed in [Test objects and terms](set-permissions-access-test.md).
+- Manage test-level permissions through project-level settings or through Area Path object-level settings. For more information, see [Set permissions and access for testing](set-permissions-access-test.md).
 
 ::: moniker range="azure-devops" 
 
 ## Set object permissions through the command line
 
-You can use the [az devops security command line tool](manage-tokens-namespaces.md), which allows you to view and manage permissions for various objects and features.
+Use the [az devops security command line tool](manage-tokens-namespaces.md) to view and manage permissions for various objects and features.
 
-Here are some examples of more granular permissions that can be managed through the command line:
+Here are some examples of more granular permissions that you can manage through the command line:
 
 - **Notifications:** Use the `EventSubscription` and `EventSubscriber` namespaces.
-- **Dashboards:** Read or create dashboards using the `DashboardPrivileges` namespace.
+- **Dashboards:** Read or create dashboards by using the `DashboardPrivileges` namespace.
 - **Service endpoints:** Use, manage, or view service endpoints through the `ServiceEndpoints` namespace.
 - **Delivery plans:** View delivery plans through the `Plans` namespace.
 
@@ -168,22 +169,22 @@ For more information about namespaces, see [Security namespace and permission re
 
 ## Set permissions for object notifications
 
-While there isn't a user interface for setting notification permissions, some permissions can be set through command line tools and the `EventSubscription` namespace. For more information, see [Security namespace and permission reference](namespace-reference.md).
+While there isn't a user interface for setting notification permissions, you can set some permissions through command-line tools and the `EventSubscription` namespace. For more information, see [Security namespace and permission reference](namespace-reference.md).
 
-Here are some more tips for managing notifications:
+Here are some tips for managing notifications:
 
 - **Notification levels:**
-  - Notifications can be set at different levels: User, team, project, and organization/collection.
-  - Unfortunately, there isn’t a user interface specifically for setting notification permissions.
-  - However, some permissions can be configured through command-line tools and the EventSubscription namespace.
+  - Set notifications at different levels: user, team, project, and organization or collection.
+  - There's no user interface specifically for setting notification permissions.
+  - However, you can configure some permissions through command-line tools and the `EventSubscription` namespace.
 - **Skip initiator option:**
-  - If you don’t want to receive notifications for events that you initiated, enable the Skip initiator option.
-  - This prevents notifications for actions you started.
+  - If you don't want to receive notifications for events that you initiated, enable the **Skip initiator** option.
+  - This option prevents notifications for actions you started.
   - For more information, see [Exclude yourself from notification emails for events that you start](../../organizations/notifications/exclude-self-from-email.md).
 - **Organization-wide notifications:**
-  - Azure DevOps doesn’t directly support organization-wide notifications.
+  - Azure DevOps doesn't directly support organization-wide notifications.
   - As an alternative, consider providing an email distribution list that reaches your entire organization.
-  - In Azure DevOps Services you can create a banner using the `az devops banner` command that all users see when they sign in.
+  - In Azure DevOps Services, you can create a banner by using the `az devops banner` command that all users see when they sign in.
 
 ## Related content
 
