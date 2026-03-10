@@ -218,7 +218,7 @@ To save the artifacts of the build with the build record, include the [Archive F
 
 ### Service connection errors
 
-If your pipeline fails with an authorization error during deployment, verify that your [Azure Resource Manager service connection](../../library/connect-to-azure.md) is configured correctly and has the required permissions to deploy to your App Service.
+If your pipeline fails with an authorization error during deployment, verify that your [Azure Resource Manager service connection](../library/connect-to-azure.md) is configured correctly and has the required permissions to deploy to your App Service.
 
 ### Composer install failures
 
