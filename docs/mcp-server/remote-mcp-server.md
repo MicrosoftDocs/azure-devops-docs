@@ -243,6 +243,7 @@ Core tools are always available.
 ## Configure your AI assistant
 The remote MCP Server exposes a streamable HTTP endpoint. Add the configuration shown earlier to your AI assistant's MCP settings.
 
+<br>
 ### Supported environments
 The remote Azure DevOps MCP Server requires your user account and Azure DevOps organization to be connected to Microsoft Entra ID.
 
