@@ -1,11 +1,11 @@
 ---
 title: Build, test, and deploy PHP apps
 description: Learn how to use Azure Pipelines to build, test, and deploy PHP apps to Azure App Service.
-ms.topic: concept-article
+ms.topic: how-to
 ms.assetid: f8510914-9716-4a76-92be-333133fbd97b
 ms.author: jukullam
-ms.custom: freshness-fy22q2
-ms.date: 10/03/2025
+ms.custom: freshness-fy22q2, doc-kit-assisted
+ms.date: 03/10/2026
 monikerRange: "<=azure-devops"
 #customer intent: As a PHP developer, I want to learn how to create pipelines to build and deploy PHP apps so I can use continuous integration and deployment to automatically update my web apps.
 ---
@@ -22,6 +22,9 @@ Azure Pipelines builds your PHP projects without you having to set up any infras
 
 - Your own fork of the sample GitHub PHP project at [https://github.com/Azure-Samples/php-docs-hello-world](https://github.com/Azure-Samples/php-docs-hello-world).
 
+  > [!TIP]
+  > The sample project uses PHP's default time zone settings, which default to UTC on Microsoft-hosted agents. If your app needs a specific time zone, refer to [Set the PHP time zone](#set-the-php-time-zone).
+
 - A PHP web app created for the project in Azure App Service. To quickly create a PHP web app, see [Create a PHP web app in Azure App Service](/azure/app-service/quickstart-php). You can also use your own PHP GitHub project and web app.
 
 You also need the following prerequisites:
@@ -33,9 +36,9 @@ You also need the following prerequisites:
 
 ## Example pipeline
 
-The following example *azure-pipelines.yml* file based on the **PHP as Linux Web App on Azure** pipeline [template](../process/templates.md) has two stages, `Build` and `Deploy`. The `Build` stage installs PHP 8.2, and then runs tasks to archive your project files and publish a ZIP build artifact to a package named `drop`.
+The following example *azure-pipelines.yml* file, based on the **PHP as Linux Web App on Azure** pipeline [template](../process/templates.md), has two stages: `Build` and `Deploy`. The `Build` stage installs PHP 8.2, and then runs tasks to archive your project files and publish a ZIP build artifact to a package named `drop`.
 
-The `Deploy` stage runs if the `Build` stage succeeds, and deploys the `drop` package to App Service by using the [Azure Web App](/azure/devops/pipelines/tasks/reference/azure-web-app-v1) task. When you use the **PHP as Linux Web App on Azure** template to create your pipeline, the generated pipeline sets and uses variables and other values based on your configuration settings.
+The `Deploy` stage runs if the `Build` stage succeeds. It deploys the `drop` package to App Service by using the [Azure Web App](/azure/devops/pipelines/tasks/reference/azure-web-app-v1) task. When you use the **PHP as Linux Web App on Azure** template to create your pipeline, the generated pipeline sets and uses variables and other values based on your configuration settings.
 
 >[!NOTE]
 >If you create your pipeline from the **PHP as Linux Web App on Azure** [template](../process/templates.md), and your PHP app doesn't use Composer, remove the following lines from the generated pipeline before you save and run it. The template pipeline fails as is if *composer.json* isn't present in the repo.
@@ -136,6 +139,7 @@ To create and run the example pipeline, take the following steps:
    >The first time the pipeline runs, it asks for permission to access the environment it creates. Select **Permit** to grant permission for the pipeline to access the environment.
 
 1. To watch your pipeline in action, select the job on the run **Summary** page. When the run completes, select the **App Service Application URL** link in the **Deploy Azure Web App** step to see the deployed web app.
+1. Verify the deployment succeeded by browsing to the URL. You should see the sample app's **Hello World!** output.
 
 ## Customize the pipeline
 
@@ -145,9 +149,9 @@ You can customize the pipeline in several ways:
 
 ### Use a specific PHP version
 
-Multiple PHP versions are installed on Microsoft-hosted Ubuntu agents. A symlink at */usr/bin/php* points to the current PHP version, so when you run `php`, the set version executes.
+Microsoft-hosted Ubuntu agents have multiple PHP versions installed. A symlink at */usr/bin/php* points to the current PHP version, so when you run `php`, the set version executes.
 
-To use a PHP version other than the default, you can point the symlink to the desired version using the `update-alternatives` command. In your YAML pipeline, change the value of the `phpVersion` variable to the version you want, and use the following snippet:
+To use a PHP version other than the default, point the symlink to the desired version by using the `update-alternatives` command. In your YAML pipeline, change the value of the `phpVersion` variable to the version you want. Add the following snippet to the `variables` and `steps` sections of your build stage:
 
 ```yaml
 variables:
@@ -164,24 +168,42 @@ steps:
   displayName: 'Use PHP version $(phpVersion)'
 ```
 
+### Set the PHP time zone
+
+Microsoft-hosted agents default to UTC, so PHP functions like `date()` and `strtotime()` return UTC values. To use a different time zone in your pipeline scripts, set the `TZ` environment variable or call `date_default_timezone_set()` in your PHP code.
+
+The following example sets the time zone to Eastern Time for a script step. Add this snippet to the `steps` section of your build job:
+
+```yaml
+- script: |
+    export TZ='America/New_York'
+    php -r "date_default_timezone_set('America/New_York'); echo date('Y-m-d H:i:s T');"
+  displayName: 'Run PHP with Eastern time zone'
+```
+
+For a list of supported time zone identifiers, see the [PHP list of supported timezones](https://www.php.net/manual/en/timezones.php).
+
 ### Install dependencies
 
-To use Composer to install dependencies, include the following snippet in your *azure-pipelines.yml* file:
+To use Composer to install dependencies, add the following snippet to the `steps` section of your build job:
 
 ```yaml
 - script: composer install --no-interaction --prefer-dist
   displayName: 'composer install'
 ```
 
-If your *composer.json* file isn't in the root directory, you can use the `--working-dir` argument to specify what directory to use. For example, if *composer.json* is in the subfolder */pkgs*, use `composer install --no-interaction --working-dir=pkgs`. You can also specify an absolute path using the built-in system variable: `--working-dir='$(System.DefaultWorkingDirectory)/pkgs'`.
+If your *composer.json* file isn't in the root directory, use the `--working-dir` argument to specify what directory to use. For example, if *composer.json* is in the subfolder */pkgs*, use `composer install --no-interaction --working-dir=pkgs`. You can also specify an absolute path by using the built-in system variable: `--working-dir='$(System.DefaultWorkingDirectory)/pkgs'`.
 
 ### Test with PHPUnit
 
-To run tests with PHPUnit, add the following snippet to your *azure-pipelines.yml* file:
+To run tests with PHPUnit, first install it as a dev dependency with Composer, and then run it. Add the following snippet to the `steps` section of your build job:
 
 ```yaml
-- script: ./phpunit
-  displayName: 'Run tests with phpunit'
+- script: composer require --dev phpunit/phpunit
+  displayName: 'Install PHPUnit'
+
+- script: vendor/bin/phpunit --log-junit $(Build.StagingDirectory)/test-results.xml
+  displayName: 'Run tests with PHPUnit'
 ```
 
 ### Retain the PHP artifacts with the build record
@@ -194,6 +216,27 @@ To save the artifacts of the build with the build record, include the [Archive F
     rootFolderOrFile: '$(System.DefaultWorkingDirectory)'
     includeRootFolder: false
 ```
+
+## Troubleshoot
+
+### Service connection errors
+
+If your pipeline fails with an authorization error during deployment, verify that your [Azure Resource Manager service connection](../../library/connect-to-azure.md) is configured correctly and has the required permissions to deploy to your App Service.
+
+### Composer install failures
+
+If `composer install` fails, verify that your *composer.json* file is present in the working directory. If the file is in a subdirectory, use the `--working-dir` argument. If *composer.json* doesn't exist in your repo, remove the Composer step from the pipeline.
+
+### PHP version not available
+
+If `update-alternatives` fails with an error like `no alternatives for php8.x`, the requested PHP version isn't installed on the agent image. Check the [Microsoft-hosted agent software list](../agents/hosted.md#software) for available PHP versions.
+
+### Deployment permission denied
+
+If the deploy stage fails with a permission error, verify that:
+
+- Your service connection has the **Contributor** role on the App Service resource.
+- The pipeline has permission to access the environment. On the first run, select **Permit** when prompted.
 
 ## Related content
 
