@@ -14,7 +14,7 @@ Customers are encouraged to move to **organization‑scoped PATs** where necessa
 
 **Key dates:** 
 
-* On March 15, 2026, creation and regeneration of global PATs will be blocked.
+* ~~On March 15, 2026, creation and regeneration of global PATs will be blocked.~~
 
 * December 1, 2026, all existing global PATs will be fully decommissioned and stop working. Customers should review any workflows or integrations using global PATs and begin transitioning ahead of these deadlines to avoid disruption. 
 
