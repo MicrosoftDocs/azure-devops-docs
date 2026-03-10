@@ -174,8 +174,6 @@ Use the `X-MCP-Readonly` header if you want to restrict the server to read-only 
 | `repo_update_pull_request_reviewers` | Add or remove PR reviewers | ❌ |
 | `repo_update_pull_request_thread` | Update a PR comment thread | ❌ |
 
----
-
 ### `wit` toolset
 
 | Tool | Description | Read-only |
@@ -202,8 +200,6 @@ Use the `X-MCP-Readonly` header if you want to restrict the server to read-only 
 | `wit_link_work_item_to_pull_request` | Link a work item to a pull request | ❌ |
 | `wit_add_artifact_link` | Add artifact links to a work item | ❌ |
 
----
-
 ### `pipelines` toolset
 
 | Tool | Description | Read-only |
@@ -223,8 +219,6 @@ Use the `X-MCP-Readonly` header if you want to restrict the server to read-only 
 | `pipelines_create_pipeline` | Create a pipeline definition | ❌ |
 | `pipelines_run_pipeline` | Trigger a pipeline run | ❌ |
 
----
-
 ### `wiki` toolset
 
 | Tool | Description | Read-only |
@@ -237,8 +231,6 @@ Use the `X-MCP-Readonly` header if you want to restrict the server to read-only 
 | `search_wiki` | Full-text wiki search | ✅ |
 | `wiki_create_or_update_page` | Create or update a wiki page | ❌ |
 
----
-
 ### `work` toolset
 
 | Tool | Description | Read-only |
@@ -248,7 +240,6 @@ Use the `X-MCP-Readonly` header if you want to restrict the server to read-only 
 | `work_get_team_capacity` | Get team capacity for an iteration | ✅ |
 | `work_create_iterations` | Create iterations | ❌ |
 | `work_assign_iterations` | Assign iterations to a team | ❌ |
-
 
 ## Configure your AI assistant
 The remote MCP Server exposes a streamable HTTP endpoint. Add the configuration shown earlier to your AI assistant's MCP settings.
