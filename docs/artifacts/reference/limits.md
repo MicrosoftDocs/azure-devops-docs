@@ -33,7 +33,7 @@ Azure Artifacts enforces the following count limits:
 
 The following table shows the maximum supported size for each package type:
 
-::: moniker range="azure-devops" 
+::: moniker range=">= azure-devops" 
 
 | Package type       | Package size limit (per file)   |
 |--------------------|---------------------------------|
@@ -59,18 +59,6 @@ Universal Packages that contain a very large number of files (100K+) may fail to
 | Maven              | 500 MiB                         |
 | Python             | 500 MiB                         |
 | Cargo              | 500 MiB                         |
-
-::: moniker-end
-
-::: moniker range="< azure-devops-2022" 
-
-| Package type       | Package size limit (per file)   |
-|--------------------|---------------------------------|
-| NuGet              | 500 MiB                         |
-| npm                | 500 MiB. Azure Artifacts enforces an additional hard limit of *375 KB* for the *package.json* file. |
-| Maven              | 500 MiB                         |
-| Python             | 500 MiB                         |
-
 
 ::: moniker-end
 
