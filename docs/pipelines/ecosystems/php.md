@@ -31,9 +31,6 @@ You also need the following prerequisites:
 
 [!INCLUDE [ecosystems-prerequisites](includes/ecosystems-prerequisites.md)]
 
->[!NOTE]
->[GitHub](https://github.com) might require authentication, authorization, or sign in to GitHub organizations or specific repositories. Follow instructions to complete the required processes. For more information, see [Access to GitHub repositories](../repos/github.md#access-to-github-repositories).
-
 ## Example pipeline
 
 The following example *azure-pipelines.yml* file, based on the **PHP as Linux Web App on Azure** pipeline [template](../process/templates.md), has two stages: `Build` and `Deploy`. The `Build` stage installs PHP 8.2, and then runs tasks to archive your project files and publish a ZIP build artifact to a package named `drop`.
