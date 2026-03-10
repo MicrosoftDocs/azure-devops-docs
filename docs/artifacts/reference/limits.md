@@ -45,8 +45,7 @@ The following table shows the maximum supported size for each package type:
 | Universal Packages | 4 TiB                           |
 
 > [!NOTE]
-> 
-Universal Packages that contain a very large number of files (100K+) may fail to publish. In this case, we recommend bundling the files into a *ZIP* or *TAR* archive to reduce the file count.
+> Universal Packages that contain a very large number of files (100K+) may fail to publish. In this case, we recommend bundling the files into a *ZIP* or *TAR* archive to reduce the file count.
 
 ::: moniker-end
 
