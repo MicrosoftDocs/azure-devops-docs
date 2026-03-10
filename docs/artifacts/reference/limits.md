@@ -76,12 +76,22 @@ Universal Packages that contain a very large number of files (100K+) may fail to
 
 ## Increase Artifacts storage limit 
 
-[!INCLUDE [](../includes/increase-storage-limit.md)]
+When your organization reaches the 2 GiB free‑tier storage limit, you won’t be able to publish new packages. To continue, you can either delete existing packages to free up storage or increase your storage limit as follows:
 
-## Related articles
+1. [Set up billing for your organization](../../organizations/billing/set-up-billing-for-your-organization-vs.md#set-up-billing-for-your-organization).
+
+1. Sign in to your Azure DevOps organization, then select **Organization settings**.
+
+1. Select **Billing**, and from the **Usage limit** dropdown, select **No limit, pay for what you use**.
+
+1. Select **Save** when you're done.
+
+   :::image type="content" source="../media/increase-usage-limit.png" alt-text="A screenshot displaying how to increase Artifacts storage limit." lightbox="media/increase-usage-limit.png":::
+
+## Related content
+
+- [Publish your first package](../get-started-artifacts-ai.md) 
 
 - [Delete and recover packages](../how-to/delete-and-recover-packages.md)
 
-- [Azure Artifacts best practices](../concepts/best-practices.md) 
-
-- [Upstream sources](../tutorials/protect-oss-packages-with-upstream-sources.md)
+- [Manage permissions](../feeds/feed-permissions.md)
