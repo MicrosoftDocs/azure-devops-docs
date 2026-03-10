@@ -29,8 +29,8 @@ Sprint Taskboards are similar to boards because they show work items as cards in
 
 | Category | Requirements |
 |--------------|-------------|
-| **Taskboard** | A sprint Taskboard that you want to configure. When you add a team, you add a Taskboard for every sprint selected for your team. For more information, see [About teams and Agile tools](../../organizations/settings/about-teams-and-settings.md). |
-| **Permissions** | To add or rename columns, or customize cards: [Team Administrator](../../organizations/settings/add-team-administrator.md) role for the team's settings that you want to modify, or Member of the [**Project Administrators** group](../../organizations/security/change-project-level-permissions.md). |
+| Taskboard | A sprint Taskboard that you want to configure. When you add a team, you add a Taskboard for every sprint selected for your team. For more information, see [About teams and Agile tools](../../organizations/settings/about-teams-and-settings.md). |
+| Permissions | To add or rename columns, or customize cards: [Team Administrator](../../organizations/settings/add-team-administrator.md) role for the team's settings that you want to modify, or Member of the [**Project Administrators** group](../../organizations/security/change-project-level-permissions.md). |
 
 ## Taskboard customization options  
 

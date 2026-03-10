@@ -26,10 +26,10 @@ Work item links are associations between two work items or a work item and anoth
 
 | Category | Requirements |
 |:-------------|:------------|
-| **Project access** | [Project member](../../organizations/security/add-users-team-project.md). |
-| **Permissions** | - Member of the **Contributors** or **Project Administrators** security group.<br> - To view or modify work items: **View work items in this node** and **Edit work items in this node** permissions set to **Allow**. By default, the **Contributors** group has this permission set to **Allow**. For more information, see [Set permissions and access for work tracking](../../organizations/security/set-permissions-access-work-tracking.md). <br> - To configure the integration options for a Classic release pipeline: **Edit** permissions for the release. <br> - To link work items to commits and pull requests: **Edit work items in this node** permissions set to **Allow** for the Area Path assigned to the work item. By default, the Contributors group has this permission. <br> - To view work items: **View work items in this node** permissions set to **Allow** for the Area Path assigned to the work item. |
+| Project access | [Project member](../../organizations/security/add-users-team-project.md). |
+| Permissions | - Member of the **Contributors** or **Project Administrators** security group.<br> - To view or modify work items: **View work items in this node** and **Edit work items in this node** permissions set to **Allow**. By default, the **Contributors** group has this permission set to **Allow**. For more information, see [Set permissions and access for work tracking](../../organizations/security/set-permissions-access-work-tracking.md). <br> - To configure the integration options for a Classic release pipeline: **Edit** permissions for the release. <br> - To link work items to commits and pull requests: **Edit work items in this node** permissions set to **Allow** for the Area Path assigned to the work item. By default, the Contributors group has this permission. <br> - To view work items: **View work items in this node** permissions set to **Allow** for the Area Path assigned to the work item. |
 |**Access levels** | To add or modify work items: At least [**Stakeholder** access](../../organizations/security/stakeholder-access.md). Users with **Stakeholder** access for public projects have full access to backlog and board features, like users with [**Basic** access](../../organizations/security/access-levels.md). For more information, see [Stakeholder access quick reference](../../organizations/security/stakeholder-access.md).   |
-| **Defined iterations** | To use the **Planning** pane, your team administrator [defined iteration (sprint) paths and configured team iterations](../../organizations/settings/set-iteration-paths-sprints.md). |
+| Defined iterations | To use the **Planning** pane, your team administrator [defined iteration (sprint) paths and configured team iterations](../../organizations/settings/set-iteration-paths-sprints.md). |
 
 ::: moniker-end
 
@@ -37,10 +37,10 @@ Work item links are associations between two work items or a work item and anoth
 
 | Category | Requirements |
 |:-------------|:------------|
-| **Project access** | [Project member](../../organizations/security/add-users-team-project.md). |
-| **Permissions** | - Member of the **Contributors** or **Project Administrators** security group.<br> - To view or modify work items: **View work items in this node** and **Edit work items in this node** permissions set to **Allow**. By default, the **Contributors** group has this permission set to **Allow**. For more information, see [Set permissions and access for work tracking](../../organizations/security/set-permissions-access-work-tracking.md). <br> - To configure the integration options for a Classic release pipeline: **Edit** permissions for the release. <br> - To link work items to commits and pull requests: **Edit work items in this node** permissions set to **Allow** for the Area Path assigned to the work item. By default, the Contributors group has this permission. <br> - To view work items: **View work items in this node** permissions set to **Allow** for the Area Path assigned to the work item. |
+| Project access | [Project member](../../organizations/security/add-users-team-project.md). |
+| Permissions | - Member of the **Contributors** or **Project Administrators** security group.<br> - To view or modify work items: **View work items in this node** and **Edit work items in this node** permissions set to **Allow**. By default, the **Contributors** group has this permission set to **Allow**. For more information, see [Set permissions and access for work tracking](../../organizations/security/set-permissions-access-work-tracking.md). <br> - To configure the integration options for a Classic release pipeline: **Edit** permissions for the release. <br> - To link work items to commits and pull requests: **Edit work items in this node** permissions set to **Allow** for the Area Path assigned to the work item. By default, the Contributors group has this permission. <br> - To view work items: **View work items in this node** permissions set to **Allow** for the Area Path assigned to the work item. |
 |**Access levels** | To add or modify work items: At least [**Stakeholder** access](../../organizations/security/stakeholder-access.md). Users with **Stakeholder** access for public projects have full access to backlog and board features, like users with [**Basic** access](../../organizations/security/access-levels.md). For more information, see [Stakeholder access quick reference](../../organizations/security/stakeholder-access.md).   |
-| **Defined iterations** | To use the **Planning** pane, your team administrator [defined iteration (sprint) paths and configured team iterations](../../organizations/settings/set-iteration-paths-sprints.md). |
+| Defined iterations | To use the **Planning** pane, your team administrator [defined iteration (sprint) paths and configured team iterations](../../organizations/settings/set-iteration-paths-sprints.md). |
 
 ::: moniker-end
 
@@ -56,15 +56,15 @@ The following types of links help you manage the relationships between work item
 
 | Link type category | Description |
 |:----------|:------------|
-| **Advanced Security** | Connects a work item to an Advanced Security alert. |
-| **Build** | Connects a work item to a build number, found in build, or integrated in build. |
-| **Code** | Connects a work item to a branch, changeset, commit, pull request, tag, or versioned item. |
-| **GitHub** | Connects a work item to a GitHub repository branch, commit, issue, or pull request. |
-| **Remote work** | Connects a work item defined in a different organization that either consumes from, produces for, or is remotely related via URL. |
-| **Requirement** | Connects a work item to a storyboard via URL. |
-| **Test** | Connects a work item to a test attachment or result. |
-| **Wiki** | Connects a work item to a wiki page. |
-| **Work item** | Connects a work item to aspects of your work, including: <br> - Affected by <br> - Affects <br> - Child <br> - Duplicate <br> - Duplicate of <br> - Hyperlink <br> - Integrated in release stage <br> - Parent <br> - Predecessor <br> - Referenced by <br> - References <br> - Related <br> - Shared steps <br> - Successor <br> - Test case <br> - Tested by <br> - Tests |
+| Advanced Security | Connects a work item to an Advanced Security alert. |
+| Build | Connects a work item to a build number, found in build, or integrated in build. |
+| Code | Connects a work item to a branch, changeset, commit, pull request, tag, or versioned item. |
+| GitHub | Connects a work item to a GitHub repository branch, commit, issue, or pull request. |
+| Remote work | Connects a work item defined in a different organization that either consumes from, produces for, or is remotely related via URL. |
+| Requirement | Connects a work item to a storyboard via URL. |
+| Test | Connects a work item to a test attachment or result. |
+| Wiki | Connects a work item to a wiki page. |
+| Work item | Connects a work item to aspects of your work, including: <br> - Affected by <br> - Affects <br> - Child <br> - Duplicate <br> - Duplicate of <br> - Hyperlink <br> - Integrated in release stage <br> - Parent <br> - Predecessor <br> - Referenced by <br> - References <br> - Related <br> - Shared steps <br> - Successor <br> - Test case <br> - Tested by <br> - Tests |
 
 For more information about work link types, including remote link types, hyperlinks, attached files, parent/child, related, and predecessor-successor, see [Work link types](../queries/link-type-reference.md#work-link-type). For a list of all link types that you can specify using the Azure DevOps SLI, run the [az boards work-item relation list-type](../queries/link-type-reference.md#list-link-types) command.
 
@@ -547,17 +547,17 @@ If you have the [Azure DevOps MCP Server](../../mcp-server/mcp-server-overview.m
 
 | Task | Example prompt |
 |------|----------------|
-| **View existing links** | ```copilot-prompt Get work item <1234> in <Contoso> project and show me the relations ``` |
-| **Add artifact links** | ```copilot-prompt Link pull request <#67> to work item <1234> ``` or ```copilot-prompt Add a branch artifact link to work item <1234> ``` |
-| **Remove specific links** | ```copilot-prompt Remove link <5678> from work item <1234> ``` |
-| **Remove links by type** | ```copilot-prompt Remove all related links from work item <1234> ``` |
-| **Create and link test cases** | ```copilot-prompt Create a Test Case with test steps based on user story <1234> and link it back to the story ``` |
-| **Build parent-child hierarchy** | ```copilot-prompt Create 3 child tasks under user story <1234> in <Contoso> for design, implementation, and testing``` |
-| **Find broken dependencies** | ```copilot-prompt Show work items in <Contoso> that have predecessor links to items that are removed or closed``` |
-| **Trace requirements** | ```copilot-prompt Starting from epic <1000> in <Contoso>, show me the full hierarchy of features, user stories, and tasks``` |
-| **Discover duplicate links** | ```copilot-prompt List work items in <Contoso> that have duplicate links and show the linked item states``` |
-| **Cross-project linking** | ```copilot-prompt Link work item <1234> in <Contoso> as related to work item <5678> in <Fabrikam>``` |
-| **Audit link completeness** | ```copilot-prompt List user stories in the current sprint for <Contoso> that don't have any child tasks``` |
+| View existing links | `Get work item <1234> in <Contoso> project and show me the relations ` |
+| Add artifact links | `Link pull request <#67> to work item <1234> ` or `Add a branch artifact link to work item <1234> ` |
+| Remove specific links | `Remove link <5678> from work item <1234> ` |
+| Remove links by type | `Remove all related links from work item <1234> ` |
+| Create and link test cases | `Create a Test Case with test steps based on user story <1234> and link it back to the story ` |
+| Build parent-child hierarchy | `Create 3 child tasks under user story <1234> in <Contoso> for design, implementation, and testing` |
+| Find broken dependencies | `Show work items in <Contoso> that have predecessor links to items that are removed or closed` |
+| Trace requirements | `Starting from epic <1000> in <Contoso>, show me the full hierarchy of features, user stories, and tasks` |
+| Discover duplicate links | `List work items in <Contoso> that have duplicate links and show the linked item states` |
+| Cross-project linking | `Link work item <1234> in <Contoso> as related to work item <5678> in <Fabrikam>` |
+| Audit link completeness | `List user stories in the current sprint for <Contoso> that don't have any child tasks` |
 
 > [!TIP]
 > If you're using Visual Studio Code, [agent mode](/visualstudio/ide/copilot-chat-context#agent-mode) is especially helpful for troubleshooting complex linking scenarios.

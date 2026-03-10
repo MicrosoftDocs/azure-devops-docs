@@ -262,16 +262,16 @@ If you have the [Azure Boards MCP Server](../../mcp-server/mcp-server-overview.m
 
 | Task | Example prompt |
 |------|----------------|
-| Find by keyword | ```copilot-prompt Find all work items that mention "authentication" in the title or description``` |
-| Search by assignee | ```copilot-prompt Show all active work items assigned to <Jamal>``` |
-| Search by type and state | ```copilot-prompt List all new bugs created this week in my project``` |
-| Search across projects | ```copilot-prompt Find user stories with "API" in the title across all my projects``` |
-| Search by description content | ```copilot-prompt Find work items in <Contoso> whose description mentions "database migration"``` |
-| Combine search criteria | ```copilot-prompt Find active bugs in <Contoso> with "timeout" in the title that are priority 1 or 2``` |
-| Search acceptance criteria | ```copilot-prompt List user stories in <Contoso> whose acceptance criteria mention "performance" or "latency"``` |
-| Find items by ID range | ```copilot-prompt Show work items <1000> through <1050> in <Contoso> with their titles and states``` |
-| Search recent comments | ```copilot-prompt Find work items in <Contoso> where someone mentioned "deployment" in the discussion in the last 7 days``` |
-| Fuzzy search by topic | ```copilot-prompt Find all work items in <Contoso> related to single sign-on, SSO, or federated authentication``` |
+| Find by keyword | `Find all work items that mention "authentication" in the title or description` |
+| Search by assignee | `Show all active work items assigned to <Jamal>` |
+| Search by type and state | `List all new bugs created this week in my project` |
+| Search across projects | `Find user stories with "API" in the title across all my projects` |
+| Search by description content | `Find work items in <Contoso> whose description mentions "database migration"` |
+| Combine search criteria | `Find active bugs in <Contoso> with "timeout" in the title that are priority 1 or 2` |
+| Search acceptance criteria | `List user stories in <Contoso> whose acceptance criteria mention "performance" or "latency"` |
+| Find items by ID range | `Show work items <1000> through <1050> in <Contoso> with their titles and states` |
+| Search recent comments | `Find work items in <Contoso> where someone mentioned "deployment" in the discussion in the last 7 days` |
+| Fuzzy search by topic | `Find all work items in <Contoso> related to single sign-on, SSO, or federated authentication` |
 
 > [!NOTE]
 > Agent mode and the MCP Server use natural language, so you can adjust these prompts or ask follow-up questions to refine the results.

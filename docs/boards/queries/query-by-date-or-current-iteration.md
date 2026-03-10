@@ -106,10 +106,10 @@ The following table describes date-related fields you can use to filter and quer
 
 | Field name | Description | Reference name | Data type |
 |------------|-------------|----------------|-----------|
-| **Due Date** | Forecasted due date for an issue or work item to resolve. (Agile process) | `Microsoft.VSTS.Scheduling.DueDate` | DateTime |
-| **Finish Date** | Date and time the schedule indicates a work item is to be completed. | `Microsoft.VSTS.Scheduling.FinishDate` | DateTime |
-| **Start Date** | Date and time assigned to a work item for work to start. | `Microsoft.VSTS.Scheduling.StartDate` | DateTime |
-| **Target Date** | Forecasted due date for an issue or other work item to resolve or complete. | `Microsoft.VSTS.Scheduling.TargetDate` | DateTime |
+| Due Date | Forecasted due date for an issue or work item to resolve. (Agile process) | `Microsoft.VSTS.Scheduling.DueDate` | DateTime |
+| Finish Date | Date and time the schedule indicates a work item is to be completed. | `Microsoft.VSTS.Scheduling.FinishDate` | DateTime |
+| Start Date | Date and time assigned to a work item for work to start. | `Microsoft.VSTS.Scheduling.StartDate` | DateTime |
+| Target Date | Forecasted due date for an issue or other work item to resolve or complete. | `Microsoft.VSTS.Scheduling.TargetDate` | DateTime |
 
 > [!NOTE]
 > Use the **Start Date** and **Target Date** fields with Delivery Plans to visualize work item timelines. For more information, see [Review team Delivery Plans](../plans/review-team-plans.md).
@@ -130,16 +130,16 @@ If you configure the [Azure DevOps MCP Server](../../mcp-server/mcp-server-overv
 
 | Task | Example prompt |
 |------|----------------|
-| **Find items created recently** | ```copilot-prompt Show all work items created in the last 7 days in project <Contoso>``` |
-| **Query by current sprint** | ```copilot-prompt List all active bugs in the current sprint for team <Contoso Team>``` |
-| **Find stale items** | ```copilot-prompt Show user stories that haven't been updated in the last 30 days in <Contoso>``` |
-| **Query resolved items by date range** | ```copilot-prompt List bugs resolved between January 1 and January 31 in project <Contoso>``` |
-| **Weekly closed summary** | ```copilot-prompt Show the count of work items closed each day this week in <Contoso> broken down by type``` |
-| **Find items approaching deadline** | ```copilot-prompt List work items in <Contoso> with a target date within the next 5 days that are still active``` |
-| **Sprint burn-down check** | ```copilot-prompt Show how many story points remain incomplete vs total planned for the current sprint in <Contoso>``` |
-| **Late-sprint additions** | ```copilot-prompt List work items added to the current sprint in <Contoso> in the second half of the sprint``` |
-| **Month-over-month comparison** | ```copilot-prompt Compare the number of bugs created this month vs last month in <Contoso>``` |
-| **Holiday impact analysis** | ```copilot-prompt Show work items in <Contoso> that had no updates between December 23 and January 2``` |
+| Find items created recently | `Show all work items created in the last 7 days in project <Contoso>` |
+| Query by current sprint | `List all active bugs in the current sprint for team <Contoso Team>` |
+| Find stale items | `Show user stories that haven't been updated in the last 30 days in <Contoso>` |
+| Query resolved items by date range | `List bugs resolved between January 1 and January 31 in project <Contoso>` |
+| Weekly closed summary | `Show the count of work items closed each day this week in <Contoso> broken down by type` |
+| Find items approaching deadline | `List work items in <Contoso> with a target date within the next 5 days that are still active` |
+| Sprint burn-down check | `Show how many story points remain incomplete vs total planned for the current sprint in <Contoso>` |
+| Late-sprint additions | `List work items added to the current sprint in <Contoso> in the second half of the sprint` |
+| Month-over-month comparison | `Compare the number of bugs created this month vs last month in <Contoso>` |
+| Holiday impact analysis | `Show work items in <Contoso> that had no updates between December 23 and January 2` |
 
 > [!NOTE]
 > If you're using Visual Studio Code, [agent mode](/visualstudio/ide/copilot-chat-context#agent-mode) is especially helpful for complex date-based queries.

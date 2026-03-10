@@ -112,10 +112,10 @@ If you have the [Azure Boards MCP Server](../../mcp-server/mcp-server-overview.m
 
 | Task | Example prompt |
 |------|----------------|
-| Create an epic | ```copilot-prompt Create a new epic called 'Cloud Migration' and assign it to the Platform team's area path``` |
-| Check feature progress | ```copilot-prompt List all features under epic #50 and their current states``` |
-| View team backlogs | ```copilot-prompt Show me all active user stories for the Web team in the current sprint``` |
-| Assign work across teams | ```copilot-prompt Update the area path of user story #789 to <Contoso>\\Mobile``` |
+| Create an epic | `Create a new epic called 'Cloud Migration' and assign it to the Platform team's area path` |
+| Check feature progress | `List all features under epic #50 and their current states` |
+| View team backlogs | `Show me all active user stories for the Web team in the current sprint` |
+| Assign work across teams | `Update the area path of user story #789 to <Contoso>\\Mobile` |
 
 > [!NOTE]
 > Agent mode and the MCP Server use natural language, so you can adjust these prompts or ask follow-up questions to refine the results.

@@ -444,10 +444,10 @@ If you have the [Azure Boards MCP Server](../../mcp-server/mcp-server-overview.m
 
 | Task | Example prompt |
 |------|----------------|
-| Find bugs by build | ```copilot-prompt Find all bugs found in build number 20250115.2``` |
-| Check test automation | ```copilot-prompt List test cases marked as Automated that have no automation test ID``` |
-| Track build integration | ```copilot-prompt Show bugs that were integrated in the latest build``` |
-| Query test case status | ```copilot-prompt Find all test cases in the current sprint with their automation status``` |
+| Find bugs by build | `Find all bugs found in build number 20250115.2` |
+| Check test automation | `List test cases marked as Automated that have no automation test ID` |
+| Track build integration | `Show bugs that were integrated in the latest build` |
+| Query test case status | `Find all test cases in the current sprint with their automation status` |
 
 > [!NOTE]
 > Agent mode and the MCP Server use natural language, so you can adjust these prompts or ask follow-up questions to refine the results.

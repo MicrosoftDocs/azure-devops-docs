@@ -26,9 +26,9 @@ When you connect your Azure DevOps Server project to your GitHub repositories, y
  
 | Category | Requirements |
 |--------------|-------------|
-| **Permissions** | - Member of the [**Project Collection Administrators** group](../../organizations/security/change-organization-collection-level-permissions.md) and the project [Contributors group](../../organizations/security/add-users-team-project.md). If you created the project, then you have permissions. <br> - **Administrator** of the GitHub Enterprise Server that you connect to. |
+| Permissions | - Member of the [**Project Collection Administrators** group](../../organizations/security/change-organization-collection-level-permissions.md) and the project [Contributors group](../../organizations/security/add-users-team-project.md). If you created the project, then you have permissions. <br> - **Administrator** of the GitHub Enterprise Server that you connect to. |
 | **Project membership**|  [Project member](../../organizations/projects/create-project.md). |
-| **Integration with GitHub** | - Azure DevOps Server 2020.1.1 Patch 2. Without this patch, you can only connect to your GitHub Enterprise Server repositories. <br> - [Azure Boards app for GitHub](install-github-app.md) installed on the GitHub organizations or account. |
+| Integration with GitHub | - Azure DevOps Server 2020.1.1 Patch 2. Without this patch, you can only connect to your GitHub Enterprise Server repositories. <br> - [Azure Boards app for GitHub](install-github-app.md) installed on the GitHub organizations or account. |
 
 ## Authentication options
 

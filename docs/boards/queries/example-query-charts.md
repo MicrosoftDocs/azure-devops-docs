@@ -249,10 +249,10 @@ If you have the [Azure Boards MCP Server](../../mcp-server/mcp-server-overview.m
 
 | Task | Example prompt |
 |------|----------------|
-| Active bugs query | ```copilot-prompt Create a flat query for all active bugs grouped by assigned to in the current sprint``` |
-| Backlog hygiene | ```copilot-prompt Find user stories with no acceptance criteria or description in the <Contoso> area path``` |
-| Sprint progress | ```copilot-prompt List all work items in the current sprint grouped by state``` |
-| Stale items | ```copilot-prompt Find work items that haven't been updated in the last 30 days and are still active``` |
+| Active bugs query | `Create a flat query for all active bugs grouped by assigned to in the current sprint` |
+| Backlog hygiene | `Find user stories with no acceptance criteria or description in the <Contoso> area path` |
+| Sprint progress | `List all work items in the current sprint grouped by state` |
+| Stale items | `Find work items that haven't been updated in the last 30 days and are still active` |
 
 > [!NOTE]
 > Agent mode and the MCP Server use natural language, so you can adjust these prompts or ask follow-up questions to refine the results. After you get query results, you can save the query and [create a chart](../../report/dashboards/charts.md) from it.

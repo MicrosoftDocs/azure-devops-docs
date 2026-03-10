@@ -487,16 +487,16 @@ If you configure the [Azure DevOps MCP Server](../../mcp-server/mcp-server-overv
 
 | Task | Example prompt |
 |------|----------------|
-| **List new bugs** | ```copilot-prompt Show all new bugs created in the last week in project <Contoso>``` |
-| **Triage by priority** | ```copilot-prompt List unassigned bugs with priority 1 in <Contoso> sorted by created date``` |
-| **Find regressions** | ```copilot-prompt Show bugs tagged "regression" that are still active in <Contoso>``` |
-| **Assign bugs to a team member** | ```copilot-prompt Assign all unassigned bugs in area path <Contoso\\Backend> to <Jamal>``` |
-| **Summarize bug trends** | ```copilot-prompt Show me a count of bugs created vs resolved per week for the last month in <Contoso>``` |
-| **Find stale bugs** | ```copilot-prompt List active bugs in <Contoso> that haven't been updated in more than 30 days``` |
-| **Check bug debt by area** | ```copilot-prompt Show the count of active bugs grouped by area path in project <Contoso>``` |
-| **Escalate high-severity bugs** | ```copilot-prompt List active bugs in <Contoso> with severity 1 - Critical that aren't assigned to a sprint``` |
-| **Link bugs to recent builds** | ```copilot-prompt Show bugs in <Contoso\\Backend> that were created after the last completed build``` |
-| **Bulk update bug states** | ```copilot-prompt Move all resolved bugs in area path <Contoso\\Frontend> that have been resolved for more than 14 days to Closed``` |
+| List new bugs | `Show all new bugs created in the last week in project <Contoso>` |
+| Triage by priority | `List unassigned bugs with priority 1 in <Contoso> sorted by created date` |
+| Find regressions | `Show bugs tagged "regression" that are still active in <Contoso>` |
+| Assign bugs to a team member | `Assign all unassigned bugs in area path <Contoso\\Backend> to <Jamal>` |
+| Summarize bug trends | `Show me a count of bugs created vs resolved per week for the last month in <Contoso>` |
+| Find stale bugs | `List active bugs in <Contoso> that haven't been updated in more than 30 days` |
+| Check bug debt by area | `Show the count of active bugs grouped by area path in project <Contoso>` |
+| Escalate high-severity bugs | `List active bugs in <Contoso> with severity 1 - Critical that aren't assigned to a sprint` |
+| Link bugs to recent builds | `Show bugs in <Contoso\\Backend> that were created after the last completed build` |
+| Bulk update bug states | `Move all resolved bugs in area path <Contoso\\Frontend> that have been resolved for more than 14 days to Closed` |
 
 > [!NOTE]
 > If you're using Visual Studio Code, [agent mode](/visualstudio/ide/copilot-chat-context#agent-mode) is especially helpful for complex bug triage scenarios.

@@ -9,7 +9,7 @@ ai-usage: ai-assisted
 ms.author: chcomley
 author: chcomley
 monikerRange: "<=azure-devops"
-ms.date: 02/17/2026
+ms.date: 03/02/2026
 ---
  
 
@@ -29,7 +29,7 @@ Azure Boards and Azure Pipelines offer multiple integration points with GitHub a
 |-------------|-----------------|
 | **Sign into Azure DevOps using your GitHub credentials** | Allows users to sign in using their GitHub credentials and link their GitHub account to a Microsoft account. For more information, see [Signing into Azure DevOps using your GitHub credentials (Release Notes)](/azure/devops/release-notes/2019/build-may#signing-into-azure-devops-using-your-github-credentials). |
 | **Invite GitHub collaborators into Azure DevOps** | Provides support for inviting GitHub account users to collaborate within an Azure DevOps project. For more information, see [Invite GitHub collaborators into Azure DevOps (Release Notes)](/azure/devops/release-notes/2019/sprint-155-update#invite-github-collaborators-into-azure-devops). |
-| **Connect to a GitHub repository from Visual Studio** | Provides a user interface to support cloning GitHub repositories, pushing and pulling commits, and more. For more information, see [Side-by-side comparison of Git and Team Explorer](/visualstudio/version-control/git-team-explorer-feature-comparison?view=vs-2019&&preserve-view=true). |
+| **Connect to a GitHub repository from Visual Studio** | Provides a user interface to support cloning GitHub repositories, pushing and pulling commits, and more. For more information, see [Side-by-side comparison of Git and Team Explorer](/visualstudio/version-control/git-team-explorer-feature-comparison?view=vs-2019&preserve-view=true). |
 
 ::: moniker-end
 
@@ -38,19 +38,13 @@ Azure Boards and Azure Pipelines offer multiple integration points with GitHub a
 | **Feature** | **Description** |
 |-------------|-----------------|
 | **Invite GitHub collaborators into Azure DevOps** | Provides support for inviting GitHub account users to collaborate within an Azure DevOps project. For more information, see [Invite GitHub collaborators into Azure DevOps (Release Notes)](/azure/devops/release-notes/2019/sprint-155-update#invite-github-collaborators-into-azure-devops). |
-| **Connect to a GitHub repository from Visual Studio** | Provides a user interface to support cloning GitHub repositories, pushing and pulling commits, and more. For more information, see [Side-by-side comparison of Git and Team Explorer](/visualstudio/version-control/git-team-explorer-feature-comparison?view=vs-2019&&preserve-view=true). |
+| **Connect to a GitHub repository from Visual Studio** | Provides a user interface to support cloning GitHub repositories, pushing and pulling commits, and more. For more information, see [Side-by-side comparison of Git and Team Explorer](/visualstudio/version-control/git-team-explorer-feature-comparison?view=vs-2019&preserve-view=true). |
 
 ::: moniker-end
 
 ## Integrate Azure Boards with GitHub
 
 By integrating Azure Boards with GitHub repositories, you can link GitHub commits, pull requests, branches, and issues to work items. This integration allows you to use GitHub for software development while using Azure Boards to plan and track your work. To get started, see [Azure Boards-GitHub integration](../boards/github/index.md).
-
-### Benefits of integration
-
-- **Enhanced traceability**: Link work items to GitHub commits, pull requests, branches, and issues for better traceability.
-- **Streamlined workflow**: Use GitHub for development and Azure Boards for planning and tracking, ensuring a seamless workflow.
-- **Improved collaboration**: Collaborate more effectively by connecting development activities in GitHub with project management in Azure Boards.
 
 ### Features of Azure Boards and GitHub integration
 
@@ -67,19 +61,7 @@ By integrating Azure Boards with GitHub repositories, you can link GitHub commit
 
 ## Integrate Azure Pipelines with GitHub
 
-You can use Azure Pipelines to automatically build, test, package, release, and deploy your GitHub repository code. To get started, see [Build GitHub repositories](../pipelines/repos/github.md).
-
-Additionally, you can map your GitHub repositories to one or more projects in Azure DevOps, enabling seamless integration and management across your development lifecycle.
-
-### Benefits of integration
-
-- **Automated workflows**: Automatically build, test, package, release, and deploy your GitHub repository code using Azure Pipelines.
-- **Continuous integration and continuous deployment (CI/CD)**: Implement CI/CD practices to ensure that your code changes are automatically tested and deployed.
-- **Seamless integration**: Map your GitHub repositories to one or more projects in Azure DevOps for seamless integration and management across your development lifecycle.
-- **Enhanced collaboration**: Collaborate more effectively by linking work items to GitHub commits, pull requests, branches, and issues.
-- **Improved traceability**: Achieve better traceability by reviewing work items linked to GitHub commits in the release summary page.
-- **Status badges**: Add status badges of Azure Boards to a GitHub repository README file and display the build status.
-- **Issue synchronization**: Sync GitHub Issues to Azure Boards work items using the GitHub Action for better issue tracking and management.
+You can use Azure Pipelines to automatically build, test, package, release, and deploy your GitHub repository code. You can also map your GitHub repositories to one or more projects in Azure DevOps. To get started, see [Build GitHub repositories](../pipelines/repos/github.md).
 
 ### Features of Azure Pipelines and GitHub integration
 

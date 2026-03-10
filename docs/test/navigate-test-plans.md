@@ -225,8 +225,7 @@ Use the **Execute** tab to assign test points or run tests.
 
 :::image type="content" source="media/navigate/execute-tab-test-points-overview.png" alt-text="Execute tab overview.":::
 
-**What is a test point?** Test cases by themselves aren't executable. Add a test case to a test suite, and then test point(s) generate. A test point is a unique combination of test case, test suite, configuration, and tester.  
-For example, if you have a test case named *Test sign in functionality* and you add two configurations for the Microsoft Edge and Google Chrome browsers, you have two test points. You can execute or run each of these test points. On execution, test results are generated. Through the test results view, or execution history, you can see all executions of a test point. The latest execution for the test point is what you see in the **Execute** tab.  
+**What is a test point?** [!INCLUDE [test-point-definition](includes/test-point-definition.md)]
 
 Test cases are reusable entities. By including them in a test plan or suite, test points are generated. By executing test points, you determine the quality of the product or service under development.
 

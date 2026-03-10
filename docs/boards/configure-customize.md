@@ -37,12 +37,12 @@ Before you change settings, decide how teams work and what management needs to s
 
 | Area | Questions to answer |
 |------|---------------------|
-| **Project vs. team structure** | How many teams, area path hierarchy, and rollup views do you need? |
-| **Iterations** | What sprint cadence, release grouping, and forecast horizon work best? |
-| **Work item scheme** | Which WITs should teams use (Features, Stories/Issues/PBIs, Tasks, Epics)? |
-| **Reporting needs** | Which fields, rollups, and analytics views must be available? |
-| **Customizations** | How do custom fields, workflows, and WITs affect boards, backlogs, and reports? |
-| **Permissions and governance** | Who can change processes, area/iteration trees, and team settings? |
+| Project vs. team structure | How many teams, area path hierarchy, and rollup views do you need? |
+| Iterations | What sprint cadence, release grouping, and forecast horizon work best? |
+| Work item scheme | Which WITs should teams use (Features, Stories/Issues/PBIs, Tasks, Epics)? |
+| Reporting needs | Which fields, rollups, and analytics views must be available? |
+| Customizations | How do custom fields, workflows, and WITs affect boards, backlogs, and reports? |
+| Permissions and governance | Who can change processes, area/iteration trees, and team settings? |
 
 Document your choices so teams apply them consistently.
 
@@ -62,10 +62,10 @@ Choose one of the following high-level tracking approaches based on team practic
 
 | Approach | Recommendation | Best for |
 |----------|----------------|----------|
-| **Tasks only** | Not recommended | Offers limited prioritization and no portfolio planning |
-| **Requirements with child tasks** | Recommended | Scrum teams that estimate and track time |
-| **Requirements only** | Recommended | Kanban or Scrumban teams that don't track time |
-| **Requirements grouped under portfolio WITs** | Recommended | Multiple teams that need rollups and cross-team calendars |
+| Tasks only | Not recommended | Offers limited prioritization and no portfolio planning |
+| Requirements with child tasks | Recommended | Scrum teams that estimate and track time |
+| Requirements only | Recommended | Kanban or Scrumban teams that don't track time |
+| Requirements grouped under portfolio WITs | Recommended | Multiple teams that need rollups and cross-team calendars |
 
 Explain your chosen approach to teams and update process documentation.
 
@@ -155,9 +155,9 @@ Control who changes processes, area and iteration trees, and team configuration.
 
 | Change type | Who can make changes |
 |-------------|---------------------|
-| **Process-level** | Project Collection Administrators or users with process permissions |
+| Process-level | Project Collection Administrators or users with process permissions |
 | **Project-level** (areas and iterations) | Project Administrators or users with node permissions |
-| **Team-level** | Team Administrators or Project Administrators |
+| Team-level | Team Administrators or Project Administrators |
 
 Related content:
 - [Create and manage processes](../organizations/settings/work/manage-process.md)
@@ -177,13 +177,13 @@ Use the following checklist when you set up or review your Azure Boards configur
 
 | Phase | Task |
 |-------|------|
-| **Plan** | Decide process and work item type strategy (inherit or customize) |
-| **Plan** | Design area and iteration hierarchies |
-| **Configure** | Configure teams and set default area and iteration subscriptions |
-| **Configure** | Create necessary shared query folders and permissions |
-| **Configure** | Add rollup columns and dashboard widgets that executives need |
-| **Validate** | Pilot changes with one team before applying wide-scope updates |
-| **Communicate** | Document changes and update your project wiki |
+| Plan | Decide process and work item type strategy (inherit or customize) |
+| Plan | Design area and iteration hierarchies |
+| Configure | Configure teams and set default area and iteration subscriptions |
+| Configure | Create necessary shared query folders and permissions |
+| Configure | Add rollup columns and dashboard widgets that executives need |
+| Validate | Pilot changes with one team before applying wide-scope updates |
+| Communicate | Document changes and update your project wiki |
 
 ## Related content
 
