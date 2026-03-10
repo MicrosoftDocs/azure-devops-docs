@@ -1,16 +1,14 @@
 ---
-title: Retirement of Global Personal Access Tokens (PATs) in Azure DevOps
+title: Auto‑complete pull requests by default
 author: gloridelmorales
 ms.author: glmorale
 ms.date: 3/5/2026
-description: Retirement of Global Personal Access Tokens (PATs) in Azure DevOps
+description: Auto‑complete pull requests by default
 ---
 
-# Retirement of Global Personal Access Tokens (PATs) in Azure DevOps
+# Auto‑complete pull requests by default
 
-As announced in our Azure DevOps blog post, [Retirement of Global Personal Access Tokens in Azure DevOps](https://devblogs.microsoft.com/devops/retirement-of-global-personal-access-tokens-in-azure-devops/), we are retiring the Global Personal Access Token (PAT) type to strengthen security. Global PATs provide access across all organizations a user belongs to, resulting in an overly broad credential with elevated risk. To better align with modern security practices, Azure DevOps is shifting away from global, full‑scoped tokens toward authentication approaches that are more scoped, controlled, and governable.
-
-Customers and internal teams should assess any workflows or integrations that depend on global PATs and begin transitioning to supported alternatives. Where required, this includes moving to organization‑scoped PATs or adopting Microsoft Entra–based authentication. This transition improves credential governance, and supports Azure DevOps’ alignment with Microsoft’s broader security strategy.
+With this sprint, we're adding a new repository setting that enables pull requests to be set to auto‑complete by default when they’re created. This helps teams reduce manual follow‑ups and streamline the merge process. The setting can be configured at the project level or per repository, giving teams flexibility in how they manage pull request completion.
 
 Check out the release notes for details.
 
