@@ -1,7 +1,7 @@
 ---
 title: Request an increase in permission levels
 titleSuffix: Azure DevOps
-description: How-to guide for finding and increasing permission levels needed to perform select tasks in Azure DevOps.
+description: Learn how to request and increase permission levels in Azure DevOps to perform specific tasks. Follow this guide to identify and resolve permission issues.
 ms.subservice: azure-devops-security
 ms.custom: security-refresh
 ai-usage: ai-assisted
@@ -9,7 +9,7 @@ ms.author: chcomley
 author: chcomley
 ms.topic: how-to
 monikerRange: '<= azure-devops'
-ms.date: 11/27/2024
+ms.date: 03/09/2026
 ---
 
 # Request a permission increase
@@ -23,9 +23,9 @@ To access certain tasks, you might need to request higher permissions or be assi
 Most members of the **Contributors** group have the permissions they need to perform most tasks. However, the following tasks require membership in the **Project Administrators** group or a change in permissions. 
 
 - **Work tracking**: 
-	- **Add or change Area Paths or Iteration Paths**: Requires elevated permissions to an Area Path or Iteration Path node. For more information, see [Set work tracking permissions, Create child nodes](set-permissions-access-work-tracking.md#set-permissions-area-path). 
+	- **Add or change area paths or iteration paths**: Requires elevated permissions to an area path or iteration path node. For more information, see [Set work tracking permissions, Create child nodes](set-permissions-access-work-tracking.md#set-permissions-area-path). 
 	- **Create shared queries or query folders**: Requires elevated permissions set for a shared query folder. For more information, see [Set work tracking permissions, Set permissions on queries or query folders](set-permissions-access-work-tracking.md#work-item-queries). 
-	- **Change team settings&mdash;such as board settings**: Requires addition as a team administrator. For more information, see  [Add or remove a team administrator](../settings/add-team-administrator.md).
+	- **Change team settings, such as board settings**: Requires addition as a team administrator. For more information, see  [Add or remove a team administrator](../settings/add-team-administrator.md).
 
 - **Source code, Git repositories**: The following tasks require elevated permissions for Git repositories or a specific repository. For more information, see [Set Git repository permissions](../../repos/git/set-git-repository-permissions.md). 
 	- Create, delete, or rename a Git repository 
@@ -50,7 +50,7 @@ For an overview of built-in security groups and default permission assignments, 
 
 ::: moniker range="azure-devops"  
 > [!NOTE]  
-> Users added to the **Project-scoped users** group don't have access to **Organization settings** other than the **Overview** section if the **Limit user visibility and collaboration to specific projects** preview feature is enabled for the organization. For more information including important security-related call-outs, see [Manage your organization, Limit  user visibility for projects and more](../../user-guide/manage-organization-collection.md#project-scoped-user-group). 
+> If you add users to the **Project-scoped users** group and enable the **Limit user visibility and collaboration to specific projects** preview feature for the organization, those users can't access **Organization settings** other than the **Overview** section. For more information, including important security-related call-outs, see [Manage your organization, Limit  user visibility for projects and more](../../user-guide/manage-organization-collection.md#project-scoped-user-group). 
 
 ::: moniker-end  
 
@@ -58,13 +58,13 @@ For an overview of built-in security groups and default permission assignments, 
 
 Before you request a change to permission levels, review your permission assignments as described in [View permissions for yourself or others](view-permissions.md). 
 
-Verify that your permission assignments are preventing you from accomplishing a task you need to perform. 
+Verify that your permission assignments prevent you from accomplishing a task you need to perform. 
 
 ## Request a change to a permission level or role change
 
 To request a change or increase in your permission levels, take the following actions: 
 
-1. Identify the permissions you need and at what level. Permissions are set at the object, project, and project-collection level. Also, permissions are granted through various roles. To identify the level and permission you need, review the [Permissions lookup guide](permissions-lookup-guide.md). 
+1. Identify the permissions you need and at what level. Set permissions at the object, project, and project-collection levels. Also, grant permissions through various roles. To identify the level and permission you need, review the [Permissions lookup guide](permissions-lookup-guide.md). 
 
 1. Identify a person in your organization who can grant you the permissions you need. For example: 
 	- To get permissions to manage team settings, [identify the team administrator for your team](../settings/add-team-administrator.md) or a [member of the Project Administrators group](look-up-project-administrators.md). 
@@ -76,14 +76,14 @@ To request a change or increase in your permission levels, take the following ac
 
 ## Refresh or reevaluate your permissions  
 
-After your permission levels get changed, you might need to refresh your permissions for Azure DevOps to recognize the updates. This step is recommended when:
+After changing your permission levels, you might need to refresh your permissions for Azure DevOps to recognize the updates. Refresh your permissions when:
 
-- **Permission or role changes:** Your permission level or role was modified.
-- **Security group modifications:** You were added to a new or different security group in Azure DevOps, Microsoft Entra ID, or Active Directory.
+- **Permission or role changes:** You modify your permission level or role.
+- **Security group modifications:** You add yourself to a new or different security group in Azure DevOps, Microsoft Entra ID, or Active Directory.
 
 Getting added to a new security group can alter your inherited permissions.
 
-**Refresh your permissions**, which prompts Azure DevOps to reevaluate your permission assignments immediately. If you don't refresh, your permission assignments don't update until you sign out, close your browser, and sign back in.
+**Refresh your permissions** to prompt Azure DevOps to reevaluate your permission assignments immediately. If you don't refresh, your permission assignments don't update until you sign out, close your browser, and sign back in.
 
 :::image type="content" source="media/troubleshoot-permissions/re-evaluate-permissions-button.png" alt-text="Reevaluate permissions control":::
 
