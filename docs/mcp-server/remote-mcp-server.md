@@ -236,10 +236,6 @@ Combined toolsets and readonly filtering
 | `work_create_iterations` | Create iterations | ❌ |
 | `work_assign_iterations` | Assign iterations to a team | ❌ |
 
-1. Sign in to your organization (`https://dev.azure.com/{yourorganization}`).
-2. Select **Organization settings**.
-3. Under **Preview features**, enable **Remote MCP Server**.
-
 > [!NOTE]
 > The remote MCP Server preview is being rolled out progressively. If you don't see the option, it might not be available for your organization yet.
 
@@ -247,81 +243,34 @@ Combined toolsets and readonly filtering
 
 The remote MCP Server uses a streamable HTTP endpoint. Add the following configuration to your AI assistant's MCP settings.
 
-### mcp.json configuration
-
-```json
-{
-  "servers": {
-    "azure-devops": {
-      "type": "http",
-      "url": "https://dev.azure.com/{organization}/_apis/mcp",
-      "auth": {
-        "type": "oauth2",
-        "authority": "https://login.microsoftonline.com/{tenant-id}",
-        "clientId": "{client-id}",
-        "scopes": ["499b84ac-1321-427f-aa17-267ca6975798/.default"]
-      }
-    }
-  }
-}
-```
-
-Replace the following placeholders:
-
-| Placeholder | Description |
-|-------------|-------------|
-| `{organization}` | Your Azure DevOps organization name (for example, `contoso`) |
-
-<a id="supported-environments"></a>
-
 ## Supported environments
+
+The remote Azure DevOps MCP Server requires your user account and organization to be tied to Entra. However, Entra is not supported by default by all clients and therefore extra steps are required to register those clients. By default, Visual Studio Code, Visual Studio, and GitHub Copilot CLI are supported.
+
+We will provide more details on Entra client app registration soon.
 
 ### Visual Studio Code
 
 Add the remote MCP Server to your VS Code settings.
 
-1. Open the Command Palette (**Ctrl+Shift+P**).
-2. Search for **MCP: Add Server**.
-3. Select **HTTP** as the transport type.
-4. Enter the server URL: `https://dev.azure.com/{organization}/_apis/mcp`
-5. Follow the authentication prompts to sign in with your Microsoft Entra account.
+1. Add `.vscode\mcp.json` to your repos
+2. Add desired configuration as noted above
+3. Save the `mcp.json`
+4. Start
+5. You will be prompted to authenticate to your Entra tenant
+6. Select your account
 
-Or, add the configuration directly to your `.vscode/mcp.json` file:
-
-```json
-{
-  "servers": {
-    "azure-devops-remote": {
-      "type": "http",
-      "url": "https://dev.azure.com/{organization}/_apis/mcp"
-    }
-  }
-}
-```
+One you select your account you will be logged in and you should see a list of available tools.
 
 ### Visual Studio (2022 and later)
-
-<!-- TODO: Add Visual Studio-specific setup steps -->
 
 Configure the remote MCP Server in Visual Studio by adding the server URL to your MCP settings. For more information, see [Use MCP servers in Visual Studio](/visualstudio/ide/mcp-servers).
 
 ### GitHub Copilot CLI
 
-<!-- TODO: Add Copilot CLI-specific setup steps -->
-
 Configure the remote MCP Server for use with GitHub Copilot CLI.
 
-## Authenticate
-
-The remote MCP Server uses Microsoft Entra ID for authentication. When you first connect, your AI assistant prompts you to sign in through a browser-based authentication flow.
-
-1. Your AI assistant initiates a connection to the remote MCP Server.
-2. A browser window opens for Microsoft Entra sign-in.
-3. Sign in with your Azure DevOps credentials.
-4. After authentication, your AI assistant has access to your Azure DevOps data.
-
-> [!NOTE]
-> Your authentication token is cached locally. You don't need to sign in every time you use the remote MCP Server.
+### Foundry
 
 ## Verify the connection
 
