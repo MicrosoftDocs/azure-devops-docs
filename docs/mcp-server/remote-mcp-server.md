@@ -149,7 +149,7 @@ Combined toolsets and readonly filtering
 #### `repos` toolset
 
 | Tool | Description | Read-only |
-|---|---|---|
+|---|---|:---:|
 | `repo_list_repos_by_project` | List repositories in a project | ✅ |
 | `repo_list_pull_requests_by_repo_or_project` | List pull requests | ✅ |
 | `repo_list_branches_by_repo` | List branches | ✅ |
@@ -172,7 +172,7 @@ Combined toolsets and readonly filtering
 #### `wit` toolset
 
 | Tool | Description | Read-only |
-|---|---|---|
+|---|---|:---:|
 | `wit_list_backlogs` | List backlogs for a team | ✅ |
 | `wit_list_backlog_work_items` | List work items on a backlog | ✅ |
 | `wit_get_work_item` | Get a work item by ID | ✅ |
@@ -198,7 +198,7 @@ Combined toolsets and readonly filtering
 #### `pipelines` toolset
 
 | Tool | Description | Read-only |
-|---|---|---|
+|---|---|:---:|
 | `pipelines_get_build_definitions` | List build definitions | ✅ |
 | `pipelines_get_build_definition_revisions` | List definition revisions | ✅ |
 | `pipelines_get_builds` | List builds | ✅ |
@@ -217,7 +217,7 @@ Combined toolsets and readonly filtering
 #### `wiki` toolset
 
 | Tool | Description | Read-only |
-|---|---|---|
+|---|---|:---:|
 | `wiki_list_wikis` | List wikis in a project/Organization | ✅ |
 | `wiki_get_wiki` | Get a wiki by identifier | ✅ |
 | `wiki_list_pages` | List pages in a wiki | ✅ |
@@ -229,7 +229,7 @@ Combined toolsets and readonly filtering
 #### `work` toolset
 
 | Tool | Description | Read-only |
-|---|---|---|
+|---|---|:---:|
 | `work_list_team_iterations` | List iterations for a team | ✅ |
 | `work_list_iterations` | List all iterations in a project | ✅ |
 | `work_get_team_capacity` | Get team capacity for an iteration | ✅ |
