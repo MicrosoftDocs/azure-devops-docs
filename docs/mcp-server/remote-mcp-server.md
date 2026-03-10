@@ -44,8 +44,6 @@ The remote server provides the same capabilities as the local server, including 
 
 ## mcp.json configuration
 
-### Basic setup
-
 ```json
 {
   "servers": {
