@@ -42,11 +42,199 @@ The remote server provides the same capabilities as the local server, including 
 | **Permissions** | Member of the project with access to the resources you want to query |
 | **Environment** | A supported AI assistant environment (see [Supported environments](#supported-environments)) |
 
-## Enable the remote MCP Server preview
+## Mcp.json configuration
 
-<!-- TODO: Add steps to enable the preview feature once available -->
+### Basic setup
 
-To enable the remote MCP Server for your organization:
+```json
+{
+  "servers": {
+    "ado-remote-mcp": {
+      "url": "https://mcp.dev.azure.com/{organization}",
+      "type": "http"
+    }
+  },
+  "inputs": []
+}
+```
+You can also remove the organization name. But this means you will need to pass the organization name as context to each of your tool calls.
+
+```json
+{
+  "servers": {
+    "ado-remote-mcp": {
+      "url": "https://mcp.dev.azure.com/",
+      "type": "http"
+    }
+  },
+  "inputs": []
+}
+```
+
+### Toolsets
+
+```json
+{
+  "servers": {
+    "ado-remote-mcp": {
+      "url": "https://mcp.dev.azure.com/{organization}",
+      "type": "http",
+      "headers": {
+        "X-MCP-Toolsets": "repos,wiki,wit"
+      }
+    }
+  },
+  "inputs": []
+}
+```
+
+| Toolset value | Included tools |
+|---|---|
+| `all` *(default)* | Every tool from all toolsets |
+| `repos` | Repository and pull request tools (`repo_*`) |
+| `wit` | Work item tools (`wit_*`) + `search_workitem` |
+| `pipelines` | Pipeline and build tools (`pipelines_*`) |
+| `wiki` | Wiki tools (`wiki_*`) + `search_wiki` |
+| `work` | Iteration and capacity tools (`work_*`) |
+
+### Readonly tools
+
+Use the `X-MCP-Readonly` header when you prefer not to encode readonly in the URL, or when you want to combine readonly with multiple toolsets via the `X-MCP-Toolsets` header.
+
+```json
+{
+  "servers": {
+    "ado-remote-mcp": {
+      "url": "https://mcp.dev.azure.com/{organization}",
+      "type": "http",
+      "headers": {
+        "X-MCP-Readonly": "true"
+      }
+    }
+  },
+  "inputs": []
+}
+```
+
+Combined toolsets and readonly filtering
+
+```json
+{
+  "servers": {
+    "ado-remote-mcp": {
+      "url": "https://mcp.dev.azure.com/{organization}",
+      "type": "http",
+      "headers": {
+        "X-MCP-Toolsets": "repos,wiki",
+        "X-MCP-Readonly": "true"
+      }
+    }
+  },
+  "inputs": []
+}
+```
+
+## Available tools
+
+> [!NOTE]
+> This may not be the most recent and updated list.
+
+#### Core tools (always available)
+
+| Tool | Description |
+|---|---|
+| `core_list_projects` | List projects in an organization |
+| `core_list_project_teams` | List teams for a project |
+
+#### `repos` toolset
+
+| Tool | Description | Read-only |
+|---|---|---|
+| `repo_list_repos_by_project` | List repositories in a project | ✅ |
+| `repo_list_pull_requests_by_repo_or_project` | List pull requests | ✅ |
+| `repo_list_branches_by_repo` | List branches | ✅ |
+| `repo_list_my_branches_by_repo` | List my branches | ✅ |
+| `repo_list_pull_request_threads` | List PR comment threads | ✅ |
+| `repo_list_pull_request_thread_comments` | List comments in a PR thread | ✅ |
+| `repo_list_pull_requests_by_commits` | Find PRs by commit IDs | ✅ |
+| `repo_get_repo_by_name_or_id` | Get a repository | ✅ |
+| `repo_get_branch_by_name` | Get a branch | ✅ |
+| `repo_get_pull_request_by_id` | Get a pull request | ✅ |
+| `repo_search_commits` | Search commits | ✅ |
+| `repo_create_pull_request` | Create a pull request | ❌ |
+| `repo_create_branch` | Create a branch | ❌ |
+| `repo_create_pull_request_thread` | Add a comment thread to a PR | ❌ |
+| `repo_reply_to_comment` | Reply to a PR comment | ❌ |
+| `repo_update_pull_request` | Update a pull request | ❌ |
+| `repo_update_pull_request_reviewers` | Add/remove PR reviewers | ❌ |
+| `repo_update_pull_request_thread` | Update a PR comment thread | ❌ |
+
+#### `wit` toolset
+
+| Tool | Description | Read-only |
+|---|---|---|
+| `wit_list_backlogs` | List backlogs for a team | ✅ |
+| `wit_list_backlog_work_items` | List work items on a backlog | ✅ |
+| `wit_get_work_item` | Get a work item by ID | ✅ |
+| `wit_get_work_items_batch_by_ids` | Get work items by IDs | ✅ |
+| `wit_list_work_item_comments` | List comments on a work item | ✅ |
+| `wit_list_work_item_revisions` | List revisions of a work item | ✅ |
+| `wit_get_work_items_for_iteration` | List work items in an iteration | ✅ |
+| `wit_my_work_items` | Get work items for the current user | ✅ |
+| `wit_get_work_item_type` | Get a work item type | ✅ |
+| `wit_get_query` | Get a query by ID or path | ✅ |
+| `wit_get_query_results_by_id` | Run a saved query | ✅ |
+| `search_workitem` | Full-text work item search | ✅ |
+| `wit_add_work_item_comment` | Add a comment to a work item | ❌ |
+| `wit_update_work_item` | Update a work item | ❌ |
+| `wit_create_work_item` | Create a work item | ❌ |
+| `wit_update_work_items_batch` | Update work items in batch | ❌ |
+| `wit_work_items_link` | Link work items together | ❌ |
+| `wit_work_item_unlink` | Remove links from a work item | ❌ |
+| `wit_add_child_work_items` | Create child work items | ❌ |
+| `wit_link_work_item_to_pull_request` | Link a work item to a PR | ❌ |
+| `wit_add_artifact_link` | Add artifact links to a work item | ❌ |
+
+#### `pipelines` toolset
+
+| Tool | Description | Read-only |
+|---|---|---|
+| `pipelines_get_build_definitions` | List build definitions | ✅ |
+| `pipelines_get_build_definition_revisions` | List definition revisions | ✅ |
+| `pipelines_get_builds` | List builds | ✅ |
+| `pipelines_get_build_changes` | Get changes for a build | ✅ |
+| `pipelines_get_build_status` | Get the status of a build | ✅ |
+| `pipelines_get_build_log` | Get build logs | ✅ |
+| `pipelines_get_build_log_by_id` | Get a specific build log | ✅ |
+| `pipelines_get_run` | Get a pipeline run | ✅ |
+| `pipelines_list_runs` | List pipeline runs | ✅ |
+| `pipelines_list_artifacts` | List build artifacts | ✅ |
+| `pipelines_download_artifact` | Download a build artifact | ✅ |
+| `pipelines_update_build_stage` | Update a build stage | ❌ |
+| `pipelines_create_pipeline` | Create a pipeline definition | ❌ |
+| `pipelines_run_pipeline` | Trigger a pipeline run | ❌ |
+
+#### `wiki` toolset
+
+| Tool | Description | Read-only |
+|---|---|---|
+| `wiki_list_wikis` | List wikis in a project/Organization | ✅ |
+| `wiki_get_wiki` | Get a wiki by identifier | ✅ |
+| `wiki_list_pages` | List pages in a wiki | ✅ |
+| `wiki_get_page` | Get page metadata | ✅ |
+| `wiki_get_page_content` | Get page content | ✅ |
+| `search_wiki` | Full-text wiki search | ✅ |
+| `wiki_create_or_update_page` | Create or update a wiki page | ❌ |
+
+#### `work` toolset
+
+| Tool | Description | Read-only |
+|---|---|---|
+| `work_list_team_iterations` | List iterations for a team | ✅ |
+| `work_list_iterations` | List all iterations in a project | ✅ |
+| `work_get_team_capacity` | Get team capacity for an iteration | ✅ |
+| `work_create_iterations` | Create iterations | ❌ |
+| `work_assign_iterations` | Assign iterations to a team | ❌ |
 
 1. Sign in to your organization (`https://dev.azure.com/{yourorganization}`).
 2. Select **Organization settings**.
@@ -83,8 +271,6 @@ Replace the following placeholders:
 | Placeholder | Description |
 |-------------|-------------|
 | `{organization}` | Your Azure DevOps organization name (for example, `contoso`) |
-| `{tenant-id}` | Your Microsoft Entra tenant ID |
-| `{client-id}` | Your application (client) ID registered in Microsoft Entra ID |
 
 <a id="supported-environments"></a>
 
