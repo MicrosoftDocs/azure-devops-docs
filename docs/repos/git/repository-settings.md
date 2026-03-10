@@ -763,7 +763,7 @@ To manage this setting:
 To enable or disable this setting for individual repositories:
 
 1. Select **Project Settings** > **Repositories**, and then select a repository.
-1. On the **Settings** tab of the **\<Repository name>** page, set **Permissions management** to **On** or **Off**.
+1. On the **\<Repository name>** page, on the **Settings** tab, set **Permissions management** to **On** or **Off**.
 
 :::image type="content" source="media/repository-settings/permissions-management.png" alt-text="Screenshot that shows the Permissions management repository setting.":::
 
@@ -825,7 +825,7 @@ When enabled, commit messages that contain `#` followed by a valid work item ID 
 
 ### Commit mention work item resolution
 
-Enable this setting to automatically complete work items when linked pull requests are complete. With this setting, you can also specify other work item transition states in pull request commit messages. For more information, see [Auto-complete work items with pull requests](../../boards/work-items/auto-complete-work-items-pull-requests.md).
+Enable this setting to automatically complete work items when linked pull requests are complete. With this setting, you can also specify other work item transition states in pull request commit messages. For more information, see [Autocomplete work items with pull requests](../../boards/work-items/auto-complete-work-items-pull-requests.md).
 
 ::: moniker-end
 
@@ -938,7 +938,7 @@ If most of your contributors are on Windows or macOS, it's best to enable the **
 
 This setting prevents contributors from introducing case-only differences. The setting avoids case-sensitivity conflicts by blocking pushes that change name casing on files, folders, branches, and tags. The user has to rewrite their unpushed history to fix the problem, and then try the push again.
 
-This setting won't fix a repository that already contains objects that differ only by case. It's best to fix such issues before you turn on the policy. Rename files and folders or re-create [branches](create-branch.md) and [tags](git-tags.md) to use nonconflicting names.
+This setting doesn't fix a repository that already contains objects that differ only by case. It's best to fix such issues before you turn on the policy. Rename files and folders or re-create [branches](create-branch.md) and [tags](git-tags.md) to use nonconflicting names.
 
 ::: moniker-end
 
