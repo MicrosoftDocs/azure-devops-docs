@@ -33,7 +33,7 @@ Azure Artifacts enforces the following count limits:
 
 The following table shows the maximum supported size for each package type:
 
-::: moniker range="= azure-devops" 
+::: moniker range="azure-devops" 
 
 | Package type       | Package size limit (per file)   |
 |--------------------|---------------------------------|
@@ -50,7 +50,7 @@ Universal Packages that contain a very large number of files (100K+) may fail to
 
 ::: moniker-end
 
-::: moniker range="= azure-devops-2022" 
+::: moniker range="azure-devops-2022" 
 
 | Package type       | Package size limit (per file)   |
 |--------------------|---------------------------------|
@@ -86,7 +86,7 @@ When your organization reaches the 2 GiB free‑tier storage limit, you won’
 
 1. Select **Save** when you're done.
 
-   :::image type="content" source="../media/increase-usage-limit.png" alt-text="A screenshot displaying how to increase Artifacts storage limit." lightbox="media/increase-usage-limit.png":::
+   :::image type="content" source="../media/increase-usage-limit.png" alt-text="A screenshot displaying how to increase Artifacts storage limit." lightbox="../media/increase-usage-limit.png":::
 
 ## Related content
 
