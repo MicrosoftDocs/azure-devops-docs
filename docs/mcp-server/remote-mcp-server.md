@@ -42,6 +42,7 @@ The remote server provides the same capabilities as the local server, including 
 | **Permissions** | Membership in the project and access to the resources you want to query |
 | **Environment** | A supported AI assistant environment (see [Supported environments](#supported-environments)) |
 
+<br>
 # mcp.json configuration
 
 ## Basic setup
