@@ -23,7 +23,7 @@ The remote Azure DevOps MCP Server is a hosted version of the [Azure DevOps MCP 
 
 The remote server provides the same capabilities as the local server, including access to work items, pull requests, pipelines, and more, while eliminating local setup complexity.
 
-# Remote vs. local MCP Server
+## Remote vs. local MCP Server
 
 | Feature | Remote MCP Server (preview) | Local MCP Server |
 |--------|-----------------------------|------------------|
@@ -34,7 +34,7 @@ The remote server provides the same capabilities as the local server, including 
 | **Configuration** | Minimal `mcp.json` | Environment-specific setup |
 | **Status** | Public preview | Generally available |
 
-# Prerequisites
+## Prerequisites
 
 | Category | Requirements |
 |----------|-------------|
@@ -42,10 +42,9 @@ The remote server provides the same capabilities as the local server, including 
 | **Permissions** | Membership in the project and access to the resources you want to query |
 | **Environment** | A supported AI assistant environment (see [Supported environments](#supported-environments)) |
 
-<br>
-# mcp.json configuration
+## mcp.json configuration
 
-## Basic setup
+### Basic setup
 
 ```json
 {
@@ -73,7 +72,7 @@ You can also omit the organization name from the URL. However, if you do this, y
 }
 ```
 
-## Toolsets
+### Toolsets
 
 You can restrict the tools available to the MCP server by specifying toolsets.
 
@@ -101,7 +100,7 @@ You can restrict the tools available to the MCP server by specifying toolsets.
 | `wiki` | Wiki tools (`wiki_*`) and `search_wiki` |
 | `work` | Iteration and capacity tools (`work_*`) |
 
-## Read-only tools
+### Read-only tools
 
 Use the `X-MCP-Readonly` header if you want to restrict the server to read-only operations. This is useful when you want to prevent modifications to Azure DevOps resources.
 
@@ -138,14 +137,12 @@ Use the `X-MCP-Readonly` header if you want to restrict the server to read-only 
 }
 ```
 
----
-
-# Available tools
+## Available tools
 
 > [!NOTE]
 > This list might not always reflect the most recent tool updates. Test plan tools are not yet available.
 
-## Core tools (always available)
+### Core tools (always available)
 
 | Tool | Description |
 |---|---|
@@ -154,7 +151,7 @@ Use the `X-MCP-Readonly` header if you want to restrict the server to read-only 
 
 ---
 
-## `repos` toolset
+### `repos` toolset
 
 | Tool | Description | Read-only |
 |---|---|:---:|
@@ -179,7 +176,7 @@ Use the `X-MCP-Readonly` header if you want to restrict the server to read-only 
 
 ---
 
-## `wit` toolset
+### `wit` toolset
 
 | Tool | Description | Read-only |
 |---|---|:---:|
@@ -207,7 +204,7 @@ Use the `X-MCP-Readonly` header if you want to restrict the server to read-only 
 
 ---
 
-## `pipelines` toolset
+### `pipelines` toolset
 
 | Tool | Description | Read-only |
 |---|---|:---:|
@@ -228,7 +225,7 @@ Use the `X-MCP-Readonly` header if you want to restrict the server to read-only 
 
 ---
 
-## `wiki` toolset
+### `wiki` toolset
 
 | Tool | Description | Read-only |
 |---|---|:---:|
@@ -242,7 +239,7 @@ Use the `X-MCP-Readonly` header if you want to restrict the server to read-only 
 
 ---
 
-## `work` toolset
+### `work` toolset
 
 | Tool | Description | Read-only |
 |---|---|:---:|
@@ -256,7 +253,7 @@ Use the `X-MCP-Readonly` header if you want to restrict the server to read-only 
 ## Configure your AI assistant
 The remote MCP Server exposes a streamable HTTP endpoint. Add the configuration shown earlier to your AI assistant's MCP settings.
 
-# Supported environments
+### Supported environments
 The remote Azure DevOps MCP Server requires your user account and Azure DevOps organization to be connected to Microsoft Entra ID.
 
 However, not all MCP clients support Entra authentication by default. Some environments require additional steps to register the client application.
@@ -299,7 +296,7 @@ Configure the remote MCP Server in the GitHub Copilot CLI by adding the MCP serv
 
 Support for Azure AI Foundry will be documented soon.
 
-# Verify the connection
+## Verify the connection
 
 After setup, verify the remote MCP Server is working by asking your AI assistant a question about your Azure DevOps data.
 
@@ -311,7 +308,7 @@ Examples:
 
 If the AI assistant returns results from your Azure DevOps organization, the remote MCP Server is configured correctly.
 
-# Troubleshooting
+## Troubleshooting
 
 | Issue | Resolution |
 |------|------------|
