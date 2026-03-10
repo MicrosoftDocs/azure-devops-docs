@@ -150,8 +150,6 @@ Core tools are always available.
 | `core_list_projects` | List projects in an organization |
 | `core_list_project_teams` | List teams in a project |
 
----
-
 ### Repos
 
 | Tool | Description | Read-only |
