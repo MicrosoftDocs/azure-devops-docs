@@ -8,7 +8,7 @@ description: Auto‑complete pull requests by default
 
 # Auto‑complete pull requests by default
 
-Azure DevOps introduces a new repository setting that enables pull requests to be set to auto‑complete by default when they’re created. This helps teams reduce manual follow‑ups and streamline the merge process. The setting can be configured at the project level or per repository, giving teams flexibility in how they manage pull request completion.
+With this sprint, we're adding a new repository setting that enables pull requests to be set to auto‑complete by default when they’re created. This helps teams reduce manual follow‑ups and streamline the merge process. The setting can be configured at the project level or per repository, giving teams flexibility in how they manage pull request completion.
 
 Check out the release notes for details.
 
