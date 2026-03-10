@@ -251,12 +251,11 @@ Use the `X-MCP-Readonly` header if you want to restrict the server to read-only 
 | `work_create_iterations` | Create iterations | ❌ |
 | `work_assign_iterations` | Assign iterations to a team | ❌ |
 
-# Configure your AI assistant
 
+## Configure your AI assistant
 The remote MCP Server exposes a streamable HTTP endpoint. Add the configuration shown earlier to your AI assistant's MCP settings.
 
 # Supported environments
-
 The remote Azure DevOps MCP Server requires your user account and Azure DevOps organization to be connected to Microsoft Entra ID.
 
 However, not all MCP clients support Entra authentication by default. Some environments require additional steps to register the client application.
@@ -270,7 +269,7 @@ Currently supported environments include:
 
 More details about Entra client app registration will be provided soon.
 
-## Visual Studio Code
+### Visual Studio Code
 
 To configure the remote MCP Server in Visual Studio Code:
 
@@ -283,7 +282,7 @@ To configure the remote MCP Server in Visual Studio Code:
 
 After authentication completes, you will see a list of available tools.
 
-## Visual Studio (2022 and later)
+### Visual Studio (2022 and later)
 
 Configure the remote MCP Server in Visual Studio by adding the server URL to your MCP settings.
 
@@ -291,11 +290,11 @@ For more information, see:
 
 [Use MCP servers in Visual Studio](/visualstudio/ide/mcp-servers)
 
-## GitHub Copilot CLI
+### GitHub Copilot CLI
 
 Configure the remote MCP Server in the GitHub Copilot CLI by adding the MCP server configuration to your MCP settings.
 
-## Foundry
+### Foundry
 
 Support for Azure AI Foundry will be documented soon.
 
