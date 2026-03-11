@@ -285,7 +285,6 @@ Configure the remote MCP Server in the GitHub Copilot CLI by adding the MCP serv
 
 Support for Azure AI Foundry will be documented soon.
 
-<br>
 ## Verify the connection
 
 After setup, verify the remote MCP Server is working by asking your AI assistant a question about your Azure DevOps data.
@@ -298,7 +297,6 @@ Examples:
 
 If the AI assistant returns results from your Azure DevOps organization, the remote MCP Server is configured correctly.
 
-<br>
 ## Troubleshooting
 
 | Issue | Resolution |
@@ -308,8 +306,7 @@ If the AI assistant returns results from your Azure DevOps organization, the rem
 | **No data returned** | Confirm you have appropriate permissions for the project or resources being queried. |
 | **Preview not available** | The preview is rolling out gradually. Check back later or contact your organization administrator. |
 
-<br>
-# Related content
+## Related content
 
 - [Azure DevOps MCP Server overview](mcp-server-overview.md)
 - [Azure DevOps MCP Server GitHub repository](https://github.com/microsoft/azure-devops-mcp)
