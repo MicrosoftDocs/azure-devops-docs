@@ -250,7 +250,6 @@ Currently supported environments include:
 
 - Visual Studio Code
 - Visual Studio
-- GitHub Copilot CLI
 - Foundry
 
 More details about Entra client app registration will be provided soon.
@@ -276,10 +275,6 @@ For more information, see:
 
 [Use MCP servers in Visual Studio](/visualstudio/ide/mcp-servers)
 
-### GitHub Copilot CLI
-
-Configure the remote MCP Server in the GitHub Copilot CLI by adding the MCP server configuration to your MCP settings.
-
 ### Foundry
 
 Support for Azure AI Foundry will be documented soon.
@@ -304,6 +299,20 @@ If the AI assistant returns results from your Azure DevOps organization, the rem
 | **Server not found** | Check the server URL format: `https://dev.azure.com/{organization}`. |
 | **No data returned** | Confirm you have appropriate permissions for the project or resources being queried. |
 | **Preview not available** | The preview is rolling out gradually. Check back later or contact your organization administrator. |
+
+#### How do you add the MCP Server to GitHub Copilot CLI?
+
+GitHub Copilot CLI requires a **Client ID** when configuring the Azure DevOps MCP Server. This Client ID comes from an **application registration in Microsoft Entra ID**. The registration represents the client application that will authenticate with Azure DevOps through Entra.
+
+You will need to register an application in Entra and use the resulting **Client ID** when configuring the MCP server connection. We will be providing more detailed guidance on how to complete this process soon.
+
+#### What about other clients like Claude Desktop, Claude Code, Cursor, etc?
+
+To use clients other than Visual Studio or Visual Studio Code, the client must support **Microsoft Entra authentication**. In addition, the client application needs to be **registered in Entra ID** so that it has a valid Client ID that can be used during authentication with the Azure DevOps MCP Server. More documentation coming soon on how to accomplish an app registration.
+
+#### Does the Azure DevOps MCP Server support AgentId?
+
+Support for **AgentId** is currently a work in progress and is expected to be available soon.
 
 ## Related content
 
