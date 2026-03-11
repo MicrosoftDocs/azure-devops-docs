@@ -126,7 +126,7 @@ Use the `X-MCP-Readonly` header if you want to restrict the server to read-only 
       "url": "https://mcp.dev.azure.com/{organization}",
       "type": "http",
       "headers": {
-        "X-MCP-Toolsets": "repos,wiki",
+        "X-MCP-Toolsets": "repos,wiki,wit",
         "X-MCP-Readonly": "true"
       }
     }
