@@ -69,10 +69,10 @@ You can see the installed software for each macOS hosted agent by choosing the *
 | macOS 15 Sequoia | *macOS-15* | `macOS-latest` OR `macOS-15` | [Link](https://github.com/actions/runner-images/blob/main/images/macos/macos-15-Readme.md) |
 | macOS 14 Sonoma<br>*[macOS 14 Sonoma hosted image deprecation schedule](./hosted-deprecation-schedule.md?tabs=macos-images#macos-14-sonoma-hosted-image-deprecation-schedule)* | *macOS-14* | `macOS-14` | [Link](https://aka.ms/macOS-14-readme) |
 
-#### macOS 15 ARM64 image Limited Public Preview Discontinued
+#### macOS 15 Sequoia arm64 Limited Public Preview Availability Update
 
 > [!IMPORTANT]
->The macOS 15 Sequoia ARM64 Limited Public Preview has been discontinued due to capacity constraints. Azure DevOps organizations that are already using this image can continue to do so without interruption. We’ll share further updates in this section as more information becomes available regarding macOS ARM64 image availability.
+>The macOS 15 Sequoia arm64 Limited Public Preview has been discontinued due to capacity constraints. Azure DevOps organizations that are already using this image can continue to do so without interruption. We’ll share further updates in this section as more information becomes available regarding macOS ARM64 image availability.
 
 #### macOS images updates
 
