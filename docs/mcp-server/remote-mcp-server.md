@@ -1,15 +1,16 @@
 ---
 title: Set up the remote Azure DevOps MCP Server (preview)
 titleSuffix: Azure DevOps Services
-description: Learn how to configure the remote Azure DevOps MCP Server for AI-assisted development without local installation, using streamable HTTP transport.
+description: Learn how to configure the remote Azure DevOps MCP Server for AI-assisted development without local installation by using streamable HTTP transport.
 ms.service: azure-devops
 ms.collection: ce-skilling-ai-copilot
+ai-usage: ai-assisted
 ms.topic: how-to
 ms.author: chcomley
 author: chcomley
 monikerRange: 'azure-devops'
-ms.date: 03/10/2026
-#customer intent: As a developer, I want to set up the remote Azure DevOps MCP Server so I can use AI assistance with my Azure DevOps data without installing and running a local server.
+ms.date: 03/12/2026
+#customer intent: As a user, I want to set up the remote Azure DevOps MCP Server so I can use AI assistance with my Azure DevOps data without installing and running a local server.
 ---
 
 # Set up the remote Azure DevOps MCP Server (preview)
@@ -19,7 +20,7 @@ ms.date: 03/10/2026
 > [!IMPORTANT]
 > The remote Azure DevOps MCP Server is currently in public preview. Preview features might have limited functionality and can change before general availability.
 
-The remote Azure DevOps MCP Server is a hosted version of the [Azure DevOps MCP Server](mcp-server-overview.md) that doesn't require a local installation. Instead of running the server on your machine, you connect your AI assistant directly to the Azure DevOps–hosted endpoint using streamable HTTP transport.
+The remote Azure DevOps MCP Server is a hosted version of the [Azure DevOps MCP Server](mcp-server-overview.md) that doesn't require a local installation. Instead of running the server on your machine, you connect your AI assistant directly to the Azure DevOps–hosted endpoint by using streamable HTTP transport.
 
 The remote server provides the same capabilities as the local server, including access to work items, pull requests, pipelines, and more, while eliminating local setup complexity.
 
@@ -38,7 +39,7 @@ The remote server provides the same capabilities as the local server, including 
 
 | Category | Requirements |
 |----------|-------------|
-| **Azure DevOps** | An active [Azure DevOps organization](../organizations/accounts/create-organization.md) |
+| **Azure DevOps** | An active [Azure DevOps organization](../organizations/accounts/create-organization.md) connected to [Microsoft Entra ID](/entra/fundamentals/whatis) |
 | **Permissions** | Membership in the project and access to the resources you want to query |
 | **Environment** | A supported AI assistant environment (see [Supported environments](#supported-environments)) |
 
@@ -56,7 +57,7 @@ The remote server provides the same capabilities as the local server, including 
 }
 ```
 
-You can also omit the organization name from the URL. However, if you do this, you must provide the organization name as context in each tool call.
+You can also omit the organization name from the URL. However, if you omit the organization name, you must provide it as context in each tool call.
 
 ```json
 {
@@ -72,7 +73,7 @@ You can also omit the organization name from the URL. However, if you do this, y
 
 ### Toolsets
 
-You can restrict the tools available to the MCP server by specifying toolsets.
+Specify toolsets to restrict the tools available to the MCP server.
 
 ```json
 {
@@ -100,7 +101,7 @@ You can restrict the tools available to the MCP server by specifying toolsets.
 
 ### Read-only tools
 
-Use the `X-MCP-Readonly` header if you want to restrict the server to read-only operations. This is useful when you want to prevent modifications to Azure DevOps resources.
+Use the `X-MCP-Readonly` header to restrict the server to read-only operations. This restriction is useful when you want to prevent modifications to Azure DevOps resources.
 
 ```json
 {
@@ -138,7 +139,7 @@ Use the `X-MCP-Readonly` header if you want to restrict the server to read-only 
 ## Available tools
 
 > [!NOTE]
-> This list might not always reflect the most recent tool updates. Test plan tools are not yet available.
+> This list might not always reflect the most recent tool updates. Test plan tools aren't yet available.
 
 ### Core tools
 Core tools are always available.
@@ -220,64 +221,53 @@ Core tools are always available.
 
 | Tool | Description | Read-only |
 |---|---|:---:|
-| `wiki_list_wikis` | List wikis in a project or organization | ✅ |
-| `wiki_get_wiki` | Get a wiki by identifier | ✅ |
-| `wiki_list_pages` | List pages in a wiki | ✅ |
-| `wiki_get_page` | Get page metadata | ✅ |
-| `wiki_get_page_content` | Get page content | ✅ |
-| `search_wiki` | Full-text wiki search | ✅ |
-| `wiki_create_or_update_page` | Create or update a wiki page | ❌ |
+| `wiki_list_wikis` | List wikis in a project or organization. | ✅ |
+| `wiki_get_wiki` | Get a wiki by identifier. | ✅ |
+| `wiki_list_pages` | List pages in a wiki. | ✅ |
+| `wiki_get_page` | Get page metadata. | ✅ |
+| `wiki_get_page_content` | Get page content. | ✅ |
+| `search_wiki` | Full-text wiki search. | ✅ |
+| `wiki_create_or_update_page` | Create or update a wiki page. | ❌ |
 
 ### Work
 
 | Tool | Description | Read-only |
 |---|---|:---:|
-| `work_list_team_iterations` | List iterations for a team | ✅ |
-| `work_list_iterations` | List all iterations in a project | ✅ |
-| `work_get_team_capacity` | Get team capacity for an iteration | ✅ |
-| `work_create_iterations` | Create iterations | ❌ |
-| `work_assign_iterations` | Assign iterations to a team | ❌ |
-
-## Configure your AI assistant
-The remote MCP Server exposes a streamable HTTP endpoint. Add the configuration shown earlier to your AI assistant's MCP settings.
+| `work_list_team_iterations` | List iterations for a team. | ✅ |
+| `work_list_iterations` | List all iterations in a project. | ✅ |
+| `work_get_team_capacity` | Get team capacity for an iteration. | ✅ |
+| `work_create_iterations` | Create iterations. | ❌ |
+| `work_assign_iterations` | Assign iterations to a team. | ❌ |
 
 ## Supported environments
-The remote Azure DevOps MCP Server requires your user account and Azure DevOps organization to be connected to Microsoft Entra ID.
+The remote Azure DevOps MCP Server requires your user account and Azure DevOps organization to connect to Microsoft Entra ID.
 
-However, not all MCP clients support Entra authentication by default. Some environments require additional steps to register the client application.
+Not all MCP clients support Entra authentication by default. Some environments require extra steps to register the client application.
 
 Currently supported environments include:
 
 - Visual Studio Code
 - Visual Studio
-- Foundry
-
-More details about Entra client app registration will be provided soon.
+- Azure AI Foundry
 
 ### Visual Studio Code
 
 To configure the remote MCP Server in Visual Studio Code:
 
-1. Add `.vscode/mcp.json` to your repository.
-2. Add the desired configuration shown earlier.
-3. Save the `mcp.json` file.
-4. Start GitHub Copilot in VS Code.
-5. When prompted, authenticate with your Microsoft Entra account.
-6. Select your account.
+1. Add a `.vscode/mcp.json` file to your repository with the [mcp.json configuration](#mcpjson-configuration) shown earlier.
+1. Save the file.
+1. Open GitHub Copilot in VS Code.
+1. When prompted, authenticate by using your Microsoft Entra account and select your account.
 
-After authentication completes, you will see a list of available tools.
+After authentication completes, a list of available tools appears.
 
 ### Visual Studio (2022 and later)
 
-Configure the remote MCP Server in Visual Studio by adding the server URL to your MCP settings.
+Configure the remote MCP Server in Visual Studio by adding the server URL to your MCP settings. For more information, see [Use MCP servers in Visual Studio](/visualstudio/ide/mcp-servers).
 
-For more information, see:
+### Azure AI Foundry
 
-[Use MCP servers in Visual Studio](/visualstudio/ide/mcp-servers)
-
-### Foundry
-
-Support for Azure AI Foundry will be documented soon.
+[!INCLUDE [](../includes/version-coming-soon.md)]
 
 ## Verify the connection
 
@@ -296,23 +286,25 @@ If the AI assistant returns results from your Azure DevOps organization, the rem
 | Issue | Resolution |
 |------|------------|
 | **Authentication fails** | Verify your Microsoft Entra credentials and confirm you have access to the Azure DevOps organization. |
-| **Server not found** | Check the server URL format: `https://dev.azure.com/{organization}`. |
+| **Server not found** | Check the server URL format: `https://mcp.dev.azure.com/{organization}`. |
 | **No data returned** | Confirm you have appropriate permissions for the project or resources being queried. |
 | **Preview not available** | The preview is rolling out gradually. Check back later or contact your organization administrator. |
 
-#### How do you add the MCP Server to GitHub Copilot CLI?
+## FAQ
 
-GitHub Copilot CLI requires a **Client ID** when configuring the Azure DevOps MCP Server. This Client ID comes from an **application registration in Microsoft Entra ID**. The registration represents the client application that will authenticate with Azure DevOps through Entra.
+### How do I add the MCP Server to GitHub Copilot CLI?
 
-You will need to register an application in Entra and use the resulting **Client ID** when configuring the MCP server connection. We will be providing more detailed guidance on how to complete this process soon.
+GitHub Copilot CLI requires a **Client ID** when configuring the Azure DevOps MCP Server. This Client ID comes from an application registration in Microsoft Entra ID. The registration represents the client application that authenticates with Azure DevOps through Microsoft Entra.
 
-#### What about other clients like Claude Desktop, Claude Code, Cursor, etc?
+Register an application in Microsoft Entra ID and use the resulting Client ID when configuring the MCP server connection.
 
-To use clients other than Visual Studio or Visual Studio Code, the client must support **Microsoft Entra authentication**. In addition, the client application needs to be **registered in Entra ID** so that it has a valid Client ID that can be used during authentication with the Azure DevOps MCP Server. More documentation coming soon on how to accomplish an app registration.
+### What about other clients like Claude Desktop, Claude Code, or Cursor?
 
-#### Does the Azure DevOps MCP Server support AgentId?
+To use clients other than Visual Studio or Visual Studio Code, the client must support Microsoft Entra authentication. You also need to register the client application in Microsoft Entra ID so it has a valid Client ID for authentication by using the Azure DevOps MCP Server.
 
-Support for **AgentId** is currently a work in progress and is expected to be available soon.
+### Does the Azure DevOps MCP Server support AgentId?
+
+The server doesn't support AgentId yet.
 
 ## Related content
 
