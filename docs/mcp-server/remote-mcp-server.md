@@ -267,7 +267,7 @@ Configure the remote MCP Server in Visual Studio by adding the server URL to you
 
 ### Azure AI Foundry
 
-[!INCLUDE [](../includes/version-coming-soon.md)]
+Azure AI Foundry support documentation is coming soon.
 
 ## Verify the connection
 
