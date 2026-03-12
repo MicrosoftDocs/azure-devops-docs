@@ -74,6 +74,9 @@ Follow these steps to unlink single or all existing process parameters in your C
 
     :::image type="content" source="../artifacts/media/unlink-single-parameter.png" alt-text="A screenshot displaying how to unlink a single process parameter in a Classic pipeline.":::
 
+> [!NOTE]
+> The **Unlink** icon appears only next to settings that were previously linked as a pipeline parameter.
+
 #### Unlink all process parameters
 
 1. Sign in to your Azure DevOps organization, then navigate to your project.
