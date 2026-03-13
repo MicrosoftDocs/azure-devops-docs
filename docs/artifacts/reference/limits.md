@@ -11,7 +11,7 @@ monikerRange: "<=azure-devops"
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
-Azure Artifacts enables developers to host and share packages while controlling access across teams and organizations. Azure Artifacts supports the following package types: NuGet, npm, Maven, Python, Cargo, and Universal Packages. This article covers the size and count limits you should be aware of when using Azure Artifacts. Some limits are enforced by the client tools that Azure Artifacts integrates withh (example nuget.exe).
+Azure Artifacts enables developers to host and share packages while controlling access across teams and organizations. Azure Artifacts supports the following package types: NuGet, npm, Maven, Python, Cargo, and Universal Packages. This article covers the size and count limits you should be aware of when using Azure Artifacts. Some limits are enforced by the client tools that Azure Artifacts integrates with (example nuget.exe).
 
 > [!NOTE]
 > Azure Artifacts provides 2 GiB of free storage per organization. This free tier is intended to help you evaluate Azure Artifacts. As your organization scales or begins handling production workloads, we recommend that you [set up billing for your organization](../../organizations/billing/set-up-billing-for-your-organization-vs.md#set-up-billing) to ensure you have sufficient storage capacity.
