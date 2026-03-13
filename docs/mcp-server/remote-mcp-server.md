@@ -290,6 +290,8 @@ If the AI assistant returns results from your Azure DevOps organization, the rem
 | **No data returned** | Confirm you have appropriate permissions for the project or resources being queried. |
 | **Preview not available** | The preview is rolling out gradually. Check back later or contact your organization administrator. |
 
+For support, you can create an issue in the [local MCP Server](https://github.com/microsoft/azure-devops-mcp/issues) repo. Be sure to use the **Remote** issue template.
+
 ## FAQ
 
 ### How do I add the MCP Server to GitHub Copilot CLI?
