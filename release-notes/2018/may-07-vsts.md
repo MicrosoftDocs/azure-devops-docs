@@ -6,6 +6,7 @@ ms.custom:
   - devx-track-extended-java
   - devx-track-python
   - sfi-image-nochange
+  - awp-ai
 ms.topic: install-set-up-deploy
 ---
 

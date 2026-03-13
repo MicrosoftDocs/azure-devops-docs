@@ -7,7 +7,9 @@ author: hsachinraj
 ms.topic: how-to
 monikerRange: 'azure-devops'
 ms.date: 10/31/2025
-ms.custom: sfi-image-nochange
+ms.custom: 
+   - sfi-image-nochange
+   - awp-ai
 ---
 
 # Build a custom template
