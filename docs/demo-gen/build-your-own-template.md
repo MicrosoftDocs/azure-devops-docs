@@ -24,7 +24,7 @@ An [Azure DevOps project](../organizations/projects/create-project.md) that's re
 
 ## Build a custom template
 
-1. Sign in to the generator with the query parameter **"enableextractor=true"** added to the URL: [https://azuredevopsdemogenerator.azurewebsites.net/?enableextractor=true](https://azuredevopsdemogenerator.azurewebsites.net/?enableextractor=true)
+1. Sign in to the generator with the query parameter **"enableextractor=true"** added to the URL: `https://azuredevopsdemogenerator.azurewebsites.net/?enableextractor=true` (service discontinued)
 
    :::image type="content" source="media/homepage.png" alt-text="Screenshot showing the Azure DevOps Generator home page.":::
 
@@ -51,7 +51,7 @@ An [Azure DevOps project](../organizations/projects/create-project.md) that's re
 
 ## Create your project from your custom template
 
-1. Go back to the generator page with the query parameter **"enableextractor=true"** added to the URL: [https://azuredevopsdemogenerator.azurewebsites.net/?enableextractor=true](https://azuredevopsdemogenerator.azurewebsites.net/?enableextractor=true).
+1. Go back to the generator page with the query parameter **"enableextractor=true"** added to the URL: `https://azuredevopsdemogenerator.azurewebsites.net/?enableextractor=true` (service discontinued).
 
 2. Select **Choose Template** 
 
