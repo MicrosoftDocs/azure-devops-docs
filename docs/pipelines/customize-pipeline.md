@@ -4,7 +4,7 @@ ms.custom: devx-track-azurecli, copilot-scenario-highlight
 description: Step-by-step tutorial to customize a pipeline
 ms.topic: quickstart
 ms.assetid: b3a9043e-aa64-4824-9999-afb2be72f141
-ms.date: 06/09/2025
+ms.date: 03/10/2026
 monikerRange: "<=azure-devops"
 ai-usage: ai-assisted
 ---
@@ -394,7 +394,7 @@ This example uses two jobs, but this same approach could be used across [multipl
 
 <a id="use-ai-assistance"></a>
 
-## AI-Enhanced Pipeline Customization with Copilot
+## Use AI to customize your pipeline
 
 If you configure the [Azure DevOps MCP Server](../mcp-server/mcp-server-overview.md), you can get intelligent recommendations for optimizing and customizing your pipeline using natural language.
 
@@ -411,6 +411,8 @@ If you configure the [Azure DevOps MCP Server](../mcp-server/mcp-server-overview
 | Review pipeline security | `Are there any security best practices missing from this pipeline in <Contoso>?` |
 | Compare configurations | `Compare the build settings of pipeline "CI-Main" and "CI-Feature" in <Contoso>` |
 
+> [!TIP]
+> If you're using Visual Studio Code, [agent mode](/visualstudio/ide/copilot-chat-context#agent-mode) is especially helpful for iterating on pipeline customizations and testing configuration changes.
 
 ## Next steps
 
