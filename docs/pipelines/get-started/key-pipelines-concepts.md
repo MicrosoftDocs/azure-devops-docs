@@ -2,7 +2,7 @@
 title: Key Azure Pipelines concepts
 description: Learn the key concepts of how Azure Pipelines works with your code and tools to automate build and deployment.
 ms.topic: overview
-ms.date: 08/08/2025
+ms.date: 03/10/2026
 monikerRange: 'azure-devops'
 ai-usage: ai-assisted
 ms.custom: copilot-scenario-highlight
@@ -133,7 +133,7 @@ A trigger is an event that causes a pipeline to run. You can trigger a pipeline 
 
 <a id="use-ai-assistance"></a>
 
-## AI-Assisted Pipeline Operations with Copilot
+## Use AI to explore pipeline concepts
 
 If you configure the [Azure DevOps MCP Server](../../mcp-server/mcp-server-overview.md), you can explore pipeline concepts and troubleshoot pipelines using natural language.
 
@@ -149,6 +149,9 @@ If you configure the [Azure DevOps MCP Server](../../mcp-server/mcp-server-overv
 | Check environment deployments | `Show recent deployments to the "production" environment in <Contoso>` |
 | Identify approval blockers | `Are there any pending approvals blocking pipeline runs in <Contoso>?` |
 | Review variable groups | `What variable groups are used by pipelines in project <Contoso>?` |
+
+> [!TIP]
+> If you're using Visual Studio Code, [agent mode](/visualstudio/ide/copilot-chat-context#agent-mode) is especially helpful for exploring pipeline concepts and troubleshooting build failures.
 
 ## Related content
 
