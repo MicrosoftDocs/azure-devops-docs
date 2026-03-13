@@ -69,7 +69,7 @@ Follow these steps to add a feed from a different organization as an upstream so
 
     :::image type="content" source="./media/upack-upstream-other-org.png" alt-text="A screenshot showing how to set up a new Universal Packages upstream source with a feed in another organization.":::
 
-1. Select **Add**, and then select **Save** in the upper-right corne to apply your changes.
+1. Select **Add**, and then select **Save** in the upper-right corner to apply your changes.
 
 > [!NOTE]
 > To add a feed from a different organization as an upstream source, the target feed owner must share the target view with **All feeds and people in organizations associated with my Microsoft Entra tenant**. To do this, navigate to **Feed Settings** > **Views** > select the ellipsis for the view, select **Edit**.
