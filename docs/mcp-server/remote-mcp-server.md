@@ -9,7 +9,7 @@ ms.topic: how-to
 ms.author: chcomley
 author: chcomley
 monikerRange: 'azure-devops'
-ms.date: 03/12/2026
+ms.date: 03/13/2026
 #customer intent: As a user, I want to set up the remote Azure DevOps MCP Server so I can use AI assistance with my Azure DevOps data without installing and running a local server.
 ---
 
@@ -29,7 +29,7 @@ The remote server provides the same capabilities as the local server, including 
 | Feature | Remote MCP Server (preview) | Local MCP Server |
 |--------|-----------------------------|------------------|
 | **Installation** | No installation required | Requires Node.js 20.0+ and `npx` |
-| **Transport** | Streamable HTTP | stdio |
+| **Transport** | Streamable HTTP | Studio |
 | **Authentication** | Microsoft Entra ID (OAuth) | Azure DevOps PAT or Microsoft Entra ID |
 | **Hosting** | Azure DevOps–hosted service | Runs locally on your machine |
 | **Configuration** | Minimal `mcp.json` | Environment-specific setup |
@@ -264,10 +264,6 @@ After authentication completes, a list of available tools appears.
 ### Visual Studio (2022 and later)
 
 Configure the remote MCP Server in Visual Studio by adding the server URL to your MCP settings. For more information, see [Use MCP servers in Visual Studio](/visualstudio/ide/mcp-servers).
-
-### Azure AI Foundry
-
-Azure AI Foundry support documentation is coming soon.
 
 ## Verify the connection
 
