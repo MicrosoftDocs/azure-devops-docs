@@ -72,7 +72,7 @@ You can see the installed software for each macOS hosted agent by choosing the *
 #### macOS 15 Sequoia arm64 Limited Public Preview Availability Update
 
 > [!IMPORTANT]
->The macOS 15 Sequoia arm64 Limited Public Preview has been discontinued due to capacity constraints. Azure DevOps organizations that are already using this image can continue to do so without interruption. We’ll share further updates in this section as more information becomes available regarding macOS ARM64 image availability.
+>The macOS 15 Sequoia arm64 Limited Public Preview has been discontinued due to capacity constraints. Azure DevOps organizations that are already using this image can continue to do so without interruption. We'll share further updates in this section as more information becomes available regarding macOS ARM64 image availability.
 
 #### macOS images updates
 
