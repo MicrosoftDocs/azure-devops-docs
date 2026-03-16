@@ -28,7 +28,7 @@ To find the specific policy, go to **Organization Settings** > **Policies** and 
 > [!NOTE]
 > The policy is **Off** by default. An authorized user must toggle it **On** if needed.
 
-:::image type="content" source="media/toggle-allow-extension-local-network.png" alt-text="Screenshot showing the allow extensions to access local network resources toggle.":::
+:::image type="content" source="media/toggle-allow-extensions-local-network.png" alt-text="Screenshot showing the allow extensions to access local network resources toggle.":::
 
 ## Related articles
 
