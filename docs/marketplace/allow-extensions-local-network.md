@@ -14,9 +14,6 @@ monikerRange: 'azure-devops'
 
 [!INCLUDE [version-eq-azure-devops](../includes/version-eq-azure-devops.md)]
 
-> [!NOTE]
-> This feature is gradually being released. If it's not yet available in your organization, check back again in a few days.
-
 Some web browsers block calls from iframes to local network resources as part of [Private Network Access](https://wicg.github.io/private-network-access/) protections. This blocking affects Azure DevOps organizations that use extensions that call back-end services hosted on internal company networks, such as:
 
 - Custom extensions that connect to on-premises REST APIs or microservices
