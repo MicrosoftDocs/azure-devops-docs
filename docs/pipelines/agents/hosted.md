@@ -68,16 +68,16 @@ You can see the installed software for each macOS hosted agent by choosing the *
 | macOS 15 Sequoia | *macOS-15* | `macOS-latest` OR `macOS-15` | [Link](https://github.com/actions/runner-images/blob/main/images/macos/macos-15-Readme.md) |
 | macOS 14 Sonoma<br>*[macOS 14 Sonoma hosted image deprecation schedule](./hosted-deprecation-schedule.md?tabs=macos-images#macos-14-sonoma-hosted-image-deprecation-schedule)* | *macOS-14* | `macOS-14` | [Link](https://aka.ms/macOS-14-readme) |
 
-#### macOS 15 ARM64 image Limited Public Preview paused
+#### macOS 15 ARM64 image limited public preview paused
 
 > [!IMPORTANT]
-> The macOS 15 Sequoia ARM64 Limited Public Preview has been paused. Any Azure DevOps organization currently using it can continue to do so. Look out for this section for further updates on macOS ARM64 image availability.
+> The macOS 15 Sequoia ARM64 limited public preview has been paused. Any Azure DevOps organization currently using it can continue to do so. Look out for this section for further updates on macOS ARM64 image availability.
 
 #### macOS images updates
 
 * [[macOS] Deprecation of simulator runtimes for Xcode 16.3 and older on macOS 15 on January 12th, 2026.](https://github.com/actions/runner-images/issues/13392)
 * The macOS 14 Sonoma image will be deprecated starting July 6, 2026. For more information, see [macOS 14 Sonoma hosted image deprecation schedule](./hosted-deprecation-schedule.md?tabs=macos-images#macos-14-sonoma-hosted-image-deprecation-schedule).
-* The macOS 15 Sequoia ARM64 Limited Public Preview has been paused.
+* The macOS 15 Sequoia ARM64 limited public preview has been paused.
 * The macOS 13 Ventura image was deprecated starting September 1, 2025, and was retired on December 4, 2025.
 * [[macOS] Starting August 11, 2025, if your workflow is running on a macOS 15 based image and depends on one of the platform versions (iOS/watchOS/tvOS/visionOS) lower than Xcode 16.3 compatible, they will be broken](https://github.com/actions/runner-images/issues/12541).
 * [[macOS] Xcode 15.4 was removed from macOS15 images on May 29, 2025](https://github.com/actions/runner-images/issues/12195)
