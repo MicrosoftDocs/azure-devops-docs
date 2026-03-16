@@ -6,6 +6,7 @@ ms.custom:
   - devx-track-extended-java
   - devx-track-python
   - sfi-image-nochange
+  - awp-ai
 ms.topic: install-set-up-deploy
 ---
 
@@ -175,7 +176,7 @@ You’ll then be shown a list of the **Page links** and **Work items** affected 
 
 ## VSTS Demo Generator
 
-The [Demo Generator](https://azuredevopsdemogenerator.azurewebsites.net/) helps you create projects on your VSTS account with pre-populated sample content, including source code, work items, iterations, service endpoints, plus build and release definitions based on a template you choose. These projects can be used to follow hands-on-labs, demos, and other educational materials.
+The Demo Generator helps you create projects on your VSTS account with pre-populated sample content, including source code, work items, iterations, service endpoints, plus build and release definitions based on a template you choose. These projects can be used to follow hands-on-labs, demos, and other educational materials.
 
 The latest version offers a simple sign-in, automated installation of extensions, new templates, and support for TFS.
 
