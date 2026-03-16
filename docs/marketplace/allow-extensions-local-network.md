@@ -23,12 +23,15 @@ If you need to keep using these extensions, toggle on the security policy **Allo
 
 ## Enable the policy
 
-To find the specific policy, go to **Organization Settings** > **Policies** and look under the **Security policies** section.
+1. Sign in to your organization (```https://dev.azure.com/{Your_Organization}```).
+2. Select ![gear icon](../media/icons/gear-icon.png) **Organization settings**.
+3. Select **Policies**.
+4. Under **Security policies**, toggle **Allow extensions to access local network resources** to **On**.
+
+   :::image type="content" source="media/toggle-allow-extensions-local-network.png" alt-text="Screenshot showing the allow extensions to access local network resources toggle.":::
 
 > [!NOTE]
 > The policy is **Off** by default. An authorized user must toggle it **On** if needed.
-
-:::image type="content" source="media/toggle-allow-extensions-local-network.png" alt-text="Screenshot showing the allow extensions to access local network resources toggle.":::
 
 ## Related articles
 
