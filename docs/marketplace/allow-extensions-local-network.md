@@ -32,7 +32,7 @@ If you need to keep using these extensions, toggle on the security policy **Allo
 
 [!INCLUDE [prerequisites-pca-only](../includes/prerequisites-pca-only.md)]
 
-## Enable the policy
+## Enable the local network access policy
 
 1. Sign in to your organization (```https://dev.azure.com/{Your_Organization}```).
 2. Select ![gear icon](../media/icons/gear-icon.png) **Organization settings**.
