@@ -71,27 +71,18 @@ You can see the installed software for each macOS hosted agent by choosing the *
 | Image | Classic Editor Agent Specification | YAML VM Image Label | Included software |
 | --- | --- | --- | --- |
 | macOS 15 Sequoia | *macOS-15* | `macOS-latest` OR `macOS-15` | [Link](https://github.com/actions/runner-images/blob/main/images/macos/macos-15-Readme.md) |
-| macOS 15 Sequoia ARM64<br>*limited public preview* | *macOS-15-arm64* | `macOS-15-arm64` | [Link](https://github.com/actions/runner-images/blob/main/images/macos/macos-15-arm64-Readme.md) |
 | macOS 14 Sonoma<br>*[macOS 14 Sonoma hosted image deprecation schedule](./hosted-deprecation-schedule.md?tabs=macos-images#macos-14-sonoma-hosted-image-deprecation-schedule)* | *macOS-14* | `macOS-14` | [Link](https://aka.ms/macOS-14-readme) |
 
-#### macOS 15 ARM64 image limited public preview
+#### macOS 15 ARM64 image limited public preview paused
 
 > [!IMPORTANT]
-> The preview image is intended for testing purposes only and shouldn't be used for production workloads. High request volumes might cause queuing due to limited capacity.
-
-The macOS 15 Sequoia ARM64 Azure Pipelines hosted agent image has following known limitations.
-
-- Mono isn't available on the macOS 15 ARM64 image so the following tasks that depend on Mono won't work:
-
-   - [MSBuild@1](/azure/devops/pipelines/tasks/reference/msbuild-v1) won't work, so use native [.NET on macOS](/dotnet/core/install/macos) instead.
-   - [NuGetCommand@2](/azure/devops/pipelines/tasks/reference/nuget-command-v2) has reduced functionality as Mono and NuGet aren't available for macOS 15 ARM64, so use native [.NET on macOS](/dotnet/core/install/macos) instead.
-- Xamarin [support has ended](https://dotnet.microsoft.com/en-us/platform/support/policy/xamarin) so the following tasks aren't available: `XamariniOS@2` and `XamarinTestCloud@1`.
+> The macOS 15 Sequoia ARM64 limited public preview has been paused. Any Azure DevOps organization currently using it can continue to do so. Look out for this section for further updates on macOS ARM64 image availability.
 
 #### macOS images updates
 
 * [[macOS] Deprecation of simulator runtimes for Xcode 16.3 and older on macOS 15 on January 12th, 2026.](https://github.com/actions/runner-images/issues/13392)
 * The macOS 14 Sonoma image will be deprecated starting July 6, 2026. For more information, see [macOS 14 Sonoma hosted image deprecation schedule](./hosted-deprecation-schedule.md?tabs=macos-images#macos-14-sonoma-hosted-image-deprecation-schedule).
-* The macOS 15 Sequoia ARM64 Azure Pipelines hosted agent image is in preview.
+* The macOS 15 Sequoia ARM64 limited public preview has been paused.
 * The macOS 13 Ventura image was deprecated starting September 1, 2025, and was retired on December 4, 2025.
 * [[macOS] Starting August 11, 2025, if your workflow is running on a macOS 15 based image and depends on one of the platform versions (iOS/watchOS/tvOS/visionOS) lower than Xcode 16.3 compatible, they will be broken](https://github.com/actions/runner-images/issues/12541).
 * [[macOS] Xcode 15.4 was removed from macOS15 images on May 29, 2025](https://github.com/actions/runner-images/issues/12195)
