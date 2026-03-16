@@ -98,6 +98,8 @@ Specify toolsets to restrict the tools available to the MCP server.
 | `pipelines` | Pipeline and build tools (`pipelines_*`) |
 | `wiki` | Wiki tools (`wiki_*`) and `search_wiki` |
 | `work` | Iteration and capacity tools (`work_*`) |
+| `testplan` | Test plan tools (`testplan_*`) |
+| `search` | Search tools (`search_*`) |
 
 ### Read-only tools
 
@@ -139,7 +141,7 @@ Use the `X-MCP-Readonly` header to restrict the server to read-only operations. 
 ## Available tools
 
 > [!NOTE]
-> This list might not always reflect the most recent tool updates. Test plan tools aren't yet available.
+> This list might not always reflect the most recent tool updates.
 
 ### Core tools
 Core tools are always available.
@@ -148,6 +150,16 @@ Core tools are always available.
 |---|---|
 | `core_list_projects` | List projects in an organization |
 | `core_list_project_teams` | List teams in a project |
+
+### Work
+
+| Tool | Description | Read-only |
+|---|---|:---:|
+| `work_list_team_iterations` | List iterations for a team. | ✅ |
+| `work_list_iterations` | List all iterations in a project. | ✅ |
+| `work_get_team_capacity` | Get team capacity for an iteration. | ✅ |
+| `work_create_iterations` | Create iterations. | ❌ |
+| `work_assign_iterations` | Assign iterations to a team. | ❌ |
 
 ### Repos
 
@@ -229,15 +241,27 @@ Core tools are always available.
 | `search_wiki` | Full-text wiki search. | ✅ |
 | `wiki_create_or_update_page` | Create or update a wiki page. | ❌ |
 
-### Work
+### Test plans
 
 | Tool | Description | Read-only |
 |---|---|:---:|
-| `work_list_team_iterations` | List iterations for a team. | ✅ |
-| `work_list_iterations` | List all iterations in a project. | ✅ |
-| `work_get_team_capacity` | Get team capacity for an iteration. | ✅ |
-| `work_create_iterations` | Create iterations. | ❌ |
-| `work_assign_iterations` | Assign iterations to a team. | ❌ |
+| `testplan_list_test_plans` | List test plans in a project. | ✅ |
+| `testplan_list_test_suites` | List test suites in a test plan. | ✅ |
+| `testplan_list_test_cases` | List test cases in a suite. | ✅ |
+| `testplan_show_test_results_from_build_id` | Get test results from a build. | ✅ |
+| `testplan_create_test_plan` | Create a test plan. | ❌ |
+| `testplan_create_test_suite` | Create a test suite. | ❌ |
+| `testplan_create_test_case` | Create a test case. | ❌ |
+| `testplan_update_test_case_steps` | Update test case steps. | ❌ |
+| `testplan_add_test_cases_to_suite` | Add test cases to a suite. | ❌ |
+
+### Search
+
+| Tool | Description | Read-only |
+|---|---|:---:|
+| `search_code` | Full-text code search. | ✅ |
+| `search_wiki` | Full-text wiki search. | ✅ |
+| `search_workitem` | Full-text work item search. | ✅ |
 
 ## Supported environments
 The remote Azure DevOps MCP Server requires your user account and Azure DevOps organization to connect to Microsoft Entra ID.
@@ -248,7 +272,6 @@ Currently supported environments include:
 
 - Visual Studio Code
 - Visual Studio
-- Azure AI Foundry
 
 ### Visual Studio Code
 
@@ -286,23 +309,21 @@ If the AI assistant returns results from your Azure DevOps organization, the rem
 | **No data returned** | Confirm you have appropriate permissions for the project or resources being queried. |
 | **Preview not available** | The preview is rolling out gradually. Check back later or contact your organization administrator. |
 
-For support, you can create an issue in the [local MCP Server](https://github.com/microsoft/azure-devops-mcp/issues) repo. Be sure to use the **Remote** issue template.
+For support, you can create an issue in the [local MCP Server](https://github.com/microsoft/azure-devops-mcp/issues/new?template=remote-mcp-server-issue.md) repo. Be sure to use the **Remote** issue template.
 
 ## FAQ
 
-### How do I add the MCP Server to GitHub Copilot CLI?
+### What about other clients like GitHub Copilot CLI, Claude Desktop, Claude Code, CodeX, or Cursor?
 
-GitHub Copilot CLI requires a **Client ID** when configuring the Azure DevOps MCP Server. This Client ID comes from an application registration in Microsoft Entra ID. The registration represents the client application that authenticates with Azure DevOps through Microsoft Entra.
+Additional client tools such as CodeX, Claude Desktop, Claude Code, and ChatGPT require dynamic registration of an OAuth Client ID in Entra before they can be used with the MCP server. We are working closely with the Entra team to enable this capability. For now, only Visual Studio and Visual Studio Code are supported.
 
-Register an application in Microsoft Entra ID and use the resulting Client ID when configuring the MCP server connection.
+### What services can use Azure DevOps MCP Server?
 
-### What about other clients like Claude Desktop, Claude Code, or Cursor?
-
-To use clients other than Visual Studio or Visual Studio Code, the client must support Microsoft Entra authentication. You also need to register the client application in Microsoft Entra ID so it has a valid Client ID for authentication by using the Azure DevOps MCP Server.
+Support for other services, including Azure AI Foundry, Microsoft 365 Copilot, and Copilot Studio, is not yet available but will be added soon.
 
 ### Does the Azure DevOps MCP Server support AgentId?
 
-The server doesn't support AgentId yet.
+AgentId support is coming soon.
 
 ## Related content
 
