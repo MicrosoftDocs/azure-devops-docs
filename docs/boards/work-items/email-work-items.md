@@ -298,10 +298,10 @@ If you configure the [Azure DevOps MCP Server](../../mcp-server/mcp-server-overv
 
 | Task | Example prompt |
 |------|----------------|
-| **Get details of specific items** | ```copilot-prompt Show me the title, state, and assigned-to for work items #100, #101, and #102 in project <Contoso>``` |
-| **Summarize a sprint** | ```copilot-prompt List all completed work items in Sprint 12 for team <Contoso Team> with their titles and states``` |
-| **Export active bugs** | ```copilot-prompt Show all active bugs in project <Contoso> with priority, assigned-to, and created date``` |
-| **Prepare a status report** | ```copilot-prompt Summarize work items changed this week in area path <Contoso\\Web> grouped by state``` |
+| Get details of specific items | `Show me the title, state, and assigned-to for work items #100, #101, and #102 in project <Contoso>` |
+| Summarize a sprint | `List all completed work items in Sprint 12 for team <Contoso Team> with their titles and states` |
+| Export active bugs | `Show all active bugs in project <Contoso> with priority, assigned-to, and created date` |
+| Prepare a status report | `Summarize work items changed this week in area path <Contoso\\Web> grouped by state` |
 
 > [!NOTE]
 > If you're using Visual Studio Code, [agent mode](/visualstudio/ide/copilot-chat-context#agent-mode) is especially helpful for gathering work item details across multiple queries.

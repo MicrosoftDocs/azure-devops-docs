@@ -54,7 +54,7 @@ Understanding field attributes helps you:
 
 | Category | Requirements |
 |--------------|-------------|
-| **Permissions** | To view the fields defined for an organization or collection: Member of the **Project Collection Valid Users** application group or **View instance-level information** permission set to **Allow** for the organization or collection. |
+| Permissions | To view the fields defined for an organization or collection: Member of the **Project Collection Valid Users** application group or **View instance-level information** permission set to **Allow** for the organization or collection. |
 
 <a id="list-fields"></a> 
 
@@ -842,16 +842,16 @@ If you configure the [Azure DevOps MCP Server](../../mcp-server/mcp-server-overv
 
 | Task | Example prompt |
 |------|----------------|
-| **List fields for a work item type** | ```copilot-prompt Show me all fields available for the Bug work item type in project <Contoso>``` |
-| **Find custom fields** | ```copilot-prompt List all custom fields defined in my organization``` |
-| **Check field usage** | ```copilot-prompt Which work item types use the "Story Points" field in project <Contoso>?``` |
-| **Query by field values** | ```copilot-prompt Show all user stories where Story Points is greater than 8 in <Contoso>``` |
-| **Find empty required fields** | ```copilot-prompt List all active work items in project <Contoso> where the Priority field is empty``` |
-| **Compare field values across types** | ```copilot-prompt Show which fields are shared between Bug and User Story work item types in project <Contoso>``` |
-| **Audit field consistency** | ```copilot-prompt Find all work items in <Contoso> where the Remaining Work field is set but the Original Estimate is blank``` |
-| **Explore picklist values** | ```copilot-prompt What are the allowed values for the Severity field on the Bug work item type in project <Contoso>?``` |
-| **Find rarely used fields** | ```copilot-prompt Which custom fields in project <Contoso> have values set on fewer than 10 work items?``` |
-| **Identify field data issues** | ```copilot-prompt Show work items in <Contoso> where the Closed Date is set but the state is not Done or Closed``` |
+| List fields for a work item type | `Show me all fields available for the Bug work item type in project <Contoso>` |
+| Find custom fields | `List all custom fields defined in my organization` |
+| Check field usage | `Which work item types use the "Story Points" field in project <Contoso>?` |
+| Query by field values | `Show all user stories where Story Points is greater than 8 in <Contoso>` |
+| Find empty required fields | `List all active work items in project <Contoso> where the Priority field is empty` |
+| Compare field values across types | `Show which fields are shared between Bug and User Story work item types in project <Contoso>` |
+| Audit field consistency | `Find all work items in <Contoso> where the Remaining Work field is set but the Original Estimate is blank` |
+| Explore picklist values | `What are the allowed values for the Severity field on the Bug work item type in project <Contoso>?` |
+| Find rarely used fields | `Which custom fields in project <Contoso> have values set on fewer than 10 work items?` |
+| Identify field data issues | `Show work items in <Contoso> where the Closed Date is set but the state is not Done or Closed` |
 
 > [!NOTE]
 > If you're using Visual Studio Code, [agent mode](/visualstudio/ide/copilot-chat-context#agent-mode) is especially helpful for exploring field definitions and attributes.

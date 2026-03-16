@@ -25,10 +25,10 @@ This article shows you how to configure your backlog view options—including ba
 
 | Category | Requirements |
 |--------------|-------------|
-| **Project access** | [Project member](../../organizations/security/add-users-team-project.md). |
-| **Permissions** | Member of the **Contributors** group. |
-| **Access levels** | - To reorder a backlog or use the Forecast tool: At least **Basic** access. Users with **Stakeholder** access can't reorder backlog items or use the Forecast tool. For more information, see [Stakeholder access quick reference](../../organizations/security/stakeholder-access.md). |
-| **Configured backlogs** | Both product and portfolio backlogs set up for your team. |
+| Project access | [Project member](../../organizations/security/add-users-team-project.md). |
+| Permissions | Member of the **Contributors** group. |
+| Access levels | - To reorder a backlog or use the Forecast tool: At least **Basic** access. Users with **Stakeholder** access can't reorder backlog items or use the Forecast tool. For more information, see [Stakeholder access quick reference](../../organizations/security/stakeholder-access.md). |
+| Configured backlogs | Both product and portfolio backlogs set up for your team. |
 
 > [!TIP]
 > You can't sort your backlog directly by clicking on a column header. To view a sorted list, select **Create query** from your backlog. Save and open the query, then modify it to a flat list query if needed to apply sorting to the results. For more information about queries, see [Use the query editor to list and manage queries](../queries/using-queries.md).

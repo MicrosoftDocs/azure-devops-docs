@@ -41,8 +41,8 @@ By default, the **Contributors** group is granted the **Create tag definition** 
 
 | Category | Requirements |
 |----------|--------------|
-| **Permissions** | Member of the [**Project Administrators**](look-up-project-administrators.md) group. If you created the organization or collection, you're automatically a member. |
-| **Directory services** | If you plan to add directory groups, ensure Microsoft Entra ID groups are available and synced to Azure DevOps. For more information, see [Add built-in security groups](add-ad-aad-built-in-security-groups.md). |
+| Permissions | Member of the [**Project Administrators**](look-up-project-administrators.md) group. If you created the organization or collection, you're automatically a member. |
+| Directory services | If you plan to add directory groups, ensure Microsoft Entra ID groups are available and synced to Azure DevOps. For more information, see [Add built-in security groups](add-ad-aad-built-in-security-groups.md). |
 
 > [!NOTE]
 > Users with **Stakeholder** access get limited feature access even if specific permissions are granted. See [Stakeholder access quick reference](stakeholder-access.md).

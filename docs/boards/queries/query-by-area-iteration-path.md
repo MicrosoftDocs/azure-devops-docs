@@ -130,16 +130,16 @@ If you have the [Azure Boards MCP Server](../../mcp-server/mcp-server-overview.m
 
 | Task | Example prompt |
 |------|----------------|
-| Query by area path | ```copilot-prompt List all active bugs under the area path <Contoso>\\Backend and its children``` |
-| Find current iteration items | ```copilot-prompt Find work items assigned to the current iteration for my team``` |
-| Check past iterations | ```copilot-prompt Show user stories in past iterations that are not yet closed``` |
-| Query child area paths | ```copilot-prompt List all tasks under any child area path of <Contoso>\\Frontend``` |
-| Compare velocity across teams | ```copilot-prompt Show the count of completed user stories per area path for the last 3 sprints in <Contoso>``` |
-| Find carryover items | ```copilot-prompt List work items that were in the previous sprint for <Contoso> but are still active in the current sprint``` |
-| Spot unplanned work | ```copilot-prompt Show work items added to the current sprint for <Contoso> after the sprint start date that aren't in any area path under <Contoso\\Planned>``` |
-| Audit area path coverage | ```copilot-prompt List all area paths in <Contoso> that have zero active work items assigned``` |
-| Cross-team sprint comparison | ```copilot-prompt For each area path under <Contoso>, show the count of active vs completed items in the current sprint``` |
-| Plan future sprints | ```copilot-prompt Show all work items in <Contoso> with iteration path set to a future sprint grouped by area path and priority``` |
+| Query by area path | `List all active bugs under the area path <Contoso>\\Backend and its children` |
+| Find current iteration items | `Find work items assigned to the current iteration for my team` |
+| Check past iterations | `Show user stories in past iterations that are not yet closed` |
+| Query child area paths | `List all tasks under any child area path of <Contoso>\\Frontend` |
+| Compare velocity across teams | `Show the count of completed user stories per area path for the last 3 sprints in <Contoso>` |
+| Find carryover items | `List work items that were in the previous sprint for <Contoso> but are still active in the current sprint` |
+| Spot unplanned work | `Show work items added to the current sprint for <Contoso> after the sprint start date that aren't in any area path under <Contoso\\Planned>` |
+| Audit area path coverage | `List all area paths in <Contoso> that have zero active work items assigned` |
+| Cross-team sprint comparison | `For each area path under <Contoso>, show the count of active vs completed items in the current sprint` |
+| Plan future sprints | `Show all work items in <Contoso> with iteration path set to a future sprint grouped by area path and priority` |
 
 > [!NOTE]
 > Agent mode and the MCP Server use natural language, so you can adjust these prompts or ask follow-up questions to refine the results.

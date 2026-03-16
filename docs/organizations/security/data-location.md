@@ -7,7 +7,7 @@ ms.subservice: azure-devops-security
 ms.author: chcomley
 author: chcomley
 ms.reviewer: jominana
-ms.date: 12/15/2023
+ms.date: 03/09/2026
 monikerRange: 'azure-devops'
 ---
 
@@ -34,7 +34,7 @@ By default, your organization uses the closest location. However, you can choose
 
 ## Customer data
 
-Except [as noted later in this article](#transferring-your-data), Azure DevOps maintains all customer data within your selected geographical location. Customer data includes the following data types:
+[As noted later in this article](#transferring-your-data), Azure DevOps maintains all customer data within your selected geographical location. Customer data includes the following data types:
 
 - Source code
 - Work items
@@ -58,7 +58,7 @@ Azure DevOps stores token data, such as personal access tokens and Secure Shell 
 
 ## Allowlist data for tenant policies
 
-We recommend using groups with your tenant policy allowlists. If you use a named user, be aware that a reference to the named user's identity resides in the US, EU, and Southeast Asia (Singapore).
+Use groups with your tenant policy allowlists. If you use a named user, be aware that a reference to the named user's identity resides in the US, EU, and Southeast Asia (Singapore).
 
 ## Transferring your data
 
@@ -76,9 +76,9 @@ If necessary, you can transfer your data by using preview, beta, or other prerel
 Microsoft doesn't control or limit the locations from which you or your users can access your data.
 
 > [!NOTE]
-> Because there's only one region in Brazil, customer data in Brazil is replicated to the South Central US region for disaster recovery and load balancing. For more information, see [Data residency in Azure](https://azure.microsoft.com/global-infrastructure/data-residency/).
+> Because there's only one region in Brazil, Azure DevOps replicates customer data in Brazil to the South Central US region for disaster recovery and load balancing. For more information, see [Data residency in Azure](https://azure.microsoft.com/global-infrastructure/data-residency/).
 
 ## Related content
 
-- [Get started with Azure DevOps](https://go.microsoft.com/fwlink/?LinkId=307137)
+- [Get started with Azure DevOps](../../get-started/index.yml)
 - [Data protection overview](data-protection.md)

@@ -48,9 +48,9 @@ From the **Development** control, you can quickly access branches, pull requests
 
 | Category | Requirements |
 |--------------|-------------|
-| **Project access** | [Project member](../../organizations/security/add-users-team-project.md). |
-| **Permissions** | Member of the **Contributors** or [**Project Administrators**](../../organizations/security/add-users-team-project.md) group. |
-| **Access levels** | - To view or modify work items: **View work items in this node** and **Edit work items in this node** permissions set to **Allow**. By default, the **Contributors** group has this permission set. For more information, see [Set permissions and access for work tracking](../../organizations/security/set-permissions-access-work-tracking.md). |
+| Project access | [Project member](../../organizations/security/add-users-team-project.md). |
+| Permissions | Member of the **Contributors** or [**Project Administrators**](../../organizations/security/add-users-team-project.md) group. |
+| Access levels | - To view or modify work items: **View work items in this node** and **Edit work items in this node** permissions set to **Allow**. By default, the **Contributors** group has this permission set. For more information, see [Set permissions and access for work tracking](../../organizations/security/set-permissions-access-work-tracking.md). |
 |**Access levels**   |To reorder a backlog or use the Forecast tool: At least [**Basic** access](../../organizations/security/access-levels.md). Users with **Stakeholder** access can't reorder backlog items or use the Forecast tool. For more information, see [Stakeholder access quick reference](../../organizations/security/stakeholder-access.md).    |
 
 ::: moniker-end
@@ -59,9 +59,9 @@ From the **Development** control, you can quickly access branches, pull requests
 
 | Category | Requirements |
 |--------------|-------------|
-| **Project access** | [Project member](../../organizations/security/add-users-team-project.md). |
-| **Permissions** | Member of the **Contributors** or [**Project Administrators**](../../organizations/security/add-users-team-project.md) group. |
-| **Access levels** | - To view or modify work items: **View work items in this node** and **Edit work items in this node** permissions set to **Allow**. By default, the **Contributors** group has this permission set. For more information, see [Set permissions and access for work tracking](../../organizations/security/set-permissions-access-work-tracking.md). |
+| Project access | [Project member](../../organizations/security/add-users-team-project.md). |
+| Permissions | Member of the **Contributors** or [**Project Administrators**](../../organizations/security/add-users-team-project.md) group. |
+| Access levels | - To view or modify work items: **View work items in this node** and **Edit work items in this node** permissions set to **Allow**. By default, the **Contributors** group has this permission set. For more information, see [Set permissions and access for work tracking](../../organizations/security/set-permissions-access-work-tracking.md). |
 
 ::: moniker-end
 
@@ -196,10 +196,10 @@ If you have the [Azure Boards MCP Server](../../mcp-server/mcp-server-overview.m
 
 | Task | Example prompt |
 |------|----------------|
-| Link a work item to a PR | ```copilot-prompt Add a pull request link from user story #234 to pull request #567``` |
-| Find linked work items | ```copilot-prompt Show me all work items that have pull request links in the current sprint``` |
-| Check development status | ```copilot-prompt List all user stories in the 'Active' state that don't have any development links``` |
-| View links for a work item | ```copilot-prompt Show me all links for work item #890, including commits and pull requests``` |
+| Link a work item to a PR | `Add a pull request link from user story #234 to pull request #567` |
+| Find linked work items | `Show me all work items that have pull request links in the current sprint` |
+| Check development status | `List all user stories in the 'Active' state that don't have any development links` |
+| View links for a work item | `Show me all links for work item #890, including commits and pull requests` |
 
 > [!NOTE]
 > Agent mode and the MCP Server use natural language, so you can adjust these prompts or ask follow-up questions to refine the results.

@@ -8,8 +8,8 @@ monikerRange: 'azure-devops'
 ms.author: chcomley
 author: chcomley
 ai-usage: ai-assisted
-ms.date: 02/24/2026
-ms.custom: pat-reduction
+ms.date: 03/02/2026
+ms.custom: pat-reduction, copilot-scenario-highlight
 ---
 
 # Fetch work items with queries programmatically 
@@ -17,6 +17,8 @@ ms.custom: pat-reduction
 [!INCLUDE [version-eq-azure-devops](../../includes/version-eq-azure-devops.md)]
 
 Fetching work items using queries is a common scenario in Azure DevOps Services. This article explains how to implement this scenario programmatically using REST APIs or .NET client libraries.
+
+[!INCLUDE [ai-assistance-mcp-server-tip](../../includes/ai-assistance-mcp-server-tip.md)]
 
 ## Prerequisites
 
@@ -37,9 +39,9 @@ This article demonstrates multiple authentication methods to suit different scen
 For production applications with user interaction, use Microsoft Entra ID authentication:
 
 ```xml
-<PackageReference Include="Microsoft.TeamFoundationServer.Client" Version="19.225.1" />
-<PackageReference Include="Microsoft.VisualStudio.Services.InteractiveClient" Version="19.225.1" />
-<PackageReference Include="Microsoft.Identity.Client" Version="4.61.3" />
+<PackageReference Include="Microsoft.TeamFoundationServer.Client" Version="19.232.1" />
+<PackageReference Include="Microsoft.VisualStudio.Services.InteractiveClient" Version="19.232.1" />
+<PackageReference Include="Microsoft.Identity.Client" Version="4.67.2" />
 ```
 
 ### Service principal authentication (recommended for automation)
@@ -47,8 +49,8 @@ For production applications with user interaction, use Microsoft Entra ID authen
 For automated scenarios, CI/CD pipelines, and server applications:
 
 ```xml
-<PackageReference Include="Microsoft.TeamFoundationServer.Client" Version="19.225.1" />
-<PackageReference Include="Microsoft.Identity.Client" Version="4.61.3" />
+<PackageReference Include="Microsoft.TeamFoundationServer.Client" Version="19.232.1" />
+<PackageReference Include="Microsoft.Identity.Client" Version="4.67.2" />
 ```
 
 ### Managed identity authentication (recommended for Azure-hosted apps)
@@ -56,8 +58,8 @@ For automated scenarios, CI/CD pipelines, and server applications:
 For applications running on Azure services (Functions, App Service, etc.):
 
 ```xml
-<PackageReference Include="Microsoft.TeamFoundationServer.Client" Version="19.225.1" />
-<PackageReference Include="Azure.Identity" Version="1.10.4" />
+<PackageReference Include="Microsoft.TeamFoundationServer.Client" Version="19.232.1" />
+<PackageReference Include="Azure.Identity" Version="1.13.1" />
 ```
 
 ### Personal access token authentication
@@ -65,7 +67,7 @@ For applications running on Azure services (Functions, App Service, etc.):
 For development and testing scenarios:
 
 ```xml
-<PackageReference Include="Microsoft.TeamFoundationServer.Client" Version="19.225.1" />
+<PackageReference Include="Microsoft.TeamFoundationServer.Client" Version="19.232.1" />
 ```
 
 ## C# code examples
@@ -73,6 +75,9 @@ For development and testing scenarios:
 The following examples show how to fetch work items using different authentication methods.
 
 ### Example 1: Microsoft Entra ID authentication (interactive)
+
+> [!NOTE]
+> The `VssAadCredential` class used in this example requires the `Microsoft.VisualStudio.Services.InteractiveClient` package and targets .NET Framework. For .NET Core/.NET 5+ applications, use the MSAL-based approach shown in [Example 2 (Service Principal)](#example-2-service-principal-authentication-automated-scenarios) or [Example 3 (Managed Identity)](#example-3-managed-identity-authentication-azure-hosted-apps) with `VssOAuthAccessTokenCredential`.
 
 ```cs
 // NuGet packages:
@@ -115,7 +120,7 @@ public class EntraIdQueryExecutor
             Query = "SELECT [System.Id], [System.Title], [System.State] " +
                     "FROM WorkItems " +
                     "WHERE [Work Item Type] = 'Bug' " +
-                    "AND [System.TeamProject] = '" + project + "' " +
+                    "AND [System.TeamProject] = @project " +
                     "AND [System.State] <> 'Closed' " +
                     "ORDER BY [System.State] ASC, [System.ChangedDate] DESC",
         };
@@ -124,7 +129,7 @@ public class EntraIdQueryExecutor
         {
             try
             {
-                var result = await httpClient.QueryByWiqlAsync(wiql).ConfigureAwait(false);
+                var result = await httpClient.QueryByWiqlAsync(wiql, project).ConfigureAwait(false);
                 var ids = result.WorkItems.Select(item => item.Id).ToArray();
 
                 if (ids.Length == 0)
@@ -218,7 +223,7 @@ public class ServicePrincipalQueryExecutor
             Query = "SELECT [System.Id], [System.Title], [System.State] " +
                     "FROM WorkItems " +
                     "WHERE [Work Item Type] = 'Bug' " +
-                    "AND [System.TeamProject] = '" + project + "' " +
+                    "AND [System.TeamProject] = @project " +
                     "AND [System.State] <> 'Closed' " +
                     "ORDER BY [System.State] ASC, [System.ChangedDate] DESC",
         };
@@ -227,7 +232,7 @@ public class ServicePrincipalQueryExecutor
         {
             try
             {
-                var queryResult = await httpClient.QueryByWiqlAsync(wiql).ConfigureAwait(false);
+                var queryResult = await httpClient.QueryByWiqlAsync(wiql, project).ConfigureAwait(false);
                 var ids = queryResult.WorkItems.Select(item => item.Id).ToArray();
 
                 if (ids.Length == 0)
@@ -294,7 +299,7 @@ public class ManagedIdentityQueryExecutor
             Query = "SELECT [System.Id], [System.Title], [System.State] " +
                     "FROM WorkItems " +
                     "WHERE [Work Item Type] = 'Bug' " +
-                    "AND [System.TeamProject] = '" + project + "' " +
+                    "AND [System.TeamProject] = @project " +
                     "AND [System.State] <> 'Closed' " +
                     "ORDER BY [System.State] ASC, [System.ChangedDate] DESC",
         };
@@ -303,7 +308,7 @@ public class ManagedIdentityQueryExecutor
         {
             try
             {
-                var queryResult = await httpClient.QueryByWiqlAsync(wiql).ConfigureAwait(false);
+                var queryResult = await httpClient.QueryByWiqlAsync(wiql, project).ConfigureAwait(false);
                 var ids = queryResult.WorkItems.Select(item => item.Id).ToArray();
 
                 if (ids.Length == 0)
@@ -366,7 +371,7 @@ public class PatQueryExecutor
             Query = "SELECT [System.Id], [System.Title], [System.State] " +
                     "FROM WorkItems " +
                     "WHERE [Work Item Type] = 'Bug' " +
-                    "AND [System.TeamProject] = '" + project + "' " +
+                    "AND [System.TeamProject] = @project " +
                     "AND [System.State] <> 'Closed' " +
                     "ORDER BY [System.State] ASC, [System.ChangedDate] DESC",
         };
@@ -375,7 +380,7 @@ public class PatQueryExecutor
         {
             try
             {
-                var result = await httpClient.QueryByWiqlAsync(wiql).ConfigureAwait(false);
+                var result = await httpClient.QueryByWiqlAsync(wiql, project).ConfigureAwait(false);
                 var ids = result.WorkItems.Select(item => item.Id).ToArray();
 
                 if (ids.Length == 0)
@@ -442,15 +447,22 @@ class Program
 ```cs
 public class WorkItemQueryFunction
 {
-    [FunctionName("QueryOpenBugs")]
-    public static async Task<IActionResult> Run(
-        [HttpTrigger(AuthorizationLevel.Function, "get")] HttpRequest req,
-        ILogger log)
+    private readonly ILogger<WorkItemQueryFunction> _logger;
+
+    public WorkItemQueryFunction(ILogger<WorkItemQueryFunction> logger)
+    {
+        _logger = logger;
+    }
+
+    [Function("QueryOpenBugs")]
+    public async Task<HttpResponseData> Run(
+        [HttpTrigger(AuthorizationLevel.Function, "get")] HttpRequestData req)
     {
         var executor = new ManagedIdentityQueryExecutor("your-organization-name");
         var workItems = await executor.QueryOpenBugsAsync("your-project-name");
-        
-        return new OkObjectResult(new { 
+
+        var response = req.CreateResponse(System.Net.HttpStatusCode.OK);
+        await response.WriteAsJsonAsync(new { 
             Count = workItems.Count,
             Items = workItems.Select(wi => new { 
                 Id = wi.Id, 
@@ -458,6 +470,7 @@ public class WorkItemQueryFunction
                 State = wi.Fields["System.State"]
             })
         });
+        return response;
     }
 }
 ```
@@ -534,6 +547,24 @@ class Program
 - **Slow queries** - Add appropriate WHERE clauses and limit result sets
 - **Memory usage** - Process large result sets in batches
 - **Rate limiting** - Implement retry logic with exponential backoff
+
+<a id="use-ai-assistance"></a>
+
+## Use AI to query work items programmatically
+
+If you have the [Azure DevOps MCP Server](../../mcp-server/mcp-server-overview.md) connected to your AI agent in agent mode, you can use natural language prompts to generate code for querying work items.
+
+| Task | Example prompt |
+|------|----------------|
+| Generate query code | `Write C# code to query all active bugs assigned to me in Azure DevOps using the .NET client libraries with Microsoft Entra authentication` |
+| REST API query | `Create a REST API call to fetch work items from Azure DevOps using a WIQL query with a personal access token` |
+| Run a saved query | `Show me how to use the Azure DevOps .NET client to run a saved query and retrieve work item details including custom fields` |
+| Export to CSV | `Build a .NET app that fetches work items from Azure DevOps and exports them to CSV using managed identity authentication` |
+| Filter by area path | `Write C# code to query work items under area path <Contoso\Backend> that were modified in the last 7 days` |
+| Paginate large results | `Show me how to query Azure DevOps work items in batches of 200 using the .NET client libraries with proper pagination` |
+
+> [!NOTE]
+> Agent mode and the MCP Server use natural language, so you can adjust these prompts or ask follow-up questions to refine the results.
 
 ## Related content
 

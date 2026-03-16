@@ -1,13 +1,14 @@
 ---
 title: Create your first pipeline
-ms.custom: devx-track-azurecli, py-fresh-zinc
+ms.custom: devx-track-azurecli, py-fresh-zinc, copilot-scenario-highlight
 description: Create your first pipeline in Azure Pipelines, Azure DevOps, & Team Foundation Server
 ms.topic: get-started
 ms.assetid: 038A5329-1B8F-46D9-A0C3-DA3FCFA43996
 ms.author: sdanie
 author: steved0x
-ms.date: 03/31/2025
+ms.date: 03/10/2026
 monikerRange: '<= azure-devops'
+ai-usage: ai-assisted
 ---
 
 # Create your first pipeline
@@ -25,6 +26,8 @@ If you'd like to use Classic pipelines instead, see [Define your Classic pipelin
 ## Prerequisites - Azure DevOps
 
 [!INCLUDE [include](includes/prerequisites.md)]
+
+[!INCLUDE [ai-assistance](../includes/ai-assistance-mcp-server-tip.md)]
 
 ## Create your first pipeline
 
@@ -580,6 +583,57 @@ Now you can see the results of your changes. Go to **Azure Pipelines** and selec
 ::: moniker-end
 
 <a name="next-steps"></a>
+
+<a id="use-ai-assistance"></a>
+
+## Use AI to create your first pipeline
+
+If you configure the [Azure DevOps MCP Server](../mcp-server/mcp-server-overview.md), you can get help creating, understanding, and troubleshooting your first pipeline using natural language.
+
+### Get started
+
+| Task | Example prompt |
+|------|----------------|
+| Create a starter pipeline | `Create a basic pipeline YAML for this repo in project <Contoso>` |
+| Minimal build pipeline | `What's the smallest pipeline that will build this project in <Contoso>?` |
+| Explain pipeline YAML | `Explain each section of this pipeline YAML in <Contoso>` |
+| Choose an agent pool | `Which agent pool should I use for this project in <Contoso>?` |
+| Scaffolding help | `Help me create my first pipeline for this repo in <Contoso>` |
+
+### Verify permissions and access
+
+| Task | Example prompt |
+|------|----------------|
+| Check repo access | `Can this pipeline access the repo in project <Contoso>?` |
+| Verify build service permissions | `Does the build service have permission to run pipelines in project <Contoso>?` |
+| Artifact publishing access | `Will this pipeline be able to publish artifacts in <Contoso>?` |
+| Agent requirements | `Does this repo require a Microsoft-hosted or self-hosted agent in <Contoso>?` |
+| OS selection | `What OS should the pipeline run on for this project in <Contoso>?` |
+
+### Troubleshoot first-run failures
+
+| Task | Example prompt |
+|------|----------------|
+| Debug a first-run failure | `Why did my first pipeline fail in project <Contoso>?` |
+| Explain an error | `Explain this pipeline error in plain English for project <Contoso>` |
+| Identify the failing step | `What step failed and why in the latest run for <Contoso>?` |
+| Permission error help | `Why would a new pipeline fail with a permission error in <Contoso>?` |
+| Targeted fix | `How do I fix this error without changing the entire pipeline in <Contoso>?` |
+
+### Optimize and extend
+
+| Task | Example prompt |
+|------|----------------|
+| Production readiness | `What's missing from this pipeline for a production repo in <Contoso>?` |
+| PR validation | `Should I add PR validation to this pipeline in <Contoso>?` |
+| Security scans | `What security scans are recommended for first pipelines in <Contoso>?` |
+| Common next steps | `What steps are commonly added after the initial pipeline in <Contoso>?` |
+| Trigger recommendations | `What triggers should I use for my first pipeline in <Contoso>?` |
+| Agent capabilities | `Do we already have custom agent capabilities this pipeline needs in <Contoso>?` |
+| Suggest improvements | `Suggest improvements to this pipeline in <Contoso>` |
+
+> [!TIP]
+> If you're using Visual Studio Code, [agent mode](/visualstudio/ide/copilot-chat-context#agent-mode) is especially helpful for scaffolding new pipelines and troubleshooting first-run failures.
 
 ## Next steps
 

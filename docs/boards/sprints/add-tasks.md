@@ -215,16 +215,16 @@ If you have the [Azure Boards MCP Server](../../mcp-server/mcp-server-overview.m
 
 | Task | Example prompt |
 |------|----------------|
-| Add tasks to a user story | ```copilot-prompt Add three tasks (Design, Implement, Test) to user story #1234 and set remaining work to 4 hours each``` |
-| Create tasks in bulk | ```copilot-prompt For each active user story in Sprint 12, add a Code Review task assigned to <me> with 2 hours remaining work``` |
-| List sprint tasks | ```copilot-prompt List all tasks in Sprint 12 for <Contoso Team> grouped by parent work item``` |
-| Update task estimates | ```copilot-prompt Set remaining work to 0 for all completed tasks in Sprint 11 in project <Contoso>``` |
-| Identify missing tasks | ```copilot-prompt Which user stories in Sprint 12 have no child tasks yet? List them so I can add tasks``` |
-| Rebalance task assignments | ```copilot-prompt Show total remaining work per team member in Sprint 12 and suggest which tasks to reassign to balance the load``` |
-| Find overloaded stories | ```copilot-prompt List user stories in the current sprint where total child task hours exceed 16 hours``` |
-| Track incomplete tasks from last sprint | ```copilot-prompt Find all tasks in Sprint 11 that are still active or in progress and move them to Sprint 12``` |
-| Generate a task breakdown | ```copilot-prompt Break user story #2045 into tasks for front-end, back-end, unit testing, and documentation with 4-hour estimates each``` |
-| Audit task completion | ```copilot-prompt Show me tasks in Sprint 12 where the state is Active but remaining work is 0, so I can verify if they should be closed``` |
+| Add tasks to a user story | `Add three tasks (Design, Implement, Test) to user story #1234 and set remaining work to 4 hours each` |
+| Create tasks in bulk | `For each active user story in Sprint 12, add a Code Review task assigned to <me> with 2 hours remaining work` |
+| List sprint tasks | `List all tasks in Sprint 12 for <Contoso Team> grouped by parent work item` |
+| Update task estimates | `Set remaining work to 0 for all completed tasks in Sprint 11 in project <Contoso>` |
+| Identify missing tasks | `Which user stories in Sprint 12 have no child tasks yet? List them so I can add tasks` |
+| Rebalance task assignments | `Show total remaining work per team member in Sprint 12 and suggest which tasks to reassign to balance the load` |
+| Find overloaded stories | `List user stories in the current sprint where total child task hours exceed 16 hours` |
+| Track incomplete tasks from last sprint | `Find all tasks in Sprint 11 that are still active or in progress and move them to Sprint 12` |
+| Generate a task breakdown | `Break user story #2045 into tasks for front-end, back-end, unit testing, and documentation with 4-hour estimates each` |
+| Audit task completion | `Show me tasks in Sprint 12 where the state is Active but remaining work is 0, so I can verify if they should be closed` |
 
 > [!NOTE]
 > Agent mode and the MCP Server use natural language, so you can adjust these prompts or ask follow-up questions to refine the results.

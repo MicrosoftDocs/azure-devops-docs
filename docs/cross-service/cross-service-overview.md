@@ -9,7 +9,7 @@ ms.topic: overview
 ms.author: chcomley
 author: chcomley
 monikerRange: '<= azure-devops'
-ms.date: 02/17/2026
+ms.date: 03/02/2026
 ---
  
 
@@ -19,9 +19,7 @@ ms.date: 02/17/2026
 
 With Azure DevOps, you can connect to and collaborate across its core services. You can use various features to link and track your devops tasks across Azure Boards, Azure Repos, Azure Pipelines, and Azure Test Plans. This article shows you options for how to use the cross-service integration of Azure DevOps to improve your workflow and productivity.
 
-Links to more information:
-- [Power Automate, Azure DevOps](https://powerautomate.microsoft.com/connectors/details/shared_visualstudioteamservices/azure-devops/)
-- [Power Automate templates for Azure DevOps](https://powerautomate.microsoft.com/connectors/details/shared_visualstudioteamservices/azure-devops/)
+For information about automating workflows, see [Power Automate, Azure DevOps](https://powerautomate.microsoft.com/connectors/details/shared_visualstudioteamservices/azure-devops/).
 
 [!INCLUDE [ai-assistance-callout](../includes/ai-assistance-callout.md)]
 
@@ -62,120 +60,26 @@ The following table summarizes the integration points between Azure Boards and A
 
 :::image type="content" source="media/overview/concept-link-types-pipelines.png" alt-text="Conceptual image of link types that link work items to Azure Pipelines objects.":::
 
-:::row:::
-   :::column span="1":::
-      **Feature**
-   :::column-end::: 
-   :::column span="2":::
-      **Description**
-   :::column-end:::
-:::row-end:::
----
-:::row:::
-   :::column span="1":::
-      Manually link work items to builds.
-   :::column-end::: 
-   :::column span="2":::
-      ::: moniker range="<=azure-devops"
-      Link work items to builds in the same or other project within the organization or collection.
-      ::: moniker-end
-      
-   :::column-end:::
-:::row-end:::
-:::row:::
-   :::column span="1":::
-      Set integration option to automatically create *Integrated in build* links to work items linked to a branch, commit, or pull request associated with a pipeline.
-   :::column-end::: 
-   :::column span="2":::
-      Required to populate the **Development** control with *Integrated in build* links. The work items or commits that are part of a release are computed from the versions of artifacts. For example, each build in Azure Pipelines is associated with a set of work items and commits. For more information, see [Configure pipelines to support integration](../pipelines/integrations/configure-pipelines-work-tracking.md).  
-   :::column-end:::
-:::row-end:::
---- 
-::: moniker range="azure-devops"
-:::row:::
-   :::column span="1":::
-      To link work items to builds and releases, choose an option and a branch for a Classic or YAML pipeline. This action creates *Integrated in build* and *Integrated in release stage* links for work items that are linked to a branch, commit, or pull request. 
-   :::column-end::: 
-   :::column span="2":::
-      Required to populate the work item form **Development** control with *Integrated in build* links and the **Deployment** control with *Integrated in release stage* links when running a Classic or YAML pipeline. For more information, see [Configure pipelines to support integration](../pipelines/integrations/configure-pipelines-work-tracking.md). 
-   :::column-end:::
-:::row-end:::
---- 
-::: moniker-end
-::: moniker range="<=azure-devops"
-:::row:::
-   :::column span="1":::
-      Set integration option to automatically create *Integrated in release stage* links to work items linked to a branch, commit, or pull request associated with a release.
-   :::column-end::: 
-   :::column span="2":::
-      Required to populate **Deployment** control in work item form with **Integrated in release stage** links. For more information, see [Release pipelines, How do I integrate and report release status?](../pipelines/release/index.md). 
-   :::column-end:::
-:::row-end:::
---- 
-::: moniker-end
+| **Feature** | **Description** |
+|-------------|-----------------|
+| Manually link work items to builds | Link work items to builds in the same or other project within the organization or collection. |
+| Automatically create *Integrated in build* links | Set the integration option to automatically create links to work items linked to a branch, commit, or pull request associated with a pipeline. Required to populate the **Development** control with *Integrated in build* links. For more information, see [Configure pipelines to support integration](../pipelines/integrations/configure-pipelines-work-tracking.md). |
+| Automatically create *Integrated in release stage* links | Set the integration option to automatically create links to work items linked to a branch, commit, or pull request associated with a release. Required to populate the **Deployment** control with **Integrated in release stage** links. For more information, see [Release pipelines, How do I integrate and report release status?](../pipelines/release/index.md). |
+| View linked build or release objects | You can [link work items to builds and releases](../organizations/notifications/add-links-to-work-items.md#view-list-links)&mdash;providing an audit trail of feature development and deployment. |
+| Query for external links | You can [query for work items that contain external links](../boards/queries/linking-attachments.md). |
+| View release stages linked to a work item | The **Deployment** control on the work item form shows the stages that the work item is linked to. You can see the status of runs and open each stage or run by expanding a stage. For more information, see [Link and view work items to deployments](../boards/backlogs/add-link.md#link-work-items-to-deployments). |
+| Query Work Items task | Use this task to ensure the number of matching items returned by a work item query is within the configured thresholds. For more information, see [Query Work Items task, Control deployments with gates and approvals](/azure/devops/pipelines/tasks/reference/query-work-items-v0). |
 
 ::: moniker range="azure-devops"
-:::row:::
-   :::column span="1":::
-      View and open list of work items linked to a Classic or YAML pipeline. 
-   :::column-end::: 
-   :::column span="2":::
-      Lists all work items linked to a release since the previous selected release. Can sort the list by each column.  
-   :::column-end:::
-:::row-end:::
---- 
-::: moniker-end
-:::row:::
-   :::column span="1":::
-      View list of build or release objects a single work item is linked to 
-   :::column-end::: 
-   :::column span="2":::
-      You can [link work items to builds and releases](../organizations/notifications/add-links-to-work-items.md#view-list-links)&mdash;providing an audit trail of the feature development and deployment.
-   :::column-end:::
-:::row-end:::
---- 
-:::row:::
-   :::column span="1":::
-      Query for external links.
-   :::column-end::: 
-   :::column span="2":::
-      You can [query for work items that contain external links](../boards/queries/linking-attachments.md).
-   :::column-end:::
-:::row-end:::
---- 
-::: moniker range="<=azure-devops"
-:::row:::
-   :::column span="1":::
-      View and quickly navigate to release stages a work item is linked to.
-   :::column-end::: 
-   :::column span="2":::
-      The **Deployment** control on the work item form shows the stages that the work item is linked to. You can see the status of some runs and open each stage or run by expanding a stage. For more information, see [Link and view work items to deployments](../boards/backlogs/add-link.md#link-work-items-to-deployments).  
-   :::column-end:::
-:::row-end:::
----  
-::: moniker-end
 
-::: moniker range="azure-devops"
-:::row:::
-   :::column span="1":::
-      Create a work item on failure (Classic or YAML), optionally set values for a work item field (Classic)
-   :::column-end::: 
-   :::column span="2":::
-      Automatically create a work item and set fields when a build fails. For more information, see [Build options](../pipelines/build/options.md) for Classic pipelines, and [Customize pipelines, Create work item on failure](../pipelines/customize-pipeline.md#create-work-item-on-failure).  
-   :::column-end:::
-:::row-end:::
----
-::: moniker-end
-::: moniker range="<=azure-devops"
-:::row:::
-   :::column span="1":::
-      Query Work Items task. Ensure the number of matching work items returned from a query is within a threshold.
-   :::column-end::: 
-   :::column span="2":::
-       Use this task to ensure the number of matching items returned by a work item query is within the configured thresholds. For more information, see [Query Work Items task, Control deployments with gates and approvals](/azure/devops/pipelines/tasks/reference/query-work-items-v0).  
-   :::column-end:::
-:::row-end:::
---- 
+The following features are available only with Azure DevOps Services:
+
+| **Feature** | **Description** |
+|-------------|-----------------|
+| Link work items via Classic or YAML pipelines | Choose an option and a branch for a Classic or YAML pipeline to create *Integrated in build* and *Integrated in release stage* links for work items linked to a branch, commit, or pull request. For more information, see [Configure pipelines to support integration](../pipelines/integrations/configure-pipelines-work-tracking.md). |
+| View work items linked to a pipeline | Lists all work items linked to a release since the previous selected release. You can sort the list by each column. |
+| Create a work item on build failure | Automatically create a work item and set fields when a build fails. For more information, see [Build options](../pipelines/build/options.md) for Classic pipelines, and [Customize pipelines, Create work item on failure](../pipelines/customize-pipeline.md#create-work-item-on-failure). |
+
 ::: moniker-end
 
 ## Azure Repos and Azure Pipelines integration
@@ -280,10 +184,7 @@ Analytics provides the reporting platform for Azure DevOps. For information, see
 
 ## Automation and connectors
 
-Microsoft products support automation or integration with several other applications and services. For more information, see the following articles. 
-
-- [Power Automate, Azure DevOps](https://powerautomate.microsoft.com/connectors/details/shared_visualstudioteamservices/azure-devops/)
-- [Power Automate templates for Azure DevOps](https://powerautomate.microsoft.com/connectors/details/shared_visualstudioteamservices/azure-devops/)
+Microsoft products support automation or integration with several other applications and services. For more information, see [Power Automate, Azure DevOps](https://powerautomate.microsoft.com/connectors/details/shared_visualstudioteamservices/azure-devops/).
  
 ## Related content
 

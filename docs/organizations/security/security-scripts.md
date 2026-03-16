@@ -28,11 +28,11 @@ These scripts are examples provided for convenience. Review them, test in a nonp
 
 | Category | Description |
 |---|---|
-| **Azure DevOps** | - An Azure DevOps organization and project. [Create one for free](../../user-guide/sign-up-invite-teammates.md).<br>- **Permissions:** Organization Owner or Project Collection Administrator for organization-level scripts; Project Administrator for project-level operations |
-| **Authentication** | Microsoft Entra ID tokens. Scripts acquire tokens via Azure CLI: `az account get-access-token --resource 499b84ac-1321-427f-aa17-267ca6975798`. Ensure you're logged in with `az login` |
-| **Tools** | - Azure CLI (`az`) and PowerShell (`pwsh`) required<br>- Scripts written for PowerShell 7+; adapt for Windows PowerShell<br>- Azure PowerShell module (`Install-Module -Name Az`) for some scripts |
-| **Safety** | - Test in nonproduction organization first<br>- Reassign or close active work before removing users<br>- Review project visibility prerequisites before making projects public<br>- Keep audit trail of automated changes |
-| **Security** | - Store credentials and tokens securely (Key Vault or pipeline secret variables)<br>- Revoke tokens/service principals after bulk operations if credential rotation needed |
+| Azure DevOps | - An Azure DevOps organization and project. [Create one for free](../../user-guide/sign-up-invite-teammates.md).<br>- **Permissions:** Organization Owner or Project Collection Administrator for organization-level scripts; Project Administrator for project-level operations |
+| Authentication | Microsoft Entra ID tokens. Scripts acquire tokens via Azure CLI: `az account get-access-token --resource 499b84ac-1321-427f-aa17-267ca6975798`. Ensure you're logged in with `az login` |
+| Tools | - Azure CLI (`az`) and PowerShell (`pwsh`) required<br>- Scripts written for PowerShell 7+; adapt for Windows PowerShell<br>- Azure PowerShell module (`Install-Module -Name Az`) for some scripts |
+| Safety | - Test in nonproduction organization first<br>- Reassign or close active work before removing users<br>- Review project visibility prerequisites before making projects public<br>- Keep audit trail of automated changes |
+| Security | - Store credentials and tokens securely (Key Vault or pipeline secret variables)<br>- Revoke tokens/service principals after bulk operations if credential rotation needed |
 
 ## Get started
 

@@ -1,78 +1,78 @@
-- name: Troubleshooting & FAQs
+- name: Troubleshooting and FAQs
   href: index.yml
-- name: Connections, access, and accounts
-  items:
-    - name: Troubleshoot connection and access issues
-      href: ../user-guide/troubleshoot-connection.md?toc=/azure/devops/troubleshoot/toc.json
-    - name: Troubleshoot access and permission issues
-      href: ../organizations/security/troubleshoot-permissions.md?toc=/azure/devops/troubleshoot/toc.json
-    - name: Microsoft Entra access FAQs
-      href: ../organizations/accounts/faq-azure-access.yml?toc=/azure/devops/troubleshoot/toc.json
-    - name: User and permissions management FAQs
-      href: ../organizations/accounts/faq-user-and-permissions-management.yml?toc=/azure/devops/troubleshoot/toc.json
-    - name: Visual Studio setup FAQs
-      href: ../organizations/accounts/faq-set-up-vs.yml?toc=/azure/devops/troubleshoot/toc.json
 - name: Azure Boards
   items:
-    - name: Azure Boards FAQs
+    - name: Azure Boards
       href: ../boards/faqs.yml?toc=/azure/devops/troubleshoot/toc.json
-    - name: Azure Boards with Office FAQs
+    - name: Azure Boards with Office
       href: ../boards/backlogs/office/faqs.yml?toc=/azure/devops/troubleshoot/toc.json
-    - name: Delivery Plans FAQs
+    - name: Delivery Plans
       href: ../boards/plans/faqs.yml?toc=/azure/devops/troubleshoot/toc.json
-    - name: Work item query FAQs
+    - name: Work item queries
       href: ../boards/queries/query-faqs.yml?toc=/azure/devops/troubleshoot/toc.json
 - name: Azure Pipelines
   items:
-    - name: Troubleshoot pipeline runs
+    - name: Pipeline runs
       href: ../pipelines/troubleshooting/troubleshooting.md?toc=/azure/devops/troubleshoot/toc.json
-    - name: Troubleshoot pipeline failure to start
+    - name: Pipeline failure to start
       href: ../pipelines/troubleshooting/troubleshoot-start.md?toc=/azure/devops/troubleshoot/toc.json
-    - name: Troubleshoot pipeline triggers
+    - name: Pipeline triggers
       href: ../pipelines/troubleshooting/troubleshoot-triggers.md?toc=/azure/devops/troubleshoot/toc.json
-    - name: Troubleshoot workload identity service connections
+    - name: Workload identity service connections
       href: ../pipelines/release/troubleshoot-workload-identity.md?toc=/azure/devops/troubleshoot/toc.json
-    - name: Troubleshoot Azure Web App deployment
+    - name: Azure Web App deployment
       href: ../pipelines/troubleshooting/troubleshoot-azure-web-app-deploy.md?toc=/azure/devops/troubleshoot/toc.json
 - name: Azure Repos
   items:
-    - name: Troubleshoot code scanning (GitHub Advanced Security)
+    - name: Code scanning
       href: ../repos/security/github-advanced-security-code-scanning-troubleshoot.md?toc=/azure/devops/troubleshoot/toc.json
-    - name: Troubleshoot dependency scanning (GitHub Advanced Security)
+    - name: Dependency scanning
       href: ../repos/security/github-advanced-security-dependency-scanning-troubleshoot.md?toc=/azure/devops/troubleshoot/toc.json
-    - name: Troubleshoot secret scanning (GitHub Advanced Security)
+    - name: Secret scanning
       href: ../repos/security/github-advanced-security-secret-scanning-troubleshoot.md?toc=/azure/devops/troubleshoot/toc.json
-    - name: Git FAQs
+    - name: Git
       href: ../repos/git/howto.yml?toc=/azure/devops/troubleshoot/toc.json
-- name: Notifications
-  items:
-    - name: Troubleshoot not receiving notification emails
-      href: ../organizations/notifications/troubleshoot-not-getting-email.md?toc=/azure/devops/troubleshoot/toc.json
-    - name: Troubleshoot delayed notification emails
-      href: ../organizations/notifications/troubleshoot-delayed-email.md?toc=/azure/devops/troubleshoot/toc.json
-    - name: Troubleshoot unexpected notification emails
-      href: ../organizations/notifications/troubleshoot-unexpected-email.md?toc=/azure/devops/troubleshoot/toc.json
-    - name: Notifications FAQs
-      href: ../organizations/notifications/faq-notifications.yml?toc=/azure/devops/troubleshoot/toc.json
-- name: Organizations and settings
-  items:
-    - name: Organization configuration FAQs
-      href: ../organizations/accounts/faq-configure-customize-organization.yml?toc=/azure/devops/troubleshoot/toc.json
-    - name: Billing FAQs
-      href: ../organizations/billing/billing-faq.yml?toc=/azure/devops/troubleshoot/toc.json
-    - name: Process customization FAQs
-      href: ../organizations/settings/work/faqs.yml?toc=/azure/devops/troubleshoot/toc.json
-    - name: Cross-project FAQs
-      href: ../project/work-across-projects-faqs.yml?toc=/azure/devops/troubleshoot/toc.json
 - name: Azure Test Plans
   items:
-    - name: Test Plans FAQs
+    - name: FAQs
       href: ../test/reference-qa.yml?toc=/azure/devops/troubleshoot/toc.json
+- name: Connections, access, and accounts
+  items:
+    - name: Connection and access issues
+      href: ../user-guide/troubleshoot-connection.md?toc=/azure/devops/troubleshoot/toc.json
+    - name: Access and permission issues
+      href: ../organizations/security/troubleshoot-permissions.md?toc=/azure/devops/troubleshoot/toc.json
+    - name: Microsoft Entra access
+      href: ../organizations/accounts/faq-azure-access.yml?toc=/azure/devops/troubleshoot/toc.json
+    - name: User and permissions management
+      href: ../organizations/accounts/faq-user-and-permissions-management.yml?toc=/azure/devops/troubleshoot/toc.json
+    - name: Visual Studio setup
+      href: ../organizations/accounts/faq-set-up-vs.yml?toc=/azure/devops/troubleshoot/toc.json
+- name: Organizations and settings
+  items:
+    - name: Organization configuration
+      href: ../organizations/accounts/faq-configure-customize-organization.yml?toc=/azure/devops/troubleshoot/toc.json
+    - name: Billing
+      href: ../organizations/billing/billing-faq.yml?toc=/azure/devops/troubleshoot/toc.json
+    - name: Process customization
+      href: ../organizations/settings/work/faqs.yml?toc=/azure/devops/troubleshoot/toc.json
+    - name: Cross-project
+      href: ../project/work-across-projects-faqs.yml?toc=/azure/devops/troubleshoot/toc.json
+- name: Notifications
+  items:
+    - name: Not receiving emails
+      href: ../organizations/notifications/troubleshoot-not-getting-email.md?toc=/azure/devops/troubleshoot/toc.json
+    - name: Delayed emails
+      href: ../organizations/notifications/troubleshoot-delayed-email.md?toc=/azure/devops/troubleshoot/toc.json
+    - name: Unexpected emails
+      href: ../organizations/notifications/troubleshoot-unexpected-email.md?toc=/azure/devops/troubleshoot/toc.json
+    - name: FAQs
+      href: ../organizations/notifications/faq-notifications.yml?toc=/azure/devops/troubleshoot/toc.json
 - name: Reporting and Analytics
   items:
-    - name: Troubleshoot Analytics views
+    - name: Analytics views
       href: ../report/powerbi/troubleshooting-views.md?toc=/azure/devops/troubleshoot/toc.json
-    - name: Dashboards FAQs
+    - name: Dashboards
       href: ../report/dashboards/faqs.yml?toc=/azure/devops/troubleshoot/toc.json
 - name: Migration
   items:
@@ -80,13 +80,13 @@
       href: ../migrate/migration-troubleshooting.md?toc=/azure/devops/troubleshoot/toc.json
 - name: Managed DevOps Pools
   items:
-    - name: Troubleshoot Managed DevOps Pools
+    - name: Troubleshooting
       href: ../managed-devops-pools/troubleshooting.md?toc=/azure/devops/troubleshoot/toc.json
-    - name: Managed DevOps Pools FAQs
+    - name: FAQs
       href: ../managed-devops-pools/faq.md?toc=/azure/devops/troubleshoot/toc.json
 - name: CLI and service hooks
   items:
-    - name: Troubleshoot Azure DevOps CLI
+    - name: Azure DevOps CLI
       href: ../cli/troubleshooting.md?toc=/azure/devops/troubleshoot/toc.json
-    - name: Troubleshoot service hook integrations
+    - name: Service hook integrations
       href: ../service-hooks/troubleshoot.md?toc=/azure/devops/troubleshoot/toc.json

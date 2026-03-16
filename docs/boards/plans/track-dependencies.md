@@ -30,10 +30,10 @@ Cards display dependency status icons:
 
 | Requirement | Description |
 |-------------|-------------|
-| **Access** | Member of the **Project Collection Valid Users** group or **Stakeholder** access |
-| **Permissions** | **Edit work items in this node** permission set to **Allow** for relevant Area Paths |
-| **Configuration** | [Delivery Plan created](add-edit-delivery-plan.md) with teams and backlogs configured |
-| **Dependencies** | Work items [linked using Predecessor-Successor link type](../backlogs/add-link.md#link-several-work-items) |
+| Access | Member of the **Project Collection Valid Users** group or **Stakeholder** access |
+| Permissions | **Edit work items in this node** permission set to **Allow** for relevant Area Paths |
+| Configuration | [Delivery Plan created](add-edit-delivery-plan.md) with teams and backlogs configured |
+| Dependencies | Work items [linked using Predecessor-Successor link type](../backlogs/add-link.md#link-several-work-items) |
 
 For complete setup requirements, see [Add or edit a Delivery Plan](add-edit-delivery-plan.md#prerequisites).
 
@@ -102,10 +102,10 @@ If you have the [Azure Boards MCP Server](../../mcp-server/mcp-server-overview.m
 
 | Task | Example prompt |
 |------|----------------|
-| Add a dependency link | ```copilot-prompt Add a predecessor link from user story #456 to user story #123``` |
-| Find blocking items | ```copilot-prompt Show all work items that have successor links and are still in progress``` |
-| View dependencies for a team | ```copilot-prompt List all predecessor-successor links for work items assigned to the API team``` |
-| Check for conflicts | ```copilot-prompt Find work items with predecessor links where the predecessor is scheduled after the successor``` |
+| Add a dependency link | `Add a predecessor link from user story #456 to user story #123` |
+| Find blocking items | `Show all work items that have successor links and are still in progress` |
+| View dependencies for a team | `List all predecessor-successor links for work items assigned to the API team` |
+| Check for conflicts | `Find work items with predecessor links where the predecessor is scheduled after the successor` |
 
 > [!NOTE]
 > Agent mode and the MCP Server use natural language, so you can adjust these prompts or ask follow-up questions to refine the results.

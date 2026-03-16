@@ -23,8 +23,8 @@ In this article, learn how to link work items to GitHub commits, pull requests, 
 
 | Category | Requirements |
 |--------------|-------------|
-| **Permissions** | **Contributor** to both the Azure Boards project and the GitHub repository. |
-| **Project connection** | Azure Boards project is connected to the GitHub repository where the commits, pull requests, and branch you want to link to or from exist. For more information, see [Azure Boards-GitHub integration](index.md). |
+| Permissions | **Contributor** to both the Azure Boards project and the GitHub repository. |
+| Project connection | Azure Boards project is connected to the GitHub repository where the commits, pull requests, and branch you want to link to or from exist. For more information, see [Azure Boards-GitHub integration](index.md). |
 
 ::: moniker range="azure-devops"
 > [!NOTE]   
@@ -116,7 +116,7 @@ Several events automatically update the links on the work item form, so you don'
 
 | GitHub event       | Action |
 | :----------------- | :----------------------------------------------------------- |
-| **Link to branch** | When a pull request is created from a branch, it automatically links to the work item. |
+| Link to branch | When a pull request is created from a branch, it automatically links to the work item. |
 | **Merge commit**   | After the pull request is merged, the resulting merge commit automatically links to the work item. |
 | **Delete branch**  | If the branch is deleted (typically after merging), its link is automatically removed from the work item. |
 

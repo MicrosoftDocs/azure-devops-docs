@@ -23,7 +23,7 @@ For an overview of the integration that the Azure Boards app for GitHub supports
 
 | Category | Requirements |
 |--------------|-------------|
-| **Permissions** | - Member of the [**Project Collection Administrators** group](../../organizations/security/change-organization-collection-level-permissions.md). If you created the project, you have permissions.<br> - **Administrator** or **owner** of the GitHub organization for installing the Azure Boards app. <br> - **Read** permissions for the GitHub repository. |
+| Permissions | - Member of the [**Project Collection Administrators** group](../../organizations/security/change-organization-collection-level-permissions.md). If you created the project, you have permissions.<br> - **Administrator** or **owner** of the GitHub organization for installing the Azure Boards app. <br> - **Read** permissions for the GitHub repository. |
 | **Project membership**|  [Project member](../../organizations/projects/create-project.md). |
 
 > [!IMPORTANT]  

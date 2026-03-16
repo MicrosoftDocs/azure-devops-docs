@@ -1,0 +1,10 @@
+{
+  "$schema": "./resources/dockit-custom.config.schema.json",
+  "product_name": "Azure DevOps",
+  "product_name_full": "Azure DevOps",
+  "docs_repo_owner": "MicrosoftDocs",
+  "docs_repo_name": "azure-devops-docs-pr",
+  "docs_path_prefix": "docs/",
+  "remove_skills": ["moniker-filtering", "infrastructure-as-code"],
+  "remove_prompts": ["filter-moniker-content"]
+}

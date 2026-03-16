@@ -123,16 +123,16 @@ If you have the [Azure Boards MCP Server](../../mcp-server/mcp-server-overview.m
 
 | Task | Example prompt |
 |------|----------------|
-| Create an impediment | ```copilot-prompt Create a new impediment titled 'Test environment unavailable' with priority 1 and assign it to <me>``` |
-| List active impediments | ```copilot-prompt List all active impediments in the current sprint for my team``` |
-| Create an issue | ```copilot-prompt Create an issue to track the decision about the API versioning strategy and assign it to <Jamal>``` |
-| Resolve an impediment | ```copilot-prompt Update impediment 456 to the Resolved state and add a comment that the environment issue is fixed``` |
-| Find recurring blockers | ```copilot-prompt Show impediments in <Contoso> that were created in the last 3 sprints with similar titles or tags``` |
-| Track impediment age | ```copilot-prompt List active impediments in <Contoso> sorted by how long they've been open``` |
-| Link impediment to blocked items | ```copilot-prompt Show all work items in the current sprint for <Contoso> that are linked to active impediments``` |
-| Escalate unresolved issues | ```copilot-prompt List issues in <Contoso> with priority 1 that have been active for more than 7 days``` |
-| Categorize impediments | ```copilot-prompt Show active impediments in <Contoso> grouped by tag``` |
-| Sprint retrospective prep | ```copilot-prompt List all impediments that were resolved during the current sprint in <Contoso> with their resolution comments``` |
+| Create an impediment | `Create a new impediment titled 'Test environment unavailable' with priority 1 and assign it to <me>` |
+| List active impediments | `List all active impediments in the current sprint for my team` |
+| Create an issue | `Create an issue to track the decision about the API versioning strategy and assign it to <Jamal>` |
+| Resolve an impediment | `Update impediment 456 to the Resolved state and add a comment that the environment issue is fixed` |
+| Find recurring blockers | `Show impediments in <Contoso> that were created in the last 3 sprints with similar titles or tags` |
+| Track impediment age | `List active impediments in <Contoso> sorted by how long they've been open` |
+| Link impediment to blocked items | `Show all work items in the current sprint for <Contoso> that are linked to active impediments` |
+| Escalate unresolved issues | `List issues in <Contoso> with priority 1 that have been active for more than 7 days` |
+| Categorize impediments | `Show active impediments in <Contoso> grouped by tag` |
+| Sprint retrospective prep | `List all impediments that were resolved during the current sprint in <Contoso> with their resolution comments` |
 
 > [!NOTE]
 > Agent mode and the MCP Server use natural language, so you can adjust these prompts or ask follow-up questions to refine the results.

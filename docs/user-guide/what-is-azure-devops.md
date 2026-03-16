@@ -1,7 +1,7 @@
 ---
 title: What is Azure DevOps?
 titleSuffix: Azure DevOps
-ms.custom: engagement-fy23, UpdateFrequency3
+ms.custom: engagement-fy23, UpdateFrequency3, copilot-scenario-highlight
 ms.topic: overview
 description: Learn about Azure DevOps Services - an integrated platform for planning, coding, building, testing, and deploying applications.
 ms.subservice: azure-devops-new-user
@@ -10,6 +10,7 @@ author: chcomley
 monikerRange: '<= azure-devops'
 ms.date: 02/17/2026
 ms.update-cycle: 1095-days
+ai-usage: ai-assisted
 #customer intent: As a developer, I want to understand Azure DevOps so I can plan, code, collaborate, and ship my applications.
 ---
 
@@ -29,7 +30,7 @@ Azure DevOps offers a spectrum of service models to accommodate the unique needs
 
 - **Flexible and scalable service options**: Azure DevOps caters to teams of all sizes by offering a range of service options. For small teams, many services are complimentary, ensuring that you have access to robust project management tools without any initial investment. For larger teams or more advanced needs, services are accessible through a subscription model or on a pay-per-use basis.
 
-[!INCLUDE [ai-assistance-callout](../includes/ai-assistance-callout.md)]
+[!INCLUDE [ai-assistance-mcp-server-tip](../includes/ai-assistance-mcp-server-tip.md)]
 
 ## Core services
 
@@ -344,6 +345,25 @@ Ready to get started with Azure DevOps? Here are your next steps:
 3. **[Invite team members](../organizations/accounts/add-organization-users.md)** - Add your teammates to collaborate
 4. **[Import or create repositories](../repos/git/creatingrepo.md)** - Get your code into Azure Repos
 5. **[Set up your first pipeline](../pipelines/create-first-pipeline.md)** - Automate builds and deployments
+
+<a id="use-ai-assistance"></a>
+
+## AI-Enhanced Azure DevOps Management with Copilot
+
+If you configure the [Azure DevOps MCP Server](../mcp-server/mcp-server-overview.md), you can manage projects, query work items, review pipelines, and get insights across Azure DevOps services using natural language.
+
+| Task | Example prompt |
+|------|----------------|
+| Get project overview | `Summarize the current sprint status for project <Contoso> including open work items, active pull requests, and recent build results` |
+| List recent activity | `Show the most recent commits, pull requests, and work item updates in project <Contoso> from the past 3 days` |
+| Check team velocity | `What is the team velocity for the last 5 sprints in project <Contoso>?` |
+| Find blocked work | `List all work items in <Contoso> that are blocked or have impediments` |
+| Review pipeline health | `Show the success rate for all pipelines in <Contoso> over the past 2 weeks` |
+| Identify stale pull requests | `List open pull requests in <Contoso> that have been open for more than 5 days with no recent activity` |
+| Cross-service traceability | `For user story 1234 in <Contoso>, show linked commits, pull requests, builds, and test results` |
+| Sprint planning insights | `Show the remaining capacity and unfinished work items for the current sprint in <Contoso>` |
+| Recent deployment summary | `List the last 5 deployments to production in <Contoso> with their status and associated work items` |
+| Find untested features | `Show features in <Contoso> that have been completed but have no linked test cases` |
 
 ## Related content
 

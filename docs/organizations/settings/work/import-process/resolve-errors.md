@@ -45,8 +45,7 @@ The following example prompt for Copilot Chat helps you troubleshoot process imp
 
 For the best AI assistance, include specific details like the error code (TF######), affected file names, work item type names, and field reference names mentioned in the validation error.
 
-```copilot-prompt
-I'm getting this Azure DevOps process import error: [PASTE YOUR ERROR MESSAGE HERE]
+`I'm getting this Azure DevOps process import error: [PASTE YOUR ERROR MESSAGE HERE]
 
 Process import details:
 - Error code: [ERROR CODE like TF402###]
@@ -61,7 +60,7 @@ Can you help me troubleshoot this issue? Please provide step-by-step instruction
 3. Verify the changes resolve the validation issue
 
 Context: This is for importing a custom process template to Azure DevOps Services using the Hosted XML process model. The error might be related to work item type definitions, field configurations, process configuration, categories, or XML schema violations.
-```
+`
 
 *Copilot is powered by AI, so surprises and mistakes are possible. For more information, see [Copilot general use FAQs](https://aka.ms/copilot-general-use-faqs).*
 

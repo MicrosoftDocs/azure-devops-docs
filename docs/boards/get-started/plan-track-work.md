@@ -70,8 +70,8 @@ This article shows how to add requirements, child tasks, and work item details o
 
 | Category | Requirements |
 |--------------|-------------|
-| **Access levels** | - Add work items and use board features: at least [**Basic** access](../../organizations/security/access-levels.md). <br> - Private project: to view boards, open and modify work items, and add child tasks: at least **Stakeholder** access (Stakeholders can't reorder or reparent backlog items or update fields on cards). <br> - Public project: for full access to all Boards features: at least **Stakeholder** access. |
-| **Permissions** | Member of the **Contributors** or **Project Administrators** group. |
+| Access levels | - Add work items and use board features: at least [**Basic** access](../../organizations/security/access-levels.md). <br> - Private project: to view boards, open and modify work items, and add child tasks: at least **Stakeholder** access (Stakeholders can't reorder or reparent backlog items or update fields on cards). <br> - Public project: for full access to all Boards features: at least **Stakeholder** access. |
+| Permissions | Member of the **Contributors** or **Project Administrators** group. |
 
 ::: moniker-end
 
@@ -234,16 +234,16 @@ If you have the [Azure Boards MCP Server](../../mcp-server/mcp-server-overview.m
 
 | Task | Example prompt |
 |------|----------------|
-| Create a work item | ```copilot-prompt Create a user story called 'Add search functionality to the product page' and assign it to <me>``` |
-| Add child tasks | ```copilot-prompt Add three tasks to user story #1234: design the UI mockup, implement the backend API, and write unit tests``` |
-| Create a bug | ```copilot-prompt Create a new bug titled 'Login timeout on slow connections' with priority 1 and assign it to the current sprint``` |
-| Update a work item | ```copilot-prompt Update the state of task #5678 to Done and set Completed Work to 4 hours``` |
-| Get a daily summary | ```copilot-prompt Show all work items assigned to <me> grouped by state with remaining work totals``` |
-| Plan a new feature | ```copilot-prompt Create a feature called 'Dark mode support' in <Contoso> with 4 child user stories for settings UI, theme engine, persistence, and accessibility testing``` |
-| Review sprint readiness | ```copilot-prompt List all user stories in the next sprint for <Contoso> that are still missing story points or acceptance criteria``` |
-| Track team progress | ```copilot-prompt Show the count of work items by state for each team member in the current sprint for <Contoso>``` |
-| Quick standup report | ```copilot-prompt Show what <me> completed yesterday, what's in progress today, and any items tagged 'blocked' in <Contoso>``` |
-| Set up a new project | ```copilot-prompt Create an epic called 'Mobile App v2' in <Contoso> with 3 child features for authentication, dashboard, and notifications, each with 2 user stories``` |
+| Create a work item | `Create a user story called 'Add search functionality to the product page' and assign it to <me>` |
+| Add child tasks | `Add three tasks to user story #1234: design the UI mockup, implement the backend API, and write unit tests` |
+| Create a bug | `Create a new bug titled 'Login timeout on slow connections' with priority 1 and assign it to the current sprint` |
+| Update a work item | `Update the state of task #5678 to Done and set Completed Work to 4 hours` |
+| Get a daily summary | `Show all work items assigned to <me> grouped by state with remaining work totals` |
+| Plan a new feature | `Create a feature called 'Dark mode support' in <Contoso> with 4 child user stories for settings UI, theme engine, persistence, and accessibility testing` |
+| Review sprint readiness | `List all user stories in the next sprint for <Contoso> that are still missing story points or acceptance criteria` |
+| Track team progress | `Show the count of work items by state for each team member in the current sprint for <Contoso>` |
+| Quick standup report | `Show what <me> completed yesterday, what's in progress today, and any items tagged 'blocked' in <Contoso>` |
+| Set up a new project | `Create an epic called 'Mobile App v2' in <Contoso> with 3 child features for authentication, dashboard, and notifications, each with 2 user stories` |
 
 > [!NOTE]
 > Agent mode and the MCP Server use natural language, so you can adjust these prompts or ask follow-up questions to refine the results.

@@ -3,7 +3,7 @@ title: Microsoft-hosted agents for Azure Pipelines
 description: Learn about using the Microsoft-hosted agents provided in Azure Pipelines
 ms.topic: concept-article
 ms.assetid: D17E9C01-8026-41E8-B44A-AB17EDE4AFBD
-ms.date: 01/28/2026
+ms.date: 03/10/2026
 monikerRange: '<= azure-devops'
 ---
 
@@ -33,13 +33,18 @@ You can see the installed software for each Windows hosted agent image by choosi
 
 | Image | Classic Editor Agent Specification | YAML VM Image Label | Included software |
 | --- | --- | --- | --- |
-| Windows Server 2025 with Visual Studio 2026 | *windows-2025-vs2026* | `windows-2025-vs2026` | [Link](https://github.com/actions/runner-images/blob/main/images/windows/Windows2025-VS2026-Readme.md) |
+| Windows Server 2025 with Visual Studio 2026 (public preview) | *windows-2025-vs2026* | `windows-2025-vs2026` | [Link](https://github.com/actions/runner-images/blob/main/images/windows/Windows2025-VS2026-Readme.md) |
 | Windows Server 2025 with Visual Studio 2022 | *windows-2025* | `windows-latest` OR `windows-2025` | [Link](https://github.com/actions/runner-images/blob/main/images/windows/Windows2025-Readme.md) |
 | Windows Server 2022 with Visual Studio 2022 | *windows-2022* | `windows-2022` | [Link](https://aka.ms/windows-2022-readme) |
 
+#### Windows Server 2025 with Visual Studio 2026 in public preview
+
+> [!IMPORTANT]
+> A new Windows runner image with Visual Studio 2026 is now available in public preview. This dedicated image runs alongside the current windows-2025 image, providing a safe validation path ahead of the default Windows image migration. Visual Studio 2026 will be integrated into the windows-2025 image when it reaches general availability. During the preview, you can opt into using the new image by specifying `windows-2025-vs2026` in your pipeline configuration.
+
 #### Windows image updates
 
-* Windows Server 2025 with Visual Studio 2026 is now available from 9th March'2026. 
+* Windows Server 2025 with Visual Studio 2026 is now available in public preview starting March 9, 2026. 
 * The Windows Server 2019 hosted agent image was retired on December 31, 2025.
 * [[Windows & Ubuntu] .NET 6 was removed from the images on August 1, 2025.](https://github.com/actions/runner-images/issues/12241)
 
