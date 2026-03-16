@@ -17,9 +17,20 @@ monikerRange: 'azure-devops'
 > [!NOTE]
 > This feature is gradually being released. If it's not yet available in your organization, check back again in a few days.
 
-Some web browsers block calls from iframes to local network resources. This blocking affects Azure DevOps organizations that use extensions that call back-end services hosted on internal company networks.
+Some web browsers block calls from iframes to local network resources as part of [Private Network Access](https://wicg.github.io/private-network-access/) protections. This blocking affects Azure DevOps organizations that use extensions that call back-end services hosted on internal company networks, such as:
+
+- Custom extensions that connect to on-premises REST APIs or microservices
+- Extensions that integrate with internal build servers or artifact repositories
+- Extensions that communicate with self-hosted reporting or monitoring tools
 
 If you need to keep using these extensions, toggle on the security policy **Allow extensions to access local network resources**.
+
+> [!IMPORTANT]
+> Enabling this policy relaxes browser-level network protections for all extensions in your organization. Only enable it if you trust the extensions installed in your organization and you have a business need to access local network resources. Review your installed extensions regularly and remove any that are unnecessary. For more information, see [Manage high privilege extensions](manage-high-privilege-extensions.md).
+
+## Prerequisites
+
+[!INCLUDE [prerequisites-pca-only](../includes/prerequisites-pca-only.md)]
 
 ## Enable the policy
 
