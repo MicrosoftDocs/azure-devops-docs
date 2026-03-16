@@ -77,7 +77,7 @@ You can see the installed software for each macOS hosted agent by choosing the *
 
 * [[macOS] Deprecation of simulator runtimes for Xcode 16.3 and older on macOS 15 on January 12th, 2026.](https://github.com/actions/runner-images/issues/13392)
 * The macOS 14 Sonoma image will be deprecated starting July 6, 2026. For more information, see [macOS 14 Sonoma hosted image deprecation schedule](./hosted-deprecation-schedule.md?tabs=macos-images#macos-14-sonoma-hosted-image-deprecation-schedule).
-* The macOS 15 Sequoia ARM64 Limited Public Preview has been discontinued.
+* The macOS 15 Sequoia ARM64 Limited Public Preview has been paused.
 * The macOS 13 Ventura image was deprecated starting September 1, 2025, and was retired on December 4, 2025.
 * [[macOS] Starting August 11, 2025, if your workflow is running on a macOS 15 based image and depends on one of the platform versions (iOS/watchOS/tvOS/visionOS) lower than Xcode 16.3 compatible, they will be broken](https://github.com/actions/runner-images/issues/12541).
 * [[macOS] Xcode 15.4 was removed from macOS15 images on May 29, 2025](https://github.com/actions/runner-images/issues/12195)
