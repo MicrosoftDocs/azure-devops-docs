@@ -96,6 +96,9 @@ Now that you’ve authenticated with your feed, you can install packages from th
 
 In this example, you’ll install *requests*, a popular HTTP library for Python.
 
+> [!NOTE]
+> To save packages from upstream sources, you must have the **Feed and Upstream Reader (Collaborator)** role or higher. See [manage permissions](../feeds/feed-permissions.md#feed-roles-and-permissions) for more details.
+
 1. Open a command prompt and navigate to your project directory, then activate your virtual environment. Replace the placeholder with the name of the virtual environment you created earlier:
 
     ```
