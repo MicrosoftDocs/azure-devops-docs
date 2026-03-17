@@ -1,7 +1,7 @@
 ---
 title: Sign up for Azure DevOps
 titleSuffix: Azure DevOps Services
-ms.custom: peer-review-fy23, content-perf-fy23q2
+ms.custom: peer-review-fy23, content-perf-fy23q2, copilot-scenario-highlight
 description: Sign up for Azure DevOps with a Microsoft or GitHub account.
 ms.subservice: azure-devops-new-user
 ai-usage: ai-assisted
@@ -9,7 +9,7 @@ ms.topic: how-to
 ms.author: chcomley
 author: chcomley
 ms.update: 90-days
-ms.date: 02/17/2026
+ms.date: 03/17/2026
 monikerRange: 'azure-devops'
 ---
 
@@ -19,7 +19,7 @@ monikerRange: 'azure-devops'
 
 Sign up for Azure DevOps and start with the [free tier of services](https://azure.microsoft.com/pricing/details/devops/azure-devops-services/). For an overview of the service, see [What is Azure DevOps?](what-is-azure-devops.md)
 
-[!INCLUDE [ai-assistance-callout](../includes/ai-assistance-callout.md)]
+[!INCLUDE [ai-assistance-mcp-server-tip](../includes/ai-assistance-mcp-server-tip.md)]
 
 ## Prerequisites
 
@@ -58,7 +58,28 @@ For detailed steps, see:
 
 ---
 
-[!INCLUDE [enable-mcp-server](../boards/includes/enable-mcp-server.md)]
+::: moniker range="azure-devops"
+
+<a id="use-ai-assistance"></a>
+
+## Use AI to manage users and teams
+
+If you configure the [Azure DevOps MCP Server](../mcp-server/mcp-server-overview.md), you can use AI assistants to manage users and teams through natural language prompts.
+
+### Example prompts for user management
+
+| Task | Example prompt |
+|------|----------------|
+| Add users | `Add user <jamal@contoso.com> to <Contoso> organization` |
+| List organization users | `List all users in <Contoso> organization` |
+| Check access levels | `Show the access level for user <jamal@contoso.com> in <Contoso>` |
+| Manage team membership | `Add user <jamal@contoso.com> to the <Frontend> team in <Contoso> project` |
+| Review user permissions | `Show what permissions <jamal@contoso.com> has in <Contoso> project` |
+| Onboard a group | `Add users <sara@contoso.com>, <kim@contoso.com>, and <alex@contoso.com> to the <Backend> team in <Contoso> project` |
+| Check license usage | `Show how many Basic and Stakeholder access levels are in use versus available in <Contoso> organization` |
+| Find users without teams | `List users in <Contoso> organization who aren't members of any team` |
+
+::: moniker-end
 
 ## Next steps
 
