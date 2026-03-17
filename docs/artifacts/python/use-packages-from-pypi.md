@@ -34,7 +34,7 @@ If you don’t already have a feed, follow the steps below to create one and ena
 
 1. Select **Create** when you're done.
 
-    :::image type="content" source="../media/new-feed-dialog-azure-devops.png" alt-text="A screenshot showing how to create a need feed.":::
+    :::image type="content" source="media/python-demo-feed.png" alt-text="A screenshot showing how to create a need feed and enable upstream sources in Azure Artifacts.":::
 
 ## Add PyPI upstream
 
@@ -49,8 +49,6 @@ If you enabled *Upstream Sources* when creating your feed, PyPI should have been
 1. Select **Public source**, then choose **PyPI (https://pypi.org/)** from the dropdown list.
 
 1. Select **Add**, then select **Save** in the upper-right corner to apply your changes.
-
-    :::image type="content" source="media/add-pypi-upstream.png" alt-text="A screenshot displaying how to add PyPI as a new upstream source.":::
 
 ## Authenticate with your feed
 
