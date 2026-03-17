@@ -94,32 +94,32 @@ Make sure you've installed Python from the prerequisites, then follow these step
 
 ## Install packages from PyPI
 
-Now that we've configured our project to authenticate with our feed, we can begin installing packages from the PyPI upstream. In this example, we'll install `Flask`:
+Now that you’ve authenticated with your feed, you can install packages from the PyPI upstream as you normally would with pip. Any package you install is automatically saved to your Azure Artifacts feed.
 
-1. In a command prompt window, navigate to your project folder and run the following command to activate your virtual environment. Replace the placeholder with the name of the virtual environment you created earlier:
+In this example, you’ll install *requests*, a popular HTTP library for Python.
 
-    ```Command
-    <YOUR_VIRTUAL_ENVIRONMENT_NAME>/Scripts/Activate.ps1
+1. Open a command prompt and navigate to your project directory, then activate your virtual environment. Replace the placeholder with the name of the virtual environment you created earlier:
+
+    ```
+    <YOUR_VIRTUAL_ENVIRONMENT_NAME>/Scripts/Activate
     ```
 
-1. Run the following command to check the packages installed in your virtual environment:
+1. Run the following command to install the *requests* package from PyPI.
 
-    ```Command
-    pip list
+    ```
+    pip install requests
     ```
 
-1. Run the following command to install *Flask*.
+1.  pip install requestsShow more lines
 
-    ```Command
-    pip install -U Flask
-    ```
+1. Once the installation completes, Azure Artifacts saves a copy of the package to your feed. Navigate to your feed to verify that the package is available, as shown in the following screenshot.
 
-1. Once your package is installed, Azure Artifacts will save a copy of this package to your feed. Your package should be available in your feed as shown in the screenshot below.
+    :::image type="content" source="media/package-saved-from-pypi-upstream.png" alt-text="A screenshot showing the requests package installed from PyPI upstream.":::
 
-    :::image type="content" source="media/install-package-from-upstream.png" alt-text="A screenshot showing packages installed from PyPI upstream.":::
+## Related content
 
-## Related articles
+- [Publish Python packages (CLI)](../quickstarts/python-cli.md)
 
-- [Publish and consume Python packages CLI](../quickstarts/python-cli.md)
+- [Use upstream sources in a public feed](../how-to/public-feeds-upstream-sources.md)
+
 - [Publish Python packages with Azure Pipelines](../../pipelines/artifacts/pypi.md)
-- [Manage permissions](../feeds/feed-permissions.md)
