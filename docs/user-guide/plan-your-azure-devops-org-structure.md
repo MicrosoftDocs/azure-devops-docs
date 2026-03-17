@@ -346,9 +346,9 @@ For example, the fictional Fabrikam company created the following three organiza
 
 Each organization has a separate URL, such as:
 
-- https://dev.azure.com/Fabrikam-Marketing
-- https://dev.azure.com/Fabrikam-Engineering
-- https://dev.azure.com/Fabrikam-Sales
+- `https://dev.azure.com/Fabrikam-Marketing`
+- `https://dev.azure.com/Fabrikam-Engineering`
+- `https://dev.azure.com/Fabrikam-Sales`
 
 The organizations are for the same company, but are mostly isolated from each other. You don't need to separate anything this way. Only create boundaries when it makes sense to your business. 
 
