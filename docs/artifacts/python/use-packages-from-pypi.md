@@ -112,7 +112,7 @@ In this example, you’ll install *requests*, a popular HTTP library for Python.
 
 1. Once the installation completes, Azure Artifacts saves a copy of the package to your feed. Navigate to your feed to verify that the package is available, as shown in the following screenshot.
 
-    :::image type="content" source="media/package-saved-from-pypi-upstream.png" alt-text="A screenshot showing the requests package installed from PyPI upstream.":::
+    :::image type="content" source="media/package-saved-from-python-upstream-source.png" alt-text="A screenshot showing the requests package installed from PyPI upstream.":::
 
 ## Related content
 
