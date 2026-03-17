@@ -56,7 +56,7 @@ Run automated tests on demand directly from **Azure Test Plans** without setting
  
    * Verify that you're using **version 3** of the Visual Studio Test task.
 
-   * Set **Select tests using** to **Test run**. For more information, see [How does the "Test run" setting work?](reference-qa.yml#how-does-the--test-run-setting-in-the-visual-studio-test-task-work)
+   * Set **Select tests using** to **Test run**. For more information, see [How does the "Test run" setting work?](reference-qa.yml#how-does-the--test-run--setting-in-the-visual-studio-test-task-work)
 
    * Set **vsTestVersion** to **toolsInstaller**. 
 
