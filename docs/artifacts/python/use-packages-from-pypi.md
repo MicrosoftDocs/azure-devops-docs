@@ -13,7 +13,7 @@ ms.topic: how-to
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
-Azure Artifacts enables developers to use a single feed to host their own packages as well as packages installed from public registries such as PyPI.org. When upstream sources are enabled, Azure Artifacts automatically saves a copy of any package installed from an upstream source by a collaborator or higher.
+Azure Artifacts enables developers to use a single feed to host their own packages as well as packages installed from public registries such as *PyPI.org*. When upstream sources are enabled, Azure Artifacts automatically saves a copy of any package installed from an upstream source by a collaborator or higher.
 This article walks you through setting up your project and using the command line to consume Python packages from the Python Package Index (PyPI).
 
 ## Prerequisites
@@ -110,8 +110,6 @@ In this example, you’ll install *requests*, a popular HTTP library for Python.
     ```
     pip install requests
     ```
-
-1.  pip install requestsShow more lines
 
 1. Once the installation completes, Azure Artifacts saves a copy of the package to your feed. Navigate to your feed to verify that the package is available, as shown in the following screenshot.
 
