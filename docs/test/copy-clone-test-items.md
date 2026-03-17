@@ -3,13 +3,13 @@ title: Copy or clone test plans, test suites, test cases, and more
 titleSuffix: Azure Test Plans  
 description: Learn how to copy or clone test plans, test suites, and test cases in Azure Test Plans to streamline your testing process and ensure consistency across iterations.
 ms.service: azure-devops-test-plans
-ms.custom: cross-project, UpdateFrequency3
+ms.custom: cross-project, UpdateFrequency3, copilot-scenario-highlight
 ai-usage: ai-assisted
 ms.author: pliaros
 author: raviLiftr
-ms.topic: tutorial
+ms.topic: how-to
 monikerRange: '<= azure-devops'
-ms.date: 03/09/2026
+ms.date: 03/17/2026
 ms.update-cycle: 1095-days
 ---
 
@@ -28,11 +28,31 @@ In general, create a test plan for every major project milestone. Copy, clone, o
 - Share test objects across projects.
 - Move test objects from one project to another, possibly to support consolidating projects into a single project.
   
-For more information, see [Overview of test objects and terms](test-objects-overview.md).  
+For more information, see [Overview of test objects and terms](test-objects-overview.md).
+
+### What each operation preserves
+
+The following table summarizes what each operation preserves and what it doesn't.
+
+| Item | Copy or clone a test plan | Import a test suite | Copy a test case |
+|------|---------------------|-------------------|----------------|
+| Test suites and hierarchy | Preserved | Preserved, including subsuites | N/A |
+| Test case references | Referenced or duplicated (you choose) | Referenced, not duplicated | Duplicated with new IDs |
+| Shared steps | Referenced | Cloned to destination project | Referenced |
+| Shared parameters | Referenced | Not cloned | Referenced |
+| Test configurations | Preserved | Preserved | N/A |
+| Test run history and results | Not preserved | Not preserved | Not preserved |
+| Tester assignments | Not preserved | Not preserved | Not preserved |
+| Links and attachments | Preserved | Preserved | Optional (you choose) |
+| Area and iteration paths | Set to destination values | Inherited from destination plan | Set to destination values |
 
 ## Prerequisites
 
 [!INCLUDE [prerequisites-define](includes/prerequisites-define.md)] 
+
+::: moniker range="azure-devops"
+[!INCLUDE [ai-assistance-mcp-server-tip](../includes/ai-assistance-mcp-server-tip.md)]
+::: moniker-end
  
 ## Supported copy, clone, and import tools  
 
@@ -163,8 +183,8 @@ Cloning is especially useful when you need to branch your application into two v
 	:::image type="content" source="media/copy-clone/copy-test-plan-dialog.png" alt-text="Screenshot showing Copy test plan dialog.":::
 
 	- Choose one of the two radio buttons based on the following guidance:  
-	   - **Reference existing test cases**: Choose this option when you plan to merge the two branches eventually. In this case, keep the same requirements for functionality that you already implemented and tested.  
-	   - **Duplicate existing test cases**: Choose this option when you want to make new test cases maintained separately. New test cases link to existing requirements.  
+	   - **Reference existing test cases**: The cloned test plan points to the same test cases as the source plan. Changes to a test case appear in both plans, and test results are shared. Choose this option when you plan to merge the two branches eventually and want to keep the same requirements for functionality that you already implemented and tested.  
+	   - **Duplicate existing test cases**: The cloned test plan creates new copies of each test case with new IDs. Each copy has an independent lifecycle — changes to one copy don't affect the other. The duplicated test cases link to the same requirements as the originals. Choose this option when you want separate test cases maintained independently across branches or releases.  
 
 	If you duplicate existing test cases, the copied test cases get assigned the **Area Path** and **Iteration Path** you specified for the cloned test plan. 
 
@@ -176,9 +196,7 @@ Cloning is especially useful when you need to branch your application into two v
 
 5. Update any [query-based suites](create-a-test-plan.md) that you copied to use the new area and iteration paths.  
 
-6. Specify a build in the destination test plan if you cloned automated test cases.
-
-<!-- Document labeling that occurs, pick up of work item IDs --> 
+6. If you cloned automated test cases, specify a build and release pipeline in the destination test plan. Automated test method associations are preserved during cloning, but the destination plan must reference the correct build to run those tests. For more information, see [Run automated tests from test plans](run-automated-tests-from-test-hub.md).
 
 ::: moniker-end
 
@@ -193,12 +211,16 @@ When you create the test plan for a new sprint, you often want to repeat some of
  
 > [!NOTE]
 > - When you import a test suite to a new project, the new suite contains copies of all test cases in the source suite. However, it doesn't retain any historical data like the previous test runs, related bugs, or old results.
->- Shared steps referenced by the test cases are also cloned and created in the destination project.
->- You can't clone test cases from and to the same test plan, even into a different suite. To accomplish this scenario, you must first move the test cases to a different, temporary test plan. Then, use the temporary test plan as the source plan and clone the test cases back to the source test plan by putting the ID into the destination test plan place. Shared steps present in the test cases are also duplicated in this process. 
+> - The process also clones and creates shared steps that the test cases in the destination project reference.
+> - You can't clone test cases from and to the same test plan, even into a different suite. To accomplish this scenario, you must first move the test cases to a different, temporary test plan. Then, use the temporary test plan as the source plan and clone the test cases back to the source test plan by putting the ID into the destination test plan place. This process also duplicates shared steps present in the test cases. 
 
 ::: moniker range="<=azure-devops"
 
-When you work with Azure Test Plans, you can import a test suite from one test plan into another test plan within the current project. It doesn't matter whether the test plans are within the same project. This process copies or clones the test suite and creates a new test suite. Additionally, this process duplicates any subtest suites. The process doesn't duplicate the test cases referenced by the test suites. Instead, the cloned test suites reference those test cases.
+When you work with Azure Test Plans, you can import a test suite from one test plan into another test plan within the same project or across projects. This process copies or clones the test suite and creates a new test suite. Additionally, this process duplicates any subtest suites. The process doesn't duplicate the test cases that the test suites reference. Instead, the cloned test suites reference those test cases.
+
+> [!IMPORTANT]
+> When you import across projects, the process doesn't automatically carry over area paths and iteration paths from the source project. The imported test suite inherits the area and iteration paths from the destination test plan. Review and update these paths after import to ensure they match your project structure.
+
 ::: moniker-end
 
 To use the same test cases in different suites and plans, copy and paste test cases by using the **Grid** view.
@@ -207,7 +229,7 @@ To use the same test cases in different suites and plans, copy and paste test ca
 
 1. Select **Test Plans** > **Test plans**.
 2. Choose the test plan where you want to import a test suite from the **Mine** or **All** page.
-3. Select :::image type="icon" source="../media/icons/more-actions.png" border="false"::: **More actions** > **Copy test plan**. This option lets you copy or clone test plans within a project. 
+3. Select :::image type="icon" source="../media/icons/more-actions.png" border="false"::: **More actions** > **Import test suites**. This option lets you import test suites from another test plan. 
 
 	:::image type="content" source="media/copy-clone/import-test-suites.png" alt-text="Screenshot showing Test Suite More Actions menu, Import test suites option.":::
 
@@ -261,8 +283,6 @@ You can copy test cases from either within a project or from another project wit
 
 	The background copy operation depends on the quantity and complexity of the selected test cases. After completion, a notification is sent to you confirming the operation’s success and a link to the test suite where the copied test cases reside.
 
-<!-- Document labeling that occurs, pick up of work item IDs --> 
-
 ::: moniker-end
 
 <a id="copy-paste"></a> 
@@ -292,14 +312,42 @@ You can copy test cases from the **Grid** view for one test plan and test suite 
 
 ::: moniker range="<=azure-devops"
 
-### REST APIs
+## REST APIs
 
 You can copy and clone test plans and test suites by using the following REST APIs: 
 - [Test Plan Clone - Clone Test Plan](/rest/api/azure/devops/testplan/test-plan-clone/clone-test-plan)
 - [Test Suite Clone - Clone Test Suite](/rest/api/azure/devops/testplan/test-suite-clone/clone-test-suite)
 ::: moniker-end
 
-##  Next steps
+::: moniker range="azure-devops"
+
+<a id="use-ai-assistance"></a>
+
+## Use AI to copy and clone test items
+
+If you configure the [Azure DevOps MCP Server](../mcp-server/mcp-server-overview.md), you can use AI assistants to manage test plans, suites, and cases by using natural language prompts.
+
+### Example prompts for copying and cloning test items
+
+| Task | Example prompt |
+|------|----------------|
+| List test plans | `List all test plans in <Contoso> project` |
+| View test suites | `Show all test suites in test plan <12345> in project <Contoso>` |
+| Find test cases to copy | `List all test cases in test suite <67890> that have State = <Ready>` |
+| Check plan coverage | `Show all test suites in test plan <12345> and the count of test cases in each` |
+| Compare plans | `List test suites in test plan <12345> and test plan <54321> side by side` |
+| Find duplicate test cases | `Find test cases in <Contoso> project with the same title` |
+| Identify gaps across sprints | `Show test cases in test plan <12345> that don't exist in test plan <54321>` |
+| Find shared test cases | `List test cases that appear in more than one test suite in project <Contoso>` |
+| Prepare for cloning | `Show all test suites in test plan <12345> that contain automated test cases` |
+
+> [!TIP]
+> If you're using Visual Studio Code, [agent mode](https://code.visualstudio.com/docs/copilot/chat/chat-agent-mode) is especially helpful for troubleshooting complex copy and clone operations.
+> - To avoid using stale or cached data from previous queries, add to your prompt, "Do not use previously fetched data."
+
+::: moniker-end
+
+##  Next step
 
 > [!div class="nextstepaction"]
 > [Run manual tests](run-manual-tests.md)
@@ -310,7 +358,5 @@ You can copy and clone test plans and test suites by using the following REST AP
 - [Create test cases](create-test-cases.md)
 - [Share steps between test cases](share-steps-between-test-cases.md)
 - [Test different configurations](test-different-configurations.md)
-- [Repeat a test with different data](repeat-test-with-different-data.md)
-- [Test objects and terms](test-objects-overview.md) 
-- [Create a query based on build and test integration fields](../boards/queries/build-test-integration.md)
+- [Test objects and terms](test-objects-overview.md)
 
