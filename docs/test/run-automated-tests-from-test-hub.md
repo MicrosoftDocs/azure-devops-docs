@@ -7,7 +7,7 @@ ms.custom: UpdateFrequency3, copilot-scenario-highlight
 ai-usage: ai-assisted
 ms.topic: how-to 
 ms.author: pliaros
-author: wisdom
+author: wisdeom
 ms.date: 03/17/2026
 ms.update-cycle: 1095-days
 ---
@@ -56,7 +56,7 @@ Run automated tests on demand directly from **Azure Test Plans** without setting
  
    * Verify that you're using **version 3** of the Visual Studio Test task.
 
-   * Set **Select tests using** to **Test run**. For more information, see [How does the "Test run" setting work?](reference-qa.yml#how-does-the-test-run-setting-in-the-visual-studio-test-task-work)
+   * Set **Select tests using** to **Test run**. For more information, see [How does the "Test run" setting work?](reference-qa.yml#how-does-the--test-run-setting-in-the-visual-studio-test-task-work)
 
    * Set **vsTestVersion** to **toolsInstaller**. 
 
@@ -114,7 +114,7 @@ Run automated tests on demand directly from **Azure Test Plans** without setting
    :::image type="content" border="true" source="media/run-automated-tests-from-test-hub/test-results-overview.png" alt-text="Screenshot shows the Runs page with an overview of all test runs.":::
 
    > [!TIP]
-   > If your tests don't run, see [What are the typical errors when automated tests don't run?](reference-qa.yml#what-are-the-typical-errors-when-automated-tests-dont-run)
+   > If your tests don't run, see [What are the typical errors when automated tests don't run?](reference-qa.yml#what-are-the-typical-errors-when-automated-tests-don-t-run)
 
 ::: moniker range="azure-devops"
 
