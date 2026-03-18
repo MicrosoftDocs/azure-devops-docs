@@ -6,7 +6,7 @@ ms.subservice: azure-devops-analytics
 ms.custom: dashboards, engagement-fy23, copilot-scenario-highlight
 ms.author: chcomley
 author: chcomley
-ms.topic: concept
+ms.topic: conceptual
 monikerRange: "<= azure-devops"
 ai-usage: ai-assisted
 ms.date: 03/18/2026
@@ -150,7 +150,7 @@ The example dashboard includes several query tiles and the following widgets:
 - [Sprint Overview](widget-catalog.md#sprint-overview-widget): Chart the sprint progress as a count of story points or number of work items. 
 - [New Work Item](widget-catalog.md#new-work-item-widget): Provide the ability for users to add work items directly from the dashboard. 
 - [Velocity metrics](team-velocity.md): Track the team's capacity to deliver work sprint after sprint.
-- [Sprint Burndown](configure-sprint-burndown.md#the-sprint-burndown-widget): Monitor team progress by showing the work remaining for the sprint.
+- [Sprint Burndown](configure-sprint-burndown.md): Monitor team progress by showing the work remaining for the sprint.
 
 ### Release dashboard
 
