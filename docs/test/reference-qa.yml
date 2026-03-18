@@ -11,7 +11,7 @@ metadata:
   author: chcomley
   ms.topic: FAQ
   monikerRange: '<= azure-devops'
-  ms.date: 02/26/2026
+  ms.date: 03/17/2026
   ms.update-cycle: 1095-days
 
 title: Test Plans FAQs
@@ -63,10 +63,6 @@ sections:
 
             For more information, see [Test objects and terms](test-objects-overview.md).
 
-      - question: What are query-based test suites?
-        answer: |
-            Query-based test suites use a query to group together test cases that have a particular characteristic, for example, all tests that have Priority=1. The test suite automatically includes every test case returned by the query.
-
       - question: Can I copy or clone test plans and test suites?
         answer: |
             **Yes**. Depending on your desired action, you can copy or clone test plans and import or clone test suites. To learn how, see [Copy or clone test plans, test suites, and test cases](copy-clone-test-items.md).  
@@ -77,20 +73,15 @@ sections:
 
       - question: Can I just view test plan data I export, or copy it to a Word document?
         answer: |
-            **Yes**. Select **Print** in the **Export** dialog box, then choose **Cancel** in the **Print** dialog box.
-            This option displays the data in the report.
-            Select all the text, then copy and paste it into a Word document, if you want.
-            All the formatting in the report is retained.
+            **Yes**. Select **Print** in the **Export** dialog box, then choose **Cancel** in the **Print** dialog box to display the data in the report. Select all the text and copy it into a Word document. The report formatting is retained.
 
       - question: What happens when I delete a test case from a requirement-based test suite?
         answer: |
-            The test case still exists in your project, but the test case is removed from the test suite.
-            Also, it's no longer linked to the backlog item for that test suite.
+            The test case still exists in your project but is removed from the test suite and no longer linked to the backlog item for that suite.
 
       - question: Why do I see the wrong test suite and tests when I select View Tests from the notification email about tests that are assigned to me?
         answer: |
-            This situation might happen if you were prompted to enter credentials for Azure DevOps when you clicked the link.
-            Without signing out of Azure DevOps, select **View Tests** again to see the correct test suite and tests.
+            This issue can occur if you're prompted to enter credentials when you select the link. Without signing out of Azure DevOps, select **View Tests** again to see the correct test suite and tests.
 
       - question: How do I find and navigate test plans?
         answer: |
@@ -122,7 +113,7 @@ sections:
             ::: moniker range="<=azure-devops"
             Select a test case in the **Define** tab. Right-click or select **More options** to open the context menu, and then select **View linked items**.
 
-            ![Screenshot shows the Linked Items dialog box with Test Suites selected.](media/create-test-cases/view-linked-items.png)
+            :::image type="content" border="true" source="media/create-test-cases/view-linked-items.png" alt-text="Screenshot shows the Linked Items dialog box with Test Suites selected.":::
 
             In the **Linked Items** dialog box, select **Test Suites** to see the test suites linked to the test case. Double-click a test suite to open it.
             ::: moniker-end
@@ -141,6 +132,65 @@ sections:
 
             > [!NOTE]
             > Bulk import/export is available in Azure DevOps Services only.
+
+      - question: Can I create new test cases and update existing ones in the same import file?
+        answer: |
+            **Yes**. In the same CSV or XLSX file, leave the **ID** field empty for new test cases and include the existing ID for updates.
+
+      - question: How do I identify and resolve import errors?
+        answer: |
+            The import wizard validates your file at each stage — file upload, field mapping, and before final import. It displays errors inline and you must resolve them before the import can proceed.
+
+            **Common errors and solutions:**
+
+            | Error | Solution |
+            |-------|----------|
+            | Missing mandatory headers | Add the required column headers with exact spelling. |
+            | Invalid field value found | Check that **Work Item Type** is exactly `Test Case`, **State** is `Design`, **Area Path** matches an existing path, **Assigned To** is a valid user, and **Test Step** is a number. |
+            | Invalid data formats | Check date formats, numeric values, and text length limits. |
+            | Incorrect field mappings | Verify that columns map to the correct Azure DevOps fields. |
+            | Empty required fields | Ensure all mandatory fields contain valid data. |
+
+            To fix errors, correct your CSV or XLSX file, reupload it, and complete the import.
+
+      - question: What work item types does test case import support?
+        answer: |
+            The import process supports only **Test Case** work items. To reference existing shared steps, include their ID in your file. The import can't create new shared steps — create them in the web interface first, then reference their ID.
+
+            > [!NOTE]
+            > If you include both a shared step reference and step details in the same row, the import updates the shared steps work item. To reference shared steps without modifying them, omit step details.
+
+            For other work item types (User Stories, Tasks, Bugs), see [Bulk import or update (CSV)](../boards/queries/import-work-items-from-csv.md).
+
+      - question: What are the mandatory headers for test case import files?
+        answer: |
+            Include the following nine headers with exact spelling:
+
+            | Header | Description |
+            |--------|-------------|
+            | **ID** | Leave blank for new test cases; provide existing ID for updates. |
+            | **Work Item Type** | Must be `Test Case`. |
+            | **Title** | Test case name. |
+            | **Test Step** | Order number for each step. |
+            | **Step Action** | Actions the tester performs. |
+            | **Step Expected** | Expected result after the action. |
+            | **Area Path** | Must match an existing area path (for example, `MyProject\MyArea`). |
+            | **Assigned To** | Valid user in your organization. |
+            | **State** | Must be `Design`. |
+
+      - question: Can I undo a bulk test case import?
+        answer: |
+            There's no single-action undo. However, each import creates a revision for every affected test case. View the **History** tab on individual test cases to see what changed and manually revert fields. For large-scale rollbacks, reimport the original exported file.
+
+      - question: What are the limitations for test case import or export?
+        answer: |
+            The following limitations apply:
+
+            - Test cases must be in **Design** state during import.
+            - Test case titles can't exceed 128 characters.
+            - Import and export files have a 20-MB size limit.
+            - You must have permissions for the area and iteration paths of the target test plan and test suite.
+            - Operations fail if a test case has more than 1,000 related links.
 
       - question: What are shared steps and how do I use them?
         answer: |
@@ -261,6 +311,77 @@ sections:
             **Yes**. You can use both YAML and Classic pipelines to run automated tests from Test Plans. Configure the build pipeline in the test plan settings, and set up a release pipeline (Classic or YAML) for on-demand automated test execution.
 
             For setup instructions, see [Run automated tests from test plans](run-automated-tests-from-test-hub.md).
+
+      - question: Can I override the build or stage set at the test plan level for a specific test run?
+        answer: |
+            **Yes**. Use the **Run with options** command. Open the shortcut menu for the test suite and select **Run with options**, then specify:
+
+            - **Test type and runner**: Select **Automated tests using Release Stage**.
+            - **Build**: Select the build that has the test binaries. Test results are associated with this build.
+            - **Release Pipeline**: Select a pipeline that can consume the selected build artifact.
+            - **Release Stage**: Select the stage configured in your release pipeline.
+
+      - question: Why use release stages to run tests?
+        answer: |
+            Azure Pipelines provides an orchestration workflow to obtain test binaries as artifacts and run tests. This workflow uses the same concepts as scheduled testing, so you can clone an existing scheduled testing release pipeline to get started quickly.
+
+            Release stages also give you access to the full task catalog for activities before and after test execution, such as preparing test data or managing configuration files.
+
+      - question: Should I reuse my scheduled testing pipeline for on-demand runs?
+        answer: |
+            We recommend a **separate** release pipeline and stage for on-demand automated testing because:
+
+            - Scheduled stages typically deploy the app first — you might not want a full deployment every time you run a few tests.
+            - Every on-demand run triggers a new release. High volumes of on-demand releases can make it hard to find your scheduled testing and production releases.
+            - You might want to configure the Visual Studio Test task with a **Test run** identifier to trace what triggered each release.
+
+      - question: Should the agent run in interactive mode or as a service?
+        answer: |
+            If you run UI tests ([coded UI](/visualstudio/test/use-ui-automation-to-test-your-code) or [Selenium](../pipelines/test/continuous-test-selenium.md)), the agent must run in **interactive mode with autologon enabled** so it can launch a web browser. If you use a headless browser, the agent can run as a service or in interactive mode.
+
+            For more information, see [Build and release agents](../pipelines/agents/agents.md), [Deploy an agent on Windows](../pipelines/agents/windows-agent.md), and [Agent pools](../pipelines/agents/pools-queues.md).
+
+      - question: How does the "Test run" setting in the Visual Studio Test task work?
+        answer: |
+            When **Select tests using** is set to **Test run**, the test management subsystem passes the list of selected tests through a test run object. The Visual Studio Test task looks up the test run identifier, extracts test execution information (container and test method names), runs the tests, updates the results, and sets the associated test points.
+
+            This also provides an audit trail linking historical releases and test run identifiers to the tests submitted for on-demand execution.
+
+      - question: How do I pass parameters to my test code from a pipeline?
+        answer: |
+            Use a [runsettings](/visualstudio/test/configure-unit-tests-by-using-a-dot-runsettings-file) file to pass values as parameters. For example, in a release with several stages, you can pass the appropriate app URL to each stage's test task. Specify the runsettings file and override parameters in the [Visual Studio Test task](/azure/devops/pipelines/tasks/reference/vstest-v3).
+
+      - question: Can multiple testers run tests in parallel using the same release pipeline?
+        answer: |
+            **Yes**, if the following conditions are met:
+
+            - The agent pool has enough agents to handle parallel requests. If agents aren't available, releases queue until agents free up.
+            - You have enough [parallel jobs](../pipelines/licensing/concurrent-jobs.md) configured.
+            - Testers don't run the **same** tests in parallel, as results might be overwritten depending on execution order.
+
+            Set the stage trigger option for [behavior when multiple releases are waiting to be deployed](../pipelines/release/triggers.md) to **Allow multiple releases to be deployed at the same time** (if your app supports parallel testing) or **Allow only one active deployment at a time**.
+
+      - question: What happens if I select multiple configurations for the same test?
+        answer: |
+            The on-demand automated testing workflow isn't currently configuration-aware. Selecting multiple configurations for the same test doesn't create separate test runs per configuration.
+
+      - question: Can I use artifacts from different builds or non-Azure Pipelines sources like Jenkins?
+        answer: |
+            The on-demand workflow is optimized for a single Azure Pipelines build. Support for multi-artifact releases and non-Azure Pipelines artifact sources (such as Jenkins) is evaluated based on user feedback.
+
+      - question: What are the typical errors when automated tests don't run?
+        answer: |
+            | Symptom | Resolution |
+            |---------|------------|
+            | Release pipeline and stage aren't shown after selecting the build | Verify the build pipeline is linked as the **primary artifact** in the release pipeline's **Artifacts** tab. |
+            | Insufficient permission to trigger a release | Configure **Create releases** and **Manage deployments** permissions in the release pipeline's **Security** menu. See [Release permissions](../pipelines/policies/permissions.md#release-pipeline-permissions). |
+            | No automated tests found | Check the **Automation status** of the selected test cases. Add the **Automation status** column in Azure Test Plans to verify. See [Prerequisites](run-automated-tests-from-test-hub.md#prerequisites). |
+            | Tests didn't execute — suspect pipeline issue | Open the **Run summary** page and use the release link to view the release logs. |
+            | Tests stuck in error or "in-progress" state | Verify the release stage uses version 3 of the **Visual Studio Test** task. Version 1 and the **Run Functional Tests** task aren't supported. |
+
+      - question: Where can I find documentation on running Selenium tests?
+        answer: |
+            See [Get started with Selenium testing](../pipelines/test/continuous-test-selenium.md).
 
   - name: Test results and retaining test data
 
