@@ -151,7 +151,7 @@ You can drag and drop test suites to nest them under static suites, and drag tes
 3. Select **Create suite**. Test cases that match the query are automatically included and stay in sync as work items change.
 
 > [!NOTE]
-> Query-based suites are are read-only. You can't manually add or remove test cases. To change the suite contents, update the query.
+> Query-based suites are read-only. You can't manually add or remove test cases. To change the suite contents, update the query.
 
 ::: moniker-end
 
