@@ -417,7 +417,7 @@ You can configure *settings* for all repositories across an organization or proj
 
 ::: moniker range="<=azure-devops"
 
-To configure repository settings and policies through the web portal, open **Project settings**> **Repositories** from your web browser.
+To configure repository settings and policies through the web portal, open **Project settings** > **Repositories** from your web browser.
 
 1. To view or modify settings or policies for all Git repositories, open the **All Repositories** page and select the **Settings** or **Policies** tab.
 
@@ -512,7 +512,7 @@ az repos show --repository
 
 #### Example
 
-The following command lists the details of *contosoREPO* for the default configuration `az devops configure --defaults organization=https://dev.azure.com/fabrikamprime project="Fabrikam Fiber"`.
+The following command lists the details of `contosoREPO` for the default configuration `az devops configure --defaults organization=https://dev.azure.com/fabrikamprime project="Fabrikam Fiber"`.
 
 ```azurecli
 az repos show --repository contosoREPO --output table
@@ -736,14 +736,14 @@ To set a default branch name at the organization level:
 1. On your Azure DevOps organization page, select **Organization settings** at the lower left, and then on the service menu, select **Repositories**.
 1. On the **All Repositories** page, set **Default branch name for new repositories** to **On**, and then enter a default branch name.
 
-:::image type="content" source="media/repository-settings/organization-settings-change-default-branch-name.png" alt-text="Screenshot that shows the organization-level setting for Default branch name for new repositories.":::
+   :::image type="content" source="media/repository-settings/organization-settings-change-default-branch-name.png" alt-text="Screenshot that shows the organization-level setting for Default branch name for new repositories.":::
 
 To set a default branch name at the project level:
 
 1. On your Azure DevOps project page, select **Project settings** at the lower left, and then on the service menu, select **Repositories**.
 1. On the **All Repositories** page, on the **Settings** tab, set **Default branch name for new repositories** to **On**, and then enter a default branch name.
 
-:::image type="content" source="media/repository-settings/project-settings-change-default-branch-name.png" alt-text="Screenshot that shows the project-level setting for Default branch name for new repositories.":::
+   :::image type="content" source="media/repository-settings/project-settings-change-default-branch-name.png" alt-text="Screenshot that shows the project-level setting for Default branch name for new repositories.":::
 ::: moniker-end
 
 ::: moniker range=">= azure-devops-2022"
@@ -758,14 +758,14 @@ To manage this setting:
 1. On your Azure DevOps project page, select **Project settings** at the lower left, and then on the service menu, select **Repositories**.
 1. On the **All Repositories** page, on the **Settings** tab, set **Allow users to manage permissions for their created branches** to **On** or **Off**.
 
-:::image type="content" source="media/repository-settings/users-manage-permissions.png" alt-text="Screenshot that shows the project-level setting Allow users to manage permissions for their created branches.":::
+   :::image type="content" source="media/repository-settings/users-manage-permissions.png" alt-text="Screenshot that shows the project-level setting Allow users to manage permissions for their created branches.":::
 
 To enable or disable this setting for individual repositories:
 
 1. Select **Project Settings** > **Repositories**, and then select a repository.
 1. On the **\<Repository name>** page, on the **Settings** tab, set **Permissions management** to **On** or **Off**.
 
-:::image type="content" source="media/repository-settings/permissions-management.png" alt-text="Screenshot that shows the Permissions management repository setting.":::
+   :::image type="content" source="media/repository-settings/permissions-management.png" alt-text="Screenshot that shows the Permissions management repository setting.":::
 
 ::: moniker-end
 
@@ -779,7 +779,7 @@ This setting enables or disables the use of [Gravatar images](https://go.microso
 1. On your Azure DevOps organization page, select **Organization settings** at the lower left, and then on the service menu, select **Repositories**.
 1. On the **All Repositories** page, set **Gravatar images** to **On** or **Off**.
 
-:::image type="content" source="media/repository-settings/organization-settings-gravatar.png" alt-text="Screenshot that shows the organization-level setting for Gravatar images.":::
+   :::image type="content" source="media/repository-settings/organization-settings-gravatar.png" alt-text="Screenshot that shows the organization-level setting for Gravatar images.":::
 ::: moniker-end
 
 ::: moniker range="<azure-devops"
@@ -803,7 +803,7 @@ This repository setting controls whether users can create new server-side [forks
 1. On the **All Repositories** page, on the **Repositories** tab, select a repository.
 1. On the **\<Repository name>** page, on the **Settings** tab, set **Forks** to **On** or **Off**.
 
-:::image type="content" source="media/repository-settings/forks.png" alt-text="Screenshot that shows the Forks repository setting.":::
+   :::image type="content" source="media/repository-settings/forks.png" alt-text="Screenshot that shows the Forks repository setting.":::
 ::: moniker-end
 
 <a id="work-item-linking"></a>
@@ -815,7 +815,7 @@ These repository settings manage work item linking.
 1. Select **Project Settings** > **Repositories**, and then select a repository.
 1. On the **\<Repository name>** page, on the **Settings** tab, turn the settings to **On** or **Off**.
 
-:::image type="content" source="media/repository-settings/work-item-linking-repo-settings.png" alt-text="Screenshot that shows the work item linking repository settings.":::
+   :::image type="content" source="media/repository-settings/work-item-linking-repo-settings.png" alt-text="Screenshot that shows the work item linking repository settings.":::
 
 ### Commit mention linking
 
@@ -842,7 +842,7 @@ In certain situations, users who aren't contributors to a repository can submit 
 1. Select **Project Settings** > **Repositories**, and then select a repository.
 1. On the **\<Repository name>** page, on the **Settings** tab, set **Strict Vote Mode** to **On** or **Off**.
 
-:::image type="content" source="media/repository-settings/strict-vote-mode.png" alt-text="Screenshot that shows the Strict Vote Mode repository setting.":::
+   :::image type="content" source="media/repository-settings/strict-vote-mode.png" alt-text="Screenshot that shows the Strict Vote Mode repository setting.":::
 ::: moniker-end
 
 ::: moniker range=">= azure-devops-2022"
@@ -854,7 +854,7 @@ Enabling this setting disables access to the repository, including builds and pu
 1. Select **Project Settings** > **Repositories**, and then select a repository.
 1. On the **\<Repository name>** page, on the **Settings** tab, under **Disable Repository**, set **Disable Repository** to **On** or **Off**.
 
-:::image type="content" source="media/repository-settings/disable-repository.png" alt-text="Screenshot that shows the Disable Repository setting.":::
+   :::image type="content" source="media/repository-settings/disable-repository.png" alt-text="Screenshot that shows the Disable Repository setting.":::
 ::: moniker-end
 
 ::: moniker range="<=azure-devops"
@@ -872,7 +872,7 @@ To add branches for code search:
 1. On the **\<Repository name>** page, on the **Settings** tab, in **Searchable Branches**, select the plus sign **+**.
 1. Select a branch to include in search, and then select **Add branch**.
 
-:::image type="content" source="media/repository-settings/searchable-branches.png" alt-text="Screenshot that shows the Searchable Branches repository setting.":::
+   :::image type="content" source="media/repository-settings/searchable-branches.png" alt-text="Screenshot that shows the Searchable Branches repository setting.":::
 
 ::: moniker-end
 <!--- REPOSITORY POLICIES --> 
@@ -911,7 +911,7 @@ This policy blocks commits to a repository by commit authors whose email address
 
    You can specify exact email addresses or use wildcards. Use `;` as a separator for multiple email patterns. Email patterns prefixed with `!` are excluded. Order is important.
 
-:::image type="content" source="media/repository-settings/add-policy-to-block-commits-email.png" alt-text="Screenshot that shows the Commit author email validation policy setting.":::
+   :::image type="content" source="media/repository-settings/add-policy-to-block-commits-email.png" alt-text="Screenshot that shows the Commit author email validation policy setting.":::
 
 <a id="file-path-validation"></a>
 
@@ -925,7 +925,7 @@ You can set a policy that prevents commits to a repository from file paths that 
 
    You can specify exact paths and wildcards. Exact paths begin with `/`. You can also specify multiple paths by using `;` as a separator. Paths prefixed with `!` are excluded. Order is important.
 
-:::image type="content" source="media/repository-settings/add-policy-to-block-files-patterns.png" alt-text="Screenshot that shows the File path validation policy setting.":::
+   :::image type="content" source="media/repository-settings/add-policy-to-block-files-patterns.png" alt-text="Screenshot that shows the File path validation policy setting.":::
 
 <a id="case-enforcement"></a>
 
@@ -951,7 +951,7 @@ To set a case enforcement policy:
 1. Select **Project Settings** > **Repositories**, and select a repository if you want to configure only that repository.
 1. On the **All Repositories** or **\<Repository name>** page, on the **Policies** tab, under **Repository Policies**, set **Case enforcement** to **On** or **Off**.
 
-:::image type="content" source="media/repository-settings/case-enforcement.png" alt-text="Screenshot that shows the Case enforcement policy setting.":::
+   :::image type="content" source="media/repository-settings/case-enforcement.png" alt-text="Screenshot that shows the Case enforcement policy setting.":::
 
 ::: moniker-end
 
@@ -1055,7 +1055,7 @@ To set the reserved names policy:
 1. Select **Project Settings** > **Repositories**, and select a repository if you want to configure only that repository.
 1. On the **All Repositories** or **\<Repository name>** page, on the **Policies** tab, under **Repository Policies**, set **Reserved names** to **On** or **Off**.
 
-:::image type="content" source="media/repository-settings/reserved-names.png" alt-text="Screenshot that shows the Reserved names policy setting.":::
+   :::image type="content" source="media/repository-settings/reserved-names.png" alt-text="Screenshot that shows the Reserved names policy setting.":::
 
 <a id="max-path-length"></a>
 
@@ -1073,7 +1073,7 @@ To set the maximum path length policy:
 1. On the **All Repositories** or **\<Repository name>** page, on the **Policies** tab, under **Repository Policies**, set **Maximum path length** to **On** or **Off**.
 1. If you turned on the setting, enter a maximum path length.
 
-:::image type="content" source="media/repository-settings/maximum-path-length.png" alt-text="Screenshot that shows the Maximum path length policy setting.":::
+   :::image type="content" source="media/repository-settings/maximum-path-length.png" alt-text="Screenshot that shows the Maximum path length policy setting.":::
 
 <a id="maximum-file-size"></a>
 
@@ -1094,7 +1094,7 @@ To configure the maximum file size policy:
 1. On the **All Repositories** or **\<Repository name>** page, on the **Policies** tab, under **Repository Policies**, set **Maximum file size** to **On** or **Off**.
 1. If you turned on the setting, select a maximum file size.
 
-:::image type="content" source="media/repository-settings/maximum-file-size.png" alt-text="Screenshot that shows the Maximum file size policy setting.":::
+   :::image type="content" source="media/repository-settings/maximum-file-size.png" alt-text="Screenshot that shows the Maximum file size policy setting.":::
 
 #### [Azure DevOps CLI](#tab/azure-devops-cli/)
 
