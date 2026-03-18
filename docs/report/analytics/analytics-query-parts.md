@@ -46,6 +46,8 @@ To retrieve the [OData entity model](https://docs.oasis-open.org/odata/odata/v4.
 - Supported aggregations (`Org.OData.Aggregation.V1.ApplySupported`)
 - Batch support type (`Org.OData.Capabilities.V1.BatchSupportType`)
 
+<a id="url-components-to-query-the-metadata"></a>
+
 ::: moniker range="azure-devops"
 
 Enter the following URL in a web browser. Replace `<OrganizationName>` and `<ProjectName>` with your values. Omit the project name to return metadata for the entire organization.
