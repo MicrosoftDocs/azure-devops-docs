@@ -1,9 +1,8 @@
-To avoid potential errors, you should refresh your client application under the following circumstances:
+Refresh your client after any of these changes to avoid errors:
 
--   Process changes are made.
--   Work item type definitions are added, removed, renamed, or updated.
--   Area or iteration paths are added, removed, renamed, or updated.
--   Users are added to or removed from security groups, or permissions are updated.
--   A team member adds a new shared query or changes the name of a shared query.
--   A build pipeline is added or deleted.
--   A team or project is added or deleted.
+- Process or work item type changes (added, removed, renamed, or updated)
+- Area or iteration path changes
+- Security group membership or permission updates
+- Shared query additions or renames
+- Build pipeline additions or deletions
+- Team or project additions or deletions
