@@ -5,12 +5,12 @@ description: Bulk import and export test cases in Azure Test Plans using CSV or 
 #customer intent: As a tester, I want to update existing test cases in bulk so that I can save time on repetitive edits.
 ai-usage: ai-assisted
 ms.service: azure-devops-test-plans
-ms.custom: cross-project, UpdateFrequency3
+ms.custom: cross-project, UpdateFrequency3, copilot-scenario-highlight
 ms.author: pliaros
 author: wisdeom
 ms.topic: how-to
 monikerRange: '= azure-devops'
-ms.date: 03/02/2026
+ms.date: 03/17/2026
 ms.update-cycle: 1095-days
 ---
 
@@ -19,151 +19,129 @@ ms.update-cycle: 1095-days
 
 [!INCLUDE [version-eq-azure-devops](../includes/version-eq-azure-devops.md)] 
 
-Azure Test Plans supports bulk import and export of test cases using CSV or Microsoft Excel (XLSX) file formats. You can create new test cases in a test suite or update existing test cases by providing the test case ID during import. Export operations save test cases to CSV or XLSX files for external editing or sharing.
+Import and export test cases in bulk using CSV or Microsoft Excel (XLSX) files. Create new test cases, update existing ones by ID, or download test cases for external editing.
 
-You have the following options for managing test cases at scale:
-- **Bulk operations**: Import and export using CSV or XLSX files for large-scale changes.
-- **Web portal tools**: Copy, clone, and update test cases directly in the browser for smaller changes.
-
-For more information about web portal alternatives, see [Copy or clone test plans, test suites, and test cases](copy-clone-test-items.md).
-  
-For an overview of test objects and terminology, see [Test objects and terms](test-objects-overview.md).
+For web portal alternatives like copy, clone, and direct updates, see [Copy or clone test plans, test suites, and test cases](copy-clone-test-items.md). For an overview of test objects and terminology, see [Test objects and terms](test-objects-overview.md).
 
 ## Prerequisites
 
-[!INCLUDE [prerequisites-stakeholder](includes/prerequisites-stakeholder.md)] 
+[!INCLUDE [prerequisites-define](includes/prerequisites-define.md)] 
+
+[!INCLUDE [ai-assistance-mcp-server-tip](../includes/ai-assistance-mcp-server-tip.md)]
  
 ## Export test cases 
 
-1. Go to **Test Plans** > **Test plans**, select a test plan, and then select a test suite to display its test cases.
+1. In **Test Plans**, select a test plan and then a test suite.
 1. (Optional) Select :::image type="icon" source="media/icons/column-options.png"::: **Column options** to add fields to the download file. 
-1. Select all test cases or select specific test cases, and then select **Export test cases to CSV** or **Export test cases to XLSX**.
+1. Select the test cases to export, then select **Export test cases to CSV** or **Export test cases to XLSX**.
 
    :::image type="content" source="media/bulk-import-test-case/export-test-cases-test-suite.png" alt-text="Screenshot of Export test cases from the selected test suite.":::
 
-   The file downloads to your local machine.
+   The export includes **ID**, **Work Item Type**, **Title**, **Test Step**, **Step Action**, **Step Expected**, **Area Path**, **State**, **Assigned To**, and any columns added through **Column options**. Each test step appears as a separate row.
 
 ## Import test cases 
 
-1. Go to **Test Plans** > **Test plans**, select a test plan, and then select a test suite from the suite tree.
-2. Select **Import test cases from CSV/XLSX**.
+1. In **Test Plans**, select a test plan and then a test suite.
+1. Select **Import test cases from CSV/XLSX**.
 
    :::image type="content" source="media/bulk-import-test-case/choose-import-test-cases.png" alt-text="Screenshot of Import test cases to the selected test suite.":::
 
-3. Drag and drop a file, or select **Browse** to choose a file. The wizard automatically maps detected columns to Azure DevOps fields.
+1. Drag and drop a file, or select **Browse** to choose one. The wizard automatically maps columns to Azure DevOps fields.
 
-4. Review the field mappings. The following nine fields are required:
-   - **ID** - Leave empty for new test cases, or provide an existing ID to update
-   - **Work Item Type** - Must be `Test Case` (exact spelling and casing)
+   > [!TIP]
+   > For CSV files, save with **UTF-8** encoding to preserve special characters. Enclose cell values in double quotes if they contain commas or line breaks.
+
+1. Review the field mappings. The following nine fields are required:
+   - **ID** — leave empty for new test cases, or provide an existing ID to update
+   - **Work Item Type** — must be `Test Case` (exact spelling and casing)
    - **Title**
-   - **Test Step** - Sequential number for each step (`1`, `2`, `3`)
+   - **Test Step** — sequential step number (`1`, `2`, `3`)
    - **Step Action** 
    - **Step Expected**
-   - **Area Path** - Must match an existing area path (for example, `MyProject\MyArea`)
-   - **Assigned To** - Valid user in your organization (display name or email)
-   - **State** - Must be `Design`
+   - **Area Path** — must match an existing path (for example, `MyProject\MyArea`)
+   - **Assigned To** — valid user in your organization
+   - **State** — must be `Design`
 
    :::image type="content" source="media/bulk-import-test-case/import-wizard-mapping.png" alt-text="Screenshot of the import wizard showing field mapping interface.":::
 
-5. (Optional) To change a mapping, select the field dropdown and choose the correct Azure DevOps field.
+1. (Optional) To change a mapping, select the field dropdown and choose the correct Azure DevOps field.
 
    :::image type="content" source="media/bulk-import-test-case/update-field-mapping.png" alt-text="Screenshot shows dropdown menu for optional field mapping updates.":::
 
-   To skip a field, deselect the current mapping so it shows **Select field...**.
+   To skip a field, clear the mapping so it shows **Select field...**.
 
    :::image type="content" source="media/bulk-import-test-case/skip-mapping.png" alt-text="Screenshot shows empty field selection for skipping mapping.":::
 
-6. (Optional) Export the current mapping as a reusable template to share with your team.
+1. (Optional) Export the current mapping as a reusable template to share with your team.
 
-7. (Optional) For XLSX files with multiple sheets, select which sheet to import. You can only import one sheet at a time.
+1. (Optional) For XLSX files with multiple sheets, select which sheet to import.
 
    :::image type="content" source="media/bulk-import-test-case/multiple-sheets-selection.png" alt-text="Screenshot showing worksheet selection dialog for XLSX files with multiple sheets.":::
 
-8. Select **Import**. Existing test cases with matching IDs get updated and might be overwritten.
+1. Select **Import**. The wizard updates existing test cases with matching IDs.
+
+### Example CSV file structure
+
+Each test step is a separate row. Repeat the **ID**, **Title**, and other fields on each row, and increment the **Test Step** number:
+
+```csv
+ID,Work Item Type,Title,Test Step,Step Action,Step Expected,Area Path,Assigned To,State
+,Test Case,Verify login page,1,Navigate to the login page,Login page displays,MyProject\Web,user@contoso.com,Design
+,Test Case,Verify login page,2,Enter valid credentials and select Sign in,User is redirected to the dashboard,MyProject\Web,user@contoso.com,Design
+,Test Case,Verify login page,3,Select Sign out,User returns to the login page,MyProject\Web,user@contoso.com,Design
+,Test Case,Verify search,1,Enter a search term in the search box,Search results display,MyProject\Web,user@contoso.com,Design
+```
+
+Leave the **ID** column empty to create new test cases, or provide an existing ID to update. All rows for the same test case must share the same **Title** and field values.
 
 ## Use mapping templates
 
-Azure Test Plans remembers your field mappings for future imports with the same column structure. Always review mappings before completing an import.
-
-You can export your current mapping as a reusable template for your team, so each member doesn't need to configure mappings individually. You can also save templates for different file structures you use regularly.
+Azure Test Plans remembers field mappings for future imports with the same column structure. You can export a mapping as a reusable template so team members don't need to configure mappings individually, and save templates for different file structures you use regularly.
 
 :::image type="content" source="media/bulk-import-test-case/mapping-download-template.png" alt-text="Screenshot shows no template selected and link to download current mapping as template.":::
 
-If you modify mappings after importing a template, the system alerts you to prevent accidental changes to established team standards.
+If you modify mappings after importing a template, the system alerts you to prevent accidental changes.
 
 :::image type="content" source="media/bulk-import-test-case/mapping-no-longer-based-on-template.png" alt-text="Screenshot shows message stating that changes made means mapping is no longer based on the uploaded template.":::
 
 ## Update existing test cases
 
-1. (Optional) Select :::image type="icon" source="media/icons/column-options.png"::: **Column options** to add fields you want to edit to the view.
-2. Export the test cases to CSV or XLSX. For details, see [Export test cases](#export-test-cases).
+1. (Optional) Select :::image type="icon" source="media/icons/column-options.png"::: **Column options** to add fields you want to edit.
+1. Export the test cases to CSV or XLSX. For details, see [Export test cases](#export-test-cases).
 
    :::image type="content" source="media/bulk-import-test-case/export-test-cases-test-suite.png" alt-text="Screenshot of Export test cases from the selected test suite.":::
 
-3. Edit the file. Don't change the **ID** or **Work Item Type** fields.
+1. Edit the file. Don't change the **ID** or **Work Item Type** fields.
 
-4. Save the file and import it back to the test suite. For details, see [Import test cases](#import-test-cases). 
+   > [!IMPORTANT]
+   > Reimporting a test case with a matching ID **replaces all existing test steps** with the steps in your file. Missing steps are removed. Always export the full test case before editing.
 
-## Frequently asked questions
+1. Save the file and reimport it. For details, see [Import test cases](#import-test-cases). Each import creates a new revision visible on the **History** tab of each affected test case.
 
-### Q: Can I create new test cases and update existing ones in the same file?
+For common questions about import errors, mandatory headers, supported work item types, and limitations, see [Troubleshooting and FAQs](reference-qa.yml).
 
-A: Yes. In the same CSV or XLSX file, leave the **ID** field empty for new test cases and include the existing ID for updates.
+<a id="use-ai-assistance"></a>
 
-### Q: How do I identify and resolve import errors?
+## Use AI to manage test cases at scale
 
-A: The import wizard validates your file at each stage - file upload, field mapping, and before final import. Errors display inline and you must resolve them before the import can proceed.
+If you configure the [Azure DevOps MCP Server](../mcp-server/mcp-server-overview.md), you can use AI assistants to manage your test cases in bulk by using natural language prompts.
 
-:::image type="content" source="media/bulk-import-test-case/import-errors.png" alt-text="Screenshot of Import Test Cases error dialog.":::
+### Example prompts for bulk test case management
 
-**Common errors and solutions:**
+| Task | Example prompt |
+|------|----------------|
+| List test cases for export | `Show all test cases in test suite <67890> in project <Contoso>` |
+| Find test cases to update | `List all test cases in <Contoso> with Priority = <1> and State = <Design>` |
+| Bulk update test cases | `Update all test cases in area path <Contoso\\Checkout> to set Priority = <2>` |
+| Identify incomplete test cases | `Find test cases in <Contoso> that have no test steps defined` |
+| Audit test case fields | `List test cases in test plan <12345> that are missing the Automation Status field` |
+| Find stale test cases | `List test cases in <Contoso> that haven't been run in the last 90 days` |
+| Spot duplicates before export | `Find test cases in project <Contoso> that have the same title` |
+| Summarize test coverage gaps | `Show test suites in test plan <12345> that have fewer than 3 test cases` |
 
-| Error | Solution |
-|-------|----------|
-| Missing mandatory headers | Add the required column headers with exact spelling. |
-| Invalid field value found | Check that **Work Item Type** is exactly `Test Case`, **State** is `Design`, **Area Path** matches an existing path (for example, `MyProject\MyArea`), **Assigned To** is a valid user, and **Test Step** is a number. |
-| Invalid data formats | Check date formats, numeric values, and text length limits. |
-| Incorrect field mappings | Verify that columns map to the correct Azure DevOps fields. |
-| Empty required fields | Ensure all mandatory fields contain valid data. |
-
-To fix errors, note the error messages, correct your CSV or XLSX file, reupload the file, and complete the import.
-
-### Q: What work item types does import support?
-
-A: The import process supports only **Test Case** work items. To reference existing shared steps, include their ID in your file. The import can't create new shared steps - create them in the web interface first, then reference their ID.
-
-:::image type="content" source="media/bulk-import-test-case/shared-steps-reference-in-csv.png" alt-text="Screenshot of shared step reference in CSV.":::
-
-> [!NOTE]
-> If you include both a shared step reference and step details in the same row, the import updates the shared steps work item. To reference shared steps without modifying them, omit step details.
-
-For other work item types (User Stories, Tasks, Bugs), see [Bulk import or update (CSV)](../boards/queries/import-work-items-from-csv.md).
-
-### Q: What are the mandatory headers for import files?
-
-A: Include the following nine headers with exact spelling:
-
-| Header | Description |
-|--------|-------------|
-| **ID** | Leave blank for new test cases; provide existing ID for updates. |
-| **Work Item Type** | Must be `Test Case` or `Shared Steps`. |
-| **Title** | Test case name. |
-| **Test Step** | Order number for each step. |
-| **Step Action** | Actions the tester performs. |
-| **Step Expected** | Expected result after the action. |
-| **Area Path** | Must match an existing area path (for example, `MyProject\MyArea`). |
-| **Assigned To** | Valid user in your organization. |
-| **State** | Must be `Design`. |
-
-### Q: What are the limitations for import or export?
-
-A: The following limitations apply:
-
-* Test cases must be in **Design** state during import.
-* Test case titles can't exceed 128 characters.
-* Import and export files have a 20-MB size limit. Import smaller subsets if the operation fails.
-* You must have permissions for the area and iteration paths of the target test plan and test suite.
-* Operations fail if a test case has more than 1,000 related links.
+> [!TIP]
+> If you're using Visual Studio Code, [agent mode](https://code.visualstudio.com/docs/copilot/chat/chat-agent-mode) is especially helpful for troubleshooting complex bulk test case operations.
+> - To avoid using stale or cached data from previous queries, add to your prompt, "Do not use previously fetched data."
 
 ##  Next step
 
