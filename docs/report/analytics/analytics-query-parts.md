@@ -2,13 +2,14 @@
 title: Construct OData queries for Analytics
 titleSuffix: Azure DevOps
 description: Learn how to query OData metadata, entities, and entity sets in Analytics for Azure DevOps.
-ms.custom: "analytics" 
+ms.custom: "analytics, copilot-scenario-highlight" 
 ms.subservice: azure-devops-analytics
 ms.author: chcomley
 author: chcomley
 ms.topic: tutorial
 monikerRange: "<=azure-devops"
-ms.date: 11/06/2025
+ms.date: 03/18/2026
+ai-usage: ai-assisted
 #customer intent: As an Azure DevOps user, I want to be able to run Analytics OData queries against my projects so I can monitor, analyze, and report progress results.
 ---
 
@@ -16,93 +17,80 @@ ms.date: 11/06/2025
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
-Analytics, the Azure DevOps reporting platform, can answer quantitative questions about the past or present state of your projects. Analytics supports OData queries of its metadata and entity set data. You can learn about the data model and query process by running simple queries from your web browser.
+Analytics exposes Azure DevOps project data through an [OData](/odata/overview) endpoint that you can query from any [supported web browser](/azure/devops/server/compatibility#supported-browsers) or client tool. This tutorial walks you through the query URL structure - metadata, entity sets, and query options - so you can start building your own requests. For a comparison of query tools, see [Analytics query tools](analytics-query-tools.md).
 
-> [!NOTE]
-> OData, an application-level protocol for interacting with data via Representational State Transfer (REST) interfaces, supports the description, editing, and querying of data models. The Entity Data Model (EDM) or metadata describes the information available from Analytics, including the entities, entity types, properties, relationships, and enumerations you use to query the data to build reports. For an overview of OData, see [Welcome to OData](/odata/overview).
-
-This article explains how to:
+In this tutorial, you learn how to:
 
 > [!div class="checklist"]  
-> - Construct an Analytics OData query.
-> - Query Analytics metadata.
-> - Query Analytics OData for an entity set.
-> - Use query options in the recommended sequence.
-> - Understand server-side paging.
+> - Query the Analytics metadata.
+> - Query an entity set.
+> - Apply query options in the recommended order.
+> - Handle server-side paging.
 
-You can query Analytics from any [supported web browser](/azure/devops/server/compatibility#supported-browsers). For other tools you can use to query Analytics, see [Analytics query tools](analytics-query-tools.md).
+[!INCLUDE [ai-assistance-mcp-server-tip](../../includes/ai-assistance-mcp-server-tip.md)]
 
 ## Prerequisites
 
 [!INCLUDE [prerequisites-simple](../includes/analytics-prerequisites-simple.md)]
 
-<a id="url-components-to-query-the-metadata"></a>
 <a id="query-metadata"></a>
+
 ## Query the metadata
 
-Analytics exposes the [OData entity model](https://docs.oasis-open.org/odata/odata/v4.0/errata03/os/complete/part3-csdl/odata-v4.0-errata03-os-part3-csdl-complete.html#_Toc453752500) at the metadata URL formed by appending `$metadata` to the service root URL. Analytics provides service roots for Azure DevOps projects or entire organizations and collections.
+To retrieve the [OData entity model](https://docs.oasis-open.org/odata/odata/v4.0/errata03/os/complete/part3-csdl/odata-v4.0-errata03-os-part3-csdl-complete.html#_Toc453752500), append `$metadata` to the Analytics service root URL. The metadata describes the data elements you can use in queries, including:
 
-You can query the metadata to look up any of the following data elements:
-
-- Entity types and entity sets
+- Entity types, entity sets, and containers
 - Properties and navigation properties
-- Surrogate keys
-- Enumerated lists
-- Entity sets
-- Containers
-- Filter functions, with `Org.OData.Capabilities.V1.FilterFunctions`
-- Supported aggregations, with `Org.OData.Aggregation.V1.ApplySupported`
-- Batch support type, with `Org.OData.Capabilities.V1.BatchSupportType`
+- Surrogate keys and enumerated lists
+- Supported filter functions (`Org.OData.Capabilities.V1.FilterFunctions`)
+- Supported aggregations (`Org.OData.Aggregation.V1.ApplySupported`)
+- Batch support type (`Org.OData.Capabilities.V1.BatchSupportType`)
 
 ::: moniker range="azure-devops"
 
-To query the metadata for an organization or project hosted in the cloud, enter the following URL syntax in a web browser. Replace `<OrganizationName>` and `<ProjectName>` with the names of the organization and project you want to query. To return all metadata for an organization, don't specify a project name.
+Enter the following URL in a web browser. Replace `<OrganizationName>` and `<ProjectName>` with your values. Omit the project name to return metadata for the entire organization.
 
 ```OData
 https://analytics.dev.azure.com/<OrganizationName>/<ProjectName>/_odata/version/$metadata 
 ```
 
-The following example queries metadata for the `fabrikam` organization.
+For example, the following query returns metadata for the `fabrikam` organization:
 
 ```OData
 https://analytics.dev.azure.com/fabrikam/_odata/v4.0-preview/$metadata  
 ```
 
-In the query string, `analytics.dev.azure.com` is the Analytics service root URL, followed by the organization name, project name, OData version, and `$metadata` designation.
-
 ::: moniker-end
 
 ::: moniker range="< azure-devops"
 
-To query the metadata for a server, enter the following URL syntax in a web browser. Replace `<ServerName>`, `<CollectionName>` and `<ProjectName>` with the names of the server, collection, and project you want to query. To return all metadata for a collection, don't specify a project name. 
+Enter the following URL in a web browser. Replace `<ServerName>`, `<CollectionName>`, and `<ProjectName>` with your values. Omit the project name to return metadata for the entire collection.
 
 ```OData
 https://<ServerName>/<CollectionName>/<ProjectName>/_odata/version/$metadata 
 ```
 
-The following example queries the metadata for a server named `fabrikam-devops` and its `DefaultCollection`.
+For example, the following query returns metadata for the `fabrikam` server and its `DefaultCollection`:
 
 ```OData
-https://fabrikam-devops/DefaultCollection/_odata/v4.0-preview/$metadata  
+https://fabrikam/DefaultCollection/_odata/v4.0-preview/$metadata  
 ```
 
 ::: moniker-end
 
 > [!NOTE] 
-> The latest Analytics OData version is `v4.0-preview`. You can use this version for all queries against Azure DevOps. For more information on Analytics versions and available data, see [Data model for Analytics](../extend-analytics/data-model-analytics-service.md). 
+> The latest Analytics OData version is `v4.0-preview`. Use this version for all queries against Azure DevOps. For more information about Analytics versions and available data, see [Data model for Analytics](../extend-analytics/data-model-analytics-service.md). 
 
 <a id="metadata-response"></a>
+
 ### Interpret the metadata response
 
-Analytics returns an XML file of the data model. Use your browser search function to find information for your entity of interest.
+The metadata endpoint returns an XML document that contains two main schemas:
 
-> [!TIP] 
-> Depending on your browser, this file might not be formatted in a human-readable manner. You can find a free online XML formatter through a web search.
+- **`Microsoft.VisualStudio.Services.Analytics.Model`** — defines entity types, enumerated types, and their members.
+- **`Default`** — defines entity containers, entity sets, and supported OData filter, transformation, and aggregation functions.
 
-Analytics metadata defines the following main schemas.
-
-- `Microsoft.VisualStudio.Services.Analytics.Model` defines the entity types and enumerated types and their members.
-- The `Default` schema defines the entity containers and entity sets and supported OData filter, transformation, and custom aggregation functions.
+The following example shows the high-level structure:
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
@@ -118,13 +106,19 @@ Analytics metadata defines the following main schemas.
 </edmx:Edmx>
 ```
 
+> [!TIP] 
+> Some browsers don't format XML for readability. Search online for a free XML formatter, or use your browser's search function to locate specific entity names in the raw output.
+
 For more information, see [Analytics OData metadata](../extend-analytics/analytics-metadata.md).
 
-### Get related entities and navigation properties
+### Properties and navigation properties
 
-All entity types have properties and navigation properties that you can use to filter your queries. These properties are listed in the metadata as `Property` or `NavigationProperty` under each `EntityType`. You can use related entities to specify more filters, such as iteration paths, area paths, or teams.
+The metadata for each entity type lists two kinds of members you can use in queries:
 
-The following code snippet shows a partial view of the metadata for the `WorkItem` entity. Properties correspond to work item fields and specific data captured by Analytics, such as `LeadTimeDays` and `CycleTimeDays`. Navigation properties correspond to other entity sets and specific Analytics data captured for the entity type, such as `Revisions`, `Links`, `Children`, and `Parent`.
+- **Properties** (`Property`) — correspond to work item fields and Analytics-specific data such as `LeadTimeDays` and `CycleTimeDays`. Use properties in `$select`, `$filter`, and `$orderby` clauses.
+- **Navigation properties** (`NavigationProperty`) — link to related entity sets such as `Revisions`, `Links`, `Children`, `Parent`, and `Teams`. Use navigation properties to filter by related entities like iteration paths, area paths, or teams, and in `$expand` clauses.
+
+The following snippet shows a partial view of the `WorkItem` entity metadata:
 
 ```xml
 <Key>
@@ -136,57 +130,39 @@ The following code snippet shows a partial view of the metadata for the `WorkIte
 </Property>
 <Property Name="InProgressDate" Type="Edm.DateTimeOffset">
    <Annotation Term="Display.DisplayName" String="InProgress Date"/>
-   </Property>
-<Property Name="CompletedDate" Type="Edm.DateTimeOffset">
-   <Annotation Term="Display.DisplayName" String="Completed Date"/>
-   </Property>
+</Property>
 <Property Name="LeadTimeDays" Type="Edm.Double">
    <Annotation Term="Display.DisplayName" String="Lead Time Days"/>
 </Property>
 <Property Name="CycleTimeDays" Type="Edm.Double">
    <Annotation Term="Display.DisplayName" String="Cycle Time Days"/>
 </Property>
-<Property Name="InProgressDateSK" Type="Edm.Int32"/>
-<Property Name="CompletedDateSK" Type="Edm.Int32"/>
-<Property Name="AnalyticsUpdatedDate" Type="Edm.DateTimeOffset"/>
-<Property Name="ProjectSK" Type="Edm.Guid" Nullable="false"/>
-<Property Name="WorkItemRevisionSK" Type="Edm.Int32" Nullable="false"/>
 ...
-<NavigationProperty Name="BoardLocations" Type="Collection(Microsoft.VisualStudio.Services.Analytics.Model.BoardLocation)"/>
 <NavigationProperty Name="Teams" Type="Collection(Microsoft.VisualStudio.Services.Analytics.Model.Team)"/>
-<NavigationProperty Name="InProgressOn" Type="Microsoft.VisualStudio.Services.Analytics.Model.CalendarDate">
-<ReferentialConstraint Property="InProgressDateSK" ReferencedProperty="DateSK"/>
-</NavigationProperty>
-<NavigationProperty Name="CompletedOn" Type="Microsoft.VisualStudio.Services.Analytics.Model.CalendarDate">
-<ReferentialConstraint Property="CompletedDateSK" ReferencedProperty="DateSK"/>
-</NavigationProperty>
 <NavigationProperty Name="Revisions" Type="Collection(Microsoft.VisualStudio.Services.Analytics.Model.WorkItemRevision)"/>
 <NavigationProperty Name="Links" Type="Collection(Microsoft.VisualStudio.Services.Analytics.Model.WorkItemLink)"/>
 <NavigationProperty Name="Children" Type="Collection(Microsoft.VisualStudio.Services.Analytics.Model.WorkItem)"/>
 <NavigationProperty Name="Parent" Type="Microsoft.VisualStudio.Services.Analytics.Model.WorkItem">
-<ReferentialConstraint Property="ParentWorkItemId" ReferencedProperty="WorkItemId"/>
+   <ReferentialConstraint Property="ParentWorkItemId" ReferencedProperty="WorkItemId"/>
 </NavigationProperty>
-<NavigationProperty Name="Processes" Type="Collection(Microsoft.VisualStudio.Services.Analytics.Model.Process)"/>
-<NavigationProperty Name="Descendants" Type="Collection(Microsoft.VisualStudio.Services.Analytics.Model.WorkItem)"/>
 <NavigationProperty Name="Project" Type="Microsoft.VisualStudio.Services.Analytics.Model.Project" Nullable="false">
-<ReferentialConstraint Property="ProjectSK" ReferencedProperty="ProjectSK"/>
-<Annotation Term="Display.DisplayName" String="Project"/>
+   <ReferentialConstraint Property="ProjectSK" ReferencedProperty="ProjectSK"/>
+</NavigationProperty>
 ...
 ```
 
-For entity metadata property and relationship information, see the following articles: 
+For complete property and relationship details for each service area, see:
 
-- [Calendar date, Project, and User metadata reference](entity-reference-general.md)
-- [Metadata reference for Azure Boards](entity-reference-boards.md)
-- [Metadata reference for Azure Pipelines](entity-reference-pipelines.md)
-- [Metadata reference for Test Plans](entity-reference-test-plans.md)
+- [Calendar date, Project, and User metadata reference](entity-reference-general.md).
+- [Metadata reference for Azure Boards](entity-reference-boards.md).
+- [Metadata reference for Azure Pipelines](entity-reference-pipelines.md).
+- [Metadata reference for Test Plans](entity-reference-test-plans.md).
 
 <a id="construct-basic-query"></a>
+
 ## Query entity sets
 
-To query Analytics data and build reports, you typically query an entity set. For an overview of supported entities, see [Analytics OData metadata](../extend-analytics/analytics-metadata.md).
-
-Use the following URL syntax to query a specific `EntitySet`, such as `WorkItems`, `WorkItemSnapshot`, or `PipelineRuns`. Replace `<EntitySet>` with the entity you want to search and `<QueryOptions>` with query options as described in [Use query options](#use-query-options).
+To build reports, query an entity set such as `WorkItems`, `WorkItemSnapshot`, or `PipelineRuns`. For a full list of supported entities, see [Analytics OData metadata](../extend-analytics/analytics-metadata.md).
 
 ::: moniker range="azure-devops"
 
@@ -194,15 +170,15 @@ Use the following URL syntax to query a specific `EntitySet`, such as `WorkItems
 https://analytics.dev.azure.com/<OrganizationName>/<ProjectName>/_odata/version/<EntitySet>?<QueryOptions>
 ```
 
-The following example queries for the count of work items in the `Fabrikam Fiber` project of the `fabrikam` organization.
+For example, the following query counts work items in the `Fabrikam Fiber` project:
 
 ```OData
 https://analytics.dev.azure.com/fabrikam/Fabrikam%20Fiber/_odata/v4.0-preview/WorkItems?%20$apply=aggregate($count%20as%20Count)
 ```
 
-The example query returns results showing a count of `1399` work items.
+The response returns a count of `1399`:
 
-```OData
+```json
 {
 "@odata.context": "https://analytics.dev.azure.com/fabrikam/Fabrikam%20Fiber/_odata/v4.0-preview/$metadata#WorkItems(Count)",
 "value": [
@@ -222,15 +198,15 @@ The example query returns results showing a count of `1399` work items.
 https://<ServerName>/<CollectionName>/<ProjectName>/_odata/version/<EntitySet>?<QueryOptions>
 ```
 
-The following example queries for the count of work items in the `Fabrikam` project in the `DefaultCollection` of the `fabrikam` server.
+For example, the following query counts work items in the `Fabrikam` project on the `fabrikam` server:
 
 ```OData
 https://fabrikam/DefaultCollection/Fabrikam/_odata/v4.0-preview/WorkItems?%20$apply=aggregate($count%20as%20Count)
 ```
 
-The example query returns the following results of `1399` work items.
+The response returns a count of `44`:
 
-```OData
+```json
 {
 "@odata.context": "http://fabrikam/DefaultCollection/Fabrikam/_odata/v4.0-preview/$metadata#WorkItems(Count)",
 "value": [
@@ -244,48 +220,33 @@ The example query returns the following results of `1399` work items.
 
 ::: moniker-end
 
-> [!NOTE] 
-> To avoid running into usage limits, always include a `$select` or `$apply` clause in your query. If you don't include a `$select` or `$apply` clause, you receive a warning such as `VS403507: The specified query does not include a $select or $apply clause which is recommended for all queries. Details on recommended query patterns are available here: https://go.microsoft.com/fwlink/?linkid=861060`.
->
->Omitting a `$select` or `$apply` clause is equivalent to performing a `select` statement on the entity set that returns all columns and all rows. If you have a large number of records, the query may take several seconds. If you have more than 10,000 items, [server-side paging](../extend-analytics/odata-query-guidelines.md#perf-paging) is enforced.
-> 
+> [!IMPORTANT] 
+> Always include a `$select` or `$apply` clause to avoid usage limits. Without one, Analytics returns all columns and rows, which can be slow for large datasets and triggers [server-side paging](../extend-analytics/odata-query-guidelines.md#perf-paging) above 10,000 records.
 
 <a id="query-entity-set"></a>
-### Example: Query a specific entity set
 
-To query a specific entity set, such as `WorkItems`, `Areas`, or `Projects`, add the name of the entity set to the query. For a full list of entity sets, see [Data model for Analytics](../extend-analytics/data-model-analytics-service.md).
+### Example: List projects with $select
+
+The following example uses `$select` to return only the `ProjectName` property from the `Projects` entity set. For a full list of entity sets, see [Data model for Analytics](../extend-analytics/data-model-analytics-service.md).
 
 ::: moniker range="azure-devops"
-
-For example, you can get a list of projects defined for your organization by querying `Projects` and selecting to return the `ProjectName` property. The following example shows the query URL for the `fabrikam` organization.
 
 ```OData
 https://analytics.dev.azure.com/fabrikam/_odata/v4.0-preview/Projects?$select=ProjectName
 ```
 
-Analytics returns the names of the projects in the `fabrikam` organization.
+The response lists the project names in the organization:
 
-```OData
+```json
 {
-@odata.context": "https://analytics.dev.azure.com/fabrikam/_odata/v4.0-preview/$metadata#Projects(ProjectName)",
-
-"value": [
-   {
-      "ProjectName": "Basic Fabrikam"
-   },
-   {
-      "ProjectName": "Fabrikam Fiber"
-   },
-   {
-      "ProjectName": "MyFirstProject"
-   },
-   {
-      "ProjectName": "Fabrikam Test"
-   },
-   {
-      "ProjectName": "MyPublicProject"
-   }
- ]
+  "@odata.context": "https://analytics.dev.azure.com/fabrikam/_odata/v4.0-preview/$metadata#Projects(ProjectName)",
+  "value": [
+    { "ProjectName": "Basic Fabrikam" },
+    { "ProjectName": "Fabrikam Fiber" },
+    { "ProjectName": "MyFirstProject" },
+    { "ProjectName": "Fabrikam Test" },
+    { "ProjectName": "MyPublicProject" }
+  ]
 }
 ```
 
@@ -293,68 +254,91 @@ Analytics returns the names of the projects in the `fabrikam` organization.
 
 ::: moniker range="< azure-devops"
 
-For example, you can get a list of projects defined for your server and collection by querying `Projects` and selecting to return the `ProjectName` property. The following example shows the query URL for the `DefaultCollection` on the `fabrikam` server.
-
 ```OData
 https://fabrikam/DefaultCollection/_odata/v4.0-preview/Projects?$select=ProjectName
 ```
-The example returns the following three project names. 
 
-```OData
+The response lists the project names in the collection:
+
+```json
 {
-"@odata.context": "http://fabrikam/DefaultCollection/_odata/v4.0-preview/$metadata#Projects(ProjectName)",
-"value": [
-   {
-      "ProjectName": "Fabrikam Fiber"
-   },
-   {
-      "ProjectName": "Fabrikam"
-   },
-   {
-      "ProjectName": "Fabrikam Florida"
-   }
- ]
+  "@odata.context": "http://fabrikam/DefaultCollection/_odata/v4.0-preview/$metadata#Projects(ProjectName)",
+  "value": [
+    { "ProjectName": "Fabrikam Fiber" },
+    { "ProjectName": "Fabrikam" },
+    { "ProjectName": "Fabrikam Florida" }
+  ]
 }
 ```
 
 ::: moniker-end
 
-<a name="query-options"></a>
+<a id="query-options"></a>
+
 ## Use query options
 
-Query options are query string parameters that help control the amount of data being returned for a resource. Specify query options in the order listed in the following table.
+Append query options to the URL to shape the response. Specify them in the order shown here.
 
-| Query option|Description|
-|------------------|-------------------|  
-|`$apply`| Applies a transformation to a query, such as `filter`, `groupby`, `aggregate`, `compute`, `expand`, or `concat`. For examples, see [Aggregate work tracking data using Analytics](../extend-analytics/aggregated-data-analytics.md).|
-|`$compute`| Defines computed properties in a `$select`, `$filter`, or `$orderby` expression. |
-|`$filter`| Filters the list of resources returned. The query evaluates the expression specified with `$filter` for each resource in the query scope, and includes only items where the expression evaluates to `true` in the response.<br><br>Resources where the expression evaluates to `false` or `null`, or where reference properties are unavailable due to permissions, are omitted from the response. For examples, see [Query work tracking data using Analytics](../extend-analytics/wit-analytics.md).|
-|`$orderby`| Specifies the sequence in which to return records. For examples, see [Query work tracking data using Analytics](../extend-analytics/wit-analytics.md).|
-|`$top`/`$skip`| Limits the number of records returned. For examples, see [Project and organization-scoped queries](../extend-analytics/account-scoped-queries.md).|
-|`$select`|Specifies the columns you need.|
-|`$expand`|Nests other query options. Each `expandItem` is evaluated relative to the entity containing the navigation or stream property being expanded.<br><br>Provide a comma-separated list of query options, enclosed in parentheses, to the navigation property name. Allowed system query options are `$filter`, `$select`, `$orderby`, `$skip`, `$top`, `$count`, `$search`, and `$expand`. For examples, see [Query work tracking data using Analytics](../extend-analytics/analytics-recipes.md).|
-|`$skiptoken`| Skips a specified number of records.|
-|`$count` or `$count=true`|  Returns only the number of records. Enter `$count=true`to return both a count of the record and the queried data. For examples, see [Aggregate work tracking data using Analytics](../extend-analytics/aggregated-data-analytics.md).|
- 
+| Query option | Description | Examples |
+|---|---|---|
+| `$apply` | Transforms results with `filter`, `groupby`, `aggregate`, `compute`, `expand`, or `concat`. | [Aggregate data](../extend-analytics/aggregated-data-analytics.md) |
+| `$compute` | Defines computed properties for use in `$select`, `$filter`, or `$orderby`. | |
+| `$filter` | Returns only resources where the expression evaluates to `true`. Resources that evaluate to `false`, `null`, or are unavailable due to permissions are omitted. | [Query work tracking data](../extend-analytics/wit-analytics.md) |
+| `$orderby` | Sets the sort order of returned records. | [Query work tracking data](../extend-analytics/wit-analytics.md) |
+| `$top` / `$skip` | Limits the number of records returned or skips a specified number. | [Organization-scoped queries](../extend-analytics/account-scoped-queries.md) |
+| `$select` | Specifies which columns to return. | |
+| `$expand` | Includes related entities inline. Pass nested query options (`$filter`, `$select`, `$orderby`, `$skip`, `$top`, `$count`, `$search`, `$expand`) in parentheses after the navigation property name. | [Analytics recipes](../extend-analytics/analytics-recipes.md) |
+| `$skiptoken` | Continues to the next page of results (used with server-side paging). | |
+| `$count=true` | Adds a total record count to the response. Use `$count` alone to return only the count. | [Aggregate data](../extend-analytics/aggregated-data-analytics.md) |
+
 > [!TIP]
-> Avoid mixing `$apply` and `$filter` clauses in a single query. To filter your query, you can either use a `$filter` clause or use a `$apply=filter()` combination clause. Both options work, but combining them in a single query might lead to unexpected results.
+> Don't combine `$apply` and `$filter` in the same query. Use one or the other. To filter inside an `$apply` clause, use `$apply=filter(...)`. Mixing both can produce unexpected results.
 
 <a id="server-force-paging"></a>
+
 ## Understand server-side paging
 
-Analytics forces paging when query results exceed 10,000 records. In that case, you get the first page of data and a link to follow to get the next page. Client tools like Power BI Desktop or Excel automatically follow the `@odata.nextLink` and load all required records when pulling data.
+When a query returns more than 10,000 records, Analytics automatically pages the results. The response includes an `@odata.nextLink` URL that points to the next page. Client tools like Power BI Desktop and Excel follow these links automatically.
 
-You can find the `@odata.nextLink` link at the end of the JSON output. The link looks like the original query followed by `$skip` or `$skiptoken`. For example:
+The following example shows a paged response:
 
 ```json
 {
   "@odata.context":"https://analytics.dev.azure.com/fabrikam/_odata/v4.0-preview/$metadata#WorkItems",
   "value":[
-   // 10000 values here
+   // first 10,000 records
   ],
-  "@odata.nextLink":"https://https://analytics.dev.azure.com/fabrikam/_odata/v4.0-preview/WorkItems?$skiptoken=10000"
+  "@odata.nextLink":"https://analytics.dev.azure.com/fabrikam/_odata/v4.0-preview/WorkItems?$skiptoken=10000"
 }
-``` 
+```
+
+If you're querying from code, follow each `@odata.nextLink` until the response no longer contains one.
+
+::: moniker range="azure-devops"
+
+<a id="use-ai-assistance"></a>
+
+## Use AI to construct Analytics queries
+
+If you configure the [Azure DevOps MCP Server](/azure/devops/mcp-server/mcp-server-overview), you can use AI assistants to help build OData queries for Analytics.
+
+### Example prompts for constructing queries
+
+| Task | Example prompt |
+|------|----------------|
+| Query metadata | `Show me the properties available for the WorkItems entity set in <Contoso> organization` |
+| Build a basic query | `Write an OData query to list all active user stories in <Contoso> project` |
+| Filter and sort | `Write an OData query to get bugs with priority 1, sorted by created date, in <Contoso> project` |
+| Select specific columns | `Write an OData query that returns only the Title, State, and AssignedTo for work items in <Contoso> project` |
+| Use aggregations | `Write an OData query that groups work items by state and counts them in <Contoso> project` |
+| Handle paging | `Explain how to handle server-side paging when querying Analytics for large datasets` |
+| Cross-project query | `Write an OData query to get all bugs across all projects in <Contoso> organization` |
+| Snapshot query | `Write an OData query using WorkItemSnapshot to show a burndown of remaining work over the last sprint in <Contoso> project` |
+| Stale work items | `Write an OData query to find work items that haven't been updated in the last 30 days in <Contoso> project` |
+| Team workload | `Write an OData query that shows how many active work items are assigned to each team member in <Contoso> project` |
+| Pipeline failures | `Write an OData query to list the pipeline runs that failed in the last 7 days in <Contoso> project` |
+
+::: moniker-end
 
 ## Next step
 > [!div class="nextstepaction"]
@@ -365,40 +349,3 @@ You can find the `@odata.nextLink` link at the end of the JSON output. The link 
 - [What is Analytics?](../powerbi/what-is-analytics.md)
 - [OData Analytics query guidelines](../extend-analytics/odata-query-guidelines.md)
 - [Permissions and prerequisites to access Analytics in Azure DevOps](analytics-permissions-prerequisites.md)
-
-<!--- nice to have but not necessary
-
-## Query an entity and get a record count 
-
-- Metadata returned for an org versus a project 
-- Metadata returned when a project/process is defined and when it isn't 
-
-> [!TIP]    
-> Something about browsers with built-in support to format JSON/OData content. 
- 
-Build off WIQL 
-Mention WIQL to Odata extension 
-
-Query work item data 
-
-Record count query 
-
-https://analytics.dev.azure.com/content-learn/Content/_odata/v4.0-preview/WorkItems?
-    $count=true&$select=WorkItemId,Title,WorkItemType,State,CreatedDate
-
-Construct a basic query 
-Query parts (Apply, filter, select, …) 
-Compute
-Filter, Filter your data
-     Date range queries
-     Filter using related entities
-     Filter by a navigation property
-Orderby, Sort results
-top/skip
-Select
-Expand
-Count
-Return data from related entities
-Enforce server-side paging
-
- --> 
