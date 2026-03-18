@@ -233,7 +233,7 @@ You can deploy and test your app using either the Microsoft-hosted agent in Azur
 
    ![Setting the test platform version](media/continuous-test-selenium/continuous-test-selenium-10.png)
 
-   [How do I pass parameters to my test code from a build pipeline?](../../test/run-automated-tests-from-test-hub.md#pass-params)
+   [How do I pass parameters to my test code from a build pipeline?](../../test/reference-qa.yml#how-do-i-pass-parameters-to-my-test-code-from-a-pipeline)
 
 5. Save the release pipeline and start a new release. You can do this by queuing a new CI build, or by 
    choosing **Create release** from the **Release** drop-down list in the release pipeline.
