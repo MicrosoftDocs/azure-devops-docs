@@ -733,14 +733,14 @@ If you don't enable the default branch name feature, repositories initialize wit
 
 To set a default branch name at the organization level:
 
-1. On your Azure DevOps organization page, select **Organization settings** at the lower left, and then on the service menu, select **Repositories**.
+1. On your Azure DevOps organization page, select **Organization settings** at the lower left, and then on the sidebar, select **Repositories**.
 1. On the **All Repositories** page, set **Default branch name for new repositories** to **On**, and then enter a default branch name.
 
    :::image type="content" source="media/repository-settings/organization-settings-change-default-branch-name.png" alt-text="Screenshot that shows the organization-level setting for Default branch name for new repositories.":::
 
 To set a default branch name at the project level:
 
-1. On your Azure DevOps project page, select **Project settings** at the lower left, and then on the service menu, select **Repositories**.
+1. On your Azure DevOps project page, select **Project settings** at the lower left, and then on the sidebar, select **Repositories**.
 1. On the **All Repositories** page, on the **Settings** tab, set **Default branch name for new repositories** to **On**, and then enter a default branch name.
 
    :::image type="content" source="media/repository-settings/project-settings-change-default-branch-name.png" alt-text="Screenshot that shows the project-level setting for Default branch name for new repositories.":::
@@ -755,7 +755,7 @@ You can control who can manage permissions for repository branches by setting a 
 
 To manage this setting:
 
-1. On your Azure DevOps project page, select **Project settings** at the lower left, and then on the service menu, select **Repositories**.
+1. On your Azure DevOps project page, select **Project settings** at the lower left, and then on the sidebar, select **Repositories**.
 1. On the **All Repositories** page, on the **Settings** tab, set **Allow users to manage permissions for their created branches** to **On** or **Off**.
 
    :::image type="content" source="media/repository-settings/users-manage-permissions.png" alt-text="Screenshot that shows the project-level setting Allow users to manage permissions for their created branches.":::
@@ -776,7 +776,7 @@ This setting enables or disables the use of [Gravatar images](https://go.microso
 ::: moniker range="azure-devops"
 **Gravatar images** is an organization-level setting.
 
-1. On your Azure DevOps organization page, select **Organization settings** at the lower left, and then on the service menu, select **Repositories**.
+1. On your Azure DevOps organization page, select **Organization settings** at the lower left, and then on the sidebar, select **Repositories**.
 1. On the **All Repositories** page, set **Gravatar images** to **On** or **Off**.
 
    :::image type="content" source="media/repository-settings/organization-settings-gravatar.png" alt-text="Screenshot that shows the organization-level setting for Gravatar images.":::
@@ -785,7 +785,7 @@ This setting enables or disables the use of [Gravatar images](https://go.microso
 ::: moniker range="<azure-devops"
 **Gravatar images** is a project-level setting for **All Repositories**.
 
-1. On your Azure DevOps project page, select **Project settings** at the lower left, and then on the service menu, select **Repositories**.
+1. On your Azure DevOps project page, select **Project settings** at the lower left, and then on the sidebar, select **Repositories**.
 1. On the **All Repositories** page, on the **Settings** tab, set **Gravatar images** to **On** or **Off**.
 ::: moniker-end
 
@@ -799,7 +799,7 @@ This setting enables or disables the use of [Gravatar images](https://go.microso
 
 This repository setting controls whether users can create new server-side [forks](forks.md). Disabling this setting doesn't remove existing forks.
 
-1. From **Project Settings**, on the service menu, select **Repositories**.
+1. From **Project Settings**, on the sidebar, select **Repositories**.
 1. On the **All Repositories** page, on the **Repositories** tab, select a repository.
 1. On the **\<Repository name>** page, on the **Settings** tab, set **Forks** to **On** or **Off**.
 
@@ -883,7 +883,7 @@ You can set policies on a specific branch name, or on the default branch, across
 
 To set policies to protect specific or default branch names across a project:
 
-1. From **Project Settings**, on the service menu, select **Repositories**.
+1. From **Project Settings**, on the sidebar, select **Repositories**.
 1. On the **All Repositories** page, select the **Policies** tab.
 1. In **Branch Policies** at the bottom of the page, select the plus sign **+**.
 1. On the **Add branch protection** screen, select **Protect the default branch of each repository** or **Protect current and future branches matching a specified pattern**.
@@ -938,7 +938,7 @@ If most of your contributors are on Windows or macOS, it's best to enable the **
 
 This setting prevents contributors from introducing case-only differences. The setting avoids case-sensitivity conflicts by blocking pushes that change name casing on files, folders, branches, and tags. The user has to rewrite their unpushed history to fix the problem, and then try the push again.
 
-This setting doesn't fix a repository that already contains objects that differ only by case. It's best to fix such issues before you turn on the policy. Rename files and folders or re-create [branches](create-branch.md) and [tags](git-tags.md) to use nonconflicting names.
+This setting doesn't fix a repository that already contains objects that differ only by case. It's best to fix such issues before you enable the policy. Rename files and folders or re-create [branches](create-branch.md) and [tags](git-tags.md) to use nonconflicting names.
 
 ::: moniker-end
 
@@ -1192,13 +1192,9 @@ ID    Name                   Is Blocking    Is Enabled    Repository Id         
 
 ***
 
-## Next step
-
-> [!div class="nextstepaction"]
-> [Improve code quality with branch policies](branch-policies.md)
-
 ## Related content
 
+- [Improve code quality with branch policies](branch-policies.md)
 - [Configure Git repository policies by using a configuration file](../../cli/policy-configuration-file.md)
 - [Default Git permissions (Security)](../../organizations/security/default-git-permissions.md?toc=/azure/devops/repos/toc.json&bc=/azure/devops/repos/breadcrumb/toc.json)
 - [Set permissions (Security)](set-git-repository-permissions.md?toc=/azure/devops/repos/toc.json&bc=/azure/devops/repos/breadcrumb/toc.json)
