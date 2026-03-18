@@ -18,8 +18,8 @@ Universal Packages lets you package and share any number of files, regardless of
 
 ## Prerequisites
 
-| **Product**       | **Requirements**                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
-|--------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| **Product**        | **Requirements**          |
+|--------------------|---------------------------|
 | **Azure DevOps**   | - An [Azure DevOps project](../../organizations/projects/create-project.md).<br> - **Permissions:**<br>   &nbsp;&nbsp;&nbsp;&nbsp;- To grant access to all pipelines in the project, you must be a member of the [Project Administrators group](../../organizations/security/change-project-level-permissions.md).<br>   &nbsp;&nbsp;&nbsp;&nbsp;- To create service connections, you must have the *Administrator* or *Creator* role for [service connections](../library/add-resource-protection.md). |
 
 ## Copy files
@@ -80,7 +80,7 @@ When publishing a new package, the Universal Packages task will automatically se
 
 ### [YAML](#tab/yaml)
 
-To enable versioning for your package, add a `versionOption` input to your UniversagePackage task. The available options for publishing a new version are: `major`, `minor`, `patch`, or `custom`.
+To enable versioning for your package, add a `versionOption` input to your UniversalPackages task. The available options for publishing a new version are: `major`, `minor`, `patch`, or `custom`.
 
 Selecting `custom` enables you to manually specify your package version. The other options get the latest package version from your feed and increment the selected version segment by 1. For example, if you have a package *testPackage 1.0.0*:
 

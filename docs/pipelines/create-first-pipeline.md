@@ -6,7 +6,7 @@ ms.topic: get-started
 ms.assetid: 038A5329-1B8F-46D9-A0C3-DA3FCFA43996
 ms.author: sdanie
 author: steved0x
-ms.date: 03/31/2025
+ms.date: 03/10/2026
 monikerRange: '<= azure-devops'
 ai-usage: ai-assisted
 ---
@@ -586,7 +586,7 @@ Now you can see the results of your changes. Go to **Azure Pipelines** and selec
 
 <a id="use-ai-assistance"></a>
 
-## AI-Guided Pipeline Creation with Copilot
+## Use AI to create your first pipeline
 
 If you configure the [Azure DevOps MCP Server](../mcp-server/mcp-server-overview.md), you can get help creating, understanding, and troubleshooting your first pipeline using natural language.
 
@@ -631,6 +631,9 @@ If you configure the [Azure DevOps MCP Server](../mcp-server/mcp-server-overview
 | Trigger recommendations | `What triggers should I use for my first pipeline in <Contoso>?` |
 | Agent capabilities | `Do we already have custom agent capabilities this pipeline needs in <Contoso>?` |
 | Suggest improvements | `Suggest improvements to this pipeline in <Contoso>` |
+
+> [!TIP]
+> If you're using Visual Studio Code, [agent mode](/visualstudio/ide/copilot-chat-context#agent-mode) is especially helpful for scaffolding new pipelines and troubleshooting first-run failures.
 
 ## Next steps
 

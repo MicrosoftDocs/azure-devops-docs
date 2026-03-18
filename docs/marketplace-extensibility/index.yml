@@ -33,6 +33,8 @@ landingContent:
             url: ../marketplace/install-extension.md?toc=/azure/devops/marketplace-extensibility/toc.json
           - text: Manage extension permissions
             url: ../marketplace/grant-permissions.md?toc=/azure/devops/marketplace-extensibility/toc.json
+          - text: Allow extensions to access local network resources
+            url: ../marketplace/allow-extensions-local-network.md?toc=/azure/devops/marketplace-extensibility/toc.json
   - title: Develop extensions
     linkLists:
       - linkListType: quickstart

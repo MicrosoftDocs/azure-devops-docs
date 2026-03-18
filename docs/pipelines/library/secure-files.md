@@ -1,11 +1,11 @@
 ---
 title: Secure files for Azure Pipelines
-description: Understand how to add and consume secure files for Azure Pipelines.
+description: Understand how to add and use secure files in Azure Pipelines.
 ms.assetid: 1B115D68-5667-445C-9130-00D658EEFE39
 monikerRange: '<= azure-devops'
-ms.date: 01/12/2026
+ms.date: 03/10/2026
 ms.topic: how-to
-ms.custom: pipelinesresourcesrefresh, sfi-image-nochange
+ms.custom: pipelinesresourcesrefresh, sfi-image-nochange, awp-ai
 ai-usage: ai-assisted
 ---
 
@@ -13,7 +13,9 @@ ai-usage: ai-assisted
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
-This article explains how to securely store and use sensitive files, such as certificates and keys, in Azure Pipelines with the secure files library. Secure files help protect sensitive data by encrypting it on the server and restricting access to authorized pipelines, ensuring your credentials and other critical files remain safe.
+This article explains how to securely store and use sensitive files, such as certificates and keys, in Azure Pipelines with the secure files library. Secure files help protect sensitive data by encrypting files at rest on the server. Only pipelines that you explicitly authorize can access secure files, which helps ensure your credentials and other critical files remain safe.
+
+This article covers adding secure files, configuring permissions, and using secure files in a pipeline.
 
 Use the secure files [library](index.md) to store files such as:
 
@@ -24,18 +26,22 @@ Use the secure files [library](index.md) to store files such as:
 
 The size limit for each secure file is 10 MB.
 
-Secure files are stored on the server in encrypted form and can be consumed only from a pipeline task. Secure files are a [protected resource](../security/resources.md). You can use approvals, checks, and pipeline permissions to limit access to the files. Secure files also use [library security model](index.md#library-security) roles.
+Secure files are stored on the server in encrypted form and can only be used from a pipeline task. Secure files are a [protected resource](../security/resources.md). You can use approvals, checks, and pipeline permissions to limit access to the files. Secure files also use [library security model](index.md#library-security) roles.
 
 ## Prerequisites
 
-| **Requirement** | **Details** |
-|---|---|
-| **Azure DevOps Project** | - An [Azure DevOps project](../../organizations/projects/create-project.md).<br> - Permissions to create pipelines and add library items.<br> - **Required roles:**<br>      &nbsp;&nbsp;&nbsp;&nbsp; - Project Administrator, Contributor, or a custom role with permissions to manage Library items.<br>      &nbsp;&nbsp;&nbsp;&nbsp; - To manage Library security and permissions, you need Project Administrator or equivalent permissions.<br> - **Settings:**<br>      &nbsp;&nbsp;&nbsp;&nbsp; - Ensure your Azure DevOps organization allows pipeline resource access.<br>      &nbsp;&nbsp;&nbsp;&nbsp; - Verify that the project's pipeline settings don't restrict secure file usage. |
-| **Secure File** | - A certificate, keystore, or provisioning file you want to use securely in your pipeline.<br> - File size must not exceed 10 MB. |
+- An [Azure DevOps project](../../organizations/projects/create-project.md).
+- Permissions to create pipelines and add library items.
+- One of the following roles:
+  - Project Administrator, Contributor, or a custom role with permissions to manage Library items.
+  - To manage Library security and permissions, you need Project Administrator or equivalent permissions.
+- Your Azure DevOps organization allows pipeline resource access and the project's pipeline settings don't restrict secure file usage.
+- A certificate, keystore, or provisioning file you want to use securely in your pipeline. File size must not exceed 10 MB.
 
 ## Add a secure file
 
-1. In your Azure DevOps project, go to **Pipelines** > **Library** and select the **Secure files** tab.
+1. In your Azure DevOps project, go to **Pipelines** > **Library** from the left menu.
+1. Select the **Secure files** tab.
 
    :::image type="content" source="media/secure-files-tab.png" alt-text="Screenshot of selecting the Secure Files tab.":::
 
@@ -43,16 +49,17 @@ Secure files are stored on the server in encrypted form and can be consumed only
 
    :::image type="content" source="media/upload-secure-file.png" alt-text="Screenshot of uploading your file.":::
 
-1. Select **OK**. After you upload the file, you can delete it but you can't replace it.
+1. Select **OK**.
+1. Verify that the new file appears in the **Secure files** list. After you upload a secure file, you can't edit or replace its contents. To update a secure file, delete the existing file and then upload a new version. You might need to update any pipelines that reference the file if the file name changes.
 
 ## Define security roles and permissions
 
 You can define security role restrictions and permissions for all items in a library or for individual items.
 
-- To assign security roles for all items in a library, select **Security** on the **Library** page.
+- To assign security roles for all items in a library, go to **Pipelines** > **Library** from the left menu, and then select **Security**.
 - To define permissions for an individual file:
-  1. Select the file from the **Secure files** list.
-  1. At the top of the **Secure file** page, select:
+  1. In **Pipelines** > **Library** from the left menu, select the **Secure files** tab, and then select the file.
+  1. At the top of the secure file detail page, select:
      - **Security** to set users and security roles that can access the file.
      - **Pipeline permissions** to select YAML pipelines that can access the file.
      - **Approvals and checks** to set approvers and other checks for using the file. For more information, see [Approvals and checks](../process/approvals.md).
@@ -66,12 +73,13 @@ To use a secure file in YAML pipelines, authorize the pipeline to use the file. 
 
 To authorize a pipeline or all pipelines to use a secure file:
 
-1. At the top of the page for the secure file, select **Pipeline permissions**.
+1. In **Pipelines** > **Library** from the left menu, select the **Secure files** tab, and then select the file.
+1. At the top of the secure file detail page, select **Pipeline permissions**.
 1. On the **Pipeline permissions** screen, select **+**, and then select a project pipeline to authorize. Or, to authorize all pipelines to use the file, select the **More actions** icon, select **Open access**, and select **Open access** again to confirm.
 
-## Consume a secure file in a pipeline
+## Use a secure file in a pipeline
 
-To consume secure files in a pipeline, use the [Download Secure File](/azure/devops/pipelines/tasks/reference/download-secure-file-v1) utility task. The pipeline agent must be running version 2.182.1 or greater. For more information, see [Agent version and upgrades](../agents/agents.md#agent-version-and-upgrades).
+To use secure files in a pipeline, use the [Download Secure File](/azure/devops/pipelines/tasks/reference/download-secure-file-v1) utility task. Before you begin, make sure you [add the secure file](#add-a-secure-file) to the library and [authorize your pipeline](#secure-file-authorization) to use the file. The pipeline agent must be running version 2.182.1 or greater. For more information, see [Agent version and upgrades](../agents/agents.md#agent-version-and-upgrades).
 
 The following example YAML pipeline downloads a secure certificate file and installs it in a Linux environment.
 
@@ -84,9 +92,9 @@ The following example YAML pipeline downloads a secure certificate file and inst
 
 - script: |
     echo Installing $(caCertificate.secureFilePath) to the trusted CA directory...
-    sudo chown root:root $(caCertificate.secureFilePath)
-    sudo chmod a+r $(caCertificate.secureFilePath)
-    sudo ln -s -t /etc/ssl/certs/ $(caCertificate.secureFilePath)
+    sudo chown root:root $(caCertificate.secureFilePath)          # Change file ownership to root
+    sudo chmod a+r $(caCertificate.secureFilePath)                # Make the file readable by all users
+    sudo ln -s -t /etc/ssl/certs/ $(caCertificate.secureFilePath) # Create a symbolic link in the trusted certificates directory
 ```
 
 ::: moniker range="< azure-devops"

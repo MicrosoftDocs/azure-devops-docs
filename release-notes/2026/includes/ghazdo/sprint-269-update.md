@@ -10,7 +10,9 @@ ms.topic: include
 
 Security overview now enforces the **Advanced Security: Read alerts** permission across all views (Risk and Coverage). Repositories where the current user lacks this permission are no longer visible in security overview results. This change ensures that security overview respects the same access controls as the repository-level alerts experience, preventing unauthorized visibility into which repositories have active findings.
 
-### Build identity access restricted for Advanced Security APIs
+### Build identity access restricted for Advanced Security APIs (temporarily reverted)
+
+**This change has been temporarily rolled back. See [Build identity access restricted for Advanced Security APIs rollback](https://devblogs.microsoft.com/devops/temporary-rollback-build-identities-can-access-advanced-security-read-alerts-again) for more details.**
 
 Advanced Security REST APIs no longer accept build service identities (such as `Project Collection Build Service`) as callers. This change prevents pipeline-based automation from accessing or modifying security alert data using build service accounts, reducing the risk of unintended alert state changes during CI/CD runs. If you have automation that interacts with Advanced Security APIs using a build identity, update those workflows to use a named user or service principal with the appropriate Advanced Security permissions.
 
