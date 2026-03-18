@@ -248,8 +248,8 @@
       href: maven/jitpack-upstream.md
   - name: Python
     items:
-    - name: Use packages from PyPi
-      displayName: python, PyPi, upstream
+    - name: Use packages from PyPI
+      displayName: python, PyPI, upstream
       href: python/use-packages-from-pypi.md
   - name: Universal Packages
     items:
