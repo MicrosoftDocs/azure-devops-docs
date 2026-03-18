@@ -1,13 +1,15 @@
 ---
 title: Get Started as a Project Administrator
 titleSuffix:  Azure DevOps
-description: Learn how to structure a project, manage users, and more to support your software development teams in Azure DevOps.
+description: Learn how to structure projects, manage users, and set policies as a project administrator in Azure DevOps to support your development teams effectively.
+ms.custom: copilot-scenario-highlight
 ms.subservice: azure-devops-new-user
 ms.author: chcomley
 author: chcomley
-ms.topic: concept-article
+ms.topic: get-started
+ai-usage: ai-assisted
 monikerRange: '<= azure-devops'
-ms.date: 02/17/2026
+ms.date: 03/17/2026
 #customer intent: As a project administrator, I want to structure my projects and manage users in Azure DevOps, so I can support my development teams.
 ---
 
@@ -15,109 +17,125 @@ ms.date: 02/17/2026
 
 [!INCLUDE [version-lt-eq-azure-devops.md](../includes/version-lt-eq-azure-devops.md)]  
 
-With most Azure DevOps Services, you can start using the service and configure resources as you go. No up-front work is required. Most settings define defaults. 
+As a member of the **Project Administrators** group, you're responsible for configuring resources, managing permissions, and setting policies for your project. This article walks through the key tasks to set up and maintain a project in Azure DevOps. 
 
-If you created a project or you're added to the **Project Administrators** group, get familiar with the administrative tasks you're charged with. There are a few tasks you might want to do to ensure a smooth operational experience. 
-
-[!INCLUDE [ai-assistance-callout](../includes/ai-assistance-callout.md)]
+[!INCLUDE [ai-assistance-mcp-server-tip](../includes/ai-assistance-mcp-server-tip.md)]
 
 ## Prerequisites
 
 [!INCLUDE [prerequisites-project-administrator-only](../includes/prerequisites-project-administrator-only.md)]
 
-> [!NOTE]   
-> This article provides an overview of tasks a member of the **Project Administrators** group should review and attend to. For information on tasks to be performed by members of the **Project Collection Administrators** group, see [Manage your organization or project collection](manage-organization-collection.md).
+## Add users to your project
 
-[!INCLUDE [add-users-project](../includes/get-started/add-users-project.md)]  
- 
-[!INCLUDE [share-project-vision](../includes/get-started/share-project-vision.md)]  
+Add users to a team or project so they can contribute. Adding a user to a team automatically adds them to the project's **Contributors** group, which grants permissions for work items, code, builds, and releases. Team members also appear in team-specific tools like sprint capacity planning and the Team Members widget.
 
-[!INCLUDE [enable-remove-services](../includes/get-started/enable-remove-services.md)]  
+For more information, see [Add users or groups to a team or project](../organizations/security/add-users-team-project.md). For an overview of default permissions, see [Default permissions quick reference](../organizations/security/permissions-access.md).
+
+## Share your project vision
+
+Use the [project summary page](../organizations/projects/project-vision-status.md) to share goals and onboarding information through a **README** file. For more detailed documentation, [create a project wiki](../project/wiki/wiki-create-repo.md) to capture processes, procedures, and guidelines.
+
+## Enable or disable services
+
+Simplify the web portal by disabling services your project doesn't use. For example, if you only track bugs, disable everything except **Boards**. For more information, see [Turn a service on or off](../organizations/settings/set-services.md).  
 
 ## Manage security and permissions
 
-Permissions and security groups control access to specific tasks. To quickly understand the defaults configured for your project, see [Default permissions and access](../organizations/security/permissions-access.md).  
+Security groups and permissions control who can access and modify resources in your project. Review [Default permissions and access](../organizations/security/permissions-access.md) to understand what users can do by default, then see [Change project-level permissions](../organizations/security/change-project-level-permissions.md) to adjust them.
 
-[!INCLUDE [project-level-permissions](../organizations/security/includes/project-level-permissions.md)]
-
-For more information about security and setting permissions at the project-level, review the following articles:
-
-- [Get started with permissions, access, and security groups](../organizations/security/about-permissions.md)   
-- [Change permissions at the project-level](../organizations/security/change-project-level-permissions.md) 
+[!INCLUDE [project-level-permissions](../organizations/security/includes/project-level-permissions.md)] 
  
 ### Add members to the Project Administrators group 
 
-[!INCLUDE [add-project-administrators](../includes/get-started/add-project-administrators.md)]  
+The person who creates a project is automatically added to the **Project Administrators** group. Add at least one other member to this group to ensure continuity. See [Add members to the Project Administrators group](../organizations/security/change-project-level-permissions.md#add-members-to-the-project-administrators-group).  
 
 ### Grant or restrict permissions  
 
-Permissions are managed at the following three levels and through role-based assignments:
+As a project administrator, you can grant or restrict permissions at the project and object levels. To delegate tasks to others, you can:
 
-- object
-- project
-- organization or collection
+- [Add users to a built-in or custom security group](../organizations/security/add-remove-manage-user-group-security-group.md)
+- [Assign role-based permissions](../organizations/security/about-permissions.md#role-based-permissions) for resources like agent pools, service connections, and pipelines
+- [Restrict access to specific features](../organizations/security/restrict-access.md) 
 
-As a member of the **Project Administrators** group, you can grant or restrict permissions for all objects at the project-level. To delegate specific tasks to others, a good approach is to add the users to a built-in or custom security group, or add them to a specific role. For more information, see the following articles:
+::: moniker range="azure-devops"
 
-- [Use role-based permissions](../organizations/security/about-permissions.md#role-based-permissions)
-- [Add/remove users or groups, manage security groups](../organizations/security/add-remove-manage-user-group-security-group.md)
-- [Manage access to specific features and functions](../organizations/security/restrict-access.md)   
-- [Set object-level permissions](../organizations/security/set-object-level-permissions.md) 
+> [!NOTE]
+> If you enable the **Limit user visibility and collaboration to specific projects** preview feature for the organization, users added to the **Project-Scoped Users** group can't access projects that they weren't added to. For more information, see [Limit user visibility for projects](manage-organization-collection.md#project-scoped-user-group).
 
-[!INCLUDE [review-notifications](../includes/get-started/review-notifications.md)] 
+::: moniker-end
 
-[!INCLUDE [determine-traceability-requirements](../includes/get-started/determine-traceability-requirements.md)]  
+## Review and update notifications
+
+Each project comes with [default notification subscriptions](../organizations/notifications/oob-built-in-notifications.md). You can also define [team or project-level subscriptions](../organizations/notifications/manage-team-group-global-organization-notifications.md). If users receive too many notifications, direct them to [manage their personal notifications](../organizations/notifications/manage-your-personal-notifications.md).
+
+## Set up end-to-end traceability
+
+Link work items, commits, builds, and test results to track changes from requirements through deployment. For more information, see [End-to-end traceability](../cross-service/end-to-end-traceability.md) and [Cross-service integration overview](../cross-service/cross-service-overview.md).  
 
 ## Set DevOps policies 
 
-Set policies to support collaboration across your teams and automatically remove obsolete files. To set policies that govern Azure Repos, Azure Pipelines, and Azure Test Plans, review the following articles: 
+Set policies to help enforce code quality, compliance, and resource management across your project.
 
-- [Manage branch policies](../repos/git/branch-policies.md)  
-- [Add Team Foundation Version Control (TFVC) check-in policies](../repos/tfvc/add-check-policies.md)  
-- [Set build and release pipeline retention policies](../pipelines/policies/retention.md) 
-- [Set test retention policies](../test/how-long-to-keep-test-results.md) 
+- **Branch policies** — Require reviewers, enforce successful builds, or block direct pushes to protected branches. See [Manage branch policies](../repos/git/branch-policies.md).
+- **TFVC check-in policies** — Enforce rules like code analysis or work item association before check-in. See [Add check-in policies](../repos/tfvc/add-check-policies.md).
+- **Pipeline retention policies** — Control how long to keep build and release runs, artifacts, and logs. See [Set retention policies](../pipelines/policies/retention.md).
+- **Test retention policies** — Set how long to keep automated and manual test results. See [Set test retention policies](../test/how-long-to-keep-test-results.md).
  
 ## Configure and customize Azure Boards 
 
-You can configure and customize Azure Boards to support many business requirements for planning and tracking work. At a minimum, you should configure the following elements:
+At a minimum, configure **area paths** to group work items by team, product, or feature area, and **iteration paths** to group work into sprints or milestones. For a full overview of configuration options, see [Configure and customize Azure Boards](../boards/configure-customize.md).
 
-- **Area paths** to group work items by team, product, or feature area
-- **Iteration paths** to group work into sprints, milestones, or other event-specific or time-related periods 
+### Define area and iteration paths
 
-If you're new to Azure Boards and want an in-depth overview of what you can configure and customize, see [Configure and customize Azure Boards](../boards/configure-customize.md).
-
-[!INCLUDE [define-area-iteration-paths](../includes/get-started/define-area-iteration-paths.md)] 
+Define [area paths](../organizations/settings/set-area-paths.md) to organize work by team, product, or feature area. Define [iteration paths](../organizations/settings/set-iteration-paths-sprints.md) to assign work to sprints or milestones. This configuration is required for sprint backlogs, taskboards, and capacity planning. For an overview, see [About areas and iteration paths](../organizations/settings/about-areas-iterations.md). 
  
 [!INCLUDE [customize-work-tracking](../includes/get-started/customize-work-tracking.md)] 
 
 ## Integrate with other services 
 
-Azure DevOps supports integration with Azure, GitHub, and many other services. As a member of the **Project Administrators** group, you can configure integration with many of these services. For more information, see the following articles. 
+Azure DevOps integrates with Azure, GitHub, and many other services. You can also extend functionality by [installing extensions from the Marketplace](../marketplace/install-extension.md).
 
-|Service integration |Resources |
-|--------------------|----------|
-| **Azure DevOps and GitHub** | [Azure DevOps and GitHub integration overview](../cross-service/github-integration.md) |
-| **Azure Boards and GitHub** | [Azure Boards and GitHub integration](../boards/github/index.md) |
-| **Microsoft Teams** | - [Azure Boards with Microsoft Teams](../boards/integrations/boards-teams.md) <br> - [Azure Repos with Microsoft Teams](../repos/integrations/repos-teams.md) <br> - [Azure Pipelines with Microsoft Teams](../pipelines/integrations/microsoft-teams.md) |
-| **Slack** | - [Azure Boards with Slack](../boards/integrations/boards-slack.md) <br> - [Azure Repos with Slack](../repos/integrations/repos-slack.md) <br> - [Azure Pipelines with Slack](../pipelines/integrations/slack.md) |
-| **Azure DevOps service hooks** | [Integrate with service hooks](../service-hooks/overview.md) |
+| Service integration | Resources |
+|---|---|
+| **GitHub** | [Azure DevOps and GitHub integration overview](../cross-service/github-integration.md) <br> [Azure Boards–GitHub integration](../boards/github/index.md) |
+| **Microsoft Teams** | [Azure Boards](../boards/integrations/boards-teams.md) · [Azure Repos](../repos/integrations/repos-teams.md) · [Azure Pipelines](../pipelines/integrations/microsoft-teams.md) |
+| **Slack** | [Azure Boards](../boards/integrations/boards-slack.md) · [Azure Repos](../repos/integrations/repos-slack.md) · [Azure Pipelines](../pipelines/integrations/slack.md) |
+| **Service hooks** | [Integrate with service hooks](../service-hooks/overview.md) — push events to external services like Jenkins, Trello, or custom webhooks |
+| **REST APIs** | [Azure DevOps REST API reference](/rest/api/azure/devops/) — build custom integrations and automation |
 
-[!INCLUDE [add-teams-to-scale](../includes/get-started/add-teams-to-scale.md)] 
+## Add teams to scale your project
+
+As your organization grows, add teams so each team gets its own [set of customizable Agile tools](../organizations/settings/about-teams-and-settings.md) – backlogs, boards, sprints, and dashboards.
+
+For more information, see [Add a team](../organizations/settings/add-teams.md) and [Add a team administrator](../organizations/settings/add-team-administrator.md). 
+
+::: moniker range="azure-devops"
+
+<a id="use-ai-assistance"></a>
+
+## Use AI to manage your project
+
+If you configure the [Azure DevOps MCP Server](../mcp-server/mcp-server-overview.md), you can use AI assistants to manage your project through natural language prompts.
+
+### Example prompts for project administration
+
+| Task | Example prompt |
+|------|----------------|
+| Manage team members | `List all members of the <Frontend> team in <Contoso> project` |
+| Check permissions | `Show the permissions for the <Contributors> group in <Contoso> project` |
+| Review project settings | `Show the process template and settings for <Contoso> project` |
+| Set up areas | `List all area paths in <Contoso> project` |
+| Manage iterations | `Show the current and upcoming iterations for <Contoso> project` |
+| Add users | `Add user <jamal@contoso.com> to the <Contributors> group in <Contoso> project` |
+| Review integrations | `List all service hooks configured in <Contoso> project` |
+| Audit access changes | `Show permission changes in <Contoso> project from the past <14> days` |
+| Onboard a new team | `Create a new team called <Mobile> in <Contoso> project and add users <sara@contoso.com> and <jamal@contoso.com>` |
+| Generate a project health snapshot | `Summarize open bugs, active pull requests, and running pipelines in <Contoso> project` |
+
+::: moniker-end
  
 ## Related content
 
 - [View and update project summary page](../organizations/projects/project-vision-status.md)
 - [Get started managing your organization or project collection](manage-organization-collection.md)
 - [About user, team, project, and organization-level settings](../organizations/settings/about-settings.md)
-
-
-<!--- 
-What to tell their users?
-- advantage of setting up teams for repos and pipelines 
-::: moniker range="azure-devops"  
-
-> [!NOTE]  
-> If the **Limit user visibility and collaboration to specific projects** preview feature is enabled for the organization, users added to the **Project-Scoped Users** group won't be able to access projects that they haven't been added to. For more information, see [Manage your organization, Limit  user visibility for projects and more](manage-organization-collection.md#project-scoped-user-group).
-
-::: moniker-end  
--->
