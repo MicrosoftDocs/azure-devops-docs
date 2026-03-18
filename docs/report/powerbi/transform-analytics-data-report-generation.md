@@ -175,6 +175,8 @@ Fields like **Story Points** or **Remaining Work** may contain null values when 
 
 1. With the new column selected, select **Transform** > **Data Type** > **Percentage**.
 
+<a id="rename-column-fields"></a>
+
 ## Rename columns
 
 After expanding and transforming columns, rename them so they're readable in your report visuals.
