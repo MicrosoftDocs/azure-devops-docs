@@ -45,10 +45,10 @@ productDirectory:
       links:
         - url: ./boards/get-started/what-is-azure-boards.md
           text: What is Azure Boards?
-        - url: ./boards/get-started/create-work-items.md
-          text: Create work items
         - url: ./boards/get-started/plan-track-work.md
           text: Plan and track work
+        - url: ./boards/configure-customize.md
+          text: Configure and customize boards
     # Card
     - title: Azure Pipelines
       imageSrc: ./media/index/DevOpsIconPipelines96.svg
@@ -56,9 +56,9 @@ productDirectory:
       links:
         - url: ./pipelines/get-started/what-is-azure-pipelines.md
           text: What is Azure Pipelines?
-        - url: ./pipelines/get-started/create-your-first-pipeline.md
+        - url: ./pipelines/create-first-pipeline.md
           text: Create your first pipeline
-        - url: /azure/devops/pipelines/troubleshooting/troubleshooting.md
+        - url: ./pipelines/troubleshooting/troubleshooting.md
           text: Troubleshoot pipeline runs
     # Card
     - title: Azure Artifacts
