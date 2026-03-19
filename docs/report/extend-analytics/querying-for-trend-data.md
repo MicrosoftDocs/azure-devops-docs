@@ -1,34 +1,32 @@
 ---
-title: Query trend data
-titleSuffix: Azure DevOps 
-description: Learn how to query Analytics trend data and consume it in a client tool when working from Azure DevOps.
+title: Query Trend Data With OData Aggregation in Azure DevOps
+titleSuffix: Azure DevOps
+description: Learn how to query trend data in Azure DevOps using OData aggregation. Filter, group, and analyze snapshot entity sets for actionable insights.
 ms.subservice: azure-devops-analytics
+ms.custom: copilot-scenario-highlight
 ms.assetid: FEF88D72-32D7-4DE8-B11E-BCB1A491C3FC
 ms.author: chcomley
 author: chcomley
-ms.topic: tutorial
-monikerRange: "<=azure-devops"
-ms.date: 02/12/2025
+ms.topic: how-to
+monikerRange: "<= azure-devops"
+ms.date: 03/18/2026
+ai-usage: ai-assisted
 ---
 
-# Query trend data
+# Query trend data with OData aggregation
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
-Examining trends in data and making period-over-period comparisons are important aspects of reporting and data analysis. Analytics supports these capabilities.
+Analytics stores daily snapshots of every work item in two entity sets: `WorkItemSnapshot` (tracks field values like state and effort) and `WorkItemBoardSnapshot` (tracks board column positions). Because each entity contains one row per work item per day, these tables grow quickly. Use [OData aggregation extensions](aggregated-data-analytics.md) to filter by date and group results before returning data to a client tool.
+
+This article shows how to build trend queries by date range and by iteration, using `$apply` with `filter`, `groupby`, and `aggregate`.
 
 [!INCLUDE [temp](../includes/analytics-preview.md)]
 
-Trend data is exposed in the WorkItemSnapshot and WorkItemBoardSnapshot entity sets. They're constructed so every work item, from the day it was created until today, exists for each day. For an organization with only one work item that was created a year ago, there are 365 rows in this entity. For large projects, these entities would be impractical to use with client tools.
-
-What is the solution? Use the [Aggregation extensions](aggregated-data-analytics.md).      
-
-Using the OData Aggregation Extensions, you can return aggregated data from Azure DevOps that is conducive to reporting. For example, you could show bug trend for the month of March. Bug trends are a common and critical part of managing any project so you can put it to good use immediately.
-
-::: moniker range=" < azure-devops"
+::: moniker range="< azure-devops"
 
 > [!NOTE]
-> The examples shown in this document are based on an Azure DevOps Services URL. Substitute your Azure DevOps Server URL as needed.
+> The examples shown in this article are based on an Azure DevOps Services URL. Substitute your Azure DevOps Server URL as needed.
 
 > [!div class="tabbedCodeSnippets"]
 > ```OData
@@ -37,66 +35,53 @@ Using the OData Aggregation Extensions, you can return aggregated data from Azur
 
 ::: moniker-end
 
+[!INCLUDE [ai-assistance-mcp-server-tip](../../includes/ai-assistance-mcp-server-tip.md)]
+
 ## Prerequisites
 
 [!INCLUDE [prerequisites-simple](../includes/analytics-prerequisites-simple.md)]
 
 <a id="trend-data"></a>
 
-## Construct a basic query for trend data   
- 
-To effectively query the WorkItemSnapshot table, follow these basic requirements:
-* Filter the data by date.
-* Group the aggregation by at least the date. If not, the response includes a warning.
+## Query trend data by date range
 
-The query to create a bug trend report looks like the following example:
+When you query snapshot tables, follow two requirements:
+
+1. **Filter by date** — each table contains one row per work item per day, so an unfiltered query returns a very large result set.
+1. **Group by date** — if you omit the date grouping, the response includes a warning.
+
+The following query returns a daily bug count by state for March 2016:
 
 > [!div class="tabbedCodeSnippets"]
 > ```OData
-> https://analytics.dev.azure.com/{OrganizationName}/{ProjectName}/_odata/{version}//WorkItemSnapshot?
+> https://analytics.dev.azure.com/{OrganizationName}/{ProjectName}/_odata/{version}/WorkItemSnapshot?
 >   $apply=
 >     filter(DateValue ge 2016-03-01Z and DateValue le 2016-03-31Z and WorkItemType eq 'Bug')/
->     groupby((DateValue,State), aggregate($count as Count))
+>     groupby((DateValue, State), aggregate($count as Count))
 >   &$orderby=DateValue
 > ```
 
-It returns a result similar to the following example:
+Returns:
 
 > [!div class="tabbedCodeSnippets"]
 > ```JSON
 > {
->   "@odata.context": "https://analytics.dev.azure.com/{OrganizationName}/{ProjectName}/_odata/{version}//$metadata#WorkItemSnapshot(DateValue,State,Count)",
 >   "value": [
->     {
->       "@odata.id": null,
->       "State": "Active",
->       "DateValue": "2016-03-01T00:00:00-08:00",
->       "Count": 2666
->     },
->     {
->       "@odata.id": null,
->       "State": "Closed",
->       "DateValue": "2016-03-01T00:00:00-08:00",
->       "Count": 51408
->     }
+>     { "DateValue": "2016-03-01T00:00:00-08:00", "State": "Active", "Count": 2666 },
+>     { "DateValue": "2016-03-01T00:00:00-08:00", "State": "Closed", "Count": 51408 }
 >   ]
 > }
 > ```
 
-This query produces at most `31 * (number of bug states)`. The default bug has three states:
-- Active
-- Resolved
-- Closed
+This query returns at most 31 days multiplied by the number of bug states (Active, Resolved, Closed) - 93 rows maximum, regardless of how many work items exist.
 
- At most, this query returns 93 rows no matter how many thousands of records actually exist. It provides a much more compact form of returning data.
+## Query trend data by iteration
 
-Let's look at a variation on this example. You want to see the bug trend for an iteration or a release that starts with one iteration and ends with another.  
-
-To construct that query, do the following example:
+Instead of hard-coding dates, filter by iteration and reference its start and end dates so the date range adjusts automatically. The `Iteration/EndDate eq null` check handles iterations that don't have an end date yet.
 
 > [!div class="tabbedCodeSnippets"]
 > ```OData
-> https://analytics.dev.azure.com/{OrganizationName}/{ProjectName}/_odata/{version}//WorkItemSnapshot?
+> https://analytics.dev.azure.com/{OrganizationName}/{ProjectName}/_odata/{version}/WorkItemSnapshot?
 >   $apply=
 >     filter(WorkItemType eq 'Bug')/
 >     filter(Iteration/IterationName eq 'Sprint 99')/
@@ -105,34 +90,52 @@ To construct that query, do the following example:
 >   &$orderby=DateValue
 > ```
 
-It returns a result similar to the following example:
+Returns:
 
 > [!div class="tabbedCodeSnippets"]
 > ```JSON
 > {
->   "@odata.context": "https://analytics.dev.azure.com/{OrganizationName}/{ProjectName}/_odata/{version}//$metadata#WorkItemSnapshot(DateValue,State,Count)",
 >   "value": [
->     {
->       "@odata.id": null,
->       "State": "Active",
->       "DateValue": "2016-04-04T00:00:00-07:00",
->       "Count": 320
->     },
->     {
->       "@odata.id": null,
->       "State": "Closed",
->       "DateValue": "2016-04-04T00:00:00-07:00",
->       "Count": 38
->     }
+>     { "DateValue": "2016-04-04T00:00:00-07:00", "State": "Active", "Count": 320 },
+>     { "DateValue": "2016-04-04T00:00:00-07:00", "State": "Closed", "Count": 38 }
 >   ]
 > }
 > ```
 
-In this query, there are two key differences. We added a filter clause to filter the data to a specific iteration and the dates are now being compared to the iteration start and end dates versus a hard-coded date.  
- 
 > [!NOTE]
-> If your query on snapshot tables doesn't use aggregation, the response displays the warning: "The specified query doesn't include a `$select` or `$apply` clause which is recommended for all queries." 
+> If your query on snapshot tables doesn't include `$apply` or `$select`, the response returns a warning. Always use aggregation with snapshot entity sets. 
 
-## Related articles
+::: moniker range="azure-devops"
 
-- [Construct aggregate data queries](aggregated-data-analytics.md) to count and analyze groups of related data.
+## Use AI to build trend queries
+
+If you configure the [Azure DevOps MCP Server](/azure/devops/mcp-server/mcp-server-overview), you can use AI assistants to help construct and troubleshoot trend queries against snapshot entity sets.
+
+### Example prompts
+
+| Task | Example prompt |
+|------|----------------|
+| Bug trend query | `Write an OData trend query that shows the daily bug count by state over the last 30 days in <Contoso> project` |
+| Sprint snapshot | `Create an OData query against WorkItemSnapshot that shows work item counts grouped by date for the current sprint in <Contoso> project` |
+| Filter by iteration | `Generate an OData trend query that uses iteration start and end dates to show story point burndown in <Contoso> project` |
+| Board snapshot | `Write an OData query against WorkItemBoardSnapshot to track items by board column over the past two weeks in <Contoso> project` |
+| Optimize performance | `My WorkItemSnapshot trend query is timing out — help me add proper date filters and aggregation to improve performance in <Contoso> project` |
+| Period comparison | `Create an OData trend query that compares bug counts between the current sprint and the previous sprint in <Contoso> project` |
+| Remaining work trend | `Write an OData trend query that shows the daily sum of remaining work by area path for the current iteration in <Contoso> project` |
+| Detect state changes | `Create an OData snapshot query that tracks how many work items moved from Active to Resolved each day over the past 60 days in <Contoso> project` |
+| Scope change analysis | `Generate an OData trend query that shows the daily count of user stories added or removed from a sprint by comparing snapshot data in <Contoso> project` |
+
+::: moniker-end
+
+## Next step
+
+> [!div class="nextstepaction"]
+> [OData Analytics query guidelines](odata-query-guidelines.md)
+
+## Related content
+
+- [Aggregate work tracking data using Analytics](aggregated-data-analytics.md)
+- [Define basic queries using OData Analytics](wit-analytics.md)
+- [Construct OData queries for Analytics](../analytics/analytics-query-parts.md)
+- [OData Analytics query guidelines](odata-query-guidelines.md)
+- [OData Extension for Data Aggregation Version 4.0](https://docs.oasis-open.org/odata/odata-data-aggregation-ext/v4.0/cs01/odata-data-aggregation-ext-v4.0-cs01.html)
