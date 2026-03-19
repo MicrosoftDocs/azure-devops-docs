@@ -17,7 +17,7 @@ ms.custom: sfi-image-nochange, awp-ai
 
 [!INCLUDE [version-eq-azure-devops](../../includes/version-eq-azure-devops.md)]
 
-By default, any user in a Microsoft Entra tenant can create new Azure DevOps organizations. You can enable the **Restrict organization creation** policy to control this behavior. When you turn on this policy, only users and groups on the allowlist can create organizations. All other users — including Azure DevOps administrators — are blocked unless explicitly added to the allowlist.
+By default, any user in a Microsoft Entra tenant can create new Azure DevOps organizations. You can enable the **Restrict organization creation** policy to control this behavior. When you turn on this policy, only users and groups on the allowlist can create organizations. All other users, including Azure DevOps administrators, are blocked unless explicitly added to the allowlist.
 
 > [!NOTE]
 > This policy only affects the creation of new organizations. It doesn't change access to existing organizations or affect their settings.
@@ -51,7 +51,7 @@ After you enable the policy, you can manage which users and groups are allowed t
 > [!WARNING]
 > We recommend using groups with your tenant policy allowlist. If you use a named user, a reference to the named user's identity resides in the United States, Europe (EU), and Southeast Asia (Singapore).
 
-Users or groups on the allowlist can create organizations when you enable the **Restrict organization creation** policy. All other users — including Azure DevOps administrators — are blocked unless they're on this list.
+Users or groups on the allowlist can create organizations when you enable the **Restrict organization creation** policy. All other users, including Azure DevOps administrators, are blocked unless they're on this list.
 
 To add a user or group to the allowlist:
 
