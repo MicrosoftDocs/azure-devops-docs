@@ -30,9 +30,9 @@ By default, any user in a Microsoft Entra tenant can create new Azure DevOps org
 
 ## Turn on the policy
 
-To turn on the policy that restricts users from creating new organizations, do the following steps:
+To turn on the policy that restricts users from creating new organizations, follow these steps:
 
-1. Sign in to your organization (```https://dev.azure.com/{Your_Organization}```).
+1. Sign in to your organization (`https://dev.azure.com/{Your_Organization}`).
 
 2. Select ![gear icon](../../media/icons/gear-icon.png) **Organization settings**.
 
@@ -51,7 +51,7 @@ After you enable the policy, you can manage which users and groups are allowed t
 > [!WARNING]
 > We recommend using groups with your tenant policy allowlist. If you use a named user, a reference to the named user's identity resides in the United States, Europe (EU), and Southeast Asia (Singapore).
 
-Users or groups on the allowlist can create organizations when the **Restrict organization creation** policy is enabled. All other users — including Azure DevOps administrators — are blocked unless they're on this list.
+Users or groups on the allowlist can create organizations when you enable the **Restrict organization creation** policy. All other users — including Azure DevOps administrators — are blocked unless they're on this list.
 
 To add a user or group to the allowlist:
 
