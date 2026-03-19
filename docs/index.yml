@@ -67,8 +67,10 @@ productDirectory:
       links:
         - url: ./artifacts/start-using-azure-artifacts.md
           text: What is Azure Artifacts?
-        - url: ./artifacts/concepts/feeds.md
-          text: Artifacts feeds
+        - url: ./artifacts/npm/npmrc.md
+          text: Connect to a feed
+        - url: ./artifacts/feeds/feed-permissions.md
+          text: Manage feed permissions
     # Card
     - title: Azure Repos
       imageSrc: ./media/index/DevOpsIconRepos96.svg
