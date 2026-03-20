@@ -10,7 +10,7 @@ ai-usage: ai-assisted
 monikerRange: '<= azure-devops'
 ms.author: chcomley
 author: chcomley
-ms.date: 03/03/2026
+ms.date: 03/18/2026
 ---
 
 # Authentication methods for Azure DevOps
@@ -18,7 +18,7 @@ ms.date: 03/03/2026
 [!INCLUDE [version-lt-eq-azure-devops](../../../includes/version-lt-eq-azure-devops.md)]
 
 This article describes authentication methods for Azure DevOps integration and helps you choose the best option for your scenario.
-Modern authentication approaches like Microsoft Entra ID provide enhanced security and the best approach for new applications.
+Modern authentication approaches like Microsoft Entra ID provide enhanced security and are the best approach for new applications.
 
 Use Microsoft Entra ID authentication for new applications that integrate with Azure DevOps Services.
 Use personal access tokens sparingly, and only when Microsoft Entra ID isn't available.
@@ -67,9 +67,7 @@ The following sections provide recommendations for getting started in different 
 - Use personal access tokens for Azure DevOps Server scenarios when they're acceptable.
 - Plan for future Azure DevOps Services migration to take advantage of modern authentication.
 
-## Answers to common questions
-
-The following sections provide answers to frequently asked questions.
+## Frequently asked questions (FAQ)
 
 ### Should I use Microsoft Entra ID OAuth or personal access tokens?
 
@@ -80,7 +78,7 @@ Use Microsoft Entra ID OAuth in the following scenarios:
 - Applications that need enterprise identity integration.
 - Long-term projects with compliance requirements.
 
-Only use personal access tokens in the following scenarios:
+Use personal access tokens only in the following scenarios:
 
 - Personal scripts and ad hoc tasks.
 - Legacy applications during migration planning.
@@ -113,7 +111,7 @@ Use the `requestContext` method to detect the service type, and apply the approp
 
 ### Why can't my service account access Azure DevOps APIs?
 
-Here are some common issues that can affect service account access:
+Here are some common issues that affect service account access:
 
 - **Service account not "materialized"**: Use the correct sign-in method. Service accounts need interactive sign-in permissions or proper Microsoft Entra ID registration.
 - **Insufficient permissions**: Ensure that the service account has appropriate Azure DevOps permissions.
@@ -136,19 +134,33 @@ Follow these steps:
 
 1. Monitor and validate the new authentication method.
 
+### Why shouldn't I decode or read claims from authentication tokens?
+
+Authentication tokens exist solely to prove *who* the caller is and *what they're authorized to do*. They're not a stable data interface or a schema you can depend on.
+
+Token claims are never publicly documented, and Azure DevOps reserves the right to change, rename, remove, or encrypt them at any time without notice. Starting summer 2025, Azure DevOps is further encrypting authentication tokens, which means clients can't read token payloads. Any application that decodes tokens to extract claims breaks.
+
+Instead of reading token claims, follow these practices:
+
+- **Treat tokens as opaque** — pass them in authorization headers, but don't decode or inspect them.
+- **Use supported REST APIs** — retrieve user or organization data from [Azure DevOps REST APIs](/rest/api/azure/devops), which provide stable contracts and documentation.
+- **Assume any claim can change** — if you find yourself parsing token contents to read values, put that logic in an API call instead.
+
+These changes don't affect applications that already treat tokens as opaque.
+
 ## Implementation procedures
 
-After you choose the authentication method for your scenario, finish the implementation:
+After you choose the authentication method for your scenario, finish the implementation steps:
 
-- **New applications**: [Build Azure DevOps integrations with Microsoft Entra OAuth apps](entra-oauth.md)
-- **Service applications**: [Use service principals and managed identities in Azure DevOps](service-principal-managed-identity.md)
-- **Personal scripts**: [Use personal access tokens](../../../organizations/accounts/use-personal-access-tokens-to-authenticate.md)
+- **New applications**: [Build Azure DevOps integrations with Microsoft Entra OAuth apps](entra-oauth.md).
+- **Service applications**: [Use service principals and managed identities in Azure DevOps](service-principal-managed-identity.md).
+- **Personal scripts**: [Use personal access tokens](../../../organizations/accounts/use-personal-access-tokens-to-authenticate.md).
 
 <a id="use-ai-assistance"></a>
 
 ## Use AI to choose an authentication method
 
-If you have the [Azure DevOps MCP Server](../../../mcp-server/mcp-server-overview.md) connected to your AI agent in agent mode, you can use natural language prompts to get authentication recommendations for your scenario.
+If you connect the [Azure DevOps MCP Server](../../../mcp-server/mcp-server-overview.md) to your AI agent in agent mode, you can use natural language prompts to get authentication recommendations for your scenario.
 
 | Task | Example prompt |
 |------|----------------|
