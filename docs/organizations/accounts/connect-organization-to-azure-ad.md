@@ -43,7 +43,7 @@ This article provides step-by-step guidance for connecting your Azure DevOps org
 |**SSH keys** |Request that SSH keys get manually cleared by [Support](https://azure.microsoft.com/support/devops/) before you switch directories. Find the steps for how to recreate SSH keys [further in this article](#inform-users-microsoft-entra-change). For more information, see the [FAQ](faq-azure-access.yml).|
     
 > [!NOTE]
-> Ensure you're using Microsoft Entra Public. Connecting Azure DevOps Services organizations to Microsoft Entra Government and accessing Azure DevOps Services with user accounts from Microsoft Entra Government isn't supported.
+> Ensure you're using Microsoft Entra Public. Connecting Azure DevOps Services organizations to Microsoft Entra Government and accessing Azure DevOps Services with user accounts from Microsoft Entra Government (including guest users in a Microsoft Entra Public tenant that are sourced from Microsoft Entra Government) aren't supported.
 
 <a name='connect-your-organization-to-azure-ad'></a>
 
