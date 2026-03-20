@@ -10,7 +10,7 @@ ms.author: chcomley
 author: chcomley
 ms.date: 03/03/2026
 monikerRange: 'azure-devops'
-ms.custom: sfi-image-nochange, copilot-scenario-highlight
+ms.custom: sfi-image-nochange, copilot-scenario-highlight, support-driven-update
 ---
 
 # Connect your organization to Microsoft Entra ID
