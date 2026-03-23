@@ -2,7 +2,7 @@
 title: Status and trend work item, query-based charts
 titleSuffix: Azure DevOps
 description: Learn how to add status, progress, and trend charts to dashboards from flat-list queries in Azure DevOps.
-ms.custom: dashboards, copilot-scenario-highlight
+ms.custom: dashboards, copilot-scenario-highlight, awp-ai
 ms.subservice: azure-devops-analytics
 ms.assetid: EFAD32DB-8B19-4ACC-8F72-87CC5A513798
 ms.author: chcomley
@@ -11,7 +11,6 @@ ms.topic: how-to
 monikerRange: '<= azure-devops'
 ms.date: 03/23/2026
 ai-usage: ai-assisted
-ms.custom: awp-ai
 #customer intent: As an Azure Boards user, I want to create charts to track the status of work in progress.
 ---
 
