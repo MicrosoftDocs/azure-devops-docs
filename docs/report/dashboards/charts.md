@@ -40,7 +40,7 @@ Chart the results of a [flat-list query](../../boards/queries/using-queries.md#d
 
 ## Create a flat-list query  
 
-Select the **Flat list of work items** query type — other query types aren't supported for charting. For more information, see [Define a flat-list query](../../boards/queries/using-queries.md#flat-list).
+Select the **Flat list of work items** query type. Other query types aren't supported for charting. For more information, see [Define a flat-list query](../../boards/queries/using-queries.md#flat-list).
 
 Add any field you want to chart to a query clause or to column options:
 
@@ -69,7 +69,7 @@ To add a chart to a dashboard, [save the query to a **Shared Queries** folder](.
 |----------|---------|
 | **Area / iteration grouping** | Only the leaf node of **Area Path** or **Iteration Path** appears. If your query mixes levels, group by **Node Name** instead. |
 | **Sorting** | Sort by **Value** (numeric count or sum) or **Label** (grouping field name), in ascending or descending order. |
-| **Series limit** | Charts show up to 8 series (12 on resized dashboard widgets). Extra values roll up into *(other)*. |
+| **Series limit** | Charts show up to eight series (12 on resized dashboard widgets). Extra values roll up into *(other)*. |
 
 ## Create a query-based chart  
 
