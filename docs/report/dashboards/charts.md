@@ -11,6 +11,7 @@ ms.topic: how-to
 monikerRange: '<= azure-devops'
 ms.date: 03/23/2026
 ai-usage: ai-assisted
+ms.cutom: awp-ai
 #customer intent: As an Azure Boards user, I want to create charts to track the status of work in progress.
 ---
 
