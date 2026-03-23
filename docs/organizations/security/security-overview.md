@@ -17,6 +17,10 @@ ms.date: 02/26/2026
 
 When you're handling information and data, especially in a cloud-based solution like Azure DevOps Services, security should be your top priority. While Microsoft ensures the security of the underlying cloud infrastructure, you're responsible for configuring security within Azure DevOps. This article provides an overview of necessary security-related configurations to protect your Azure DevOps environment against threats and vulnerabilities. 
 
+[!INCLUDE [ai-assistance-callout](../../includes/ai-assistance-callout.md)]
+
+[!INCLUDE [use-microsoft-entra-reduce-pats](../../includes/use-microsoft-entra-reduce-pats.md)]
+
 ## Protect your network and data
 
 Securing your network is crucial when you're working with Azure DevOps. Protect your data and resources from unauthorized access and potential threats. Implement network security and data protection measures to help ensure that only trusted sources can access your Azure DevOps environment. To secure your network when you're working with Azure DevOps, take the following actions:

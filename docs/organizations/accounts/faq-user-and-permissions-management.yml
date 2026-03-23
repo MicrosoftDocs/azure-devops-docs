@@ -20,6 +20,8 @@ summary: |
   [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
   
    This article provides answers to frequently asked questions (FAQs) about user and permissions management in Azure DevOps. The FAQs are organized by topic to help you quickly find information about managing users, permissions, access levels, Visual Studio subscriptions, GitHub Enterprise integration, and related administrative tasks.
+
+  [!INCLUDE [use-microsoft-entra-reduce-pats](../../includes/use-microsoft-entra-reduce-pats.md)]
   <a name="general-permissions"></a>
   
 
