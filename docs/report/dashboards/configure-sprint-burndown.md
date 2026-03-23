@@ -8,7 +8,7 @@ ms.author: chcomley
 author: chcomley
 ms.topic: how-to
 monikerRange: "<= azure-devops"
-ms.date: 03/18/2026
+ms.date: 03/23/2026
 ai-usage: ai-assisted
 #customer intent: As a team member or leader, I want to monitor sprint burndown information to see whether my team is on track to complete our sprint plan.
 ---
@@ -110,7 +110,7 @@ The blue area shows the sum of Story Points for active or in-progress User Stori
 * * *
 
 > [!NOTE]
-> Available sum fields depend on the numeric fields defined for task and requirement work item types. The most common fields are [Story Points, Effort, or Size](../../boards/queries/query-numeric.md#fields) and [Remaining Work](../../boards/queries/query-numeric.md#fields).
+> Available sum fields depend on the numeric fields defined for task and requirement work item types. The most common fields are [Story Points, Effort, or Size](../../boards/queries/query-numeric.md#fields-used-to-estimate-and-track-work) and [Remaining Work](../../boards/queries/query-numeric.md#fields-used-to-estimate-and-track-work).
 
 Your selections persist across sessions until you change them.
 
@@ -158,7 +158,7 @@ The **Sprint Burndown (Legacy)** widget charts remaining work based on Remaining
 
 :::image type="content" source="media/burndown/sprint-burndown-legacy-devops.png" alt-text="Screenshot shows the Sprint Burndown Legacy widget, which shows a burndown chart.":::
 
-To configure, select the :::image type="icon" source="../../media/icons/actions-icon.png" border="false"::: actions icon and select **Configure**. Configuration options include team selection and widget size.
+To configure the widget, select the :::image type="icon" source="../../media/icons/actions-icon.png" border="false"::: actions icon and select **Configure**. Configuration options include team selection and widget size.
 
 :::image type="content" source="media/sprint-burndown/sprint-burndown-legacy-config.png" alt-text="Screenshot shows the Sprint Burndown Legacy widget configuration dialog.":::
 
@@ -169,11 +169,11 @@ To configure, select the :::image type="icon" source="../../media/icons/actions-
 
 ## Review past sprint burndown charts
 
-As you complete each sprint, the system maintains a history of your activity. To view a past sprint's burndown chart, select it from the sprint selector.
+As you complete each sprint, the system keeps a history of your activity. To view a past sprint's burndown chart, select it from the sprint selector.
 
 :::image type="content" source="media/burndown/select-past-sprint.png" alt-text="Screenshot shows where you can select a past sprint from the sprint selector.":::
 
-Reviewing past burndown charts during retrospectives can reveal patterns in your team's execution. Consider these questions:
+When you review past burndown charts during retrospectives, you can identify patterns in your team's execution. Consider these questions:
 
 - How does your projected velocity match up to your actual velocity?
 - How can you more accurately determine how much your team can accomplish in a sprint?
@@ -216,7 +216,7 @@ If your sprint burndown chart appears empty, check these points:
 
 ## Use AI to monitor sprint burndown
 
-If you configure the [Azure DevOps MCP Server](/azure/devops/mcp-server/mcp-server-overview), you can use AI assistants to help configure and interpret sprint burndown charts.
+If you configure the [Azure DevOps MCP Server](../../mcp-server/mcp-server-overview.md), you can use AI assistants to help configure and interpret sprint burndown charts.
 
 ### Example prompts
 
@@ -233,7 +233,7 @@ If you configure the [Azure DevOps MCP Server](/azure/devops/mcp-server/mcp-serv
 | Prepare for a retrospective | `Based on the last sprint burndown for <team> in <project> (<organization>), suggest 3 retrospective questions and 3 process improvements to discuss` |
 
 > [!TIP]
-> If you're using Visual Studio Code, agent mode is especially helpful for iterating on multi-step analysis (for example, comparing burndown trends across multiple sprints and summarizing the takeaways).
+> If you're using Visual Studio Code, agent mode is especially helpful for iterating on multistep analysis (for example, comparing burndown trends across multiple sprints and summarizing the takeaways).
 
 ::: moniker-end
 
