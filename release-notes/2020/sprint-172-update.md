@@ -4,6 +4,7 @@ author: sid-ah
 ms.author: simerzou
 ms.date: 07/09/2020
 description: With Sprint 172 Update, we are announcing the general release of state transition restriction rules to all customers.
+ms.topic: release-notes
 ---
 
 # Restrict work item state transitions

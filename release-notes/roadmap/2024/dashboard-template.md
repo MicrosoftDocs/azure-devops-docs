@@ -1,9 +1,9 @@
 ---
 title: Dashboard Template
-author: jeom
-ms.author: jeom
+author: gloridelmorales
+ms.author: glmorale
 ms.date: 11/13/2023
-ms.topic: article
+ms.topic: whats-new
 ms.service: azure-devops
 ms.subservice: azure-devops-release-notes
 description: Dashboard Template

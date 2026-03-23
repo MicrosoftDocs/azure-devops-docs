@@ -13,7 +13,7 @@ ms.date: 08/12/2022
 
 # Sample reports and quick reference index 
 
-[!INCLUDE [version-gt-eq-2019](../../includes/version-gt-eq-2019.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 Use this quick reference to access information and sample queries using OData and Analytics.  
 Using OData, you can directly query Analytics for Azure DevOps from a supported browser. Use the returned JSON data as you like. Enterprise organizations can generate queries that span multiple projects or an entire organization or project collection.   
@@ -55,7 +55,7 @@ Analytics supports several widgets and built-in reports. In addition, we've crea
    :::column-end:::
 :::row-end:::
 
-::: moniker range=">= azure-devops-2020"
+::: moniker range="<=azure-devops"
 
 ## Azure Pipelines sample widgets and reports 
 
@@ -212,7 +212,7 @@ Analytics supports several widgets and built-in reports. In addition, we've crea
 
 ## Metadata reference
 
-::: moniker range=">= azure-devops-2020"
+::: moniker range="<=azure-devops"
 
 - [Calendar date, Project, and User](../analytics/entity-reference-general.md) 
 - [Azure Boards](../analytics/entity-reference-boards.md) 

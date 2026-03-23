@@ -4,6 +4,7 @@ author: gloridelmorales
 ms.author: glmorale
 ms.date: 09/08/2021
 description: In this sprint, we included support for wild cards and conditional expressions to YAML pipeline files. 
+ms.topic: release-notes
 ---
 
 # Support for wild cards and conditional expressions in YAML pipeline files

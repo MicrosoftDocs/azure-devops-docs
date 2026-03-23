@@ -11,7 +11,7 @@ monikerRange: "<=azure-devops"
 
 # Publish Python packages (CLI)
 
-[!INCLUDE [version-gt-eq-azure-devops-2019](../../includes/version-gt-eq-2019.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 This article guides you through publishing Python packages to an Azure Artifacts feed using the NuGet command-line interface.
 

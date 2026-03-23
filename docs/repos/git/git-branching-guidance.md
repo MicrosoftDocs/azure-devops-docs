@@ -5,7 +5,7 @@ description: Git branching guidance
 ms.assetid: 9445be16-3bf4-46ff-bef8-52b72da03d0a
 ms.service: azure-devops-repos
 ms.topic: overview
-ms.date: 09/18/2020
+ms.date: 02/17/2026
 monikerRange: '<= azure-devops'
 ms.subservice: azure-devops-repos-git
 ---
@@ -21,6 +21,8 @@ Team members publish, share, review, and iterate on code changes through Git bra
 Adopt a branching strategy for your team. You can collaborate better and spend less time managing version control and more time developing code.
 
 The following branching strategies are based on the way we use Git here at Microsoft. For more information, see [How we use Git at Microsoft](/devops/develop/how-microsoft-develops-devops).
+
+[!INCLUDE [ai-assistance-callout](../../includes/ai-assistance-callout.md)]
 
 ## Keep your branch strategy simple
 

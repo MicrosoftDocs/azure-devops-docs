@@ -8,7 +8,7 @@ ms.author: chcomley
 author: chcomley
 ms.topic: concept-article
 monikerRange: '<= azure-devops'
-ms.date: 04/25/2025
+ms.date: 02/17/2026
 #customer intent: As a developer, I want to understand the tools and clients that support connecting to Azure DevOps, so I can use the appropriate tools for my development.
 ---
 
@@ -17,6 +17,8 @@ ms.date: 04/25/2025
 [!INCLUDE [version-lt-eq-azure-devops](../includes/version-lt-eq-azure-devops.md)]
 
 The Microsoft platform of software development tools is well established. The Visual Basic and Visual Studio integrated development environment (IDE) supports teams in their software development, and offers a catalog of plug-ins to extend the product functionality. In particular, the Team Explorer plug-in allows the Visual Studio client to connect to Azure DevOps to support source control, work tracking, build, and test operations. This article describes various tools and clients you can use to connect with Azure DevOps and enhance your development.
+
+[!INCLUDE [ai-assistance-callout](../includes/ai-assistance-callout.md)]
 
 ## Desktop client developer tools
 
@@ -43,26 +45,6 @@ Team Explorer, a plug-in to all Visual Studio versions, connects Visual Studio t
 :::image type="content" source="../organizations/projects/media/te-home-page-git-repo-visual-studio-2022.png" border="false" alt-text="Screenshot of the Team Explorer home page showing Git as the form of source control in Visual Studio 2022.":::
 
 ::: moniker-end
-::: moniker range="azure-devops-2020"
-
-:::row:::
-:::column span="":::
-
-**Home page with Git in Visual Studio 2019**
-
-:::image type="content" source="../organizations/projects/media/te-home-page-git-repo.png" border="false" alt-text="Screenshot of the Team Explorer home page showing Git as the form of source control." lightbox="../organizations/projects/media/te-home-page-git-repo.png":::
-
-:::column-end:::
-:::column span="":::
-
-**Home page with TFVC in Visual Studio 2019**
-
-:::image type="content" source="../organizations/projects/media/te-home-page-tfvc-repo.png" border="false" alt-text="Screenshot of the Team Explorer home page showing TFVC as the form of source control." lightbox="../organizations/projects/media/te-home-page-tfvc-repo.png":::
-
-:::column-end:::
-:::row-end:::
-
-::: moniker-end
 
 ### Visual Studio Git experience 
 
@@ -75,11 +57,6 @@ Visual Studio 2019 and later provides the **Git** menu with quick access to sour
 Visual Studio 2022 also provides the **Git Changes** and **Git Repository** windows:
 
 :::image type="content" source="media/tools/visual-studio-git-changes-repository-2022.png" border="false" alt-text="Screenshot of the Git Changes and Git Repository windows in Visual Studio 2022." lightbox="media/tools/visual-studio-git-changes-repository-2022.png":::
-
-::: moniker-end
-::: moniker range="azure-devops-2020"
-
-:::image type="content" source="media/tools/visual-studio-git-menu.png" border="false" alt-text="Screenshot of the Git menu in Visual Studio." lightbox="media/tools/visual-studio-git-menu.png":::
 
 ::: moniker-end
 

@@ -8,13 +8,13 @@ ms.author: shdalv
 ms.custom: powerbisample, engagement-fy23
 author: chcomley
 ms.topic: sample
-monikerRange: '>= azure-devops-2020'
+monikerRange: "<=azure-devops"
 ms.date: 01/19/2023
 ---
 
 # Requirements tracking sample report
 
-[!INCLUDE [version-gt-eq-2020](../../includes/version-gt-eq-2020.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 You can track the quality of work items that belong to the Requirements category with the requirements tracking report. The Requirements category includes work items such as User Stories (Agile), Product Backlog Items (Scrum), Issues (Basic), and Requirements (CMMI). For more information about work item categories, see [Track user stories, issues, bugs, and other work items](../../boards/work-items/about-work-items.md#wit).
 
@@ -30,7 +30,6 @@ This report displays the following information for each requirement that it list
 - **Run tests**:  The number of test runs that's executed.  
 - **Active bugs**: The number of linked bugs in an Active state. 
 - **Closed bugs**: The number of linked bugs in a  Closed, Done, or Completed state. 
-
 
 > [!NOTE] 
 > Requirement tracking is supported only for test cases linked through a [**Requirement-based test suite**](../../test/create-a-test-plan.md#backlog). The association between a requirement work item&mdash;User Story ([Agile](../../boards/work-items/guidance/agile-process.md)), Product Backlog Item ([Scrum](../../boards/work-items/guidance/scrum-process.md)), Requirement ([CMMI](../../boards/work-items/guidance/cmmi-process.md)), or Issue ([Basic](../../boards/get-started/plan-track-work.md))&mdash;and manual test execution is only formed when the test case is linked via a **Requirement-based test suite**. 
@@ -132,7 +131,6 @@ $filter=(
 
 ### Query for test execution status of requirements
 
-
 [!INCLUDE [temp](includes/query-filters-test.md)] 
 
 #### [Power BI query](#tab/powerbi/)
@@ -197,10 +195,7 @@ $apply=filter(
 
 ***
 
-
-
 [!INCLUDE [temp](includes/note-test-suites-requirements.md)]  
-
 
 ### Query for status of bugs linked to the requirements
 
@@ -271,7 +266,6 @@ https://analytics.dev.azure.com/{organization}/{project}/_odata/v3.0-preview/Wor
 - `{project}` - The name of your project  
 - `{iterationSK}` - The GUID associated with the **Iteration Path** of interest. To look up the GUID, see [../extend-analytics/wit-analytics.md#iterationsk](Return the IterationSK for a specific Iteration Path)
 - `{areaSK}` - The GUID associated with the Area Path of interest. To look up the GUID, see [../extend-analytics/wit-analytics.md#areask](Return the AreaSK for a specific Area Path).
-
 
 ### Query breakdown
 
@@ -387,7 +381,6 @@ The following table describes each part of the query.
 :::row-end:::
  
 
-
 ## Create the Table report 
 
 To create the report, perform the following steps:
@@ -403,7 +396,6 @@ Your report should look similar to the following image.
 
 > [!div class="mx-imgBorder"] 
 > ![Screenshot of Power BI Requirements tracking report](media/odatapowerbi-storiesoverview.png)
-
 
 ## Related articles
 

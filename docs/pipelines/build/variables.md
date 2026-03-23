@@ -5,7 +5,7 @@ ms.topic: reference
 ms.assetid: 3A1C529F-DF6B-470A-9047-2758644C3D95
 ms.author: jukullam
 author: juliakm
-ms.date: 12/12/2024
+ms.date: 02/13/2026
 ms.custom:  copilot-scenario-highlight 
 monikerRange: '<= azure-devops'
 ---
@@ -19,7 +19,7 @@ This is a list of predefined variables that are available for your use. There ma
 
 These variables are automatically set by the system and read-only. (The exceptions are Build.Clean and System.Debug.) 
 
-::: moniker range=">=azure-devops-2020"
+::: moniker range="<=azure-devops"
 
 In YAML pipelines, you can reference predefined variables as environment variables. For example, the variable `Build.ArtifactStagingDirectory` becomes the variable `BUILD_ARTIFACTSTAGINGDIRECTORY`.
 
@@ -113,15 +113,15 @@ For more information, see [Review logs to diagnose pipeline issues](../troublesh
 
 ::: moniker-end
 
-::: moniker range="= azure-devops-2022"
+::: moniker range="= azure-devops-server"
 
-[!INCLUDE [include](includes/variables-server-2022.md)]
+[!INCLUDE [include](includes/variables-server.md)]
 
 ::: moniker-end
 
-::: moniker range="= azure-devops-2020"
+::: moniker range="= azure-devops-2022"
 
-[!INCLUDE [include](includes/variables-server-2020.md)]
+[!INCLUDE [include](includes/variables-server-2022.md)]
 
 ::: moniker-end
 

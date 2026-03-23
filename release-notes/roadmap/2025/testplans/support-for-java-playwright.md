@@ -3,7 +3,7 @@ title: Support for Java (Playwright) in Azure Test Plans
 author: battle-born
 ms.author: alexpysanets
 ms.date: 04/22/2025
-ms.topic: article
+ms.topic: whats-new
 ms.service: azure-devops
 ms.subservice: azure-devops-release-notes
 description: Support for Java (Playwright) in Azure Test Plans

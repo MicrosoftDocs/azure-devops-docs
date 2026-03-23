@@ -11,7 +11,7 @@ You can use the following keyboard shortcuts to [interact with a work item form]
 
 ::: moniker-end
 
-::: moniker range=">= azure-devops-2020"
+::: moniker range="<=azure-devops"
 
 |Shortcut|Action|
 |---|---|
@@ -32,7 +32,7 @@ The following screenshot shows the list of keyboard shortcuts as it appears in A
 
 ## Rich text editor
 
-::: moniker range=">= azure-devops-2020"
+::: moniker range="<=azure-devops"
 
 The rich text editor toolbar appears below the text entry area when you select a text box that can be formatted.
 

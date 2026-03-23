@@ -16,14 +16,4 @@ ms.date: 01/04/2023
 
 ::: moniker-end
 
-::: moniker range="=azure-devops-2020"
-
-- [**Work items**](../work-items/view-add-work-items.md): Use to quickly find work items assigned to you or filter work items based on other criteria, such as work items that you follow, that you're mentioned in, or that you viewed or updated.
-- [**Boards**](../boards/kanban-quickstart.md): Use to implement Kanban practices, update the State, and visualize the flow of work for a team. 
-- [**Backlogs**](../backlogs/create-your-backlog.md): Use to plan, prioritize, and organize the work for a team to do within a product or [portfolio backlogs](../backlogs/organize-backlog.md).  
-- [**Sprints**](../sprints/assign-work-sprint.md): Use to plan work for a team to perform during a sprint. 
-- [**Queries**](../queries/view-run-query.md): Use to define a set of filter criteria to list work items for the purposes of sharing with others, performing bulk updates, or import/export operations. 
-
-::: moniker-end
-
  

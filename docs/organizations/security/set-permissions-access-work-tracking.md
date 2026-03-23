@@ -88,7 +88,7 @@ The following table summarizes the different permissions you can set at the obje
       **Project-level permissions**
    :::column-end:::
    :::column span="2":::
-      ::: moniker range=">= azure-devops-2020"
+      ::: moniker range="<=azure-devops"
       - [Add work item tags](../../boards/queries/add-tags-to-work-items.md) 
       - [Move work items out of a project](#move-delete-permissions) 
       - [Permanently delete work items](#move-delete-permissions) 
@@ -273,25 +273,7 @@ To edit the permissions for a Delivery Plan, be the creator of the plan, a membe
 
 ::: moniker-end 
 
-::: moniker range="< azure-devops-2022"
-
-1. Open **Boards** > **Plans**. For more information, see [Review team delivery plans](../../boards/plans/review-team-plans.md).  
-
-1. To grant permissions to a group or user to manage or edit a specific plan, choose the :::image type="icon" source="../../media/icons/actions-icon.png" border="false"::: the ellipses and select **Security**.
-
-	:::image type="content" source="../../boards/plans/media/permissions/open-plans-security.png" alt-text="Screenshot showing the Security button for plan permissions, highlighted by a red box.":::
-
-1. Add a user, team group, or other security group who you want to grant permissions to or restrict access. For details, see [Change project-level permissions](../../organizations/security/change-project-level-permissions.md). By default, non-administrators can't delete or edit a plan. 
-
-1. With the user or group selected, set the permission you want them to have to **Allow**. **Manage** set to **Allow** enables the user to manage permissions for the plan.
-
-	For example, here we grant permission to Raisa to edit the plan.
-
-	:::image type="content" source="../../boards/plans/media/permissions/permissions-plans-dialog.png" alt-text="Screenshot showing the permissions dialog for a delivery plan.":::
-
-1. Select **Save** when you're done. 
-
-::: moniker-end 
+ 
 
 ### Default permissions for Delivery Plans
 
@@ -399,10 +381,6 @@ For teams to work autonomously, you might want to provide them with permissions 
 By default, team members inherit the permissions afforded to members of the project **Contributors** group. Members of this group can add and modify source code, create and delete test runs, and create and modify work items. They can [collaborate on a Git project](../../repos/git/gitquickstart.md) or collaborate with other team members and [check in work to the team's code base (TFVC)](../../repos/tfvc/check-your-work-team-codebase.md).
 
 :::image type="content" source="../settings/media/add-team/default-permissions-assigned-to-team-contributors.png" alt-text="Diagram of default permissions assigned to team contributors.":::
-
-::: moniker range="< azure-devops-2022"
-If your on-premises deployment includes reporting, add users to those resources. See [Grant permissions to view or create SQL Server reports](/previous-versions/azure/devops/report/admin/grant-permissions-to-reports).
-::: moniker-end
 
 ## Related content
 

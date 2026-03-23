@@ -2,7 +2,7 @@
 title: Link work items to objects
 titleSuffix: Azure Boards
 description: Learn how to link work items to user stories, bugs, remote work items, a git branch, and other elements in Azure Boards.
-ms.custom: cross-project, devx-track-azurecli, engagement-fy24, peer-review-program
+ms.custom: cross-project, devx-track-azurecli, engagement-fy24, peer-review-program, copilot-scenario-highlight
 ms.service: azure-devops-boards
 ms.assetid: 7130A14B-C760-4622-B97A-8DA27A1B3D02  
 ai-usage: ai-assisted
@@ -10,7 +10,7 @@ ms.author: chcomley
 author: chcomley
 ms.topic: how-to
 monikerRange: '<= azure-devops'
-ms.date: 05/08/2025
+ms.date: 02/28/2026
 #customer intent: As a team member, I want to understand how links between work items and other elements operate and help project planning and development.
 ---
 
@@ -26,21 +26,27 @@ Work item links are associations between two work items or a work item and anoth
 
 | Category | Requirements |
 |:-------------|:------------|
-| **Project access** | [Project member](../../organizations/security/add-users-team-project.md). |
-| **Permissions** | - Member of the **Contributors** or **Project Administrators** security group.<br> - To view or modify work items: **View work items in this node** and **Edit work items in this node** permissions set to **Allow**. By default, the **Contributors** group has this permission set to **Allow**. For more information, see [Set permissions and access for work tracking](../../organizations/security/set-permissions-access-work-tracking.md). <br> - To configure the integration options for a Classic release pipeline: **Edit** permissions for the release. <br> - To link work items to commits and pull requests: **Edit work items in this node** permissions set to **Allow** for the Area Path assigned to the work item. By default, the Contributors group has this permission. <br> - To view work items: **View work items in this node** permissions set to **Allow** for the Area Path assigned to the work item. |
+| Project access | [Project member](../../organizations/security/add-users-team-project.md). |
+| Permissions | - Member of the **Contributors** or **Project Administrators** security group.<br> - To view or modify work items: **View work items in this node** and **Edit work items in this node** permissions set to **Allow**. By default, the **Contributors** group has this permission set to **Allow**. For more information, see [Set permissions and access for work tracking](../../organizations/security/set-permissions-access-work-tracking.md). <br> - To configure the integration options for a Classic release pipeline: **Edit** permissions for the release. <br> - To link work items to commits and pull requests: **Edit work items in this node** permissions set to **Allow** for the Area Path assigned to the work item. By default, the Contributors group has this permission. <br> - To view work items: **View work items in this node** permissions set to **Allow** for the Area Path assigned to the work item. |
 |**Access levels** | To add or modify work items: At least [**Stakeholder** access](../../organizations/security/stakeholder-access.md). Users with **Stakeholder** access for public projects have full access to backlog and board features, like users with [**Basic** access](../../organizations/security/access-levels.md). For more information, see [Stakeholder access quick reference](../../organizations/security/stakeholder-access.md).   |
-| **Defined iterations** | To use the **Planning** pane, your team administrator [defined iteration (sprint) paths and configured team iterations](../../organizations/settings/set-iteration-paths-sprints.md). |
+| Defined iterations | To use the **Planning** pane, your team administrator [defined iteration (sprint) paths and configured team iterations](../../organizations/settings/set-iteration-paths-sprints.md). |
 
 ::: moniker-end
 
-::: moniker range=">= azure-devops-2020 < azure-devops"
+::: moniker range="<azure-devops"
 
 | Category | Requirements |
 |:-------------|:------------|
-| **Project access** | [Project member](../../organizations/security/add-users-team-project.md). |
-| **Permissions** | - Member of the **Contributors** or **Project Administrators** security group.<br> - To view or modify work items: **View work items in this node** and **Edit work items in this node** permissions set to **Allow**. By default, the **Contributors** group has this permission set to **Allow**. For more information, see [Set permissions and access for work tracking](../../organizations/security/set-permissions-access-work-tracking.md). <br> - To configure the integration options for a Classic release pipeline: **Edit** permissions for the release. <br> - To link work items to commits and pull requests: **Edit work items in this node** permissions set to **Allow** for the Area Path assigned to the work item. By default, the Contributors group has this permission. <br> - To view work items: **View work items in this node** permissions set to **Allow** for the Area Path assigned to the work item. |
+| Project access | [Project member](../../organizations/security/add-users-team-project.md). |
+| Permissions | - Member of the **Contributors** or **Project Administrators** security group.<br> - To view or modify work items: **View work items in this node** and **Edit work items in this node** permissions set to **Allow**. By default, the **Contributors** group has this permission set to **Allow**. For more information, see [Set permissions and access for work tracking](../../organizations/security/set-permissions-access-work-tracking.md). <br> - To configure the integration options for a Classic release pipeline: **Edit** permissions for the release. <br> - To link work items to commits and pull requests: **Edit work items in this node** permissions set to **Allow** for the Area Path assigned to the work item. By default, the Contributors group has this permission. <br> - To view work items: **View work items in this node** permissions set to **Allow** for the Area Path assigned to the work item. |
 |**Access levels** | To add or modify work items: At least [**Stakeholder** access](../../organizations/security/stakeholder-access.md). Users with **Stakeholder** access for public projects have full access to backlog and board features, like users with [**Basic** access](../../organizations/security/access-levels.md). For more information, see [Stakeholder access quick reference](../../organizations/security/stakeholder-access.md).   |
-| **Defined iterations** | To use the **Planning** pane, your team administrator [defined iteration (sprint) paths and configured team iterations](../../organizations/settings/set-iteration-paths-sprints.md). |
+| Defined iterations | To use the **Planning** pane, your team administrator [defined iteration (sprint) paths and configured team iterations](../../organizations/settings/set-iteration-paths-sprints.md). |
+
+::: moniker-end
+
+::: moniker range=" azure-devops"
+
+[!INCLUDE [ai-assistance-mcp-server-tip](../../includes/ai-assistance-mcp-server-tip.md)]
 
 ::: moniker-end
 
@@ -50,21 +56,21 @@ The following types of links help you manage the relationships between work item
 
 | Link type category | Description |
 |:----------|:------------|
-| **Advanced Security** | Connects a work item to an Advanced Security alert. |
-| **Build** | Connects a work item to a build number, found in build, or integrated in build. |
-| **Code** | Connects a work item to a branch, changeset, commit, pull request, tag, or versioned item. |
-| **GitHub** | Connects a work item to a GitHub repository branch, commit, issue, or pull request. |
-| **Remote work** | Connects a work item defined in a different organization that either consumes from, produces for, or is remotely related via URL. |
-| **Requirement** | Connects a work item to a storyboard via URL. |
-| **Test** | Connects a work item to a test attachment or result. |
-| **Wiki** | Connects a work item to a wiki page. |
-| **Work item** | Connects a work item to aspects of your work, including: <br> - Affected by <br> - Affects <br> - Child <br> - Duplicate <br> - Duplicate of <br> - Hyperlink <br> - Integrated in release stage <br> - Parent <br> - Predecessor <br> - Referenced by <br> - References <br> - Related <br> - Shared steps <br> - Successor <br> - Test case <br> - Tested by <br> - Tests |
+| Advanced Security | Connects a work item to an Advanced Security alert. |
+| Build | Connects a work item to a build number, found in build, or integrated in build. |
+| Code | Connects a work item to a branch, changeset, commit, pull request, tag, or versioned item. |
+| GitHub | Connects a work item to a GitHub repository branch, commit, issue, or pull request. |
+| Remote work | Connects a work item defined in a different organization that either consumes from, produces for, or is remotely related via URL. |
+| Requirement | Connects a work item to a storyboard via URL. |
+| Test | Connects a work item to a test attachment or result. |
+| Wiki | Connects a work item to a wiki page. |
+| Work item | Connects a work item to aspects of your work, including: <br> - Affected by <br> - Affects <br> - Child <br> - Duplicate <br> - Duplicate of <br> - Hyperlink <br> - Integrated in release stage <br> - Parent <br> - Predecessor <br> - Referenced by <br> - References <br> - Related <br> - Shared steps <br> - Successor <br> - Test case <br> - Tested by <br> - Tests |
 
 For more information about work link types, including remote link types, hyperlinks, attached files, parent/child, related, and predecessor-successor, see [Work link types](../queries/link-type-reference.md#work-link-type). For a list of all link types that you can specify using the Azure DevOps SLI, run the [az boards work-item relation list-type](../queries/link-type-reference.md#list-link-types) command.
 
 ### Manage parent/child links
 
-You can use various features to link or modify links that use the **Parent/Child** link type. Some features depend on the version of Azure DevOps you are using. Refer to the following options for managing these links:
+You can use various features to link or modify links that use the **Parent/Child** link type. Some features depend on the version of Azure DevOps you're using. Refer to the following options for managing these links:
 
 - **Organize your backlog**: [Use the mapping pane](../backlogs/organize-backlog.md) to link backlog items to portfolio backlog items or change the link structure. You can also choose **Show Parents** and [drag-and-drop items within the tree hierarchy](organize-backlog.md).
 - **Sprint backlog**: [Create and link tasks to backlog items](../sprints/assign-work-sprint.md) using the sprint backlog page. You can also drag-and-drop items to adjust the link structure directly in the web portal.
@@ -173,7 +179,7 @@ To view the information for the linked work items, enter one of the URLs listed 
 
 ---
 
-::: moniker range=">= azure-devops-2020"
+::: moniker range="<=azure-devops"
 
 ## Link work items to pull requests
 
@@ -269,7 +275,7 @@ Do the following steps to link work items to objects defined in other Azure DevO
 
 ## Link work items to GitHub objects
 
-::: moniker range=">= azure-devops-2020"
+::: moniker range="<=azure-devops"
 When you connect Azure Boards with GitHub repositories, you can link work items to a **GitHub Branch**, **GitHub Commit**, **GitHub Issue**, and **GitHub Pull Request**. You can use GitHub for software development while you use Azure Boards to plan and track your work.
 ::: moniker-end
 
@@ -306,12 +312,7 @@ Alternatively, you can also link to a work item from an Advanced Security alert.
 
 Do the following steps to link work items to existing builds. These builds can be in your project or to other projects in your organization or collection.
 
-::: moniker range="azure-devops-2020"
-> [!NOTE]
-> This feature requires installation of Azure DevOps Server 2020.1 update. For more information, see [Azure DevOps Server 2020 Update 1 RC1 Release Notes, Boards](/azure/devops/server/release-notes/azuredevops2020u1#customize-work-item-state-when-pull-request-is-merged).  
-::: moniker-end
-
-::: moniker range=">= azure-devops-2020"
+::: moniker range="<=azure-devops"
 
 1. From your work item, select **Links** > **Add link** > **Existing item**.
 
@@ -534,6 +535,36 @@ After a work item gets linked to a commit or pull request, it continues to appea
 
 To remove the work item from participating in future builds and releases, delete the link to the most recent commit and pull request.
 
+::: moniker range="azure-devops"
+
+<a id="use-ai-assistance"></a>
+
+## Use AI to manage work item links
+
+If you have the [Azure DevOps MCP Server](../../mcp-server/mcp-server-overview.md) configured, you can use AI assistants to manage work item links using natural language prompts. The MCP Server provides your AI assistant with secure access to your Azure DevOps data, allowing you to view, add, and remove links without navigating through the web interface.
+
+### Example prompts for managing links
+
+| Task | Example prompt |
+|------|----------------|
+| View existing links | `Get work item <1234> in <Contoso> project and show me the relations ` |
+| Add artifact links | `Link pull request <#67> to work item <1234> ` or `Add a branch artifact link to work item <1234> ` |
+| Remove specific links | `Remove link <5678> from work item <1234> ` |
+| Remove links by type | `Remove all related links from work item <1234> ` |
+| Create and link test cases | `Create a Test Case with test steps based on user story <1234> and link it back to the story ` |
+| Build parent-child hierarchy | `Create 3 child tasks under user story <1234> in <Contoso> for design, implementation, and testing` |
+| Find broken dependencies | `Show work items in <Contoso> that have predecessor links to items that are removed or closed` |
+| Trace requirements | `Starting from epic <1000> in <Contoso>, show me the full hierarchy of features, user stories, and tasks` |
+| Discover duplicate links | `List work items in <Contoso> that have duplicate links and show the linked item states` |
+| Cross-project linking | `Link work item <1234> in <Contoso> as related to work item <5678> in <Fabrikam>` |
+| Audit link completeness | `List user stories in the current sprint for <Contoso> that don't have any child tasks` |
+
+> [!TIP]
+> If you're using Visual Studio Code, [agent mode](/visualstudio/ide/copilot-chat-context#agent-mode) is especially helpful for troubleshooting complex linking scenarios.
+> - To avoid using stale or cached data from previous queries, add to your prompt, `Do not use previously fetched data`.
+
+::: moniker-end
+
 ## Related content
 
 - [Review the reference guide for link types](../queries/link-type-reference.md)
@@ -541,3 +572,5 @@ To remove the work item from participating in future builds and releases, delete
 - [Track dependencies by using Delivery Plans](../plans/track-dependencies.md)
 - [Organize your backlog and map child work items](../backlogs/organize-backlog.md)
 - [Download the Work item visualization extension](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.WorkItemVisualization)
+
+

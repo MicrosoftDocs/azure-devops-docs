@@ -5,7 +5,7 @@ ms.assetid: C52CDC6D-1B01-4A63-A265-B68C4E3DDE7D
 ms.service: azure-devops-test-plans
 ms.custom: UpdateFrequency3
 ms.topic: how-to
-ms.author: jeom
+ms.author: pliaros
 author: rohit-batra
 ms.date: 12/06/2021
 ms.update-cycle: 1095-days
@@ -17,10 +17,10 @@ monikerRange: '<= azure-devops'
 [!INCLUDE [version-lt-eq-azure-devops](../includes/version-lt-eq-azure-devops.md)] 
 
 Today's faster development pace requires tools that let test teams more easily verify value based
-on business requirements, and the high quality software demanded by customers. This type of testing is often referred to as _user acceptance testing_.
+on business requirements and the high-quality software demanded by customers. This type of testing is often referred to as _user acceptance testing_.
 
-Typically you create a Test Suite using a formal requirement work item type. However, today's 
-agile teams often prefer to work from User Stories or Product Backlog items as their requirements.
+Typically, you create a test suite using a formal requirement work item type. However, today's 
+agile teams often prefer to work from user stories or product backlog items as their requirements.
 
 ## Prerequisites
 
@@ -46,14 +46,14 @@ For user acceptance testing, you can assign multiple testers to a set of tests. 
    ![Screenshot shows the option to search for users with two users already selected.](media/user-acceptance-testing/search-select-testers.png)
 
    > [!TIP]
-   > You can select individual users who are a members of the Project Valid Users group.
+   > You can select individual users who are members of the Project Valid Users group.
    > You can't select user groups.
 
 4. To notify testers, select **Send email**.
 
    ![Screenshot shows the option to send email selected and text boxes for subject and notes.](media/user-acceptance-testing/send-messages-testers.png)
 
-5. Enter a message subject and note, as needed, and select **Ok**.
+5. Enter a message subject and note, as needed, and select **OK**.
 ::: moniker range="< azure-devops"
 
    > [!NOTE]
@@ -72,13 +72,18 @@ When you select **Assign tester**, use the search option to find a tester.
 
 ## Track results
 
-A key principle of good user acceptance testing practice is to minimize the effort required to determine whether a requirement is achieved. There are two ways you can do so: Focus on individual test runs and tests to see what failed, or use the chart views, which make it easier to track your test results. All members of your team can access these views.   
+A key principle of good user acceptance testing practice is to minimize the effort required to determine whether a requirement is achieved. There are two ways to track results:
+
+- Focus on individual test runs and tests to see what failed.
+- Use the chart views to more easily track your test results.
+
+All members of your team can access these chart views.   
 
 ![Screenshot showing test results.](media/user-acceptance-testing/uat8.png)
 
 The example dashboard is also used for other types of testing, such as continuous testing.
 
-If you don't see the data or information you expect in the dashboard charts, verify that the columns in your data are added to the Tests view. For more information, see [this blog post](https://devblogs.microsoft.com/devops/visual-studio-team-services-manual-testing-tips-charts-iterations-and-runs/).
+If you don't see the data or information you expect in the dashboard charts, verify that the columns in your data are added to the Tests view. For more information, see [Manual testing tips: Charts, iterations, and runs](https://devblogs.microsoft.com/devops/visual-studio-team-services-manual-testing-tips-charts-iterations-and-runs/).
 
 ## Related content
 

@@ -56,7 +56,7 @@ Specifically, you can do the following actions from the following list views:
       Yes
    :::column-end:::
 :::row-end::: 
-::: moniker range=">= azure-devops-2020"
+::: moniker range="<=azure-devops"
 :::row:::
    :::column span="2":::
       Add or remove the Parent field
@@ -186,7 +186,7 @@ To change the fields use to sort the query results, choose the **Sorting** tab. 
 
 * * *
 
-::: moniker range=">= azure-devops-2020"
+::: moniker range="<=azure-devops"
 
 ## Add or remove rollup columns
 
@@ -216,7 +216,7 @@ For other keyboard shortcuts, enter **?** to display available shortcuts based o
 
 ## Related content
 
-::: moniker range=">= azure-devops-2020"
+::: moniker range="<=azure-devops"
 
 - [Display rollup progress or totals](display-rollup.md)
 - [Interactively filter backlogs, boards, queries, and plans](filter-backlogs-boards-plans.md) 

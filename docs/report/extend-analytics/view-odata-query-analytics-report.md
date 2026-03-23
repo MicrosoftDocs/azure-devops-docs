@@ -12,7 +12,7 @@ ms.date: 06/15/2022
 
 # View the OData query behind an Analytics report or widget 
 
-[!INCLUDE [version-gt-eq-2019](../../includes/version-gt-eq-2019.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 Several built-in Analytics reports and widgets are supported. You can view the OData query used to generate these reports by following the steps outlined in this article. You can then adapt that OData query as needed to generate other reports using Power BI. 
 

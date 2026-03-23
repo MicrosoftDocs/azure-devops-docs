@@ -3,13 +3,13 @@ title: Track progress and individual items on the Taskboard
 titleSuffix: Azure Boards 
 description: Learn how to implement scrum by using the sprint dashboard in Azure Boards.
 ms.service: azure-devops-boards
-ms.custom: boards-sprints, engagement-fy23 
+ms.custom: boards-sprints, engagement-fy23, copilot-scenario-highlight
 ms.assetid: 278BF8D9-E34F-4D14-BACC-D3BA704C2C47
 ms.author: chcomley
 author: chcomley
 ms.topic: tutorial
 monikerRange: '<= azure-devops'
-ms.date: 11/27/2024
+ms.date: 02/28/2026
 ---
 
 # 6. Update and monitor your Taskboard
@@ -17,6 +17,8 @@ ms.date: 11/27/2024
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 Adding tasks to backlog items is essential for tracking the work required to implement them. Tasks also help estimate the effort assigned to individual team members and the team as a whole. The capacity tool indicates how much work your team can commit to. To effectively compare capacity with planned work, define and estimate tasks for each backlog item.
+
+[!INCLUDE [ai-assistance-mcp-server-tip](../../includes/ai-assistance-mcp-server-tip.md)]
 
 ### Define comprehensive tasks
 
@@ -37,10 +39,10 @@ By effectively adding and managing tasks, your team gains a clear understanding 
 
 | Category | Requirements |
 |--------------|-------------|
-| **Project access** | [Project member](../../organizations/security/add-users-team-project.md). |
-| **Permissions** | - Member of the **Contributors** or **Project Administrators** security group. To get added, see [Add users to a project or team](../../organizations/security/add-users-team-project.md). <br> - To view or modify work items: **View work items in this node** and **Edit work items in this node** permissions set to **Allow**. By default, the **Contributors** group has this permission. For more information, see [Set permissions and access for work tracking](../../organizations/security/set-permissions-access-work-tracking.md). |
-| **Access levels** | To add work items and exercise all board features: At least [**Basic** access](../../organizations/security/access-levels.md). |
-| **Sprint backlog** | [Tasks on your sprint backlog](add-tasks.md). |
+| Project access | [Project member](../../organizations/security/add-users-team-project.md). |
+| Permissions | - Member of the **Contributors** or **Project Administrators** security group. To get added, see [Add users to a project or team](../../organizations/security/add-users-team-project.md). <br> - To view or modify work items: **View work items in this node** and **Edit work items in this node** permissions set to **Allow**. By default, the **Contributors** group has this permission. For more information, see [Set permissions and access for work tracking](../../organizations/security/set-permissions-access-work-tracking.md). |
+| Access levels | To add work items and exercise all board features: At least [**Basic** access](../../organizations/security/access-levels.md). |
+| Sprint backlog | [Tasks on your sprint backlog](add-tasks.md). |
 
 ::: moniker range=">= azure-devops-2022"
 
@@ -49,16 +51,9 @@ By effectively adding and managing tasks, your team gains a clear understanding 
 
 ::: moniker-end
 
-::: moniker range="< azure-devops-2022"
-
-> [!NOTE]  
-> Users with **Stakeholder** access can't add tasks, update fields displayed on cards, drag-and-drop tasks to update status, or use the **Planning** pane to change the sprint assignment.   
-
-::: moniker-end
-
 ## Open the sprint Taskboard for your team
 
-::: moniker range=">= azure-devops-2020"
+::: moniker range="<=azure-devops"
 
 1. From your project, open the sprint backlog for your team.
 
@@ -87,7 +82,7 @@ By effectively adding and managing tasks, your team gains a clear understanding 
 
 Each team can customize their **Taskboard** in the following ways: 
 
-::: moniker range=">= azure-devops-2020"
+::: moniker range="<=azure-devops"
 
 - [Add or rename columns](customize-taskboard.md#add-columns).
 - [Customize cards](customize-taskboard.md#choose-fields) to show another fields or change card color based on specified field criteria.
@@ -95,7 +90,7 @@ Each team can customize their **Taskboard** in the following ways:
 
 ::: moniker-end
 
-::: moniker range=">= azure-devops-2020"
+::: moniker range="<=azure-devops"
 
 An administrator can customize the **Taskboard** for all teams in the following ways:  
 - [Add a custom workflow state to the task WIT for a process](../../organizations/settings/work/customize-process-workflow.md)
@@ -127,7 +122,7 @@ During your daily Scrum, you can filter your **Taskboard** to help focus on item
 *	Group by Backlog items or Group by stories to monitor progress of your product backlog items, stories, requirements, or bugs.
 *	Group by People when you want to monitor progress of individual team members.
 
-::: moniker range=">= azure-devops-2020"
+::: moniker range="<=azure-devops"
 > [!NOTE]
 > Your Taskboard automatically refreshes when changes occur. There isn't any live updates control, it simply happens in the background.  As other team members move or reorder cards on the taskboard, the Taskboard automatically updates with these changes. You don't need to press F5 to see the latest changes.
 ::: moniker-end
@@ -241,6 +236,22 @@ Or, if your project uses an On-premises XML process, you can [increase the maxim
 
 > [!div class="nextstepaction"]
 > [End of sprint activities](end-sprint-activities.md) 
+
+<a id="use-ai-assistance"></a>
+
+## Use AI to update sprint progress
+
+If you have the [Azure Boards MCP Server](../../mcp-server/mcp-server-overview.md) connected to your AI agent in agent mode, you can use natural language prompts to update and monitor sprint progress.
+
+| Task | Example prompt |
+|------|----------------|
+| Update task state | `Move tasks #3001, #3002, and #3003 to Done in project <Contoso>` |
+| Update remaining work | `Set remaining work to 2 hours for task #3004 in project <Contoso>` |
+| Sprint progress report | `Show a summary of task states (To Do, In Progress, Done) for Sprint 12 on <Contoso Team>` |
+| Find stale tasks | `List all tasks in the current sprint for <Contoso Team> that are still in To Do state and were created more than 3 days ago` |
+
+> [!NOTE]
+> Agent mode and the MCP Server use natural language, so you can adjust these prompts or ask follow-up questions to refine the results.
 
 ## Related content
 

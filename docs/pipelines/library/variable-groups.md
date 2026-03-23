@@ -7,10 +7,7 @@ ms.author: ronai
 author: RoopeshNair
 ms.date: 08/15/2024
 monikerRange: '<= azure-devops'
-ms.custom:
-  - devx-track-azurecli
-  - pipelinesresourcesrefresh
-  - sfi-image-nochange
+ms.custom: devx-track-azurecli, pipelinesresourcesrefresh, sfi-image-nochange
 ---
 
 # Manage variable groups
@@ -505,5 +502,5 @@ For more information about precedence of variables, see [Expansion of variables]
 * [Define variables](../process/variables.md)
 * [Define custom variables](../release/variables.md#custom-variables)
 * [Use secret and nonsecret variables in variable groups](../scripts/cli/pipeline-variable-group-secret-nonsecret-variables.md)
-* [Use Azure Key Vault secrets in Azure Pipelines](../release/azure-key-vault.md)
+* [Link a variable group to secrets in Azure Key Vault](link-variable-groups-to-key-vaults.md)
 * [Add approvals and checks](../process/approvals.md)

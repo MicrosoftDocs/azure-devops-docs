@@ -2,14 +2,14 @@
 title: "Tutorial: Organize Your Product Backlog in Azure Boards"
 titleSuffix: Azure Boards
 description: Learn how to map or parent backlog items to features. Then learn how to map features to epics in Azure Boards.
-ms.custom: boards-backlogs
+ms.custom: boards-backlogs, copilot-scenario-highlight
 ms.service: azure-devops-boards
 ms.assetid: C294ACBD-00A3-4FCF-8777-B354BC0CC1EF
 ms.author: chcomley
 author: chcomley
 ms.topic: tutorial
 monikerRange: '<= azure-devops'
-ms.date: 07/29/2025
+ms.date: 02/28/2026
 #customer intent: As a team member with organizational responsibilities, I want to understand how to organize a project backlog in Azure Boards.
 ---
 
@@ -18,6 +18,8 @@ ms.date: 07/29/2025
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 In this tutorial, you learn how to organize your backlog in Azure Boards. After you add features or epics to your portfolio backlog, you can map backlog items. You can add and group items into a hierarchy. Also, drill up or down in the hierarchy, reorder and reparent items, and filter hierarchical views.
+
+[!INCLUDE [ai-assistance-mcp-server-tip](../../includes/ai-assistance-mcp-server-tip.md)]
 
 In this article, you learn how to:
  
@@ -51,7 +53,7 @@ From your web browser, open your product backlog.
 
 [!INCLUDE [links to backlog information](../includes/setup-backlogs-boards.md)]
 
-::: moniker range=">= azure-devops-2020"
+::: moniker range="<=azure-devops"
 
 1. Select your project, choose **Boards** > **Backlogs**, and then select the team. 
 
@@ -204,6 +206,28 @@ From a product or portfolio backlog, you can multiple select several work items 
 [!INCLUDE [temp](../includes/add-portfolio-backlogs.md)]
 
 [!INCLUDE [temp](../includes/display-rollup-section.md)]
+
+<a id="use-ai-assistance"></a>
+
+## Use AI to organize your backlog
+
+If you have the [Azure Boards MCP Server](../../mcp-server/mcp-server-overview.md) connected to your AI agent in agent mode, you can use natural language prompts to organize and manage your backlog hierarchy.
+
+| Task | Example prompt |
+|------|----------------|
+| Set parent items | `Set feature 'User Authentication' as the parent of user stories #101, #102, and #103` |
+| Find unparented items | `List all user stories that don't have a parent feature assigned` |
+| Build a hierarchy | `Create a feature called 'Payment Processing' under epic #50 and add three child user stories for checkout, refund, and receipt` |
+| View item hierarchy | `Show me the hierarchy of all work items under epic 'Q2 Release'` |
+| Rebalance across features | `Show the count of child user stories per feature in <Contoso> and list features with more than 10 children` |
+| Identify misplaced items | `List user stories in area path <Contoso\\Backend> whose parent feature is in area path <Contoso\\Frontend>` |
+| Flatten and reorganize | `Move all child tasks of user story <1234> to be children of user story <5678> in <Contoso>` |
+| Check hierarchy depth | `Show epics in <Contoso> that have features with user stories that still have no child tasks` |
+| Audit area path alignment | `List work items in <Contoso> where the child's area path doesn't match the parent's area path` |
+| Map stories to sprints | `Show all user stories under feature <1500> grouped by sprint iteration` |
+
+> [!NOTE]
+> Agent mode and the MCP Server use natural language, so you can adjust these prompts or ask follow-up questions to refine the results.
 
 ## Related content  
 

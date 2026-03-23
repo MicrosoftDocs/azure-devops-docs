@@ -4,6 +4,7 @@ author: gloridelmorales
 ms.author: glmorale
 ms.date: 11/2/2022
 description: With this update, we included support for template expressions in repository and container resource definitions.
+ms.topic: release-notes
 ---
 # Support for template expressions in repository and container resource definitions
 

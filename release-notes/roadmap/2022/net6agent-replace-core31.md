@@ -3,7 +3,7 @@ title: .NET 6 agent to replace .NET Core 3.1 agent
 author: gloridelmorales
 ms.author: glmorale
 ms.date: 10/12/2022
-ms.topic: article
+ms.topic: whats-new
 ms.service: azure-devops
 ms.subservice: azure-devops-release-notes
 description: .NET 6 agent to replace .NET Core 3.1 agent

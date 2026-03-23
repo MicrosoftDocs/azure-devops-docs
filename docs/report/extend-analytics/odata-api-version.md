@@ -13,7 +13,7 @@ ms.date: 09/12/2024
 
 # OData API versioning
 
-[!INCLUDE [version-gt-eq-2019](../../includes/version-gt-eq-2019.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 Analytics for Azure DevOps offers a versioned OData API compatible with clients designed for specific versions. Each version might include enhancements and nonbreaking changes, while breaking changes get introduced in future versions.
 

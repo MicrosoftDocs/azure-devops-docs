@@ -5,15 +5,17 @@ description: Learn how to view and update your project summary page to share pro
 ms.topic: quickstart
 ms.subservice: azure-devops-projects
 ms.assetid: A9ED2BF5-BD0B-4114-A7BD-693C5D747E16
+ms.custom: copilot-scenario-highlight
 ms.author: chcomley
 author: chcomley
+ai-usage: ai-assisted
 monikerRange: "<=azure-devops"
-ms.date: 11/11/2024
+ms.date: 03/03/2026
 ---
 
 # View and update project summary page
 
-[!INCLUDE [version-gt-eq-2019](../../includes/version-gt-eq-2019.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 Each project provides a summary or home page to share information and showcase the latest project activity. This page serves as a central hub for team members to stay informed and up-to-date on the project's progress. Use this page for the following tasks:
 
@@ -58,18 +60,20 @@ Use the project summary page to also perform more specific tasks:
 
 :::image type="content" source="media/summary/project-summary-page-intro.png" alt-text="Screenshot of summary page.":::
 
+[!INCLUDE [ai-assistance-mcp-server-tip](../../includes/ai-assistance-mcp-server-tip.md)]
+
 ## Prerequisites
 
 | Category | Requirements |
 |--------------|-------------|
-|**Permissions**|Member of the [Project Administrators](../security/change-project-level-permissions.md) group or **Edit project-level information** permission set to **Allow** to do the following tasks:<br>- Edit information on the project page.<br>- Change the repository that you use to share project information.<br>- Manage project membership.<br>**Specific tasks:**<br>- To edit a project page: **Contributor** to the repository or branch or **Contribute** permissions set to **Allow**.<br>- To view the project summary: [Valid member of the project](../security/about-permissions.md#valid-user-groups).<br>- To add or edit project tags: Project-level **Manage properties** permission set to **Allow**. This permission controls the project properties REST API.|
+|Permissions|Member of the [Project Administrators](../security/change-project-level-permissions.md) group or Edit project-level information permission set to Allow to do the following tasks:<br>- Edit information on the project page.<br>- Change the repository that you use to share project information.<br>- Manage project membership.<br>Specific tasks:<br>- To edit a project page: Contributor to the repository or branch or Contribute permissions set to Allow.<br>- To view the project summary: [Valid member of the project](../security/about-permissions.md#valid-user-groups).<br>- To add or edit project tags: Project-level Manage properties permission set to Allow. This permission controls the project properties REST API.|
 
 > [!TIP]    
 > If you don't have the necessary permissions to edit a page or use a feature, the corresponding icons and links aren't visible to you.
 
 ## Open project summary
 
-From your web browser, select **Overview** > **Summary**. If you don't have a  project yet, [create a project](../../organizations/projects/create-project.md).
+From your web browser, select Overview > Summary. If you don't have a  project yet, [create a project](../../organizations/projects/create-project.md).
 
 If your project summary isn't set up yet, a welcome page displays:
 
@@ -78,11 +82,11 @@ If your project summary isn't set up yet, a welcome page displays:
 
 Select one of the following tasks to get started:
 
-- **Invite** to begin [adding others to your project](../../organizations/security/add-users-team-project.md). You can only invite users who are [added to your organization](../security/add-users-team-project.md#add-project-users).
-- **Boards** to begin [adding work items](../../boards/work-items/view-add-work-items.md).
-- **Repos** to open [Repos>Files](../../repos/git/clone.md) page where you can clone or import a repository, or [initialize a README file](#initialize-a-readme-file-for-a-git-repo) for your project summary page.
-- **Pipelines** to start [defining a pipeline](../../pipelines/index.yml).
-- **Test Plans** to start [defining test plans and test suites](../../test/create-a-test-plan.md).
+- Invite to begin [adding others to your project](../../organizations/security/add-users-team-project.md). You can only invite users who are [added to your organization](../security/add-users-team-project.md#add-project-users).
+- Boards to begin [adding work items](../../boards/work-items/view-add-work-items.md).
+- Repos to open [Repos>Files](../../repos/git/clone.md) page where you can clone or import a repository, or [initialize a README file](#initialize-a-readme-file-for-a-git-repo) for your project summary page.
+- Pipelines to start [defining a pipeline](../../pipelines/index.yml).
+- Test Plans to start [defining test plans and test suites](../../test/create-a-test-plan.md).
 - [Manage your services](../../organizations/settings/set-services.md) to disable the visibility of one or more services.
 
 ## Update the summary page
@@ -91,16 +95,16 @@ The summary page displays either the README file defined in a project repository
 
 1. Edit the page:
 
-	- If it's your first time editing the page, select **Add Project Description**.  
+	- If it's your first time editing the page, select Add Project Description.  
 	:::image type="content" source="media/summary/add-project-description.png" alt-text="Screenshot of summary page, first time editing.":::
 
-	- If it's not your first time editing the page, select the :::image type="icon" source="../../media/icons/edit.png" border="false"::: **Edit project information**. This icon is only visible to members with permissions to edit the project **Summary** page.
+	- If it's not your first time editing the page, select the :::image type="icon" source="../../media/icons/edit.png" border="false"::: Edit project information. This icon is only visible to members with permissions to edit the project Summary page.
  
-2. Provide a brief description of the project purpose in the **Description** box.  
+2. Provide a brief description of the project purpose in the Description box.  
 
 	:::image type="content" source="media/summary/about-this-project-dialog.png" alt-text="About this project dialog.":::
 
-3. (Optional) Add one or more **Tags** for your project. These tags are similar to [work item tags](../../boards/queries/add-tags-to-work-items.md). You can add several tags at a time by using the comma or semicolon delimiters. Tags must conform to the following rules:  
+3. (Optional) Add one or more Tags for your project. These tags are similar to [work item tags](../../boards/queries/add-tags-to-work-items.md). You can add several tags at a time by using the comma or semicolon delimiters. Tags must conform to the following rules:  
 	- Tags must be 40 characters or less
 	- Tags can't contain the forward slash (/) character or end with hyphen character (-)
 	- No more than 15 tags can be added to a project  
@@ -109,20 +113,20 @@ The summary page displays either the README file defined in a project repository
 	> [!NOTE]   
 	> The search and filter functions can't be used to search or filter on project tags. 
 
-4. Choose whether to reference a **README** file or the project wiki home page for the rest of the Summary page contents.  
+4. Choose whether to reference a README file or the project wiki home page for the rest of the Summary page contents.  
 
 	> [!TIP] 
 	> A default README is created within the repository added when you created your project. You can choose this README or create another repository and README file for this purpose. 
 
-	If you choose a **Readme file**, select the repository for the README. A preview of the current text for the README file is shown. 
+	If you choose a Readme file, select the repository for the README. A preview of the current text for the README file is shown. 
 
 	:::image type="content" source="media/summary/select-readme-repository.png" alt-text="About this project dialog, choose, and select README repository.":::
 
-	If you choose a **Wiki**, the Wiki home page is referenced and must be the first file within the Wiki TOC. You can't change that reference.  
+	If you choose a Wiki, the Wiki home page is referenced and must be the first file within the Wiki TOC. You can't change that reference.  
 
 5. To update the contents of the referenced README file or wiki, edit the corresponding file. For more information, see [Create a README for your repo](../../repos/git/create-a-readme.md) or [Add and edit wiki pages](../../project/wiki/add-edit-wiki.md). 
  
-	Consider including the following types of information in your **Summary** page:
+	Consider including the following types of information in your Summary page:
 	- Ways in which users can contribute to your project 
 	- Who to contact to elevate permissions or add extensions  
 	- Roadmap information 
@@ -133,7 +137,7 @@ The summary page displays either the README file defined in a project repository
 
 ## Invite contributors to your project 
 
-Send an email to invite users to contribute to your project by choosing **Invite**. For more information, see [Add users or groups to a team or project, Invite users from the Summary page](../security/add-users-team-project.md#invite-users-from-the-summary-page).
+Send an email to invite users to contribute to your project by choosing Invite. For more information, see [Add users or groups to a team or project, Invite users from the Summary page](../security/add-users-team-project.md#invite-users-from-the-summary-page).
 
 :::image type="content" source="../security/media/add-users/summary-invite-users.png" alt-text="Screenshot of Summary page, Invite button.":::
 
@@ -144,13 +148,13 @@ Send an email to invite users to contribute to your project by choosing **Invite
 
 ## View project activity  
 
-From the **Project stats** or **Activity** section, you can view updates made to the project in the last 1, 7, or 30 days. Choose the view option as shown in the following image. 
+From the Project stats or Activity section, you can view updates made to the project in the last 1, 7, or 30 days. Choose the view option as shown in the following image. 
 
 :::image type="content" source="media/summary/project-stats.png" alt-text="Screenshot of Summary page, Stats section.":::
 
 ## Chat with a project member or send an email
 
-From the **Members** section, you can see some of the members added to the project, and connect to them via email or chat with a member. 
+From the Members section, you can see some of the members added to the project, and connect to them via email or chat with a member. 
 
 :::image type="content" source="media/summary/project-members.png" alt-text="Screenshot of Summary page, Members section.":::
 
@@ -168,7 +172,7 @@ To email or initiate a chat session, choose the team member shown and select you
 
 ## Search a project  
 
-From the **Summary** page, you can initiate a search of your code, work items, and wiki. For more information, see [Get started with search](../../project/search/get-started-search.md).
+From the Summary page, you can initiate a search of your code, work items, and wiki. For more information, see [Get started with search](../../project/search/get-started-search.md).
 
 :::image type="content" source="media/summary/project-search.png" alt-text="Screenshot of Summary page, search box.":::
 
@@ -176,16 +180,16 @@ From the **Summary** page, you can initiate a search of your code, work items, a
 
 You can share your project and objective, and ways for team members to contribute to the project through a project README file. For Git projects, the README.md file needs to be at the root of each repository in the default branch. For Git based projects, the left pane supports navigation to other repositories. A separate Welcome page/README.md file can be created for each repository.
 
-1. Open **Repos>Files**. This page guides you to get started quickly by adding code to your repository when you choose one of the options to clone, push, import, or initialize a repo.  
+1. Open Repos>Files. This page guides you to get started quickly by adding code to your repository when you choose one of the options to clone, push, import, or initialize a repo.  
 
-2. With the **Add a README** check box checked, choose **Initialize**.
+2. With the Add a README check box checked, choose Initialize.
 
    > [!div class="mx-imgBorder"]  
    > ![Screenshot of Initialize README file, latest versions](media/share-project/initialize-readme-new-nav.png)
 
-   A default README file is added to the project repository, in this case, the **Fabrikam Test** repo.
+   A default README file is added to the project repository, in this case, the Fabrikam Test repo.
 
-3. Return to **Overview** > **Summary** and choose the README file for the project page. Select :::image type="icon" source="../../media/icons/edit.png" border="false"::: **Edit**.
+3. Return to Overview > Summary and choose the README file for the project page. Select :::image type="icon" source="../../media/icons/edit.png" border="false"::: Edit.
 
    > [!div class="mx-imgBorder"]  
    > ![Screenshot of Choose README file.](media/share-project/choose-readme-file-new-nav.png)  
@@ -200,7 +204,7 @@ You can share your project and objective, and ways for team members to contribut
    > [!div class="mx-imgBorder"]  
    > ![Screenshot of Edit the README file.](media/share-project/edit-readme-file.png)  
 
-   You're directed to the **Repos>Files** page for the README file. You can edit and modify the README Markdown file like you would any other file in a Git repository. You can use Markdown language to format the README file and add images. For more information, see [Create a README for your repo](../../repos/git/create-a-readme.md) and [Markdown guidance](../../project/wiki/markdown-guidance.md).
+   You're directed to the Repos>Files page for the README file. You can edit and modify the README Markdown file like you would any other file in a Git repository. You can use Markdown language to format the README file and add images. For more information, see [Create a README for your repo](../../repos/git/create-a-readme.md) and [Markdown guidance](../../project/wiki/markdown-guidance.md).
 
 <a id="initialize-tfvc"> </a>
 
@@ -208,38 +212,60 @@ You can share your project and objective, and ways for team members to contribut
 
 For projects that selected TFVC for version control, the README.md file needs to be at the root of your team project folder, for example, $/TeamProject/README.md.
 
-1. Open **Repos** > **Files**.
+1. Open Repos > Files.
 
-2. Select **Add Project Description**.
+2. Select Add Project Description.
 
    > [!div class="mx-imgBorder"]  
    > ![Screenshot of Welcome page, TFVC new project, create readme.](media/share-project/welcome-page-tfvc-new-nav.png)
 
-3. Select the TFVC repository and choose **Save**. If no README file is in the repo, you see the following message.
+3. Select the TFVC repository and choose Save. If no README file is in the repo, you see the following message.
 
    > [!div class="mx-imgBorder"]  
    > ![Screenshot of About this project dialog.](media/share-project/about-this-project-form.png)
 
-4. To create a README file, choose **Repos>Files** and choose new file to add a file to the project repository.
+4. To create a README file, choose Repos>Files and choose new file to add a file to the project repository.
 
-5. Name the file as **README.md**.
+5. Name the file as README.md.
 
    > [!div class="mx-imgBorder"]  
    > ![Screenshot of Add new file dialog.](media/share-project/create-readme-file-web-portal.png)
 
-6. Add the contents of your README file in Markdown format, and then choose **Check in...**.  
+6. Add the contents of your README file in Markdown format, and then choose Check in....  
    > [!div class="mx-imgBorder"]  
    > ![Screenshot of Enter README file contents.](media/share-project/tfvc-readme-file.png)
 
-7. Select **Check in** to complete the check-in process of the README file.  
+7. Select Check in to complete the check-in process of the README file.  
 
    > [!div class="mx-imgBorder"]  
    > ![Screenshot of Check-in README file dialog.](media/share-project/tfvc-readme-checkin.png)
 
-8. Select **Overview>Summary** to review your project summary page with the README file displayed.  
+8. Select Overview>Summary to review your project summary page with the README file displayed.  
 
    > [!div class="mx-imgBorder"]  
    > ![Screenshot of Project summary page with the README file displayed.](media/share-project/tfvc-project-summary-with-readme.png)
+
+<a id="use-ai-assistance"></a>
+
+## Use AI to manage your project summary page
+
+[!INCLUDE [ai-assistance-mcp-server-tip](../../includes/ai-assistance-mcp-server-tip.md)]
+
+If you use GitHub Copilot, the [Azure DevOps MCP Server](../../mcp-server/mcp-server-overview.md) can help you set up and maintain your project summary page through natural language prompts.
+
+### Example prompts for project summary management
+
+| Task | Example prompt |
+|---|---|
+| Create a project README | `Generate a README for my Azure DevOps project that includes sections for project overview, architecture diagram placeholder, getting started guide, team contacts, and links to our wiki and CI/CD pipelines` |
+| Audit project activity | `Show me the recent activity for my project including the latest commits, pull requests, and work item changes so I can prepare a status update for our weekly standup` |
+| Onboard new team members | `I need to invite 5 new developers to my Azure DevOps project with Contributor access. Walk me through adding them and point me to the key resources they should review on the summary page` |
+| Set up project tags and metadata | `Configure project tags for our microservices project so it's discoverable by other teams. Add tags for the technology stack, team name, and business domain` |
+| Compare project health across projects | `I manage four Azure DevOps projects. Help me check the summary pages and recent activity for each to identify which ones are active and which might need attention` |
+| Improve project discoverability | `Our organization has 30+ projects and teams can't find what they need. Help me update project descriptions, README files, and tags to make projects easier to discover and understand` |
+
+> [!TIP]
+> For the best results, use these prompts in agent mode with the Azure DevOps MCP Server connected. Customize the prompts with your specific project name, team details, or documentation goals.
 
 ## Related content
 

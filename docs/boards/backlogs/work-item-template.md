@@ -28,7 +28,7 @@ Work item templates are distinct from process templates. For more information, s
 
 | Prerequisite    | Description |
 | ----------------|-------------|
-| **Permissions** | - To manage work item templates in the web portal, be a member of the team that owns the templates. You can then add, edit, or delete templates as needed. <br>- To use work item templates in the web portal, be a **Contributor** to the project. You can then apply templates to existing work items. |
+| Permissions | - To manage work item templates in the web portal, be a member of the team that owns the templates. You can then add, edit, or delete templates as needed. <br>- To use work item templates in the web portal, be a **Contributor** to the project. You can then apply templates to existing work items. |
 | **Tools**       | - To add, capture, or edit work item templates by using Visual Studio Team Explorer, install the [Microsoft Visual Studio Team Foundation Server 2015 Power Tools](https://marketplace.visualstudio.com/items?itemName=TFSPowerToolsTeam.MicrosoftVisualStudioTeamFoundationServer2015Power). These templates only appear in your view of Team Explorer. |
 
 ## Supported template tasks

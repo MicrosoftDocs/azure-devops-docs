@@ -13,7 +13,7 @@ ms.date: 12/16/2022
 
 # Rollup child work item values to parent sample report
 
-[!INCLUDE [version-gt-eq-2019](../../includes/version-gt-eq-2019.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 Rollup provides support to show a count of work items or sum of Story Points, Remaining Work, or other custom field of child items. This article provides several examples of how to generate a tabular rollup  report for Epics, Features, or User Stories that contain child work items. The following image shows an example of Story Points rolled up for their parent Features.  
  

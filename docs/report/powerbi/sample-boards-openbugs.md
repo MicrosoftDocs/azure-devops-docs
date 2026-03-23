@@ -13,7 +13,7 @@ ms.date: 12/05/2022
 
 # Open bugs or user stories sample reports 
 
-[!INCLUDE [version-gt-eq-2019](../../includes/version-gt-eq-2019.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 To generate a report that lists open bugs or user stories, select the Matrix report in Power BI and use a query similar to the ones provided in this article. The report you generate lists open bugs or user stories broken down by **State** and **Assigned To** fields, as shown in  the following image. 
 

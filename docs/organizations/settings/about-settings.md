@@ -7,8 +7,8 @@ ms.topic: overview
 ms.author: chcomley
 author: chcomley
 monikerRange: '<= azure-devops'
-ms.date: 06/16/2025
-ms.custom: sfi-image-nochange
+ms.date: 02/17/2026
+ms.custom: sfi-image-nochange, pat-reduction
 ---
 
 # About settings for users, teams, projects, or organizations
@@ -34,6 +34,8 @@ If you're just getting started as a Project Administrator, see [Get started as a
 
 ::: moniker-end  
 
+[!INCLUDE [ai-assistance-callout](../../includes/ai-assistance-callout.md)]
+
 ## User settings
 
 Individual contributors can customize their experience in Azure DevOps by setting user preferences, enabling preview features, and managing their favorites and notifications. The following table outlines the various user settings available:
@@ -50,7 +52,7 @@ Individual contributors can customize their experience in Azure DevOps by settin
    :::column-end:::
 :::row-end:::
 ---
-::: moniker range=">= azure-devops-2020"
+::: moniker range="<=azure-devops"
 :::row:::
    :::column span="1":::
       **General**
@@ -235,13 +237,6 @@ From the administrative **Project settings** page, you can configure settings av
 From the administrative **Project settings** page, you can configure settings available from the tabs shown in the following image.
 
 ![Screenshot of Project settings page, Azure DevOps Server 2022.](media/about/project-settings-server-2022.png)  
-::: moniker-end
-
-::: moniker range="<azure-devops-2022"
-**Project-level settings**  
-From the administrative **Project settings** page, you can configure settings available from the tabs shown in the following image.
-
-![Screenshot of Project settings page, Azure DevOps Server versions.](media/about/project-settings-server-2020.png)  
 ::: moniker-end
 
 :::row:::
@@ -524,15 +519,6 @@ From the administrative page for a collection, you can configure the settings sh
 
 ::: moniker-end
 
-::: moniker range="<azure-devops-2022"
-**Collection-level settings**  
-
-From the administrative page for a collection, you can configure the settings shown in the following image. 
-
-![Screenshot of Collection settings options, Azure DevOps Server 2019-2020 versions.](media/about/collection-settings-options-server-versions.png) 
-
-::: moniker-end
-
 ::: moniker range="azure-devops"
 
 For an overview of managing your organization, see [About organization management](../accounts/organization-management.md).
@@ -555,7 +541,7 @@ For an overview of managing collections, see [Configure and manage Azure DevOps 
    :::column-end:::
 :::row-end:::
 ---
-::: moniker range=">= azure-devops-2020"
+::: moniker range="<=azure-devops"
 :::row:::
    :::column span="1":::
       **Preview features**

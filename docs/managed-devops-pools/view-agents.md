@@ -2,7 +2,7 @@
 title: View agents
 description: View the status of agents in Managed DevOps Pools.
 ms.date: 11/13/2024
-ms.topic: article
+ms.topic: concept-article
 ---
 
 # View agents

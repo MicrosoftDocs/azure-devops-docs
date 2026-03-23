@@ -7,8 +7,9 @@ ms.assetid:
 ms.author: chcomley
 author: chcomley
 ms.topic: tutorial
+ms.custom: copilot-scenario-highlight
 monikerRange: '<= azure-devops'
-ms.date: 10/14/2025
+ms.date: 02/28/2026
 ai-usage: ai-assisted
 ---
 
@@ -17,6 +18,8 @@ ai-usage: ai-assisted
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 This guide walks you through implementing the Scaled Agile Framework (SAFe®) with Azure Boards. Learn to configure teams, customize processes, plan and track work, monitor progress, and validate your implementation across portfolio, program, and team levels.
+
+[!INCLUDE [ai-assistance-mcp-server-tip](../../includes/ai-assistance-mcp-server-tip.md)]
 
 Azure Boards supports SAFe® practices through teams, backlogs, boards, reports, and metrics. This article explains how Azure Boards artifacts support SAFe practices and artifacts.
 
@@ -39,10 +42,10 @@ Complete these requirements before implementing SAFe® with Azure Boards.
 
 | Category | Requirement | Details |
 |----------|-------------|---------|
-| **SAFe® Knowledge** | Review SAFe® framework fundamentals | If you're new to SAFe®, start with [SAFe® framework fundamentals](https://www.scaledagileframework.com/). |
-| **Permissions** | Project Administrator access | Ensure you have [Project Administrator permissions](../../organizations/security/change-project-level-permissions.md) to configure teams, areas, and iterations. |
-| **Organization Planning** | Understand your SAFe® structure | Document your organization's portfolio themes, value streams, and Agile Release Trains (ARTs). |
-| **Stakeholder Alignment** | Identify key stakeholders | Engage Portfolio Managers, Program Managers, and Scrum Masters early in the planning process. |
+| SAFe® Knowledge | Review SAFe® framework fundamentals | If you're new to SAFe®, start with [SAFe® framework fundamentals](https://www.scaledagileframework.com/). |
+| Permissions | Project Administrator access | Ensure you have [Project Administrator permissions](../../organizations/security/change-project-level-permissions.md) to configure teams, areas, and iterations. |
+| Organization Planning | Understand your SAFe® structure | Document your organization's portfolio themes, value streams, and Agile Release Trains (ARTs). |
+| Stakeholder Alignment | Identify key stakeholders | Engage Portfolio Managers, Program Managers, and Scrum Masters early in the planning process. |
 
 <a id="safe-concepts"></a>
 
@@ -750,3 +753,19 @@ az boards iteration create --name "PI 1" --start-date "2025-01-01"
 - **REST APIs**: Custom integration and bulk updates
 
 For complete CLI reference, see [Azure DevOps CLI documentation](../../cli/index.md).
+
+<a id="use-ai-assistance"></a>
+
+## Use AI to manage SAFe® work items
+
+If you have the [Azure Boards MCP Server](../../mcp-server/mcp-server-overview.md) connected to your AI agent in agent mode, you can use natural language prompts to create and manage work items across your SAFe® portfolio, program, and team levels.
+
+| Task | Example prompt |
+|------|----------------|
+| Create portfolio-level items | `Create a new epic called 'Platform Modernization' and assign it to the Portfolio team's area path` |
+| Plan program increments | `List all features assigned to PI 2 iterations for the Program team` |
+| Track team-level work | `Show all active user stories for the Mobile team in the current sprint` |
+| Check cross-team progress | `List all in-progress features across all teams under the <Contoso> area path with their current states` |
+
+> [!NOTE]
+> Agent mode and the MCP Server use natural language, so you can adjust these prompts or ask follow-up questions to refine the results.

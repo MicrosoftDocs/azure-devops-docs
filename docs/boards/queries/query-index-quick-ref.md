@@ -149,7 +149,7 @@ You can list work items based on the following criteria...
       - [Edit a query](using-queries.md) 
       - [Email a query](view-run-query.md#email-query-items-or-share-a-query-url) 
       - [Export a query to Excel](../backlogs/office/bulk-add-modify-work-items-excel.md) 
-      - [Export a query (csv)](import-work-items-from-csv.md#export-list-as-a-csv-file) 
+      - [Export a query (csv)](import-work-items-from-csv.md#export-work-items-to-a-csv-file) 
       - [Favorite a query](view-run-query.md#all-and-favorites-supported-tasks) 
       - [Favorite a query as a team favorite](organize-queries.md#save-a-query-as-a-team-favorite) 
       - [Filter a query](../backlogs/filter-backlogs-boards-plans.md) 

@@ -12,7 +12,7 @@ ai-usage: ai-assisted
 
 # Deploy to Linux VMs in an environment
 
-[!INCLUDE [version-eq-azure-devops](../../includes/version-gt-eq-2020.md)]
+[!INCLUDE [version-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 You can add virtual machines as resources within [Azure Pipelines environments](../process/environments.md) and target them for deployments. For a continuous integration and continuous deployment (CI/CD) workflow, the environment's deployment history provides traceability for each VM back to the triggering commit.
 

@@ -4,6 +4,7 @@ description: See the Sprint 150 Update for Azure DevOps administration, includin
 author: gloridelmorales
 ms.author: glmorale
 ms.date: 04/08/2019
+ms.topic: release-notes
 ---
 
 # Administration - Sprint 150 Update

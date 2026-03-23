@@ -9,7 +9,7 @@ ms.author: chcomley
 author: chcomley
 ms.topic: how-to
 monikerRange: '<= azure-devops'
-ms.date: 11/12/2024
+ms.date: 12/22/2025
 #customer intent: As a team administrator, I want to be able to track code defects as part of the backlog in Azure Boards so the team can track them in the same way as requirements or tasks.
 ---
 
@@ -19,7 +19,7 @@ ms.date: 11/12/2024
 
 As your team identifies code defects or bugs, they can add them to the backlog and track them similar to tracking requirements. You can schedule bugs to be fixed within a sprint along with other tasks.
 
-When you track bugs as *requirements*, they appear on the product Backlogs and boards. When you track bugs as *tasks*, the bugs appear on Sprint Backlogs and Taskboards. For more information about other work item types, see [Add other work item types to backlogs or boards](#add-other-wits).
+When you track bugs as *requirements*, they appear on the product backlogs and boards. When you track bugs as *tasks*, the bugs appear on sprint backlogs and taskboards. For more information about other work item types, see [Add other work item types to backlogs or boards](#add-other-wits).
 
 You can define your team's tracking setting for the [Agile](../../boards/work-items/guidance/agile-process.md), [Scrum](../../boards/work-items/guidance/scrum-process.md), and [Capability Maturity Model Integration (CMMI)](../../boards/work-items/guidance/cmmi-process.md) processes. The Bug work item type isn't defined for the [Basic](../../boards/get-started/plan-track-work.md) process, so there isn't a team setting for Basic. Instead, you should track bugs and code defects using the Issue work item type.
 
@@ -62,7 +62,7 @@ The following steps show how to change it from the board view.
 When you manage bugs with requirements or tasks, they appear on one or more of your Agile tool backlogs and boards. However, if you nest items, by creating parent-child links of items that belong in either the Requirements or Task categories, not all items can appear on your backlogs and boards. To learn more about how nested items are treated, see [Troubleshoot reordering and nesting issues](../../boards/backlogs/resolve-backlog-reorder-issues.md).
 
 > [!TIP]  
-> If, after refreshing a backlog or board, you don't see bugs where you expect to see them, review [Troubleshoot reordering and nesting issues](../../boards/backlogs/resolve-backlog-reorder-issues.md). Only leaf nodes of nested items appear on the or task boards.  
+> If, after refreshing a backlog or board, you don't see bugs where you expect to see them, review [Troubleshoot reordering and nesting issues](../../boards/backlogs/resolve-backlog-reorder-issues.md). Only leaf nodes of nested items appear on the backlogs or task boards.  
 >
 <a id="add-other-wits"></a> 
 

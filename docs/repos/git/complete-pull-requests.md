@@ -159,34 +159,6 @@ After you resolve any merge conflicts, and the PR meets all branch policies and 
 
 ::: moniker-end
 
-::: moniker range="=azure-devops-2020"
-
-1. Select **Complete** at upper right to complete the PR. Or, select the dropdown arrow next to the **Complete** button, and select one of the following options:
-
-   ![Screenshot that shows the Complete button options for the PR.](./media/complete-pull-requests/old-complete-pr-options.png)
-
-   - **Complete**: Complete the PR now, and merge the changes to the target branch.
-   - **Set auto-complete**: If you have branch policies, configure the PR to complete and merge once it meets all required branch policies.
-   - **Abandon**: Close the PR without merging the changes.
-
-1. On the **Complete pull request** screen, enter the message for the [merge commit](merging.md) and update the PR description.
-
-   ![Complete pull request dialog](./media/complete-pull-requests/complete-pr-dialog.png)
-
-1. Select any of the following options:
-   - **Complete linked work items after merging** to complete any linked work items.
-   - **Delete `<branch name>` after merging** to delete the source branch from the PR.
-   - **Squash changes when merging** to [squash merge](merging-with-squash.md) your PR. Be aware that a new commit will be created for the target branch without keeping the commit history from the source branch.
-   - **Override branch policies and enable merge** to force a branch to merge even if it doesn't satisfy all branch policies. This option is only available if you have [Exempt from policy enforcement](branch-policies.md#bypass-branch-policies) permissions.
-     
-     
-     > [!NOTE]
-     > Existing policies are still enforced. For example, if your branch currently has a "squash merge only" policy in place, you have to edit that policy in order to use the other merge types.  
-
-5. Select **Complete merge**.
-
-::: moniker-end
-
 ::: moniker range="<=azure-devops"
 When you complete the merge, any [linked work items](pull-requests.md#link-work-items) automatically update to show the PR completion.
 

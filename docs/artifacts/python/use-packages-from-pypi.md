@@ -1,89 +1,80 @@
 ---
-title: Use packages from PyPI
-description: How to consume packages from Python package index with Azure Artifacts
+title: Consume packages from PyPI
+description: Learn how to consume packages from Python package index (PyPI) with upstream sources in Azure Artifacts.
 ms.service: azure-devops-artifacts
 ms.custom: devx-track-python
-ms.date: 11/17/2023
+ms.date: 03/16/2026
 monikerRange: "<=azure-devops"
 "recommendations": "true"
 ms.topic: how-to
 ---
 
-# Use packages from Python package index (PyPI)
+# Consume packages from Python package index (PyPI)
 
-[!INCLUDE [version-gt-eq-azure-devops-2019](../../includes/version-gt-eq-2019.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
-Using Azure Artifacts, developers can publish and consume packages from both Azure Artifacts feeds and external registries such as PyPI.org. By enabling upstream sources, you can streamline your package management, using a single feed to manage both your own packages and those consumed from public registries. Once enabled, Azure Artifacts automatically saves a copy of any package installed by a collaborator or higher from an upstream source. This article will guide you through setting up your project and using the command line to efficiently consume Python packages from PyPI. 
-
-In this article, you'll learn how to:
-
-> [!div class="checklist"]    
-> * Enable upstream sources for your feed 
-> * Add PyPI as an upstream source 
-> * Setup your project
-> * Install packages from Python package index 
+Azure Artifacts enables developers to use a single feed to host their own packages as well as packages installed from public registries such as *PyPI.org*. When upstream sources are enabled, Azure Artifacts automatically saves a copy of any package installed from an upstream source by a collaborator or higher.
+This article walks you through setting up your project and using the command line to consume Python packages from the Python Package Index (PyPI).
 
 ## Prerequisites
 
-- An Azure DevOps organization and a project. Create an [organization](../../organizations/accounts/create-organization.md) or a [project](../../organizations/projects/create-project.md#create-a-project) if you haven't already.
+| **Product**        | **Requirements**       |
+|--------------------|------------------------|
+| **Azure DevOps**   | - An Azure DevOps [organization](../../organizations/accounts/create-organization.md).<br>- An Azure DevOps [project](../../organizations/projects/create-project.md).<br> - Download and install [Python](https://www.python.org/downloads/). |
 
-- An Azure Artifacts feed.
+## Create a new feed and add public upstreams
 
-- Download [Python](https://www.python.org/downloads/).
+If you don’t already have a feed, follow the steps below to create one and enable Upstream sources. Otherwise, skip to the [next step](#add-pypi-upstream) to add PyPI as an upstream source.
 
-## Enable upstream sources when creating a new feed
+1. Sign in to Azure DevOps, then navigate to your project.
 
-If you haven't created a feed yet, follow the steps below to create a new one. Make sure to check the box for *upstream sources* to enable upstream sources. If you already have a feed, skip to the [next step](#add-pypi-as-a-new-upstream-source) to add PyPI as an upstream source.
+1. Select **Artifacts**, then select **Create Feed**.
 
-1. Sign in to your Azure DevOps organization, and then navigate to your project.
-
-1. Select **Artifacts**, and then select **Create Feed** to create a new feed.
-
-1. Enter a descriptive **Name** for your feed and define its **Visibility** (indicating who can view packages within the feed). Specify the **Scope** of your feed, and then check the **Upstream sources** checkbox to include packages from public registries.
+1. Enter a descriptive **Name** for your feed and set its **Visibility**. Specify the **Scope**, then check the **Upstream sources** checkbox to include packages from public registries.
 
 1. Select **Create** when you're done.
 
-    :::image type="content" source="../media/new-feed-dialog-azure-devops.png" alt-text="A screenshot showing how to create a need feed.":::
+    :::image type="content" source="media/python-demo-feed.png" alt-text="A screenshot showing how to create a need feed and enable upstream sources in Azure Artifacts.":::
 
-## Add PyPI as a new upstream source
+## Add PyPI upstream
 
-If you selected the upstream sources checkbox during the creation of your feed, PyPI should have been automatically included as an upstream source. If not, you can manually add it by following these steps:
+If you enabled *Upstream Sources* when creating your feed, PyPI should have been automatically added as an upstream source. Otherwise, you can manually add it by following these steps:
 
-1. Sign in to your Azure DevOps organization, and then navigate to your project.
+1. Sign in to Azure DevOps, then navigate to your project.
 
-1. Select **Artifacts**, and then select the gear icon ![gear icon](../../media/icons/gear-icon.png) to navigate to **Feed Settings**.
+1. Select **Artifacts**, then select the gear icon ![gear icon](../../media/icons/gear-icon.png) to open **Feed Settings**.
 
-1. Select **Upstream sources**, and then select **Add Upstream** to add a new upstream source.
+1. Select **Upstream Sources**, then select **Add Upstream**.
 
-1. Select **Public source**, and then select **PyPI (https://pypi.org/)** from the dropdown menu.
+1. Select **Public source**, then choose **PyPI (https://pypi.org/)** from the dropdown list.
 
-1. Select **Add** when you're done, and then select **Save** from the top right corner to save your changes.
-
-    :::image type="content" source="media/add-pypi-upstream.png" alt-text="A screenshot displaying how to add PyPI as a new upstream source.":::
+1. Select **Add**, then select **Save** in the upper-right corner to apply your changes.
 
 ## Authenticate with your feed
 
-1. Make sure you have downloaded Python, and then run the following command to upgrade your Python package manager:
+Make sure you've installed Python from the prerequisites, then follow these steps to connect to your feed:
 
-    ```Command
+1. Run the following command to upgrade your Python package manager:
+
+    ```
     python -m pip install --upgrade pip
     ```
 
 1. Run the following command to install the Azure Artifacts keyring:
 
-    ```Command
+    ```
     pip install keyring artifacts-keyring
     ```
 
-1. Create a [Personal access token](../../organizations/accounts/use-personal-access-tokens-to-authenticate.md#create-a-pat) with **Packaging** > **Read** scope to authenticate with Azure DevOps. The first time you connect to Azure DevOps, you'll need to enter your credentials when prompted. Provide your username (any string) and your personal access token in the designated fields. These credentials will be cached locally and automatically used to sign you in the next time you use the service.
+1. Create a [Personal access token](../../organizations/accounts/use-personal-access-tokens-to-authenticate.md#create-a-pat) with **Packaging** > **Read** scope to authenticate with Azure DevOps. The first time you connect to Azure DevOps, you’ll be prompted for credentials. Enter any value for the username, and use your PAT as the password. These credentials are cached locally and reused the next time you authenticate.
 
-1. Navigate to your project folder, and then run the following command to create a new virtual environment:
+1. Navigate to your project directory, then create a virtual environment:
 
-    ```Command
+    ```
     python -m venv <VIRTUAL_ENVIRONMENT_NAME>
     ```
 
-1. Create a new *pip.ini* file (Windows) or a *pip.conf* file (Mac/Linux) in your virtual environment, and then paste the following snippet into your file. Make sure you replace the placeholders with the appropriate information, and be cautious not to commit this file to a public repository as it contains your personal access token.
+1. In your virtual environment, create a *pip.ini* file (Windows) or a *pip.conf* file (macOS/Linux), then add the following snippet. Replace the placeholders with the appropriate values. Don’t commit this file to a public repository, as it contains your personal access token.
 
     - **Project-scoped feed**:
 
@@ -101,32 +92,33 @@ If you selected the upstream sources checkbox during the creation of your feed, 
 
 ## Install packages from PyPI
 
-Now that we've configured our project to authenticate with our feed, we can begin installing packages from the PyPI upstream. In this example, we'll install `Flask`:
+Now that you’ve authenticated with your feed, you can install packages from the PyPI upstream as you normally would with pip. Any package you install is automatically saved to your Azure Artifacts feed.
 
-1. In a command prompt window, navigate to your project folder and run the following command to activate your virtual environment. Replace the placeholder with the name of the virtual environment you created earlier:
+In this example, you’ll install *requests*, a popular HTTP library for Python.
 
-    ```Command
-    <YOUR_VIRTUAL_ENVIRONMENT_NAME>/Scripts/Activate.ps1
+> [!NOTE]
+> To save packages from upstream sources, you must have the **Feed and Upstream Reader (Collaborator)** role or higher. See [manage permissions](../feeds/feed-permissions.md#feed-roles-and-permissions) for more details.
+
+1. Open a command prompt and navigate to your project directory, then activate your virtual environment. Replace the placeholder with the name of the virtual environment you created earlier:
+
+    ```
+    <YOUR_VIRTUAL_ENVIRONMENT_NAME>/Scripts/Activate
     ```
 
-1. Run the following command to check the packages installed in your virtual environment:
+1. Run the following command to install the *requests* package from PyPI.
 
-    ```Command
-    pip list
+    ```
+    pip install requests
     ```
 
-1. Run the following command to install *Flask*.
+1. Once the installation completes, Azure Artifacts saves a copy of the package to your feed. Navigate to your feed to verify that the package is available, as shown in the following screenshot.
 
-    ```Command
-    pip install -U Flask
-    ```
+    :::image type="content" source="media/package-saved-from-python-upstream-source.png" alt-text="A screenshot showing the requests package installed from PyPI upstream." lightbox="media/package-saved-from-python-upstream-source.png":::
 
-1. Once your package is installed, Azure Artifacts will save a copy of this package to your feed. Your package should be available in your feed as shown in the screenshot below.
+## Related content
 
-    :::image type="content" source="media/install-package-from-upstream.png" alt-text="A screenshot showing packages installed from PyPI upstream.":::
+- [Publish Python packages (CLI)](../quickstarts/python-cli.md)
 
-## Related articles
+- [Use upstream sources in a public feed](../how-to/public-feeds-upstream-sources.md)
 
-- [Publish and consume Python packages CLI](../quickstarts/python-cli.md)
 - [Publish Python packages with Azure Pipelines](../../pipelines/artifacts/pypi.md)
-- [Manage permissions](../feeds/feed-permissions.md)

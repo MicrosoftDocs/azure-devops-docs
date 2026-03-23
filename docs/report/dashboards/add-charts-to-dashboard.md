@@ -15,7 +15,7 @@ ms.date: 10/28/2024
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)] 
 
-::: moniker range=">= azure-devops-2020"
+::: moniker range="<=azure-devops"
 This article explains how to add query-based charts and in-context reports to a dashboard from their respective functional pages. For example, you can add the Team Velocity in-context Analytics report to a dashboard. After adding the report, you can modify the corresponding widget configuration parameters to suit your needs.
 ::: moniker-end
 
@@ -69,7 +69,7 @@ You can add work item queries and charts to a dashboard from the Queries page.
 
 ## Add an in-context work tracking report  
 
-::: moniker range=">= azure-devops-2020"
+::: moniker range="<=azure-devops"
 You can add each of the in-context **Analytics** reports to a dashboard. 
 
 1. Open the report, select the :::image type="icon" source="media/icons/actions-icon.png" border="false"::: actions icon, and select **Copy to Dashboard**.

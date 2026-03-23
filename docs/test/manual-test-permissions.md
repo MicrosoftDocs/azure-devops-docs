@@ -5,7 +5,7 @@ ms.assetid: 91146CFD-A4CE-4CC5-973D-1633419CAFDE
 ms.service: azure-devops-test-plans
 ms.custom: UpdateFrequency3
 ms.topic: reference
-ms.author: jeom
+ms.author: pliaros
 author: rohit-batra
 monikerRange: '<= azure-devops'
 ms.date: 09/15/2021
@@ -53,6 +53,7 @@ The following table summarizes the license requirements required to exercise sel
 | Author test cases using a grid-like view and edit in the Test Runner | Basic + Test Plans  |
 | Assign test cases to suites, move test cases, and order test cases | Basic + Test Plans  |
 | Prepare for execution such as assigning configurations or testers | Basic + Test Plans  | 
+| Create and manage configurations and parameters | Basic + Test Plans  | 
 | Prepare User Acceptance Testing | Basic + Test Plans  |
 
 <a id="access-by-user-role"></a>

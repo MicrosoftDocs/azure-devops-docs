@@ -2,14 +2,14 @@
 title: Configure WIP limits
 titleSuffix: Azure Boards
 description: Learn how to set Work In Progress Limits on a board in Azure Boards.
-ms.custom: boards-kanban 
+ms.custom: boards-kanban, copilot-scenario-highlight
 ms.service: azure-devops-boards
 ms.assetid: d18351c1-e9e1-4c16-869d-e15ca478c748
 ms.author: chcomley
 author: chcomley
 ms.topic: how-to
 monikerRange: '<= azure-devops'
-ms.date: 06/07/2024
+ms.date: 02/28/2026
 ---
 
 
@@ -20,6 +20,8 @@ ms.date: 06/07/2024
 Work-in-Progress (WIP) limits, a crucial [Kanban](kanban-overview.md) practice, restrict the work your team takes on at each stage. By emphasizing completion before starting new work, teams often experience increased productivity and improved software quality.  
 
 Setting WIP limits for each stage adds soft constraints on the number of items allowed in the corresponding columns. Exceeding these limits is possible, but your board displays item counts next to each limit. Use this article as a guide for setting and implementing WIP limits.
+
+[!INCLUDE [ai-assistance-mcp-server-tip](../../includes/ai-assistance-mcp-server-tip.md)]
 
 ## Prerequisites
 
@@ -135,6 +137,28 @@ Your team should engage in discussions after several weeks of using WIP limits. 
 * **Make metrics-driven adjustments:** Monitor WIP and lead time metrics for process adjustments.
 
 * **Manage culture change:** Apply change management principles and promote team ownership during WIP limit implementation.
+
+<a id="use-ai-assistance"></a>
+
+## Use AI to analyze work in progress
+
+If you have the [Azure Boards MCP Server](../../mcp-server/mcp-server-overview.md) connected to your AI agent in agent mode, you can use natural language prompts to analyze work-in-progress across your board columns.
+
+| Task | Example prompt |
+|------|----------------|
+| Count items per column | `How many work items are in each workflow state for my team's backlog?` |
+| Find overloaded columns | `Show me all active work items in the 'In Progress' state for the <Contoso> project` |
+| Identify stale items | `Find work items in the 'Active' state that haven't been updated in the last 14 days` |
+| Check team capacity | `List all work items assigned to <Jamal> that are currently in progress` |
+| Analyze per-person WIP | `Show the count of active work items per team member in area path <Contoso\\Frontend> and flag anyone with more than 5` |
+| Detect WIP spikes | `Compare the count of in-progress work items this week vs last week for my team in <Contoso>` |
+| Find multitasking risks | `List team members in <Contoso> who have active work items across more than 2 different features` |
+| Review column throughput | `Show how many work items moved from Active to Resolved per week over the last 4 weeks in <Contoso>` |
+| Identify flow blockers | `List work items in <Contoso> that have been in the same state for longer than the average time items spend in that state` |
+| Suggest WIP rebalancing | `Show team members in <Contoso> with no active work items alongside those with more than 3` |
+
+> [!NOTE]
+> Agent mode and the MCP Server use natural language, so you can adjust these prompts or ask follow-up questions to refine the results.
 
 ## Related content
 

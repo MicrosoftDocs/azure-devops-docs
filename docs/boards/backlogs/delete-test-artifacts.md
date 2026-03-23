@@ -79,8 +79,8 @@ When you delete test artifacts, the following actions occur:
 
 | Category | Requirements |
 |--------------|-------------|
-| **Permissions** | - To delete test runs: Member of the **Project Administrators** group or the project-level [**Delete test runs**](../../organizations/security/change-project-level-permissions.md) permission set to **Allow**. <br> - To delete test plans and test suites: Member of the **Project Administrators** group or the Area Path node-level [**Manage test plans** or **Manage test suites**](../../organizations/security/set-permissions-access-work-tracking.md#manage-test-artifacts) permission set to **Allow**. If you're not part of the project administrators group: Project-level [**Delete test runs**](../../organizations/security/change-project-level-permissions.md) permission set to **Allow** along with Area Path node level permissions. |
-| **Access levels** | To manage or delete test artifacts: At least [**Basic + Test Plans**](../../organizations/security/access-levels.md) access or **Visual Studio Enterprise**. This level provides access to the full Test Plans feature set. Users with **Basic** access and with permissions to permanently delete work items and manage test artifacts can only delete orphaned test cases, which means they can delete test cases created from **Work** that aren't linked to any test plans or test suites. |
+| Permissions | - To delete test runs: Member of the **Project Administrators** group or the project-level [**Delete test runs**](../../organizations/security/change-project-level-permissions.md) permission set to **Allow**. <br> - To delete test plans and test suites: Member of the **Project Administrators** group or the Area Path node-level [**Manage test plans** or **Manage test suites**](../../organizations/security/set-permissions-access-work-tracking.md#manage-test-artifacts) permission set to **Allow**. If you're not part of the project administrators group: Project-level [**Delete test runs**](../../organizations/security/change-project-level-permissions.md) permission set to **Allow** along with Area Path node level permissions. |
+| Access levels | To manage or delete test artifacts: At least [**Basic + Test Plans**](../../organizations/security/access-levels.md) access or **Visual Studio Enterprise**. This level provides access to the full Test Plans feature set. Users with **Basic** access and with permissions to permanently delete work items and manage test artifacts can only delete orphaned test cases, which means they can delete test cases created from **Work** that aren't linked to any test plans or test suites. |
 
 <a id="test-experience"></a>
 
@@ -107,7 +107,7 @@ However, these objects aren't connected to each other through link types. For de
   
    :::image type="content" source="media/move-change-delete/perm-delete-test-artifacts-dialog.png" alt-text="Confirm delete of test artifacts dialog.":::  
 
-::: moniker range=">= azure-devops-2020"
+::: moniker range="<=azure-devops"
 3. You can also delete a test plan directly from **Test Plans**. To delete a test plan, open **Test Plans** and choose :::image type="icon" source="../../media/icons/actions-icon.png" border="false"::: **More Actions** for the plan you want to delete, and choose **Delete**. 
 
 	:::image type="content" source="media/move-change-delete/delete-test-suite-test-plans.png" alt-text="Screenshot of Test Plans page, delete a test plan.":::  

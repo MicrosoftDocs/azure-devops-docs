@@ -8,13 +8,13 @@ ms.author: shdalv
 ms.custom: powerbisample, engagement-fy23
 author: chcomley
 ms.topic: sample
-monikerRange: '>= azure-devops-2020'
+monikerRange: "<=azure-devops"
 ms.date: 01/19/2023
 ---
 
 # Requirements tracking rollup sample report
 
-[!INCLUDE [version-gt-eq-2020](../../includes/version-gt-eq-2020.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 The Requirements tracking rollup report builds on the [Requirements tracking report](sample-stories-overview.md) and shows how to aggregate metrics for a one-level roll-up. For example, if you're tracking requirements with User Stories, you can aggregate data for Features using the queries provided in this article.
 
@@ -35,7 +35,6 @@ This report displays the following information for each requirement that it list
 > [!NOTE] 
 > Requirement tracking is supported only for test cases linked through a [**Requirement-based test suite**](../../test/create-a-test-plan.md#backlog). The association between a requirement work item&mdash;User Story ([Agile](../../boards/work-items/guidance/agile-process.md)), Product Backlog Item ([Scrum](../../boards/work-items/guidance/scrum-process.md)), Requirement ([CMMI](../../boards/work-items/guidance/cmmi-process.md)), or Issue ([Basic](../../boards/get-started/plan-track-work.md))&mdash;and manual test execution is only formed when the test case is linked via a **Requirement-based test suite**. 
 
-
 [!INCLUDE [stories-overview-info](includes/sample-stories-overview-info.md)] 
 
 [!INCLUDE [temp](includes/preview-note.md)]
@@ -45,7 +44,6 @@ This report displays the following information for each requirement that it list
 [!INCLUDE [temp](includes/sample-required-reading.md)]
 
 [!INCLUDE [stories-overview-prereqs](includes/sample-stories-overview-prereqs.md)]  
-
 
 ## Sample queries
 
@@ -378,8 +376,6 @@ The following table describes each part of the query.
    Calculate the percent of completed wor.
    :::column-end:::
 :::row-end:::
-
-
 
 ## Create the Table report
 

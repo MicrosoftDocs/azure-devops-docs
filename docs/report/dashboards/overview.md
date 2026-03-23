@@ -10,7 +10,7 @@ author: chcomley
 ms.topic: overview
 ai-usage: ai-assisted
 monikerRange: '<= azure-devops'
-ms.date: 03/12/2025
+ms.date: 02/17/2026
 #customer intent:  As an administrator or team member, I want to understand how using a dashboard can provide visibility into projects for my team.
 ---
 
@@ -23,6 +23,8 @@ Gain visibility into your team's progress by adding one or more widgets or chart
 If you're just starting out, read [Add, rename, and delete dashboards](dashboards.md). Looking for instructions on a specific task, in-context chart, widget, or report? See [Dashboards, charts, and quick reference](quick-ref.md). For more information, see the [Reporting roadmap](../powerbi/reporting-roadmap.md).
 
 [!INCLUDE [version selector](../../includes/version-selector.md)]
+
+[!INCLUDE [ai-assistance-callout](../../includes/ai-assistance-callout.md)]
 
 ## Supported capabilities, permissions, and access
 
@@ -47,20 +49,9 @@ The following features provide support for viewing Azure DevOps data by using Po
 > [!NOTE]
 > Open Data Protocol (OData) is an ISO/IEC approved, OASIS standard that defines a set of best practices for building and consuming REST APIs. For more information, see [OData documentation](/odata/). 
 
-::: moniker range="< azure-devops-2022"
+  
 
-### SQL Server reports
-
-SQL Server Reporting Services is the legacy reporting solution available with Azure DevOps Server 2020 and earlier versions. The following features provide support for viewing Azure DevOps data by using SQL Server Reports Services and SQL Server Analysis Services.
-
-::: moniker-end  
-
-::: moniker range="< azure-devops-2022"
-
-- **Excel status and trend reports**: Support generating custom work tracking reports by using Excel starting with a flat-list query. For more information, see [Create status and trend reports from a work item query](/previous-versions/azure/devops/report/admin/create-status-and-trend-excel-reports).
-- **SQL Server reports**: For project collections that support the On-premises XML process model, allow users access to out-of-the-box SQL Server reports and support to create customized SQL reports or Excel reports. Doing so requires that the project is [configured to support SQL Server reporting](/previous-versions/azure/devops/report/admin/add-a-report-server).
-
-::: moniker-end  
+  
 
 ### Supported features for access levels
 
@@ -278,7 +269,7 @@ With the code tile widgets, you can monitor the activity occurring within a repo
 
 ### Analytics widgets and reports
 
-::: moniker range=">= azure-devops-2020"
+::: moniker range="<=azure-devops"
 
 The Analytics service is the reporting platform for Azure DevOps. As described in [What is Analytics?](../powerbi/what-is-analytics.md), it replaces the previous platform based on SQL Server Reporting Services. The Analytics service supports Analytics widgets, [in-context Analytics reports](#work-tracking-analytics), and Analytics views for Power BI reporting. For more information, see [About Analytics views](../powerbi/what-are-analytics-views.md).
 
@@ -294,7 +285,7 @@ For more information, see [Widgets based on Analytics data](../dashboards/analyt
 
 ## In-context reports: Work tracking
 
-::: moniker range=">= azure-devops-2020"
+::: moniker range="<=azure-devops"
 
 Azure Boards provides several in-context reports that derive from Analytics data. From your backlog or board, you can view the Cumulative Flow Diagram and team Velocity reports by selecting the **Analytics** tab. Each report provides interactive controls to provide each user the view of interest to them. From a Sprint backlog, you can view the Sprint Burndown Trend.
 
@@ -318,7 +309,7 @@ Use the interactive controls to choose the start and end of the sprint and count
 
 ::: moniker-end
 
-::: moniker range=">= azure-devops-2020"
+::: moniker range="<=azure-devops"
 
 You can add the in-context reports to a dashboard by using the copy to dashboard option from the report's context menu.
 
@@ -334,7 +325,7 @@ For more information about these reports, see:
 
 <a id="incontext-reports"></a>  
 
-::: moniker range=">= azure-devops-2020"
+::: moniker range="<=azure-devops"
 
 ## In-context reports: Pipelines and Test
 
@@ -356,19 +347,11 @@ For more information on each in-context Analytics report for pipeline runs, see:
 
 ::: moniker-end
 
-::: moniker range="azure-devops-2020"
-- [Pipeline pass rate report](../../pipelines/reports/pipelinereport.md#pipeline-pass-rate-report)
-- [Test pass rate report](../../pipelines/reports/pipelinereport.md#test-failures-report)
-- [Pipeline duration report](../../pipelines/reports/pipelinereport.md#pipeline-duration-report)
-- [Test analytics for builds](../../pipelines/test/test-analytics.md)
-- [Test analytics for releases](../../pipelines/test/test-analytics.md)
-::: moniker-end
-
-::: moniker range=">= azure-devops-2020"
+::: moniker range="<=azure-devops"
 You can also use Power BI and OData to create reports based on pipeline and test data. For more information, see the [Overview of sample reports using OData queries](../powerbi/sample-odata-overview.md).
 ::: moniker-end
 
-::: moniker range=">= azure-devops-2020"
+::: moniker range="<=azure-devops"
 
 ### Pipeline pass rate report
 

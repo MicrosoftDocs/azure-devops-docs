@@ -23,6 +23,8 @@ Each work item is an object stored in the work item data store and receives a un
 
 If you're getting started, read this article. To start tracking work on a board, see [Plan and track work](../get-started/plan-track-work.md). For a quick reference to common work item tasks and concepts, see [Work item quick reference](quick-ref.md).
 
+[!INCLUDE [ai-assistance-callout](../../includes/ai-assistance-callout.md)]
+
 <a id="wit"></a>
 
 ## Track work with different work item types
@@ -74,7 +76,7 @@ Add or revise fields in a work item type, create a custom work item type, or adj
 
 The work item form displays the fields you use to track information for each work item. Update a work item from its form or by using bulk import, export, or programmatic methods.
 
-The **Details** tab contains common fields, other fields defined for the work item type, and the **Discussion** control. Common fields appear at the top of the form and include **Title**, **Assigned To**, **State**, **Reason**, **Area**, and **Iteration—you can update these fields at any time.
+The **Details** tab contains common fields, other fields defined for the work item type, and the **Discussion** control. Common fields appear at the top of the form and include **Title**, **Assigned To**, **State**, **Reason**, **Area**, and **Iteration**—you can update these fields at any time.
 
 :::image type="content" source="media/about-work-items/common-fields-basic.png" alt-text="Screenshot that shows common fields in the work item form for all work item types.":::
 

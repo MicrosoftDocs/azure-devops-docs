@@ -4,6 +4,7 @@ description: See the Sprint 152 Update for Azure DevOps administration, includin
 author: gloridelmorales
 ms.author: glmorale
 ms.date: 05/20/2019
+ms.topic: release-notes
 ---
 
 # Administration - Sprint 152 Update

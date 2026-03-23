@@ -13,7 +13,7 @@ ms.date: 12/08/2022
 
 # Release burndown sample queries and reports
 
-[!INCLUDE [version-gt-eq-2019](../../includes/version-gt-eq-2019.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 Burndown and burnup reports show how much work is getting completed over time. The following image shows burndown both by count of User Stories and sum of Story Points.
 

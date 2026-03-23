@@ -3,7 +3,7 @@ title: Ship a Node 20 only agent that does not include end-of-life Node versions
 author: gloridelmorales
 ms.author: glmorale
 ms.date: 10/12/2022
-ms.topic: article
+ms.topic: whats-new
 ms.service: azure-devops
 ms.subservice: azure-devops-release-notes
 description: Ship a Node 20 only agent that does not include end-of-life Node versions

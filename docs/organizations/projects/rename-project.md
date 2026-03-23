@@ -1,21 +1,22 @@
 ---
 title: Rename a project - Azure DevOps
 titleSuffix: Azure DevOps
-ms.custom: content-perf-fy23q2, engagement-fy23
+ms.custom: content-perf-fy23q2, engagement-fy23, copilot-scenario-highlight
 description: Learn how to rename your project, including tasks you need to complete to work with the renamed project.
 ms.subservice: azure-devops-projects
 ms.assetid: 23729f9a-9947-4fc1-89b0-07e3b52298ac
 toc: show
 ms.topic: how-to
+ai-usage: ai-assisted
 ms.author: chcomley
 author: chcomley
 monikerRange: "<=azure-devops"
-ms.date: 11/11/2024
+ms.date: 03/03/2026
 ---
 
 # Rename a project in Azure DevOps
 
-[!INCLUDE [version-gt-eq-2019](../../includes/version-gt-eq-2019.md)] 
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)] 
 
 Renaming a project in Azure DevOps updates the project name in version control paths, work items, queries, and other project artifacts. You can rename a single project multiple times, and use old names. Some [actions might be required from team members](#required-user-actions-for-working-with-the-renamed-project) after you rename the project.
 
@@ -24,21 +25,23 @@ Renaming a project in Azure DevOps updates the project name in version control p
 >
 >- Renaming a project breaks workload identity federation subjects in Azure Resource Manager service connections. 
 
+[!INCLUDE [ai-assistance-mcp-server-tip](../../includes/ai-assistance-mcp-server-tip.md)]
+
 ## Prerequisites
 
 | Category | Requirements |
 |--------------|-------------|
-|**Permissions**| Member of the **Project Administrators** group or project-level **Rename team project** permission set to **Allow**. For more information, see [Change project-level permissions](../security/change-project-level-permissions.md).|
+|Permissions| Member of the Project Administrators group or project-level Rename team project permission set to Allow. For more information, see [Change project-level permissions](../security/change-project-level-permissions.md).|
 
 ## Rename a project
 
 1. Sign in to your project (```https://dev.azure.com/{Your_Organization}/{Your_Project}```).
 
-2. Select **Project settings** > **Overview**, and then enter a new name and select **Save**. 
+2. Select Project settings > Overview, and then enter a new name and select Save. 
 
    ![Screenshot showing new name entry and highlighted save button.](media/rename-project/rename-project-azure-devops.png)
 
-3. To confirm the rename, enter the new project name, check the box next to, "I understand the consequences of renaming this project," and then select **Save**.
+3. To confirm the rename, enter the new project name, check the box next to, "I understand the consequences of renaming this project," and then select Save.
 
    ![Screenshot showing new name confirmation screen with save button.](media/rename-project/rename-project-confirm.png)
 
@@ -107,6 +110,28 @@ If you use OData feeds in Power BI, update the feed URL to use the new project n
 ### Update Analytics views
 
 If you created custom Analytics views using the old project name, you need to update the views with the new name. For more information, see [Analytics views](../../report/powerbi/analytics-views-manage.md#edit-an-existing-view).
+
+<a id="use-ai-assistance"></a>
+
+## Use AI to manage project renames
+
+[!INCLUDE [ai-assistance-mcp-server-tip](../../includes/ai-assistance-mcp-server-tip.md)]
+
+If you use GitHub Copilot, the [Azure DevOps MCP Server](../../mcp-server/mcp-server-overview.md) can help you plan and execute project renames and handle all the follow-up actions through natural language prompts.
+
+### Example prompts for renaming projects
+
+| Task | Example prompt |
+|---|---|
+| Plan a rename with impact analysis | `I need to rename my Azure DevOps project from 'ProjectAlpha' to 'Platform-Core'. List everything that will break, including Git remotes, TFVC workspaces, OData feeds, and service connections, and give me a step-by-step remediation plan` |
+| Communicate a rename to the team | `Draft an announcement for my team explaining that our Azure DevOps project is being renamed, what actions each developer needs to take to update their Git remotes and local workspaces, and a timeline for the change` |
+| Fix broken service connections | `After renaming my project, my Azure Resource Manager service connections using workload identity federation stopped working. Walk me through updating the federation subjects to use the new project name` |
+| Update Git remotes in bulk | `Generate a script I can share with my team that detects their current Git remote URLs pointing to the old project name and updates them to use the new project name` |
+| Update reporting after a rename | `I renamed my project and now my Power BI dashboards connected via OData show errors. Guide me through updating the Analytics views and OData feed URLs to use the new project name` |
+| Recover from a problematic rename | `I renamed a project but some team members can't open their TFVC local workspaces anymore. Help me understand why and walk me through the steps to fix both server and local workspaces` |
+
+> [!TIP]
+> For the best results, use these prompts in agent mode with the Azure DevOps MCP Server connected. Customize the prompts with your specific project names, team size, or version control system.
 
 ## Related content
 

@@ -6,14 +6,13 @@ ms.subservice: azure-devops-analytics
 ms.author: chcomley
 author: chcomley
 ms.topic: reference
-monikerRange: '>= azure-devops-2020'
+monikerRange: "<=azure-devops"
 ms.date: 11/04/2022
 ---
 
-
 # Metadata reference for Azure Pipelines Analytics  
 
-[!INCLUDE [version-gt-eq-2019](../../includes/version-gt-eq-2019.md)] 
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)] 
 
 The Analytics service collects pipeline and test activity generated via Azure Pipelines.  This article describes the properties that you can use to generate an Analytics report for pipelines. You use a combination of properties to filter a query, aggregate data, or build a report.  
  
@@ -36,7 +35,6 @@ The following table summarizes the entity types and entity sets that support Azu
 |[**TaskAgentPoolSizeSnapshots**](#taskagentpoolsizesnapshots)|**TaskAgentPoolSizeSnapshot** |(Composite) Supports understanding of pool size, pipeline jobs, and concurrency. The [Historical graph for agent pools](../../pipelines/agents/pool-consumption-report.md) illustrates how this entity set can be used. |    
 |[**TaskAgentRequestSnapshots**](#taskagentrequestsnapshots)|**TaskAgentRequestSnapshot** |(Composite) Supports reporting on task agent requests.   |  
 
-
 ## Branches 
 
 The following properties are valid for the **Branches** entity set. Surrogate keys associated with **Branch** include `BranchSK` and `ProjectSK`. 
@@ -58,7 +56,6 @@ The following properties are valid for the **ParallelPipelineJobsSnapshot** enti
 - `IsHosted`
 - `ParallelismTag`
 - `SamplingDate`
-
 
 |**Display name** | **Name** | **Data type** | **Description** | 
 |-----------------|--------------------|---------------|--------------------------------------| 
@@ -83,7 +80,6 @@ The following properties are valid for **Pipelines** and its surrogate key `Pipe
 |**Pipeline Version** | `PipelineVersion` | Int32 | The version associated with the pipeline.  | 
 |**Pipeline Process Type** | `PipelineProcessType` | Enumerated | The type of pipeline definition. Valid values are listed below for [PipelineProcessType](#pipelineprocesstype-enumerated-type-members). |  
 
-
 Navigational properties include [`Project`](entity-reference-general.md#projects) and its referential constraint `ProjectSK`.
 
 ### PipelineProcessType enumerated type members
@@ -95,7 +91,6 @@ The following members are defined for the `PipelineProcessType` enumerated type 
 |`Designer`            | 1            | Classic pipeline definition.  |
 |`Yaml`                | 2            | YAML pipeline definition. |
 |`Docker`              | 3            | Docker pipeline definition.   |
-
 
 ## PipelineJobs  
 
@@ -183,7 +178,6 @@ The following members are defined for the `PipelineRunOutcome` enumerated type t
 |`Failed`              | 6            | Failed              |          
 |`Canceled`            | 32           | Canceled            |    
 
-
 ## PipelineRunActivityResults  
 
 The following properties are valid for the **PipelineRunActivityResults** entity set and its `PipelineRunActivityResultSK` surrogate key. 
@@ -253,7 +247,6 @@ The following properties are valid for the **PipelineTasks** entity set and its 
 
 Navigational properties include [`Project`](entity-reference-general.md#projects) and its referential constraint `ProjectSK`.
 
-
 ## TaskAgentPoolSizeSnapshots  
 
 The following properties are valid for the **TaskAgentPoolSizeSnapshots** entity set and its surrogate key `SamplingDate`.
@@ -303,8 +296,6 @@ Navigation properties include those listed in the following table.
 | [**Project**](entity-reference-general.md#projects)  | `Project`|  `ProjectSK`| `ProjectSK` | 
 | **Started On**   | `StartedOn`  |`QueuedDateSK`|`DateSK`           | 
 
-
-
 ## Related articles
 
 - [Historical data representation in Analytics](analytics-historical-filtering.md)
@@ -312,6 +303,5 @@ Navigation properties include those listed in the following table.
 - [Use Azure Pipelines](../../pipelines/get-started/pipelines-get-started.md)
 - [About pipeline tests](../../pipelines/test/test-glossary.md)
 - [OData Analytics query guidelines](../extend-analytics/odata-query-guidelines.md)  
-
 
  

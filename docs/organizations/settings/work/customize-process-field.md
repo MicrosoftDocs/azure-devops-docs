@@ -2,19 +2,20 @@
 title: Add and Manage Fields for an Inherited Process
 titleSuffix: Azure DevOps 
 description: Learn how to add and manage fields in the web form of a work item type for an Inheritance process. 
-ms.custom: inherited-process
+ms.custom: inherited-process, copilot-scenario-highlight
 ms.service: azure-devops-boards
 ms.assetid: D6616411-43D4-4A81-8951-772D98BD1569  
 ms.author: chcomley
 author: chcomley
+ai-usage: ai-assisted
 monikerRange: "<=azure-devops"
 ms.topic: how-to
-ms.date: 05/08/2025
+ms.date: 03/03/2026
 ---
 
 # Add and manage fields (Inheritance process)   
 
-[!INCLUDE [version-gt-eq-2019](../../../includes/version-gt-eq-2019.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../../includes/version-lt-eq-azure-devops.md)]
 
 You can customize your work tracking system by adding custom fields or modifying specific attributes of an ![inherited icon](media/process/inherited-icon.png) inherited field. For example, you can add a custom field to capture other data or change the label displayed in the work item form for an inherited field.
 
@@ -23,6 +24,8 @@ You can customize your work tracking system by adding custom fields or modifying
 To view all fields defined for your organization, including system and inherited fields, see [View work item fields and attributes](../../../boards/work-items/work-item-fields.md#review-fields).
 
 After you add a custom field, you can use it to create [queries](../../../boards/queries/using-queries.md), [charts](../../../report/dashboards/charts.md), or [Analytics views and Power BI reports](../../../report/powerbi/create-quick-report.md) to track and analyze related data.
+
+[!INCLUDE [ai-assistance-mcp-server-tip](../../../includes/ai-assistance-mcp-server-tip.md)]
 
 ## Prerequisites
 
@@ -99,7 +102,7 @@ Each process can define up to 1,024 fields, including system and inherited field
 
 [Work tracking, process, and project limits](object-limits.md)
 
-::: moniker range=">= azure-devops-2020"
+::: moniker range="<=azure-devops"
 
 You can add a new field and define a pick list or customize the pick list of an inherited field. 
 
@@ -113,7 +116,7 @@ Each organization or collection can define up to 2,048 picklists. Each picklist 
 
 	To delete an item in the list, highlight the item and then select the ![Delete icon](../../../media/icons/delete_icon.png) delete icon.  
 
-	::: moniker range=">= azure-devops-2020"
+	::: moniker range="<=azure-devops"
 	To modify the pick list of an inherited field, choose **Edit** to edit the field. On the **Definition** tab, you can choose to **Add value**.
 
 	> [!div class="mx-imgBorder"]  
@@ -201,7 +204,7 @@ In the following example, we relabel the *Customer Ticket* field to *Ticket Numb
 
 ## Modify Description help text  
 
-::: moniker range=">= azure-devops-2020"
+::: moniker range="<=azure-devops"
 
 Description help text appears when users hover over a field in the work item form. You can customize help text for both custom and inherited fields, but the behavior differs by field type:  
 - **Inherited fields**: Help text can be customized for each work item type and process.  
@@ -213,7 +216,7 @@ Description help text appears when users hover over a field in the work item for
 
 To modify the **Description** help text, choose the work item type you want to modify, choose **Edit** for the field and choose the **Definition** tab. The modified value only affects that field in the process and for that work item type. 
 
-::: moniker range=">= azure-devops-2020"
+::: moniker range="<=azure-devops"
 
 Here we modify the Story Points field for User Story. 
 
@@ -226,7 +229,7 @@ Here we modify the Story Points field for User Story.
 
 ## Show, hide, or remove a field   
 
-::: moniker range=">= azure-devops-2020"
+::: moniker range="<=azure-devops"
 
 You can choose to show or hide any field or custom control from appearing on a form. If you want to reinstate a field onto the form later, you can unhide These actions differ from the [**Delete**](#delete-field) option, which deletes the field from the organization.
 
@@ -239,7 +242,7 @@ You can choose to show or hide any field or custom control from appearing on a f
 
 <a id="show-hide-field">  </a>
 
-::: moniker range=">= azure-devops-2020"
+::: moniker range="<=azure-devops"
 ### Hide a field or custom control
 ::: moniker-end
 
@@ -301,6 +304,28 @@ To delete a custom field, do the following steps:
 
 	![Screenshot shows Delete field, confirmation dialog.](media/process/cpfield-delete-confirmation.png) 
  
+
+<a id="use-ai-assistance"></a>
+
+## Use AI to manage custom fields
+
+[!INCLUDE [ai-assistance-mcp-server-tip](../../../includes/ai-assistance-mcp-server-tip.md)]
+
+If you use GitHub Copilot, the [Azure DevOps MCP Server](../../../mcp-server/mcp-server-overview.md) can help you add, modify, and manage custom fields for your inherited processes through natural language prompts.
+
+### Example prompts for field management
+
+| Task | Example prompt |
+|---|---|
+| Add fields for a tracking scenario | `Add a 'Business Value' integer field and a 'Customer Impact' picklist field with values High, Medium, and Low to my User Story work item type. Place them in a new 'Prioritization' group on the Details page` |
+| Create a cascading picklist | `I need a 'Category' picklist field and a 'Subcategory' picklist on my Bug work item type where the subcategory values depend on the selected category. Walk me through the best approach since cascading picklists aren't natively supported` |
+| Audit custom fields across processes | `List all custom fields I've added to my inherited process, which work item types each field is used on, and whether any fields are unused or duplicated across different WITs` |
+| Relabel inherited fields | `Rename the 'Story Points' field label to 'Effort Points' and the 'Activity' field to 'Work Category' on my Task work item type without changing the underlying field references` |
+| Clean up deprecated fields | `I have 5 custom fields on my Bug work item type that we no longer use. Walk me through hiding them from the form, checking if any rules or queries reference them, and safely deleting the ones that are truly orphaned` |
+| Set up identity and rich-text fields | `Add an 'Approved By' identity field and a 'Release Notes' rich-text HTML field to my Feature work item type. Configure a rule that makes 'Approved By' required when the state changes to Done` |
+
+> [!TIP]
+> For the best results, use these prompts in agent mode with the Azure DevOps MCP Server connected. Customize the prompts with your specific process name, work item types, or field requirements.
 
 ## Related content  
 

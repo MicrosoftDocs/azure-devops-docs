@@ -1,14 +1,16 @@
 ---
-title: Manage change, Agile methods
+title: Manage Change in Agile Projects With Azure DevOps
 titleSuffix: Azure DevOps
-description: Learn about the tools and features available to manage change when you use Agile methods in Azure DevOps.
+description: Learn how to manage change effectively using Agile methods in Azure DevOps. Explore tools, best practices, and strategies to streamline your projects.
+#customer intent: As a developer, I want to know how to use work item queries to identify change requests so that I can prioritize my tasks efficiently.
 ms.subservice: azure-devops-cross-service
 ms.topic: overview
 ai-usage: ai-assisted
+ms.custom: copilot-scenario-highlight
 ms.author: chcomley
 author: chcomley
 monikerRange: '<= azure-devops'
-ms.date: 03/05/2025
+ms.date: 03/02/2026
 ---
 
 # Manage change
@@ -16,6 +18,8 @@ ms.date: 03/05/2025
 [!INCLUDE [version-lt-eq-azure-devops](../includes/version-lt-eq-azure-devops.md)]
 
 Azure DevOps provides various tools and features to help you manage change effectively and efficiently, which is a crucial part of any project. This article provides an overview for managing change and maps Agile change management tasks to the tools that Azure DevOps supports.
+
+[!INCLUDE [ai-assistance-mcp-server-tip](../includes/ai-assistance-mcp-server-tip.md)]
 
 ## Identify the need for change
 
@@ -85,6 +89,30 @@ Teams can monitor changes through work item queries, team velocity charts, and s
 
 Azure DevOps provides a robust alert system, where project members can [set alerts for themselves, a team, or a project](../organizations/notifications/about-notifications.md). As changes occur to work items, code reviews, source control files, and builds, you can receive email notifications.
 
+<a id="use-ai-assistance"></a>
+
+## Use AI to manage change
+
+If you have the [Azure DevOps MCP Server](../mcp-server/mcp-server-overview.md) connected to your AI agent in agent mode, you can use natural language prompts to track, monitor, and triage change across your project.
+
+| Task | Example prompt |
+|------|----------------|
+| Find change requests | `List all work items tagged 'change-request' in project <Contoso>` |
+| Triage scope changes | `Show work items added to Sprint 10 for <Contoso Team> after the sprint start date` |
+| Check sprint scope creep | `Compare the original sprint scope to the current scope for Sprint 10 for <Contoso Team>` |
+| Review velocity trends | `Show the planned vs. completed story points for <Contoso Team> over the last 6 sprints` |
+| Identify unplanned work | `List work items in the current sprint for <Contoso Team> that were added after sprint planning` |
+| Tag items for change tracking | `Add tag 'scope-change' to user story #345 in project <Contoso>` |
+| Query acceptance criteria gaps | `List user stories in the current sprint for <Contoso Team> that have empty acceptance criteria` |
+| Create a change request | `Create a change request work item titled 'Add OAuth support' with priority 2 in project <Contoso>` |
+| Audit sprint burndown | `Show the remaining work for Sprint 10 for <Contoso Team> grouped by work item state` |
+| Cross-link change to requirements | `Link change request #890 as related to user stories #101 and #102 in project <Contoso>` |
+
+> [!NOTE]
+> Agent mode and the MCP Server use natural language, so you can adjust these prompts or ask follow-up questions to refine the results.
+
 ## Related content
 
+- [Manage Agile requirements](manage-requirements.md)
+- [End-to-end traceability](end-to-end-traceability.md)
 - [What is Agile?](/devops/plan/what-is-agile)

@@ -3,7 +3,7 @@ title: MCP Server for Azure DevOps
 author: danhellem
 ms.author: dahellem
 ms.date: 05/27/2025
-ms.topic: article
+ms.topic: whats-new
 ms.service: azure-devops
 ms.subservice: azure-devops-release-notes
 description: MCP Server for Azure DevOps

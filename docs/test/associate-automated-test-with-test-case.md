@@ -5,7 +5,7 @@ ms.assetid: 606679F2-1604-40EA-A720-63CDDA93DD76
 ms.service: azure-devops-test-plans
 ms.custom: UpdateFrequency3
 ms.topic: how-to
-ms.author: jeom
+ms.author: pliaros
 author: rohit-batra
 ms.date: 11/03/2025
 ms.update-cycle: 1095-days
@@ -123,6 +123,15 @@ Tests that use the .NET core framework **can** be associated with a test case
   work item when using Visual Studio 15.9 Preview 2 or later.
   Run the .NET core tests. The appropriate target framework must be specified
   in a [.runsettings file](/visualstudio/test/configure-unit-tests-by-using-a-dot-runsettings-file?).
+
+<a name="xaml-build"></a>
+
+### Q: How can I use the "Automation Status" field on the test case?
+The Automation Status field on the test case work item reflects whether the test case is linked to an automated test method. Although the field supports three values: Not Automated, Planned, and Automated - the availability of these values depends on whether the test case has an associated automation method.
+- **Not Automated / Planned:** Shown only when the test case has no associated test method.
+- **Automated:** Shown only when the test case has associated test method.
+
+If the default values don’t match the state of your test cases, you can create a custom [pick-list field](https://www.learn.microsoft.com/en-us/azure/devops/organizations/settings/work/customize-process-field?view=azure-devops#add-a-picklist) on the Test Case work item type and define values that better align with your organization’s needs.
 
 <a name="xaml-build"></a>
 

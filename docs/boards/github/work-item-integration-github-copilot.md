@@ -15,9 +15,6 @@ ms.date: 11/19/2025
 
 [!INCLUDE [version-eq-azure-devops](../../includes/version-eq-azure-devops.md)]
 
-> [!NOTE]
-> This feature is in Private Preview. Access is limited and functionality might change before general availability.
-
 Azure Boards integrates with GitHub Copilot to streamline your development workflow. You can use work items directly with Copilot, which automatically creates branches, implements code changes, and generates draft pull requests while keeping your work item updated with progress.
 
 This integration allows you to:
@@ -33,10 +30,10 @@ This integration allows you to:
 
 | Category | Requirements |
 |----------|-------------|
-| **Licensing** | Active GitHub Copilot subscription |
-| **Repository** | GitHub repository (not Azure Repos) with appropriate permissions |
-| **Authentication** | GitHub App authentication configured between Azure DevOps and GitHub (personal access tokens not supported) |
-| **Permissions** | **Contribute** access in Azure DevOps to work items and ability to link artifacts |
+| Licensing | Active GitHub Copilot subscription |
+| Repository | GitHub repository (not Azure Repos) with appropriate permissions |
+| Authentication | GitHub App authentication configured between Azure DevOps and GitHub (personal access tokens not supported) |
+| Permissions | **Contribute** access in Azure DevOps to work items and ability to link artifacts |
 | Azure Boards connection | [Connect Azure Boards to GitHub](connect-to-github.md)|
 
 ## Supported work item types

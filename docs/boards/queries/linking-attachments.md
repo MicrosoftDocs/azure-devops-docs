@@ -2,7 +2,7 @@
 title: Query Work Items By Link Or Attachment Count In Azure Boards  
 titleSuffix: Azure Boards
 description: Learn how to query work items based on link type, link count, link restrictions, and attached file count in Azure Boards.
-ms.custom: boards-queries, engagement-fy23
+ms.custom: boards-queries, engagement-fy23, copilot-scenario-highlight
 ms.service: azure-devops-boards
 ms.assetid: 219717a0-de6e-4f70-8558-54f813f82507
 ms.author: chcomley
@@ -10,7 +10,7 @@ author: chcomley
 ms.topic: example-scenario
 ai-usage: ai-assisted
 monikerRange: '<= azure-devops'
-ms.date: 10/27/2025
+ms.date: 02/28/2026
 ---
 
 # Query work items by link or attachment count  
@@ -18,6 +18,8 @@ ms.date: 10/27/2025
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 Link work items to track related work and dependencies, and attach files to share information with your team. Query work items using the following fields:
+
+[!INCLUDE [ai-assistance-mcp-server-tip](../../includes/ai-assistance-mcp-server-tip.md)]
 
 ::: moniker range="azure-devops"
 - Attached File Count
@@ -136,7 +138,6 @@ The following query finds work items in all projects that link to work items und
 - Select **Query across projects** to include dependent linked work items from other projects.
 - Add the **Area Path Under Fabrikam** clause to filter for work items that link to items defined under the Fabrikam project.   
 - Select **Only return items that have matching links**, and then select **Return selected link types** to return only work items linked as **Predecessor** or **Successor**.
-
 
 #### [Visual Studio 2015](#tab/visual-studio/)
 
@@ -260,22 +261,7 @@ The following table describes fields associated with links and attachments. Most
    :::column-end:::
 :::row-end:::
 ::: moniker-end 
-::: moniker range="azure-devops-2020" 
-:::row:::
-   :::column span="1":::
-   <a id="parent"></a>
-
-   **Parent**
-
-   :::column-end:::
-   :::column span="3":::
-   When included as a column option in a backlog or query results list, the system displays the **Title** of the parent work item. Internally, the system stores the **ID** of the work item in an Integer field. 
-   > [!NOTE]
-   > The **Parent** field is available from Azure DevOps Server 2020 and later versions. You can't specify this field within a query clause.   
-   **Reference Name**=`System.Parent`, **Data type**=Integer
-   :::column-end:::
-:::row-end:::
-::: moniker-end 
+ 
 :::row:::
    :::column span="1":::
    <a id="related-link-count"></a>
@@ -318,6 +304,28 @@ All tabs that support creating links between work items use the **LinksControl**
 You can add or remove columns from the list of links, and you can customize the default columns and the column order. For more information, see [LinksControlOptions XML elements](/previous-versions/azure/devops/reference/xml/linkscontroloptions-xml-elements?view=tfs-2017&preserve-view=true).
 
 ::: moniker-end
+
+<a id="use-ai-assistance"></a>
+
+## Use AI to query by links and attachments
+
+If you have the [Azure Boards MCP Server](../../mcp-server/mcp-server-overview.md) connected to your AI agent in agent mode, you can use natural language prompts to find work items based on their links and attachments.
+
+| Task | Example prompt |
+|------|----------------|
+| Find unlinked items | `Find active user stories with no child task links` |
+| Query for attachments | `List bugs that have attached files` |
+| Check development links | `Show work items with no linked commits or pull requests` |
+| Find heavily linked items | `Find work items with more than 3 related links` |
+| Trace dependency chains | `Show all work items in <Contoso> that have predecessor links and list what they depend on` |
+| Find items with external links | `List work items in <Contoso> that have hyperlinks in their links` |
+| Audit parent-child integrity | `Show child work items in <Contoso> whose parent is in the Closed state but the child is still Active` |
+| Find items linked to test cases | `List user stories in the current sprint for <Contoso> that have linked test cases and show the test outcome` |
+| Identify attachment bloat | `Show work items in <Contoso> that have more than 5 attachments` |
+| Find cross-project links | `List work items in <Contoso> that have related links to work items in other projects` |
+
+> [!NOTE]
+> Agent mode and the MCP Server use natural language, so you can adjust these prompts or ask follow-up questions to refine the results.
 
 ## Related content
 

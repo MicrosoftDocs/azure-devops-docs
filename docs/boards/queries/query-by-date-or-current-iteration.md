@@ -2,7 +2,7 @@
 title: Query by date or current iteration in Azure Boards 
 titleSuffix: Azure Boards
 description: Learn how to query for work items based on a date, a team's current iteration, or a sliding window of sprints in Azure Boards. 
-ms.custom: boards-queries
+ms.custom: boards-queries, copilot-scenario-highlight
 ms.service: azure-devops-boards
 ms.assetid: 95D9F558-E3C4-4D5F-BB69-76A3BD7625D8
 ms.author: chcomley
@@ -10,7 +10,7 @@ author: chcomley
 ms.topic: example-scenario
 ai-usage: ai-assisted
 monikerRange: '<= azure-devops'
-ms.date: 10/08/2025
+ms.date: 02/28/2026
 #customer intent: As a team member, I want to learn how to query work items in Azure Boards so I can find items based on when they were created, which iteration they belong to, or other factors.
 ---
 
@@ -18,7 +18,9 @@ ms.date: 10/08/2025
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
-This article shows how to list work items by creation, change, resolution, or closed dates and how to use date macros (for example, `@Today`) and iteration macros for team sprints. For iteration path fundamentals and client/macro restrictions, see [Query by area or iteration path](query-by-area-iteration-path.md).
+This article shows how to list work items by creation, change, resolution, or closed dates. It also shows how to use date macros, such as `@Today`, and iteration macros for team sprints. For iteration path fundamentals and client or macro restrictions, see [Query by area or iteration path](query-by-area-iteration-path.md).
+
+[!INCLUDE [ai-assistance-mcp-server-tip](../../includes/ai-assistance-mcp-server-tip.md)]
 
 ## Prerequisites
 
@@ -30,11 +32,11 @@ Use the following operators and macros for DateTime and Iteration Path fields in
 
 - DateTime operators: `= , <> , > , < , >= , <= , =[Field], <>[Field], >[Field], <[Field], >=[Field], <=[Field], In, Not In, Was Ever`
 - Date macros: `@StartOfDay`, `@StartOfWeek`, `@StartOfMonth`, `@StartOfYear`, `@Today`  
-  You can combine `+/- n` with these macros (for example, `@Today - 7`).
-- Iteration macros: `@CurrentIteration` and `@CurrentIteration +/- n` (see the following note and link for client restrictions and team-parameter behavior).
+  You can combine `+/- n` with these macros. For example, use `@Today - 7`.
+- Iteration macros: `@CurrentIteration` and `@CurrentIteration +/- n`. For client restrictions and team-parameter behavior, see the following note and link.
 
 > [!NOTE]
-> Iteration macros and client restrictions are covered in detail on the iteration page: [Query by area or iteration path](query-by-area-iteration-path.md). If you need queries to run in nonweb clients or via REST/WIQL outside the web UI, verify macro support in your environment and consider expanding macros to explicit paths.
+> The iteration page [Query by area or iteration path](query-by-area-iteration-path.md) covers iteration macros and client restrictions in detail. If you need queries to run in nonweb clients or through REST or WIQL outside the web UI, verify macro support in your environment. Consider expanding macros to explicit paths.
 
 ## Quick date examples (common queries)
 
@@ -66,7 +68,7 @@ Use `@CurrentIteration` to target the team's current sprint and `@CurrentIterati
 
 - `@CurrentIteration` returns items assigned to the current sprint for the team context used when running the query.
 - `@CurrentIteration +/- n` shifts that window of sprints by n; useful for trend or carry-over analyses.
-- Because macro behavior and client support vary, consult [Query by area or iteration path](query-by-area-iteration-path.md) for details about team parameters, which clients evaluate macros, and how macros are stored/expanded when saving queries.
+- Because macro behavior and client support vary, consult [Query by area or iteration path](query-by-area-iteration-path.md) for details about team parameters, which clients evaluate macros, and how macros are stored and expanded when saving queries.
 
 <a id="create-queries-for-your-teams-current-iteration"></a>
 
@@ -83,12 +85,12 @@ Example images (web portal Query Editor):
 
 <a id="list-work-items-added-to-a-sprint-after-the-start-date"></a>
 
-## Date macros: start of day/week/month/year
+## Date macros: start of day, week, month, and year
 
 Start-of macros help build consistent relative date ranges:
 
-- `@StartOfDay`, `@StartOfWeek`, `@StartOfMonth`, `@StartOfYear`— use these macros with `+/- n` to build ranges such as "since start of week" or "last 3 months."
-- These macros get evaluated by the web portal UI; their behavior in nonweb scenarios might differ—test in your target client.
+- `@StartOfDay`, `@StartOfWeek`, `@StartOfMonth`, and `@StartOfYear`—use these macros with `+/- n` to build ranges such as "since start of week" or "last 3 months."
+- The web portal UI evaluates these macros. Their behavior in nonweb scenarios might differ, so test in your target client.
 
 Example queries:
 
@@ -98,6 +100,20 @@ Example queries:
 
 <a id="fields"></a>
 
+## Date fields
+
+The following table describes date-related fields you can use to filter and query work items. These fields help track scheduling information for work items.
+
+| Field name | Description | Reference name | Data type |
+|------------|-------------|----------------|-----------|
+| Due Date | Forecasted due date for an issue or work item to resolve. (Agile process) | `Microsoft.VSTS.Scheduling.DueDate` | DateTime |
+| Finish Date | Date and time the schedule indicates a work item is to be completed. | `Microsoft.VSTS.Scheduling.FinishDate` | DateTime |
+| Start Date | Date and time assigned to a work item for work to start. | `Microsoft.VSTS.Scheduling.StartDate` | DateTime |
+| Target Date | Forecasted due date for an issue or other work item to resolve or complete. | `Microsoft.VSTS.Scheduling.TargetDate` | DateTime |
+
+> [!NOTE]
+> Use the **Start Date** and **Target Date** fields with Delivery Plans to visualize work item timelines. For more information, see [Review team Delivery Plans](../plans/review-team-plans.md).
+
 ## When to use WIQL directly
 
 Use WIQL when:
@@ -105,6 +121,28 @@ Use WIQL when:
 - Query Editor blocks or marks a clause as unsupported (for example, some `Was Ever` uses). The WIQL Editor extension lets you author those queries and save them.
 
 See [Work Item Query Language (WIQL) syntax](../queries/wiql-syntax.md) and the WIQL Editor marketplace extension for examples.
+
+<a id="use-ai-assistance"></a>
+
+## Use AI to query by date or iteration
+
+If you configure the [Azure DevOps MCP Server](../../mcp-server/mcp-server-overview.md), you can ask date-based and iteration-based questions in natural language instead of building query clauses manually.
+
+| Task | Example prompt |
+|------|----------------|
+| Find items created recently | `Show all work items created in the last 7 days in project <Contoso>` |
+| Query by current sprint | `List all active bugs in the current sprint for team <Contoso Team>` |
+| Find stale items | `Show user stories that haven't been updated in the last 30 days in <Contoso>` |
+| Query resolved items by date range | `List bugs resolved between January 1 and January 31 in project <Contoso>` |
+| Weekly closed summary | `Show the count of work items closed each day this week in <Contoso> broken down by type` |
+| Find items approaching deadline | `List work items in <Contoso> with a target date within the next 5 days that are still active` |
+| Sprint burn-down check | `Show how many story points remain incomplete vs total planned for the current sprint in <Contoso>` |
+| Late-sprint additions | `List work items added to the current sprint in <Contoso> in the second half of the sprint` |
+| Month-over-month comparison | `Compare the number of bugs created this month vs last month in <Contoso>` |
+| Holiday impact analysis | `Show work items in <Contoso> that had no updates between December 23 and January 2` |
+
+> [!NOTE]
+> If you're using Visual Studio Code, [agent mode](/visualstudio/ide/copilot-chat-context#agent-mode) is especially helpful for complex date-based queries.
 
 ## Related content
 

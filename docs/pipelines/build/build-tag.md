@@ -7,12 +7,12 @@ ms.custom: template-how-to-pattern
 ai-usage: ai-assisted
 ms.author: jukullam
 author: juliakm
-monikerRange: '>= azure-devops-2020'
+monikerRange: "<=azure-devops"
 ---
 
 # Add, remove, and use build tags
 
-[!INCLUDE [version-gt-eq-2020](../../includes/version-gt-eq-2020.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 Build tags in Azure DevOps help you categorize and organize your builds, making it easier to filter and locate specific builds. This guide walks you through adding, removing, and using build tags as part of your build management process.  
 
@@ -62,7 +62,6 @@ Output:
 ```
 
 ---
-
 
 ## Remove a build tag
 

@@ -3,13 +3,13 @@ title: Example query charts in Azure Boards
 titleSuffix: Azure Boards
 description: Learn about useful query charts to create and display on dashboards when working in Azure Boards.
 ms.service: azure-devops-boards
-ms.custom: boards-queries, engagement-fy23 
+ms.custom: boards-queries, engagement-fy23, copilot-scenario-highlight
 ms.author: chcomley
 author: chcomley
 ms.topic: sample
 ai-usage: ai-assisted
 monikerRange: '<= azure-devops'
-ms.date: 11/26/2024
+ms.date: 02/28/2026
 ---
 
 
@@ -28,6 +28,8 @@ While teams might have varied goals and tracking needs, Agile teams typically pe
 - [Triage incoming work](../sprints/best-practices-scrum.md#tips-for-successful-triage-meetings) to ensure new work is well defined
 - Plan sprints and set sprint goals as described in [Scrum and best practices](../sprints/best-practices-scrum.md)
 - Conduct [daily stand-ups](../sprints/best-practices-scrum.md#daily-scrum-meetings)
+
+[!INCLUDE [ai-assistance-mcp-server-tip](../../includes/ai-assistance-mcp-server-tip.md)]
 
 ## Prerequisites
 
@@ -238,6 +240,22 @@ In addition to the query charts provided earlier in this article, the following 
 - [Cumulative flow](../../report/dashboards/cumulative-flow.md) 
 - [Sprint burndown](../../report/dashboards/configure-sprint-burndown.md) 
 - [Lead time and Cycle time](../../report/dashboards/cycle-time-and-lead-time.md) 
+
+<a id="use-ai-assistance"></a>
+
+## Use AI to create queries for charts
+
+If you have the [Azure Boards MCP Server](../../mcp-server/mcp-server-overview.md) connected to your AI agent in agent mode, you can use natural language prompts to build the underlying queries that support your charts.
+
+| Task | Example prompt |
+|------|----------------|
+| Active bugs query | `Create a flat query for all active bugs grouped by assigned to in the current sprint` |
+| Backlog hygiene | `Find user stories with no acceptance criteria or description in the <Contoso> area path` |
+| Sprint progress | `List all work items in the current sprint grouped by state` |
+| Stale items | `Find work items that haven't been updated in the last 30 days and are still active` |
+
+> [!NOTE]
+> Agent mode and the MCP Server use natural language, so you can adjust these prompts or ask follow-up questions to refine the results. After you get query results, you can save the query and [create a chart](../../report/dashboards/charts.md) from it.
 
 ## Related content
 

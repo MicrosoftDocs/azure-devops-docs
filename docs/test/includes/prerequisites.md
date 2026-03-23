@@ -1,6 +1,6 @@
 ---
 ms.service: azure-devops-test-plans
-ms.author: jeom
+ms.author: pliaros
 author: raviLiftr
 ms.topic: include
 ms.date: 01/13/2025

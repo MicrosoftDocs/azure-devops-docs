@@ -14,7 +14,7 @@ ms.date: 08/07/2025
 
 # Manage work item attachments
 
-[!INCLUDE [version-gt-eq-2020](../../includes/version-gt-eq-2020.md)] 
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)] 
 [!INCLUDE [version-vs-gt-eq-2019](../../includes/version-vs-gt-eq-2019.md)] 
 
 Attachments enhance work items by enabling you to share essential information with your team. You can attach files, images, and links directly to work items, facilitating better collaboration and documentation. This article provides guidance on managing attachments within Azure DevOps.
@@ -34,8 +34,8 @@ By default, each work item can include up to **100 attachments**, with each file
 
 | Category | Requirements |
 |--------------|-------------|
-| **Permissions** | - To view, follow, and edit work items: **View work items in this node** and **Edit work items in this node** permissions set to **Allow**. By default, the **Contributors** group has these permissions. For more information, see [Set work tracking permissions](../../organizations/security/set-permissions-access-work-tracking.md). <br> - To add tags to work items: Project-level **Create new tag definition** permission set to **Allow**. By default, the **Contributors** group has this permission. |
-| **Access levels** | - [Project member](../../organizations/security/add-users-team-project.md). <br> - To add new tags to work items or to view or follow pull requests: At least [**Basic** access](../../organizations/security/access-levels.md). <br> - To view or follow work items: At least **Stakeholder** access. For more information, see [About access levels](../../organizations/security/access-levels.md). <br> - All project members, including members in the **Readers** group, can send emails containing work items. |
+| Permissions | - To view, follow, and edit work items: **View work items in this node** and **Edit work items in this node** permissions set to **Allow**. By default, the **Contributors** group has these permissions. For more information, see [Set work tracking permissions](../../organizations/security/set-permissions-access-work-tracking.md). <br> - To add tags to work items: Project-level **Create new tag definition** permission set to **Allow**. By default, the **Contributors** group has this permission. |
+| Access levels | - [Project member](../../organizations/security/add-users-team-project.md). <br> - To add new tags to work items or to view or follow pull requests: At least [**Basic** access](../../organizations/security/access-levels.md). <br> - To view or follow work items: At least **Stakeholder** access. For more information, see [About access levels](../../organizations/security/access-levels.md). <br> - All project members, including members in the **Readers** group, can send emails containing work items. |
 |**Permanent deletion permissions**| To permanently delete attachments: **Permanently delete work items** permission set to **Allow**.|
 
 ## Manage attachments through the web portal

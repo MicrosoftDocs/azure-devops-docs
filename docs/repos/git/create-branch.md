@@ -30,7 +30,7 @@ For an overview of the Git workflow, see [Azure Repos Git tutorial](gitworkflow.
 
 #### [Browser](#tab/browser) 
 
-::: moniker range=">= azure-devops-2020"
+::: moniker range="<=azure-devops"
 
 You can create branches in **Azure Repos** Git repos, **GitHub** repos, or other hosted Git repos.
 

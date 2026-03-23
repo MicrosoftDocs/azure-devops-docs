@@ -21,7 +21,7 @@ Learn how to troubleshoot common issues with GitHub Advanced Security for Azure 
 [!INCLUDE [github-advanced-security-prerequisites](includes/github-advanced-security-prerequisites.md)]
 
 ## Secret scanning repository scanning doesn't complete 
-If the repository-level secret scanning upon first enabling Advanced Security appears to be stuck after some time, attempt to disable then re-enable Advanced Security to reset the scanning operation. If re-enabling Advanced Security doesn't result in a successful operation after some time, push a new commit to your repository to reset the scan evaluation. If both of these suggestions don't result in a successful initial scan after a day, file a support ticket.
+If the repository-level secret scanning upon first enabling Advanced Security appears to be stuck after some time, attempt to disable then re-enable Advanced Security to reset the scanning operation. If re-enabling Advanced Security doesn't result in a successful operation after some time, push a new commit to your repository to reset the scan evaluation. If both of these suggestions don't result in a successful initial scan after a day, [file a support ticket](../../user-guide/provide-feedback.md).
 
 ## Push protection not blocking a secret 
 Ensure that the secret you're attempting to block is supported for push protection in [Supported secrets](github-advanced-security-secret-scan-patterns.md#supported-secrets). If the secret is modified in some way, the token might not match the original specification by the token provider. 

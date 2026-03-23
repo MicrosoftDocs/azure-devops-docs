@@ -15,6 +15,9 @@
   - name: Manage extension permissions
     displayName: grant, publish, update, settings, admin
     href: ../marketplace/grant-permissions.md?toc=/azure/devops/marketplace-extensibility/toc.json
+  - name: Allow extensions to access local network resources
+    displayName: iframe, local network, security policy, browser, internal
+    href: ../marketplace/allow-extensions-local-network.md?toc=/azure/devops/marketplace-extensibility/toc.json
   - name: Manage high privilege extensions
     displayName: permission, administrator, privilege, extension, scope, Marketplace
     href: ../marketplace/manage-high-privilege-extensions.md?toc=/azure/devops/marketplace-extensibility/toc.json

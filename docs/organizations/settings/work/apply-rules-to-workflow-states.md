@@ -2,18 +2,19 @@
 title: Restrict workflow transitions and apply rules to workflow states 
 titleSuffix: Azure DevOps Services
 description: Learn how to apply rules to workflow states to restrict transitions.
-ms.custom: inherited-process
+ms.custom: inherited-process, copilot-scenario-highlight
 ms.service: azure-devops-boards
 ms.author: chcomley
 author: chcomley
+ai-usage: ai-assisted
 monikerRange: "<=azure-devops"
 ms.topic: tutorial
-ms.date: 09/11/2024 
+ms.date: 03/03/2026
 ---
 
 # Apply rules to workflow states (Inheritance process)   
 
-[!INCLUDE [version-gt-eq-2019](../../../includes/version-gt-eq-2019.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../../includes/version-lt-eq-azure-devops.md)]
 
 After you add or modify your workflow states for a work item type, define rules that apply based on the workflow state change. Adding rules to workflow states supports the following scenarios: 
 
@@ -27,7 +28,7 @@ After you add or modify your workflow states for a work item type, define rules 
 - Automate closure of parent work items
 ::: moniker-end
 
-::: moniker range=">= azure-devops-2020 < azure-devops"
+::: moniker range="<azure-devops"
 - Support an approval process 
 - Prevent unauthorized users from setting an invalid state 
 - Make a field required or read-only or another value based on State changes
@@ -37,41 +38,43 @@ After you add or modify your workflow states for a work item type, define rules 
 
 [!INCLUDE [temp](../includes/note-on-prem-link.md)]
 
+[!INCLUDE [ai-assistance-mcp-server-tip](../../../includes/ai-assistance-mcp-server-tip.md)]
+
 ## Prerequisites
 
 | Category | Requirements |
 |--------------|-------------|
-| **Permissions** | - To manage security groups and permissions at the project level, which includes setting rules for workflow states: **Project Administrator**.<br>- To manage the work tracking area: **Project Administrator** or specifically assigned the **Work Item Tracking** permission. |
-| **Access levels** | **Basic** access, which is typically sufficient for most users who need to manage work items and apply rules to workflow states. |
+| Permissions | - To manage security groups and permissions at the project level, which includes setting rules for workflow states: Project Administrator.<br>- To manage the work tracking area: Project Administrator or specifically assigned the Work Item Tracking permission. |
+| Access levels | Basic access, which is typically sufficient for most users who need to manage work items and apply rules to workflow states. |
 
 ## Understand workflow rules 
 
 ::: moniker range="azure-devops"
 The following table outlines the three groups of workflow rules you can define:
 
-1. **Standard actions:**
+1. Standard actions:
    - Apply when a work item is created, in a selected state, or moved from one state to another.
    - Actions include setting the value of a field, making a field read-only, or making a field required.
    - You can specify one or two conditions and several actions.
 
-2. **Restricting state transitions (group 1):**
+2. Restricting state transitions (group 1):
    - Specify one condition indicating the state a work item moved from.
    - Define actions to restrict transitions from that state to other states.
 
-3. **Restricting state transitions (group 2):**
+3. Restricting state transitions (group 2):
    - Similar to the first group, specify one condition indicating the state a work item moved from.
    - Define actions to restrict transitions from that state to other states.
 ::: moniker-end
 
-::: moniker range=">= azure-devops-2020 < azure-devops"
+::: moniker range="<azure-devops"
 The following table outlines the two groups of workflow rules you can define:
 
-1. **Standard actions:**
+1. Standard actions:
    - Apply when a work item is created, in a selected state, or moved from one state to another.
    - Actions include setting the value of a field, making a field read-only, or making a field required.
    - You can specify one or two conditions and several actions.
 
-2. **Restricting state transitions:**
+2. Restricting state transitions:
    - Specify one condition indicating the state a work item moved from.
    - Define one or more actions to restrict transitions from that state to other states.
 ::: moniker-end
@@ -81,16 +84,16 @@ The following table outlines the two groups of workflow rules you can define:
 ---
 :::row:::
    :::column span="2":::
-      **Condition**
+      Condition
    :::column-end:::
    :::column span="2":::
-      **Supported Actions**
+      Supported Actions
    :::column-end:::
 :::row-end:::  
 ---  
 :::row:::  
    :::column span="4":::
-      **Set field value or make read-only/required based on State**
+      Set field value or make read-only/required based on State
    :::column-end:::
 :::row-end:::
 :::row:::  
@@ -104,10 +107,10 @@ The following table outlines the two groups of workflow rules you can define:
    :::column-end:::
 :::row-end:::
 ---  
-::: moniker range=">= azure-devops-2020 < azure-devops"
+::: moniker range="<azure-devops"
 :::row:::  
    :::column span="4":::
-      **Restrict a transition based on State**
+      Restrict a transition based on State
    :::column-end:::
 :::row-end:::
 :::row:::  
@@ -121,10 +124,10 @@ The following table outlines the two groups of workflow rules you can define:
 :::row-end:::
 ---  
 ::: moniker-end
-::: moniker range=">= azure-devops-2020 < azure-devops"
+::: moniker range="<azure-devops"
 :::row:::  
    :::column span="4":::
-      **Hide field or make field read-only or required based on State and user or group membership**
+      Hide field or make field read-only or required based on State and user or group membership
    :::column-end:::
 :::row-end:::
 :::row:::  
@@ -142,7 +145,7 @@ The following table outlines the two groups of workflow rules you can define:
 ::: moniker range="azure-devops"
 :::row:::  
    :::column span="4":::
-      **Based on and user or group membership, set a field attribute or restrict a State transition**
+      Based on and user or group membership, set a field attribute or restrict a State transition
    :::column-end:::
 :::row-end:::
 :::row:::  
@@ -163,12 +166,12 @@ The following table outlines the two groups of workflow rules you can define:
 ## Understand workflow state and rule limits 
 
 Workflow rules get applied when you add or modify work items through any of the following interfaces: 
-- **Web portal:** Work item form, bulk updates, updates in query view  ​
-- **Web portal:** Board or Taskboard, move work item to column​
-- **Visual Studio 2017** and earlier versions, work item form 
-- **CSV file format:** Bulk import or update 
-- **Excel​:** Bulk import or update 
-- **REST API​:** Add or modify work items 
+- Web portal: Work item form, bulk updates, updates in query view  ​
+- Web portal: Board or Taskboard, move work item to column​
+- Visual Studio 2017 and earlier versions, work item form 
+- CSV file format: Bulk import or update 
+- Excel​: Bulk import or update 
+- REST API​: Add or modify work items 
 
 The following table summarizes the workflow state and rule limits for the Inheritance process. 
 
@@ -179,16 +182,16 @@ The following table summarizes the workflow state and rule limits for the Inheri
 | Rules defined for a work item type | 1024 |
 
 When you define workflow states and rules, follow these guidelines to minimize performance issues:
-- **Limit the number of rules for a WIT:** While you can create multiple rules for a work item type (WIT), more rules can negatively affect performance when users add or modify work items. The system validates all rules associated with the fields for the work item type when users save work items. In some cases, the rule validation expression might become too complex for SQL to evaluate.
-- **Limit the number of custom work item types:** Reducing the number of custom work item types can help maintain optimal performance.
+- Limit the number of rules for a WIT: While you can create multiple rules for a work item type (WIT), more rules can negatively affect performance when users add or modify work items. The system validates all rules associated with the fields for the work item type when users save work items. In some cases, the rule validation expression might become too complex for SQL to evaluate.
+- Limit the number of custom work item types: Reducing the number of custom work item types can help maintain optimal performance.
 
 ## Define a rule  
 
 Before you define a rule based on workflow states, ensure the following elements are in place:
 
-- **Workflow states:** Define the workflow states as described in [Customize a workflow](customize-process-workflow.md).
-- **Custom fields:** If your rule requires a custom field, add it to the work item type as described in [Add and manage fields](customize-process-field.md).
-- **Security groups:** If your rule requires a security group to grant or restrict changes that are based on user or group membership, define the security group as described in [Add or remove users or groups, manage security groups](../../security/add-remove-manage-user-group-security-group.md).
+- Workflow states: Define the workflow states as described in [Customize a workflow](customize-process-workflow.md).
+- Custom fields: If your rule requires a custom field, add it to the work item type as described in [Add and manage fields](customize-process-field.md).
+- Security groups: If your rule requires a security group to grant or restrict changes that are based on user or group membership, define the security group as described in [Add or remove users or groups, manage security groups](../../security/add-remove-manage-user-group-security-group.md).
 
 For more information about defining rules, see [Add a custom rule](custom-rules.md).
 
@@ -220,19 +223,19 @@ The rule requirements translate to the following four rule definitions.
 ---
 :::row:::
    :::column span="":::
-      **Rule name**
+      Rule name
    :::column-end:::
    :::column span="":::
-      **Condition**
+      Condition
    :::column-end:::
    :::column span="2":::
-      **Actions**
+      Actions
    :::column-end:::
 :::row-end:::  
 ---  
 :::row:::
    :::column span="":::
-      **Approved By cleared when New** 
+      Approved By cleared when New 
    :::column-end:::
    :::column span="":::
       When `A work item state changes to New`
@@ -243,7 +246,7 @@ The rule requirements translate to the following four rule definitions.
 :::row-end:::  
 :::row:::
    :::column span="":::
-      **Approved By cleared when Removed** 
+      Approved By cleared when Removed 
    :::column-end:::
    :::column span="":::
       When `A work item state changes to Removed`
@@ -254,7 +257,7 @@ The rule requirements translate to the following four rule definitions.
 :::row-end:::  
 :::row:::
    :::column span="":::
-      **Approved By Read-only** 
+      Approved By Read-only 
    :::column-end:::
    :::column span="":::
       When `Current user is not member of group Team Leads Group`
@@ -265,7 +268,7 @@ The rule requirements translate to the following four rule definitions.
 :::row-end:::  
 :::row:::
    :::column span="":::
-      **Approved By required** 
+      Approved By required 
    :::column-end:::
    :::column span="":::
       When `A work item state changes from New to Active`
@@ -277,18 +280,14 @@ The rule requirements translate to the following four rule definitions.
 
 ---
 
-::: moniker range=">= azure-devops-2020"
+::: moniker range="<=azure-devops"
 
 ## Restrict state transitions 
 
 When you specify the condition, `A work item state moved from ...`, you can specify only that condition. You can specify up to 10 actions.  
 ::: moniker-end
-::: moniker range="azure-devops-2020"
-> [!NOTE]   
-> This feature requires Azure DevOps Server 2020.1 update or later version.
-::: moniker-end
 
-::: moniker range=">= azure-devops-2020"
+::: moniker range="<=azure-devops"
 
 #### Example of restricting state transitions and Approved state
 
@@ -331,19 +330,19 @@ To implement the previously mentioned restrictions, the process administrator ad
 ---
 :::row:::
    :::column span="":::
-      **Rule name**
+      Rule name
    :::column-end:::
    :::column span="":::
-      **Condition**
+      Condition
    :::column-end:::
    :::column span="2":::
-      **Actions**
+      Actions
    :::column-end:::
 :::row-end:::  
 ---  
 :::row:::
    :::column span="":::
-      **Proposed state** 
+      Proposed state 
    :::column-end:::
    :::column span="":::
       When `A work item state moved from Proposed`
@@ -358,7 +357,7 @@ To implement the previously mentioned restrictions, the process administrator ad
 :::row-end:::  
 :::row:::
    :::column span="":::
-      **Research state** 
+      Research state 
    :::column-end:::
    :::column span="":::
       When `A work item state moved from Research`
@@ -373,7 +372,7 @@ To implement the previously mentioned restrictions, the process administrator ad
 :::row-end:::  
 :::row:::
    :::column span="":::
-      **Design state** 
+      Design state 
    :::column-end:::
    :::column span="":::
       When `A work item state moved from Design`
@@ -388,7 +387,7 @@ To implement the previously mentioned restrictions, the process administrator ad
 :::row-end:::  
 :::row:::
    :::column span="":::
-      **Approved state** 
+      Approved state 
    :::column-end:::
    :::column span="":::
       When `A work item state moved from Approved`  
@@ -403,7 +402,7 @@ To implement the previously mentioned restrictions, the process administrator ad
 :::row-end:::  
 :::row:::
    :::column span="":::
-      **Active state**
+      Active state
    :::column-end:::
    :::column span="":::
       When `A work item state moved from Active`  
@@ -418,7 +417,7 @@ To implement the previously mentioned restrictions, the process administrator ad
 :::row-end:::  
 :::row:::
    :::column span="":::
-      **In Review state** 
+      In Review state 
    :::column-end:::
    :::column span="":::
       When `A work item state moved from In Review`  
@@ -432,7 +431,7 @@ To implement the previously mentioned restrictions, the process administrator ad
 :::row-end:::  
 :::row:::
    :::column span="":::
-      **Closed state** 
+      Closed state 
    :::column-end:::
    :::column span="":::
       When `A work item state moved from Closed`  
@@ -444,7 +443,7 @@ To implement the previously mentioned restrictions, the process administrator ad
 :::row-end:::  
 :::row:::
    :::column span="":::
-      **Cut state** 
+      Cut state 
    :::column-end:::
    :::column span="":::
       When `A work item state moved from Cut`  
@@ -460,7 +459,7 @@ To implement the previously mentioned restrictions, the process administrator ad
 :::row-end::: 
 :::row:::
    :::column span="":::
-      **Approved state required fields**
+      Approved state required fields
    :::column-end:::
    :::column span="":::
       When `A work item changes from Approved to Active`  
@@ -472,7 +471,7 @@ To implement the previously mentioned restrictions, the process administrator ad
 :::row-end:::  
 :::row:::
    :::column span="":::
-      **Authorized Approvers**
+      Authorized Approvers
    :::column-end:::
    :::column span="":::
       When `Current user is not a member of Authorized Approvers`  
@@ -483,7 +482,7 @@ To implement the previously mentioned restrictions, the process administrator ad
 :::row-end:::  
 :::row:::
    :::column span="":::
-      **Clear Approved By field**
+      Clear Approved By field
    :::column-end:::
    :::column span="":::
       When `A work item state changes to Cut`  
@@ -500,10 +499,10 @@ Once you define the rules for the process and update the project, refresh your b
 
 For the rules defined in the previous table, check the State drop-down menus. Open the board and ensure you can move from one state to another.
 
-|**Proposed**|**Research**|**Design**|**Approved**|    
+|Proposed|Research|Design|Approved|    
 |:----------:|:----------:|:--------:|:--------:|    
 |![Proposed menu](media/customize-workflow/proposed-state-transition-menu.png) |![Research menu](media/customize-workflow/research-state-transition-menu.png) |![Design menu](media/customize-workflow/design-state-transition-menu.png) |![Approved menu](media/customize-workflow/approved-state-transition-menu.png) |
-|**Active**|**In Review**|**Closed**|**Cut**|   
+|Active|In Review|Closed|Cut|   
 |![Active menu](media/customize-workflow/active-state-transition-menu.png) |![In Review menu](media/customize-workflow/in-review-state-transition-menu.png) |![Closed menu](media/customize-workflow/closed-state-transition-menu.png)|![Cut menu](media/customize-workflow/cut-state-transition-menu.png) |
 
 ::: moniker-end
@@ -523,15 +522,37 @@ When you specify one of the two conditions based on user or group membership, `C
 To automate State transitions for parent work items that are based on the State assignments of their child work items, see [Automate work item state transitions](../../../boards/backlogs/automate-work-item-state-transitions.md).
 <a id="reassign"></a>
 
-::: moniker range=">= azure-devops-2020"
+::: moniker range="<=azure-devops"
 
 ## Automate reassignment based on state change 
 
 The Agile process bug work item type previously had a rule that reassigned the bug to its creator. We removed this rule from the default system process. You can reinstate the rule or add a similar rule to other work item types using the following condition and action: 
 
-**When** `A work item state changes to` *Resolved* **Then** `Copy the value from `*Created By* **to** *Assigned To*.
+When `A work item state changes to` *Resolved* Then `Copy the value from `*Created By* to *Assigned To*.
 
 ::: moniker-end
+
+<a id="use-ai-assistance"></a>
+
+## Use AI to configure workflow rules
+
+[!INCLUDE [ai-assistance-mcp-server-tip](../../../includes/ai-assistance-mcp-server-tip.md)]
+
+If you use GitHub Copilot, the [Azure DevOps MCP Server](../../../mcp-server/mcp-server-overview.md) can help you design and implement workflow state rules through natural language prompts.
+
+### Example prompts for workflow rules
+
+| Task | Example prompt |
+|---|---|
+| Build an approval workflow | `Create workflow rules for my Bug work item type so that when the state changes to 'Ready for Review', the Assigned To field is set to the team lead and the Priority field becomes read-only until it moves to Approved` |
+| Restrict state transitions by role | `Configure rules so that only members of the 'Release Managers' group can move User Stories from 'Testing' to 'Done', and prevent anyone else from making that transition` |
+| Enforce required fields on state change | `Add rules to my Task work item type that require the 'Resolution' field and 'Root Cause' field to be filled in before a task can be moved from Active to Resolved` |
+| Auto-close parent work items | `Set up rules to automatically close a Feature when all its child User Stories reach the Done state. Explain how the auto-complete parent rule works and any limitations I should know about` |
+| Troubleshoot conflicting rules | `I'm getting a VS1640113 error about duplicate rules with the same conditions. Help me identify which rules in my inherited process conflict and show me how to fix the overlap` |
+| Design a regulated workflow | `Our team needs to meet SOC 2 compliance for state transitions. Design workflow rules that enforce separation of duties — the person who created a work item can't be the one to approve it, and all state changes must be auditable` |
+
+> [!TIP]
+> For the best results, use these prompts in agent mode with the Azure DevOps MCP Server connected. Customize the prompts with your specific work item types, fields, or compliance requirements.
 
 ## Related content
 

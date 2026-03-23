@@ -7,9 +7,7 @@ ms.author: ronai
 author: RoopeshNair
 ms.date: 07/31/2024
 monikerRange: '<= azure-devops'
-ms.custom:
-  - pipelinesresourcesrefresh
-  - sfi-image-nochange
+ms.custom: pipelinesresourcesrefresh, sfi-image-nochange
 ---
 
 # Asset library

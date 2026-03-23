@@ -257,7 +257,11 @@
   - name: Historical graph for agent pools
     href: agents/pool-consumption-report.md
   - name: Microsoft-hosted agents
-    href: agents/hosted.md
+    items:
+    - name: Hosted agents
+      href: agents/hosted.md
+    - name: Deprecation schedule
+      href: agents/hosted-deprecation-schedule.md
   - name: Self-hosted Linux agents
     href: agents/linux-agent.md
   - name: Self-hosted macOS agents
@@ -304,7 +308,10 @@
     - name: Cache NuGet packages
       displayName: caching, cache
       href: artifacts/caching-nuget.md
-    - name: View pipeline history (Classic)
+    - name: Create Classic pipelines
+      href: release/create-classic-pipelines.md
+      displayName: classic pipelines
+    - name: View Classic pipeline history
       displayName: history
       href: release/history.md
     - name: Classic pipelines configuration
@@ -352,6 +359,8 @@
         - name: Create a multistage pipeline
           displayName: multi stage, multi stage pipelines
           href: process/create-multistage-pipeline.md
+        - name: Troubleshoot deployment
+          href: troubleshooting/troubleshoot-azure-web-app-deploy.md
       - name: Azure Resource Manager (ARM) templates
         items:
         - name: Use a Resource Manager template to deploy
@@ -625,8 +634,12 @@
     href: release/variables.md#run-a-release-in-debug-mode
   - name: Troubleshoot ARM service connections
     href: release/azure-rm-endpoint.md
+  - name: Troubleshoot Azure Web App deployment
+    href: troubleshooting/troubleshoot-azure-web-app-deploy.md
   - name: Review logs
     href: troubleshooting/review-logs.md
+  - name: Antivirus exclusions
+    href: troubleshooting/anti-virus-exclusion.md
   - name: Pipeline reports
     items:
     - name: View pipeline reports
@@ -698,7 +711,7 @@
       href: security/overview.md
     - name: Use a script to update project security settings
       displayName: security, project, script
-      href: security/project-security-script.md     
+      href: security/project-security-script.md
     - name: Approach to securing YAML pipelines
       displayName: template permissions, repositories
       href: security/approach.md
@@ -728,7 +741,7 @@
     href: release/approvals/servicenow.md
 - name: Migrate
   items:
-  - name: Migrate Classic pipelines to YAML 
+  - name: Migrate Classic pipelines to YAML
     href: release/from-classic-pipelines.md
   - name: Migrate from Jenkins
     href: migrate/from-jenkins.md

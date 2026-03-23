@@ -12,7 +12,7 @@ ms.custom: sfi-image-nochange
 
 # Deploy to Azure Stack Hub App Service using Azure Pipelines
 
-[!INCLUDE [version-gt-eq-2019](../../includes/version-gt-eq-2019.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 This article walks you through setting up a CI/CD pipeline for deploying an application to app services in an Azure Stack Hub instance using Azure Pipelines.
 

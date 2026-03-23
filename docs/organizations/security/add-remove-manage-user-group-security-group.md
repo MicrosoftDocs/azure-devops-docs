@@ -8,10 +8,8 @@ author: chcomley
 ms.topic: how-to
 monikerRange: '<= azure-devops'
 ms.date: 08/11/2025
-ms.custom:
-  - security-refresh
-  - sfi-image-nochange
---- 
+ms.custom: security-refresh, sfi-image-nochange
+---
 
 # Use security groups to manage users and groups
 

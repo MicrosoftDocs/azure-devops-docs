@@ -13,7 +13,7 @@ ms.date: 01/02/2024
 
 # Burndown and burnup guidance
 
-[!INCLUDE [version-gt-eq-2019](../../includes/version-gt-eq-2019.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 Burndown and burnup charts support project management to visually track work completed over time.
 - Burndown charts begin with the total amount of planned work and then as work is completed graphs the remaining work. With the progression of time, the amount of to-do work decreases. 

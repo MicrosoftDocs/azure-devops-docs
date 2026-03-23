@@ -47,7 +47,7 @@ For organizations that manage their users using Active Directory, people pickers
 
 You can use the **@mention** control to start or continue a discussion in the following areas:
 
-::: moniker range=">= azure-devops-2020"
+::: moniker range="<=azure-devops"
 
 - Work item discussions or any rich-text fields
 - Pull request discussions

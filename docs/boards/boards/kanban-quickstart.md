@@ -10,7 +10,7 @@ ms.author: chcomley
 author: chcomley
 monikerRange: '<= azure-devops'
 ms.update: 90-days
-ms.date: 09/18/2025
+ms.date: 01/12/2026
 ---
 
 # Use your board
@@ -19,10 +19,11 @@ ms.date: 09/18/2025
 
 Boards provide an intuitive, visual way to manage your projects, track work items, and collaborate with your team. If you have a project, you already have a board. This quickstart shows the most common board tasks so you can get productive fast.
 
-What you'll learn:
-- How to add and update work items on your board.
-- How to map your team's workflow to columns and set WIP limits.
-- How to filter, invite teammates, and monitor basic analytics.
+What you learn:
+- How to add and update work items on your board
+- How to customize board columns to match your team's workflow and set WIP limits
+- How to use filters to focus on specific work and collaborate with teammates
+- How to monitor progress with analytics and metrics
 
 Quick steps:
 1. Open your team's board.
@@ -36,6 +37,8 @@ Quick steps:
 ## Prerequisites
 
 [!INCLUDE [temp](../includes/prerequisites-kanban.md)]
+
+[!INCLUDE [note-new-boards-hub-default-images](../includes/note-new-boards-hub-default-images.md)]
 
 [!INCLUDE [enable-mcp-server](../includes/enable-mcp-server.md)]
 
@@ -64,7 +67,7 @@ When you first open your board, there's one column for each [workflow state](../
 
 ## Set WIP limits
 
-Set work in progress (WIP) limits for each workflow stage so that when items exceed the limit, the column count displays as red. Teams use that visual signal to immediately address bottlenecks. For more information, see [Set WIP limits](wip-limits.md).
+Set work in progress (WIP) limits for each workflow stage so that when items exceed the limit, the column count displays as red. Teams can use that visual signal to immediately address bottlenecks. For more information, see [Set WIP limits](wip-limits.md).
 
 :::image type="content" source="media/alm-kb-wip-limits.png" alt-text="Screenshot showing WIP limit reached with red numbering.":::
 
@@ -82,11 +85,11 @@ Update your board frequently to keep the team in sync and to make the value stre
 
 To add a work item, select the plus sign (the add icon), type a title, and press **Enter**. The system saves the work item automatically.
 
-::: moniker range=">= azure-devops-2020"
-:::image type="content" source="media/quickstart/add-new-item-agile-s155.png" alt-text="Screenshot showing adding a new item on a board, new nav.":::
+::: moniker range="<=azure-devops"
+:::image type="content" source="media/quickstart/add-new-item-agile-s155.png" alt-text="Screenshot showing adding a new item on a board.":::
 ::: moniker-end
 
-You can add as many work items as you want using this method. To add or edit details for any work item, select the title. You can also directly modify any field that appears on the card (for example, change **Assigned To**). For a description of each field, see [Create your backlog, Add details, and estimates](../backlogs/create-your-backlog.md#estimates). You can also [add tasks or child items as checklists on your cards](add-task-checklists.md).
+You can add as many work items as you want with this method. To add or edit details for any work item, select the title. You can also directly modify any field that appears on the card (for example, change **Assigned To**). For a description of each field, see [Create your backlog, Add details, and estimates](../backlogs/create-your-backlog.md#estimates). You can also [add tasks or child items as checklists on your cards](add-task-checklists.md).
 
 [!INCLUDE [temp](../includes/note-user-assigned.md)]
 
@@ -97,11 +100,6 @@ You can add as many work items as you want using this method. To add or edit det
 As work progresses, update the status of an item by dragging it to a downstream column.
 
 [!INCLUDE [note-closed-items](../includes/note-closed-items.md)]
-
-::: moniker range="< azure-devops-2022"
-> [!NOTE]   
-> Users assigned Stakeholder access can't use the drag-and-drop feature to update status. 
-::: moniker-end
 
 :::image type="content" source="media/alm-cc-move-card.png" alt-text="Screenshot showing update status of work item with arrow showing movement of card.":::
 
@@ -117,7 +115,7 @@ Apply interactive filters to focus on a subset of work. For example, filter the 
 
 In the following example image, we filtered items assigned to Jamal and Raisa.
 
-::: moniker range=">= azure-devops-2020"
+::: moniker range="<=azure-devops"
 :::image type="content" source="../backlogs/media/filter-boards/filter-kb-filters-chosen-services.png" alt-text="Screenshot showing filtering on assignment field.":::
 ::: moniker-end
 
@@ -125,7 +123,7 @@ In the following example image, we filtered items assigned to Jamal and Raisa.
 
 All members of a project can view and contribute to your board. To invite users to contribute, copy the URL of your board and send it to them.
 
-::: moniker range=">= azure-devops-2020"
+::: moniker range="<=azure-devops"
 :::image type="content" source="media/quickstart/kanban-board-url-s155.png" alt-text="Screenshot showing red square surrounding the URL for the board.":::
 ::: moniker-end
 
@@ -135,7 +133,7 @@ To add users to your project, see [Add users to a project](../../organizations/s
 
 After your team uses the board for several weeks, review key metrics like the Cumulative Flow Diagram (CFD) to optimize your process.
 
-::: moniker range=">= azure-devops-2020"
+::: moniker range="<=azure-devops"
 Choose the **Analytics** tab, and then choose **View full report** for the CFD as shown in the following image. 
 
 :::image type="content" source="media/quickstart/open-analytics.png" alt-text="Screenshot showing highlighted Analytics tab.":::
@@ -153,7 +151,7 @@ The following example shows that on July 3, 101 items were in a *Researching* st
 
 By monitoring these metrics, you can find opportunities to reduce lead time. For more information, see [Configure a cumulative flow chart](../../report/dashboards/cumulative-flow.md). 
 
-You can also add Analytics widgets to your dashboard. The Analytics Service is in preview and provides access to several widgets. For more information, see:
+You can also add Analytics widgets to your dashboard. The Analytics Service provides access to several widgets. For more information, see:
 - [Widgets based on the Analytics Service](../../report/dashboards/analytics-widgets.md)
 - [Add a widget to a dashboard](../../report/dashboards/add-widget-to-dashboard.md)
 - [What is the Analytics Service?](../../report/powerbi/what-is-analytics.md)

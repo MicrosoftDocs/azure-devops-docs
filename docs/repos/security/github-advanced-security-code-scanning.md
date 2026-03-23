@@ -9,9 +9,7 @@ ms.author: laurajiang
 author: laurajjiang
 monikerRange: 'azure-devops'
 ms.date: 02/20/2025
-ms.custom:
-  - cross-service
-  - sfi-image-nochange
+ms.custom: cross-service, sfi-image-nochange
 ---
 
 # Set up code scanning 

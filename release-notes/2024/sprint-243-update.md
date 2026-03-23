@@ -4,6 +4,7 @@ author: ckanyika
 ms.author: glmorale
 ms.date: 8/13/2024
 description: Managed DevOps Pools for Azure DevOps (preview)
+ms.topic: release-notes
 ---
 # Managed DevOps Pools for Azure DevOps (preview)
 

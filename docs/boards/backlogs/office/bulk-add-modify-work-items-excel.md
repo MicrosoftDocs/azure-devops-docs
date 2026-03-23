@@ -18,6 +18,8 @@ ms.date: 08/18/2025
 
 [!INCLUDE [version-lt-eq-azure-devops](../../../includes/version-lt-eq-azure-devops.md)]
 
+[!INCLUDE [deprecate-office-integration](../../includes/deprecate-office-integration.md)]
+
 This article shows how you can save time with Microsoft Excel when you need to add or modify many work items, add links and attachments to multiple work items, and more. You can also use native Excel features to perform actions such as summing a column, copying and pasting rows, or filling down data into cells.
 
 > [!TIP]
@@ -31,7 +33,7 @@ For information about connecting to Excel, see [Connect Azure Boards to an Offic
 
 | Category | Requirements |
 |----------|--------------|
-| **Project access** | - [Project member](../../../organizations/security/add-users-team-project.md). |
+| Project access | - [Project member](../../../organizations/security/add-users-team-project.md). |
 | **Access levels**  | - At least [Stakeholder access](../../../organizations/security/stakeholder-access.md). |
 | **Permissions**    | - Member of the **Contributors** group. <br>- **View work items in this node** and **Edit work items in this node** permissions set to **Allow**. By default, the **Contributors** group has this permission. For more information, see [Set permissions and access for work tracking](../../../organizations/security/set-permissions-access-work-tracking.md). |
 | **Tools**          | - Microsoft Excel 2010 or later, including Microsoft Office Excel 365. <br>- [Azure DevOps Office Integration 2019](https://visualstudio.microsoft.com/downloads/#azure-devops-office-integration-2019). To download, scroll to **All Downloads**, select **Other Tools, Frameworks, and Redistributables**, and then select **Download** next to Azure DevOps Office Integration 2019. Alternatively, you can get the plug-in by installing one of the latest editions of Visual Studio. The plug-in supports connection to Azure Boards and Azure DevOps Server from Excel. <br>- [Visual Studio 2015.1 or later](https://visualstudio.microsoft.com/downloads/) or [Team Foundation Server Office Integration 2015 Update 2 or later](https://visualstudio.microsoft.com/downloads/). <br>- To use the [Select User](#select-user-accounts) feature, download the free version of Visual Studio Community. This feature helps avoid data validation errors caused by misspelled user names and is useful when assigning user names from a large group of user accounts. |
@@ -41,7 +43,7 @@ For information about connecting to Excel, see [Connect Azure Boards to an Offic
 
 | Category | Requirements |
 |----------|--------------|
-| **Project access** | - [Project member](../../../organizations/security/add-users-team-project.md). |
+| Project access | - [Project member](../../../organizations/security/add-users-team-project.md). |
 | **Access levels**  | - At least [Stakeholder access](../../../organizations/security/stakeholder-access.md). |
 | **Permissions**    | - Member of the **Contributors** group. <br>- **View work items in this node** and **Edit work items in this node** permissions set to **Allow**. By default, the **Contributors** group has this permission. For more information, see [Set permissions and access for work tracking](../../../organizations/security/set-permissions-access-work-tracking.md). |
 | **Tools**          | - Microsoft Excel 2010 or later, including Microsoft Office Excel 365. <br>- [Azure DevOps Office Integration 2019](https://visualstudio.microsoft.com/downloads/#azure-devops-office-integration-2019). To download, scroll to **All Downloads**, select **Other Tools, Frameworks, and Redistributables**, and then select **Download** next to Azure DevOps Office Integration 2019. Alternatively, you can get the plug-in by installing one of the latest editions of Visual Studio. The plug-in supports connection to Azure Boards and Azure DevOps Server from Excel. <br>- To use the [Select User](#select-user-accounts) feature, install [Visual Studio 2015.1 or later](https://visualstudio.microsoft.com/downloads/) or [Azure DevOps Office Integration 2019 or later](https://visualstudio.microsoft.com/downloads/#azure-devops-office-integration-2019). You can download the free version of Visual Studio Community. This feature helps avoid data validation errors caused by misspelled user names and is useful when assigning user names from a large group of user accounts. |
@@ -176,16 +178,6 @@ The following tasks aren't supported when you work in an Excel worksheet:
 - Link to a remote work item
 
 ::: moniker-end  
-::: moniker range="azure-devops-2020" 
-
-- Delete work items
-- Change the work item type of an existing work item
-- Move work items to another project
-- Import or update test case steps or other test artifacts
-- Add work items in any other State than the new State
-- Add to a work item discussion thread
-
-::: moniker-end
 
 ## Import work items as a flat list 
 

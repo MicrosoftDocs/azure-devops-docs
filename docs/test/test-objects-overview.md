@@ -5,7 +5,7 @@ description: Understand the different test objects and terms that support manual
 ms.service: azure-devops-test-plans
 ms.custom: UpdateFrequency3
 ms.topic: overview
-ms.author: jeom
+ms.author: pliaros
 author: raviLiftr
 monikerRange: '<= azure-devops'
 ms.date: 09/15/2021
@@ -58,7 +58,7 @@ The following table describes the work item types used to support the Azure DevO
       Group test cases into separate testing scenarios within a single test plan. Grouping test cases makes it easier to see which scenarios are complete. When creating a test suite, you can specify one of three types: 
       - **Static test suites**: Used to group test cases under a single test suite. 
       - [**Requirement-based suites**](create-a-test-plan.md#backlog): Select one or more requirements from a query which are then linked to the test suite. 
-      - [**Query-based suites**](reference-qa.yml#query-based-suites): Select one or more test cases which are then linked to the test suite.    
+      - [**Query-based suites**](reference-qa.yml#what-s-the-difference-between-static--requirement-based--and-query-based-test-suites): Select one or more test cases which are then linked to the test suite.    
       > [!TIP]
       > The [**Test Suite Type**](../boards/queries/build-test-integration.md) read-only field indicates the type of suite selected. To add test suites, see [Create test plans and test suites](create-a-test-plan.md). 
    :::column-end:::
@@ -343,7 +343,7 @@ For more information about setting these permissions, see [Set permissions and a
 
 As with other work items, you can bulk edit test-specific work items. For more information, see the following articles:  
 
-::: moniker range=">= azure-devops-2020"
+::: moniker range="<=azure-devops"
 - [Bulk modify work items](../boards/backlogs/bulk-modify-work-items.md). 
 - [Navigate Test Plans, Test suites context menu options](navigate-test-plans.md#test-suites-context-menu-options)
 ::: moniker-end
@@ -398,7 +398,7 @@ The following table describes several terms used in manual and exploratory testi
      **Test points**
    :::column-end:::
    :::column span="3":::
-      Test cases by themselves are not executable. When you add a test case to a test suite then test point(s) are generated. A test point is a unique combination of test case, test suite, configuration, and tester. For example, if you have a test case named Test login functionality and you add two configurations for the *Edge* and *Chrome* browsers, you have two test points. You can execute or run each of these test points. On execution, test results are generated. Through the test results view, or execution history, you can see all executions of a test point. The latest execution for the test point is what you see in the Execute tab.
+      [!INCLUDE [test-point-definition](includes/test-point-definition.md)]
    :::column-end:::
 :::row-end:::
 :::row:::

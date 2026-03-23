@@ -21,7 +21,7 @@ Widgets are annotated as follows:
 ---
 :::row:::
    :::column span="1":::
-      ::: moniker range=">= azure-devops-2020"
+      ::: moniker range="<=azure-devops"
       **Boards**
       - [Assigned to Me](../dashboards/widget-catalog.md#assigned-to-me-widget) (User)
       - [Burndown](../dashboards/widget-catalog.md#burndown-analytics-widget) (Analytics, Project, Teams)

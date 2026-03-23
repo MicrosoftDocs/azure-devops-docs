@@ -8,12 +8,12 @@ author: chcomley
 ms.topic: overview
 monikerRange: "<=azure-devops"
 ai-usage: ai-assisted
-ms.date: 10/27/2025
+ms.date: 02/17/2026
 ---
 
 # What is Analytics?
 
-[!INCLUDE [version-gt-eq-2019](../../includes/version-gt-eq-2019.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 Analytics is the reporting platform for Azure DevOps, replacing the previous platform based on SQL Server Reporting Services. Built specifically for reporting, Analytics is optimized for fast read-access and server-based aggregations. Use it to answer quantitative questions about the past or present state of your projects and gain actionable insights from your development data.
 
@@ -27,7 +27,7 @@ Analytics transforms raw Azure DevOps data into meaningful insights that help te
 
 Analytics provides comprehensive insights about your projects through multiple access methods: 
 
-::: moniker range=">= azure-devops-2020"
+::: moniker range="<=azure-devops"
 
 > [!div class="checklist"]  
 > - **Analytics widgets** that you can add to your dashboards for immediate insights
@@ -51,6 +51,8 @@ Analytics offers several advantages over legacy reporting solutions:
 
 [!INCLUDE [temp](../includes/analytics-preview.md)]
 
+[!INCLUDE [ai-assistance-callout](../../includes/ai-assistance-callout.md)]
+
 ## Data available in Analytics
 
 Analytics is generally available for Azure DevOps Services and Azure DevOps Server 2020 and later versions. It is in preview for Azure DevOps Server 2019. The service provides a comprehensive data model over Azure DevOps functionality. 
@@ -71,12 +73,6 @@ Analytics covers the following Azure DevOps feature areas:
 ::: moniker range="azure-devops"
 
 Analytics automatically enables for all Azure DevOps Services projects and populates itself with all available Azure DevOps data. Once populated, it continuously updates itself as data changes occur. For more information, read [Data available in Analytics](./data-available-in-analytics.md) and [Performance and latency](performance-latency.md).
-
-::: moniker-end
-
-::: moniker range="azure-devops-2020"
-
-Analytics enables for all projects on new project collections and automatically populates itself with all available Azure DevOps data. Once populated, it continuously updates itself as data changes occur. For more information, read [Data available in Analytics](./data-available-in-analytics.md) and [Performance and latency](performance-latency.md).
 
 ::: moniker-end
 
@@ -108,7 +104,7 @@ Check out [Add an Analytics widget to a dashboard](../dashboards/add-widget-to-d
 
 ::: moniker-end
 
-::: moniker range=">= azure-devops-2020"
+::: moniker range="<=azure-devops"
 
 ## In-context reports and rollup columns 
 

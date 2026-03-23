@@ -9,13 +9,13 @@ ms.author: chcomley
 ms.custom: powerbisample, engagement-fy23
 author: chcomley
 ms.topic: sample
-monikerRange: '>= azure-devops-2020'  
+monikerRange: "<=azure-devops"
 ms.date: 01/25/2023
 ---
 
 # Pass rate trend of a test sample report 
 
-[!INCLUDE [version-gt-eq-2020](../../includes/version-gt-eq-2020.md)] 
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)] 
 
 Pass rate trend reports provide insight into average time it takes for a particular test to execute during a pipeline run.  
 
@@ -23,13 +23,11 @@ An example is shown in the following image.
 
 :::image type="content" source="media/pipeline-test-reports/test-pass-rate-trend-stack-column-line-chart-report.png" alt-text="Screenshot of Pass Rate Trend report."::: 
 
-
 [!INCLUDE [temp](includes/preview-note.md)]
 
 [!INCLUDE [prerequisites-simple](../includes/analytics-prerequisites-simple.md)]
 
 [!INCLUDE [temp](includes/sample-required-reading.md)]
-
 
 ## Sample queries
 
@@ -94,7 +92,6 @@ $apply=filter(
 ***
 
 ## Substitution strings and query breakdown
-
 
 [!INCLUDE [temp](includes/sample-query-substitutions.md)]
  
@@ -278,7 +275,6 @@ The following table describes each part of the query.
    :::column-end:::
 :::row-end:::
 
-
  
 [!INCLUDE [temp](includes/rename-query.md)]
 
@@ -296,7 +292,6 @@ Expand the `Date` column to show the expanded entity `CompletedOn.Date`.  Expand
 For more information about changing the data type, see  [Transform Analytics data to generate Power BI reports, Transform a column data type](transform-analytics-data-report-generation.md#transform-data-type). 
 
 [!INCLUDE [temp](includes/close-apply.md)]
-
 
 ## Create the line and stack column chart report
  

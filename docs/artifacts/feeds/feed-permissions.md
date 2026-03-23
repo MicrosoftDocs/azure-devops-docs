@@ -5,13 +5,13 @@ ms.assetid: 70313C3C-2E52-4FFC-94C2-41F1E37C9D26
 ms.service: azure-devops-artifacts
 ms.topic: overview
 ms.date: 08/19/2025
-monikerRange: '>= azure-devops-2020'
+monikerRange: "<=azure-devops"
 "recommendations": "true"
 ---
 
 # Manage permissions
 
-[!INCLUDE [version-gt-eq-2020](../../includes/version-gt-eq-2020.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 Azure Artifacts enables developers to efficiently manage dependencies by hosting various types of packages in a single feed. With flexible permission settings, you can fine-tune access to your packages, control who can create or administer feeds, and manage how packages are accessed from Azure Pipelines.
 
@@ -61,7 +61,7 @@ From the Azure Artifacts feed settings, you can manage various aspects of your f
 
 ::: moniker-end
 
-:::moniker range="<= azure-devops-2022"
+:::moniker range="=azure-devops-2022"
 
 > [!NOTE]
 > By default, the *Project Collection Build Service* is automatically assigned the **Feed and Upstream Reader (Collaborator)** role for newly created collection-scoped feeds.
@@ -160,17 +160,6 @@ See the examples below to learn how to authenticate and publish packages to your
 | Maven              | [Publish Maven artifacts with Azure Pipelines](../../pipelines/artifacts/publish-maven-artifacts.md) |
 | Python             | [Publish Python packages with Azure Pipelines](../../pipelines/artifacts/pypi.md) |
 | Cargo              | [Publish Cargo packages with Azure Pipelines](../../pipelines/artifacts/cargo-pipelines.md) |
-
-::: moniker-end
-
-::: moniker range="=azure-devops-2020"
-
-| Package Type       | Article                          |
-|--------------------|----------------------------------|
-| NuGet              | [Publish NuGet packages with Azure Pipelines](../../pipelines/artifacts/nuget.md) |
-| Npm                | [Publish npm packages with Azure Pipelines](../../pipelines/artifacts/npm.md) |
-| Maven              | [Publish Maven artifacts with Azure Pipelines](../../pipelines/artifacts/publish-maven-artifacts.md) |
-| Python             | [Publish Python packages with Azure Pipelines](../../pipelines/artifacts/pypi.md) |
 
 ::: moniker-end
 

@@ -555,7 +555,7 @@ GitHub link types are system-defined and link work items to GitHub objects as sh
 
 ::: moniker-end
 
-::: moniker range=">= azure-devops-2020"
+::: moniker range="<=azure-devops"
 
 :::image type="content" source="media/link-type-reference/linkscontrol-github-link-types.png" alt-text="Screenshot that shows a conceptual diagram of GitHub link types.":::
 
@@ -592,7 +592,7 @@ The following table describes the GitHub link types you can choose when adding a
    :::column-end:::
 :::row-end:::
 ::: moniker-end
-::: moniker range=">= azure-devops-2020"
+::: moniker range="<=azure-devops"
 :::row:::
    :::column span="1":::
       GitHub Issue

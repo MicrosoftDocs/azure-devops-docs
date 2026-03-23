@@ -5,7 +5,7 @@ ms.topic: concept-article
 ms.custom: copilot-scenario-highlight
 ms.author: sdanie
 author: steved0x
-ms.date: 09/04/2025
+ms.date: 01/22/2026
 ms.update-cycle: 180-days
 zone_pivot_groups: pipelines-version
 monikerRange: '<= azure-devops'
@@ -39,20 +39,6 @@ You can combine scheduled and event-based triggers in your pipelines, for exampl
 > To delete UI scheduled triggers from a YAML pipeline, see [UI settings override YAML scheduled triggers](../troubleshooting/troubleshoot-triggers.md#ui-settings-override-yaml-scheduled-triggers).
 
 Scheduled triggers configure a pipeline to run on a schedule defined using [cron syntax](#cron-syntax).
-
-::: moniker range="<azure-devops-2022"
-
-```yaml
-schedules:
-- cron: string # cron syntax defining a schedule
-  displayName: string # friendly name given to a specific schedule
-  branches:
-    include: [ string ] # which branches the schedule applies to
-    exclude: [ string ] # which branches to exclude from the schedule
-  always: boolean # whether to always run the pipeline or only if there have been source code or pipeline settings changes since the last successful scheduled run. The default is false.
-```
-
-::: moniker-end
 
 ::: moniker range="> azure-devops-2022"
 
@@ -201,11 +187,15 @@ For more examples, see [schedules.cron examples](/azure/devops/pipelines/yaml-sc
 
 :::zone pivot="pipelines-classic"
 
+To create or edit a schedule, edit your pipeline and select the **Triggers** tab. To create a new schedule, select **+ Add** in the **Scheduled** section. To edit an existing schedule, select the schedule to edit.
+
+:::image type="content" source="media/triggers/create-scheduled-trigger.png" alt-text="Screenshot of creating a classic scheduled pipeline.":::
+
 Select the days and times when you want to run the build using the classic editor.
 
-If your repository is Azure Repos Git, GitHub, or Other Git, then you can also specify branches to include and exclude. If you want to use wildcard characters, then type the branch specification (for example, `features/modules/*`) and then press Enter.
-
 ![Scheduled trigger UTC + 5:30 time zone](media/triggers/scheduled-trigger-git-india.png)
+
+If your repository is Azure Repos Git, GitHub, or Other Git, then you can also specify branches to include and exclude. If you want to use wildcard characters, then type the branch specification (for example, `features/modules/*`) and then press Enter.
 
 :::zone-end 
 
@@ -482,7 +472,7 @@ In the second schedule, **M-F 3:00 AM (UTC - 5) NC daily build**, the cron synta
 > The UTC time zones in YAML scheduled triggers don't account for daylight saving time.
 
 > [!TIP]
-> When using 3 letter days of the week and wanting a span of multiple days through Sun, Sun should be considered the first day of the week e.g. For a schedule of midnight EST, Thursday to Sunday, the cron syntax is `0 5 * * Sun,Thu-Sat`.
+> If you use three letter days of the week and want a span of multiple days that includes Sunday, `Sun` (for Sunday) should be considered the first day of the week e.g. For a schedule of midnight EST, Thursday to Sunday, the cron syntax is `0 5 * * Sun,Thu-Sat`.
 
 ### Example: Nightly build with different frequencies
 
@@ -559,7 +549,7 @@ For more information, see [pr definition](/azure/devops/pipelines/yaml-schema/pr
 
 * There's a limit on the number of runs you can schedule for a pipeline. Read more about [limits](#limits).
 
-* If there are no changes to your code, they Azure Pipelines may not start new runs. Learn how to [override](#always) this behavior.
+* If there are no changes to your code, then Azure Pipelines may not start new runs. Learn how to [override](#always) this behavior.
 
 ### My YAML schedules were working fine. But, they stopped working now. How do I debug this?
 
@@ -604,5 +594,4 @@ schedules:
 ```
 
 For more information, see [Branch considerations for scheduled triggers](#branch-considerations-for-scheduled-triggers).
-
 

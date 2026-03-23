@@ -384,7 +384,7 @@ When you register an agent, select from the following authentication types. The 
 
 [!INCLUDE [agent-setup-authentication-type](./includes/agent-setup-authentication.md)]
 
-:::moniker range="<= azure-devops-2022"
+:::moniker range="=azure-devops-2022"
 
 Additionally, Windows agents have the following two authentication options on Azure DevOps Server.
 

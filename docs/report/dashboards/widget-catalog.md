@@ -9,13 +9,13 @@ ms.topic: overview
 ms.author: chcomley
 author: chcomley
 monikerRange: '<= azure-devops'
-ms.date: 03/12/2025
+ms.date: 02/17/2026
 #customer intent: As an administrator or team member, I want to understand the widgets I can use on a team or project dashboard in Azure DevOps.
 ---
 
 # Out Of Box widget catalog
 
-[!INCLUDE [version-gt-eq-2019](../../includes/version-gt-eq-2019.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 Widgets display information and charts on dashboards. Many widgets are configurable or scoped to a team or the logged-in user account. They display information from one or more data stores or charts maintained within the system. You can add a widget to a dashboard or copy a widget from one dashboard to another. For more information, see [Add a widget to a dashboard](add-widget-to-dashboard.md).
 
@@ -24,6 +24,8 @@ For example, you can add the **Build History** widget from the dashboard's **Add
 :::image type="content" source="media/widget-build-history-chart.png" alt-text="Screenshot shows the Build History Widget which includes an icon and description.":::
 
 This article provides a quick reference of all out-of-box (OOB) widgets that you can add to your dashboard. In addition to these widgets, you might find more widgets in the [Marketplace](#marketplace) or create your own.
+
+[!INCLUDE [ai-assistance-callout](../../includes/ai-assistance-callout.md)]
 
 ## Supported OOB widgets
 
@@ -207,7 +209,7 @@ In addition to the widgets listed here, you can add a work item query chart to y
       To create a shared query, see [Use the query editor to list and manage queries](../../boards/queries/using-queries.md). 
    :::column-end:::
 :::row-end:::  
-::: moniker range=">= azure-devops-2020"
+::: moniker range="<=azure-devops"
 :::row:::
    :::column span="1":::
       ### Sprint Burndown (Analytics)  
@@ -222,7 +224,7 @@ In addition to the widgets listed here, you can add a work item query chart to y
    :::column-end:::
 :::row-end:::
 ::: moniker-end
-::: moniker range=">= azure-devops-2020"
+::: moniker range="<=azure-devops"
 :::row:::
    :::column span="1":::
       ### Sprint Burndown (Legacy)

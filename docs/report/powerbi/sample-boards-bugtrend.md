@@ -13,7 +13,7 @@ ms.date: 12/08/2022
 
 # Bug trends sample report 
 
-[!INCLUDE [version-gt-eq-2019](../../includes/version-gt-eq-2019.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 Bug trend reports are useful to see how well a team is closing active bugs. This article shows you how to display the number of bugs in a given state over a period of time. The following image shows an example of a bug trends report.  
 

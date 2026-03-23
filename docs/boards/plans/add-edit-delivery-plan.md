@@ -6,10 +6,10 @@ ms.service: azure-devops-boards
 ms.author: chcomley
 author: chcomley
 ai-usage: ai-assisted
-ms.custom: cross-project  
+ms.custom: cross-project, copilot-scenario-highlight
 ms.topic: how-to
 monikerRange: '>= azure-devops-2022'
-ms.date: 10/27/2025
+ms.date: 02/28/2026
 ---
 
 # Add or edit a Delivery Plan 
@@ -18,6 +18,8 @@ ms.date: 10/27/2025
 
 Delivery Plans provide a highly interactive calendar view of multiple team backlogs. This article shows how to add and edit a plan. For the use cases, benefits, and interactions you can perform, see [Review team Delivery Plans](review-team-plans.md).
 
+[!INCLUDE [ai-assistance-mcp-server-tip](../../includes/ai-assistance-mcp-server-tip.md)]
+
 > [!NOTE]   
 > This article describes how to add or edit Delivery Plans 2.0, which is available for Azure DevOps Services and Azure DevOps Server 2022 and later versions. For information on the Delivery Plans Marketplace extension, which supports Azure DevOps Server 2020 and earlier versions, see [Delivery Plans 1.0](../extensions/delivery-plans.md).
 
@@ -25,8 +27,8 @@ Delivery Plans provide a highly interactive calendar view of multiple team backl
 
 | Category | Requirements |
 |--------------|-------------|
-| **Permissions** | - To add or edit a Delivery Plan: Member of the **Contributors** group for the project where you add the plan. <br> - **Manage delivery plans** permission set to **Allow** for the **Contributors** group in **Project settings** > **Permissions**. <br> - To add team backlogs to a plan: **View** permission for those projects. <br> - To view a Delivery Plan: Member of the **Project Collection Valid Users** group. Users granted **Stakeholder** access for a private project can view plans. Users granted **Stakeholder** access for a public project can add and view plans. <br> - To manage permissions, edit, or delete a plan: Creator of the plan, or member of the **Project Administrators**, **Project Collection Administrators** group, or explicit permission granted through the plan's Security dialog. For more information, see [Manage Delivery Plan permissions](../../organizations/security/set-permissions-access-work-tracking.md). |
-| **Configuration** | - [Teams and team backlogs](../../organizations/settings/add-teams.md) set up. <br> - [Team product or portfolio backlogs](../../organizations/settings/select-backlog-navigation-levels.md) enabled. <br> - [Area paths and team area paths](../../organizations/settings/set-area-paths.md) assigned. <br> - [Iteration (sprint) paths and team iterations](../../organizations/settings/set-iteration-paths-sprints.md) assigned. <br> - **Iteration Paths**, **Start**, and **End Dates** assigned, otherwise they don't appear on the plan. <br> - **Iteration Paths** selected for the team whose backlogs you select, otherwise work items associated with those iteration paths don't appear on the plan. <br> - [Product backlog items](../backlogs/create-your-backlog.md) or [portfolio backlogs](../backlogs/define-features-epics.md) defined and assigned to either a **Start Date**, **End Date**, or an **Iteration Path**. |
+| Permissions | - To add or edit a Delivery Plan: Member of the **Contributors** group for the project where you add the plan. <br> - **Manage delivery plans** permission set to **Allow** for the **Contributors** group in **Project settings** > **Permissions**. <br> - To add team backlogs to a plan: **View** permission for those projects. <br> - To view a Delivery Plan: Member of the **Project Collection Valid Users** group. Users granted **Stakeholder** access for a private project can view plans. Users granted **Stakeholder** access for a public project can add and view plans. <br> - To manage permissions, edit, or delete a plan: Creator of the plan, or member of the **Project Administrators**, **Project Collection Administrators** group, or explicit permission granted through the plan's Security dialog. For more information, see [Manage Delivery Plan permissions](../../organizations/security/set-permissions-access-work-tracking.md). |
+| Configuration | - [Teams and team backlogs](../../organizations/settings/add-teams.md) set up. <br> - [Team product or portfolio backlogs](../../organizations/settings/select-backlog-navigation-levels.md) enabled. <br> - [Area paths and team area paths](../../organizations/settings/set-area-paths.md) assigned. <br> - [Iteration (sprint) paths and team iterations](../../organizations/settings/set-iteration-paths-sprints.md) assigned. <br> - **Iteration Paths**, **Start**, and **End Dates** assigned, otherwise they don't appear on the plan. <br> - **Iteration Paths** selected for the team whose backlogs you select, otherwise work items associated with those iteration paths don't appear on the plan. <br> - [Product backlog items](../backlogs/create-your-backlog.md) or [portfolio backlogs](../backlogs/define-features-epics.md) defined and assigned to either a **Start Date**, **End Date**, or an **Iteration Path**. |
 
 <a id="teams"></a>
 
@@ -186,6 +188,22 @@ Before you set tag colors, [add tags to backlog items](../queries/add-tags-to-wo
 
    > [!TIP]
    > If tags don't display on the cards, select **Fields** and make sure you checked **Show Tags**. 
+
+<a id="use-ai-assistance"></a>
+
+## Use AI to manage delivery plan work items
+
+If you have the [Azure Boards MCP Server](../../mcp-server/mcp-server-overview.md) connected to your AI agent in agent mode, you can use natural language prompts to query and manage the work items that appear in your delivery plans.
+
+| Task | Example prompt |
+|------|----------------|
+| View scheduled work | `Show me all work items assigned to Sprint 5 for the Web team` |
+| Check cross-team progress | `List all features in progress across all teams in the <Contoso> project` |
+| Reschedule work items | `Move user story #1234 from Sprint 3 to Sprint 4` |
+| Find unscheduled items | `List all user stories that don't have an iteration path assigned` |
+
+> [!NOTE]
+> Agent mode and the MCP Server use natural language, so you can adjust these prompts or ask follow-up questions to refine the results.
 
 ## Related content  
 <a id="plans-rest-api">  </a>

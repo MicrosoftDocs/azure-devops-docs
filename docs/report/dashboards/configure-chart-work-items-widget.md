@@ -31,7 +31,7 @@ The only task you can accomplish from the **Chart for Work Items** widget that y
 
 ::: moniker-end
 
-::: moniker range=">= azure-devops-2020"
+::: moniker range="<=azure-devops"
 
 | Category | Requirements |
 |-------------|-------------|

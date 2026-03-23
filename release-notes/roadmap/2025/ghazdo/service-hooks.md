@@ -3,7 +3,7 @@ title: Advanced Security alert events added to Azure DevOps service hooks framew
 author: laurajjiang
 ms.author: laurajiang
 ms.date: 02/06/2025
-ms.topic: article
+ms.topic: whats-new
 ms.service: azure-devops
 ms.subservice: azure-devops-release-notes
 description: Advanced Security alert events added to Azure DevOps service hooks framework

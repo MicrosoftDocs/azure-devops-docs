@@ -7,7 +7,7 @@ ms.assetid: 7E769466-2165-4223-96FA-80A687287EFC
 ms.author: chcomley
 author: chcomley
 ms.topic: overview
-ms.date: 04/24/2025
+ms.date: 02/17/2026
 monikerRange: '<= azure-devops'
 #customer intent: As a developer, I want to use source or version control in Azure DevOps, so I can support collaboration on code and track changes.
 ---
@@ -21,6 +21,8 @@ A source control system (also called a *version control* system) allows develope
 Azure DevOps supports two types of source control: Git (distributed) and Team Foundation Version Control (TFVC). TFVC is a centralized, client-server system. In both Git and TFVC, you can check in files and organize files in folders, branches, and repositories. You can manage your repositories, branches, and other code development operations from **Azure Repos**.
 
 :::image type="content" source="media/code-git-hub.png" border="false" alt-text="Screenshot that shows Azure Repos in Azure DevOps with code files stored in Git for version control." lightbox="media/code-git-hub.png":::
+
+[!INCLUDE [ai-assistance-callout](../includes/ai-assistance-callout.md)]
 
 ## Compare Git and TFVC
 

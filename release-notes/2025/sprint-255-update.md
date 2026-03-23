@@ -4,6 +4,7 @@ author: ckanyika
 ms.author: glmorale
 ms.date: 4/23/2025
 description: Expanded security scanning and GitHub pull request integration with Azure Boards
+ms.topic: release-notes
 ---
 # Expanded security scanning and state transition support for GitHub pull requests
 

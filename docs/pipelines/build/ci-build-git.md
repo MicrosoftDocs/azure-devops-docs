@@ -25,7 +25,7 @@ Using Azure Pipelines, you can create triggers to build your project on every ne
 When working with Git, it is a common practice to create temporary branches from the main branch to facilitate a streamlined workflow. These branches, often referred to as topic or feature branches, serve the purpose of isolating your work. Within this workflow, you create a branch dedicated to a specific feature or bug fix, and once completed, you merge the code back into the main branch before deleting the topic branch.
 
 #### [YAML](#tab/yaml/)
-::: moniker range=">=azure-devops-2020"
+::: moniker range="<=azure-devops"
 
 If no trigger is explicitly specified in your YAML file, any changes made to any branch will trigger a run. To add triggers for both the *main* branch and any *feature/* branches, include the following snippet in your YAML file. This will ensure that any modifications made to these branches will automatically trigger a pipeline run.
 
@@ -64,7 +64,7 @@ The main branch is usually responsible for generating deployable artifacts, such
 
 Edit the *azure-pipelines.yml* file in your *main* branch, and add a condition to your desired task. For example, the following snippet adds a condition to the [publish pipeline artifacts](/azure/devops/pipelines/tasks/reference/publish-pipeline-artifact-v1) task.
 
-::: moniker range=">=azure-devops-2020"
+::: moniker range="<=azure-devops"
 
 ```yaml
 - task: PublishPipelineArtifact@1
@@ -106,7 +106,7 @@ To ensure branch protection, you can utilize policies that mandate successful bu
 
 #### [YAML](#tab/yaml/)
 
-::: moniker range=">=azure-devops-2020"
+::: moniker range="<=azure-devops"
 
 If you don't explicitly define **pr** triggers in your YAML file, pull request builds will be enabled by default for all branches. However, you have the flexibility to specify the target branches for your pull request builds. As an example, if you want to run the build exclusively for pull requests targeting the *main* branch and branches starting with *feature/*, you can specify the following configuration:
 
@@ -123,7 +123,6 @@ pr:
 YAML builds are not yet available on TFS.
 
 ::: moniker-end
-
 
 #### [Classic](#tab/classic/)
 
@@ -156,8 +155,6 @@ YAML builds are not yet available on TFS.
 1. Select **Save** to create and enable the policy. Select **Save changes** at the top left of your screen to save your changes.
 
 :::image type="content" source="media/add-build-policy.png" alt-text="A screenshot showing how to add a new build policy.":::
-
-
 
 1. To test the policy navigate to **Repos** > **Pull requests** in the Azure DevOps portal.
 

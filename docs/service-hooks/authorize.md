@@ -14,7 +14,7 @@ ms.date: 06/24/2025
 
 #  Manage authorization of services to access Azure DevOps 
 
-[!INCLUDE [Azure DevOps Services | Azure DevOps Server 2022 | Azure DevOps Server 2020](../includes/version-gt-eq-2020.md)]
+[!INCLUDE [Azure DevOps Services | Azure DevOps Server 2022 | Azure DevOps Server 2020](../includes/version-lt-eq-azure-devops.md)]
 
 When you integrate a service with Azure DevOps, you can grant the service access to your Azure DevOps resources, such as work items, source code, and build results.
 

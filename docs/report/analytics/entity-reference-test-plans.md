@@ -6,14 +6,13 @@ ms.subservice: azure-devops-analytics
 ms.author: chcomley
 author: chcomley
 ms.topic: reference
-monikerRange: '>= azure-devops-2020'
+monikerRange: "<=azure-devops"
 ms.date: 11/07/2022
 ---
 
-
 # Metadata reference for Test Plans Analytics
 
-[!INCLUDE [version-gt-eq-2019](../../includes/version-gt-eq-2019.md)] 
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)] 
 
 The Analytics service collects all data for all Azure DevOps test activities. Azure Test Plans supports the definition and execution of planned and exploratory tests. And with Azure Pipelines, you can also execute automated tests with Continuous Integration/Continuous Deployment (CI/CD) workflows. 
 

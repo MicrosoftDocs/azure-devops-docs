@@ -9,9 +9,7 @@ monikerRange: '<= azure-devops'
 ms.author: chcomley
 author: chcomley
 ms.date: 03/25/2025
-ms.custom:
-  - engagement-fy23
-  - sfi-image-nochange
+ms.custom: engagement-fy23, sfi-image-nochange
 ---
 
 # Package and publish extensions

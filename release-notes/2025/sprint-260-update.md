@@ -4,6 +4,7 @@ author: gloridelmorales
 ms.author: glmorale
 ms.date: 8/11/2025
 description: Azure Boards and Azure Pipelines integration with GitHub Enterprise Cloud
+ms.topic: release-notes
 ---
 
 # Azure Boards and Azure Pipelines integration with GitHub Enterprise Cloud

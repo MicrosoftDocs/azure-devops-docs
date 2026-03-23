@@ -64,7 +64,7 @@ ms.custom: sfi-image-nochange
 
 ::: moniker-end
 
-::: moniker range="azure-devops-2020 || azure-devops-2022"
+::: moniker range="=azure-devops-2022"
 
 1. Sign in to your Azure DevOps collection, and then navigate to your project.
 

@@ -2,7 +2,7 @@
 title: Forecast your product backlog in Azure Boards
 titleSuffix: Azure Boards   
 description: Learn how to determine how much work your team can deliver across several sprints by forecasting in Azure Boards. 
-ms.custom: boards-sprints    
+ms.custom: boards-sprints, copilot-scenario-highlight
 ms.service: azure-devops-boards
 ms.assetid: C46ED4AA-4B8F-4D5D-BC51-52F6D67BF8C6
 ms.author: chcomley
@@ -10,7 +10,7 @@ author: chcomley
 ms.topic: tutorial
 monikerRange: '<= azure-devops'
 ai-usage: ai-assisted
-ms.date: 10/27/2025
+ms.date: 02/28/2026
 ---
 
 # Forecast your product backlog
@@ -24,6 +24,8 @@ The forecast tool helps teams answer critical planning questions:
 - **Release planning**: When can we expect to complete all items in our backlog?
 - **Resource planning**: What velocity do we need to meet our target delivery dates?
 - **Scope management**: Which features should we prioritize for upcoming releases?
+
+[!INCLUDE [ai-assistance-mcp-server-tip](../../includes/ai-assistance-mcp-server-tip.md)]
 
 Use this article to learn: 
 
@@ -41,9 +43,9 @@ Use this article to learn:
 
 | Category | Requirements |
 |--------------|-------------|
-| **Project membership** | [Project member](../../organizations/projects/create-project.md). |
-| **Permissions** | Member of the **Contributors** security group. |
-| **Access levels** | At least [**Basic** access](../../organizations/security/access-levels.md). |
+| Project membership | [Project member](../../organizations/projects/create-project.md). |
+| Permissions | Member of the **Contributors** security group. |
+| Access levels | At least [**Basic** access](../../organizations/security/access-levels.md). |
 
 > [!NOTE]  
 > Users with **Stakeholder** access for a public project have full access to backlog and board features just like users with **Basic** access. For more information, see [Stakeholder access quick reference](../../organizations/security/stakeholder-access.md).
@@ -281,6 +283,28 @@ When team composition changes during a project:
 
 > [!div class="nextstepaction"]
 > [Assign work to a sprint](assign-work-sprint.md)
+
+<a id="use-ai-assistance"></a>
+
+## Use AI for sprint forecasting
+
+If you have the [Azure Boards MCP Server](../../mcp-server/mcp-server-overview.md) connected to your AI agent in agent mode, you can use natural language prompts to review backlog estimates and velocity data that support forecasting.
+
+| Task | Example prompt |
+|------|----------------|
+| Review backlog estimates | `List all user stories on the <Contoso Team> backlog that have no story points assigned` |
+| Backlog size | `What is the total story points remaining in the product backlog for <Contoso Team>?` |
+| Sprint completion history | `How many story points did <Contoso Team> complete in each of the last 5 sprints?` |
+| Estimate sprint count | `Based on a velocity of 25 story points, how many sprints to complete the remaining backlog for <Contoso Team>?` |
+| Forecast a release date | `Using the average velocity from the last 5 sprints, estimate when <Contoso Team> will complete all priority-1 backlog items` |
+| Identify estimation gaps | `Which user stories in the <Contoso Team> backlog have story points that differ significantly from similar-sized stories?` |
+| Compare velocity trends | `Show a sprint-by-sprint velocity trend for <Contoso Team> over the last 8 sprints and flag any sprints that were outliers` |
+| Forecast with reduced capacity | `If <Contoso Team> velocity drops to 18 story points due to holidays, how many additional sprints are needed to clear the backlog?` |
+| Predict feature completion | `How many sprints until all child stories under feature #3050 are complete, based on <Contoso Team> average velocity?` |
+| Backlog grooming priorities | `List the top 20 backlog items by priority for <Contoso Team> and flag any that are missing story point estimates` |
+
+> [!NOTE]
+> Agent mode and the MCP Server use natural language, so you can adjust these prompts or ask follow-up questions to refine the results.
 
 ## Related content
 

@@ -7,7 +7,7 @@ ms.assetid: fa1dbe39-08b1-4eba-886a-33c1aa1e6a83
 ms.topic: overview
 ms.author: chcomley
 author: chcomley
-ms.date: 10/24/2024
+ms.date: 02/17/2026
 monikerRange: 'azure-devops'
 ---
 
@@ -28,6 +28,8 @@ By using these capabilities, you can enhance your development process and improv
 
 > [!NOTE]
 > If you're just getting started, see [Get started managing your organization](../../user-guide/manage-organization-collection.md). For information about managing an on-premises Azure DevOps Server, see [Administrative tasks quick reference](/azure/devops/server/admin/admin-quick-ref).
+
+[!INCLUDE [ai-assistance-callout](../../includes/ai-assistance-callout.md)]
 
 ## Prerequisites
 

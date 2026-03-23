@@ -5,12 +5,12 @@ ms.topic: concept-article
 ms.author: maoswald
 author: moswald
 ms.date: 06/14/2023
-monikerRange: ">= azure-devops-2020"
+monikerRange: "<=azure-devops"
 ---
 
 # Pipeline Run Retention
 
-[!INCLUDE [version-gt-eq-2020](../../includes/version-gt-eq-2020.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 Retaining a pipeline run for longer than the configured [project settings](../policies/retention.md) is handled by the creation of **retention leases**. Temporary retention leases are often created by automatic processes and more permanent leases by manipulating the UI or when Release Management retains artifacts, but they can also be manipulated through the [REST API](/rest/api/azure/devops/build/leases). Here are some examples of tasks that you can add to your yaml pipeline for retention.
 

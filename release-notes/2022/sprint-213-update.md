@@ -4,6 +4,7 @@ author: ckanyika
 ms.author: glmorale
 ms.date: 12/8/2022
 description: With this update, we are including improvements to strengthen pipelines security in Azure DevOps.
+ms.topic: release-notes
 ---
 # Improvements to strengthen pipelines security
 

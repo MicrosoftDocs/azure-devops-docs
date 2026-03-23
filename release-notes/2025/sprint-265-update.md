@@ -4,6 +4,7 @@ author: gloridelmorales
 ms.author: glmorale
 ms.date: 11/25/2025
 description: Azure Repos improvements
+ms.topic: release-notes
 ---
 
 # Azure Repos improvements

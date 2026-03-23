@@ -13,7 +13,7 @@ ms.date: 11/09/2025
 
 # Metadata reference for Azure Boards Analytics
 
-[!INCLUDE [version-gt-eq-2019](../../includes/version-gt-eq-2019.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 The Analytics service collects all Azure Boards work tracking definition and update activity. You can run Analytics queries directly in your browser and use a combination of properties to filter a query, aggregate data, or build a report. For more information, see [Define basic queries using OData Analytics](../extend-analytics/wit-analytics.md).
 

@@ -35,9 +35,9 @@
       displayName: integrate, procedure, correct, effective
       href: ../integrate/concepts/integration-bestpractices.md
     - name: Integrate with service hooks
-      href: ../service-hooks/overview.md?toc=/azure/devops/marketplace-extensibility/toc.json      
+      href: ../service-hooks/overview.md?toc=/azure/devops/marketplace-extensibility/toc.json
     - name: Develop Marketplace extensions
-      href: ../marketplace-extensibility/?toc=/azure/devops/marketplace-extensibility/toc.json      
+      href: ../marketplace-extensibility/?toc=/azure/devops/marketplace-extensibility/toc.json
   - name: Samples
     items:
     - name: REST API Samples
@@ -67,11 +67,11 @@
 - name: Azure DevOps CLI
   href: ../cli/toc.yml
 - name: Node CLI for Azure DevOps (tfx-cli)
-  href: ../extend/publish/command-line.md  
+  href: ../extend/publish/command-line.md
 - name: Reference
   items:
   - name: Azure DevOps REST API Reference
-    href: /rest/api/azure/devops/  
+    href: /rest/api/azure/devops/
   - name: Git commands
     href: ../repos/git/command-prompt.md
   - name: TFVC repository commands

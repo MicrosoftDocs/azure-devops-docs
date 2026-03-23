@@ -5,9 +5,7 @@ ms.assetid: 1B7C890E-FB67-4BEF-A48E-20C9453BD54A
 ms.topic: concept-article
 ms.date: 04/25/2024
 monikerRange: '<= azure-devops'
-ms.custom:
-  - continuous-test
-  - sfi-image-nochange
+ms.custom: continuous-test, sfi-image-nochange
 ---
 
 # UI testing considerations

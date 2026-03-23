@@ -4,15 +4,13 @@ description: Lean how to set up Azure Key vaults with your own project and use i
 ms.topic: tutorial
 ms.date: 04/14/2025
 monikerRange: "<=azure-devops"
-ms.custom:
-  - arm2024
-  - sfi-image-nochange
+ms.custom: arm2024, sfi-image-nochange
 "recommendations": "true"
 ---
 
 # Use Azure Key Vault secrets in your Pipeline
 
-[!INCLUDE [version-gt-eq-2019](../../includes/version-gt-eq-2019.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 Azure Key Vaults enable developers to securely store and manage sensitive information such as passwords, API keys, and certificates. This article walks you through how to query and use secrets from an Azure Key Vault in your pipeline.
 

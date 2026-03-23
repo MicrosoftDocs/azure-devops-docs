@@ -5,7 +5,7 @@ ms.date: 04/04/2022
 
 <a id="global-shortcuts"></a>
 
-::: moniker range=">= azure-devops-2020"
+::: moniker range="<=azure-devops"
 
 |Shortcut|Action|
 |--------|------|

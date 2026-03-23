@@ -2,21 +2,22 @@
 title: Customize a project  
 titleSuffix: Azure DevOps Services
 description: Your guide to configuring and customizing work tracking processes for a project by customizing an inherited process in Azure DevOps.
-ms.custom: inherited-process
+ms.custom: inherited-process, copilot-scenario-highlight
 ms.service: azure-devops-boards
 ms.assetid: 31CA1DCB-8E3E-4B9E-A64A-D47DF23490A3   
 ms.author: chcomley
 author: chcomley
+ai-usage: ai-assisted
 monikerRange: "<=azure-devops"
 ms.topic: tutorial
-ms.date: 06/03/2024
+ms.date: 03/03/2026
 ---
 
 # Customize a project using an inherited process
 
-[!INCLUDE [version-gt-eq-2019](../../../includes/version-gt-eq-2019.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../../includes/version-lt-eq-azure-devops.md)]
 
-::: moniker range=">= azure-devops-2020"
+::: moniker range="<=azure-devops"
 
 Each project is based on a process that defines the building blocks for tracking work. The first project you create uses one of the default processes&mdash;[**Agile**](../../../boards/work-items/guidance/agile-process.md), [**Basic**](../../../boards/get-started/plan-track-work.md), [**Scrum**](../../../boards/work-items/guidance/scrum-process.md), or [**CMMI**](../../../boards/work-items/guidance/cmmi-process.md). 
 
@@ -32,6 +33,8 @@ You can only customize inherited processes. Any changes you make to the inherite
 [!INCLUDE [temp](../includes/note-on-prem-link.md)]
 
 [!INCLUDE [temp](../includes/note-audit-log-support-process.md)]
+
+[!INCLUDE [ai-assistance-mcp-server-tip](../../../includes/ai-assistance-mcp-server-tip.md)]
 
 ## Prerequisites
 
@@ -188,7 +191,7 @@ We recommend that you create a test project and apply your customized inherited 
 
 1. From the **Process** page, select the &hellip; context menu for the process you want to use, and then select **New team project**.  
 
-	::: moniker range=">= azure-devops-2020"
+	::: moniker range="<=azure-devops"
 	> [!div class="mx-imgBorder"]  
 	> ![Create a project from the selected process](media/process/new-team-project-from-inherited-process-menu.png) 
 	::: moniker-end
@@ -220,6 +223,28 @@ You can also use the following steps to verify the customizations you made to an
 For more information, see [Change a project's process](manage-process.md#migrate).
 
 <a id="process-rest-api">  </a>
+
+<a id="use-ai-assistance"></a>
+
+## Use AI to customize your project process
+
+[!INCLUDE [ai-assistance-mcp-server-tip](../../../includes/ai-assistance-mcp-server-tip.md)]
+
+If you use GitHub Copilot, the [Azure DevOps MCP Server](../../../mcp-server/mcp-server-overview.md) can help you customize inherited processes for your projects through natural language prompts.
+
+### Example prompts for process customization
+
+| Task | Example prompt |
+|---|---|
+| Plan a full process customization | `I'm adopting an inherited Agile process for a regulated healthcare project. Walk me through adding custom fields for Compliance Status and Regulatory Reference, a new 'Compliance Review' state, and rules that enforce sign-off before items can move to Done` |
+| Add a custom work item type | `Create a 'Risk' work item type in my inherited process with fields for Likelihood, Impact, Mitigation Plan, and Risk Owner. Add it to the Requirements backlog level so it shows on our board` |
+| Verify customizations in a test project | `I made several customizations to my inherited process — new fields, a custom WIT, and modified workflow states. Help me create a test project to validate everything works correctly before applying the process to our production project` |
+| Compare two inherited processes | `I have two inherited processes, TeamAlpha-Agile and TeamBeta-Agile. List the differences between them in fields, work item types, states, and rules so I can decide whether to consolidate into one process` |
+| Troubleshoot customization issues | `After customizing my inherited process, some fields aren't appearing on the work item form and a custom state is missing from the board. Help me diagnose what went wrong and how to fix it` |
+| Revert unwanted customizations | `I made changes to the Bug work item type in my inherited process that are causing problems. Show me how to revert specific field and layout changes back to the default inherited behavior without losing other customizations` |
+
+> [!TIP]
+> For the best results, use these prompts in agent mode with the Azure DevOps MCP Server connected. Customize the prompts with your specific process name, work item types, or business requirements.
 
 ## Related content
 

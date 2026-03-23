@@ -1,22 +1,25 @@
 ---
 title: Customize your pipeline
-ms.custom: devx-track-azurecli
+ms.custom: devx-track-azurecli, copilot-scenario-highlight
 description: Step-by-step tutorial to customize a pipeline
 ms.topic: quickstart
 ms.assetid: b3a9043e-aa64-4824-9999-afb2be72f141
-ms.date: 06/09/2025
+ms.date: 03/10/2026
 monikerRange: "<=azure-devops"
+ai-usage: ai-assisted
 ---
 
 # Customize your pipeline
 
-[!INCLUDE [version-gt-eq-2019](../includes/version-gt-eq-2019.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../includes/version-lt-eq-azure-devops.md)]
 
 This article is a step-by-step guide on common ways to customize your pipeline.
 
 ## Prerequisites
 
 Follow instructions in [Create your first pipeline](create-first-pipeline.md) to create a working pipeline.
+
+[!INCLUDE [ai-assistance](../includes/ai-assistance-mcp-server-tip.md)]
 
 ## Understand the `azure-pipelines.yml` file
 
@@ -388,6 +391,28 @@ This example uses two jobs, but this same approach could be used across [multipl
 
 > [!NOTE]
 > You can also use a marketplace extension like [Create Bug on Release failure](https://marketplace.visualstudio.com/items?itemName=AmanBedi18.CreateBugTask) which has support for YAML multi-stage pipelines.
+
+<a id="use-ai-assistance"></a>
+
+## Use AI to customize your pipeline
+
+If you configure the [Azure DevOps MCP Server](../mcp-server/mcp-server-overview.md), you can get intelligent recommendations for optimizing and customizing your pipeline using natural language.
+
+| Task | Example prompt |
+|------|----------------|
+| Optimize build times | `How can I speed up the build for pipeline "CI-Main" in project <Contoso>?` |
+| Add multi-platform builds | `Add a build matrix for Linux, Windows, and macOS to this pipeline in <Contoso>` |
+| Configure CI triggers | `What branch triggers should I set up for this pipeline in <Contoso>?` |
+| Add test coverage | `Add a code coverage step to this Java pipeline in <Contoso>` |
+| Set up PR validation | `Configure pull request validation triggers for the main branch in <Contoso>` |
+| Add parallel jobs | `How do I run build and test jobs in parallel for this pipeline in <Contoso>?` |
+| Use variable groups | `Which variable groups in <Contoso> could this pipeline reuse?` |
+| Add deployment stages | `Add a staging deployment stage to this pipeline in <Contoso>` |
+| Review pipeline security | `Are there any security best practices missing from this pipeline in <Contoso>?` |
+| Compare configurations | `Compare the build settings of pipeline "CI-Main" and "CI-Feature" in <Contoso>` |
+
+> [!TIP]
+> If you're using Visual Studio Code, [agent mode](/visualstudio/ide/copilot-chat-context#agent-mode) is especially helpful for iterating on pipeline customizations and testing configuration changes.
 
 ## Next steps
 

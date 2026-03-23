@@ -4,6 +4,7 @@ author: gloridelmorales
 ms.author: glmorale
 ms.date: 7/29/2022
 description: Whit this update, we improved the Azure Pipelines REST API security.  
+ms.topic: release-notes
 ---
 # Azure Pipelines REST API security improvements
 

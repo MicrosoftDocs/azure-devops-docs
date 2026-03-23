@@ -4,6 +4,7 @@ author: sid-ah
 ms.author: simerzou
 ms.date: 12/03/2020
 description: In the last sprint, we announced a batch of improvements to the new pull request experience. In this sprint, we are doubling down our investments in that space with another round of enhancements.
+ms.topic: release-notes
 ---
 
 # More improvements to pull requests experience

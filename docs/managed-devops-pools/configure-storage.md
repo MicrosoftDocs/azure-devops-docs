@@ -1,7 +1,7 @@
 ---
 title: Configure storage
 description: Learn how to add an empty data disk to your agents in Managed DevOps Pools.
-ms.date: 11/18/2025
+ms.date: 12/14/2025
 ms.topic: how-to
 ---
 
@@ -146,7 +146,7 @@ Configure the following properties for your attached data disk.
 
 ## Use the data disk for your agent working directory
 
-To configure your agents to use a working directory on the data disk, specify a folder from the data disk in a `WorkFolder` demand.
+To configure your agents to use a working directory on the data disk, specify a folder from the data disk in a `WorkFolder` demand at the pipeline level, or configure the [Work folder](configure-advanced-settings.md#work-folder) pool setting. The following examples show how to configure the `WorkFolder` demand in your pipeline to use a folder on the attached data disk. For information on configuring the **Work folder** pool setting, see [Configure advanced settings: Work folder](configure-advanced-settings.md#work-folder).
 
 #### [Windows](#tab/windows/)
 

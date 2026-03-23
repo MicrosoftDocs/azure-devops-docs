@@ -3,12 +3,13 @@ title: Share your team's sprint plan with your team in Azure Boards
 titleSuffix: Azure Boards
 description: Learn how to share sprint plan working with Scrum methods.
 ms.service: azure-devops-boards
+ms.custom: copilot-scenario-highlight
 ms.assetid: 
 ms.author: chcomley
 author: chcomley
 ms.topic: tutorial
 monikerRange: '<= azure-devops'
-ms.date: 09/20/2021
+ms.date: 02/28/2026
 ---
 
 # 5. Share your sprint plan
@@ -19,9 +20,11 @@ ms.date: 09/20/2021
 
 Once you complete your sprint plan, sharing it with your team and organization is simple. Stakeholders with project access can view the sprint plan by accessing the URL of your sprint backlog page. Additionally, you can distribute the plan via email or by printing a copy to ensure everyone stays informed and aligned.
 
+[!INCLUDE [ai-assistance-mcp-server-tip](../../includes/ai-assistance-mcp-server-tip.md)]
+
 ## Open a sprint backlog for a team 
 
-::: moniker range=">= azure-devops-2020"
+::: moniker range="<=azure-devops"
 
 1. From your web browser, open your product backlog. (1) Check that you've selected the right project, (2) choose **Boards>Sprints**, (3) select the correct team from the team selector menu, and lastly (4), choose **Backlog**. 
 
@@ -73,6 +76,22 @@ Or, you can select all the items in the list, choose **Copy as HTML**, and paste
 ## Next step
 > [!div class="nextstepaction"]
 > [6. Update the taskboard](task-board.md) 
+
+<a id="use-ai-assistance"></a>
+
+## Use AI to review your sprint plan
+
+If you have the [Azure Boards MCP Server](../../mcp-server/mcp-server-overview.md) connected to your AI agent in agent mode, you can use natural language prompts to review and summarize your sprint plan.
+
+| Task | Example prompt |
+|------|----------------|
+| Summarize sprint plan | `Summarize the Sprint 12 backlog for <Contoso Team> including item count, total story points, and assignees` |
+| Export sprint data | `List all work items in Sprint 12 for <Contoso Team> with title, assignee, state, and story points` |
+| Check sprint readiness | `Are there any user stories in Sprint 12 for <Contoso Team> that have no tasks assigned?` |
+| Compare sprints | `Compare planned work in Sprint 11 vs. Sprint 12 for <Contoso Team> by total story points and item count` |
+
+> [!NOTE]
+> Agent mode and the MCP Server use natural language, so you can adjust these prompts or ask follow-up questions to refine the results.
 
 ## Related content
 

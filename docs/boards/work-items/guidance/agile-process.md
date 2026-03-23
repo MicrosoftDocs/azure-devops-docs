@@ -51,17 +51,6 @@ All processes, including Agile, Scrum, and CMMI, support building charts and das
 
 [!INCLUDE [temp](../../includes/powerbi-reports-links.md)] 
 
-::: moniker range="< azure-devops-2022"
-<a id="reports"></a>
-
-## SQL Server reports
-
-If your project collection and project use SQL Server Analysis Services and Reporting Services, you can access many Agile reports. These reports are most useful when teams perform supporting activities such as defining build processes, linking work items, and keeping status and remaining work up to date. For more information, see [Review team activities to support useful reports](/previous-versions/azure/devops/report/admin/review-team-activities-for-useful-reports).
-
-If you need to add or update reporting services, see [Add reports to a project](/previous-versions/azure/devops/report/admin/add-reports-to-a-team-project).  
-
-::: moniker-end
-
 ## Agile process versions  
 
 When the Agile process template receives updates, its version number changes. The template exposes a `version` element that specifies major and minor versions. For Azure Boards (cloud) the latest version is applied automatically; on-premises process templates follow the versioning shown here.
@@ -75,7 +64,6 @@ When the Agile process template receives updates, its version number changes. Th
 For a summary of process-template updates, see [Release Notes for Azure DevOps Server](/azure/devops/server/release-notes/azuredevops2020u1).
 
 <a id="predefined-queries"></a>
-
 
 ## Related content
 

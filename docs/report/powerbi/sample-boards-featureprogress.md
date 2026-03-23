@@ -14,7 +14,7 @@ ms.date: 04/28/2025
 
 # Feature progress rollup sample report
 
-[!INCLUDE [version-gt-eq-2019](../../includes/version-gt-eq-2019.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
  
 This article shows you how to create a stacked bar report to display progress of Features based on completed child User Stories. The report displays the percentage complete by rollup of Story Points for a given set of active Features. You can view similar progress bar charts from your backlog by adding a rollup column. To learn how, see [Display rollup progress or totals](../../boards/backlogs/display-rollup.md).
 

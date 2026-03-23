@@ -8,9 +8,7 @@ author: chcomley
 ms.topic: how-to
 monikerRange: '<= azure-devops'
 ms.date: 08/12/2025
-ms.custom:
-  - security-refresh
-  - sfi-image-nochange
+ms.custom: security-refresh, sfi-image-nochange
 ---
 
 # Look up a project collection administrator

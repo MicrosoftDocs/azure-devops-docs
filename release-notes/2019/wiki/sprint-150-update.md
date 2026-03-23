@@ -4,6 +4,7 @@ description: See the Sprint 150 feature updates for Wiki, including next steps.
 author: gloridelmorales
 ms.author: glmorale
 ms.date: 04/08/2019
+ms.topic: release-notes
 ---
 
 # Wiki - Sprint 150 Update

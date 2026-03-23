@@ -8,17 +8,19 @@ ms.topic: overview
 ms.author: chcomley
 author: chcomley
 monikerRange: "<=azure-devops"
-ms.date: 03/12/2025
+ms.date: 02/17/2026
 #customer intent: As a team leader or member, I want to understand how to pull data from analytics to use in Power BI reports.
 ---
 
 # About Power BI integration
 
-[!INCLUDE [version-gt-eq-2019](../../includes/version-gt-eq-2019.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 Power BI is a suite of business analytics tools. With Power BI, you can pull data from [Analytics](what-is-analytics.md), generate reports, and customize them to meet your needs. Use Power BI to do impromptu analysis, produce beautiful reports, and publish for enterprise consumption.
 
 The integration of Power BI with Analytics enables you to go beyond the built-in Analytics reports and dashboard widgets to generate fully custom reports.
+
+[!INCLUDE [ai-assistance-callout](../../includes/ai-assistance-callout.md)]
 
 ## Data connection methods
 
@@ -88,7 +90,7 @@ Several sample reports show how to generate reports from either an Analytics vie
 
 To get started using OData queries in Power BI reports, see [Overview of sample reports using OData queries](sample-odata-overview.md). For specific examples, see the following articles:
 
-::: moniker range=">= azure-devops-2020"
+::: moniker range="<=azure-devops"
 
 |Service  |Sample reports  |
 |------------------|---------------------|

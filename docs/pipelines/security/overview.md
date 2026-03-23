@@ -5,12 +5,12 @@ ms.assetid: 1ef377e9-e684-4e72-8486-a42d754761ac
 ms.custom: peer-review-program
 ms.date: 03/04/2025
 monikerRange: "<=azure-devops"
-ms.topic: article
+ms.topic: best-practice
 ---
 
 # Secure your Azure Pipelines
 
-[!INCLUDE [version-gt-eq-2020](../../includes/version-gt-eq-2020.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 Pipelines offer powerful capabilities for executing scripts and deploying code to production environments, but it's crucial to balance this power with security. You never want a pipeline to become a conduit for malicious code. Balancing security with the flexibility and power needed by development teams is essential.
 

@@ -8,12 +8,12 @@ ms.author: rabououn
 author: ramiMSFT
 ms.date: 08/22/2025
 ms.custom: peer-review-program
-monikerRange: '>= azure-devops-2020'
+monikerRange: "<=azure-devops"
 ---
 
 # What is Azure Artifacts?
 
-[!INCLUDE [version-gt-eq-2020](../includes/version-gt-eq-2020.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../includes/version-lt-eq-azure-devops.md)]
 
 Azure Artifacts provides developers with a streamlined way to manage all their dependencies from a single feed. These feeds serve as repositories for storing, managing, and sharing packages, whether within your team, across organizations, or publicly online. Azure Artifacts supports multiple package types, including NuGet, npm, Python, Maven, Cargo, and Universal Packages.
 
@@ -69,21 +69,6 @@ Azure Artifacts enables teams to seamlessly store, manage, and share packages fr
 
 ::: moniker-end
 
-::: moniker range="azure-devops-2020"
-
-| Package Type           | Articles                                                                         |
-|------------------------|----------------------------------------------------------------------------------|
-| **NuGet**              | - [Publish NuGet packages - (NuGet.exe)](nuget/publish.md)                       |
-| **Dotnet**             | - [Publish NuGet packages - (dotnet)](nuget/dotnet-exe.md)                       |
-| **Npm**                | - [Publish npm packages](npm/publish.md)                                         |
-| **Maven**              | - [Publish Maven Artifacts](maven/publish-packages-maven.md)                     |  
-| **Gradle**             | - [Publish packages - Gradle](maven/publish-with-gradle.md)                      |
-| **Python**             | - [Publish Python packages](quickstarts/python-cli.md)                           |
-
----
-
-::: moniker-end
-
 ## Feature availability
 
 |      Packages          | Azure DevOps Services | Azure DevOps Server 2022 | Azure DevOps Server 2020 |
@@ -96,7 +81,6 @@ Azure Artifacts enables teams to seamlessly store, manage, and share packages fr
 | **Python**             | :::image type="icon" source="../media/icons/checkmark.png" border="false":::    | :::image type="icon" source="../media/icons/checkmark.png" border="false":::    | :::image type="icon" source="../media/icons/checkmark.png" border="false":::     |
 | **Cargo**              | :::image type="icon" source="../media/icons/checkmark.png" border="false":::    | :::image type="icon" source="../media/icons/checkmark.png" border="false":::    | :::image type="icon" source="../media/icons/delete-icon.png" border="false":::   |
 | **Universal Packages** | :::image type="icon" source="../media/icons/checkmark.png" border="false":::    | :::image type="icon" source="../media/icons/delete-icon.png" border="false":::  | :::image type="icon" source="../media/icons/delete-icon.png" border="false":::   |
-
 
 ::: moniker range="azure-devops"
 

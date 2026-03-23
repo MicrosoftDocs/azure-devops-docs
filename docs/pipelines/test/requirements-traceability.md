@@ -7,10 +7,7 @@ ms.author: jeom
 author: raviLiftr
 ms.date: 07/01/2020
 monikerRange: '<= azure-devops'
-ms.custom:
-  - continuous-test
-  - cross-service
-  - sfi-image-nochange
+ms.custom: continuous-test, cross-service, sfi-image-nochange
 ---
 
 # Requirements traceability

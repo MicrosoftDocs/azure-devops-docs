@@ -4,6 +4,7 @@ author: ckanyika
 ms.author: glmorale
 ms.date: 2/17/2023
 description: With this update, we are excited to announce that you can select multiple repositories in the pull request widget.
+ms.topic: release-notes
 ---
 # Pull request widget for multiple repos is now in private preview
 The pull request widget lets you display active pull requests (PRs) requested by your team. Previously, the pull request widget let you select one repository to show in your dashboard. With this update, we are excited to announce that you can select multiple repositories in the pull request widget. 

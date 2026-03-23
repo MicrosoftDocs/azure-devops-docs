@@ -3,6 +3,7 @@ title: Filter by target branch in pull requests - Sprint 152 Update
 author: gloridelmorales
 ms.author: glmorale
 ms.date: 05/20/2019
+ms.topic: release-notes
 description: In the **Sprint 152 Update** of Azure DevOps, we added a filter option to let you search for pull requests by target branch. 
 ---
 

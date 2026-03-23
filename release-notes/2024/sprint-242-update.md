@@ -4,6 +4,7 @@ author: ckanyika
 ms.author: glmorale
 ms.date: 7/25/2024
 description: Enhanced GitHub integration and Azure Pipelines security
+ms.topic: release-notes
 ---
 # Enhanced GitHub integration and Azure Pipelines security
 

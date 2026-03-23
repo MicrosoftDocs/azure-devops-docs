@@ -13,7 +13,7 @@ ms.date: 08/01/2025
 
 # Install the Azure Boards app for GitHub  
 
-[!INCLUDE [version-gt-eq-2020](../../includes/version-gt-eq-2020.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 In this quickstart, you install the Azure Boards app for GitHub to connect Azure Boards to your GitHub repositories. When you connect Azure Boards projects with GitHub.com repositories, you support linking between GitHub commits and pull requests to work items. You can use GitHub for software development while using Azure Boards to plan and track your work. After you install the Azure Boards app for GitHub on your GitHub account or organization, choose which GitHub repositories you want to connect to from your project.
 
@@ -23,7 +23,7 @@ For an overview of the integration that the Azure Boards app for GitHub supports
 
 | Category | Requirements |
 |--------------|-------------|
-| **Permissions** | - Member of the [**Project Collection Administrators** group](../../organizations/security/change-organization-collection-level-permissions.md). If you created the project, you have permissions.<br> - **Administrator** or **owner** of the GitHub organization for installing the Azure Boards app. <br> - **Read** permissions for the GitHub repository. |
+| Permissions | - Member of the [**Project Collection Administrators** group](../../organizations/security/change-organization-collection-level-permissions.md). If you created the project, you have permissions.<br> - **Administrator** or **owner** of the GitHub organization for installing the Azure Boards app. <br> - **Read** permissions for the GitHub repository. |
 | **Project membership**|  [Project member](../../organizations/projects/create-project.md). |
 
 > [!IMPORTANT]  
@@ -138,7 +138,7 @@ You can configure other Azure Boards/Azure DevOps Projects, GitHub.com repositor
 
 If you encounter a problem with a connection, we recommend that you remove the connection and start over with a new connection.
 
-::: moniker range=">= azure-devops-2020"
+::: moniker range="<=azure-devops"
 
 1. From your project in Azure DevOps, go to **Project settings** > **GitHub connections**.
 

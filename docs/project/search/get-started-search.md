@@ -5,9 +5,10 @@ ms.assetid: A0889E82-EAE7-464C-B82A-B05D2E404426
 ms.subservice: azure-devops-search
 ms.custom: cross-service, cross-project
 ms.topic: how-to
+ai-usage: ai-assisted
 ms.author: chcomley
 author: chcomley
-ms.date: 08/01/2025
+ms.date: 02/18/2026
 monikerRange: '<= azure-devops'
 ---
 
@@ -17,12 +18,14 @@ monikerRange: '<= azure-devops'
 
 Azure DevOps provides powerful search capabilities that help you quickly find work items, code files, wiki pages, and packages across your projects and organization. Use keywords, wildcards, and advanced search filters to locate exactly what you need.
 
+[!INCLUDE [ai-assistance-callout](../../includes/ai-assistance-callout.md)]
+
 ## What you can search
 
-- **Work items**: Find bugs, user stories, tasks, and other work items
-- **Code**: Search through source code files and repositories  
-- **Wiki pages**: Locate information in project and published wikis
-- **Packages**: Find artifacts in Azure Artifacts feeds
+- **Work items**: Find bugs, user stories, tasks, and other work items.
+- **Code**: Search through source code files and repositories.  
+- **Wiki pages**: Locate information in project and published wikis.
+- **Packages**: Find artifacts in Azure Artifacts feeds.
 
 For detailed information about specific search types, see:
 
@@ -39,7 +42,7 @@ For detailed information about specific search types, see:
 | **Stakeholder limitations** | - **Wiki search:** Limited to provisioned wikis only. Published wiki results don't appear because they require access to regular repositories.<br>- **Code search:** Not available for Stakeholder users. |
 
 > [!NOTE]
-> **Access-based results:** When you search across the organization or collection, only results for projects and items you have access to display.
+> **Access-based results:** When you search across the organization or collection, only results for projects and items you have access to appear.
 
 ::: moniker range="< azure-devops"
 > [!IMPORTANT]
@@ -50,7 +53,7 @@ For detailed information about specific search types, see:
 
 - **Start with keywords:** Begin your search with relevant keywords, then apply filters to refine results as needed.
     :::image type="content" source="media/shared/title-bar-search-box-select-type-tfs.png" alt-text="Screenshot of search boxes in Azure DevOps":::
-- **Adjust filters:** If your initial search doesn’t yield the desired results, try removing filters and searching again. Once you see the search results, you can narrow them down by applying appropriate filters and searching again.
+- **Adjust filters:** If your initial search doesn't yield the desired results, try removing filters and searching again. Once the search results appear, you can narrow them down by applying appropriate filters and searching again.
 - **Check spelling:** Ensure your search terms are spelled correctly, as search doesn't automatically correct spelling errors.
 - **Refine wildcard searches:** If you receive a message that no matching files are found due to a wildcard search with too many hits, make your search more specific. Add more characters or use more filters to restrict the number of possible matches.
 - **Case insensitive:** All searches are case-insensitive.

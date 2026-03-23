@@ -2,13 +2,13 @@
 title: Plan and track work in Azure Boards
 titleSuffix: Azure Boards 
 description: Learn how to plan and track work by using Azure Boards using the Agile, Basic, Scrum, or Capability Maturity Model Integration (CMMI) processes.
-ms.custom: boards-get-started
+ms.custom: boards-get-started, copilot-scenario-highlight
 ms.service: azure-devops-boards
 ms.author: chcomley
 author: chcomley
 ms.topic: how-to
 monikerRange: '<= azure-devops'
-ms.date: 09/29/2025
+ms.date: 02/28/2026
 #customer intent: As a team member, I want to understand how to use the different processes to manage our team projects.
 ---
 
@@ -17,6 +17,8 @@ ms.date: 09/29/2025
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 Use Azure Boards to plan and track work with the Agile, Basic, Scrum, or Capability Maturity Model Integration (CMMI) processes. For more information about process choices, see [About processes and process templates](../work-items/guidance/choose-process.md).
+
+[!INCLUDE [ai-assistance-mcp-server-tip](../../includes/ai-assistance-mcp-server-tip.md)]
 
 [!INCLUDE [basic process](../includes/basic-process-note.md)]
 
@@ -68,17 +70,8 @@ This article shows how to add requirements, child tasks, and work item details o
 
 | Category | Requirements |
 |--------------|-------------|
-| **Access levels** | - Add work items and use board features: at least [**Basic** access](../../organizations/security/access-levels.md). <br> - Private project: to view boards, open and modify work items, and add child tasks: at least **Stakeholder** access (Stakeholders can't reorder or reparent backlog items or update fields on cards). <br> - Public project: for full access to all Boards features: at least **Stakeholder** access. |
-| **Permissions** | Member of the **Contributors** or **Project Administrators** group. |
-
-::: moniker-end
-
-::: moniker range="azure-devops-2020"
-
-| Category | Requirements |
-|--------------|-------------|
-| **Access levels** | - Add work items and use board features: at least [**Basic** access](../../organizations/security/access-levels.md). <br> - View boards, open and modify work items, and add child tasks: at least **Stakeholder** access (Stakeholders can't reorder or reparent backlog items or update fields on cards). |
-| **Permissions** | Member of the **Contributors** or **Project Administrators** group. |
+| Access levels | - Add work items and use board features: at least [**Basic** access](../../organizations/security/access-levels.md). <br> - Private project: to view boards, open and modify work items, and add child tasks: at least **Stakeholder** access (Stakeholders can't reorder or reparent backlog items or update fields on cards). <br> - Public project: for full access to all Boards features: at least **Stakeholder** access. |
+| Permissions | Member of the **Contributors** or **Project Administrators** group. |
 
 ::: moniker-end
 
@@ -232,6 +225,28 @@ You can use these fields on backlog items and tasks to support planning and capa
 :::row-end:::
 
 [!INCLUDE [discussion comments](../includes/discussion-tip-azure-devops.md)]
+
+<a id="use-ai-assistance"></a>
+
+## Use AI to plan and track work
+
+If you have the [Azure Boards MCP Server](../../mcp-server/mcp-server-overview.md) connected to your AI agent in agent mode, you can use natural language prompts to create and manage work items.
+
+| Task | Example prompt |
+|------|----------------|
+| Create a work item | `Create a user story called 'Add search functionality to the product page' and assign it to <me>` |
+| Add child tasks | `Add three tasks to user story #1234: design the UI mockup, implement the backend API, and write unit tests` |
+| Create a bug | `Create a new bug titled 'Login timeout on slow connections' with priority 1 and assign it to the current sprint` |
+| Update a work item | `Update the state of task #5678 to Done and set Completed Work to 4 hours` |
+| Get a daily summary | `Show all work items assigned to <me> grouped by state with remaining work totals` |
+| Plan a new feature | `Create a feature called 'Dark mode support' in <Contoso> with 4 child user stories for settings UI, theme engine, persistence, and accessibility testing` |
+| Review sprint readiness | `List all user stories in the next sprint for <Contoso> that are still missing story points or acceptance criteria` |
+| Track team progress | `Show the count of work items by state for each team member in the current sprint for <Contoso>` |
+| Quick standup report | `Show what <me> completed yesterday, what's in progress today, and any items tagged 'blocked' in <Contoso>` |
+| Set up a new project | `Create an epic called 'Mobile App v2' in <Contoso> with 3 child features for authentication, dashboard, and notifications, each with 2 user stories` |
+
+> [!NOTE]
+> Agent mode and the MCP Server use natural language, so you can adjust these prompts or ask follow-up questions to refine the results.
 
 ## Related content
 

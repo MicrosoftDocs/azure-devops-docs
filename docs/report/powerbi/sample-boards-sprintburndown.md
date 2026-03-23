@@ -13,7 +13,7 @@ ms.date: 12/08/2022
 
 # Sprint burndown sample reports
 
-[!INCLUDE [version-gt-eq-2019](../../includes/version-gt-eq-2019.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 Sprint burndown charts are useful to monitor how well a team is executing on their sprint plan. Several built-in charts and dashboard widgets support monitoring sprint burndown. See [Configure and monitor sprint burndown](../dashboards/configure-sprint-burndown.md). 
 

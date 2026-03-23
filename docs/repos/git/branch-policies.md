@@ -42,7 +42,7 @@ To manage branch policies, select **Repos** > **Branches** to open the **Branche
 
 You can also get to branch policy settings with **Project Settings** > **Repository** > **Policies** > **Branch Policies** > **\<Branch Name>**.
 
-::: moniker range=">= azure-devops-2020"
+::: moniker range="<=azure-devops"
 
 Branches that have policies display a policy icon. You can select the icon to go directly to the branch's policy settings.
 
@@ -54,7 +54,7 @@ Select the **More options** icon next to the branch, and then select **Branch po
 
 ::: moniker-end
 
-::: moniker range=">= azure-devops-2020"
+::: moniker range="<=azure-devops"
 
 Configure policies on the branch's settings page. See the following sections for descriptions and instructions for each policy type.
 
@@ -149,7 +149,7 @@ Code reviews are important for software development projects. To ensure that tea
 
 To set the policy, under **Branch Policies**, set **Require a minimum number of reviewers** to **On**. Enter the required number of reviewers, and select any of the following options:
 
-::: moniker range=">= azure-devops-2020"
+::: moniker range="<=azure-devops"
 
 :::image type="content" source="media/branch-policies/require-minimum-reviewers-2020.png" alt-text="Screenshot that shows the Enable the Require Code Reviews policy.":::
 
@@ -158,15 +158,6 @@ To set the policy, under **Branch Policies**, set **Require a minimum number of 
 - Select **Prohibit the most recent pusher from approving their own changes** to enforce segregation of duties. By default, anyone with push permission on the source branch can both add commits and vote on PR approval. Selecting this option means the most recent pusher's vote doesn't count, even if they can ordinarily approve their own changes.
 
 - Select **Allow completion even if some reviewers vote to wait or reject** to allow PR completion even if some reviewers vote against approval. The minimum number of reviewers must still approve.
-
-::: moniker-end
-
-::: moniker range=">= azure-devops-2020 < azure-devops-2022"
-
-- Under **When new changes are pushed**:
-  - Select **Require at least one approval on the last iteration** to require at least one approval vote for the last source branch change.
-  - Select **Reset all approval votes (does not reset votes to reject or wait)** to remove all approval votes, but keep votes to reject or wait, whenever the source branch changes.
-  - Select **Reset all code reviewer votes** to remove all reviewer votes whenever the source branch changes, including votes to approve, reject, or wait.
 
 ::: moniker-end
 
@@ -297,7 +288,7 @@ For [work item management tracking](../../boards/backlogs/connect-work-items-to-
 
 To set the policy, under **Branch Policies**, set **Check for linked work items** to **On**. This setting requires that work items be linked to a PR for the PR to merge. Make the setting **Optional** to warn when there are no linked work items, but allow completion of the pull request.
 
-::: moniker range=">= azure-devops-2020"
+::: moniker range="<=azure-devops"
 
 :::image type="content" source="media/branch-policies/check-linked-work-items-2020.png" alt-text="Screenshot of requiring linked work items in pull requests.":::
 
@@ -404,7 +395,7 @@ The **Check for comment resolution** policy checks whether all PR comments are r
 
 # [Browser](#tab/browser)
 
-::: moniker range=">= azure-devops-2020" 
+::: moniker range="<=azure-devops"
 
 Configure a comment resolution policy for your branch by setting **Check for comment resolution** to **On**. Then select whether to make the policy **Required** or **Optional**.
 
@@ -500,7 +491,7 @@ ID    Name                  Is Blocking    Is Enabled    Repository Id          
 
 ***
 
-::: moniker range=">= azure-devops-2020"
+::: moniker range="<=azure-devops"
 
 <a id="limit-merge-types"></a>
 
@@ -512,7 +503,7 @@ Azure Repos has several merge strategies, and by default, all of them are allowe
 
 # [Browser](#tab/browser)
 
-::: moniker range=">= azure-devops-2020"
+::: moniker range="<=azure-devops"
 
 Set **Limit merge types** to **On** to limit which merge types to allow in your repo.
 
@@ -639,7 +630,7 @@ az repos policy merge-strategy update --id
 <a name="require-the-pull-request-to-build"></a>
 <a id="build-validation"></a>
 
-::: moniker range=">= azure-devops-2020" 
+::: moniker range="<=azure-devops"
 
 ## Build validation
 
@@ -655,7 +646,7 @@ A build validation policy queues a new build when a new PR is created or changes
 
 # [Browser](#tab/browser)
 
-::: moniker range=">= azure-devops-2020" 
+::: moniker range="<=azure-devops"
 
 To add a build validation policy
 
@@ -805,7 +796,7 @@ az repos policy build update --id
 
 ***
 
-::: moniker range=">= azure-devops-2020"
+::: moniker range="<=azure-devops"
 
 <a name="require-approval-from-external-services"></a>
 
@@ -823,7 +814,7 @@ For instructions on configuring this policy, see [Configure a branch policy for 
 
 <a id="include-code-reviewers"></a>
 
-::: moniker range=">=azure-devops-2020"
+::: moniker range="<=azure-devops"
 
 ## Automatically include code reviewers
 
@@ -832,7 +823,7 @@ You can automatically add reviewers to pull requests that change files in specif
 ::: moniker-end 
 
 # [Browser](#tab/browser)
-::: moniker range=">=azure-devops-2020"
+::: moniker range="<=azure-devops"
 
 1. Select the **+** button next to **Automatically included reviewers**.
 

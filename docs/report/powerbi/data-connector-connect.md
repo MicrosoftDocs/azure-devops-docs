@@ -15,7 +15,7 @@ ms.date: 12/01/2025
 
 # Connect Analytics with Power BI Data Connector
 
-[!INCLUDE [version-gt-eq-2020](../../includes/version-gt-eq-2020.md)] 
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)] 
 
 Learn how to establish a seamless connection between Power BI and Azure DevOps using the Power BI Data Connector. This integration lets you extract valuable insights from your Azure DevOps data and create compelling reports and dashboards within Power BI using [Analytics views](what-are-analytics-views.md).
 

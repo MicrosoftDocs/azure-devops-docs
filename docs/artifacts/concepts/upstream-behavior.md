@@ -11,7 +11,7 @@ monikerRange: 'azure-devops'
 
 # Safeguard against malicious public packages
 
-[!INCLUDE [version-gt-eq-2020](../../includes/version-gt-eq-2020.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 Azure Artifacts upstream sources enable developers to centralize package management by using a single feed to store both published packages and those consumed from public registries such as NuGet.org.
 

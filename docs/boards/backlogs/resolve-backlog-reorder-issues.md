@@ -10,7 +10,7 @@ ms.topic: troubleshooting
 ms.author: chcomley
 author: chcomley
 monikerRange: '<= azure-devops'
-ms.date: 12/03/2025
+ms.date: 02/28/2026
 #customer intent: as a team member or lead, I want to address warnings or errors that occur in Azure Boards regarding reordering or nesting work items.
 ---
 
@@ -77,7 +77,7 @@ This message indicates that the **In Progress** filter for the backlog is turned
 
 When you refresh your browser, the work items display based on your selected filters. To reset the filters, do the following steps.
 
-::: moniker range=">= azure-devops-2020" 
+::: moniker range="<=azure-devops"
 
 1. Open your backlog.
 1. From the **View options** selector, choose to show or hide **In Progress items**.

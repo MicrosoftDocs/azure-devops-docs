@@ -13,7 +13,7 @@ ms.date: 04/07/2025
 
 # Stakeholder access quick reference
 
-[!INCLUDE [version-gt-eq-2019](../../includes/version-gt-eq-2019.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 **Stakeholder** access provides free access to a limited set of features for an unlimited number of users. Generally, **Stakeholder** access users get restricted access to Azure Boards and collaboration tools, while they don't have access to code repositories.
 
@@ -117,25 +117,6 @@ For an overview of work tracking features, see [What is Azure Boards?](../../boa
    :::column-end:::
 :::row-end:::
 ::: moniker-end
-::: moniker range="azure-devops-2020" 
-:::row:::
-   :::column span="1":::
-      **Boards** 
-   :::column-end:::
-   :::column span="2":::
-      - View boards, open and edit work items
-      - Update status through drag-and-drop
-      - Add child items to a checklist
-      - Assign to a sprint (from card field)
-      - Configure team boards<sup>2</sup> 
-   :::column-end:::
-   :::column span="2":::
-      - Add work items to a board
-      - Change the priority of an item within a board
-      - Change fields on cards on a board, except for State field
-   :::column-end:::
-:::row-end:::
-::: moniker-end
 
 :::row:::
    :::column span="1":::
@@ -197,20 +178,6 @@ For an overview of work tracking features, see [What is Azure Boards?](../../boa
    :::column-end:::
 :::row-end:::
 ::: moniker-end
-::: moniker range="< azure-devops-2022" 
-:::row:::
-   :::column span="1":::
-      **Delivery Plans** (Extension)
-   :::column-end:::
-   :::column span="2":::
-      - None
-   :::column-end:::
-   :::column span="2":::
-      - View delivery plans
-      - Add or edit a delivery plan
-   :::column-end:::
-:::row-end:::
-::: moniker-end
 
 **Notes:**
 1. Controllable through project-level permission.
@@ -243,7 +210,7 @@ The following table summarizes the features **Stakeholder** access users have to
       **Features can't use**
    :::column-end:::
 :::row-end:::
-::: moniker range=">= azure-devops-2020" 
+::: moniker range="<=azure-devops"
 :::row:::
    :::column span="1":::
       Dashboards

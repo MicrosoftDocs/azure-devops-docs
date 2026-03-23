@@ -8,7 +8,7 @@ ms.topic: reference
 ms.author: chcomley
 author: chcomley
 monikerRange: '<= azure-devops'
-ms.date: 01/17/2023 
+ms.date: 02/17/2026 
 ---
 
 # Quick reference index for Azure Boards settings 
@@ -16,6 +16,8 @@ ms.date: 01/17/2023
 [!INCLUDE [version-lt-eq-azure-devops](../includes/version-lt-eq-azure-devops.md)]
 
 Use this index to quickly access concepts and tasks related to configuring and customizing Azure Boards. If you're new to the Azure Boards, see [What is Azure Boards?](../boards/get-started/what-is-azure-boards.md). 
+
+[!INCLUDE [ai-assistance-callout](../includes/ai-assistance-callout.md)]
 
 <a id="concepts"></a>
 
@@ -86,7 +88,7 @@ You customize Azure Boards work tracking using either the Inheritance process mo
 With the Inheritance process, you apply a process to a project. 
  
 ::: moniker-end
-::: moniker range=">= azure-devops-2020"
+::: moniker range="<=azure-devops"
 - [Create and manage inherited processes](../organizations/settings/work/manage-process.md)
 - [Customize a project using an inherited process](../organizations/settings/work/customize-process.md)
 - [Change the reference process from Agile to Scrum](../organizations/settings/work/change-process-agile-to-scrum.md)  

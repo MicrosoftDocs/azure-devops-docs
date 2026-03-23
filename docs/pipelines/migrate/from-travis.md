@@ -4,7 +4,8 @@ titleSuffix: Azure Pipelines
 description: How to migrate from Travis to Azure Pipelines
 ms.topic: how-to
 ms.assetid: F4592A2E-714A-4208-AD46-00D1A6D709C4
-ms.date: 03/02/2023
+ms.date: 01/15/2026
+ai-usage: ai-assisted
 monikerRange: azure-devops
 ---
 
@@ -12,17 +13,15 @@ monikerRange: azure-devops
 
 [!INCLUDE [version-eq-azure-devops](../../includes/version-eq-azure-devops.md)]
 
-This purpose of this guide is to help you migrate from Travis to Azure Pipelines. This guide describes shows how to translate from a Travis configuration to an Azure Pipelines configuration.
-
-> We need your help to make this guide better! Submit comments or contribute your changes directly.
+This guide helps you migrate from [Travis](https://www.travis-ci.com/) to Azure Pipelines. It shows how to translate a Travis configuration to an Azure Pipelines configuration.
 
 ## Key differences
 
-There are many differences between Travis and Azure Pipelines, including:
+Travis and Azure Pipelines differ in many ways, including:
 
-* Travis builds have _stages_, _jobs_ and _phases_, while Azure Pipelines has steps that can be arranged and executed in an arbitrary order or grouping that you choose. 
+* Travis builds have _stages_, _jobs_, and _phases_, while Azure Pipelines has steps that you arrange and execute in any order or grouping you choose. 
 
-* Azure Pipelines allows job definitions and steps to be stored in separate YAML files in the same or a different repository, enabling steps to be shared across multiple pipelines.
+* Azure Pipelines lets you store job definitions and steps in separate YAML files in the same or a different repository. This approach enables you to share steps across multiple pipelines.
 
 * Azure Pipelines provides full support for building and testing on Microsoft-managed Linux, Windows, and macOS images. For more information about hosted agents, see [Microsoft-hosted agents](../agents/hosted.md).
 
@@ -30,43 +29,43 @@ There are many differences between Travis and Azure Pipelines, including:
 
 * A GitHub account where you can create a repository. [Create one for free](https://github.com).
 * An Azure DevOps organization. [Create one for free](../get-started/pipelines-sign-up.md). 
-  If your team already has one, then make sure you're an administrator of the Azure DevOps project that you want to use.
-* An ability to run pipelines on Microsoft-hosted agents. You can either purchase a [parallel job](../licensing/concurrent-jobs.md) or you can [request a free tier](../troubleshooting/troubleshoot-start.md#check-for-available-parallel-jobs).
-* Basic knowledge of Azure Pipelines. If you're new to Azure Pipelines, see the following to learn more about Azure Pipelines and how it works prior to starting your migration:
+  If your team already has an Azure DevOps organization, make sure you're an administrator of the Azure DevOps project that you want to use.
+* The ability to run pipelines on Microsoft-hosted agents. You can either purchase a [parallel job](../licensing/concurrent-jobs.md) or you can [request a free tier](../troubleshooting/troubleshoot-start.md#check-for-available-parallel-jobs).
+* Basic knowledge of Azure Pipelines. If you're new to Azure Pipelines, see the following articles to learn more about Azure Pipelines and how it works before starting your migration:
     * [Create your first pipeline](../create-first-pipeline.md)
     * [Key concepts for new Azure Pipelines users](../get-started/key-pipelines-concepts.md)
 
 ## Language
 
 Travis uses the `language` keyword to identify the prerequisite build
-environment to set up for your build. For example, to select Node.JS
+environment to set up for your build. For example, to select Node.js
 16.x:
 
 **.travis.yml**
 ``` yaml
 language: node_js
 node_js:
-  - 16
+  - 22
 ```
 
-[Microsoft-hosted agents](../agents/hosted.md) contain the SDKs for many languages by default.  To use a specific language version, you may need to use a [language selection task](/azure/devops/pipelines/tasks/reference/node-tool-v0)
+[Microsoft-hosted agents](../agents/hosted.md) include the SDKs for many languages by default. To use a specific language version, you might need to use a [language selection task](/azure/devops/pipelines/tasks/reference/node-tool-v0)
 to set up the environment.
 
-For example, to select Node.JS 16.x:
+For example, to select Node.js 16.x:
 
 **azure-pipelines.yml**
 ``` yaml
 steps:
 - task: UseNode@1
   inputs:
-    version: '16.x'
+    version: '22.x'
 ```
 
 ### Language mappings
 
-The `language` keyword in Travis implies both that version
-of language tools be used and that many build steps be implicitly
-performed.  In Azure Pipelines, you need to specify the commands that you want to run.
+The `language` keyword in Travis CI works as both the version
+of language tools to use and an implicit signal that many build steps
+are performed. In Azure Pipelines, you specify the commands that you want to run.
 
 Here's a translation guide from the `language` keyword to the commands
 that are executed automatically for the most commonly used languages:
@@ -85,8 +84,8 @@ that are executed automatically for the most commonly used languages:
 | `python`                 | `pip install -r requirements.txt`
 | `ruby`                   | `bundle install --jobs=3 --retry=3`<br>`rake` |
 
-In addition, less common languages can be enabled but require another
-dependency installation step or execution inside a docker container:
+You can enable less common languages, but they require another
+dependency installation step or execution inside a Docker container:
 
 | Language      | Commands                       |
 |---------------|--------------------------------|
@@ -272,18 +271,18 @@ configuration. In Azure Pipelines you can use matrices in the same way, but you 
 One of the most common ways to run several builds with a slight variation
 is to change the execution using environment variables.  For example, your
 build script can look for the presence of an environment variable and change
-the way your software is built, or the way it's tested.
+the way it builds your software, or the way it tests the software.
 
-You can use a matrix to have run a build configuration several
+Use a matrix to run a build configuration several
 times, once for each value in the environment variable.  For example,
-to run a given script three times, each time with a different setting for
+run a given script three times, each time with a different setting for
 an environment variable:
 
 **.travis.yml**
 ``` yaml
 os: osx
 env:
-  matrix:
+  jobs:
   - MY_ENVIRONMENT_VARIABLE: 'one'
   - MY_ENVIRONMENT_VARIABLE: 'two'
   - MY_ENVIRONMENT_VARIABLE: 'three'
@@ -322,7 +321,7 @@ environment variable to run the language configuration task:
 **.travis.yml**
 ``` yaml
 os: linux
-matrix:
+jobs:
   include:
   - rvm: 2.3.7
   - rvm: 2.4.4
@@ -357,11 +356,11 @@ using the `vmImage` keyword.
 
 For example, you can set an environment variable in each matrix variable
 that corresponds to the operating system image that you want to use.  Then
-you can set the machine pool to the variable you've set:
+you set the machine pool to the variable you set:
 
 **.travis.yml**
 ``` yaml
-matrix:
+jobs:
   include:
   - os: linux
   - os: windows
@@ -390,8 +389,8 @@ steps:
 ## Success and failure handling
 
 Travis allows you to specify steps that run when the build succeeds,
-using the `after_success` phase, or when the build fails, using the
-`after_failure` phase.  With Azure Pipelines you can define success and failure 
+by using the `after_success` phase, or when the build fails, by using the
+`after_failure` phase. By using Azure Pipelines, you can define success and failure 
 conditions based on the result of any step, which enables more flexible
 and powerful pipelines.
 
@@ -440,23 +439,23 @@ jobs:
 ## Predefined variables
 
 Both Travis and Azure Pipelines set multiple environment variables
-to allow you to inspect and interact with the execution environment of the
+to help you inspect and interact with the execution environment of the
 CI system.
 
-In most cases, there's an Azure Pipelines variable to match 
+In most cases, an Azure Pipelines variable matches 
 the environment variable in Travis. Here's a list of commonly used
 environment variables in Travis and their analog in Azure Pipelines:
 
 | Travis                       | Azure Pipelines               | Description                  |
 |------------------------------|-------------------------------|------------------------------|
-| `CI=true` or `TRAVIS=true`   | `TF_BUILD=True`               | Indicates that your build is running in the CI system; useful for scripts that are also intended to be run locally during development. |
-| `TRAVIS_BRANCH`              | **CI builds**:<br>`BUILD_SOURCEBRANCH`<br><br>**Pull request builds**:<br>`SYSTEM_PULLREQUEST_TARGETBRANCH` | The name of the branch the build was queued for, or the name of the branch the pull request is targeting. |
+| `CI=true` or `TRAVIS=true`   | `TF_BUILD=True`               | Indicates that your build is running in the CI system; useful for scripts that are also intended to run locally during development. |
+| `TRAVIS_BRANCH`              | **CI builds**:<br>`BUILD_SOURCEBRANCH`<br><br>**Pull request builds**:<br>`SYSTEM_PULLREQUEST_TARGETBRANCH` | The name of the branch the build is queued for, or the name of the branch the pull request is targeting. |
 | `TRAVIS_BUILD_DIR`           | `BUILD_SOURCESDIRECTORY`      | The location of your checked out source and the default working directory. |
 | `TRAVIS_BUILD_NUMBER`        | `BUILD_BUILDID`               | A unique numeric identifier for the current build invocation. |
 | `TRAVIS_COMMIT`              | **CI builds**:<br>`BUILD_SOURCEVERSION` | The commit ID currently being built. |
 | `TRAVIS_COMMIT`              | **Pull request builds**:<br>`git rev-parse HEAD^2` | For pull request validation builds, Azure Pipelines sets `BUILD_SOURCEVERSION` to the resulting merge commit of the pull request into main; this command identifies the pull request commit itself. |
 | `TRAVIS_COMMIT_MESSAGE`      | `BUILD_SOURCEVERSIONMESSAGE`  | The log message of the commit being built. |
-| `TRAVIS_EVENT_TYPE`          | `BUILD_REASON` | The reason the build was queued; a map of values is in the "build reasons" table below. |
+| `TRAVIS_EVENT_TYPE`          | `BUILD_REASON` | The reason the build is queued; a map of values is in the "build reasons" table below. |
 | `TRAVIS_JOB_NAME`            | `AGENT_JOBNAME`                | The name of the current job, if specified. |
 | `TRAVIS_OS_NAME`             | `AGENT_OS`                     | The operating system that the job is running on; a map of values is in the "operating systems" table below. |
 | `TRAVIS_PULL_REQUEST`        | **Azure Repos**:<br>`SYSTEM_PULLREQUEST_PULLREQUESTID`<br><br>**GitHub**:<br>`SYSTEM_PULLREQUEST_PULLREQUESTNUMBER` | The pull request number that triggered this build. (For GitHub builds, this is a unique identifier that is _not_ the pull request number.) |
@@ -464,11 +463,11 @@ environment variables in Travis and their analog in Azure Pipelines:
 | `TRAVIS_PULL_REQUEST_SHA`    | **Pull request builds**:<br>`git rev-parse HEAD^2` | For pull request validation builds, Azure Pipelines sets `BUILD_SOURCEVERSION` to the resulting merge commit of the pull request into main; this command identifies the pull request commit itself. |
 | `TRAVIS_PULL_REQUEST_SLUG`   |                                | The name of the forked repository, if the pull request originated in a fork.  There's no analog to this in Azure Pipelines. |
 | `TRAVIS_REPO_SLUG`           | `BUILD_REPOSITORY_NAME`         | The name of the repository that this build is configured for. |
-| `TRAVIS_TEST_RESULT`         | `AGENT_JOBSTATUS`              | Travis sets this value to `0` if all previous steps have succeeded (returned `0`).  For Azure Pipelines, check that `AGENT_JOBSTATUS=Succeeded`. |
-| `TRAVIS_TAG`                 | `BUILD_SOURCEBRANCH`           | If this build was queued by the creation of a tag then this is the name of that tag.  For Azure Pipelines, the `BUILD_SOURCEBRANCH` is set to the full Git reference name, for example, `refs/tags/tag_name`. |
+| `TRAVIS_TEST_RESULT`         | `AGENT_JOBSTATUS`              | Travis sets this value to `0` if all previous steps succeed (return `0`).  For Azure Pipelines, check that `AGENT_JOBSTATUS=Succeeded`. |
+| `TRAVIS_TAG`                 | `BUILD_SOURCEBRANCH`           | If this build is queued by the creation of a tag, this value is the name of that tag.  For Azure Pipelines, the `BUILD_SOURCEBRANCH` is set to the full Git reference name, for example, `refs/tags/tag_name`. |
 | `TRAVIS_BUILD_STAGE_NAME`    |                                | The name of the stage in Travis. As we saw earlier, Azure Pipelines handles flow control using jobs. You can reference `AGENT_JOBNAME`. |
 
-**Build Reasons**:
+**Build reasons**:
 
 The `TRAVIS_EVENT_TYPE` variable contains values that map to values provided by the Azure Pipelines `BUILD_REASON` variable:
 
@@ -491,8 +490,8 @@ The `TRAVIS_OS_NAME` variable contains values that map to values provided by the
 
 For more information, see [Predefined environment variables](../build/variables.md).
 
-If there isn't a variable for the data you need, then you can use a shell
-command to get it.  For example, a good substitute of an environment
+If there's no variable for the data you need, use a shell
+command to get it.  For example, a good substitute for an environment
 variable containing the commit ID of the pull request being built is to
 run a git command:  `git rev-parse HEAD^2`.
 
@@ -534,11 +533,11 @@ for dependency storage.
 
 ## Git submodules
 
-Travis and Azure Pipelines both clone git repos "recursively" by
-default. This means that submodules are cloned by the agent, which 
+Travis and Azure Pipelines both clone git repos recursively by
+default. This default setting means that the agent clones submodules, which 
 is useful since submodules usually contain dependencies. 
-However, the extra cloning takes time, so if you don't need the dependencies
-then you can disable cloning submodules:
+However, the extra cloning takes extra time. If you don't need the dependencies,
+disable cloning submodules:
 
 **.travis.yml**
 ``` yaml

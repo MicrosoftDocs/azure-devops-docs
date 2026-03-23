@@ -2,14 +2,14 @@
 title: Adjust work to fit sprint capacity
 titleSuffix: Azure Boards
 description: Learn how to adjust items assigned to a sprint to align with a team's sprint capacity. 
-ms.custom: boards-sprints
+ms.custom: boards-sprints, copilot-scenario-highlight
 ms.service: azure-devops-boards
 ms.assetid: 
 ms.author: chcomley
 author: chcomley
 ms.topic: tutorial
 monikerRange: '<= azure-devops'
-ms.date: 09/20/2021
+ms.date: 02/28/2026
 ---
 
 # Adjust work to fit sprint capacity
@@ -21,6 +21,8 @@ ms.date: 09/20/2021
 Check your team's capacity after you've defined all the tasks for all the sprint backlog items. You can consider adding more items onto the sprint if your team is under capacity. If over capacity, you'll want to remove items out of the backlog.  
 
 Next, check whether any team member is under, at, or over capacity. Or, if someone hasn't even been assigned any work. Use the capacity bars to make these determinations. If you haven't yet [set capacity for your team](set-capacity.md), do that now.
+
+[!INCLUDE [ai-assistance-mcp-server-tip](../../includes/ai-assistance-mcp-server-tip.md)]
 
 ![Over capacity](media/IC795969.png)  
 
@@ -36,7 +38,7 @@ Use this article to learn how to:
 
 ## Open a Sprint backlog for a team 
 
-::: moniker range=">= azure-devops-2020"
+::: moniker range="<=azure-devops"
 
 1. From your web browser, open your team's sprint backlog. (1) Check that you've selected the right project, (2) choose **Boards>Sprints**, (3) select the correct team from the team selector menu, and lastly (4), choose **Backlog**. 
 
@@ -101,6 +103,28 @@ As you reassign tasks, capacity bars automatically update.
 > ![Capacity bars adjusted](media/adjust-work/adjusted-work.png)   
 
 ::: moniker-end
+
+<a id="use-ai-assistance"></a>
+
+## Use AI to adjust sprint work
+
+If you have the [Azure Boards MCP Server](../../mcp-server/mcp-server-overview.md) connected to your AI agent in agent mode, you can use natural language prompts to identify and adjust work across your sprint.
+
+| Task | Example prompt |
+|------|----------------|
+| Find overloaded members | `Which team members are over capacity in Sprint 12 for <Contoso Team>? Show assigned work vs. capacity` |
+| Reassign tasks | `Reassign task #5678 from <Jamal> to <me> in project <Contoso>` |
+| Move excess items to backlog | `Move the lowest-priority user stories from Sprint 12 back to the backlog in <Contoso>` |
+| Check sprint balance | `Show remaining capacity per team member for the current sprint in <Contoso Team>` |
+| Identify at-risk items | `Which work items in Sprint 12 have remaining work greater than the days left in the sprint?` |
+| Suggest scope cuts | `List the lowest-priority items in Sprint 12 that could be deferred to free up 16 hours of capacity` |
+| Split oversized stories | `Find user stories in Sprint 12 with more than 20 hours of remaining task work and suggest how to split them` |
+| Compare planned vs. actual | `Compare the original estimated hours vs. current remaining work for each team member in Sprint 12` |
+| Redistribute after absence | `<Raisa> is out for the rest of Sprint 12. Show her active tasks and suggest team members to reassign them to based on capacity` |
+| Mid-sprint health check | `We're halfway through Sprint 12. Summarize completion percentage, remaining work, and flag any items with no progress` |
+
+> [!NOTE]
+> Agent mode and the MCP Server use natural language, so you can adjust these prompts or ask follow-up questions to refine the results.
 
 ## Next step
 > [!div class="nextstepaction"]

@@ -7,9 +7,10 @@ ms.assetid: F6FF6E6B-C9AA-4681-9205-D48C8F29D94B
 ms.author: chcomley
 author: chcomley
 ms.topic: how-to
+ms.custom: copilot-scenario-highlight
 ai-usage: ai-assisted
 monikerRange: '<= azure-devops'
-ms.date: 10/20/2025
+ms.date: 02/28/2026
 #customer intent: As a portfolio manager, I want to understand how to manage backlogs in Azure Boards so I can assign and track work and let teams manage their own backlogs.
 ---
 
@@ -18,6 +19,8 @@ ms.date: 10/20/2025
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 Portfolio backlogs let product owners track the work of multiple agile feature teams, monitor progress across projects, and manage risks and dependencies. Product owners create their vision and roadmap for each release and define high-level goals as Epics or Features. Feature teams break down the Epics or Features into Stories for prioritization and development. This structure gives each feature team its own backlog for planning, prioritizing, and tracking its work.
+
+[!INCLUDE [ai-assistance-mcp-server-tip](../../includes/ai-assistance-mcp-server-tip.md)]
 
 :::image type="content" source="media/pm-team-structure.png" alt-text="Diagram showing each team has its own view of the work." border="false":::
 
@@ -52,7 +55,7 @@ The hierarchical team and backlog structure lets autonomous teams take ownership
 To visualize ownership and progress involving other feature teams:
 
 - [Configure your backlog to show parent epics or features owned by other teams](../backlogs/backlogs-overview.md#view-backlog-items-and-parent-items-owned-by-other-teams).
-- [Create queries to include work items from other teams](../backlogs/filter-backlogs-boards-plans.md#filter-based-on-a-field). Add these queries to your team's dashboard for better visibility.
+- [Create queries to include work items from other teams](../backlogs/filter-backlogs-boards-plans.md#filter-by-work-item-fields). Add these queries to your team's dashboard for better visibility.
 - [Use the Delivery Plans feature](review-team-plans.md) in Azure Boards to get cross-team visibility into work items across multiple teams. You can see all backlog items and features, even if they belong to different teams.
 
 > [!TIP]
@@ -96,16 +99,26 @@ To view feature progress based on linked requirements, add a rollup column or vi
 
 ::: moniker-end
 
-::: moniker range="< azure-devops-2022"
-
-To view feature progress based on linked requirements, use the Feature Timeline. For more information, see [View portfolio progress with the Feature Timeline](/previous-versions/azure/devops/all/extensions/feature-timeline).
-
-::: moniker-end
-
 ## Next step
 
 > [!div class="nextstepaction"]
 > [Configure a hierarchy of teams](configure-hierarchical-teams.md)
+
+<a id="use-ai-assistance"></a>
+
+## Use AI to manage portfolio backlogs
+
+If you have the [Azure Boards MCP Server](../../mcp-server/mcp-server-overview.md) connected to your AI agent in agent mode, you can use natural language prompts to create and manage epics, features, and stories across teams.
+
+| Task | Example prompt |
+|------|----------------|
+| Create an epic | `Create a new epic called 'Cloud Migration' and assign it to the Platform team's area path` |
+| Check feature progress | `List all features under epic #50 and their current states` |
+| View team backlogs | `Show me all active user stories for the Web team in the current sprint` |
+| Assign work across teams | `Update the area path of user story #789 to <Contoso>\\Mobile` |
+
+> [!NOTE]
+> Agent mode and the MCP Server use natural language, so you can adjust these prompts or ask follow-up questions to refine the results.
 
 ## Related content
  

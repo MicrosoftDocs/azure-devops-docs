@@ -9,7 +9,7 @@ ai-usage: ai-assisted
 
 # Template parameters
 
-::: moniker range=">=azure-devops-2020"
+::: moniker range="<=azure-devops"
 
 You can specify parameters and their data types in a template and reference those parameters in a pipeline. With [templateContext](#use-templatecontext-to-pass-properties-to-templates), you can also pass properties to stages, steps, and jobs that are used as parameters in a template. 
 
@@ -102,7 +102,7 @@ extends:
 ```
 ::: moniker-end
 
-::: moniker range=">=azure-devops-2020"
+::: moniker range="<=azure-devops"
 
 #### Parameters to select a template at runtime
 
@@ -126,7 +126,6 @@ steps:
 ### Parameter data types
 
 [!INCLUDE [parameter-data-types](includes/parameter-data-types.md)]
-
 
 ### Iterating through parameters and their data types
 
@@ -216,8 +215,6 @@ extends:
 ##### Example: Iterating through nested objects
 
 The template defines a `listOfFruits` parameter containing objects with nested arrays, then uses nested loops to process each fruit and its associated colors. 
-
-
 
 ```yaml
 # File: nested-objects-template.yml

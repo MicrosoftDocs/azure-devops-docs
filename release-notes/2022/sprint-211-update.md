@@ -4,6 +4,7 @@ author: gloridelmorales
 ms.author: glmorale
 ms.date: 10/11/2022
 description: With this update, we included multiple updated to Azure Boards.
+ms.topic: release-notes
 ---
 # Maintain backlog hierarchy when filtering
 

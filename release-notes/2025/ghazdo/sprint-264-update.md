@@ -4,6 +4,7 @@ description: See the Sprint 264 feature updates for GitHub Advanced Security for
 author: gloridelmorales
 ms.author: glmorale
 ms.date: 11/4/2025
+ms.topic: release-notes
 ---
 
 # GitHub Advanced Security for Azure DevOps - Sprint 264 Update

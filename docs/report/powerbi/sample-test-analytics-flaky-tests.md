@@ -9,14 +9,13 @@ ms.author: chcomley
 ms.custom: powerbisample, engagement-fy23
 author: chcomley
 ms.topic: sample
-monikerRange: '>= azure-devops-2020'  
+monikerRange: "<=azure-devops"
 ms.date: 01/25/2023
 ---
 
 # Flaky tests sample report
 
-
-[!INCLUDE [version-gt-eq-2020](../../includes/version-gt-eq-2020.md)] 
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)] 
  
 You can create a report, as shown in the following image, that lists the flaky tests occurring in pipeline runs that include test tasks. A flaky test is a test that provides different outcomes, such as pass or fail, even when there are no changes in the source code or execution environment. For more information about enabling flaky tests, see [Manage flaky tests](../../pipelines/test/flaky-test-management.md). For information on adding tests to a pipeline, see the [Test task resources](#test-task-resources) section later in this article. 
 
@@ -31,21 +30,17 @@ Use the queries provided in this article to generate the following reports:
 - Flaky tests for a particular test file
 - Flaky tests for a particular test owner. 
 
-
 [!INCLUDE [temp](includes/preview-note.md)]
 
 [!INCLUDE [prerequisites-simple](../includes/analytics-prerequisites-simple.md)]
 
 [!INCLUDE [temp](includes/sample-required-reading.md)]
 
-
 ## Sample queries
-
 
 You can use the following queries of the `TestResultsDaily` entity set to create different but similar pipeline flaky test reports. The `TestResultsDaily` entity set provides a daily snapshot aggregate of `TestResult` executions, grouped by test.  
 
 [!INCLUDE [temp](includes/query-filters-test-pipelines.md)]
-
 
 ### Flaky tests for a Build workflow  
 
@@ -105,7 +100,6 @@ $apply=filter(
 ```
 
 ***
-
 
 ### Flaky tests for Release workflow
 
@@ -171,7 +165,6 @@ To view the failed tests of a pipeline for a particular branch, use the followin
 
 For more information about using slicers, see [Slicers in Power BI](/power-bi/visuals/power-bi-visualization-slicers).
 
-
 #### [Power BI query](#tab/powerbi/)
 
 [!INCLUDE [temp](includes/sample-powerbi-query.md)]
@@ -223,7 +216,6 @@ $apply=filter(
 ```
 
 ***
-
 
 ### Flaky tests filtered by test file
 
@@ -282,7 +274,6 @@ $apply=filter(
 ```
 
 ***
-
 
 ### Flaky tests filtered by test owner
 
@@ -516,7 +507,6 @@ The following table describes each part of the query.
    Close `compute()` clause.
    :::column-end:::
 :::row-end:::
-
 
  
 [!INCLUDE [temp](includes/rename-query.md)]

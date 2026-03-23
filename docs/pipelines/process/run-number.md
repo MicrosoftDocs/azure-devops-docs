@@ -115,7 +115,7 @@ The time zone is the same as the operating system of the machine that runs your 
 
 ::: moniker-end
 
-::: moniker range=">=azure-devops-2020"
+::: moniker range="<=azure-devops"
 
 ### How can I set the build number dynamically with conditions?
 

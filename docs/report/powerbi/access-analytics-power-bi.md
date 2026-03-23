@@ -13,7 +13,7 @@ ms.date: 09/06/2024
 
 # Connect to Analytics data using the Power BI OData feed
 
-[!INCLUDE [version-gt-eq-2019](../../includes/version-gt-eq-2019.md)] 
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)] 
 
 Learn how to access Analytics data through the Power BI Desktop OData feed.
 

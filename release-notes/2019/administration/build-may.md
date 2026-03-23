@@ -4,6 +4,7 @@ description: See the Microsoft build announcements for Azure DevOps administrati
 author: gloridelmorales
 ms.author: glmorale
 ms.date: 05/10/2019
+ms.topic: release-notes
 ---
 
 # Administration - Microsoft Build Announcements

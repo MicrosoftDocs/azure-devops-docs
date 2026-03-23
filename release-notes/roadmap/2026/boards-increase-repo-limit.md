@@ -3,7 +3,7 @@ title: Increase limit of connected GitHub repositories
 author: danhellem
 ms.author: dahellem
 ms.date: 12/11/2025
-ms.topic: article
+ms.topic: whats-new
 ms.service: azure-devops
 ms.subservice: azure-devops-release-notes
 description: Increase limit of connected GitHub repositories

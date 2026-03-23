@@ -5,13 +5,13 @@ ms.service: azure-devops-artifacts
 ms.custom: devx-track-dotnet
 ms.topic: how-to
 ms.date: 04/09/2025
-monikerRange: '>= azure-devops-2020'
+monikerRange: "<=azure-devops"
 "recommendations": "true"
 ---
 
 # Connect to an Azure Artifacts feed (dotnet)
 
-[!INCLUDE [version-gt-eq-2020](../../includes/version-gt-eq-2020.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 Azure Artifacts enables developers to seamlessly publish packages to feeds and share them privately or publicly, depending on the feed’s visibility settings. This guide walks you through setting up your project and authenticating with your Azure Artifacts feed.
 
@@ -57,7 +57,7 @@ Azure Artifacts enables developers to seamlessly publish packages to feeds and s
 
 ::: moniker-end
 
-::: moniker range="azure-devops-2020 || azure-devops-2022"
+::: moniker range="=azure-devops-2022"
 
 1. Sign in to your Azure DevOps collection, and then navigate to your project.
 
@@ -117,5 +117,4 @@ export ARTIFACTS_CREDENTIALPROVIDER_FEED_ENDPOINTS='{
 - [Restore NuGet packages (dotnet)](restore-nuget-packages-dotnet.md)
 
 - [Publish NuGet packages with Azure Pipelines (YAML/Classic)](../../pipelines/artifacts/nuget.md)
-
 

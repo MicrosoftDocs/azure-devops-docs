@@ -28,6 +28,8 @@ Use managed queries to:
 
 You can create queries and query folders from the web portal or Visual Studio Team Explorer. Changes you make in one client appear in the others because all changes store in the work tracking data store.
 
+[!INCLUDE [ai-assistance-callout](../../includes/ai-assistance-callout.md)]
+
 ## Get started using queries
 
 If you're getting started, read [View, run, or email a work item query](view-run-query.md). For a quick reference to query editor tasks and sample queries, see [Query quick reference](query-index-quick-ref.md).

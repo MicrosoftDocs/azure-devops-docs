@@ -18,7 +18,7 @@ ms.subservice: azure-devops-repos-git
 
 The commit details view provides information regarding all the changes made as part of a commit. You can view additional metadata associated with the commit and also perform certain actions to revert or cherry pick the commit. <!-- c123: Images need updated. -->
 
-::: moniker range=">= azure-devops-2020"
+::: moniker range="<=azure-devops"
 :::image type="content" source="media/commit-details/git-repo-file-history.png" alt-text="Files, Commits page example":::
 ::: moniker-end
 

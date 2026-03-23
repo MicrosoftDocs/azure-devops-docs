@@ -4,6 +4,7 @@ description: See the Sprint 155 feature update for Azure Artifacts, including ne
 author: gloridelmorales
 ms.author: glmorale
 ms.date: 07/22/2019
+ms.topic: release-notes
 ---
 
 # Azure Artifacts - Sprint 155 Update

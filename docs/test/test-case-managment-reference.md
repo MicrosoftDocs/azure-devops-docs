@@ -5,18 +5,19 @@ description: Learn which commands you can use to manage Azure Test Plans
 ms.service: azure-devops-test-plans
 ms.custom: UpdateFrequency3
 ms.topic: reference
-ms.author: jeom
+ms.author: pliaros
 author: raviLiftr
 monikerRange: '<= azure-devops'
 ms.date: 01/18/2022
 ms.update-cycle: 1095-days
 ---
 
-
-
 # Test case management commands (tcm.exe)  
 
 [!INCLUDE [version-lt-eq-azure-devops](../includes/version-lt-eq-azure-devops.md)]
+
+> [!NOTE]
+> The TCM command-line tool is no longer recommended for use with Azure DevOps Services or Azure DevOps Server 2020 and later versions.
 
 You can perform several tasks to list, view, copy/clone or run tests using the **tcm.exe** command-line tool. Most commands are supported for both on-premises and hosted Azure DevOps. 
 
@@ -42,8 +43,6 @@ To exercise the TCM command-line tool, have the following in place:
 ## TCM commands
 
 The following table provides links to articles that describe how to exercise the corresponding **tcm.exe** command. Most commands are supported on both Azure DevOps Server, all versions, and Azure DevOps Services.  
-
-
 
 ---
 :::row:::
@@ -72,9 +71,9 @@ The following table provides links to articles that describe how to exercise the
 :::row:::
    :::column span="2":::
    [`tcm fieldmapping`](/previous-versions/azure/devops/reference/witadmin/tcm-customize-manage-test-experience): Imports or exports an XML file for defining the resolution types, bug type, and failure types.   
-   ::: moniker range=">= azure-devops-2020"
+   ::: moniker range="<=azure-devops"
    > [!NOTE]  
-   > You can only exercise this command on collections that use the Online XML process model. For Azure DevOps Server 2020 and later versions that use the Inherited process model, import of XML files aren't supported. 
+   > You can only exercise this command on collections that use the Online XML process model. For versions that use the Inherited process model, import of XML files isn't supported. 
    ::: moniker-end
    :::column-end:::
    :::column span="1":::
@@ -97,7 +96,7 @@ The following table provides links to articles that describe how to exercise the
 :::row-end:::
 :::row:::
    :::column span="2":::
-   [`tcm run`](run-automated-tests-from-test-hub.md): Creates, deletes, lists, aborts, publishes, exports, or runs a group of tests. Also supports [importing automated tests into a test plan](copy-clone-test-items.md#import-test-cases).
+   [`tcm run`](run-automated-tests-from-test-hub.md): Creates, deletes, lists, aborts, publishes, exports, or runs a group of tests. Also supports importing automated tests into a test plan.
    :::column-end:::
    :::column span="1":::
       &nbsp;&nbsp;&nbsp;&nbsp;✔️
@@ -130,7 +129,7 @@ The following table provides links to articles that describe how to exercise the
 :::row-end:::
 :::row:::
    :::column span="2":::
-   [`tcm testcase`](copy-clone-test-items.md#import-test-cases): Import test cases from a specified assembly or a test file 
+   [`tcm testcase`](/previous-versions/azure/devops/reference/witadmin/tcm-customize-manage-test-experience): Import test cases from a specified assembly or a test file 
    :::column-end:::
    :::column span="1":::
       &nbsp;&nbsp;&nbsp;&nbsp;✔️

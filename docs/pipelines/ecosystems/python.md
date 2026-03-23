@@ -6,16 +6,13 @@ ms.date: 08/22/2025
 ms.assetid: 141149f8-d1a9-49fa-be98-ee9a825a951a
 monikerRange: "<=azure-devops"
 ms.author: jukullam
-ms.custom:
-  - devx-track-python
-  - freshness-fy22q2
-  - sfi-image-nochange
+ms.custom: devx-track-python, freshness-fy22q2, sfi-image-nochange
 #customer intent: As a Python developer, I want to learn how to build and publish Python apps in Azure Pipelines so I can test and publish apps with different versions of Python.
 ---
 
 # Build and publish a Python app
 
-[!INCLUDE [version-gt-eq-2019](../../includes/version-gt-eq-2019.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 In this quickstart, you create a pipeline that builds and tests a Python app. You see how to use Azure Pipelines to build, test, and deploy Python apps and scripts as part of your continuous integration and continuous delivery (CI/CD) system.
 

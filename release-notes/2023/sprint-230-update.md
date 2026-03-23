@@ -4,6 +4,7 @@ author: ckanyika
 ms.author: glmorale
 ms.date: 11/16/2023
 description: GitHub Integration - Improved AB# validation
+ms.topic: release-notes
 ---
 # GitHub Integration - Improved AB# validation
 

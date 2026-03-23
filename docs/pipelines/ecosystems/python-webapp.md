@@ -6,12 +6,7 @@ ms.assetid: 6f79a177-702f-4fb4-b714-bfdd0ecf1d84
 ms.author: jukullam
 ms.date: 08/29/2025
 monikerRange: "<=azure-devops"
-ms.custom:
-  - devx-track-python
-  - freshness-fy22q2
-  - arm2024
-  - linux-related-content
-  - sfi-image-nochange
+ms.custom: devx-track-python, freshness-fy22q2, arm2024, linux-related-content, sfi-image-nochange
 #customer intent: As a Linux app developer, I want to know how to use Azure Pipelines to build and deploy Python web apps so I can automatically deploy my apps and updates.
 
 ---

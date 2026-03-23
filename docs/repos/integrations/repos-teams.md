@@ -7,9 +7,7 @@ ms.subservice: azure-devops-integration
 ms.topic: how-to 
 monikerRange: 'azure-devops'
 ms.date: 10/24/2025
-ms.custom:
-  - cross-service
-  - sfi-image-nochange
+ms.custom: cross-service, sfi-image-nochange
 ---
 
 # Use Azure Repos with Microsoft Teams

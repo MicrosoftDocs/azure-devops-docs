@@ -8,13 +8,13 @@ ms.author: shdalv
 ms.custom: powerbisample, engagement-fy23
 author: chcomley
 ms.topic: sample
-monikerRange: '>= azure-devops-2020'
+monikerRange: "<=azure-devops"
 ms.date: 01/19/2023
 ---
 
 # Manual test suites aggregated view sample report
 
-[!INCLUDE [version-gt-eq-2020](../../includes/version-gt-eq-2020.md)] 
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)] 
 
 You can report on the execution state of one or more Test Suites. The report you create using the information in this article is similar to the following image.  
 
@@ -111,11 +111,9 @@ $apply=filter((TestSuite/TestPlanTitle eq '{testPlanTitle}' and TestSuite/IdLeve
 - `{project}` - Your team project name, or omit "/{project}" entirely, for a cross-project query
 - `{testPlanTitle}` - Title of the test plan whose data you want to return.
 
-
 ### Query breakdown
 
 The following table describes each part of the query.
-
 
 :::row:::
    :::column span="1":::
@@ -166,7 +164,6 @@ The following table describes each part of the query.
    :::column-end:::
 :::row-end:::
 
-
 [!INCLUDE [temp](includes/rename-query.md)]
 
 ## Expand columns in Power Query Editor
@@ -198,7 +195,6 @@ When finished, you may choose to rename columns.
 	> [!div class="mx-imgBorder"] 
 	> ![Screenshot of Power BI transform data, Rename Columns.](media/transform-data/powerbi-rename-columns.png)
 
-
 ## Change column data type 
 
 From the Power Query Editor, select all columns containing numbers, such as *TotalCount*, *RunCount*, and *Passed*;  select **Data Type** from the **Transform** menu, and choose **Whole Number**. For more information about changing the data type, see  [Transform Analytics data to generate Power BI reports, Transform a column data type](transform-analytics-data-report-generation.md#transform-data-type). 
@@ -208,7 +204,6 @@ From the Power Query Editor, select all columns containing numbers, such as *Tot
 You can rename column fields. For example, you can rename the column `NotApplicable` to `Not Applicable`, or `TotalCount` to `Total Count`. To learn how, see [Rename column fields](transform-analytics-data-report-generation.md#rename-column-fields). 
 
 [!INCLUDE [temp](includes/close-apply.md)]
-
 
 ## Create the Table report
  

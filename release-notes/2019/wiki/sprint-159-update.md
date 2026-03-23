@@ -4,6 +4,7 @@ description: See the Sprint 159 feature updates for Wiki, including next steps.
 author: gloridelmorales
 ms.author: glmorale
 ms.date: 10/14/2019
+ms.topic: release-notes
 ---
 
 # Wiki - Sprint 159 Update

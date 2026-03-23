@@ -9,7 +9,7 @@ author: chcomley
 ms.topic: overview
 monikerRange: '<= azure-devops'
 ai-usage: ai-assisted
-ms.date: 10/17/2024
+ms.date: 12/22/2025
 ---
 
 # Area and iteration paths 
@@ -77,7 +77,7 @@ Add areas to support your team's traceability and security requirements. Use are
 
 Add areas when you need to do any of the following tasks:
 - Filter queries based on a product or feature area
-- Organize or group work items by team or subteams
+- Organize or group work items by team or subteams  
 - Restrict access to work items based on their area
 
 Each team can create a hierarchy of areas to organize their backlog items, user stories, requirements, tasks, and bugs.

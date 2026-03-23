@@ -7,7 +7,7 @@ ms.date: 04/04/2022
 
 You can use the following keyboard shortcuts when you work on a board on a **Boards** > **Boards** page or a **Work** > **Boards** page.  
 
-::: moniker range=">= azure-devops-2020"
+::: moniker range="<=azure-devops"
 
 |Shortcut|Action|
 |---|---|

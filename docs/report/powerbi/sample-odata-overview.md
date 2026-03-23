@@ -14,7 +14,7 @@ ms.date: 04/29/2025
 
 # Overview of sample reports using OData queries
 
-[!INCLUDE [version-gt-eq-2020](../../includes/version-gt-eq-2020.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 You can use Open Data Protocol (OData) queries to generate Power BI reports. For various services in Azure DevOps, sample queries are available for generating numerous popular reports. This article provides an overview of the sample reports and shows you how to get started with them.
 

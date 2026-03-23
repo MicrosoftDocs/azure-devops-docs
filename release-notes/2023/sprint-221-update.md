@@ -4,6 +4,7 @@ author: ckanyika
 ms.author: glmorale
 ms.date: 5/9/2023
 description: Swimlane rules is generally available
+ms.topic: release-notes
 ---
 # Swimlane rules is generally available
 We are excited to announce that Swimlane rules is generally available. Swimlane rules allow you to setup conditions on your Kanban board to automatically move work items into specific lanes.

@@ -103,7 +103,7 @@ sections:
 
       - question: How do I copy or clone a work item with all linked items?
         answer: |
-          ::: moniker range=">= azure-devops-2020"
+          ::: moniker range="<=azure-devops"
           In the cloud service, you can copy a work item and choose to copy child work items. See [Copy or clone work items](backlogs/copy-clone-work-items.md#copy-clone).
           ::: moniker-end
 
@@ -181,7 +181,7 @@ sections:
     questions:
       - question: How can I get a rollup of Story Points, Effort, or other work item fields?
         answer: |
-          ::: moniker range=">= azure-devops-2020"
+          ::: moniker range="<=azure-devops"
           Add rollup columns to a product or portfolio backlog to show progress bars or totals for numeric fields across descendant items in a hierarchy. Descendant items include all child items in the hierarchy. See [Display rollup progress or totals](backlogs/display-rollup.md).
           ::: moniker-end
 

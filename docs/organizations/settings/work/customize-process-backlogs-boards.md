@@ -40,31 +40,28 @@ In the following example, we added a third-level portfolio backlog labeled *Init
 
 <a id="add-oob-to-backlog"></a> 
 
-::: moniker range=">= azure-devops-2020"
+::: moniker range="<=azure-devops"
 
 ## Add a system work item type to a backlog  
 
 If you want to track Issues or Impediments or other inherited work item types (WIT) within a backlog or board, edit the corresponding backlog. The following table lists the available WITs you can add to a backlog.
 ::: moniker-end 
 
-::: moniker range="azure-devops-2020"
-> [!NOTE]
-> This feature requires Azure DevOps Server 2020.1 update or later version.
-::: moniker-end 
+ 
 
-::: moniker range=">= azure-devops-2020"
+::: moniker range="<=azure-devops"
 
-| **Process** | **Work item types** |
+| Process | Work item types |
 | ----------- | ------------------- |
 | Agile       | Issue               |
 | Scrum       | Impediment          |
 | CMMI        | Change request, issue, review, risk |
 
-Each **Edit backlog level** dialog automatically includes inherited and custom work item types that aren't assigned to other backlog levels. For example, unassigned Agile work item types are listed under the **Other work item types**.
+Each Edit backlog level dialog automatically includes inherited and custom work item types that aren't assigned to other backlog levels. For example, unassigned Agile work item types are listed under the Other work item types.
 
 :::image type="content" source="media/backlogs/other-work-item-types-agile.png" alt-text="Screenshot showing Web portal, Process, Backlog levels, Other work item types section, Agile process.":::
 
-These same WITs, along with any custom work item types, appear in the **Edit backlog level** dialog of all backlog levels, until they get assigned to a particular backlog level.
+These same WITs, along with any custom work item types, appear in the Edit backlog level dialog of all backlog levels, until they get assigned to a particular backlog level.
 
 :::image type="content" source="media/backlogs/edit-backlog-level-requirements-agile.png" alt-text="Screenshot of Web portal, Process, Backlog levels, Edit backlog level dialog.":::
 
@@ -79,9 +76,9 @@ When you add a WIT to a backlog level, certain fields are automatically added to
 
 | Backlog level | Fields added | Description |
 |---------------|--------------|-------------|
-| Portfolio backlog |- **Stack Rank** (Agile, CMMI)<br>- **Backlog Priority** (Scrum) | The Stack Rank and Backlog Priority fields capture the relative priority of work items as they get reordered on a backlog or board. For more information, see [Behind the scenes: the Backlog Priority or Stack Rank field](https://blogs.msdn.microsoft.com/devops/2014/05/14/behind-the-scenes-the-backlog-priority-or-stack-rank-field/).   |
-| Requirement backlog |- **Stack Rank**, **Story Points** (Agile)<br>- **Stack Rank**, **Size** (CMMI)<br>- **Backlog Priority**, **Effort** (Scrum) |The Story Points, Size, and Effort fields capture the relative work required to complete a WIT assigned to the Requirement backlog. This value is used to compute [velocity](../../../report/dashboards/team-velocity.md).|
-| Iteration backlog |- **Activity**, **Remaining Work**, **Stack Rank** (Agile)<br>- **Discipline**, **Remaining Work**, **Stack Rank** (CMMI)<br>- **Activity**, **Remaining Work**, **Backlog Priority** (Scrum) |Remaining Work is used in [Sprint burndown and capacity charts](../../../boards/sprints/define-sprints.md).|
+| Portfolio backlog |- Stack Rank (Agile, CMMI)<br>- Backlog Priority (Scrum) | The Stack Rank and Backlog Priority fields capture the relative priority of work items as they get reordered on a backlog or board. For more information, see [Behind the scenes: the Backlog Priority or Stack Rank field](https://blogs.msdn.microsoft.com/devops/2014/05/14/behind-the-scenes-the-backlog-priority-or-stack-rank-field/).   |
+| Requirement backlog |- Stack Rank, Story Points (Agile)<br>- Stack Rank, Size (CMMI)<br>- Backlog Priority, Effort (Scrum) |The Story Points, Size, and Effort fields capture the relative work required to complete a WIT assigned to the Requirement backlog. This value is used to compute [velocity](../../../report/dashboards/team-velocity.md).|
+| Iteration backlog |- Activity, Remaining Work, Stack Rank (Agile)<br>- Discipline, Remaining Work, Stack Rank (CMMI)<br>- Activity, Remaining Work, Backlog Priority (Scrum) |Remaining Work is used in [Sprint burndown and capacity charts](../../../boards/sprints/define-sprints.md).|
 
 ## Prerequisites
 
@@ -133,7 +130,7 @@ You can add a portfolio backlog and custom work item type following these steps.
 
 5. Name the backlog level, select the backlog level color, and add the work item type to associate with this level, and then select **Add**. 
 
-	::: moniker range=">= azure-devops-2020"
+	::: moniker range="<=azure-devops"
 
    :::image type="content" source="media/backlogs/add-portfolio-backlog-initiative-s173.png" alt-text="Screenshot showing Web portal, Add a portfolio backlog dialog, Add new work item type.":::
 
@@ -141,7 +138,7 @@ You can add a portfolio backlog and custom work item type following these steps.
 
 6. If you're associating only one work item type with the backlog, then choose **Save** to save your changes. Otherwise, you can add more work item types as needed. 
 
-	::: moniker range=">= azure-devops-2020"
+	::: moniker range="<=azure-devops"
 
    :::image type="content" source="media/backlogs/add-portfolio-backlog-initiative-save.png" alt-text="Screenshot showing Web portal, Add a portfolio backlog dialog, Save changes.":::
 
@@ -170,7 +167,7 @@ The Requirement backlog, also referred to as the product backlog, defines the wo
 
 You can rename the backlog, change the color, add work item types, and change the default work item type. Open the Edit backlog dialog from the context menu for the Requirements backlog. 
 
-::: moniker range=">= azure-devops-2020"
+::: moniker range="<=azure-devops"
 
 In the following example, we renamed the backlog, added **Customer Ticket** and **Issue**, and changed the default type to *Customer Ticket*. Check those boxes of the work item types to include on the backlog. 
 

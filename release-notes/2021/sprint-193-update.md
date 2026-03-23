@@ -4,6 +4,7 @@ author: gloridelmorales
 ms.author: glmorale
 ms.date: 09/28/2021
 description: With this update, we've included multiple improvements to Delivery Plans.
+ms.topic: release-notes
 ---
 
 # Improvements to Delivery Plans

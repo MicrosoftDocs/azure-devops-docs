@@ -3,7 +3,7 @@ title: Support for multi-repository result publishing
 author: laurajjiang
 ms.author: laurajiang
 ms.date: 02/06/2025
-ms.topic: article
+ms.topic: whats-new
 ms.service: azure-devops
 ms.subservice: azure-devops-release-notes
 description: Support for multi-repository result publishing

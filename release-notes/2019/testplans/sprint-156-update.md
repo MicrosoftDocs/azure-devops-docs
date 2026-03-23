@@ -4,6 +4,7 @@ description: See the Sprint 156 feature updates for Azure Test Plans, including 
 author: gloridelmorales
 ms.author: glmorale
 ms.date: 08/12/2019
+ms.topic: release-notes
 ---
 
 # Azure Test Plans - Sprint 156 Update

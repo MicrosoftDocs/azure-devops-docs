@@ -3,7 +3,7 @@ title: Use GitHub Actions to push to Azure Artifacts
 description: Push a NuGet package to Azure Artifacts with a GitHub Actions workflow
 ms.author: jukullam
 ms.custom: github-actions-azure
-ms.date: 08/06/2024
+ms.date: 01/14/2026
 monikerRange: azure-devops
 author: juliakm
 ms.topic: quickstart
@@ -16,20 +16,20 @@ zone_pivot_groups: github-actions-auth
 
 Get started using [GitHub Actions](https://docs.github.com/en/actions) and Azure Artifacts together. GitHub Actions help you automate your software development workflows from within GitHub. You can use GitHub Actions to deploy to an Azure Artifacts feed. 
 
-You can authenticate using either a managed identity or a [Personal Access Token (PAT)](../../organizations/accounts/use-personal-access-tokens-to-authenticate.md). A PAT is user-generated token that grants access to Azure DevOps resources. A [managed identity](../../integrate/get-started/authentication/service-principal-managed-identity.md) is a type of service principal that Azure manages automatically to allow for passwordless authentication between Azure services and Azure DevOps. Managed identity is the more secure authentication option.
+You can authenticate by using either a managed identity or a [Personal Access Token (PAT)](../../organizations/accounts/use-personal-access-tokens-to-authenticate.md). A PAT is a user-generated token that grants access to Azure DevOps resources. A [managed identity](../../integrate/get-started/authentication/service-principal-managed-identity.md) is a type of service principal that Azure manages automatically to allow for passwordless authentication between Azure services and Azure DevOps. Managed identity is the more secure authentication option.
 
 ::: zone pivot="managed-identity"  
 
 ## Prerequisites
 
 - A GitHub account with a repository. [Join GitHub](https://github.com/join) and [create a repository](https://docs.github.com/en/github/getting-started-with-github/create-a-repo). 
-- An Azure Artifact feed that you'll push your NuGet package to from a GitHub workflow. [Get Started with NuGet Packages](../get-started-nuget.md).
+- An Azure Artifacts feed that you push your NuGet package to from a GitHub workflow. [Get Started with NuGet Packages](../get-started-nuget.md).
 - Set up a user-assigned managed identity with an associated federated credential.
     - [Create a user-assigned managed identity](/entra/identity/managed-identities-azure-resources/how-manage-user-assigned-managed-identities#create-a-user-assigned-managed-identity).
     -  Copy the values for **Client ID**, **Subscription ID**, and **Directory (tenant) ID** to use later in your GitHub Actions workflow.
     - [Assign an appropriate role to your user-assigned managed identity](/entra/identity/managed-identities-azure-resources/how-manage-user-assigned-managed-identities#manage-access-to-user-assigned-managed-identities).
     - [Configure a federated identity credential on a user-assigned managed identity](/entra/workload-id/workload-identity-federation-create-trust-user-assigned-managed-identity) to trust tokens issued by GitHub Actions to your GitHub repository. 
-- Have permission to assign a managed identity to the **Contributor** group in Azure DevOps. **Project Administrators** and **Collection Administrators** both have this permission. 
+- Permission to assign a managed identity to the **Contributor** group in Azure DevOps. **Project Administrators** and **Collection Administrators** both have this permission. 
 
 > [!NOTE]
 > An alternative approach is to use an Microsoft Entra application with a service principal and federated authentication credential to connect Azure DevOps and GitHub Actions. To learn more about this approach, see [Configure an app to trust an external identity provider](/entra/workload-id/workload-identity-federation-create-trust). 
@@ -43,13 +43,13 @@ To assign your managed identity to the **Contributor** team, follow these steps:
 1. Select **General** > **Permissions**.
 1. Choose the **Contributors** group. 
 
-    :::image type="content" source="media/select-contributors-group.png" alt-text="Screenshot of contributors group permission option." lightbox="media/select-contributors-group.png" :::
+    :::image type="content" source="media/select-contributors-group.png" alt-text="Screenshot showing how to select the Contributors group in Azure DevOps project permissions settings." lightbox="media/select-contributors-group.png" :::
 
 1. Select the **Members** tab and then select **Add**.
-1. Search and find the managed identity. 
+1. Search for and find the managed identity. 
 1. Select **Save** to add the identity to the **Contributors** group. 
 
-    :::image type="content" source="media/invite-managed-identity.png" alt-text="Screenshot of adding a managed identity. ":::
+    :::image type="content" source="media/invite-managed-identity.png" alt-text="Screenshot showing the Members tab where you add a managed identity to the Contributors group in Azure DevOps." :::
 
 ## Create GitHub secrets 
 
@@ -59,22 +59,22 @@ To assign your managed identity to the **Contributor** team, follow these steps:
 ## Create a GitHub workflow that builds an artifact
 
 
-[GitHub workflows](/azure/developer/github/github-actions) are a series of actions (like tasks in Azure Pipelines). This  workflow automates the process of building, testing, packaging, and publishing a .NET project to Azure Artifacts using a managed identity and federated authentication. The workflow:
+[GitHub workflows](/azure/developer/github/github-actions) are a series of actions, similar to tasks in Azure Pipelines. This workflow automates the process of building, testing, packaging, and publishing a .NET project to Azure Artifacts by using a managed identity and federated authentication. The workflow:
 
-1. Uses the [azure/login action](https://github.com/marketplace/actions/azure-login) to log in to Azure using a managed identity.
+1. Uses the [azure/login action](https://github.com/marketplace/actions/azure-login) to sign in to Azure by using a managed identity.
 1. Installs the [credential provider for Azure Artifacts](https://github.com/microsoft/artifacts-credprovider#azure-artifacts-credential-provider). 
-1. Extracts an access token using Azure CLI and configures the authentication provider to use the Azure DevOps token.
-1. Sets up a .NET Core CLI environment with the [setup-dotnet action](https://github.com/actions/setup-dotnet).
+1. Extracts an access token by using Azure CLI and configures the authentication provider to use the Azure DevOps token.
+1. Sets up a .NET Core CLI environment by using the [setup-dotnet action](https://github.com/actions/setup-dotnet).
 1. Restores dependencies, builds the project and its dependencies into a set of binaries, and runs all unit tests associated with the project. 
 1. Packs the code into a NuGet package with the GitHub Run ID environmental variable included in the version number.
 1. Publishes the NuGet package to Azure Artifacts. 
 
 ### Create a new YAML file
 
-1. In your repository on GitHub, create a new YAML file in the `.github/workflows` directory.
+1. In your GitHub repository, create a new YAML file in the `.github/workflows` directory.
 
-2. Copy the following contents into your YAML file. Customize the `AZURE_ARTIFACTS_FEED_URL`, `BUILD_CONFIGURATION`, and  `DOTNET_VERSION` values. 
-    * Set `AZURE_ARTIFACTS_FEED_URL` to the registry url for your Azure Artifacts Feed.
+1. Copy the following contents into your YAML file. Customize the `AZURE_ARTIFACTS_FEED_URL`, `BUILD_CONFIGURATION`, and `DOTNET_VERSION` values. 
+    * Set `AZURE_ARTIFACTS_FEED_URL` to the registry URL for your Azure Artifacts feed.
     * Set the `BUILD_CONFIGURATION`. 
     * Set `DOTNET_VERSION` to the version of your project. 
 
@@ -197,7 +197,7 @@ To assign your managed identity to the **Contributor** team, follow these steps:
 ## Prerequisites
 
 - A GitHub account with a repository. [Join GitHub](https://github.com/join) and [create a repository](https://docs.github.com/en/github/getting-started-with-github/create-a-repo). 
-- An Azure Artifact feed that you'll push your NuGet package to from a GitHub workflow. [Get Started with NuGet Packages](../get-started-nuget.md).
+- An Azure Artifacts feed that you push your NuGet package to from a GitHub workflow. [Get Started with NuGet Packages](../get-started-nuget.md).
 - An Azure DevOps personal access token (PAT) to use with your GitHub action. [Create a PAT](../../organizations/accounts/use-personal-access-tokens-to-authenticate.md).
     - Your PAT needs to have read, write, and manage **Packaging** permissions.
 
@@ -210,17 +210,17 @@ To assign your managed identity to the **Contributor** team, follow these steps:
 
 [GitHub workflows](/azure/developer/github/github-actions) are a series of actions (like tasks in Azure Pipelines). This workflow:
 
-1. Sets up a .NET Core CLI environment with the [setup-dotnet action](https://github.com/actions/setup-dotnet).
+1. Sets up a .NET Core CLI environment by using the [setup-dotnet action](https://github.com/actions/setup-dotnet).
 1. Restores dependencies, builds the project and its dependencies into a set of binaries, and runs all unit tests associated with the project. 
 1. Packs the code into a NuGet package with the GitHub Run ID environmental variable included in the version number.
 1. Publishes the NuGet package to Azure Artifacts. 
 
 ### Create a new YAML file
 
-1. In your repository on GitHub, create a new YAML file in the `.github/workflows` directory.
+1. In your GitHub repository, create a new YAML file in the `.github/workflows` directory.
 
-2. Copy the following contents into your YAML file. Customize the `AZURE_ARTIFACTS_FEED_URL`, `BUILD_CONFIGURATION`, and  `DOTNET_VERSION` values. 
-    * Set `AZURE_ARTIFACTS_FEED_URL` to the registry url for your Azure Artifacts Feed.
+1. Copy the following contents into your YAML file. Customize the `AZURE_ARTIFACTS_FEED_URL`, `BUILD_CONFIGURATION`, and `DOTNET_VERSION` values. 
+    * Set `AZURE_ARTIFACTS_FEED_URL` to the registry URL for your Azure Artifacts feed.
     * Set the `BUILD_CONFIGURATION`. 
     * Set `DOTNET_VERSION` to the version of your project. 
 
@@ -286,15 +286,15 @@ To assign your managed identity to the **Contributor** team, follow these steps:
             run: dotnet nuget push bin/Release/*.nupkg --api-key AzureDevOps --source ${{ env.AZURE_ARTIFACTS_FEED_URL }}    
 
     ```
-3. Go to your Azure Artifacts feed to verify that you see the package you pushed.
+1. Go to your Azure Artifacts feed to verify that you see the package you pushed.
     
-    :::image type="content" source="media/artifacts-nuget-package.png" alt-text="Screenshot of review for new Azure Artifacts feed." lightbox="media/artifacts-nuget-package.png" ::: 
+    :::image type="content" source="media/artifacts-nuget-package.png" alt-text="Screenshot of the Azure Artifacts feed page displaying the newly published NuGet package." lightbox="media/artifacts-nuget-package.png" ::: 
 
 :::zone-end
 
 ## Clean up resources
 
-If you're not going to continue to use your GitHub workflow, [disable the workflow](https://docs.github.com/actions/managing-workflow-runs/disabling-and-enabling-a-workflow).
+If you don't plan to continue using your GitHub workflow, [disable the workflow](https://docs.github.com/actions/managing-workflow-runs/disabling-and-enabling-a-workflow).
 
 ## Next steps
 

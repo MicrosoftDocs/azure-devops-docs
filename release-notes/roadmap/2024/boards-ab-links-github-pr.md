@@ -3,7 +3,7 @@ title: AB# links to appear in Development control of the GitHub pull request
 author: danhellem
 ms.author: dahellem
 ms.date: 04/09/2024
-ms.topic: article
+ms.topic: whats-new
 ms.service: azure-devops
 ms.subservice: azure-devops-release-notes
 description: AB# links to appear in Development control of the GitHub pull request

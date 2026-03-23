@@ -7,16 +7,15 @@ ms.topic: how-to
 ms.author: chcomley
 author: chcomley
 ms.reviewer: dahellem
-monikerRange: ">= azure-devops-2020"
+monikerRange: "<=azure-devops"
 ms.date: 07/17/2020
 ---
 
 # Change a project process from Scrum to Agile
 
-[!INCLUDE [version-gt-eq-2020](../../../includes/version-gt-eq-2020.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../../includes/version-lt-eq-azure-devops.md)]
 
 You can change a project based on the Scrum process to use an inherited Agile process. This article provides the steps needed to make this change. 
-
 
 Prior to making this change, we recommend you familiarize yourself with the process you are changing to. The Task, Bug, Feature, and Epic work item types are the same for both Scrum and Agile processes. Some State and Reason field values, however, are different.
 
@@ -110,7 +109,6 @@ You can customize boards to display intermediate columns. For each column added,
 
    > [!div class="mx-imgBorder"]  
    > ![Board fixed.](media/scrum-to-agile/column-settings-fixed.png)
-
 
 ## Update work items
 

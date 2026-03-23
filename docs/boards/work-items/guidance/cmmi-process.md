@@ -51,17 +51,6 @@ All processes—Agile, Scrum, and CMMI—support building status and trend chart
 
 [!INCLUDE [temp](../../includes/powerbi-reports-links.md)] 
 
-::: moniker range="< azure-devops-2022"
-
-<a id="reports"></a>
-
-## SQL Server reports  
-
-If your project collection and project use SQL Server Analysis Services and Reporting Services, you can access many CMMI reports. For those reports to be useful, teams must perform activities such as defining build processes, linking work items to builds, and updating status and remaining work.  
-
-If you need to add reporting services or update reports to the latest versions, see Add reports to a project.  
-::: moniker-end
-
 ### CMMI process versions  
 
 As the CMMI process template evolves, its version number changes. The template provides a `version` element that specifies major and minor versions. The following table maps template versions used by Azure DevOps on-premises releases; Azure Boards (cloud) always uses the latest template.

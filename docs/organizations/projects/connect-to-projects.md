@@ -13,7 +13,7 @@ ms.date: 11/11/2024
 
 # Connect to a project
 
-[!INCLUDE [version-gt-eq-2019](../../includes/version-gt-eq-2019.md)] 
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)] 
 
 Learn how to connect to a project from a client, to share code, build apps, track work, and collaborate with team members. You can connect to a project from any of the following clients:
   

@@ -41,10 +41,10 @@ In the following example, **Progress by Work Items** shows progress bars based o
 
 | Category | Requirements |
 |--------------|-------------|
-| **Permissions** | To view delivery plans and rollup progress: Member of the **Project Collection Valid Users Group**. |
-| **Access levels** | One of the following access levels assigned: <br> - [**Basic:**](../../organizations/security/access-levels.md) Full access to all Azure Boards features, including viewing and modifying work items. <br> - **Stakeholder:** View and modify work items with limited features. |
-| **Use parent-child links** | Work items linked using parent-child relationships to support rollup. |
-| **Add required fields** | The fields you want to roll up are present in the work item types. |
+| Permissions | To view delivery plans and rollup progress: Member of the **Project Collection Valid Users Group**. |
+| Access levels | One of the following access levels assigned: <br> - [**Basic:**](../../organizations/security/access-levels.md) Full access to all Azure Boards features, including viewing and modifying work items. <br> - **Stakeholder:** View and modify work items with limited features. |
+| Use parent-child links | Work items linked using parent-child relationships to support rollup. |
+| Add required fields | The fields you want to roll up are present in the work item types. |
 
 ::: moniker-end
 
@@ -53,8 +53,8 @@ In the following example, **Progress by Work Items** shows progress bars based o
 | Category | Requirements |
 |--------------|-------------|
 |**Analytics service** |Analytics service enabled on your on-premises Azure DevOps Server. For more information, see [Install/uninstall or enable/disable the Analytics service](../../report/dashboards/analytics-extension.md).|
-| **Parent-child links** | Work items linked using parent-child relationships to support rollup. |
-| **Required fields** | The fields you want to roll up are present in the work item types. |
+| Parent-child links | Work items linked using parent-child relationships to support rollup. |
+| Required fields | The fields you want to roll up are present in the work item types. |
 
 ::: moniker-end
 

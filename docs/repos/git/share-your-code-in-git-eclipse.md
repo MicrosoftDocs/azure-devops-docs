@@ -8,9 +8,7 @@ ms.topic: quickstart
 monikerRange: '<= azure-devops'
 ms.subservice: azure-devops-repos-git
 ms.date: 05/13/2019
-ms.custom:
-  - archive-candidate
-  - sfi-image-nochange
+ms.custom: archive-candidate, sfi-image-nochange
 ---
 
 

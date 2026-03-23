@@ -8,15 +8,12 @@ author: chcomley
 ms.topic: sample
 monikerRange: "<=azure-devops"
 ms.date: 10/08/2021
-ms.custom:
-  - powerbisample
-  - engagement-fy23
-  - sfi-image-nochange
+ms.custom: powerbisample, engagement-fy23, sfi-image-nochange
 ---
 
 # List linked work items sample queries and reports
 
-[!INCLUDE [version-gt-eq-2019](../../includes/version-gt-eq-2019.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 This article shows you how to create a report that lists work items linked to other work items. For example, the following report shows a list of Features that are linked to User Stories with the parent-child link type.  
 

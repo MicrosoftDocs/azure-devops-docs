@@ -3,6 +3,7 @@ title: Bi-directional traceability between Releases and Jira issues - Sprint 154
 author: gloridelmorales
 ms.author: glmorale
 ms.date: 07/08/2019
+ms.topic: release-notes
 description: In the **Sprint 154 Update** of Azure DevOps, we are releasing the Azure Pipelines for Jira app to the Atlassian marketplace. 
 ---
 

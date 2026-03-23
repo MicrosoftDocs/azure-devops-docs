@@ -54,14 +54,6 @@ All processes—Agile, Scrum, and CMMI—support building status and trend chart
 [!INCLUDE [temp](../../includes/powerbi-reports-links.md)] 
 
 <a id="reports"></a>
-::: moniker range="< azure-devops-2022"
-
-## Scrum process and SQL Server reports
-
-If your project collection and project use SQL Server Analysis Services and Reporting Services, you can access many Scrum reports. For those reports to be useful, teams must complete activities such as defining build processes, linking work items to builds, and updating status or remaining work.
-
-If you need to add reporting services or update reports to supported versions, see [Add reports to a project](/previous-versions/azure/devops/report/admin/add-reports-to-a-team-project).  
-::: moniker-end
 
 <a id="dashboards"></a>
 

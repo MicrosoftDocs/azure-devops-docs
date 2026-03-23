@@ -4,6 +4,7 @@ author: gloridelmorales
 ms.author: glmorale
 ms.date: 6/27/2022
 description: Opt-in to receive notifications related to personal access tokens found in a GitHub public repository.  
+ms.topic: release-notes
 ---
 # Opt-in to receive notifications related to personal access tokens found in a GitHub public repository
 

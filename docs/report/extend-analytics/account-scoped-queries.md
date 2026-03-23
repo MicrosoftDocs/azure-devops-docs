@@ -12,7 +12,7 @@ ms.date: 02/12/2025
 
 # Project and organization-scoped queries
 
-[!INCLUDE [version-gt-eq-2019](../../includes/version-gt-eq-2019.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 Using Analytics for Azure DevOps, you can construct queries that are scoped to a project or an organization or collection. You can run these queries directly in your browser or within Power BI. 
 

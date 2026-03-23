@@ -14,7 +14,7 @@ ms.date: 10/27/2025
 
 # Data model for Analytics  
 
-[!INCLUDE [version-gt-eq-2019](../../includes/version-gt-eq-2019.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 The Analytics data model for Azure DevOps consists of entity sets, whose members (entities) contain properties that you can filter, aggregate, and summarize. Additionally, they contain [navigation properties](https://www.odata.org/getting-started/basic-tutorial/#relationship) that relate entities to one other, providing access to other properties for selecting, filtering, and grouping.
 
@@ -108,7 +108,7 @@ When building reports, consider these primary entity sets:
 - **Detailed change tracking**: Use `WorkItemRevisions` for comprehensive history
 - **Board-specific reports**: Use `WorkItemBoardSnapshot` for Kanban board analysis
 
-::: moniker range=">= azure-devops-2020"
+::: moniker range="<=azure-devops"
 
 ## Pipelines entity types and entity sets
 
@@ -138,7 +138,7 @@ Different pipeline entities serve specific reporting scenarios:
  
 ::: moniker-end
 
-::: moniker range=">= azure-devops-2020"
+::: moniker range="<=azure-devops"
 
 ## Test entity types and entity sets
 

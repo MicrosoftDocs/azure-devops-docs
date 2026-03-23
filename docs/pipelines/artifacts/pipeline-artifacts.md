@@ -346,6 +346,24 @@ steps:
 - download: none
 ```
 
+## Artifact selection in deployments
+
+When you deploy artifacts by using YAML pipelines, the deployment panel helps you select the correct pipeline artifact to deploy.
+
+The deployment panel shows which pipeline artifact you selected for deployment. You can also configure parameters first so that they apply before you determine the pipeline artifact to deploy. This process gives you confidence that the correct artifact is deployed. The artifact selection is based on:
+
+- The most recent successful run (by default)
+- Parameters you configured in the previous step
+- Any branch filters you apply
+
+If you want to deploy an artifact from a specific branch, use the branch selector in the deployment panel to narrow down your options. To deploy only artifacts from the `main` branch:
+
+1. In the **Run pipeline** panel, select **Next: Resources**.
+1. In the branch selector, choose your target branch.
+1. The available artifacts are filtered to show only those from the selected branch.
+
+:::image type="content" source="media/filter-pipeline-branch.png" alt-text="Screenshot of Pipeline run panel and selecting an available artifact. ":::
+
 ## Use Artifacts across stages
 
 If you want to be able to access your artifact across different stages in your pipeline, you can now publish your artifact in one stage and then download it in the next stage leveraging dependencies. See [Stage to stage dependencies](../process/expressions.md#dependencies) for more details.

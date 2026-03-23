@@ -149,5 +149,16 @@ landingContent:
             url: ./analytics/entity-reference-boards.md
           - text: Quick reference guide
             url: ./dashboards/quick-ref.md
-
+  - title: Troubleshoot
+    linkLists:
+      - linkListType: how-to-guide
+        links:
+          - text: Troubleshoot Analytics views
+            url: ./powerbi/troubleshooting-views.md
+      - linkListType: concept
+        links:
+          - text: Dashboards FAQs
+            url: ./dashboards/faqs.yml
+          - text: All troubleshooting guides & FAQs
+            url: ../troubleshoot/index.yml
 

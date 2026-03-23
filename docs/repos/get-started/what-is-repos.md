@@ -3,7 +3,7 @@ title: Collaborate on code
 titleSuffix: Azure Repos
 description: What do you get with Azure Repos  
 ms.subservice: azure-devops-new-user
-ms.date: 01/02/2024
+ms.date: 02/16/2026
 ms.topic: overview
 monikerRange: '<= azure-devops'
 ---
@@ -23,6 +23,8 @@ Azure Repos provides two types of version control:
 
 - [Git](#git): distributed version control
 - [Team Foundation Version Control (TFVC)](#tfvc): centralized version control
+
+[!INCLUDE [ai-assistance-callout](../../includes/ai-assistance-callout.md)]
 
 ## Git
 

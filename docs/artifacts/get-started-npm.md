@@ -5,13 +5,13 @@ ms.service: azure-devops-artifacts
 ms.topic: quickstart
 ms.assetid: 5BFBA0C3-85ED-40C9-AC5F-F686923160D6
 ms.date: 06/17/2025
-monikerRange: '>= azure-devops-2020'
+monikerRange: "<=azure-devops"
 "recommendations": "true"
 ---
 
 # Publish and download npm packages with Azure Artifacts
 
-[!INCLUDE [version-gt-eq-2020](../includes/version-gt-eq-2020.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../includes/version-lt-eq-azure-devops.md)]
 
 With Azure Artifacts, you can publish and download npm packages from both your own feeds and public registries such as npmjs.com. This quickstart guides you through creating a feed, configuring your project, and managing npm packages using Azure Artifacts.
 
@@ -47,7 +47,6 @@ This setup lets you share your configuration file without exposing your credenti
 
 ::: moniker-end
 
-
 ::: moniker range="azure-devops-2022"
 
 > [!NOTE]
@@ -62,24 +61,6 @@ This setup lets you share your configuration file without exposing your credenti
 1. Under the **Project setup** section, select **Windows** or **Other** depending on your operating system, then follow the provided instructions to configure your config file and connect to your Azure Artifacts feed.
 
    :::image type="content" source="media/npm-project-setup-server-2022-1.png" alt-text="A screenshot displaying how to set up an npm project and connect to an Azure Artifacts feed in Azure DevOps Server 2022.":::
-
-::: moniker-end
-
-
-::: moniker range="azure-devops-2020"
-
-> [!NOTE]
-> The `vsts-npm-auth` is not supported in Azure DevOps Server.
-
-1. Sign in to your Azure DevOps collection, and then navigate to your project.
-
-1. Select **Artifacts**, select your feed from the dropdown menu, and then select **Connect to feed**.
-
-1. In the left navigation pane, select **npm**. If this is your first time using Azure Artifacts with npm, make sure you've installed the prerequisites.
-
-1. Under the **Project setup** section, select **Windows** or **Other** depending on your operating system, then follow the provided instructions to configure your config file and connect to your Azure Artifacts feed.
-
-   :::image type="content" source="media/npm-project-setup-server-2020-1.png" alt-text="A screenshot that shows how to set up an npm project and connect to an Azure Artifacts feed in Azure DevOps Server 2020.":::
 
 ::: moniker-end
 

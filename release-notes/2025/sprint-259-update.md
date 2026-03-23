@@ -4,6 +4,7 @@ author: gloridelmorales
 ms.author: glmorale
 ms.date: 7/17/2025
 description: New Boards Hub enabled for all customers across all regions
+ms.topic: release-notes
 ---
 
 # New Boards Hub enabled for all customers across all regions 

@@ -3,7 +3,7 @@ title: Service connections in checks
 author: gloridelmorales
 ms.author: glmorale
 ms.date: 10/12/2022
-ms.topic: article
+ms.topic: concept-article
 ms.service: azure-devops
 ms.subservice: azure-devops-release-notes
 description: Service connections in checks

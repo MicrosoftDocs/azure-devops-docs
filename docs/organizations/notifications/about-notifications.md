@@ -7,7 +7,7 @@ ms.custom: quarterly-update, engagement-fy23
 ms.author: chcomley
 author: chcomley
 ms.topic: concept-article
-ms.date: 05/08/2025
+ms.date: 02/17/2026
 #customer intent: As a developer, I want to configure and manage notifications in Azure DevOps organizations so I can stay informed and improve collaboration within my development teams.
 ---
 
@@ -18,6 +18,8 @@ ms.date: 05/08/2025
 Notifications in Azure DevOps keep you and your team informed about project activity, including changes to work items, code reviews, pull requests, source control files, and builds. When an event occurs in Azure DevOps, the event content is compared with every subscription of that event type. A notification is generated for every subscription/event match that meets the filter conditions. Notifications are delivered through email or service hook, based on the delivery properties defined in the subscription. 
 
 For more information, see the list of [supported event types](oob-supported-event-types.md) and [learn more about email delivery options](concepts-email-recipients.md).
+
+[!INCLUDE [ai-assistance-callout](../../includes/ai-assistance-callout.md)]
 
 ## Notification types
 
@@ -48,14 +50,14 @@ For team and project-level notifications, you can create a subscription for the 
 
 |Category |Templates |
 |---------|----------|
-| **Build** | _Build completes_, _Build fails_, <br> _Status changes for legacy XAML build controller or agent_, <br> _Quality changes for legacy XAML build_ |
-| **Code (Git)** | _Commit pushed_, _Comment added to pull request_, <br> _Pull request created or updated_, <br> _Pull request in review by my team updated_ |
-| **Code (TFVC)** | _Code checked in_, _Code checked in with policy override_, <br> _Changes to code review_, _File in specific path checked in_, <br> _File with specific extension checked in_  |
-| **Pipelines** | _Run stage waiting for approval_, <br> _Run stage waiting for manual validation_ |
-| **Work** | _Work item created_, _Work item changed_, _Work item deleted_, <br> _Work item restored_, _Work item moved from this team project_ |
-| **Artifacts** | _Package changed_ |
-| **Extension management** | _Extension modified_ |
-| **Release** | _Deployment approval pending_, _Deployment completes_, <br> _Release creation request fails_, <br> _Manual intervention for deployment pending_ |
+| Build | _Build completes_, _Build fails_, <br> _Status changes for legacy XAML build controller or agent_, <br> _Quality changes for legacy XAML build_ |
+| Code (Git) | _Commit pushed_, _Comment added to pull request_, <br> _Pull request created or updated_, <br> _Pull request in review by my team updated_ |
+| Code (TFVC) | _Code checked in_, _Code checked in with policy override_, <br> _Changes to code review_, _File in specific path checked in_, <br> _File with specific extension checked in_  |
+| Pipelines | _Run stage waiting for approval_, <br> _Run stage waiting for manual validation_ |
+| Work | _Work item created_, _Work item changed_, _Work item deleted_, <br> _Work item restored_, _Work item moved from this team project_ |
+| Artifacts | _Package changed_ |
+| Extension management | _Extension modified_ |
+| Release | _Deployment approval pending_, _Deployment completes_, <br> _Release creation request fails_, <br> _Manual intervention for deployment pending_ |
 
 > [!NOTE]
 > You can also create a custom notification subscription for pull requests created or updated in a **draft state**. For more information, see [Custom notification subscription for draft pull requests](/azure/devops/release-notes/2020/repos/sprint-165-update#custom-notification-subscription-for-draft-pull-requests).

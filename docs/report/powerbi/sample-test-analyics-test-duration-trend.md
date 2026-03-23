@@ -9,13 +9,13 @@ ms.author: chcomley
 ms.custom: powerbisample, engagement-fy23
 author: chcomley
 ms.topic: sample
-monikerRange: '>= azure-devops-2020'  
+monikerRange: "<=azure-devops"
 ms.date: 01/25/2023
 ---
 
 # Test duration trend sample report
 
-[!INCLUDE [version-gt-eq-2020](../../includes/version-gt-eq-2020.md)] 
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)] 
 
 Test duration trend reports, similar to the one shown in the following image, provide insight into the day-wise trend of the average time taken to execute a test for a selected time range. For information on adding tests to a pipeline, see the [Test task resources](#test-task-resources) section later in this article. 
 
@@ -27,7 +27,6 @@ Test duration trend reports, similar to the one shown in the following image, pr
 [!INCLUDE [prerequisites-simple](../includes/analytics-prerequisites-simple.md)]
 
 [!INCLUDE [temp](includes/sample-required-reading.md)]
-
 
 ## Sample queries
 
@@ -92,10 +91,8 @@ TotalDuration div TotalCount as AvgDuration)
 - `{pipelinename}` - Your pipeline name. Example: `Fabrikam hourly build pipeline`
 - `{startdate}` - The date to start your report. Format: YYYY-MM-DDZ. Example: `2022-09-01Z` represents September 1, 2022. Don't enclose in quotes or brackets and use two digits for both, month and date.
 
-
 > [!TIP]  
 > Depending on the number of tests added to a pipeline, the data returned can be significant. We recommend that you use a `{startdate}` for a few days to gauge the amount of data returned and adjust accordingly.
-
 
 ### Query breakdown
 

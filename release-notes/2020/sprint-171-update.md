@@ -4,6 +4,7 @@ author: sid-ah
 ms.author: simerzou
 ms.date: 06/18/2020
 description: With this sprint 171, we are bringing a long-awaited feature that customers have asked for as we are adding support for Linux/ARM64 in Azure Pipelines.
+ms.topic: release-notes
 ---
 
 # Azure Pipelines introduces support for Linux/ARM64

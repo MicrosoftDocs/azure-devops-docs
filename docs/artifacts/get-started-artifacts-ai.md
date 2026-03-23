@@ -8,7 +8,7 @@ author: ramiMSFT
 ms.date: 08/08/2025
 ms.update-cycle: 180-days
 ms.collection: ce-skilling-ai-copilot
-monikerRange: '>= azure-devops-2020'
+monikerRange: "<=azure-devops"
 ---
 
 # Publish your first package to an Azure Artifacts feed
@@ -42,7 +42,7 @@ If you already have a feed, you can skip this section. Otherwise, follow the ste
 
 ::: moniker-end
 
-::: moniker range="azure-devops-2022 || azure-devops-2020"
+::: moniker range="=azure-devops-2022"
 
 1. Sign in to your Azure DevOps collection, and then navigate to your project.
 
@@ -57,14 +57,6 @@ If you already have a feed, you can skip this section. Otherwise, follow the ste
 4. Select **Create** when you're done.
 
     :::image type="content" source="media/create-new-feed-server-2022.png" alt-text="A screenshot displaying how to create a new feed in Azure DevOps Server 2022.":::
-
-::: moniker-end
-
-::: moniker range="azure-devops-2020"
-
-4. Select **Create** when you're done.
-
-    :::image type="content" source="media/create-new-feed-server-2020.png" alt-text="A screenshot displaying how to create a new feed in Azure DevOps Server 2020.":::
 
 ::: moniker-end
 
@@ -179,7 +171,7 @@ Follow the steps below to set up your project and connect to your Azure Artifact
 
 ::: moniker-end
 
-::: moniker range="azure-devops-2020 || azure-devops-2022"
+::: moniker range="=azure-devops-2022"
 
 1. Sign in to your Azure DevOps collection, and then navigate to your project.
 

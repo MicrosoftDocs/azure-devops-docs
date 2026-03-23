@@ -8,13 +8,13 @@ ms.topic: overview
 ms.author: chcomley
 author: chcomley
 monikerRange: "<=azure-devops"
-ms.date: 08/07/2025
+ms.date: 02/25/2026
 #customer intent: As an Azure DevOps developer, I want to use GitHub with Azure Boards, so I can manage code in GitHub and link to GitHub commits, pull requests, and issues in Azure Boards.
 ---
 
 # What is the Azure Boards-GitHub integration?
 
-[!INCLUDE [version-gt-eq-2020](../../includes/version-gt-eq-2020.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 Stay aligned and coordinated with Azure Boards and link your code activity and issues from GitHub. This article provides an overview of the integration between Azure Boards and GitHub.
 
@@ -31,31 +31,23 @@ Azure DevOps Services supports up to 500 GitHub repository connections per conne
 
 - [Connect an Azure Boards project to one or more GitHub repositories](connect-to-github.md)
 
-::: moniker range="< azure-devops-2022"
-- [Connect Azure DevOps Server to GitHub Enterprise Server (on-premises)](connect-on-premises-to-github.md)
-::: moniker-end
-
-:::moniker range="azure-devops-2020"
-
-> [!NOTE]   
-> When you install the Azure DevOps Server 2020.1.1 Patch 2, you can create connections from your Azure DevOps Server to GitHub.com repositories in addition to GitHub Enterprise Server repositories.
-
-:::moniker-end
-
 ## Integration features
 
 Azure Boards-GitHub integration supports the following features:
 
 | Feature | Description | More information |
 |---------|-------------|------------------|
-| **Transition work items** | Transition work items to a "Done" or "Completed" state with the `fix`, `fixes`, or `fixed` commands in GitHub. | [Use AB# to link from GitHub to Azure Boards work items](link-to-from-github.md#use-ab-to-link-from-github-to-azure-boards-work-items) |
-| **Add comments** | Post a comment to a GitHub commit, pull request, or issue when linked to a work item. | [Communicating on GitHub](https://docs.github.com/get-started/using-github/communicating-on-github) | 
-| **Link from work items** | Add work item links to a GitHub branch, commit, or pull request. | [Link GitHub commits, pull requests, branches, and issues to work items in Azure Boards](link-to-from-github.md#link-work-item-to-branch-commit-pr) |
-| **View GitHub objects** | Work with GitHub annotations on the board and quickly open linked GitHub commits, pull requests, or issues. | [View GitHub objects on a board](link-to-from-github.md#view-github-objects-on-board) |
-| **Configure status badges** | Add Markdown syntax to the GitHub repository _README.md_ file and show your board status. | [Add status badges for your GitHub repo](configure-status-badges.md) |
-| **Manage repository access** | Choose whether all repositories or only repositories you specify can participate in the Azure Boards-GitHub integration. | [Change repository access](install-github-app.md#change-repository-access) |
-| **Troubleshoot integration** | Troubleshoot any issues in the Azure Boards-GitHub integration with your repositories. | [Resolve connection issues](connect-to-github.md#resolve-connection-issues) |
-| **Enable DevSecOps** | Configure support for DevSecOps (or _Secure DevOps_), secure your code with GitHub, so you can safely track your work in Azure Boards. | [Enable DevSecOps with Azure and GitHub](/devops/devsecops/enable-devsecops-azure-github) |
+| Transition work items | Transition work items to a "Done" or "Completed" state with the `fix`, `fixes`, or `fixed` commands in GitHub. | [Use AB# to link from GitHub to Azure Boards work items](link-to-from-github.md#use-ab-to-link-from-github-to-azure-boards-work-items) |
+| Add comments | Post a comment to a GitHub commit, pull request, or issue when linked to a work item. | [Communicating on GitHub](https://docs.github.com/get-started/using-github/communicating-on-github) | 
+| Link from work items | Add work item links to a GitHub branch, commit, or pull request by searching and drilling down within a repository. | [Link GitHub commits, pull requests, branches, and issues to work items in Azure Boards](link-to-from-github.md#link-work-item-to-branch-commit-pr) |
+| View GitHub objects | Work with GitHub annotations on the board and quickly open linked GitHub commits, pull requests, or issues. | [View GitHub objects on a board](link-to-from-github.md#view-github-objects-on-board) |
+| Pull request insights | View draft status, review status, and Checks status for linked GitHub pull requests directly from the Development section. | [GitHub pull request insights](link-to-from-github.md#github-pull-request-insights) |
+| Mention GitHub pull requests | Use `!` mentions to reference and discuss GitHub pull requests from any work item text field or comment. | [Mention GitHub pull requests](link-to-from-github.md#mention-github-pull-requests) |
+| Build traceability for YAML pipelines | Automatically create *Integrated in build* links on work items when using Azure Pipelines YAML with a GitHub repository. | [View build status for YAML pipelines](link-to-from-github.md#view-build-status-for-yaml-pipelines-integrated-in-build) |
+| Configure status badges | Add Markdown syntax to the GitHub repository _README.md_ file and show your board status. | [Add status badges for your GitHub repo](configure-status-badges.md) |
+| Manage repository access | Choose whether all repositories or only repositories you specify can participate in the Azure Boards-GitHub integration. | [Change repository access](install-github-app.md#change-repository-access) |
+| Troubleshoot integration | Troubleshoot any issues in the Azure Boards-GitHub integration with your repositories. | [Resolve connection issues](connect-to-github.md#resolve-connection-issues) |
+| Enable DevSecOps | Configure support for DevSecOps (or _Secure DevOps_), secure your code with GitHub, so you can safely track your work in Azure Boards. | [Enable DevSecOps with Azure and GitHub](/devops/devsecops/enable-devsecops-azure-github) |
 
 ## Connection tasks 
 

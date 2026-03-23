@@ -4,6 +4,7 @@ author: gloridelmorales
 ms.author: glmorale
 ms.date: 4/20/2022
 description: New Boards Hub is now available in public preview.  
+ms.topic: release-notes
 ---
 # New Boards Hubs public preview
 

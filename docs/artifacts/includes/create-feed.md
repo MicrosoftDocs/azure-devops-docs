@@ -21,7 +21,7 @@ ms.date: 03/15/2024
 
 ::: moniker-end
 
-::: moniker range="azure-devops-2022 || azure-devops-2020"
+::: moniker range="=azure-devops-2022"
 
 1. Sign in to your Azure DevOps server, and then go to your project.
 
@@ -36,14 +36,6 @@ ms.date: 03/15/2024
 4. Select **Create** when you're done.
 
     :::image type="content" source="../media/create-new-feed-server-2022.png" alt-text="Screenshot that shows selections for creating a new feed in Azure DevOps 2022.":::
-
-::: moniker-end
-
-::: moniker range="azure-devops-2020"
-
-4. Select **Create** when you're done.
-
-    :::image type="content" source="../media/create-new-feed-server-2020.png" alt-text="Screenshot that shows selections for creating a new feed in Azure DevOps 2020.":::
 
 ::: moniker-end
 

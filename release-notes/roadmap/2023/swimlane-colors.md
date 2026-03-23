@@ -3,7 +3,7 @@ title: Swimlane colors on Kanban board
 author: danhellem
 ms.author: dahellem
 ms.date: 12/28/2022
-ms.topic: article
+ms.topic: whats-new
 ms.service: azure-devops
 ms.subservice: azure-devops-release-notes
 description: Swimlane colors on Kanban board

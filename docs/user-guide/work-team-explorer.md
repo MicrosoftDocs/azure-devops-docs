@@ -8,7 +8,7 @@ ms.assetid: fd7a5cf7-7916-4fa0-b5e6-5a83cf377a02
 ms.author: chcomley
 author: chcomley
 ms.topic: concept-article
-monikerRange: 'azure-devops-2020 || azure-devops-2022'
+monikerRange: "=azure-devops-2022"
 ms.date: 05/01/2025
 #customer intent: As a developer, I want to work with Team Explorer in Visual Studio, so I can build and manage pipelines from the Web Portal and Task Board, and use Git or Team Foundation version control (TFVC).
 ---
@@ -57,11 +57,6 @@ From the Team Explorer **Connect** page, you can select the projects you want to
 :::image type="content" source="media/vs-2022-te/manage-connections.png" border="false" alt-text="Screenshot of the Team Explorer pane in Visual Studio 2022 showing the Manage Connections option highlighted.":::
 
 ::: moniker-end
-::: moniker range="azure-devops-2020"
-
-:::image type="content" source="media/vs-2019-te/manage-connections.png" border="false" alt-text="Screenshot of the Team Explorer pane in Visual Studio 2019 showing the Manage Connections option highlighted.":::
-
-::: moniker-end
 
 The Git and TFVC repos support different pages and functions. For a comparison of the two version control systems, see [Choosing the right version control for your project](../repos/tfvc/comparison-git-tfvc.md). 
 
@@ -72,11 +67,6 @@ Team Explorer provides the **Web Portal** and **Task Board** features to support
 ::: moniker range="azure-devops-2022"
 
 :::image type="content" source="media/vs-2022-te/web-portal-task-board.png" border="false" alt-text="Screenshot of Team Explorer Home page for Visual Studio 2022 showing Web Portal and Task Board features highlighted.":::
-
-::: moniker-end
-::: moniker range="azure-devops-2020"
-
-:::image type="content" source="media/vs-2019-te/web-portal-task-board.png" border="false" alt-text="Screenshot of Team Explorer Home page for Visual Studio 2019 showing Web Portal and Task Board features highlighted.":::
 
 ::: moniker-end
 
@@ -91,11 +81,6 @@ Project users can access specific content in the **Work Items** and **Builds** s
 ::: moniker range="azure-devops-2022"
 
 :::image type="content" source="media/vs-2022-te/work-items-builds.png" border="false" alt-text="Screenshot of Team Explorer Home page for Visual Studio 2022 showing the Work Items and Builds features highlighted.":::
-
-::: moniker-end
-::: moniker range="azure-devops-2020"
-
-:::image type="content" source="media/vs-2019-te/work-items-builds.png" border="false" alt-text="Screenshot of Team Explorer Home page for Visual Studio 2019 showing the Work Items and Builds features highlighted.":::
 
 ::: moniker-end
 
@@ -115,7 +100,7 @@ Project users can access specific content in the **Work Items** and **Builds** s
    - [Set the Work Items experience in Visual Studio](../boards/work-items/set-work-item-experience-vs.md).
 
    ::: moniker-end
-   ::: moniker range=">= azure-devops-2020"
+   ::: moniker range="<=azure-devops"
 
    For all Visual Studio versions (Legacy), the following resources are available:
    
@@ -138,13 +123,6 @@ In Visual Studio 2022, the Git features are located on separate panes from Team 
 :::image type="content" source="media/vs-2022-te/git-changes-no-open-repository.png" border="false" alt-text="Screenshot of Visual Studio 2022 showing the Team explorer pane, the Git Changes pane, and the Git Repository pane." lightbox="media/vs-2022-te/git-changes-no-open-repository.png":::
 
 You can also open the panes from the **View** menu or by using the keyboard shortcuts: **Git Changes** (**Ctrl**+**O**, **Ctrl**+**G**) and **Git Repository** (**Ctrl**+**O**, **Ctrl**+**R**).
-
-::: moniker-end
-::: moniker range="azure-devops-2020"
-
-In Visual Studio 2019 and earlier, the Git features are available on the Team Explorer **Home** pane:
-
-:::image type="content" source="media/vs-2019-te/git-features.png" border="false" alt-text="Screenshot of Team Explorer Home page for Visual Studio 2019 showing the Git features highlighted.":::
 
 ::: moniker-end
 
@@ -188,11 +166,6 @@ You can configure administrative features for a project or project collection by
 ::: moniker range="azure-devops-2022"
 
 :::image type="content" source="media/vs-2022-te/settings.png" alt-text="Screenshot of Team Explorer Home page for Visual Studio 2022 showing the Settings option highlighted.":::
-
-::: moniker-end
-::: moniker range="azure-devops-2020"
-
-:::image type="content" source="media/vs-2019-te/settings.png" alt-text="Screenshot of Team Explorer Home page for Visual Studio 2019 showing the Settings option highlighted.":::
 
 ::: moniker-end
 

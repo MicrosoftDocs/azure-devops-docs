@@ -14,7 +14,7 @@ ms.date: 02/02/2022
 
 # Configure the Test Results Trend (Advanced) widget
 
-[!INCLUDE [version-gt-eq-2019](../../includes/version-gt-eq-2019.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 Teams track their test collateral health to ensure effective continuous testing in a pipeline. For example, teams might track:
 - Test pass percentage

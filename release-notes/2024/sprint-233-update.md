@@ -4,6 +4,7 @@ author: ckanyika
 ms.author: glmorale
 ms.date: 1/19/2024
 description: General availability of Team automation rules and improved AB# validation
+ms.topic: release-notes
 ---
 # General availability of Team automation rules and improved AB# validation
 

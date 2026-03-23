@@ -11,7 +11,7 @@ monikerRange: "<=azure-devops"
 
 # Deploy pull request Artifacts with classic release pipelines
 
-[!INCLUDE [version-gt-eq-2019](../../includes/version-gt-eq-2019.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 Pull requests provide an effective way to review code changes before merging them into the codebase. However, these changes can introduce issues that can be tricky to find without building and deploying the application to a specific environment. Pull request triggers enable you to define a set of criteria that must be met before deployment. This article explains how to set up pull request triggers with Azure Repos and GitHub repositories to deploy pipeline artifacts using Classic release pipelines.
 

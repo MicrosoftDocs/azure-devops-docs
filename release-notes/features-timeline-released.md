@@ -2,8 +2,8 @@
 title: Azure DevOps Released Features
 author: gloridelmorales
 ms.author: glmorale
-ms.date: 11/25/2025
-ms.topic: article
+ms.date: 3/5/2026
+ms.topic: release-notes
 ms.service: azure-devops
 ms.subservice: azure-devops-release-notes
 description: Azure DevOps release notes and server build numbers
@@ -37,6 +37,55 @@ You can also [view the build numbers for each version](#azure-devops-server-buil
             <th>Server</th>
         </tr>
     </thead>
+<tr>
+    <td rowspan="7"><a href="2026/sprint-270-update.md" data-raw-source="[5 March 2026](2026/sprint-270-update.md)">March 5 2026</a></td>
+    <td>Secret push protection bypass details available in audit log</td><td>GitHub Advanced Security for Azure DevOps</td><td>N/A</td></tr>
+    <td>Retirement of Global Personal Access Tokens in Azure DevOps</td><td>General</td><td>Future</td></tr>
+    <td>Auto-complete pull requests by default</td><td>General</td><td>Future</td></tr>
+    <td>Condensed card display on Kanban and sprint boards</td><td>Boards</td><td>Future</td></tr>
+    <td>Auto-complete pull requests by default</td><td>Repos</td><td>Future</td></tr>
+    <td>New repository setting for pull request ID in commit messages</td><td>Repos</td><td>Future</td></tr>
+    <td>New entry point for exploratory sessions</td><td>Test Plans</td><td>Future</td></tr>
+<tr>
+<tr>
+    <td rowspan="7"><a href="2026/sprint-269-update.md" data-raw-source="[11 February 2026](2026/sprint-269-update.md)">February 11 2026</a></td>
+    <td>Permissions enforcement in security overview</td><td>GitHub Advanced Security for Azure DevOps</td><td>N/A</td></tr>
+    <td>Build identity access restricted for Advanced Security APIs</td><td>GitHub Advanced Security for Azure DevOps</td><td>N/A</td></tr>
+    <td>Stale scan detection in security overview coverage</td><td>GitHub Advanced Security for Azure DevOps</td><td>N/A</td></tr>
+    <td>Azure Boards integration with GitHub Copilot now supports custom agents</td><td>Boards</td><td>Future</td></tr>
+    <td>Increased maximum limit for connected GitHub repositories</td><td>Boards</td><td>Future</td></tr>
+    <td>Improved Git policy configuration API</td><td>Repos</td><td>N/A</td></tr>
+    <td>Improved pipeline run debugging</td><td>Pipelines</td><td>Future</td></tr>
+<tr>
+<tr>
+    <td rowspan="15"><a href="2026/sprint-268-update.md" data-raw-source="[26 January 2026](2026/sprint-268-update.md)">January 26 2026</a></td>
+    <td>CodeQL default setup now in private preview</td><td>GitHub Advanced Security for Azure DevOps</td><td>N/A</td></tr>
+    <td>CodeQL build task updated to Node.js v24</td><td>GitHub Advanced Security for Azure DevOps</td><td>N/A</td></tr>
+    <td>CodeQL autobuild task deprecated</td><td>GitHub Advanced Security for Azure DevOps</td><td>N/A</td></tr>
+    <td>Service hooks event for secret validation status</td><td>GitHub Advanced Security for Azure DevOps</td><td>N/A</td></tr>
+    <td>Secrets tab is now the default in repository view</td><td>GitHub Advanced Security for Azure DevOps</td><td>N/A</td></tr>
+    <td>Work item linking API for alerts</td><td>GitHub Advanced Security for Azure DevOps</td><td>N/A</td></tr>
+    <td>General availability of GitHub Copilot integration for Azure Boards</td><td>Boards</td><td>Future</td></tr>
+    <td>Breaking Change: Disabling of obsolete TFVC check-in policies</td><td>Repos</td><td>Future</td></tr>
+    <td>Pull request notification improvements</td><td>Repos</td><td>Future</td></tr>
+    <td>Pull request templates for multi-level branches</td><td>Repos</td><td>Future</td></tr>
+    <td>New Test Run hub</td><td>Test Plans</td><td>Future</td></tr>
+    <td>Improved test case import wizard</td><td>Test Plans</td><td>Future</td></tr>
+    <td>Focused test point history panel</td><td>Test Plans</td><td>Future</td></tr>
+    <td>Recent test result in user story</td><td>Test Plans</td><td>Future</td></tr>
+    <td>Resume is now the default action for paused test cases</td><td>Test Plans</td><td>Future</td></tr>
+<tr>
+<tr>
+    <td rowspan="8"><a href="2025/sprint-266-update.md" data-raw-source="[19 December 2025](2025/sprint-266-update.md)">December 19 2025</a></td>
+    <td>Secret asset metadata generally available via API</td><td>GitHub Advanced Security for Azure DevOps</td><td>N/A</td></tr>
+    <td>Code scanning now supports Rust</td><td>GitHub Advanced Security for Azure DevOps</td><td>N/A</td></tr>
+    <td>Expanded CodeQL buildless scanning for C/C++</td><td>GitHub Advanced Security for Azure DevOps</td><td>N/A</td></tr>
+    <td>Disabling the save operation for obsolete TFVC policies</td><td>Repos</td><td>Future</td></tr>
+    <td>Clearer artifact selection for YAML CD deployments</td><td>Pipelines</td><td>Future</td></tr>
+    <td>Associate test cases from work item is now generally available</td><td>Test Plans</td><td>Future</td></tr>
+    <td>Support for data-driven tests with VSTest task</td><td>Test Plans</td><td>Future</td></tr>
+    <td>Bug fixes and accessibility improvements</td><td>Test Plans</td><td>Future</td></tr>
+<tr>
 <tr>
     <td rowspan="7"><a href="2025/sprint-265-update.md" data-raw-source="[25 November 2025](2025/sprint-265-update.md)">November 25 2025</a></td>
     <td>Group rules now apply to existing users</td><td>General</td><td>N/A</td></tr>
@@ -169,7 +218,7 @@ You can also [view the build numbers for each version](#azure-devops-server-buil
     <td>Service hooks for GitHub Advanced Security alerts for Azure DevOps (preview)</td><td>GitHub Advanced Security for Azure DevOps</td><td>N/A</td></tr>
     <td>pnpm 9 support comes to GitHub Advanced Security for Azure DevOps dependency scanning </td><td>GitHub Advanced Security for Azure DevOps</td><td>N/A</td></tr>
     <td>Hosted image updates</td><td>Pipelines</td><td>Future</td></tr>
-    <td>Workload identity federation uses Entra issuer</td><td>Pipelines</td><td>Future</td></tr>
+    <td>Workload identity federation uses Entra issuer</td><td>Pipelines</td><td>N/A</td></tr>
     <td>Gradle@4 task</td><td>Pipelines</td><td>Future</td></tr>
     <td>Identity of user who requested a stage to run</td><td>Pipelines</td><td>Future</td></tr>
     <td>Improvements on the Publish code coverage results v2 task</td><td>Test Plans</td><td>Azure DevOps Server</td></tr>
@@ -238,7 +287,7 @@ You can also [view the build numbers for each version](#azure-devops-server-buil
     <td>Configure target branches for pull requests</td><td>Repos</td><td>Azure DevOps Server</td></tr>
     <td>Support mermaid diagrams in markdown file preview</td><td>Repos</td><td>Azure DevOps Server</td></tr>
     <td>Ubuntu 24.04 on Azure Pipelines hosted agents</td><td>Pipelines</td><td>Future</td></tr>
-    <td>Use Workload identity federation in Azure integration tests</td><td>Pipelines</td><td>Future</td></tr>
+    <td>Use Workload identity federation in Azure integration tests</td><td>Pipelines</td><td>N/A</td></tr>
     <td>New Azure service connection creation experience with improved Managed identity support</td><td>Pipelines</td><td>Future</td></tr>
     <td>Run children stages when parent stage fails</td><td>Pipelines</td><td>Future</td></tr>
     <td>Authentication to Azure Artifacts using a public feed and Cargo</td><td>Artifacts</td><td>N/A</td></tr>
@@ -289,7 +338,7 @@ You can also [view the build numbers for each version](#azure-devops-server-buil
     <td>New authentication format for Azure DevOps personal access tokens available</td><td>General</td><td>Future</td></tr>
     <td>Automated self-hosted agent install for code scanning bits in Advanced Security</td><td>GitHub Advanced Security for Azure DevOps</td><td>N/A</td></tr>
     <td>AzureFileCopy, AzurePowerShell, and SqlAzureDacpacDeployment tasks use Az modules only</td><td>Pipelines</td><td>Future</td></tr>
-    <td>Use Workload identity federation for container jobs, resources, and tasks</td><td>Pipelines</td><td>Future</td></tr>
+    <td>Use Workload identity federation for container jobs, resources, and tasks</td><td>Pipelines</td><td>N/A</td></tr>
 <tr>
     <td rowspan="9"><a href="2024/sprint-240-update.md" data-raw-source="[14 June 2024](2024/sprint-240-update.md)"> 14 June  2024</a></td>
     <td>Security overview API documentation now available</td><td>GitHub Advanced Security for Azure DevOps</td><td>N/A</td></tr>
@@ -342,7 +391,7 @@ You can also [view the build numbers for each version](#azure-devops-server-buil
     <td>Linked Azure subscription required for GitHub Advanced Security for Azure DevOps enablement</td><td>GitHub Advanced Security for Azure DevOps</td><td>N/A</td></tr>    
     <td>New Boards Hub Improvements</td><td>Boards</td><td>Future</td></tr>
     <td>Development and Deployment Controls</td><td>Boards</td><td>2022.2</td></tr>
-    <td>Workload identity federation for Azure Resource Manager service connections is now generally available</td><td>Pipelines</td><td>Future</td></tr>
+    <td>Workload identity federation for Azure Resource Manager service connections is now generally available</td><td>Pipelines</td><td>N/A</td></tr>
     <td>Out-of-band installation of Node 6 task runner</td><td>Pipelines</td><td>N/A</td></tr>
     <td>Deferred approval</td><td>Pipelines</td><td>Future</td></tr>
     <td>Sequencing approvals and checks</td><td>Pipelines</td><td>Future</td></tr>
@@ -405,7 +454,7 @@ You can also [view the build numbers for each version](#azure-devops-server-buil
     <td rowspan="8"><a href="2023/sprint-227-update.md" data-raw-source="[14 September 2023](2023/sprint-227-update.md)"> 14 September 2023</a></td>
     <td>Limits for area and iteration paths</td><td>Boards</td><td>2022.2</td></tr>
     <td>Pipeline agents can be registered using Azure Active Directory instead of a PAT</td><td>Pipelines</td><td>Future</td></tr>
-    <td>Workload identity federation for Azure Pipelines (public preview)</td><td>Pipelines</td><td>Future</td></tr>
+    <td>Workload identity federation for Azure Pipelines (public preview)</td><td>Pipelines</td><td>N/A</td></tr>
     <td>REST APIs for Environments</td><td>Pipelines</td><td>Future</td></tr>
     <td>Prevent Unintended Pipeline Runs</td><td>Pipelines</td><td>2022.2</td></tr>
     <td>Build GitHub Repositories Securely by Default</td><td>Pipelines</td><td>Future</td><tr>   

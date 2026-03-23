@@ -3,7 +3,7 @@ title: Generate code coverage results in source /folder level view
 author: gloridelmorales
 ms.author: glmorale
 ms.date: 6/21/2023
-ms.topic: article
+ms.topic: concept-article
 ms.service: azure-devops
 ms.subservice: azure-devops-release-notes
 description: Generate code coverage results in source /folder level view.

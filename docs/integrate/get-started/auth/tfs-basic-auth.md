@@ -2,12 +2,14 @@
 ms.subservice: azure-devops-ecosystem
 ms.topic: overview
 title: Cross-platform CLI authentication for Azure DevOps
-description: Learn authentication options for the cross-platform CLI for Azure DevOps, including Microsoft Entra ID tokens and personal access tokens.
+description: Learn authentication options for the cross-platform CLI for Azure DevOps, including personal access tokens and basic authentication.
 ms.assetid: 6dc7f977-4b62-4bd6-b77a-1c6cade1ffa8
 monikerRange: '<= azure-devops'
+ms.custom: pat-reduction
 ms.author: chcomley
 author: chcomley
-ms.date: 07/14/2025
+ai-usage: ai-assisted
+ms.date: 02/26/2026
 ---
 
 # Cross-platform CLI authentication for Azure DevOps
@@ -16,8 +18,10 @@ ms.date: 07/14/2025
 
 This article explains authentication approaches for the cross-platform CLI (tfx-cli) and Azure DevOps.
 
+[!INCLUDE [use-microsoft-entra-reduce-pats](../../../includes/use-microsoft-entra-reduce-pats.md)]
+
 > [!IMPORTANT]
-> We recommend using [Microsoft Entra ID authentication](../authentication/entra.md) as the primary method for authentication. Personal access tokens (PATs) should be used only when Microsoft Entra ID authentication isn't available. Basic authentication is deprecated and not recommended.
+> Basic authentication is deprecated and not recommended.
 
 ## Prerequisites
 
@@ -34,32 +38,16 @@ For more information about tfx-cli, see the [Node CLI for Azure DevOps on GitHub
 
 ## Authentication methods
 
-Choose the appropriate authentication method based on your environment:
+The tfx-cli supports the following authentication methods:
 
 | Method | Recommended for | 
 |--------|----------------|
-| Microsoft Entra ID | Azure DevOps Services | 
-| PAT | Azure DevOps Server, automation scripts | 
-| Basic Authentication | Azure DevOps Server only | 
-
-## Microsoft Entra ID authentication (Recommended)
-
-For Azure DevOps Services, use Microsoft Entra ID authentication for the best security:
-
-```bash
-tfx login
-```
-
-When prompted:
-1. Enter your service URL, for example, `https://dev.azure.com/Your_Organization`.
-2. Follow the browser-based authentication flow.
-3. Complete the sign-in process in your browser.
-
-For detailed guidance on Microsoft Entra ID authentication, see [Microsoft Entra-based authentication](../authentication/entra.md).
+| PAT | Azure DevOps Services and Azure DevOps Server | 
+| Basic Authentication | Azure DevOps Server only (deprecated) | 
 
 ## PAT authentication
 
-Use PATs when Microsoft Entra ID authentication isn't available, such as with Azure DevOps Server.
+Use PATs to authenticate with Azure DevOps Services or Azure DevOps Server.
 
 ### Create and use a PAT
 
@@ -105,7 +93,7 @@ If you must use basic authentication with Azure DevOps Server installations:
    - Open Server Manager.
    - Install the Basic Authentication feature for IIS.
    - In IIS Manager, go to your Azure DevOps Server website.
-   - Double-select **Authentication** in the Features view.
+   - Double-click **Authentication** in the Features view.
    - Enable Basic Authentication.
    - Leave domain and realm settings empty.
 

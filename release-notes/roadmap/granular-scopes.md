@@ -3,7 +3,7 @@ title: Granular scopes for Azure Active Directory OAuth
 author: gloridelmorales
 ms.author: glmorale
 ms.date: 10/11/2022
-ms.topic: article
+ms.topic: concept-article
 ms.service: azure-devops
 ms.subservice: azure-devops-release-notes
 description: Granular scopes for Azure Active Directory OAuth

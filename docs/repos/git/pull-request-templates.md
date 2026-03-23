@@ -12,7 +12,7 @@ ms.subservice: azure-devops-repos-git
 
 # Improve pull request descriptions using templates
 
-[!INCLUDE [version-gt-eq-2019](../../includes/version-gt-eq-2019.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 Writing good pull request descriptions is a great way to help reviewers know what to expect when reviewing code. They're also a great way to help track things that should be done for every change, such as testing, adding unit tests, and updating documentation. Pull request templates can help your developers create great pull request descriptions that meet your organization's standards.
 

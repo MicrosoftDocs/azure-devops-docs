@@ -4,11 +4,11 @@ titleSuffix: Azure DevOps
 description: How to sign up for Azure Repos. 
 ms.subservice: azure-devops-new-user
 ms.topic: how-to
-ms.date: 03/13/2025
+ms.date: 02/06/2026
 monikerRange: 'azure-devops'
 ---
 
-# Sign up for free for Azure Repos
+# Sign up for Azure Repos for free
 
 [!INCLUDE [version-eq-azure-devops](../../includes/version-eq-azure-devops.md)]
 
@@ -22,7 +22,7 @@ Sign up for Azure Repos. For more information, see [What is Azure Repos?](what-i
 
 ## Sign up
 
-Sign up for Azure Repos with either a Microsoft account or GitHub account.
+Sign up for Azure Repos by using either a Microsoft account or GitHub account.
 
 # [Microsoft account](#tab/microsoft-account)
 

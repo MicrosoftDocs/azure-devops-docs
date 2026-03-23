@@ -103,7 +103,6 @@ Pick lists are enumerated values displayed in drop-down menus on work item forms
 Custom field and pick list   
 ![Screenshot shows a Custom pick list.](media/custom-pick-list.png)
 
-
 ```XML
 <FIELD name="Resolution" refname="MyCompany.Resolution" type="String">    
 <ALLOWEDVALUES>
@@ -210,7 +209,6 @@ To add a custom field, edit the WIT definition to add a **FIELD** element within
    The following illustration shows that the work item form for the product backlog item now contains the new field.  
 
    ![Screenshot shows New field in form.](media/IC539047.png)  
-
 
 <a id="change-label">  </a>
 
@@ -339,14 +337,6 @@ For example, you can add the **Found In** and **Integrated in Build** fields, wh
 > ```
 
 For more information, see [Query based on build and test integration fields](../boards/queries/build-test-integration.md).
-
-::: moniker range="< azure-devops-2022"
-
-## Field names and reporting
-
-You can add fields or change the attributes of existing fields to support reporting. When you add or change fields, you should name them systematically so that you can find the field in the Analysis Services cube because the fields get logically grouped into folders. For more information, see [Add or modify work item fields to support reporting](/previous-versions/azure/devops/reference/xml/add-or-modify-work-item-fields-to-support-reporting).
-
-::: moniker-end
 
 ## Related articles
 

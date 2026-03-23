@@ -1,11 +1,10 @@
 ---
 title: Build and test Go projects
 description: Build and test Go projects with Azure Pipelines & Azure DevOps
-ms.topic: quickstart
+ms.topic: how-to
 ms.assetid: a72557df-6df4-4fb6-b437-be0730624e3c
-ms.reviewer: azooinmyluggage
 ms.custom: freshness-fy22q2, devdivchpfy22
-ms.date: 05/05/2022
+ms.date: 01/16/2026
 monikerRange: 'azure-devops'
 ---
 
@@ -13,11 +12,16 @@ monikerRange: 'azure-devops'
 
 [!INCLUDE [version-eq-azure-devops](../../includes/version-eq-azure-devops.md)]
 
-Use a pipeline to automatically build and test your Go projects.
+Use Azure Pipelines to automatically build, test, and deploy your Go projects. This article shows you how to create a pipeline that builds and tests your Go code every time you push changes to your repository.
+
+## Prerequisites
+
+- An Azure DevOps organization and project. [Create one for free](../../organizations/projects/create-project.md).
+- A Go project in a GitHub or Azure Repos repository. If you don't have a project, you can use the sample repository provided in this article.
 
 ## Create your first pipeline
 
-New to Azure Pipelines? If so, then we recommend you try this section before moving on to other sections.
+New to Azure Pipelines? Try this section before moving on to other sections.
 
 [!INCLUDE [include](includes/get-code-before-sample-repo.md)]
 
@@ -32,7 +36,7 @@ https://github.com/MicrosoftDocs/pipelines-go
 
 1. In a browser, go to [dev.azure.com](https://dev.azure.com) and sign in.
 1. Select your organization.
-1. Create a new project by selecting **New project** or **Create project** if creating the first project in the organization.
+1. Create a new project by selecting **New project** or **Create project** if you're creating the first project in the organization.
 1. Enter a **Project name**.
 1. Select the **Visibility** for your project.
 1. Select **Create**.
@@ -54,15 +58,18 @@ pool:
   vmImage: 'ubuntu-latest'
 ```
 
-Modern versions of Go are pre-installed on [Microsoft-hosted agents](../agents/hosted.md). For the exact versions of pre-installed Go, refer to [Microsoft-hosted agents in Azure Pipelines](../agents/hosted.md#software).
+Modern versions of Go are preinstalled on Microsoft-hosted agents. For the exact versions of preinstalled Go, refer to [Microsoft-hosted agents in Azure Pipelines](../agents/hosted.md#software).
 
 ## Set up Go
 
+> [!IMPORTANT]
+> **Go version support:** The Go project no longer maintains Go versions earlier than 1.11 and these versions don't receive security updates. Microsoft-hosted agents include only currently supported Go versions. If your project uses Go 1.10 or earlier, upgrade to Go 1.21 or later to benefit from built-in module support, security patches, and performance improvements. See the [Go release history](https://go.dev/doc/devel/release) for version support details.
+
 ### [Go 1.11+](#tab/go-current)
 
-Starting with Go 1.11, you no longer need to define a `$GOPATH` environment, set up a workspace layout, or use the `dep` module. Dependency management is now built in.
+Starting with Go 1.11, you no longer need to define a `$GOPATH` environment variable, set up a workspace layout, or use the `dep` module. Dependency management is now built in with [Go modules](https://go.dev/blog/using-go-modules).
 
-This YAML implements the `go get` command to download Go packages and their dependencies. It then uses `go build` to generate the content that is published with `PublishBuildArtifacts@1` task.
+This YAML implements the `go get` command to download Go packages and their dependencies. It then uses `go build` to generate the content that is published by the `PublishBuildArtifacts@1` task.
 
 ```yaml
 trigger: 
@@ -74,7 +81,7 @@ pool:
 steps: 
 - task: GoTool@0
   inputs:
-    version: '1.13.5'
+    version: '1.22'  # Use a currently supported Go version
 - task: Go@0
   inputs:
     command: 'get'
@@ -92,15 +99,18 @@ steps:
      artifactName: drop
 ```
 
-### [Go < 1.11](#tab/go-older)
+### [Go < 1.11 (legacy)](#tab/go-older)
 
-As the Go documentation [describes](https://golang.org/doc/code.html#Workspaces), a Go workspace consists of a root directory to which the `$GOPATH` environment variable points. Within that directory, are the following standard subdirectories:
+> [!WARNING]
+> Go versions earlier than 1.11 reached end of life and no longer receive security updates. The `dep` dependency manager is also deprecated. This section is provided only for legacy projects that can't upgrade immediately. **Migrate to Go 1.21 or later with Go modules.**
+
+As the Go documentation [describes](https://golang.org/doc/code.html#Workspaces), a Go workspace consists of a root directory to which the `$GOPATH` environment variable points. The `$GOPATH` is a Go-specific environment variable that tells the Go compiler where to find source code and dependencies. Within that directory, are the following standard subdirectories:
 
 * `bin` to contain executable commands
 * `pkg` to contain compiled packages (`.a` files)
 * `src` to contain Go source files (`.go`, `.c`, `.g`, `.s`)
 
-When an Azure Pipelines build fetches code from a remote repository, it places the code in the default working directory of the build. To match the expected structure of a Go workspace, add the following snippet to your `azure-pipelines.yml` file. This script runs in bash on Linux and macOS agents, but must be modified for Windows.
+When an Azure Pipelines build fetches code from a remote repository, it places the code in the default working directory of the build. To match the expected structure of a Go workspace, add the following snippet to your `azure-pipelines.yml` file. This script runs in bash on Linux and macOS agents, but you must modify it for Windows.
 
 ```yaml
 variables:
@@ -133,13 +143,13 @@ steps:
 
 If your code isn't at GitHub, change the `modulePath` variable's use of `github.com` to an appropriate value for your module.
 
-This snippet does the following actions:
+This snippet performs the following actions:
 
-1. Sets `$GOROOT` to the version of Go that should be used.
-2. Sets other well-known Go environment variables to their proper values.
-3. Creates a Go workspace in a subdirectory named `gopath` with child directories `bin`, `pkg`, and `src`.
-4. Moves code that was fetched from the remote repository into the workspace `src` directory
-5. Adds the version of Go and the workspace `bin` directory to the path.
+1. Sets `$GOROOT` to the version of Go that you want to use.
+1. Sets other well-known Go environment variables to their proper values.
+1. Creates a Go workspace in a subdirectory named `gopath` with child directories `bin`, `pkg`, and `src`.
+1. Moves code that the build fetches from the remote repository into the workspace `src` directory.
+1. Adds the version of Go and the workspace `bin` directory to the path.
 
 ### Install dependencies
 
@@ -155,10 +165,13 @@ Use `go get` to download the source code for a Go project or to install a tool i
 
 #### Use dep ensure
 
-Use `dep ensure` if your project uses dep to download dependencies imported in your code. Running `dep ensure` clones imported repositories into your project's vendor directory. Its `Gopkg.lock` and `Gopkg.toml` files guarantee that everyone working on the project uses the same version of dependencies as your build. Add the following snippet to your `azure-pipelines.yml` file.
+> [!WARNING]
+> The `dep` tool is deprecated and unmaintained. For all Go projects, migrate to [Go modules](https://go.dev/blog/using-go-modules), which is the official dependency management solution since Go 1.11.
+
+Use `dep ensure` if your legacy project still uses dep to download dependencies imported in your code. The `dep ensure` command clones imported repositories into your project's vendor directory. Its `Gopkg.lock` and `Gopkg.toml` files guarantee that everyone working on the project uses the same version of dependencies as your build. Add the following snippet to your `azure-pipelines.yml` file.
 
 > [!NOTE]
-> The following script runs on Linux and macOS agents and can be used for older versions of Go that require a specific folder structure. The script is written for Unix shells, and as a result cannot work with Windows agents.
+> The following script runs on Linux and macOS agents and can be used for older versions of Go that require a specific folder structure. The script is written for Unix shells, and as a result can't work with Windows agents.
 
 ```yaml
 - script: |
@@ -203,20 +216,23 @@ When you're ready, commit a new _azure-pipelines.yml_ file to your repository an
    If you want to watch your pipeline in action, select the build in the **Jobs** option on your Azure Pipelines dashboard.
     :::image type="content" source="media/azure-pipe-run.png" alt-text="Pipeline build in action when the Azure Pipelines Jobs option is selected.":::
 
-   Because your code appeared to be a good match for the [Go](https://github.com/microsoft/azure-pipelines-yaml/blob/master/templates/go.yml) template, we automatically created your pipeline.
+   Because your code appeared to be a good match for the [Go](https://github.com/microsoft/azure-pipelines-yaml/blob/master/templates/go.yml) template, Azure Pipelines automatically created your pipeline.
 
    You now have a working YAML pipeline (`azure-pipelines.yml`) in your repository that's ready for you to customize!
 
 When you're ready to make changes to your pipeline, select it in the **Pipelines** page, and then **Edit** the `azure-pipelines.yml` file.
 
-> [!Tip]
+> [!TIP]
 > To make changes to the YAML file as described in this article, select the pipeline in **Pipelines** page, and then select **Edit** to open an editor for the `azure-pipelines.yml` file.
 :::image type="content" source="media/azure-pipe-edit.png" alt-text="Screenshot showing how to edit the Azure Pipeline from the dashboard with more option selected and Edit highlighted.":::  
 
-## Build an image and push to container registry
+## Build an image and push to Azure Container Registry
 
 For your Go app, you can also [build an image](containers/build-image.md) and [push it to a container registry](containers/push-image.md).
 
-## Related extensions
+## Related content
 
-[Go extension for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=ms-vscode.Go) 
+- [Go extension for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=ms-vscode.Go)
+- [Microsoft-hosted agents](../agents/hosted.md)
+- [YAML schema reference](/azure/devops/pipelines/yaml-schema)
+- [Go modules documentation](https://go.dev/blog/using-go-modules)

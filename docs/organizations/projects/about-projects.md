@@ -9,12 +9,12 @@ ms.author: chcomley
 author: chcomley 
 ms.topic: overview
 monikerRange: "<=azure-devops"
-ms.date: 03/12/2025
+ms.date: 02/17/2026
 --- 
 
 # About projects and scaling your organization
 
-[!INCLUDE [version-gt-eq-2019](../../includes/version-gt-eq-2019.md)] 
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)] 
 
 A project in Azure DevOps provides a space for users to plan, track progress, and collaborate on building software solutions. It serves as a fundamental container for storing data and source code.
 
@@ -23,6 +23,8 @@ When you create a project, Azure DevOps automatically creates a team with the sa
 An organization with multiple projects allows teams to configure tools to suit their needs and complete administrative tasks at the appropriate levels. As your organization grows, your tools can scale to support a [culture of team autonomy and organizational alignment](../../boards/plans/agile-culture.md).
 
 For more information, see [Work tracking, process, and project limits](../settings/work/object-limits.md) and [Plan your organizational structure](../../user-guide/plan-your-azure-devops-org-structure.md).
+
+[!INCLUDE [ai-assistance-callout](../../includes/ai-assistance-callout.md)]
 
 <a id="scale">  </a>
 <a id="collection-project-team-structure">  </a>

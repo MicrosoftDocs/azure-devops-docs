@@ -18,7 +18,8 @@ ms.date: 07/14/2025
 Learn how to use OAuth 2.0 to authenticate your applications for Azure DevOps REST API access without requiring users to repeatedly provide credentials.
 
 > [!IMPORTANT]
-> We recommend that you use Microsoft Entra ID OAuth for new applications. Azure DevOps OAuth 2.0 is deprecated and no longer accepts new registrations as of April 2025, with full deprecation planned for 2026.
+> Use Microsoft Entra ID OAuth for new applications.
+> Azure DevOps OAuth 2.0 is deprecated and no longer accepts new registrations.
 
 ## How OAuth 2.0 works with Azure DevOps
 

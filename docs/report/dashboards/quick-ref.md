@@ -48,29 +48,7 @@ Use this index to quickly access information on tasks for configuring or accessi
       - [Set dashboard permissions](dashboard-permissions.md)  
       - [View a dashboard](dashboards.md)  
       ::: moniker-end
-      ::: moniker range="<azure-devops-2022"
-      - [Add a dashboard](dashboards.md)  
-      - [Add a chart to a dashboard](add-charts-to-dashboard.md)  
-      - [Add a widget to a dashboard](add-widget-to-dashboard.md)  
-      - [Add a work-tracking query chart](charts.md)  
-      - [Add a test status or progress chart](../../test/track-test-status.md)  
-      - [Add Markdown to a dashboard](add-markdown-to-dashboard.md)  
-      - [Copy a widget to a dashboard](add-widget-to-dashboard.md#copy)  
-<br/>
-      - [Delete a dashboard](dashboards.md)  
-      - [Delete a widget from a dashboard](add-widget-to-dashboard.md#move-delete)   
-      - [Edit a dashboard](dashboards.md)  
-      - [Enable auto-refresh](dashboards.md)  
-      - [Favorite a dashboard](dashboards.md)  
-      - [Filter a dashboard](dashboards.md)  
-      - [Move widgets on a dashboard](add-widget-to-dashboard.md#move-delete)  
-<br/> 
-      - [Open a dashboard](dashboards.md)  
-      - [Rename a dashboard](dashboards.md)  
-      - [Refresh a dashboard](dashboards.md)  
-      - [Set dashboard permissions](dashboard-permissions.md)  
-      - [View a dashboard](dashboards.md)  
-      ::: moniker-end
+      
       
    :::column-end:::
    :::column span="2":::
@@ -107,7 +85,7 @@ Use this index to quickly access information on tasks for configuring or accessi
 
 ## In-context reports
 
-::: moniker range=">= azure-devops-2020"
+::: moniker range="<=azure-devops"
 
 In context reports appear on the **Analytics** tab of these specific service pages: **Boards>Boards**, **Boards>Backlogs**, **Boards>Sprints**, and **Pipelines>Builds**. 
 ::: moniker-end

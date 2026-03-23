@@ -4,6 +4,7 @@ author: gloridelmorales
 ms.author: glmorale
 ms.date: 05/04/2021
 description: In this sprint, Azure Git repositories can now be treated as protected resources in YAML pipelines.
+ms.topic: release-notes
 ---
 
 # Azure Git repositories can now be treated as protected resources in YAML pipelines

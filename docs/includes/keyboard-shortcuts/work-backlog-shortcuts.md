@@ -11,7 +11,7 @@ You can use the following keyboard shortcuts when you work on a **Boards** > **B
 
 ::: moniker-end
 
-::: moniker range=">= azure-devops-2020"
+::: moniker range="<=azure-devops"
 
 |Shortcut|Action|
 |---|---|

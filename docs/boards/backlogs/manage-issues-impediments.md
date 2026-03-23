@@ -2,13 +2,13 @@
 title: Manage and resolve issues or impediments in Azure Boards
 titleSuffix: Azure Boards
 description: Learn how to track issues or impediments to more effectively execute plans or stay on schedule by using Azure Boards.
-ms.custom: boards-backlogs
+ms.custom: boards-backlogs, copilot-scenario-highlight
 ms.service: azure-devops-boards
 ms.assetid: 5B126205-599D-40EB-BC95-23CF1444EF2A
 ms.author: chcomley
 author: chcomley
 ms.topic: tutorial
-ms.date: 07/26/2022
+ms.date: 02/28/2026
 ---
 
 # Manage issues or impediments in Azure Boards
@@ -18,6 +18,8 @@ ms.date: 07/26/2022
 <a name="manage-impediments"></a>
 
 If you have known issues you want to track, you can do so by defining an impediment (Scrum) or issue (Agile or CMMI). Impediments and issues represent unplanned activities. Resolving them requires more work beyond what's tracked for actual requirements. Use the impediment work item type to help you track and manage these issues until you can resolve and close them. 
+
+[!INCLUDE [ai-assistance-mcp-server-tip](../../includes/ai-assistance-mcp-server-tip.md)]
 
 Don't confuse impediments with bugs. You track impediments that may cause problems with delivering one or more requirements. For example, you may have to fix feature ambiguity, personnel or resource issues, problems with environments, or other risks that influence scope, quality, or schedule. Other issues that deserve tracking are decisions that require several stakeholders or product teams to weigh in on.
 
@@ -51,9 +53,7 @@ In this article you'll learn:
 
 ## Prerequisites
 
-[!INCLUDE [temp](../includes/prerequisites-work-items.md)]   
-
-[!INCLUDE [temp](../includes/image-differences-with-wits.md)]   
+[!INCLUDE [temp](../includes/prerequisites-work-items.md)] 
 
 ## Define a task
 
@@ -114,6 +114,28 @@ If you want to track issues or impediments along with your requirements or a por
 - **For the Inherited process**: [Customize your backlogs or boards (Inheritance process)](../../organizations/settings/work/customize-process-backlogs-boards.md#edit-product-backlog).
 - **For the On-premise XML process**: [Process configuration XML element reference)](../../reference/xml/process-configuration-xml-element.md#configure-a-backlog).
 ::: moniker-end
+
+<a id="use-ai-assistance"></a>
+
+## Use AI to manage issues and impediments
+
+If you have the [Azure Boards MCP Server](../../mcp-server/mcp-server-overview.md) connected to your AI agent in agent mode, you can use natural language prompts to create and manage issues or impediments.
+
+| Task | Example prompt |
+|------|----------------|
+| Create an impediment | `Create a new impediment titled 'Test environment unavailable' with priority 1 and assign it to <me>` |
+| List active impediments | `List all active impediments in the current sprint for my team` |
+| Create an issue | `Create an issue to track the decision about the API versioning strategy and assign it to <Jamal>` |
+| Resolve an impediment | `Update impediment 456 to the Resolved state and add a comment that the environment issue is fixed` |
+| Find recurring blockers | `Show impediments in <Contoso> that were created in the last 3 sprints with similar titles or tags` |
+| Track impediment age | `List active impediments in <Contoso> sorted by how long they've been open` |
+| Link impediment to blocked items | `Show all work items in the current sprint for <Contoso> that are linked to active impediments` |
+| Escalate unresolved issues | `List issues in <Contoso> with priority 1 that have been active for more than 7 days` |
+| Categorize impediments | `Show active impediments in <Contoso> grouped by tag` |
+| Sprint retrospective prep | `List all impediments that were resolved during the current sprint in <Contoso> with their resolution comments` |
+
+> [!NOTE]
+> Agent mode and the MCP Server use natural language, so you can adjust these prompts or ask follow-up questions to refine the results.
 
 ## Related content 
 

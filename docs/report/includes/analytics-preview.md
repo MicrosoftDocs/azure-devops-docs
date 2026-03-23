@@ -15,7 +15,7 @@ ms.date: 05/09/2025
 
 ::: moniker-end
 
-::: moniker range=">= azure-devops-2020 < azure-devops"
+::: moniker range="<azure-devops"
 
 > [!NOTE]
 > The Analytics service is automatically installed and supported in production for all new project collections for Azure DevOps Server 2020 and later versions. [Power BI integration](../powerbi/overview.md) and access to the [OData feed](../extend-analytics/quick-ref.md) of the Analytics service are generally available. You're encouraged to use the Analytics OData feed and provide feedback. If you upgrade from Azure DevOps Server 2019, you can install the Analytics service during upgrade.

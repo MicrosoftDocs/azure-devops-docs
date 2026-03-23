@@ -3,6 +3,7 @@ title: GitHub Enterprise support and automatic GitHub service connections in bui
 author: gloridelmorales
 ms.author: glmorale
 ms.date: 01/14/2019
+ms.topic: release-notes
 description: In the Sprint 146 Update of Azure DevOps, we added more functionality to support GitHub integration
 ---
 
