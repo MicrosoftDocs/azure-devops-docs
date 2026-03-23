@@ -1,9 +1,9 @@
 ---
+title: Manage Service Authorizations in Azure DevOps
+description: Learn how to use OpenID Connect (OIDC)-based authentication to securely grant services access to your Azure DevOps resources without sharing your credentials.
 ms.subservice: azure-devops-service-hooks
 ms.topic: how-to
-title: Authorize Services
 ms.custom: engagement-fy23, pat-reduction
-description:Find out how to use OpenID Connect (OIDC)-based authentication to grant a service access to your Azure DevOps work items, source code, and other resources.
 ms.assetid: 314a28cd-b2ae-41a0-8dfb-330222c1aed0
 ms.author: chcomley
 author: chcomley
