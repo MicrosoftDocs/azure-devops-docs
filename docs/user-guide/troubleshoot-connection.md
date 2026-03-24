@@ -4,7 +4,7 @@ titleSuffix: Azure DevOps
 description: Learn how to resolve common connection problems, authentication errors, and permission issues when you access projects and organizations.
 ms.subservice: azure-devops-new-user
 ai-usage: ai-assisted
-ms.custom: copilot-scenario-highlight
+ms.custom: copilot-scenario-highlight, pat-reduction
 ms.author: chcomley
 author: chcomley
 ms.topic: troubleshooting

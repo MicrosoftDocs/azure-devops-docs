@@ -7,11 +7,14 @@ ms.topic: quickstart
 monikerRange: '<= azure-devops'
 ms.date: 04/14/2021
 ms.subservice: azure-devops-repos-git
+ai-usage: ai-assisted
 ---
 
 # Set Git repository permissions 
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
+
+[!INCLUDE [ai-assistance-callout](../../includes/ai-assistance-callout.md)]
 
 Manage access to repositories to lock down who can contribute to your source code and manage other features.  You can set permissions across all Git repositories by making changes to the top-level **Git repositories** entry. Individual repositories inherit permissions from the top-level **Git Repositories** entry. 
 

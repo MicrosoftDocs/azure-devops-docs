@@ -16,10 +16,6 @@ ms.date: 02/24/2026
 
 [!INCLUDE [version-eq-azure-devops](../../../includes/version-eq-azure-devops.md)]
 
-> [!IMPORTANT]
-> Use Microsoft Entra ID authentication for new applications that integrate with Azure DevOps Services.
-> It provides enhanced security, enterprise identity integration, and modern authentication capabilities.
-
 [!INCLUDE [use-microsoft-entra-reduce-pats](../../../includes/use-microsoft-entra-reduce-pats.md)]
 
 This article explains the benefits of Microsoft Entra ID authentication and guides you through implementing it in your applications.

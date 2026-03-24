@@ -3,6 +3,7 @@ title: Connect to an Azure Artifacts feed - Universal Packages
 description: Lean how to set up your project and connect to an Azure Artifacts feed to manage your Universal Packages.
 ms.service: azure-devops-artifacts
 ms.topic: how-to
+ms.custom: pat-reduction
 ms.date: 01/22/2025
 monikerRange: 'azure-devops'
 ---
@@ -48,7 +49,7 @@ Ensure that you have Azure CLI installed, then follow the steps below to install
 
     ### [Windows](#tab/windows/)
     
-    1. Run the following command to log into the Azure CLI:
+    1. Run the following command to sign in to the Azure CLI:
     
         ```azurecli
         az login
