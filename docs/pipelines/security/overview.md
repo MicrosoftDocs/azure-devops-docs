@@ -2,7 +2,7 @@
 title: Secure your Azure Pipelines
 description: Guidelines and recommendations for securing pipelines.
 ms.assetid: 1ef377e9-e684-4e72-8486-a42d754761ac
-ms.custom: peer-review-program
+ms.custom: peer-review-program, pat-reduction
 ms.date: 03/04/2025
 monikerRange: "<=azure-devops"
 ms.topic: best-practice
@@ -113,7 +113,7 @@ Learn how to secure containers through configuration changes, scanning, and poli
 - **Mark volumes as read only**: Containers include system-provided volume mounts for tasks, tools, and external components required to work with the host agent. Set `externals`, `tasks`, and `tools` to read only for added security. 
 - **Set container-specific resource limits**: Set limits on CPU and memory to prevent containers from consuming excessive resources, which can lead to denial of service or security vulnerabilities.
 - **Use trusted images**: Use official and verified images from reputable sources such as Azure Container Registry or Docker Hub. Always specify a specific version or tag to maintain consistency and reliability, rather than relying on the `latest` tag. Regularly update base images to include the latest security patches and bug fixes.
-- **Scan containers for vulnerabilities and enforce runtime threat protection**: Use tools such as [Microsoft Defender for Cloud](/azure/defender-for-cloud/defender-for-containers-introduction) to monitor and detect security risks. Additionally, Azure Container Registry offers integrated [vulnerability scanning](/azure/container-registry/scan-images-defender) to help ensure container images are secure before deployment. You can also integrate third-party scanning tools through Azure DevOps extensions for added security checks.
+- **Scan containers for vulnerabilities and enforce runtime threat protection**: Use tools such as [Microsoft Defender for Cloud](/azure/defender-for-cloud/defender-for-containers-introduction) to monitor and detect security risks. Additionally, Azure Container Registry offers integrated [vulnerability scanning](/azure/container-registry/scan-images-defender) to help ensure container images are secure before deployment. You can also integrate non-Microsoft scanning tools through Azure DevOps extensions for added security checks.
 - **Implement security policies to prevent privilege escalation and ensure containers run with the least amount of privileges necessary**: For example, Azure [Kubernetes Service (AKS)](/azure/aks/operator-best-practices-cluster-security), [role-based access control](/azure/aks/manage-azure-rbac), and [Pod Security Admission](/azure/aks/use-psa) let you enforce policies that restrict container privileges, ensure non-root execution, and limit access to critical resources. 
 - **Utilize Network Policies**: [Network Policies](/azure/virtual-network/kubernetes-network-policies) can be used to restrict communication between containers, ensuring that only authorized containers can access sensitive resources within your network. In addition, [Azure Policy for AKS](/azure/governance/policy/concepts/policy-for-kubernetes) can be applied to enforce container security best practices, such as ensuring only trusted container images are deployed.
 

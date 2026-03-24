@@ -5,6 +5,7 @@ description: Manage an organization, so you can collaborate with others to devel
 ms.subservice: azure-devops-organizations
 ms.assetid: fa1dbe39-08b1-4eba-886a-33c1aa1e6a83
 ms.topic: overview
+ms.custom: pat-reduction
 ms.author: chcomley
 author: chcomley
 ms.date: 02/17/2026
