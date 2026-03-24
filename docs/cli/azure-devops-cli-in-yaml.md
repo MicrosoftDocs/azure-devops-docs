@@ -550,32 +550,26 @@ parameters:
 
 steps:
   - task: AzureCLI@3
-    condition: succeededOrFailed()
-    displayName: 'Azure CLI -> DevOps CLI'
+    displayName: Set variable group ID
     inputs:
       connectionType: 'azureDevOps'
       azureDevOpsServiceConnection: '${{ parameters.serviceConnection }}'
-      scriptType: pscore
-      scriptLocation: inlineScript
+      scriptType: 'pscore'
+      scriptLocation: 'inlineScript'
       inlineScript: |
-        Write-Host "Using logged-in Azure CLI session..."
-        Write-Host "$($PSStyle.Formatting.FormatAccent)az devops configure$($PSStyle.Reset)"
-        az devops configure --defaults organization=$(System.CollectionUri) project=$(System.TeamProject)
         az devops configure -l
 
         $id = az pipelines variable-group list --group-name kubernetes --query [].id -o tsv
         Write-Host "##vso[task.setvariable variable=variableGroupId]$id"
 
   - task: AzureCLI@3
-    condition: succeededOrFailed()
-    displayName: 'Azure CLI -> DevOps CLI'
+    displayName: List variable group variables
     inputs:
       connectionType: 'azureDevOps'
       azureDevOpsServiceConnection: '${{ parameters.serviceConnection }}'
-      scriptType: pscore
-      scriptLocation: inlineScript
+      scriptType: 'pscore'
+      scriptLocation: 'inlineScript'
       inlineScript: |
-        Write-Host "Using logged-in Azure CLI session..."
         az pipelines variable-group variable list --group-id '$(variableGroupId)'
 ```
 
