@@ -190,12 +190,8 @@ strategy:
       imageName: "macos-15"
     mac14:
       imageName: "macos-14"
-    mac13:
-      imageName: "macos-13"
     windows2025:
       imageName: "windows-2025"
-    windows2022:
-      imageName: "windows-2022"
   maxParallel: 3
 
 pool:
