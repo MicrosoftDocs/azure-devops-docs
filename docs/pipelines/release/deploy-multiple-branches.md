@@ -1,58 +1,63 @@
 ---
-title: Deploy to different stages from multiple branches
-description: Learn how to use Classic release pipelines to deploy to different stages from multiple branches.
+title: Deploy multiple branches to different stages
+description: Learn how to use Classic release pipelines to deploy from multiple branches to different stages.
 ms.topic: tutorial
-ms.date: 08/06/2024
+ms.date: 03/23/2026
 monikerRange: "<=azure-devops"
 "recommendations": "true"
 ---
 
-# Deploy to different stages from multiple branches using Classic release pipelines
+# Deploy multiple branches to different stages with Classic release pipelines
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
-Classic release pipelines provide a convenient graphical user interface for setting up a continuous delivery solution for your application. Classic releases can be configured to trigger deployments automatically whenever a new artifact is available. Artifact filters can be used with release triggers to deploy from multiple branches. By applying artifact filters to specific branches, you can control deployment to particular stages based on your needs.
-
-In this article, you'll learn how to: 
-
-> [!div class="checklist"]  
-> * Enable continuous deployment triggers.
-> * Release from multiple branches.
-> * Deploy to multiple stages.
+Classic release pipelines provide a graphical way to set up continuous delivery for your application. You can configure a release to trigger automatically when a new artifact is available, and then use artifact filters to map specific branches to specific stages. This approach lets you deploy each branch to the stage you intend. This article walks you through how to configure a Classic release pipeline that deploys to different stages based on the source branch.
 
 ## Prerequisites
 
-- An Azure DevOps organization and a project. Create an [organization](../../organizations/accounts/create-organization.md) or a [project](../../organizations/projects/create-project.md#create-a-project) if you haven't already.
+| **Product**        | **Requirements**  |
+|--------------------|-------------------|
+| **Azure DevOps**   | - An [Azure DevOps organization](../../organizations/accounts/create-organization.md).<br> - An [Azure DevOps project](../../organizations/projects/create-project.md).<br> - A working pipeline set up for your repository to build your project and generate a pipeline artifact. [Create a Classic pipeline](create-classic-pipelines.md) if you don't have one already. |
 
-- A working pipeline set up for your repository to build your project and generate a pipeline artifact. [Create your first pipeline](../create-first-pipeline.md) if you don't have one already.
+## Create a Classic release pipeline
 
-## Create a release pipeline
+In this section, you create the base Classic release pipeline and configure the first stage (**Dev**). You add an artifact source, enable automatic release creation, and apply an artifact filter so this stage runs only when the build comes from the *Dev* branch.
 
 1. Sign in to your Azure DevOps organization, and then navigate to your project.
 
-1. Select **Pipelines** > **Releases**. If this is your first release pipeline, select **New Pipeline**, otherwise select **New** > **New release pipeline**.
+1. Select **Pipelines** > **Releases**.
 
-1. When prompted to select a template, select **Start with an empty job**.
+1. Create a new Classic release pipeline:
 
-1. Under **Stages**, select the stage and rename it to **Dev**. The following steps show how to configure this stage to be triggered when an artifact is published from the *Dev* branch.
+    - If this is your first release pipeline, select **New Pipeline**.
+    - If you already have release pipelines, select **New** > **New release pipeline**.
 
-    :::image type="content" source="media/dev-stage.png" alt-text="A screenshot displaying how to rename a stage in a Classic release pipeline.":::
+1. In the template picker, select **Start with an empty job**.
 
-1. Under **Artifacts**, select **Add** to add an artifact. Specify your **Source type** and fill out the required fields (these vary based on the selected source type). Select **Add** when you're done.
+1. Under **Stages**, select the default stage and rename it to **Dev**. In the next steps, you configure this stage to deploy only when an artifact is produced from the *Dev* branch.
 
-    :::image type="content" source="media/add-artifact.png" alt-text="A screenshot that shows how to add an artifact to a Classic release pipeline.":::
+1. Under **Artifacts**, select **Add**.
 
-1. Select the **Continuous deployment trigger** icon, and then enable the **Continuous deployment trigger** to create a release whenever a new artifact is available.
+1. Configure the artifact source:
 
-    :::image type="content" source="media/enable-continuous-deployment-trigger.png" alt-text="A screenshot displaying how to enable the continuous deployment trigger.":::
+    - Select your **Source type**.
+    - Complete the required fields for that source type, such as project, pipeline, and default version.
+    - Select **Add**.
 
-1. In the Dev stage, select the **Pre-deployment conditions** icon and set the deployment trigger to **After release**. This will trigger a deployment to this stage whenever a new release is created.
+1. Select the **Continuous deployment trigger** icon on the artifact, and then turn on **Continuous deployment trigger** to create a release whenever a new artifact is available.
 
-    :::image type="content" source="media/predeployment-trigger.png" alt-text="A screenshot that shows how to configure the pre-deployment conditions.":::
+1. In the **Dev** stage, select the **Pre-deployment conditions** icon.
 
-1. while still in **Pre-deployment conditions**, enable **Artifact filters**, select **Add**, and then specify the artifact you selected earlier and set the **Build branch** to *Dev*.
+1. Set **Deployment trigger** to **After release** so the stage starts automatically whenever a new release is created.
 
-    :::image type="content" source="media/predeployment-conditions-artifact-filters.png" alt-text="A screenshot displaying how to set up the Artifact filters in Pre-deployment conditions.":::
+1. Still in **Pre-deployment conditions**, configure branch-based filtering:
+
+    - Turn on **Artifact filters**.
+    - Select **Add**.
+    - Select the artifact you added earlier.
+    - Set **Build branch** to *Dev*.
+
+    With this filter in place, the **Dev** stage deploys only when the release is created from a build of the *Dev* branch.
 
 ## Add a new stage
 
