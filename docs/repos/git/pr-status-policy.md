@@ -8,7 +8,6 @@ ms.topic: how-to
 ms.date: 08/11/2020
 monikerRange: '<= azure-devops'
 ms.subservice: azure-devops-repos-git
-ms.custom: copilot-scenario-highlight
 ai-usage: ai-assisted
 ---
 

@@ -8,7 +8,7 @@ ms.topic: how-to
 monikerRange: '<= azure-devops'
 ms.date: 08/03/2022
 ms.subservice: azure-devops-repos-git
-ms.custom: sfi-image-nochange, copilot-scenario-highlight
+ms.custom: sfi-image-nochange
 ai-usage: ai-assisted
 ---
 

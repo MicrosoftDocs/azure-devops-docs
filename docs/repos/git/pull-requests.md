@@ -8,7 +8,7 @@ ms.topic: how-to
 ms.date: 02/15/2025
 monikerRange: '<= azure-devops'
 ms.subservice: azure-devops-repos-git
-ms.custom: devx-track-azurecli, copilot-scenario-highlight
+ms.custom: devx-track-azurecli
 ai-usage: ai-assisted
 ---
 
