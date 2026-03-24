@@ -8,12 +8,15 @@ ms.topic: overview
 ms.date: 07/30/2018
 monikerRange: '<= azure-devops'
 ms.subservice: azure-devops-repos-git
+ai-usage: ai-assisted
 ---
 
 
 # Understand Git history
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
+
+[!INCLUDE [ai-assistance-callout](../../includes/ai-assistance-callout.md)]
 
 Git stores history as a graph of snapshots &mdash; called commits &mdash; of the entire repository.
 Each commit also contains a pointer to one or more previous commits.
