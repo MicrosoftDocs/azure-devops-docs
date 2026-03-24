@@ -49,7 +49,7 @@ Ensure that you have Azure CLI installed, then follow the steps below to install
 
     ### [Windows](#tab/windows/)
     
-    1. Run the following command to log into the Azure CLI:
+    1. Run the following command to sign in to the Azure CLI:
     
         ```azurecli
         az login

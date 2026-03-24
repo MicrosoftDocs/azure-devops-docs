@@ -32,7 +32,7 @@ You can authenticate by using either a managed identity or a [Personal Access To
 - Permission to assign a managed identity to the **Contributor** group in Azure DevOps. **Project Administrators** and **Collection Administrators** both have this permission. 
 
 > [!NOTE]
-> An alternative approach is to use an Microsoft Entra application with a service principal and federated authentication credential to connect Azure DevOps and GitHub Actions. To learn more about this approach, see [Configure an app to trust an external identity provider](/entra/workload-id/workload-identity-federation-create-trust). 
+> An alternative approach is to use a Microsoft Entra application with a service principal and federated authentication credential to connect Azure DevOps and GitHub Actions. To learn more about this approach, see [Configure an app to trust an external identity provider](/entra/workload-id/workload-identity-federation-create-trust). 
 
 ## Assign permissions to your managed identity in Azure DevOps 
 

@@ -50,7 +50,7 @@ Zero Trust helps protect against lateral movement within the network, ensuring t
 
 Ensure your Azure DevOps environment complies with industry standards and regulations that protect your environment and maintain trust with your users.
 
-- **Ensure compliance with industry standards:** Azure DevOps complies with various industry standards and regulations, such as ISO/IEC 27001, SOC 1/2/3, and GDPR. Ensure your environment adheres to these standards.
+- **Ensure compliance with industry standards:** Azure DevOps complies with various industry standards and regulations, such as ISO/IEC 27001, SOC 1/2/3, and more. Ensure your environment adheres to these standards.
 - **Enforce compliance policies:** Implement [branch policies](../../repos/git/branch-policies.md) and [compliance policies for your pipelines](/azure/governance/policy/tutorials/policy-devops-pipelines).
 - **Onboard to Component Governance for CI/CDs**, which offers the following benefits:
   - Security vulnerability detection: Alerts you to known vulnerabilities in open-source components.
