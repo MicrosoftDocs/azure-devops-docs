@@ -3,13 +3,13 @@ title: Query Trend Data With OData Aggregation in Azure DevOps
 titleSuffix: Azure DevOps
 description: Learn how to query trend data in Azure DevOps using OData aggregation. Filter, group, and analyze snapshot entity sets for actionable insights.
 ms.subservice: azure-devops-analytics
-ms.custom: copilot-scenario-highlight
+ms.custom: copilot-scenario-highlight, awp-ai
 ms.assetid: FEF88D72-32D7-4DE8-B11E-BCB1A491C3FC
 ms.author: chcomley
 author: chcomley
 ms.topic: how-to
 monikerRange: "<= azure-devops"
-ms.date: 03/18/2026
+ms.date: 03/24/2026
 ai-usage: ai-assisted
 ---
 
@@ -107,6 +107,8 @@ Returns:
 
 ::: moniker range="azure-devops"
 
+<a id="use-ai-assistance"></a>
+
 ## Use AI to build trend queries
 
 If you configure the [Azure DevOps MCP Server](/azure/devops/mcp-server/mcp-server-overview), you can use AI assistants to help construct and troubleshoot trend queries against snapshot entity sets.
@@ -115,15 +117,18 @@ If you configure the [Azure DevOps MCP Server](/azure/devops/mcp-server/mcp-serv
 
 | Task | Example prompt |
 |------|----------------|
-| Bug trend query | `Write an OData trend query that shows the daily bug count by state over the last 30 days in <Contoso> project` |
-| Sprint snapshot | `Create an OData query against WorkItemSnapshot that shows work item counts grouped by date for the current sprint in <Contoso> project` |
-| Filter by iteration | `Generate an OData trend query that uses iteration start and end dates to show story point burndown in <Contoso> project` |
-| Board snapshot | `Write an OData query against WorkItemBoardSnapshot to track items by board column over the past two weeks in <Contoso> project` |
-| Optimize performance | `My WorkItemSnapshot trend query is timing out — help me add proper date filters and aggregation to improve performance in <Contoso> project` |
-| Period comparison | `Create an OData trend query that compares bug counts between the current sprint and the previous sprint in <Contoso> project` |
-| Remaining work trend | `Write an OData trend query that shows the daily sum of remaining work by area path for the current iteration in <Contoso> project` |
-| Detect state changes | `Create an OData snapshot query that tracks how many work items moved from Active to Resolved each day over the past 60 days in <Contoso> project` |
-| Scope change analysis | `Generate an OData trend query that shows the daily count of user stories added or removed from a sprint by comparing snapshot data in <Contoso> project` |
+| Bug trend by date range | `Write an OData trend query that shows the daily bug count by state over the last 30 days in <ProjectName>.` |
+| Sprint snapshot | `Create an OData query against WorkItemSnapshot that shows work item counts grouped by date for the current sprint in <ProjectName>.` |
+| Filter by iteration | `Generate an OData trend query that uses the iteration start and end dates from <IterationName> to show story point burndown in <ProjectName>.` |
+| Board column trend | `Write an OData query against WorkItemBoardSnapshot to track work items by board column over the past two weeks in <ProjectName> in the <OrganizationName> organization.` |
+| Optimize performance | `My WorkItemSnapshot trend query for <ProjectName> is timing out. Suggest specific date filters and aggregation to reduce the row count without losing the key metrics.` |
+| Compare sprints | `Create an OData trend query that compares bug counts between <SprintName> and the previous sprint in <ProjectName> in the <OrganizationName> organization.` |
+| Remaining work trend | `Write an OData trend query that shows the daily sum of remaining work grouped by Area Path for the current iteration in <ProjectName>.` |
+| Detect state changes | `Create an OData snapshot query that tracks how many work items moved from Active to Resolved each day over the past <NumberOfDays> days in <ProjectName>.` |
+| Scope change analysis | `Generate an OData trend query that shows the daily count of user stories added or removed from <SprintName> by comparing WorkItemSnapshot data in <ProjectName>.` |
+
+> [!TIP]
+> If you're using Visual Studio Code, agent mode is especially helpful for iterating on trend queries—refining date ranges, troubleshooting `$apply` syntax, and validating snapshot results.
 
 ::: moniker-end
 
