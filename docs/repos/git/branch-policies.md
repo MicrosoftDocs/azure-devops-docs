@@ -5,7 +5,8 @@ description: Branch policies and settings provide teams with the means to protec
 ms.assetid: 5D76697E-16A0-4048-91D1-806FE24C92A3
 ms.service: azure-devops-repos
 ms.topic: overview
-ms.custom: cross-service, devx-track-azurecli
+ms.custom: cross-service, devx-track-azurecli, copilot-scenario-highlight
+ai-usage: ai-assisted
 ms.date: 03/31/2022
 monikerRange: '<= azure-devops'
 ms.subservice: azure-devops-repos-git
@@ -14,6 +15,8 @@ ms.subservice: azure-devops-repos-git
 # Branch policies and settings
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
+
+[!INCLUDE [ai-assistance-callout](../../includes/ai-assistance-callout.md)]
 
 Branch policies help teams protect their important [branches](./create-branch.md) of development. Policies enforce your team's code quality and change management standards. This article describes how to set and manage branch policies. For an overview of all repository and branch policies and settings, see [Git repository settings and policies](repository-settings.md).
 

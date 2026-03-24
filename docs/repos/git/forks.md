@@ -8,12 +8,15 @@ ms.topic: how-to
 ms.date: 10/19/2022
 monikerRange: '<= azure-devops'
 ms.subservice: azure-devops-repos-git
+ai-usage: ai-assisted
 ---
 
 # Forks
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 [!INCLUDE [version-vs-gt-eq-2019](../../includes/version-vs-gt-eq-2019.md)]
+
+[!INCLUDE [ai-assistance-callout](../../includes/ai-assistance-callout.md)]
 
 Git repo forks are useful when people want to make experimental, risky, or concealed changes to a codebase, but those changes need to be isolated from the codebase in the original repo. A new fork is basically a new remote repo that shares the source code of the original repo.
 

@@ -8,12 +8,15 @@ ms.topic: how-to
 monikerRange: '<= azure-devops'
 ms.date: 08/03/2022
 ms.subservice: azure-devops-repos-git
-ms.custom: sfi-image-nochange
+ms.custom: sfi-image-nochange, copilot-scenario-highlight
+ai-usage: ai-assisted
 ---
 
 # Review pull requests
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
+
+[!INCLUDE [ai-assistance-callout](../../includes/ai-assistance-callout.md)]
 
 When you create a [pull request](pull-requests.md) (PR) and specify required/optional reviewers, Azure Repos will notify the reviewers that your PR is ready for review. All required reviewers must approve the changes in your PR before the changes can merge into the target branch. For PRs that change critical branches like the `main` branch, your team might have created [branch policies](branch-policies.md) that specify the reviewers or require a minimum number of reviewers. If branch policies add optional reviewers to your PR, you can keep them, require them, or remove them. If branch policies add required reviewers to your PR, you can't make them optional or remove them. For information about assigning reviewers through branch policies, see [Automatically include code reviewers](branch-policies.md#include-code-reviewers).
 
