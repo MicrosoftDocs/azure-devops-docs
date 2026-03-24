@@ -17,21 +17,9 @@ ms.custom: sfi-image-nochange, pat-reduction
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
+When you connect to [Analytics](../powerbi/what-is-analytics.md) from Power BI or Excel, you must authenticate to Azure DevOps. This article explains how to enter credentials, choose an authentication method, and update stored credentials when they expire or need to change.
+
 [!INCLUDE [use-microsoft-entra-reduce-pats](../../includes/use-microsoft-entra-reduce-pats.md)]
-
-::: moniker range="azure-devops"
-
-When you connect from Power BI or Excel to Analytics by using the OData feed, choose **Microsoft Entra ID** for the most secure option.
-You can also authenticate with personal access tokens (PATs), but this method is less secure.
-
-::: moniker-end
-
-::: moniker range="<azure-devops"
-
-When you connect from Power BI or Excel to Analytics by using the OData feed, choose Windows credentials as the most secure option.
-You can also authenticate with personal access tokens (**PATs**), but this method is less secure.
-
-::: moniker-end
 
 ## Prerequisites
 

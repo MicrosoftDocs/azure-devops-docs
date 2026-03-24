@@ -6,6 +6,7 @@ ms.assetid: 9336ed18-c239-4394-aa4c-64b6d01130f9
 ms.service: azure-devops-repos
 ms.topic: how-to
 ms.custom: cross-service, devx-track-azurecli
+ai-usage: ai-assisted
 monikerRange: '<= azure-devops' 
 ms.date: 08/08/2022
 ms.subservice: azure-devops-repos-git
@@ -15,7 +16,9 @@ ms.subservice: azure-devops-repos-git
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
-There are several ways to customize your Azure Repos Git repositories by using branch and repository settings and policies. This article discusses repository-level settings and policies:
+[!INCLUDE [ai-assistance-callout](../../includes/ai-assistance-callout.md)]
+
+There are several ways to customize your Azure Repos Git repositories by using branch and repository settings and policies. This article discusses repository-level settings and policies.
 
 - Repository settings and policies configure global options for all Git repositories for a project or organization, or for individual repositories.
 

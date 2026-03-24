@@ -10,7 +10,7 @@ metadata:
   ms.subservice: azure-devops-projects
   ms.author: chcomley
   author: chcomley
-  ms.date: 03/14/2026
+  ms.date: 03/19/2026
 
 # highlightedContent section (optional)
 # Maximum of 8 items
@@ -45,10 +45,10 @@ productDirectory:
       links:
         - url: ./boards/get-started/what-is-azure-boards.md
           text: What is Azure Boards?
-        - url: ./boards/backlogs/create-your-backlog.md
-          text: Create your backlog
         - url: ./boards/get-started/plan-track-work.md
           text: Plan and track work
+        - url: ./boards/configure-customize.md
+          text: Configure and customize boards
     # Card
     - title: Azure Pipelines
       imageSrc: ./media/index/DevOpsIconPipelines96.svg
@@ -56,10 +56,10 @@ productDirectory:
       links:
         - url: ./pipelines/get-started/what-is-azure-pipelines.md
           text: What is Azure Pipelines?
-        - url: /azure/devops/pipelines/tasks/reference/
-          text: Task reference
-        - url: /azure/devops/pipelines/yaml-schema/
-          text: YAML schema
+        - url: ./pipelines/create-first-pipeline.md
+          text: Create your first pipeline
+        - url: ./pipelines/troubleshooting/troubleshooting.md
+          text: Troubleshoot pipeline runs
     # Card
     - title: Azure Artifacts
       imageSrc: ./media/index/DevOpsIconArtifacts96.svg
@@ -67,10 +67,10 @@ productDirectory:
       links:
         - url: ./artifacts/start-using-azure-artifacts.md
           text: What is Azure Artifacts?
-        - url: ./artifacts/concepts/feeds.md
-          text: Artifacts feeds
-        - url: ./artifacts/concepts/upstream-sources.md
-          text: Upstream sources
+        - url: ./artifacts/npm/npmrc.md
+          text: Connect to a feed
+        - url: ./artifacts/feeds/feed-permissions.md
+          text: Manage feed permissions
     # Card
     - title: Azure Repos
       imageSrc: ./media/index/DevOpsIconRepos96.svg
@@ -98,35 +98,17 @@ productDirectory:
       imageSrc: /media/common/i_server.svg
       summary: Host Azure DevOps on your own infrastructure with the on-premises server.
       links:
-        - url: /azure/devops/server/admin/admin-quick-ref
-          text: Administrative tasks
         - url: /azure/devops/server/requirements
           text: Setup and upgrade requirements
         - url: /azure/devops/server/install/get-started
           text: Install
+        - url: /azure/devops/server/admin/admin-quick-ref
+          text: Administrative tasks reference
 # additionalContent section
 additionalContent:
   sections:
   - title: Additional resources
     items:
-      # Card
-      - title: Integration
-        links:
-            - text: GitHub integration with Azure DevOps
-              url: ./cross-service/github-integration.md
-            - text: Connect work, code, builds, and tests across services
-              url: ./cross-service/cross-service-overview.md
-            - text: Deploy to Azure with Azure Pipelines
-              url: ./pipelines/overview-azure.md
-      # Card
-      - title: Security and access
-        links:
-            - text: Make your Azure DevOps secure
-              url: ./organizations/security/security-overview.md
-            - text: About permissions and security groups
-              url: ./organizations/security/about-permissions.md
-            - text: About access levels
-              url: ./organizations/security/access-levels.md
       # Card
       - title: AI assistance
         links:
@@ -137,12 +119,30 @@ additionalContent:
             - text: Use GitHub Copilot with Azure Boards
               url: ./boards/github/work-item-integration-github-copilot.md
       # Card
-      - title: More resources
+      - title: Security and access
         links:
-            - text: About dashboards, charts, reports, and widgets
-              url: ./report/dashboards/overview.md
-            - text: Developer resources
-              url: ./integrate/index.md
+            - text: Make your Azure DevOps secure
+              url: ./organizations/security/security-overview.md
+            - text: About permissions and security groups
+              url: ./organizations/security/about-permissions.md
+            - text: About access levels
+              url: ./organizations/security/access-levels.md
+      # Card
+      - title: Integration
+        links:
+            - text: GitHub integration with Azure DevOps
+              url: ./cross-service/github-integration.md
+            - text: Connect work, code, builds, and tests across services
+              url: ./cross-service/cross-service-overview.md
+            - text: Deploy to Azure with Azure Pipelines
+              url: ./pipelines/overview-azure.md
+      # Card
+      - title: Troubleshooting
+        links:
             - text: Troubleshooting guides and FAQs
               url: ./troubleshoot/index.yml
+            - text: Troubleshoot connecting to a project
+              url: ./user-guide/troubleshoot-connection.md
+            - text: Get support and provide feedback
+              url: ./user-guide/provide-feedback.md
   footer: "[Blogs](https://devblogs.microsoft.com/devops/) - [X](https://x.com/AzureDevOps) - [Stack Overflow](https://stackoverflow.com/questions/tagged/azure-devops) - [Issue Reporting](https://azure.microsoft.com/support/devops/) - [Developer Community](https://azure.microsoft.com/support/devops/) - [Service Status](https://status.dev.azure.com/)"

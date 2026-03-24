@@ -28,6 +28,8 @@ For more information about PR status, see [Customize and extend pull request wor
 | **Service Hooks** | [Configure service hooks](#configure-a-service-hook-for-pr-events) for PR events to notify your Azure function when a pull request changes. |
 | **Authentication** | **Microsoft Entra ID token** with the **Code (status)** scope to have permission to change PR status. For more information, see [Microsoft Entra authentication](../../integrate/get-started/authentication/entra.md). |
 
+[!INCLUDE [use-microsoft-entra-reduce-pats](../../includes/use-microsoft-entra-reduce-pats.md)]
+
 ### Create a basic Azure Function to listen to Azure Repos events
 
 [Create your first Azure function](/azure/azure-functions/functions-create-first-azure-function). Then, modify the code in the sample to look like the following code:

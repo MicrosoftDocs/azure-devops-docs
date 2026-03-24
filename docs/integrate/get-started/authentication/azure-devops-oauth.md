@@ -8,7 +8,7 @@ monikerRange: 'azure-devops'
 ms.author: chcomley
 author: chcomley
 ms.date: 07/14/2025
-ms.custom: sfi-image-nochange
+ms.custom: sfi-image-nochange, pat-reduction
 ---
 
 # Use Azure DevOps OAuth 2.0

@@ -32,6 +32,8 @@ This list includes essential information such as:
 |**Organization** | Member of an Azure DevOps organization [connected to Microsoft Entra ID](connect-organization-to-azure-ad.md). |
 |**Azure DevOps CLI** | A Microsoft Entra token. For more information, see [Issue Microsoft Entra tokens with Azure CLI](../../cli/entra-tokens.md). |
 
+[!INCLUDE [use-microsoft-entra-reduce-pats](../../includes/use-microsoft-entra-reduce-pats.md)]
+
 ## Get list of organizations
 
 #### [Browser](#tab/browser)
