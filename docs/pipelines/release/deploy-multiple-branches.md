@@ -61,21 +61,30 @@ In this section, you create the base Classic release pipeline and configure the 
 
 ## Add a new stage
 
+In this section, you add a second stage (**Prod**) to the same release pipeline and configure it to deploy only when artifacts are built from the *main* branch. This lets you keep branch-to-stage routing consistent across environments.
+
 1. Sign in to your Azure DevOps organization, and then navigate to your project.
 
-1. Select **Pipelines** > **Releases**, select your release pipeline, and then select **Edit**.
+1. Select **Pipelines** > **Releases**, open the release pipeline you created earlier, and then select **Edit**.
 
-1. Under **Stages**, select **Add** > **New stage** to add a new stage.
+1. Under **Stages**, select **Add** > **New stage**.
  
-1. Select **Start with an empty job** when prompted to select a template. 
+1. In the template picker, select **Start with an empty job**.
 
-1. Select your new stage and rename it to **Prod**. The following steps show how to configure this stage to trigger when an artifact is published from the *main* branch.
+1. Select the new stage and rename it to **Prod**. In the next steps, you configure this stage so it deploys only when the artifact comes from the *main* branch.
 
-1. Select your *Prod* stage, select the **Pre-deployment conditions** icon, and set the deployment trigger to **After release**. This ensures deployment to this stage whenever a new release is created.
+1. In the **Prod** stage, select the **Pre-deployment conditions** icon.
 
-1. Select the toggle button to enable **Artifact filters**. Select **Add**, and then specify the artifact you selected earlier and set the **Build branch** to *main*.
+1. Set **Deployment trigger** to **After release** so this stage can start automatically when a new release is created.
 
-    :::image type="content" source="media/predeployment-conditions-prod.png" alt-text="A screenshot displaying how to configure predeployment conditions for the Prod stage.":::  
+1. Still in **Pre-deployment conditions**, configure branch-based filtering for production:
+
+    - Turn on **Artifact filters**.
+    - Select **Add**.
+    - Select the same artifact source you configured earlier.
+    - Set **Build branch** to *main*.
+
+    With this filter in place, the **Prod** stage deploys only when the release is created from a build of the *main* branch.
 
 ## Deploy to a specific stage
 
@@ -85,6 +94,8 @@ Now that you've set up your stages, every time a new artifact is available, the 
 
 ## Related articles
 
-- [Artifact sources](artifacts.md)
-- [Release triggers](triggers.md)
+- [Create a multi-stage release pipeline](define-multistage-release-process.md)
+
+- [Use variables in Classic release pipelines](variables.md)
+
 - [Deploy pull request Artifacts](deploy-pull-request-builds.md)
