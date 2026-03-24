@@ -2,14 +2,14 @@
 title: Status and trend work item, query-based charts
 titleSuffix: Azure DevOps
 description: Learn how to add status, progress, and trend charts to dashboards from flat-list queries in Azure DevOps.
-ms.custom: dashboards, copilot-scenario-highlight
+ms.custom: dashboards, copilot-scenario-highlight, awp-ai
 ms.subservice: azure-devops-analytics
 ms.assetid: EFAD32DB-8B19-4ACC-8F72-87CC5A513798
 ms.author: chcomley
 author: chcomley
 ms.topic: how-to
 monikerRange: '<= azure-devops'
-ms.date: 03/18/2026
+ms.date: 03/23/2026
 ai-usage: ai-assisted
 #customer intent: As an Azure Boards user, I want to create charts to track the status of work in progress.
 ---
@@ -40,7 +40,7 @@ Chart the results of a [flat-list query](../../boards/queries/using-queries.md#d
 
 ## Create a flat-list query  
 
-Select the **Flat list of work items** query type — other query types aren't supported for charting. For more information, see [Define a flat-list query](../../boards/queries/using-queries.md#flat-list).
+Select the **Flat list of work items** query type. Other query types aren't supported for charting. For more information, see [Define a flat-list query](../../boards/queries/using-queries.md#flat-list).
 
 Add any field you want to chart to a query clause or to column options:
 
@@ -69,7 +69,7 @@ To add a chart to a dashboard, [save the query to a **Shared Queries** folder](.
 |----------|---------|
 | **Area / iteration grouping** | Only the leaf node of **Area Path** or **Iteration Path** appears. If your query mixes levels, group by **Node Name** instead. |
 | **Sorting** | Sort by **Value** (numeric count or sum) or **Label** (grouping field name), in ascending or descending order. |
-| **Series limit** | Charts show up to 8 series (12 on resized dashboard widgets). Extra values roll up into *(other)*. |
+| **Series limit** | Charts show up to eight series (12 on resized dashboard widgets). Extra values roll up into *(other)*. |
 
 ## Create a query-based chart  
 
@@ -151,23 +151,29 @@ To add other chart types like test results or build summaries, see [Add widgets 
 
 ::: moniker range="azure-devops"
 
+<a id="use-ai-assistance"></a>
+
 ## Use AI to build query-based charts
 
-If you configure the [Azure DevOps MCP Server](/azure/devops/mcp-server/mcp-server-overview), you can use AI assistants to help create queries and charts for tracking work.
+If you configure the [Azure DevOps MCP Server](../../mcp-server/mcp-server-overview.md), you can use AI assistants to help create queries and charts for tracking work.
 
 ### Example prompts
 
 | Task | Example prompt |
 |------|----------------|
-| Build a query for charting | `Write a flat-list query that returns all active bugs grouped by priority in <Contoso> project` |
+| Build a query for charting | `Write a flat-list query that returns all active bugs grouped by priority in the <project-name> project` |
 | Choose a chart type | `Should I use a pie chart, stacked bar, or pivot table to show bug distribution by area path?` |
-| Track trends | `Help me create a trend chart that shows how bug counts change over the last 30 days in <Contoso> project` |
-| Sum numeric fields | `How do I create a chart that shows total Story Points by team member in <Contoso> project?` |
-| Group by custom field | `Help me create a stacked bar chart that groups work items by a custom "Release" field in <Contoso> project` |
-| Compare sprints | `Create a pivot table that compares bug counts by state across the last three iteration paths in <Contoso> project` |
+| Track trends | `Help me create a trend chart that shows how bug counts change over the last 30 days in the <project-name> project` |
+| Sum numeric fields | `How do I create a chart that shows total Story Points by team member in the <project-name> project?` |
+| Group by custom field | `Help me create a stacked bar chart that groups work items by a custom "Release" field in the <project-name> project` |
+| Compare sprints | `Create a pivot table that compares bug counts by state across the last three iteration paths in the <project-name> project` |
 | Spot workload imbalance | `Build a stacked bar chart showing active work items per team member, grouped by work item type, so I can see who's overloaded` |
-| Track debt | `Write a query and trend chart that tracks unresolved bugs older than 30 days in <Contoso> project` |
+| Track debt | `Write a query and trend chart that tracks unresolved bugs older than 30 days in the <project-name> project` |
 | Add chart to dashboard | `What's the best way to share a query-based chart with my team on a dashboard?` |
+
+> [!TIP]
+> If you're using Visual Studio Code, [agent mode](/visualstudio/ide/copilot-chat-context#agent-mode) is especially helpful for iterating on a flat-list query and then walking through the exact chart and dashboard steps for your project.
+> - To avoid using stale or cached data from previous queries, add to your prompt, `Do not use previously fetched data`.
 
 ::: moniker-end
 
