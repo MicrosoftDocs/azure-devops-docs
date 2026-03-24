@@ -22,7 +22,7 @@ zone_pivot_groups: configure-cli
 
 If you want to use Azure DevOps CLI with a YAML pipeline, you can use the Azure DevOps extension or use the [AzureCLI task](/azure/devops/pipelines/tasks/reference/azure-cli-v2). The Microsoft-hosted Windows and Linux agents are preconfigured with Azure CLI and the Azure DevOps CLI extension. The Azure DevOps CLI extension runs `az devops` commands. 
 
-You can authenticate with either a PAT or you can use the [AzureCLI@2 task](/azure/devops/pipelines/tasks/reference/azure-cli-v2) with a service connection. Using a service connection is the more secure option because you won't need to manually manage credentials.
+You can authenticate with either a PAT or you can use a service connection with an Azure CLI task. Using a service connection is the more secure option because you won't need to manually manage credentials.
 
 
 ::: zone pivot="pat"  
@@ -33,7 +33,7 @@ Some Azure DevOps CLI commands, like `az devops configure` and `az devops --help
 
 You can authenticate using the [System.AccessToken](../pipelines/build/variables.md#systemaccesstoken) security token used by the running pipeline, by assigning it to an environment variable named `AZURE_DEVOPS_EXT_PAT`, as shown in the following example.
 
-Using `System.AccessToken` relies on having a PAT. As a more secure alternative, you can use the AzureCLI@2 task to populate a service connection.
+Using `System.AccessToken` relies on having a PAT. As a more secure alternative, use a service connection. For setup guidance, see [Manage service connections](../pipelines/library/service-endpoints.md).
 
 # [Bash](#tab/bash)
 
@@ -491,6 +491,8 @@ When you use a service connection, the service connection provides the necessary
 
 > [!NOTE]
 > When you use a service connection for authentication with `AzureCLI@2`, you need to [manually add the service principal to your Azure DevOps organization](../integrate/get-started/authentication/service-principal-managed-identity.md#step-2-add-the-identity-to-azure-devops). 
+>
+> For PAT-free guidance and service-connection best practices, see [Manage service connections](../pipelines/library/service-endpoints.md).
 
 This code sample defines a new parameter, `serviceConnection`, with the name of an existing service connection. That parameter is referenced in the `AzureCLI@2` task. The task lists all projects (`az devops project list`) and pools (`az pipelines pool list`). 
 
@@ -585,6 +587,7 @@ For more examples of working with variables, including working with variables ac
 
 - [System.AccessToken](../pipelines/build/variables.md#systemaccesstoken)
 - [Access repositories, artifacts, and other resources](../pipelines/process/access-tokens.md)
+- [Manage service connections](../pipelines/library/service-endpoints.md)
 - [Define variables](../pipelines/process/variables.md)
 - [Azure DevOps CLI extension reference](/cli/azure/devops)
 - [Azure DevOps CLI extension az pipelines reference](/cli/azure/pipelines)
