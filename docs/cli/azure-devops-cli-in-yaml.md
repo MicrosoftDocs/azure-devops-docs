@@ -487,14 +487,14 @@ steps:
 
 ## Authenticate with a service connection 
 
-When you use a service connection, the service connection provides the necessary credentials for Azure CLI and Azure DevOps CLI commands in the AzureCLI@2 task without requiring manual credential management in the pipeline.
+When you use a service connection, the service connection provides the necessary credentials for Azure CLI and Azure DevOps CLI commands in the AzureCLI@3 task without requiring manual credential management in the pipeline.
 
 > [!NOTE]
-> When you use a service connection for authentication with `AzureCLI@2`, you need to [manually add the service principal to your Azure DevOps organization](../integrate/get-started/authentication/service-principal-managed-identity.md#step-2-add-the-identity-to-azure-devops). 
+> When you use a service connection for authentication with `AzureCLI@3`, you need to [manually add the service principal to your Azure DevOps organization](../integrate/get-started/authentication/service-principal-managed-identity.md#step-2-add-the-identity-to-azure-devops). 
 >
 > For PAT-free guidance and service-connection best practices, see [Manage service connections](../pipelines/library/service-endpoints.md).
 
-This code sample defines a new parameter, `serviceConnection`, with the name of an existing service connection. That parameter is referenced in the `AzureCLI@2` task. The task lists all projects (`az devops project list`) and pools (`az pipelines pool list`). 
+This code sample defines a new parameter, `serviceConnection`, with the name of an existing service connection. That parameter is referenced in the `AzureCLI@3` task. The task lists all projects (`az devops project list`) and pools (`az pipelines pool list`). 
 
 ```yml
 trigger:
@@ -507,7 +507,7 @@ parameters:
   default: my-service-connection
 
 steps:
-  - task: AzureCLI@2
+  - task: AzureCLI@3
     condition: succeededOrFailed()
     displayName: 'Azure CLI -> DevOps CLI'
     inputs:
@@ -550,7 +550,7 @@ parameters:
   default: my-service-connection
 
 steps:
-  - task: AzureCLI@2
+  - task: AzureCLI@3
     condition: succeededOrFailed()
     displayName: 'Azure CLI -> DevOps CLI'
     inputs:
@@ -566,7 +566,7 @@ steps:
         $id = az pipelines variable-group list --group-name kubernetes --query [].id -o tsv
         Write-Host "##vso[task.setvariable variable=variableGroupId]$id"
 
-  - task: AzureCLI@2
+  - task: AzureCLI@3
     condition: succeededOrFailed()
     displayName: 'Azure CLI -> DevOps CLI'
     inputs:
