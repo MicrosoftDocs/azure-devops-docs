@@ -494,7 +494,7 @@ When you use a service connection, the service connection provides the necessary
 >
 > For PAT-free guidance and service-connection best practices, see [Manage service connections](../pipelines/library/service-endpoints.md).
 
-This code sample defines a new parameter, `serviceConnection`, with the name of an existing service connection. That parameter is referenced in the `AzureCLI@3` task. The task lists all projects (`az devops project list`) and pools (`az pipelines pool list`). 
+This code sample defines a new parameter, `serviceConnection`, with the name of an existing service connection. That parameter is referenced in the `AzureCLI@3` task. The script uses a secret-less connection to call a REST endpoint, then lists projects and pools.
 
 ```yml
 trigger:
@@ -508,28 +508,26 @@ parameters:
 
 steps:
   - task: AzureCLI@3
-    condition: succeededOrFailed()
-    displayName: 'Azure CLI -> DevOps CLI'
+    displayName: Secret-less
     inputs:
       connectionType: 'azureDevOps'
       azureDevOpsServiceConnection: '${{ parameters.serviceConnection }}'
-      scriptType: pscore
-      scriptLocation: inlineScript
+      scriptType: 'pscore'
+      scriptLocation: 'inlineScript'
       inlineScript: |
-        Write-Host "Using logged-in Azure CLI session..."
-        Write-Host "$($PSStyle.Formatting.FormatAccent)az devops configure$($PSStyle.Reset)"
-        az devops configure --defaults organization=$(System.CollectionUri) project=$(System.TeamProject)
+        az rest --method get `
+                --url "https://status.dev.azure.com/_apis/status/health?api-version=7.1-preview.1" `
+                --resource 499b84ac-1321-427f-aa17-267ca6975798 `
+                --query "sort_by(services[?id=='Pipelines'].geographies | [], &name)" `
+                -o table
+
         az devops configure -l
 
-        Write-Host "`nUse Azure DevOps CLI (az devops) to list projects in the organization '$(System.CollectionUri)'..."
-        Write-Host "$($PSStyle.Formatting.FormatAccent)az devops project list$($PSStyle.Reset)"
         az devops project list --query "value[].{Name:name, Id:id}" `
-                               -o table
-   
-        Write-Host "`nUse Azure DevOps CLI (az pipelines) to list pools in the organization '$(System.CollectionUri)'..."
-        Write-Host "$($PSStyle.Formatting.FormatAccent)az pipelines pool list$($PSStyle.Reset)"
+                              -o table
+
         az pipelines pool list --query "[].{Id:id, Name:name}" `
-                               -o table
+                              -o table
       failOnStandardError: true
 ```
 
