@@ -3,13 +3,13 @@ title: Create Actionable Dashboards in Azure DevOps
 titleSuffix: Azure DevOps
 description: Design effective dashboards in Azure DevOps to keep your team informed and projects on track. Learn how to create and customize dashboards with actionable widgets.
 ms.subservice: azure-devops-analytics
-ms.custom: dashboards, engagement-fy23, copilot-scenario-highlight
+ms.custom: dashboards, engagement-fy23, copilot-scenario-highlight, awp-ai
 ms.author: chcomley
 author: chcomley
 ms.topic: conceptual
 monikerRange: "<= azure-devops"
 ai-usage: ai-assisted
-ms.date: 03/18/2026
+ms.date: 03/23/2026
 #customer intent: As an Azure DevOps developer, I want to design effective dashboards, so I can create useful dashboards for my projects and teams in Azure DevOps.
 ---
 
@@ -182,6 +182,8 @@ The following image shows an example of **Deployment status** widget output on a
 
 ::: moniker range="azure-devops"
 
+<a id="use-ai-assistance"></a>
+
 ## Use AI to plan effective dashboards
 
 If you configure the [Azure DevOps MCP Server](/azure/devops/mcp-server/mcp-server-overview), you can use AI assistants to help plan and design dashboards.
@@ -196,6 +198,11 @@ If you configure the [Azure DevOps MCP Server](/azure/devops/mcp-server/mcp-serv
 | Personal productivity | `What assigned-to-me widgets can I add to a dashboard to track my own work items and pull requests?` |
 | Stakeholder view | `Help me create a dashboard focused on release readiness for stakeholders in <Contoso> project` |
 | Pipeline health | `What widgets should I add to monitor build and release pipeline health on a dashboard?` |
+| Triage bottlenecks | `Based on work items in the current sprint for <Contoso> project, where are items getting stuck and which dashboard widgets should we add to monitor those bottlenecks?` |
+| Create a dashboard checklist | `Create a checklist for a sprint dashboard for <Fabrikam> team: what questions should it answer, which widgets should it include, and what queries does each widget need?` |
+
+> [!TIP]
+> If you're using Visual Studio Code, [agent mode](/visualstudio/ide/copilot-chat-context#agent-mode) is especially helpful for iterating on dashboard recommendations while you explore real project data.
 
 ::: moniker-end
 
