@@ -20,9 +20,9 @@ zone_pivot_groups: configure-cli
 
 [!INCLUDE [version-eq-azure-devops](../includes/version-eq-azure-devops.md)] 
 
-If you want to use Azure DevOps CLI with a YAML pipeline, you can use the Azure DevOps extension or use the [AzureCLI@3 task](/azure/devops/pipelines/tasks/reference/azure-cli-v3). The Microsoft-hosted Windows and Linux agents are preconfigured with Azure CLI and the Azure DevOps CLI extension. The Azure DevOps CLI extension runs `az devops` commands. 
+Azure DevOps CLI lets you manage Azure DevOps resources from the command line. Run CLI commands in a YAML pipeline with the [AzureCLI@3 task](/azure/devops/pipelines/tasks/reference/azure-cli-v3) to automate common DevOps tasks as part of your CI/CD workflow. Microsoft-hosted Windows and Linux agents already include Azure CLI and the Azure DevOps CLI extension.
 
-You can authenticate with either a PAT or you can use a service connection with an Azure CLI task. Using a service connection is the more secure option because you won't need to manually manage credentials.
+For authentication, use an [Azure DevOps service connection](../pipelines/library/service-endpoints.md) backed by Microsoft Entra workload identity federation. We recommend this approach because it eliminates credential management. Use a personal access token (PAT) only when a service connection isn't available.
 
 
 ::: zone pivot="pat"  
