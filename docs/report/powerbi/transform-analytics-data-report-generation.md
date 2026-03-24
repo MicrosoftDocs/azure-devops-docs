@@ -3,12 +3,12 @@ title: Power BI data transformations
 titleSuffix: Azure DevOps
 description: Learn how to expand columns and transform Analytics data in Power BI to support report generation.
 ms.subservice: azure-devops-analytics
-ms.custom: powerbi, copilot-scenario-highlight
+ms.custom: powerbi, copilot-scenario-highlight, awp-ai
 ms.author: chcomley
 author: chcomley
 ms.topic: how-to
 monikerRange: "<=azure-devops"
-ms.date: 03/18/2026
+ms.date: 03/24/2026
 ai-usage: ai-assisted
 ---
 
@@ -196,17 +196,24 @@ After expanding and transforming columns, rename them so they're readable in you
 
 ## Use AI to transform Analytics data in Power BI
 
-If you configure the [Azure DevOps MCP Server](/azure/devops/mcp-server/mcp-server-overview), you can use AI assistants to help with Power BI data transformations.
+If you configure the [Azure DevOps MCP Server](../../mcp-server/mcp-server-overview.md), you can use AI assistants to write and optimize OData trend and snapshot queries for your Power BI Analytics reports using natural language.
 
 ### Example prompts
 
 | Task | Example prompt |
 |------|----------------|
-| Expand entity columns | `How do I expand the Area and Iteration columns in Power BI after importing OData data from <Contoso> project?` |
-| Pivot state categories | `Write Power Query steps to pivot the StateCategory column into separate count columns in my Power BI report` |
-| Replace null values | `Help me replace null values in the StoryPoints column with zero in Power BI` |
-| Create a computed column | `Create a Power Query custom column that calculates percent complete from pivoted state category columns` |
-| Convert date fields | `How do I convert CompletedDateSK from an integer like 20220701 to a proper Date field in Power BI?` |
+| Bug trend by date range | `Write an OData trend query that shows the daily bug count by state over the last 30 days in <ProjectName>.` |
+| Sprint snapshot | `Create an OData query against WorkItemSnapshot that shows work item counts grouped by date for the current sprint in <ProjectName>.` |
+| Filter by iteration | `Generate an OData trend query that uses the iteration start and end dates from <IterationName> to show story point burndown in <ProjectName>.` |
+| Board column trend | `Write an OData query against WorkItemBoardSnapshot to track work items by board column over the past two weeks in <ProjectName> in the <OrganizationName> organization.` |
+| Optimize performance | `My WorkItemSnapshot trend query for <ProjectName> is timing out. Suggest specific date filters and aggregation to reduce the row count without losing the key metrics.` |
+| Compare sprints | `Create an OData trend query that compares bug counts between <SprintName> and the previous sprint in <ProjectName> in the <OrganizationName> organization.` |
+| Remaining work trend | `Write an OData trend query that shows the daily sum of remaining work grouped by Area Path for the current iteration in <ProjectName>.` |
+| Detect state changes | `Create an OData snapshot query that tracks how many work items moved from Active to Resolved each day over the past <NumberOfDays> days in <ProjectName>.` |
+| Scope change analysis | `Generate an OData trend query that shows the daily count of user stories added or removed from <SprintName> by comparing WorkItemSnapshot data in <ProjectName>.` |
+
+> [!TIP]
+> If you're using Visual Studio Code, [agent mode](/visualstudio/ide/copilot-chat-context#agent-mode) is especially helpful for authoring and iterating on OData trend queries for Analytics-based Power BI reports.
 
 ::: moniker-end
 
