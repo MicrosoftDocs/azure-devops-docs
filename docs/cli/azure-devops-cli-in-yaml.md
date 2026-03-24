@@ -502,7 +502,7 @@ trigger:
 
 parameters:
 - name: serviceConnection
-  displayName: Azure Service Connection Name
+  displayName: Azure DevOps Service Connection Name
   type: string
   default: my-service-connection
 
@@ -511,7 +511,8 @@ steps:
     condition: succeededOrFailed()
     displayName: 'Azure CLI -> DevOps CLI'
     inputs:
-      azureSubscription: '${{ parameters.serviceConnection }}'
+      connectionType: 'azureDevOps'
+      azureDevOpsServiceConnection: '${{ parameters.serviceConnection }}'
       scriptType: pscore
       scriptLocation: inlineScript
       inlineScript: |
@@ -545,7 +546,7 @@ variables:
 
 parameters:
 - name: serviceConnection
-  displayName: Azure Service Connection Name
+  displayName: Azure DevOps Service Connection Name
   type: string
   default: my-service-connection
 
@@ -554,7 +555,8 @@ steps:
     condition: succeededOrFailed()
     displayName: 'Azure CLI -> DevOps CLI'
     inputs:
-      azureSubscription: '${{ parameters.serviceConnection }}'
+      connectionType: 'azureDevOps'
+      azureDevOpsServiceConnection: '${{ parameters.serviceConnection }}'
       scriptType: pscore
       scriptLocation: inlineScript
       inlineScript: |
@@ -570,7 +572,8 @@ steps:
     condition: succeededOrFailed()
     displayName: 'Azure CLI -> DevOps CLI'
     inputs:
-      azureSubscription: '${{ parameters.serviceConnection }}'
+      connectionType: 'azureDevOps'
+      azureDevOpsServiceConnection: '${{ parameters.serviceConnection }}'
       scriptType: pscore
       scriptLocation: inlineScript
       inlineScript: |
