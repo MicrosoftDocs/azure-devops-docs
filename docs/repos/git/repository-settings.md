@@ -640,7 +640,7 @@ az repos policy show --id
 
 #### Example
 
-The following example shows the name and details for policy ID `1` in the default project. This example uses the default configuration `az devops configure --defaults organization=https://dev.azure.com/fabrikamprime project="Fabrikam Fiber".`
+The following example shows the name and details for policy ID `1` in the default project. This example uses the default configuration `az devops configure --defaults organization=https://dev.azure.com/fabrikamprime project="Fabrikam Fiber"`.
 
 ```azurecli
 az repos policy show --id 1 --output table
@@ -702,7 +702,7 @@ The following *policy.json* file sets the minimum reviewers policy to require th
 }
 ``` 
 
-The `az repos policy update` command line updates the minimum reviewers policy per the *policy.json* file. You can find the policy ID by using [az repos policy list](/cli/azure/repos/policy#az-repos-policy-list). The example uses the default configuration `az devops configure --defaults organization=https://dev.azure.com/fabrikamprime project="Fabrikam Fiber".`
+The `az repos policy update` command line updates the minimum reviewers policy per the *policy.json* file. You can find the policy ID by using [az repos policy list](/cli/azure/repos/policy#az-repos-policy-list). The example uses the default configuration `az devops configure --defaults organization=https://dev.azure.com/fabrikamprime project="Fabrikam Fiber"`.
 
 ```azurecli
 az repos policy update --config C:\policies\policy.json --id 7 --output table
