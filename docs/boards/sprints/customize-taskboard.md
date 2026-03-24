@@ -38,10 +38,8 @@ To add or remove columns, select **Column Options**. Configure all other options
 | Option | Description |
 |--|--|
 | **[Show bugs](#show-bugs)** | Manage bugs on the Taskboard similar to tasks. |
-::: moniker range="<=azure-devops"
 | **[Customize columns](#add-columns)** | Add or remove columns shown on the Taskboard. |
 | **[Fields](#choose-fields)** | Add or remove fields from cards, including the **Parent** field. |
-::: moniker-end
 | **[Styles](#style-rule)** | Add styling rules to change card color and title style based on field criteria. |
 
 > [!NOTE]   

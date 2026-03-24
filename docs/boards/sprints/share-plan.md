@@ -82,7 +82,7 @@ Alternatively, select all items in the list, select **Copy as HTML**, and paste 
 
 <a id="use-ai-assistance"></a>
 
-# Use AI to review your sprint plan
+## Use AI to review your sprint plan
 
 If you connect the [Azure Boards MCP Server](../../mcp-server/mcp-server-overview.md) to your AI agent in agent mode, you can use natural language prompts to review and summarize your sprint plan.
 

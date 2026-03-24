@@ -21,7 +21,7 @@ This article provides ready-to-use query chart examples that you can adapt for y
 
 The examples are organized into three categories:
 
-- **[Backlog hygiene](#maintain-backlog-hygiene)** — Spot unassigned, stale, or incomplete work items
+- **[Backlog hygiene](#backlog-hygiene)** — Spot unassigned, stale, or incomplete work items
 - **[Status charts](#example-status-charts)** — Show current state of bugs, planned work, and blocked items
 - **[Trend charts](#example-trend-charts)** — Track how bug counts and active work change over time
 
