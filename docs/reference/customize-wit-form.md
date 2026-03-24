@@ -9,7 +9,8 @@ ms.author: chcomley
 author: chcomley
 ms.topic: how-to
 monikerRange: '< azure-devops' 
-ms.date: 01/17/2023 
+ms.date: 03/24/2026
+ai-usage: ai-assisted
 ---
 
 # Customize the work tracking web form  
@@ -146,6 +147,6 @@ You'll receive an error if you enable the new form, and then modify a WIT defini
 
 <a id="related"></a> 
 
-## Related articles  
+## Related content  
 
 - [Add and modify a WIT](add-modify-wit.md)

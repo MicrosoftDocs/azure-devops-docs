@@ -9,7 +9,8 @@ ms.author: chcomley
 author: chcomley
 ms.topic: how-to
 monikerRange: '<= azure-devops' 
-ms.date: 01/17/2023 
+ms.date: 03/24/2026
+ai-usage: ai-assisted
 ---
 
 # Add a portfolio backlog level
@@ -33,7 +34,7 @@ Here, we add a third portfolio backlog, Initiative. With it, the management team
 <a id="image-diff"></a>  
 
 > [!NOTE]  
-> The images you see from your web portal may differ from the images you see in this topic. These differences result from updates made to your project, and the process template chosen when creating your project&mdash;[Agile](../boards/work-items/guidance/agile-process.md), [Scrum](../boards/work-items/guidance/scrum-process.md), or [CMMI](../boards/work-items/guidance/cmmi-process.md). However, the basic functionality available to you remains the same unless explicitly mentioned. 
+> The images shown in your web portal might differ from the images in this article. These differences result from updates made to your project, and the process template chosen when creating your project&mdash;[Agile](../boards/work-items/guidance/agile-process.md), [Scrum](../boards/work-items/guidance/scrum-process.md), or [CMMI](../boards/work-items/guidance/cmmi-process.md). However, the basic functionality available to you remains the same unless explicitly mentioned. 
 
 
 ![A view of three portfolio backlogs enabled](media/three-level-portfolio-backlog.png)
@@ -251,9 +252,9 @@ witadmin importprocessconfig /collection:"CollectionURL" /p:"ProjectName" /f:"Di
 ```
 
 
-## Related articles 
+## Related content 
  
-We've just shown how to add another portfolio backlog level. You can add up to five portfolio backlogs. This includes the default backlogs of Feature and Epic. In total, this provides you with seven levels from the top-level portfolio backlog to task.  
+This article showed how to add another portfolio backlog level. You can add up to five portfolio backlogs. This includes the default backlogs of Feature and Epic. In total, this provides you with seven levels from the top-level portfolio backlog to task.  
 
 ![Conceptual image of 5 levels of portfolio backlog](media/five-levels-portfolio-backlogs.png)
 
@@ -287,6 +288,6 @@ Yes. For example, you can add Goal and Initiative WITs to a portfolio backlog ca
 
 **Can you nest backlog items in addition to using portfolio backlogs?**  
 
-While you can nest backlog items, we don't recommend you do. We don't support drag-and-drop linking of nested backlog items. Instead, we support [mapping of backlog items to portfolio items](../boards/backlogs/organize-backlog.md).  
+While you can nest backlog items, nesting isn't recommended. Drag-and-drop linking of nested backlog items isn't supported. Instead, use [mapping of backlog items to portfolio items](../boards/backlogs/organize-backlog.md).  
 
 For examples of how hierarchically linked items that belong to the Requirements Category appear on the backlogs and boards, see [How backlogs and boards display hierarchical (nested) items](../boards/backlogs/resolve-backlog-reorder-issues.md).

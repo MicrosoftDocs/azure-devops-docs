@@ -10,7 +10,7 @@ author: chcomley
 ai-usage: ai-assisted
 monikerRange: "<=azure-devops"
 ms.topic: tutorial
-ms.date: 03/03/2026
+ms.date: 03/24/2026
 ---
 
 # Customize a project using an inherited process
@@ -181,7 +181,7 @@ You can add more WITs to a backlog level or create another portfolio backlog. Fo
 
 ## Verify your customization
 
-We recommend that you create a test project and apply your customized inherited process to it to verify the changes you made. All customizations made to a process go into effect immediately on all projects. If you want to stage your changes, you can do that using one of two methods: 
+Create a test project and apply your customized inherited process to it to verify the changes you made. All customizations made to a process go into effect immediately on all projects. If you want to stage your changes, you can do that using one of two methods: 
 - [Create a test project and copy of your customized process](#test-project-copy-process)
 - [Create a test organization and import/export your process](#test-import-export-process)
 

@@ -8,7 +8,8 @@ ms.topic: overview
 ms.author: chcomley
 author: chcomley
 monikerRange: 'azure-devops'
-ms.date: 01/17/2023
+ms.date: 03/24/2026
+ai-usage: ai-assisted
 ---
 
 
@@ -139,7 +140,7 @@ This syntax is added to the following work item type definitions of the default 
  
 ## Customization sequence
 
-Use the following sequences when you manage customizations using the Hosted XML process model. This sequence requires you to update your project by updating the process template that it uses. We recommend that you maintain your process templates in a repository for version control.  
+Use the following sequences when you manage customizations using the Hosted XML process model. This sequence requires you to update your project by updating the process template that it uses. Maintain your process templates in a repository for version control.  
 
 [![Export process](media/cust-wit-form-export-process.png)](import-process/import-process.md#export-process)[![Import process](media/cust-wit-form-import-process.png)](import-process/import-process.md)![Refresh and verify changes](media/cust-wit-form-refresh-verify.png)  
 

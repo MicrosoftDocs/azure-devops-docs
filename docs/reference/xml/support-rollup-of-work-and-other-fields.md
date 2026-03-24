@@ -9,7 +9,8 @@ ms.author: chcomley
 author: chcomley
 ms.topic: overview
 monikerRange: '<= azure-devops'
-ms.date: 09/16/2024
+ms.date: 03/24/2026
+ai-usage: ai-assisted
 ---
 
 # Rollup of work and other fields

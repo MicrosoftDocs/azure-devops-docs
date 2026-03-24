@@ -9,7 +9,8 @@ ms.author: chcomley
 author: chcomley
 ms.topic: how-to
 monikerRange: '< azure-devops' 
-ms.date: 04/04/2022
+ms.date: 03/24/2026
+ai-usage: ai-assisted
 ---
 
 # Provide help text, hyperlinks, or web content on a work item form
@@ -191,7 +192,7 @@ The following example shows how you can embed the content from a Web page by pro
 ```  
  
 
-## Related articles
+## Related content
 
 -  [Design the work item form](/previous-versions/azure/devops/reference/xml/design-work-item-form?view=tfs-2017&preserve-view=true)   
 -  [Customizing Project Tracking Data, Forms, Workflow, and Other Objects](../customize-work.md)

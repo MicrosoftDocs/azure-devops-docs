@@ -8,7 +8,8 @@ ms.author: chcomley
 author: chcomley
 ms.reviewer: dahellem
 monikerRange: "<=azure-devops"
-ms.date: 07/17/2020
+ms.date: 03/24/2026
+ai-usage: ai-assisted
 ---
 
 # Change a project process from Scrum to Agile
@@ -17,7 +18,7 @@ ms.date: 07/17/2020
 
 You can change a project based on the Scrum process to use an inherited Agile process. This article provides the steps needed to make this change. 
 
-Prior to making this change, we recommend you familiarize yourself with the process you are changing to. The Task, Bug, Feature, and Epic work item types are the same for both Scrum and Agile processes. Some State and Reason field values, however, are different.
+Prior to making this change, familiarize yourself with the process you're changing to. The Task, Bug, Feature, and Epic work item types are the same for both Scrum and Agile processes. Some State and Reason field values, however, are different.
 
 | Process | Work item types | Workflow |
 |------|---------|---------|

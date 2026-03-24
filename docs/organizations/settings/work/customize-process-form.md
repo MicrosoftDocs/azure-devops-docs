@@ -9,7 +9,8 @@ ms.author: chcomley
 author: chcomley
 monikerRange: "<=azure-devops"
 ms.topic: how-to
-ms.date: 04/22/2019
+ms.date: 03/24/2026
+ai-usage: ai-assisted
 ---
 
 # Customize the web layout for a work item type (Inheritance process) 

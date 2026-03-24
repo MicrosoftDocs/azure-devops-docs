@@ -7,7 +7,8 @@ ms.author: chcomley
 author: chcomley
 monikerRange: "<= azure-devops"
 ms.topic: sample
-ms.date: 06/30/2021
+ms.date: 03/24/2026
+ai-usage: ai-assisted
 
 #Customer intent: As a process designer, I need examples that illustrate how to define rules, so I can add the right rules to support my business processes.
 ---

@@ -9,7 +9,8 @@ ms.author: chcomley
 author: chcomley
 ms.topic: how-to
 monikerRange: '< azure-devops'
-ms.date: 01/17/2023 
+ms.date: 03/24/2026
+ai-usage: ai-assisted
 ---
 
 # Add or modify a work item type 
@@ -259,7 +260,7 @@ When you rename a work item type that belongs to a category, you have to update 
 
 For more information, see [Import, export, and manage work item types](witadmin/witadmin-import-export-manage-wits.md) and [Import and export categories](/previous-versions/azure/devops/reference/witadmin/witadmin-import-export-categories).  
 
-## Related articles
+## Related content
 
 This article addressed how to add and customize work item types for Hosted XML and On-premises XML process models. For information on adding and customizing work item types for the Inherited process model, see [Customize a process](../organizations/settings/work/customize-process.md).  
 

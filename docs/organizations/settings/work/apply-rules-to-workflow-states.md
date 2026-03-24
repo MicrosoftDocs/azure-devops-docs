@@ -9,7 +9,7 @@ author: chcomley
 ai-usage: ai-assisted
 monikerRange: "<=azure-devops"
 ms.topic: tutorial
-ms.date: 03/03/2026
+ms.date: 03/24/2026
 ---
 
 # Apply rules to workflow states (Inheritance process)   

@@ -9,7 +9,8 @@ ms.author: chcomley
 author: chcomley
 ms.topic: how-to
 monikerRange: '<= azure-devops'
-ms.date: 10/31/2024
+ms.date: 03/24/2026
+ai-usage: ai-assisted
 ---
 
 # Select backlog navigation levels

@@ -9,7 +9,8 @@ ms.author: chcomley
 author: chcomley
 ms.topic: how-to
 monikerRange: '< azure-devops' 
-ms.date: 03/31/2017
+ms.date: 03/24/2026
+ai-usage: ai-assisted
 ---
 
 # Change the workflow for a work item type
@@ -312,7 +313,7 @@ When the value of the **State** field for a work item is set to Active and the w
 </STATE>  
 ```  
 
-## Related articles
+## Related content
 
 - [Workflow states and state categories](../../boards/work-items/workflow-and-state-categories.md)  
 - [Customize your work tracking experience](../customize-work.md)  
