@@ -65,7 +65,7 @@ In this section, you create the base Classic release pipeline and configure the 
 
     With this filter in place, the **Dev** stage deploys only when the release is created from a build of the *Dev* branch.
 
-    :::image type="content" source="media/configure-pre-deployment-conditions-development-stage.png" alt-text="A screenshot displaying how to set up the pre-deployment conditions in a Classic release pipeline.":::
+    :::image type="content" source="media/configure-deployment-conditions-development-stage.png" alt-text="A screenshot displaying how to set up the pre-deployment conditions in a Classic release pipeline.":::
 
 
 ## Add a new stage
@@ -95,7 +95,7 @@ In this section, you add a second stage (**Prod**) to the same release pipeline 
 
     With this filter in place, the **Prod** stage deploys only when the release is created from a build of the *main* branch.
 
-    :::image type="content" source="media/configure-pre-deployment-conditions-production-stage.png" alt-text="A screenshot displaying how to configure pre-deployment conditions for the production stage in a Classic release pipeline.":::  
+    :::image type="content" source="media/configure-deployment-conditions-production-stage.png" alt-text="A screenshot displaying how to configure pre-deployment conditions for the production stage in a Classic release pipeline.":::  
 
 ## Deploy to a specific stage
 
