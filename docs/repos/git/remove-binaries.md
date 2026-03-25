@@ -13,7 +13,7 @@ ms.subservice: azure-devops-repos-git
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
-Git is a popular distributed source code repository (repo) that lets users work with the full repo while in a disconnected state. The benefits of Git are well-documented, but what happens if you need to "roll back the clock" on the primary repo? Doing so isn't intuitive and requires elevated permissions. This requirement is expected for something that affects every single user of the repo.
+Git is a popular distributed source code repository (repo) that lets users work with the full repo while in a disconnected state. The benefits of Git are well documented, but what happens if you need to "roll back the clock" on the primary repo? Doing so isn't intuitive and requires elevated permissions. This requirement is expected for something that affects every single user of the repo.
 
 How can you roll back the central repo safely?
 
@@ -118,7 +118,7 @@ Next, you need to rebase the repo.
 
 You must authenticate to the server for this action to work.
 
-If you're using Azure Repos, you might need to set up an alternate credential that doesn't use special characters. An example is the "@" symbol in an email address. To do this task, follow the instructions in [Authentication with Azure Repos](auth-overview.md).
+If you're using Azure Repos, you might need to set up an alternate credential that doesn't use special characters. An example is the at symbol (@) in an email address. To do this task, follow the instructions in [Authentication with Azure Repos](auth-overview.md).
 
 Now the branch is permanently gone from the server. Subsequent clones and syncs by project team members don't download the large files that you were trying to remove. Users need to pull down from the server to make sure that they're in sync with the new server repo state.
 
