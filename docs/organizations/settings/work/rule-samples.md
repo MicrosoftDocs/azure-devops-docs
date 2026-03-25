@@ -32,7 +32,7 @@ You can specify that a field is required only when another field contains a spec
 
 # [On-premises XML process](#tab/on-premises)
 
-You specify a `WHEN` rule statement for the field definition within the `FIELDS` section of the work item type definition.  
+Specify a `WHEN` rule statement for the field definition within the `FIELDS` section of the work item type definition.  
 
 > [!div class="tabbedCodeSnippets"]  
 > ```XML
@@ -367,7 +367,7 @@ For example, the **Priority** field, for the User Story work item type, becomes 
 
 # [On-premises XML process](#tab/on-premises)
 
-For the [On-premises XML process model](../../../reference/on-premises/on-premises-xml-process-model.md), you can customize work item types to support these restriction requests: 
+For the On-premises XML process model, you can customize work item types to support these restriction requests: 
 - Restrict who can create or modify a work item. 
 - Restrict who can create specific work item types, such as Epics or Features. 
 
