@@ -35,8 +35,9 @@ The Azure DevOps service connection supports these scenarios:
 To create an Azure DevOps service connection, you need:
 
 - An Azure DevOps organization
-- An [Entra service principal or managed identity](/azure/devops/integrate/get-started/authentication/service-principal-managed-identity) to use for authentication
-- **Creator** or **Administrator** role for service connections in the Azure DevOps project where you create the service connection. By default, members of the **Contributors** group have the Creator role. For more information, see [Set service connection security](/azure/devops/pipelines/policies/permissions#set-service-connection-security-in-azure-pipelines).
+- An [Entra service principal or managed identity](/azure/devops/integrate/get-started/authentication/service-principal-managed-identity) to use for authentication, added to the organization and assigned a **Basic** license at minimum.
+- An [Entra service principal or managed identity](/azure/devops/integrate/get-started/authentication/service-principal-managed-identity) used for authentication should have required permission to the project(s) it will access resources in i.e. added to the **Readers** group or granted access to specific resources
+- **Creator** or **Administrator** role for service connections in the Azure DevOps project where you create the service connection. By default, members of the **Endpoint Creators** group have the Creator role. For more information, see [Set service connection security](/azure/devops/pipelines/policies/permissions#set-service-connection-security-in-azure-pipelines).
 - If accessing resources across organizations, the service principal must be [added as a user](/azure/devops/integrate/get-started/authentication/service-principal-managed-identity#step-2-add-the-identity-to-azure-devops) to each target organization
 
 ## Step 1: Create a service connection within the same organization
