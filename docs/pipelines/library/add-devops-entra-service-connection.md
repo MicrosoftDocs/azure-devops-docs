@@ -243,8 +243,6 @@ The AzureCLI@3 task uses the [Azure DevOps CLI](/azure/devops/cli), which is pre
 | _VS800075: The project with id 'vstfs:///Classification/TeamProject/00000000-0000-00000000-000000000000' does not exist, or you do not have permission to access it._  | The service connection identity isn't added to the project. Go to service connection details page > **View access in the current organization** > **Member of** > Select a group to add the identity to, for example, the `Readers` group. Alternatively, go to **Organization Settings** > **Users** > The identity used for the service connection > **Manage access** > select the projects the identity needs to access. |
 | _AADSTS70052: The identity must be a managed identity, a single tenant app, or a service account_ | Multitenant app registrations that have `signInAudience: AzureADMultipleOrgs` are not supported the Azure DevOps service connection. |
 
-For more error messages see [](/azure/devops/pipelines/release/troubleshoot-workload-identity)
-
 ## Next steps
 
 - [Use service connections in your pipeline](service-endpoints.md).
