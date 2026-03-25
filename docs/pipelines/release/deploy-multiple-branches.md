@@ -65,7 +65,7 @@ In this section, you create the base Classic release pipeline and configure the 
 
     With this filter in place, the **Dev** stage deploys only when the release is created from a build of the *Dev* branch.
 
-    :::image type="content" source="media/add-predeployment-conditions-to-classic-release.png" alt-text="A screenshot displaying how to set up the pre-deployment conditions in a Classic release pipeline.":::
+    :::image type="content" source="media/configure-pre-deployment-conditions-classic-release-pipeline.png" alt-text="A screenshot displaying how to set up the pre-deployment conditions in a Classic release pipeline.":::
 
 
 ## Add a new stage
@@ -95,7 +95,7 @@ In this section, you add a second stage (**Prod**) to the same release pipeline 
 
     With this filter in place, the **Prod** stage deploys only when the release is created from a build of the *main* branch.
 
-    :::image type="content" source="media/add-predeployment-conditions-to-classic-release-prod-stage.png" alt-text="A screenshot displaying how to configure the predeployment conditions for the Prod stage in a Classic release pipeline.":::  
+    :::image type="content" source="media/configure-pre-deployment-conditions-classic-release-production-stage.png" alt-text="A screenshot displaying how to configure pre-deployment conditions for the production stage in a Classic release pipeline.":::  
 
 ## Deploy to a specific stage
 
@@ -114,8 +114,6 @@ At this point, your release pipeline is configured to route deployments by branc
 1. If a stage doesn't behave as expected, open that stage's **Pre-deployment conditions** and confirm the **Artifact filters** branch value and selected artifact source.
 
 By validating both branch paths, you can confirm that each environment deploys only from the branch intended for that stage.
-
-:::image type="content" source="media/deploy-to-specific-stage.png" alt-text="A screenshot displaying deployment to a specific stage.":::  
 
 ## Related content
 
