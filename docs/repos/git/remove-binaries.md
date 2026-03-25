@@ -1,6 +1,6 @@
 ---
-title: Remove large binaries from your Git history
-description: Learn how to remove a large binary from your Git history to manage the size of cloned repositories 
+title: Remove Large Binaries from Your Git History
+description: Learn how to remove a large binary from your Git history to manage the size of cloned repositories.
 ms.assetid: ea4cadcc-c8c7-4f05-adc3-9a3ba07a2bd6
 ms.topic: how-to
 ms.service: azure-devops-repos
@@ -9,155 +9,147 @@ monikerRange: '<= azure-devops'
 ms.subservice: azure-devops-repos-git
 ---
 
-# Learn how to remove a large binary from your Git history to manage the size of cloned repositories
+# Remove a large binary from your Git history to manage the size of cloned repositories
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
-Git has gained much popularity in recent years as a distributed source code repository that lets users work with the full repository while in a disconnected state. The benefits of git are well-documented, but what happens if you need to "roll back the clock" on the primary repository? Doing so isn't so intuitive and requires elevated permissions, as you might expect for something that affects every single user of the repository.
+Git is a popular distributed source code repository (repo) that lets users work with the full repo while in a disconnected state. The benefits of Git are well-documented, but what happens if you need to "roll back the clock" on the primary repo? Doing so isn't intuitive and requires elevated permissions. This requirement is expected for something that affects every single user of the repo.
 
-So how can you roll back the central repository safely?
+How can you roll back the central repo safely?
 
-## Problem Scenario
+## Problem scenario
 
-Imagine that you commit a large file, such as a video, to your git server. In a traditional source code system, it's convenient to store everything in one place and then pull down what you need.  However, with git, the entire repository is cloned down to each user's local computer.  With a large file, every single user on the project will need to download the large file(s), too. With each subsequent large file committed to the server, the problem only grows, until the repository is too large to be efficient for its users.  To make matters worse, even if you remove the offender from your local repository and recommit, the file will still exist in the repository's history, which means that it will still be downloaded to everyone's local computer as part of the history.
+Imagine that you commit a large file, such as a video, to your Git server. In a traditional source code system, it's convenient to store everything in one place and then pull down what you need. With Git, the entire repo is cloned to each user's local computer. With a large file, every single user on the project must also download the large files.
 
-> ![Team Explorer Changes dialog showing large video in included changes](./media/remove-binaries/RemoveBinaries-large-file-to-be-added.png)
+With each subsequent large file that's committed to the server, the problem only grows. The repo becomes too large to be efficient for its users. Even if you remove the large file from your local repo and recommit, the file still exists in the repo's history. As a result, the file is still downloaded to everyone's local computer as part of the history.
 
-*Adding large file to the local repository*
+![Screenshot that shows the Team Explorer Changes dialog with a large video in included changes.](./media/remove-binaries/RemoveBinaries-large-file-to-be-added.png)
 
-> ![Server and local repos, both with a copy of the large video files](./media/remove-binaries/RemoveBinaries-diagram-local-after-large-file-added.png)
+Add a large file to the local repo.
 
-*After committing from the local repository, the server will also have the large file*
+![Screenshot that shows server and local repos, both with a copy of the large video files.](./media/remove-binaries/RemoveBinaries-diagram-local-after-large-file-added.png)
+
+After you commit from the local repo, the server also has the large file.
 
 ## Freeze the repo
 
-> [!IMPORTANT]
->
-> The following steps will remove the video from your branch history,
-> but the file remains in your repo history when you clone your repo from Azure Repos. Removing the files from your branch history prevents the files from being updated, which will
-> create another version of the large file in your repo. Learn more about [managing large files in Git](manage-large-files.md) and 
-> see this [blog post](/archive/blogs/congyiw/why-does-cloning-from-vsts-return-old-unreferenced-objects) for a detailed explanation and workaround for this behavior 
-> when using Azure Repos Git repos.
+To fix the problem of a large repo, you must start at the source. In this scenario, the source is the server repo. Ask the team to stop pushing to the repo. If more pushes happen during this process, you must account for them so that you don't lose any data.
 
-To fix this, you have to start at the source, which, in this case, is the server repository. Ask the team to stop pushing to the repository, but if additional pushes happen during this process, you'll have to account for them, too, so as not to lose any data.
+> [!IMPORTANT]
+> The following steps remove the video from your branch history, but the file remains in your repo history when you clone your repo from Azure Repos. Removing the files from your branch history prevents the files from being updated, which created another version of the large file in your repo.
+>
+> Learn more about [managing large files in Git](manage-large-files.md). For an explanation and workaround for this behavior when you use Azure Repos Git repos, see [Why does cloning from Visual Studio Team Services return old unreferenced objects?](/archive/blogs/congyiw/why-does-cloning-from-vsts-return-old-unreferenced-objects).
 
 ## Rebase and force push
-If no one else on the team has made any changes to the repository - usually through a push - you can take the easy route, in which you essentially make your local repository look the way that you want it to (that is, without the large file), then force your changes to the server.
 
-__Note: You may need to clone or fix your local repo before beginning this work.  This could result in lost work or changes, so proceed with caution.__
+If no one else on the team made any changes to the repo, which usually occur through a push, you can take the easy route. You essentially make your local repo look the way that you want it to look (that is, without the large file). Then you force your changes to the server.
 
-By default, you likely only have the ability to change their local project files and repository and to push your changes to the server, so you don't have the ability to make other changes, such as deletions or rebasing, at the server level. Therefore, you'll need to either acquire project Force push (preferred) or admin permissions from your administrator or find someone who has them and is willing to help.  For more information on git permissions, go [here](set-git-repository-permissions.md).
+You might need to clone or fix your local repo before you begin this work. This process could result in lost work or changes, so proceed with caution.
 
-> ![Command Prompt - git push --force permissions.](./media/remove-binaries/RemoveBinaries-force-push-permissions.png)
+By default, you can modify local project files and push changes to the server, but you can't perform server-level operations like deletion or rebasing. To proceed, you need Force push (preferred) or Admin permissions on the repository. Contact your project administrator to request these permissions, or ask someone who already has them to help. For more information, see [Set Git repository permissions](./set-git-repository-permissions.md).
 
-Next, you need to rebase the repository. 
+![Screenshot that shows the command prompt - git push --force permissions.](./media/remove-binaries/RemoveBinaries-force-push-permissions.png)
 
-1) But first, use `git log` to find the SHA hash values of the most recent commits - you'll need this information in a moment. This is because we need to know the most recent good commit. You get that information by opening a git command prompt and typing:
+Next, you need to rebase the repo.
 
-> `git log`
+1. Use `git log` to find the Secure Hash Algorithm (SHA) hash values of the most recent commits. You need this information in a moment because you need to know the most recent good commit. You can get that information by opening a Git command prompt and entering:
 
-Alternatively, you can get the SHA hash from viewing the branch history in the Visual Studio Team Explorer.
-> ![Main branch View History](./media/remove-binaries/RemoveBinaries-view-history-for-sha.png)
+   `git log`
 
-2) Now, open a Git command prompt.
+   Alternatively, you can get the SHA hash from viewing the branch history in Visual Studio Team Explorer.
 
-> ![Synchronization dialog - Open Command Prompt Action](./media/remove-binaries/RemoveBinaries-open-command-prompt.png)
+   ![Screenshot that shows the main branch View History option.](./media/remove-binaries/RemoveBinaries-view-history-for-sha.png)
 
-3) Find SHA hash number of interest.
+1. Open a Git command prompt.
 
-> ![Command Prompt - Select video commit](./media/remove-binaries/RemoveBinaries-large-file-sha.png)
+   ![Screenshot that shows the Open Command Prompt action in the Synchronization dialog.](./media/remove-binaries/RemoveBinaries-open-command-prompt.png)
 
-4) You'll need the sha that starts "25b4"
+1. Find the SHA hash number of interest.
 
-Remember that git uses pointers to determine where in the repository the head or current branch are located. Because of this, the repository state that you're interested in will be at some point in the past. To 'go back in time' and make that prior desired state the new current state, you'll need to use the git rebase command:
+   ![Screenshot that shows the command prompt for the video commit.](./media/remove-binaries/RemoveBinaries-large-file-sha.png)
 
-> `git rebase -i <SHA hash of desired new current branch>`
-> 
-> ![Rebase to remove the video file](./media/remove-binaries/RemoveBinaries-diagram-local-repo-rebase.png)
+   You need the SHA that starts `25b4`.
 
-The `-i` switch provides a little extra safety, because it will bring up the history in an editor (My implementation of git on the command line in Windows brings up the classic *vi* editor, which you may remember if you've worked with a Unix-based system.)  
+   Remember that Git uses pointers to determine where in the repo the head or current branch is located. The repo state in which you're interested is located at some point in the past.
 
-5) For our example, you would enter:
+1. To go back in time and make the prior state the new current state, use the `git rebase` command:
 
-> `git rebase -i 25b4`
+   `git rebase -i <SHA hash of desired new current branch>`
 
-6) Once the editor comes up, remove all of the 'pick' lines except for the branch you want to keep as your new head. When everything looks as you want it, in *vi*, type ":w\<enter\>" to save or "!q\<enter\>" to exit without saving.
+   ![Screenshot that shows using rebase to remove the video file.](./media/remove-binaries/RemoveBinaries-diagram-local-repo-rebase.png)
 
-> ![Command Prompt - git rebase -i 25b4 pick command](./media/remove-binaries/RemoveBinaries-pick-in-vi-editor.png)
+   The `-i` switch provides extra safety because it brings up the history in an editor. (This article uses an implementation of Git that brings up the classic vi editor on the command line in Windows. You might remember it if you worked with a Unix-based system.)
 
-*You will be changing the line(s) that you no longer want*
+1. For this example, you enter:
 
-> ![Command Prompt - git rebase -i 25b4 drop command](./media/remove-binaries/RemoveBinaries-drop-in-vi-editor.png)
+   `git rebase -i 25b4`
 
-7) Change "`pick`" to "`drop`" as shown, then type "`:w`" (in vi) to save and "`:q!`" to start the rebase
+1. After the editor comes up, remove all the `pick` lines except for the branch that you want to keep as your new head. When everything looks correct, in vi, enter `:w\<enter\>` to save, or enter `!q\<enter\>` to exit without saving.
 
-Now type `git log` again - the offending branch should be absent from the log. If it is, you're ready for the final step, which requires project admin permissions.
+   ![Screenshot that shows the command prompt - git rebase -i 25b4 pick command.](./media/remove-binaries/RemoveBinaries-pick-in-vi-editor.png)
 
-> `git log`
-> 
-> ![Local and server repos after rebase](./media/remove-binaries/RemoveBinaries-repo-after-rebase.png)
+   Change the lines that you no longer want.
 
-*Notice that the commit for the large video is now gone from the local repo*
+   ![Screenshot that shows the command prompt - git rebase -i 25b4 drop command.](./media/remove-binaries/RemoveBinaries-drop-in-vi-editor.png)
 
-8) Type:
-`git push --force`
+1. Change `pick` to `drop` as shown. Then enter `:w` (in vi) to save, and enter `:q!` to start the rebase.
 
-> ![Command Prompt - git push --force](./media/remove-binaries/RemoveBinaries-force-push-command.png)
-> 
-> 
-> ![Command Prompt - git push --force result](./media/remove-binaries/RemoveBinaries-force-push.png)
+   Now enter `git log` again. The offending branch should be absent from the log. If it is, you're ready for the final step, which requires project admin permissions:
 
-This command will force your repository to overwrite the repository on the server.
+   `git log`
 
-__Use with caution, as you can easily lose data on the server!!__
+   ![Screenshot that shows local and server repos after rebase.](./media/remove-binaries/RemoveBinaries-repo-after-rebase.png)
 
-> ![Force push showing content to keep, without the video file](./media/remove-binaries/RemoveBinaries-diagram-force-push.png)
+   The commit for the large video is now gone from the local repo.
 
-*Notice that you must authenticate to the server for this to work*
+1. Enter the following command:
 
-If you're using Azure Repos, you may need to set up an alternate credential that doesn't use special characters (such as the "@" in an email address). To do this, follow the instructions [here](auth-overview.md).
+   `git push --force`
 
-Now, the branch will be permanently gone from the server, and subsequent clones and syncs by project team members will not download the large files you were trying to remove.  Users will need to pull down from the server in order to make sure that they are in sync with the new server repo state.
+   ![Screenshot that shows the command prompt - git push --force.](./media/remove-binaries/RemoveBinaries-force-push-command.png)
 
-## If Users Have Newer Commits
+   ![Screenshot that shows the command prompt - git push --force result.](./media/remove-binaries/RemoveBinaries-force-push.png)
 
-If other users have already committed to the server repository, you have an additional consideration. You want to remove the branch that contains the large file(s), but you don't want to lose changes the team has made. To address this, when you open the editor as part of rebasing, look carefully at the commits. Make sure that the commits you want to retain are listed on the 'pick' lines; delete the ones you want to remove, such as where a large file was added.
+   This command forces your repo to overwrite the repo on the server.
 
-Note that after rebasing, the other users on the team will also need to rebase so that everyone has a consistent copy of the server repository. This is a pain for everyone and normally should be avoided. Thus, if you do need to remove a push as noted here, it's important to coordinate with the team.  For full details on rebasing, take a look at the official rebasing documentation [here](https://www.git-scm.com/book/en/v2/Git-Branching-Rebasing).
+   Use this command with caution because you can easily lose data on the server.
 
-The key is to make sure that you know which commits are desired and undesired. Study the git log or the history in your IDE (such as Visual Studio) and make a meticulous note of the SHA hashes to keep and those to toss.
+   ![Screenshot that shows a force push showing content to keep, without the large video file.](./media/remove-binaries/RemoveBinaries-diagram-force-push.png)
 
-In scenarios where the large file has been around for a while and there have been subsequent branches and merges, you may be able to remove the file by using the `git filter-branch` switch.  If you want to give this a try, follow the instructions [here](https://help.github.com/articles/remove-sensitive-data/).
+You must authenticate to the server for this action to work.
 
-## Best Practice Considerations
+If you're using Azure Repos, you might need to set up an alternate credential that doesn't use special characters. An example is the "@" symbol in an email address. To do this task, follow the instructions in [Authentication with Azure Repos](auth-overview.md).
 
-It saves a lot of work to make sure that large files stay out of the main repository in the first place. With that in mind, here are some common sense best practices for the team to keep in mind:
+Now the branch is permanently gone from the server. Subsequent clones and syncs by project team members don't download the large files that you were trying to remove. Users need to pull down from the server to make sure that they're in sync with the new server repo state.
 
-> Do's
+## If users have newer commits
 
-* Do commit changes frequently. You can always fix them up later with a squash or rebase.
-* Do use branches to isolate your changes. Branches are cheap and private, and merging is simple. You can also back up changes on a branch by pushing it to the server.
-* Do use a naming convention when publishing topic branches. Name the branch "`users/<alias>/<branchname>`". This will help group your branches and make it easy for others to identify the "owner".
-* Do remember to push your changes. `Commit != Checkin`. `(Commit + Push) == Checkin`.
-* Do consider using `.gitignore` for large binaries so that they aren't added to the repo in the first place - more information [here](https://help.github.com/articles/ignoring-files/).
-* Do consider using NuGet or TFS version control to store your large binaries.
+If other users pushed commits to the server repo, you have another consideration. You want to remove the branch that contains the large files, but you don't want to lose changes that the team made. To address this situation, when you open the editor as part of rebasing, look carefully at the commits. Make sure that the commits you want to retain are listed on the `pick` lines. Delete the ones that you want to remove, such as where a large file was added.
 
-> Don'ts
+After rebasing, the other users on the team also need to rebase so that everyone has a consistent copy of the server repo. This work is tedious for everyone, and you want to avoid it. If you need to remove a push, you need to coordinate with the team. For more information on rebasing, see [Git branching - Rebasing](https://www.git-scm.com/book/en/v2/Git-Branching-Rebasing).
 
-* Don't rebase after pushing. Rebasing pushed commits in git can be bad because it forces everyone else in the repo to rebase their local changes - and they won't be happy if they need to do this.  Rebasing pushed commits on your own personal branch, even if pushed, isn't a significant deal unless other people are pulling those commits.
-* Don't commit binaries to your repo. Git doesn't compress binary files the way that TFVC does, and because all repos have all of the history, committing binary files means permanent bloat.
+The key is to make sure that you know the commits that you want and the commits that you don't want. Study the `git log` or the history in your integrated development environment (such as Visual Studio). Make a meticulous note of the SHA hashes to keep and the hashes to remove.
+
+In scenarios where the large file is old and there were subsequent branches and merges, you might be able to remove the file by using the `git filter-branch` switch. For more information, see [Removing sensitive data from a repository](https://help.github.com/articles/remove-sensitive-data/).
+
+## Best practices considerations
+
+Make sure that large files stay out of the main repo to save team members from extra work. Here are some commonsense best practices for the team to keep in mind.
+
+### Things to do
+
+* Commit changes frequently. You can always fix them later with a squash or rebase.
+* Use branches to isolate your changes. Branches are cheap and private, and merging is simple. You can also back up changes on a branch by pushing it to the server.
+* Use a naming convention when you publish topic branches. Name the branch `users/<alias>/<branchname>`. This name helps to group your branches and makes it easy for others to identify the owner.
+* Remember to push your changes. Use `Commit != Checkin` and `(Commit + Push) == Checkin`.
+* Consider using `.gitignore` for large binaries so that they aren't added to the repo. For more information, see [Ignoring files](https://help.github.com/articles/ignoring-files/).
+* Consider using NuGet or Team Foundation Server version control to store your large binaries.
+
+### Things to avoid
+
+* Don't rebase after pushing. Rebasing pushed commits in Git can be bad because it forces everyone else in the repo to rebase their local changes. Team members might not be happy if they need to do this task. Rebasing pushed commits on your own personal branch, even if pushed, isn't a problem unless other people are pulling those commits.
+* Don't commit binaries to your repo. Git doesn't compress binary files in the way that Team Foundation Version Control does. Because all the repos have the entire history, committing binary files means permanent bloat.
 
 ## Summary
 
-Sometimes, undesirable elements, such as large files, are added to a repository and need to be removed in order to keep the repository clean and lightweight. You can do this by getting your local repository in order using the `git rebase` command, then using the `git push --force` command to overwrite the server repository with your local repository.
-
-> Authors: Edward Fry and Jesse Houwing | Connect with the authors and ALM | DevOps Rangers [here](https://github.com/ALM-Rangers/Guidance/blob/master/README.md)
-
-*(c) 2015 Microsoft Corporation. All rights reserved.ÿThis document is
-provided "as-is." Information and views expressed in this document,
-including URL and other Internet Web site references, may change without
-notice. You bear the risk of using it.*
-
-*This document does not provide you with any legal rights to any
-intellectual property in any Microsoft product. You may copy and use
-this document for your internal, reference purposes.*
+Sometimes, undesirable elements, such as large files, are added to a repo and must be removed to keep the repo clean and lightweight. You can do this task by getting your local repo in order. Use the `git rebase` command, and then use the `git push --force` command to overwrite the server repo with your local repo.

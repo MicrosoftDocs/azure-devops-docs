@@ -1,6 +1,6 @@
 ---
-title: Move Git repositories between projects
-description: Explore how to move git repositories between Team Projects with full-fidelity history
+title: Move Git Repositories Between Projects
+description: Explore how to move Git repositories between team projects with full-fidelity history.
 ms.topic: how-to
 ms.service: azure-devops-repos
 ms.assetid: 5CB114EA-EC65-4FF8-BC71-1B7E4B15D921
@@ -15,10 +15,10 @@ ms.subservice: azure-devops-repos-git
 
 ![Git logo](./media/move-git-repos-between-team-projects/git.png)
 
-If you're planning to consolidate multiple Azure DevOps projects into one, you're probably wondering:
-* What to do with all the repositories? 
-* Move or merge them? 
-* Keep history or just the tip of the iceberg?
+If you plan to consolidate multiple Azure DevOps projects into one, you're probably wondering what you should do with all the repositories:
+
+* Should you move projects or merge them?
+* Should you keep the history or just the most recent projects?
 
 ## Prerequisites
 
@@ -26,82 +26,69 @@ If you're planning to consolidate multiple Azure DevOps projects into one, you'r
 
 ## What's the scenario?
 
-As shown, you need to move the MigrationDemo repo, from the FabrikamOld to the new Fabrikam team project.
+As shown, you need to move the `MigrationDemo` repo from `FabrikamOld` to the new `Fabrikam` team project.
 
-> ![Move Repo Scenario](./media/move-git-repos-between-team-projects/MoveRepo-Visual.png)
+> ![Screenshot that shows the move repo scenario.](./media/move-git-repos-between-team-projects/MoveRepo-Visual.png)
 
 ## How do I move?
 
-You have two options as outlined below. Import functionality is easier, but is only available in Azure DevOps Services and TFS 2017 Update 1 and above.  
+You have two options for moving, as outlined here. Import functionality is easier, but it's available only in Azure DevOps Services and Team Foundation Server 2017 Update 1 and later.
 
 ### Use Import Git repository functionality
 
-Using the Import Repository feature, you can import a Git repository to your team project from Team Foundation Server (TFS), Azure Repos or any other Git source code provider like GitHub. Review the [import repository documentation](import-git-repository.md) for more details.
+When you use the Import Repository feature, you can import a Git repository to your team project from Team Foundation Server, Azure Repos, or any other Git source code provider like GitHub. For more information, see [Import a Git repository to a project](import-git-repository.md).
 
-### Manually migrate the Git repo in five easy steps:
+### Manually migrate the Git repo
 
-#### Create an empty Git repo. 
+#### Create an empty Git repo
 
-From the code explorer, click on the repo name.  Choose **New Repository** from the list, select Git as the type, and give it a name.
+From the CODE Explorer, select the repo name. Select **New Repository** from the list, select **Git** as the type, and give it a name.
 
-![Create New Repo](./media/move-git-repos-between-team-projects/MoveRepo-NewRepo.png)
- 
-Once the repo is created, you are presented with step-by-step instructions to quickly get started. Copy the `Clone URL` to your clipboard.
+![Screenshot that shows creating a new repo.](./media/move-git-repos-between-team-projects/MoveRepo-NewRepo.png)
 
-![New Repo Information](./media/move-git-repos-between-team-projects/MoveRepo-NewRepoInfo.png)
+After the repo is created, step-by-step instructions appear to help you get started. Copy the clone URL to your clipboard.
 
-> [!IMPORTANT]  
-> Clear the **Automatically create links for work items mentioned in a commit comment** if you are importing from a different project collection or a foreign git repository. Azure DevOps will otherwise associate the commits to existing work items of unrelated team projects in the team project collection.
+![Screenshot that shows the pane to add new repo information.](./media/move-git-repos-between-team-projects/MoveRepo-NewRepoInfo.png)
 
-![New Repo Options and Links Warning](./media/move-git-repos-between-team-projects/MoveRepo-Warning.png)
+> [!IMPORTANT]
+> Clear the **Automatically create links for work items mentioned in a commit comment** option if you plan to import from a different project collection or a foreign Git repository. Otherwise, Azure DevOps associates the commits to existing work items of unrelated team projects in the team project collection.
+
+![Screenshot that shows new repo options.](./media/move-git-repos-between-team-projects/MoveRepo-Warning.png)
 
 #### Mirror the repository
 
-Switch to a Developer Command Prompt and path to your local (source) repository for the MigrationDemo repo in FabrikamOld. Run the `git clone --mirror` command, using the Clone URL from above.
+Switch to a developer command prompt and path to your local (source) repository for the `MigrationDemo` repo in `FabrikamOld`. Run the `git clone --mirror` command by using the clone URL. The command line is `git clone --mirror https://demo-fabrikam.visualstudio.com/DefaultCollection/Fabrikam/_git/MigrationDemo`.
 
-> Command Line: `git clone --mirror https://demo-fabrikam.visualstudio.com/DefaultCollection/Fabrikam/_git/MigrationDemo`
+The `clone --mirror` command is redundant in this case because the remote repository is bare. It's used here as a safe and easy way to set up the remote.
 
-As shown, the `clone --mirror` is redundant in this case, as the remote repository is bare. It is used here as a safe and easy way to set up the remote.
+![Screenshot that shows that the Git clone command is done.](./media/move-git-repos-between-team-projects/MoveRepo-Mirror-Done.png)
 
-![Git Clone Command Done](./media/move-git-repos-between-team-projects/MoveRepo-Mirror-Done.png)
-
-#### Push the repo 
+#### Push the repo
 
 Run the `git push` command to push the local changes to the remote (target) repo.
 
-![Git Push Command Done](./media/move-git-repos-between-team-projects/MoveRepo-Push-Done.png)
+![Screenshot that shows that the Git push command is done.](./media/move-git-repos-between-team-projects/MoveRepo-Push-Done.png)
 
-The `--mirror` option is used with both the clone and push command. The option ensures that all branches and other attributes are replicated in the new repo.
+The `--mirror` option is used with both the clone and push commands. The option ensures that all branches and other attributes are replicated in the new repo.
 
 #### Validate the new repository
 
  Switch to the Azure DevOps web portal and validate the new repository and the history in the **CODE** hub.
 
-![Repo Validation in CODE Explorer](./media/move-git-repos-between-team-projects/MoveRepo-Validate.png)
+![Screenshot that shows repo validation in CODE Explorer.](./media/move-git-repos-between-team-projects/MoveRepo-Validate.png)
 
 Verify that all your branches were moved over to the new repo.
 
 #### Configure the new repo
 
- Verify that the permissions and policies are correctly configured for the new repo. You can configure the security after step 1, or at this stage. Reconfigure your builds to connect with the new repo. Lastly, notify users of the original repo to update their remotes in Visual Studio, or running the `git remote set-url origin` command.
+ Verify that the permissions and policies are correctly configured for the new repo. You can configure the security after you create an empty Git repo or at this stage. Reconfigure your builds to connect with the new repo. Lastly, notify users of the original repo to update their remotes in Visual Studio or by running the `git remote set-url origin` command.
 
 > [!div class="tabbedCodeSnippets"]
 ```Git CLI
 > git remote set-url origin https://demo-fabrikam.visualstudio.com/DefaultCollection/Fabrikam/_git/MigrationDemo
 ```
 
-> [!IMPORTANT]  
+> [!IMPORTANT]
 > Remember to clean up the original project by either deleting the repo (be careful, there's no undo) or locking the branches so that no one accidentally keeps updating it.
 
-For detailed information on planning your team project collections and team projects, refer to the [TFS Planning, Disaster Avoidance and Recovery, and TFS on Azure Iaas Guide](/archive/blogs/visualstudioalmrangers/library-of-tooling-and-guidance-solutions-aka-msvsarsolutions).
-
-> Authors: Jesse Houwing, Mike Fourie, and Willy Schaub | [Connect with the authors and ALM DevOps Rangers](https://github.com/ALM-Rangers/Guidance/blob/master/README.md) 
-
-*(c) 2016 Microsoft Corporation. All rights reserved. This document is
-provided "as-is." Information and views expressed in this document,
-including URL and other Internet Web site references, may change without
-notice. You bear the risk of using it.*
-
-*This document does not provide you with any legal rights to any
-intellectual property in any Microsoft product. You may copy and use
-this document for your internal, reference purposes.*
+For more information on planning your team project collections and team projects, see [TFS Planning, Disaster Avoidance and Recovery, and TFS on Azure Iaas Guide](/archive/blogs/visualstudioalmrangers/library-of-tooling-and-guidance-solutions-aka-msvsarsolutions).
