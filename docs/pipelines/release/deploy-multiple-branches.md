@@ -88,11 +88,25 @@ In this section, you add a second stage (**Prod**) to the same release pipeline 
 
 ## Deploy to a specific stage
 
-Now that you've set up your stages, every time a new artifact is available, the release pipeline will detect which branch triggered the build and deploy only to the appropriate stage.
+At this point, your release pipeline is configured to route deployments by branch: artifacts from the *Dev* branch deploy to the **Dev** stage, and artifacts from the *main* branch deploy to the **Prod** stage. Use the following checks to validate that the branch filters are working as expected.
+
+1. Trigger a build from the *Dev* branch so a new artifact version is published.
+
+1. Open **Pipelines** > **Releases**, and then open the newly created release.
+
+1. Verify that the **Dev** stage starts (or is queued), and that the **Prod** stage is skipped because the artifact branch doesn't match its filter.
+
+1. Trigger a second build from the *main* branch.
+
+1. Open the new release and verify the opposite behavior: the **Prod** stage starts, and the **Dev** stage is skipped.
+
+1. If a stage doesn't behave as expected, open that stage's **Pre-deployment conditions** and confirm the **Artifact filters** branch value and selected artifact source.
+
+By validating both branch paths, you can confirm that each environment deploys only from the branch intended for that stage.
 
 :::image type="content" source="media/deploy-to-specific-stage.png" alt-text="A screenshot displaying deployment to a specific stage.":::  
 
-## Related articles
+## Related content
 
 - [Create a multi-stage release pipeline](define-multistage-release-process.md)
 
