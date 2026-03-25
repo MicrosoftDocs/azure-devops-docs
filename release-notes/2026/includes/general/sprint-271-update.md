@@ -25,7 +25,7 @@ Getting started is simple. Depending on the tools that you are using, you only n
 
 Additional configuration options are available to customize your setup. To learn more, see the official documentation: [Remote MCP Server](/azure/devops/mcp-server/remote-mcp-server).
 
-### Extensions access local network resources
+### Allow extensions to access local network resources
 
 Some web browsers may block calls from iframes to resources on the local network, which can impact Azure DevOps organizations that rely on extensions connecting to back-end services hosted on internal company networks. To avoid disruptions and continue using these extensions, organizations can enable the "Allow extensions to access local network resources" security policy. [Learn more](https://go.microsoft.com/fwlink/?linkid=2354648).
 

@@ -5,4 +5,4 @@ ms.date: 3/31/2026
 ms.topic: include
 ---
 
-- [Test results - option to query and relate work items from different projects](#test-results---option-to-query-and-relate-work-items-from-different-projects)
+- [Query and relate work items across projects in test results](#query-and-relate-work-items-across-projects-in-test-results)

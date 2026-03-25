@@ -5,4 +5,4 @@ ms.date: 3/31/2026
 ms.topic: include
 ---
 
-- [Increase process limit to 256](#increase-process-limit-to-256)
+- [Increased inherited process limit](#increased-inherited-process-limit)

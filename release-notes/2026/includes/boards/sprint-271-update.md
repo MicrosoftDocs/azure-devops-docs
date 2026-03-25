@@ -5,6 +5,6 @@ ms.date: 3/31/2026
 ms.topic: include
 ---
 
-### Increase process limit to 256
+### Increased inherited process limit
 
-We are increasing the limit on the number of inherited processes allowed in an organization. The limit is being raised from 128 to 256.
+To better support organizations with complex process customization needs, we’ve doubled the limit on inherited processes. Organizations can now create up to 256 inherited processes, increased from the previous limit of 128.

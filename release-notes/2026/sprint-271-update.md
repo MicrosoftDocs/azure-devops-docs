@@ -1,14 +1,14 @@
 ---
-title:  Remote MCP Server Public Preview
+title: Improved deployment visibility with artifact IDs and stage level views
 author: gloridelmorales
 ms.author: glmorale
 ms.date: 3/31/2026
-description:  Remote MCP Server Public Preview
+description: Improved deployment visibility with artifact IDs and stage level views
 ---
 
-#  Remote MCP Server Public Preview
+# Improved deployment visibility with artifact IDs and stage level views
 
-With this sprint, we're introducing the Remote Azure DevOps MCP Server in public preview, enabling seamless integration with Azure DevOps without managing a local server. Azure Pipelines now displays build artifact IDs on pipeline runs and adds a new Stages view so you can easily track which system version is deployed to each stage. GitHub Advanced Security for Azure DevOps enforces the **Advanced Security: Read alerts** permission in security overview, ensuring consistent access controls across views. Azure Boards increases the inherited process limit from 128 to 256, and Azure Test Plans now supports querying and relating work items across projects. Additionally, a new organization security policy lets extensions access local network resources to support internal back-end services.
+This sprint enhances Azure Pipelines deployment clarity by surfacing the exact build artifact deployed in each pipeline run and introducing a new Stages view. Together, these updates make it easier to track what version is deployed, where it’s running, and how deployments progress across environments 
 
 Check out the release notes for details.
 

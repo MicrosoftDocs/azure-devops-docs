@@ -5,5 +5,5 @@ ms.date: 3/31/2026
 ms.topic: include
 ---
 
-- [Display the build artifact ID being deployed in a pipeline run](#display-the-build-artifact-id-being-deployed-in-a-pipeline-run)
-- [Deployment view per stage](#deployment-view-per-stage)
+- [Improved continuous deployment visibility in YAML pipelines](#improved-continuous-deployment-visibility-in-yaml-pipelines)
+- [Deployment history for stages](#deployment-history-for-stages)

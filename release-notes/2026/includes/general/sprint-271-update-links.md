@@ -6,4 +6,4 @@ ms.topic: include
 ---
 
 - [Remote MCP Server Public Preview](#remote-mcp-server-public-preview)
-- [Extensions access local network resources](#extensions-access-local-network-resources)
+- [Allow extensions to access local network resources](#allow-extensions-to-access-local-network-resources)
