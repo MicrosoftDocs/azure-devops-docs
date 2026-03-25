@@ -7,9 +7,9 @@ ms.author: chcomley
 author: chcomley
 monikerRange: "<=azure-devops"
 ms.topic: quickstart
-ms.date: 03/18/2026
+ms.date: 03/24/2026
 ai-usage: ai-assisted
-ms.custom: copilot-scenario-highlight
+ms.custom: copilot-scenario-highlight, doc-kit-assisted, awp-ai
 # customer intent: As a team member, I want to see how to use an Analytics view in Power BI so that I can create trend and current count reports about work items in my project.
 ---
 
@@ -136,20 +136,24 @@ The following chart shows a daily distinct count of user stories for each select
 
 ## Use AI to create Power BI reports from Analytics views
 
-If you configure the [Azure DevOps MCP Server](/azure/devops/mcp-server/mcp-server-overview), you can use AI assistants to help create and refine Power BI reports.
+If you configure the [Azure DevOps MCP Server](../../mcp-server/mcp-server-overview.md), you can use AI assistants to help create and refine Power BI reports.
 
 ### Example prompts
 
 | Task | Example prompt |
 |------|----------------|
-| Create a trend chart | `Help me create a daily trend chart of user stories by state using an Analytics view in Power BI for <Contoso> project` |
-| Filter by state | `How do I filter my Power BI line chart to show only Active, Closed, and Resolved work items from <Contoso> project?` |
-| Show current count | `Create a Power BI card visual that shows the current count of active bugs using the Is Current filter for <Contoso> project` |
-| Choose the right view | `Which default Analytics view should I use for a sprint burndown report in <Contoso> project?` |
-| Troubleshoot data issues | `My Analytics view trend chart shows inflated counts — how do I use the Is Current field to get accurate totals for <Contoso> project?` |
-| Compare work across areas | `Build a stacked bar chart that compares active user stories by Area Path for the last 30 days in <Contoso> project` |
-| Highlight overdue items | `Create a Power BI table that flags user stories where the State is Active and the Changed Date is more than 14 days ago in <Contoso> project` |
-| Build a team dashboard | `Design a single-page Power BI dashboard with a trend chart, a current bug count card, and a state breakdown pie chart for <Contoso> project` |
+| Bug trend by date range | `Write an OData trend query that shows the daily bug count by state over the last 30 days in <ProjectName>.` |
+| Sprint snapshot | `Create an OData query against WorkItemSnapshot that shows work item counts grouped by date for the current sprint in <ProjectName>.` |
+| Filter by iteration | `Generate an OData trend query that uses the iteration start and end dates from <IterationName> to show story point burndown in <ProjectName>.` |
+| Board column trend | `Write an OData query against WorkItemBoardSnapshot to track work items by board column over the past two weeks in <ProjectName> in the <OrganizationName> organization.` |
+| Optimize performance | `My WorkItemSnapshot trend query for <ProjectName> is timing out. Suggest specific date filters and aggregation to reduce the row count without losing the key metrics.` |
+| Compare sprints | `Create an OData trend query that compares bug counts between <SprintName> and the previous sprint in <ProjectName> in the <OrganizationName> organization.` |
+| Remaining work trend | `Write an OData trend query that shows the daily sum of remaining work grouped by Area Path for the current iteration in <ProjectName>.` |
+| Detect state changes | `Create an OData snapshot query that tracks how many work items moved from Active to Resolved each day over the past <NumberOfDays> days in <ProjectName>.` |
+| Scope change analysis | `Generate an OData trend query that shows the daily count of user stories added or removed from <SprintName> by comparing WorkItemSnapshot data in <ProjectName>.` |
+
+> [!TIP]
+> If you're using Visual Studio Code, [agent mode](/visualstudio/ide/copilot-chat-context#agent-mode) is especially helpful for creating and refining Power BI reports from Analytics views.
 
 ::: moniker-end
 
