@@ -21,15 +21,15 @@ ai-usage: ai-assisted
 
 
 > [!NOTE]   
-> **Feature availability**: The Hosted XML process model is only supported for organizations that have migrated to Azure DevOps using the data migration tool for Azure DevOps.
+> **Feature availability**: The Hosted XML process model is only supported for organizations that migrate to Azure DevOps by using the data migration tool for Azure DevOps.
 
-The Hosted XML process model provides support for customizing work tracking objects and Agile tools for a project by modifying and importing a process template. Updates made to the process template are applied to projects that were created using that process.
+By using the Hosted XML process model, you can customize work tracking objects and Agile tools for a project by modifying and importing a process template. When you update the process template, you apply those updates to projects that you created by using that process.
 
 [!INCLUDE [temp](../../../boards/includes/note-configure-customize.md)]
 
 ## Supported customizations
 
-You can perform the following tasks with the Hosted XML process model. 
+You can perform the following tasks by using the Hosted XML process model. 
 
 
 :::row:::
@@ -119,7 +119,7 @@ You can perform the following tasks with the Hosted XML process model.
 
 ## Add release deployment support to a work item type
 
-The release deployments control shows release information for only those work items that have been associated to a commit that is part of a build being released. To add the release deployments control to a work item type, you need to add the following syntax to a work item type XML definition. To learn more about this control, see [Link work items to deployments](../../../boards/backlogs/add-link.md). 
+The release deployments control shows release information for only those work items that are associated with a commit that's part of a build being released. To add the release deployments control to a work item type, add the following syntax to the work item type XML definition. To learn more about this control, see [Link work items to deployments](../../../boards/backlogs/add-link.md). 
 
 > [!div class="tabbedCodeSnippets"]
 ```XML
@@ -128,7 +128,7 @@ The release deployments control shows release information for only those work it
 </Group>
 ```
 
-This syntax is added to the following work item type definitions of the default process templates.
+Add this syntax to the following work item type definitions of the default process templates.
 
 > [!div class="mx-tdBreakAll"]  
 > |Agile|Basic|Scrum|CMMI |  
@@ -140,7 +140,7 @@ This syntax is added to the following work item type definitions of the default 
  
 ## Customization sequence
 
-Use the following sequences when you manage customizations using the Hosted XML process model. This sequence requires you to update your project by updating the process template that it uses. Maintain your process templates in a repository for version control.  
+Use the following sequences when you manage customizations by using the Hosted XML process model. This sequence requires you to update your project by updating the process template that it uses. Maintain your process templates in a repository for version control.  
 
 [![Export process](media/cust-wit-form-export-process.png)](import-process/import-process.md#export-process)[![Import process](media/cust-wit-form-import-process.png)](import-process/import-process.md)![Refresh and verify changes](media/cust-wit-form-refresh-verify.png)  
 
@@ -152,7 +152,7 @@ Use the following sequences when you manage customizations using the Hosted XML 
 - [Change a project from Hosted XML to Inheritance](change-process-from-hosted-to-inherited.md) 
 - [Differences between Inheritance and Hosted XML](./inheritance-versus-hosted-xml.md) 
 - [Work tracking object limits](object-limits.md)
-- [REST APIS: Processes](/rest/api/azure/devops/processes/processes/list)
+- [REST APIs: Processes](/rest/api/azure/devops/processes/processes/list)
 
 
 

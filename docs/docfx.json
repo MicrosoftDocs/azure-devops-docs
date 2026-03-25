@@ -142,12 +142,12 @@
         "pipelines/security/**": "jukullam",
         "pipelines/targets/**": "rabououn",
         "pipelines/tasks/**": "sdanie",
-        "pipelines/test/**": "jeom",
+        "pipelines/test/**": "alexpysanets",
         "service-hooks/**": "aaronha",
         "repos/tfvc/**": "alexpysanets",
         "repos/get-started/**": "alexpysanets",
         "repos/git/**": "alexpysanets",
-        "test/**": "jeom"
+        "test/**": "alexpysanets"
       },
       "author": {
         "artifacts/**": "ramiMSFT",
