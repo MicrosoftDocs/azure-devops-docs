@@ -274,20 +274,22 @@ There are two status checks available:
 
 ### Configure status checks as branch policies
 
-To require Advanced Security status checks before pull requests can be merged, configure them as branch policies:
+To require Advanced Security status checks before pull requests can be merged, configure them as branch policies. You can set them per repository or for a project. 
 
-1. Go to **Project settings** > **Repos** > **Repositories**.
-1. Select the repository you want to configure.
-1. Select **Policies** and then select the branch you want to protect.
+1. Go to **Project settings** > **Repos**.
+1. Optionally, select the repository you want to configure.
+1. Select **Policies** and then select the branch you want to protect. By default, the default branch of your repositories will be protected.
 1. Under **Status checks**, select **+** to add a new status check policy.
-1. In the **Status to check** menu, select the Advanced Security status check you want to require.
+1. In the **Status to check** menu, enter **AdvancedSecurity** for the Genre and **AllHighAndCritical** or **NewHighAndCritical** for the Name.
 1. Choose the **Policy requirement** (required or optional) and set any other desired options.
 1. Select **Save**.
+
+:::image type="content" source="media/adv-sec-status-checks.png" lightbox="media/adv-sec-status-checks.png" alt-text="Screenshot of adding an Advanced Security status check."::: 
 
 For more information on configuring status check policies, see [Status checks](../git/branch-policies.md#status-checks).
 
 > [!TIP]
-> Status checks require an Advanced Security scan to run on your pull request branch. Make sure you have a build validation policy configured with dependency scanning and/or code scanning tasks in your pipeline. For more information, see [Build validation](../git/branch-policies.md#build-validation).
+> Advanced Security status checks require Advanced Security to be enabled and an Advanced Security scan to run on your pull request branch. Make sure you have a build validation policy configured with dependency scanning and/or code scanning tasks in your pipeline. For more information, see [Build validation](../git/branch-policies.md#build-validation).
 
 To disable Advanced Security, any alerts and state of alerts get retained in the Advanced Security tab for the next time you re-enable Advanced Security for your repository.
 
