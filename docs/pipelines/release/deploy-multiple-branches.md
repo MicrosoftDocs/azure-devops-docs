@@ -36,6 +36,8 @@ In this section, you create the base Classic release pipeline and configure the 
 
 1. Under **Stages**, select the default stage and rename it to **Dev**. In the next steps, you configure this stage to deploy only when an artifact is produced from the *Dev* branch.
 
+    :::image type="content" source="media/rename-stage-classic-release.png" alt-text="A screenshot displaying how to rename a stage in a Classic release pipeline.":::
+
 1. Under **Artifacts**, select **Add**.
 
 1. Configure the artifact source:
@@ -44,7 +46,11 @@ In this section, you create the base Classic release pipeline and configure the 
     - Complete the required fields for that source type, such as project, pipeline, and default version.
     - Select **Add**.
 
+    :::image type="content" source="media/add-artifact-to-classic-release.png" alt-text="A screenshot that shows how to add an artifact to a Classic release pipeline.":::
+
 1. Select the **Continuous deployment trigger** icon on the artifact, and then turn on **Continuous deployment trigger** to create a release whenever a new artifact is available.
+
+    :::image type="content" source="media/enable-continuous-deployment-trigger.png" alt-text="A screenshot displaying how to enable the continuous deployment trigger in a Classic relealse pipeline.":::
 
 1. In the **Dev** stage, select the **Pre-deployment conditions** icon.
 
@@ -58,6 +64,9 @@ In this section, you create the base Classic release pipeline and configure the 
     - Set **Build branch** to *Dev*.
 
     With this filter in place, the **Dev** stage deploys only when the release is created from a build of the *Dev* branch.
+
+    :::image type="content" source="media/add-predeployment-conditions-to-classic-release.png" alt-text="A screenshot displaying how to set up the pre-deployment conditions in a Classic release pipeline.":::
+
 
 ## Add a new stage
 
@@ -85,6 +94,8 @@ In this section, you add a second stage (**Prod**) to the same release pipeline 
     - Set **Build branch** to *main*.
 
     With this filter in place, the **Prod** stage deploys only when the release is created from a build of the *main* branch.
+
+    :::image type="content" source="media/add-predeployment-conditions-to-classic-release-prod-stage.png" alt-text="A screenshot displaying how to configure the predeployment conditions for the Prod stage in a Classic release pipeline.":::  
 
 ## Deploy to a specific stage
 
