@@ -152,4 +152,4 @@ The following table identifies common error messages and issues that might gener
 
 ### Microsoft Entra ID error codes
 
-[!INCLUDE [errors-workload-identity](includes/aadsts-errors-workload-identity.md)]
+[!INCLUDE [errors-workload-identity](includes/errors-workload-identity.md)]
