@@ -242,7 +242,10 @@ The AzureCLI@3 task uses the [Azure DevOps CLI](/azure/devops/cli), which is pre
 | _The Managed Identity / Service Principal `<sp/msi name>` does not have access to Azure DevOps organization `<org>`. Please make sure the identity has been added to the organization. See https://aka.ms/azdosc#prerequisites_  | Add the service principal [as a user](/azure/devops/integrate/get-started/authentication/service-principal-managed-identity#step-2-add-the-identity-to-azure-devops) to the target organization and assign it to the required project. |
 | _You don't have permission to the selected identity. Service connection is saved as draft. To complete the configuration, contact the owner of the identity to create a federated credential in the Azure portal using the Issuer and Subject Identifier below._ | The signed-in user doesn't have sufficient permissions to create federated credentials. Follow the instructions displayed to create federated credentials directly on the identity. |
 | _VS800075: The project with id 'vstfs:///Classification/TeamProject/00000000-0000-00000000-000000000000' does not exist, or you do not have permission to access it._  | The service connection identity isn't added to the project. Go to service connection details page > **View access in the current organization** > **Member of** > Select a group to add the identity to, for example, the `Readers` group. Alternatively, go to **Organization Settings** > **Users** > The identity used for the service connection > **Manage access** > select the projects the identity needs to access. |
-| _AADSTS70052: The identity must be a managed identity, a single tenant app, or a service account_ | Multitenant app registrations that have `signInAudience: AzureADMultipleOrgs` are not supported the Azure DevOps service connection. |
+
+### Microsoft Entra ID error messages
+
+[!INCLUDE [errors-workload-identity](../release/includes/errors-workload-identity.md)]
 
 ## Next steps
 
