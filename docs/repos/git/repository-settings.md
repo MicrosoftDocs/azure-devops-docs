@@ -204,8 +204,6 @@ The following table summarizes the settings that you can enable or configure for
    :::column span="3"::: 
       Specify up to five more branches to participate in code search, which by default applies only to the default branch. Requires the [Code Search extension](https://marketplace.visualstudio.com/items?itemName=ms.vss-code-search) installed and enabled.
 :::row-end:::
-::: moniker-end
-::: moniker range="azure-devops"
 :::row:::
    :::column span="2":::
       [Include PR ID in commit message](#include-pr-id-in-commit-message)
@@ -218,6 +216,18 @@ The following table summarizes the settings that you can enable or configure for
    :::column-end:::
 :::row-end:::
 ::: moniker-end
+
+::: moniker range="<=azure-devops"
+
+### Repository policies or options
+
+The following table summarizes the policies or options that you can set for either all or individual repositories. Policies set for **All Repositories** set the default for individual repositories added at a later date.
+
+::: moniker-end
+
+::: moniker range="<=azure-devops"
+:::row:::
+   :::column span="2":::
       **Policy** or **Option**
    :::column-end:::
    :::column span="1"::: 
