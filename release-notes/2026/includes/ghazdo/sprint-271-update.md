@@ -20,6 +20,6 @@ To use these status checks, add them as required status policies on your branche
 
 ### Export results from security overview
 
-You can now export results from security overview to a CSV file. Both the Risk and Coverage views support export, giving you a downloadable snapshot of your organization's security posture across repositories.
+You can now export results from security overview to a CSV file. Both the Risk and Coverage views support export, giving you a downloadable snapshot of your organization's security posture across repositories. The upcoming Alerts page, which gives you insight into specific alerts across your organization, will also support export functionality with a max of the first 1,000 alerts exported.
 
-Use exported data to share findings with stakeholders, feed into compliance reporting workflows, or perform offline analysis across your organization's repositories.
+This feature is only available via the UI at this time.
