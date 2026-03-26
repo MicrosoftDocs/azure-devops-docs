@@ -2,13 +2,13 @@
 title: Configure and monitor sprint burndown
 titleSuffix: Azure DevOps
 description: Learn how to configure and monitor sprint burndown charts in Azure DevOps to track team progress and ensure your sprint plan stays on track.
-ms.custom: dashboards, copilot-scenario-highlight
+ms.custom: dashboards, copilot-scenario-highlight, awp-ai
 ms.subservice: azure-devops-analytics
 ms.author: chcomley
 author: chcomley
 ms.topic: how-to
 monikerRange: "<= azure-devops"
-ms.date: 03/18/2026
+ms.date: 03/23/2026
 ai-usage: ai-assisted
 #customer intent: As a team member or leader, I want to monitor sprint burndown information to see whether my team is on track to complete our sprint plan.
 ---
@@ -110,7 +110,7 @@ The blue area shows the sum of Story Points for active or in-progress User Stori
 * * *
 
 > [!NOTE]
-> Available sum fields depend on the numeric fields defined for task and requirement work item types. The most common fields are [Story Points, Effort, or Size](../../boards/queries/query-numeric.md#fields) and [Remaining Work](../../boards/queries/query-numeric.md#fields).
+> Available sum fields depend on the numeric fields defined for task and requirement work item types. The most common fields are [Story Points, Effort, or Size](../../boards/queries/query-numeric.md#fields-used-to-estimate-and-track-work) and [Remaining Work](../../boards/queries/query-numeric.md#fields-used-to-estimate-and-track-work).
 
 Your selections persist across sessions until you change them.
 
@@ -158,7 +158,7 @@ The **Sprint Burndown (Legacy)** widget charts remaining work based on Remaining
 
 :::image type="content" source="media/burndown/sprint-burndown-legacy-devops.png" alt-text="Screenshot shows the Sprint Burndown Legacy widget, which shows a burndown chart.":::
 
-To configure, select the :::image type="icon" source="../../media/icons/actions-icon.png" border="false"::: actions icon and select **Configure**. Configuration options include team selection and widget size.
+To configure the widget, select the :::image type="icon" source="../../media/icons/actions-icon.png" border="false"::: actions icon and select **Configure**. Configuration options include team selection and widget size.
 
 :::image type="content" source="media/sprint-burndown/sprint-burndown-legacy-config.png" alt-text="Screenshot shows the Sprint Burndown Legacy widget configuration dialog.":::
 
@@ -169,11 +169,11 @@ To configure, select the :::image type="icon" source="../../media/icons/actions-
 
 ## Review past sprint burndown charts
 
-As you complete each sprint, the system maintains a history of your activity. To view a past sprint's burndown chart, select it from the sprint selector.
+As you complete each sprint, the system keeps a history of your activity. To view a past sprint's burndown chart, select it from the sprint selector.
 
 :::image type="content" source="media/burndown/select-past-sprint.png" alt-text="Screenshot shows where you can select a past sprint from the sprint selector.":::
 
-Reviewing past burndown charts during retrospectives can reveal patterns in your team's execution. Consider these questions:
+When you review past burndown charts during retrospectives, you can identify patterns in your team's execution. Consider these questions:
 
 - How does your projected velocity match up to your actual velocity?
 - How can you more accurately determine how much your team can accomplish in a sprint?
@@ -212,23 +212,28 @@ If your sprint burndown chart appears empty, check these points:
 
 ::: moniker range="azure-devops"
 
+<a id="use-ai-monitor-sprint-burndown">  </a>
+
 ## Use AI to monitor sprint burndown
 
-If you configure the [Azure DevOps MCP Server](/azure/devops/mcp-server/mcp-server-overview), you can use AI assistants to help configure and interpret sprint burndown charts.
+If you configure the [Azure DevOps MCP Server](../../mcp-server/mcp-server-overview.md), you can use AI assistants to help configure and interpret sprint burndown charts.
 
 ### Example prompts
 
 | Task | Example prompt |
 |------|----------------|
-| Configure the report | `Help me set up a sprint burndown widget that tracks Remaining Work for my team's current sprint in <Contoso> project` |
-| Interpret the chart | `My sprint burndown shows a flat line for the first 3 days — what does that indicate and what should my team do?` |
-| Compare approaches | `What's the difference between the in-context sprint burndown report and the Sprint Burndown widget? Which should I use?` |
-| Track by story points | `Help me configure sprint burndown by Story Points instead of work item count in <Contoso> project` |
-| Retrospective insights | `Based on sprint burndown patterns, what process improvements should my team discuss in our retrospective?` |
-| Scope changes | `How can I tell from the sprint burndown chart whether scope was added mid-sprint?` |
-| Predict risk early | `Our sprint burndown is flat after day 3 of a 10-day sprint — what's the likelihood we'll finish on time and what should we adjust?` |
-| Compare sprints | `Compare our last three sprint burndown patterns and identify whether our estimation accuracy is improving` |
-| Optimize sprint length | `Based on our burndown history, would our team benefit from shorter two-week sprints instead of three-week sprints?` |
+| View the report | `Open the in-context sprint burndown report for <team> in <project> (<organization>) and explain what I'm seeing` |
+| Configure the widget | `Help me set up a Sprint Burndown widget on the <dashboard> dashboard for <team> in <project> (<organization>) that burns down Remaining Work` |
+| Troubleshoot an empty chart | `My sprint burndown chart is empty for <team> in <project> (<organization>) — walk me through what to check (iterations, tasks, Remaining Work, and parent items)` |
+| Track by story points | `Help me configure sprint burndown by Story Points for <team> in <project> (<organization>) and explain any prerequisites` |
+| Interpret a flat burndown | `In sprint <sprint-name>, our burndown is flat for the first <n> days — what does that usually indicate, and what should <team> do next?` |
+| Identify scope changes | `In the sprint burndown for <team> in <project> (<organization>), how do I tell whether scope was added mid-sprint and when it happened?` |
+| Compare report vs widget | `What's the difference between the in-context Burndown Trend report and the Sprint Burndown widget in Azure DevOps, and when should <team> use each?` |
+| Compare sprints | `Compare the last <n> sprints for <team> in <project> (<organization>) using burndown patterns and summarize whether our estimation accuracy is improving` |
+| Prepare for a retrospective | `Based on the last sprint burndown for <team> in <project> (<organization>), suggest 3 retrospective questions and 3 process improvements to discuss` |
+
+> [!TIP]
+> If you're using Visual Studio Code, agent mode is especially helpful for iterating on multistep analysis (for example, comparing burndown trends across multiple sprints and summarizing the takeaways).
 
 ::: moniker-end
 

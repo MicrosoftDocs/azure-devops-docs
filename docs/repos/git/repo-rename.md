@@ -1,7 +1,7 @@
 ---
-title: Rename a Git repo in your project
+title: Rename a Git Repo in Your Project
 titleSuffix: Azure Repos
-description: You can rename a Git repository in a few steps. Your team will have to take a few more steps to adapt to the change.
+description: You can rename a Git repository in a few steps. Your team must take a few more steps to adapt to the change.
 ms.assetid: 05971618-4ea9-4997-bb51-2d74211352ef
 ms.service: azure-devops-repos
 ms.topic: how-to
@@ -10,12 +10,12 @@ ms.date: 02/23/2022
 ms.subservice: azure-devops-repos-git
 ---
 
-#  Rename a Git repository in your project
+# Rename a Git repository in your project
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 [!INCLUDE [version-vs-gt-eq-2019](../../includes/version-vs-gt-eq-2019.md)]
 
-You can rename a Git repository in a project from your web browser. After you rename the repo, each member of your team should take a few steps to re-enable their dev machines to connect to the repo on the server.
+You can rename a Git repository (repo) in a project from your web browser. After you rename the repo, each member of your team must take a few steps to reenable their dev machines to connect to the repo on the server.
 
 ## Prerequisites
 
@@ -27,21 +27,21 @@ You can rename a Git repository in a project from your web browser. After you re
 
 ::: moniker range="<=azure-devops"
 
-1. From the web portal, select **Repos**, **Files**.
+1. On the web portal, select **Repos** > **Files**.
 
-   ![View your files](media/repos-navigation/repos-files.png)
+   ![Screenshot that shows viewing your files.](media/repos-navigation/repos-files.png)
 
-2. From the repo drop-down, select **Manage repositories**.
+1. From the repo dropdown list, select **Manage repositories**.
 
-   ![Manage repositories](media/repo-mgmt/manage-repositories.png)
+   ![Screenshot that shows Manage repositories.](media/repo-mgmt/manage-repositories.png)
 
-3. Select the name of the repository from the **Repositories** list, choose the **...** menu, and then choose **Rename repository**.
+1. Select the name of the repo from the **Repositories** list, select the ellipsis **...** for more actions, and then select **Rename repository**.
 
-   ![Rename repository](media/repo-mgmt/rename-repository.png)
+   ![Screenshot that shows Rename repository.](media/repo-mgmt/rename-repository.png)
 
-4. Rename the repository by typing the repo's new name and selecting **Rename**.
+1. Rename the repo by entering the new name for the repo and selecting **Rename**.
 
-   ![Rename repository confirm](media/repo-mgmt/rename-repository-confirm.png)
+   ![Screenshot that shows confirming the name.](media/repo-mgmt/rename-repository-confirm.png)
 
 ::: moniker-end
 
@@ -60,9 +60,9 @@ You can rename a Git repository in a project from your web browser. After you re
 
 ## Update the Git remotes on your dev machines
 
-Git uses remote references to fetch and push changes between your local copy of a repository and the remote version that is stored on the server. After a Git repository or project has been renamed, you should update your remote references. Update your references to that the remote repository URL contains the project and the repository name. 
+Git uses remote references to fetch and push changes between your local copy of a repo and the remote version that's stored on the server. After you rename a Git repo or project, you should update your remote references. Update your references to the remote repo URL that contains the project and the repo name.
 
-Each member of your team must update their local Git repos to continue connecting from their dev machines to the repo in the project. The instructions below show how to update the remotes for the **Fabrikam Mobile** repo that was renamed to **Fabrikam**.
+Each member of your team must update their local Git repos to continue connecting from their dev machines to the repo in the project. The following instructions show how to update the remotes for the Fabrikam Mobile repo that was renamed to Fabrikam.
 
 <a name="copy_remote_repo_url"></a>
 
@@ -70,13 +70,13 @@ Each member of your team must update their local Git repos to continue connectin
 
 ::: moniker range="<=azure-devops"
 
-1. Select **Repos**, **Files**.
+1. Select **Repos** > **Files**.
 
-   ![View your files](media/repos-navigation/repos-files.png)
+   ![Screenshot that shows selecting Repos > Files.](media/repos-navigation/repos-files.png)
 
-2. Select **Clone** in the upper-right corner of the **Files** window and copy the clone URL.
+1. In the upper-right corner of the **Files** window, select **Clone** and copy the clone URL.
 
-   ![Retrieve the clone URL](./media/clone-repo/clone-repo.png)
+   ![Screenshot that shows retrieving the clone URL.](./media/clone-repo/clone-repo.png)
 
 ::: moniker-end
 
@@ -84,46 +84,46 @@ Each member of your team must update their local Git repos to continue connectin
 
 To update your remote:
 
-1. In the **Git** menu from the menu bar, select **Manage Remotes**.
+1. In the **Git** menu on the menu bar, select **Manage Remotes**.
 
-1. In the **Options** dialog, select the remote to edit, then select **Edit**.
+1. In the **Options** dialog, select the remote to edit, and then select **Edit**.
 
-   :::image type="content" source="media/repo-rename/options-rename-remote.png" border="true" alt-text="Screenshot shows the Options dialog with the option to edit remotes." :::
+   :::image type="content" source="media/repo-rename/options-rename-remote.png" border="true" alt-text="Screenshot that shows the Options dialog with the option to edit remotes." :::
 
 1. Replace the fetch and push remote references with the URL that you [copied from the remote repo](#copy_remote_repo_url).
 
-1. Select **Save** and then **OK** to close the **Options** dialog.
+1. Select **Save**, and then select **OK**.
 
-Visual Studio 2019 version 16.8 and later versions provides a Git version control experience while maintaining the **Team Explorer** Git user interface. To use **Team Explorer**, uncheck **Tools** > **Options** > **Preview Features** > **New Git user experience** from the menu bar. You can exercise Git features from either interface interchangeably.
+Visual Studio 2019 version 16.8 and later versions provide a Git version control experience while maintaining the Team Explorer Git user interface. To use Team Explorer, on the menu bar, go to **Tools** > **Options** > **Preview Features** and clear the **New Git user experience** checkbox. You can exercise Git features from either interface interchangeably.
 
 To update your remote from Visual Studio Team Explorer:
 
-1. Connect to the repo.
+1. To connect to the repo, select **Connect**.
 
-   ![Connect to the repository](media/repo-rename/RepoConnect.png)
+   ![Screenshot that shows connecting to the repository.](media/repo-rename/RepoConnect.png)
  
-2. Open the project settings.
+1. To open the project settings, select **Settings**.
  
-   ![Project settings](media/repo-rename/ProjectSettings.png)
+   ![Screenshot that shows Project settings.](media/repo-rename/ProjectSettings.png)
 
-3. Open the repo settings.
+1. To open the repo settings, select **Repository Settings**.
 
-   ![Repository settings](media/repo-rename/RepoSettings.png)
+   ![Screenshot that shows Repository Settings.](media/repo-rename/RepoSettings.png)
 
-4. Edit the fetch and push remote references and paste the URL that you [copied from the remote repo](#copy_remote_repo_url).
+1. Edit the fetch and push remote references, and paste the URL that you [copied from the remote repo](#copy_remote_repo_url).
 
-   ![Edit remote](media/repo-rename/EditRepoSettings.png)
+   ![Screenshot that shows the Edit option.](media/repo-rename/EditRepoSettings.png)
 
 ## Q&A
 
 <!-- BEGINSECTION class="m-qanda" -->
 
-#### Q: Can I rename my repo again? Can I reuse an old repo name?
+#### Can I rename my repo again? Can I reuse an old repo name?
 
-A: Yes
+Yes.
 
 <!-- ENDSECTION -->
 
-## Related articles
+## Related content
 
 - [Set Git repository settings and policies](repository-settings.md)

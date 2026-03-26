@@ -4,6 +4,7 @@ title: Issue Entra tokens with Azure CLI
 description: Use Microsoft Entra authentication on top of Azure CLI
 ms.assetid: 19285121-1805-4421-B7C4-63784C9A7CFA
 ms.subservice: azure-devops-security
+ms.custom: pat-reduction
 monikerRange: 'azure-devops'
 ms.author: chcomley
 author: chcomley

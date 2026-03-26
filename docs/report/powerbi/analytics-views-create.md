@@ -3,7 +3,7 @@ title: Create Analytics Views for Power BI in Azure DevOps
 titleSuffix: Azure DevOps
 description: Discover how to build and manage Analytics views in Azure DevOps for efficient Power BI reporting and enhanced data insights.
 ms.subservice: azure-devops-analytics
-ms.custom: analytics-views, engagement-fy23, copilot-scenario-highlight 
+ms.custom: analytics-views, engagement-fy23, copilot-scenario-highlight, awp-ai 
 ms.author: chcomley
 author: chcomley
 ms.topic: how-to
@@ -188,19 +188,26 @@ In **Analytics views**, choose any view from the **Favorites** or **All** page t
 
 <a id="use-ai-assistance"></a>
 
-## Use AI to create Analytics views
+## Use AI to create an Analytics view for Power BI reporting
 
-If you configure the [Azure DevOps MCP Server](/azure/devops/mcp-server/mcp-server-overview), you can use AI assistants to help plan and configure Analytics views.
+If you configure the [Azure DevOps MCP Server](/azure/devops/mcp-server/mcp-server-overview), you can use AI assistants to help you define the right filters, select fields, choose history options, and troubleshoot view verification so you can connect the view to Power BI faster.
 
 ### Example prompts
 
 | Task | Example prompt |
 |------|----------------|
-| Plan a view for bugs | `What filters and fields should I include in an Analytics view to track active bugs by priority in <Contoso> project?` |
-| Choose history options | `Should I use a rolling period or date range for a sprint burndown Analytics view in <Contoso> project?` |
-| Optimize view performance | `My Analytics view takes too long to verify — what filters can I add to reduce the dataset for <Contoso> project?` |
-| Set up a shared view | `How do I create a shared Analytics view that all team members can use for Power BI reports in <Contoso> project?` |
-| Troubleshoot verification | `My Analytics view failed verification with a field error — help me fix it for <Contoso> project` |
+| List existing views | `List the Analytics views in <ProjectName> in the <OrganizationName> organization, and tell me which ones are shared.` |
+| Find who can edit a shared view | `For the Analytics view <ViewName> in <ProjectName>, who can edit or delete it, and where do I change those permissions?` |
+| Plan a view for active bugs | `What filters and fields should I include in an Analytics view to track active bugs by priority in <ProjectName>?` |
+| Scope by team or Area Path | `I need a Power BI report for <TeamName>. How should I scope an Analytics view using team or Area Path filters in <ProjectName>?` |
+| Choose fields for reporting | `Recommend a minimal set of fields for a Power BI report that shows bug aging and owner for <ProjectName>, and tell me where to add them in the Analytics view UI.` |
+| Choose history + granularity | `I want trend charts for the last <NumberOfDays> days. Which History and Granularity options should I select in an Analytics view for <ProjectName>?` |
+| Optimize verification time | `My Analytics view takes too long to verify in <ProjectName>. Suggest specific filters to reduce row count without losing the key metrics for my report.` |
+| Troubleshoot verification errors | `My Analytics view in <ProjectName> failed verification with an error about a missing field. Help me identify which filter or field is invalid and how to fix it.` |
+| Decide between view vs OData | `I need board column data for a report in <ProjectName>. Should I use an Analytics view or OData (WorkItemBoardSnapshot), and what are the tradeoffs?` |
+
+> [!TIP]
+> If you’re using Visual Studio Code, agent mode is especially helpful for iterating on your report requirements—ask the agent to propose view filters and fields, then refine them after you validate row counts and verification results.
 
 ::: moniker-end
 

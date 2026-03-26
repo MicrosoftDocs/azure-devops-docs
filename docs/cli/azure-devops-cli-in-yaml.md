@@ -4,7 +4,7 @@ titleSuffix: Azure DevOps
 description: Learn how to use Azure DevOps CLI with a YAML pipeline with these examples that show how to run Azure DevOps CLI commands.
 ms.topic: how-to
 ms.subservice: azure-devops-reference
-ms.custom: devx-track-azurecli, linux-related-content
+ms.custom: devx-track-azurecli, linux-related-content, pat-reduction
 ms.manager: mijacobs 
 ms.author: chcomley  
 author: chcomley

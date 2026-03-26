@@ -9,7 +9,7 @@ ms.custom: cross-service
 ms.author: laurajiang
 author: laurajjiang
 monikerRange: 'azure-devops'
-ms.date: 08/03/2025
+ms.date: 03/02/2026
 zone_pivot_groups: configure-ghazdo-bundled-individual-products
 ---
 
@@ -262,6 +262,34 @@ To generate alerts, run your first scan with a pipeline with the code scanning t
 For both dependency scanning and code scanning, annotations automatically configure for pull requests where a build validation policy applies with dependency scanning and/or code scanning tasks included in your pipeline. For more information on configuring build validation policies, see [Build validation](../git/branch-policies.md#build-validation).
 
 Pull request annotations also require an Advanced Security scan on your default branch and target branch before then scanning your source (pull request) branch. For more information on resolving alerts for pull request branches, see [Managing dependency scanning alerts on pull requests](github-advanced-security-dependency-scanning.md#managing-dependency-scanning-alerts-on-pull-requests) and [Managing code scanning alerts on pull requests](github-advanced-security-code-scanning.md#managing-code-scanning-alerts-on-pull-requests).
+
+## Set up pull request status checks
+
+Advanced Security status checks allow you to block pull requests from being merged when security vulnerabilities are detected. These status checks evaluate dependency scanning, code scanning, and secret scanning results and post a status to your pull request based on the findings.
+
+There are two status checks available:
+
+* **Block on all critical and high vulnerabilities**: This status check fails when the repository has any open critical or high severity vulnerability detected by Advanced Security, whether the vulnerability is pre-existing or newly introduced. Use this check to enforce that all critical and high severity alerts across the repository are resolved before merging.
+* **Block on new critical and high vulnerabilities**: This status check fails only when the pull request introduces new critical or high severity vulnerabilities. Pre-existing vulnerabilities in the repository don't cause this check to fail. Use this check to prevent new vulnerabilities from being introduced without requiring all existing vulnerabilities to be fixed first.
+
+### Configure status checks as branch policies
+
+To require Advanced Security status checks before pull requests can be merged, configure them as branch policies. You can set them per repository or for a project. 
+
+1. Go to **Project settings** > **Repos**.
+1. Optionally, select the repository you want to configure.
+1. Select **Policies** and then select the branch you want to protect. By default, the default branch of your repositories will be protected.
+1. Under **Status checks**, select **+** to add a new status check policy.
+1. In the **Status to check** menu, enter **AdvancedSecurity** for the Genre and **AllHighAndCritical** or **NewHighAndCritical** for the Name.
+1. Choose the **Policy requirement** (required or optional) and set any other desired options.
+1. Select **Save**.
+
+:::image type="content" source="media/adv-sec-status-checks.png" lightbox="media/adv-sec-status-checks.png" alt-text="Screenshot of adding an Advanced Security status check."::: 
+
+For more information on configuring status check policies, see [Status checks](../git/branch-policies.md#status-checks).
+
+> [!TIP]
+> Advanced Security status checks require Advanced Security to be enabled and an Advanced Security scan to run on your pull request branch. Make sure you have a build validation policy configured with dependency scanning and/or code scanning tasks in your pipeline. For more information, see [Build validation](../git/branch-policies.md#build-validation).
 
 To disable Advanced Security, any alerts and state of alerts get retained in the Advanced Security tab for the next time you re-enable Advanced Security for your repository.
 
