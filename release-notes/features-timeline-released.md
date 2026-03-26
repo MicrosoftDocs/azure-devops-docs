@@ -38,8 +38,9 @@ You can also [view the build numbers for each version](#azure-devops-server-buil
         </tr>
     </thead>
 <tr>
-    <td rowspan="7"><a href="2026/sprint-271-update.md" data-raw-source="[31 March 2026](2026/sprint-271-update.md)">March 31 2026</a></td>
-    <td>Permissions enforcement in security overview</td><td>GitHub Advanced Security for Azure DevOps</td><td>N/A</td></tr>
+    <td rowspan="8"><a href="2026/sprint-271-update.md" data-raw-source="[31 March 2026](2026/sprint-271-update.md)">March 31 2026</a></td>
+    <td>Advanced Security status checks for pull requests</td><td>GitHub Advanced Security for Azure DevOps</td><td>N/A</td></tr>
+    <td>Export results from security overview</td><td>GitHub Advanced Security for Azure DevOps</td><td>N/A</td></tr>
     <td>Remote MCP Server Public Preview</td><td>General</td><td>Future</td></tr>
     <td>Allow extensions to access local network resources</td><td>General</td><td>Future</td></tr>
     <td>Increased inherited process limit</td><td>Boards</td><td>Future</td></tr>
