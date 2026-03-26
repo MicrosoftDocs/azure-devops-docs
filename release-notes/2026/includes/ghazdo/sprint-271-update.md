@@ -18,6 +18,9 @@ Status checks use fail-open behavior: repositories where Advanced Security is no
 
 To use these status checks, add them as required status policies on your branches through the branch policy settings. For more information and setup, see [Advanced Security status checks](https://aka.ms/ghazdo-status-checks).
 
+> [!div class="mx-imgBorder"]
+> [![Screenshot of the Add status policy dialog showing AdvancedSecurity status checks.](../../media/271-ghazdo-01.png "Screenshot of the Add status policy dialog showing AdvancedSecurity status checks.")](../../media/271-ghazdo-01.png#lightbox)
+
 ### Export results from security overview
 
 You can now export results from security overview to a CSV file. Both the Risk and Coverage views support export, giving you a downloadable snapshot of your organization's security posture across repositories. The upcoming Alerts page, which gives you insight into specific alerts across your organization, will also support export functionality with a max of the first 1,000 alerts exported.
@@ -25,7 +28,7 @@ You can now export results from security overview to a CSV file. Both the Risk a
 This feature is only available via the UI at this time.
 
 > [!div class="mx-imgBorder"]
-> [![Screenshot of the export button in security overview.](../../media/271-ghazdo-01.png "Screenshot of the export button in security overview.")](../../media/271-ghazdo-01.png#lightbox)
+> [![Screenshot of the export button in security overview.](../../media/271-ghazdo-02.png "Screenshot of the export button in security overview.")](../../media/271-ghazdo-02.png#lightbox)
 
 ### Audit log events for Advanced Security enablement changes
 
