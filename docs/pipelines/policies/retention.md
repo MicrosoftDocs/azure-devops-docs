@@ -77,7 +77,6 @@ Using retention policies, you can control **how many days** you want to keep eac
     * Set the number of days to keep pull request [runs](../process/runs.md)
     * Set the number of recent [runs](../process/runs.md) to keep for each pipeline
    
-   The number of days to retain is calculated from when the run is completed.
    
 ::: moniker-end
 
@@ -112,6 +111,15 @@ Only latest successful or partially succeeded pipeline runs are retained. If dep
     | Run 3  | branch1 | Not retained | Neither latest 3 for main, nor for pipeline |
     | Run 2  | release | Retained | Latest 3 for release |
     | Run 1  | main    | Not retained | Neither latest 3 for main, nor for pipeline |
+
+
+    Further, the number of days to retain is calculated from when the run is completed. For example, there are two runs on a master branch on Jan 19th. The run that completed later is retained.
+   
+    <img width="700" height="267" alt="Screenshot 2026-03-26 095010" src="https://github.com/user-attachments/assets/d43056cc-649b-40b5-a66a-3ad8252d5d22" />
+
+
+
+
 
 - **All other Git repositories:** Azure Pipelines retains the configured number of latest runs for the whole pipeline.
 
