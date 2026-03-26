@@ -23,3 +23,16 @@ To use these status checks, add them as required status policies on your branche
 You can now export results from security overview to a CSV file. Both the Risk and Coverage views support export, giving you a downloadable snapshot of your organization's security posture across repositories. The upcoming Alerts page, which gives you insight into specific alerts across your organization, will also support export functionality with a max of the first 1,000 alerts exported.
 
 This feature is only available via the UI at this time.
+
+### Audit log events for Advanced Security enablement changes
+
+Azure DevOps now records audit log events whenever GitHub Advanced Security enablement settings change. When Advanced Security features are enabled or disabled at the repository, project, or organization level, a detailed event is captured in the [Azure DevOps audit log](/azure/devops/organizations/audit/azure-devops-auditing).
+
+Audit log entries include the actor, timestamp, and the specific settings that were modified, including:
+
+- Advanced Security (bundled) or Code Security/Secret Protection plans (standalone)
+- CodeQL default setup
+- Dependency scanning default setup
+- Secret push protection
+
+These events provide visibility into when and by whom security features are configured across your organization, supporting compliance and governance requirements.
