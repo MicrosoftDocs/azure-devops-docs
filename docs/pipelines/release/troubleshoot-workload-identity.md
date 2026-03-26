@@ -150,6 +150,6 @@ The following table identifies common error messages and issues that might gener
 | **Script failed with error: UnrecognizedArgumentError: unrecognized arguments: --federated-token** | You're using an AzureCLI task on an agent that has an earlier version of the Azure CLI installed. Workload identity federation requires Azure CLI 2.30 or later. |
 | **Failed to create an app in Microsoft Entra ID. Error: Insufficient privileges to complete the operation in Microsoft Graph. Ensure that the user has permissions to create a Microsoft Entra Application.** | The ability to create app registrations was [disabled](/azure/active-directory/roles/delegate-app-roles#restrict-who-can-create-applications) in the Microsoft Entra tenant. Assign the user who is creating the service connection the [Application Developer](/azure/active-directory/roles/permissions-reference#application-developer) Microsoft Entra role. Alternatively, create the service connection manually by using a managed identity. For more information, see [Workload identity with managed identity](https://aka.ms/azdo-rm-workload-identity-manual). |
 
-### AADSTS error codes
+### Microsoft Entra ID error codes
 
 [!INCLUDE [aadsts-errors-workload-identity](includes/aadsts-errors-workload-identity.md)]

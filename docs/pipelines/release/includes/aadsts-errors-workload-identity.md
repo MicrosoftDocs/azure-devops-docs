@@ -6,7 +6,7 @@ author: juliakm
 ms.date: 03/26/2026
 ---
 
-The following table lists common AADSTS error codes and possible issues related to workload identity service connections:
+The following table lists common Microsoft Entra ID error codes and possible issues related to workload identity service connections:
 
 | Message | Possible issue |
 |---------|-----------------|
