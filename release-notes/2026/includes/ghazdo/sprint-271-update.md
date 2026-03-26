@@ -24,6 +24,9 @@ You can now export results from security overview to a CSV file. Both the Risk a
 
 This feature is only available via the UI at this time.
 
+> [!div class="mx-imgBorder"]
+> [![Screenshot of the export button in security overview.](../../media/271-ghazdo-01.png "Screenshot of the export button in security overview.")](../../media/271-ghazdo-01.png#lightbox)
+
 ### Audit log events for Advanced Security enablement changes
 
 Azure DevOps now records audit log events whenever GitHub Advanced Security enablement settings change. When Advanced Security features are enabled or disabled at the repository, project, or organization level, a detailed event is captured in the [Azure DevOps audit log](/azure/devops/organizations/audit/azure-devops-auditing).
