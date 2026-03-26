@@ -882,7 +882,7 @@ This repository setting controls whether the pull request (PR) ID is automatical
 By default, this setting is enabled to preserve existing behavior. When enabled, commit messages generated during PR completion include the PR ID as a prefix in the commit message title. When disabled, the PR ID prefix is omitted from PR completion commit messages.
 
 > [!NOTE]
-> This setting applies only to commits generated during PR completion. It doesn't affect manual commits. The setting only applies to commits created after you change the setting.
+> This setting applies only to commits generated during PR completion. It doesn't affect manual commits. The setting only affects commits created after you change the setting.
 
 To enable or disable the PR ID in commit messages:
 
