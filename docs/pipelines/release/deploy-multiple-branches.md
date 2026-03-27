@@ -50,7 +50,7 @@ In this section, you create the base Classic release pipeline and configure the 
 
 1. Select the **Continuous deployment trigger** icon on the artifact, and then turn on **Continuous deployment trigger** to create a release whenever a new artifact is available.
 
-    :::image type="content" source="media/enable-continuous-deployment-trigger.png" alt-text="A screenshot displaying how to enable the continuous deployment trigger in a Classic relealse pipeline.":::
+    :::image type="content" source="media/enable-continuous-deployment-trigger.png" alt-text="A screenshot displaying how to enable the continuous deployment trigger in a Classic release pipeline.":::
 
 1. In the **Dev** stage, select the **Pre-deployment conditions** icon.
 
