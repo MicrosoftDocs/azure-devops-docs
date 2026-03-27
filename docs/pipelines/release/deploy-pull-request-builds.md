@@ -19,7 +19,7 @@ Pull requests provide an effective way to review code changes before merging the
 
 | **Product**        | **Requirements**    |
 |--------------------|---------------------|
-| **Azure DevOps**   | - An [Azure DevOps project](../../organizations/projects/create-project.md).<br> - Source code hosted on Azure Repos or GitHub. If you don’t have a repository, you can use the [pipelines-dotnet-core](https://github.com/MicrosoftDocs/pipelines-dotnet-core) sample app to create one.<br> - A working [pipeline](../create-first-pipeline.md) for your repository.<br> - A Classic release pipeline. If you don't have one, [set up a Classic release pipeline](./deploy-multiple-branches.md#create-a-release-pipeline). |
+| **Azure DevOps**   | - An [Azure DevOps project](../../organizations/projects/create-project.md).<br> - Source code hosted on Azure Repos or GitHub. If you don’t have a repository, you can use the [pipelines-dotnet-core](https://github.com/MicrosoftDocs/pipelines-dotnet-core) sample app to create one.<br> - A working [pipeline](../create-first-pipeline.md) for your repository.<br> - A Classic release pipeline. If you don't have one, [set up a Classic release pipeline](./deploy-multiple-branches.md#create-a-classic-release-pipeline). |
 
 ## Pull request deployments
 
