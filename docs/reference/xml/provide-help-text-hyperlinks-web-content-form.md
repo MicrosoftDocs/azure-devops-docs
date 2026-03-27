@@ -9,18 +9,19 @@ ms.author: chcomley
 author: chcomley
 ms.topic: how-to
 monikerRange: '< azure-devops' 
-ms.date: 04/04/2022
+ms.date: 03/24/2026
+ai-usage: ai-assisted
 ---
 
 # Provide help text, hyperlinks, or web content on a work item form
 
 [!INCLUDE [version-lt-azure-devops](../../includes/version-lt-azure-devops.md)] 
 
-When you customize your work item form, you may want to provide information or links to content that helps your team define the fields in the form. If you embed information in the form or make it easily available, team members will be better able to track useful data.  
+When you customize your work item form, you might want to provide information or links to content that helps your team define the fields in the form. If you embed information in the form or make it easily available, team members can better track useful data.  
 
-By using the form controls that are described in this topic, you can add tooltip text for individual fields, stand-alone text, or hyperlinks to Web pages, or embed HTML content or Web content in the form.  
+By using the form controls described in this topic, you can add tooltip text for individual fields, stand-alone text, or hyperlinks to web pages, or embed HTML content or web content in the form.  
 
-To modify an existing WIT, you modify the XML definition file for the WIT and then import it to your project [based on the process model you use](../customize-work.md). 
+To modify an existing WIT, modify the XML definition file for the WIT and then import it to your project [based on the process model you use](../customize-work.md). 
 
 
 [!INCLUDE [temp](../../includes/process-editor.md)]
@@ -28,7 +29,7 @@ To modify an existing WIT, you modify the XML definition file for the WIT and th
 <a name="HelpTextA"></a> 
 
 ##  Provide help text or tooltip text  
- You can provide Help text in one of two ways. In the first method, you add the `HELPTEXT` element as a child to the `FIELD` element in the `FIELDS` section of the type definition. By using `HELPTEXT`, you create the tooltip for the field. You are limited to 255 characters with this method.  
+ You can provide help text in one of two ways. In the first method, add the `HELPTEXT` element as a child to the `FIELD` element in the `FIELDS` section of the type definition. By using `HELPTEXT`, you create the tooltip for the field. You're limited to 255 characters with this method.  
 
 ```xml
 <FIELD name="Sub-Title" refname="ACME.ACE.ImpactStatement" type="HTML" >  
@@ -36,7 +37,7 @@ To modify an existing WIT, you modify the XML definition file for the WIT and th
 </FIELD>  
 ```  
 
- In the second method, you specify stand-alone text by using the `LabelText` and `Text` child elements. In this method, you can add as much information as you want, and the text is always present on the form. No user action is required. You can also add an optional link by using the `Link` element to more information, as shown in the following example.  
+ In the second method, specify stand-alone text by using the `LabelText` and `Text` child elements. In this method, you can add as much information as you want, and the text is always present on the form. No user action is required. You can also add an optional link by using the `Link` element to more information, as shown in the following example.  
 
 ```xml
 <Control FieldName=" ACME.ACE.ImpactStatement" Type="HTMLControl" Label="Impact" LabelPosition="Left">   
@@ -51,11 +52,11 @@ To modify an existing WIT, you modify the XML definition file for the WIT and th
 <a name="LabelControl"></a> 
 
 ##  Add stand-alone text and hyperlink field labels  
- You can add text to a work item form that is not associated with any work item field by using the `Type` attribute `LabelControl` option of the `Control` element. The text can be plain or provide a hyperlink. Also, you can attach a hyperlink to an added field label by using the `FieldControl` option.  
+ Add text to a work item form that isn't associated with any work item field by using the `Type` attribute `LabelControl` option of the `Control` element. The text can be plain or provide a hyperlink. You can also attach a hyperlink to an added field label by using the `FieldControl` option.  
 
 #### Example: plain text label  
 
- The following example adds the plain text "Fill in the details of the bug here. Fields that are not required are recommended to be filled in." to the work item field.  
+ The following example adds the plain text "Fill in the details of the bug here. Fields that aren't required are recommended to be filled in." to the work item field.  
 
 ```xml
 <Control Type="LabelControl" Label="Fill in the details of the bug here. Fields that are not required are recommended to be filled in." />  
@@ -63,7 +64,7 @@ To modify an existing WIT, you modify the XML definition file for the WIT and th
 
 
 #### Example: hyperlink field label  
- The following example illustrates how to add a hyperlink to a field label.  
+ The following example shows how to add a hyperlink to a field label.  
 
 ```xml
 <Control Type="FieldControl" FieldName="System.Title" LabelPosition="Left" Label="Title 1"  
@@ -77,11 +78,11 @@ To modify an existing WIT, you modify the XML definition file for the WIT and th
 ```  
 
 > [!NOTE]
->  For Team Foundation clients who have not upgraded to the latest version, the `Label` attribute text appears. For Visual Studio 2012 clients, the Text tag is displayed as a hyperlink in which the URL is defined by the `Link` tag.  
+>  For Team Foundation clients that don't upgrade to the latest version, the `Label` attribute text appears. For Visual Studio 2012 clients, the Text tag is displayed as a hyperlink in which the URL is defined by the `Link` tag.  
 
 #### Example: field label with hyperlink for part of the text  
 
- The following example illustrates how to add a hyperlink to part of a field label. In this example, the URL is determined by the values that are assigned to the `Param` elements based on the specific work item.  
+ The following example shows how to add a hyperlink to part of a field label. In this example, the values that you assign to the `Param` elements determine the URL based on the specific work item.  
 
 ```xml
 <Control Type="FieldControl" FieldName="System.IterationPath">  
@@ -101,7 +102,7 @@ To modify an existing WIT, you modify the XML definition file for the WIT and th
  ![Example of hyperlink applied to a standalone label](media/wit_ss_hyperlinklabel.png "WIT_SS_HyperlinkLabel")  
 Hyperlink Text Label  
 
- The following example illustrates how to add a hyperlink to displayed text in a work item form.  
+ The following example shows how to add a hyperlink to displayed text in a work item form.  
 
 ```xml
 <Group>  
@@ -120,7 +121,7 @@ Hyperlink Text Label
 
 Combining Text and Hyperlinks in a Single Label  
 
- The following example illustrates how to add two hyperlinks to parts of a label on a work item form.  
+ The following example shows how to add two hyperlinks to parts of a label on a work item form.  
 
 ```xml
 <Group>  
@@ -145,7 +146,7 @@ Combining Text and Hyperlinks in a Single Label
 
 #### Example: parameter-generated hyperlink field label  
 
- The following example illustrates how to add a hyperlink to a field label that is generated from parameter values that are evaluated for the open work item.  
+ The following example shows how to add a hyperlink to a field label that's generated from parameter values that are evaluated for the open work item.  
 
 ```xml
 <Control Type="FieldControl" FieldName="System.State" Label="&State:" LabelPosition="Left">  
@@ -158,11 +159,11 @@ Combining Text and Hyperlinks in a Single Label
 
 ##  Displaying web content  
 
- You can use the `Type` attribute `WebpageControl` option to display Web content in the work item form as a control instead of linking to a separate Web page. This display can be useful for providing metrics that support team members in viewing the contents of a report, dashboard, or other HTML-based content. You can provide a link to the content or embed the raw HTML content in a CDATA tag.  
+ Use the `Type` attribute `WebpageControl` option to display web content in the work item form as a control instead of linking to a separate web page. This display can be useful for providing metrics that support team members in viewing the contents of a report, dashboard, or other HTML-based content. You can provide a link to the content or embed the raw HTML content in a CDATA tag.  
 
 ### Example: display content provided by a URI  
 
-The following example shows how you can embed the content from a Web page by providing the URL to the page by using the `WebpageControlOptions` and `Link` elements.  
+The following example shows how you can embed the content from a web page by providing the URL to the page by using the `WebpageControlOptions` and `Link` elements.  
 
 ```xml
       <Group>  
@@ -191,7 +192,7 @@ The following example shows how you can embed the content from a Web page by pro
 ```  
  
 
-## Related articles
+## Related content
 
 -  [Design the work item form](/previous-versions/azure/devops/reference/xml/design-work-item-form?view=tfs-2017&preserve-view=true)   
 -  [Customizing Project Tracking Data, Forms, Workflow, and Other Objects](../customize-work.md)
