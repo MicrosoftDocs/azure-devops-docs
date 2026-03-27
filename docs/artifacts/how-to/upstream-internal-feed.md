@@ -108,13 +108,13 @@ Follow these steps to set up an internal feed from the same organization as an u
 
 The following example illustrates a scenario where *Test_Feed* has *CargoDemoFeed* configured as an upstream source. For domonstration purposes *Test_Feed* is empty and contains no packages.
 
-When a collaborator (or higher) installs a package from *CargoDemoFeed*, Azure Artifacts automatically saves a copy of that package to *Test_Feed*. That package can then be consumed by all readers of *Test_Feed*.
+When a collaborator (or higher) installs a package from *Test_Feed* that is available in the upstream *CargoDemoFeed*, Azure Artifacts copies that package into the downstream *Test_Feed* and downloads it as part of the normal `cargo install` flow. After this first-time copy, all future downloads of that package from *Test_Feed* require only **Feed Reader** (or higher) permissions, because those later downloads don't modify the downstream feed. Only the first install copies the package from upstream to downstream, so only that initial action requires elevated permissions.
 
 1. Sign in to Azure DevOps, then navigate to the project that hosts the upstream feed (in this example, *CargoDemoFeed*).
 
 1. Select Artifacts, then from the dropdown menu, select the upstream feed (*CargoDemoFeed*).
 
-1. Find the package you want to install and note its name. In this example, *atomic-waker* is the package name.
+1. Find the package you want to install and note its name. In this example, *atomic-waker* is the package name. You can also search upstream packages directly from your downstream feed in the Azure Artifacts UI. See [Search packages from upstream sources](search-upstream.md) for more details.
 
 1. Navigate to the root of your project and open your *Cargo.toml*. Add the package under **[dependencies]**. Because this is a private crate dependency, you must specify the registry name in your *Cargo.toml* file. Cargo assumes *crates.io* as the default registry unless otherwise specified. Add the dependency as follows:
 
