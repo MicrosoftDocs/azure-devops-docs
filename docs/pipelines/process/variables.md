@@ -148,7 +148,7 @@ Runtime expression variables only expand when they're used for a value, not as a
 
 Use macro syntax if you're providing a secure string or a [predefined variable](/azure/devops/pipelines/build/variables) input for a task. 
 
-Choose a runtime expression if you're working with [conditions](conditions.md) and [expressions](expressions.md]. However, don't use a runtime expression if you don't want your empty variable to print (example: `$[variables.var]`). For example, if you have conditional logic that relies on a variable having a specific value or no value, use a macro expression. 
+Choose a runtime expression if you're working with [conditions](conditions.md) and [expressions](expressions.md). However, don't use a runtime expression if you don't want your empty variable to print (example: `$[variables.var]`). For example, if you have conditional logic that relies on a variable having a specific value or no value, use a macro expression. 
 
 Typically, a template variable is the standard to use. By leveraging template variables, your pipeline fully injects the variable value into your pipeline at pipeline compilation. This injection is helpful when attempting to debug pipelines. You can download the log files and evaluate the fully expanded value that is being substituted in. Since the variable is substituted in, don't leverage template syntax for sensitive values.
 
