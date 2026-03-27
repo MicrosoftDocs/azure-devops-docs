@@ -53,16 +53,16 @@ Workflow state rules support the following scenarios:
 ::: moniker range="azure-devops"
 The following list outlines the three groups of workflow rules:
 
-1. Standard actions:
+- Standard actions:
    - Apply when a work item is created, in a selected state, or moved from one state to another.
    - Actions include setting the value of a field, making a field read-only, or making a field required.
    - You can specify one or two conditions and several actions.
 
-2. Restricting state transitions:
+- Restricting state transitions:
    - Specify one condition indicating the state a work item moved from.
    - Define actions to restrict transitions from that state to other states.
 
-3. Restricting state transitions based on user or group membership:
+- Restricting state transitions based on user or group membership:
    - Specify one condition based on user or group membership.
    - Define one action to restrict a transition from one state to another.
 ::: moniker-end
@@ -70,12 +70,12 @@ The following list outlines the three groups of workflow rules:
 ::: moniker range="<azure-devops"
 The following list outlines the two groups of workflow rules:
 
-1. Standard actions:
+- Standard actions:
    - Apply when a work item is created, in a selected state, or moved from one state to another.
    - Actions include setting the value of a field, making a field read-only, or making a field required.
    - You can specify one or two conditions and several actions.
 
-2. Restricting state transitions:
+- Restricting state transitions:
    - Specify one condition indicating the state a work item moved from.
    - Define one or more actions to restrict transitions from that state to other states.
 ::: moniker-end

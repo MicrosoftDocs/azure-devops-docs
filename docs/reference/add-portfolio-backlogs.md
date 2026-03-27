@@ -45,8 +45,13 @@ By using it, the management team can set priorities and view progress of work be
 
 ![Screenshot of three portfolio backlogs enabled.](media/three-level-portfolio-backlog.png)
 
-You can add up to five levels of portfolio backlogs.
+You can add up to five portfolio backlogs, including the default Feature and Epic backlogs.
+In total, this structure gives you seven levels from the top-level portfolio backlog to task.
 Each team can [select which backlogs appear for them to work on](../organizations/settings/select-backlog-navigation-levels.md).
+
+![Diagram of five levels of portfolio backlog.](media/five-levels-portfolio-backlogs.png)
+
+To add another work item type to your backlogs or boards, see [Add work item types to backlogs and boards](add-wits-to-backlogs-and-boards.md).
 
 <a id="overview"></a>
 
@@ -242,24 +247,23 @@ You need to export the following files:
 
 [!INCLUDE [temp](../includes/witadmin-run-tool-example.md)]
 
-1. Enter the `witadmin` command, substituting your data for the arguments that are shown.
-	For example, to import a WIT:
+Enter the `witadmin` command, substituting your data for the arguments that are shown. For example, to import a WIT:
 
-    ```
-    witadmin importwitd /collection:CollectionURL /p:"ProjectName" /f:"DirectoryPath\WITDefinitionFile.xml"
-    ```
+```
+witadmin
+```
 
-    For *CollectionURL*, specify the URL of a project collection. For *ProjectName*, specify the name of a project defined within the collection.
-    You must specify the URL in the following format: `http://ServerName:Port/VirtualDirectoryName/CollectionName`.
+For `CollectionURL`, specify the URL of a project collection. For `ProjectName`, specify the name of a project defined within the collection.
+Specify the URL in the following format: `http://ServerName:Port/VirtualDirectoryName/CollectionName`.
 
-    For *DirectoryPath*, specify the path to the `WorkItem Tracking/TypeDefinitions` folder that holds the process template that you downloaded.
-    The directory path must follow this structure: `Drive:\TemplateFolder\WorkItem Tracking\TypeDefinitions`.
+For `DirectoryPath`, specify the path to the `WorkItem Tracking/TypeDefinitions` folder that holds the process template that you downloaded.
+The directory path must follow this structure: `Drive:\TemplateFolder\WorkItem Tracking\TypeDefinitions`.
 
-    For example, import the ServiceApp WIT:
+For example, import the ServiceApp WIT:
 
-    ```
-    witadmin importwitd /collection:"http://MyServer:8080/tfs/DefaultCollection" /p:MyProject /f:"DirectoryPath/ServiceApp.xml"
-    ```
+```
+witadmin importwitd /collection:"http://MyServer:8080/tfs/DefaultCollection" /p:MyProject /f:"DirectoryPath/ServiceApp.xml"
+```
 
 Use these commands to export and import categories and process configuration: 
 
@@ -277,15 +281,29 @@ witadmin exportprocessconfig /collection:"CollectionURL" /p:"ProjectName" /f:"Di
 witadmin importprocessconfig /collection:"CollectionURL" /p:"ProjectName" /f:"DirectoryPath/ProcessConfiguration.xml"
 ```
 
+## FAQs
+
+### Q: What controls the hierarchy among portfolio backlogs?
+
+A: The process configuration determines the hierarchy through the assignment of parent categories to portfolio backlog categories.
+Only parent-child relationships are supported.
+The uppermost category within the hierarchy doesn't contain a parent assignment.
+
+### Q: Can I define more than one WIT in a category that I use for a portfolio backlog?
+
+A: Yes.
+For example, you can add Goal and Initiative WITs to a portfolio backlog category.
+The main restriction is to not add the same WIT to two different categories that you assign to one of the following sections for process configuration: a ```PortfolioBacklog```, ```RequirementBacklog```, or ```TaskBacklog```.
+
+### Q: Can you nest backlog items in addition to using portfolio backlogs?
+
+A: While you can nest backlog items, nesting isn't recommended.
+Drag-and-drop linking of nested backlog items isn't supported.
+Instead, use [mapping of backlog items to portfolio items](../boards/backlogs/organize-backlog.md).
+
+For examples of how hierarchically linked items that belong to the Requirements Category appear on the backlogs and boards, see [How backlogs and boards display hierarchical (nested) items](../boards/backlogs/resolve-backlog-reorder-issues.md).
 
 ## Related content
-
-You can add up to five portfolio backlogs, including the default Feature and Epic backlogs.
-In total, this structure gives you seven levels from the top-level portfolio backlog to task.
-
-![Diagram of five levels of portfolio backlog.](media/five-levels-portfolio-backlogs.png)
-
-To add another work item type to your backlogs or boards, see [Add work item types to backlogs and boards](add-wits-to-backlogs-and-boards.md).
 
 - [All WITD XML elements reference](/previous-versions/azure/devops/reference/xml/all-witd-xml-elements-reference)
 - [Process configuration XML element reference](xml/process-configuration-xml-element.md)
@@ -293,29 +311,3 @@ To add another work item type to your backlogs or boards, see [Add work item typ
 - [Import and export categories](/previous-versions/azure/devops/reference/witadmin/witadmin-import-export-categories)
 - [Import and export process configuration](witadmin/witadmin-import-export-process-configuration.md)
 - [Customize your work tracking experience](customize-work.md)
-
-### Portfolio backlog hierarchy
-
-What controls the hierarchy among portfolio backlogs?
-
-The process configuration determines the hierarchy through the assignment of parent categories to portfolio backlog categories.
-Only parent-child relationships are supported.
-The uppermost category within the hierarchy doesn't contain a parent assignment.
-
-### Portfolio backlogs and WIT categories
-
-Can I define more than one WIT in a category that I use for a portfolio backlog?
-
-Yes.
-For example, you can add Goal and Initiative WITs to a portfolio backlog category.
-The main restriction is to not add the same WIT to two different categories that you assign to one of the following sections for process configuration: a ```PortfolioBacklog```, ```RequirementBacklog```, or ```TaskBacklog```.
-
-### Nesting of backlog items
-
-**Can you nest backlog items in addition to using portfolio backlogs?**
-
-While you can nest backlog items, nesting isn't recommended.
-Drag-and-drop linking of nested backlog items isn't supported.
-Instead, use [mapping of backlog items to portfolio items](../boards/backlogs/organize-backlog.md).
-
-For examples of how hierarchically linked items that belong to the Requirements Category appear on the backlogs and boards, see [How backlogs and boards display hierarchical (nested) items](../boards/backlogs/resolve-backlog-reorder-issues.md).

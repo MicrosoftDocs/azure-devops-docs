@@ -61,7 +61,7 @@ To make the indicated customizations, see the following topics:
 
 ## Import and export definition files (On-premises XML process)
 
-1. If you don't have administration permissions for your project, [get them](../organizations/security/change-organization-collection-level-permissions.md).  
+If you don't have administration permissions for your project, [get them](../organizations/security/change-organization-collection-level-permissions.md).  
   
 1. Open a Command Prompt window by following the instructions in [witAdmin: Customize and manage objects for tracking work](witadmin/witadmin-customize-and-manage-objects-for-tracking-work.md#run-witadmin-tool). 
 
@@ -71,7 +71,7 @@ To make the indicated customizations, see the following topics:
    %programfiles(x86)%\Microsoft Visual Studio\2017\Community\Common7\IDE\CommonExtensions\Microsoft\TeamFoundation\Team Explorer 
    ```  
 
-1. Export the WIT definition file where you want to modify or add a field. Specify the name of the WIT and a name for the file.  
+2. Export the WIT definition file where you want to modify or add a field. Specify the name of the WIT and a name for the file.  
 
     ```
     witadmin exportwitd /collection:CollectionURL /p:ProjectName /n:TypeName /f:"DirectoryPath/FileName.xml"  
@@ -79,15 +79,15 @@ To make the indicated customizations, see the following topics:
 
    An example of a <em>CollectionURL</em> for an organization is https:\//dev.azure.com/*OrganizationName*.
 
-1. Edit the file. For details, see [WebLayout XML elements](/previous-versions/azure/devops/reference/xml/weblayout-xml-elements).  
+3. Edit the file. For details, see [WebLayout XML elements](/previous-versions/azure/devops/reference/xml/weblayout-xml-elements).  
 
-1. Import the WIT definition file.  
+4. Import the WIT definition file.  
 
     ```
     witadmin importwitd /collection:CollectionURL /p:ProjectName /f:"DirectoryPath/FileName.xml"  
     ```
 
-1. Open either the web portal to view the changes. If the client is already open, refresh the page. 
+5. Open either the web portal to view the changes. If the client is already open, refresh the page. 
 
    The latest updates are downloaded from the server, including the changes that you just imported. Wait several seconds until the refresh completes.
 
