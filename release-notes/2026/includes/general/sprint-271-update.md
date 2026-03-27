@@ -31,3 +31,11 @@ Some web browsers may block calls from iframes to resources on the local network
 
 > [!div class="mx-imgBorder"]
 > ![Screenshot showing allow extensions to access local network resources policy.](../../media/271-general-01.png "Screenshot showing allow extensions to access local network resources policy.")
+
+### Expired personal access tokens (PATs) can no longer be modified
+
+We’ve closed a discovered gap in Personal Access Token (PAT) behavior that allowed certain expired PATs to be altered or extended after their expiration date. Going forward, expired PATs cannot be modified or extended via either the Azure DevOps UI or PAT APIs at all in the Azure DevOps Services product.
+
+This change enforces true token lifetimes, reduces risk from leaked or forgotten credentials, and makes PAT behavior simpler and more predictable. It also helps customers meet internal security and compliance expectations by ensuring credentials cannot silently persist beyond their intended lifetime.
+
+If a PAT expires, create a new token or regenerate the existing token. Always use short‑lived PATs and consider migrating to Microsoft Entra–based authentication where supported.
