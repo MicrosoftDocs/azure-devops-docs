@@ -23,3 +23,4 @@ applyTo: "**"
 - Shared content (organizations, security, user guide) is in `docs/organizations/` and `docs/user-guide/`.
 - Includes are in `docs/includes/` — used for prerequisites, common steps, and shared notes.
 - Media files are colocated with their articles in `media/` subdirectories.
+
