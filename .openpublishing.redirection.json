@@ -14472,6 +14472,21 @@
       "source_path_from_root": "/docs/pipelines/test/codecoverage-for-pullrequests.md",
       "redirect_url": "/azure/devops/pipelines/test/review-code-coverage-results",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/test/provide-stakeholder-feedback.md",
+      "redirect_url": "/azure/devops/test/request-stakeholder-feedback",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/test/voluntary-stakeholder-feedback.md",
+      "redirect_url": "/azure/devops/test/request-stakeholder-feedback",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/test/track-stakeholder-feedback.md",
+      "redirect_url": "/azure/devops/test/request-stakeholder-feedback",
+      "redirect_document_id": true
     }
   ]
 }

@@ -20,8 +20,8 @@ To use the Test & Feedback extension in Connected mode, connect to an Azure DevO
 
 * Users with **Basic** access can use the extension to perform exploratory
   testing, as described in this article.
-* Users with **Stakeholder** access can use the extension to respond to feedback requests or to [provide feedback](provide-stakeholder-feedback.md#direct) voluntarily.
-* Users with **Basic** or **Stakeholder** access can use extension to respond to feedback requests sent by the team by choosing the **Provide feedback** link in the email. for more information, see [Provide stakeholder feedback](provide-stakeholder-feedback.md#email).
+* Users with **Stakeholder** access can use the extension to respond to feedback requests or to [provide feedback](request-stakeholder-feedback.md#voluntary) voluntarily.
+* Users with **Basic** or **Stakeholder** access can use extension to respond to feedback requests sent by the team by choosing the **Provide feedback** link in the email. for more information, see [Provide stakeholder feedback](request-stakeholder-feedback.md#email).
 
 ## Prerequisites
 
@@ -53,7 +53,7 @@ To use the Test & Feedback extension in Connected mode, connect to an Azure DevO
    If there are many projects or teams, use the search textbox to find the one you need. 
  
 The extension is now ready to be used in **Connected** mode. 
-Depending on your access level (Basic or Stakeholder), you see the appropriate UI for either [exploratory testing](#create-bugs) or [providing feedback](provide-stakeholder-feedback.md).
+Depending on your access level (Basic or Stakeholder), you see the appropriate UI for either [exploratory testing](#create-bugs) or [providing feedback](request-stakeholder-feedback.md#email).
 The extension remembers your selection and remains connected until the session cookies expire or you explicitly disconnect from the server.
 
 <a name="create-bugs"></a>
