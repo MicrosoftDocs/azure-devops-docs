@@ -14481,12 +14481,12 @@
     {
       "source_path": "docs/test/voluntary-stakeholder-feedback.md",
       "redirect_url": "/azure/devops/test/request-stakeholder-feedback",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/test/track-stakeholder-feedback.md",
       "redirect_url": "/azure/devops/test/request-stakeholder-feedback",
-      "redirect_document_id": true
+      "redirect_document_id": false
     }
   ]
 }
