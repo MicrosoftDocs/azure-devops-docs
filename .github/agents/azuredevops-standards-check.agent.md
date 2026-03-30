@@ -78,7 +78,7 @@ Microsoft Learn uses monikers to show different content for different Azure DevO
 
 #### Docs Repository
 
-- **Repo**: MicrosoftDocs/azure-devops-docs-pr (private), MicrosoftDocs/azure-devops-docs (public)
+- **Repo**: MicrosoftDocs/azure-devops-docs (public)
 - **Docs path**: docs/
 - **TOC root**: docs/toc.yml
 - **Content areas**: docs/artifacts/, docs/boards/, docs/pipelines/, docs/repos/, docs/test/, docs/organizations/, docs/cli/

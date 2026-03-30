@@ -5,7 +5,7 @@ applyTo: "**"
 
 ## Docs repository
 
-- **Repo**: MicrosoftDocs/azure-devops-docs-pr (private), MicrosoftDocs/azure-devops-docs (public)
+- **Repo**: MicrosoftDocs/azure-devops-docs (public)
 - **Docs path**: docs/
 - **TOC root**: docs/toc.yml
 - **Content areas**: docs/artifacts/, docs/boards/, docs/pipelines/, docs/repos/, docs/test/, docs/organizations/, docs/cli/
@@ -23,3 +23,4 @@ applyTo: "**"
 - Shared content (organizations, security, user guide) is in `docs/organizations/` and `docs/user-guide/`.
 - Includes are in `docs/includes/` — used for prerequisites, common steps, and shared notes.
 - Media files are colocated with their articles in `media/` subdirectories.
+
