@@ -123,7 +123,7 @@ The only required field for all work item types is **Title**. When the work item
       [Assigned To](../boards/queries/query-by-workflow-changes.md)
    :::column-end:::
    :::column span="3":::
-      Assign the work item to the team member responsible for performing the work. Depending on the context you are working in, the drop-down menu lists only team members or contributors to the project.
+      Assign the work item to the team member responsible for performing the work. For more information about identity search and selection, see [Query by assignment or workflow changes](../boards/queries/query-by-workflow-changes.md#people-picker).
       > [!NOTE]  
       > You can only assign work to a single user. If you need to assign work to more than one user, add a work item for each user and distinguish the work to be done by title and description. The Assigned To field only accepts user accounts that have been [added to a project or team](../organizations/security/add-users-team-project.md). 
    :::column-end:::
@@ -282,17 +282,6 @@ There are a number of permissions that control select features for viewing, modi
 :::row-end:::
 :::row:::
    :::column span="2":::
-      **Delete and restore work items**  
-   :::column-end:::
-   :::column span="1":::
-     Project-level
-   :::column-end:::
-   :::column span="2":::
-     Delete test-specific work items and restore them from the Recycle bin.
-   :::column-end:::
-:::row-end:::
-:::row:::
-   :::column span="2":::
       **Permanently delete work items**  
    :::column-end:::
    :::column span="1":::
@@ -327,7 +316,7 @@ There are a number of permissions that control select features for viewing, modi
 :::row-end:::
 :::row:::
    :::column span="2":::
-      **Manage test plans**  
+      **Manage test suites**  
    :::column-end:::
    :::column span="1":::
      Area Path
@@ -345,6 +334,7 @@ As with other work items, you can bulk edit test-specific work items. For more i
 
 ::: moniker range="<=azure-devops"
 - [Bulk modify work items](../boards/backlogs/bulk-modify-work-items.md). 
+- [Import and export test cases](bulk-import-export-test-cases.md)
 - [Navigate Test Plans, Test suites context menu options](navigate-test-plans.md#test-suites-context-menu-options)
 ::: moniker-end
 
