@@ -162,45 +162,54 @@ You can delete runs from the [More actions menu](../create-first-pipeline.md#pip
 
 ::: moniker-end
 
-## Set release retention policies
+## Releases retention policies
 
-The release retention policies for a classic release pipeline determine how long a release and the run linked to it are retained. Using these policies, you can control **how many days** you want to keep each release after it has been last modified or deployed and the **minimum number of releases** that should be retained for each pipeline.
+Release retention policies for classic release pipelines determine how long a release and its associated run are kept. With these policies, you can configure both:
 
-The retention timer on a release is reset every time a release is modified or deployed to a stage. The minimum number of releases to retain setting takes precedence over the number of days. For example, if you specify to retain a minimum of three releases, the most recent three will be retained indefinitely - irrespective of the number of days specified. However, you can manually delete these releases when you no longer require them. See FAQ below for more details about how release retention works.
+- The number of days to retain each release after it was last modified or deployed.
+- The minimum number of releases to retain for each pipeline.
 
-As an author of a release pipeline, you can customize retention policies for releases of your pipeline on the **Retention** tab.
+The retention timer resets each time a release is modified or deployed to a stage. The minimum releases setting takes precedence over the days-based setting. For example, if you set the minimum to three releases, the three most recent releases are retained regardless of the number of days configured. You can still delete these releases manually when you no longer need them. For more details, see the FAQ later in this article.
 
 ::: moniker range="<=azure-devops"
 
-The retention policy for YAML and build pipelines is the same. You can see your pipeline's retention settings in **Project Settings** for **Pipelines** in the **Settings** section.
+YAML and build pipelines use the same run retention policy. You can view these settings under **Project settings** > **Pipelines** > **Settings**.
 
 ::: moniker-end
 
+::: moniker range="azure-devops"
+
 ### Global release retention policy
 
-If you are using an on-premises Team Foundation Server or Azure DevOps Server, you can specify release retention policy defaults and maximums for a project. You can also specify when releases are permanently destroyed (removed from the **Deleted** tab in the build explorer).
+In Azure DevOps Services, you can view these settings but can't change them at the project level.
+
+You can review global release retention settings from your project's **Release retention** page in your **Project settings**.
+
+The **maximum retention policy** defines the upper limit for how long releases can be retained across all release pipelines. Pipeline authors can't configure retention beyond this limit.
+
+The **default retention policy** defines the default retention values applied to release pipelines. Pipeline authors can override these defaults.
+
+The **Permanently destroy releases** controls how long deleted releases are kept before permanent removal. Individual release pipelines can't override this policy.
+
+::: moniker-end
+
+::: moniker range="< azure-devops"
+
+### Global release retention policy
+
+If you're using Azure DevOps Server on-premises, you can configure project-level defaults and maximums for release retention. You can also set when deleted releases are permanently destroyed (removed from the **Deleted** tab in Build Explorer).
+
+The **maximum retention policy** defines the upper limit for how long releases can be retained across all release pipelines. Pipeline authors can't configure retention beyond this limit.
+
+The **default retention policy** defines the default retention values applied to release pipelines. Pipeline authors can override these defaults.
+
+The **Permanently destroy releases** controls how long deleted releases are kept before permanent removal. Individual release pipelines can't override this policy.
 
 :::image type="content" source="media/on-premises-release-retention.png" alt-text="On premises release retention settings":::
 
-If you are using Azure DevOps Services, you can view but not change these settings for your project.
-
-Global release retention policy settings can be reviewed from the **Release retention** settings of your project:
-
-* Azure DevOps Services: `https://dev.azure.com/{organization}/{project}/_settings/release?app=ms.vss-build-web.build-release-hub-group`
-* On-premises: `https://{your_server}/tfs/{collection_name}/{project}/_admin/_apps/hub/ms.vss-releaseManagement-web.release-project-admin-hub`
-
-The **maximum retention policy** sets the upper limit for how long releases can be retained for all release pipelines. Authors of release pipelines cannot
-configure settings for their definitions beyond the values specified here.
-
-The **default retention policy** sets the default retention values for all the release pipelines. Authors of build pipelines can override these values.
-
-The **destruction policy** helps you keep the releases for a certain period of time after they are deleted. This policy cannot be overridden in individual release pipelines.
-
-::: moniker range="<=azure-devops"
-
 ## Set collection-level retention policies
 
-For on-premises servers, you can also set the collection-level retention policies with custom retention rules. These retention policies apply to Classic build pipelines. The page at `https://{your_server}/{collection_name}/_settings/buildqueue` governs your maximum values and default values. 
+If you're using an on-premises server, you can also configure collection-level retention with custom rules. These settings apply to Classic build pipelines and define the default and maximum retention values for the collection.
 
 :::image type="content" source="media/retention-settings-server.png" alt-text="A screenshot showing how to configure collection level retention policies.":::
 
@@ -210,7 +219,9 @@ For on-premises servers, you can also set the collection-level retention policie
 
 ## Use the Copy Files task to save data longer
 
-You can use the [Copy Files task](/azure/devops/pipelines/tasks/reference/copy-files-v2) to save your build and artifact data for longer than what is set in the retention policies. The **Copy Files task** is preferable to the [Publish Build Artifacts task](/azure/devops/pipelines/tasks/reference/publish-build-artifacts-v1) because data saved with the **Publish Build Artifacts task** will get periodically cleaned up and deleted. 
+If you need to keep build output longer than your configured retention period, copy it to your own storage location by using the [Copy Files task](/azure/devops/pipelines/tasks/reference/copy-files-v2).
+
+Use **Copy Files** instead of [Publish Build Artifacts](/azure/devops/pipelines/tasks/reference/publish-build-artifacts-v1), because data published as build artifacts is still subject to retention cleanup.
 
 # [YAML](#tab/yaml)
 
@@ -225,12 +236,12 @@ You can use the [Copy Files task](/azure/devops/pipelines/tasks/reference/copy-f
 
 # [Classic](#tab/classic)
 
-1. Add the **Copy Files task** to your Pipeline.  
+1. Add the **Copy Files** task to your pipeline.
 
   > [!div class="mx-imgBorder"]
   > ![copy files](media/copy_files_classic_task.png)
 
-2. Configure the **Copy Files task**. 
+1. Configure the **Copy Files** task.
 
   > [!div class="mx-imgBorder"]
   > ![configure Copy Files](media/copy_files_classic_config.png)
