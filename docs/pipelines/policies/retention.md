@@ -1,64 +1,49 @@
 ---
-title: Retention policies for builds, releases, and test
-ms.topic: concept-article
-description: Builds, releases, and tests retention policies in Azure Pipelines
+title: Retention policies
+description: Learn about Builds, releases, and tests retention policies in Azure Pipelines
+ms.topic: overview
 ms.assetid: A9AC68EB-E013-4F86-8604-E69BB330817B
 ms.author: rabououn
 author: juliakm
-ms.date: 05/03/2023
+ms.date: 03/30/2026
 ms.custom: cross-service
 monikerRange: '<= azure-devops'
 ---
 
-# Set retention policies for builds, releases, and tests
+# Retention policies
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
-Retention policies let you set how long to keep runs, releases, and tests stored in the system. To save storage space, you want to delete older runs, tests, and releases.   
+Retention policies control how long pipeline runs, classic releases, and test data are kept in Azure DevOps. These settings help you balance storage usage, compliance, and traceability by defining when older data should be deleted and what should be retained longer. This article explains the retention options available and how they apply to Pipelines, Releases, and Tests.
 
-The following retention policies are available in Azure DevOps in your **Project settings**:
+## Prerequisites
 
-1. **Pipeline** - Set how long to keep artifacts, symbols, attachments, runs, and pull request runs. 
-2. **Release (classic)** - Set whether to save builds and view the default and maximum retention settings.
-3. **Test** - Set how long to keep automated and manual test runs, results, and attachments. 
- 
-> [!div class="mx-imgBorder"]
-> ![Project settings retention policies](media/retention-policies.png)
-
-> [!NOTE]
-> If you are using an on-premises server, you can also specify retention policy defaults for a project and when releases are permanently destroyed. Learn more about [release retention](#release) later in this article.
-
-## Prerequisites 
-
-By default, members of the Contributors, Build Admins, Project Admins, and Release Admins groups can manage retention policies. 
-
-To manage retention policies, you must have one of the following subscriptions:
-- [Enterprise](https://visualstudio.microsoft.com/vs/enterprise/)
-- [Test Professional](https://visualstudio.microsoft.com/vs/test-professional/)
-- [MSDN Platforms](https://visualstudio.microsoft.com/msdn-platforms/)
-
-You can also buy monthly access to Azure Test Plans and assign the [Basic + Test Plans](https://marketplace.visualstudio.com/items?itemName=ms.vss-testmanager-web) access level. See [Testing access by user role](../../test/manual-test-permissions.md#access-by-user-role).
-
-::: moniker range="<=azure-devops"
-
-## Configure retention policies
-
-1. Sign in to your project. 
-
-2. Go to the ![gear icon](../../media/icons/gear-icon.png) **Settings** tab of your project's settings.
-
-3. Select **Settings** or **Release retention** under **Pipelines** or **Retention** under **Test**.
-    * Select **Settings** to configure retention policies for runs, artifacts, symbols, attachments, and pull request runs. 
-    * Select **Release retention** to set up your release retention policies and configure when to delete or permanently destroy releases.
-    * Select **Retention** to set up how long to keep manual and automated test runs.     
-
-    :::image type="content" source="media/retention-menu.png" alt-text="Screenshot of retention settings in Project settings.":::
-::: moniker-end
+| **Product** | **Requirements** |
+|-------------|------------------|
+| **Azure DevOps** | - An [Azure DevOps organization](../../organizations/accounts/create-organization.md).<br>- An [Azure DevOps project](../../organizations/projects/create-project.md). |
+| **Permissions** | - By default, users in the Contributors, Build Admins, Project Admins, and Release Admins groups can manage retention policies.<br>- To manage retention policies, you need one of the following subscriptions: [Enterprise](https://visualstudio.microsoft.com/vs/enterprise/), [Test Professional](https://visualstudio.microsoft.com/vs/test-professional/), or [MSDN Platforms](https://visualstudio.microsoft.com/msdn-platforms/).<br>- You can also purchase monthly Azure Test Plans access and assign the [Basic + Test Plans](https://marketplace.visualstudio.com/items?itemName=ms.vss-testmanager-web) access level. See [Testing access by user role](../../test/manual-test-permissions.md#access-by-user-role) for more details. |
 
 ::: moniker range="azure-devops-2022"
 
 > [!IMPORTANT]
 > Azure Pipelines no longer supports per-pipeline retention policies. We recommend using project-level retention rules.
+
+::: moniker-end
+
+::: moniker range="<=azure-devops"
+
+## Configure retention policies
+
+Use these steps to open the retention settings pages in your project and choose the policy area you want to manage.
+
+1. Sign in to your Azure DevOps project.
+
+1. Select ![gear icon](../../media/icons/gear-icon.png) **Project settings**.
+
+1. Select one of the following options:
+  * Under **Pipelines**, select **Settings** to configure retention for runs, artifacts, symbols, attachments, and pull request runs.
+  * Under **Pipelines**, select **Release retention** to configure release retention settings, including when releases are deleted or permanently destroyed.
+  * Under **Test**, select **Retention** to configure how long manual and automated test runs are kept.
 
 ::: moniker-end
 
