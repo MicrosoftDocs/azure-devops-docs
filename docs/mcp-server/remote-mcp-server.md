@@ -142,6 +142,44 @@ Use the `X-MCP-Readonly` header to restrict the server to read-only operations. 
 }
 ```
 
+### Individual tools
+
+Use the `X-MCP-Tools` header to enable specific tools. Should not be combined with `X-MCP-Toolsets`.
+
+```json
+{
+  "servers": {
+    "ado-remote-mcp": {
+      "url": "https://mcp.dev.azure.com/{organization}",
+      "type": "http",
+      "headers": {
+        "X-MCP-Tools": "core_list_projects, wit_my_work_items, wit_get_work_items_batch_by_ids"      
+      }
+    }
+  },
+  "inputs": []
+}
+```
+
+### Insiders
+
+As we experiment and provide new tools and changes to existing tools, you can get early access to those changes with the `X-MCP-Insiders` header.
+
+```json
+{
+  "servers": {
+    "ado-remote-mcp": {
+      "url": "https://mcp.dev.azure.com/{organization}",
+      "type": "http",
+      "headers": {
+        "X-MCP-Insiders": "true"
+      }
+    }
+  },
+  "inputs": []
+}
+```
+
 ## Available tools
 
 > [!NOTE]
