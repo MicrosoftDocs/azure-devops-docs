@@ -5,10 +5,10 @@ description: Learn how to configure a Git repository and its branches.
 ms.assetid: 9336ed18-c239-4394-aa4c-64b6d01130f9
 ms.service: azure-devops-repos
 ms.topic: how-to
-ms.custom: cross-service, devx-track-azurecli
+ms.custom: cross-service, devx-track-azurecli, copilot-scenario-highlight
 ai-usage: ai-assisted
 monikerRange: '<= azure-devops' 
-ms.date: 08/08/2022
+ms.date: 03/26/2026
 ms.subservice: azure-devops-repos-git
 ---
 
@@ -16,7 +16,7 @@ ms.subservice: azure-devops-repos-git
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
-[!INCLUDE [ai-assistance-callout](../../includes/ai-assistance-callout.md)]
+[!INCLUDE [ai-assistance-mcp-server-tip](../../includes/ai-assistance-mcp-server-tip.md)]
 
 There are several ways to customize your Azure Repos Git repositories by using branch and repository settings and policies. This article discusses repository-level settings and policies.
 
@@ -203,6 +203,17 @@ The following table summarizes the settings that you can enable or configure for
    :::column-end:::
    :::column span="3"::: 
       Specify up to five more branches to participate in code search, which by default applies only to the default branch. Requires the [Code Search extension](https://marketplace.visualstudio.com/items?itemName=ms.vss-code-search) installed and enabled.
+:::row-end:::
+:::row:::
+   :::column span="2":::
+      [Include PR ID in commit message](#include-pr-id-in-commit-message)
+   :::column-end:::
+   :::column span="1":::
+       On  
+   :::column-end:::
+   :::column span="3":::
+      Include the pull request ID in the commit message title for commits generated during PR completion. When disabled, PR completion commit messages don't include the PR ID prefix.
+   :::column-end:::
 :::row-end:::
 ::: moniker-end
 
@@ -860,6 +871,26 @@ Enabling this setting disables access to the repository, including builds and pu
    :::image type="content" source="media/repository-settings/disable-repository.png" alt-text="Screenshot that shows the Disable Repository setting.":::
 ::: moniker-end
 
+::: moniker range="azure-devops"
+
+<a id="include-pr-id-in-commit-message"></a>
+
+## Include PR ID in commit message setting
+
+This repository setting controls whether the pull request (PR) ID is automatically included in the commit message title for commits generated during PR completion actions such as merge, squash, or rebase.
+
+By default, this setting is enabled to preserve existing behavior. When enabled, commit messages generated during PR completion include the PR ID as a prefix in the commit message title. When disabled, the PR ID prefix is omitted from PR completion commit messages.
+
+> [!NOTE]
+> This setting applies only to commits generated during PR completion. It doesn't affect manual commits. The setting only affects commits created after you change the setting.
+
+To enable or disable the PR ID in commit messages:
+
+1. Select **Project Settings** > **Repositories**, and then select a repository.
+1. On the **\<Repository name>** page, on the **Settings** tab, set **Include PR ID in the completion commit message title by default** to **On** or **Off**.
+
+::: moniker-end
+
 ::: moniker range="<=azure-devops"
 
 ## Searchable branches setting
@@ -1194,6 +1225,26 @@ ID    Name                   Is Blocking    Is Enabled    Repository Id         
 [!INCLUDE [temp](../../includes/note-cli-not-supported.md)]
 
 ***
+
+<a id="use-ai-assistance"></a>
+
+## Use AI to manage Git repository settings
+
+If you have the [Azure DevOps MCP Server](../../mcp-server/mcp-server-overview.md) configured, you can query and manage repository settings and policies using natural language prompts with your AI assistant.
+
+| Task | Example prompt |
+|------|----------------|
+| List repositories | `List all Git repositories in the <project-name> project` |
+| View repository details | `Show me the settings for the <repository-name> repository in <project-name>` |
+| Check repository policies | `What policies are configured for the <repository-name> repository?` |
+| List branch policies | `Show all branch policies on the main branch in the <repository-name> repository` |
+| Check PR completion settings | `What merge types are allowed for pull requests in the <repository-name> repository?` |
+| Review cross-repo policies | `List all cross-repository branch policies in the <project-name> project` |
+| Check code search branches | `Which branches are configured for code search in the <repository-name> repository?` |
+| Audit repository permissions | `Who has contribute permissions on the <repository-name> repository in <project-name>?` |
+
+> [!TIP]
+> If you're using Visual Studio Code, [agent mode](/visualstudio/ide/copilot-chat-context#agent-mode) is especially helpful for reviewing and managing repository settings and policies across multiple repositories.
 
 ## Related content
 
