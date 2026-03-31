@@ -42,7 +42,7 @@ You can also [view the build numbers for each version](#azure-devops-server-buil
     <td>Permissions enforcement in security overview</td><td>GitHub Advanced Security for Azure DevOps</td><td>N/A</td></tr>
     <td>Advanced Security status checks for pull requests</td><td>GitHub Advanced Security for Azure DevOps</td><td>N/A</td></tr>
     <td>Export results from security overview</td><td>GitHub Advanced Security for Azure DevOps</td><td>N/A</td></tr>
-    <td>Remote MCP Server Public Preview</td><td>General</td><td>Future</td></tr>
+    <td>Remote MCP Server public preview</td><td>General</td><td>Future</td></tr>
     <td>Expired personal access tokens (PATs) can no longer be modified</td><td>General</td><td>Future</td></tr>
     <td>Allow extensions to access local network resources</td><td>General</td><td>Future</td></tr>
     <td>Increased inherited process limit</td><td>Boards</td><td>Future</td></tr>
