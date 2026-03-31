@@ -134,7 +134,7 @@ For more information, see the [Azure DevOps Marketplace](https://marketplace.vis
 
 ## REST APIs  
  
-The Azure DevOps APIs are based on REST, OAuth, JSON, and service hook. These resources are standard web technologies that are broadly supported in the industry. REST APIs are provided to support building extensions to Azure DevOps. For more information, see [REST API overview](/rest/api/azure/devops).
+The Azure DevOps APIs are based on REST, JSON, and service hooks. These resources are standard web technologies that are broadly supported in the industry. REST APIs are provided to support building extensions to Azure DevOps. For more information, see [REST API overview](/rest/api/azure/devops).
 
 ## Related content
 
