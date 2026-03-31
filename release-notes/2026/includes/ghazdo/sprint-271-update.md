@@ -42,3 +42,9 @@ Audit log entries include the actor, timestamp, and the specific settings that w
 - Secret push protection
 
 These events provide visibility into when and by whom security features are configured across your organization, supporting compliance and governance requirements.
+
+### Automatic cleanup of alerts from stale pipeline configurations
+
+Advanced Security now automatically hides alerts associated with pipeline configurations that have not been run in over 90 days. Alert fingerprints in Advanced Security are tied to specific pipeline configurations, so when a pipeline job or stage is changed, previously associated alerts can become orphaned if they were also resolved as part of the pipeline update.
+
+With this change, alerts linked to stale pipeline configurations are automatically hidden, reducing noise and ensuring that your alert results reflect your current CI/CD setup. If you re-run a previously stale pipeline configuration after its alerts have been hidden, any previously open alerts will return as active, open alerts. You can also use the delete analysis API to manually hide alerts associated with specific pipeline configurations that are no longer in use.
