@@ -47,40 +47,38 @@ Use these steps to open the retention settings pages in your project and choose 
 
 ::: moniker-end
 
-## Set run retention policies
+## Pipeline runs retention policies
 
-In most cases, you don't need to retain completed runs longer than a certain number of days. 
-Using retention policies, you can control **how many days** you want to keep each run before deleting it. 
+In most cases, you don't need to keep completed runs indefinitely. Run retention policies let you define how long runs and related data are kept before deletion.
 
 ::: moniker range="<=azure-devops"
 
 1. Go to the ![gear icon](../../media/icons/gear-icon.png) **Settings** tab of your project's settings.
 
-2. Select **Settings** in the Pipelines section.
-    * Set the number of days to keep [artifacts](../artifacts/artifacts-overview.md), symbols, and attachments.
-    * Set the number of days to keep [runs](../process/runs.md)
-    * Set the number of days to keep pull request [runs](../process/runs.md)
-    * Set the number of recent [runs](../process/runs.md) to keep for each pipeline
+1. Select **Settings** in the **Pipelines** section.
+  * Set how many days to keep [artifacts](../artifacts/artifacts-overview.md), symbols, and attachments.
+  * Set how many days to keep [runs](../process/runs.md).
+  * Set how many days to keep pull request [runs](../process/runs.md).
+  * Set the number of recent [runs](../process/runs.md) to keep for each pipeline.
 
 ::: moniker-end
 
 ::: moniker range="azure-devops"
 
 > [!WARNING]
-> Azure DevOps no longer supports per-pipeline retention rules. 
-> The only way to configure retention policies for YAML and classic pipelines is through the project settings described above. You can no longer configure per-pipeline retention policies. 
->
+> Azure DevOps no longer supports per-pipeline retention rules. The only way to configure retention policies for YAML and classic pipelines is through the project settings described above. You can no longer configure per-pipeline retention policies. 
+
 ::: moniker-end
 
 ::: moniker range="<=azure-devops"
 
-The setting for number of recent runs to keep for each pipeline requires a little more explanation. The interpretation of this setting varies based on the type of repository you build in your pipeline.
+The **number of recent runs to keep for each pipeline** setting is interpreted differently based on repository type.
 
-- **Azure Repos:** Azure Pipelines retains the configured number of latest runs for the [pipeline's default branch](../process/pipeline-default-branch.md) and for each protected branch of the repository. A branch that has any branch policies configured is considered to be a protected branch. 
+- **Azure Repos:** Azure Pipelines retains the configured number of latest runs for the [pipeline's default branch](../process/pipeline-default-branch.md) and for each protected branch in the repository. A protected branch is any branch with branch policies configured.
  
-    As an example, consider a repository with two branches, `main` and `release`. Imagine the `pipeline's default branch` is the `main` branch, and the `release` branch has a branch policy, making it a protected branch. In this case, if you configured the policy to retain three runs, then both the latest three runs of `main` and the latest three runs of the `release` branch are retained. In addition, the latest three runs of this pipeline (irrespective of the branch) are also retained. 
+  For example, consider a repository with two branches: `main` and `release`. If the pipeline default branch is `main` and `release` has a branch policy, then `release` is treated as a protected branch. If you configure retention to keep three runs, Azure Pipelines keeps the latest three runs for `main`, the latest three runs for `release`, and the latest three runs for the pipeline overall (regardless of branch).
 
-    To clarify this logic further, let us say the list of runs for this pipeline is as follows, with the most recent run at the top. The table shows which runs will be retained if you have configured to retain the latest three runs (ignoring the effect of the number of days setting):
+  The following example assumes the most recent run is listed first. It shows which runs are retained when you configure retention to keep the latest three runs (ignoring the days-based setting):
 
     | Run # | Branch | Retained / Not retained | Why? |
     |-------|--------|-------------------------|------|
@@ -105,7 +103,7 @@ The setting for number of recent runs to keep for each pipeline requires a littl
 
 ::: moniker range="<=azure-devops"
 
-The following information is deleted when a run is deleted:
+When a run is deleted, the following data is removed:
 
 * Logs
 * All pipeline and build artifacts 
@@ -115,15 +113,13 @@ The following information is deleted when a run is deleted:
 * Run metadata
 * Source labels (TFVC) or tags (Git)
 
-Universal packages, NuGet, npm, and other packages are not tied to pipelines retention. 
+Universal Packages, NuGet, npm, and other packages aren't governed by pipeline run retention.
 
 ::: moniker-end
 
 ### When are runs deleted
 
 ::: moniker range="<=azure-devops"
-
-Your retention policies are processed once a day. The time that the policies get processed variables because we spread the work throughout the day for load-balancing purposes. There is no option to change this process.
 
 A run is deleted if all of the following conditions are true:
 
@@ -132,19 +128,21 @@ A run is deleted if all of the following conditions are true:
 - It is not marked to be retained indefinitely
 - It is not retained by a release
 
+Retention policies are processed once per day. Processing time varies because the work is distributed throughout the day for load balancing, and this schedule can't be changed.
+
 ::: moniker-end
 
 ::: moniker range="azure-devops"
 
 ### Automatically set retention lease on pipeline runs
 
-Retention leases are used to manage the lifetime of pipeline runs beyond the configured retention periods. Retention leases can be added or deleted on a pipeline run by calling the [Lease API](/rest/api/azure/devops/build/leases). This API can be invoked within the pipeline using a script and using [predefined variables](../build/variables.md) for runId and definitionId.
+Retention leases let you extend or control the lifetime of pipeline runs beyond configured retention periods. You can add or delete leases for a pipeline run by using the [Lease API](/rest/api/azure/devops/build/leases). You can call this API from within a pipeline by using a script and [predefined variables](../build/variables.md) for `runId` and `definitionId`.
 
-A retention lease can be added on a pipeline run for a specific period. For example, a pipeline run which deploys to a test environment can be retained for a shorter duration while a run deploying to production environment can be retained longer.
+You can set a lease for a specific duration. For example, a run that deploys to a test environment can be retained for a shorter period, while a run that deploys to production can be retained longer.
 
 ### Manually set retention lease on pipeline runs
 
-You can manually set a pipeline run to be retained using the [More actions menu](../create-first-pipeline.md#pipeline-run-more-actions-menu) on the [Pipeline run details](../create-first-pipeline.md#view-pipeline-run-details) page.
+You can manually retain a pipeline run from the [More actions menu](../create-first-pipeline.md#pipeline-run-more-actions-menu) on the [Pipeline run details](../create-first-pipeline.md#view-pipeline-run-details) page.
 
 ![manually retain a run](media/manually-retain-a-run.png)
 
@@ -152,21 +150,17 @@ You can manually set a pipeline run to be retained using the [More actions menu]
 
 ::: moniker range="<=azure-devops"
 
-## Delete a run
+### Delete a run
 
-You can delete runs using the [More actions menu](../create-first-pipeline.md#pipeline-run-more-actions-menu) on the [Pipeline run details](../create-first-pipeline.md#view-pipeline-run-details) page.
+You can delete runs from the [More actions menu](../create-first-pipeline.md#pipeline-run-more-actions-menu) on the [Pipeline run details](../create-first-pipeline.md#view-pipeline-run-details) page.
+
+> [!div class="mx-imgBorder"]
+> ![delete a run](media/delete-a-run.png)
 
 > [!NOTE]
 > If any retention policies currently apply to the run, they must be removed before the run can be deleted. For instructions, see [Pipeline run details - delete a run](../create-first-pipeline.md#pipeline-run-more-actions-menu).
 
-> The product team is actively working on improving data deletion times. You might see a processing delay of multiple days when deleting data if there are multiple test points associated with your host. 
-
-  > [!div class="mx-imgBorder"]
-  > ![delete a run](media/delete-a-run.png)
-
 ::: moniker-end
-
-<a id="release"></a>
 
 ## Set release retention policies
 
