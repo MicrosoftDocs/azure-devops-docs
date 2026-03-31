@@ -106,7 +106,7 @@ Follow these steps to set up an internal feed from the same organization as an u
 
 ## Install packages from upstream
 
-The following example illustrates a scenario where *Test_Feed* has *CargoDemoFeed* configured as an upstream source. For domonstration purposes *Test_Feed* is empty and contains no packages.
+The following example illustrates a scenario where *Test_Feed* has *CargoDemoFeed* configured as an upstream source. For demonstration purposes *Test_Feed* is empty and contains no packages.
 
 When a collaborator (or higher) installs a package from *Test_Feed* that is available in the upstream *CargoDemoFeed*, Azure Artifacts copies that package into the downstream *Test_Feed* and downloads it as part of the normal `cargo install` flow. After this first-time copy, all future downloads of that package from *Test_Feed* require only **Feed Reader** (or higher) permissions, because those later downloads don't modify the downstream feed. Only the first install copies the package from upstream to downstream, so only that initial action requires elevated permissions.
 
