@@ -77,7 +77,7 @@ You can also omit the organization name from the URL. However, if you omit the o
 
 ### Toolsets
 
-Specify toolsets to restrict the tools available to the MCP server.
+Specify toolsets to restrict the tools available to the MCP server. Should not be combined with `X-MCP-Tools`.
 
 ```json
 {
@@ -135,6 +135,44 @@ Use the `X-MCP-Readonly` header to restrict the server to read-only operations. 
       "headers": {
         "X-MCP-Toolsets": "repos,wiki,wit",
         "X-MCP-Readonly": "true"
+      }
+    }
+  },
+  "inputs": []
+}
+```
+
+### Individual tools
+
+Use the `X-MCP-Tools` header to enable only specific tools. Should not be combined with `X-MCP-Toolsets`.
+
+```json
+{
+  "servers": {
+    "ado-remote-mcp": {
+      "url": "https://mcp.dev.azure.com/{organization}",
+      "type": "http",
+      "headers": {
+        "X-MCP-Tools": "core_list_projects, wit_my_work_items, wit_get_work_items_batch_by_ids"      
+      }
+    }
+  },
+  "inputs": []
+}
+```
+
+### Insiders
+
+As we experiment and introduce new tools and updates to existing ones, you can get early access to these changes by using the `X-MCP-Insiders` header.
+
+```json
+{
+  "servers": {
+    "ado-remote-mcp": {
+      "url": "https://mcp.dev.azure.com/{organization}",
+      "type": "http",
+      "headers": {
+        "X-MCP-Insiders": "true"
       }
     }
   },
