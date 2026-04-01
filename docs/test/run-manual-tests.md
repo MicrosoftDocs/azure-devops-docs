@@ -21,23 +21,19 @@ Use Microsoft Test Runner to run manual tests and record results for each test s
 
 During a test run, you can capture screenshots, record actions, and create or update bugs directly from Test Runner with test steps, screenshots, and comments automatically included.
 
+## Test points
+
 [!INCLUDE [test-point-definition](includes/test-point-definition.md)]
 
 ## Run options
 
-Azure Test Plans provides the following runners for manual tests:
-
-| Runner | Best for | Details |
-|--------|----------|---------|
-| **Web browser runner** | Web and desktop applications | Runs in any supported browser. Supports screenshots, action logs, and screen recordings. Recommended for all testing. |
-| **Test Runner desktop client** (retiring) | Desktop applications | Downloadable Windows x64 client. [Download Test Runner desktop client](https://aka.ms/ATPTestRunnerDownload). |
+The web browser runner runs in any supported browser and supports screenshots, action logs, and screen recordings. It works for both web and desktop applications.
 
 [!INCLUDE [retirement-test-runner-client-windows](includes/retirement-test-runner-client-windows.md)]
 
 To access run options, in the **Execute** tab, select a test, and then select **Run with options**. The **Run with options** dialog lets you:
 
 - Select a specific build to test against (see [Run tests for a build](#run-tests-for-a-build))
-- Choose the web browser runner or the Test Runner desktop client (retiring)
 - Run automated tests by using a release stage (see [Run automated tests from test plans](run-automated-tests-from-test-hub.md))
 
 ## Prerequisites
@@ -229,7 +225,7 @@ tcm run /list /collection:teamprojectcollectionurl /teamproject:project
 
 **Example**
 
-The following command lists the test runs defined for the *Fabrikam Fiber* project hosted in the *fabrikamprime* organization. The **ID** and **Title** correspond to the work item ID and title defined for the test run. For example, test run *1000052* is titled *Test Plan for Cycle 1 (Manual)*.  
+The following command lists the test runs defined for the *Fabrikam Fiber* project hosted in the *fabrikamprime* organization. The **ID** and **Title** correspond to the work item ID and title defined for the test run. For example, test run `1000052` is titled *Test Plan for Cycle 1 (Manual)*.  
 
 ```tcm 
 tcm run /list /collection:https://fabrikamprime.visualstudio.com /teamproject:"Fabrikam Fiber"
@@ -276,9 +272,9 @@ tcm run /create /title:title /planid:id /collection:CollectionURL /teamproject:p
 
 **Example**
 
-The following command creates a test run named **MyTestRun** in the test plan with **ID** *77*. The run uses the test suite with **ID** *161* and the test configuration with **ID** *9*. The run is defined for the *Fabrikam Fiber* project hosted in the *fabrikamprime* organization.
+The following command creates a test run named **MyTestRun** in the test plan with **ID** `77`. The run uses the test suite with **ID** `161` and the test configuration with **ID** `9`. The run is defined for the *Fabrikam Fiber* project hosted in the *fabrikamprime* organization.
 
-In this example, the test run has an **ID** of *1000082*.  
+In this example, the test run has an **ID** of `1000082`.  
 
 ```tcm 
 tcm run /create /title:MyTestRun /planid:77 /collection:https://fabrikamprime.visualstudio.com /teamproject:"Fabrikam Fiber" /suiteid:161 /configid:9
@@ -305,7 +301,7 @@ tcm run /execute /id:id /collection:teamprojectcollectionurl /teamproject:projec
 
 **Example**
 
-The following command starts a test run for the **ID** *1000082* for the *Fabrikam Fiber* project hosted in the *fabrikamprime* organization. The results appear in your CLI window.
+The following command starts a test run for the **ID** `1000082` for the *Fabrikam Fiber* project hosted in the *fabrikamprime* organization. The results appear in your CLI window.
 
 ```tcm 
 tcm run /execute /id:1000082 /collection:https://fabrikamprime.visualstudio.com /teamproject:"Fabrikam Fiber"
@@ -338,7 +334,7 @@ tcm run /abort /id:id /collection:teamprojectcollectionurl /teamproject:project 
 
 **Example**
 
-The following command stops the test run with the **ID** *1000082* for the *Fabrikam Fiber* project hosted in the *fabrikamprime* organization. The results confirm the **ID** and **Title** of the canceled run.
+The following command stops the test run with the **ID** `1000082` for the *Fabrikam Fiber* project hosted in the *fabrikamprime* organization. The results confirm the **ID** and **Title** of the canceled run.
 
 ```tcm 
 tcm run /abort /id:1000082 /collection:https://fabrikamprime.visualstudio.com /teamproject:"Fabrikam Fiber"
@@ -365,7 +361,7 @@ tcm run /delete /id:id [/noprompt] /collection:teamprojectcollectionurl /teampro
 
 **Example**
 
-The following command deletes the test run with the **ID** *1000082* for the *Fabrikam Fiber* project hosted in the *fabrikamprime* organization. The user is prompted to confirm that they want to delete the specified test run and the result is provided.
+The following command deletes the test run with the **ID** `1000082` for the *Fabrikam Fiber* project hosted in the *fabrikamprime* organization. The user is prompted to confirm that they want to delete the specified test run and the result is provided.
 
 ```tcm
 tcm run /delete /id:1000082 /collection:https://fabrikamprime.visualstudio.com /teamproject:"Fabrikam Fiber"
@@ -394,7 +390,7 @@ tcm run /export /id:id /resultsfile:path /collection:teamprojectcollectionurl /t
 
 **Example**
 
-The following command exports the test run with the **ID** *1000082* for the *Fabrikam Fiber* project hosted in the *fabrikamprime* organization to *c:\temp\ResultsForDeveloper.trx*.
+The following command exports the test run with the **ID** `1000082` for the *Fabrikam Fiber* project hosted in the *fabrikamprime* organization to `c:\temp\ResultsForDeveloper.trx`.
 
 ```tcm
 tcm run /export /id:1000082 /resultsfile:"c:\temp\ResultsForDeveloper.trx" /collection:https://fabrikamprime.visualstudio.com /teamproject:"Fabrikam Fiber"
@@ -433,7 +429,7 @@ tcm run /publish /suiteid:id /configid:id /resultowner:owner /resultsfile:path
 
 **Example**
 
-The following command publishes a test run for the test suite with **ID** *161* and test configuration with **ID** *9* and reassigns the owner. This command updates the existing test points for the test cases in the test suite that pairs with this configuration and publishes the results in the specified *.trx* file. The command assigns any failed tests in the test run to the specified user.
+The following command publishes a test run for the test suite with **ID** `161` and test configuration with **ID** `9` and reassigns the owner. This command updates the existing test points for the test cases in the test suite that pairs with this configuration and publishes the results in the specified `.trx` file. The command assigns any failed tests in the test run to the specified user.
 
 ```tcm 
 tcm run /publish /suiteid:167 /configid:9 /resultowner:"Jamal Hartnett" /resultsfile:"c:\temp\ResultsForDeveloper.trx" /assignfailurestouser:"Chuck Reinhart" /collection:https://fabrikamprime.visualstudio.com /teamproject:"Fabrikam Fiber"
@@ -448,14 +444,6 @@ tcm run /publish /suiteid:167 /configid:9 /resultowner:"Jamal Hartnett" /results
 ### Q: How do I control how long I keep my test data?
 
 **A:** See [Set test retention policies](how-long-to-keep-test-results.md).
-
-### Q: Where can I download the Test Runner desktop client?
-
-**A:** [!INCLUDE [retirement-test-runner-client-windows](includes/retirement-test-runner-client-windows.md)]
-
-Download the [Test Runner desktop client](https://aka.ms/ATPTestRunnerDownload). The desktop client supports only Windows x64.
-
-If your organization uses Microsoft Entra Conditional Access, the desktop client might not work. For more information, see [Conditional access common decisions](/entra/identity/conditional-access/overview#common-decisions). Use the web runner in this scenario.
 
 ### Q: Can I run tests offline and then import the results?
 
@@ -472,4 +460,3 @@ If your organization uses Microsoft Entra Conditional Access, the desktop client
 - [Collect diagnostic data while testing](collect-diagnostic-data.md)
 - [Exploratory testing with the Test & Feedback extension in Connected mode](connected-mode-exploratory-testing.md)
 - [Run automated tests from test plans](run-automated-tests-from-test-hub.md)
-
