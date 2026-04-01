@@ -22,6 +22,10 @@ The following section describes new features in development for Managed DevOps P
 
 * **Container agents**: We're adding support for provisioning a container and starting the agent inside the container. **Planned for late 2026.**
 
+## April 2026
+
+* ****Azure Pipelines Generation 2 images**: Managed DevOps Pools now offers [Generation 2](/azure/virtual-machines/generation-2) versions of Azure Pipeline images, and recommends that you migrate your pools that use the original Generation 1 versions of these images to the Generation 2 versions. For more information, see [Azure Pipelines Generation 2 images](./configure-images.md#azure-pipelines-generation-2-images).
+
 ## January 2026
 
 * **Windows Server 2019 Azure Pipelines image removed**: As part of our image lifecycle management, we've removed the Windows Server 2019 image from [Azure Pipelines images](./configure-images.md#azure-pipelines-images). For more information, see [Managed DevOps Pools image lifecycle](./configure-images.md#image-lifecycle).

@@ -323,16 +323,30 @@ Each image includes the following installed software:
 | Azure Pipelines - Ubuntu 24.04 | [Included software](https://github.com/actions/runner-images/blob/main/images/ubuntu/Ubuntu2404-Readme.md) |
 | Azure Pipelines - Ubuntu 22.04 | [Included software](https://github.com/actions/runner-images/blob/main/images/ubuntu/Ubuntu2204-Readme.md) |
 
-[!INCLUDE [image-deprecation](./includes/image-deprecation.md)]
-
 ### Azure Pipelines Generation 2 images
 
 Managed DevOps Pools now offers [Generation 2](/azure/virtual-machines/generation-2) versions of Azure Pipeline images, and recommends that you migrate your pools that use the original Generation 1 versions of these images to the Generation 2 versions.
+
+To test your pool using the new Generation 2 images, you can add a Generation 2 image to your pool while keeping the Generation 1 image.
+
+* If your pool has only a single Generation 1 Azure Pipelines image, [add the corresponding Generation 2 image](#select-your-pools-image) and place it first in the list of images for your pool.
+* If your pool has multiple images
+
+To migrate your pools to use the Generation 2 Azure Pipelines images:
+
+1. Verify that your pool's [agent size](./configure-pool-settings.md#agent-size) supports Generation 2 images. For a list of supported Generation 2 VM sizes, see [Generation 2 VM sizes](/azure/virtual-machines/generation-2#generation-2-vm-sizes). If your pool's agent size isn't supported for Generation 2 images, change the agent size of your pool to a size that supports Generation 2 images.
+1. Update your pool to replace the Generation 1 image with the corresponding Generation 2 image. The `WellKnownImageName` values for Generation 2 images are the same as the Generation 1 images, with `-g2` appended to the end. For example, if your pool uses the `windows-2025` image, update it to use the `windows-2025-g2` image. For the list of `WellKnownImageName` values for Azure Pipelines images, see [list of predefined aliases for Azure Pipelines images](#azure-pipelines-image-predefined-aliases).
+1. If your pipelines use [demands](#use-demands-to-specify-an-image) to specify a particular Azure Pipelines image, update the `demands` section to use the alias for the Generation 2 image. For example, if your pipeline has a demand for `- ImageOverride -equals windows-2025`, update it to `- ImageOverride -equals windows-2025-g2`.
+
+   Instead of updating your pipelines
+
 
 > [!IMPORTANT]
 > Generation 2 VM images are supported for the VM sizes listed in [Generation 2 VM sizes](/azure/virtual-machines/generation-2#generation-2-vm-sizes). If your pool uses a VM size that doesn't support Generation 2 images, you must [change the VM size](./configure-pool-settings.md#agent-size) of your pool to use Generation 2 images.
 
 
+
+[!INCLUDE [image-deprecation](./includes/image-deprecation.md)]
 
 ## Selected marketplace images
 
