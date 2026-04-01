@@ -265,58 +265,28 @@ Pull request annotations also require an Advanced Security scan on your default 
 
 ## Set up pull request status checks
 
-Advanced Security status checks allow you to block pull requests from being merged when security vulnerabilities are detected. These status checks evaluate dependency scanning, code scanning, and secret scanning results and post a status to your pull request based on the findings.
+Advanced Security status checks allow you to block pull requests from being merged when security vulnerabilities are detected. These status checks evaluate dependency scanning, code scanning, and secret scanning results and post a status to your pull request based on the findings. Status checks post after the build completes and SARIF results upload successfully.
 
-There are two types of status checks available:
+There are two status checks available:
 
-* **Block on all critical and high vulnerabilities (Absolute check)**: This status check (genre: `AdvancedSecurity`, name: `AllHighAndCritical`) fails when the repository has any open critical or high severity vulnerability detected by Advanced Security, whether the vulnerability is pre-existing or newly introduced. Use this check to enforce that all critical and high severity alerts across the repository are resolved before merging.
-* **Block on new critical and high vulnerabilities (Delta check)**: This status check (genre: `AdvancedSecurity`, name: `NewHighAndCritical`) fails only when the pull request introduces new critical or high severity vulnerabilities. Pre-existing vulnerabilities in the repository don't cause this check to fail. Use this check to prevent new vulnerabilities from being introduced without requiring all existing vulnerabilities to be fixed first.
-
-> [!NOTE]
-> If Advanced Security is not enabled for the repository, status checks use **fail-open** behavior — they won't block the pull request. Status checks only actively gate pull requests when Advanced Security is enabled and configured.
-
-### How status checks work
-
-Status checks are evaluated **after the CI build completes successfully** and the SARIF results are uploaded. Keep the following timing requirements in mind:
-
-* The pipeline containing your Advanced Security tasks (dependency scanning, code scanning) must **succeed** — status checks aren't posted from failed builds.
-* The pull request must use the **current pipeline definition** that includes the Advanced Security tasks. If the pipeline definition has been removed or changed to exclude these tasks, status checks won't be posted.
-* When new security findings are detected in a pull request, Advanced Security also creates **PR comments** on the relevant code lines. These comments are automatically resolved when the underlying alert is fixed.
-
-### Prerequisites for status checks
-
-> [!IMPORTANT]
-> **Enable Wait For Processing**: If your pipeline contains **multiple build tasks** (for example, multiple CodeQL initialization or publish steps), you must set **"Enable Wait For Processing"** to `true` on the CodeQL Build and Publish tasks. This setting ensures that status checks are evaluated synchronously during the build and is **required by design** for multi-task pipelines. Without this setting, status checks may not be posted correctly.
-
-> [!WARNING]
-> **Do not modify Advanced Options in the status policy configuration.** The following changes in **Status Policy > Advanced options** will break status check posting:
->
-> * **Changing the authorized identity** away from the default Advanced Security identity — the modified identity won't have permission to post status checks.
-> * **Requiring an iteration ID** — iteration ID is not available in SARIF data, so status checks will fail to post.
->
-> Leave these Advanced Options at their default values.
+* **Block on all critical and high vulnerabilities** (`AdvancedSecurity/AllHighAndCritical`): Fails when the repository has any open critical or high severity vulnerability detected by Advanced Security, whether the vulnerability is pre-existing or newly introduced. Use this check to enforce that all critical and high severity alerts across the repository are resolved before merging.
+* **Block on new critical and high vulnerabilities** (`AdvancedSecurity/NewHighAndCritical`): Fails only when the pull request introduces new critical or high severity vulnerabilities. Pre-existing vulnerabilities in the repository don't cause this check to fail. Use this check to prevent new vulnerabilities from being introduced without requiring all existing vulnerabilities to be fixed first.
 
 ### Configure status checks as branch policies
 
-To require Advanced Security status checks before pull requests can be merged, configure them as branch policies. You can set them per repository or for a project. 
+To require Advanced Security status checks before pull requests can be merged, configure them as branch policies. You can set them per repository or for a project. If your pipeline has multiple build tasks, set **Enable Wait For Processing** to `true` on CodeQL Build and Publish tasks.
 
 1. Go to **Project settings** > **Repos**.
 1. Optionally, select the repository you want to configure.
 1. Select **Policies** and then select the branch you want to protect. By default, the default branch of your repositories will be protected.
 1. Under **Status checks**, select **+** to add a new status check policy.
-1. In the **Status to check** menu, enter **AdvancedSecurity** for the Genre and **AllHighAndCritical** or **NewHighAndCritical** for the Name.
-1. Choose the **Policy requirement** (required or optional) and set any other desired options.
+1. In the **Status to check** menu, enter **AdvancedSecurity** for the Genre and **AllHighAndCritical** or **NewHighAndCritical** for the Name. (These options appear after the first successful pipeline run with Advanced Security tasks.)
+1. Choose the **Policy requirement** (required or optional) and set any other desired options. Leave **Advanced Options** at their defaults — changing the authorized identity or requiring an iteration ID prevents status checks from posting.
 1. Select **Save**.
 
 :::image type="content" source="media/adv-sec-status-checks.png" lightbox="media/adv-sec-status-checks.png" alt-text="Screenshot of adding an Advanced Security status check."::: 
 
 For more information on configuring status check policies, see [Status checks](../git/branch-policies.md#status-checks).
-
-> [!TIP]
-> Advanced Security status checks require Advanced Security to be enabled and an Advanced Security scan to run on your pull request branch. Make sure you have a build validation policy configured with dependency scanning and/or code scanning tasks in your pipeline. For more information, see [Build validation](../git/branch-policies.md#build-validation).
-
-> [!TIP]
-> **Status checks only appear in the branch policy dropdown after they have been used at least once.** If you don't see `NewHighAndCritical` in the dropdown, run a pipeline with Advanced Security tasks on a pull request first. The status check will appear in the dropdown after the first successful run.
 
 To disable Advanced Security, any alerts and state of alerts get retained in the Advanced Security tab for the next time you re-enable Advanced Security for your repository.
 
