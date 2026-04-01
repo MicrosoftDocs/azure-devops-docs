@@ -9,7 +9,7 @@ ms.author: pliaros
 ms.reviewer: chcomley
 author: rohit-batra
 monikerRange: '<= azure-devops'
-ms.date: 11/25/2025
+ms.date: 04/01/2026
 ms.update-cycle: 1095-days
 ---
 
@@ -29,15 +29,15 @@ Azure Test Plans provides the following runners for manual tests:
 
 | Runner | Best for | Details |
 |--------|----------|---------|
-| **Web browser runner** | Web applications | Runs in any supported browser. Supports screenshots, action logs, and screen recordings. |
-| **Test Runner desktop client** | Desktop applications | Downloadable Windows x64 client. Supports the same diagnostic data capture as the web runner. [Download Test Runner desktop client](https://aka.ms/ATPTestRunnerDownload). |
+| **Web browser runner** | Web and desktop applications | Runs in any supported browser. Supports screenshots, action logs, and screen recordings. Recommended for all testing. |
+| **Test Runner desktop client** (retiring) | Desktop applications | Downloadable Windows x64 client. [Download Test Runner desktop client](https://aka.ms/ATPTestRunnerDownload). |
 
 [!INCLUDE [retirement-test-runner-client-windows](includes/retirement-test-runner-client-windows.md)]
 
 To access run options, in the **Execute** tab, select a test, and then select **Run with options**. The **Run with options** dialog lets you:
 
 - Select a specific build to test against (see [Run tests for a build](#run-tests-for-a-build))
-- Choose between the web browser runner and the Test Runner desktop client
+- Choose the web browser runner or the Test Runner desktop client (retiring)
 - Run automated tests by using a release stage (see [Run automated tests from test plans](run-automated-tests-from-test-hub.md))
 
 ## Prerequisites
@@ -50,7 +50,7 @@ To access run options, in the **Execute** tab, select a test, and then select **
 
 ## Run tests for web apps
 
-1. From the web portal, open your project and select **Test Plans** > **Test plans**. If you haven't created test cases yet, see [Create test cases](create-test-cases.md#test-cases).
+1. From the web portal, open your project and select **Test Plans** > **Test plans**. If you didn't create test cases yet, see [Create test cases](create-test-cases.md#test-cases).
 
 1. Select **Mine** or **All**, or use **Filter by title** to find your test plan and select it. Select the **Execute** tab.
 
@@ -110,7 +110,7 @@ You can see any bugs reported during your test session.
 
 ### Add to an existing bug
 
-Instead of creating a bug, you can update an existing bug with the failure details. Select **Add to existing bug** from the **Create bug** drop-down menu.
+Instead of creating a new bug, update an existing bug with the failure details. Select **Add to existing bug** from the **Create bug** drop-down menu.
 
 ![Screenshot shows Test Runner with Add to existing bug selected](media/run-manual-tests/find-existing-bug.png)
 
@@ -122,7 +122,7 @@ Instead of creating a bug, you can update an existing bug with the failure detai
 
    ![Screenshot shows the result of running test cases, with outcomes of Active, Failed, and Passed displayed.](media/run-manual-tests/test-case-outcome.png)
    
-   Tests that haven't been run yet show a state of **Active**. To rerun a test, reset its state to **Active**.
+   Tests that you didn't run yet show a state of **Active**. To run a test again, reset its state to **Active**.
 
 1. To view bugs filed during a test, open the test case work item and check the **Related Work** section for child bug links.
 
@@ -141,7 +141,7 @@ You can use the web browser runner to test desktop applications. Run Test Runner
 
 1. Follow the steps in [Run tests for web apps](#run-tests-for-web-apps) to open your test plan in the **Execute** tab.
 
-1. Select one or more tests, then select **Run for web application**.
+1. Select one or more tests, and then select **Run for web application**.
 
 1. Open your desktop app and follow the test steps, marking each step as passed or failed in Test Runner.
 
@@ -154,7 +154,7 @@ The web runner supports screenshots, action logs, and screen recordings for desk
 
 You can run all the tests in a test suite at once.
 
-Select a test suite and select **Run for web application** or **Run for desktop application** to run all the active tests.
+Select a test suite and select **Run for web application** to run all the active tests.
 
 ![Screenshot shows how to select and run all active tests in a test suite.](media/run-manual-tests/run-test-test-suite.png)
 
@@ -171,71 +171,41 @@ To run tests against a specific build, choose the build from the run options.
    ![Screenshot shows the Run with options dialog box with a build selected.](media/run-manual-tests/run-test-select-build.png)
 
    > [!NOTE]
-   > The selected build must be from the project in which the tests are defined.
+   > The selected build must be from the same project as the tests.
 
-Select a build for the following options:
-
-- Manual tests that use the web browser-based runner
-- Automated tests that use the release stage
-
-The dialog box offers different fields depending on which option you select.
-For more information, see [Run options](#run-options).
-
-Any bug you file during the run associates with the selected build.
-The test outcome publishes against that build.
+   Any bugs you file during the run are associated with the selected build, and the test outcome is published against that build.
 
 ## Modify a test step during a test run
 
-Fix problems with your test steps while the test is still running.
-Select the **Edit test step** icon.
-
-![Screenshot shows how to select the edit icon to edit test steps.](media/run-manual-tests/edit-icon-test-run.png)
-
-You can insert, reorder, or delete steps.
-You can also edit the text itself.
+You can fix test steps while the test is still running. Select the **Edit test step** icon to insert, reorder, delete, or edit steps.
 
 ![Screenshot shows the tool to edit test steps when you run a test.](media/run-manual-tests/edit-test-step.png)
 
-## Capture rich diagnostic data
+## Capture diagnostic data
 
-While running your tests, you can add screenshots, capture actions as a log, and record video or voice.
+While running tests, you can capture screenshots, action logs, and screen recordings. For detailed steps, see [Collect diagnostic data](collect-diagnostic-data.md).
 
-### Add a screenshot
+### Capture a screenshot
 
-Add a screenshot to the test results while running a test.
-
-Use the web runner to take screenshots of the web app while testing.
-For desktop app testing, use the [Test Runner desktop client](https://aka.ms/ATPTestRunnerDownload).
+Use the web runner to take screenshots of the app while testing.
 
 ![Screenshot shows the button for capturing a screenshot during a test.](media/run-manual-tests/test-capture-screen.png)
 
-For more information, see [Collect diagnostic data](collect-diagnostic-data.md#web-screenshot).
+### Capture an action log
 
-### Capture actions from a test
-
-Capture your actions on the application as a log.
-
-Use the web runner to capture your actions on the web app as image logs while testing.
-For desktop app testing, use the [Test Runner desktop client](https://aka.ms/ATPTestRunnerDownload).
+Use the web runner to capture your actions on the app as image logs while testing.
 
 ![Screenshot shows the button for capturing an image action log from the app.](media/run-manual-tests/test-capture-action.png)
 
-For more information, see [Collect diagnostic data](collect-diagnostic-data.md#web-log).
-
-### Capture screen recordings of your app being tested
-
-Capture screen recordings of your app during testing.
+### Capture a screen recording
 
 Use the web runner to capture screen recordings of your web and desktop apps while testing.
-For desktop app testing, use the [Test Runner desktop client](https://aka.ms/ATPTestRunnerDownload).
 
 ![Screenshot shows the button for capturing a screen recording from the app.](media/run-manual-tests/test-capture-screen-recording.png)
 
-For more information, see [Collect diagnostic data](collect-diagnostic-data.md#web-recording).
-
 ## Run tests with TCM
 
-You can run tests that are part of a test plan using the Test Case Management (TCM) command-line tool. This tool lets you create and start a test run, and then manage all your existing test runs. Use the tcm commands documented here to accomplish these tasks.
+You can run tests that are part of a test plan by using the Test Case Management (TCM) command-line tool. This tool lets you create and start a test run, and then manage all your existing test runs. Use the tcm commands documented here to accomplish these tasks.
 
 [List test runs](#list-test-runs) | [Create test runs](#create-test-runs) | [Execute test runs](#execute-test-runs) | [Abort test runs](#abort-test-runs) | [Delete test runs](#delete-test-runs) | [Export test runs](#export-test-runs) | [Publish test runs](#publish-test-runs) 
 
@@ -266,13 +236,13 @@ tcm run /list /collection:https://fabrikamprime.visualstudio.com /teamproject:"F
 
 Id        Title                              Owner               Date Completed
 --------- ---------------------------------- ------------------- -----------
-1000006   Sprint 2 (Manual)                  Thomas Margand      11/5/2021
-1000032   33 : Change initial view (Manual)  Danielle Brasseur   11/11/2021
-1000040   Sprint 2 (Manual)                  Thomas Margand      11/16/2021
-1000042   Sprint 3 (Manual)                  Thomas Margand      11/16/2021
-1000046   Special testing (Manual)           Nicoletta Guibord   11/18/2021
-1000052   Test Plan for Cycle 1 (Manual)     Bukhosi Bhengu      12/1/2021
-1000060   Game Shopping (Manual)             Bukhosi Bhengu      12/6/2021
+1000006   Sprint 2 (Manual)                  Jamal Hartnett      1/5/2026
+1000032   33 : Change initial view (Manual)  Christie Church     1/11/2026
+1000040   Sprint 2 (Manual)                  Jamal Hartnett      1/16/2026
+1000042   Sprint 3 (Manual)                  Jamal Hartnett      1/16/2026
+1000046   Special testing (Manual)           Francis Totten      1/18/2026
+1000052   Test Plan for Cycle 1 (Manual)     Chuck Reinhart      2/1/2026
+1000060   Game Shopping (Manual)             Chuck Reinhart      2/6/2026
 ```
 
 <a id="create-test-runs"></a> 
@@ -466,112 +436,26 @@ tcm run /publish /suiteid:id /configid:id /resultowner:owner /resultsfile:path
 The following command publishes a test run for the test suite with **ID** *161* and test configuration with **ID** *9* and reassigns the owner. This command updates the existing test points for the test cases in the test suite that pairs with this configuration and publishes the results in the specified *.trx* file. The command assigns any failed tests in the test run to the specified user.
 
 ```tcm 
-tcm run /publish /suiteid:167 /configid:9 /resultowner:"Thomas Margand" /resultsfile:"c:\temp\ResultsForDeveloper.trx" /assignfailurestouser:"Bukhosi Bhengu" /collection:https://fabrikamprime.visualstudio.com /teamproject:"Fabrikam Fiber"
+tcm run /publish /suiteid:167 /configid:9 /resultowner:"Jamal Hartnett" /resultsfile:"c:\temp\ResultsForDeveloper.trx" /assignfailurestouser:"Chuck Reinhart" /collection:https://fabrikamprime.visualstudio.com /teamproject:"Fabrikam Fiber"
 ```
 
 ## Frequently asked questions
 
-Here are some common questions.
+### Q: Why can't I preview some test run attachments?
 
-### Q: How do I run a test again?
-
-**A:** Select a test and choose **Run**.
-
-### Q: Can I run all the tests in a test suite together?
-
-**A:** Yes, select a test suite and choose **Run**.
-This option runs all the active tests in the test suite.
-If you didn't run a test yet, its state is active.
-You can reset the state of a test to active if you want to run it again.  
-
-![Select and run all active tests in a test suite](media/run-manual-tests/RunTestsRunSuite.png)
-
-### Q: Can I choose a build to run tests against?
-
-**A:** Yes, choose **Run** and then select **Run with options**.
-
-![Starting a test with options](media/shared/collect-diagnostic-data-16.png)
-
-Select the build you want from the drop-down list.
-
-![Selecting the build to include a link to in the results](media/run-manual-tests/select-build-for-webrunner.png) 
-
-Any bug you file during the run automatically associates with the selected build.
-The test outcome is published against that build.
-
-> [!NOTE]
-> The selected build must come from the project where the tests are defined.
-
-### Q: Can I fix my test steps while I'm running a test?
-
-**A:** Yes, if you have Azure Test Plans for Azure DevOps.
-You can insert, move, or delete steps.
-Or you can edit the text itself.
-Use the edit icon next to the test step number.
-
-![Select the edit icon to edit test steps](media/run-manual-tests/RunTest_11.png) 
-
-The tool to edit the test steps is shown.
-
-![Fix test steps when you run a test](media/run-manual-tests/RunTest_9.png)
-
-### Q: Can I add a screenshot to the test results when I run a test?
-
-**A:** Use the web runner to take screenshots of the web app while testing.
-For desktop app testing, you can download and use the [Test Runner desktop client](https://aka.ms/ATPTestRunnerDownload).
-
-![Capturing a screenshot from the app](media/shared/collect-diagnostic-data-01.png)
-
-For more information, see [Collect diagnostic data](collect-diagnostic-data.md#web-screenshot).
-
-### Q: Can I capture my actions on the app as a log?
-
-**A:** Use the web runner to capture your actions on the web app as image logs while testing.
-For desktop app testing, you can download and use the [Test Runner desktop client](https://aka.ms/ATPTestRunnerDownload).
-
-![Capturing an image action log from the app](media/shared/collect-diagnostic-data-06.png)
-
-For more information, see [Collect diagnostic data](collect-diagnostic-data.md#web-log).
-
-### Q: Can I capture screen recordings of my app?
-
-**A:** Use the web runner to capture screen recordings of your web and desktop apps while testing.
-For desktop app testing, download and use the [Test Runner desktop client](https://aka.ms/ATPTestRunnerDownload).
-
-![Capturing a screen recording from the app](media/shared/collect-diagnostic-data-11.png)
-
-For more information, see [Collect diagnostic data](collect-diagnostic-data.md#web-recording).
-
-### Q: Some of the attachments for the test run don't show the preview option. Why?
-
-**A:** You can preview only files with `.txt` and `.log` extensions. Select the preview option for `.txt` or `.log` files, and another UI opens with the drop-down field showing all the attachments for the test run. If you select a file with an extension type other than `.txt` or `.log`, the following message displays: "You can only preview files with txt and log extensions, click here to download the attachment."
+**A:** You can preview only `.txt` and `.log` files. For other file types, download the attachment.
 
 ### Q: How do I control how long I keep my test data?
 
-**A:** For more information, see [Set test retention policies](how-long-to-keep-test-results.md).
+**A:** See [Set test retention policies](how-long-to-keep-test-results.md).
 
-### Q: Where can I download the Test Runner client?
+### Q: Where can I download the Test Runner desktop client?
 
-**A:** Download the [Test Runner desktop client](https://aka.ms/ATPTestRunnerDownload).
+**A:** [!INCLUDE [retirement-test-runner-client-windows](includes/retirement-test-runner-client-windows.md)]
 
-### Q: What are the supported operating systems for the Test Runner client?
+Download the [Test Runner desktop client](https://aka.ms/ATPTestRunnerDownload). The desktop client supports only Windows x64.
 
-**A:** The Test Runner desktop client currently supports only the Windows x64 platform.
-
-### Q: I'm observing test run failures when using the Azure Test Runner desktop client.
-
-**A:** Make sure you're using the latest version of Test Runner desktop client. Download the [Test Runner desktop client](https://aka.ms/ATPTestRunnerDownload).
-
-### Q: Does the Azure Test Runner desktop client work on devices with Microsoft Entra Conditional Access enabled?
-
-**A:** Azure Test Runner might not work if your organization uses a conditional access policy via Microsoft Entra. For more information, see [Conditional access common decisions](/entra/identity/conditional-access/overview#common-decisions). This experience is a known limitation and our recommendation is to use web runner in this scenario.
-
-### Q: Can I opt out of telemetry for the Test Runner client?
-
-**A:** No.
-The Test Runner desktop client doesn't collect any user-identifiable data.
-It doesn't provide an opt-out mechanism.
-For more information, see the [Microsoft Privacy policy](https://privacy.microsoft.com/PrivacyStatement).
+If your organization uses Microsoft Entra Conditional Access, the desktop client might not work. For more information, see [Conditional access common decisions](/entra/identity/conditional-access/overview#common-decisions). Use the web runner in this scenario.
 
 ### Q: Can I run tests offline and then import the results?
 
