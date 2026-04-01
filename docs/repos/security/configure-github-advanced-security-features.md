@@ -265,12 +265,12 @@ Pull request annotations also require an Advanced Security scan on your default 
 
 ## Set up pull request status checks
 
-Advanced Security status checks allow you to block pull requests from being merged when security vulnerabilities are detected. These status checks evaluate dependency scanning, code scanning, and secret scanning results and post a status to your pull request based on the findings. Status checks post after the build completes and SARIF results upload successfully.
+Advanced Security status checks allow you to block pull requests from being merged when security vulnerabilities are detected. These status checks evaluate dependency scanning, code scanning, and secret scanning results and post a status to your pull request based on the findings. The `NewHighAndCritical` check posts after the build completes and SARIF results upload successfully; the `AllHighAndCritical` check evaluates existing alerts and does not require a build.
 
 There are two status checks available:
 
-* **Block on all critical and high vulnerabilities** (`AdvancedSecurity/AllHighAndCritical`): Use this check to enforce that all critical and high severity alerts across the repository are resolved before merging.
-* **Block on new critical and high vulnerabilities** (`AdvancedSecurity/NewHighAndCritical`): Use this check to prevent new vulnerabilities from being introduced without requiring all existing vulnerabilities to be fixed first.
+* **Block on all critical and high vulnerabilities** (`AdvancedSecurity/AllHighAndCritical`): Use this check to enforce that all critical and high severity alerts across the repository are resolved before merging. This check evaluates existing alerts and does not require a build validation policy.
+* **Block on new critical and high vulnerabilities** (`AdvancedSecurity/NewHighAndCritical`): Use this check to prevent new vulnerabilities from being introduced without requiring all existing vulnerabilities to be fixed first. This check requires a [build validation policy](../git/branch-policies.md#build-validation) with Advanced Security tasks to scan the PR branch.
 
 ### Configure status checks as branch policies
 
