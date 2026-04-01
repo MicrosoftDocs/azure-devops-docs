@@ -1,7 +1,7 @@
 ---
 title: Configure images
 description: Learn how to configure agent images for Managed DevOps Pools.
-ms.date: 03/03/2026
+ms.date: 04/01/2026
 ms.topic: how-to
 ---
 
@@ -314,12 +314,25 @@ Each image includes the following installed software:
 
 | Image | Included software |
 |-------|-------------------|
+| Azure Pipelines - Windows Server 2025 [Gen 2](#azure-pipelines-generation-2-images) | [Included software](https://github.com/actions/runner-images/blob/main/images/windows/Windows2025-Readme.md) |
+| Azure Pipelines - Windows Server 2022 [Gen 2](#azure-pipelines-generation-2-images) | [Included software](https://github.com/actions/runner-images/blob/main/images/windows/Windows2022-Readme.md) |
+| Azure Pipelines - Ubuntu 24.04 [Gen 2](#azure-pipelines-generation-2-images) | [Included software](https://github.com/actions/runner-images/blob/main/images/ubuntu/Ubuntu2404-Readme.md) |
+| Azure Pipelines - Ubuntu 22.04 [Gen 2](#azure-pipelines-generation-2-images) | [Included software](https://github.com/actions/runner-images/blob/main/images/ubuntu/Ubuntu2204-Readme.md) |
 | Azure Pipelines - Windows Server 2025 | [Included software](https://github.com/actions/runner-images/blob/main/images/windows/Windows2025-Readme.md) |
 | Azure Pipelines - Windows Server 2022 | [Included software](https://github.com/actions/runner-images/blob/main/images/windows/Windows2022-Readme.md) |
 | Azure Pipelines - Ubuntu 24.04 | [Included software](https://github.com/actions/runner-images/blob/main/images/ubuntu/Ubuntu2404-Readme.md) |
 | Azure Pipelines - Ubuntu 22.04 | [Included software](https://github.com/actions/runner-images/blob/main/images/ubuntu/Ubuntu2204-Readme.md) |
 
 [!INCLUDE [image-deprecation](./includes/image-deprecation.md)]
+
+### Azure Pipelines Generation 2 images
+
+Managed DevOps Pools now offers [Generation 2](/azure/virtual-machines/generation-2) versions of Azure Pipeline images, and recommends that you migrate your pools that use the original Generation 1 versions of these images to the Generation 2 versions.
+
+> [!IMPORTANT]
+> Generation 2 VM images are supported for the VM sizes listed in [Generation 2 VM sizes](/azure/virtual-machines/generation-2#generation-2-vm-sizes). If your pool uses a VM size that doesn't support Generation 2 images, you must [change the VM size](./configure-pool-settings.md#agent-size) of your pool to use Generation 2 images.
+
+
 
 ## Selected marketplace images
 
