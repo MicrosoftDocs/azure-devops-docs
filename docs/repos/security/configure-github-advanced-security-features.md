@@ -269,8 +269,8 @@ Advanced Security status checks allow you to block pull requests from being merg
 
 There are two status checks available:
 
-* **Block on all critical and high vulnerabilities** (`AdvancedSecurity/AllHighAndCritical`): Fails when the repository has any open critical or high severity vulnerability detected by Advanced Security, whether the vulnerability is pre-existing or newly introduced. Use this check to enforce that all critical and high severity alerts across the repository are resolved before merging.
-* **Block on new critical and high vulnerabilities** (`AdvancedSecurity/NewHighAndCritical`): Fails only when the pull request introduces new critical or high severity vulnerabilities. Pre-existing vulnerabilities in the repository don't cause this check to fail. Use this check to prevent new vulnerabilities from being introduced without requiring all existing vulnerabilities to be fixed first.
+* **Block on all critical and high vulnerabilities** (`AdvancedSecurity/AllHighAndCritical`): Use this check to enforce that all critical and high severity alerts across the repository are resolved before merging.
+* **Block on new critical and high vulnerabilities** (`AdvancedSecurity/NewHighAndCritical`): Use this check to prevent new vulnerabilities from being introduced without requiring all existing vulnerabilities to be fixed first.
 
 ### Configure status checks as branch policies
 
