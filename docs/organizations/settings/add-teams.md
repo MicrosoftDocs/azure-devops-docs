@@ -141,6 +141,7 @@ Select the **Classic Teams page** tab. The New Teams page is only available for 
 #### [Azure DevOps CLI](#tab/azure-devops-cli)
 
 <a id="add-team-cli"></a> 
+<a id="azure-devops-cli"></a> 
 
 ::: moniker range="azure-devops"
 
