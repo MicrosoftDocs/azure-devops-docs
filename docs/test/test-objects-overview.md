@@ -335,7 +335,7 @@ As with other work items, you can bulk edit test-specific work items. For more i
 ::: moniker range="<=azure-devops"
 - [Bulk modify work items](../boards/backlogs/bulk-modify-work-items.md). 
 - [Import and export test cases](bulk-import-export-test-cases.md)
-- [Navigate Test Plans, Test suites context menu options](navigate-test-plans.md#test-suites-context-menu-options)
+- [Navigate Test Plans, Test suite More options](navigate-test-plans.md#test-suite-more-options)
 ::: moniker-end
 
 ## Test terms 
