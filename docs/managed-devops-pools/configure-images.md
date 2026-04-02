@@ -325,7 +325,9 @@ Each image includes the following installed software:
 
 ### Azure Pipelines Generation 2 images
 
-Managed DevOps Pools now offers [Generation 2](/azure/virtual-machines/generation-2) versions of Azure Pipeline images, and recommends that you migrate your pools that use the original Generation 1 versions of these images to the Generation 2 versions.
+Managed DevOps Pools now offers Generation 2 versions of Azure Pipeline images. Generation 2 VMs use the new UEFI-based boot architecture rather than the BIOS-based architecture used by Generation 1 VMs, and support key features like increased memory, Intel Software Guard Extensions (Intel SGX), and virtualized persistent memory (vPMEM). For more information, see [Support for Generation 2 VMs on Azure](/azure/virtual-machines/generation-2).
+
+The original Generation 1 Azure Pipelines images are still available for use, but are no longer receiving updates. Managed DevOps Pools recommends that you migrate your pools that use the original Generation 1 Azure Pipelines images to the Generation 2 versions.
 
 To migrate your pools to use the Generation 2 Azure Pipelines images:
 
