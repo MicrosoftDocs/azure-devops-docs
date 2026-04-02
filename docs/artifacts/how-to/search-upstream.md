@@ -1,9 +1,9 @@
 ---
 title: Search for packages in upstream sources
-description: How to search for packages in upstream sources
+description: Learn how to search for packages in upstream sources
 ms.service: azure-devops-artifacts
 ms.topic: how-to
-ms.date: 09/29/2022
+ms.date: 04/02/2026
 monikerRange: '>= azure-devops-2022'
 ---
 
@@ -11,7 +11,29 @@ monikerRange: '>= azure-devops-2022'
 
 [!INCLUDE [version-gt-eq-2022](../../includes/version-gt-eq-2022.md)] 
 
-Using upstream sources enable developers to consume packages from different feeds and public registries. This tutorial will walk you through how to enable upstream sources in your feed and search for packages in upstreams.
+Upstream sources let you use packages from public registries and other feeds without leaving Azure Artifacts. Instead of manually switching between multiple package sources, you can configure your feed to reference upstream sources and then search for packages directly from the feed experience.
+
+In this article, you'll learn how to add an upstream source to your feed, search for packages by type and exact package name, review available versions, and save selected versions to your feed for faster and more reliable consumption in future restores. This workflow helps centralize package discovery and improves consistency across your teams.
+
+## Prerequisites
+
+| **Product**        | **Requirements**                       |
+|--------------------|----------------------------------------|
+| **Azure DevOps**   | - An Azure DevOps [organization](../../organizations/accounts/create-organization.md).<br>- An Azure DevOps [project](../../organizations/projects/create-project.md). |
+
+## Create a new feed
+
+If you don't already have a feed, follow these steps to create a new feed and enable upstream sources:
+
+1. Sign in to Azure DevOps, then navigate to your project.
+
+1. Select **Artifacts**, and then select **Create Feed**.
+
+1. Enter a **Name** for your feed, and then choose the appropriate **Visibility** and **Scope** settings.
+
+1. Select **Include packages from common public sources** to enable upstream sources.
+    
+1. Select **Create** when you're done.
 
 ## Enable upstream sources
 
