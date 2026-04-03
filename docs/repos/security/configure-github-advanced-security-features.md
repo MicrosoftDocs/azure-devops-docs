@@ -265,7 +265,7 @@ Pull request annotations also require an Advanced Security scan on your default 
 
 ## Set up pull request status checks
 
-Advanced Security status checks allow you to block pull requests from being merged when security vulnerabilities are detected. These status checks evaluate dependency scanning, code scanning, and secret scanning results and post a status to your pull request based on the findings. The `NewHighAndCritical` check posts after the build completes and SARIF results upload successfully; the `AllHighAndCritical` check evaluates existing alerts and does not require a build.
+Advanced Security status checks allow you to block pull requests from being merged when security vulnerabilities are detected. These status checks evaluate dependency scanning, code scanning, and secret scanning results and post a status to your pull request based on the findings. 
 
 There are two status checks available:
 
@@ -279,7 +279,7 @@ To require Advanced Security status checks before pull requests can be merged, c
 1. Go to **Project settings** > **Repos**.
 1. Optionally, select the repository you want to configure.
 1. Select **Policies** and then select the branch you want to protect. By default, the default branch of your repositories will be protected.
-1. If needed, set up a **Build validation** policy.
+1. If not already created, add a **Build validation** policy. This is required for both status checks to run correctly. In your build validation pipeline, if you have multiple Advanced Security tasks, enable the `Wait for Processing` property for the [AdvancedSecurity-CodeQL-Analyze](/azure/devops/pipelines/tasks/reference/advanced-security-codeql-analyze-v1) and [AdvancedSecurity-Publish](/azure/devops/pipelines/tasks/reference/advanced-security-publish-v1) tasks.
 1. Under **Status checks**, select **+** to add a new status check policy.
 1. In the **Status to check** menu, enter **AdvancedSecurity** for the Genre and **AllHighAndCritical** or **NewHighAndCritical** for the Name. (These options appear after the first successful pipeline run with Advanced Security tasks.)
 1. Choose the **Policy requirement** (required or optional) and set any other desired options. Leave **Advanced Options** at their defaults — changing the authorized identity or requiring an iteration ID prevents status checks from posting.
