@@ -8,7 +8,7 @@ ai-usage: ai-assisted
 ms.topic: how-to
 ms.author: pliaros
 author: rohit-batra
-ms.date: 03/30/2026
+ms.date: 04/03/2026
 ms.update-cycle: 1095-days
 monikerRange: '<= azure-devops'
 ---
@@ -21,6 +21,8 @@ Use the Test & Feedback extension in Azure DevOps to collect stakeholder feedbac
 
 - **Azure DevOps Services (cloud):** The formal **Request feedback** action and the extension's **Feedback requests** page aren't available. Stakeholders and Basic users use the extension to capture screenshots, notes, and screen recordings, and then create bugs or tasks.
 - **Azure DevOps Server:** The full feedback workflow is available. You can send formal feedback requests from work items, stakeholders respond through the extension's **Provide feedback** flow, and responses are captured in *Feedback Response* work items.
+
+[!INCLUDE [version-selector](../includes/version-selector.md)]
 
 ## Prerequisites
 
