@@ -35,64 +35,69 @@ If you don't already have a feed, follow these steps to create a new feed and en
     
 1. Select **Create** when you're done.
 
-## Enable upstream sources
+## Add public upstream sources
+
+If you created a feed without enabling upstream sources, you can add a public upstream source later by following these steps:
 
 1. Navigate to your project, and then select **Artifacts**.
 
-1. Select the gear icon ![gear icon](../../media/icons/gear-icon.png) to navigate to your **Feed Settings**.
+1. Select the gear icon ![gear icon](../../media/icons/gear-icon.png) to open **Feed Settings**.
 
 1. Select **Upstream Sources**.
 
 1. Select **Add Upstream**.
 
-1. Select **Public source**, and then select the **Public source**. (Example *NuGet gallery (https://api.nuget.org/v3/index.json)*)
+1. For **Type**, select **Public source**, and then choose the source you want to add (for example, *NuGet gallery (https://api.nuget.org/v3/index.json)*).
 
 1. Select **Add** when you're done.
 
-    :::image type="content" source="../media/enable-upstream.png" alt-text="A screenshot showing how to add the NuGet upstream.":::
-
 ## Search upstream sources
 
-1. Navigate to your project, and then select **Artifacts**.
+After your feed is connected to one or more upstream sources, you can search from a single place in Azure Artifacts instead of browsing each source separately. This is useful when you know the package you need but want to quickly confirm whether it's available upstream and review available versions before saving it to your feed.
 
-1. Select your feed from the dropdown menu.
+1. Sign in to Azure DevOps, then navigate to your project.
 
-1. Select **Search Upstream Sources** at the top right of your screen.
+1. Select **Artifacts**, then select your target feed from the feed dropdown menu.
 
-    :::image type="content" source="../media/search-upstream-sources.png" alt-text="A screenshot showing the search upstream sources button.":::
+1. Select **Search Upstream Sources** in the upper-right corner.
 
-1. Select the **Package type** and type your **Package Name**. (The package name is case sensitive and must be an exact match).
+    :::image type="content" source="../media/search-upstream-from-feed.png" alt-text="A screenshot showing the Search Upstream Sources button in an Azure Artifacts feed.":::
 
-1. Select **Search** when you're done.
+1. In the search panel, select the **Package type**, and then enter the **Package Name**.
 
-    :::image type="content" source="../media/search-upstreams.png" alt-text="A screenshot showing how to search for a package in upstream sources.":::
+1. Make sure the package name uses the exact casing and spelling, because package name matching is case sensitive.
 
-1. A list of package versions will be displayed as follows:
+1. Select **Search** when you're ready.
 
-    :::image type="content" source="../media/upstream-packages.png" alt-text="A screenshot showing package versions from upstream.":::
+    :::image type="content" source="../media/search-packages-in-upstreams.png" alt-text="A screenshot showing how to search for a package in upstream sources.":::
+
+1. Review the search results. Azure Artifacts displays the matching package versions.
+
+    :::image type="content" source="../media/packages-available-in-upstreams.png" alt-text="A screenshot showing the package versions available in upstream sources.":::
 
 > [!NOTE]
-> Searching for packages in upstream sources from your feed is only supported in Azure DevOps services.
+> Searching upstream sources from your feed is supported only in Azure DevOps Services.
 
 ## Save packages
 
-1. To save a package, select the ellipsis button and then select  **Save to feed**.
+After you find a package version in upstream search results, you can save it to your feed so your team can consume it directly from Azure Artifacts without searching upstream again. 
 
-    :::image type="content" source="../media/save-from-upstream.png" alt-text="A screenshot showing how to save a package from upstream source.":::
+1. In the search results, locate the package version you want to save.
 
-1. Select **Save** to save the package to your feed.
+1. Select the ellipsis button next to that version, and then select **Save to feed**.
 
-    :::image type="content" source="../media/save-confirmation.png" alt-text="A screenshot showing the save confirmation message.":::
+    :::image type="content" source="../media/save-package-version-to-feed.png" alt-text="A screenshot showing how to save a specific package version from an upstream source.":::
 
-1. The saved versions will have the `In this feed` tag.
+1. In the confirmation dialog, select **Save** to confirm.
 
-    :::image type="content" source="../media/downloaded-versions-from-upstream.png" alt-text="A screenshot showing the downloaded versions.":::
+1. Verify that the saved version shows the `In this feed` tag and is now available in your feed.
 
-> [!NOTE]
-> Saving package versions to your feed from the search upstreams result list is only supported for NuGet, Npm, and Universal Packages.
+    :::image type="content" source="../media/version-saved-from-upstream.png" alt-text="A screenshot showing the version saved from upstream.":::
 
-## Related articles
+## Related content
 
-- [Set up upstream sources](./set-up-upstream-sources.md)
-- [Configure upstream behavior](../concepts/upstream-behavior.md)
+- [Use upstream sources with public feeds](public-feeds-upstream-sources.md)
+
+- [Upstream from internal feeds](upstream-internal-feed.md)
+
 - [Configure feed permissions](../feeds/feed-permissions.md)
