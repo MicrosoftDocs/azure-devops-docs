@@ -64,7 +64,7 @@ When a stakeholder or Basic user receives a request via email or chat, they use 
 
 4. Start an exploratory testing session.
 
-   ![Starting the exploratory testing session](media/voluntary-stakeholder-feedback/voluntary-stakeholder-feedback-26.png)
+   ![Screenshot of starting the exploratory testing session.](media/voluntary-stakeholder-feedback/voluntary-stakeholder-feedback-26.png)
 
 5. Open the application or web page to test. Use the extension to capture feedback:
    - Capture screenshots (with inline annotations)
@@ -206,7 +206,7 @@ Use the Test & Feedback extension to provide voluntary feedback on Azure DevOps 
 
 4. Start the exploratory testing session.
 
-   ![Starting the exploratory testing session](media/voluntary-stakeholder-feedback/voluntary-stakeholder-feedback-26.png)
+   ![Screenshot of starting the exploratory testing session.](media/voluntary-stakeholder-feedback/voluntary-stakeholder-feedback-26.png)
 
 5. Open the application you want to provide feedback on and begin your feedback. For example, select **Capture screenshot**.
 
