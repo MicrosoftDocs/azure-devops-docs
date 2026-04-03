@@ -134,8 +134,6 @@ Select the **Classic Teams page** tab. The New Teams page is only available for 
 	- [Define area paths and assign to a team](set-area-paths.md)
 	- [Define iteration paths, also known as sprints, and configure team iterations](set-iteration-paths-sprints.md)
 
-::: moniker-end
-
 [!INCLUDE [temp](../../includes/note-new-teams-not-supported.md)]
 
 #### [Azure DevOps CLI](#tab/azure-devops-cli)
@@ -272,9 +270,7 @@ Select the **Classic Teams page** tab. The New Teams page is only available for 
 
 #### [Classic Teams page](#tab/current-page) 
 
-::: moniker range="<=azure-devops"
 1. Open **Project settings** > **Teams** as described in the previous section. 
-::: moniker-end
  
 1. Choose :::image type="icon" source="../../media/icons/actions-icon.png" border="false"::: to open the context menu for the team you want to designate as the default, and choose **Set team as project default**. 
 
