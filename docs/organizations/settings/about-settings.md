@@ -107,7 +107,6 @@ Individual contributors can customize their experience in Azure DevOps by settin
    :::column span="2":::
       - [Authenticate access with Microsoft Entra tokens](../../integrate/get-started/authentication/entra.md)
       - [Use SSH key authentication](../../repos/git/use-ssh-keys-to-authenticate.md)
-      - [Manage OAuth app authorizations](manage-authorizations.md)
       - [Authenticate access with personal access tokens](../accounts/use-personal-access-tokens-to-authenticate.md)
    :::column-end:::
    :::column span="2":::
