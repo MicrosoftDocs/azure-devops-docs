@@ -1,35 +1,48 @@
 ---
-title: Authentication Schemas for Service Endpoints | Extensions for Azure DevOps
-description: Find the different ways to authenticate with external services using service endpoints in Azure DevOps extensions.
+title: Service endpoint authentication schemes
+titleSuffix: Azure DevOps
+description: Define authentication schemes for custom service endpoint types in Azure DevOps extensions.
 ms.assetid: bffc76b7-f6ba-41f0-8460-ccb44d45d670
 ms.subservice: azure-devops-ecosystem
-ms.custom: pat-reduction
-ms.topic: overview
+ms.custom: pat-reduction, UpdateFrequency3
+ms.topic: concept
 monikerRange: '<= azure-devops'
 ms.author: chcomley
 author: chcomley
-ms.date: 01/08/2025
+ms.date: 04/03/2026
+ai-usage: ai-assisted
 ---
 
 # Service endpoint authentication schemes
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
-Learn how to set the credentials in the HTTP request header when you're calling the external endpoint. Azure DevOps can then connect to the external service using the credentials. Azure DevOps supports a closed set of authentication schemes utilized by a custom service endpoint type. Azure DevOps interprets the authentication scheme that's used in any custom endpoint & support connection to the external service.
-
-See the following authentication schemes that are part of the closed set.
+When you define a custom service endpoint type in your extension, you specify an authentication scheme that tells Azure DevOps how to set credentials in the HTTP request header. Azure DevOps supports the following authentication schemes for custom endpoints.
 
 [!INCLUDE [extension-docs-new-sdk](../../includes/extension-docs-new-sdk.md)]
 
 ## Basic authentication
 
-As a security measure, we recommend using service principals & managed identities over basic authentication. For more information, see [Use service principals & managed identities](../../integrate/get-started/authentication/service-principal-managed-identity.md).
+Uses a username and password sent as a Base64-encoded `Authorization` header.
+
+> [!IMPORTANT]
+> Where possible, use service principals and managed identities instead of basic authentication. For more information, see [Use service principals & managed identities](../../integrate/get-started/authentication/service-principal-managed-identity.md).
+
+The built-in scheme type is `ms.vss-endpoint.endpoint-auth-scheme-basic`. You don't need to declare it in your extension manifest — reference it in your endpoint type's `authenticationSchemes` array:
+
+```json
+"authenticationSchemes": [
+    {
+        "type": "ms.vss-endpoint.endpoint-auth-scheme-basic"
+    }
+]
+```
+
+Azure DevOps prompts the user for **Username** and **Password** and sends them as the standard HTTP Basic `Authorization` header.
 
 ## Token-based authentication
 
-This scheme takes one input - API Token (confidential)
-
-Default authentication header used is: {{endpoint.apitoken}}
+Takes a single confidential input — an API token. The token value is sent in the `Authorization` header.
 
 ```json
 {
@@ -71,11 +84,11 @@ Default authentication header used is: {{endpoint.apitoken}}
 }
 ```
 
+The `{{endpoint.apitoken}}` placeholder resolves to the value the user enters in the **API Token** field at runtime.
+
 ## Certificate-based authentication
 
-This scheme takes one input - Certificate (confidential)
-
-The value of certificate has to be provided in the text area.
+Takes a single confidential input — the certificate content, entered in a text area.
 
 ```json
 {
@@ -112,7 +125,7 @@ The value of certificate has to be provided in the text area.
 
 ## No authentication
 
-This scheme is used when an endpoint type doesn't require to take any input. For example, external services that support anonymous access to its resources.
+Use this scheme when the external service supports anonymous access and no credentials are needed.
 
 ```json
 {
@@ -128,3 +141,9 @@ This scheme is used when an endpoint type doesn't require to take any input. For
     }
 }
 ```
+
+## Related content
+
+- [Service endpoint extensions](../develop/service-endpoints.md)
+- [Extension manifest reference](manifest.md)
+- [Authenticate and secure web extensions](auth.md)

@@ -4,13 +4,15 @@ title: Integrate Custom Build Tasks with Extensions
 description: Learn how to create and integrate custom build pipeline tasks with extensions in Azure DevOps.
 ms.assetid: 00806e48-3839-40eb-880f-12ec53bfdf73
 ms.topic: concept-article
+ms.custom: UpdateFrequency3
 monikerRange: '<= azure-devops'
 ms.author: chcomley
 author: chcomley
-ms.date: 04/11/2025
+ms.date: 04/03/2026
+ai-usage: ai-assisted
 ---
 
-# Integrate custom build pipeline tasks with extensions
+# Integrate build tasks with extensions
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
@@ -30,7 +32,7 @@ When you create a custom build or release task with an extension, your extension
 
 To learn more, see the [build and release task SDK documentation](https://github.com/Microsoft/azure-pipelines-task-lib) on GitHub. Specifically, you might be interested in the [task.json schema](https://github.com/Microsoft/azure-pipelines-task-lib/blob/master/tasks.schema.json).
 
-## Bundle multiple versions of build or release tasks within one extension
+## Bundle multiple task versions
 
 You can include multiple versions of a build or release task within your extension. Roll out future versions of your extension without interrupting service of users on older versions. The following information shows the layout for having multiple versions in one extension.
 

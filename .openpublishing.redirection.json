@@ -1441,6 +1441,14 @@
       ]
     },
     {
+      "source_path": "docs/extend/develop/add-hub-group.md",
+      "redirect_url": "/azure/devops/extend/develop/add-hub#add-a-custom-hub-group",
+      "redirect_document_id": false,
+      "monikers": [
+        "azure-devops"
+      ]
+    },
+    {
       "source_path": "docs/extend/develop/add-query-result-tabs.md",
       "redirect_url": "/previous-versions/azure/devops/extend/develop/add-query-result-tabs",
       "redirect_document_id": false,
@@ -1522,10 +1530,18 @@
     },
     {
       "source_path": "docs/extend/develop/host-navigation.md",
-      "redirect_url": "/previous-versions/azure/devops/extend/develop/host-navigation",
+      "redirect_url": "/azure/devops/extend/develop/work-with-urls",
       "redirect_document_id": false,
       "monikers": [
         "azure-devops-2020"
+      ]
+    },
+    {
+      "source_path": "docs/extend/develop/host-navigation.md",
+      "redirect_url": "/azure/devops/extend/develop/work-with-urls",
+      "redirect_document_id": false,
+      "monikers": [
+        "azure-devops"
       ]
     },
     {
@@ -8706,7 +8722,7 @@
     },
     {
       "source_path": "docs/extend/develop/host-navigation.md",
-      "redirect_url": "/previous-versions/azure/devops/extend/develop/host-navigation",
+      "redirect_url": "/azure/devops/extend/develop/work-with-urls",
       "redirect_document_id": false,
       "monikers": [
         "azure-devops-2019"

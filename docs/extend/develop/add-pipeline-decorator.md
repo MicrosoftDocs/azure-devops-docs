@@ -3,10 +3,12 @@ title: Author a pipeline decorator
 description: Inject steps before and after every pipeline job.
 ms.topic: reference
 ms.subservice: azure-devops-ecosystem
+ms.custom: UpdateFrequency3
 ms.assetid: 3347cdf7-07db-42af-85f0-6f1d8d371087
 ms.author: chcomley
 author: chcomley
-ms.date: 01/27/2023
+ms.date: 04/03/2026
+ai-usage: ai-assisted
 monikerRange: '>= azure-devops-2022'
 ---
 
@@ -22,7 +24,7 @@ Pipeline authors don't need to remember to add that step. We create a decorator 
 
 [!INCLUDE [extension-docs-new-sdk](../../includes/extension-docs-new-sdk.md)]
 
-## 1. Add contributions to an extension
+## Add contributions to the extension
 
 The following example assumes you're familiar with the [contribution models](contributions-overview.md).
 
@@ -93,7 +95,7 @@ In this example, we use `ms.azure-pipelines-agent-job.post-job-tasks` because we
 This extension contributes a pipeline decorator.
 Next, we create a template YAML file to define the decorator's behavior.
 
-## 2. Create a decorator YAML file
+## Create a decorator YAML file
 
 In the extension's properties, we chose the name "my-decorator.yml".
 Create that file in the root of your contribution. It holds the set of steps to run after each job.
@@ -112,7 +114,7 @@ steps:
 > [!NOTE] 
 > Pipeline decorator tasks with service connection usage are not supported for classic release pipelines.
 
-## 3. Install the decorator
+## Install the decorator
 
 To add a pipeline decorator to your organization, you must [install an extension](../../marketplace/install-extension.md).
 **Only private extensions can contribute pipeline decorators.**
@@ -131,7 +133,7 @@ A pipeline run looks similar to the following example.
 > The decorator runs on every job in every pipeline in the organization.
 > In later steps, we add logic to control when and how the decorator runs.
 
-## 4. Inject conditions
+## Inject conditions
 
 In our example, we only need to run the virus scanner if the build outputs might be released to the public. Let's say that only builds from the default branch (typically `main`) are ever released.
 We should limit the decorator to jobs running against the default branch.
@@ -173,7 +175,7 @@ steps:
       script: dir
 ```
 
-## 5. Specify a target task
+## Specify a target task
 
 You can specify target [task ID](add-build-task.md), and inject tasks before or after this target task.
 To specify target task, you can modify vss-extension.json manifest file like the following example.
@@ -203,7 +205,7 @@ When you set up the 'targettask' property, you can specify ID of a target task.
 Tasks will be injected before/after all instances of specified target task. 
 
 
-### Specify target task's inputs injection
+### Inject target task inputs
 You can specify a list of inputs of the target task that you want to inject as inputs to the injected task.
 
 This feature is designed to work with [custom pipeline tasks](add-build-task.md). It isn't intended to provide access to target pipeline task inputs via pipeline variables.

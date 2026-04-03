@@ -3,13 +3,13 @@ title: Add a Custom Build or Release Task in an Extension
 description: Learn how to create, test, and publish custom build or release pipeline tasks as Azure DevOps extensions with TypeScript and Node.js.
 ms.assetid: 98821825-da46-498e-9b01-64d3a8c78ea0
 ms.subservice: azure-devops-ecosystem
-ms.custom: freshness-fy22q3
+ms.custom: freshness-fy22q3, UpdateFrequency3
 ms.topic: how-to
 ai-usage: ai-assisted
 monikerRange: '<= azure-devops'
 ms.author: chcomley
 author: chcomley
-ms.date: 08/05/2025
+ms.date: 04/03/2026
 customer-intent: As a developer, I want to create custom build and release tasks for Azure DevOps pipelines so that I can extend the platform with specialized functionality for my team's workflows.
 ---
 
@@ -77,7 +77,7 @@ Create a `home` directory for your project. After you complete this tutorial, yo
 
 <a name="createtask"></a>
 
-## 1. Create a custom task
+## Create a custom task
 
 This section guides you through creating the basic structure and implementation of your custom task. All files in this step should be created within the `buildandreleasetask` folder inside your project's `home` directory.
 
@@ -218,7 +218,7 @@ With scaffolding complete, create the core task files that define functionality 
 
    The `index.js` file gets created from your TypeScript source.
 
-### Understanding task.json components
+### task.json components
 
 The `task.json` file is the heart of your task definition. Here are the key properties:
 
@@ -351,7 +351,7 @@ Before packaging, test your task to ensure it works correctly:
 
 For more information, see the [Build/release task reference](./integrate-build-task.md).
 
-## 2. Implement comprehensive unit testing
+## Implement unit testing
 
 Testing your task thoroughly ensures reliability and helps catch issues before deployment to production pipelines.
 
@@ -365,7 +365,7 @@ npm install sync-request --save-dev
 npm install @types/mocha --save-dev
 ```
 
-### Create test
+### Create tests
 
 1. Create a `tests` folder in your task directory containing a `_suite.ts` file:
 
@@ -492,7 +492,7 @@ $env:TASK_TEST_TRACE=1
 mocha tests/_suite.js
 ```
 
-### Test coverage best practices
+### Test coverage guidelines
 
 - **Test all input combinations**: Valid inputs, invalid inputs, missing required inputs
 - **Test error scenarios**: Network failures, file system errors, permission issues
@@ -500,7 +500,7 @@ mocha tests/_suite.js
 - **Validate outputs**: Check console output, task results, and generated artifacts
 - **Performance testing**: Consider adding tests for tasks that process large files
 
-### Security best practices
+### Security guidelines
 
 - **Input validation**: Always validate and sanitize inputs
 - **Secrets handling**: Use `setSecret` for sensitive data
@@ -621,7 +621,7 @@ Follow semantic versioning principles for your task updates:
 
 <a name="createpublisher"></a>
 
-#### 1. Create your publisher
+#### Create a publisher
 
 1. Sign in to the [Visual Studio Marketplace Publishing Portal](https://marketplace.visualstudio.com/manage)
 2. Create a new publisher if prompted:
@@ -629,7 +629,7 @@ Follow semantic versioning principles for your task updates:
    - **Display name**: Public name shown in the marketplace (for example, `My Team`)
 3. Review and accept the [Marketplace Publisher Agreement](https://aka.ms/vsmarketplace-agreement)
 
-#### 2. Upload your extension
+#### Upload the extension
 
 **Web interface method:**
 1. Select **Upload new extension**
@@ -641,7 +641,7 @@ Follow semantic versioning principles for your task updates:
 tfx extension publish --manifest-globs vss-extension.json --share-with yourOrganization
 ```
 
-#### 3. Share your extension
+#### Share the extension
 
 1. Right-click your extension in the marketplace
 2. Select **Share**
@@ -651,7 +651,7 @@ tfx extension publish --manifest-globs vss-extension.json --share-with yourOrgan
 > [!IMPORTANT]
 > Publishers must be verified to share extensions publicly. For more information, see [Package/Publish/Install](../publish/overview.md).
 
-#### 4. Install to your organization
+#### Install to your organization
 
 After sharing, install the extension to your Azure DevOps organization:
 
@@ -661,7 +661,7 @@ After sharing, install the extension to your Azure DevOps organization:
 
 <a name="packagetask"></a>
 
-## 3. Package and publish your extension
+## Package and publish the extension
 
 ### Verify your extension
 
@@ -683,11 +683,11 @@ After installation, verify your task works correctly:
 
 <a name="createbuildrelease"></a>
 
-## 4. Automate extension publishing with CI/CD
+## Automate publishing with CI/CD
 
 To maintain your custom task effectively, create automated build and release pipelines that handle testing, packaging, and publishing.
 
-### Prerequisites for automation
+### CI/CD prerequisites
 
 - **Azure DevOps Extension Tasks**: [Install the extension](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.vsts-developer-tools-build-tasks) for free
 - **Variable group**: Create a [pipeline library variable group](../../pipelines/library/variable-groups.md?tabs=classic) with these variables:
@@ -697,7 +697,7 @@ To maintain your custom task effectively, create automated build and release pip
   - `artifactName`: Name for the VSIX artifact
 - **Service connection**: Create a Marketplace service connection with pipeline access permissions
 
-### Complete CI/CD pipeline
+### CI/CD pipeline example
 
 Create a YAML pipeline with comprehensive stages for testing, packaging, and publishing:
 
@@ -854,24 +854,24 @@ Add test scripts to your `package.json`:
 }
 ```
 
-### Pipeline stage breakdown
+### Pipeline stages
 
-#### Stage 1: Test and validate
+#### Test and validate
 - **Purpose**: Ensure code quality and functionality
 - **Actions**: Install dependencies, compile TypeScript, run unit tests, publish results
 - **Validation**: All tests must pass to proceed
 
-#### Stage 2: Package extension
+#### Package the extension
 - **Purpose**: Create deployable VSIX package
 - **Actions**: Query current version, increment version, package extension, publish artifacts
 - **Versioning**: Automatically handles version increments
 
-#### Stage 3: Publish to marketplace
+#### Publish to Marketplace
 - **Purpose**: Deploy to Visual Studio Marketplace
 - **Conditions**: Only runs on main branch after successful packaging
 - **Environment**: Uses deployment environment for approval gates
 
-### Best practices for CI/CD
+### CI/CD guidelines
 
 - **Branch protection**: Only publish from main/release branches
 - **Environment gates**: Use deployment environments for production releases
@@ -911,7 +911,7 @@ For classic build pipelines, follow these steps to set up extension packaging an
     - Artifact name: The name given to the artifact
     - Artifacts publish location: Choose **Azure Pipelines** to use the artifact in future jobs
 
-#### Stage 3: Download build artifacts and publish the extension
+#### Download and publish artifacts
 
 1. To install the tfx-cli onto your build agent, add **Use Node CLI for Azure DevOps (tfx-cli)**.
 
@@ -933,11 +933,11 @@ For classic build pipelines, follow these steps to set up extension packaging an
 
 <a name="installandtest"></a>
 
-## Optional: Install and test your extension
+## Install and test the extension
 
 After you publish your extension, it needs to be installed in Azure DevOps organizations.
 
-### Install extension to organization
+### Install to an organization
 
 Install your shared extension in a few steps:
 
@@ -986,7 +986,7 @@ A: **Automatic deletion isn't supported** as it would break existing pipelines. 
 2. **Version management**: [Bump the task version](https://github.com/microsoft/azure-pipelines-tasks/blob/master/docs/taskversionbumping.md)
 3. **Communication**: Notify users about the deprecation timeline
 
-### Q: How can I upgrade my task to the latest Node.js version?
+### Q: How do I upgrade to the latest Node.js?
 
 A: Upgrade to [the latest Node version](https://nodejs.org/en/download/) for better performance and security. For migration guidance, see [Upgrading tasks to Node 20](https://github.com/microsoft/azure-pipelines-tasks/blob/master/docs/migrateNode20.md).
 

@@ -5,11 +5,12 @@ description: Learn how to develop Azure DevOps Services extensions that support 
 ms.subservice: azure-devops-ecosystem
 ms.assetid: 3fa22433-150b-428c-8e10-3ffb4d832c20
 ms.topic: how-to
+ms.custom: UpdateFrequency3
 monikerRange: 'azure-devops'
 ms.author: chcomley
 author: chcomley
 ai-usage: ai-assisted
-ms.date: 11/10/2025
+ms.date: 04/03/2026
 ---
 
 # Develop extensions for public projects
@@ -26,7 +27,7 @@ Non-member users see the same views as authenticated users, but Azure DevOps hid
 
 [!INCLUDE [allow-public-project-policy](../../organizations/projects/includes/allow-public-project-policy.md)]
 
-## Decide whether to make an extension visible to non-member users
+## Extension visibility for non-members
 
 As an extension developer, you can make all or part of your extension available to non-member users. These users can only use your extension from within public projects. If you choose not to make your extension available to non-member users, you need no changes and the decision has no impact on members who use your extension within public projects.
 
@@ -46,7 +47,7 @@ By default, Azure DevOps shows contributions only to organization members. To gi
 * `public`: An authenticated user who is **not** a member of the organization
 * `anonymous`: An unauthenticated user
 
-### Make a hub visible to anonymous, public, and member users
+### Hub visible to all users
 
 ```json
 {
@@ -72,7 +73,7 @@ By default, Azure DevOps shows contributions only to organization members. To gi
 
 You can also set the default visibility for all contributions in your extension by setting the `restrictedTo` attribute at the root of your extension manifest. You can then override this default on individual contributions.
 
-### Make every contribution, except for one, visible to all users
+### Visible to all except one contribution
 
 ```json
 {
@@ -122,7 +123,7 @@ You can also set the default visibility for all contributions in your extension 
 
 <a name="limitations"></a>
 
-## Understand limitations for non-member users
+## Non-member limitations
 
 If you want to make some or all aspects of your contribution available to public users, consider the following limitations.
 
@@ -167,7 +168,7 @@ Most Azure DevOps Services REST APIs use a common "contract" to represent a user
 
 Use permissions to decide whether to surface or enable a capability in your extension. Use the Security REST API from web extension code to check whether the current user has permission in Azure DevOps Services to complete the task. This approach prevents users from thinking they have permission to do something, only to discover that they don't.
 
-#### Check whether the user has permission to queue builds
+#### Check build queue permissions
 
 This example shows how to use the Security REST client to check whether the user has permissions to queue builds in the current project. By default, non-member users don't have this permission.
 
@@ -193,7 +194,7 @@ VSS.require(["VSS/Service", "VSS/security/RestClient"], function(VSS_Service, Se
 });
 ```
 
-## Consider dashboard widget requirements
+## Dashboard widget requirements
 
 Just like other types of contributions, the `restrictedTo` contribution property controls the visibility of dashboard widget contributions. For example, to make a widget visible to both non-member and member users:
 
@@ -225,7 +226,7 @@ When you control widget visibility to non-member users, the dashboard framework 
 
 A widget with configurable settings that is visible to non-member users **must** follow one of the following patterns. Not following these patterns blocks the widget from appearing to these users.
 
-### Pattern 1: Widget declares its instances only store project-specific settings
+### Project-specific settings (extension level)
 
 Set the widget contribution's `canStoreCrossProjectSettings` property to `false`, indicating that the widget settings are project-specific.
 
@@ -240,7 +241,7 @@ Set the widget contribution's `canStoreCrossProjectSettings` property to `false`
 }
 ```
 
-### Pattern 2: A widget instance declares its settings are project-specific
+### Project-specific settings (instance level)
 
 Individual widget instances can also indicate that their settings are project-specific and available to non-member users. When saving the settings, the widget should set `hasCrossProjectSettings` to `false` in the stringified JSON string:
 
@@ -252,11 +253,11 @@ Individual widget instances can also indicate that their settings are project-sp
 }
 ```
 
-## Consider build and release requirements
+## Build and release requirements
 
 If your extension contributes a build or release task, you need no changes to use that task from a pipeline in a public project.
 
-## Handle work item tracking considerations
+## Work item tracking considerations
 
 Extensions don't work for non-member users in the context of a public project without changes. This includes the work item form, other work item experiences, and interaction with work item tracking REST APIs.
 

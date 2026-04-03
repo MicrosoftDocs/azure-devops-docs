@@ -4,10 +4,12 @@ title: Extension Manifest Reference| Extensions for Azure DevOps
 description: How to create a manifest for your extension to Azure DevOps
 ms.assetid: e3150221-3cdf-47e1-b7e9-24211498cc29
 ms.topic: reference
+ms.custom: UpdateFrequency3
 monikerRange: '<= azure-devops'
 ms.author: chcomley
 author: chcomley
-ms.date: 03/21/2025
+ms.date: 04/03/2026
+ai-usage: ai-assisted
 ---
 
 # Extension manifest reference
@@ -171,7 +173,7 @@ If your paid BYOL extension offers a trial period (we recommend so), then you ca
 
 <a name="CustomerQnASupport"></a>
 
-### Marketplace Q & A - CustomerQnASupport property
+### Q&A support (CustomerQnASupport)
 
 All extensions on the Visual Studio Marketplace have a Questions and Answers (Q & A) section to allow one-on-one public conversations between extension users and publishers. Publishers can choose between Marketplace Q & A, GitHub issues, or a custom Q & A URL. You can disable Q & A in the Marketplace using the `CustomerQnASupport` property in the manifest. 
 
@@ -199,9 +201,9 @@ Properties for the Customer Q & A Support section:
 - **url** - string, URL for custom Q&A
 
 
-### Examples showing usage of Q & A support
+### Q&A support examples
 
-#### Example: Extension using custom Q & A
+#### Custom Q&A URL
 
 ```json
 {
@@ -211,7 +213,7 @@ Properties for the Customer Q & A Support section:
     } 
 }
 ```
-#### Example: Extension with GitHub repository but using Marketplace Q & A instead of GitHub issues
+#### GitHub repo with Marketplace Q&A
 
 ```json
 {
@@ -220,7 +222,7 @@ Properties for the Customer Q & A Support section:
     } 
 }
 ```
-#### Example: Extension disabling Q & A section
+#### Disable Q&A
 
 ```json
 {
@@ -272,9 +274,9 @@ Supported identifiers for **integrations**:
 
 For more information, see [Extensibility points](../reference/targets/overview.md).
 
-### Examples of installation targets
+### Installation target examples
 
-#### Example: Extension that works with Azure DevOps
+#### Extension for all Azure DevOps
 ```json
 {
     "targets": [
@@ -285,7 +287,7 @@ For more information, see [Extensibility points](../reference/targets/overview.m
 }
 ```
 
-#### Example: Extension that works only with Azure DevOps Services
+#### Extension for cloud only
 
 ```json
 {
@@ -299,7 +301,7 @@ For more information, see [Extensibility points](../reference/targets/overview.m
 
 Installation targets can also be used in the manifest of integrations. For example, products, apps, or tools that work with, but don't install into Azure DevOps.
 
-#### Example: Integration that works with Azure DevOps
+#### Integration for all Azure DevOps
 
 ```json
 {
@@ -311,7 +313,7 @@ Installation targets can also be used in the manifest of integrations. For examp
 }
 ```
 
-#### Example: Integration that only works with Azure DevOps Server
+#### Integration for Server only
 
 ```json
 {
@@ -349,18 +351,9 @@ Version numbers for Azure DevOps Server:
 | 2019         | RTM and updates | 17.0                                |
 | 2020         | RTM and updates | 18.0                                |
 
-### Examples showing versions
+### Version examples
 
-#### Example: Extension that works with Azure DevOps
-
-```json
-{
-    "targets": [
-        {
-            "id": "Microsoft.VisualStudio.Services.Cloud"
-        },
-        {
-            "id": "Microsoft.TeamFoundation.Server",
+#### Cloud and Server extension
             "version": "[15.0,)"
         }
     ]
@@ -423,14 +416,14 @@ is equivalent to:
 }
 ```
 
-### Using installation targets and demands
+### Targets and demands combined
 
 Installation targets and demands are used together to present users with a correct view of the products and services your extension or integration is compatible with. For example, specifying an installation target of `Microsoft.VisualStudio.Services` with a demand of `api-version/3.0` means the extension works with Azure DevOps. 
 
 > [!TIP]
 > For more information on REST APIs, see the [REST API Reference](/rest/api/azure/devops).
 
-#### Example: Extension that uses version 3.0 APIs
+#### Extension with API version 3.0
 
 ```json
 {
@@ -450,7 +443,7 @@ Resolves to the following installation targets:
 1. `Microsoft.VisualStudio.Services.Cloud` 
 2. `Microsoft.TeamFoundation.Server`, version: `[15.0,)`
 
-#### Example: Integration that uses version 2.0 APIs
+#### Integration with API version 2.0
 
 ```json
 {
@@ -524,7 +517,7 @@ The `files` section is where you reference any files you wish to include in your
 }
 ```
 
-### Properties
+### File properties
 
 Properties for the Files section:
 

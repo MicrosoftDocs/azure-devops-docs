@@ -1,14 +1,14 @@
 ---
 title: Add a custom control to the work item form | Extensions for Azure DevOps
 description: Learn how to extend the work item form by adding a custom control in Azure DevOps.
-ms.contentid: 0956ACA7-B1C4-443F-A79A-A62EDD02FC15
 ms.subservice: azure-devops-ecosystem
-ms.custom: engagement-fy23, devx-track-js
+ms.custom: engagement-fy23, devx-track-js, UpdateFrequency3
 ms.topic: how-to
 monikerRange: '<= azure-devops'
 ms.author: chcomley
 author: chcomley
-ms.date: 09/09/2024
+ms.date: 04/03/2026
+ai-usage: ai-assisted
 ---
 
 # Add a custom control to the work item form
@@ -31,10 +31,9 @@ Include the azure-devops-extension-sdk in your project:
     SDK.init();
     ```
 
-## Add the custom control
+## Add the control contribution
 
-To add a control to the main page, add a contribution to your [extension manifest](../develop/manifest.md). The type of contribution should be `ms.vss-work-web.work-item-form-control`
-and it should target the `ms.vss-work-web.work-item-form` contribution.
+Add a contribution to your [extension manifest](../develop/manifest.md) with type `ms.vss-work-web.work-item-form-control` targeting `ms.vss-work-web.work-item-form`:
 
 ```json
 "contributions": [
@@ -58,28 +57,26 @@ and it should target the `ms.vss-work-web.work-item-form` contribution.
     ]
 ```
 
-The work item form adds an IFrame to host the custom control.
+The work item form loads the custom control in an IFrame.
 
-### Properties
+### Control properties
 
 | Property     | Description           |
 |--------------|-----------------------|
-| `name`         | Text that appears on the group.   |
-| `uri`          | URI to a page that hosts the html that is loaded by the IFrame.
-| `height`       | (Optional) Defines the height of the IFrame. When omitted, it's 50 pixels.
-| `inputs`       | The values a user provides within the form.
+| `name`       | Text that appears on the group. |
+| `uri`        | URI to the HTML page loaded in the IFrame. |
+| `height`     | (Optional) Height of the IFrame in pixels. Default is 50. |
+| `inputs`     | Values that users provide when adding the control to the form. |
 
-If you want to dynamically resize the IFrame, you can use the `resize method` available in the client SDK.
+To dynamically resize the IFrame, use the `resize` method in the SDK.
 
-A custom control on the work item form is another type of [contribution](./contributions-overview.md), like [group & page contribution](./add-workitem-extension.md). The main difference is that a control contribution can take a set of user inputs while group and page contributions can't.
+A custom control is a type of [contribution](./contributions-overview.md) similar to [group and page contributions](./add-workitem-extension.md). The key difference is that control contributions accept user inputs, while group and page contributions don't.
 
 ## Control contribution inputs
 
-To define the inputs for your control contribution, use the `inputs` property in the contribution object in the manifest. 
+Use the `inputs` property in the contribution object to define configurable inputs for your control.
 
-In the following sample you see two inputs: `FieldName` and `Colors`. `FieldName` specifies with which field the control associates. `Colors` configures which colors map to which values in the control. 
-
-The values for the inputs get provided by the users when they add to the work item form. These values get passed to the control contribution when it's loaded on the form.
+The following example defines two inputs: `FieldName` specifies which work item field the control is associated with, and `Colors` configures which colors map to which field values. Users provide these values when they add the control to the form, and the values are passed to the control at load time.
 
 ```json
 "inputs": [
@@ -107,42 +104,23 @@ The values for the inputs get provided by the users when they add to the work it
 ]
 ```
 
-The following properties define a user input that the contribution can use:
+### Input properties
 
-* **id** - A unique ID for the input.
-* **description** - A few sentences describing the input.
-* **type (optional)** - The type of input.
-  * Valid values: 
-    * `WorkItemField` - Indicates that the input is a Work Item field. The value provided by the user for this input should be a reference name for the valid work item field.
-* **properties (optional)** - Custom properties for the input.
-  * Valid keys:
-    * `workItemFieldTypes` - Defines an array of field types that this input supports. Valid values:
-        * `String`
-        * `Integer`
-        * `DateTime`
-        * `PlainText`
-        * `HTML`
-        * `TreePath`
-        * `History`
-        * `Double`
-        * `Guid`
-        * `Boolean`
-        * `Identity`
-        * `PicklistString`
-        * `PicklistInteger`
-        * `PicklistDouble`
-* **validation** - A set of properties that defines which values are considered valid for the input.
-    * Valid keys:
-        * `dataType` - Defines the data type of the input value. Valid values for this property:
-            * `String`
-            * `Number`
-            * `Boolean`
-            * `Field`
-        * `isRequired` - A boolean value, which indicates whether the input is required to have a value.
+The following properties define a user input:
+
+| Property | Description |
+|----------|-------------|
+| **id** | Unique ID for the input. |
+| **description** | Short description of the input. |
+| **type** | (Optional) Input type. Use `WorkItemField` to indicate the value should be a work item field reference name. |
+| **properties** | (Optional) Custom properties. Use `workItemFieldTypes` to restrict which field types are valid (for example, `String`, `Integer`, `DateTime`, `Boolean`). |
+| **validation** | Validation rules. Set `dataType` (`String`, `Number`, `Boolean`, or `Field`) and `isRequired` (`true` or `false`). |
+
+Supported `workItemFieldTypes` values: `String`, `Integer`, `DateTime`, `PlainText`, `HTML`, `TreePath`, `History`, `Double`, `Guid`, `Boolean`, `Identity`, `PicklistString`, `PicklistInteger`, `PicklistDouble`.
 
 ## JavaScript sample
 
-A control extension works like a group or page extension with one difference that it can take certain user inputs. To read the user input values, use `VSS.getConfiguration().witInputs`. The following sample shows how to register an object that's called when events occur on the work item form that may affect your contributed control. It also shows how to read input values provided by user for this control.
+A custom control extension works like a group or page extension, with the addition that it reads user input values via `SDK.getConfiguration().witInputs`. The following sample registers a provider that responds to work item form events:
 
 ```typescript
 import { Control } from "control";
@@ -179,3 +157,9 @@ The following screenshot shows a sample custom work item control for the *Priori
 
 > [!div class="mx-imgBorder"]
 > ![Screenshot of custom control in work item form.](media/customcontrol.png)
+
+## Related content
+
+- [Extend the work item form](add-workitem-extension.md)
+- [Extension manifest reference](manifest.md)
+- [Contribution model](contributions-overview.md)
