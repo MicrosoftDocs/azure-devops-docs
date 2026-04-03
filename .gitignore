@@ -2,6 +2,7 @@
 .github/AGENTS.md
 .github/agents/
 !.github/agents/azuredevops-standards-check.agent.md
+!.github/agents/release-notes.agent.md
 .github/instructions/
 .github/prompts/
 .github/skills/
