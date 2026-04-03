@@ -1,29 +1,31 @@
 ---
 ms.subservice: azure-devops-ecosystem
 title: Samples overview | Extensions for Azure DevOps
-description: Overview of the available extension samples for Azure DevOps, including a description, the link to the repo and the contributions they touch.
+description: Azure DevOps extension samples help you quickly build custom features. Explore real-world examples, source code, and start developing your own extension today.
 ms.assetid: 2639a776-d2f7-4866-b54f-1da3883b1b91
-ms.custom: engagement-fy23
+ms.custom: engagement-fy23, UpdateFrequency3
 ms.topic: overview
 monikerRange: '<= azure-devops'
 ms.author: chcomley
+ms.reviewer: chcomley
 author: chcomley
-ms.date: 03/21/2025
+ms.date: 04/03/2026
+ai-usage: ai-assisted
 ---
 
 # Extension samples
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
-Start developing your extension by working from a sample. 
+Use these samples as starting points for your own extensions. Each sample demonstrates a small number of contributions so you can see how they work in isolation. All source code is in the [Azure DevOps extension samples repo](https://github.com/microsoft/azure-devops-extension-sample/).
 
 [!INCLUDE [extension-docs-new-sdk](../../includes/extension-docs-new-sdk.md)]
 
-The following Microsoft samples show the capabilities of the extension framework and how to contribute to various areas. Each sample illustrates one or more contributions. We limit the number of contributions for each sample to increase understanding of the extension framework. For source information, see the [Azure DevOps extension samples repo](https://github.com/microsoft/azure-devops-extension-sample/).
+The following table lists the samples in the repo and the contribution types each one demonstrates.
 
 | Sample | Contributions | Description |
 |--------|---------------|-------------|
-| [BreadcrumbService](./add-hub.md) | Breadcrumb Service, Hub | Adds a breadcrumb service, which adds a "Sample Breadcrumb Item" to the sample hub. To see this item, go to the **Sample Hub** in the **Pipelines** hub group. |
+| [BreadcrumbService](./add-hub.md) | Breadcrumb Service, Hub | Adds a breadcrumb service, which adds a **Sample Breadcrumb Item** to the sample hub. To see this item, go to the **Sample Hub** in the **Pipelines** hub group. |
 | CodeEditorContribution | Code Editor | Adds a language definition and a JSON schema for the code editor. |
 | [Feature](./add-hub.md) | Feature, Hub, Property Provider | Shows how to hook into the **Preview Features** panel under the user profile menu. Adds a simple hub that only shows when you turn on an "ABC" feature. You can toggle the feature on and off, per user or per organization. |
 | [Hub](./add-hub.md) | Hub | Adds a hub named **Sample Hub** into the **Pipelines** hub group. The Sample Hub is on a project-level page, under the **Pipelines** navigation element. |
@@ -37,9 +39,9 @@ The following Microsoft samples show the capabilities of the extension framework
 | [WorkItemFormGroup](./custom-control.md) | Work Item Form Group | Adds a **Sample WorkItem Form Group** extension to the work item form to show how to interact with the `IWorkItemFormService` service and `IWorkItemNotificationListener`. Provides a UI to show case how to change field values using the form service and displaying work item form notification events. |
 | [WorkItemOpen](./add-hub.md) | Hub | Adds a **Sample WorkItem Open** hub to the **Boards** hub group to show how to interact with the `IWorkItemFormNavigationService` service. Provides a UI for you to open an existing work item by ID, or open the work item form for a new work item by work item type. Either of these options open a dialog in the host frame. |
 
-## DevLabs examples
+## Community examples (DevLabs)
 
-Other open source examples that you might be interested in.
+These open-source extensions from Microsoft DevLabs show real-world patterns you can adapt.
 
 | Sample | Source | Contributions | Description |
 |--------|-------|---------------|-------------|
@@ -53,7 +55,7 @@ Other open source examples that you might be interested in.
 
 ## Get started
 
-To get started as quickly as possible, use the [seed project](https://github.com/cschleiden/vsts-extension-ts-seed-simple) that contains the files required to build an extension using TypeScript. There's a grunt script to automate building, packaging, and publishing the extension.
+For a step-by-step walkthrough, see [Develop a web extension](../get-started/node.md). You can also clone the [Azure DevOps extension sample repo](https://github.com/microsoft/azure-devops-extension-sample) and use any sample as a starting template.
 
 ## Related content
 

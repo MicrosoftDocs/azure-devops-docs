@@ -1,10 +1,20 @@
-1. Get the Client SDK `SDK.js` file and add it to your web app. Place it in the `home/sdk/scripts` folder.
-	1. Use the 'npm install' command to retrieve the SDK: `npm install azure-devops-extension-sdk`. 
-	2. To learn more about the SDK, visit the [Client SDK GitHub Page](https://github.com/microsoft/azure-devops-extension-sdk).
+---
+ms.topic: include
+ms.author: chcomley
+author: chcomley
+ms.date: 04/03/2026
+ms.subservice: azure-devops-ecosystem
+---
 
-1. Add the web page that you want to display as a hub. We're doing a simple `hello-world.html` page here, added to the `home` directory.
+1. Install the [azure-devops-extension-sdk](https://github.com/microsoft/azure-devops-extension-sdk) package and place the `SDK.js` file in `home/sdk/scripts`.
 
-1. In your HTML page, add a reference to the SDK, and call `init()` and `notifyLoadSucceeded()`.
+	```bash
+	npm install azure-devops-extension-sdk
+	```
+
+1. Create the web page you want to display. The following example adds a simple `hello-world.html` page to the `home` directory.
+
+1. In your HTML page, reference the SDK and call `SDK.init()` followed by `SDK.notifyLoadSucceeded()`.
 
 	```html
 	<!DOCTYPE html>
