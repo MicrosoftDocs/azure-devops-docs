@@ -1441,6 +1441,14 @@
       ]
     },
     {
+      "source_path": "docs/extend/develop/add-hub-group.md",
+      "redirect_url": "/azure/devops/extend/develop/add-hub#add-a-custom-hub-group",
+      "redirect_document_id": false,
+      "monikers": [
+        "azure-devops"
+      ]
+    },
+    {
       "source_path": "docs/extend/develop/add-query-result-tabs.md",
       "redirect_url": "/previous-versions/azure/devops/extend/develop/add-query-result-tabs",
       "redirect_document_id": false,
@@ -1522,10 +1530,18 @@
     },
     {
       "source_path": "docs/extend/develop/host-navigation.md",
-      "redirect_url": "/previous-versions/azure/devops/extend/develop/host-navigation",
+      "redirect_url": "/azure/devops/extend/develop/work-with-urls",
       "redirect_document_id": false,
       "monikers": [
         "azure-devops-2020"
+      ]
+    },
+    {
+      "source_path": "docs/extend/develop/host-navigation.md",
+      "redirect_url": "/azure/devops/extend/develop/work-with-urls",
+      "redirect_document_id": false,
+      "monikers": [
+        "azure-devops"
       ]
     },
     {
@@ -8706,7 +8722,7 @@
     },
     {
       "source_path": "docs/extend/develop/host-navigation.md",
-      "redirect_url": "/previous-versions/azure/devops/extend/develop/host-navigation",
+      "redirect_url": "/azure/devops/extend/develop/work-with-urls",
       "redirect_document_id": false,
       "monikers": [
         "azure-devops-2019"
@@ -14471,6 +14487,21 @@
     {
       "source_path_from_root": "/docs/pipelines/test/codecoverage-for-pullrequests.md",
       "redirect_url": "/azure/devops/pipelines/test/review-code-coverage-results",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/test/provide-stakeholder-feedback.md",
+      "redirect_url": "/azure/devops/test/request-stakeholder-feedback",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/test/voluntary-stakeholder-feedback.md",
+      "redirect_url": "/azure/devops/test/request-stakeholder-feedback",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/test/track-stakeholder-feedback.md",
+      "redirect_url": "/azure/devops/test/request-stakeholder-feedback",
       "redirect_document_id": false
     }
   ]

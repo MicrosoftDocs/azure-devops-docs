@@ -1,122 +1,113 @@
 ---
 ms.subservice: azure-devops-ecosystem
-title: Package and Publish an Integration
-description: How to package and publish your integration to the Visual Studio Marketplace
+title: Package and publish an integration
+titleSuffix: Azure DevOps
+description: Package and publish your integration to the Visual Studio Marketplace so users can discover your tool, service, or product.
 ms.assetid: 61550050-c6d7-40e1-9ea7-030b48b04e3b
 ms.topic: how-to
+ms.custom: UpdateFrequency3
 monikerRange: '<= azure-devops'
 ms.author: chcomley
 author: chcomley
-ms.date: 06/06/2025
+ms.date: 04/03/2026
+ai-usage: ai-assisted
 ---
 
-# Package and publish an integration to the Marketplace
+# Package and publish an integration
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
-This article explains how to publish your tool, service, or product that integrates with Azure DevOps on the Visual Studio Marketplace. Publishing on the Marketplace helps users discover solutions that extend and enhance their Azure DevOps experience. The Marketplace serves as the central hub for individuals and teams to find integrations and extensions.
-
-[Browse the Marketplace](https://marketplace.visualstudio.com) to see examples of other integrations and extensions.
+Publish your tool, service, or product that integrates with Azure DevOps on the [Visual Studio Marketplace](https://marketplace.visualstudio.com). The Marketplace is the central hub for users to discover integrations and extensions.
 
 > [!NOTE]
-> For packaging and publishing information for extensions, see [Package & Publish Extensions](overview.md).
+> This article covers *integrations* (external tools and services). For *extensions* (add-ons that run inside Azure DevOps), see [Package and publish extensions](overview.md).
 
 ## Prerequisites
 
 [!INCLUDE [](includes/before-publishing.md)]
 
-### Gather required assets
+You also need the following assets:
 
-- At least one screenshot of your integration.
-- Call-to-action or get started URL for users.
+- At least one screenshot of your integration
+- A call-to-action or get-started URL for users
 
-> [!NOTE]
-> - The term `extension` is used in referenced documentation. Extensions are another type of Marketplace item and share many similarities with integrations.
-> - Need help getting your integration on the Marketplace? [Contact us](https://go.microsoft.com/fwlink/?LinkId=615292).
-
-### Create a publisher account
+## Create a publisher
 
 [!INCLUDE [](./includes/create-publisher.md)]
 
-### Organize your manifest and assets
+## Set up project structure
 
-To organize your manifest and assets, do the following steps:
+Create the following directory layout:
 
-1. Create a `home` folder to store required assets.
-2. Create an `images` folder for:
-    * Your integration logo (128x128 pixels)
-    * Screenshots (1366x768 pixels)
-3. Create an `overview.md` file to describe your integration. For more information, see [GitHub Flavored Markdown](https://help.github.com/articles/github-flavored-markdown/).
-4. Create a `vss-integration.json` file, which is your Marketplace listing's manifest file. For more information, see the [extension manifest reference](../develop/manifest.md).
+```
+home/
+├── images/
+│   ├── integration-logo.png    (128×128 px minimum)
+│   └── screenshot.png          (1366×768 px)
+├── overview.md
+└── vss-integration.json
+```
 
-#### Complete the extension manifest
+| File | Purpose |
+|------|---------|
+| `overview.md` | [GitHub Flavored Markdown](https://help.github.com/articles/github-flavored-markdown/) description of your integration. |
+| `vss-integration.json` | Marketplace manifest. See [Extension manifest reference](../develop/manifest.md). |
 
-Publishing to the Marketplace starts with creating a manifest file that defines your integration and its key discovery details (screenshots, logos, overview content). This information is used to present your integration to users on the Marketplace.
+## Create the manifest
 
-1. Fill your `vss-integration.json` file with the following JSON:
+Create `vss-integration.json` with the following content, then update the values for your integration:
 
-   [!code-javascript[JSON](../_data/integration.json)]
+[!code-javascript[JSON](../_data/integration.json)]
 
-2. Update the JSON using the following references:
+Update fields using the following references:
 
 [!INCLUDE [](../includes/manifest-core.md)]
 [!INCLUDE [](../includes/manifest-discovery.md)]
 
-#### Understand the details page
-
-* 1 - description
-* 2 - icon
-* 3 - categories
-* 4 - screenshots
-* 5 - content (details)
-* 6 - links
-* 7 - branding
-
-![Screenshot shows details card for extension in the Visual Studio Marketplace.](../develop/media/extension-details-page.png)
-
 > [!WARNING]
-> Set the `public` attribute to `false` or omit it to prevent your integration from becoming visible to all Marketplace users before you're ready.
+> Set `public` to `false` or omit it until you're ready for public visibility.
 
-<a name="package"></a>
+## Package the integration
 
-### Package your manifest and assets
+1. Install the packaging tool if you haven't already:
 
-#### Install the package tool (tfx-cli)
+   ```bash
+   npm install -g tfx-cli
+   ```
 
-Install or update the cross-platform CLI for Azure DevOps (tfx-cli) using `npm`:
+2. Package your integration into a .vsix file:
 
-```bash
-npm i -g tfx-cli
-```
+   ```no-highlight
+   tfx extension create --manifest-globs vss-integration.json
+   ```
 
-#### Package your integration in a .vsix file
+   > [!TIP]
+   > Use `--rev-version` to automatically increment the patch version number.
 
-```no-highlight
-tfx extension create --manifest-globs vss-extension.json
-```
-
-> [!NOTE]
-> Increment the version of your extension or integration with every update.  
-> If you haven't updated the version in your manifest, use the `--rev-version` command line switch. This switch automatically increments the *patch* version number and saves the new version to your manifest.
-
-### Publish your integration to the Marketplace
+## Publish to the Marketplace
 
 [!INCLUDE [Publish_extension](../includes/procedures/publish.md)]
 
-### Share your integration
+## Share the integration
 
-Before installing an integration in an Azure DevOps organization, share it with that organization. Sharing is required for development and testing, as it's the only way to run an integration during these stages.
+Before you can install an integration in an Azure DevOps organization, you must share it with that organization.
 
-To share an integration do the following steps:
+1. Select your integration from the list of displayed items.
+2. Select **Share**.
+3. Enter the organization name (for example, `fabrikam-fiber-inc` for `dev.azure.com/fabrikam-fiber-inc`).
 
-1. Select an integration from the list of displayed items 
-2. Select the **Share** button
-3. Specify the name of the organization to make this integration visible to. For example, to make an integration visible to the **dev.azure.com/fabrikam-fiber-inc** organization, specify `fabrikam-fiber-inc`.
-
-#### Update an item
+## Update the integration
 
 [!INCLUDE [Update_extension](../includes/procedures/update.md)]
 
-## Make your integration public
+## Make the integration public
 
-For information on making your integration visible to everyone, see [Make your listing public](./publicize.md).
+To make your integration visible to all Marketplace users, set the [`public` flag](../develop/manifest.md#public-flag) to `true` in your manifest and republish.
+
+For more information about the qualifications required for public listings, see [Make your extension public](overview.md#make-your-extension-public).
+
+## Related content
+
+- [Extension manifest reference](../develop/manifest.md)
+- [Package and publish extensions](overview.md)
+- [Visual Studio Marketplace](https://marketplace.visualstudio.com)

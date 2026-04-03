@@ -1,7 +1,7 @@
 ---
 title: Configure images
 description: Learn how to configure agent images for Managed DevOps Pools.
-ms.date: 03/03/2026
+ms.date: 04/02/2026
 ms.topic: how-to
 ---
 
@@ -314,10 +314,26 @@ Each image includes the following installed software:
 
 | Image | Included software |
 |-------|-------------------|
+| Azure Pipelines - Windows Server 2025 [Gen 2](#azure-pipelines-generation-2-images) | [Included software](https://github.com/actions/runner-images/blob/main/images/windows/Windows2025-Readme.md) |
+| Azure Pipelines - Windows Server 2022 [Gen 2](#azure-pipelines-generation-2-images) | [Included software](https://github.com/actions/runner-images/blob/main/images/windows/Windows2022-Readme.md) |
+| Azure Pipelines - Ubuntu 24.04 [Gen 2](#azure-pipelines-generation-2-images) | [Included software](https://github.com/actions/runner-images/blob/main/images/ubuntu/Ubuntu2404-Readme.md) |
+| Azure Pipelines - Ubuntu 22.04 [Gen 2](#azure-pipelines-generation-2-images) | [Included software](https://github.com/actions/runner-images/blob/main/images/ubuntu/Ubuntu2204-Readme.md) |
 | Azure Pipelines - Windows Server 2025 | [Included software](https://github.com/actions/runner-images/blob/main/images/windows/Windows2025-Readme.md) |
 | Azure Pipelines - Windows Server 2022 | [Included software](https://github.com/actions/runner-images/blob/main/images/windows/Windows2022-Readme.md) |
 | Azure Pipelines - Ubuntu 24.04 | [Included software](https://github.com/actions/runner-images/blob/main/images/ubuntu/Ubuntu2404-Readme.md) |
 | Azure Pipelines - Ubuntu 22.04 | [Included software](https://github.com/actions/runner-images/blob/main/images/ubuntu/Ubuntu2204-Readme.md) |
+
+### Azure Pipelines Generation 2 images
+
+Managed DevOps Pools now offers Generation 2 versions of Azure Pipeline images. Generation 2 VMs use the UEFI-based boot architecture rather than the BIOS-based architecture used by Generation 1 VMs. For more information, see [Support for Generation 2 VMs on Azure](/azure/virtual-machines/generation-2).
+
+The original Generation 1 Azure Pipelines images are still available for use, but are no longer receiving updates. Managed DevOps Pools recommends that you migrate your pools that use the original Generation 1 Azure Pipelines images to the Generation 2 versions.
+
+To migrate your pools to use the Generation 2 Azure Pipelines images:
+
+1. Verify that your pool's [agent size](./configure-pool-settings.md#agent-size) supports Generation 2 images. For a list of supported Generation 2 VM sizes, see [Generation 2 VM sizes](/azure/virtual-machines/generation-2#generation-2-vm-sizes). If your pool's agent size isn't supported for Generation 2 images, change the agent size of your pool to a size that supports Generation 2 images.
+1. [Update your pool](#select-your-pools-image) to replace the Generation 1 image with the corresponding Generation 2 image. The `wellKnownImageName` values for Generation 2 images are the same as the Generation 1 images, with `-g2` appended to the end. For example, if your pool uses the `windows-2025` image, update it to use the `windows-2025-g2` image. For the list of predefined aliases for Azure Pipelines images, see [list of predefined aliases for Azure Pipelines images](#azure-pipelines-image-predefined-aliases).
+1. If your pipelines use [demands](#use-demands-to-specify-an-image) to specify a particular Azure Pipelines image, update the `demands` section to use the alias for the Generation 2 image. For example, if your pipeline has a demand for `- ImageOverride -equals windows-2025`, update it to `- ImageOverride -equals windows-2025-g2`.
 
 [!INCLUDE [image-deprecation](./includes/image-deprecation.md)]
 
@@ -528,6 +544,10 @@ In addition to any aliases that you configure, Azure Pipelines images have the f
 
 | Azure Pipelines image | Predefined alias |
 |-----------------------|------------------|
+| Azure Pipelines - Windows Server 2025 [Gen 2](#azure-pipelines-generation-2-images) | `windows-2025-g2` |
+| Azure Pipelines - Windows Server 2022 [Gen 2](#azure-pipelines-generation-2-images) | `windows-2022-g2` |
+| Azure Pipelines - Ubuntu 24.04 [Gen 2](#azure-pipelines-generation-2-images) | `ubuntu-24.04-g2` |
+| Azure Pipelines - Ubuntu 22.04 [Gen 2](#azure-pipelines-generation-2-images) | `ubuntu-22.04-g2` |
 | Azure Pipelines - Windows Server 2025 | `windows-2025` |
 | Azure Pipelines - Windows Server 2022 | `windows-2022` |
 | Azure Pipelines - Ubuntu 24.04 | `ubuntu-24.04` |
