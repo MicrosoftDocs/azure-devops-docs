@@ -24,7 +24,7 @@ The following section describes new features in development for Managed DevOps P
 
 ## April 2026
 
-* **Azure Pipelines Generation 2 images**: Managed DevOps Pools now offers Generation 2 versions of Azure Pipeline images. Generation 2 VMs use the new UEFI-based boot architecture rather than the BIOS-based architecture used by Generation 1 VMs, and support key features like increased memory, Intel Software Guard Extensions (Intel SGX), and virtualized persistent memory (vPMEM). For more information, see [Support for Generation 2 VMs on Azure](/azure/virtual-machines/generation-2).
+* **Azure Pipelines Generation 2 images**: Managed DevOps Pools now offers Generation 2 versions of Azure Pipeline images. Generation 2 VMs use the UEFI-based boot architecture rather than the BIOS-based architecture used by Generation 1 VMs. For more information about Generation 2 VM capabilities and support details, see [Support for Generation 2 VMs on Azure](/azure/virtual-machines/generation-2).
 
    The original Generation 1 Azure Pipelines images are no longer receiving updates, and the Managed DevOps Pools team recommends that you migrate your pools that use the original Generation 1 Azure Pipelines images to the Generation 2 versions. For more information, see [Azure Pipelines Generation 2 images](./configure-images.md#azure-pipelines-generation-2-images).
 
