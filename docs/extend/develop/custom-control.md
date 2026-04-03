@@ -2,7 +2,7 @@
 title: Add a custom control to the work item form | Extensions for Azure DevOps
 description: Learn how to extend the work item form by adding a custom control in Azure DevOps.
 ms.subservice: azure-devops-ecosystem
-ms.custom: engagement-fy23, devx-track-js, UpdateFrequency3
+ms.custom: engagement-fy23, devx-track-js, UpdateFrequency3
 ms.topic: how-to
 monikerRange: '<= azure-devops'
 ms.author: chcomley

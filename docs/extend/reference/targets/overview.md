@@ -10,7 +10,7 @@ monikerRange: '<= azure-devops'
 ms.topic: reference
 ms.date: 04/03/2026
 ai-usage: ai-assisted
-ms.custom: engagement-fy23, sfi-image-nochange, UpdateFrequency3
+ms.custom: engagement-fy23, sfi-image-nochange, UpdateFrequency3
 ---
 
 # Extensibility points

@@ -30,7 +30,7 @@ If your extension requires backend logic (REST APIs, webhooks, or server-side pr
 1. Create the Azure resource (App Service or Functions app) in the [Azure portal](https://portal.azure.com) or with the [Azure CLI](/cli/azure/).
 2. Deploy your backend code using one of these methods:
    - [GitHub Actions](/azure/app-service/deploy-github-actions)
-   - [Azure Pipelines](/azure/devops/pipelines/targets/azure-web-app)
+   - [Azure Pipelines](/azure/app-service/deploy-azure-pipelines)
    - [Azure CLI](/azure/app-service/deploy-local-git)
 3. Update your extension manifest to point to your Azure-hosted backend:
 

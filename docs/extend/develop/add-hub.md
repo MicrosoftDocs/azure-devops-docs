@@ -83,7 +83,7 @@ Create `hello-world.html` in the root of your extension directory. This page loa
 </html>
 ```
 
-For the full list of hub groups you can target, see the [Extensibility points reference](../reference/targets/overview.md#hubs).
+For the full list of hub groups you can target, see the [Extensibility points reference](../reference/targets/overview.md#hubs-and-hub-groups).
 
 ## Create the extension manifest
 

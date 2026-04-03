@@ -3,7 +3,7 @@ ms.subservice: azure-devops-ecosystem
 title: Create a custom consumer for service hooks
 titleSuffix: Azure DevOps
 description: Learn how to create a custom consumer for service hooks in Azure DevOps.
-ms.custom: engagement-fy23, UpdateFrequency3
+ms.custom: engagement-fy23, UpdateFrequency3
 ms.topic: how-to
 monikerRange: '<= azure-devops'
 ms.author: chcomley

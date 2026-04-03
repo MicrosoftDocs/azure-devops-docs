@@ -354,6 +354,12 @@ Version numbers for Azure DevOps Server:
 ### Version examples
 
 #### Cloud and Server extension
+
+```json
+{
+    "targets": [
+        {
+            "id": "Microsoft.VisualStudio.Services",
             "version": "[15.0,)"
         }
     ]

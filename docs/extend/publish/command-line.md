@@ -9,7 +9,7 @@ monikerRange: '<= azure-devops'
 ms.author: chcomley
 author: chcomley
 ai-usage: ai-assisted
-ms.custom: pat-reduction, UpdateFrequency3
+ms.custom: pat-reduction, UpdateFrequency3
 ms.date: 04/03/2026
 ---
 
@@ -24,8 +24,8 @@ For more information, see the overview of [publish, install, and share](./overvi
 
 | Category | Requirements |
 |----------|-------------|
-| **Tools** | [Cross-platform CLI for Azure DevOps (tfx-cli)](#acquire-the-cross-platform-cli-for-azure-devops) installed via npm |
-| **Authentication** | A [Microsoft Entra token](#publish-with-a-microsoft-entra-token-as-a-service-principal) (recommended) or a [personal access token (PAT)](../../organizations/accounts/use-personal-access-tokens-to-authenticate.md) with **Marketplace (publish)** scope |
+| **Tools** | [Cross-platform CLI for Azure DevOps (tfx-cli)](#get-the-tfx-cli-tool) installed via npm |
+| **Authentication** | A [Microsoft Entra token](#publish-with-a-microsoft-entra-token) (recommended) or a [personal access token (PAT)](../../organizations/accounts/use-personal-access-tokens-to-authenticate.md) with **Marketplace (publish)** scope |
 | **Publisher** | A [publisher account](./overview.md) set up in the Visual Studio Marketplace |
 
 [!INCLUDE [use-microsoft-entra-reduce-pats](../../includes/use-microsoft-entra-reduce-pats.md)]

@@ -3,7 +3,7 @@ title: Add a Custom Build or Release Task in an Extension
 description: Learn how to create, test, and publish custom build or release pipeline tasks as Azure DevOps extensions with TypeScript and Node.js.
 ms.assetid: 98821825-da46-498e-9b01-64d3a8c78ea0
 ms.subservice: azure-devops-ecosystem
-ms.custom: freshness-fy22q3, UpdateFrequency3
+ms.custom: freshness-fy22q3, UpdateFrequency3
 ms.topic: how-to
 ai-usage: ai-assisted
 monikerRange: '<= azure-devops'
@@ -986,7 +986,7 @@ A: **Automatic deletion isn't supported** as it would break existing pipelines. 
 2. **Version management**: [Bump the task version](https://github.com/microsoft/azure-pipelines-tasks/blob/master/docs/taskversionbumping.md)
 3. **Communication**: Notify users about the deprecation timeline
 
-### Q: How do I upgrade to the latest Node.js?
+### Q: How can I upgrade my task to the latest Node.js version?
 
 A: Upgrade to [the latest Node version](https://nodejs.org/en/download/) for better performance and security. For migration guidance, see [Upgrading tasks to Node 20](https://github.com/microsoft/azure-pipelines-tasks/blob/master/docs/migrateNode20.md).
 

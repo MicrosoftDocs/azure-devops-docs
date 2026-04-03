@@ -9,7 +9,7 @@ monikerRange: '<= azure-devops'
 ms.author: chcomley
 author: chcomley
 ms.date: 04/03/2026
-ms.custom: sfi-image-nochange, UpdateFrequency3
+ms.custom: sfi-image-nochange, UpdateFrequency3
 ---
 
 # Authenticate and secure web extensions
