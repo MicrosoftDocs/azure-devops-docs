@@ -9,5 +9,5 @@ ms.date: 09/30/2025
 > The **Request feedback** shortcut menu isn't available in Azure DevOps Services. Use one of these alternatives:
 >
 > - Send an email or chat message to the stakeholders you want to reach, or
-> - Use the [Test & Feedback extension](../voluntary-stakeholder-feedback.md) to collect feedback directly from a browser.
+> - Use the [Test & Feedback extension](../request-stakeholder-feedback.md#voluntary) to collect feedback directly from a browser.
 >

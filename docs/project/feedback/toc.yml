@@ -2,12 +2,9 @@
   href: index.md
 - name: Test & Feedback extension
   items:
-  - name: Request stakeholder feedback
-    displayName: stakeholder, feedback, request
+  - name: Request and provide stakeholder feedback
+    displayName: stakeholder, feedback, request, provide, voluntary, track
     href: ../../test/request-stakeholder-feedback.md?toc=/azure/devops/project/toc.json
-  - name: Provide stakeholder feedback
-    displayName: stakeholder, feedback, provide
-    href: ../../test/provide-stakeholder-feedback.md?toc=/azure/devops/project/toc.json
   - name: Get insights from tests
     displayName: insights, exploratory
     href: ../../test/insights-exploratory-testing.md
@@ -26,12 +23,6 @@
   - name: Add to existing bugs
     displayName: bugs, exploratory
     href: ../../test/add-to-bugs-exploratory-testing.md
-  - name: Provide feedback without a request
-    displayName: stakeholder, feedback, voluntary
-    href: ../../test/voluntary-stakeholder-feedback.md?toc=/azure/devops/project/toc.json
-  - name: Track stakeholder feedback requests
-    displayName: stakeholder, feedback, response, query
-    href: ../../test/track-stakeholder-feedback.md?toc=/azure/devops/project/toc.json
 - name: Microsoft Feedback client (Archived)
   items:
   - name: Request feedback
