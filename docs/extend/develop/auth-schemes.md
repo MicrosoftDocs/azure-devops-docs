@@ -5,7 +5,7 @@ description: Define authentication schemes for custom service endpoint types in 
 ms.assetid: bffc76b7-f6ba-41f0-8460-ccb44d45d670
 ms.subservice: azure-devops-ecosystem
 ms.custom: pat-reduction, UpdateFrequency3
-ms.topic: concept
+ms.topic: concept-article
 monikerRange: '<= azure-devops'
 ms.author: chcomley
 author: chcomley
