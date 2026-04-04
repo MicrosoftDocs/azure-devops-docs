@@ -85,7 +85,7 @@ Have at least two people with administrative privileges. To find existing admins
 
 ### Set security policies
 
-Configure security policies in **Organization settings** > **Policies** to control OAuth access, SSH authentication, public project creation, and GitHub account invitations. For more information, see [Change application connection & security policies](../organizations/accounts/change-application-access-policies.md).
+Configure security policies in **Organization settings** > **Policies** to control application access, SSH authentication, public project creation, and GitHub account invitations. For more information, see [Change application connection & security policies](../organizations/accounts/change-application-access-policies.md).
 
 :::image type="content" source="../media/policies/security-policies.png" alt-text="Screenshot of Azure DevOps Security Policies."::: 
 

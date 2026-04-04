@@ -9,7 +9,7 @@ ms.custom: devx-track-dotnet, pat-reduction, copilot-scenario-highlight
 monikerRange: '<= azure-devops'
 ms.author: chcomley
 author: chcomley
-ms.date: 03/02/2026
+ms.date: 03/30/2026
 ---
 
 # REST API samples for Azure DevOps
@@ -26,14 +26,13 @@ Azure DevOps REST APIs support several authentication methods:
 
 - **Microsoft Entra ID** - Recommended for production applications (used in these samples)
 - **Personal Access Tokens (PATs)** - Simple authentication for scripts and testing
-- **OAuth 2.0** - For third-party applications
-- **Service principals** - For automated scenarios
+- **Service principals and managed identities** - For automated scenarios
 
 [!INCLUDE [ai-assistance-mcp-server-tip](../../../includes/ai-assistance-mcp-server-tip.md)]
 
 ### Microsoft Entra ID authentication
 
-For Microsoft Entra ID authentication, you'll need to register an application and obtain an access token. Here's how to authenticate using the Microsoft Authentication Library (MSAL):
+For Microsoft Entra ID authentication, register an application and get an access token. Here's how to authenticate by using the Microsoft Authentication Library (MSAL):
 
 First, install the required NuGet package:
 
@@ -497,20 +496,20 @@ catch (Exception ex)
 
 ## Best practices
 
-- **Use Microsoft Entra ID**: Use Microsoft Entra ID authentication over PATs for production applications
-- **Use HTTPS**: Always use secure connections for API calls
-- **Handle rate limits**: Implement retry logic with exponential backoff
-- **Cache responses**: Store frequently accessed data to reduce API calls
-- **Use specific API versions**: Pin to specific versions to avoid breaking changes
-- **Validate inputs**: Always validate user inputs before making API calls
-- **Log appropriately**: Log API interactions for debugging, but never log credentials
-- **Token management**: Implement proper token caching and refresh logic for Microsoft Entra ID tokens
+- **Use Microsoft Entra ID**: Use Microsoft Entra ID authentication over PATs for production applications.
+- **Use HTTPS**: Always use secure connections for API calls.
+- **Handle rate limits**: Implement retry logic with exponential backoff.
+- **Cache responses**: Store frequently accessed data to reduce API calls.
+- **Use specific API versions**: Pin to specific versions to avoid breaking changes.
+- **Validate inputs**: Always validate user inputs before making API calls.
+- **Log appropriately**: Log API interactions for debugging, but never log credentials.
+- **Token management**: Implement proper token caching and refresh logic for Microsoft Entra ID tokens.
 
 <a id="use-ai-assistance"></a>
 
 ## Use AI to generate REST API code
 
-If you have the [Azure DevOps MCP Server](../../../mcp-server/mcp-server-overview.md) connected to your AI agent in agent mode, you can use natural language prompts to generate REST API code for Azure DevOps.
+If you connect the [Azure DevOps MCP Server](../../../mcp-server/mcp-server-overview.md) to your AI agent in agent mode, you can use natural language prompts to generate REST API code for Azure DevOps.
 
 | Task | Example prompt |
 |------|----------------|
