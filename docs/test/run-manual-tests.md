@@ -108,7 +108,7 @@ You can see any bugs reported during your test session.
 
 Instead of creating a new bug, update an existing bug with the failure details. Select **Add to existing bug** from the **Create bug** drop-down menu.
 
-![Screenshot shows Test Runner with Add to existing bug selected](media/run-manual-tests/find-existing-bug.png)
+![Screenshot shows Test Runner with Add to existing bug selected.](media/run-manual-tests/find-existing-bug.png)
 
 ## Save and review results
 

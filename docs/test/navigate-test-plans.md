@@ -26,28 +26,28 @@ In this article, you learn how to navigate the **Test Plans** page, including ho
 
 The **Mine** page shows test plans that you created, are assigned to, or marked as favorites. You can expand and collapse plans by team to quickly locate specific plans. Choose :::image type="icon" source="../media/icons/more-actions.png" border="false"::: **More options** to edit or delete a plan.
 
-:::image type="content" source="media/navigate/mine-page-more-options-menu.png" alt-text="Mine page, menu options to edit or delete a test plan.":::
+:::image type="content" source="media/navigate/mine-page-more-options-menu.png" alt-text="Screenshot of the Mine page showing menu options to edit or delete a test plan.":::
 
 Use the filter controls to find plans by name, team, state, or iteration. 
 
-:::image type="content" source="media/navigate/filter-options.png" alt-text="Filter a test plans list."::: 
+:::image type="content" source="media/navigate/filter-options.png" alt-text="Screenshot of filter options for a test plans list."::: 
 
 ## The All page
 
 The **All** page shows a list of all test plans.
 Filter test plans, and edit and delete plans by using the **More options** menu, in the same way as on the **Mine** page. Use this page to add any test plan to your favorites list. 
 
-:::image type="content" source="media/navigate/all-page-favorite-test-plan.png" alt-text="The All list of test plans, favorite a test plan."::: 
+:::image type="content" source="media/navigate/all-page-favorite-test-plan.png" alt-text="Screenshot of the All list of test plans with the favorite option highlighted."::: 
 
 You can also add a plan to your favorites list while you view it.
 
-:::image type="content" source="media/navigate/test-plan-favorite.png" alt-text="Add a plan to your favorites list."::: 
+:::image type="content" source="media/navigate/test-plan-favorite.png" alt-text="Screenshot of adding a test plan to your favorites list."::: 
  
 <a name="testplanheader"></a>
 
 ## Test plan header
 
-:::image type="content" source="media/navigate/test-plan-header.png" alt-text="Test plan header.":::
+:::image type="content" source="media/navigate/test-plan-header.png" alt-text="Screenshot of the test plan header.":::
 
 From the test plan header, you can:
 
@@ -67,19 +67,19 @@ Select :::image type="icon" source="../media/icons/more-actions.png" border="fal
 
 Select **Test plan settings** to configure test runs or test outcomes.
 
-:::image type="content" source="media/navigate/test-plan-settings-dialog-undefined.png" alt-text="Test plan settings dialog.":::
+:::image type="content" source="media/navigate/test-plan-settings-dialog-undefined.png" alt-text="Screenshot of the test plan settings dialog.":::
 
 ### Copy test plan
 
 Create a new test plan for each sprint or release. You can copy the test plan from the previous cycle and make a few changes to get the copied test plan ready for the new cycle. This option lets you copy or clone test plans within a project.
 
-:::image type="content" source="media/navigate/copy-test-plan.png" alt-text="Copy test plan dialog.":::
+:::image type="content" source="media/navigate/copy-test-plan.png" alt-text="Screenshot of the Copy test plan dialog.":::
 
 <a name="testsuitestree"></a>
 
 ## Test suites header and tree
 
-:::image type="content" source="media/navigate/test-suites-tree.png" alt-text="Test suites tree menu options":::
+:::image type="content" source="media/navigate/test-suites-tree.png" alt-text="Screenshot of the test suites tree menu options.":::
 
 ### Test suites header tasks 
 
@@ -106,13 +106,13 @@ Select :::image type="icon" source="../media/icons/more-actions.png" border="fal
 - **Import test suites**: Import test cases present in other suites from other test plans in the same project or even across projects.
 
 **Export test suite dialog**  
-:::image type="content" source="media/navigate/export-dialog.png" alt-text="Define tab, Export test suite dialog.":::
+:::image type="content" source="media/navigate/export-dialog.png" alt-text="Screenshot of the Define tab showing the Export test suite dialog.":::
 
 **Import test suites**
 
 Reuse the suites you created and import them into the current suite or plan. Select the **Project**, **Test Plan**, and **Test Suite** from which you want to import the tests. Depending upon the suite you select, the entire hierarchy of that suite and corresponding test cases is imported into the current plan. The test cases are added as a reference and not a clone or copy. Also, you can't import test suites from the same test plan. 
 
-:::image type="content" source="media/navigate/import-test-suites-dialog.png" alt-text="Test suites tree import overview.":::
+:::image type="content" source="media/navigate/import-test-suites-dialog.png" alt-text="Screenshot of the test suites tree import dialog.":::
 
 <a name="definetab"></a>
 
@@ -120,7 +120,7 @@ Reuse the suites you created and import them into the current suite or plan. Sel
 
 From the **Define** tab, you can collate, add, and manage test cases for a test suite. Use the [**Execute** tab](#executetab) for assigning test points and executing them. 
 
-:::image type="content" source="media/navigate/define-tab-tasks.png" alt-text="Define tab task overview.":::
+:::image type="content" source="media/navigate/define-tab-tasks.png" alt-text="Screenshot of the Define tab task overview.":::
  
 
 ### Define test case tasks 
@@ -137,11 +137,11 @@ From the **Define** tab, you can complete the following tasks.
 
 **Add existing test cases to a test suite dialog**
 
-:::image type="content" source="media/navigate/add-test-cases-to-suite-dialog.png" alt-text="**Define** tab, add existing test cases dialog.":::
+:::image type="content" source="media/navigate/add-test-cases-to-suite-dialog.png" alt-text="Screenshot of the Define tab showing the add existing test cases dialog.":::
 
 ### Define tab toolbar options
 
-:::image type="content" source="media/navigate/define-tab-toolbar-2.png" alt-text="**Define** tab, toolbar options.":::
+:::image type="content" source="media/navigate/define-tab-toolbar-2.png" alt-text="Screenshot of the Define tab toolbar options.":::
 
 From the **Define** tab, toolbar, use the following options: 
 
@@ -156,7 +156,7 @@ From the **Define** tab, toolbar, use the following options:
 
 ### Define tab More options
 
-:::image type="content" source="media/navigate/define-tab-context-menu.png" alt-text="Define tab, test case More options menu.":::
+:::image type="content" source="media/navigate/define-tab-context-menu.png" alt-text="Screenshot of the Define tab showing the test case More options menu.":::
 
 Choose :::image type="icon" source="../media/icons/more-actions.png" border="false"::: **More options** on a test case to access the following actions:
 
@@ -173,7 +173,7 @@ Choose :::image type="icon" source="../media/icons/more-actions.png" border="fal
 
 Select **Copy test case** to copy or clone a test case. Enter the destination project, destination test plan, and destination test suite where you want to create the copy or cloned test case. You can also specify whether you want to include existing links and attachments in the cloned copy. 
 
-:::image type="content" source="media/navigate/copy-test-cases.png" alt-text="Define tab copy test cases menu option and dialog.":::
+:::image type="content" source="media/navigate/copy-test-cases.png" alt-text="Screenshot of the Define tab showing the copy test cases menu option and dialog.":::
 
 ### View linked items 
 
@@ -182,17 +182,17 @@ Use the **View linked items** option to review objects linked to the test case. 
 - **Requirements**: Includes any work item that belongs to the Requirements Category, such as User Stories (Agile), Product Backlog Items (Scrum), Requirements (CMMI).
 - **Bugs**: Includes bugs filed as part of test execution and any work items that belong to the bug Category that links to the test case.
  
-:::image type="content" source="media/navigate/view-linked-items.png" alt-text="Define tab, View linked items dialog.":::
+:::image type="content" source="media/navigate/view-linked-items.png" alt-text="Screenshot of the Define tab showing the View linked items dialog.":::
 
 ### Bulk update using the Grid view
 
 Select the :::image type="icon" source="media/navigate/grid-icon.png" border="false"::: **Grid View**  to perform bulk updates to the test cases.  
 
-:::image type="content" source="media/navigate/grid-view.png" alt-text="Define tab, grid view.":::
+:::image type="content" source="media/navigate/grid-view.png" alt-text="Screenshot of the Define tab in grid view.":::
 
 Select a cell to edit the text in that cell. Right-click within a cell to choose an option to **Insert row**, **Delete row**, or **Clear row**. Select :::image type="icon" source="media/navigate/bulk-save-icon.png" border="false"::: **Save test cases** to perform a bulk save of your changes. Or, select :::image type="icon" source="media/navigate/grid-refresh.png" border="false"::: **Refresh** to clear your changes. When complete, select **Close Grid**. 
 
-:::image type="content" source="media/navigate/grid-view-cell-options.png" alt-text="Define tab, grid view, cell options.":::
+:::image type="content" source="media/navigate/grid-view-cell-options.png" alt-text="Screenshot of the Define tab grid view showing cell options.":::
 
 <a name="executetab"></a>
 
@@ -200,7 +200,7 @@ Select a cell to edit the text in that cell. Right-click within a cell to choose
 
 Use the **Execute** tab to assign test points or run tests.   
 
-:::image type="content" source="media/navigate/execute-tab-test-points-overview.png" alt-text="Execute tab overview.":::
+:::image type="content" source="media/navigate/execute-tab-test-points-overview.png" alt-text="Screenshot of the Execute tab overview.":::
 
 **What is a test point?** [!INCLUDE [test-point-definition](includes/test-point-definition.md)]
 
@@ -211,7 +211,7 @@ Test cases are reusable entities. When you include them in a test plan or suite,
 From the **Execute** tab, you can perform the following tasks:
 
 - **Bulk mark test points**: Quickly mark the outcome of one or more test points&mdash;**Passed**, **Failed**, **Blocked**, or **Not Applicable**&mdash;without running the test case through the Test runner.  
-- **Run test points**:Run the test cases by individually going through each test step and marking them pass or fail by using a Test runner. Depending on the application you're testing, you can use the **Web Runner** for testing a "web application" or the **Desktop Runner** for testing desktop or web applications. Select **Run with options** to specify a **Build** against which you want to perform the testing. 
+- **Run test points**: Run the test cases by individually going through each test step and marking them pass or fail by using a Test runner. Depending on the application you're testing, you can use the **Web Runner** for testing a "web application" or the **Desktop Runner** for testing desktop or web applications. Select **Run with options** to specify a **Build** against which you want to perform the testing. 
 - **Column options**: Add or remove columns. The list of columns available for selection is associated with test points, such as Run by, Assigned Tester, Configuration, and more. 
 - **Toggle Full screen view**: View the contents of the page in a full screen mode. 
 - **Filter**: Filter the list of test points by using the fields of a test case **Title**, **ID**, **Outcome**, **Tester**, **Configuration**, **Assigned To**, or **State**.   You can also sort the list by choosing a column header.
@@ -221,11 +221,11 @@ From the **Execute** tab, you can perform the following tasks:
 
 Choose :::image type="icon" source="media/navigate/column-options-icon.png" border="false"::: **Column options** to open the Column options dialog. Add or remove columns and drag and drop them in the order you want. 
 
-:::image type="content" source="media/navigate/column-options.png" alt-text="Column options dialog.":::
+:::image type="content" source="media/navigate/column-options.png" alt-text="Screenshot of the Column options dialog.":::
 
 ### Test point More options
 
-:::image type="content" source="media/navigate/test-point-node-context-menu.png" alt-text="Execute tab, test point More options menu.":::
+:::image type="content" source="media/navigate/test-point-node-context-menu.png" alt-text="Screenshot of the Execute tab showing the test point More options menu.":::
 
 Select :::image type="icon" source="../media/icons/more-actions.png" border="false"::: **More options** on a test point to access the following actions:
 
