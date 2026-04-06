@@ -28,7 +28,7 @@ We are excited to announce that the new Test Run Hub is gradually going generall
 
 ### Improved test case import wizard
 
-We've improved the test case import wizard to help boost your productivity. It includes enhanced auto‑mapping, reusable mapping templates that can be shared across teams, and additional improvements to streamline imports.For details, see the import test cases public documentation [here](/azure/devops/test/bulk-import-export-test-cases?view=azure-devops#import-test-cases).
+We've improved the test case import wizard to help boost your productivity. It includes enhanced auto‑mapping, reusable mapping templates that can be shared across teams, and additional improvements to streamline imports. For details, see the import test cases public documentation [here](/azure/devops/test/bulk-import-export-test-cases#import-test-cases).
 
 ### Focused test point history panel
 

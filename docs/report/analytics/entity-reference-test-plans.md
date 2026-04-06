@@ -93,7 +93,7 @@ Navigational properties include [`Project`](entity-reference-general.md#projects
 |**Test Result Outcome** | `LastResultOutcome` | Enumerated | Specifies the last test result outcome. Valid values are listed as follows for [TestOutcome](#testoutcome-enumerated-type-members).  | 
 |**Test Suite Id**   | `TestSuiteId` | Int32 | The work item ID assigned to the associated test suite.     |  
 
-To review test points via the user interface, see [Run manual tests, Save results, close the session, and review results](../../test/run-manual-tests.md#save-results-close-the-session-and-review-results). 
+To review test points via the user interface, see [Run manual tests, Save and review results](../../test/run-manual-tests.md#save-and-review-results). 
 
 ### Navigation properties
 
