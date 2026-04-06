@@ -265,6 +265,7 @@ The following tables describe the events (or actions) available through Azure De
 | `Process.Control.CreateWithoutLabel` | Control created for work item type "{WorkItemTypeReferenceName}" in process "{ProcessName}". |
 | `Process.Control.Delete` | A control was deleted for work item type "{WorkItemTypeReferenceName}" in process "{ProcessName}". |
 | `Process.Control.Update` | Control "{ControlLabel}" updated for work item type "{WorkItemTypeReferenceName}" in process "{ProcessName}". |
+| `Process.Control.UpdateWithoutLabel` | Control updated for work item type "{WorkItemTypeReferenceName}" in process "{ProcessName}". |
 | `Process.Field.Add` | Field "{FieldReferenceName}" created on work item type "{WorkItemTypeReferenceName}" in process "{ProcessName}". |
 | `Process.Field.Create` | Field "{FieldName}" created for process "{ProcessName}". |
 | `Process.Field.Delete` | Field "{FieldReferenceName}" deleted. |
@@ -282,6 +283,7 @@ The following tables describe the events (or actions) available through Azure De
 | `Process.Page.Delete` | Page "{PageName}" deleted from work item type "{WorkItemTypeReferenceName}". |
 | `Process.Page.Update` | Page "{PageName}" updated for work item type "{WorkItemTypeReferenceName}". |
 | `Process.Process.CloneXmlToInherited` | The process "{ParentProcessName}" was cloned to an inherited process called "{TargetProcessName}". |
+| `Process.Process.Create` | Created inherited process "{ProcessName}". |
 | `Process.Process.Delete` | Process "{ProcessName}" was set as deleted. |
 | `Process.Process.Edit` | Process with the name "{OldProcessName}" was modified, and has the following name {NewProcessInformation}. |
 | `Process.Process.EditWithoutNewInformation` | Process with the name "{OldProcessName}" was modified. |
@@ -293,6 +295,7 @@ The following tables describe the events (or actions) available through Azure De
 | `Process.State.Create` | State "{StateName}" added to "{WorkItemTypeReferenceName}" in process "{ProcessName}". |
 | `Process.State.Delete` | State "{StateName}" deleted from "{WorkItemTypeReferenceName}" in process "{ProcessName}". |
 | `Process.State.Update` | State "{StateName}" updated in "{WorkItemTypeReferenceName}" in process "{ProcessName}". |
+| `Process.SystemControl.Delete` | SystemControl "{ControlId}" deleted in "{WorkItemTypeReferenceName}" for process "{ProcessName}". |
 | `Process.SystemControl.Update` | SystemControl "{ControlId}" updated in "{WorkItemTypeReferenceName}" for process "{ProcessName}". |
 | `Process.WorkItemType.Create` | New work item type "{WorkItemTypeName}" created for process "{ProcessName}". |
 | `Process.WorkItemType.Delete` | Work item type "{WorkItemTypeReferenceName}" deleted from process "{ProcessName}". |
