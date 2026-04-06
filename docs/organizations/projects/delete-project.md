@@ -60,7 +60,7 @@ Use the following procedures to save data that users most care about, such as so
 
 * Build data: To save logs and data in your drop build folders, see [View build results](/previous-versions/ms181733(v=vs.140)).
 
-* **Work item tracking data: Create a work item query and open it [using Excel](../../boards/backlogs/office/bulk-add-modify-work-items-excel.md). Save the Excel spreadsheet.
+* Work item tracking data: Create a work item query and open it [using Excel](../../boards/backlogs/office/bulk-add-modify-work-items-excel.md). Save the Excel spreadsheet.
 
    This process doesn't save any attachments, change history, or links to other artifacts.
 
@@ -269,6 +269,7 @@ If you inadvertently delete a project in Azure DevOps, you can restore it within
     ```
 
 Your project and associated data are restored.
+***
 
 ## FAQs
 
