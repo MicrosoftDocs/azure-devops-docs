@@ -53,12 +53,10 @@ Use the following procedures to save data that users most care about, such as so
 
 * Source code and custom build templates: Download your files as a zip file. Select ![Repository actions](../../media/icons/actions-icon.png) for the repository, file, or folder and select Download as Zip. Or, select :::image type="icon" source="../../boards/media/icons/download-icon.png" border="false"::: Download to download either all of the files in the currently selected folder, or the currently selected file.
 
-    > [!div class="mx-imgBorder"]
-  > ![Screenshot of Downloading code.](media/public/download-zip-file.png)
-  
-    This process doesn't save any change history or links to other artifacts. If you use Git, [clone your repositories](../../repos/git/gitquickstart.md) to retain the full project history and all the branches.
-
-* Build data: To save logs and data in your drop build folders, see [View build results](/previous-versions/ms181733(v=vs.140)).
+> [!div class="mx-imgBorder"]
+```
+This process doesn't save any change history or links to other artifacts. If you use Git, [clone your repositories](../../repos/git/gitquickstart.md) to retain the full project history and all the branches.
+```* Build data: To save logs and data in your drop build folders, see [View build results](/previous-versions/ms181733(v=vs.140)).
 
 * **Work item tracking data: Create a work item query and open it [using Excel](../../boards/backlogs/office/bulk-add-modify-work-items-excel.md). Save the Excel spreadsheet.
 
@@ -158,9 +156,13 @@ az devops project delete --id 9a61d475-b1a7-4da7-b9db-80df15ac985c --yes
 
 ::: moniker-end
 
+::: moniker range="< azure-devops"
+
 [!INCLUDE [temp](../../includes/note-cli-not-supported.md)] 
 
-*
+::: moniker-end
+
+***
 
 ::: moniker range="< azure-devops"
 
