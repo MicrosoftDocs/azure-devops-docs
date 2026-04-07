@@ -205,7 +205,7 @@ The **default retention policy** defines the default retention values applied to
 
 The **Permanently destroy releases** controls how long deleted releases are kept before permanent removal. Individual release pipelines can't override this policy.
 
-:::image type="content" source="media/on-premises-release-retention.png" alt-text="On premises release retention settings":::
+:::image type="content" source="media/on-premises-release-retention.png" alt-text="Screenshot of the retention policy settings in Azure DevOps Server.":::
 
 ## Set collection-level retention policies
 
@@ -241,7 +241,7 @@ Use **Copy Files** instead of [Publish Build Artifacts](/azure/devops/pipelines/
   > [!div class="mx-imgBorder"]
   > ![copy files](media/copy_files_classic_task.png)
 
-1. Configure the **Copy Files** task.
+2. Configure the **Copy Files** task.
 
   > [!div class="mx-imgBorder"]
   > ![configure Copy Files](media/copy_files_classic_config.png)
