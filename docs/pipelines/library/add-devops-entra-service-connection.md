@@ -11,6 +11,8 @@ ms.date: 03/23/2026
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-eq-azure-devops.md)]
 
+[!INCLUDE [feature-rollout](../../includes/feature-rollout.md)]
+
 An **Azure DevOps service connection** lets your pipelines authenticate to Azure DevOps without Personal Access Tokens (PATs) by using [Microsoft Entra workload identities](/entra/workload-id/workload-identities-overview). Service principals and managed identities [access Azure DevOps](/azure/devops/integrate/get-started/authentication/service-principal-managed-identity) through [workload identity federation](/entra/workload-id/workload-identity-federation), a zero-secret method that eliminates the need to manage and rotate secrets.
 
 ## Benefits
