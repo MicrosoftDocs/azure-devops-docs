@@ -99,7 +99,7 @@ resources:
   - repository: external-repo
     type: git
     endpoint: my-azdo-connection
-    name: 'external-org/external-project/external-repo'
+    name: 'external-project/external-repo'
     ref: 'refs/heads/main'
 
 steps:
@@ -115,7 +115,7 @@ resources:
     - repository: templates 
       type: git
       endpoint: my-azdo-connection
-      name: 'external-org/external-project/external-repo'
+      name: 'external-project/external-repo'
       ref: "refs/heads/main"    
       
 steps:
