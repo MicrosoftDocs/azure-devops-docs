@@ -44,6 +44,7 @@ Choose the appropriate authentication method based on your application type and 
 | Azure DevOps extensions | Extensions running within Azure DevOps | Custom dashboard widgets and work item forms | [Azure DevOps web extension SDK](https://github.com/Microsoft/azure-devops-extension-sdk) | [Add a dashboard widget](../../../extend/develop/add-dashboard-widget.md) |
 | Azure DevOps Server apps | On-premises Azure DevOps Server integrations | Custom server extensions | [.NET client libraries](../../concepts/dotnet-client-libraries.md) or Windows Auth | [Client library console app](https://github.com/Microsoft/vsts-auth-samples/tree/master/ClientLibraryConsoleAppSample) |
 | Personal/ad hoc scripts | Quick scripts for personal use | PowerShell scripts, curl commands | [Personal access tokens](../../../organizations/accounts/use-personal-access-tokens-to-authenticate.md) | [Get started with the REST APIs](../../how-to/call-rest-api.md) |
+| Azure Pipelines | Access Azure DevOps from pipeline | Consume artifacts from different organization | [Azure DevOps service connection](../../../pipelines/library/add-devops-entra-service-connection.md) | [Add an Azure DevOps Microsoft Entra service connection](../../../pipelines/library/add-devops-entra-service-connection.md) |
 
 ## Suggestions for getting started
 
@@ -127,6 +128,7 @@ Follow these steps:
 
    - Microsoft Entra ID OAuth for user-delegated scenarios
    - Service principals for service-to-service scenarios
+   - Azure DevOps service connection
 
 1. Update the authentication code by using the [Azure DevOps migration authentication samples](https://github.com/microsoft/azure-devops-auth-samples).
 
@@ -152,9 +154,10 @@ These changes don't affect applications that already treat tokens as opaque.
 
 After you choose the authentication method for your scenario, finish the implementation steps:
 
-- **New applications**: [Build Azure DevOps integrations with Microsoft Entra OAuth apps](entra-oauth.md).
-- **Service applications**: [Use service principals and managed identities in Azure DevOps](service-principal-managed-identity.md).
-- **Personal scripts**: [Use personal access tokens](../../../organizations/accounts/use-personal-access-tokens-to-authenticate.md).
+- **New applications**: [Build Azure DevOps integrations with Microsoft Entra OAuth apps](entra-oauth.md)
+- **Service applications**: [Use service principals and managed identities in Azure DevOps](service-principal-managed-identity.md)
+- **Personal scripts**: [Use personal access tokens](../../../organizations/accounts/use-personal-access-tokens-to-authenticate.md)
+- **Azure Pipelines**: [Access Azure DevOps with Entra workload identity](../../../pipelines/library/add-devops-entra-service-connection.md)
 
 <a id="use-ai-assistance"></a>
 
@@ -180,3 +183,4 @@ If you connect the [Azure DevOps MCP Server](../../../mcp-server/mcp-server-over
 - [Azure DevOps Services REST API reference](/rest/api/azure/devops)
 - [Security and identity in Azure DevOps](../../../organizations/security/about-security-identity.md)
 - [Azure DevOps data protection overview](../../../organizations/security/data-protection.md)
+- [Access Azure DevOps with Entra workload identity](../../../pipelines/library/add-devops-entra-service-connection.md)
