@@ -208,9 +208,7 @@ The `&$expand=AssignedTo($select=UserName), Iteration($select=IterationPath), Ar
 
 To learn how, see [Transform Analytics data to generate Power BI reports](transform-analytics-data-report-generation.md). 
 
-## (Optional) Rename fields
-
-Once you've expanded the columns, you may want to rename one or more fields. For example, you can rename the column `AreaPath` to `Area Path`. To learn how, see [Rename column fields](transform-analytics-data-report-generation.md#rename-column-fields). 
+[!INCLUDE [temp](includes/sample-rename-column-fields.md)]
 
 [!INCLUDE [temp](includes/close-apply.md)]
 

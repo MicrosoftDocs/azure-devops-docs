@@ -320,9 +320,7 @@ Prior to creating the report, you'll need to expand the following two columns. T
 
 From the **Transform** menu, change the data type for the `FailedStageCount` column to **Whole Number**. To learn how, see [Transform a column data type](transform-analytics-data-report-generation.md#transform-data-type). 
 
-## (Optional) Rename column fields
-
-You can rename column fields to ones that are more user friendly. For example, you can rename the column `Pipeline.PipelineName` to `Pipeline Name`, or `TotalCount` to `Total Count`. To learn how, see [Rename column fields](transform-analytics-data-report-generation.md#rename-column-fields). 
+[!INCLUDE [temp](includes/sample-rename-column-fields.md)]
 
 [!INCLUDE [temp](includes/close-apply.md)]
 

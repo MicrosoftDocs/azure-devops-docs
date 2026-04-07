@@ -419,9 +419,7 @@ To learn how to expand work items, see [Transform Analytics data to generate Pow
 
 From the **Transform** menu, change the data type for the `TaskDuration80thPercentileInSeconds` column to **Decimal Number**. To learn how, see [Transform a column data type](transform-analytics-data-report-generation.md#transform-data-type).   
 
-## (Optional) Rename column fields
-
-You can rename column fields. For example, you can rename the column `TaskDuration80thPercentileInSeconds` to `80th Percentile`. To learn how, see [Rename column fields](transform-analytics-data-report-generation.md#rename-column-fields). 
+[!INCLUDE [temp](includes/sample-rename-column-fields.md)]
 
 [!INCLUDE [temp](includes/close-apply.md)]
 

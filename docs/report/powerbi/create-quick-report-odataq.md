@@ -153,25 +153,7 @@ The following image shows a sample bug trends report:
 
 :::image type="content" source="media/odatapowerbi-bugtrend-report.png" alt-text="Screenshot of Sample Bug trends line chart report.":::
 
-::: moniker range="azure-devops"
-
-<a id="use-ai-assistance"></a>
-
-## Use AI to create Power BI OData queries
-
-If you configure the [Azure DevOps MCP Server](/azure/devops/mcp-server/mcp-server-overview), you can use AI assistants to help build OData queries for Power BI trend reports.
-
-### Example prompts
-
-| Task | Example prompt |
-|------|----------------|
-| Build a bug trend query | `Write an OData query for Power BI that shows a daily bug count trend grouped by state for <Contoso> project` |
-| Filter by area path | `Create an OData query that trends work items under the "WebApp" area path in <Contoso> project for use in Power BI` |
-| Add iteration filter | `Modify my OData trend query to include only the current sprint in <Contoso> project` |
-| Group by priority | `Write a Power BI OData query that counts bugs grouped by priority and date in <Contoso> project` |
-| Troubleshoot refresh errors | `My Power BI OData query is timing out — help me add server-side aggregation to reduce the data returned from <Contoso> project` |
-
-::: moniker-end
+[!INCLUDE [odata-ai-assistance](includes/odata-ai-assistance.md)]
  
 ## Next step
 

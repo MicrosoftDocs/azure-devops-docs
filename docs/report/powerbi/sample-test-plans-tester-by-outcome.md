@@ -161,6 +161,4 @@ Your report should look similar to the following image.
 
 ## Related articles
 
-- [Overview of sample reports using OData queries](./sample-odata-overview.md)
-- [Connect using Power BI and OData queries](./odataquery-connect.md)
-- [Sample reports and quick reference index](../extend-analytics/quick-ref.md)
+[!INCLUDE [temp](includes/sample-related-articles-test.md)]

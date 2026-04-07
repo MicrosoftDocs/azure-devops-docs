@@ -174,9 +174,7 @@ The following table describes each part of the query.
 From the Power Query Editor, choose the query with the data you want to transform. For a CFD chart, you'll need to 
 expand the `Area`, `Iteration`, and `AssignedTo` columns. To learn how, see the following sections in [Transform Analytics data to generate Power BI reports, Expand columns](transform-analytics-data-report-generation.md#expand-columns). 
 
-## (Optional) Rename fields
-
-Once you've expanded the columns, you may want to rename one or more fields. For example, you can rename the column `AreaPath` to `Area Path`. To learn how, see [Rename column fields](transform-analytics-data-report-generation.md#rename-column-fields). 
+[!INCLUDE [temp](includes/sample-rename-column-fields.md)]
 
 [!INCLUDE [temp](includes/close-apply.md)]
 

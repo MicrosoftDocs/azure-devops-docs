@@ -42,39 +42,7 @@ The following screenshot shows the default views created for a project based on 
 
 [!INCLUDE [labels for default analytics differences](../includes/analytics-image-differences.md)]
 
-When you use the Power BI Data Connector, these same default views appear in the Navigator dialog. The view you select determines the set of records, fields, and history that is loaded into Power BI.
-
-::: moniker range="azure-devops"
-
-1. Select **Azure DevOps** as your data connector.
-
-   :::image type="content" source="./media/get-data-connector.png" alt-text="Screenshot shows the Get Data dialog box where you can select Azure DevOps.":::
-
-1. Enter your account information.
-
-   :::image type="content" source="./media/enter-account.png" alt-text="Screenshot shows the Azure DevOps dialog box where you can enter your organization and project.":::
-
-1. Select the data that you want to use.
-
-   :::image type="content" source="./media/navigator-select-data.png" alt-text="Screenshot shows the Navigator dialog box where you can select the data to pull into Power BI Desktop.":::
-
-::: moniker-end
-
-::: moniker range="<azure-devops"
-
-1. Select **Azure DevOps Server** as your data connector.
-
-   :::image type="content" source="./media/get-data-server-connector.png" alt-text="Screenshot shows the Get Data dialog box where you can select Azure DevOps Server.":::
-
-1. Enter your server information.
-
-   :::image type="content" source="./media/enter-server.png" alt-text="Screenshot shows the Azure DevOps Server dialog box where you can enter your URL and project.":::
-
-1. Select the data that you want to use.
-
-   :::image type="content" source="./media/navigator-select-data.png" alt-text="Screenshot shows the Navigator dialog box where you can select the data to pull into Power BI Desktop.":::
-
-::: moniker-end
+When you use the Power BI Data Connector, these same default views appear in the Navigator dialog. The view you select determines the set of records, fields, and history that is loaded into Power BI. For more information, see [Connect Analytics with Power BI Data Connector](data-connector-connect.md).
 
 ### Options for work item types and historical data
 

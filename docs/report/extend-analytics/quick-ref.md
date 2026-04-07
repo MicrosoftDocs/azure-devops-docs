@@ -76,7 +76,7 @@ Analytics supports several widgets and built-in reports. In addition, we've crea
       - [Failed tests](../powerbi/sample-test-analytics-failed-tests.md)    
       - [Flaky tests](../powerbi/sample-test-analytics-flaky-tests.md)  
       - [Test duration](../powerbi/sample-test-analytics-test-duration.md)  
-      - [Test duration trend](../powerbi/sample-test-analyics-test-duration-trend.md)  
+      - [Test duration trend](../powerbi/sample-test-analytics-test-duration-trend.md)  
       - [Pass rate trend of a test](../powerbi/sample-test-analytics-pass-rate-trend-test.md)  
 
 ## Azure Test Plans sample widgets and reports 

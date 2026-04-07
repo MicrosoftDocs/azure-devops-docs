@@ -4906,6 +4906,11 @@
     },
     {
       "source_path": "docs/report/powerbi/data-connector-examples.md",
+      "redirect_url": "/azure/devops/report/powerbi/data-connector-connect",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/report/powerbi/data-connector-examples.md",
       "redirect_url": "/previous-versions/azure/devops/report/powerbi/data-connector-examples",
       "redirect_document_id": false,
       "monikers": [
@@ -5127,6 +5132,11 @@
       "monikers": [
         "azure-devops-2020"
       ]
+    },
+    {
+      "source_path": "docs/report/powerbi/sample-test-analyics-test-duration-trend.md",
+      "redirect_url": "/azure/devops/report/powerbi/sample-test-analytics-test-duration-trend",
+      "redirect_document_id": true
     },
     {
       "source_path": "docs/report/powerbi/sample-test-analyics-test-duration-trend.md",

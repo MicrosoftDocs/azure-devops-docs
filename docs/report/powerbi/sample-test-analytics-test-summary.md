@@ -446,9 +446,7 @@ The following table describes each part of the query.
 
 [!INCLUDE [temp](includes/rename-query.md)]
   
-## (Optional) Rename column fields
-
-You can rename column fields. For example, you can rename the column `Pipeline.PipelineName` to `Pipeline Name`, or `TotalCount` to `Total Count`. To learn how, see [Rename column fields](transform-analytics-data-report-generation.md#rename-column-fields). 
+[!INCLUDE [temp](includes/sample-rename-column-fields.md)]
 
 [!INCLUDE [temp](includes/close-apply.md)]
 

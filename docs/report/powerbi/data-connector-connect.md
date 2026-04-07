@@ -57,50 +57,52 @@ Ensure you meet the following requirements before connecting Power BI to Azure D
 
 [!INCLUDE [alt-creds-deprecation-notice](../../includes/alt-creds-deprecation-notice.md)]
 
-## Create a new report and connect to Azure DevOps
+## Connect to an Analytics view
 
-Follow these steps to create a new Power BI report and establish a connection to your Azure DevOps Analytics data:
+Follow these steps to connect Power BI to your Azure DevOps Analytics data.
 
-1. **Open Power BI Desktop** and create a new report:
-   - Launch Power BI Desktop on your computer
-   - If the startup screen appears, select **Get data** 
-   - If you're already in Power BI Desktop, select **Home** > **Get Data** from the ribbon
-
-   :::image type="content" source="media/data-connector/get-data-splash-screen.png" alt-text="Screenshot of Power BI Desktop with Get data option highlighted on the startup screen and Home ribbon.":::
-
-2. **Find the Azure DevOps connector**:
-   - In the **Get Data** dialog, select **Online Services**
-   - Look for your Azure DevOps instance
-   - Select the appropriate connector and then select **Connect**
-
-   If you don't see the Azure DevOps connector in the Online Services category:
-   - Ensure you have the latest version of Power BI Desktop installed
-   - Search for "Azure DevOps" in the search box at the top of the Get Data dialog
-   - Look in the **Other** category if it's not in Online Services
-
-   :::image type="content" source="media/data-connector/get-data-azure-devops.png" alt-text="Screenshot of Power BI Get Data dialog with Online Services selected and Azure DevOps (Boards only) connector highlighted.":::
+1. Open Power BI Desktop. If the startup screen appears, select **Get data**. Otherwise, select **Home** > **Get Data** from the ribbon.
 
 [!INCLUDE [connect to an analytics view](../includes/connect-analytics-view.md)]
 
 ## Create reports and dashboards
 
-After successfully loading your Analytics data, you can create various reports and visualizations:
+After successfully loading your Analytics data, you can create various reports and visualizations. The following examples show common report types.
 
-### Get started with report creation
+> [!TIP]  
+> Use the search box if you are working with tables that contain many columns.
 
-1. Explore your data: Review the imported fields and understand the data structure
-2. Plan your visualizations: Identify key metrics and KPIs you want to track
-3. Create initial reports: Start with simple charts and gradually add complexity
-4. Test and iterate: Validate your reports with stakeholders and refine as needed
+### Show card with total count of work items
 
-### Common report types
+1. Load the `Work Items - Today` Analytics view into Power BI.
 
-- Work item trends: Track bug reports, user stories, and feature progress over time
-- Sprint burndown charts: Monitor sprint progress and team velocity
-- Team performance metrics: Analyze throughput, cycle time, and completion rates
-- Backlog analysis: Visualize work distribution and priority alignment
+2. From the **Visualizations** pane, choose **Card**, and drag the `Work Item ID` to **Fields**.
 
-For detailed examples and templates, see [Example reports based on Analytics views](data-connector-examples.md).
+   :::image type="content" source="media/analytics-views/work-item-count-card.png" alt-text="Screenshot of Power BI Visualizations, choose Card and add Work Item ID to Fields.":::
+
+### Create a matrix of work items by area path and state
+
+1. Load `Work Items - Today` Analytics view into Power BI. The data table should include the following columns: `Area Path`, `Assigned To`, `Iteration Path`, `State`, `Title`, `Work Item ID`, and `Work Item Type`.
+
+2. From the **Visualizations** pane, choose **Matrix**, and add `Area Path`, `State`, and `Work Item ID` to **Rows**, **Columns**, and **Values**, respectively.
+
+   :::image type="content" source="media/analytics-views/matrix-work-items-area-state.png" alt-text="Screenshot of Power BI Visualizations, choose Matrix and add Area Path, State, and Work Item ID fields to Rows, Columns, and Values.":::
+
+3. (Optional) Expand the **Filters** pane and choose one or more fields to filter the report. For example, the example report shown in the previous image only shows select `Area Paths`.
+
+   :::image type="content" source="media/analytics-views/matrix-work-items-filters.png" alt-text="Screenshot of Power BI Filters, select Area Paths.":::
+
+   > [!NOTE]
+   > To simplify the report, select `Area Paths` were renamed to shorten their labels. To learn how to replace values in a column, see [Transform Analytics data to generate Power BI reports, Replace values](transform-analytics-data-report-generation.md#replace-null-values).
+
+4. To filter on other fields, such as `Iteration Path` or `Work Item Type`, drag the field to **Columns** in the **Visualizations** pane, and then filter the data from the **Filters** pane.
+
+### Other common report types
+
+- **Work item trends**: Track bug reports, user stories, and feature progress over time
+- **Sprint burndown charts**: Monitor sprint progress and team velocity
+- **Team performance metrics**: Analyze throughput, cycle time, and completion rates
+- **Backlog analysis**: Visualize work distribution and priority alignment
 
 :::image type="content" source="media/data-connector-visual.png" alt-text="Screenshot of Power BI Desktop showing an Analytics-based report with various charts and metrics." lightbox="media/data-connector-visual.png":::
 
@@ -221,4 +223,5 @@ When you troubleshoot Power BI Data Connector issues, do the following tasks:
 
 - [Learn about Power BI integration](overview.md)
 - [Learn about Analytics views dataset design](data-connector-dataset.md)
-- [Generate example reports based on Analytics views](data-connector-examples.md)
+- [Transform Analytics data to generate Power BI reports](transform-analytics-data-report-generation.md)
+- [Functions available in Power BI Data Connector](data-connector-functions.md)
