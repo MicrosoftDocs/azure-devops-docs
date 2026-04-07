@@ -124,7 +124,7 @@ The only required field for all work item types is **Title**. When you save the 
       [Assigned To](../boards/queries/query-by-workflow-changes.md)
    :::column-end:::
    :::column span="3":::
-      Assign the work item to the team member responsible for performing the work. The people picker searches for and lists users across the connected tenant. For more information, see [People picker](../boards/queries/query-by-workflow-changes.md#people-picker).
+      Assign the work item to the team member responsible for performing the work. For more information about identity search and selection, see [Query by assignment or workflow changes](../boards/queries/query-by-workflow-changes.md#people-picker).
       > [!NOTE]  
       > You can only assign work to a single user. If you need to assign work to more than one user, add a work item for each user and distinguish the work to be done by title and description.
    :::column-end:::
@@ -231,70 +231,21 @@ Project-level and Area Path permissions control which tasks you can perform with
 
 For the full list of permissions, default security group assignments, and access level requirements, see [Manual test access and permissions](manual-test-permissions.md). To set permissions, see [Set permissions and access for testing](../organizations/security/set-permissions-access-test.md). 
 
-## Export, import, and bulk update test work items 
+## Export, import, and bulk update of test-specific work items 
 
-You can bulk edit test-specific work items the same way you bulk edit other work items. For more information, see [Bulk import or export test cases](bulk-import-export-test-cases.md), [Bulk modify work items](../boards/backlogs/bulk-modify-work-items.md), and [Test suites context menu options](navigate-test-plans.md#test-suites-context-menu-options).
+As with other work items, you can bulk edit test-specific work items. For more information, see the following articles:  
+
+::: moniker range="<=azure-devops"
+- [Bulk modify work items](../boards/backlogs/bulk-modify-work-items.md). 
+- [Import and export test cases](bulk-import-export-test-cases.md)
+- [Navigate Test Plans, Test suite More options](navigate-test-plans.md#test-suite-more-options)
+::: moniker-end
 
 ## Test terms 
 
 The following table describes several terms used in manual and exploratory testing. 
  
-:::row:::
-   :::column span="1":::
-     **Term**
-   :::column-end:::
-   :::column span="3":::
-      **Definition**
-   :::column-end:::
-:::row-end:::
----
-:::row:::
-   :::column span="1":::
-     **Configuration**
-   :::column-end:::
-   :::column span="3":::
-      Specifies the unique environment used to test an application or code. To define a test configuration, first define the configuration variables, and then define the test configuration. For details, see [Test different configurations](test-different-configurations.md).
-   :::column-end:::
-:::row-end:::
-:::row:::
-   :::column span="1":::
-     **Configuration variable**
-   :::column-end:::
-   :::column span="3":::
-      Specifies a single aspect of a test environment such as an operating system, processing power, web browser, or other variation. For details, see [Test different configurations](test-different-configurations.md).
-   :::column-end:::
-:::row-end:::
-:::row:::
-   :::column span="1":::
-     **Failure type**
-   :::column-end:::
-   :::column span="3":::
-      A categorization applied to test cases marked as **Failed** to classify the nature of the failure. Default failure types include *Regression Issue*, *New Issue*, *Known Issue*, and *Not a Failure*. Teams can define custom failure types by using the REST API. For details, see [Manage test failure type](manage-test-failure-type.md).
-   :::column-end:::
-:::row-end:::
-:::row:::
-   :::column span="1":::
-     **Outcome** 
-   :::column-end:::
-   :::column span="3":::
-      Outcome of a test point as marked by the tester upon executing the test. Valid options are: 
-      - **Active** (Unspecified)
-      - **Pass Test**
-      - **Fail Test**
-      - **Block Test**
-      - **Not Applicable**  
-      ---
-      For more information, see [Repeat a test with different data](repeat-test-with-different-data.md). Note that pipeline test outcomes differ as described in [About pipeline tests](../pipelines/test/test-glossary.md). 
-   :::column-end:::
-:::row-end:::
-:::row:::
-   :::column span="1":::
-     **Test iteration**
-   :::column-end:::
-   :::column span="3":::
-      A single pass through a test case using a specific set of parameter values. When a test case uses parameters or shared parameters, each unique combination of values creates a separate test iteration. For details, see [Repeat a test with different data](repeat-test-with-different-data.md).
-   :::column-end:::
-:::row-end:::
+
 :::row:::
    :::column span="1":::
      **Test points**
