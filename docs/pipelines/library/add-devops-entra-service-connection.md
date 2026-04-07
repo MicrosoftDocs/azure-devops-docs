@@ -185,7 +185,7 @@ Use the service connection with artifact authentication tasks:
         name = "Test Build"
       } | ConvertTo-Json
       
-      Invoke-RestMethod -Uri "$(System.CollectionUri)_apis/build/definitions?api-version=7.1" `
+      Invoke-RestMethod -Uri "$(System.CollectionUri)$(System.TeamProject)/_apis/build/definitions?api-version=7.1" `
                         -Method POST `
                         -Headers $headers `
                         -Body $body
