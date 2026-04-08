@@ -20,6 +20,9 @@
   - name: Create test plans and test suites
     displayName: create, plan
     href: create-a-test-plan.md
+  - name: Create and manage test suites
+    displayName: create, suite, static, requirement, query
+    href: create-test-suites.md
   - name: Create test cases
     displayName: create, case
     href: create-test-cases.md

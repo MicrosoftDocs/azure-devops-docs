@@ -39,8 +39,10 @@ landingContent:
     linkLists:
       - linkListType: how-to-guide
         links:
-          - text: Create test plans and suites
+          - text: Create test plans
             url: create-a-test-plan.md
+          - text: Create and manage test suites
+            url: create-test-suites.md
           - text: Create test cases
             url: create-test-cases.md
           - text: Share steps between test cases

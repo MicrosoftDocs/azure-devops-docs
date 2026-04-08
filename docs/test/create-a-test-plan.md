@@ -1,6 +1,7 @@
 ---
-title: Create test plans and suites
-description: Learn about Test tools and how to create test plans in Azure DevOps.
+title: Create and manage test plans
+titleSuffix: Azure Test Plans
+description: Learn how to create, rename, and delete test plans in Azure Test Plans.
 ms.assetid: 99FD819E-A861-4F28-A486-FD452DB65D69
 ms.service: azure-devops-test-plans
 ms.custom: UpdateFrequency3, copilot-scenario-highlight
@@ -9,11 +10,11 @@ ms.topic: how-to
 ms.author: pliaros
 author: rohit-batra
 monikerRange: '<= azure-devops'
-ms.date: 03/17/2026
+ms.date: 04/08/2026
 ms.update-cycle: 1095-days
 ---
 
-# Create test plans and test suites
+# Create and manage test plans
 
 [!INCLUDE [version-lt-eq-azure-devops](../includes/version-lt-eq-azure-devops.md)]
 
@@ -63,7 +64,11 @@ In general, you create test plans to test requirements. Before you create a test
 
    :::image type="content" source="media/create-a-test-plan/test-plan-name-path-iteration.png" alt-text="Screenshot of adding test plan details.":::
 
-### Rename a test plan
+::: moniker-end
+
+## Rename a test plan
+
+::: moniker range="<=azure-devops"
 
 To rename a test plan, use the following steps:
 
@@ -77,7 +82,11 @@ To rename a test plan, use the following steps:
 
 You can make other changes to the test plan here.
 
-### Delete a test plan
+::: moniker-end
+
+## Delete a test plan
+
+::: moniker range="<=azure-devops"
 
 To delete a test plan, use the following steps:
 
@@ -85,107 +94,19 @@ To delete a test plan, use the following steps:
 
 2. Next to the test plan name, select **More Actions** > **Delete**.
 
-3. The **Permanently delete test artifacts** dialog box explains exactly what gets deleted. Enter the test plan ID to confirm that you want to delete, and then select **Permanently delete**.
+3. The **Delete test artifacts** dialog box explains exactly what gets deleted. Enter the test plan ID to confirm that you want to delete, and then select **Delete**.
 
-   :::image type="content" source="media/create-a-test-plan/permanently-delete-test-artifacts.png" alt-text="Screenshot shows permanently delete test artifacts dialog box.":::
-
-::: moniker-end
-
-<a name="backlog"></a>
-
-## Add a requirement-based test suite
-
-::: moniker range="<=azure-devops"
-Now add test suites for the backlog items that need manual tests. These tests could be user stories, requirements, or other work items based on your project.
+   :::image type="content" border="true" source="media/create-a-test-plan/delete-test-artifacts.png" alt-text="Screenshot shows delete test artifacts dialog box.":::
 
 > [!NOTE]
-> Requirement tracking is supported only for test cases linked through a **Requirement-based test suite**. Work items include a User Story ([Agile](../boards/work-items/guidance/agile-process.md)), Product Backlog Item ([Scrum](../boards/work-items/guidance/scrum-process.md)), Requirement ([CMMI](../boards/work-items/guidance/cmmi-process.md)), and Issue ([Basic](../boards/get-started/plan-track-work.md)). The association between a requirement work item and manual test execution is only formed when the test case is linked by using a **Requirement-based test suite**.
-
-1. To add a suite to a test plan, select **More options** for the test suite, and then select **New Suite** > **Requirement based suite**.
-
-   :::image type="content" source="media/create-a-test-plan/add-requirement-based-suite.png" alt-text="Screenshot shows creating a requirement-based test suite.":::
-
-   Use requirement-based suites to group your test cases together.
-   That way, you can track the testing status of a backlog item.
-   Each test case that you add to a requirement-based test suite is automatically linked to the backlog item.
-
-1. In **Create requirement-based suites**, add one or more clauses to filter your work items by the iteration path for the sprint.
-   Run the query to view the matching backlog items.
-
-   :::image type="content" source="media/create-a-test-plan/add-clauses-run-query.png" alt-text="Screenshot shows adding clauses to filter by iteration and running the query.":::
-
-1. In the list of work items returned by the query, select the backlog items you want to test in this sprint.
-   Select **Create suites** to create a requirement-based suite for each one.
-
-   :::image type="content" source="media/create-a-test-plan/select-requirement-create-suite.png" alt-text="Screenshot shows adding requirement-based suites for your backlog items.":::
+> Deleted test plans are moved to the **Test Plan Recycle Bin** and can be restored within 14 days by using the REST API. For more information, see [Restore Deleted Test Plan REST API](/rest/api/azure/devops/testplan/test-plan/restore) and [Restore deleted test plans](/azure/devops/release-notes/roadmap/2025/testplans/restore-deleted-test-plans).
 
 ::: moniker-end
 
-## Work with test suites
+## Next step
 
-Azure Test Plans supports three types of test suites:
-
-- **Static test suites** — Manually organized containers that hold test cases and other test suites. Use them like folders to group related tests.
-- **Requirement-based test suites** — Automatically linked to a backlog work item (user story, PBI, requirement). See [Add a requirement-based test suite](#backlog).
-- **Query-based test suites** — Dynamically populated by a work item query. Test cases matching the query are automatically included.
-
-### Create a static test suite
-
-::: moniker range="<=azure-devops"
-
-1. In your test plan, select **More options** for a test suite, and then select **New Suite** > **Static suite**.
-2. Enter a name for the suite.
-
-You can drag and drop test suites to nest them under static suites, and drag test cases to reorder them.
-
-:::image type="content" source="media/create-a-test-plan/drag-drop-test.png" alt-text="Screenshot shows using drag and drop to move a test.":::
-
-::: moniker-end
-
-### Create a query-based test suite
-
-::: moniker range="<=azure-devops"
-
-1. In your test plan, select **More options** for a test suite, and then select **New Suite** > **Query based suite**.
-2. Define the query to match the test cases you want. For example, filter by area path, iteration, or state.
-3. Select **Create suite**. Test cases that match the query are automatically included and stay in sync as work items change.
-
-> [!NOTE]
-> Query-based suites are read-only. You can't manually add or remove test cases. To change the suite contents, update the query.
-
-::: moniker-end
-
-### Track test suite changes
-
-You can track changes to test plans and test suites. Open the work item for the test plan or test suite, and then view the work item history.
-
-For test suites, the **Test Suite Audit** field tracks other actions. For example, it tracks adding and removing test cases from a test suite.
-
-### Export test cases
-
-Export test plans, test suites, and test cases.
-
-::: moniker range="<=azure-devops"
-Select **Export test cases to CSV**.
-
-:::image type="content" source="media/create-a-test-plan/export-test-cases.png" alt-text="Screenshot shows a test plan selected and the Export test cases to CSV option.":::
-::: moniker-end
-
-Change the test case fields in the report by adding or removing columns from the list view of the test suite.
-
-> [!IMPORTANT]
-> You can't export more than 75 test suites in a single operation.
-> The email supports up to 1 MB of data.
-
-<a name="findplan"></a>
-
-## Find a test case in a test plan
-
-::: moniker range="<=azure-devops"
-In **Test Plans** for your test plan, use the :::image type="icon" source="media/create-a-test-plan/filter-icon.png" border="false"::: filter icon to show the search and filter list. It can help you find the tests you want.
-
-  :::image type="content" source="media/create-a-test-plan/filter-select-test-plan.png" alt-text="Screenshot shows finding a test plan.":::
-::: moniker-end
+> [!div class="nextstepaction"]
+> [Create and manage test suites](create-test-suites.md)
 
 ::: moniker range="azure-devops"
 
@@ -215,13 +136,11 @@ If you configure the [Azure DevOps MCP Server](../mcp-server/mcp-server-overview
 
 ::: moniker-end
 
-## Next step
-
-> [!div class="nextstepaction"]
-> [Create manual test cases](create-test-cases.md#test-cases) 
-
 ## Related content
 
+* [Create and manage test suites](create-test-suites.md)
+* [Create manual test cases](create-test-cases.md)
+* [Bulk import or export test cases](bulk-import-export-test-cases.md)
 * [Test objects and terms](test-objects-overview.md) 
 * [FAQs for manual testing](reference-qa.yml)
 * [End-to-end traceability](../cross-service/end-to-end-traceability.md)
