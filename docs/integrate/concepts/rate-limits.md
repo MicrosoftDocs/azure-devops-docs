@@ -153,6 +153,16 @@ This design lets clients proactively slow down their rate of requests.
    :::column-end:::
 :::row-end:::
 ---
+:::row:::
+   :::column span="1":::
+       `X-RateLimit-Cost`
+   :::column-end:::
+   :::column span="2":::
+              If present, indicates TSTUs consumed by this request (rounded to 5 decimal places). Use this value to monitor and optimize high-cost calls.
+
+   :::column-end:::
+:::row-end:::
+---
 
 ## Work tracking, process, & project limits
 
