@@ -1,9 +1,8 @@
 # Doc-Kit workspace files
 .github/AGENTS.md
 .github/agents/
-!.github/agents/azuredevops-standards-check.agent.md
 !.github/agents/release-notes.agent.md
-.github/instructions/
+.github/instructions/*
 .github/prompts/
 .github/skills/
 .vscode/settings.json
@@ -14,7 +13,4 @@
 requirements.txt
 
 # Doc-Kit overrides
-!.github/agents/azuredevops-standards-check.agent.md
-!.dockit/instructions/moniker-rules.instructions.md
-!.dockit/instructions/repo-structure.md
-!.dockit/instructions/team-standards.instructions.md
+!.github/instructions/azure-devops-product.instructions.md
