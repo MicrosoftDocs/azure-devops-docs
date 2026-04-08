@@ -10,7 +10,7 @@ ms.author: pliaros
 author: wisdeom
 ms.topic: how-to
 monikerRange: '<= azure-devops'
-ms.date: 03/17/2026
+ms.date: 04/08/2026
 ms.update-cycle: 1095-days
 ---
 
@@ -21,46 +21,20 @@ ms.update-cycle: 1095-days
 
 ::: moniker range="azure-devops"
 
-Import and export test cases in bulk by using CSV or Microsoft Excel (XLSX) files. You can create new test cases, update existing test cases by ID, or download test cases for external editing.
+Import and export test cases in bulk by using CSV or Microsoft Excel (XLSX) files. You can create new test cases, update existing test cases by ID, or download test cases for external editing. Azure DevOps Services includes an enhanced import wizard with auto-mapping, reusable mapping templates, and multi-sheet XLSX support.
 
 ::: moniker-end
 
 ::: moniker range="< azure-devops"
 
-Bulk CSV/XLSX import and export of test cases is available in Azure DevOps Services only. For Azure DevOps Server, you can use the **Grid** view to copy and paste test cases between suites, or use the REST API to clone test plans and suites.
+Import and export test cases in bulk by using CSV or Microsoft Excel (XLSX) files. You can create new test cases, update existing test cases by ID, or download test cases for external editing.
+
+> [!NOTE]
+> The enhanced import wizard with field mapping review, reusable mapping templates, and multi-sheet selection is available in Azure DevOps Services only. On Azure DevOps Server, the import wizard imports the file directly without a mapping review step.
 
 ::: moniker-end
 
 For web portal alternatives like copy, clone, and direct updates, see [Copy or clone test plans, test suites, and test cases](copy-clone-test-items.md). For an overview of test objects and terminology, see [Test objects and terms](test-objects-overview.md).
-
-::: moniker range="< azure-devops"
-
-## Bulk manage test cases on Azure DevOps Server
-
-CSV/XLSX import and export isn't available on Azure DevOps Server. Use the following alternatives to manage test cases in bulk.
-
-### Copy and paste test cases by using Grid view
-
-The **Grid** view enables you to copy test cases from one test suite and paste them into another suite across plans.
-
-1. From **Test Plans** > **Test plans**, select the test suite that contains the test cases you want to copy.
-1. On the **Define** tab, select **Grid View**.
-1. Highlight the rows you want to copy, and then press **Ctrl+C**.
-1. Select a different test suite from the same or different plan and press **Ctrl+V**.
-1. Select **Save test cases**.
-
-For more information, see [Copy and paste test cases (Grid view)](copy-clone-test-items.md#copy-paste).
-
-### Clone test plans and test suites
-
-To clone entire test plans or test suites, including all test cases, use the web portal or REST APIs:
-
-- **Web portal**: See [Copy or clone test plans, test suites, and test cases](copy-clone-test-items.md).
-- **REST API**: Use [Test Plan Clone](/rest/api/azure/devops/testplan/test-plan-clone/clone-test-plan) or [Test Suite Clone](/rest/api/azure/devops/testplan/test-suite-clone/clone-test-suite).
-
-::: moniker-end
-
-::: moniker range="azure-devops"
 
 ## Prerequisites
 
@@ -68,7 +42,7 @@ To clone entire test plans or test suites, including all test cases, use the web
 
 [!INCLUDE [ai-assistance-mcp-server-tip](../includes/ai-assistance-mcp-server-tip.md)]
  
-## Export test cases 
+## Export test cases
 
 1. In **Test Plans**, select a test plan and then a test suite.
 1. (Optional) Select :::image type="icon" source="media/icons/column-options.png"::: **Column options** to add fields to the download file. 
@@ -85,7 +59,19 @@ To clone entire test plans or test suites, including all test cases, use the web
 
    :::image type="content" source="media/bulk-import-test-case/choose-import-test-cases.png" alt-text="Screenshot of Import test cases to the selected test suite.":::
 
+::: moniker range="azure-devops"
+
 1. Drag and drop a file, or select **Browse** to choose one. The wizard automatically maps columns to Azure DevOps fields.
+
+::: moniker-end
+
+::: moniker range="< azure-devops"
+
+1. Select **Browse** to choose a CSV or XLSX file.
+
+::: moniker-end
+
+::: moniker range="azure-devops"
 
    > [!TIP]
    > For CSV files, save with **UTF-8** encoding to preserve special characters. Enclose cell values in double quotes if they contain commas or line breaks.
@@ -119,6 +105,17 @@ To clone entire test plans or test suites, including all test cases, use the web
 
 1. Select **Import**. The wizard updates existing test cases with matching IDs.
 
+::: moniker-end
+
+::: moniker range="< azure-devops"
+
+   > [!TIP]
+   > For CSV files, save with **UTF-8** encoding to preserve special characters. Enclose cell values in double quotes if they contain commas or line breaks.
+
+1. Select **Import**. The file must include the required columns: **ID**, **Work Item Type**, **Title**, **Test Step**, **Step Action**, **Step Expected**, **Area Path**, **Assigned To**, and **State**. The import wizard imports the file directly without a mapping review step.
+
+::: moniker-end
+
 ### Example CSV file structure
 
 Each test step is a separate row. Repeat the **ID**, **Title**, and other fields on each row, and increment the **Test Step** number:
@@ -133,6 +130,8 @@ ID,Work Item Type,Title,Test Step,Step Action,Step Expected,Area Path,Assigned T
 
 Leave the **ID** column empty to create new test cases, or provide an existing ID to update. All rows for the same test case must share the same **Title** and field values.
 
+::: moniker range="azure-devops"
+
 ## Use mapping templates
 
 Azure Test Plans remembers field mappings for future imports with the same column structure. You can export a mapping as a reusable template so team members don't need to configure mappings individually. Save templates for different file structures you use regularly.
@@ -142,6 +141,8 @@ Azure Test Plans remembers field mappings for future imports with the same colum
 If you modify mappings after importing a template, the system alerts you to prevent accidental changes.
 
 :::image type="content" source="media/bulk-import-test-case/mapping-no-longer-based-on-template.png" alt-text="Screenshot shows message stating that changes made means mapping is no longer based on the uploaded template.":::
+
+::: moniker-end
 
 ## Update existing test cases
 
@@ -159,6 +160,7 @@ If you modify mappings after importing a template, the system alerts you to prev
 
 For common questions about import errors, mandatory headers, supported work item types, and limitations, see [Troubleshooting and FAQs](reference-qa.yml).
 
+::: moniker range="azure-devops"
 <a id="use-ai-assistance"></a>
 
 ## Use AI to manage test cases at scale
@@ -186,19 +188,8 @@ If you configure the [Azure DevOps MCP Server](../mcp-server/mcp-server-overview
 
 ## Next step
 
-::: moniker range="azure-devops"
-
 > [!div class="nextstepaction"]
 > [Run manual tests](run-manual-tests.md)
-
-::: moniker-end
-
-::: moniker range="< azure-devops"
-
-> [!div class="nextstepaction"]
-> [Copy or clone test plans, test suites, and test cases](copy-clone-test-items.md)
-
-::: moniker-end
 
 ## Related content
 

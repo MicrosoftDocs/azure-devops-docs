@@ -131,7 +131,7 @@ sections:
             For step-by-step instructions, see [Bulk import and export test cases](bulk-import-export-test-cases.md).
 
             > [!NOTE]
-            > Bulk CSV/XLSX import and export is available in Azure DevOps Services only. For Azure DevOps Server, use the **Grid** view to copy and paste test cases between suites. For more information, see [Copy and paste test cases (Grid view)](copy-clone-test-items.md#copy-paste).
+            > The enhanced import wizard with field mapping review, reusable mapping templates, and multi-sheet selection is available in Azure DevOps Services only. On Azure DevOps Server, the import wizard imports the file directly without a mapping review step.
 
       - question: Can I create new test cases and update existing ones in the same import file?
         answer: |
