@@ -138,54 +138,6 @@ Azure DevOps supports many different authentication mechanisms, including basic 
     </tbody>
 </table>
 
-### Improved Boards + GitHub Integration
-
-The Azure DevOps and GitHub integration continues to be of major strategic importance. Our goal is to keep improving this integration to make it easier for customers to move their repositories to GitHub while continuing to use Azure Boards, Pipelines, and Test Plans. All of this is done while maintaining a high level of traceability between work and code.
-
-Below is a list of investments currently on our roadmap.
-
-<table>
-    <thead>
-        <tr>
-            <th>Feature</th>
-            <th>Area</th>
-            <th>Quarter</th>
-         </tr>
-    </thead>
-    <tbody>          
-      <tr>
-         <td><a href="/azure/devops/release-notes/2025/sprint-260-update#azure-boards-and-pipelines-integration-for-github-enterprise-cloud-with-data-residency" data-raw-source="[Support GitHub Enterprise Cloud with data residency](azure/devops/release-notes/2025/sprint-260-update#azure-boards-and-pipelines-integration-for-github-enterprise-cloud-with-data-residency)">Support for GitHub Enterprise Cloud with data residency</a></td>
-         <td>Boards</td>
-         <td><img src="roadmap/2023/media/checkmark.png" alt="Done" />2025 Q3</td>
-      </tr>
-         <tr>
-         <td><a href="/azure/devops/release-notes/2025/sprint-264-update#azure-devops-local-mcp-server-generally-available" data-raw-source="[MCP Server for Azure DevOps](/azure/devops/release-notes/2025/sprint-264-update#azure-devops-local-mcp-server-generally-available)">MCP Server for Azure DevOps</a></td>
-         <td>General</td>
-         <td><img src="roadmap/2023/media/checkmark.png" alt="Done" />2025 Q4</td>
-      </tr> 
-      <tr>
-         <td><a href="/azure/devops/release-notes/2026/sprint-268-update#general-availability-of-github-copilot-integration-for-azure-boards" data-raw-source="[GitHub Coding Agent for Azure Boards](azure/devops/release-notes/2026/sprint-268-update#general-availability-of-github-copilot-integration-for-azure-boards)">GitHub Coding Agent for Azure Boards</a></td>
-         <td>Boards</td>
-         <td><img src="roadmap/2023/media/checkmark.png" alt="Done" />2025 Q4</td>
-      </tr>    
-      <tr>
-         <td><a href="/azure/devops/release-notes/roadmap/2026/boards-increase-repo-limit" data-raw-source="[Increase limit of connected GitHub repositories](/azure/devops/release-notes/roadmap/2026/boards-increase-repo-limit)">Increase limit of connected GitHub repositories</a></td>
-         <td>Boards</td>
-         <td><img src="roadmap/2023/media/checkmark.png" alt="Done">2026 Q1</td>
-      </tr>   
-      <tr>
-        <td>
-            <a href="/azure/devops/release-notes/roadmap/2026/general-remote-ado-mcp-server" data-raw-source="[Remote Azure DevOps MCP Server](/azure/devops/release-notes/roadmap/2026/general-remote-ado-mcp-server)">Remote Azure DevOps MCP Server</a>
-         </td>
-         <td>Boards</td>
-         <td><img src="roadmap/2023/media/checkmark.png" alt="Done">2026 Q1</td>
-      </tr>         
-    </tbody>
-</table>
-
-You can also view a detailed list of planned and recent investments on our [features timeline](/azure/devops/boards/github/features-timeline).
-
-
 ### Migrate to Managed DevOps Pools
 
 Managed DevOps Pools is an evolution of Azure DevOps Virtual Machine Scale Set agent pools. It provides better pool scalability and reliability, simplifies pool management, and allows you to use the VM images from Microsoft-hosted agents on custom Azure VMs. You can read more about Managed DevOps Pools [here](https://aka.ms/mdp-docs). Features to support new scenarios will be added to Managed DevOps Pools and not Virtual Machine Scale Set pools. Managed DevOps Pools is generally available, so you can migrate your Virtual Machine Scale Set pools to Managed DevOps Pools and use them for production workflows, wherever possible.
