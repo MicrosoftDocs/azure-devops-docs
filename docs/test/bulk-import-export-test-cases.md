@@ -9,17 +9,27 @@ ms.custom: cross-project, UpdateFrequency3, copilot-scenario-highlight
 ms.author: pliaros
 author: wisdeom
 ms.topic: how-to
-monikerRange: '= azure-devops'
-ms.date: 03/17/2026
+monikerRange: '<= azure-devops'
+ms.date: 04/08/2026
 ms.update-cycle: 1095-days
 ---
 
 
 # Bulk import or export test cases 
 
-[!INCLUDE [version-eq-azure-devops](../includes/version-eq-azure-devops.md)] 
+[!INCLUDE [version-lt-eq-azure-devops](../includes/version-lt-eq-azure-devops.md)] 
 
-Import and export test cases in bulk using CSV or Microsoft Excel (XLSX) files. Create new test cases, update existing ones by ID, or download test cases for external editing.
+::: moniker range="azure-devops"
+
+Import and export test cases in bulk by using CSV or Microsoft Excel (XLSX) files. You can create new test cases, update existing test cases by ID, or download test cases for external editing. Azure DevOps Services includes an enhanced import wizard with auto-mapping, reusable mapping templates, and multi-sheet XLSX support.
+
+::: moniker-end
+
+::: moniker range="< azure-devops"
+
+Import and export test cases in bulk by using CSV or Microsoft Excel (XLSX) files. You can create new test cases, update existing test cases by ID, or download test cases for external editing.
+
+::: moniker-end
 
 For web portal alternatives like copy, clone, and direct updates, see [Copy or clone test plans, test suites, and test cases](copy-clone-test-items.md). For an overview of test objects and terminology, see [Test objects and terms](test-objects-overview.md).
 
@@ -27,31 +37,47 @@ For web portal alternatives like copy, clone, and direct updates, see [Copy or c
 
 [!INCLUDE [prerequisites-define](includes/prerequisites-define.md)] 
 
+::: moniker range="azure-devops"
+
 [!INCLUDE [ai-assistance-mcp-server-tip](../includes/ai-assistance-mcp-server-tip.md)]
+
+::: moniker-end
  
-## Export test cases 
+## Export test cases
 
 1. In **Test Plans**, select a test plan and then a test suite.
 1. (Optional) Select :::image type="icon" source="media/icons/column-options.png"::: **Column options** to add fields to the download file. 
-1. Select the test cases to export, then select **Export test cases to CSV** or **Export test cases to XLSX**.
+1. Select the test cases to export, and then select **Export test cases to CSV** or **Export test cases to XLSX**.
 
    :::image type="content" source="media/bulk-import-test-case/export-test-cases-test-suite.png" alt-text="Screenshot of Export test cases from the selected test suite.":::
 
-   The export includes **ID**, **Work Item Type**, **Title**, **Test Step**, **Step Action**, **Step Expected**, **Area Path**, **State**, **Assigned To**, and any columns added through **Column options**. Each test step appears as a separate row.
+   The export includes **ID**, **Work Item Type**, **Title**, **Test Step**, **Step Action**, **Step Expected**, **Area Path**, **State**, **Assigned To**, and any columns you add through **Column options**. Each test step appears as a separate row.
 
 ## Import test cases 
 
 1. In **Test Plans**, select a test plan and then a test suite.
-1. Select **Import test cases from CSV/XLSX**.
+2. Select **Import test cases from CSV/XLSX**.
 
    :::image type="content" source="media/bulk-import-test-case/choose-import-test-cases.png" alt-text="Screenshot of Import test cases to the selected test suite.":::
 
-1. Drag and drop a file, or select **Browse** to choose one. The wizard automatically maps columns to Azure DevOps fields.
+::: moniker range="azure-devops"
+
+3. Drag and drop a file, or select **Browse** to choose one. The wizard automatically maps columns to Azure DevOps fields.
+
+::: moniker-end
+
+::: moniker range="< azure-devops"
+
+3. Select **Browse** to choose a CSV or XLSX file.
+
+::: moniker-end
+
+::: moniker range="azure-devops"
 
    > [!TIP]
    > For CSV files, save with **UTF-8** encoding to preserve special characters. Enclose cell values in double quotes if they contain commas or line breaks.
 
-1. Review the field mappings. The following nine fields are required:
+4. Review the field mappings. The following nine fields are required:
    - **ID** — leave empty for new test cases, or provide an existing ID to update
    - **Work Item Type** — must be `Test Case` (exact spelling and casing)
    - **Title**
@@ -64,7 +90,7 @@ For web portal alternatives like copy, clone, and direct updates, see [Copy or c
 
    :::image type="content" source="media/bulk-import-test-case/import-wizard-mapping.png" alt-text="Screenshot of the import wizard showing field mapping interface.":::
 
-1. (Optional) To change a mapping, select the field dropdown and choose the correct Azure DevOps field.
+5. (Optional) To change a mapping, select the field dropdown and choose the correct Azure DevOps field.
 
    :::image type="content" source="media/bulk-import-test-case/update-field-mapping.png" alt-text="Screenshot shows dropdown menu for optional field mapping updates.":::
 
@@ -72,13 +98,24 @@ For web portal alternatives like copy, clone, and direct updates, see [Copy or c
 
    :::image type="content" source="media/bulk-import-test-case/skip-mapping.png" alt-text="Screenshot shows empty field selection for skipping mapping.":::
 
-1. (Optional) Export the current mapping as a reusable template to share with your team.
+6. (Optional) Export the current mapping as a reusable template to share with your team.
 
-1. (Optional) For XLSX files with multiple sheets, select which sheet to import.
+7. (Optional) For XLSX files with multiple sheets, select which sheet to import.
 
    :::image type="content" source="media/bulk-import-test-case/multiple-sheets-selection.png" alt-text="Screenshot showing worksheet selection dialog for XLSX files with multiple sheets.":::
 
-1. Select **Import**. The wizard updates existing test cases with matching IDs.
+8. Select **Import**. The wizard updates existing test cases with matching IDs.
+
+::: moniker-end
+
+::: moniker range="< azure-devops"
+
+   > [!TIP]
+   > For CSV files, save with **UTF-8** encoding to preserve special characters. Enclose cell values in double quotes if they contain commas or line breaks.
+
+4. Select **Import**. The file must include the required columns: **ID**, **Work Item Type**, **Title**, **Test Step**, **Step Action**, **Step Expected**, **Area Path**, **Assigned To**, and **State**. The import wizard imports the file directly without a mapping review step.
+
+::: moniker-end
 
 ### Example CSV file structure
 
@@ -94,15 +131,19 @@ ID,Work Item Type,Title,Test Step,Step Action,Step Expected,Area Path,Assigned T
 
 Leave the **ID** column empty to create new test cases, or provide an existing ID to update. All rows for the same test case must share the same **Title** and field values.
 
+::: moniker range="azure-devops"
+
 ## Use mapping templates
 
-Azure Test Plans remembers field mappings for future imports with the same column structure. You can export a mapping as a reusable template so team members don't need to configure mappings individually, and save templates for different file structures you use regularly.
+Azure Test Plans remembers field mappings for future imports with the same column structure. You can export a mapping as a reusable template so team members don't need to configure mappings individually. Save templates for different file structures you use regularly.
 
 :::image type="content" source="media/bulk-import-test-case/mapping-download-template.png" alt-text="Screenshot shows no template selected and link to download current mapping as template.":::
 
 If you modify mappings after importing a template, the system alerts you to prevent accidental changes.
 
 :::image type="content" source="media/bulk-import-test-case/mapping-no-longer-based-on-template.png" alt-text="Screenshot shows message stating that changes made means mapping is no longer based on the uploaded template.":::
+
+::: moniker-end
 
 ## Update existing test cases
 
@@ -120,6 +161,7 @@ If you modify mappings after importing a template, the system alerts you to prev
 
 For common questions about import errors, mandatory headers, supported work item types, and limitations, see [Troubleshooting and FAQs](reference-qa.yml).
 
+::: moniker range="azure-devops"
 <a id="use-ai-assistance"></a>
 
 ## Use AI to manage test cases at scale
@@ -143,7 +185,9 @@ If you configure the [Azure DevOps MCP Server](../mcp-server/mcp-server-overview
 > If you're using Visual Studio Code, [agent mode](https://code.visualstudio.com/docs/copilot/chat/chat-agent-mode) is especially helpful for troubleshooting complex bulk test case operations.
 > - To avoid using stale or cached data from previous queries, add to your prompt, "Do not use previously fetched data."
 
-##  Next step
+::: moniker-end
+
+## Next step
 
 > [!div class="nextstepaction"]
 > [Run manual tests](run-manual-tests.md)
