@@ -2,7 +2,7 @@
 title: Azure DevOps Released Features
 author: gloridelmorales
 ms.author: glmorale
-ms.date: 3/31/2026
+ms.date: 4/14/2026
 ms.topic: release-notes
 ms.service: azure-devops
 ms.subservice: azure-devops-release-notes
@@ -45,6 +45,14 @@ You can also [view the build numbers for each version](#azure-devops-server-buil
     <td>Remote MCP Server public preview</td><td>General</td><td>Future</td></tr>
     <td>Expired personal access tokens (PATs) can no longer be modified</td><td>General</td><td>Future</td></tr>
     <td>Allow extensions to access local network resources</td><td>General</td><td>Future</td></tr>
+            <td rowspan="6"><a href="2026/sprint-272-update.md" data-raw-source="[14 April 2026](2026/sprint-272-update.md)">April 14 2026</a></td>
+            <td>CodeQL default setup for code scanning (public preview)</td><td>GitHub Advanced Security for Azure DevOps</td><td>N/A</td></tr>
+            <td>Combined alerts view and security campaigns in security overview</td><td>GitHub Advanced Security for Azure DevOps</td><td>N/A</td></tr>
+            <td>Alert UX enhancements: confidence filter and alert counts</td><td>GitHub Advanced Security for Azure DevOps</td><td>N/A</td></tr>
+            <td>Improved details shown for GitHub service connections</td><td>GitHub Advanced Security for Azure DevOps</td><td>N/A</td></tr>
+            <td>Improved Markdown editor usability in work item multi-line fields</td><td>Boards</td><td>Future</td></tr>
+            <td>Filter Boards and Backlogs by additional fields</td><td>Boards</td><td>Future</td></tr>
+        <tr>
     <td>Increased inherited process limit</td><td>Boards</td><td>Future</td></tr>
     <td>Improved continuous deployment visibility in YAML pipelines</td><td>Pipelines</td><td>Future</td></tr>
     <td>Deployment history for stages</td><td>Pipelines</td><td>Future</td></tr>
