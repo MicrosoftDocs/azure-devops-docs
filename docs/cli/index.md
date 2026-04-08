@@ -10,7 +10,7 @@ author: chcomley
 monikerRange: 'azure-devops'
 ms.custom: pat-reduction
 ms.update: 90-days
-ms.date: 02/26/2026
+ms.date: 03/24/2026
 #customer intent: As a project team member, I want to set up Azure DevOps CLI and understand how to access pipelines, boards, repos, and artifacts. 
 ---
 
@@ -61,7 +61,7 @@ az --version
    [!INCLUDE [use-microsoft-entra-reduce-pats](../includes/use-microsoft-entra-reduce-pats.md)]
 
    > [!NOTE]  
-   > The Azure DevOps CLI extension supports interactive authentication (Microsoft Entra) and PAT authentication. For service principals and managed identities, use the REST APIs directly or client libraries. For more information, see [Authentication guidance](../integrate/get-started/authentication/authentication-guidance.md).
+   > The Azure DevOps CLI extension supports interactive authentication (Microsoft Entra) and PAT authentication. For pipeline automation with service principals or managed identities, use an [Azure DevOps service connection](../pipelines/library/service-endpoints.md). For other service-to-service scenarios, use the REST APIs or client libraries. For more information, see [Authentication guidance](../integrate/get-started/authentication/authentication-guidance.md).
 
 1. Set the default configuration for your organization and project. Otherwise, specify the values in the individual commands themselves.  
 
@@ -124,4 +124,5 @@ This command shows the details of the build with `--id 1` in the Command Prompt 
 
 - [Output formats for Azure CLI commands](/cli/azure/format-output-azure-cli)
 - [Index to az devops CLI examples](quick-reference.md)
+- [Manage service connections](../pipelines/library/service-endpoints.md)
 - [Azure DevOps CLI Extension GitHub Repo](https://github.com/Azure/azure-devops-cli-extension)
