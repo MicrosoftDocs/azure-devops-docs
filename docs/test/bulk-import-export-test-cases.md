@@ -40,7 +40,11 @@ For web portal alternatives like copy, clone, and direct updates, see [Copy or c
 
 [!INCLUDE [prerequisites-define](includes/prerequisites-define.md)] 
 
+::: moniker range="azure-devops"
+
 [!INCLUDE [ai-assistance-mcp-server-tip](../includes/ai-assistance-mcp-server-tip.md)]
+
+::: moniker-end
  
 ## Export test cases
 
