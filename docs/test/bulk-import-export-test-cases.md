@@ -9,7 +9,7 @@ ms.custom: cross-project, UpdateFrequency3, copilot-scenario-highlight
 ms.author: pliaros
 author: wisdeom
 ms.topic: how-to
-monikerRange: '= azure-devops'
+monikerRange: '<= azure-devops'
 ms.date: 03/17/2026
 ms.update-cycle: 1095-days
 ---
@@ -17,11 +17,50 @@ ms.update-cycle: 1095-days
 
 # Bulk import or export test cases 
 
-[!INCLUDE [version-eq-azure-devops](../includes/version-eq-azure-devops.md)] 
+[!INCLUDE [version-lt-eq-azure-devops](../includes/version-lt-eq-azure-devops.md)] 
 
-Import and export test cases in bulk using CSV or Microsoft Excel (XLSX) files. Create new test cases, update existing ones by ID, or download test cases for external editing.
+::: moniker range="azure-devops"
+
+Import and export test cases in bulk by using CSV or Microsoft Excel (XLSX) files. You can create new test cases, update existing test cases by ID, or download test cases for external editing.
+
+::: moniker-end
+
+::: moniker range="< azure-devops"
+
+Bulk CSV/XLSX import and export of test cases is available in Azure DevOps Services only. For Azure DevOps Server, you can use the **Grid** view to copy and paste test cases between suites, or use the REST API to clone test plans and suites.
+
+::: moniker-end
 
 For web portal alternatives like copy, clone, and direct updates, see [Copy or clone test plans, test suites, and test cases](copy-clone-test-items.md). For an overview of test objects and terminology, see [Test objects and terms](test-objects-overview.md).
+
+::: moniker range="< azure-devops"
+
+## Bulk manage test cases on Azure DevOps Server
+
+CSV/XLSX import and export isn't available on Azure DevOps Server. Use the following alternatives to manage test cases in bulk.
+
+### Copy and paste test cases by using Grid view
+
+The **Grid** view enables you to copy test cases from one test suite and paste them into another suite across plans.
+
+1. From **Test Plans** > **Test plans**, select the test suite that contains the test cases you want to copy.
+1. On the **Define** tab, select **Grid View**.
+1. Highlight the rows you want to copy, and then press **Ctrl+C**.
+1. Select a different test suite from the same or different plan and press **Ctrl+V**.
+1. Select **Save test cases**.
+
+For more information, see [Copy and paste test cases (Grid view)](copy-clone-test-items.md#copy-paste).
+
+### Clone test plans and test suites
+
+To clone entire test plans or test suites, including all test cases, use the web portal or REST APIs:
+
+- **Web portal**: See [Copy or clone test plans, test suites, and test cases](copy-clone-test-items.md).
+- **REST API**: Use [Test Plan Clone](/rest/api/azure/devops/testplan/test-plan-clone/clone-test-plan) or [Test Suite Clone](/rest/api/azure/devops/testplan/test-suite-clone/clone-test-suite).
+
+::: moniker-end
+
+::: moniker range="azure-devops"
 
 ## Prerequisites
 
@@ -33,11 +72,11 @@ For web portal alternatives like copy, clone, and direct updates, see [Copy or c
 
 1. In **Test Plans**, select a test plan and then a test suite.
 1. (Optional) Select :::image type="icon" source="media/icons/column-options.png"::: **Column options** to add fields to the download file. 
-1. Select the test cases to export, then select **Export test cases to CSV** or **Export test cases to XLSX**.
+1. Select the test cases to export, and then select **Export test cases to CSV** or **Export test cases to XLSX**.
 
    :::image type="content" source="media/bulk-import-test-case/export-test-cases-test-suite.png" alt-text="Screenshot of Export test cases from the selected test suite.":::
 
-   The export includes **ID**, **Work Item Type**, **Title**, **Test Step**, **Step Action**, **Step Expected**, **Area Path**, **State**, **Assigned To**, and any columns added through **Column options**. Each test step appears as a separate row.
+   The export includes **ID**, **Work Item Type**, **Title**, **Test Step**, **Step Action**, **Step Expected**, **Area Path**, **State**, **Assigned To**, and any columns you add through **Column options**. Each test step appears as a separate row.
 
 ## Import test cases 
 
@@ -96,7 +135,7 @@ Leave the **ID** column empty to create new test cases, or provide an existing I
 
 ## Use mapping templates
 
-Azure Test Plans remembers field mappings for future imports with the same column structure. You can export a mapping as a reusable template so team members don't need to configure mappings individually, and save templates for different file structures you use regularly.
+Azure Test Plans remembers field mappings for future imports with the same column structure. You can export a mapping as a reusable template so team members don't need to configure mappings individually. Save templates for different file structures you use regularly.
 
 :::image type="content" source="media/bulk-import-test-case/mapping-download-template.png" alt-text="Screenshot shows no template selected and link to download current mapping as template.":::
 
@@ -143,10 +182,23 @@ If you configure the [Azure DevOps MCP Server](../mcp-server/mcp-server-overview
 > If you're using Visual Studio Code, [agent mode](https://code.visualstudio.com/docs/copilot/chat/chat-agent-mode) is especially helpful for troubleshooting complex bulk test case operations.
 > - To avoid using stale or cached data from previous queries, add to your prompt, "Do not use previously fetched data."
 
-##  Next step
+::: moniker-end
+
+## Next step
+
+::: moniker range="azure-devops"
 
 > [!div class="nextstepaction"]
 > [Run manual tests](run-manual-tests.md)
+
+::: moniker-end
+
+::: moniker range="< azure-devops"
+
+> [!div class="nextstepaction"]
+> [Copy or clone test plans, test suites, and test cases](copy-clone-test-items.md)
+
+::: moniker-end
 
 ## Related content
 
