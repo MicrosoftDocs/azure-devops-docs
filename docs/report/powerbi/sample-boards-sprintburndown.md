@@ -3,12 +3,12 @@ title: Sprint Burndown sample Power BI report
 titleSuffix: Azure DevOps
 description: Learn how to generate a sprint burndown Power BI report.
 ms.subservice: azure-devops-analytics
-ms.custom: powerbisample, engagement-fy23, engagement-fy23
+ms.custom: powerbisample, engagement-fy23
 ms.author: chcomley
 author: chcomley
 ms.topic: sample
 monikerRange: "<=azure-devops"
-ms.date: 12/08/2022
+ms.date: 04/07/2026
 ---
 
 # Sprint burndown sample reports
@@ -23,7 +23,7 @@ However, you can customize a sprint burndown chart using Analytics and Power BI 
  
 [!INCLUDE [note-delete-area-paths](../../boards/includes/note-delete-area-paths.md)]
 
-For more information about burndown and burnup, and [Burndown and burnup guidance](../dashboards/burndown-guidance.md).
+For more information about burndown and burnup, see [Burndown and burnup guidance](../dashboards/burndown-guidance.md).
  
 
 [!INCLUDE [temp](includes/sample-required-reading.md)]
@@ -37,7 +37,7 @@ Burndown charts require querying the `WorkItemSnapshot` entity set to get histor
 
 [!INCLUDE [temp](includes/query-filters-work-items.md)]
 
-### Burndown User Stories for an area path and the current iteration
+### Burndown user stories for an area path and the current iteration
 
 #### [Power BI query](#tab/powerbi/)
 
@@ -90,7 +90,7 @@ https://analytics.dev.azure.com/{organization}/{project}/_odata/v3.0-preview/Wor
 ## Substitution strings and query breakdown
 
 [!INCLUDE [temp](includes/sample-query-substitutions.md)]
-* `{areapath}` - Your Area Path. Example format: `Project\Level1\Level2`. 
+* `{areapath}` - Your area path. Example format: `Project\Level1\Level2`. 
 
 ### Query breakdown
 
@@ -110,7 +110,7 @@ The following table describes each part of the query.
    `$apply=filter(`
    :::column-end:::
    :::column span="1":::
-   Start filter()
+   Start `filter()` clause.
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -118,7 +118,7 @@ The following table describes each part of the query.
    `WorkItemType eq 'User Story'`
    :::column-end:::
    :::column span="1":::
-   Burndown on User Stories
+   Burndown on User Stories.
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -136,7 +136,7 @@ The following table describes each part of the query.
    `and StateCategory ne 'Completed'`
    :::column-end:::
    :::column span="1":::
-   Filters out items that are completed. For more information on State Categories, see [How workflow states and state categories](../../boards/work-items/workflow-and-state-categories.md) are used in Backlogs and Boards.
+   Filters out items that are completed. For more information on State Categories, see [How workflow states and state categories are used in Backlogs and Boards](../../boards/work-items/workflow-and-state-categories.md).
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -168,7 +168,7 @@ The following table describes each part of the query.
    `and Iteration/EndDate ge now()`
    :::column-end:::
    :::column span="1":::
-   Select current Iteration
+   Select current Iteration.
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -176,7 +176,7 @@ The following table describes each part of the query.
    `)`
    :::column-end:::
    :::column span="1":::
-   Close filter()
+   Close `filter()` clause.
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -184,7 +184,7 @@ The following table describes each part of the query.
    `/groupby(`
    :::column-end:::
    :::column span="1":::
-   Start groupby()
+   Start `groupby()` clause.
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -192,7 +192,7 @@ The following table describes each part of the query.
    `(DateValue, State, WorkItemType, Priority, Area/AreaPath, Iteration/IterationPath), `
    :::column-end:::
    :::column span="1":::
-   Group by DateValue (used for trending), and any fields you want to report on
+   Group by DateValue (used for trending), and any fields you want to report on.
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -200,7 +200,7 @@ The following table describes each part of the query.
    `aggregate($count as Count,  StoryPoints with sum as TotalStoryPoints)`
    :::column-end:::
    :::column span="1":::
-   Aggregate by count of user stories, and sum of Story Points
+   Aggregate by count of user stories, and sum of Story Points.
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -208,13 +208,13 @@ The following table describes each part of the query.
    `)`
    :::column-end:::
    :::column span="1":::
-   Close groupby()
+   Close `groupby()` clause.
    :::column-end:::
 :::row-end:::
 
-### Burndown User Stories for a team and the current iteration
+### Burndown user stories for a team and the current iteration
 
-This query is the same as the one used above, except it filters by Team Name rather than Area Path. 
+This query is the same as the one used earlier, but it filters by Team Name instead of Area Path. 
 
 #### [Power BI query](#tab/powerbi/)
 
@@ -225,7 +225,7 @@ let
    Source = OData.Feed ("https://analytics.dev.azure.com/{organization}/{project}/_odata/v3.0-preview/WorkItemSnapshot? "
         &"$apply=filter( "
             &"WorkItemType eq 'User Story' "
-            &"and (Teams/any(x:x/TeamName eq '{teamname}) or Teams/any(x:x/TeamName eq '{teamname}) or Teams/any(x:x/TeamName eq '{teamname}) "
+            &"and (Teams/any(x:x/TeamName eq '{teamname}') or Teams/any(x:x/TeamName eq '{teamname}') or Teams/any(x:x/TeamName eq '{teamname}')) "
             &"and StateCategory ne 'Completed' "
             &"and DateValue ge Iteration/StartDate "
             &"and DateValue le Iteration/EndDate "
@@ -249,7 +249,7 @@ in
 https://analytics.dev.azure.com/{organization}/{project}/_odata/v3.0-preview/WorkItemSnapshot? 
         $apply=filter(
             WorkItemType eq 'User Story'
-            and (Teams/any(x:x/TeamName eq '{teamname}) or Teams/any(x:x/TeamName eq '{teamname}) or Teams/any(x:x/TeamName eq '{teamname})
+            and (Teams/any(x:x/TeamName eq '{teamname}') or Teams/any(x:x/TeamName eq '{teamname}') or Teams/any(x:x/TeamName eq '{teamname}'))
             and StateCategory ne 'Completed'
             and DateValue ge Iteration/StartDate
             and DateValue le Iteration/EndDate
@@ -264,9 +264,9 @@ https://analytics.dev.azure.com/{organization}/{project}/_odata/v3.0-preview/Wor
 
 * * *
 
-### Burndown User Stories for all sprints since the start of a year   
+### Burndown user stories for all sprints since the start of a year   
 
-You may want to view a burndown of all the sprints in a single report. These queries pull in sprint burndowns, and their by story points, for all  sprints since the beginning of year 2022.
+You might want to view a burndown of all the sprints in a single report. These queries pull in sprint burndowns, and their story points, for all sprints since the beginning of a year.
 
 #### [Power BI query](#tab/powerbi/)
 
@@ -316,18 +316,17 @@ https://analytics.dev.azure.com/{organization}/{project}/_odata/v3.0-preview/Wor
 
 <a id="remaining-work"></a>
 
-### Burndown Tasks and Remaining Work
+### Burndown tasks and remaining work
 
 #### [Power BI query](#tab/powerbi/)
 
 [!INCLUDE [temp](includes/sample-powerbi-query.md)]
 
 ```
-Doc-ready Power BI Query (anonymized)
 let
    Source = OData.Feed ("https://analytics.dev.azure.com/{organization}/{project}/_odata/v3.0-preview/WorkItemSnapshot? "
         &"$apply=filter( "
-            &"startswith(Area/AreaPath,'{project}') "
+            &"startswith(Area/AreaPath,'{areapath}') "
             &"and StateCategory ne 'Completed' "
             &"and DateValue ge Iteration/StartDate "
             &"and DateValue le Iteration/EndDate "
@@ -351,7 +350,7 @@ in
 ```
 https://analytics.dev.azure.com/{organization}/{project}/_odata/v3.0-preview/WorkItemSnapshot? 
         $apply=filter(
-            startswith(Area/AreaPath,'{project}')
+            startswith(Area/AreaPath,'{areapath}')
             and StateCategory ne 'Completed'
             and DateValue ge Iteration/StartDate
             and DateValue le Iteration/EndDate
@@ -371,28 +370,28 @@ https://analytics.dev.azure.com/{organization}/{project}/_odata/v3.0-preview/Wor
 
 ## Expand columns in Power Query Editor
 
-Prior to creating the report, you'll need to expand columns that return records containing several fields. In this instance, you'll want to expand the following records: 
+Before you create the report, expand columns that return records containing several fields. In this case, expand the following records: 
 - `Area`
 - `Iteration`
 - `AssignedTo` 
 
-To learn how to expand work items, see [Transform Analytics data to generate Power BI reports](transform-analytics-data-report-generation.md#expand-columns). 
+For more information about expanding work items, see [Transform Analytics data to generate Power BI reports](transform-analytics-data-report-generation.md#expand-columns). 
  
 [!INCLUDE [temp](includes/close-apply.md)]
 
 ## Create the stacked column chart report
 
-1. In Power BI, choose the **Stacked column chart** report under **Visualizations**. 
+1. In Power BI, under **Visualizations**, select the **Stacked column chart** report. 
 
 	:::image type="content" source="media/reports-boards/sprint-burndown-visualizations.png" alt-text="Screenshot of Power BI Visualizations and Fields selections for Sprint Burndown report. ":::
 
-1. Add `DateValue` to **X-Axis**, right-click and select `DateValue`, rather than `Date Hierarchy`   
+1. Add `DateValue` to **X-Axis**. Right-click and select `DateValue`, rather than `Date Hierarchy`.   
 
 1. Add `Count` to **Y-Axis**. 
 
-1. Add `State` to **Y-Axis**. 
+1. Add `State` to **Legend**. 
 
-The example report, which displays burndown on both Story Points and Count of Stories.
+The following example report displays burndown on both Story Points and Count of Stories.
 
 :::image type="content" source="media/reports-boards/sprint-burndown-clustered-column-chart.png" alt-text="Screenshot of Sample Power BI Sprint burndown clustered column chart report.":::
 

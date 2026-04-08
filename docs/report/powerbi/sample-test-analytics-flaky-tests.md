@@ -20,8 +20,7 @@ ms.date: 01/25/2023
 You can create a report, as shown in the following image, that lists the flaky tests occurring in pipeline runs that include test tasks. A flaky test is a test that provides different outcomes, such as pass or fail, even when there are no changes in the source code or execution environment. For more information about enabling flaky tests, see [Manage flaky tests](../../pipelines/test/flaky-test-management.md). For information on adding tests to a pipeline, see the [Test task resources](#test-task-resources) section later in this article. 
 
 :::image type="content" source="media/pipeline-test-reports/flaky-tests-table-report.png" alt-text="Screenshot of Flaky Tests Table report.":::
- 
- 
+
 Use the queries provided in this article to generate the following reports:  
 
 - Flaky tests for build workflow
@@ -155,12 +154,12 @@ $apply=filter(
 
 ***
 
-### Flaky tests filtered by Branch
+### Flaky tests filtered by branch
 
 To view the failed tests of a pipeline for a particular branch, use the following queries. To create the report, carry out the following extra steps along with what is specified later in this article.
 
-- Expand `Branch` into `Branch.BranchName`
-- Select Power BI Visualization Slicer and add the field `Branch.BranchName` to the slicer's **Field**
+- Expand `Branch` into `Branch.BranchName`.
+- Select Power BI Visualization Slicer and add the field `Branch.BranchName` to the slicer's **Field**.
 - Select the branch name from the slicer for which you need to see the outcome summary.
 
 For more information about using slicers, see [Slicers in Power BI](/power-bi/visuals/power-bi-visualization-slicers).
@@ -221,8 +220,8 @@ $apply=filter(
 
 To view the flaky tests for a pipeline and a particular test file, use the following queries. To create the report, carry out the following extra steps along with what is defined later in this article.
 
-- Expand `Test` into `Test.ContainerName`
-- Select Power BI Visualization Slicer and add the field `Test.ContainerName` to the slicer's **Field**
+- Expand `Test` into `Test.ContainerName`.
+- Select Power BI Visualization Slicer and add the field `Test.ContainerName` to the slicer's **Field**.
 - Select the container name from the slicer for which you need to see the outcome summary.
 
 #### [Power BI query](#tab/powerbi/)
@@ -277,10 +276,10 @@ $apply=filter(
 
 ### Flaky tests filtered by test owner
 
-To view the Flaky tests for a pipeline and tests owned by a particular test owner, use the following queries. To create the report, carry out the following extra steps along with what is defined later in this article.
+To view the flaky tests for a pipeline and tests owned by a particular test owner, use the following queries. To create the report, carry out the following extra steps along with what is defined later in this article.
 
-- Expand `Test` into `Test.TestOwner`
-- Select Power BI Visualization Slicer and add the field `Test.TestOwner` to the slicer's **Field**
+- Expand `Test` into `Test.TestOwner`.
+- Select Power BI Visualization Slicer and add the field `Test.TestOwner` to the slicer's **Field**.
 - Select the test owner from the slicer for which you need to see the outcome summary.
  
 #### [Power BI query](#tab/powerbi/)
@@ -338,8 +337,8 @@ $apply=filter(
 
 [!INCLUDE [temp](includes/sample-query-substitutions.md)]
  
-- `{organization}` - Your organization name
-- `{project}` - Your team project name
+- `{organization}` - Your organization name.
+- `{project}` - Your team project name.
 - `{pipelinename}` - Your pipeline name. Example: `Fabrikam hourly build pipeline`
 - `{startdate}` - The date to start your report. Format: YYYY-MM-DDZ. Example: `2021-09-01Z` represents September 1, 2021. Don't enclose in quotes or brackets and use two digits for both, month and date.
 
@@ -517,9 +516,9 @@ Expand the `Test` column to show the expanded entity `Test.TestName`. Expanding 
 
 ## Change column data type
 
-1. From the Power Query Editor, select the `TotalCount`, `PassedCount`, `FailedCount`, `NotExecutedCount`, `NotImpactedCount`, and `FlakyCount`  columns; select **Data Type** from the **Transform** menu; and then choose **Whole Number**.
+1. In Power Query Editor, select the `TotalCount`, `PassedCount`, `FailedCount`, `NotExecutedCount`, `NotImpactedCount`, and `FlakyCount` columns. Select **Data Type** from the **Transform** menu, and then choose **Whole Number**.
 
-1. Select the `FlakyRate` column; select **Data Type** from the **Transform** menu; and then choose **Decimal Number**.
+1. Select the `FlakyRate` column. Select **Data Type** from the **Transform** menu, and then choose **Decimal Number**.
 
 For more information about changing the data type, see  [Transform Analytics data to generate Power BI reports, Transform a column data type](transform-analytics-data-report-generation.md#transform-data-type). 
 
@@ -528,7 +527,7 @@ For more information about changing the data type, see  [Transform Analytics dat
   
 ## Create the Table report
  
-1. In Power BI, under **Visualizations**, choose  **Table** and drag and drop the fields onto the **Columns** area. 
+1. In Power BI, under **Visualizations**, select **Table**. Drag and drop the fields onto the **Columns** area. 
 
 	:::image type="content" source="media/pipeline-test-reports/visualizations-flaky-test-table.png" alt-text="Screenshot of visualization fields selections for Flaky tests table report. ":::
 

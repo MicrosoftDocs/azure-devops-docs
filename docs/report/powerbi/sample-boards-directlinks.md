@@ -7,7 +7,7 @@ ms.author: chcomley
 author: chcomley
 ms.topic: sample
 monikerRange: "<=azure-devops"
-ms.date: 10/08/2021
+ms.date: 04/07/2026
 ms.custom: powerbisample, engagement-fy23, sfi-image-nochange
 ---
 
@@ -29,11 +29,11 @@ Other sample queries include listing bugs with a Duplicate link to another bug, 
 
 ## Sample queries
 
-Several queries are provided which show how to filter linked work items. All of these queries specify the `WorkItems` entity set as they return current data.  
+Several queries are provided that show how to filter linked work items. All of these queries specify the `WorkItems` entity set as they return current data.  
 
 [!INCLUDE [temp](includes/query-filters-work-items.md)]
 
-### Return Features and their child User Stories 
+### Return features and their child user stories 
 
 [!INCLUDE [temp](includes/sample-powerbi-query.md)]
 
@@ -84,8 +84,8 @@ https://analytics.dev.azure.com/{organization}/{project}/_odata/v3.0-preview/Wor
 
 [!INCLUDE [temp](includes/sample-query-substitutions.md)]
 
-- `{organization}` - Your organization name 
-- `{project}` - Your team project name, or omit "/{project}" entirely, for a cross-project query
+- `{organization}` - Your organization name. 
+- `{project}` - Your team project name. To create a cross-project query, omit `/{project}`.
 - `{areapath}` - Your Area Path. Example format: `Project\Level1\Level2`.
 
 ### Query breakdown
@@ -105,7 +105,7 @@ The following table describes each part of the query.
    `$filter=WorkItemType eq 'Feature'`
    :::column-end:::
    :::column span="1":::
-   Return User Stories.
+   Return Features.
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -121,7 +121,7 @@ The following table describes each part of the query.
    `and startswith(Area/AreaPath,'{areapath}')`
    :::column-end:::
    :::column span="1":::
-   Include only Features under a specific **Area Path** replacing `'{areapath}'`.<br>To filter by a team name, use the filter statement `Teams/any(x:x/TeamName eq '{teamname})'`.
+   Include only Features under a specific **Area Path** replacing `'{areapath}'`.<br>To filter by a team name, use the filter statement `Teams/any(x:x/TeamName eq '{teamname}')`.
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -189,7 +189,7 @@ The following table describes each part of the query.
    :::column-end:::
 :::row-end:::
  
-### Return User Stories linked with the Related link type 
+### Return user stories linked with the Related link type 
 
 [!INCLUDE [temp](includes/sample-powerbi-query.md)]
 
@@ -235,9 +235,9 @@ https://analytics.dev.azure.com/{organization}/{project}/_odata/v3.0-preview/Wor
 
 ***
 
-### Return linked User Stories filtered by Teams 
+### Return linked user stories filtered by teams 
 
-The following query is the same as the one used previously in this article, except it filters by Team Name rather than Area Path. 
+The following query is the same as the one used previously in this article, except it filters by team name rather than area path. 
 
 #### [Power BI query](#tab/powerbi/)
 
@@ -248,7 +248,7 @@ let
    Source = OData.Feed ("https://analytics.dev.azure.com/{organization}/{project}/_odata/v3.0-preview/WorkItems?"
         &"$filter=WorkItemType eq 'User Story' "
             &"and State ne 'Closed' "
-            &"and (Teams/any(x:x/TeamName eq '{teamname}) or Teams/any(x:x/TeamName eq '{teamname}) or Teams/any(x:x/TeamName eq '{teamname}) "
+            &"and (Teams/any(x:x/TeamName eq '{teamname}') or Teams/any(x:x/TeamName eq '{teamname}') or Teams/any(x:x/TeamName eq '{teamname}')) "
         &"&$select=WorkItemId,Title,WorkItemType,State,Priority,Severity,TagNames,AreaSK "
         &"&$expand=AssignedTo($select=UserName),Iteration($select=IterationPath),Area($select=AreaPath), "
                 &"Links( "
@@ -270,7 +270,7 @@ in
 https://analytics.dev.azure.com/{organization}/{project}/_odata/v3.0-preview/WorkItems?
         $filter=WorkItemType eq 'User Story'
             and State ne 'Closed'
-            and (Teams/any(x:x/TeamName eq '{teamname}) or Teams/any(x:x/TeamName eq '{teamname}) or Teams/any(x:x/TeamName eq '{teamname})
+            and (Teams/any(x:x/TeamName eq '{teamname}') or Teams/any(x:x/TeamName eq '{teamname}') or Teams/any(x:x/TeamName eq '{teamname}'))
         &$select=WorkItemId,Title,WorkItemType,State,Priority,Severity,TagNames,AreaSK
         &$expand=AssignedTo($select=UserName),Iteration($select=IterationPath),Area($select=AreaPath),
                 Links(
@@ -371,7 +371,7 @@ https://analytics.dev.azure.com/{organization}/{project}/_odata/v3.0-preview/Wor
 
 ## Transform data in Power Query Editor
 
-Prior to creating the report, you'll need to expand columns that return records containing several fields. In this instance, you'll want to expand the following records: 
+Before you create the report, expand columns that return records containing several fields. In this case, expand the following records: 
 - `Links` 
 - `Links.TargetWorkItem`
 - `Area`
@@ -382,14 +382,14 @@ To learn how to expand work items, see [Transform Analytics data to generate Pow
  
 ### (Optional) Rename fields
 
-Once you've expanded the columns, you may want to rename one or more fields. For example, you can rename the column `AreaPath` to `Area Path`. You can rename them in the data table view, or later when you create the report. To learn how, see [Rename column fields](transform-analytics-data-report-generation.md#rename-column-fields). 
+After you expand the columns, you might want to rename one or more fields. For example, you can rename the column `AreaPath` to `Area Path`. You can rename them in the data table view, or later when you create the report. To learn how, see [Rename column fields](transform-analytics-data-report-generation.md#rename-column-fields). 
 
-In this example, the following fields have been renamed: 
+In this example, rename the following fields: 
 
 | Original field name | Rename |
 |---------------------|--------|
 | Links.TargetWorkItem.ID | Target ID |
-| LinksLinkTypeName       | Link Type |
+| Links.LinkTypeName       | Link Type |
 | Links.TargetWorkItem.State | Target State |
 | Links.TargetWorkItem.Title | Target Title | 
 
@@ -397,11 +397,11 @@ In this example, the following fields have been renamed:
 
 ## Create a table report to list linked work items 
 
-1. In Power BI, choose **Table** report under **Visualizations**. 
+1. In Power BI, under **Visualizations**, select **Table**. 
 
 	:::image type="content" source="media/reports-boards/parent-child-links-list-table-visualizations.png" alt-text="Screenshot of Power BI Visualizations and Fields selections for Parent-Child Links list table report. ":::
 
-1. Add the following fields in the order indicated to **Columns**:
+1. Add the following fields in the order shown to **Columns**:
 	- **ID**, right-click and select **Don't summarize**  
 	- **State**
 	- **Title**

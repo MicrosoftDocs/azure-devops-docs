@@ -183,6 +183,4 @@ items:
     href: troubleshooting-views.md
   - name: Odata Analytics query guidelines
     href: ../extend-analytics/odata-query-guidelines.md
-  - name: Performance & latency
-    href: performance-latency.md
 name: Analytics and Power BI

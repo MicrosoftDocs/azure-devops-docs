@@ -380,7 +380,12 @@ If a work item doesn't have any children, the rollup value may be null. For exam
 
 For easier reporting, replace all nulls with zero by following these steps.
 
-[!INCLUDE [temp](includes/sample-replace-nulls.md)]
+1. Select the column by choosing the column header.
+1. Select the **Transform** menu.
+1. Select **Replace Values**. The **Replace Values** dialog appears.
+1. Leave **Value to Find** set to `null`.
+1. Enter `0` in **Replace With**.
+1. Select **OK**.
 
 Repeat for all the rollup columns.
 

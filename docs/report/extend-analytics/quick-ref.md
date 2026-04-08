@@ -116,7 +116,7 @@ Analytics supports several widgets and built-in reports. In addition, we've crea
       - [Containers](analytics-metadata.md)  
       <br/>
       - [Data availability](../powerbi/data-available-in-analytics.md)  
-      - [Data latency](../powerbi/performance-latency.md)  
+      - [Data latency](../powerbi/what-is-analytics.md#data-latency)  
       - [Data model](data-model-analytics-service.md)  
    :::column-end:::
    :::column span="":::
@@ -145,7 +145,7 @@ Analytics supports several widgets and built-in reports. In addition, we've crea
       - [Query guidelines](odata-query-guidelines.md)  
       - [Query fails and timeouts](odata-query-guidelines.md#question-41065)  
       - [Query restrictions](odata-query-guidelines.md#restrictions)  
-      - [Query performance](../powerbi/performance-latency.md)  
+      - [Query performance](../powerbi/what-is-analytics.md#query-performance)  
       - [Query performance guidelines](odata-query-guidelines.md#performance-guidance)   
       - [Query style guidelines](odata-query-guidelines.md#style)  
       <br/>
@@ -224,7 +224,7 @@ Analytics supports several widgets and built-in reports. In addition, we've crea
 - [Analytics views dataset design](../powerbi/data-connector-dataset.md)  
 - [Supported OData functions and clauses](odata-supported-features.md)  
 - [OData API versioning](odata-api-version.md) 
-- [Performance & latency](../powerbi/performance-latency.md)
+- [Performance & latency](../powerbi/what-is-analytics.md#performance-and-latency)
 - [OData Analytics query guidelines for Azure DevOps](odata-query-guidelines.md) 
 - [Resolve errors associated with an Analytics view](../powerbi/troubleshooting-views.md)
 

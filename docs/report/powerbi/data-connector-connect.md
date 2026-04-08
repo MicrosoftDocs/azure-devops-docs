@@ -57,11 +57,7 @@ Ensure you meet the following requirements before connecting Power BI to Azure D
 
 [!INCLUDE [alt-creds-deprecation-notice](../../includes/alt-creds-deprecation-notice.md)]
 
-## Connect to an Analytics view
-
-Follow these steps to connect Power BI to your Azure DevOps Analytics data.
-
-1. Open Power BI Desktop. If the startup screen appears, select **Get data**. Otherwise, select **Home** > **Get Data** from the ribbon.
+## Connect Power BI to an Analytics view
 
 [!INCLUDE [connect to an analytics view](../includes/connect-analytics-view.md)]
 

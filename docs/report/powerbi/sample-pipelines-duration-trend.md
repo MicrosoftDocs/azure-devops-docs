@@ -9,14 +9,14 @@ ms.custom: powerbisample, engagement-fy23
 author: chcomley
 ms.topic: sample
 monikerRange: "<=azure-devops"
-ms.date: 12/14/2022
+ms.date: 04/07/2026
 ---
 
 # Pipeline duration trend sample report 
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)] 
 
-This article shows you how to create a report that shows how long your pipeline typically takes to complete successfully. The daily trend of pipeline duration report is similar to the **Pipeline rate trend** chart of the [Pipeline pass rate report](../../pipelines/reports/pipelinereport.md#pipeline-duration-report). 
+This article shows you how to create a report that shows how long your pipeline typically takes to complete successfully. The daily trend of pipeline duration report is similar to the **Pipeline duration** chart of the [Pipeline duration report](../../pipelines/reports/pipelinereport.md#pipeline-duration-report). 
 
 The following image shows an example of a duration trend report.
 
@@ -31,7 +31,7 @@ The following image shows an example of a duration trend report.
 
 ## Sample queries
 
-You can use the following queries of the `PipelineRuns` entity set to create different but similar pipeline duration trend reports. 
+To create different but similar pipeline duration trend reports, use the following queries of the `PipelineRuns` entity set. 
 
 [!INCLUDE [temp](includes/query-filters-pipelines.md)]
  
@@ -86,7 +86,7 @@ $apply=filter(
 
 [!INCLUDE [temp](includes/sample-query-substitutions-pipelines.md)]
 
-#### Query breakdown
+### Query breakdown
 
 The following table describes each part of the query.
 
@@ -152,7 +152,7 @@ The following table describes each part of the query.
    `percentile_cont(TotalDurationSeconds, 0.8,CompletedDateSK) as Duration80thPercentileInSeconds)`
    :::column-end:::
    :::column span="1":::
-   Compute 80th percentile of pipeline durations of all pipeline runs that match the filter criteria.
+   Computes the 80th percentile of pipeline durations for all pipeline runs that match the filter criteria.
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -160,7 +160,7 @@ The following table describes each part of the query.
    `/groupby(`
    :::column-end:::
    :::column span="1":::
-   Start groupby()
+   Starts the `groupby()` clause.
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -168,7 +168,7 @@ The following table describes each part of the query.
    `(Duration80thPercentileInSeconds, CompletedOn/Date))`
    :::column-end:::
    :::column span="1":::
-   Group by date of completion of pipeline run and calculated day wise 80th percentile pipeline duration.  
+   Groups by completion date and the computed 80th percentile pipeline duration.
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -176,18 +176,18 @@ The following table describes each part of the query.
    `&$orderby=CompletedOn/Date asc`
    :::column-end:::
    :::column span="1":::
-   Order the response by completed date. 
+   Orders the response by completed date. 
    :::column-end:::
 :::row-end:::
  
  
 
-### Filter by pipeline ID, rather than Pipeline Name
+### Filter by pipeline ID, rather than pipeline name
 
-Pipelines can be renamed. To ensure that the Power BI reports don't break when the pipeline name is changed, use pipeline ID rather than pipeline name. You can obtain the pipeline ID  from the URL of the pipeline runs page.
+You can rename pipelines. To ensure that the Power BI reports don't break when you change the pipeline name, use the pipeline ID instead of the pipeline name. You can get the pipeline ID from the URL of the pipeline runs page.
 
 ```
-https://dev.azure.com/{organization}/{project}/_build?definitionId= `{pipelineid}`
+https://dev.azure.com/{organization}/{project}/_build?definitionId={pipelineid}
 ```
 
 #### [Power BI query](#tab/powerbi/)
@@ -233,7 +233,7 @@ $apply=filter(
 
 ### Get 50th and 90th percentile, along with 80th percentile duration trend
 
-You may want to view the duration trend calculated using other percentile value. The following queries provide  50th and 90th percentile pipeline duration along with 80th percentile.
+You might want to view the duration trend calculated using other percentile values. The following queries provide 50th and 90th percentile pipeline duration along with 80th percentile.
 
 #### [Power BI query](#tab/powerbi/)
 
@@ -282,11 +282,11 @@ $apply=filter(
 
 ### Filter by branch
 
-To view the duration trend of a pipeline for a particular **branch** only, use the following queries. To create the report, do the following extra steps along with what is outlined in the [Change column data type](#change-column-data-type) and [Create the Line chart report](#create-the-line-chart-report) sections. 
+To view the duration trend of a pipeline for a particular **branch** only, use the following queries. To create the report, follow these extra steps along with the steps outlined in the [Change column data type](#change-column-data-type) and [Create the Line chart report](#create-the-line-chart-report) sections. 
 
 - Expand `Branch` into `Branch.BranchName`.
 - Select Power BI Visualization **Slicer** and add `Branch.BranchName` to the slicer's **Field**.
-- Select the pipeline from the slicer for which you need to see the pipeline duration trend.
+- Select the branch from the slicer for which you need to see the pipeline duration trend.
 
 #### [Power BI query](#tab/powerbi/)
 
@@ -331,10 +331,10 @@ $apply=filter(
 
 ### Duration trend for all project pipelines 
 
-You may want to view the duration trend for all the pipelines of the project in a single report. To create the report, do the following extra steps along with what is outlined in the [Change column data type](#change-column-data-type) and [Create the Line chart report](#create-the-line-chart-report) sections.  
+You might want to view the duration trend for all the pipelines of the project in a single report. To create the report, follow these extra steps along with the steps outlined in the [Change column data type](#change-column-data-type) and [Create the Line chart report](#create-the-line-chart-report) sections.  
 - Expand `Pipeline` into `Pipeline.PipelineName`.
-- Select **Slicer** from the **Visualizations** pane and add the `Pipeline.PipelineNam` to the slicer's **Field**. 
-- Select the pipeline from the slicer for which you need to see the trend of pipeline pass rate.   
+- Select **Slicer** from the **Visualizations** pane and add `Pipeline.PipelineName` to the slicer's **Field**. 
+- Select the pipeline from the slicer for which you need to see the duration trend.
 
 #### [Power BI query](#tab/powerbi/)
 
@@ -378,12 +378,12 @@ $apply=filter(
  
 ## Expand columns in Power Query Editor
 
-Prior to creating the report, you'll need to expand columns that return records containing several fields. In this instance, you'll want to expand the `CompletedOn` column to flatten it to `CompletedOn.Date`.  
+Before creating the report, you need to expand columns that return records containing several fields. In this case, you want to expand the `CompletedOn` column to flatten it to `CompletedOn.Date`.  
 To learn how to expand work items, see [Transform Analytics data to generate Power BI reports](transform-analytics-data-report-generation.md#expand-columns). 
  
 ## Change column data type
 
-From the **Transform** menu change the data type for the `Duration80thPercentileInSeconds` to **Decimal Number**.  To learn how, see [Transform a column data type](transform-analytics-data-report-generation.md#transform-data-type). 
+From the **Transform** menu, change the data type for `Duration80thPercentileInSeconds` to **Decimal Number**. To learn how, see [Transform a column data type](transform-analytics-data-report-generation.md#transform-data-type).
 
 [!INCLUDE [temp](includes/sample-rename-column-fields.md)]
 

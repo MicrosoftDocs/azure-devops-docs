@@ -4943,7 +4943,7 @@
     },
     {
       "source_path": "docs/report/powerbi/performance-latency.md",
-      "redirect_url": "/previous-versions/azure/devops/report/powerbi/performance-latency",
+      "redirect_url": "/azure/devops/report/powerbi/what-is-analytics#performance-and-latency",
       "redirect_document_id": false,
       "monikers": [
         "azure-devops-2020"
@@ -11740,7 +11740,7 @@
     },
     {
       "source_path": "docs/report/powerbi/performance-latency.md",
-      "redirect_url": "/previous-versions/azure/devops/report/powerbi/performance-latency",
+      "redirect_url": "/azure/devops/report/powerbi/what-is-analytics#performance-and-latency",
       "redirect_document_id": false,
       "monikers": [
         "azure-devops-2019"
