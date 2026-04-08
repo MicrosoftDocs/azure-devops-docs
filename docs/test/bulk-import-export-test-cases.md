@@ -29,9 +29,6 @@ Import and export test cases in bulk by using CSV or Microsoft Excel (XLSX) file
 
 Import and export test cases in bulk by using CSV or Microsoft Excel (XLSX) files. You can create new test cases, update existing test cases by ID, or download test cases for external editing.
 
-> [!NOTE]
-> The enhanced import wizard with field mapping review, reusable mapping templates, and multi-sheet selection is available in Azure DevOps Services only. On Azure DevOps Server, the import wizard imports the file directly without a mapping review step.
-
 ::: moniker-end
 
 For web portal alternatives like copy, clone, and direct updates, see [Copy or clone test plans, test suites, and test cases](copy-clone-test-items.md). For an overview of test objects and terminology, see [Test objects and terms](test-objects-overview.md).
@@ -59,19 +56,19 @@ For web portal alternatives like copy, clone, and direct updates, see [Copy or c
 ## Import test cases 
 
 1. In **Test Plans**, select a test plan and then a test suite.
-1. Select **Import test cases from CSV/XLSX**.
+2. Select **Import test cases from CSV/XLSX**.
 
    :::image type="content" source="media/bulk-import-test-case/choose-import-test-cases.png" alt-text="Screenshot of Import test cases to the selected test suite.":::
 
 ::: moniker range="azure-devops"
 
-1. Drag and drop a file, or select **Browse** to choose one. The wizard automatically maps columns to Azure DevOps fields.
+3. Drag and drop a file, or select **Browse** to choose one. The wizard automatically maps columns to Azure DevOps fields.
 
 ::: moniker-end
 
 ::: moniker range="< azure-devops"
 
-1. Select **Browse** to choose a CSV or XLSX file.
+3. Select **Browse** to choose a CSV or XLSX file.
 
 ::: moniker-end
 
@@ -80,7 +77,7 @@ For web portal alternatives like copy, clone, and direct updates, see [Copy or c
    > [!TIP]
    > For CSV files, save with **UTF-8** encoding to preserve special characters. Enclose cell values in double quotes if they contain commas or line breaks.
 
-1. Review the field mappings. The following nine fields are required:
+4. Review the field mappings. The following nine fields are required:
    - **ID** — leave empty for new test cases, or provide an existing ID to update
    - **Work Item Type** — must be `Test Case` (exact spelling and casing)
    - **Title**
@@ -93,7 +90,7 @@ For web portal alternatives like copy, clone, and direct updates, see [Copy or c
 
    :::image type="content" source="media/bulk-import-test-case/import-wizard-mapping.png" alt-text="Screenshot of the import wizard showing field mapping interface.":::
 
-1. (Optional) To change a mapping, select the field dropdown and choose the correct Azure DevOps field.
+5. (Optional) To change a mapping, select the field dropdown and choose the correct Azure DevOps field.
 
    :::image type="content" source="media/bulk-import-test-case/update-field-mapping.png" alt-text="Screenshot shows dropdown menu for optional field mapping updates.":::
 
@@ -101,13 +98,13 @@ For web portal alternatives like copy, clone, and direct updates, see [Copy or c
 
    :::image type="content" source="media/bulk-import-test-case/skip-mapping.png" alt-text="Screenshot shows empty field selection for skipping mapping.":::
 
-1. (Optional) Export the current mapping as a reusable template to share with your team.
+6. (Optional) Export the current mapping as a reusable template to share with your team.
 
-1. (Optional) For XLSX files with multiple sheets, select which sheet to import.
+7. (Optional) For XLSX files with multiple sheets, select which sheet to import.
 
    :::image type="content" source="media/bulk-import-test-case/multiple-sheets-selection.png" alt-text="Screenshot showing worksheet selection dialog for XLSX files with multiple sheets.":::
 
-1. Select **Import**. The wizard updates existing test cases with matching IDs.
+8. Select **Import**. The wizard updates existing test cases with matching IDs.
 
 ::: moniker-end
 
@@ -116,7 +113,7 @@ For web portal alternatives like copy, clone, and direct updates, see [Copy or c
    > [!TIP]
    > For CSV files, save with **UTF-8** encoding to preserve special characters. Enclose cell values in double quotes if they contain commas or line breaks.
 
-1. Select **Import**. The file must include the required columns: **ID**, **Work Item Type**, **Title**, **Test Step**, **Step Action**, **Step Expected**, **Area Path**, **Assigned To**, and **State**. The import wizard imports the file directly without a mapping review step.
+4. Select **Import**. The file must include the required columns: **ID**, **Work Item Type**, **Title**, **Test Step**, **Step Action**, **Step Expected**, **Area Path**, **Assigned To**, and **State**. The import wizard imports the file directly without a mapping review step.
 
 ::: moniker-end
 
