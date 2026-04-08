@@ -162,6 +162,7 @@ This design lets clients proactively slow down their rate of requests.
               
    :::column-end:::
 :::row-end:::
+---
 
 ## Work tracking, process, & project limits
 
