@@ -99,7 +99,7 @@ To delete a test plan, use the following steps:
    :::image type="content" border="true" source="media/create-a-test-plan/delete-test-artifacts.png" alt-text="Screenshot shows delete test artifacts dialog box.":::
 
 > [!NOTE]
-> Deleted test plans are moved to the **Test Plan Recycle Bin** and can be restored within 14 days by using the REST API. For more information, see [Restore Deleted Test Plan REST API](/rest/api/azure/devops/testplan/test-plan/restore) and [Restore deleted test plans](/azure/devops/release-notes/roadmap/2025/testplans/restore-deleted-test-plans).
+> Deleted test plans are moved to the **Test Plan Recycle Bin** and can be restored within 14 days by using the REST API. For more information, see [Restore deleted test plans and test suites using REST API](/azure/devops/release-notes/roadmap/2025/testplans/restore-deleted-test-plans).
 
 ::: moniker-end
 
