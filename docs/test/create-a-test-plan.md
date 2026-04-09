@@ -52,15 +52,15 @@ In general, you create test plans to test requirements. Before you create a test
 
 1. Sign in to your Azure DevOps project and select **Test Plans** > **Test Plans**.
 
-   :::image type="content" source="media/create-a-test-plan/open-test-plans.png" alt-text="Screenshot of opening the list of test plans page.":::
+   :::image type="content" source="media/create-test-plan/open-test-plans.png" alt-text="Screenshot of opening the list of test plans page.":::
 
 2. Select **+ New Test Plan**.
 
-   :::image type="content" source="media/create-a-test-plan/new-test-plan.png" alt-text="Screenshot of creating a new test plan.":::
+   :::image type="content" source="media/create-test-plan/new-test-plan.png" alt-text="Screenshot of creating a new test plan.":::
 
 3. Enter a name for the test plan, verify that the area path and iteration are set correctly, and then select **Create**.
 
-   :::image type="content" source="media/create-a-test-plan/test-plan-name-path-iteration.png" alt-text="Screenshot of adding test plan details.":::
+   :::image type="content" source="media/create-test-plan/test-plan-name-path-iteration.png" alt-text="Screenshot of adding test plan details.":::
 
    The test plan is created and you can start [adding test suites](create-test-suites.md) and [test cases](create-test-cases.md).
 
@@ -76,7 +76,7 @@ To rename a test plan, use the following steps:
 
 2. Next to the test plan name, select **More Actions** > **Edit**.
 
-   :::image type="content" source="media/create-a-test-plan/rename-edit-test-plan.png" alt-text="Screenshot shows option to edit a test plan.":::
+   :::image type="content" source="media/create-test-plan/rename-edit-test-plan.png" alt-text="Screenshot shows option to edit a test plan.":::
 
 3. Change the name and then select **Save & Close**.
 
@@ -96,7 +96,7 @@ To delete a test plan, use the following steps:
 
 3. The **Delete test artifacts** dialog box explains exactly what gets deleted. Enter the test plan ID to confirm that you want to delete, and then select **Delete**.
 
-   :::image type="content" border="true" source="media/create-a-test-plan/delete-test-artifacts.png" alt-text="Screenshot shows delete test artifacts dialog box.":::
+   :::image type="content" border="true" source="media/create-test-plan/delete-test-artifacts.png" alt-text="Screenshot shows delete test artifacts dialog box.":::
 
 > [!NOTE]
 > Deleted test plans are moved to the **Test Plan Recycle Bin** and can be restored within 14 days by using the REST API. For more information, see [Restore deleted test plans and test suites using REST API](/azure/devops/release-notes/roadmap/2025/testplans/restore-deleted-test-plans).

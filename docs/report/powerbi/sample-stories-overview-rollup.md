@@ -4,36 +4,36 @@ titleSuffix: Azure DevOps
 description: Learn how to use sample Power BI and OData queries to generate a one level roll-up report of aggregated metrics for work progress and status of tests and bugs.
 ms.subservice: azure-devops-analytics
 ms.reviewer: desalg
-ms.author: shdalv
+ms.author: chcomley
 ms.custom: powerbisample, engagement-fy23
 author: chcomley
 ms.topic: sample
 monikerRange: "<=azure-devops"
-ms.date: 01/19/2023
+ms.date: 04/07/2026
+ai-usage: ai-assisted
 ---
 
 # Requirements tracking rollup sample report
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
-The Requirements tracking rollup report builds on the [Requirements tracking report](sample-stories-overview.md) and shows how to aggregate metrics for a one-level roll-up. For example, if you're tracking requirements with User Stories, you can aggregate data for Features using the queries provided in this article.
+The Requirements tracking rollup report builds on the [Requirements tracking report](sample-stories-overview.md) and shows how to aggregate metrics for a one-level rollup. For example, if you're tracking requirements with user stories, you can aggregate data for features by using the queries provided in this article.
 
 An example is shown in the following image. 
 
-> [!div class="mx-imgBorder"] 
-> ![Screenshot of Power BI Stories Overview Rollup Report.](media/odatapowerbi-storiesoverview-rollup.png)
+:::image type="content" source="media/odatapowerbi-storiesoverview-rollup.png" alt-text="Screenshot of Power BI Stories Overview Rollup Report.":::
 
 This report displays the following information for each requirement that it lists:
 
 - **Percent work completed**:  Progress bar that shows the percentage of completed work based on the rollup of completed hours for all tasks that are linked to the requirement.
-- **Passed tests**: The number of test cases run that's passed based on the most recent test run.  
-- **Failed tests**: The number of test cases run that's failed based on the most recent test run. 
-- **Run tests**:  The number of test runs that's executed.  
+- **Passed tests**: The number of test cases that pass based on the most recent test run.  
+- **Failed tests**: The number of test cases that fail based on the most recent test run. 
+- **Run tests**:  The number of test runs that are executed.  
 - **Active bugs**: The number of linked bugs in an Active state. 
 - **Closed bugs**: The number of linked bugs in a  Closed, Done, or Completed state. 
 
 > [!NOTE] 
-> Requirement tracking is supported only for test cases linked through a [**Requirement-based test suite**](../../test/create-test-suites.md#backlog). The association between a requirement work item&mdash;User Story ([Agile](../../boards/work-items/guidance/agile-process.md)), Product Backlog Item ([Scrum](../../boards/work-items/guidance/scrum-process.md)), Requirement ([CMMI](../../boards/work-items/guidance/cmmi-process.md)), or Issue ([Basic](../../boards/get-started/plan-track-work.md))&mdash;and manual test execution is only formed when the test case is linked via a **Requirement-based test suite**. 
+> Requirement tracking supports only test cases linked through a [**Requirement-based test suite**](../../test/create-a-test-plan.md#backlog). The association between a requirement work item&mdash;user story ([Agile](../../boards/work-items/guidance/agile-process.md)), product backlog item ([Scrum](../../boards/work-items/guidance/scrum-process.md)), requirement ([CMMI](../../boards/work-items/guidance/cmmi-process.md)), or issue ([Basic](../../boards/get-started/plan-track-work.md))&mdash;and manual test execution is only formed when you link the test case via a **Requirement-based test suite**. 
 
 [!INCLUDE [stories-overview-info](includes/sample-stories-overview-info.md)] 
 
@@ -47,21 +47,21 @@ This report displays the following information for each requirement that it list
 
 ## Sample queries
 
-To generate the report, you must add three Power BI queries to Power BI desktop and then link them. Each query executes either the `WorkItems` or `TestPoints` entity set.
+To generate the report, add three Power BI queries to Power BI Desktop and then link them. Each query executes either the `WorkItems` or `TestPoints` entity set.
  
 > [!NOTE]   
 > The Power BI query snippets provided in the following sections include the requisite data transforms to expand columns and change data type.
 
 ### Query area and iteration paths
 
-In order to scope your report to a particular Area and Iteration path, you can filter the query using `AreaSK` and `IterationSK`. For details, see [Define basic queries using OData Analytics](../extend-analytics/analytics-recipes.md#area).
+To scope your report to a particular area and iteration path, filter the query by using `AreaSK` and `IterationSK`. For details, see [Define basic queries using OData Analytics](../extend-analytics/analytics-recipes.md#area).
 
 [!INCLUDE [temp](includes/query-filters-work-items.md)] 
 
 ### Query for percentage of hours completion for requirements
 
 > [!NOTE]   
-> Change the `WorkItemType` based on the process you are using. The Scrum template supports **Feature** and the Basic template supports **Epic** as the roll up work item type, respectively.
+> Change the `WorkItemType` based on the process you're using. The Scrum template supports **Feature** and the Basic template supports **Epic** as the rollup work item type, respectively.
 
 #### [Power BI query](#tab/powerbi/)
 
@@ -156,7 +156,7 @@ let
 	        cast(LastResultOutcome eq 'None', Edm.Int32) with sum as NotRunCount, 
 	        cast(LastResultOutcome ne 'None', Edm.Int32) with sum as RunCount)
 )", null, [Implementation="2.0"]),
-    #"Changed Type" = Table.TransformColumnTypes(#"Source",{{"TotalCount", type number}, {"PassedCount", type number}, {"FailedCount", type number}, {"BlockedCount", type number}, {"NotApplicableCount", type number}, {"NotRunCount", type number}, {"RunCount", type number}})
+    #"Changed Type" = Table.TransformColumnTypes(Source,{{"TotalCount", type number}, {"PassedCount", type number}, {"FailedCount", type number}, {"BlockedCount", type number}, {"NotApplicableCount", type number}, {"NotRunCount", type number}, {"RunCount", type number}})
 in
     #"Changed Type"
 ```
@@ -198,7 +198,7 @@ iif(TestSuite/RequirementWorkItem/Parent ne null, TestSuite/RequirementWorkItem/
 ### Query for status of bugs linked to the requirements
 
 > [!NOTE]   
-> Change the `WorkItemType` based on the process you are using. The Scrum template supports **Feature** and the Basic template supports **Epic** as the roll up work item type, respectively.
+> Change the `WorkItemType` based on the process you're using. The Scrum template supports **Feature** and the Basic template supports **Epic** as the rollup work item type, respectively.
 
 #### [Power BI query](#tab/powerbi/)
 
@@ -259,10 +259,10 @@ https://analytics.dev.azure.com/{organization}/{project}/_odata/v3.0-preview/Wor
 
 [!INCLUDE [temp](includes/sample-query-substitutions.md)]
 
-- `{organization}` - Your organization name 
-- `{project}` - The name of your project  
-- `{iterationSK}` - The GUID associated with the **Iteration Path** of interest. To look up the GUID, see [../extend-analytics/wit-analytics.md#iterationsk](Return the IterationSK for a specific Iteration Path)
-- `{areaSK}` - The GUID associated with the Area Path of interest. To look up the GUID, see [../extend-analytics/wit-analytics.md#areask](Return the AreaSK for a specific Area Path).
+- `{organization}` - Your organization name. 
+- `{project}` - The name of your project.  
+- `{iterationSK}` - The GUID associated with the **Iteration Path** of interest. To look up the GUID, see [Return the IterationSK for a specific Iteration Path](../extend-analytics/wit-analytics.md#iterationsk).
+- `{areaSK}` - The GUID associated with the **Area Path** of interest. To look up the GUID, see [Return the AreaSK for a specific Area Path](../extend-analytics/wit-analytics.md#areask).
  
 
 ### Query breakdown
@@ -322,7 +322,7 @@ The following table describes each part of the query.
                aggregate($count as Count) )` 
    :::column-end:::
    :::column span="1":::
-   Expand the child items of Features and filter for bug, group the return data by State and sun the total count of child items.  
+   Expand the child items of Features and filter for bugs, group the return data by State, and sum the total count of child items.  
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -330,7 +330,7 @@ The following table describes each part of the query.
    `/aggregate($count as TotalCount,`
    :::column-end:::
    :::column span="1":::
-   Aggregate data across the filtered test points with having count as `TotalCount`.
+   Aggregate data across the filtered test points with count as `TotalCount`.
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -343,7 +343,7 @@ The following table describes each part of the query.
 	    cast(LastResultOutcome ne 'None', Edm.Int32) with sum as RunCount)`
    :::column-end:::
    :::column span="1":::
-   While aggregating, sum the values of test points based on their latest execution outcome of *Passed*, *Failed*, *Blocked*, *NotApplicable*, and *None*. Also, sum the values of test points whose latest outcome is not equal to *None* to get the total `RunCount`.  
+   While aggregating, sum the values of test points based on their latest execution outcome of *Passed*, *Failed*, *Blocked*, *NotApplicable*, and *None*. Also, sum the values of test points whose latest outcome isn't equal to *None* to get the total `RunCount`.  
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -373,23 +373,22 @@ The following table describes each part of the query.
        )`
    :::column-end:::
    :::column span="1":::
-   Calculate the percent of completed wor.
+   Calculate the percent of completed work.
    :::column-end:::
 :::row-end:::
 
 ## Create the Table report
 
-1. From the **Modeling** tab, choose **Manage Relationships** and link the three query results by `WorkItemId` column. 
-1. Under **Visualizations**, choose **Table**.
-1. Add the columns you're interested in from the three Power BI queries.
-1. Select **Sum** as aggregation for additive columns like **Passed tests** etc.
-    > [!div class="mx-imgBorder"] 
-    > ![Power BI select Sum as aggregation](/azure/devops/report/powerbi/media/powerbi-sum-aggregation.png)
+1. From the **Modeling** tab, select **Manage Relationships** and link the three query results by the `WorkItemId` column. 
+1. Under **Visualizations**, select **Table**.
+1. Add the columns you want from the three Power BI queries.
+1. Select **Sum** as the aggregation for additive columns like **Passed tests**.
 
-Here, **Authentication scenarios** is a parent feature of two User Stories.
+    :::image type="content" source="media/powerbi-sum-aggregation.png" alt-text="Screenshot of Power BI Sum aggregation selection.":::
 
-> [!div class="mx-imgBorder"] 
-> ![Screenshot of Power BI Sample Stories Overview Rollup Report.](media/odatapowerbi-storiesoverview-rollup.png)
+In this example, **Authentication scenarios** is a parent feature of two user stories.
+
+:::image type="content" source="media/odatapowerbi-storiesoverview-rollup.png" alt-text="Screenshot of Power BI Sample Stories Overview Rollup Report.":::
 
 ## Related articles
 

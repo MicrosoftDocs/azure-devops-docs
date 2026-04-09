@@ -36,7 +36,7 @@ For key concepts, see [Test objects and terms](test-objects-overview.md).
 
 You can drag and drop test suites to nest them under static suites, and drag test cases to reorder them.
 
-:::image type="content" source="media/create-a-test-plan/drag-drop-test.png" alt-text="Screenshot shows using drag and drop to move a test.":::
+:::image type="content" source="media/create-test-plan/drag-drop-test.png" alt-text="Screenshot shows using drag and drop to move a test.":::
 
 ::: moniker-end
 
@@ -52,7 +52,7 @@ Add test suites for the backlog items that need manual tests. These tests can be
 
 1. To add a suite to a test plan, select **More options** for the test suite, and then select **New Suite** > **Requirement based suite**.
 
-   :::image type="content" source="media/create-a-test-suite/add-requirement-based-suite.png" alt-text="Screenshot shows creating a requirement-based test suite.":::
+   :::image type="content" source="media/create-test-suite/add-requirement-based-suite.png" alt-text="Screenshot shows creating a requirement-based test suite.":::
 
    Use requirement-based suites to group your test cases together.
    That way, you can track the testing status of a backlog item.
@@ -61,12 +61,12 @@ Add test suites for the backlog items that need manual tests. These tests can be
 1. In **Create requirement-based suites**, add one or more clauses to filter your work items by the iteration path for the sprint.
    Run the query to view the matching backlog items.
 
-   :::image type="content" source="media/create-a-test-plan/add-clauses-run-query.png" alt-text="Screenshot shows adding clauses to filter by iteration and running the query.":::
+   :::image type="content" source="media/create-test-plan/add-clauses-run-query.png" alt-text="Screenshot shows adding clauses to filter by iteration and running the query.":::
 
 1. In the list of work items returned by the query, select the backlog items you want to test in this sprint.
    Select **Create suites** to create a requirement-based suite for each one.
 
-   :::image type="content" source="media/create-a-test-plan/select-requirement-create-suite.png" alt-text="Screenshot shows adding requirement-based suites for your backlog items.":::
+   :::image type="content" source="media/create-test-plan/select-requirement-create-suite.png" alt-text="Screenshot shows adding requirement-based suites for your backlog items.":::
 
 ::: moniker-end
 
@@ -97,9 +97,9 @@ For test suites, the **Test Suite Audit** entry under the test suite history tra
 ## Find a test suite in a test plan
 
 ::: moniker range="<=azure-devops"
-To find a test suite within a test plan, select the :::image type="icon" source="media/create-a-test-plan/filter-icon.png" border="false"::: filter icon in **Test Plans**. Enter the test suite name to filter the list. Search results are limited to the selected test plan hierarchy.
+To find a test suite within a test plan, select the :::image type="icon" source="media/create-test-plan/filter-icon.png" border="false"::: filter icon in **Test Plans**. Enter the test suite name to filter the list. Search results are limited to the selected test plan hierarchy.
 
-  :::image type="content" source="media/create-a-test-suite/filter-select-test-plan.png" alt-text="Screenshot shows finding a test suite in a test plan.":::
+  :::image type="content" source="media/create-test-suite/filter-select-test-plan.png" alt-text="Screenshot shows finding a test suite in a test plan.":::
 ::: moniker-end
 
 ## Next step
