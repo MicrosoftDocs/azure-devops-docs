@@ -72,7 +72,7 @@ Analytics covers the following Azure DevOps feature areas:
 
 ::: moniker range="azure-devops"
 
-Analytics automatically enables for all Azure DevOps Services projects and populates itself with all available Azure DevOps data. Once populated, it continuously updates itself as data changes occur. For more information, read [Data available in Analytics](./data-available-in-analytics.md) and [Performance and latency](performance-latency.md).
+Analytics automatically enables for all Azure DevOps Services projects and populates itself with all available Azure DevOps data. Once populated, it continuously updates itself as data changes occur. For more information, read [Data available in Analytics](./data-available-in-analytics.md).
 
 ::: moniker-end
 
@@ -213,22 +213,19 @@ Through OData queries, you can:
 - Query relationships between custom and standard fields
 - Build reports that include your organization-specific data
 
-## Performance and scalability
+## Performance and latency
 
-Analytics is designed for high-performance reporting scenarios:
+When you use Analytics, you query a curated copy of the data stored in Azure DevOps. The data copy helps optimize read and aggregation performance, and greatly reduces the effect reporting scenarios have on Azure DevOps.
 
-### Performance characteristics
+### Data latency
 
-- **Optimized for read operations**: Fast query response times
-- **Server-side aggregations**: Reduced data transfer
-- **Incremental updates**: Only changed data is refreshed
-- **Caching strategies**: Improved response times for frequent queries
+Because the data is copied, Analytics is **not a real-time store**. Copying the data introduces up to a 30-second delay before the data associated with any one change shows up in Analytics.
 
-### Scalability features
+### Query performance
 
-- **Handles large datasets**: Supports organizations with extensive historical data
-- **Concurrent access**: Multiple users can query simultaneously
-- **Resource management**: Automatic throttling prevents system overload
+Using the [recommended query patterns](../extend-analytics/odata-query-guidelines.md), Analytics responds to any [aggregation](../extend-analytics/aggregated-data-analytics.md) or [non-aggregated](../extend-analytics/analytics-recipes.md) query within 3 to 5 seconds. The query response is paged if it exceeds 10,000 results.
+
+Some of the entity sets available in Analytics are designed for aggregations. The service limits the results from these entities to a single page for any non-aggregated query as outlined in the [recommended query patterns](../extend-analytics/odata-query-guidelines.md).
 
 ## Security and permissions
 

@@ -9,16 +9,17 @@ ms.custom: powerbisample, engagement-fy23
 author: chcomley
 ms.topic: sample
 monikerRange: "<=azure-devops"
-ms.date: 12/15/2022
+ms.date: 04/07/2026
+ai-usage: ai-assisted
 ---
 
-# Pipeline stage wise failures sample report 
+# Pipeline stage failures sample report 
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)] 
 
-This article shows you how to create a report of a pipeline's daily stage failures. This report is similar to the 'Failure trend' chart of the [Pipeline pass rate report](../../pipelines/reports/pipelinereport.md#pipeline-pass-rate-report). 
+This article shows you how to create a report of a pipeline's daily stage failures. This report is similar to the **Failure trend** chart of the [Pipeline pass rate report](../../pipelines/reports/pipelinereport.md#pipeline-pass-rate-report). 
 
-The following image shows an example of stagewise failures report for a specific pipeline from October 2022 to December 15 2022. 
+The following image shows an example of a stage failures report for a specific pipeline.
 
 :::image type="content" source="media/pipeline-reports/stagewise-stacked-bar-report.png" alt-text="Screenshot of Power BI Pipelines stagewise failures stacked column report."::: 
  
@@ -31,13 +32,13 @@ The following image shows an example of stagewise failures report for a specific
 
 ## Sample queries
 
-Stage, task, or job failure trend reports can be created by querying the `PipelineRunActivityResults` entity set.
+You can create stage, task, or job failure trend reports by querying the `PipelineRunActivityResults` entity set.
 
 [!INCLUDE [temp](includes/query-filters-pipelines.md)]
 
-### Stagewise failure trend 
+### Stage failure trend 
 
-To view stagewise failure trend for a specific pipeline from a specified date, use the following queries.
+To view the stage failure trend for a specific pipeline from a specified date, use the following queries.
 
 ### [Power BI query](#tab/powerbi/)
 
@@ -168,7 +169,7 @@ The following table describes each part of the query.
    `(PipelineRunCompletedOn/Date, PipelineRunId, PipelineJob/StageName ),`
    :::column-end:::
    :::column span="1":::
-   Group by date of completion of pipeline run, Build ID and stage name.
+   Group by date of completion of pipeline run, pipeline run ID, and stage name.
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -176,7 +177,7 @@ The following table describes each part of the query.
    `aggregate (FailedCount with sum as FailedCount))`
    :::column-end:::
    :::column span="1":::
-   For each day, build ID, and stage; count the total number of failures. It will be the total number of task failures and not stage failures. 
+   For each day, pipeline run ID, and stage, count the total number of failures. This value represents the total number of task failures, not stage failures.
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -212,9 +213,9 @@ The following table describes each part of the query.
    :::column-end:::
 :::row-end:::
 
-### Task wise failure trend 
+### Task failure trend 
 
-To view the task wise failure trend, use the following queries.
+To view the task failure trend, use the following queries.
 
 #### [Power BI query](#tab/powerbi/)
 
@@ -255,9 +256,9 @@ $apply=filter(
 
 ***
 
-### Job wise failure trend 
+### Job failure trend 
 
-To view the job wise failure trend, use the following queries.
+To view the job failure trend, use the following queries.
 
 #### [Power BI query](#tab/powerbi/)
 
@@ -311,7 +312,7 @@ $apply=filter(
  
 ## Expand columns in Power Query Editor
 
-Prior to creating the report, you'll need to expand the following two columns. To learn how to expand work items, see [Transform Analytics data to generate Power BI reports](transform-analytics-data-report-generation.md#expand-columns). 
+Before you create the report, expand the following two columns. For more information about expanding work items, see [Transform Analytics data to generate Power BI reports](transform-analytics-data-report-generation.md#expand-columns). 
 - Expand `PipelineJob` to `PipelineJob.StageName` 
 - Expand `PipelineRunCompletedOn` to `PipelineRunCompletedOn.Date` 
 
@@ -320,21 +321,19 @@ Prior to creating the report, you'll need to expand the following two columns. T
 
 From the **Transform** menu, change the data type for the `FailedStageCount` column to **Whole Number**. To learn how, see [Transform a column data type](transform-analytics-data-report-generation.md#transform-data-type). 
 
-## (Optional) Rename column fields
-
-You can rename column fields to ones that are more user friendly. For example, you can rename the column `Pipeline.PipelineName` to `Pipeline Name`, or `TotalCount` to `Total Count`. To learn how, see [Rename column fields](transform-analytics-data-report-generation.md#rename-column-fields). 
+[!INCLUDE [temp](includes/sample-rename-column-fields.md)]
 
 [!INCLUDE [temp](includes/close-apply.md)]
 
 ## Create the Stacked column chart report 
 
-1. In Power BI, under **Visualizations**, choose the **Stacked column chart** report. The following example assumes that no one renamed any columns. 
+1. In Power BI, under **Visualizations**, choose the **Stacked column chart** report. The following example assumes that you didn't rename any columns. 
 
 	:::image type="content" source="media/pipeline-reports/stagewise-failure-stacked-bar-chart-visualizations.png" alt-text="Screenshot of Visualization fields selections for stagewise failures Stacked column chart report. "::: 
 
 1. Add `PipelineRunCompletedOn.Date` to **X-Axis**, right-click it, and select **PipelineRunCompletedOn.Date**, rather than **Date Hierarchy**.
 	
-1. Add `FailedStagedCount` to **Y-Axis** right-click it, and ensure **Sum** is selected.
+1. Add `FailedStageCount` to **Y-Axis**, right-click it, and ensure **Sum** is selected.
 
 1. Add `PipelineJob.StageName` to **Legend**. 
 
