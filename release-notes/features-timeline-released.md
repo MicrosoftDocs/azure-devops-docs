@@ -45,7 +45,8 @@ You can also [view the build numbers for each version](#azure-devops-server-buil
     <td>Remote MCP Server public preview</td><td>General</td><td>Future</td></tr>
     <td>Expired personal access tokens (PATs) can no longer be modified</td><td>General</td><td>Future</td></tr>
     <td>Allow extensions to access local network resources</td><td>General</td><td>Future</td></tr>
-            <td rowspan="6"><a href="2026/sprint-272-update.md" data-raw-source="[14 April 2026](2026/sprint-272-update.md)">April 14 2026</a></td>
+            <td rowspan="7"><a href="2026/sprint-272-update.md" data-raw-source="[14 April 2026](2026/sprint-272-update.md)">April 14 2026</a></td>
+            <td>Built-in Code Search, no extension required</td><td>General</td><td>Future</td></tr>
             <td>CodeQL default setup for code scanning (public preview)</td><td>GitHub Advanced Security for Azure DevOps</td><td>N/A</td></tr>
             <td>Combined alerts view and security campaigns in security overview</td><td>GitHub Advanced Security for Azure DevOps</td><td>N/A</td></tr>
             <td>Alert UX enhancements: confidence filter and alert counts</td><td>GitHub Advanced Security for Azure DevOps</td><td>N/A</td></tr>
