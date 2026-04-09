@@ -8,18 +8,24 @@ description: CodeQL default setup public preview and enhanced work item experien
 
 # CodeQL default setup public preview and enhanced work item experiences
 
-This sprint brings CodeQL default setup to public preview for GitHub Advanced Security for Azure DevOps, expands security overview with combined alerts and campaigns, and improves Azure Boards editing and filtering experiences.
+This sprint brings CodeQL default setup to public preview for GitHub Advanced Security for Azure DevOps, improves GitHub service connection details in Azure Pipelines, and enhances Azure Boards editing and filtering experiences.
 
 Check out the release notes for details.
 
 ### GitHub Advanced Security for Azure DevOps
 [!INCLUDE [sprint-272-update-links](includes/ghazdo/sprint-272-update-links.md)]
 
+### Azure Pipelines
+[!INCLUDE [sprint-272-update-links](includes/pipelines/sprint-272-update-links.md)]
+
 ### Azure Boards
 [!INCLUDE [sprint-272-update-links](includes/boards/sprint-272-update-links.md)]
 
 ## GitHub Advanced Security for Azure DevOps
 [!INCLUDE [sprint-272-update](includes/ghazdo/sprint-272-update.md)]
+
+## Azure Pipelines
+[!INCLUDE [sprint-272-update](includes/pipelines/sprint-272-update.md)]
 
 ## Azure Boards
 [!INCLUDE [sprint-272-update](includes/boards/sprint-272-update.md)]

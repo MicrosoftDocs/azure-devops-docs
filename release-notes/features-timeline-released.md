@@ -49,7 +49,7 @@ You can also [view the build numbers for each version](#azure-devops-server-buil
             <td>CodeQL default setup for code scanning (public preview)</td><td>GitHub Advanced Security for Azure DevOps</td><td>N/A</td></tr>
             <td>Combined alerts view and security campaigns in security overview</td><td>GitHub Advanced Security for Azure DevOps</td><td>N/A</td></tr>
             <td>Alert UX enhancements: confidence filter and alert counts</td><td>GitHub Advanced Security for Azure DevOps</td><td>N/A</td></tr>
-            <td>Improved details shown for GitHub service connections</td><td>GitHub Advanced Security for Azure DevOps</td><td>N/A</td></tr>
+            <td>Improved details shown for GitHub service connections</td><td>Pipelines</td><td>Future</td></tr>
             <td>Improved Markdown editor usability in work item multi-line fields</td><td>Boards</td><td>Future</td></tr>
             <td>Filter Boards and Backlogs by additional fields</td><td>Boards</td><td>Future</td></tr>
         <tr>

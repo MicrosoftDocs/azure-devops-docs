@@ -29,12 +29,3 @@ We've made two improvements to the alert experience at the repository level:
 
 - **All confidence filter**: A new **All** option in the confidence filter lets you see all secret alerts at once, without switching between **High** and **Other** filters. **All** is now the default when you open the **Secrets** tab. This is a UI-only change. Continue to use `High,Other` via the API when you need all confidence values for secret alerts.
 - **Alert counts on tabs**: Each alert category tab now displays a count of active alerts, so you can quickly see the number of current alerts across code scanning, dependencies, and secrets without opening each tab.
-
-### Improved details shown for GitHub service connections
-
-When you create an Azure Pipeline connected to a GitHub repository, Azure DevOps creates a reusable service connection. Previously, these connections showed only the GitHub organization name, which made similar connections harder to distinguish.
-
-In this sprint, GitHub service connections now show more descriptive information, making it easier to identify the right connection at a glance.
-
-> [!div class="mx-imgBorder"]
-> [![Screenshot showing improved GitHub service connection details.](../../media/272-ghazdo-03.png "Screenshot showing improved GitHub service connection details.")](../../media/272-ghazdo-03.png#lightbox)
