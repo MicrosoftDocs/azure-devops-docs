@@ -10,7 +10,7 @@ ms.topic: how-to
 ms.author: pliaros
 author: rohit-batra
 monikerRange: '<= azure-devops'
-ms.date: 04/08/2026
+ms.date: 04/09/2026
 ms.update-cycle: 1095-days
 ---
 
@@ -24,18 +24,16 @@ For more information about manual testing, see [What is Azure Test Plans?](overv
 
 ## Share work items across your test experience
 
-For example, you're building version 1.* of your product and you might create several test cases for that version. You can update each of these test cases and add more at any time.
-For each development cycle and release of your product, you create a test plan and import the existing test cases into that plan. To manage and monitor these separate sets of test cases more easily, you can also divide the test cases into separate test suites within the plan.
+As you build your product, create test cases and update them at any time. For each development cycle, create a test plan and import existing test cases. To organize testing, divide test cases into separate [test suites](create-test-suites.md) within the plan.
 
-After you create your test plan, [assign test configurations](test-different-configurations.md) and [assign testers](create-test-cases.md#assign-testers) to cover the required test matrix.
-These testers [run the tests](run-manual-tests.md) and gauge the quality of the product.
-Testers continue testing until the product meets exit criteria.
-For the next development cycle and release, you can create a new test plan and reuse the same test cases.
-Repeat this development-test-release cycle by importing the same test cases into each new test plan.
+A typical test cycle works like this:
 
-Because test plans refer to test cases, updates to a test case automatically reflect in all the test plans and test suites that use it.
+1. Create a test plan for the sprint or milestone.
+1. [Assign test configurations](test-different-configurations.md) and [assign testers](create-test-cases.md#assign-testers) to cover the required test matrix.
+1. Testers [run the tests](run-manual-tests.md) until the product meets exit criteria.
+1. For the next cycle, create a new test plan and import the same test cases.
 
-In the next version of the product, you can reuse the existing test cases. However, a better option might be to [copy or clone the test cases](copy-clone-test-items.md). A copy creates a new baseline. Changes to these new test cases don't affect your previous test plans.
+Because test plans reference test cases, updates to a test case automatically reflect in all plans and suites that use it. To create an independent baseline instead, [copy or clone the test cases](copy-clone-test-items.md).
 
 ## Prerequisites
 

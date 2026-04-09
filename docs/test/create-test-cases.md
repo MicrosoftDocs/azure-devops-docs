@@ -11,7 +11,7 @@ ms.author: pliaros
 ms.reviewer: chcomley
 author: rohit-batra
 monikerRange: '<= azure-devops'
-ms.date: 04/08/2026
+ms.date: 04/09/2026
 ai-usage: ai-assisted
 ms.update-cycle: 1095-days
 ---
@@ -57,6 +57,17 @@ For key concepts, see [Test objects and terms](test-objects-overview.md).
    :::image type="content" border="true" source="media/create-test-cases/add-attachment-test-case.png" alt-text="Screenshot showing test case with links button highlighted.":::
 
    For more information, see [Share steps](share-steps-between-test-cases.md) and [Copy or clone stories, issues, and other work items](../boards/backlogs/copy-clone-work-items.md).
+
+## Open a test case
+
+To open a test case, double-select its name in the **Define** tab, or select it in the **Execute** tab, open the context menu, and select **Edit test case**. For more information, see [Define tab context menu options](navigate-test-plans.md#define-tab-more-options).
+
+:::image type="content" border="true" source="media/create-test-cases/open-test-case-edit.png" alt-text="Screenshot showing the Edit test case option for a test case in the context menu.":::
+
+You can link a test case to test suites, requirements, and bugs.
+To see linked items, in the **Define** tab, open the context menu for a test case, and select **View Linked Items**. For more information, see [View linked items](navigate-test-plans.md#view-linked-items).
+
+:::image type="content" border="true" source="media/create-test-cases/view-linked-items.png" alt-text="Screenshot showing the Linked Items dialog box for a test case with options to view Test Suites, Requirements, and Bugs.":::
 
 ## Assign configurations to test cases
 
@@ -175,18 +186,6 @@ Testers need [Basic access](../organizations/security/access-levels.md) to run t
 1. Select **Assign tester**. Search for and select a tester.
 
 ::: moniker-end
-
-## Manage test cases
-::: moniker range="<=azure-devops"
-
-To open a test case, double-click its name in the **Define** tab, or select it in the **Execute** tab, open the context menu, and select **Edit test case**. For more information, see [Define tab context menu options](navigate-test-plans.md#define-tab-more-options).
-
-:::image type="content" border="true" source="media/create-test-cases/open-test-case-edit.png" alt-text="Screenshot showing the Edit test case option for a test case in the context menu.":::
-
-You can link a test case to test suites, requirements, and bugs.
-To see linked items, in the **Define** tab, open the context menu for a test case, and select **View Linked Items**. For more information, see [View linked items](navigate-test-plans.md#view-linked-items).
-
-:::image type="content" border="true" source="media/create-test-cases/view-linked-items.png" alt-text="Screenshot showing the Linked Items dialog box for a test case with options to view Test Suites, Requirements, and Bugs.":::
 
 ## Bulk edit test cases
 

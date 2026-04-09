@@ -8,7 +8,7 @@ ms.topic: how-to
 ms.author: pliaros
 author: rohit-batra
 monikerRange: '<= azure-devops'
-ms.date: 04/08/2026
+ms.date: 04/09/2026
 ---
 
 # Create and manage test suites
@@ -45,7 +45,7 @@ You can drag and drop test suites to nest them under static suites, and drag tes
 ## Add a requirement-based test suite
 
 ::: moniker range="<=azure-devops"
-Add test suites for the backlog items that need manual tests. These tests could be user stories, requirements, or other work items based on your project.
+Add test suites for the backlog items that need manual tests. These tests can be user stories, requirements, or other work items based on your project.
 
 > [!NOTE]
 > Requirement tracking is supported only for test cases linked through a **Requirement-based test suite**. Work items include a User Story ([Agile](../boards/work-items/guidance/agile-process.md)), Product Backlog Item ([Scrum](../boards/work-items/guidance/scrum-process.md)), Requirement ([CMMI](../boards/work-items/guidance/cmmi-process.md)), and Issue ([Basic](../boards/get-started/plan-track-work.md)). The association between a requirement work item and manual test execution is only formed when the test case is linked by using a **Requirement-based test suite**.
