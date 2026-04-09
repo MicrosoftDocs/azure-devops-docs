@@ -11,6 +11,7 @@ author: chcomley
 ms.topic: sample
 monikerRange: "<=azure-devops"
 ms.date: 09/09/2024
+ai-usage: ai-assisted
 ---
 
 # Test duration sample report

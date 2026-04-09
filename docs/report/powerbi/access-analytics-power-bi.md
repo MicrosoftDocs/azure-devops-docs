@@ -9,6 +9,7 @@ ms.author: chcomley
 author: chcomley
 monikerRange: "<=azure-devops"
 ms.date: 09/06/2024
+ai-usage: ai-assisted
 ---
 
 # Connect to Analytics data using the Power BI OData feed

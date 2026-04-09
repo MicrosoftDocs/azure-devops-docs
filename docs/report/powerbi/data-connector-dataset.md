@@ -9,6 +9,7 @@ author: chcomley
 ms.topic: reference
 monikerRange: "<=azure-devops"
 ms.date: 05/12/2022
+ai-usage: ai-assisted
 ---
 
 # Analytics views dataset design

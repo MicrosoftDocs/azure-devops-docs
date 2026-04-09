@@ -9,6 +9,7 @@ author: chcomley
 ms.topic: sample
 monikerRange: "<=azure-devops"
 ms.date: 04/07/2026
+ai-usage: ai-assisted
 ms.custom: powerbisample, engagement-fy23, sfi-image-nochange
 ---
 

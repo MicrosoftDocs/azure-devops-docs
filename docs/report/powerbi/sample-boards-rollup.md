@@ -9,6 +9,7 @@ author: chcomley
 ms.topic: sample
 monikerRange: "<=azure-devops"
 ms.date: 12/16/2022
+ai-usage: ai-assisted
 ---
 
 # Rollup child work item values to parent sample report

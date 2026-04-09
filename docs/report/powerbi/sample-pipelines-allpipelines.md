@@ -10,6 +10,7 @@ author: chcomley
 ms.topic: sample
 monikerRange: "<=azure-devops"
 ms.date: 04/07/2026
+ai-usage: ai-assisted
 ---
 
 # Pipeline outcome summary for all pipelines sample reports 

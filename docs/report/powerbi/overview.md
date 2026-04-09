@@ -9,6 +9,7 @@ ms.author: chcomley
 author: chcomley
 monikerRange: "<=azure-devops"
 ms.date: 02/17/2026
+ai-usage: ai-assisted
 #customer intent: As a team leader or member, I want to understand how to pull data from analytics to use in Power BI reports.
 ---
 

@@ -9,6 +9,7 @@ author: chcomley
 ms.topic: overview
 monikerRange: "<=azure-devops"
 ms.date: 04/29/2025
+ai-usage: ai-assisted
 # customer intent: As a team member, I want to become familiar with the sample queries that are available so that I can generate popular Power BI reports for services in Azure DevOps.
 ---
 

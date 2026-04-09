@@ -11,6 +11,7 @@ author: chcomley
 ms.topic: sample
 monikerRange: "<=azure-devops"
 ms.date: 01/25/2023
+ai-usage: ai-assisted
 ---
 
 # Pass rate trend of a test sample report 

@@ -10,6 +10,7 @@ author: chcomley
 ms.topic: sample
 monikerRange: "<=azure-devops"
 ms.date: 04/07/2026
+ai-usage: ai-assisted
 ---
 
 # Pipeline duration trend sample report 

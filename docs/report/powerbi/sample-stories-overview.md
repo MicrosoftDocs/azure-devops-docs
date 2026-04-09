@@ -10,6 +10,7 @@ author: chcomley
 ms.topic: sample
 monikerRange: "<=azure-devops"
 ms.date: 01/19/2023
+ai-usage: ai-assisted
 ---
 
 # Requirements tracking sample report

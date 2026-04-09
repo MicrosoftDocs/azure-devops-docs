@@ -8,6 +8,7 @@ author: chcomley
 ms.topic: overview
 monikerRange: '<= azure-devops'
 ms.date: 07/07/2025
+ai-usage: ai-assisted
 ---
 
 # Reporting roadmap and migration guide

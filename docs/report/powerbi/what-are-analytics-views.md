@@ -9,6 +9,7 @@ author: chcomley
 ms.topic: overview
 monikerRange: "<=azure-devops"
 ms.date: 04/07/2026
+ai-usage: ai-assisted
 #customer intent: As a team member using Azure Boards, I want to understand how to visualize work items from Azure DevOps by using Power BI.
 ---
 

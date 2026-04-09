@@ -9,6 +9,7 @@ author: chcomley
 ms.topic: overview
 monikerRange: "<=azure-devops"
 ms.date: 08/12/2022
+ai-usage: ai-assisted
 ---
 
 # Sample reports and quick reference index 

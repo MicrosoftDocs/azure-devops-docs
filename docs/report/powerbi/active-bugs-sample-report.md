@@ -9,6 +9,7 @@ author: chcomley
 ms.topic: tutorial
 monikerRange: "<=azure-devops"
 ms.date: 02/07/2023
+ai-usage: ai-assisted
 ---
 
 # Create an active bugs report in Power BI based on a custom Analytics view
