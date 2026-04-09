@@ -3,7 +3,6 @@ title: Feature Progress rollup sample Power BI report
 titleSuffix: Azure DevOps
 description: Learn how to generate a feature progress rollup Power BI report based on Story Points.
 ms.subservice: azure-devops-analytics
-ai-usage: ai-assisted
 ms.author: chcomley
 ms.custom: powerbisample, engagement-fy23
 author: chcomley
