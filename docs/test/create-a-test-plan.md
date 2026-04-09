@@ -64,6 +64,8 @@ In general, you create test plans to test requirements. Before you create a test
 
    :::image type="content" source="media/create-a-test-plan/test-plan-name-path-iteration.png" alt-text="Screenshot of adding test plan details.":::
 
+   The test plan is created and you can start [adding test suites](create-test-suites.md) and [test cases](create-test-cases.md).
+
 ::: moniker-end
 
 ## Rename a test plan
@@ -80,7 +82,7 @@ To rename a test plan, use the following steps:
 
 3. Change the name and then select **Save & Close**.
 
-You can make other changes to the test plan here.
+   You can also update the area path, iteration, and other test plan settings from this dialog.
 
 ::: moniker-end
 
@@ -92,7 +94,7 @@ To delete a test plan, use the following steps:
 
 1. Select **Test Plans**.
 
-2. Next to the test plan name, select **More Actions** > **Delete**.
+2. Next to the test plan name, select **More Actions**:::image type="icon" source="../media/icons/more-actions.png" border="false"::: > **Delete**.
 
 3. The **Delete test artifacts** dialog box explains exactly what gets deleted. Enter the test plan ID to confirm that you want to delete, and then select **Delete**.
 
@@ -102,11 +104,6 @@ To delete a test plan, use the following steps:
 > Deleted test plans are moved to the **Test Plan Recycle Bin** and can be restored within 14 days by using the REST API. For more information, see [Restore deleted test plans and test suites using REST API](/azure/devops/release-notes/roadmap/2025/testplans/restore-deleted-test-plans).
 
 ::: moniker-end
-
-## Next step
-
-> [!div class="nextstepaction"]
-> [Create and manage test suites](create-test-suites.md)
 
 ::: moniker range="azure-devops"
 
@@ -135,6 +132,11 @@ If you configure the [Azure DevOps MCP Server](../mcp-server/mcp-server-overview
 > - To avoid using stale or cached data from previous queries, add to your prompt, "Do not use previously fetched data."
 
 ::: moniker-end
+
+## Next step
+
+> [!div class="nextstepaction"]
+> [Create and manage test suites](create-test-suites.md)
 
 ## Related content
 
