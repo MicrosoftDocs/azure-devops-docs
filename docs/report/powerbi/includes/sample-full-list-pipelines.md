@@ -33,7 +33,7 @@ ms.date: 04/29/2025
       - [Failed tests](../sample-test-analytics-failed-tests.md) 
       - [Flaky tests](../sample-test-analytics-flaky-tests.md) 
       - [Test duration](../sample-test-analytics-test-duration.md) 
-      - [Test duration trends](../sample-test-analyics-test-duration-trend.md) 
+      - [Test duration trends](../sample-test-analytics-test-duration-trend.md) 
       - [Pass rate trends of a test](../sample-test-analytics-pass-rate-trend-test.md) 
    :::column-end:::
 :::row-end:::
