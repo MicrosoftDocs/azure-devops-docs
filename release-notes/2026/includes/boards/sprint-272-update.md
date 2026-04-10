@@ -12,12 +12,12 @@ Markdown multi-line fields in Azure DevOps work items now have a clearer separat
 By default, fields open in preview mode, allowing you to read and interact with content without accidentally entering edit mode. When you're ready to make changes, select the edit icon at the top of the field to switch into editing.
 
 > [!div class="mx-imgBorder"]
-> [![Screenshot showing the Markdown editor in preview mode for a work item field.](../../media/272-boards-01.webp "Screenshot showing the Markdown editor in preview mode for a work item field.")](../../media/272-boards-01.webp#lightbox)
+> [![Screenshot showing the Markdown editor in preview mode for a work item field.](../../media/272-boards-01.png "Screenshot showing the Markdown editor in preview mode for a work item field.")](../../media/272-boards-01.png#lightbox)
 
 After you complete your updates, you can exit edit mode and return to preview mode.
 
 > [!div class="mx-imgBorder"]
-> [![Screenshot showing the Markdown editor done action for a work item field.](../../media/272-boards-02.webp "Screenshot showing the Markdown editor done action for a work item field.")](../../media/272-boards-02.webp#lightbox)
+> [![Screenshot showing the Markdown editor done action for a work item field.](../../media/272-boards-02.png "Screenshot showing the Markdown editor done action for a work item field.")](../../media/272-boards-02.png#lightbox)
 
 These changes address this [community suggestion ticket](https://developercommunity.visualstudio.com/t/Markdown-editor-for-work-item-multi-line/10935496).
 
