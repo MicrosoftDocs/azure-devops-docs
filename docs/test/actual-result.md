@@ -7,13 +7,13 @@ ms.topic: how-to
 ms.author: pliaros
 ms.reviewer: chcomley
 author: pliaros
-monikerRange: '<= azure-devops'
+monikerRange: '= azure-devops'
 ms.date: 04/10/2026
 ---
 
 # Record actual results for manual test runs
 
-[!INCLUDE [version-lt-eq-azure-devops](../includes/version-lt-eq-azure-devops.md)]
+[!INCLUDE [version-eq-azure-devops](../includes/version-eq-azure-devops.md)]
 
 > [!IMPORTANT]
 > This capability is in **Public Preview**. Functionality may change or be discontinued without notice. Preview capabilities are provided without a Service Level Agreement (SLA) and with limited support.
