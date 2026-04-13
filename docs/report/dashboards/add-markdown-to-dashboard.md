@@ -8,7 +8,7 @@ ms.topic: how-to
 ms.author: chcomley
 author: chcomley
 monikerRange: '<= azure-devops'
-ms.date: 04/10/2026
+ms.date: 04/13/2026
 ---
 
 # Add Markdown to a dashboard

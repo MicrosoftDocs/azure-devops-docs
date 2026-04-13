@@ -4,7 +4,8 @@ description: Walk through signing up for Azure Pipelines to begin managing CI/CD
 ms.topic: how-to
 ms.author: chcomley
 author: chcomley
-ms.date: 04/10/2026
+ms.date: 04/13/2026
+ai-usage: ai-assisted
 monikerRange: 'azure-devops'
 ---
 

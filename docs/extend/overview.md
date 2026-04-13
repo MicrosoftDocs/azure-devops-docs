@@ -9,7 +9,7 @@ ai-usage: ai-assisted
 monikerRange: '<= azure-devops'
 ms.author: chcomley
 author: chcomley
-ms.date: 04/10/2026
+ms.date: 04/13/2026
 ---
 
 # Extensions overview

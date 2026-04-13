@@ -3,7 +3,7 @@ ms.topic: include
 ms.custom: sfi-image-nochange
 ms.author: chcomley
 author: chcomley
-ms.date: 04/10/2026
+ms.date: 04/13/2026
 ---
 
 ## Sign up with a personal Microsoft account

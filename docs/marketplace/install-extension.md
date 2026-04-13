@@ -7,7 +7,7 @@ ms.assetid: dd117c5c-111f-4361-91c6-ed37fb476c75
 ms.author: chcomley
 author: chcomley
 ai-usage: ai-assisted
-ms.date: 04/10/2026
+ms.date: 04/13/2026
 monikerRange: '<= azure-devops'
 ms.custom: engagement-fy23, devx-track-azurecli, sfi-image-nochange
 ---

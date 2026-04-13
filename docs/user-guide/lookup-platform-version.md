@@ -7,7 +7,7 @@ ai-usage: ai-assisted
 ms.author: chcomley
 author: chcomley
 ms.topic: how-to
-ms.date: 04/10/2026
+ms.date: 04/13/2026
 monikerRange: '<= azure-devops'
 #customer intent: As a developer, I want to access the About page for Azure DevOps systems so I can look up my platform and platform version.
 ---
