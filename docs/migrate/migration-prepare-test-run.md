@@ -149,10 +149,10 @@ The Data Migration Tool scans your collection and compares it to the limits ment
 
 The current limits are: 
 
-- 150 GB total database size (database metadata + blobs) for DACPAC. If you exceed this limit, you need to perform the SQL migration method. 
-- 30 GB individual table size (database metadata + blobs) for DACPAC. If any single table exceeds this limit, you need to perform the SQL migration method. 
-- 1,536 GB database metadata size for SQL migration method. Exceeding this limit issues a warning. To have a successful migration, keep under this size. 
-- 2,048 GB database metadata size for SQL migration method. Exceeding this limit results in an error, so you can't perform a migration.
+- 150-GB total database size (database metadata + blobs) for DACPAC. If you exceed this limit, you need to perform the SQL migration method. 
+- 30-GB individual table size (database metadata + blobs) for DACPAC. If any single table exceeds this limit, you need to perform the SQL migration method. 
+- 1,536-GB database metadata size for SQL migration method. Exceeding this limit issues a warning. To have a successful migration, keep under this size. 
+- 2,048-GB database metadata size for SQL migration method. Exceeding this limit results in an error, so you can't perform a migration.
 - No limit for blob sizes for SQL migration method. 
 
 When you clean older, no-longer-relevant artifacts, you might remove more space than you expect. This cleanup can determine whether you use the DACPAC migration method or a SQL Azure VM. 
