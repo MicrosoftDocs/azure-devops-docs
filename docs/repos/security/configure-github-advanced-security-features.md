@@ -180,29 +180,31 @@ Code scanning is also a pipeline-based scanning tool where results are aggregate
 ### Configure default setup
 
 :::zone pivot="bundled-ghazdo"
-You can enable CodeQL default setup from the organization settings page.
+You can enable CodeQL default setup from the repository settings page.
 
-1. Go to **Organization settings** > **Repositories**.
-1. Under **Advanced Security**, locate the **CodeQL default setup configurable options** dropdown.
-1. Configure the agent pool and scan schedule as needed.
+1. Go to your repository in Azure DevOps.
+1. Select **Settings**.
+1. Under **Advanced Security**, select the **Run CodeQL analysis with default setup** checkbox.
 
-:::image type="content" source="media/advanced-security-codeql-default-setup-options-unbundled.png" lightbox="media/advanced-security-codeql-default-setup-options-unbundled.png" alt-text="Screenshot of CodeQL default setup configurable options dropdown in organization settings for Advanced Security.":::
+:::image type="content" source="media/advanced-security-codeql-default-setup-enablement-repo.png" lightbox="media/advanced-security-codeql-default-setup-enablement-repo.png" alt-text="Screenshot of repository settings showing the Run CodeQL analysis with default setup checkbox enabled under Advanced Security.":::
 :::zone-end
 
 :::zone pivot="standalone-ghazdo"
-You can enable CodeQL default setup from the organization settings page.
+You can enable CodeQL default setup from the repository settings page.
 
-1. Go to **Organization settings** > **Repositories**.
-1. Under **Code Security**, locate the **CodeQL default setup configurable options** dropdown.
-1. Configure the agent pool and scan schedule as needed.
+1. Go to your repository in Azure DevOps.
+1. Select **Settings**.
+1. Under **Code Security plan**, select **Options** and enable the **CodeQL alerts default setup** checkbox.
 
-:::image type="content" source="media/advanced-security-codeql-default-setup-dropdown.png" lightbox="media/advanced-security-codeql-default-setup-dropdown.png" alt-text="Screenshot of CodeQL default setup configurable options dropdown in organization settings for Code Security plan.":::
+:::image type="content" source="media/advanced-security-codeql-default-setup-enablement-repo-unbundled.png" lightbox="media/advanced-security-codeql-default-setup-enablement-repo-unbundled.png" alt-text="Screenshot of repository settings showing the CodeQL alerts default setup option under Code Security features.":::
 :::zone-end
 
 Default setup automatically detects the CodeQL-supported languages in your repository and configures scanning for them. If the languages in your repository change, the scanning configuration updates automatically.
 
+The agent pool and scan schedule for default setup are shared across all repositories in the organization. You can configure these options from **Organization settings** > **Repositories** under the **CodeQL default setup configurable options** dropdown. For more details on each option, see [Configure default setup options](github-advanced-security-code-scanning.md#configure-default-setup-options).
+
 > [!TIP]
-> We recommend starting with default setup. If you need more control over your scanning configuration, such as different agent pools, custom build steps for compiled languages, or scanning across multiple branches, you can switch to advanced setup at any time. For more information, see [Set up code scanning](github-advanced-security-code-scanning.md#advanced-setup-for-code-scanning).
+> We recommend starting with default setup. If you need more control over your scanning configuration, such as different agent pools, custom build steps for compiled languages, or scanning across multiple branches, you can run both default setup and advanced setup in the same organization. For more information, see [Set up code scanning](github-advanced-security-code-scanning.md#advanced-setup-for-code-scanning).
 
 To generate alerts, default setup runs its first scan after enablement. Any detected vulnerabilities are displayed in the Advanced Security tab.
 
