@@ -17,6 +17,7 @@ ms.date: 04/10/2026
 
 > [!IMPORTANT]
 > This capability is in **Public Preview**. Functionality may change or be discontinued without notice. Preview capabilities are provided without a Service Level Agreement (SLA) and with limited support.
+> Additionally, if the capability is not yet available in your Azure DevOps organization, give it some more days, as it is rolled out gradually.
 
 Use the **Actual Result** (AR) field in Azure Test Plans to record what happened at the moment of manual test execution for each test step.
 
