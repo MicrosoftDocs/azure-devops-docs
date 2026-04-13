@@ -1,14 +1,14 @@
 ---
-title: Record actual results for manual test runs
-description: Use the Actual Result field in Azure Test Plans to record execution outcomes for each test step during manual test runs.
+title: Record Actual Results for Manual Test Runs
+description: Record actual results for manual test runs in Azure Test Plans. Discover how to configure, capture, and review execution outcomes for each test step.
 ms.service: azure-devops-test-plans
 ms.custom: UpdateFrequency3
 ms.topic: how-to
 ms.author: pliaros
 ms.reviewer: chcomley
 author: pliaros
-monikerRange: '= azure-devops'
-ms.date: 04/10/2026
+monikerRange: 'azure-devops'
+ms.date: 04/13/2026
 ---
 
 # Record actual results for manual test runs
@@ -16,68 +16,85 @@ ms.date: 04/10/2026
 [!INCLUDE [version-eq-azure-devops](../includes/version-eq-azure-devops.md)]
 
 > [!IMPORTANT]
-> This capability is in **Public Preview**. Functionality may change or be discontinued without notice. Preview capabilities are provided without a Service Level Agreement (SLA) and with limited support.
-> Additionally, if the capability is not yet available in your Azure DevOps organization, give it some more days, as it is rolled out gradually.
+> This capability is in **public preview**. Functionality might change or be discontinued without notice. Preview capabilities have no Service Level Agreement (SLA) and limited support.
+> If this capability isn't yet available in your organization, wait a few days as it rolls out gradually.
 
-Use the **Actual Result** (AR) field in Azure Test Plans to record what happened at the moment of manual test execution for each test step.
+Use the **Actual Result** field in Azure Test Plans to record the execution outcome for each test step during manual test runs in the web runner.
 
-The Actual Result field is enabled at the test plan level, and the setting is inherited by all suites and their test cases. This supports different ways of working across teams that share the same Azure DevOps organization.
+You enable the Actual Result field at the test plan level, and all suites and test cases inherit the setting. This supports different ways of working across teams that share the same organization. Actual Result data is retained as long as test run data, based on your existing retention policies.
 
-Actual Result data is kept for as long as test run data is kept, based on your existing retention policies.
+## Prerequisites
 
-This capability applies only to manual test execution performed in the web runner.
+| Category | Requirement |
+|----------|-------------|
+| **Access levels** | [Basic + Test Plans](../organizations/billing/buy-access-tfs-test-hub.md) access level or an equivalent [Visual Studio subscription](https://visualstudio.microsoft.com/vs/test-professional/). |
+| **Permissions** | **Manage test plans** set to **Allow** for the area path (to configure the Actual Result setting). |
 
 ## Expected Result, Actual Result, and Comment fields
 
-While the three fields are closely related and help provide guidance and clarity during execution and review of test runs, each serves a different purpose:
+These three fields are closely related but serve different purposes:
 
-- **Expected Result**: Defined during test case authoring. It specifies what outcome is needed for a test step to pass.
-- **Actual Result**: Filled during live test execution, based on the manual input of the test executor. It is the factual execution outcome and can also serve as audit evidence. Actual Results can be structured and enforced by Azure Test Plans system logic for each test step.
-- **Comment**: Also filled in during live test execution, based on the manual input of the test executor. Comments are informal notes and are not structured or enforced by Azure Test Plans system logic.
+- **Expected Result**: Defined during test case authoring. Specifies the outcome needed for a test step to pass.
+- **Actual Result**: Recorded during test execution by the tester. Captures the factual outcome and can serve as audit evidence. Azure Test Plans can structure and enforce Actual Result entry for each step.
+- **Comment**: Recorded during test execution by the tester. Comments are informal notes that aren't structured or enforced by Azure Test Plans.
 
 ## Configure the Actual Result setting
 
-1. Navigate to the **More actions** area of the test plan and choose the **Test plan settings** option.
+1. Sign in to your project (`https://dev.azure.com/{yourorganization}/{yourproject}`).
+1. Select **Test Plans**, and then select your test plan.
+1. Select **More actions** for the test plan, and then select :::image type="icon" source="../media/icons/gear_icon.png" border="false":::**Test plan settings**.
 
    :::image type="content" source="media/actual-result/test-plan-settings-menu.png" alt-text="Screenshot showing the More actions menu with the Test plan settings option.":::
 
-1. Wait for the pop-up to load, then select the **Test result settings** tab. Check the **Use 'Actual Result' field** option to enable the capability and choose between **Required** or **Optional** mode.
+1. Select the **Test result settings** tab, select the **Use 'Actual Result' field** checkbox, and then choose **Required** or **Optional** mode.
 
    :::image type="content" source="media/actual-result/test-result-settings-tab.png" alt-text="Screenshot showing the Test result settings tab with the Actual Result field options.":::
+
+1. Select **Save**.
+
+   The setting applies to all suites and test cases in the test plan.
 
 ### Actual Result modes
 
 | Mode | Description |
 |------|-------------|
-| **Disabled** | This is the default option. The Actual Result field and logic are not present during execution and have no effect on test execution. |
-| **Enabled - Optional** | The field is available in the UI, yet it can be left blank. |
-| **Enabled - Required** | The field is available in the UI and must be filled in for steps that have a defined expected result. |
+| **Disabled** (default) | The Actual Result field isn't present during execution. |
+| **Enabled - Optional** | The field appears in the UI, but you can leave it blank. |
+| **Enabled - Required** | The field appears in the UI and you must fill it in for steps that have a defined expected result. |
 
-## Fill in actual results during execution
+## Record actual results during execution
 
-- When enabled, the Actual Result field appears in each test step just after the step is marked as **Pass** or **Fail**. The field supports dedicated text input and step-level attachments.
-- In **Enabled - Required** mode, when a test step has a defined **Expected Result** and the step is executed, you must enter an Actual Result to proceed, save, or save and close. Steps without a defined Expected Result, even in required mode, are not required to have an Actual Result input.
+When enabled, the Actual Result field appears in each test step after you mark the step as **Pass** or **Fail**. You can enter text and add step-level attachments.
 
-## Review runs and their actual results
+In **Enabled - Required** mode, you must enter an Actual Result before you can proceed, save, or close for any step that has a defined **Expected Result**. Steps without a defined Expected Result don't require input, even in required mode.
 
-You can review runs with Actual Results in the **Test Run Hub**. If Actual Results are entered, they're shown next to each step.
+## Review actual results
 
-The Actual Result field in the Test Run Hub only appears if the test plan's Actual Result setting is enabled. If disabled, it won't show on the result page, even if step results were entered. However, you can always retrieve Actual Result details for each step using the REST API.
+Review completed runs in the **Test Run Hub**. Actual Results appear next to each step.
+
+The Actual Result field only appears in the Test Run Hub if the test plan's Actual Result setting is enabled. If the setting is disabled, results don't show on the result page, even if they were entered during execution. You can always retrieve Actual Result details for each step by using the REST API.
 
 ## Change the Actual Result setting
 
-Any user with an assigned Azure Test Plans license can change the Actual Result setting at any time for any test plan they have access to.
+Any user with an Azure Test Plans license can change the Actual Result setting at any time for any test plan they can access.
 
 > [!NOTE]
-> It is recommended to change the Actual Result settings only after verifying that there are no "in progress" or "paused" runs under the test plan.
+> Verify that there are no in-progress or paused runs under the test plan before you change the Actual Result setting.
 
-However, even if the setting changes while there are in-progress or paused runs, the applied Actual Result logic is based on the setting status at the moment the (paused) run was (re)initiated.
+If the setting changes while runs are in progress or paused, the logic that applied when the run started (or was last resumed) continues to apply for that run.
 
 ### Example scenarios
 
-- A run was initiated with the Actual Result setting set to **Enabled - Required**, and during execution the setting changed to **Disabled**. The run will continue to be executed and completed with **Enabled - Required** logic.
-- A run was initiated with the Actual Result setting set to **Enabled - Required**, then the run got paused. While paused, the setting was changed to **Disabled**. When the run is continued, its remaining steps will be executed and completed under the **Disabled** logic.
+- You start a run with the setting on **Enabled - Required**. During execution, someone changes the setting to **Disabled**. The run continues and completes using the **Enabled - Required** logic.
+- You start a run with the setting on **Enabled - Required**, then pause the run. While paused, someone changes the setting to **Disabled**. When you resume, the remaining steps run under the **Disabled** logic.
 
 ## Programmatic access
 
-You can also get and update Actual Results programmatically using the [Azure DevOps REST API](/rest/api/azure/devops/test/results).
+You can also get and update Actual Results programmatically by using the [Azure DevOps REST API](/rest/api/azure/devops/test/results).
+
+## Related content
+
+- [Run manual tests](run-manual-tests.md)
+- [Navigate Test Plans](navigate-test-plans.md)
+- [Review test objects and terms](test-objects-overview.md)
+- [Manage manual test access and permissions](manual-test-permissions.md)
