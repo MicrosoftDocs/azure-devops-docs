@@ -1,9 +1,9 @@
 ---
 title: Use packages from Google Maven Repository upstream source
-description: How to consume packages from Google Maven Repository upstream source
+description: Learn how to consume packages from Google Maven Repository upstream source in Azure Artifacts feeds.
 ms.service: azure-devops-artifacts
 ms.topic: tutorial
-ms.date: 11/14/2023
+ms.date: 04/12/2026
 monikerRange: "<=azure-devops"
 "recommendations": "true"
 ---
@@ -12,41 +12,39 @@ monikerRange: "<=azure-devops"
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
-With Azure Artifacts, developers can enable upstream sources to consume packages from different public registries such as Google Maven Repository. Once enabled, Azure Artifacts will automatically save a copy of any package installed from the upstream. Additionally, Azure Artifacts supports other Maven upstream sources such as Maven Central, Gradle Plugins, and JitPack. In this article, you learn how to:
-
-> [!div class="checklist"]    
-> * Add Google Maven Repository as an upstream source 
-> * Consume a package from upstream 
-> * Find saved packages in your feed
+With Azure Artifacts, developers can enable upstream sources to consume packages from public registries such as the Google Maven Repository. When an upstream source is enabled, Azure Artifacts automatically saves a copy of any package installed to the feed by users with *Feed and Upstream Reader (Collaborator)* permissions or higher. Azure Artifacts also supports other Maven upstream sources, including Maven Central, Gradle Plugins, and JitPack.
 
 ## Prerequisites
 
-- An Azure DevOps organization and a project. Create an [organization](../../organizations/accounts/create-organization.md) or a [project](../../organizations/projects/create-project.md#create-a-project) if you haven't already.
+| **Product**        | **Requirements**                       |
+|--------------------|----------------------------------------|
+| **Azure DevOps**   | - An Azure DevOps [organization](../../organizations/accounts/create-organization.md).<br>- An Azure DevOps [project](../../organizations/projects/create-project.md). |
 
-- An Azure Artifacts feed.
+## Create a feed
 
-## Enable upstream sources
+If you already have an Azure Artifacts feed, skip to the next section. Otherwise, create a new one by following these steps:
+ 
+1. Sign in to Azure DevOps and navigate to your project.
 
-If you don't have a feed already, follow the instructions below to create a new feed, and make sure to check the *upstream sources* checkbox to enable them. If you already have a feed, jump to the [next step](#add-google-maven-repository-upstream) to add Google Maven Repository as an upstream source:
+1. Select **Artifacts**, then select **Create Feed**.
 
-[!INCLUDE [](../includes/create-feed.md)]
+1. Enter a **Name** for your feed, set the **Visibility** to control who can view packages, and choose the feed **Scope**. Select **Include packages from common public sources** to enable upstream sources and allow consumption from public registries.
 
-## Add Google Maven Repository upstream
+1. Select **Create** to finish.
 
-If you checked the *upstream sources* checkbox when creating your feed, Google Maven Repository should already be added as an upstream source. If not, you can add it manually using the following steps:
+## Add the Google Maven Repository upstream source
 
-1. Sign in to your Azure DevOps organization, and then navigate to your project.
+If you selected *Include packages from common public sources* when creating your feed, the Google Maven Repository should already be added as an upstream source. If not, you can add it manually by following these steps:
 
-1. Select **Artifacts**, and then select the gear icon ![gear icon](../../media/icons/gear-icon.png) in the top right corner to navigate to your **Feed Settings**.
+1. Sign in to your Azure DevOps organization and navigate to your project.
 
-1. Select **Upstream sources**, and then select **Add Upstream**.
+1. Select **Artifacts**, then select the gear icon ![gear icon](../../media/icons/gear-icon.png) in the upper-right corner to open **Feed Settings**.
 
-1. Select **Public source**, and then select **Google Maven Repository (https://maven.google.com/web/index.html)** from the dropdown menu.
+1. Select **Upstream sources**, then select **Add Upstream**.
 
-1. Select **Add** when you're done, and then select **Save** again in the top right corner to save your changes.
+1. Select **Public source**, then select **Google Maven Repository (https://maven.google.com/web/index.html)**.
 
-> [!NOTE]
-> Maven snapshots are not supported with Maven upstream sources.
+1. Select **Add**, and then select **Save** in the upper-right corner to save your changes.
 
 ## Save packages from Google Maven Repository
 
