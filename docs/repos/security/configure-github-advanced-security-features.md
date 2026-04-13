@@ -180,27 +180,23 @@ Code scanning is also a pipeline-based scanning tool where results are aggregate
 ### Configure default setup
 
 :::zone pivot="bundled-ghazdo"
-You can enable CodeQL default setup from the repository settings page.
+You can enable CodeQL default setup from the organization settings page.
 
-1. Go to your **Project settings** for your Azure DevOps project.
-1. Select **Repos** > **Repositories**.
-1. Select the repository you want to configure CodeQL default setup for.
-1. Enable the **CodeQL default setup** checkbox.
+1. Go to **Organization settings** > **Repositories**.
+1. Under **Advanced Security**, locate the **CodeQL default setup configurable options** dropdown.
+1. Configure the agent pool and scan schedule as needed.
 
-<!-- TODO: Replace with actual screenshot -->
-:::image type="content" source="media/code-scanning-default-setup.png" lightbox="media/code-scanning-default-setup.png" alt-text="Screenshot of code scanning default setup toggle in repository settings.":::
+:::image type="content" source="media/advanced-security-codeql-default-setup-options-unbundled.png" lightbox="media/advanced-security-codeql-default-setup-options-unbundled.png" alt-text="Screenshot of CodeQL default setup configurable options dropdown in organization settings for Advanced Security.":::
 :::zone-end
 
 :::zone pivot="standalone-ghazdo"
-You can enable CodeQL default setup from the repository settings page.
+You can enable CodeQL default setup from the organization settings page.
 
-1. Go to your **Project settings** for your Azure DevOps project.
-1. Select **Repos** > **Repositories**.
-1. Select the repository you want to configure CodeQL default setup for.
-1. Under **Code Security**, enable the **CodeQL default setup** checkbox.
+1. Go to **Organization settings** > **Repositories**.
+1. Under **Code Security**, locate the **CodeQL default setup configurable options** dropdown.
+1. Configure the agent pool and scan schedule as needed.
 
-<!-- TODO: Replace with actual screenshot -->
-:::image type="content" source="media/code-scanning-default-setup-code-security.png" lightbox="media/code-scanning-default-setup-code-security.png" alt-text="Screenshot of code scanning default setup toggle in repository settings.":::
+:::image type="content" source="media/advanced-security-codeql-default-setup-dropdown.png" lightbox="media/advanced-security-codeql-default-setup-dropdown.png" alt-text="Screenshot of CodeQL default setup configurable options dropdown in organization settings for Code Security plan.":::
 :::zone-end
 
 Default setup automatically detects the CodeQL-supported languages in your repository and configures scanning for them. If the languages in your repository change, the scanning configuration updates automatically.

@@ -48,6 +48,30 @@ There are two main ways to set up code scanning for your repository: **default s
 > [!TIP]
 > You can start with default setup and switch to advanced setup later if you need more control. For information on configuring default setup, see [Configure GitHub Advanced Security features](configure-github-advanced-security-features.md#set-up-code-scanning).
 
+## Configure default setup options
+
+After you enable CodeQL default setup, you can configure the **agent pool** and **scan schedule** from your organization settings. These options apply to all repositories in the organization that use default setup.
+
+To access the configurable options, go to **Organization settings** > **Repositories** and expand the **CodeQL default setup configurable options** dropdown.
+
+:::image type="content" source="media/advanced-security-codeql-default-setup-options.png" lightbox="media/advanced-security-codeql-default-setup-options.png" alt-text="Screenshot of expanded CodeQL default setup configurable options showing agent pool and scan schedule settings.":::
+
+### Agent pool
+
+Select the agent pool used to run CodeQL default setup scans across all repositories in the organization. You can choose from:
+
+- **Azure Pipelines** — uses Microsoft-hosted agents. Using the Azure Pipelines agent pool consumes pipeline concurrency.
+- **Self-hosted agent pools** — uses your own agents. Select a self-hosted pool if your repositories require access to private networks, specific build tools, or other resources not available on hosted agents.
+- **Managed DevOps Pools** — uses Azure-managed pools with custom VM images.
+
+### Scan schedule
+
+Select when CodeQL default setup scans run for all repositories in the organization. You can choose a specific day of the week for weekly scans. The next scheduled run date is displayed below the dropdown.
+
+### Cancel running or queued scans
+
+If you need to stop any actively running or queued default setup scans, you can manually cancel them through **Organization settings** > **Repositories**. Users with the **Manage settings** permission on the repository can cancel running or queued default setup runs.
+
 ## Advanced setup for code scanning
 
 CodeQL is a pipeline-based tool, where results are aggregated per repository. 
