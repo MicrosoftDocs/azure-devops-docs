@@ -173,40 +173,24 @@ To gain access to code scanning features, you need the **Code Security** product
 
 Code scanning is also a pipeline-based scanning tool where results are aggregated per repository. You can enable code scanning using **default setup** or **advanced setup**. You can run both in the same organization, depending on your needs and level of scanning control.
 
-**Default setup** is the quickest way to enable code scanning. Default setup automatically runs  on a scheduled basis using a selected self-hosted agent pool or Managed DevOps Pool. No pipeline configuration is required.
-
-**Advanced setup** gives you full control over the scanning configuration by adding CodeQL pipeline tasks directly to your pipelines. For details on configuring advanced setup, see [Set up code scanning](github-advanced-security-code-scanning.md#advanced-setup-for-code-scanning).
-
-### Configure default setup
+**Default setup** is the quickest way to enable code scanning. Default setup runs on a scheduled basis using Azure Pipelines, detects the CodeQL-supported languages in your repository, and automatically configures scanning for them. If the languages in your repository change, the scanning configuration updates automatically. 
 
 :::zone pivot="bundled-ghazdo"
-You can enable CodeQL default setup from the repository settings page.
-
-1. Go to your repository in Azure DevOps.
-1. Select **Settings**.
-1. Under **Advanced Security**, select the **Run CodeQL analysis with default setup** checkbox.
-
 :::image type="content" source="media/advanced-security-codeql-default-setup-enablement-repo.png" lightbox="media/advanced-security-codeql-default-setup-enablement-repo.png" alt-text="Screenshot of repository settings showing the Run CodeQL analysis with default setup checkbox enabled under Advanced Security.":::
 :::zone-end
 
 :::zone pivot="standalone-ghazdo"
-You can enable CodeQL default setup from the repository settings page.
-
-1. Go to your repository in Azure DevOps.
-1. Select **Settings**.
-1. Under **Code Security plan**, select **Options** and enable the **CodeQL alerts default setup** checkbox.
-
 :::image type="content" source="media/advanced-security-codeql-default-setup-enablement-repo-unbundled.png" lightbox="media/advanced-security-codeql-default-setup-enablement-repo-unbundled.png" alt-text="Screenshot of repository settings showing the CodeQL alerts default setup option under Code Security features.":::
 :::zone-end
 
-Default setup automatically detects the CodeQL-supported languages in your repository and configures scanning for them. If the languages in your repository change, the scanning configuration updates automatically.
+The agent pool and scan schedule for default setup are shared across all repositories in the organization. You can configure these options from **Organization settings** > **Repositories** under the **CodeQL default setup configurable options** dropdown. For more details on each option, see [Configure default setup options](github-advanced-security-code-scanning.md#configure-default-setup-options). 
 
-The agent pool and scan schedule for default setup are shared across all repositories in the organization. You can configure these options from **Organization settings** > **Repositories** under the **CodeQL default setup configurable options** dropdown. For more details on each option, see [Configure default setup options](github-advanced-security-code-scanning.md#configure-default-setup-options).
+**Advanced setup** gives you full control over the scanning configuration by adding CodeQL pipeline tasks directly to your pipelines. For details on configuring advanced setup, see [Set up code scanning](github-advanced-security-code-scanning.md#advanced-setup-for-code-scanning).
 
 > [!TIP]
 > We recommend starting with default setup. If you need more control over your scanning configuration, such as different agent pools, custom build steps for compiled languages, or scanning across multiple branches, you can run both default setup and advanced setup in the same organization. For more information, see [Set up code scanning](github-advanced-security-code-scanning.md#advanced-setup-for-code-scanning).
 
-To generate alerts, default setup runs its first scan after enablement. Any detected vulnerabilities are displayed in the Advanced Security tab.
+To generate alerts, default setup runs on a weekly schedule. Any detected vulnerabilities are displayed in the Advanced Security tab.
 
 ## Set up pull request annotations 
 
