@@ -30,11 +30,11 @@ There are two main ways to set up code scanning for your repository: **default s
 
 | | Default setup | Advanced setup |
 |---|---|---|
-| **Configuration** | Automatic — no pipeline configuration required | Manual — requires adding CodeQL tasks to a pipeline |
+| **Configuration** | Automatic, no pipeline configuration required | Manual, requires adding CodeQL tasks to a pipeline |
 | **Language detection** | Automatically detects and scans CodeQL-supported languages | You specify languages in the pipeline task |
-| **Branch coverage** | Scans default branch and pull requests targeting the default branch | Scans any branch that triggers the pipeline |
+| **Branch coverage** | Scans default branch only | Scans any branch that triggers the pipeline |
 | **Build customization** | No custom build steps — uses `none` build mode | Full control over build steps for compiled languages |
-| **Best for** | Quick enablement, interpreted languages, standard scanning needs | Compiled languages needing custom builds, multi-branch scanning, advanced configuration |
+| **Best for** | Quick enablement, standard scanning needs | Multi-branch scanning, custom agent pool or scanning frequency |
 
 **Default setup** is the quickest way to enable code scanning. It creates a managed scanning configuration behind the scenes and requires no pipeline changes. We recommend starting with default setup for most repositories.
 
@@ -46,7 +46,7 @@ There are two main ways to set up code scanning for your repository: **default s
 - Use a specific CodeQL query suite or custom queries
 
 > [!TIP]
-> You can start with default setup and switch to advanced setup later if you need more control. For information on configuring default setup, see [Configure GitHub Advanced Security features](configure-github-advanced-security-features.md#set-up-code-scanning).
+> You can start with default setup and switch to advanced setup later if you need more control, or use both. For information on configuring default setup, see [Configure GitHub Advanced Security features](configure-github-advanced-security-features.md#set-up-code-scanning).
 
 ## Configure default setup options
 
@@ -70,7 +70,7 @@ Select when CodeQL default setup scans run for all repositories in the organizat
 
 ### Cancel running or queued scans
 
-If you need to stop any actively running or queued default setup scans, you can manually cancel them through **Organization settings** > **Repositories**. Users with the **Manage settings** permission on the repository can cancel running or queued default setup runs.
+If you need to stop any actively running or queued default setup scans, you can manually cancel them through **Organization settings** > **Repositories**. Users with the **Advanced Security: manage settings** permission on the repository can cancel running or queued default setup runs.
 
 ## Advanced setup for code scanning
 
