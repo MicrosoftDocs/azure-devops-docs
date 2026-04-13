@@ -48,13 +48,15 @@ If you selected *Include packages from common public sources* when creating your
 
 ## Save packages from Google Maven Repository
 
-Before saving packages from Google Maven Repository, make sure you have set up your project to connect to your feed. If you haven't done so already, follow the instruction in the [project setup](project-setup-maven.md) to set up your Maven project and connect to your feed. The following example illustrates how to save the Zipflinger Library from Google Maven Repository.
+Before you begin, make sure your Maven project is configured to connect to your Azure Artifacts feed. If you haven’t done this yet, follow the instructions in the [project setup](project-setup-maven.md) to set up your Maven project and authenticate with your feed. 
+
+The following example shows how to install *Multipaz*, an open-source identity framework, from the Google Maven Repository.
 
 1. Navigate to the Google Maven Repository `https://maven.google.com`.
 
-1. Search for the *Zipflinger* library, then select the package and the version you want to use.
+1. Search for the *Multipaz* package: *org.multipaz*, then select the package and the version you want to use.
 
-1. Copy the **Group ID**, **Artifact ID**, and **Version** for the *Zipflinger* package.
+1. Copy the **Group ID**, **Artifact ID**, and **Version** values for the package.
 
 1. Replace the placeholders in the following snippet with the values you just copied: 
 
@@ -66,15 +68,18 @@ Before saving packages from Google Maven Repository, make sure you have set up y
     </dependency>
     ```
 
-1. Open your *pom.xml* file, paste the snippet inside the `<dependencies>` section, then save your file.
+1. Open your *pom.xml* file, paste the dependency snippet inside the `<dependencies>` section, then save your file.
 
-1. Run the following command from the same path as your *pom.xml* file to install your dependencies:
+1. Run the following command from the same path as your *pom.xml* file to install the dependency:
 
     ```
     mvn install
     ```
 
-[!INCLUDE [save-requires-collaborator](../includes/save-requires-collaborator.md)]
+When the command completes, Maven resolves the dependency through your Azure Artifacts feed. If the package isn’t already present in the feed, Azure Artifacts retrieves it from the Google Maven Repository and saves a copy. Subsequent installs download the package directly from Azure Artifacts instead of the public registry.
+
+> [!NOTE]
+> You must have the **Feed and Upstream Reader (Collaborator)** role or higher to save packages from upstreams. See [Feed roles and permissions](../feeds/feed-permissions.md#feed-roles-and-permissions) for more details.
 
 ## View saved packages
 
