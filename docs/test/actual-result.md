@@ -16,7 +16,7 @@ ms.date: 04/13/2026
 [!INCLUDE [version-eq-azure-devops](../includes/version-eq-azure-devops.md)]
 
 > [!IMPORTANT]
-> This capability is in **public preview**. Functionality might change or be discontinued without notice. Preview capabilities have no Service Level Agreement (SLA) and limited support.
+> This capability is in **preview**. Functionality might change or be discontinued without notice. Preview capabilities have no Service Level Agreement (SLA) and limited support.
 > If this capability isn't yet available in your organization, wait a few days as it rolls out gradually.
 
 Use the **Actual Result** field in Azure Test Plans to record the execution outcome for each test step during manual test runs in the web runner.
