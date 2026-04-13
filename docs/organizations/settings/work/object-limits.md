@@ -118,7 +118,7 @@ The following operational display and object limits apply to teams, work item ta
 | Dashboards per project | 500 |
 | Taskboard | 800 work items |
 | Teams per project | 5,000 |
-| Work item tags per project | 150,000 |
+| Work item tags per project organization or collection | 150,000 |
 | Work item tags per work item | 100 |
 | Templates per work item type | 100 |
 
