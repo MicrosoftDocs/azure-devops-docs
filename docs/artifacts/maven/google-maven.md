@@ -83,24 +83,26 @@ When the command completes, Maven resolves the dependency through your Azure Art
 
 ## View saved packages
 
-To view the packages you installed from upstream, select the **Google Maven Repository** source from the dropdown menu.
+After installing a package from an upstream source, you can confirm that Azure Artifacts saved a copy to your feed:
 
-1. Sign in to your Azure DevOps organization, and then navigate to your project.
+1. Sign in to Azure DevOps and navigate to your project.
 
-1. Select **Artifacts**, and then select your feed from the dropdown menu.
+1. Select **Artifacts**, then select your feed from the dropdown menu.
 
-1. Select the **Google Maven Repository** source from the dropdown menu to find packages from this upstream.
+1. From the **Source** dropdown menu, select **Google Maven Repository** to view packages saved from this upstream.
 
-1. The *Zipflinger* package that we saved in the previous step is now available in our feed, as Azure Artifacts automatically saved a copy when we executed the mvn install command.
+1. The *Multipaz* package that you installed in the previous section is now available in your feed. Azure Artifacts automatically saved a copy when you ran the mvn install command.
  
-    :::image type="content" source="media/saved-zipflinger-package-from-google-maven-repository.png" alt-text="A screenshot showing packages from Google Maven Repository." lightbox="media/saved-zipflinger-package-from-google-maven-repository.png":::
+    :::image type="content" source="media/multipaz-package-saved-from-upstream.png" alt-text="A screenshot showing the Multipaz package from the Google Maven Repository saved to the feed." lightbox="media/multipaz-package-saved-from-upstream.png":::
 
 > [!TIP]
-> If Maven is not downloading all your dependencies, run the following command from the project directory to regenerate your project's files:
+> If Maven does not download all dependencies, run the following command from the project directory to regenerate project files and download sources and Javadocs:
 > `mvn eclipse:eclipse -DdownloadSources=true -DdownloadJavadocs=true`
 
-## Related articles
+## Related content
 
-- [Use packages from Maven Central](./upstream-sources.md)
+- [Upstream from internal feeds](../how-to/upstream-internal-feed.md)
+
+- [Use upstream sources with public feeds](../how-to/public-feeds-upstream-sources.md)
+
 - [Search for packages in upstream sources](../how-to/search-upstream.md)
-- [Configure permissions](../feeds/feed-permissions.md)
