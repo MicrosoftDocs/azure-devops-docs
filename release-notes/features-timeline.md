@@ -169,16 +169,23 @@ Below is a list of investments currently on our roadmap.
          <td><img src="roadmap/2023/media/checkmark.png" alt="Done" />2025 Q4</td>
       </tr>    
       <tr>
-         <td><a href="/azure/devops/release-notes/roadmap/2026/boards-increase-repo-limit" data-raw-source="[Increase limit of connected GitHub repositories](/azure/devops/release-notes/roadmap/2026/boards-increase-repo-limit)">Increase limit of connected GitHub repositories</a></td>
+         <td><a href="/azure/devops/release-notes/2026/sprint-269-update#increased-maximum-limit-for-connected-github-repositories" data-raw-source="[Increase limit of connected GitHub repositories](/azure/devops/release-notes/2026/sprint-269-update#increased-maximum-limit-for-connected-github-repositories)">Increase limit of connected GitHub repositories</a></td>
          <td>Boards</td>
-         <td>2026 Q1</td>
+         <td><img src="roadmap/2023/media/checkmark.png" alt="Done" />2026 Q1</td>
       </tr>   
       <tr>
         <td>
-            <a href="/azure/devops/release-notes/roadmap/2026/general-remote-ado-mcp-server" data-raw-source="[Remote Azure DevOps MCP Server](/azure/devops/release-notes/roadmap/2026/general-remote-ado-mcp-server)">Remote Azure DevOps MCP Server</a>
+            <a href="/azure/devops/release-notes/2026/sprint-271-update#remote-mcp-server-public-preview" data-raw-source="[Remote Azure DevOps MCP Server](/azure/devops/release-notes/2026/sprint-271-update#remote-mcp-server-public-preview)">Remote Azure DevOps MCP Server</a>
          </td>
          <td>Boards</td>
-         <td>2026 Q1</td>
+         <td><img src="roadmap/2023/media/checkmark.png" alt="Done" />2026 Q1</td>
+      </tr>   
+      <tr>
+        <td>
+            <a href="/azure/devops/release-notes/roadmap/2026/boards/boards-select-model" data-raw-source="[Select a model for Copilot Cloud Agent integration](/azure/devops/release-notes/roadmap/2026/general-remote-ado-mcp-server)">Select a model for Copilot Cloud Agent integration</a>
+         </td>
+         <td>Boards</td>
+         <td>2026 Q2</td>
       </tr>         
     </tbody>
 </table>
