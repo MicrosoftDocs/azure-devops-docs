@@ -65,6 +65,7 @@ If your organization uses self-hosted agents, add the following URLs to your All
 * Ensure the CodeQL bundle is installed to the agent tool cache on your agent. You might utilize the `enableAutomaticCodeQLInstall: true` variable with the `AdvancedSecurity-Codeql-Init@1` pipeline task for YAML pipelines or select the `Enable automatic CodeQL detection and installation` checkbox for classic pipelines. Alternatively, for manual installation instructions, see [Code scanning for GitHub Advanced Security for Azure DevOps](github-advanced-security-code-scanning-troubleshoot.md#manual-installation-of-codeql-bundle-to-self-hosted-agent).
   
 ## Enable GitHub Advanced Security
+
 :::zone pivot="bundled-ghazdo"
 You can enable Advanced Security at the organization, project, or repository level. To access each of the scanning tools and results, you need to first enable Advanced Security. Once you enable Advanced Security, any future pushes containing secrets to a repository with this policy enabled are blocked, and repository secret scanning happens in the background.
 
@@ -94,16 +95,6 @@ You can enable Advanced Security at the organization, project, or repository lev
 1. Optionally, select **Automatically enable Advanced Security for new projects** so that any newly created projects in the future have Advanced Security enabled upon creation. This setting is separate from the **Enable all** action and must be selected independently.
 
 :::image type="content" source="media/enable-github-advanced-security-organization.png" lightbox="media/enable-github-advanced-security-organization.png" alt-text="Screenshot of org-level enablement for Advanced Security.":::
-
-## Set up secret scanning
-
-Secret scanning push protection and repository scanning are automatically enabled when you turn on Advanced Security. You can enable or disable secret push protection from the repository settings page. 
-
-:::image type="content" source="media/secret-scanning-push-protection.png" lightbox="media/secret-scanning-push-protection.png" alt-text="Screenshot of enabling push protection.":::
-
-Secret scanning repository scanning is automatically kicked off upon enabling Advanced Security for a selected repository. 
-
-## Set up dependency scanning
 :::zone-end
 
 :::zone pivot="standalone-ghazdo"
@@ -139,17 +130,29 @@ You can enable Secret Protection or Code Security at the organization, project, 
 1. Optionally, toggle **Automatically enable Advanced Security for new projects** so that any newly created projects in the future have **Secret Protection** or **Code Security** enabled upon creation. This setting is separate from the **Enable all** action and must be selected independently.
 
 :::image type="content" source="media/adv-sec-organization-settings-plans-enabled.png" lightbox="media/adv-sec-organization-settings-plans-enabled.png" alt-text="Screenshot of org-level enablement for Advanced Security.":::
+:::zone-end
 
 ## Set up secret scanning
 
+:::zone pivot="bundled-ghazdo"
+Secret scanning push protection and repository scanning are automatically enabled when you turn on Advanced Security. You can enable or disable secret push protection from the repository settings page. 
+
+:::image type="content" source="media/secret-scanning-push-protection.png" lightbox="media/secret-scanning-push-protection.png" alt-text="Screenshot of enabling push protection.":::
+
+Secret scanning repository scanning is automatically kicked off upon enabling Advanced Security for a selected repository. 
+:::zone-end
+
+:::zone pivot="standalone-ghazdo"
 Secret scanning push protection and repository scanning are automatically enabled when you turn on Secret Protection. You can enable or disable secret push protection from the repository settings page. 
 
 :::image type="content" source="media/adv-sec-repository-settings-secret-protection-options.png" lightbox="media/adv-sec-repository-settings-secret-protection-options.png" alt-text="Screenshot of enabling push protection.":::
 
-As mentioned, secret scanning repository scanning is automatically kicked off upon enabling Secret Protection for a selected repository. 
+Secret scanning repository scanning is automatically kicked off upon enabling Secret Protection for a selected repository. 
+:::zone-end
 
 ## Set up dependency scanning
 
+:::zone pivot="standalone-ghazdo"
 To gain access to dependency scanning features, you need the **Code Security** product enabled for your repository.
 :::zone-end
 
