@@ -313,14 +313,9 @@ Below, you will find several investments that we plan to deliver as part of this
         </tr>
     </thead>
     <tbody>       
-      <td rowspan="21"><strong>2026 Q2</strong></td>
+      <td rowspan="18"><strong>2026 Q2</strong></td>
       <td><a href="/azure/devops/release-notes/roadmap/2023/commits-search" data-raw-source="[Commits search](/azure/devops/release-notes/roadmap/2023/commits-search)">Commits search</a></td>
         <td>General</td>
-      </tr>
-      <tr>
-          <td><a href="/azure/devops/release-notes/roadmap/2025/manage-high-privilege-scopes" data-raw-source="[Manage high privilege scopes, pipeline decorators, and unpublished extensions](/azure/devops/release-notes/roadmap/2025/manage-high-privilege-scopes)">Manage high privilege scopes, pipeline decorators, and unpublished extensions</a>
-         </td>
-         <td>General</td>      
       </tr>
       <tr>          
         <td><a href="/azure/devops/release-notes/2026/sprint-271-update#remote-mcp-server-public-preview" data-raw-source="[Remote Azure DevOps MCP Server](/azure/devops/release-notes/2026/sprint-271-update#remote-mcp-server-public-preview)">Remote Azure DevOps MCP Server</a></td>
@@ -334,14 +329,6 @@ Below, you will find several investments that we plan to deliver as part of this
         <td><a href="/azure/devops/release-notes/roadmap/2025/boards/improved-filter-experience-boards-backlogs" data-raw-source="[Improved Filtering Experience in Boards and Backlogs](/azure/devops/release-notes/roadmap/2025/boards/improved-filter-experience-boards-backlogs)">Improved Filtering Experience in Boards and Backlogs</a></td>
         <td>Boards</td>
       </tr>       
-      <tr>          
-        <td><a href="/azure/devops/release-notes/2026/sprint-269-update#increased-maximum-limit-for-connected-github-repositories" data-raw-source="[Increase limit of connected GitHub repositories](/azure/devops/release-notes/2026/sprint-269-update#increased-maximum-limit-for-connected-github-repositories)">Increase limit of connected GitHub repositories</a></td>
-        <td>Boards</td>
-      </tr>
-      <tr>
-         <td><a href="/azure/devops/release-notes/2026/sprint-270-update#condensed-card-display-on-kanban-and-sprint-boards" data-raw-source="[Condensed views for kanban and sprint boards](/azure/devops/release-notes/2026/sprint-270-update#condensed-card-display-on-kanban-and-sprint-boards)">Condensed views for kanban and sprint boards</a></td>
-         <td>Boards</td>
-      </tr>
       <tr>
          <td><a href="/azure/devops/release-notes/roadmap/2024/stage-traceability" data-raw-source="[Stage-level traceability](/azure/devops/release-notes/roadmap/2024/stage-traceability)">Stage-level traceability</a></td>
          <td>Pipelines</td>
