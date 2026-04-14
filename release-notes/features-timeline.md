@@ -313,7 +313,7 @@ Below, you will find several investments that we plan to deliver as part of this
         </tr>
     </thead>
     <tbody>       
-      <td rowspan="18"><strong>2026 Q1</strong></td>
+      <td rowspan="21"><strong>2026 Q2</strong></td>
       <td><a href="/azure/devops/release-notes/roadmap/2023/commits-search" data-raw-source="[Commits search](/azure/devops/release-notes/roadmap/2023/commits-search)">Commits search</a></td>
         <td>General</td>
       </tr>
@@ -369,9 +369,9 @@ Below, you will find several investments that we plan to deliver as part of this
       <tr>
          <td><a href="/azure/devops/release-notes/roadmap/2026/testplans/support-for-rerunning" data-raw-source="[Support for re-running of data driven tests ](/azure/devops/release-notes/roadmap/2026/testplans/support-for-rerunning)">Support for re-running of data driven tests </a></td>
          <td>Test Plans</td>
-      </tr>      
-      <td rowspan="6"><strong>2026 Q2</strong></td>
-      <td><a href="/azure/devops/release-notes/roadmap/2025/ghazdo/default-setup" data-raw-source="[CodeQL default setup (one-click enablement)](/azure/devops/release-notes/roadmap/2025/ghazdo/default-setup)">CodeQL default setup (one-click enablement)</a></td>
+      </tr>
+      <tr>      
+         <td><a href="/azure/devops/release-notes/roadmap/2025/ghazdo/default-setup" data-raw-source="[CodeQL default setup (one-click enablement)](/azure/devops/release-notes/roadmap/2025/ghazdo/default-setup)">CodeQL default setup (one-click enablement)</a></td>
         <td>GitHub Advanced Security for Azure DevOps</td>
       </tr>
       <tr>
