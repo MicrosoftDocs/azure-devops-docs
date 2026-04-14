@@ -23,9 +23,9 @@ Security campaigns let you create and share filtered views of alerts to coordina
 > [!div class="mx-imgBorder"]
 > ![Animated walkthrough of combined alerts view and security campaigns in security overview.](../../media/272-ghazdo-02.gif)
 
-### Alert UX enhancements: confidence filter and alert counts
+### Alert UX enhancements: "All" confidence filter
 
-We've made two improvements to the alert experience at the repository level:
+We've added an "All" confidence filter that lets you see all secret alerts at once, without having to cycle through High and Other filters individually. "All" is now the default when you open the Secrets tab. This is a change only made in the UI - continue to use `High,Other` via API as needed to see all Confidences for secret alerts.
 
-- **All confidence filter**: A new **All** option in the confidence filter lets you see all secret alerts at once, without switching between **High** and **Other** filters. **All** is now the default when you open the **Secrets** tab. This is a UI-only change. Continue to use `High,Other` via the API when you need all confidence values for secret alerts.
-- **Alert counts on tabs**: Each alert category tab now displays a count of active alerts, so you can quickly see the number of current alerts across code scanning, dependencies, and secrets without opening each tab.
+> [!div class="mx-imgBorder"]
+> [![Screenshot showing All confidence filter.](../../media/272-ghazdo-04.png "Screenshot showing All confidence filter.")](../../media/272-ghazdo-04.png#lightbox)
