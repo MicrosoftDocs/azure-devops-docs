@@ -165,6 +165,8 @@ Dependency scanning is a pipeline-based scanning tool. Results are aggregated pe
 
 For more advanced setup or if you want to scan all branches, we recommend that you add the dependency scanning task to all the pipelines that you want scanned. See [Dependency scanning for GitHub Advanced Security for Azure DevOps](github-advanced-security-dependency-scanning-troubleshoot.md#manual-dependency-scanning-task-setup) for more details.
 
+<a href="code-scanning"></a>
+
 ## Set up code scanning
 
 :::zone pivot="standalone-ghazdo"
