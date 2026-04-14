@@ -1,7 +1,7 @@
 ---
 title: Managed DevOps Pools pricing
 description: Learn how pricing is calculated for your Managed DevOps Pools.
-ms.date: 04/28/2025
+ms.date: 04/14/2026
 ms.topic: concept-article
 ms.custom: peer-review-program
 #Customer intent: As a platform engineer, I want to understand how Managed DevOps Pools pricing is determined so that I can estimate my projected cost.
@@ -13,7 +13,12 @@ Managed DevOps Pools pricing is a combination of the cost of the Azure services 
 
 ## Azure services pricing
 
-The primary cost for Managed DevOps Pools is the cost of the Azure services that your pool uses, like compute, storage, and data egress, which are billed at the standard Azure pricing rates. For more information, see:
+The primary cost for Managed DevOps Pools is the cost of the Azure services that your pool uses, like compute, storage, and data egress, which are billed at the standard Azure pricing rates.
+
+> [!NOTE]
+> [Azure Hybrid Benefit](/azure/virtual-machines/windows/hybrid-use-benefit-licensing) can't be used with Managed DevOps Pool instances.
+
+For more information, see:
 
 * [Azure pricing calculator](https://azure.microsoft.com/pricing/calculator/)
 * [View and download your Azure usage and charges](/azure/cost-management-billing/understand/download-azure-daily-usage)
