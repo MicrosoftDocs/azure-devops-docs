@@ -9,6 +9,7 @@ author: chcomley
 ms.topic: sample
 monikerRange: "<=azure-devops"
 ms.date: 12/16/2022
+ai-usage: ai-assisted
 ---
 
 # Rollup child work item values to parent sample report
@@ -372,9 +373,7 @@ The `&$expand=AssignedTo($select=UserName), Iteration($select=IterationPath), Ar
 
 To learn how, see [Transform Analytics data to generate Power BI reports](transform-analytics-data-report-generation.md). 
 
-## (Optional) Rename fields
-
-Once you've expanded the columns, you may want to rename one or more fields. For example, you can rename the column `AreaPath` to `Area Path`. To learn how, see [Rename column fields](transform-analytics-data-report-generation.md#rename-column-fields). 
+[!INCLUDE [temp](includes/sample-rename-column-fields.md)]
 
 ## Replace null values in rollup fields
 
@@ -382,7 +381,12 @@ If a work item doesn't have any children, the rollup value may be null. For exam
 
 For easier reporting, replace all nulls with zero by following these steps.
 
-[!INCLUDE [temp](includes/sample-replace-nulls.md)]
+1. Select the column by choosing the column header.
+1. Select the **Transform** menu.
+1. Select **Replace Values**. The **Replace Values** dialog appears.
+1. Leave **Value to Find** set to `null`.
+1. Enter `0` in **Replace With**.
+1. Select **OK**.
 
 Repeat for all the rollup columns.
 

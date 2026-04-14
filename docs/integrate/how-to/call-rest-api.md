@@ -9,7 +9,7 @@ ai-usage: ai-assisted
 monikerRange: '<= azure-devops'
 ms.author: chcomley
 author: chcomley
-ms.date: 03/02/2026
+ms.date: 03/31/2026
 ---
 
 # Get started with the REST APIs
@@ -34,7 +34,7 @@ VERB https://{instance}/{collection}/{team-project}/_apis/{area}/{resource}?api-
 ```
 
 > [!TIP]
-> As APIs evolve, we recommend that you include an API version in every request. This practice can help you avoid unexpected changes in the API that could break.
+> As APIs evolve, include an API version in every request. This practice helps you avoid unexpected changes in the API that could break your application.
 
 ### [Azure DevOps Services](#tab/services)
 
@@ -67,8 +67,7 @@ Azure DevOps REST APIs support several authentication methods:
 
 - **Microsoft Entra ID** - Recommended for production applications
 - **Personal Access Tokens (PATs)** - Simple authentication for scripts and testing  
-- **OAuth 2.0** - For non-Microsoft applications
-- **Service principals** - For automated scenarios
+- **Service principals and managed identities** - For automated scenarios
 
 [!INCLUDE [use-microsoft-entra-reduce-pats](../../includes/use-microsoft-entra-reduce-pats.md)]
 
@@ -126,8 +125,8 @@ Content-Type: application/json-patch+json
 
 ### HTTP method override
 
-Some web proxies might only support the HTTP verbs GET and POST, but not more modern HTTP verbs like PATCH and DELETE.
-If your calls might pass through one of these proxies, you can send the actual verb using a POST method, with a header to override the method.
+Some web proxies support only the HTTP verbs GET and POST. They don't support more modern HTTP verbs like PATCH and DELETE.
+If your calls might pass through one of these proxies, send the actual verb by using a POST method with a header to override the method.
 For example, you might want to [update a work item](/rest/api/azure/devops/wit/work-items/update) (`PATCH _apis/wit/workitems/3`), but you might have to go through a proxy that only allows GET or POST.
 You can pass the proper verb (PATCH in this case) as an HTTP request header parameter and use POST as the actual HTTP method.
 
@@ -194,13 +193,13 @@ For practical implementation guidance and complete code examples, see:
 * [REST API samples](../get-started/rest/samples.md) - Complete examples with Microsoft Entra ID authentication
 * [Authentication guidance](../get-started/authentication/authentication-guidance.md) - Detailed authentication options
 * [REST API versioning](../concepts/rest-api-versioning.md) - API lifecycle information
-* [OAuth 2.0](../get-started/authentication/oauth.md) - OAuth implementation details
+* [Microsoft Entra OAuth](../get-started/authentication/entra-oauth.md) - OAuth implementation with Microsoft Entra ID
 
 <a id="use-ai-assistance"></a>
 
 ## Use AI to build REST API calls
 
-If you have the [Azure DevOps MCP Server](../../mcp-server/mcp-server-overview.md) connected to your AI agent in agent mode, you can use natural language prompts to generate and troubleshoot REST API calls.
+If you connect [Azure DevOps MCP Server](../../mcp-server/mcp-server-overview.md) to your AI agent in agent mode, you can use natural language prompts to generate and troubleshoot REST API calls.
 
 | Task | Example prompt |
 |------|----------------|

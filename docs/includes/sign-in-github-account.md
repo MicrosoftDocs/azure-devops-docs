@@ -7,9 +7,9 @@ ms.topic: include
 > [!NOTE]
 > If your GitHub email address is associated with a Microsoft Entra ID-connected organization, sign in with your Microsoft Entra account instead. See [Connect your organization to Microsoft Entra ID](../organizations/accounts/connect-organization-to-azure-ad.md).
 
-1. Go to [Azure DevOps](https://azure.microsoft.com/services/devops/) and select **Get started with Azure**.
-2. Select **Sign in with GitHub**.
-3. Enter your GitHub credentials and authorize **Microsoft-corp** when prompted.
+1. Go to [Azure DevOps](https://azure.microsoft.com/products/devops/) and select **Get started with Azure**.
+1. Select **Sign in with GitHub**.
+1. Enter your GitHub credentials and authorize **Microsoft-corp** when prompted.
 
 Azure DevOps creates an organization for you. Access it at any time: `https://dev.azure.com/{Your_Organization}`.
 

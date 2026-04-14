@@ -70,7 +70,7 @@ Each production ring represents multiple instances of the same web application d
 
 A release is a construct that holds a versioned set of artifacts specified in a CI/CD pipeline. It includes a snapshot of all the information required to carry out all the tasks and actions in the release pipeline, such as stages, tasks, policies, and deployment options. 
 
-A single release pipeline can produce multiple releases. Azure Pipelines stores information about each release and displays it for the specified [retention period](../policies/retention.md#release).  
+A single release pipeline can produce multiple releases. Azure Pipelines stores information about each release and displays it for the specified [retention period](../policies/retention.md#releases-retention-policies).  
 
 A deployment is the execution of the tasks defined for a single stage in a release. A deployment can include actions such as running automated tests, deploying build artifacts, and performing any other tasks configured for that stage.
 When you create a release, Azure Pipelines initiates deployments based on the policies and settings defined in the release pipeline. A release can be deployed multiple times to the same stage. If a deployment fails for a stage, you can redeploy the same release to that stage by selecting Deploy from the release.

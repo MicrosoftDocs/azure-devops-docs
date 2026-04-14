@@ -130,10 +130,10 @@ additionalContent:
       # Card
       - title: Integration
         links:
+            - text: Marketplace and extensibility
+              url: ./marketplace-extensibility/index.yml
             - text: GitHub integration with Azure DevOps
               url: ./cross-service/github-integration.md
-            - text: Connect work, code, builds, and tests across services
-              url: ./cross-service/cross-service-overview.md
             - text: Deploy to Azure with Azure Pipelines
               url: ./pipelines/overview-azure.md
       # Card

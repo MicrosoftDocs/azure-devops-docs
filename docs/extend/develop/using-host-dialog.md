@@ -2,13 +2,13 @@
 ms.subservice: azure-devops-ecosystem
 title: Create modal dialogs in Azure DevOps extensions
 description: Learn how to implement modal dialogs in Azure DevOps extensions with the azure-devops-extension-sdk package. Build interactive dialogs with custom content, validation, and user interactions.
-ms.assetid: 59748E0E-2D5E-FF79-ED0E-4B76037A8010
 ms.topic: how-to
+ms.custom: UpdateFrequency3
 ai-usage: ai-assisted
 monikerRange: '<= azure-devops'
 ms.author: chcomley
 author: chcomley
-ms.date: 12/01/2025
+ms.date: 04/03/2026
 # customer-intent: As an Azure DevOps extension developer, I want to create modal dialogs that block user interaction with the entire page so I can collect user input, display forms, and provide focused user experiences in my extensions.
 ---
 
@@ -40,7 +40,7 @@ Use modal dialogs in your extensions to:
 | **Required packages** | Extension SDK | Install: `npm install azure-devops-extension-sdk` |
 | | Extension API | Install: `npm install azure-devops-extension-api` |
 | **Extension permissions** | Manifest scopes | Include appropriate scopes in `vss-extension.json`, for example: `"vso.work"`, `"vso.project"` |
-| **SDK imports** | Required modules | Import SDK and services: `import * as SDK from "azure-devops-extension-sdk"` |
+| **SDK imports** | Required modules | Import SDK: `import * as SDK from "azure-devops-extension-sdk"` and services: `import { CommonServiceIds, IHostPageLayoutService } from "azure-devops-extension-api"` |
 
 ## Dialog contents
 
@@ -63,9 +63,7 @@ The `uri` property references a page that is rendered within the content area of
 ```html
 <!DOCTYPE html>
 <html>
-    <head>
-        <script src="node_modules/azure-devops-extension-sdk/lib/SDK.js"></script>
-    </head>
+    <head></head>
     <body>
         <h2 id="header">Register now</h2>
         <p>
@@ -80,198 +78,200 @@ The `uri` property references a page that is rendered within the content area of
             <label>Email address:</label>
             <input id="inpEmail" />
         </p>
-        <script type="module">
-            import * as SDK from "azure-devops-extension-sdk";
-            
-            SDK.init();
-            const registrationForm = (function() {
-                const callbacks = [];
-                
-                function inputChanged() {
-                    // Execute registered callbacks
-                    for(let i = 0; i < callbacks.length; i++) {
-                        callbacks[i](isValid());
-                    }
-                }
-                
-                function isValid() {
-                    // Check whether form is valid or not
-                    return !!(name.value) && !!(dateOfBirth.value) && !!(email.value);
-                }
-                
-                function getFormData() {
-                    // Get form values
-                    return {
-                        name: name.value,
-                        dateOfBirth: dateOfBirth.value,
-                        email: email.value  
-                    };
-                }
-
-                const name = document.getElementById("inpName");
-                const dateOfBirth = document.getElementById("inpDob");
-                const email = document.getElementById("inpEmail");
-                
-                name.addEventListener("change", inputChanged);
-                dateOfBirth.addEventListener("change", inputChanged);
-                email.addEventListener("change", inputChanged);
-                
-                return {
-                    isFormValid: function() {
-                        return isValid();   
-                    },
-                    getFormData: function() {
-                        return getFormData();
-                    },
-                    attachFormChanged: function(cb) {
-                         callbacks.push(cb);
-                    }
-                };
-            })();
-            
-            // Register form object to be used across this extension
-            SDK.register("registration-form", registrationForm);
-        </script>
+        <div id="root"></div>
+        <script type="text/javascript" src="registration-form.js" charset="utf-8"></script>
     </body>
 </html>
-``` 
+```
+
+The corresponding JavaScript file (`registration-form.js`) initializes the SDK, retrieves any configuration passed from the host, and calls `SDK.notifyLoadSucceeded()` when ready:
+
+```javascript
+import * as SDK from "azure-devops-extension-sdk";
+
+SDK.init();
+SDK.ready().then(() => {
+    // Retrieve configuration passed via the dialog options
+    const config = SDK.getConfiguration();
+    console.log("Dialog configuration:", config);
+
+    SDK.notifyLoadSucceeded();
+});
+```
+
+> [!NOTE]
+> Bundle your JavaScript with a tool like webpack so the `import` statement resolves correctly at runtime. The HTML page references the bundled output file (for example, `registration-form.js`). 
 
 ## Show the dialog
 
-To show the dialog (for example, when a user selects an action on a toolbar or menu), call the `openDialog` function on an instance of the dialog service:
+To show the dialog (for example, when a user selects an action on a toolbar or menu), call the `openCustomDialog` method on the `IHostPageLayoutService`:
 
 ```javascript
 import * as SDK from "azure-devops-extension-sdk";
+import { CommonServiceIds, IHostPageLayoutService } from "azure-devops-extension-api";
 
-SDK.getService(SDK.CommonServiceIds.Dialog).then((dialogService) => {
-    const extensionCtx = SDK.getExtensionContext();
-    // Build absolute contribution ID for dialogContent
-    const contributionId = `${extensionCtx.publisherId}.${extensionCtx.extensionId}.registration-form`;
+const dialogService = await SDK.getService<IHostPageLayoutService>(CommonServiceIds.HostPageLayoutService);
+const extensionCtx = SDK.getExtensionContext();
 
-    // Show dialog
-    const dialogOptions = {
-        title: "My Dialog",
-        width: 800,
-        height: 600
-    };
+// Build absolute contribution ID for dialog content
+const contributionId = `${extensionCtx.publisherId}.${extensionCtx.extensionId}.registration-form`;
 
-    dialogService.openDialog(contributionId, dialogOptions);
-});
-```
-
-## Advanced dialog features
-
-A function can be called when the OK button is selected. You specify this function by setting `getDialogResult` in the options you provide when showing the dialog.
-
-If a call to `getDialogResult` returns a non-null value, this value is then passed to the function specified by `okCallback` (also in the options) and the dialog is closed.
-
-In this example, the `attachFormChanged` callback gets called when inputs on the form change. Based on whether the form is valid or not, the OK button is enabled or disabled.
-
-```javascript
-import * as SDK from "azure-devops-extension-sdk";
-
-SDK.getService(SDK.CommonServiceIds.Dialog).then((dialogService) => {
-    let registrationForm;
-    const extensionCtx = SDK.getExtensionContext();
-    const contributionId = `${extensionCtx.publisherId}.${extensionCtx.extensionId}.registration-form`;
-
-    const dialogOptions = {
-        title: "Registration Form",
-        width: 800,
-        height: 600,
-        getDialogResult: () => {
-            // Get the result from registrationForm object
-            return registrationForm ? registrationForm.getFormData() : null;
-        },
-        okCallback: (result) => {
-            // Log the result to the console
-            console.log(JSON.stringify(result));
+// Show dialog
+dialogService.openCustomDialog(contributionId, {
+    title: "My Dialog",
+    configuration: {
+        // Pass initial data to the dialog content
+        message: "Please fill out the registration form."
+    },
+    onClose: (result) => {
+        if (result !== undefined) {
+            console.log("Dialog result:", result);
         }
-    };
-
-    dialogService.openDialog(contributionId, dialogOptions).then((dialog) => {
-        // Get registrationForm instance which is registered in registration-form.html
-        dialog.getContributionInstance("registration-form").then((registrationFormInstance) => {
-        
-            // Keep a reference of registration form instance (to be used previously in dialog options)
-            registrationForm = registrationFormInstance;
-            
-            // Subscribe to form input changes and update the Ok enabled state
-            registrationForm.attachFormChanged((isValid) => {
-                dialog.updateOkButton(isValid);
-            });
-            
-            // Set the initial ok enabled state
-            registrationForm.isFormValid().then((isValid) => {
-                dialog.updateOkButton(isValid);
-            });
-        });                            
-    });
+    }
 });
 ```
 
-## Control the OK button
+## Handle dialog results
 
-Initially, the OK button is disabled. However, you can enable/disable this button by calling the `updateOkButton` method on the dialog: 
+The `onClose` callback in the dialog options receives the result when the dialog is dismissed. Use the `configuration` option to pass initial data to the dialog content.
+
+In this example, the host page opens a custom dialog and handles the result when the dialog closes:
 
 ```javascript
-    dialogService.openDialog(contributionId, dialogOptions).then((dialog) => {
-        // Set true/false to enable/disable ok button
-        dialog.updateOkButton(true); 
-    });
+import * as SDK from "azure-devops-extension-sdk";
+import { CommonServiceIds, IHostPageLayoutService } from "azure-devops-extension-api";
+
+const dialogService = await SDK.getService<IHostPageLayoutService>(CommonServiceIds.HostPageLayoutService);
+const extensionCtx = SDK.getExtensionContext();
+const contributionId = `${extensionCtx.publisherId}.${extensionCtx.extensionId}.registration-form`;
+
+dialogService.openCustomDialog(contributionId, {
+    title: "Registration Form",
+    configuration: {
+        defaultName: "Contoso User"
+    },
+    onClose: (result) => {
+        if (result !== undefined) {
+            // User completed the dialog
+            console.log("Registration data:", JSON.stringify(result));
+        } else {
+            // User dismissed the dialog without completing
+            console.log("Dialog was dismissed.");
+        }
+    }
+});
+```
+
+In the dialog content page, use `SDK.getConfiguration()` to retrieve the data passed from the host. The dialog content page can't directly communicate back to the host except through the `onClose` result:
+
+```javascript
+import * as SDK from "azure-devops-extension-sdk";
+
+SDK.init();
+SDK.ready().then(() => {
+    const config = SDK.getConfiguration();
+    
+    // Use configuration values passed from the host
+    if (config.defaultName) {
+        document.getElementById("inpName").value = config.defaultName;
+    }
+
+    SDK.notifyLoadSucceeded();
+});
+```
+
+## Show a message dialog
+
+For simple confirmation dialogs with OK and Cancel buttons, use `openMessageDialog` instead of a custom dialog:
+
+```javascript
+import * as SDK from "azure-devops-extension-sdk";
+import { CommonServiceIds, IHostPageLayoutService } from "azure-devops-extension-api";
+
+const dialogService = await SDK.getService<IHostPageLayoutService>(CommonServiceIds.HostPageLayoutService);
+
+dialogService.openMessageDialog("Are you sure you want to proceed?", {
+    title: "Confirm Action",
+    showCancel: true,
+    onClose: (result) => {
+        // result is true if OK was selected, false if Cancel
+        if (result) {
+            console.log("User confirmed.");
+        } else {
+            console.log("User canceled.");
+        }
+    }
+});
 ```
 
 ## Pass values to the dialog
 
-It's possible to pass initial values to dialog content when you open it in the host dialog.
-
-```json
-    {
-        "id": "registration-form",
-        "type": "ms.vss-web.control",
-        "description": "The content displayed in the dialog",
-        "targets": [],
-        "properties": {
-            "uri": "registration-form.html?id={{myId}}"
-        }
-    }
-```
-
-When the dialog opens, the following options must be specified to pass `myId`:
+Pass initial values to dialog content by using the `configuration` option. The dialog content page retrieves these values with `SDK.getConfiguration()`.
 
 ```javascript
-    const dialogOptions = {
-        title: "My Dialog Title",
-        width: 800,
-        height: 600,
-        urlReplacementObject: { myId: new Date().getTime() }
-    };
+// Host page: pass configuration when opening the dialog
+dialogService.openCustomDialog(contributionId, {
+    title: "My Dialog Title",
+    configuration: {
+        itemId: 42,
+        timestamp: new Date().getTime()
+    },
+    onClose: (result) => {
+        if (result !== undefined) {
+            console.log("Dialog result:", result);
+        }
+    }
+});
+```
+
+```javascript
+// Dialog content page: retrieve configuration
+import * as SDK from "azure-devops-extension-sdk";
+
+SDK.init();
+SDK.ready().then(() => {
+    const config = SDK.getConfiguration();
+    console.log("Item ID:", config.itemId);
+    console.log("Timestamp:", config.timestamp);
+
+    SDK.notifyLoadSucceeded();
+});
 ```
 
 ## Customize dialog buttons
 
-The `okText` and `cancelText` attributes can be used to specify alternate titles for the OK and Cancel buttons:
+For message dialogs, the `okText` and `cancelText` properties specify alternate titles for the OK and Cancel buttons:
 
 ```javascript
-    const dialogOptions = {
-        title: "My Dialog Title",
-        width: 800,
-        height: 600,
-        okText: "Yes",
-        cancelText: "No" 
-    };
+dialogService.openMessageDialog("Do you want to save changes?", {
+    title: "Save Changes",
+    showCancel: true,
+    okText: "Yes",
+    cancelText: "No",
+    onClose: (result) => {
+        if (result) {
+            console.log("User selected Yes.");
+        }
+    }
+});
 ```
 
-To not show any buttons on the dialog, you can set the `buttons` attribute to `[]`:
+## Enable light dismiss
+
+For custom dialogs, set `lightDismiss` to `true` so that clicking outside the dialog closes it:
 
 ```javascript
-    const dialogOptions = {
-        title: "My Dialog Title",
-        width: 800,
-        height: 600,
-        buttons: []
-    };
+dialogService.openCustomDialog(contributionId, {
+    title: "My Dialog Title",
+    lightDismiss: true,
+    onClose: (result) => {
+        console.log("Dialog closed.");
+    }
+});
 ```
+
+> [!NOTE]
+> Light dismiss is enabled by default (`true`). Set it to `false` to require the user to explicitly close the dialog.
 
 ## Related resources
 

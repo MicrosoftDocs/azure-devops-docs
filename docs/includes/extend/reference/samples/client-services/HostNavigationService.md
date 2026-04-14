@@ -7,7 +7,7 @@ ms.author: chcomley
 author: chcomley
 ms.topic: sample
 monikerRange: '<= azure-devops'
-ms.date: 08/17/2016
+ms.date: 04/03/2026
 ---
 
 ```js
@@ -19,4 +19,4 @@ ms.date: 08/17/2016
         });
     });
 ```
-See [Host navigation](../../../../../extend/develop/host-navigation.md) for additional samples.
+See [Work with URLs](../../../../../extend/develop/work-with-urls.md) for additional samples.

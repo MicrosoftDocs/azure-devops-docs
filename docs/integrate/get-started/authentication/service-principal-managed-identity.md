@@ -296,7 +296,7 @@ var response = await client.GetAsync(
 
 - **NuGet feeds**: Connect with [NuGet.exe](../../../artifacts/nuget/nuget-exe.md) or [dotnet CLI](../../../artifacts/nuget/dotnet-setup.md).
 - **Marketplace publishing**: [Publish extensions via command line](../../../extend/publish/command-line.md).
-- **Azure Pipelines**: Create [service connections](../../../pipelines/library/connect-to-azure.md) backed by managed identities.
+- **Azure Pipelines**: [Access Azure DevOps with Entra workload identity](../../../pipelines/library/add-devops-entra-service-connection.md).
 - **Git operations**: [Clone repositories with the Git Credential Manager](../../../repos/git/set-up-credential-managers.md).
 
 For complete code examples, see our [sample applications](https://github.com/microsoft/azure-devops-auth-samples/tree/master/ServicePrincipalsSamples).

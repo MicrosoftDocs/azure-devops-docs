@@ -138,6 +138,61 @@ Azure DevOps supports many different authentication mechanisms, including basic 
     </tbody>
 </table>
 
+### Improved Boards + GitHub Integration
+
+The Azure DevOps and GitHub integration continues to be of major strategic importance. Our goal is to keep improving this integration to make it easier for customers to move their repositories to GitHub while continuing to use Azure Boards, Pipelines, and Test Plans. All of this is done while maintaining a high level of traceability between work and code.
+
+Below is a list of investments currently on our roadmap.
+
+<table>
+    <thead>
+        <tr>
+            <th>Feature</th>
+            <th>Area</th>
+            <th>Quarter</th>
+         </tr>
+    </thead>
+    <tbody>          
+      <tr>
+         <td><a href="/azure/devops/release-notes/2025/sprint-260-update#azure-boards-and-pipelines-integration-for-github-enterprise-cloud-with-data-residency" data-raw-source="[Support GitHub Enterprise Cloud with data residency](azure/devops/release-notes/2025/sprint-260-update#azure-boards-and-pipelines-integration-for-github-enterprise-cloud-with-data-residency)">Support for GitHub Enterprise Cloud with data residency</a></td>
+         <td>Boards</td>
+         <td><img src="roadmap/2023/media/checkmark.png" alt="Done" />2025 Q3</td>
+      </tr>
+         <tr>
+         <td><a href="/azure/devops/release-notes/2025/sprint-264-update#azure-devops-local-mcp-server-generally-available" data-raw-source="[MCP Server for Azure DevOps](/azure/devops/release-notes/2025/sprint-264-update#azure-devops-local-mcp-server-generally-available)">MCP Server for Azure DevOps</a></td>
+         <td>General</td>
+         <td><img src="roadmap/2023/media/checkmark.png" alt="Done" />2025 Q4</td>
+      </tr> 
+      <tr>
+         <td><a href="/azure/devops/release-notes/2026/sprint-268-update#general-availability-of-github-copilot-integration-for-azure-boards" data-raw-source="[GitHub Coding Agent for Azure Boards](azure/devops/release-notes/2026/sprint-268-update#general-availability-of-github-copilot-integration-for-azure-boards)">GitHub Coding Agent for Azure Boards</a></td>
+         <td>Boards</td>
+         <td><img src="roadmap/2023/media/checkmark.png" alt="Done" />2025 Q4</td>
+      </tr>    
+      <tr>
+         <td><a href="/azure/devops/release-notes/2026/sprint-269-update#increased-maximum-limit-for-connected-github-repositories" data-raw-source="[Increase limit of connected GitHub repositories](/azure/devops/release-notes/2026/sprint-269-update#increased-maximum-limit-for-connected-github-repositories)">Increase limit of connected GitHub repositories</a></td>
+         <td>Boards</td>
+         <td><img src="roadmap/2023/media/checkmark.png" alt="Done" />2026 Q1</td>
+      </tr>   
+      <tr>
+        <td>
+            <a href="/azure/devops/release-notes/2026/sprint-271-update#remote-mcp-server-public-preview" data-raw-source="[Remote Azure DevOps MCP Server](/azure/devops/release-notes/2026/sprint-271-update#remote-mcp-server-public-preview)">Remote Azure DevOps MCP Server</a>
+         </td>
+         <td>Boards</td>
+         <td><img src="roadmap/2023/media/checkmark.png" alt="Done" />2026 Q1</td>
+      </tr>   
+      <tr>
+        <td>
+            <a href="/azure/devops/release-notes/roadmap/2026/boards/boards-select-model" data-raw-source="[Select a model for Copilot Cloud Agent integration](/azure/devops/release-notes/roadmap/2026/general-remote-ado-mcp-server)">Select a model for Copilot Cloud Agent integration</a>
+         </td>
+         <td>Boards</td>
+         <td>2026 Q2</td>
+      </tr>         
+    </tbody>
+</table>
+
+You can also view a detailed list of planned and recent investments on our [features timeline](/azure/devops/boards/github/features-timeline).
+
+
 ### Migrate to Managed DevOps Pools
 
 Managed DevOps Pools is an evolution of Azure DevOps Virtual Machine Scale Set agent pools. It provides better pool scalability and reliability, simplifies pool management, and allows you to use the VM images from Microsoft-hosted agents on custom Azure VMs. You can read more about Managed DevOps Pools [here](https://aka.ms/mdp-docs). Features to support new scenarios will be added to Managed DevOps Pools and not Virtual Machine Scale Set pools. Managed DevOps Pools is generally available, so you can migrate your Virtual Machine Scale Set pools to Managed DevOps Pools and use them for production workflows, wherever possible.
@@ -258,7 +313,7 @@ Below, you will find several investments that we plan to deliver as part of this
         </tr>
     </thead>
     <tbody>       
-      <td rowspan="13"><strong>2026 Q2</strong></td>
+      <td rowspan="18"><strong>2026 Q1</strong></td>
       <td><a href="/azure/devops/release-notes/roadmap/2023/commits-search" data-raw-source="[Commits search](/azure/devops/release-notes/roadmap/2023/commits-search)">Commits search</a></td>
         <td>General</td>
       </tr>
@@ -267,6 +322,10 @@ Below, you will find several investments that we plan to deliver as part of this
          </td>
          <td>General</td>      
       </tr>
+      <tr>          
+        <td><a href="/azure/devops/release-notes/2026/sprint-271-update#remote-mcp-server-public-preview" data-raw-source="[Remote Azure DevOps MCP Server](/azure/devops/release-notes/2026/sprint-271-update#remote-mcp-server-public-preview)">Remote Azure DevOps MCP Server</a></td>
+        <td>General</td>
+      </tr>
       <tr>
          <td><a href="/azure/devops/release-notes/roadmap/2025/ghazdo/default-setup" data-raw-source="[CodeQL default setup (one-click enablement)](/azure/devops/release-notes/roadmap/2025/ghazdo/default-setup)">CodeQL default setup (one-click enablement)</a></td>
          <td>GitHub Advanced Security for Azure DevOps</td>
@@ -274,6 +333,18 @@ Below, you will find several investments that we plan to deliver as part of this
       <tr>          
         <td><a href="/azure/devops/release-notes/roadmap/2025/boards/improved-filter-experience-boards-backlogs" data-raw-source="[Improved Filtering Experience in Boards and Backlogs](/azure/devops/release-notes/roadmap/2025/boards/improved-filter-experience-boards-backlogs)">Improved Filtering Experience in Boards and Backlogs</a></td>
         <td>Boards</td>
+      </tr>       
+      <tr>          
+        <td><a href="/azure/devops/release-notes/2026/sprint-269-update#increased-maximum-limit-for-connected-github-repositories" data-raw-source="[Increase limit of connected GitHub repositories](/azure/devops/release-notes/2026/sprint-269-update#increased-maximum-limit-for-connected-github-repositories)">Increase limit of connected GitHub repositories</a></td>
+        <td>Boards</td>
+      </tr>
+      <tr>
+         <td><a href="/azure/devops/release-notes/2026/sprint-270-update#condensed-card-display-on-kanban-and-sprint-boards" data-raw-source="[Condensed views for kanban and sprint boards](/azure/devops/release-notes/2026/sprint-270-update#condensed-card-display-on-kanban-and-sprint-boards)">Condensed views for kanban and sprint boards</a></td>
+         <td>Boards</td>
+      </tr>
+      <tr>
+         <td><a href="/azure/devops/release-notes/roadmap/2024/stage-traceability" data-raw-source="[Stage-level traceability](/azure/devops/release-notes/roadmap/2024/stage-traceability)">Stage-level traceability</a></td>
+         <td>Pipelines</td>
       </tr>
       <tr>
         <td><a href="/azure/devops/release-notes/roadmap/2025/on-demand-execution" data-raw-source="[On-demand out of order execution of stages](/azure/devops/release-notes/roadmap/2025/on-demand-execution)">On-demand out of order execution of stages</a></td>
@@ -298,6 +369,22 @@ Below, you will find several investments that we plan to deliver as part of this
       <tr>
          <td><a href="/azure/devops/release-notes/roadmap/2026/testplans/support-for-rerunning" data-raw-source="[Support for re-running of data driven tests ](/azure/devops/release-notes/roadmap/2026/testplans/support-for-rerunning)">Support for re-running of data driven tests </a></td>
          <td>Test Plans</td>
+      </tr>      
+      <td rowspan="6"><strong>2026 Q2</strong></td>
+      <td><a href="/azure/devops/release-notes/roadmap/2025/ghazdo/default-setup" data-raw-source="[CodeQL default setup (one-click enablement)](/azure/devops/release-notes/roadmap/2025/ghazdo/default-setup)">CodeQL default setup (one-click enablement)</a></td>
+        <td>GitHub Advanced Security for Azure DevOps</td>
+      </tr>
+      <tr>
+         <td><a href="/azure/devops/release-notes/roadmap/2025/boards/improved-filter-experience-boards-backlogs" data-raw-source="[Filter by additional fields on sprint backlog and board](/azure/devops/release-notes/roadmap/2025/boards/improved-filter-experience-boards-backlogs)">Filter by additional fields on sprint backlog and board</a></td>
+         <td>Boards</td>
+      </tr>
+      <tr>
+         <td><a href="/azure/devops/release-notes/roadmap/2026/boards/pull-request-status-on-work-item-cards" data-raw-source="[Show pull request annotations on cards](/azure/devops/release-notes/roadmap/2026/boards/pull-request-status-on-work-item-cards)">Show pull request annotations on cards</a></td>
+         <td>Boards</td>
+      </tr>
+      <tr>
+         <td><a href="/azure/devops/release-notes/roadmap/2026/wiki-monaco-editor" data-raw-source="[Replace existing Wiki editor with Monaco Editor](/azure/devops/release-notes/roadmap/2026/wiki-monaco-editor)">Replace existing Wiki editor with Monaco Editor</a></td>
+         <td>Wiki</td>
       </tr>
       <tr>
          <td><a href="/azure/devops/release-notes/roadmap/2026/testplans/TFE-Improved-Reliability" data-raw-source="[Improve Reliability of Test & Feedback Extension for Edge and Chrome](/azure/devops/release-notes/roadmap/2026/testplans/TFE-Improved-Reliability)">Improve Reliability of Test & Feedback Extension for Edge and Chrome</a></td>

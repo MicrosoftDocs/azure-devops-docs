@@ -12,6 +12,11 @@
   - name: Test objects and terms
     displayName: test plan, test case, test suites, test runs, test results, test points
     href: test-objects-overview.md
+  - name: Default permissions (Security)
+    href: manual-test-permissions.md
+  expanded: true
+- name: Test plans, suites & cases
+  items:
   - name: Create test plans and test suites
     displayName: create, plan
     href: create-a-test-plan.md
@@ -23,20 +28,23 @@
   - name: Copy/clone test plans, suites, cases
     displayName: copy, clone, import, export, test plans, test suites, test cases
     href: copy-clone-test-items.md
-  - name: Bulk Import and Export Test cases (CSV/XLSX)
+  - name: Bulk import and export test cases (CSV/XLSX)
     displayName: copy, clone, import, export, test plans, test suites, test cases
     href: bulk-import-export-test-cases.md
+  - name: Store custom data in test plan or test result
+    displayName: manual test, automated, run, test runs, result, test results, custom data, custom fields
+    href: custom-fields.md
+  - name: Delete test artifacts
+    displayName: delete, artifacts
+    href: ../boards/backlogs/delete-test-artifacts.md?toc=/azure/devops/test/toc.json
+- name: Run manual tests
+  items:
   - name: Run manual tests
     displayName: manual test, run, test runs
     href: run-manual-tests.md
-  - name: Default permissions (Security)
-    href: manual-test-permissions.md
-  - name: Store custom data in test plan and/or test result
-    displayName: manual test, automated, run, test runs, result, test results, custom data, custom fields
-    href: custom-fields.md
-  expanded: true
-- name: Manual tests
-  items:
+  - name: Actual Result
+    displayName: actual result, test execution, manual test, audit
+    href: actual-result.md
   - name: Test different configurations
     displayName: configuration, testing
     href: test-different-configurations.md
@@ -52,15 +60,34 @@
   - name: Collect diagnostic data
     displayName: diagnostic, data, testing
     href: collect-diagnostic-data.md
-  - name: Delete test artifacts
-    displayName: delete, artifacts
-    href: ../boards/backlogs/delete-test-artifacts.md?toc=/azure/devops/test/toc.json.md
-  - name: Set permissions and access
-    displayName: access, permissions
-    href: ../organizations/security/set-permissions-access-test.md?toc=/azure/devops/test/toc.json
   - name: Set test retention policies
     displayName: results, logs
     href: how-long-to-keep-test-results.md
+- name: Exploratory testing
+  items:
+  - name: Install the Test & Feedback extension
+    displayName: extension, install, browser
+    href: perform-exploratory-tests.md
+  - name: Test in Connected mode
+    displayName: connected, mode, exploratory
+    href: connected-mode-exploratory-testing.md
+  - name: Test in Standalone mode
+    displayName: standalone, mode, exploratory
+    href: standalone-mode-exploratory-testing.md
+  - name: Explore work items
+    displayName: items, workitems, exploratory
+    href: explore-workitems-exploratory-testing.md
+  - name: Add to existing bugs
+    displayName: bugs, exploratory
+    href: add-to-bugs-exploratory-testing.md
+  - name: Get insights from sessions
+    displayName: insights, exploratory, sessions
+    href: insights-exploratory-testing.md
+- name: Stakeholder feedback
+  items:
+  - name: Request and provide stakeholder feedback
+    displayName: stakeholder, feedback, request, provide, voluntary, track
+    href: request-stakeholder-feedback.md
   - name: Manage test failure type
     href: manage-test-failure-type.md
 - name: Automated tests
@@ -71,8 +98,6 @@
   - name: Run automated tests from test plans
     displayName: automated, test plans, run
     href: run-automated-tests-from-test-hub.md
-- name: Request & track feedback
-  href: ../project/feedback/toc.yml
 - name: Track progress and results
   items:
   - name: Manage test runs
@@ -106,6 +131,11 @@
       href: ../pipelines/test/test-impact-analysis.md?toc=/azure/devops/test/toc.json
     - name: Flaky test management and reporting
       href: ../pipelines/test/flaky-test-management.md?toc=/azure/devops/test/toc.json
+- name: Settings & permissions
+  items:
+  - name: Set permissions and access
+    displayName: access, permissions
+    href: ../organizations/security/set-permissions-access-test.md?toc=/azure/devops/test/toc.json
 - name: Troubleshooting
   items:
   - name: Manual testing FAQs

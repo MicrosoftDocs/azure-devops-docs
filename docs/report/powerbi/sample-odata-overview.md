@@ -9,6 +9,7 @@ author: chcomley
 ms.topic: overview
 monikerRange: "<=azure-devops"
 ms.date: 04/29/2025
+ai-usage: ai-assisted
 # customer intent: As a team member, I want to become familiar with the sample queries that are available so that I can generate popular Power BI reports for services in Azure DevOps.
 ---
 
@@ -45,9 +46,9 @@ The following articles provide queries and steps for generating the sample repor
 
 All sample report articles provide the following sections and information: 
 
-- **Sample queries** - The Power BI query and raw OData query used to pull data into Power BI along with other sample queries
-- A section about transforming data in Power BI - Steps to transform the data into a reportable format by expanding columns or changing column data types
-- **Create the report** - Steps to create a basic report from the data
+- **Sample queries** - The Power BI query and raw OData query used to pull data into Power BI along with other sample queries.
+- A section about transforming data in Power BI - Steps to transform the data into a reportable format by expanding columns or changing column data types.
+- **Create the report** - Steps to create a basic report from the data.
 
 [!INCLUDE [prerequisites-simple](../includes/analytics-prerequisites-simple.md)]
 

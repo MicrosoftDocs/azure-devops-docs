@@ -3,57 +3,56 @@ ms.subservice: azure-devops-ecosystem
 title: Develop a web extension
 description: Learn how to develop your first web extension for Azure DevOps.
 ms.assetid: ae82118c-82fa-40ec-9f29-989ce981f566
-ms.custom: engagement-fy23
+ms.custom: engagement-fy23, UpdateFrequency3
 ms.topic: how-to
 monikerRange: '<= azure-devops'
 ms.author: chcomley
 author: chcomley
-ms.date: 03/20/2025
+ms.date: 04/03/2026
+ai-usage: ai-assisted
 ---
 
 # Develop a web extension
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
-Use extensions to enhance Azure DevOps with new web experiences, dashboard widgets, build tasks, and more. You can develop extensions using standard technologies like HTML, JavaScript, and CSS. This tutorial guides you through creating a web extension for Azure DevOps. 
+Use extensions to enhance Azure DevOps with new web experiences, dashboard widgets, build tasks, and more. This tutorial takes you through creating and packaging a simple web extension.
 
 > [!TIP]
-> [Explore the extension samples](../develop/samples-overview.md) and the newest documentation on extension development using the [Azure DevOps Extension SDK](https://developer.microsoft.com/azure-devops/develop/extensions).
+> For a full working reference, see the [azure-devops-extension-sample](https://github.com/Microsoft/azure-devops-extension-sample) repository.
 
 ## Prerequisites
 
 | Category | Requirements |
 |--------------|-------------|
-|**Permissions**| Owner of the organization.|
-|**Tools** |- [Node.js](https://nodejs.org)<br/>- Extension packaging tool: Run `npm install -g tfx-cli` from a command prompt, which you use to [package your extension](../publish/overview.md) later on.|
+|**Permissions**| [Organization owner](../../organizations/accounts/faq-configure-customize-organization.yml) or member of the **Project Collection Administrators** group.|
+|**Tools** |- [Node.js](https://nodejs.org) (LTS version recommended)<br/>- Extension packaging tool: Run `npm install -g tfx-cli` to install the [TFX CLI](../publish/overview.md).|
 
 ## Create a directory and manifest
 
-An extension is composed of a set of files that includes a required manifest file. You package it into a .vsix file and publish to the Visual Studio Marketplace.
+An extension is a set of files that includes a required manifest file. Package the extension into a .vsix file and publish it to the Visual Studio Marketplace.
 
-1. Create a directory to hold the files needed for your extension:
+1. Create a directory for your extension:
    
-   ```
-   mkdir my-first-extension
+   ```shell
+   mkdir my-first-extension && cd my-first-extension
    ```
 
-2. Initialize a new npm package manifest from this directory:
+1. Initialize an npm package manifest:
    
-   ```
+   ```shell
    npm init -y
    ```
 
-   This file describes the libraries required by your extension.
+1. Install the Azure DevOps Extension SDK:
 
-3. Install the Azure DevOps Extension SDK package and save it to your npm package manifest:
-
-   ```
+   ```shell
    npm install azure-devops-extension-sdk --save
    ```
 
-This SDK includes a JavaScript library that provides APIs required for communicating with the page your extension is embedded in.
+   This SDK provides APIs for communicating with the Azure DevOps host frame.
 
-4. Create an extension manifest file named `vss-extension.json` at the root of your extension directory with the following content:
+1. Create an extension manifest file named `vss-extension.json` at the root of your extension directory with the following content:
 
     ```json
     {
@@ -62,7 +61,7 @@ This SDK includes a JavaScript library that provides APIs required for communica
         "publisher": "",
         "version": "1.0.0",
         "name": "My First Extension",
-        "description": "A sample Visual Studio Services extension",
+        "description": "A sample Azure DevOps extension",
         "public": false,
         "categories": ["Azure Repos"],
         "targets": [
@@ -98,9 +97,9 @@ This SDK includes a JavaScript library that provides APIs required for communica
     ```
 
    > [!IMPORTANT]
-   > The `public` property controls whether the extension is visible to everyone on the Visual Studio Marketplace. Keep your extensions private during development.
+   > Set the `publisher` field to your [Marketplace publisher ID](../publish/overview.md). The `public` property controls whether the extension is visible to everyone on the Visual Studio Marketplace. Keep your extensions private during development.
 
-5. Create a file named `my-hub.html` at the root of your extension directory with the following content, which is for the view (also known as a hub) contributed into the web experience.
+1. Create a file named `my-hub.html` at the root of your extension directory with the following content. This HTML page is the view (hub) contributed into the Azure DevOps web experience.
 
     ```html
     <!DOCTYPE html>
@@ -115,16 +114,10 @@ This SDK includes a JavaScript library that provides APIs required for communica
                 }
             });
             window.requirejs(['SDK'], function (SDK) {
-                if (typeof SDK !== 'undefined') {
-                    console.log("SDK is defined. Trying to initialize...");
-                    SDK.init();
-                    SDK.ready().then(() => {
-                        console.log("SDK is ready");
-                        document.getElementById("name").innerText = SDK.getUser().displayName;
-                    });
-                } else {
-                    console.log('SDK is not defined');
-                }
+                SDK.init();
+                SDK.ready().then(function () {
+                    document.getElementById("name").innerText = SDK.getUser().displayName;
+                });
             });
         </script>
         <style>
@@ -142,7 +135,10 @@ This SDK includes a JavaScript library that provides APIs required for communica
     </html>
     ```
 
-6. Your extension directory should look like the following example.
+    > [!NOTE]
+    > This example uses RequireJS to load the SDK, which works without a build step. For production extensions, use a bundler like [webpack](https://webpack.js.org/) with ES module imports (`import * as SDK from "azure-devops-extension-sdk"`) for better performance. See the [extension sample](https://github.com/Microsoft/azure-devops-extension-sample) for a webpack-based setup.
+
+1. Your extension directory should look like the following example.
 
     ```
     |-- my-hub.html

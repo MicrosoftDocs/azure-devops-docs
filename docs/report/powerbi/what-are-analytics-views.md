@@ -8,7 +8,8 @@ ms.author: chcomley
 author: chcomley
 ms.topic: overview
 monikerRange: "<=azure-devops"
-ms.date: 03/12/2025
+ms.date: 04/07/2026
+ai-usage: ai-assisted
 #customer intent: As a team member using Azure Boards, I want to understand how to visualize work items from Azure DevOps by using Power BI.
 ---
 
@@ -18,11 +19,11 @@ ms.date: 03/12/2025
 
 <!--- Supports https://go.microsoft.com/fwlink/?linkid=865481  --> 
 
-An *Analytics view* provides a simplified way to specify the filter criteria for a Power BI report based on Analytics data. Analytics views support Azure Boards data. Each view corresponds to a flat-list of work items. Work item hierarchies aren't supported.
+An *Analytics view* provides a simplified way to specify the filter criteria for a Power BI report based on Analytics data. Analytics views support Azure Boards data. Each view corresponds to a flat list of work items. Work item hierarchies aren't supported.
 
 [!INCLUDE [analytics views warning](includes/analytics-views-warning.md)]
 
-You can use a default Analytics view or [create a custom view](analytics-views-create.md). Create custom views in the web portal for Azure DevOps. After you define a view that supports the data of interest, you can then open the view using [Power BI Data Connector](data-connector-connect.md) to create a report. 
+You can use a default Analytics view or [create a custom view](analytics-views-create.md). Create custom views in the web portal for Azure DevOps. After you define a view that supports the data of interest, you can open the view by using [Power BI Data Connector](data-connector-connect.md) to create a report. 
 
 ## Prerequisites
 
@@ -34,7 +35,7 @@ Users with Stakeholder access don't have access to view or edit Analytics views.
 
 ## Default Analytics views
 
-Azure DevOps provides default Analytics views. The default views are immediately accessible from Power BI. The view you select determines the set of records, fields, and history to pull into Power BI.
+Azure DevOps provides default Analytics views. You can access the default views directly from Power BI. The view you select determines the set of records, fields, and history that Power BI pulls in.
 
 The following screenshot shows the default views created for a project based on the Agile process. For more information, see [Manage Analytics views](analytics-views-manage.md).
 
@@ -42,39 +43,7 @@ The following screenshot shows the default views created for a project based on 
 
 [!INCLUDE [labels for default analytics differences](../includes/analytics-image-differences.md)]
 
-When you use the Power BI Data Connector, these same default views appear in the Navigator dialog. The view you select determines the set of records, fields, and history that is loaded into Power BI.
-
-::: moniker range="azure-devops"
-
-1. Select **Azure DevOps** as your data connector.
-
-   :::image type="content" source="./media/get-data-connector.png" alt-text="Screenshot shows the Get Data dialog box where you can select Azure DevOps.":::
-
-1. Enter your account information.
-
-   :::image type="content" source="./media/enter-account.png" alt-text="Screenshot shows the Azure DevOps dialog box where you can enter your organization and project.":::
-
-1. Select the data that you want to use.
-
-   :::image type="content" source="./media/navigator-select-data.png" alt-text="Screenshot shows the Navigator dialog box where you can select the data to pull into Power BI Desktop.":::
-
-::: moniker-end
-
-::: moniker range="<azure-devops"
-
-1. Select **Azure DevOps Server** as your data connector.
-
-   :::image type="content" source="./media/get-data-server-connector.png" alt-text="Screenshot shows the Get Data dialog box where you can select Azure DevOps Server.":::
-
-1. Enter your server information.
-
-   :::image type="content" source="./media/enter-server.png" alt-text="Screenshot shows the Azure DevOps Server dialog box where you can enter your URL and project.":::
-
-1. Select the data that you want to use.
-
-   :::image type="content" source="./media/navigator-select-data.png" alt-text="Screenshot shows the Navigator dialog box where you can select the data to pull into Power BI Desktop.":::
-
-::: moniker-end
+When you use the Power BI Data Connector, these same default views appear in the Navigator dialog. The view you select determines the set of records, fields, and history that loads into Power BI. For more information, see [Connect Analytics with Power BI Data Connector](data-connector-connect.md).
 
 ### Options for work item types and historical data
 
@@ -116,9 +85,9 @@ For more information, see [Create an Analytics view](./analytics-views-create.md
 
 ## Common reportable fields
 
-Default views automatically include the most common fields for the included work item types used for reporting. All custom fields are included.
+Default views automatically include the most common fields for the included work item types used for reporting. They include all custom fields.
 
-For example, the following fields are included when filtered for bugs and work items. You can look up the description of most of these fields from the [Entities and properties reference for Azure Boards](../analytics/entity-reference-boards.md) or [Work item field index](../../boards/work-items/guidance/work-item-field.md).  
+For example, when you filter for bugs and work items, the following fields are included. You can look up the description of most of these fields in the [Entities and properties reference for Azure Boards](../analytics/entity-reference-boards.md) or the [Work item field index](../../boards/work-items/guidance/work-item-field.md).  
 
 - Area Path
 - Assigned To
@@ -130,7 +99,7 @@ For example, the following fields are included when filtered for bugs and work i
 - Work Item ID
 - Work Item Type
 
-Two fields that are reported on are only available from Analytics data: *Cycle Time Days* and *Lead Time Days*. For more information about how these days are calculated, see [Lead time versus cycle time](../dashboards/cumulative-flow-cycle-lead-time-guidance.md#lead-time-versus-cycle-time).
+Two fields that the report includes are only available from Analytics data: *Cycle Time Days* and *Lead Time Days*. For more information about how these days are calculated, see [Lead time versus cycle time](../dashboards/cumulative-flow-cycle-lead-time-guidance.md#lead-time-versus-cycle-time).
 
 For more information on how the dataset is modeled when you use the Power BI Data Connector, see [Analytics views dataset design](data-connector-dataset.md).
 
@@ -141,7 +110,7 @@ For more information on how the dataset is modeled when you use the Power BI Dat
 > [!div class="nextstepaction"]
 > [Create an Analytics view](analytics-views-create.md) 
 
-These articles provide more information:
+For more information, see the following articles:
 
 - [Manage Analytics views](analytics-views-manage.md)
 - [Create a Power BI report with a default Analytics view](create-quick-report.md)

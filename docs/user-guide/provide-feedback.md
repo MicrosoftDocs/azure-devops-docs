@@ -1,14 +1,14 @@
 ---
-title: Get support and provide feedback
+title: Get support and submit feedback
 titleSuffix: Azure DevOps
-description: Guide to providing product and content feedback, and accessing support resources in Azure DevOps.
+description: "Azure DevOps support: Access resources, report issues, and provide feedback to improve your experience. Get help, suggest features, or contact support now."
 ms.subservice: azure-devops-new-user
-ms.assetid: 8A725F33-19F1-4964-BD5C-E1FB92F02B6E
-ms.custom: peer-review-program
+ms.custom: peer-review-program, UpdateFrequency3
 ms.author: chcomley
+ms.reviewer: chcomley
 author: chcomley
 ms.topic: troubleshooting
-ms.date: 02/21/2025
+ms.date: 04/02/2026
 monikerRange: '<= azure-devops'
 ---
 
@@ -22,22 +22,22 @@ This article helps you access support resources and provide feedback for Azure D
 
 | Action | More info |
 |---------|---------|
-| [**Contact Support**](https://azure.microsoft.com/support/create-ticket/) | In the Microsoft Azure portal, create a support request, briefly describe the issue to get to solutions and support, and then follow the prompts for additional details.<br>:::image type="content" source="media/provide-feedback/azure-portal-support-troubleshooting.png" alt-text="Screenshot shows Help and support page in Azure portal with button selections."::: |
-| [**Get Virtual Agent support**](https://go.microsoft.com/fwlink/?linkid=2160944) | Chat with our Virtual Agent to get help with common issues, including user management, organization-level configuration and management, sign-in issues, geography moves, and more. |
-|**Troubleshoot access issues** |- [Collect an HTTP Archive (HAR) trace](capture-browser-trace.md) sign-in issues via Microsoft Edge or Google Chrome.<br>- [Troubleshoot access and permissions issues](../organizations/security/troubleshoot-permissions.md).<br>- View [user and permissions management FAQs](../organizations/accounts/faq-user-and-permissions-management.yml).<br>- View [Microsoft Entra access FAQs](../organizations/accounts/faq-azure-access.yml).|
+| [**Contact Support**](https://azure.microsoft.com/support/create-ticket/) | In the Microsoft Azure portal, create a support request. Briefly describe the issue to get to solutions and support, and then follow the prompts for additional details.<br>:::image type="content" source="media/provide-feedback/azure-portal-support-troubleshooting.png" alt-text="Screenshot shows Help and support page in Azure portal with button selections."::: |
+| [**Get Virtual Agent support**](https://go.microsoft.com/fwlink/?linkid=2160944) | Chat with the Virtual Agent to get help with common issues, including user management, organization-level configuration and management, sign-in problems, geography moves, and more. |
+|**Troubleshoot access problems** |- [Collect an HTTP Archive (HAR) trace](capture-browser-trace.md) for sign-in problems via Microsoft Edge or Google Chrome.<br>- [Troubleshoot access and permissions problems](../organizations/security/troubleshoot-permissions.md).<br>- View [user and permissions management FAQs](../organizations/accounts/faq-user-and-permissions-management.yml).<br>- View [Microsoft Entra access FAQs](../organizations/accounts/faq-azure-access.yml).|
 | **Report a bug or problem** | Report a problem via the Developer Community, which is an open channel to Microsoft engineering teams:<br>- [Azure DevOps Services](https://developercommunity.visualstudio.com/AzureDevOps)<br>- [Azure DevOps Server](https://developercommunity.visualstudio.com/AzureDevOpsServerTFS) |
 | **Suggest a feature**|  Submit your suggestion via the Developer Community, which is an open channel to Microsoft engineering teams:<br>- [Azure DevOps Services](https://developercommunity.visualstudio.com/AzureDevOps)<br>- [Azure DevOps Server](https://developercommunity.visualstudio.com/AzureDevOpsServerTFS) |
-|[**Contact your project administrator**](../organizations/security/look-up-project-administrators.md) | Contact your project administrator for assistance with access issues, permission changes, project configuration, resource allocation, or troubleshooting. |
-| **Get advice** | Get advice from developers via StackOverflow:<br>- [Azure DevOps Services](https://stackoverflow.com/questions/tagged/vsts)<br>- [Azure DevOps Server](https://stackoverflow.com/questions/tagged/tfs) |
-| [**Report security flaws**](https://www.microsoft.com/msrc/faqs-report-an-issue?rtc=1) | Report potential security issues to ensure the safety and integrity of the system. |
+|[**Contact your project administrator**](../organizations/security/look-up-project-administrators.md) | Contact your project administrator for assistance with access problems, permission changes, project configuration, resource allocation, or troubleshooting. |
+| **Get advice** | Get advice from developers via Stack Overflow:<br>- [Azure DevOps Services](https://stackoverflow.com/questions/tagged/azure-devops)<br>- [Azure DevOps Server](https://stackoverflow.com/questions/tagged/azure-devops-server) |
+| [**Report security flaws**](https://www.microsoft.com/msrc/faqs-report-an-issue?rtc=1) | Report potential security problems to ensure the safety and integrity of the system. |
 | [**View Release Notes**](/azure/devops/release-notes/features-timeline-released) | Check out what's new in Azure DevOps Release Notes, which get updated every three weeks. |
 
 ## Tips for effective feedback
 
-If you want to vent about the product or the documentation, that's okay. It helps us know when you're happy or unhappy with an experience. Provide the following details so we can better understand what we're doing right or wrong:
+If you want to vent about the product or the documentation, that's okay. It helps the product team know when you're happy or unhappy with an experience. Provide the following details so the team can better understand what they're doing right or wrong:
 
 * **Provide context**. What problem were you trying to solve? At what point did it go wrong?
-* **Include your role**. Are you a developer, manager, or business owner? Understanding our audience helps us create better solutions.
+* **Include your role**. Are you a developer, manager, or business owner? Understanding the audience helps the product team create better solutions.
 * **Include your product version**. What other products were you using with it?
 
 ### Give product feedback

@@ -9,14 +9,15 @@ ms.custom: powerbisample, engagement-fy23
 author: chcomley
 ms.topic: sample
 monikerRange: "<=azure-devops"
-ms.date: 12/14/2022
+ms.date: 04/07/2026
+ai-usage: ai-assisted
 ---
 
 # Pipeline task duration sample report 
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)] 
 
-How long does it take different tasks to complete? This article provides the queries from which you can generate a report for a specific pipeline and its tasks. For example, the following image lists the 50th, 80th, and 95th percentile in seconds for all tasks completed for a specific pipeline from September 1 to December 15, 2022.   
+How long does it take different tasks to complete? This article provides the queries you can use to generate a report for a specific pipeline and its tasks. For example, the following image lists the 50th, 80th, and 95th percentile in seconds for all tasks completed for a specific pipeline.   
 
 :::image type="content" source="media/pipeline-reports/task-duration-table-report.png" alt-text="Screenshot of Power BI Pipelines task duration table trend report."::: 
 
@@ -28,7 +29,7 @@ How long does it take different tasks to complete? This article provides the que
 
 ## Sample queries
 
-You query the `PipelineRunActivityResults?` entity set to return task duration information.  
+Query the `PipelineRunActivityResults?` entity set to return task duration information.  
 
 [!INCLUDE [temp](includes/query-filters-pipelines.md)]
 
@@ -192,7 +193,7 @@ The following table describes each part of the query.
    `(TaskDuration50thPercentileInSeconds, TaskDuration80thPercentileInSeconds,TaskDuration95thPercentileInSeconds, TaskDisplayName))`
    :::column-end:::
    :::column span="1":::
-   Group by task of pipeline run and calculated day wise 50th percentile task duration, 80th percentile task duration, and 95th percentile task duration. 
+   Group by task name and the computed 50th, 80th, and 95th percentile task duration values.
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -200,7 +201,7 @@ The following table describes each part of the query.
    `&$orderby=TaskDuration50thPercentileInSeconds desc`
    :::column-end:::
    :::column span="1":::
-   Order the response by task having highest 50th percentile duration. 
+   Order the response by the task with the highest 50th percentile duration.
    :::column-end:::
 :::row-end:::
 
@@ -208,16 +209,17 @@ The following table describes each part of the query.
 
 ### Change column data type
  
-From the **Transform** menu change the data type for the following columns to `Decimal Number**.` To learn how, see [Transform a column data type](transform-analytics-data-report-generation.md#transform-data-type).   
-	- `TaskDuration80thPercentileInSeconds`
-	- `TaskDuration80thPercentileInSeconds`
-	- `TaskDuration95thPercentileInSeconds`.
+From the **Transform** menu, change the data type for the following columns to **Decimal Number**. To learn how, see [Transform a column data type](transform-analytics-data-report-generation.md#transform-data-type).
+
+- `TaskDuration50thPercentileInSeconds`
+- `TaskDuration80thPercentileInSeconds`
+- `TaskDuration95thPercentileInSeconds`
  
 <a id="rename"></a>
 
 ## (Optional) Rename column fields
 
-You can rename column fields. For example, you can rename the following columns so that they are more display-friendly. 
+You can rename column fields. For example, you can rename the following columns so that they're more display-friendly. 
 To learn how, see [Rename column fields](transform-analytics-data-report-generation.md#rename-column-fields). 
 
 | Original field name |  Renamed field |
@@ -231,11 +233,11 @@ To learn how, see [Rename column fields](transform-analytics-data-report-generat
 
 ## Create the Table report 
 
-1. In Power BI, under **Visualizations**, choose the **Table** report. Fields have been renamed as indicated in [Rename column fields](#rename) section.
+1. In Power BI, under **Visualizations**, select the **Table** report. Rename fields as described in the [Rename column fields](#rename) section.
 
 	:::image type="content" source="media/pipeline-reports/task-duration-table-visualizations.png" alt-text="Screenshot of visualization fields selections for task duration table report. ":::
 
-1. Add the following fields to the Columns in the order specified. 
+1. Add the following fields to the Columns in the order specified: 
 	- **Task Name** 
 	- **50th Percentile**  
 	- **80th Percentile**   
@@ -250,4 +252,3 @@ The following image shows a portion of the resulting report.
 ## Related articles
 
 [!INCLUDE [temp](includes/sample-related-articles-pipelines.md)]
-

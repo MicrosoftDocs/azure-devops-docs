@@ -9,6 +9,7 @@ author: chcomley
 ms.topic: tutorial
 monikerRange: "<=azure-devops"
 ms.date: 02/07/2023
+ai-usage: ai-assisted
 ---
 
 # Create an active bugs report in Power BI based on a custom Analytics view
@@ -112,31 +113,9 @@ Choose **Save** to move to the next tab in the panel. If you need to revisit a t
 
 ## Open Power BI desktop and load your view 
 
-1. Open Power BI Desktop.  
+[!INCLUDE [connect to an analytics view](../includes/connect-analytics-view.md)]
 
-::: moniker range="azure-devops"  
-2. Choose (1) **Get Data** and select **More...**, (2) **Online Services**, (3) **Azure DevOps (Boards only)**, and then (4) **Connect**. 
-
-    > [!div class="mx-imgBorder"]
-    > ![Screenshot of Power BI, Connect to Azure DevOps (Boards only).](media/create-report/get-data-analytics-view.png)
-
-3. Enter your organization name, the same Azure DevOps name you used to create the Active Bugs view, and the same project for which you defined the Active Bugs view. 
-
-	:::image type="content" source="media/create-report/specify-account.png" alt-text="Dialog to enter Azure DevOps Organization and project name.":::
-::: moniker-end
-
-::: moniker range="<azure-devops"
-2. Choose (1) **Get Data** and select **More...**, (2) **Online Services**, (3) **Azure DevOps Server (Boards only)**, and then (4) **Connect**.  
-
-    > [!div class="mx-imgBorder"]
-    > ![Screenshot of Power BI, Connect to Azure DevOps Server (Boards only).](media/create-report/get-data-analytics-view-on-premises.png)
-
-3. Enter the URL for your server and collection, the same project for which you defined the Active Bugs view. 
-
-	:::image type="content" source="media/create-report/specify-collection-project.png" alt-text="Screenshot of Power BI, Dialog to enter Azure DevOps Project Collection and project name.":::
-::: moniker-end
-
-4. Expand the folders as needed, and choose the **Active Bugs** view you saved in the previous section, and then select **Load**. 
+1. Expand the folders as needed, and choose the **Active Bugs** view you saved in the previous section, and then select **Load**. 
 
 	:::image type="content" source="media/active-bugs-report/choose-view.png" alt-text="Screenshot of Power BI, Dialog of Navigator to choose Analytics view. ":::
 

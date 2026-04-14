@@ -20,9 +20,11 @@ zone_pivot_groups: configure-cli
 
 [!INCLUDE [version-eq-azure-devops](../includes/version-eq-azure-devops.md)] 
 
-If you want to use Azure DevOps CLI with a YAML pipeline, you can use the Azure DevOps extension or use the [AzureCLI task](/azure/devops/pipelines/tasks/reference/azure-cli-v2). The Microsoft-hosted Windows and Linux agents are preconfigured with Azure CLI and the Azure DevOps CLI extension. The Azure DevOps CLI extension runs `az devops` commands. 
+[!INCLUDE [feature-rollout](../includes/feature-rollout.md)]
 
-You can authenticate with either a PAT or you can use the [AzureCLI@2 task](/azure/devops/pipelines/tasks/reference/azure-cli-v2) with a service connection. Using a service connection is the more secure option because you won't need to manually manage credentials.
+Azure DevOps CLI lets you manage Azure DevOps resources from the command line. Run CLI commands in a YAML pipeline with the [AzureCLI@3 task](/azure/devops/pipelines/tasks/reference/azure-cli-v3) to automate common DevOps tasks as part of your CI/CD workflow. Microsoft-hosted Windows and Linux agents already include Azure CLI and the Azure DevOps CLI extension.
+
+For authentication, use an [Azure DevOps service connection](../pipelines/library/service-endpoints.md) backed by Microsoft Entra workload identity federation. We recommend this approach because it eliminates credential management. Use a personal access token (PAT) only when a service connection isn't available.
 
 
 ::: zone pivot="pat"  
@@ -33,7 +35,7 @@ Some Azure DevOps CLI commands, like `az devops configure` and `az devops --help
 
 You can authenticate using the [System.AccessToken](../pipelines/build/variables.md#systemaccesstoken) security token used by the running pipeline, by assigning it to an environment variable named `AZURE_DEVOPS_EXT_PAT`, as shown in the following example.
 
-Using `System.AccessToken` relies on having a PAT. As a more secure alternative, you can use the AzureCLI@2 task to populate a service connection.
+Using `System.AccessToken` relies on having a PAT. As a more secure alternative, use a service connection. For setup guidance, see [Manage service connections](../pipelines/library/service-endpoints.md).
 
 # [Bash](#tab/bash)
 
@@ -190,12 +192,8 @@ strategy:
       imageName: "macos-15"
     mac14:
       imageName: "macos-14"
-    mac13:
-      imageName: "macos-13"
     windows2025:
       imageName: "windows-2025"
-    windows2022:
-      imageName: "windows-2022"
   maxParallel: 3
 
 pool:
@@ -487,12 +485,14 @@ steps:
 
 ## Authenticate with a service connection 
 
-When you use a service connection, the service connection provides the necessary credentials for Azure CLI and Azure DevOps CLI commands in the AzureCLI@2 task without requiring manual credential management in the pipeline.
+When you use a service connection, the service connection provides the necessary credentials for Azure CLI and Azure DevOps CLI commands in the AzureCLI@3 task without requiring manual credential management in the pipeline.
 
 > [!NOTE]
-> When you use a service connection for authentication with `AzureCLI@2`, you need to [manually add the service principal to your Azure DevOps organization](../integrate/get-started/authentication/service-principal-managed-identity.md#step-2-add-the-identity-to-azure-devops). 
+> When you use a service connection for authentication with `AzureCLI@3`, you need to [manually add the service principal to your Azure DevOps organization](../integrate/get-started/authentication/service-principal-managed-identity.md#step-2-add-the-identity-to-azure-devops). 
+>
+> For PAT-free guidance and service-connection best practices, see [Manage service connections](../pipelines/library/service-endpoints.md).
 
-This code sample defines a new parameter, `serviceConnection`, with the name of an existing service connection. That parameter is referenced in the `AzureCLI@2` task. The task lists all projects (`az devops project list`) and pools (`az pipelines pool list`). 
+This code sample defines a new parameter, `serviceConnection`, with the name of an existing service connection. That parameter is referenced in the `AzureCLI@3` task. The script uses a secret-less connection to call a REST endpoint, then lists projects and pools.
 
 ```yml
 trigger:
@@ -500,33 +500,32 @@ trigger:
 
 parameters:
 - name: serviceConnection
-  displayName: Azure Service Connection Name
+  displayName: Azure DevOps Service Connection Name
   type: string
   default: my-service-connection
 
 steps:
-  - task: AzureCLI@2
-    condition: succeededOrFailed()
-    displayName: 'Azure CLI -> DevOps CLI'
+  - task: AzureCLI@3
+    displayName: Secret-less
     inputs:
-      azureSubscription: '${{ parameters.serviceConnection }}'
-      scriptType: pscore
-      scriptLocation: inlineScript
+      connectionType: 'azureDevOps'
+      azureDevOpsServiceConnection: '${{ parameters.serviceConnection }}'
+      scriptType: 'pscore'
+      scriptLocation: 'inlineScript'
       inlineScript: |
-        Write-Host "Using logged-in Azure CLI session..."
-        Write-Host "$($PSStyle.Formatting.FormatAccent)az devops configure$($PSStyle.Reset)"
-        az devops configure --defaults organization=$(System.CollectionUri) project=$(System.TeamProject)
+        az rest --method get `
+                --url "https://status.dev.azure.com/_apis/status/health?api-version=7.1-preview.1" `
+                --resource 499b84ac-1321-427f-aa17-267ca6975798 `
+                --query "sort_by(services[?id=='Pipelines'].geographies | [], &name)" `
+                -o table
+
         az devops configure -l
 
-        Write-Host "`nUse Azure DevOps CLI (az devops) to list projects in the organization '$(System.CollectionUri)'..."
-        Write-Host "$($PSStyle.Formatting.FormatAccent)az devops project list$($PSStyle.Reset)"
         az devops project list --query "value[].{Name:name, Id:id}" `
-                               -o table
-   
-        Write-Host "`nUse Azure DevOps CLI (az pipelines) to list pools in the organization '$(System.CollectionUri)'..."
-        Write-Host "$($PSStyle.Formatting.FormatAccent)az pipelines pool list$($PSStyle.Reset)"
+                              -o table
+
         az pipelines pool list --query "[].{Id:id, Name:name}" `
-                               -o table
+                              -o table
       failOnStandardError: true
 ```
 
@@ -543,36 +542,32 @@ variables:
 
 parameters:
 - name: serviceConnection
-  displayName: Azure Service Connection Name
+  displayName: Azure DevOps Service Connection Name
   type: string
   default: my-service-connection
 
 steps:
-  - task: AzureCLI@2
-    condition: succeededOrFailed()
-    displayName: 'Azure CLI -> DevOps CLI'
+  - task: AzureCLI@3
+    displayName: Set variable group ID
     inputs:
-      azureSubscription: '${{ parameters.serviceConnection }}'
-      scriptType: pscore
-      scriptLocation: inlineScript
+      connectionType: 'azureDevOps'
+      azureDevOpsServiceConnection: '${{ parameters.serviceConnection }}'
+      scriptType: 'pscore'
+      scriptLocation: 'inlineScript'
       inlineScript: |
-        Write-Host "Using logged-in Azure CLI session..."
-        Write-Host "$($PSStyle.Formatting.FormatAccent)az devops configure$($PSStyle.Reset)"
-        az devops configure --defaults organization=$(System.CollectionUri) project=$(System.TeamProject)
         az devops configure -l
 
         $id = az pipelines variable-group list --group-name kubernetes --query [].id -o tsv
         Write-Host "##vso[task.setvariable variable=variableGroupId]$id"
 
-  - task: AzureCLI@2
-    condition: succeededOrFailed()
-    displayName: 'Azure CLI -> DevOps CLI'
+  - task: AzureCLI@3
+    displayName: List variable group variables
     inputs:
-      azureSubscription: '${{ parameters.serviceConnection }}'
-      scriptType: pscore
-      scriptLocation: inlineScript
+      connectionType: 'azureDevOps'
+      azureDevOpsServiceConnection: '${{ parameters.serviceConnection }}'
+      scriptType: 'pscore'
+      scriptLocation: 'inlineScript'
       inlineScript: |
-        Write-Host "Using logged-in Azure CLI session..."
         az pipelines variable-group variable list --group-id '$(variableGroupId)'
 ```
 
@@ -585,6 +580,7 @@ For more examples of working with variables, including working with variables ac
 
 - [System.AccessToken](../pipelines/build/variables.md#systemaccesstoken)
 - [Access repositories, artifacts, and other resources](../pipelines/process/access-tokens.md)
+- [Manage service connections](../pipelines/library/service-endpoints.md)
 - [Define variables](../pipelines/process/variables.md)
 - [Azure DevOps CLI extension reference](/cli/azure/devops)
 - [Azure DevOps CLI extension az pipelines reference](/cli/azure/pipelines)

@@ -150,25 +150,7 @@ Select **Close & Apply** to load the data into Power BI. You can now build visua
 
 For a step-by-step example, see [Create a Power BI report with an OData query](create-quick-report-odataq.md).
 
-::: moniker range="azure-devops"
-
-<a id="use-ai-assistance"></a>
-
-## Use AI to write OData queries for Power BI
-
-If you configure the [Azure DevOps MCP Server](/azure/devops/mcp-server/mcp-server-overview), you can use AI assistants to help write, test, and troubleshoot OData queries.
-
-### Example prompts
-
-| Task | Example prompt |
-|------|----------------|
-| Write a basic query | `Write an OData query that returns the top 20 active bugs with title, state, and assigned-to for <Contoso> project` |
-| Add server-side aggregation | `Create an OData query that counts work items by state and work item type using $apply in <Contoso> project` |
-| Filter by date range | `Write an OData query that returns work items created in the last 14 days in <Contoso> project` |
-| Optimize query performance | `My OData query is slow in Power BI — help me add server-side filtering and aggregation to reduce the dataset for <Contoso> project` |
-| Format for Power BI | `Convert this multiline OData query into the Power BI Advanced Editor M-query format with ODataOmitValues.Nulls` |
-
-::: moniker-end
+[!INCLUDE [odata-ai-assistance](includes/odata-ai-assistance.md)]
 
 ## Related content
 
