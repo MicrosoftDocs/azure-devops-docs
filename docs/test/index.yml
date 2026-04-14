@@ -56,6 +56,8 @@ landingContent:
         links:
           - text: Run manual tests
             url: run-manual-tests.md
+          - text: Record actual results
+            url: actual-result.md
           - text: Test different configurations
             url: test-different-configurations.md
           - text: Repeat a test with different data
