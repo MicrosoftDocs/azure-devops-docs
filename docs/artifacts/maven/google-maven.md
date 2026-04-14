@@ -93,7 +93,7 @@ After installing a package from an upstream source, you can confirm that Azure A
 
 1. The *Multipaz* package that you installed in the previous section is now available in your feed. Azure Artifacts automatically saved a copy when you ran the mvn install command.
  
-    :::image type="content" source="media/multipaz-package-saved-from-upstream.png" alt-text="A screenshot showing the Multipaz package from the Google Maven Repository saved to the feed." lightbox="media/multipaz-package-saved-from-upstream.png":::
+    :::image type="content" source="media/package-saved-from-google-maven-repository-upstream.png" alt-text="A screenshot showing the Multipaz package from the Google Maven Repository saved to the feed." lightbox="media/package-saved-from-google-maven-repository-upstream.png":::
 
 > [!TIP]
 > If Maven does not download all dependencies, run the following command from the project directory to regenerate project files and download sources and Javadocs:
