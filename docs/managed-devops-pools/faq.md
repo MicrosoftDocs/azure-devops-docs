@@ -1,7 +1,7 @@
 ---
 title: Frequently asked questions
 description: Learn the answers to frequently asked questions for Managed DevOps Pools.
-ms.date: 04/14/2026
+ms.date: 04/15/2026
 ms.topic: faq
 ---
 
@@ -47,6 +47,8 @@ No, VM Reservations don't apply to Managed DevOps Pool instances.
 ## Can I use Azure Hybrid Benefit with Managed DevOps Pools?  
 
 No, [Azure Hybrid Benefit](/azure/virtual-machines/windows/hybrid-use-benefit-licensing) can't be used with Managed DevOps Pool instances.
+
+Azure Hybrid Benefit works with your subscription, and Managed DevOps Pool uses a *hosted on behalf of* architecture, which means that the virtual machines that host your Managed DevOps Pools agents exist in a subscription owned by Microsoft. Since these virtual machines are not part of your subscription, they are not eligible for Azure Hybrid Benefit.
 
 ## Does Managed DevOps Pools have an Azure Verified Module?
 
