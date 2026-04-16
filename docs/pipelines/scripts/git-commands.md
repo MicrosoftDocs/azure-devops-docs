@@ -17,7 +17,7 @@ Git commands are available for build workflows on [Microsoft-hosted](../agents/h
 <a name="enable"></a>
 ## Enable scripts to run Git commands
 
-Make sure GitHub uses your Azure DevOps account's default identity. If necessary, set the GitHub user as the first step after checkout.
+Make sure Git uses your Azure DevOps account's default identity. If necessary, set the Git user as the first step after checkout.
 
 ```
 git config --global user.email "you@example.com"
