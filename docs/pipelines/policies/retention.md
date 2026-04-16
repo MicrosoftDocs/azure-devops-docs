@@ -76,8 +76,6 @@ Using retention policies, you can control **how many days** you want to keep eac
     * Set the number of days to keep [runs](../process/runs.md)
     * Set the number of days to keep pull request [runs](../process/runs.md)
     * Set the number of recent [runs](../process/runs.md) to keep for each pipeline
-   
-   
 ::: moniker-end
 
 ::: moniker range="azure-devops"
@@ -93,7 +91,7 @@ Using retention policies, you can control **how many days** you want to keep eac
 The setting for number of recent runs to keep for each pipeline requires a little more explanation. The interpretation of this setting varies based on the type of repository you build in your pipeline.
 
 - **Azure Repos:** Azure Pipelines retains the configured number of latest runs for the [pipeline's default branch](../process/pipeline-default-branch.md) and for each protected branch of the repository. A branch that has any branch policies configured is considered to be a protected branch.
-Only latest successful or partially succeeded pipeline runs are retained. If deployment to only specific environment or stage succeeded, the run is not retained.
+Only pipeline runs whose overall result is **Successful** or **Partially succeeded** are retained. Runs where deployments succeed in only certain environments or stages, and the overall run result is not **Successful** or **Partially succeeded**, are not retained.
  
     As an example, consider a repository with two branches, `main` and `release`. Imagine the `pipeline's default branch` is the `main` branch, and the `release` branch has a branch policy, making it a protected branch. In this case, if you configured the policy to retain three runs, then both the latest three runs of `main` and the latest three runs of the `release` branch are retained. In addition, the latest three runs of this pipeline (irrespective of the branch) are also retained.
 
@@ -114,13 +112,8 @@ Only latest successful or partially succeeded pipeline runs are retained. If dep
 
 
     Further, the number of days to retain is calculated from when the run is completed. For example, there are two runs on a main branch on Jan 19th. The run that completed later is retained.
-   
-    <img width="700" height="267" alt="Screenshot 2026-03-26 095010" src="https://github.com/user-attachments/assets/d43056cc-649b-40b5-a66a-3ad8252d5d22" />
 
-
-
-
-
+:::image type="content" source="media/retention-run-completion-time.png" alt-text="Example of pipeline run retention where, for two runs on the same day, the run that completed later is retained.":::
 - **All other Git repositories:** Azure Pipelines retains the configured number of latest runs for the whole pipeline.
 
 - **TFVC:** Azure Pipelines retains the configured number of latest runs for the whole pipeline, irrespective of the branch.
