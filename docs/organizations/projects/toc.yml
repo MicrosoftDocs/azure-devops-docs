@@ -66,3 +66,6 @@
   - name: Change project to public or private
     href: make-project-public.md
     displayname: public, project, private, visibility, access
+  - name: Migrate from a public project to GitHub
+    href: migrate-public-project.md
+    displayname: public, project, retirement, migrate, GitHub

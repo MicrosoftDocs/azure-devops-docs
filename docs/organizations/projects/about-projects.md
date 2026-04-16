@@ -118,6 +118,8 @@ You might want to add another project in the following instances:
 
 ## Use private and public projects
 
+[!INCLUDE [public-projects-retirement](includes/public-projects-retirement.md)]
+
 You can have both private and public projects. You can also [change the visibility of a project from either one to the other](make-project-public.md).
 
 **Private projects**:

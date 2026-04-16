@@ -15,6 +15,8 @@ ms.date: 08/27/2025
 
 [!INCLUDE [version-eq-azure-devops](../../includes/version-eq-azure-devops.md)]  
 
+[!INCLUDE [public-projects-retirement](includes/public-projects-retirement.md)]
+
 Learn how to change the visibility of your Azure DevOps project between public and private, and understand the security and access implications of each visibility setting.
 
 [!INCLUDE [allow-public-project-policy](includes/allow-public-project-policy.md)]
