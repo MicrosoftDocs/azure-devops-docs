@@ -9,6 +9,7 @@ ms.author: chcomley
 author: chcomley
 monikerRange: "<=azure-devops"
 ms.date: 02/17/2026
+ai-usage: ai-assisted
 #customer intent: As a team leader or member, I want to understand how to pull data from analytics to use in Power BI reports.
 ---
 
@@ -81,7 +82,7 @@ Several sample reports show how to generate reports from either an Analytics vie
 ### Sample reports using Analytics view
 
 - [Get active bugs report](active-bugs-sample-report.md)  
-- [Get a count of work items](data-connector-examples.md)  
+- [Connect Analytics with Power BI Data Connector](data-connector-connect.md)  
 - [Add a last refresh date](add-last-refresh-time.md)
 - [Filter on teams](create-team-filter.md)
 - [Add a time-in-state measure to your Power BI report](create-timeinstate-report.md)

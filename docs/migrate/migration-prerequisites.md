@@ -69,7 +69,7 @@ Have the following items:
 
 ### Download the tool 
 
-1. Download the latest version of the [Data Migration Tool.](https://www.microsoft.com/download/details.aspx?id=54274)
+1. Download the latest version of the [Data Migration Tool.](https://www.microsoft.com/en-us/download/details.aspx?id=54274)
 2. Copy the zip file to one of your Azure DevOps Server application tiers. 
 3. Unzip the file. 
     You can also run the tool from a different machine without Azure DevOps Server installed, if it can connect to the configuration database of the Azure DevOps Server instance. 

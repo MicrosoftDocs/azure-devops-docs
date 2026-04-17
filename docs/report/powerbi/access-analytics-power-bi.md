@@ -9,6 +9,7 @@ ms.author: chcomley
 author: chcomley
 monikerRange: "<=azure-devops"
 ms.date: 09/06/2024
+ai-usage: ai-assisted
 ---
 
 # Connect to Analytics data using the Power BI OData feed
@@ -98,4 +99,4 @@ Learn how to access Analytics data through the Power BI Desktop OData feed.
 ## Related content
 
 - [Get dataset design for the Power BI Connector for Azure DevOps](data-connector-dataset.md)
-- [See Data Connector - Example reports](data-connector-examples.md)
+- [Connect Analytics with Power BI Data Connector](data-connector-connect.md)

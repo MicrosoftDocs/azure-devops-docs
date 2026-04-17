@@ -45,6 +45,9 @@
   - name: Run manual tests
     displayName: manual test, run, test runs
     href: run-manual-tests.md
+  - name: Actual Result
+    displayName: actual result, test execution, manual test, audit
+    href: actual-result.md
   - name: Test different configurations
     displayName: configuration, testing
     href: test-different-configurations.md

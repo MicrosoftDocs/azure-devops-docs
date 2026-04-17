@@ -11,6 +11,7 @@ author: chcomley
 ms.topic: sample
 monikerRange: "<=azure-devops"
 ms.date: 01/25/2023
+ai-usage: ai-assisted
 ---
 
 # Test duration trend sample report
@@ -20,7 +21,6 @@ ms.date: 01/25/2023
 Test duration trend reports, similar to the one shown in the following image, provide insight into the day-wise trend of the average time taken to execute a test for a selected time range. For information on adding tests to a pipeline, see the [Test task resources](#test-task-resources) section later in this article. 
 
 :::image type="content" source="media/pipeline-test-reports/test-duration-trend-line-chart-report.png" alt-text="Screenshot of Test Duration Trend Line chart report.":::
- 
 
 [!INCLUDE [temp](includes/preview-note.md)]
 
@@ -30,7 +30,7 @@ Test duration trend reports, similar to the one shown in the following image, pr
 
 ## Sample queries
 
-You can use the following queries of the `TestResultsDaily` entity set to create different but similar test duration reports. The `TestResultsDaily` entity set provides a daily snapshot aggregate of `TestResult` executions, grouped by test.  
+Use the following queries on the `TestResultsDaily` entity set to create different but similar test duration reports. The `TestResultsDaily` entity set provides a daily snapshot aggregate of `TestResult` executions, grouped by test.  
 
 [!INCLUDE [temp](includes/query-filters-test-pipelines.md)]
 
@@ -86,13 +86,13 @@ TotalDuration div TotalCount as AvgDuration)
 
 [!INCLUDE [temp](includes/sample-query-substitutions.md)]
  
-- `{organization}` - Your organization name
-- `{project}` - Your team project name
-- `{pipelinename}` - Your pipeline name. Example: `Fabrikam hourly build pipeline`
-- `{startdate}` - The date to start your report. Format: YYYY-MM-DDZ. Example: `2022-09-01Z` represents September 1, 2022. Don't enclose in quotes or brackets and use two digits for both, month and date.
+- `{organization}` - Your organization name.
+- `{project}` - Your team project name.
+- `{pipelinename}` - Your pipeline name. Example: `Fabrikam hourly build pipeline`.
+- `{startdate}` - The date to start your report. Format: YYYY-MM-DDZ. Example: `2022-09-01Z` represents September 1, 2022. Don't enclose in quotes or brackets. Use two digits for both the month and date.
 
 > [!TIP]  
-> Depending on the number of tests added to a pipeline, the data returned can be significant. We recommend that you use a `{startdate}` for a few days to gauge the amount of data returned and adjust accordingly.
+> Depending on the number of tests you add to a pipeline, the data returned can be significant. Use a `{startdate}` for a few days to gauge the amount of data returned and adjust accordingly.
 
 ### Query breakdown
 
@@ -229,26 +229,26 @@ The following table describes each part of the query.
 Expanding a column flattens the record into specific fields. To learn how, see [Transform Analytics data to generate Power BI reports, Expand columns](transform-analytics-data-report-generation.md#expand-columns). 
 
 1. Expand the `Test` column to show the expanded entities `TestSK` and `Test.TestName`.  
-2. Expand the `Date` column to show the expanded entity `Date.Date`.  
+1. Expand the `Date` column to show the expanded entity `Date.Date`.  
 
 ## Change column data type
 
-1. From the Power Query Editor, select the `TotalCount` column; select **Data Type** from the **Transform** menu; and then choose **Whole Number**.
+1. From the Power Query Editor, select the `TotalCount` column. Select **Data Type** from the **Transform** menu, and then choose **Whole Number**.
 
-1. Select the `TotalDuration` and `AvgDuration` columns; select **Data Type** from the **Transform** menu; and then choose **Decimal Number**.
+1. Select the `TotalDuration` and `AvgDuration` columns. Select **Data Type** from the **Transform** menu, and then choose **Decimal Number**.
 
 For more information about changing the data type, see  [Transform Analytics data to generate Power BI reports, Transform a column data type](transform-analytics-data-report-generation.md#transform-data-type). 
 
 [!INCLUDE [temp](includes/close-apply.md)]
  
   
-## Create the Line chart report
+## Create the line chart report
  
-1. In Power BI, under **Visualizations**, choose **Line chart** and drag and drop the fields onto the **Columns** area. 
+1. In Power BI, under **Visualizations**, select **Line chart**. Drag and drop the fields onto the **Columns** area. 
 
 	:::image type="content" source="media/pipeline-test-reports/visualizations-test-duration-trend-line-chart.png" alt-text="Screenshot of visualization fields selections for Test Duration Trend Line chart report. ":::
 
-1. Add `Date.Date` to the **X-axis**, right-click the field and select **Date.Date**, rather than **Date.Hierarchy**.
+1. Add `Date.Date` to the **X-axis**. Right-click the field and select **Date.Date**, rather than **Date.Hierarchy**.
 
 1. Add **AvgDuration** to the **Y-axis**.
 

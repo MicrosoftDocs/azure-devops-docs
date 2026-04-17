@@ -9,14 +9,15 @@ ms.custom: powerbisample, engagement-fy23
 author: chcomley
 ms.topic: sample
 monikerRange: "<=azure-devops"
-ms.date: 12/14/2022
+ms.date: 04/07/2026
+ai-usage: ai-assisted
 ---
 
 # Pipeline outcome summary sample report 
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)] 
 
-A pipeline run represents a single execution of a pipeline. During a run, the pipeline is processed, and agents process one or more jobs. Outcomes include *Succeeded*, *Failed*, *Canceled*, and *Partially Succeeded*. To create reports that show the outcomes of pipeline runs, you query the [``PipelineRuns` entity set`](../analytics/entity-reference-pipelines.md#pipelineruns). 
+A pipeline run represents a single execution of a pipeline. During a run, the pipeline is processed, and agents process one or more jobs. Outcomes include *Succeeded*, *Failed*, *Canceled*, and *Partially Succeeded*. To create reports that show the outcomes of pipeline runs, query the [`PipelineRuns` entity set](../analytics/entity-reference-pipelines.md#pipelineruns). 
 
 This article provides several queries and instructions on how to create a report to get the number of runs for different pipeline outcomes. 
 
@@ -32,11 +33,11 @@ The following image shows an example of an outcome summary report.
 
 ## Sample queries
 
-You can use the following queries of the `PipelineRuns` entity set to create different but similar pipeline outcome summary reports. 
+To create different but similar pipeline outcome summary reports, use the following queries of the `PipelineRuns` entity set. 
 
 [!INCLUDE [temp](includes/query-filters-pipelines.md)] 
 
-### Pipeline duration for a named pipeline 
+### Outcome summary for a named pipeline
 
 The following queries return the pipeline runs for a specific pipeline from a specified start date.  
 
@@ -311,8 +312,8 @@ aggregate(
 You may want to view the outcome summary of a pipeline for only specific **Build Reasons** (Manual / BatchedCI, Pull Request, and so on). To create the report, do the following steps:   
 - [Change column data type](#change-column-data-type) 
 - [Create the Donut chart report](#create-the-donut-chart-report)
-- Select **Slicer** from the **Visualizations** pane and add the `Pipeline.PipelineName` to the slicer's **Field**
-- Select the pipeline from the slicer for which you need to see the outcome summary.  
+- Select **Slicer** from the **Visualizations** pane and add `RunReason` to the slicer's **Field**
+- Select the run reason from the slicer for which you need to see the outcome summary.  
 
 #### [Power BI query](#tab/powerbi/)
 
@@ -425,9 +426,7 @@ aggregate(
 
 From the Power Query Editor, select the `TotalCount` column, and then select **Data Type** from the **Transform** menu, and choose **Whole Number**. For more information about changing the data type, see  [Transform Analytics data to generate Power BI reports, Transform a column data type](transform-analytics-data-report-generation.md#transform-data-type). 
 
-## (Optional) Rename column fields
-
-You can rename column fields. For example, you can rename the column `Pipeline.PipelineName` to `Pipeline Name`, or `TotalCount` to `Total Count`. To learn how, see [Rename column fields](transform-analytics-data-report-generation.md#rename-column-fields). 
+[!INCLUDE [temp](includes/sample-rename-column-fields.md)]
 
 [!INCLUDE [temp](includes/close-apply.md)]
 

@@ -456,6 +456,7 @@ tcm run /publish /suiteid:167 /configid:9 /resultowner:"Jamal Hartnett" /results
 
 ## Related content
 
+- [Record actual results](actual-result.md)
 - [FAQs for manual testing](reference-qa.yml#test-status-tracking-charts)
 - [Collect diagnostic data while testing](collect-diagnostic-data.md)
 - [Exploratory testing with the Test & Feedback extension in Connected mode](connected-mode-exploratory-testing.md)
