@@ -6,4 +6,4 @@ ms.service: azure-devops
 ---
 
 > [!IMPORTANT]
-> Public projects in Azure DevOps are being retired. All existing public projects will be converted to private, and anonymous access will be disabled. For more information, see [Migrate from a public project to GitHub](../migrate-public-project.md).
+> Public projects in Azure DevOps are being retired. All existing public projects will be converted to private, and anonymous access will be disabled. For more information, see [Migrate from a public project to GitHub](../migrate-public-project.md) and [this blog post](https://devblogs.microsoft.com/devops/retiring-public-projects-in-azure-devops/).

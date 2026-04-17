@@ -14,7 +14,9 @@ ms.date: 04/16/2026
 
 [!INCLUDE [version-eq-azure-devops](../../includes/version-eq-azure-devops.md)]
 
-Azure DevOps is retiring public projects. All existing public projects will be converted to private, and anonymous access disabled. For more information, see [this blog post](https://devblogs.microsoft.com/devops/retiring-public-projects-in-azure-devops/). Migrate public-facing content to GitHub, which offers a rich ecosystem for open-source collaboration.
+[!INCLUDE [public-projects-retirement](includes/public-projects-retirement.md)]
+
+Migrate public-facing content to GitHub, which offers a rich ecosystem for open-source collaboration.
 
 After the conversion to private:
 
