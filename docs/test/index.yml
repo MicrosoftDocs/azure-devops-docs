@@ -26,28 +26,30 @@ landingContent:
         links:
           - text: What is Azure Test Plans?
             url: overview.md
-          - text: Navigate Test Plans
+          - text: Tour Test Plans
             url: navigate-test-plans.md
-          - text: Test objects and terms
+          - text: Key concepts
             url: test-objects-overview.md
       - linkListType: get-started
         links:
           - text: Default permissions (Security)
             url: manual-test-permissions.md
   # Card 2 — Test plans, suites & cases
-  - title: Create test plans, suites & cases
+  - title: Manage test plans, suites, & cases
     linkLists:
       - linkListType: how-to-guide
         links:
-          - text: Create test plans and suites
+          - text: Create & manage test plans
             url: create-a-test-plan.md
+          - text: Create & manage test suites
+            url: create-test-suites.md
           - text: Create test cases
             url: create-test-cases.md
           - text: Share steps between test cases
             url: share-steps-between-test-cases.md
-          - text: Copy or clone test plans, suites, cases
+          - text: Copy or clone test items
             url: copy-clone-test-items.md
-          - text: Bulk import and export (CSV/XLSX)
+          - text: Import and export test cases
             url: bulk-import-export-test-cases.md
   # Card 3 — Run manual tests
   - title: Run manual tests
@@ -86,7 +88,7 @@ landingContent:
     linkLists:
       - linkListType: how-to-guide
         links:
-          - text: Request and provide stakeholder feedback
+          - text: Request & provide feedback
             url: request-stakeholder-feedback.md
   # Card 6 — Automated tests
   - title: Run automated tests

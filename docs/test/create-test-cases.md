@@ -1,7 +1,7 @@
 ---
 title: Create and manage manual test cases
 titleSuffix: Azure Test Plans
-description: Create and manage manual test cases in Azure Test Plans. Learn how to define steps, assign testers, and organize test cases.
+description: Create and manage manual test cases in Azure Test Plans to validate deliverables, assign testers, and organize your testing process. Start improving quality now.
 #customer intent: As a tester, I want to create manual test cases so that I can validate deliverables against user requirements.
 ms.assetid: C3C10A82-C7F2-4AB6-9CED-B43DAF722800
 ms.service: azure-devops-test-plans
@@ -11,7 +11,7 @@ ms.author: pliaros
 ms.reviewer: chcomley
 author: rohit-batra
 monikerRange: '<= azure-devops'
-ms.date: 03/17/2026
+ms.date: 04/09/2026
 ai-usage: ai-assisted
 ms.update-cycle: 1095-days
 ---
@@ -41,26 +41,42 @@ For key concepts, see [Test objects and terms](test-objects-overview.md).
 
 1. If you didn't already, [create a test plan](create-a-test-plan.md).
 
-2. Select a requirement-based test suite and select **New Test Case**.
+1. Select a requirement-based test suite and select **New Test Case**.
 		
    :::image type="content" border="true" source="media/create-test-cases/new-test-case-button.png" alt-text="Screenshot showing test cases with New Test Case button highlighted.":::
 
    > [!NOTE]
    > This test suite links to a User Story work item from the backlog. When you add a test case to a requirement-based suite, you automatically link it to the backlog item. You can also create test cases directly from the backlog by opening the context menu for a work item and selecting **Add test**.
 
-3. Enter a title and select **Click or type here to add a step**.
+1. Enter a title and select **Click or type here to add a step**.
 
    :::image type="content" border="true" source="media/create-test-cases/test-case-steps.png" alt-text="Screenshot showing the steps entered for a test case.":::
 
-4. Add test steps with an **Action** and **Expected Result** for each step. You can add attachments to any step.
+1. Add test steps with an **Action** and **Expected Result** for each step. You can add attachments to any step.
+
+   :::image type="content" border="true" source="media/create-test-cases/add-attachment-test-case.png" alt-text="Screenshot showing test case with links button highlighted.":::
 
    For more information, see [Share steps](share-steps-between-test-cases.md) and [Copy or clone stories, issues, and other work items](../boards/backlogs/copy-clone-work-items.md).
+
+## Open a test case
+
+To open a test case, double-select its name in the **Define** tab, or select it in the **Execute** tab, open the context menu, and select **Edit test case**. For more information, see [Define tab context menu options](navigate-test-plans.md#define-tab-more-options).
+
+:::image type="content" border="true" source="media/create-test-cases/open-test-case-edit.png" alt-text="Screenshot showing the Edit test case option for a test case in the context menu.":::
+
+You can link a test case to test suites, requirements, and bugs.
+To see linked items, in the **Define** tab, open the context menu for a test case, and select **View Linked Items**. For more information, see [View linked items](navigate-test-plans.md#view-linked-items).
+
+:::image type="content" border="true" source="media/create-test-cases/view-linked-items.png" alt-text="Screenshot showing the Linked Items dialog box for a test case with options to view Test Suites, Requirements, and Bugs.":::
 
 ## Assign configurations to test cases
 
 By using configurations, you can run the same test across different operating systems, browsers, or other variations. Assign configurations at the suite level or to individual test cases.
 
 1. Select the test suite, and then select **More options** > **Assign configurations**.
+
+   :::image type="content" border="true" source="media/create-test-cases/assign-configurations.png" alt-text="Screenshot showing the Assign configurations selection in the More options dropdown menu.":::
+
 1. In the dialog box, select your configurations and then select **Save**.
 
    :::image type="content" border="true" source="media/create-test-cases/assign-configurations-test-suite.png" alt-text="Screenshot showing the Assign configurations to test suite dialog box with some options selected.":::
@@ -116,7 +132,7 @@ By using the Grid view, you can edit test cases directly and copy data between E
 
    :::image type="content" border="true" source="media/create-test-cases/grid-view-button.png" alt-text="Screenshot showing the Grid View button used to open the Grid view.":::
 
-1. Select one or more test cases, and then select **Edit test case(s) in grid**.
+1. Select one or more test cases, and then select **Edit test cases in grid**.
 
    :::image type="content" border="true" source="media/create-test-cases/edit-multiple-test-cases-grid.png" alt-text="Screenshot showing several test cases selected with the context menu open and Edit test case(s) in grid selected.":::
 
@@ -146,7 +162,7 @@ You can also copy test cases and test steps from Excel. Copy the columns for tit
 ::: moniker range="<=azure-devops"
 Assign test cases so that different testers can run them. You can assign all test cases in a test suite to multiple testers, which is useful for acceptance testing.
 
-Testers need [Basic + Test Plans access](../organizations/security/access-levels.md) to run tests from Azure Test Plans.
+Testers need [Basic access](../organizations/security/access-levels.md) to run tests from Azure Test Plans.
 
 1. In the context menu for a test suite, select **Assign testers to run all tests**.
 
@@ -161,7 +177,7 @@ Testers need [Basic + Test Plans access](../organizations/security/access-levels
 
    The email contains a link that testers can open to see the list of assigned tests.
 
-Assign an individual test case to a tester.
+## Assign an individual test case to a tester
 
 1. In the **Execute** tab for a test suite, select a test, and then open the context menu.
 
@@ -171,21 +187,9 @@ Assign an individual test case to a tester.
 
 ::: moniker-end
 
-## Manage test cases
-::: moniker range="<=azure-devops"
-
-To open a test case, double-click its name in the **Define** tab, or select it in the **Execute** tab, open the context menu, and select **Edit test case**.
-
-:::image type="content" border="true" source="media/create-test-cases/open-test-case-edit.png" alt-text="Screenshot showing the Edit test case option for a test case in the context menu.":::
-
-You can link a test case to test suites, requirements, and bugs.
-To see linked items, in the **Define** tab, open the context menu for a test case, and select **View Linked Items**.
-
-:::image type="content" border="true" source="media/create-test-cases/view-linked-items.png" alt-text="Screenshot showing the Linked Items dialog box for a test case with options to view Test Suites, Requirements, and Bugs.":::
-
 ## Bulk edit test cases
 
-You can edit more than one test case at a time. Select several test cases in a test suite and select **Edit test cases**.
+You can edit more than one test case at a time. Select several test cases in a test suite and select **Edit test cases**. For more information, see [Export, import, and bulk update of test-specific work items](test-objects-overview.md#export-import-and-bulk-update-of-test-specific-work-items).
 
 :::image type="content" border="true" source="media/create-test-cases/bulk-edit-work-items.png" alt-text="Screenshot showing the Edit work items dialog box where you can select fields and values for several test cases.":::
 
@@ -215,7 +219,6 @@ You can rename or remove test cases from a test suite.
 
 :::image type="content" border="true" source="media/create-test-cases/remove-test-case.png" alt-text="Screenshot showing removed test case.":::
 
-To permanently delete test plans and test suites, be a member of the Project Administrators group or have the Area Path node-level [**Manage test plans** or **Manage test suites**](../organizations/security/set-permissions-access-work-tracking.md#manage-test-artifacts) permission set to **Allow**. To manage or delete test artifacts, you must also have your [access level](../organizations/security/access-levels.md) set to **Basic + Test Plans** or **Visual Studio Enterprise**. For more information, see [Delete test artifacts in Azure Boards](../boards/backlogs/delete-test-artifacts.md).
 ::: moniker-end
 
 ::: moniker range="azure-devops"

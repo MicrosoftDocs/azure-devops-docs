@@ -33,7 +33,7 @@ This report displays the following information for each requirement that it list
 - **Closed bugs**: The number of linked bugs in a  Closed, Done, or Completed state. 
 
 > [!NOTE] 
-> Requirement tracking supports only test cases linked through a [**Requirement-based test suite**](../../test/create-a-test-plan.md#backlog). The association between a requirement work item&mdash;user story ([Agile](../../boards/work-items/guidance/agile-process.md)), product backlog item ([Scrum](../../boards/work-items/guidance/scrum-process.md)), requirement ([CMMI](../../boards/work-items/guidance/cmmi-process.md)), or issue ([Basic](../../boards/get-started/plan-track-work.md))&mdash;and manual test execution is only formed when you link the test case via a **Requirement-based test suite**. 
+> Requirement tracking supports only test cases linked through a [**Requirement-based test suite**](../../test/create-a-test-plan.md). The association between a requirement work item&mdash;user story ([Agile](../../boards/work-items/guidance/agile-process.md)), product backlog item ([Scrum](../../boards/work-items/guidance/scrum-process.md)), requirement ([CMMI](../../boards/work-items/guidance/cmmi-process.md)), or issue ([Basic](../../boards/get-started/plan-track-work.md))&mdash;and manual test execution is only formed when you link the test case via a **Requirement-based test suite**. 
 
 [!INCLUDE [stories-overview-info](includes/sample-stories-overview-info.md)] 
 
