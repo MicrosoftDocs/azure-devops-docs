@@ -6,36 +6,39 @@
   href: overview.md
 - name: Get started
   items:
-  - name: Navigate Test Plans
+  - name: Tour Test Plans
     displayName: test suites tree, define, execute, chart
     href: navigate-test-plans.md
-  - name: Test objects and terms
+  - name: Key concepts
     displayName: test plan, test case, test suites, test runs, test results, test points
     href: test-objects-overview.md
   - name: Default permissions (Security)
     href: manual-test-permissions.md
   expanded: true
-- name: Test plans, suites & cases
+- name: Test plans, suites, & cases
   items:
-  - name: Create test plans and test suites
+  - name: Create & manage test plans
     displayName: create, plan
     href: create-a-test-plan.md
-  - name: Create test cases
+  - name: Create & manage test suites
+    displayName: create, suite, static, requirement, query
+    href: create-test-suites.md
+  - name: Create & manage test cases
     displayName: create, case
     href: create-test-cases.md
   - name: Share steps between test cases
     href: share-steps-between-test-cases.md
-  - name: Copy/clone test plans, suites, cases
+  - name: Copy or clone test items
     displayName: copy, clone, import, export, test plans, test suites, test cases
     href: copy-clone-test-items.md
-  - name: Bulk import and export test cases (CSV/XLSX)
-    displayName: copy, clone, import, export, test plans, test suites, test cases
+  - name: Import and export test cases
+    displayName: bulk, import, export, CSV, XLSX, test cases
     href: bulk-import-export-test-cases.md
-  - name: Store custom data in test plan or test result
-    displayName: manual test, automated, run, test runs, result, test results, custom data, custom fields
+  - name: Add custom data fields
+    displayName: custom data, custom fields, test plan, test result
     href: custom-fields.md
-  - name: Delete test artifacts
-    displayName: delete, artifacts
+  - name: Delete test items
+    displayName: delete, artifacts, test plans, test cases, test suites
     href: ../boards/backlogs/delete-test-artifacts.md?toc=/azure/devops/test/toc.json
 - name: Run manual tests
   items:
@@ -85,7 +88,7 @@
     href: insights-exploratory-testing.md
 - name: Stakeholder feedback
   items:
-  - name: Request and provide stakeholder feedback
+  - name: Request & provide feedback
     displayName: stakeholder, feedback, request, provide, voluntary, track
     href: request-stakeholder-feedback.md
   - name: Manage test failure type

@@ -108,6 +108,9 @@ Select :::image type="icon" source="../media/icons/more-actions.png" border="fal
 **Export test suite dialog**  
 :::image type="content" source="media/navigate/export-dialog.png" alt-text="Screenshot of the Define tab showing the Export test suite dialog.":::
 
+> [!IMPORTANT]
+> You can't export more than 75 test suites in a single operation. The export supports up to 1 MB of data.
+
 **Import test suites**
 
 Reuse the suites you created and import them into the current suite or plan. Select the **Project**, **Test Plan**, and **Test Suite** from which you want to import the tests. Depending upon the suite you select, the entire hierarchy of that suite and corresponding test cases is imported into the current plan. The test cases are added as a reference and not a clone or copy. Also, you can't import test suites from the same test plan. 
