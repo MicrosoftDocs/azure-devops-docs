@@ -1,10 +1,11 @@
 ---
 title: Sign up for Azure Pipelines
 description: Walk through signing up for Azure Pipelines to begin managing CI/CD to deploy your code.
-ms.topic: overview
+ms.topic: how-to
 ms.author: chcomley
 author: chcomley
-ms.date: 03/13/2025
+ms.date: 04/13/2026
+ai-usage: ai-assisted
 monikerRange: 'azure-devops'
 ---
 
@@ -20,7 +21,7 @@ For more information about Azure Pipelines, see [What is Azure Pipelines](what-i
 
 | Category | Requirements |
 |--------------|-------------|
-|**Browser**| Latest version of one of the following web browsers: Microsoft Edge, Internet Explorer, Safari (Mac), Firefox, or Chrome.|
+|**Browser**| Latest version of one of the following browsers: Microsoft Edge, Safari (Mac), Firefox, or Chrome.|
 
 ## Sign up
 
@@ -41,7 +42,7 @@ Sign up for Azure Pipelines with either a Microsoft account or GitHub account.
 > [!div class="nextstepaction"]
 > [Create your first pipeline](../create-first-pipeline.md)
 
-## Related articles
+## Related content
 
 - [Create a project](../../organizations/projects/create-project.md)
 - [What is Azure Pipelines?](what-is-azure-pipelines.md)

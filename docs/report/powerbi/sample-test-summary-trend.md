@@ -4,31 +4,31 @@ titleSuffix: Azure DevOps
 description: Learn how to generate a test summary trend Power BI report for a given pipeline in the project.
 ms.subservice: azure-devops-analytics
 ms.reviewer: desalg
-ms.manager: mijacobs
 ms.author: chcomley
 ms.custom: powerbisample, engagement-fy23
 author: chcomley
 ms.topic: sample
 monikerRange: "<=azure-devops"
-ms.date: 01/24/2023
+ms.date: 04/07/2026
+ai-usage: ai-assisted
 ---
 
 # Test summary trend sample report 
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)] 
  
-Pipelines that include test tasks can be queried to build a test summary trend report. For example, the following report displays the number of failed test runs in each column over a period of 24 days, along with the line chart showing the trend of test pass rate. For information on adding tests to a pipeline, see the [Test task resources](#test-task-resources) section later in this article. 
+You can create a test summary trend report by querying pipelines that include test tasks. For example, the following report displays the number of failed test runs per column over a 24-day period, along with a line chart showing the test pass rate trend. For information on adding tests to a pipeline, see [Test task resources](#test-task-resources) later in this article. 
 
  
-:::image type="content" source="media/pipeline-test-reports/test-summary-trend-stack-column-line-chart-report.png" alt-text="Screenshot of  Test Summary Trend Stacked Column Line chart report.":::
+:::image type="content" source="media/pipeline-test-reports/test-summary-trend-stack-column-line-chart-report.png" alt-text="Screenshot of Test Summary Trend Stacked Column Line chart report.":::
 
-Specifically, this article provides sample queries for generating the following reports: 
+This article provides sample queries for generating the following reports: 
 
 - Test summary trend for build workflow
 - Test summary trend for release workflow
 - Test summary trend for a particular branch
 - Test summary trend for a particular test file
-- Test summary trend for a particular test owner. 
+- Test summary trend for a particular test owner 
 
 [!INCLUDE [temp](includes/preview-note.md)]
 
@@ -38,7 +38,7 @@ Specifically, this article provides sample queries for generating the following 
 
 ## Sample queries
 
-You can use the following queries of the `TestRuns` entity set to create different but similar pipeline test summary trend reports. The `TestRuns` entity set for the following queries are available only when you include test tasks within a pipeline definition.  
+Use the following queries of the `TestRuns` entity set to create different but similar pipeline test summary trend reports. This entity set is available only when you include test tasks within a pipeline definition.  
 
 [!INCLUDE [temp](includes/query-filters-test-pipelines.md)]
 
@@ -140,8 +140,11 @@ in
 https://analytics.dev.azure.com/{organization}/{project}/_odata/v4.0-preview/TestRuns?
 $apply=filter(
 	Pipeline/PipelineName eq '{pipelineName}'
-	and CompletedOn/Date ge {startdate})
-/groupby((Workflow, CompletedOn/Date), 
+	and CompletedOn/Date ge {startdate}
+	and Workflow eq 'Release'
+	)
+/groupby(
+	(CompletedOn/Date), 
 	aggregate(
 	ResultPassCount with sum as ResultPassCount,
 	ResultNotExecutedCount with sum as ResultNotExecutedCount,
@@ -158,8 +161,8 @@ iif(ResultCount gt ResultNotExecutedCount, ((ResultPassCount add ResultNotImpact
  
 To view the test summary trend of a pipeline for a particular branch, use the following queries. To create the report, carry out the following extra steps along with what is specified later in this article.
 
-- Expand `Branch` into `Branch.BranchName`
-- Select Power BI Visualization Slicer and add the field `Branch.BranchName` to the slicer's **Field**
+- Expand `Branch` into `Branch.BranchName`.
+- Select Power BI Visualization Slicer and add the field `Branch.BranchName` to the slicer's **Field**.
 - Select the branch name from the slicer for which you need to see the outcome summary.
 
 For more information about using slicers, see [Slicers in Power BI](/power-bi/visuals/power-bi-visualization-slicers).
@@ -218,8 +221,8 @@ iif(ResultCount gt ResultNotExecutedCount, ((ResultPassCount add ResultNotImpact
 
 To view the test summary trend of a pipeline for a particular test file, use the following queries. To create the report, carry out the following extra steps along with what is defined later in this article.
 
-- Expand `Test` into `Test.ContainerName`
-- Select Power BI Visualization Slicer and add the field `Test.ContainerName` to the slicer's **Field**
+- Expand `Test` into `Test.ContainerName`.
+- Select Power BI Visualization Slicer and add the field `Test.ContainerName` to the slicer's **Field**.
 - Select the container name from the slicer for which you need to see the outcome summary.
  
 
@@ -259,7 +262,7 @@ https://analytics.dev.azure.com/{organization}/{project}/_odata/v4.0-preview/Tes
 $apply=filter(
 	Pipeline/PipelineName eq '{pipelineName}'
 	and CompletedOn/Date ge {startdate}
-	And Workflow eq 'Build')
+	and Workflow eq 'Build')
 /groupby((Test/ContainerName, Date/Date), 
 	aggregate(
 	ResultPassCount with sum as ResultPassCount,
@@ -277,8 +280,8 @@ iif(ResultCount gt ResultNotExecutedCount, ((ResultPassCount add ResultNotImpact
 
 To view the test summary trend of a pipeline for tests owned by a particular test owner, use the following queries. To create the report, carry out the following extra steps along with what is defined later in this article.
 
-- Expand `Test` into `Test.TestOwner`
-- Select Power BI Visualization Slicer and add the field `Test.TestOwner` to the slicer's **Field**
+- Expand `Test` into `Test.TestOwner`.
+- Select Power BI Visualization Slicer and add the field `Test.TestOwner` to the slicer's **Field**.
 - Select the test owner from the slicer for which you need to see the outcome summary.
  
 #### [Power BI query](#tab/powerbi/)
@@ -318,7 +321,7 @@ https://analytics.dev.azure.com/{organization}/{project}/_odata/v4.0-preview/Tes
 $apply=filter(
 	Pipeline/PipelineName eq '{pipelineName}'
 	and CompletedOn/Date ge {startdate}
-	And Workflow eq 'Build')
+	and Workflow eq 'Build')
 /groupby((Test/TestOwner, Date/Date), 
 	aggregate(
 	ResultPassCount with sum as ResultPassCount,
@@ -337,10 +340,10 @@ iif(ResultCount gt ResultNotExecutedCount, ((ResultPassCount add ResultNotImpact
 
 [!INCLUDE [temp](includes/sample-query-substitutions.md)]
 
-- `{organization}` - Your organization name
-- `{project}` - Your team project name
-- `{pipelinename}` - Your pipeline name. Example: Fabrikam hourly build pipeline
-- `{startdate}` The date to start your report. Format: YYYY-MM-DDZ. Example: 2023-01-01Z represents January 1, 2023 at 12:50:54. Don't enclose in quotes or brackets.
+- `{organization}` - Your organization name.
+- `{project}` - Your team project name.
+- `{pipelineName}` - Your pipeline name. Example: `Fabrikam hourly build pipeline`.
+- `{startdate}` - The date to start your report. Format: YYYY-MM-DDZ. Example: `2023-01-01Z` represents January 1, 2023. Don't enclose in quotes or brackets.
  
 ### Query breakdown
 
@@ -383,7 +386,7 @@ The following table describes each part of the query.
    `and Workflow eq 'Build'`
    :::column-end:::
    :::column span="1":::
-   Return test runs for the pipeline with a `Build` workflow
+   Return test runs for the pipeline with a `Build` workflow.
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -391,7 +394,7 @@ The following table describes each part of the query.
    `)`
    :::column-end:::
    :::column span="1":::
-   Close `filter()` clause
+   Close `filter()` clause.
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -407,7 +410,7 @@ The following table describes each part of the query.
    `(CompletedOn/Date),`
    :::column-end:::
    :::column span="1":::
-   Group by the date of completion of test run.
+   Group by the completion date of the test run.
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -415,7 +418,7 @@ The following table describes each part of the query.
    `aggregate(`
    :::column-end:::
    :::column span="1":::
-   Start `aggregate` clause. For all the test runs matching the filter criteria, sum the series of counts.
+   Start `aggregate` clause. For all test runs matching the filter criteria, sum the counts.
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -499,19 +502,19 @@ Expand the `CompletedOn` column. Expanding the column flattens the record into s
 
 ## Change column data type
 
-From the Power Query Editor, select the `PassRate` column; select **Data Type** from the **Transform** menu; and then choose **Decimal Number**.
+From the Power Query Editor, select the `PassRate` column. Select **Data Type** from the **Transform** menu, and then choose **Decimal Number**.
 
-For more information about changing the data type, see  [Transform Analytics data to generate Power BI reports, Transform a column data type](transform-analytics-data-report-generation.md#transform-data-type). 
+For more information about changing the data type, see [Transform Analytics data to generate Power BI reports, Transform a column data type](transform-analytics-data-report-generation.md#transform-data-type). 
 
 [!INCLUDE [temp](includes/close-apply.md)]
 
 ## Create the line and stack column chart report
  
-1. In Power BI, under **Visualizations**, choose the **Line and stack column chart** and drag and drop the fields onto the chart areas. 
+1. In Power BI, under **Visualizations**, select the **Line and stack column chart** and drag the fields onto the chart areas. 
 
 	:::image type="content" source="media/pipeline-test-reports/visualizations-test-summary-trend.png" alt-text="Screenshot of visualization fields selections for Test Summary Trend stacked column line chart report. ":::
 
-1. Add `CompletedOn.Date` to the **X-axis**, right-click the field and select **Date.Date** rather than **Date Hierarchy**.  
+1. Add `CompletedOn.Date` to the **X-axis**. Right-click the field and select **Date.Date** rather than **Date Hierarchy**.
 
 1. Add `ResultFailCount` to **Column y-axis**.
 
