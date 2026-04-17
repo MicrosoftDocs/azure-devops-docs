@@ -16,7 +16,7 @@ Managed DevOps Pools pricing is a combination of the cost of the Azure services 
 The primary cost for Managed DevOps Pools is the cost of the Azure services that your pool uses, like compute, storage, and data egress, which are billed at the standard Azure pricing rates.
 
 > [!NOTE]
-> [Azure Hybrid Benefit](/azure/virtual-machines/windows/hybrid-use-benefit-licensing) can't be used with Managed DevOps Pools instances. For more information, see [Managed DevOps Pool frequently asked questions: Can I use Azure Hybrid Benefit with Managed DevOps Pools?](./faq.md#can-i-use-azure-hybrid-benefit-with-managed-devops-pools)
+> [Azure Hybrid Benefit](/azure/virtual-machines/windows/hybrid-use-benefit-licensing) can't be used with Managed DevOps Pools. For more information, see [Managed DevOps Pool frequently asked questions: Can I use Azure Hybrid Benefit with Managed DevOps Pools?](./faq.md#can-i-use-azure-hybrid-benefit-with-managed-devops-pools)
 
 For more information, see:
 
