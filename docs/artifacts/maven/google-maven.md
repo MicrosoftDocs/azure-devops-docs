@@ -79,7 +79,7 @@ The following example shows how to install *Multipaz*, an open-source identity f
 When the command completes, Maven resolves the dependency through your Azure Artifacts feed. If the package isn’t already present in the feed, Azure Artifacts retrieves it from the Google Maven Repository and saves a copy. Subsequent installs download the package directly from Azure Artifacts instead of the public registry.
 
 > [!NOTE]
-> You must have the **Feed and Upstream Reader (Collaborator)** role or higher to save packages from upstreams. See [Feed roles and permissions](../feeds/feed-permissions.md#feed-roles-and-permissions) for more details.
+> You must have the **Feed and Upstream Reader (Collaborator)** role or higher to save packages from upstream. See [Feed roles and permissions](../feeds/feed-permissions.md#feed-roles-and-permissions) for more details.
 
 ## View saved packages
 
