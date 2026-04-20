@@ -132,18 +132,18 @@ Associate the public key generated in the previous step with your user ID.
 1. Open your security settings by browsing to the web portal and selecting the icon next to the avatar in the upper right of the user interface. Select **SSH public keys** in the menu that appears.
 
    ![Screenshot that shows the SSH public keys menu item and the user avatar selected in Azure DevOps.](media/use-ssh-authentication/select-ssh-public-keys.png)
-
+   
 1. Select **+ New Key**.
 
    ![Screenshot showing access to Security Configuration in Azure DevOps.](media/use-ssh-authentication/ssh-accessing-security-key.png)
-
+   
 1. Copy the contents of the public key (for example, `id_rsa.pub`) that you generated into the **Public Key Data** field.
 
-   > [!IMPORTANT]
+      > [!IMPORTANT]
    > Avoid adding whitespace or new lines into the **Key Data** field, as they can cause Azure DevOps to use an invalid public key. When pasting in the key, a newline often is added at the end. Be sure to remove this newline if it occurs.
 
    ![Screenshot showing configuring a Public Key in Azure DevOps.](media/use-ssh-authentication/ssh-key-input.png)
-
+   
 1. Give the key a useful description (this description is displayed on the **SSH public keys** page for your profile) so that you can remember it later. Select **Save** to store the public key.
    Once saved, you can't change the key. You can delete the key or create a new entry for another key. There are no restrictions on how many keys you can add to your user profile. 
    
@@ -153,7 +153,7 @@ Associate the public key generated in the previous step with your user ID.
 1. On the **SSH Public Keys** overview page, the server fingerprints are displayed. Make note of the SHA256 fingerprint to use when you first connect to Azure DevOps via SSH.
 
    ![Screenshot of accessing security configuration in Azure DevOps Services.](media/use-ssh-authentication/ssh-accessing-security-key.png)
-
+   
 2. Test the connection by running the following command:
 
    ```powershell
@@ -191,8 +191,8 @@ Proceed only if they match!
 1. Copy the SSH clone URL from the web portal. In this example, the SSH clone URL is for a repo in an organization named **fabrikam-fiber**, as indicated by the first part of the URL after `dev.azure.com`.
 
    ![Screenshot showing Azure Repos SSH cloned URL.](media/use-ssh-authentication/ssh-clone-url.png)
-
-   [!INCLUDE [project-urls](../../includes/project-urls.md)]
+   
+      [!INCLUDE [project-urls](../../includes/project-urls.md)]
 
 1. Run `git clone` from the command prompt.
 
@@ -457,10 +457,10 @@ Afterwards, instead of using the real URLs, tell Git you want to use these URLs 
 - An SSH key associated with your account has expired and is no longer valid for authentication.
 
    **<u>Example notification</u>**
-    
+  
    ![Screenshot showing SSH key email notification.](media/use-ssh-authentication/ssh-key-added-email.png)
-
-
+  
+  
 ### Q: What do I do if I believe that someone other than me is adding SSH keys on my account?
 
 **A:** If you receive an SSH key registration notification you didn't initiate, your credentials could be compromised.
@@ -477,6 +477,10 @@ You can work around the issue by adding the following code to your SSH configura
 Host ssh.dev.azure.com vs-ssh.visualstudio.com
   PubkeyAcceptedKeyTypes +ssh-rsa
 ```
+
+### Q. Why did my Azure DevOps Services SSH key stop working?
+
+**A.** SSH key authentication requires you to regularly sign in to Azure DevOps Services by using the full authentication flow (web). Signing in once every 30 days is sufficient for many users, but you might need to sign in more frequently depending on your Microsoft Entra configuration. If your SSH key stops working, first try signing in to your organization and completing the full authentication prompt. If your SSH key still doesn't work, check if it expired.
 
 > [!TIP]
 > For self-hosted instances of Azure DevOps Server and TFS use the appropriate hostname in the `Host` line instead of `ssh.dev.azure.com vs-ssh.visualstudio.com`.
