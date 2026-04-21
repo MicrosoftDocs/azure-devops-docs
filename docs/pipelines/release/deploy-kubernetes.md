@@ -143,7 +143,7 @@ Before you paste the YAML, make sure these items already exist in your project:
       jobs:
       - job: Build
         pool:
-          vmImage: 'ubuntu-20.04'
+          vmImage: 'ubuntu-latest'
         steps:
         - task: Docker@2
           displayName: Build and push the web image to container registry
@@ -177,7 +177,7 @@ Before you paste the YAML, make sure these items already exist in your project:
       - deployment: Deploy
         displayName: Deploy
         pool:
-          vmImage: 'ubuntu-20.04'
+          vmImage: 'ubuntu-latest'
         environment: 'spike.default'
         variables:
         - group: Release
@@ -221,3 +221,21 @@ Before you paste the YAML, make sure these items already exist in your project:
 
 > [!TIP]
 > YAML is whitespace-sensitive. Make sure to keep indentation consistent.
+
+## How the pipeline works
+
+This pipeline uses a standard build-then-deploy pattern across two stages.
+
+- **Build stage**:
+
+- The two `Docker@2` tasks build and push the `web` and `leaderboard` images to Azure Container Registry.
+- Image tags use `$(Build.BuildId)` so each run produces a traceable, unique version.
+- The `manifests` folder is published as a pipeline artifact so the deployment stage can consume the same manifests on a different agent.
+
+- **Deploy stage**:
+
+- The deployment job targets the configured Azure DevOps environment, which gives you deployment history and environment-level visibility.
+- The `download` step retrieves the `manifests` artifact from the current run.
+- `KubernetesManifest@1` with `createSecret` creates an image pull secret in the target namespace so cluster nodes can authenticate to Azure Container Registry.
+- `KubernetesManifest@1` with `deploy` applies the Kubernetes manifests and injects the `web` and `leaderboard` image references for the current build tag.
+
