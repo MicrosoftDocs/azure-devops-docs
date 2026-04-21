@@ -9,17 +9,16 @@ metadata:
     - pat-reduction
   description: Learn the answers to frequently asked questions (FAQs), like the permissions that are required to manage users and user access, manage Visual Studio subscriptions, and more.
   ms.subservice: azure-devops-organizations
-  ms.assetid: 7107fb6c-c132-45c2-a0d1-d44e9270e907
   ms.topic: faq
   ms.author: chcomley
   author: chcomley
-  ms.date: 02/26/2026
+  ms.date: 04/20/2026
   monikerRange: '<= azure-devops'
 title: User and permissions management FAQs
 summary: |
   [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
   
-   This article provides answers to frequently asked questions (FAQs) about user and permissions management in Azure DevOps. The FAQs are organized by topic to help you quickly find information about managing users, permissions, access levels, Visual Studio subscriptions, GitHub Enterprise integration, and related administrative tasks.
+   This article provides answers to frequently asked questions (FAQs) about user and permissions management in Azure DevOps. The FAQs are organized by subject to help you quickly find information about managing users, permissions, access levels, Visual Studio subscriptions, GitHub Enterprise integration, and related administrative tasks.
 
   [!INCLUDE [use-microsoft-entra-reduce-pats](../../includes/use-microsoft-entra-reduce-pats.md)]
   <a name="general-permissions"></a>
@@ -36,7 +35,7 @@ sections:
       - question: |
           Q: Why can't I manage users?
         answer: |
-          A: Be a member of the Project Collection Administrators group or [organization Owner](../security/look-up-organization-owner.md) to manage users at the organization level. To get added, see [Change permissions at the organization or collection-level](../security/change-organization-collection-level-permissions.md).
+          A: To manage users at the organization level, you must be a member of the Project Collection Administrators group or [organization Owner](../security/look-up-organization-owner.md). To get added, see [Change permissions at the organization or collection-level](../security/change-organization-collection-level-permissions.md).
           
           <a name="find-owner"></a>
           
@@ -69,7 +68,7 @@ sections:
       - question: |
           Q: How are Visual Studio subscribers detected?
         answer: |
-          A: Azure DevOps automatically recognizes Visual Studio subscribers who have Azure DevOps as a benefit based on the users' email address or [alternate identity](/visualstudio/subscriptions/use-connected-identities) associated with the subscription. Administrators can choose the “Visual Studio Subscriber” access level, but regardless of what access level they assign initially, the users Visual Studio subscription access will be detected when they sign in.
+          A: Azure DevOps automatically recognizes Visual Studio subscribers who have Azure DevOps as a benefit, based on the email address or [alternate identity](/visualstudio/subscriptions/use-connected-identities) associated with their subscription. Administrators can assign any access level initially, but when the user signs in, Azure DevOps detects the Visual Studio subscription and adjusts their access accordingly.
       
       - question: |
           Q: When do I select "Visual Studio/MSDN Subscriber"?
@@ -469,12 +468,12 @@ sections:
           If you're a Microsoft Entra guest, do one of the following steps:
           
           * Have another Azure DevOps admin, who isn't a Microsoft Entra guest, manage the users in Azure DevOps for you. Members of the Project Collection Administrators group inside Azure DevOps can administer users.
-          * Have the Microsoft Entra admin remove your account from the connected directory and readd it. The admin needs to make you a Microsoft Entra member rather than a guest. See [Can Microsoft Entra B2B users be added as members instead of guests?](/azure/active-directory/b2b/user-properties#can-azure-ad-b2b-users-be-added-as-members-instead-of-guests)
+          * Have the Microsoft Entra admin remove your account from the connected directory and readd it. The admin needs to make you a Microsoft Entra member rather than a guest. See [Can Microsoft Entra B2B users be added as members instead of guests?](/entra/external-id/user-properties#can-azure-ad-b2b-users-be-added-as-members-instead-of-guests)
           * Change the **User Type** of the Microsoft Entra guest by using Microsoft Graph PowerShell. We don't advise using the following process, but it works and allows the user to query Microsoft Entra ID from Azure DevOps  thereafter.
           
           1. [Download and install Microsoft Graph PowerShell](/powershell/microsoftgraph/installation).
               ```
-              PowerShell Install-Module -Name Microsoft Graph
+              PowerShell Install-Module -Name Microsoft.Graph
               ```
           2. Open PowerShell and run the following cmdlets.
           
@@ -496,7 +495,7 @@ sections:
               PowerShell Get-MgUser -UserId <Id> -Property DisplayName, ID, UserPrincipalName, UserType | Select DisplayName, ID, UserPrincipalName, UserType 
               ```
           
-              d. Change the **usertype** from **member** to **guest**:
+              d. Change the **usertype** from **guest** to **member**:
           
               ```
               PowerShell Update-MgUser -UserID <replace the  ID for the result of the command to search> -UserType Member

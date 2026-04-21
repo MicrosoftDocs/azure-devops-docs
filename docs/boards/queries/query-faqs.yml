@@ -9,7 +9,7 @@ metadata:
   author: chcomley
   ms.topic: faq
   monikerRange: '<= azure-devops'
-  ms.date: 09/29/2025
+  ms.date: 04/20/2026
 
 title: FAQs about queries in Azure Boards and Azure DevOps
 
@@ -39,7 +39,7 @@ sections:
 
           ::: moniker range="<=azure-devops"
           > [!NOTE] 
-          > Managed queries don't support proximity searches; semantic searches do. Semantic search supports both `*` and `?` as wildcard characters and allows multiple wildcards. For more, see [Advanced work items search](../../project/search/advanced-work-item-search-syntax.md).
+          > Managed queries don't support proximity searches; semantic searches do. Semantic search supports both `*` and `?` as wildcard characters and allows multiple wildcards. For more, see [Functional work item search](../../project/search/functional-work-item-search.md).
           ::: moniker-end
 
           ---
@@ -93,14 +93,6 @@ sections:
           :::row-end:::
           ---
 
-      - question: Can I filter query results interactively?
-        answer: |
-          Yes. Use the interactive filters described in [Interactively filter backlogs, boards, queries, and plans](../backlogs/filter-backlogs-boards-plans.md).
-
-      - question: Can I run several queries at the same time?
-        answer: |
-          Yes. Open each query in a new browser tab to run multiple queries concurrently.  
-
       - question: Which query macros work only in the web portal?
         answer: |
           The following macros run only in the web portal: **@CurrentIteration**, **@CurrentIteration +/- n**, **@Follows**, **@MyRecentActivity**, **@RecentMentions**, **@RecentProjectActivity**, and **@TeamAreas**. Queries that use these macros don't run correctly in Visual Studio/Team Explorer, Excel, or Project.
@@ -141,7 +133,7 @@ sections:
 
       - question: How do I query for a list of related work items?
         answer: |
-          You can't filter only by the **Related** link type. To find items that contain links, use `Related Link Count > 0`. That returns all work items that have any link type (Parent-Child, Predecessor-Successor, Related, etc.).
+          Use a **Work items and direct links** query and select **Related** as the link type filter. This approach returns work items that have Related links. For more information, see [Query based on link type](linking-attachments.md).
 
       - question: Can I query for work items linked across projects?
         answer: |
@@ -164,10 +156,6 @@ sections:
           No. Cross-project queries don't open directly in Excel. Export a cross-project query to CSV, open it in Excel, and then import the data into Azure Boards. See [Bulk import or update work items using CSV files](import-work-items-from-csv.md).
           ::: moniker-end
 
-      - question: How do I manage dependencies across projects?
-        answer: |
-          Use Predecessor/Successor link types to model dependencies between work items. For details, see [Link user stories, issues, bugs, and other work items](../backlogs/add-link.md).
-
   - name: Query folders
     questions:
       - question: Can I change the owner of a query or folder?
@@ -176,7 +164,7 @@ sections:
 
       - question: Can I move a query or a folder?
         answer: |
-          Yes. In the web portal, choose **Rename** from the context menu to move or rename a folder. In Visual Studio Team Explorer, drag the folder to the new location. In Team Explorer Everywhere or Eclipse, choose **Move** and select the destination folder.
+          Yes. In the web portal, choose **Rename** from the context menu to move or rename a folder. In Visual Studio Team Explorer, drag the folder to the new location.
 
       - question: Can I add folders to My Favorites or Team Favorites?
         answer: |
@@ -184,7 +172,7 @@ sections:
 
       - question: Are queries and folders created in the web portal the same as in Team Explorer?
         answer: |
-          Yes. They share the same structure; you might need to refresh the other client to see updates. In Visual Studio 2019, enable the legacy experience to view work item queries and folders: see [Set work item experience in Visual Studio](../work-items/set-work-item-experience-vs.md).
+          Yes. They share the same structure; you might need to refresh the other client to see updates. In Visual Studio 2019 and later, you can switch between the default and legacy views of the Work Items page: see [Set work item experience in Visual Studio](../work-items/set-work-item-experience-vs.md).
 
   - name: Monitor progress with queries 
     questions:

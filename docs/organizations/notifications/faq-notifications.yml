@@ -3,12 +3,11 @@ metadata:
   title: Notification FAQs
   titleSuffix: Azure DevOps
   description: General questions and answers about notifications settings in Azure DevOps.
-  toc: show
   ms.topic: faq
   ms.author: chcomley
   ms.subservice: azure-devops-notifications
   author: chcomley
-  ms.date: 09/09/2024
+  ms.date: 04/21/2026
   monikerRange: '<= azure-devops'
 title: FAQs about Notifications
 summary: |
@@ -66,10 +65,7 @@ sections:
              - To add a user to the project, go to **Project settings** > **Permissions** > **Members** and add the user.
           - **Check group membership:**
              - Ensure that the group you're trying to mention has the necessary permissions to access the work item or pull request.
-             - Groups must have at least **Basic** access level to be mentioned in work items and pull requests.
-          - **Check group settings:**
-             - Verify that the group is correctly configured in Microsoft Entra ID.
-             - Ensure that the group is added to the project. To add a group to the project, go to **Project Settings** > **Permissions** > **Groups** and add the group.
+             - To add a group to the project, go to **Project Settings** > **Permissions** > **Groups** and add the group.
           - **Limit identity search and selection:**
              - If your organization manages users and groups using Microsoft Entra ID, you can limit the set of users and groups to project members and groups.
              - For more information, see [Limit identity search and selection](../../user-guide/manage-organization-collection.md).

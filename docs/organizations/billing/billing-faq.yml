@@ -9,11 +9,10 @@ metadata:
     - support-driven-update
   description: Find answers to frequently asked questions (FAQs) about billing for your organization in Azure DevOps.
   ms.subservice: azure-devops-billing
-  ms.assetid: 62d94b8a-256a-4347-905a-3393f5d8a13f
   ms.topic: faq
   ms.author: chcomley
   author: chcomley
-  ms.date: 02/23/2026
+  ms.date: 04/20/2026
   monikerRange: '<= azure-devops'
 title: Billing FAQs
 summary: |
@@ -73,7 +72,7 @@ sections:
       - question: |
           What happens when a user is deleted in Microsoft Entra ID?
         answer: |
-          When a user is permanently deleted in Microsoft Entra ID, within a few hours, they're removed from Azure DevOps and you're no longer be billed for their license. You might need to remove guest users  manually from Azure DevOps. For more information, see [Delete a user in Microsoft Entra ID](/troubleshoot/azure/active-directory/troubleshoot-user-creation-deletion-issues?tabs=azure-portal#delete-a-user)
+          When a user is permanently deleted in Microsoft Entra ID, within a few hours, they're removed from Azure DevOps and you're no longer billed for their license. You might need to remove guest users manually from Azure DevOps. For more information, see [Delete a user in Microsoft Entra ID](/entra/fundamentals/how-to-create-delete-users#delete-a-user).
       
       - question: |
           How can I stop paying for users who aren't actively using Azure DevOps?
@@ -102,10 +101,6 @@ sections:
         answer: |
           Those users assigned Basic + Test Plans lose access until you do [set up billing](set-up-billing-for-your-organization-vs.md#set-up-billing).
       
-      - question: |
-          How did paid extensions change in the Azure DevOps Marketplace in July 2019?
-        answer: |
-          Microsoft ended support for purchasing non-Microsoft paid Azure DevOps extensions through your Azure bill on July 1, 2019. We're encouraging our publishers to offer paid access to their services directly.
 
       - question: |
           How do I pay for Azure DevOps Server through Azure?
@@ -289,7 +284,7 @@ sections:
         answer: |
           If you work in more than one Azure DevOps organization billed to the same Azure subscription, you can separate the charges for each organization. 
           
-          To make this split easier, we automatically add the tag `"_organizationname_"` and the name of your Azure DevOps organization associated with the charges. We started emitting this tag in Feb 2020, so you don't see it before that date. See the following two ways you can use this tag to drill into charges for a given organization.
+          To make this split easier, we automatically add the tag `"_organizationname_"` and the name of your Azure DevOps organization associated with the charges. See the following two ways you can use this tag to drill into charges for a given organization.
           
           1. In the Azure portal, select **Subscriptions** > **Cost analysis**.
           
@@ -315,7 +310,7 @@ sections:
       - question: |
           Can I move between subscriptions? 
         answer: |
-          No, you can't move the organization resource that appears in the Azure portal between Azure subscriptions via the Azure portal. But you can move it between subscriptions by [changing the subscription](change-azure-subscription.md) your organization uses for billing. When you change the subscription, a new resource group gets created for your organization. You can then safely delete the old resource group.
+          No, you can't move the organization resource that appears in the Azure portal between Azure subscriptions via the Azure portal. But you can move it between subscriptions by [changing the subscription](set-up-billing-for-your-organization-vs.md#change-your-billing-subscription) your organization uses for billing. When you change the subscription, a new resource group gets created for your organization. You can then safely delete the old resource group.
           
       - question: |
           Why don't I see a resource representing my Azure DevOps organization? 
@@ -339,7 +334,7 @@ sections:
         answer: |
           The location of your organization resource could be incorrect for various reasons, such as [changing your organization geography](../accounts/change-organization-location.md#change-organization-geography). To find the location of your organization, [check the geography listed in Azure DevOps](../accounts/change-organization-location.md), which is the source of truth for Azure DevOps locations. If the location listed there doesn't match the location listed inside the Azure portal, do these steps:
           
-          1. In Azure DevOps Billing settings, [remove your billing subscription](change-azure-subscription.md#remove-your-billing-subscription).
+          1. In Azure DevOps Billing settings, [remove your billing subscription](set-up-billing-for-your-organization-vs.md#remove-your-billing-subscription).
           2. In the Azure portal, delete the Azure DevOps resource group if it's still there. 
           3. In Azure DevOps Billing settings, [set up billing for your organization](set-up-billing-for-your-organization-vs.md#set-up-billing).
 
@@ -356,7 +351,7 @@ sections:
         answer: |
           If you have [renamed your organization](../accounts/rename-organization.md) after you set up billing, then the name of the organization resource is the original name. To change the name of the organization resource to the new name, do these steps:
 
-          1. In Azure DevOps Billing settings, [remove your billing subscription](change-azure-subscription.md#remove-your-billing-subscription).
+          1. In Azure DevOps Billing settings, [remove your billing subscription](set-up-billing-for-your-organization-vs.md#remove-your-billing-subscription).
           2. In the Azure portal, delete the Azure DevOps resource group if it's still there. 
           3. In Azure DevOps Billing settings, [set up billing for your organization](set-up-billing-for-your-organization-vs.md#set-up-billing).
 
@@ -403,7 +398,7 @@ sections:
       - question: |
           What happens if I cancel my Azure subscription, or my credit card expires?
         answer: |
-          When the Azure subscription used for billing on your organization isn't in active status - for example, because you canceled the subscription, or the credit card used for billing expired - your organization reverts to the [free tier](overview.md#free-tier) of service. To resume access to paid services, [reactivate your subscription](/azure/cost-management-billing/manage/subscription-disabled) or [change your organization's billing subscription](change-azure-subscription.md).
+          When the Azure subscription used for billing on your organization isn't in active status - for example, because you canceled the subscription, or the credit card used for billing expired - your organization reverts to the [free tier](overview.md#free-tier) of service. To resume access to paid services, [reactivate your subscription](/azure/cost-management-billing/manage/subscription-disabled) or [change your organization's billing subscription](set-up-billing-for-your-organization-vs.md#change-your-billing-subscription).
           
           ![Screenshot of invalid Azure billing subscription.](media/billing-faq/azure-subscription-invalid.png)
 
@@ -438,11 +433,6 @@ sections:
           
   - name: Other questions
     questions:
-      - question: |
-          Why don't I see Team Projects in the Azure portal?
-        answer: |
-          You can't create Team Projects or view them in the Azure portal as of September 28, 2018. You can continue to **access** any Team Projects you create via the Azure portal through your organization URL (`https://dev.azure.com/{Your_Organization}`). You can always [create new organizations and projects from visualstudio.com](https://app.vsaex.visualstudio.com/me?mkt=en-US&campaign=o~msft~vscom~vssignin). The best way for Azure users to get started using Azure DevOps is to [create a project](https://azure.microsoft.com/features/devops-projects/).
-          
       - question: |
           Why is my organization already linked to an Azure subscription?
         answer: |

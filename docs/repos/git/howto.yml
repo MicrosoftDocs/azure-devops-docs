@@ -3,10 +3,9 @@ metadata:
   title: Git frequently asked questions
   titleSuffix: Azure Repos
   description: Find answers to frequently asked questions about Git in Azure Repos, including branch management, commit practices, proxy and SSL configuration, and authentication troubleshooting.
-  ms.assetid: b1262306-214c-4422-8eda-d03d05825241
   ms.service: azure-devops-repos
   ms.topic: faq
-  ms.date: 02/23/2026
+  ms.date: 04/21/2026
   ai-usage: ai-assisted
   monikerRange: '<= azure-devops'  
   ms.subservice: azure-devops-repos-git
@@ -132,10 +131,6 @@ sections:
           
           You can also change the name and email settings from Visual Studio. From the **Git** menu, select **Settings**. In the **Options** dialog, select **Git Global Settings** or **Git Repository Settings** > **General**.
 
-          Visual Studio 2019 version 16.8 and later versions provide a Git version control experience while maintaining the **Team Explorer** Git user interface. To use **Team Explorer**, clear **Tools** > **Options** > **Preview Features** > **New Git user experience** from the menu bar. You can use Git features from either interface.
-          
-          In Team Explorer, choose **Settings** and under **Git**, select the **Global Settings** or **Repository Settings** link.  
-
       - question: |
           How can I troubleshoot Git clone or push failures?
         answer: |
@@ -241,3 +236,12 @@ sections:
           > Avoid setting `http.sslVerify` to `false` except for temporary testing. Disabling SSL verification removes protection against man-in-the-middle attacks.
 
           For pipeline agent scenarios with self-signed certificates, see [Run a self-hosted agent behind a proxy or with self-signed certificates](../../pipelines/agents/certificate.md).
+
+additionalContent: |
+
+  ## Related content
+  
+  - [Azure Repos Git documentation](index.yml)
+  - [Clone an existing Git repo](clone.md)
+  - [Save your work with commits](commits.md)
+  - [Use Git branches](./create-branch.md)

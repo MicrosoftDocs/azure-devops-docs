@@ -4,8 +4,8 @@ description: Learn how to troubleshoot pipeline runs in Azure Pipelines using lo
 ms.assetid: BFCB144F-9E9B-4FCB-9CD1-260D6873BC2E
 ms.author: sdanie
 ms.reviewer: steved0x
-ms.topic: how-to
-ms.date: 02/23/2026
+ms.topic: troubleshooting
+ms.date: 04/20/2026
 monikerRange: '<= azure-devops'
 author: steved0x
 ---
