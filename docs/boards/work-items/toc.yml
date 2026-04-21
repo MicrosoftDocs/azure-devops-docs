@@ -25,7 +25,7 @@
 - name: Manage issues
   href: ../backlogs/manage-issues-impediments.md
   displayname: impediment
-- name: Link work items
+- name: Link work items to objects
   href: ../backlogs/add-link.md
   displayname: remote work, bulk modify links, pull request, build
 - name: Copy or clone work items
@@ -33,7 +33,7 @@
   displayname: copy, clone, create, duplicate, copy to clipboard
 - name: Collaborate with others
   items:
-  - name: Follow work
+  - name: Follow work items and PRs
     href: follow-work-items.md
     displayname: query
   - name: Use @mentions in discussions
@@ -73,3 +73,9 @@
     displayname: rich text, tags
 - name: Go mobile
   href: ../../project/navigation/mobile-work.md?toc=/azure/devops/boards/toc.json
+- name: Integrate with development tools
+  items:
+  - name: Use GitHub Copilot
+    href: ../github/work-item-integration-github-copilot.md
+  - name: Link to GitHub artifacts
+    href: ../github/link-to-from-github.md

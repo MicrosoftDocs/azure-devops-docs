@@ -1,9 +1,9 @@
 ---
-title: Enable and add upstream sources to a public feed
-description: How to enable and add upstream sources to a public feed in Azure Artifacts
+title: Use upstream sources in a public feed
+description: Learn how to enable and add upstream sources to a public feed in Azure Artifacts.
 ms.service: azure-devops-artifacts
 ms.topic: tutorial
-ms.date: 03/02/2023
+ms.date: 10/31/2025
 monikerRange: 'azure-devops'
 ---
 
@@ -11,64 +11,50 @@ monikerRange: 'azure-devops'
 
 [!INCLUDE [version-eq-azure-devops](../../includes/version-eq-azure-devops.md)]
 
-Azure Artifacts enables developers to manage their dependencies from a single feed. Using upstream sources, you can consume packages from feeds and public registries such as NuGet.org, and npmjs.com. In this article, you'll learn how to:
-
-> [!div class="checklist"]
->
-> - Create a public feed 
-> - Enable upstream sources
-> - Add a new upstream source
+Azure Artifacts helps you to manage all your dependencies from a single feed. By setting up upstream sources, you can consume packages from feeds and public registries such as *NuGet.org*, and *npmjs.com*. This article walks you through setting up upstream sources in a public feed and restoring your packages.
 
 ## Prerequisites
 
-- An Azure DevOps organization. [Create an organization](../../organizations/accounts/create-organization.md), if you don't have one already.
-
-- An Azure DevOps project. [Create a new project](../../organizations/projects/create-project.md) if you don't have one already.
-
-- Set your project visibility to [public](../../organizations/projects/make-project-public.md).
+| **Product**        | **Requirements**                       |
+|--------------------|----------------------------------------|
+| **Azure DevOps**   | - An Azure DevOps [organization](../../organizations/accounts/create-organization.md).<br>- An Azure DevOps [project](../../organizations/projects/create-project.md).<br> - Set your project visibility to [public](../../organizations/projects/make-project-public.md). |
 
 ## Create a public feed
 
-A public feed is a project-scoped feed in a public project. Public feeds inherit the visibility settings of the hosting project.
+[!INCLUDE [allow-public-project-policy](../../organizations/projects/includes/allow-public-project-policy.md)]
 
-1. Sign in to your Azure DevOps organization, and then select your public project.
+A public feed is a project-scoped feed in a public project. Public feeds inherit the visibility settings of the hosting project. If you already have a public feed you can skip to the next section, otherwise create one as follows:
 
-1. Select **Artifacts**, and then select **Create Feed**.
+1. Sign in to Azure DevOps, then navigate to your public project.
 
-    :::image type="content" source="../media/new-feed-devops.png" alt-text="A screenshot showing the create feed button in Azure Artifacts.":::
+1. Select **Artifacts**, then select **Create Feed**.
 
-1. Give your feed a **Name**, and then select **Project: PublicProject (Recommended)** for its scope.
-
-    :::image type="content" source="../media/new-public-feed.png" alt-text="A screenshot showing how to create a new public feed.":::
+1. Provide a **Name** for your feed, then choose *Project: YourProjectName (Recommended)* as the **Scope**.
 
 1. Select **Create** when you're done.
+    
+    :::image type="content" source="../media/new-public-feed.png" alt-text="A screenshot displaying how to create a new public feed in Azure Artifacts.":::
 
 > [!IMPORTANT]
-> Public feeds do not support upstreaming to a private Artifacts feed. If you are using a public Azure Artifacts feed, you can only upstream to public registries (NuGet.org, npmjs) or other **Public** Azure Artifacts feeds.
+> Public feeds do not support upstreaming to private Artifacts feeds. You can only upstream to public registries or other **Public** Azure Artifacts feeds.
 
 ## Add an upstream source
 
-1. Sign in to your Azure DevOps organization, and then select your public project.
+Now that your public feed is set up, you can start adding upstream sources. For public feeds, you can only configure public registries or other public Azure Artifacts feeds as upstream sources. Follow these steps to add an upstream source:
 
-1. Select **Artifacts**, and then select your public feed.
+1. Sign in to Azure DevOps, then navigate to your public project.
 
-1. Select the gear icon ![gear icon](../../media/icons/gear-icon.png) to access your **Feed Settings**.
+1. Select **Artifacts**, then select your public feed from the dropdown menu.
 
-1. Select **Upstream Sources**, and then select **Add Upstream**.
+1. Select the gear icon ![gear icon](../../media/icons/gear-icon.png) to open your **Feed Settings**.
 
-    :::image type="content" source="../media/public-feed-add-upstream.png" alt-text="A screenshot showing how to add an upstream source in a public feed.":::
+1. Select **Upstream Sources**, then select **Add Upstream**.
 
-1. Select your upstream source **Type**. In this example, we'll be adding NuGet.org as an upstream source.
+1. Select the upstream source **Type**. In this example, you add *NuGet.org* as an upstream source, so select **Public source**.
 
-    :::image type="content" source="../media/public-feed-upstream-types.png" alt-text="A screenshot showing the different types of upstream sources.":::
+1. Select the **NuGet Gallery** from the dropdown menu, then select **Add**. 
 
-1. Configure your source, and then select **Add** when you're done.
-
-    :::image type="content" source="../media/public-feed-configure-upstream.png" alt-text="A screenshot showing how to configure your upstream source.":::
-
-1. Select **Save** to save your new upstream source.
-
-    :::image type="content" source="../media/save-upstream.png" alt-text="A screenshot showing how to save the newly added upstream source.":::
+1. Select **Save** on the right to save your new upstream source.
 
 > [!IMPORTANT]
 > [Package lock files](https://devblogs.microsoft.com/nuget/enable-repeatable-package-restores-using-a-lock-file/) are required to save NuGet and Dotnet packages from upstream sources to a public feed.
@@ -77,72 +63,74 @@ A public feed is a project-scoped feed in a public project. Public feeds inherit
 
 Run the following command in your project directory to restore your packages:
 
+> [!NOTE]
+> You must have **Feed and Upstream Reader (Collaborator)** or higher permissions to install new package versions from upstream sources. Anonymous users can only install packages that already exist in the feed.
+
 #### [NuGet](#tab/nuget)
 
-```Command
+```
 nuget.exe restore
 ```
 
 #### [Dotnet](#tab/dotnet)
 
-```Command
+```
 dotnet restore --interactive
 ```
 
 #### [Npm](#tab/npm)
 
-```Command
+```
 npm install
 ```
 
 #### [Maven](#tab/maven)
 
-```Command
+```
 mvn install
 ```
 
 #### [Gradle](#tab/gradle)
 
-```Command
+```
 gradle build
 ```
 
 #### [Python](#tab/python)
 
-```Command
+```
 pip install
 ```
 
 #### [Cargo](#tab/cargo)
 
-Feed and Upstream Reader (Collaborator) roles or higher must use an additional flag to authenticate with their public feed in order to install packages. Be sure to follow the instructions in [Cargo - Connect to a feed](../cargo/cargo-upstream-source.md#connect-to-your-feed) to properly authenticate with your feed, and then run the following command in your project directory to restore your packages. 
+Users with the **Feed and Upstream Reader (Collaborator)** role or higher must include an additional flag to authenticate with their public feed when installing packages. If you haven’t authenticated yet, follow the steps in [Cargo - Connect to your feed](../cargo/cargo-upstream-source.md#connect-to-your-feed), then run the following command in your project directory to restore your packages: 
 
-```Command
+```
 cargo build
 ```
 
 - - -
 
-> [!NOTE]
-> You must be a **Feed and Upstream Reader (Collaborator)** or higher to install new package versions from upstream. Anonymous users can only install packages that exist in their feed.
-
 ## Q&A
 
-#### Q: I'm trying to restore my packages but I keep getting a 401 unauthorized error?
+#### Q: I'm trying to restore my packages but I keep getting a 401 unauthorized error. Why?
 
-The contents of a feed can only be changed by an authenticated and authorized identity who has appropriate permissions on the feed. This includes saving packages into the feed from an upstream source. Unauthenticated (anonymous) users can *download packages already saved* into a feed, but cannot save new packages from an upstream into the feed.
-	
-Maintainers of a project should save all needed versions of packages into the public feed. This can be done by restoring a project using an identity that *can* supply credentials to the feed when prompted, **and** ensuring that the identity used has **Feed and Upstream Reader (Collaborator)** or higher permissions on the public feed.
-	
-If anonymous users who are restoring packages for a project are repeatedly being blocked by requests for credentials (401 response), the following approaches will reduce or eliminate the issue:
-	
-1. Avoid using package version ranges in your project configuration. Explicit package versions will ensure that packaging clients only request the exact version needed.
-	
-1. Where supported, utilize lock files for your packaging ecosystem so that the packaging clients only request the specific versions needed for the project during a restore/install operation.
+The contents of a feed can only be changed by an authenticated and authorized identity with the appropriate permissions. This includes saving packages from an upstream source.
 
-#### Q: I'm trying to restore my packages using Visual Studio, but I'm noticing that they're getting pulled from a different source?
+- **Anonymous users** can download packages already saved in a feed, but cannot save new packages from upstream sources.
+	
+- **Project maintainers** should ensure all required package versions are saved in the public feed. This can be done by restoring the project using an identity that can provide credentials when prompted and has *Feed and Upstream Reader (Collaborator)* or higher permissions.
+	
+If anonymous users repeatedly encounter credential prompts (401 errors), try these approaches:
+	
+- Avoid using package version ranges in your project configuration. Specify explicit package versions to ensure that clients only request the exact version required.
+	
+- Use lock files (where supported) so package clients only request the exact versions needed during restore or install operations.
 
-A: Make sure that Visual Studio is using the source referenced in your *nuget.config* file and not from the local NuGet package manager. See [Package sources](/nuget/consume-packages/install-use-packages-visual-studio#package-sources) for more details. 
+#### Q: I'm restoring packages in Visual Studio, but they're coming from a different source. Why?
+
+A: Ensure Visual Studio uses the source specified in your nuget.config file, not the local NuGet package manager. See [Package sources](/nuget/consume-packages/install-use-packages-visual-studio#package-sources) for more details. 
 
 You can also use the NuGet CLI to force NuGet to use the source in your config file by running the following command:
 
@@ -153,5 +141,7 @@ nuget restore -config <PATH_TO_NUGET_CONFIG_FILE>
 ## Related content
 
 - [Search for packages in upstream sources](search-upstream.md)
+
 - [Set up upstream sources](set-up-upstream-sources.md)
+
 - [Configure upstream behavior](../concepts/upstream-behavior.md)

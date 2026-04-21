@@ -4,7 +4,7 @@ titleSuffix: Azure Repos
 description: RPC failures and http.postBuffer
 ms.service: azure-devops-repos
 ms.manager: jepling
-ms.topic: conceptual
+ms.topic: overview
 ms.date: 01/22/2019
 monikerRange: '<= azure-devops'
 ms.subservice: azure-devops-repos-git

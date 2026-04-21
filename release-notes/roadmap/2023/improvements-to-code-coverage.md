@@ -3,7 +3,7 @@ title: Improvements to code coverage user experience in Pipeline results page
 author: gloridelmorales
 ms.author: glmorale
 ms.date: 6/21/2023
-ms.topic: article
+ms.topic: whats-new
 ms.service: azure-devops
 ms.subservice: azure-devops-release-notes
 description: Improvements to code coverage user experience in Pipeline results page.

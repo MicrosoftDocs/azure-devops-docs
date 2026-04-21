@@ -1,14 +1,16 @@
 ---
 title: Add or remove columns within a work item list in Azure Boards
 titleSuffix: Azure Boards
-description: Learn how to add column fields to show and sort fields for a backlog or query in Azure Boards. 
+description: Manage columns in Azure Boards work item lists to display and organize fields that matter most. Discover step-by-step guidance and boost productivity.
 ms.service: azure-devops-boards
 ms.assetid: 823CC1FD-74A9-4123-92E1-506A505DEC8D
 ms.author: chcomley
+ms.reviewer: chcomley
 author: chcomley
 ms.topic: how-to
 monikerRange: '<= azure-devops'
-ms.date: 04/01/2022
+ms.date: 03/24/2026
+ai-usage: ai-assisted
 ---
 
 # Manage columns in a work item list in Azure Boards 
@@ -18,9 +20,9 @@ ms.date: 04/01/2022
 
 <a id="column-options">  </a>
 
-Each column corresponds to a work item field. You can add and remove columns within work item lists to show the fields of interest to you. Or, you can drag a column to a new position. Your settings persist for each page you customize and are only valid for your views. 
+Each column in a work item list corresponds to a work item field. Add or remove columns to show the fields you need, or drag a column to reorder it. Your column settings persist per page and apply only to your views.
 
-Specifically, you can do the following actions from the following list views:  
+The following table shows which column actions are available in each list view:  
 
 :::row:::
    :::column span="2":::
@@ -56,7 +58,7 @@ Specifically, you can do the following actions from the following list views:
       Yes
    :::column-end:::
 :::row-end::: 
-::: moniker range=">= azure-devops-2020"
+::: moniker range="<=azure-devops"
 :::row:::
    :::column span="2":::
       Add or remove the Parent field
@@ -111,36 +113,35 @@ Specifically, you can do the following actions from the following list views:
 :::row-end::: 
 
 > [!TIP]    
-> Unlike a query result, you can't sort a backlog by a column. However, you can use the **Create Query** link on each backlog to create a query that you can sort on any field column you choose from the **Sorting** tab of the Column options dialog. While you may be able to add a field to sort on, not all fields are supported. For example, selection of the **Parent**, **History**, **Description**, or other rich-text field results in the display of an error message as you can't sort on these fields. 
-
+> You can't sort a backlog by column. To sort backlog items, select **Create Query** on the backlog to create a query, then use the **Sorting** tab in the **Column options** dialog. Not all fields support sorting — for example, **Parent**, **History**, **Description**, and other rich-text fields return an error if you try to sort on them. 
 
 ::: moniker range="azure-devops"
-You can add most fields listed in the [Work item field index](../work-items/guidance/work-item-field.md). All fields defined within the project collection or organization are available for selection, even those fields that aren't used for your particular project. You can view the list of fields defined for your collection from [**Organization Settings>Process>Fields**](../work-items/work-item-fields.md#review-fields)
+You can add most fields listed in the [Work item field index](../work-items/guidance/work-item-field.md), including fields defined across the organization that aren't used in your project. To review available fields, go to [**Organization Settings > Process > Fields**](../work-items/work-item-fields.md#review-fields).
 
 ::: moniker-end 
 
 ::: moniker range=" < azure-devops"
 
-You can add most fields listed in the [Work item field index](../work-items/guidance/work-item-field.md). All fields defined within the project collection or organization are available for selection, even those fields that aren't used for your particular project. If your project uses the Inherited process model, you can view the list of fields defined for your collection from [**Organization Settings>Process>Fields**](../work-items/work-item-fields.md#review-fields)
+You can add most fields listed in the [Work item field index](../work-items/guidance/work-item-field.md), including fields defined across the project collection that aren't used in your project. If your project uses the Inherited process model, review available fields at [**Organization Settings > Process > Fields**](../work-items/work-item-fields.md#review-fields).
 ::: moniker-end 
 
-## About persistence of column options
+## Column option persistence
 
-Once you set the column options for a specific view, your settings  persist until you change them. The following notes apply to specific views. 
+Column options persist until you change them. The following rules apply:
 
-- Column options you set for a backlog apply only to the active team and backlog. Options you set for the product backlog differ from the options you set for a portfolio backlog. 
-- Column options you set for a Sprint backlog persist for all sprints you select until you change them.  
-- Column options you set for a query persist when you save the query. 
-- Column options you set for one of the supported Work items views persists for a specific view only, such as **Assigned to me**, **Following**, **Mentioned**, and so on.
+- **Backlogs** — Settings apply to the active team and backlog level. Product backlog and portfolio backlog settings are independent.
+- **Sprint backlogs** — Settings apply across all sprints until you change them.
+- **Queries** — Settings persist when you save the query.
+- **Work items** — Settings persist per view only (for example, **Assigned to me**, **Following**, or **Mentioned**).
 
 ::: moniker range="azure-devops"
 > [!NOTE]    
-> You can't set column options for other members of your team, nor can you set default column options.  
+> You can't set column options for other team members or set default column options.
 ::: moniker-end
 
 ::: moniker range=" < azure-devops"
 > [!NOTE]    
-> You can't set column options for other members of your team. Also, for projects that use the Inheritance process model, you can't set default column options. For projects that use the On-premises XML process model, you can set the default column options for product, portfolio, and sprint backlogs. For more informaion, see [Process configuration XML element reference](../../reference/xml/process-configuration-xml-element.md).
+> You can't set column options for other team members. For projects that use the Inherited process model, you can't set default column options. For projects that use the On-premises XML process model, you can set defaults for product, portfolio, and sprint backlogs. For more information, see [Process configuration XML element reference](../../reference/xml/process-configuration-xml-element.md).
 ::: moniker-end
 
 ## Prerequisites
@@ -149,7 +150,7 @@ Once you set the column options for a specific view, your settings  persist unti
 
 ## Open the Column options dialog
 
-Start by opening the **Column Options** dialog. If you don't see the option, choose the &hellip; and choose from the options provided.   
+Open the **Column Options** dialog from any work item list. If the option isn't visible, select **More actions** (&hellip;) to find it.
 
 > [!div class="mx-imgBorder"]  
 > ![Screenshot shows Open column options.](media/columns/open-column-options-menu.png) 
@@ -158,36 +159,40 @@ Start by opening the **Column Options** dialog. If you don't see the option, cho
 
 #### [Browser](#tab/browser/)
 
-In the Column options dialog, choose **Add a column** to add a field that isn't shown. To change the order of the fields, drag-and-drop the field where you want it within the set of selected fields. And, to remove a field, choose the ![delete icon](../media/icons/delete_icon.png).
+In the **Column options** dialog:
+
+- Select **Add a column** to add a field.
+- Drag and drop fields to reorder them.
+- Select ![delete icon](../media/icons/delete_icon.png) to remove a field.
 
 ![Screenshot shows Column options dialog.](media/set-column-options-s125.png)  
 
 #### [Visual Studio](#tab/visual-studio/)
 
 > [!IMPORTANT]
-> We strongly recommend that everyone use the [default view](../work-items/view-add-work-items.md#view-work-items) instead of this legacy view. It is designed for you to quickly access a list of work items based on your assignment, following, mentioned, or recent updates. The legacy view is no longer being enhanced and we expect to remove it in a future release of Visual Studio.
+> Use the [default view](../work-items/view-add-work-items.md#view-work-items) instead of this legacy view. The default view gives you quick access to a list of work items based on your assignment, following, mentioned, or recent updates. The legacy view isn't receiving new features and might be removed in a future release of Visual Studio.
 
 You can only change column options for queries in Visual Studio. To open, choose **Column Options**.
 
 :::image type="content" source="media/columns/open-column-options-visual-studio.png" alt-text="Screenshot of Query Results, Visual Studio, open Column Options.":::
 
-### Add or remove fields to add or remove columns
+### Add or remove columns
 
-In the Column Options dialog, to add a field, choose the field from Available columns and choose the **> Add selected columns**. To add multiple fields, use SHIFT+click to select the fields. Fields are added to the bottom of the Selected columns area. 
+In the **Column Options** dialog, select a field from **Available columns** and select **> Add selected columns**. To add multiple fields at once, use Shift+click. New fields appear at the bottom of the **Selected columns** list.
 
-To change the field order, choose the field and choose the up or down arrows.  
+To reorder fields, select a field and use the up or down arrows.  
 
 :::image type="content" source="media/columns/column-options-dialog-visual-studio.png" alt-text="Screenshot shows Column Options dialog, Visual Studio, Fields tab.":::
 
-### Change the column's sort order 
+### Change column sort order
 
-To change the fields use to sort the query results, choose the **Sorting** tab. Add or remove a column field same as before. Use the up and down arrows to specify the order of fields to use to sort. Choose the up or down arrows to choose whether it sorts in ascending or descending order.  To reverse the sort order for a field, select it and then choose **Sort ascending** or **Sort descending**.  
+Select the **Sorting** tab to control which fields sort query results. Add or remove fields the same way as on the **Fields** tab, then use the up and down arrows to set the sort priority. To reverse the sort direction, select the field and choose **Sort ascending** or **Sort descending**.  
 
 :::image type="content" source="media/columns/column-options-dialog-sorting-visual-studio.png" alt-text="Screenshot shows Column Options dialog, Visual Studio, Sorting tab.":::
 
 * * *
 
-::: moniker range=">= azure-devops-2020"
+::: moniker range="<=azure-devops"
 
 ## Add or remove rollup columns
 
@@ -197,27 +202,22 @@ Rollup columns can display progress bars or the sum of numeric fields of child i
 
 ## Sort on a column 
 
-You can sort query results and Work items views. From the Column options dialog, choose **Sorting**.  Add or remove a column field and drag and drop it into the order you want. Choose the up or down arrows to choose whether it sorts in ascending or descending order. 
+To sort query results or **Work items** views, open the **Column options** dialog and select **Sorting**. Add the fields you want to sort by, drag them into priority order, and use the up or down arrows to set ascending or descending order.
 
 > [!div class="mx-imgBorder"]  
 > ![Column options, Sorting page dialog](media/columns/sort-dialog.png) 
 
-## Use keyboard shortcuts to change the column order, column width, or sort options
+## Keyboard shortcuts for columns and sorting
 
-You can change the column order, column size, or sort options by using the following keyboard commands:
-- To change the column order, choose the field and drag it to a new location
-- To resize a column, choose the column divider to the right of the field and drag to a new location  
-- For query results:
-	- Add the field as a column to sort by that field 
-	- To sort by a column, hold down the SHIFT key and select on the field
-	- To reverse the sort order, SHIFT+click on the field 
-	- To sort by multiple columns, SHIFT+click on each column in the order you want to sort   
+- **Reorder a column** — Drag the column header to a new position.
+- **Resize a column** — Drag the column divider to the right of the header.
+- **Sort by a column** (query results only) — Shift+select the column header.
+- **Reverse sort order** — Shift+select the same column header again.
+- **Sort by multiple columns** — Shift+select each column header in the order you want.
 
-For other keyboard shortcuts, enter **?** to display available shortcuts based on the page you're on. 
+For a full list of keyboard shortcuts, press **?** on any page. 
 
-## Related articles
-
-::: moniker range=">= azure-devops-2020"
+## Related content
 
 - [Display rollup progress or totals](display-rollup.md)
 - [Interactively filter backlogs, boards, queries, and plans](filter-backlogs-boards-plans.md) 
@@ -225,11 +225,3 @@ For other keyboard shortcuts, enter **?** to display available shortcuts based o
 - [View, run, or email a work item query](../queries/view-run-query.md)
 - [Create managed queries](../queries/using-queries.md)
 - [Customize a sprint Taskboard](../sprints/customize-taskboard.md)
-::: moniker-end
-
-::: moniker range="< azure-devops-2020"
-- [Interactively filter backlogs, boards, queries, and plans](filter-backlogs-boards-plans.md) 
-- [Work item field index](../work-items/guidance/work-item-field.md)  
-- [Create managed queries](../queries/using-queries.md)
-
-::: moniker-end

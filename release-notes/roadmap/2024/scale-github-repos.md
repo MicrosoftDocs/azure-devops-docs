@@ -3,7 +3,7 @@ title: Improve scalability when searching and linking GitHub repos to a Azure De
 author: danhellem
 ms.author: dahellem
 ms.date: 10/30/2023
-ms.topic: article
+ms.topic: how-to
 ms.service: azure-devops
 ms.subservice: azure-devops-release-notes
 description: Improve scalability when searching and linking GitHub repos to a Azure DevOps project

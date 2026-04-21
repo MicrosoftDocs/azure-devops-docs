@@ -1,14 +1,15 @@
 ---
 title: Get work items programmatically from Azure DevOps Services
-description: Use REST APIs to get work items from Azure DevOps Services with queries in your own custom apps.
+description: Use REST APIs and .NET client libraries to fetch work items from Azure DevOps Services with queries in your own custom apps.
 ms.assetid: e48d9d34-24dd-4e3e-abe8-8f5498e08083
 ms.subservice: azure-devops-ecosystem
-ms.topic: conceptual
+ms.topic: quickstart
 monikerRange: 'azure-devops'
 ms.author: chcomley
 author: chcomley
 ai-usage: ai-assisted
-ms.date: 10/03/2024
+ms.date: 03/02/2026
+ms.custom: pat-reduction, copilot-scenario-highlight
 ---
 
 # Fetch work items with queries programmatically 
@@ -17,34 +18,72 @@ ms.date: 10/03/2024
 
 Fetching work items using queries is a common scenario in Azure DevOps Services. This article explains how to implement this scenario programmatically using REST APIs or .NET client libraries.
 
+[!INCLUDE [ai-assistance-mcp-server-tip](../../includes/ai-assistance-mcp-server-tip.md)]
+
 ## Prerequisites
 
-- **Azure DevOps setup:**
-  - Have [an organization](https://go.microsoft.com/fwlink/?LinkId=307137) in Azure DevOps Services.
-  - Have a [Personal Access Token (PAT)](../../organizations/accounts/use-personal-access-tokens-to-authenticate.md).
+| Category | Requirements |
+|--------------|-------------|
+|**Azure DevOps** | - [An organization](https://go.microsoft.com/fwlink/?LinkId=307137)<br>- Access to a project with work items |
+|**Authentication** | Choose one of the following methods:<br>- [Microsoft Entra ID authentication](../get-started/authentication/entra.md) (recommended for interactive apps)<br>- [Service Principal authentication](../get-started/authentication/service-principal-managed-identity.md) (recommended for automation)<br>- [Managed Identity authentication](../get-started/authentication/service-principal-managed-identity.md) (recommended for Azure-hosted apps)<br>- [Personal Access Token](../../organizations/accounts/use-personal-access-tokens-to-authenticate.md) (for testing) |
+|**Development environment**| A C# development environment. You can use [Visual Studio](https://visualstudio.microsoft.com/vs/) |
 
-- **Development environment:** Have a C# development environment. You can use [Visual Studio](https://visualstudio.microsoft.com/vs/).
+[!INCLUDE [use-microsoft-entra-reduce-pats](../../includes/use-microsoft-entra-reduce-pats.md)]
 
-## Create a C# project in Visual Studio
+## Authentication options
 
-For information about C# programming within Visual Studio, see the [Visual Studio C# programming documentation](/dotnet/csharp/programming-guide/inside-a-program/).
+This article demonstrates multiple authentication methods to suit different scenarios:
 
-## C# code content
+### Microsoft Entra ID authentication (recommended for interactive apps)
 
-The following tasks occur in the code snippet:
+For production applications with user interaction, use Microsoft Entra ID authentication:
 
-- **Authenticate**
-   1. Create credentials using your Personal Access Token (PAT).
-   2. Generate the client using the credentials.
-- **Get the work items**
-   1. Create the query you want to use.
-   2. Retrieve the results for that query.
-   3. Fetch each of the work items by ID.
+```xml
+<PackageReference Include="Microsoft.TeamFoundationServer.Client" Version="19.232.1" />
+<PackageReference Include="Microsoft.VisualStudio.Services.InteractiveClient" Version="19.232.1" />
+<PackageReference Include="Microsoft.Identity.Client" Version="4.67.2" />
+```
 
-### C# code snippet
+### Service principal authentication (recommended for automation)
+
+For automated scenarios, CI/CD pipelines, and server applications:
+
+```xml
+<PackageReference Include="Microsoft.TeamFoundationServer.Client" Version="19.232.1" />
+<PackageReference Include="Microsoft.Identity.Client" Version="4.67.2" />
+```
+
+### Managed identity authentication (recommended for Azure-hosted apps)
+
+For applications running on Azure services (Functions, App Service, etc.):
+
+```xml
+<PackageReference Include="Microsoft.TeamFoundationServer.Client" Version="19.232.1" />
+<PackageReference Include="Azure.Identity" Version="1.13.1" />
+```
+
+### Personal access token authentication
+
+For development and testing scenarios:
+
+```xml
+<PackageReference Include="Microsoft.TeamFoundationServer.Client" Version="19.232.1" />
+```
+
+## C# code examples
+
+The following examples show how to fetch work items using different authentication methods.
+
+### Example 1: Microsoft Entra ID authentication (interactive)
+
+> [!NOTE]
+> The `VssAadCredential` class used in this example requires the `Microsoft.VisualStudio.Services.InteractiveClient` package and targets .NET Framework. For .NET Core/.NET 5+ applications, use the MSAL-based approach shown in [Example 2 (Service Principal)](#example-2-service-principal-authentication-automated-scenarios) or [Example 3 (Managed Identity)](#example-3-managed-identity-authentication-azure-hosted-apps) with `VssOAuthAccessTokenCredential`.
 
 ```cs
-// nuget:Microsoft.TeamFoundationServer.Client
+// NuGet packages:
+// Microsoft.TeamFoundationServer.Client
+// Microsoft.VisualStudio.Services.InteractiveClient  
+// Microsoft.Identity.Client
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -54,51 +93,43 @@ using Microsoft.TeamFoundation.WorkItemTracking.WebApi.Models;
 using Microsoft.VisualStudio.Services.Common;
 using Microsoft.VisualStudio.Services.WebApi;
 
-public class QueryExecutor
+public class EntraIdQueryExecutor
 {
     private readonly Uri uri;
-    private readonly string personalAccessToken;
 
     /// <summary>
-    /// Initializes a new instance of the <see cref="QueryExecutor" /> class.
+    /// Initializes a new instance using Microsoft Entra ID authentication.
     /// </summary>
-    /// <param name="orgName">
-    /// An organization in Azure DevOps Services. If you don't have one, you can create one for free:
-    /// <see href="https://go.microsoft.com/fwlink/?LinkId=307137" />.
-    /// </param>
-    /// <param name="personalAccessToken">
-    /// A Personal Access Token, find out how to create one:
-    /// <see href="/azure/devops/organizations/accounts/use-personal-access-tokens-to-authenticate?view=azure-devops" />.
-    /// </param>
-    public QueryExecutor(string orgName, string personalAccessToken)
+    /// <param name="orgName">Your Azure DevOps organization name</param>
+    public EntraIdQueryExecutor(string orgName)
     {
         this.uri = new Uri("https://dev.azure.com/" + orgName);
-        this.personalAccessToken = personalAccessToken;
     }
 
     /// <summary>
-    /// Execute a WIQL (Work Item Query Language) query to return a list of open bugs.
+    /// Execute a WIQL query using Microsoft Entra ID authentication.
     /// </summary>
     /// <param name="project">The name of your project within your organization.</param>
-    /// <returns>A list of <see cref="WorkItem"/> objects representing all the open bugs.</returns>
-    public async Task<IList<WorkItem>> QueryOpenBugs(string project)
+    /// <returns>A list of WorkItem objects representing all the open bugs.</returns>
+    public async Task<IList<WorkItem>> QueryOpenBugsAsync(string project)
     {
-        var credentials = new VssBasicCredential(string.Empty, this.personalAccessToken);
+        // Use Microsoft Entra ID authentication
+        var credentials = new VssAadCredential();
         var wiql = new Wiql()
         {
-            Query = "Select [Id] " +
-                    "From WorkItems " +
-                    "Where [Work Item Type] = 'Bug' " +
-                    "And [System.TeamProject] = '" + project + "' " +
-                    "And [System.State] <> 'Closed' " +
-                    "Order By [State] Asc, [Changed Date] Desc",
+            Query = "SELECT [System.Id], [System.Title], [System.State] " +
+                    "FROM WorkItems " +
+                    "WHERE [Work Item Type] = 'Bug' " +
+                    "AND [System.TeamProject] = @project " +
+                    "AND [System.State] <> 'Closed' " +
+                    "ORDER BY [System.State] ASC, [System.ChangedDate] DESC",
         };
 
         using (var httpClient = new WorkItemTrackingHttpClient(this.uri, new VssCredentials(credentials)))
         {
             try
             {
-                var result = await httpClient.QueryByWiqlAsync(wiql).ConfigureAwait(false);
+                var result = await httpClient.QueryByWiqlAsync(wiql, project).ConfigureAwait(false);
                 var ids = result.WorkItems.Select(item => item.Id).ToArray();
 
                 if (ids.Length == 0)
@@ -106,40 +137,437 @@ public class QueryExecutor
                     return Array.Empty<WorkItem>();
                 }
 
-                var fields = new[] { "System.Id", "System.Title", "System.State" };
+                var fields = new[] { "System.Id", "System.Title", "System.State", "System.CreatedDate" };
                 return await httpClient.GetWorkItemsAsync(ids, fields, result.AsOf).ConfigureAwait(false);
             }
             catch (Exception ex)
             {
-                Console.WriteLine("Error querying work items: " + ex.Message);
+                Console.WriteLine($"Error querying work items: {ex.Message}");
                 return Array.Empty<WorkItem>();
             }
         }
     }
 
     /// <summary>
-    /// Execute a WIQL (Work Item Query Language) query to print a list of open bugs.
+    /// Print the results of the work item query.
     /// </summary>
-    /// <param name="project">The name of your project within your organization.</param>
-    /// <returns>An async task.</returns>
     public async Task PrintOpenBugsAsync(string project)
     {
-        var workItems = await this.QueryOpenBugs(project).ConfigureAwait(false);
-        Console.WriteLine("Query Results: {0} items found", workItems.Count);
+        var workItems = await this.QueryOpenBugsAsync(project).ConfigureAwait(false);
+        Console.WriteLine($"Query Results: {workItems.Count} items found");
 
         foreach (var workItem in workItems)
         {
-            Console.WriteLine(
-                "{0}\t{1}\t{2}",
-                workItem.Id,
-                workItem.Fields["System.Title"],
-                workItem.Fields["System.State"]);
+            Console.WriteLine($"{workItem.Id}\t{workItem.Fields["System.Title"]}\t{workItem.Fields["System.State"]}");
         }
     }
 }
 ```
 
-## Related articles
+### Example 2: Service principal authentication (automated scenarios)
 
-- [Create a bug](./create-bug-quickstart.md)
-- [Integrate samples](../get-started/client-libraries/samples.md)
+```cs
+// NuGet packages:
+// Microsoft.TeamFoundationServer.Client
+// Microsoft.Identity.Client
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
+using Microsoft.Identity.Client;
+using Microsoft.TeamFoundation.WorkItemTracking.WebApi;
+using Microsoft.TeamFoundation.WorkItemTracking.WebApi.Models;
+using Microsoft.VisualStudio.Services.Common;
+using Microsoft.VisualStudio.Services.WebApi;
+
+public class ServicePrincipalQueryExecutor
+{
+    private readonly Uri uri;
+    private readonly string clientId;
+    private readonly string clientSecret;
+    private readonly string tenantId;
+
+    /// <summary>
+    /// Initializes a new instance using Service Principal authentication.
+    /// </summary>
+    /// <param name="orgName">Your Azure DevOps organization name</param>
+    /// <param name="clientId">Service principal client ID</param>
+    /// <param name="clientSecret">Service principal client secret</param>
+    /// <param name="tenantId">Microsoft Entra tenant ID</param>
+    public ServicePrincipalQueryExecutor(string orgName, string clientId, string clientSecret, string tenantId)
+    {
+        this.uri = new Uri($"https://dev.azure.com/{orgName}");
+        this.clientId = clientId;
+        this.clientSecret = clientSecret;
+        this.tenantId = tenantId;
+    }
+
+    /// <summary>
+    /// Execute a WIQL query using Service Principal authentication.
+    /// </summary>
+    public async Task<IList<WorkItem>> QueryOpenBugsAsync(string project)
+    {
+        // Acquire token using Service Principal
+        var app = ConfidentialClientApplicationBuilder
+            .Create(this.clientId)
+            .WithClientSecret(this.clientSecret)
+            .WithAuthority($"https://login.microsoftonline.com/{this.tenantId}")
+            .Build();
+
+        var scopes = new[] { "https://app.vssps.visualstudio.com/.default" };
+        var result = await app.AcquireTokenForClient(scopes).ExecuteAsync();
+
+        var credentials = new VssOAuthAccessTokenCredential(result.AccessToken);
+        var wiql = new Wiql()
+        {
+            Query = "SELECT [System.Id], [System.Title], [System.State] " +
+                    "FROM WorkItems " +
+                    "WHERE [Work Item Type] = 'Bug' " +
+                    "AND [System.TeamProject] = @project " +
+                    "AND [System.State] <> 'Closed' " +
+                    "ORDER BY [System.State] ASC, [System.ChangedDate] DESC",
+        };
+
+        using (var httpClient = new WorkItemTrackingHttpClient(this.uri, new VssCredentials(credentials)))
+        {
+            try
+            {
+                var queryResult = await httpClient.QueryByWiqlAsync(wiql, project).ConfigureAwait(false);
+                var ids = queryResult.WorkItems.Select(item => item.Id).ToArray();
+
+                if (ids.Length == 0)
+                {
+                    return Array.Empty<WorkItem>();
+                }
+
+                var fields = new[] { "System.Id", "System.Title", "System.State", "System.CreatedDate" };
+                return await httpClient.GetWorkItemsAsync(ids, fields, queryResult.AsOf).ConfigureAwait(false);
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"Error querying work items: {ex.Message}");
+                return Array.Empty<WorkItem>();
+            }
+        }
+    }
+}
+```
+
+### Example 3: Managed identity authentication (Azure-hosted apps)
+
+```cs
+// NuGet packages:
+// Microsoft.TeamFoundationServer.Client
+// Azure.Identity
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
+using Azure.Core;
+using Azure.Identity;
+using Microsoft.TeamFoundation.WorkItemTracking.WebApi;
+using Microsoft.TeamFoundation.WorkItemTracking.WebApi.Models;
+using Microsoft.VisualStudio.Services.Common;
+using Microsoft.VisualStudio.Services.WebApi;
+
+public class ManagedIdentityQueryExecutor
+{
+    private readonly Uri uri;
+
+    /// <summary>
+    /// Initializes a new instance using Managed Identity authentication.
+    /// </summary>
+    /// <param name="orgName">Your Azure DevOps organization name</param>
+    public ManagedIdentityQueryExecutor(string orgName)
+    {
+        this.uri = new Uri($"https://dev.azure.com/{orgName}");
+    }
+
+    /// <summary>
+    /// Execute a WIQL query using Managed Identity authentication.
+    /// </summary>
+    public async Task<IList<WorkItem>> QueryOpenBugsAsync(string project)
+    {
+        // Use Managed Identity to acquire token
+        var credential = new DefaultAzureCredential();
+        var tokenRequestContext = new TokenRequestContext(new[] { "https://app.vssps.visualstudio.com/.default" });
+        var tokenResult = await credential.GetTokenAsync(tokenRequestContext);
+
+        var credentials = new VssOAuthAccessTokenCredential(tokenResult.Token);
+        var wiql = new Wiql()
+        {
+            Query = "SELECT [System.Id], [System.Title], [System.State] " +
+                    "FROM WorkItems " +
+                    "WHERE [Work Item Type] = 'Bug' " +
+                    "AND [System.TeamProject] = @project " +
+                    "AND [System.State] <> 'Closed' " +
+                    "ORDER BY [System.State] ASC, [System.ChangedDate] DESC",
+        };
+
+        using (var httpClient = new WorkItemTrackingHttpClient(this.uri, new VssCredentials(credentials)))
+        {
+            try
+            {
+                var queryResult = await httpClient.QueryByWiqlAsync(wiql, project).ConfigureAwait(false);
+                var ids = queryResult.WorkItems.Select(item => item.Id).ToArray();
+
+                if (ids.Length == 0)
+                {
+                    return Array.Empty<WorkItem>();
+                }
+
+                var fields = new[] { "System.Id", "System.Title", "System.State", "System.CreatedDate" };
+                return await httpClient.GetWorkItemsAsync(ids, fields, queryResult.AsOf).ConfigureAwait(false);
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"Error querying work items: {ex.Message}");
+                return Array.Empty<WorkItem>();
+            }
+        }
+    }
+}
+```
+
+### Example 4: Personal access token authentication
+
+```cs
+// NuGet package: Microsoft.TeamFoundationServer.Client
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
+using Microsoft.TeamFoundation.WorkItemTracking.WebApi;
+using Microsoft.TeamFoundation.WorkItemTracking.WebApi.Models;
+using Microsoft.VisualStudio.Services.Common;
+using Microsoft.VisualStudio.Services.WebApi;
+
+public class PatQueryExecutor
+{
+    private readonly Uri uri;
+    private readonly string personalAccessToken;
+
+    /// <summary>
+    /// Initializes a new instance using Personal Access Token authentication.
+    /// </summary>
+    /// <param name="orgName">Your Azure DevOps organization name</param>
+    /// <param name="personalAccessToken">Your Personal Access Token</param>
+    public PatQueryExecutor(string orgName, string personalAccessToken)
+    {
+        this.uri = new Uri("https://dev.azure.com/" + orgName);
+        this.personalAccessToken = personalAccessToken;
+    }
+
+    /// <summary>
+    /// Execute a WIQL query using Personal Access Token authentication.
+    /// </summary>
+    /// <param name="project">The name of your project within your organization.</param>
+    /// <returns>A list of WorkItem objects representing all the open bugs.</returns>
+    public async Task<IList<WorkItem>> QueryOpenBugsAsync(string project)
+    {
+        var credentials = new VssBasicCredential(string.Empty, this.personalAccessToken);
+        var wiql = new Wiql()
+        {
+            Query = "SELECT [System.Id], [System.Title], [System.State] " +
+                    "FROM WorkItems " +
+                    "WHERE [Work Item Type] = 'Bug' " +
+                    "AND [System.TeamProject] = @project " +
+                    "AND [System.State] <> 'Closed' " +
+                    "ORDER BY [System.State] ASC, [System.ChangedDate] DESC",
+        };
+
+        using (var httpClient = new WorkItemTrackingHttpClient(this.uri, new VssCredentials(credentials)))
+        {
+            try
+            {
+                var result = await httpClient.QueryByWiqlAsync(wiql, project).ConfigureAwait(false);
+                var ids = result.WorkItems.Select(item => item.Id).ToArray();
+
+                if (ids.Length == 0)
+                {
+                    return Array.Empty<WorkItem>();
+                }
+
+                var fields = new[] { "System.Id", "System.Title", "System.State", "System.CreatedDate" };
+                return await httpClient.GetWorkItemsAsync(ids, fields, result.AsOf).ConfigureAwait(false);
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"Error querying work items: {ex.Message}");
+                return Array.Empty<WorkItem>();
+            }
+        }
+    }
+}
+```
+
+## Usage examples
+
+The following examples demonstrate how to call each authentication class.
+
+### Using Microsoft Entra ID authentication (interactive)
+
+```cs
+class Program
+{
+    static async Task Main(string[] args)
+    {
+        var executor = new EntraIdQueryExecutor("your-organization-name");
+        await executor.PrintOpenBugsAsync("your-project-name");
+    }
+}
+```
+
+### Using service principal authentication (CI/CD scenarios)
+
+```cs
+class Program
+{
+    static async Task Main(string[] args)
+    {
+        // These values should come from environment variables or Azure Key Vault
+        var clientId = Environment.GetEnvironmentVariable("AZURE_CLIENT_ID");
+        var clientSecret = Environment.GetEnvironmentVariable("AZURE_CLIENT_SECRET");
+        var tenantId = Environment.GetEnvironmentVariable("AZURE_TENANT_ID");
+        
+        var executor = new ServicePrincipalQueryExecutor("your-organization-name", clientId, clientSecret, tenantId);
+        var workItems = await executor.QueryOpenBugsAsync("your-project-name");
+        
+        Console.WriteLine($"Found {workItems.Count} open bugs via automation");
+        foreach (var item in workItems)
+        {
+            Console.WriteLine($"Bug {item.Id}: {item.Fields["System.Title"]}");
+        }
+    }
+}
+```
+
+### Using managed identity authentication (Azure Functions/App Service)
+
+```cs
+public class WorkItemQueryFunction
+{
+    private readonly ILogger<WorkItemQueryFunction> _logger;
+
+    public WorkItemQueryFunction(ILogger<WorkItemQueryFunction> logger)
+    {
+        _logger = logger;
+    }
+
+    [Function("QueryOpenBugs")]
+    public async Task<HttpResponseData> Run(
+        [HttpTrigger(AuthorizationLevel.Function, "get")] HttpRequestData req)
+    {
+        var executor = new ManagedIdentityQueryExecutor("your-organization-name");
+        var workItems = await executor.QueryOpenBugsAsync("your-project-name");
+
+        var response = req.CreateResponse(System.Net.HttpStatusCode.OK);
+        await response.WriteAsJsonAsync(new { 
+            Count = workItems.Count,
+            Items = workItems.Select(wi => new { 
+                Id = wi.Id, 
+                Title = wi.Fields["System.Title"],
+                State = wi.Fields["System.State"]
+            })
+        });
+        return response;
+    }
+}
+```
+
+### Using personal access token authentication (development/testing)
+
+```cs
+class Program
+{
+    static async Task Main(string[] args)
+    {
+        var pat = Environment.GetEnvironmentVariable("AZURE_DEVOPS_PAT"); // Never hardcode PATs
+        var executor = new PatQueryExecutor("your-organization-name", pat);
+        var workItems = await executor.QueryOpenBugsAsync("your-project-name");
+        
+        Console.WriteLine($"Found {workItems.Count} open bugs");
+        foreach (var item in workItems)
+        {
+            Console.WriteLine($"Bug {item.Id}: {item.Fields["System.Title"]}");
+        }
+    }
+}
+```
+
+## Best practices
+
+### Authentication
+- **Use Microsoft Entra ID** for interactive applications with user sign-in
+- **Use service principals** for automated scenarios, CI/CD pipelines, and server applications
+- **Use managed identities** for applications running on Azure services (Functions, App Service, VMs)
+- **Avoid personal access tokens** in production; use only for development and testing
+- **Never hardcode credentials** in source code; use environment variables or Azure Key Vault
+- **Implement credential rotation** for long-running applications
+- **Ensure proper scopes** - Work item queries require appropriate read permissions in Azure DevOps
+
+### Error handling
+- **Implement retry logic** with exponential backoff for transient failures
+- **Log errors appropriately** for debugging and monitoring
+- **Handle specific exceptions** like authentication failures and network timeouts
+- **Use cancellation tokens** for long-running operations
+
+### Performance
+- **Batch work item retrievals** when querying multiple items
+- **Limit query results** using the TOP clause for large datasets
+- **Cache frequently accessed data** to reduce API calls
+- **Use appropriate fields** to minimize data transfer
+
+### Query optimization
+- **Use specific field names** instead of SELECT * for better performance
+- **Add proper WHERE clauses** to filter results at the server
+- **Order results appropriately** for your use case
+- **Consider query limits** and pagination for large result sets
+
+## Troubleshooting
+
+### Authentication issues
+- **Microsoft Entra ID authentication failures** - Ensure the user has proper permissions and is signed in to Azure DevOps
+- **Service principal authentication failures** - Verify client ID, secret, and tenant ID are correct; check service principal permissions in Azure DevOps
+- **Managed identity authentication failures** - Ensure the Azure resource has a managed identity enabled and proper permissions
+- **PAT authentication failures** - Verify the token is valid and has appropriate scopes (`vso.work` for work item access)
+- **Token expiration** - Check if your PAT expired and generate a new one if needed
+
+### Query issues
+- **Invalid WIQL syntax** - Ensure your Work Item Query Language syntax is correct
+- **Project name errors** - Verify the project name exists and is spelled correctly
+- **Field name errors** - Use the correct system field names (for example, `System.Id`, `System.Title`)
+
+### Common exceptions
+- **VssUnauthorizedException** - Check authentication credentials and permissions
+- **ArgumentException** - Verify all required parameters are provided and valid
+- **HttpRequestException** - Check network connectivity and service availability
+
+### Performance issues
+- **Slow queries** - Add appropriate WHERE clauses and limit result sets
+- **Memory usage** - Process large result sets in batches
+- **Rate limiting** - Implement retry logic with exponential backoff
+
+<a id="use-ai-assistance"></a>
+
+## Use AI to query work items programmatically
+
+If you have the [Azure DevOps MCP Server](../../mcp-server/mcp-server-overview.md) connected to your AI agent in agent mode, you can use natural language prompts to generate code for querying work items.
+
+| Task | Example prompt |
+|------|----------------|
+| Generate query code | `Write C# code to query all active bugs assigned to me in Azure DevOps using the .NET client libraries with Microsoft Entra authentication` |
+| REST API query | `Create a REST API call to fetch work items from Azure DevOps using a WIQL query with a personal access token` |
+| Run a saved query | `Show me how to use the Azure DevOps .NET client to run a saved query and retrieve work item details including custom fields` |
+| Export to CSV | `Build a .NET app that fetches work items from Azure DevOps and exports them to CSV using managed identity authentication` |
+| Filter by area path | `Write C# code to query work items under area path <Contoso\Backend> that were modified in the last 7 days` |
+| Paginate large results | `Show me how to query Azure DevOps work items in batches of 200 using the .NET client libraries with proper pagination` |
+
+> [!NOTE]
+> Agent mode and the MCP Server use natural language, so you can adjust these prompts or ask follow-up questions to refine the results.
+
+## Related content
+
+- [Learn about authentication options](../get-started/authentication/authentication-guidance.md)
+- [Explore REST API samples](../get-started/rest/samples.md)
+- [Understanding Work Item Query Language (WIQL)](../../boards/queries/wiql-syntax.md)

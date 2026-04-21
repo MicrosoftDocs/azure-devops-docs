@@ -4,6 +4,7 @@ author: gloridelmorales
 ms.author: glmorale
 ms.date: 12/6/2021
 description: With this update, we are announcing updates to hosted images. 
+ms.topic: release-notes
 ---
 
 # Updates to hosted images

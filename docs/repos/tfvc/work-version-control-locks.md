@@ -4,7 +4,7 @@ titleSuffix: Azure Repos
 description: Use Team Foundation Version Control locks to prevent others from checking out a file or folder. See resources on lock types and locking commands.
 ms.assetid: 097adb8d-9509-48bb-804e-37456ff80ee8
 ms.service: azure-devops-repos
-ms.topic: conceptual
+ms.topic: overview
 ms.date: 11/10/2022
 monikerRange: '<= azure-devops'
 ms.subservice: azure-devops-repos-tfvc

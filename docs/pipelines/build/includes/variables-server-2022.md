@@ -4,11 +4,11 @@ ms.service: azure-devops-pipelines
 ms.manager: mijacobs
 ms.author: jukullam
 author: juliakm
-ms.date: 02/13/2020
+ms.date: 02/13/2026
 ---
 <a id="agent-variables"></a>
 
-## Agent variables (DevOps Server 2022)
+## Agent variables (Azure DevOps Server 2022)
 
 > [!NOTE]
 > You can use agent variables as environment variables in your scripts and as parameters in your build tasks.
@@ -43,7 +43,7 @@ Example of **Agent.ContainerMapping**:
 }
 ```
 
-## Build variables (DevOps Server 2022)
+## Build variables (Azure DevOps Server 2022)
 
 <a id="build-variables"></a>
 
@@ -89,7 +89,7 @@ When you use a variable in a template that isn't marked as available in template
 | Build.TriggeredBy.ProjectID | If [another build triggers](../../process/pipeline-triggers.md) the build, then this variable is set to ID of the project that contains the triggering build. In Classic pipelines, a build completion trigger triggers this variable. <br><br>It can be used as an environment variable in a script and as a parameter in a build task. It can't be used as part of the build number or as a version control tag. <br><br>If you're triggering a YAML pipeline using `resources`, you should use the [resources variables](/azure/devops/pipelines/yaml-schema/resources-pipelines-pipeline#the-pipeline-resource-metadata-as-predefined-variables) instead. | No |
 | Common.TestResultsDirectory | The local path on the agent where the test results are created. For example: `c:\agent_work\1\TestResults`. For more information about the agent directory structure, see [Agent directory structure](../../agents/agents.md#agent-directory-structure).<br><br>It can be used as an environment variable in a script and as a parameter in a build task. It can't be used as part of the build number or as a version control tag. | No |
 
-## Pipeline variables (DevOps Server 2022)
+## Pipeline variables (Azure DevOps Server 2022)
 
 <a id="pipeline-variables"></a>
 
@@ -100,7 +100,7 @@ When you use a variable in a template that isn't marked as available in template
 > [!TIP]
 > If you're using classic release pipelines, you can use [classic releases and artifacts variables](../../release/variables.md) to store and access data throughout your pipeline.
 
-##  Deployment job variables (DevOps Server 2022)
+##  Deployment job variables (Azure DevOps Server 2022)
 
 <a id="deployment-job-variables"></a>
 
@@ -115,7 +115,7 @@ These variables are scoped to a specific [Deployment job](../../process/deployme
 | Strategy.Name | The name of the deployment strategy: `canary`, `runOnce`, or `rolling`. |
 | Strategy.CycleName | The current cycle name in a deployment. Options are `PreIteration`, `Iteration`, or `PostIteration`. |
 
-## System variables (DevOps Server 2022)
+## System variables (Azure DevOps Server 2022)
 
 <a id="system-variables"></a>
 
@@ -142,7 +142,7 @@ When you use a variable in a template that isn't marked as available in template
 | System.PullRequest.PullRequestNumber | The number of the pull request that caused this build. This variable is populated for pull requests from GitHub that have a different pull request ID and pull request number. This variable is only available in a YAML pipeline if a branch policy affects the PR. | No |
 | System.PullRequest.targetBranchName | The name of the target branch for a pull request. This variable can be used in a pipeline to conditionally execute tasks or steps based on the target branch of the pull request. For example, you might want to trigger a different set of tests or code analysis tools depending on the branch that the changes are being merged into. | No |
 | System.PullRequest.SourceBranch | The branch that is being reviewed in a pull request. For example: `refs/heads/users/raisa/new-feature` for Azure Repos. (This variable is initialized only if the build ran because of a [Git PR affected by a branch policy](../../../repos/git/branch-policies.md#build-validation)). This variable is only available in a YAML pipeline if a branch policy affects the PR. | No |
-| System.PullRequest.SourceRepositoryURI | The URL to the repo that contains the pull request. For example: `https://dev.azure.com/ouraccount/_git/OurProject`.  | No |
+| System.PullRequest.SourceRepositoryUri | The URL to the repo that contains the pull request. For example: `https://dev.azure.com/ouraccount/_git/OurProject`.  | No |
 | System.PullRequest.TargetBranch | The branch that is the target of a pull request. For example: `refs/heads/main` when your repository is in Azure Repos and `main` when your repository is in GitHub. This variable is initialized only if the build ran because of a [Git PR affected by a branch policy](../../../repos/git/branch-policies.md#build-validation). This variable is only available in a YAML pipeline if a branch policy affects the PR. | No |
 | System.StageAttempt | Set to 1 the first time this stage is attempted, and increments every time the stage is retried. | No |
 | System.StageDisplayName | The human-readable name given to a stage. | No |
@@ -153,7 +153,7 @@ When you use a variable in a template that isn't marked as available in template
 | System.TimelineId | A string-based identifier for the execution details and logs of a single pipeline run. | No |
 | TF_BUILD | Set to `True` if a build task runs the script. <br><br>It can be used as an environment variable in a script and as a parameter in a build task. It can't be used as part of the build number or as a version control tag. | No |
 
-## Checks variables (DevOps Server 2022)
+## Checks variables (Azure DevOps Server 2022)
 
 <a id="checks-variables"></a>
 

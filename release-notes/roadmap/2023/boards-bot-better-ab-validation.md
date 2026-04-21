@@ -3,7 +3,7 @@ title: Improved AB# validation
 author: danhellem
 ms.author: dahellem
 ms.date: 10/30/2023
-ms.topic: article
+ms.topic: concept-article
 ms.service: azure-devops
 ms.subservice: azure-devops-release-notes
 description: Improved AB# validation

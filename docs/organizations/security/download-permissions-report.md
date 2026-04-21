@@ -59,7 +59,7 @@ You can download the report for a select repository or for all repositories defi
 	> Reports are automatically deleted after 28 days of the request. 
 
 
-## Related articles  
+## Related content  
 
 - [Set Git repository permissions](../../repos/git/set-git-repository-permissions.md)
 - [Set TFVC repository permissions](../../repos/tfvc/set-tfvc-repository-permissions.md) 

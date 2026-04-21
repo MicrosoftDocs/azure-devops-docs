@@ -1,36 +1,48 @@
 ---
-title: Manage work items
+title: Manage work items effectively
 titleSuffix: Azure Boards 
-description: Learn how to create, update, link, follow, and delete work items, as well as manage attachments and tags.
-ms.custom: devx-track-azurecli
+description: Optimize work item management in Azure Boards. Learn to create, update, link, track, and organize work items with best practices for team collaboration.
+ms.custom: devx-track-azurecli, copilot-scenario-highlight
 ms.service: azure-devops-boards
 ms.assetid: 9474A25E-A9D8-433D-8370-C94624B4ACD6  
-ms.author: v-catherbund
-author: cebundy
+ai-usage: ai-assisted
+ms.author: chcomley
 monikerRange: '<= azure-devops'
 ms.topic: concept-article
-ms.date: 11/11/2024
+ms.date: 02/28/2026
 ---
 
-# Manage Work Items in Azure DevOps
+# Manage work items effectively
 
-[!INCLUDE [version-gt-eq-2019](../../includes/version-gt-eq-2020.md)] 
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)] 
 [!INCLUDE [version-vs-gt-eq-2019](../../includes/version-vs-gt-eq-2019.md)] 
 
-Work items help you plan and manage your project by tracking different types of work, such as user stories, product backlog items, tasks, test cases, or bugs. Use work items to describe the work to be done, assign tasks, track status, and coordinate efforts within your team.
+Work items are the foundation of project management in Azure Boards, enabling teams to track and organize all types of work including user stories, product backlog items, tasks, test cases, and bugs. Effective work item management helps teams:
 
-This article describes the features that you can use to manage work items in Azure DevOps.
+- **Plan and prioritize work** with clear descriptions and assignments
+- **Track progress** through states and status updates
+- **Coordinate team efforts** with links, dependencies, and notifications
+- **Maintain visibility** across project stakeholders and management
+
+This comprehensive guide covers essential work item management capabilities in Azure DevOps.
+
+[!INCLUDE [ai-assistance-mcp-server-tip](../../includes/ai-assistance-mcp-server-tip.md)]
 
 
 [!INCLUDE [temp](../includes/prerequisites-work-items.md)] 
 
-## Update work items
+## Update and modify work items
 
-You can update a work item to change various elements, such as the title, description, state, or assigned team member.
+Regularly update work items to reflect current status, assignments, and progress. Key elements you can modify include:
+
+- **Basic information**: Title, description, and acceptance criteria
+- **Assignment and tracking**: Assigned team member, state, and iteration
+- **Classification**: Area path, tags, and priority
+- **Progress tracking**: Remaining work, completed work, and effort estimates
 
 ### [Browser](#tab/browser)
 
-Once you select the work item you want to update, you can make changes to the work item form.
+Access work items through the web interface for full editing capabilities. Select any work item to open the detailed form where you can make comprehensive updates.
 
 # [Visual Studio 2019](#tab/visual-studio)
 
@@ -59,7 +71,14 @@ az boards work-item update --id <work-item-id> --assigned-to <user-email> --org 
 
 ## View and track work items
 
-You can view work items created by you or your team. The **Work items** page offers several personalized pivots and interactive filter functions to streamline listing work items. 
+Effectively viewing and tracking work items ensures team visibility and progress monitoring. The **Work items** page provides multiple viewing options:
+
+- **My work items**: Items assigned to you or that you're following
+- **Recent activity**: Recently created or updated items
+- **Mentioned**: Items where you're @mentioned in discussions
+- **Custom filters**: Filter by state, iteration, area path, or custom criteria
+
+Use interactive filters and sorting to quickly find relevant work items and maintain awareness of project progress. 
 
 ::: moniker range="azure-devops"
 
@@ -69,9 +88,22 @@ You can also view work items from Visual Studio, Azure DevOps CLI, or the REST A
 
 For more information, see [View and add work items](../work-items/view-add-work-items.md).
 
-## Link Work Items
+## Link work items for traceability
 
-Add links to work items to show relationships between them and other work items or objects. In an Agile scenario, you would typically link features to epics, user stories to features and tasks to user stories in parent-child relationships. There are many other [link types](../../boards/queries/link-type-reference.md) and objects you can link to your work items. For more information, see [Link work items to objects](add-link.md).
+Link work items to establish relationships, dependencies, and hierarchies that improve project visibility and traceability.
+
+**Common linking patterns:**
+- **Hierarchical links**: Connect epics → features → user stories → tasks
+- **Dependency links**: Related work items that block or depend on others
+- **Reference links**: Connect work items to commits, pull requests, or external resources
+
+**Benefits of linking:**
+- Maintain traceability from requirements to implementation
+- Visualize work dependencies and relationships  
+- Enable portfolio rollup and progress reporting
+- Support effect analysis for changes
+
+For comprehensive linking guidance, see [Link work items to objects](add-link.md) and [Link types reference](../../boards/queries/link-type-reference.md).
 
 
 ::: moniker range="azure-devops"
@@ -101,50 +133,115 @@ To stop following changes, select the  **Following** icon :::image type="icon" s
 
 ::: moniker-end
 
-## Attachments
+## Manage attachments and documentation
 
-You can attach files to work items to provide more context or information. You can attach up to 100 files to a work item. Each attachment is limited to 60 MB. You can manage attachments through the web portal by selecting the attachment tab on your work item.
+Attach relevant files and documentation to work items for context and reference.
 
-For more information, see [Manage attachments to work items](../work-items/manage-attachments.md).
+**Attachment capabilities:**
+- **File limits**: Up to 100 files per work item, 60 MB maximum per file
+- **Supported formats**: Images, documents, code files, logs, and more
+- **Access control**: Attachments inherit work item permissions
 
-## Work item tags
+**Best practices:**
+- Use descriptive filenames for easy identification
+- Attach relevant screenshots for UI-related work items
+- Include test data or logs for bug reports
+- Consider linking to shared storage for large files
 
-Tags are keywords that you define to categorize work items. You can add tags to work items to filter backlogs and queries.
+Manage attachments through the web portal's attachment tab. For detailed guidance, see [Manage attachments to work items](../work-items/manage-attachments.md).
 
-To learn how to manage and use tags, see [Add tags to work items](../queries/add-tags-to-work-items.md).
+## Organize with tags and categories
+
+Tags provide flexible categorization for work items beyond formal area and iteration paths.
+
+**Effective tagging strategies:**
+- **Feature grouping**: Tag related work items for feature tracking
+- **Skill requirements**: Identify work requiring specific expertise (frontend, backend, design)
+- **Priority indicators**: Mark urgent or high-visibility items
+- **Process stages**: Track work through custom workflow stages
+- **Cross-team coordination**: Identify work affecting multiple teams
+
+**Tag management tips:**
+- Establish team conventions for consistent tagging
+- Use specific, descriptive tags rather than generic terms
+- Regularly review and clean up unused tags
+- Use tags in queries and dashboard filters
+
+For comprehensive tag management, see [Add tags to work items](../queries/add-tags-to-work-items.md).
 
 
 [!INCLUDE [discussion-tip-azure-devops](../includes/discussion-tip-azure-devops.md)]
 
 
-## Copy or clone work items
+## Copy and clone work items efficiently
 
-Cloning or copying a DevOps work item can be beneficial for several reasons:
+Cloning work items accelerates work creation while maintaining consistency and quality.
 
-- **Efficiency**: Quickly create a new work item with similar details without manually duplicating all the information.
-- **Consistency**: Ensure that the new work item retains the same structure, fields, and values as the original, maintaining consistency across similar tasks.
-- **Template Usage**: Use an existing work item as a template for new work items, especially for recurring tasks or standard processes.
-- **Bulk Operations**: Easily create multiple similar work items for different team members or iterations.
-- **Preserve History**: Keep the history and context of the original work item while creating a new instance for tracking separate progress.
+**Key benefits:**
+- **Time efficiency**: Rapidly create similar work items without manual duplication
+- **Consistency**: Preserve structure, fields, and formatting across related items
+- **Template creation**: Establish reusable patterns for common work types
+- **Bulk operations**: Generate multiple items for different team members or iterations
+- **Historical preservation**: Maintain original context while tracking separate progress
 
-For more information, see [Copy or clone work items](copy-clone-work-items.md).
+**Common use cases:**
+- Creating similar user stories across different features
+- Generating tasks for recurring processes or ceremonies
+- Establishing work item templates for new team members
+- Duplicating bug reports for different environments or configurations
 
-## Move work items between team
+For step-by-step instructions, see [Copy or clone work items](copy-clone-work-items.md).
 
-You can move work items from one team to another team within the same project. To move work items, have the **Edit work items in this node** permission for the target team.
+## Move work items between teams
 
-For more information, see [Move work items from one team to another](../work-items/move-work-items.md).
+Transfer work items between teams to accommodate changing priorities, skill requirements, or organizational restructuring.
 
-## Customizing Work Item Templates
+**Prerequisites:**
+- **Edit work items in this node** permission for the target team
+- Understanding of target team's area path and iteration settings
 
-Project Work items can be customized to track additional information that is important to your team. You can add custom fields, change the layout of the work item form, and add custom rules to enforce processes. This customization can be done by modifying the process templates used by your project. 
+**Common scenarios:**
+- Reassigning work based on team expertise or capacity
+- Reorganizing work due to project restructuring  
+- Balancing workload across teams
+- Moving work to specialized teams (security, performance, accessibility)
 
-There are two ways to customize work item templates:
+**Important considerations:**
+- Moving items might affect team velocity calculations
+- Update area path and iteration to match target team
+- Communicate changes to affected stakeholders
+- Review dependencies that might span teams
 
-1. **Work Item Type**: Customize the work item type used by your project. This customization affects only the work item type. For more information, see [Add and manage work item types](../../organizations/settings/work/customize-process-work-item-type.md).
-1. **Work Item Template**: Create custom work item templates used by your team based on existing work items. Custom work item templates allow you to prepopulate values in commonly used fields. For more information, see, [Use work item templates](work-item-template.md).
+For detailed procedures, see [Move work items from one team to another](../work-items/move-work-items.md).
 
-With the appropriate organization-level permissions, you can create customized inherited *process templates*. All projects that use the customized process template get the customizations made to that process. You can customize which work item types are included in the process template and customize the work item template form. For more information, see [About process customization and inherited processes](../../organizations/settings/work/inheritance-process-model.md) and [Customize a process template](../../reference/process-templates/customize-process.md).
+## Customize work item templates and types
+
+Tailor work items to your team's specific processes and information requirements through customization options.
+
+### Work item template customization approaches
+
+- **Work item templates (Team-level)**
+  - **Purpose**: Create reusable templates with predefined field values
+  - **Scope**: Team-specific customizations
+  - **Benefits**: Standardize common work patterns, reduce manual entry
+  - **Use cases**: Sprint planning templates, bug report templates, user story formats
+
+- **Work item type customization (Project-level)**
+  - **Purpose**: Modify work item types with custom fields, rules, and layouts
+  - **Scope**: Project-wide customizations
+  - **Benefits**: Capture domain-specific information, enforce process compliance
+  - **Use cases**: Custom fields for compliance tracking, specialized workflows
+
+- **Process template inheritance (Organization-level)**
+  - **Purpose**: Create organization-wide process standards
+  - **Scope**: All projects using the custom process
+  - **Benefits**: Consistent practices across teams, centralized governance
+  - **Requirements**: Organization-level permissions
+
+### Customization resources
+- [Use work item templates](work-item-template.md)
+- [Add and manage work item types](../../organizations/settings/work/customize-process-work-item-type.md)
+- [About process customization and inherited processes](../../organizations/settings/work/inheritance-process-model.md)
 
 
 ## Delete work items
@@ -160,22 +257,65 @@ Analytics views provide a powerful way to visualize and analyze your work items.
 
 For more information, see [What is Analytics?](../../report/powerbi/what-is-analytics.md).
 
-## Best Practices
+## Work item management best practices
 
-There are best practices to help you effectively manage work items for development processes including:
+Implement proven practices to maximize the effectiveness of work item management across different process frameworks.
 
-- [Agile](../work-items/guidance/agile-process-workflow.md)
-- [Scrum](../work-items/guidance/scrum-process-workflow.md)
-- [Capability Maturity Model Integration (CMMI)](../work-items/guidance/cmmi-process-workflow.md)
+### Universal best practices
+- **Clear descriptions**: Write specific, actionable descriptions with clear acceptance criteria
+- **Consistent estimation**: Use relative sizing or time-based estimates consistently
+- **Regular updates**: Keep work item states current to reflect actual progress
+- **Effective linking**: Maintain traceability through hierarchical and dependency links
+- **Meaningful tags**: Use standardized tagging conventions for filtering and organization
 
+### Process-specific guidance
+**Agile methodology:**
+- Focus on user value and iterative delivery
+- Maintain a prioritized product backlog
+- Use user stories with clear acceptance criteria
+- [Agile process workflow guidance](../work-items/guidance/agile-process-workflow.md)
 
-## Next steps  
+**Scrum framework:**
+- Organize work into time-boxed sprints
+- Maintain a definition of done
+- Use product backlog items and tasks
+- [Scrum process workflow guidance](../work-items/guidance/scrum-process-workflow.md)
+
+**CMMI approach:**
+- Emphasize process improvement and measurement
+- Track requirements through implementation
+- Use formal change control processes
+- [CMMI process workflow guidance](../work-items/guidance/cmmi-process-workflow.md)
+
+## Next step  
 
 > [!div class="nextstepaction"]
 > [Create your backlog](create-your-backlog.md) or 
 > [Kanban board quickstart](../boards/kanban-quickstart.md) 
 
-## Related articles
+<a id="use-ai-assistance"></a>
+
+## Use AI to manage work items
+
+If you have the [Azure Boards MCP Server](../../mcp-server/mcp-server-overview.md) connected to your AI agent in agent mode, you can use natural language prompts to create, update, and track work items.
+
+| Task | Example prompt |
+|------|----------------|
+| Create a work item | `Create a user story titled 'Add search functionality' with priority 2 and assign it to <Jamal>` |
+| Update work item fields | `Update the state of bug #456 to Resolved and set the reason to 'Fixed'` |
+| Query work items | `Show me all active work items assigned to <me> in the current sprint` |
+| Add links and comments | `Add a comment to work item #789 with the status update 'API integration complete, pending review'` |
+| Summarize a work item | `Get work item <1234> and summarize the description, acceptance criteria, and current discussion` |
+| Clone work item structure | `Create a new user story in <Contoso> with the same title, description, and acceptance criteria as work item <1234> but assign it to <Raisa>` |
+| Track recent updates | `Show work items in <Contoso> that I updated today with their current states` |
+| Check field completeness | `List active user stories in the current sprint for <Contoso> that are missing acceptance criteria or a description` |
+| Get work item history | `Show me the revision history of work item <1234> including who made each change` |
+| Compare work items | `Show work items <1234> and <5678> side by side and highlight the differences in their fields` |
+
+> [!NOTE]
+> Agent mode and the MCP Server use natural language, so you can adjust these prompts or ask follow-up questions to refine the results.
+
+## Related content
 
 - [View the work item field index](../work-items/guidance/work-item-field.md?toc=/azure/devops/boards/work-items/toc.json)
 - [Explore work item form controls](../work-items/about-work-items.md#work-item-form-controls)

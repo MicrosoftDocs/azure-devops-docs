@@ -3,7 +3,7 @@ title: Adding additional metadata for dependency alerts to improve remediation
 author: laurajjiang
 ms.author: laurajiang
 ms.date: 02/06/2025
-ms.topic: article
+ms.topic: concept-article
 ms.service: azure-devops
 ms.subservice: azure-devops-release-notes
 description: Adding additional metadata for dependency alerts to improve remediation

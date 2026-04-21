@@ -47,7 +47,7 @@ You can download the report for a specific release from the release's Security d
 	> [!IMPORTANT]
 	> Reports are automatically deleted after 28 days of the request. 
 
-## Related articles  
+## Related content  
 
 - [Set different levels of pipeline permissions](../../pipelines/policies/permissions.md#pipeline-permissions) 
 - [Manage permissions with command line tool](manage-tokens-namespaces.md) 

@@ -1,30 +1,30 @@
 ---
 title: Feature Progress rollup sample Power BI report 
 titleSuffix: Azure DevOps
-description: Learn how to generate feature progress rollup by Story Points Power BI report.
+description: Learn how to generate a feature progress rollup Power BI report based on Story Points.
 ms.subservice: azure-devops-analytics
 ms.author: chcomley
 ms.custom: powerbisample, engagement-fy23
 author: chcomley
 ms.topic: sample
-monikerRange: '>= azure-devops-2019'
-ms.date: 12/08/2022
+monikerRange: "<=azure-devops"
+ms.date: 04/07/2026
+ai-usage: ai-assisted
 ---
 
 # Feature progress rollup sample report
 
-[!INCLUDE [version-gt-eq-2019](../../includes/version-gt-eq-2019.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
  
-This article shows you how to create a stacked bar report to display progress of Features based on completed child User Stories. The report displays the percentage complete by rollup of Story Points for a given set of active Features. An example is shown in the following image. 
+This article shows you how to create a stacked bar report to display progress of Features based on completed child User Stories. The report displays the percentage complete by rollup of Story Points for a given set of active Features. You can view similar progress bar charts from your backlog by adding a rollup column. To learn how, see [Display rollup progress or totals](../../boards/backlogs/display-rollup.md).
 
-:::image type="content" source="media/reports-boards/feature-progress-stacked-bar-chart.png" alt-text="Screenshot of Feature Progress stacked bar chart report.":::
+When you create rollup reports using Power BI, you might encounter issues related to nested data in your datasets. Specifically, attempting to pivot a table that contains columns with nested data can result in an error message. For more information, see the section about Handling nested data.
 
-You can view similar progress bar charts from your backlog by adding a rollup column. To learn how, see [Display rollup progress or totals](../../boards/backlogs/display-rollup.md).
-
-[!INCLUDE [temp](includes/sample-required-reading.md)]
+## Prerequisites
 
 [!INCLUDE [prerequisites-simple](../includes/analytics-prerequisites-simple.md)]
 
+[!INCLUDE [temp](includes/sample-required-reading.md)]
 
 ## Sample queries
 
@@ -83,12 +83,9 @@ https://analytics.dev.azure.com/{organization}/{project}/_odata/v3.0-preview/Wor
 - `{project}` - Your team project name, or omit `/{project}` entirely, for a cross-project query
 - `{areapath}` - Your Area Path. Example format: `Project/Level1/Level2`.
 
-
 ### Query breakdown
 
-
 The following table describes each part of the query.
-
 
 :::row:::
    :::column span="1":::
@@ -109,10 +106,10 @@ The following table describes each part of the query.
 :::row-end:::
 :::row:::
    :::column span="1":::
-      `and State ne 'Cut'`
+      `and State ne 'Removed'`
    :::column-end:::
    :::column span="1":::
-      Omit Features marked as Cut. 
+      Omit Features marked as Removed. 
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -121,7 +118,7 @@ The following table describes each part of the query.
    :::column-end:::
    :::column span="1":::
       Return work items under a specific Area Path. Replacing with `Area/AreaPath eq '{areapath}'` returns items at a specific Area Path.  
-      To filter by Team Name, use the filter statement `Teams/any(x:x/TeamName eq '{teamname})'`.
+      To filter by Team Name, use the filter statement `Teams/any(x:x/TeamName eq '{teamname}')`.
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -198,7 +195,7 @@ The following table describes each part of the query.
 
 ### Review feature progress for a team  
 
-The following query is the same as the one used above, except it filters by **Team Name** rather than **Area Path**. 
+The following query is the same as the one you used previously, but it filters by **Team Name** rather than **Area Path**. 
 
 #### [Power BI query](#tab/powerbi/)
 
@@ -209,7 +206,7 @@ let
    Source = OData.Feed ("https://analytics.dev.azure.com/{organization}/{project}/_odata/v3.0-preview/WorkItems?"
         &"$filter=WorkItemType eq 'Feature' "
             &"and State ne 'Cut' "
-            &"and (Teams/any(x:x/TeamName eq '{teamname}) or Teams/any(x:x/TeamName eq '{teamname}) or Teams/any(x:x/TeamName eq '{teamname}) "
+            &"and (Teams/any(x:x/TeamName eq '{teamname}') or Teams/any(x:x/TeamName eq '{teamname}') or Teams/any(x:x/TeamName eq '{teamname}')) "
             &"and Descendants/any() "
         &"&$select=WorkItemId,Title,WorkItemType,State,AreaSK "
         &"&$expand=Descendants( "
@@ -230,7 +227,7 @@ in
 https://analytics.dev.azure.com/{organization}/{project}/_odata/v3.0-preview/WorkItems?
         $filter=WorkItemType eq 'Feature'
             and State ne 'Cut'
-            and (Teams/any(x:x/TeamName eq '{teamname}) or Teams/any(x:x/TeamName eq '{teamname}) or Teams/any(x:x/TeamName eq '{teamname})
+            and (Teams/any(x:x/TeamName eq '{teamname}') or Teams/any(x:x/TeamName eq '{teamname}') or Teams/any(x:x/TeamName eq '{teamname}'))
             and Descendants/any()
         &$select=WorkItemId,Title,WorkItemType,State,AreaSK
         &$expand=Descendants(
@@ -244,36 +241,38 @@ https://analytics.dev.azure.com/{organization}/{project}/_odata/v3.0-preview/Wor
 
 ## Transform the data in Power Query Editor
 
-The query returns several columns that you need to expand before you can use them to create a report. Any entity pulled in using an OData **$expand** statement returns a record with potentially several fields. Expand the record to flatten the entity into its fields.  
+The query returns several columns that you need to expand before you can use them to create a report. Any entity you pull in by using an OData **$expand** statement returns a record with potentially several fields. Expand the record to flatten the entity into its fields.
 
-For the Feature Progress report, you'll need to carry out the following transforms: 
+For the Feature Progress report, carry out the following transforms: 
 
-- Expand the `Descendants` column into two columns: `Descendants.StateCategory` and `Descendants.TotalStoryPoints`
-- Apply **Pivot Column** transform on `Descendants.StateCategory` column to separate out individual **State** categories  
+- Expand the `Descendants` column into two columns: `Descendants.StateCategory` and `Descendants.TotalStoryPoints`.
+- Apply the **Pivot Column** transform on the `Descendants.StateCategory` column to separate out individual **State** categories.  
 - Replace null values in all pivoted columns.  
-- Add a custom column to represent percentage complete. The custom column will display errors if there are any null columns in the pivoted **State** columns.
- 
-To learn how, see the following sections in [Transform Analytics data to generate Power BI reports](transform-analytics-data-report-generation.md):
-- [Expand Descendants column](transform-analytics-data-report-generation.md#expand-descendants). 
-- [Pivot Descendants.StateCategory column](transform-analytics-data-report-generation.md#pivot-statecategory).
-- [Replace null values](transform-analytics-data-report-generation.md#replace-null-values). 
-- [Create a percentage complete computed column](transform-analytics-data-report-generation.md#create-percent-complete)
- 
+- Add a custom column that represents percentage complete. The custom column displays errors if there are any null columns in the pivoted **State** columns.
+
+To learn how, see [Transform Analytics data to generate Power BI reports](transform-analytics-data-report-generation.md).
+
+### Handling nested data
+
+Before you perform a pivot operation, make sure your dataset doesn't contain any columns with nested data. Follow these steps:
+1. **Identify nested columns**: Check your dataset for any columns that might contain lists, records, or tables within a single cell.
+1. **Flatten or remove nested data**: Remove the nested columns or flatten them by expanding into separate columns by using the **Expand** feature in Power Query.
+1. **Perform the pivot operation**: After you address the nested data, you can proceed with the pivot operation without encountering errors.
+
 > [!NOTE]   
 > In this example, the **State** values for **User Story** include **Proposed**, **In Progress**, and **Completed**. 
-
 
 [!INCLUDE [temp](includes/close-apply.md)]
 
 ## Create the stacked bar chart report 
 
-1. In Power BI, choose **Stacked bar chart** report under **Visualizations**. 
+1. In Power BI, select **Stacked bar chart** under **Visualizations**. 
 
 	:::image type="content" source="media/reports-boards/feature-progress-visualizations.png" alt-text="Screenshot of Power BI Visualizations and Fields selections for Feature Progress stacked bar chart report. ":::
 
 1. Add `Title` to **Y-Axis**.
 
-1. Add `PercentComplete` to **X-Axis**, right-click and select **Sum**.
+1. Add `PercentComplete` to **X-Axis**, right-click, and select **Sum**.
 
 The example report displays.
 

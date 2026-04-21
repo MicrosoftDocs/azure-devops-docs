@@ -1,195 +1,172 @@
 ---
 ms.subservice: azure-devops-ecosystem
-title: Authenticate and Secure | Extensions for Azure DevOps 
-description: Learn how to authenticate requests to your service and call REST APIs from your Azure DevOps extension.
-ms.assetid: c1704b14-66d2-4950-8633-a63fc8f88508
+title: Authenticate and secure web extensions
+titleSuffix: Azure DevOps
+description: Call Azure DevOps REST APIs from your extension and authenticate requests to your backend service.
+ai-usage: ai-assisted
 ms.topic: how-to
 monikerRange: '<= azure-devops'
 ms.author: chcomley
 author: chcomley
-ms.date: 07/10/2024
+ms.date: 04/03/2026
+ms.custom: sfi-image-nochange, UpdateFrequency3
 ---
 
 # Authenticate and secure web extensions
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
-This article pertains only to authentication and security for _web extensions_, and not Pipelines task extensions or service endpoint extensions. For those tasks, you can use the [Publish to Azure Service Bus Task](/azure/devops/pipelines/tasks/reference/publish-to-azure-service-bus-v1).
-
-## Call REST APIs from your extension
-
-Most extensions need to call Azure DevOps REST APIs on behalf of the current user. 
-* If you're using the provided `JavaScript REST clients`, authentication is automatically handled for you. These clients request an access token from the core SDK and set it in the Authorization header of the request.
-* If you're not using the provided clients, you need to request a token from the `Core SDK` and set it in the Authorization header of your request:
-
-    ```javascript
-    import * as SDK from "azure-devops-extension-sdk";
-    import { getAccessToken } from "azure-devops-extension-sdk";
-    
-    SDK.init();
-    
-    getAccessToken().then((token) => {
-        // Format the auth header
-        const authHeader = `Bearer ${token}`;
-        
-        // Add token as an Authorization header to your request
-        console.log(authHeader);
-    });
-    ```
+This article covers authentication for *web extensions* only. It doesn't apply to pipeline task extensions or service endpoint extensions.
 
 [!INCLUDE [extension-docs-new-sdk](../../includes/extension-docs-new-sdk.md)]
 
+## Call REST APIs from your extension
+
+Most extensions call Azure DevOps REST APIs on behalf of the current user.
+
+- **Using the SDK REST clients**: Authentication is handled automatically. The clients request an access token from the SDK and set the `Authorization` header.
+- **Using custom HTTP requests**: Request a token from the SDK and set the header yourself:
+
+    ```javascript
+    import * as SDK from "azure-devops-extension-sdk";
+
+    SDK.init();
+
+    SDK.ready().then(async () => {
+        const token = await SDK.getAccessToken();
+        const authHeader = `Bearer ${token}`;
+
+        // Use authHeader in your fetch/XMLHttpRequest calls
+    });
+    ```
+
 ## Authenticate requests to your service
 
-A common scenario is making calls to a back-end service from an extension. To verify these calls are coming from your extension running in Azure DevOps and to authenticate the current user, and other context information, a special type of token is provided to your extension. This token contains information about the caller and a signature that you can validate to ensure the request originated from your extension.
+When your extension calls a backend service you control, you need to verify the request came from your extension running in Azure DevOps. The SDK provides `getAppToken()`, which returns a JWT signed with your extension's certificate. Your service validates this token to authenticate the request.
 
 ### Get your extension's key
 
-Your extension's unique key, generated when the extension is published, can be used to verify the authenticity of requests made from your extension.
+Your extension's unique key is generated when you publish. Use it to verify the authenticity of tokens from your extension.
 
-To obtain this key, go to the [extension management portal](https://aka.ms/vsmarketplace-manage), right-click on a [published extension](../publish/overview.md), and then select **Certificate**.
+1. Go to the [extension management portal](https://aka.ms/vsmarketplace-manage).
+2. Right-click your [published extension](../publish/overview.md) and select **Certificate**.
 
 ![key](./media/get-extension-key.png)
 
 > [!WARNING]
-> Scope changes in an extension cause the certificate to change. If you make changes to the scope, you need a new extension key.
+> Scope changes cause the certificate to change. Get a new key after modifying scopes.
 
-### Generate a token to provide to your service
+### Generate a token for your service
 
-1. The Core SDK `getAppToken` method returns a promise that, when resolved, contains a token signed with your extension's certificate.
+Use `getAppToken()` to get a JWT signed with your extension's certificate, then pass it to your service:
 
-    ```javascript
-    import * as SDK from "azure-devops-extension-sdk";
-    import { getAppToken } from "azure-devops-extension-sdk";
+```javascript
+import * as SDK from "azure-devops-extension-sdk";
 
-    SDK.init();
+SDK.init();
 
-    getAppToken().then((token) => {
-    // Add token to your request
-    console.log(token);
+SDK.ready().then(async () => {
+    const token = await SDK.getAppToken();
+    
+    // Pass this token to your backend as a header or query parameter
+    const response = await fetch("https://your-service.example.com/api/data", {
+        headers: {
+            "Authorization": `Bearer ${token}`
+        }
     });
-    ```
+});
+```
 
-2. Pass this token to your service as a query parameter or request header.
+### Validate the token
 
-### Parse and validate the token
+Your backend service validates the JWT using your extension's secret key. The following examples show how to implement validation.
 
-Here is a sample of parsing the token. First, download and store the secret for your extension from your publisher page. This secret must be available to your application.
+> [!IMPORTANT]
+> Never hardcode your extension secret in source code. Load it from environment variables, Azure Key Vault, or another secure configuration store.
 
-#### .NET Framework
+#### .NET (console application)
 
-Do the following task to add one reference to get the sample to compile.
+Install the NuGet package:
 
-Open the NuGet Package Manager and add a reference to `System.IdentityModel.Tokens.Jwt`. This sample was built with version 6.8.0 of this package.
+```
+dotnet add package System.IdentityModel.Tokens.Jwt
+```
+
+> [!NOTE]
+> Use version 7.x or later. Version 6.x and earlier are deprecated. See [IdentityModel version lifecycle](https://www.nuget.org/packages/System.IdentityModel.Tokens.Jwt) for details.
 
 ```csharp
-using System;
 using System.IdentityModel.Tokens.Jwt;
 using Microsoft.IdentityModel.Tokens;
 
-namespace TokenSample
-{
-    class Program
-    {
-        static void Main(string[] args)
-        {
-            string secret = ""; // Load your extension's secret
-            string issuedToken = ""; // Token you are validating
-                
-            var validationParameters = new TokenValidationParameters()
-            {
-                IssuerSigningKey = new SymmetricSecurityKey(System.Text.Encoding.UTF8.GetBytes(secret)),
-                ValidateIssuer = false,
-                RequireSignedTokens = true,
-                RequireExpirationTime = true,
-                ValidateLifetime = true,
-                ValidateAudience = false,
-                ValidateActor = false
-            };
+string secret = Environment.GetEnvironmentVariable("EXTENSION_SECRET")
+    ?? throw new InvalidOperationException("EXTENSION_SECRET not configured");
+string issuedToken = ""; // Token from the extension request
 
-            SecurityToken token = null;
-            var tokenHandler = new JwtSecurityTokenHandler();
-            var principal = tokenHandler.ValidateToken(issuedToken, validationParameters, out token);
-            
-            // Use the principal object as needed
-            Console.WriteLine(principal.Identity.Name);
-        }
-    }
-}
+var validationParameters = new TokenValidationParameters()
+{
+    IssuerSigningKey = new SymmetricSecurityKey(System.Text.Encoding.UTF8.GetBytes(secret)),
+    ValidateIssuer = false,
+    ValidateAudience = false,
+    ValidateActor = false,
+    RequireSignedTokens = true,
+    RequireExpirationTime = true,
+    ValidateLifetime = true
+};
+
+var tokenHandler = new JwtSecurityTokenHandler();
+var principal = tokenHandler.ValidateToken(issuedToken, validationParameters, out SecurityToken token);
 ```
 
-#### .NET Core - WebAPI
+#### ASP.NET Core Web API
 
-Do the following task to add one reference to get this sample to compile.
+Install the NuGet package:
 
-Open the NuGet Package Manager and add a reference to `System.IdentityModel.Tokens.Jwt`. This sample was built with version 5.1.4 of this package.
+```
+dotnet add package Microsoft.AspNetCore.Authentication.JwtBearer
+```
 
-**Startup.cs**
+**Program.cs**
 
 ```csharp
 using System.Text;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
-using Microsoft.AspNetCore.Builder;
-using Microsoft.AspNetCore.Hosting;
-using Microsoft.Extensions.Configuration;
-using Microsoft.Extensions.DependencyInjection;
 using Microsoft.IdentityModel.Tokens;
 
-namespace TokenSample.Core.API
-{
-    public class Startup
+var builder = WebApplication.CreateBuilder(args);
+
+builder.Services.AddControllers();
+
+string secret = builder.Configuration["ExtensionSecret"]
+    ?? throw new InvalidOperationException("ExtensionSecret not configured");
+
+builder.Services
+    .AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
+    .AddJwtBearer(options =>
     {
-        public Startup(IConfiguration configuration)
+        options.TokenValidationParameters = new TokenValidationParameters()
         {
-            Configuration = configuration;
-        }
+            IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(secret)),
+            ValidateIssuer = false,
+            ValidateAudience = false,
+            ValidateActor = false,
+            RequireSignedTokens = true,
+            RequireExpirationTime = true,
+            ValidateLifetime = true
+        };
+    });
 
-        public IConfiguration Configuration { get; }
+var app = builder.Build();
 
-        public void ConfigureServices(IServiceCollection services)
-        {
-            services.AddControllers();
+app.UseAuthentication();
+app.UseRouting();
+app.UseAuthorization();
+app.MapControllers();
 
-            string _secret = "ey9asfasdmax..<the secret key downloaded from the Azure DevOps Services publisher page>.9faf7eh";
-        
-            services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
-                    .AddJwtBearer((o) =>
-                    {
-                        o.TokenValidationParameters = new TokenValidationParameters()
-                        {
-                            IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(_secret)),
-                            ValidateIssuer = false,
-                            ValidateAudience = false,
-                            ValidateActor = false,
-                            RequireSignedTokens = true,
-                            RequireExpirationTime = true,
-                            ValidateLifetime = true
-                        };    
-                    });
-        }
-
-        public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
-        {
-            if (env.IsDevelopment())
-            {
-                app.UseDeveloperExceptionPage();
-            }
-
-            app.UseAuthentication();
-            app.UseAuthorization();
-            app.UseRouting();
-            app.UseStaticFiles();
-
-            app.UseEndpoints(endpoints =>
-            {
-                endpoints.MapControllers();
-            });
-        }
-    }
-}
+app.Run();
 ```
 
-**Your API Controllers:**
+**API Controller:**
 
 ```csharp
 using Microsoft.AspNetCore.Authorization;
@@ -199,6 +176,12 @@ using Microsoft.AspNetCore.Mvc;
 [Authorize]
 public class SampleLogicController : ControllerBase
 {
-   // ...
+   // Requests without a valid token return 401 Unauthorized
 }
 ```
+
+## Related content
+
+- [Call a REST API](call-rest-api.md)
+- [Extension manifest reference](manifest.md)
+- [Azure DevOps Extension SDK](https://github.com/Microsoft/azure-devops-extension-sdk)

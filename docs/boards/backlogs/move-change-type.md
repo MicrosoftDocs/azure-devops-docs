@@ -2,21 +2,23 @@
 title: Move work items and change the work item type in Azure Boards
 titleSuffix: Azure Boards
 description: Learn how to change the work item type or bulk move work items to another project in Azure Boards.
-ms.custom: boards-backlogs, cross-project
+ms.custom: boards-backlogs, cross-project, copilot-scenario-highlight
 ms.service: azure-devops-boards
 ai-usage: ai-assisted
 ms.author: chcomley
 author: chcomley
 ms.topic: how-to
-monikerRange: '>= azure-devops-2019'
-ms.date: 11/22/2024
+monikerRange: "<=azure-devops"
+ms.date: 02/28/2026
 ---
 
 # Bulk move work items and change the work item type in Azure Boards
 
-[!INCLUDE [version-gt-eq-2019](../../includes/version-gt-eq-2019.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 Sometimes, work items get created with the wrong type or assigned to an incorrect project. You can correct these issues by updating individual work items or bulk modifying multiple items. You can also remove irrelevant work items from your backlog or Taskboard.
+
+[!INCLUDE [ai-assistance-mcp-server-tip](../../includes/ai-assistance-mcp-server-tip.md)]
 
 To change the type of multiple work items, [export them using Excel](office/bulk-add-modify-work-items-excel.md) and reimport them with the correct type.
 
@@ -30,8 +32,8 @@ For instructions on removing, deleting, or restoring work items, see [Remove, de
 
 | Category | Requirements |
 |--------------|-------------|
-| **Permissions** | - Member of the **Contributors** or **Project Administrators** group. To get added, [Add users to a project or team](../../organizations/security/add-users-team-project.md). <br> - To modify work items: **View work items in this node** and **Edit work items in this node** permissions set to **Allow**. By default, the **Contributors** group has this permission. For more information, see [Set permissions and access for work tracking](../../organizations/security/set-permissions-access-work-tracking.md). <br> - To move work items to another project: Member of the **Project Administrators** group or **Move work items out of this project** permission set to **Allow**. By default, the **Contributors** group doesn't have this permission. Users with **Stakeholder** access don't have access to this feature. |
-| **Access levels** | To change the work item type: At least **Stakeholder** access. |
+| Permissions | - Member of the **Contributors** or **Project Administrators** group. To get added, [Add users to a project or team](../../organizations/security/add-users-team-project.md). <br> - To modify work items: **View work items in this node** and **Edit work items in this node** permissions set to **Allow**. By default, the **Contributors** group has this permission. For more information, see [Set permissions and access for work tracking](../../organizations/security/set-permissions-access-work-tracking.md). <br> - To move work items to another project: Member of the **Project Administrators** group or **Move work items out of this project** permission set to **Allow**. By default, the **Contributors** group doesn't have this permission. Users with **Stakeholder** access don't have access to this feature. |
+| Access levels | To change the work item type: At least **Stakeholder** access. |
 
 > [!NOTE]  
 > Users with **Stakeholder** access for a public project have full access to all work tracking features just like users with [**Basic** access](../../organizations/security/access-levels.md). For more information, see [Stakeholder access quick reference](../../organizations/security/stakeholder-access.md).
@@ -42,8 +44,8 @@ For instructions on removing, deleting, or restoring work items, see [Remove, de
 
 | Category | Requirements |
 |--------------|-------------|
-| **Permissions** | - Member of the **Contributors** or **Project Administrators** group. To get added, [Add users to a project or team](../../organizations/security/add-users-team-project.md). <br> - To modify work items: **View work items in this node** and **Edit work items in this node** permissions set to **Allow**. By default, the **Contributors** group has this permission. For more information, see [Set permissions and access for work tracking](../../organizations/security/set-permissions-access-work-tracking.md). <br> - To move work items to another project: Member of the **Project Administrators** group or **Move work items out of this project** permission set to **Allow**. By default, the **Contributors** group doesn't have this permission. Users with **Stakeholder** access don't have access to this feature. Also, the project must use an Inherited process model.  |
-| **Access levels** | To change the work item type: At least **Stakeholder** access. |
+| Permissions | - Member of the **Contributors** or **Project Administrators** group. To get added, [Add users to a project or team](../../organizations/security/add-users-team-project.md). <br> - To modify work items: **View work items in this node** and **Edit work items in this node** permissions set to **Allow**. By default, the **Contributors** group has this permission. For more information, see [Set permissions and access for work tracking](../../organizations/security/set-permissions-access-work-tracking.md). <br> - To move work items to another project: Member of the **Project Administrators** group or **Move work items out of this project** permission set to **Allow**. By default, the **Contributors** group doesn't have this permission. Users with **Stakeholder** access don't have access to this feature. Also, the project must use an Inherited process model.  |
+| Access levels | To change the work item type: At least **Stakeholder** access. |
 
 You can change the work item type or move work items to another project within a project collection. These features require that the data warehouse is disabled. With the data warehouse disabled, you use the [Analytics Service](../../report/powerbi/what-is-analytics.md) to support your reporting needs. For more information about disabling the data warehouse, see [Disable the data warehouse and cube](/previous-versions/azure/devops/report/admin/disable-data-warehouse). 
 
@@ -61,7 +63,7 @@ For more information, see [Change project-level permissions](../../organizations
 ::: moniker range=" < azure-devops"
 
 > [!IMPORTANT]  
-> - You can't change type, move work items, or delete/restore work items whose work item types support test management or that belong to the [Hidden Types Category](../work-items/agile-glossary.md#hidden-types). This includes all work items that track tests&mdash;such as test cases, shared steps, and shared parameters&mdash;code review requests and responses, and feedback requests and responses.
+> - You can't change type, move, delete, or restore work items when the work item types support test management or belong to the [Hidden Types Category](../work-items/agile-glossary.md#hidden-types). This restriction includes all work items that track tests&mdash;such as test cases, shared steps, and shared parameters&mdash;code review requests and responses, and feedback requests and responses.
 > 
 > - You can't change the work item type if the project is defined on a collection that uses the On-premises XML process model. 
 
@@ -87,7 +89,7 @@ You can change a single work item or several [multi-selected work items](bulk-mo
 	> ![Backlog, multi-select, open actions menu, choose Change type option](media/move-change-delete/change-type-new-nav.png)  
 
 	> [!IMPORTANT]   
-	> From the **Query Results page**, the **Change type&hellip;** option becomes unavailable if you have checked the Query Editor's **Query across projects** checkbox. 
+	> From the **Query Results page**, the **Change type&hellip;** option becomes unavailable if you checked the Query Editor's **Query across projects** checkbox. 
 
 2. Select the type and optionally enter a comment.  
 
@@ -98,7 +100,7 @@ You can change a single work item or several [multi-selected work items](bulk-mo
 3. **Save** the work items.  
  
 	> [!NOTE]     
-	> The system automatically resets the **State** and **Reason** fields to the default initial values of the specified type. However, in some cases you may need to open the work item to change the **State** or **Reason** field to a value supported by the changed-to work item type.
+	> The system automatically resets the **State** and **Reason** fields to the default initial values of the specified type. However, in some cases you might need to open the work item to change the **State** or **Reason** field to a value supported by the changed-to work item type.
 
 	From the **Query Results** page, save all work items that you bulk-modified. When you bulk modify items from the backlog, they're automatically saved. Work items shown in bold text indicate that local changes aren't saved to the data store. The system automatically saves each work item. To reflect your changes, refresh.
 
@@ -109,24 +111,27 @@ You can change a single work item or several [multi-selected work items](bulk-mo
 When you realize that a work item is assigned to the wrong project within your organization or collection, you can move it to the appropriate project. You can relocate either a single work item or multiple [selected work items](bulk-modify-work-items.md). 
 
 > [!IMPORTANT]
-> **Permanent and irreversible deletion:** Azure DevOps only supports the permanent deletion of test artifacts, including test plans, test suites, test cases, shared steps, and shared parameters. Deleted artifacts cannot be restored, and all associated child items, such as test results, are also removed. Additionally, bulk deletion of test artifacts is not supported; attempting to bulk delete will result in the deletion of all other selected work items except the test artifacts.
+> **Permanent and irreversible deletion:** Azure DevOps only supports the permanent deletion of test artifacts, including test plans, test suites, test cases, shared steps, and shared parameters. Deleted artifacts can't be restored, and all associated child items, such as test results, are also removed. Additionally, bulk deletion of test artifacts isn't supported; attempting to bulk delete results in the deletion of all other selected work items except the test artifacts.
 > 
 > **Ensure you back up any necessary information before deleting test artifacts, as this action can't be undone.**
 
-1. Open the work item and choose the ![Move work item icon](../media/icons/change-team-project-icon.png) **Move...** option from the work item form's ![Action icon](../media/icons/actions-icon.png) Actions menu.    
+1. Sign in to your organization (`https://dev.azure.com/{Your_Organization}`).
+2. Select **Boards** > **Work items** :::image type="icon" source="../../media/icons/more-actions.png" border="false"::: **More actions** > **Move to team project**. 
 
+	:::image type="content" source="media/move-to-team-project.png" alt-text="Screenshot shows sequence of button selections for move work item to team project.":::
+	
 	If you don't see the option, then you don't have [permissions to move work items out of the project](../../organizations/security/set-permissions-access-work-tracking.md#move-delete-permissions).  
 
 	Or, from the backlog or query results page, multi-select several work items that you want to move to another project. You can select several work items so long as you want to move them all to the same project. 
 
 	Choose the  :::image type="icon" source="../media/icons/actions-icon.png" border="false"::: actions icon to open the context menu of one of the selected work items, and choose the ![Move work item icon](../media/icons/change-team-project-icon.png) **Move&hellip;** option. 
 
-2. Select the destination project and choose the other options available, including changing the work item type. Optionally enter a comment.  
+3. Select the destination project and choose the other options available, including changing the work item type. Optionally enter a comment.  
 
 	::: moniker range="azure-devops"
 	:::image type="content" source="media/move-change-delete/move-work-item-change-type-dialog.png" alt-text="Move work item type and change type dialog.":::
 	::: moniker-end
-	::: moniker range=">= azure-devops-2019 < azure-devops"
+	::: moniker range="<azure-devops"
 	![Move work item type dialog, on-premises.](media/move-change-delete/move-work-item-dialog.png)
 	::: moniker-end
 
@@ -135,7 +140,29 @@ When you realize that a work item is assigned to the wrong project within your o
 
    Comments are automatically added to the **Discussion** and an entry gets made to the **History**. Also, the system automatically resets the State and Reason fields to the default initial values for the work item type that you move.  
 
-## Related articles   
+<a id="use-ai-assistance"></a>
+
+## Use AI to find and update misclassified work items
+
+If you have the [Azure Boards MCP Server](../../mcp-server/mcp-server-overview.md) connected to your AI agent in agent mode, you can use natural language prompts to find work items that need to be moved or reclassified.
+
+| Task | Example prompt |
+|------|----------------|
+| Find misassigned items | `List all bugs in area path <Contoso>\\OldTeam that should be moved to the new team` |
+| Check items before moving | `Show me all work items assigned to <Jamal> in the <Contoso> project with their work item types and states` |
+| Update fields after move | `Update the area path of work items #101, #102, and #103 to <Contoso>\\NewTeam` |
+| Find items by wrong type | `List all tasks in the backlog that have story points assigned, which might need to be user stories instead` |
+| Identify cross-team items | `List work items in <Contoso> where the assigned team member's team doesn't match the work item's area path` |
+| Audit recent moves | `Show work items in <Contoso> where the area path changed in the last 14 days` |
+| Find items needing reclassification | `List bugs in <Contoso> that have child tasks, which might need to be user stories instead` |
+| Bulk reassign area path | `Update all active work items in area path <Contoso>\\TeamAlpha> to area path <Contoso>\\TeamBeta>` |
+| Preview move impact | `Show the count of work items by type and state in area path <Contoso>\\OldTeam> so I can plan the move` |
+| Find stranded items after reorg | `List work items in <Contoso> with area paths that don't match any current team's area path configuration` |
+
+> [!NOTE]
+> Agent mode and the MCP Server use natural language, so you can adjust these prompts or ask follow-up questions to refine the results. The MCP Server can update fields like area path and iteration path but can't change work item types or move items between projects.
+
+## Related content   
 
 - [Remove or delete work items](remove-delete-work-items.md)  
 - [View and add work items using the Work Items page](../work-items/view-add-work-items.md)  

@@ -7,21 +7,22 @@ ms.author: chcomley
 ms.custom: powerbisample, engagement-fy23
 author: chcomley
 ms.topic: sample
-monikerRange: '>= azure-devops-2019'
-ms.date: 12/08/2022
+monikerRange: "<=azure-devops"
+ms.date: 04/07/2026
+ai-usage: ai-assisted
 ---
 
 # Cumulative Flow Diagram (CFD) sample report
 
-[!INCLUDE [version-gt-eq-2019](../../includes/version-gt-eq-2019.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
-This article shows you how to display the Stories CFD for a specified team. This data is also available through the built-in chart and dashboard widget. For more information about these options, see [View and configure a Cumulative Flow Diagram](../dashboards/cumulative-flow.md). 
+This article shows you how to display the Stories CFD for a specified team. You can also access this data through the built-in chart and dashboard widget. For more information about these options, see [View and configure a Cumulative Flow Diagram](../dashboards/cumulative-flow.md). 
 
-An example is shown in the following image that shows a count of user stories over time in the *Researching*, *Committed*, *In Progress*, and *In Review* states. Hovering over a date provides information on data for that date.
+The following image shows an example that displays a count of user stories over time in the *Researching*, *Committed*, *In Progress*, and *In Review* states. When you hover over a date, you see information about the data for that date.
 
 :::image type="content" source="media/reports-boards/cfd-stacked-area-chart-sorted.png" alt-text="Screenshot of Power BI Cumulative Flow stacked area chart report, columns sorted in board column order."::: 
 
-For more information about cumulative flow, see [Cumulative flow, lead time, and cycle time guidance](../dashboards/cumulative-flow-cycle-lead-time-guidance.md) and [Cumulative flow, lead time, and cycle time guidance](../dashboards/cumulative-flow-cycle-lead-time-guidance.md).
+For more information about cumulative flow, see [Cumulative flow, lead time, and cycle time guidance](../dashboards/cumulative-flow-cycle-lead-time-guidance.md).
 
 [!INCLUDE [temp](includes/sample-required-reading.md)]
 
@@ -31,9 +32,7 @@ For more information about cumulative flow, see [Cumulative flow, lead time, and
 
 Queries in this section support returning cumulative flow data for User Stories. These queries specify the `WorkItemBoardSnapshot` entity set as they return data calculated for the board over time.  
 
-
 [!INCLUDE [temp](includes/query-filters-work-items.md)]
-
 
 #### [Power BI query](#tab/powerbi/)
 
@@ -80,9 +79,8 @@ https://analytics.dev.azure.com/{organization}/{project}/_odata/V3.0-preview/Wor
 
 - `{organization}` - Your organization name 
 - `{project}` - Your team project name, or omit "/{project}" entirely, for a cross-project query
-* `{teamname}` - The name of the team to display CFD data
+- `{teamname}` - The name of the team to display CFD data
 - `{startdate}` - Start your report for items completed on or after a given date with the format: `YYYY-MM-DDZ`. For example: `2022-04-01Z` represents 2022-April-01. Don't enclose in quotes.
-
 
 ### Query breakdown
 
@@ -126,7 +124,7 @@ The following table describes each part of the query.
    `and DateValue ge {startdate}`
    :::column-end:::
    :::column span="1":::
-   Return data on or after the specified date, for example, **2022-04-01Z** represents 2022-April-01 2019-July-01.
+   Return data on or after the specified date, for example, **2022-04-01Z** represents 2022-April-01.
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -150,7 +148,7 @@ The following table describes each part of the query.
    `(DateValue, ColumnName, LaneName, State, WorkItemType,AssignedTo/UserName,Area/AreaPath), `
    :::column-end:::
    :::column span="1":::
-   Group by `DateValue` (used for trending), `ColumnName`, and any other properties you want to report on. Here we include `LaneName` to enabling filtering by swimlanes.
+   Group by `DateValue` (used for trending), `ColumnName`, and any other properties you want to report on. Here we include `LaneName` to enable filtering by swimlanes.
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -170,54 +168,44 @@ The following table describes each part of the query.
    :::column-end:::
 :::row-end:::
 
-
-
 [!INCLUDE [temp](includes/rename-query.md)]
-
 
 ## Expand columns in Power Query Editor
 
-From the Power Query Editor, choose the query with the data you want to transform. For a CFD chart, you'll need to 
-expand the `Area`, `Iteration`, and `AssignedTo` columns. To learn how, see the following sections in [Transform Analytics data to generate Power BI reports, Expand columns](transform-analytics-data-report-generation.md#expand-columns). 
+From the Power Query Editor, select the query with the data you want to transform. For a CFD chart, you need to 
+expand the `Area` and `AssignedTo` columns. To learn how, see the following sections in [Transform Analytics data to generate Power BI reports, Expand columns](transform-analytics-data-report-generation.md#expand-columns). 
 
-
-## (Optional) Rename fields
-
-Once you've expanded the columns, you may want to rename one or more fields. For example, you can rename the column `AreaPath` to `Area Path`. To learn how, see [Rename column fields](transform-analytics-data-report-generation.md#rename-column-fields). 
-
+[!INCLUDE [temp](includes/sample-rename-column-fields.md)]
 
 [!INCLUDE [temp](includes/close-apply.md)]
 
-
-
 ## Create the stacked area chart  
 
-In the following example, the query was renamed to *CFD*, but no columns were renamed. 
+In the following example, the query is renamed to *CFD*, but you don't rename any columns. 
 
-1. In Power BI, choose the **Stacked area** chart under **Visualizations**. 
+1. In Power BI, under **Visualizations**, select the **Stacked area** chart. 
 
 	:::image type="content" source="media/reports-boards/cfd-visualizations.png" alt-text="Screenshot of Power BI Visualizations and Fields selections for CFD chart report. ":::
  
-1. Add `DateValue` to **Axis** and then right-click `DateValue` and select `DateValue`, rather than `Date Hierarchy`.
+1. Add `DateValue` to **Axis**. Then, right-click `DateValue` and select `DateValue`, rather than `Date Hierarchy`.
 
 1. Add `Count` to **Values**.
 
 1. Add `ColumnName` to **Legend**.
 
-1. In the **Filters** pane, expand `ColumnName`, and select only the values you want to appear on the chart. For example, you may want to unselect *New*, *Proposed*, *Done*, or *Closed*. 
+1. In the **Filters** pane, expand `ColumnName`, and select only the values you want to appear on the chart. For example, you might want to unselect *New*, *Proposed*, *Done*, or *Closed*. 
 
 	:::image type="content" source="media/reports-boards/cfd-columnname-filters.png" alt-text="Screenshot of Power BI Filters for ColumnName. ":::
 
-
-The example report displays the columns in alphabetic order. However, the preferred order is to sort the data according to the column order, or progressive order. 
+The example report displays the columns in alphabetical order. However, the preferred order is to sort the data according to the column order, or progressive order. 
 
 :::image type="content" source="media/reports-boards/cfd-stacked-area-chart.png" alt-text="Screenshot of Sample Power BI Cumulative Flow stacked area chart report, columns sorted in alphabetic order.":::
 
-### Sort columns in progressive order
+### Sort columns in ascending order
 
-To sort the chart columns in the order specific on the board, do the following steps:
+To sort the chart columns in the order you specify on the board, follow these steps:
 
-1. Create a new query in Power BI per the following queries. When done, rename the query to *ColumnOrder*. 
+1. Create a new query in Power BI using one of the following queries. When done, rename the query to *ColumnOrder*. 
 
 #### [Power BI query](#tab/powerbi/)
 
@@ -256,23 +244,21 @@ https://analytics.dev.azure.com/{organization}/{project}/_odata/V3.0-preview/Boa
 
 1. In Power BI, expand the *ColumnOrder* query and select `ColumnName`.
 
-1. Select **Column Tools** and then **Sort by Column** and choose `ColumnOrder`.
+1. Select **Column Tools**, and then select **Sort by Column**. Choose `ColumnOrder`.
 	:::image type="content" source="media/reports-boards/cfd-sort-by-column.png" alt-text="Screenshot of Power BI Column Tools, Sort by Column selection.":::
 
-1. Select the **Modeling** menu, and then **Manage Relationships**. Ensure there's a relationship between `CFD.ColumnName` and `ColumnOrder.ColumnName`. It's likely that the relationship was autodetected.
+1. Select the **Modeling** menu, and then select **Manage Relationships**. Ensure there's a relationship between `CFD.ColumnName` and `ColumnOrder.ColumnName`. Power BI likely autodetects the relationship.
 
 	:::image type="content" source="media/reports-boards/cfd-manage-relationships-dialog.png" alt-text="Dialog for Manage Relationships showing a relationship between CFD.ColumnName and ColumnOrder.ColumnName.":::
 
-1. In the report created above, in the **Legend**, replace `CFD.ColumnName` with `ColumnOrder.ColumnName` to **Legend**.
+1. In the report you created, in the **Legend**, replace `CFD.ColumnName` with `ColumnOrder.ColumnName`.
 
 	The report refreshes with columns sorted in the same order used by the board.  
 
 	:::image type="content" source="media/reports-boards/cfd-stacked-area-chart-sorted.png" alt-text="Screenshot of Sample Power BI Cumulative Flow stacked area chart report, columns sorted in board column order."::: 
 
-
 > [!NOTE]
-> If any work items were in a column that has since been deleted, they will appear as "Blank" in the above report. 
-
+> If any work items are in a column that you deleted, they appear as "Blank" in the preceding report. 
 
 ## Related articles
 

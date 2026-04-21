@@ -1,60 +1,57 @@
 ---
-title: Code with Git
+title: Share Code with Git in Azure DevOps
 titleSuffix: Azure DevOps
-ms.custom: engagement-fy23
-description: Follow these steps to share code within a Git repo and project in Azure DevOps.
+ms.custom: engagement-fy23, copilot-scenario-highlight
+description: Learn how to share code in Azure DevOps using Git. Clone repositories, create branches, commit changes, and merge with pull requests.
 ms.subservice: azure-devops-new-user
 ms.author: chcomley
 author: chcomley
-ms.date: 10/18/2024
+ms.date: 03/17/2026
 ms.topic: how-to
+ai-usage: ai-assisted
 monikerRange: '<= azure-devops'
 ---
 
-# Share your code with Git
+# Share your code by using Git
 
 [!INCLUDE [version-lt-eq-azure-devops](../includes/version-lt-eq-azure-devops.md)]
 
-Share your code with others in Azure DevOps when you use a Git repository. 
+Share your code with others in Azure DevOps by using a Git repository. Clone the repo to your computer, create a branch for your changes, commit your work, and open a pull request to merge it back into the main branch.
+
+[!INCLUDE [ai-assistance-mcp-server-tip](../includes/ai-assistance-mcp-server-tip.md)]
 
 ## Prerequisites
 
 | Category | Requirements |
 |--------------|-------------|
 | **Project access** | [Project member](../organizations/security/add-users-team-project.md). |
-|Git command-line tool | One of the following Git command-line tools:<br>- [Git for Windows and Git Credential Manager](../repos/git/set-up-credential-managers.md).<br>- [Git for macOS or Linux](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git). For macOS and Linux, we recommend that you [configure SSH authentication](../repos/git/use-ssh-keys-to-authenticate.md).|
+|**Git command-line tool** | One of the following Git command-line tools:<br>- [Git for Windows and Git Credential Manager](../repos/git/set-up-credential-managers.md).<br>- [Git for macOS or Linux](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git). For macOS and Linux, we recommend that you [configure SSH authentication](../repos/git/use-ssh-keys-to-authenticate.md).|
 
 ## 1. Clone the repo to your computer
 
-To work with a Git repo, clone it to your computer, which creates a complete local copy of the repo. Your code might be in one of several places.
+When you clone a repo, you create a complete local copy so you can work offline and push changes back later. Before you clone, make sure your code is in an Azure Repos Git repository:
 
-1. Complete the following step that's applicable to your scenario:
+- **No code yet** — [Create a new Git repo](../repos/git/create-new-repo.md#create-a-repo-using-the-web-portal).
+- **Code in another Git repo** (for example, GitHub) — [Import it into Azure Repos](../repos/git/import-git-repository.md).
+- **Code on your local computer** — [Create a repo](../repos/git/create-new-repo.md#create-a-repo-using-the-web-portal), then push your code after cloning.
 
-   - If **You don't have any code yet**, first [Create a new Git repo in your project](../repos/git/create-new-repo.md#create-a-repo-using-the-web-portal), and then complete the next step.
-   - If **the code is in another Git repo**, such as a GitHub repo or a different Azure Repo instance, [import it into a new or existing empty Git repo](../repos/git/import-git-repository.md), and then complete the next step.
-   - If **the code is on your local computer and not yet in version control**, either [create a new Git repo in your project](../repos/git/create-new-repo.md#create-a-repo-using-the-web-portal) or add your code to an existing repository.
-
-2. From your web browser, open the team project for your organization and select **Repos** > **Files**.
+1. From your web browser, open the team project for your organization and select **Repos** > **Files**.
 
    ![Screenshot of project with Repos and Files highlighted.](media/clone-repo/repos-files.png)
 
-3. Select **Clone**.
+1. Select **Clone**, and then **Copy** the URL.
 
    :::image type="content" source="media/clone-repo/repos-files-clone-button.png" alt-text="Screenshot shows highlighted clone button in repos files.":::
 
-4. **Copy** the URL.
-
-   :::image type="content" source="media/clone-repo/copy-url-clone-action.png" alt-text="Screenshot shows highlighted copy icon for copying URL.":::
-
-5. Open the Git command window (Git Bash on Git for Windows). Go to the folder where you want the code from the repo stored on your computer, and run `git clone`, followed by the path copied from **Clone URL** in the previous step. See the following example:
+1. Open your Git command window (Git Bash on Windows) and go to the folder where you want to store the repo. Run `git clone` with the URL you copied:
 
    ```
    git clone https://FabrikamFiber01@dev.azure.com/FabrikamFiber01/FabrikamFiber01-01/_git/FabrikamFiber01-01
    ```
   
-   Git downloads a copy of the code, including all [commits](../repos/git/commits.md), and [branches](../repos/git/branch-policies-overview.md) from the repo, into a new folder for you to work with.
+   Git downloads a copy of the code, including all [commits](../repos/git/commits.md) and [branches](../repos/git/branch-policies-overview.md), into a new folder.
 
-6. Switch your directory to the repository that you cloned.
+1. Switch to the cloned repository directory:
 
    ```
    cd fabrikam-web
@@ -64,127 +61,84 @@ To work with a Git repo, clone it to your computer, which creates a complete loc
 
 ## 2. Work in a branch
 
-Git [branches](../repos/git/branch-policies-overview.md) isolate your changes from other work being done in the project. We recommend using the [Git workflow](../repos/git/gitworkflow.md), which uses a new branch for every feature or fix that you work on. For our examples, we use the branch, `users/jamal/feature1`.
+Git [branches](../repos/git/branch-policies-overview.md) isolate your changes from other work in the project. The recommended [Git workflow](../repos/git/gitworkflow.md) creates a new branch for every feature or fix. The examples in this article use the branch `users/jamal/feature1`.
 
 1. Create a branch with the `branch` command.
    
    ```
    git branch users/jamal/feature1
    ```
-   This command creates a reference in Git for the new branch. It also creates a pointer back to the parent commit so Git can keep a history of changes as you add commits to the branch.
 
-   If you're working with a previously cloned repository, ensure you checked out the right branch (`git checkout main`) and that it's up to date (`git pull origin main`) before you create your new branch.
-
-2. Use `checkout` to switch to that branch.
+1. Use `checkout` to switch to that branch.
 
    ```
    git checkout users/jamal/feature1
    ```
-   Git changes the files on your computer to match the latest commit on the checked-out branch.
 
    > [!TIP]
-   > When you create a branch from the command line, the branch is based on the currently checked-out branch. When you clone the repository, the default branch (typically `main`) gets checked out. Because you cloned, your local copy of `main` has the latest changes.
-   >  ```
-   >  git checkout main
-   >  git pull origin main
-   >  git branch users/jamal/feature1
-   >  git checkout users/jamal/feature1
-   >  ```
-   > You can replace the first three commands in the previous example with the following command, which creates a new branch named `users/jamal/feature1` based on the latest `main` branch.
-   >
-   >  ```
-   >  git pull origin main:users/jamal/feature1
-   >  ```
-   > Switch back to the Git Bash window that you used in the previous section. Run the following commands to create and check out a new branch based on the main branch.
-   >
-   >  ```
-   >  git pull origin main:users/jamal/feature1
-   >  git checkout feature1
-   >  ```
+   > Create and switch in one step with `git checkout -b users/jamal/feature1`. If you're working with a previously cloned repo, run `git pull origin main` first to ensure your branch starts from the latest code.
 
 ## 3. Work with the code
 
-In the following steps, we make a change to the files on your computer, commit the changes locally, and then push the commit to the repo stored on the server.
+Edit files locally, commit your changes, and push the commit to the server.
 
-1. Browse to the folder on your computer where you cloned the repo, open the `README.md` file in your editor of choice, and make some changes. Then, **Save** and close the file.
+1. Open the `README.md` file in the cloned repo folder, make some changes, and **Save** the file.
 
-2. In the Git command window, go to the `contoso-demo` directory by entering the following command:
-
-   ```
-   cd contoso-demo
-   ```
-
-3. Commit your changes by entering the following commands in the Git command window:
+1. Stage and commit your changes:
 
    ```
    git add .
    git commit -m "My first commit"
    ```
 
-   The `git add .` command stages any new or changed files, and `git commit -m` creates a commit with the specified commit message.
-   
-   Check which branch you're working on before you commit, so that you don't commit changes to the wrong branch. Git always adds new commits to the current local branch.
+   `git add .` stages new and changed files. `git commit -m` saves them as a commit with the specified message. Git always commits to the current branch, so verify you're on the right one before committing.
 
-1. Push your changes to the Git repo on the server. Enter the following command into the Git command window:
+1. Push your commit to the server:
 
    ```
    git push origin users/jamal/feature1
    ```
 
-Your code is now shared to the remote repository, in a branch named `users/jamal/feature1`. To merge the code from your working branch into the `main` branch, use a pull request.
+Your code is now in the remote repository on the `users/jamal/feature1` branch. To merge it into `main`, create a pull request.
 
 ## 4. Merge your changes with a pull request
 
-Pull requests combine the review and merge of your code into a single collaborative process. After you’re done fixing a bug or new feature in a branch, create a new pull request. Add the members of the team to the pull request so they can review and vote on your changes. Use pull requests to review works in progress and get early feedback on changes. There’s no commitment to merge the changes because you can abandon the pull request at any time.
+Pull requests let your team review and approve code before it merges. Create a pull request when your branch is ready for feedback - you can abandon it at any time.
 
-The following example shows the basic steps of creating and completing a pull request.
+1. In your web browser, go to your project and select **Repos** > **Files**.
 
-1. Open the team project for your organization in your web browser and select **Repos** > **Files**. If you kept your browser open after getting the clone URL, you can just switch back to it.
-
-2. Select **Create a pull request** in the upper-right corner of the **Files** window. If you don't see a message like **You updated users/jamal/feature1 just now**, refresh your browser.
+1. Select **Create a pull request** in the upper-right corner. If you don't see a message like **You updated users/jamal/feature1 just now**, refresh your browser.
 
    ![Create a pull request](../repos/get-started/media/updated-file-create-pull-request.png)
 
-   New pull requests are configured to merge your branch into the default branch, which in this example is `main`. The title and description are prepopulated with your commit message.
+   The pull request targets the default branch (`main`). The title and description come from your commit message. You can [add reviewers](../repos/git/pull-requests.md#add-and-remove-reviewers) and [link work items](../repos/git/pull-requests.md#link-work-items) before creating.
 
    ![New pull request](../repos/get-started/media/create-pull-request.png)
 
-   You can [add reviewers](../repos/git/pull-requests.md#add-and-remove-reviewers) and [link work items](../repos/git/pull-requests.md#link-work-items) to your pull request.
+1. Select **Create**.
 
-   You can review the files included in the pull request at the bottom of the **New Pull Request** window.
-
-   ![Files in the pull request](../repos/get-started/media/create-pull-request-files.png)
-
-3. Select **Create**.
-
-   View the details of your pull request from the **Overview** tab. You can also view the changed files, updates, and commits in your pull request from the other tabs. 
-
-4. Select **Complete** to begin the process of completing the pull request.
-
-   ![Pull request](../repos/get-started/media/pull-request.png)
-
-5. Select **Complete merge** to complete the pull request and merge your code into the `main` branch.
+1. Review the **Overview** tab, and then select **Complete** > **Complete merge** to merge your code into `main`.
 
    ![Complete pull request](../repos/get-started/media/complete-pull-request.png)
 
-   >[!NOTE]
-   >This example shows the basic steps of creating and completing a pull request. For more information, see [Create, view, and manage pull requests](../repos/git/pull-requests.md).
+> [!NOTE]
+> For more information, see [Create, view, and manage pull requests](../repos/git/pull-requests.md).
 
-Your changes are now merged into the `main` branch, and your `users/jamal/feature1` branch is deleted on the remote repository. 
+Your changes are now in `main`, and the `users/jamal/feature1` branch is deleted from the remote repository. 
 
 ## View history
 
-1. Switch back to the web portal and select **History** from the **Code** page to view your new commit.
+To see your merged changes, go to **Repos** > **Files** in the web portal and select **History**.
 
    ![Screenshot of web portal, with History highlighted](media/code-history-vert.png)
 
-2. Switch to the **Files** tab, and select the README file to view your changes.
+Select the **Files** tab and then the README file to view your changes.
 
    ![Screenshot of README file](media/first-edit-readme-file.png)
 
 ## Clean up
 
-To delete your local copy of the branch, switch back to your Git Bash command prompt and run the following command: 
+Delete your local copy of the branch after the merge completes:
 
 ```
 git checkout main
@@ -192,19 +146,41 @@ git pull origin main
 git branch -d users/jamal/feature1
 ```
 
-This action completes the following tasks:
-- The `git checkout main` command switches you to the `main` branch.
-- The `git pull origin main` command pulls down the latest version of the code in the main branch, including your changes and the fact that `users/jamal/feature1` was merged.
-- The `git branch -d users/jamal/feature1` command deletes your local copy of that branch.
+These commands switch to `main`, pull the latest code (including your merged changes), and delete the local `users/jamal/feature1` branch.
+
+::: moniker range="azure-devops"
+
+<a id="use-ai-assistance"></a>
+
+## Use AI to manage Git repositories
+
+If you configure the [Azure DevOps MCP Server](../mcp-server/mcp-server-overview.md), you can use AI assistants to manage your Git repositories and pull requests through natural language prompts.
+
+### Example prompts for Git management
+
+| Task | Example prompt |
+|------|----------------|
+| List repositories | `List all Git repositories in <Contoso> project` |
+| View pull requests | `Show my open pull requests in <Contoso> project` |
+| Check PR status | `Get the status of pull request <456> in <Contoso> project` |
+| Find active branches | `List branches with active pull requests in the <webapp> repo in <Contoso>` |
+| Review PR details | `Show the files changed in pull request <456> in <Contoso>` |
+| Check build status | `Show the build status for pull request <456> in <Contoso>` |
+| Summarize PR activity | `List all pull requests merged into <main> in the <webapp> repo in <Contoso> this week` |
+| Find stale branches | `List branches in the <webapp> repo in <Contoso> that have had no commits in the last <30> days` |
+| Review reviewer workload | `Show how many open pull requests each team member is reviewing in <Contoso> project` |
+
+::: moniker-end
 
 ## Next steps  
 
 > [!div class="nextstepaction"]
 > [Set up continuous integration & delivery](../pipelines/create-first-pipeline.md?bc=%252fazure%252fdevops%252fuser-guide%252fbreadcrumb%252ftoc.json&toc=%252fazure%252fdevops%252fuser-guide%252ftoc.json)
 > 
-## Related articles
 
-- [Understand key concepts for new users to Azure Pipelines](../pipelines/get-started/key-pipelines-concepts.md)
-- [Discover what Azure Repos is](../repos/get-started/what-is-repos.md)
-- [Learn how to work with a Git repo](../repos/git/index.yml)
-- [Explore what source control is](source-control.md)
+## Related content
+
+- [Key concepts for Azure Pipelines](../pipelines/get-started/key-pipelines-concepts.md)
+- [What is Azure Repos?](../repos/get-started/what-is-repos.md)
+- [Work with a Git repo](../repos/git/index.yml)
+- [Source control overview](source-control.md)

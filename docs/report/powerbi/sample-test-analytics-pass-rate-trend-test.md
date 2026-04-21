@@ -9,27 +9,24 @@ ms.author: chcomley
 ms.custom: powerbisample, engagement-fy23
 author: chcomley
 ms.topic: sample
-monikerRange: '>= azure-devops-2020'  
+monikerRange: "<=azure-devops"
 ms.date: 01/25/2023
+ai-usage: ai-assisted
 ---
 
 # Pass rate trend of a test sample report 
 
-[!INCLUDE [version-gt-eq-2020](../../includes/version-gt-eq-2020.md)] 
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)] 
 
-Pass rate trend reports provide insight into average time it takes for a particular test to execute during a pipeline run.  
-
-An example is shown in the following image.
+Pass rate trend reports provide insight into the average time it takes for a particular test to execute during a pipeline run.
 
 :::image type="content" source="media/pipeline-test-reports/test-pass-rate-trend-stack-column-line-chart-report.png" alt-text="Screenshot of Pass Rate Trend report."::: 
-
 
 [!INCLUDE [temp](includes/preview-note.md)]
 
 [!INCLUDE [prerequisites-simple](../includes/analytics-prerequisites-simple.md)]
 
 [!INCLUDE [temp](includes/sample-required-reading.md)]
-
 
 ## Sample queries
 
@@ -95,13 +92,12 @@ $apply=filter(
 
 ## Substitution strings and query breakdown
 
-
 [!INCLUDE [temp](includes/sample-query-substitutions.md)]
  
-- `{organization}` - Your organization name
-- `{project}` - Your team project name
-- `{pipelinename}` - Your pipeline name. Example: `Fabrikam hourly build pipeline`
-- `{testName}` - Your test name
+- `{organization}` - Your organization name.
+- `{project}` - Your team project name.
+- `{pipelinename}` - Your pipeline name. Example: `Fabrikam hourly build pipeline`.
+- `{testName}` - Your test name.
 - `{startdate}` - The date to start your report. Format: YYYY-MM-DDZ. Example: `2021-09-01Z` represents September 1, 2021. Don't enclose in quotes or brackets and use two digits for both, month and date.
 
 ### Query breakdown
@@ -130,7 +126,7 @@ The following table describes each part of the query.
    `Pipeline/PipelineName eq '{pipelineName}'`
    :::column-end:::
    :::column span="1":::
-   Return test runs for the specified pipeline
+   Return test runs for the specified pipeline.
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -278,33 +274,31 @@ The following table describes each part of the query.
    :::column-end:::
 :::row-end:::
 
-
  
 [!INCLUDE [temp](includes/rename-query.md)]
 
 ## Expand the Date column in Power BI
 
-Expand the `Date` column to show the expanded entity `CompletedOn.Date`.  Expanding a column flattens the record into specific fields. To learn how, see [Transform Analytics data to generate Power BI reports, Expand columns](transform-analytics-data-report-generation.md#expand-columns). 
+Expand the `Date` column to show the expanded entity `CompletedOn.Date`. When you expand a column, you flatten the record into specific fields. For more information, see [Transform Analytics data to generate Power BI reports, Expand columns](transform-analytics-data-report-generation.md#expand-columns). 
  
 
 ## Change column data type
 
-1. From the Power Query Editor, select the `TotalCount` column; select **Data Type** from the **Transform** menu; and then choose **Whole Number**.
+1. In Power Query Editor, select the `TotalCount` column. Select **Data Type** from the **Transform** menu, and then choose **Whole Number**.
 
-1. Select the `PassRate`column; select **Data Type** from the **Transform** menu; and then choose **Decimal Number**.
+1. Select the `PassRate` column. Select **Data Type** from the **Transform** menu, and then choose **Decimal Number**.
 
 For more information about changing the data type, see  [Transform Analytics data to generate Power BI reports, Transform a column data type](transform-analytics-data-report-generation.md#transform-data-type). 
 
 [!INCLUDE [temp](includes/close-apply.md)]
 
-
 ## Create the line and stack column chart report
  
-1. In Power BI, under **Visualizations**, choose the **Line and stack column chart** and drag and drop the fields onto the chart areas. 
+1. In Power BI, under **Visualizations**, select the **Line and stack column chart**. Drag and drop the fields onto the chart areas. 
 
 	:::image type="content" source="media/pipeline-test-reports/visualizations-test-pass-rate-trend-stacked-column-line-chart.png" alt-text="Screenshot of visualization fields selections for Pass rate trend duration table report. ":::
 
-1. Add `Date.Date` to the **X-axis**, right-click the field and select **Date.Date** rather than **Date Hierarchy**.  
+1. Add `Date.Date` to the **X-axis**. Right-click the field and select **Date.Date** rather than **Date Hierarchy**.  
 
 1. Add `ResultPassCount` and `ResultFailCount` to the **Column y-axis**.
  

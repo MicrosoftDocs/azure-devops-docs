@@ -5,7 +5,7 @@ description: Learn about branch policies in Azure DevOps Services & TFS
 ms.service: azure-devops-repos
 ms.assetid: 36A4986E-BFB8-422B-BFC9-8A0CB75D0603    
 ms.topic: overview
-ms.date: 06/01/2020
+ms.date: 02/17/2026
 monikerRange: '<= azure-devops'
 ms.subservice: azure-devops-repos-git
 ---
@@ -22,7 +22,6 @@ Branch policies are an important part of the Git workflow and enable you to:
 * Enforce who can create branches and the naming guidelines for the branches
 * Automatically include the right reviewers for every code change
 * Enforce best practices with required code reviewers
-
 
 The following table summarizes the policies you can define to customize a branch. For an overview of all repository and branch policies and settings, see [Git repository settings and policies](repository-settings.md). 
 
@@ -74,7 +73,7 @@ The following table summarizes the policies you can define to customize a branch
    :::column-end:::
 :::row-end:::
 
-::: moniker range=">= azure-devops-2020"
+::: moniker range="<=azure-devops"
 :::row:::
    :::column span="2":::
       [**Limit merge types**](branch-policies.md#limit-merge-types)
@@ -121,7 +120,7 @@ The following table summarizes the policies you can define to customize a branch
    :::column-end:::
 :::row-end:::
 
- 
+[!INCLUDE [ai-assistance-callout](../../includes/ai-assistance-callout.md)]
 
 ## Adopt a Git branching strategy
 
@@ -160,7 +159,6 @@ Your [Git workflow](gitworkflow.md) should create and use branches for managing 
 The rest of the Git workflow, such as [sharing code](pushing.md) and [reviewing code with pull requests](pull-requests.md) all work through branches.
 
 Isolating work in branches makes it simple to change what you are working on by changing your current branch.
-
 
 ## How are Git branches created?
 
@@ -209,7 +207,6 @@ Learn how to complete common tasks when working with branches.
 - [How to delete a branch](delete-branch.md)
 - [Restore a deleted branch](restore-deleted-branch.md)
 - [How to lock branches](lock-branches.md)
-
 
 ## Related articles
 

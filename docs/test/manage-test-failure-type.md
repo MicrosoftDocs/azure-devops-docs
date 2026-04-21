@@ -4,11 +4,12 @@ description: Learn about managing failure type in Azure Test Plans. You can add,
 ms.assetid: 
 ms.service: azure-devops-test-plans
 ms.custom: UpdateFrequency3
-ms.topic: conceptual
-ms.author: jeom
+ms.topic: overview
+ms.author: pliaros
 author: raviLiftr
 monikerRange: 'azure-devops'
 ms.date: 08/25/2023
+ms.update-cycle: 1095-days
 ---
 
 # Manage test failure type

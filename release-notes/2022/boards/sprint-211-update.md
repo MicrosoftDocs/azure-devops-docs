@@ -4,6 +4,7 @@ description: See the Sprint 211 feature updates for Azure Boards, including next
 author: gloridelmorales
 ms.author: glmorale
 ms.date: 10/11/2022
+ms.topic: release-notes
 ---
 
 # Azure Boards - Sprint 211 Update

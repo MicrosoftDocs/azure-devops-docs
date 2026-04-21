@@ -3,8 +3,6 @@ title: Build GitHub repositories
 description: Using a GitHub repository with Azure Pipelines
 ms.topic: reference
 ms.assetid: 96a52d0d-5e01-4b30-818d-1893387522cd
-ms.author: vijayma
-author: vijayma
 ms.date: 12/11/2024
 monikerRange: azure-devops
 ---

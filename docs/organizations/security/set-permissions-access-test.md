@@ -3,19 +3,20 @@ title: Set permissions and access for manual testing
 titleSuffix: Azure DevOps
 description: How to grant or restrict access to test plans, test suites, test cases, and other test-related features.
 ms.subservice: azure-devops-security
+ai-usage: ai-assisted
 ms.assetid: 
 ms.author: chcomley
 author: chcomley
 ms.topic: how-to
 monikerRange: '<= azure-devops'
-ms.date: 10/17/2024
+ms.date: 03/09/2026
 --- 
 
 # Set permissions and access for testing
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
-To fully utilize Azure Test Plans, it's crucial to understand and configure the necessary permissions and access levels. This article outlines the steps, so you can do the following tasks:
+To fully utilize Azure Test Plans, you need to understand and configure the necessary permissions and access levels. This article outlines the steps, so you can:
 
 - Grant access to manual testing features
 - Manage test plans and test suites
@@ -23,7 +24,7 @@ To fully utilize Azure Test Plans, it's crucial to understand and configure the 
 
 By following these guidelines, you can ensure that your team has the appropriate access to efficiently manage and execute test plans.
 
-To manage access to manual test features, you can grant specific permissions to users or groups at the **object** or **project** level for the following tasks: 
+To manage access to manual test features, grant specific permissions to users or groups at the **object** or **project** level for the following tasks: 
 
 - **Object-level (Area path):**  
 	- **Edit work items in this node**: Add or edit test-specific work items like test plans, test suites, and test cases. 
@@ -35,8 +36,6 @@ To manage access to manual test features, you can grant specific permissions to 
 	- **[Create test runs](../../test/run-manual-tests.md)**.
 	- **[Delete and restore test-specific work items](../../boards/backlogs/remove-delete-work-items.md)**.
 	- **[Delete test runs](../../boards/backlogs/delete-test-artifacts.md)**.
-
-[Test controllers](/visualstudio/test/configure-test-agents-and-controllers-for-load-tests), used for load tests, are managed at the organization or collection level. For more information, see [Install test agents and test controllers](/visualstudio/test/lab-management/install-configure-test-agents).   
  
 ## Prerequisites 
 
@@ -71,7 +70,7 @@ For full access to Test Plans, users must have [**Basic + Test Plans**](change-a
 
 ## Manage test plans and test suites under an area path 
 
-Do the following steps to grant permissions for managing test artifacts at the area path level.
+Follow these steps to grant permissions for managing test artifacts at the area path level.
 
 1. Sign in to your project (`https://dev.azure.com/{Your_Organization/Your_Project}`).
 2. Select **Project settings** > **Project configuration**.
@@ -85,27 +84,22 @@ Do the following steps to grant permissions for managing test artifacts at the a
 
 ## Set permissions for managing test artifacts 
 
-When it comes to testing artifacts like test plans, test suites, and test cases, the process for deleting them is distinct from deleting nontest work items.
+When you manage testing artifacts like test plans, test suites, and test cases, the process for deleting these artifacts is distinct from deleting nontest work items.
 
 Users with Basic access and with permissions to permanently delete work items and manage test artifacts can only delete orphaned test cases. That is, they can delete test cases created from **Work** that aren't linked to any test plans or test suites.
 
 > [!IMPORTANT]  
 > When you delete test artifacts like test plans, test suites, and test cases, note the following information:
-> - **Permanent deletion:** We only support permanent deletion of these artifacts.
+> - **Permanent deletion:** Azure DevOps only supports permanent deletion of these artifacts.
 > - **No recycle bin:** Deleted test artifacts don’t appear in the recycle bin and you can't restore them.
 > - **Associated child items:** Deletion affects associated child items, including child test suites, test points across all configurations, testers (the underlying test case work item remains unaffected), test results history, and other related history.
 > - **Removal from TCM data store:** The deleted test artifact is removed from the test case management (TCM) data store, and the underlying work item is deleted.
-> - **Child item deletion:** A job runs to delete all child items both from the TCM side and the underlying work items. This process may up to a few minutes depending on the number of artifacts being deleted.
+> - **Child item deletion:** A job runs to delete all child items both from the TCM side and the underlying work items. This process might take up to a few minutes depending on the number of artifacts you're deleting.
 > - **Irreversible deletion:** All information in the work item tracking data store and TCM data store is permanently deleted and cannot be reactivated or restored.
 
 ::: moniker range="azure-devops"
 
-> [!NOTE]   
-> To turn on the **Project Permissions Settings Page** preview page, see [Enable preview features](../../project/navigation/preview-features.md).
-
-Do the following steps to set permissions for managing test artifacts.
-
-#### [Preview page](#tab/preview-page) 
+Set permissions for managing test artifacts.
 
 1. Sign in to your project (`https://dev.azure.com/{Your_Organization/Your_Project}`).
 2. Select **Project settings** > **Permissions**.
@@ -115,31 +109,16 @@ Do the following steps to set permissions for managing test artifacts.
 3. Select a user or group.
 4. Select from the dropdown menus to change the permissions for each item.
 
-   In the following example, we grant users assigned to the Team Admin group permissions to view test runs and manage test configurations and environments.
+   In the following example, you grant users assigned to the Team Admin group permissions to view test runs and manage test configurations and environments.
 
    :::image type="content" source="media/test-permissions/set-project-level-test-permissions-new-ui.png" alt-text="Screenshot of Set project-level test permissions for a custom group, Team Admin.":::
 
-   Updated permissions automatically save.
-
-#### [Current page](#tab/current-page) 
-
-1. Sign in to your project (`https://dev.azure.com/{Your_Organization/Your_Project}`).
-2. Select **Project settings** > **Permissions**.
-3. Select a user or group.
-4. Select from the dropdown menus to change the permissions for each item.
-
-   In the following example, we grant users assigned to the Team Admin group permissions to view test runs and manage test configurations and environments.
-
-   :::image type="content" source="media/test-permissions/project-level-permissions-2020-earlier.png" alt-text="Screenshot of Set project-level test permissions for a custom group, Team Admin.":::
-
-   Updated permissions automatically save.
-::: moniker-end    
-
-* * *
+   The portal automatically saves updated permissions.
+::: moniker-end
 
 ::: moniker range="< azure-devops"
 
-In the following example, we grant members assigned to the Test Admin group permissions to delete test runs.   
+In the following example, you grant members assigned to the Test Admin group permissions to delete test runs.   
 
 :::image type="content" source="media/set-permissions-project-level-dialog.png" alt-text="Screenshot of Set project-level permissions for a custom group, Team Admin."::: 
 
@@ -150,7 +129,7 @@ In the following example, we grant members assigned to the Test Admin group perm
 > [!div class="nextstepaction"]
 > [Navigate Test Plans](../../test/navigate-test-plans.md)
 
-## Related articles 
+## Related content 
 
 - [Manage access](restrict-access.md)   
 - [Set permissions and access for work tracking](set-permissions-access-work-tracking.md) 

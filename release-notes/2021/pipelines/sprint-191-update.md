@@ -4,6 +4,7 @@ description: See the Sprint 191 feature updates for Azure Pipelines, including n
 author: gloridelmorales
 ms.author: glmorale
 ms.date: 08/19/2021
+ms.topic: release-notes
 ---
 
 # Azure Pipelines - Sprint 191 Update

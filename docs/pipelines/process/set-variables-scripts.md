@@ -2,7 +2,7 @@
 
 title: Set variables in scripts
 description: Learn how to define variables in Bash and PowerShell scripts and use them in your pipeline.
-ms.topic: conceptual
+ms.topic: concept-article
 ms.date: 01/08/2025
 monikerRange: '<= azure-devops'
 ---
@@ -168,7 +168,9 @@ jobs:
 ---
 ## Set an output variable for use in future jobs
 
-When you use output variables across jobs, you reference them with `dependencies`. The syntax for accessing an output variable in a future job or stage varies based on the relationship between the setter and consumer of the variable. Learn about each case in [dependencies](expressions.md#dependencies).
+When you use output variables across jobs, you reference them with `dependencies`. The syntax for accessing an output variable in a future job or stage varies based on the relationship between the setter and consumer of the variable. Learn about each case in [dependencies](expressions.md#dependencies). 
+
+Output variables are only available in the next downstream job. If multiple jobs consume the same output variable, use the `dependsOn` condition. 
 
 # [Bash](#tab/bash)
 

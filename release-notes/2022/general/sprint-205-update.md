@@ -4,6 +4,7 @@ description: See the Sprint 205 feature updates for Azure DevOps, including next
 author: gloridelmorales
 ms.author: glmorale
 ms.date: 6/27/2022
+ms.topic: release-notes
 ---
 
 # Azure DevOps - Sprint 205 Update

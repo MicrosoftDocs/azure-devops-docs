@@ -3,7 +3,7 @@ title: Ship a Node 16 only agent in addition to the one that has all three versi
 author: gloridelmorales
 ms.author: glmorale
 ms.date: 10/12/2022
-ms.topic: article
+ms.topic: whats-new
 ms.service: azure-devops
 ms.subservice: azure-devops-release-notes
 description: Ship a Node 16 only agent in addition to the one that has all three versions (6, 10, 16)

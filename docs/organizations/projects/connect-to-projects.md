@@ -7,13 +7,13 @@ ms.topic: quickstart
 ms.assetid: 1372e56c-b34f-42c2-b72c-94b57620c75c
 ms.author: sdanie
 author: steved0x 
-monikerRange: '>= azure-devops-2019'
+monikerRange: "<=azure-devops"
 ms.date: 11/11/2024
 ---
 
 # Connect to a project
 
-[!INCLUDE [version-gt-eq-2019](../../includes/version-gt-eq-2019.md)] 
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)] 
 
 Learn how to connect to a project from a client, to share code, build apps, track work, and collaborate with team members. You can connect to a project from any of the following clients:
   
@@ -275,7 +275,7 @@ See [Look up your Azure DevOps platform and version](../../user-guide/lookup-pla
 > [!div class="nextstepaction"]
 > [Get started with Agile tools to plan and track work](../../boards/get-started/what-is-azure-boards.md).
 
-## Related articles
+## Related content
 
 - [Work in web portal](../../project/navigation/index.md)  
 - [Work in Team Explorer](../../user-guide/work-team-explorer.md) 

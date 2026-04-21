@@ -1,33 +1,41 @@
 ---
 title: Stakeholder access quick reference
 titleSuffix: Azure DevOps 
-description: Stakeholder access to common user tasks for Azure DevOps 
+description: Stakeholder access to common user tasks for Azure DevOps
 ms.subservice: azure-devops-security
+ai-usage: ai-assisted
 toc: show
 ms.author: chcomley
 author: chcomley
 ms.topic: overview
-monikerRange: '>= azure-devops-2019'
-ms.date: 04/12/2024
+monikerRange: "<=azure-devops"
+ms.date: 04/13/2026
 --- 
 
 # Stakeholder access quick reference
 
-[!INCLUDE [version-gt-eq-2019](../../includes/version-gt-eq-2019.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
-**Stakeholder** access is available to support free access to a limited set of features by an unlimited set of stakeholders.  In general, **Stakeholder** access users gain limited access to Azure Boards and collaboration tools. They have no access to code repositories. 
+**Stakeholder** access gives an unlimited number of users free, limited access to your organization. Stakeholders can:
 
-**Stakeholder** access users  can create and modify work items and create and save queries. They can also view and approve release pipelines and perform administrative tasks when granted administrative permissions or added to an administrative group. If they need to contribute to the code base, then assign them at least **Basic** access.
+- **Azure Boards** — Create and modify work items, create and save queries, assign existing tags
+- **Azure Pipelines** — View and approve release pipelines
+- **Administration** — Perform administrative tasks when granted permissions or added to an administrative group
+- **Collaboration** — Use collaboration and notification features
 
-If you're assigned **Stakeholder** access and want to start using Azure Boards to track work, see [Get started as a Stakeholder](get-started-stakeholder.md). If you're tasked to support administrative tasks, see [Manage your project](../../user-guide/project-admin-tutorial.md).
+Stakeholders *don't* have access to code repositories (**Azure Repos**). To contribute to the code base, assign users at least **Basic** access.
+
+To get started, see [Get started as a Stakeholder](get-started-stakeholder.md). For administrative tasks, see [Manage your project](../../user-guide/project-admin-tutorial.md).
  
 ## Assign Stakeholder access users to a security group
 
-In general, use the following guidance when assigning **Stakeholder** access users to a security group: 
+Assign **Stakeholder** access users to a security group based on their role:
 
-- Add to the **Contributors** security group for managers or users who don't actively contribute to the code base but want to check project status and provide direction, feedback, feature ideas, and business alignment to a team. 
-- Add to the **Project Administrators** security group for users tasked with managing project resources. 
-- Add to the **Project Collection Administrators** security group for users tasked with managing organization or collection resources. 
+| Security group | When to use |
+|---|---|
+| **Contributors** | Managers or users who check project status and provide direction, feedback, feature ideas, or business alignment - but don't contribute to the code base. |
+| **Project Administrators** | Users who manage project resources. |
+| **Project Collection Administrators** | Users who manage organization or collection resources. | 
 
 <a id="stakeholder-access">  </a>
 <a id="feature-access">  </a>
@@ -38,8 +46,7 @@ In general, use the following guidance when assigning **Stakeholder** access use
 
 ## Public versus private feature access
 
-Users with **Stakeholder** access privileges can access features based on whether the project is private or public. For private projects, Stakeholders have limited access to specific work tracking functions, whereas for public projects, Stakeholders enjoy full access to work tracking features. To learn more about public projects, see [What is a public project?](../projects/about-projects.md).  
-
+Users with **Stakeholder** access get different feature access depending on whether the project is private or public. In public projects, Stakeholders get full access to work tracking features. In private projects, access is limited. For more information, see [What is a public project?](../projects/about-projects.md)  
 
 > [!div class="mx-tdBreakAll"]  
 > | Service, application, or setting | Private project | Public project|
@@ -61,13 +68,11 @@ Users with **Stakeholder** access privileges can access features based on whethe
  
 ## Azure Boards 
 
-The following table summarizes the features Stakeholders have access to from Azure Boards. Stakeholders can view and edit all work items for which they have Area Path permissions, which by default is set to Allow for all user security groups. For more information, see [Set permissions and access for work tracking](set-permissions-access-work-tracking.md#set-permissions-area-path).
+Stakeholders can view and edit all work items for which they have Area Path permissions (set to **Allow** by default for all user security groups). For more information, see [Set permissions and access for work tracking](set-permissions-access-work-tracking.md#set-permissions-area-path). For an overview of work tracking features, see [What is Azure Boards?](../../boards/get-started/what-is-azure-boards.md)
 
-For an overview of work tracking features, see [What is Azure Boards?](../../boards/get-started/what-is-azure-boards.md) 
-
-::: moniker range="azure-devops" 
+::: moniker range="azure-devops"
 > [!NOTE]   
-> Public project **Stakeholder** access users have full access to all features. 
+> In public projects, stakeholders can view Delivery Plans but can't add or edit them.
 ::: moniker-end
 
 :::row:::
@@ -75,10 +80,10 @@ For an overview of work tracking features, see [What is Azure Boards?](../../boa
       **Page** 
    :::column-end:::
    :::column span="2":::
-      **Features can use**
+      **Features you can use**
    :::column-end:::
    :::column span="2":::
-      **Features can't use**
+      **Features you can't use**
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -118,45 +123,7 @@ For an overview of work tracking features, see [What is Azure Boards?](../../boa
    :::column-end:::
 :::row-end:::
 ::: moniker-end
-::: moniker range="azure-devops-2020" 
-:::row:::
-   :::column span="1":::
-      **Boards** 
-   :::column-end:::
-   :::column span="2":::
-      - View boards, open and edit work items
-      - Update status through drag-and-drop
-      - Add child items to a checklist
-      - Assign to a sprint (from card field)
-      - Configure team boards<sup>2</sup> 
-   :::column-end:::
-   :::column span="2":::
-      - Add work items to a board
-      - Change the priority of an item within a board
-      - Change fields on cards on a board, except for State field
-   :::column-end:::
-:::row-end:::
-::: moniker-end
-::: moniker range="< azure-devops-2020" 
-:::row:::
-   :::column span="1":::
-      **Boards** 
-   :::column-end:::
-   :::column span="2":::
-      - View boards, open and edit work items
-      - Add work items to a board; update status through drag-and-drop
-      - Add child items to a checklist
-      - Assign to a sprint (from card field)
-      - Configure team boards<sup>2</sup> 
-   :::column-end:::
-   :::column span="2":::
-      - Add work items to a board
-      - Update status through drag-and-drop
-      - Change the priority of an item within a board
-      - Change fields on cards on a board, except for State field
-   :::column-end:::
-:::row-end:::
-::: moniker-end
+
 :::row:::
    :::column span="1":::
       **Backlogs** 
@@ -217,54 +184,40 @@ For an overview of work tracking features, see [What is Azure Boards?](../../boa
    :::column-end:::
 :::row-end:::
 ::: moniker-end
-::: moniker range="< azure-devops-2022" 
-:::row:::
-   :::column span="1":::
-      **Delivery Plans** (Extension)
-   :::column-end:::
-   :::column span="2":::
-      - None
-   :::column-end:::
-   :::column span="2":::
-      - View delivery plans
-      - Add or edit a delivery plan
-   :::column-end:::
-:::row-end:::
-::: moniker-end
 
 **Notes:**
 1. Controllable through project-level permission.
-2. Requires assignment as a team administrator or member of the Project Administrators Group.
+2. Requires team administrator role or membership in the Project Administrators group.
 
 ## Azure Test Plans 
 
-Users granted **Stakeholder** access can perform the following tasks related to testing. For an overview of manual test features and functions, see [Testing overview](../../test/index.yml).  
+Stakeholders have limited access to Azure Test Plans. For an overview, see [Testing overview](../../test/index.yml).
 
-- Provide feedback using the Test & Feedback extension
+Stakeholders can:
+- Provide feedback by using the Test & Feedback extension
 - Apply a work item template to a test case  
 
 ## Dashboards, notifications, READMEs, and wikis 
 
-The following table summarizes the features **Stakeholder** access users have to these areas: [Dashboards](../../report/dashboards/overview.md), [Notifications](../../organizations/notifications/about-notifications.md), [Project pages](../../project/navigation/work-across-projects.md), [READMEs](../../project/wiki/about-readme-wiki.md#readmes), and [Wikis](../../project/wiki/provisioned-vs-published-wiki.md).
+The following table shows stakeholder access to [Dashboards](../../report/dashboards/overview.md), [Notifications](../../organizations/notifications/about-notifications.md), [Project pages](../../project/navigation/work-across-projects.md), [READMEs](../../project/wiki/about-readme-wiki.md#add-project-readme-files), and [Wikis](../../project/wiki/provisioned-vs-published-wiki.md).
 
-::: moniker range="azure-devops" 
+::: moniker range="azure-devops"
 > [!NOTE]   
-> Public project **Stakeholder** access users have full access to all dashboard and Wiki features. 
+> In public projects, stakeholders have full access to all dashboard and wiki features. 
 ::: moniker-end
-
 
 :::row:::
    :::column span="1":::
       **Feature area** 
    :::column-end:::
    :::column span="2":::
-      **Features can use**
+      **Features you can use**
    :::column-end:::
    :::column span="2":::
-      **Features can't use**
+      **Features you can't use**
    :::column-end:::
 :::row-end:::
-::: moniker range=">= azure-devops-2020" 
+::: moniker range="<=azure-devops"
 :::row:::
    :::column span="1":::
       Dashboards
@@ -278,19 +231,7 @@ The following table summarizes the features **Stakeholder** access users have to
    :::column-end:::
 :::row-end:::
 ::: moniker-end
-::: moniker range="< azure-devops-2020" 
-:::row:::
-   :::column span="1":::
-      Dashboards
-   :::column-end:::
-   :::column span="2":::
-      - View dashboards   
-   :::column-end:::
-   :::column span="2":::
-      - Add and configure team dashboards  	 
-   :::column-end:::
-:::row-end:::
-::: moniker-end
+
 :::row:::
    :::column span="1":::
       Notifications
@@ -354,4 +295,11 @@ The following table summarizes the features **Stakeholder** access users have to
 :::row-end:::
  
 **Notes:**
-1. Requires team administrator role or addition to Project Administrators group.
+1. Requires team administrator role or membership in the Project Administrators group.
+
+## Related content
+
+- [Get started as a Stakeholder](get-started-stakeholder.md)
+- [About access levels](access-levels.md)
+- [Change access levels](change-access-levels.md)
+- [About permissions and security groups](about-permissions.md)

@@ -1,45 +1,48 @@
 ---
-title: Follow changes to work
+title: Follow work items and pull requests
 titleSuffix: Azure Boards & Azure Repos
-description: Learn how to track updates made to a work item or pull request by following it when using Azure Boards or Azure Repos.
-ms.custom: work-items, cross-project
-ms.subservice: azure-devops-settings
+description: Track updates to work items and pull requests by following them to receive targeted notifications in Azure DevOps.
+ms.custom: work-items, cross-project, copilot-scenario-highlight
+ms.service: azure-devops-boards
 ms.assetid: 77CAEE8E-BF1A-47DA-9818-A0C52BAC813C
+ai-usage: ai-assisted
 ms.author: chcomley
 author: chcomley
-ms.topic: tutorial
+ms.topic: how-to
 monikerRange: '<= azure-devops'
-ms.date: 07/13/2022
+ms.date: 02/28/2026
 ---
 
-# Tutorial: Follow changes made to a user story, bug, or other work item or pull request  
+# Follow work items and pull requests  
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 <a id="follow"></a>  
 
-To get notified of changes made to a specific work item or a pull request, you can choose to follow them. The Follow feature provides an improvised way of getting notified on a case-by-case basis. 
+Stay informed about changes to specific work items or pull requests by using the Follow feature. This feature provides targeted notifications on a case-by-case basis, helping you track items that matter most to your work without information overload.
 
-If you want to subscribe to receive notifications automatically based on changes that occur based on your targeted set of criteria, see [Manage personal notifications](../../organizations/notifications/manage-your-personal-notifications.md). For example, you can create a subscription to automatically get notified whenever a work item that you created or that was assigned to you is modified. 
+[!INCLUDE [ai-assistance-mcp-server-tip](../../includes/ai-assistance-mcp-server-tip.md)]
 
-> [!NOTE]  
-> Notification subscriptions allow you to personalize the notifications you receive automatically based on additional criteria you specify for [yourself](../../organizations/notifications/manage-your-personal-notifications.md), a team, or a project. For example, you can create a subscription and add field criteria to receive changes based on one or more of the following templates. 
->
-> ![Work item notification templates](media/follow-work/work-item-notifications.png) 
+ > [!TIP]
+> **Quick start**: Select the :::image type="icon" source="../media/icons/follow-icon.png" border="false"::: **Follow** icon on any work item or pull request to start receiving notifications when it changes.
 
+## What you can do with the Follow feature
 
-This article shows you how to:
+- **Track specific items**: Get notifications only for work items and pull requests you choose to follow
+- **Customize notifications**: Choose when to receive alerts (all changes, mentions only, or specific field updates)
+- **Query followed items**: Use the `@Follows` macro to create custom queries and dashboards
+- **Stay focused**: Avoid notification overload by following only what matters to your work
 
->[!div class="checklist"]  
-> * Follow a work item
-> * Follow a pull request 
-> * Manage work items that you're following
+## How following differs from subscriptions
 
-::: moniker range="=azure-devops-2019"
+| Feature | Following | Notification Subscriptions |
+|---------|-----------|---------------------------|
+| Scope | Individual items you select | Broad criteria across projects |
+| Setup | One-click on specific items | Configure rules and filters |
+| Best for | Tracking specific work items/PRs | Automated team workflows |
+| Examples | Following a bug you reported | All items assigned to you |
 
-[Configure an SMTP server](/azure/devops/server/admin/setup-customize-alerts) for team members to receive notifications.   
-::: moniker-end  
-
+For automated notifications based on broader criteria, see [Manage personal notifications](../../organizations/notifications/manage-your-personal-notifications.md). 
 
 ## Prerequisites
 
@@ -47,101 +50,226 @@ This article shows you how to:
 
 ## Follow a work item
 
-When you want to track the progress of a single work item, choose the :::image type="icon" source="../media/icons/follow-icon.png" border="false"::: follow icon. This signals the system to notify you when changes are made to the work item.  
-
-::: moniker range=">= azure-devops-2020"
+**Quick steps**: Select the :::image type="icon" source="../media/icons/follow-icon.png" border="false"::: **Follow** icon on any work item to start receiving notifications.
 
 > [!div class="mx-imgBorder"]  
-> ![Work item form, Follow icon control](media/follow-work/follow-work-item.png) 
+> ![Screenshot showing the Work item form with Follow icon control.](media/follow-work/follow-work-item.png)
 
-If you want to specify conditions on when you'll get notified of changes, choose the :::image type="icon" source="../media/icons/gear_icon.png" border="false"::: gear icon and choose from the options provided. 
+### Customize your notification preferences
 
-> [!div class="mx-imgBorder"]  
-> ![Work item form, Notification settings dialog for follow](media/follow-work/notification-settings-for-follow.png) 
-
-By default, you're **Subscribed** to receive a notification when any change is made to the work item. Choose **Not Subscribed** to receive notification only when you're @mentioned. Or choose **Custom** to receive notifications when one of the checked fields changes, **State**, **Assigned To**, or **Iteration Path**. 
-
-::: moniker-end
-
-::: moniker range="=azure-devops-2019"
+Select the :::image type="icon" source="../media/icons/gear_icon.png" border="false"::: **Settings** icon next to **Follow** to choose when you get notified:
 
 > [!div class="mx-imgBorder"]  
-> ![Work item form, Follow icon control](media/follow-work/follow-work-item.png) 
+> ![Screenshot showing the Work item form notification settings dialog for follow.](media/follow-work/notification-settings-for-follow.png)
 
-::: moniker-end
+| Option | When you receive notifications | Best for |
+|--------|------------------------|----------|
+| **Subscribed** (default) | Any change to the work item | Items you actively work on |
+| Not Subscribed | Only when someone @mentions you | Items you want to watch passively |
+| Custom | When specific fields change | Critical updates only |
 
-You'll only receive notifications when other members of your team modify the work item, such as adding to the discussion, changing a field value, or adding an attachment. 
+**Custom notification triggers:**
+- **State changes**: When status updates, for example, New → Active → Resolved
+- **Assignment changes**: When someone new gets assigned
+- **Iteration changes**: When the system moves items to different sprints
 
-Notifications are sent to your preferred email address, which [you can change from your user profile](../../organizations/notifications/change-email-address.md)
+### What triggers notifications
 
-To stop following changes, choose the  :::image type="icon" source="../media/icons/following-icon.png" border="false":::  following icon.
+You receive email notifications when team members perform the following actions:
+
+| Action | Example | 
+|--------|---------|
+| Comment or discuss | Add comments, @mention you, start discussions |
+| Update fields | Change title, description, priority, tags |
+| Modify attachments | Add screenshots, documents, or remove files |
+| Change relationships | Link/unlink work items, update parent/child |
+
+> [!NOTE]
+> You don't receive notifications for changes you make yourself.
+
+**Quick tip**: Change your email preferences at [Change your preferred email address](../../organizations/notifications/change-email-address.md).
+
+**To stop following**: Select the :::image type="icon" source="../media/icons/following-icon.png" border="false"::: **Following** icon.
  
 <a id="follow-pr"></a>
 
 ## Follow a pull request 
 
-To track the progress of a single pull request, choose the  :::image type="icon" source="../media/icons/actions-icon.png" border="false"::: actions icon for the pull request, and select the :::image type="icon" source="../media/icons/follow-icon.png" border="false"::: **Follow** option. This signals the system to notify you when changes are made to the PR.  
-
-<img src="media/follow-pull-request.png" alt="Pull Request, context menu, Follow icon option" />  
-
-You'll only receive notifications when other members of your team modify the PR, such as adding to the discussion or adding an attachment. 
-
-Notifications are sent to your preferred email address, which [you can change from your user profile](../../organizations/notifications/change-email-address.md).  
-
-To stop following changes, open the PR context menu and choose the  :::image type="icon" source="../media/icons/following-icon.png" border="false":::  Following icon. 
-
-## Manage work items that you're following  
-
-You can review and manage all the work items you've selected to follow.
-
-::: moniker range=">= azure-devops-2019"   
-
-Open **Boards>Queries**, choose **All**, and under **My Queries**, choose **Followed work items**.   
+**Quick steps**: Go to any pull request → :::image type="icon" source="../media/icons/actions-icon.png" border="false"::: **More actions** → :::image type="icon" source="../media/icons/follow-icon.png" border="false"::: **Follow**.
 
 > [!div class="mx-imgBorder"]  
-> ![Boards>Queries>All>Followed work items, new nav](media/follow-work/following-work-items-vert.png)   
+> ![Screenshot showing the Pull Request context menu with Follow icon option.](media/follow-pull-request.png)
 
-From this view, you can view all items you're following across all projects. Also, you can complete similar actions supported with a query results view, such as:
-- Refresh the view
-- Add or remove visible columns
-- Sort the order of specific columns
-- Filter results by text or tags 
-- Set work item pane
-- Enter full screen mode. 
+### Pull request notifications
 
+| When | What happened | Why it matters |
+|------|---------------|----------------|
+| Comments added | Someone reviews or discusses code | Stay informed about feedback |
+| Review status changes | Approved, changes requested, or new reviewers added | Track review progress |
+| Code updates | New commits pushed to the branch | See latest changes |
+| Status changes | PR completed, abandoned, or reopened | Know the final outcome |
 
-You can also view and manage work that you're following from **Boards>Work Items** and pivot to **Following**. 
+> [!NOTE]
+> Like work items, you don't get notified about changes you make yourself.
+
+**To stop following**: Open **More actions** → select :::image type="icon" source="../media/icons/following-icon.png" border="false"::: **Following**. 
+
+## View and manage items you follow
+
+### Option 1: Quick access via Queries
+
+**Path**: **Boards** → **Queries** → **All** → **My Queries** → **Followed work items**
 
 > [!div class="mx-imgBorder"]  
-> ![Boards>Work Items, and pivot to Following.](media/follow-work/open-work-items-vert.png)   
+> ![Screenshot showing Boards>Queries>All>Followed work items navigation.](media/follow-work/following-work-items-vert.png)
 
-::: moniker-end   
+**What you can do here:**
+- See all followed items across projects
+- Sort and filter by any field
+- Add custom columns
+- Open items for quick review
 
- 
+### Option 2: Work Items hub
 
+**Path**: **Boards** → **Work Items** → **Following** tab
 
-## Query work items that you're following
+> [!div class="mx-imgBorder"]  
+> ![Screenshot showing Boards>Work Items and pivot to Following.](media/follow-work/open-work-items-vert.png)
 
-You can use the **\@Follows** macro in a work item query to filter a list based on work items you're following along with other query filters. 
+**Best for**: Streamlined view focused only on items you follow.   
 
-For example, the following query shows how to query across all projects for active work items that you're following. You use the **ID** field and the **In** operator with the **\@Follows** macro.  
+## Create custom queries with @Follows
 
+Use the **@Follows** macro to build powerful queries that combine items you follow with other criteria.
 
-:::image type="content" source="media/follow-work/query-follows.png" alt-text="Query Editor, with ID In @Follows query clause":::
+<a id="query-work-items-that-youre-following">  </a>
 
+### Basic @Follows query
 
-## Next steps
+:::image type="content" source="media/follow-work/query-follows.png" alt-text="Screenshot showing Query Editor with ID In @Follows query clause.":::
 
-> [!div class="nextstepaction"]
-> [Add, update, and follow a work item](../backlogs/add-work-items.md) 
+**Steps:**
+1. Create new query: **Boards** → **Queries** → **New query**
+2. Add clause: **ID** **In** **@Follows**
+3. Save and run
 
+### Advanced query examples
 
-## Related articles  
+**Most useful queries:**
 
-- [Manage personal notifications](../../organizations/notifications/manage-your-personal-notifications.md)  
-- [View and update work items via the mobile work item form](../../project/navigation/mobile-work.md)  
+| Query purpose | Query clauses | Why it's helpful |
+|---------------|---------------|------------------|
+| High-priority items I follow | ID In @Follows<br/>AND Priority = 1 | Focus on critical items |
+| My team's followed items | ID In @Follows<br/>AND Assigned To In Group [Team] | Team collaboration |
+| Recently updated | ID In @Follows<br/>AND Changed Date >= @Today - 7 | See recent activity |
+| Blocked items I follow | ID In @Follows<br/>AND State = Blocked | Track impediments |
 
+> [!TIP]
+> **Share query structures**: While @Follows is personal to you, you can share query templates with teammates to create consistent follow-up workflows.
+
+## Best practices for following items
+
+Consider these strategies to make the most of the Follow feature:
+
+### When to follow work items
+- **Items you create**: Automatically follow bugs you report or features you request
+- **Cross-team dependencies**: Follow items that impact your work but aren't assigned to you
+- **Critical bugs**: Follow high-priority issues that affect your area
+- **Learning opportunities**: Follow items to understand how your team resolves similar problems
+
+### Managing notification volume
+- **Use custom settings**: Set specific field triggers instead of following all changes
+- **Review regularly**: Unfollow completed items that no longer need monitoring
+- **Batch review**: Check the Following tab weekly instead of responding to every email
+- **Team coordination**: Agree on following strategies to avoid duplicate monitoring
+
+### Query strategies
+- **Create personal dashboards**: Build widgets using @Follows queries for quick status checks
+- **Set up alerts**: Use queries with @Follows to create additional notification rules
+- **Track patterns**: Monitor followed items to identify common issues or bottlenecks
+
+## Troubleshooting common issues
+
+### Not receiving notifications
+
+**Check these settings:**
+- **Personal notifications**: Verify your email address in [notification settings](../../organizations/notifications/manage-your-personal-notifications.md)
+- **Follow status**: Confirm the item shows the "Following" icon (not just "Follow")
+- **Notification preferences**: Check if you selected "Not Subscribed" by mistake
+- **Email filters**: Look for Azure DevOps emails in spam or filtered folders
+
+For persistent email delivery issues, see [Troubleshoot delayed notification emails](../../organizations/notifications/troubleshoot-delayed-email.md) and [Troubleshoot unexpected notification emails](../../organizations/notifications/troubleshoot-unexpected-email.md).
+
+### Too many notifications
+
+**Reduce notification volume:**
+- Switch high-volume items to "Custom" settings with specific field triggers
+- Use "Not Subscribed" for items you want to track but don't need immediate alerts
+- Create daily digest queries instead of real-time notifications
+- Unfollow completed or irrelevant items
+
+### Following not available
+
+**Possible causes:**
+- **Permissions**: You need at least Stakeholder access to follow items
+- **Project access**: Verify you can view the work item or pull request
+- **Feature availability**: Following requires Azure DevOps Services or TFS 2017 or later
+
+## Frequently asked questions
 
 ### Q: Can I add someone else to follow a work item or PR?
 
-**A:** No, you can't add another team member to follow a work item or pull request at this time. You can subscribe them to get notified based on select criteria, such as when a work item is create or modified, or a pull request is created. For more information, see [Manage team notifications](../../organizations/notifications/manage-team-group-global-organization-notifications.md).	
+**A:** No, following is personal - each user must follow items themselves. However, you can:
+- **Share the item link** and ask them to follow it
+- **Set up team notifications** for broader automatic alerts
+- **Create shared queries** that include @Follows for team visibility
+
+For team-wide notifications, see [Manage team notifications](../../organizations/notifications/manage-team-group-global-organization-notifications.md).
+
+### Q: Will I get too many notifications if I follow many items?
+
+**A:** You can control notification volume by:
+- Using **Custom** notification settings for specific field changes only
+- Setting items to **Not Subscribed** (mentions only) for passive monitoring
+- Creating queries to review followed items in batches instead of individual emails
+
+### Q: Can I follow items across different projects?
+
+**A:** Yes! The Follow feature works across all projects in your organization. Use the **Followed work items** query to see everything in one place.
+
+### Q: Do I automatically follow items I create or get assigned?
+
+**A:** No, following is always a manual action. You need to explicitly select the Follow icon on each item you want to track.
+
+### Q: Can I export a list of items I'm following?
+
+**A:** Yes, use the "Followed work items" query and export the results to CSV, or create a custom query with @Follows and export that.
+
+## Next step
+
+> [!div class="nextstepaction"]
+> [Add and update work items](../backlogs/add-work-items.md) 
+
+<a id="use-ai-assistance"></a>
+
+## Use AI to track followed work items
+
+If you configure the [Azure DevOps MCP Server](../../mcp-server/mcp-server-overview.md), you can query and manage followed items using natural language.
+
+| Task | Example prompt |
+|------|----------------|
+| List followed items | `Show me all work items I'm following in project <Contoso>` |
+| Check recent changes | `List recent changes to work items I follow in the last 7 days` |
+| Find items by state | `Show active bugs I'm following that are assigned to the current sprint` |
+| Query with @Follows | `Create a query for all work items I follow that are in the Active state` |
+
+> [!NOTE]
+> If you're using Visual Studio Code, [agent mode](/visualstudio/ide/copilot-chat-context#agent-mode) is especially helpful for tracking followed items across projects.
+
+## Related content
+
+- [Create and save managed queries with Query Editor](../queries/using-queries.md)
+- [View and configure notifications](../../organizations/notifications/about-notifications.md)
+- [Manage personal notifications](../../organizations/notifications/manage-your-personal-notifications.md)
+- [View work item history](../queries/history-and-auditing.md)
+- [Set work tracking permissions](../../organizations/security/set-permissions-access-work-tracking.md)

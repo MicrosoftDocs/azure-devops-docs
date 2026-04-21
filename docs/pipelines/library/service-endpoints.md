@@ -3,10 +3,10 @@ title: Service connections
 ms.custom: pipelinesresourcesrefresh, arm2024
 description: Learn how to manage Azure Pipelines service connections and get a reference to service connection types.
 ms.assetid: A40435C0-2053-4D99-9A75-CCB97FBB15D2
-ms.topic: conceptual
+ms.topic: concept-article
 ms.author: ronai
 author: RoopeshNair
-ms.date: 10/16/2024
+ms.date: 11/03/2025
 monikerRange: '<= azure-devops'
 ---
 
@@ -16,7 +16,7 @@ monikerRange: '<= azure-devops'
 
 This article covers service connections in Azure Pipelines. Service connections are authenticated connections between Azure Pipelines and external or remote services that you use to execute tasks in a job.
 
-For example, your pipelines might use the following categories of service connections:
+For example, your pipelines might use the following categories of service connections: 
 
 - Azure subscriptions, to use for Azure Web Site Deployment tasks.
 - Different build servers or file servers, such as a standard GitHub Enterprise Server service connection to a GitHub repository.
@@ -51,9 +51,7 @@ To create a service connection for Azure Pipelines:
 
 1. Optionally, enter a **Description**.
 
-1. Select **Grant access permission to all pipelines** to allow all pipelines to use this connection.
-
-   If you don't select this option, you must later explicitly [authorize each pipeline to use the service connection](#authorize-pipelines).
+1. Selecting **Grant access permission to all pipelines** lets all pipelines use this connection. This option isn't recommended. Instead, [authorize each pipeline individually to use the service connection](#authorize-pipelines).
    
 1. Select **Save** or **Verify and save**.
 
@@ -64,7 +62,7 @@ The following example shows an Azure Resource Manager connection to an Azure sub
 
 ::: moniker-end
 
-::: moniker range=">= azure-devops-2019 < azure-devops"
+::: moniker range="<azure-devops"
 
 To create a service connection for Azure Pipelines:
 
@@ -135,8 +133,6 @@ To use the service connection in pipelines:
 
 ### Authorize pipelines
 
-- To authorize all pipelines to use the service connection, select the **Allow all pipelines to use this connection** option in the connection properties.
-
 - To authorize a single pipeline to use the service connection:
 
   1. Select **Run pipeline** on the pipeline page to queue a manual build.
@@ -144,6 +140,8 @@ To use the service connection in pipelines:
   1. On the **Waiting for review** screen, select **Permit**, and on the confirmation screen, select **Permit** again.
 
   This action explicitly adds the pipeline as an authorized user of the service connection.
+
+- To authorize all existing and future pipelines to use the service connection, select the **Grant access permission to all pipelines** option in the connection properties. This option isn't recommended. Instead, authorize each pipeline individually to use the service connection.
 
 ## Common service connection types
 
@@ -168,7 +166,7 @@ Azure Pipelines supports the following service connection types by default. You 
 | [Jira](#jira-service-connection) | Connect to a Jira server. |
 | [Kubernetes](#kubernetes-service-connection) | Connect to a Kubernetes cluster. |
 | [Maven](#maven-service-connection) | Connect to a Maven repository. |
-| [npm](#npm-service-connection) | Connect to an npm repository. |
+| [npm](#npm-service-connection) | Connect to an npm registry. |
 | [NuGet](#nuget-service-connection) | Connect to a NuGet server. |
 | [Other Git](#other-git-service-connection) | Connect to a git repository. |
 | [Python package download](#python-package-download-service-connection) | Connect to a Python repository for download. |
@@ -229,7 +227,6 @@ For enhanced security, use the [Publish To Azure Service Bus v2 task](/azure/dev
 
 ### Bitbucket Cloud service connection
 
-
 Use OAuth with **Grant authorization** or a username and password with **Basic Authentication** to define a connection to Bitbucket Cloud. For pipelines to keep working, your repository access must remain active.
 
 | Parameter | Description  |
@@ -243,7 +240,6 @@ Use OAuth with **Grant authorization** or a username and password with **Basic A
 | Security | Optional. Select **Grant access permission to all pipelines** to allow all pipelines to use this connection. If you don't select this option, you must explicitly authorize the service connection for each pipeline that uses it. |
 
 Select **Verify** or **Authorize** to validate your connection information.
-
 
 ### Cargo service connection
 
@@ -323,7 +319,6 @@ Enter the following parameters to define a connection to a **Docker Hub** regist
 | Security | Optional. Select **Grant access permission to all pipelines** to allow all pipelines to use this connection. If you don't select this option, you must explicitly authorize the service connection for each pipeline that uses it. |
 
 You can select **Verify** to verify your credentials before entering the rest of the parameters.
-
 
 #### Azure Container Registry
 
@@ -472,8 +467,7 @@ Use the following parameters to define a connection to the Jenkins service.
 
 You can select **Verify** to verify your credentials before entering the rest of the parameters.
 
-For more information, see [Azure Pipelines Integration with Jenkins](https://azuredevopslabs.com/labs/vstsextend/jenkins/) and [Artifact sources - Jenkins](../release/artifacts.md#jenkins).
-
+For more information, see [Artifact sources - Jenkins](../release/artifacts.md#jenkins).
 
 ### Jira service connection
 
@@ -493,6 +487,9 @@ Use the following parameters when you define a connection to a Kubernetes cluste
 * Kubeconfig
 * Service account
 * Azure subscription
+
+> [!NOTE]
+> The Kubernetes service connection option does not work if your cluster is private or hidden from the network. In these cases, you need to use an [Azure Resource Manager-based service connection](#azure-resource-manager-service-connection) and ensure your pipeline runs on an agent with direct network access to the cluster, such as one in a [Managed DevOps pool](/azure/devops/managed-devops-pools/overview).
 
 #### Kubeconfig option
 
@@ -584,7 +581,7 @@ Use the following parameters when you define and secure a connection to an npm s
 | Parameter | Description  |
 |-----------------------|-------------|
 | Authentication method | Required. Select **Username and Password** or **Authentication Token**. |
-| Registry URL| Required. The URL of the Maven repository. |
+| Registry URL| Required. The URL of the npm registry. |
 | Username  | Required when connection type is **Username and Password**. The username for authentication.|
 | Password  | Required when connection type is **Username and Password**. The password for the username. |
 | Personal Access Token | Required **Authentication Token** is selected. The personal access token (PAT) to authenticate with the service or registry. PATs are applicable to repositories that support them, for example https://registry.npmjs.org DevOps Services organizations or Azure DevOps Server. For more information, see [Use personal access tokens](../../organizations/accounts/use-personal-access-tokens-to-authenticate.md). |
@@ -610,12 +607,10 @@ Use the following parameters when you define and secure a connection to a NuGet 
 
 To configure NuGet to authenticate with Azure Artifacts and other NuGet repositories, see [NuGet Authenticate](/azure/devops/pipelines/tasks/reference/nuget-authenticate-v1).
 
-
 ### Other Git service connection
 
 Use the following parameters to define and secure a connection to an external Git repository server.
 There's a specific service connection for [GitHub](#github-service-connection) and [GitHub Enterprise Server](#github-enterprise-server-service-connection).
-
 
 | Parameter | Description |
 | --------- | ----------- |
@@ -785,9 +780,14 @@ Other service connection types and tasks can be installed as extensions. See the
 
 You can also create your own [custom service connections](../../extend/develop/service-endpoints.md).
 
-<!--  ## FAQs and Troubleshoot service connections -->
+## FAQs and Troubleshoot service connections
 
-<!-- ### Q: -->
-<!-- **A:**  -->
+For detailed troubleshooting guidance, see the following articles:
+
+- [Troubleshoot Azure Resource Manager service connections](../release/azure-rm-endpoint.md)
+- [Troubleshoot workload identity service connections](../release/troubleshoot-workload-identity.md)
+
+### Q: How does Azure DevOps ensure efficient usage of Entra ID resources?
+Azure DevOps may internally cache Entra ID access tokens issued for target identities in service connections that use Entra ID authentication, such as [Azure Resource Manager](#azure-resource-manager-service-connection) and [Docker Registry](#docker-registry-service-connection). This helps prevent Entra ID throttling, which can occur due to a high number of server task executions and other actions that require Azure DevOps to authenticate with Entra ID to serve the request. Caching applies only to internal flows where the token is never exposed to the user. If you receive an Entra ID token - for example in your pipeline script - it will always be freshly issued. Modifying the service connection invalidates its token cache and temporarily disables caching for this service endpoint. If you're experiencing any issue due to the staleness of the token following changes made in Entra ID, wait for an hour or try updating the corresponding service endpoint.
 
 [!INCLUDE [rm-help-support-shared](../includes/rm-help-support-shared.md)]

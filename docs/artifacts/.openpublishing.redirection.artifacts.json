@@ -14,6 +14,16 @@
             "source_path_from_root": "/docs/artifacts/collaborate-with-packages.md",
             "redirect_url": "/azure/devops/artifacts/concepts/best-practices",
             "redirect_document_id": false
+        },
+        {
+            "source_path_from_root": "/docs/artifacts/nuget/consume.md",
+            "redirect_url": "/azure/devops/artifacts/nuget/install-nuget-packages-with-visual-studio",
+            "redirect_document_id": false
+        },
+        {
+            "source_path_from_root": "/docs/artifacts/maven/pom-and-settings.md",
+            "redirect_url": "/azure/devops/artifacts/maven/project-setup-maven",
+            "redirect_document_id": false
         }
     ]
 }

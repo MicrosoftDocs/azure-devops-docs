@@ -2,12 +2,12 @@
 title: Review test results
 description: Review continuous test results with a build or release pipeline in Azure Pipelines or Team Foundation Server (TFS)
 ms.assetid: EA5D7524-3683-4660-B3B6-3F29AD3587AC
-ms.topic: conceptual
-ms.custom: continuous-test, cross-service
-ms.author: jeom
+ms.topic: concept-article
+ms.author: alexpysanets
 author: raviLiftr
 ms.date: 10/06/2021
 monikerRange: '<= azure-devops'
+ms.custom: continuous-test, cross-service, sfi-image-nochange
 ---
 
 # Review test results
@@ -19,7 +19,7 @@ Test reports provide an effective and consistent way to view the tests results e
 in order to measure pipeline quality, review traceability, troubleshoot failures, and drive failure ownership.
 In addition, it provides many advanced reporting capabilities explored in the following sections.
 
-::: moniker range=">= azure-devops-2019"
+::: moniker range="<=azure-devops"
 
 You can also perform deeper analysis of test results by using the
 [Analytics Service](../../report/powerbi/what-is-analytics.md).
@@ -28,10 +28,6 @@ For an example of using this with your build and deploy pipelines, see [Analyze 
 ::: moniker-end
 
 Read the [glossary](./test-glossary.md) to understand test report terminology.
-
-
-
-
 
 Published test results can be viewed in the **Tests** tab in a build or release summary.
 

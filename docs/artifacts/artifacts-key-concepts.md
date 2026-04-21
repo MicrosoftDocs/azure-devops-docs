@@ -2,9 +2,9 @@
 title: Azure Artifacts key concepts 
 description: Understand the key concepts in Azure Artifacts.
 ms.service: azure-devops-artifacts
-ms.topic: conceptual
+ms.topic: concept-article
 ms.date: 02/12/2025
-monikerRange: '<= azure-devops'
+monikerRange: "<=azure-devops"
 "recommendations": "true"
 ---
 
@@ -62,9 +62,7 @@ You must be a feed owner also to delete feeds. Deleted feeds remain in the recyc
 
 ## Related content
 
-- [What are feeds?](./concepts/feeds.md)
-
-- [Feed views](./concepts/views.md)
+- [Azure Artifacts best practices](concepts/best-practices.md) 
 
 - [Azure Artifacts Upstream Sources](./concepts/upstream-sources.md)
 

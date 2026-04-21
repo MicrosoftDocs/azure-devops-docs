@@ -2,8 +2,9 @@
 title: Azure DevOps release notes - Azure DevOps Sprint 251 Update
 description: See the Sprint 251 feature updates for Azure DevOps, including next steps.
 author: ckanyika
-ms.author: ckanyika
+ms.author: glmorale
 ms.date: 2/12/2025
+ms.topic: release-notes
 ---
 
 # Azure DevOps - Sprint 251 Update

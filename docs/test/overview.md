@@ -5,10 +5,11 @@ ms.assetid: E9D8D614-A09A-4327-81B6-39F880D685E6
 ms.service: azure-devops-test-plans
 ms.custom: UpdateFrequency3
 ms.topic: overview
-ms.author: jeom
+ms.author: pliaros
 author: raviLiftr
 monikerRange: '<= azure-devops'
 ms.date: 09/06/2024
+ms.update-cycle: 1095-days
 ---
 
 # What is Azure Test Plans?  
@@ -269,7 +270,7 @@ to feedback requests using the browser-based Test &amp; Feedback extension -
 not just to rate and send comments, but also by capturing rich diagnostic
 data and filing bugs and tasks directly.
 See more at [Request stakeholder feedback](request-stakeholder-feedback.md) 
-and [Provide stakeholder feedback](provide-stakeholder-feedback.md).
+and [Provide stakeholder feedback](request-stakeholder-feedback.md#email).
 
 ![Requesting and providing stakeholder feedback](media/manual-testing/stakeholder-feedback-01.png)
 
@@ -420,7 +421,7 @@ In addition, you can create custom reports by querying the Analytics service. Fo
 > [!div class="nextstepaction"]
 > [Test objects and terms](test-objects-overview.md)
 
-## Related articles
+## Related content
 
 - [Navigate Test Plans](navigate-test-plans.md)
 - [Copy or clone test plans, test suites, and test cases](copy-clone-test-items.md)

@@ -4,6 +4,7 @@ description: See the Sprint 184 feature updates for Azure Repos, including next 
 author: gloridelmorales
 ms.author: glmorale
 ms.date: 03/23/2021
+ms.topic: release-notes
 ---
 
 # Azure Repos - Sprint 184 Update

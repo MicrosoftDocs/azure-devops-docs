@@ -1,14 +1,15 @@
 ---
-title: Try Azure Test Plans for free
+title: Start Azure Test Plans Free Trial – Azure DevOps Services
 titleSuffix: Azure DevOps Services
-ms.custom: freshness-fy22q1, engagement-fy23
-description: Get a free 30-day trial for Azure Test Plans (formerly Test Manager).
+description: Azure Test Plans trial lets you manage and run tests for 30 days at no cost. Get started today and empower your team with advanced testing features.
 ms.subservice: azure-devops-billing
 ms.assetid: 435fb3a4-1766-4172-928d-80c09cfb1410
 ms.topic: how-to
 ms.author: chcomley
+ms.reviewer: chcomley
 author: chcomley
-ms.date: 09/25/2023
+ms.date: 04/13/2026
+ai-usage: ai-assisted
 monikerRange: 'azure-devops'
 ---
 
@@ -26,34 +27,35 @@ Start a Test Plans trial and assign any of your users Basic + Test Plans for 30 
 
 ## Try Azure Test Plans
 
-1. Sign in to your organization (```https://dev.azure.com/{yourorganization}```).
-2. Choose ![gear icon](../../media/icons/gear-icon.png) **Organization settings**.
+1. Sign in to your organization (`https://dev.azure.com/{yourorganization}`).
+1. Select ![gear icon](../../media/icons/gear-icon.png) **Organization settings**.
 
    ![Screenshot showing highlighted Organization settings button.](../../media/settings/open-admin-settings-vert.png)
 
-3. Choose **Billing**.
+1. Select **Billing**.
 
    ![Screenshot showing highlighted Billing selection in Organization settings.](media/shared/select-billing-organization-settings.png)
 
-4. Select **Start free trial**.
+1. Select **Start free trial**.
 
    ![Screenshot showing highlighted link to "Start free trial".](media/try-additional-features/start-free-trial.png)
 
-5. Select **Start free trial** once more in the resulting window.
+1. Select **Start free trial** again in the resulting window. Your Azure DevOps organization now has a 30-day trial of Azure Test Plans. However, each user must be explicitly assigned a **Basic + Test Plans** license to access the trial. Proceed with step 6.
 
-6. Assign users **Basic + Test Plans**, so they can access Test Plans during the trial. 
+1. Assign users the **Basic + Test Plans** license so they can access Test Plans during the trial. 
 
-   During the trial, Test Plans users have full access to Test Plans and Basic users can execute tests only. After trial expiration, you need to buy a Basic + Test Plans license and assign it to specific users, so they can continue to use it.
+   > [!IMPORTANT]
+   > During the trial, users assigned **Basic + Test Plans** have full access. After trial expiration, you start **getting charged** for users assigned **Basic + Test Plans**. If you didn't [set up billing](set-up-billing-for-your-organization-vs.md), those users receive **Stakeholder** access.
 
 ## Next steps
 
 > [!div class="nextstepaction"]
 > [Create a test plan](../../test/create-a-test-plan.md)
 
-## Related articles
+## Related content
 
-- [Navigate Test Plans](../../test/navigate-test-plans.md)
-- [Billing FAQs](billing-faq.yml)
+- [Tour Test Plans](../../test/navigate-test-plans.md)
+- [Find answers in Billing FAQs](billing-faq.yml)
 - [Manage paid access for users](buy-basic-access-add-users.md)
 - [Buy parallel jobs for Azure DevOps](../../pipelines/licensing/concurrent-jobs.md#how-much-do-parallel-jobs-cost)
-- [Azure DevOps billing overview](overview.md)
+- [Understand Azure DevOps billing](overview.md)

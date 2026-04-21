@@ -8,7 +8,7 @@ ms.topic: reference
 ms.author: chcomley
 author: chcomley
 monikerRange: '<= azure-devops'
-ms.date: 01/17/2023 
+ms.date: 02/17/2026 
 ---
 
 # Quick reference index for Azure Boards settings 
@@ -17,11 +17,13 @@ ms.date: 01/17/2023
 
 Use this index to quickly access concepts and tasks related to configuring and customizing Azure Boards. If you're new to the Azure Boards, see [What is Azure Boards?](../boards/get-started/what-is-azure-boards.md). 
 
+[!INCLUDE [ai-assistance-callout](../includes/ai-assistance-callout.md)]
+
 <a id="concepts"></a>
 
 ## Get started  
 
-::: moniker range=">= azure-devops-2019"
+::: moniker range="<=azure-devops"
 
 You can start using Azure Boards without configuring or customizing anything. However, as your organization grows, you'll find it beneficial to add teams, define area paths and iteration paths. If you use GitHub for your source code repository, you may want to connect Azure Boards to GitHub. If you are tasked with administrating a project for several teams, we recommend you review the following articles. 
 
@@ -57,7 +59,7 @@ Each team administrator can configure the following elements for their team, bac
       - [Definition of Done](../boards/boards/add-columns.md#definition-of-done)  
       - [Split columns](../boards/boards/split-columns.md)   
       - [Swimlanes](../boards/boards/expedite-work.md)  
-      - [Card fields, styles, tag colors, annotations, and card reordering](../boards/boards/customize-cards.md#kanban-board)    
+      - [Card fields, styles, tag colors, annotations, and card reordering](../boards/boards/customize-cards.md)    
    :::column-end:::
 :::row-end:::
 ---
@@ -67,30 +69,26 @@ Each team administrator can configure the following elements for their team, bac
 
 You customize your work tracking experience to support your business and reporting needs. The most common customizations include adding a custom field, modifying a work item form, or adding a custom work item type. Process customization tasks must be performed by an administrator who has the necessary organization-level permissions, as they affect all users and teams within a project.  
 
-
 ::: moniker range="azure-devops"
 
 You customize Azure Boards work tracking using the Inheritance process model which uses a WYSIWYG user interface to customize work tracking objects and tools. For select organizations who migrated to Azure DevOps Services using the data migration tool for Azure DevOps, the Hosted XML process model is used. This model relies on modifying and importing process templates to customize work tracking objects and tools. 
 
 ::: moniker-end
 
-::: moniker range=">= azure-devops-2019 < azure-devops"
+::: moniker range="<azure-devops"
 
 You customize Azure Boards work tracking using either the Inheritance process model or On-premises XML process model, depending on the selection made when [creating the project collection](/azure/devops/server/admin/manage-project-collections?view=azure-devops-2020&preserve-view=true) on which the project is defined.
 
 ::: moniker-end
 
-
-
-
-::: moniker range=">= azure-devops-2019"
+::: moniker range="<=azure-devops"
 
 ## Inheritance process model 
 
 With the Inheritance process, you apply a process to a project. 
  
 ::: moniker-end
-::: moniker range=">= azure-devops-2020"
+::: moniker range="<=azure-devops"
 - [Create and manage inherited processes](../organizations/settings/work/manage-process.md)
 - [Customize a project using an inherited process](../organizations/settings/work/customize-process.md)
 - [Change the reference process from Agile to Scrum](../organizations/settings/work/change-process-agile-to-scrum.md)  
@@ -98,16 +96,10 @@ With the Inheritance process, you apply a process to a project.
 - [Change the reference process from Scrum to Agile](../organizations/settings/work/change-process-scrum-to-agile.md)  
 ::: moniker-end
 
-::: moniker range="azure-devops-2019"
-- [Create and manage inherited processes](../organizations/settings/work/manage-process.md)
-- [Customize a project using an inherited process](../organizations/settings/work/customize-process.md) 
-::: moniker-end
-
  
 ::: moniker range="azure-devops"
 
 The Inheritance process model supports the following customization tasks. 
-
 
 ---
 :::row:::
@@ -155,8 +147,7 @@ The Inheritance process model supports the following customization tasks.
  
 ::: moniker-end
 
-
-::: moniker range=">= azure-devops-2019 < azure-devops"
+::: moniker range="<azure-devops"
 
 The Inheritance process model supports the following customization tasks. 
 
@@ -223,13 +214,11 @@ With the Hosted XML process model, you customize work tracking objects and Agile
       - [Add rules to a field](add-modify-field.md#add-rules)  
       - [Change a field label](add-modify-field.md#change-label)  
       - [Add a custom control field](add-modify-field.md#custom-control)  
-      - [Remove a field](add-modify-field.md#change-label)  
-      - [Define global lists](/previous-versions/azure/devops/reference/xml/define-global-lists)  
+      - [Remove a field](add-modify-field.md#change-label)
             
             
       **Work item types**
       - [Add or modify a work item type](add-modify-wit.md)
-      - [Customize the form](/previous-versions/azure/devops/reference/xml/change-work-item-form-layout)
       - [Specify the work item type color](xml/process-configuration-xml-element.md#wit-colors)
       - [Specify the work item type icon](xml/process-configuration-xml-element.md)
       - [Customize the workflow (States, Reasons, Transitions)](xml/change-workflow-wit.md)  
@@ -245,9 +234,7 @@ With the Hosted XML process model, you customize work tracking objects and Agile
       - [Set default weekend days (Scrum)](xml/process-configuration-xml-element.md#weekend_days)  
       - [Set default bug management behavior](xml/process-configuration-xml-element.md#behaviors)  
       - [Set default hidden backlogs](xml/process-configuration-xml-element.md#behaviors)  
-      - [Change process configuration](xml/process-configuration-xml-element.md)  
-      - [Add custom categories](xml/categories-xml-element-reference.md)  
-            
+      - [Change process configuration](xml/process-configuration-xml-element.md)           
             
       **Process templates** 
       - [Import a process template](../organizations/settings/work/import-process/import-process.md#import-from-TFS) 
@@ -279,7 +266,6 @@ With the On-premises XML process model, you modify the XML definition of work it
             
       **Work item types**
       - [Add or modify a work item type](add-modify-wit.md)
-      - [Customize the form](/previous-versions/azure/devops/reference/xml/change-work-item-form-layout)
       - [Specify the work item type color](xml/process-configuration-xml-element.md#wit-colors)
       - [Specify the work item type icon](xml/process-configuration-xml-element.md)
       - [Customize the workflow (States, Reasons, Transitions)](xml/change-workflow-wit.md)  
@@ -296,14 +282,12 @@ With the On-premises XML process model, you modify the XML definition of work it
       - [Set default bug management behavior](xml/process-configuration-xml-element.md#behaviors)  
       - [Set default hidden backlogs](xml/process-configuration-xml-element.md#behaviors)  
       - [Change process configuration](xml/process-configuration-xml-element.md)  
-      - [Add custom categories](/previous-versions/azure/devops/reference/xml/categories-xml-element-reference)  
    :::column-end:::
 :::row-end:::
 ---
  
 ::: moniker-end
  
-
 
 ## Related articles
  

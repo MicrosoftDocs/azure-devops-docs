@@ -1,198 +1,132 @@
 ---
 title: Get started with the REST APIs for Azure DevOps
-description: Learn the basic patterns for using the REST APIs for Azure DevOps.
+description: Learn the fundamental concepts and patterns for Azure DevOps REST APIs, including URL structure, authentication methods, HTTP operations, and response handling.
 ms.assetid: 14ac2881-2aaf-4291-8dfe-3f7e3f591861
 ms.subservice: azure-devops-ecosystem
-ms.topic: conceptual
-ms.custom: 
+ms.topic: quickstart
+ms.custom: pat-reduction, copilot-scenario-highlight
+ai-usage: ai-assisted
 monikerRange: '<= azure-devops'
 ms.author: chcomley
 author: chcomley
-ms.date: 09/13/2021
+ms.date: 03/31/2026
 ---
 
 # Get started with the REST APIs
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
-Integrate your app with Azure DevOps using the REST APIs provided in this article.
+Azure DevOps REST APIs provide powerful programmatic access to work items, repositories, builds, releases, and more. Whether you're building custom integrations, automating workflows, or extending Azure DevOps capabilities, understanding the fundamental patterns and concepts is essential for successful implementation.
 
-The APIs follow a common pattern, like the following example.
+> [!TIP]
+> Ready to start coding? Skip to [REST API samples](../get-started/rest/samples.md) for complete working examples with modern authentication patterns.
+
+This article covers the fundamental concepts and patterns for Azure DevOps REST APIs. For practical implementation examples, see [REST API samples](../get-started/rest/samples.md).
+
+[!INCLUDE [ai-assistance-mcp-server-tip](../../includes/ai-assistance-mcp-server-tip.md)]
+
+## URL structure
+
+The APIs follow a common pattern, as shown in the following example:
 
 ```no-highlight
 VERB https://{instance}/{collection}/{team-project}/_apis/{area}/{resource}?api-version={version}
 ```
 
 > [!TIP]
-> As APIs evolve, we recommend that you include an API version in every request. This practice can help you avoid unexpected changes in the API that could break.
+> As APIs evolve, include an API version in every request. This practice helps you avoid unexpected changes in the API that could break your application.
 
-## Azure DevOps Services
+### [Azure DevOps Services](#tab/services)
 
-For Azure DevOps Services, `instance` is `dev.azure.com/{organization}` and `collection` is `DefaultCollection`, so the pattern looks like the following example.
+For Azure DevOps Services, `instance` is `dev.azure.com/{organization}` and `collection` is `DefaultCollection`, so the pattern looks like the following example:
 
 ```no-highlight
 VERB https://dev.azure.com/{organization}/_apis/{area}/{resource}?api-version={version}
 ```
 
-The following example shows how to get a list of projects in an organization.
-
-```dos
-curl -u {username}:{personalaccesstoken} https://dev.azure.com/{organization}/_apis/projects?api-version=2.0
+**Example endpoint:**
+```no-highlight
+GET https://dev.azure.com/{organization}/_apis/projects?api-version=7.2
 ```
 
-If you want to provide the personal access token (PAT) through an HTTP header, you must first convert it to a Base64 string. The following example shows how to convert to Base64 using C#.  The resulting string can then be provided as an HTTP header in the format.
-
-```
-Authorization: Basic BASE64PATSTRING
-```
-
-The following example shows C# using the <a href="/previous-versions/visualstudio/hh193681(v=vs.118)" data-raw-source="[HttpClient class](/previous-versions/visualstudio/hh193681(v=vs.118))">HttpClient class</a>.
-
-```cs
-public static async void GetProjects()
-{
-	try
-	{
-		var personalaccesstoken = "PAT_FROM_WEBSITE";
-
-		using (HttpClient client = new HttpClient())
-		{
-			client.DefaultRequestHeaders.Accept.Add(
-				new System.Net.Http.Headers.MediaTypeWithQualityHeaderValue("application/json"));
-
-			client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Basic",
-				Convert.ToBase64String(
-					System.Text.ASCIIEncoding.ASCII.GetBytes(
-						string.Format("{0}:{1}", "", personalaccesstoken))));
-
-			using (HttpResponseMessage response = client.GetAsync(
-						"https://dev.azure.com/{organization}/_apis/projects").Result)
-			{
-				response.EnsureSuccessStatusCode();
-				string responseBody = await response.Content.ReadAsStringAsync();
-				Console.WriteLine(responseBody);
-			}
-		}
-	}
-	catch (Exception ex)
-	{
-		Console.WriteLine(ex.ToString());
-	}
-}
-```
-<br />
-
-Most of our samples use PATs, as they're a compact example for authenticating with the service.  However, there are various authentication mechanisms available for Azure DevOps Services including Microsoft Authentication Library (MSAL), OAuth, and Session Tokens.  For more information, see [Authentication guidance](../get-started/authentication/authentication-guidance.md), to help you determine which one is best suited for your scenario.
-
-## Azure DevOps Server
+### [Azure DevOps Server](#tab/server)
 
 For Azure DevOps Server, `instance` is `{server:port}`. The default port for a non-SSL connection is 8080.
 
 The default collection is `DefaultCollection`, but you can use any collection.
 
-Here's how to get a list of projects from Azure DevOps Server using the default port and collection across SSL:
+**Examples:**
+- SSL: `https://{server}/DefaultCollection/_apis/projects?api-version=7.2`
+- Non-SSL: `http://{server}:8080/DefaultCollection/_apis/projects?api-version=7.2`
 
-```dos
-curl -u {username}:{personalaccesstoken} https://{server}/DefaultCollection/_apis/projects?api-version=2.0
-```
+---
 
-To get the same list across a non-SSL connection:
+## Authentication
 
-```dos
-curl -u {username}:{personalaccesstoken} http://{server}:8080/DefaultCollection/_apis/projects?api-version=2.0
-```
+Azure DevOps REST APIs support several authentication methods:
 
-These examples use PATs, which require that you [create a PAT](../../organizations/accounts/use-personal-access-tokens-to-authenticate.md).
+- **Microsoft Entra ID** - Recommended for production applications
+- **Personal Access Tokens (PATs)** - Simple authentication for scripts and testing  
+- **Service principals and managed identities** - For automated scenarios
 
-## Responses
+[!INCLUDE [use-microsoft-entra-reduce-pats](../../includes/use-microsoft-entra-reduce-pats.md)]
 
-You should get a response like this.
+## Response format
+
+Azure DevOps REST APIs typically return JSON responses. Here's an example response structure:
 
 ```json
 {
     "value": [
         {
-            "id": "eb6e4656-77fc-42a1-9181-4c6d8e9da5d1",
+            "id": "00000000-0000-0000-0000-000000000000",
             "name": "Fabrikam-Fiber-TFVC",
-            "url": "https: //dev.azure.com/fabrikam-fiber-inc/_apis/projects/eb6e4656-77fc-42a1-9181-4c6d8e9da5d1",
-            "description": "TeamFoundationVersionControlprojects",
-            "collection": {
-                "id": "d81542e4-cdfa-4333-b082-1ae2d6c3ad16",
-                "name": "DefaultCollection",
-                "url": "https: //dev.azure.com/fabrikam-fiber-inc/_apis/projectCollections/d81542e4-cdfa-4333-b082-1ae2d6c3ad16",
-                "collectionUrl": "https: //dev.azure.com/fabrikam-fiber-inc"
-            },
-            "defaultTeam": {
-                "id": "66df9be7-3586-467b-9c5f-425b29afedfd",
-                "name": "Fabrikam-Fiber-TFVCTeam",
-                "url": "https: //dev.azure.com/fabrikam-fiber-inc/_apis/projects/eb6e4656-77fc-42a1-9181-4c6d8e9da5d1/teams/66df9be7-3586-467b-9c5f-425b29afedfd"
-            }
-        },
-        {
-            "id": "6ce954b1-ce1f-45d1-b94d-e6bf2464ba2c",
-            "name": "Fabrikam-Fiber-Git",
-            "url": "https: //dev.azure.com/fabrikam-fiber-inc/_apis/projects/6ce954b1-ce1f-45d1-b94d-e6bf2464ba2c",
-            "description": "Gitprojects",
-            "collection": {
-                "id": "d81542e4-cdfa-4333-b082-1ae2d6c3ad16",
-                "name": "DefaultCollection",
-                "url": "https: //dev.azure.com/fabrikam-fiber-inc/_apis/projectCollections/d81542e4-cdfa-4333-b082-1ae2d6c3ad16",
-                "collectionUrl": "https: //dev.azure.com/fabrikam-fiber-inc"
-            },
-            "defaultTeam": {
-                "id": "8bd35c5e-30bb-4834-a0c4-d576ce1b8df7",
-                "name": "Fabrikam-Fiber-GitTeam",
-                "url": "https: //dev.azure.com/fabrikam-fiber-inc/_apis/projects/6ce954b1-ce1f-45d1-b94d-e6bf2464ba2c/teams/8bd35c5e-30bb-4834-a0c4-d576ce1b8df7"
-            }
+            "url": "https://dev.azure.com/fabrikam-fiber-inc/_apis/projects/00000000-0000-0000-0000-000000000000",
+            "description": "Team Foundation Version Control projects"
         }
     ],
-    "count": 2
+    "count": 1
 }
 ```
 
-The response is [JSON](https://json.org/), which is generally what you get back from the REST APIs,
-although there are a few exceptions, like [Git blobs](/rest/api/azure/devops/git/blobs).
+The response is [JSON](https://json.org/), which is generally what you get back from the REST APIs, although there are a few exceptions, like [Git blobs](/rest/api/azure/devops/git/blobs).
 
-Now, you can look around the specific [API areas](/rest/api/azure/devops/git/) like [work item tracking](/rest/api/azure/devops/wit/)
-or [Git](/rest/api/azure/devops/git/) and get to the resources that you need.
-Keep reading to learn more about the general patterns that are used in these APIs.
+> [!TIP]
+> For complete working examples showing how to parse these responses, see [REST API samples](../get-started/rest/samples.md).
 
-## HTTP verbs
+## HTTP methods and operations
 
-Verb   | Used for...
-:------|:-----------------------------------
-GET    | Get a resource or list of resources
-POST   | Create a resource, Get a list of resources using a more advanced query
-PUT    | Create a resource if it doesn't exist or, if it does, update it
-PATCH  | Update a resource
-DELETE | Delete a resource
+Azure DevOps REST APIs use standard HTTP methods:
 
-### Request headers and request content
+| Method | Used for... | Example |
+|:-------|:------------|:--------|
+| GET    | Get a resource or list of resources | Get projects, work items |
+| POST   | Create a resource, or get resources using advanced queries | Create work items, query work items |
+| PUT    | Create or completely replace a resource | Replace a build definition, update a policy |
+| PATCH  | Update specific fields of a resource | Update work item fields |
+| DELETE | Delete a resource | Delete work item |
 
-When you provide request body (usually with the POST, PUT and PATCH verbs), include request headers that describe the body. For example,
+> [!TIP]
+> For practical examples of each HTTP method with complete code samples, see [REST API samples](../get-started/rest/samples.md).
 
-```no-highlight
-POST https://dev.azure.com/fabrikam-fiber-inc/_apis/build-release/requests
-```
+### Request headers and content
+
+When you provide a request body (usually with POST, PUT, and PATCH), include appropriate headers:
 
 ```http
 Content-Type: application/json
 ```
 
-```json
-{
-   "definition": {
-      "id": 3
-   },
-   "reason": "Manual",
-   "priority": "Normal"
-}
+For PATCH operations on work items, use:
+
+```http
+Content-Type: application/json-patch+json
 ```
 
 ### HTTP method override
 
-Some web proxies might only support the HTTP verbs GET and POST, but not more modern HTTP verbs like PATCH and DELETE.
-If your calls might pass through one of these proxies, you can send the actual verb using a POST method, with a header to override the method.
+Some web proxies support only the HTTP verbs GET and POST. They don't support more modern HTTP verbs like PATCH and DELETE.
+If your calls might pass through one of these proxies, send the actual verb by using a POST method with a header to override the method.
 For example, you might want to [update a work item](/rest/api/azure/devops/wit/work-items/update) (`PATCH _apis/wit/workitems/3`), but you might have to go through a proxy that only allows GET or POST.
 You can pass the proper verb (PATCH in this case) as an HTTP request header parameter and use POST as the actual HTTP method.
 
@@ -212,66 +146,74 @@ X-HTTP-Method-Override: PATCH
 
 ## Response codes
 
-Response | Notes
-:--------|:----------------------------------------
-200      | Success, and there's a response body.
-201      | Success, when creating resources. Some APIs return 200 when successfully creating a resource. Look at the docs for the API you're using to be sure.
-204      | Success, and there's no response body. For example, you get this response when you delete a resource.
-400      | The parameters in the URL or in the request body aren't valid.
-401      | Authentication failed.  Often, this response is because of a missing or malformed Authorization header.
-403      | The authenticated user doesn't have permission to do the operation.
-404      | The resource doesn't exist, or the authenticated user doesn't have permission to see that it exists.
-409      | There's a conflict between the request and the state of the data on the server. For example, if you attempt to submit a pull request and there's already a pull request for the commits, the response code is 409.
+Understanding HTTP response codes helps you handle API responses appropriately:
 
-## Cross-origin resource sharing (CORS)
+| Response | Meaning | Notes |
+|:---------|:--------|:------|
+| 200      | Success | Response body contains requested data |
+| 201      | Created | Resource successfully created |
+| 204      | Success | No response body (common with DELETE) |
+| 400      | Bad Request | Invalid parameters or request body |
+| 401      | Unauthorized | Authentication failed or missing |
+| 403      | Forbidden | User lacks permission for operation |
+| 404      | Not Found | Resource doesn't exist or no permission to view |
+| 409      | Conflict | Request conflicts with current resource state |
 
-Azure DevOps Services supports CORS, which enables JavaScript code served from a domain other than `dev.azure.com/*` to make Ajax requests to Azure DevOps Services REST APIs. Each request must provide credentials (PATs and OAuth access tokens are both supported options). Example:
+## API versioning
 
-```js
-    $( document ).ready(function() {
-        $.ajax({
-            url: 'https://dev.azure.com/fabrikam/_apis/projects?api-version=1.0',
-            dataType: 'json',
-            headers: {
-                'Authorization': 'Basic ' + btoa("" + ":" + myPatToken)
-            }
-        }).done(function( results ) {
-            console.log( results.value[0].id + " " + results.value[0].name );
-        });
-    });
-```
-
-(replace `myPatToken` with a personal access token) 
-
-<a name="versions"></a>
-
-## Versioning
-
-Azure DevOps REST APIs are versioned to ensure applications and services continue to work as APIs evolve.
+Azure DevOps REST APIs are versioned to ensure applications continue working as APIs evolve.
 
 ### Guidelines
 
-* Specify the API version with every request (**required**).
-* Format API versions as follows: {major}.{minor}-{stage}.{resource-version}. For example, ```1.0```, ```1.1```, ```1.2-preview```, ```2.0```.
-* Specify a particular revision of the API when it's in preview, by using the following version format: ```1.0-preview.1```, ```1.0-preview.2```. Once an API is released (1.0, for example), its preview version (1.0-preview) is deprecated and can be deactivated after 12 weeks.
-* Upgrade to the released version of the API. Once a preview API is deactivated, requests that specify ```-preview``` version get rejected.
+* **Always specify the API version** with every request (**required**)
+* Format API versions as: `{major}.{minor}` or `{major}.{minor}-{stage}` (for example, `7.2`, `7.2-preview`)
+* Use specific preview revisions when available: `7.2-preview.1`, `7.2-preview.2`
+* Upgrade to released versions when preview APIs are deprecated
 
 ### Usage
 
-Specify the API version in the header of the HTTP request or as a URL query parameter.
-
-HTTP request header:
-
-```http
-Accept: application/json;api-version=1.0
-```
-
-Query parameter:
+Specify the API version as a URL query parameter:
 
 ```no-highlight
-GET https://dev.azure.com/{organization}/_apis/{area}/{resource}?api-version=1.0
+GET https://dev.azure.com/{organization}/_apis/projects?api-version=7.2
 ```
 
-### Supported versions
+Or in the request header:
 
-For information on supported versions, see [REST API versioning, Supported versions](../concepts/rest-api-versioning.md#supported-versions).
+```http
+Accept: application/json;api-version=7.2
+```
+
+For supported versions, see [REST API versioning](../concepts/rest-api-versioning.md#supported-versions).
+
+## More resources
+
+For practical implementation guidance and complete code examples, see:
+
+* [REST API samples](../get-started/rest/samples.md) - Complete examples with Microsoft Entra ID authentication
+* [Authentication guidance](../get-started/authentication/authentication-guidance.md) - Detailed authentication options
+* [REST API versioning](../concepts/rest-api-versioning.md) - API lifecycle information
+* [Microsoft Entra OAuth](../get-started/authentication/entra-oauth.md) - OAuth implementation with Microsoft Entra ID
+
+<a id="use-ai-assistance"></a>
+
+## Use AI to build REST API calls
+
+If you connect [Azure DevOps MCP Server](../../mcp-server/mcp-server-overview.md) to your AI agent in agent mode, you can use natural language prompts to generate and troubleshoot REST API calls.
+
+| Task | Example prompt |
+|------|----------------|
+| Build a GET request | `Show me how to construct a GET request to list all projects in my Azure DevOps organization using the REST API` |
+| Construct a POST body | `Generate the JSON-patch body for creating a work item using the Azure DevOps REST API` |
+| Handle authentication | `Write C# code to call the Azure DevOps REST API with a Bearer token from Microsoft Entra ID` |
+| Explore API areas | `What Azure DevOps REST API endpoints are available for managing Git pull requests?` |
+| Parse API responses | `Show me how to deserialize an Azure DevOps REST API response into C# objects and handle pagination with continuation tokens` |
+| Debug API errors | `I'm getting a 400 error when calling the Azure DevOps work item update API — help me understand the correct PATCH format` |
+
+> [!NOTE]
+> Agent mode and the MCP Server use natural language, so you can adjust these prompts or ask follow-up questions to refine the results.
+
+## Next steps
+
+> [!div class="nextstepaction"]
+> [Try REST API samples](../get-started/rest/samples.md)

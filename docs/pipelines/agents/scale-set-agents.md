@@ -6,7 +6,7 @@ ms.custom: devx-track-azurecli, arm2024
 ms.manager: mijacobs
 ms.author: sdanie
 author: steved0x
-ms.date: 01/30/2025
+ms.date: 06/12/2025
 monikerRange: azure-devops
 ---
 
@@ -179,7 +179,7 @@ Azure virtual machine scale sets can be configured with Uniform [orchestration m
 
 5. Configure the following options:
 
-    - **Automatically tear down virtual machines after every use** - A new VM instance is used for every job. The VM goes offline after running a job and is reimaged before picking up another job.
+    - **Automatically tear down virtual machines after every use** - The VM goes offline after running a job and is reimaged before picking up another job. If reimaging fails, or if the VM is already deleted, then a new VM will be created. 
     - **Save an unhealthy agent for investigation** - Whether to save [unhealthy agent VMs](#unhealthy-agents) for troubleshooting instead of deleting them.
     - **Maximum number of virtual machines in the scale set** - Azure Pipelines will automatically scale out the number of agents, but won't exceed this limit.
     - **Number of agents to keep on standby** - Azure Pipelines will automatically scale in the number of agents, but will ensure that there are always this many agents available to run new jobs. If you set **Number of agents to keep on standby** to **0**, for example to conserve cost for a low volume of jobs, Azure Pipelines will start a VM only when it has a job.
@@ -543,7 +543,7 @@ This issue occurs because agent extension scripts attempt to create the user `Az
 
 #### Agent extension installation fails on scale set instances due to network security and firewall configurations
 
-The extension needs to be able to download the build agent files from `https://vstsagentpackage.azureedge.net/agent`, and the build agent needs to be able to register with Azure DevOps Services. Make sure that this URL and Azure DevOps Services-related IPs and URLs are open on the instance. For IPs and URLs that need to be unblocked on your firewall, see [Allowed IP addresses and domain URLs](/azure/devops/organizations/security/allow-list-ip-url).
+The extension needs to be able to download the build agent files from `https://download.agent.dev.azure.com`, and the build agent needs to be able to register with Azure DevOps Services. Make sure that this URL and Azure DevOps Services-related IPs and URLs are open on the instance. For IPs and URLs that need to be unblocked on your firewall, see [Allowed IP addresses and domain URLs](/azure/devops/organizations/security/allow-list-ip-url).
 
 #### Why does my scale set agent configuration script call Add-MpPreference and configure Windows Defender on the agent?
 

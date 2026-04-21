@@ -1,5 +1,6 @@
 ---
 ms.topic: include
+ms.custom: sfi-image-nochange
 ---
 
 ### Manage billing for your organization from Azure DevOps

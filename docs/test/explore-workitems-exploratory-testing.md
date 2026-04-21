@@ -4,11 +4,12 @@ description: Test tools - Manual and exploratory testing - explore work items fr
 ms.assetid: AFD66FBF-5DEC-4457-8867-A47FFB8EF407
 ms.service: azure-devops-test-plans
 ms.custom: UpdateFrequency3
-ms.topic: conceptual
-ms.author: jeom
+ms.topic: how-to
+ms.author: pliaros
 author: rohit-batra 
 monikerRange: '<= azure-devops'
 ms.date: 02/13/2025
+ms.update-cycle: 1095-days
 ---
 
 # Explore work items with the Test & Feedback extension
@@ -37,10 +38,6 @@ Explore the following items:
 1. On the board, open the shortcut menu for the work item you want to explore and select **Do exploratory testing**.
 
    ![Screenshot showing opening the Do exploratory testing menu item.](media/explore-workitems-exploratory-testing/explore-workitems-01.png)
-   
-   A banner in the Work hub displays the work item associated with your session.
-
-   ![Screenshot showing the banner with the work item for your session.](media/explore-workitems-exploratory-testing/explore-workitems-02.png)
 
 2. Launch the Test & Feedback extension. Any acceptance criteria for the work item are shown.
 
@@ -95,9 +92,9 @@ After you file bugs, create tasks, or create test cases, they appear on the "Rec
 
 For more information, see [View your sessions and gain insights](insights-exploratory-testing.md).
 
-## Related articles
+## Related content
 
-* [Find answers to FAQs for manual testing](reference-qa.yml#tandfext)
+* [Find answers to FAQs for manual testing](reference-qa.yml#test---feedback-extension)
 * [Use the Test & Feedback extension in Connected mode](connected-mode-exploratory-testing.md)
 * [Add findings to existing bugs with exploratory testing](add-to-bugs-exploratory-testing.md)
 * [Gain insights across your exploratory testing sessions](insights-exploratory-testing.md)

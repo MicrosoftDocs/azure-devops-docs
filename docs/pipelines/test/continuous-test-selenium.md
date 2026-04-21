@@ -2,9 +2,9 @@
 title: Perform UI tests with Selenium
 description: UI Testing with Selenium in a continuous deployment pipeline in Azure Pipelines and Team Foundation Server (TFS).
 ms.assetid: 1B90D2DF-4AB0-4B65-8039-2B14A25FB547
-ms.topic: conceptual
+ms.topic: concept-article
 ms.custom: continuous-test
-ms.author: jeom
+ms.author: alexpysanets
 author: raviLiftr
 ms.date: 03/15/2019
 monikerRange: '<= azure-devops'
@@ -61,7 +61,7 @@ from Visual Studio Test Explorer.
 
 3. Create your tests. For example, the following code creates a default class named **MySeleniumTests**
    that performs a simple test on the Bing.com website. Replace the contents of the **TheBingSearchTest** function
-   with the [Selenium code](https://www.seleniumhq.org/docs/)
+   with the Selenium code
    required to test your web app or website. Change the **browser** assignment in the **SetupTest**
    function to the browser you want to use for the test.
 
@@ -233,7 +233,7 @@ You can deploy and test your app using either the Microsoft-hosted agent in Azur
 
    ![Setting the test platform version](media/continuous-test-selenium/continuous-test-selenium-10.png)
 
-   [How do I pass parameters to my test code from a build pipeline?](../../test/run-automated-tests-from-test-hub.md#pass-params)
+   [How do I pass parameters to my test code from a build pipeline?](../../test/reference-qa.yml#how-do-i-pass-parameters-to-my-test-code-from-a-pipeline)
 
 5. Save the release pipeline and start a new release. You can do this by queuing a new CI build, or by 
    choosing **Create release** from the **Release** drop-down list in the release pipeline.

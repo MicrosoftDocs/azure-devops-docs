@@ -4,10 +4,11 @@ description: Manual and exploratory testing - get insights with exploratory test
 ms.assetid: 4A7DE54F-FE15-49AA-B88B-B3B848EC68F9
 ms.service: azure-devops-test-plans
 ms.custom: UpdateFrequency3
-ms.topic: conceptual
-ms.author: jeom
+ms.topic: how-to
+ms.author: pliaros
 author: rohit-batra
 ms.date: 12/07/2018
+ms.update-cycle: 1095-days
 monikerRange: '<= azure-devops'
 ---
 
@@ -112,7 +113,7 @@ Use a query to discover unexplored work items.
 
    ![Screenshot showing view of the unexplored work items.](media/insights-exploratory-testing/insights-exploratory-testing-13.png)
 
-## Related articles
+## Related content
 
 * [Use the Test &amp; Feedback extension in Connected mode](connected-mode-exploratory-testing.md)
 * [Add findings to existing bugs with exploratory testing](add-to-bugs-exploratory-testing.md)

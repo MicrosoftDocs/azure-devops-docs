@@ -1,9 +1,9 @@
 ---
 title: Microsoft-hosted agents for Azure Pipelines
 description: Learn about using the Microsoft-hosted agents provided in Azure Pipelines
-ms.topic: conceptual
+ms.topic: concept-article
 ms.assetid: D17E9C01-8026-41E8-B44A-AB17EDE4AFBD
-ms.date: 04/03/2024
+ms.date: 03/10/2026
 monikerRange: '<= azure-devops'
 ---
 
@@ -13,7 +13,7 @@ monikerRange: '<= azure-devops'
 
 ::: moniker range="< azure-devops"
 
-Microsoft-hosted agents are only available with Azure DevOps Services, which is hosted in the cloud. You cannot use Microsoft-hosted agents or the Azure Pipelines agent pool with on-premises TFS or Azure DevOps Server. With these on-premises versions, you must use [self-hosted agents](agents.md).
+Microsoft-hosted agents are only available with Azure DevOps Services, which is hosted in the cloud. You can't use Microsoft-hosted agents or the Azure Pipelines agent pool with on-premises Azure DevOps Server. With these on-premises versions, you must use [self-hosted agents](agents.md).
 
 [!INCLUDE [include](../../includes/version-selector.md)]
 
@@ -25,77 +25,72 @@ Microsoft-hosted agents are only available with Azure DevOps Services, which is 
 
 ## Software
 
-The **Azure Pipelines** agent pool offers several virtual machine images to choose from, each including a broad range of tools and software.
+The **Azure Pipelines** agent pool offers several virtual machine images to choose from, each including a broad range of tools and software. You can see the installed software for each image by choosing the **Included software** link in the following table. For more information on the software lifecycle and deprecation schedule of images and software, see [GitHub Actions Runner Images - Software and Image Support](https://github.com/actions/runner-images/tree/main?tab=readme-ov-file#software-and-image-support) and [Microsoft-hosted image deprecation schedule](./hosted-deprecation-schedule.md).
 
-| Image | Classic Editor Agent Specification | YAML VM Image Label | Included Software |
+#### [Windows images](#tab/windows-images/)
+
+You can see the installed software for each Windows hosted agent image by choosing the **Included software** link in the table.
+
+| Image | Classic Editor Agent Specification | YAML VM Image Label | Included software |
 | --- | --- | --- | --- |
-| Windows Server 2022 with Visual Studio 2022 | *windows-2022* | `windows-latest` OR `windows-2022` | [Link](https://aka.ms/windows-2022-readme) |
-| Windows Server 2019 with Visual Studio 2019 | *windows-2019* | `windows-2019` | [Link](https://aka.ms/windows-2019-readme) |
-| Ubuntu 24.04 | *ubuntu-24.04* | `ubuntu-24.04` | [Link](https://github.com/actions/runner-images/blob/main/images/ubuntu/Ubuntu2404-Readme.md)
-| Ubuntu 22.04 | *ubuntu-22.04* | `ubuntu-latest` OR `ubuntu-22.04` | [Link](https://aka.ms/ubuntu-22.04-readme)
-| Ubuntu 20.04 | *ubuntu-20.04* | `ubuntu-20.04` | [Link](https://aka.ms/ubuntu-20.04-readme)
-| macOS 15 Sequoia preview | *macOS-15* | `macOS-15` | [Link](https://github.com/actions/runner-images/blob/main/images/macos/macos-15-Readme.md) |
-| macOS 14 Sonoma | *macOS-14* | `macOS-latest` OR `macOS-14` | [Link](https://aka.ms/macOS-14-readme) |
-| macOS 13 Ventura | *macOS-13* | `macOS-13` | [Link](https://aka.ms/macOS-13-readme) |
+| Windows Server 2025 with Visual Studio 2026 (public preview) | *windows-2025-vs2026* | `windows-2025-vs2026` | [Link](https://github.com/actions/runner-images/blob/main/images/windows/Windows2025-VS2026-Readme.md) |
+| Windows Server 2025 with Visual Studio 2022 | *windows-2025* | `windows-latest` OR `windows-2025` | [Link](https://github.com/actions/runner-images/blob/main/images/windows/Windows2025-Readme.md) |
+| Windows Server 2022 with Visual Studio 2022 | *windows-2022* | `windows-2022` | [Link](https://aka.ms/windows-2022-readme) |
 
-The default agent image for classic build pipelines is *windows-2019*, and the default agent image for YAML build pipelines is `ubuntu-latest`. For more information, see [Designate a pool in your pipeline](pools-queues.md#designate-a-pool-in-your-pipeline).
-
-You can see the installed software for each hosted agent by choosing the **Included Software** link in the table. When using macOS images, you can manually select from tool versions. [Read more](#mac-pick-tools).
-
-
-### Recent updates
-
-* The macOS-12 Monterey image has been retired
-* The macOS-15 Sequoia image is available in preview
-* The Ubuntu-24.04 image is available
-* The macOS-12 Monterey image is deprecated and will be retired December 3, 2024.
-* The Ubuntu-22.04 image is available
-* The macOS-14 Sonoma image is available in preview
-* The macOS-11 Big Sur image is deprecated and will be retired June 28, 2024.
-* All Microsoft hosted agents will start using PowerShell 7.2 LTS to PowerShell 7.4 LTS starting January 28. For more information, including potential breaking changes, see [Microsoft hosted agents use PowerShell 7.4](/azure/devops/release-notes/2024/sprint-233-update#microsoft-hosted-agents-use-powershell-74).
-* The macOS 13 image is generally available
-* The macOS 10.15 image is fully unsupported as of 4/24/2023
-* The Ubuntu 18.04 image is retired
-* [`ubuntu-latest` images use `ubuntu-22.04`](https://github.com/actions/runner-images/issues/6399).
-* [General availability of Ubuntu 22.04 for Azure Pipelines hosted pools](/azure/devops/release-notes/2022/sprint-208-update#general-availability-of-ubuntu-2204-for-azure-pipelines-hosted-pools).
-* [The Ubuntu 18.04 image will begin deprecation on 8/8/22 and will be fully unsupported by 4/1/2023](https://github.com/actions/runner-images/issues/6002).
-* [The macOS 10.15 image will begin deprecation on 5/31/22 and will be fully unsupported by 12/1/2022](https://github.com/actions/runner-images/issues/5583).
-* [`windows-latest` images use `windows-2022`](https://github.com/actions/runner-images/issues/4856).
-* [`macOS-latest` images use `macOS-11`](https://github.com/actions/runner-images/issues/4060).
-* [The Ubuntu 16.04 hosted image was removed September 2021](https://github.com/actions/runner-images/issues/3287).
-* The Windows Server 2016 with Visual Studio 2017 image is deprecated and was retired June 30 2022. Read [this blog post](https://devblogs.microsoft.com/devops/hosted-pipelines-image-deprecation/#windows) on how to identify pipelines using deprecated images.
-* In December 2021, we removed the following Azure Pipelines hosted image:
-  * macOS X Mojave 10.14 (`macOS-10.14`)
-* In March 2020, we removed the following Azure Pipelines hosted images:
-  * Windows Server 2012R2 with Visual Studio 2015 (`vs2015-win2012r2`)
-  * macOS X High Sierra 10.13 (`macOS-10.13`)
-  * Windows Server Core 1803 (`win1803`)
-
-Customers are encouraged to migrate to newer versions or a [self-hosted agent](windows-agent.md).
-
-For more information and instructions on how to update your pipelines that use those images, see [Removing older images in Azure Pipelines hosted pools](https://devblogs.microsoft.com/devops/removing-older-images-in-azure-pipelines-hosted-pools/).
-
-> [!NOTE]
-> macOS capacity is currently limited. Unlike Linux and Windows images, where our capacity is restrained by Azure's all up capacity, macOS capacity is constrained by the amount of hardware we have available. While we are working to add capacity during Spring 2024, some jobs may experience delayed execution.
-> Wherever possible, e.g. for jobs that do not create Apple ecosystem apps, customers should choose Linux or Windows images.
-
-> [!NOTE]
-> The Azure Pipelines hosted pool replaces the previous hosted pools that had names that mapped to the corresponding images. Any jobs you had in the previous hosted pools are automatically redirected to the correct image in the new Azure Pipelines hosted pool. In some circumstances, you may still see the old pool names, but behind the scenes the hosted jobs are run using the Azure Pipelines pool. For more information about this update, see the [Single hosted pool](/azure/devops/release-notes/2019/sprint-154-update#single-hosted-pool) release notes from the [July 1 2019 - Sprint 154 release notes](/azure/devops/release-notes/2019/sprint-154-update).
+#### Windows Server 2025 with Visual Studio 2026 in public preview
 
 > [!IMPORTANT]
-> To request additional software to be installed on Microsoft-hosted agents, don't create a feedback request on this document or open a support ticket. Instead, open an issue on our [repository](https://github.com/actions/runner-images), where we manage the scripts to generate various images.
+> A new Windows runner image with Visual Studio 2026 is now available in public preview. This dedicated image runs alongside the current windows-2025 image, providing a safe validation path ahead of the default Windows image migration. Visual Studio 2026 will be integrated into the windows-2025 image when it reaches general availability. During the preview, you can opt into using the new image by specifying `windows-2025-vs2026` in your pipeline configuration.
 
-### How to identify pipelines using a deprecated hosted image
+#### Windows image updates
 
-To identify pipelines that are using a deprecated image, browse to the following location in your organization: `https://dev.azure.com/{organization}/{project}/_settings/agentqueues`, and filter on the image name to check. The following example checks the `vs2017-win2016` image.
+* Windows Server 2025 with Visual Studio 2026 is now available in public preview starting March 9, 2026. 
+* The Windows Server 2019 hosted agent image was retired on December 31, 2025.
+* [[Windows & Ubuntu] .NET 6 was removed from the images on August 1, 2025.](https://github.com/actions/runner-images/issues/12241)
 
-:::image type="content" source="media/pool-filter-vs2017-win2016.png" alt-text="Screenshot of filtering pipelines by image name.":::
+#### [Linux images](#tab/linux-images/)
 
-You can also query job history for deprecated images across projects using the script located [here](https://github.com/microsoft/azure-pipelines-agent/tree/master/tools/FindPipelinesUsingRetiredImages), as shown in the following example.
+You can see the installed software for each Linux hosted agent image by choosing the **Included software** link in the table.
 
-```powershell
-./QueryJobHistoryForRetiredImages.ps1 -accountUrl https://dev.azure.com/{org} -pat {pat}
-```
+| Image | Classic Editor Agent Specification | YAML VM Image Label | Included software |
+| --- | --- | --- | --- |
+| Ubuntu 24.04 | *ubuntu-24.04* | `ubuntu-latest` OR `ubuntu-24.04` | [Link](https://github.com/actions/runner-images/blob/main/images/ubuntu/Ubuntu2404-Readme.md) |
+| Ubuntu 22.04 | *ubuntu-22.04* | `ubuntu-22.04` | [Link](https://aka.ms/ubuntu-22.04-readme) |
+
+The `ubuntu-latest` image is the default image for YAML pipelines if no image is specified. For more information, see [Designate a pool in your pipeline](pools-queues.md#designate-a-pool-in-your-pipeline).
+
+#### Linux images updates
+
+* [[Windows & Ubuntu] .NET 6 was removed from the images on August 1, 2025.](https://github.com/actions/runner-images/issues/12241)
+* [The Ubuntu 20.04 image is retired](https://devblogs.microsoft.com/devops/upcoming-updates-for-azure-pipelines-agents-images/#ubuntu).
+
+#### [macOS images](#tab/macos-images/)
+
+You can see the installed software for each macOS hosted agent by choosing the **Included software** link in the table. When using macOS images, you can manually select from tool versions. [Read more](#mac-pick-tools).
+
+| Image | Classic Editor Agent Specification | YAML VM Image Label | Included software |
+| --- | --- | --- | --- |
+| macOS 15 Sequoia | *macOS-15* | `macOS-latest` OR `macOS-15` | [Link](https://github.com/actions/runner-images/blob/main/images/macos/macos-15-Readme.md) |
+| macOS 14 Sonoma<br>*[macOS 14 Sonoma hosted image deprecation schedule](./hosted-deprecation-schedule.md?tabs=macos-images#macos-14-sonoma-hosted-image-deprecation-schedule)* | *macOS-14* | `macOS-14` | [Link](https://aka.ms/macOS-14-readme) |
+
+#### macOS 15 ARM64 image limited public preview paused
+
+> [!IMPORTANT]
+> The macOS 15 Sequoia ARM64 limited public preview has been paused. Any Azure DevOps organization currently using it can continue to do so. Look out for this section for further updates on macOS ARM64 image availability.
+
+#### macOS images updates
+
+* [[macOS] Deprecation of simulator runtimes for Xcode 16.3 and older on macOS 15 on January 12th, 2026.](https://github.com/actions/runner-images/issues/13392)
+* The macOS 14 Sonoma image will be deprecated starting July 6, 2026. For more information, see [macOS 14 Sonoma hosted image deprecation schedule](./hosted-deprecation-schedule.md?tabs=macos-images#macos-14-sonoma-hosted-image-deprecation-schedule).
+* The macOS 15 Sequoia ARM64 limited public preview has been paused.
+* The macOS 13 Ventura image was deprecated starting September 1, 2025, and was retired on December 4, 2025.
+* [[macOS] Starting August 11, 2025, if your workflow is running on a macOS 15 based image and depends on one of the platform versions (iOS/watchOS/tvOS/visionOS) lower than Xcode 16.3 compatible, they will be broken](https://github.com/actions/runner-images/issues/12541).
+* [[macOS] Xcode 15.4 was removed from macOS15 images on May 29, 2025](https://github.com/actions/runner-images/issues/12195)
+
+* * *
+
+> [!IMPORTANT]
+> To request software to be added to Microsoft-hosted agents, don't create a feedback request on this document or open a support ticket. Instead, open an issue on our [repository](https://github.com/actions/runner-images), where we manage the scripts to generate various images.
 
 ## Use a Microsoft-hosted agent
 
@@ -124,14 +119,14 @@ jobs:
 
 > [!NOTE]
 > The specification of a pool can be done at multiple levels in a YAML file.
-> If you notice that your pipeline is not running on the expected image, make sure that you verify the pool specification at the pipeline, stage, and job levels.
+> If you notice that your pipeline isn't running on the expected image, make sure that you verify the pool specification at the pipeline, stage, and job levels.
 
 # [Classic](#tab/classic)
 
 In classic build pipelines, you first choose the Azure Pipelines pool and then specify the image to use.
 
 > [!NOTE]
-> The specification of a pool can be done at multiple levels in a classic build pipeline - for the whole pipeline, or for each job. If you notice that your pipeline is not running on the expected image, make sure that you verify the pool specification at all levels.
+> The specification of a pool can be done at multiple levels in a classic build pipeline - for the whole pipeline, or for each job. If you notice that your pipeline isn't running on the expected image, make sure that you verify the pool specification at all levels.
 
 ---
 
@@ -144,14 +139,14 @@ layout of the hosted agents is subject to change without warning.
 
 ## Hardware
 
-Microsoft-hosted agents that run Windows and Linux images are provisioned on Azure general purpose virtual machines with a 2 core CPU, 7 GB of RAM, and 14 GB of SSD disk space. These virtual machines are co-located in the same geography as your Azure DevOps organization.
+Microsoft-hosted agents that run Windows and Linux images are provisioned on Azure general purpose virtual machines with a 2 core CPU, 7 GB of RAM, and 14 GB of SSD disk space. These virtual machines are colocated in the same geography as your Azure DevOps organization.
 
-Agents that run macOS images are provisioned on Mac pros with a 3 core CPU, 14 GB of RAM, and 14 GB of SSD disk space. These agents always run in the US irrespective of the location of your Azure DevOps organization. If data sovereignty is important to you and if your organization is not in the US, then you should not use macOS images. [Learn more](../../organizations/security/data-location.md).
+Agents that run macOS images are provisioned on Mac pros with a 3 core CPU, 14 GB of RAM, and 14 GB of SSD disk space, except the macOS 15 Sequoia ARM64 image which runs on Apple Silicon hardware with 3 cores, 7 GB of RAM, and 14 GB of SSD disk space. These agents always run in the US irrespective of the location of your Azure DevOps organization. If data sovereignty is important to you and if your organization isn't in the US, then you shouldn't use macOS images. [Learn more](../../organizations/security/data-location.md).
 
 All of these machines have at least 10 GB of free disk space available for your pipelines to run. This free space is consumed when your pipeline checks out source code, downloads packages, pulls docker images, or generates intermediate files.
 
 > [!IMPORTANT]
-> We cannot honor requests to increase disk space on Microsoft-hosted agents, or to provision more powerful machines. If the specifications of Microsoft-hosted agents do not meet your needs, then you should consider [self-hosted agents](agents.md) or [scale set agents](scale-set-agents.md) or [Managed DevOps Pools](../../managed-devops-pools/overview.md#usage-scenarios).
+> We can't honor requests to increase disk space on Microsoft-hosted agents, or to provision more powerful machines. If the specifications of Microsoft-hosted agents do not meet your needs, then you should consider [self-hosted agents](agents.md) or [scale set agents](scale-set-agents.md) or [Managed DevOps Pools](../../managed-devops-pools/overview.md#usage-scenarios).
 
 <a name="agent-ip-ranges"></a>
 
@@ -159,17 +154,17 @@ All of these machines have at least 10 GB of free disk space available for your 
 
 In some setups, you may need to know the range of IP addresses where agents are deployed. For instance, if you need to grant the hosted agents access through a firewall, you may wish to restrict that access by IP address. Because Azure DevOps uses the Azure global network, IP ranges vary over time. Microsoft publishes a [weekly JSON file](https://www.microsoft.com/download/details.aspx?id=56519) listing IP ranges for Azure datacenters, broken out by region. This file is updated weekly with new planned IP ranges. Only the latest version of the file is available for download. If you need previous versions, you must download and archive them each week as they become available. The new IP ranges become effective the following week. We recommend that you check back frequently (at least once every week) to ensure you keep an up-to-date list. If agent jobs begin to fail, a key first troubleshooting step is to make sure your configuration matches the latest list of IP addresses. The IP address ranges for the hosted agents are listed in the weekly file under `AzureCloud.<region>`, such as `AzureCloud.westus` for the West US region.
 
-Your hosted agents run in the same [Azure geography](https://azure.microsoft.com/global-infrastructure/geographies/) as your organization. Each geography contains one or more regions. While your agent may run in the same region as your organization, it is not guaranteed to do so. To obtain the complete list of possible IP ranges for your agent, you must use the IP ranges from all of the regions that are contained in your geography. For example, if your organization is located in the **United States** geography, you must use the IP ranges for all of the regions in that geography.
+Your hosted agents run in the same [Azure geography](https://azure.microsoft.com/global-infrastructure/geographies/) as your organization. Each geography contains one or more regions. While your agent may run in the same region as your organization, it isn't guaranteed to do so. To obtain the complete list of possible IP ranges for your agent, you must use the IP ranges from all of the regions that are contained in your geography. For example, if your organization is located in the **United States** geography, you must use the IP ranges for all of the regions in that geography.
 
 To determine your geography, navigate to `https://dev.azure.com/<your_organization>/_settings/organizationOverview`, get your region, and find the associated geography from the [Azure geography](https://azure.microsoft.com/global-infrastructure/geographies/) table. Once you have identified your geography, use the IP ranges from the [weekly file](https://www.microsoft.com/download/details.aspx?id=56519) for all regions in that geography.
 
 > [!IMPORTANT]
-> You cannot use private connections such as [ExpressRoute](https://azure.microsoft.com/services/expressroute/) or VPN to connect Microsoft-hosted agents to your corporate network. The traffic between Microsoft-hosted agents and your servers will be over public network.
+> You can't use private connections such as [ExpressRoute](https://azure.microsoft.com/services/expressroute/) or VPN to connect Microsoft-hosted agents to your corporate network. The traffic between Microsoft-hosted agents and your servers will be over public network.
 
 ### To identify the possible IP ranges for Microsoft-hosted agents
 
 1. Identify the [region for your organization](../../organizations/accounts/change-organization-location.md) in **Organization settings**.
-2. Identify the [Azure Geography](https://azure.microsoft.com/global-infrastructure/geographies/) for your organization's region.
+2. Identify the [Azure Geography](https://azure.microsoft.com/global-infrastructure/geographies/) for your organization's region by reviewing the [Azure regions list](/azure/reliability/regions-list), which is grouped by geography.
 3. Map the names of the regions in your geography to the format used in the weekly file, following the format of `AzureCloud.<region>`, such as `AzureCloud.westus`. You can map the names of the regions from the [Azure Geography](https://azure.microsoft.com/global-infrastructure/geographies/) list to the format used in the weekly file by reviewing the region names passed to the constructor of the regions defined in the [source code for the Region class](https://github.com/Azure/azure-libraries-for-net/blob/master/src/ResourceManagement/ResourceManager/Region.cs), from the [Azure Management Libraries for .NET](https://github.com/Azure/azure-libraries-for-net).
     > [!NOTE]
     > Since there is no API in the [Azure Management Libraries for .NET](https://github.com/Azure/azure-libraries-for-net) to list the regions for a geography, you must list them manually as shown in the following example.
@@ -178,11 +173,11 @@ To determine your geography, navigate to `https://dev.azure.com/<your_organizati
 >[!NOTE]
 >Due to capacity restrictions, some organizations in the **Brazil South** or **West Europe** regions may occasionally see their hosted agents located outside their expected geography. In these cases, in addition to including the IP ranges for all the regions in your geography as described in the previous section, additional IP ranges must be included for the regions in the capacity fallback geography.
 >
->If your organization is in the **Brazil South** region, your capacity fallback geography is **United States**.
+>If your organization is in the **Brazil South** region, your capacity fallback geography is **United States**, and you must include the IP ranges for all regions in the **United States** geography in addition to the IP ranges for all regions in the **Brazil South** geography.
 >
->If your organization is in the **West Europe** region, the capacity fallback geography is **France**.
+>If your organization is in the **West Europe** region, the capacity fallback geography is **France**, and you must include the IP ranges for all regions in the **France** geography in addition to the IP ranges for all regions in the **West Europe** geography.
 >
->Our Mac IP ranges are not included in the Azure IPs above, as they are hosted in GitHub's macOS cloud. IP ranges can be retrieved using the [GitHub metadata API](https://docs.github.com/en/rest/reference/meta#get-github-meta-information) using the instructions provided [here](https://docs.github.com/en/actions/using-github-hosted-runners/about-github-hosted-runners#ip-addresses).
+>Our Mac IP ranges aren't included in the Azure IPs above, as they are hosted in GitHub's macOS cloud. IP ranges can be retrieved using the [GitHub metadata API](https://docs.github.com/en/rest/reference/meta#get-github-meta-information) using the instructions provided [here](https://docs.github.com/en/actions/using-github-hosted-runners/about-github-hosted-runners#ip-addresses).
 
 #### Example
 
@@ -254,8 +249,8 @@ Microsoft-hosted agents can't be listed by service tags. If you're trying to gra
 
 Microsoft-hosted agents run on secure Azure platform. However, you must be aware of the following security considerations.
 
-- Although Microsoft-hosted agents run on Azure public network, they are not assigned public IP addresses. So, external entities cannot target Microsoft-hosted agents. 
-- Microsoft-hosted agents are run in individual VMs, which are re-imaged after each run. Each agent is dedicated to a single organization, and each VM hosts only a single agent.
+- Although Microsoft-hosted agents run on Azure public network, they aren't assigned public IP addresses. So, external entities can't target Microsoft-hosted agents. 
+- Microsoft-hosted agents are run in individual VMs, which are reimaged after each run. Each agent is dedicated to a single organization, and each VM hosts only a single agent.
 - There are several benefits to running your pipeline on Microsoft-hosted agents, from a security perspective. If you run untrusted code in your pipeline, such as contributions from forks, it is safer to run the pipeline on Microsoft-hosted agents than on self-hosted agents that reside in your corporate network.
 - When a pipeline needs to access your corporate resources behind a firewall, you have to allow the IP address range for the Azure geography. This may increase your exposure as the range of IP addresses is rather large and since machines in this range can belong to other customers as well. The best way to prevent this is to avoid the need to access internal resources. For information on deploying artifacts to a set of servers, see [Communication to deploy to target servers](agents.md#communication-to-deploy-to-target-servers).
 - Hosted images do not conform to [CIS hardening benchmarks](https://www.cisecurity.org/benchmark/azure/). To use CIS-hardened images, you must create either self-hosted agents or scale-set agents or Managed DevOps pools.
@@ -270,11 +265,11 @@ Microsoft-hosted agents:
 * Provide a free tier:
   * Public project: 10 free Microsoft-hosted parallel jobs that can run for up to 360 minutes (6 hours) each time, with no overall time limit per month. [Contact us](https://azure.microsoft.com/support/devops/) to get your free tier limits increased.
   * Private project: One free parallel job that can run for up to 60 minutes each time, until you've used 1,800 minutes (30 hours) per month. You can pay for additional capacity per parallel job. Paid parallel jobs remove the monthly time limit and allow you to run each job for up to 360 minutes (6 hours). [Buy Microsoft-hosted parallel jobs](https://marketplace.visualstudio.com/items?itemName=ms.build-release-hosted-pipelines).
-  * When you create a new Azure DevOps organization, you are not given these free grants by default. To request the free grant for public or private projects, submit [a request](https://aka.ms/azpipelines-parallelism-request).
+  * When you create a new Azure DevOps organization, you aren't given these free grants by default. To request the free grant for public or private projects, submit [a request](https://aka.ms/azpipelines-parallelism-request).
 * Run on Microsoft Azure general purpose virtual machines [Standard_DS2_v2](/azure/virtual-machines/dv2-dsv2-series#dsv2-series).
 * Run as an administrator on Windows and a passwordless sudo user on Linux.
 * (Linux only) Run steps in a `cgroup` that offers 6 GB of physical memory and 13 GB of total memory.
-* Use VM images that are regularly updated (every 3 weeks).
+* Use VM images that are regularly updated (every three weeks).
 
 Microsoft-hosted agents do not offer:
 
@@ -282,7 +277,7 @@ Microsoft-hosted agents do not offer:
 * The ability to [drop artifacts to a UNC file share](/previous-versions/azure/devops/pipelines/artifacts/build-artifacts?view=tfs-2018&preserve-view=true#publish-from-tfs-to-a-unc-file-share).
 * The ability to join machines directly to your corporate network.
 * The ability to get bigger or more powerful build machines.
-* The ability to pre-load custom software. You can install software during a pipeline run, such as through [tool installer tasks](../process/tasks.md#tool-installers) or in a script.
+* The ability to preload custom software. You can install software during a pipeline run, such as through [tool installer tasks](../process/tasks.md#tool-installers) or in a script.
 * Potential performance advantages that you might get by using self-hosted agents that might start and run builds faster. [Learn more](agents.md#private-agent-performance-advantages)
 * The ability to run [XAML builds](/previous-versions/visualstudio/visual-studio-2013/ms181709(v=vs.120)).
 * The ability to roll back to a previous VM image version. You always use the latest version.
@@ -318,7 +313,7 @@ We can't increase the memory, processing power, or disk space for Microsoft-host
 
 ### I can't select a Microsoft-hosted agent and I can't queue my build or deployment. What should I do?
 
-Microsoft-hosted agents are only available in Azure Pipelines and not in TFS or Azure DevOps Server.
+Microsoft-hosted agents are only available in Azure Pipelines and not in Azure DevOps Server.
 
 By default, all project contributors in an organization have access to the Microsoft-hosted agents. But, your organization administrator may limit the access of Microsoft-hosted agents to select users or projects. Ask the owner of your Azure DevOps organization to grant you permission to use a Microsoft-hosted agent. See [agent pool security](pools-queues.md#security).
 
@@ -326,7 +321,7 @@ By default, all project contributors in an organization have access to the Micro
 
 If your pipeline has recently become slower, review our [status page](https://status.dev.azure.com/) for any outages. We could be having issues with our service. Or else, review any changes that you made in your application code or pipeline. Your repository size during check-out might have increased, you may be uploading larger artifacts, or you may be running more tests.
 
-If you are just setting up a pipeline and are comparing the performance of Microsoft-hosted agents to your local machine or a self-hosted agent, then note the [specifications](#capabilities-and-limitations) of the hardware that we use to run your jobs. We are unable to provide you with bigger or powerful machines. You can consider using [self-hosted agents](agents.md) or [scale set agents](scale-set-agents.md) or [Managed DevOps Pools](../../managed-devops-pools/overview.md#usage-scenarios) if this performance is not acceptable.
+If you are just setting up a pipeline and are comparing the performance of Microsoft-hosted agents to your local machine or a self-hosted agent, then note the [specifications](#capabilities-and-limitations) of the hardware that we use to run your jobs. We are unable to provide you with bigger or powerful machines. You can consider using [self-hosted agents](agents.md) or [scale set agents](scale-set-agents.md) or [Managed DevOps Pools](../../managed-devops-pools/overview.md#usage-scenarios) if this performance isn't acceptable.
 
 ### I need more agents. What can I do?
 
@@ -334,7 +329,7 @@ All Azure DevOps organizations are provided with several free parallel jobs for 
 
 ### My pipeline succeeds on self-hosted agent, but fails on Microsoft-hosted agents. What should I do?
 
-Your self-hosted agent probably has all the right dependencies installed on it, whereas the same dependencies, tools, and software are not installed on Microsoft-hosted agents. First, carefully review the list of software that is installed on Microsoft-hosted agents by following the link to **Included software** in the table above. Then, compare that with the software installed on your self-hosted agent. In some cases, Microsoft-hosted agents may have the tools that you need (for example, Visual Studio), but all of the necessary optional components may not have been installed. If you find differences, then you have two options:
+Your self-hosted agent probably has all the right dependencies installed on it, whereas the same dependencies, tools, and software aren't installed on Microsoft-hosted agents. First, carefully review the list of software that is installed on Microsoft-hosted agents by following the link to **Included software** in the table above. Then, compare that with the software installed on your self-hosted agent. In some cases, Microsoft-hosted agents may have the tools that you need (for example, Visual Studio), but all of the necessary optional components may not have been installed. If you find differences, then you have two options:
 
 - You can create a new issue on the [repository](https://github.com/actions/runner-images), where we track requests for additional software. Contacting support can't help you set up new software on Microsoft-hosted agents.
 
@@ -342,7 +337,7 @@ Your self-hosted agent probably has all the right dependencies installed on it, 
 
 ### My build succeeds on my local machine, but fails on Microsoft-hosted agents. What should I do?
 
-Your local machine probably has all the right dependencies installed on it, whereas the same dependencies, tools, and software are not installed on Microsoft-hosted agents. First, carefully review the list of software that is installed on Microsoft-hosted agents by following the link to **Included software** in the table above. Then, compare that with the software installed on your local machine. In some cases, Microsoft-hosted agents may have the tools that you need (e.g., Visual Studio), but all of the necessary optional components may not have been installed. If you find differences, then you have two options:
+Your local machine probably has all the right dependencies installed on it, whereas the same dependencies, tools, and software aren't installed on Microsoft-hosted agents. First, carefully review the list of software that is installed on Microsoft-hosted agents by following the link to **Included software** in the table above. Then, compare that with the software installed on your local machine. In some cases, Microsoft-hosted agents may have the tools that you need (e.g., Visual Studio), but all of the necessary optional components may not have been installed. If you find differences, then you have two options:
 
 - You can create a new issue on the [repository](https://github.com/actions/runner-images), where we track requests for additional software. This is your best bet for getting new software installed. Contacting support will not help you with setting up new software on Microsoft-hosted agents.
 
@@ -350,7 +345,7 @@ Your local machine probably has all the right dependencies installed on it, wher
 
 ### My pipeline fails with the error: "no space left on device".
 
-Microsoft-hosted agents only have 10 GB of disk space available for running your job. This space is consumed when you check out source code, when you download packages, when you download docker images, or when you produce intermediate files. Unfortunately, we cannot increase the free space available on Microsoft-hosted images. You can restructure your pipeline so that it can fit into this space. Or, you can consider using [self-hosted agents](agents.md) or [scale set agents](scale-set-agents.md) or [Managed DevOps Pools](../../managed-devops-pools/overview.md#usage-scenarios).
+Microsoft-hosted agents only have 10 GB of disk space available for running your job. This space is consumed when you check out source code, when you download packages, when you download docker images, or when you produce intermediate files. Unfortunately, we can't increase the free space available on Microsoft-hosted images. You can restructure your pipeline so that it can fit into this space. Or, you can consider using [self-hosted agents](agents.md) or [scale set agents](scale-set-agents.md) or [Managed DevOps Pools](../../managed-devops-pools/overview.md#usage-scenarios).
 
 ### My pipeline running on Microsoft-hosted agents requires access to servers on our corporate network. How do we get a list of IP addresses to allow in our firewall?
 
@@ -373,15 +368,15 @@ If you get an SAS error code, it is most likely because the IP address ranges fr
 
 #### Xcode
 
-  If you use the [Xcode task](/azure/devops/pipelines/tasks/reference/xcode-v5) included with Azure Pipelines and TFS, you can select a version of Xcode in that task's properties. Otherwise, to manually set the Xcode version to use on the **Hosted macOS** agent pool, before your `xcodebuild` build task, execute this command line as part of your build, replacing the Xcode version number 13.2 as needed:
+  If you use the [Xcode task](/azure/devops/pipelines/tasks/reference/xcode-v5) included with Azure Pipelines and Azure DevOps Server, you can select a version of Xcode in that task's properties. Otherwise, to manually set the Xcode version to use on macOS images, before your `xcodebuild` build task, execute this command line as part of your build, replacing the Xcode version number 13.2 as needed:
 
   `/bin/bash -c "sudo xcode-select -s /Applications/Xcode_13.2.app/Contents/Developer"`
 
-  Xcode versions on the **Hosted macOS** agent pool can be found [here](https://github.com/actions/runner-images/blob/main/images/macos/).
+  Xcode versions on macOS images can be found [here](https://github.com/actions/runner-images/blob/main/images/macos/).
 
 #### Mono
 
-  To manually select a Mono version to use on the **Hosted macOS** agent pool, execute this script in each job of your build before your Mono build task, specifying the symlink with the required Mono version:
+  To manually select a Mono version to use on macOS images (except the ARM64 image which doesn't support mono), execute this script in each job of your build before your Mono build task, specifying the symlink with the required Mono version:
 
   ```bash
   SYMLINK=<symlink>

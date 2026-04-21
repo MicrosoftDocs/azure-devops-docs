@@ -2,12 +2,18 @@
 title: Agent software version 3
 description: Learn how to run pipelines using the version 3 agent software.
 monikerRange: '>= azure-devops-2022'
-ms.topic: conceptual
-ms.date: 05/17/2024
+ms.topic: concept-article
+ms.date: 11/07/2025
 ---
 
 # Agent software version 3
 
+> [!IMPORTANT]
+> Agent software version 3 (using .NET 6) is unsupported for Azure DevOps Services, and the Azure Pipelines team recommends you upgrade to [Agent software version 4](./v4-agent.md) (using .NET 8). 
+>
+> To update your self-hosted agents to version 4, see [Upgrade to agent software version 4](./v4-agent.md#upgrade-to-4x-agent-on-supported-operating-systems).
+>
+> If you're running your self-hosted agents on an operating system that isn't supported by .NET 8, you must update your machines to use a newer supported operating system [supported by .NET 8](https://github.com/dotnet/core/blob/main/release-notes/8.0/supported-os.md#net-8---supported-os-versions). For more information, see [Upgrade to agent software version 4 on unsupported operating systems](./v4-agent.md#upgrade-to-4x-agent-on-unsupported-operating-systems).
 
 The pipelines team is upgrading the agent software from version 2.x (using .NET Core 3.1) to version 3.x (using .NET 6). The new agent version supports new Apple silicon hardware and newer operating systems like Ubuntu 22.04, or Windows on ARM64.
 
@@ -32,7 +38,6 @@ The following operating systems are supported by the 3.x agent.
       * No longer requires separate package
     * SUSE Enterprise Linux 12 SP2 or later
     * Ubuntu 22.04, 20.04, 18.04, 16.04
-    * Azure Linux 2.0
     * Oracle Linux 7 and higher
   * ARM64
     * Debian 10+
@@ -134,11 +139,7 @@ The pipelines team recommends that you update your agent machines to newer opera
 
 Azure DevOps Server versions support the version of the agent that is deployed with that version. The following table lists each [supported Azure DevOps Server version](/azure/devops/server/install/servicing#supported-versions) and its supported agent version.
 
-| Azure DevOps Server version | Agent version |
-|-----------------------------|---------------|
-| [Azure DevOps Server 2022.2](/azure/devops/server/release-notes/azuredevops2022u2) | 3.238.0 |
-| [Azure DevOps Server 2020.1.2](/azure/devops/server/release-notes/azuredevops2020u1) | 3.225.0 |
-| [Azure DevOps Server 2019.1.2](/azure/devops/server/release-notes/azuredevops2019u1) | 3.225.0 |
+[!INCLUDE [ado-server-agent-versions](./includes/ado-server-agent-versions.md)]
 
 Azure DevOps Server is serviced through security or servicing patches that provide targeted cumulative bug fixes for existing features in the product. For the best and most secure product experience, we strongly encourage and recommend that all customers use the latest, most secure release of Azure DevOps Server. You can download the latest version of the product, from the [Azure DevOps Server download page](/azure/devops/server/download/azuredevopsserver).
 

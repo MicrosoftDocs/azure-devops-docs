@@ -4,12 +4,11 @@ titleSuffix: Azure Repos
 description: Pull request workflow extensibility using status and policy
 ms.assetid: 6ba68828-c05d-4afa-b29f-9ca39be5a0ce
 ms.service: azure-devops-repos
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 06/18/2018
 monikerRange: '<= azure-devops'
 ms.subservice: azure-devops-repos-git
 ---
-
 
 # Customize and extend pull request workflows with pull request status
 
@@ -88,7 +87,7 @@ When the source branch in a PR changes, a new "iteration" is created to track th
 Services that evaluate code changes will want to post new status on each iteration of a PR. 
 Posting status to a specific iteration of a PR guarantees that status applies only to the code that was evaluated and none of the future updates. 
 
-::: moniker range=">= azure-devops-2019"
+::: moniker range="<=azure-devops"
 > [!NOTE]
 > If the PR being created contains more than 100,000 modified files, then, for performance and stability reasons, that PR won't support iterations. This means any additional change to such PR will be included but no new iteration will be created for that change. In addition any attempt to create a status for a non-existent iteration will return an error.
 ::: moniker-end

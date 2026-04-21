@@ -4,7 +4,7 @@ titleSuffix: Azure Repos
 description: Use annotate to a see changes in earlier versions of a file in Team Foundation Version Control using Visual Studio.
 ms.assetid: 34e29de4-0972-4e32-9d3d-26dc09f00713
 ms.service: azure-devops-repos
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 05/30/2024
 monikerRange: '<= azure-devops'
 ms.subservice: azure-devops-repos-tfvc

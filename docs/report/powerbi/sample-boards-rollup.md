@@ -7,20 +7,20 @@ ms.custom: powerbisample, engagement-fy23
 ms.author: chcomley
 author: chcomley
 ms.topic: sample
-monikerRange: '>= azure-devops-2019'
+monikerRange: "<=azure-devops"
 ms.date: 12/16/2022
+ai-usage: ai-assisted
 ---
 
 # Rollup child work item values to parent sample report
 
-[!INCLUDE [version-gt-eq-2019](../../includes/version-gt-eq-2019.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 Rollup provides support to show a count of work items or sum of Story Points, Remaining Work, or other custom field of child items. This article provides several examples of how to generate a tabular rollup  report for Epics, Features, or User Stories that contain child work items. The following image shows an example of Story Points rolled up for their parent Features.  
  
 :::image type="content" source="media/reports-boards/feature-rollup-report.png" alt-text="Screenshot of Feature rollup matrix report.":::
 
 For more information about rollup and options to show rollup, see [Display rollup progress or totals in Azure Boards](../../boards/backlogs/display-rollup.md).
-
 
 [!INCLUDE [temp](includes/sample-required-reading.md)]
 
@@ -83,9 +83,7 @@ https://analytics.dev.azure.com/{organization}/{project}/_odata/v3.0-preview/Wor
 - `{project}` - Your team project name, or omit "/{project}" entirely, for a cross-project query
 - `{areapath}` - Your Area Path. Example format: `Project\Level1\Level2`.
 
-
 ### Query breakdown
-
 
 The following table describes each part of the query.
 
@@ -363,10 +361,7 @@ https://analytics.dev.azure.com/{organization}/{project}/_odata/v3.0-preview/Wor
 
 ***
 
-
-
 [!INCLUDE [temp](includes/rename-query.md)]
-
 
 ## Expand columns in Power BI
 
@@ -378,9 +373,7 @@ The `&$expand=AssignedTo($select=UserName), Iteration($select=IterationPath), Ar
 
 To learn how, see [Transform Analytics data to generate Power BI reports](transform-analytics-data-report-generation.md). 
 
-## (Optional) Rename fields
-
-Once you've expanded the columns, you may want to rename one or more fields. For example, you can rename the column `AreaPath` to `Area Path`. To learn how, see [Rename column fields](transform-analytics-data-report-generation.md#rename-column-fields). 
+[!INCLUDE [temp](includes/sample-rename-column-fields.md)]
 
 ## Replace null values in rollup fields
 
@@ -388,7 +381,12 @@ If a work item doesn't have any children, the rollup value may be null. For exam
 
 For easier reporting, replace all nulls with zero by following these steps.
 
-[!INCLUDE [temp](includes/sample-replace-nulls.md)]
+1. Select the column by choosing the column header.
+1. Select the **Transform** menu.
+1. Select **Replace Values**. The **Replace Values** dialog appears.
+1. Leave **Value to Find** set to `null`.
+1. Enter `0` in **Replace With**.
+1. Select **OK**.
 
 Repeat for all the rollup columns.
 

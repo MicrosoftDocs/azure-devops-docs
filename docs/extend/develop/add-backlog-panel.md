@@ -1,38 +1,35 @@
 ---
-title: Add panels on backlog pages | Extensions for Azure DevOps Services
-description: Extend Azure DevOps Services with panels on backlogs.
+title: Add Panels to Azure DevOps Backlog Pages
+description: Add panels on backlog pages in Azure DevOps to enhance your workflow. Learn how to extend backlogs with custom panels and streamline project management.
 ms.assetid: 34f01da42-5a98-4bc5-981e-3f8d1ffdf163
 ms.subservice: azure-devops-ecosystem
-ms.topic: conceptual
+ms.topic: how-to
+ms.custom: UpdateFrequency3
 monikerRange: 'azure-devops'
 ms.author: chcomley
+ms.reviewer: chcomley
 author: chcomley
-ms.date: 02/21/2025
+ms.date: 04/03/2026
+ai-usage: ai-assisted
 ---
 
 # Add panels on backlog pages
 
 [!INCLUDE [version-eq-azure-devops](../../includes/version-eq-azure-devops.md)]
 
-Here, we add a simple Hello World extension as a panel on the Portfolio backlog, Product backlog, and Iteration backlog.
+This article shows how to add a custom panel to the Portfolio backlog, Product backlog, and Iteration backlog pages.
 
 [!INCLUDE [extension-docs-new-sdk](../../includes/extension-docs-new-sdk.md)]
 
-<!---
-![panel extension on the Azure DevOps Services Portfolio backlog page](../media/backlog-pane/portfolio-backlog-pane.png)
--->
+![Screenshot of open panel extension on the Stories backlog page.](media/add-panel-intro-show-mapping-hello-world.png)
 
-![Open panel extension on the Azure DevOps Services Stories backlog page](media/add-panel-intro-show-mapping-hello-world.png)
+The custom panel opens in the same space as the mapping panel.
 
-The custom panel opens in the same space that the mapping panel opens if it were selected.  
+![Screenshot of custom panel extension on the Portfolio backlog page.](media/add-panel-show-custom-panel.png)
 
-![panel extension on the Azure DevOps Services Portfolio backlog page](media/add-panel-show-custom-panel.png)
+Three backlog categories support panel extensions. The following contribution points apply to Agile, Scrum, and CMMI process templates. For custom templates, check your process to identify which backlogs use the requirement or portfolio category.
 
-
-There are three types of backlogs that can be targets for panel extensions: Portfolio backlogs, Product backlogs, and Iteration backlogs. For the Agile template, this breakdown is as below. This is representative of Scrum and CMMI as well. For custom templates, please consult your process to see which backlogs are requirement or portfolio category. 
-
-
-| Backlog Category   | Contribution point |
+| Backlog category   | Contribution point |
 |--------------------|--------------------|
 | Portfolio (Epic, Feature) | ms.vss-work-web.portfolio-backlog-toolpane |
 | Requirements (User Story, Product Backlog Item) | ms.vss-work-web.requirement-backlog-toolpane | 
@@ -42,10 +39,10 @@ For more information, see the [Azure DevOps Services Extension Sample](https://g
 
 ## Update your extension manifest
 
-Update your [extension manifest](../develop/manifest.md) file with the following code:
+Update your [extension manifest](manifest.md) file with the following code. This example adds a panel to all three backlog types.
 
 ```json
-...
+{
 	"contributions": [
 		{
 			"id": "Fabrikam.HelloWorld.Backlogs.Panel",
@@ -64,37 +61,38 @@ Update your [extension manifest](../develop/manifest.md) file with the following
 			}
 		}
 	],
-	"scopes": [ 
-		"vso.work" 
+	"scopes": [
+		"vso.work"
 	]
-... 
+}
 ```
 
 ### Contribution
-For each contribution in your extension, the manifest defines
-* the type of contribution (backlog panel in this case),
-* the contribution target (the requirements, portfolio, and iteration backlogs in this case),
-* and the properties that are specific to each type of contribution. For panels, we have
 
+For each contribution in your extension, the manifest defines:
 
-| Property           | Description                                                                                                                         
-|--------------------|----------------------------------------------------------------------------------------|                
-| title              | Tooltip text that appears on the menu item                                        |                   
-| name               | What appears in the dropdown for panel selection					                  |                   
-| uri                | Path (relative to the extension's base URI) of the page to surface as the panel     |                   
-| registeredObjectId | ID of the object registered for the panel                                             |    
+- The type of contribution, such as `backlog-panel`
+- The contribution targets, such as the requirement, portfolio, and iteration backlog toolpanes
+- The properties specific to each contribution type
 
+The following table describes the panel-specific properties.
 
-Learn about all of the places where you can add an extension in [Extensibility points](../reference/targets/overview.md).
+| Property | Description |
+|---|---|
+| `title` | Tooltip text that appears on the menu item. |
+| `name` | Text that appears in the dropdown for panel selection. |
+| `uri` | Path, relative to the extension's base URI, of the page to surface as the panel. |
+| `registeredObjectId` | ID of the object registered for the panel. |
+
+For more information about where you can add an extension, see [Extensibility points](../reference/targets/overview.md).
 
 ### Scopes
-Include the [scopes](manifest.md#scopes) that your extension requires.
-In this case, we need `vso.work` to access work items.
 
-
+Include the [scopes](manifest.md#scopes) that your extension requires. This example uses `vso.work` to access work items.
 
 ## Get selection events
-To get selection events (information about what work items are selected) implement this interface on your registered object.
+
+To get selection events about which work items are selected, implement this interface on your registered object.
 
 ```javascript
 ...
@@ -104,10 +102,7 @@ To get selection events (information about what work items are selected) impleme
 ...
 ```
 
-## Next steps
+## Next step
 
 > [!div class="nextstepaction"]
 > [Package, Publish, and Install](../publish/overview.md)
-or
-> [!div class="nextstepaction"]
-> [Test and Debug](/previous-versions/azure/devops/extend/test/debug-in-browser)

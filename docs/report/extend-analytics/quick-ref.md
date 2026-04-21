@@ -6,14 +6,15 @@ ms.subservice: azure-devops-analytics
 ms.reviewer: desalg
 ms.author: chcomley
 author: chcomley
-ms.topic: conceptual
-monikerRange: '>= azure-devops-2019'
+ms.topic: overview
+monikerRange: "<=azure-devops"
 ms.date: 08/12/2022
+ai-usage: ai-assisted
 ---
 
 # Sample reports and quick reference index 
 
-[!INCLUDE [version-gt-eq-2019](../../includes/version-gt-eq-2019.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 Use this quick reference to access information and sample queries using OData and Analytics.  
 Using OData, you can directly query Analytics for Azure DevOps from a supported browser. Use the returned JSON data as you like. Enterprise organizations can generate queries that span multiple projects or an entire organization or project collection.   
@@ -27,7 +28,6 @@ If you're new to Analytics, we recommend that you review the following articles.
 - [Supported tools to use with Analytics](../analytics/analytics-query-tools.md)
 - [Summary of best practices to use when querying Analytics](../analytics/analytics-best-practices.md)  
 - [Permissions and prerequisites for working with Analytics](../analytics/analytics-permissions-prerequisites.md) 
-
 
 [!INCLUDE [temp](../../includes/version-selector.md)]
 
@@ -56,7 +56,7 @@ Analytics supports several widgets and built-in reports. In addition, we've crea
    :::column-end:::
 :::row-end:::
 
-::: moniker range=">= azure-devops-2020"
+::: moniker range="<=azure-devops"
 
 ## Azure Pipelines sample widgets and reports 
 
@@ -77,9 +77,8 @@ Analytics supports several widgets and built-in reports. In addition, we've crea
       - [Failed tests](../powerbi/sample-test-analytics-failed-tests.md)    
       - [Flaky tests](../powerbi/sample-test-analytics-flaky-tests.md)  
       - [Test duration](../powerbi/sample-test-analytics-test-duration.md)  
-      - [Test duration trend](../powerbi/sample-test-analyics-test-duration-trend.md)  
+      - [Test duration trend](../powerbi/sample-test-analytics-test-duration-trend.md)  
       - [Pass rate trend of a test](../powerbi/sample-test-analytics-pass-rate-trend-test.md)  
-
 
 ## Azure Test Plans sample widgets and reports 
 
@@ -118,7 +117,7 @@ Analytics supports several widgets and built-in reports. In addition, we've crea
       - [Containers](analytics-metadata.md)  
       <br/>
       - [Data availability](../powerbi/data-available-in-analytics.md)  
-      - [Data latency](../powerbi/performance-latency.md)  
+      - [Data latency](../powerbi/what-is-analytics.md#data-latency)  
       - [Data model](data-model-analytics-service.md)  
    :::column-end:::
    :::column span="":::
@@ -147,7 +146,7 @@ Analytics supports several widgets and built-in reports. In addition, we've crea
       - [Query guidelines](odata-query-guidelines.md)  
       - [Query fails and timeouts](odata-query-guidelines.md#question-41065)  
       - [Query restrictions](odata-query-guidelines.md#restrictions)  
-      - [Query performance](../powerbi/performance-latency.md)  
+      - [Query performance](../powerbi/what-is-analytics.md#query-performance)  
       - [Query performance guidelines](odata-query-guidelines.md#performance-guidance)   
       - [Query style guidelines](odata-query-guidelines.md#style)  
       <br/>
@@ -160,7 +159,6 @@ Analytics supports several widgets and built-in reports. In addition, we've crea
    :::column-end:::
 :::row-end:::
 
-
 ## Tasks
 
 :::row:::
@@ -169,8 +167,7 @@ Analytics supports several widgets and built-in reports. In addition, we've crea
       - [Aggregate data, OData aggregation extension](aggregated-data-analytics.md#aggregation-extension)  
       - [Aggregate data, simple count](wit-analytics.md#return-count-items)  
       - [Collection-scoped queries](account-scoped-queries.md#org-scope)  
-      - [Construct a basic query](../analytics/analytics-query-parts.md#construct-basic-query)  
-      - [Create an Analytics widget](example-analytics-widget.md)  
+      - [Construct a basic query](../analytics/analytics-query-parts.md#construct-basic-query)
       <br/>
       - [Enforce server-side paging](../analytics/analytics-query-parts.md#server-force-paging)  
       - [Filter aggregated results](aggregated-data-analytics.md#filter-aggregate)  
@@ -214,10 +211,9 @@ Analytics supports several widgets and built-in reports. In addition, we've crea
    :::column-end:::
 :::row-end:::
 
-
 ## Metadata reference
 
-::: moniker range=">= azure-devops-2020"
+::: moniker range="<=azure-devops"
 
 - [Calendar date, Project, and User](../analytics/entity-reference-general.md) 
 - [Azure Boards](../analytics/entity-reference-boards.md) 
@@ -225,19 +221,11 @@ Analytics supports several widgets and built-in reports. In addition, we've crea
 - [Test Plans](../analytics/entity-reference-test-plans.md) 
 ::: moniker-end
 
-
-::: moniker range="azure-devops-2019"
-
-- [Calendar date, Project, and User](../analytics/entity-reference-general.md) 
-- [Azure Boards](../analytics/entity-reference-boards.md) 
-
-::: moniker-end
-
 ## Data model reference and troubleshooting
 - [Analytics views dataset design](../powerbi/data-connector-dataset.md)  
 - [Supported OData functions and clauses](odata-supported-features.md)  
 - [OData API versioning](odata-api-version.md) 
-- [Performance & latency](../powerbi/performance-latency.md)
+- [Performance & latency](../powerbi/what-is-analytics.md#performance-and-latency)
 - [OData Analytics query guidelines for Azure DevOps](odata-query-guidelines.md) 
 - [Resolve errors associated with an Analytics view](../powerbi/troubleshooting-views.md)
 
@@ -246,11 +234,9 @@ Analytics supports several widgets and built-in reports. In addition, we've crea
 - [WIQL to OData](https://marketplace.visualstudio.com/items?itemName=ms-eswm.wiql-to-odata)
 - [OData for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=stansw.vscode-odata)  
 
-
 ## Related articles
 
 - [Power BI](../powerbi/overview.md)  
 - [Dashboards, charts, reports, & widgets](../dashboards/overview.md)  
 - [OData Extension for Data Aggregation Version 4.0](https://docs.oasis-open.org/odata/odata-data-aggregation-ext/v4.0/cs01/odata-data-aggregation-ext-v4.0-cs01.html)
-
 

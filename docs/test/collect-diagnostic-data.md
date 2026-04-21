@@ -4,11 +4,12 @@ description: Learn about collecting diagnostic data while testing web and deskto
 ms.assetid: F536C364-BEFC-48A8-B977-19233941EF6A
 ms.service: azure-devops-test-plans
 ms.custom: UpdateFrequency3
-ms.topic: conceptual
-ms.author: jeom
+ms.topic: how-to
+ms.author: pliaros
 author: rohit-batra
 monikerRange: '<= azure-devops'
 ms.date: 12/06/2021
+ms.update-cycle: 1095-days
 ---
 
 # Collect diagnostic data while testing
@@ -103,12 +104,10 @@ Do the following steps to capture screen recordings from your apps.
 
 1. Choose the entire screen, or choose an app to start recording.
 
-   ::: moniker range=">=azure-devops-2020"
+   ::: moniker range="<=azure-devops"
    ![Screenshot showing selection of the screen or app to share.](media/collect-diagnostic-data/choose-test-feedback-share.png)
    ::: moniker-end
-   ::: moniker range="=azure-devops-2019"
-   ![Screenshot showing choosing the screen or app to record.](media/collect-diagnostic-data/collect-diagnostic-data-12.png) 
-   ::: moniker-end
+   
 
    If you create a bug while recording your screen, the 
    recording automatically stops and is added to the bug. 
@@ -137,7 +136,7 @@ up to that point gets included in the bug that you create. You can view it befor
 
 ![Screenshot showing viewing the diagnostic data in the bug you are creating.](media/collect-diagnostic-data/collect-diagnostic-data-15.png) 
 
-[How do I play the video recordings I created with the extension?](reference-qa.yml#recording-playback)
+[How do I play the video recordings I created with the extension?](reference-qa.yml#how-do-i-play-the-video-recordings-i-created-with-the-extension)
 
 To collect advanced diagnostic data such as code coverage, IntelliTrace, and Test Impact data (in addition to the previously listed data items), you must [configure the data collectors](/previous-versions/azure/devops/test/mtm/collect-more-diagnostic-data-in-manual-tests) and other run settings in Microsoft Test Manager and run your tests using Microsoft Test Manager. For more information, see 
 [Run manual tests with Microsoft Test Manager](/previous-versions/azure/devops/test/mtm/plan-manual-tests-with-microsoft-test-manager).
@@ -148,10 +147,10 @@ To collect advanced diagnostic data such as code coverage, IntelliTrace, and Tes
 > You must [configure the data collectors](/previous-versions/azure/devops/test/mtm/collect-more-diagnostic-data-in-manual-tests) and other run settings in Microsoft Test Manager and specify these as the default settings for the test plan.
 > For more information, see [Run manual tests with Microsoft Test Manager](/previous-versions/azure/devops/test/mtm/plan-manual-tests-with-microsoft-test-manager).
 
-## Related articles
+## Related content
 
 - [Exploratory test and submit feedback directly from your browser](perform-exploratory-tests.md)
 - [Overview of manual and exploratory testing](index.yml)
 - [Testing different configurations](test-different-configurations.md)
 - [Manage test results](how-long-to-keep-test-results.md)
-- [FAQs for manual testing](reference-qa.yml#repeatdifferent)
+- [FAQs for manual testing](reference-qa.yml#test-configurations)

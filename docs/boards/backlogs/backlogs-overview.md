@@ -9,7 +9,7 @@ ms.author: chcomley
 author: chcomley
 ms.topic: overview
 monikerRange: '<= azure-devops'
-ms.date: 10/16/2024
+ms.date: 12/22/2025
 #customer intent: As a project administrator, I want to understand backlogs in Azure Boards and how to use them to plan and improve my team workflow.
 ---
 
@@ -21,13 +21,15 @@ With *backlogs*, you can plan your project by adding user stories or requirement
 
 If you're a project administrator, see [Configure and customize Azure Boards](../configure-customize.md), which shows you how to define area and iteration paths and customize your work item types. When you create a project or add a team, Azure Boards automatically creates a backlog. Each team has access to their own product, portfolio, and sprint backlogs. For more information, see [About teams and Agile tools](../../organizations/settings/about-teams-and-settings.md#each-team-gets-their-own-set-of-tools).
 
+[!INCLUDE [ai-assistance-callout](../../includes/ai-assistance-callout.md)]
+
 ## About backlogs
 
-An Azure Boards backlog is a prioritized list of work items that guides your developments team's effort. A backlog helps manage project scope and facilitates effective communication and collaboration through the software development lifecycle.
+An Azure Boards backlog is a prioritized list of work items that guides your development team's effort. A backlog helps manage project scope and facilitates effective communication and collaboration throughout the software development lifecycle.
 
 Use backlogs to do the following tasks:
 
-::: moniker range=">= azure-devops-2020"  
+::: moniker range="<=azure-devops"
 
 - [Define user stories, product backlog items, or requirements](create-your-backlog.md)
 - [Reorder your backlog](create-your-backlog.md#reorder-your-backlog)
@@ -41,23 +43,13 @@ Use backlogs to do the following tasks:
 
 ::: moniker-end 
 
-::: moniker range="< azure-devops-2020"  
-
-- [Define user stories, product backlog items, or requirements](create-your-backlog.md)
-- [Reorder your backlog](create-your-backlog.md#reorder-your-backlog)
-- [Add details and estimates to your backlog items](create-your-backlog.md#add-details-and-estimates-to-backlog-items)
-- [Bulk update](bulk-modify-work-items.md)
-- [Drag items to a sprint](../sprints/assign-work-sprint.md)
-- [Map backlog items within a hierarchy](organize-backlog.md)  
-- [Review the hierarchy or portfolio of work assigned to multiple teams](#multi-team)
-- [Forecast work](../sprints/forecast.md)
-::: moniker-end 
+ 
 
 [!INCLUDE [note setup backlog](../includes/setup-backlogs-boards.md)]
 
 ## Product and portfolio backlogs
 
-Backlogs present work items as lists. A *product backlog* represents your project plan, the roadmap for what your team plans to deliver. It also provides a repository of all the information  need to track and share with your team.
+Backlogs present work items as lists. A *product backlog* represents your project plan, the roadmap for what your team plans to deliver. It also provides a repository of all the information you need to track and share with your team.
 
 In [Agile methodologies](/devops/plan/what-is-agile), a *portfolio backlog* lets you group and organize your backlog into a hierarchy. You can display high-level initiatives, epics, or projects that your organization plans to work on over a longer period of time. These initiatives are often too large or complex to fit in the scope of a single team's backlog. They require coordination and planning at a higher organizational level.
 
@@ -87,7 +79,7 @@ For more information, see the following articles:
 ### Common backlog configurations for multiple teams
 
 **Question**: *Can you define a backlog configuration that multiple teams can subscribe to?*
-**Answer**: *No. Each team controls their own team settings and backlog configurations.*
+**Answer**: *No. Each team controls their own team settings and backlog configurations independently.*
 
 ::: moniker range="azure-devops"
 Because each user can configure their own **Column Options** and **View Options**, there's no way to configure a common backlog view for all teams. Also, there's no default column options that can be set for each team.  
@@ -133,17 +125,13 @@ When you have many initiatives your teams are working on, you might want to grou
 
 For example, here the Customer Service team organized several backlog items under two features and one epic.
 
-::: moniker range=">= azure-devops-2020"  
+::: moniker range="<=azure-devops"
 
 :::image type="content" source="media/overview/customer-service-backlog-parents-on.png" alt-text="Screenshot of Backlog that shows parents and multi-team ownership.":::  
 
 ::: moniker-end 
 
-::: moniker range="=azure-devops-2019"
-
-:::image type="content" source="media/overview/customer-service-backlog-parents-on.png" alt-text="Screenshot of Backlog that shows parents and multi-team ownership in Azure DevOps Server 2019 and earlier versions.":::  
-
-::: moniker-end 
+ 
 
 [!INCLUDE [velocity](../includes/velocity-section.md)]
 
@@ -159,7 +147,7 @@ When you have several teams, your hierarchical views can show items that belong 
 
 Your team's product backlog lists only those items whose area path matches items assigned to your team. If you show parents, you see the parent epic of the features and backlog items, even if another team owns the epic or feature.
 
-::: moniker range=">= azure-devops-2020"  
+::: moniker range="<=azure-devops"
 
 Other team-owned items appear with an information icon :::image type="icon" source="../../media/icons/info.png" border="false":::.
 
@@ -170,16 +158,7 @@ Other team-owned items appear with an information icon :::image type="icon" sour
 
 ::: moniker-end 
 
-::: moniker range="azure-devops-2019"
-
-Other team-owned items appear with an information icon :::image type="icon" source="../../media/icons/info.png" border="false":::.  
-
-:::image type="content" source="media/multi-ownership/customer-service-backlog-parents-on.png" alt-text="Screenshot of backlog items and parent items owned by other teams, Azure DevOps Server 2019 version.":::
-
-> [!TIP]
-> Add the **Node Name** field as a column to identify the area path and team associated with the work items.
-
-::: moniker-end 
+ 
 
 For more information, see [Define area paths and assign to a team](../../organizations/settings/set-area-paths.md).
 
@@ -187,17 +166,13 @@ For more information, see [Define area paths and assign to a team](../../organiz
 
 Here's another example that shows the **Epics** backlog for the **Management** team. Drilling down, you can see all the backlog items and features, even though they belong to one of three different teams: Customer Service, Phone, and Web.  
 
-::: moniker range=">= azure-devops-2020"  
+::: moniker range="<=azure-devops"
 
 :::image type="content" source="media/multi-ownership/management-team-backlog-epics-s155.png" alt-text="Screenshot of view Epics and child items owned by other teams.":::
 
 ::: moniker-end 
 
-::: moniker range="azure-devops-2019"
-
-:::image type="content" source="media/multi-ownership/management-team-backlog-epics.png" alt-text="Screenshot of view Epics and child items owned by other teams in Azure DevOps Server 2019 version.":::
-
-::: moniker-end 
+ 
 
 From these views, you can reparent items that you own and items other teams own. You can't reorder items that another team owns.  
 
@@ -208,7 +183,7 @@ This organization enables management teams to focus on high-level features and e
 For more information about hierarchical team and backlog structures, see [Manage your product and portfolio backlogs](../plans/portfolio-management.md).
 
 > [!IMPORTANT]
-> You have the flexibility to establish child links with work items from different projects. However, if the processes differ between projects, the hierarchy won't be visible on the backlog for those child items that reside in the separate projects. Nonetheless, you can view all of the associated child items directly on the work item form.
+> You have the flexibility to establish child links with work items from different projects. However, if the processes differ between projects, the hierarchy isn't visible on the backlog for those child items that reside in the separate projects. Nonetheless, you can view all of the associated child items directly on the work item form.
 
 ### Reordering and reparenting work items
 
@@ -233,7 +208,7 @@ You can use the following controls to change or filter your product backlog view
 > [!IMPORTANT]  
 > If you turn the **In Progress** control off, items that are in the *Active*, *Committed*, or *Resolved* states or in the In Progress category workflow state don't appear in the backlog. For more information about category workflow states, see [About workflow states in backlogs and boards](../work-items/workflow-and-state-categories.md).
 
-::: moniker range=">= azure-devops-2019"
+::: moniker range="<=azure-devops"
 For more information about using each of these controls, see [Configure your backlog view](configure-your-backlog-view.md).
 ::: moniker-end
 
@@ -260,7 +235,7 @@ For more information about using each of these controls, see [Configure your bac
       [Switch to backlog view](create-your-backlog.md)
    :::column-end:::
 :::row-end:::
-::: moniker range=">= azure-devops-2020"
+::: moniker range="<=azure-devops"
 :::row:::
    :::column span="":::
       **Analytics**  
@@ -283,7 +258,7 @@ For more information about using each of these controls, see [Configure your bac
    :::column span="2":::
       [Switch backlog view](create-your-backlog.md)
 :::row-end:::
-::: moniker range=">= azure-devops-2020"
+::: moniker range="<=azure-devops"
 :::row:::
    :::column span="":::
       :::image type="icon" source="../../media/icons/view-options-icon.png" border="false":::  
@@ -301,23 +276,7 @@ For more information about using each of these controls, see [Configure your bac
    :::column-end:::
 :::row-end:::
 ::: moniker-end
-::: moniker range="azure-devops-2019"
-:::row:::
-   :::column span="":::
-      :::image type="icon" source="../../media/icons/view-options-icon.png" border="false":::
-   :::column-end:::
-   :::column span="":::
-      View options
-   :::column-end:::
-   :::column span="2":::
-      - [Turn Parents on/off](organize-backlog.md) (Not available for top-level portfolio backlog)
-      - [Turn Forecasting on/off](../sprints/forecast.md) (Only available on product backlog)  
-      - [Turn In Progress items on/off](create-your-backlog.md#show-hide-in-progress)
-      - [Show Mapping](organize-backlog.md) (Not available for top-level portfolio backlog)
-      - [Show Planning](../sprints/assign-work-sprint.md)  
-   :::column-end:::
-:::row-end:::
-::: moniker-end
+
 :::row:::
    :::column span="":::
       :::image type="icon" source="../media/icons/filter-icon.png":::  
@@ -395,7 +354,7 @@ To add users to a project, see [Add users to a project or team](../../organizati
 > [!div class="nextstepaction"]
 >[Sign up for Azure Boards](../get-started/index.md)
 
-## Related articles
+## Related content
 
 - [Navigate the web portal](../../project/navigation/index.md)
 - [Learn about Kanban boards](../boards/kanban-overview.md)

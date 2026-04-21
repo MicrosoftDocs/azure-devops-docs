@@ -4,6 +4,7 @@ description: See the Sprint 181 feature updates for Azure Pipelines, including n
 author: sid-ah
 ms.author: simerzou
 ms.date: 01/14/2021
+ms.topic: release-notes
 ---
 
 # Azure Pipelines - Sprint 181 Update

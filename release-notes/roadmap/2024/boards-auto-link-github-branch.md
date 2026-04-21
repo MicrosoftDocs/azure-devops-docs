@@ -3,7 +3,7 @@ title: Automatically link pull requests when linked to a GitHub branch
 author: danhellem
 ms.author: dahellem
 ms.date: 11/27/2024
-ms.topic: article
+ms.topic: whats-new
 ms.service: azure-devops
 ms.subservice: azure-devops-release-notes
 description: Automatically link pull requests when linked to a GitHub branch

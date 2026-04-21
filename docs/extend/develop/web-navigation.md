@@ -1,13 +1,15 @@
 ---
 ms.subservice: azure-devops-ecosystem
+ms.custom: UpdateFrequency3
 title: Developing extensions for vertical web navigation
 description: Guidance for developing extensions to be used with vertical web navigation
 ms.assetid: 3fa22433-150b-428c-8e10-3ffb4d832c20
-ms.topic: conceptual
+ms.topic: overview
 monikerRange: 'azure-devops'
 ms.author: chcomley
 author: chcomley
-ms.date: 06/08/2021
+ms.date: 04/03/2026
+ai-usage: ai-assisted
 ---
 
 # Vertical navigation guidance
@@ -43,7 +45,7 @@ In traditional horizontal navigation, users could go to a project or team by sel
 
 We don't recommend relying on `SDK.getWebContext().team`. Instead, follow the guidance below, based on the category your extension falls under.
 
-### Hub extensions that are team aware
+### Team-aware hub extensions
 
 If your extension needs to provide users a way to select a team, you can use the Teams REST API to get a list of teams for the current project. The following example shows how to call this API from your extension.
 
@@ -65,7 +67,7 @@ private async getTeams() {
 
 For an example of an extension that provides a team picker control, see [Team Calendar](https://github.com/microsoft/vsts-team-calendar/blob/43c8ffae5481864707e564e879b25dbf4d9b9611/src/Calendar.tsx#LL382C1-L397C16).
 
-### Pivots/Panels extensions that are in team aware hubs like Backlogs and Dashboard
+### Pivot and panel extensions
 
 Your extension can check the *configuration* object passed to your contribution. This object has different properties depending on the contribution type and where the contribution is hosted. Example shows reading team from the *configuration* and falling back to reading team from *webContext* to support both new vertical navigation and older horizontal navigation in on-premise releases.
 
@@ -84,7 +86,7 @@ function getCurrentTeam() {
 }
 ```
 
-### Actions extensions that are in team aware hubs like Backlogs and Dashboard
+### Action extensions
 
 Your extension can check the *actionContext* object passed to the callback invoked when a user selects the contributed menu item. Example shows reading team from the *actionContext*.
 

@@ -8,12 +8,15 @@ ms.topic: how-to
 ms.date: 10/19/2022
 monikerRange: '<= azure-devops'
 ms.subservice: azure-devops-repos-git
+ai-usage: ai-assisted
 ---
 
 # Create a new Git branch
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 [!INCLUDE [version-vs-gt-eq-2019](../../includes/version-vs-gt-eq-2019.md)]
+
+[!INCLUDE [ai-assistance-callout](../../includes/ai-assistance-callout.md)]
 
 The first commit in a new Git repo is the start of the `main` branch. As you work in the `main` branch, you make commits to record your work in that branch. Branching in Git occurs when you create a new line of development that diverges from a prior branch. You might choose to create a new branch to develop and test a new feature before adding it to your `main` branch. The recommended [Git workflow](gitworkflow.md) is to use a new branch for every feature or bugfix. When you switch between branches, Git almost instantly switches the version of your repo files to match the branch you selected. Your [commits](commits.md) are always saved to the current branch, and are isolated from commits in other branches.
 
@@ -30,7 +33,7 @@ For an overview of the Git workflow, see [Azure Repos Git tutorial](gitworkflow.
 
 #### [Browser](#tab/browser) 
 
-::: moniker range=">= azure-devops-2020"
+::: moniker range="<=azure-devops"
 
 You can create branches in **Azure Repos** Git repos, **GitHub** repos, or other hosted Git repos.
 
@@ -63,26 +66,6 @@ The main page of your repo now shows the files in your new branch.
 :::image type="content" source="media/create-branch/browser/github/created-branch.png" border="true" alt-text="Screenshot of your new branch files on the main page of a GitHub repo.":::
 
 ::: moniker-end
-
-::: moniker range="< azure-devops-2020 >= azure-devops-2019"
-
-1. View your repo's branches by selecting **Repos** > **Branches** while viewing your repo on the web.
-
-   ![View your branches](media/repos-navigation/repos-branches.png)
-
-1. Select **New branch** in the upper-right corner of the page.
-
-   ![Create branch button](media/branches/create-branch.png)
-
-1. In the **Create a branch** dialog box, enter a name for your new branch, select a branch to base the work off of, and associate any work items.
-
-   :::image type="content" source="media/branches/create-branch-web-2020.png" alt-text="Screenshot that shows the creation of a branch with the new branch dialog.":::
-
-1. Select **Create branch**.
-
-::: moniker-end
-
-
 
 > [!TIP]
 > After you've created a remote branch, you can [fetch](pulling.md) it into your local Git repo. At the command prompt, run:<br>

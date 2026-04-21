@@ -4,6 +4,7 @@ description: See the Sprint 209 feature updates for Azure Pipelines, including n
 author: gloridelmorales
 ms.author: glmorale
 ms.date: 9/12/2022
+ms.topic: release-notes
 ---
 
 # Azure Pipelines - Sprint 209 Update

@@ -2,14 +2,14 @@
 title: Data protection overview
 titleSuffix: Azure DevOps Services
 description: Learn how Microsoft helps protect your projects and data in Azure DevOps. 
-ms.custom: freshness-fy22
-ms.topic: article
+ms.topic: concept-article
 ms.subservice: azure-devops-security
 ms.author: chcomley
 author: chcomley
 ms.reviewer: jominana
-ms.date: 02/17/2025
+ms.date: 03/18/2026
 monikerRange: 'azure-devops'
+ms.custom: freshness-fy22, sfi-ropc-nochange, pat-reduction
 ---
 # Data protection overview
 
@@ -159,6 +159,8 @@ Microsoft is committed to ensuring that your projects remain safe and secure, wi
 * PAT hash generates in-memory on the server side as an *HMACSHA256Hash* of the raw PAT using a 64-byte symmetric signing key stored in our key vault. 
 * Hash gets stored in our database.
 
+[!INCLUDE [use-microsoft-entra-reduce-pats](../../includes/use-microsoft-entra-reduce-pats.md)]
+
 #### Secure shell (SSH) keys
 
 * We store a hash of the enclosing organization ID and the SSH public key.
@@ -170,6 +172,9 @@ Microsoft is committed to ensuring that your projects remain safe and secure, wi
 
 * OAuth credentials issue as fully self-describing JSON web tokens (JWTs) and aren't stored in our service.
 * The claims in JWTs issued and presented to our service get validated using a certificate stored in our key vault.
+
+> [!IMPORTANT]
+> Azure DevOps is encrypting authentication tokens. After encryption takes effect, token payloads are no longer readable by clients. Applications that decode tokens to extract claims will break. Always treat tokens as opaque — use them only for authorization, and call [Azure DevOps REST APIs](/rest/api/azure/devops) to retrieve user or organization data. For more information, see [Why shouldn't I decode or read claims from authentication tokens?](../../integrate/get-started/authentication/authentication-guidance.md#why-shouldnt-i-decode-or-read-claims-from-authentication-tokens)
 
 ### Reporting security flaws
 
@@ -279,7 +284,7 @@ More requirements for internal projects include associating the organization wit
 
 You might be interested in understanding third-party evaluation of our procedures for data security. Azure DevOps achieved the following certifications:
 
-- ISO 27001:2013
+- ISO 27001:2022
 - ISO 27018:2019
 - ISO 26262:2023
 - Health Insurance Portability and Accountability Act (HIPAA)
@@ -354,6 +359,6 @@ Azure DevOps supports enforcing certain types of conditional access policies (fo
 - [Data locations for Azure DevOps](data-location.md)
 - [Microsoft privacy statement](https://privacy.microsoft.com/privacystatement)
 - [Azure DevOps Support](https://developercommunity.visualstudio.com/spaces/21/index.html)
-- [Features and services included with Azure DevOps](../../user-guide/services.md)
+- [Features and services included with Azure DevOps](../../user-guide/what-is-azure-devops.md)
 - [Azure Trust Center](https://azure.microsoft.com/support/trust-center/)
 - [Microsoft Security Development Lifecycle](https://www.microsoft.com/sdl/)

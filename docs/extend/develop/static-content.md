@@ -1,13 +1,15 @@
 ---
 ms.subservice: azure-devops-ecosystem
+ms.custom: UpdateFrequency3
 title: Static Content Hosting for Extension Content | Extensions for Azure DevOps Services
 description: Options for hosting static content required by your extension.
 ms.assetid: 0bf474c9-1511-4889-9d91-fc954abdcd6a
-ms.topic: conceptual
+ms.topic: overview
 monikerRange: 'azure-devops'
 ms.author: chcomley
 author: chcomley
-ms.date: 06/02/2020
+ms.date: 04/03/2026
+ai-usage: ai-assisted
 ---
 
 # Static content hosting
@@ -58,7 +60,7 @@ Keep in mind:
 * All `addressable` asset requests are case-sensitive. If the request for an asset has a different case than the actual uploaded asset, it results in an HTTP 404 (Not found) error.
 * Not specifying a baseUri or setting an empty value tells Visual Studio Codespaces at runtime to calculate the base URI as if your static content's hosted by Azure DevOps Services.
 
-## Host on your own service (or a third-party service)
+## Host on a third-party service
 
 In this model, static content is served from your own service and not included in your extension's .vsix file.
 

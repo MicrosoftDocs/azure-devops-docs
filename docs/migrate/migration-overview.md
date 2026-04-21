@@ -7,14 +7,12 @@ ms.contentid: 3d6edd06-ceed-43b4-9e77-4a121864594c
 ms.author: chcomley
 author: chcomley
 monikerRange: '<= azure-devops'
-ms.date: 02/18/2025
+ms.date: 08/07/2025
 ---
 
 # Migration overview 
 
 Moving from Azure DevOps Server to Azure DevOps Services is an essential step for organizations that want to take advantage of cloud-based collaboration, scalability, and enhanced features. In this overview, we explore the options for transferring your valuable data from the on-premises Azure DevOps Server to the cloud-based Azure DevOps Services. 
-
-For information about the main differences between on-premises Azure DevOps Server and the cloud-based Azure DevOps Services, see [Compare Azure DevOps Services with Azure DevOps Server - Azure DevOps](../user-guide/about-azure-devops-services-tfs.md). 
 
 Regardless of your selected migration option, we recommend that you determine your most important assets, such as source code and work items. You should think about your data size, organization complexity and make sure that you have enough time for test runs before actual migration for a smooth and successful transition. 
 
@@ -53,25 +51,23 @@ Before you initiate the migration process, the tools can perform a premigration 
 
 ## Migration Tool limitations
 
-The tool allows you to "lift and shift" one Azure DevOps Server Collection to one new Azure DevOps Service Organization, with no modifications for the following reasons: 
+The tool allows you to "lift and shift" one Azure DevOps Server Collection to one new Azure DevOps Services Organization, with no modifications for the following reasons:
 
-- Data integrity and consistency: 
-  - When you migrate data, maintaining integrity and consistency is crucial. Allowing modifications during migration could lead to data corruption or inconsistencies. 
-  - The tool ensures that data remains intact during the transfer process, minimizing the risk of errors. 
-- Source data preservation: 
-  - The migration tool aims to faithfully replicate the source data in the target environment. 
-  - Modifications could alter the original data, potentially causing discrepancies between the migrated data and the source data. 
-- Predictable behavior: 
-  - By restricting modifications, the tool ensures predictable behavior during migration. 
-  - Users can rely on consistent results without unexpected changes. 
-- Migration focus, not transformation: 
-  - The primary purpose of the migration tool is to move data from one location to another. 
-  - Data transformation, such as modifying values, typically gets handled separately after migration.
-- Supported migration scenarios:
-  - Moving projects from one Azure DevOps Services organization to another Azure DevOps Services organization isn't currently supported.
-  - Migrating from one Azure DevOps Server instance to another isn't supported. 
+### Why no modifications are allowed
 
-You can purge data that you don’t need before or after the migration. 
+- **Data integrity and consistency**: Modifications during migration could lead to data corruption or inconsistencies.
+- **Source data preservation**: The tool faithfully replicates source data without alterations that could cause discrepancies.
+- **Predictable behavior**: Restricting modifications ensures consistent, reliable migration results.
+- **Migration focus, not transformation**: The tool moves data; transformation happens separately after migration.
+
+### Unsupported migration scenarios
+
+- Moving projects from one Azure DevOps Services organization to another Azure DevOps Services organization
+- Migrating from one Azure DevOps Server instance to another Azure DevOps Server instance
+
+### Regional limitations
+
+The Data Migration Tool is only supported in specific Azure regions. Organizations must be created in supported regions, and any temporary infrastructure (such as SQL VMs for large migrations) must also be deployed in these regions. See [Supported regions for migration](migration-get-started.md#supported-azure-regions-for-migration) for the complete list.
 
 ## Migration Tool process
 
@@ -83,9 +79,12 @@ You can purge data that you don’t need before or after the migration.
 1. Carry out a migration. 
 1. Confirm that your users and data got migrated, and the collection is functioning as expected.
 
+> [!TIP]
+> You can purge data that you don't need before or after the migration to reduce migration time and storage requirements.
+
 ## Option 3: API-based migration
 
-If you can't use the Data Migration Tool but still want a higher fidelity migration than [Option 2](#option-2-azure-devops-data-migration-tool), consider using various tools that leverage public APIs to move data. These tools include extensions available at the [Visual Studio Marketplace](https://marketplace.visualstudio.com/azuredevops).
+If you can't use the Data Migration Tool but still want a higher fidelity migration than [Option 2](#option-2-azure-devops-data-migration-tool), consider using various tools that use public APIs to move data. These tools include extensions available at the [Visual Studio Marketplace](https://marketplace.visualstudio.com/azuredevops).
 
 ## API-based migration limitations
 
@@ -136,7 +135,7 @@ When migrating into Azure DevOps Services, keep in mind the following key princi
 > [!div class="nextstepaction"]
 > [Get started with the Azure DevOps Data Migration Tool](migration-get-started.md)
 
-## Related articles
+## Related content
 
 - [Complete prerequisites for migration](migration-prerequisites.md)
 - [Validate and prepare for migration](migration-validate.md)

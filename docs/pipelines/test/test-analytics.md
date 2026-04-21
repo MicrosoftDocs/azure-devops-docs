@@ -2,17 +2,17 @@
 title: Test Analytics
 description: Get meaningful insights with test analytics in the pipeline
 ms.assetid: 678DF283-CE38-4CAF-BA74-D331B357F510
-ms.topic: conceptual
+ms.topic: concept-article
 ms.custom: continuous-test, cross-service
-ms.author: jeom
+ms.author: alexpysanets
 author: raviLiftr
 ms.date: 06/28/2019
-monikerRange: '>= azure-devops-2019'
+monikerRange: "<=azure-devops"
 ---
 
 # Test Analytics
 
-[!INCLUDE [version-gt-eq-2019](../../includes/version-gt-eq-2019.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 Tracking test quality over time and improving test collateral is key to maintaining a healthy DevOps pipeline.
 Test analytics provides near real-time visibility into your test data for builds and releases.

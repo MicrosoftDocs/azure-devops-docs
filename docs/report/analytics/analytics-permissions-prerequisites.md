@@ -5,14 +5,14 @@ description: Understand the permissions and prerequisites to meet to access and 
 ms.subservice: azure-devops-analytics
 ms.author: chcomley
 author: chcomley
-ms.topic: conceptual
-monikerRange: '>= azure-devops-2019'
+ms.topic: overview
+monikerRange: "<=azure-devops"
 ms.date: 09/30/2022
 ---
 
 # Permissions and prerequisites to access Analytics in Azure DevOps
 
-[!INCLUDE [version-gt-eq-2019](../../includes/version-gt-eq-2019.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
  
 To work with Analytics and create reports, several prerequisites must be met as summarized in this article. 
 
@@ -30,13 +30,8 @@ For Azure DevOps Services, Analytics is always on. You can't disable it or pause
 
 ::: moniker-end
 
-::: moniker range=">= azure-devops-2020 < azure-devops" 
+::: moniker range="<azure-devops"
 For Azure DevOps Server 2020 and later on-premises versions, Analytics is automatically installed with each project collection you create. 
-::: moniker-end
-
-
-::: moniker range="azure-devops-2019" 
-For Azure DevOps Server 2019, you must first install Analytics on each project collection you create. 
 ::: moniker-end
 
 ::: moniker range="< azure-devops" 
@@ -45,13 +40,11 @@ You can pause and restart the service. When paused, no new data is added to Anal
 For more information, see [Install or enable the Analytics service](../dashboards/analytics-extension.md).
 ::: moniker-end
 
-
 ### Azure DevOps services 
 
 To exercise any Azure DevOps service, it must be enabled. No data can be captured for a service that has been disabled. Services can be enabled or disabled on a project by project basis. 
 
 To verify that all services are enabled, see [Turn a service on or off](../../organizations/settings/set-services.md).
-
 
 ### Analytics views 
 
@@ -61,13 +54,11 @@ To access **Analytics views**, have it enabled. The organization owner or member
 
 To learn how, see [Manage or enable features](../../project/navigation/preview-features.md).
 
-
 ## Permissions
 
 You set [permissions](../../report/powerbi/analytics-security.md) for the service at the project level, and for shared **Analytics views** at the object level. 
 
 The following table summarizes the permissions available to be set and the default assignments made to the project security groups. 
-
 
 |Permission|  Readers |  Contributors    |Project Administrators| 
 |----------|----------|------------------|-------------------|  
@@ -81,7 +72,7 @@ The following table summarizes the permissions available to be set and the defau
 
 To capture meaningful data, software teams must perform meaningful actions. The following sections provide general recommendations based on the type of data you want to report on. 
 
-::: moniker range=">= azure-devops-2020" 
+::: moniker range="<=azure-devops"
 > [!NOTE]   
 > Branch, Pipeline, and Test entity sets are supported with Analytics **v3.0-preview** and later versions. Snapshot entity sets to support pipeline jobs, task agent requests, and task agent pool size were added with Analytics **v4.0-preview** version. Make sure you specify the Analytics version that supports the entity set of interest. 
 
@@ -105,7 +96,7 @@ Define test cases and link test cases to their parent PBIs using the Tested By l
 > [!NOTE]   
 > All custom fields added to a work item type are available for use in reports. Custom fields are labeled with *Custom_DisplayNameOfField*, where all spaces have been removed from the display name. 
 
-::: moniker range=">= azure-devops-2020" 
+::: moniker range="<=azure-devops"
 
 ### Test plans 
 
@@ -136,13 +127,10 @@ If you're just getting started, consider reviewing this Learn module,
 
 ::: moniker-end
 
-
 ## Related articles
 
 - [What is the Analytics service?](../powerbi/what-is-analytics.md)
 - [Default permissions quick reference for Azure DevOps](../../organizations/security/permissions-access.md)
 - [Best practices to use when querying the Analytics service](analytics-best-practices.md) 
-
-
 
  

@@ -1,17 +1,16 @@
 ---
-title: Use semantic searches in Azure Boards and Azure DevOps
+title: Use Semantic Work Item Searches
 titleSuffix: Azure Boards
-description: Learn how to use the search box to quickly filter for assigned to, created by, state, or work item type in Azure Boards and Azure DevOps.  
-ms.custom: boards-queries
+description: Learn how to use the search box to quickly filter for assigned to, created by, state, or work item type in Azure Boards.  
+ms.custom: boards-queries, copilot-scenario-highlight
 ms.service: azure-devops-boards
 ms.assetid: D5A98F10-AAD2-46DD-91DE-41497CF5ECEF 
 ms.author: chcomley
 author: chcomley
-ms.topic: tutorial
+ms.topic: how-to
 monikerRange: '<= azure-devops'
-ms.date: 04/01/2022
+ms.date: 02/28/2026
 ---
-
 
 # Run a semantic work item search
 
@@ -19,7 +18,7 @@ ms.date: 04/01/2022
 
 <a id="search-box"></a>
 
-You can find work items by using shortcut filters or by specifying keywords or phrases. You can also use specific fields/field values, assignment or date modifications, or using Equals, Contains, and Not operators. Searching isn't case-sensitive. Use semantic searches when you want to do the following tasks:
+You can find work items by using shortcut filters or by specifying keywords or phrases. You can also use specific fields/field values, assignment or date modifications, or Equals, Contains, and Not operators. Searching isn't case-sensitive. Use semantic searches to perform these tasks:
 
 - Find a specific work item using its ID or a keyword
 - Find one or more work items across all projects in a fast, flexible manner
@@ -27,19 +26,21 @@ You can find work items by using shortcut filters or by specifying keywords or p
 - Review work items assigned to a specific team member
 - Search against specific work item fields to quickly narrow down a list of work items
 - Determine what key words support a managed search
+
+[!INCLUDE [ai-assistance-mcp-server-tip](../../includes/ai-assistance-mcp-server-tip.md)]
  
 ## Prerequisites
 
-- **Access levels**: **All project members**: Every project member can use the search functions, including users with Stakeholder, Basic, and higher levels of access.
+- **Access levels**: **All project members**: Every project member can use the search functions, including users with Stakeholder, Basic, and higher access levels.
 - Search results:
-  - **Access-based results**: When you're searching across the organization or collection, only results for which a project member has access are listed.
+  - **Access-based results**: When you search across the organization or collection, the system lists only results that a project member can access.
   - **Stakeholder limitations**:
-    - **Wiki search**: Stakeholder wiki search results are limited to provisioned wikis. Published wiki results don’t appear because they require access to regular repositories, which Stakeholders don’t have.
-    - **Code search**: Code search results don’t appear for Stakeholders.
+    - **Wiki search**: Stakeholder wiki search results are limited to provisioned wikis. Published wiki results don't appear because they require access to regular repositories, which stakeholders don't have.
+    - **Code search**: Code search results don't appear for stakeholders.
 
 ::: moniker range="< azure-devops"
 > [!TIP]   
-> If semantic search is configured, you'll notice that the search box moves into the blue bar as shown in the following image.  
+> If you configure semantic search, you notice that the search box moves into the blue bar as shown in the following image.  
 > 
 >![Search Work Items Text Box](media/search-box/search-box-vsts.png)  
 ::: moniker-end     
@@ -48,24 +49,24 @@ You can find work items by using shortcut filters or by specifying keywords or p
 
 ## Start a semantic search for work items
 
-With semantic search you can search: 
+With semantic search, you can search: 
 - Across one or more projects  
 - Across all work item fields using free text  
 - Against specific work item fields  
 
-Free text search easily searches across all work item fields, including custom fields, resulting in more natural searches. Search results are displayed in a snippet view where the search matches found are highlighted. Semantic search also integrates with work item tracking, providing familiar controls to view, edit, comment, and share information within a work item form. 
+Free text search searches across all work item fields, including custom fields, resulting in more natural searches. The system displays search results in a snippet view where the search matches are highlighted. Semantic search integrates with work item tracking, providing familiar controls to view, edit, comment, and share information within a work item form. 
 
-1. Choose any **Boards** page, enter a keyword or phrase in the search box, and press *Enter* or choose the :::image type="icon" source="../../project/search/media/shared/start-search-icon.png" border="false"::: start search icon. 
+1. Select any **Boards** page, enter a keyword or phrase in the search box, and press *Enter* or select the :::image type="icon" source="../../project/search/media/shared/start-search-icon.png" border="false"::: start search icon. 
 
    :::image type="content" source="../../project/search/media/get-started/work-item-search-vert.png" alt-text="Work Item Search box":::
 
-2. Search results are displayed in a snippet view where the matches found are shown in bold.
+2. The system displays search results in a snippet view where the matches found appear in bold.
 
    ![Search results](../../project/search/media/work-item-search-get-started/results-matching.png)
 
    This search is a full text search that uses simple search strings for words or phrases.
    Work item search matches derived forms of your search terms; for example, a search for
-   "updating" also finds instances of the word "updated" and "update". Searches _aren't_ case-sensitive.
+   "updating" finds instances of the word "updated" and "update." Searches aren't case-sensitive.
 
 3. Select a snippet of a work item and display it in the right window. 
 
@@ -75,13 +76,9 @@ Free text search easily searches across all work item fields, including custom f
    In Google Chrome, press _Ctrl_ + _Shift_ + _Enter_ to switch the focus
    to the new browser tab. 
 
-::: moniker range="azure-devops-2019"
-[!INCLUDE [temp](../../includes/previous-navigation-not-supported-azd.md)] 
-::: moniker-end
-
 ### Fine-tune semantic search results 
 
-1. Fine-tune your search by specifying the fields to search. Enter `a:` and a user name to search for all items assigned to that user.
+1. Fine-tune your search by specifying the fields to search. Enter `a:` and a username to search for all items assigned to that user.
 
    :::image type="content" source="../../project/search/media/get-started/search-work-vert.png" alt-text="Search from the title bar":::   
 
@@ -90,24 +87,23 @@ Free text search easily searches across all work item fields, including custom f
    * `a:` for **Assigned to:** 
    * `c:` for **Created by:** 
    * `s:` for **State** 
-   * `t:` for **Work item type**<p />
+   * `t:` for **Work item type**
 
 2. Start entering the name of a field in your work items; for example, type `ta`.
 
    ![Quick filters as you type](../../project/search/media/work-item-search-get-started/dyna-dropdown.png)    
 
    The dropdown list shows work item field name suggestions 
-   that match user input and help the user to complete the search faster. For example, a search such as 
-   `tags:Critical` finds all work items tagged "Critical". 
+   that match user input and help the user complete the search faster. For example, a search such as 
+   `tags:Critical` finds all work items tagged "Critical." 
 
 3. Add more filters to further narrow your search, and use Boolean operators
    to combine terms if necessary. For example, 
    `a: Chris t: Bug s: Active` finds all active bugs assigned
-   to a user named "Chris".
+   to a user named "Chris."
 
 4. Narrow your search to specific types
    and states, by using the drop-down selector lists at the top of the results page.
-
 
 ::: moniker-end
 
@@ -116,16 +112,9 @@ Free text search easily searches across all work item fields, including custom f
 ### From the web portal 
 
 ::: moniker range="azure-devops"
-Improvised search isn't available from Azure DevOps Services. Only [semantic search](#start-search). 
+Improvised search isn't available from Azure DevOps Services. Only [semantic search](#start-search) is available. 
 
 ::: moniker-end
-::: moniker range="=azure-devops-2019"
-
-> [!div class="mx-imgBorder"]  
-> ![Search box shortcut menu (web portal)](media/example-search-box-queries/IC588318.png)   
-
-::: moniker-end
-
 
 ### From Visual Studio Team Explorer
 
@@ -134,14 +123,13 @@ Open the ![Context Menu Icon](media/example-search-box-queries/IC533396.png) con
 > [!div class="mx-imgBorder"]  
 > ![Search box menu (Team Explorer)](media/example-search-box-queries/IC588319.png) 
 
-
 Finding work items using the search box (Team Explorer)
 
 ![Find a work item using the search text box](media/example-search-box-queries/IC552976.png)  
 
 You can combine shortcuts and use search operators within the search box.
 
-Use the ![Search box clear icon (Team Explorer)](media/example-search-box-queries/IC588317.png) **Clear** button to remove content from the search box. To switch your context to the search box from within Visual Studio, enter **Ctrl+'**.
+Use the ![Search box clear icon (Team Explorer)](media/example-search-box-queries/IC588317.png) **Clear** button to remove content from the search box. To switch your context to the search box from within Visual Studio, press **Ctrl+'**.
 
 <a id="keywords"></a> 
 
@@ -180,13 +168,11 @@ To find work items based on a keyword or phrase contained within other text stri
 |Created yesterday as a test activity.|`"Created Date"=@Today-1 Activity=Test`|  
 
 > [!NOTE]     
-> Some fields, such as **History** and **Description**, do not support partial word text searches. For example, if the **History** field contains the phrase `reproducible behavior` and you search for `History:repro` the work item isn't found. However, if you search for the complete string `History:reproducible` the work item is found.
+> Some fields, such as **History** and **Description**, don't support partial word text searches. For example, if the **History** field contains the phrase `reproducible behavior` and you search for `History:repro`, the work item isn't found. However, if you search for the complete string `History:reproducible`, the work item is found.
 
 ## Use @Me or @Today macros
 
 The **@Me** macro expands to the full name of the current user in any work item search. The **@Me** macro is especially useful for creating a search that you can share with other users, and it can simplify your work by reducing the number of characters you must type to specify your own user name. For a description of all macros, see [Query fields, operators, and macros, Query macros or variables](query-operators-variables.md#macros). 
-
-
 
 ---
 :::row:::
@@ -262,17 +248,37 @@ The following examples show how to use operators when you create a search string
 |Contain the keyword `triage` in the title or description, aren't assigned to you, and aren't closed.|`triage -A=@me -S=Closed`|
 |Active bugs that are assigned to you that don't contain the keyword `bugbash` in the title.|`S=Active T=bug A=@Me -Title:bugbash`
 
-
-## Related articles
-
-- [About managed queries](about-managed-queries.md)  
-- [Define a query](using-queries.md)   
-- [Query fields, operators, and macros](query-operators-variables.md)   
-- [Work item field index](../work-items/guidance/work-item-field.md)
-
-## Q & A
+## FAQ
 
 ### Q: Does the search box support less than/greater than operators?
 
 **A:** No. The search box doesn't recognize comparison operators such as greater than (>) or less than (<). It translates queries with these operators into a search phrase.
 
+<a id="use-ai-assistance"></a>
+
+## Use AI to search for work items
+
+If you have the [Azure Boards MCP Server](../../mcp-server/mcp-server-overview.md) connected to your AI agent in agent mode, you can use natural language prompts to search for work items without learning search syntax.
+
+| Task | Example prompt |
+|------|----------------|
+| Find by keyword | `Find all work items that mention "authentication" in the title or description` |
+| Search by assignee | `Show all active work items assigned to <Jamal>` |
+| Search by type and state | `List all new bugs created this week in my project` |
+| Search across projects | `Find user stories with "API" in the title across all my projects` |
+| Search by description content | `Find work items in <Contoso> whose description mentions "database migration"` |
+| Combine search criteria | `Find active bugs in <Contoso> with "timeout" in the title that are priority 1 or 2` |
+| Search acceptance criteria | `List user stories in <Contoso> whose acceptance criteria mention "performance" or "latency"` |
+| Find items by ID range | `Show work items <1000> through <1050> in <Contoso> with their titles and states` |
+| Search recent comments | `Find work items in <Contoso> where someone mentioned "deployment" in the discussion in the last 7 days` |
+| Fuzzy search by topic | `Find all work items in <Contoso> related to single sign-on, SSO, or federated authentication` |
+
+> [!NOTE]
+> Agent mode and the MCP Server use natural language, so you can adjust these prompts or ask follow-up questions to refine the results.
+
+## Related content
+
+- [About managed queries](about-managed-queries.md)  
+- [Define a query](using-queries.md)   
+- [Query fields, operators, and macros](query-operators-variables.md)   
+- [Work item field index](../work-items/guidance/work-item-field.md)

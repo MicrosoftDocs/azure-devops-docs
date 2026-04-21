@@ -4,7 +4,7 @@ titleSuffix: Azure Repos
 description: See how to add Team Foundation Version Control check-in policies in Visual Studio Team Explorer.
 ms.assetid: 1f3046e3-1ea2-4477-99ca-76d3fc70c47b
 ms.service: azure-devops-repos
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 10/06/2022
 monikerRange: '<= azure-devops'
 ms.subservice: azure-devops-repos-tfvc

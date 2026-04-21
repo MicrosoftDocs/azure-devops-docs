@@ -2,25 +2,26 @@
 ms.topic: include
 ms.author: chcomley
 author: chcomley
-ms.date: 07/17/2020
+ms.date: 04/08/2025
 ---
 
 <a id="open-process-wit"></a>
 
 
-## Open Settings>Process
+## Open Settings > Process
 
-You create, manage, and make customizations to processes from **Organization settings>Process**. 
+Create, manage, and make customizations to processes from the  **Process** page. 
 
-1. Choose the :::image type="icon" source="../../../media/icons/project-icon.png" border="false"::: Azure DevOps logo to open **Projects**. Then choose **Organization settings**. 
+1. Sign in to your organization (```https://dev.azure.com/{Your_Organization}```).
+2. Select :::image type="icon" source="../../../media/icons/gear-icon.png" border="false"::: **Organization settings**.
 
-	> [!div class="mx-imgBorder"]  
-	> ![Open Organization settings](../../../media/settings/open-admin-settings-vert.png)  
+   > [!div class="mx-imgBorder"] 
+   > ![Screenshot shows highlighted Organization settings button.](../../../media/settings/open-admin-settings-vert.png)  
 
-1. Then, choose **Process**. 
+3. Select **Process**. 
    
 	> [!div class="mx-imgBorder"]  
-	> ![Organization Settings, Process page](/azure/devops/organizations/settings/work/media/process/open-process-page-s150.png) 
+	> ![Screenshot shows Organization settings, Process page.](/azure/devops/organizations/settings/work/media/process/open-process-page-s150.png) 
 
 	> [!IMPORTANT]  
-	> If you don't see **Process**, then you're working from TFS-2018 or earlier version. The **Process** page isn't supported. You must use the features supported for the [On-premises XML process model](../../../reference/customize-work.md).
+	> If you don't see **Process**, then you're working from an earlier version where the **Process** page isn't supported. Use the features supported for the [On-premises XML process model](../../../reference/customize-work.md).

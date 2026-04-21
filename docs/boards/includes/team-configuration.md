@@ -73,7 +73,7 @@ ms.date: 01/09/2020
    :::column-end:::
    :::column span="3":::
    - [New work item](../../report/dashboards/widget-catalog.md#new-work-item-widget)
-   - [Sprint burndown](../../report/dashboards/widget-catalog.md#sprint-burndown-widget)
+   - [Sprint burndown](../../report/dashboards/widget-catalog.md#burndown-widget)
    - [Sprint capacity](../../report/dashboards/widget-catalog.md#sprint-capacity-widget)
    - [Sprint overview](../../report/dashboards/widget-catalog.md#sprint-overview-widget)
    - [Team members](../../report/dashboards/widget-catalog.md#team-members-widget) 

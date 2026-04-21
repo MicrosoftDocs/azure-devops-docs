@@ -9,6 +9,8 @@ ms.topic: reference
 ms.date: 03/14/2018
 monikerRange: '<= azure-devops'
 ms.subservice: azure-devops-repos-git
+ms.custom: sfi-image-nochange
+ai-usage: ai-assisted
 ---
 
 
@@ -16,6 +18,8 @@ ms.subservice: azure-devops-repos-git
 
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
+
+[!INCLUDE [ai-assistance-callout](../../includes/ai-assistance-callout.md)]
 
 ## Commit history view
 

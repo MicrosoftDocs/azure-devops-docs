@@ -4,11 +4,13 @@ titleSuffix: Azure DevOps
 description: Find helpful troubleshooting information for resolving access and permission issues in Azure DevOps.  
 ms.assetid: 
 ms.subservice: azure-devops-security
+ai-usage: ai-assisted
 ms.topic: troubleshooting
 ms.author: chcomley
 author: chcomley
 monikerRange: '<= azure-devops'
-ms.date: 02/10/2025
+ms.date: 12/03/2025
+ms.custom: sfi-image-nochange, copilot-scenario-highlight
 --- 
 
 # Troubleshoot access and permission issues
@@ -21,8 +23,8 @@ Due to the extensive security and permission structure of Azure DevOps, you migh
 
 | Category | Requirements |
 |--------------|-------------|
-| **Permissions** | To manage permissions or groups at the organization or collection level: Member of the [**Project Collection Administrators** security group](look-up-project-collection-administrators.md). If you created the organization or collection, you're automatically a member of this group. |
-| **Recommendation** | Before using this guide, we recommend getting familiar with the following content: <br>- [Get started with permissions, access, and security groups](about-permissions.md) <br>- [Default permissions and access quick reference](permissions-access.md). |
+| Permissions | To manage permissions or groups at the organization or collection level: Member of the [**Project Collection Administrators** security group](look-up-project-collection-administrators.md). If you created the organization or collection, you're automatically a member of this group. |
+| Recommendation | Before using this guide, we recommend getting familiar with the following content: <br>- [Get started with permissions, access, and security groups](about-permissions.md) <br>- [Default permissions and access quick reference](permissions-access.md). |
 
 > [!TIP]
 > When you create an Azure DevOps security group, label it clearly to indicate whether it's intended to limit access.
@@ -76,6 +78,7 @@ Users can lose access for the following reasons:
 |**Reason for loss of access**  |**Troubleshooting action**|
 |---------|---------|
 |The user's Visual Studio subscription expired.     | This user can [work as a Stakeholder](../../organizations/security/get-started-stakeholder.md), or you can give the user Basic access until the user renews their subscription. After the user signs in, Azure DevOps restores access automatically.        |
+|The GitHub Enterprise license expired or got removed.    | See the [FAQs/GitHub Enterprise section](../accounts/faq-user-and-permissions-management.yml#github-enterprise).       |
 |The Azure subscription used for billing is no longer active.  |  All purchases made with this subscription are affected, including Visual Studio subscriptions. To fix this issue, visit the [Azure account portal](https://portal.azure.com).       |
 |The Azure subscription used for billing was removed from your organization.    | Learn more about [linking your organization](../billing/set-up-billing-for-your-organization-vs.md#set-up-billing)        |
 
@@ -250,6 +253,32 @@ You might be signed into Azure DevOps with an incorrect identity. Do the followi
 
 ::: moniker-end
 
+## Use AI to troubleshoot permissions and access issues
+
+The following example prompt for Copilot Chat helps you troubleshoot Azure DevOps permissions, access levels, and security group issues. Copy and paste this prompt into Copilot Chat, replacing the placeholders with your specific information.
+
+For the best AI assistance, include specific details like the user's access level, security groups they belong to, specific features they can't access, and any error messages they're receiving.
+
+`I'm having this Azure DevOps permissions/access issue: [PASTE YOUR ERROR MESSAGE OR DESCRIBE THE PROBLEM]
+
+User and permission details:
+- User's access level: [Stakeholder/Basic/Basic + Test Plans/Visual Studio subscription]
+- Security groups: [LIST GROUPS like Project Contributors, Project Readers, etc.]
+- Feature they can't access: [SPECIFIC FEATURE like work items, repos, pipelines, etc.]
+- Project name: [PROJECT NAME if applicable]
+- Organization name: [ORGANIZATION NAME if applicable]
+- Error message: [EXACT ERROR MESSAGE if any]
+
+Can you help me troubleshoot this issue? Please provide step-by-step instructions to:
+1. Identify the root cause of the permissions problem
+2. Fix the access level, security group membership, or permission settings
+3. Verify the user can successfully access the feature
+
+Context: This is for troubleshooting user access and permissions in Azure DevOps. The issue might be related to access levels, security group memberships, project-level permissions, organization settings, or feature-specific restrictions.
+`
+
+*Copilot is powered by AI, so surprises and mistakes are possible. For more information, see [Copilot general use FAQs](https://aka.ms/copilot-general-use-faqs).*
+
 ## Other areas where permissions might be applied
 
 - [Area path permissions](set-permissions-access-work-tracking.md)
@@ -262,7 +291,7 @@ You might be signed into Azure DevOps with an incorrect identity. Do the followi
 - [Custom backlogs and boards](../settings/work/customize-process-backlogs-boards.md)
 - [Custom controls](../settings/work/custom-controls-process.md)
 
-## Related articles
+## Related content
 
 - [Manage permissions with the command line tool](manage-tokens-namespaces.md)
 - [Change individual or group permissions](/azure/devops/organizations/security/request-changes-permissions)

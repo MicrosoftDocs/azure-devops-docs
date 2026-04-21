@@ -2,6 +2,8 @@
   href: index.yml
 - name: Overview
   href: overview.md
+- name: Roadmap and features timeline
+  href: features-timeline.md
 - name: Architecture overview
   href: architecture-overview.md
 - name: Prerequisites
@@ -16,6 +18,8 @@
     href: quickstart-arm-template.md
   - name: Azure CLI
     href: quickstart-azure-cli.md
+  - name: Bicep
+    href: quickstart-bicep.md
 - name: Configure
   items:
   - name: Configure pool settings
@@ -34,6 +38,8 @@
     href: configure-identity.md
   - name: View agent status
     href: view-agents.md
+  - name: Configure advanced settings
+    href: configure-advanced-settings.md
   - name: Demands
     href: demands.md
   - name: Reliability

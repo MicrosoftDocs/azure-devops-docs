@@ -4,7 +4,7 @@ titleSuffix: Azure Repos
 description: Run Team Foundation Version Control commands from a command prompt or within a script. Use options and shortcuts, and understand exit codes.
 ms.assetid: efeff6e0-c4ab-4686-bc63-20a6136be39a
 ms.service: azure-devops-repos
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 11/29/2022
 monikerRange: '<= azure-devops'
 ms.subservice: azure-devops-repos-tfvc

@@ -5,10 +5,11 @@ ms.assetid: 0F52826C-218D-437A-B6FF-EB8E8292CE3C
 ms.service: azure-devops-test-plans
 ms.custom: UpdateFrequency3
 ms.topic: quickstart
-ms.author: jeom
+ms.author: pliaros
 author: rohit-batra
 monikerRange: '<= azure-devops'
 ms.date: 09/16/2024
+ms.update-cycle: 1095-days
 ---
 
 # Exploratory testing with the Test & Feedback extension in Connected mode
@@ -19,8 +20,8 @@ To use the Test & Feedback extension in Connected mode, connect to an Azure DevO
 
 * Users with **Basic** access can use the extension to perform exploratory
   testing, as described in this article.
-* Users with **Stakeholder** access can use the extension to respond to feedback requests or to [provide feedback](provide-stakeholder-feedback.md#direct) voluntarily.
-* Users with **Basic** or **Stakeholder** access can use extension to respond to feedback requests sent by the team by choosing the **Provide feedback** link in the email. for more information, see [Provide stakeholder feedback](provide-stakeholder-feedback.md#email).
+* Users with **Stakeholder** access can use the extension to respond to feedback requests or to [provide feedback](request-stakeholder-feedback.md#voluntary) voluntarily.
+* Users with **Basic** or **Stakeholder** access can use extension to respond to feedback requests sent by the team by choosing the **Provide feedback** link in the email. for more information, see [Provide stakeholder feedback](request-stakeholder-feedback.md#email).
 
 ## Prerequisites
 
@@ -52,7 +53,7 @@ To use the Test & Feedback extension in Connected mode, connect to an Azure DevO
    If there are many projects or teams, use the search textbox to find the one you need. 
  
 The extension is now ready to be used in **Connected** mode. 
-Depending on your access level (Basic or Stakeholder), you see the appropriate UI for either [exploratory testing](#create-bugs) or [providing feedback](provide-stakeholder-feedback.md#provide).
+Depending on your access level (Basic or Stakeholder), you see the appropriate UI for either [exploratory testing](#create-bugs) or [providing feedback](request-stakeholder-feedback.md#email).
 The extension remembers your selection and remains connected until the session cookies expire or you explicitly disconnect from the server.
 
 <a name="create-bugs"></a>
@@ -97,7 +98,7 @@ Do the following steps to start your exploratory testing session and create bugs
 
    ![Save the bug or task](media/connected-mode-exploratory-testing/create-bugs-04.png)
 
-   You can also [add your findings to an existing similar bug](reference-qa.yml#addsimilar). 
+   You can also [add your findings to an existing similar bug](reference-qa.yml#can-i-edit-an-existing-bug-instead-of-creating-a-new-bug-when-using-the-test---feedback-extension). 
 
 1. View a list of all your activities in reverse chronological order
    in the **Session timeline** page. The timeline shows all the screenshots, videos, notes, the work items such as bugs, tasks, and test cases you already
@@ -116,7 +117,7 @@ Do the following steps to start your exploratory testing session and create bugs
 
    ![Screenshot of the bug or task.](media/connected-mode-exploratory-testing/create-bugs-10.png)
 
-[How do I play the video recordings I created with the extension?](reference-qa.yml#recording-playback)
+[How do I play the video recordings I created with the extension?](reference-qa.yml#how-do-i-play-the-video-recordings-i-created-with-the-extension)
  
 <a name="create-testcase"></a>
 
@@ -159,4 +160,4 @@ After you file bugs, create tasks, or create test cases, they show up in the "Re
 
 See how you can [view your sessions and get insights](insights-exploratory-testing.md).
 
-[How do I play the video recordings I created with the extension?](reference-qa.yml#recording-playback)
+[How do I play the video recordings I created with the extension?](reference-qa.yml#how-do-i-play-the-video-recordings-i-created-with-the-extension)

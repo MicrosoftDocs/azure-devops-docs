@@ -4,19 +4,20 @@ titleSuffix: Azure Repos
 description: Learn about different ways to list, filter, and open Git pull requests in Azure Repos.
 ms.assetid: 4C9DFD24-E894-454A-A080-DA511C90CA74
 ms.service: azure-devops-repos
-ms.topic: conceptual
-ms.author: vijayma
-author: vijayma
+ms.topic: how-to
 ms.date: 03/31/2022
 monikerRange: '<= azure-devops'
 ms.subservice: azure-devops-repos-git
 ms.custom: devx-track-azurecli
+ai-usage: ai-assisted
 ---
 
 # View, filter, and open pull requests
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 [!INCLUDE [version-vs-gt-eq-2019](../../includes/version-vs-gt-eq-2019.md)]
+
+[!INCLUDE [ai-assistance-callout](../../includes/ai-assistance-callout.md)]
 
 You create pull requests (PRs) to [review](review-pull-requests.md) and [merge](complete-pull-requests.md) code changes in a [Git repository on Azure Repos](../../organizations/projects/create-project.md#add-a-repository-to-your-project). Team members and stakeholders can review changes and give feedback before merging the code into the target branch. Reviewers can also comment on changes and vote to approve or reject the code.
 
@@ -34,7 +35,7 @@ You can list PRs by using the Azure DevOps project website, Visual Studio, or th
 
 # [Browser](#tab/browser)
 
-::: moniker range=">= azure-devops-2019"
+::: moniker range="<=azure-devops"
 
 1. To list PRs in a specific repository in a project, [go to that project](../../project/navigation/go-to-project-repo.md) in the web portal and select **Repos** > **Pull requests**.
 
@@ -57,7 +58,6 @@ You can list PRs by using the Azure DevOps project website, Visual Studio, or th
 ::: moniker-end
 
  
-
 
  
 
@@ -125,7 +125,6 @@ az repos pr list [--creator]
 
 The following command lists all PRs in the repository, regardless of status, and shows the output in a table. The example uses the default configuration `az devops configure --defaults organization=https://dev.azure.com/fabrikamprime project="Fabrikam Fiber"`.
 
-
 ```azurecli
 az repos pr list --status all --output table
 
@@ -158,7 +157,7 @@ Filtering the PR list helps you find and organize PRs to prioritize the most imp
 
 # [Browser](#tab/browser)
 
-::: moniker range=">= azure-devops-2019"
+::: moniker range="<=azure-devops"
 
 To filter the PR list, on the **Pull requests** page, select the **Filter** icon at upper right. Then select **Target branch** or other column header, and select the branch or other value you want to filter on.
 
@@ -181,7 +180,7 @@ To change the parameters of the customized views, select the **Customize** butto
 
 ::: moniker-end
 
-::: moniker range=">= azure-devops-2020"
+::: moniker range="<=azure-devops"
 
 On a PR **Files** tab, you can use several filters to select files and comments for faster reviews. Select **Filter**, and then select among the options.
 
@@ -228,7 +227,6 @@ az repos pr list --creator "My Name" --status all --top 1
 
 [!INCLUDE [temp](../../includes/note-cli-not-supported.md)]
 
-
 ***
 
 <a id="open-pr"></a>
@@ -257,9 +255,7 @@ In Visual Studio 2019, you can check out a PR's source branch directly from the 
 
 ![Screenshot that shows Checkout source branch.](./media/view-pull-requests/checkout-pr-source-branch.png)
 
-
 [!INCLUDE [temp](includes/note-new-git-tool.md)]
-
 
 # [Azure DevOps CLI](#tab/azure-devops-cli)
 
@@ -330,9 +326,6 @@ az repos pr checkout --id 21
 [!INCLUDE [temp](../../includes/note-cli-not-supported.md)]
 
 ***
-
-
-
 
 To review changes, make comments or suggestions, or approve or vote on the PR, see [Review pull requests](review-pull-requests.md).
 

@@ -1,15 +1,15 @@
 ---
 title: Switch to another Microsoft Entra ID
 titleSuffix: Azure DevOps Services
-ms.custom: engagement-fy23
 description: Learn how to change or switch your organization connection to a different Microsoft Entra ID.
 ms.subservice: azure-devops-organizations
 ms.assetid: 629a48b6-b2ab-4706-8256-d187c8ed5ce7
 ms.topic: how-to
 ms.author: chcomley
 author: chcomley
-ms.date: 11/08/2024
+ms.date: 01/26/2026
 monikerRange: 'azure-devops'
+ms.custom: engagement-fy23, sfi-image-nochange, support-driven-update
 ---
 
 # Change your organization connection to a different Microsoft Entra ID
@@ -35,8 +35,14 @@ For more information about using Microsoft Entra ID with Azure DevOps, see the [
 
 If you [add any new custom domains](/azure/active-directory/fundamentals/add-custom-domain) to your Microsoft Entra directory, contact [Support](https://azure.microsoft.com/support/devops/) before you migrate customers over to the new custom domain as this action breaks the mapping for existing identities.
 
-> [!IMPORTANT]
-> After the transfer, users and groups who inherit membership and permissions from a Microsoft Entra group no longer inherit those permissions. Microsoft Entra groups added to your Azure DevOps organization won't be transferred and cease to exist in your organization when the Microsoft Entra connection is changed. All permissions and membership relationships associated with these Microsoft Entra groups also cease to exist after the transfer.
+## Impact on Microsoft Entra groups and access
+
+> [!IMPORTANT]  
+> Changing your Microsoft Entra connection significantly impacts group-based access and licensing:
+>
+> - **Microsoft Entra groups**: The system doesn't transfer Microsoft Entra groups added to your Azure DevOps organization when you change the Microsoft Entra connection. These groups cease to exist in your organization. All permissions and membership relationships associated with these Microsoft Entra groups also cease to exist after you complete the transfer.
+> - **Project access**: If you grant access to projects through membership in a Microsoft Entra group, users lose this access and you must grant access individually or through different groups in the new directory.
+> - **License assignment**: If you assign licenses via Microsoft Entra group-based licensing rules, these assignments are lost when you transfer.
 
 <a name='change-the-azure-ad-connection'></a>
 
@@ -76,10 +82,11 @@ If you [add any new custom domains](/azure/active-directory/fundamentals/add-cus
 
 [!INCLUDE [inform-users-microsoft-entra-change](includes/inform-users-microsoft-entra-change.md)]
 
-## Related articles
+## Related content
 
+- [Connect your organization to Microsoft Entra ID](connect-organization-to-azure-ad.md)
 - [Rename a project](../projects/rename-project.md)
 - [Rename an organization](rename-organization.md)
-- [Get a list of organizations backed by Microsoft Entra ID](get-list-of-organizations-connected-to-azure-active-directory.md)
+- [Get a list of organizations backed by Microsoft Entra ID](get-list-of-organizations-connected-to-microsoft-entra-id.md)
 - [Restrict organization creation with tenant policy](azure-ad-tenant-policy-restrict-org-creation.md)
 - [Disconnect your organization from Microsoft Entra ID](disconnect-organization-from-azure-ad.md)

@@ -5,9 +5,9 @@ description: A sample that shows how to use a host navigation service with an Az
 ms.assetid: d23bf2e9-f5c6-4108-8af5-fab62c848ca9
 ms.author: chcomley
 author: chcomley
-ms.topic: article
+ms.topic: sample
 monikerRange: '<= azure-devops'
-ms.date: 08/17/2016
+ms.date: 04/03/2026
 ---
 
 ```js
@@ -19,4 +19,4 @@ ms.date: 08/17/2016
         });
     });
 ```
-See [Host navigation](../../../../../extend/develop/host-navigation.md) for additional samples.
+See [Work with URLs](../../../../../extend/develop/work-with-urls.md) for additional samples.

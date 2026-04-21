@@ -1,8 +1,9 @@
 ---
 author: ckanyika
-ms.author: ckanyika
+ms.author: glmorale
 ms.date: 12/16/2022
 ms.topic: include
+ms.custom: sfi-image-nochange
 ---
 ### Container Registry service connections can now use Azure Managed Identities
 

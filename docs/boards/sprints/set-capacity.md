@@ -3,13 +3,13 @@ title: Set the team sprint capacity in Azure Boards
 titleSuffix: Azure Boards 
 description: In this tutorial, determine team capacity, adjust work to fit team capacity, and set capacity for a sprint in Azure Boards.
 ms.service: azure-devops-boards
-ms.custom: boards-sprints
+ms.custom: boards-sprints, copilot-scenario-highlight
 ms.assetid: 
 ms.author: chcomley
 author: chcomley
 ms.topic: tutorial
 monikerRange: '<= azure-devops'
-ms.date: 10/14/2024
+ms.date: 02/28/2026
 #customer intent: As a team member, I want to understand how to set capacity for a sprint and how to use capacity to track progress durning a sprint.
 ---
 
@@ -21,9 +21,11 @@ ms.date: 10/14/2024
 
 <a id="set-capacity">  </a>
 
-While velocity correlates to how your team estimates requirements, *capacity* correlates to actual task time. Time is calculated in either hours or days. Capacity takes into consideration the variation in work hours by team members. It also considers holidays, vacation days, and nonworking days.
+While velocity correlates to how your team estimates requirements, *capacity* correlates to actual task time. Time is calculated in either hours or days. Capacity takes into consideration the variation in work hours by team members, as well as holidays, vacation days, and nonworking days.
 
 Because days off and time available for each team member might vary from sprint to sprint, set capacity for each sprint. The capacity tool helps you make sure your team isn't overcommitted or undercommitted for the sprint. As you work day-to-day, you see if your team is on track.
+
+[!INCLUDE [ai-assistance-mcp-server-tip](../../includes/ai-assistance-mcp-server-tip.md)]
 
 In this article, learn how to do the following tasks.
 
@@ -41,7 +43,7 @@ To set up sprints yet for your team, see [Manage sprint timelines](define-sprint
 | Category | Requirements |
 |----------------------|----------------------|
 | **Project access**   | [Project member](../../organizations/security/add-users-team-project.md). |
-| **Permissions**      | - To view capacity: Be a member of the [**Contributors**](../../organizations/security/add-users-team-project.md) security group in your project. <br/> - To edit capacity: Be a member of the [**Project Administrators**](../../organizations/security/change-project-level-permissions.md) security group or a [**Team Administrator**](../../organizations/settings/add-team-administrator.md) of the team. |
+| **Permissions**      | - To view capacity: Member of the [**Contributors**](../../organizations/security/add-users-team-project.md) security group in your project. <br/> - To edit capacity: Member of the [**Project Administrators**](../../organizations/security/change-project-level-permissions.md) security group or a [**Team Administrator**](../../organizations/settings/add-team-administrator.md) of the team. |
 | **Access levels**    | To view or set capacity: At least **[Basic](../../organizations/security/access-levels.md)**[ access](../../organizations/security/access-levels.md). Users with **Stakeholder** access can't view or set capacity. For more information, see [Stakeholder access quick reference](../../organizations/security/stakeholder-access.md). |
 
 <a id="customize-activity-list">  </a> 
@@ -70,7 +72,7 @@ Most teams specify capacity in hours. You can also specify it in days or any oth
 
 ## Open a sprint backlog for a team
 
-::: moniker range=">= azure-devops-2019"
+::: moniker range="<=azure-devops"
 
 1. From your web browser, open your product backlog. Check that you selected the right project. Select **Boards** > **Sprints**, select the correct team from the team selector menu, and choose **Capacity**.
 
@@ -94,13 +96,13 @@ Most teams specify capacity in hours. You can also specify it in days or any oth
 
 From the **Capacity** page, you can add team members, enter the team time off, and set capacity and days off for each team member.  
 
-::: moniker range=">= azure-devops-2019"
+::: moniker range="<=azure-devops"
 
 1. If you don't see your team members listed, add them. Choose the :::image type="icon" source="../../media/icons/actions-icon.png" border="false"::: action icon and select **Add all team members**. For this feature to work, users must be added to the team.  
 
    :::image type="content" source="media/capacity/add-team-members.png" alt-text="Screenshot of Capacity page, Add team members.":::
 
-   The **Add all team members** action retrieves a maximum of 100 team members. If you have more team members to add, you can add them one-by-one by choosing **Add user**.
+   The **Add all team members** action retrieves a maximum of 100 team members. If you have more team members to add, you can add them individually by choosing **Add user**.
 
 2. If you need to add other contributors to your project, choose the :::image type="icon" source="../../media/icons/blue-add-icon.png" border="false"::: **Add user**.  
 
@@ -111,7 +113,7 @@ From the **Capacity** page, you can add team members, enter the team time off, a
    In the **Days off for** dialog, select the start and end days during the sprint for the team member or team days off.
 
    > [!TIP]
-   > Your sprint planning and tracking tools automatically consider days off when calculating capacity and sprint burndown. You only have to indicate planned days off for the team. For more information, see [Set capacity for the team and team members](../../boards/sprints/set-capacity.md#set-capacity-for-the-team-and-team-members).
+   > Your sprint planning and tracking tools automatically consider days off when calculating capacity and sprint burndown. You only need to indicate planned days off for the team. For more information, see [Set capacity for the team and team members](../../boards/sprints/set-capacity.md#set-capacity-for-the-team-and-team-members).
 
 4. Set the **Activity/Discipline** and **Capacity** per day for each team member. If you track capacity simply by team member, you can leave the Activity or Discipline selection unassigned.
 
@@ -125,11 +127,11 @@ From the **Capacity** page, you can add team members, enter the team time off, a
 
 ## Copy capacity planning from the previous sprint 
 
-By copying the capacity from the previous sprint, you save time. With the basics defined, all you have to do is adjust the capacity based on individual and team days off and capacity allocation per activity.
+By copying the capacity from the previous sprint, you save time. With the basics defined, all you need to do is adjust the capacity based on individual and team days off and capacity allocation per activity.
 
 Only the capacity-per-day value and activity value are copied over. Individual and team days off remain unset. The copy operation always copies the latest updates made to the previous sprint. So you can repeat the copy operation if you made changes to the previous sprint that you want to copy to the latest sprint.
 
-::: moniker range=">= azure-devops-2019"
+::: moniker range="<=azure-devops"
 
 :::image type="content" source="media/capacity/copy-capacity-from-previous-sprint-vert.png" alt-text="Screenshot of Copy capacity.":::
 
@@ -141,7 +143,7 @@ Only the capacity-per-day value and activity value are copied over. Individual a
 
 To remove a user, choose the option from the users :::image type="icon" source="../../media/icons/actions-icon.png" border="false"::: action menu. This action doesn't remove the user from the team.
 
-::: moniker range=">= azure-devops-2019"
+::: moniker range="<=azure-devops"
 
 :::image type="content" source="media/capacity/remove-user-agile.png" alt-text="Screenshot of Copy capacity Remove user from capacity list.":::
 
@@ -153,7 +155,7 @@ As you define tasks and estimate the work, capacity charts start to fill in for 
 
 You also see a roll-up of the remaining work required to complete each requirement or bug.  
 
-::: moniker range=">= azure-devops-2019"
+::: moniker range="<=azure-devops"
 
 :::image type="content" source="media/capacity/work-details.png" alt-text="Screenshot of work details.":::
 
@@ -161,7 +163,7 @@ You also see a roll-up of the remaining work required to complete each requireme
 
 From this view, you can see which individuals are at or near capacity. Teams can determine if work needs to be moved out of the sprint or to reassign tasks.  
 
-::: moniker range=">= azure-devops-2019"
+::: moniker range="<=azure-devops"
 
 > [!TIP]  
 > Define tasks that take a day or less to complete. This helps mitigate the risks that come from poor estimates.
@@ -197,7 +199,29 @@ If your name isn't listed in the capacity view, you need to be added as a team m
 > [!div class="nextstepaction"]
 > [4. Adjust work](adjust-work.md)
 
-## Related articles
+<a id="use-ai-assistance"></a>
+
+## Use AI to manage sprint capacity
+
+If you have the [Azure Boards MCP Server](../../mcp-server/mcp-server-overview.md) connected to your AI agent in agent mode, you can use natural language prompts to review capacity and workload for your sprint.
+
+| Task | Example prompt |
+|------|----------------|
+| Check capacity vs. work | `Show the total remaining work vs. capacity for Sprint 12 on <Contoso Team>` |
+| Find overloaded members | `List team members whose assigned remaining work exceeds their capacity in the current sprint` |
+| Find unassigned tasks | `List all tasks in the current sprint that have no assignee for <Contoso Team>` |
+| Review work distribution | `Show remaining work grouped by team member for the current sprint in <Contoso Team>` |
+| Account for days off | `<Jamal> has 3 days off next week. What is his effective capacity for Sprint 12 if his daily rate is 6 hours?` |
+| Identify underutilized members | `Which team members on <Contoso Team> have less than 50% of their Sprint 12 capacity allocated to tasks?` |
+| Plan capacity for activity types | `Show remaining work by activity type (Development, Testing, Design) for each team member in the current sprint` |
+| Capacity trend across sprints | `Compare capacity utilization for <Contoso Team> across the last 4 sprints — show assigned work as a percentage of capacity` |
+| Flag capacity mismatches | `Find tasks in Sprint 12 assigned to people who aren't members of <Contoso Team>` |
+| Simulate adding a member | `If we add a developer with 6 hours/day capacity to <Contoso Team> for Sprint 13, how would the workload distribution change?` |
+
+> [!NOTE]
+> Agent mode and the MCP Server use natural language, so you can adjust these prompts or ask follow-up questions to refine the results.
+
+## Related content
 
 - [Configure and monitor sprint burndown](../../report/dashboards/configure-sprint-burndown.md)
 - [View and configure team velocity](../../report/dashboards/team-velocity.md)

@@ -3,10 +3,7 @@ title: Azure Pipelines baseline architecture
 description: This architecture illustrates building a continuous integration and deployment pipeline using Azure Pipelines.
 ms.date: 01/24/2025
 ms.topic: example-scenario
-ms.custom:
-    - devops
-    - app-development
-    - internal-intro
+ms.custom: devops, app-development, internal-intro
 name: CI/CD baseline architecture with Azure Pipelines
 azureCategories:
   - developer-tools

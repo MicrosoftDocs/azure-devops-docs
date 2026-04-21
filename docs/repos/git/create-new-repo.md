@@ -26,7 +26,7 @@ Azure DevOps projects contain Git repositories, work items, builds, and releases
 
 ## Create a repo using the web portal 
 
-::: moniker range=">= azure-devops-2019"
+::: moniker range="<=azure-devops"
 
 1. Open the **Repos** page in your project by browsing to `https://dev.azure.com/OrganizationName`, hover your mouse over the name of your project, and select the **Repos** icon. You can select it from the **All** projects list, or from the **Recent** projects list if you accessed it recently.
 
@@ -51,13 +51,11 @@ Azure DevOps projects contain Git repositories, work items, builds, and releases
 
 ::: moniker-end
 
-
-
 ## Clone the repo to your computer
 
 To work with a Git repo, you clone it to your computer. Cloning a repo creates a complete local copy of the repo for you to work with. Cloning also downloads all [commits](commits.md) and [branches](./create-branch.md) in the repo and sets up a named relationship with the repo on the server. Use this relationship to interact with the existing repo, pushing and pulling changes to share code with your team.
 
-::: moniker range=">= azure-devops-2019"
+::: moniker range="<=azure-devops"
 
 1. From your web browser, open the team project for your organization in Azure DevOps and select **Repos** > **Files**. If you don't have a team project, [create one now](../get-started/sign-up-invite-teammates.md). 
 
@@ -84,8 +82,6 @@ To work with a Git repo, you clone it to your computer. Cloning a repo creates a
    Keep this command window open, because you use it in the following steps.
 
 ::: moniker-end
-
-
 
 ## Work with the code
 

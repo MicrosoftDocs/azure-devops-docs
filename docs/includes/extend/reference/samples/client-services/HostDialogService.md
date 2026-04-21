@@ -5,7 +5,7 @@ description: A sample that shows how to use a host dialog service with an Azure 
 ms.assetid: 6efd62af-d344-4af2-aecf-663e23aca5d3
 ms.author: chcomley
 author: chcomley
-ms.topic: article
+ms.topic: sample
 monikerRange: '<= azure-devops'
 ms.date: 08/25/2016
 ---

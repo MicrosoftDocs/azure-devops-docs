@@ -1,13 +1,15 @@
 ---
 ms.subservice: azure-devops-ecosystem
+ms.custom: UpdateFrequency3
 title: Data and Setting Storage | Extensions for Azure DevOps
 description: DevOps extensions can store user preferences and complex data structures just like other project data. Use REST APIs or a Microsoft client service to do so.
 ms.assetid: 4662d1cf-ddb6-4079-8eb4-6f553861c1b4
-ms.topic: conceptual
+ms.topic: overview
 monikerRange: '<= azure-devops'
 ms.author: chcomley
 author: chcomley
-ms.date: 11/28/2023
+ms.date: 04/03/2026
+ai-usage: ai-assisted
 ---
 
 # Data storage
@@ -20,7 +22,7 @@ There are two methods to engage with the data storage service: through REST APIs
 
 [!INCLUDE [rest-api-docs-rollout](../../includes/rest-api-docs-rollout.md)]
 
-### What you can store
+## Supported data types
 
 The service is designed to let you store and manage two different types of data:
 
@@ -29,7 +31,7 @@ The service is designed to let you store and manage two different types of data:
 
 A collection is as an indexed container for documents. A document is a JSON blob that belongs to a collection. Other than a few reserved property names, you control and manage the schema of these documents.
 
-### How you can scope data
+## Data scoping
 
 Settings and document collections can be scoped to either the:
 

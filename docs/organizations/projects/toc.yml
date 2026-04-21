@@ -19,9 +19,6 @@
 - name: When to add a team or project
   href: about-projects.md
   displayname: private, public, customize, configure, Agile, connect
-- name: What do I get with a project?
-  href: ../../user-guide/services.md?toc=/azure/devops/organizations/toc.json
-  displayname: features, services, dashboards, plan, track
 - name: Add users or groups to a project
   displayName: create, new, account, default, custom, access, permission
   href: ../security/add-users-team-project.md

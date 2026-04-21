@@ -3,7 +3,7 @@ title: Work item recycle bin improvements
 author: danhellem
 ms.author: dahellem
 ms.date: 01/20/2022
-ms.topic: article
+ms.topic: whats-new
 ms.service: azure-devops
 ms.subservice: azure-devops-release-notes
 description: Work item recycle bin improvements

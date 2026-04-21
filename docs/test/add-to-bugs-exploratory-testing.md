@@ -5,10 +5,11 @@ ms.assetid: 0C61F157-452E-4DE5-8998-8DDBD9D44969
 ms.service: azure-devops-test-plans
 ms.custom: UpdateFrequency3
 ms.topic: how-to
-ms.author: jeom
+ms.author: pliaros
 author: rohit-batra
 monikerRange: '<= azure-devops'
 ms.date: 09/14/2021
+ms.update-cycle: 1095-days
 ---
 
 # Add findings to existing bugs with exploratory testing
@@ -61,7 +62,7 @@ After you file bugs, create tasks, or create test cases, they show up in the "Re
 
 See how you can [view your sessions and get insights](insights-exploratory-testing.md).
 
-## Related articles
+## Related content
 
 * [Use the Test &amp; Feedback extension in Connected mode](connected-mode-exploratory-testing.md)
 * [Explore work items with exploratory testing](explore-workitems-exploratory-testing.md)

@@ -7,8 +7,10 @@ ms.assetid: 882E6E07-F407-478A-9DCC-9324493CBE11
 ms.topic: how-to
 ms.author: chcomley
 author: chcomley
-ms.date: 10/23/2024
+ai-usage: ai-assisted
+ms.date: 03/03/2026
 monikerRange: 'azure-devops'
+ms.custom: sfi-image-nochange, copilot-scenario-highlight
 ---
 
 
@@ -16,14 +18,16 @@ monikerRange: 'azure-devops'
 
 [!INCLUDE [version-eq-azure-devops](../../includes/version-eq-azure-devops.md)]
 
-To control access to your team's critical resources and key business assets in Azure DevOps Services, use Microsoft services like Microsoft 365 or [Microsoft Entra ID](https://azure.microsoft.com/services/active-directory/). [Microsoft Entra ID works with your organization](access-with-azure-ad.md) to control access and authenticate users.
+To control access to your team's critical resources and key business assets in Azure DevOps Services, use Microsoft services like Microsoft 365 or [Microsoft Entra ID](/entra/fundamentals/whatis). [Microsoft Entra ID works with your organization](access-with-azure-ad.md) to control access and authenticate users.
 
 Organize your directory members with [Microsoft Entra groups](/azure/active-directory/fundamentals/active-directory-manage-groups) and manage permissions in bulk for your organization. Add these groups to built-in groups like Project Collection Administrators or Contributors, or to custom groups like your project management team. Microsoft Entra group members inherit permissions from the Azure DevOps group, so you don't have to manage group members individually.
 
 For more information on [Microsoft Entra ID benefits](/azure/active-directory/fundamentals/active-directory-whatis) and how to [control organization access with Microsoft accounts or Microsoft Entra ID](access-with-azure-ad.md), see the provided links.
 
 > [!NOTE]
-> Due to a functional limitation on Microsoft Graph, [service principals](../../integrate/get-started/authentication/service-principal-managed-identity.md) don't appear in any list of Microsoft Entra group members on Azure DevOps. Permissions set on any Microsoft Entra groups still apply to any service principals in the group that have been added to the organizations, even if they aren't displaying on the web UI.
+> Due to a functional limitation on Microsoft Graph, [service principals](../../integrate/get-started/authentication/service-principal-managed-identity.md) don't appear in any list of Microsoft Entra group members on Azure DevOps. Permissions set on any Microsoft Entra groups still apply to any service principals in the group that were added to the organizations, even if they aren't displaying on the web UI.
+
+[!INCLUDE [ai-assistance-mcp-server-tip](../../includes/ai-assistance-mcp-server-tip.md)]
 
 ## Prerequisites
 
@@ -88,7 +92,47 @@ For more information on [Microsoft Entra ID benefits](/azure/active-directory/fu
 
 Microsoft Entra ID changes might take up to 1 hour to be visible in Azure DevOps, but you can immediately [reevaluate your permissions](../security/request-changes-permissions.md#refresh-or-reevaluate-your-permissions).
 
-## Related articles
+## Configure just-in-time-access for admin groups
 
-- [Restrict organization creation with tenant policy](azure-ad-tenant-policy-restrict-org-creation.md)
+If you have [Project Collection Administrator](../../user-guide/manage-organization-collection.md) and [Project Administrator](../../user-guide/project-admin-tutorial.md) access, you can modify the configuration of your organization or project. To enhance security for these built-in administrator groups, consider implementing just-in-time access using a Microsoft Entra [Privileged Identity Management (PIM) group](/azure/active-directory/privileged-identity-management/concept-pim-for-groups). This approach allows you to grant elevated permissions only when needed, reducing the risk associated with permanent access.
+
+### Configure access 
+
+1. [Create a role-assignable group in Microsoft Entra ID](/azure/active-directory/roles/groups-create-eligible?tabs=ms-powershell&branch=main).
+2. [Add your Microsoft Entra group to the Azure DevOps group](/azure/devops/organizations/security/add-ad-aad-built-in-security-groups?view=azure-devops&branch=main&tabs=preview-page&preserve-view=true). 
+
+> [!NOTE]
+>  When you configure just-in-time access using a Microsoft Entra Privileged Identity Management (PIM) group, ensure that any user with elevated access also retains standard access to the organization. This way, they can view the necessary pages and refresh their permissions as needed.
+
+### Use access 
+
+1. [Activate your access](/azure/active-directory/privileged-identity-management/groups-activate-roles). 
+2. [Refresh your permissions](../security/request-changes-permissions.md#refresh-or-reevaluate-your-permissions) in Azure DevOps. 
+3. Take the action requiring administrator access. 
+
+> [!NOTE]
+> Users have elevated access in Azure DevOps for up to 1 hour after their PIM group access gets deactivated.
+
+<a id="use-ai-assistance"></a>
+
+## Use AI to manage Microsoft Entra group access
+
+If you have the [Azure DevOps MCP Server](../../mcp-server/mcp-server-overview.md) configured, you can use AI assistants to manage Microsoft Entra group access in Azure DevOps using natural language prompts. The MCP Server provides your AI assistant with secure access to your Azure DevOps data, allowing you to query group membership, check permissions, and manage group assignments without navigating through the web interface.
+
+### Example prompts for managing Microsoft Entra groups
+
+| Task | Example prompt |
+|------|----------------|
+| Map Entra groups to project roles | `Add the <entra-group-name> Microsoft Entra group to the Contributors group in the <project-name> project in <organization-name>` |
+| Audit nested group permissions | `Show the effective permissions for the <entra-group-name> group in <project-name>, including any inherited from parent groups` |
+| Find groups with excessive access | `List all Microsoft Entra groups in <organization-name> that have Project Collection Administrator or Project Administrator permissions` |
+| Compare group access across projects | `Show me which projects the <entra-group-name> group has access to in <organization-name> and at what permission level` |
+| Clean up stale group assignments | `Find Microsoft Entra groups in <organization-name> that have no active members or whose members haven't signed in for 90 days` |
+| Set up cross-project team access | `Add the <entra-group-name> group to the Contributors role in projects <project-1>, <project-2>, and <project-3> in <organization-name>` |
+
+> [!TIP]
+> If you're using Visual Studio Code, [agent mode](/visualstudio/ide/copilot-chat-context#agent-mode) is especially helpful for auditing group membership and permissions across multiple projects.
+> - To avoid using stale or cached data from previous queries, add to your prompt, `Do not use previously fetched data`.
+
+## Related content
 - [Manage conditional access](change-application-access-policies.md)

@@ -1,26 +1,29 @@
 ---
-title: Configure burndown or burnup widget
+title: Configure a burndown or burnup widget
 titleSuffix: Azure DevOps
 description: Learn how to configure a burndown or burnup widget to create charts that you add to a dashboard to track progress across one or more teams in Azure DevOps.
-ms.custom: dashboards
+ms.custom: dashboards, copilot-scenario-highlight
 ms.subservice: azure-devops-analytics
 ms.topic: how-to
 ms.author: chcomley
 author: chcomley
-monikerRange: '>= azure-devops-2019'
-ms.date: 09/25/2024
-#customer intent: As a team member, I want to create burndown and burnup charts that show team progress and add them as widgets to a dashboard.
+monikerRange: "<= azure-devops"
+ms.date: 03/18/2026
+ai-usage: ai-assisted
+#customer intent: As a team member, I want to add burndown and burnup charts to a dashboard so that I can track team progress.
 ---
 
 # Configure a burndown or burnup widget
 
-[!INCLUDE [version-gt-eq-2019](../../includes/version-gt-eq-2019.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
-The burndown and burnup widgets give you flexibility to create charts for any type of scope or number of teams in specified time periods. *Burndown charts* focus on remaining work. *Burnup charts* focus on completed work. Both chart types help your team determine whether you're on track to complete your work by the end date. For an overview of all burndown and burnup charts available to you, see [Burndown and burnup guidance](burndown-guidance.md).
+In Azure DevOps dashboards, burndown and burnup widgets give you flexibility to create charts for any type of scope or number of teams in specified time periods. *Burndown charts* focus on remaining work. *Burnup charts* focus on completed work. Both chart types help your team determine whether you're on track to complete your work by the end date. For an overview of all burndown and burnup charts available to you, see [Burndown and burnup guidance](burndown-guidance.md).
 
-This diagram shows a Burndown widget configured to display a release burndown.
+[!INCLUDE [ai-assistance-mcp-server-tip](../../includes/ai-assistance-mcp-server-tip.md)]
 
-:::image type="content" source="media/burndown-widget/burndownup-release-burndown.png" alt-text="Screenshot of a release burndown widget.":::
+The following screenshot shows a burndown widget configured to display a release burndown.
+
+:::image type="content" source="media/burndown-widget/burndownup-release-burndown.png" alt-text="Screenshot of a burndown widget. Bars show remaining work decreasing over sprints. Lines show burndown decreasing and scope increasing.":::
 
 ## Prerequisites
 
@@ -28,104 +31,140 @@ This diagram shows a Burndown widget configured to display a release burndown.
 
 ## Add the widget to your dashboard
 
-Use the following procedure to add a burndown or burnup widget to your dashboard.
+1. Go to your project and select **Dashboards**, and then select :::image type="icon" source="../../boards/backlogs/office/media/icons/edit.png" border="false"::: **Edit**.
 
-::: moniker range=">= azure-devops-2020"
+   :::image type="content" source="media/burndown-widget/select-dashboards-edit.png" alt-text="Screenshot of Azure DevOps that shows an empty dashboard. Dashboards and Edit are highlighted." lightbox="media/burndown-widget/select-dashboards-edit.png":::
 
-1. Sign in to your organization (`https://dev.azure.com/{yourorganization}`).
-1. Go to your project. Select **Dashboards**, and then :::image type="icon" source="../../boards/backlogs/office/media/icons/edit.png" border="false"::: **Edit**.
+1. Search for **Burndown** or **Burnup**, select the widget, and then select **Add**.
 
-   :::image type="content" source="media/burndown-widget/select-dashboards-edit.png" alt-text="Screenshot showing sequence of selection for Dashboards, Edit function." lightbox="media/burndown-widget/select-dashboards-edit.png":::
-
-1. Select a widget, and then **Add**.
-
-   :::image type="content" source="media/burndown-widget/add-widget.png" alt-text="Screenshot showing widget selection pane and blue Add button.":::
-
-::: moniker-end
-
-::: moniker range="azure-devops-2019"
-
-1. [Enable or install Analytics](analytics-extension.md).
-1. [Add the widget to your dashboard](./add-widget-to-dashboard.md).  
-1. Select :::image type="icon" source="../../media/icons/actions-icon.png" border="false"::: **More actions** and **Configure**.
-
-::: moniker-end
+   :::image type="content" source="media/burndown-widget/add-widget.png" alt-text="Screenshot of the Add Widget dialog. The Burndown widget and the Add button are highlighted.":::
 
 ## Configure burndown or burnup widget
 
-Do the following steps to configure both widget types. The only difference between the burndown and burnup widgets is that the burnup widget plots *work completed* and the burndown widget plots *work remaining*. For more information, see how to [interpret a burndown or burnup chart](#interpret-a-burndown-or-burnup-chart), later in this article.
+To configure either widget type, take the following steps. The only difference between the burndown and burnup widgets is that the burnup widget plots *work completed* and the burndown widget plots *work remaining*.
 
 1. On the widget, select :::image type="icon" source="../../boards/media/icons/gear_icon.png" border="false"::: **Configure**.
-1. Complete configuration information, described in the following table, and then select **Save**.
 
-:::moniker range="=azure-devops-2022"
-
-[!INCLUDE [feature-added-2022-1](../../includes/feature-added-2022-1.md)]
-
-::: moniker-end
+1. Configure the settings described in the following sections, and then select **Save**.
 
 ::: moniker range=">= azure-devops-2022"
 
-| Configuration category | Guidance |
-|:-----------|:-----------|
-| Teams | To track progress across teams, add more teams. You can select teams from other projects, but the lists of selectable backlogs, work item types, and fields are based on your current project. Tracking across multiple projects only works if the [process](../..//boards/work-items/guidance/choose-process.md) for those projects is the same, or at least similar. |
-| Work items | **Backlog** includes all the work item types configured for that backlog. If your project is customized using a [Hosted XML process](../../organizations/settings/work/hosted-xml-process-model.md) and has a customized bug work item category name, the burndown and burnup widgets can't query for work items in that category. To query for bugs, the customized bug work item type must belong to the default **Bug category**, reference name `Microsoft.BugCategory`. |
-| Field criteria | Select field criteria to limit the work items that appear in the chart. Filtering is based on values assigned to fields as defined for each work item on the date within the tracking period. For more information, see [Filters that apply to historical data](../powerbi/analytics-historical-filtering.md). </br>Analytics-based charts are built based on the `WorkItemsSnapshot` entity set. Snapshot entity types are modeled as daily snapshots. Data aggregates based on assignments made as of the date they're assigned. So, if you want to filter a burndown or burnup widget based on field or tag assignments, assign them previous to the period you want to monitor. Otherwise, the widget doesn't recognize them until the date on which they're applied. You can filter on a null value for the **Field criteria**, which is consistent with a query using the same field criteria. |
-| Burndown on | Choose how you want to calculate burndown by **Count** of work items or by **Sum** based on a selected field. You can select from standard or custom fields of integer or decimal data type, such as **Story Points**, **Effort**, or  **Remaining Work**. Burndown works best when you aggregate size fields like Story Points. If you choose to burndown on fields that change during the sprint, like **Remaining Work for Tasks**, the calculation of *Items not Estimated* grows as items get closed. |
-| Time period |- **Start Date**: Determines the original scope baseline. The chart burns down from the original scope.<br/>- **% Complete** and **Total Scope Increase**: Calculated based on your original scope.<br/>- **End Date**: Specifies the target date of completion. Your goal is to burndown the original scope of work by the End Date. |
-| Plot interval | Select the intervals to plot between the **Start Date** and **End Date**. Average burndown is based on the selected interval. After you select the start date, set **Plot burndown by** to **Iteration**. The Average Burndown assumes that every interval is the same length and that the interval between the start date and the first month is a full month. Even if the length of time between start date and the first month's end date doesn't match your typical length of a month, the length is the same. For best results, enter a **Start Date** that is the same as the first month's start date, which is also true when plotting by weekly intervals. |
-| Advanced features |- **Show burndown**: Displays both the historical and projected future burndown.<br/>- **Show total scope**: Displays both the historical and projected scope increase.<br/>- **Show completed work**: It displays remaining work and completed work as stack bar.<br/>- **Plot remaining using work item type color**: Displays remaining work based on the work item type color, rather than the default blue color. If multiple work items are included, then it stacks colors by work item type.|
+### Teams
 
-::: moniker-end
+To track progress across teams, add more teams. You can select teams from other projects, but the lists of selectable backlogs, work item types, and fields are based on your current project. You can track progress across multiple projects only if the [process](../../boards/work-items/guidance/choose-process.md) for those projects is the same, or at least similar.
 
-::: moniker range="< azure-devops-2022"
+[!INCLUDE [note-delete-area-paths](../../boards/includes/note-delete-area-paths.md)]
 
-| Configuration category | Guidance |
-|:----------------------|:-------|
-| Teams | You can select teams from other projects, but the lists of selectable backlogs, work item types, and fields are based on your current project. You can only track across multiple projects if the [process](../..//boards/work-items/guidance/choose-process.md) for those projects is the same. |
-| Work items | **Backlog** includes all the work item types configured for that backlog. If you select the **Stories** backlog, you have another option: **Include bugs on the Stories backlog**. Enter a checkmark in the box to include bugs along with user stories in your burndown. This option's available for the PBI Backlog for Scrum projects and the Requirements backlog for CMMI projects. If your project is customized using a [Hosted XML process](../../organizations/settings/work/hosted-xml-process-model.md) and has a customized bug work item category name, then the burndown and burnup widgets can't query for work items in that category. To query for bugs, the customized bug work item type must belong to the default **Bug category**, reference name `Microsoft.BugCategory`. |
-| Field criteria | Select field criteria to limit the work items that appear in the chart. Filtering is based on values assigned to fields as defined for each work item on the date within the tracking period. For more information, see [Filters that apply to historical data](../powerbi/analytics-historical-filtering.md). </br>Analytics-based charts are built based on the `WorkItemsSnapshot` entity set. Snapshot entity types are modeled as daily snapshots. Data aggregates based on assignments made as of the date they're assigned. So, if you want to filter a burndown or burnup widget based on field or tag assignments, assign them previous to the period you want to monitor. Otherwise, the widget doesn't recognize them until the date on which they're applied. You can filter on a null value for the **Field criteria**, which is consistent with a query using the same field criteria. |
-| Burndown on | Choose how you want to calculate burndown by **Count** of work items or by **Sum** based on a selected field. You can select from standard or custom fields of integer or decimal data type, such as **Story Points**, **Effort**, or  **Remaining Work**. Burndown works best when you aggregate size fields like Story Points. If you choose to burndown on fields that change during the sprint, like **Remaining Work for Tasks**, the calculation of "Items not Estimated" grows as items get closed. |
-| Time period |- **Start Date**: Determines the original scope baseline. The chart burns down from the original scope.<br/>- **% Complete** and **Total Scope Increase**: Calculated based on your original scope.<br/>- **End Date**: Specifies the target date of completion. Your goal is to burndown the original scope of work by the End Date. |
-| Plot interval | Average burndown gets based on the selected interval, which can be daily, weekly, monthly, or based on an iteration schedule. The Average Burndown assumes that every interval is the same length. For example, the interval between the start date and the first month is a full month, even if the length of time between Start Date and the first month's end date doesn't match your typical length of a month. For best results, enter a Start Date that is the same as the first month's start date, which is also true for weekly intervals. |
-| Advanced features |- **Show burndown**: Displays both the historical and projected future. burndown.<br/>- **Show total scope**: Displays both the historical and projected scope increase.<br/>- **Show completed work**: Displays remaining work and completed work as stack bar.<br/>- **Plot remaining using work item type color**: Displays remaining work based on the work item type color, rather than the default blue color. If multiple work items are included, then it stacks colors by work item type. |
+### Work items
+
+Select the type of backlog or work item to burn down. The **Backlog** category includes all work item types configured for that backlog.
+
+> [!NOTE]
+> If you use a [hosted XML process](../../organizations/settings/work/hosted-xml-process-model.md) with a customized bug category name, the burndown and burnup charts can't query for work items in that category. Your custom bug work item type must belong to the default **Bug category** (reference name `Microsoft.BugCategory`).
+
+### Field criteria
+
+Select field criteria to limit the work items that appear in the chart. Filtering is based on the values assigned to fields at the time of each revision within the tracking period — values aren't applied retroactively. You can filter on null values, with results consistent with queries using the same criteria.
+
+For more information, see [Filters that apply to historical data](../powerbi/analytics-historical-filtering.md).
+
+> [!IMPORTANT]
+> Assign fields or tags before the start of the monitoring period. The widget uses daily snapshots and only recognizes assignments from the date they're applied.
+
+### Burndown on
+
+Select how to calculate burndown:
+
+- **Count**: Uses a count of work items.
+- **Sum**: Totals a numeric field such as **Story Points**, **Effort**, or **Remaining Work**. You can select any standard or custom field with an integer or decimal data type.
+
+Burndown works best when you aggregate size fields like **Story Points**. If you burn down on fields that change during the sprint (like **Remaining Work for Tasks**), the **Items not Estimated** value grows as items get closed.
+
+### Time period
+
+- **Start date**: Determines the original scope baseline. The chart burns down from the original scope.
+- **End date**: Specifies the target completion date. Your goal is to burn down the original scope by this date.
+
+### Plot interval
+
+Select the interval to plot in your chart's date range. To plot by iteration instead of by date, set the **Plot burndown by** value to **Iteration**.
+
+Average burndown calculations assume every interval is the same length. For best results, set the **Start date** to align with the first interval boundary (for example, the start of the first month or week).
+
+### Advanced features
+
+| Option | Description |
+|--------|-------------|
+| **Show total scope** | Shows historical and projected scope increase. |
+| **Show Resolved work items as Completed** | Treats work items in `Resolved` state (or any state mapped to the `Completed` category) as completed for chart metrics. This setting affects only the chart display, not your process configuration. |
+
+**Burndown chart options:**
+
+| Option | Description |
+|--------|-------------|
+| **Show burndown** | Shows historical and projected burndown (remaining work). |
+| **Show completed work** | Shows completed work as stacked bars by work item type. |
+| **Plot remaining work using work item type color** | Colors remaining work by work item type. |
+
+**Burnup chart options:**
+
+| Option | Description |
+|--------|-------------|
+| **Show burnup** | Shows historical and projected burnup (completed work). |
+| **Show remaining work** | Shows remaining work as stacked bars by work item type. |
+| **Plot completed work using work item type color** | Colors completed work by work item type. |
 
 ::: moniker-end
 
 ## Interpret a burndown or burnup chart
 
-Your team can get immediate insight as to their progress and learn about their rhythm and behavior. Most burndown lines aren't straight lines. The team never moves at exactly one fixed velocity. Scope increases occur over time. For example, if your projected completion date moves, you might want to ask one of these questions:
+After you save, the widget renders your chart. Your team can use it to get immediate insight about progress and to learn about their rhythm and behavior. Most burndown lines aren't straight lines, because teams generally don't move at a fixed velocity. Scope increases can occur over time and affect velocity. For example, if your projected completion date moves, you might ask one of the following questions:
 
 - *Are we adding too much scope?*
 - *Is the average burn rate changing, and if so, why?*
 
-Burndown charts also help teams understand risks to their release. If the projected end date exceeds the release target date, teams might need to reduce scope or lengthen the project. Burndown can also indicate that progress is greater than expected, providing the uncommon, but wonderful option of adding scope.
+Burndown charts also help teams understand risks to their release. If the projected end date exceeds the release target date, teams might need to reduce scope or lengthen the project. Burndown can also indicate that progress is greater than expected, providing the uncommon, but advantageous option of adding scope.
 
 As the following diagram shows, charts based on the burndown or burnup widgets provide many calculated elements.
 
-:::image type="content" source="media/burndown-widget/burndownup-release-burndown-with-markup.png" alt-text="Screenshot annotated with labels about burndown or burnup widget elements.":::
+:::image type="content" source="media/burndown-widget/burndownup-release-burndown-with-markup.png" alt-text="Screenshot of a burndown widget. Labels show that the bars represent remaining work and the lines represent burndown and scope.":::
 
 | Element | Description |
 |:--------|:------------|
-| **Date&nbsp;range** | The  start and end date of the burndown. When burndown gets plotted by iterations, the end date is the end of the last iteration. |
-| **Main&nbsp;metric** | Current remaining work based on the selected burndown method. |
-| **%&nbsp;Completed** | The percentage of work completed based on original scope. Select **% Completed** to see the full list of completed work items. |
-| **Average&nbsp;burndown** | Average work completed per interval or iteration. |
-| **Items&nbsp;not&nbsp;estimated** | Shows only when burning down on the Sum of a field. It represents the current number of items that don't have a value in the selected **Burndown&nbsp;on** field. Select the number to see a full list of work items without estimates. |
-| **Total&nbsp;Scope&nbsp;Increase** | Shows how much work was added to the original scope since the burndown started.|
-| **Projected&nbsp;completion** | Calculates the projected completion date based on the remaining work and historical burndown and scope increase rates. If the projected completion date is before the specified **End Date**, it draws a vertical line on the interval when the work should complete. If the projected completion date is after the specified **End Date**, it displays the number of other intervals or iterations needed to complete the work. |
-| **Original&nbsp;Scope** | Original scope is all remaining work since the specified **Start Date**. The chart burns down from the original scope. **% Complete** and **Total Scope Increase** are calculated based on your original scope. |
-| **Total&nbsp;Scope** | Represents to the total scope of the burndown. The plotted points include both completed and remaining work. The total scope line indicates the scope change of your project. For past data points, the plotted total scope represents actual total scope as of the end of each interval or iteration. For future data points, the plotted total scope represents a projected scope change, based on past scope changes. |
-| **Burndown** | Represents the burndown. The burndown line tells you how fast you're burning down the work. For past data points, the plotted burndown represents actual burndown as of the end of each interval or iteration. For future data points, the plotted burndown represents a projected burndown, based on past burndown. |
+| **Date range** | The start and end date of the burndown. When you plot burndown by iterations, the end date is the end of the last iteration. |
+| **Main metric** | The current remaining work based on the selected burndown method. |
+| **Percentage completed** | The percentage of work completed based on the original scope. Select **Completed** to see the full list of completed work items. |
+| **Average burndown** | The average work completed per interval or iteration. |
+| **Items not estimated** | Displays only when you burn down on the sum of a field. Shows the count of items without a value in the selected **Burndown on** field. Select the value to see the full list. |
+| **Total Scope Increase** | The amount of work added to the original scope since the burndown started. |
+| **Projected completion** | The projected completion date based on remaining work, historical burndown, and scope increase rates. Appears as a vertical line if before the end date, or as text showing additional intervals needed if after the end date. |
+| **Original scope** | All remaining work since the start date. The completed percentage and **Total Scope Increase** are calculated based on original scope. |
+| **Total scope** | The total scope including both completed and remaining work. For past data points, represents actual scope at each interval end. For future data points, represents projected scope based on past changes. |
+| **Burndown** | How quickly you're burning down work. For past data points, represents actual burndown at each interval end. For future data points, represents projected burndown based on past rates. |
 
-[!INCLUDE [note-delete-area-paths](../../boards/includes/note-delete-area-paths.md)]
+::: moniker range="azure-devops"
 
-## Related articles
+## Use AI to build burndown and burnup charts
 
-> [!div class="nextstepaction"]
-> [Burndown and burnup guidance](burndown-guidance.md)
+If you configure the [Azure DevOps MCP Server](/azure/devops/mcp-server/mcp-server-overview), you can use AI assistants to help plan and configure burndown and burnup widgets.
 
+### Example prompts
+
+| Task | Example prompt |
+|------|----------------|
+| Choose the right chart | `Should I use a burndown or burnup widget to track my team's release progress in <Contoso> project?` |
+| Configure scope | `Help me configure a burndown widget that tracks user stories across two teams in <Contoso> project` |
+| Set time period | `What time period and granularity should I use for a burndown widget that covers a 3-month release cycle?` |
+| Track remaining effort | `Help me set up a burndown widget that shows remaining Story Points for the current sprint in <Contoso> project` |
+| Analyze scope creep | `How can I use the burnup widget to identify scope creep during our release in <Contoso> project?` |
+| Interpret the chart | `The burndown shows projected completion past the end date — what actions should my team take?` |
+
+::: moniker-end
+
+## Related content
+
+- [Burndown and burnup guidance](burndown-guidance.md)
 - [Configure and monitor sprint burndown](configure-sprint-burndown.md)
-- [Define iteration paths or sprints) and configure team iterations](../../organizations/settings/set-iteration-paths-sprints.md)
-- [Add a custom field to a work item type](../../organizations/settings/work/customize-process-field.md)
-- [Apply filters to historical data](../powerbi/analytics-historical-filtering.md)
+- [Add widgets to a dashboard](add-widget-to-dashboard.md)
+- [Define iteration paths (sprints) and configure team iterations](../../organizations/settings/set-iteration-paths-sprints.md)
+- [Add and manage fields (Inheritance process)](../../organizations/settings/work/customize-process-field.md)

@@ -112,7 +112,7 @@ Members of the Project Collection Administrators group configure resources for a
 
 ::: moniker-end
 
-## Related articles 
+## Related content 
 
 - [Manage projects](../../organizations/projects/about-projects.md)
 - [About team, project, and admin settings](../../organizations/settings/about-settings.md)

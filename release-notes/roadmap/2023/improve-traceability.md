@@ -3,7 +3,7 @@ title: Improve traceability of in-progress test executions
 author: gloridelmorales
 ms.author: glmorale
 ms.date: 10/16/2023
-ms.topic: article
+ms.topic: whats-new
 ms.service: azure-devops
 ms.subservice: azure-devops-release-notes
 description: Improve traceability of in-progress test executions

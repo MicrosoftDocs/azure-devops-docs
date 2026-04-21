@@ -4,6 +4,7 @@ description: See the Sprint 172 feature updates for Azure Artifacts, including n
 author: sid-ah
 ms.author: simerzou
 ms.date: 07/09/2020
+ms.topic: release-notes
 ---
 
 # Azure Artifacts - Sprint 172 Update

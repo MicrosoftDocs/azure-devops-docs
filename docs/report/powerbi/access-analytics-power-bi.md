@@ -7,13 +7,14 @@ ms.topic: how-to
 ms.assetid: b26f1d04-95ca-43d5-8333-176780f3980a  
 ms.author: chcomley
 author: chcomley
-monikerRange: '>= azure-devops-2019'
+monikerRange: "<=azure-devops"
 ms.date: 09/06/2024
+ai-usage: ai-assisted
 ---
 
 # Connect to Analytics data using the Power BI OData feed
 
-[!INCLUDE [version-gt-eq-2019](../../includes/version-gt-eq-2019.md)] 
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)] 
 
 Learn how to access Analytics data through the Power BI Desktop OData feed.
 
@@ -30,12 +31,7 @@ Learn how to access Analytics data through the Power BI Desktop OData feed.
 
 ## Access the Analytics OData feed
 
-::: moniker range="azure-devops-2019"
-
-> [!IMPORTANT]  
-> Make sure that you [enabled or installed the Analytics extension](../dashboards/analytics-extension.md).  
-
-::: moniker-end  
+  
 
 1. [Configure the permissions required to access Analytics](analytics-security.md).
 
@@ -103,4 +99,4 @@ Learn how to access Analytics data through the Power BI Desktop OData feed.
 ## Related content
 
 - [Get dataset design for the Power BI Connector for Azure DevOps](data-connector-dataset.md)
-- [See Data Connector - Example reports](data-connector-examples.md)
+- [Connect Analytics with Power BI Data Connector](data-connector-connect.md)

@@ -2,9 +2,9 @@
 title: Run VSTest tests in parallel
 description: Continuous testing. Speed up testing by running tests in parallel using Visual Studio Test task.
 ms.assetid: 8AEECA6C-6CC8-418C-AF75-6527E365FD88
-ms.topic: conceptual
+ms.topic: concept-article
 ms.custom: continuous-test
-ms.author: jeom
+ms.author: alexpysanets
 author: raviLiftr
 ms.date: 11/13/2019
 monikerRange: '<= azure-devops'
@@ -26,8 +26,6 @@ Running tests in parallel is a great way to improve the efficiency of CI/CD pipe
 This can be done easily by employing the additional capacity offered by the cloud.
 This article discusses how you can configure the
 [Visual Studio Test task](/azure/devops/pipelines/tasks/reference/vstest-v2) to run tests in parallel by using multiple agents.
-
-
 
 ## Pre-requisite
 
@@ -122,7 +120,7 @@ use the following steps.
 
    * Add the **Visual Studio Test** task and configure it to use the required [slicing strategy](#strategy).
 
-::: moniker range=">= azure-devops-2019"
+::: moniker range="<=azure-devops"
 
 ## Setting up jobs for parallel testing in YAML pipelines
 
@@ -182,7 +180,6 @@ to validate the app functionality.
      > If the test machines do not have Visual Studio installed, you can use the
      > [Visual Studio Test Platform Installer task](/azure/devops/pipelines/tasks/reference/visual-studio-test-platform-installer-v1) to
      > acquire the required version of the test platform.
-
 
 ## Massively parallel testing by combining parallel pipeline jobs with parallel test execution
 

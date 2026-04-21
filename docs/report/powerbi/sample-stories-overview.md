@@ -8,15 +8,16 @@ ms.author: shdalv
 ms.custom: powerbisample, engagement-fy23
 author: chcomley
 ms.topic: sample
-monikerRange: '>= azure-devops-2020'
+monikerRange: "<=azure-devops"
 ms.date: 01/19/2023
+ai-usage: ai-assisted
 ---
 
 # Requirements tracking sample report
 
-[!INCLUDE [version-gt-eq-2020](../../includes/version-gt-eq-2020.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
-You can track the quality of work items that belong to the Requirements category with the requirements tracking report. The Requirements category includes work items such as User Stories (Agile), Product Backlog Items (Scrum), Issues (Basic), and Requirements (CMMI). For more information about work item categories, see [Track user stories, issues, bugs, and other work items](../../boards/work-items/about-work-items.md#wit).
+Use the requirements tracking report to track the quality of work items in the Requirements category. The Requirements category includes work items such as User Stories (Agile), Product Backlog Items (Scrum), Issues (Basic), and Requirements (CMMI). For more information about work item categories, see [Track user stories, issues, bugs, and other work items](../../boards/work-items/about-work-items.md#wit).
 
 The following image shows an example of a requirements tracking report. 
 
@@ -25,15 +26,14 @@ The following image shows an example of a requirements tracking report.
 This report displays the following information for each requirement that it lists:
 
 - **Percent work completed**:  Progress bar that shows the percentage of completed work based on the rollup of completed hours for all tasks that are linked to the requirement.
-- **Passed tests**: The number of test cases run that's passed based on the most recent test run.  
-- **Failed tests**: The number of test cases run that's failed based on the most recent test run. 
-- **Run tests**:  The number of test runs that's executed.  
+- **Passed tests**: The number of test cases that pass based on the most recent test run.  
+- **Failed tests**: The number of test cases that fail based on the most recent test run. 
+- **Run tests**:  The number of test runs that are executed.  
 - **Active bugs**: The number of linked bugs in an Active state. 
 - **Closed bugs**: The number of linked bugs in a  Closed, Done, or Completed state. 
 
-
 > [!NOTE] 
-> Requirement tracking is supported only for test cases linked through a [**Requirement-based test suite**](../../test/create-a-test-plan.md#backlog). The association between a requirement work item&mdash;User Story ([Agile](../../boards/work-items/guidance/agile-process.md)), Product Backlog Item ([Scrum](../../boards/work-items/guidance/scrum-process.md)), Requirement ([CMMI](../../boards/work-items/guidance/cmmi-process.md)), or Issue ([Basic](../../boards/get-started/plan-track-work.md))&mdash;and manual test execution is only formed when the test case is linked via a **Requirement-based test suite**. 
+> Requirement tracking supports only test cases linked through a [**Requirement-based test suite**](../../test/create-a-test-plan.md). The association between a requirement work item&mdash;User Story ([Agile](../../boards/work-items/guidance/agile-process.md)), Product Backlog Item ([Scrum](../../boards/work-items/guidance/scrum-process.md)), Requirement ([CMMI](../../boards/work-items/guidance/cmmi-process.md)), or Issue ([Basic](../../boards/get-started/plan-track-work.md))&mdash;and manual test execution is only formed when you link the test case via a **Requirement-based test suite**. 
 
 [!INCLUDE [stories-overview-info](includes/sample-stories-overview-info.md)] 
 
@@ -47,7 +47,7 @@ This report displays the following information for each requirement that it list
 
 ## Sample queries
 
-To generate the report, you must add three Power BI queries to Power BI desktop and then link them. Each query executes either the `WorkItems` or `TestPoints` entity set.
+To generate the report, add three Power BI queries to Power BI Desktop and then link them. Each query executes either the `WorkItems` or `TestPoints` entity set.
  
 > [!NOTE]   
 > The Power BI query snippets provided in the following sections include the requisite data transforms to expand columns and change data type.
@@ -56,7 +56,7 @@ To generate the report, you must add three Power BI queries to Power BI desktop 
 
 ### Query area and iteration paths
 
-In order to scope your report to a particular Area and Iteration path, you can filter the query using AreaSK and IterationSK. For details, see [Define basic queries using OData Analytics](../extend-analytics/analytics-recipes.md#area).
+To scope your report to a particular area and iteration path, filter the query by using `AreaSK` and `IterationSK`. For details, see [Define basic queries using OData Analytics](../extend-analytics/analytics-recipes.md#area).
 
 ### Query for percentage of hours completion for requirements
 
@@ -132,7 +132,6 @@ $filter=(
 
 ### Query for test execution status of requirements
 
-
 [!INCLUDE [temp](includes/query-filters-test.md)] 
 
 #### [Power BI query](#tab/powerbi/)
@@ -197,10 +196,7 @@ $apply=filter(
 
 ***
 
-
-
 [!INCLUDE [temp](includes/note-test-suites-requirements.md)]  
-
 
 ### Query for status of bugs linked to the requirements
 
@@ -267,11 +263,10 @@ https://analytics.dev.azure.com/{organization}/{project}/_odata/v3.0-preview/Wor
 
 [!INCLUDE [temp](includes/sample-query-substitutions.md)]
 
-- `{organization}` - Your organization name 
-- `{project}` - The name of your project  
-- `{iterationSK}` - The GUID associated with the **Iteration Path** of interest. To look up the GUID, see [../extend-analytics/wit-analytics.md#iterationsk](Return the IterationSK for a specific Iteration Path)
-- `{areaSK}` - The GUID associated with the Area Path of interest. To look up the GUID, see [../extend-analytics/wit-analytics.md#areask](Return the AreaSK for a specific Area Path).
-
+- `{organization}` - Your organization name. 
+- `{project}` - The name of your project.  
+- `{iterationSK}` - The GUID associated with the **Iteration Path** of interest. To look up the GUID, see [Return the IterationSK for a specific Iteration Path](../extend-analytics/wit-analytics.md#iterationsk).
+- `{areaSK}` - The GUID associated with the **Area Path** of interest. To look up the GUID, see [Return the AreaSK for a specific Area Path](../extend-analytics/wit-analytics.md#areask).
 
 ### Query breakdown
 
@@ -302,7 +297,7 @@ The following table describes each part of the query.
    `Processes/any(p:p/BacklogType eq 'RequirementBacklog')`
    :::column-end:::
    :::column span="1":::
-   Filter the work items in such a way that they should fall in 'requirements' category for at least one process associated with them.
+   Filters the work items so they fall in the 'requirements' category for at least one process associated with them.
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -310,7 +305,7 @@ The following table describes each part of the query.
    `Processes/all(p:p/IsBugType eq false)`
    :::column-end:::
    :::column span="1":::
-   Omit the bug type work items while getting requirements. In Basic process template, Issue work items are also of bug type, so for Basic process remove this clause from your query.
+   Omits the bug type work items while getting requirements. In Basic process template, Issue work items are also of bug type, so for Basic process remove this clause from your query.
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -324,7 +319,7 @@ The following table describes each part of the query.
        )`
    :::column-end:::
    :::column span="1":::
-   Return data for only selected requirements based on Iteration and Area.  
+   Returns data for only selected requirements based on Iteration and Area.  
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -332,15 +327,15 @@ The following table describes each part of the query.
    `/aggregate($count as TotalCount,`
    :::column-end:::
    :::column span="1":::
-   Aggregate data across the filtered test points with having count as `TotalCount`.
+   Aggregates data across the filtered test points with count as `TotalCount`.
    :::column-end:::
 :::row-end:::
 :::row:::
    :::column span="1":::
-   `cast(LastResultOutcome eq 'Passed', Edm.Int32) with sum as Passed`
+   `cast(LastResultOutcome eq 'Passed', Edm.Int32) with sum as PassedCount`
    :::column-end:::
    :::column span="1":::
-   While aggregating, type-cast test points having latest execution outcome 'Passed' to 1 and sum them up as '`Passed`' metric.
+   While aggregating, type-cast test points with the latest execution outcome 'Passed' to 1 and sum them up as `PassedCount`.
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -382,28 +377,25 @@ The following table describes each part of the query.
        )`
    :::column-end:::
    :::column span="1":::
-   Calculate the percent of completed wor.
+   Calculate the percent of completed work.
    :::column-end:::
 :::row-end:::
  
 
-
 ## Create the Table report 
 
-To create the report, perform the following steps:
+To create the report, complete the following steps:
 
-1. From the **Modeling** tab, choose **Manage Relationships** and link the three query results by `WorkItemId` column. 
-1. Under **Visualizations**, choose **Table**.
-1. Add the columns you're interested in from the three Power BI queries.
-1. Select **Sum** as aggregation for additive columns like **Passed tests** etc.
-    > [!div class="mx-imgBorder"] 
-    > ![Power BI select Sum as aggregation](/azure/devops/report/powerbi/media/powerbi-sum-aggregation.png)
+1. From the **Modeling** tab, select **Manage Relationships** and link the three query results by the `WorkItemId` column. 
+1. Under **Visualizations**, select **Table**.
+1. Add the columns you want from the three Power BI queries.
+1. Select **Sum** as the aggregation for additive columns like **Passed tests**.
+
+    :::image type="content" source="media/powerbi-sum-aggregation.png" alt-text="Screenshot of Power BI Sum aggregation selection.":::
 
 Your report should look similar to the following image. 
 
-> [!div class="mx-imgBorder"] 
-> ![Screenshot of Power BI Requirements tracking report](media/odatapowerbi-storiesoverview.png)
-
+:::image type="content" source="media/odatapowerbi-storiesoverview.png" alt-text="Screenshot of Power BI Requirements tracking report.":::
 
 ## Related articles
 

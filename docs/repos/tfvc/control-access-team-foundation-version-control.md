@@ -4,7 +4,7 @@ titleSuffix: Azure Repos
 description: See how to control access and permissions for Team Foundation Version Control.
 ms.assetid: cccf50be-5503-4155-974b-c75b57888603
 ms.service: azure-devops-repos
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 10/12/2022
 monikerRange: '<= azure-devops'
 ms.subservice: azure-devops-repos-tfvc

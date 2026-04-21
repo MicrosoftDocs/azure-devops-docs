@@ -4,11 +4,12 @@ description: Manage how long Azure DevOps keeps your manual test results by clea
 ms.assetid: 7a9e6fbe-bdd0-4cb5-8e57-f4d8d2126218
 ms.service: azure-devops-test-plans
 ms.custom: UpdateFrequency3
-ms.topic: conceptual
-ms.author: jeom
+ms.topic: how-to
+ms.author: pliaros
 author: rohit-batra
 monikerRange: '<= azure-devops'
 ms.date: 4/04/2022
+ms.update-cycle: 1095-days
 ---
 
 # Set test retention policies
@@ -30,7 +31,11 @@ for example, up to a year.
   
 <a name="manual-test-results-limits"></a> 
 
-## Set retention period for test results
+## Set retention period for manual test results
+
+> [!IMPORTANT]
+> When retention deletes test runs and test results, their related test points outcome is set as Active.
+> Due to the outcome change, progress reports may reflect decreased run rates.
 
 To delete manual test results after a specific number of days, 
 set the retention limit at the project level. 
@@ -69,7 +74,7 @@ you can specify how long to keep automated test results based on the branch.
 
 Clean up automated test results left over from deleted builds or test results that aren't related to builds. For example, results published from external test systems. Set the retention limits at the project level as described in [Set retention period for test results](#manual-test-results-limits) earlier in this article.
 
-## Related articles
+## Related content
 
 - [Delete test artifacts](../boards/backlogs/delete-test-artifacts.md)
-- [FAQs for manual testing](reference-qa.yml#manageresults)
+- [FAQs for manual testing](reference-qa.yml#test-results-and-retaining-test-data)

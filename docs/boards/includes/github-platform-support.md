@@ -3,9 +3,13 @@ ms.service: azure-devops-boards
 ms.author: chcomley
 author: chcomley
 ms.topic: include
-ms.date: 07/03/2023
+ms.date: 03/24/2026
+ai-usage: ai-assisted
 ---
 
 > [!NOTE]   
-> With the Azure Boards app for GitHub, Azure Boards and Azure DevOps Services integrate with GitHub.com and GitHub Enterprise Server repositories. Azure DevOps Server 2019 and later versions support integration with GitHub Enterprise Server repositories only. Integration with other Git repositories is not supported.
+> **GitHub integration support:**
+> - **Azure DevOps Services**: Integrates with both GitHub.com and GitHub Enterprise Server repositories through the Azure Boards app for GitHub.
+> - **Azure DevOps Server 2020 and later**: Supports integration with GitHub Enterprise Server repositories only.
+> - **Other Git repositories**: Integration isn't supported.
  

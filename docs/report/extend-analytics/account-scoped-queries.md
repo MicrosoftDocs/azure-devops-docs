@@ -6,13 +6,13 @@ ms.subservice: azure-devops-analytics
 ms.author: chcomley
 author: chcomley
 ms.topic: quickstart
-monikerRange: '>= azure-devops-2019'
+monikerRange: "<=azure-devops"
 ms.date: 02/12/2025
 ---
 
 # Project and organization-scoped queries
 
-[!INCLUDE [version-gt-eq-2019](../../includes/version-gt-eq-2019.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 Using Analytics for Azure DevOps, you can construct queries that are scoped to a project or an organization or collection. You can run these queries directly in your browser or within Power BI. 
 
@@ -35,7 +35,6 @@ You construct a query by entering the OData URL into a [supported web browser](/
 
 The base URL for a project-level OData query is as shown in the following syntax. 
 
-
 # [**Cloud** (Azure DevOps Services](#tab/cloud)
 
 ```OData
@@ -55,7 +54,6 @@ In the examples provided, make the following replacements:
 - `{ProjectName}` with the name of the project that you want to query. 
 
 ***
-
 
 > [!NOTE]
 > The remaining examples in this article are based on an Azure DevOps Services URL. Substitute your Azure DevOps Server URL to use the examples.
@@ -92,7 +90,6 @@ It's equivalent to the following filter on an organization-scoped query:
 https://analytics.dev.azure.com/{OrganizationName}/_odata/{version}/Areas?
   $filter=Project/ProjectName eq '{ProjectName}'
 ```
-
 
 For example, a query of the Fabrikam Fiber project returns all properties defined for an Area Path as no `$select` operator is applied in the query. 
 ```OData

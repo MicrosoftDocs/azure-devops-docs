@@ -5,23 +5,16 @@ description: Review the data available for reporting purposes using Analytics fo
 ms.subservice: azure-devops-analytics
 ms.author: chcomley
 author: chcomley
-ms.topic: conceptual
-monikerRange: '>= azure-devops-2019'
+ms.topic: overview
+monikerRange: "<=azure-devops"
 ms.date: 08/12/2022
 ---
 
 # Data available from Analytics
 
-[!INCLUDE [version-gt-eq-2019](../../includes/version-gt-eq-2019.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 The data available to you from Analytics depends on the Azure DevOps platform and version you're using and the Analytics version you query.
-
-::: moniker range=">= azure-devops-2019 < azure-devops-2022"
-
-> [!NOTE]   
-> For Azure DevOps Server, you can use Analytics in place of SQL Server Reporting Services or along side it. However, if you plan to use the Inheritance process model to customize work tracking, you can only use Analytics for reporting, the project collection must not be configured to support reporting. For more information about the Inheritance process model, see [About process customization and inherited processes](../../organizations/settings/work/inheritance-process-model.md). 
-
-::: moniker-end
 
 ## Data available by platform version
  
@@ -29,7 +22,6 @@ Refer to the following table to determine the data you have access to. To determ
 
 > [!NOTE]   
 > The following table was last updated on August 2022.  
-
 
 |**Service**|**Azure DevOps Services**<br/>**Azure DevOps Server 2020**<br/>**Azure DevOps Server 2022**  |**Azure DevOps Server 2019**|**Future availability**|
 |------------------|----------------|---------------------------|----------------|  

@@ -3,7 +3,7 @@ title: Substring search
 author: gloridelmorales
 ms.author: glmorale
 ms.date: 10/6/2022
-ms.topic: article
+ms.topic: concept-article
 ms.service: azure-devops
 ms.subservice: azure-devops-release-notes
 description: Substring search

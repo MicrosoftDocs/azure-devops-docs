@@ -5,7 +5,7 @@ description: Learn about branching strategies for Team Foundation Version Contro
 ms.assetid: C9659CD5-CC5D-4522-9DB7-B887F361819F
 ms.service: azure-devops-repos
 ms.date: 06/30/2022
-ms.topic: conceptual
+ms.topic: overview
 monikerRange: '<= azure-devops'
 ms.subservice: azure-devops-repos-tfvc
 ---

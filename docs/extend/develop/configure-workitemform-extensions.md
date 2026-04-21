@@ -1,24 +1,28 @@
 ---
-title: Configure work item form extensions | Extensions for Azure DevOps
-description: Describes how to add and configure work item form extensions in Azure DevOps.
+title: Configure work item form extensions via XML
+titleSuffix: Azure DevOps Server
+description: Add and configure work item form extensions in Azure DevOps Server using work item type definition XML and the witadmin tool.
 ms.contentid: DEC28077-2F52-490D-B87C-48D4785CD597
 ms.subservice: azure-devops-ecosystem
-ms.custom: freshness-fy22q3
-ms.topic: conceptual
-monikerRange: '<= azure-devops'
+ms.custom: freshness-fy22q3, UpdateFrequency3
+ms.topic: how-to
+monikerRange: '< azure-devops'
 ms.author: chcomley
 author: chcomley
-ms.date: 02/03/2022
+ms.date: 04/03/2026
+ai-usage: ai-assisted
 ---
 
-# Add extensions in work item form via work item type definition xml
+# Add extensions in the work item form
 
-[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
+[!INCLUDE [version-lt-azure-devops](../../includes/version-lt-azure-devops.md)]
 
-You can export a work item type as xml using the `witadmin` tool, which includes the layout of the work item form. As part of this example, we add the page, group, and control contributions to the layout.  We also add the control to the Agile "User Story" work item type. For more information, see [WebLayout xml reference](/previous-versions/azure/devops/reference/xml/weblayout-xml-elements). 
+[!INCLUDE [extension-docs-new-sdk](../../includes/extension-docs-new-sdk.md)]
 
-> [!NOTE]
-> Work item form customization via xml is supported only on Azure DevOps Server, not Azure DevOps Services. 
+> [!IMPORTANT]
+> This article applies only to Azure DevOps Server (on-premises). For Azure DevOps Services, customize work item forms through the [inheritance process model](../../organizations/settings/work/inheritance-process-model.md) instead.
+
+You can export a work item type as XML using the `witadmin` tool, which includes the layout of the work item form. As part of this example, we add the page, group, and control contributions to the layout.  We also add the control to the Agile "User Story" work item type. For more information, see [WebLayout xml reference](/previous-versions/azure/devops/reference/xml/weblayout-xml-elements). 
 
 ## Add extension in work item form
 

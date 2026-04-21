@@ -25,7 +25,7 @@ The following table lists the permissions assigned at the organization or collec
 
       **Boards**  
    :::column span="":::
-      ::: moniker range=">= azure-devops-2019"
+      ::: moniker range="<=azure-devops"
       - Administer process permissions
       - Create process
       - Delete field from organization or account  
@@ -41,7 +41,7 @@ The following table lists the permissions assigned at the organization or collec
    :::column-end:::
    :::column span="":::
       **Pipelines**  
-      ::: moniker range=">= azure-devops-2019"
+      ::: moniker range="<=azure-devops"
       - Administer build resource permissions  
       - Manage build resources
       - Manage pipeline policies
@@ -57,7 +57,7 @@ The following table lists the permissions assigned at the organization or collec
       - Manage audit streams
       - View audit log
       ::: moniker-end
-      ::: moniker range=">= azure-devops-2019"
+      ::: moniker range="<=azure-devops"
       **Policies**  
       - Manage enterprise policies
       ::: moniker-end

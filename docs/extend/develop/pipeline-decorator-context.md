@@ -3,10 +3,12 @@ title: Pipeline decorator context
 description: Contextual data available to pipeline decorators
 ms.topic: reference
 ms.subservice: azure-devops-ecosystem
+ms.custom: UpdateFrequency3
 ms.assetid: fe3e1e94-0415-400a-9b2d-7eeadb6101fc
 ms.author: chcomley
 author: chcomley
-ms.date: 02/26/2024
+ms.date: 04/03/2026
+ai-usage: ai-assisted
 monikerRange: 'azure-devops'
 ---
 

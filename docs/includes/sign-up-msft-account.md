@@ -1,31 +1,17 @@
 ---
 ms.topic: include
+ms.custom: sfi-image-nochange
+ms.author: chcomley
+author: chcomley
+ms.date: 04/13/2026
 ---
 
 ## Sign up with a personal Microsoft account
 
-1. Select the sign-up link for [Azure DevOps](https://azure.microsoft.com/services/devops/).
+1. Go to [Azure DevOps](https://azure.microsoft.com/products/devops/) and select **Get started with Azure**.
+1. Sign in with your Microsoft account. If you don't have one, [create a Microsoft account](https://account.microsoft.com/account).
+1. Select either **Try Azure for free** or **Pay as you go** and complete the sign-up process.
+1. In the Azure portal, select the app launcher (grid icon), and then select **DevOps**.
+1. Select **Create new organization**.
 
-2. Enter your email address, phone number, or Skype ID for your Microsoft account. If you're a Visual Studio subscriber and you get Azure DevOps as a benefit, use the Microsoft account associated with your subscription. Select **Next**.
-
-   ![Sign in with your Microsoft account](../media/sign-in-with-microsoft-account.png)
-
-   If you don't have a Microsoft account, choose **Create one**. For more information, see [create a Microsoft account](https://support.microsoft.com/help/4026324/microsoft-account-how-to-create).
-
-3. Enter your password and select **Sign in**.
-
-   ![Enter your password and sign in](../media/enter-password-sign-in.png)
-
-4. To get started with Azure DevOps, select **Continue**.
-
-   ![Choose Continue to sign up for Azure DevOps](../media/sign-up-azure-devops.png)
-
-An organization is created based on the account you used to sign in. Sign in to your organization at any time, (`https://dev.azure.com/{yourorganization}`).
-
-You can rename and delete an organization, or change the organization location. For more information, see the following articles:
-
-- [Rename an organization](../organizations/accounts/rename-organization.md)
-- [Change the location of your organization](../organizations/accounts/change-organization-location.md)
-- [Delete an organization](../organizations/accounts/delete-your-organization.md)
-
-If you signed in with an existing Microsoft account, your next step is to [Create a project](../organizations/projects/create-project.md). If you signed in with a newly created Microsoft account, then your project is automatically created and named after your account name. To learn more about managing projects, see [Manage projects](../organizations/projects/about-projects.md).
+After sign-up, access your organization at any time: `https://dev.azure.com/{Your_Organization}`.

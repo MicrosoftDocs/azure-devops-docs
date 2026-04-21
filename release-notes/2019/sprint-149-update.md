@@ -3,6 +3,7 @@ title: Azure Boards and Azure Pipelines GitHub Integration Improvements - Sprint
 author: gloridelmorales
 ms.author: glmorale
 ms.date: 04/08/2019
+ms.topic: release-notes
 description: In the **Sprint 149 Update** of Azure DevOps, we added the ability to navigate to Azure Boards directly from mentions in a GitHub comment as well as adding support for Azure Boards within GitHub Enterprise. 
 ---
 

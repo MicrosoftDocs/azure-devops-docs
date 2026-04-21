@@ -1,5 +1,6 @@
 ---
 ms.topic: include
+ms.custom: sfi-image-nochange
 ---
 
 ### Multi-stage pipelines UX
@@ -283,5 +284,5 @@ jobs:
     runOnce:            
       pre-deploy: 
         steps:       
-        - reviewApp: MasterNamespace
+        - reviewApp: MainNamespace
 ```

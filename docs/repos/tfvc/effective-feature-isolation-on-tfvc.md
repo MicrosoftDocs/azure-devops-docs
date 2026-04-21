@@ -2,7 +2,7 @@
 title: Manage feature isolation in TFVC
 description: Explore the feature isolation strategy in Team Foundation Version Control (TFVC).
 ms.assetid: 00303E47-5B7F-4A25-901B-0B6F2007911D
-ms.topic: article
+ms.topic: how-to
 ms.service: azure-devops-repos
 ms.date: 11/01/2022
 author: wpschaub

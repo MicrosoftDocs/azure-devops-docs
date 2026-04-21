@@ -3,7 +3,7 @@ title: New security overview alert details and reporting capabilities
 author: laurajjiang
 ms.author: laurajiang
 ms.date: 02/06/2025
-ms.topic: article
+ms.topic: concept-article
 ms.service: azure-devops
 ms.subservice: azure-devops-release-notes
 description: New security overview alert details and reporting capabilities

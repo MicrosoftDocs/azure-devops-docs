@@ -206,7 +206,6 @@ When you create an organization or project collection in Azure DevOps, the syste
 > To enable the **Organizations Permissions Settings Page v2** preview page,see [Enable preview features](../../project/navigation/preview-features.md). The preview page provides a group settings page that the current page doesn't.
 ::: moniker-end  
 
-
 #### [Preview page](#tab/preview-page)
 
 ::: moniker range="< azure-devops"
@@ -256,10 +255,7 @@ So the full name of the administrator group for the default collection is
    for the server where the application-tier services are installed.
    Contains the members of the *CollectionName*/**Service Accounts** group.
    Limit this group to the fewest users who require full administrative control over the collection.  
-   ::: moniker range="< azure-devops-2022"
-   > [!NOTE]
-   > If your deployment uses Reporting Services, consider adding the members of this group to the [Team Foundation Content Managers groups in Reporting Services](/previous-versions/azure/devops/report/admin/grant-permissions-to-reports).
-   ::: moniker-end
+   
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -675,7 +671,6 @@ Manage organization-level permissions through the [web portal admin context](../
 
 #### [Preview page](#tab/preview-page)
 
-
 > [!div class="mx-imgBorder"]  
 > ![Screenshot of Organization-level permissions and groups, Azure DevOps Services.](media/permissions/collection-level-permissions-new.png)   
 
@@ -1067,7 +1062,6 @@ Manage project-level permissions through the [web portal admin context](change-p
 Manage project-level permissions through the [web portal admin context](change-project-level-permissions.md). Project Administrators are granted all project-level permissions. Other project-level groups have select permission assignments.
 
 ::: moniker-end
-
 
 #### [Preview page](#tab/preview-page)
 
@@ -1605,7 +1599,6 @@ Manage project-level permissions through the [web portal admin context](change-p
 
 ---
 
-
 ## Analytics views (object-level)  
 
 With shared Analytics views, you can grant specific permissions to view, edit, or delete a view that you create. Manage the security of Analytics views from the [web portal](../../report/powerbi/analytics-security.md).  
@@ -1671,7 +1664,7 @@ Permissions for team and project dashboards can be set individually. The default
 
 By default, the creator of the project dashboard is the dashboard owner and granted all permissions for that dashboard. 
 
-|**Permission**<br />`Namespace permission`  | **Description** |
+|**Permission**<br />`Namespace permission`  | Description |
 |-----------| ----------- |
 |Delete dashboard<br />`DashboardsPrivileges, Delete`   | Can delete the project dashboard. |
 |Edit dashboard<br />`DashboardsPrivileges, Edit`  |  Can add widgets to and change the layout of the project dashboard. |
@@ -1690,7 +1683,7 @@ By default, the creator of the project dashboard is the dashboard owner and gran
 
 By default, team administrators are granted all permissions for their team dashboards, including managing default and individual dashboard permissions. 
 
-|**Permission**<br />`Namespace permission`  | **Description** |
+|**Permission**<br />`Namespace permission`  | Description |
 |-----------| ----------- |
 |Create dashboards<br />`DashboardsPrivileges, Create`  | Can create a team dashboard. |
 |Delete dashboards<br />`DashboardsPrivileges, Delete` | Can delete a team dashboard. |
@@ -1703,7 +1696,7 @@ By default, team administrators are granted all permissions for their team dashb
 
    Team administrators can change the permissions for individual team dashboards by changing the following two permissions.  
 
-|**Permission**<br />`Namespace permission`  | **Description** |
+|**Permission**<br />`Namespace permission`  | Description |
 |-----------| ----------- |
 |Delete dashboard<br />`DashboardsPrivileges, Delete`  | Can delete the specific team dashboard. |
 |Edit dashboard<br />`DashboardsPrivileges, Edit`  |  Can add widgets to and change the layout of the specific team dashboard. |
@@ -2895,7 +2888,6 @@ The following permissions are defined in Release Management. The scope column ex
    :::column-end:::
 :::row-end:::
 
-
 Default values for all of these permissions are set for team project collections and project groups. For example,
 **Project Collection Administrators**, **Project Administrators**, and
 **Release Administrators** are given all of the above permissions by
@@ -2914,17 +2906,13 @@ Use task groups to encapsulate a sequence of tasks already defined in a build or
  
 > | Permission | Description | 
 > |------------|-------------| 
-> | **Administer task group permissions** | Can add and remove users or groups to task group security. |
-> | **Delete task group** | Can delete a task group. | 
-> | **Edit task group** | Can create, modify, or delete a task group. | 
+> | Administer task group permissions | Can add and remove users or groups to task group security. |
+> | Delete task group | Can delete a task group. | 
+> | Edit task group | Can create, modify, or delete a task group. | 
 
 <a id="alerts">  </a>
 
 ## Notifications or alerts 
-
-::: moniker range="<= azure-devops-2020"
-There are no UI permissions associated with [managing email notifications or alerts](../../organizations/notifications/manage-your-personal-notifications.md). Instead, you can manage them using the [TFSSecurity](/azure/devops/server/command-line/tfssecurity-cmd#tagging-permissions) command-line tool.
-::: moniker-end
 
 - By default, members of the project level **Contributors** group can subscribe to alerts for themselves.
 - Members of the **Project Collection Administrators** group,
@@ -3013,7 +3001,7 @@ You can manage alert permissions using [TFSSecurity](/azure/devops/server/comman
 
 ::: moniker-end
 
-## Related articles
+## Related content
 
 - [Get started with permissions, access, and security groups](about-permissions.md)   
 - [Security namespace and permission reference for Azure DevOps](namespace-reference.md)    

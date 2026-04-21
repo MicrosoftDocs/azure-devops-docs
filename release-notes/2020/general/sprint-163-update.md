@@ -4,6 +4,7 @@ description: See the Sprint 163 general updates for Azure DevOps, including next
 author: gloridelmorales
 ms.author: glmorale
 ms.date: 01/13/2020
+ms.topic: release-notes
 ---
 
 # General - Sprint 163 Update

@@ -9,7 +9,8 @@ ms.author: chcomley
 author: chcomley
 ms.topic: how-to
 monikerRange: '<= azure-devops' 
-ms.date: 08/03/2021  
+ms.date: 03/24/2026
+ai-usage: ai-assisted
 ---
 
 # Add a work item type to a backlog and board
@@ -36,7 +37,7 @@ To add a WIT to track as requirements, tasks, or as bugs perform the correspondi
 - [Add a WIT to the Bug Category](#wits-as-bugs)
 
 > [!NOTE]    
-> We recommend that you add a WIT to one and only one of the following categories: Requirement Category, Task Category, or Bug Category. The system prevents you from adding the same WIT to both the Requirement Category and Task Category. WITs that you add to the Bug Category will follow the [bug behavior set for the team](../organizations/settings/show-bugs-on-backlog.md). 
+> Add a WIT to one and only one of the following categories: Requirement Category, Task Category, or Bug Category. The system prevents you from adding the same WIT to both the Requirement Category and Task Category. WITs that you add to the Bug Category follow the [bug behavior set for the team](../organizations/settings/show-bugs-on-backlog.md). 
 
 <a id="first-steps">  </a>
 
@@ -501,9 +502,9 @@ witadmin exportprocessconfig /collection:"CollectionURL" /p:"ProjectName" /f:"Di
 witadmin importprocessconfig /collection:"CollectionURL" /p:"ProjectName" /f:"DirectoryPath/ProcessConfiguration.xml"  
 ```
 
-## Related articles  
+## Related content  
 
-We've just shown how to add another WIT to your backlogs or boards. However, if you want to add another WIT to act as a portfolio backlog, see [Add portfolio backlogs](add-portfolio-backlogs.md).
+This article showed how to add another WIT to your backlogs or boards. If you want to add another WIT to act as a portfolio backlog, see [Add portfolio backlogs](add-portfolio-backlogs.md).
 
 See [Customize your work tracking experience](customize-work.md) for an overview of all the options available for customizing work tracking objects. 
 

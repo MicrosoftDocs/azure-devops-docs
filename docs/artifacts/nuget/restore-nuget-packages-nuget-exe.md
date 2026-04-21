@@ -4,7 +4,7 @@ description: Learn how to connect to your feed and restore NuGet packages using 
 ms.service: azure-devops-artifacts
 ms.topic: tutorial
 ms.date: 01/14/2025
-monikerRange: '<= azure-devops'
+monikerRange: "<=azure-devops"
 ---
 
 # Restore NuGet packages from the command line (NuGet.exe)
@@ -17,7 +17,7 @@ This article guides you through setting up your project and restoring NuGet pack
 
 | **Product**        | **Requirements**                                                                                                                                                                                                                                                                                                                        |
 |--------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **Azure DevOps**   | - An Azure DevOps [organization](../../organizations/accounts/create-organization.md).<br>- An Azure DevOps [project](../../organizations/projects/create-project.md).<br> - An Azure Artifacts [feed](../get-started-nuget.md#create-feed).<br> - Download and install the [Azure Artifacts Credential Provider](https://github.com/microsoft/artifacts-credprovider).<br> - The latest [NuGet version](https://www.nuget.org/downloads). |
+| **Azure DevOps**   | - An Azure DevOps [organization](../../organizations/accounts/create-organization.md).<br>- An Azure DevOps [project](../../organizations/projects/create-project.md).<br> - An Azure Artifacts [feed](../get-started-nuget.md#create-a-feed).<br> - Download and install the [Azure Artifacts Credential Provider](https://github.com/microsoft/artifacts-credprovider).<br> - The latest [NuGet version](https://www.nuget.org/downloads). |
 
 ## Connect to a feed
 
@@ -57,7 +57,7 @@ This article guides you through setting up your project and restoring NuGet pack
 
 ::: moniker-end
 
-::: moniker range="azure-devops-2020 || azure-devops-2022"
+::: moniker range="=azure-devops-2022"
 
 1. Sign in to your Azure DevOps server, and then navigate to your project.
 
@@ -66,18 +66,6 @@ This article guides you through setting up your project and restoring NuGet pack
 1. Select **Connect to Feed**, and then select **NuGet.exe** from the left navigation pane.
 
 1. Follow the instructions in the **Project setup** section to connect to your feed.
-
-::: moniker-end
-
-::: moniker range="azure-devops-2019"
-
-1. Sign in to your Azure DevOps server, and then navigate to your project.
-
-1. Select **Artifacts**, and then select your feed.
-
-1. Select **Connect to Feed**, and then select **NuGet** from the left navigation pane.
-
-1. Follow the provided instructions to add your package source URL to your *nuget.config* file.
 
 ::: moniker-end
 
@@ -96,5 +84,4 @@ nuget.exe restore
 - [Publish packages with Azure Pipelines (YAML/Classic)](../../pipelines/artifacts/nuget.md)
 
 - [Use packages from NuGet.org](./upstream-sources.md)
-
 

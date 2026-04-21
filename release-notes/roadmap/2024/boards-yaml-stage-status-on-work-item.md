@@ -3,7 +3,7 @@ title: Report YAML stage status in deployment control on work items
 author: danhellem
 ms.author: dahellem
 ms.date: 10/31/2024
-ms.topic: article
+ms.topic: whats-new
 ms.service: azure-devops
 ms.subservice: azure-devops-release-notes
 description: Report YAML stage status in deployment control on work items

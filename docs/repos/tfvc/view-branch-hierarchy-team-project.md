@@ -4,7 +4,7 @@ titleSuffix: Azure Repos
 description: In Team Foundation Version Control, view the branch hierarchy of a project. See properties of branches, and take actions like merging or comparing branches.
 ms.assetid: 7ecab78e-f9f5-43d1-982f-b300ee1c4c16
 ms.service: azure-devops-repos
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 11/22/2022
 monikerRange: '<= azure-devops'
 ms.subservice: azure-devops-repos-tfvc

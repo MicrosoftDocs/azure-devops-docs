@@ -4,6 +4,8 @@
   href: quick-reference.md 
 - name: Sign in with a Personal Access Token
   href: log-in-via-pat.md
+- name: Acquire an Entra token
+  href: entra-tokens.md
 - name: Auto detect configuration and git aliases 
   href: auto-detect-and-git-aliases.md
 - name: Configure policies

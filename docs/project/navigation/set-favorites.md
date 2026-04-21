@@ -164,7 +164,7 @@ Similarly, you can unfavorite an artifact from the same page where you marked it
 > [!div class="nextstepaction"]
 > [Follow a user story, bug, issue, or other work item or pull request](../../boards/work-items/follow-work-items.md)
 
-## Related articles
+## Related content
 
 - [Manage personal notifications](../../organizations/notifications/manage-your-personal-notifications.md) 
 - [Set your preferences](../../organizations/settings/set-your-preferences.md)

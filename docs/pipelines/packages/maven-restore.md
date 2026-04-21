@@ -28,11 +28,7 @@ This article guides you through setting up your YAML and Classic pipelines to re
 1. Sign in to your Azure DevOps collection, and then navigate to your project.
 ::: moniker-end
 
-::: moniker range="azure-devops-2019"
-2. Select **Pipelines** > **Builds**, and then select your build definition. 
-::: moniker-end
-
-::: moniker range="> azure-devops-2019"
+::: moniker range="<=azure-devops"
 2. Select **Pipelines**, and then select your pipeline definition. 
 ::: moniker-end
 
@@ -58,11 +54,7 @@ steps:
 1. Sign in to your Azure DevOps collection, and then navigate to your project.
 ::: moniker-end
 
-::: moniker range="azure-devops-2019"
-2. Select **Pipelines** > **Builds**, and then select your build definition. 
-::: moniker-end
-
-::: moniker range="> azure-devops-2019"
+::: moniker range="<=azure-devops"
 2. Select **Pipelines**, and then select your pipeline definition. 
 ::: moniker-end
 
@@ -145,13 +137,7 @@ steps:
 
 ::: moniker-end
 
-::: moniker range="azure-devops-2019"
-
-2. Select **Pipelines** > **Builds**, and then select your build definition. 
-
-::: moniker-end
-
-::: moniker range="> azure-devops-2019"
+::: moniker range="<=azure-devops"
 
 2. Select **Pipelines**, and then select your pipeline definition. 
 

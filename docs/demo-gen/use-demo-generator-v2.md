@@ -1,88 +1,77 @@
 ---
 title: Use Azure DevOps Demo Generator
-description: Use the Azure DevOps Services Demo Generator V2 to create and populate a demo project
+description: Use the Azure DevOps Services Demo Generator V2 to create and populate a demo project.
 ms.subservice: azure-devops-new-user
 ms.author: sdanie
-ms.topic: conceptual
+ms.topic: quickstart
+ms.custom: pat-reduction
 monikerRange: 'azure-devops'
-ms.date: 10/10/2019
+ms.date: 10/31/2025    
 ---
 
 # Get started creating and populating demo Azure DevOps Services projects
 
 [!INCLUDE [version-eq-azure-devops](../includes/version-eq-azure-devops.md)] 
 
-1. Browse to the [Azure DevOps Demo Generator site](https://azuredevopsdemogenerator.azurewebsites.net/) by selecting the link, or copy `https://azuredevopsdemogenerator.azurewebsites.net/` into your browser's URL field.
+[!INCLUDE [demo-generator-discontinued-note](includes/demo-generator-discontinued-note.md)]
 
-2. Click **Sign In** and provide the Microsoft or Microsoft Entra account credentials associated with an organization in Azure DevOps Services. If you don't have an organization, click on **Get Started for Free** to create one and then log in with your credentials.
+This article explains how to use the **Azure DevOps Demo Generator** application to quickly create a new Azure DevOps project prepopulated with sample content, such as work items, repositories, and other resources needed for labs and demonstrations. 
 
-    > [!div class="mx-imgBorder"]
-    > :::image type="content" source="media/homepage.png" alt-text="Azure DevOps Demo Generator V2 login" lightbox="media/homepage.png":::
+## Prerequisites
 
-    > [!NOTE]
-    > If you are a member of multiple tenants and the desired tenant isn't the selected one,
-    > close your browser windows and then open a new browser and navigate to 
-    > `https://aka.ms/vssignout`. Close this browser, open a new browser and navigate to
-    > `https://aex.dev.azure.com/me`, and sign-in using the desired tenant.
+Set up the Demo Generator application by following the steps in the [configure section](configure.md).
 
-1. After you sign in, select **Accept** to grant the Demo Generator permissions to access your Azure DevOps organization.
+## Select your authentication method for Demo Generator
 
-    > [!div class="mx-imgBorder"]
-    > :::image type="content" source="media/2.png" alt-text="Azure DevOps Demo Generator V2 permissions screen" lightbox="media/2.png":::
+Use one of the following methods to authenticate to the Azure DevOps Demo Generator app:
 
-1. Select the organization you will use to host the project created by the Azure DevOps Demo Generator. (You may have multiple accounts of which you are a member, and which are associated with your login, so choose carefully.) Provide a name for your project (such as "MyProjectDemo" ) that you and other contributors can use to identify it as a demo project. Lastly, select the demo project template you want to provision by clicking **...** (Browse) button.
+- **Microsoft Entra:** [Register your application in Microsoft Entra](/entra/identity-platform/quickstart-register-app?tabs=certificate%2Cexpose-a-web-api#register-an-application). 
 
-    > [!div class="mx-imgBorder"]
-    > :::image type="content" source="media/templateselection.png" alt-text="Azure DevOps Demo Generator template selection screen" lightbox="media/templateselection.png":::
+   * Sign in with the displayed code.
+   * Select an organization to create a project from the list.
 
-    The default template is **SmartHotel360**, which contains complete ASP.NET 2 web mobile and desktop business apps for a hotel, and can be deployed using Docker containers. 
+[!INCLUDE [use-microsoft-entra-reduce-pats](../includes/use-microsoft-entra-reduce-pats.md)]
 
-    There are several other templates available, including **MyHealthClinic**, which defines a team project for an ASP.NET Core app that deploys to Azure App Service; **PartsUnlimited**, which defines an ASP.NET app with customized CI/CD pipelines; and **MyShuttle**, which defines a Java app and Azure App Service deployment. If you are following a lab from [Azure DevOps Labs](https://www.azuredevopslabs.com), select the **DevOps Labs** tab to choose the template
+- **Personal Access Token (PAT):** Sign in with a [Personal Access Token (PAT)](../organizations/accounts/use-personal-access-tokens-to-authenticate.md#create-pats) with the following scopes:
 
-    > [!NOTE]
-    > All  templates provide fictional Azure DevOps users and pre-populated Agile planning and tracking work items and data, along with source code in an Azure Repos Git repo, as well as access to Azure Pipelines.
+   | Scope                      | Description                                |
+   | -------------------------- | ------------------------------------------ |
+   | vso.agentpools             | Agent Pools (read)                         |
+   | vso.build_execute          | Build (read and execute)                   |
+   | vso.code_full              | Code (full)                                |
+   | vso.dashboards_manage      | Team dashboards (manage)                   |
+   | vso.extension_manage       | Extensions (read and manage)               |
+   | vso.profile                | User profile (read)                        |
+   | vso.project_manage         | Project and team (read, write, and manage)  |
+   | vso.release_manage         | Release (read, write, execute, and manage)  |
+   | vso.serviceendpoint_manage | Service Endpoints (read, query, and manage) |
+   | vso.test_write             | Test management (read and write)           |
+   | vso.variablegroups_write   | Variable Groups (read, create)             |
+   | vso.work_full              | Work items (full)                          |
 
-1. Some templates may require additional extensions to be installed to your organization. The demo generation process checks to see if these extensions are already installed. If the extension is already installed, a green check will be displayed in front of the extension name. If the extension is **not** installed, select the empty check boxes to install the extension(s) to your account. When ready, click on **Create Project** button.
+   Enter the organization name and the PAT. Provide the project name and press enter to create a project
 
-    > [!NOTE]
-    > If you want to manually install the extensions,  click on the provided link for a specific extension, which takes you to the extension's page on Azure DevOps Marketplace. From there, you can install the extension.
+   > [!div class="mx-imgBorder"]
+   > [![Screenshot shows Authenticating the app using Personal Access Token (PAT).](../demo-gen/media/103.png "Authenticating the app using Personal Access Token (PAT)")](../demo-gen/media/103.png#lightbox)
 
-2. Your project may take a couple of minutes for the Demo Generator to provision. When it completes, you will be provided with a link to the demo project.
+## Create your demo project
 
-    > [!div class="mx-imgBorder"]
-    > :::image type="content" source="media/projectcreated.png" alt-text="Azure DevOps Demo Generator project created screen" lightbox="media/projectcreated.png":::
+To create your demo project, do the following steps:
 
-1. Select the link to go to the new demo Azure DevOps Services project and confirm it was successfully provisioned.
+1. Select the organization where you want to host the project created by the Azure DevOps Demo Generator. If you belong to multiple organizations associated with your credentials, choose the appropriate one. 
+2. Enter a project name, such as "MyProjectDemo," that you and other contributors can easily identify as a demo project.
+3. Choose from several available templates, such as:
+   - **eShopOnWeb**: a .NET app that deploys to Azure App Service
+   - **PartsUnlimited**: an ASP.NET app with customized CI/CD pipelines
+   - **MyShuttle**: a Java app with Azure App Service deployment. 
 
-    > [!div class="mx-imgBorder"]
-    > :::image type="content" source="media/projecthomepage.png" alt-text="Azure DevOps Demo Generator provision confirmation screen" lightbox="media/projecthomepage.png":::
+   Use templates that provide fictional Azure DevOps users, prepopulated Agile work items and data, source code in an Azure Repos Git repo, and access to Azure Pipelines.
+4. (Optional) Manually install any required extensions by selecting the provided link for each extension. This link opens the extension's page in the Azure DevOps Marketplace, where you can install it. 
+5. (Optional) Approve the installation of other required extensions when prompted. If the demo generation process detects missing extensions, consent by pressing **Y** or **Yes**, then press **Enter** to create the project.
 
-> [!NOTE]
-> You must provide your own information such as URLs, logins, password, and others for the configuration of demo endpoints that use Azure resources. 
+   Your project might take a few minutes for the Demo Generator to create. 
 
-Next: [Learn how you can build your own template](build-your-own-template.md)
+   > [!div class="mx-imgBorder"]
+   > :::image type="content" source="media/104.png" alt-text="Screenshot shows Required extensions setup in organization." lightbox="media/104.png":::
 
-## Common Issues and workarounds:
-
-### **Issue:** Error while creating release definition:
-Tasks with versions `ARM Outputs:4.*` are not valid for deploy job `Agent job` in stage Stage 1
-
-**Cause:** This is usually caused by one of the third-party extensions not enabled or installed in your Azure DevOps org. Usually installation of extensions are quick but sometimes, it  can take a few minutes (or even hours!) for an extension to be available to use, after it is installed in the marketplace. 
-
-**Workaround:** You can try waiting for a few minutes and confirm whether the extension is available to use, and then run the generator again. 
-
-------------------
-### **Issue:** Error while creating query: TF401256: You do not have Write permissions for query Shared Queries:
-
-**Cause:** In Azure DevOps, users have different access levels - Basic, Stakeholder and Visual Studio Subscriber. Access levels determine what features are available to users. In order to provision projects using the demo generator, you need at least a **Basic** access level. This error indicates the user has a *stakeholder* license which does not grant permissions to writing shared queries
-
-**Fix:** You should change the access level, from stakeholder to basic. Please refer to this article on docs:  [Add users to your organization or project](../organizations/accounts/add-organization-users.md?view=azure-devops&preserve-view=true) for more information on how to add users to your organization, and specify the level of features they can use
-
--------------
-
-### **Issue:** TF50309: The following account does not have sufficient permissions to complete the operation: 
-The following permissions are needed to perform this operation: Create new projects
-
-**Cause:** You do not have permissions to create new projects in the Azure DevOps organization you have selected. You will need to be a part of the Project Administrators group or have explicit permissions to create new projects
-
-**Fix:**  Please make sure you have the required permissions or try selecting a different Azure DevOps org where you project creation permission.
+6. Go to your organization to confirm that the project was created once the "Project created successfully" message displays.

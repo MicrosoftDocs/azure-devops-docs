@@ -3,7 +3,7 @@ title: Improve parent filters experience on delivery plans
 author: danhellem
 ms.author: dahellem
 ms.date: 12/28/2022
-ms.topic: article
+ms.topic: concept-article
 ms.service: azure-devops
 ms.subservice: azure-devops-release-notes
 description: Improve parent filters experience on delivery plans

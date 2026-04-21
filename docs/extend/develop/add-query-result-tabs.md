@@ -1,23 +1,25 @@
 ---
-title: Add tabs on query results | Extensions for Azure DevOps
-description: Extend Azure DevOps with your own query results tab.
+title: Add tabs on query result pages
+titleSuffix: Azure DevOps
+description: Add a custom tab to query result pages in your Azure DevOps extension.
 ms.assetid: b3a55a38-f4c0-464f-b689-86582c430b84
 ms.subservice: azure-devops-ecosystem
-ms.topic: conceptual
+ms.custom: UpdateFrequency3
+ms.topic: how-to
 monikerRange: '<= azure-devops'
 ms.author: chcomley
 author: chcomley
-ms.date: 05/15/2018
+ms.date: 04/03/2026
+ai-usage: ai-assisted
 ---
 
 # Add tabs on query result pages
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
-If you have a web page that can be hosted in an iframe, it can be hosted in Azure DevOps as a tab on the query result pages.
-In this example, we'll add a simple Hello World tab on query results.
+You can host any iframe-compatible web page as a tab on the Azure DevOps query result pages. This article walks through adding a simple Hello World tab.
 
-![Tab location on the Azure DevOps Query Results.](media/query-results-pivot-tab.png)
+![Screenshot of a custom tab on the query results page.](media/query-results-pivot-tab.png)
 
 [!INCLUDE [extension-docs-new-sdk](../../includes/extension-docs-new-sdk.md)]
 
@@ -67,30 +69,16 @@ Update your [extension manifest](../develop/manifest.md) file with the following
 ```
 
 ### Contributions
-The **contributions** stanza contains information about your tasks.
-
-
-For each contribution in your extension, the manifest defines
-	
-* the type of contribution (tab in this case),
-* the contribution target (the query tabs in this case),
-* and the properties that are specific to each type of contribution. For a tab, we have
-
-| Property           | Description                                                                                                                         
-|--------------------|----------------------------------------------------------------------------------------|                                
-| name               | Name of the tab			                                                      |                   
-| uri                | Path (relative to the extension's base URI) of the page to surface as the tab       |                   
-| title              | Title of the tab to display                                                          | 
+Each contribution defines a `type` (tab), a `target` (query tabs), and type-specific `properties`. For a tab, set `name` and `title` to the display text and `uri` to the page path relative to the extension's base URI.
 
 ### Scopes
-It includes the [scopes](./manifest.md#scopes) that your extension requires.
-In this case, we need `vso.work` to access work items.
+The [scopes](./manifest.md#scopes) section declares the permissions your extension requires. The following example uses `vso.work` to access work items.
 
 ### Files
-Include all of the files your extension accesses. <br>
-For your files, set `addressable` to `true` unless you include other files that don't need to be URL-addressable.
+The [files](./manifest.md#files) section lists every file your extension needs at runtime. Set `addressable` to `true` for files that must be URL-addressable.
 	
-## Example
+### Example
+
 ```javascript
 SDK.register(SDK.getContributionId(), {
     pageTitle: function(state) {
@@ -107,12 +95,9 @@ SDK.register(SDK.getContributionId(), {
 });
 ```
 
-Learn about all of the places where you can add a hub in [Extensibility points](../reference/targets/overview.md).
+For all available contribution points, see [Extensibility points](../reference/targets/overview.md).
 
-## Next steps
+## Related content
 
-> [!div class="nextstepaction"]
-> [Package, Publish, and Install](../publish/overview.md)
-or
-> [!div class="nextstepaction"]
-> [Test and Debug](/previous-versions/azure/devops/extend/test/debug-in-browser)
+- [Package, publish, and install extensions](../publish/overview.md)
+- [Extension manifest reference](../develop/manifest.md)

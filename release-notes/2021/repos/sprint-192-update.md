@@ -4,6 +4,7 @@ description: See the Sprint 192 feature updates for Azure Repos, including next 
 author: gloridelmorales
 ms.author: glmorale
 ms.date: 09/07/2021
+ms.topic: release-notes
 ---
 
 # Azure Repos - Sprint 192 Update

@@ -4,6 +4,7 @@ description: See the Sprint 222 feature updates for Azure Pipelines, including n
 author: gloridelmorales
 ms.author: glmorale
 ms.date: 6/6/2023
+ms.topic: release-notes
 ---
 
 # Azure Pipelines - Sprint 222 Update

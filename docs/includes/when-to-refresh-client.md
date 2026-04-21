@@ -1,9 +1,17 @@
-To avoid potential errors, you should refresh your client application under the following circumstances:
+---
+ms.author: chcomley
+author: chcomley
+ms.service: azure-devops
+ms.topic: include
+ms.date: 04/24/2025
+---
 
-- Process changes are made
-- Work item type definitions are added, removed, renamed, or updated 
-- Area or iteration paths are added, removed, renamed, or updated  
-- Users are added to or removed from security groups or permissions are updated  
-- A team member adds a new shared query or changes the name of a shared query
-- A build definition is added or deleted
-- A team or project is added or deleted
+To avoid potential errors, you should refresh your client application in the following scenarios:
+
+- Process change applied
+- Work item type definition added, removed, renamed, or updated 
+- Area or iteration path added, removed, renamed, or updated  
+- User added or removed in security groups, or user permissions updated  
+- New shared query added or existing shared query updated
+- Build definition added or deleted
+- Team or project added or deleted

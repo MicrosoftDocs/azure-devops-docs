@@ -1,34 +1,28 @@
 ---
-title: Manage preview features
+title: Enable Preview Features for Early Access in Azure DevOps
 titleSuffix: Azure DevOps
-description: Learn how to enable preview features in Azure DevOps and get early access to new functionalities and improvements. Preview features are easy to turn on or off.
-ms.custom: navigation, cross-project, cross-service, engagement-fy23
+description: Azure DevOps preview features let you try the latest updates before general release. Discover how to turn features on or off for you and your organization.
+ms.custom: navigation, cross-project, cross-service, engagement-fy23, UpdateFrequency3
 ms.subservice: azure-devops-projects
-ms.assetid: FB4E044D-B916-4901-A322-C87C3581A90A
 ms.author: chcomley
+ms.reviewer: chcomley
 author: chcomley
 ai-usage: ai-assisted
 ms.topic: how-to
 monikerRange: '<= azure-devops'
-ms.date: 01/27/2025
+ms.date: 04/02/2026
 ---
 
 # Manage preview features 
 
-[!INCLUDE [version-gt-eq-2020](../../includes/version-lt-eq-azure-devops.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
+
+Preview features let you try new functionality before it's generally available. Turn preview features on or off to test them and provide feedback. Some preview features introduce new capabilities, while others update the user interface without changing functionality.
 
 ::: moniker range="azure-devops"
 
-As some new features get introduced, you can turn them on or off. You can try them out, provide feedback, and work with the ones that meet your requirements. Some preview features provide access to new functionality, while others reflect a change to the user interface, but little or no change in functionality. 
-
 > [!NOTE]   
-> It might take up to three weeks after a release to Azure DevOps for the preview feature to appear in your organization. The [latest release notes](/azure/devops/release-notes/features-timeline) usually provide information on new preview features. You can turn on or off select features for Azure DevOps. Preview features become available first on Azure DevOps Services and then become standard features with an update to Azure DevOps Server. At some point, the preview feature moves out of preview status and becomes a regular feature of the web portal.  
-
-::: moniker-end
-
-::: moniker range="< azure-devops"
-
-As some new features get introduced, you can turn them on or off. You can try them out, provide feedback, and work with the ones that meet your requirements. Some preview features provide access to new functionality, while others reflect a change to the user interface, but little or no change in functionality. 
+> It might take up to three weeks after a release for a preview feature to appear in your organization. The [latest release notes](/azure/devops/release-notes/features-timeline) provide information on new preview features. Preview features become available first on Azure DevOps Services and then become standard features with an update to Azure DevOps Server.
 
 ::: moniker-end
 
@@ -37,8 +31,8 @@ As some new features get introduced, you can turn them on or off. You can try th
 | Category | Requirements |
 |--------------|-------------|
 | **Project access** | Member of the [project](../../organizations/projects/create-project.md) where you want to enable or disable preview features. |
-| **Permissions** | To enable or disable preview features for your organization: Member of the **Project Administrators** group. |
-| **Access levels** |At least **Basic** access.  |
+| **Permissions** | To change preview features for yourself: no special permissions required. <br> To change preview features for the organization: member of the [**Project Collection Administrators** group](../../organizations/security/change-organization-collection-level-permissions.md). |
+| **Access levels** | At least **Basic** access. |
 
 ## Turn on or off preview features
 
@@ -48,10 +42,10 @@ Select either your organization or personal settings from the dropdown menu and 
 
 :::image type="content" source="media/preview-features/manage-preview-features.png" alt-text="Screenshot of Preview features options and dropdown menu for either personal or organizational settings.":::
 
-Enabling a feature at the organization level activates it for all users. They can still turn it off individually. Disabling a feature at the organization level doesn’t affect user settings. Users can change feature status on their own. For more information, see [Set user preferences](../../organizations/settings/set-your-preferences.md).
+When you turn on a feature at the organization level, you activate it for all users, but they can still turn it off individually. When you turn off a feature at the organization level, it doesn't affect individual user settings. For more information, see [Set user preferences](../../organizations/settings/set-your-preferences.md).
 
 > [!TIP]  
-> If you don't see the **for this account** menu option, then you aren't a member of the Project Collection Administrators group. To get added as one, see [Change project collection-level permissions](../../organizations/security/change-organization-collection-level-permissions.md).  
+> If the **for this account** menu option isn't available, you're not a member of the Project Collection Administrators group. To get added, see [Change project collection-level permissions](../../organizations/security/change-organization-collection-level-permissions.md).
 
 ::: moniker-end
 
@@ -61,12 +55,12 @@ Enabling a feature at the organization level activates it for all users. They ca
 
    :::image type="content" source="media/manage-features/open-profile-2020.png" alt-text="Screenshot of Open profile menu, Azure DevOps Server 2020.":::
 
-2. Select the level from the menu provided. 
+1. Select the level from the menu provided. 
 
 	> [!TIP]  
-	> If you don't see the **for this project** or **for this collection** menu options, then you aren't an administrator. To get added as one, see [Change project collection-level permissions](../../organizations/security/change-organization-collection-level-permissions.md).  
+	> If the **for this project** or **for this collection** menu options aren't available, you're not an administrator. To get added, see [Change project collection-level permissions](../../organizations/security/change-organization-collection-level-permissions.md).  
 
-3. To turn on or off a feature, choose the slider. 
+1. To turn on or off a feature, choose the slider. 
 
 	**User-level**  
 	:::image type="content" source="media/manage-features/manage-features-user-2020.png" alt-text="Screenshot of Manage features for the user.":::
@@ -107,26 +101,9 @@ The following table lists the preview features that you can turn on or off based
 
 ::: moniker-end
 
-::: moniker range="azure-devops-2020"
-
-The following table shows the features you can turn on or off based on your role: user, project administrator, or project collection administrator. 
-
-|**Feature**|**User**|**Project** | **Collection**|
-|--------------------|--------------|-----------------||-----------------|
-|[New service connections experience](../../pipelines/library/service-endpoints.md)| ✔️ |   |  ✔️ |     
-|[Selective artifacts download feature for collection/project](../../pipelines/process/phases.md#artifact-download)|   | ✔️ |  ✔️ |   
-
-::: moniker-end
-
 ::: moniker range="azure-devops-2022"
 
 You can turn on or off the [Pull Request Summary - Load of large files](#pull-request-summary---load-of-large-files) feature on a per-user basis.
-
-::: moniker-end
-
-::: moniker range="azure-devops-2019"
-
-You can turn on or off the [Selective artifacts download feature for collection/project](../../pipelines/process/phases.md#artifact-download) feature on a per project or collection basis.
 
 ::: moniker-end
 
@@ -146,7 +123,7 @@ When you select **Theme** from the Profile menu, you can select between **Dark**
 
 :::image type="content" source="media/preview-features/menu-theme.png" alt-text="Screenshot of Profile menu, Theme selected.":::
 
-With **Experimental themes** on, you can select from many other themes. 
+When you turn on **Experimental themes**, you can select from many other themes. 
 
 :::image type="content" source="media/preview-features/choose-your-theme.png" alt-text="Screenshot of Choose your theme dialog.":::
 
@@ -194,7 +171,7 @@ The following features are generally available for Azure DevOps.
  
 - [Historical graph for agent pools](../../pipelines/agents/pool-consumption-report.md) 
 - [Pipeline decorators](../../extend/develop/add-pipeline-decorator.md)  
-- [Multi-stage pipelines](../../report/powerbi/../../pipelines/process/stages.md)  
+- [Multi-stage pipelines](../../pipelines/process/stages.md)  
 - [Test tab in new web platform](../../pipelines/test/review-continuous-test-results-after-build.md)
 - [Test analytics in new web platform](../../pipelines/test/test-analytics.md)  
 - [New builds hub](/azure/devops/release-notes/2018/sep-10-azure-devops-launch#manage-build-pipelines-using-the-new-builds-page)
@@ -212,13 +189,13 @@ The following features are generally available for Azure DevOps.
 
 ::: moniker-end
 
-## Transition of Preview Features to General Availability
+## Transition to general availability
 
-While there's no fixed timeline for when a preview feature moves to general availability (GA), there are several indicators and resources you can use to stay informed about the status of preview features:
+There's no fixed timeline for when a preview feature moves to general availability (GA). To stay informed about the status of preview features:
 
-- **Azure DevOps roadmap and release notes:** The Azure DevOps roadmap provides insights into upcoming features and enhancements. It includes information about features currently in preview and their expected release timelines. Azure DevOps release notes provide detailed information about new features, improvements, and bug fixes. For more information, see the Relevant Links section at [Azure DevOps Blog](https://devblogs.microsoft.com/devops/). 
-- **Azure DevOps blog:** The Azure DevOps blog often features posts about new releases, including when preview features transition to GA. Subscribing to the blog or regularly checking it can help you stay updated. For more information, see [Azure DevOps Blog](https://devblogs.microsoft.com/devops/).
+- **Azure DevOps release notes:** The [release notes](/azure/devops/release-notes/features-timeline) provide information about new features, improvements, and when preview features transition to GA.
+- **Azure DevOps blog:** The [Azure DevOps Blog](https://devblogs.microsoft.com/devops/) covers new releases and preview feature updates.
 
-## Related articles
+## Related content
 
 - [Set user preferences](../../organizations/settings/set-your-preferences.md)

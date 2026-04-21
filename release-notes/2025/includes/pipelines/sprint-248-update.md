@@ -1,6 +1,6 @@
 ---
 author: ckanyika
-ms.author: ckanyika
+ms.author: glmorale
 ms.date: 1/17/2025
 ms.topic: include
 ---
@@ -70,6 +70,6 @@ In the `approvers` property, you can use the following values (comma separated) 
 * Email address,
 * Permission-Group,
 * Project-Team,
-* [ProjectName]\[Permission Group],
-* [Org]\[Permission Group],
-* [ProjectName]\[Project Team]
+* [ProjectName]\\[Permission Group],
+* [Org]\\[Permission Group],
+* [ProjectName]\\[Project Team]

@@ -4,7 +4,7 @@ titleSuffix: Azure Repos
 description: Decide between using a local or a server workspace in Team Foundation Version Control (TFVC), and see how to take a solution offline and bring it back online.
 ms.assetid: 492696f5-cafe-4090-af07-6dbbb0bd6a86
 ms.service: azure-devops-repos
-ms.topic: conceptual
+ms.topic: overview
 ms.date: 12/01/2022
 monikerRange: '<= azure-devops'
 ms.subservice: azure-devops-repos-tfvc

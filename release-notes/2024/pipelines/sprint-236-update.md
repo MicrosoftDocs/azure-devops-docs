@@ -2,8 +2,9 @@
 title: Azure DevOps release notes - Azure Pipelines Sprint 236 update
 description: See the Sprint 236 feature updates for Azure Pipelines, including next steps.
 author: ckanyika
-ms.author: ckanyika
+ms.author: glmorale
 ms.date: 3/21/2024
+ms.topic: release-notes
 ---
 
 # Azure Pipelines - Sprint 236 Update

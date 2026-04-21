@@ -1,38 +1,30 @@
 ---
-title: Create a Power BI report with an Analytics view
+title: Create a Power BI Report from an Analytics View
 titleSuffix: Azure DevOps
-description: Learn how to create a trend report using an Analytics view.
+description: Learn how to create Power BI reports from Analytics views in Azure DevOps. Build trend charts and current count reports to track work item progress effectively.
 ms.subservice: azure-devops-analytics
 ms.author: chcomley
 author: chcomley
-monikerRange: '>= azure-devops-2019'
+monikerRange: "<=azure-devops"
 ms.topic: quickstart
-ms.date: 11/08/2022
+ms.date: 03/24/2026
+ai-usage: ai-assisted
+ms.custom: copilot-scenario-highlight, doc-kit-assisted, awp-ai
+# customer intent: As a team member, I want to see how to use an Analytics view in Power BI so that I can create trend and current count reports about work items in my project.
 ---
 
-# Create a Power BI report with a default Analytics view
+# Create a Power BI report from a default Analytics view
 
-[!INCLUDE [version-gt-eq-2019](../../includes/version-gt-eq-2019.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
-With Power BI Desktop, you can easily connect to an Analytics view to start creating reports for your project in Azure DevOps. An Analytics view provides a simplified way to specify the filter criteria for a Power BI report based on Analytics data. 
+In this quickstart, you use a default Analytics view to create two Power BI reports for your Azure DevOps project - a daily trend chart of backlog items by state, and a card that shows the current count of active user stories. By using Analytics views, you can define filter criteria for work-tracking data without writing OData queries.
 
-[!INCLUDE [temp](includes/analytics-views-warning.md)]
+You can use one of the built-in default views, or [create a custom Analytics view](analytics-views-create.md) for more control over filters and fields.
 
-If you don't have Power BI Desktop, you can [download](/power-bi/desktop-what-is-desktop) and install it for free.
-
-You can create status and trend reports of your work tracking data using one of the default Analytics views available to you. As needed, you can also [create a custom Analytics view](analytics-views-create.md). 
+[!INCLUDE [Warning about Analytics views only supporting Azure Boards data](includes/analytics-views-warning.md)]
  
-Follow these steps to create two reports in Power BI desktop that shows a **daily trend of backlog items** and a **count of active user stories** based on a default **Analytics view**:
+[!INCLUDE [ai-assistance-mcp-server-tip](../../includes/ai-assistance-mcp-server-tip.md)]
 
-1. From the web portal for Azure DevOps:  
-	a. Open **Analytics view**   
-	b. Verify a default Analytics view for your data.    
-2. From the Power BI Desktop:  
-	a. Get the dataset defined by the Analytics view     
-	b. Create a trend report   
-	c. Apply filters to your trend report    
-	d. Create a card and apply the **Is Current=True** filter to show current count.    
- 
 ## Prerequisites  
 
 ::: moniker range="azure-devops"
@@ -40,8 +32,8 @@ Follow these steps to create two reports in Power BI desktop that shows a **dail
 |Category  | Requirements |
 |-------------|-------------|
 | **Access levels** | - [Project member](../../organizations/security/add-users-team-project.md).<br>- At least **Basic** access. |
-| **Permissions** | **View Analytics** permission set to **Allow**. For more information, see [Grant permissions for Analytics access](./analytics-security.md) |
-|**Tools** | - [Azure Boards enabled](../../organizations/settings/set-services.md)<br>- [Power BI Desktop](https://powerbi.microsoft.com/desktop)    |
+| **Permissions** | The **View Analytics** permission set to **Allow**. For more information, see [Set permissions to access Analytics and Analytics views](analytics-security.md). |
+|**Tools** | - [Azure Boards turned on](../../organizations/settings/set-services.md).<br>- [Power BI Desktop](https://www.microsoft.com/power-platform/products/power-bi/desktop). |
 |**Tasks**| Monitor work items over a specified period to generate a trend report. |
 
 ::: moniker-end
@@ -51,115 +43,122 @@ Follow these steps to create two reports in Power BI desktop that shows a **dail
 |Category  | Requirements |
 |-------------|-------------|
 | **Access levels** | - [Project member](../../organizations/security/add-users-team-project.md).<br>- At least **Basic** access. |
-| **Permissions** | **View Analytics** permission set to **Allow**. For more information, see [Grant permissions for Analytics access](./analytics-security.md) |
-|**Tools** | - [Analytics extension](../dashboards/analytics-extension.md). [**Project Collection Administrators**](../../organizations/security/change-organization-collection-level-permissions.md) can add and enable the service.<br>- [Power BI Desktop](https://powerbi.microsoft.com/desktop).<br>- [Azure Boards turned on](../../organizations/settings/set-services.md)  |
+| **Permissions** | The **View Analytics** permission set to **Allow**. For more information, see [Set permissions to access Analytics and Analytics views](analytics-security.md). |
+|**Tools** | - The [Analytics extension](../dashboards/analytics-extension.md). Members of the [Project Collection Administrators](../../organizations/security/change-organization-collection-level-permissions.md) group can add and enable the service.<br>- [Azure Boards turned on](../../organizations/settings/set-services.md).<br>- [Power BI Desktop](https://www.microsoft.com/power-platform/products/power-bi/desktop).  |
 |**Tasks**| Monitor work items over a specified period to generate a trend report. |
 
 ::: moniker-end
 
-[!INCLUDE [temp](../includes/analytics-open.md)]
+[!INCLUDE [Open Analytics to access views](../includes/analytics-open.md)]
 
-## Verify the default Analytics view for your data 
+## Verify the default Analytics view
 
-By verifying the view you'll use in Power BI, your view is more likely to load correctly in Power BI. If verification takes too long, you can quickly adjust the view. Add filters or narrow your history and verify your view again.
+Before connecting to Power BI, verify that the default view loads correctly. Verification catches problems such as too-large datasets or invalid field references before they cause Power BI refresh failures.
 
-1. From the **Analytics view>All** page, choose the :::image type="icon" source="../media/icons/actions-icon.png" border="false"::: actions icon next to the default view and select the **Edit** option. For a project that uses the Agile process, use the **Stories -Last 30 days** view.  
+1. On the **Analytics views** page, select the **All** tab.
 
-	> [!div class="mx-imgBorder"]
-	> ![Analytics>All, Edit the Stories -Last 30 days view](media/create-report/edit-default-view-last-30-days.png)  
+1. Select the :::image type="icon" source="../media/icons/actions-icon.png" border="false"::: **More Actions** icon on the default view, and then select **Edit**. For Agile projects, use the **Stories - Last 30 days** view.
 
-1. Choose the **Verification** tab and then the **Verify view** button. 
+   :::image type="content" source="media/create-report/edit-default-view-last-30-days.png" alt-text="Screenshot of the Analytics views page. In the shortcut menu for the Stories - Last 30 days view, Edit is highlighted." lightbox="media/create-report/edit-default-view-last-30-days.png":::
 
- 	> [!div class="mx-imgBorder"]  
-	> ![Choose the Verification tab and then the Verify view button.](media/create-report/verify-view.png)  
+1. Select the **Verification** tab, and then select **Verify view**.
 
-	Wait until the verification process completes. Verification time varies according to the amount of data defined in your view. For example, a view that includes all work item types and specifies "All history", will take more time to verify than a view that includes only stories and specifies a rolling period of 30 days.
+   :::image type="content" source="media/create-report/verify-view.png" alt-text="Screenshot of the dialog for editing the Stories - Last 30 days view. In the Verification tab, Verify view is highlighted.":::
 
- 	> [!div class="mx-imgBorder"]  
-	> ![Wait until the verification process completes.](media/create-report/verified-view.png)  
+   Verification time depends on the scope of your view. A view scoped to stories with a 30-day rolling period verifies faster than a view that includes all work item types and all history.
 
-2. If your view successfully verifies, then go to the next step. If it's unsuccessful, select the **Work Items** tab and adjust the selections to select fewer teams or specify fewer work items in the dataset.  
+   :::image type="content" source="media/create-report/verified-view.png" alt-text="Screenshot of the dialog for editing the Stories - Last 30 days view. In the Verification tab, a message indicates the view is verified.":::
 
-	For more information about defining views, see [Create an Analytics view](analytics-views-create.md).  
+1. If verification succeeds, continue to the next step. If it fails, go to the **Work Items** tab and reduce the scope - for example, select fewer teams or narrow the work item types. For more information, see [Create an Analytics view](analytics-views-create.md).
 
-[!INCLUDE [temp](../includes/connect-analytics-view.md)]
+[!INCLUDE [Connect to an Analytics view](../includes/connect-analytics-view.md)]
 
 ## Create a daily trend report 
 
-1. In your report, (1) select the Line chart visual, (2) enter `work item id` in the search field, and then (3) check the box for **Work Item Id**.   
+1. In the **Visualizations** pane, select the **Line chart** visual. In the **Data** pane, search for **Work Item Id** and select the checkbox to add it as the chart's Y-axis value.
 
-    > [!div class="mx-imgBorder"]  
-    > ![Select work item field](media/create-report/select-line-chart-work-id.png)  
+   :::image type="content" source="media/create-report/select-line-chart-work-id.png" alt-text="Screenshot of a blank report in Power BI Desktop. The Line chart icon, the search field, and Work Item ID are highlighted." lightbox="media/create-report/select-line-chart-work-id.png":::
 
-	It will change your chart to a single dot.  
+   The chart displays a single dot because you didn't define a date axis yet.
 
-	> [!TIP]    
-	> To change the chart size, choose the **View** tab, **Page View**, and then select the **Adjust Size** option as shown. You can then resize the chart to your desired dimensions.  
-	> 
-	> ![Adjust chart size](media/active-bugs-report/adjust-view-size.png)  
-	
-1. Next, (1) select the **Date** field in the fields list as your axis. By default, Power BI creates a date hierarchy from any date field. To see a daily trend, (2) select the context menu icon next to the field and change it from **Date Hierarchy** to **Date**.
+   > [!TIP]
+   > To resize the chart, go to **View** > **Page view** > **Actual size**, and then drag the chart handles.
+   > 
+   > :::image type="content" source="media/active-bugs-report/adjust-view-size.png" alt-text="Screenshot of a Power BI Desktop report with a line chart. The View menu, Page view, and Actual size on the Page view menu are highlighted." lightbox="media/active-bugs-report/adjust-view-size.png":::
 
-   > [!div class="mx-imgBorder"]
-   > ![Select Date, and change date hierarchy to date](media/create-report/select-date.png)
+1. In the **Data** pane, select **Date** to add it as the X-axis. Power BI defaults to a date hierarchy (year > quarter > month > day), which groups all dates that share the same day number. To see an actual daily trend, go to the **Visualizations** pane, expand the **Date** dropdown under **X-axis**, and select **Date** instead of **Date Hierarchy**.
 
-    > [!NOTE]
-    > To view trends over time, you want to use the **Date** format and not **Date Hierarchy**. The **Date Hierarchy** in Power BI rolls ups everything into a simple number for the period. The day level in the hierarchy rolls all days to a number between 1-31. For example, April 3 and May 3 both roll up into number 3. This is not the same as counting items per actual date.
+   :::image type="content" source="media/create-report/select-date.png" alt-text="Screenshot of a line chart. The Date data and field are highlighted. In the Date field shortcut menu, Date is selected and highlighted." lightbox="media/create-report/select-date.png":::
 
+   > [!NOTE]
+   > Always use the **Date** format for trend reports — not **Date Hierarchy**. The hierarchy's day level assigns every date to a number between 1 and 31, so April 3 and May 3 both map to day 3 and their counts are combined.
 
-## Group and filter the trend by State
+## Group and filter the trend by state
 
-- To group your user stories by State, drag the **State** field into the Legend area. Optionally, filter the set of States to show in the chart. 
+1. In the **Data** pane, drag the **State** field into the **Legend** area of the **Visualizations** pane. The chart now displays a separate line for each state.
 
-	Here we've filtered the list to show work items in the Active, Committed, and In Progress states. 
+1. To limit which states appear, expand the **State** field in the **Filters** pane and select only the values you want - for example, **Active**, **Closed**, and **Committed**.
 
-    > [!div class="mx-imgBorder"]
-    > ![Group by priority](media/create-report/apply-state-filter.png)
+The following chart shows a daily distinct count of user stories for each selected state.
 
-	The chart now shows a daily distinct count of user stories, grouped by Active, Committed, and In Progress.
+:::image type="content" source="media/create-report/apply-state-filter.png" alt-text="Screenshot of a chart with lines for active, closed, and committed counts. The State filter and the Visualizations legend are highlighted." lightbox="media/create-report/apply-state-filter.png":::
 
-	> [!TIP]    
-	> If you need to modify your Analytics view, you can do so and then return to your Power BI report and refresh the data. Simply click the **Refresh** option as shown.  
-	> 
-	> ![Refresh report data](media/active-bugs-report/refresh-report-updated-view.png)
+> [!TIP]
+> If you modify your Analytics view after connecting, return to Power BI and select **Refresh** on the **Home** tab to pull in the updated data.
+> 
+> :::image type="content" source="media/active-bugs-report/refresh-report-updated-view.png" alt-text="Screenshot of the Home tab of the Power BI Desktop ribbon. In the Queries group, Refresh is highlighted." lightbox="media/active-bugs-report/refresh-report-updated-view.png":::
 
 ## Create a card to show the latest active stories count
 
-1. Add a new page by clicking the plus sign (+) at the bottom of the page. 
+1. Add a new page by selecting the plus sign (**+**) at the bottom of the page.
 
-1. Select the card visual, add the **Work Item Id** field, and then drag the **State** and **Work Item Type** fields under Page level filters. Filter the State to show Active, and filter the Work Item Type for Bugs. 
+1. In the **Visualizations** pane, select the **Card** visual. In the **Data** pane, select the **Work Item Id** field to add it to the card.
 
-	The card now shows the number of active stories times the number of days each one was defined during the past 60 days. For this example, that number is 894. 
-    
-    > [!div class="mx-imgBorder"]
-    > ![create a distinct count card](media/create-report/card-active-bugs.png)
-    
+1. In the **Filters** pane, drag **State** into the **Filters on this page** area and select only **Active**.
 
-2. To get the latest active stories count, you filter the card to count only the latest revision of the filtered set of work items. Add **Is Current** as a filter and select `True` to filter only the data for the latest day. **Is Current** is a field added to the view automatically marking the rows that contain the latest revision of the work items. 
+   The card displays 111 in this example. That number is inflated because it counts every daily snapshot of each active user story over the 30-day window, not just the latest day.
 
-	Applying this filter brings the Active stories count to 39. 
+   :::image type="content" source="media/create-report/card-active-user-stories.png" alt-text="Screenshot of a card visual that displays a count of 111. The card icon and the Active filter are highlighted." lightbox="media/create-report/card-active-user-stories.png":::
 
-    > [!div class="mx-imgBorder"]
-    > ![filter by Is Current](media/create-report/is-current.png)
+1. To show only the current count, add the **Is Current** filter:
+   1. Drag **Is Current** into the **Filters on this page** area.
+   1. Select **True** so that the card counts only the latest revision of each user story.
 
-	The value should match the count on the last day of the trend chart that you created in the previous section.
+   Analytics views automatically include the **Is Current** field to flag the most recent snapshot. When you apply this filter, the count drops to 16 – the actual number of active user stories today.
 
-## Continue to explore your data
+   :::image type="content" source="media/create-report/is-current.png" alt-text="Screenshot of a card visual that displays a count of 16. In the Filters pane, the Is Current filter is highlighted, and True is selected." lightbox="media/create-report/is-current.png":::
 
-The reports shown in this quickstart illustrate how easy it is to generate reports of your work tracking data using Analytics views. 
+   This value should match the count on the last day of the trend chart you created in the previous section.
 
-<a id="q-a">  </a>
+::: moniker range="azure-devops"
 
-## Next steps
+<a id="use-ai-assistance"></a>
 
-> [!div class="nextstepaction"]
-> [Create an Active bugs report](active-bugs-sample-report.md)
+## Use AI to create Power BI reports from Analytics views
 
+If you configure the [Azure DevOps MCP Server](../../mcp-server/mcp-server-overview.md), you can use AI assistants to help create and refine Power BI reports.
 
-## Related articles 
+### Example prompts
 
+| Task | Example prompt |
+|------|----------------|
+| Bug trend by date range | `Write an OData trend query that shows the daily bug count by state over the last 30 days in <ProjectName>.` |
+| Sprint snapshot | `Create an OData query against WorkItemSnapshot that shows work item counts grouped by date for the current sprint in <ProjectName>.` |
+| Filter by iteration | `Generate an OData trend query that uses the iteration start and end dates from <IterationName> to show story point burndown in <ProjectName>.` |
+| Board column trend | `Write an OData query against WorkItemBoardSnapshot to track work items by board column over the past two weeks in <ProjectName> in the <OrganizationName> organization.` |
+| Optimize performance | `My WorkItemSnapshot trend query for <ProjectName> is timing out. Suggest specific date filters and aggregation to reduce the row count without losing the key metrics.` |
+| Compare sprints | `Create an OData trend query that compares bug counts between <SprintName> and the previous sprint in <ProjectName> in the <OrganizationName> organization.` |
+| Remaining work trend | `Write an OData trend query that shows the daily sum of remaining work grouped by Area Path for the current iteration in <ProjectName>.` |
+| Detect state changes | `Create an OData snapshot query that tracks how many work items moved from Active to Resolved each day over the past <NumberOfDays> days in <ProjectName>.` |
+| Scope change analysis | `Generate an OData trend query that shows the daily count of user stories added or removed from <SprintName> by comparing WorkItemSnapshot data in <ProjectName>.` |
+
+> [!TIP]
+> If you're using Visual Studio Code, [agent mode](/visualstudio/ide/copilot-chat-context#agent-mode) is especially helpful for creating and refining Power BI reports from Analytics views.
+
+::: moniker-end
+
+## Related content 
+
+- [Create an active bugs report in Power BI based on a custom Analytics view](active-bugs-sample-report.md)
 - [Get started with Power BI Desktop](/power-bi/fundamentals/desktop-getting-started)
-- [Power BI integration overview](overview.md) 
-- [Create Analytics views](analytics-views-create.md)
-- [Connect with Power BI Data Connector](./data-connector-connect.md)
-- [Dataset design for the Power BI Data Connector](data-connector-dataset.md)
+- [Connect Analytics with Power BI Data Connector](data-connector-connect.md)

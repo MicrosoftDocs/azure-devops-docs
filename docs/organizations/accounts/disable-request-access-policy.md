@@ -5,10 +5,10 @@ ms.custom:
 description: Learn how to stop your users from requesting access to your organization or project within your organization by disabling the Request Access policy.
 ms.subservice: azure-devops-organizations
 ms.assetid: 
-ms.topic: conceptual
+ms.topic: how-to
 ms.author: chcomley
 author: chcomley
-ms.date: 10/23/2024
+ms.date: 06/05/2025
 monikerRange: 'azure-devops'
 ---
 
@@ -16,7 +16,10 @@ monikerRange: 'azure-devops'
 
 [!INCLUDE [version-eq-azure-devops](../../includes/version-eq-azure-devops.md)]
 
-To prevent users from requesting access to your organization or projects, you can disable the 'Request Access' policy. When enabled, this policy allows users to request access, triggering email notifications to administrators for review and approval. Disabling the policy stops these requests and notifications.
+This article explains how to disable the 'Request Access' policy in Azure DevOps to prevent users from requesting access to your organization or projects. When this policy is enabled, users can request access, and administrators receive email notifications for review and approval. Disabling the policy stops these requests and notifications, helping you control access more tightly.
+
+>[!Note]
+> If you have a large number of administrators in your organization, only a subset of them will receive the access request email notifications when the 'Request Access' policy is enabled.
 
 ## Prerequisites
 
@@ -27,26 +30,22 @@ To prevent users from requesting access to your organization or projects, you ca
 
 ## Disable Request Access policy
 
-1. Sign in to your organization (```https://dev.azure.com/{yourorganization}```).
+1. Sign in to your organization (```https://dev.azure.com/{Your_Organization}```).
 
 2. Choose ![gear icon](../../media/icons/gear-icon.png) **Organization settings**.
-
    ![Screenshot shows Choose the gear icon and Organization settings button.](../../media/settings/open-admin-settings-vert.png)
-
-3. Select **Policies**, locate the *Request Access policy* and toggle it to *off*.
-
+   
+3. Select **Policies**, find the 'Request Access' policy, and switch it to **Off**.
    ![Screenshot shows Disable the Request Access policy in Organization settings.](media/request-access-policy-settings.png)
-
-4. Provide the URL to your internal process for gaining access. Users see this URL in the error report when they try to access the organization or a project within the organization that they don't have permission to access.
-
+   
+4. Provide the URL to your internal process for gaining access.
    ![Screenshot shows prompt for entering the URL to your organization's internal process for gaining access.](media/disable-request-access-provide-url.png)
+   
+**Result:**
 
-**Results:**
+When users try to access a project without the required permissions, the error message includes the **request access URL**. This link is shown on the error page to maintain confidentiality, regardless of whether the project exists.
 
-- **Users already part of the organization:** If they lack permission to access a specific project, they get a 404 error. To maintain confidentiality, the 404 error doesn’t reveal whether the project exists and so doesn't provide a link to request access.
-- **Users not part of the organization:** If they attempt to access a resource, they get a 401 error, which includes a link to the configured custom URL for requesting access.
-
-## Related articles
+## Related content
 
 - [Assign access levels by group membership](assign-access-levels-by-group-membership.md)
 - [Manage Conditional Access](change-application-access-policies.md)

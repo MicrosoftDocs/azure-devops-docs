@@ -4,7 +4,7 @@ titleSuffix: Azure Repos
 description: Use the branches page to restore a deleted Git branch in Azure DevOps.
 ms.assetid:
 ms.service: azure-devops-repos
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 02/17/2025
 monikerRange: '<= azure-devops'
 ms.subservice: azure-devops-repos-git
@@ -44,7 +44,7 @@ If you need to restore a Git branch in your own repo from Visual Studio or the c
 
 If you reused the same branch name for different commits, you might not see all the commits you're expecting when you restore the deleted branch. In that case, go to the **Pushes** page of the restored branch to see the entire history of the branch.
 
-::: moniker range=">= azure-devops-2019"
+::: moniker range="<=azure-devops"
 
 ![View all pushes for your restored branch](media/branches/restore_deleted_branch_pushes-new-nav.png)
 

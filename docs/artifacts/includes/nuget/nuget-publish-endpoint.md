@@ -6,7 +6,7 @@ author: ramiMSFT
 ms.date: 06/23/2022
 ---
 
-::: moniker range=">= azure-devops-2019"
+::: moniker range="<=azure-devops"
 
 1. Select **Artifacts**, and then select your feed from the dropdown menu.
 
@@ -23,5 +23,4 @@ ms.date: 06/23/2022
     :::image type="content" source="../../media/project-setup.png" alt-text="Project setup":::
 
 ::: moniker-end
-
 

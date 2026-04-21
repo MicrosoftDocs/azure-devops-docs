@@ -7,18 +7,18 @@ ms.topic: how-to
 ms.author: chcomley
 author: chcomley
 ms.reviewer: dahellem
-monikerRange: ">= azure-devops-2020"
-ms.date: 07/17/2020
+monikerRange: "<=azure-devops"
+ms.date: 03/24/2026
+ai-usage: ai-assisted
 ---
 
 # Change a project process from Scrum to Agile
 
-[!INCLUDE [version-gt-eq-2020](../../../includes/version-gt-eq-2020.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../../includes/version-lt-eq-azure-devops.md)]
 
 You can change a project based on the Scrum process to use an inherited Agile process. This article provides the steps needed to make this change. 
 
-
-Prior to making this change, we recommend you familiarize yourself with the process you are changing to. The Task, Bug, Feature, and Epic work item types are the same for both Scrum and Agile processes. Some State and Reason field values, however, are different.
+Before you make this change, familiarize yourself with the process you're changing to. The Task, Bug, Feature, and Epic work item types are the same for both Scrum and Agile processes. Some State and Reason field values, however, are different.
 
 | Process | Work item types | Workflow |
 |------|---------|---------|
@@ -27,10 +27,10 @@ Prior to making this change, we recommend you familiarize yourself with the proc
 
 For more information, see [About processes and process templates](../../../boards/work-items/guidance/choose-process.md).
 
-Reasons you might want to change your process from Scrum to Agile:
+Reasons you might want to change your process from Scrum to Agile include:
 
 - You want to use User Story and Story Points instead of Product Backlog Item and Effort.
-- Your organization is requiring everyone to standardize their tracking with a customized inherited process based on the Agile process.
+- Your organization requires everyone to standardize their tracking with a customized inherited process based on the Agile process.
 
 <!--- QUESTION: What happens to Analytics data when you do this change?  -->
 
@@ -48,11 +48,11 @@ Reasons you might want to change your process from Scrum to Agile:
 
 1. [Create a custom process](./manage-process.md) under Agile called "Agile - Inherited".
 
-2. If the Product Backlog Item and Impediment work item types are used in your current Scrum-based project, you need to [add these work item types](./customize-process-work-item-type.md) to the "Agile - Inherited" process.
+2. If your current Scrum-based project uses the Product Backlog Item and Impediment work item types, [add these work item types](./customize-process-work-item-type.md) to the "Agile - Inherited" process.
 
-   You don't have to add any details to these work item types as you'll be changing them later to User Story and Issue. However, if you have captured details within a field&mdash;such as Effort, Priority, or other field&mdash;then add those fields to the work item types.
+   You don't need to add any details to these work item types because you'll change them later to User Story and Issue. However, if you captured details within a field, such as Effort, Priority, or another field, add those fields to the work item types.
 
-3. When you are finished, your work item types list should appear as follows.
+3. When you finish, your work item types list should appear as follows.
 
 	> [!div class="mx-imgBorder"]  
 	> ![Agile - Inherited WITs](media/change-process/scrum-inherited-wits.png)
@@ -64,7 +64,7 @@ Reasons you might want to change your process from Scrum to Agile:
    > [!div class="mx-imgBorder"]  
    > ![Choose the process](media/scrum-to-agile/choose-scrum-process.png)
 
-1. Choose **Projects**, and then choose the :::image type="icon" source="../../../media/icons/actions-icon.png" border="false"::: actions icon for the project you want to change, and select **Change process**. Here we choose the Fabrikam Fiber PB project.
+1. Choose **Projects**, and then choose the :::image type="icon" source="../../../media/icons/actions-icon.png" border="false"::: actions icon for the project you want to change. Select **Change process**. In this example, select the Fabrikam Fiber PB project.
 
    > [!div class="mx-imgBorder"]  
    > ![Choose Projects tab](media/scrum-to-agile/choose-project-to-change.png)
@@ -76,51 +76,50 @@ Reasons you might want to change your process from Scrum to Agile:
    > [!div class="mx-imgBorder"]  
    > ![Step 1 of 3 of change process dialog, Choose the process](media/scrum-to-agile/change-process-scrum-to-agile-wizard-step-1.png)
 
-   If you skipped step 2 of [Create and customize an Agile inherited process](#create-customize-process), you'll receive the following message to add the missing work item types.
+   If you skipped step 2 of [Create and customize an Agile inherited process](#create-customize-process), you see the following message to add the missing work item types.
 
    > [!div class="mx-imgBorder"]  
    > ![Step 2 of 3 of change process dialog, Retry](media/scrum-to-agile/step-2-retry.png)
 
    Close the wizard dialog and add the missing work item types now. See [Add and manage work item types](customize-process-work-item-type.md).
 
-1. Upon successful completion, the wizard displays the following information. Make a note of the steps to follow and then choose **Close**.
+1. When the wizard finishes, it displays the following information. Make a note of the steps to follow and then choose **Close**.
 
     > [!div class="mx-imgBorder"]  
     > ![Step 3 of 3 of change process dialog](media/scrum-to-agile/change-process-scrum-to-agile-wizard-complete.png)
 
 Steps to manually update your work items and board settings:
-- Update the column to state mapping for each team board
-- Update existing work items using the work item types set by the target process
-- Update existing work items using the correct state model of the target process.
+- Update the column to state mapping for each team board.
+- Update existing work items by using the work item types set by the target process.
+- Update existing work items by using the correct state model of the target process.
 
 ## Update board column-to-state settings
 
-You can customize boards to display intermediate columns. For each column added, you must choose a valid workflow state for the work item types displayed on the board. For more information, see [Workflow states & state categories](../../../boards/work-items/workflow-and-state-categories.md).
+You can customize boards to display intermediate columns. For each column you add, choose a valid workflow state for the work item types displayed on the board. For more information, see [Workflow states & state categories](../../../boards/work-items/workflow-and-state-categories.md).
 
 1. For each team, [open your board](../../../boards/get-started/plan-track-work.md).
 
 2. Choose the **Correct this now** link or the :::image type="icon" source="../../../media/icons/blue-gear.png" border="false"::: gear icon to configure the board settings.
 
-   The Settings dialog opens. Those tabs that display a :::image type="icon" source="../../../media/icons/required-icon.png" border="false"::: required icon need correction.
+   The **Settings** dialog opens. Those tabs that display a :::image type="icon" source="../../../media/icons/required-icon.png" border="false"::: required icon need correction.
 
    > [!div class="mx-imgBorder"]  
    > ![Columns dialog ](media/scrum-to-agile/column-settings-to-fix.png)
 
-   Rename each column and choose the correct state for each column so that the column-to-state mapping is correct. As needed, add one or more columns. When done, choose **Save and close**.
+   Rename each column and choose the correct state for each column so that the column-to-state mapping is correct. Add one or more columns as needed. When done, choose **Save and close**.
 
    > [!div class="mx-imgBorder"]  
    > ![Board fixed.](media/scrum-to-agile/column-settings-fixed.png)
 
-
 ## Update work items
 
-Your next step is to bulk update work items. The recommended sequence is:
+Next, bulk update work items. Follow this sequence:
 
-- Create a work item query that displays all work items that need update.
+- Create a work item query that displays all work items that need updates.
 - Perform a bulk update to change the work item type of Product Backlog Item work items to User Story.
 - Perform a bulk update on all States to change from Scrum states&mdash;Approved, Committed, and Done&mdash;to Agile process states&mdash;Active, Resolved, and Closed.
 
-1. [Create a query](../../../boards/queries/using-queries.md) to get a list of all Product Backlog Items, Impediments, Features, Tasks, and Epics. You will need to change the work item type of the first two work item types, and the State and Reason fields for all items.
+1. [Create a query](../../../boards/queries/using-queries.md) to get a list of all Product Backlog Items, Impediments, Features, Tasks, and Epics. You need to change the work item type of the first two work item types, and the State and Reason fields for all items.
 
    > [!div class="mx-imgBorder"]  
    > ![Query all items](media/scrum-to-agile/query-all-items-scrum-to-agile.png)
@@ -130,7 +129,7 @@ Your next step is to bulk update work items. The recommended sequence is:
    > [!div class="mx-imgBorder"]  
    > ![Column options dialog, sort tab](media/change-process/query-column-sort.png)
 
-3. Choose **Results** to just show the list of work items.
+3. Choose **Results** to show the list of work items.
 
 4. Highlight all User Stories, choose the :::image type="icon" source="../../../media/icons/actions-icon.png" border="false"::: actions icon, select **Change type**, and change the type to Product Backlog Item.
 
@@ -139,29 +138,29 @@ Your next step is to bulk update work items. The recommended sequence is:
 
    For more details, see [Move, change, or delete work items, Change the work item type](../../../boards/backlogs/move-change-type.md#change-type).
 
-   It's possible that you will receive errors where the work item type and the state are mismatched. In that case, you can't save your changes until you update the state as described in the next step.
+   You might receive errors where the work item type and the state are mismatched. In that case, you can't save your changes until you update the state as described in the next step.
 
    > [!div class="mx-imgBorder"]  
    > ![Error state of changed work item type](media/scrum-to-agile/mismatch-items.png)
 
-5. Highlight all work items of the same State, such as Resolved, choose the :::image type="icon" source="../../../media/icons/actions-icon.png" border="false"::: actions icon, and then select **Edit**. Add the State field and select Committed or a valid value for the Product Backlog Item. You may also need to update the Reason field. For details, see [Bulk edit work items](../../../boards/backlogs/bulk-modify-work-items.md).
+5. Highlight all work items of the same State, such as Resolved, choose the :::image type="icon" source="../../../media/icons/actions-icon.png" border="false"::: actions icon, and then select **Edit**. Add the State field and select Committed or a valid value for the Product Backlog Item. You might also need to update the Reason field. For details, see [Bulk edit work items](../../../boards/backlogs/bulk-modify-work-items.md).
 
    > [!div class="mx-imgBorder"]  
    > ![Edit work item dialog](media/scrum-to-agile/edit-work-items-state-reason.png)
 
-   This should result in an updated list without errors.
+   This step updates the list without errors.
 
    > [!div class="mx-imgBorder"]  
    > ![Updated list without errors.](media/scrum-to-agile/mismatch-items-fixed.png)
 
 6. To save your changes, choose the :::image type="icon" source="../../../media/icons/actions-icon.png" border="false"::: actions icon and select **Save items**.
 
-7. Repeat the above steps to change the work item type for Impediment to Issue, and update the states to valid states for the work item types.
+7. Repeat the preceding steps to change the work item type for Impediment to Issue, and update the states to valid states for the work item types.
 
 8. When done, make sure you choose the :::image type="icon" source="../../../media/icons/actions-icon.png" border="false"::: actions icon and select **Save items**.
 
 > [!TIP]  
-> If you have a number of field value changes, such as populating the Story Points field with the value held in Effort, you can do that using Excel. See [Bulk add or modify work items with Excel](../../../boards/backlogs/office/bulk-add-modify-work-items-excel.md).
+> If you have a number of field value changes, such as populating the Story Points field with the value held in Effort, use Excel. See [Bulk add or modify work items with Excel](../../../boards/backlogs/office/bulk-add-modify-work-items-excel.md).
 
 ## Verify your changes
 
@@ -179,13 +178,13 @@ Your next step is to bulk update work items. The recommended sequence is:
 
 ## Optional updates
 
-After changing the process, you may want to make additional updates as follows:
+After changing the process, consider making the following updates:
 
-- [Change the project name](../../../organizations/projects/rename-project.md)
-- [Update your project summary or vision](../../../organizations/projects/project-vision-status.md)
-- Disable or delete the work item types that won't be used going forward. See [Customize a work item type for an inherited process](customize-process-work-item-type.md#enable-disable)
+- [Change the project name](../../../organizations/projects/rename-project.md).
+- [Update your project summary or vision](../../../organizations/projects/project-vision-status.md).
+- Disable or delete the work item types that you won't use going forward. See [Customize a work item type for an inherited process](customize-process-work-item-type.md#enable-disable).
 
-## Related articles
+## Related content
 
 - [Bulk modify work items](../../../boards/backlogs/bulk-modify-work-items.md)
 - [Change the process used by a project](manage-process.md#migrate)

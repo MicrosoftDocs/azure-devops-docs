@@ -7,13 +7,13 @@ ms.custom: analytics-views, engagement-fy23
 ms.author: chcomley
 author: chcomley
 ms.topic: tutorial
-monikerRange: '>= azure-devops-2019'
+monikerRange: "<=azure-devops"
 ms.date: 11/08/2022
 ---
 
 # Manage Analytics views 
 
-[!INCLUDE [version-gt-eq-2019](../../includes/version-gt-eq-2019.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 With Analytics views, you gain a simplified way to specify and share the filter criteria for a Power BI report based on Analytics data. Analytics provides the reporting platform for Azure DevOps. 
 
@@ -29,7 +29,6 @@ Use this article to learn how to:
 > * Favorite a view
 > * Manage permissions for a shared view
 > * Delete a view
-
 
 [!INCLUDE [temp](../includes/boards-disabled.md)]
 
@@ -100,7 +99,6 @@ To delete a view, select the :::image type="icon" source="../media/icons/actions
 > [!div class="nextstepaction"]
 > [Create a Power BI report using an Analytics view](data-connector-connect.md)
 
-
 ## Related articles
 - [Create an Analytics view](analytics-views-create.md) 
 - [Data available from Analytics](data-available-in-analytics.md)
@@ -108,7 +106,6 @@ To delete a view, select the :::image type="icon" source="../media/icons/actions
 - [Power BI integration overview](overview.md)
 - [Query work tracking data using Analytics](../extend-analytics/analytics-recipes.md)
 - [Entities and properties reference for Azure Boards](../analytics/entity-reference-boards.md) 
-
 
 ## Related resources 
 

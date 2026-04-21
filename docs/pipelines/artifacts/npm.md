@@ -3,9 +3,9 @@ title: Publish npm packages with Azure Pipelines
 ms.custom: devx-track-js
 description: Learn how to publish npm packages to internal and external feed using Azure Pipelines.
 ms.assetid: F4C61B91-2C5B-4848-A4BF-B658F549673A
-ms.topic: conceptual
+ms.topic: concept-article
 ms.date: 11/14/2024
-monikerRange: '<= azure-devops'
+monikerRange: "<=azure-devops"
 "recommendations": "true"
 ---
 
@@ -19,7 +19,7 @@ With Azure Pipelines, you can publish your npm packages to Azure Artifacts feeds
 
 - Create an Azure DevOps [organization](../../organizations/accounts/create-organization.md) and a [project](../../organizations/projects/create-project.md#create-a-project) if you haven't already.
 
-- Create a [new feed](../../artifacts/get-started-nuget.md#create-feed) if you don't have one already.
+- Create a [new feed](../../artifacts/get-started-nuget.md#create-a-feed) if you don't have one already.
 
 - If you're using a self-hosted agent, make sure that it has [Node.js and npm](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm).
 
@@ -60,13 +60,7 @@ steps:
 
 ::: moniker-end
 
-::: moniker range="azure-devops-2019"
-
-2. Select **Pipelines** > **Builds**, and then select your build definition. 
-
-::: moniker-end
-
-::: moniker range="> azure-devops-2019"
+::: moniker range="<=azure-devops"
 
 2. Select **Pipelines**, and then select your pipeline definition. 
 
@@ -143,19 +137,13 @@ Navigate to the organization hosting your target feed and [Create a personal acc
 
 ::: moniker-end
 
-::: moniker range="azure-devops-2019"
-
-2. Select **Pipelines** > **Builds**, and then select your build definition. 
-
-::: moniker-end
-
-::: moniker range="> azure-devops-2019"
+::: moniker range="<=azure-devops"
 
 2. Select **Pipelines**, and then select your pipeline definition. 
 
 ::: moniker-end
 
-3. Select **Edit**, and then select the `+` sign to add a new task. Add the *Node.js tool installer*, *npm Authenticate* and *Command line* tasks to your pipeline definition. You can leave the *Node.js tool installer* task with the default settings and configure the *npm Authenticate* and *Command line* tasks as follows:.
+3. Select **Edit**, and then select the `+` sign to add a new task. Add the *Node.js tool installer*, *npm Authenticate* and *Command line* tasks to your pipeline definition. You can leave the *Node.js tool installer* task with the default settings and configure the *npm Authenticate* and *Command line* tasks as follows:
 
     1. **npm Authenticate task**: 
         1. Select the path to your *.npmrc* file.

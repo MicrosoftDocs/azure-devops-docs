@@ -2,122 +2,92 @@
 title: Get started as a project collection administrator or organization owner
 titleSuffix:  Azure DevOps
 description: Learn how to add contributors and configure policies, settings, and other Azure DevOps options available at the organization or collection level.
+ms.custom: copilot-scenario-highlight
 ms.subservice: azure-devops-new-user
 ms.author: chcomley
 author: chcomley
 ms.topic: overview
+ai-usage: ai-assisted
 monikerRange: '<= azure-devops'
-ms.date: 02/05/2025
+ms.date: 03/17/2026
 ---
 
 # Manage your organization or collection
 
 [!INCLUDE [version-lt-eq-azure-devops](../includes/version-lt-eq-azure-devops.md)]  
 
-After you create an organization or project collection, add contributors and configure policies, settings, and other options available to you. This article provides an overview of tasks to ensure you set up your organization or collection to get maximal use of your services. 
+After you create an organization or project collection, configure users, policies, and settings to get the most out of Azure DevOps.
 
 ::: moniker range="azure-devops"
-Each organization is associated with one and only one collection. If you need to create another organization, see [Plan your organizational structure](plan-your-azure-devops-org-structure.md) and [Create an organization](../organizations/accounts/create-organization.md).
+Each organization has exactly one collection. To create another organization, see [Plan your organizational structure](plan-your-azure-devops-org-structure.md) and [Create an organization](../organizations/accounts/create-organization.md).
 ::: moniker-end 
 
 ::: moniker range="< azure-devops"
-When you install Azure DevOps Server, you automatically create a default collection. If you need to create another project collection, see [Manage project collections](/azure/devops/server/admin/manage-project-collections).
+Installing Azure DevOps Server automatically creates a default collection. To create another collection, see [Manage project collections](/azure/devops/server/admin/manage-project-collections).
 ::: moniker-end
+
+[!INCLUDE [ai-assistance-mcp-server-tip](../includes/ai-assistance-mcp-server-tip.md)]
 
 ## Prerequisites
 
 [!INCLUDE [prerequisites-pca-only](../includes/prerequisites-pca-only.md)]
 
-> [!NOTE]   
-> This article provides an overview of tasks that require membership in the **Project Collection Administrators** group. For information on tasks performed by members of a **Project Administrators** group, see [Manage your project](project-admin-tutorial.md).
-
 ## Add users to your organization 
 
 ::: moniker range="azure-devops" 
-For large enterprises, connect Azure DevOps to Microsoft Entra ID and use its security groups to control user access. This way, you can sync users and groups between Microsoft Entra ID and Azure DevOps, and reduce the overhead of managing permissions and user access.
+Add users and security groups through **Organization settings** > **Users**. For large enterprises, [connect to Microsoft Entra ID](../organizations/accounts/connect-organization-to-azure-ad.md) to sync users and groups automatically.
 
-You can add users and security groups to your organization through the web portal **Organization settings > Users** interface, regardless of the size of your enterprise. You can also assign these users and groups to one or more projects within your organization.
-::: moniker-end 
-
-::: moniker range="< azure-devops" 
-For large enterprises, the recommended method to manage Azure DevOps users, is to connect Azure DevOps to Active Directory (AD) and manage user access through security groups defined in AD. That way, when you add and remove users or groups from AD, you automatically add and remove these same users and groups from Azure DevOps. Typically, you should install Active Directory before installing Azure DevOps. You limit the maintenance of managing permissions and user access.
-
-For small and large enterprises, you add users to a server instance through the web portal **Access levels** interface. All users added to the server instance can be added to one or more projects defined within the project collection defined in the server instance. 
-::: moniker-end 
-
-When you add users, you specify their *access level*, which determines the features they can use through the web portal. For more information, review these resources:  
-::: moniker range="azure-devops" 
-- [Get started with permissions, access, and security groups](../organizations/security/about-permissions.md)  
-- [About access levels](../organizations/security/access-levels.md)   
-- [Add organization users and manage access](../organizations/accounts/add-organization-users.md)  
-- [Connect your organization to Microsoft Entra ID](../organizations/accounts/connect-organization-to-azure-ad.md)
+When you add users, you assign an [access level](../organizations/security/access-levels.md) that controls which features they can use. For more information, see [Add organization users and manage access](../organizations/accounts/add-organization-users.md).
 
 > [!NOTE]  
-> If the **Limit user visibility and collaboration to specific projects** preview feature is turned on the organization, users added to the **Project-Scoped Users** group can't access projects that they aren't added to. For more information including important security-related call-outs, see [Limit user visibility for projects and more](#limit-user-visibility-for-projects-and-more), later in this article. 
+> If the **Limit user visibility and collaboration to specific projects** preview feature is enabled, users in the **Project-Scoped Users** group can only access projects they're explicitly added to. For more information, see [Limit user visibility for projects and more](#limit-user-visibility-for-projects-and-more).
 
 ::: moniker-end  
 
 ::: moniker range="< azure-devops" 
-- [Get started with permissions, access, and security groups](../organizations/security/about-permissions.md)  
-- [About access levels](../organizations/security/access-levels.md)   
-- [Add users or groups to an access level](../organizations/security/change-access-levels.md) 
-- [Install Active Directory Domain Services (Level 100)](/windows-server/identity/ad-ds/deploy/install-active-directory-domain-services--level-100-)
- 
+Add users through the web portal **Access levels** interface. For large enterprises, [connect to Active Directory (AD)](/windows-server/identity/ad-ds/deploy/install-active-directory-domain-services--level-100-) to sync users and groups automatically. Install AD before installing Azure DevOps Server.
+
+When you add users, you assign an [access level](../organizations/security/access-levels.md) that controls which features they can use. For more information, see [Add users or groups to an access level](../organizations/security/change-access-levels.md).
+
 > [!NOTE]  
-> Even if you add a user or group to an access level, you must also [add them to a project](../organizations/security/add-users-team-project.md) for them to connect to a project and access features available through a supported client or the web portal. 
+> Users must also be [added to a project](../organizations/security/add-users-team-project.md) to connect and access features through a client or the web portal. 
 ::: moniker-end 
 
 ::: moniker range="azure-devops"
 
 ## Set up billing
 
-Azure DevOps charges for the following services as described in [Pricing for Azure DevOps](https://azure.microsoft.com/pricing/details/devops/azure-devops-services/).  
-- Individual services:
-	- Microsoft-hosted CI/CD parallel jobs 
-	- Self-hosted CI/CD parallel jobs
-	- Storage of Azure Artifacts feeds 
-- User licenses for **Basic** or **Basic + Test Plans**. 
- 
-All organizations are granted five free **Basic** licenses and unlimited users with **Stakeholder** access. For information on each access level, see [About access levels](../organizations/security/access-levels.md). 
+All organizations get five free **Basic** licenses and unlimited **Stakeholder** access. If you need more than five contributors, [set up billing](../organizations/billing/set-up-billing-for-your-organization-vs.md#set-up-billing). Users with a Visual Studio subscription don't incur extra charges.
 
-If your organization requires more than five contributors, then you need to set up billing. Users that have a Visual Studio subscription can be added without incurring any further billing charges. Billing is based on the access level, **Basic** or **Basic + Test Plans**, that you assign to the user. For more information, see [Set up billing](../organizations/billing/set-up-billing-for-your-organization-vs.md#set-up-billing).  
+Billing applies to user licenses (**Basic** or **Basic + Test Plans**) and to individual services like CI/CD parallel jobs and Azure Artifacts storage. For details, see [Pricing for Azure DevOps](https://azure.microsoft.com/pricing/details/devops/azure-devops-services/).  
 
 ::: moniker-end
 
 ## Manage security and permissions
 
-Permissions and security groups control access to specific tasks.  
+Security groups and permissions control access to organization and collection-level tasks.
 
 [!INCLUDE [collection-level-permissions](../organizations/security/includes/collection-level-permissions.md)]
 
-For more information about security and setting permissions at the collection-level, review the following articles:
-
-- [Get started with permissions, access, and security groups](../organizations/security/about-permissions.md)   
-- [Change permissions at the organization or collection-level](../organizations/security/change-organization-collection-level-permissions.md). 
+For more information, see [Get started with permissions, access, and security groups](../organizations/security/about-permissions.md) and [Change organization or collection-level permissions](../organizations/security/change-organization-collection-level-permissions.md). 
 
 ### Add members to the Project Collection Administrators group 
 
 ::: moniker range="azure-devops"
-When you create an organization, you become a member of the **Project Collection Administrators** group. This group has the authority to manage the organization’s settings, policies, and processes. It can also create and manage all the projects and extensions in the organization. 
+The organization creator is automatically a member of the **Project Collection Administrators** group, which can manage settings, policies, processes, projects, and extensions across the organization.
 ::: moniker-end
 ::: moniker range="< azure-devops"
-The person who creates a project collection is automatically added as a member to the **Project Collection Administrators** group. Members of this group have permissions to manage the settings, policies, and processes for the organization. Members can also create and manage all projects defined in the organization, and install and manage extensions.   
+The collection creator is automatically a member of the **Project Collection Administrators** group, which can manage settings, policies, processes, projects, and extensions across the organization.
 ::: moniker-end
 
-It's always a good idea to have more than one person who has administrative privileges. [Look up a **Project Collection Administrator**](../organizations/security/look-up-project-collection-administrators.md) and then ask them to add you to the group.
+Have at least two people with administrative privileges. To find existing admins, see [Look up a Project Collection Administrator](../organizations/security/look-up-project-collection-administrators.md).
 
 
 ### Set security policies
 
-Configure the security policies for your organization through the **Organization settings** > **Policies** page. These policies let you grant or restrict the following features: 
-- Non-microsoft application access via OAuth 
-- SSH authentication
-- Creation of public projects
-- Invitation of GitHub user accounts
+Configure security policies in **Organization settings** > **Policies** to control application access, SSH authentication, public project creation, and GitHub account invitations. For more information, see [Change application connection & security policies](../organizations/accounts/change-application-access-policies.md).
 
-:::image type="content" source="../media/policies/security-policies.png" alt-text="Screenshot of Azure DevOps Security Policies.":::
-
-For more information, see [Change application connection & security policies for your organization](../organizations/accounts/change-application-access-policies.md). 
+:::image type="content" source="../media/policies/security-policies.png" alt-text="Screenshot of Azure DevOps Security Policies."::: 
 
 <a id="project-scoped-user-group"></a> 
 <a id="limit-user-visibility-for-projects-and-more"></a>
@@ -128,105 +98,67 @@ For more information, see [Change application connection & security policies for
 
 [!INCLUDE [project-scoped-users-warning](../includes/project-scoped-users-warning.md)]
 
-### Organizations and projects
+By default, users can view all organization and project information. To restrict visibility, enable the **Limit user visibility and collaboration to specific projects** preview feature and add users to the **Project-Scoped Users** group. Scoped users are restricted to:
 
-By default, users added to an organization can view all organization and project information and settings. You can restrict specific users, such as Stakeholders, Microsoft Entra users, or member sof a particular security group, with the **Limit user visibility and collaboration to specific projects** preview feature for the organization. Once the feature [gets turned on](#turn-on-the-preview-feature-and-add-users-to-the-security-group), any user or group that [gets added to the **Project-Scoped Users** group](#identity-search-and-selection) is restricted in the following ways:
+- Only projects they're explicitly added to
+- Limited **Organization settings** views (no access to user lists, billing, or usage data)
+- People-picker results and **@mention** suggestions scoped to their project
 
-- Access is confined to only the projects to which they're explicitly added.
-- Views displaying lists of users, projects, billing details, usage data, and more accessed through **Organization settings** are restricted.
-- The set of people or groups that appear in people-picker search selections and the ability to **@mention** people is limited.
+### People pickers
 
-### Identity search and selection
-
-With Microsoft Entra ID, you can use people pickers to search for any user or group in your organization, not just the ones in your current project. People pickers support the following Azure DevOps functions:
-
-- Selection of a user identity from a work tracking identity field such as **Assigned To**  
-- Selection of a user or group using **@mention** in a work item discussion or rich-text field, a pull request discussion, commit comments, or changeset or shelveset comments
-- Selection of a user or group using **@mention** from a wiki page 
-
-As shown in the following image, start entering a user or security group name into a people picker box until you find a match.
+With Microsoft Entra ID, people pickers search across the entire organization by default. Scoped users only see people in their assigned project. People pickers appear in identity fields (like **Assigned To**), **@mention** in work items, pull requests, commits, and wiki pages.
 
    :::image type="content" source="../organizations/notifications/media/at-mention/identity-selector.png" alt-text="Screenshot of people picker.":::
 
-Users and groups who get [added to the **Project-Scoped Users** group](#turn-on-the-preview-feature-and-add-users-to-the-security-group) can only see and select users and groups in the project they're connected to from a people picker.
+### Enable project-scoped users
 
-### Turn on the preview feature and add users to the security group
+1. Enable the **Limit user visibility and collaboration to specific projects** [preview feature](../project/navigation/preview-features.md) for the organization. 
+1. [Add users to your project](../organizations/security/add-users-team-project.md).
+1. Go to **Organization settings** > **Security** > **Permissions**, select **Project-Scoped Users** > **Members**, and add the users or groups to scope.
 
-Do the following steps to turn on the preview feature and add users and group to the Project-Scoped Users group:
+   The **Project-Scoped Users** group only appears when the preview feature is enabled.
 
-1. Turn on the **Limit user visibility and collaboration to specific projects** [preview feature](../project/navigation/preview-features.md) for the organization. 
-2. Add the users to your project as described in [Add users to a project or team](../organizations/security/add-users-team-project.md). Users added to a team are automatically added to the project and team group. 
-3. Open **Organizations settings** > **Security** > **Permissions** and choose **Project-Scoped Users**. Select the **Members** tab. 
-4. Add all users and groups that you want to scope to the project they're added to. For more information, see [Set permissions at the project- or collection-level](../organizations/security/change-organization-collection-level-permissions.md). 
-   
-   The **Project-Scoped Users** group only appears under the **Permissions** > **Groups** when the **Limit user visibility and collaboration to specific projects** preview feature is turned on. 
-
-All security groups in Azure DevOps are considered organization-level entities, even if they only have permissions for a specific project. This means that security groups get managed at the organization level. 
-
-From the web portal, the visibility of some security groups might be restricted based on the user's permissions. However, you can still discover the names of all security groups within an organization by using the **azure devops** CLI tool or the REST APIs. For more information, see [Add and manage security groups](../organizations/security/add-manage-security-groups.md).
+For more information, see [Set permissions at the project or collection level](../organizations/security/change-organization-collection-level-permissions.md) and [Add and manage security groups](../organizations/security/add-manage-security-groups.md).
 
 ::: moniker-end
 
 ## Manage extensions 
 
-An extension is an installable unit that adds new capabilities to your projects. Azure DevOps extensions support the following functions:
+Extensions add capabilities like work tracking, build and release flows, code testing, and collaboration. For example, the free [Code Search](https://marketplace.visualstudio.com/items?itemName=ms.vss-code-search) extension lets you search across all source repositories. See [Install and configure Search](../project/search/install-configure-search.md).
 
-- Planning and tracking of work items, sprints, scrums, and so on  
-- Build and release flows
-- Code testing and tracking
-- Collaboration among team members
-
-For example, to support [code search](../project/search/functional-code-search.md), install the [Code Search extension](https://marketplace.visualstudio.com/items?itemName=ms.vss-code-search).
- 
-You want to tell your users about extensions and that they can [request an extension](../marketplace/request-extensions.md). To install and manage extensions, be an organization Owner, a member of the **Project Collection Administrators** group. Or, you can get added to the [Manager role for extensions](../marketplace/grant-permissions.md).
-
-### Install Code Search 
-
-Code Search is a free Marketplace extension that lets you search across all your source repositories. For more information, see [Install and configure Search](../project/search/install-configure-search.md).
+Users can [request extensions](../marketplace/request-extensions.md). To install and manage extensions, you need to be an organization Owner, a member of the **Project Collection Administrators** group, or have the [Manager role for extensions](../marketplace/grant-permissions.md).
 
 ::: moniker range=" < azure-devops"
 
-### Turn on Analytics
+## Turn on Analytics
 
-The Analytics service is the reporting platform for Azure DevOps, replacing the previous platform based on SQL Server Reporting Services. Analytics is built for reporting and optimized for fast read-access and server-based aggregations. Use it to answer quantitative questions about the past or present state of your projects.
-
-For more information, see [What is the Analytics service?](../report/powerbi/what-is-analytics.md) and [Turn on the Analytics service](../report/dashboards/analytics-extension.md).
+The [Analytics service](../report/powerbi/what-is-analytics.md) is the reporting platform for Azure DevOps, optimized for fast read-access and server-based aggregations. Use it to answer quantitative questions about the past or present state of your projects. For setup steps, see [Turn on the Analytics service](../report/dashboards/analytics-extension.md).
 ::: moniker-end 
 
 ::: moniker range="azure-devops"
 
 ## Adjust time zone and other organization settings
 
-When you create an organization, you specify the name of your organization and select the region where your organization is hosted. The default **Time zone** is set to *UTC*. You can update the **Time zone** and specify a Privacy URL from the **Organization settings>Overview** page. For more information about these settings, see the following articles:  
-
-- [Time zone settings and usage](../organizations/settings/timezone-settings-usage.md)
-- [Add a privacy policy URL for your organization](../organizations/accounts/add-privacy-policy-url.md)
+The default time zone is UTC. Update it and add a privacy policy URL from **Organization settings** > **Overview**. For more information, see [Time zone settings and usage](../organizations/settings/timezone-settings-usage.md) and [Add a privacy policy URL](../organizations/accounts/add-privacy-policy-url.md).
 
 ::: moniker-end
 
 ## Configure DevOps settings 
 
-Use the following settings, which get defined at the organization-level, to support your work. 
+Organization-level settings for pipelines and repos:
 
 - [Add agent pools](../pipelines/agents/pools-queues.md)
 - [Define pipeline retention settings](../pipelines/policies/retention.md#set-collection-level-retention-policies)
-- Define repository settings:
-	- [Default branch name for new repositories](../repos/git/repository-settings.md#default-branch-name)
-	- [Gravatar images](../repos/git/repository-settings.md#gravatar-images).
+- [Set default branch name for new repositories](../repos/git/repository-settings.md#default-branch-name)
+- [Configure Gravatar images](../repos/git/repository-settings.md#gravatar-images)
  
 ## Customize work-tracking processes
-  
-All work-tracking tools are available immediately after you create a project. Often, one or more users might want to customize the experience to meet one or more business needs. Processes are easily customized through the user interface. However, you might want to establish a methodology for who manages the updates and evaluates requests.
 
-For more information, see the following articles:
-
-- [About process customization and inherited processes](../organizations/settings/work/inheritance-process-model.md)  
-- [Customize a project](../organizations/settings/work/customize-process.md)  
-- [Add and manage processes](../organizations/settings/work/manage-process.md)
+Work-tracking tools are available as soon as you create a project. You can customize processes through the UI to meet your team's needs. For more information, see [About process customization and inherited processes](../organizations/settings/work/inheritance-process-model.md), [Customize a project](../organizations/settings/work/customize-process.md), and [Add and manage processes](../organizations/settings/work/manage-process.md).
 
 ## Alert users with information banners
 
-Communicate with your Azure DevOps users quickly through information banners. Use banners to alert your Azure DevOps users to upcoming changes or events without sending mass emails. For more information, see [Add and manage information banners](../organizations/settings/manage-banners.md). 
+Use information banners to notify users about upcoming changes or events without sending mass emails. For more information, see [Add and manage information banners](../organizations/settings/manage-banners.md). 
 
 ## Review and update notifications
 
@@ -242,12 +174,34 @@ For team members to receive notifications, [you must configure an SMTP server](/
 
 ## Scale your organization or collection  
 
-To learn about scaling your organization, see the following articles. 
-
-- [About projects and scaling your organization](../organizations/projects/about-projects.md)
-- [Plan your organizational structure](plan-your-azure-devops-org-structure.md)  
+For guidance on growing your organization, see [About projects and scaling your organization](../organizations/projects/about-projects.md) and [Plan your organizational structure](plan-your-azure-devops-org-structure.md).  
  
-## Related articles
+::: moniker range="azure-devops"
+
+<a id="use-ai-assistance"></a>
+
+## Use AI to manage your organization
+
+If you configure the [Azure DevOps MCP Server](../mcp-server/mcp-server-overview.md), you can use AI assistants to manage your organization through natural language prompts.
+
+### Example prompts for organization management
+
+| Task | Example prompt |
+|------|----------------|
+| List projects | `List all projects in <Contoso> organization` |
+| Check user access | `Show the access level for user <jamal@contoso.com> in <Contoso> organization` |
+| View organization settings | `Show the organization settings for <Contoso>` |
+| Audit recent changes | `Show recent audit log events for <Contoso> organization` |
+| Manage users | `List all users in <Contoso> organization and their access levels` |
+| Review permissions | `Show the security groups and their members in <Contoso> project` |
+| Check policies | `List all branch policies configured in the <webapp> repo in <Contoso>` |
+| Find inactive users | `List users in <Contoso> organization who haven't signed in during the last <90> days` |
+| Prep a compliance report | `Show all permission changes in <Contoso> organization audit log from the past <30> days` |
+| Review extension usage | `List installed extensions in <Contoso> organization and when each was last updated` |
+
+::: moniker-end
+
+## Related content
 
 ::: moniker range="azure-devops"  
 

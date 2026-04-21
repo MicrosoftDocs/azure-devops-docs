@@ -4,7 +4,7 @@ titleSuffix: Azure Repos
 description: Use the branches page to delete a Git branch in Azure DevOps Services or Team Foundation Server
 ms.assetid: c033e522-5729-49b6-a27c-f13c9f0e57ba
 ms.service: azure-devops-repos
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 10/11/2018
 monikerRange: '<= azure-devops'
 ms.subservice: azure-devops-repos-git

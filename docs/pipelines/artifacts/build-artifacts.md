@@ -4,7 +4,7 @@ description: How to publish and download build artifacts with Azure Pipelines
 ms.assetid: 34874DFA-2364-4C1D-A092-B8F67C499AB0
 ms.topic: reference
 ms.date: 04/21/2022
-monikerRange: '<= azure-devops'
+monikerRange: "<=azure-devops"
 ---
 
 # Publish and download build artifacts
@@ -25,7 +25,7 @@ Azure Artifacts enables teams to use feeds and upstream sources to manage their 
 Artifacts can be published at any stage of your pipeline. You can use YAML or the classic Azure DevOps editor to publish your packages.
 
 #### [YAML](#tab/yaml/)
-::: moniker range=">= azure-devops-2019"
+::: moniker range="<=azure-devops"
 ```yaml
 - powershell: gci env:* | sort-object name | Format-Table -AutoSize | Out-File $env:BUILD_ARTIFACTSTAGINGDIRECTORY/environment-variables.txt
 
@@ -48,8 +48,6 @@ Artifacts can be published at any stage of your pipeline. You can use YAML or th
 
 ::: moniker-end
 
-
-
 #### [Classic](#tab/classic/)
 
 Add the **Publish Build Artifacts** task to your pipeline and fill out the required fields. Make sure your file is at the root of your repository.
@@ -61,7 +59,7 @@ Add the **Publish Build Artifacts** task to your pipeline and fill out the requi
 ### Example: Use multiple tasks
 
 #### [YAML](#tab/yaml/)
-::: moniker range=">= azure-devops-2019"
+::: moniker range="<=azure-devops"
 ```yaml
 - powershell: gci env:* | sort-object name | Format-Table -AutoSize | Out-File $env:BUILD_ARTIFACTSTAGINGDIRECTORY/environment-variables.txt
 
@@ -85,8 +83,6 @@ Add the **Publish Build Artifacts** task to your pipeline and fill out the requi
 
 ::: moniker-end
 
-
-
 #### [Classic](#tab/classic/)
 
 You can add multiple **Publish Build Artifacts** tasks to your pipelines. Make sure your file is at the root of your repository.
@@ -98,7 +94,7 @@ You can add multiple **Publish Build Artifacts** tasks to your pipelines. Make s
 ### Example: Copy and publish binaries
 
 #### [YAML](#tab/yaml/)
-::: moniker range=">= azure-devops-2019"
+::: moniker range="<=azure-devops"
 ```yaml
 - powershell: gci env:* | sort-object name | Format-Table -AutoSize | Out-File $env:BUILD_ARTIFACTSTAGINGDIRECTORY/environment-variables.txt
 
@@ -123,8 +119,6 @@ You can add multiple **Publish Build Artifacts** tasks to your pipelines. Make s
 
 ::: moniker-end
 
-
-
 #### [Classic](#tab/classic/)
 
 :::image type="icon" source="../tasks/utility/media/copy-files.png" border="false"::: **Utility: Copy Files**
@@ -143,32 +137,25 @@ You can add multiple **Publish Build Artifacts** tasks to your pipelines. Make s
 
 * * *
 
-
 > [!NOTE]
 > `Build.ArtifactStagingDirectory` path is cleaned up after each build. If you're using this path to publish your artifact, make sure you copy the content you wish to publish into this directory before the publishing step.
 
 ## Download artifacts
 
 #### [YAML](#tab/yaml/)
-::: moniker range=">= azure-devops-2019"
+::: moniker range="<=azure-devops"
 ```yaml
 - powershell: gci env:* | sort-object name | Format-Table -AutoSize | Out-File $env:BUILD_ARTIFACTSTAGINGDIRECTORY/environment-variables.txt
 
-- task: DownloadBuildArtifacts@0
+- task: DownloadBuildArtifacts@1
   inputs:
-    buildType: 'current'
-    downloadType: 'single'
-    artifactName: 'drop'
-    downloadPath: '$(System.ArtifactsDirectory)'
+    buildType: 'current'        # Options: 'current' | 'specific'. Specify which build artifacts will be downloaded: `current` or from a specific build
+    downloadType: 'single'      # Options: 'single' | 'specific'. Choose whether to download a single artifact or all artifacts of a specific build.
+    artifactName: 'drop'        # Required when downloadType == single. The name of the artifact that will be downloaded.
+    downloadPath: '$(System.ArtifactsDirectory)'    # Path on the agent machine where the artifacts will be downloaded. Default: $(System.ArtifactsDirectory).
 ```
-* **buildType**: specify which build artifacts will be downloaded: `current` (the default value) or from a specific build.
-* **downloadType**: choose whether to download a single artifact or all artifacts of a specific build.
-* **artifactName**: the name of the artifact that will be downloaded.
-* **downloadPath**: path on the agent machine where the artifacts will be downloaded.
 
 ::: moniker-end
-
-
 
 #### [Classic](#tab/classic/)
 
@@ -187,7 +174,7 @@ You can add multiple **Publish Build Artifacts** tasks to your pipelines. Make s
 > [!NOTE]
 > If you're using a deployment task, you can reference your build artifacts using **$(Agent.BuildDirectory)**. See [Agent variables](../build/variables.md#agent-variables) for more details.
 
-::: moniker range=">= azure-devops-2019"
+::: moniker range="<=azure-devops"
 
 When your pipeline run is completed, navigate to **Summary** to explore or download your artifact.
 
@@ -205,13 +192,13 @@ steps:
 - task: DownloadBuildArtifacts@1
   displayName: 'Download Build Artifacts'
   inputs:
-    buildType: specific
-    project: 'xxxxxxxxxx-xxxx-xxxx-xxxxxxxxxxx'
-    pipeline: 20
-    buildVersionToDownload: specific
-    buildId: 128
-    artifactName: drop
-    extractTars: false
+    buildType: specific                        # Options: 'current' | 'specific'. Specify which build artifacts will be downloaded: `current` or from a specific build
+    project: 'xxxxxxxxxx-xxxx-xxxx-xxxxxxxxxxx'    # Required when buildType == specific. Project ID.
+    pipeline: 20                                   # Required when buildType == specific. Build pipeline.
+    buildVersionToDownload: specific    # Options: 'latest' | 'latestFromBranch' | 'specific'. Required when buildType == specific. Build version to download.
+    buildId: 128                        # Required when buildType == specific && buildVersionToDownload == specific. Build ID.
+    artifactName: drop                  # The name of the artifact that will be downloaded.
+    extractTars: false                  # boolean. Extract all files that are stored inside tar archives.
 ```
 
 #### [Classic](#tab/classic/)
@@ -240,7 +227,7 @@ Add the :::image type="icon" source="../tasks/utility/media/downloadbuildartifac
 
 ## Tips
 
-- Disable IIS Basic Authentication if you're using Azure DevOps Server to allow authentication with your Personal Access Token. See [IIS Basic Authentication and PATs](../../integrate/get-started/authentication/iis-basic-auth.md) for more details.
+- Disable IIS Basic Authentication if you're using Azure DevOps Server to allow authentication with your Personal Access Token. For more information, see [Why did my PAT stop working?](../../organizations/accounts/use-personal-access-tokens-to-authenticate.md#q-why-did-my-pat-stop-working).
 
 - Use forward slashes in file path arguments. Backslashes don't work in macOS/Linux agents.
 

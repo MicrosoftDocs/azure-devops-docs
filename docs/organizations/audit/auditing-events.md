@@ -1,14 +1,15 @@
 ---
-title: Auditing events available for Azure DevOps
-titleSuffix: Azure DevOps 
-description: Learn which events are available through Azure DevOps Auditing.  
+title: Auditing events list
+titleSuffix: Azure DevOps
+description: Learn which events are available through Azure DevOps Auditing.
 ms.subservice: azure-devops-audit
 ms.assetid: 9F1D0A0F-02D5-4E06-A5EC-C220472A0F66
 ms.author: chcomley
 author: chcomley
-ms.topic: conceptual
+ms.topic: overview
 monikerRange: '= azure-devops'
-ms.date: 11/22/2024
+ms.date: 02/24/2026
+ai-usage: ai-assisted
 ---
 
 # Auditing events list
@@ -16,18 +17,16 @@ ms.date: 11/22/2024
 [!INCLUDE [version-eq-azure-devops](../../includes/version-eq-azure-devops.md)]
 
 > [!NOTE]
-> Auditing is still in public preview.
+> - Auditing is in public preview.
+> - New actions are continually added to this list. To request an event that isn't currently included in the following tables, share your feedback in the [Developer Community](https://developercommunity.visualstudio.com/search?space=21).
 
-The following tables describe the type of events (or actions) that are available for auditing through the Azure DevOps Auditing feature.
+The following tables describe the events (or actions) available through Azure DevOps Auditing.
 
 [!INCLUDE [important-backed-by-azure-active-directory](includes/important-backed-by-azure-active-directory.md)]
 
-* Identify the *Product Area* for any given event. Refer to the full list in the [Area table](#areas).
-* Determine the *Category* field of an event to understand the type of action performed. See the list of possible action types in the [Categories table](#categories).
-* Find the list of all possible actions grouped by *Product Area* in the [Actions section](#actions).
-
-> [!NOTE]
-> We try our best to keep adding new actions regularly. If you'd like to see an event that isn't currently in the following tables, consider sharing that with us in the [Developer Community](https://developercommunity.visualstudio.com/search?space=21). 
+- Identify the *Product Area* for any given event. Refer to the full list in the [Area table](#areas).
+- Determine the *Category* field of an event to understand the type of action performed. See the list of possible action types in the [Categories table](#categories).
+- Find the list of all possible actions grouped by *Product Area* in the [Actions section](#actions).
 
 ## Areas
 
@@ -65,7 +64,8 @@ The following tables describe the type of events (or actions) that are available
 ## Actions
 
 > [!NOTE]
-> Want to find out what actions your organization logs? Be sure to check out the [Audit Log Query API](/rest/api/azure/devops/audit/audit-log/query): `https://auditservice.dev.azure.com/{YOUR_ORGANIZATION}/_apis/audit/actions`, replacing {YOUR_ORGANIZATION} with the name of your organization. This API returns a list of all audit events your organization could emit.
+> Want to find out what actions your organization logs? Use the [Audit Log Query API](/rest/api/azure/devops/audit/audit-log/query): `https://auditservice.dev.azure.com/{YOUR_ORGANIZATION}/_apis/audit/actions`, replacing {YOUR_ORGANIZATION} with the name of your organization.
+> This API returns a list of all audit events your organization can emit.
 
 ### Artifacts events
 
@@ -164,6 +164,7 @@ The following tables describe the type of events (or actions) that are available
 | `Library.ServiceConnectionCreatedForMultipleProjects` | Created Service Connection "{ConnectionName}" of type {ConnectionType} for multiple projects. |
 | `Library.ServiceConnectionDeleted` | Deleted Service Connection "{ConnectionName}" of type {ConnectionType} from project {ResolveProjectId:ProjectId}. |
 | `Library.ServiceConnectionDeletedFromMultipleProjects` | Deleted Service Connection "{ConnectionName}" of type {ConnectionType} from multiple projects. |
+| `Library.ServiceConnectionExecuted` | Service Connection "{ConnectionName}" of type {ConnectionType} executed in project {ResolveProjectId:ProjectId}. |
 | `Library.ServiceConnectionForProjectModified` | Modified Service Connection "{ConnectionName}" in project {ResolveProjectId:ProjectId}. |
 | `Library.ServiceConnectionModified` | Modified Service Connection "{ConnectionName}" of type {ConnectionType}. |
 | `Library.ServiceConnectionPropertyChanged` | One or more properties of Service Connection "{ConnectionName}" of type {ConnectionType} were changed: IsDisabled = {IsDisabled}. |
@@ -191,8 +192,8 @@ The following tables describe the type of events (or actions) that are available
 
 | Action | Description |
 |--------|-------------|
-| `Organization.Create` | Organization {OrganizationName} was created in {PreferredRegion} region. |
-| `Organization.LinkToAAD` | Organization {OrganizationName} was linked to Microsoft Entra tenant {AADTenant}. |
+| `Organization.Create` | Organization {OrganizationName} was created in {PreferredGeography} geography. |
+| `Organization.LinkToAAD` | Organization {OrganizationName} was linked to Microsoft Entra tenant {EntraTenant}. |
 | `Organization.UnlinkFromAAD` | Organization {OrganizationName} was unlinked from Microsoft Entra tenant. |
 | `Organization.Update.Delete` | Organization {OrganizationName} was deleted. |
 | `Organization.Update.ForceUpdateOwner` | Organization owner was changed from {OldOwnerName} to {NewOwnerName}. Reason specified by actor "{ForceUpdateReason}". |
@@ -213,10 +214,18 @@ The following tables describe the type of events (or actions) that are available
 | Action | Description |
 |--------|-------------|
 | `Pipelines.DeploymentJobCompleted` | Deployment for run "{RunName}" on pipeline "{PipelineName}" to environment "{EnvironmentName}" {DeploymentResult}. |
+| `Pipelines.HostedParallelismPaid` | Organization's hosted pipeline capacity set to paid tier only.|
+| `Pipelines.HostedParallelismPrivate` | Organization's hosted pipeline capacity set to free tier limit for private projects. |
+| `Pipelines.HostedParallelismPublic` | Organization's hosted pipeline capacity set to free tier limit for public projects. |
+| `Pipelines.OAuthConfigurationCreated` | Created OAuth configuration '{ConfigName}' for '{SourceType}'. |
+| `Pipelines.OAuthConfigurationDeleted` | Deleted OAuth configuration '{ConfigName}' for '{SourceType}'. |
+| `Pipelines.OAuthConfigurationUpdated` | Updated OAuth configuration '{ConfigName}' for '{SourceType}'. |
+| `Pipelines.OrganizationSettings` | Pipelines setting "{SettingName}" changed from "{OldValue}" to "{NewValue}" at organization level. |
 | `Pipelines.PipelineCreated` | Created pipeline "{PipelineName}" in project {ResolveProjectId:ProjectId}. |
 | `Pipelines.PipelineDeleted` | Deleted pipeline "{PipelineName}" in project {ResolveProjectId:ProjectId}. |
 | `Pipelines.PipelineModified` | Modified pipeline "{PipelineName}" in project {ResolveProjectId:ProjectId}. |
 | `Pipelines.PipelineRetentionSettingChanged` | Pipelines retention "{SettingName}" changed from {OldValue} to {NewValue} in {ProjectName} project. |
+| `Pipelines.ProjectSettings` | Pipelines setting "{SettingName}" changed from "{OldValue}" to "{NewValue}" in "{ProjectName}" project. |
 | `Pipelines.ResourceAuthorizedForPipeline` | Successfully authorized {ResourceType} resource {ResourceId} for pipeline ID {PipelineId}. |
 | `Pipelines.ResourceAuthorizedForProject` | Successfully authorized {ResourceType} resource {ResourceId} for the project. |
 | `Pipelines.ResourceNotAuthorizedForPipeline` | Didn't authorize {ResourceType} resource {ResourceId} for pipeline ID {PipelineId}. The resource doesn't exist or the user doesn't have permission. |
@@ -225,11 +234,14 @@ The following tables describe the type of events (or actions) that are available
 | `Pipelines.ResourceUnauthorizedForProject` | Successfully unauthorized {ResourceType} resource {ResourceId} for the project. |
 | `Pipelines.RunRetained` | Pipeline run "{RunName}" in project {ResolveProjectId:ProjectId} granted lease ID {RetentionLeaseId} to {RetentionOwnerId}. |
 | `Pipelines.RunUnretained` | Pipeline run "{RunName}" in project {ResolveProjectId:ProjectId} no longer retained. |
-| `Pipelines.ProjectSettings` | Pipelines setting "{SettingName}" changed from "{OldValue}" to "{NewValue}" in "{ProjectName}" project. |
-| `Pipelines.OAuthConfigurationCreated` | Created OAuth configuration '{ConfigName}' for '{SourceType}'. |
-| `Pipelines.OAuthConfigurationDeleted` | Updated OAuth configuration '{ConfigName}' for '{SourceType}'. |
-| `Pipelines.OAuthConfigurationUpdated` | Deleted OAuth configuration '{ConfigName}' for '{SourceType}'. |
-| `Pipelines.OrganizationSettings` | Pipelines setting "{SettingName}" changed from "{OldValue}" to "{NewValue}" at organization level. |
+| `Pipelines.VariablesSetAtRuntime` | A run of pipeline "{PipelineName}" in project {ResolveProjectId:ProjectId}, has defined variables that aren't marked as "Settable at queue time".|
+| `CheckConfiguration.ApprovalCheckOrderChanged` | A check with ID {CheckId} for {ResourceType} "{ResourceName}" in project "{ResolveProjectId:ProjectId}" was changed from {OriginalApprovalType} to {FinalApprovalType}. |
+| `CheckConfiguration.Created`| A check of type {Type} was added to {ResourceType} "{ResourceName}" in project "{ResolveProjectId:ProjectId}" |
+| `CheckConfiguration.Deleted`| A check of type {Type} was removed from {ResourceType} "{ResourceName}" in project "{ResolveProjectId:ProjectId}" |
+| `CheckConfiguration.Disabled` | A check of type {Type} was disabled for {ResourceType} "{ResourceName}" in project "{ResolveProjectId:ProjectId}" |
+| `CheckConfiguration.Enabled`| A check of type {Type} was enabled for {ResourceType} "{ResourceName}" in project "{ResolveProjectId:ProjectId}" |
+| `CheckConfiguration.Updated`| A check of type {Type} was updated for {ResourceType} "{ResourceName}" in project "{ResolveProjectId:ProjectId}" |
+
 
 ### Policy events
 
@@ -253,6 +265,7 @@ The following tables describe the type of events (or actions) that are available
 | `Process.Control.CreateWithoutLabel` | Control created for work item type "{WorkItemTypeReferenceName}" in process "{ProcessName}". |
 | `Process.Control.Delete` | A control was deleted for work item type "{WorkItemTypeReferenceName}" in process "{ProcessName}". |
 | `Process.Control.Update` | Control "{ControlLabel}" updated for work item type "{WorkItemTypeReferenceName}" in process "{ProcessName}". |
+| `Process.Control.UpdateWithoutLabel` | Control updated for work item type "{WorkItemTypeReferenceName}" in process "{ProcessName}". |
 | `Process.Field.Add` | Field "{FieldReferenceName}" created on work item type "{WorkItemTypeReferenceName}" in process "{ProcessName}". |
 | `Process.Field.Create` | Field "{FieldName}" created for process "{ProcessName}". |
 | `Process.Field.Delete` | Field "{FieldReferenceName}" deleted. |
@@ -270,6 +283,7 @@ The following tables describe the type of events (or actions) that are available
 | `Process.Page.Delete` | Page "{PageName}" deleted from work item type "{WorkItemTypeReferenceName}". |
 | `Process.Page.Update` | Page "{PageName}" updated for work item type "{WorkItemTypeReferenceName}". |
 | `Process.Process.CloneXmlToInherited` | The process "{ParentProcessName}" was cloned to an inherited process called "{TargetProcessName}". |
+| `Process.Process.Create` | Created inherited process "{ProcessName}". |
 | `Process.Process.Delete` | Process "{ProcessName}" was set as deleted. |
 | `Process.Process.Edit` | Process with the name "{OldProcessName}" was modified, and has the following name {NewProcessInformation}. |
 | `Process.Process.EditWithoutNewInformation` | Process with the name "{OldProcessName}" was modified. |
@@ -281,6 +295,7 @@ The following tables describe the type of events (or actions) that are available
 | `Process.State.Create` | State "{StateName}" added to "{WorkItemTypeReferenceName}" in process "{ProcessName}". |
 | `Process.State.Delete` | State "{StateName}" deleted from "{WorkItemTypeReferenceName}" in process "{ProcessName}". |
 | `Process.State.Update` | State "{StateName}" updated in "{WorkItemTypeReferenceName}" in process "{ProcessName}". |
+| `Process.SystemControl.Delete` | SystemControl "{ControlId}" deleted in "{WorkItemTypeReferenceName}" for process "{ProcessName}". |
 | `Process.SystemControl.Update` | SystemControl "{ControlId}" updated in "{WorkItemTypeReferenceName}" for process "{ProcessName}". |
 | `Process.WorkItemType.Create` | New work item type "{WorkItemTypeName}" created for process "{ProcessName}". |
 | `Process.WorkItemType.Delete` | Work item type "{WorkItemTypeReferenceName}" deleted from process "{ProcessName}". |
@@ -311,9 +326,9 @@ The following tables describe the type of events (or actions) that are available
 | `Project.UpdateRenameQueued` | Rename for project {PreviousProjectName} to {ProjectName} was started. |
 | `Project.UpdateVisibilityCompleted` | Project {ResolveProjectId:ProjectId} visibility change from {PreviousProjectVisibility} to {ProjectVisibility} was successful. |
 | `Project.UpdateVisibilityQueued` | Project {ResolveProjectId:ProjectId} visibility change from {PreviousProjectVisibility} to {ProjectVisibility} was started. |
-| `Project.IterationPath.Create` | IterationPath {Path} has been created. |
-| `Project.IterationPath.Update` | IterationPath {Path} has been updated. |
-| `Project.IterationPath.Delete` | IterationPath {Path} has been deleted. |
+| `Project.IterationPath.Create` | IterationPath {Path} was created. |
+| `Project.IterationPath.Update` | IterationPath {Path} was updated. |
+| `Project.IterationPath.Delete` | IterationPath {Path} was deleted. |
 | `Project.Process.Modify` | Process for project {ResolveProjectId:ProjectId} was changed from {OldProcessName} to {ProcessName}. |
 | `Project.Process.ModifyWithoutOldProcess` | Process for project {ResolveProjectId:ProjectId} was changed to {ProcessName}. |
 
@@ -335,6 +350,7 @@ The following tables describe the type of events (or actions) that are available
 
 | Action | Description |
 |--------|-------------|
+| `Security.ChangeInheritance` | Permission inheritance for {NamespaceName} was changed (details include namespace, token, and inheritFlag). |
 | `Security.ModifyAccessControlLists` | Permission "{NamespaceName}\{ChangedPermission}" was set to {PermissionModifiedTo} for {ResolveIdentity:SubjectDescriptor}. |
 | `Security.ModifyPermission` | Permission "{NamespaceName}\{ChangedPermission}" was set to {PermissionModifiedTo} for {ResolveIdentity:SubjectDescriptor}. |
 | `Security.RemoveAccessControlLists` | All access control lists were removed on namespace {NamespaceName} on tokens {Tokens}. |
@@ -358,7 +374,7 @@ The following tables describe the type of events (or actions) that are available
 | `Token.SshRevokeEvent` | SSH Key "{DisplayName}" was revoked. |
 | `Token.SshUpdateEvent` | SSH Key "{DisplayName}" was updated. |
 
-## Related articles
+## Related content
 - [Review audit log](azure-devops-auditing.md#review-audit-log)
 - [Export audit events](azure-devops-auditing.md#export-audit-events)
 - [Set up an audit stream](auditing-streaming.md)

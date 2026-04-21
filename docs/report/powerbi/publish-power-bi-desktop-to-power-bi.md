@@ -1,21 +1,23 @@
 ---
-title: Publish a Power BI Desktop file to Power BI  
-titleSuffix: Azure DevOps 
-description: Learn how to publish and enable refresh of a Power BI Desktop file to Power BI that uses Analytics for Azure DevOps. 
+title: Publish a Power BI Desktop file to Power BI
+titleSuffix: Azure DevOps
+description: Learn how to publish and enable refresh of a Power BI Desktop file to Power BI that uses Analytics for Azure DevOps.
 ms.subservice: azure-devops-analytics
 ms.topic: how-to
-ms.assetid: C03A04EC-F011-4043-A38E-5C5394F777CE 
+ms.assetid: C03A04EC-F011-4043-A38E-5C5394F777CE
 ms.author: chcomley
-monikerRange: '>=azure-devops-2019'
+monikerRange: "<=azure-devops"
 author: chcomley
-ms.date: 10/05/2021
+ai-usage: ai-assisted
+ms.date: 04/07/2026
+ms.custom: sfi-image-nochange, pat-reduction
 ---
 
 # Publish a Power BI Desktop file to Power BI 
 
-[!INCLUDE [version-gt-eq-2019](../../includes/version-gt-eq-2019.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
-Once you've [created a Power BI Desktop file](access-analytics-power-bi.md) and the associated datasets, measures, and charts, you can share them with others by creating a dashboard on Power BI. This article shows you how.   
+This article explains how to share your Power BI Desktop file, along with its datasets, measures, and charts, by creating a dashboard in Power BI.
 
 ## Prerequisites
 
@@ -23,59 +25,60 @@ Once you've [created a Power BI Desktop file](access-analytics-power-bi.md) and 
 
 ## Publish to Power BI
 
-1. If using an [Analytics view](what-are-analytics-views.md), verify that the view is Shared and not Private.
+1. If you're using an [Analytics view](what-are-analytics-views.md), make sure the view is set to **Shared**, not **Private**.
 
-1. Open the **Power BI Desktop** file with your data.  
+1. Open your **Power BI Desktop** file that contains the data you want to publish.
 
-1. Select **Publish** on the **Home** tab. 
+1. On the **Home** tab, select **Publish**.
 
-    :::image type="content" source="media/publish-1.png" alt-text="Publish Power BI Desktop file":::
+   :::image type="content" source="media/publish-1.png" border="true" alt-text="Screenshot of highlighted Publish button for Power BI Desktop file.":::
 
-4. Respond to the prompts to sign in. If you don't already have a Power BI account, you'll need to create one. Select **Sign in**.
-  
-    :::image type="content" source="media/publish-2.png" alt-text="Publishing successful":::
+1. Follow the prompts for signing in. If you don't have a Power BI account, create one when prompted. Select **Sign in**.
 
-1. Select the **Open \<file name\> in Power BI** link.
+1. After publishing, to view your report in Power BI, select the **Open 'file name' in Power BI** link.
+
+   :::image type="content" source="media/publish-2.png" border="true" alt-text="Screenshot of successful publish and link to open the .pbix file.":::
 
 ## Configure refresh schedule
 
-1. Expand the navigation pane in Power BI and select the work space that you selected when you published the report.  
+Scheduled refresh automatically updates datasets at specified intervals, so reports and dashboards always show the most current data.
 
-1. Select **Datasets** in the upper right corner.
+1. Save your Power BI report to your Power BI workspace.
+1. In your Power BI workspace, select the ellipsis (**...**) next to your dataset and select **Schedule Data Refresh**.
+1. On the schedule refresh page, choose which data connections you want to refresh.
+1. Set the refresh frequency and specify the time of day for the refresh to occur.
+   The refresh can start as early as five minutes before the scheduled time, but delays of up to one hour might occur.
 
-8. Select the ellipsis next to the dataset that represents the report you just loaded. It's typically the file name.
+1. Find the dataset for your report, named after your file, and select the ellipsis **...** next to it.
 
-    :::image type="content" source="media/publish-3.png" alt-text="Select the dataset":::
+    :::image type="content" source="media/publish-3.png" border="true" alt-text="Screenshot of the dataset for your report in Power BI.":::
 
-1. Select **Schedule Refresh**.  
+1. Under **Data source credentials**, select the **Edit credentials** link next to **ODATA**.
 
-1. Select the **Edit credentials** link next to ODATA under Data source credentials as shown here:
+    :::image type="content" source="media/publish-4.png" border="true" alt-text="Screenshot of Edit credentials link next to OData.":::
 
-    :::image type="content" source="media/publish-4.png" alt-text="Update odata credentials":::
+1. Choose the appropriate authentication method:
+   
+      [!INCLUDE [use-microsoft-entra-reduce-pats](../../includes/use-microsoft-entra-reduce-pats.md)]
 
-1. Select the appropriate authentication option. 
+    - **OAuth2** (recommended) for Microsoft Entra ID. This method provides the most secure and seamless experience, with automatic token refresh and no manual credential rotation.
 
-	* Use **oAuth2**  for Microsoft Entra ID or Windows credentials. This is the recommended approach.
+    :::image type="content" source="media/aad-auth-power-bi.png" border="true" alt-text="Screenshot of OAuth2 authentication configuration for Microsoft Entra ID.":::
 
-      ![Configure Areas dialog](media/aad-auth-power-bi.png)
- 
-	* Use **Basic** for PAT credentials.   
+    - **Basic** for personal access token (PAT) credentials.
 
-      ![Configure Fabrikam Data dialog, Enter credentials](media/publish-5.png)
+    > [!IMPORTANT]
+    > We recommend OAuth2 with Microsoft Entra ID instead of PATs. PATs expire after a set interval and require manual rotation to maintain data refresh. When a PAT expires, the report stops updating with the latest data, even though it still displays existing data. If you must use a PAT, see [Update credentials](client-authentication-options.md#update-credentials) for renewal steps.
 
-      > [!IMPORTANT]  
-      > If you are using a Personal Access Token, remember that the token expires on a set interval. When it expires you'll need to [update the credentials](client-authentication-options.md#update-credentials). Otherwise the report, while still displaying data, won't update with the latest data.
+1. Select **Sign in**.
 
-1. Select **Sign in**.  
+After you complete these steps, Power BI refreshes your data on the schedule you configure, using the credentials you provide.
 
-At this point, the data will update on your scheduled basis using the credentials entered.
+> [!IMPORTANT]
+> Any data included in the Analytics view and published to Power BI is accessible to all users with access to the report, regardless of the project permissions set in Azure DevOps.
 
-> [!IMPORTANT]   
-> Any data included in the Analytics view and published Power BI will be accessible to all users with access to the report, regardless of the project permissions configured in Azure DevOps.    
+## Related content
 
-
-## Related articles
-
-- [About Power BI integration](overview.md)  
-- [Access data through Excel](access-analytics-excel.md)  
-- [Access data through Power BI desktop](access-analytics-power-bi.md)  
+- [Power BI integration overview](overview.md)
+- [Access data through Excel](access-analytics-excel.md)
+- [Access data through Power BI Desktop](access-analytics-power-bi.md)

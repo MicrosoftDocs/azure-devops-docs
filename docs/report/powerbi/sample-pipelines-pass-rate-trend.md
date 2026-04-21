@@ -1,22 +1,23 @@
 ---
 title: Pipeline pass rate sample Power BI report 
 titleSuffix: Azure DevOps
-description: How-to generate a pipeline pass rate Power BI report  
+description: Learn how to generate a pipeline pass rate Power BI report.
 ms.subservice: azure-devops-analytics
 ms.reviewer: desalg
 ms.author: chcomley
 ms.custom: powerbisample, engagement-fy23
 author: chcomley
 ms.topic: sample
-monikerRange: '>= azure-devops-2020' 
-ms.date: 12/15/2022
+monikerRange: "<=azure-devops"
+ms.date: 04/07/2026
+ai-usage: ai-assisted
 ---
 
 # Pipeline pass rate trend sample report 
 
-[!INCLUDE [version-gt-eq-2020](../../includes/version-gt-eq-2020.md)] 
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)] 
 
-This article shows you how to create a report that shows a pipeline's daily pass rate trend. Pass rate of a pipeline is defined as the percentage of successful pipeline runs to the total pipeline runs. It's similar to the 'Pass rate trend' chart of the [Pipeline pass rate report](../../pipelines/reports/pipelinereport.md#pipeline-pass-rate-report).
+This article shows you how to create a report that shows a pipeline's daily pass rate trend. The pass rate of a pipeline is the percentage of successful pipeline runs to the total pipeline runs. It's similar to the 'Pass rate trend' chart of the [Pipeline pass rate report](../../pipelines/reports/pipelinereport.md#pipeline-pass-rate-report).
 The following image shows an example of such a trend.
 
 :::image type="content" source="media/pipeline-reports/pass-rate-trend-pipeline-runs-report.png" alt-text="Screenshot of Power BI Pipelines Runs Pass Rate Trend report.":::
@@ -28,10 +29,9 @@ The following image shows an example of such a trend.
 
 [!INCLUDE [temp](includes/sample-required-reading.md)]
 
-
 ## Sample queries
 
-You can use the following queries of the `PipelineRuns` entity set  to create different but similar pass rate trend reports. 
+To create different but similar pass rate trend reports, use the following queries of the `PipelineRuns` entity set. 
 
 [!INCLUDE [temp](includes/query-filters-pipelines.md)]
 
@@ -101,7 +101,6 @@ PartiallySucceededCount mul 100.0 div TotalCount as PartiallySuccessfulRate)
 [!INCLUDE [temp](includes/sample-query-substitutions.md)]
 
 [!INCLUDE [temp](includes/sample-query-substitutions-pipelines.md)]
-
 
 ### Query breakdown
 
@@ -256,12 +255,11 @@ The following table describes each part of the query.
 
 ### Pass rate trend for a pipeline ID 
 
-Pipelines can be renamed. To ensure that the Power BI reports don't break when the pipeline name is changed, use pipeline ID rather than pipeline name. You can obtain the pipeline ID from the URL of the pipelines runs page.
+You can rename pipelines. To keep Power BI reports from breaking when you change a pipeline name, use the pipeline ID instead of the pipeline name. You can get the pipeline ID from the URL of the pipeline runs page.
 
 ```
 https://dev.azure.com/{organization}/{project}/_build?definitionId={pipelineid}
 ```
-
 
 The following queries return the pipeline runs for a specific pipeline ID from a specified start date.  
 
@@ -322,12 +320,11 @@ PartiallySucceededCount mul 100.0 div TotalCount as PartiallySuccessfulRate)
 
 ### Pass rate trend, filter by branch  
 
-You may want to view the pass rate trend of a pipeline for a particular **branch** only. To create the report, do the following extra steps along with what is outlined in the [Change column data type](#change-column-data-type) and [Create the Line chart report](#create-the-line-chart-report) sections.
+You might want to view the pass rate trend of a pipeline for a particular **branch** only. To create the report, follow these extra steps along with the steps outlined in the [Change column data type](#change-column-data-type) and [Create the Line chart report](#create-the-line-chart-report) sections.
 
 - Expand `Branch` into `Branch.BranchName`.
 - Select Power BI Visualization **Slicer** and add `Branch.BranchName` to the slicer's **Field**.
 - Select the branch from the slicer for which you need to see the pass rate trend.
-
 
 #### [Power BI query](#tab/powerbi/)
 
@@ -386,10 +383,10 @@ PartiallySucceededCount mul 100.0 div TotalCount as PartiallySuccessfulRate)
 
 ### Pass rate trend, filter by build reason
 
-You may want to view the pass rate trend  of a pipeline for only specific **Build Reasons** (Manual / BatchedCI, Pull Request, and so on). To create the report, do the following extra steps along with what is outlined in the [Change column data type](#change-column-data-type) and [Create the Line chart report](#create-the-line-chart-report) sections.
+You might want to view the pass rate trend of a pipeline for only specific **Build Reasons** (Manual, BatchedCI, Pull Request, and so on). To create the report, follow these extra steps along with the steps outlined in the [Change column data type](#change-column-data-type) and [Create the Line chart report](#create-the-line-chart-report) sections.
 
 - Select **Slicer** from the **Visualizations** pane and add the `RunReason` to the slicer's **Field**.
-- Select the pipeline from the slicer for which you need to see the pass rate trend.
+- Select the run reason from the slicer for which you need to see the pass rate trend.
  
 #### [Power BI query](#tab/powerbi/)
 
@@ -421,7 +418,6 @@ in
 ```
 #### [OData query](#tab/odata/)
 
-
 [!INCLUDE [temp](includes/sample-odata-query.md)]
 ```
 https://analytics.dev.azure.com/{organization}/{project}/_odata/v3.0-preview/PipelineRuns?
@@ -448,12 +444,12 @@ PartiallySucceededCount mul 100.0 div TotalCount as PartiallySuccessfulRate)
 
 ### Pass rate trend for all project pipelines
 
-Use the following queries to view the pass rate trend for all the pipelines of the project in a single report. To create the report, do the following extra steps along with what is outlined in the [Change column data type](#change-column-data-type) and [Create the Line chart report](#create-the-line-chart-report) sections.
+Use the following queries to view the pass rate trend for all the pipelines of the project in a single report. To create the report, follow these extra steps along with what is outlined in the [Change column data type](#change-column-data-type) and [Create the Line chart report](#create-the-line-chart-report) sections.
 - Expand `Pipeline` into  `Pipeline.PipelineName`.  
 - Select **Slicer** from the **Visualizations** pane, and add the field `Pipeline.PipelineName` to the slicer's **Field**.  
 - Select the Build pipeline from the slicer for which you need to see the pass rate trend.
 
-Refer [Outcome summary for all pipelines](sample-pipelines-allpipelines.md) sample report that has detailed similar steps as required here.
+Refer to the [Outcome summary for all pipelines](sample-pipelines-allpipelines.md) sample report, which has similar detailed steps.
 
 #### [Power BI query](#tab/powerbi/)
 
@@ -508,31 +504,28 @@ PartiallySucceededCount mul 100.0 div TotalCount as PartiallySuccessfulRate)
 
 ***
 
-
 [!INCLUDE [temp](includes/rename-query.md)]
-
 
 ## Expand columns in Power Query Editor
 
-Prior to creating the report, you'll need to expand columns that return records containing several fields. In this instance, you'll want to expand the `CompletedOn` column to flatten it to `CompletedOn.Date`.  
+Before creating the report, expand columns that return records containing several fields. In this case, expand the `CompletedOn` column to flatten it to `CompletedOn.Date`.  
 To learn how to expand work items, see [Transform Analytics data to generate Power BI reports](transform-analytics-data-report-generation.md#expand-columns). 
  
 ## Change column data type
 
-From the **Transform** menu change the data type for the following columns. To learn how, see [Transform a column data type](transform-analytics-data-report-generation.md#transform-data-type).  
-- `PassRate`, `FailRate` and `PartiallySuccessfulRate` columns to **Decimal Number**.` 
-- `TotalCount` to **Whole Number**.  
+From the **Transform** menu, change the data type for the following columns. To learn how, see [Transform a column data type](transform-analytics-data-report-generation.md#transform-data-type).
+
+- Change the `PassRate`, `FailRate`, and `PartiallySuccessfulRate` columns to **Decimal Number**.
+- Change `TotalCount` to **Whole Number**.
  
 
-## (Optional) Rename column fields
-
-You can rename column fields. For example, you can rename the column `Pipeline.PipelineName` to `Pipeline Name`, or `TotalCount` to `Total Count`. To learn how, see [Rename column fields](transform-analytics-data-report-generation.md#rename-column-fields). 
+[!INCLUDE [temp](includes/sample-rename-column-fields.md)]
 
 [!INCLUDE [temp](includes/close-apply.md)]
 
 ## Create the Line chart report 
 
-1. In Power BI, under **Visualizations**, choose the **Line chart** report. 
+1. In Power BI, under **Visualizations**, select the **Line chart** report. 
 
 	:::image type="content" source="media/pipeline-reports/pass-rate-trend-visualizations.png" alt-text="Screenshot of visualization fields selections for pass rate trend line chart report. ":::
 

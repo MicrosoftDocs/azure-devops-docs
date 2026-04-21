@@ -4,8 +4,9 @@ description: How to publish packages to NuGet.org
 ms.service: azure-devops-artifacts
 ms.author: rabououn
 author: ramiMSFT
+ms.topic: tutorial
 ms.date: 4/01/2021
-monikerRange: '<= azure-devops'
+monikerRange: "<=azure-devops"
 "recommendations": "true"
 ---
 

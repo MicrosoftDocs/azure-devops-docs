@@ -2,7 +2,7 @@
 ms.topic: include
 ---
  
-::: moniker range=">= azure-devops-2019"  
+::: moniker range="<=azure-devops"
 
 ## Process
 

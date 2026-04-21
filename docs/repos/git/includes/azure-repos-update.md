@@ -1,8 +1,6 @@
 ---
 ms.service: azure-devops-repos
 ms.topic: include
-ms.author: vijayma
-author: vijayma
 ms.date: 02/23/2022
 ms.subservice: azure-devops-repos-git
 ---
@@ -21,22 +19,21 @@ az repos show --repository
                 [--subscription]
 ```
 
-**Parameters**
+#### Parameters
 
 |Parameter|Description|
 |---------|-----------|
 |`repository`| Name or ID of a repository.  |
-|`default-branch`|Specify the default branch to be set for the repository. Example: 'refs/heads/live' or 'live'.|
-|`detect`|Automatically detect organization. Accepted values: `false`, `true`.|
+|`default-branch`|Specify the default branch to be set for the repository. An example is `refs/heads/live` or `live`.|
+|`detect`|Automatically detect organization. Accepted values are `false` and `true`.|
 |`name`|New name for the repository.|
-|`org`, `organization`|Azure DevOps organization URL. You can configure the default organization by using `az devops configure -d organization=<ORG_URL>`. **Required** if not configured as default or picked up via git config. Example: `https://dev.azure.com/MyOrganizationName/`.|
-|`project`, `p`|Name or ID of the project. You can configure the default project using `az devops configure -d project=<NAME_OR_ID>`. **Required** if not configured as default or picked up via git config.|
-|`subscription`|Name or ID of subscription. You can configure the default subscription using `az account set -s <NAME_OR_ID>`.|
+|`org`, `organization`|Azure DevOps organization URL. You can configure the default organization by using `az devops configure -d organization=<ORG_URL>`. *Required* if not configured as default or picked up via `git config`. An example is `https://dev.azure.com/MyOrganizationName/`.|
+|`project`, `p`|Name or ID of the project. You can configure the default project by using `az devops configure -d project=<NAME_OR_ID>`. *Required* if not configured as default or picked up via `git config`.|
+|`subscription`|Name or ID of the subscription. You can configure the default subscription by using `az account set -s <NAME_OR_ID>`.|
 
+#### Example
 
-**Example**
-
-The following command renames the *contosoREPO* to *contosoFabrikam* for the default configuration `az devops configure --defaults organization=https://dev.azure.com/fabrikamprime project="Fabrikam Fiber"`.
+The following command renames `contosoREPO` to `contosoFabrikam` for the default configuration `az devops configure --defaults organization=https://dev.azure.com/fabrikamprime project="Fabrikam Fiber"`.
 
 ```azurecli
 az repos show --repository contosoREPO --output table

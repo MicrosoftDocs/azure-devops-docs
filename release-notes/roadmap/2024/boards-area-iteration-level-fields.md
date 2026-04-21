@@ -3,7 +3,7 @@ title: Area and iteration level fields
 author: danhellem
 ms.author: dahellem
 ms.date: 09/4/2024
-ms.topic: article
+ms.topic: whats-new
 ms.service: azure-devops
 ms.subservice: azure-devops-release-notes
 description: Area level and iteration level fields 

@@ -4,6 +4,7 @@ author: gloridelmorales
 ms.author: glmorale
 ms.date: 3/29/2022
 description: With this update, we've added two new extensibility points that you can target in your extensions.  
+ms.topic: release-notes
 ---
 # New extensibility points for Pipelines details view
 

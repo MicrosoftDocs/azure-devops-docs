@@ -5,16 +5,18 @@ description: Learn how to review pull requests using Git in Azure Repos, includi
 ms.assetid: 4C9DFD24-E894-454A-A080-DA511C90CA74
 ms.service: azure-devops-repos
 ms.topic: how-to
-ms.author: vijayma
-author: vijayma
 monikerRange: '<= azure-devops'
 ms.date: 08/03/2022
 ms.subservice: azure-devops-repos-git
+ms.custom: sfi-image-nochange
+ai-usage: ai-assisted
 ---
 
 # Review pull requests
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
+
+[!INCLUDE [ai-assistance-callout](../../includes/ai-assistance-callout.md)]
 
 When you create a [pull request](pull-requests.md) (PR) and specify required/optional reviewers, Azure Repos will notify the reviewers that your PR is ready for review. All required reviewers must approve the changes in your PR before the changes can merge into the target branch. For PRs that change critical branches like the `main` branch, your team might have created [branch policies](branch-policies.md) that specify the reviewers or require a minimum number of reviewers. If branch policies add optional reviewers to your PR, you can keep them, require them, or remove them. If branch policies add required reviewers to your PR, you can't make them optional or remove them. For information about assigning reviewers through branch policies, see [Automatically include code reviewers](branch-policies.md#include-code-reviewers).
 
@@ -47,7 +49,6 @@ In this article you learn how to:
 
 ::: moniker-end
 
-
 ## Prerequisites
 
 ::: moniker range="azure-devops"
@@ -65,15 +66,13 @@ In this article you learn how to:
 
 ::: moniker-end
 
-::: moniker range=">= azure-devops-2019 < azure-devops"
+::: moniker range="<azure-devops"
 
 - **Repos** must be enabled in your Azure DevOps project settings. If the **Repos** hub and associated pages don't display, see [Turn an Azure DevOps service on or off](../../organizations/settings/set-services.md) to reenable **Repos**.
 
 - To review PRs, be a member of the Azure DevOps project with at least **Basic** access. If you aren't a project member, [get added](../../organizations/security/add-users-team-project.md).
 
 ::: moniker-end
-
-
 
 - For more information about permissions and access, see [Default Git repository and branch permissions](../../organizations/security/default-git-permissions.md) and [About access levels](../../organizations/security/access-levels.md).
 
@@ -82,7 +81,6 @@ In this article you learn how to:
 You can manage PRs in Azure DevOps Services by using the [Azure DevOps command line interface (CLI)](../../cli/index.md). The Azure DevOps CLI is available when you install the [Azure CLI](/cli/azure/) and the Azure DevOps extension. For a list of CLI commands to manage PRs, see the [`az repos pr`](/cli/azure/repos/pr) commands.
 
 ::: moniker-end
-
 
 ## Review changes
 
@@ -135,16 +133,6 @@ The following steps describe how reviewers of PRs in Azure Repos can navigate th
 
 ::: moniker-end
 
-::: moniker range="< azure-devops-2022"
-
-To give a quick picture of PR status, the PR **Overview** tab summarizes checks, requirements, and branch policies that the PR is passing or failing. In some cases, the summary shows a snippet of the failure message from a status check's log. The overview lists only failed policies, but you can see all the passed and failed policy checks by selecting **View \<n> checks**.
-
-On the PR **Overview** tab, you can review the PR description and comments to understand proposed changes and see issues other reviewers raised.
-
-:::image type="content" source="media/review-pull-requests/2020/pull-request-overview-2020.png" alt-text="Screenshot that shows the PR overview tab.":::
-
-::: moniker-end
-
 ### Review files
  
 
@@ -189,8 +177,6 @@ Browse a list of changes from the author on the **Updates** tab.
 View and select changes made in commits to the branch on the **Commits** tab.
 
 :::image type="content" source="media/review-pull-requests/2020/pull-request-commits.png" alt-text="Screenshot showing a list of commits in the Commits tab of an Azure Repos PR.":::
-
-
 
 ## Use comments
 
@@ -291,39 +277,6 @@ New comments initially have an **Active** status, which PR authors update during
 PR authors and reviewers can track PR progress by [filtering](#filter-comments) on comment status, as described in the next section.
 ::: moniker-end
 
-::: moniker range="< azure-devops-2022"
-
-Add comments to a PR to make suggestions, reply to previous comments, and point out problems with the proposed changes.
-
-- Comment inline in the **Files** tab of a PR by hovering over the line you want to comment on and selecting the comment button :::image type="content" source="media/review-pull-requests/2020/pr-comment-icon.png" alt-text="Screenshot showing the Comment button in an Azure Repos PR.":::.
-
-  :::image type="content" source="media/review-pull-requests/2020/pr-comments-summary.png" alt-text="Screenshot of comments in Azure Repos P Rs.":::
-
-- Give feedback not tied to a specific code line by commenting on the **Overview** tab.
-
-- Address the author or other reviewers directly in your comments by using `@username`, and reference work items by using `#workitemID`. You can also reference other PRs by using `!pullrequestID`.
-
-::: moniker-end
-
-::: moniker range="azure-devops-2020"
-
-### Edit, delete, or like a comment
-
-To edit or delete your comment, hover over the comment and select the pencil icon to edit the comment or the garbage icon to delete the comment.
-
-To like your own or someone else's comment, hover over the comment and select the thumbs-up icon. Comments with likes show a filled in icon and the number of likes in the comment list. Hover over the icon to see the list of people who liked the comment.
-
-:::image type="content" source="media/review-pull-requests/2020/edit-comment.png" alt-text="Screenshot showing the edit, delete, and like buttons in a P R comment.":::
-
-::: moniker-end
-
-::: moniker range="=azure-devops-2019"
-
-### Like a comment
-
-To like a comment that you or someone else made, select the heart icon. Hover over the icon in comments to see the list of people who liked the comment.
-
-::: moniker-end
  
 
 ### Filter comments
@@ -335,56 +288,13 @@ You can select which comments or updates show on the **Overview** tab by selecti
 
 ::: moniker-end
 
-::: moniker range="< azure-devops-2022"
-
-You can select which comments and updates show on the **Overview** tab. Hiding some comments and updates gets them out of the way when reviewing code for the first time. You can also show only what's new since the last time you visited the PR.
-
-To filter comments and updates, select the **Show everything (n)** button above the comment list, and select one of the filtering options. The view changes to show only the selected comments and updates. The button label changes to show the filtering criteria and the number of items shown.
-
-:::image type="content" source="media/review-pull-requests/2020/filter-comments.png" alt-text="Screenshot showing the options to filter the comment list in a P R.":::
-
-::: moniker-end
-
-::: moniker range="<= azure-devops-2020"
+::: moniker range="<=azure-devops"
 
 ### Address comments
 
 You can make quick updates to your branch directly from the **Files** tab in **Code** on the web.
 
 :::image type="content" source="./media/complete-pull-requests/pr-editing-changes.png" alt-text="Screenshot that shows the Edit button to update code directly in Azure Repos.":::
-
-::: moniker-end
-
-::: moniker range="< azure-devops-2022"
-
-### Reply and resolve comments
-
-Reply to comments and update comment status to let reviewers know how you're addressing their comments and suggestions. 
-
-- To resolve a comment without replying, select **Resolve** under the comment.
-- To reply to the comment, type your response in the **Write a reply** field, and select **Reply**.
-- To reply to and resolve the comment, type your response in the **Write a reply** field, and select **Reply & resolve**.
-- Reply to specific reviewers by using `@username` in the reply, and reference work items by using `#workitemID`. You can also reference other PRs by using `!pullrequestID`.
-
-New comments start in **Active** status. Select **Resolve** or **Reply & resolve** to update comment status to **Resolved**.
-
-:::image type="content" source="./media/complete-pull-requests/pr-comments-reply-and-resolve.png" alt-text="Screenshot showing how to resolve a comment in Azure Repos P Rs.":::
-
-More options are available in the comment resolution dropdown list:
-
-:::image type="content" source="./media/complete-pull-requests/pr-comment-resolution.png" alt-text="Screenshot of more options in the comment resolution dropdown list.":::
-
-- **Active**: The comment is still under review.
-- **Pending**: The issue in this comment will be addressed, but isn't fixed yet.
-- **Resolved**: The issue brought up in this comment is fixed.
-- **Won't fix**: The suggestion in the comment is noted, but this PR won't address it.
-- **Closed**: Discussion for this comment is closed.
-
-::: moniker-end
-
-::: moniker range=">= azure-devops-2019 < azure-devops-2022"
-
-To keep track of files that have already been reviewed, select **More options** next to a file in your PR, and then select **Mark as reviewed**.
 
 ::: moniker-end
 
@@ -418,7 +328,6 @@ PR reviewers can keep track of reviewed files by choosing **Mark as reviewed** f
 
 ::: moniker-end
 
-
 <a id="set-vote"></a>
 
 ## Vote on PR changes
@@ -442,20 +351,6 @@ The voting options are:
 - **Reject**: indicates that the changes aren't acceptable. When you choose this option, add a comment explaining why. If a required reviewer sets this vote option, the vote will block PR approval.
 
 - **Reset feedback**: clears your vote. The absence of a vote doesn't prevent a PR from being [completed](#complete-a-pr).
-
-::: moniker-end
-
-::: moniker range="< azure-devops-2022"
-
-Use the button at upper right in the PR to vote on the PR changes. The default option is **Approve**, but you can select other options from the dropdown list:
-
-:::image type="content" source="media/review-pull-requests/2020/pr-voting-options.png" alt-text="Screenshot that shows P R voting options.":::
-
-- **Approve**: Approve the proposed changes in the PR.
-- **Approve with suggestions**: Approve the PR, but provide optional suggestions for improvement.
-- **Wait for author**: Don't approve the changes, and ask the author to review your comments. The author should let you know to review the code again after they address your concerns.
-- **Reject**: The changes aren't acceptable. Leave a comment in the PR to explain why.
-- **Reset feedback**: Remove your vote.
 
 ::: moniker-end
 
@@ -517,9 +412,7 @@ Jamal Hartnett  jamalh@fabrikam.com  00000000-0000-0000-0000-000000000000       
 
 ::: moniker-end
 
-
 ***
-
 
 ::: moniker range=">= azure-devops-2022"
 
@@ -540,7 +433,6 @@ PR authors can select a PR resolution option:
 For more information on completing a PR, see [Complete the pull request](complete-pull-requests.md).
 
 ::: moniker-end
-
 
 ## Next steps
 

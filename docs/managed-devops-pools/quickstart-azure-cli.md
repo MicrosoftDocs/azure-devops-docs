@@ -1,8 +1,9 @@
 ---
 title: Create a Managed DevOps Pool using Azure CLI
 description: Learn how to create a Managed DevOps Pool using Azure CLI.
-ms.date: 12/04/2024
+ms.date: 04/30/2025
 ms.topic: quickstart
+ms.custom: peer-review-program
 #Customer intent: As a developer, I want to learn how to create a Managed DevOps Pool using Azure CLI and run a pipeline in the new pool.
 ---
 
@@ -12,26 +13,22 @@ This article shows you how to create a Managed DevOps Pool using Azure CLI, and 
 
 ## Prerequisites
 
-Before completing the steps in this article, have configured your Azure subscription and Azure DevOps organization for use with Managed DevOps Pools, as described in the [Prerequisites](./prerequisites.md) article. These steps need to be completed only once per Azure subscription and Azure DevOps organization.
+* Managed DevOps Pools prerequisites
 
-## Install or run in Azure Cloud Shell
+   Before completing the steps in this article, you must have configured your Azure subscription and Azure DevOps organization for use with Managed DevOps Pools, as described in the [Prerequisites](./prerequisites.md) article. These steps need to be completed only once per Azure subscription and Azure DevOps organization.
 
-The easiest way to learn how to use the Azure CLI is by running a Bash environment in [Azure Cloud Shell](https://portal.azure.com/#cloudshell/) through your browser. To learn about Cloud Shell, see [Quickstart for Bash in Azure Cloud Shell](/azure/cloud-shell/quickstart).
+* Azure CLI prerequisites
 
-When you're ready to install the Azure CLI, see the [installation instructions](/cli/azure/install-azure-cli)
-for Windows, Linux, macOS, and Docker container.
+  * If you want to run the Azure CLI commands on your local machine, see the [Azure CLI installation instructions](/cli/azure/install-azure-cli). If you already have Azure CLI installed, run `az version` to check your version. The Azure CLI extension for Managed DevOps Pools requires Azure CLI version 2.57.0 or higher. If your Azure CLI is lower than 2.57.0, run `az upgrade`. For more information, see [How to update the Azure CLI](/cli/azure/update-azure-cli).
+  * If you want to use [Azure Cloud Shell](https://portal.azure.com/#cloudshell/) through your browser, follow the instructions in [Get started with Azure Cloud Shell ephemeral sessions](/azure/cloud-shell/get-started/ephemeral) to register the **Microsoft.CloudShell** namespace. You only need to register the namespace once per subscription.
 
-Check your version by running `az --version`. Azure Cloud Shell always has the latest version of the Azure CLI preinstalled.
-
-```azurecli-interactive
-az version
-```
+    The following examples use bash, so if you are using Azure Cloud Shell, choose **Bash** when starting Azure Cloud Shell.
 
 ## Sign in to the Azure CLI
 
-Open a command prompt (on Windows, use Windows Command Prompt or PowerShell) and run the following commands. If you're using [Azure Cloud Shell](https://portal.azure.com/#cloudshell/) you don't need to run `az login` unless you want to use a different account.
+Open a command prompt (on Windows, use Windows Command Prompt or PowerShell) and run the following commands.
 
-1. Sign in the to Azure CLI.
+1. Sign in to the Azure CLI. If you're using [Azure Cloud Shell](https://portal.azure.com/#cloudshell/) you don't need to run `az login` unless you want to use a different account.
  
    ```azurecli
    az login
@@ -57,22 +54,19 @@ Open a command prompt (on Windows, use Windows Command Prompt or PowerShell) and
 1. Run the following commands to generate the names for the resources in this quickstart. This example uses the `EastUS2` region. Replace `EastUS2` with your desired region.
 
     ```bash
+    export REGION=EastUS2
     export RANDOM_ID="$(openssl rand -hex 3)"
     export RESOURCE_GROUP_NAME="myManagedDevOpsPoolGroup$RANDOM_ID"
-    export REGION=EastUS2
     export POOL_NAME="mdpPool$RANDOM_ID"
     export DEV_CENTER_NAME="mdpDevCenter$RANDOM_ID"
     export DEV_CENTER_PROJECT_NAME="mdpDevCenterProject$RANDOM_ID"
-    ```
 
-2. Run the following commands to review your resource names.
-
-    ```bash
+    # Echo the generated resource names
+    echo $REGION
     echo $RESOURCE_GROUP_NAME
     echo $POOL_NAME
     echo $DEV_CENTER_NAME
     echo $DEV_CENTER_PROJECT_NAME
-    echo $REGION
     ```
 
 ## Create a resource group
@@ -85,7 +79,7 @@ Open a command prompt (on Windows, use Windows Command Prompt or PowerShell) and
 
 ## Create a dev center and dev center project
 
-1. Install the Azure CLI `devcenter` extension, and ensure it is upgraded to the latest version if it is already installed.
+1. Run the following command, which installs the Azure CLI `devcenter` extension if it's not installed, and updates it to the latest version if it's already installed.
 
     ```azurecli
     az extension add --name devcenter --upgrade
@@ -162,7 +156,7 @@ The `mdp pool create` method has several parameters that take JSON values that c
 
 Create the following three files and save them to the folder where you plan to run the Azure CLI commands to create the pool.
 
-1. Create a file name **agent-profile.json** with the following contents.
+1. Create a file named **agent-profile.json** with the following contents.
 
     ```json
     {
@@ -184,10 +178,10 @@ Create the following three files and save them to the folder where you plan to r
         "images": [
           {
             "aliases": [
-              "ubuntu-22.04"
+              "ubuntu-24.04"
             ],
             "buffer": "*",
-            "wellKnownImageName": "ubuntu-22.04/latest"
+            "wellKnownImageName": "ubuntu-24.04/latest"
           }
         ],
         "osProfile": {
@@ -205,7 +199,7 @@ Create the following three files and save them to the folder where you plan to r
     }
     ```
 
-   This configuration specifies a pool using the **Standard_D2as_v5** image, the **ubuntu-22.04** [Azure Pipelines image](./configure-images.md?tabs=azure-cli#azure-pipelines-images), and a **Standard** [OS Disk type](./configure-pool-settings.md?tabs=azure-cli#os-disk-type) with no [attached data disk](./configure-storage.md?tabs=azure-cli).
+   This configuration specifies a pool using the **Standard_D2as_v5** image, the **ubuntu-24.04** [Azure Pipelines image](./configure-images.md?tabs=azure-cli#azure-pipelines-images), and a **Standard** [OS Disk type](./configure-pool-settings.md?tabs=azure-cli#os-disk-type) with no [attached data disk](./configure-storage.md?tabs=azure-cli).
 
 1. Create a file named **organization-profile.json** with the following contents. Replace `<organization-name>` with the name for your Azure DevOps organization.
 
@@ -231,7 +225,7 @@ Create the following three files and save them to the folder where you plan to r
 
 ## Create the Managed DevOps Pool
 
-1. Install the `mdp` extension, and ensure it is upgraded to the latest version if it is already installed.
+1. Run the following command, which installs the Azure CLI `mdp` extension if it's not installed, and updates it to the latest version if it's already installed.
 
    ```azurecli
     az extension add --name mdp --upgrade
@@ -306,7 +300,7 @@ In this step, we'll create a simple pipeline in the default repository of an Azu
      vmImage: ubuntu-latest
    ```
 
-   In this example, the Managed DevOps Pools is named `fabrikam-managed-pool`, so replace `vmImage: ubuntu-latest` with `name: fabrikam-managed-pools`, and specify the name of your Managed DevOps Pool.
+   In this example, the Managed DevOps Pools is named `fabrikam-managed-pool`, so replace `vmImage: ubuntu-latest` with `name: fabrikam-managed-pool`, and specify the name of your Managed DevOps Pool.
 
    ```
    # Replace fabrikam-managed-pools with the name
@@ -319,7 +313,7 @@ In this step, we'll create a simple pipeline in the default repository of an Azu
 
    ![Screenshot of save and run button.](./media/get-started/save-and-run.png)
 
-1. If this is the first pipeline run in this pool, you may be asked to grant permissions before the pipeline runs.
+1. If this is the first pipeline run in this pool, you may be asked to grant permissions before the pipeline runs. For more information see [This pipeline needs permission to access a resource before this run can continue](../pipelines/troubleshooting/troubleshooting.md#this-pipeline-needs-permission-to-access-a-resource-before-this-run-can-continue).
 
 1. Watch the [pipeline run](../pipelines/create-first-pipeline.md#view-pipeline-run-details) in Azure DevOps, and you can switch over to the Azure portal and see the running agent in the [Agents](./view-agents.md) view.
 

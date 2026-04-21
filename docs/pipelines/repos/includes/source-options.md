@@ -2,33 +2,32 @@
 ms.topic: include
 ms.service: azure-devops-pipelines
 ms.manager: mijacobs
-ms.author: vijayma
-author: vijayma
-ms.date: 06/04/2020
+ms.date: 02/13/2026
 ---
 
 ## Checkout
 
-When a pipeline is triggered, Azure Pipelines pulls your source code from the Azure Repos Git repository. You can control various aspects of how this happens.
+When a pipeline is triggered, Azure Pipelines pulls your source code from the Azure Repos Git repository. You can control various aspects of how your code is checked out.
 
 > [!NOTE]
 > When you include a checkout step in your pipeline, we run the following command: `git -c fetch --force --tags --prune --prune-tags --progress --no-recurse-submodules origin --depth=1`.
-If this does not meet your needs, you can choose to exclude built-in checkout by `checkout: none` and then use a script task to perform your own checkout.
+If this default doesn't meet your needs, you can choose to exclude built-in checkout by `checkout: none` and then use a script task to perform your own checkout.
+
 ### Preferred version of Git
 
 The Windows agent comes with its own copy of Git.
 If you prefer to supply your own Git rather than use the included copy, set `System.PreferGitFromPath` to `true`.
-This setting is always true on non-Windows agents.
+The `System.PreferGitFromPath` setting is always true on non-Windows agents.
 
 ### Checkout path
 
 # [YAML](#tab/yaml/)
 
-If you are checking out a single repository, by default, your source code will be checked out into a directory called `s`. For YAML pipelines, you can change this by specifying `checkout` with a `path`. The specified path is relative to `$(Agent.BuildDirectory)`. For example: if the checkout path value is `mycustompath` and `$(Agent.BuildDirectory)` is `C:\agent\_work\1`, then the source code will be checked out into `C:\agent\_work\1\mycustompath`.
+If you're checking out a single repository, by default, your source code is checked out into a directory called `s`. For YAML pipelines, you can change this by specifying `checkout` with a `path`. The specified path is relative to `$(Agent.BuildDirectory)`. For example: if the checkout path value is `mycustompath` and `$(Agent.BuildDirectory)` is `C:\agent\_work\1`, then the source code is checked out into `C:\agent\_work\1\mycustompath`.
 
-If you are using multiple `checkout` steps and checking out multiple repositories, and not explicitly specifying the folder using `path`, each repository is placed in a subfolder of `s` named after the repository. For example if you check out two repositories named `tools` and `code`, the source code will be checked out into `C:\agent\_work\1\s\tools` and `C:\agent\_work\1\s\code`.
+If you're using multiple `checkout` steps and checking out multiple repositories, and not explicitly specifying the folder using `path`, each repository is placed in a subfolder of `s` named after the repository. For example if you check out two repositories named `tools` and `code`, the source code is checked out into `C:\agent\_work\1\s\tools` and `C:\agent\_work\1\s\code`.
 
-Please note that the checkout path value cannot be set to go up any directory levels above `$(Agent.BuildDirectory)`, so `path\..\anotherpath` will result in a valid checkout path (i.e. `C:\agent\_work\1\anotherpath`), but a value like `..\invalidpath` will not (i.e. `C:\agent\_work\invalidpath`).
+Please note that the checkout path value can't be set to go up any directory levels above `$(Agent.BuildDirectory)`, so `path\..\anotherpath` will result in a valid checkout path (i.e. `C:\agent\_work\1\anotherpath`), but a value like `..\invalidpath` will not (i.e. `C:\agent\_work\invalidpath`).
 
 You can configure the `path` setting in the [Checkout](/azure/devops/pipelines/yaml-schema/steps-checkout) step of your pipeline.
 
@@ -45,7 +44,7 @@ steps:
 
 # [Classic](#tab/classic/)
 
-This setting is not configurable in the classic editor. Your source code will be checked out into a directory called `s`, which is relative to `$(Agent.BuildDirectory)`. For example: if `$(Agent.BuildDirectory)` is `C:\agent\_work\1`, then the source code will be checked out into `C:\agent\_work\1\mycustompath`.
+The path setting isn't configurable in the classic editor. Your source code is checked out into a directory called `s`, which is relative to `$(Agent.BuildDirectory)`. For example: if `$(Agent.BuildDirectory)` is `C:\agent\_work\1`, then the source code is checked out into `C:\agent\_work\1\mycustompath`.
 
 ---
 
@@ -68,7 +67,7 @@ steps:
 
 # [Classic](#tab/classic/)
 
-You can configure the **Submodules** setting from the properties of the **Get sources** task in your pipeline if you want to download files from [submodules](https://git-scm.com/book/en/v2/Git-Tools-Submodules).
+You can configure the **Submodules** setting from the properties of the `Get sources` task in your pipeline if you want to download files from [submodules](https://git-scm.com/book/en/v2/Git-Tools-Submodules).
 
 ![Configure Submodules setting.](../media/github/github-options.png)
 
@@ -95,7 +94,7 @@ The build pipeline will check out your Git submodules as long as they are:
 
 In some cases you can't use the **Checkout submodules** option.
 You might have a scenario where a different set of credentials are needed to access the submodules.
-This can happen, for example, if your main repository and submodule repositories aren't stored in the same Azure DevOps organization, or if your job access token does not have access to the repository in a different project.
+This can happen, for example, if your main repository and submodule repositories aren't stored in the same Azure DevOps organization, or if your job access token doesn't have access to the repository in a different project.
 
 If you can't use the **Checkout submodules** option, then you can instead use a custom script step to fetch submodules.
 First, get a personal access token (PAT) and prefix it with `pat:`.
@@ -120,7 +119,7 @@ Use that variable to populate the secret in the above Git command.
 > [!IMPORTANT]
 > The sync tags feature is supported in Azure Repos Git with Azure DevOps Server 2022.1 and higher.
 
-The checkout step uses the `--tags` option when fetching the contents of a Git repository. This causes the server to fetch all tags as well as all objects that are pointed to by those tags. This increases the time to run the task in a pipeline, particularly if you have a large repository with a number of tags. Furthermore, the checkout step syncs tags even when you enable the shallow fetch option, thereby possibly defeating its purpose. To reduce the amount of data fetched or pulled from a Git repository, Microsoft has added a new option to checkout to control the behavior of syncing tags. This option is available both in classic and YAML pipelines.
+The checkout step uses the `--tags` option when fetching the contents of a Git repository. This causes the server to fetch all tags as well as all objects that are pointed to by those tags. This increases the time to run the task in a pipeline, particularly if you have a large repository with a number of tags. Furthermore, the checkout step syncs tags even when you enable the shallow fetch option, thereby possibly defeating its purpose. To reduce the amount of data fetched or pulled from a Git repository, Microsoft has added a new option to check out to control the behavior of syncing tags. This option is available both in classic and YAML pipelines.
 
 Whether to synchronize tags when checking out a repository can be configured in YAML by setting the `fetchTags` property, and in the UI by configuring the **Sync tags** setting.
 
@@ -142,7 +141,7 @@ You can also configure this setting by using the **Sync tags** option in the pip
 
     :::image type="content" source="../media/more-actions-triggers.png" alt-text="Screenshot of more triggers menu.":::
 
-2. Choose **YAML**, **Get sources**.
+2. Choose **YAML**, `Get sources`.
 
     :::image type="content" source="../media/yaml-get-sources.png" alt-text="Screenshot of Get sources.":::
 
@@ -155,7 +154,7 @@ You can also configure this setting by using the **Sync tags** option in the pip
 
 # [Classic](#tab/classic/)
 
-You can configure the **Sync tags** setting from the properties of the **Get sources** task in your pipeline.
+You can configure the **Sync tags** setting from the properties of the `Get sources` task in your pipeline.
 
 :::image type="content" source="../media/github/github-options.png" alt-text="Screenshot of Git sources options.":::
 
@@ -173,8 +172,10 @@ You can configure the **Sync tags** setting from the properties of the **Get sou
 
 You may want to limit how far back in history to download. Effectively this results in `git fetch --depth=n`. If your repository is large, this option might make your build pipeline more efficient. Your repository might be large if it has been in use for a long time and has sizeable history. It also might be large if you added and later deleted large files.
 
-> [!IMPORTANT]
-> New pipelines created after the [September 2022 Azure DevOps sprint 209 update](/azure/devops/release-notes/2022/sprint-209-update) have **Shallow fetch** enabled by default and configured with a depth of 1. Previously the default was not to shallow fetch. To check your pipeline, view the **Shallow fetch** setting in the pipeline settings UI as described in the following section.
+> [!NOTE]
+> In some organizations, new pipelines created after the [September 2022 Azure DevOps sprint 209 update](/azure/devops/release-notes/2022/sprint-209-update) have **Shallow fetch** enabled by default and configured with a depth of 1. Previously the default wasn't to shallow fetch.
+>
+> To check your pipeline, view the **Shallow fetch** setting in the pipeline settings UI as described in the following section.
 
 # [YAML](#tab/yaml/)
 
@@ -197,7 +198,7 @@ You can also configure fetch depth by setting the **Shallow depth** option in th
 
     :::image type="content" source="../media/more-actions-triggers.png" alt-text="Screenshot of more triggers menu.":::
 
-2. Choose **YAML**, **Get sources**.
+2. Choose **YAML**, `Get sources`.
 
     :::image type="content" source="../media/yaml-get-sources.png" alt-text="Screenshot of Get sources.":::
 
@@ -210,7 +211,7 @@ You can also configure fetch depth by setting the **Shallow depth** option in th
 
 # [Classic](#tab/classic/)
 
-You can configure the **Shallow fetch** setting from the properties of the **Get sources** task in your pipeline.
+You can configure the **Shallow fetch** setting from the properties of the `Get sources` task in your pipeline.
 
 :::image type="content" source="../media/github/github-options.png" alt-text="Screenshot of Git sources options.":::
 
@@ -244,7 +245,7 @@ steps:
 
 # [Classic](#tab/classic/)
 
-Select the **Don't sync sources** setting from the properties of the **Get sources** task in your pipeline.
+Select the **Don't sync sources** setting from the properties of the `Get sources` task in your pipeline.
 
 ![Select the Don't sync sources setting.](../media/github/github-options.png)
 
@@ -258,7 +259,7 @@ Select the **Don't sync sources** setting from the properties of the **Get sourc
 [!INCLUDE [include](build-clean-intro.md)]
 
 > [!NOTE]
-> Cleaning is not effective if you're using a [Microsoft-hosted agent](../../agents/hosted.md) because you'll get a new agent every time.
+> Cleaning isn't effective if you're using a [Microsoft-hosted agent](../../agents/hosted.md) because you'll get a new agent every time.
 
 # [YAML](#tab/yaml/)
 
@@ -294,29 +295,29 @@ jobs:
 
 This gives the following clean options.
 
-* **outputs**: Same operation as the clean setting described in the previous checkout task, plus: Deletes and recreates `$(Build.BinariesDirectory)`. Note that the `$(Build.ArtifactStagingDirectory)` and `$(Common.TestResultsDirectory)` are always deleted and recreated prior to every build regardless of any of these settings.
+* **outputs**: Same operation as the clean setting described in the previous checkout task, plus: Deletes and recreates [`$(Build.BinariesDirectory)`](../../build/variables.md#build-variables). Note that the [`$(Build.ArtifactStagingDirectory)`](../../build/variables.md#build-variables) and [`$(Common.TestResultsDirectory)`](../../build/variables.md#build-variables) are always deleted and recreated prior to every build regardless of any of these settings.
 
-* **resources**: Deletes and recreates `$(Build.SourcesDirectory)`. This results in initializing a new, local Git repository for every build.
+* **resources**: Deletes and recreates [`$(Build.SourcesDirectory)`](../../build/variables.md#build-variables). This results in initializing a new, local Git repository for every build.
 
-* **all**: Deletes and recreates `$(Agent.BuildDirectory)`. This results in initializing a new, local Git repository for every build.
+* **all**: Deletes and recreates [`$(Agent.BuildDirectory)`](../../build/variables.md#agent-variables). This results in initializing a new, local Git repository for every build.
 
 # [Classic](#tab/classic/)
 
-Select the **Clean** setting from the properties of the **Get sources** task in your pipeline and select one of the following options.
+Select the **Clean** setting from the properties of the `Get sources` task in your pipeline and select one of the following options.
 
 ![Select the Clean setting.](../media/github/github-clean-sources.png)
 
-* **Sources**: The build pipeline performs an undo of any changes in `$(Build.SourcesDirectory)`. More specifically, the following Git commands are executed prior to fetching the source.
+* **Sources**: The build pipeline performs an undo of any changes in [`$(Build.SourcesDirectory)`](../../build/variables.md#build-variables). More specifically, the following Git commands are executed prior to fetching the source.
   ```
   git clean -ffdx
   git reset --hard HEAD
   ```
 
-* **Sources and output directory**: Same operation as **Sources** option above, plus: Deletes and recreates `$(Build.BinariesDirectory)`. Note that the `$(Build.ArtifactStagingDirectory)` and `$(Common.TestResultsDirectory)` are always deleted and recreated prior to every build regardless of any of these settings.
+* **Sources and output directory**: Same operation as **Sources** option above, plus: Deletes and recreates [`$(Build.BinariesDirectory)`](../../build/variables.md#build-variables). Note that the [`$(Build.ArtifactStagingDirectory)`](../../build/variables.md#build-variables) and [`$(Common.TestResultsDirectory)`](../../build/variables.md#build-variables) are always deleted and recreated prior to every build regardless of any of these settings.
 
-* **Sources directory**: Deletes and recreates `$(Build.SourcesDirectory)`. This results in initializing a new, local Git repository for every build.
+* **Sources directory**: Deletes and recreates [`$(Build.SourcesDirectory)`](../../build/variables.md#build-variables). This results in initializing a new, local Git repository for every build.
 
-* **All build directories**: Deletes and recreates `$(Agent.BuildDirectory)`. This results in initializing a new, local Git repository for every build.
+* **All build directories**: Deletes and recreates [`$(Agent.BuildDirectory)`](../../build/variables.md#agent-variables). This results in initializing a new, local Git repository for every build.
 
 ---
 
@@ -330,13 +331,13 @@ You can't currently configure this setting in YAML but you can in the classic ed
 
 ![Configure Git options, YAML.](../media/pipelines-options-for-git/yaml-pipeline-git-options-menu.png)
 
-From the classic editor, choose **YAML**, choose the **Get sources** task, and then configure the desired properties there.
+From the classic editor, choose **YAML**, choose the `Get sources` task, and then configure the desired properties there.
 
 ![From the Classic editor, choose YAML > Get sources.](../media/pipelines-options-for-git/yaml-pipeline-git-options.png)
 
 # [Classic](#tab/classic)
 
-You can configure the **Tag sources** setting from the properties of the **Get sources** task in your pipeline.
+You can configure the **Tag sources** setting from the properties of the `Get sources` task in your pipeline.
 
 ![Configure Git options, Classic.](../media/github/github-options.png)
 
@@ -350,8 +351,8 @@ $(Build.DefinitionName)_$(Build.DefinitionVersion)_$(Build.BuildId)_$(Build.Buil
 
 The first four variables are predefined. `My.Variable` can be defined by you on the [variables tab](../../build/variables.md).
 
-The build pipeline labels your sources with a [Git tag](https://git-scm.com/book/en/v2/Git-Basics-Tagging).
+The pipeline labels your sources with a [Git tag](https://git-scm.com/book/en/v2/Git-Basics-Tagging).
 
-Some build variables might yield a value that is not a valid label. For example, variables such as `$(Build.RequestedFor)` and `$(Build.DefinitionName)` can contain white space. If the value contains white space, the tag is not created.
+Some build variables might yield a value that isn't a valid label. For example, variables such as `$(Build.RequestedFor)` and `$(Build.DefinitionName)` can contain white space. If the value contains white space, the tag isn't created.
 
-After the sources are tagged by your build pipeline, an artifact with the Git ref `refs/tags/{tag}` is automatically added to the completed build. This gives your team additional traceability and a more user-friendly way to navigate from the build to the code that was built. The tag is considered a build artifact since it is produced by the build. When the build is deleted either manually or through a retention policy, the tag is also deleted.
+After the sources are tagged by your build pipeline, an artifact with the Git ref `refs/tags/{tag}` is automatically added to the completed build. This gives your team additional traceability and a more user-friendly way to navigate from the build to the code that was built. The tag is considered as a build artifact since it is produced by the build. When the build is deleted either manually or through a retention policy, the tag is also deleted.

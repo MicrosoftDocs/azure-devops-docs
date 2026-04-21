@@ -4,7 +4,7 @@ titleSuffix: Azure Repos
 description: Download or get files from the server in Team Foundation Version Control (TFVC).
 ms.assetid: 33798544-9e9e-4200-b7d8-127fb088c735
 ms.service: azure-devops-repos
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 11/01/2022
 monikerRange: '<= azure-devops'
 ms.subservice: azure-devops-repos-tfvc

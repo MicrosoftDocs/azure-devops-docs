@@ -4,10 +4,10 @@ description: Learn how to connect to your Azure Artifacts feed and restore your 
 ms.service: azure-devops-artifacts
 ms.assetid: 0f66e727-e76a-4a72-be12-3fa1775b9e2c
 ms.manager: mijacobs
-ms.topic: conceptual
+ms.topic: how-to
 ms.custom: engagement-fy23
 ms.date: 06/11/2024
-monikerRange: '<= azure-devops'
+monikerRange: "<=azure-devops"
 "recommendations": "true"
 ---
 
@@ -86,7 +86,7 @@ With Azure Artifacts, you can publish and restore Maven packages from Azure Arti
 
 ::: moniker-end
 
-::: moniker range="azure-devops-2020 || azure-devops-2022"
+::: moniker range="=azure-devops-2022"
 
 1. Sign in to your Azure DevOps collection, and then navigate to your project.
 
@@ -140,57 +140,6 @@ With Azure Artifacts, you can publish and restore Maven packages from Azure Arti
         ```
 
 1. Generate a [Personal Access Token](../../organizations/accounts/use-personal-access-tokens-to-authenticate.md#create-a-pat) with **Packaging** > **Read & write** scope, and then paste it into the `<password>` tag.
-
-::: moniker-end
-
-::: moniker range="azure-devops-2019"
-
-1. Sign in to your Azure DevOps collection, and then navigate to your project.
-
-1. Select **Artifacts**, and then select your feed.
-
-1. Select **Connect to Feed**, and then select **Maven** from the left navigation pane.
-
-1. Select **Generate Maven Credentials** and add the credentials to your user *settings.xml* file inside the `<servers>` tag. Your file should look like the following example:
-
-    ```xml
-      <servers>
-        <server>
-          <id>server-2019-defaultcollection-demo</id>
-          <username><FEED_NAME></username>
-          <password>xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx</password>
-        </server>
-      </servers>
-    ```
-
-1. Add the second snippet to your project's *pom.xml* inside both the `<repositories>` and `<distributionManagement>` tags. Your file should look like the following example:
-
-    ```xml
-      <repositories>
-        <repository>
-          <id>server-2019-defaultcollection-demo</id>
-          <url>http://<SERVER_NAME>/<COLLECTION_NAME>/_packaging/<FEED_NAME>/maven/v1</url>
-          <releases>
-            <enabled>true</enabled>
-          </releases>
-          <snapshots>
-            <enabled>true</enabled>
-          </snapshots>
-        </repository>
-      </repositories>
-      <distributionManagement>
-        <repository>
-          <id>server-2019-defaultcollection-demo</id>
-          <url>http://<SERVER_NAME>/<COLLECTION_NAME>/_packaging/<FEED_NAME>/maven/v1</url>
-          <releases>
-            <enabled>true</enabled>
-          </releases>
-          <snapshots>
-            <enabled>true</enabled>
-          </snapshots>
-        </repository>
-      </distributionManagement>
-    ```
 
 ::: moniker-end
 

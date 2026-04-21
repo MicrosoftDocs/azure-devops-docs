@@ -4,6 +4,7 @@ description: See the Sprint 202 feature updates for Azure DevOps, including next
 author: gloridelmorales
 ms.author: glmorale
 ms.date: 4/20/2022
+ms.topic: release-notes
 ---
 
 # Azure DevOps - Sprint 202 Update

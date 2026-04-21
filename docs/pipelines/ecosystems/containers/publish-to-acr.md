@@ -6,6 +6,7 @@ ms.author: rabououn
 author: ramiMSFT
 ms.date: 08/06/2024
 monikerRange: 'azure-devops'
+ms.custom: sfi-image-nochange
 ---
 
 # Build and publish Docker images to Azure Container Registry
@@ -32,7 +33,7 @@ Using Azure Pipelines, you can set up a pipeline workflow to build and publish y
 
 - The [**Administrator** role for service connections](../../library/add-resource-protection.md) in your Azure DevOps project. 
 
-- An Azure account with an active subscription. [Sign up for free](https://azure.microsoft.com/free/) if you don't have one already.
+- An Azure account with an active subscription. [Sign up for free](https://azure.microsoft.com/pricing/purchase-options/azure-account?cid=msft_learn) if you don't have one already.
 
 ## Get the code
 
@@ -145,7 +146,7 @@ To use Managed Service Identity with Azure Pipelines to publish Docker images to
 
     ```PowerShell
     Invoke-WebRequest -URI <YOUR_AGENT_DOWNLOAD_LINK> -UseBasicParsing  -OutFile <FILE_PATH> 
-    ##Example: Invoke-WebRequest -URI https://vstsagentpackage.azureedge.net/agent/2.213.2/vsts-agent-win-x64-2.213.2.zip -OutFile C:\vsts-agent-win-x64-2.213.2.zip
+    ##Example: Invoke-WebRequest -URI https://download.agent.dev.azure.com/agent/4.255.0/vsts-agent-win-x64-4.255.0.zip -OutFile C:\vsts-agent-win-x64-4.255.0.zip
     ```
 
 1. Run the following command to extract and create your agent.
@@ -216,6 +217,9 @@ To use Managed Service Identity with Azure Pipelines to publish Docker images to
     :::image type="content" source="../media/acrpull-push-roles.png" alt-text="A screenshot showing how to set up acrpull and push roles.":::
 
 ## Create a Docker registry service connection
+
+> [!IMPORTANT]
+> To create a service connection, you must be assigned or be a member of a group that is assigned either the **Administrator** or **Creator** role. See [Add an admin role to a resource](../../library/add-resource-protection.md#service-connections) for more details.
 
 ### [Managed Service Identity](#tab/msi)
 

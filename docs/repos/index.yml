@@ -9,8 +9,8 @@ metadata:
   description: Collaborate on code development using free Git public and private repositories, pull requests, and code review. 
   ms.service: azure-devops-repos
   ms.topic: landing-page 
-  ms.author: vijayma
-  author: vijayma 
+  ms.author: alexpysanets
+  author: Battle-born 
   ms.date: 03/18/2021
   ms.subservice: azure-devops-repos-git
 
@@ -112,6 +112,8 @@ landingContent:
             url: ./tfvc/create-work-workspaces.md
           - text: Branch folders and files
             url: ./tfvc/branch-folders-files.md
+          - text: Migration of custom check-in policies
+            url: ./tfvc/tfvc-check-in-policy-migrate-guide.md
       - linkListType: reference
         links:
           - text: TFVC command reference
@@ -134,3 +136,15 @@ landingContent:
             url: /rest/api/azure/devops/git/
           - text: TFVC REST API
             url: /rest/api/azure/devops/tfvc/
+  - title: Troubleshoot
+    linkLists:
+      - linkListType: how-to-guide
+        links:
+          - text: Troubleshoot code scanning (GitHub Advanced Security)
+            url: ./security/github-advanced-security-code-scanning-troubleshoot.md
+          - text: Troubleshoot dependency scanning (GitHub Advanced Security)
+            url: ./security/github-advanced-security-dependency-scanning-troubleshoot.md
+          - text: Troubleshoot secret scanning (GitHub Advanced Security)
+            url: ./security/github-advanced-security-secret-scanning-troubleshoot.md
+          - text: All troubleshooting guides & FAQs
+            url: ../troubleshoot/index.yml

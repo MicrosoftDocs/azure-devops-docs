@@ -4,15 +4,14 @@ titleSuffix: Azure Boards
 description: Learn how to create work items and monitor work item activity in an Azure Boards project from a Microsoft Teams channel.
 ms.service: azure-devops
 ms.subservice: azure-devops-integration
-ms.custom: cross-service
 ms.topic: how-to
-ms.reviewer: karrg
-ms.author: karrg
+ms.author: chcomley
 author: chcomley
 monikerRange: 'azure-devops'
-ms.date: 08/13/2024
+ms.date: 10/17/2025
+ms.custom: cross-service, sfi-image-nochange
 ---
- 
+
 # Use Azure Boards in Microsoft Teams
 
 [!INCLUDE [version-eq-azure-devops](../../includes/version-eq-azure-devops.md)] 
@@ -36,9 +35,10 @@ By using the Azure Boards app for Microsoft Teams, you can:
 
 | Category | Requirements |
 |--------------|-------------|
-| **Access levels** | - **Contributor** for the project.<br> - Access to a team and channel in Microsoft Teams where you can install an app. |
-| **Permissions** | To create subscriptions in a Slack channel for work item events: Member of the [Project Administrators](../../organizations/security/change-project-level-permissions.md) or [Team Administrators](../../organizations/settings/add-team-administrator.md) group. |
-| **Policies** | To receive notifications: [**Third party application access via OAuth** policy enabled for the organization](../../organizations/accounts/change-application-access-policies.md). |
+| Access levels | - **Contributor** for the project.<br> - Access to a team and channel in Microsoft Teams where you can install an app. |
+| Permissions | To create subscriptions in a Slack channel for work item events: Member of the [Project Administrators](../../organizations/security/change-project-level-permissions.md) or [Team Administrators](../../organizations/settings/add-team-administrator.md) group. |
+
+[!INCLUDE [ai-assistance-callout](../../includes/ai-assistance-callout.md)]
 
 ## Add the Azure Boards app to Teams
 
@@ -60,14 +60,14 @@ After the app installs, you see a welcome message in the Teams conversation pane
 
 :::image type="content" source="media/integrations-teams/welcome-message.png" alt-text="Screenshot of the Welcome message in the conversation pane.":::
 
-### Azure Pipelines app commands
+### Azure Boards app commands
 
 You can use the following `@azure boards` commands to interact with the Azure Boards app in your Teams channel.
 
 | Command        | Functionality  |
 | -------------------- |----------------|
-|@azure boards sign in | Sign in to your Azure Boards organization.|
-|@azure boards sign out | Sign out from your Azure Boards organization.|
+|@azure boards signin | Sign in to your Azure Boards organization.|
+|@azure boards signout | Sign out from your Azure Boards organization.|
 |@azure boards link \<project url> |Link a project to this channel to create work items and receive notifications.|
 |@azure boards unlink| Unlink a project from this channel.|
 |@azure boards subscriptions | Add or remove subscriptions for this channel.|
@@ -181,6 +181,7 @@ To return to the channel and collapse the thread, select **Go to channel**.
 :::image type="content" source="media/integrations-teams/threads-boards-expanded-view.png" alt-text="Screenshot showing the expanded thread view.":::
 
 <a name="configure-azure-devops-services-tabs-in-microsoft-teams"></a>
+
 ## Configure Azure DevOps tabs
 
 To bring your project dashboard or Kanban board into Teams, you can install the Azure DevOps app in a tab in your Teams channel. The Azure DevOps app lets you insert content from the app in messages, and get notifications from the app in your channels.
@@ -222,8 +223,8 @@ If you receive the error **Configuration failed. Please make sure that the organ
 
 If these steps don't resolve your authentication issue, reach out to the [Developer Community](https://developercommunity.visualstudio.com/spaces/21/index.html).
 
-## Related articles
+## Related content
 
 - [Define area paths and assign to a team](../../organizations/settings/set-area-paths.md)
-- [Use Azure Pipelines with Microsoft Teams](../../pipelines/integrations/microsoft-teams.md)
+
 - [Use Azure Repos with Microsoft Teams](../../repos/integrations/repos-teams.md)

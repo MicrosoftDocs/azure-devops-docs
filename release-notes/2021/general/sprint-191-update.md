@@ -4,6 +4,7 @@ description: See the Sprint 191 feature updates for Azure DevOps, including next
 author: gloridelmorales
 ms.author: glmorale
 ms.date: 08/17/2021
+ms.topic: release-notes
 ---
 
 # Azure DevOps - Sprint 191 Update

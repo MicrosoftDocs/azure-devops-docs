@@ -3,11 +3,13 @@ ms.subservice: azure-devops-ecosystem
 title: Extension Manifest Reference| Extensions for Azure DevOps
 description: How to create a manifest for your extension to Azure DevOps
 ms.assetid: e3150221-3cdf-47e1-b7e9-24211498cc29
-ms.topic: conceptual
+ms.topic: reference
+ms.custom: UpdateFrequency3
 monikerRange: '<= azure-devops'
 ms.author: chcomley
 author: chcomley
-ms.date: 01/06/2023
+ms.date: 04/03/2026
+ai-usage: ai-assisted
 ---
 
 # Extension manifest reference
@@ -53,7 +55,7 @@ For information about inputs, see [...](custom-control.md)
 
 #### Mark an extension public
 
-By default, all extensions in the [Azure DevOps Marketplace](https://marketplace.visualstudio.com/azuredevops/) are private. They're only visible to the publisher and accounts shared to by the publisher. If your publisher is verified, you can make your extension public by setting the `Public` flag in your extension manifest:
+By default, all extensions in the [Azure DevOps Marketplace](https://marketplace.visualstudio.com/azuredevops/) are private. They are hidden from public view, and are only visible to the publisher and specific accounts shared to by the publisher. If your publisher is verified, you can make your extension public by setting the `Public` flag in your extension manifest:
 
 ```json
 {
@@ -151,7 +153,7 @@ If your paid BYOL extension offers a trial period (we recommend so), then you ca
 
 > [!NOTE]
 > If you want to target Azure DevOps, but don't wish to surface a **Download** option for your extension, then add the `__DoNotDownload` tag (starts with two underscores) to the extension manifest.
-> If you're moving an extension from the previously-offered billing & licensing from Microsoft to the BYOL model, then contact us for suitable steps.
+> If you're moving an extension from the previously offered billing & licensing from Microsoft to the BYOL model, then contact us for suitable steps.
 
 ### Example of more properties
 
@@ -171,15 +173,15 @@ If your paid BYOL extension offers a trial period (we recommend so), then you ca
 
 <a name="CustomerQnASupport"></a>
 
-### Marketplace Q & A - CustomerQnASupport property
+### Q&A support (CustomerQnASupport)
 
-All extensions on the Visual Studio Marketplace have a Questions and Answers (Q & A) section to allow one-on-one public conversations between extension users and publishers. Publishers can choose between Marketplace Questions and Answers (Q&A), GitHub issues, or a custom Q&A URL. You can disable Q&A in the Marketplace using the CustomerQnASupport property in the manifest. 
+All extensions on the Visual Studio Marketplace have a Questions and Answers (Q & A) section to allow one-on-one public conversations between extension users and publishers. Publishers can choose between Marketplace Q & A, GitHub issues, or a custom Q & A URL. You can disable Q & A in the Marketplace using the `CustomerQnASupport` property in the manifest. 
 
 **Default experience** (No changes to manifest are required)
 - For extensions with a GitHub repository, Marketplace redirects users in the Q&A section to the associated GitHub issues. 
 - For extensions without a GitHub repository, Marketplace Q&A is enabled. 
 
-For a different experience than one of the default options, use the **CustomerQnASupport** property in the manifest.  
+For a different experience than one of the default options, use the `CustomerQnASupport` property in the manifest.  
 
 
 ```json
@@ -199,9 +201,9 @@ Properties for the Customer Q & A Support section:
 - **url** - string, URL for custom Q&A
 
 
-### Examples showing usage of Q & A support
+### Q&A support examples
 
-#### Example: Extension using custom Q & A
+#### Custom Q&A URL
 
 ```json
 {
@@ -211,7 +213,7 @@ Properties for the Customer Q & A Support section:
     } 
 }
 ```
-#### Example: Extension with GitHub repository but using Marketplace Q & A instead of GitHub issues
+#### GitHub repo with Marketplace Q&A
 
 ```json
 {
@@ -220,7 +222,7 @@ Properties for the Customer Q & A Support section:
     } 
 }
 ```
-#### Example: Extension disabling Q & A section
+#### Disable Q&A
 
 ```json
 {
@@ -272,9 +274,9 @@ Supported identifiers for **integrations**:
 
 For more information, see [Extensibility points](../reference/targets/overview.md).
 
-### Examples of installation targets
+### Installation target examples
 
-#### Example: Extension that works with Azure DevOps
+#### Extension for all Azure DevOps
 ```json
 {
     "targets": [
@@ -285,7 +287,7 @@ For more information, see [Extensibility points](../reference/targets/overview.m
 }
 ```
 
-#### Example: Extension that works only with Azure DevOps Services
+#### Extension for cloud only
 
 ```json
 {
@@ -299,7 +301,7 @@ For more information, see [Extensibility points](../reference/targets/overview.m
 
 Installation targets can also be used in the manifest of integrations. For example, products, apps, or tools that work with, but don't install into Azure DevOps.
 
-#### Example: Integration that works with Azure DevOps
+#### Integration for all Azure DevOps
 
 ```json
 {
@@ -311,7 +313,7 @@ Installation targets can also be used in the manifest of integrations. For examp
 }
 ```
 
-#### Example: Integration that only works with Azure DevOps Server
+#### Integration for Server only
 
 ```json
 {
@@ -349,18 +351,15 @@ Version numbers for Azure DevOps Server:
 | 2019         | RTM and updates | 17.0                                |
 | 2020         | RTM and updates | 18.0                                |
 
-### Examples showing versions
+### Version examples
 
-#### Example: Extension that works with Azure DevOps
+#### Cloud and Server extension
 
 ```json
 {
     "targets": [
         {
-            "id": "Microsoft.VisualStudio.Services.Cloud"
-        },
-        {
-            "id": "Microsoft.TeamFoundation.Server",
+            "id": "Microsoft.VisualStudio.Services",
             "version": "[15.0,)"
         }
     ]
@@ -423,14 +422,14 @@ is equivalent to:
 }
 ```
 
-### Using installation targets and demands
+### Targets and demands combined
 
-Installation targets and demands are used together to present users with a correct view of the products/services your extension or integration is compatible with. For example, specifying an installation target of `Microsoft.VisualStudio.Services` with a demand of `api-version/3.0` means the extension works with Azure DevOps. 
+Installation targets and demands are used together to present users with a correct view of the products and services your extension or integration is compatible with. For example, specifying an installation target of `Microsoft.VisualStudio.Services` with a demand of `api-version/3.0` means the extension works with Azure DevOps. 
 
 > [!TIP]
 > For more information on REST APIs, see the [REST API Reference](/rest/api/azure/devops).
 
-#### Example: Extension that uses version 3.0 APIs
+#### Extension with API version 3.0
 
 ```json
 {
@@ -450,7 +449,7 @@ Resolves to the following installation targets:
 1. `Microsoft.VisualStudio.Services.Cloud` 
 2. `Microsoft.TeamFoundation.Server`, version: `[15.0,)`
 
-#### Example: Integration that uses version 2.0 APIs
+#### Integration with API version 2.0
 
 ```json
 {
@@ -501,8 +500,8 @@ In this example, the extension demands version 3.0 of the APIs, which means it c
 | `contributionType/{id}`     | Requires a specific contribution type be available   | No                  | Yes                 |
 
 > [!NOTE]
-> * Use `environment/cloud` and `environment/onprem` only when your extension has topology-related requirements that require running in that particular environment.
-> * `extension`, `contribution`, and `contributionType` demands are evaluated at install time, and requires that the specified extension is already installed and enabled in the organization/collection.
+> - Use `environment/cloud` and `environment/onprem` only when your extension has topology-related requirements that require running in that particular environment.
+> - `extension`, `contribution`, and `contributionType` demands are evaluated at install time and require that the specified extension is already installed and enabled in the organization or collection.
 
 ## Files
 
@@ -524,7 +523,7 @@ The `files` section is where you reference any files you wish to include in your
 }
 ```
 
-### Properties
+### File properties
 
 Properties for the Files section:
 
@@ -573,9 +572,9 @@ For more information, see the [contribution model overview](contributions-overvi
 Use unique identifiers to reference contributions and contribution types. Reference *types* with the `type` property, and reference other contributions with the `targets` property.
 
 - A *full* contribution reference includes the publisher identifier, extension identifier, and contribution/type identifier, separated by
-a dot (.). For example, `ms.vss-web.hub` is the full identifier for the contribution with identifier of "hub" in the "vss-web" extension published by the "ms" (Microsoft) publisher.
-- *Relative* contribution references might get used within an extension manifest for a contribution's reference to another contribution or contribution type within that same extension. In this case, the publisher and extension identifiers are NOT included, and the identifier is a dot (.) followed
-by the contribution identifier. For example, ".hub" might be used within the "vss-web" extension mentioned previously as a shortcut for "ms.vss-web.hub."
+a dot (.). For example, `ms.vss-web.hub` is the full identifier for the contribution with identifier of `hub` in the `vss-web` extension published by the "ms" (Microsoft) publisher.
+- *Relative* contribution references might get used within an extension manifest for a contribution's reference to another contribution or contribution type within that same extension. In this case, the publisher and extension identifiers are NOT included, and the identifier is a dot (`.`) followed
+by the contribution identifier. For example, `.hub` might be used within the `vss-web` extension mentioned previously as a shortcut for `ms.vss-web.hub`.
 
 <a name="contributionTargets"></a>
 
@@ -621,7 +620,7 @@ The Marketplace only supports badges from the following trusted services:
 * opencollective.co/
 
 > [!NOTE]
-> Replace "vsmarketplacebadge.apphb.com" with "vsmarketplacebadges.dev".
+> Replace `vsmarketplacebadge.apphb.com` with `vsmarketplacebadges.dev`.
 
 To show a badge from another service, contact [Customer Support at the Developer Community](https://developercommunity.visualstudio.com/AzureDevOps).
 

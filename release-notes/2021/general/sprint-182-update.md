@@ -4,6 +4,7 @@ description: See the Sprint 182 feature updates for Azure DevOps, including next
 author: sid-ah
 ms.author: simerzou
 ms.date: 02/04/2021
+ms.topic: release-notes
 ---
 
 # Azure DevOps - Sprint 182 Update

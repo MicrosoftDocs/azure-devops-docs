@@ -1,15 +1,18 @@
 ---
 title: Deploy to Azure Kubernetes Service (AKS) using DevOps Projects – VSTS Sprint 134 Update
 ms.date: 5/7/2018
-ms.custom: devx-track-extended-java, devx-track-python
 description: The Sprint 134 Update of Visual Studio Team Services (VSTS) brings better support for Ruby, Python, and Java languages in Build and even more deployment options to Release.
+ms.custom:
+  - devx-track-extended-java
+  - devx-track-python
+  - sfi-image-nochange
+  - awp-ai
+ms.topic: install-set-up-deploy
 ---
 
 # Deploy to Azure Kubernetes Service (AKS) using DevOps Projects – VSTS Sprint 134 Update
 
 The **Sprint 134 Update** of Visual Studio Team Services (VSTS) brings better support for Ruby, Python, and Java languages in **Build** and even more deployment options to **Release**. One of those options is the addition of [Azure Kubernetes Service (AKS) in Azure DevOps Projects](#deploy-to-azure-kubernetes-service-aks-and-azure-service-fabric-using-azure-devops-projects) to help you get started with containerized applications that are ready for scale. We are also announcing that [release gates](#progressively-expose-and-phase-deployments-using-release-gates-now-generally-available), which has been in preview for the last few months, now becomes generally available to help you automate the control of progressive deployments across environments of a release.
-
-A new version of the [VSTS Demo Generator](#vsts-demo-generator) is also available to make it easy to demo and learn VSTS using a rich set of sample data and configuration.
 
 ## What’s new in VSTS
 
@@ -173,7 +176,7 @@ You’ll then be shown a list of the **Page links** and **Work items** affected 
 
 ## VSTS Demo Generator
 
-The [Demo Generator](https://azuredevopsdemogenerator.azurewebsites.net/) helps you create projects on your VSTS account with pre-populated sample content, including source code, work items, iterations, service endpoints, plus build and release definitions based on a template you choose. These projects can be used to follow hands-on-labs, demos, and other educational materials.
+The Demo Generator helps you create projects on your VSTS account with pre-populated sample content, including source code, work items, iterations, service endpoints, plus build and release definitions based on a template you choose. These projects can be used to follow hands-on-labs, demos, and other educational materials.
 
 The latest version offers a simple sign-in, automated installation of extensions, new templates, and support for TFS.
 

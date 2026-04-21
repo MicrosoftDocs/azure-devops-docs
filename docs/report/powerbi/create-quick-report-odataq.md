@@ -1,22 +1,26 @@
 ---
 title: Create a Power BI report with an OData Query
 titleSuffix: Azure DevOps
-description: Learn how to create a trend report using an OData Query.
+description: Learn how to create a Power BI bug trend report using an OData query in Azure DevOps. Follow this quickstart to connect, query, and visualize data effectively.
 ms.subservice: azure-devops-analytics
 ms.author: chcomley
 author: chcomley
-monikerRange: '>= azure-devops-2019'
+monikerRange: "<=azure-devops"
 ms.topic: quickstart
-ms date: 09/06/2024
+ms date: 03/18/2026
+ai-usage: ai-assisted
+ms.custom: copilot-scenario-highlight
 ---
 
-# Create a Power BI report with an OData Query
+# Create a Power BI report with an OData query
 
-[!INCLUDE [version-gt-eq-2019](../../includes/version-gt-eq-2019.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
-With Power BI Desktop, you can easily start creating reports for your project in Azure DevOps. 
+In this quickstart, you create a bug trend report in Power BI Desktop by connecting to Azure DevOps Analytics with an OData query. The query uses server-side filtering and aggregation (`$apply`) to return only the data you need, which keeps refresh times short even for large projects.
 
-If you don't have Power BI Desktop, [download](/power-bi/desktop-what-is-desktop) and install it for free.
+If you don't have Power BI Desktop, you can [download it for free](/power-bi/desktop-what-is-desktop). For information about other connection methods, see [About Power BI integration](overview.md).
+
+[!INCLUDE [ai-assistance-mcp-server-tip](../../includes/ai-assistance-mcp-server-tip.md)]
 
 ## Prerequisites  
 
@@ -43,134 +47,119 @@ If you don't have Power BI Desktop, [download](/power-bi/desktop-what-is-desktop
 ::: moniker-end
 
 ## Create a Power BI query
-    
-Create a Power BI query to pull the data into Power BI as follows:
 
-1. Choose **Get Data**, and then **Blank Query**.
+1. In Power BI Desktop, select **Get Data** > **Blank Query**.
 
     > [!div class="mx-imgBorder"] 
     > ![Screenshot shows Power BI - Blank Query.](media/BlankQuery.png)
 
-2. From the Power BI Query editor, choose **Advanced Editor**.
+1. In the Power Query Editor, select **Advanced Editor**.
 
     > [!div class="mx-imgBorder"] 
     > ![Screenshot shows Power BI - Select Advanced Editor.](media/AdvancedEditor.png)
 
-3. The Advanced Editor window opens.
+1. Replace the contents with the following query:
 
-    > [!div class="mx-imgBorder"] 
-    > ![Screenshot shows Power BI - Advanced Editor.](media/odatapowerbi-advancededitor.png)
-
-4. Replace the contents with the following query:
- 
     ```
     let
-       The query you provided has a syntax issue due to the placement of double quotes. Specifically, the `$apply` and `$orderby` parameters should be part of the URL string, but they are not correctly concatenated. Here is the corrected version:
-
-```markdown
-let
-   Source = OData.Feed (
-      "https://analytics.dev.azure.com/{organization}/{project}/_odata/v4.0-preview/WorkItemSnapshot?"
-      &"$apply=filter("
-      &"WorkItemType eq 'Bug' "
-      &"AND StateCategory ne 'Completed' "
-      &"AND startswith(Area/AreaPath,'{areapath}') "
-      &"AND DateValue ge {startdate} )/"
-      &"groupby((DateValue,State,WorkItemType,Area/AreaPath), aggregate($count as Count))"
-      &"&$orderby=DateValue",
-      null, [Implementation="2.0", OmitValues = ODataOmitValues.Nulls, ODataVersion = 4]
-   )
-in
-    Source
-```
-
-   > [!div class="mx-imgBorder"] 
-   > ![Screenshot of Power BI, Advanced Editor, Pasted Query.](media/odatapowerbi-advancededitor-pasted.png)
-
-1. Substitute your values within the sample query.
-
-    The sample query has strings that you must replace with your values:
-
-    * `{organization}` - Your organization name 
-    * `{project}` - Your team project name. Or omit `/{project}` entirely, for a cross-project query
-    * `{areapath}` - Your Area Path. Format: Project\Level1\Level2
-    * `{startdate}` - The date to start your trend report on. Format: YYYY-MM-DDZ. Example: `2022-09-01Z` represents 2022-September-01. Don't enclose in quotes.
+       Source = OData.Feed (
+          "https://analytics.dev.azure.com/{organization}/{project}/_odata/v4.0-preview/WorkItemSnapshot?"
+          &"$apply=filter("
+          &"WorkItemType eq 'Bug' "
+          &"AND StateCategory ne 'Completed' "
+          &"AND startswith(Area/AreaPath,'{areapath}') "
+          &"AND DateValue ge {startdate} )/"
+          &"groupby((DateValue,State,WorkItemType,Area/AreaPath), aggregate($count as Count))"
+          &"&$orderby=DateValue",
+          null, [Implementation="2.0", OmitValues = ODataOmitValues.Nulls, ODataVersion = 4]
+       )
+    in
+        Source
+    ```
 
     > [!div class="mx-imgBorder"] 
-    > ![Screenshot of Power BI, Advanced Editor, Replaced Strings in Query.](media/odatapowerbi-advancededitor-replaced.png)
+    > ![Screenshot of Power BI, Advanced Editor, Pasted Query.](media/odata-power-bi-advanced-editor-pasted.png)
 
-2. Choose **Done** to execute the query.
+1. Replace the placeholder values in the query:
+
+    | Placeholder | Replace with |
+    |-------------|--------------|
+    | `{organization}` | Your organization name |
+    | `{project}` | Your team project name, or omit `/{project}` entirely for a cross-project query |
+    | `{areapath}` | Your Area Path (format: `Project\Level1\Level2`) |
+    | `{startdate}` | The start date for your trend report (format: `YYYY-MM-DDZ`, for example `2022-09-01Z`). Don't enclose in quotes. |
+
+    > [!div class="mx-imgBorder"] 
+    > ![Screenshot of Power BI, Advanced Editor, Replaced Strings in Query.](media/odata-power-bi-advanced-editor-replaced.png)
+
+1. Select **Done** to execute the query.
 
    Power BI might require you to authenticate. For more information, see [Client authentication options](client-authentication-options.md).
 
+## Expand columns
 
-## Expand Area, Iteration, AssignedTo columns
+The query groups results by `Area/AreaPath`, which returns **Area** as a nested record. You need to expand the record to flatten it into individual columns.
 
-The query returns several columns that you need to expand before you can use them in Power BI. Any entity pulled in using an `$expand` statement returns a record with potentially several fields. You need to expand the record to flatten the entity into its fields. Examples of such entities are: `AssignedTo`, `Iteration`, and `Area`. 
+In the **Power Query Editor**, expand each column that shows *Record*:
 
-After closing the **Advanced Editor** and while remaining in the **Power Query Editor**, select the expand button on the entities you need to flatten.
-
-1. For example, choose the expand button for **Area**, select the properties you want to expand, and choose **OK**. Here, we choose `AreaName` and `AreaPath` to flatten. The `AreaName` property is similar to the **Node Name** field.
+1. Select the expand button on the **Area** column header, select the properties you want (for example, **AreaName** and **AreaPath**), and then select **OK**.
 
     > [!div class="mx-imgBorder"] 
     > ![Screenshot of Power BI transform data, Expand AreaPath column.](media/transform-data/expand-area-path-property.png)
 
 	> [!NOTE]   
-	> The available properties to select depends on the properties requested to return in the query. If you don't specify any properties, then all properties are available. For more information about these properties, see the following metadata references: [Areas](../analytics/entity-reference-boards.md#areas), [Iterations](../analytics/entity-reference-boards.md#iterations), and [Users](../analytics/entity-reference-general.md#users).
-	
-1. The table now contains entity fields.
+	> The available properties depend on the fields requested in the query. If you don't specify any properties, all properties are available. For more information, see [Areas](../analytics/entity-reference-boards.md#areas), [Iterations](../analytics/entity-reference-boards.md#iterations), and [Users](../analytics/entity-reference-general.md#users).
+
+1. The table now contains the expanded fields.
 
     > [!div class="mx-imgBorder"] 
     > ![Screenshot of expanded Area columns.](media/transform-data/expanded-area-columns.png)
 
-1. Repeat steps 1 through 3 for all fields representing entities that need to expand. These fields appear with *Record* listed in the table column when unexpanded. 
+1. Repeat for any other columns that show *Record*.
 
+## Rename fields and close
 
-## Rename fields and query, then Close & Apply
+Optionally, rename columns and the query for clarity before loading the data.
 
-When finished, you might choose to rename columns. 
-
-1. Right-click a column header and select **Rename...**
+1. Right-click a column header and select **Rename**.
 
 	> [!div class="mx-imgBorder"] 
 	> ![Screenshot of Power BI transform data, Rename Columns.](media/transform-data/powerbi-rename-columns.png)
 
-1. You also might want to rename the query from the default **Query1**, to something more meaningful. 
+1. Rename the query from the default **Query1** to something more meaningful, such as **BugTrends**.
 
 	> [!div class="mx-imgBorder"] 
 	> ![Screenshot of Power BI transform data, Rename Query.](media/transform-data/powerbi-rename-query.png)
 
-1. Once done, choose **Close & Apply** to save the query and return to Power BI.
+1. Select **Close & Apply** to save the query and return to Power BI.
 
 	> [!div class="mx-imgBorder"] 
 	> ![Screenshot of Power BI Power Query Editor, Close & Apply.](media/transform-data/powerbi-close-apply.png)
 
 ## Create the report
 
-Power BI shows you the fields you can report on. 
+Power BI shows you the fields you can report on. The following steps assume you didn't rename any columns.
 
-> [!NOTE]   
-> The following example assumes that no one renamed any columns. 
-> :::image type="content" source="media/reports-boards/bug-trends-selections.png" alt-text="Screenshot of Power BI Visualizations and Fields selections for Bug trends report. ":::
+:::image type="content" source="media/reports-boards/bug-trends-selections.png" alt-text="Screenshot of Power BI Visualizations and Fields selections for Bug trends report.":::
 
-For a simple report, do the following steps:
+1. Select the **Line chart** visualization.
+1. Add **DateValue** to **X-axis**.
+    - Right-click **DateValue** and select **DateValue** rather than **Date Hierarchy**. Using **Date Hierarchy** groups dates by level (year, quarter, month, day) instead of showing each calendar date.
+1. Add **State** to **Legend**.
+1. Add **Count** to **Values**.
+    - Right-click the **Count** field and ensure **Sum** is selected.
 
-1. Select Power BI Visualization **Line chart**. 
-1. Add the field "DateValue" to **Axis**
-    - Right-click "DateValue" and select "DateValue," rather than Date Hierarchy
-1. Add the field "State" to **Legend**
-1. Add the field "Count" to **Values**
-    - Right-click WorkItemId field and ensure **Sum** is selected
-
-Example report:
+The following image shows a sample bug trends report:
 
 :::image type="content" source="media/odatapowerbi-bugtrend-report.png" alt-text="Screenshot of Sample Bug trends line chart report.":::
+
+[!INCLUDE [odata-ai-assistance](includes/odata-ai-assistance.md)]
  
-## Next steps
+## Next step
 
 > [!div class="nextstepaction"]
 > [Create an Open bugs report](sample-boards-openbugs.md)
 
-## Related articles
+## Related content
 
 [!INCLUDE [temp](includes/sample-relatedarticles.md)]

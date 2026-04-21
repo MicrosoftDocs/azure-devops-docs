@@ -9,7 +9,7 @@ monikerRange: 'azure-devops'
 
 # Download Universal Packages from Azure Artifacts feeds
 
-[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
+[!INCLUDE [version-eq-azure-devops](../../includes/version-eq-azure-devops.md)]
 
 This article guides you through downloading Universal Packages from your Azure Artifacts feed using the command line interface.
 
@@ -62,6 +62,9 @@ Make sure you have set up authentication, and then run the following command to 
     ```azurecli
     az artifacts universal download --organization https://dev.azure.com/<YOUR_ORGANIZATION_NAME> --feed <FEED_NAME> --name <PACKAGE_NAME> --version <PACKAGE_VERSION> --path <DOWNLOAD_PATH>
     ```
+
+> [!NOTE]
+> Azure Artifacts does not support a direct API endpoint to download Universal Packages. You must use the Azure CLI to download the package.
 
 ## Download specific files
 

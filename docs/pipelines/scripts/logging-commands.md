@@ -2,8 +2,9 @@
 title: Logging commands
 description: How scripts can request work from the agent
 ms.topic: reference
+ms.custom: doc-kit-assisted
 ms.assetid: 3ec13da9-e7cf-4895-b5b8-735c1883cc7b
-ms.date: 11/19/2024
+ms.date: 03/05/2026
 monikerRange: '<= azure-devops'
 ai-usage: ai-assisted
 ---
@@ -12,8 +13,7 @@ ai-usage: ai-assisted
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
-Logging commands are how [tasks](../process/tasks.md) and scripts communicate with the agent.
-They cover actions like creating new [variables](../process/variables.md), marking a step as failed, and uploading [artifacts](../artifacts/pipeline-artifacts.md). Logging commands are useful when you're troubleshooting a pipeline. 
+Logging commands are how [tasks](../process/tasks.md) and scripts communicate with the Azure Pipelines agent. When a pipeline step writes a specially formatted string to standard output (stdout), the agent intercepts it and performs the requested action—such as setting a variable, uploading an artifact, or marking the step as failed. Logging commands are useful for customizing pipeline behavior and troubleshooting.
 
 > [!IMPORTANT]
 > We make an effort to mask secrets from appearing in Azure Pipelines output, but you still need to take precautions. Never echo secrets as output.
@@ -25,13 +25,30 @@ They cover actions like creating new [variables](../process/variables.md), marki
 > For this reason, secrets shouldn't contain structured data. If, for example, "{ "foo": "bar" }" is set as a secret,
 > "bar" isn't masked from the logs.
 
+## How logging commands work
+
+The Azure Pipelines agent processes logging commands by scanning **standard output (stdout)** from each task and script step in real time as the step executes. When the agent detects a line that matches the `##vso[...]` or `##[...]` pattern in stdout, it interprets the command and takes the requested action (for example, setting a variable or uploading an artifact).
+
+> [!IMPORTANT]
+> Logging commands are **only** processed when written to stdout by tasks and scripts running directly on the agent. They are **not** parsed from:
+>
+> - Log files uploaded with `##vso[build.uploadlog]` or `##vso[task.uploadfile]`
+> - Test result files or attachments
+> - Output from external tools or test frameworks (such as CloudTest) that write to files rather than stdout
+> - Container logs or sidecar process output that isn't captured by the agent
+>
+> If you need logging commands from an external tool to be processed, pipe or redirect that tool's output through your script's stdout. For example:
+>
+> ```bash
+> ./my-external-tool 2>&1 | while IFS= read -r line; do echo "$line"; done
+> ```
+
 |Type  |Commands  |
 |---------|---------|
 |Task commands     |    [AddAttachment](#addattachment-attach-a-file-to-the-build), [Complete](#complete-finish-timeline), [LogDetail](#logdetail-create-or-update-a-timeline-record-for-a-task), [LogIssue](#logissue-log-an-error-or-warning), [PrependPath](#prependpath-prepend-a-path-to-the--path-environment-variable), [SetEndpoint](#setendpoint-modify-a-service-connection-field), [SetProgress](#setprogress-show-percentage-completed), [SetVariable](#setvariable-initialize-or-modify-the-value-of-a-variable), [SetSecret](#setsecret-register-a-value-as-a-secret), [UploadFile](#uploadfile-upload-a-file-that-can-be-downloaded-with-task-logs), [UploadSummary](#uploadsummary-add-some-markdown-content-to-the-build-summary) |
 |Artifact commands     |   [Associate](#associate-initialize-an-artifact), [Upload](#upload-upload-an-artifact)      |
 |Build commands     |  [AddBuildTag](#addbuildtag-add-a-tag-to-the-build), [UpdateBuildNumber](#updatebuildnumber-override-the-automatically-generated-build-number), [UploadLog](#uploadlog-upload-a-log) |
 |Release commands     |    [UpdateReleaseName](#updatereleasename-rename-current-release)     |
-
 
 ## Logging command format 
 
@@ -261,7 +278,6 @@ Set a task as failed. As an alternative, you can also use `exit 1`.
     fi
 ```
 
-
 ### LogDetail: Create or update a timeline record for a task
 
 `##vso[task.logdetail]current operation`
@@ -272,7 +288,7 @@ Creates and updates timeline records.
 This is primarily used internally by Azure Pipelines to report about steps, jobs, and stages.
 While customers can add entries to the timeline, they won't typically be shown in the UI.
 
-The first time we see `##vso[task.detail]` during a step, we create a "detail timeline" record for the step. We can create and update nested timeline records base on `id` and `parentid`.
+The first time we see `##vso[task.logdetail]` during a step, we create a "detail timeline" record for the step. We can create and update nested timeline records base on `id` and `parentid`.
 
 Task authors must remember which GUID they used for each timeline record.
 The logging system keeps track of the GUID for each timeline record, so any new GUID results a new timeline record.
@@ -326,7 +342,7 @@ For more information about output variables, see [set variables in scripts](../p
 
 #### Properties
 
-::: moniker range=">= azure-devops-2019"
+::: moniker range="<=azure-devops"
 * `variable` = variable name (Required)
 * `isSecret` = boolean (Optional, defaults to false)
 * `isOutput` = boolean (Optional, defaults to false)
@@ -340,7 +356,7 @@ For more information about output variables, see [set variables in scripts](../p
 
 Set the variables:
 
-::: moniker range=">= azure-devops-2019"
+::: moniker range="<=azure-devops"
 ```yaml
 - bash: |
     echo "##vso[task.setvariable variable=sauce;]crushed tomatoes"
@@ -352,7 +368,7 @@ Set the variables:
 
 Read the variables:
 
-::: moniker range=">= azure-devops-2019"
+::: moniker range="<=azure-devops"
 ```yaml
 - bash: |
     echo "Non-secrets automatically mapped in, sauce is $SAUCE"
@@ -361,12 +377,11 @@ Read the variables:
 ```
 ::: moniker-end
 
-
 # [PowerShell](#tab/powershell)
 
 Set the variables:
 
-::: moniker range=">= azure-devops-2019"
+::: moniker range="<=azure-devops"
 ```yaml
 - pwsh: |
     Write-Host "##vso[task.setvariable variable=sauce;]crushed tomatoes"
@@ -376,10 +391,9 @@ Set the variables:
 ```
 ::: moniker-end
 
-
 Read the variables:
 
-::: moniker range=">= azure-devops-2019"
+::: moniker range="<=azure-devops"
 ```yaml
 - pwsh: |
     Write-Host "Non-secrets automatically mapped in, sauce is $env:SAUCE"
@@ -390,12 +404,11 @@ Read the variables:
 ```
 ::: moniker-end
 
-
 ---
 
 Console output:
 
-::: moniker range=">= azure-devops-2019"
+::: moniker range="<=azure-devops"
 ```
 Non-secrets automatically mapped in, sauce is crushed tomatoes
 Secrets are not automatically mapped in, secretSauce is 
@@ -404,7 +417,6 @@ Future jobs can also see canned goods
 Future jobs can also see canned goods
 ```
 ::: moniker-end
-
 
 ### SetSecret: Register a value as a secret
 
@@ -519,7 +531,6 @@ Upload and attach attachment to current timeline record. These files aren't avai
 #### Usage
 
 Upload and attach summary Markdown from an .md file in the repository to current timeline record. This summary shall be added to the build/release summary and not available for download with logs. The summary should be in UTF-8 or ASCII format. The summary appears on the **Extensions** tab of your pipeline run. Markdown rendering on the Extensions tab is different from Azure DevOps wiki rendering. For more information on Markdown syntax, see the [Markdown Guide](https://www.markdownguide.org/basic-syntax/). 
-
 
 #### Examples
 
@@ -655,7 +666,7 @@ Upload user interested log to build's container "`logs\tool`" folder.
 
 #### Usage
 
-You can automatically generate a build number from tokens you specify in the [pipeline options](../build/options.md). However, if you want to use your own logic to set the build number, then you can use this logging command.
+You can automatically generate a build number from tokens you specify in the [pipeline options](../release/options.md). However, if you want to use your own logic to set the build number, then you can use this logging command.
 
 #### Example
 
@@ -667,24 +678,21 @@ You can automatically generate a build number from tokens you specify in the [pi
 
 `##vso[build.addbuildtag]build tag`
 
-
 #### Usage
 
 Add a tag for current build. You can expand the tag with a predefined or user-defined variable. For example, here a new tag gets added in a Bash task with the value `last_scanned-$(currentDate)`. You can't use a colon with AddBuildTag. 
-
 
 #### Example
 
 ```yaml
 - task: Bash@3
-    inputs:
+  inputs:
     targetType: 'inline'
     script: |
-        last_scanned="last_scanned-$(currentDate)"
-        echo "##vso[build.addbuildtag]$last_scanned"
-    displayName: 'Apply last scanned tag'
+      last_scanned="last_scanned-$(currentDate)"
+      echo "##vso[build.addbuildtag]$last_scanned"
+  displayName: 'Apply last scanned tag'
 ```
-
 
 ## Release commands
 
@@ -704,3 +712,28 @@ Update the release name for the running release.
 ```
 ##vso[release.updatereleasename]my-new-release-name
 ```
+
+## Troubleshoot logging commands
+
+### Logging commands aren't processed
+
+Logging commands must be written to stdout during step execution by the agent. If your commands appear in the raw logs but aren't being processed:
+
+- **External tools writing to files**: If a tool writes `##vso[...]` strings to a log file rather than stdout, the agent doesn't parse them. Redirect the tool's output to stdout in your script.
+- **Buffered output**: Some programs buffer stdout when it's not connected to a terminal. Use language-specific options to flush output (for example, `python -u` or set `PYTHONUNBUFFERED=1`).
+- **`set -x` interference on Linux/macOS**: The `set -x` option can corrupt logging commands. See [troubleshooting](../troubleshooting/troubleshooting.md#variables-having--single-quote-appended) for a workaround.
+- **Encoding**: Logging commands must use UTF-8 encoding. Other encodings might cause the agent to skip the command.
+- **Newlines within commands**: Each logging command must be on a single line. If a newline character appears within the `##vso[...]` string, the agent doesn't recognize the command.
+
+### Special characters in values
+
+Some characters must be escaped when used in logging command values. These escape sequences are defined in the [agent source code](https://github.com/microsoft/azure-pipelines-agent/blob/master/src/Agent.Sdk/CommandStringConvertor.cs):
+
+| Character            | Escape sequence |
+|----------------------|-----------------|
+| Semicolon `;`        | `%3B`           |
+| Newline `\n`         | `%0A`           |
+| Carriage return `\r` | `%0D`           |
+| Close bracket `]`    | `%5D`           |
+
+To escape percent signs in values, use `%AZP25` instead of `%`. This behavior is controlled by the `DECODE_PERCENTS` variable. For more information, see [percent encoding](https://github.com/microsoft/azure-pipelines-agent/blob/master/docs/design/percentEncoding.md).

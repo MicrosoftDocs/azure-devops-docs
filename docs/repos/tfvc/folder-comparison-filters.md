@@ -4,7 +4,7 @@ titleSuffix: Azure Repos
 description: Use folder comparison filters to match or exclude file and folder names you're comparing in Team Foundation Version Control (TFVC).
 ms.assetid: a074c178-1b40-44dd-9e0f-8e9c7f565bfc
 ms.service: azure-devops-repos
-ms.topic: conceptual
+ms.topic: overview
 ms.date: 11/08/2022
 monikerRange: '<= azure-devops'
 ms.subservice: azure-devops-repos-tfvc

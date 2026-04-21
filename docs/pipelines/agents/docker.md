@@ -1,29 +1,21 @@
 ---
 title: Run a self-hosted agent in Docker
-ms.topic: conceptual
+ms.topic: concept-article
 ms.custom: linux-related-content
 description: Instructions for running your Azure Pipelines agent in Docker
 ms.assetid: e34461fc-8e77-4c94-8f49-cf604a925a19
 ms.date: 04/05/2024
-monikerRange: '>= azure-devops-2019'
+monikerRange: "<=azure-devops"
 ---
 
 # Run a self-hosted agent in Docker
 
-[!INCLUDE [version-gt-eq-2019](../../includes/version-gt-eq-2019.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 This article provides instructions for running your Azure Pipelines agent in Docker. You can set up a self-hosted agent in Azure Pipelines to run inside a Windows Server Core (for Windows hosts), or Ubuntu container (for Linux hosts) with Docker. This is useful when you want to run agents with outer orchestration, such as [Azure Container Instances](/azure/container-instances/). In this article, you'll walk through a complete container example, including handling agent self-update.
 
 Both [Windows](#windows) and [Linux](#linux) are supported as container hosts. Windows containers should run on a Windows `vmImage`.
 To run your agent in Docker, you'll pass a few [environment variables](#environment-variables) to `docker run`, which configures the agent to connect to Azure Pipelines or Azure DevOps Server. Finally, you [customize the container](#add-tools-and-customize-the-container) to suit your needs. Tasks and scripts might depend on specific tools being available on the container's `PATH`, and it's your responsibility to ensure that these tools are available.
-
-::: moniker range="azure-devops-2019"
-
-This feature requires agent version 2.149 or later.
-Azure DevOps 2019 didn't ship with a compatible agent version.
-However, you can [upload the correct agent package to your application tier](agents.md#can-i-update-my-agents-that-are-part-of-an-azure-devops-server-pool) if you want to run Docker agents.
-
-::: moniker-end
 
 ## Windows
 
@@ -242,6 +234,35 @@ Next, create the Dockerfile.
 
       RUN adduser -D agent
       RUN chown agent ./
+      USER agent
+      # Another option is to run the agent as root.
+      # ENV AGENT_ALLOW_RUNASROOT="true"
+
+      ENTRYPOINT [ "./start.sh" ]
+      ```
+
+    * For Ubuntu 24.04:
+      ```dockerfile
+      FROM ubuntu:24.04
+      ENV TARGETARCH="linux-x64"
+      # Also can be "linux-arm", "linux-arm64".
+
+      RUN apt update && \
+        apt upgrade -y && \
+        apt install -y curl git jq libicu74
+
+      # Install Azure CLI
+      RUN curl -sL https://aka.ms/InstallAzureCLIDeb | bash
+
+      WORKDIR /azp/
+
+      COPY ./start.sh ./
+      RUN chmod +x ./start.sh
+
+      # Create agent user and set up home directory
+      RUN useradd -m -d /home/agent agent
+      RUN chown -R agent:agent /azp /home/agent
+
       USER agent
       # Another option is to run the agent as root.
       # ENV AGENT_ALLOW_RUNASROOT="true"

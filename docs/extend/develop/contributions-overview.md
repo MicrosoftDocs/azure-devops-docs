@@ -1,84 +1,91 @@
 ---
 ms.subservice: azure-devops-ecosystem
 title: Contribution model
-description: Overview of the contribution model, including an overview of contributions, types, and targeting other contributions for Azure DevOps.
+titleSuffix: Azure DevOps
+description: Understand the contribution model for Azure DevOps extensions, including contribution types, contributions, and targeting.
 ms.assetid: 96509f47-bac2-4319-9085-2621ff8f814a
-ms.custom: engagement-fy23
-ms.topic: conceptual
+ms.custom: engagement-fy23, UpdateFrequency3
+ai-usage: ai-assisted
+ms.topic: concept-article
 monikerRange: '<= azure-devops'
 ms.author: chcomley
 author: chcomley
-ms.date: 10/14/2022
+ms.date: 04/03/2026
 ---
 
 # Contribution model
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
-Extensions add new capabilities into the system by providing contributions and by defining ways for other extensions to plug in to them. A contribution type defines something that can be added to the system. A contribution is a specific instance of a contribution type. For example, `hub` is a contribution type defined by a core Microsoft-provided extension. The `Explorer` hub under the Build hub group is a specific contribution of type `hub`.
+Extensions add capabilities to Azure DevOps through *contributions* and *contribution types* declared in the [extension manifest](manifest.md). A **contribution type** defines a contract — the properties and behavior that contributions of that type must implement. A **contribution** is a concrete instance of a contribution type (for example, a hub or a build task).
 
-For more information, see the following references:
-- [Extensibility points](../reference/targets/overview.md) 
-- [azure-devops-extension-api](/javascript/api/azure-devops-extension-api/?source=recommendations) 
+[!INCLUDE [extension-samples-tip](../includes/extension-samples-tip.md)]
+
+For more information, see:
+
+- [Extensibility points](../reference/targets/overview.md)
+- [azure-devops-extension-api](/javascript/api/azure-devops-extension-api/)
 - [azure-devops-extension-sdk](/javascript/api/azure-devops-extension-sdk/)
 
 ## Contribution types
 
-A **contribution type** defines a contract that all contributions to the system of that type must adhere to. A contribution type can also extend from another contribution type. The following examples of contribution types define the properties set by instances of that type:
-- `hub`
-- `action`
-- `build-task`
+A contribution type defines the properties and rules that contributions of that type must follow. Contribution types can extend other contribution types, inheriting their properties.
 
-Each property definition specifies the following aspects:
-- Property type, for example string, boolean, and so on.
-- Whether the property is required
-- Default value, if not specified by a contribution (optional). 
+Common built-in contribution types include:
 
-### Example
+- `ms.vss-web.hub` — a page in the web UI
+- `ms.vss-web.action` — a menu action
+- `ms.vss-distributed-task.task` — a build/release task
 
-Here's an example of a contribution type declaration in an extension manifest:
-  
-```js
+Each property definition in a contribution type specifies:
+
+- **type** — the data type (for example, `string`, `boolean`, `integer`)
+- **required** — whether the property must be provided
+- **default** — an optional default value
+
+### Contribution type example
+
+A contribution type declaration in a manifest looks like this:
+
+```json
 {
-    ...
-    "contributionTypes": [
-        {
-            "id": "hub",
-            "name": "Web Access Hub",
-            "description": "A hub that appears in the hubs menu at the top of web pages.",
-            "properties": {
-                "name": {
-                    "description": "The text to display for the hub",
-                    "type": "string",
-                    "required": true
-                },
-                "uri": {
-                    "description": "URI of the contents of the hub page",
-                    "type": "string",
-                    "required": true
-                },
-                "order": {
-                    "description": "An optional ordering value which can indicate in which position to place the hub within the hub group",
-                    "type": "integer"
-                }
-				...
-            }
+  "contributionTypes": [
+    {
+      "id": "hub",
+      "name": "Web Access Hub",
+      "description": "A hub that appears in the hubs menu at the top of web pages.",
+      "properties": {
+        "name": {
+          "description": "The text to display for the hub",
+          "type": "string",
+          "required": true
+        },
+        "uri": {
+          "description": "URI of the contents of the hub page",
+          "type": "string",
+          "required": true
+        },
+        "order": {
+          "description": "Optional ordering value indicating the hub's position within the hub group",
+          "type": "integer"
         }
-    ]
+      }
+    }
+  ]
 }
 ```
 
 ## Contributions
 
-A **contribution** is an instance of a contribution type. For example, the `Queries` hub under the Work hub group is a contribution of type `hub` and the `Publish Test Results` build task is a contribution of type `build-task`. 
+A **contribution** is an instance of a contribution type. For example, the `Queries` hub under the Work hub group is a contribution of type `ms.vss-web.hub`, and the `Publish Test Results` build task is a contribution of type `ms.vss-distributed-task.task`.
 
-All contributions must specify a type and specify values for any properties required by that contribution type.
+Every contribution must specify a type and provide values for any properties required by that type.
 
-### Example
+### Contribution example
 
-Here's an example of a hub contribution declaration in an extension manifest:
+The following hub contribution declaration in an extension manifest adds a hub named "Explorer" to a build hub group:
 
-```js
+```json
 {
     "contributions": [
         {
@@ -99,7 +106,7 @@ Here's an example of a hub contribution declaration in an extension manifest:
 
 ## Target contributions
 
-A contribution can **target** one or more other contributions, which creates a relationship between the contribution and each of its targets. The system can discover contributions for the target at runtime. For example, a `hub` contribution (`Explorer`) might target a specific `hub-group` contribution (`Build`). 
+A contribution can **target** one or more other contributions, creating a parent-child relationship. The system discovers these relationships at runtime to determine what to render. For example, a `hub` contribution targets a `hub-group` contribution so the system knows which hubs belong to which group.
 
 ```json
 {
@@ -111,19 +118,26 @@ A contribution can **target** one or more other contributions, which creates a r
 }
 ```
 
-When the hub group renders, the system can query for all hub contributions that target the hub group to know which hubs to render.
-## Identify contributions and types
+When the hub group renders, the system queries for all hub contributions that target it to determine which hubs to display.
 
-Every contribution and contribution type must have a unique ID within the extension it's declared in. 
+## Contribution identifiers
 
-A *full* contribution identifier includes the following items, which you separate with a dot `.` :
-- Publisher ID
-- Extension ID
-- Contribution/type ID
+Every contribution and contribution type must have a unique ID within its extension.
 
-For example: `ms.vss-web.hub` is the full identifier for the following contribution:
-- Publisher ID: `ms`
-- Extension ID: `vss-web`
-- Contribution/type ID: `hub`
+A **fully qualified** identifier has three parts separated by dots (`.`):
 
-You can use *relative* contribution references within an extension manifest for a contribution's reference to another contribution or contribution type within that same extension. In this case, the publisher and extension IDs aren't included, and the ID is a dot `.` followed by the contribution ID. For example, `.hub` may be used within the `vss-web` extension mentioned previously as a shortcut for `ms.vss-web.hub`.
+| Part | Example |
+|------|--------|
+| Publisher ID | `ms` |
+| Extension ID | `vss-web` |
+| Contribution/type ID | `hub` |
+
+Full identifier: `ms.vss-web.hub`
+
+Within the same extension manifest, you can use **relative references** — a dot followed by the contribution ID. For example, `.hub` is a shortcut for `ms.vss-web.hub` when used inside the `vss-web` extension.
+
+## Related content
+
+- [Extension manifest reference](manifest.md)
+- [Extensibility points](../reference/targets/overview.md)
+- [Develop a web extension](../get-started/node.md)

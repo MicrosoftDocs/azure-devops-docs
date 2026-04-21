@@ -1,10 +1,10 @@
 ---
 title: Use packages from Google Maven Repository upstream source
-description: How to consume packages from Google Maven Repository upstream source
+description: Learn how to consume packages from Google Maven Repository upstream source in Azure Artifacts feeds.
 ms.service: azure-devops-artifacts
-ms.topic: conceptual
-ms.date: 11/14/2023
-monikerRange: '<= azure-devops'
+ms.topic: tutorial
+ms.date: 04/12/2026
+monikerRange: "<=azure-devops"
 "recommendations": "true"
 ---
 
@@ -12,92 +12,97 @@ monikerRange: '<= azure-devops'
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
-With Azure Artifacts, developers can enable upstream sources to consume packages from different public registries such as Google Maven Repository. Once enabled, Azure Artifacts will automatically save a copy of any package installed from the upstream. Additionally, Azure Artifacts supports other Maven upstream sources such as Maven Central, Gradle Plugins, and JitPack. In this article, you'll learn how to:
-
-> [!div class="checklist"]    
-> * Add Google Maven Repository as an upstream source 
-> * Consume a package from upstream 
-> * Find saved packages in your feed
+With Azure Artifacts, developers can enable upstream sources to consume packages from public registries such as the Google Maven Repository. When an upstream source is enabled, Azure Artifacts automatically saves a copy of any package installed to the feed by users with *Feed and Upstream Reader (Collaborator)* permissions or higher. Azure Artifacts also supports other Maven upstream sources, including Maven Central, Gradle Plugins, and JitPack.
 
 ## Prerequisites
 
-- An Azure DevOps organization and a project. Create an [organization](../../organizations/accounts/create-organization.md) or a [project](../../organizations/projects/create-project.md#create-a-project) if you haven't already.
+| **Product**        | **Requirements**                       |
+|--------------------|----------------------------------------|
+| **Azure DevOps**   | - An Azure DevOps [organization](../../organizations/accounts/create-organization.md).<br>- An Azure DevOps [project](../../organizations/projects/create-project.md). |
 
-- An Azure Artifacts feed.
+## Create a feed
 
-## Enable upstream sources
+If you already have an Azure Artifacts feed, skip to the next section. Otherwise, create a new one by following these steps:
+ 
+1. Sign in to Azure DevOps and navigate to your project.
 
-If you don't have a feed already, follow the instructions below to create a new feed, and make sure to check the *upstream sources* checkbox to enable them. If you already have a feed, jump to the [next step](#add-google-maven-repository-upstream) to add Google Maven Repository as an upstream source:
+1. Select **Artifacts**, then select **Create Feed**.
 
-[!INCLUDE [](../includes/create-feed.md)]
+1. Enter a **Name** for your feed, set the **Visibility** to control who can view packages, and choose the feed **Scope**. Select **Include packages from common public sources** to enable upstream sources and allow consumption from public registries.
 
-## Add Google Maven Repository upstream
+1. Select **Create** to finish.
 
-If you checked the *upstream sources* checkbox when creating your feed, Google Maven Repository should already be added as an upstream source. If not, you can add it manually using the following steps:
+## Add the Google Maven Repository upstream source
 
-1. Sign in to your Azure DevOps organization, and then navigate to your project.
+If you selected *Include packages from common public sources* when creating your feed, the Google Maven Repository should already be added as an upstream source. If not, you can add it manually by following these steps:
 
-1. Select **Artifacts**, and then select the gear icon ![gear icon](../../media/icons/gear-icon.png) in the top right corner to navigate to your **Feed Settings**.
+1. Sign in to your Azure DevOps organization and navigate to your project.
 
-1. Select **Upstream sources**, and then select **Add Upstream**.
+1. Select **Artifacts**, then select the gear icon ![gear icon](../../media/icons/gear-icon.png) in the upper-right corner to open **Feed Settings**.
 
-1. Select **Public source**, and then select **Google Maven Repository (https://maven.google.com/web/index.html)** from the dropdown menu.
+1. Select **Upstream sources**, then select **Add Upstream**.
 
-1. Select **Add** when you're done, and then select **Save** again in the top right corner to save your changes.
+1. Select **Public source**, then select **Google Maven Repository (https://maven.google.com/web/index.html)**.
 
-> [!NOTE]
-> Maven snapshots are not supported with Maven upstream sources.
+1. Select **Add**, and then select **Save** in the upper-right corner to save your changes.
 
 ## Save packages from Google Maven Repository
 
-Before saving packages from Google Maven Repository, make sure you have set up your project to connect to your feed. If you haven't done so already, follow the instruction in the [project setup](pom-and-settings.md) to set up your Maven project and connect to your feed.
+Before you begin, make sure your Maven project is configured to connect to your Azure Artifacts feed. If you haven’t done this yet, follow the instructions in the [project setup](project-setup-maven.md) to set up your Maven project and authenticate with your feed. 
 
-In this example, we will save the Zipflinger Library from Google Maven Repository.
+The following example shows how to install *Multipaz*, an open-source identity framework, from the Google Maven Repository.
 
-1. Navigate to Google Maven Repository at `https://mvnrepository.com/`.
+1. Navigate to the Google Maven Repository `https://maven.google.com`.
 
-1. Search for the Zipflinger library. Select the **Zipflinger** package, and then select the version you wish to install.
+1. Search for the *Multipaz* package: *org.multipaz*, then select the package and the version you want to use.
 
-1. Copy the `<dependency>` snippet from the **Maven** tab. 
+1. Copy the **Group ID**, **Artifact ID**, and **Version** values for the package.
+
+1. Replace the placeholders in the following snippet with the values you just copied: 
 
     ```xml
     <dependency>
-        <groupId>com.android</groupId>
-        <artifactId>zipflinger</artifactId>
-        <version>8.3.0-alpha13</version>
+        <groupId>GROUP_ID</groupId>
+        <artifactId>ARTIFACT_ID</artifactId>
+        <version>VERSION</version>
     </dependency>
     ```
 
-1. Open your *pom.xml* file and paste the snippet inside your `<dependencies>` tag, and then save your file.
+1. Open your *pom.xml* file, paste the dependency snippet inside the `<dependencies>` section, then save your file.
 
-1. Run the following command from the same path as your *pom.xml* file to install your dependencies:
+1. Run the following command from the same path as your *pom.xml* file to install the dependency:
 
-    ```command
+    ```
     mvn install
     ```
 
-[!INCLUDE [save-requires-collaborator](../includes/save-requires-collaborator.md)]
+When the command completes, Maven resolves the dependency through your Azure Artifacts feed. If the package isn’t already present in the feed, Azure Artifacts retrieves it from the Google Maven Repository and saves a copy. Subsequent installs download the package directly from Azure Artifacts instead of the public registry.
+
+> [!NOTE]
+> You must have the **Feed and Upstream Reader (Collaborator)** role or higher to save packages from upstream. See [Feed roles and permissions](../feeds/feed-permissions.md#feed-roles-and-permissions) for more details.
 
 ## View saved packages
 
-To view the packages you installed from upstream, select the **Google Maven Repository** source from the dropdown menu.
+After installing a package from an upstream source, you can confirm that Azure Artifacts saved a copy to your feed:
 
-1. Sign in to your Azure DevOps organization, and then navigate to your project.
+1. Sign in to Azure DevOps and navigate to your project.
 
-1. Select **Artifacts**, and then select your feed from the dropdown menu.
+1. Select **Artifacts**, then select your feed from the dropdown menu.
 
-1. Select the **Google Maven Repository** source from the dropdown menu to find packages from this upstream.
+1. From the **Source** dropdown menu, select **Google Maven Repository** to view packages saved from this upstream.
 
-1. The *Zipflinger* package that we saved in the previous step is now available in our feed, as Azure Artifacts automatically saved a copy when we executed the mvn install command.
+1. The *Multipaz* package that you installed in the previous section is now available in your feed. Azure Artifacts automatically saved a copy when you ran the mvn install command.
  
-    :::image type="content" source="media/saved-zipflinger-package-from-google-maven-repository.png" alt-text="A screenshot showing packages from Google Maven Repository." lightbox="media/saved-zipflinger-package-from-google-maven-repository.png":::
+    :::image type="content" source="media/package-saved-from-google-maven-repository-upstream.png" alt-text="A screenshot showing the Multipaz package from the Google Maven Repository saved to the feed." lightbox="media/package-saved-from-google-maven-repository-upstream.png":::
 
 > [!TIP]
-> If Maven is not downloading all your dependencies, run the following command from the project directory to regenerate your project's files:
+> If Maven does not download all dependencies, run the following command from the project directory to regenerate project files and download sources and Javadocs:
 > `mvn eclipse:eclipse -DdownloadSources=true -DdownloadJavadocs=true`
 
-## Related articles
+## Related content
 
-- [Use packages from Maven Central](./upstream-sources.md)
+- [Upstream from internal feeds](../how-to/upstream-internal-feed.md)
+
+- [Use upstream sources with public feeds](../how-to/public-feeds-upstream-sources.md)
+
 - [Search for packages in upstream sources](../how-to/search-upstream.md)
-- [Configure permissions](../feeds/feed-permissions.md)

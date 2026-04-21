@@ -1,29 +1,41 @@
 ---
 title: Azure DevOps CLI in Azure Pipeline YAML
 titleSuffix: Azure DevOps 
-description: Use Azure DevOps CLI to create Azure Pipeline YAML
+description: Learn how to use Azure DevOps CLI with a YAML pipeline with these examples that show how to run Azure DevOps CLI commands.
 ms.topic: how-to
 ms.subservice: azure-devops-reference
-ms.custom: devx-track-azurecli, linux-related-content
+ms.custom: devx-track-azurecli, linux-related-content, pat-reduction
 ms.manager: mijacobs 
 ms.author: chcomley  
 author: chcomley
 monikerRange: 'azure-devops'
-ms.date: 11/20/2023
+ms.date: 08/27/2025
+zone_pivot_groups: configure-cli
+
+#customer intent: As a team member, I want to use YAML configuration files to manage my pipeline tasks by using Azure DevOps CLI.
 ---
 
 # Azure DevOps CLI in Azure Pipeline YAML
 
+
 [!INCLUDE [version-eq-azure-devops](../includes/version-eq-azure-devops.md)] 
 
-If you wish to use Azure DevOps CLI with a YAML pipeline, you can use the following examples to install Azure CLI, add the Azure DevOps extension, and run Azure DevOps CLI commands.
+[!INCLUDE [feature-rollout](../includes/feature-rollout.md)]
 
-> [!NOTE]
-> The steps in this article show how to authenticate with Azure DevOps and run `az devops` commands using the Azure DevOps CLI extension. If you want to use Azure CLI to interact with Azure resources, use the [AzureCLI task](/azure/devops/pipelines/tasks/reference/azure-cli-v2).
+Azure DevOps CLI lets you manage Azure DevOps resources from the command line. Run CLI commands in a YAML pipeline with the [AzureCLI@3 task](/azure/devops/pipelines/tasks/reference/azure-cli-v3) to automate common DevOps tasks as part of your CI/CD workflow. Microsoft-hosted Windows and Linux agents already include Azure CLI and the Azure DevOps CLI extension.
+
+For authentication, use an [Azure DevOps service connection](../pipelines/library/service-endpoints.md) backed by Microsoft Entra workload identity federation. We recommend this approach because it eliminates credential management. Use a personal access token (PAT) only when a service connection isn't available.
+
+
+::: zone pivot="pat"  
 
 ## Authenticate with Azure DevOps
 
-Some Azure DevOps CLI commands that don't call into Azure DevOps, like `az devops configure` and `az devops -h`, don't require any authentication, but most commands interact with Azure DevOps and do require authentication. You can authenticate using the [System.AccessToken](../pipelines/build/variables.md#systemaccesstoken) security token used by the running pipeline, by assigning it to an environment variable named `AZURE_DEVOPS_EXT_PAT`, as shown in the following example.
+Some Azure DevOps CLI commands, like `az devops configure` and `az devops --help`, don't require any authentication. They don't connect into Azure DevOps. Most commands interact with Azure DevOps and do require authentication.
+
+You can authenticate using the [System.AccessToken](../pipelines/build/variables.md#systemaccesstoken) security token used by the running pipeline, by assigning it to an environment variable named `AZURE_DEVOPS_EXT_PAT`, as shown in the following example.
+
+Using `System.AccessToken` relies on having a PAT. As a more secure alternative, use a service connection. For setup guidance, see [Manage service connections](../pipelines/library/service-endpoints.md).
 
 # [Bash](#tab/bash)
 
@@ -51,15 +63,15 @@ If you have multiple steps that require authentication, add the `AZURE_DEVOPS_EX
 
 For more information on the scope of the security token used by the running pipeline, see [Access repositories, artifacts, and other resources](../pipelines/process/access-tokens.md).
 
-For more information about authentication using a personal access token, see [Sign in with a personal access token (PAT)](log-in-via-pat.md).
+For more information about authentication using a personal access token (PAT), see [Sign in with a personal access token](log-in-via-pat.md).
 
-## Azure DevOps CLI with Windows and Linux hosted agents
+## Sign in to Azure DevOps CLI with Windows and Linux hosted agents
 
-The Microsoft-hosted Windows and Linux agents are preconfigured with Azure CLI and the Azure DevOps CLI extension. 
+The Microsoft-hosted Windows and Linux agents are preconfigured with Azure CLI and the Azure DevOps CLI extension.
 
-The following example shows how to log in to Azure DevOps and run a few commands. This example uses the `ubuntu-latest` Microsoft-hosted agent image, but you can replace it with any of the other [Windows or Linux hosted images](../pipelines/agents/hosted.md#software).
+The following example shows how to sign in to Azure DevOps and run a few commands. This example uses the `ubuntu-latest` Microsoft-hosted agent image. You can replace it with any of the other [Windows or Linux hosted images](../pipelines/agents/hosted.md#software).
 
-This example authenticates with Azure DevOps CLI using the [System.AccessToken](../pipelines/build/variables.md#systemaccesstoken) security token used by the running pipeline.
+This example authenticates with Azure DevOps CLI. It uses the [System.AccessToken](../pipelines/build/variables.md#systemaccesstoken) security token used by the running pipeline.
 
 # [Bash](#tab/bash)
 
@@ -111,7 +123,7 @@ steps:
 
 ---
 
-## Azure DevOps CLI with macOS hosted agents
+## Install Azure DevOps CLI extension with macOS hosted agents
 
 The macOS Microsoft-hosted agents have Azure CLI installed but not the Azure DevOps CLI extension. To install the Azure DevOps CLI extension, run the following command in your pipeline before making any Azure DevOps CLI calls.
 
@@ -121,12 +133,12 @@ The macOS Microsoft-hosted agents have Azure CLI installed but not the Azure Dev
   displayName: 'Install Azure DevOps extension'
 ```
 
-## Hosted agent Azure CLI version
+## Upgrade hosted agent Azure CLI version
 
-Microsoft-hosted agents [typically deploy weekly updates](https://github.com/actions/runner-images#image-releases) to the software on the virtual environments. For some tools, the latest version at the time of the deployment is used; for others, the tool is pinned to specific versions. 
+Microsoft-hosted agents [typically deploy weekly updates](https://github.com/actions/runner-images#image-releases) to the software on the virtual environments. For some tools, the latest version at the time of the deployment is used. In other cases, the tool is pinned to specific versions.
 
-* To check the included software and their versions for Microsoft-hosted agents, including the installed version of Azure CLI and Azure DevOps CLI extension, follow the **Included Software** links in the [Software](../pipelines/agents/hosted.md#software) table.
-* To check the current version for Azure CLI, see [How to install the Azure CLI](/cli/azure/install-azure-cli).
+- To check the included software and their versions for Microsoft-hosted agents, including the installed version of Azure CLI and Azure DevOps CLI extension, follow the **Included Software** links in the [Software](../pipelines/agents/hosted.md#software) table.
+- To check the current version for Azure CLI, see [How to install the Azure CLI](/cli/azure/install-azure-cli).
 
 You can upgrade the Azure CLI on your hosted images by running the following commands in your pipeline.
 
@@ -157,13 +169,11 @@ You can upgrade the Azure CLI on your hosted images by running the following com
 - pwsh: pip install --pre azure-cli
   displayName: 'Upgrade Azure CLI'
 ```
-
 ---
-
 
 ## Conditionally install the Azure DevOps CLI extension
 
-If your pipeline runs on several Microsoft-hosted VM images, some of which don't have the Azure DevOps CLI extension installed, you perform the installation conditionally.
+If your pipeline runs on several Microsoft-hosted virtual machine images, some of which don't have the Azure DevOps CLI extension installed, you can install conditionally.
 
 # [Bash](#tab/bash)
 
@@ -174,20 +184,16 @@ trigger:
 # Run on multiple Microsoft-hosted agent images
 strategy:
   matrix:
+    linux24:
+      imageName: "ubuntu-24.04"
     linux22:
       imageName: "ubuntu-22.04"
-    linux20:
-      imageName: "ubuntu-20.04"
-    mac13:
-      imageName: "macos-13"
-    mac12:
-      imageName: "macos-12"
-    mac11:
-      imageName: "macos-11"
-    windows2019:
-      imageName: "windows-2019"
-    windows2022:
-      imageName: "windows-2022"
+    mac15:
+      imageName: "macos-15"
+    mac14:
+      imageName: "macos-14"
+    windows2025:
+      imageName: "windows-2025"
   maxParallel: 3
 
 pool:
@@ -226,18 +232,18 @@ trigger:
 # Run on multiple Microsoft-hosted agent images
 strategy:
   matrix:
+    linux24:
+      imageName: "ubuntu-24.04"
     linux22:
       imageName: "ubuntu-22.04"
-    linux20:
-      imageName: "ubuntu-20.04"
+    mac15:
+      imageName: "macos-15"
+    mac14:
+      imageName: "macos-14"
     mac13:
       imageName: "macos-13"
-    mac12:
-      imageName: "macos-12"
-    mac11:
-      imageName: "macos-11"
-    windows2019:
-      imageName: "windows-2019"
+    windows2025:
+      imageName: "windows-2025"
     windows2022:
       imageName: "windows-2022"
   maxParallel: 3
@@ -251,7 +257,7 @@ steps:
 
 # Install Azure DevOps CLI extension only on macOS images
 - pwsh: az extension add -n azure-devops
-  condition: contains(variables.imageName, 'windows')
+  condition: contains(variables.imageName, 'mac')
   displayName: 'Install Azure DevOps extension'
 
 # Azure DevOps CLI extension call that does not require login or credentials
@@ -275,22 +281,22 @@ steps:
 
 You can use the following methods to install or upgrade the Azure DevOps CLI in your self-hosted agent.
 
-* [Manually install Azure CLI and Azure DevOps CLI extension](#manually-install-azure-cli-and-azure-devops-cli-extension)
-* [Install Azure CLI and Azure DevOps CLI extension in your pipeline](#install-azure-cli-and-azure-devops-cli-extension-in-your-pipeline)
+- [Manually install Azure CLI and Azure DevOps CLI extension](#manually-install-azure-cli-and-azure-devops-cli-extension)
+- [Install Azure CLI and Azure DevOps CLI extension in your pipeline](#install-azure-cli-and-azure-devops-cli-extension-in-your-pipeline)
 
 ### Manually install Azure CLI and Azure DevOps CLI extension
 
-Installing Azure CLI and Azure DevOps CLI extension on your self-hosted agent when you provision the virtual machine image for the agent is faster than installing them each time the pipeline is run. 
+Installing Azure CLI and Azure DevOps CLI extension on your self-hosted agent when you provision the virtual machine image for the agent is faster than installing them each time the pipeline is run.
 
-* To install Azure CLI on your self-hosted agent image, see [Install the Azure CLI](/cli/azure/install-azure-cli). There are separate instructions for [Windows](/cli/azure/install-azure-cli-windows), [Linux](/cli/azure/install-azure-cli-linux), and [macOS](/cli/azure/install-azure-cli-macos).
-* After installing Azure CLI, install [Azure DevOps CLI extension](index.md).
+To install Azure CLI on your self-hosted agent image, see [Install the Azure CLI](/cli/azure/install-azure-cli). There are separate instructions for [Windows](/cli/azure/install-azure-cli-windows), [Linux](/cli/azure/install-azure-cli-linux), and [macOS](/cli/azure/install-azure-cli-macos).
+
+After you install Azure CLI, install the [Azure DevOps CLI extension](index.md).
 
 ### Install Azure CLI and Azure DevOps CLI extension in your pipeline
 
 The following example of configuring Azure CLI and Azure DevOps CLI extension on a self-hosted agent using a pipeline has the following prerequisites.
 
-* Install Azure CLI using Python
-  * Python must be installed on the agent according to the instructions in [Python version task - How can I configure a self-hosted agent to use this task?](/azure/devops/pipelines/tasks/reference/use-python-version-v0#how-can-i-configure-a-self-hosted-agent-to-use-this-task) The `UsePythonVersion@0` task doesn't install Python onto your self-hosted agent. If you only have one version of Python installed on your self-hosted agent and it is in the path, you don't need to use the `UsePythonVersion@0` task.
+- Install Azure CLI using Python. Python must be installed on the agent according to the instructions in [Python version task - How can I configure a self-hosted agent to use this task?](/azure/devops/pipelines/tasks/reference/use-python-version-v0#how-can-i-configure-a-self-hosted-agent-to-use-this-task). The `UsePythonVersion@0` task doesn't install Python onto your self-hosted agent. If you only have one version of Python installed on your self-hosted agent and it is in the path, you don't need to use the `UsePythonVersion@0` task.
 
 # [Bash](#tab/bash)
 
@@ -330,9 +336,10 @@ The following example of configuring Azure CLI and Azure DevOps CLI extension on
 
 ---
 
-* Install Azure CLI DevOps extension
-  * Azure CLI version [2.10.1](index.md) or higher is installed. 
-  * There's a version of `bash` installed on the agent and in the path. A bash installation is required to use the [bash task](/azure/devops/pipelines/tasks/reference/bash-v3).
+Install Azure CLI DevOps extension:
+
+- Azure CLI version [2.10.1](index.md) or higher is installed. 
+- There's a version of `bash` installed on the agent and in the path. A bash installation is required to use the [bash task](/azure/devops/pipelines/tasks/reference/bash-v3).
 
 # [Bash](#tab/bash)
 
@@ -416,7 +423,7 @@ steps:
 
 ## Assign the results of an Azure DevOps CLI call to a variable
 
-To store the results of an Azure DevOps CLI call to a pipeline variable, use the `task.setvariable` syntax described in [Set variables in scripts](../pipelines/process/variables.md#set-variables-in-scripts). The following example retrieves the ID of a variable group named **Fabrikam-2023** and then uses this value in a subsequent step.
+To store the results of an Azure DevOps CLI call to a pipeline variable, use the `task.setvariable` syntax described in [Set variables in scripts](../pipelines/process/variables.md#set-variables-in-scripts). The following example gets the ID of a variable group named **Fabrikam-2023** and uses this value in a subsequent step.
 
 # [Bash](#tab/bash)
 
@@ -469,16 +476,112 @@ steps:
     AZURE_DEVOPS_EXT_PAT: $(System.AccessToken)
   displayName: 'List variables in Fabrikam-2023 variable group'
 ```
-
 ---
+
+::: zone-end  
+
+::: zone pivot="service-connection"
+
+
+## Authenticate with a service connection 
+
+When you use a service connection, the service connection provides the necessary credentials for Azure CLI and Azure DevOps CLI commands in the AzureCLI@3 task without requiring manual credential management in the pipeline.
+
+> [!NOTE]
+> When you use a service connection for authentication with `AzureCLI@3`, you need to [manually add the service principal to your Azure DevOps organization](../integrate/get-started/authentication/service-principal-managed-identity.md#step-2-add-the-identity-to-azure-devops). 
+>
+> For PAT-free guidance and service-connection best practices, see [Manage service connections](../pipelines/library/service-endpoints.md).
+
+This code sample defines a new parameter, `serviceConnection`, with the name of an existing service connection. That parameter is referenced in the `AzureCLI@3` task. The script uses a secret-less connection to call a REST endpoint, then lists projects and pools.
+
+```yml
+trigger:
+  - main
+
+parameters:
+- name: serviceConnection
+  displayName: Azure DevOps Service Connection Name
+  type: string
+  default: my-service-connection
+
+steps:
+  - task: AzureCLI@3
+    displayName: Secret-less
+    inputs:
+      connectionType: 'azureDevOps'
+      azureDevOpsServiceConnection: '${{ parameters.serviceConnection }}'
+      scriptType: 'pscore'
+      scriptLocation: 'inlineScript'
+      inlineScript: |
+        az rest --method get `
+                --url "https://status.dev.azure.com/_apis/status/health?api-version=7.1-preview.1" `
+                --resource 499b84ac-1321-427f-aa17-267ca6975798 `
+                --query "sort_by(services[?id=='Pipelines'].geographies | [], &name)" `
+                -o table
+
+        az devops configure -l
+
+        az devops project list --query "value[].{Name:name, Id:id}" `
+                              -o table
+
+        az pipelines pool list --query "[].{Id:id, Name:name}" `
+                              -o table
+      failOnStandardError: true
+```
+
+## Assign the results of an Azure DevOps CLI call to a variable
+
+To store the results of an Azure DevOps CLI call to a pipeline variable, use the `task.setvariable` syntax described in [Set variables in scripts](../pipelines/process/variables.md#set-variables-in-scripts). The following example gets the ID of a variable group named **kubernetes** and uses this value in a subsequent step.
+
+```yml
+trigger:
+  - main
+
+variables:
+- name: variableGroupId
+
+parameters:
+- name: serviceConnection
+  displayName: Azure DevOps Service Connection Name
+  type: string
+  default: my-service-connection
+
+steps:
+  - task: AzureCLI@3
+    displayName: Set variable group ID
+    inputs:
+      connectionType: 'azureDevOps'
+      azureDevOpsServiceConnection: '${{ parameters.serviceConnection }}'
+      scriptType: 'pscore'
+      scriptLocation: 'inlineScript'
+      inlineScript: |
+        az devops configure -l
+
+        $id = az pipelines variable-group list --group-name kubernetes --query [].id -o tsv
+        Write-Host "##vso[task.setvariable variable=variableGroupId]$id"
+
+  - task: AzureCLI@3
+    displayName: List variable group variables
+    inputs:
+      connectionType: 'azureDevOps'
+      azureDevOpsServiceConnection: '${{ parameters.serviceConnection }}'
+      scriptType: 'pscore'
+      scriptLocation: 'inlineScript'
+      inlineScript: |
+        az pipelines variable-group variable list --group-id '$(variableGroupId)'
+```
+
+
+::: zone-end 
 
 For more examples of working with variables, including working with variables across jobs and stages, see [Define variables](../pipelines/process/variables.md). For examples of the query syntax used in the previous example, see [How to query Azure CLI command output using a JMESPath query](/cli/azure/query-azure-cli).
 
-## Related articles
+## Related content
 
-* [System.AccessToken](../pipelines/build/variables.md#systemaccesstoken)
-* [Access repositories, artifacts, and other resources](../pipelines/process/access-tokens.md)
-* [Define variables](../pipelines/process/variables.md)
-* [Azure DevOps CLI extension reference](/cli/azure/devops)
-* [Azure DevOps CLI extension az pipelines reference](/cli/azure/pipelines)
-* [How to query Azure CLI command output using a JMESPath query](/cli/azure/query-azure-cli)
+- [System.AccessToken](../pipelines/build/variables.md#systemaccesstoken)
+- [Access repositories, artifacts, and other resources](../pipelines/process/access-tokens.md)
+- [Manage service connections](../pipelines/library/service-endpoints.md)
+- [Define variables](../pipelines/process/variables.md)
+- [Azure DevOps CLI extension reference](/cli/azure/devops)
+- [Azure DevOps CLI extension az pipelines reference](/cli/azure/pipelines)
+- [How to query Azure CLI command output using a JMESPath query](/cli/azure/query-azure-cli)

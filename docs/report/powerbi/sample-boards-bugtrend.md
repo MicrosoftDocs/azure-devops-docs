@@ -4,18 +4,19 @@ titleSuffix: Azure DevOps
 description: Learn how to generate a bug trend Power BI report. 
 ms.subservice: azure-devops-analytics
 ms.author: chcomley
-ms.custom: powerbisample, engagement-fy23, engagement-fy23
+ms.custom: powerbisample, engagement-fy23
 author: chcomley
 ms.topic: sample
-monikerRange: '>= azure-devops-2019'
-ms.date: 12/08/2022
+monikerRange: "<=azure-devops"
+ms.date: 04/07/2026
+ai-usage: ai-assisted
 ---
 
 # Bug trends sample report 
 
-[!INCLUDE [version-gt-eq-2019](../../includes/version-gt-eq-2019.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
-Bug trend reports are useful to see how well a team is closing active bugs. This article shows you how to display the number of bugs in a given state over a period of time. The following image shows an example of a bug trends report.  
+Bug trend reports help you see how well a team is closing active bugs. This article shows you how to display the number of bugs in a given state over a period of time. The following image shows an example of a bug trends report.  
 
 :::image type="content" source="media/reports-boards/bug-trends-report.png" alt-text="Screenshot of Bug trends line chart report.":::
  
@@ -23,7 +24,6 @@ Bug trend reports are useful to see how well a team is closing active bugs. This
 [!INCLUDE [temp](includes/sample-required-reading.md)]
 
 [!INCLUDE [prerequisites-simple](../includes/analytics-prerequisites-simple.md)]
-
 
 ## Sample queries
 
@@ -88,7 +88,6 @@ https://analytics.dev.azure.com/{organization}/{project}/_odata/v3.0-preview/Wor
 
 <!--- How specify the end date? --> 
 
-
 ### Query breakdown
 
 The following table describes each part of the query.  
@@ -130,7 +129,7 @@ The following table describes each part of the query.
    `and startswith(Area/AreaPath,'{areapath}')`
    :::column-end:::
    :::column span="1":::
-   Return work items under a specific **Area Path** that you specify in`'{areapath}'`. To filter by team name, use the filter statement `Teams/any(x:x/TeamName eq '{teamname})'`.  
+   Return work items under a specific **Area Path** that you specify in `'{areapath}'`. To filter by team name, use the filter statement `Teams/any(x:x/TeamName eq '{teamname}')`.  
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -159,7 +158,7 @@ The following table describes each part of the query.
 :::row-end:::
 :::row:::
    :::column span="1":::
-   `(DateValue, State, WorkItemType, Priority, Severity, Area/AreaPath, Iteration/IterationPath), `
+   `(DateValue, State, WorkItemType, Priority, Severity, Area/AreaPath, Iteration/IterationPath, AreaSK), `
    :::column-end:::
    :::column span="1":::
    Group by `DateValue`,  used for trending, and any other fields you want to report on.
@@ -183,11 +182,9 @@ The following table describes each part of the query.
 :::row-end:::
  
 
+### Bug trend filtered by teams 
 
-### Bug trend filtered by Teams 
-
-You can query for bug trends by team name rather than Area Path.  
-
+You can query for bug trends by team name rather than area path.  
 
 #### [Power BI query](#tab/powerbi/)
 
@@ -199,7 +196,7 @@ let
         &"$apply=filter( "
             &"WorkItemType eq 'Bug' "
             &"and State ne 'Closed' "
-            &"and (Teams/any(x:x/TeamName eq '{teamname}') or Teams/any(x:x/TeamName eq '{teamname}') or Teams/any(x:x/TeamName eq '{teamname}')"
+            &"and (Teams/any(x:x/TeamName eq '{teamname}') or Teams/any(x:x/TeamName eq '{teamname}') or Teams/any(x:x/TeamName eq '{teamname}')) "
             &"and DateValue ge {startdate}  "
             &") "
         &"/groupby( "
@@ -220,7 +217,7 @@ https://analytics.dev.azure.com/{organization}/{project}/_odata/v3.0-preview/Wor
         $apply=filter(
             WorkItemType eq 'Bug'
             and State ne 'Closed'
-            and (Teams/any(x:x/TeamName eq '{teamname}' or Teams/any(x:x/TeamName eq '{teamname}' or Teams/any(x:x/TeamName eq '{teamname}')
+            and (Teams/any(x:x/TeamName eq '{teamname}') or Teams/any(x:x/TeamName eq '{teamname}') or Teams/any(x:x/TeamName eq '{teamname}'))
             and DateValue ge {startdate} 
             )
         /groupby(
@@ -233,7 +230,7 @@ https://analytics.dev.azure.com/{organization}/{project}/_odata/v3.0-preview/Wor
 
 ### Bug trend with a snapshot every Friday
 
-Using a weekly snapshot reduces the amount of data pulled into Power BI, and increases query performance. 
+Using a weekly snapshot reduces the amount of data pulled into Power BI and increases query performance. 
 
 #### [Power BI query](#tab/powerbi/)
 
@@ -283,7 +280,7 @@ https://analytics.dev.azure.com/{organization}/{project}/_odata/v3.0-preview/Wor
 
 ### Bug trend with a snapshot on the first of every month
 
-Using a monthly snapshot reduces the amount of data pulled into Power BI, and increases query performance. 
+Using a monthly snapshot reduces the amount of data pulled into Power BI and increases query performance. 
 
 #### [Power BI query](#tab/powerbi/)
 
@@ -335,26 +332,21 @@ https://analytics.dev.azure.com/{organization}/{project}/_odata/v3.0-preview/Wor
 
 Expand the `Area/AreaPath` and `Iteration/IterationPath` columns. Expanding the columns flattens the record into specific fields. To learn how, see [Transform Analytics data to generate Power BI reports](transform-analytics-data-report-generation.md). 
 
-
-## (Optional) Rename fields
-
-Once you've expanded the columns, you may want to rename one or more fields. For example, you can rename the column `AreaPath` to `Area Path`. To learn how, see [Rename column fields](transform-analytics-data-report-generation.md#rename-column-fields). 
-
+[!INCLUDE [temp](includes/sample-rename-column-fields.md)]
 
 [!INCLUDE [temp](includes/close-apply.md)]
 
+## Create the line chart report 
 
-## Create the Line chart report 
-
-1. In Power BI, choose the **Line chart** report under **Visualizations**. 
+1. In Power BI, under **Visualizations**, select the **Line chart** report. 
 
 	:::image type="content" source="media/reports-boards/bug-trends-selections.png" alt-text="Screenshot of Power BI Visualizations and Fields selections for Bug trends report. ":::
 
-1. Add  `DateValue`" to **X-axis**, and right-click `DateValue` and select `DateValue` rather than `Date Hierarchy`.  
+1. Add `DateValue` to the **X-axis**. Right-click `DateValue` and select `DateValue` rather than `Date Hierarchy`.  
 
-1. Add `Count` to **Y-axis**, and right-click `Count` and ensure **Sum** is selected.
+1. Add `Count` to the **Y-axis**. Right-click `Count` and ensure **Sum** is selected.
 
-1. Add `State` to **Legend**.
+1. Add `State` to the **Legend**.
 
 The example report displays.  
 
@@ -362,12 +354,11 @@ The example report displays.
 
 ### Modify report format visuals 
 
-- To modify format elements of the report, choose the **Format your visual** (paintbrush) icon and modify one or more available settings. For example, you can modify the line colors used in the trend chart.
+- To modify format elements of the report, select the **Format your visual** (paintbrush) icon and change one or more available settings. For example, you can change the line colors used in the trend chart.
 
 	:::image type="content" source="media/reports-boards/bug-trends-change-color.png" alt-text="Screenshot of Power BI Format visual selections for Bug trends report. "::: 
 
 For more information, see [Get started with the formatting pane](/power-bi/visuals/service-getting-started-with-color-formatting-and-axis-properties). 
-
 
 ## Related articles
 

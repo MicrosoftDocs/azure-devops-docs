@@ -3,9 +3,9 @@ title: Migrate from file shares
 description: How to migrate from file shares to Azure Artifacts
 ms.assetid: E45D2856-222F-444B-9E0C-A04B6FE93494
 ms.service: azure-devops-artifacts
-ms.topic: conceptual
+ms.topic: upgrade-and-migration-article
 ms.date: 06/16/2023
-monikerRange: '<= azure-devops'
+monikerRange: "<=azure-devops"
 "recommendations": "true"
 ---
 
@@ -40,7 +40,6 @@ If you're currently utilizing Active Directory-backed file shares, it's probable
   - **nuget.exe**: Credential acquisition happens automatically after you install the [Azure Artifacts Credential Provider](../nuget/nuget-exe.md).
 
 - **Authorization:** Make sure that any user, service, organization, or group requiring access to your packages has the necessary permissions in place. See the [permissions](#plan-your-access-control-strategy) section for more details.
-
 
 Migrating your packages is a 4-step process:
 
@@ -80,7 +79,7 @@ If you want to replicate your existing file share permissions, make a note of th
 
 After completing the inventory of your current package sources, it's time to configure your feeds. In this step, we'll assume a one-to-one mapping of feeds to SMB shares.
 
-For each SMB share, follow the instructions to [Create a feed](../get-started-nuget.md#create-feed):
+For each SMB share, follow the instructions to [Create a feed](../get-started-nuget.md#create-a-feed):
 
 - Set the **Feed name** to match the name of your SMB share folder.
 

@@ -1,7 +1,7 @@
 ---
 title: Manage cost and performance
 description: Learn how to manage cost and performance for your Managed DevOps Pools.
-ms.date: 11/13/2024
+ms.date: 09/26/2025
 ms.topic: concept-article
 #Customer intent: As a platform engineer, I want to understand how to balance the cost and performance of my pools.
 ---

@@ -7,4 +7,4 @@ ms.service: azure-devops-artifacts
 ---
 
 > [!NOTE]
-> To save packages from upstreams, you must have the **Feed and Upstream Reader (Collaborator)** role or higher. See [Manage Permissions](../feeds/feed-permissions.md#permissions-table) for more details.
+> To save packages from upstreams, you must have the **Feed and Upstream Reader (Collaborator)** role or higher. See [Feed roles and permissions](../feeds/feed-permissions.md#feed-roles-and-permissions) for more details.

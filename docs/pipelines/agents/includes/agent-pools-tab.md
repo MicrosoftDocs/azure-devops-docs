@@ -13,17 +13,9 @@ ms.date: 08/07/2020
 
 ::: moniker-end
 
-::: moniker range=">= azure-devops-2020 < azure-devops"
+::: moniker range="<azure-devops"
 
 [!INCLUDE [agent-pools-tab](agent-pools-tab/agent-pools-tab-server-2020.md)]
 
 ::: moniker-end
-
-::: moniker range="azure-devops-2019"
-
-[!INCLUDE [agent-pools-tab](agent-pools-tab/agent-pools-tab-server-2019.md)]
-
-::: moniker-end
-
-
 

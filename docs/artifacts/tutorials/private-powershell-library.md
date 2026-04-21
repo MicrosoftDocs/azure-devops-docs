@@ -8,6 +8,7 @@ ms.date: 07/03/2024
 monikerRange: 'azure-devops'
 "recommendations": "true"
 zone_pivot_groups: powershell-versions
+ms.topic: how-to
 ---
 
 # Use an Azure Artifacts feed as a private PowerShell repository
@@ -31,7 +32,7 @@ In this article, you'll learn how to:
 
 - Create an Azure DevOps [organization](../../organizations/accounts/create-organization.md) and a [project](../../organizations/projects/create-project.md#create-a-project) if you haven't already.
 
-- Create a [new feed](../get-started-nuget.md#create-feed) if you don't have one already.
+- Create a [new feed](../get-started-nuget.md#create-a-feed) if you don't have one already.
 
 - Install [PowerShell](/powershell/scripting/install/installing-powershell) 6.0 or later to ensure you have the required *PowerShellGet* version needed for installing *PSResourceGet*.
 
@@ -160,16 +161,16 @@ If you don't have your own module, follow the instructions in this section to cr
 
 ## Publish a package
 
-Run the following command to publish the package to your feed:
+Run the following command to publish the package to your feed. Replace the placeholders with your package path, repository name, the credential object you created earlier, and provide any string for the ApiKey.
 
 ```powershell
-Publish-PSResource -Path <PACKAGE_PATH> -Repository <REPOSITORY_NAME> -ApiKey (Get-Secret <SECRET_NAME>) 
+Publish-PSResource -Path <PACKAGE_PATH> -Repository <REPOSITORY_NAME> -Credential $credentials -ApiKey <ANY_STRING>
 ```
 
 **Example**:
 
 ```powershell
-PS C:\AzureDevOps\Demos\PowerShellDemo> Publish-PSResource -Path .\scripts\ -Repository FabrikamFiberFeed -ApiKey (Get-Secret MyNewCredential) -verbose
+PS C:\AzureDevOps\Demos\PowerShellDemo> Publish-PSResource -Path .\scripts\ -Repository FabrikamFiberFeed -Credential $credentials -ApiKey az -verbose
 VERBOSE: Performing the operation "Publish-PSResource" on target "Publish resource
 'C:\AzureDevOps\Demos\PowerShellDemo\scripts\' from the machine".
 VERBOSE: The newly created nuspec is:
@@ -218,7 +219,7 @@ In this article, you'll learn how to:
 
 - Create an Azure DevOps [organization](../../organizations/accounts/create-organization.md) and a [project](../../organizations/projects/create-project.md#create-a-project) if you haven't already.
 
-- Create a [new feed](../get-started-nuget.md#create-feed) if you don't have one already.
+- Create a [new feed](../get-started-nuget.md#create-a-feed) if you don't have one already.
 
 - Install the [Azure Artifacts Credential Provider](https://github.com/microsoft/artifacts-credprovider).
 
@@ -426,6 +427,20 @@ steps:
     nuget install <PACKAGE_NAME> -Source "https://pkgs.dev.azure.com/<ORGANIZATION_NAME>/<PROJECT_NAME>/_packaging/<FEED_NAME>/nuget/v3/index.json"
   displayName: 'Install module'
 ```
+
+For enterprise deployments and enhanced security, independent from named user accounts, the [SYSTEM_ACCESSTOKEN](../../pipelines/build/variables.md#systemaccesstoken) can be used to access the Azure Artifact feed. A username is not required in this context and can be any arbitrary string to fulfill the parameter requirements.
+
+```yaml
+steps:
+  - powershell: |
+      $token = $env:SYSTEM_ACCESSTOKEN | ConvertTo-SecureString -AsPlainText -Force
+      $credential = New-Object System.Management.Automation.PSCredential('ArbitraryPipelineUser', $token)
+      Register-PSRepository -Name <REPOSITORY_NAME> -SourceLocation "$(PackageFeedEndpoint)" -InstallationPolicy Trusted -Credential $credential
+    displayName: 'Register PSRepository'
+    env:
+      SYSTEM_ACCESSTOKEN: $(System.AccessToken)
+```
+
 :::zone-end
 
 

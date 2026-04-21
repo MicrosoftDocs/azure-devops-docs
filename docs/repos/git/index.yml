@@ -101,6 +101,8 @@ landingContent:
     linkLists:
       - linkListType: reference
         links:
+          - text: Git FAQs
+            url: ./howto.yml
           - text: Git command reference
             url: ./command-prompt.md
           - text: Azure DevOps CLI

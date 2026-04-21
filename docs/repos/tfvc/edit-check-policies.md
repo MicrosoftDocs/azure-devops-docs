@@ -4,7 +4,7 @@ titleSuffix: Azure Repos
 description: See how TFVC administrators can edit check-in policies in Team Foundation Version Control (TFVC).
 ms.assetid: 3bc445f1-d354-4991-9381-f10739b5d0fe
 ms.service: azure-devops-repos
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 11/01/2022
 monikerRange: '<= azure-devops'
 ms.subservice: azure-devops-repos-tfvc

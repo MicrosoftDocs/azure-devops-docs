@@ -5,10 +5,12 @@ description: How to do a test run, migrating from on-premises to the cloud in Az
 ms.topic: how-to
 ms.subservice: azure-devops-migrate
 ms.contentid: 829179bc-1f98-49e5-af9f-c224269f7910
+ai-usage: ai-assisted
 ms.author: chcomley
 author: chcomley
 monikerRange: '<= azure-devops'
-ms.date: 01/09/2025
+ms.date: 11/17/2025
+ms.custom: sfi-image-nochange
 ---
 
 # Do test run migration
@@ -183,7 +185,7 @@ Azure DevOps Services is available in several [Azure geographical locations](htt
 | United Kingdom | United Kingdom South | UKS| 
 | Australia | Australia East | EAU |
 | South America | Brazil South | SBR |
-| Asia Pacific | South India | MA |
+| Asia Pacific | Central India | MA |
 | Asia Pacific | Southeast Asia (Singapore) | SEA |
 | Canada | Central Canada | CC |
 
@@ -230,11 +232,11 @@ You and your Microsoft Entra admin must investigate users marked as *No Match Fo
 As you read through the file, notice whether the value in the **Expected Import Status** column is *Active* or *Historical*. *Active* indicates that the identity on this row maps correctly on migration becomes active. *Historical* means that the identities become historical on migration. It's important to review the generated mapping file for completeness and correctness.
 
 > [!IMPORTANT]  
-> The migration fails if major changes occur to your Microsoft Entra Connect security ID sync between migration attempts. You can add new users between test runs, and you can make corrections to ensure that previously imported historical identities become active. But, you can't change an existing user that was previously imported as active. Doing so causes your migration to fail. An example of a change might be completing a test run migration, deleting an identity from your Microsoft Entra ID that was imported actively, re-creating a new user in Microsoft Entra ID for that same identity, and then attempting another migration. In this case, an active identity migration attempts between the Active Directory and newly created Microsoft Entra identity, but causes a migration failure. 
+> The migration fails if major changes occur to your Microsoft Entra Connect security ID sync between migration attempts. You can add new users between test runs, and you can make corrections to ensure that previously imported historical identities become active. But, you can't change an existing user that was previously imported as active. Doing so causes your migration to fail. An example of a change is completing a test run migration, deleting an actively imported identity from Microsoft Entra ID, re-creating the user in Microsoft Entra ID, and then attempting another migration. In this case, an active identity migration attempts between the Active Directory and newly created Microsoft Entra identity, but causes a migration failure. 
 
 1. Review the correctly matched identities. Are all the expected identities present? Are the users mapped to the correct Microsoft Entra identity? 
 
-   If any values must be changed, contact your Microsoft Entra administrator to verify that the on-premises Active Directory identity is part of the sync to Microsoft Entra ID and set up correctly. For more information, see [Integrate your on-premises identities with Microsoft Entra ID](/azure/active-directory/hybrid/whatis-hybrid-identity). 
+   If any values need to be updated, contact your Microsoft Entra administrator to ensure the on-premises Active Directory identity is synced with Microsoft Entra ID and configured correctly. For more information, see [Integrate your on-premises identities with Microsoft Entra ID](/azure/active-directory/hybrid/whatis-hybrid-identity). 
 
 2. Next, review the identities that are labeled as *historical*. This labeling implies that a matching Microsoft Entra identity couldn't be found, for any of the following reasons:
 
@@ -256,7 +258,7 @@ If Microsoft Entra Connect isn't configured, all users in the identity map log f
 
 Running a migration with all historical identities has consequences that need to be considered carefully. Only teams with a few users and for which the cost of setting up Microsoft Entra Connect is deemed too high should consider. 
 
-To migration all identities as historical, follow the steps outlined in later sections. When you queue a migration, the identity used to queue the migration is bootstrapped into the organization as the organization owner. All other users are imported as historical. Organization owners can then [add the users back in](../organizations/accounts/add-organization-users.md?toc=/azure/devops/organizations/accounts/toc.json&bc=/azure/devops/organizations/accounts/breadcrumb/toc.json) by using their Microsoft Entra identity. The added users are treated as new users. They don't* own any of their history, and there's no way to reparent this history to the Microsoft Entra identity. However, users can still look up their premigration history by searching for their `\<domain>\<Active Directory username>`.
+To migration all identities as historical, follow the steps outlined in later sections. When you queue a migration, the identity used to queue the migration is bootstrapped into the organization as the organization owner. All other users are imported as historical. Organization owners can then [add the users back in](../organizations/accounts/add-organization-users.md?toc=/azure/devops/organizations/accounts/toc.json&bc=/azure/devops/organizations/accounts/breadcrumb/toc.json) by using their Microsoft Entra identity. The added users are treated as new users. They don't own any of their history, and there's no way to reparent this history to the Microsoft Entra identity. However, users can still look up their premigration history by searching for their `\<domain>\<Active Directory username>`.
 
 The Data Migration Tool displays a warning if it detects the complete historical identities scenario. If you decide to go down this migration path, you need to consent in the tool to the limitations. 
 
@@ -276,15 +278,15 @@ Step 3: [Upload the DACPAC file and migration files to an Azure storage account]
 Step 4: [Generate an SAS token to access the storage account](#step-4-generate-an-sas-token).  
 Step 5: [Complete the migration specification](#step-5-complete-the-migration-specification). 
 
-> [!NOTE] 
-> Before you perform a production migration, we *strongly* recommend that you complete a test run migration. With a test run, you can validate that the migration process works for your collection and that there are no unique data shapes present that might cause a production migration failure. 
+> [!NOTE]  
+> Before performing a production migration, we *strongly* recommend completing a test run migration. A test run allows you to validate that the migration process works for your collection and ensures there are no unique data shapes or issues that could cause a production migration to fail.
 
 ### Step 1: Detach your collection
 
-[Detaching the collection](/azure/devops/server/admin/move-project-collection#detach-coll) is a crucial step in the migration process. Identity data for the collection resides in the Azure DevOps Server instance's configuration database while the collection is attached and online. When a collection is detached from the Azure DevOps Server instance, it takes a copy of that identity data and packages it with the collection for transport. Without this data, the identity portion of the migration *can't* be executed. 
+[Detaching the collection](/azure/devops/server/admin/move-project-collection#detach-coll) is a crucial step in the migration process. Identity data for the collection resides in the Azure DevOps Server instance's configuration database while the collection is attached and online. When a collection is detached from the Azure DevOps Server instance, it takes a copy of that identity data and packages it with the collection for transport. Without this data, the identity portion of the migration *can't* be executed.
 
 > [!TIP]
-> We recommend that you keep the collection detached until the migration completes, because there isn't a way to migration the changes that occurred during the migration. Reattach your collection after you back it up for migration, so you aren't concerned about having the latest data for this type of migration. To avoid offline time altogether, you can also choose to employ an [offline detach](/azure/devops/server/command-line/tfsconfig-cmd#offlinedetach) for test runs. 
+> Keep the collection detached until the migration completes to avoid losing any changes made during the migration, as these changes can't get migrated afterward. After backing up your collection for migration, you can reattach it. However, any changes made after the backup aren't included in the migration, which might raise concerns about having the most current data. You can use an offline detach for test runs, but this process might not align with recommended migration practices. Review the documentation on [offline detach](/azure/devops/server/command-line/tfsconfig-cmd#offlinedetach) to fully understand its implications and how it fits into your migration strategy.
 
 It's important to weigh the cost of choosing to incur zero downtime for a test run. It requires taking backups of the collection and configuration database, restoring them on a SQL instance, and then creating a detached backup. A cost analysis could prove that taking just a few hours of downtime to directly take the detached backup is better in the end.
 
@@ -437,7 +439,7 @@ Azure DevOps Services is available in multiple [geographical locations](https://
 | United Kingdom | United Kingdom South | 
 | Australia East | Australia East |
 | Brazil South | Brazil South |
-| India South | India South |
+| India Central | India Central |
 | Canada Central | Canada Central |
 | Asia Pacific (Singapore) | Asia Pacific (Singapore) |
 
@@ -445,7 +447,7 @@ Although Azure DevOps Services is available in multiple geographical locations i
 
 [Create a blob container](/azure/storage/common/storage-create-storage-account) from the Azure portal. After you create the container, upload the Collection DACPAC file. 
 
-After the migration finishes, delete the blob container and accompanying storage account with tools such as [AzCopy](/azure/storage/common/storage-use-azcopy-v10) or any other Azure storage explorer tool, like [Azure Storage Explorer](https://storageexplorer.com/). 
+After the migration finishes, delete the blob container and accompanying storage account with tools such as [AzCopy](/azure/storage/common/storage-use-azcopy-v10) or any other Azure storage explorer tool. 
 
 > [!NOTE] 
 > If your DACPAC file is larger than 10 GB, we recommend that you use [AzCopy](/azure/storage/common/storage-use-azcopy-v10), as it has multithreaded upload support for faster uploads.
@@ -511,7 +513,7 @@ Your team is now ready to begin the process of running a migration. We recommend
 
 > [!NOTE]
 > - If you need to repeat a completed production-run migration for a collection, such as due to a rollback, contact Azure DevOps Services [Customer Support](https://azure.microsoft.com/support/devops/) before you queue another migration.
-- Azure administrators can prevent users from creating new Azure DevOps organizations. If the Microsoft Entra tenant policy is turned on, your migration fails to finish. Before you begin, verify that the policy isn't set or that there's an exception for the user that is performing the migration. For more information, see [Restrict organization creation via Microsoft Entra tenant policy](../organizations/accounts/azure-ad-tenant-policy-restrict-org-creation.md).
+- Azure administrators can prevent users from creating new Azure DevOps organizations. If the Microsoft Entra tenant policy is turned on, your migration fails to finish. Before you begin, verify that the policy isn't set or that there's an exception for the user that's performing the migration. For more information, see [Restrict organization creation via Microsoft Entra tenant policy](../organizations/accounts/azure-ad-tenant-policy-restrict-org-creation.md).
 - Azure DevOps Services doesn't support per-pipeline retention policies, and they aren't carried over to the hosted version.
 
 ### Considerations for rollback plans
@@ -567,7 +569,7 @@ The Data Migration Tool flags errors that you need to correct before migration. 
 > [!div class="nextstepaction"]
 > [Resolve migration errors](migration-troubleshooting.md)
 
-## Related articles
+## Related content
 
 - [Migration overview](migration-overview.md) 
 - [Post migration tasks](migration-post-migration.md)

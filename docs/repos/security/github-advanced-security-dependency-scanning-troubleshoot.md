@@ -9,7 +9,7 @@ ms.custom: cross-service
 ms.author: laurajiang
 author: laurajjiang
 monikerRange: 'azure-devops'
-ms.date: 02/20/2025
+ms.date: 04/16/2025
 ---
 
 # Troubleshoot dependency scanning 
@@ -18,7 +18,26 @@ Learn how to troubleshoot dependency scanning issues in GitHub Advanced Security
 
 ## Prerequisites
 
-[!INCLUDE [github-advanced-security-prerequisites](includes/github-advanced-security-prerequisites.md)]
+[!INCLUDE [github-advanced-security-prerequisites](includes/github-advanced-security-prerequisites.md)] 
+
+## Manual dependency scanning task setup
+
+>[!TIP] 
+> For the most accurate scanning results, add the dependency scanning task after the build steps or package restore step in a pipeline that builds the code you wish to scan.
+
+### [YAML](#tab/yaml)
+
+Add the task Advanced Security Dependency Scanning task ([AdvancedSecurity-Dependency-Scanning@1](/azure/devops/pipelines/tasks/reference/advanced-security-dependency-scanning-v1)) directly to your YAML pipeline file or select the **Advanced Security Dependency Scanning** task from the [task assistant](../../pipelines/get-started/yaml-pipeline-editor.md#use-task-assistant).
+
+:::image type="content" source="media/dependency-scanning-config-yaml.png" lightbox="media/dependency-scanning-config-yaml.png" alt-text="Screenshot of dependency scanning pipeline setup for YAML.":::
+
+### [Classic](#tab/classic)
+
+Add the `Advanced Security Dependency Scanning` ([AdvancedSecurity-Dependency-Scanning@1](/azure/devops/pipelines/tasks/reference/advanced-security-dependency-scanning-v1)) task to your pipeline. 
+
+:::image type="content" source="media/dependency-scanning-config-classic.png" lightbox="media/dependency-scanning-config-classic.png" alt-text="Screenshot of dependency scanning pipeline setup for classic pipelines.":::
+
+---
 
 ## Dependency scanning not identifying any components
 If the dependency scanning task is completing without flagging any components and failing to generate alerts for components with known vulnerabilities, ensure that you at have a package restore step before the `AdvancedSecurity-Dependency-Scanning@1` task. 
@@ -64,6 +83,73 @@ To use this variable, add `DependencyScanning.Timeout` as a pipeline variable:
 - task: AdvancedSecurity-Dependency-Scanning@1
   env:
     DependencyScanning.Timeout: 600
+```
+
+## Adjusting your scanning directory
+
+By default, the dependency scanning task will process the `Agent.BuildDirectory` directory. If you want to scope your scan to a specific folder, you can set a pipeline variable `DependencyScanning.SourcePath` to any directory file path in the build agent that you want to analyze. Multiple dependency scanning task executions in the same pipeline job are not supported. If the scan path is scoped to subdirectory, you cannot re-add the task to scan a different directory.
+
+ >[!div class="tabbedCodeSnippets"]
+```yaml
+- task: AdvancedSecurity-Dependency-Scanning@1
+  env:
+    DependencyScanning.SourcePath: scan/code/path
+```
+
+## Dependency scanning publishing results to the unintended repository 
+
+If you have a pipeline definition housed in one repository and the source code to be scanned by GitHub Advanced Security was in another, results may be processed and submitted to the incorrect repository, publishing to the repository containing the pipeline definition rather than the source code repository.
+
+To enable intended result routing, set the pipeline environment variable `advancedsecurity.publish.repository.infer: true` to infer the repository to publish from the repository in the working directory.
+
+
+>[!div class="tabbedCodeSnippets"]
+```yaml
+trigger:
+  - main
+
+resources:
+  repositories:
+    # PipelineRepo: The repository containing the pipeline definition.
+    # This is optional and only needed if you plan to reference files or scripts from this repo.
+    - repository: PipelineRepo
+      type: git
+      name: DevOpsPipelineRepo
+      ref: refs/heads/main
+      trigger:
+        - main
+    # SourceRepo: The repository where scanning and publishing will occur.
+    - repository: SourceRepo
+      type: git
+      name: code-to-analyze-repo
+      ref: refs/heads/main
+      trigger:
+        - main
+
+jobs:
+  - job: "DependencyScan"
+    displayName: "Dependency Scanning with Inferred Publishing"
+    variables:
+      # Enable repository inference
+      advancedsecurity.publish.repository.infer: true
+    steps:
+      # Checkout the SourceRepo
+      - checkout: SourceRepo
+
+      # Perform Dependency Scanning
+      - task: AdvancedSecurity-Dependency-Scanning@1
+        displayName: "Analyze Dependencies for Vulnerabilities"
+```
+
+## Missing dependency scanning pull request annotations when adjusting where results are published 
+
+If you are using either the `advancedsecurity.publish.repository.infer` or defining an alternative `advancedsecurity.publish.repository`, you may need to set `DependencyScanning.SourcePath: $(System.DefaultWorkingDirectory)` so that file paths are determined accurately for the pull request annotation to appear as expected. 
+
+ >[!div class="tabbedCodeSnippets"]
+```yaml
+- task: AdvancedSecurity-Dependency-Scanning@1
+  env:
+    DependencyScanning.SourcePath: $(System.DefaultWorkingDirectory)
 ```
 
 ## Break-glass scenario for build task

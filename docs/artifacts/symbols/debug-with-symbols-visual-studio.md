@@ -3,9 +3,9 @@ title: Debug with symbols in Visual Studio
 description: Use symbols to debug your application with Visual Studio.
 ms.assetid: 318323C4-5B2F-45DE-A834-CCE03C670F8C
 ms.service: azure-devops-artifacts
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 07/20/2021
-monikerRange: '<= azure-devops'
+monikerRange: "<=azure-devops"
 "recommendations": "true"
 ---
 

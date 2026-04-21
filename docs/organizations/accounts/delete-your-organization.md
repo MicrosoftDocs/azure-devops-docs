@@ -1,18 +1,19 @@
 ---
 title: Delete or remove an organization
 titleSuffix: Azure DevOps Services
-description: Learn how to delete your organization, and what happens to users when you do.
+description: Learn how to permanently delete an Azure DevOps organization, what happens to users and data, recovery options, and administrator deletion capabilities for Microsoft Entra ID administrators.
 ms.subservice: azure-devops-organizations
 ms.assetid: 82433ad3-d665-4a11-95b7-82178f493fb5
 ai-usage: ai-assisted
-ms.topic: conceptual
+ms.topic: how-to
 ms.author: chcomley
 author: chcomley
-ms.date: 01/03/2025
+ms.date: 04/02/2026
 monikerRange: 'azure-devops'
+#customer intent: As an Azure DevOps administrator, I want to permanently delete an organization I no longer need while understanding the impact on users, data recovery options, and administrator deletion capabilities.
 ---
 
-# Delete your organization
+# Delete an organization
 
 [!INCLUDE [version-eq-azure-devops](../../includes/version-eq-azure-devops.md)]
 
@@ -40,29 +41,29 @@ When you delete your organization, the following results occur:
 
 ## Delete organization
 
-To delete an organization, do the following steps.
+To delete an organization, complete the following steps:
 
-1. Sign in to your organization (```https://dev.azure.com/{yourorganization}```).
+1. Sign in to your organization (```https://dev.azure.com/{Your_Organization}```).
 
-2. Select ![gear icon](../../media/icons/gear-icon.png) **Organization settings**.
+1. Select ![gear icon](../../media/icons/gear-icon.png) **Organization settings**.
 
     ![Screenshot showing highlighted Organization settings button.](../../media/settings/open-admin-settings-vert.png)
 
-3. Select **Overview** > **Delete**.
+1. Select **Overview** > **Delete**.
 
    ![Screenshot of organization settings, with Overview and Delete highlighted](media/delete-organization/organization-overview-settings.png)
 
-4. In the resulting dialog box, enter the name of the organization, and then select **Delete**.
+1. In the dialog box, enter the name of the organization, and then select **Delete**.
 
    ![Screenshot of Delete Account dialog box](media/delete-organization/delete-organization-popup.png)
 
-5. To review your organizations, go to your [Visual Studio profile](https://app.vsaex.visualstudio.com/profile/view), where you can see your deleted organization.
+1. To review your organizations, go to your [Visual Studio profile](https://app.vsaex.visualstudio.com/profile/view), where you can see your deleted organization.
 
    [Need help?](faq-configure-customize-organization.yml#get-support)
 
-Your organization is deleted.
+The organization is deleted.
 
-## Related articles
+## Related content
 
 - [Recover your deleted organization](recover-your-organization.md)
 - [Resolve an orphaned organization](resolve-orphaned-organization.md)

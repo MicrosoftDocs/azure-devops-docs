@@ -4,7 +4,7 @@ titleSuffix: Azure DevOps Services
 description: Learn how to restore your organization and data up to 90 days after being deleted, done with organization owner permissions.
 ms.subservice: azure-devops-organizations
 ms.assetid: b81adafa-adac-4e80-baa6-140fb58fbeff
-ms.topic: conceptual
+ms.topic: how-to
 ms.author: chcomley
 author: chcomley
 ms.date: 10/24/2024
@@ -21,7 +21,7 @@ After you delete an organization, it's disabled but available for 28 days. If yo
 
 | Category | Requirements |
 |--------------|-------------|
-|**Permissions**| [Organization owner](../security/look-up-organization-owner.md). For more information about specific scenarios, see the following instructions:<br>- [When you don't have an Azure DevOps Administrator](resolve-orphaned-organization.md#when-you-dont-have-an-azure-devops-administrator)<br>- [Resolve orphaned organization when your Azure DevOps Administrator *is* a member of the target organization](resolve-orphaned-organization.md#when-your-azure-devops-administrator-is-a-member-of-the-target-organization)<br>- [Resolve orphaned organization when your Azure DevOps Administrator *isn't* a member of the target organization](resolve-orphaned-organization.md#when-your-azure-devops-administrator-isnt-a-member-of-the-target-organization)|
+|**Permissions**| [Organization owner](../security/look-up-organization-owner.md).|
 |**Deletion time frame**| An organization deleted within the last 28 days.|
 
 > [!NOTE]
@@ -50,10 +50,11 @@ After you delete an organization, it's disabled but available for 28 days. If yo
    * If billing was previously set up for your organization, [relink your organization](../billing/set-up-billing-for-your-organization-vs.md#set-up-billing) to an Azure subscription.
    * If your organization was connected to Microsoft Entra ID for authenticating user access, you don't have to reconnect it.
 
-## Related articles
+## Related content
 
 * [Delete an organization](delete-your-organization.md)
 * [Create a new organization](create-organization.md)
 * [Change organization owner](change-organization-ownership.md)
-* [Change organization data region](change-organization-location.md)
+* [Change your organization geography](change-organization-location.md)
 * [Learn about FAQs for configuring and customizing your organization](faq-configure-customize-organization.yml)
+* [Assign an owner to an orphaned organization](resolve-orphaned-organization.md)

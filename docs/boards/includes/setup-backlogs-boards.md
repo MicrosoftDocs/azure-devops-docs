@@ -1,6 +1,9 @@
 ---
 ms.topic: include
+ms.date: 03/24/2026
+ai-usage: ai-assisted
 ---
 
 > [!NOTE]
-> For more information, see [Backlogs, boards, and plans](../backlogs/backlogs-boards-plans.md). In case you don't see the desired work items on your backlog or board, see [Set up your backlogs and boards](../backlogs/set-up-your-backlog.md).
+> If expected work items don't appear on your backlog or board, see [Create and manage your backlog](../backlogs/create-your-backlog.md).
+> For more information, see [What is Azure Boards?](../get-started/what-is-azure-boards.md).

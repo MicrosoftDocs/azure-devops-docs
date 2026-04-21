@@ -4,6 +4,7 @@ description: See the Sprint 187 feature updates for Azure Boards, including next
 author: gloridelmorales
 ms.author: glmorale
 ms.date: 05/24/2021
+ms.topic: release-notes
 ---
 
 # Azure Boards - Sprint 187 Update

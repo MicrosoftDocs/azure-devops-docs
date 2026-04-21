@@ -9,14 +9,14 @@ ms.custom: cross-service
 ms.author: laurajiang
 author: laurajjiang
 monikerRange: 'azure-devops'
-ms.date: 02/20/2025
+ms.date: 05/07/2025
 ---
 
 # Integrate non-Microsoft scanning tools
 
 [GitHub Advanced Security for Azure DevOps](configure-github-advanced-security-features.md) creates code scanning alerts in a repository using information from Static Analysis Results Interchange Format (SARIF) files. The SARIF file properties are used to populate alert information, such as the alert title, location, and description text.
 
-You can generate SARIF files using many static analysis security testing tools, including CodeQL. The results must use SARIF version 2.1.0. For more information on SARIF, see [SASRIF tutorials](https://github.com/microsoft/sarif-tutorials).
+You can generate SARIF files using many static analysis security testing tools, including CodeQL. The results must use SARIF version 2.1.0. For more information on SARIF, see [SARIF tutorials](https://github.com/microsoft/sarif-tutorials).
 
 ## Prerequisites
 
@@ -53,7 +53,19 @@ If your SARIF file doesn't include `partialFingerprints`, the `AdvancedSecurity-
 
 ## Validate tool results
 
-You can check that the SARIF properties have the supported size for upload and that the file is compatible with code scanning. For more information, see [Validating your SARIF file](https://docs.github.com/en/code-security/code-scanning/integrating-with-code-scanning/sarif-support-for-code-scanning#validating-your-sarif-file). To validate if a SARIF file conforms specifically to Advanced Security's requirements, see [SARIF validator](https://sarifweb.azurewebsites.net/Validation) and select `Azure DevOps ingestion rules`. 
+You can check that the SARIF properties have the supported size for upload and that the file is compatible with code scanning. In addition, there are specific limits on data objects present in each SARIF file:
+
+| SARIF data    | Limit | Notes         |
+|---------|-----|--------------|
+| Runs per file | 20 |  |
+| Results per run | 5,000 | Advanced Security will check if the security field is non-empty in results, then sort to pick top 5,000 results. Else, pick 5,000 results as they arrived. |
+| Rules per run | None | Future limit of 25,000 rules per run. |
+| Tool extensions per run | None | Future limit of 100 tool extensions per run. |
+| Location per result | None | Advanced Security will pick the first 100 results. The alerts interface will only show the first location per result. |
+| Tags per rule | None | Advanced Security will pick the first ten. |
+| Alert limit | None |  |
+
+For more information on troubleshooting issues with your SARIF file, see [Validating your SARIF file](https://docs.github.com/en/code-security/code-scanning/integrating-with-code-scanning/sarif-support-for-code-scanning#validating-your-sarif-file). To validate if a SARIF file conforms specifically to Advanced Security's requirements, see [SARIF validator](https://sarifweb.azurewebsites.net/Validation) and select `Azure DevOps ingestion rules`. 
 
 ## Related articles
 

@@ -3,7 +3,7 @@ title: Link Boards items to Advanced Security Alerts
 author: ncouraud
 ms.author: nicour
 ms.date: 01/16/2025
-ms.topic: article
+ms.topic: whats-new
 ms.service: azure-devops
 ms.subservice: azure-devops-release-notes
 description: Link Boards items to Advanced Security Alerts

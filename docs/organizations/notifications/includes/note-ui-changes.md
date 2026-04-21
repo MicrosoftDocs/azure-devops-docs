@@ -4,8 +4,8 @@ ms.manager: mijacobs
 ms.author: chcomley
 author: chcomley
 ms.topic: include
-ms.date: 01/06/2022
+ms.date: 05/12/2025
 ---
 
 > [!NOTE]
-> Many of the concepts addressed in this article are applicable to earlier versions of Azure DevOps, although the user interface may have changed.
+> Many concepts addressed in this article apply to earlier versions of Azure DevOps, although there are changes to the user interface.

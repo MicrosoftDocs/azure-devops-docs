@@ -7,6 +7,7 @@ ms.author: ericvan
 author: geekzter
 ms.date: 08/19/2024
 monikerRange: '<= azure-devops'
+ms.custom: sfi-image-nochange
 "recommendations": "true"
 ---
 
@@ -194,10 +195,6 @@ The Azure Pipelines ServiceNow extension supports the Kingston, London, New York
 
 ::: moniker range="azure-devops-2022"
 The Azure Pipelines ServiceNow extension supports the Kingston, London, New York, Paris, Quebec, San Diego, Tokyo, and Utah releases.
-::: moniker-end
-
-::: moniker range="< azure-devops-2022"
-The Azure Pipelines ServiceNow extension supports the Kingston, London, New York, Paris, and Quebec releases.
 ::: moniker-end
 
 ### What types of change request are supported?

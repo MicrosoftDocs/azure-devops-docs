@@ -1,9 +1,9 @@
 ---
 title: Custom CodeQL Support
-author: sull8000
-ms.author: bryans
+author: ncouraud
+ms.author: nicour
 ms.date: 11/8/2023
-ms.topic: article
+ms.topic: whats-new
 ms.service: azure-devops
 ms.subservice: azure-devops-release-notes
 description: Custom CodeQL query support

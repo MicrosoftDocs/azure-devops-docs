@@ -6,7 +6,7 @@ ms.subservice: azure-devops-notifications
 ms.reviewer: wismythe
 ms.author: chcomley
 author: chcomley
-ms.topic: conceptual
+ms.topic: overview
 ms.date: 12/30/2019
 monikerRange: '<= azure-devops'
 ---
@@ -39,7 +39,7 @@ Notification statistics show the top 10 most active subscriptions and top event 
 >* The integer subscription ID is shown in the description for a custom email subscription.
 >* Results aren't a sliding 24-hour window and reset at the beginning of each day (00:00 UTC).
 
-## Related articles
+## Related content
 
 - [Manage personal notifications](manage-your-personal-notifications.md)
 - [Manage notifications for a team, project, or organization](manage-team-group-global-organization-notifications.md)

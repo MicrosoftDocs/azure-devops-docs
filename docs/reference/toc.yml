@@ -45,13 +45,11 @@
     href: ../boards/faqs.yml?toc=/azure/devops/reference/toc.json
   - name: Azure Boards customization FAQs
     href: ../organizations/settings/work/faqs.yml?toc=/azure/devops/reference/toc.json
-  - name: Set up your backlogs & boards
-    href: ../boards/backlogs/set-up-your-backlog.md?toc=/azure/devops/reference/toc.json
   - name: Fix "Ordering backlog items is disabled"
     href: ../boards/backlogs/resolve-backlog-reorder-issues.md?toc=/azure/devops/reference/toc.json&
     displayname: reorder, disable, nest, natural hierarchy, in progress
   - name: Work item form caching
-    href: ../organizations/settings/work/troubleshoot-work-item-form-caching-issues.md?toc=/azure/devops/reference/toc.json
+    href: ../boards/faqs.yml#caching
 - name: Reference
   items:
   - name: Naming restrictions

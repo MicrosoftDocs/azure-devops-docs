@@ -56,6 +56,8 @@
     href: enable-disable-check-policies.md
   - name: Remove check-in policies
     href: remove-check-policies.md
+  - name: Migrate custom check-in policy
+    href: tfvc-check-in-policy-migrate-guide.md
   - name: Configure check-in notes
     href: configure-check-notes.md
   - name: Test impact for partially mapped repositories

@@ -3,7 +3,7 @@ title: Deprecate old Azure Artifacts tasks in Azure Pipelines and default to new
 author: gloridelmorales
 ms.author: glmorale
 ms.date: 10/11/2022
-ms.topic: article
+ms.topic: how-to
 ms.service: azure-devops
 ms.subservice: azure-devops-release-notes
 description: Deprecate old Azure Artifacts tasks in Azure Pipelines and default to new, auth-only tasks

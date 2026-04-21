@@ -4,6 +4,7 @@ author: gloridelmorales
 ms.author: glmorale
 ms.date: 7/14/2022
 description: Filter on work item history.  
+ms.topic: release-notes
 ---
 # Filter on work item history
 

@@ -1,7 +1,7 @@
 ---
 title: Work Items hub and VM-based Azure DevOps Project – VSTS Sprint 131 Update
 ms.date: 3/5/2018
-ms.topic: article
+ms.topic: release-notes
 ms.manager: jillfra
 description: In the Sprint 131 Update of Visual Studio Team Services (VSTS), there are a few features that have received a large amount of feedback and activity on UserVoice, including Work Items hub.
 hide_comments: true

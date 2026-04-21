@@ -4,6 +4,7 @@ description: See the Sprint 160 feature updates for Azure Repos, including next 
 author: gloridelmorales
 ms.author: glmorale
 ms.date: 11/04/2019
+ms.topic: release-notes
 ---
 
 # Azure Repos - Sprint 160 Update

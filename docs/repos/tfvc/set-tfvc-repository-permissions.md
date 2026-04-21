@@ -5,13 +5,10 @@ description: Follow steps to manage access to a Team Foundation Version Control 
 ms.assetid:  
 ms.service: azure-devops-repos
 ms.topic: quickstart
-ms.author: vijayma
-author: vijayma
 monikerRange: '<= azure-devops'
 ms.date: 11/30/2022
 ms.subservice: azure-devops-repos-git
 ---
-
 
 # Set TFVC repository permissions 
 
@@ -81,8 +78,7 @@ To set permissions for a custom security group, ensure that the group is already
 
 ::: moniker-end    
 
-
-::: moniker range=">= azure-devops-2019 < azure-devops"
+::: moniker range="<azure-devops"
 
 To set the permissions for the TFVC repository for a project:
 
@@ -107,8 +103,6 @@ To set the permissions for the TFVC repository for a project:
 1. Save your changes.  
 
 ::: moniker-end    
-
-
 
 ## Related articles
 

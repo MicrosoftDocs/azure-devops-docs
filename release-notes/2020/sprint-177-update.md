@@ -4,6 +4,7 @@ author: sid-ah
 ms.author: simerzou
 ms.date: 10/21/2020
 description: In this sprint, we're adding a number of enhancements to the pull request experience. These include making optional checks more visible, enabling Ctrl-clicks to open a new tab, adding location to annotations, and improving the comment filtering layout. 
+ms.topic: release-notes
 ---
 
 # Improved pull request experience

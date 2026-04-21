@@ -4,12 +4,12 @@ description: Learn how to install Python packages from the command-line interfac
 ms.service: azure-devops-artifacts
 ms.topic: how-to
 ms.date: 01/15/2025
-monikerRange: '>= azure-devops-2019'
+monikerRange: "<=azure-devops"
 ---
 
 # Install Python packages (CLI)
 
-[!INCLUDE [version-gt-eq-azure-devops-2019](../../includes/version-gt-eq-2019.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 This article guides you through installing Python packages from an Azure Artifacts feed using the NuGet command-line interface.
 
@@ -24,6 +24,8 @@ This article guides you through installing Python packages from an Azure Artifac
 [!INCLUDE [](../includes/create-feed.md)]
 
 ## Install packages
+
+1. Follow the steps in the [Project setup](../python/project-setup-python.md#project-setup) to authenticated with your feed if you haven't done so, then proceed to the next step.
 
 1. Sign in to your Azure DevOps organization, and then navigate to your project.
 

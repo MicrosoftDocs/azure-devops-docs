@@ -1,9 +1,10 @@
 ---
 title: Enhanced AB# link tracking in GitHub pull requests
 author: ckanyika
-ms.author: ckanyika
+ms.author: glmorale
 ms.date: 9/26/2024
 description: Enhanced AB# link tracking in GitHub pull requests
+ms.topic: release-notes
 ---
 # Enhanced AB# link tracking in GitHub pull requests
 

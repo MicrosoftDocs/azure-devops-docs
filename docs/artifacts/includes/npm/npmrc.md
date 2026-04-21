@@ -6,7 +6,7 @@ author: ramiMSFT
 ms.date: 09/11/2023
 ---
 
-::: moniker range=">= azure-devops-2019"
+::: moniker range="<=azure-devops"
 
 1. Sign in to your Azure DevOps organization, and then navigate to your project.
 
@@ -72,7 +72,7 @@ ms.date: 09/11/2023
     node -e "require('readline') .createInterface({input:process.stdin,output:process.stdout,historySize:0}) .question('PAT> ',p => { b64=Buffer.from(p.trim()).toString('base64');console.log(b64);process.exit(); })"
     ```
 
-1. Open your `.npmrc` file and replace the placeholder `[BASE64_ENCODED_PERSONAL_ACCESS_TOKEN]` with your encoded personal access token you just created.
+2. Open your `.npmrc` file and replace the placeholder `[BASE64_ENCODED_PERSONAL_ACCESS_TOKEN]` with your encoded personal access token you just created.
 
 ::: moniker-end
 

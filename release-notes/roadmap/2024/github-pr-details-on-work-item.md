@@ -3,7 +3,7 @@ title: Show more details about a GitHub pull request
 author: danhellem
 ms.author: dahellem
 ms.date: 10/30/2023
-ms.topic: article
+ms.topic: whats-new
 ms.service: azure-devops
 ms.subservice: azure-devops-release-notes
 description: Show more details about a GitHub pull request
