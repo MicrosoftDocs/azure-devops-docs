@@ -25,7 +25,7 @@ Use Azure Pipelines to continuously build and deploy a multi-container app to Az
 
 ## Create the Azure resources
 
-Use Azure Cloud Shell (Bash) to create your AKS and ACR resources.
+Use Azure Cloud Shell (Bash) to create your Azure Kubernetes Service (AKS) cluster and Azure Container Registry (ACR).
 
 1. Sign in to [Azure portal](https://portal.azure.com?azure-portal=true), then open **Cloud Shell** and select **Bash**.
 
@@ -65,7 +65,7 @@ Use Azure Cloud Shell (Bash) to create your AKS and ACR resources.
       --generate-ssh-keys
     ```
 
-1. Grant the AKS kubelet identity pull access to ACR:
+1. Grant the AKS kubelet identity pull access to ACR. The kubelet is the node agent that runs on each Kubernetes node and pulls container images so your pods can start:
 
     ```azurecli
     clientId=$(az aks show \
@@ -86,7 +86,7 @@ Use Azure Cloud Shell (Bash) to create your AKS and ACR resources.
       --scope $acrId
     ```
 
-1. Get your ACR login server. You use it later in the pipeline variable group:
+1. Get your ACR login server, copy the value, and keep it for the next section where you set the `RegistryName` variable in the pipeline variable group:
 
     ```azurecli
     az acr list \
@@ -95,4 +95,129 @@ Use Azure Cloud Shell (Bash) to create your AKS and ACR resources.
       --output table
     ```
 
+## Set up authentication in Azure DevOps
 
+Before you create the pipeline, set up the authentication and shared variables that Azure Pipelines uses to access your Azure resources and container registry.
+
+1. In your Azure DevOps project, go to **Pipelines** > **Library**.
+
+1. Create a variable group named **Release**.
+
+1. Add a variable named `RegistryName` and set the value to your ACR login server (for example, `tailspinspacegame4692.azurecr.io`).
+
+1. Create these service connections:
+
+    - Azure Resource Manager service connection for the subscription and resource group.
+    - Docker Registry service connection for the ACR instance.
+
+## Create the pipeline
+
+In this section, you create a multi-stage Azure Pipelines definition that builds two container images, publishes Kubernetes manifests, and deploys both services to your Azure Kubernetes Service cluster.
+
+Before you paste the YAML, make sure these items already exist in your project:
+
+- A variable group named `Release` with `RegistryName` set to your Azure Container Registry login server.
+- A Docker registry service connection named `Container Registry Connection`.
+- An Azure Resource Manager service connection named `Kubernetes Cluster Connection`.
+
+1. Sign in to your Azure DevOps organization, and then navigate to your project.
+
+1. Select **Pipelines**, and then select **Edit**.
+
+1. Paste the following snippet into your YAML file, and replace placeholder values with the appropriate values for your environment:
+
+    ```yml
+    trigger:
+    - 'main'
+    
+    variables:
+      buildConfiguration: 'Release'
+      leaderboardRepository: 'leaderboard'
+      webRepository: 'web'
+      tag: '$(Build.BuildId)'
+      imagePullSecret: 'secret'
+    
+    stages:
+    - stage: Build
+      displayName: Build the containers
+      jobs:
+      - job: Build
+        pool:
+          vmImage: 'ubuntu-20.04'
+        steps:
+        - task: Docker@2
+          displayName: Build and push the web image to container registry
+          inputs:
+            command: buildAndPush
+            buildContext: $(Build.Repository.LocalPath)
+            repository: $(webRepository)
+            dockerfile: '$(Build.SourcesDirectory)/Tailspin.SpaceGame.Web/Dockerfile'
+            containerRegistry: 'Container Registry Connection'
+            tags: |
+              $(tag)
+    
+        - task: Docker@2
+          displayName: Build and push the leaderboard image to container registry
+          inputs:
+            command: buildAndPush
+            buildContext: $(Build.Repository.LocalPath)
+            repository: $(leaderboardRepository)
+            dockerfile: '$(Build.SourcesDirectory)/Tailspin.SpaceGame.LeaderboardContainer/Dockerfile'
+            containerRegistry: 'Container Registry Connection'
+            tags: |
+              $(tag)
+    
+        - publish: '$(Build.SourcesDirectory)/manifests'
+          artifact: manifests
+    
+    - stage: Deploy
+      displayName: Deploy the containers
+      dependsOn: Build
+      jobs:
+      - deployment: Deploy
+        displayName: Deploy
+        pool:
+          vmImage: 'ubuntu-20.04'
+        environment: 'spike.default'
+        variables:
+        - group: Release
+        strategy:
+          runOnce:
+            deploy:
+              steps:
+              - download: current
+                artifact: manifests
+    
+              - task: KubernetesManifest@1
+                displayName: Create imagePullSecret
+                inputs:
+                  action: createSecret
+                  connectionType: azureResourceManager
+                  secretName: $(imagePullSecret)
+                  dockerRegistryEndpoint: 'Container Registry Connection'
+                  azureSubscriptionConnection: 'Kubernetes Cluster Connection'
+                  azureResourceGroup: 'tailspin-space-game-rg'
+                  kubernetesCluster: 'tailspinspacegame-24591'
+                  namespace: 'default'
+    
+              - task: KubernetesManifest@1
+                displayName: Deploy to Kubernetes cluster
+                inputs:
+                  action: deploy
+                  connectionType: azureResourceManager
+                  azureSubscriptionConnection: 'Kubernetes Cluster Connection'
+                  azureResourceGroup: 'tailspin-space-game-rg'
+                  kubernetesCluster: 'tailspinspacegame-24591'
+                  namespace: 'default'
+                  manifests: |
+                    $(Pipeline.Workspace)/manifests/deployment.yml
+                    $(Pipeline.Workspace)/manifests/service.yml
+                  imagePullSecrets: |
+                    $(imagePullSecret)
+                  containers: |
+                    $(RegistryName)/$(webRepository):$(tag)
+                    $(RegistryName)/$(leaderboardRepository):$(tag)
+    ```
+
+> [!TIP]
+> YAML is whitespace-sensitive. Make sure to keep indentation consistent.
