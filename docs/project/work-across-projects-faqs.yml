@@ -1,6 +1,6 @@
 ### YamlMime:FAQ
 metadata:
-  title: Work across projects FAQs 
+  title: Cross-project FAQs 
   description: Get answers to frequently asked questions about working across projects in Azure DevOps.  
   titleSuffix: Azure DevOps
   ms.subservice: azure-devops-projects 
@@ -12,7 +12,7 @@ metadata:
   monikerRange: '<= azure-devops'
   ms.date: 04/13/2026
 
-title: FAQs about working across projects
+title: Cross-project FAQs
 
 summary: | 
     Many enterprise organizations create multiple projects to meet their business needs. Although we recommend maintaining a single project for simplicity, there are situations where multiple projects are necessary. Working with two or more projects raises several questions about the tasks that are supported.
