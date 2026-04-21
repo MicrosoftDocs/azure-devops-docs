@@ -55,7 +55,7 @@ These steps resolve the issue, and the error message no longer displays.
 
 You might see an error similar to one of the following messages:
 
-> - You can't reorder work items and some work items might not be shown. See work items 7 to either remove the parent to child link or change the link type to *Related*.
+> - You can't reorder work items and some work items might not be shown. See work item 7 to either remove the parent to child link or change the link type to *Related*.
 > - Work item 3 can't be reordered because its parent is on the same category.
 
 To address this error, follow these steps:

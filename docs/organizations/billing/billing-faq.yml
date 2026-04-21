@@ -28,7 +28,7 @@ sections:
       - question: |
           What types of Azure subscriptions can be used to create an Azure DevOps organization?
         answer: |
-          You can create an Azure DevOps organization using most Azure subscription types in the Azure public cloud. This includes common paid subscriptions (such as Pay‑As‑You‑Go, CSP, and Enterprise Agreement) as well as benefit‑based subscriptions (for example, Visual Studio, student, trial, and sponsorship subscriptions).
+          You can create an Azure DevOps organization using most Azure subscription types in the Azure public cloud. This includes common paid subscriptions (such as pay-as-you-go, CSP, and Enterprise Agreement) as well as benefit‑based subscriptions (for example, Visual Studio, student, trial, and sponsorship subscriptions).
           
           Azure DevOps is available only in the Azure public cloud, so subscriptions in other Azure clouds are not supported.
   

@@ -190,7 +190,7 @@ You might see a message in the log "All files up to date" from the `tf get` comm
 
 ##### Get sources through Team Foundation Proxy
 
-The easiest way to configure the agent to get sources through a Team Foundation Proxy is set environment variable `TFSPROXY` that point to the TFVC proxy server for the agent's run as user.
+The easiest way to configure the agent to get sources through a Team Foundation Proxy is to set environment variables `TFSPROXY` that point to the TFVC proxy server for the agent's run as user.
 
 Windows:
 ```cmd
