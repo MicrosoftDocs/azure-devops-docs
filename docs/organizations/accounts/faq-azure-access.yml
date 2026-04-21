@@ -85,7 +85,7 @@ sections:
           then try to [fix your subscription](/azure/cost-management-billing/manage/subscription-disabled). 
           Your paid settings are restored. 
           Or you can link your organization to another Azure subscription by 
-          [unlinking your organization from the disabled subscription](../billing/set-up-billing-for-your-organization-vs.md#change-azure-subscription). 
+          [unlinking your organization from the disabled subscription](../billing/set-up-billing-for-your-organization-vs.md#change-your-billing-subscription). 
           While your subscription is disabled, your organization goes back to the free 
           monthly limits until your subscription is fixed.
           

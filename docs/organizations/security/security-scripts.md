@@ -124,7 +124,7 @@ foreach ($user in $users.value) {
         }
         
         # Check for external users with high privileges
-        if ($user.mailAddress -notlike "*@yourdomain.com" -and $isAdmin) {
+        if ($user.mailAddress -notlike "*@contoso.com" -and $isAdmin) {
             $riskFindings += [PSCustomObject]@{
                 Type = "External Admin User"
                 User = $user.displayName
@@ -142,7 +142,7 @@ foreach ($user in $users.value) {
             IsAdmin = $isAdmin
             AdminGroups = ($adminGroups -join ", ")
             LastAccess = $user.lastAccessedDate
-            UserType = if ($user.mailAddress -like "*@yourdomain.com") { "Internal" } else { "External" }
+            UserType = if ($user.mailAddress -like "*@contoso.com") { "Internal" } else { "External" }
             AccountEnabled = if ($user.metaType -eq "member") { "Active" } else { "Inactive" }
         }
         
