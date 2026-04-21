@@ -126,3 +126,4 @@ Managed DevOps Pools keeps the past 20 images available for Selected marketplace
 * [Managed DevOps Pools prerequisites](./prerequisites.md)
 * [Configure Managed DevOps Pools networking](./configure-networking.md)
 * [Manage cost and performance](./manage-costs.md)
+* [Troubleshoot scale set agents](../pipelines/agents/scale-set-agents.md#troubleshooting-issues) - predecessor to Managed DevOps Pools

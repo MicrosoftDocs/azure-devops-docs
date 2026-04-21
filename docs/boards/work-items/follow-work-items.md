@@ -198,6 +198,8 @@ Consider these strategies to make the most of the Follow feature:
 - **Notification preferences**: Check if you selected "Not Subscribed" by mistake
 - **Email filters**: Look for Azure DevOps emails in spam or filtered folders
 
+For persistent email delivery issues, see [Troubleshoot delayed notification emails](../../organizations/notifications/troubleshoot-delayed-email.md) and [Troubleshoot unexpected notification emails](../../organizations/notifications/troubleshoot-unexpected-email.md).
+
 ### Too many notifications
 
 **Reduce notification volume:**
