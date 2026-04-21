@@ -48,9 +48,8 @@ As users perform exploratory testing, you can [gain insights from the sessions](
   
 For more information, see the following articles:  
 
-- [Install the Test & Feedback extension](../../test/request-stakeholder-feedback.md?toc=/azure/devops/project/toc.json)
-- [Request stakeholder feedback](../../test/request-stakeholder-feedback.md?toc=/azure/devops/project/toc.json)
-- [Provide stakeholder feedback](../../test/provide-stakeholder-feedback.md?toc=/azure/devops/project/toc.json)  
+- [Install the Test & Feedback extension](../../test/perform-exploratory-tests.md)
+- [Request and provide stakeholder feedback](../../test/request-stakeholder-feedback.md?toc=/azure/devops/project/toc.json)  
 
 ## Use the Microsoft Feedback client 
 

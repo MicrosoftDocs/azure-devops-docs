@@ -2,7 +2,7 @@
 title: Azure DevOps Released Features
 author: gloridelmorales
 ms.author: glmorale
-ms.date: 3/5/2026
+ms.date: 4/14/2026
 ms.topic: release-notes
 ms.service: azure-devops
 ms.subservice: azure-devops-release-notes
@@ -37,6 +37,27 @@ You can also [view the build numbers for each version](#azure-devops-server-buil
             <th>Server</th>
         </tr>
     </thead>
+<tr>
+    <td rowspan="7"><a href="2026/sprint-272-update.md" data-raw-source="[14 April 2026](2026/sprint-272-update.md)">April 14 2026</a></td>
+    <td>Built-in Code Search, no extension required</td><td>General</td><td>Future</td></tr>
+    <td>CodeQL default setup for code scanning (public preview)</td><td>GitHub Advanced Security for Azure DevOps</td><td>N/A</td></tr>
+    <td>Combined alerts view and security campaigns in security overview</td><td>GitHub Advanced Security for Azure DevOps</td><td>N/A</td></tr>
+    <td>Alert UX enhancements: "All" confidence filter</td><td>GitHub Advanced Security for Azure DevOps</td><td>N/A</td></tr>
+    <td>Improved details shown for GitHub service connections</td><td>Pipelines</td><td>Future</td></tr>
+    <td>Improving the Markdown editor for work items</td><td>Boards</td><td>Future</td></tr>
+    <td>Filter Boards and Backlogs by additional fields</td><td>Boards</td><td>Future</td></tr>
+<tr>
+    <td rowspan="10"><a href="2026/sprint-271-update.md" data-raw-source="[31 March 2026](2026/sprint-271-update.md)">March 31 2026</a></td>
+    <td>Permissions enforcement in security overview</td><td>GitHub Advanced Security for Azure DevOps</td><td>N/A</td></tr>
+    <td>Advanced Security status checks for pull requests</td><td>GitHub Advanced Security for Azure DevOps</td><td>N/A</td></tr>
+    <td>Export results from security overview</td><td>GitHub Advanced Security for Azure DevOps</td><td>N/A</td></tr>
+    <td>Remote MCP Server public preview</td><td>General</td><td>Future</td></tr>
+    <td>Expired personal access tokens (PATs) can no longer be modified</td><td>General</td><td>Future</td></tr>
+    <td>Allow extensions to access local network resources</td><td>General</td><td>Future</td></tr>
+    <td>Increased inherited process limit</td><td>Boards</td><td>Future</td></tr>
+    <td>Improved continuous deployment visibility in YAML pipelines</td><td>Pipelines</td><td>Future</td></tr>
+    <td>Deployment history for stages</td><td>Pipelines</td><td>Future</td></tr>
+    <td>Query and relate work items across projects in test results</td><td>Test Plans</td><td>Future</td></tr>
 <tr>
     <td rowspan="7"><a href="2026/sprint-270-update.md" data-raw-source="[5 March 2026](2026/sprint-270-update.md)">March 5 2026</a></td>
     <td>Secret push protection bypass details available in audit log</td><td>GitHub Advanced Security for Azure DevOps</td><td>N/A</td></tr>

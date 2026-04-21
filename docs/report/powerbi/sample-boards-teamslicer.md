@@ -8,19 +8,20 @@ ms.author: chcomley
 author: chcomley
 ms.topic: sample
 monikerRange: "<=azure-devops"
-ms.date: 12/16/2022
+ms.date: 04/07/2026
+ai-usage: ai-assisted
 ---
 
 # Add a team slicer to a Power BI report
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
-Often Power BI reports include data from multiple teams for aggregation and comparison. This article shows you how to add a Team slicer to an existing Power BI report. The Team slicer allows you to filter the report data by Teams, rather than Area Path.
+Power BI reports often include data from multiple teams for aggregation and comparison. This article shows you how to add a team slicer to an existing Power BI report. The team slicer filters the report data by teams, rather than by area path.
 
 > [!IMPORTANT]
-> The Team filter requires that the **"AreaSK"** field is included in the query used by the report you want to filter. 
+> The team filter requires that the **"AreaSK"** field is included in the query used by the report you want to filter. 
 > All of the queries provided in the sample reports already include **"AreaSK"**. 
-> If you've created your own query, make sure it returns "AreaSK" in either the $select or groupby() clauses.
+> If you created your own query, make sure it returns "AreaSK" in either the $select or groupby() clauses.
 
 [!INCLUDE [temp](includes/sample-required-reading.md)]
 
@@ -28,7 +29,7 @@ Often Power BI reports include data from multiple teams for aggregation and comp
 
 ## Sample queries
 
-To use a team slicer in a Power BI report, you'll need to add another query to your Power BI report. The following query returns the mapping between teams and Area Paths.
+To use a team slicer in a Power BI report, add another query to your Power BI report. The following query returns the mapping between teams and Area Paths.
 
 #### [Power BI query](#tab/powerbi/)
 
@@ -63,7 +64,7 @@ https://analytics.dev.azure.com/{organization}/{project}/_odata/v1.0/Areas?
 [!INCLUDE [temp](includes/sample-query-substitutions.md)]
 
 - `{organization}` - Your organization name 
-- `{project}` - Your team project name, or omit "/{project}" entirely, for a cross-project query
+- `{project}` - Your team project name. To create a cross-project query, omit `/{project}`.
 - `{areapath}` - Your Area Path. Example format: `Project\Level1\Level2`.
 
 ### Query breakdown
@@ -84,7 +85,7 @@ The following table describes each part of the query.
    `$filter=startswith(AreaPath, '{areapath}')`
    :::column-end:::
    :::column span="1":::
-   Return all teams mapped to an **Area Path** at or under the specified `{areapath}`. To include all teams in a project, omit this statement.
+   Returns all teams mapped to an **Area Path** at or under the specified `{areapath}`. To include all teams in a project, omit this statement.
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -92,7 +93,7 @@ The following table describes each part of the query.
    `&$select=AreaSK, AreaPath`
    :::column-end:::
    :::column span="1":::
-   Return **Area Path** fields, to use for mapping.
+   Returns **Area Path** fields, to use for mapping.
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -100,7 +101,7 @@ The following table describes each part of the query.
    `&$expand=Teams($select=TeamName)`
    :::column-end:::
    :::column span="1":::
-   Return the team associated with the **Area Path**.
+   Returns the team associated with the **Area Path**.
    :::column-end:::
 :::row-end:::
 
@@ -108,35 +109,31 @@ The following table describes each part of the query.
  
 ##  Expand the Teams column
 
-1. Choose the expand button.
+1. Select the expand button.
 
-    > [!div class="mx-imgBorder"] 
-    > ![Screenshot showing choose the expand button.](media/odatapowerbi-expandteam.png)
+    :::image type="content" source="media/odatapowerbi-expandteam.png" alt-text="Screenshot showing the expand button for the Teams column.":::
 
 1. Select the fields to flatten.
 
-    > [!div class="mx-imgBorder"] 
-    > ![Screenshot that shows how ot select the fields to flatten.](media/odatapowerbi-expandteam2.png)
+    :::image type="content" source="media/odatapowerbi-expandteam2.png" alt-text="Screenshot that shows how to select the fields to flatten.":::
 
-1. Table will now contain entity field(s).
+1. The table now contains the expanded entity fields.
 
-    > [!div class="mx-imgBorder"] 
-    > ![Screenshot of table that now contains entity fields.](media/odatapowerbi-expandteam3.png)
+    :::image type="content" source="media/odatapowerbi-expandteam3.png" alt-text="Screenshot of table that now contains entity fields.":::
  
 
-## Create a Relationship using "AreaSK"
+## Create a relationship using AreaSK
 
-After selecting Close & Apply, and returning to Power BI, follow these steps:
+After selecting **Close & Apply** and returning to Power BI, follow these steps:
 
-1. From the **Modeling** menus, select **Manage Relationships**.
-1. Create a relationship between your Report query and the Teams query. It's likely that Power BI will autodetect and create the relationship for you. Here's an example of a relationship between the query in the [Open Bugs](sample-boards-openbugs.md) report and the Teams query:
+1. From the **Modeling** menu, select **Manage Relationships**.
+1. Create a relationship between your Report query and the Teams query. Power BI likely autodetects and creates the relationship for you. Here's an example of a relationship between the query in the [Open Bugs](sample-boards-openbugs.md) report and the Teams query:
 
-    > [!div class="mx-imgBorder"] 
-    > ![Screenshot that shows example of relationship between queries.](media/odatapowerbi-timeslicer-relationships.png)
+    :::image type="content" source="media/odatapowerbi-timeslicer-relationships.png" alt-text="Screenshot that shows example of relationship between queries.":::
     
-## Add the Team Filter to an existing report
+## Add the team filter to an existing report
 
-1. On the page you want to add the team filter to, make sure no charts are selected, and then choose **Slicer** from the **Visualizations** pane. 
+1. On the page where you want to add the team filter, make sure you don't select any charts. Then, choose **Slicer** from the **Visualizations** pane. 
 
 	:::image type="content" source="media/reports-boards/team-slicer-visualizations.png" alt-text="Screenshot of Power BI Visualizations and Fields selections for team slicer. ":::
 

@@ -99,10 +99,8 @@ landingContent:
             url: ./feedback/index.md
       - linkListType: how-to-guide
         links:
-          - text: Request feedback, Test & Feedback extension
+          - text: Request & provide stakeholder feedback
             url: ../test/request-stakeholder-feedback.md?toc=/azure/devops/project/toc.json
           - text: Request feedback, Microsoft Feedback Client
             url: /previous-versions/azure/devops/project/feedback/get-feedback
-          - text: Track feedback
-            url: ../test/track-stakeholder-feedback.md?toc=/azure/devops/project/toc.json
  

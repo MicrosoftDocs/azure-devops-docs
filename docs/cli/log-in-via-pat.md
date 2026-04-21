@@ -21,6 +21,8 @@ This article explains how to sign in using an Azure DevOps personal access token
 
 [!INCLUDE [use-microsoft-entra-reduce-pats](../includes/use-microsoft-entra-reduce-pats.md)]
 
+For pipeline automation, use a PAT only when necessary. For service-connection-based authentication, see [Manage service connections](../pipelines/library/service-endpoints.md).
+
 ## Prerequisites
 
 | Category | Requirements |

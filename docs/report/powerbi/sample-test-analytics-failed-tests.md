@@ -9,25 +9,25 @@ ms.custom: powerbisample
 author: chcomley
 ms.topic: sample
 monikerRange: "<=azure-devops"
-ms.date: 10/13/2021
+ms.date: 04/07/2026
+ai-usage: ai-assisted
 ---
 
 # Failed tests sample report
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)] 
- 
-You can create a report that lists failed tests, similar to the following image, for pipeline runs that include test tasks. For information on adding tests to a pipeline, see the [Test task resources](#test-task-resources) section later in this article. 
- 
+
+You can create a report that lists failed tests, similar to the following image, for pipeline runs that include test tasks. For information on adding tests to a pipeline, see [Test task resources](#test-task-resources) later in this article.
 
 :::image type="content" source="media/pipeline-test-reports/failed-tests-table-report.png" alt-text="Screenshot of Failed Tests Table report.":::
 
-Use the queries provided in this article to generate the following reports:
+Use the queries in this article to generate the following reports:
 
 - Failed tests for build workflow
 - Failed tests for release workflow
 - Failed tests for a particular branch
 - Failed tests for a particular test file
-- Failed tests for a particular test owner 
+- Failed tests for a particular test owner
 
 [!INCLUDE [temp](includes/preview-note.md)]
 
@@ -37,7 +37,7 @@ Use the queries provided in this article to generate the following reports:
 
 ## Sample queries
 
-You can use the following queries of the `TestResultsDaily` entity set to create different but similar pipeline failed test reports. The `TestResultsDaily` entity set provides a daily snapshot aggregate of `TestResult` executions, grouped by Test.  
+Use the following queries of the `TestResultsDaily` entity set to create different but similar pipeline failed test reports. This entity set provides a daily snapshot aggregate of `TestResult` executions, grouped by test.
 
 [!INCLUDE [temp](includes/query-filters-test-pipelines.md)]
 
@@ -54,8 +54,8 @@ let
    Source = OData.Feed ("https://analytics.dev.azure.com/{organization}/{project}/_odata/v4.0-preview/TestResultsDaily?
 $apply=filter("
                 &"Pipeline/PipelineName eq '{pipelineName}' "
-                &"And Date/Date ge {startdate} "
-        &"And Workflow eq 'Build' "
+                &"and Date/Date ge {startdate} "
+        &"and Workflow eq 'Build' "
         &") "
             &"/groupby( "
                 &"(TestSK, Test/TestName), "
@@ -82,8 +82,8 @@ in
 https://analytics.dev.azure.com/{organization}/{project}/_odata/v4.0-preview/TestResultsDaily?
 $apply=filter(
 	Pipeline/PipelineName eq '{pipelineName}'
-	And Date/Date ge {startdate}
-	And Workflow eq 'Build'
+	and Date/Date ge {startdate}
+	and Workflow eq 'Build'
 	)
 /groupby(
 	(TestSK, Test/TestName), 
@@ -114,8 +114,10 @@ let
    Source = OData.Feed ("https://analytics.dev.azure.com/{organization}/{project}/_odata/v4.0-preview/TestResultsDaily?
 $apply=filter("
                 &"Pipeline/PipelineName eq '{pipelineName}' "
-                &"And Date/Date ge {startdate}) "
-        &"/groupby((TestSK, Test/TestName, Workflow), "
+                &"and Date/Date ge {startdate} "
+        &"and Workflow eq 'Release' "
+        &") "
+        &"/groupby((TestSK, Test/TestName), "
         &"aggregate( "
             &"ResultCount with sum as TotalCount, "
                 &"ResultPassCount with sum as PassedCount, "
@@ -139,8 +141,9 @@ in
 https://analytics.dev.azure.com/{organization}/{project}/_odata/v4.0-preview/TestResultsDaily?
 $apply=filter(
 	Pipeline/PipelineName eq '{pipelineName}'
-	And Date/Date ge {startdate})
-/groupby((TestSK, Test/TestName, Workflow), 
+	and Date/Date ge {startdate}
+	and Workflow eq 'Release')
+/groupby((TestSK, Test/TestName), 
 	aggregate(
 	ResultCount with sum as TotalCount,
 	ResultPassCount with sum as PassedCount,
@@ -155,12 +158,12 @@ iif(TotalCount gt NotExecutedCount, ((PassedCount add NotImpactedCount) div cast
 
 ***
 
-### Failed tests filtered by Branch
+### Failed tests filtered by branch
 
 To view the failed tests of a pipeline for a particular branch, use the following queries. To create the report, carry out the following extra steps along with what is specified later in this article.
 
-- Expand `Branch` into `Branch.BranchName`
-- Select Power BI Visualization Slicer and add the field `Branch.BranchName` to the slicer's **Field**
+- Expand `Branch` into `Branch.BranchName`.
+- Select Power BI Visualization Slicer and add the field `Branch.BranchName` to the slicer's **Field**.
 - Select the branch name from the slicer for which you need to see the outcome summary.
 
 For more information about using slicers, see [Slicers in Power BI](/power-bi/visuals/power-bi-visualization-slicers).
@@ -175,8 +178,8 @@ let
    Source = OData.Feed ("https://analytics.dev.azure.com/{organization}/{project}/_odata/v4.0-preview/TestResultsDaily?
 $apply=filter("
                 &"Pipeline/PipelineName eq '{pipelineName}' "
-                &"And Date/Date ge {startdate} "
-        &"And Workflow eq 'Build') "
+                &"and Date/Date ge {startdate} "
+        &"and Workflow eq 'Build') "
         &"/groupby((TestSK, Test/TestName, Branch/BranchName), "
             &"aggregate( "
                 &"ResultCount with sum as TotalCount, "
@@ -201,8 +204,8 @@ in
 https://analytics.dev.azure.com/{organization}/{project}/_odata/v4.0-preview/TestResultsDaily?
 $apply=filter(
 	Pipeline/PipelineName eq '{pipelineName}'
-	And Date/Date ge {startdate}
-	And Workflow eq 'Build')
+	and Date/Date ge {startdate}
+	and Workflow eq 'Build')
 /groupby((TestSK, Test/TestName, Branch/BranchName), 
 	aggregate(
 	ResultCount with sum as TotalCount,
@@ -222,8 +225,8 @@ iif(TotalCount gt NotExecutedCount, ((PassedCount add NotImpactedCount) div cast
 
 To view the failed tests for a pipeline and a particular test file, use the following queries. To create the report, carry out the following extra steps along with what is defined later in this article.
 
-- Expand `Test` into `Test.ContainerName`
-- Select Power BI Visualization Slicer and add the field `Test.ContainerName` to the slicer's **Field**
+- Expand `Test` into `Test.ContainerName`.
+- Select **Power BI Visualization Slicer** and add the field `Test.ContainerName` to the slicer's **Field**.
 - Select the container name from the slicer for which you need to see the outcome summary.
   
 
@@ -236,7 +239,7 @@ let
    Source = OData.Feed ("https://analytics.dev.azure.com/{organization}/{project}/_odata/v4.0-preview/TestResultsDaily?
 $apply=filter("
                 &"Pipeline/PipelineName eq '{pipelineName}' "
-                &"And Date/Date ge {startdate}) "
+                &"and Date/Date ge {startdate}) "
         &"/groupby((TestSK, Test/TestName, Test/ContainerName), "
         &"aggregate( "
             &"ResultCount with sum as TotalCount, "
@@ -261,7 +264,7 @@ in
 https://analytics.dev.azure.com/{organization}/{project}/_odata/v4.0-preview/TestResultsDaily?
 $apply=filter(
 	Pipeline/PipelineName eq '{pipelineName}'
-	And Date/Date ge {startdate})
+	and Date/Date ge {startdate})
 /groupby((TestSK, Test/TestName, Test/ContainerName), 
 	aggregate(
 	ResultCount with sum as TotalCount,
@@ -279,10 +282,10 @@ iif(TotalCount gt NotExecutedCount, ((PassedCount add NotImpactedCount) div cast
 
 ### Failed tests filtered by test owner
 
-To view the Failed test for a pipeline for tests owned by a particular test owner, use the following queries. To create the report, carry out the following extra steps along with what is defined later in this article.
+To view the failed tests for a pipeline for tests owned by a particular test owner, use the following queries. To create the report, carry out the following extra steps along with what is defined later in this article.
 
-- Expand `Test` into `Test.TestOwner`
-- Select Power BI Visualization Slicer and add the field `Test.TestOwner` to the slicer's **Field**
+- Expand `Test` into `Test.TestOwner`.
+- Select Power BI Visualization Slicer and add the field `Test.TestOwner` to the slicer's **Field**.
 - Select the test owner from the slicer for which you need to see the outcome summary.
 
 #### [Power BI query](#tab/powerbi/)
@@ -294,7 +297,7 @@ let
    Source = OData.Feed ("https://analytics.dev.azure.com/{organization}/{project}/_odata/v4.0-preview/TestResultsDaily?
 $apply=filter("
                 &"Pipeline/PipelineName eq '{pipelineName}' "
-                &"And Date/Date ge {startdate}) "
+                &"and Date/Date ge {startdate}) "
         &"/groupby((TestSK, Test/TestName, Test/TestOwner), "
         &"aggregate( "
             &"ResultCount with sum as TotalCount, "
@@ -319,7 +322,7 @@ in
 https://analytics.dev.azure.com/{organization}/{project}/_odata/v4.0-preview/TestResultsDaily?
 $apply=filter(
 	Pipeline/PipelineName eq '{pipelineName}'
-	And Date/Date ge {startdate})
+	and Date/Date ge {startdate})
 /groupby((TestSK, Test/TestName, Test/TestOwner), 
 	aggregate(
 	ResultCount with sum as TotalCount,
@@ -338,9 +341,9 @@ iif(TotalCount gt NotExecutedCount, ((PassedCount add NotImpactedCount) div cast
 ## Substitution strings and query breakdown
 
 [!INCLUDE [temp](includes/sample-query-substitutions.md)]
-- `{organization}` - Your organization name
-- `{project}` - Your team project name
-- `{pipelinename}` - Your pipeline name. Example: `Fabrikam hourly build pipeline`
+- `{organization}` - Your organization name.
+- `{project}` - Your team project name.
+- `{pipelinename}` - Your pipeline name. Example: `Fabrikam hourly build pipeline`.
 - `{startdate}` - The date to start your report. Format: YYYY-MM-DDZ. Example: `2021-09-01Z` represents September 1, 2021. Don't enclose in quotes or brackets and use two digits for both, month and date.
 
 ### Query breakdown
@@ -374,7 +377,7 @@ The following table describes each part of the query.
 :::row-end:::
 :::row:::
    :::column span="1":::
-   `and CompletedOn/Date ge {startdate}`
+   `and Date/Date ge {startdate}`
    :::column-end:::
    :::column span="1":::
    Return test runs on or after the specified date.
@@ -478,6 +481,14 @@ The following table describes each part of the query.
 :::row-end:::
 :::row:::
    :::column span="1":::
+   `/filter(FailedCount gt 0)`
+   :::column-end:::
+   :::column span="1":::
+   Filter to only include tests that have at least one failure.
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
    `/compute(`
    :::column-end:::
    :::column span="1":::
@@ -506,13 +517,13 @@ The following table describes each part of the query.
 
 ## Expand the Test column in Power BI
 
-Expand the `Test` column to show the expanded entity `Test.TestName`. Expanding the column flattens the record into specific fields. To learn how, see [Transform Analytics data to generate Power BI reports, Expand columns](transform-analytics-data-report-generation.md#expand-columns). 
+Expand the `Test` column to show the expanded entity `Test.TestName`. When you expand the column, you flatten the record into specific fields. For more information, see [Transform Analytics data to generate Power BI reports, Expand columns](transform-analytics-data-report-generation.md#expand-columns). 
 
 ## Change column data type
 
-1. From the Power Query Editor, select the `TotalCount`, `PassedCount`, `FailedCount`, `NotExecutedCount`, `NotImpactedCount`, and `FlakyCount`  columns; select **Data Type** from the **Transform** menu; and then choose **Whole Number**.
+1. In Power Query Editor, select the `TotalCount`, `PassedCount`, `FailedCount`, `NotExecutedCount`, `NotImpactedCount`, and `FlakyCount` columns. Select **Data Type** from the **Transform** menu, and then choose **Whole Number**.
 
-1. Select the `PassRate` column; select **Data Type** from the **Transform** menu; and then choose **Decimal Number**.
+1. Select the `PassRate` column. Select **Data Type** from the **Transform** menu, and then choose **Decimal Number**.
 
 For more information about changing the data type, see  [Transform Analytics data to generate Power BI reports, Transform a column data type](transform-analytics-data-report-generation.md#transform-data-type). 
 
@@ -520,7 +531,7 @@ For more information about changing the data type, see  [Transform Analytics dat
 
 ## Create the Table report
  
-1. In Power BI, under **Visualizations**, choose  **Table** and drag and drop the fields onto the **Columns** area. 
+1. In Power BI, under **Visualizations**, select **Table**. Drag and drop the fields onto the **Columns** area. 
 
 	:::image type="content" source="media/pipeline-test-reports/visualizations-failed-test-table.png" alt-text="Screenshot of visualization fields selections for Failed tests table report. ":::
 

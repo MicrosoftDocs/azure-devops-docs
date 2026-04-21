@@ -189,3 +189,4 @@ A: No, not at this time. You can always check the entire list of items assigned 
 
 - [Create and manage your backlog](create-your-backlog.md)  
 - [Learn about Kanban boards](../boards/kanban-overview.md)
+- [All troubleshooting guides & FAQs](../../troubleshoot/index.yml)

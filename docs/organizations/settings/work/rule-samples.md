@@ -7,8 +7,8 @@ ms.author: chcomley
 author: chcomley
 monikerRange: "<= azure-devops"
 ms.topic: sample
-ms.date: 06/30/2021
-
+ms.date: 03/24/2026
+ai-usage: ai-assisted
 #Customer intent: As a process designer, I need examples that illustrate how to define rules, so I can add the right rules to support my business processes.
 ---
 
@@ -16,15 +16,15 @@ ms.date: 06/30/2021
 
 [!INCLUDE [version-lt-eq-azure-devops](../../../includes/version-lt-eq-azure-devops.md)]
 
-This article provides examples of custom rule definitions. All custom rules are defined for a work item type. Examples are provided for both the Inherited and On-premises XML process models. 
+This article provides examples of custom rule definitions. Define all custom rules for a work item type. The article provides examples for both the Inherited and On-premises XML process models. 
 
-Prior to adding custom rules, read [Rules and rule evaluation](rule-reference.md) and [Add a rule to a work item type (Inheritance process)](custom-rules.md). 
+Before you add custom rules, see [Rules and rule evaluation](rule-reference.md) and [Add a rule to a work item type (Inheritance process)](custom-rules.md). 
 
 <a name="dependent-required"></a>   
 
 ##  Define a dependent required field  
 
-You can specify that a field is required only when another field contains a specific value. In the following example, when a customer reports an issue, the custom **Customer Reported** field is set to *True*, and the **Severity** field becomes required. If the issue isn't reported by a customer, a value for the **Severity** field isn't required.  
+You can specify that a field is required only when another field contains a specific value. In the following example, when a customer reports an issue, set the custom **Customer Reported** field to *True*, and the **Severity** field becomes required. If the issue isn't reported by a customer, a value for the **Severity** field isn't required.  
 
 # [Inheritance process](#tab/inheritance) 
 
@@ -32,7 +32,7 @@ You can specify that a field is required only when another field contains a spec
 
 # [On-premises XML process](#tab/on-premises)
 
-You specify a `WHEN` rule statement for the field definition within the `FIELDS` section of the work item type definition.  
+Specify a `WHEN` rule statement for the field definition within the `FIELDS` section of the work item type definition.  
 
 > [!div class="tabbedCodeSnippets"]  
 > ```XML
@@ -58,7 +58,7 @@ You specify a `WHEN` rule statement for the field definition within the `FIELDS`
 
 ## Clear the value of a dependent field  
 
-The following example illustrates defining a custom rule to clear the value for **Story Points** when a change is made to the **Start Date**. 
+The following example shows how to define a custom rule to clear the value for **Story Points** when you change the **Start Date**. 
 
 # [Inheritance process](#tab/inheritance)
 
@@ -66,7 +66,7 @@ The following example illustrates defining a custom rule to clear the value for 
 
 # [On-premises XML process](#tab/on-premises)
 
-You specify a `WHENCHANGED` rule statement for the field definition within the `FIELDS` section of the work item type definition.  
+Specify a `WHENCHANGED` rule statement for the field definition within the `FIELDS` section of the work item type definition.  
 
 > [!div class="tabbedCodeSnippets"]  
 > ```XML
@@ -89,11 +89,11 @@ You specify a `WHENCHANGED` rule statement for the field definition within the `
 
 ## Set a dependent field value  
 
-The following examples illustrate how to map the values of the **Size** field depending on the value selected for the custom field, **Tee-Shirt Size** field.
+The following examples show how to map the values of the **Size** field depending on the value selected for the custom **Tee-Shirt Size** field.
 
 # [Inheritance process](#tab/inheritance)
 
- The **Tee-Shirt Size** pick-list consists of four values *Small*, *Medium*, *Large*, and *X-Large*. Four custom rules are defined to assign the **Size** field when the **Tee-Shirt Size** field is changed to a specific value. To simplify usage, the default value of the **Tee-Shirt Size** is *Small*. 
+ The **Tee-Shirt Size** pick list consists of four values: *Small*, *Medium*, *Large*, and *X-Large*. Four custom rules assign the **Size** field when you change the **Tee-Shirt Size** field to a specific value. To simplify usage, the default value of the **Tee-Shirt Size** is *Small*. 
 
 **Edit field dialog for Tee-Shirt Size field**
 
@@ -109,7 +109,7 @@ The following examples illustrate how to map the values of the **Size** field de
 
 # [On-premises XML process](#tab/on-premises)
 
-You specify the value of the **Size** field in the `FIELDS` section of the work item type definition. You use a series of `WHEN` rule statements to make the mapping, setting the value of the **Size** field using the `COPY value="value"` rule. 
+You specify the value of the **Size** field in the `FIELDS` section of the work item type definition. Use a series of `WHEN` rule statements to make the mapping, setting the value of the **Size** field by using the `COPY value="value"` rule. 
  
 
 > [!div class="tabbedCodeSnippets"]  
@@ -148,7 +148,7 @@ You specify the value of the **Size** field in the `FIELDS` section of the work 
 
 <a name="require-field-state-change"></a>  
 
-## Require a field value upon State changes 
+## Require a field value upon state changes 
 
 The following example shows how you can require specification of the **Remaining Work** field when the task workflow **State** changes to *Active*.  
 
@@ -158,7 +158,7 @@ The following example shows how you can require specification of the **Remaining
 
 # [On-premises XML process](#tab/on-premises)
 
- When the value of the **State** field for a work item is set to Active and the work item is saved, the values of the **Activated By** and **Assigned To** fields are automatically set to the name of the current user. That user must be a member of the Team Foundation Server Valid Users group. The value of the **Activated Date** field is also set automatically. The following example shows the elements that enforce this rule:  
+ When you set the **State** field for a work item to Active and save the work item, the **Activated By** and **Assigned To** fields automatically update to the current user's name. The user must be a member of the Team Foundation Server Valid Users group. The **Activated Date** field also updates automatically. The following example shows the elements that enforce this rule:  
 
 > [!div class="tabbedCodeSnippets"]  
 > ```XML
@@ -179,9 +179,9 @@ The following example shows how you can require specification of the **Remaining
 
 <a name="fields"></a> 
 
-## Clear the value of a field upon close State  
+## Clear the value of a field when the State is Closed  
 
-To automate clearing the **Remaining Work** field upon closing a task, define a custom rule as indicated. 
+To automate clearing the **Remaining Work** field when closing a task, define a custom rule as indicated. 
 
 # [Inheritance process](#tab/inheritance)
 
@@ -208,7 +208,7 @@ To automate clearing the **Remaining Work** field upon closing a task, define a 
 
 ## Restrict creation of work items by a group 
 
-A custom rule that restricts the transition to the *Proposed* state category of a work item type effectively disallows creation of work items of that type. By applying the rule to a specific group, you effectively disallow that group from creating work items of that type.  
+A custom rule that restricts the transition to the *Proposed* state category of a work item type effectively disallows creation of work items of that type. By applying the rule to a specific group, you disallow that group from creating work items of that type.  
 
 # [Inheritance process](#tab/inheritance)
 
@@ -237,19 +237,19 @@ The following custom rule restricts the Fabrikam Review Team (*for* attribute) f
 
 ## Restrict modification of work items by a group  
 
-For an Inheritance process, you can prevent users from modifying a work item by setting the deny permission for a group on an Area Path. For an On-premises XML process, you can place restrictions on each workflow state for a group that prevents them from saving the work item in any state. 
+For an Inheritance process, prevent users from modifying a work item by setting the deny permission for a group on an Area Path. For an On-premises XML process, place restrictions on each workflow state for a group that prevents them from saving the work item in any state. 
 
 # [Inheritance process](#tab/inheritance)
 
-It's not possible to define a custom rule that restricts modification of work items of a specific type. You can only specify restriction by state. If the user doesn't change the state, then they can modify other fields, unless all fields are made read-only for the group. 
+You can't define a custom rule that restricts modification of work items of a specific type. You can only specify restriction by state. If the user doesn't change the state, they can modify other fields, unless all fields are read-only for the group. 
 
-Instead, if you want to restrict a group of users from modifying select work items of any type, you can assign those work items to an Area Path. Define a security group, and then set restrictions for editing work items for that Area Path for that group as shown in the following image. For more information, see [Set permissions and access for work tracking, Create child nodes and modify work items under an area path](../../security/set-permissions-access-work-tracking.md#set-permissions-area-path)
+To restrict a group of users from modifying select work items of any type, assign those work items to an Area Path. Define a security group, and then set restrictions for editing work items for that Area Path for that group as shown in the following image. For more information, see [Set permissions and access for work tracking, Create child nodes and modify work items under an area path](../../security/set-permissions-access-work-tracking.md#set-permissions-area-path).
 
 :::image type="content" source="media/sample-rules/restrict-modifications-by-area-path-permissions.png" alt-text="Screenshot of Permissions dialog for an Area Path to restrict modifications of work items.":::
 
 # [On-premises XML process](#tab/on-premises)
 
-The following custom rule restricts the Fabrikam Review Team (*for* attribute) from modifying user stories by disallowing all workflow states defined for the user story work item type. Because no workflow state is valid for the specific team, members of that team are prevented from saving the work item with any changes.   
+The following custom rule restricts the Fabrikam Review Team (*for* attribute) from modifying user stories by disallowing all workflow states defined for the user story work item type. Because no workflow state is valid for the specific team, members of that team can't save the work item with any changes.   
 
 > [!div class="tabbedCodeSnippets"]  
 > ```XML
@@ -275,7 +275,7 @@ The following custom rule restricts the Fabrikam Review Team (*for* attribute) f
 
 ## Restrict state transitions 
 
-For inherited processes, any-to-any state transitions are automatically defined. This allows users to advanced the workflow state from new to completed, but also to move backwards in case that is needed. When defining custom rules to restrict a transition, keep in mind that if a user makes a mistake in updating the workflow, they may not be able to correct it. For example, they could update the status by moving a work item card to a later stage on the board, but not move it back. 
+For inherited processes, any-to-any state transitions are automatically defined. This workflow definition allows users to advance the workflow state from new to completed, but also to move backwards in case that action is needed. When defining custom rules to restrict a transition, keep in mind that if a user makes a mistake in updating the workflow, they might not be able to correct it. For example, they could update the status by moving a work item card to a later stage on the board, but not move it back. 
 
 > [!TIP]  
 > Consider restricting a state transition for some but not all users. That way, if a user makes a mistake, they can ask another team member to reset the State value to bypass the restriction.
@@ -287,11 +287,11 @@ Before defining state transition rules, review [Rules and rule evaluation, Auto-
 
 ## Restrict modification of closed work items
 
-Depending on your business processes, you may want to prevent users from continuing to modify or update work items that have been closed or completed. You can add rules to work item types to prevent users from re-opening closed work items.
+Depending on your business processes, you might want to prevent users from continuing to modify or update work items that are closed or completed. You can add rules to work item types to prevent users from re-opening closed work items.
 
 # [Inheritance process](#tab/inheritance)
 
-For the Inherited process, you can add a rule that restricts state transition. For example, the following rule restricts transitioning from closed to the other two States, New and Active. 
+For the inherited process, you can add a rule that restricts state transitions. For example, the following rule restricts transitioning from closed to the other two states, New and Active. 
 
 > [!NOTE]  
 > The `A work item state moved from ...`  condition is available for Azure DevOps Server 2020 and later versions. 
@@ -299,12 +299,12 @@ For the Inherited process, you can add a rule that restricts state transition. F
 :::image type="content" source="/azure/devops/organizations/settings/work/media/rules/rule-no-open-after-close.png" alt-text="Custom rule, Current user is not a member of a group, disallow transitions to New or Active state from Closed":::
 
 > [!NOTE]   
-> Depending on the rule action you specify, either the **Save** button on the work item form may be disabled, or an error message displays when a restricted user attempts to modify the work item. 
+> Depending on the rule action you specify, either the **Save** button on the work item form is disabled, or an error message displays when a restricted user attempts to modify the work item. 
  
 
 # [On-premises XML process](#tab/on-premises)
 
-For on-premises deployments, you can add rules to a work item type to prevent re-opening after a work item has been closed. For example, the following workflow transition rules allow Testers to reopen a work item, but not members of the Developers group. 
+For on-premises deployments, you can add rules to a work item type to prevent reopening after a work item is closed. For example, the following workflow transition rules allow Testers to reopen a work item, but not members of the Developers group. 
 
 > [!div class="tabbedCodeSnippets"]  
 > ```XML
@@ -314,12 +314,12 @@ For on-premises deployments, you can add rules to a work item type to prevent re
 >    for="[Project]\Testers"  
 >    not="[Project]\Developers" 
 >    . . .  
-> </TRANSITION 
+> </TRANSITION> 
 > <TRANSITION from="Closed" to="Active"  
 >    for="[Project]\Testers"  
 >    not="[Project]\Developers" 
 >    . . .  
-> </TRANSITION 
+> </TRANSITION> 
 > . . .  
 > </WORKFLOW>
 > ```  
@@ -331,9 +331,9 @@ For on-premises deployments, you can add rules to a work item type to prevent re
 
 ## Hide or restrict modification of a field based on a user or group 
 
-When you select the `Current user is a member of group...` or `Current user is not a member of group...`, you can hide a field, make a field read-only, or make a field required. 
+When you select the `Current user is a member of group...` or `Current user is not a member of group...` condition, you can hide a field, make a field read-only, or make a field required. 
 
-For example, the following condition indicates that the Justification field is hidden for members who don't belong to the Fabrikam Fiber\Voice group.  
+For example, the following condition hides the Justification field for members who don't belong to the Fabrikam Fiber\Voice group.  
 
 :::image type="content" source="media/rules/rule-hide-justification-field.png" alt-text="Custom rule, Current user is not a member of a group, Hide Justification field":::
 
@@ -349,17 +349,17 @@ You can customize work item types to restrict who can modify a specific field fo
 
 # [Inheritance process](#tab/inheritance)
 
-Using one of the following two conditions, you can make select fields required for a user of a security group or who are not a member of a security group. 
+You can use one of the following two conditions to make select fields required for a user of a security group or for users who aren't members of a security group. 
 
 - `current user is a member of a group...`
 - `current user is not a member of a group...`
 
 > [!TIP]    
-> To avoid rule evaluation issues that may arise, specify Azure DevOps security groups and not Microsoft Entra ID or Active Directory security groups. For more information, see [Default rules and the rule engine](rule-reference.md).
+> To avoid rule evaluation problems, specify Azure DevOps security groups instead of Microsoft Entra ID or Active Directory security groups. For more information, see [Default rules and the rule engine](rule-reference.md).
 
 For example, you can make the **Title** or the **State** fields **Read-only** for select users or groups. 
 
-For example, the **Priority** field, for the User Story work item type, becomes read-only for members of the Fabrikam Fiber\Voice group. When a user of this group opens a User Story, they are unable to change the value on the Priority field.
+For example, the **Priority** field, for the User Story work item type, becomes read-only for members of the Fabrikam Fiber\Voice group. When a user in this group opens a User Story, they can't change the value in the Priority field.
 
 :::image type="content" source="/azure/devops/organizations/settings/work/media/rules/rule-priority-field-read-only-for-not.png" alt-text="Custom rule, Current user is not a member of a group, make Priority field read-only":::
  
@@ -367,15 +367,15 @@ For example, the **Priority** field, for the User Story work item type, becomes 
 
 # [On-premises XML process](#tab/on-premises)
 
-For the [On-premises XML process model](../../../reference/on-premises-xml-process-model.md), you can customize work item types to support these restriction requests: 
-- Restrict who can create or modify a work item 
-- Restrict who can create specific work item types, such as Epics or Features 
+For the On-premises XML process model, you can customize work item types to support these restriction requests: 
+- Restrict who can create or modify a work item. 
+- Restrict who can create specific work item types, such as Epics or Features. 
 
 For example, you can restrict modification of work items by adding a rule to the work item type, usually within the **WORKFLOW** section. 
 
 You restrict access to work tracking objects in one of two ways:
-- [Set a condition field rule](rule-reference.md), [a condition-based field rule](/previous-versions/azure/devops/reference/xml/assign-conditional-based-values-and-rules) or a combination of the two that applies to a group. You can restrict changes from being made to a field by specifying a qualifying rule and making it apply for a specific group. Conditional rules can include **CANNOTLOSEVALUE**, **EMPTY**, **FROZEN**, **NOTSAMEAS**, **READONLY**, and **REQUIRED** elements. 
-- By [adding WITs to the Hidden Categories group](/previous-versions/azure/devops/reference/xml/use-categories-to-group-work-item-types), you can prevent the majority of project contributors from creating them. You [can create a hyperlink to a template](../../../boards/backlogs/work-item-template.md) that opens the work item form and share that link with those team members who you do want to create them. 
+- [Set a condition field rule](rule-reference.md), [a condition-based field rule](/previous-versions/azure/devops/reference/xml/assign-conditional-based-values-and-rules) or a combination of the two that applies to a group. You can restrict changes to a field by specifying a qualifying rule and making it apply to a specific group. Conditional rules can include **CANNOTLOSEVALUE**, **EMPTY**, **FROZEN**, **NOTSAMEAS**, **READONLY**, and **REQUIRED** elements. 
+- By [adding WITs to the Hidden Categories group](/previous-versions/azure/devops/reference/xml/use-categories-to-group-work-item-types), you can prevent most project contributors from creating them. You [can create a hyperlink to a template](../../../boards/backlogs/work-item-template.md) that opens the work item form and share that link with those team members who you want to create them. 
 
 ---
 

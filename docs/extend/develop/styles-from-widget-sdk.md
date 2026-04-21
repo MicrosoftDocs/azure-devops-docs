@@ -1,60 +1,60 @@
 ---
 ms.subservice: azure-devops-ecosystem
-title: Basic styles for widgets | Extensions for Azure DevOps
-description: Styles from Widget SDK to be used in widgets on dashboards in Azure DevOps.
+ms.custom: UpdateFrequency3
+title: Basic styles for widgets
+titleSuffix: Azure DevOps
+description: Use CSS classes from the Widget SDK to style widgets on Azure DevOps dashboards.
 ms.assetid: E5CB346F-E3EA-4A47-B10C-FFC300766585
-ms.topic: overview
+ms.topic: how-to
 monikerRange: '<= azure-devops'
 ms.author: chcomley
 author: chcomley
-ms.date: 08/04/2016
+ms.date: 04/03/2026
+ai-usage: ai-assisted
 ---
 
 # Basic styles for your widgets
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
-We recommend you use the basic styles provided via the Widget SDK. Using these styles helps you quickly and easily create a widget that's consistent with the rest of the widgets on the dashboard.
-To use these styles, add the below line inside the `VSS.require` block in the JavaScript code for your widget.
-
 [!INCLUDE [extension-docs-new-sdk](../../includes/extension-docs-new-sdk.md)]
 
-```javascript
-	WidgetHelpers.IncludeWidgetStyles();
-```
+Use the basic styles provided by the Widget SDK for a consistent look across dashboard widgets.
 
-This pulls a stylesheet by the name sdk-widget.css and include it in the iframe for your widget. It includes styles for font-family, font-size, margin and paddings for your widget. 
-It also includes styles for headings (h1, h2, h3 etc.), links, and more.
-
-Similarly, to use common styles in the widget configuration, include the line below inside the `VSS.require` block in the JavaScript code for your widget configuration.
+To include widget styles, call `WidgetHelpers.IncludeWidgetStyles()` during widget initialization:
 
 ```javascript
-	WidgetHelpers.IncludeWidgetConfigurationStyles();
+WidgetHelpers.IncludeWidgetStyles();
 ```
-This pulls a stylesheet by the name sdk-widget-configuration.css and include it in the iframe for your widget configuration. 
-It includes styles for font-family, font-size and styles for common form elements like input, textarea, and select. 
+
+This loads `sdk-widget.css` into your widget's iframe, providing styles for font-family, font-size, margins, paddings, headings, and links.
+
+For widget configuration panels, call `WidgetHelpers.IncludeWidgetConfigurationStyles()` instead:
+
+```javascript
+WidgetHelpers.IncludeWidgetConfigurationStyles();
+```
+
+This loads `sdk-widget-configuration.css`, which provides styles for font-family, font-size, and common form elements like `input`, `textarea`, and `select`. 
 
 > [!NOTE]
-> For these styles to apply to your widget, you need to add a "widget" class on the HTML element that contains your widget. All styles from the sdk-widgets.css are scoped to this class. 
-Similarly, add a "widget-configuration" class on the HTML element that contains your widget configuration. All styles from the sdk-widget-configuration.css are scoped to this class.
+> For these styles to apply, add a `widget` class on the HTML element that contains your widget. All styles from `sdk-widget.css` are scoped to this class. Similarly, add a `widget-configuration` class on the element that contains your widget configuration.
 
-Download the [extension sample](https://github.com/Microsoft/azure-devops-extension-sample). 
+For a working example, see the [extension sample](https://github.com/Microsoft/azure-devops-extension-sample).
 
-### Widget body, title and description
+### Widget body, title, and description
 
-By adding the class "widget" on the HTML element that contains your widget, you automatically get padding, font, and color for widget contents.
+By adding the `widget` class on your widget's container element, you automatically get padding, font, and color for widget contents.
 
-You should always have a title for your widget. This helps the user identify your widget and its functionality at a glance. 
-Use `<h2>` with class "title". This also helps people using screen readers to quickly identify the different widgets on the dashboard.
+Always include a title for your widget so users can identify its purpose at a glance. Use `<h2>` with the `title` class. This also helps screen readers identify the different widgets on the dashboard.
 
 ![Widget with title and description](../media/styles-from-widget-sdk/title-description.png)
 
-> **Design principle:** Widgets should have a title. Use the `<h2>` tag with the "title" class. 
+> **Design principle:** Widgets should have a title. Use the `<h2>` tag with the `title` class.
 
-Sometimes you might want to provide a small description about your widget or how to use it. 
-In such cases, use the class "description" on the HTML element you wish to use for widget description.
+To add a description, use the `description` class on the element that contains your widget description.
 
-> **Design principle:** Use the "description" class for the widget description. Descriptions should make sense even when read out of the widget context.  
+> **Design principle:** Use the `description` class for the widget description. Descriptions should make sense even when read outside the widget context.
 
 ```html
 	<div class="widget">
@@ -66,13 +66,13 @@ In such cases, use the class "description" on the HTML element you wish to use f
 
 ### Widget titles and subtitles
 
-Subtitles are text that supplement the title. They may not always make sense when read out of context without reading the title.
+Subtitles supplement the title and might not make sense when read out of context.
 
 ![Widget with title and subtitle](../media/styles-from-widget-sdk/title-subtitle.png)
 
-> **Design principle:** Use the "subtitle" class to provide more information about the widget. It may not make sense out of the widget context.  
+> **Design principle:** Use the `subtitle` class to provide more information about the widget.
 
-Use the below structure and classes "title", "inner-title" and "subtitle" to get the right font, color and margins for a title and subtitle combination. The title gets a greater font-size than the subtitle. The subtitle has a subdued color relative to the title or rest of the widget.
+Use the `title`, `inner-title`, and `subtitle` classes to get the right font, color, and margins for a title and subtitle combination. The subtitle has a subdued color relative to the title.
 
 ```html 
 	<div class="widget">
@@ -85,13 +85,13 @@ Use the below structure and classes "title", "inner-title" and "subtitle" to get
 		</div>
 	</div>
 ```
-You can use any html element for the title and subtitle combination. Here are some tips:
-* When you need the subtitle to appear in the same line as the title, use an inline element like `<span>`
-* When you need the subtitle to appear in the next line from the title, use a block element like `<div>`
+Tips for the title and subtitle combination:
+- Use an inline element like `<span>` for the subtitle to appear on the same line as the title.
+- Use a block element like `<div>` for the subtitle to appear on a new line.
 
-### Display hyperlinks, icons, text, and subtext in a widget
+### Links with icons and subtext
 
-Some widgets have links which have an icon, text and subtext per link.
+Some widgets include links with an icon, text, and subtext.
 
 ![Widget that has link with icon and text](../media/styles-from-widget-sdk/link-with-icon-text.png)
 
@@ -115,14 +115,13 @@ To get the same look and feel, use the below HTML structure and classes.
 	</div>
 ```
 
-### Display counters in a widget
+### Counters
 
-The primary purpose of some widgets is to display the count of some data. The Query Tile and the Code Tile widgets are examples in this category of widgets. 
-To use the same styles as these widgets, add the "big-count" class on the HTML element holding the number to get the big font that is used by the Query Tile and the Code Tile widgets.
+For widgets that display a count, add the `big-count` class on the element holding the number. The Query Tile and Code Tile widgets use this same style.
 
 ![Counter Widget](../media/styles-from-widget-sdk/counter.png)
 
-> **Design principle:** Use the "big-count" class to present the user with numbers in large font. It should not be used with non-numeric characters.
+> **Design principle:** Use the `big-count` class to present numbers in large font. Don't use it with non-numeric characters.
 
 ```html 
 <div class="widget">
@@ -132,19 +131,18 @@ To use the same styles as these widgets, add the "big-count" class on the HTML e
 </div>
 ```
 
-### Make a widget a hyperlink
+### Clickable widgets
 
-Clicking anywhere on some widgets redirects the user to another page. To have your widget do the same, you can: 
+To make a widget clickable so selecting it anywhere navigates to another page:
 
-* Add an anchor tag as a child to the HTML element that acts as your widget container. 
-* Put all your widget content inside the anchor tag.
-* Since your widget is hosted in an iframe, add the attribute "target" with value "_blank" to the anchor tag so that the link opens in a new tab/window instead of inside the same iframe.
-* In addition to the "widget" class, add the "clickable" class to the widget container. 
+1. Add an anchor tag as a child of the widget container element.
+2. Put all widget content inside the anchor tag.
+3. Add `target="_blank"` to the anchor tag so the link opens in a new tab.
+4. Add the `clickable` class to the widget container.
 
-Your widget content gets the correct colors even though they are inside an anchor tag. Without the "clickable" class, the default blue color is forced on all text inside the widget. 
-The widget also gets a custom visual cue on focus to help users who use the keyboard to navigate the dashboard. 
+Without the `clickable` class, the default blue link color applies to all text inside the widget. The `clickable` class also provides a custom focus indicator for keyboard navigation.
 
-> **Design principle:** Use the "clickable" class and the `<a>` tag to make the entire widget clickable. This is ideal when your widget is a summary of data available on another page.
+> **Design principle:** Use the `clickable` class and the `<a>` tag to make the entire widget clickable. This pattern works well when your widget summarizes data available on another page.
 
 
 ```html 
@@ -157,9 +155,9 @@ The widget also gets a custom visual cue on focus to help users who use the keyb
 </div>
 ```
 
-### Styles for common form elements in widget configuration
+### Configuration form elements
 
-To use basic styles from the widget sdk for common form elements in widget configuration, follow these guidelines:
+Use the following classes for common form elements in widget configuration:
 
 | Form element        | Wrapping element | Guidelines |
 |---------------------|------------------|------------|
@@ -171,7 +169,7 @@ To use basic styles from the widget sdk for common form elements in widget confi
 
 
 
-The example below uses each of the form elements listed in the table.  
+The following example uses each of the form elements listed in the table.
 
 ![Example for Widget Configuration](../media/styles-from-widget-sdk/widget-configuration.png)
 
@@ -219,10 +217,9 @@ The example below uses each of the form elements listed in the table.
 </div>
 ```
 
-### Display validation errors below a form element
+### Validation error messages
 
-We recommend providing validation errors below the relevant form elements. 
-To display these messages in a manner consistent with 1st party widgets, add the following code snippet under each form element for which you want to show the error message.
+To display validation errors below form elements in a manner consistent with first-party widgets, add the following snippet under each form element:
 
 ```html
 <span class="validation-error">
@@ -231,10 +228,9 @@ To display these messages in a manner consistent with 1st party widgets, add the
 </span>
 ```
 
-The previous code snippet has the visibility hidden by default. Whenever you want to display an error message, find the corresponding "validation-error-text", add text to it and set `visibility:visible` on its parent.
+The visibility is hidden by default. To display an error message, find the corresponding `validation-error-text` element, set its text, and set `visibility: visible` on its parent.
 
-Example:
-There is a simple text box where the user needs to type in a string. You need to show an error message if the text box is empty.
+For example, to show an error when a text box is empty:
 
 ![Example for Widget Configuration Error](../media/styles-from-widget-sdk/widget-configuration-error.png)
 
@@ -245,7 +241,7 @@ The html for this would be:
 <div class="widget-configuration">
 	<div class="single-line-text-input">
 		<label>Your name</label>
-		<input type="text">Type Here</input>		
+		<input type="text" placeholder="Type Here">
 
 		<span class="validation-error">
 			<span class="icon-error-exclamation"></span>
@@ -255,20 +251,19 @@ The html for this would be:
 </div>
 ```
 
-And the JavaScript code behind this would be:
+And the JavaScript:
 
 ```javascript
-var $singleLineInput = $(".single-line-text-input input");
-var $errorSingleLineInput = $(".single-line-text-input input .validation-error-text");
+const input = document.querySelector(".single-line-text-input input");
+const errorText = document.querySelector(".single-line-text-input .validation-error-text");
 
-$singleLineInput.on("input", function(){
-		if ($singleLineInput.val() == ""){
-			$errorSingleLineInput.text("Please enter your name.");
-			$errorSingleLineInput.parent().css("visibility", "visible");
-			return;
-		}
-		$errorSingleLineInput.parent().css("visibility", "hidden");
-	});
-
+input.addEventListener("input", function () {
+    if (input.value === "") {
+        errorText.textContent = "Please enter your name.";
+        errorText.parentElement.style.visibility = "visible";
+    } else {
+        errorText.parentElement.style.visibility = "hidden";
+    }
+});
 ```
 

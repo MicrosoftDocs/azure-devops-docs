@@ -1,17 +1,18 @@
 ### YamlMime:FAQ
 metadata:
-  title: Work across projects FAQs 
+  title: Cross-project FAQs 
   description: Get answers to frequently asked questions about working across projects in Azure DevOps.  
   titleSuffix: Azure DevOps
   ms.subservice: azure-devops-projects 
+  ai-usage: ai-assisted
   ms.custom: cross-project
   ms.author: chcomley
   author: chcomley
   ms.topic: faq
   monikerRange: '<= azure-devops'
-  ms.date: 03/11/2025
+  ms.date: 04/13/2026
 
-title: FAQs about working across projects
+title: Cross-project FAQs
 
 summary: | 
     Many enterprise organizations create multiple projects to meet their business needs. Although we recommend maintaining a single project for simplicity, there are situations where multiple projects are necessary. Working with two or more projects raises several questions about the tasks that are supported.
@@ -31,7 +32,7 @@ sections:
           In general, we recommend that you create a single project. However, certain business needs, such as supporting a public project or applying security policies, might require creating more than one project. For more information, see one of the following articles.
           - [About projects and scaling your organization](../organizations/projects/about-projects.md)
           - [Plan your organizational structure](../user-guide/plan-your-azure-devops-org-structure.md)
-          - [What is a public project?](../organizations/projects/about-projects.md) 
+          - [What is a public project?](../organizations/projects/about-projects.md#use-private-and-public-projects)
 
       - question: Can I connect to more than one project at a time?
         answer: |
@@ -49,11 +50,11 @@ sections:
       - question: Can I create a dashboard with information that spans two or more projects? 
         answer: | 
           ::: moniker range="<=azure-devops"
-          There's limited support for widgets that you add to a dashboard from different projects. Specifically, you can add [Burndown and Burnup charts](../report/dashboards/configure-burndown-burnup-widgets.md) from different projects to a dashboard. Query-based widgets reference queries that you define, which can [reference other projects](../boards/queries/using-queries.md). You can also use an [Embedded Webpage widget](../report/dashboards/widget-catalog.md#embedded-webpage-widget) to display data from a URL, such as a backlog, board, or an **Analytics** chart from for a team. However, the backlog, board, or chart displays using the display preferences set by the currently logged in user viewing the dashboard. 
+          There's limited support for widgets that you add to a dashboard from different projects. Specifically, you can add [Burndown and Burnup charts](../report/dashboards/configure-burndown-burnup-widgets.md) from different projects to a dashboard. Query-based widgets reference queries that you define, which can [reference other projects](../boards/queries/using-queries.md). You can also use an [Embedded Webpage widget](../report/dashboards/widget-catalog.md#embedded-webpage-widget) to display data from a URL, such as a backlog, board, or an **Analytics** chart for a team. However, the backlog, board, or chart displays using the display preferences set by the currently logged in user viewing the dashboard. 
           ::: moniker-end
           
           > [!NOTE]  
-          > There's a [suggested feature, Single Dashboard for Multiple Projects](https://developercommunity.visualstudio.com/t/single-dashboard-for-multiple-projects/365500) that you can review and up vote.  
+          > There's a [suggested feature, Single Dashboard for Multiple Projects](https://developercommunity.visualstudio.com/t/single-dashboard-for-multiple-projects/365500) that you can review and upvote.  
       - question: Can I create a report that spans two or more projects? 
         answer: | 
           ::: moniker range="<=azure-devops"
@@ -105,10 +106,6 @@ sections:
         answer: |
           To manage dependencies in Azure Boards, you can link work items using the Predecessor/Successor link type. To learn how, see [Link user stories, issues, bugs, and other work items](../boards/backlogs/add-link.md).
 
-      - question: Can I query for work items linked across projects?
-        answer: |
-          **No**. There's a prohibitive performance cost for trying to execute such a query, so it isn't supported.  
-
   - name: Azure Boards customization
     questions:
       - question: Can I apply an Inherited process defined in one organization to another organization?  
@@ -138,4 +135,4 @@ sections:
 additionalContent: |
   ## Related content
   -  [Work across projects](navigation/work-across-projects.md)
-  -  [Connect to team projects](../organizations/projects/connect-to-projects.md)  
+  -  [Connect to projects](../organizations/projects/connect-to-projects.md)  

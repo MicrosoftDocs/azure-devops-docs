@@ -342,3 +342,4 @@ Context: This is for an Azure Resource Manager service connection in Azure DevOp
 - [Troubleshoot an Azure Resource Manager workload identity service connection](troubleshoot-workload-identity.md)
 - [Troubleshoot pipeline runs](../troubleshooting/troubleshooting.md)
 - [Review logs to diagnose pipeline issues](../troubleshooting/review-logs.md)
+- [All troubleshooting guides & FAQs](../../troubleshoot/index.yml)

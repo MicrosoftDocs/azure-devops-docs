@@ -26,6 +26,12 @@ landingContent:
             url: ../boards/plans/faqs.yml?toc=/azure/devops/troubleshoot/toc.json
           - text: Work item query FAQs
             url: ../boards/queries/query-faqs.yml?toc=/azure/devops/troubleshoot/toc.json
+      - linkListType: how-to-guide
+        links:
+          - text: Troubleshoot backlog reordering and nesting
+            url: ../boards/backlogs/resolve-backlog-reorder-issues.md?toc=/azure/devops/troubleshoot/toc.json
+          - text: Troubleshoot Office integration issues
+            url: ../boards/backlogs/office/tfs-office-integration-issues.md?toc=/azure/devops/troubleshoot/toc.json
   - title: Azure Pipelines
     linkLists:
       - linkListType: how-to-guide
@@ -38,6 +44,10 @@ landingContent:
             url: ../pipelines/troubleshooting/troubleshoot-triggers.md?toc=/azure/devops/troubleshoot/toc.json
           - text: Troubleshoot workload identity service connections
             url: ../pipelines/release/troubleshoot-workload-identity.md?toc=/azure/devops/troubleshoot/toc.json
+          - text: Troubleshoot Azure Resource Manager service connections
+            url: ../pipelines/release/azure-rm-endpoint.md?toc=/azure/devops/troubleshoot/toc.json
+          - text: Troubleshoot Azure Web App deployment
+            url: ../pipelines/troubleshooting/troubleshoot-azure-web-app-deploy.md?toc=/azure/devops/troubleshoot/toc.json
   - title: Azure Repos
     linkLists:
       - linkListType: how-to-guide
@@ -66,6 +76,8 @@ landingContent:
             url: ../user-guide/troubleshoot-connection.md?toc=/azure/devops/troubleshoot/toc.json
           - text: Troubleshoot access and permission issues
             url: ../organizations/security/troubleshoot-permissions.md?toc=/azure/devops/troubleshoot/toc.json
+          - text: Capture browser trace for troubleshooting
+            url: ../user-guide/capture-browser-trace.md?toc=/azure/devops/troubleshoot/toc.json
       - linkListType: reference
         links:
           - text: Microsoft Entra access FAQs

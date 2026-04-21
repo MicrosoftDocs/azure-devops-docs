@@ -9,14 +9,14 @@ ms.topic: troubleshooting
 ai-usage: ai-assisted
 ms.custom: copilot-scenario-highlight
 monikerRange: "<=azure-devops"
-ms.date: 12/03/2025
+ms.date: 04/07/2026
 ---
 
 # Resolve errors associated with an Analytics view
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
-An Analytics view provides a simplified way to specify the filter criteria for a Power BI report based on Analytics data. Analytics provides the reporting platform for Azure DevOps. You manage Analytics views in the web portal for Azure DevOps and then access them with the [Power BI Data Connector](data-connector-connect.md). 
+An Analytics view provides a simplified way to specify the filter criteria for a Power BI report based on Analytics data. Analytics provides the reporting platform for Azure DevOps. You manage Analytics views in the web portal for Azure DevOps and then access them by using the [Power BI Data Connector](data-connector-connect.md). 
 
 This article provides troubleshooting guidance for common issues with Analytics views, including size warnings, verification errors, and Power BI connection problems.
 
@@ -28,9 +28,9 @@ This article provides troubleshooting guidance for common issues with Analytics 
 
 ## Resolve size warnings
 
-### Warning: This view may contain too much data
+### Warning: This view might contain too much data
 
-This warning appears when Power BI determines that it can't load all the data contained within the view. It typically occurs when you haven't specified sufficient filters within the view or you've specified to load all history with a daily granularity. 
+This warning appears when Power BI determines that it can't load all the data contained within the view. It typically occurs when you don't specify sufficient filters within the view or you specify to load all history with a daily granularity. 
 
 **Resolution steps:**
 
@@ -40,12 +40,12 @@ This warning appears when Power BI determines that it can't load all the data co
    - Apply state filters (Active, Resolved, Closed)
    - Set date range filters for creation or modification dates
 
-2. **Adjust history settings**: Modify the [History or Granularity](analytics-views-create.md#select-trend-data) to scope the view's results:
+1. **Adjust history settings**: Modify the [History or Granularity](analytics-views-create.md#select-trend-data) to scope the view's results:
    - Change from "All history" to a specific time range (last 30, 60, or 90 days)
    - Increase granularity from daily to weekly or monthly
    - Use "Current only" if you don't need historical trend data
 
-3. **Verify before saving**: Always [verify](analytics-views-create.md#verify-and-save) your view before saving to ensure it loads successfully in Power BI.
+1. **Verify before saving**: Always [verify](analytics-views-create.md#verify-and-save) your view before saving to ensure it loads successfully in Power BI.
 
 > [!TIP]
 > Views that pull large amounts of data might take a long time to refresh and load in Power BI. For organizations with extensive data, they might even fail to load completely.
@@ -60,14 +60,14 @@ This error indicates that one of your project's [custom fields](../../organizati
 
 ### Error: Field doesn't exist anymore
 
-This error means that one of your [work item filters](analytics-views-create.md#specify-wi-filters) or [view fields](analytics-views-create.md#select-fields) references a field that was removed from your [project process](../../organizations/settings/work/customize-process-field.md). 
+This error means that one of your [work item filters](analytics-views-create.md#specify-wi-filters) or [view fields](analytics-views-create.md#select-fields) references a field that you removed from your [project process](../../organizations/settings/work/customize-process-field.md). 
 
 **Resolution steps:**
 
 1. [Edit your view](analytics-views-manage.md#edit-an-existing-view) in Azure DevOps.
-2. Go to the **Work Items** or **Fields** tab.
-3. Remove the filter or field that references the deleted field.
-4. Verify and save the view.
+1. Go to the **Work Items** or **Fields** tab.
+1. Remove the filter or field that references the deleted field.
+1. Verify and save the view.
 
 ### Error: Invalid filter criteria
 
@@ -82,20 +82,20 @@ This error occurs when filter values no longer exist in your project (for exampl
 This error occurs when you try to refresh a view in Power BI that's no longer available in Azure DevOps. 
 
 **Common causes:**
-- The view was renamed or deleted
-- Your permissions to access the view were removed
-- The view was changed from **Shared** to **Private**
-- Organization or project access was revoked
+- The view was renamed or deleted.
+- Your permissions to access the view were removed.
+- The view was changed from **Shared** to **Private**.
+- Organization or project access was revoked.
 
 ![Refresh fail - view does not exists](media/editable-views/pbi-refresh-fail.png)
 
 **Resolution steps:**
 
 1. **Verify view access**: Log in to Azure DevOps and confirm you can access the view.
-2. **Check permissions**: Ensure you have [permission to use the view](analytics-views-manage.md#manage-permissions).
-3. **Verify Analytics permissions**: Confirm you have **View analytics** permission for the project.
-4. **Update Power BI**: If the view was renamed, update the connection in Power BI to use the new name.
-5. **Remove broken table**: If the view no longer exists, delete the table from your Power BI report.
+1. **Check permissions**: Ensure you have [permission to use the view](analytics-views-manage.md#manage-permissions).
+1. **Verify Analytics permissions**: Confirm you have **View analytics** permission for the project.
+1. **Update Power BI**: If the view was renamed, update the connection in Power BI to use the new name.
+1. **Remove broken table**: If the view no longer exists, delete the table from your Power BI report.
 
 ### The field already exists in the record
 
@@ -103,9 +103,9 @@ This error indicates a custom field has the same display name as one of the Azur
 
 **Resolution:** 
 1. [Edit the view](analytics-views-manage.md#edit-an-existing-view) in Azure DevOps.
-2. Go to the **Fields** tab.
-3. Remove the duplicate field from the [field list](analytics-views-create.md#select-fields).
-4. Save the view and refresh in Power BI.
+1. Go to the **Fields** tab.
+1. Remove the duplicate field from the [field list](analytics-views-create.md#select-fields).
+1. Save the view and refresh in Power BI.
 
 ### Query result exceeds maximum size
 
@@ -113,9 +113,9 @@ This error occurs when your view returns more than 250,000 records, exceeding Po
 
 **Resolution steps:**
 1. **Add time filters**: Limit the date range (last 30-90 days instead of all history).
-2. **Filter work items**: Apply more specific work item type, area, or iteration filters.
-3. **Increase granularity**: Change from daily to weekly or monthly data points.
-4. **Split views**: Create multiple smaller views instead of one large view.
+1. **Filter work items**: Apply more specific work item type, area, or iteration filters.
+1. **Increase granularity**: Change from daily to weekly or monthly data points.
+1. **Split views**: Create multiple smaller views instead of one large view.
 
 ### Authentication and access errors
 
@@ -126,9 +126,9 @@ This error occurs when your view returns more than 250,000 records, exceeding Po
 
 **Resolution steps:**
 1. **Check project access**: Verify you're a member of the Azure DevOps project.
-2. **Validate Analytics permissions**: Ensure you have [Analytics access](analytics-security.md).
-3. **Review credentials**: Clear Power BI credentials and sign in again.
-4. **Contact administrator**: Work with your project administrator to resolve permission issues.
+1. **Validate Analytics permissions**: Ensure you have [Analytics access](analytics-security.md).
+1. **Review credentials**: Clear Power BI credentials and sign in again.
+1. **Contact administrator**: Work with your project administrator to resolve permission issues.
 
 ## Use AI to troubleshoot Analytics view issues
 
@@ -163,17 +163,17 @@ Context: This is for an Analytics view in Azure DevOps that I'm trying to connec
 If your Analytics view loads slowly or times out:
 
 1. **Minimize field selection**: Only include fields you actually need in your report.
-2. **Use appropriate granularity**: Monthly or weekly data loads faster than daily.
-3. **Apply effective filters**: Filter early in the data pipeline rather than in Power BI.
-4. **Consider incremental refresh**: Set up incremental refresh in Power BI for large datasets.
+1. **Use appropriate granularity**: Monthly or weekly data loads faster than daily.
+1. **Apply effective filters**: Filter early in the data pipeline rather than in Power BI.
+1. **Consider incremental refresh**: Set up incremental refresh in Power BI for large datasets.
 
 ### Data refresh issues
 
 For automatic refresh problems:
 1. **Verify credentials**: Ensure stored credentials in Power BI service are valid.
-2. **Check view permissions**: Confirm the service account has access to the Analytics view.
-3. **Monitor gateway connectivity**: Verify on-premises gateway connectivity if applicable.
-4. **Review refresh history**: Check Power BI refresh logs for specific error details.
+1. **Check view permissions**: Confirm the service account has access to the Analytics view.
+1. **Monitor gateway connectivity**: Verify on-premises gateway connectivity if applicable.
+1. **Review refresh history**: Check Power BI refresh logs for specific error details.
 
 ## Related articles
 

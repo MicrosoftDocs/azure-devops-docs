@@ -595,6 +595,9 @@ Here's an example that adds an illustration to a Markdown file:
 ![Illustration to use for new users](https://azurecomcdn.azureedge.net/cvt-779fa2985e70b1ef1c34d319b505f7b4417add09948df4c5b81db2a9bad966e5/images/page/services/devops/hero-images/index-hero.jpg)
 ```
 
+> [!IMPORTANT]
+> External images in markdown (files, widgets, and wikis) may not display if the host does not provide the required CORS or CORP headers. The renderer automatically applies `crossorigin="anonymous"` to all external images, which may cause images from unsupported sources to be blocked.
+
 ### Image path
 
 The path to the image file can be a relative path or an absolute path in Git or TFVC, just like the path to another Markdown file in a link.
