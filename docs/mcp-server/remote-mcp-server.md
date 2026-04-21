@@ -229,7 +229,7 @@ Core tools are always available.
 | `repo_update_pull_request_thread` | Update a PR comment thread | ❌ |
 | `repo_vote_pull_request` | Cast a vote on a pull request | ❌ |
 
-### Wit
+### Work Item Tracking
 
 | Tool | Description | Read-only |
 |---|---|:---:|
