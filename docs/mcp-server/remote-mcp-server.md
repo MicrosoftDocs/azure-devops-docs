@@ -257,7 +257,7 @@ Core tools are always available.
 | `wit_add_artifact_link` | Add artifact links to a work item | ❌ |
 
 > [!NOTE]
-> `wit_query_by_wiql` is currently available only to early adopters by using the `X-MCP-Insiders` header.
+> `wit_query_by_wiql` is currently available only to MCP Insiders by using the `X-MCP-Insiders` header.
 
 ### Pipelines
 
