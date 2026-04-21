@@ -341,4 +341,5 @@ Context: This is for Azure DevOps Office integration with Excel or Project. The 
 - [Bulk import or update work items using CSV files](../../queries/import-work-items-from-csv.md)
 - [FAQs: Work in Excel connected to Azure Boards](faqs.yml)
 - [Add or remove add-ins](https://support.office.com/article/Add-or-remove-add-ins-0af570c4-5cf3-4fa9-9b88-403625a0b460)
+- [All troubleshooting guides & FAQs](../../../troubleshoot/index.yml)
 
