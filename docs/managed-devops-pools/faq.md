@@ -3,7 +3,6 @@ title: Managed DevOps Pools FAQ
 description: Get answers to frequently asked questions about Managed DevOps Pools, including quotas, VM SKUs, regions, and pricing.
 ms.date: 04/20/2026
 ms.topic: faq
-ms.service: azure-devops-pipelines
 ---
 
 # Managed DevOps Pools frequently asked questions
