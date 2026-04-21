@@ -94,9 +94,8 @@ The **number of recent runs to keep for each pipeline** setting is interpreted d
     | Run 1  | main    | Not retained | Neither latest 3 for main, nor for pipeline |
 
 
-    Further, the number of days to retain is calculated from when the run is completed. For example, there are two runs on a main branch on Jan 19th. The run that completed later is retained.
+The number of days to retain is calculated from when the run is completed. For example, there are two runs on a main branch on Jan 19th. The run that completed later is retained.
 
-:::image type="content" source="media/retention-run-completion-time.png" alt-text="Example of pipeline run retention where, for two runs on the same day, the run that completed later is retained.":::
 - **All other Git repositories:** Azure Pipelines retains the configured number of latest runs for the whole pipeline.
 
 - **TFVC:** Azure Pipelines retains the configured number of latest runs for the whole pipeline, irrespective of the branch.
