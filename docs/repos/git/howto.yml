@@ -41,7 +41,7 @@ sections:
         answer: |
           Use the `git blame` command to find out who made a particular change to a file. From your local repository, run `git blame` with the `-L` parameter to specify the lines of interest. `Blame` produces formatted output showing the commit that last updated each line and the author of that change.
           
-          > [!div class="tabbedCodeSnippets"]
+          > [!Div class="tabbedCodeSnippets"]
           ```Git CLI
           > git blame Example_repo -L 20,+40  # show the blame output for the next 40 lines starting at line 20
 
@@ -64,7 +64,7 @@ sections:
           - [Stash](howto.yml#i-did-some-work-but-need-to-switch-to-something-else--how-can-i-save-my-work-for-later-without-committing-the-changes-) your current work to save the changes for later and reset the workspace to the last commit.
 
       - question: |
-          Pull request is unable to merge with this message: 'Unable to merge automatically: One of internal git objects (blob, tree, commit or tag) is too large which caused TF401022 exception. You can try to use LFS, split your merge or big commit into several small.'
+          Pull request is unable to merge with this message: 'Unable to merge automatically: One of internal git objects (blob, tree, commit, or tag) is too large, which caused TF401022 exception. You can try to use LFS, split your merge or large commit into several small.'
         answer: |
           This issue occurs because of merge conflicts in large binary files. The current file size limit is 100 MB. To work around this issue, merge the target into the source locally, resolve conflicts, and push the changes.
 
@@ -93,21 +93,21 @@ sections:
           By default, Git uses a command-line editor when it prompts for commit messages, performs rebases, and handles other tasks that require input.
           Configure the default editor with `git config`:
           
-          > [!div class="tabbedCodeSnippets"]
+          > [!Div class="tabbedCodeSnippets"]
           ```Git CLI
           > git config core.editor _path_to_editor_ _options_to_editor_
           ```
           
           Git for Windows makes it easy to set Notepad as the editor:
           
-          > [!div class="tabbedCodeSnippets"]
+          > [!Div class="tabbedCodeSnippets"]
           ```Git CLI
           > git config core.editor notepad
           ```
           
           This command configures Windows Notepad to handle Git text editing. You can also specify a preferred column width for commit messages:
           
-          > [!div class="tabbedCodeSnippets"]
+          > [!Div class="tabbedCodeSnippets"]
           ```Git CLI
           > git config format.commitMessageColumns 72 
           ```
@@ -120,7 +120,7 @@ sections:
           Git includes a username and email address in each commit, and Azure Repos uses this information when it displays commits and pull requests.
           To update the name and email on the command line, use the `git config` command:
           
-          > [!div class="tabbedCodeSnippets"]
+          > [!Div class="tabbedCodeSnippets"]
           ```Git CLI
           > git config --global user.email "example-user@example-site.com"
           > git config --global user.name "Example User"
@@ -154,14 +154,14 @@ sections:
           Run `git config --list` to check whether a proxy is already configured.
           If not, set the proxy globally:
 
-          > [!div class="tabbedCodeSnippets"]
+          > [!Div class="tabbedCodeSnippets"]
           ```Git CLI
           > git config --global http.proxy http://proxyUsername:proxyPassword@proxy.server.com:port
           ```
 
           To configure a proxy for a specific URL only:
 
-          > [!div class="tabbedCodeSnippets"]
+          > [!Div class="tabbedCodeSnippets"]
           ```Git CLI
           > git config --global http.https://dev.azure.com.proxy http://proxyUsername:proxyPassword@proxy.server.com:port
           ```
@@ -174,7 +174,7 @@ sections:
           If your password changed or cached credentials are stale, Git clone or push operations fail with authentication errors.
           Reset the Git Credential Manager (GCM) to resolve the issue:
 
-          > [!div class="tabbedCodeSnippets"]
+          > [!Div class="tabbedCodeSnippets"]
           ```Git CLI
           > git config --global --unset credential.helper
           > git config --global credential.helper manager
@@ -188,7 +188,7 @@ sections:
 
           Alternatively, use the command line:
 
-          > [!div class="tabbedCodeSnippets"]
+          > [!Div class="tabbedCodeSnippets"]
           ```Git CLI
           > cmdkey /list | findstr "git"
           > cmdkey /delete:git:https://dev.azure.com/<orgname>
@@ -214,7 +214,7 @@ sections:
           Configure Git to use the Windows certificate store instead of its bundled OpenSSL CA bundle.
           If Windows trusts your server's certificate or CA, no further steps are needed:
 
-          > [!div class="tabbedCodeSnippets"]
+          > [!Div class="tabbedCodeSnippets"]
           ```Git CLI
           > git config --global http.sslBackend schannel
           ```
@@ -225,7 +225,7 @@ sections:
 
           Export your root or intermediate CA certificate as a Base-64 encoded `.crt` file, then tell Git where to find it:
 
-          > [!div class="tabbedCodeSnippets"]
+          > [!Div class="tabbedCodeSnippets"]
           ```Git CLI
           > git config --global http.sslCAInfo C:/Users/<yourname>/my-ca-cert.crt
           ```
