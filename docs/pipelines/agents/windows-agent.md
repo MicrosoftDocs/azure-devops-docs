@@ -28,10 +28,7 @@ This article provides guidance for using the [3.x agent software](v3-agent.md) w
 :::moniker-end
 
 > [!NOTE]
-> The Windows ARM64 agent is now available in **public preview** for Windows 11. For more information, see the [v4 agent supported operating systems](v4-agent.md#upgrade-to-4x-agent-on-supported-operating-systems).
-
-> [!NOTE]
-> This article describes how to configure a [self-hosted agent](agents.md#self-hosted-agents). If you're using Azure DevOps Services and a [Microsoft-hosted agent](hosted.md) meets your needs, you can skip setting up a self-hosted Windows agent.
+> The Windows ARM64 agent is now available in **public preview** for Windows 11. For more information, see the [v4 agent supported operating systems](v4-agent.md#upgrade-to-4x-agent-on-supported-operating-systems). This article describes how to configure a [self-hosted agent](agents.md#self-hosted-agents). If you're using Azure DevOps Services and a [Microsoft-hosted agent](hosted.md) meets your needs, you can skip setting up a self-hosted Windows agent.
 
 [!INCLUDE [include](includes/concepts.md)]
 
