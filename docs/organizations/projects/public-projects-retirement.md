@@ -26,12 +26,11 @@ Rather than maintain two separate open-source hosting experiences, Microsoft is 
 
 | Milestone | Date | Details |
 |---|---|---|
-| Retirement announced | April 2026 | Public notice via blog post and in-product banners |
-| New public projects blocked | *TBD* | Organizations can no longer create new public projects |
-| Existing public projects converted | *TBD* | All remaining public projects are automatically converted to private |
+| Retirement announced | April 2026 | Public project retirement announced and organizations can no longer create new public projects |
+| Existing public projects converted | 2027* | All remaining public projects are automatically converted to private |
 
 > [!IMPORTANT]
-> Exact dates for blocking new public projects and converting existing ones will be announced in advance. Monitor the [Azure DevOps blog](https://devblogs.microsoft.com/devops/) and your organization's notification emails for updates.
+> Exact dates for blocking new public projects and converting existing ones will be shared via in-product banners within public projects.
 
 ## What changes when your project converts to private
 
@@ -64,7 +63,7 @@ All your data is preserved. Repositories, work items, pipelines, artifacts, wiki
 
 ### Do my pipelines keep running after the conversion?
 
-Yes. Existing pipelines continue to run. However, your organization's Microsoft-hosted pipeline minutes change from unlimited to the standard private-project allocation (1,800 free minutes per month). If you need more capacity, you can [purchase additional parallel jobs](/azure/devops/pipelines/licensing/concurrent-jobs).
+Yes. Existing pipelines continue to run. However, your organization's Microsoft-hosted pipeline minutes change from unlimited to the standard private-project allocation (1,800 free minutes per month). If you need more capacity, you can [purchase more parallel jobs](/azure/devops/pipelines/licensing/concurrent-jobs).
 
 ### Do I need to update service connections or personal access tokens?
 
