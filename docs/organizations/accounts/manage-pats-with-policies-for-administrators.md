@@ -7,7 +7,7 @@ ms.topic: how-to
 ms.author: chcomley
 author: chcomley
 ai-usage: ai-assisted
-ms.date: 03/03/2026
+ms.date: 04/22/2026
 monikerRange: 'azure-devops'
 ms.custom: pat-reduction, copilot-scenario-highlight
 ---
@@ -176,6 +176,7 @@ If you have the [Azure DevOps MCP Server](../../mcp-server/mcp-server-overview.m
 > [Change application access policies](change-application-access-policies.md)
 
 ## Related content
+- [Access Azure DevOps with Microsoft Entra workload identity](../../pipelines/library/add-devops-entra-service-connection.md)
 - [Restrict organization creation with Microsoft Entra tenant policy](azure-ad-tenant-policy-restrict-org-creation.md)
 - [Use personal access tokens to authenticate](use-personal-access-tokens-to-authenticate.md)
 - [Revoke organization users' personal access tokens (for admins)](admin-revoke-user-pats.md)

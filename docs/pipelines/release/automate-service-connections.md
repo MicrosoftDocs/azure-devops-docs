@@ -4,7 +4,7 @@ description: Learn how to automate Azure Resource Manager service connections in
 ms.topic: how-to
 ms.author: jukullam
 author: juliakm
-ms.date: 05/28/2025
+ms.date: 04/22/2026
 monikerRange: '= azure-devops'
 "recommendations": "true"
 ai-usage: ai-assisted
@@ -223,3 +223,6 @@ az role assignment create --role Contributor --scope /subscriptions/SUBSCRIPTION
 `az role assignment create --role Contributor` command assigns the Contributor role to a service principal at the subscription level. This allows the service principal to manage resources within the specified subscription. 
 
 For more information on this command, see [az role assignment create](/cli/azure/role/assignment#az-role-assignment-create).
+
+> [!NOTE]
+> To create an **Azure DevOps** service connection for PAT-free access to Azure DevOps resources, see [Access Azure DevOps with Microsoft Entra workload identity](../library/add-devops-entra-service-connection.md).

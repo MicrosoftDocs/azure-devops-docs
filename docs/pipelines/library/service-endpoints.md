@@ -6,7 +6,7 @@ ms.assetid: A40435C0-2053-4D99-9A75-CCB97FBB15D2
 ms.topic: concept-article
 ms.author: ronai
 author: RoopeshNair
-ms.date: 11/03/2025
+ms.date: 04/22/2026
 monikerRange: '<= azure-devops'
 ---
 
@@ -150,6 +150,7 @@ Azure Pipelines supports the following service connection types by default. You 
 | Service connection type | Description |
 |-------------------------|-------------|
 | [Azure Classic](#azure-classic-service-connection) | Connect to your Azure subscription via credentials or certificate. |
+| [Azure DevOps](add-devops-entra-service-connection.md) | Connect to Azure DevOps resources using Microsoft Entra workload identity federation. |
 | [Azure Repos/Team Foundation Server](#azure-repos) | Connect to Azure Repos in your DevOps organization or collection.|
 | [Azure Resource Manager](#azure-resource-manager-service-connection) | Connect to Azure resources. |
 | [Azure Service Bus](#azure-service-bus-service-connection) | Connect to an Azure Service Bus queue. |
@@ -198,6 +199,9 @@ For certificate authentication, select **Verify** to validate your connection in
 If your subscription is defined in an [Azure Government Cloud](/azure/azure-government/connect-with-azure-pipelines), ensure your application meets the relevant compliance requirements before you configure a service connection.
 
 ### Azure Repos
+
+> [!TIP]
+> For PAT-free authentication to Azure DevOps resources from pipelines, use the [Azure DevOps service connection](add-devops-entra-service-connection.md), which uses Microsoft Entra workload identity federation.
 
 Connect to an Azure DevOps organization or project collection using basic or token-based authentication.
 Use the following parameters to define and secure a connection to another Azure DevOps organization.

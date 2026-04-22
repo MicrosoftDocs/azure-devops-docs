@@ -9,7 +9,7 @@ ms.assetid: d980d58e-4240-47c7-977c-baaa7028a1d8
 ms.topic: how-to
 ms.author: chcomley
 author: chcomley
-ms.date: 03/03/2026
+ms.date: 04/22/2026
 monikerRange: '<= azure-devops'
 ---
 
@@ -343,5 +343,6 @@ If you have the [Azure DevOps MCP Server](../../mcp-server/mcp-server-overview.m
 
 ## Related content
 
+- [Access Azure DevOps with Microsoft Entra workload identity](../../pipelines/library/add-devops-entra-service-connection.md)
 - [Revoke user PATs (for admins)](admin-revoke-user-pats.md)
 - [Authenticate with Microsoft Entra tokens](../../integrate/get-started/authentication/entra.md)

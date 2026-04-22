@@ -9,7 +9,7 @@ ms.manager: mijacobs
 ms.author: chcomley  
 author: chcomley
 monikerRange: 'azure-devops'
-ms.date: 08/27/2025
+ms.date: 04/22/2026
 zone_pivot_groups: configure-cli
 
 #customer intent: As a team member, I want to use YAML configuration files to manage my pipeline tasks by using Azure DevOps CLI.
@@ -578,6 +578,7 @@ For more examples of working with variables, including working with variables ac
 
 ## Related content
 
+- [Access Azure DevOps with Microsoft Entra workload identity](../pipelines/library/add-devops-entra-service-connection.md)
 - [System.AccessToken](../pipelines/build/variables.md#systemaccesstoken)
 - [Access repositories, artifacts, and other resources](../pipelines/process/access-tokens.md)
 - [Manage service connections](../pipelines/library/service-endpoints.md)

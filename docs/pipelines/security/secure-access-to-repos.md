@@ -2,7 +2,7 @@
 title: Access repositories from pipelines
 description: Learn how to provide secure access to source code repositories from Azure Pipelines.
 ms.author: sandrica
-ms.date: 09/26/2025
+ms.date: 04/22/2026
 monikerRange: "<=azure-devops"
 #customer intent: As a developer, I want to know about how Azure Pipelines can securely access repositories so I can help protect my source code from security threats.
 ms.topic: how-to
@@ -89,6 +89,9 @@ Other ways to increase fork security include:
 - Use Microsoft-hosted agents to build from forks. Resources are then immediately deleted from the agents after builds. If you use self-hosted agents, clean and update the agents regularly, or use separate agents for different forks or branches.
 
 ## Azure Repos repositories
+
+> [!TIP]
+> For PAT-free access to Azure Repos across organizations, use an [Azure DevOps service connection](../library/add-devops-entra-service-connection.md) with Microsoft Entra workload identity federation instead of `System.AccessToken` or personal access tokens.
 
 #### [YAML pipelines](#tab/yaml)
 
@@ -244,6 +247,7 @@ steps:
 
 ## Related content
 
+- [Access Azure DevOps with Microsoft Entra workload identity](../library/add-devops-entra-service-connection.md)
 - [Access repositories, artifacts, and other resources](../process/access-tokens.md)
 - [Protect a repository resource](../process/repository-resource.md)
 - [Pipeline options for Git repositories](../repos/pipeline-options-for-git.md)

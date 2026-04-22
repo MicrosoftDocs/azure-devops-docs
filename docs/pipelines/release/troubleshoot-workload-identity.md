@@ -5,7 +5,7 @@ description: Learn how to troubleshoot an Azure Resource Manager workload identi
 ms.topic: troubleshooting
 ms.author: jukullam
 author: juliakm
-ms.date: 04/20/2026
+ms.date: 04/22/2026
 monikerRange: '>= azure-devops'
 recommendations: "true"
 ---
@@ -149,6 +149,9 @@ The following table identifies common error messages and issues that might gener
 | **Failed to obtain the JSON Web Token (JWT) using service principal client ID** | Your federation identity credentials are misconfigured or the Microsoft Entra tenant blocks OpenID Connect (OIDC). |
 | **Script failed with error: UnrecognizedArgumentError: unrecognized arguments: --federated-token** | You're using an AzureCLI task on an agent that has an earlier version of the Azure CLI installed. Workload identity federation requires Azure CLI 2.30 or later. |
 | **Failed to create an app in Microsoft Entra ID. Error: Insufficient privileges to complete the operation in Microsoft Graph. Ensure that the user has permissions to create a Microsoft Entra Application.** | The ability to create app registrations was [disabled](/azure/active-directory/roles/delegate-app-roles#restrict-who-can-create-applications) in the Microsoft Entra tenant. Assign the user who is creating the service connection the [Application Developer](/azure/active-directory/roles/permissions-reference#application-developer) Microsoft Entra role. Alternatively, create the service connection manually by using a managed identity. For more information, see [Workload identity with managed identity](https://aka.ms/azdo-rm-workload-identity-manual). |
+
+> [!NOTE]
+> For troubleshooting the **Azure DevOps** service connection type (used for PAT-free access to Azure DevOps resources), see [Troubleshooting](../library/add-devops-entra-service-connection.md#troubleshooting).
 
 ### Microsoft Entra ID error codes
 
