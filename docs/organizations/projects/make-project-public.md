@@ -8,7 +8,7 @@ ms.author: chcomley
 author: chcomley
 ms.topic: how-to
 monikerRange: 'azure-devops'
-ms.date: 08/27/2025
+ms.date: 04/22/2026
 ---
 
 # Change project visibility to public or private
@@ -18,8 +18,6 @@ ms.date: 08/27/2025
 [!INCLUDE [public-projects-retirement](includes/public-projects-retirement.md)]
 
 Learn how to change the visibility of your Azure DevOps project between public and private, and understand the security and access implications of each visibility setting.
-
-[!INCLUDE [allow-public-project-policy](includes/allow-public-project-policy.md)]
 
 ## What changes when you make a project public
 
@@ -32,9 +30,9 @@ Making a project public affects permissions, access levels, and available featur
 
 When you switch project visibility from private to public, the following changes occur:
 
-* **Deny permissions are ignored**: Any permissions explicitly set to "Deny" aren't enforced for public users
-* **Minimum access granted**: Nonmembers automatically receive baseline read access to public content
-* **Build pipeline scope**: Pipelines set to *Project Collection* scope automatically run with *Project* scope to enhance security
+* **Deny permissions are ignored**: The system doesn't enforce any permissions explicitly set to "Deny" for public users.
+* **Minimum access granted**: Nonmembers automatically receive baseline read access to public content.
+* **Build pipeline scope**: To enhance security, pipelines set to *Project Collection* scope automatically run with *Project* scope.
 
 ### Access level differences
 
@@ -62,12 +60,12 @@ The following table shows what features are available to users who aren't projec
 
 ## Prerequisites
 
-Before you change project visibility, ensure you meet these requirements:
+Before you change project visibility, make sure you meet these requirements:
 
 |Requirement|Details|
 |-----------|-------|
 |**Permissions**|[Project Collection Administrator](../security/look-up-project-collection-administrators.md) or Organization Owner|
-|**Organization setup**|Must enable "Allow public projects" policy|
+|**Organization setup**|Enable "Allow public projects" policy|
 |**Security review**|Complete the [migration checklist](#premigration-security-checklist) |
 
 ## Premigration security checklist
@@ -90,53 +88,53 @@ Before you change project visibility, ensure you meet these requirements:
 ### Content security review
 
 #### Work items and Agile tools
-- [ ] **Historical work items**: Review all work items, including closed ones, for sensitive information
-- [ ] **Area path security**: Confirm no area paths have special security restrictions (denied permissions ignored in public projects)
-- [ ] **Discussions and comments**: Check all work item discussions for sensitive or inappropriate content
+- [ ] **Historical work items**: Review all work items, including closed ones, for sensitive information.
+- [ ] **Area path security**: Confirm no area paths have special security restrictions (denied permissions are ignored in public projects).
+- [ ] **Discussions and comments**: Check all work item discussions for sensitive or inappropriate content.
 
 #### Source code repositories
-- [ ] **Commit history**: Review entire Git history for credentials, security vulnerabilities, or proprietary code
-- [ ] **Commit messages**: Check all commit messages for sensitive information or inappropriate content
-- [ ] **File contents**: Ensure no files contain credentials, API keys, or confidential data
+- [ ] **Commit history**: Review the entire Git history for credentials, security vulnerabilities, or proprietary code.
+- [ ] **Commit messages**: Check all commit messages for sensitive information or inappropriate content.
+- [ ] **File contents**: Ensure no files contain credentials, API keys, or confidential data.
 
 #### Build and release pipelines
-- [ ] **Pipeline definitions**: Review for exposed credentials, internal URLs, or environment details
-- [ ] **Build logs**: Check historical build logs for sensitive information
-- [ ] **Service connections**: Verify no private feed dependencies that nonmembers can't access
+- [ ] **Pipeline definitions**: Review for exposed credentials, internal URLs, or environment details.
+- [ ] **Build logs**: Check historical build logs for sensitive information.
+- [ ] **Service connections**: Verify no private feed dependencies that nonmembers can't access.
 
 #### Artifacts and packages
-- [ ] **Package contents**: Review all packages in project-scoped feeds for privacy concerns
-- [ ] **Feed settings**: Understand that upstream settings are disabled for public project feeds
+- [ ] **Package contents**: Review all packages in project-scoped feeds for privacy concerns.
+- [ ] **Feed settings**: Understand that upstream settings are disabled for public project feeds.
 
 #### Extensions and customizations
-- [ ] **Custom extensions**: Verify extensions work properly for nonmembers
-- [ ] **Work item form customizations**: Test custom controls and fields with nonmember access
+- [ ] **Custom extensions**: Verify extensions work properly for nonmembers.
+- [ ] **Work item form customizations**: Test custom controls and fields with nonmember access.
 
 ## Step 1: Enable public projects for your organization
 
 1. Sign in to your organization (`https://dev.azure.com/{yourorganization}`).
 
-2. Select **Organization settings**.
+1. Select **Organization settings**.
 
    ![Screenshot showing Organization settings button](../../media/settings/open-admin-settings-vert.png)
 
-3. Select **Policies**.
+1. Select **Policies**.
 
-4. Under **Security policies**, turn on **Allow public projects**.
+1. Under **Security policies**, turn on **Allow public projects**.
 
    :::image type="content" source="media/rename-project/org-policies-change-anon.png" alt-text="Screenshot showing Organization settings, Policy page, Security policies":::
 
 ## Step 2: Change project visibility
 
-1. Navigate to your project (`https://dev.azure.com/{yourorganization}/{yourproject}`).
+1. Go to your project (`https://dev.azure.com/{yourorganization}/{yourproject}`).
 
-2. Select **Project settings**.
+1. Select **Project settings**.
 
-3. Select **Overview**.
+1. Select **Overview**.
 
-4. In the **Visibility** dropdown menu, choose **Public** or **Private**.
+1. In the **Visibility** dropdown menu, choose **Public** or **Private**.
 
-5. Select **Save**.
+1. Select **Save**.
 
    ![Screenshot showing Project Settings, Overview, Visibility options.](media/switch-to-public.png)
 
@@ -147,31 +145,31 @@ Before you change project visibility, ensure you meet these requirements:
 Add contributors to public projects the same way as private projects:
 
 1. Go to **Project settings** > **Permissions**.
-2. Select **Add** to invite users.
-3. Assign appropriate access levels (Stakeholder, Basic, or Basic + Test Plans).
+1. Select **Add** to invite users.
+1. Assign appropriate access levels (Stakeholder, Basic, or Basic + Test Plans).
 
 For more information, see [Add users to your organization](../accounts/add-organization-users.md).
 
 ### External user considerations
 
 When you [invite external users](../accounts/add-external-user.md) to public projects:
-- They gain access to all public content in your organization
-- Consider creating separate organizations for public projects if you have sensitive content elsewhere
+- They gain access to all public content in your organization.
+- Consider creating separate organizations for public projects if you have sensitive content elsewhere.
 
 ## Alternative approaches for sensitive content
 
 ### Option 1: Separate organization for public projects
 
 If your current organization contains sensitive material:
-1. Create a new organization specifically for public projects
-2. Migrate only nonsensitive content to the new organization
-3. Keep sensitive projects in the original private organization
+1. Create a new organization specifically for public projects.
+1. Migrate only nonsensitive content to the new organization.
+1. Keep sensitive projects in the original private organization.
 
 ### Option 2: Selective content migration
 
 #### Move sensitive work items
-- Use the [move work items feature](../../boards/backlogs/move-change-type.md#move) to transfer sensitive items to a private project
-- Cross-project links continue working for members but remain hidden from nonmembers
+- Use the [move work items feature](../../boards/backlogs/move-change-type.md#move) to transfer sensitive items to a private project.
+- Cross-project links continue working for members but remain hidden from nonmembers.
 
 #### Git repository tip migration
 For repositories with problematic history, migrate only the current state:
@@ -205,12 +203,12 @@ git push --set-upstream origin main
 ## Limitations for nonmembers
 
 Nonmembers of public projects can't do the following actions:
-- Edit or create any content (files, work items, pipelines)
-- View email addresses or contact information of project members
-- Access administrative settings or configuration pages
-- Use advanced search features across the organization
-- Navigate between multiple public projects in the same organization
-- Favorite or follow artifacts
+- Edit or create any content (files, work items, pipelines).
+- View email addresses or contact information of project members.
+- Access administrative settings or configuration pages.
+- Use advanced search features across the organization.
+- Navigate between multiple public projects in the same organization.
+- Favorite or follow artifacts.
 
 ## Troubleshoot public project access
 
