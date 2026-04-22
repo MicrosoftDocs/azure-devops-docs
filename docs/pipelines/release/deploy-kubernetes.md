@@ -239,3 +239,50 @@ This pipeline uses a standard build-then-deploy pattern across two stages.
 - `KubernetesManifest@1` with `createSecret` creates an image pull secret in the target namespace so cluster nodes can authenticate to Azure Container Registry.
 - `KubernetesManifest@1` with `deploy` applies the Kubernetes manifests and injects the `web` and `leaderboard` image references for the current build tag.
 
+## Run and validate deployment
+
+Use this section to verify that your build completed, your deployment succeeded, and both application endpoints are reachable from outside the cluster.
+
+1. In Azure DevOps, open your pipeline run and confirm both stages complete successfully:
+
+    - **Build** stage: confirms both images were built and pushed to Azure Container Registry.
+    - **Deploy** stage: confirms manifests were applied and pods were updated in your Azure Kubernetes Service cluster.
+
+1. In Azure portal, open your Azure Kubernetes Service cluster, and then select **Services and ingresses**.
+
+    :::image type="content" source="media/aks-external-ip.png" alt-text="Screenshot of Azure Kubernetes Service showing where to find external IP addresses for services." lightbox="media/aks-external-ip.png":::
+
+1. Find the `web` and `leaderboard` services, and wait until each service has an external IP.
+
+1. Open the external IP for the `web` service in your browser.
+
+    :::image type="content" source="media/4-space-game.png" alt-text="Screenshot of the Tailspin Space Game web app running from an AKS service endpoint." lightbox="media/4-space-game.png":::
+
+1. Copy the external IP for the `leaderboard` service, then open the following endpoint in your browser:
+
+    ```text
+    http://<external-ip>/api/Leaderboard?pageSize=10
+    ```
+
+    :::image type="content" source="media/4-leaderboard-api.png" alt-text="Screenshot of browser output showing JSON leaderboard results returned by the API service on AKS." lightbox="media/4-leaderboard-api.png":::
+
+1. Confirm validation results:
+
+    - The Space Game web page loads from the `web` service endpoint.
+    - The leaderboard endpoint returns JSON data from the `leaderboard` API.
+
+## Clean up resources
+
+After you complete this tutorial, delete the resource group to avoid additional charges. Run the following command to remove the resource group and all resources in it.
+
+```azurecli
+az group delete --name tailspin-space-game-rg
+```
+
+## Related content
+
+- [Build multiple branches in Azure Pipelines](../build/ci-build-git.md)
+
+- [Create a multi-stage release pipeline](define-multistage-release-process.md)
+
+- [Pipeline caching](caching.md)
