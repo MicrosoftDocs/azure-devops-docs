@@ -11,11 +11,11 @@ Use Azure Pipelines to continuously build and deploy a multi-container app to Az
 
 ## Prerequisites
 
-- An Azure account with an active subscription. [Create an account for free](https://azure.microsoft.com/free/?azure-portal=true).
-- An Azure DevOps organization with access to Microsoft-hosted parallel jobs. [Check available parallel jobs](https://learn.microsoft.com/azure/devops/pipelines/troubleshooting/troubleshooting?tabs=yaml#check-for-available-parallel-jobs).
-- A GitHub account.
-- Azure CLI in Cloud Shell or locally.
-- A fork of the sample repository: [MicrosoftDocs/mslearn-tailspin-spacegame-web-kubernetes](https://github.com/MicrosoftDocs/mslearn-tailspin-spacegame-web-kubernetes).
+| **Product** | **Requirements**   |
+|---|---|
+| **Azure DevOps** | - An Azure DevOps organization and project. [Create one for free](../../get-started/pipelines-sign-up.md). <br>   - **Permissions:**<br>      &nbsp;&nbsp;&nbsp;&nbsp;- To grant access to all pipelines in the project: You must be a member of the [Project Administrators group](../../../organizations/security/change-project-level-permissions.md).<br>      &nbsp;&nbsp;&nbsp;&nbsp;- To create service connections: You must have the *Administrator* or *Creator* role for [service connections](../../library/add-resource-protection.md).<br>   - An ability to run pipelines on Microsoft-hosted agents. You can either purchase a [parallel job](../../licensing/concurrent-jobs.md) or you can request a free tier.  |
+| **GitHub** | - A [GitHub](https://github.com) account.|
+| **Azure** | - An [Azure subscription](https://azure.microsoft.com/pricing/purchase-options/azure-account?cid=msft_learn).|
 
 ## Get the code
 
@@ -107,8 +107,8 @@ Before you create the pipeline, set up the authentication and shared variables t
 
 1. Create these service connections:
 
-    - Azure Resource Manager service connection for the subscription and resource group.
-    - Docker Registry service connection for the ACR instance.
+    - [Azure Resource Manager service connection](../library/connect-to-azure.md) for the subscription and resource group.
+    - [Docker Registry service connection](../ecosystems/containers/publish-to-acr.md#create-a-docker-registry-service-connection) for the ACR instance.
 
 ## Create the pipeline
 
@@ -256,7 +256,7 @@ Use this section to verify that your build completed, your deployment succeeded,
 
 1. Open the external IP for the `web` service in your browser.
 
-    :::image type="content" source="media/4-space-game.png" alt-text="Screenshot of the Tailspin Space Game web app running from an AKS service endpoint." lightbox="media/4-space-game.png":::
+    :::image type="content" source="media/space-game.png" alt-text="Screenshot of the Tailspin Space Game web app running from an AKS service endpoint." lightbox="media/4-space-game.png":::
 
 1. Copy the external IP for the `leaderboard` service, then open the following endpoint in your browser:
 
@@ -264,7 +264,7 @@ Use this section to verify that your build completed, your deployment succeeded,
     http://<external-ip>/api/Leaderboard?pageSize=10
     ```
 
-    :::image type="content" source="media/4-leaderboard-api.png" alt-text="Screenshot of browser output showing JSON leaderboard results returned by the API service on AKS." lightbox="media/4-leaderboard-api.png":::
+    :::image type="content" source="media/leaderboard-api.png" alt-text="Screenshot of browser output showing JSON leaderboard results returned by the API service on AKS." lightbox="media/4-leaderboard-api.png":::
 
 1. Confirm validation results:
 
