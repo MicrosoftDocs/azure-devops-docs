@@ -22,7 +22,7 @@ hide_comments: true
 
 ## Product roadmap
 
-This feature list is a peek into our roadmap. It identifies some of the significant features we are currently working on and a rough timeframe for when you can expect to see them. It is not comprehensive but is intended to provide some visibility into key investments. At the top you will find a list of our large multi-quarter initiatives and the features that they break down into. Further down you will find the full list of significant features we have planned. 
+This feature list is a peek into our roadmap. It identifies some of the significant features we're currently working on and a rough timeframe for when you can expect to see them. It isn't comprehensive but is intended to provide some visibility into key investments. At the top you'll find a list of our large multi-quarter initiatives and the features that they break down into. Further down you'll find the full list of significant features we have planned. 
 
 Each feature is linked to an article where you can learn more about a particular item. These features and dates are the current plans and are subject to change. The Timeframe columns reflect when we expect the feature to be available.
 
@@ -81,7 +81,7 @@ Upcoming capabilities we expect to deliver include:
  
 ### Minimizing the risks associated with credential theft
 
-Azure DevOps supports many different authentication mechanisms, including basic authentication, personal access tokens (PATs), SSH, and Microsoft Entra ID (formerly Azure Active Directory) access tokens. These mechanisms are not created equally from a security perspective, especially when it comes to the potential for credential theft. For example, unintended leakage of credentials like PATs can let malicious actors into Azure DevOps organizations where they can gain access to critical assets like source code, pivot toward supply chain attacks, or even pivot toward compromising production infrastructure. To minimize the risks of credential theft, we will focus our efforts in the upcoming quarters in the following areas: 
+Azure DevOps supports many different authentication mechanisms, including basic authentication, personal access tokens (PATs), SSH, and Microsoft Entra ID (formerly Azure Active Directory) access tokens. These mechanisms aren't created equally from a security perspective, especially when it comes to the potential for credential theft. For example, unintended leakage of credentials like PATs can let malicious actors into Azure DevOps organizations where they can gain access to critical assets like source code, pivot toward supply chain attacks, or even pivot toward compromising production infrastructure. To minimize the risks of credential theft, we'll focus our efforts in the upcoming quarters in the following areas: 
 
 * Enable administrators to improve authentication security through control plane policies. 
 
@@ -192,11 +192,11 @@ You can also view a detailed list of planned and recent investments on our [feat
 
 Managed DevOps Pools is an evolution of Azure DevOps Virtual Machine Scale Set agent pools. It provides better pool scalability and reliability, simplifies pool management, and allows you to use the VM images from Microsoft-hosted agents on custom Azure VMs. You can read more about Managed DevOps Pools [here](https://aka.ms/mdp-docs). Features to support new scenarios will be added to Managed DevOps Pools and not Virtual Machine Scale Set pools. Managed DevOps Pools is generally available, so you can migrate your Virtual Machine Scale Set pools to Managed DevOps Pools and use them for production workflows, wherever possible.
 
-You will find the detailed roadmap [here](/azure/devops/managed-devops-pools/features-timeline?view=azure-devops&preserve-view=true).
+You'll find the detailed roadmap [here](/azure/devops/managed-devops-pools/features-timeline?view=azure-devops&preserve-view=true).
 
 ### YAML and release pipelines feature parity
 
-For the past several years, all our pipelines investments have been in the area of YAML pipelines. Furthermore, all our security improvements have been for YAML pipelines. For example, with YAML pipelines, the control over [protected resources](/azure/devops/pipelines/security/resources) (e.g., repositories, service connections, etc.) is in the hands of the resource owners as opposed to pipeline authors. The [job access tokens](/azure/devops/pipelines/process/access-tokens#scoped-build-identities) that are used in YAML pipelines are scoped to specific repositories that are specified in the YAML file. These are just two examples of security features that are available for YAML pipelines. For these reasons, we recommend using YAML pipelines over classic. Adoption of YAML over classic has been significant for builds (CI). However, many customers have continued to use classic release management pipelines over YAML for releases (CD). The primary reason for this is the lack of parity in various CD features between the two solutions. Over the past year, we addressed several gaps in this area, notably in **Checks**. Checks are the primary mechanism in YAML pipelines to gate promotion of a build from one stage to another. We will continue to address gaps in other areas over the next year. Our focus will be on user experiences, traceability, and environments.
+For the past several years, all our pipelines investments have been in the area of YAML pipelines. Furthermore, all our security improvements have been for YAML pipelines. For example, with YAML pipelines, the control over [protected resources](/azure/devops/pipelines/security/resources) (e.g., repositories, service connections, etc.) is in the hands of the resource owners as opposed to pipeline authors. The [job access tokens](/azure/devops/pipelines/process/access-tokens#scoped-build-identities) that are used in YAML pipelines are scoped to specific repositories that are specified in the YAML file. These are just two examples of security features that are available for YAML pipelines. For these reasons, we recommend using YAML pipelines over classic. Adoption of YAML over classic has been significant for builds (CI). However, many customers have continued to use classic release management pipelines over YAML for releases (CD). The primary reason for this is the lack of parity in various CD features between the two solutions. Over the past year, we addressed several gaps in this area, notably in **Checks**. Checks are the primary mechanism in YAML pipelines to gate promotion of a build from one stage to another. We'll continue to address gaps in other areas over the next year. Our focus will be on user experiences, traceability, and environments.
 
 <table>
     <thead>
@@ -234,9 +234,9 @@ For the past several years, all our pipelines investments have been in the area 
 
 Azure DevOps provides a variety of testing tools and integrations to support different testing needs. These include manual testing, automated testing, and exploratory testing. The platform allows for the creation and management of test plans and test suites, which can be used to track manual testing for sprints or milestones. Additionally, Azure DevOps integrates with CI/CD pipelines, enabling automated test execution and reporting. 
 
-We are ramping up our investments in this area in response to feedback from our most active customer base. Our focus will be on the following aspects of test management: improving end-to-end test traceability; extending support for various programming languages and frameworks for automated testing in Test Plans; redesigning workflows and experiences for consuming test runs and test results. 
+We're ramping up our investments in this area in response to feedback from our most active customer base. Our focus will be on the following aspects of test management: improving end-to-end test traceability; extending support for various programming languages and frameworks for automated testing in Test Plans; redesigning workflows and experiences for consuming test runs and test results. 
 
-Below, you will find several investments that we plan to deliver as part of this initiative: 
+Below, you'll find several investments that we plan to deliver as part of this initiative: 
 
 <table>
     <thead>
@@ -612,7 +612,7 @@ Below, you will find several investments that we plan to deliver as part of this
       </tr>
    </tbody>
 </table>
----
+
 
 ## How to provide feedback
 
