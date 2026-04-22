@@ -9,7 +9,7 @@ ms.topic: how-to
 ms.author: chcomley
 author: chcomley
 monikerRange: 'azure-devops'
-ms.date: 03/13/2026
+ms.date: 04/21/2026
 #customer intent: As a user, I want to set up the remote Azure DevOps MCP Server so I can use AI assistance with my Azure DevOps data without installing and running a local server.
 ---
 
@@ -100,10 +100,9 @@ Specify toolsets to restrict the tools available to the MCP server. Should not b
 | `repos` | Repository and pull request tools (`repo_*`) |
 | `wit` | Work item tools (`wit_*`) and `search_workitem` |
 | `pipelines` | Pipeline and build tools (`pipelines_*`) |
-| `wiki` | Wiki tools (`wiki_*`) and `search_wiki` |
+| `wiki` | Wiki tools (`wiki`, `wiki_upsert_page`) and `search_wiki` |
 | `work` | Iteration and capacity tools (`work_*`) |
 | `testplan` | Test plan tools (`testplan_*`) |
-| `search` | Search tools (`search_*`) |
 
 ### Read-only tools
 
@@ -153,7 +152,7 @@ Use the `X-MCP-Tools` header to enable only specific tools. Should not be combin
       "url": "https://mcp.dev.azure.com/{organization}",
       "type": "http",
       "headers": {
-        "X-MCP-Tools": "core_list_projects, wit_my_work_items, wit_get_work_items_batch_by_ids"      
+        "X-MCP-Tools": "core_list_projects, wit_my_work_items, wit_get_work_items_batch_by_ids"
       }
     }
   },
@@ -186,6 +185,7 @@ As we experiment and introduce new tools and updates to existing ones, you can g
 > This list might not always reflect the most recent tool updates.
 
 ### Core tools
+
 Core tools are always available.
 
 | Tool | Description |
@@ -217,6 +217,8 @@ Core tools are always available.
 | `repo_get_repo_by_name_or_id` | Get repository details | ✅ |
 | `repo_get_branch_by_name` | Get branch details | ✅ |
 | `repo_get_pull_request_by_id` | Get a pull request | ✅ |
+| `repo_get_file_content` | Get the content of a file from a repository at a specific branch, tag, or commit | ✅ |
+| `repo_list_directory` | List files and folders in a directory within a repository | ✅ |
 | `repo_search_commits` | Search commits | ✅ |
 | `repo_create_pull_request` | Create a pull request | ❌ |
 | `repo_create_branch` | Create a branch | ❌ |
@@ -225,8 +227,9 @@ Core tools are always available.
 | `repo_update_pull_request` | Update a pull request | ❌ |
 | `repo_update_pull_request_reviewers` | Add or remove PR reviewers | ❌ |
 | `repo_update_pull_request_thread` | Update a PR comment thread | ❌ |
+| `repo_vote_pull_request` | Cast a vote on a pull request | ❌ |
 
-### Wit
+### Work Item Tracking
 
 | Tool | Description | Read-only |
 |---|---|:---:|
@@ -241,6 +244,7 @@ Core tools are always available.
 | `wit_get_work_item_type` | Get a work item type | ✅ |
 | `wit_get_query` | Get a query by ID or path | ✅ |
 | `wit_get_query_results_by_id` | Run a saved query | ✅ |
+| `wit_query_by_wiql` | Execute a WIQL query and return matching work items | ✅ |
 | `search_workitem` | Full-text work item search | ✅ |
 | `wit_add_work_item_comment` | Add a comment to a work item | ❌ |
 | `wit_update_work_item` | Update a work item | ❌ |
@@ -251,6 +255,9 @@ Core tools are always available.
 | `wit_add_child_work_items` | Create child work items | ❌ |
 | `wit_link_work_item_to_pull_request` | Link a work item to a pull request | ❌ |
 | `wit_add_artifact_link` | Add artifact links to a work item | ❌ |
+
+> [!NOTE]
+> `wit_query_by_wiql` is currently available only to MCP Insiders by using the `X-MCP-Insiders` header.
 
 ### Pipelines
 
@@ -271,17 +278,18 @@ Core tools are always available.
 | `pipelines_create_pipeline` | Create a pipeline definition | ❌ |
 | `pipelines_run_pipeline` | Trigger a pipeline run | ❌ |
 
-### Wiki 
+### Wiki
+
+The wiki read operations are consolidated into a single `wiki` tool. Use the `action` parameter to select the operation.
 
 | Tool | Description | Read-only |
 |---|---|:---:|
-| `wiki_list_wikis` | List wikis in a project or organization. | ✅ |
-| `wiki_get_wiki` | Get a wiki by identifier. | ✅ |
-| `wiki_list_pages` | List pages in a wiki. | ✅ |
-| `wiki_get_page` | Get page metadata. | ✅ |
-| `wiki_get_page_content` | Get page content. | ✅ |
-| `search_wiki` | Full-text wiki search. | ✅ |
-| `wiki_create_or_update_page` | Create or update a wiki page. | ❌ |
+| `wiki` (`action: list_wikis`) | List wikis in a project or organization | ✅ |
+| `wiki` (`action: get_wiki`) | Get a wiki by identifier | ✅ |
+| `wiki` (`action: list_pages`) | List pages in a wiki | ✅ |
+| `wiki` (`action: get_page`) | Get page content and metadata | ✅ |
+| `search_wiki` | Full-text wiki search | ✅ |
+| `wiki_upsert_page` | Create or update a wiki page | ❌ |
 
 ### Test plans
 
@@ -306,6 +314,7 @@ Core tools are always available.
 | `search_workitem` | Full-text work item search. | ✅ |
 
 ## Supported environments
+
 The remote Azure DevOps MCP Server requires your user account and Azure DevOps organization to connect to Microsoft Entra ID.
 
 Not all MCP clients support Entra authentication by default. Some environments require extra steps to register the client application.
@@ -371,4 +380,3 @@ AgentId support is coming soon.
 
 - [Azure DevOps MCP Server overview](mcp-server-overview.md)
 - [Azure DevOps MCP Server GitHub repository](https://github.com/microsoft/azure-devops-mcp)
-

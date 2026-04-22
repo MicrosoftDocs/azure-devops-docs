@@ -93,6 +93,9 @@ The **number of recent runs to keep for each pipeline** setting is interpreted d
     | Run 2  | release | Retained | Latest 3 for release |
     | Run 1  | main    | Not retained | Neither latest 3 for main, nor for pipeline |
 
+
+The number of days to retain is calculated from when the run is completed. For example, there are two runs on a main branch on Jan 19th. The run that completed later is retained.
+
 - **All other Git repositories:** Azure Pipelines retains the configured number of latest runs for the whole pipeline.
 
 - **TFVC:** Azure Pipelines retains the configured number of latest runs for the whole pipeline, irrespective of the branch.
