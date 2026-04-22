@@ -216,6 +216,31 @@ If you inadvertently delete a project in Azure DevOps, you can restore it within
 > [!WARNING]
 > To restore a project with an existing name, rename the project first. To rename the project, enter the following text in the request body: `"name":"new name"`.
 
+::: moniker range="azure-devops"
+
+1. Get a list of deleted projects using the following request:
+
+   ```
+   GET 'https://dev.azure.com/{organization}/_apis/projects?stateFilter=deleted&api-version=7.2-preview.4'
+   ```
+
+3. Restore a deleted project using the following request:
+
+   ```
+   PATCH 'https://dev.azure.com/{organization}/_apis/projects/{projectId}?api-version=7.2-preview.4'
+   ```
+   Request body
+
+   ```   
+   {
+    "state" : "wellFormed"
+   }
+   ```
+   
+::: moniker-end
+
+::: moniker range="< azure-devops"
+
 1. Open a browser window and enter a URL that uses the following form:  
 
     'http://ServerName:8080/tfs/DefaultCollection/ProjectName'
@@ -244,8 +269,38 @@ If you inadvertently delete a project in Azure DevOps, you can restore it within
     "state" : "wellFormed"
    }
    ```
+   
+::: moniker-end
 
 ### Restore project with PowerShell
+
+::: moniker range="azure-devops"
+
+1. Execute the following PowerShell script to get a list of deleted projects and make sure to update `{yourPAT}` and `{organization}`.
+
+   ```
+   $MyPat = '{yourPAT}'
+   $MyOrg = '{organization}'
+   $headerValue = "Basic " + [Convert]::ToBase64String([System.Text.Encoding]::UTF8.GetBytes(":" + $MyPat))
+   (irm -Method Get -Uri "https://dev.azure.com/$MyOrg/_apis/projects?stateFilter=deleted&api-version=7.2-preview.4" -Headers @{Authorization = $headerValue}).value
+   ```
+
+2. Use the following script to restore a project and make sure to update `{yourPAT}`, `{yourOrganization}`, and `{deletedProjectName}`.
+
+    ```
+    $MyPat = '{yourPAT}'
+    $MyOrg = '{yourOrganization}'
+    $projectName = '{deletedProjectName}'
+    $headerValue = "Basic " + [Convert]::ToBase64String([System.Text.Encoding]::UTF8.GetBytes(":" + $MyPat))
+    $project = (irm -Method Get -Uri "https://dev.azure.com/$MyOrg/_apis/projects?stateFilter=deleted&api-version=7.2-preview.4" -Headers @{Authorization = $headerValue}).value | where {$_.name -eq $projectName}
+    irm -Uri ($project.url + "?api-version=7.2-preview.4") -Headers @{Authorization = $headerValue} -Method PATCH -Body '{"state":"wellFormed"}' -ContentType 'application/json'
+    ```
+
+Your project and associated data are restored.
+
+::: moniker-end
+
+::: moniker range="< azure-devops"
 
 1. Execute the following PowerShell script to get a list of deleted projects and make sure to update `$collectionUrl`.
 
@@ -255,7 +310,7 @@ If you inadvertently delete a project in Azure DevOps, you can restore it within
    deleted&api-version=5.0-preview.3" -UseDefaultCredentials).value
    ```
 
-2. Use the following script to restore a project. Be sure to update `$collectionUrl` and `$projectName`.
+2. Use the following script to restore a project and make sure to update `$collectionUrl` and `$projectName`.
 
     ```
     $collectionUrl = "https://localhost/defaultcollection"
@@ -269,6 +324,9 @@ If you inadvertently delete a project in Azure DevOps, you can restore it within
     ```
 
 Your project and associated data are restored.
+
+::: moniker-end
+
 ***
 
 ## FAQs
