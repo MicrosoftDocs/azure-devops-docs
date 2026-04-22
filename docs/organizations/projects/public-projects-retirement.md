@@ -37,41 +37,24 @@ Rather than maintain two separate open-source hosting experiences, Microsoft is 
 
 When a public project becomes private, the following changes take effect immediately:
 
-### Access and visibility
-
-- **Anonymous access is removed.** Users who aren't members of your organization can no longer view code, work items, wikis, pipelines, or artifacts.
-- **Search engine indexing stops.** Your project no longer appears in search engine results, and existing public URLs return a sign-in prompt.
-- **Public links stop working.** Any shared links to code, work items, or build results require authentication.
-
-### Pipelines
-
-- **Free pipeline minutes change.** Public projects receive unlimited Microsoft-hosted pipeline minutes. After conversion to private, your organization's pipeline capacity is limited to 1,800 free minutes per month (or your purchased amount).
-- **Status badges require authentication.** Build status badges embedded in README files or external dashboards stop rendering for anonymous users.
-
-### Packages and artifacts
-
-- **Package feeds require authentication.** Consumers who restore packages from your Azure Artifacts feeds must authenticate. Public upstream access is removed.
-
-### Extensions and integrations
-
-- **Webhook and service hook consumers** that rely on anonymous access might stop receiving events.
-- **External dashboards or monitoring tools** that query your project's APIs without authentication stop working.
+| Area | Change | Details |
+|---|---|---|
+| **Access and visibility** | Anonymous access is removed | Users who aren't members of your organization can no longer view code, work items, wikis, pipelines, or artifacts. |
+| | Search engine indexing stops | Your project no longer appears in search engine results, and existing public URLs return a sign-in prompt. |
+| | Public links stop working | Any shared links to code, work items, or build results require authentication. |
+| **Pipelines** | Free pipeline minutes change | Public projects receive unlimited Microsoft-hosted pipeline minutes. After conversion to private, your organization's pipeline capacity is limited to 1,800 free minutes per month (or your purchased amount). |
+| | Status badges require authentication | Build status badges embedded in README files or external dashboards stop rendering for anonymous users. |
+| **Packages and artifacts** | Package feeds require authentication | Consumers who restore packages from your Azure Artifacts feeds must authenticate. Public upstream access is removed. |
+| **Extensions and integrations** | Webhook and service hook consumers might break | Consumers that rely on anonymous access might stop receiving events. |
+| | External tools stop working | Dashboards or monitoring tools that query your project's APIs without authentication stop working. |
 
 ## What you need to do
 
-Choose the path that fits your project's needs:
-
-### If you need public visibility
-
-Migrate your public-facing content to GitHub, which provides a rich ecosystem for open-source collaboration. For step-by-step guidance, see [Migrate from a public project to GitHub](migrate-public-project.md).
-
-### If you only need private collaboration
-
-No action is required. Your project is automatically converted to private on the conversion date. All existing members, permissions, and data are preserved.
-
-### If you want to convert proactively
-
-You can convert your project to private before the automatic conversion date. For instructions, see [Change project visibility to public or private](make-project-public.md).
+| Scenario | Action | Details |
+|---|---|---|
+| **You need public visibility** | Migrate to GitHub | Move your public-facing content to GitHub for open-source collaboration. For step-by-step guidance, see [Migrate from a public project to GitHub](migrate-public-project.md). |
+| **You only need private collaboration** | No action required | Your project is automatically converted to private on the conversion date. All existing members, permissions, and data are preserved. |
+| **You want to convert proactively** | Convert to private now | Convert your project to private before the automatic conversion date. For instructions, see [Change project visibility to public or private](make-project-public.md). |
 
 ## Frequently asked questions
 
