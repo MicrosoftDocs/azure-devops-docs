@@ -49,7 +49,7 @@ GitHub repositories support open collaboration with pull requests, forks, and st
 1. If prompted, enter your Azure DevOps credentials (a [personal access token](/azure/devops/organizations/accounts/use-personal-access-tokens-to-authenticate) with **Code > Read** scope).
 1. Select **Begin import**.
 
-For more information, see [Importing a repository with GitHub Importer](https://docs.github.com/repositories/creating-and-managing-repositories/importing-a-repository-with-github-importer).
+For more information, see [Importing a repository with GitHub Importer](https://docs.github.com/migrations/importing-source-code/using-github-importer/importing-a-repository-with-github-importer).
 
 ### Import from the command line
 
