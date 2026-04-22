@@ -325,9 +325,21 @@ Below, you will find several investments that we plan to deliver as part of this
          <td><a href="/azure/devops/release-notes/roadmap/2025/ghazdo/default-setup" data-raw-source="[CodeQL default setup (one-click enablement)](/azure/devops/release-notes/roadmap/2025/ghazdo/default-setup)">CodeQL default setup (one-click enablement)</a></td>
          <td>GitHub Advanced Security for Azure DevOps</td>
       </tr>
+       <tr>      
+         <td><a href="/azure/devops/release-notes/roadmap/2025/ghazdo/default-setup" data-raw-source="[CodeQL default setup (one-click enablement)](/azure/devops/release-notes/roadmap/2025/ghazdo/default-setup)">CodeQL default setup (one-click enablement)</a></td>
+        <td>GitHub Advanced Security for Azure DevOps</td>
+      </tr>
       <tr>          
         <td><a href="/azure/devops/release-notes/roadmap/2025/boards/improved-filter-experience-boards-backlogs" data-raw-source="[Improved Filtering Experience in Boards and Backlogs](/azure/devops/release-notes/roadmap/2025/boards/improved-filter-experience-boards-backlogs)">Improved Filtering Experience in Boards and Backlogs</a></td>
         <td>Boards</td>
+      </tr>
+      <tr>
+         <td><a href="/azure/devops/release-notes/roadmap/2025/boards/improved-filter-experience-boards-backlogs" data-raw-source="[Filter by additional fields on sprint backlog and board](/azure/devops/release-notes/roadmap/2025/boards/improved-filter-experience-boards-backlogs)">Filter by additional fields on sprint backlog and board</a></td>
+         <td>Boards</td>
+      </tr>
+      <tr>
+         <td><a href="/azure/devops/release-notes/roadmap/2026/boards/pull-request-status-on-work-item-cards" data-raw-source="[Show pull request annotations on cards](/azure/devops/release-notes/roadmap/2026/boards/pull-request-status-on-work-item-cards)">Show pull request annotations on cards</a></td>
+         <td>Boards</td>
       </tr>       
       <tr>
          <td><a href="/azure/devops/release-notes/roadmap/2024/stage-traceability" data-raw-source="[Stage-level traceability](/azure/devops/release-notes/roadmap/2024/stage-traceability)">Stage-level traceability</a></td>
@@ -357,22 +369,6 @@ Below, you will find several investments that we plan to deliver as part of this
          <td><a href="/azure/devops/release-notes/roadmap/2026/testplans/support-for-rerunning" data-raw-source="[Support for re-running of data driven tests ](/azure/devops/release-notes/roadmap/2026/testplans/support-for-rerunning)">Support for re-running of data driven tests </a></td>
          <td>Test Plans</td>
       </tr>
-      <tr>      
-         <td><a href="/azure/devops/release-notes/roadmap/2025/ghazdo/default-setup" data-raw-source="[CodeQL default setup (one-click enablement)](/azure/devops/release-notes/roadmap/2025/ghazdo/default-setup)">CodeQL default setup (one-click enablement)</a></td>
-        <td>GitHub Advanced Security for Azure DevOps</td>
-      </tr>
-      <tr>
-         <td><a href="/azure/devops/release-notes/roadmap/2025/boards/improved-filter-experience-boards-backlogs" data-raw-source="[Filter by additional fields on sprint backlog and board](/azure/devops/release-notes/roadmap/2025/boards/improved-filter-experience-boards-backlogs)">Filter by additional fields on sprint backlog and board</a></td>
-         <td>Boards</td>
-      </tr>
-      <tr>
-         <td><a href="/azure/devops/release-notes/roadmap/2026/boards/pull-request-status-on-work-item-cards" data-raw-source="[Show pull request annotations on cards](/azure/devops/release-notes/roadmap/2026/boards/pull-request-status-on-work-item-cards)">Show pull request annotations on cards</a></td>
-         <td>Boards</td>
-      </tr>
-      <tr>
-         <td><a href="/azure/devops/release-notes/roadmap/2026/wiki-monaco-editor" data-raw-source="[Replace existing Wiki editor with Monaco Editor](/azure/devops/release-notes/roadmap/2026/wiki-monaco-editor)">Replace existing Wiki editor with Monaco Editor</a></td>
-         <td>Wiki</td>
-      </tr>
       <tr>
          <td><a href="/azure/devops/release-notes/roadmap/2026/testplans/TFE-Improved-Reliability" data-raw-source="[Improve Reliability of Test & Feedback Extension for Edge and Chrome](/azure/devops/release-notes/roadmap/2026/testplans/TFE-Improved-Reliability)">Improve Reliability of Test & Feedback Extension for Edge and Chrome</a></td>
          <td>Test Plans</td>
@@ -380,6 +376,10 @@ Below, you will find several investments that we plan to deliver as part of this
       <tr>
          <td><a href="/azure/devops/release-notes/roadmap/2026/testplans/Actual-Test-Result" data-raw-source="[Support Capturing of Actual Test Result](/azure/devops/release-notes/roadmap/2026/testplans/Actual-Test-Result)">Support Capturing of Actual Test Result</a></td>
          <td>Test Plans</td>
+      </tr>
+      <tr>
+         <td><a href="/azure/devops/release-notes/roadmap/2026/wiki-monaco-editor" data-raw-source="[Replace existing Wiki editor with Monaco Editor](/azure/devops/release-notes/roadmap/2026/wiki-monaco-editor)">Replace existing Wiki editor with Monaco Editor</a></td>
+         <td>Wiki</td>
       </tr>
       <tr>
          <td><a href="/azure/devops/release-notes/roadmap/2026/wiki-monaco-editor" data-raw-source="[Replace existing Wiki editor with Monaco Editor](/azure/devops/release-notes/roadmap/2026/wiki-monaco-editor)">Replace existing Wiki editor with Monaco Editor</a></td>
