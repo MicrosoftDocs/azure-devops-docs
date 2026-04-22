@@ -9,9 +9,9 @@ metadata:
     - sfi-image-nochange
   ms.author: pliaros
   author: chcomley
-  ms.topic: FAQ
+  ms.topic: faq
   monikerRange: '<= azure-devops'
-  ms.date: 03/17/2026
+  ms.date: 04/20/2026
   ms.update-cycle: 1095-days
 
 title: Test Plans FAQs

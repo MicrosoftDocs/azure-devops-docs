@@ -3,7 +3,7 @@ title: Check out multiple repositories in your pipeline
 description: Learn how to check out multiple repositories in your pipeline
 ms.topic: reference
 ms.custom: doc-kit-assisted
-ms.date: 03/04/2026
+ms.date: 04/22/2026
 monikerRange: "<=azure-devops"
 ---
 
@@ -126,11 +126,11 @@ You must use a [repository resource](/azure/devops/pipelines/yaml-schema/resourc
 | Bitbucket Cloud | [Bitbucket Cloud](../library/service-endpoints.md#bitbucket-cloud-service-connection) | 
 | GitHub          | [GitHub](../library/service-endpoints.md#github-service-connection) |
 | GitHub Enterprise Server | [GitHub Enterprise Server](../library/service-endpoints.md#github-enterprise-server-service-connection) |
-| Azure Repos Git repositories in a different organization than your pipeline | [Azure Repos/Team Foundation Server](../library/service-endpoints.md#azure-repos) |
+| Azure Repos Git repositories in a different organization | [Azure DevOps](../library/add-devops-entra-service-connection.md) (recommended) or [Azure Repos/Team Foundation Server](../library/service-endpoints.md#azure-repos) |
 
 You may use a repository resource even if your repository type doesn't require a service connection, for example if you have a repository resource defined already for templates in a different repository.
 
-In the following example, three repositories are declared as repository resources. The [Azure Repos Git repository in another organization](../library/service-endpoints.md#azure-repos), [GitHub](../library/service-endpoints.md#github-service-connection), and [Bitbucket Cloud](../library/service-endpoints.md#bitbucket-cloud-service-connection) repository resources require [service connections](../library/service-endpoints.md), which are specified as the `endpoint` for those repository resources. This example has four `checkout` steps, which checks out the three repositories declared as repository resources along with the current `self` repository that contains the pipeline YAML.
+In the following example, three repositories are declared as repository resources. The [Azure Repos Git repository in another organization](../library/service-endpoints.md#azure-repos), [GitHub](../library/service-endpoints.md#github-service-connection), and [Bitbucket Cloud](../library/service-endpoints.md#bitbucket-cloud-service-connection) repository resources require [service connections](../library/service-endpoints.md), which are specified as the `endpoint` for those repository resources. For cross-organization Azure Repos Git access, use an [Azure DevOps service connection](../library/add-devops-entra-service-connection.md) for PAT-free authentication. This example has four `checkout` steps, which checks out the three repositories declared as repository resources along with the current `self` repository that contains the pipeline YAML.
 
 ```yaml
 resources:

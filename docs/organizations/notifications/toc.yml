@@ -47,15 +47,9 @@
   - name: FAQs
     displayName: recipients, multiple, activity, organization
     href: faq-notifications.yml
-  - name: Why am I not getting an email
-    displayName: event, subscription, filter, initiator, team, group, permission
+  - name: Troubleshoot notification emails
+    displayName: event, subscription, filter, initiator, team, group, permission, delayed, unexpected, statistics, volume
     href: troubleshoot-not-getting-email.md
-  - name: Why am I getting this email
-    displayName: group, trigger, subscription, footer
-    href: troubleshoot-unexpected-email.md
-  - name: Why are my emails delayed
-    displayName: expected, notification, statistics, issue, filter, duplicate, subscription, volume
-    href: troubleshoot-delayed-email.md
   - name: Get support
     displayName: developer, community, version, platform, event, ID
     href: ../../user-guide/provide-feedback.md

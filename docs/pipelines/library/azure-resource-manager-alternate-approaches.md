@@ -4,7 +4,7 @@ description: Connect Azure Pipelines to Azure using an Azure Resource Manager se
 ms.topic: concept-article
 ms.author: jukullam
 author: juliakm
-ms.date: 01/16/2026
+ms.date: 04/22/2026
 ai-usage: ai-assisted 
 monikerRange: '<= azure-devops'
 ms.custom: sfi-image-nochange
@@ -190,5 +190,7 @@ For information about connecting to Azure Stack, see these articles:
 
 For more information, see [Troubleshoot Azure Resource Manager service connections](../release/azure-rm-endpoint.md).
 
+> [!NOTE]
+> To access Azure DevOps resources (repos, REST APIs) from pipelines without PATs, see [Access Azure DevOps with Microsoft Entra workload identity](add-devops-entra-service-connection.md).
 
 [!INCLUDE [rm-help-support-shared](../includes/rm-help-support-shared.md)]

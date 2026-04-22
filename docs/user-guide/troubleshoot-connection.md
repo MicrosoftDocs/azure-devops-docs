@@ -8,7 +8,7 @@ ms.custom: copilot-scenario-highlight, pat-reduction
 ms.author: chcomley
 author: chcomley
 ms.topic: troubleshooting
-ms.date: 12/03/2025
+ms.date: 04/20/2026
 monikerRange: '<= azure-devops'
 ---
 
@@ -39,7 +39,7 @@ Azure DevOps supports Microsoft Entra accounts and Microsoft personal accounts f
 
 ### 401 - Not Authorized errors
 
-[ ![Screenshot shows Azure DevOps connection 401 error.](media/troubleshoot-connection/401_notauthorized.png)](media/troubleshoot-connection/401_notauthorized.png#lightbox)
+:::image type="content" source="media/troubleshoot-connection/401_notauthorized.png" alt-text="Screenshot shows Azure DevOps connection 401 error." lightbox="media/troubleshoot-connection/401_notauthorized.png":::
 
 The **401 Not Authorized** error is the most common sign-in issue. This error occurs when your identity lacks permissions to access the organization or specific resources. Common causes include:
 
