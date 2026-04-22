@@ -22,6 +22,7 @@ If a project becomes obsolete, you can [delete it](#delete-project) from your or
 > [!CAUTION]
 > - Soft-deleted projects from the web portal are permanently removed if not restored within 28 days.
 > - In rare cases, our deletion process might take up to 70 days due to backend retries and the need to delete data from multiple sources.
+>     - To determine if a soft-deleted project has been hard-deleted, check to see if it appears in the `Recently deleted projects` list on the Overview page under **Organization Settings**. If the project does not appear, it has been hard-deleted and cannot be restored.
 > - Hard-deleted projects from the on-premises Azure DevOps Administration Console can't be restored.
 > For more information, see [Restore a project](#restore-a-deleted-project) and [Save project data](#save-project-data).
 
