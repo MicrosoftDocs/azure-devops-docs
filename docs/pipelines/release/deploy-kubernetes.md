@@ -268,7 +268,7 @@ Use this section to verify that your build completed, your deployment succeeded,
     http://<external-ip>/api/Leaderboard?pageSize=10
     ```
 
-    :::image type="content" source="media/leaderboard-query-result.png" alt-text="Screenshot of browser output showing JSON leaderboard results returned by the API service on AKS." lightbox="media/leaderboard-query-result.png":::
+    :::image type="content" source="media/query-result.png" alt-text="Screenshot of browser output showing JSON leaderboard results returned by the API service on AKS." lightbox="media/query-result.png":::
 
 1. Confirm validation results:
 
