@@ -7,25 +7,29 @@ ms.topic: tutorial
 ms.date: 04/17/2026
 ---
 
+# Build and deploy a multi-container app to Azure Kubernetes Service
+
 Use Azure Pipelines to continuously build and deploy a multi-container app to Azure Kubernetes Service (AKS). In this tutorial, you deploy the Tailspin Space Game web app and leaderboard API as separate containers, push both images to Azure Container Registry (ACR), and deploy them to AKS by using Kubernetes manifests.
 
 ## Prerequisites
 
 | **Product** | **Requirements**   |
 |---|---|
-| **Azure DevOps** | - An Azure DevOps organization and project. [Create one for free](../../get-started/pipelines-sign-up.md). <br>   - **Permissions:**<br>      &nbsp;&nbsp;&nbsp;&nbsp;- To grant access to all pipelines in the project: You must be a member of the [Project Administrators group](../../../organizations/security/change-project-level-permissions.md).<br>      &nbsp;&nbsp;&nbsp;&nbsp;- To create service connections: You must have the *Administrator* or *Creator* role for [service connections](../../library/add-resource-protection.md).<br>   - An ability to run pipelines on Microsoft-hosted agents. You can either purchase a [parallel job](../../licensing/concurrent-jobs.md) or you can request a free tier.  |
+| **Azure DevOps** | - An Azure DevOps organization and project. [Create one for free](../get-started/pipelines-sign-up.md). <br>   - **Permissions:**<br>      &nbsp;&nbsp;&nbsp;&nbsp;- To grant access to all pipelines in the project: You must be a member of the [Project Administrators group](../../organizations/security/change-project-level-permissions.md).<br>      &nbsp;&nbsp;&nbsp;&nbsp;- To create service connections: You must have the *Administrator* or *Creator* role for [service connections](../library/add-resource-protection.md).<br>   - An ability to run pipelines on Microsoft-hosted agents. You can either purchase a [parallel job](../licensing/concurrent-jobs.md) or you can request a free tier.  |
 | **GitHub** | - A [GitHub](https://github.com) account.|
 | **Azure** | - An [Azure subscription](https://azure.microsoft.com/pricing/purchase-options/azure-account?cid=msft_learn).|
 
 ## Get the code
 
-1. Go to [MicrosoftDocs/mslearn-tailspin-spacegame-web-kubernetes](https://github.com/MicrosoftDocs/mslearn-tailspin-spacegame-web-kubernetes).
-1. Select **Fork**.
-1. Choose your GitHub account as the owner and create the fork.
+Fork the following repository into your GitHub account:
+
+```
+https://github.com/MicrosoftDocs/mslearn-tailspin-spacegame-web-kubernetes
+```
 
 ## Create the Azure resources
 
-Use Azure Cloud Shell (Bash) to create your Azure Kubernetes Service (AKS) cluster and Azure Container Registry (ACR).
+Use Azure Cloud Shell to create your Azure Kubernetes Service cluster and Azure Container Registry.
 
 1. Sign in to [Azure portal](https://portal.azure.com?azure-portal=true), then open **Cloud Shell** and select **Bash**.
 
@@ -264,7 +268,7 @@ Use this section to verify that your build completed, your deployment succeeded,
     http://<external-ip>/api/Leaderboard?pageSize=10
     ```
 
-    :::image type="content" source="media/leaderboard-api.png" alt-text="Screenshot of browser output showing JSON leaderboard results returned by the API service on AKS." lightbox="media/4-leaderboard-api.png":::
+    :::image type="content" source="media/leaderboard.png" alt-text="Screenshot of browser output showing JSON leaderboard results returned by the API service on AKS." lightbox="media/4-leaderboard-api.png":::
 
 1. Confirm validation results:
 
