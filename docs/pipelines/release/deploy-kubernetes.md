@@ -260,7 +260,7 @@ Use this section to verify that your build completed, your deployment succeeded,
 
 1. Open the external IP for the `web` service in your browser.
 
-    :::image type="content" source="media/space-game.png" alt-text="Screenshot of the Tailspin Space Game web app running from an AKS service endpoint." lightbox="media/4-space-game.png":::
+    :::image type="content" source="media/space-game.png" alt-text="Screenshot of the Tailspin Space Game web app running from an AKS service endpoint." lightbox="media/space-game.png":::
 
 1. Copy the external IP for the `leaderboard` service, then open the following endpoint in your browser:
 
@@ -268,7 +268,7 @@ Use this section to verify that your build completed, your deployment succeeded,
     http://<external-ip>/api/Leaderboard?pageSize=10
     ```
 
-    :::image type="content" source="media/leaderboard.png" alt-text="Screenshot of browser output showing JSON leaderboard results returned by the API service on AKS." lightbox="media/4-leaderboard-api.png":::
+    :::image type="content" source="media/leaderboard-query-result.png" alt-text="Screenshot of browser output showing JSON leaderboard results returned by the API service on AKS." lightbox="media/leaderboard-query-result.png":::
 
 1. Confirm validation results:
 
