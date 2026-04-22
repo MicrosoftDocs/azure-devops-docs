@@ -30,7 +30,7 @@ Rather than maintain two separate open-source hosting experiences, Microsoft is 
 | Existing public projects converted | 2027* | All remaining public projects are automatically converted to private |
 
 > [!IMPORTANT]
-> Exact dates for blocking new public projects and converting existing ones will be shared via in-product banners within public projects.
+> *Exact dates for blocking new public projects and converting existing ones will be shared via in-product banners within public projects.
 
 ## What changes when your project converts to private
 
