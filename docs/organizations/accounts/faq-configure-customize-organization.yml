@@ -4,12 +4,11 @@ metadata:
   titleSuffix: Azure DevOps
   description: Learn the answers to frequently asked questions (FAQs) about creating, deleting, restoring, and configuring your organization in Azure DevOps.
   ms.subservice: azure-devops-organizations
-  ms.assetid: e0fe24d4-f76b-43af-b0fd-125a7fb39042
   ms.custom: support-driven-update
   ms.topic: faq
   ms.author: chcomley
   author: chcomley
-  ms.date: 02/23/2026
+  ms.date: 04/20/2026
   monikerRange: '<= azure-devops'
 title: Organization FAQs
 summary: |
@@ -90,7 +89,7 @@ sections:
           Azure DevOps limits the number of organizations you can create to help protect the service and ensure a reliable experience for all customers.
           The number you can create varies based on your Azure subscription and usage history.
 
-          If you've reached your limit, this is expected behavior.
+          If you reach your limit, this behavior is expected.
           The limit resets automatically over time, and support can't manually increase it.
           If you need to create more organizations sooner, you can use a different Azure subscription.
           This behavior applies to Microsoft Entra ID accounts (work or school accounts).
@@ -148,7 +147,7 @@ sections:
           * The directory administrator has control over who can join the directory.
           * You sign in with work or school accounts, or with Microsoft accounts if your company allows that.
           
-          To [add users to the directory](/azure/active-directory/active-directory-create-users), be a directory administrator. If you can't access, work with your directory administrator to add users. Learn more about [work or school accounts for your organization](/azure/active-directory/sign-up-organization).
+          To [add users to the directory](/entra/fundamentals/how-to-create-delete-users), be a directory administrator. If you can't access, work with your directory administrator to add users. Learn more about [work or school accounts for your organization](/entra/fundamentals/create-new-tenant).
           
           <a name="ChooseOrgAcctMSAcct"></a>
           
@@ -180,7 +179,7 @@ sections:
       - question: |
           Where can I find the Azure DevOps Service Level Agreement (SLA)?
         answer: |
-          You can find it here: [Azure DevOps SLA](https://azure.microsoft.com/support/legal/sla/visual-studio-team-services/v1_2/).
+          You can find it here: [Azure DevOps SLA](https://www.microsoft.com/licensing/docs/view/Service-Level-Agreements-SLA-for-Online-Services).
           
       - question: |
           I'm having problems with my Visual Studio subscription. How can I get help?
@@ -241,7 +240,7 @@ sections:
       - question: |
           When I change ownership from myself (as PCA) to a different user, my own account gets removed from the PCA group. Is this behavior a bug?
         answer: |
-          No, this behavior isn't a bug and is currently by design, although we hope to address this behavior soon.
+          No, this behavior isn't a bug and is currently by design.
           
       - question: |
           What makes the organization owner different from other organization users?
@@ -255,7 +254,7 @@ sections:
           - [Change the organization owner](./change-organization-ownership.md)
           - [Recover a deleted organization](./recover-your-organization.md)
           
-          Project collection administrators (PCAs) can perform all actions done by organization owners, except for recovering a deleted organization, which is a current limitation we're working to resolve.
+          Project collection administrators (PCAs) can perform all actions done by organization owners, except for recovering a deleted organization.
           
       - question: |
           Why don't I see the organizations that I own after I sign in to my Visual Studio profile on visualstudio.com?
@@ -277,7 +276,7 @@ sections:
              You see the message "Sign out in progress." After you sign out, you're redirected to the Visual Studio page @visualstudio.microsoft.com. 
           
              > [!Tip]
-             > If the sign-out page takes more than a minute to sign you out, close the browser and continue.
+             > If the sign out page takes more than a minute to sign you out, close the browser and continue.
           
           4. Sign in to Azure DevOps again. Select your other identity.
                     

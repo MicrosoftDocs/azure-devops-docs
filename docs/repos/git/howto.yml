@@ -3,10 +3,9 @@ metadata:
   title: Git frequently asked questions
   titleSuffix: Azure Repos
   description: Find answers to frequently asked questions about Git in Azure Repos, including branch management, commit practices, proxy and SSL configuration, and authentication troubleshooting.
-  ms.assetid: b1262306-214c-4422-8eda-d03d05825241
   ms.service: azure-devops-repos
   ms.topic: faq
-  ms.date: 02/23/2026
+  ms.date: 04/21/2026
   ai-usage: ai-assisted
   monikerRange: '<= azure-devops'  
   ms.subservice: azure-devops-repos-git
@@ -21,7 +20,7 @@ sections:
       - question: |
           How can I easily download a remote branch to my local repository?
         answer: |
-          First, make sure you have an `origin` repository configured. If you cloned your repo with [`git clone`](clone.md), you already have one. When you check out a branch that doesn't exist locally, Git determines whether a remote branch with the same name exists. If so, Git creates a local branch that references the remote branch. Use `git pull` to download the commits and update the branch history locally.
+          First, verify that you have an `origin` repository configured. If you cloned your repo with [`git clone`](clone.md), you already have one. When you check out a branch that doesn't exist locally, Git determines whether a remote branch with the same name exists. If so, Git creates a local branch that references the remote branch. Use `git pull` to download the commits and update the branch history locally.
                 
       - question: |
           How can I find out which branch I'm working in?
@@ -36,13 +35,13 @@ sections:
       - question: |
           If every branch retains its full commit history, doesn't that make the commit history of *main* hard to follow over time?
         answer: |
-          In large projects with many commits and contributors, the `main` branch history can reflect topic branch development more than overall project progress. You can condense commits on branches through [squashing commits and rebasing](rebase.md). Squashing commits simplifies the branch history, which makes the commit history on the main branch cleaner after merging.
+          In large projects with many commits and contributors, the `main` branch history can reflect topic branch development more than overall project progress. You can condense commits on branches through [squashing commits and rebasing](rebase.md). Squashing commits simplifies the branch history and produces a cleaner main branch after you merge.
       - question: |
           How can I find out who made a specific change to a file?
         answer: |
-          Use the `git blame` command to find out who made a particular change to a file. From your local repository, run `git blame` with the `-L` parameter to specify the lines of interest. `Blame` produces formatted output that shows the commit that last updated the line and the name of the person who made the commit. 
+          Use the `git blame` command to find out who made a particular change to a file. From your local repository, run `git blame` with the `-L` parameter to specify the lines of interest. `Blame` produces formatted output showing the commit that last updated each line and the author of that change.
           
-          > [!div class="tabbedCodeSnippets"]
+          > [!Div class="tabbedCodeSnippets"]
           ```Git CLI
           > git blame Example_repo -L 20,+40  # show the blame output for the next 40 lines starting at line 20
 
@@ -51,21 +50,21 @@ sections:
           215d1108 (Example User 2015-11-21 09:54:23 -0800 22) line 22 of the code
           ```
           
-          `Blame` searches the commit history for you. You can also review a file's history in the web portal to determine
-          who made a change and when. Open **Code Explorer** for your repository and branch, then select the file of interest. Azure Repos shows a complete
+          `Blame` searches the commit history. You can also review a file's history in the web portal to determine
+          who made a change and when. Open **Code Explorer** for your repository and branch, then select the file you want to examine. Azure Repos shows a complete
           commit history for that file on the current branch.
           
       - question: |
           I made changes to some files and now I can't check out to a different branch or rebase my work.
         answer: |
-          Checking out a different branch in Git affects the state of files on your file system. Git uses the commit history to ensure you work with files that represent the state of your branch. If you try to change branches while you have uncommitted changes, those changes get overwritten during checkout. To prevent accidental loss of changes, Git blocks the checkout. You have these options:
+          Checking out a different branch in Git affects the state of files on your file system. Git uses the commit history to make sure your working directory matches the selected branch. If you try to change branches while you have uncommitted changes, those changes get overwritten during checkout. To prevent accidental data loss, Git blocks the checkout. You have the following options:
           
-          - Abandon the changes and return to the most recent commit. See [undoing changes in Git](undo.md) for instructions on how to roll back to the most recent commit.  
+          - Abandon the changes and return to the most recent commit. See [undoing changes in Git](undo.md) for instructions on rolling back to the most recent commit.  
           - Commit the changes. See [saving your work in Git with commits](commits.md). 
-          - [Stashing](howto.yml#i-did-some-work-but-need-to-switch-to-something-else--how-can-i-save-my-work-for-later-without-committing-the-changes-) your current work, saving the changes for later and cleaning up the workspace to the last commit.    
+          - [Stash](howto.yml#i-did-some-work-but-need-to-switch-to-something-else--how-can-i-save-my-work-for-later-without-committing-the-changes-) your current work to save the changes for later and reset the workspace to the last commit.
 
       - question: |
-          Pull request is unable to merge with this message: 'Unable to merge automatically: One of internal git objects (blob, tree, commit or tag) is too large which caused TF401022 exception. You can try to use LFS, split your merge or big commit into several small.'
+          Pull request is unable to merge with this message: 'Unable to merge automatically: One of internal git objects (blob, tree, commit, or tag) is too large, which caused TF401022 exception. You can try to use LFS, split your merge or large commit into several small.'
         answer: |
           This issue occurs because of merge conflicts in large binary files. The current file size limit is 100 MB. To work around this issue, merge the target into the source locally, resolve conflicts, and push the changes.
 
@@ -82,59 +81,55 @@ sections:
           HEAD is now at be26067
           ```
       
-          When you run `git stash apply`, the most recently stashed changes apply to your current branch. If there's a conflict, `stash` restores the changes for files that don't conflict and creates conflict markers in files that do conflict. Merge the changes manually in this case.
+          When you run `git stash apply`, the most recently stashed changes apply to your current branch. If any files conflict, `stash` restores the nonconflicting files and creates conflict markers in the remaining files. Resolve any conflicts manually.
       
-          After you finish with the stash, delete it with `git stash drop`. This command removes the last set of stashed changes.
+          When you no longer need the stash, delete it with `git stash drop`. This command removes the most recent stash.
       
-          You can have multiple stashes, but managing them requires more manual work because you must explicitly apply and drop each stash. For more information, see the [Git Stash documentation](https://git-scm.com/book/en/v2/Git-Tools-Stashing-and-Cleaning).
+          You can have multiple stashes, but you must explicitly apply and drop each one. For more information, see the [Git Stash documentation](https://git-scm.com/book/en/v2/Git-Tools-Stashing-and-Cleaning).
           
       - question: |
           How can I change the default editor for Git command-line tools?
         answer: |
-          By default, command-line Git uses a command-line editor when it requests commit messages, performs rebases, and carries out other work that requires additional information.
+          By default, Git uses a command-line editor when it prompts for commit messages, performs rebases, and handles other tasks that require input.
           Configure the default editor with `git config`:
           
-          > [!div class="tabbedCodeSnippets"]
+          > [!Div class="tabbedCodeSnippets"]
           ```Git CLI
           > git config core.editor _path_to_editor_ _options_to_editor_
           ```
           
           Git for Windows makes it easy to set Notepad as the editor:
           
-          > [!div class="tabbedCodeSnippets"]
+          > [!Div class="tabbedCodeSnippets"]
           ```Git CLI
           > git config core.editor notepad
           ```
           
-          This command configures Windows Notepad to edit Git information as needed and pass the text correctly between Git and Notepad. You can also specify 
+          This command configures Windows Notepad to handle Git text editing. You can also specify a preferred column width for commit messages:
           
-          > [!div class="tabbedCodeSnippets"]
+          > [!Div class="tabbedCodeSnippets"]
           ```Git CLI
           > git config format.commitMessageColumns 72 
           ```
           
-          This setting keeps the text columns in commit messages at the preferred 72-character width and wraps lines at that limit.
+          This setting wraps commit message text at the preferred 72-character column width.
           
       - question: |
           How can I change the username and email displayed in my commits?
         answer: |
-          Git includes a username and email address in each commit, and Azure Repos uses this information when displaying commits and working with pull requests.
-          To update the name and email information on the command line, use the `git config` command:
+          Git includes a username and email address in each commit, and Azure Repos uses this information when it displays commits and pull requests.
+          To update the name and email on the command line, use the `git config` command:
           
-          > [!div class="tabbedCodeSnippets"]
+          > [!Div class="tabbedCodeSnippets"]
           ```Git CLI
           > git config --global user.email "example-user@example-site.com"
           > git config --global user.name "Example User"
           ```
           
           The `--global` option sets the email and name included in commits for all Git repositories on this system. To change the settings for a single
-          repository, go to the directory where the Git repository is located and run the preceding commands without the `--global` flag.
+          repository, navigate to the repository directory and run the preceding commands without the `--global` flag.
           
           You can also change the name and email settings from Visual Studio. From the **Git** menu, select **Settings**. In the **Options** dialog, select **Git Global Settings** or **Git Repository Settings** > **General**.
-
-          Visual Studio 2019 version 16.8 and later versions provide a Git version control experience while maintaining the **Team Explorer** Git user interface. To use **Team Explorer**, clear **Tools** > **Options** > **Preview Features** > **New Git user experience** from the menu bar. You can use Git features from either interface.
-          
-          In Team Explorer, choose **Settings** and under **Git**, select the **Global Settings** or **Repository Settings** link.  
 
       - question: |
           How can I troubleshoot Git clone or push failures?
@@ -148,7 +143,7 @@ sections:
           set GIT_CURL_VERBOSE=1
           ```
 
-          The trace output helps identify whether the failure is related to network connectivity, proxy configuration, SSL certificates, or authentication.
+          The trace output helps determine whether the failure relates to network connectivity, proxy configuration, SSL certificates, or authentication.
           For more information about Git environment variables, see [Git Internals - Environment Variables](https://git-scm.com/book/en/v2/Git-Internals-Environment-Variables).
 
       - question: |
@@ -159,14 +154,14 @@ sections:
           Run `git config --list` to check whether a proxy is already configured.
           If not, set the proxy globally:
 
-          > [!div class="tabbedCodeSnippets"]
+          > [!Div class="tabbedCodeSnippets"]
           ```Git CLI
           > git config --global http.proxy http://proxyUsername:proxyPassword@proxy.server.com:port
           ```
 
           To configure a proxy for a specific URL only:
 
-          > [!div class="tabbedCodeSnippets"]
+          > [!Div class="tabbedCodeSnippets"]
           ```Git CLI
           > git config --global http.https://dev.azure.com.proxy http://proxyUsername:proxyPassword@proxy.server.com:port
           ```
@@ -179,7 +174,7 @@ sections:
           If your password changed or cached credentials are stale, Git clone or push operations fail with authentication errors.
           Reset the Git Credential Manager (GCM) to resolve the issue:
 
-          > [!div class="tabbedCodeSnippets"]
+          > [!Div class="tabbedCodeSnippets"]
           ```Git CLI
           > git config --global --unset credential.helper
           > git config --global credential.helper manager
@@ -193,7 +188,7 @@ sections:
 
           Alternatively, use the command line:
 
-          > [!div class="tabbedCodeSnippets"]
+          > [!Div class="tabbedCodeSnippets"]
           ```Git CLI
           > cmdkey /list | findstr "git"
           > cmdkey /delete:git:https://dev.azure.com/<orgname>
@@ -217,9 +212,9 @@ sections:
           **Option 1: Use Windows SChannel (recommended on Windows)**
 
           Configure Git to use the Windows certificate store instead of its bundled OpenSSL CA bundle.
-          If your server's certificate or CA is trusted by Windows, no further steps are needed:
+          If Windows trusts your server's certificate or CA, no further steps are needed:
 
-          > [!div class="tabbedCodeSnippets"]
+          > [!Div class="tabbedCodeSnippets"]
           ```Git CLI
           > git config --global http.sslBackend schannel
           ```
@@ -230,7 +225,7 @@ sections:
 
           Export your root or intermediate CA certificate as a Base-64 encoded `.crt` file, then tell Git where to find it:
 
-          > [!div class="tabbedCodeSnippets"]
+          > [!Div class="tabbedCodeSnippets"]
           ```Git CLI
           > git config --global http.sslCAInfo C:/Users/<yourname>/my-ca-cert.crt
           ```
@@ -241,3 +236,12 @@ sections:
           > Avoid setting `http.sslVerify` to `false` except for temporary testing. Disabling SSL verification removes protection against man-in-the-middle attacks.
 
           For pipeline agent scenarios with self-signed certificates, see [Run a self-hosted agent behind a proxy or with self-signed certificates](../../pipelines/agents/certificate.md).
+
+additionalContent: |
+
+  ## Related content
+  
+  - [Azure Repos Git documentation](index.yml)
+  - [Clone an existing Git repo](clone.md)
+  - [Save your work with commits](commits.md)
+  - [Use Git branches](./create-branch.md)

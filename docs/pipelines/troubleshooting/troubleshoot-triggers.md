@@ -1,7 +1,6 @@
 ---
 title: Troubleshoot pipeline triggers
-description: Learn how to troubleshoot pipeline triggers in Azure Pipelines and Team Foundation Server.
-ms.assetid: BFCB144F-9E9B-4FCB-9CD1-260D6873BC2E
+description: Learn how to troubleshoot pipeline triggers in Azure Pipelines.
 ms.author: sdanie
 ms.reviewer: steved0x
 ms.topic: troubleshooting
@@ -107,10 +106,9 @@ Remove all scheduled triggers.
 
 Once all UI scheduled triggers are removed, a push must be made in order for the YAML scheduled triggers to start running. For more information, see [Scheduled triggers](../process/scheduled-triggers.md).
 
-## I need more help. I found a bug. I've got a suggestion. Where do I go?
+## Related content
 
-[Get subscription, billing, and technical support](https://azure.microsoft.com/support/devops/)
-
-Report any problems or submit feedback at [Developer Community](https://developercommunity.visualstudio.com/).
-
-We welcome your suggestions:
+- [Troubleshoot pipeline runs](troubleshooting.md)
+- [Troubleshoot pipeline failure to start](troubleshoot-start.md)
+- [Review logs to diagnose pipeline issues](review-logs.md)
+- [Scheduled triggers](../process/scheduled-triggers.md)
