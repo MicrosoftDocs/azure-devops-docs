@@ -16,4 +16,4 @@ Display the status of active pull requests directly on kanban board cards.
 
 ### Examples
 > [!div class="mx-imgBorder"]
-> ![image of pull request annotations on kanban card](.\media\boards-prs-on-card.png)
+> ![image of pull request annotations on kanban card](.\media\boards-prs-on-cards.png)
