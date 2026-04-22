@@ -1,7 +1,6 @@
 ---
 title: Troubleshoot pipeline runs
 description: Learn how to troubleshoot pipeline runs in Azure Pipelines using logs, error analysis tools, and common techniques to resolve issues.
-ms.assetid: BFCB144F-9E9B-4FCB-9CD1-260D6873BC2E
 ms.author: sdanie
 ms.reviewer: steved0x
 ms.topic: troubleshooting
@@ -443,6 +442,6 @@ For information on capturing additional resource utilization logs, see [Capture 
 
 In this scenario, you can use the [Azure File Copy task](/azure/devops/pipelines/tasks/reference/azure-file-copy-v4) to upload content to the website. You can use any of the tools described in [Uploading content](/azure/storage/blobs/storage-blob-static-website#uploading-content) to upload content to the web container.
 
-## Next steps
+## Next step
 
 * [Review logs](./review-logs.md) to uncover additional diagnostic tools.  

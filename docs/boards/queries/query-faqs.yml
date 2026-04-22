@@ -1,7 +1,7 @@
 ### YamlMime:FAQ
 metadata:
-  title: Frequently Asked Questions (FAQs) about Queries in Azure Boards and Azure DevOps
-  description: Get answers to common questions about working with work item queries in Azure DevOps. 
+  title: Azure Boards query FAQs
+  description: Get answers to common questions about working with work item queries in Azure DevOps.
   titleSuffix: Azure Boards
   ms.custom: boards-queries
   ms.service: azure-devops-boards
@@ -11,7 +11,7 @@ metadata:
   monikerRange: '<= azure-devops'
   ms.date: 04/20/2026
 
-title: FAQs about queries in Azure Boards and Azure DevOps
+title: Azure Boards query FAQs
 
 summary: | 
   [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]  

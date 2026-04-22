@@ -2,6 +2,7 @@
 title: Troubleshoot Managed DevOps Pools issues
 description: Learn how to troubleshoot common issues with Managed DevOps Pools.
 ms.topic: troubleshooting
+monikerRange: 'azure-devops'
 ms.date: 04/20/2026
 ---
 

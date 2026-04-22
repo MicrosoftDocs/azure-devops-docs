@@ -1,6 +1,6 @@
 ### YamlMime:FAQ
 metadata:
-  title: Work in Excel connected to Azure Boards FAQs
+  title: Excel and Azure Boards FAQs
   description: Learn answers to frequently asked questions about Excel and Azure Boards.
   titleSuffix: Azure Boards
   ms.service: azure-devops-boards
@@ -10,7 +10,7 @@ metadata:
   monikerRange: '<= azure-devops'
   ms.date: 04/20/2026
 
-title: FAQs about working in Excel connected to Azure Boards  
+title: Excel and Azure Boards FAQs
 
  
 summary: | 

@@ -8,7 +8,7 @@ author: chcomley
 ms.topic: troubleshooting
 ai-usage: ai-assisted
 ms.custom: copilot-scenario-highlight
-monikerRange: "<=azure-devops"
+monikerRange: '<= azure-devops'
 ms.date: 04/07/2026
 ---
 

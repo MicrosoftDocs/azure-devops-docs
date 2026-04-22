@@ -1,7 +1,7 @@
 ### YamlMime:FAQ
 metadata:
   title: Set up Visual Studio with Azure DevOps FAQs
-  titleSuffix: Azure DevOps Services
+  titleSuffix: Azure DevOps
   description: Having problems installing Visual Studio, signing in, or handling an expired subscription? Learn answers to these frequently asked questions (FAQs).
   ms.subservice: azure-devops-organizations
   ms.topic: faq
