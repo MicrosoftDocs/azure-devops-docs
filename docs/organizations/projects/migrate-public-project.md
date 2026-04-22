@@ -7,7 +7,7 @@ ms.author: chcomley
 author: chcomley
 ms.topic: how-to
 monikerRange: 'azure-devops'
-ms.date: 04/16/2026
+ms.date: 04/22/2026
 ---
 
 # Migrate from a public project to GitHub
@@ -207,6 +207,7 @@ After migrating your content, verify the following items:
 
 ## Related content
 
+- [Public projects retirement in Azure DevOps](public-projects-retirement.md)
 - [Change project visibility to public or private](make-project-public.md)
 - [About projects](about-projects.md)
 - [Create a project](create-project.md)

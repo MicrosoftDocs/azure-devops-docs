@@ -60,6 +60,9 @@
     displayname: export, backup, download, source, code, build, work, item
 - name: Public projects
   items:
+  - name: Public projects retirement
+    href: public-projects-retirement.md
+    displayname: public, project, retirement, announcement, timeline
   - name: About public projects
     href: about-projects.md#use-private-and-public-projects
     displayname: public, project, private, feature, access
