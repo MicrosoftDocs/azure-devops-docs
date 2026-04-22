@@ -4,7 +4,7 @@ description: Learn how to manually set an Azure Resource Manager workload identi
 ms.topic: concept-article
 ms.author: jukullam
 author: juliakm
-ms.date: 01/12/2026
+ms.date: 04/22/2026
 monikerRange: '>= azure-devops'
 ms.custom: devx-track-arm-template, arm2024, sfi-image-nochange
 "recommendations": "true"
@@ -322,4 +322,10 @@ You can also use the REST API for this process.
 1. Select **Verify and save**. When this step successfully finishes, your Azure Resource Manager service connection is fully configured.
 
 --- 
+
+## Related content
+
+- [Access Azure DevOps with Microsoft Entra workload identity](../library/add-devops-entra-service-connection.md)
+- [Use scripts to automate Azure Resource Manager with workload identity service connections](automate-service-connections.md)
+- [Troubleshoot workload identity service connections](troubleshoot-workload-identity.md)
 

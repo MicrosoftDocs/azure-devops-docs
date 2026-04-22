@@ -8,7 +8,7 @@ ms.manager: mijacobs
 ms.author: chcomley  
 author: chcomley
 monikerRange: 'azure-devops'
-ms.date: 02/24/2026
+ms.date: 04/22/2026
 ms.custom: pat-reduction
 ai-usage: ai-assisted
 ---
@@ -96,3 +96,14 @@ export AZURE_DEVOPS_EXT_PAT=xxxxxxxxxx
 ```
 
 Replace *xxxxxxxxxx* with your PAT.
+
+---
+
+> [!TIP]
+> In Azure Pipelines, prefer the [Azure DevOps service connection](../pipelines/library/add-devops-entra-service-connection.md) with Microsoft Entra workload identity federation for PAT-free authentication. Use the `AzureCLI@3` task with `connectionType: azureDevOps` to run `az devops` commands without managing tokens.
+
+## Related content
+
+- [Access Azure DevOps with Microsoft Entra workload identity](../pipelines/library/add-devops-entra-service-connection.md)
+- [Azure DevOps CLI in Azure Pipeline YAML](azure-devops-cli-in-yaml.md)
+- [Manage service connections](../pipelines/library/service-endpoints.md)

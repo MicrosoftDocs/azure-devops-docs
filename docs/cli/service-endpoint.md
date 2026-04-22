@@ -8,7 +8,7 @@ ms.manager: mijacobs
 ms.author: chcomley
 author: chcomley
 monikerRange: 'azure-devops'
-ms.date: 06/03/2025
+ms.date: 04/22/2026
 ms.custom: devx-track-arm-template, devx-track-azurecli, arm2024, sfi-image-nochange
 #customer intent: As a developer, I want to use Azure DevOps CLI to create and manage different types of service connections.
 ---
@@ -229,6 +229,7 @@ openssl pkcs12 -in file.pfx -out file.pem -nodes -secret pass:<secret_here>
 
 ## Related content
 
+- [Access Azure DevOps with Microsoft Entra workload identity](../pipelines/library/add-devops-entra-service-connection.md)
 - [Manage service connections](../pipelines/library/service-endpoints.md)
 - [Connect to Azure with an Azure Resource Manager service connection](../pipelines/library/connect-to-azure.md)
 - [az devops service-endpoint](/cli/azure/devops/service-endpoint)

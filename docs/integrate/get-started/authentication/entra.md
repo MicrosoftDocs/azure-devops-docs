@@ -9,7 +9,7 @@ ai-usage: ai-assisted
 monikerRange: 'azure-devops'
 ms.author: chcomley
 author: chcomley
-ms.date: 02/24/2026
+ms.date: 04/22/2026
 ---
 
 # Authenticate to Azure DevOps with Microsoft Entra ID
@@ -106,7 +106,7 @@ Organizations increasingly adopt [security policies that restrict personal acces
 | PAT scenario | Microsoft Entra alternative |
 |------------|------------|
 | Authenticate with Git Credential Manager (GCM) | GCM defaults to authenticating with PATs. Set the default credential type to `oauth`. Learn more on the [Git Credential Manager (GCM) page](../../../repos/git/set-up-credential-managers.md). |
-| Authenticate in a build or release pipeline | Use a [service connection with Workload Identity Federation](../../../pipelines/library/connect-to-azure.md#create-an-azure-resource-manager-service-connection-that-uses-workload-identity-federation). |
+| Authenticate in a build or release pipeline | Use an [Azure DevOps service connection with workload identity federation](../../../pipelines/library/add-devops-entra-service-connection.md) for Azure DevOps resources, or a [service connection with Workload Identity Federation](../../../pipelines/library/connect-to-azure.md#create-an-azure-resource-manager-service-connection-that-uses-workload-identity-federation) for Azure resources. |
 | Ad hoc requests to Azure DevOps REST APIs | Issue a [one-off Microsoft Entra token by using the Azure CLI](../../../cli/entra-tokens.md).  |
 
 > [!TIP]
