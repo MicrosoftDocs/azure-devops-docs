@@ -77,8 +77,8 @@
     },
     {
       "source_path_from_root": "/docs/notifications/troubleshoot-delayed-email.md",
-      "redirect_url": "/azure/devops/organizations/notifications/troubleshoot-delayed-email",
-      "redirect_document_id": true
+      "redirect_url": "/azure/devops/organizations/notifications/troubleshoot-not-getting-email",
+      "redirect_document_id": false
     },
     {
       "source_path_from_root": "/docs/notifications/troubleshoot-not-getting-email.md",
@@ -87,8 +87,8 @@
     },
     {
       "source_path_from_root": "/docs/notifications/troubleshoot-unexpected-email.md",
-      "redirect_url": "/azure/devops/organizations/notifications/troubleshoot-unexpected-email",
-      "redirect_document_id": true
+      "redirect_url": "/azure/devops/organizations/notifications/troubleshoot-not-getting-email",
+      "redirect_document_id": false
     },
     {
       "source_path_from_root": "/docs/notifications/unsubscribe-default-notification.md",

@@ -10,7 +10,7 @@ metadata:
   ms.topic: landing-page
   author: chcomley
   ms.author: chcomley
-  ms.date: 03/13/2026
+  ms.date: 04/20/2026
   ai-usage: ai-assisted
 
 landingContent:
@@ -102,12 +102,8 @@ landingContent:
     linkLists:
       - linkListType: how-to-guide
         links:
-          - text: Troubleshoot not receiving notification emails
+          - text: Troubleshoot notification emails
             url: ../organizations/notifications/troubleshoot-not-getting-email.md?toc=/azure/devops/troubleshoot/toc.json
-          - text: Troubleshoot delayed notification emails
-            url: ../organizations/notifications/troubleshoot-delayed-email.md?toc=/azure/devops/troubleshoot/toc.json
-          - text: Troubleshoot unexpected notification emails
-            url: ../organizations/notifications/troubleshoot-unexpected-email.md?toc=/azure/devops/troubleshoot/toc.json
       - linkListType: reference
         links:
           - text: Notifications FAQs

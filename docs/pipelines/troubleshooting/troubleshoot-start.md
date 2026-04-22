@@ -1,7 +1,6 @@
 ---
 title: Troubleshoot pipeline failure to start
-description: Learn how to troubleshoot pipeline starting issues in Azure Pipelines and Team Foundation Server.
-ms.assetid: BFCB144F-9E9B-4FCB-9CD1-260D6873BC2E
+description: Learn how to troubleshoot pipeline starting issues in Azure Pipelines.
 ms.author: sdanie
 ms.reviewer: steved0x
 ms.topic: troubleshooting
@@ -196,10 +195,9 @@ Check the [Azure DevOps Service Status Portal](https://status.dev.azure.com/) fo
 
 ::: moniker-end
 
-## I need more help. I found a bug. I've got a suggestion. Where do I go?
+## Related content
 
-[Get subscription, billing, and technical support](https://azure.microsoft.com/support/devops/)
-
-Report any problems or submit feedback at [Developer Community](https://developercommunity.visualstudio.com/).
-
-We welcome your suggestions:
+- [Troubleshoot pipeline runs](troubleshooting.md)
+- [Troubleshoot pipeline triggers](troubleshoot-triggers.md)
+- [Review logs to diagnose pipeline issues](review-logs.md)
+- [Azure Pipelines agents](../agents/agents.md)

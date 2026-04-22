@@ -10,7 +10,7 @@ ai-usage: ai-assisted
 ms.author: chcomley
 author: chcomley
 monikerRange: '<= azure-devops'
-ms.date: 12/03/2025
+ms.date: 04/20/2026
 ---
 
 # Resolve migration errors
@@ -21,7 +21,7 @@ For more help, refer to the [FAQs section](#faqs) at the end of this article.
 
 ## Resolve size warnings
 
-Extra-large collections might generate one of the following messages after running the Data Migration Tool. If you receive any of these warnings or errors, we recommend that you try to [reduce your database's size](/azure/devops/server/upgrade/clean-up-data). 
+Extra-large collections might generate one of the following messages after running the Data Migration Tool. If you receive any of these warnings or errors, try to [reduce your database's size](/azure/devops/server/upgrade/clean-up-data). 
 
 ### Database size over recommended size
 
@@ -45,7 +45,7 @@ This warning **DOES NOT** mean that your collection is too large for migration.
 
 ### Database metadata size over recommended size
 
-The following warning means that your database is approaching the limit for total metadata size. Metadata size refers to the size of your database without including files, code, and other binary data. We recommend that you [reduce the size](/azure/devops/server/upgrade/clean-up-data) of your database before migration. Reducing the size provides the other benefit of speeding up your migration.
+The following warning means that your database is approaching the limit for total metadata size. Metadata size refers to the size of your database without including files, code, and other binary data. [Reduce the size](/azure/devops/server/upgrade/clean-up-data) of your database before migration. Reducing the size also speeds up your migration.
 
 ```cmdline
 The database metadata size is currently {Metadata Size}GBs. This is above the recommended size of {Warning Size}GBs. It's recommended that you consider cleaning up older data as described in [Cleaning up old data](/azure/devops/server/upgrade/clean-up-data).
@@ -69,7 +69,7 @@ Collation warnings refer to your collection database's collation. Collations con
 
 ### No native support
 
-Receiving the following warning means that you need to consider collation implications before performing the migration.  
+If you receive the following warning, consider collation implications before performing the migration.  
 
 ```cmdline
 The collection database's collation '{collation}' is not natively supported in Azure DevOps Services. Importing your collection will result in your collation being converted to one of the supported Azure DevOps Services collations. See more details at https://aka.ms/AzureDevOpsImportCollations
@@ -77,11 +77,11 @@ The collection database's collation '{collation}' is not natively supported in A
 
 This warning **DOES NOT** mean that you can't migrate your collection.  
 
-This warning requires you to acknowledge acceptance of the warning. Accepting the warning allows the Data Migration Tool to continue migration preparations.  
+You need to acknowledge acceptance of the warning. Accepting the warning allows the Data Migration Tool to continue migration preparations.  
 
 When you migrate an unsupported collation into Azure DevOps Services, the collation is transformed to a supported collation. While this transform generally works without issue, unexpected results post migration or migration failures could occur.  
 
-For instance, customers might notice different ordering for strings containing non-English characters. Non-English characters like 'é' might become equivalent to the English 'e' after migration. It's important that you complete and verify a test run migration when you migrate a collection with an unsupported collation.
+For instance, you might notice different ordering for strings containing non-English characters. Non-English characters like 'é' might become equivalent to the English 'e' after migration. It's important that you complete and verify a test run migration when you migrate a collection with an unsupported collation.
 
 ### No native support, no internet connection
 
@@ -93,13 +93,13 @@ The collections database's collation '{collation}' is not natively supported in 
 
 ### Unsupported database collation  
 
-Generally you can convert a nonsupported collation to a supported collation at migration time. However, some collations can't be converted. If your collection uses one of these collations, you receive the following **error** message. 
+Generally, you can convert a nonsupported collation to a supported collation at migration time. However, some collations can't be converted. If your collection uses one of these collations, you receive the following **error** message. 
 
 ```cmdline
 The collection database's collation '{collation}' is not supported for migration to Azure DevOps Services. It will need to be changed to a supported collation before it can be imported. See more details at https://aka.ms/AzureDevOpsImportCollations
 ```
 
-In order to continue, you need to [change your collection's collation](/sql/relational-databases/collations/set-or-change-the-database-collation) to one of the supported collations on Azure DevOps Services.
+To continue, [change your collection's collation](/sql/relational-databases/collations/set-or-change-the-database-collation) to one of the supported collations on Azure DevOps Services.
     
 ## Resolve identity errors
 
@@ -109,7 +109,7 @@ The following sections provide guidance for resolving the most common identity e
 
 ### ISVError: 100014
 
-This error indicates that a permission is missing from a system security group. For example, every collection that you create has Project Collection Valid Users and Project Collection Administrators groups. The system creates them  by default. These groups don't support editing of their permissions. 
+This error indicates that a permission is missing from a system security group. For example, every collection that you create has Project Collection Valid Users and Project Collection Administrators groups. The system creates these groups by default. You can't edit the permissions for these groups. 
 
 This error indicates that one or more groups is missing a permission that it should have. To resolve this error, use the **TFSSecurity.exe** command to apply the expected permissions onto the flagged system groups. Your first step is to identify which [TFSSecurity](/azure/devops/server/command-line/tfssecurity-cmd) command you need to run.
 
@@ -117,7 +117,7 @@ This error indicates that one or more groups is missing a permission that it sho
 
 Examine one or more error messages the Data Migration Tool highlighted. If the flagged group ends with "**0-0-0-0-3**", such as in the following example, you need to fix a missing permission for the **Project Collection Valid Users** group. 
 
-Run the following command, replace the scope with the one from the error message and specify your collection URL.
+Run the following command, replace the scope with the one from the error message, and specify your collection URL.
 
 ```cmdline
 TFSSecurity.exe /a+ Identity "{scope}\\" Read sid:{Group SID} ALLOW /collection:{collectionUrl}
@@ -137,7 +137,7 @@ TFSSecurity.exe /a+ Identity "397c326b-b97c-4510-8271-75aac13de7a9\\" Read sid:S
 
 #### Project Collection Administrators error message
 
-Carefully examine the error messages the Data Migration Tool highlighted. If the flagged group that ends with "**0-0-0-0-1**", such as in the following example, then you need to fix a missing permission for the **Project Collection Administrators** group. Run the following commands against **TFSSecurity.exe**, replace the scope with the one from the error message and specify your collection.
+Carefully examine the error messages the Data Migration Tool highlighted. If the flagged group ends with "**0-0-0-0-1**", such as in the following example, you need to fix a missing permission for the **Project Collection Administrators** group. Run the following commands against **TFSSecurity.exe**, replace the scope with the one from the error message, and specify your collection.
 
 ```cmdline
 TFSSecurity.exe /a+ Identity "{scope}\\" Read sid:{Group SID} ALLOW /collection:{collectionUrl}
@@ -167,16 +167,16 @@ TFSSecurity.exe /a+ Identity "0c7c2216-fa4b-4107-a203-82b324a147ef\\" Delete sid
 TFSSecurity.exe /a+ Identity "0c7c2216-fa4b-4107-a203-82b324a147ef\\" ManageMembership sid:S-1-9-XXXXXXXXXX-XXXXXXXXXX-XXXXXXXXXX-XXXXXXXXXX-0-0-0-0-1 ALLOW /collection:https://localhost:8080/defaultcollection
 ```
 
-When you need to correct  multiple errors, we recommend that you create a batch file to automate execution of the commands. Once you execute the commands, rerun the data migration **validate** tool to verify resolution. If some errors still persist, contact [Azure DevOps Services customer support](https://aka.ms/AzureDevOpsImportSupport).
+When you need to correct multiple errors, create a batch file to automate execution of the commands. After you execute the commands, rerun the data migration **validate** tool to verify resolution. If some errors still persist, contact [Azure DevOps Services customer support](https://aka.ms/AzureDevOpsImportSupport).
 
 ### ISVError: 300005
 
-ISVError: 300005 indicates that a nongroup identity is a member of an everyone group, more commonly known as the Valid Users groups. Valid Users groups are default groups defined for all projects and collections. These groups aren't editable. They're designed to only contain other Azure DevOps permission or security groups as members. This error indicates that an Active Directory (AD) group or user identity has a direct membership in a Valid Users group. 
+ISVError: 300005 indicates that a nongroup identity is a member of an everyone group, more commonly known as the Valid Users groups. Valid Users groups are default groups defined for all projects and collections. You can't edit these groups. They're designed to only contain other Azure DevOps permission or security groups as members. This error indicates that an Active Directory (AD) group or user identity has a direct membership in a Valid Users group. 
 
 > [!IMPORTANT]
-> Ensure that you have a backup of your collection and configuration databases before running the following commands to resolve the error. 
+> Ensure that you back up your collection and configuration databases before running the following commands to resolve the error. 
 
-Since you can't directly edit Valid Users groups, you need to run a SQL statement against the configuration database to remove the offending identity and correct the invalid membership. Carefully examine the error messages highlighted by the Data Migration Tool. Copy the `GroupSid`, `MemberId`, and `ScopeId` as you need to place these values into the following command.
+Because you can't directly edit Valid Users groups, you need to run a SQL statement against the configuration database to remove the offending identity and correct the invalid membership. Carefully examine the error messages highlighted by the Data Migration Tool. Copy the `GroupSid`, `MemberId`, and `ScopeId` values as you need to place these values into the following command.
 
 ```SQL
 DECLARE @p6 dbo.typ_GroupMembershipTable
@@ -205,7 +205,7 @@ SET @MemberId = (Select Id from dbo.tbl_Identity where Sid ='S-1-5-21-124525095-
 SELECT @MemberId
 ```
 
-Copy the `GroupSid`, `MemberId`, and `ScopeId` into the SQL command.
+Copy the `GroupSid`, `MemberId`, and `ScopeId` values into the SQL command.
 
 ```SQL
 
@@ -216,10 +216,10 @@ INSERT into @p6 values('S-1-9-1551374245-3746625149-2333054533-2458719197-231354
 EXEC prc_UpdateGroupMembership @partitionId=1,@scopeId='7df650df-0f8b-4596-928d-13dd89e5f34f',@idempotent=1,@incremental=1,@insertInactiveUpdates=0,@updates=@p6,@eventAuthor='9EE20697-5343-43FC-8FC5-3D5D455D21C5'
 ```
    
-Run the completed command against the Azure DevOps Server configuration database. Repeat this command for each ISVError: 300005 instance reported. You can batch errors with the same scope ID into a single command. Once you execute the commands, rerun the Data Migration Tool validate again to ensure that the errors are corrected. If the errors still persist, contact [Azure DevOps Services customer support](https://aka.ms/AzureDevOpsImportSupport). 
+Run the completed command against the Azure DevOps Server configuration database. Repeat this command for each ISVError: 300005 instance reported. You can batch errors with the same scope ID into a single command. After you execute the commands, rerun the Data Migration Tool validate again to ensure that the errors are corrected. If the errors still persist, contact [Azure DevOps Services customer support](https://aka.ms/AzureDevOpsImportSupport). 
 
 > [!IMPORTANT]
-> To address these errors, the collection must be attached. 
+> To address these errors, you must attach the collection. 
 >
 > If you receive a -1 result when you run the command, ensure that your collection database that produced the error is attached to your Azure DevOps Server instance and that you're running the command on the configuration database. 
 
@@ -271,7 +271,7 @@ See the [Validate phase article, Resolve process templates](migration-validate.m
  
 #### VS403310
 
-The following error message can occur when an inconsistency in collection files is detected. Contact customer support if you encounter this error. 
+This error occurs when the system detects an inconsistency in collection files. Contact customer support if you encounter this error. 
 
 `VS403310: An inconsistency was detected in some of the files in the collection.`
  
@@ -289,7 +289,7 @@ witadmin changefield /collection:http://AdventureWorksServer:8080/DefaultCollect
 
 #### VS403443
 
-The following error indicates a field name conflict exists between your local collection and a specific Azure DevOps Services field. 
+This error indicates a field name conflict exists between your local collection and a specific Azure DevOps Services field. 
 
 
 `In order to migrate successfully, you must rename field *{TFSfieldReferenceName}* to *{VSTSfieldName}*. Given name for *{TFSfieldReferenceName}* is *{TFSfieldName}*`
@@ -302,20 +302,20 @@ witadmin changefield /collection:http://AdventureWorksServer:8080/DefaultCollect
 
 #### VS403444
 
-The following error indicates a field type conflict exists between your local collection and Azure DevOps Services.  
+This error indicates a field type conflict exists between your local collection and Azure DevOps Services.  
 
 Using [witadmin](../reference/witadmin/witadmin-customize-and-manage-objects-for-tracking-work.md), you can change the data type only for HTML or PlainText fields. 
 
 `In order to migrate successfully, you must set type of field *{TFSfieldReferenceName}* to *{Type}*. Given type for *{TFSfieldReferenceName}* is *{collectionType}*.`
 
-If your field type is HTML or PlainText, then you can change its type to the required type.
+If your field type is HTML or PlainText, you can change its type to the required type.
 
 ```cmdline
 witadmin changefield /collection:http://AdventureWorksServer:8080/DefaultCollection /n:TFSfieldReferenceName  /type:PlainText | HTML
 ```
 
 > [!NOTE]
-> If your field type is something different than HTML or PlainText and field data isn't important or the field isn't used in any project, then we recommend you delete the field. 
+> If your field type is something different than HTML or PlainText and field data isn't important or the field isn't used in any project, delete the field. 
 
 
 ```cmdline
@@ -361,7 +361,7 @@ Unable to make a connection to the database using the provided SQL Connection St
 
 `VS403243: Unable to connect to the database using the provided SQL Connection String {0}.`
 
-Review the parameters that were provided to ensure they're correct and try again.
+Review the parameters that you provided to ensure they're correct and try again.
 
 #### VS403260 & VS403351
 
@@ -385,7 +385,7 @@ Add **Encrypt=true** to your SQL connection string.
 
 The connection string must use SQL Authentication. 
 
-`VS403262: The SQL connection string must use SQL Authentication, Integrated Authentication is not supported.`
+`VS403262: The SQL connection string must use SQL Authentication, Integrated Authentication isn't supported.`
 
 Add **Integrated Security=False** to your SQL connection string.
 
@@ -398,21 +398,21 @@ Your SQL sign in user account doesn't have the required database role.
 Make sure the user account for sign in is assigned the ['TFSEXECROLE'](migration-test-run.md#configure-your-collection-for-migration) role. 
 
 > [!NOTE]   
-> There is a known issue with using `sp_addrolemember` to add `TFSEXECROLE` to an existing SQL login. The role membership isn't applied until all open connections using that identity are closed. If you receive the VS403263 error and have confirmed your identity has the role, we recommend that you create a new identity for your migration.
+> There's a known issue with using `sp_addrolemember` to add `TFSEXECROLE` to an existing SQL login. The role membership isn't applied until all open connections using that identity are closed. If you receive the VS403263 error and you confirmed your identity has the role, create a new identity for your migration.
 
 #### VS403264
 
 The connection string doesn't point to an Azure DevOps Server collection database. 
 
-`VS403264: The database is not a Azure DevOps Server Collection database, it cannot be used for migration.`
+`VS403264: The database isn't an Azure DevOps Server Collection database, it can't be used for migration.`
 
 Verify or correct the connection string points to your collection database. 
 
-#### VS40325
+#### VS403255
 
-The Azure DevOps Server Update has queued the file migration job. You can't perform migrations until this job completes. The completion time for this job is dependent on the size of the collection. 
+The Azure DevOps Server Update queued the file migration job. You can't perform migrations until this job completes. The completion time for this job depends on the size of the collection. 
 
-`VS403255: The collection cannot be imported due to an ongoing post upgrade job. Please wait and try again later`
+`VS403255: The collection can't be imported due to an ongoing post upgrade job. Please wait and try again later`
 
 You can track job progress by running the following query on the collection database:
 
@@ -455,7 +455,7 @@ Work with Azure DevOps Services [customer support](https://aka.ms/AzureDevOpsImp
 
 #### VS403366
 
-The Data Migration Tool was unable to connect to the SQL Azure VM. 
+The Data Migration Tool can't connect to the SQL Azure VM. 
 
 ```
 VS403366: A problem occurred while attempting to connect to your database. Please verify that your connection string is correct and that all required IP addresses for Azure DevOps Services have been provided exceptions for your machines firewall.
@@ -477,15 +477,15 @@ From SQL Server Management Studio (SSMS), open the extended properties for the s
 
 Data migration fails as one or more projects found in this collection are in the soft-deleted stage. Restore the soft-deleted projects or delete them permanently before running the data migration. For details, see [Delete a project](../organizations/projects/delete-project.md).
 
-`VS403379: Data migration will fail as one or more projects found in this collection are in the soft-deleted stage. Please restore the soft-deleted project(s) or delete them permanently before running the data migration.`
+`VS403379: Data migration fails as one or more projects found in this collection are in the soft-deleted stage. Please restore the soft-deleted projects or delete them permanently before running the data migration.`
 
-Verify the collection against which you're running the Data Migration Tool has projects in the soft-deleted stage. Once a project is deleted, it remains in a soft-delete state for 28 days during which the deleted project can be restored. You can read about how to restore a deleted project in [Restore a project](../organizations/projects/delete-project.md#restore-a-deleted-project). If you have projects in the soft-deleted stage, remove them completely or restore them back before running data migration.
+Verify the collection against which you're running the Data Migration Tool has projects in the soft-deleted stage. Once a project is deleted, it remains in a soft-delete state for 28 days during which you can restore the deleted project. You can read about how to restore a deleted project in [Restore a project](../organizations/projects/delete-project.md#restore-a-deleted-project). If you have projects in the soft-deleted stage, remove them completely or restore them before running data migration.
 
 ## Resolve migration failures
 
-Migration failures mean that the migration queued, but didn't complete. The individual who queued the migration receives a failure email notification. Most of the time this email includes a reason for the failure. If it does, use the troubleshooting steps provided in the email and this page to resolve the errors and retry your migration. 
+Migration failures mean that the migration queued, but didn't complete. The individual who queued the migration receives a failure email notification. Most of the time this email includes a reason for the failure. If it does, use the troubleshooting steps provided in the email and this article to resolve the errors and retry your migration. 
 
-If the error is more complex, then the email you receive provides instructions on how to file a [customer support case](https://aka.ms/AzureDevOpsImportSupport). After you submit a customer support case, your team must roll back by bringing your Azure DevOps Server instance back online and reattach your collection. Your team members can then continue working. We recommended that you don't try the migration again until the failure causing the issue gets resolved.
+If the error is more complex, the email you receive provides instructions on how to file a [customer support case](https://aka.ms/AzureDevOpsImportSupport). After you submit a customer support case, your team must roll back by bringing your Azure DevOps Server instance back online and reattach your collection. Your team members can then continue working. Don't try the migration again until the failure causing the issue gets resolved.
 
 ## Use AI to troubleshoot migration issues
 
@@ -522,8 +522,8 @@ Context: This is for migrating from Azure DevOps Server to Azure DevOps Services
 A: If your migration was queued but failed and you didn't receive an email notification, follow these steps:
 
 - **Check migration logs**: Review the migration logs for any error messages that might indicate the cause of the failure. The logs can provide insights into what went wrong during the migration process.
-- **Follow troubleshooting steps**: Refer to the troubleshooting steps outlined in this migration troubleshooting guide. These steps can help you identify and resolve common issues that perhaps caused the failure.
-- **Contact Customer Support**: If the error is complex or you can't resolve the issue using the logs and troubleshooting steps, consider [filing a customer support case](https://developercommunity.visualstudio.com/AzureDevOpsServerTFS) for further assistance.
+- **Follow troubleshooting steps**: Refer to the troubleshooting steps outlined in this migration troubleshooting guide. These steps can help you identify and resolve common issues that caused the failure.
+- **Contact Customer Support**: If the error is complex or you can't resolve the issue by using the logs and troubleshooting steps, consider [filing a customer support case](https://developercommunity.visualstudio.com/AzureDevOpsServerTFS) for further assistance.
 - **Rollback and retry**: If necessary, roll back your Azure DevOps Server instance and reattach the collection before attempting the migration again.
  
 ## Related content

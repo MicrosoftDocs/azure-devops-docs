@@ -68,12 +68,8 @@
       href: ../project/work-across-projects-faqs.yml?toc=/azure/devops/troubleshoot/toc.json
 - name: Notifications
   items:
-    - name: Not receiving emails
+    - name: Troubleshoot notification emails
       href: ../organizations/notifications/troubleshoot-not-getting-email.md?toc=/azure/devops/troubleshoot/toc.json
-    - name: Delayed emails
-      href: ../organizations/notifications/troubleshoot-delayed-email.md?toc=/azure/devops/troubleshoot/toc.json
-    - name: Unexpected emails
-      href: ../organizations/notifications/troubleshoot-unexpected-email.md?toc=/azure/devops/troubleshoot/toc.json
     - name: FAQs
       href: ../organizations/notifications/faq-notifications.yml?toc=/azure/devops/troubleshoot/toc.json
 - name: Reporting and Analytics

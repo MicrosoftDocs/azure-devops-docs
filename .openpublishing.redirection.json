@@ -2026,7 +2026,7 @@
     },
     {
       "source_path": "docs/organizations/notifications/troubleshoot-delayed-email.md",
-      "redirect_url": "/previous-versions/azure/devops/organizations/notifications/troubleshoot-delayed-email",
+      "redirect_url": "/azure/devops/organizations/notifications/troubleshoot-not-getting-email",
       "redirect_document_id": false,
       "monikers": [
         "azure-devops-2020"
@@ -2042,11 +2042,21 @@
     },
     {
       "source_path": "docs/organizations/notifications/troubleshoot-unexpected-email.md",
-      "redirect_url": "/previous-versions/azure/devops/organizations/notifications/troubleshoot-unexpected-email",
+      "redirect_url": "/azure/devops/organizations/notifications/troubleshoot-not-getting-email",
       "redirect_document_id": false,
       "monikers": [
         "azure-devops-2020"
       ]
+    },
+    {
+      "source_path": "docs/organizations/notifications/troubleshoot-delayed-email.md",
+      "redirect_url": "/azure/devops/organizations/notifications/troubleshoot-not-getting-email",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/organizations/notifications/troubleshoot-unexpected-email.md",
+      "redirect_url": "/azure/devops/organizations/notifications/troubleshoot-not-getting-email",
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/organizations/notifications/unsubscribe-default-notification.md",
@@ -9164,7 +9174,7 @@
     },
     {
       "source_path": "docs/organizations/notifications/troubleshoot-delayed-email.md",
-      "redirect_url": "/previous-versions/azure/devops/organizations/notifications/troubleshoot-delayed-email",
+      "redirect_url": "/azure/devops/organizations/notifications/troubleshoot-not-getting-email",
       "redirect_document_id": false,
       "monikers": [
         "azure-devops-2019"
@@ -9180,7 +9190,7 @@
     },
     {
       "source_path": "docs/organizations/notifications/troubleshoot-unexpected-email.md",
-      "redirect_url": "/previous-versions/azure/devops/organizations/notifications/troubleshoot-unexpected-email",
+      "redirect_url": "/azure/devops/organizations/notifications/troubleshoot-not-getting-email",
       "redirect_document_id": false,
       "monikers": [
         "azure-devops-2019"
