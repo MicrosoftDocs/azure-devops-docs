@@ -4,7 +4,7 @@ titleSuffix: Azure DevOps
 description: Configure parallel jobs in Azure Pipelines and pay for them
 ms.topic: how-to
 ms.assetid: FAFB2DE4-F462-4E9E-8312-4F343F2A35B8
-ms.author: ramiMSFT
+ms.author: rabououn
 author: ramiMSFT
 ms.date: 04/14/2025
 monikerRange: '<= azure-devops'

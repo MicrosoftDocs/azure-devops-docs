@@ -3,7 +3,7 @@ title: Template expressions
 description: Discover how to use Azure Pipelines template expressions to pass parameters, insert collections, and conditionally include pipeline elements.
 ms.topic: concept-article
 ms.date: 01/12/2026
-ms.author: ramiMSFT
+ms.author: rabououn
 author: ramiMSFT
 monikerRange: "<=azure-devops"
 ai-usage: ai-assisted

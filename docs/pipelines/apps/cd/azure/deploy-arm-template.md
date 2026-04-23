@@ -2,7 +2,7 @@
 title: Use an Azure Resource Manager template to deploy a Linux web app to Azure
 description: Use an Azure Resource Manager template to deploy a Linux web app to Azure
 ms.topic: quickstart
-ms.author: ramiMSFT
+ms.author: rabououn
 author: ramiMSFT
 ms.date: 12/09/2025
 monikerRange: '=azure-devops'

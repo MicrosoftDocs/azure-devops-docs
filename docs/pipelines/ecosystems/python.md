@@ -5,7 +5,7 @@ ms.topic: quickstart
 ms.date: 08/22/2025
 ms.assetid: 141149f8-d1a9-49fa-be98-ee9a825a951a
 monikerRange: "<=azure-devops"
-ms.author: ramiMSFT
+ms.author: rabououn
 ms.custom: devx-track-python, freshness-fy22q2, sfi-image-nochange
 #customer intent: As a Python developer, I want to learn how to build and publish Python apps in Azure Pipelines so I can test and publish apps with different versions of Python.
 ---

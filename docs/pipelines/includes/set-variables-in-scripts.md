@@ -2,7 +2,7 @@
 ms.topic: include
 ms.service: azure-devops-pipelines
 ms.manager: wiwagn
-ms.author: ramiMSFT
+ms.author: rabououn
 author: ramiMSFT
 ms.date: 08/16/2024
 ---

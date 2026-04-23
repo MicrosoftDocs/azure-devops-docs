@@ -3,7 +3,7 @@ title: Predefined variables
 description: A comprehensive list of all available predefined variables
 ms.topic: reference
 ms.assetid: 3A1C529F-DF6B-470A-9047-2758644C3D95
-ms.author: ramiMSFT
+ms.author: rabououn
 author: ramiMSFT
 ms.date: 02/13/2026
 ms.custom:  copilot-scenario-highlight 

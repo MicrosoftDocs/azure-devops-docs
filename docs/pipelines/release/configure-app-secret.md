@@ -2,7 +2,7 @@
 title: Manually create an Azure Resource Manager service connection with a secret
 description: Learn how to manually set an Azure Resource Manager service connection with a secret in Azure Pipelines, one of the services in Azure DevOps.
 ms.topic: concept-article
-ms.author: ramiMSFT
+ms.author: rabououn
 author: ramiMSFT
 ms.date: 11/06/2025
 monikerRange: '>= azure-devops'

@@ -3,7 +3,7 @@ ms.topic: include
 ms.service: azure-devops-pipelines
 ms.custom: linux-related-content
 ms.manager: wiwagn
-ms.author: ramiMSFT
+ms.author: rabououn
 author: ramiMSFT
 ms.date: 12/09/2025
 ---
