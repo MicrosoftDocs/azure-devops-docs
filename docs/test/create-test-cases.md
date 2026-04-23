@@ -71,21 +71,7 @@ To see linked items, in the **Define** tab, open the context menu for a test cas
 
 ## Assign configurations to test cases
 
-By using configurations, you can run the same test across different operating systems, browsers, or other variations. Assign configurations at the suite level or to individual test cases.
-
-1. Select the test suite, and then select **More options** > **Assign configurations**.
-
-   :::image type="content" border="true" source="media/create-test-cases/assign-configurations.png" alt-text="Screenshot showing the Assign configurations selection in the More options dropdown menu.":::
-
-1. In the dialog box, select your configurations and then select **Save**.
-
-   :::image type="content" border="true" source="media/create-test-cases/assign-configurations-test-suite.png" alt-text="Screenshot showing the Assign configurations to test suite dialog box with some options selected.":::
-
-To assign configurations to individual test cases, select one or more test cases, and then select **More options** > **Assign configuration**.
-
-For more information, see [Test different configurations](test-different-configurations.md).
-
-[!INCLUDE [configuration-inheritance-warning](includes/configuration-inheritance-warning.md)]
+You can run the same test across different operating systems, browsers, or other variations by assigning configurations at the suite or test case level. For detailed steps on creating configurations and assigning them, see [Test different configurations](test-different-configurations.md).
 
 ## Reorder test cases
 

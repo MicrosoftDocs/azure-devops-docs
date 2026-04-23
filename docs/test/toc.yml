@@ -4,68 +4,71 @@
 - name: What is Azure Test Plans?
   displayName: manual, testing, automated, load, report, analytics
   href: overview.md
-- name: Get started
+- name: Manual testing
+  expanded: true
   items:
-  - name: Tour Test Plans
-    displayName: test suites tree, define, execute, chart
+  - name: Navigate Test Plans
+    displayName: tour, test suites tree, define, execute, chart
     href: navigate-test-plans.md
   - name: Key concepts
     displayName: test plan, test case, test suites, test runs, test results, test points
     href: test-objects-overview.md
-  - name: Default permissions (Security)
-    href: manual-test-permissions.md
-  expanded: true
-- name: Test plans, suites, & cases
-  items:
-  - name: Create & manage test plans
-    displayName: create, plan
-    href: create-a-test-plan.md
-  - name: Create & manage test suites
-    displayName: create, suite, static, requirement, query
-    href: create-test-suites.md
-  - name: Create & manage test cases
-    displayName: create, case
-    href: create-test-cases.md
-  - name: Share steps between test cases
-    href: share-steps-between-test-cases.md
-  - name: Copy or clone test items
-    displayName: copy, clone, import, export, test plans, test suites, test cases
-    href: copy-clone-test-items.md
-  - name: Import and export test cases
-    displayName: bulk, import, export, CSV, XLSX, test cases
-    href: bulk-import-export-test-cases.md
-  - name: Add custom data fields
-    displayName: custom data, custom fields, test plan, test result
-    href: custom-fields.md
-  - name: Delete test items
-    displayName: delete, artifacts, test plans, test cases, test suites
-    href: ../boards/backlogs/delete-test-artifacts.md?toc=/azure/devops/test/toc.json
-- name: Run manual tests
-  items:
-  - name: Run manual tests
-    displayName: manual test, run, test runs
-    href: run-manual-tests.md
-  - name: Actual Result
-    displayName: actual result, test execution, manual test, audit
-    href: actual-result.md
-  - name: Test different configurations
-    displayName: configuration, testing
-    href: test-different-configurations.md
-  - name: Repeat a test with different data
-    displayName: data, testing, shared steps, shared parameters
-    href: repeat-test-with-different-data.md
-  - name: Test from your board
-    displayName: inline testing
-    href: ../boards/boards/add-run-update-tests.md?toc=/azure/devops/test/toc.json
-  - name: Perform user acceptance testing
-    displayName: user acceptance, testing
-    href: user-acceptance-testing.md
-  - name: Collect diagnostic data
-    displayName: diagnostic, data, testing
-    href: collect-diagnostic-data.md
-  - name: Set test retention policies
-    displayName: results, logs
-    href: how-long-to-keep-test-results.md
+  - name: Test plans & suites
+    items:
+    - name: Create & manage test plans
+      displayName: create, plan
+      href: create-a-test-plan.md
+    - name: Create & manage test suites
+      displayName: create, suite, static, requirement, query
+      href: create-test-suites.md
+  - name: Test cases
+    items:
+    - name: Create & manage test cases
+      displayName: create, case
+      href: create-test-cases.md
+    - name: Share steps between test cases
+      href: share-steps-between-test-cases.md
+    - name: Repeat a test with different data
+      displayName: data, testing, shared steps, shared parameters
+      href: repeat-test-with-different-data.md
+    - name: Test different configurations
+      displayName: configuration, testing
+      href: test-different-configurations.md
+    - name: Copy or clone test items
+      displayName: copy, clone, import, export, test plans, test suites, test cases
+      href: copy-clone-test-items.md
+    - name: Import and export test cases
+      displayName: bulk, import, export, CSV, XLSX, test cases
+      href: bulk-import-export-test-cases.md
+    - name: Add custom data fields
+      displayName: custom data, custom fields, test plan, test result
+      href: custom-fields.md
+    - name: Delete test items
+      displayName: delete, artifacts, test plans, test cases, test suites
+      href: ../boards/backlogs/delete-test-artifacts.md?toc=/azure/devops/test/toc.json
+  - name: Run & review tests
+    items:
+    - name: Run manual tests
+      displayName: manual test, run, test runs
+      href: run-manual-tests.md
+    - name: Actual Result
+      displayName: actual result, test execution, manual test, audit
+      href: actual-result.md
+    - name: Test from your board
+      displayName: inline testing
+      href: ../boards/boards/add-run-update-tests.md?toc=/azure/devops/test/toc.json
+    - name: Perform user acceptance testing
+      displayName: user acceptance, testing
+      href: user-acceptance-testing.md
+    - name: Collect diagnostic data
+      displayName: diagnostic, data, testing
+      href: collect-diagnostic-data.md
+    - name: Manage test runs
+      displayName: run, manual tests, test runs, test results
+      href: test-runs.md
+    - name: Set test retention policies
+      displayName: results, logs
+      href: how-long-to-keep-test-results.md
 - name: Exploratory testing
   items:
   - name: Install the Test & Feedback extension
@@ -136,6 +139,8 @@
       href: ../pipelines/test/flaky-test-management.md?toc=/azure/devops/test/toc.json
 - name: Settings & permissions
   items:
+  - name: Default permissions (Security)
+    href: manual-test-permissions.md
   - name: Set permissions and access
     displayName: access, permissions
     href: ../organizations/security/set-permissions-access-test.md?toc=/azure/devops/test/toc.json
