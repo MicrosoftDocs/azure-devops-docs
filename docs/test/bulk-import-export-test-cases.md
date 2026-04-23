@@ -10,7 +10,7 @@ ms.author: pliaros
 author: wisdeom
 ms.topic: how-to
 monikerRange: '<= azure-devops'
-ms.date: 04/08/2026
+ms.date: 04/23/2026
 ms.update-cycle: 1095-days
 ---
 
@@ -114,8 +114,9 @@ For web portal alternatives like copy, clone, and direct updates, see [Copy or c
    > For CSV files, save with **UTF-8** encoding to preserve special characters. Enclose cell values in double quotes if they contain commas or line breaks.
 
 4. Select **Import**. The file must include the required columns: **ID**, **Work Item Type**, **Title**, **Test Step**, **Step Action**, **Step Expected**, **Assigned To**, and **State**. The import wizard imports the file directly without a mapping review step.
-> [!NOTE]
-> Area Path is not a mandatory field for Azure DevOps server for the import functionality and it will not be changed with the import and you can remove that from the csv.
+
+   > [!NOTE]
+   > For Azure DevOps Server, **Area Path** isn't a required field for import. The import process doesn't modify the Area Path value, so you can remove that column from your CSV file.
 
 ::: moniker-end
 
