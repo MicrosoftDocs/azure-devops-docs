@@ -1,6 +1,6 @@
 ---
 ms.subservice: azure-devops-notifications
-ms.manager: mijacobs
+ms.manager: wiwagn
 ms.author: chcomley
 author: chcomley
 ms.topic: include

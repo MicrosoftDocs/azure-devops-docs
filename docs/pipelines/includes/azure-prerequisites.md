@@ -1,9 +1,9 @@
 ---
 ms.topic: include
 ms.service: azure-devops-pipelines
-ms.manager: mijacobs
-ms.author: jukullam
-author: juliakm
+ms.manager: wiwagn
+ms.author: ramiMSFT
+author: ramiMSFT
 ms.date: 02/13/2020
 ---
 * An Azure account. If you don't have one, you can [create one for free](https://azure.microsoft.com/pricing/purchase-options/azure-account?cid=msft_learn).

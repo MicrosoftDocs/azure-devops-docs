@@ -1,7 +1,7 @@
 ---
 ms.topic: include
 ms.service: azure-devops-pipelines
-ms.manager: mijacobs
+ms.manager: wiwagn
 ms.author: sdanie
 ms.date: 01/28/2025
 ---

@@ -3,8 +3,8 @@ title: CI/CD data pipelines in Azure
 description: Learn about continuous integration and continuous delivery (CI/CD) pipelines that ingest, process, and share data in Azure.
 ms.subservice: azure-devops-pipelines-apps
 ms.topic: overview
-ms.author: jukullam
-author: JuliaKM
+ms.author: ramiMSFT
+author: ramiMSFT
 ms.date: 08/22/2025
 monikerRange: '=azure-devops'
 #customer intent: As a data scientist, I want to learn about Azure CI/CD data pipelines so I can use the CI/CD process to accurately, consistently, and efficiently update and build my learning models.

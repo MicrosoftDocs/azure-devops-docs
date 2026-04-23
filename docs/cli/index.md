@@ -4,7 +4,7 @@ titleSuffix: Azure DevOps
 description: Install the Azure DevOps extension for the Azure CLI. Learn how to sign on, configure defaults, access help, and open Azure DevOps Services in a browser.
 ms.topic: quickstart
 ms.subservice: azure-devops-reference
-ms.manager: mijacobs 
+ms.manager: wiwagn 
 ms.author: chcomley  
 author: chcomley
 monikerRange: 'azure-devops'

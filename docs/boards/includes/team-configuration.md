@@ -1,7 +1,7 @@
 ---
 ms.service: azure-devops-boards
 ms.topic: include
-ms.manager: mijacobs
+ms.manager: wiwagn
 ms.author: chcomley
 author: chcomley
 ms.date: 01/09/2020

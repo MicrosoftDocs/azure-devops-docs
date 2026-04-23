@@ -1,9 +1,9 @@
 ---
 ms.topic: include
 ms.service: azure-devops-pipelines
-ms.manager: mijacobs
-ms.author: jukullam
-author: juliakm
+ms.manager: wiwagn
+ms.author: ramiMSFT
+author: ramiMSFT
 ms.date: 05/05/2022
 ms.custom: devdivchpfy22
 ---

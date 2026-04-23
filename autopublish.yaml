@@ -11,8 +11,8 @@ jobs:
   - checkout: self
     persistCredentials: true
   - script: |
-      git config --global user.name "Mike Jacobs"
-      git config --global user.email "mijacobs@users.noreply.github.com"
+      git config --global user.name "Bill Wagner"
+      git config --global user.email "BillWagner@users.noreply.github.com"
       git checkout main
       git checkout live
       git merge main --no-ff --no-commit

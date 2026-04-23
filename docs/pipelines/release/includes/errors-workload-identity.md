@@ -1,8 +1,8 @@
 ---
 ms.topic: include
-ms.manager: mijacobs
-ms.author: jukullam
-author: juliakm
+ms.manager: wiwagn
+ms.author: ramiMSFT
+author: ramiMSFT
 ms.date: 03/26/2026
 ---
 

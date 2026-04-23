@@ -6,7 +6,7 @@ ms.topic: troubleshooting
 ms.subservice: azure-devops-reference
 ms.custom: copilot-scenario-highlight
 ai-usage: ai-assisted
-ms.manager: mijacobs 
+ms.manager: wiwagn 
 ms.author: chcomley
 author: chcomley
 monikerRange: 'azure-devops'

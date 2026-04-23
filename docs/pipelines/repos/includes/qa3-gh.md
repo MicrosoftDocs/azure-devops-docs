@@ -1,7 +1,7 @@
 ---
 ms.topic: include
 ms.service: azure-devops-pipelines
-ms.manager: mijacobs
+ms.manager: wiwagn
 ms.author: sandrica
 author: silviu.andrica
 ms.date: 07/07/2020

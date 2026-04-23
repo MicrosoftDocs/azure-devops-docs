@@ -3,8 +3,8 @@ title: Tutorial - Deploy to a Linux virtual machine scale set
 description: Learn how to use the Azure CLI to create and deploy a Java application on Linux VMs using a virtual machine scale set 
 ms.topic: tutorial
 ms.custom: devx-track-azurecli, devx-track-extended-java, linux-related-content
-ms.author: jukullam
-author: JuliaKM
+ms.author: ramiMSFT
+author: ramiMSFT
 ms.date: 12/09/2025
 monikerRange: 'azure-devops'
 ---

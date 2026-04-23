@@ -1,7 +1,7 @@
 ---
 ms.topic: include
 ms.service: azure-devops-artifacts
-ms.manager: mijacobs
+ms.manager: wiwagn
 ms.author: rabououn
 author: ramiMSFT
 ms.date: 02/16/2022
