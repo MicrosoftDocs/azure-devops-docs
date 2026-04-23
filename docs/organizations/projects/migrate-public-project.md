@@ -7,7 +7,7 @@ ms.author: chcomley
 author: chcomley
 ms.topic: how-to
 monikerRange: 'azure-devops'
-ms.date: 04/22/2026
+ms.date: 04/23/2026
 ---
 
 # Migrate from a public project to GitHub
@@ -16,16 +16,7 @@ ms.date: 04/22/2026
 
 [!INCLUDE [public-projects-retirement](includes/public-projects-retirement.md)]
 
-Migrate public-facing content to GitHub, which offers a rich ecosystem for open-source collaboration.
-
-After the conversion to private:
-
-- Anonymous users lose access to code, boards, wikis, pipelines, and artifacts.
-- Your project no longer appears in search engines or is accessible via public links.
-- CI/CD features that depend on public visibility - such as status badges, webhook triggers, or external dashboards - might stop working.
-- Pipeline capacity is limited to 1,800 minutes per month instead of unlimited.
-
-If you use a public project to share code, documentation, build results, or packages with external users, this article walks through migrating each service area to its GitHub equivalent. Private projects aren't affected by this change.
+This article walks through migrating each service area from an Azure DevOps public project to its GitHub equivalent, including repositories, pipelines, wikis, artifacts, and work items.
 
 ## Prerequisites
 
