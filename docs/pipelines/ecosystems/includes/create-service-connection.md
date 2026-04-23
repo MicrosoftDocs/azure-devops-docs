@@ -1,9 +1,9 @@
 ---
 ms.topic: include
 ms.service: azure-devops-pipelines
-ms.manager: mijacobs
-ms.author: jukullam
-author: juliakm
+ms.manager: wiwagn
+ms.author: rabououn
+author: ramiMSFT
 ms.date: 10/16/2024
 ms.custom: arm2024
 ---

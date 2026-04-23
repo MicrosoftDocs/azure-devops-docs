@@ -1,9 +1,9 @@
 ---
 ms.topic: include
 ms.subservice: azure-devops-projects
-ms.manager: mijacobs
-ms.author: jukullam
-author: juliakm
+ms.manager: wiwagn
+ms.author: rabououn
+author: ramiMSFT
 ms.date: 02/13/2020
 ---
 

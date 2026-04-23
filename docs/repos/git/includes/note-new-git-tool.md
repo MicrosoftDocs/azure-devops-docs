@@ -1,6 +1,6 @@
 ---
 ms.service: azure-devops-repos
-ms.manager: mijacobs
+ms.manager: wiwagn
 ms.topic: include
 ms.date: 04/24/2025
 ms.subservice: azure-devops-repos-git

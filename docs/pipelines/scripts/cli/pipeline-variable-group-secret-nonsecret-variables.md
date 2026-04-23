@@ -1,9 +1,9 @@
 ---
 title: Manage variables in variable groups with the Azure DevOps CLI
 description: Use this Azure DevOps CLI sample to create and manage secret and nonsecret variables in an Azure Pipelines variable group.
-author: juliakm
-ms.author: jukullam
-manager: mijacobs
+author: ramiMSFT
+ms.author: rabououn
+manager: wiwagn
 ms.date: 01/14/2026
 ms.topic: how-to
 ms.devlang: azurecli 

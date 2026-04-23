@@ -2,8 +2,8 @@
 title: Use scripts to automate Azure Resource Manager with workload identity service connections
 description: Learn how to automate Azure Resource Manager service connections in Azure Pipelines with workload identity. Save time, ensure consistency, and reduce errors.
 ms.topic: how-to
-ms.author: jukullam
-author: juliakm
+ms.author: rabououn
+author: ramiMSFT
 ms.date: 04/22/2026
 monikerRange: '= azure-devops'
 "recommendations": "true"

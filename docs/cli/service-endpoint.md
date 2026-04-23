@@ -4,7 +4,7 @@ titleSuffix: Azure DevOps
 description: Learn how to use Azure DevOps CLI to create a service endpoint. You can create and manage different types of service connections.
 ms.topic: how-to
 ms.subservice: azure-devops-reference
-ms.manager: mijacobs 
+ms.manager: wiwagn 
 ms.author: chcomley
 author: chcomley
 monikerRange: 'azure-devops'

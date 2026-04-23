@@ -1,11 +1,11 @@
 ---
 title: Use GitHub Actions to push to Azure Artifacts
 description: Push a NuGet package to Azure Artifacts with a GitHub Actions workflow
-ms.author: jukullam
+ms.author: rabououn
 ms.custom: github-actions-azure, pat-reduction
 ms.date: 01/14/2026
 monikerRange: azure-devops
-author: juliakm
+author: ramiMSFT
 ms.topic: quickstart
 zone_pivot_groups: github-actions-auth
 ---

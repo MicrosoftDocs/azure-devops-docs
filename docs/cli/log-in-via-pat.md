@@ -4,7 +4,7 @@ titleSuffix: Azure DevOps
 description: Learn how to sign in to Azure DevOps CLI with a personal access token (PAT).
 ms.topic: how-to
 ms.subservice: azure-devops-reference
-ms.manager: mijacobs 
+ms.manager: wiwagn 
 ms.author: chcomley  
 author: chcomley
 monikerRange: 'azure-devops'
