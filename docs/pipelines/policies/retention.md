@@ -4,7 +4,7 @@ description: Learn how retention policies work for pipeline runs, classic releas
 ms.topic: overview
 ms.assetid: A9AC68EB-E013-4F86-8604-E69BB330817B
 ms.author: rabououn
-author: juliakm
+author: ramiMSFT
 ms.date: 03/30/2026
 ms.custom: cross-service
 monikerRange: '<= azure-devops'

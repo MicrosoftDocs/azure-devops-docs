@@ -1,6 +1,6 @@
 ---
 ms.service: azure-devops-repos
-ms.manager: mijacobs
+ms.manager: wiwagn
 ms.author: chcomley
 author: chcomley
 ms.topic: include

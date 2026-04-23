@@ -5,7 +5,7 @@ description: Find examples that showcase use of Azure DevOps CLI. This article c
 ms.topic: overview
 ms.subservice: azure-devops-reference
 ms.custom: devx-track-azurecli
-ms.manager: mijacobs 
+ms.manager: wiwagn 
 ms.author: chcomley  
 author: chcomley
 monikerRange: 'azure-devops'

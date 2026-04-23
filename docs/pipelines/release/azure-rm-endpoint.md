@@ -4,8 +4,8 @@ ms.custom: devx-track-arm-template, arm2024, copilot-scenario-highlight
 description: How to troubleshoot Azure Resource Manager service connections in Azure Pipelines
 ms.assetid: B43E78DE-5D73-4303-981F-FB86D46F0CAE
 ms.topic: troubleshooting
-ms.author: jukullam
-author: juliakm
+ms.author: rabououn
+author: ramiMSFT
 ms.date: 02/23/2026
 ai-usage: ai-assisted
 monikerRange: '<= azure-devops'
