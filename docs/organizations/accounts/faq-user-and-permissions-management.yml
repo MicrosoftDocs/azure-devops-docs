@@ -12,7 +12,7 @@ metadata:
   ms.topic: faq
   ms.author: chcomley
   author: chcomley
-  ms.date: 04/20/2026
+  ms.date: 04/24/2026
   monikerRange: '<= azure-devops'
 title: User and permissions management FAQs
 summary: |
@@ -145,9 +145,9 @@ sections:
           Starting in April 2026, a user without an active Visual Studio subscription is downgraded. They're assigned a new access level based on the organization's [default access level](../billing/buy-basic-access-add-users.md#select-default-access-level-for-new-users) or applicable [group rules](assign-access-levels-by-group-membership.md). If neither apply, they're marked as invalid with Stakeholder access.
 
       - question: |
-          Q: Can I automate access level assignment before Visual Studio subscriptions expire?
+          Q: What features are no longer available to users with Stakeholder access?
         answer: |
-          A: Yes. Consider updating your organization's [default access level](../billing/buy-basic-access-add-users.md#select-default-access-level-for-new-users) or establish [group rules](assign-access-levels-by-group-membership.md) so that users who lose access to a Visual Studio subscription, or new users joining the organization, can automatically receive the access they need without any manual intervention.
+          [!INCLUDE [stakeholder-feature-limitations](includes/stakeholder-feature-limitations.md)]
 
       - question: |
           Q: How do I restore access to users who no longer have an active Visual Studio subscription?
@@ -175,6 +175,10 @@ sections:
           6. **Save** your changes.
           
           <a name="github-enterprise"></a>
+      - question: |
+          Q: Can I automate access level assignment before Visual Studio subscriptions expire?
+        answer: |
+          A: Yes. Consider updating your organization's [default access level](../billing/buy-basic-access-add-users.md#select-default-access-level-for-new-users) or establish [group rules](assign-access-levels-by-group-membership.md) so that users who lose access to a Visual Studio subscription, or new users joining the organization, can automatically receive the access they need without any manual intervention.
 
   - name: GitHub Enterprise
     questions:
@@ -216,6 +220,11 @@ sections:
 
           The following example shows that the license isn't detected anymore:
           ![Screenshot shows GitHub Enterprise no longer listed as user's access level in Organization settings, Users page.](media/faq/github-enterprise-no-license.png)
+
+      - question: |
+          Q: What features are unavailable to users users with Stakeholder access?
+        answer: |
+          [!INCLUDE [stakeholder-feature-limitations](includes/stakeholder-feature-limitations.md)]
       
       - question: |
           Q: How do I restore Basic access to users who no longer have a GitHub Enterprise license?
@@ -238,7 +247,7 @@ sections:
           6. Select **Basic** and **Save**.
               
               ![Screenshot showing Basic access level selected.](media/faq/basic-access-level-save.png)
-      
+
       - question: |
           Q: Are users using GitHub Enterprise Server detected as having GitHub Enterprise?
         answer: |
@@ -258,7 +267,28 @@ sections:
 
   - name: User access
     questions:
-      
+      - question: |
+          Q: How do I restore Basic access to users who no longer have a GitHub Enterprise license?
+        answer: |
+          A: Do the following steps to restore Basic access to users who no longer have a GitHub Enterprise license:
+          1. Select ![gear icon](../../media/icons/gear-icon.png) **Organization settings**.
+          2. Select **Users**.
+          3. Select the **Access level** filter and choose **GitHub Enterprise (Invalid)**.
+              
+              ![Screenshot showing GitHub Enterprise Invalid access level checked for user type.](media/faq/access-level-filter-github-enterprise-invalid.png)
+          
+          4. Check the box for **All**.
+              
+              ![Screenshot showing checked box for All.](media/faq/all-checkbox-selected.png)
+          
+          5. Select **Manage** and **Change access level**.
+              
+              ![Screenshot showing Manage and Change access level selections.](media/faq/manage-change-access-level.png)
+          
+          6. Select **Basic** and **Save**.
+              
+              ![Screenshot showing Basic access level selected.](media/faq/basic-access-level-save.png)
+          
       - question: |
           Q: What does "Last Access" mean in the All Users view?
         answer: |
