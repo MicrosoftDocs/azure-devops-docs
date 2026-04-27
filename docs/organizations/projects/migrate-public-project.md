@@ -7,7 +7,7 @@ ms.author: chcomley
 author: chcomley
 ms.topic: how-to
 monikerRange: 'azure-devops'
-ms.date: 04/23/2026
+ms.date: 04/27/2026
 ---
 
 # Migrate from a public project to GitHub
@@ -16,7 +16,7 @@ ms.date: 04/23/2026
 
 [!INCLUDE [public-projects-retirement](includes/public-projects-retirement.md)]
 
-This article walks through migrating each service area from an Azure DevOps public project to its GitHub equivalent, including repositories, pipelines, wikis, artifacts, and work items.
+This article shows how to migrate each service area from an Azure DevOps public project to its GitHub equivalent. It covers repositories, pipelines, wikis, artifacts, and work items.
 
 ## Prerequisites
 
@@ -31,20 +31,58 @@ This article walks through migrating each service area from an Azure DevOps publ
 
 GitHub repositories support open collaboration with pull requests, forks, and stars.
 
-### Import a Git repository into GitHub
+### Use GitHub Enterprise Importer
+
+[GitHub Enterprise Importer](https://docs.github.com/en/migrations/using-github-enterprise-importer/understanding-github-enterprise-importer/about-github-enterprise-importer) is the recommended tool for migrating repositories from Azure DevOps Cloud to GitHub Enterprise Cloud. It migrates Git source (including commit history), pull requests, user history, work item links on pull requests, attachments, and branch policies.
+
+1. Install the GitHub CLI migration extension:
+
+   ```bash
+   gh extension install github/gh-gei
+   ```
+
+1. Authenticate with both Azure DevOps and GitHub:
+
+   ```bash
+   # Sign in to Azure DevOps with Microsoft Entra ID and set the token
+   az login
+   export ADO_PAT=$(az account get-access-token --resource 499b84ac-1321-427f-aa17-267ca6975798 --query accessToken -o tsv)
+
+   # Authenticate with GitHub
+   gh auth login
+   ```
+
+1. Generate a migration script for an Azure DevOps organization:
+
+   ```bash
+   gh gei generate-script --ado-org {organization} --github-org {github-org} --output migrate.sh
+   ```
+
+1. Or migrate a single repository:
+
+   ```bash
+   gh gei migrate-repo --ado-org {organization} --ado-team-project {project} \
+     --ado-repo {repo} --github-org {github-org} --github-repo {new-repo}
+   ```
+
+For more information, see [Understand migrations from Azure DevOps to GitHub](https://docs.github.com/en/migrations/using-github-enterprise-importer/migrating-from-azure-devops-to-github-enterprise-cloud/about-migrations-from-azure-devops-to-github-enterprise-cloud).
+
+### Use GitHub Importer
+
+For a simpler, browser-based option, use the built-in GitHub Importer:
 
 1. Sign in to [GitHub](https://github.com) and select **New repository**.
 1. Enter a repository name and set visibility to **Public**.
 1. Select **Import a repository** at the top of the page.
 1. Enter your Azure DevOps clone URL: `https://dev.azure.com/{organization}/{project}/_git/{repo}`.
-1. If prompted, enter your Azure DevOps credentials (a [personal access token](/azure/devops/organizations/accounts/use-personal-access-tokens-to-authenticate) with **Code > Read** scope).
+1. If prompted, enter your Azure DevOps credentials. Sign in by using Microsoft Entra ID. If you need to use a personal access token, create one with **Code > Read** scope. For more information, see [Use personal access tokens](/azure/devops/organizations/accounts/use-personal-access-tokens-to-authenticate).
 1. Select **Begin import**.
 
-For more information, see [Understand migrations from Azure DevOps to GitHub](https://docs.github.com/en/migrations/ado/understand-migrations-from-azure-devops-to-github) and [Importing a repository with GitHub Importer](https://docs.github.com/migrations/importing-source-code/using-github-importer/importing-a-repository-with-github-importer).
+GitHub Importer migrates Git source and commit history but doesn't migrate pull requests, work item links, or branch policies. For more information, see [Importing a repository with GitHub Importer](https://docs.github.com/migrations/importing-source-code/using-github-importer/importing-a-repository-with-github-importer).
 
 ### Import from the command line
 
-If the GitHub importer doesn't meet your needs, push directly from a local clone:
+If GitHub Enterprise Importer doesn't meet your needs, push directly from a local clone:
 
 ```bash
 # Clone the Azure DevOps repository with full history
