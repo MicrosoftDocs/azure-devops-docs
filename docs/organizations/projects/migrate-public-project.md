@@ -230,9 +230,9 @@ GitHub doesn't have a single dashboard feature equivalent to Azure DevOps dashbo
 | Work tracking and burndown | [GitHub Projects](https://docs.github.com/issues/planning-and-tracking-with-projects) with built-in Insights charts |
 | Repository activity | [Repository Insights](https://docs.github.com/repositories/viewing-activity-and-data-for-your-repository) (commits, PRs, traffic, contributors) |
 | Build and CI status | [GitHub Actions](https://docs.github.com/actions) workflow run history and status badges |
-| Public transparency | Issues, pull requests, releases, and [README badges](https://shields.io/) |
+| Public transparency | Issues, pull requests, releases, and [README badges](https://github.com/badges/shields) |
 
-For org-level dashboards that aggregate data across multiple repositories, consider non-Microsoft tools that integrate with the GitHub API.
+For org-level dashboards that aggregate data across multiple repositories, explore integrations on the [GitHub Marketplace](https://github.com/marketplace).
 
 ## Post-migration checklist
 
