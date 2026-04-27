@@ -221,6 +221,19 @@ az boards query --wiql "SELECT [System.Id], [System.Title], [System.State] FROM 
 > [!TIP]
 > Prioritize migrating active and recent work items. Closed or historical items might not need migration—you can keep them accessible in the private project for reference.
 
+## Replace dashboards
+
+GitHub doesn't have a single dashboard feature equivalent to Azure DevOps dashboards. Instead, similar functionality is spread across several native features.
+
+| Azure DevOps dashboard use | GitHub equivalent |
+|---|---|
+| Work tracking and burndown | [GitHub Projects](https://docs.github.com/issues/planning-and-tracking-with-projects) with built-in Insights charts |
+| Repository activity | [Repository Insights](https://docs.github.com/repositories/viewing-activity-and-data-for-your-repository) (commits, PRs, traffic, contributors) |
+| Build and CI status | [GitHub Actions](https://docs.github.com/actions) workflow run history and status badges |
+| Public transparency | Issues, pull requests, releases, and [README badges](https://shields.io/) |
+
+For org-level dashboards that aggregate data across multiple repositories, consider non-Microsoft tools that integrate with the GitHub API.
+
 ## Post-migration checklist
 
 After migrating your content, verify the following items:
