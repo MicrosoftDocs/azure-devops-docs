@@ -290,8 +290,8 @@ The wiki read operations are consolidated into a single `wiki` tool. Use the `ac
 | `wiki` | `get_wiki` | Get a wiki by identifier | ✅ |
 | `wiki` | `list_pages` | List pages in a wiki | ✅ |
 | `wiki` | `get_page` | Get page content and metadata | ✅ |
-| `search_wiki` | `N/A` | Full-text wiki search | ✅ |
-| `wiki_upsert_page` | `N/A` | Create or update a wiki page | ❌ |
+| `search_wiki` |  | Full-text wiki search | ✅ |
+| `wiki_upsert_page` |  | Create or update a wiki page | ❌ |
 
 ### Test plans
 
