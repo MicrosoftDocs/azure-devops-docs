@@ -1,6 +1,6 @@
 ### YamlMime:FAQ
 metadata:
-  title: Work in Excel connected to Azure Boards FAQs
+  title: Excel and Azure Boards FAQs
   description: Learn answers to frequently asked questions about Excel and Azure Boards.
   titleSuffix: Azure Boards
   ms.service: azure-devops-boards
@@ -8,13 +8,15 @@ metadata:
   author: chcomley
   ms.topic: faq
   monikerRange: '<= azure-devops'
-  ms.date: 09/29/2025
+  ms.date: 04/20/2026
 
-title: FAQs about working in Excel connected to Azure Boards  
+title: Excel and Azure Boards FAQs
 
  
 summary: | 
   [!INCLUDE [version-lt-eq-azure-devops](../../../includes/version-lt-eq-azure-devops.md)]  
+
+  [!INCLUDE [deprecate-office-integration](../../../boards/includes/deprecate-office-integration.md)]
 
   Find answers to common questions about using Microsoft Excel to add or modify work items in Azure DevOps.
 
@@ -85,9 +87,9 @@ sections:
         answer: |
           The following macros only work in the web portal: **@CurrentIteration**, **@CurrentIteration +/- n**, **@Follows**, **@MyRecentActivity**, **@RecentMentions**, **@RecentProjectActivity**, **@TeamAreas**. Queries that contain these macros don't work when opened in Visual Studio/Team Explorer, Excel, or Project.
 
-      - question: Can I view queries that list work items from different team projects? 
+      - question: Can I view queries that list work items from different projects? 
         answer: |
-          No. Excel shows work items only from the team project the workbook connects to. If you try to open a cross-project query, you receive error TF208015. To view items from other team projects, create a separate query and open it in a different workbook; each workbook connects to a single team project.
+          No. Excel shows work items only from the project the workbook connects to. If you try to open a cross-project query, you receive error TF208015. To view items from other projects, create a separate query and open it in a different workbook; each workbook connects to a single project.
 
   - name: Work with linked work items
      
@@ -104,10 +106,8 @@ sections:
       - question: Can I bulk-edit link types other than hierarchical links? 
         answer: |
           No. Excel supports adding and modifying hierarchical (parent-child) links only. To edit other link types in bulk, use:
-          ::: moniker range="=azure-devops-2022"
           - The web portal to map backlog items to portfolio items ([Organize your backlog](../../backlogs/organize-backlog.md))
           - The web portal or Team Explorer to modify parent-child links by dragging items in a hierarchical backlog or tree query ([Reparent items](../../backlogs/organize-backlog.md#reparent))
-          ::: moniker-end
           - The Azure CLI: `az boards work-item relation add` (/cli/azure/boards/work-item/relation).
 
   - name: Work with test work items 
@@ -135,9 +135,8 @@ sections:
       - question: How do I resolve publishing issues?  
         answer: |
           Troubleshoot the specific error:
-          - Resolve data conflicts: [Resolve data conflicts](resolve-excel-data-conflicts-publish-refresh.md)
-          - Resolve data validation errors: [Resolve data validation errors](resolve-excel-data-validation-errors.md)
-          - Address inaccuracies in summary values: [Address inaccuracies published for summary values](../../../report/sql-reports/address-inaccuracies-published-for-summary-values.md)
+          - Resolve data conflicts: [Resolve data conflicts](tfs-office-integration-issues.md#resolve-data-conflicts)
+          - Resolve data validation errors: [Resolve data validation errors](tfs-office-integration-issues.md#resolve-data-validation-errors)
 
       - question: How do I resolve invalid links in a tree list?
         answer: |

@@ -5,17 +5,18 @@ description: How to search for packages across all your feeds and in upstream so
 ms.subservice: azure-devops-search
 ms.custom: cross-service, cross-project
 ms.topic: how-to
+ai-usage: ai-assisted
 ms.author: chcomley
 author: chcomley
 monikerRange: 'azure-devops'
-ms.date: 07/10/2025
+ms.date: 02/18/2026
 ---
 
 # Search for packages across your feeds
 
 [!INCLUDE [version-eq-azure-devops](../../includes/version-eq-azure-devops.md)]
 
-Finding the right package for your project can be time-consuming, especially when you're managing multiple feeds, versions, and dependencies. In this article, you learn how to use Azure DevOps Code Search to perform functional package searches across all your feeds to help you locate your packages based on functionality, versions, or type.
+Finding the right package for your project can take time, especially when you're managing multiple feeds, versions, and dependencies. This article shows you how to use Azure DevOps Code Search to perform functional package searches across all your feeds. You can locate your packages based on functionality, versions, or type.
 
 ## Prerequisites
 
@@ -25,11 +26,11 @@ Finding the right package for your project can be time-consuming, especially whe
 
 ## Search packages
 
-Azure DevOps code search lets you search all feeds in your organization, regardless of the project you’re in.
+Azure DevOps code search lets you search all feeds in your organization, regardless of the project you're in.
 
-1. Sign in to your Azure DevOps organization and navigate to your project (`https://dev.azure.com/{Your_Organization}/{Your_Project}`).
+1. Sign in to your Azure DevOps organization and go to your project (`https://dev.azure.com/{Your_Organization}/{Your_Project}`).
 
-1. In the search bar, enter a term (for example, time) in the search box and press Enter. This returns any package with the term "time" in its name or description.
+1. In the search bar, enter a term (for example, time) in the search box and press Enter. This step returns any package with the term "time" in its name or description.
 
 1. Select the **Package** tab to view all search results. Use the **Feeds**, **Views**, or **Type** dropdown menus to filter results by feed, feed view, or package type (for example, NuGet).
 
@@ -38,9 +39,9 @@ Azure DevOps code search lets you search all feeds in your organization, regardl
 > [!NOTE]
 > The **Views** filter appears only when you select a single feed from the **Feeds** filter.
 
-## Search for packages using the REST API
+## Search for packages by using the REST API
 
-The Azure DevOps REST API provides an endpoint that allows you to search for packages within a specific organization. The following example demonstrates how to construct the HTTP request and request body to search for the *react-calendar* npm package across all feeds in your organization. See [Fetch package search results](/rest/api/azure/devops/search/package-search-results/fetch-package-search-results) for more details.
+The Azure DevOps REST API provides an endpoint that you can use to search for packages within a specific organization. The following example demonstrates how to construct the HTTP request and request body to search for the *react-calendar* npm package across all feeds in your organization. For more information, see [Fetch package search results](/rest/api/azure/devops/search/package-search-results/fetch-package-search-results).
 
 #### Example:
 
@@ -62,9 +63,9 @@ POST https://almsearch.dev.azure.com/ORGANIZATION_NAME/_apis/search/packagesearc
 
 ## Search for packages in upstream sources
 
-Azure Artifacts upstream sources enable developers to consume packages from different feeds and public registries such as *NuGet.org*. Using Azure Artifacts, you can search for various types of packages in your upstream sources. 
+By using Azure Artifacts upstream sources, developers can consume packages from different feeds and public registries such as *NuGet.org*. By using Azure Artifacts, you can search for various types of packages in your upstream sources. 
 
-1. Sign in to your Azure DevOps collection, and then navigate to your project.
+1. Sign in to your Azure DevOps collection, and then go to your project.
 
 1. Select **Artifacts**, and then select your feed from the dropdown menu.
 
@@ -75,12 +76,12 @@ Azure Artifacts upstream sources enable developers to consume packages from diff
 1. Select **Search** to view a list of available versions for the package you searched.
 
 > [!NOTE]
-> Searching for packages in upstream sources from your feed is supported only in Azure DevOps services.
+> Searching for packages in upstream sources from your feed is supported only in Azure DevOps Services.
 
-## Next steps
+## Next step
 
 > [!div class="nextstepaction"]
-> [Promote a package to a view](../../artifacts//feeds/views.md)
+> [Promote a package to a view](../../artifacts/feeds/views.md)
 
 ## Related content
 

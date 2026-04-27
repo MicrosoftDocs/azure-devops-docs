@@ -2,7 +2,9 @@
 title: What is Azure Pipelines?
 description: Learn how Azure Pipelines can use continuous integration, testing, and delivery to automatically build, test, and deploy your code.
 ms.topic: overview
-ms.date: 07/24/2025
+ms.date: 03/10/2026
+ms.custom: copilot-scenario-highlight
+ai-usage: ai-assisted
 monikerRange: '<= azure-devops'
 # customer intent: As a developer, I want to learn about Azure Pipelines capabilities so I can automatically build, test, and deliver my code.
 
@@ -30,6 +32,8 @@ Azure Pipelines offers the following benefits:
 - Works with open-source projects
 
 ## Prerequisites
+
+[!INCLUDE [ai-assistance](../../includes/ai-assistance-mcp-server-tip.md)]
 
 To use Azure Pipelines, you must:
 
@@ -111,6 +115,28 @@ For five or fewer active users, [Azure DevOps Express](https://azure.microsoft.c
 For more information, see [Pricing for Azure DevOps Server](https://azure.microsoft.com/pricing/details/devops/server/).
 
 ::: moniker-end
+
+<a id="use-ai-assistance"></a>
+
+## Use AI to manage pipelines
+
+If you configure the [Azure DevOps MCP Server](../../mcp-server/mcp-server-overview.md), you can explore and manage your pipelines using natural language.
+
+| Task | Example prompt |
+|------|----------------|
+| List pipelines in a project | `Show all pipelines in project <Contoso>` |
+| Check recent build status | `Show the last 10 pipeline runs in project <Contoso> and whether they passed or failed` |
+| Find failed builds | `Which pipelines failed in the last 24 hours in project <Contoso>?` |
+| View deployment history | `Show recent deployments to the production environment in <Contoso>` |
+| Check agent availability | `List available agents and their status in project <Contoso>` |
+| Review pipeline artifacts | `What artifacts were published by the latest run of "CI-Main" in <Contoso>?` |
+| Inspect test results | `Show test results for the latest run of pipeline "Build-API" in <Contoso>` |
+| Compare pipeline runs | `Compare the last successful run with the last failed run of "CI-Main" in <Contoso>` |
+| Check parallel job usage | `How many parallel jobs are in use in organization <Contoso>?` |
+| Find long-running pipelines | `Which pipelines in project <Contoso> have the longest average run time?` |
+
+> [!TIP]
+> If you're using Visual Studio Code, [agent mode](/visualstudio/ide/copilot-chat-context#agent-mode) is especially helpful for exploring pipeline status and troubleshooting build failures.
 
 ## Related content
 

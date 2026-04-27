@@ -3,7 +3,7 @@
 - name: Get started >>
   href: get-started/index.yml
 - name: Azure DevOps MCP Server
-  href: mcp-server/mcp-server-overview.md
+  href: mcp-server/toc.yml
 - name: Azure Artifacts >>
   href: artifacts/index.yml
 - name: Azure Boards >>
@@ -28,3 +28,5 @@
   href: marketplace-extensibility/index.yml
 - name: Developer Resources >>
   href: dev-resources/index.yml
+- name: Troubleshooting & FAQs >>
+  href: troubleshoot/index.yml

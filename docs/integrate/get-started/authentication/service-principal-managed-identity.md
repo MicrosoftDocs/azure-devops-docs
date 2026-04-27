@@ -3,11 +3,12 @@ title: Use Service Principals and Managed Identities
 titleSuffix: Azure DevOps
 description: Learn how to add and manage service principals and managed identities in your Azure DevOps organizations.
 ms.subservice: azure-devops-security
-ms.assetid: 
+ms.custom: pat-reduction, copilot-scenario-highlight
+ai-usage: ai-assisted
 ms.topic: how-to
 ms.author: wonga
 author: wonga
-ms.date: 07/14/2025
+ms.date: 03/02/2026
 monikerRange: 'azure-devops'
 ---
 
@@ -17,21 +18,25 @@ monikerRange: 'azure-devops'
 
 Service principals and managed identities provide secure, scalable authentication for Azure DevOps automation workflows. These [Microsoft Entra](entra.md) identity types offer enhanced security over traditional personal access tokens (PATs). They use automatic credential management, shorter token lifespans, and enterprise-grade access controls.
 
+[!INCLUDE [ai-assistance-mcp-server-tip](../../../includes/ai-assistance-mcp-server-tip.md)]
+
 ## Benefits of service principals and managed identities
 
-#### Enhanced security
+### Enhanced security
 
 - **Short-lived tokens**: Microsoft Entra tokens expire every hour, which reduces exposure risk compared to PATs (which can last up to one year).
 - **Automatic rotation**: Managed identities handle credential rotation automatically.
 - **No stored secrets**: The need to store long-lived credentials in code or configuration is eliminated.
 
-#### Operational excellence
+[!INCLUDE [use-microsoft-entra-reduce-pats](../../../includes/use-microsoft-entra-reduce-pats.md)]
+
+### Operational excellence
 
 - **Centralized management**: Control access through Microsoft Entra ID policies and Azure DevOps permissions.
 - **Audit capabilities**: Track authentication and access patterns through comprehensive logging.
 - **Scale efficiently**: Support enterprise automation scenarios without individual user dependencies.
 
-#### Modern authentication
+### Modern authentication
 
 - **Standards based**: Uses OAuth 2.0 and OpenID Connect protocols.
 - **Multifactor authentication support**: Inherits organizational security policies.
@@ -243,7 +248,7 @@ string accessToken = token.Token;
 Use Azure Instance Metadata Service:
 
 ```http
-GET http://169.254.169.254/metadata/identity/oauth2/token?api-version=2018-02-01&resource=https://app.vssps.visualstudio.com/
+GET http://169.254.169.254/metadata/identity/oauth2/token?api-version=2019-0801&resource=https://app.vssps.visualstudio.com/
 Metadata: true
 ```
 
@@ -254,11 +259,11 @@ For one-time operations or testing, use the Azure CLI:
 ```bash
 # For service principal
 az login --service-principal --username {client-id} --password {client-secret} --tenant {tenant-id}
-az account get-access-token --resource https://app.vssps.visualstudio.com/
+az account get-access-token --scope https://app.vssps.visualstudio.com/.default
 
 # For managed identity (from Azure resource)
 az login --identity
-az account get-access-token --resource https://app.vssps.visualstudio.com/
+az account get-access-token --scope https://app.vssps.visualstudio.com/.default
 ```
 
 For more information, see [Acquire Microsoft Entra tokens](../../../cli/entra-tokens.md#get-a-token-for-a-service-principal).
@@ -278,7 +283,7 @@ client.DefaultRequestHeaders.Authorization =
     new AuthenticationHeaderValue("Bearer", accessToken);
 
 var response = await client.GetAsync(
-    "https://dev.azure.com/{organization}/_apis/projects?api-version=7.1");
+    "https://dev.azure.com/{organization}/_apis/projects?api-version=7.2");
 ```
 
 #### Video examples
@@ -291,7 +296,7 @@ var response = await client.GetAsync(
 
 - **NuGet feeds**: Connect with [NuGet.exe](../../../artifacts/nuget/nuget-exe.md) or [dotnet CLI](../../../artifacts/nuget/dotnet-setup.md).
 - **Marketplace publishing**: [Publish extensions via command line](../../../extend/publish/command-line.md).
-- **Azure Pipelines**: Create [service connections](../../../pipelines/library/connect-to-azure.md) backed by managed identities.
+- **Azure Pipelines**: [Access Azure DevOps with Entra workload identity](../../../pipelines/library/add-devops-entra-service-connection.md).
 - **Git operations**: [Clone repositories with the Git Credential Manager](../../../repos/git/set-up-credential-managers.md).
 
 For complete code examples, see our [sample applications](https://github.com/microsoft/azure-devops-auth-samples/tree/master/ServicePrincipalsSamples).
@@ -454,6 +459,24 @@ Possible causes and solutions:
 ### TF401444: Sign-in required error
 
 **Solution:** Ensure that the service principal is added properly to the organization with required permissions. This error indicates that the identity isn't recognized in the organization.
+
+<a id="use-ai-assistance"></a>
+
+## Use AI for service principal and managed identity setup
+
+If you have the [Azure DevOps MCP Server](../../../mcp-server/mcp-server-overview.md) connected to your AI agent in agent mode, you can use natural language prompts to set up and troubleshoot service principal and managed identity authentication.
+
+| Task | Example prompt |
+|------|----------------|
+| Set up managed identity | `Walk me through setting up a managed identity for an Azure Function that needs to access Azure DevOps APIs` |
+| Create a service principal | `Show me how to create a service principal in Microsoft Entra ID and add it to my Azure DevOps organization with the correct permissions` |
+| Acquire a token | `Write C# code to acquire a Microsoft Entra token for Azure DevOps using a service principal with certificate authentication` |
+| Cross-tenant access | `How do I configure a service principal to access Azure DevOps in a different tenant?` |
+| Troubleshoot auth errors | `I'm getting a VssUnauthorizedException when using a managed identity to call Azure DevOps APIs — help me troubleshoot` |
+| Migrate from PATs | `Help me migrate my Azure DevOps automation from PAT-based authentication to a managed identity for an Azure-hosted application` |
+
+> [!NOTE]
+> Agent mode and the MCP Server use natural language, so you can adjust these prompts or ask follow-up questions to refine the results.
 
 ## Related content
 

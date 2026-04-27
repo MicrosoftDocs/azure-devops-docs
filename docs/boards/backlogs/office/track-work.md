@@ -16,6 +16,8 @@ ms.date: 08/07/2025
 
 [!INCLUDE [version-lt-eq-azure-devops](../../../includes/version-lt-eq-azure-devops.md)]
 
+[!INCLUDE [deprecate-office-integration](../../includes/deprecate-office-integration.md)]
+
 ::: moniker range="<=azure-devops"
 
 To support your work tracking efforts, you can use Microsoft Excel. You can either work in online mode, where you're connected to either Azure Boards or Azure DevOps Server. Or, work in offline mode, where you access the local computer and document.
@@ -48,9 +50,9 @@ macOS isn't supported. Even if you installed Visual Studio for Mac, connection t
 
 | Category | Requirements |
 |----------|-------------|
-| **Software** | - Office Excel 2010 or later version, including Office Excel 365<br>- Visual Studio or the free Azure DevOps Office Integration 2019 (see the following installation note)<br>- Azure DevOps Office Integration plug-in (installed with Visual Studio or Azure DevOps Office Integration) |
-| **Permissions** | - [Project member](../../../organizations/security/add-users-team-project.md) access to connect to an Azure Boards project |
-| **Project** | - If you don't have an Azure Boards project yet, you can [create one](../../get-started/sign-up-invite-teammates.md) |
+| Software | - Office Excel 2010 or later version, including Office Excel 365<br>- Visual Studio or the free Azure DevOps Office Integration 2019 (see the following installation note)<br>- Azure DevOps Office Integration plug-in (installed with Visual Studio or Azure DevOps Office Integration) |
+| Permissions | - [Project member](../../../organizations/security/add-users-team-project.md) access to connect to an Azure Boards project |
+| Project | - If you don't have an Azure Boards project yet, you can [create one](../../get-started/sign-up-invite-teammates.md) |
 
 ::: moniker-end
 
@@ -58,9 +60,9 @@ macOS isn't supported. Even if you installed Visual Studio for Mac, connection t
 
 | Category | Requirements |
 |----------|-------------|
-| **Software** | - Office Excel 2010 or later version, including Microsoft 365<br>- Visual Studio or the free Azure DevOps Office Integration 2019 (see the following installation note)<br>- Team Foundation plug-in (installed with Visual Studio or Azure DevOps Office Integration 2019) |
-| **Permissions** | - [Project member](../../../organizations/security/add-users-team-project.md) access to connect to an Azure Boards project |
-| **Project** | - If you don't have an Azure Boards project yet, you can [create one](../../../organizations/projects/create-project.md) |
+| Software | - Office Excel 2010 or later version, including Microsoft 365<br>- Visual Studio or the free Azure DevOps Office Integration 2019 (see the following installation note)<br>- Team Foundation plug-in (installed with Visual Studio or Azure DevOps Office Integration 2019) |
+| Permissions | - [Project member](../../../organizations/security/add-users-team-project.md) access to connect to an Azure Boards project |
+| Project | - If you don't have an Azure Boards project yet, you can [create one](../../../organizations/projects/create-project.md) |
 
 ::: moniker-end
 

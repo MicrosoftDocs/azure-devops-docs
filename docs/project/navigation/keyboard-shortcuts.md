@@ -8,7 +8,7 @@ ms.topic: overview
 ms.author: chcomley
 author: chcomley
 monikerRange: '<= azure-devops'
-ms.date: 03/11/2025
+ms.date: 02/17/2026
 ---
 
 # Keyboard shortcuts for Azure DevOps and Team Explorer
@@ -18,6 +18,8 @@ ms.date: 03/11/2025
 You can use the keyboard shortcuts listed in this article when you work in Azure DevOps or Team Explorer. You also can [assign your own shortcuts in Visual Studio](/visualstudio/ide/identifying-and-customizing-keyboard-shortcuts-in-visual-studio) on the **Tools** > **Options** > **Environment** > **Keyboard** page.
 
 For specific guidance about moving around in the web portal for Azure DevOps, see [Web portal navigation](index.md).
+
+[!INCLUDE [ai-assistance-callout](../../includes/ai-assistance-callout.md)]
 
 ## Web portal
 

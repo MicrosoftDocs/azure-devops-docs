@@ -7,62 +7,65 @@ ms.topic: how-to
 ms.author: chcomley
 author: chcomley
 monikerRange: "<=azure-devops"
-ms.date: 07/12/2023
+ms.date: 03/24/2026
+ai-usage: ai-assisted
 ---
 
 # Add status badges for your GitHub repo 
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)] 
  
-You can add Markdown syntax to a GitHub repo `README.md` file to display your board status in that repo. Show the status by adding the syntax you choose from your board settings.  
+Add Markdown syntax to a GitHub repo `README.md` file to display your board status as a badge. Copy the syntax from your board settings and paste it into the README.
 
-The syntax shown works whether you [connected your project to a GitHub.com or your GitHub Enterprise Server repository](connect-to-github.md). For GitHub Enterprise Server, your server must be network accessible to Azure DevOps Services. 
+This syntax works for both [GitHub.com and GitHub Enterprise Server connections](connect-to-github.md). For GitHub Enterprise Server, your server must be network accessible to Azure DevOps Services. 
 
 ## Prerequisites 
 
 | Category | Requirements |
 |--------------|-------------|
-| **Permissions** | [Team administrator](../../organizations/settings/add-team-administrator.md) for the team's settings you want to modify or  member of the [**Project Administrators**](../../organizations/security/change-project-level-permissions.md) group. |
-| **Integration with GitHub** | [Connect your project to the GitHub repository](index.md) where the commits and pull requests you want to link to or from exist. |
-| **Board configuration** | A board you want to configure. When you add a team, you add a board for that team. For more information, see [About teams and Agile tools](../../organizations/settings/about-teams-and-settings.md). |
-| **Repository access** | To add the status badge to the GitHub.com repository: Contributor to the repository. |
+| **Permissions** | [Team administrator](../../organizations/settings/add-team-administrator.md) for the board's team, or member of the [**Project Administrators**](../../organizations/security/change-project-level-permissions.md) group. |
+| **GitHub integration** | Project [connected to the GitHub repository](index.md) where you want to display the badge. |
+| **Board** | An existing board for the team. Each team gets a board automatically. For more information, see [About teams and Agile tools](../../organizations/settings/about-teams-and-settings.md). |
+| **Repository access** | Contributor access to the GitHub repository where you add the badge. |
 
 ## Add a status badge
 
-1. Sign into Azure Boards and [open your board](../boards/kanban-quickstart.md). 
+1. Sign in to Azure Boards and [open your board](../boards/kanban-quickstart.md). 
 
-2. Select the :::image type="icon" source="../../media/icons/blue-gear.png" border="false":::  gear icon to configure the board and set general team settings.  
+1. Select :::image type="icon" source="../../media/icons/blue-gear.png" border="false"::: gear icon to open board settings.  
 
    :::image type="content" source="../../organizations/settings/media/configure-team/open-board-settings.png" alt-text="Screenshot of opening board settings."::: 
 
-3. Select **Status badge** and then check or uncheck the **Allow anonymous users to access the status badge**. When it's unchecked, users who aren't signed in can still view the status badge.
+1. Select **Status badge**, then select or clear **Allow anonymous users to access the status badge**. When this option is cleared, users who aren't signed in can still view the badge.
 
    ::: moniker range="<=azure-devops"
    :::image type="content" source="media/badges/status-badge-s188.png" alt-text="Screenshot of board Settings dialog, Status badge tab.":::
    ::: moniker-end
    
 
-4. Choose the badge type you want and choose the :::image type="icon" source="../../media/icons/copy.png" border="false"::: copy icon to copy the Markdown syntax for the badge. 
+1. Select a badge type, then select :::image type="icon" source="../../media/icons/copy.png" border="false"::: **Copy** to copy the Markdown syntax.
 
-   - **Show "In progress" columns only** ignores the first and last columns.  
-   - **Include all columns** includes the first and last columns of the board.  
-   - You can customize the set of columns by specifying `2` for the columnOptions and then a comma-delimited list of the board columns to appear. For example, `?columnOptions=2&columns=Proposed,Committed,In%20Progress,In%20Review`, as shown in the following syntax. For column labels that include spaces, you must encode the space with `%20`. For example, `In%20Progress`.
+   - **Show "In progress" columns only** — excludes the first and last columns.  
+   - **Include all columns** — shows all columns, including the first and last.  
+   - **Custom columns** — set `columnOptions=2` and add a comma-delimited list of columns. Encode spaces as `%20` (for example, `In%20Progress`).
+
+     Example syntax:
 
 	```
 	[![Board Status](https://dev.azure.com/fabrikam/677da0fb-b067-4f77-b89b-f32c12bb8617/cdf5e823-1179-4503-9fb1-a45e2c1bc6d4/_apis/work/boardbadge/6fa7b56f-d27c-4e96-957d-f9e7b0f56705?columnOptions=2&columns=Proposed,Committed,In%20Progress,In%20Review)](https://dev.azure.com/fabrikam/677da0fb-b067-4f77-b89b-f32c12bb8617/_boards/board/t/cdf5e823-1179-4503-9fb1-a45e2c1bc6d4/Microsoft.RequirementCategory/)
 	```
 
-   A badge similar to the following displays. 
+   The rendered badge looks similar to the following image.
 
    :::image type="content" source="media/badges/custom-columns.png" alt-text="Screenshot showing badge rendered.":::
 
-5. When you're done, select **Save**.
+1. Select **Save**.
 
-   The only setting that you can configure is the **Allow anonymous users to access the status badge**. The badge type under **Settings** only switches the Markdown syntax for you to copy from the **Sample Markdown** and **Image URL** values. 
+   The **Allow anonymous users to access the status badge** option is the only configurable setting. The badge type selection only changes the Markdown syntax available to copy.
 
-6. Open the README file in your GitHub repo and paste the syntax you copied to make the badge display.  
+1. Open the `README.md` file in your GitHub repo and paste the copied syntax.
 
-	You should see the same preview image that you selected with values that correspond to your board. 
+	The badge renders with values that correspond to your board. 
 
 ## Related content
 
@@ -71,4 +74,4 @@ The syntax shown works whether you [connected your project to a GitHub.com or yo
 - [Configure team settings](../../organizations/settings/manage-teams.md)
 - [Change GitHub repository access](install-github-app.md#change-repository-access)
 - [Integrate Azure Boards with GitHub](index.md) 
-- [Troubleshoot GitHub & Azure Boards integration](troubleshoot-github-connection.md)
+- [Troubleshoot GitHub & Azure Boards integration](connect-to-github.md#resolve-connection-issues)

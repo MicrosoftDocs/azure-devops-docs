@@ -6,9 +6,10 @@ ms.subservice: azure-devops-ecosystem
 ms.assetid: 1D393A4A-2D25-479D-972B-304F99B5B1F8
 ai-usage: ai-assisted
 ms.topic: concept-article
+ms.custom: UpdateFrequency3
 ms.author: chcomley
 author: chcomley
-ms.date: 10/03/2025
+ms.date: 04/03/2026
 monikerRange: "<=azure-devops"
 ---
 
@@ -56,7 +57,7 @@ Create a basic widget that displays "Hello World" using JavaScript. This foundat
 
 :::image type="content" source="../media/add-dashboard-widget/sample.png" alt-text="Screenshot of Overview dashboard with a sample widget.":::
 
-### Step 1: Install the client SDK
+### Install the client SDK
 
 The VSS SDK enables your widget to communicate with Azure DevOps. Install it using npm:
 
@@ -68,7 +69,7 @@ Copy the `VSS.SDK.min.js` file from `vss-web-extension-sdk/lib` to your `home/sd
 
 For more SDK documentation, see the [Client SDK GitHub page](https://github.com/Microsoft/vss-sdk).
 
-### Step 2: Create the HTML structure
+### Create the HTML structure
 
 Create `hello-world.html` in your project directory. This file provides the widget's layout and references to required scripts.
 
@@ -90,7 +91,7 @@ Widgets run in iframes, so most HTML head elements except `<script>` and `<link>
 
 <a id="widget-javascript"></a>
 
-### Step 3: Add widget JavaScript
+### Add widget JavaScript
 
 To implement the widget functionality, add this script to the `<head>` section of your HTML file:
 
@@ -133,7 +134,7 @@ To implement the widget functionality, add this script to the `<head>` section o
 > [!IMPORTANT]
 > The widget name in `VSS.register()` must match the `id` in your extension manifest (Step 5).
 
-### Step 4: Add extension images
+### Add extension images
 
 Create the required images for your extension:
 
@@ -143,7 +144,7 @@ Create the required images for your extension:
 
 These images display in the Marketplace and widget catalog when users browse available extensions.
 
-### Step 5: Create the extension manifest
+### Create the extension manifest
 
 Create `vss-extension.json` in your project's root directory. This file defines your extension's metadata and contributions:
 
@@ -220,7 +221,7 @@ For complete manifest documentation, see [Extension manifest reference](manifest
 
 <a id="package-publish-share"></a>
 
-### Step 6: Package and publish your extension
+### Package and publish the extension
 
 Package your extension and publish it to the Visual Studio Marketplace.
 
@@ -266,7 +267,7 @@ tfx extension publish --manifest-globs vss-extension.json --share-with yourOrgan
 
 <a id="add-from-catalog"></a>
 
-### Step 7: Install and test your widget
+### Install and test the widget
 
 To test, add your widget to a dashboard:
 
@@ -291,7 +292,7 @@ In this part, use the [Work Item Tracking REST API](/rest/api/azure/devops/) to 
 
 <a id="step-1-files"></a>
 
-### Step 1: Create the enhanced HTML file
+### Create the HTML file
 
 Create a new widget file that builds on the previous example. Copy `hello-world.html` and rename it to `hello-world2.html`. Your project structure now includes:
 
@@ -352,7 +353,7 @@ Make these changes to `hello-world2.html`:
 </html>
 ```
 
-### Step 2: Configure API access permissions
+### Configure API permissions
 
 Before making REST API calls, configure the required permissions in your extension manifest.
 
@@ -368,7 +369,7 @@ The `vso.work` scope grants read-only access to work items and queries. Add this
 }
 ```
 
-#### Complete manifest example
+#### Manifest example
 
 For a complete manifest with other properties, structure it like this:
 
@@ -386,7 +387,7 @@ For a complete manifest with other properties, structure it like this:
 > [!IMPORTANT]
 > **Scope limitations**: Adding or changing scopes after publishing isn't supported. If you already published your extension, you must remove it from the Marketplace first. Go to the [Visual Studio Marketplace Publishing Portal](https://marketplace.visualstudio.com/manage/createpublisher), find your extension, and select **Remove**.
 
-### Step 3: Implement REST API integration
+### Implement REST API calls
 
 Azure DevOps provides JavaScript REST client libraries through the SDK. These libraries wrap AJAX calls and map API responses to usable objects.
 
@@ -462,7 +463,7 @@ $container.append($list);
 
 The `getQuery()` method returns a `Contracts.QueryHierarchyItem` object with properties for query metadata. This example displays three key pieces of information below the "Hello World" text.
 
-#### Complete working example
+#### Full example
 
 Your final `hello-world2.html` file should look like this:
 
@@ -532,11 +533,11 @@ Your final `hello-world2.html` file should look like this:
 
 <a id="widget-extension-manifest"></a>
 
-### Step 5: Update the extension manifest
+### Update the manifest
 
 To make it available in the widget catalog, add your new widget to the extension manifest.
 
-#### Add the second widget contribution
+#### Add the widget contribution
 
 Update `vss-extension.json` to include your REST API-enabled widget. Add this contribution to the `contributions` array:
 
@@ -592,11 +593,11 @@ Update `vss-extension.json` to include your REST API-enabled widget. Add this co
 > [!TIP]
 > **Preview image**: Create a `preview2.png` image (330x160 pixels) and place it in the `img` folder to show users what your widget looks like in the catalog.
 
-### Step 6: Package, publish, and share
+### Package and publish
 
 [Package, publish, and share your extension](#package-publish-share). If you already published the extension, you can repackage and update it directly in the Marketplace.
 
-### Step 7: Test your REST API widget
+### Test the REST API widget
 
 To view the REST API integration in action, add the new widget to your dashboard:
 
@@ -611,7 +612,7 @@ Your enhanced widget displays both the "Hello World" text and live query informa
 
 <a id="part-3"></a>
 
-## Part 3: Configure Hello World
+## Part 3: Configurable widget
 
 Build on [Part 2](#part-2) by adding user configuration capabilities to your widget. Instead of hard-coding the query path, create a configuration interface that lets users select which query to display, with live preview functionality.
 
@@ -619,11 +620,11 @@ This part demonstrates how to create configurable widgets that users can customi
 
 :::image type="content" source="../media/add-dashboard-widget/sample-configuration.png" alt-text="Screenshot of Overview dashboard live preview of the widget based on changes.":::
 
-### Step 1: Create configuration files
+### Create configuration files
 
 Widget configurations share many similarities with widgets themselves—both use the same SDK, HTML structure, and JavaScript patterns, but serve different purposes within the extension framework.
 
-#### Set up the project structure
+#### Project structure
 
 To support widget configuration, create two new files:
 
@@ -648,7 +649,7 @@ Your project structure now includes:
 |--- vss-extension.json             // Extension manifest
 ```
 
-#### Create the configuration interface
+#### Configuration interface
 
 Add this HTML structure to `configuration.html`, which creates a dropdown selector for choosing queries:
 
@@ -674,11 +675,11 @@ Add this HTML structure to `configuration.html`, which creates a dropdown select
 </html>
 ```
 
-### Step 2: Implement configuration JavaScript
+### Implement configuration logic
 
 Configuration JavaScript follows the same initialization pattern as widgets, but implements the `IWidgetConfiguration` contract instead of the basic `IWidget` contract.
 
-#### Add configuration logic
+#### Configuration code
 
 Insert this script into the `<head>` section of `configuration.html`:
 
@@ -717,7 +718,7 @@ Insert this script into the `<head>` section of `configuration.html`:
 </script>
 ```
 
-#### Configuration contract details
+#### Configuration contract
 
 The `IWidgetConfiguration` contract requires these key functions:
 
@@ -729,11 +730,11 @@ The `IWidgetConfiguration` contract requires these key functions:
 > [!TIP]
 > **Data serialization**: This example uses JSON to serialize settings. The widget accesses these settings via `widgetSettings.customSettings.data` and must deserialize them accordingly.
 
-### Step 3: Enable live preview functionality
+### Enable live preview
 
 Live preview allows users to see widget changes immediately as they modify configuration settings, providing instant feedback before saving.
 
-#### Implement change notifications
+#### Change notifications
 
 To enable live preview, add this event handler within the `load` function:
 
@@ -750,7 +751,7 @@ $queryDropdown.on("change", function () {
 });
 ```
 
-#### Complete configuration file
+#### Full configuration file
 
 Your final `configuration.html` should look like this:
 
@@ -816,7 +817,7 @@ Your final `configuration.html` should look like this:
 
 <a id="reload-widget"></a>
 
-### Step 4: Make the widget configurable
+### Make the widget configurable
 
 Transform your widget from Part 2 to use configuration data instead of hard-coded values. This step requires implementing the `IConfigurableWidget` contract.
 
@@ -857,7 +858,7 @@ if (!settings || !settings.queryPath) {
 }
 ```
 
-#### Widget lifecycle differences
+#### Widget lifecycle
 
 | Function | Purpose | Usage guidelines |
 |----------|---------|------------------|
@@ -867,11 +868,11 @@ if (!settings || !settings.queryPath) {
 > [!TIP]
 > **Performance optimization**: Use `load()` for expensive operations that only need to run once, and `reload()` for quick updates when configuration changes.
 
-### (Optional) Add a lightbox for detailed information
+### Add a lightbox (optional)
 
 Dashboard widgets have limited space, making it challenging to display comprehensive information. A lightbox provides an elegant solution by showing detailed data in a modal overlay without navigating away from the dashboard.
 
-#### Why use a lightbox in widgets?
+#### Lightbox use cases
 
 | Benefit | Description |
 |---------|-------------|
@@ -880,7 +881,7 @@ Dashboard widgets have limited space, making it challenging to display comprehen
 | **Progressive disclosure** | Show summary data in widget, details on demand |
 | **Responsive design** | Adapt to different screen sizes and widget configurations |
 
-#### Implement clickable elements
+#### Clickable elements
 
 Update your query data rendering to include clickable elements that trigger the lightbox:
 
@@ -904,7 +905,7 @@ $container.append($list);
 $container.append($detailsLink);
 ```
 
-#### Create the lightbox functionality
+#### Lightbox implementation
 
 Add this lightbox implementation to your widget JavaScript:
 
@@ -959,7 +960,7 @@ function showQueryDetails(query) {
 }
 ```
 
-#### Add lightbox styling
+#### Lightbox styling
 
 Include CSS styles for the lightbox in your widget HTML `<head>` section:
 
@@ -1044,7 +1045,7 @@ Include CSS styles for the lightbox in your widget HTML `<head>` section:
 </style>
 ```
 
-#### Enhanced widget implementation
+#### Full widget implementation
 
 Your complete enhanced widget with lightbox functionality:
 
@@ -1202,11 +1203,11 @@ Your complete enhanced widget with lightbox functionality:
 > [!IMPORTANT]
 > **Performance**: Lightboxes should load quickly. Consider lazy-loading detailed data only when the lightbox opens, rather than fetching everything upfront.
 
-### Step 5: Configure the extension manifest
+### Configure the manifest
 
-Register both the configurable widget and its configuration interface in your extension manifest.
+Register both the configurable widget
 
-#### Add widget and configuration contributions
+#### Widget and configuration contributions
 
 Update `vss-extension.json` to include two new contributions:
 
@@ -1272,7 +1273,7 @@ Update `vss-extension.json` to include two new contributions:
 }
 ```
 
-#### Configuration contribution requirements
+#### Contribution requirements
 
 | Property | Purpose | Required value |
 |----------|---------|----------------|
@@ -1291,17 +1292,17 @@ For configurable widgets, the `targets` array must include a reference to the co
 > [!WARNING]
 > **Configuration button visibility**: If the widget doesn't properly target its configuration contribution, the **Configure** button doesn't appear. Verify the publisher and extension names match your manifest exactly.
 
-### Step 6: Package, publish, and share
+### Package and publish
 
 Deploy your enhanced extension with configuration capabilities.
 
 If it's your first publication, follow [Step 6: Package, publish, and share](#package-publish-share). For existing extensions, repackage and update directly in the Marketplace.
 
-### Step 7: Test the configurable widget
+### Test the configurable widget
 
 Experience the full configuration workflow by adding and configuring your widget.
 
-#### Add the widget to your dashboard
+#### Add to dashboard
 
 1. Go to `https://dev.azure.com/{Your_Organization}/{Your_Project}`.
 2. Go to **Overview** > **Dashboards**.
@@ -1321,11 +1322,11 @@ Access configuration through either method:
 
 The configuration panel opens with a live preview in the center. Select a query from the dropdown to see immediate updates, then select **Save** to apply your changes.
 
-### Step 8: Add advanced configuration options
+### Add advanced options
 
 Extend your widget with more built-in configuration features like custom names and sizes.
 
-#### Enable name and size configuration
+#### Name and size options
 
 Azure DevOps provides two configurable features out-of-the-box:
 
@@ -1334,7 +1335,7 @@ Azure DevOps provides two configurable features out-of-the-box:
 | **Custom names** | `isNameConfigurable: true` | Users can override the default widget name |
 | **Multiple sizes** | Multiple `supportedSizes` entries | Users can resize widgets |
 
-#### Enhanced manifest example
+#### Manifest example
 
 ```json
 {

@@ -7,8 +7,9 @@ ms.assetid: 3836C81D-6E0A-46B5-8D1D-20E973E4F373
 ms.author: chcomley
 author: chcomley
 ms.topic: concept-article
+ai-usage: ai-assisted
 monikerRange: '<= azure-devops'
-ms.date: 04/25/2025
+ms.date: 04/03/2026
 #customer intent: As a developer, I want to understand the tools and clients that support connecting to Azure DevOps, so I can use the appropriate tools for my development.
 ---
 
@@ -16,123 +17,104 @@ ms.date: 04/25/2025
 
 [!INCLUDE [version-lt-eq-azure-devops](../includes/version-lt-eq-azure-devops.md)]
 
-The Microsoft platform of software development tools is well established. The Visual Basic and Visual Studio integrated development environment (IDE) supports teams in their software development, and offers a catalog of plug-ins to extend the product functionality. In particular, the Team Explorer plug-in allows the Visual Studio client to connect to Azure DevOps to support source control, work tracking, build, and test operations. This article describes various tools and clients you can use to connect with Azure DevOps and enhance your development.
+Azure DevOps works with a broad set of tools and clients:
+
+- **IDEs** — Visual Studio, Visual Studio Code, IntelliJ, and Android Studio
+- **Office** — Excel for bulk work-item editing
+- **Browsers** — Web portal and Marketplace extensions
+- **Command line** — Azure DevOps CLI, Git, TFVC, and TCM
+- **Integrations** — Slack, Microsoft Teams, ServiceNow, and Jenkins
+- **APIs** — REST APIs for custom extensions and automation
+
+[!INCLUDE [ai-assistance-callout](../includes/ai-assistance-callout.md)]
 
 ## Desktop client developer tools
 
-Developers have access to many tools through the following versions of Visual Studio and plug-ins. To download any version of Visual Studio, go to the [Visual Studio Downloads page](https://visualstudio.microsoft.com/downloads/). To understand what features you get with the Visual Studio versions, see [Compare Visual Studio offerings](https://visualstudio.microsoft.com/vs/compare/).
+The following IDEs and editors connect to Azure DevOps for source control, work tracking, build, and test operations. To download Visual Studio, see the [Visual Studio Downloads page](https://visualstudio.microsoft.com/downloads/). To compare editions, see [Compare Visual Studio offerings](https://visualstudio.microsoft.com/vs/compare/).
 
-|Visual Studio version |Description |
-|----------------------|------------|
-| **Visual Studio Community**         | _Full-featured, extensible IDE for creating modern applications for Android, iOS, and Windows, including web applications and cloud services. (Replaces Visual Studio Express)_ |
-| **Visual Studio Professional**      | _Development tools and services to support individual developers or small teams._ |
-| **Visual Studio Enterprise**        | _Integrated, end-to-end development tools and solutions for teams of any size, and with a need to scale. Supports designing, building, and managing complex enterprise applications._ |
-| **Visual Studio Test Professional** | _Access to Microsoft Test and development tools to support quality and collaboration throughout the development process._ |
-| **[Visual Studio Code](https://code.visualstudio.com/docs)** | _Free, open-source code editor with a free extension to support connecting to Git repositories on Azure DevOps._ | 
-| **[Android Studio with Azure DevOps Services Plug-in](/previous-versions/azure/devops/all/java/download-android-studio-plug-in)** | _Free plug in to support Android developers and connect to Git repositories on Azure DevOps._ |
-| **[IntelliJ with Azure DevOps Services Plugin](/previous-versions/azure/devops/all/java/download-intellij-plug-in)** | _Free plug in to support developers who use IntelliJ IDEA or Android Studio to connect to Git repositories on Azure DevOps._ |
+| Tool | Description |
+|------|-------------|
+| **Visual Studio Community** | Free, full-featured IDE for students, open-source contributors, and individual developers. |
+| **Visual Studio Professional** | Development tools and services for individual developers and small teams. |
+| **Visual Studio Enterprise** | End-to-end tools for teams of any size, including advanced debugging, testing, and DevOps integration. |
+| **[Visual Studio Code](https://code.visualstudio.com/docs)** | Free, open-source code editor with extensions for Git repositories on Azure DevOps. |
+| **[IntelliJ / Android Studio](https://plugins.jetbrains.com/plugin/7981)** | Free Azure DevOps plugin for JetBrains IDEs. Supports Git and TFVC repositories. |
 
 To get started with client libraries, see [Client library samples](../integrate/get-started/client-libraries/samples.md).
 
-### Team Explorer plug-in
+### Visual Studio source control
 
-Team Explorer, a plug-in to all Visual Studio versions, connects Visual Studio to projects defined in Azure DevOps. You can manage source code, work items, and builds. Team Explorer supports using Git and Team Foundation Version Control (TFVC) for source control. For more information, see [Work in Team Explorer](work-team-explorer.md).
+Visual Studio provides two source control interfaces for Azure DevOps:
 
-::: moniker range="azure-devops-2022"
+- **Git experience** — Starting with Visual Studio 2019 version 16.8, the **Git** menu is the default for Git repositories. It provides quick access to commits, branches, remotes, and repository management. For more information, see [Git experience in Visual Studio](/visualstudio/version-control/git-with-visual-studio).
+- **Team Explorer** — Connects to Azure DevOps projects for source control, work items, and builds. Supports both Git and TFVC repositories. TFVC source control requires Team Explorer. For more information, see [Work in Team Explorer](work-team-explorer.md).
 
-:::image type="content" source="../organizations/projects/media/te-home-page-git-repo-visual-studio-2022.png" border="false" alt-text="Screenshot of the Team Explorer home page showing Git as the form of source control in Visual Studio 2022.":::
-
-::: moniker-end
-
-### Visual Studio Git experience 
-
-Visual Studio 2019 and later provides the **Git** menu with quick access to source control and repository tasks.
-
-::: moniker range="azure-devops-2022"
-
-:::image type="content" source="media/tools/visual-studio-git-menu-2022.png" border="false" alt-text="Screenshot of the Git menu in Visual Studio 2022.":::
-
-Visual Studio 2022 also provides the **Git Changes** and **Git Repository** windows:
-
-:::image type="content" source="media/tools/visual-studio-git-changes-repository-2022.png" border="false" alt-text="Screenshot of the Git Changes and Git Repository windows in Visual Studio 2022." lightbox="media/tools/visual-studio-git-changes-repository-2022.png":::
-
-::: moniker-end
-
-For more information, see [Git experience in Visual Studio](/visualstudio/version-control/git-with-visual-studio) and [Side-by-side comparison of Git and Team Explorer](/visualstudio/version-control/git-team-explorer-feature-comparison).  
+For a feature comparison, see [Side-by-side comparison of Git and Team Explorer](/visualstudio/version-control/git-team-explorer-feature-comparison).
 
 ## Office integration tools
 
-If you want to add and bulk-modify work items with Azure DevOps, you can integrate [Microsoft Office Excel](../boards/backlogs/office/bulk-add-modify-work-items-excel.md). To support the integration, you need to install the [Azure DevOps Office Integration 2019](https://visualstudio.microsoft.com/downloads/#other-family) add-in. 
+To bulk-add and modify work items with Azure DevOps, use [Microsoft Office Excel](../boards/backlogs/office/bulk-add-modify-work-items-excel.md). Install the [Azure DevOps Office Integration 2019](https://visualstudio.microsoft.com/downloads/#other-family) add-in to enable the integration.
 
-### Task-specific clients
+## Testing tools
 
-The following clients support specific tasks, such as managing testing efforts, providing feedback, and modifying work items:
+The following tools support manual testing, exploratory testing, and feedback:
 
-- [**Azure Test Plans**](../organizations/billing/try-additional-features-vs.md): Manage your test efforts, create and run manual tests, and create and track bugs found during test efforts.  
-- [**Test & Feedback extension** (previously, the Exploratory Testing extension)](../test/perform-exploratory-tests.md): Access a lightweight plug-in to a web browser. Stakeholders can respond to feedback requests for user stories and features created in Azure DevOps. This extension is free to Stakeholders. 
-- [**Microsoft Feedback Client**](/previous-versions/azure/devops/project/feedback/give-feedback): Enable Stakeholders to use this client to record feedback for your application as video, audio, or type-written comments. This client is installed with all versions of Visual Studio, or it can be [installed from the free download](https://www.microsoft.com/download/details.aspx?id=48142). All feedback is stored in the work item data store and requires [Stakeholders to have permissions](/previous-versions/azure/devops/project/feedback/give-permissions-feedback).  
+- [**Azure Test Plans**](../test/overview.md): Browser-based test management for planned manual tests, user acceptance testing, exploratory testing, and stakeholder feedback. Requires Basic + Test Plans access. For a free 30-day trial, see [Try Azure Test Plans](../organizations/billing/try-additional-features-vs.md).
+- [**Test & Feedback extension**](../test/perform-exploratory-tests.md): Browser extension for Chrome, Edge, and Firefox that supports exploratory testing of web apps. Capture screenshots, screen recordings, and rich diagnostic data, then file bugs directly. Free for Stakeholder access users.
 
 ## Browser-based web tools
 
-Browser-based web tools are available for connecting with Azure DevOps. You can use collaboration tools that are supported through the web portal or extensions built and maintained by the Azure DevOps Services product team.
+### Web portal
 
-### Web portal support
+The Azure DevOps web portal provides access to source control, work tracking, builds, test plans, and more. For a summary, see [Essential services](services.md). New features deploy every three weeks for Azure DevOps Services and quarterly for Azure DevOps Server.
 
-Collaboration tools supported through the web portal are summarized under [Essential services](services.md). New features are deployed every three weeks for Azure DevOps Services, and quarterly for Azure DevOps Server. 
+The following browsers are supported:
 
-The following table lists the supported browsers and applicable Azure DevOps versions:
-
-|Browser |Version |Azure DevOps support |
-|--------|--------|---------------------|
-| **Microsoft Edge, Firefox, Chrome** | Most recent | Azure DevOps Services, Azure DevOps Server 2019 and later  |
+| Browser | Version | Azure DevOps support |
+|---------|---------|----------------------|
+| **Microsoft Edge, Firefox, Chrome** | Most recent | Azure DevOps Services, Azure DevOps Server 2019 and later |
 | **Safari (Mac)** | 14.1 and later | Azure DevOps Services, Azure DevOps Server 2019 and later |
 | **Internet Explorer** | 11 and later | Azure DevOps Server 2019 and 2020 only |
 
 For more information, see [Web portal navigation](../project/navigation/index.md).
 
-### Browser-based extensions
+### Search extensions
 
-The Azure DevOps Services product team maintains the following built-in extensions:
+Azure DevOps includes the following search capabilities, available as preinstalled extensions for Azure DevOps Services and as installable extensions for Azure DevOps Server:
 
-- [**Code search**](https://marketplace.visualstudio.com/items?itemName=ms.vss-code-search): Increase cross-team collaboration and code sharing. Enable developers to quickly locate relevant information within the code base of all projects hosted within an organization or collection. Discover implementation examples, browsing definitions, and error text.
-- [**Work item search**](https://marketplace.visualstudio.com/items?itemName=ms.vss-workitem-search): Quickly find relevant work items and search across all work item fields over all projects in an organization. Run full-text searches across all fields to efficiently locate relevant work items. Use inline search filters, on any work item field, and quickly narrow down a list of work items.  
-  
-You can find more extensions in Azure DevOps under **Organization settings** > **Extensions** > **Browse marketplace**. For more information, see [About migrating and integrating work tracking data](../boards/extensions/migrate-integrate.md).
+- [**Code Search**](https://marketplace.visualstudio.com/items?itemName=ms.vss-code-search): Search across all repositories and projects in an organization or collection. Find implementation examples, browse definitions, and locate error text.
+- [**Work Item Search**](https://marketplace.visualstudio.com/items?itemName=ms.vss-workitem-search): Search across all work item fields over all projects. Use inline filters on any field to narrow results quickly.
+
+Find more extensions in the [Azure DevOps Marketplace](https://marketplace.visualstudio.com/azuredevops).
 
 ## Command-line tools
 
-You can complete many code development and administrative tasks by using the following command-line tools:
+The following command-line tools support code development and administrative tasks:
 
-- [Azure DevOps CLI commands (az devops)](../cli/quick-reference.md)
-- [Git commands](../repos/git/command-prompt.md)
-- [TFVC commands](../repos/tfvc/use-team-foundation-version-control-commands.md)
-- [Test Case Management (TCM) commands](../test/copy-clone-test-items.md)
-- [Manage permissions with command line tool (az devops security)](../organizations/security/manage-tokens-namespaces.md) 
-- [witAdmin (work item tracking)](../reference/witadmin/witadmin-customize-and-manage-objects-for-tracking-work.md)
+- [Azure DevOps CLI (`az devops`)](../cli/quick-reference.md) — manage projects, pipelines, repos, and more from the command line
+- [Git commands](../repos/git/command-prompt.md) — work with Git repositories
+- [TFVC commands](../repos/tfvc/use-team-foundation-version-control-commands.md) — work with TFVC repositories
+- [TCM commands (`tcm.exe`)](../test/test-case-managment-reference.md) — manage test plans, suites, and runs (deprecated for Azure DevOps Services and Server 2020+)
+- [Security permissions (`az devops security`)](../organizations/security/manage-tokens-namespaces.md) — manage security tokens and namespaces (Azure DevOps Services only)
+- [witAdmin](../reference/witadmin/witadmin-customize-and-manage-objects-for-tracking-work.md) — customize work item types, fields, and process configuration
 
-## Integrated tool support for third-party applications
+## Third-party integrations
 
-Several tools provide support for monitoring and interacting with Azure DevOps from a third-party application.
+Azure DevOps integrates with the following tools for notifications, change management, and continuous deployment:
 
-|Service |Integrated tools |References |
-|--------|-----------------|-----------|
-| **Azure Boards**    | Slack, Microsoft Teams | - [Azure Boards with Slack](../boards/integrations/boards-slack.md) <br/> - [Azure Boards with Microsoft Teams](../boards/integrations/boards-teams.md) |
-| **Azure Repos**     | Slack, Microsoft Teams | - [Azure Repos with Slack](../repos/integrations/repos-slack.md) <br/> - [Azure Repos with Microsoft Teams](../repos/integrations/repos-teams.md) |
-| **Azure Pipelines** | Slack, Microsoft Teams, ServiceNow, Jenkins | - [Azure Pipelines with Slack](../pipelines/integrations/slack.md) <br/> - [Azure Pipelines with Microsoft Teams](../pipelines/integrations/microsoft-teams.md) <br/> - [Change management with ServiceNow](../pipelines/release/approvals/servicenow.md) <br/> - [Continuous deployment from Jenkins](../pipelines/release/artifacts.md#jenkins) |
+| Service | Integrated tools | References |
+|---------|-----------------|------------|
+| **Azure Boards** | Slack, Microsoft Teams | [Azure Boards with Slack](../boards/integrations/boards-slack.md), [Azure Boards with Microsoft Teams](../boards/integrations/boards-teams.md) |
+| **Azure Repos** | Slack, Microsoft Teams | [Azure Repos with Slack](../repos/integrations/repos-slack.md), [Azure Repos with Microsoft Teams](../repos/integrations/repos-teams.md) |
+| **Azure Pipelines** | Slack, Microsoft Teams, ServiceNow, Jenkins | [Azure Pipelines with Slack](../pipelines/integrations/slack.md), [Azure DevOps integration with Microsoft Teams](../service-hooks/services/teams.md), [Change management with ServiceNow](../pipelines/release/approvals/servicenow.md), [Continuous deployment from Jenkins](../pipelines/release/artifacts.md#jenkins) |
 
 ## Marketplace extensions
 
-Visual Studio and Azure DevOps offer various features and functionality, and the ability to extend and share the functionality. Extensions are simple add-ons you can use to customize and extend your Azure DevOps and work tracking experiences. The extensions are written with standard technologies like HTML, JavaScript, and CSS. You can also develop your own extensions by using your preferred dev tools:
+Extensions are add-ons that customize and extend Azure DevOps. You can install extensions from the [Azure DevOps Marketplace](https://marketplace.visualstudio.com/azuredevops), or build and publish your own using the [Azure DevOps extension SDK](../extend/overview.md) and [REST APIs](#rest-apis).
 
-- Build custom extensions by using the [RESTful API library](#rest-apis).
-- Publish your extensions to the Azure DevOps Marketplace.
-- Maintain your extensions for private use, or share your extensions with millions of developers who use Visual Studio and Azure DevOps.
+## REST APIs
 
-For more information, see the [Azure DevOps Marketplace](https://marketplace.visualstudio.com) and [Overview of extensions](../extend/overview.md).
-
-## REST APIs  
- 
-The Azure DevOps APIs are based on REST, OAuth, JSON, and service hook. These resources are standard web technologies that are broadly supported in the industry. REST APIs are provided to support building extensions to Azure DevOps. For more information, see [REST API overview](/rest/api/azure/devops).
+Azure DevOps provides REST APIs for programmatic access to projects, work items, builds, repos, and more. Use them to build custom integrations, automate workflows, or extend Azure DevOps functionality. For more information, see [REST API overview](/rest/api/azure/devops).
 
 ## Related content
 

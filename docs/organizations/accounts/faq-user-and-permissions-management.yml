@@ -6,19 +6,21 @@ metadata:
     - has-azure-ad-ps-ref
     - azure-ad-ref-level-one-done
     - sfi-image-nochange
+    - pat-reduction
   description: Learn the answers to frequently asked questions (FAQs), like the permissions that are required to manage users and user access, manage Visual Studio subscriptions, and more.
   ms.subservice: azure-devops-organizations
-  ms.assetid: 7107fb6c-c132-45c2-a0d1-d44e9270e907
   ms.topic: faq
   ms.author: chcomley
   author: chcomley
-  ms.date: 10/30/2025
+  ms.date: 04/24/2026
   monikerRange: '<= azure-devops'
 title: User and permissions management FAQs
 summary: |
   [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
   
-   This article provides answers to frequently asked questions (FAQs) about user and permissions management in Azure DevOps. The FAQs are organized by topic to help you quickly find information about managing users, permissions, access levels, Visual Studio subscriptions, GitHub Enterprise integration, and related administrative tasks.
+   This article provides answers to frequently asked questions (FAQs) about user and permissions management in Azure DevOps. The FAQs are organized by subject to help you quickly find information about managing users, permissions, access levels, Visual Studio subscriptions, GitHub Enterprise integration, and related administrative tasks.
+
+  [!INCLUDE [use-microsoft-entra-reduce-pats](../../includes/use-microsoft-entra-reduce-pats.md)]
   <a name="general-permissions"></a>
   
 
@@ -33,7 +35,7 @@ sections:
       - question: |
           Q: Why can't I manage users?
         answer: |
-          A: Be a member of the Project Collection Administrators group or [organization Owner](../security/look-up-organization-owner.md) to manage users at the organization level. To get added, see [Change permissions at the organization or collection-level](../security/change-organization-collection-level-permissions.md).
+          A: To manage users at the organization level, you must be a member of the Project Collection Administrators group or [organization Owner](../security/look-up-organization-owner.md). To get added, see [Change permissions at the organization or collection-level](../security/change-organization-collection-level-permissions.md).
           
           <a name="find-owner"></a>
           
@@ -64,6 +66,11 @@ sections:
   - name: Visual Studio subscriptions
     questions:
       - question: |
+          Q: How are Visual Studio subscribers detected?
+        answer: |
+          A: Azure DevOps automatically recognizes Visual Studio subscribers who have Azure DevOps as a benefit, based on the email address or [alternate identity](/visualstudio/subscriptions/use-connected-identities) associated with their subscription. Administrators can assign any access level initially, but when the user signs in, Azure DevOps detects the Visual Studio subscription and adjusts their access accordingly.
+      
+      - question: |
           Q: When do I select "Visual Studio/MSDN Subscriber"?
         answer: |
           A: Assign this access level to users who have active, valid [Visual Studio subscriptions](#EligibleMSDNSubscriptions). Azure DevOps automatically recognizes and validates Visual Studio subscribers who have Azure DevOps as a benefit. You need the email address associated with the subscription.
@@ -93,14 +100,85 @@ sections:
         answer: |
           A: Azure DevOps recognizes Visual Studio subscribers. Users automatically have access, based on their subscription, not on the current access level assigned to the user.
           
-          <a name="subscription-expired"></a>
-          
+          <a name="manage-expired-visual-studio-subscriptions"></a>
+
+  - name: Manage expired Visual Studio subscriptions
+    questions:
       - question: |
-          Q: What happens if a user's subscription expires?
+          Q: What is changing for expired Visual Studio subscribers in Azure DevOps?
         answer: |
-          A: If no other access levels are available, users can [work as Stakeholders](../../organizations/security/get-started-stakeholder.md). To restore access, a user must renew their subscription.
+          A: Historically, users with expired Visual Studio subscriptions continued to access Azure DevOps in organizations where they were added while their subscription was active. Starting February 2026, administrators can see which users have expired subscriptions. Admins have a grace period during February and March to act before these expired subscribers begin receiving Stakeholder access in April.
+
+          :::image type="content" source="media/faq/notification-banner-inactive-visual-studio-subscription.png" alt-text="Screenshot showing notification banner for inactive Visual Studio subscription." lightbox="media/faq/notification-banner-inactive-visual-studio-subscription.png":::
+
+      - question: |
+          Q: How can I tell if my users are impacted?
+        answer: |
+          A: Azure DevOps shows a banner in **Organization settings** > **Users** if your organization has impacted users. Users with an expired subscription are identified with an invalid access level but continue to have full access during February and March. Use the **Access Level** filter to show only users with an invalid Visual Studio subscription.
+
+          :::image type="content" source="media/faq/access-level-filter-shows-users-with-invalid-subscription.png" alt-text="Screenshot showing access level filter for users with inactive Visual Studio subscription." lightbox="media/faq/access-level-filter-shows-users-with-invalid-subscription.png":::
+
+      - question: |
+          Q: What about free pipelines for Visual Studio Enterprise users?
+        answer: |
+          A: If you have expiring Visual Studio Enterprise (VSE) subscribers, you can see how many free VSE self-hosted pipeline concurrency will be lost. Check your [self-hosted concurrency report](../../pipelines/agents/pool-consumption-report.md) and consider increasing [paid self-hosted concurrency](../../pipelines/licensing/concurrent-jobs.md) as needed. You won't lose any self-hosted concurrency from expiring Visual Studio Enterprise subscribers until April 2026.
+
+          :::image type="content" source="media/faq/self-hosted-concurrency-report.png" alt-text="Screenshot showing self-hosted concurrency report with expiring Visual Studio Enterprise subscribers." lightbox="media/faq/self-hosted-concurrency-report.png":::
+
+      - question: |
+          Q: Will users lose access immediately?
+        answer: |
+          A: No. In February and March 2026, expired Visual Studio subscribers retain their current access in Azure DevOps. During these months, the goal is to make admins aware and give them time to adjust licenses or [group rules](assign-access-levels-by-group-membership.md). Visual Studio subscribers with expired subscriptions begin expiring in April 2026, and after that they expire in Azure DevOps when they lose access in the [Visual Studio management portal](https://visualstudio.microsoft.com/subscriptions-administration/).
+
+      - question: |
+          Q: What happens when a Visual Studio subscription is no longer detected?
+        answer: |
+          A: When a user no longer has a Visual Studio subscription, they're treated like a new user.
+          
+          - If your organization's [default access level](../billing/buy-basic-access-add-users.md#select-default-access-level-for-new-users) is Basic, they get assigned Basic automatically.
+          - If your organization established [group rules](assign-access-levels-by-group-membership.md), the user receives the access specified by their group membership.
+          - If the user has a GitHub Enterprise license, they're assigned GitHub Enterprise.
+          - Otherwise, users who no longer have access through a Visual Studio subscription maintain Stakeholder access until an administrator assigns them paid access.
+          
+          In February and March 2026, if your organization's [default access level](../billing/buy-basic-access-add-users.md#select-default-access-level-for-new-users) or a [group rule](assign-access-levels-by-group-membership.md) provides the expired subscriber with the same level of access (for example, Basic for a Visual Studio Professional subscriber), they're assigned a new access level automatically. However, if the user has Basic + Test Plans access (for example, a Visual Studio Enterprise subscriber), but the [default access level](../billing/buy-basic-access-add-users.md#select-default-access-level-for-new-users) or [group rule](assign-access-levels-by-group-membership.md) would provide only Basic, they continue access with their Visual Studio subscriber access level.
+          
+          Starting in April 2026, a user without an active Visual Studio subscription is downgraded. They're assigned a new access level based on the organization's [default access level](../billing/buy-basic-access-add-users.md#select-default-access-level-for-new-users) or applicable [group rules](assign-access-levels-by-group-membership.md). If neither apply, they're marked as invalid with Stakeholder access.
+
+      - question: |
+          Q: What features are no longer available to users with Stakeholder access?
+        answer: |
+          [!INCLUDE [stakeholder-feature-limitations](includes/stakeholder-feature-limitations.md)]
+
+      - question: |
+          Q: How do I restore access to users who no longer have an active Visual Studio subscription?
+        answer: |
+          A: Assign Basic or Basic + Test Plans access to users who no longer have a Visual Studio subscription:
+          
+          1. Select ![gear icon](../../media/icons/gear-icon.png) **Organization settings** > **Users**.
+
+          2. Select the **Access level** filter and choose an invalid subscription type, such as **Visual Studio Enterprise subscription (Invalid)**.
+          
+              :::image type="content" source="media/faq/visual-studio-subscription-invalid.png" alt-text="Screenshot showing checked box for Visual Studio Enterprise subscription invalid." lightbox="media/faq/visual-studio-subscription-invalid.png":::
+          
+          3. Check the box for **All**.
+          
+              :::image type="content" source="media/faq/all-checkbox-selected.png" alt-text="Screenshot showing checked box for All." lightbox="media/faq/all-checkbox-selected.png":::
+          
+          4. Select :::image type="icon" source="../../media/icons/more-actions.png" border="false"::: **More actions** and **Change access level**.
+          
+              :::image type="content" source="media/faq/change-access-level.png" alt-text="Screenshot showing Manage and Change access level selections." lightbox="media/faq/change-access-level.png":::
+          
+          5. Select **Basic** or **Basic + Test Plans**.
+          
+              :::image type="content" source="media/faq/change-access-level-basic.png" alt-text="Screenshot showing Basic access level selected." lightbox="media/faq/change-access-level-basic.png":::
+
+          6. **Save** your changes.
           
           <a name="github-enterprise"></a>
+      - question: |
+          Q: Can I automate access level assignment before Visual Studio subscriptions expire?
+        answer: |
+          A: Yes. Consider updating your organization's [default access level](../billing/buy-basic-access-add-users.md#select-default-access-level-for-new-users) or establish [group rules](assign-access-levels-by-group-membership.md) so that users who lose access to a Visual Studio subscription, or new users joining the organization, can automatically receive the access they need without any manual intervention.
 
   - name: GitHub Enterprise
     questions:
@@ -135,13 +213,18 @@ sections:
           Q: What happens when a GitHub Enterprise license is no longer detected?
         answer: |
           A: When a user no longer has GitHub Enterprise, they're treated like a new user.  
-          - If your organization's default access level is Basic, they get assigned Basic automatically. 
-          - If your organization established Group Rules, the user receives the access specified by their group membership.
+          - If your organization's [default access level](../billing/buy-basic-access-add-users.md#select-default-access-level-for-new-users) is Basic, they get assigned Basic automatically. 
+          - If your organization established [group rules](assign-access-levels-by-group-membership.md), the user receives the access specified by their group membership.
           
           Otherwise, users who no longer have access through GitHub Enterprise maintain Stakeholder access until an administrator assigns them paid access.
 
           The following example shows that the license isn't detected anymore:
           ![Screenshot shows GitHub Enterprise no longer listed as user's access level in Organization settings, Users page.](media/faq/github-enterprise-no-license.png)
+
+      - question: |
+          Q: What features are unavailable to users users with Stakeholder access?
+        answer: |
+          [!INCLUDE [stakeholder-feature-limitations](includes/stakeholder-feature-limitations.md)]
       
       - question: |
           Q: How do I restore Basic access to users who no longer have a GitHub Enterprise license?
@@ -164,7 +247,7 @@ sections:
           6. Select **Basic** and **Save**.
               
               ![Screenshot showing Basic access level selected.](media/faq/basic-access-level-save.png)
-      
+
       - question: |
           Q: Are users using GitHub Enterprise Server detected as having GitHub Enterprise?
         answer: |
@@ -184,7 +267,28 @@ sections:
 
   - name: User access
     questions:
-      
+      - question: |
+          Q: How do I restore Basic access to users who no longer have a GitHub Enterprise license?
+        answer: |
+          A: Do the following steps to restore Basic access to users who no longer have a GitHub Enterprise license:
+          1. Select ![gear icon](../../media/icons/gear-icon.png) **Organization settings**.
+          2. Select **Users**.
+          3. Select the **Access level** filter and choose **GitHub Enterprise (Invalid)**.
+              
+              ![Screenshot showing GitHub Enterprise Invalid access level checked for user type.](media/faq/access-level-filter-github-enterprise-invalid.png)
+          
+          4. Check the box for **All**.
+              
+              ![Screenshot showing checked box for All.](media/faq/all-checkbox-selected.png)
+          
+          5. Select **Manage** and **Change access level**.
+              
+              ![Screenshot showing Manage and Change access level selections.](media/faq/manage-change-access-level.png)
+          
+          6. Select **Basic** and **Save**.
+              
+              ![Screenshot showing Basic access level selected.](media/faq/basic-access-level-save.png)
+          
       - question: |
           Q: What does "Last Access" mean in the All Users view?
         answer: |
@@ -270,7 +374,14 @@ sections:
       - question: |
           Q: Can I still use PATs for authentication?
         answer: |
-          A: You can still use personal access tokens (PATs) for authentication, but we recommend using the more secure method, Microsoft Entra tokens, whenever possible. For more information, see [Authenticate to Azure DevOps with Microsoft Entra](../../integrate/get-started/authentication/entra.md).
+          A: Yes, [personal access tokens (PATs)](use-personal-access-tokens-to-authenticate.md) still work for authentication, but Microsoft Entra tokens are the recommended alternative whenever possible. Microsoft Entra tokens are short-lived (one hour), automatically managed, and reduce the risk of credential leaks that long-lived PATs can introduce.
+          
+          If you're using PATs for automated processes or service accounts, consider these more secure alternatives:
+          - **Microsoft Entra tokens** - Use in place of most PATs for user-based scenarios. For more information, see [Authenticate to Azure DevOps with Microsoft Entra](../../integrate/get-started/authentication/entra.md).
+          - **Service principals** - Use for applications and services that need their own identity and permissions. For more information, see [Use service principals and managed identities](../../integrate/get-started/authentication/service-principal-managed-identity.md).
+          - **Managed identities** - Use for workloads running on Azure resources to eliminate credential management entirely.
+          
+          For a full comparison of authentication methods, see [Authentication guidance](../../integrate/get-started/authentication/authentication-guidance.md).
 
       - question: |
           Q: If I deny access to one authentication method in one organization, does that affect all the organizations that I own?
@@ -387,12 +498,12 @@ sections:
           If you're a Microsoft Entra guest, do one of the following steps:
           
           * Have another Azure DevOps admin, who isn't a Microsoft Entra guest, manage the users in Azure DevOps for you. Members of the Project Collection Administrators group inside Azure DevOps can administer users.
-          * Have the Microsoft Entra admin remove your account from the connected directory and readd it. The admin needs to make you a Microsoft Entra member rather than a guest. See [Can Microsoft Entra B2B users be added as members instead of guests?](/azure/active-directory/b2b/user-properties#can-azure-ad-b2b-users-be-added-as-members-instead-of-guests)
+          * Have the Microsoft Entra admin remove your account from the connected directory and readd it. The admin needs to make you a Microsoft Entra member rather than a guest. See [Can Microsoft Entra B2B users be added as members instead of guests?](/entra/external-id/user-properties#can-azure-ad-b2b-users-be-added-as-members-instead-of-guests)
           * Change the **User Type** of the Microsoft Entra guest by using Microsoft Graph PowerShell. We don't advise using the following process, but it works and allows the user to query Microsoft Entra ID from Azure DevOps  thereafter.
           
           1. [Download and install Microsoft Graph PowerShell](/powershell/microsoftgraph/installation).
               ```
-              PowerShell Install-Module -Name Microsoft Graph
+              PowerShell Install-Module -Name Microsoft.Graph
               ```
           2. Open PowerShell and run the following cmdlets.
           
@@ -414,7 +525,7 @@ sections:
               PowerShell Get-MgUser -UserId <Id> -Property DisplayName, ID, UserPrincipalName, UserType | Select DisplayName, ID, UserPrincipalName, UserType 
               ```
           
-              d. Change the **usertype** from **member** to **guest**:
+              d. Change the **usertype** from **guest** to **member**:
           
               ```
               PowerShell Update-MgUser -UserID <replace the  ID for the result of the command to search> -UserType Member

@@ -2,14 +2,14 @@
 title: Manage sprint timelines
 titleSuffix: Azure Boards
 description: Learn how to set and add dates for sprints, releases, or iterations to implement Scrum in Azure Boards.
-ms.custom: boards-sprints
+ms.custom: boards-sprints, copilot-scenario-highlight
 ms.service: azure-devops-boards
 ms.assetid: 1DB81E71-36D7-43A5-9C9A-38AA1777715A
 ms.author: chcomley
 author: chcomley
 ms.topic: quickstart
 monikerRange: '<= azure-devops'
-ms.date: 10/27/2025
+ms.date: 02/28/2026
 #customer intent: As an Azure Boards project administrator, I want to set dates and assign teams to sprints and iterations so I can assign teams their own boards and backlogs to manage.
 ---
 
@@ -23,11 +23,13 @@ Agile tools use the **Iteration path** field to track sprints and releases. Iter
 
 Use the guidance in this article to set or change sprint dates. To define iteration paths and tree structure or associate teams with sprints, see [Define iteration paths (sprints) and configure team iterations](../../organizations/settings/set-iteration-paths-sprints.md).
 
+[!INCLUDE [ai-assistance-mcp-server-tip](../../includes/ai-assistance-mcp-server-tip.md)]
+
 ## Prerequisites
 
 | Category | Requirements |
 |--------------|-------------|
-| **Permissions** | To change sprint dates: Member of the [Project Administrators](../../organizations/security/change-project-level-permissions.md) group, or **Edit this node** permission for the iteration child node, which is the team name. By default, the user who created the project has these permissions. For more information, see [Change project-level permissions](../../organizations/security/change-project-level-permissions.md) or [Set permissions and access for work tracking](../../organizations/security/set-permissions-access-work-tracking.md). | 
+| Permissions | To change sprint dates: Member of the [Project Administrators](../../organizations/security/change-project-level-permissions.md) group, or **Edit this node** permission for the iteration child node, which is the team name. By default, the user who created the project has these permissions. For more information, see [Change project-level permissions](../../organizations/security/change-project-level-permissions.md) or [Set permissions and access for work tracking](../../organizations/security/set-permissions-access-work-tracking.md). | 
 
 <a id="quick-start-schedule">   </a>
 ## Start scheduling sprints
@@ -73,6 +75,28 @@ Each sprint selected for a team provides a backlog, board, and other planning an
 
 > [!div class="nextstepaction"]
 > [Assign work to a sprint](assign-work-sprint.md)
+
+<a id="use-ai-assistance"></a>
+
+## Use AI to manage sprint definitions
+
+If you have the [Azure Boards MCP Server](../../mcp-server/mcp-server-overview.md) connected to your AI agent in agent mode, you can use natural language prompts to review sprint and iteration path configurations.
+
+| Task | Example prompt |
+|------|----------------|
+| List defined sprints | `List all iteration paths and their start and end dates for project <Contoso>` |
+| Check sprint dates | `What are the start and end dates for Sprint 12 in project <Contoso>?` |
+| Find sprints without dates | `Which sprints in project <Contoso> have no start or end date assigned?` |
+| Review team sprint assignments | `Which sprints are assigned to <Contoso Team>?` |
+| Identify sprint gaps | `Are there any date gaps or overlaps between consecutive sprints in project <Contoso>?` |
+| Plan future sprints | `List the next 6 sprints for <Contoso Team> with their dates and show which ones have work items assigned` |
+| Audit sprint naming | `List all iteration paths in project <Contoso> that don't follow the naming pattern "Sprint ##"` |
+| Compare team sprint schedules | `Show the sprint schedules for <Contoso Team> and <Backend Team> side by side so I can check alignment` |
+| Check sprint duration consistency | `Are all sprints in project <Contoso> the same length? Flag any sprints that differ from the standard 2-week cadence` |
+| Find sprints with no work | `Which upcoming sprints for <Contoso Team> have zero work items assigned so far?` |
+
+> [!NOTE]
+> Agent mode and the MCP Server use natural language, so you can adjust these prompts or ask follow-up questions to refine the results.
 
 ## Related content 
 

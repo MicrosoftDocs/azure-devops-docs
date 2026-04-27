@@ -1,11 +1,10 @@
 ---
 title: Troubleshoot pipeline runs
 description: Learn how to troubleshoot pipeline runs in Azure Pipelines using logs, error analysis tools, and common techniques to resolve issues.
-ms.assetid: BFCB144F-9E9B-4FCB-9CD1-260D6873BC2E
 ms.author: sdanie
 ms.reviewer: steved0x
-ms.topic: how-to
-ms.date: 04/25/2025
+ms.topic: troubleshooting
+ms.date: 04/20/2026
 monikerRange: '<= azure-devops'
 author: steved0x
 ---
@@ -190,7 +189,7 @@ You might see a message in the log "All files up to date" from the `tf get` comm
 
 ##### Get sources through Team Foundation Proxy
 
-The easiest way to configure the agent to get sources through a Team Foundation Proxy is set environment variable `TFSPROXY` that point to the TFVC proxy server for the agent's run as user.
+The easiest way to configure the agent to get sources through a Team Foundation Proxy is to set environment variables `TFSPROXY` that point to the TFVC proxy server for the agent's run as user.
 
 Windows:
 ```cmd
@@ -291,7 +290,29 @@ On Windows, tools like [Process Monitor](/sysinternals/downloads/procmon) can be
 
 #### Anti-virus exclusion
 
-Anti-virus software scanning your files can cause file or folder in use errors during a build or release. Adding an anti-virus exclusion for your agent directory and configured "work folder" can help to identify anti-virus software as the interfering process.
+Anti-virus software scanning your files can cause file or folder in use errors during a build or release, and builds might take longer to complete.
+Adding anti-virus exclusions for your self-hosted agent directories and processes can help resolve these issues.
+
+> [!WARNING]
+> Excluding files or processes from antivirus scanning can make your device or data more vulnerable. Evaluate the risks and only exclude paths you're confident are safe.
+
+**Processes to exclude:**
+
+- `Agent.Listener.exe`
+- `Agent.Worker.exe`
+- `AgentService.exe`
+
+**Directories to exclude (and their subdirectories):**
+
+- The agent installation directory (for example, `C:\agent` or `/home/user/myagent`)
+- The agent work folder: `<agent_directory>\_work`
+- The agent diagnostics folder: `<agent_directory>\_diag`
+- Build output folders configured for your pipelines, such as staging directories, artifact drop locations, and symbol publish paths
+- `%ProgramFiles%\Microsoft Visual Studio\<VersionNumber>` (Windows)
+- `C:\Windows\Microsoft.NET\Framework\<VersionNumber>\Temporary ASP.NET Files` (Windows)
+- `C:\Windows\Microsoft.NET\Framework64\<VersionNumber>\Temporary ASP.NET Files` (Windows)
+
+For more information, see [Antivirus scanning exclusions](./anti-virus-exclusion.md).
 
 #### MSBuild and /nodeReuse:false
 
@@ -421,6 +442,6 @@ For information on capturing additional resource utilization logs, see [Capture 
 
 In this scenario, you can use the [Azure File Copy task](/azure/devops/pipelines/tasks/reference/azure-file-copy-v4) to upload content to the website. You can use any of the tools described in [Uploading content](/azure/storage/blobs/storage-blob-static-website#uploading-content) to upload content to the web container.
 
-## Next steps
+## Next step
 
 * [Review logs](./review-logs.md) to uncover additional diagnostic tools.  

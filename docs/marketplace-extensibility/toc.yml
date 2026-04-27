@@ -2,7 +2,7 @@
   href: index.yml
 - name: Extensions overview
   href: ../extend/overview.md?toc=/azure/devops/marketplace-extensibility/toc.json
-- name: Authenticating with Azure DevOps
+- name: Authenticate with Azure DevOps
   href: ../integrate/get-started/authentication/authentication-guidance.md?toc=/azure/devops/marketplace-extensibility/toc.json
 - name: Get started
   items:
@@ -15,6 +15,9 @@
   - name: Manage extension permissions
     displayName: grant, publish, update, settings, admin
     href: ../marketplace/grant-permissions.md?toc=/azure/devops/marketplace-extensibility/toc.json
+  - name: Allow extensions to access local network resources
+    displayName: iframe, local network, security policy, browser, internal
+    href: ../marketplace/allow-extensions-local-network.md?toc=/azure/devops/marketplace-extensibility/toc.json
   - name: Manage high privilege extensions
     displayName: permission, administrator, privilege, extension, scope, Marketplace
     href: ../marketplace/manage-high-privilege-extensions.md?toc=/azure/devops/marketplace-extensibility/toc.json
@@ -51,11 +54,8 @@
       displayName: data, preferences, REST, API, settings, documents
       href: ../extend/develop/data-storage.md?toc=/azure/devops/marketplace-extensibility/toc.json
     - name: Add a hub
-      displayName: create, work, SDK, contribute
+      displayName: create, work, SDK, contribute, hub group
       href: ../extend/develop/add-hub.md?toc=/azure/devops/marketplace-extensibility/toc.json
-    - name: Add a hub group
-      displayName: create, SDK, install, extension
-      href: ../extend/develop/add-hub-group.md?toc=/azure/devops/marketplace-extensibility/toc.json
     - name: Add a menu action
       displayName: query, queries, extension, manifest, HTML, JavaScript
       href: ../extend/develop/add-action.md?toc=/azure/devops/marketplace-extensibility/toc.json
@@ -110,15 +110,21 @@
     - name: Package and publish integrations
       displayName: extend, enhance, tool, service, product, manifest, publisher
       href: ../extend/publish/integration.md?toc=/azure/devops/marketplace-extensibility/toc.json
-    - name: Make listing public and Top Publisher program
+    - name: Make your extension public
       displayName: Marketplace, extension, requirements, qualifications
-      href: ../extend/publish/overview.md?toc=/azure/devops/marketplace-extensibility/toc.json
+      href: ../extend/publish/overview.md?toc=/azure/devops/marketplace-extensibility/toc.json#make-your-extension-public
+    - name: Top Publisher program
+      displayName: Marketplace, badge, requirements, apply
+      href: ../extend/publish/overview.md?toc=/azure/devops/marketplace-extensibility/toc.json#top-publisher
     - name: Publish via command line
       displayName: CLI, Marketplace, share
       href: ../extend/publish/command-line.md?toc=/azure/devops/marketplace-extensibility/toc.json
     - name: Respond to Marketplace reviews
       displayName: owner, creator, contributor, reply, appeal
-      href: ../extend/publish/overview.md?toc=/azure/devops/marketplace-extensibility/toc.json
+      href: ../extend/publish/overview.md?toc=/azure/devops/marketplace-extensibility/toc.json#respond-to-marketplace-extension-reviews
+    - name: Deploy web content to Azure
+      displayName: publish, extension, install, subscription
+      href: ../extend/publish/publish-azure.md?toc=/azure/devops/marketplace-extensibility/toc.json
   - name: Reference
     items:
     - name: Manifest reference
@@ -137,20 +143,17 @@
       displayName: static, host, public, endpoint
       href: ../extend/develop/static-content.md?toc=/azure/devops/marketplace-extensibility/toc.json
     - name: Modal dialog
-      displayName: enable, customize, disable, pass, , show, values
+      displayName: enable, customize, disable, pass, show, values
       href: ../extend/develop/using-host-dialog.md?toc=/azure/devops/marketplace-extensibility/toc.json
     - name: Host page navigation
       displayName: API, hash, notification, refresh
-      href: ../extend/develop/host-navigation.md?toc=/azure/devops/marketplace-extensibility/toc.json
+      href: ../extend/develop/work-with-urls.md?toc=/azure/devops/marketplace-extensibility/toc.json
     - name: Basic styles for widgets
       displayName: SDK, JavaScript, stylesheet, dashboard
       href: ../extend/develop/styles-from-widget-sdk.md?toc=/azure/devops/marketplace-extensibility/toc.json
-    - name: Deploy web content to Azure
-      displayName: publish, extension, install, subscription
-      href: ../extend/publish/publish-azure.md?toc=/azure/devops/marketplace-extensibility/toc.json
-- name: Integrate with Service Hooks
+- name: Integrate with service hooks
   items:
-  - name: About service hooks
+  - name: Service hooks overview
     displayName: integrate, project, tasks, events, publisher, subscription, endpoint, notification
     href: ../service-hooks/overview.md?toc=/azure/devops/marketplace-extensibility/toc.json
   - name: Create a service hook
@@ -205,15 +208,15 @@
     href: ../pipelines/integrations/slack.md?toc=/azure/devops/marketplace-extensibility/toc.json
   - name: Azure Pipelines with Microsoft Teams
     href: ../pipelines/integrations/microsoft-teams.md?toc=/azure/devops/marketplace-extensibility/toc.json
-- name: Building Azure DevOps applications
+- name: Build Azure DevOps applications
   href: ../integrate/index.md?toc=/azure/devops/dev-resources/toc.json
 - name: Reference
   items:
   - name: Rate limits
     href: ../integrate/concepts/rate-limits.md
-  - name: Deprecation of WIT & Test client OM
+  - name: WIT & Test client OM deprecation
     href: ../integrate/concepts/wit-client-om-deprecation.md
-  - name: Migrate code to REST-based .NET Client Libraries
+  - name: Migrate to REST-based .NET client libraries
     href: ../integrate/concepts/migration-guide.md
   - name: .NET client libraries reference
     href: /dotnet/api/index?view=azure-devops-dotnet&preserve-view=true

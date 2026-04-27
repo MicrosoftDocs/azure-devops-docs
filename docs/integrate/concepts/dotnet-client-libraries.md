@@ -4,12 +4,12 @@ description: Learn how to use Azure DevOps .NET client libraries to integrate wo
 ms.assetid: 474cdb4f-9a5e-49fb-84b2-9c540ebcf98b
 ai-usage: ai-assisted
 ms.subservice: azure-devops-ecosystem
-ms.custom: devx-track-dotnet
+ms.custom: devx-track-dotnet, pat-reduction
 ms.topic: overview
 monikerRange: '<= azure-devops'
 ms.author: chcomley
 author: chcomley
-ms.date: 07/02/2025
+ms.date: 03/02/2026
 #customer intent: As a .NET developer, I want to integrate my C# applications with Azure DevOps services like work items, Git repositories, builds, and pipelines using official client libraries and REST APIs.
 ---
 
@@ -203,3 +203,10 @@ The [Microsoft.TeamFoundationServer.ExtendedClient](https://www.nuget.org/packag
 
 > [!IMPORTANT]
 > This package includes our older SOAP object model, which we replaced by our newer REST object model. We're no longer investing in the older SOAP object model, and have no plans to create a NetStandard version of it.
+
+## Related content
+
+- [.NET client library samples](../get-started/client-libraries/samples.md)
+- [Authentication guidance](../get-started/authentication/authentication-guidance.md)
+- [Migration guide from WIT Client OM](migration-guide.md)
+- [REST API samples](../get-started/rest/samples.md)

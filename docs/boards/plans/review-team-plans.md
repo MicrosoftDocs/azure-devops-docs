@@ -7,10 +7,10 @@ ms.assetid: 3B41D55E-B7B1-41B1-B68F-7A83BA2890A5
 ms.author: chcomley
 author: chcomley
 ms.topic: tutorial
-ms.custom: cross-project  
+ms.custom: cross-project, copilot-scenario-highlight
 ai-usage: ai-assisted
 monikerRange: '>= azure-devops-2022'
-ms.date: 10/23/2025
+ms.date: 02/28/2026
 #customer intent: As a product and portfolio owner, I want to understand delivery plans so I can use them to interact with multiple deliverables and schedules and review them with my teams.
 ---
 
@@ -19,6 +19,8 @@ ms.date: 10/23/2025
 [!INCLUDE [version-gt-eq-2022](../../includes/version-gt-eq-2022.md)] 
 
 Delivery plans in Azure Boards let you visualize and review the work items that your teams plan to deliver. A delivery plan shows selected teams' scheduled work items by sprint or iteration path in a calendar view.
+
+[!INCLUDE [ai-assistance-mcp-server-tip](../../includes/ai-assistance-mcp-server-tip.md)]
 
 You can use Delivery Plans to review multiple backlogs and teams across your Azure DevOps organization. The delivery plan drives alignment with organizational goals while letting each team remain autonomous.
 
@@ -39,9 +41,9 @@ Delivery Plans supports the following tasks:
 
 | Category | Requirements |
 |--------------|-------------|
-| **Configuration** | An [existing delivery plan](add-edit-delivery-plan.md) that conforms to the following requirements:<br>- Plan views are limited to a maximum of 20 teams or backlogs. <br>- Work items belong to the team's [product backlog](../backlogs/create-your-backlog.md) or [portfolio backlog](../backlogs/define-features-epics.md). Only work item types selected for viewing on a team's backlog appear on the plan. Eliminate cross-team ownership of area paths to avoid undesirable edge cases.<br>- [Team product or portfolio backlog is enabled](../../organizations/settings/select-backlog-navigation-levels.md).<br> - [Sprints or iterations are selected for each team](../../organizations/settings/set-iteration-paths-sprints.md#select-team-sprints-and-set-the-default-iteration-path) defined in the plan.<br>- [Iteration paths](../sprints/assign-work-sprint.md) are assigned to each work item, and [start and end dates](../../organizations/settings/set-iteration-paths-sprints.md#add-iterations-and-set-iteration-dates) are defined for each iteration.<br>- For dependency icons and lines to show, [work items are linked](../backlogs/add-link.md) via the **Predecessor**, **Successor**, or other custom dependency link type. [Remote link types](../queries/link-type-reference.md#remote-work-link-type) aren't supported, and you can use custom link types only in on-premises environments. |
-| **Access levels** | To view a delivery plan: Member of the **Project Collection Valid Users** group. Users granted **Stakeholder** access for a private project can view plans. Users granted **Stakeholder** access for a public project can add and view plans. |
-| **Permissions** | To open or modify a work item, or add work items to a plan: **Edit work items in this node** permission set to **Allow** for the area paths assigned to the work item. For more information, see [Set permissions and access for work tracking](../../organizations/security/set-permissions-access-work-tracking.md#set-permissions-area-path). |
+| Configuration | An [existing delivery plan](add-edit-delivery-plan.md) that conforms to the following requirements:<br>- Plan views are limited to a maximum of 20 teams or backlogs. <br>- Work items belong to the team's [product backlog](../backlogs/create-your-backlog.md) or [portfolio backlog](../backlogs/define-features-epics.md). Only work item types selected for viewing on a team's backlog appear on the plan. Eliminate cross-team ownership of area paths to avoid undesirable edge cases.<br>- [Team product or portfolio backlog is enabled](../../organizations/settings/select-backlog-navigation-levels.md).<br> - [Sprints or iterations are selected for each team](../../organizations/settings/set-iteration-paths-sprints.md#select-team-sprints-and-set-the-default-iteration-path) defined in the plan.<br>- [Iteration paths](../sprints/assign-work-sprint.md) are assigned to each work item, and [start and end dates](../../organizations/settings/set-iteration-paths-sprints.md#add-iterations-and-set-iteration-dates) are defined for each iteration.<br>- For dependency icons and lines to show, [work items are linked](../backlogs/add-link.md) via the **Predecessor**, **Successor**, or other custom dependency link type. [Remote link types](../queries/link-type-reference.md#remote-work-link-type) aren't supported, and you can use custom link types only in on-premises environments. |
+| Access levels | To view a delivery plan: Member of the **Project Collection Valid Users** group. Users granted **Stakeholder** access for a private project can view plans. Users granted **Stakeholder** access for a public project can add and view plans. |
+| Permissions | To open or modify a work item, or add work items to a plan: **Edit work items in this node** permission set to **Allow** for the area paths assigned to the work item. For more information, see [Set permissions and access for work tracking](../../organizations/security/set-permissions-access-work-tracking.md#set-permissions-area-path). |
 
 To create a delivery plan, see [Add or edit a delivery plan](add-edit-delivery-plan.md).
 
@@ -176,6 +178,22 @@ You can print all or part of your delivery plan. Depending on the view you want 
 To print a portion of a plan, select the **Fullscreen** icon on the delivery plan's top bar, and then expand or collapse teams and zoom in or out to get the desired view. Take a screenshot of the view or use your browser's **Print** function.
 
 To share a delivery plan with team members, copy the URL and send the copied URL to your team members.
+
+<a id="use-ai-assistance"></a>
+
+## Use AI to review team delivery plans
+
+If you have the [Azure Boards MCP Server](../../mcp-server/mcp-server-overview.md) connected to your AI agent in agent mode, you can use natural language prompts to query work items across team backlogs and sprints.
+
+| Task | Example prompt |
+|------|----------------|
+| Review sprint work | `Show all work items assigned to Sprint 8 for the Web team` |
+| Find cross-sprint features | `List features that have child items spanning multiple sprints` |
+| Check team progress | `What epics are in progress across all teams in the <Contoso> project?` |
+| Reschedule items | `Move user story #1234 to Sprint 9` |
+
+> [!NOTE]
+> Agent mode and the MCP Server use natural language, so you can adjust these prompts or ask follow-up questions to refine the results.
 
 ## Related content  
  

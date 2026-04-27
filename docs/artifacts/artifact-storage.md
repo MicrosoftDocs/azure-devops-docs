@@ -31,9 +31,7 @@ The organization‑level storage view provides an overview of total storage usag
 
 1. Sign in to your Azure DevOps organization.
 
-1. Select ![gear icon](../media/icons/gear-icon.png) **Organization settings**, and then select **Storage** from the left navigation pane.
-
-    :::image type="content" source="media/artifact-storage-navigation.png" alt-text="A screenshot displaying how to navigate to the organization-level storage view.":::
+1. Select ![gear icon](../media/icons/gear-icon.png) **Organization settings**, then select **Storage** under **Artifacts**.
 
 1. You can view your **Total storage summary**, **Storage by artifact type**, and **Storage by projects** in your organization.
 
@@ -52,9 +50,7 @@ The project-level storage view provides an overview of total storage usage, incl
 
 1. Sign in to your Azure DevOps organization, then navigate to your project.
 
-1. From the left navigation pane, select ![gear icon](../media/icons/gear-icon.png) **Project settings**, then **Storage**.
-
-    :::image type="content" source="media/artifacts-storage-navigation-project-level.png" alt-text="A screenshot displaying how to navigate to project-level storage view.":::
+1. From the left navigation pane, select ![gear icon](../media/icons/gear-icon.png) **Project settings**, and then select **Storage** under **Artifacts**.
 
 1. You can view your **Total storage summary** and **Storage by artifact type** for your project.
 
@@ -80,7 +76,7 @@ The following table illustrates the supported size and count limits for each pac
 | Cargo              | 500 MiB                                                           | 5,000 versions per package ID      | Unlimited                   |
 | Universal Packages | 4 TiB                                                             | 5,000 versions per package ID      | Unlimited                   |
 
-> [Note]
+> [!NOTE]
 > Azure Artifacts enforces a hard limit of **375 KB** for *package.json* files in npm projects.
 
 ## Increase Artifacts storage limit 
@@ -88,6 +84,9 @@ The following table illustrates the supported size and count limits for each pac
 Azure Artifacts includes 2 GiB of free storage per organization. Once your organization reaches the storage limit, you won’t be able to publish new artifacts. To continue, you can either delete some of your existing artifacts or increase your storage limit by following these steps:
 
 1. [Set up billing for your organization](../organizations/billing/set-up-billing-for-your-organization-vs.md#set-up-billing-for-your-organization).
+
+    > [!NOTE]
+    > To Set up billing for your organization, you must be a member of the **Project Collection Administrators** group and have the **Owner** or **Contributor** role on the Azure subsbription your organization uses for billing. See [Manage billing](../organizations/billing/set-up-billing-for-your-organization-vs.md) for more details.
 
 1. Sign in to your Azure DevOps organization, select **Organization settings** > **Billing**, then select **No limit, pay for what you use** from the **Usage limit** dropdown.
 

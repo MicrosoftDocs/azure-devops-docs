@@ -1,73 +1,101 @@
 ---
-title: Uploading tasks to the Azure DevOps collection
-description: Uploading tasks to the Azure DevOps collection using the Node CLI for Azure DevOps
+title: Upload pipeline tasks to Azure DevOps
+description: Learn how to upload custom or in-the-box pipeline tasks to Azure DevOps by using the Node CLI for Azure DevOps (tfx-cli).
 ms.topic: how-to
-ms.date: 01/20/2022
-monikerRange: 'azure-devops'
+ms.custom: UpdateFrequency3
+ms.author: chcomley
+author: chcomley
+ms.date: 04/03/2026
+ai-usage: ai-assisted
+monikerRange: '<= azure-devops'
 ---
 
-# Upload tasks to project collection
+# Upload pipeline tasks to Azure DevOps
 
-[!INCLUDE [version-eq-azure-devops](../../includes/version-eq-azure-devops.md)]
+[!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
-Learn how to upload tasks to organization for custom tasks or in-the-box tasks in Azure DevOps using the Node CLI for Azure DevOps (tfx-cli).
-
-For example, this guideline can help to update in-the-box tasks on Azure DevOps Server.
+Upload custom or in-the-box pipeline tasks to your Azure DevOps organization or Azure DevOps Server project collection by using the Node CLI for Azure DevOps (tfx-cli).
 
 > [!IMPORTANT]
-> When uploading in-the-box tasks to an on-premises instance, some task capabilities might not be supported due to the old agent version or lack of support on the Azure DevOps Server side.
+> When you upload in-the-box tasks to an Azure DevOps Server instance, some task capabilities might not be supported due to the agent version or lack of support on the server side.
 
 For more information about **tfx-cli**, see the [Node CLI for Azure DevOps on GitHub](https://github.com/Microsoft/tfs-cli).
 
 ## Prerequisites
 
-To upload tasks to project collection, you need prerequisites:
+| Category | Requirements |
+|----------|-------------|
+| **Permissions** | Membership in the **Agent Pool Administrators** group at the organization or collection level. See [Security groups, service accounts, and permissions](../../organizations/security/permissions.md). |
+| **Tokens** | A [personal access token (PAT)](../../organizations/accounts/use-personal-access-tokens-to-authenticate.md) with the scope **Agent Pools (Read & manage)**, or a [Microsoft Entra token](../../integrate/get-started/authentication/entra-oauth.md). Entra tokens are recommended over PATs for better security. |
+| **Tools** | [Latest version of Node.js](https://nodejs.org/en/download/) and [tfx-cli](https://github.com/Microsoft/tfs-cli) installed globally: `npm install -g tfx-cli` |
 
-- The [latest version](https://nodejs.org/en/download/) of **Node.js**.
-- The **Node CLI for Azure DevOps** to upload tasks.
-  - Install **tfx-cli** using `npm`, a component of Node.js by running:
+## Sign in with tfx-cli
 
-   ```
-    npm install -g tfx-cli
-   ```
-- Permissions to update required project collection, PAT generated with scope **Environment (Read & Write)** to be able to upload tasks to the project collection.
-  [!INCLUDE [use-microsoft-entra-reduce-pats](../../includes/use-microsoft-entra-reduce-pats.md)]
+Sign in to Azure DevOps by using tfx-cli before you upload tasks. For more authentication options, see [Cross-platform CLI authentication for Azure DevOps](../../integrate/get-started/auth/tfs-basic-auth.md).
 
-## Tfx-cli sign in with personal access token
+Run the following command and provide the service URL and PAT when prompted:
 
-Sign in to Azure DevOps with tfx-cli to upload pipeline tasks to the project collection.
-
-> [!IMPORTANT]
-> A personal access token is required by default for authentication to project collection in Azure DevOps. Create [personal access token (PAT)](../../organizations/accounts/use-personal-access-tokens-to-authenticate.md) with scope **Environment (Read & manage)**.
-> You can use other ways to authorize with tfx-cli. For more information, see [Authenticate in Cross-platform CLI for Azure DevOps](../../integrate/get-started/auth/tfs-basic-auth.md).
-
-To sign in, specify the path to project collection as URL. The default name of the project collection is `DefaultCollection`.
-
-For Azure DevOps Services, path to project collection would have the following format:
-`https://{Azure DevOps organization name}.visualstudio.com/DefaultCollection`
-
-For Azure DevOps Server, the default project collection URL depends on the location of the url server and its template:
-`http://{Azure DevOps Server url}/DefaultCollection`
-
-Enter the following command and provide requested information:
-
-```
-~$ tfx login
+```shell
+tfx login
 ```
 
+Use the service URL that matches your environment:
 
-## Uploading tasks to the project collection
+| Environment | URL format |
+|---|---|
+| Azure DevOps Services | `https://dev.azure.com/{organization}` |
+| Azure DevOps Server | `http://{server}:{port}/DefaultCollection` |
+
+
+## Upload tasks
 
 > [!TIP]
-> If you need to update in-the-box pipeline tasks, you can clone [azure-pipelines-tasks](https://github.com/microsoft/azure-pipelines-tasks) repository, and build required tasks following [the guideline - how to build tasks](https://github.com/microsoft/azure-pipelines-tasks/blob/master/docs/contribute.md#install-dependencies).
+> If you need to update the in-the-box pipeline tasks, you can clone the [azure-pipelines-tasks](https://github.com/microsoft/azure-pipelines-tasks) repository. Then, build the required tasks by following [the guideline - how to build tasks](https://github.com/microsoft/azure-pipelines-tasks/blob/master/docs/contribute.md#install-dependencies).
 
-Now you can start to upload task using `tfx-cli`.
+Upload a task by using `tfx-cli`:
 
-Enter the following command:
-
-```
+```shell
 tfx build tasks upload --task-path <PATH_TO_TASK>
 ```
 
-> [!NOTE]
-> PATH_TO_TASK is the path to the folder with the compiled task. For more information about using tfx-cli, see [Node CLI for Azure DevOps documentation](https://github.com/microsoft/tfs-cli/blob/master/README.md).
+`PATH_TO_TASK` is the path to the folder that contains the compiled task, including `task.json`.
+
+> [!IMPORTANT]
+> Pipeline agents cache tasks by version. If you modify a task and re-upload it with the same version number, agents continue to use the cached copy. Always bump at least the patch version in `task.json` before you upload an updated task.
+
+## Verify the upload
+
+Confirm that your task uploaded successfully:
+
+```shell
+tfx build tasks list
+```
+
+The output lists all tasks on the server, including the `id`, `name`, and `version` of each task.
+
+## Delete a task
+
+Remove an uploaded task by specifying its ID. Get the task ID from the `tfx build tasks list` output.
+
+```shell
+tfx build tasks delete --task-id <TASK_ID>
+```
+
+> [!WARNING]
+> Deleting a task removes it from the server. Any pipeline that references the deleted task fails on the next run.
+
+## Troubleshooting
+
+| Error | Cause | Fix |
+|-------|-------|-----|
+| **401 Unauthorized** | PAT expired, revoked, or missing the **Agent Pools (Read & manage)** scope. | Create a new PAT with the correct scope. |
+| **403 Forbidden** | Your account isn't in the **Agent Pool Administrators** group. | Ask an organization admin to add you. |
+| **Task already exists** | Uploaded the same version that's already on the server. | Bump the patch version in `task.json` and upload again. |
+
+For more information about tfx-cli, see the [Node CLI for Azure DevOps documentation](https://github.com/microsoft/tfs-cli/blob/master/README.md).
+
+## Related content
+
+- [Add a custom pipelines task extension](add-build-task.md)
+- [Use personal access tokens to authenticate](../../organizations/accounts/use-personal-access-tokens-to-authenticate.md)
+- [Node CLI for Azure DevOps (GitHub)](https://github.com/Microsoft/tfs-cli)

@@ -1441,6 +1441,14 @@
       ]
     },
     {
+      "source_path": "docs/extend/develop/add-hub-group.md",
+      "redirect_url": "/azure/devops/extend/develop/add-hub#add-a-custom-hub-group",
+      "redirect_document_id": false,
+      "monikers": [
+        "azure-devops"
+      ]
+    },
+    {
       "source_path": "docs/extend/develop/add-query-result-tabs.md",
       "redirect_url": "/previous-versions/azure/devops/extend/develop/add-query-result-tabs",
       "redirect_document_id": false,
@@ -1522,10 +1530,18 @@
     },
     {
       "source_path": "docs/extend/develop/host-navigation.md",
-      "redirect_url": "/previous-versions/azure/devops/extend/develop/host-navigation",
+      "redirect_url": "/azure/devops/extend/develop/work-with-urls",
       "redirect_document_id": false,
       "monikers": [
         "azure-devops-2020"
+      ]
+    },
+    {
+      "source_path": "docs/extend/develop/host-navigation.md",
+      "redirect_url": "/azure/devops/extend/develop/work-with-urls",
+      "redirect_document_id": false,
+      "monikers": [
+        "azure-devops"
       ]
     },
     {
@@ -2010,7 +2026,7 @@
     },
     {
       "source_path": "docs/organizations/notifications/troubleshoot-delayed-email.md",
-      "redirect_url": "/previous-versions/azure/devops/organizations/notifications/troubleshoot-delayed-email",
+      "redirect_url": "/azure/devops/organizations/notifications/troubleshoot-not-getting-email",
       "redirect_document_id": false,
       "monikers": [
         "azure-devops-2020"
@@ -2026,11 +2042,21 @@
     },
     {
       "source_path": "docs/organizations/notifications/troubleshoot-unexpected-email.md",
-      "redirect_url": "/previous-versions/azure/devops/organizations/notifications/troubleshoot-unexpected-email",
+      "redirect_url": "/azure/devops/organizations/notifications/troubleshoot-not-getting-email",
       "redirect_document_id": false,
       "monikers": [
         "azure-devops-2020"
       ]
+    },
+    {
+      "source_path": "docs/organizations/notifications/troubleshoot-delayed-email.md",
+      "redirect_url": "/azure/devops/organizations/notifications/troubleshoot-not-getting-email",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/organizations/notifications/troubleshoot-unexpected-email.md",
+      "redirect_url": "/azure/devops/organizations/notifications/troubleshoot-not-getting-email",
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/organizations/notifications/unsubscribe-default-notification.md",
@@ -4890,6 +4916,11 @@
     },
     {
       "source_path": "docs/report/powerbi/data-connector-examples.md",
+      "redirect_url": "/azure/devops/report/powerbi/data-connector-connect",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/report/powerbi/data-connector-examples.md",
       "redirect_url": "/previous-versions/azure/devops/report/powerbi/data-connector-examples",
       "redirect_document_id": false,
       "monikers": [
@@ -4922,7 +4953,7 @@
     },
     {
       "source_path": "docs/report/powerbi/performance-latency.md",
-      "redirect_url": "/previous-versions/azure/devops/report/powerbi/performance-latency",
+      "redirect_url": "/azure/devops/report/powerbi/what-is-analytics#performance-and-latency",
       "redirect_document_id": false,
       "monikers": [
         "azure-devops-2020"
@@ -5111,6 +5142,11 @@
       "monikers": [
         "azure-devops-2020"
       ]
+    },
+    {
+      "source_path": "docs/report/powerbi/sample-test-analyics-test-duration-trend.md",
+      "redirect_url": "/azure/devops/report/powerbi/sample-test-analytics-test-duration-trend",
+      "redirect_document_id": true
     },
     {
       "source_path": "docs/report/powerbi/sample-test-analyics-test-duration-trend.md",
@@ -8706,7 +8742,7 @@
     },
     {
       "source_path": "docs/extend/develop/host-navigation.md",
-      "redirect_url": "/previous-versions/azure/devops/extend/develop/host-navigation",
+      "redirect_url": "/azure/devops/extend/develop/work-with-urls",
       "redirect_document_id": false,
       "monikers": [
         "azure-devops-2019"
@@ -9138,7 +9174,7 @@
     },
     {
       "source_path": "docs/organizations/notifications/troubleshoot-delayed-email.md",
-      "redirect_url": "/previous-versions/azure/devops/organizations/notifications/troubleshoot-delayed-email",
+      "redirect_url": "/azure/devops/organizations/notifications/troubleshoot-not-getting-email",
       "redirect_document_id": false,
       "monikers": [
         "azure-devops-2019"
@@ -9154,7 +9190,7 @@
     },
     {
       "source_path": "docs/organizations/notifications/troubleshoot-unexpected-email.md",
-      "redirect_url": "/previous-versions/azure/devops/organizations/notifications/troubleshoot-unexpected-email",
+      "redirect_url": "/azure/devops/organizations/notifications/troubleshoot-not-getting-email",
       "redirect_document_id": false,
       "monikers": [
         "azure-devops-2019"
@@ -11714,7 +11750,7 @@
     },
     {
       "source_path": "docs/report/powerbi/performance-latency.md",
-      "redirect_url": "/previous-versions/azure/devops/report/powerbi/performance-latency",
+      "redirect_url": "/azure/devops/report/powerbi/what-is-analytics#performance-and-latency",
       "redirect_document_id": false,
       "monikers": [
         "azure-devops-2019"
@@ -14471,6 +14507,21 @@
     {
       "source_path_from_root": "/docs/pipelines/test/codecoverage-for-pullrequests.md",
       "redirect_url": "/azure/devops/pipelines/test/review-code-coverage-results",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/test/provide-stakeholder-feedback.md",
+      "redirect_url": "/azure/devops/test/request-stakeholder-feedback",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/test/voluntary-stakeholder-feedback.md",
+      "redirect_url": "/azure/devops/test/request-stakeholder-feedback",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/test/track-stakeholder-feedback.md",
+      "redirect_url": "/azure/devops/test/request-stakeholder-feedback",
       "redirect_document_id": false
     }
   ]

@@ -27,7 +27,7 @@ Azure DevOps supports adding and updating processes through an administrative ex
 
 A process is a zip file that contains a set of interdependent files. These files define the building blocks of the work-item tracking system and other subsystems in Azure DevOps. Some building blocks update existing projects, while others apply only to new projects. See the following table for the full list of building blocks:
 
-| **Used when importing/updating a process** | **Used when creating a new project** | **Replaced by system defaults** | **Ignored** |
+| Used when importing/updating a process | Used when creating a new project | Replaced by system defaults | Ignored |
 |------------|------------------------|-------------------------|-------------|
 | Work Item Tracking  | Areas and Iterations    | Build      | Microsoft Project Mappings |
 | Work item types (WITs)       | Test Management   | Lab Management  | Reports      |
@@ -51,18 +51,18 @@ If you're updating an existing process previously used with Azure DevOps Server,
 Do the following steps to import or export a process:
 
 1. Sign in to your organization (```https://dev.azure.com/{Your_Organization}```).
-2. Select :::image type="icon" source="../../../../media/icons/gear-icon.png" border="false"::: **Organization settings**.
+2. Select :::image type="icon" source="../../../../media/icons/gear-icon.png" border="false"::: Organization settings.
 
    > [!div class="mx-imgBorder"] 
    > ![Screenshot shows highlighted Organization settings button.](../../../../media/settings/open-admin-settings-vert.png)  
 
-3. Select **Process**. 
+3. Select Process. 
    
    > [!div class="mx-imgBorder"]  
    > ![Screenshot shows Organization settings, Process page.](/azure/devops/organizations/settings/work/media/process/open-process-page-s150.png) 
 
    > [!IMPORTANT]  
-   > If you don't see **Process**, then you're working from an earlier version where the **Process** page isn't supported. Use the features supported for the [On-premises XML process model](../../../../reference/customize-work.md).
+   > If you don't see Process, then you're working from an earlier version where the Process page isn't supported. Use the features supported for the [On-premises XML process model](../../../../reference/customize-work.md).
 
 4. Select the ellipsis (...) to open the shortcut menu for the Hosted XML process that you want to export. You can export only Hosted XML processes.
 

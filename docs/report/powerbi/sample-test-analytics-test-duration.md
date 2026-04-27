@@ -4,20 +4,21 @@ titleSuffix: Azure DevOps
 description: Learn how to generate a test duration Power BI report for a given pipeline in the project.
 ms.subservice: azure-devops-analytics
 ms.reviewer: desalg
-ms.manager: mijacobs
+ms.manager: wiwagn
 ms.author: chcomley
 ms.custom: powerbisample, engagement-fy23
 author: chcomley
 ms.topic: sample
 monikerRange: "<=azure-devops"
 ms.date: 09/09/2024
+ai-usage: ai-assisted
 ---
 
 # Test duration sample report
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)] 
 
-Test duration reports, similar to the one shown in the following image, provide insight into the number of times a test is run and the average time it takes for a particular test to execute during a pipeline run.
+Test duration reports, similar to the one shown in the following image, provide insight into the number of times a test runs and the average time it takes for a particular test to execute during a pipeline run.
 
 :::image type="content" source="media/pipeline-test-reports/test-duration-table-report.png" alt-text="Screenshot of Test Duration Table report.":::
 
@@ -37,7 +38,7 @@ Use the queries provided in this article to generate the following reports:
 
 ## Sample queries
 
-You can use the following queries of the `TestResultsDaily` entity set to create different but similar test duration reports. The `TestResultsDaily` entity set provides a daily snapshot aggregate of `TestResult` executions, grouped by test.  
+Use the following queries of the `TestResultsDaily` entity set to create different but similar test duration reports. The `TestResultsDaily` entity set provides a daily snapshot aggregate of `TestResult` executions, grouped by test.  
 
 [!INCLUDE [temp](includes/query-filters-test-pipelines.md)]
 
@@ -149,8 +150,8 @@ $apply=filter(
 
 To view the test duration of pipeline tests for a particular branch, use the following queries. To create the report, carry out the following extra steps along with what is specified later in this article.
 
-- Expand `Branch` into `Branch.BranchName`
-- Select Power BI Visualization Slicer and add the field `Branch.BranchName` to the slicer's **Field**
+- Expand `Branch` into `Branch.BranchName`.
+- Select Power BI Visualization Slicer and add the field `Branch.BranchName` to the slicer's **Field**.
 - Select the branch name from the slicer for which you need to see the outcome summary.
 
 For more information about using slicers, see [Slicers in Power BI](/power-bi/visuals/power-bi-visualization-slicers).
@@ -208,8 +209,8 @@ $apply=filter(
 
 To view the test duration of a pipeline for tests owned by a particular test owner, use the following queries. To create the report, carry out the following extra steps along with what is defined later in this article.
 
-- Expand `Test` into `Test.ContainerName`
-- Select Power BI Visualization Slicer and add the field `Test.ContainerName` to the slicer's **Field**
+- Expand `Test` into `Test.ContainerName`.
+- Select Power BI Visualization Slicer and add the field `Test.ContainerName` to the slicer's **Field**.
 - Select the test file from the slicer for which you need to see the outcome summary. 
 
 #### [Power BI query](#tab/powerbi/)
@@ -265,8 +266,8 @@ $apply=filter(
 
 To view the test duration of a pipeline for tests owned by a particular test owner, use the following queries. To create the report, carry out the following extra steps along with what is defined later in this article.
 
-- Expand `Test` into `Test.TestOwner`
-- Select Power BI Visualization Slicer and add the field `Test.TestOwner` to the slicer's **Field**
+- Expand `Test` into `Test.TestOwner`.
+- Select Power BI Visualization Slicer and add the field `Test.TestOwner` to the slicer's **Field**.
 - Select the test owner from the slicer for which you need to see the outcome summary.
 
 #### [Power BI query](#tab/powerbi/)
@@ -457,13 +458,13 @@ The following table describes each part of the query.
 
 ## Expand the Test column in Power BI
 
-Expand the `Test` column to show the expanded entity `Test.TestName`. Expanding the column flattens the record into specific fields. To learn how, see [Transform Analytics data to generate Power BI reports, Expand columns](transform-analytics-data-report-generation.md#expand-columns). 
+Expand the `Test` column to show the expanded entity `Test.TestName`. When you expand the column, you flatten the record into specific fields. For more information, see [Transform Analytics data to generate Power BI reports, Expand columns](transform-analytics-data-report-generation.md#expand-columns). 
 
 ## Change column data type
 
-1. From the Power Query Editor, select the `TotalCount` column; select **Data Type** from the **Transform** menu; and then choose **Whole Number**.
+1. In Power Query Editor, select the `TotalCount` column. Select **Data Type** from the **Transform** menu, and then choose **Whole Number**.
 
-1. Select the `TotalDuration` and `AvgDuration` columns; select **Data Type** from the **Transform** menu; and then choose **Decimal Number**.
+1. Select the `TotalDuration` and `AvgDuration` columns. Select **Data Type** from the **Transform** menu, and then choose **Decimal Number**.
 
 For more information about changing the data type, see  [Transform Analytics data to generate Power BI reports, Transform a column data type](transform-analytics-data-report-generation.md#transform-data-type). 
 
@@ -471,7 +472,7 @@ For more information about changing the data type, see  [Transform Analytics dat
  
 ## Create the Table report
  
-1. In Power BI, under **Visualizations**, choose  **Table, and drag and drop the fields onto the **Columns** area. 
+1. In Power BI, under **Visualizations**, select **Table**. Drag and drop the fields onto the **Columns** area. 
 
 	:::image type="content" source="media/pipeline-test-reports/visualizations-test-duration-table.png" alt-text="Screenshot of visualization fields selections for Test Duration table report. ":::
 
@@ -481,7 +482,7 @@ For more information about changing the data type, see  [Transform Analytics dat
 	- `TotalCount`
 	- `AvgDuration` 
 
-1. Right select the `AvgDuration` and choose **Average** instead of **Sum**.
+1. Right-select the `AvgDuration` field and choose **Average** instead of **Sum**.
 
 Your report should look similar to the following image. 
 

@@ -5,7 +5,7 @@ description: Auto detect configuration and git aliases when using Azure DevOps e
 ms.topic: how-to
 ms.subservice: azure-devops-reference
 ms.custom: devx-track-azurecli
-ms.manager: mijacobs 
+ms.manager: wiwagn 
 ms.author: chcomley  
 author: chcomley
 monikerRange: 'azure-devops'

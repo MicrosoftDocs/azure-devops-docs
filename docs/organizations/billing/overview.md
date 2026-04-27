@@ -8,7 +8,7 @@ ms.assetid: d5bd13e2-aa7c-4191-aefd-bd9f05663e7b
 ms.topic: overview
 ms.author: chcomley
 author: chcomley
-ms.date: 03/05/2025
+ms.date: 02/17/2026
 monikerRange: '<= azure-devops'
 ---
 
@@ -17,6 +17,8 @@ monikerRange: '<= azure-devops'
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 If you need more than the [free tier](#free-tier) of resources in your organization, [set up billing](set-up-billing-for-your-organization-vs.md#set-up-billing). When you set up billing you can buy other features offered by Microsoft or other companies.
+
+[!INCLUDE [ai-assistance-callout](../../includes/ai-assistance-callout.md)]
 
 ## Services billed via Azure
 

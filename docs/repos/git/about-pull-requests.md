@@ -5,7 +5,7 @@ description: Learn about pull request guidelines, management, and considerations
 ms.assetid: 4C9DFD24-E894-454A-A080-DA511C90CA74
 ms.service: azure-devops-repos
 ms.topic: overview
-ms.date: 11/05/2021
+ms.date: 02/17/2026
 monikerRange: '<= azure-devops'
 ms.subservice: azure-devops-repos-git
 ---
@@ -27,6 +27,8 @@ This article describes pull request guidelines and management considerations. Fo
 > [!NOTE]
 > For performance and stability reasons, the number of reviewers that can be added to a pull request must be 1000 or less. New pull requests will not be created when adding more than 1000 reviewers, and existing pull requests won't allow you to add more than 1000 reviewers.
 ::: moniker-end
+
+[!INCLUDE [ai-assistance-callout](../../includes/ai-assistance-callout.md)]
 
 ## Permissions and prerequisites
 

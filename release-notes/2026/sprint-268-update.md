@@ -2,7 +2,7 @@
 title: Streamlined Test Plans with Improved Visibility and Faster Execution
 author: gloridelmorales
 ms.author: glmorale
-ms.date: 1/26/2025
+ms.date: 1/26/2026
 description: Streamlined Test Plans with Improved Visibility and Faster Execution
 ---
 
@@ -19,25 +19,25 @@ Check out the release notes for details.
 ### GitHub Advanced Security for Azure DevOps
 [!INCLUDE [sprint-268-update-links](includes/ghazdo/sprint-268-update-links.md)]
 
-### Boards
+### Azure Boards
 [!INCLUDE [sprint-268-update-links](includes/boards/sprint-268-update-links.md)]
 
-### Repos
+### Azure Repos
 [!INCLUDE [sprint-268-update-links](includes/repos/sprint-268-update-links.md)]
 
-### Test Plans
+### Azure Test Plans
 [!INCLUDE [sprint-268-update-links](includes/testplans/sprint-268-update-links.md)]
 
 ## GitHub Advanced Security for Azure DevOps
 [!INCLUDE [sprint-268-update](includes/ghazdo/sprint-268-update.md)]
 
-## Boards
+## Azure Boards
 [!INCLUDE [sprint-268-update](includes/boards/sprint-268-update.md)]
 
-## Repos
+## Azure Repos
 [!INCLUDE [sprint-268-update](includes/repos/sprint-268-update.md)]
 
-## Test Plans
+## Azure Test Plans
 [!INCLUDE [sprint-268-update](includes/testplans/sprint-268-update.md)]
 
 ## Next steps

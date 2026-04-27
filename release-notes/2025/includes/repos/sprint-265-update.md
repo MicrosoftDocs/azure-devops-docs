@@ -23,4 +23,4 @@ Customers using [Pull Request Targets](/azure/devops/repos/git/pull-request-targ
 >> [!div class="mx-imgBorder"]
 > [![Image to show Target section in pull request branch dropdown.](../../media/265-repos-01.png "Image to show Target section in pull request branch dropdown.")](../../media/265-repos-01.png#lightbox)
 
-Visit the [configure target branches for pull requests documentation](/azure/devops/repos/git/pull-request-targets?view=azure-devops) to learn how to get started with target branches.
+Visit the [configure target branches for pull requests documentation](/azure/devops/repos/git/pull-request-targets?view=azure-devops&preserve-view=true) to learn how to get started with target branches.

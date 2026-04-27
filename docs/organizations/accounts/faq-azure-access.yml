@@ -1,6 +1,9 @@
 ### YamlMime:FAQ
 metadata:
   title: Access via Microsoft Entra FAQs
+  titleSuffix: Azure DevOps
+  description: Learn the answers to frequently asked questions (FAQs), like how to understand Microsoft Entra groups, add users, connect to, disconnect from, or switch your directory.
+  ms.subservice: azure-devops-organizations
   ms.custom:
     - fasttrack-edit
     - engagement-fy23
@@ -8,13 +11,10 @@ metadata:
     - azure-ad-ref-level-one-done
     - sfi-image-nochange
     - support-driven-update
-  description: Learn the answers to frequently asked questions (FAQs), like how to understand Microsoft Entra groups, add users, connect to, disconnect from, or switch your directory.
-  ms.subservice: azure-devops-organizations
-  ms.assetid: d51de748-c53e-4468-ad9b-275d6bf1a4dd
   ms.topic: faq
   ms.author: chcomley
   author: chcomley
-  ms.date: 01/26/2026
+  ms.date: 04/24/2026
   monikerRange: 'azure-devops'
 title: Access via Microsoft Entra FAQs
 summary: |
@@ -88,12 +88,12 @@ sections:
           What happens if my Azure subscription is disabled?
         answer: |
           If you're the organization owner or 
-          [Azure subscription Account Administrator](/azure/billing/billing-add-change-azure-subscription-administrator), 
-          check your subscription status in the [Account Center](https://account.windowsazure.com/), 
-          then try to [fix your subscription](/azure/billing-subscription-become-disable). 
+          [Azure subscription Account Administrator](/azure/cost-management-billing/manage/add-change-subscription-administrator), 
+          check your subscription status in the [Azure portal](https://portal.azure.com), 
+          then try to [fix your subscription](/azure/cost-management-billing/manage/subscription-disabled). 
           Your paid settings are restored. 
           Or you can link your organization to another Azure subscription by 
-          [unlinking your organization from the disabled subscription](../billing/change-azure-subscription.md). 
+          [unlinking your organization from the disabled subscription](../billing/set-up-billing-for-your-organization-vs.md#change-your-billing-subscription). 
           While your subscription is disabled, your organization goes back to the free 
           monthly limits until your subscription is fixed.
           
@@ -108,7 +108,7 @@ sections:
         answer: |
           Your organization authenticates users and controls access through Microsoft Entra ID. All users must be directory members to get access.
           
-          As a directory administrator, you can [add users to the directory](/previous-versions/azure/hh967632(v=azure.100)). If you're not an administrator, work with your directory administrator to add users. Learn more about [controlling access to Azure DevOps Services by using a directory](access-with-azure-ad.md).
+          As a directory administrator, you can [add users to the directory](/azure/active-directory/fundamentals/add-users-azure-active-directory). If you're not an administrator, work with your directory administrator to add users. Learn more about [controlling access to Azure DevOps Services by using a directory](access-with-azure-ad.md).
           
       - question: |
           What happens to current users?
@@ -230,7 +230,7 @@ sections:
           When these group members sign in to your organization for the first time, Azure DevOps assigns an access level to them automatically. If they have
           [Visual Studio subscriptions](faq-user-and-permissions-management.yml#EligibleMSDNSubscriptions),
           Azure DevOps assigns the respective access level to them. Otherwise, Azure DevOps assigns them the next "best available"
-          [access level](https://visualstudio.microsoft.com/pricing/visual-studio-online-feature-matrix-vs), in this order: Basic, Stakeholder.
+          [access level](/azure/devops/organizations/billing/buy-basic-access-add-users), in this order: Basic, Stakeholder.
            
           If you don't have enough access levels for all Microsoft Entra group members, those members who sign in get a Stakeholder access.
           
@@ -260,7 +260,7 @@ sections:
       - question: |
           Why does Azure DevOps display only 200 members of a Microsoft Entra group?
         answer: |
-          For performance reasons, Azure DevOps shows only the first 200 members of a Microsoft Entra group. All members, whether shown or not, are still honored during permission checks. To view all the members of a Microsoft Entra ID group, use the Microsoft Entra ID blade in the [Azure portal](https://portal.azure.com).
+          For performance reasons, Azure DevOps shows only the first 200 members of a Microsoft Entra group. All members, whether shown or not, are still honored during permission checks. To view all the members of a Microsoft Entra ID group, use the Microsoft Entra ID section in the [Azure portal](https://portal.azure.com).
  
       - question: |
           Why doesn't Azure DevOps reclaim access levels from users who aren't Microsoft Entra group members anymore?
@@ -268,7 +268,7 @@ sections:
           Azure DevOps doesn't automatically reclaim access levels from these users. To manually remove their access, go to **Users**.
 
       - question: |
-          Can I assign work items to Microsoft Entra group members who haven't signed in?
+          Can I assign work items to Microsoft Entra group members who never signed in?
         answer: |
           You can assign work items to any Microsoft Entra member who has permissions for your organization. This action also adds that member to your organization. When you add users this way, they automatically appear as Users, with the best available
           access level. The user also appears in the security settings.
@@ -281,7 +281,7 @@ sections:
       - question: |
           Can I use Microsoft Entra groups to set up field rules in my work item templates?
         answer: |
-          No, but you might be interested in our [process customization plans](https://devblogs.microsoft.com/devops/visual-studio-online-process-customization-update/).
+          Not directly. However, you can add a Microsoft Entra group to an Azure DevOps group, and then use that Azure DevOps group in custom rules for inherited processes. For more information, see [Add a custom rule to a work item type](../../organizations/settings/work/custom-rules.md).
           
           <a name="add-users-to-directory"></a>
           
@@ -410,13 +410,9 @@ sections:
       - question: |
           Why and when should I request Support to manually clear my SSH keys?
         answer: |
-          When you switch from one Microsoft Entra tenant to another, the underlying identity also changes and any PAT tokens or SSH keys that the user had with their old identity stop working. Any active SSH keys uploaded to the organization aren't deleted as part of the tenant switch process, which might block the user from uploading new keys after the switch. We recommend that users delete all their SSH keys **before** they switch their active directory tenant. We have work in our backlog to automatically delete the SSH keys as part of the tenant switch process and in the interim if you're blocked from uploading new keys after tenant switch, we recommend you contact Support to delete those old SSH keys.
+          When you switch from one Microsoft Entra tenant to another, the underlying identity also changes and any PAT tokens or SSH keys that the user had with their old identity stop working. Any active SSH keys uploaded to the organization aren't deleted as part of the tenant switch process, which might block the user from uploading new keys after the switch. We recommend that users delete all their SSH keys **before** they switch their active directory tenant. If you're blocked from uploading new keys after a tenant switch, [contact Support](https://azure.microsoft.com/support/devops/) to delete the old SSH keys.
       
-      - question: |
-          My alternate credentials don't work anymore. What do I do?
-        answer: |
-          Azure DevOps no longer supports Alternate Credentials authentication since the beginning of March 2, 2020. If you're still using Alternate Credentials, we strongly encourage you to switch to a more secure authentication method (for example, personal access tokens or SSH). [Learn more](https://devblogs.microsoft.com/devops/azure-devops-will-no-longer-support-alternate-credentials-authentication/).
-          
+
       - question: |
           Some users are disconnected, but they have matching identities in Microsoft Entra ID. What should I do?
         answer: |
@@ -478,7 +474,7 @@ sections:
       - question: |
           Why is git.exe/Visual Studio failing to authenticate after linking/unlinking from Microsoft Entra ID?
         answer: |
-          The tenant cache must be cleared if you're using a GCM version before v1.15.0. Clearing the tenant cache is as easy as deleting the `%LocalAppData%\GitCredentialManager\tenant.cache` file on each machine returning a sign-in error. The GCM automatically recreates and populates the cache file, as needed, on subsequent sign-in attempts.
+          The tenant cache might need to be cleared. Delete the `%LocalAppData%\GitCredentialManager\tenant.cache` file on each machine returning a sign-in error. Git Credential Manager automatically recreates and populates the cache file, as needed, on subsequent sign-in attempts.
           
           [!INCLUDE [get-team-services-support](../../includes/qa-get-vsts-support.md)]
           

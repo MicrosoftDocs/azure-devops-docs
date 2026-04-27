@@ -13,7 +13,9 @@ ms.custom: devx-track-azurecli, arm2024, sfi-image-nochange
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 Azure Key Vault  is a cloud service that helps developers securely store and manage sensitive information such as API keys, credentials, and certificates. 
-Azure Key Vault service supports two types of containers: vaults and managed HSM (Hardware Security Module) pools. Vaults can store both software and HSM-backed keys, secrets, and certificates, while managed HSM pools exclusively support HSM-backed keys. In this article, you’ll learn how to create an Azure Key Vault, add a secret and configure access permissions, and then use that secret securely in Azure pipeline.
+Azure Key Vault service supports two types of containers: vaults and managed HSM (Hardware Security Module) pools. Vaults can store both software and HSM-backed keys, secrets, and certificates, while managed HSM pools exclusively support HSM-backed keys. 
+
+In this article, you’ll learn how to create an Azure Key Vault, add a secret, configure access policies, and then use that secret in Azure Pipelines. This tutorial uses a key vault with public network access. If you need to access a private key vault from your pipeline, see [Access a private key vault from your pipeline](key-vault-access.md). To link Azure Key Vault secrets to variable groups, see [Link a variable group to secrets in Azure Key Vault](../library/link-variable-groups-to-key-vaults.md).
 
 ## Prerequisites
 

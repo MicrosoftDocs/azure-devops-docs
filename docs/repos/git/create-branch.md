@@ -8,12 +8,15 @@ ms.topic: how-to
 ms.date: 10/19/2022
 monikerRange: '<= azure-devops'
 ms.subservice: azure-devops-repos-git
+ai-usage: ai-assisted
 ---
 
 # Create a new Git branch
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 [!INCLUDE [version-vs-gt-eq-2019](../../includes/version-vs-gt-eq-2019.md)]
+
+[!INCLUDE [ai-assistance-callout](../../includes/ai-assistance-callout.md)]
 
 The first commit in a new Git repo is the start of the `main` branch. As you work in the `main` branch, you make commits to record your work in that branch. Branching in Git occurs when you create a new line of development that diverges from a prior branch. You might choose to create a new branch to develop and test a new feature before adding it to your `main` branch. The recommended [Git workflow](gitworkflow.md) is to use a new branch for every feature or bugfix. When you switch between branches, Git almost instantly switches the version of your repo files to match the branch you selected. Your [commits](commits.md) are always saved to the current branch, and are isolated from commits in other branches.
 

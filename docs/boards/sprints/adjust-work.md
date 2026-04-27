@@ -2,14 +2,15 @@
 title: Adjust work to fit sprint capacity
 titleSuffix: Azure Boards
 description: Learn how to adjust items assigned to a sprint to align with a team's sprint capacity. 
-ms.custom: boards-sprints
+ms.custom: boards-sprints, copilot-scenario-highlight
 ms.service: azure-devops-boards
 ms.assetid: 
 ms.author: chcomley
 author: chcomley
-ms.topic: tutorial
+ms.topic: how-to
 monikerRange: '<= azure-devops'
-ms.date: 09/20/2021
+ms.date: 03/24/2026
+ai-usage: ai-assisted
 ---
 
 # Adjust work to fit sprint capacity
@@ -18,90 +19,104 @@ ms.date: 09/20/2021
 
 <a id="adjust-work">  </a>
 
-Check your team's capacity after you've defined all the tasks for all the sprint backlog items. You can consider adding more items onto the sprint if your team is under capacity. If over capacity, you'll want to remove items out of the backlog.  
+After you define tasks for your sprint backlog items, check the team's capacity. Add items if the team is under capacity, or remove items if over capacity. Then check individual capacity bars to see if any team member is overloaded or has no work assigned. If you haven't [set capacity](set-capacity.md) yet, do that first.
 
-Next, check whether any team member is under, at, or over capacity. Or, if someone hasn't even been assigned any work. Use the capacity bars to make these determinations. If you haven't yet [set capacity for your team](set-capacity.md), do that now.
-
-![Over capacity](media/IC795969.png)  
-
-Use this article to learn how to:
-> [!div class="checklist"]   
-> * Adjust your sprint plan if your team is over or under capacity    
-> * Load balance work across your team 
-> * Quickly reassign tasks to another team member    
+![Screenshot of over capacity indicators.](media/IC795969.png)  
 
 ## Prerequisites
 
 [!INCLUDE [temp](../includes/prerequisites.md)]
 
-## Open a Sprint backlog for a team 
+[!INCLUDE [ai-assistance-mcp-server-tip](../../includes/ai-assistance-mcp-server-tip.md)]
+
+## Open a sprint backlog for a team 
 
 ::: moniker range="<=azure-devops"
 
-1. From your web browser, open your team's sprint backlog. (1) Check that you've selected the right project, (2) choose **Boards>Sprints**, (3) select the correct team from the team selector menu, and lastly (4), choose **Backlog**. 
+1. From your project, select **Boards** > **Sprints**, select your team, and then select **Backlog**.
 
     > [!div class="mx-imgBorder"]  
-    > ![Open Work, Sprints, for a team](media/add-tasks/open-sprint-backlog-s155-co.png)
+    > ![Screenshot of Open Work, Sprints, for a team.](media/add-tasks/open-sprint-backlog-s155-co.png)
 
-    To choose another team, open the selector and select a different team or choose the :::image type="icon" source="../../media/icons/home-icon.png" border="false"::: **Browse all sprints** option. Or, you can enter a keyword in the search box to filter the list of team backlogs for the project.
-
-    > [!div class="mx-imgBorder"]  
-    > ![Choose another team](media/add-tasks/team-selector-sprints-agile.png) 
-
-2. To choose a different sprint than the one shown, open the sprint selector and choose the sprint you want. 
+    To switch teams, open the team selector and choose a different team, or select the :::image type="icon" source="../../media/icons/home-icon.png" border="false"::: **Browse all sprints** option. You can also enter a keyword to filter the list.
 
     > [!div class="mx-imgBorder"]  
-    > ![Choose another sprint](media/add-tasks/select-specific-sprint-agile.png)
+    > ![Screenshot of choosing another team.](media/add-tasks/team-selector-sprints-agile.png) 
 
-    The system lists only those sprints that have been selected for the current team focus. If you don't see the sprints you want listed, then choose **New Sprint** from the menu, and then choose **Select existing iteration**. For more information, see [Define iteration (sprint) paths](../../organizations/settings/set-iteration-paths-sprints.md). 
+1. To switch sprints, open the sprint selector and choose the sprint you want.
+
+    > [!div class="mx-imgBorder"]  
+    > ![Screenshot of choosing another sprint.](media/add-tasks/select-specific-sprint-agile.png)
+
+    Only sprints selected for the current team appear. If the sprint you need isn't listed, select **New Sprint** > **Select existing iteration**. For more information, see [Define iteration (sprint) paths](../../organizations/settings/set-iteration-paths-sprints.md). 
 
 ::: moniker-end
 
 ## Check your team capacity 
 
-To view capacity charts, you'll want to turn **Work details** on for a sprint.
+Turn on **Work details** to view capacity charts for the sprint.
 
 ::: moniker range="<=azure-devops"
 
 > [!div class="mx-imgBorder"]  
-> ![Turn work details on](media/adjust-work/work-details-on.png)
+> ![Screenshot of turning Work details on.](media/adjust-work/work-details-on.png)
 
 ::: moniker-end
 
 ## Move items out of a sprint
 
-Move items from the sprint backlog back to the product backlog if your team is over capacity. This action resets the Iteration Path to the default set for your team. Or, you can move the item into the next sprint your team works in. All the tasks that you've defined for that item move with the backlog items.   
+If your team is over capacity, move items back to the product backlog or into the next sprint. All child tasks move with the backlog item. Moving to the backlog resets the Iteration Path to the team default.
 
 ::: moniker range="<=azure-devops"
 
-Here we select two items at the bottom of the sprint backlog, open the  :::image type="icon" source="../../media/icons/actions-icon.png" border="false"::: action icon for one of the items, choose **Move to iteration**, and then select **Backlog**. 
+Select the items to move, open the :::image type="icon" source="../../media/icons/actions-icon.png" border="false"::: actions menu, choose **Move to iteration**, and then select **Backlog**.
 
 > [!div class="mx-imgBorder"]  
-> ![Move work items to backlog](media/adjust-work/move-items-to-backlog-agile.png)
+> ![Screenshot of moving work items to backlog.](media/adjust-work/move-items-to-backlog-agile.png)
 
 > [!TIP]    
-> Optionally, you can open the **Planning** pane and drag a work item to the backlog or another sprint which reassigns all child tasks to the same iteration path. See [Assign work to a sprint](assign-work-sprint.md#drag-drop). Also, you can multi-select several items and drag them to the backlog or another sprint. Users with **Stakeholder** access can't drag-and-drop work items.
+> You can also open the **Planning** pane and drag items to the backlog or another sprint — child tasks move automatically. Multi-select is supported. Users with **Stakeholder** access can't drag and drop work items. For more information, see [Assign work to a sprint](assign-work-sprint.md#drag-drop).
 
 ::: moniker-end
 
 ## Balance work across the team
 
-To quickly reassign tasks, drag the task onto the new assignee's capacity bar. 
+To reassign tasks, drag a task onto the new assignee's capacity bar. Capacity bars update automatically.
 
 ::: moniker range="<=azure-devops"
 
-For example, here we reassign work from Raisa Pokrovskaya to Christie Church. 
+The following example reassigns work from *Raisa Pokrovskaya* to *Christie Church*.
 
 > [!div class="mx-imgBorder"]  
-> ![Reassign work, drag and drop task onto an assignee](media/adjust-work/load-balance-work.png)   
-
-As you reassign tasks, capacity bars automatically update.  
+> ![Screenshot of reassigning work by dragging a task onto an assignee.](media/adjust-work/load-balance-work.png)   
 
 > [!div class="mx-imgBorder"]  
-> ![Capacity bars adjusted](media/adjust-work/adjusted-work.png)   
+> ![Screenshot of adjusted capacity bars.](media/adjust-work/adjusted-work.png)   
 
 ::: moniker-end
 
+<a id="use-ai-assistance"></a>
+
+## Use AI to adjust sprint work
+
+If you have the [Azure Boards MCP Server](../../mcp-server/mcp-server-overview.md) connected to your AI agent in agent mode, you can use natural language prompts to identify and adjust work across your sprint.
+
+| Task | Example prompt |
+|------|----------------|
+| Find overloaded members | `Which team members are over capacity in Sprint 12 for <Contoso Team>? Show assigned work vs. capacity` |
+| Reassign tasks | `Reassign task #5678 from <Jamal> to <me> in project <Contoso>` |
+| Move excess items to backlog | `Move the lowest-priority user stories from Sprint 12 back to the backlog in <Contoso>` |
+| Check sprint balance | `Show remaining capacity per team member for the current sprint in <Contoso Team>` |
+| Identify at-risk items | `Which work items in Sprint 12 have remaining work greater than the days left in the sprint?` |
+| Suggest scope cuts | `List the lowest-priority items in Sprint 12 that could be deferred to free up 16 hours of capacity` |
+| Split oversized stories | `Find user stories in Sprint 12 with more than 20 hours of remaining task work and suggest how to split them` |
+| Compare planned vs. actual | `Compare the original estimated hours vs. current remaining work for each team member in Sprint 12` |
+| Redistribute after absence | `<Raisa> is out for the rest of Sprint 12. Show her active tasks and suggest team members to reassign them to based on capacity` |
+| Mid-sprint health check | `We're halfway through Sprint 12. Summarize completion percentage, remaining work, and flag any items with no progress` |
+
+> [!NOTE]
+> Agent mode and the MCP Server use natural language, so you can adjust these prompts or ask follow-up questions to refine the results.
+
 ## Next step
 > [!div class="nextstepaction"]
-> [5. Share your sprint plan](share-plan.md) 
+> [5. Share your sprint plan](share-plan.md)

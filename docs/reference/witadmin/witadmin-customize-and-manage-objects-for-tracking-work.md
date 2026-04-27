@@ -1,59 +1,62 @@
 ---
 title: witAdmin Customize and manage objects for tracking work 
 titleSuffix: Azure DevOps  
-description: Tracks your team's progress by creating and customizing objects that track work items.
+description: Learn how to use the witadmin command-line tool to customize work tracking objects like work item types, fields, categories, and link types.
 ms.service: azure-devops-boards
 ms.custom: witadmin, engagement-fy23
 ms.assetid: 7853f6db-98c9-4012-b6a5-51618c41d58c
+ai-usage: ai-assisted
 ms.topic: reference
 ms.author: chcomley
 author: chcomley
 monikerRange: '<= azure-devops'
-ms.date: 11/13/2023
+ms.date: 02/17/2026
 ---
 
 # witAdmin: Customize and manage objects for tracking work 
 
 [!INCLUDE [version-lt-eq-azure-devops-plus-witadmin](../../includes/version-lt-eq-azure-devops-plus-witadmin.md)]
 
-You can change how you track your team's progress by creating and customizing objects that track work items. By using the **witadmin** command-line tool, you can create, delete, import, and export objects such as categories, global lists, global workflow, types of links, and types of work items. You can also delete, list, or change the attributes of work item fields.  
+The **witadmin** command-line tool lets you customize work tracking by creating, deleting, importing, and exporting objects such as work item types, categories, global lists, global workflow, and link types. You can also manage work item field attributes.
 
 ::: moniker range="< azure-devops"
-In addition, for on-premises Azure DevOps Servers, you can manage the resolution types, bug, and failure types used with test case management with the [**tcm fieldmapping**](#tcm) command.  
+For on-premises Azure DevOps Server, you can also manage the resolution types, bug type, and failure types used with test case management by using the [**tcm fieldmapping**](#tcm) command.  
 ::: moniker-end
 
-As the following illustration shows, you manage categories and types of and work items for each project. You manage global lists, types of links, and fields in work item for each project collection. You can customize global workflow for a project or a collection.  
+The following diagram shows the scope of work tracking objects. Categories and work item types are managed at the project level. Global lists, link types, and work item fields are managed at the project collection level. Global workflow can be customized for either a project or collection.
   
 ![Conceptual image of Work Item Tracking Objects.](media/pnt_wit_objects.png)
 
-For most commands, be a member of the Project Administrators or Project Collection Administrators groups. For more information, see [Change project collection-level permissions](../../organizations/security/change-organization-collection-level-permissions.md). 
+To run most witadmin commands, you must be a member of the **Project Administrators** or **Project Collection Administrators** group. For more information, see [Change project collection-level permissions](../../organizations/security/change-organization-collection-level-permissions.md). 
 
 [!INCLUDE [temp](../../includes/witadmin-run-tool.md)]  
+
+[!INCLUDE [ai-assistance-callout](../../includes/ai-assistance-callout.md)]
 
 <a name="global"></a> 
 
 ### Global parameters
-  
- You can use the following parameters to display help text for `witadmin`.  
-  
-|Parameter|Description|  
-|---------------|-----------------|  
-|`/?` or `help`|Displays the syntax and parameters for the `witadmin` command-line tool.|  
-|`command /help`<br />or<br /> `command /?`|Displays the syntax and parameters for the `witadmin` command that you specify.|  
+
+The following parameters display help text for witadmin commands.
+
+| Parameter | Description |
+|-----------|-------------|
+| `/?` or `help` | Displays syntax and parameters for the witadmin command-line tool. |
+| `command /help` or `command /?` | Displays syntax and parameters for the specified witadmin command. |  
 
 <a name="index"></a>
  
-### XML definition files  
+### XML definition files
 
-You customize all work tracking objects&mdash;such as, work item types, process configuration, global lists&mdash;by updating their XML definitions. If you're new to work tracking customization, see [Customize your work tracking experience](../customize-work.md).  
+Work tracking objects are customized by updating their XML definitions. Objects include work item types, process configuration, global lists, and link types. For an overview of customization options, see [Customize your work tracking experience](../customize-work.md).
 
-You run **witadmin** commands against Azure DevOps Services or an on-premises Azure DevOps Server. As shown in the following command lists, only **witadmin** commands that list or export files are supported for the Azure DevOps Services. 
+You can run witadmin commands against Azure DevOps Services or Azure DevOps Server. However, Azure DevOps Services only supports commands that list or export definitions. Import and modify operations are available only for Azure DevOps Server. 
 
 ## [Work item types](witadmin-import-export-manage-wits.md)
 
-Work items are used to track anything you need to track. Each work item is based on a work item type. Each work item type defines the fields available in which to store information. The available work item types depend on the process you used when your project was created (Agile, Scrum, Basic, or CMMI). For more information, see [Track your work items in Azure Boards user stories, issues, bugs, features, and epics](../../boards/work-items/about-work-items.md).
+Work item types define the fields and workflow for tracking work. The available types depend on your project's process (Agile, Scrum, Basic, or CMMI). For more information, see [About work items](../../boards/work-items/about-work-items.md).
 
-For the Inherited process model, you can add and delete work item types from the web portal. For more information, see [Add and manage work item types (Inheritance process)](../../organizations/settings/work/customize-process-work-item-type.md).
+For the Inherited process model, manage work item types from the web portal. For more information, see [Add and manage work item types](../../organizations/settings/work/customize-process-work-item-type.md).
 
 ---
 :::row:::
@@ -128,10 +131,9 @@ For the Inherited process model, you can add and delete work item types from the
 
 ## [Fields](manage-work-item-fields.md)
 
-Fields are used to track the status and information associated with work items. Fields are defined for an organization or collection. 
-For more information, see [Work item fields and attributes](../../boards/work-items/work-item-fields.md). To look up the description of a specific field, see [Field descriptions for default and work item fields used in process templates](../../boards/work-items/guidance/work-item-field.md).
- 
-For the Inherited process model, you can view and delete fields from the web portal. For more information, see [Add and manage fields (Inheritance process)](../../organizations/settings/work/customize-process-field.md).
+Fields store status and information in work items. You define fields at the organization or collection level. For more information, see [Work item fields and attributes](../../boards/work-items/work-item-fields.md) and [Work item field index](../../boards/work-items/guidance/work-item-field.md).
+
+For the Inherited process model, manage fields from the web portal. For more information, see [Add and manage fields](../../organizations/settings/work/customize-process-field.md).
 
 ---
 :::row:::
@@ -185,7 +187,7 @@ For the Inherited process model, you can view and delete fields from the web por
    `renamewitd`: Change a WIT display name   
    :::column-end:::
    :::column span="1":::
-       
+      
    :::column-end:::
    :::column span="1":::
       ✔️
@@ -196,7 +198,7 @@ For the Inherited process model, you can view and delete fields from the web por
 
 ## [Categories](/previous-versions/azure/devops/reference/witadmin/witadmin-import-export-categories)
 
-Categories associate one or more work item types as belonging to the same category. Azure Boards relies on default category definitions, many of which specify a single work item type per category. For more information, see [Use categories to group work item types](../xml/use-categories-to-group-work-item-types.md).  
+Categories group one or more work item types together. Azure Boards uses category definitions to determine which work item types appear on backlogs and boards. For more information, see [Use categories to group work item types](../xml/use-categories-to-group-work-item-types.md).  
  
  
 ---
@@ -238,7 +240,7 @@ Categories associate one or more work item types as belonging to the same catego
 
 ## [Link types](/previous-versions/azure/devops/reference/witadmin/manage-link-types)
 
-Use different link types to manage the various relationships between work items. For On-premises XML and Hosted XML process models, you can define custom link types. For more information, see [Link work items to other objects](../../boards/backlogs/add-link.md) and [Reference guide for link types](../../boards/queries/link-type-reference.md).  
+Link types define the relationships between work items, such as parent-child or related. You can define custom link types for on-premises XML and Hosted XML process models. For more information, see [Link work items](../../boards/backlogs/add-link.md) and [Link type reference](../../boards/queries/link-type-reference.md).  
 
 ---
 :::row:::
@@ -275,6 +277,17 @@ Use different link types to manage the various relationships between work items.
       ✔️
    :::column-end:::
 :::row-end:::
+:::row:::
+   :::column span="2":::
+   `importlinktype`:  Import a link type file 
+   :::column-end:::
+   :::column span="1":::
+       
+   :::column-end:::
+   :::column span="1":::
+      ✔️
+   :::column-end:::
+:::row-end:::
 
 :::row:::
    :::column span="2":::  
@@ -303,7 +316,7 @@ Use different link types to manage the various relationships between work items.
 
 ## [Global lists](/previous-versions/azure/devops/reference/witadmin/manage-global-lists-for-work-item-types)
 
-Global lists are pick lists that you can include within one or more fields and work item type definitions. You can share list items among several work item types for a collection of projects by including the list items in one or more **GLOBALLIST** elements. For more information, see [GLOBALLIST XML element reference](../xml/define-global-lists.md).  
+Global lists are reusable pick lists that you can reference in multiple fields and work item type definitions across a project collection. Define global lists using the **GLOBALLIST** XML element. For more information, see [GLOBALLIST XML element reference](../xml/define-global-lists.md).  
 
 ---
 :::row:::
@@ -369,7 +382,7 @@ Global lists are pick lists that you can include within one or more fields and w
 
 ## [Global workflow](/previous-versions/azure/devops/reference/witadmin/witadmin-import-export-global-workflow)
 
-With global workflow, you can define and update fields and global lists that apply to all work item types in a project or collection. For more information, see [Global workflow XML element reference](../xml/global-workflow-xml-element-reference.md).  
+Global workflow defines fields and global lists that apply to all work item types in a project or collection. For more information, see [Global workflow XML element reference](../xml/global-workflow-xml-element-reference.md).  
 
 ---
 :::row:::
@@ -410,11 +423,10 @@ With global workflow, you can define and update fields and global lists that app
 ::: moniker-end
 
 ## [Process configuration](witadmin-import-export-process-configuration.md)
- 
-Process configuration defines the default configuration and functional capabilities that your teams can access using Azure Boards. The configuration determines the work item types that appear on the product backlog, sprint backlogs, boards, and Taskboards. For more information about process configuration and what you can customize, see [Process Configuration](../xml/process-configuration-xml-element.md). 
 
- 
-For the Inherited process model, you can customize backlogs from the web portal. For more information, see [Customize your backlogs or boards (Inheritance process)](../../organizations/settings/work/customize-process-backlogs-boards.md).
+Process configuration defines which work item types appear on backlogs, boards, sprint backlogs, and Taskboards. It also controls default columns and other team capabilities. For more information, see [ProcessConfiguration XML element reference](../xml/process-configuration-xml-element.md).
+
+For the Inherited process model, customize backlogs from the web portal. For more information, see [Customize backlogs and boards](../../organizations/settings/work/customize-process-backlogs-boards.md).
  
 ---
 :::row:::
@@ -457,22 +469,20 @@ For the Inherited process model, you can customize backlogs from the web portal.
 
 ## [Client cache](/previous-versions/azure/devops/reference/witadmin/rebuild-client-cache)
 
-After certain maintenance operations, client computers require a cache refresh. After you move, restore, rename, or fail over a data-tier or application-tier server, you must refresh the cache for tracking work items and users must refresh the version control cache on client computers. 
+After server maintenance operations like moving, restoring, renaming, or failing over servers, you must refresh the client cache. This command is only available for Azure DevOps Server.
 
-The following `witadmin` command is only available for Azure DevOps Server on-premises.  
-
-- `rebuildcache`: Rebuild the client cache  
+- `rebuildcache`: Rebuilds the client cache for work item tracking  
 ::: moniker-end
 
 <a id="tcm"></a> 
 
 ::: moniker range="< azure-devops"
 
-## [Test case management field mapping](/previous-versions/azure/devops/reference/witadmin/tcm-customize-manage-test-experience)  
+## [Test case management field mapping](/previous-versions/azure/devops/reference/witadmin/tcm-customize-manage-test-experience)
 
-To customize the resolution types, bug work item type, and failure types used when working with Azure Test Plans, you can use the following **tcm** command. This command is only available for Azure DevOps Server on-premises versions. 
+Customize the resolution types, bug work item type, and failure types used with Azure Test Plans. This command is only available for Azure DevOps Server.
 
-- `tcm fieldmapping`: Import or export a file that defines the resolution types, bug, or failure types to use with test case management.     
+- `tcm fieldmapping`: Imports or exports the file that defines resolution types, bug type, or failure types for test case management     
 
 ::: moniker-end
 
@@ -480,16 +490,17 @@ To customize the resolution types, bug work item type, and failure types used wh
 
 ::: moniker range="azure-devops"
 
-- [Customize your work tracking experience](../customize-work.md)   
-- [On-premises XML process model](../on-premises-xml-process-model.md)  
+- [Customize your work tracking experience](../customize-work.md)
+- [About process customization and inherited processes](../../organizations/settings/work/inheritance-process-model.md)
 - [Hosted XML process model](../../organizations/settings/work/hosted-xml-process-model.md)
- 
+
 ::: moniker-end
 
 ::: moniker range="<azure-devops"
 
-- [Customize your work tracking experience](../customize-work.md)    
+- [Customize your work tracking experience](../customize-work.md)
 - [On-premises XML process model](../on-premises-xml-process-model.md)
- 
+- [Process template and plug-in files](../process-templates/overview-process-template-files.md)
+
 ::: moniker-end
 

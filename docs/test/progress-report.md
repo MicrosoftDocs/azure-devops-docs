@@ -5,7 +5,7 @@ ms.assetid: cd74abc1-44c0-4390-8d5d-4d1afbd4606c
 ms.service: azure-devops-test-plans
 ms.custom: UpdateFrequency3
 ms.topic: how-to
-ms.author: jeom
+ms.author: pliaros
 author: rohit-batra
 monikerRange: "<=azure-devops"
 ms.date: 09/14/2021
@@ -85,5 +85,5 @@ Filter by **Test Suites**, **Configuration**, **Tester**, Test Case **Priority**
 ## Related content
 
 - [Control how long to keep test results](how-long-to-keep-test-results.md)
-- [FAQs for manual testing](reference-qa.yml#trackstatus)
+- [FAQs for manual testing](reference-qa.yml#test-status-tracking-charts)
 

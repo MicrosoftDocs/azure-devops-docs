@@ -21,7 +21,7 @@ For full details and step-by-step migration guidance, see our [blog post](https:
 To help teams focus on the most relevant pull request activity, we’ve improved Azure DevOps email notifications to reduce noise and highlight meaningful changes. Several low-value notifications, including draft transitions and auto-complete updates, have been removed entirely. For remaining notifications, we’ve simplified the content to emphasize what changed, such as affected files, while removing redundant details like full reviewer and commit lists. These updates are designed to make pull request emails easier to scan, more actionable, and better aligned with how teams review and collaborate together.
 
 ### Pull request templates for multi-level branches
-[Pull request templates](/azure/devops/repos/git/pull-request-templates?view=azure-devops) will now support a nested folder structure corresponding with multi-level branches. If you open a PR against a branch called `feature/foo/december`, a template will be searched for in the following locations in order of preference:
+[Pull request templates](/azure/devops/repos/git/pull-request-templates?view=azure-devops&preserve-view=true) will now support a nested folder structure corresponding with multi-level branches. If you open a PR against a branch called `feature/foo/december`, a template will be searched for in the following locations in order of preference:
 
 1.  `<pull request template path>/branches/feature/foo/december.md`
 2.  `<pull request template path>/branches/feature/foo.md`  

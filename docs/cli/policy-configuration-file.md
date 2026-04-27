@@ -4,7 +4,7 @@ titleSuffix: Azure DevOps
 description: Learn how to configure branch policies using Azure DevOps CLI to help your team protect their development branches.  
 ms.topic: how-to
 ms.subservice: azure-devops-reference
-ms.manager: mijacobs 
+ms.manager: wiwagn 
 ms.author: chcomley  
 author: chcomley
 monikerRange: 'azure-devops'

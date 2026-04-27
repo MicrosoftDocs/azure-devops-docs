@@ -4,19 +4,19 @@ title: Authenticate to Azure DevOps with Microsoft Entra ID
 description: Use Microsoft Entra ID authentication for secure access to Azure DevOps Services with modern identity management capabilities.
 ms.assetid: 19285121-1805-4421-B7C4-63784C9A7CFA
 ms.subservice: azure-devops-security
+ms.custom: pat-reduction
 ai-usage: ai-assisted
 monikerRange: 'azure-devops'
 ms.author: chcomley
 author: chcomley
-ms.date: 07/14/2025
+ms.date: 04/22/2026
 ---
 
 # Authenticate to Azure DevOps with Microsoft Entra ID
 
 [!INCLUDE [version-eq-azure-devops](../../../includes/version-eq-azure-devops.md)]
 
-> [!IMPORTANT]
-> We recommend that you use Microsoft Entra ID authentication for new applications that integrate with Azure DevOps Services. It provides enhanced security, enterprise identity integration, and modern authentication capabilities.
+[!INCLUDE [use-microsoft-entra-reduce-pats](../../../includes/use-microsoft-entra-reduce-pats.md)]
 
 This article explains the benefits of Microsoft Entra ID authentication and guides you through implementing it in your applications.
 
@@ -106,7 +106,7 @@ Organizations increasingly adopt [security policies that restrict personal acces
 | PAT scenario | Microsoft Entra alternative |
 |------------|------------|
 | Authenticate with Git Credential Manager (GCM) | GCM defaults to authenticating with PATs. Set the default credential type to `oauth`. Learn more on the [Git Credential Manager (GCM) page](../../../repos/git/set-up-credential-managers.md). |
-| Authenticate in a build or release pipeline | Use a [service connection with Workload Identity Federation](../../../pipelines/library/connect-to-azure.md#create-an-azure-resource-manager-service-connection-that-uses-workload-identity-federation). |
+| Authenticate in a build or release pipeline | Use an [Azure DevOps service connection with workload identity federation](../../../pipelines/library/add-devops-entra-service-connection.md) for Azure DevOps resources, or a [service connection with Workload Identity Federation](../../../pipelines/library/connect-to-azure.md#create-an-azure-resource-manager-service-connection-that-uses-workload-identity-federation) for Azure resources. |
 | Ad hoc requests to Azure DevOps REST APIs | Issue a [one-off Microsoft Entra token by using the Azure CLI](../../../cli/entra-tokens.md).  |
 
 > [!TIP]

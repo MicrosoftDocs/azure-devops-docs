@@ -69,7 +69,7 @@ The following example illustrates how to consume the *Apache HttpClient* package
 
 [!INCLUDE [save-requires-collaborator](../includes/save-requires-collaborator.md)]
 
-1. Navigate to Maven Central `https://mvnrepository.com/`.
+1. Navigate to Maven Central `https://central.sonatype.com/`.
 
 1. Search for *Apache HttpClient*. Select the package, then select the version you wish to install.
 

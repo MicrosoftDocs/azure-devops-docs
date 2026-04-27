@@ -2,14 +2,14 @@
 title: Define features and epics to organize backlog items
 titleSuffix: Azure Boards
 description: Learn about features and epics in Azure Boards and how to use them to organize your product and portfolio backlogs.
-ms.custom: boards-backlogs
+ms.custom: boards-backlogs, copilot-scenario-highlight
 ms.service: azure-devops-boards
 ms.assetid: 9B517FEE-14FA-41FA-87CD-99D33168D01E
 ms.author: chcomley
 author: chcomley
 ms.topic: how-to
 monikerRange: '<= azure-devops'
-ms.date: 12/22/2025
+ms.date: 02/28/2026
 #customer intent: As a team member, I want to understand how to organize work items into features and epics in Azure Boards to better organize my project.
 ---
 
@@ -18,6 +18,8 @@ ms.date: 12/22/2025
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 When you have a list of work items, it can be helpful to group related items into a hierarchical structure by breaking down major features or scenarios into smaller, more manageable deliverables. If you have an existing backlog, you can organize it with features and epics. For more information, see [Organize your backlog and map child work items to parents](organize-backlog.md).
+
+[!INCLUDE [ai-assistance-mcp-server-tip](../../includes/ai-assistance-mcp-server-tip.md)]
 
 ## Portfolio backlogs
 
@@ -187,6 +189,28 @@ For more information, see [Show bugs on backlogs and boards](../../organizations
 
 > [!div class="nextstepaction"]
 > [Organize your backlog](organize-backlog.md)
+
+<a id="use-ai-assistance"></a>
+
+## Use AI to define features and epics
+
+If you configure the [Azure DevOps MCP Server](../../mcp-server/mcp-server-overview.md), you can create and organize features and epics using natural language.
+
+| Task | Example prompt |
+|------|----------------|
+| Create a feature with children | `Create a feature called "Search improvements" with 3 child user stories in project <Contoso>` |
+| List features by state | `Show all active features under epic 1234 in project <Contoso>` |
+| Organize hierarchy | `Move user stories 2001, 2002, and 2003 under feature 1500 in <Contoso>` |
+| Check rollup | `List all epics in <Contoso> with a count of incomplete child features` |
+| Find orphaned stories | `List user stories in <Contoso> that don't have a parent feature` |
+| Identify scope creep | `Show features in <Contoso> where child user story count increased in the last 2 weeks` |
+| Review epic progress | `For each epic in <Contoso>, show the percentage of child features that are completed` |
+| Plan feature breakdown | `Create 5 user stories under feature 1500 in <Contoso> for building a REST API with authentication, CRUD operations, error handling, logging, and tests` |
+| Cross-area feature report | `List all active features grouped by area path in project <Contoso>` |
+| Find stale features | `Show features in <Contoso> that have been active for more than 90 days with no child items updated in the last 30 days` |
+
+> [!NOTE]
+> If you're using Visual Studio Code, [agent mode](/visualstudio/ide/copilot-chat-context#agent-mode) is especially helpful for building work item hierarchies.
 
 ## Related content
 

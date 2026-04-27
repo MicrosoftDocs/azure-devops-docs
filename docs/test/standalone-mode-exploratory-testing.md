@@ -5,7 +5,7 @@ ms.assetid: 762A75FB-0B6D-47C3-9232-371348D8D529
 ms.service: azure-devops-test-plans
 ms.custom: UpdateFrequency3
 ms.topic: quickstart
-ms.author: jeom
+ms.author: pliaros
 author: rohit-batra
 ms.date: 12/07/2018
 ms.update-cycle: 1095-days
@@ -86,7 +86,7 @@ Users don't need an Azure DevOps subscription to use this mode.
 
 3. The report saves in the default **Downloads** folder of your web browser. Share it with the rest of your team as an email attachment, or copy it to OneNote, Word, or in any other format you prefer.
 
-   [How do I play the video recordings I created with the extension?](reference-qa.yml#recording-playback)
+   [How do I play the video recordings I created with the extension?](reference-qa.yml#how-do-i-play-the-video-recordings-i-created-with-the-extension)
 
 ## Next steps
 

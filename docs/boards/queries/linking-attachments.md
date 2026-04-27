@@ -2,7 +2,7 @@
 title: Query Work Items By Link Or Attachment Count In Azure Boards  
 titleSuffix: Azure Boards
 description: Learn how to query work items based on link type, link count, link restrictions, and attached file count in Azure Boards.
-ms.custom: boards-queries, engagement-fy23
+ms.custom: boards-queries, engagement-fy23, copilot-scenario-highlight
 ms.service: azure-devops-boards
 ms.assetid: 219717a0-de6e-4f70-8558-54f813f82507
 ms.author: chcomley
@@ -10,7 +10,7 @@ author: chcomley
 ms.topic: example-scenario
 ai-usage: ai-assisted
 monikerRange: '<= azure-devops'
-ms.date: 10/27/2025
+ms.date: 02/28/2026
 ---
 
 # Query work items by link or attachment count  
@@ -18,6 +18,8 @@ ms.date: 10/27/2025
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 Link work items to track related work and dependencies, and attach files to share information with your team. Query work items using the following fields:
+
+[!INCLUDE [ai-assistance-mcp-server-tip](../../includes/ai-assistance-mcp-server-tip.md)]
 
 ::: moniker range="azure-devops"
 - Attached File Count
@@ -302,6 +304,28 @@ All tabs that support creating links between work items use the **LinksControl**
 You can add or remove columns from the list of links, and you can customize the default columns and the column order. For more information, see [LinksControlOptions XML elements](/previous-versions/azure/devops/reference/xml/linkscontroloptions-xml-elements?view=tfs-2017&preserve-view=true).
 
 ::: moniker-end
+
+<a id="use-ai-assistance"></a>
+
+## Use AI to query by links and attachments
+
+If you have the [Azure Boards MCP Server](../../mcp-server/mcp-server-overview.md) connected to your AI agent in agent mode, you can use natural language prompts to find work items based on their links and attachments.
+
+| Task | Example prompt |
+|------|----------------|
+| Find unlinked items | `Find active user stories with no child task links` |
+| Query for attachments | `List bugs that have attached files` |
+| Check development links | `Show work items with no linked commits or pull requests` |
+| Find heavily linked items | `Find work items with more than 3 related links` |
+| Trace dependency chains | `Show all work items in <Contoso> that have predecessor links and list what they depend on` |
+| Find items with external links | `List work items in <Contoso> that have hyperlinks in their links` |
+| Audit parent-child integrity | `Show child work items in <Contoso> whose parent is in the Closed state but the child is still Active` |
+| Find items linked to test cases | `List user stories in the current sprint for <Contoso> that have linked test cases and show the test outcome` |
+| Identify attachment bloat | `Show work items in <Contoso> that have more than 5 attachments` |
+| Find cross-project links | `List work items in <Contoso> that have related links to work items in other projects` |
+
+> [!NOTE]
+> Agent mode and the MCP Server use natural language, so you can adjust these prompts or ask follow-up questions to refine the results.
 
 ## Related content
 

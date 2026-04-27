@@ -9,7 +9,7 @@ ms.custom: copilot-scenario-highlight
 ms.author: chcomley
 author: chcomley
 ms.topic: troubleshooting
-ms.date: 01/07/2026
+ms.date: 02/28/2026
 ---
 
 # Resolve Azure DevOps and Office integration issues
@@ -20,6 +20,8 @@ Azure DevOps integrates with Microsoft Office applications, primarily Excel and 
 
 > [!div class="mx-imgBorder"]
 > ![Screenshot of Excel and Azure DevOps/Office integration Team ribbon.](media/excel-team-ribbon.png)
+
+[!INCLUDE [deprecate-office-integration](../../includes/deprecate-office-integration.md)]
 
 Common scenarios where you might encounter integration issues include:
 
@@ -339,4 +341,5 @@ Context: This is for Azure DevOps Office integration with Excel or Project. The 
 - [Bulk import or update work items using CSV files](../../queries/import-work-items-from-csv.md)
 - [FAQs: Work in Excel connected to Azure Boards](faqs.yml)
 - [Add or remove add-ins](https://support.office.com/article/Add-or-remove-add-ins-0af570c4-5cf3-4fa9-9b88-403625a0b460)
+- [All troubleshooting guides & FAQs](../../../troubleshoot/index.yml)
 

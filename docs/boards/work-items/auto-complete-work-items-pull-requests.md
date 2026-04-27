@@ -4,11 +4,11 @@ titleSuffix: Azure Boards
 description: Learn how to automatically complete work items and transition their workflow states when you merge pull requests in Azure Boards and Azure DevOps.  
 ms.service: azure-devops-boards
 ai-usage: ai-assisted
-ms.custom: cross-service
+ms.custom: cross-service, copilot-scenario-highlight
 ms.author: chcomley
 ms.topic: how-to
 monikerRange: '<= azure-devops'
-ms.date: 10/27/2025
+ms.date: 02/28/2026
 ---
 
 # Autocomplete work items with pull requests 
@@ -19,14 +19,16 @@ When you link a work item to a pull request (PR), you can automatically complete
 
 This automation streamlines your development workflow by ensuring that work items reflect the current state of your code changes without manual intervention.
 
+[!INCLUDE [ai-assistance-mcp-server-tip](../../includes/ai-assistance-mcp-server-tip.md)]
+
 For more information, see [Create, view, and manage pull requests](../../repos/git/pull-requests.md).
 
 ## Prerequisites
 
 | Category | Requirements |
 |--------------|-------------|
-| **Permissions** | - To view, follow, and edit work items: **View work items in this node** and **Edit work items in this node** permissions set to **Allow**. By default, the **Contributors** group has these permissions. For more information, see [Set work tracking permissions](../../organizations/security/set-permissions-access-work-tracking.md). <br> - To add tags to work items: Project-level **Create new tag definition** permission set to **Allow**. By default, the **Contributors** group has this permission. |
-| **Access levels** | - [Project member](../../organizations/security/add-users-team-project.md). <br> - To add new tags to work items or to view or follow pull requests: At least [**Basic** access](../../organizations/security/access-levels.md). <br> - To view or follow work items: At least **Stakeholder** access. For more information, see [About access levels](../../organizations/security/access-levels.md). <br> - All project members, including those in the **Readers** group, can send emails containing work items. |
+| Permissions | - To view, follow, and edit work items: **View work items in this node** and **Edit work items in this node** permissions set to **Allow**. By default, the **Contributors** group has these permissions. For more information, see [Set work tracking permissions](../../organizations/security/set-permissions-access-work-tracking.md). <br> - To add tags to work items: Project-level **Create new tag definition** permission set to **Allow**. By default, the **Contributors** group has this permission. |
+| Access levels | - [Project member](../../organizations/security/add-users-team-project.md). <br> - To add new tags to work items or to view or follow pull requests: At least [**Basic** access](../../organizations/security/access-levels.md). <br> - To view or follow work items: At least **Stakeholder** access. For more information, see [About access levels](../../organizations/security/access-levels.md). <br> - All project members, including those in the **Readers** group, can send emails containing work items. |
 
 ## Autocomplete work items  
 
@@ -102,6 +104,28 @@ If work items don't automatically complete as expected:
 3. **Validate work item links**: Confirm the work items are properly linked to the pull request.
 4. **Check current state**: Verify the work item isn't already in a completed state.
 5. **Review repository settings**: Ensure automatic completion is enabled in repository settings.
+
+<a id="use-ai-assistance"></a>
+
+## Use AI to manage work items linked to pull requests
+
+If you configure the [Azure DevOps MCP Server](../../mcp-server/mcp-server-overview.md), you can query and manage work items linked to pull requests using natural language.
+
+| Task | Example prompt |
+|------|----------------|
+| Find linked items | `Show all work items linked to open pull requests in project <Contoso>` |
+| Check completion status | `List work items linked to merged PRs that are still in the Active state in <Contoso>` |
+| Link a work item to a PR | `Link work item #3456 to pull request #789 in project <Contoso>` |
+| Audit PR-linked items | `Show all pull requests merged this sprint with their linked work items for <Contoso>` |
+| Find items missing PR links | `List all completed user stories in Sprint 12 that have no linked pull request in project <Contoso>` |
+| Detect stale PR links | `Find work items linked to pull requests that were abandoned or closed without merging in <Contoso>` |
+| Verify auto-complete worked | `Which work items linked to PRs merged today are still not in the Done or Closed state in project <Contoso>?` |
+| Track PR activity by assignee | `For each team member on <Contoso Team>, list their work items that have linked PRs currently in review` |
+| Find items with multiple PRs | `Show work items in project <Contoso> that are linked to more than one pull request` |
+| Sprint PR coverage report | `What percentage of completed work items in Sprint 12 have at least one linked pull request in <Contoso>?` |
+
+> [!NOTE]
+> If you're using Visual Studio Code, [agent mode](/visualstudio/ide/copilot-chat-context#agent-mode) is especially helpful for managing work item and pull request relationships.
 
 ## Related content
 

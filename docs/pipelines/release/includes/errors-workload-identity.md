@@ -1,0 +1,26 @@
+---
+ms.topic: include
+ms.manager: wiwagn
+ms.author: rabououn
+author: ramiMSFT
+ms.date: 03/26/2026
+---
+
+The following table lists common Microsoft Entra ID error codes and possible issues related to workload identity service connections:
+
+| Message | Possible issue |
+|---------|-----------------|
+| **AADSTS700016: Application with identifier '****' wasn't found** | The identity that is used for the service connection no longer exists, might have been removed from the service connection, or is incorrectly configured. If you configure the service connection manually with a pre-created identity, make sure the `appID`/`clientId` is correctly configured. |
+| **AADSTS7000215:  Invalid client secret provided.** | You're using a service connection that has an expired secret. [Convert the service connection to workload identity federation](https://aka.ms/azdo-rm-workload-identity-conversion) and replace the expired secret with federated credentials. |
+| **AADSTS700024: Client assertion is not within its valid time range** | If the error happens after approximately 1 hour, use a service connection with [Workload identity federation and a Managed Identity](../configure-workload-identity.md#set-a-workload-identity-service-connection-to-use-managed-identity-authentication) instead. Managed Identity tokens have a [lifetime of around 24 hours](/entra/identity/managed-identities-azure-resources/managed-identities-faq#are-managed-identities-tokens-cached). <br/> If the error happens before 1 hour but after 10 minutes, move commands that (implicitly) request an access token to e.g. access Azure storage to the beginning of your script. The access token will be cached for subsequent commands. |
+| **AADSTS70021: No matching federated identity record found for presented assertion. Assertion Issuer: `https://app.vstoken.visualstudio.com`.** | No federated credential was created or the issuer URL isn't correct. The correct issuer URL has the format `https://login.microsoftonline.com/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX`. You can fix the issuer URL by editing and then saving a service connection. If Azure DevOps didn't create your identity, you must manually update the issuer. You can find the correct issuer in the edit dialog of the service connection or in the response if you use the REST API. |
+| **AADSTS70021: No matching federated identity record found for presented assertion. Assertion Issuer:  `https://login.microsoftonline.com/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX`. Assertion Subject: `sc://<org>/<project>/<service-connection>.`** | Either the issuer URL or the federation subject doesn't match. The Azure DevOps organization or project was renamed or a manually created service connection was renamed without updating the federation subject on the identity. |
+| **AADSTS700211: No matching federated identity record found for presented assertion issuer** | No federated credential was created or the issuer URL is not correct. |
+| **AADSTS700213: No matching federated identity record found for presented assertion subject** | No federated credential was created or the subject is not correct. |
+| **AADSTS700223** | Workload identity federation is constrained or disabled on the Microsoft Entra tenant. In this scenario, it may be possible to use a managed identity for the federation instead. For more information, see [Workload identity with managed identity](https://aka.ms/azdo-rm-workload-identity-manual). |
+| **AADSTS70025: Client application has no configured federated identity credentials** | Make sure federated credentials are configured on the App registration or Managed Identity. |
+| **Microsoft Entra rejected the token issued by Azure DevOps with error code AADSTS700238** | Workload identity federation has been constrained on the Microsoft Entra tenant. The issuer for your organization (`https://login.microsoftonline.com/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX`) isn't allowed to use workload identity federation with the workload identity type (App registration and/or Managed identity) you're using. Ask your Microsoft Entra tenant administrator or administration team to allow workload identity federation for your Azure DevOps organization. |
+| **AADSTS70052: The identity must be a managed identity, a single tenant app, or a service account** | Multitenant app registrations that have `signInAudience: AzureADMultipleOrgs` are currently not supported by the Microsoft Entra issuer. Use `signInAudience: AzureADMyOrg` and break up access to multiple tenants to use different service connections for each tenant instead. If you are dependent on ARM operations that [access multiple tenants in a single request](/azure/azure-resource-manager/management/authenticate-multi-tenant) (for example, [Cross-tenant peering of Virtual Networks](/azure/virtual-network/create-peering-different-subscriptions-service-principal)) you can [contact support](https://azure.microsoft.com/support/create-ticket/) to have your Azure DevOps organization use the Azure DevOps issuer instead. |
+| **AADSTS900382: Confidential Client is not supported in Cross Cloud** | Some sovereign clouds block Workload identity federation. |
+
+Is the AADSTS error you see not listed above? Check [Microsoft Entra authentication and authorization error codes](/entra/identity-platform/reference-error-codes#aadsts-error-codes).

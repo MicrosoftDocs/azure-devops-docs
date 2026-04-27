@@ -5,7 +5,7 @@ description: Find examples that showcase use of Azure DevOps CLI. This article c
 ms.topic: overview
 ms.subservice: azure-devops-reference
 ms.custom: devx-track-azurecli
-ms.manager: mijacobs 
+ms.manager: wiwagn 
 ms.author: chcomley  
 author: chcomley
 monikerRange: 'azure-devops'
@@ -90,7 +90,7 @@ To start using Azure DevOps CLI, see [Get started with Azure DevOps CLI](index.m
       - [Create a project](../organizations/projects/create-project.md)
       - [Delete a project](../organizations/projects/delete-project.md)
       - [List projects](../organizations/projects/create-project.md#list-projects)
-      - [Show project information](../organizations/projects/create-project.md?tabs=azure-devops-cli#list-projects-with-cli)
+      - [Show project information](../organizations/projects/create-project.md?tabs=azure-devops-cli#list-projects-by-using-cli)
       - [Open project in web portal](../organizations/projects/create-project.md?tabs=azure-devops-cli#show-project-information-in-the-web-portal)
    :::column-end:::
    :::column span="1":::

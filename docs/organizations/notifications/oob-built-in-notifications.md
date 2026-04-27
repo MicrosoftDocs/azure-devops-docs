@@ -34,7 +34,7 @@ The following OOB event types are supported by default for the project **Build**
 
 |Event type |Trigger |Description |
 |-----------|--------|------------| 
-| **Build completed** | Build completes | Notifies you when a build you queued or that was queued for you completes. |  
+| Build completed | Build completes | Notifies you when a build you queued or that was queued for you completes. |  
 
 ### Code events for Git
 
@@ -45,7 +45,7 @@ The following OOB event types are supported by default for the **Code (Git)** ca
 | **Pull request**         | Pull request reviewers added or removed | Notifies you when you or another user gets added or removed from a pull request that you created. | 
 | **Pull request**         | Pull request completion failures | Notifies you when a pull request you created fails to complete. |
 | **Pull request**         | Pull request changes | Notifies you when changes are made to a pull request you created, or changes are made to a pull request for which you're assigned as a reviewer. |
-| **Pull request comment** | Comment added to pull request | Notifies you about comments added to a pull request that you created, or a discussion you're involved in. |
+| Pull request comment | Comment added to pull request | Notifies you about comments added to a pull request that you created, or a discussion you're involved in. |
 
 ### Code events for TFVC
 
@@ -53,7 +53,7 @@ The following OOB event types are supported by default for the **Code (TFVC)** c
 
 |Event type |Trigger |Description |
 |-----------|--------|------------| 
-| **Code review** | Changes to code review that you're working on | Notifies you when a change is made to a code review you're assigned to. |
+| Code review | Changes to code review that you're working on | Notifies you when a change is made to a code review you're assigned to. |
 
 ### Extension management events
 
@@ -74,7 +74,7 @@ The following OOB event types are supported by default for the project **Release
 | **Deployment completed**     | Deployment to owned environment failed | Notifies you when a deployment to an environment you own fails to complete successfully and makes the environment unhealthy. |
 | **Deployment completed**     | Deployment to approved environment failed | Notifies you when a deployment you approved fails to complete successfully and makes the environment unhealthy. |
 | **Deployment completed**     | Deployment completion failures | Notifies you when a deployment you requested fails to complete successfully and makes the environment unhealthy. |
-| **Release approval pending** | Deployment approval pending | Notifies you when an approval for a deployment is pending on your input. |
+| Release approval pending | Deployment approval pending | Notifies you when an approval for a deployment is pending on your input. |
 
 ### Work (work items) events
 
@@ -82,7 +82,7 @@ The following OOB event types are supported by default for the project **Work** 
 
 |Event type |Trigger |Description |
 |-----------|--------|------------| 
-| **Work item** | Work item moved from this project (area path changed) | Notifies you when the area path for a work item is moved to another project. |
+| Work item | Work item moved from this project (area path changed) | Notifies you when the area path for a work item is moved to another project. |
 | **Work item**	| Work item assigned | Notifies you when you're assigned or unassigned a work item. |
 
 ## Supported subscriptions
@@ -91,29 +91,29 @@ You can create subscriptions by using the following templates for yourself, a te
 
 |Category |Template description |
 |---------|---------------------|
-| **Build** | A build completes. |
-| **Build** | A build fails. |
-| **Build** | The status changes for a build controller or agent. |
-| **Build** | The quality changes for a build. |
-| **Code (Git)** | A commit authored by you is pushed. |
-| **Code (Git)** | You push a commit. |
-| **Code (Git)** | A commit is pushed. |
-| **Code (Git)** | A pull request is created or updated. |
-| **Code (TFVC)** | Code is checked in. |
-| **Code (TFVC)** | Code is checked in with a policy override. |
-| **Code (TFVC)** | A file with a specific extension is checked in. |
-| **Code (TFVC)** | A file under a specific path is checked in. |
-| **Code (TFVC)** | A code review that you're working on changes. |
-| **Work** | A work item that you created is changed.|
-| **Work** | A work item assigned to you is changed. |
-| **Work** | A work item is changed. |
-| **Work** | A work item is assigned to you. |
-| **Work** | A work item is deleted. |
-| **Work** | A work item is restored. |
-| **Extension management** | An extension is modified. |
-| **Release** | An approval for a deployment is pending. |
-| **Release** | A deployment is completed. |
-| **Release** | A manual intervention for a deployment is pending. |
+| Build | A build completes. |
+| Build | A build fails. |
+| Build | The status changes for a build controller or agent. |
+| Build | The quality changes for a build. |
+| Code (Git) | A commit authored by you is pushed. |
+| Code (Git) | You push a commit. |
+| Code (Git) | A commit is pushed. |
+| Code (Git) | A pull request is created or updated. |
+| Code (TFVC) | Code is checked in. |
+| Code (TFVC) | Code is checked in with a policy override. |
+| Code (TFVC) | A file with a specific extension is checked in. |
+| Code (TFVC) | A file under a specific path is checked in. |
+| Code (TFVC) | A code review that you're working on changes. |
+| Work | A work item that you created is changed.|
+| Work | A work item assigned to you is changed. |
+| Work | A work item is changed. |
+| Work | A work item is assigned to you. |
+| Work | A work item is deleted. |
+| Work | A work item is restored. |
+| Extension management | An extension is modified. |
+| Release | An approval for a deployment is pending. |
+| Release | A deployment is completed. |
+| Release | A manual intervention for a deployment is pending. |
 
 ## Related content
 

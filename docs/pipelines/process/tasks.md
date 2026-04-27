@@ -31,7 +31,7 @@ Disabling Marketplace tasks can help improve pipeline security. Under most circu
 
 The [Visual Studio Marketplace](https://marketplace.visualstudio.com/azuredevops) offers many extensions you can install to extend the Azure Pipelines task catalog. You can also create custom tasks. For more information, see [Add a custom pipelines task extension](../../extend/develop/add-build-task.md).
 
-In YAML pipelines, you refer to tasks by name. If your custom task name matches a built-in task name, the pipeline uses the built-in task. To avoid this situation, you can reference your custom task by using the unique task GUID you assigned when you created the task. For more information, see [Understand task.json components](../../extend/develop/add-build-task.md#understanding-taskjson-components).
+In YAML pipelines, you refer to tasks by name. If your custom task name matches a built-in task name, the pipeline uses the built-in task. To avoid this situation, you can reference your custom task by using the unique task GUID you assigned when you created the task. For more information, see [Understand task.json components](../../extend/develop/add-build-task.md#taskjson-components).
 
 <a name="taskversions"></a>
 ## Task versions

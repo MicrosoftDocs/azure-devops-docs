@@ -4,11 +4,12 @@ description: Learn the fundamental concepts and patterns for Azure DevOps REST A
 ms.assetid: 14ac2881-2aaf-4291-8dfe-3f7e3f591861
 ms.subservice: azure-devops-ecosystem
 ms.topic: quickstart
-ms.custom: 
+ms.custom: pat-reduction, copilot-scenario-highlight
+ai-usage: ai-assisted
 monikerRange: '<= azure-devops'
 ms.author: chcomley
 author: chcomley
-ms.date: 07/16/2025
+ms.date: 03/31/2026
 ---
 
 # Get started with the REST APIs
@@ -22,6 +23,8 @@ Azure DevOps REST APIs provide powerful programmatic access to work items, repos
 
 This article covers the fundamental concepts and patterns for Azure DevOps REST APIs. For practical implementation examples, see [REST API samples](../get-started/rest/samples.md).
 
+[!INCLUDE [ai-assistance-mcp-server-tip](../../includes/ai-assistance-mcp-server-tip.md)]
+
 ## URL structure
 
 The APIs follow a common pattern, as shown in the following example:
@@ -31,9 +34,9 @@ VERB https://{instance}/{collection}/{team-project}/_apis/{area}/{resource}?api-
 ```
 
 > [!TIP]
-> As APIs evolve, we recommend that you include an API version in every request. This practice can help you avoid unexpected changes in the API that could break.
+> As APIs evolve, include an API version in every request. This practice helps you avoid unexpected changes in the API that could break your application.
 
-### Azure DevOps Services
+### [Azure DevOps Services](#tab/services)
 
 For Azure DevOps Services, `instance` is `dev.azure.com/{organization}` and `collection` is `DefaultCollection`, so the pattern looks like the following example:
 
@@ -46,7 +49,7 @@ VERB https://dev.azure.com/{organization}/_apis/{area}/{resource}?api-version={v
 GET https://dev.azure.com/{organization}/_apis/projects?api-version=7.2
 ```
 
-### Azure DevOps Server
+### [Azure DevOps Server](#tab/server)
 
 For Azure DevOps Server, `instance` is `{server:port}`. The default port for a non-SSL connection is 8080.
 
@@ -56,17 +59,17 @@ The default collection is `DefaultCollection`, but you can use any collection.
 - SSL: `https://{server}/DefaultCollection/_apis/projects?api-version=7.2`
 - Non-SSL: `http://{server}:8080/DefaultCollection/_apis/projects?api-version=7.2`
 
+---
+
 ## Authentication
 
 Azure DevOps REST APIs support several authentication methods:
 
 - **Microsoft Entra ID** - Recommended for production applications
 - **Personal Access Tokens (PATs)** - Simple authentication for scripts and testing  
-- **OAuth 2.0** - For non-Microsoft applications
-- **Service principals** - For automated scenarios
+- **Service principals and managed identities** - For automated scenarios
 
-> [!IMPORTANT]
-> Microsoft Entra ID authentication is the recommended approach for production applications. For implementation examples and complete authentication guidance, see [REST API samples](../get-started/rest/samples.md) and [Authentication guidance](../get-started/authentication/authentication-guidance.md).
+[!INCLUDE [use-microsoft-entra-reduce-pats](../../includes/use-microsoft-entra-reduce-pats.md)]
 
 ## Response format
 
@@ -79,7 +82,7 @@ Azure DevOps REST APIs typically return JSON responses. Here's an example respon
             "id": "00000000-0000-0000-0000-000000000000",
             "name": "Fabrikam-Fiber-TFVC",
             "url": "https://dev.azure.com/fabrikam-fiber-inc/_apis/projects/00000000-0000-0000-0000-000000000000",
-            "description": "TeamFoundationVersionControlprojects"
+            "description": "Team Foundation Version Control projects"
         }
     ],
     "count": 1
@@ -99,7 +102,7 @@ Azure DevOps REST APIs use standard HTTP methods:
 |:-------|:------------|:--------|
 | GET    | Get a resource or list of resources | Get projects, work items |
 | POST   | Create a resource, or get resources using advanced queries | Create work items, query work items |
-| PUT    | Create or completely replace a resource | Create/update work item |
+| PUT    | Create or completely replace a resource | Replace a build definition, update a policy |
 | PATCH  | Update specific fields of a resource | Update work item fields |
 | DELETE | Delete a resource | Delete work item |
 
@@ -122,8 +125,8 @@ Content-Type: application/json-patch+json
 
 ### HTTP method override
 
-Some web proxies might only support the HTTP verbs GET and POST, but not more modern HTTP verbs like PATCH and DELETE.
-If your calls might pass through one of these proxies, you can send the actual verb using a POST method, with a header to override the method.
+Some web proxies support only the HTTP verbs GET and POST. They don't support more modern HTTP verbs like PATCH and DELETE.
+If your calls might pass through one of these proxies, send the actual verb by using a POST method with a header to override the method.
 For example, you might want to [update a work item](/rest/api/azure/devops/wit/work-items/update) (`PATCH _apis/wit/workitems/3`), but you might have to go through a proxy that only allows GET or POST.
 You can pass the proper verb (PATCH in this case) as an HTTP request header parameter and use POST as the actual HTTP method.
 
@@ -190,7 +193,25 @@ For practical implementation guidance and complete code examples, see:
 * [REST API samples](../get-started/rest/samples.md) - Complete examples with Microsoft Entra ID authentication
 * [Authentication guidance](../get-started/authentication/authentication-guidance.md) - Detailed authentication options
 * [REST API versioning](../concepts/rest-api-versioning.md) - API lifecycle information
-* [OAuth 2.0](../get-started/authentication/oauth.md) - OAuth implementation details
+* [Microsoft Entra OAuth](../get-started/authentication/entra-oauth.md) - OAuth implementation with Microsoft Entra ID
+
+<a id="use-ai-assistance"></a>
+
+## Use AI to build REST API calls
+
+If you connect [Azure DevOps MCP Server](../../mcp-server/mcp-server-overview.md) to your AI agent in agent mode, you can use natural language prompts to generate and troubleshoot REST API calls.
+
+| Task | Example prompt |
+|------|----------------|
+| Build a GET request | `Show me how to construct a GET request to list all projects in my Azure DevOps organization using the REST API` |
+| Construct a POST body | `Generate the JSON-patch body for creating a work item using the Azure DevOps REST API` |
+| Handle authentication | `Write C# code to call the Azure DevOps REST API with a Bearer token from Microsoft Entra ID` |
+| Explore API areas | `What Azure DevOps REST API endpoints are available for managing Git pull requests?` |
+| Parse API responses | `Show me how to deserialize an Azure DevOps REST API response into C# objects and handle pagination with continuation tokens` |
+| Debug API errors | `I'm getting a 400 error when calling the Azure DevOps work item update API — help me understand the correct PATCH format` |
+
+> [!NOTE]
+> Agent mode and the MCP Server use natural language, so you can adjust these prompts or ask follow-up questions to refine the results.
 
 ## Next steps
 

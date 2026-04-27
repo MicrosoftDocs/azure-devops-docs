@@ -2,7 +2,7 @@
 title: Query by numeric fields based on effort, schedules, and story points
 titleSuffix: Azure Boards
 description: Track work by creating queries based on effort, story points, schedules, or time tracking fields in Azure Boards and Azure DevOps.
-ms.custom: boards-queries, engagement-fy23
+ms.custom: boards-queries, engagement-fy23, copilot-scenario-highlight
 ms.service: azure-devops-boards
 ms.assetid: 78fe418f-fbd8-4ae2-97d7-c754c14dd3cd
 ms.author: chcomley
@@ -10,7 +10,7 @@ author: chcomley
 ms.topic: example-scenario
 ai-usage: ai-assisted
 monikerRange: '<= azure-devops'
-ms.date: 10/08/2025
+ms.date: 02/28/2026
 ---
 
 # Query by numeric fields
@@ -18,6 +18,8 @@ ms.date: 10/08/2025
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 Learn how to query by numeric fields such as effort, schedule estimates, story points, or time-tracking fields in Azure Boards and Azure DevOps.
+
+[!INCLUDE [ai-assistance-mcp-server-tip](../../includes/ai-assistance-mcp-server-tip.md)]
 
 Common numeric fields track effort for requirements or estimated, remaining, and completed work for tasks. Use queries to list the work items you care about, then create charts that show either a count of work items or a sum of a numeric field.
 
@@ -399,6 +401,28 @@ This table describes activity-based and numeric fields you can use to track work
 
 > [!div class="nextstepaction"]
 > [Customize your work tracking experience](../../reference/customize-work.md)
+
+<a id="use-ai-assistance"></a>
+
+## Use AI to query numeric fields
+
+If you have the [Azure Boards MCP Server](../../mcp-server/mcp-server-overview.md) connected to your AI agent in agent mode, you can use natural language prompts to find work items based on effort, story points, and time-tracking fields.
+
+| Task | Example prompt |
+|------|----------------|
+| Find high-effort items | `Find all user stories with story points greater than 8 that are still active` |
+| Check estimate accuracy | `List tasks where completed work exceeds the original estimate` |
+| Track remaining work | `Show active sprint tasks with remaining work greater than zero` |
+| Find unestimated items | `Find user stories where the effort field is empty or not set` |
+| Calculate sprint capacity | `Show total story points committed vs completed for the current sprint in <Contoso>` |
+| Find outlier estimates | `List tasks in <Contoso> where remaining work is greater than 16 hours` |
+| Sum effort by assignee | `Show total story points assigned to each team member in the current sprint for <Contoso>` |
+| Identify untracked time | `List active tasks in the current sprint for <Contoso> that have original estimate set but completed work is still zero` |
+| Compare effort across sprints | `Show total story points completed per sprint for the last 4 sprints in <Contoso>` |
+| Find sizing inconsistencies | `List user stories in <Contoso> with story points of 1 that have more than 3 child tasks` |
+
+> [!NOTE]
+> Agent mode and the MCP Server use natural language, so you can adjust these prompts or ask follow-up questions to refine the results.
 
 ## Related content
 

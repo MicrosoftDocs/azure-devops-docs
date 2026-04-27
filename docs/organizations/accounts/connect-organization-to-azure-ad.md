@@ -8,9 +8,9 @@ ai-usage: ai-assisted
 ms.topic: how-to
 ms.author: chcomley
 author: chcomley
-ms.date: 01/13/2026
+ms.date: 03/03/2026
 monikerRange: 'azure-devops'
-ms.custom: sfi-image-nochange
+ms.custom: sfi-image-nochange, copilot-scenario-highlight, support-driven-update
 ---
 
 # Connect your organization to Microsoft Entra ID
@@ -31,6 +31,8 @@ This article provides step-by-step guidance for connecting your Azure DevOps org
 > [!TIP]
 > For comprehensive information about using Microsoft Entra ID with Azure DevOps, see the [conceptual overview](access-with-azure-ad.md).
 
+[!INCLUDE [ai-assistance-mcp-server-tip](../../includes/ai-assistance-mcp-server-tip.md)]
+
 ## Prerequisites
 
 | Category | Requirements |
@@ -41,7 +43,7 @@ This article provides step-by-step guidance for connecting your Azure DevOps org
 |**SSH keys** |Request that SSH keys get manually cleared by [Support](https://azure.microsoft.com/support/devops/) before you switch directories. Find the steps for how to recreate SSH keys [further in this article](#inform-users-microsoft-entra-change). For more information, see the [FAQ](faq-azure-access.yml).|
     
 > [!NOTE]
-> Ensure you're using Microsoft Entra Public. Connecting Azure DevOps Services organizations to Microsoft Entra Government and accessing Azure DevOps Services with user accounts from Microsoft Entra Government isn't supported.
+> Ensure you're using Microsoft Entra Public. Connecting Azure DevOps Services organizations to Microsoft Entra Government and accessing Azure DevOps Services with user accounts from Microsoft Entra Government (including guest users in a Microsoft Entra Public tenant that are sourced from Microsoft Entra Government) aren't supported.
 
 <a name='connect-your-organization-to-azure-ad'></a>
 
@@ -113,6 +115,27 @@ After successfully connecting your organization to Microsoft Entra ID, verify th
 
 > [!TIP]
 > Keep communication channels open with your users for the first few days after connection to quickly address any issues.
+
+<a id="use-ai-assistance"></a>
+
+## Use AI to manage Microsoft Entra ID connections
+
+If you have the [Azure DevOps MCP Server](../../mcp-server/mcp-server-overview.md) configured, you can use AI assistants to review and manage your organization's Microsoft Entra ID connection using natural language prompts. The MCP Server provides your AI assistant with secure access to your Azure DevOps data, allowing you to check connection status, review user mappings, and verify configurations without navigating through the web interface.
+
+### Example prompts for Microsoft Entra ID connections
+
+| Task | Example prompt |
+|------|----------------|
+| Pre-migration identity check | `List all users in <organization-name> and show which ones have Microsoft accounts versus Microsoft Entra accounts that need mapping` |
+| Find potential identity conflicts | `Are there users in <organization-name> whose Microsoft account email matches an identity in the <tenant-name> Microsoft Entra tenant?` |
+| Validate post-connection status | `After connecting <organization-name> to Microsoft Entra, show me any users whose access changed or who lost permissions` |
+| Check administrator readiness | `Who are the Project Collection Administrators in <organization-name> and do they all have accounts in the <tenant-name> Entra tenant?` |
+| Audit external users | `After connecting to Entra ID, list any guest or external users in <organization-name> and their current access levels` |
+| Review organization connection | `Show me the Microsoft Entra tenant details for <organization-name> including tenant ID, domain, and connection status` |
+
+> [!TIP]
+> If you're using Visual Studio Code, [agent mode](/visualstudio/ide/copilot-chat-context#agent-mode) is especially helpful for verifying Microsoft Entra ID configurations and user mappings after connecting your organization.
+> - To avoid using stale or cached data from previous queries, add to your prompt, `Do not use previously fetched data`.
 
 ## Related content
 

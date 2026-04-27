@@ -4,12 +4,13 @@ titleSuffix: Azure DevOps Services
 description: Step-by-step migration guide for upgrading from legacy WIT Client OM to modern REST-based .NET client libraries with secure authentication.
 ms.subservice: azure-devops-ecosystem
 ai-usage: ai-assisted
+ms.custom: pat-reduction
 ms.topic: overview
 ms.assetid: 30272A34-2CE1-41B3-BA7A-815D69309CBE
 ms.author: chcomley
 author: chcomley
 monikerRange: 'azure-devops'
-ms.date: 07/14/2025
+ms.date: 03/02/2026
 ---
 
 <!--- Supports FWLINK: https://go.microsoft.com/fwlink/?LinkId=692096 -->

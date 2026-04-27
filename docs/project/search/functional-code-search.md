@@ -5,17 +5,18 @@ description: Options for searching code across all your projects in Azure DevOps
 ms.subservice: azure-devops-search
 ms.custom: cross-service, cross-project
 ms.topic: how-to
+ai-usage: ai-assisted
 ms.author: chcomley
 author: chcomley
 monikerRange: '<= azure-devops'
-ms.date: 01/27/2025
+ms.date: 02/18/2026
 ---
 
 # Functional code search  
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
-Find the code you need faster with functional code search. This article explains how to refine your search across repositories using code types and other functions with the [Code Search](https://marketplace.visualstudio.com/items?itemName=ms.vss-code-search) Marketplace extension for Azure DevOps.
+Find the code you need faster by using functional code search. This article explains how to refine your search across repositories by using code types and other functions with the [Code Search](https://marketplace.visualstudio.com/items?itemName=ms.vss-code-search) Marketplace extension for Azure DevOps.
 
 ## Prerequisites
 
@@ -24,7 +25,7 @@ Find the code you need faster with functional code search. This article explains
 | Category | Prerequisite |
 |--------------|-------------|
 | **Access levels** | - To use code search: At least **Basic** access. <br> - To access code in a private project: At least **Basic** access. Stakeholder access doesn't include code. <br> - To access code in a public project: At least  **Stakeholder** access. |
-| **Search results** | **Access-based results**: When you're searching across the organization or collection, only results for which a project member has access are listed. |
+| **Search results** | **Access-based results**: When you search across the organization or collection, only results for which you have access appear. |
 
 ::: moniker-end
 
@@ -33,17 +34,17 @@ Find the code you need faster with functional code search. This article explains
 | Category | Requirements |
 |--------------|-------------|
 | **Access levels** | - To use code search: At least **Basic** access. <br> - To access code in a private project: At least **Basic** access. Stakeholder access doesn't include code. |
-| **Search results** | **Access-based results**: When you're searching across the organization or collection, only results for which a project member has access are listed. |
+| **Search results** | **Access-based results**: When you search across the organization or collection, only results for which you have access appear. |
 | **Tools** | [Code Search extension](https://marketplace.visualstudio.com/items?itemName=ms.vss-code-search)   |
 
 ::: moniker-end
 
 ## Code search best practices
 
-- **Start broad:** Begin with a broad search and then use filter operators to narrow it down by project, repository, path, file name, and more.
-- **Use [wildcards](get-started-search.md#search-features-usage-and-examples) and [boolean operators](get-started-search.md#search-features-usage-and-examples):** If you don’t know the exact term, use wildcards to expand your search and boolean operators to refine it.
-- **Hover for more info:** To get more information about a code item, hover over it and use the shortcut menu to search for that text in all your projects and files.
-- **Trace code functionality:** Use the shortcut menu to search for related items like definitions and references in a file or in the search results to trace how your code works.
+- **Start broad:** Begin with a broad search. Then use filter operators to narrow it down by project, repository, path, file name, and more.
+- **Use [wildcards](get-started-search.md#search-features-usage-and-examples) and [boolean operators](get-started-search.md#search-features-usage-and-examples):** If you don't know the exact term, use wildcards to expand your search and boolean operators to refine it.
+- **Hover for more info:** To get more information about a code item, hover over it. Use the shortcut menu to search for that text in all your projects and files.
+- **Trace code functionality:** Use the shortcut menu to search for related items like definitions and references in a file or in the search results. This approach helps you trace how your code works.
 - **Use code type filters:** To find the implementation of an API or other code element, use code type filters to search for specific kinds of code such as:
   - Definitions
   - References
@@ -107,7 +108,7 @@ Or, you can type the functions and parameters in the search box. The following t
 
 ## Functions to select projects, repositories, paths, and files
 
-Functions make it easy to narrow the search to specified locations, specific types of files within these locations, or specified filenames. Narrow the search to a specific location using the `proj`, `repo`, or `path` filters. Mix and match the following functions as required.
+Functions make it easy to narrow the search to specified locations, specific types of files within these locations, or specified filenames. Narrow the search to a specific location by using the `proj`, `repo`, or `path` filters. Mix and match the following functions as required.
 
 |**Usage**  |**Example**  |
 |---------|---------|
@@ -116,7 +117,7 @@ Functions make it easy to narrow the search to specified locations, specific typ
 |Find all occurrences of the word *QueueJobsNow* in the path *VisualStudio/Services/Framework* and its subpaths.  | `QueueJobsNow path:VisualStudio/Services/Framework`        |
 |Find all occurrences of the word *QueueJobsNow* in the path *\*/Doc\*/Framework/\** and *\*/Doc\*/\*/\*/Framework/\** and its subpaths. Globbing Pattern (\*\*) matches zero or more characters across multiple segments. For example, path:\*\*/Doc\*\*/Framework also matches abc/*Doc*Test/gh/ijk/mnop/*Framework*/ | `QueueJobsNow path:**/Doc**/Framework`        |
 |Find all occurrences of the word *QueueJobsNow* in the path *\*/Doc\*/Framework/\** and its subpaths and file name Test*.txt (Use Globbing Pattern \*\*). For example, path:\*\*/Doc\*\*/Framework/\*\*/Test\*.txt also matches abc/def/*Doc*A/gh/*Framework*/*Test*Misc.*txt*  | `QueueJobsNow path:**/Doc**/Framework/**/Test*.txt`        |
-|Enclose the argument to the filter in double-quotes if it contains a space.   | `QueueJobsNow path:"VisualStudio/Windows Phones and Devices/Services"`        |
+|Enclose the argument to the filter in double quotes if it contains a space.   | `QueueJobsNow path:"VisualStudio/Windows Phones and Devices/Services"`        |
 |Find all occurrences of the word *QueueJobsNow* in all files where the filename starts with *queueRegister*. | `QueueJobsNow file:queueRegister*`         |
 |Find all files with the name *QueueRegister* without an extension. Use quotes to find files without extensions.   |  `file:"queueRegister"`       |
 |Find all occurrences of the word *QueueJobsNow* in only C# source files. A plain text search string that doesn't include file type functions also finds files where the string matches part of the filename.  |  `QueueJobsNow ext:cs`       |
@@ -158,13 +159,13 @@ Code Search can index different branches in a Git repository. It only indexes fi
 Team Foundation Version Control (TFVC) projects display only the folders that you can read. You can't see any other projects or folders. To filter your search, choose folders from the tree.
 
 > [!TIP]
-> Code Search saves your last settings, such as the project and repository or path that you searched in. When you want to search in a different scope, select **Clear all links** to clear the checkboxes and search across all projects. The first 100 hits or matches in the target files get highlighted by Code Search in the results pane. 
+> Code Search saves your last settings, such as the project and repository or path that you searched in. When you want to search in a different scope, select **Clear all links** to clear the checkboxes and search across all projects. Code Search highlights the first 100 hits or matches in the target files in the results pane. 
 
 ## Search code with REST API
 
-You can use APIs to extend or supplement the capabilities listed in this article. For information about Code Search with REST API, see [Fetch Code Search Results](/rest/api/azure/devops/search/code-search-results/fetch-code-search-results).
+Use APIs to extend or supplement the capabilities listed in this article. For information about Code Search with REST API, see [Fetch Code Search Results](/rest/api/azure/devops/search/code-search-results/fetch-code-search-results).
 
-## Next steps
+## Next step
 
 > [!div class="nextstepaction"]
 > [Search work items](functional-work-item-search.md)

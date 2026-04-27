@@ -105,3 +105,4 @@ You have a complete HAR file with the necessary data for troubleshooting.
 
 - [Access Azure DevOps troubleshooting documentation](/troubleshoot/azure/devops/welcome-azure-devops)
 - [Get support and provide feedback](provide-feedback.md)
+- [All troubleshooting guides & FAQs](../troubleshoot/index.yml)

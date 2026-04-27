@@ -3,201 +3,219 @@ title: Power BI data transformations
 titleSuffix: Azure DevOps
 description: Learn how to expand columns and transform Analytics data in Power BI to support report generation.
 ms.subservice: azure-devops-analytics
-ms.custom: powerbi
+ms.custom: powerbi, copilot-scenario-highlight, awp-ai
 ms.author: chcomley
 author: chcomley
 ms.topic: how-to
 monikerRange: "<=azure-devops"
-ms.date: 12/09/2022
+ms.date: 03/24/2026
+ai-usage: ai-assisted
 ---
 
 # Transform Analytics data to generate Power BI reports
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
-Once you've imported your Analytics data into Power BI, you may need to transform select column data prior to creating a report. This article shows you how to perform some of these basic tasks, such as: 
+After you import Analytics data into Power BI through an OData query or Analytics view, the raw data often needs shaping before it's ready for reports. Entity fields arrive as collapsed records, dates may appear as integers, and null values can skew calculations.
 
-- Expand columns, such as **Area**, **AssignedTo**, and **Iteration** 
-- Expand descendant columns when querying linked work items
-- Pivot columns to generate counts for select category states 
-- Transform the column data type from decimal to whole numbers 
-- Replace null values in column data 
-- Create a custom field 
-- Rename fields. 
- 
+This article covers the most common Power Query transformations:
+
+- Expand entity columns (**Area**, **AssignedTo**, **Iteration**) and linked-work-item descendants
+- Pivot state categories into count columns
+- Convert decimal or integer fields to the correct data type
+- Replace null values with zeros
+- Add computed columns (for example, percent complete)
+- Rename columns for readability 
+
+[!INCLUDE [ai-assistance-mcp-server-tip](../../includes/ai-assistance-mcp-server-tip.md)]
+
 ## Prerequisites
 
 [!INCLUDE [prerequisites-simple](../includes/analytics-prerequisites-simple.md)]
 
-## Expand columns 
+## Expand columns
 
-The query returns several columns that you need to expand before you can use them in Power BI. Any entity pulled in using an OData **$expand** statement returns a record with potentially several fields. You need to expand the record to flatten the entity into its fields. Examples of such entities are: **AssignedTo**, **Iteration**, and **Area**. 
+When your OData query uses `$expand` to include related entities such as **Area**, **AssignedTo**, or **Iteration**, those entities arrive in Power BI as collapsed *Record* values. You must expand each record to expose its individual fields.
 
-After closing the **Advanced Editor** and while remaining in the **Power Query Editor**, select the expand button on the entities you need to flatten.
+In Power Query Editor:
 
-1. For example, choose the expand button for **Area**, select the properties you want to expand, and choose **OK**. Here, we choose `AreaName` and `AreaPath` to flatten. The `AreaName` property is similar to the **Node Name** field.
+1. Select the expand button (![expand icon](media/transform-data/expand-area-path-property.png)) on a column that shows *Record* — for example, **Area**. Select the properties you want (such as `AreaName` and `AreaPath`), and then select **OK**.
 
     > [!div class="mx-imgBorder"] 
     > ![Screenshot of Power BI transform data, Expand AreaPath column.](media/transform-data/expand-area-path-property.png)
 
-	> [!NOTE]   
-	> The available properties to select depends on the properties requested to return in the query. If you don't specify any properties, then all properties are available. For more information about these properties, see the following metadata references: [Areas](../analytics/entity-reference-boards.md#areas), [Iterations](../analytics/entity-reference-boards.md#iterations), and [Users](../analytics/entity-reference-general.md#users).
-	
-1. The table now contains entity field(s).
+	> [!NOTE]
+	> The properties available for selection depend on which properties your query requested. If you didn't specify properties in the query, all properties are available. For metadata details, see [Areas](../analytics/entity-reference-boards.md#areas), [Iterations](../analytics/entity-reference-boards.md#iterations), and [Users](../analytics/entity-reference-general.md#users).
+
+1. The expanded fields now appear as separate columns in the table.
 
     > [!div class="mx-imgBorder"] 
     > ![Screenshot of expanded Area columns.](media/transform-data/expanded-area-columns.png)
 
-1. Repeat steps 1 through 3 for all fields representing entities that need expanding. These appear with *Record* listed in the table column when unexpanded. 
+1. Repeat for every column that displays *Record* — for example, **AssignedTo** and **Iteration**.
 
 <a id="expand-descendants"></a>
 
-### Expand Descendants column
+### Expand the Descendants column
 
-The **Descendants** column contains a table with two fields: **State** and **TotalStoryPoints**. Expand it. 
+If your query returns linked work items with rollup data, the **Descendants** column contains a nested table. Expand it to access fields like **State** and **TotalStoryPoints**.
 
-1. Choose the **Expand** button, and select the columns to report on:
+1. Select the **Expand** button on the **Descendants** column and select the fields to include.
 
-	:::image type="content" source="media/transform-data/descendants-column-expand.png" alt-text="Screenshot of Power BI Descendants column. ":::
+	:::image type="content" source="media/transform-data/descendants-column-expand.png" alt-text="Screenshot of Power BI Descendants column.":::
 
-2. Check all the columns and choose **OK**.
+1. Select all columns and choose **OK**.
 
-	:::image type="content" source="media/transform-data/expand-descendents-property.png" alt-text="Screenshot of Power BI Descendants column, expand options. ":::
+	:::image type="content" source="media/transform-data/expand-descendents-property.png" alt-text="Screenshot of Power BI Descendants column, expand options.":::
 
-3. The Descendants entity is flattened to the selected columns:
+1. The nested table is flattened into individual columns.
 
-	:::image type="content" source="media/transform-data/descendents-expanded-columns.png" alt-text="Screenshot of Power BI expanded Descendants column. ":::
+	:::image type="content" source="media/transform-data/descendents-expanded-columns.png" alt-text="Screenshot of Power BI expanded Descendants column.":::
 
 <a id="pivot-statecategory"></a>
 
-#### Pivot Descendants.StateCategory column
+#### Pivot the Descendants.StateCategory column
 
-1. Select the 1Descendants.StateCategory1 column header to select it.
+After expanding descendants, you can pivot **StateCategory** to create one column per state — useful for percent-complete calculations.
 
-1. Select **Transform** menu and then **Pivot Column**. 
+1. Select the **Descendants.StateCategory** column header.
+
+1. Select **Transform** > **Pivot Column**.
+
 	:::image type="content" source="media/transform-data/transform-menu-pivot-column.png" alt-text="Transform menu, Pivot Column option.":::
 
-1. In the Pivot Column dialog, for **Values** select `Descendants.TotalStoryPoints`, and then press **OK**.
-	Power BI creates a column for every StateCategory value.
+1. In the **Pivot Column** dialog, set **Values** to `Descendants.TotalStoryPoints` and select **OK**. Power BI creates a separate column for each state category (for example, *Proposed*, *InProgress*, *Completed*).
 
-	:::image type="content" source="media/transform-data/descendants-pivot-column-dialog.png" alt-text="Dialog of Pivot Column for  Descendants.TotalStoryPoints column. ":::  
+	:::image type="content" source="media/transform-data/descendants-pivot-column-dialog.png" alt-text="Dialog of Pivot Column for Descendants.TotalStoryPoints column.":::
 
 <a id="expand-links-column"></a>
 
 ### Expand the Links column
 
-1. Select the expand button on the `Links` column.
+When your query includes work-item links, the **Links** column contains a nested table that you must expand in two stages.
 
-	:::image type="content" source="media/transform-data/links-column-expand.png" alt-text="Screenshot of Power BI Links column, expand options. ":::
+1. Select the expand button on the **Links** column and select all fields.
 
-1. Select all the fields to flatten.
+	:::image type="content" source="media/transform-data/links-column-expand.png" alt-text="Screenshot of Power BI Links column, expand options.":::
 
-	:::image type="content" source="media/transform-data/links-column-expand.png" alt-text="Screenshot of Power BI Links column, expand options. ":::
+1. Select the expand button on the **Links.TargetWorkItem** column and select the target properties you want (for example, **Title**, **State**, **WorkItemType**).
 
-1. Select the expand button on the `Links.TargetWorkItem` column and select the properties to flatten.
-
-	:::image type="content" source="media/transform-data/links-target-work-item-column-expand.png" alt-text="Screenshot of Power BI Links.TargetWorkItem column, expand options. ":::
+	:::image type="content" source="media/transform-data/links-target-work-item-column-expand.png" alt-text="Screenshot of Power BI Links.TargetWorkItem column, expand options.":::
 
 > [!NOTE]
-> If the link represents a one-to-many or many-to-many relationship, then multiple links will
-> expand to multiple rows, one for each link. 
-> 
-> For example, if Work Item #1 is linked to Work Item's #2 and #3, then when you expand the Links record, 
-> you will have 2 rows for Work Item #1. One that represents its link to Work Item #2, and another that
-> represents its link to Work Item #3.
+> For one-to-many or many-to-many relationships, expanding links creates multiple rows per source work item — one row for each link. For example, if Work Item #1 links to Work Items #2 and #3, you get two rows for Work Item #1.
 
 <a id="transform-data-type"></a>
 
-## Transform a column data type 
+## Transform column data types
 
 <a id="leadtimedays-cycletimedays"></a>
 
- 
-### Transform LeadTimeDays and CycleTimeDays to whole numbers
+### Convert LeadTimeDays and CycleTimeDays to whole numbers
 
-The `LeadTimeDays` and `CycleTimeDays` are decimal fields. For example if **Lead Time** is 10 and 1/2 days, the value is 10.5. Since most Lead/Cycle Time reports assume that it's rounded to the nearest day, we need to convert these fields to an Integer. Making this conversion converts all values less than 1 to 0. 
+Analytics returns `LeadTimeDays` and `CycleTimeDays` as decimals (for example, 10.5 for 10½ days). Most lead/cycle time reports round to the nearest day, so convert these columns to integers. Values less than 1 become 0.
 
-From the Power Query Editor, select the ribbon **Transform** menu.  
+1. In Power Query Editor, select the **Transform** tab.
 
-1. Select the `LeadTimeDays` column by selecting the column header.  
-
-1. Select **Data Type** and change to **Whole Numbers**.  
+1. Select the `LeadTimeDays` column header, then select **Data Type** > **Whole Number**.
 
    :::image type="content" source="media/transform-data/change-data-type-lead-time.png" alt-text="Screenshot of Power BI Transform menu, Data type selection.":::
 
 1. Repeat for `CycleTimeDays`.
 
-### Change CompletedDateSK to a Date field
+### Convert CompletedDateSK to a Date field
 
-The `CompletedDateSK` column data corresponds to an integer rendering of the **Completed Date** field in the format `YYYYMMDD`. For example, the integer value of 2022-July-01 is 20220701. For easier reporting, we change it to a **Date** field.
+Analytics stores `CompletedDateSK` as an integer in `YYYYMMDD` format (for example, `20220701` for July 1, 2022). Convert it to a proper **Date** type in two steps — integer to text, then text to date.
 
-From the Power Query Editor, select the ribbon **Transform** menu. 
+1. Select the `CompletedDateSK` column header.
 
-1. Select the `CompletedDateSK` column header. 
-1. Select **Data Type** and change to **Text**.
-	When the **Change Column Type** dialog appears, select **Add new step** (rather than **Replace current step**). This two-step process is the easiest way to change it to a proper **Date** field in Power BI.
+1. Select **Data Type** > **Text**. When the **Change Column Type** dialog appears, select **Add new step**.
 
    :::image type="content" source="media/transform-data/change-column-type-add-new-step.png" alt-text="Screenshot of Power BI Transform menu, Change Column Type dialog.":::
 
-1. Next, select **Date Type** again and choose **Date**. 
-	In the **Change Column Type** dialog, select **Add new step**.
- 
+1. With the same column still selected, select **Data Type** > **Date**. In the **Change Column Type** dialog, select **Add new step** again.
 
 <a id="replace-null-values"></a> 
 
-## Replace values  
+## Replace null values
 
-Sometimes one or more records may contain null values. For example, a value may not have been entered for **Story Points** or **Remaining Work**.  
+Fields like **Story Points** or **Remaining Work** may contain null values when no value was entered. Nulls cause errors in calculations (for example, a percent-complete formula fails if any denominator term is null). Replace them with zero before you create computed columns.
 
 :::image type="content" source="media/transform-data/records-null-data.png" alt-text="Screenshot of Power BI table containing null values.":::
 
-For easier reporting, replace nulls with zero by following these steps.
+1. Select the column header.
+1. Select **Transform** > **Replace Values**.
+1. In the **Replace Values** dialog, enter `null` in **Value to Find** and `0` in **Replace With**.
+1. Select **OK**.
+1. Repeat for each column that might contain nulls.
 
-1. Select the column by clicking the column header.
-1. Select the **Transform** menu.
-1. Select **Replace Values**. In the **Replace Values** dialog:
-	- Enter "null" in **Value to Find**.
-	- Enter "0" in **Replace With**.
-1. Choose **OK**.
-
-## Create a custom column
+## Create a computed column
 
 <a id="create-percent-complete"></a>
 
-### Create a percentage complete computed column
+### Add a percentage complete column
 
-Prior to adding the percentage complete column, make sure that you replace all null values in the pivoted state columns.
-1. Select **Add Column** menu.
-1. Select **Custom Column**.
-1. Enter **PercentComplete** for **New column name**.
-1. Enter the following in **Custom column formula**.
+> [!IMPORTANT]
+> Before you add this column, replace all null values in the pivoted state columns (see preceding section). Any null term causes the formula to return an error.
+
+1. Select **Add Column** > **Custom Column**.
+
+1. Enter `PercentComplete` for **New column name** and enter the following formula:
 
     ```
     = [Completed]/([Proposed]+[InProgress]+[Resolved]+[Completed])
     ```
+
 	:::image type="content" source="media/transform-data/custom-column-dialog-percent-complete.png" alt-text="Custom Column Dialog, PercentComplete syntax.":::
 
     > [!NOTE]
-    > It's possible that you won't have a **Resolved** column, if the work items don't have States mapped to the *Resolved* workflow state category. 
-    > If so, omit "[Resolved]" in the above formula.
+    > If your work items don't have states mapped to the *Resolved* category, omit `[Resolved]` from the formula.
 
-1. Press **OK**.
-1. Select **Transform** menu.
-1. Select **Data Type** and select **Percentage**.
+1. Select **OK**.
 
-## Rename column fields
+1. With the new column selected, select **Transform** > **Data Type** > **Percentage**.
 
-When finished with your expansion, you may choose to rename one or more columns. 
+<a id="rename-column-fields"></a>
 
-1. Right-click a column header and select **Rename...**
+## Rename columns
+
+After expanding and transforming columns, rename them so they're readable in your report visuals.
+
+1. Right-click a column header and select **Rename**.
 
 	> [!div class="mx-imgBorder"] 
 	> ![Power BI Rename Columns](media/transform-data/powerbi-rename-columns.png)
 
-1. Enter a new label for the column field and then press Enter. 
- 
+1. Enter a new label and press Enter. 
 
 [!INCLUDE [temp](includes/close-apply.md)]
+
+::: moniker range="azure-devops"
+
+<a id="use-ai-assistance"></a>
+
+## Use AI to transform Analytics data in Power BI
+
+If you configure the [Azure DevOps MCP Server](../../mcp-server/mcp-server-overview.md), you can use AI assistants to write and optimize OData trend and snapshot queries for your Power BI Analytics reports using natural language.
+
+### Example prompts
+
+| Task | Example prompt |
+|------|----------------|
+| Bug trend by date range | `Write an OData trend query that shows the daily bug count by state over the last 30 days in <ProjectName>.` |
+| Sprint snapshot | `Create an OData query against WorkItemSnapshot that shows work item counts grouped by date for the current sprint in <ProjectName>.` |
+| Filter by iteration | `Generate an OData trend query that uses the iteration start and end dates from <IterationName> to show story point burndown in <ProjectName>.` |
+| Board column trend | `Write an OData query against WorkItemBoardSnapshot to track work items by board column over the past two weeks in <ProjectName> in the <OrganizationName> organization.` |
+| Optimize performance | `My WorkItemSnapshot trend query for <ProjectName> is timing out. Suggest specific date filters and aggregation to reduce the row count without losing the key metrics.` |
+| Compare sprints | `Create an OData trend query that compares bug counts between <SprintName> and the previous sprint in <ProjectName> in the <OrganizationName> organization.` |
+| Remaining work trend | `Write an OData trend query that shows the daily sum of remaining work grouped by Area Path for the current iteration in <ProjectName>.` |
+| Detect state changes | `Create an OData snapshot query that tracks how many work items moved from Active to Resolved each day over the past <NumberOfDays> days in <ProjectName>.` |
+| Scope change analysis | `Generate an OData trend query that shows the daily count of user stories added or removed from <SprintName> by comparing WorkItemSnapshot data in <ProjectName>.` |
+
+> [!TIP]
+> If you're using Visual Studio Code, [agent mode](/visualstudio/ide/copilot-chat-context#agent-mode) is especially helpful for authoring and iterating on OData trend queries for Analytics-based Power BI reports.
+
+::: moniker-end
 
 ## Related articles 
 
@@ -205,8 +223,3 @@ When finished with your expansion, you may choose to rename one or more columns.
 - [Connect with data by using Power BI and OData queries](odataquery-connect.md) 
 - [Overview of sample reports using OData queries](sample-odata-overview.md) 
 - [Add a team slicer to a Power BI report](sample-boards-teamslicer.md)
-
-<!---
-Can't pivot if you have unexpanded records - will get an error message about nested columns  
-Must remove Null fields - use Replace values (why does this not work in some instances) 
---> 

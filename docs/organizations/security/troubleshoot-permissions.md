@@ -2,14 +2,13 @@
 title: Troubleshoot access, permission issues
 titleSuffix: Azure DevOps
 description: Find helpful troubleshooting information for resolving access and permission issues in Azure DevOps.  
-ms.assetid: 
 ms.subservice: azure-devops-security
 ai-usage: ai-assisted
 ms.topic: troubleshooting
 ms.author: chcomley
 author: chcomley
 monikerRange: '<= azure-devops'
-ms.date: 12/03/2025
+ms.date: 04/20/2026
 ms.custom: sfi-image-nochange, copilot-scenario-highlight
 --- 
 
@@ -23,8 +22,8 @@ Due to the extensive security and permission structure of Azure DevOps, you migh
 
 | Category | Requirements |
 |--------------|-------------|
-| **Permissions** | To manage permissions or groups at the organization or collection level: Member of the [**Project Collection Administrators** security group](look-up-project-collection-administrators.md). If you created the organization or collection, you're automatically a member of this group. |
-| **Recommendation** | Before using this guide, we recommend getting familiar with the following content: <br>- [Get started with permissions, access, and security groups](about-permissions.md) <br>- [Default permissions and access quick reference](permissions-access.md). |
+| Permissions | To manage permissions or groups at the organization or collection level: Member of the [**Project Collection Administrators** security group](look-up-project-collection-administrators.md). If you created the organization or collection, you're automatically a member of this group. |
+| Recommendation | Before using this guide, we recommend getting familiar with the following content: <br>- [Get started with permissions, access, and security groups](about-permissions.md) <br>- [Default permissions and access quick reference](permissions-access.md). |
 
 > [!TIP]
 > When you create an Azure DevOps security group, label it clearly to indicate whether it's intended to limit access.
@@ -259,8 +258,7 @@ The following example prompt for Copilot Chat helps you troubleshoot Azure DevOp
 
 For the best AI assistance, include specific details like the user's access level, security groups they belong to, specific features they can't access, and any error messages they're receiving.
 
-```copilot-prompt
-I'm having this Azure DevOps permissions/access issue: [PASTE YOUR ERROR MESSAGE OR DESCRIBE THE PROBLEM]
+`I'm having this Azure DevOps permissions/access issue: [PASTE YOUR ERROR MESSAGE OR DESCRIBE THE PROBLEM]
 
 User and permission details:
 - User's access level: [Stakeholder/Basic/Basic + Test Plans/Visual Studio subscription]
@@ -276,7 +274,7 @@ Can you help me troubleshoot this issue? Please provide step-by-step instruction
 3. Verify the user can successfully access the feature
 
 Context: This is for troubleshooting user access and permissions in Azure DevOps. The issue might be related to access levels, security group memberships, project-level permissions, organization settings, or feature-specific restrictions.
-```
+`
 
 *Copilot is powered by AI, so surprises and mistakes are possible. For more information, see [Copilot general use FAQs](https://aka.ms/copilot-general-use-faqs).*
 

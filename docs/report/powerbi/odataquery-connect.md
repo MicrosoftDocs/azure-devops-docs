@@ -1,14 +1,15 @@
 ---
 title: Connect with Data by Using OData Queries
 titleSuffix: Azure DevOps
-description: See how to use OData queries to integrate Azure DevOps Analytics data into Power BI. Find out how to write OData queries in Visual Studio Code for use in Power BI.
+description: Learn how to use OData queries to integrate Azure DevOps Analytics data into Power BI. Write, test, and optimize queries in Visual Studio Code for faster insights.
 ms.subservice: azure-devops-analytics
 ms.author: chcomley
 author: chcomley
-ms.topic: tutorial
+ms.topic: how-to
 monikerRange: "<=azure-devops"
-ms.date: 04/25/2025
-ms.custom: sfi-image-nochange
+ms.date: 03/18/2026
+ms.custom: sfi-image-nochange, copilot-scenario-highlight
+ai-usage: ai-assisted
 #customer intent: As a team member, I want to see how to use OData queries to get Azure DevOps Analytics data into Power BI so that I can minimize Power BI refresh times by taking advantage of server-side filtering and aggregation.
 ---
 
@@ -16,20 +17,16 @@ ms.custom: sfi-image-nochange
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
-To pull data into Power BI, we recommend that you use Open Data Protocol (OData) queries. OData is a standard that's established by the Organization for the Advancement of Structured Information Standards (OASIS) and approved by the International Organization for Standardization and the International Electrotechnical Commission (ISO/IEC). OData defines best practices for building and consuming REST APIs. For more information, see the [OData documentation](/odata/).
+This article shows how to write an OData query against Azure DevOps Analytics, test it in Visual Studio Code, and run it from Power BI. OData queries give you two advantages over other connection methods:
 
-To get started quickly, see [Overview of sample reports using OData queries](sample-odata-overview.md). For information about other approaches, see [About Power BI integration](overview.md).
+- **Server-side filtering** — Only the data you need is returned, which leads to shorter refresh times.
+- **Server-side aggregation** — Rollups, failure rates, and other calculations run on the server, so only aggregate values travel to Power BI. This approach lets you summarize large datasets without pulling all detail rows.
 
-Power BI can run OData queries, which can return a filtered or aggregated set of data to Power BI. OData queries have two advantages:
+OData (Open Data Protocol) is an ISO/IEC-approved REST API standard maintained by OASIS. For more information, see the [OData documentation](/odata/).
 
-- All filtering is done server-side. Only the data you need is returned, which leads to shorter refresh times.
-- You can preaggregate data server-side. An OData query can carry out aggregations such as work-item rollup and build-failure rates. The aggregations are accomplished server-side, and only the aggregate values are returned to Power BI. By using preaggregation, you can carry out aggregations across large datasets without needing to pull all the detailed data into Power BI.
+To get started quickly with ready-made queries, see [Overview of sample reports using OData queries](sample-odata-overview.md). For information about other connection approaches, see [About Power BI integration](overview.md).
 
-In this tutorial, you:
-
-> [!div class="checklist"]
-> - Write and test OData queries.
-> - Run an OData query from Power BI.
+[!INCLUDE [ai-assistance-mcp-server-tip](../../includes/ai-assistance-mcp-server-tip.md)]
 
 ## Prerequisites
 
@@ -37,21 +34,19 @@ In this tutorial, you:
 
 ## Use Visual Studio Code to write and test OData queries
 
-The easiest way to write and test OData is to use [Visual Studio Code](https://aka.ms/vscode) with the [OData extension](https://marketplace.visualstudio.com/items?itemName=stansw.vscode-odata). Visual Studio Code is a free code editor available on Windows, Mac, and Linux. The OData extension provides syntax highlighting and other functions that are useful for writing and testing queries.
+Use [Visual Studio Code](https://aka.ms/vscode) with the [OData extension](https://marketplace.visualstudio.com/items?itemName=stansw.vscode-odata) to write, syntax-check, and run OData queries before you bring them into Power BI.
 
 ### Install Visual Studio Code and the OData extension
 
 1. Install [Visual Studio Code](https://aka.ms/vscode).
 
-1. Open Visual Studio Code, select **Extensions**, and then search for **odata**. In the results list, select **vscode-odata**, and then install this extension.
+1. In Visual Studio Code, select **Extensions** (Ctrl+Shift+X), search for **odata**, and install the **vscode-odata** extension.
 
-1. In Visual Studio Code, create an OData file by creating an empty file that has the extension .odata. You can name it whatever you want, for example, filename.odata. But it must have an .odata extension to enable the OData extension functionality.
+1. Create a file with the **.odata** extension (for example, *queries.odata*). The extension activates syntax highlighting and OData commands only for files with this extension.
 
 ### Write the OData query
 
-Write the OData query. For example queries, see [Overview of sample reports using OData queries](sample-odata-overview.md).
-
-The following query returns the top 10 work items under a specific area path. To use this query, replace `{organization}`, `{project}`, and `{area path}` with your values.
+The following query returns the top 10 work items under a specific area path. Replace `{organization}`, `{project}`, and `{area path}` with your values.
 
 ```odata
 https://analytics.dev.azure.com/{organization}/{project}/_odata/v3.0-preview/WorkItems?
@@ -61,108 +56,101 @@ https://analytics.dev.azure.com/{organization}/{project}/_odata/v3.0-preview/Wor
       &$top=10
 ```
 
-To query across projects, omit `/{project}` entirely.
+To query across projects, omit `/{project}` entirely. For more example queries, see [Overview of sample reports using OData queries](sample-odata-overview.md) and [Sample reports and quick reference index](../extend-analytics/quick-ref.md).
 
-For more information, see [Sample reports and quick reference index](../extend-analytics/quick-ref.md).
-
-After you write the query in Visual Studio Code, you should see syntax highlighting.
+After you enter the query, syntax highlighting confirms that the OData extension is active.
 
 :::image type="content" source="media/odataquery-syntaxhighlighting.png" alt-text="Screenshot that shows an OData file in Visual Studio Code. Each type of code element has its own color.":::
 
 ### Test the OData query
 
-1. To test the OData query, place your cursor anywhere in the query text, and then select **View** > **Command Palette**.
+1. Place your cursor anywhere in the query text, and then select **View** > **Command Palette** (Ctrl+Shift+P).
 
-1. In the search box, enter **odata** to bring up the OData commands.
+1. Type **odata** and select **OData: Open**. The extension combines the multiline query into a single URL and opens the results in your default browser.
 
    :::image type="content" source="media/odataquery-commandpallette.png" alt-text="Screenshot that shows the command palette for the Visual Studio Code OData extension.":::
 
-1. Select **OData: Open**. This action combines the multiline query into a one-line URL, runs the query, and opens the results in your default browser.
+1. Review the results.
 
-   - The OData query result set is in JSON format. To view the results, install a JSON formatter extension for your browser. Several options are available for both Chrome and Microsoft Edge.
+   - **Success** — The results appear as JSON. Install a JSON formatter extension for Chrome or Microsoft Edge to make the output readable.
 
      :::image type="content" source="media/odataquery-jsonoutput.png" alt-text="Screenshot of a browser that shows the JSON output of the OData query displayed in a readable format." lightbox="media/odataquery-jsonoutput.png":::
 
-   - If the query has an error, the Analytics service returns an error in JSON format. For example, the following error states that the query selects a field that doesn't exist.
+   - **Error** — Analytics returns an error message in JSON. For example, the following error indicates that the query references a field that doesn't exist.
 
      :::image type="content" source="media/odataquery-jsonerror.png" alt-text="Screenshot of a browser that shows JSON output in a readable format. A message in the output indicates an error in an OData query." lightbox="media/odataquery-jsonerror.png":::
 
-After you verify that the query works correctly, you can run it from Power BI.
+After the query returns the expected results, you're ready to run it from Power BI.
 
 ## Run the OData query from Power BI
 
-To run the OData query from Power BI, take the steps in the following sections.
+### Combine the multiline query into a single line
 
-### Combine the multiline OData query into a single-line query
+Power BI requires a single-line URL. Use the OData extension to convert your multiline query.
 
-Before you use the query in Power BI, you must convert the multiline OData query into a single-line query. To use the **OData: Combine** command for this purpose, take the following steps:
+1. Make a copy of your **.odata** file first — the combine operation is irreversible.
 
-1. Make a copy of the OData file that contains your multiline query text. This step is recommended, because there's no way to convert the single-line query back to a readable multiline query.
-
-1. In Visual Studio Code, open the copy of your OData file and place your cursor anywhere in the query text.
-
-1. Select **View** > **Command Palette**. In the search box, enter **odata**. Then in the results list, select **OData: Combine**.
-
-   The multiline query gets converted into a single-line query.
+1. Open the copy in Visual Studio Code, place your cursor in the query text, and select **View** > **Command Palette** > **OData: Combine**.
 
    :::image type="content" source="media/odataquery-combineto1line.png" alt-text="Screenshot of an OData file in Visual Studio Code. The file contains a multiline query followed by the single-line version of the query.":::
 
-1. Copy the entire line for use in the next section.
+1. Copy the single-line query for the next step.
 
-### Run the query from Power BI
+### Connect to the OData feed
 
-1. In Power BI, select **Get data** > **OData feed**. For more information, see [Create a Power BI report with an OData query](create-quick-report-odataq.md).
+1. In Power BI Desktop, select **Get data** > **OData feed**.
 
    :::image type="content" source="media/ODataQuery.png" alt-text="Screenshot of Power BI with Get data and OData feed highlighted.":::
 
-1. In the **OData feed** window, in the **URL** box, paste the OData query that you copied in the preceding section, and then select **OK**.
+1. Paste the single-line query into the **URL** box and select **OK**.
 
    :::image type="content" source="media/odataquery-powerbi-odatafeed.png" alt-text="Screenshot of the OData feed dialog. The URL box contains the single-line OData query.":::
 
-   Power BI displays a preview page.
+   Power BI displays a data preview.
 
    :::image type="content" source="media/odataquery-powerbi-preview.png" alt-text="Screenshot of a preview page in Power BI with buttons for loading and transforming data. A table lists information about several work items.":::
 
-### Specify query options
+### Configure query options to prevent throttling
+
+By default, Power Query generates a separate request for every null value it encounters. This behavior can produce thousands of requests and cause throttling on your account. The following steps add parameters that eliminate this behavior.
 
 1. On the preview page, select **Transform Data** to open Power Query Editor.
 
    :::image type="content" source="media/odataquery-powerbi-queryeditor.png" alt-text="Screenshot of Power Query Editor. A table lists OData feed data for several work items." lightbox="media/odataquery-powerbi-queryeditor.png":::
 
-1. On the ribbon, select **Advanced Editor**.
+1. Select **Advanced Editor** on the ribbon.
 
    :::image type="content" source="media/AdvancedEditor.png" alt-text="Screenshot of the Power BI ribbon. Advanced Editor is highlighted.":::
 
-1. In the Advanced Editor window, scroll horizontally to view the `[Implementation="2.0"]` parameter in the query.
+1. Scroll to the end of the query and find `[Implementation="2.0"]`.
 
    :::image type="content" source="media/odataquery-powerbi-advancededitor1.png" alt-text="Screenshot of the Advanced Editor window. The end of the query is visible, and the implementation parameter is highlighted.":::
 
-1. Replace `[Implementation="2.0"]` with the following string:
+1. Replace it with:
 
    `[Implementation="2.0",OmitValues = ODataOmitValues.Nulls,ODataVersion = 4]`
 
    :::image type="content" source="media/odataquery-powerbi-advancededitor2.png" alt-text="Screenshot of the Advanced Editor window. The end of the query is visible. It contains the replacement string and is highlighted.":::
 
-   This change helps prevent throttling errors. The new values have the following effect:
+   These parameters do two things:
+   - **ODataVersion = 4** — Tells Power BI to use OData v4.
+   - **OmitValues = ODataOmitValues.Nulls** — Tells Analytics to skip null values, which prevents Power Query from generating extra requests that lead to throttling.
 
-   - They instruct Power BI to reference OData version 4.
-   - They instruct the Analytics service to omit any values that are null, which improves query performance.
+1. Select **Done**. Before you close Power Query Editor, you can optionally:
+   - Rename `Query1` to something descriptive.
+   - Change column data types.
+   - Add computed columns or remove unneeded columns.
+   - Expand nested columns into individual fields.
 
-   Power Query attempts to resolve null values as errors by generating another query for every null value it encounters. This action can result in thousands of queries. These queries can quickly exceed your usage threshold, beyond which your user account gets throttled.
+### Create the report
 
-1. Select **Done** to close the Advanced Editor and return to Power BI Power Query Editor. You can use Power Query Editor to perform the following optional actions:
-
-   - Rename the `Query1` query as something more specific.
-   - Transform columns to a specific type. Power BI automatically detects the type, but you might want to convert columns to a specific data type.
-   - Add computed columns.
-   - Remove columns.
-   - Expand columns into specific fields.
-
-### Create a report by using the data
-
-Select **Close & Apply** to save your settings and pull the data into Power BI. After the data refreshes, you can create a report like you normally do in Power BI.
+Select **Close & Apply** to load the data into Power BI. You can now build visuals, add filters, and design your report.
 
 :::image type="content" source="media/transform-data/powerbi-close-apply.png" alt-text="Screenshot of the Power BI ribbon. The Close & Apply button is highlighted.":::
+
+For a step-by-step example, see [Create a Power BI report with an OData query](create-quick-report-odataq.md).
+
+[!INCLUDE [odata-ai-assistance](includes/odata-ai-assistance.md)]
 
 ## Related content
 

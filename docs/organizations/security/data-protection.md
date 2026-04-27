@@ -7,9 +7,9 @@ ms.subservice: azure-devops-security
 ms.author: chcomley
 author: chcomley
 ms.reviewer: jominana
-ms.date: 06/20/2025
+ms.date: 03/18/2026
 monikerRange: 'azure-devops'
-ms.custom: freshness-fy22, sfi-ropc-nochange
+ms.custom: freshness-fy22, sfi-ropc-nochange, pat-reduction
 ---
 # Data protection overview
 
@@ -159,6 +159,8 @@ Microsoft is committed to ensuring that your projects remain safe and secure, wi
 * PAT hash generates in-memory on the server side as an *HMACSHA256Hash* of the raw PAT using a 64-byte symmetric signing key stored in our key vault. 
 * Hash gets stored in our database.
 
+[!INCLUDE [use-microsoft-entra-reduce-pats](../../includes/use-microsoft-entra-reduce-pats.md)]
+
 #### Secure shell (SSH) keys
 
 * We store a hash of the enclosing organization ID and the SSH public key.
@@ -170,6 +172,9 @@ Microsoft is committed to ensuring that your projects remain safe and secure, wi
 
 * OAuth credentials issue as fully self-describing JSON web tokens (JWTs) and aren't stored in our service.
 * The claims in JWTs issued and presented to our service get validated using a certificate stored in our key vault.
+
+> [!IMPORTANT]
+> Azure DevOps is encrypting authentication tokens. After encryption takes effect, token payloads are no longer readable by clients. Applications that decode tokens to extract claims will break. Always treat tokens as opaque — use them only for authorization, and call [Azure DevOps REST APIs](/rest/api/azure/devops) to retrieve user or organization data. For more information, see [Why shouldn't I decode or read claims from authentication tokens?](../../integrate/get-started/authentication/authentication-guidance.md#why-shouldnt-i-decode-or-read-claims-from-authentication-tokens)
 
 ### Reporting security flaws
 

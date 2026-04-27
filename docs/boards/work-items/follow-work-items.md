@@ -2,7 +2,7 @@
 title: Follow work items and pull requests
 titleSuffix: Azure Boards & Azure Repos
 description: Track updates to work items and pull requests by following them to receive targeted notifications in Azure DevOps.
-ms.custom: work-items, cross-project
+ms.custom: work-items, cross-project, copilot-scenario-highlight
 ms.service: azure-devops-boards
 ms.assetid: 77CAEE8E-BF1A-47DA-9818-A0C52BAC813C
 ai-usage: ai-assisted
@@ -10,7 +10,7 @@ ms.author: chcomley
 author: chcomley
 ms.topic: how-to
 monikerRange: '<= azure-devops'
-ms.date: 10/27/2025
+ms.date: 02/28/2026
 ---
 
 # Follow work items and pull requests  
@@ -20,6 +20,8 @@ ms.date: 10/27/2025
 <a id="follow"></a>  
 
 Stay informed about changes to specific work items or pull requests by using the Follow feature. This feature provides targeted notifications on a case-by-case basis, helping you track items that matter most to your work without information overload.
+
+[!INCLUDE [ai-assistance-mcp-server-tip](../../includes/ai-assistance-mcp-server-tip.md)]
 
  > [!TIP]
 > **Quick start**: Select the :::image type="icon" source="../media/icons/follow-icon.png" border="false"::: **Follow** icon on any work item or pull request to start receiving notifications when it changes.
@@ -35,10 +37,10 @@ Stay informed about changes to specific work items or pull requests by using the
 
 | Feature | Following | Notification Subscriptions |
 |---------|-----------|---------------------------|
-| **Scope** | Individual items you select | Broad criteria across projects |
-| **Setup** | One-click on specific items | Configure rules and filters |
-| **Best for** | Tracking specific work items/PRs | Automated team workflows |
-| **Examples** | Following a bug you reported | All items assigned to you |
+| Scope | Individual items you select | Broad criteria across projects |
+| Setup | One-click on specific items | Configure rules and filters |
+| Best for | Tracking specific work items/PRs | Automated team workflows |
+| Examples | Following a bug you reported | All items assigned to you |
 
 For automated notifications based on broader criteria, see [Manage personal notifications](../../organizations/notifications/manage-your-personal-notifications.md). 
 
@@ -63,8 +65,8 @@ Select the :::image type="icon" source="../media/icons/gear_icon.png" border="fa
 | Option | When you receive notifications | Best for |
 |--------|------------------------|----------|
 | **Subscribed** (default) | Any change to the work item | Items you actively work on |
-| **Not Subscribed** | Only when someone @mentions you | Items you want to watch passively |
-| **Custom** | When specific fields change | Critical updates only |
+| Not Subscribed | Only when someone @mentions you | Items you want to watch passively |
+| Custom | When specific fields change | Critical updates only |
 
 **Custom notification triggers:**
 - **State changes**: When status updates, for example, New → Active → Resolved
@@ -77,10 +79,10 @@ You receive email notifications when team members perform the following actions:
 
 | Action | Example | 
 |--------|---------|
-| **Comment or discuss** | Add comments, @mention you, start discussions |
-| **Update fields** | Change title, description, priority, tags |
-| **Modify attachments** | Add screenshots, documents, or remove files |
-| **Change relationships** | Link/unlink work items, update parent/child |
+| Comment or discuss | Add comments, @mention you, start discussions |
+| Update fields | Change title, description, priority, tags |
+| Modify attachments | Add screenshots, documents, or remove files |
+| Change relationships | Link/unlink work items, update parent/child |
 
 > [!NOTE]
 > You don't receive notifications for changes you make yourself.
@@ -102,10 +104,10 @@ You receive email notifications when team members perform the following actions:
 
 | When | What happened | Why it matters |
 |------|---------------|----------------|
-| **Comments added** | Someone reviews or discusses code | Stay informed about feedback |
-| **Review status changes** | Approved, changes requested, or new reviewers added | Track review progress |
-| **Code updates** | New commits pushed to the branch | See latest changes |
-| **Status changes** | PR completed, abandoned, or reopened | Know the final outcome |
+| Comments added | Someone reviews or discusses code | Stay informed about feedback |
+| Review status changes | Approved, changes requested, or new reviewers added | Track review progress |
+| Code updates | New commits pushed to the branch | See latest changes |
+| Status changes | PR completed, abandoned, or reopened | Know the final outcome |
 
 > [!NOTE]
 > Like work items, you don't get notified about changes you make yourself.
@@ -157,10 +159,10 @@ Use the **@Follows** macro to build powerful queries that combine items you foll
 
 | Query purpose | Query clauses | Why it's helpful |
 |---------------|---------------|------------------|
-| **High-priority items I follow** | ID In @Follows<br/>AND Priority = 1 | Focus on critical items |
-| **My team's followed items** | ID In @Follows<br/>AND Assigned To In Group [Team] | Team collaboration |
-| **Recently updated** | ID In @Follows<br/>AND Changed Date >= @Today - 7 | See recent activity |
-| **Blocked items I follow** | ID In @Follows<br/>AND State = Blocked | Track impediments |
+| High-priority items I follow | ID In @Follows<br/>AND Priority = 1 | Focus on critical items |
+| My team's followed items | ID In @Follows<br/>AND Assigned To In Group [Team] | Team collaboration |
+| Recently updated | ID In @Follows<br/>AND Changed Date >= @Today - 7 | See recent activity |
+| Blocked items I follow | ID In @Follows<br/>AND State = Blocked | Track impediments |
 
 > [!TIP]
 > **Share query structures**: While @Follows is personal to you, you can share query templates with teammates to create consistent follow-up workflows.
@@ -195,6 +197,8 @@ Consider these strategies to make the most of the Follow feature:
 - **Follow status**: Confirm the item shows the "Following" icon (not just "Follow")
 - **Notification preferences**: Check if you selected "Not Subscribed" by mistake
 - **Email filters**: Look for Azure DevOps emails in spam or filtered folders
+
+For persistent email delivery issues, see [Troubleshoot delayed notification emails](../../organizations/notifications/troubleshoot-delayed-email.md) and [Troubleshoot unexpected notification emails](../../organizations/notifications/troubleshoot-unexpected-email.md).
 
 ### Too many notifications
 
@@ -245,6 +249,22 @@ For team-wide notifications, see [Manage team notifications](../../organizations
 
 > [!div class="nextstepaction"]
 > [Add and update work items](../backlogs/add-work-items.md) 
+
+<a id="use-ai-assistance"></a>
+
+## Use AI to track followed work items
+
+If you configure the [Azure DevOps MCP Server](../../mcp-server/mcp-server-overview.md), you can query and manage followed items using natural language.
+
+| Task | Example prompt |
+|------|----------------|
+| List followed items | `Show me all work items I'm following in project <Contoso>` |
+| Check recent changes | `List recent changes to work items I follow in the last 7 days` |
+| Find items by state | `Show active bugs I'm following that are assigned to the current sprint` |
+| Query with @Follows | `Create a query for all work items I follow that are in the Active state` |
+
+> [!NOTE]
+> If you're using Visual Studio Code, [agent mode](/visualstudio/ide/copilot-chat-context#agent-mode) is especially helpful for tracking followed items across projects.
 
 ## Related content
 

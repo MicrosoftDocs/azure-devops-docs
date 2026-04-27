@@ -1,119 +1,134 @@
 ---
 title: Manage and resolve issues or impediments in Azure Boards
 titleSuffix: Azure Boards
-description: Learn how to track issues or impediments to more effectively execute plans or stay on schedule by using Azure Boards.
-ms.custom: boards-backlogs
+description: Manage issues and impediments in Azure Boards to improve team productivity. Discover step-by-step guidance and start resolving blockers today.
+ms.custom: boards-backlogs, copilot-scenario-highlight
 ms.service: azure-devops-boards
 ms.assetid: 5B126205-599D-40EB-BC95-23CF1444EF2A
 ms.author: chcomley
+ms.reviewer: chcomley
 author: chcomley
-ms.topic: tutorial
-ms.date: 07/26/2022
+ms.topic: how-to
+ms.date: 03/24/2026
+ai-usage: ai-assisted
 ---
 
-# Manage issues or impediments in Azure Boards
+# Manage problems or impediments in Azure Boards
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 <a name="manage-impediments"></a>
 
-If you have known issues you want to track, you can do so by defining an impediment (Scrum) or issue (Agile or CMMI). Impediments and issues represent unplanned activities. Resolving them requires more work beyond what's tracked for actual requirements. Use the impediment work item type to help you track and manage these issues until you can resolve and close them. 
+Track unplanned activities that block your team's progress by using the impediment (Scrum) or problem (Agile or CMMI) work item type. These work items represent blockers that require extra effort beyond what's planned for actual requirements. Use them to track and manage problems until you resolve and close them.
 
-Don't confuse impediments with bugs. You track impediments that may cause problems with delivering one or more requirements. For example, you may have to fix feature ambiguity, personnel or resource issues, problems with environments, or other risks that influence scope, quality, or schedule. Other issues that deserve tracking are decisions that require several stakeholders or product teams to weigh in on.
+Don't confuse impediments with bugs. Impediments track broader blockers that affect delivery of one or more requirements, such as:
 
-::: moniker range="<=azure-devops"
+- Feature ambiguity or unclear specifications
+- Personnel or resource constraints
+- Environment or infrastructure problems
+- Risks that affect scope, quality, or schedule
+- Decisions that require input from multiple stakeholders or product teams
 
 > [!IMPORTANT]  
-> Issues and Impediments discussed in this article are defined for projects created with the [Agile](../work-items/guidance/agile-process.md), [Scrum](../work-items/guidance/scrum-process.md), or [CMMI](../work-items/guidance/cmmi-process.md) process. By default, these work item types don't appear on the product backlog or taskboard. 
+> Problems and impediments in this article apply to projects created with the [Agile](../work-items/guidance/agile-process.md), [Scrum](../work-items/guidance/scrum-process.md), or [CMMI](../work-items/guidance/cmmi-process.md) process. By default, these work item types don't appear on the product backlog or taskboard. 
 > 
-> If your project was created using the [Basic](../get-started/plan-track-work.md) process, which tracks work using Epics, Issues, and Tasks, then you track Issues using the product backlog. For more information, see [Track issues and tasks](../get-started/plan-track-work.md).
-
-::: moniker-end
-
-In this article you'll learn: 
-
-::: moniker range="azure-devops"
-
-> [!div class="checklist"]      
-> * When to use issues versus tasks
-> * How to capture issues or impediments as a work item  
-> * Add issues or impediments to your product backlog  
- 
-::: moniker-end
-
-::: moniker range="< azure-devops"
-
-> [!div class="checklist"]      
-> * When to use issues versus tasks
-> * How to capture issues or impediments as a work item   
- 
-::: moniker-end
+> If your project uses the [Basic](../get-started/plan-track-work.md) process, which tracks work with Epics, Problems, and Tasks, you track Problems on the product backlog. For more information, see [Track problems and tasks](../get-started/plan-track-work.md).
 
 ## Prerequisites
 
-[!INCLUDE [temp](../includes/prerequisites-work-items.md)]   
+[!INCLUDE [temp](../includes/prerequisites-work-items.md)] 
 
-[!INCLUDE [temp](../includes/image-differences-with-wits.md)]   
+[!INCLUDE [ai-assistance-mcp-server-tip](../../includes/ai-assistance-mcp-server-tip.md)]
 
-## Define a task
+## Link issues to work items and define tasks
 
-You use issues or impediments to track items that may block work from getting done. In general, you link these items to user stories or other work items using a Related link type.
+Use a **Related** link type to connect issues or impediments to user stories or other work items they block.
 
-Define tasks when you want to create a [checklist of tasks](../boards/add-task-checklists.md). You can also define tasks if you use Scrum methods and track work using the [Remaining Work](../sprints/task-board.md) field. By linking requirement work item types to tasks using the Parent-Child link type, the tasks appear on the taskboard for each linked user story.
+You can also define tasks that relate to the blocker:
 
-::: moniker range="<azure-devops"
+- Create a [checklist of tasks](../boards/add-task-checklists.md) to track resolution steps.
+- If you use Scrum methods, track effort with the [Remaining Work](../sprints/task-board.md) field.
+- Link requirement work item types to tasks with the **Parent-Child** link type so tasks appear on the taskboard for each linked user story.
+
+::: moniker range="< azure-devops"
 
 > [!NOTE]  
-> If your project collection uses the On-premises XML process model to customize work tracking, you can enable work item types that you add to the Task Category to appear as a checklist on your product board.
+> If your project collection uses the On-premises XML process model, you can enable work item types added to the Task Category to appear as a checklist on your product board.
 
 ::: moniker-end
 
-## Add an issue or impediment 
+## Add a problem or impediment
 
 ::: moniker range="<=azure-devops"
 
-Open **Boards>Work Items**, and choose the :::image type="icon" source="../../media/icons/blue-add.png" border="false"::: plus icon, and then select from the **New work item** menu of options. 
+1. Go to **Boards** > **Work Items** and select the :::image type="icon" source="../../media/icons/blue-add.png" border="false"::: plus icon.
+1. From the **New work item** menu, select the work item type for your process — **Impediment** (Scrum), **Issue** (Agile), or **Problem** (CMMI).
 
-> [!div class="mx-imgBorder"]  
-> ![Screenshot to add an Impediment from the New Work Item list.](media/manage-issues/add-issue-vert.png)   
+   > [!div class="mx-imgBorder"]  
+   > ![Screenshot to add an Impediment from the New Work Item list.](media/manage-issues/add-issue-vert.png)   
 
-Choose the  :::image type="icon" source="../media/icons/pin-icon.png" border="false":::  pin icon to have it show up within the add drop down menu. 
+1. (Optional) Select the :::image type="icon" source="../media/icons/pin-icon.png" border="false"::: pin icon to pin the work item type to the **add** dropdown menu for quick access.
 
 ::: moniker-end   
 
 <a id="customize"> </a>
 
-## Customize issue tracking
+## Customize problem and impediment tracking
 
 [!INCLUDE [temp](../includes/customize-work-tracking.md)] 
 
 ::: moniker range="azure-devops"
 
-Issues and impediments don't appear on your backlog by default. Instead, you track them using [queries](../queries/using-queries.md). To track them on a backlog, see the next section, [Add issues or impediments to your product backlog](#add-to-backlog). 
+By default, problems and impediments don't appear on your backlog. Use [queries](../queries/using-queries.md) to track them, or add them to your backlog by customizing your process. For more information, see [Add problems or impediments to your product backlog](#add-to-backlog).
 
 ::: moniker-end
 
-::: moniker range="<azure-devops"
+::: moniker range="< azure-devops"
 
-Impediments and issues don't appear on your backlog. Instead, you track them using [queries](../queries/using-queries.md). They only appear on your backlog if your project is customized using the On-premises XML process model. For more information, see [Customize the On-premises XML process model](../../reference/on-premises-xml-process-model.md).
+By default, problems and impediments don't appear on your backlog. Use [queries](../queries/using-queries.md) to track them. To show them on your backlog, customize your project with the On-premises XML process model. For more information, see [Customize the On-premises XML process model](../../reference/on-premises-xml-process-model.md).
 
 ::: moniker-end
-
  
 <a id="add-to-backlog"></a> 
 
-## Add issues or impediments to your product backlog  
+## Add problems or impediments to your product backlog  
 
 ::: moniker range="azure-devops"
-If you want to track issues or impediments along with your requirements or a portfolio backlog, you can track them by adding them to your custom Inherited process. For more information, see [Customize your backlogs or boards (Inheritance process)](../../organizations/settings/work/customize-process-backlogs-boards.md#edit-product-backlog).
+
+To display problems or impediments alongside your requirements or on a portfolio backlog, add the work item type to your custom Inherited process. For step-by-step instructions, see [Customize your backlogs or boards (Inheritance process)](../../organizations/settings/work/customize-process-backlogs-boards.md#edit-product-backlog).
 
 ::: moniker-end
 
-::: moniker range="<azure-devops"
-If you want to track issues or impediments along with your requirements or a portfolio backlog, you can track them by customizing your project's process. For more information, see the following: 
-- **For the Inherited process**: [Customize your backlogs or boards (Inheritance process)](../../organizations/settings/work/customize-process-backlogs-boards.md#edit-product-backlog).
-- **For the On-premise XML process**: [Process configuration XML element reference)](../../reference/xml/process-configuration-xml-element.md#configure-a-backlog).
+::: moniker range="< azure-devops"
+
+To display problems or impediments alongside your requirements or on a portfolio backlog, customize your project's process:
+
+- **Inherited process**: [Customize your backlogs or boards](../../organizations/settings/work/customize-process-backlogs-boards.md#edit-product-backlog)
+- **On-premises XML process**: [Process configuration XML element reference](../../reference/xml/process-configuration-xml-element.md#configure-a-backlog)
+
 ::: moniker-end
+
+<a id="use-ai-assistance"></a>
+
+## Use AI to manage problems and blockers
+
+If you connect the [Azure Boards MCP Server](../../mcp-server/mcp-server-overview.md) to your AI agent in agent mode, you can use natural language prompts to create and manage problems or blockers.
+
+| Task | Example prompt |
+|------|----------------|
+| Create a blocker | `Create a new blocker titled 'Test environment unavailable' with priority 1 and assign it to <me>` |
+| List active blockers | `List all active blockers in the current sprint for my team` |
+| Create a problem | `Create a problem to track the decision about the API versioning strategy and assign it to <Jamal>` |
+| Resolve a blocker | `Update blocker 456 to the Resolved state and add a comment that the environment issue is fixed` |
+| Find recurring blockers | `Show blockers in <Contoso> that were created in the last 3 sprints with similar titles or tags` |
+| Track blocker age | `List active blockers in <Contoso> sorted by how long they've been open` |
+| Link blocker to blocked items | `Show all work items in the current sprint for <Contoso> that are linked to active blockers` |
+| Escalate unresolved problems | `List problems in <Contoso> with priority 1 that have been active for more than 7 days` |
+| Categorize blockers | `Show active blockers in <Contoso> grouped by tag` |
+| Sprint retrospective prep | `List all blockers that were resolved during the current sprint in <Contoso> with their resolution comments` |
+
+> [!NOTE]
+> Agent mode and the MCP Server use natural language, so you can adjust these prompts or ask follow-up questions to refine the results.
 
 ## Related content 
 

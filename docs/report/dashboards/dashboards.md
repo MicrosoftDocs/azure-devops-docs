@@ -11,7 +11,7 @@ author: chcomley
 ms.topic: quickstart
 monikerRange: '<= azure-devops'
 ms.update: 90-days
-ms.date: 01/12/2026
+ms.date: 02/17/2026
 # customer intent: As a team member, I want to learn how to create, edit, and delete Azure DevOps dashboards so that I can view and share information about my projects and teams, such as progress and status updates.
 ---
 
@@ -33,6 +33,8 @@ Quick steps:
 3. Select **Edit**, open the widget catalog, drag widgets onto the canvas, then select **Done Editing**
 4. Open **More options** > **Dashboard settings** to rename or change refresh settings
 5. Open **More options** > **Security** to set permissions
+
+[!INCLUDE [ai-assistance-callout](../../includes/ai-assistance-callout.md)]
 
 ## Prerequisites
 

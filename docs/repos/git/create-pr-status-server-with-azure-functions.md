@@ -8,7 +8,7 @@ ms.topic: tutorial
 ms.date: 07/02/2025
 monikerRange: '<= azure-devops'
 ms.subservice: azure-devops-repos-git
-ms.custom: sfi-image-nochange
+ms.custom: sfi-image-nochange, pat-reduction
 ---
 
 # Use Azure Functions to create custom branch policies
@@ -27,6 +27,8 @@ For more information about PR status, see [Customize and extend pull request wor
 | **Azure Function** | An [Azure Function](#create-a-basic-azure-function-to-listen-to-azure-repos-events), which implements a serverless, event-driven solution that integrates with Azure DevOps to create custom branch policies and automate PR validation.|
 | **Service Hooks** | [Configure service hooks](#configure-a-service-hook-for-pr-events) for PR events to notify your Azure function when a pull request changes. |
 | **Authentication** | **Microsoft Entra ID token** with the **Code (status)** scope to have permission to change PR status. For more information, see [Microsoft Entra authentication](../../integrate/get-started/authentication/entra.md). |
+
+[!INCLUDE [use-microsoft-entra-reduce-pats](../../includes/use-microsoft-entra-reduce-pats.md)]
 
 ### Create a basic Azure Function to listen to Azure Repos events
 

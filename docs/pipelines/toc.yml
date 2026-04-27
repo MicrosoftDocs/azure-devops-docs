@@ -359,6 +359,8 @@
         - name: Create a multistage pipeline
           displayName: multi stage, multi stage pipelines
           href: process/create-multistage-pipeline.md
+        - name: Troubleshoot deployment
+          href: troubleshooting/troubleshoot-azure-web-app-deploy.md
       - name: Azure Resource Manager (ARM) templates
         items:
         - name: Use a Resource Manager template to deploy
@@ -632,8 +634,12 @@
     href: release/variables.md#run-a-release-in-debug-mode
   - name: Troubleshoot ARM service connections
     href: release/azure-rm-endpoint.md
+  - name: Troubleshoot Azure Web App deployment
+    href: troubleshooting/troubleshoot-azure-web-app-deploy.md
   - name: Review logs
     href: troubleshooting/review-logs.md
+  - name: Antivirus exclusions
+    href: troubleshooting/anti-virus-exclusion.md
   - name: Pipeline reports
     items:
     - name: View pipeline reports
@@ -659,6 +665,9 @@
   - name: Manage service connections
     displayName: service connection, project-level permissions, docker, GitHub, npm, Nuget, Azure Repos
     href: library/service-endpoints.md
+  - name: Access Azure DevOps with Microsoft Entra workload identity
+    displayName: service connection, Azure Repos, workload identity, PAT-free, federated credentials
+    href: library/add-devops-entra-service-connection.md
   - name: Add an admin role to a resource
     href: library/add-resource-protection.md
   - name: Repository resource protection

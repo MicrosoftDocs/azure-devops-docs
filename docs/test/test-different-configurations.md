@@ -4,7 +4,7 @@ description: Learn about manual and exploratory testing. You can test different 
 ms.assetid: 750F033E-A39E-4C85-BF85-012629C33DE6
 ms.service: azure-devops-test-plans
 ms.topic: how-to
-ms.author: jeom
+ms.author: pliaros
 author: rohit-batra
 monikerRange: '<= azure-devops'
 ms.date: 12/20/2021
@@ -167,9 +167,7 @@ Configurations assigned to a test suite apply to all tests or suites within it.
 
 <a name="run-configs"></a>
 
-> [!WARNING]
-> 1. Changing configurations at a child suite breaks inheritance from its parent suites while still propagating to lower child suites, unless inheritance is already broken.
-> 2. Unassigning configurations will hide the related test points. You can restore them by reassigning the configuration.
+[!INCLUDE [configuration-inheritance-warning](includes/configuration-inheritance-warning.md)]
 
 ## Run tests with each configuration
 ::: moniker range="<=azure-devops"

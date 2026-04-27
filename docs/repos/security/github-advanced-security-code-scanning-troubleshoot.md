@@ -4,7 +4,7 @@ titleSuffix: Azure Repos
 description: Troubleshoot code scanning with GitHub Advanced Security for Azure DevOps.
 ms.service: azure-devops
 ms.subservice: azure-devops-integration
-ms.topic: how-to 
+ms.topic: troubleshooting
 ms.custom: cross-service
 ms.author: laurajiang
 author: laurajjiang

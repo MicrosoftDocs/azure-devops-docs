@@ -1,0 +1,16 @@
+# Doc-Kit workspace files
+.github/AGENTS.md
+.github/agents/
+!.github/agents/release-notes.agent.md
+.github/instructions/*
+.github/prompts/
+.github/skills/
+.vscode/settings.json
+.vscode/mcp.json
+.dockit/
+.env
+.env.example
+requirements.txt
+
+# Doc-Kit overrides
+!.github/instructions/azure-devops-product.instructions.md

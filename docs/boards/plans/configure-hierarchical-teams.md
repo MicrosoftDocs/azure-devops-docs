@@ -7,8 +7,8 @@ ms.author: chcomley
 author: chcomley
 ms.topic: tutorial
 monikerRange: '<= azure-devops'
-ms.date: 10/21/2025
-ms.custom: sfi-image-nochange
+ms.date: 02/28/2026
+ms.custom: sfi-image-nochange, copilot-scenario-highlight
 ##customer intent: As a project administrator, I want to understand how to create a hierarchy of teams in Azure Boards so feature teams can manage their own backlogs while management teams track and manage overall work.
 
 ---
@@ -18,6 +18,8 @@ ms.custom: sfi-image-nochange
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 This article explains how to configure a hierarchy of teams that supports tailored backlog views for management and feature teams. A hierarchical team structure helps ensure that your organization remains agile, focused, and aligned with its strategic objectives.
+
+[!INCLUDE [ai-assistance-mcp-server-tip](../../includes/ai-assistance-mcp-server-tip.md)]
 
 Teams can use customized backlog views to prioritize and manage their own work based on their specific goals and responsibilities. Management teams can maintain visibility into feature team backlogs and overall project progress. This structure has the following advantages:
 
@@ -144,6 +146,22 @@ The main workaround is to maintain single ownership of work items by [defining a
 ## Next step
 > [!div class="nextstepaction"]
 > [Review team delivery plans](review-team-plans.md)
+
+<a id="use-ai-assistance"></a>
+
+## Use AI to manage hierarchical team work items
+
+If you have the [Azure Boards MCP Server](../../mcp-server/mcp-server-overview.md) connected to your AI agent in agent mode, you can use natural language prompts to create and manage work items across your team hierarchy.
+
+| Task | Example prompt |
+|------|----------------|
+| View team work items | `List all active features assigned to the Platform team's area path` |
+| Create items at portfolio level | `Create a new epic called 'Q3 Infrastructure Upgrades' and assign it to the management team` |
+| Check cross-team progress | `Show me all in-progress user stories across all feature teams under the <Contoso> area path` |
+| Assign work to a feature team | `Update user stories #101, #102, and #103 to the area path <Contoso>\\Mobile` |
+
+> [!NOTE]
+> Agent mode and the MCP Server use natural language, so you can adjust these prompts or ask follow-up questions to refine the results.
 
 ## Related content
 

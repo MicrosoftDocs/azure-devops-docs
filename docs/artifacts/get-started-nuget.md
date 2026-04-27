@@ -61,6 +61,9 @@ This article guides you through creating a feed, configuring your project, and p
 
 ## Publish packages to your feed
 
+> [!NOTE]
+> To publish packages to a feed, you must be a **Feed Publisher (Contributor)** or higher. See [Manage permissions](feeds/feed-permissions.md) for more details.
+
 To publish a package to your feed, run the following command. The `ApiKey` parameter is required, but you can use any arbitrary string as its value.
 
 ```CLI

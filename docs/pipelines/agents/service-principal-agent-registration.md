@@ -2,9 +2,9 @@
 title: Register an agent using a service principal
 description: Learn how to register a self-hosted agent using a Service Principal
 ms.topic: concept-article
-ms.date: 04/26/2024
+ms.date: 04/22/2026
 monikerRange: 'azure-devops'
-ms.custom: arm2024, sfi-image-nochange
+ms.custom: arm2024, sfi-image-nochange, pat-reduction
 ---
 
 # Register an agent using a service principal
@@ -60,9 +60,15 @@ For more information about using Service Principal with Azure DevOps, see [Use s
 >
 > `ClientSecretCredential authentication failed: AADSTS90002: Tenant 'xxxxxxxxxxxxxx' not found. Check to make sure you have the correct tenant ID and are signing into the correct cloud. Check with your subscription administrator, this may happen if there are no active subscriptions for the tenant.`
 >
-> To resolve this error, set the login URL to Azure Public Cloud login by setting the environment variable `$AZURE_AUTHORITY_HOST` to 
+> To resolve this error, set the sign-in URL to Azure Public Cloud sign-in by setting the environment variable `$AZURE_AUTHORITY_HOST` to 
 `https://login.microsoftonline.com`, then run the agent config.cmd.
 > 
 > For more information, see [Azure in China developer guide](/azure/china/resources-developer-guide), 
 > [Help on agent registration options](/azure/devops/pipelines/agents/windows-agent#help-on-other-options), and
 > [EnvironmentCredentialClass](/python/api/azure-identity/azure.identity.environmentcredential).
+
+## Related content
+
+- [Access Azure DevOps with Microsoft Entra workload identity](../library/add-devops-entra-service-connection.md)
+- [Use service principals and managed identities in Azure DevOps](../../integrate/get-started/authentication/service-principal-managed-identity.md)
+- [Self-hosted agent authentication options](agent-authentication-options.md)

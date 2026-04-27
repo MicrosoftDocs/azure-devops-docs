@@ -2,14 +2,14 @@
 title: Add features & epics to a board
 titleSuffix: Azure Boards
 description: Quickly define and view the status of child features, user stories, or backlog items using features or epic boards in Azure Boards and Azure DevOps.
-ms.custom: boards-kanban 
+ms.custom: boards-kanban, copilot-scenario-highlight
 ms.service: azure-devops-boards
 ms.assetid: 489C612D-983E-47D3-BD1A-F13C5DCD74E2  
 ms.topic: how-to
 ms.author: chcomley
 author: chcomley
 monikerRange: '<= azure-devops'
-ms.date: 09/29/2025
+ms.date: 02/28/2026
 ---
 
 # Add board features and epics
@@ -21,6 +21,8 @@ If you track progress on a backlog with a board, use boards to track epics and f
 As with [child task checklists for backlog items](add-task-checklists.md), you can quickly define and track child items for features or epics. The following examples show stories defined for features that are in progress and completed.
 
 For more information, see [Define features and epics](../backlogs/define-features-epics.md).
+
+[!INCLUDE [ai-assistance-mcp-server-tip](../../includes/ai-assistance-mcp-server-tip.md)]
 
 ## Prerequisites
 
@@ -56,6 +58,28 @@ Add new items to a feature or epic from the item's action menu (the actions icon
 :::image type="content" source="media/features-epics/add-user-story.png" alt-text="Screenshot showing the feature board context menu and the option to add a user story.":::
 
 To add many items at once, continue typing titles and press Enter after each one. To open a work item and add details, hover over the item and press Enter.
+
+<a id="use-ai-assistance"></a>
+
+## Use AI to manage features and epics on your board
+
+If you have the [Azure Boards MCP Server](../../mcp-server/mcp-server-overview.md) connected to your AI agent in agent mode, you can use natural language prompts to create and manage features and epics.
+
+| Task | Example prompt |
+|------|----------------|
+| Create a feature | `Create a new feature called 'User Authentication' in the <Contoso> project` |
+| Add child stories | `Add three user stories under the 'Payment Processing' feature: checkout flow, payment validation, and receipt generation` |
+| View epics by state | `Show me all epics that are currently in the 'In Progress' state` |
+| Check feature progress | `List all child user stories under feature 2345 and their current states` |
+| Review portfolio board | `Show all features in <Contoso> grouped by their parent epic with completion percentage of child stories` |
+| Find features without epics | `List features in <Contoso> that don't have a parent epic assigned` |
+| Track epic timelines | `Show all epics in <Contoso> with their start date, target date, and count of active vs completed features` |
+| Identify at-risk features | `List features in <Contoso> that have active child stories with no one assigned` |
+| Balance feature workload | `Show the count of active user stories per feature in the current sprint for <Contoso>` |
+| Plan next increment | `List all features in <Contoso> that are in the New state and have acceptance criteria defined` |
+
+> [!NOTE]
+> Agent mode and the MCP Server use natural language, so you can adjust these prompts or ask follow-up questions to refine the results.
 
 ## Related content
 

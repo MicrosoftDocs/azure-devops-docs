@@ -8,7 +8,7 @@ ms.author: chcomley
 author: chcomley
 ms.topic: overview
 monikerRange: '<= azure-devops'
-ms.date: 03/11/2025
+ms.date: 02/17/2026
 ---
 
 # Navigate the Azure DevOps web portal
@@ -24,6 +24,8 @@ The Azure DevOps web portal is organized into various services, administrative p
 Each service offers multiple pages with numerous features and functional tasks. Within each page, you can choose options to select or add specific artifacts.
 
 ::: moniker-end
+
+[!INCLUDE [ai-assistance-callout](../../includes/ai-assistance-callout.md)]
 
 ## Key features and navigation
 

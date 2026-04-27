@@ -4,7 +4,7 @@ description: Continuous testing. Speed up testing by running tests in parallel u
 ms.assetid: 8AEECA6C-6CC8-418C-AF75-6527E365FD88
 ms.topic: concept-article
 ms.custom: continuous-test
-ms.author: jeom
+ms.author: alexpysanets
 author: raviLiftr
 ms.date: 11/13/2019
 monikerRange: '<= azure-devops'

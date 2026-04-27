@@ -1,0 +1,96 @@
+- name: Troubleshooting and FAQs
+  href: index.yml
+- name: Azure Boards
+  items:
+    - name: Azure Boards
+      href: ../boards/faqs.yml?toc=/azure/devops/troubleshoot/toc.json
+    - name: Azure Boards with Office
+      href: ../boards/backlogs/office/faqs.yml?toc=/azure/devops/troubleshoot/toc.json
+    - name: Delivery Plans
+      href: ../boards/plans/faqs.yml?toc=/azure/devops/troubleshoot/toc.json
+    - name: Work item queries
+      href: ../boards/queries/query-faqs.yml?toc=/azure/devops/troubleshoot/toc.json
+    - name: Backlog reordering and nesting
+      href: ../boards/backlogs/resolve-backlog-reorder-issues.md?toc=/azure/devops/troubleshoot/toc.json
+    - name: Office integration issues
+      href: ../boards/backlogs/office/tfs-office-integration-issues.md?toc=/azure/devops/troubleshoot/toc.json
+- name: Azure Pipelines
+  items:
+    - name: Pipeline runs
+      href: ../pipelines/troubleshooting/troubleshooting.md?toc=/azure/devops/troubleshoot/toc.json
+    - name: Pipeline failure to start
+      href: ../pipelines/troubleshooting/troubleshoot-start.md?toc=/azure/devops/troubleshoot/toc.json
+    - name: Pipeline triggers
+      href: ../pipelines/troubleshooting/troubleshoot-triggers.md?toc=/azure/devops/troubleshoot/toc.json
+    - name: Workload identity service connections
+      href: ../pipelines/release/troubleshoot-workload-identity.md?toc=/azure/devops/troubleshoot/toc.json
+    - name: Azure Web App deployment
+      href: ../pipelines/troubleshooting/troubleshoot-azure-web-app-deploy.md?toc=/azure/devops/troubleshoot/toc.json
+    - name: Azure Resource Manager service connections
+      href: ../pipelines/release/azure-rm-endpoint.md?toc=/azure/devops/troubleshoot/toc.json
+- name: Azure Repos
+  items:
+    - name: Code scanning
+      href: ../repos/security/github-advanced-security-code-scanning-troubleshoot.md?toc=/azure/devops/troubleshoot/toc.json
+    - name: Dependency scanning
+      href: ../repos/security/github-advanced-security-dependency-scanning-troubleshoot.md?toc=/azure/devops/troubleshoot/toc.json
+    - name: Secret scanning
+      href: ../repos/security/github-advanced-security-secret-scanning-troubleshoot.md?toc=/azure/devops/troubleshoot/toc.json
+    - name: Git
+      href: ../repos/git/howto.yml?toc=/azure/devops/troubleshoot/toc.json
+- name: Azure Test Plans
+  items:
+    - name: FAQs
+      href: ../test/reference-qa.yml?toc=/azure/devops/troubleshoot/toc.json
+- name: Connections, access, and accounts
+  items:
+    - name: Connection and access issues
+      href: ../user-guide/troubleshoot-connection.md?toc=/azure/devops/troubleshoot/toc.json
+    - name: Access and permission issues
+      href: ../organizations/security/troubleshoot-permissions.md?toc=/azure/devops/troubleshoot/toc.json
+    - name: Capture browser trace
+      href: ../user-guide/capture-browser-trace.md?toc=/azure/devops/troubleshoot/toc.json
+    - name: Microsoft Entra access
+      href: ../organizations/accounts/faq-azure-access.yml?toc=/azure/devops/troubleshoot/toc.json
+    - name: User and permissions management
+      href: ../organizations/accounts/faq-user-and-permissions-management.yml?toc=/azure/devops/troubleshoot/toc.json
+    - name: Visual Studio setup
+      href: ../organizations/accounts/faq-set-up-vs.yml?toc=/azure/devops/troubleshoot/toc.json
+- name: Organizations and settings
+  items:
+    - name: Organization configuration
+      href: ../organizations/accounts/faq-configure-customize-organization.yml?toc=/azure/devops/troubleshoot/toc.json
+    - name: Billing
+      href: ../organizations/billing/billing-faq.yml?toc=/azure/devops/troubleshoot/toc.json
+    - name: Process customization
+      href: ../organizations/settings/work/faqs.yml?toc=/azure/devops/troubleshoot/toc.json
+    - name: Cross-project
+      href: ../project/work-across-projects-faqs.yml?toc=/azure/devops/troubleshoot/toc.json
+- name: Notifications
+  items:
+    - name: Troubleshoot notification emails
+      href: ../organizations/notifications/troubleshoot-not-getting-email.md?toc=/azure/devops/troubleshoot/toc.json
+    - name: FAQs
+      href: ../organizations/notifications/faq-notifications.yml?toc=/azure/devops/troubleshoot/toc.json
+- name: Reporting and Analytics
+  items:
+    - name: Analytics views
+      href: ../report/powerbi/troubleshooting-views.md?toc=/azure/devops/troubleshoot/toc.json
+    - name: Dashboards
+      href: ../report/dashboards/faqs.yml?toc=/azure/devops/troubleshoot/toc.json
+- name: Migration
+  items:
+    - name: Resolve migration errors
+      href: ../migrate/migration-troubleshooting.md?toc=/azure/devops/troubleshoot/toc.json
+- name: Managed DevOps Pools
+  items:
+    - name: Troubleshooting
+      href: ../managed-devops-pools/troubleshooting.md?toc=/azure/devops/troubleshoot/toc.json
+    - name: FAQs
+      href: ../managed-devops-pools/faq.md?toc=/azure/devops/troubleshoot/toc.json
+- name: CLI and service hooks
+  items:
+    - name: Azure DevOps CLI
+      href: ../cli/troubleshooting.md?toc=/azure/devops/troubleshoot/toc.json
+    - name: Service hook integrations
+      href: ../service-hooks/troubleshoot.md?toc=/azure/devops/troubleshoot/toc.json

@@ -190,3 +190,5 @@ landingContent:
             url: ./backlogs/resolve-backlog-reorder-issues.md
           - text: FAQs
             url: faqs.yml
+          - text: All troubleshooting guides & FAQs
+            url: ../troubleshoot/index.yml

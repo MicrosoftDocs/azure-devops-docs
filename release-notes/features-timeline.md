@@ -2,7 +2,7 @@
 title: Azure DevOps Roadmap
 author: gloridelmorales
 ms.author: glmorale
-ms.date: 01/20/2026
+ms.date: 04/02/2026
 ms.topic: article
 ms.service: azure-devops
 ms.subservice: azure-devops-release-notes
@@ -22,7 +22,7 @@ hide_comments: true
 
 ## Product roadmap
 
-This feature list is a peek into our roadmap. It identifies some of the significant features we are currently working on and a rough timeframe for when you can expect to see them. It is not comprehensive but is intended to provide some visibility into key investments. At the top you will find a list of our large multi-quarter initiatives and the features that they break down into. Further down you will find the full list of significant features we have planned. 
+This feature list is a peek into our roadmap. It identifies some of the significant features we're currently working on and a rough timeframe for when you can expect to see them. It isn't comprehensive but is intended to provide some visibility into key investments. At the top you'll find a list of our large multi-quarter initiatives and the features that they break down into. Further down you'll find the full list of significant features we have planned. 
 
 Each feature is linked to an article where you can learn more about a particular item. These features and dates are the current plans and are subject to change. The Timeframe columns reflect when we expect the feature to be available.
 
@@ -63,7 +63,7 @@ Upcoming capabilities we expect to deliver include:
       <tr>
         <td><a href="/azure/devops/release-notes/roadmap/2026/ghazdo/status-check" data-raw-source="[Status check policies for Advanced Security alerts)](/azure/devops/release-notes/roadmap/2026/ghazdo/status-check)">Status check policies for Advanced Security alerts </a></td>
         <td>GitHub Advanced Security for Azure DevOps</td>
-        <td>2026 Q1</td>
+        <td><img src="roadmap/2023/media/checkmark.png" alt="Done">2026 Q1</td>
       </tr>
        <tr>
         <td><a href="/azure/devops/release-notes/roadmap/2025/ghazdo/default-setup" data-raw-source="[CodeQL default setup (one-click enablement)](/azure/devops/release-notes/roadmap/2025/ghazdo/default-setup)">CodeQL default setup (one-click enablement)</a></td>
@@ -81,7 +81,7 @@ Upcoming capabilities we expect to deliver include:
  
 ### Minimizing the risks associated with credential theft
 
-Azure DevOps supports many different authentication mechanisms, including basic authentication, personal access tokens (PATs), SSH, and Microsoft Entra ID (formerly Azure Active Directory) access tokens. These mechanisms are not created equally from a security perspective, especially when it comes to the potential for credential theft. For example, unintended leakage of credentials like PATs can let malicious actors into Azure DevOps organizations where they can gain access to critical assets like source code, pivot toward supply chain attacks, or even pivot toward compromising production infrastructure. To minimize the risks of credential theft, we will focus our efforts in the upcoming quarters in the following areas: 
+Azure DevOps supports many different authentication mechanisms, including basic authentication, personal access tokens (PATs), SSH, and Microsoft Entra ID (formerly Azure Active Directory) access tokens. These mechanisms aren't created equally from a security perspective, especially when it comes to the potential for credential theft. For example, unintended leakage of credentials like PATs can let malicious actors into Azure DevOps organizations where they can gain access to critical assets like source code, pivot toward supply chain attacks, or even pivot toward compromising production infrastructure. To minimize the risks of credential theft, we'll focus our efforts in the upcoming quarters in the following areas: 
 
 * Enable administrators to improve authentication security through control plane policies. 
 
@@ -118,7 +118,7 @@ Azure DevOps supports many different authentication mechanisms, including basic 
         <tr>
          <td><a href="/azure/devops/release-notes/roadmap/2025/new-service-connection" data-raw-source="[PAT-less authentication from pipeline tasks to Azure DevOps APIs](/azure/devops/release-notes/roadmap/2025/new-service-connection)">PAT-less authentication from pipeline tasks to Azure DevOps APIs</a></td>
          <td>Pipelines</td>
-         <td>2026 Q1</td>
+         <td>2026 Q2</td>
       </tr>
       <tr>
          <td><a href="/azure/devops/release-notes/roadmap/2025/continuous-access-evaluation" data-raw-source="[Continuous access evaluation](/azure/devops/release-notes/roadmap/2025/continuous-access-evaluation)">Continuous access evaluation</a></td>
@@ -152,13 +152,8 @@ Below is a list of investments currently on our roadmap.
             <th>Quarter</th>
          </tr>
     </thead>
-    <tbody>          
+    <tbody> 
       <tr>
-         <td><a href="/azure/devops/release-notes/2025/sprint-260-update#azure-boards-and-pipelines-integration-for-github-enterprise-cloud-with-data-residency" data-raw-source="[Support GitHub Enterprise Cloud with data residency](azure/devops/release-notes/2025/sprint-260-update#azure-boards-and-pipelines-integration-for-github-enterprise-cloud-with-data-residency)">Support for GitHub Enterprise Cloud with data residency</a></td>
-         <td>Boards</td>
-         <td><img src="roadmap/2023/media/checkmark.png" alt="Done" />2025 Q3</td>
-      </tr>
-         <tr>
          <td><a href="/azure/devops/release-notes/2025/sprint-264-update#azure-devops-local-mcp-server-generally-available" data-raw-source="[MCP Server for Azure DevOps](/azure/devops/release-notes/2025/sprint-264-update#azure-devops-local-mcp-server-generally-available)">MCP Server for Azure DevOps</a></td>
          <td>General</td>
          <td><img src="roadmap/2023/media/checkmark.png" alt="Done" />2025 Q4</td>
@@ -169,16 +164,23 @@ Below is a list of investments currently on our roadmap.
          <td><img src="roadmap/2023/media/checkmark.png" alt="Done" />2025 Q4</td>
       </tr>    
       <tr>
-         <td><a href="/azure/devops/release-notes/roadmap/2026/boards-increase-repo-limit" data-raw-source="[Increase limit of connected GitHub repositories](/azure/devops/release-notes/roadmap/2026/boards-increase-repo-limit)">Increase limit of connected GitHub repositories</a></td>
+         <td><a href="/azure/devops/release-notes/2026/sprint-269-update#increased-maximum-limit-for-connected-github-repositories" data-raw-source="[Increase limit of connected GitHub repositories](/azure/devops/release-notes/2026/sprint-269-update#increased-maximum-limit-for-connected-github-repositories)">Increase limit of connected GitHub repositories</a></td>
          <td>Boards</td>
-         <td>2026 Q1</td>
+         <td><img src="roadmap/2023/media/checkmark.png" alt="Done" />2026 Q1</td>
       </tr>   
       <tr>
         <td>
-            <a href="/azure/devops/release-notes/roadmap/2026/general-remote-ado-mcp-server" data-raw-source="[Remote Azure DevOps MCP Server](/azure/devops/release-notes/roadmap/2026/general-remote-ado-mcp-server)">Remote Azure DevOps MCP Server</a>
+            <a href="/azure/devops/release-notes/2026/sprint-271-update#remote-mcp-server-public-preview" data-raw-source="[Remote Azure DevOps MCP Server](/azure/devops/release-notes/2026/sprint-271-update#remote-mcp-server-public-preview)">Remote Azure DevOps MCP Server</a>
          </td>
          <td>Boards</td>
-         <td>2026 Q1</td>
+         <td><img src="roadmap/2023/media/checkmark.png" alt="Done" />2026 Q1</td>
+      </tr>   
+      <tr>
+        <td>
+            <a href="/azure/devops/release-notes/roadmap/2026/boards/boards-select-model" data-raw-source="[Select a model for Copilot Cloud Agent integration](/azure/devops/release-notes/roadmap/2026/general-remote-ado-mcp-server)">Select a model for Copilot Cloud Agent integration</a>
+         </td>
+         <td>Boards</td>
+         <td>2026 Q2</td>
       </tr>         
     </tbody>
 </table>
@@ -190,11 +192,11 @@ You can also view a detailed list of planned and recent investments on our [feat
 
 Managed DevOps Pools is an evolution of Azure DevOps Virtual Machine Scale Set agent pools. It provides better pool scalability and reliability, simplifies pool management, and allows you to use the VM images from Microsoft-hosted agents on custom Azure VMs. You can read more about Managed DevOps Pools [here](https://aka.ms/mdp-docs). Features to support new scenarios will be added to Managed DevOps Pools and not Virtual Machine Scale Set pools. Managed DevOps Pools is generally available, so you can migrate your Virtual Machine Scale Set pools to Managed DevOps Pools and use them for production workflows, wherever possible.
 
-You will find the detailed roadmap [here](/azure/devops/managed-devops-pools/features-timeline?view=azure-devops&preserve-view=true).
+You'll find the detailed roadmap [here](/azure/devops/managed-devops-pools/features-timeline?view=azure-devops&preserve-view=true).
 
 ### YAML and release pipelines feature parity
 
-For the past several years, all our pipelines investments have been in the area of YAML pipelines. Furthermore, all our security improvements have been for YAML pipelines. For example, with YAML pipelines, the control over [protected resources](/azure/devops/pipelines/security/resources) (e.g., repositories, service connections, etc.) is in the hands of the resource owners as opposed to pipeline authors. The [job access tokens](/azure/devops/pipelines/process/access-tokens#scoped-build-identities) that are used in YAML pipelines are scoped to specific repositories that are specified in the YAML file. These are just two examples of security features that are available for YAML pipelines. For these reasons, we recommend using YAML pipelines over classic. Adoption of YAML over classic has been significant for builds (CI). However, many customers have continued to use classic release management pipelines over YAML for releases (CD). The primary reason for this is the lack of parity in various CD features between the two solutions. Over the past year, we addressed several gaps in this area, notably in **Checks**. Checks are the primary mechanism in YAML pipelines to gate promotion of a build from one stage to another. We will continue to address gaps in other areas over the next year. Our focus will be on user experiences, traceability, and environments.
+For the past several years, all our pipelines investments have been in the area of YAML pipelines. Furthermore, all our security improvements have been for YAML pipelines. For example, with YAML pipelines, the control over [protected resources](/azure/devops/pipelines/security/resources) (e.g., repositories, service connections, etc.) is in the hands of the resource owners as opposed to pipeline authors. The [job access tokens](/azure/devops/pipelines/process/access-tokens#scoped-build-identities) that are used in YAML pipelines are scoped to specific repositories that are specified in the YAML file. These are just two examples of security features that are available for YAML pipelines. For these reasons, we recommend using YAML pipelines over classic. Adoption of YAML over classic has been significant for builds (CI). However, many customers have continued to use classic release management pipelines over YAML for releases (CD). The primary reason for this is the lack of parity in various CD features between the two solutions. Over the past year, we addressed several gaps in this area, notably in **Checks**. Checks are the primary mechanism in YAML pipelines to gate promotion of a build from one stage to another. We'll continue to address gaps in other areas over the next year. Our focus will be on user experiences, traceability, and environments.
 
 <table>
     <thead>
@@ -208,12 +210,12 @@ For the past several years, all our pipelines investments have been in the area 
       <tr>
          <td><a href="/azure/devops/release-notes/roadmap/2024/stage-traceability" data-raw-source="[Stage-level traceability](/azure/devops/release-notes/roadmap/2024/stage-traceability)">Stage-level traceability</a></td>
          <td>Pipelines</td>
-         <td>2026 Q1</td>
+         <td><img src="roadmap/2023/media/checkmark.png" alt="Done">2026 Q1</td>
       </tr>
       <tr>
          <td><a href="/azure/devops/release-notes/roadmap/2025/on-demand-execution" data-raw-source="[On-demand out of order execution of stages](/azure/devops/release-notes/roadmap/2025/on-demand-execution)">On-demand out of order execution of stages</a></td>
          <td>Pipelines</td>
-         <td>2026 Q1</td>
+         <td>2026 Q2</td>
       </tr>
       <tr>
          <td><a href="/azure/devops/release-notes/roadmap/2022/service-connections-in-checks" data-raw-source="[Service connections in checks](/azure/devops/release-notes/roadmap/2022/service-connections-in-checks)">Service connections in checks</a></td>
@@ -232,9 +234,9 @@ For the past several years, all our pipelines investments have been in the area 
 
 Azure DevOps provides a variety of testing tools and integrations to support different testing needs. These include manual testing, automated testing, and exploratory testing. The platform allows for the creation and management of test plans and test suites, which can be used to track manual testing for sprints or milestones. Additionally, Azure DevOps integrates with CI/CD pipelines, enabling automated test execution and reporting. 
 
-We are ramping up our investments in this area in response to feedback from our most active customer base. Our focus will be on the following aspects of test management: improving end-to-end test traceability; extending support for various programming languages and frameworks for automated testing in Test Plans; redesigning workflows and experiences for consuming test runs and test results. 
+We're ramping up our investments in this area in response to feedback from our most active customer base. Our focus will be on the following aspects of test management: improving end-to-end test traceability; extending support for various programming languages and frameworks for automated testing in Test Plans; redesigning workflows and experiences for consuming test runs and test results. 
 
-Below, you will find several investments that we plan to deliver as part of this initiative: 
+Below, you'll find several investments that we plan to deliver as part of this initiative: 
 
 <table>
     <thead>
@@ -268,17 +270,17 @@ Below, you will find several investments that we plan to deliver as part of this
       <tr>
          <td><a href="/azure/devops/release-notes/roadmap/2025/testplans/support-for-playwright" data-raw-source="[Support for JavaScript (Playwright) in Azure Test Plans](/azure/devops/release-notes/roadmap/2025/testplans/support-for-pytest)">Support for JavaScript (Playwright) in Azure Test Plans</a></td>
          <td>Test Plans</td>
-         <td>2026 Q1</td>
+         <td>2026 Q2</td>
       </tr>
       <tr>
          <td><a href="/azure/devops/release-notes/roadmap/2025/testplans/support-yaml-pipelines" data-raw-source="[Support YAML pipelines in Azure Test Plans](/azure/devops/release-notes/roadmap/2025/testplans/support-yaml-pipelines)">Support YAML pipelines in Azure Test Plans</a></td>
          <td>Test Plans</td>
-         <td>2026 Q1</td>
+         <td>2026 Q2</td>
       </tr>
       <tr>
          <td><a href="/azure/devops/release-notes/roadmap/2026/testplans/support-for-rerunning" data-raw-source="[Support for re-running of data driven tests ](/azure/devops/release-notes/roadmap/2026/testplans/support-for-rerunning)">Support for re-running of data driven tests </a></td>
          <td>Test Plans</td>
-         <td>2026 Q1</td>
+         <td>2026 Q2</td>
       </tr>
       <tr>
          <td><a href="/azure/devops/release-notes/roadmap/2026/testplans/TFE-Improved-Reliability" data-raw-source="[Improve Reliability of Test & Feedback Extension for Edge and Chrome](/azure/devops/release-notes/roadmap/2026/testplans/TFE-Improved-Reliability)">Improve Reliability of Test & Feedback Extension for Edge and Chrome</a></td>
@@ -306,39 +308,26 @@ Below, you will find several investments that we plan to deliver as part of this
         </tr>
     </thead>
     <tbody>       
-      <td rowspan="19"><strong>2026 Q1</strong></td>
+      <td rowspan="16"><strong>2026 Q2</strong></td>
       <td><a href="/azure/devops/release-notes/roadmap/2023/commits-search" data-raw-source="[Commits search](/azure/devops/release-notes/roadmap/2023/commits-search)">Commits search</a></td>
         <td>General</td>
       </tr>
-      <tr>
-          <td><a href="/azure/devops/release-notes/roadmap/2025/manage-high-privilege-scopes" data-raw-source="[Manage high privilege scopes, pipeline decorators, and unpublished extensions](/azure/devops/release-notes/roadmap/2025/manage-high-privilege-scopes)">Manage high privilege scopes, pipeline decorators, and unpublished extensions</a>
-         </td>
-         <td>General</td>      
-      </tr>
       <tr>          
-        <td><a href="/azure/devops/release-notes/roadmap/2026/general-remote-ado-mcp-server" data-raw-source="[Remote Azure DevOps MCP Server](/azure/devops/release-notes/roadmap/2026/general-remote-ado-mcp-server)">Remote Azure DevOps MCP Server</a></td>
+        <td><a href="/azure/devops/release-notes/2026/sprint-271-update#remote-mcp-server-public-preview" data-raw-source="[Remote Azure DevOps MCP Server](/azure/devops/release-notes/2026/sprint-271-update#remote-mcp-server-public-preview)">Remote Azure DevOps MCP Server</a></td>
         <td>General</td>
       </tr>
       <tr>
-         <td><a href="/azure/devops/release-notes/roadmap/2025/ghazdo/organization-level-alerts" data-raw-source="[Organization-level alerts view in security overview](/azure/devops/release-notes/roadmap/2025/ghazdo/organization-level-alerts)">Organization-level alerts view in security overview</a></td>
-        <td>GitHub Advanced Security for Azure DevOps</td>
-      </tr>
-      <tr>     
-         <td><a href="/azure/devops/release-notes/roadmap/2025/boards/work-item-integration-with-github-coding-agent" data-raw-source="[Work item integration wth GitHub coding agent](/azure/devops/release-notes/roadmap/2025/boards/work-item-integration-with-github-coding-agent)">Support work item integration with the <br/>GitHub Copilot coding agent (GA)</a></td>      
-         <td>Boards</td>
-      </tr>     
-      <tr>          
-        <td><a href="/azure/devops/release-notes/roadmap/2025/boards/improved-filter-experience-boards-backlogs" data-raw-source="[Improved Filtering Experience in Boards and Backlogs](/azure/devops/release-notes/roadmap/2025/boards/improved-filter-experience-boards-backlogs)">Improved Filtering Experience in Boards and Backlogs</a></td>
-        <td>Boards</td>
+         <td><a href="/azure/devops/release-notes/roadmap/2025/ghazdo/default-setup" data-raw-source="[CodeQL default setup (one-click enablement)](/azure/devops/release-notes/roadmap/2025/ghazdo/default-setup)">CodeQL default setup (one-click enablement)</a></td>
+         <td>GitHub Advanced Security for Azure DevOps</td>
       </tr>       
-      <tr>          
-        <td><a href="/azure/devops/release-notes/roadmap/2026/boards-increase-repo-limit" data-raw-source="[Increase limit of connected GitHub repositories](/azure/devops/release-notes/roadmap/2026/boards-increase-repo-limit)">Increase limit of connected GitHub repositories</a></td>
-        <td>Boards</td>
+      <tr>
+         <td><a href="/azure/devops/release-notes/roadmap/2025/boards/improved-filter-experience-boards-backlogs" data-raw-source="[Filter by additional fields on sprint backlog and board](/azure/devops/release-notes/roadmap/2025/boards/improved-filter-experience-boards-backlogs)">Filter by additional fields on sprint backlog and board</a></td>
+         <td>Boards</td>
       </tr>
       <tr>
-         <td><a href="/azure/devops/release-notes/roadmap/2025/boards/boards-condensed-views" data-raw-source="[Condensed views for kanban and sprint boards](/azure/devops/release-notes/roadmap/2025/boards/boards-condensed-views)">Condensed views for kanban and sprint boards</a></td>
+         <td><a href="/azure/devops/release-notes/roadmap/2026/boards/pull-request-status-on-work-item-cards" data-raw-source="[Show pull request annotations on cards](/azure/devops/release-notes/roadmap/2026/boards/pull-request-status-on-work-item-cards)">Show pull request annotations on cards</a></td>
          <td>Boards</td>
-      </tr>
+      </tr>       
       <tr>
          <td><a href="/azure/devops/release-notes/roadmap/2024/stage-traceability" data-raw-source="[Stage-level traceability](/azure/devops/release-notes/roadmap/2024/stage-traceability)">Stage-level traceability</a></td>
          <td>Pipelines</td>
@@ -360,18 +349,6 @@ Below, you will find several investments that we plan to deliver as part of this
          <td>Test Plans</td>
       </tr>
       <tr>
-         <td><a href="/azure/devops/release-notes/roadmap/2025/testplans/recent-test-result" data-raw-source="[Latest Test Outcome in Requirements](/azure/devops/release-notes/roadmap/2025/testplans/recent-test-result)">Latest Test Outcome in Requirements</a></td>
-         <td>Test Plans</td>
-      </tr>
-      <tr>
-         <td><a href="/azure/devops/release-notes/roadmap/2025/testplans/new-test-run-experience" data-raw-source="[New Test Run experience - Public Preview](/azure/devops/release-notes/roadmap/2025/testplans/new-test-run-experience)">New Test Run experience - Public Preview</a></td>
-         <td>Test Plans</td>
-      </tr>
-      <tr>
-         <td><a href="/azure/devops/release-notes/roadmap/2025/testplans/enhanced-test-point" data-raw-source="[Enhanced Test Point Result Panel](/azure/devops/release-notes/roadmap/2025/testplans/enhanced-test-point)">Enhanced Test Point Result Panel</a></td>
-         <td>Test Plans</td>
-      </tr>
-      <tr>
          <td><a href="/azure/devops/release-notes/roadmap/2025/testplans/support-for-playwright" data-raw-source="[Support for JavaScript (Playwright) in Azure Test Plans](/azure/devops/release-notes/roadmap/2025/testplans/support-for-playwrigth)">Support for JavaScript (Playwright) in Azure Test Plans</a></td>
          <td>Test Plans</td>
       </tr>
@@ -380,20 +357,20 @@ Below, you will find several investments that we plan to deliver as part of this
          <td>Test Plans</td>
       </tr>
       <tr>
-         <td><a href="/azure/devops/release-notes/roadmap/2026/wiki-monaco-editor" data-raw-source="[Replace existing Wiki editor with Monaco Editor](/azure/devops/release-notes/roadmap/2026/wiki-monaco-editor)">Replace existing Wiki editor with Monaco Editor</a></td>
-         <td>Wiki</td>
-      </tr>
-      <td rowspan="3"><strong>2026 Q2</strong></td>
-      <td><a href="/azure/devops/release-notes/roadmap/2025/ghazdo/default-setup" data-raw-source="[CodeQL default setup (one-click enablement)](/azure/devops/release-notes/roadmap/2025/ghazdo/default-setup)">CodeQL default setup (one-click enablement)</a></td>
-        <td>GitHub Advanced Security for Azure DevOps</td>
-      </tr>
-      <tr>
          <td><a href="/azure/devops/release-notes/roadmap/2026/testplans/TFE-Improved-Reliability" data-raw-source="[Improve Reliability of Test & Feedback Extension for Edge and Chrome](/azure/devops/release-notes/roadmap/2026/testplans/TFE-Improved-Reliability)">Improve Reliability of Test & Feedback Extension for Edge and Chrome</a></td>
          <td>Test Plans</td>
       </tr>
       <tr>
          <td><a href="/azure/devops/release-notes/roadmap/2026/testplans/Actual-Test-Result" data-raw-source="[Support Capturing of Actual Test Result](/azure/devops/release-notes/roadmap/2026/testplans/Actual-Test-Result)">Support Capturing of Actual Test Result</a></td>
          <td>Test Plans</td>
+      </tr>
+      <tr>
+         <td><a href="/azure/devops/release-notes/roadmap/2026/wiki-monaco-editor" data-raw-source="[Replace existing Wiki editor with Monaco Editor](/azure/devops/release-notes/roadmap/2026/wiki-monaco-editor)">Replace existing Wiki editor with Monaco Editor</a></td>
+         <td>Wiki</td>
+      </tr>
+      <tr>
+         <td><a href="/azure/devops/release-notes/roadmap/2026/wiki-monaco-editor" data-raw-source="[Replace existing Wiki editor with Monaco Editor](/azure/devops/release-notes/roadmap/2026/wiki-monaco-editor)">Replace existing Wiki editor with Monaco Editor</a></td>
+         <td>Wiki</td>
       </tr>
       <td rowspan="20"><strong>Future</strong></td>
         <td><a href="/azure/devops/release-notes/roadmap/auditing-ga" data-raw-source="[Auditing GA](/azure/devops/release-notes/roadmap/auditing-ga)">Auditing GA</a></td>
@@ -635,7 +612,7 @@ Below, you will find several investments that we plan to deliver as part of this
       </tr>
    </tbody>
 </table>
----
+
 
 ## How to provide feedback
 

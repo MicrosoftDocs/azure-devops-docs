@@ -5,27 +5,31 @@ description: Choose the right authentication method for your Azure DevOps integr
 ms.assetid: 15CCEB1E-F42B-4439-8C35-B8A225F5546C
 ms.subservice: azure-devops-security
 ms.topic: concept-article
-ms.custom: arm2024
+ms.custom: arm2024, pat-reduction, copilot-scenario-highlight
 ai-usage: ai-assisted
 monikerRange: '<= azure-devops'
 ms.author: chcomley
 author: chcomley
-ms.date: 07/21/2025
+ms.date: 03/18/2026
 ---
 
 # Authentication methods for Azure DevOps
 
 [!INCLUDE [version-lt-eq-azure-devops](../../../includes/version-lt-eq-azure-devops.md)]
 
-This article describes authentication methods for Azure DevOps integration and helps you choose the best option for your scenario. Modern authentication approaches like Microsoft Entra ID provide enhanced security and the best approach for new applications.
+This article describes authentication methods for Azure DevOps integration and helps you choose the best option for your scenario.
+Modern authentication approaches like Microsoft Entra ID provide enhanced security and are the best approach for new applications.
 
-> [!IMPORTANT]
-> We recommend Microsoft Entra ID authentication for new applications that integrate with Azure DevOps Services.
-> Use personal access tokens sparingly, and use them only when Microsoft Entra ID isn't available.
+Use Microsoft Entra ID authentication for new applications that integrate with Azure DevOps Services.
+Use personal access tokens sparingly, and only when Microsoft Entra ID isn't available.
+
+[!INCLUDE [use-microsoft-entra-reduce-pats](../../../includes/use-microsoft-entra-reduce-pats.md)]
 
 OAuth 2.0 and Microsoft Entra ID authentication are available for Azure DevOps Services only, not Azure DevOps Server.
 
 For on-premises scenarios, use [.NET client libraries](../../concepts/dotnet-client-libraries.md), Windows authentication, or [personal access tokens](../../../organizations/accounts/use-personal-access-tokens-to-authenticate.md).
+
+[!INCLUDE [ai-assistance-mcp-server-tip](../../../includes/ai-assistance-mcp-server-tip.md)]
 
 ## Authentication methods by scenario
 
@@ -40,6 +44,7 @@ Choose the appropriate authentication method based on your application type and 
 | Azure DevOps extensions | Extensions running within Azure DevOps | Custom dashboard widgets and work item forms | [Azure DevOps web extension SDK](https://github.com/Microsoft/azure-devops-extension-sdk) | [Add a dashboard widget](../../../extend/develop/add-dashboard-widget.md) |
 | Azure DevOps Server apps | On-premises Azure DevOps Server integrations | Custom server extensions | [.NET client libraries](../../concepts/dotnet-client-libraries.md) or Windows Auth | [Client library console app](https://github.com/Microsoft/vsts-auth-samples/tree/master/ClientLibraryConsoleAppSample) |
 | Personal/ad hoc scripts | Quick scripts for personal use | PowerShell scripts, curl commands | [Personal access tokens](../../../organizations/accounts/use-personal-access-tokens-to-authenticate.md) | [Get started with the REST APIs](../../how-to/call-rest-api.md) |
+| Azure Pipelines | Access Azure DevOps from pipeline | Consume artifacts from different organization | [Azure DevOps service connection](../../../pipelines/library/add-devops-entra-service-connection.md) | [Add an Azure DevOps Microsoft Entra service connection](../../../pipelines/library/add-devops-entra-service-connection.md) |
 
 ## Suggestions for getting started
 
@@ -63,24 +68,22 @@ The following sections provide recommendations for getting started in different 
 - Use personal access tokens for Azure DevOps Server scenarios when they're acceptable.
 - Plan for future Azure DevOps Services migration to take advantage of modern authentication.
 
-## Answers to common questions
-
-The following sections provide answers to frequently asked questions.
+## Frequently asked questions (FAQ)
 
 ### Should I use Microsoft Entra ID OAuth or personal access tokens?
 
 Use Microsoft Entra ID OAuth in the following scenarios:
 
-- New applications and integrations
-- Production workloads that require robust security
-- Applications that need enterprise identity integration
-- Long-term projects with compliance requirements
+- New applications and integrations.
+- Production workloads that require robust security.
+- Applications that need enterprise identity integration.
+- Long-term projects with compliance requirements.
 
-Only use personal access tokens in the following scenarios:
+Use personal access tokens only in the following scenarios:
 
-- Personal scripts and ad hoc tasks
-- Legacy applications during migration planning
-- Azure DevOps Server scenarios where modern authentication isn't available
+- Personal scripts and ad hoc tasks.
+- Legacy applications during migration planning.
+- Azure DevOps Server scenarios where modern authentication isn't available.
 
 ### Should I use service principals or user delegation for authentication?
 
@@ -100,7 +103,7 @@ Use user delegation (OAuth with user consent) in the following scenarios:
 
 ### How do I authenticate with both Azure DevOps Services and Azure DevOps Server?
 
-The best practice is to create separate authentication paths:
+Create separate authentication paths for each service:
 
 - **Azure DevOps Services**: Use Microsoft Entra ID OAuth.
 - **Azure DevOps Server**: Use .NET client libraries with Windows Authentication or personal access tokens.
@@ -109,7 +112,7 @@ Use the `requestContext` method to detect the service type, and apply the approp
 
 ### Why can't my service account access Azure DevOps APIs?
 
-Here are some common issues that can affect service account access:
+Here are some common issues that affect service account access:
 
 - **Service account not "materialized"**: Use the correct sign-in method. Service accounts need interactive sign-in permissions or proper Microsoft Entra ID registration.
 - **Insufficient permissions**: Ensure that the service account has appropriate Azure DevOps permissions.
@@ -125,6 +128,7 @@ Follow these steps:
 
    - Microsoft Entra ID OAuth for user-delegated scenarios
    - Service principals for service-to-service scenarios
+   - Azure DevOps service connection
 
 1. Update the authentication code by using the [Azure DevOps migration authentication samples](https://github.com/microsoft/azure-devops-auth-samples).
 
@@ -132,13 +136,46 @@ Follow these steps:
 
 1. Monitor and validate the new authentication method.
 
+### Why shouldn't I decode or read claims from authentication tokens?
+
+Authentication tokens exist solely to prove *who* the caller is and *what they're authorized to do*. They're not a stable data interface or a schema you can depend on.
+
+Token claims are never publicly documented, and Azure DevOps reserves the right to change, rename, remove, or encrypt them at any time without notice. Starting summer 2025, Azure DevOps is further encrypting authentication tokens, which means clients can't read token payloads. Any application that decodes tokens to extract claims breaks.
+
+Instead of reading token claims, follow these practices:
+
+- **Treat tokens as opaque** — pass them in authorization headers, but don't decode or inspect them.
+- **Use supported REST APIs** — retrieve user or organization data from [Azure DevOps REST APIs](/rest/api/azure/devops), which provide stable contracts and documentation.
+- **Assume any claim can change** — if you find yourself parsing token contents to read values, put that logic in an API call instead.
+
+These changes don't affect applications that already treat tokens as opaque.
+
 ## Implementation procedures
 
-After you choose the authentication method for your scenario, finish the implementation:
+After you choose the authentication method for your scenario, finish the implementation steps:
 
 - **New applications**: [Build Azure DevOps integrations with Microsoft Entra OAuth apps](entra-oauth.md)
 - **Service applications**: [Use service principals and managed identities in Azure DevOps](service-principal-managed-identity.md)
 - **Personal scripts**: [Use personal access tokens](../../../organizations/accounts/use-personal-access-tokens-to-authenticate.md)
+- **Azure Pipelines**: [Access Azure DevOps with Entra workload identity](../../../pipelines/library/add-devops-entra-service-connection.md)
+
+<a id="use-ai-assistance"></a>
+
+## Use AI to choose an authentication method
+
+If you connect the [Azure DevOps MCP Server](../../../mcp-server/mcp-server-overview.md) to your AI agent in agent mode, you can use natural language prompts to get authentication recommendations for your scenario.
+
+| Task | Example prompt |
+|------|----------------|
+| Choose auth for a background service | `Which authentication method should I use for a background Azure Function that needs to access Azure DevOps APIs?` |
+| Compare auth options | `Help me choose between service principals, managed identities, and personal access tokens for my Azure DevOps integration` |
+| Auth for a web app | `I'm building a React web app that needs to access Azure DevOps on behalf of signed-in users — what authentication approach should I use?` |
+| Migrate from PATs | `Help me plan a migration from personal access tokens to Microsoft Entra ID authentication for my Azure DevOps integrations` |
+| Auth for CI/CD | `What's the most secure way to authenticate Azure DevOps REST API calls from a GitHub Actions workflow?` |
+| Troubleshoot auth failures | `I'm getting 401 errors when calling the Azure DevOps REST API with my token — help me diagnose the issue` |
+
+> [!NOTE]
+> Agent mode and the MCP Server use natural language, so you can adjust these prompts or ask follow-up questions to refine the results.
 
 ## Related content
 
@@ -146,3 +183,4 @@ After you choose the authentication method for your scenario, finish the impleme
 - [Azure DevOps Services REST API reference](/rest/api/azure/devops)
 - [Security and identity in Azure DevOps](../../../organizations/security/about-security-identity.md)
 - [Azure DevOps data protection overview](../../../organizations/security/data-protection.md)
+- [Access Azure DevOps with Entra workload identity](../../../pipelines/library/add-devops-entra-service-connection.md)

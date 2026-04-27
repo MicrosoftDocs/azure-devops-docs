@@ -1,6 +1,6 @@
 ---
 title: Review logs to diagnose pipeline issues
-description: Learn how to review pipeline diagnostic logs to troubleshoot
+description: Learn how to review pipeline diagnostic logs to troubleshoot failures in Azure Pipelines.
 ms.author: sdanie
 ms.reviewer: steved0x
 ms.topic: troubleshooting
@@ -365,3 +365,9 @@ steps:
   inputs:
     artifactName: webapp
 ```
+
+## Related content
+
+- [Troubleshoot pipeline runs](troubleshooting.md)
+- [Troubleshoot pipeline triggers](troubleshoot-triggers.md)
+- [Troubleshoot pipeline failure to start](troubleshoot-start.md)

@@ -6,7 +6,7 @@ ai-usage: ai-assisted
 ms.service: azure-devops-test-plans
 ms.custom: UpdateFrequency3
 ms.topic: how-to
-ms.author: jeom
+ms.author: pliaros
 author: rohit-batra
 monikerRange: '<= azure-devops'
 ms.date: 11/24/2025
@@ -98,4 +98,4 @@ If you have trouble connecting, see [Troubleshoot connection](../user-guide/trou
 
 ## Related content
 
-* [FAQs for manual testing](reference-qa.yml#tandfext)
+* [FAQs for manual testing](reference-qa.yml#test---feedback-extension)

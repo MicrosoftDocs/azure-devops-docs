@@ -67,11 +67,11 @@ For more settings, see [Set your preferences](../../organizations/settings/set-y
 
 | Issue | Solution |
 |-------|----------|
-| **Email field is disabled/grayed out** | Your organization uses Microsoft Entra ID authentication. Contact your Microsoft Entra ID administrator or update your email in the Microsoft Entra ID portal |
-| **Email change not taking effect** | Wait up to 24 hours for changes to propagate across all services |
-| **Still receiving notifications at old email** | Check if you have organization-specific notification subscriptions that override your profile settings |
-| **Can't edit email in Microsoft Entra preview** | Contact your Microsoft Entra ID administrator for profile information updates |
-| **Not receiving any notifications** | Verify your [notification subscription settings](./manage-your-personal-notifications.md) are configured correctly |
+| Email field is disabled/grayed out | Your organization uses Microsoft Entra ID authentication. Contact your Microsoft Entra ID administrator or update your email in the Microsoft Entra ID portal |
+| Email change not taking effect | Wait up to 24 hours for changes to propagate across all services |
+| Still receiving notifications at old email | Check if you have organization-specific notification subscriptions that override your profile settings |
+| Can't edit email in Microsoft Entra preview | Contact your Microsoft Entra ID administrator for profile information updates |
+| Not receiving any notifications | Verify your [notification subscription settings](./manage-your-personal-notifications.md) are configured correctly |
 
 ## Related content
 

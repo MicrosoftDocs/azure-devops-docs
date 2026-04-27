@@ -5,7 +5,7 @@ ms.assetid: E9D8D614-A09A-4327-81B6-39F880D685E6
 ms.service: azure-devops-test-plans
 ms.custom: UpdateFrequency3
 ms.topic: overview
-ms.author: jeom
+ms.author: pliaros
 author: raviLiftr
 monikerRange: '<= azure-devops'
 ms.date: 09/06/2024
@@ -270,7 +270,7 @@ to feedback requests using the browser-based Test &amp; Feedback extension -
 not just to rate and send comments, but also by capturing rich diagnostic
 data and filing bugs and tasks directly.
 See more at [Request stakeholder feedback](request-stakeholder-feedback.md) 
-and [Provide stakeholder feedback](provide-stakeholder-feedback.md).
+and [Provide stakeholder feedback](request-stakeholder-feedback.md#email).
 
 ![Requesting and providing stakeholder feedback](media/manual-testing/stakeholder-feedback-01.png)
 

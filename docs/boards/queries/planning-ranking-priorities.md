@@ -2,7 +2,7 @@
 title: Create queries based on rank and priority fields
 titleSuffix: Azure Boards
 description: Learn how to create queries based on planning, ranking, priority, and picklist fields in Azure DevOps and Azure Boards.
-ms.custom: boards-queries
+ms.custom: boards-queries, copilot-scenario-highlight
 ms.service: azure-devops-boards
 ms.assetid: ca05800c-905a-407f-bea8-a7ee32b65973
 ms.author: chcomley
@@ -10,7 +10,7 @@ author: chcomley
 ms.topic: example-scenario
 ai-usage: ai-assisted
 monikerRange: '<= azure-devops'
-ms.date: 10/27/2025
+ms.date: 02/28/2026
 ---
 
 # Query by rank and picklist value
@@ -18,6 +18,8 @@ ms.date: 10/27/2025
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 Use planning, ranking, and priority fields to determine the order in which your team completes work items. Effective ranking and prioritizing helps all team members understand the relative importance of each item they need to accomplish.
+
+[!INCLUDE [ai-assistance-mcp-server-tip](../../includes/ai-assistance-mcp-server-tip.md)]
 
 Rank and prioritize work items when you [create your backlog](../backlogs/create-your-backlog.md).
 
@@ -288,6 +290,22 @@ To add the field to the form:
     <Control FieldName="Microsoft.VSTS.Common.BacklogPriority" Type="FieldControl" Label="Stack Rank" LabelPosition="Left" />
     ```
 
+
+<a id="use-ai-assistance"></a>
+
+## Use AI to query by priority and ranking
+
+If you have the [Azure Boards MCP Server](../../mcp-server/mcp-server-overview.md) connected to your AI agent in agent mode, you can use natural language prompts to find work items by priority, severity, and ranking fields.
+
+| Task | Example prompt |
+|------|----------------|
+| Find high-priority bugs | `List all Priority 1 bugs that are still active in my project` |
+| Query by business value | `Find active user stories sorted by stack rank with business value greater than 5` |
+| Find unprioritized items | `Show work items with no priority assigned` |
+| Group by severity | `List bugs grouped by severity for the current sprint` |
+
+> [!NOTE]
+> Agent mode and the MCP Server use natural language, so you can adjust these prompts or ask follow-up questions to refine the results.
 
 ## Related content 
 

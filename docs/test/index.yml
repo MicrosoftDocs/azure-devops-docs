@@ -1,90 +1,139 @@
 ### YamlMime:Landing
 
 title: Azure Test Plans documentation
-summary: Improve your overall code quality by using manual and exploratory testing services for your apps.
+summary: Plan, execute, and track manual, exploratory, and automated tests to ship high-quality software with Azure DevOps.
 
 metadata:
   title: Azure Test Plans documentation
   titleSuffix: Azure DevOps 
-  description: Test your software using manual and exploratory testing services to improve your overall code quality. 
+  description: Plan, run, and track manual and exploratory tests, collect stakeholder feedback, and review automated test results with Azure Test Plans.
   ms.service: azure-devops-test-plans
   ms.custom: UpdateFrequency3
   ms.assetid: 00f4ed452-fbb8-45f9-8f0a-343702aac5b8  
   ms.topic: landing-page 
-  ms.author: jeom
+  ms.author: pliaros
   author: chcomley
-  ms.date: 07/18/2025
+  ms.date: 03/30/2026
   ms.update-cycle: 1095-days
 
 # linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
 
 landingContent:
-# Cards and links should be based on top customer tasks or top subjects
-# Start card title with a verb
-  # Card (optional)
-  - title: About Azure Test Plans
+  # Card 1 — Get started
+  - title: Get started
     linkLists:
       - linkListType: overview
         links:
           - text: What is Azure Test Plans?
-            url: ../test/overview.md
-          - text: Navigate Test Plans
-            url: ../test/navigate-test-plans.md
-          - text: Store custom data in test plan and/or test result
-            url: ../test/custom-fields.md
-  - title: Run manual tests
-    linkLists:
-      - linkListType: quickstart
+            url: overview.md
+          - text: Tour Test Plans
+            url: navigate-test-plans.md
+          - text: Key concepts
+            url: test-objects-overview.md
+      - linkListType: get-started
         links:
-          - text: Create test plans and suites
-            url: ../test/create-a-test-plan.md
-          - text: Create manual test cases
-            url: ../test/create-test-cases.md
-          - text: Run manual tests
-            url: ../test/run-manual-tests.md
-      - linkListType: tutorial
-        links:
-          - text: Test different configurations
-            url: ../test/test-different-configurations.md
-  - title: Test & Feedback extension
-    linkLists:
-      - linkListType: quickstart
-        links:
-          - text: Install the Test & Feedback extension
-            url: ../test/perform-exploratory-tests.md
-          - text: Test in Connected mode
-            url: ../test/connected-mode-exploratory-testing.md
-  - title: Configure Test resources
+          - text: Default permissions (Security)
+            url: manual-test-permissions.md
+  # Card 2 — Test plans, suites & cases
+  - title: Manage test plans, suites, & cases
     linkLists:
       - linkListType: how-to-guide
         links:
-          - text: Set test retention policies
-            url: ../test/how-long-to-keep-test-results.md?toc=/azure/devops/organizations/toc.json 
-          - text: Manage test runs
-            url: ../test/test-runs.md
+          - text: Create & manage test plans
+            url: create-a-test-plan.md
+          - text: Create & manage test suites
+            url: create-test-suites.md
+          - text: Create test cases
+            url: create-test-cases.md
+          - text: Share steps between test cases
+            url: share-steps-between-test-cases.md
+          - text: Copy or clone test items
+            url: copy-clone-test-items.md
+          - text: Import and export test cases
+            url: bulk-import-export-test-cases.md
+  # Card 3 — Run manual tests
+  - title: Run manual tests
+    linkLists:
+      - linkListType: how-to-guide
+        links:
+          - text: Run manual tests
+            url: run-manual-tests.md
+          - text: Record actual results
+            url: actual-result.md
+          - text: Test different configurations
+            url: test-different-configurations.md
+          - text: Repeat a test with different data
+            url: repeat-test-with-different-data.md
+          - text: Perform user acceptance testing
+            url: user-acceptance-testing.md
+          - text: Collect diagnostic data
+            url: collect-diagnostic-data.md
+  # Card 4 — Exploratory testing
+  - title: Exploratory testing
+    linkLists:
+      - linkListType: how-to-guide
+        links:
+          - text: Install the Test & Feedback extension
+            url: perform-exploratory-tests.md
+          - text: Test in Connected mode
+            url: connected-mode-exploratory-testing.md
+          - text: Test in Standalone mode
+            url: standalone-mode-exploratory-testing.md
+          - text: Explore work items
+            url: explore-workitems-exploratory-testing.md
+          - text: Get insights from sessions
+            url: insights-exploratory-testing.md
+  # Card 5 — Stakeholder feedback
+  - title: Stakeholder feedback
+    linkLists:
+      - linkListType: how-to-guide
+        links:
+          - text: Request & provide feedback
+            url: request-stakeholder-feedback.md
+  # Card 6 — Automated tests
   - title: Run automated tests
     linkLists:
-      - linkListType: concept
+      - linkListType: how-to-guide
         links:
-          - text: Run automated tests from test hub
-            url: ../test/run-automated-tests-from-test-hub.md
           - text: Associate automated tests with test cases
-            url: ../test/associate-automated-test-with-test-case.md
-  - title: Set up continuous testing
-    linkLists:
+            url: associate-automated-test-with-test-case.md
+          - text: Run automated tests from test plans
+            url: run-automated-tests-from-test-hub.md
       - linkListType: tutorial
         links:
-          - text: .NET Core apps
-            url: ../pipelines/ecosystems/dotnet-core.md
-          - text: Go
-            url: ../pipelines/ecosystems/go.md#test
-          - text: Python
-            url: ../pipelines/ecosystems/customize-python.md#run-tests
-          - text: UI testing using Selenium
-            url: ../pipelines/test/continuous-test-selenium.md
           - text: Review code coverage results
             url: ../pipelines/test/review-code-coverage-results.md
           - text: Review test results
             url: ../pipelines/test/review-continuous-test-results-after-build.md
           - text: Analyze test results
             url: ../pipelines/test/test-analytics.md
+  # Card 7 — Track progress
+  - title: Track progress and results
+    linkLists:
+      - linkListType: how-to-guide
+        links:
+          - text: Manage test runs
+            url: test-runs.md
+          - text: Track test status
+            url: track-test-status.md
+          - text: Progress report
+            url: progress-report.md
+      - linkListType: reference
+        links:
+          - text: Pipeline Analytics
+            url: ../pipelines/reports/pipelinereport.md
+          - text: Flaky test management
+            url: ../pipelines/test/flaky-test-management.md
+  # Card 8 — Reference & troubleshooting
+  - title: Reference & troubleshooting
+    linkLists:
+      - linkListType: reference
+        links:
+          - text: Test case management commands (tcm.exe)
+            url: test-case-managment-reference.md
+          - text: Work item field index
+            url: ../boards/work-items/guidance/work-item-field.md
+          - text: Manual testing FAQs
+            url: reference-qa.yml
+          - text: REST API - Test Plans
+            url: /rest/api/azure/devops/testplan/test-plans

@@ -118,7 +118,7 @@ The following operational display and object limits apply to teams, work item ta
 | Dashboards per project | 500 |
 | Taskboard | 800 work items |
 | Teams per project | 5,000 |
-| Work item tags per project | 150,000 |
+| Work item tags per project organization or collection | 150,000 |
 | Work item tags per work item | 100 |
 | Templates per work item type | 100 |
 
@@ -169,7 +169,7 @@ The following table lists the maximum number of objects you can define for the I
 
 | Object                                              | Inheritance | Hosted XML |
 | --------------------------------------------------- | ----------: | ---------: |
-| Number of processes per organization |          128|         64 |
+| Number of processes per organization |          256|         64 |
 | Work item types per process               |          64 |         64 |
 | Fields per organization                  |        8192 |       8192 |
 | Fields per process                        |        1024 |       1024 |

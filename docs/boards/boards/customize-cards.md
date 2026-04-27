@@ -2,7 +2,7 @@
 title: Customize cards on a board
 titleSuffix: Azure Boards
 description: Learn how to customize cards to show relevant information and highlight important work items on your team's board in Azure Boards.
-ms.custom: boards-kanban, engagement-fy23
+ms.custom: boards-kanban, engagement-fy23, copilot-scenario-highlight
 ms.service: azure-devops-boards
 ms.assetid: 951A73EA-7411-4A2A-B3F0-ACBBC7EFC68F
 ai-usage: ai-assisted
@@ -10,7 +10,7 @@ ms.author: chcomley
 author: chcomley
 ms.topic: how-to
 monikerRange: '<= azure-devops'
-ms.date: 02/05/2026
+ms.date: 02/28/2026
 ---
  
 # Customize cards on a board  
@@ -19,6 +19,8 @@ ms.date: 02/05/2026
 
 Customize board cards to display the information your team needs most. Cards show work items as visual elements that facilitate quick updates, progress tracking, and at-a-glance status assessment. You can update fields directly on cards without opening work items, and apply visual styling to highlight important items.
 
+[!INCLUDE [ai-assistance-mcp-server-tip](../../includes/ai-assistance-mcp-server-tip.md)]
+
 > [!NOTE] 
 > This article covers board card customization. For Taskboard card customization, see [Customize sprint Taskboards](../sprints/customize-taskboard.md). 
 
@@ -26,8 +28,8 @@ Customize board cards to display the information your team needs most. Cards sho
 
 | Requirement | Description |
 |-------------|-------------|
-| **Access** | [**Basic**](../../organizations/security/access-levels.md) access or higher |
-| **Permissions** | Member of **Project Administrators** security group or [**Team Administrator** role](../../organizations/settings/add-team-administrator.md) |
+| Access | [**Basic**](../../organizations/security/access-levels.md) access or higher |
+| Permissions | Member of **Project Administrators** security group or [**Team Administrator** role](../../organizations/settings/add-team-administrator.md) |
 
 For more information, see [Change project-level permissions](../../organizations/security/change-project-level-permissions.md).
 
@@ -40,12 +42,12 @@ You can customize the following aspects of board cards:
 ::: moniker range="<=azure-devops"
 | Setting | Purpose |
 |---------|---------|
-| **[Fields](#add-fields-to-cards)** | Control which fields appear on cards, including parent work item information |
-| **[Styles](#apply-style-rules)** | Change card colors and text styling based on field criteria |
-| **[Tag colors](#set-tag-colors)** | Assign specific colors to tags for visual categorization |
-| **[Annotations](#manage-annotations)** | Enable or disable icons showing related items (tasks, tests, GitHub) |
-| **[Tests](#configure-tests)** | Configure how inline tests appear and behave |
-| **[Card reordering](#configure-card-reordering)** | Control behavior when reordering cards |
+| [Fields](#add-fields-to-cards) | Control which fields appear on cards, including parent work item information |
+| [Styles](#apply-style-rules) | Change card colors and text styling based on field criteria |
+| [Tag colors](#set-tag-colors) | Assign specific colors to tags for visual categorization |
+| [Annotations](#manage-annotations) | Enable or disable icons showing related items (tasks, tests, GitHub) |
+| [Tests](#configure-tests) | Configure how inline tests appear and behave |
+| [Card reordering](#configure-card-reordering) | Control behavior when reordering cards |
 ::: moniker-end
 
 ## Access board settings
@@ -206,6 +208,28 @@ Control how card order is maintained when you move cards between columns.
 - **Use consistent styling**: Apply style rules that support your team's workflow.
 - **Regular review**: Periodically assess which customizations provide value.
 - **Team alignment**: Ensure all team members understand the visual conventions.
+
+<a id="use-ai-assistance"></a>
+
+## Use AI to query work items displayed on cards
+
+If you have the [Azure Boards MCP Server](../../mcp-server/mcp-server-overview.md) connected to your AI agent in agent mode, you can use natural language prompts to query and update the work items that appear on your board cards.
+
+| Task | Example prompt |
+|------|----------------|
+| Find items by tag | `Show me all work items on my board that have the 'blocked' tag` |
+| View items with specific fields | `List all active user stories with their priority, assigned to, and story points` |
+| Update fields on work items | `Set the priority of bug 4567 to 1 and add the tag 'regression'` |
+| Find items by style criteria | `Show me all work items assigned to <me> that are past their target date` |
+| Spot missing card fields | `List active user stories in the current sprint for <Contoso> that are missing priority or effort values` |
+| Audit tag consistency | `Show all distinct tags used on work items in area path <Contoso\\Frontend> sorted by usage count` |
+| Highlight overdue items | `List work items in <Contoso> where the target date is in the past and the state is not Closed or Removed` |
+| Review card annotations | `For each active user story in the current sprint for <Contoso>, show the count of child tasks, linked bugs, and linked tests` |
+| Identify untagged items | `List active work items in the current sprint for <Contoso> that have no tags assigned` |
+| Bulk tag update | `Add tag 'Q2-release' to all user stories under feature <1500> in <Contoso>` |
+
+> [!NOTE]
+> Agent mode and the MCP Server use natural language, so you can adjust these prompts or ask follow-up questions to refine the results.
 
 ## Related content
 

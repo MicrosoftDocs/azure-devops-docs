@@ -6,29 +6,35 @@ ms.subservice: azure-devops-security
 ms.topic: how-to
 ms.author: chcomley
 author: chcomley
-ms.date: 10/22/2024
+ms.date: 03/03/2026
+ai-usage: ai-assisted
 monikerRange: '<= azure-devops'
+ms.custom: pat-reduction, copilot-scenario-highlight
 ---
 
-# Revoke organization user's personal access tokens (for admins)
+# Revoke personal access tokens for organization users (for admins)
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
-If a Personal Access Token (PAT) is compromised, it's crucial to act swiftly. Administrators can revoke a user's PAT to safeguard the organization. Disabling a user's account also revokes their PAT. 
+If a personal access token (PAT) is compromised, act swiftly.
+Administrators can revoke a user's PAT to safeguard the organization.
+Disabling a user's account also revokes their PAT.
 
 > [!TIP]
-> Create or revoke your own PAT on your [Personal access token page](use-personal-access-tokens-to-authenticate.md#revoke-a-pat).
+> To create or revoke your own PAT, go to your [Personal access token page](use-personal-access-tokens-to-authenticate.md#revoke-a-pat).
 
 [!INCLUDE [use-microsoft-entra-reduce-pats](../../includes/use-microsoft-entra-reduce-pats.md)]
 
 ## Why revoke user PATs?
 
 Revoking user PATs is essential for the following reasons:
-- **Compromised token**: Prevent unauthorized access if a token is compromised.
-- **User leaves the organization**: Ensure former employees no longer have access.
-- **Permission changes**: Invalidate tokens reflecting old permissions.
-- **Security breach**: Mitigate unauthorized access during a breach.
-- **Regular security practices**: Regularly revoke and reissue tokens as part of a security policy.
+- **Compromised token** - Prevent unauthorized access if a token is compromised.
+- **User leaves the organization** - Ensure former employees no longer have access.
+- **Permission changes** - Invalidate tokens that reflect old permissions.
+- **Security breach** - Mitigate unauthorized access during a breach.
+- **Regular security practices** - Regularly revoke and reissue tokens as part of a security policy.
+
+[!INCLUDE [ai-assistance-mcp-server-tip](../../includes/ai-assistance-mcp-server-tip.md)]
 
 ## Prerequisites
 
@@ -37,30 +43,43 @@ Revoking user PATs is essential for the following reasons:
 ## Revoke PATs
 
 1. To revoke OAuth authorizations, including PATs, for your organization's users, see [Token revocations - Revoke authorizations](/rest/api/azure/devops/tokenadministration/token%20revocations/revoke%20authorizations?view=azure-devops-rest-5.0&preserve-view=true).
-2. To automate calling the REST API, use this [PowerShell script](https://github.com/Microsoft/vsts-script-samples/tree/master/PowerShell/TokenAdmin), which passes a list of user principal names (UPNs). If you don't know the UPN of the user who created the PAT, use this script with a specified date range.
+2. To automate calling the REST API, use this [PowerShell script](https://github.com/Microsoft/vsts-script-samples/tree/master/PowerShell/TokenAdmin), which passes a list of user principal names (UPNs).
+   If you don't know the UPN of the user who created the PAT, use this script with a specified date range.
 
 > [!NOTE]
-> When you use a date range any JSON web tokens (JWTs) are also revoked. Any tooling that relies on these tokens doesn't work until refreshed with new tokens.
+> When you use a date range, any JSON web tokens (JWTs) are also revoked.
+> Any tooling that relies on these tokens doesn't work until refreshed with new tokens.
 
-3. After you successfully revoke the affected PATs, inform your users. They can recreate their tokens as necessary.
+3. After you successfully revoke the affected PATs, inform your users.
+   They can recreate their tokens as necessary.
 
-There might be a delay of up to one hour before the PAT becomes inactive, as this latency period persists until the disable or delete operation is fully processed in Microsoft Entra ID.
+There might be a delay of up to one hour before the PAT becomes inactive.
+This latency period persists until the disable or delete operation is fully processed in Microsoft Entra ID.
 
 <a id="token-expiration"></a>
 
 ## FedAuth token expiration
 
-A FedAuth token gets issued when you sign in. It's valid for a seven-day sliding window. The expiry automatically extends another seven days whenever you refresh it within the sliding window. If users access the service regularly, only an initial sign-in is needed. After a period of inactivity extending seven days, the token becomes invalid and the user must sign in again.
+A FedAuth token gets issued when you sign in.
+It's valid for a seven-day sliding window.
+The expiry automatically extends another seven days whenever you refresh it within the sliding window.
+If users access the service regularly, only an initial sign-in is needed.
+After a period of inactivity extending seven days, the token becomes invalid and the user must sign in again.
 
 ## PAT expiration
 
-Users can choose an expiry date for their PAT, not to exceed one year. We recommend using shorter time periods and generating new PATs upon expiry. Users receive a notification email one week before the token expires. Users can generate a new token, extend the expiry of the existing token, or change the scope of the existing token if needed.
+Users can choose an expiry date for their PAT, not to exceed one year.
+Use shorter time periods and generate new PATs upon expiry.
+Users receive a notification email one week before the token expires.
+Users can generate a new token, extend the expiry of the existing token, or change the scope of the existing token if needed.
 
 :::moniker range="azure-devops"
 
 ## Auditing logs
 
-If your organization is connected to Microsoft Entra ID, you have access to audit logs that track various events, including permissions changes, deleted resources, and log access. These audit logs are valuable for checking revocations or investigating any activity. For more information, see [Access, export, and filter audit logs](../audit/azure-devops-auditing.md).
+If your organization is connected to Microsoft Entra ID, you have access to audit logs that track various events, including permissions changes, deleted resources, and log access.
+These audit logs are valuable for checking revocations or investigating any activity.
+For more information, see [Access, export, and filter audit logs](../audit/azure-devops-auditing.md).
 
 :::moniker-end
 
@@ -68,11 +87,34 @@ If your organization is connected to Microsoft Entra ID, you have access to audi
 
 ### Q: What happens to a PAT if a user leaves my company?
 
-A: Once a user gets removed from Microsoft Entra ID, the PATs and FedAuth tokens invalidate within an hour, since the refresh token is valid only for one hour.
+A: After a user is removed from Microsoft Entra ID, the PATs and FedAuth tokens invalidate within an hour, since the refresh token is valid only for one hour.
 
 ### Q: Should I revoke JSON web tokens (JWTs)?
 
-A: If you have JWTs that you believe should be revoked, we recommend doing so promptly. Revoke JWTs issued as part of the OAuth flow using the [PowerShell script](https://github.com/Microsoft/vsts-script-samples/tree/master/PowerShell/TokenAdmin). Be sure to use the date range option in the script.
+A: If you have JWTs that you believe should be revoked, revoke them promptly.
+Revoke JWTs issued as part of the OAuth flow using the [PowerShell script](https://github.com/Microsoft/vsts-script-samples/tree/master/PowerShell/TokenAdmin).
+Be sure to use the date range option in the script.
+
+<a id="use-ai-assistance"></a>
+
+## Use AI to manage personal access tokens
+
+If you have the [Azure DevOps MCP Server](../../mcp-server/mcp-server-overview.md) configured, you can use AI assistants to review and manage personal access tokens for your organization's users using natural language prompts. The MCP Server provides your AI assistant with secure access to your Azure DevOps data, allowing you to audit tokens, check user access, and review security settings without navigating through the web interface.
+
+### Example prompts for PAT management
+
+| Task | Example prompt |
+|------|----------------|
+| Respond to a security incident | `Immediately list all active PATs for <user-email> in <organization-name> and show their scopes and last used dates` |
+| Clean up after employee departure | `Find all PATs and active sessions for <user-email> in <organization-name> that should be revoked` |
+| Find overly broad tokens | `List all full-scoped PATs in <organization-name> that have been active in the last 90 days and who owns them` |
+| Audit tokens about to expire | `Show PATs expiring within the next 7 days in <organization-name> and notify me which ones have Code Write or Build Execute scopes` |
+| Check for stale tokens | `Find PATs in <organization-name> that were created more than a year ago and haven't been used in the last 60 days` |
+| Review admin-scoped tokens | `List all PATs in <organization-name> that have Full access or manage scopes, grouped by user` |
+
+> [!TIP]
+> If you're using Visual Studio Code, [agent mode](/visualstudio/ide/copilot-chat-context#agent-mode) is especially helpful for auditing PAT usage and reviewing security policies across your organization.
+> - To avoid using stale or cached data from previous queries, add to your prompt, `Do not use previously fetched data`.
 
 ## Related content
 

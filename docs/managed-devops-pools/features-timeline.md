@@ -1,7 +1,7 @@
 ---
 title: Features timeline and roadmap
 description: Learn about new features in Managed DevOps Pools.
-ms.date: 01/14/2026
+ms.date: 04/02/2026
 ms.topic: overview
 #Customer intent: As a platform engineer, I want to understand the new features in Managed DevOps Pools.
 ---
@@ -12,15 +12,21 @@ ms.topic: overview
 
 The following section describes new features in development for Managed DevOps Pools.
 
-* **Purge agents**: We're adding the ability for you to manually recycle your agents if desired. **Planned for early 2026.**
+* **Purge agents**: We're adding the ability for you to manually recycle your agents if desired. **Planned for June 2026.**
 
-* **Pool Alias**: We're adding the ability to add an Azure DevOps Pool name in addition to the Azure resource name to address [this ask from our community](https://developercommunity.visualstudio.com/t/Managed-Devops-Pools-Custom-agent-pool/10834336). **Planned for early 2026.**
+* **Pool Alias**: We're adding the ability to add an Azure DevOps Pool name in addition to the Azure resource name to address [this ask from our community](https://developercommunity.visualstudio.com/t/Managed-Devops-Pools-Custom-agent-pool/10834336). **Planned for June 2026.**
 
-* **Spot Virtual Machines instances**: Reduce your Azure cost [by up to 90%](/azure/architecture/guide/spot/spot-eviction#understand-spot-vm-pricing) by switching your non-time-critical pipelines to Spot Virtual Machines. CI/CD workloads make ideal candidates to use Spot Virtual Machines due to the ephemeral nature of CI/CD agents. For more information on Spot Virtual Machines, see [Spot Virtual Machines overview](https://azure.microsoft.com/products/virtual-machines/spot). **Planned for early 2026.**
+* **Spot Virtual Machines instances**: Reduce your Azure cost [by up to 90%](/azure/architecture/guide/spot/spot-eviction#understand-spot-vm-pricing) by switching your non-time-critical pipelines to Spot Virtual Machines. CI/CD workloads make ideal candidates to use Spot Virtual Machines due to the ephemeral nature of CI/CD agents. For more information on Spot Virtual Machines, see [Spot Virtual Machines overview](https://azure.microsoft.com/products/virtual-machines/spot). **Planned for June 2026.**
 
-* **Container agents**: We're adding support for provisioning a container and starting the agent inside the container. **Planned for early 2026.**
+* **Custom Startup Script**: We are adding the option to run a PowerShell script (Windows) or a shell script (Linux) for every image in a pool before they are assigned to an agent, to enable scenarios such as installing Trusted root CAs and setting environment variables. **Planned for June 2026**.
 
-* **Custom Startup Script**: We are adding the option to run a PowerShell script (Windows) or a shell script (Linux) for every image in a pool before they are assigned to an agent, to enable scenarios such as installing Trusted root CAs, setting environment, etc. **Planned for early 2026**.
+* **Container agents**: We're adding support for provisioning a container and starting the agent inside the container. **Planned for late 2026.**
+
+## April 2026
+
+* **Azure Pipelines Generation 2 images**: Managed DevOps Pools now offers Generation 2 versions of Azure Pipeline images. Generation 2 VMs use the UEFI-based boot architecture rather than the BIOS-based architecture used by Generation 1 VMs. For more information about Generation 2 VM capabilities and support details, see [Support for Generation 2 VMs on Azure](/azure/virtual-machines/generation-2).
+
+   The original Generation 1 Azure Pipelines images are no longer receiving updates, and the Managed DevOps Pools team recommends that you migrate your pools that use the original Generation 1 Azure Pipelines images to the Generation 2 versions. For more information, see [Azure Pipelines Generation 2 images](./configure-images.md#azure-pipelines-generation-2-images).
 
 ## January 2026
 

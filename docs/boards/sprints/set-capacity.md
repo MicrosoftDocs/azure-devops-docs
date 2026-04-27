@@ -3,13 +3,13 @@ title: Set the team sprint capacity in Azure Boards
 titleSuffix: Azure Boards 
 description: In this tutorial, determine team capacity, adjust work to fit team capacity, and set capacity for a sprint in Azure Boards.
 ms.service: azure-devops-boards
-ms.custom: boards-sprints
+ms.custom: boards-sprints, copilot-scenario-highlight
 ms.assetid: 
 ms.author: chcomley
 author: chcomley
 ms.topic: tutorial
 monikerRange: '<= azure-devops'
-ms.date: 01/07/2026
+ms.date: 02/28/2026
 #customer intent: As a team member, I want to understand how to set capacity for a sprint and how to use capacity to track progress durning a sprint.
 ---
 
@@ -24,6 +24,8 @@ ms.date: 01/07/2026
 While velocity correlates to how your team estimates requirements, *capacity* correlates to actual task time. Time is calculated in either hours or days. Capacity takes into consideration the variation in work hours by team members, as well as holidays, vacation days, and nonworking days.
 
 Because days off and time available for each team member might vary from sprint to sprint, set capacity for each sprint. The capacity tool helps you make sure your team isn't overcommitted or undercommitted for the sprint. As you work day-to-day, you see if your team is on track.
+
+[!INCLUDE [ai-assistance-mcp-server-tip](../../includes/ai-assistance-mcp-server-tip.md)]
 
 In this article, learn how to do the following tasks.
 
@@ -196,6 +198,28 @@ If your name isn't listed in the capacity view, you need to be added as a team m
 
 > [!div class="nextstepaction"]
 > [4. Adjust work](adjust-work.md)
+
+<a id="use-ai-assistance"></a>
+
+## Use AI to manage sprint capacity
+
+If you have the [Azure Boards MCP Server](../../mcp-server/mcp-server-overview.md) connected to your AI agent in agent mode, you can use natural language prompts to review capacity and workload for your sprint.
+
+| Task | Example prompt |
+|------|----------------|
+| Check capacity vs. work | `Show the total remaining work vs. capacity for Sprint 12 on <Contoso Team>` |
+| Find overloaded members | `List team members whose assigned remaining work exceeds their capacity in the current sprint` |
+| Find unassigned tasks | `List all tasks in the current sprint that have no assignee for <Contoso Team>` |
+| Review work distribution | `Show remaining work grouped by team member for the current sprint in <Contoso Team>` |
+| Account for days off | `<Jamal> has 3 days off next week. What is his effective capacity for Sprint 12 if his daily rate is 6 hours?` |
+| Identify underutilized members | `Which team members on <Contoso Team> have less than 50% of their Sprint 12 capacity allocated to tasks?` |
+| Plan capacity for activity types | `Show remaining work by activity type (Development, Testing, Design) for each team member in the current sprint` |
+| Capacity trend across sprints | `Compare capacity utilization for <Contoso Team> across the last 4 sprints — show assigned work as a percentage of capacity` |
+| Flag capacity mismatches | `Find tasks in Sprint 12 assigned to people who aren't members of <Contoso Team>` |
+| Simulate adding a member | `If we add a developer with 6 hours/day capacity to <Contoso Team> for Sprint 13, how would the workload distribution change?` |
+
+> [!NOTE]
+> Agent mode and the MCP Server use natural language, so you can adjust these prompts or ask follow-up questions to refine the results.
 
 ## Related content
 

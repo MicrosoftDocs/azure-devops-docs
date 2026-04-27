@@ -8,7 +8,7 @@ ms.topic: include
 
 ### Secret asset metadata generally available via API
 
-This feature adds richer context and classification to detected secrets, helping teams more quickly understand risk and prioritize remediation. Additional metadata is available via the [Alerts API](/azure/devops/advancedsecurity/alerts/get), with upcoming UI enhancements planned to surface this information directly in the product experience.
+This feature adds richer context and classification to detected secrets, helping teams more quickly understand risk and prioritize remediation. Additional metadata is available via the [Alerts API](/rest/api/azure/devops/advancedsecurity/alerts/get), with upcoming UI enhancements planned to surface this information directly in the product experience.
 
 ### Code scanning now supports Rust
 
@@ -17,4 +17,4 @@ For more details, see the [Rust is now generally available blog](https://github.
 
 ### Expanded CodeQL buildless scanning for C/C++
 
-CodeQL now supports buildless scanning (`buildtype: none`) for C/C++ projects, allowing teams to analyze code without requiring a full build. This is available with CodeQL version 2.21.4+ (when managing your own CodeQL toolchain) or Advanced Security task version 1.1.137+. Buildless scanning reduces setup complexity and shortens scan times while maintaining analysis coverage. For setup details, see [Configure code scanning](/azure/devops/repos/security/github-advanced-security-code-scanning?view=azure-devops#code-scanning-build-mode-customization).
+CodeQL now supports buildless scanning (`buildtype: none`) for C/C++ projects, allowing teams to analyze code without requiring a full build. This is available with CodeQL version 2.21.4+ (when managing your own CodeQL toolchain) or Advanced Security task version 1.1.137+. Buildless scanning reduces setup complexity and shortens scan times while maintaining analysis coverage. For setup details, see [Configure code scanning](/azure/devops/repos/security/github-advanced-security-code-scanning?view=azure-devops#code-scanning-build-mode-customization&preserve-view=true).

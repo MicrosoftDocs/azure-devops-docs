@@ -6,7 +6,7 @@ ms.assetid: A40435C0-2053-4D99-9A75-CCB97FBB15D2
 ms.topic: concept-article
 ms.author: ronai
 author: RoopeshNair
-ms.date: 11/03/2025
+ms.date: 04/22/2026
 monikerRange: '<= azure-devops'
 ---
 
@@ -150,6 +150,7 @@ Azure Pipelines supports the following service connection types by default. You 
 | Service connection type | Description |
 |-------------------------|-------------|
 | [Azure Classic](#azure-classic-service-connection) | Connect to your Azure subscription via credentials or certificate. |
+| [Azure DevOps](add-devops-entra-service-connection.md) | Connect to Azure DevOps resources using Microsoft Entra workload identity federation. |
 | [Azure Repos/Team Foundation Server](#azure-repos) | Connect to Azure Repos in your DevOps organization or collection.|
 | [Azure Resource Manager](#azure-resource-manager-service-connection) | Connect to Azure resources. |
 | [Azure Service Bus](#azure-service-bus-service-connection) | Connect to an Azure Service Bus queue. |
@@ -198,6 +199,9 @@ For certificate authentication, select **Verify** to validate your connection in
 If your subscription is defined in an [Azure Government Cloud](/azure/azure-government/connect-with-azure-pipelines), ensure your application meets the relevant compliance requirements before you configure a service connection.
 
 ### Azure Repos
+
+> [!TIP]
+> For PAT-free authentication to Azure DevOps resources from pipelines, use the [Azure DevOps service connection](add-devops-entra-service-connection.md), which uses Microsoft Entra workload identity federation.
 
 Connect to an Azure DevOps organization or project collection using basic or token-based authentication.
 Use the following parameters to define and secure a connection to another Azure DevOps organization.
@@ -781,6 +785,11 @@ Other service connection types and tasks can be installed as extensions. See the
 You can also create your own [custom service connections](../../extend/develop/service-endpoints.md).
 
 ## FAQs and Troubleshoot service connections
+
+For detailed troubleshooting guidance, see the following articles:
+
+- [Troubleshoot Azure Resource Manager service connections](../release/azure-rm-endpoint.md)
+- [Troubleshoot workload identity service connections](../release/troubleshoot-workload-identity.md)
 
 ### Q: How does Azure DevOps ensure efficient usage of Entra ID resources?
 Azure DevOps may internally cache Entra ID access tokens issued for target identities in service connections that use Entra ID authentication, such as [Azure Resource Manager](#azure-resource-manager-service-connection) and [Docker Registry](#docker-registry-service-connection). This helps prevent Entra ID throttling, which can occur due to a high number of server task executions and other actions that require Azure DevOps to authenticate with Entra ID to serve the request. Caching applies only to internal flows where the token is never exposed to the user. If you receive an Entra ID token - for example in your pipeline script - it will always be freshly issued. Modifying the service connection invalidates its token cache and temporarily disables caching for this service endpoint. If you're experiencing any issue due to the staleness of the token following changes made in Entra ID, wait for an hour or try updating the corresponding service endpoint.

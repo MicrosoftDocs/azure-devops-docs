@@ -2,14 +2,14 @@
 title: Manage work items effectively
 titleSuffix: Azure Boards 
 description: Optimize work item management in Azure Boards. Learn to create, update, link, track, and organize work items with best practices for team collaboration.
-ms.custom: devx-track-azurecli
+ms.custom: devx-track-azurecli, copilot-scenario-highlight
 ms.service: azure-devops-boards
 ms.assetid: 9474A25E-A9D8-433D-8370-C94624B4ACD6  
 ai-usage: ai-assisted
 ms.author: chcomley
 monikerRange: '<= azure-devops'
 ms.topic: concept-article
-ms.date: 01/13/2026
+ms.date: 02/28/2026
 ---
 
 # Manage work items effectively
@@ -25,6 +25,8 @@ Work items are the foundation of project management in Azure Boards, enabling te
 - **Maintain visibility** across project stakeholders and management
 
 This comprehensive guide covers essential work item management capabilities in Azure DevOps.
+
+[!INCLUDE [ai-assistance-mcp-server-tip](../../includes/ai-assistance-mcp-server-tip.md)]
 
 
 [!INCLUDE [temp](../includes/prerequisites-work-items.md)] 
@@ -290,6 +292,28 @@ Implement proven practices to maximize the effectiveness of work item management
 > [!div class="nextstepaction"]
 > [Create your backlog](create-your-backlog.md) or 
 > [Kanban board quickstart](../boards/kanban-quickstart.md) 
+
+<a id="use-ai-assistance"></a>
+
+## Use AI to manage work items
+
+If you have the [Azure Boards MCP Server](../../mcp-server/mcp-server-overview.md) connected to your AI agent in agent mode, you can use natural language prompts to create, update, and track work items.
+
+| Task | Example prompt |
+|------|----------------|
+| Create a work item | `Create a user story titled 'Add search functionality' with priority 2 and assign it to <Jamal>` |
+| Update work item fields | `Update the state of bug #456 to Resolved and set the reason to 'Fixed'` |
+| Query work items | `Show me all active work items assigned to <me> in the current sprint` |
+| Add links and comments | `Add a comment to work item #789 with the status update 'API integration complete, pending review'` |
+| Summarize a work item | `Get work item <1234> and summarize the description, acceptance criteria, and current discussion` |
+| Clone work item structure | `Create a new user story in <Contoso> with the same title, description, and acceptance criteria as work item <1234> but assign it to <Raisa>` |
+| Track recent updates | `Show work items in <Contoso> that I updated today with their current states` |
+| Check field completeness | `List active user stories in the current sprint for <Contoso> that are missing acceptance criteria or a description` |
+| Get work item history | `Show me the revision history of work item <1234> including who made each change` |
+| Compare work items | `Show work items <1234> and <5678> side by side and highlight the differences in their fields` |
+
+> [!NOTE]
+> Agent mode and the MCP Server use natural language, so you can adjust these prompts or ask follow-up questions to refine the results.
 
 ## Related content
 

@@ -2,7 +2,8 @@
 title: Check out multiple repositories in your pipeline
 description: Learn how to check out multiple repositories in your pipeline
 ms.topic: reference
-ms.date: 01/25/2023
+ms.custom: doc-kit-assisted
+ms.date: 04/22/2026
 monikerRange: "<=azure-devops"
 ---
 
@@ -10,7 +11,7 @@ monikerRange: "<=azure-devops"
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
-Pipelines often rely on multiple repositories that contain source, tools, scripts, or other items that you need to build your code. By using multiple `checkout` steps in your pipeline, you can fetch and check out other repositories in addition to the one you use to store your YAML pipeline.
+Pipelines often rely on multiple repositories that contain source code, tools, scripts, or other items you need to build your code. By using multiple `checkout` steps in your pipeline, you can fetch and check out other repositories in addition to the one you use to store your YAML pipeline.
 
 ## Specify multiple repositories
 
@@ -125,11 +126,11 @@ You must use a [repository resource](/azure/devops/pipelines/yaml-schema/resourc
 | Bitbucket Cloud | [Bitbucket Cloud](../library/service-endpoints.md#bitbucket-cloud-service-connection) | 
 | GitHub          | [GitHub](../library/service-endpoints.md#github-service-connection) |
 | GitHub Enterprise Server | [GitHub Enterprise Server](../library/service-endpoints.md#github-enterprise-server-service-connection) |
-| Azure Repos Git repositories in a different organization than your pipeline | [Azure Repos/Team Foundation Server](../library/service-endpoints.md#azure-repos) |
+| Azure Repos Git repositories in a different organization | [Azure DevOps](../library/add-devops-entra-service-connection.md) (recommended) or [Azure Repos/Team Foundation Server](../library/service-endpoints.md#azure-repos) |
 
 You may use a repository resource even if your repository type doesn't require a service connection, for example if you have a repository resource defined already for templates in a different repository.
 
-In the following example, three repositories are declared as repository resources. The [Azure Repos Git repository in another organization](../library/service-endpoints.md#azure-repos), [GitHub](../library/service-endpoints.md#github-service-connection), and [Bitbucket Cloud](../library/service-endpoints.md#bitbucket-cloud-service-connection) repository resources require [service connections](../library/service-endpoints.md), which are specified as the `endpoint` for those repository resources. This example has four `checkout` steps, which checks out the three repositories declared as repository resources along with the current `self` repository that contains the pipeline YAML.
+In the following example, three repositories are declared as repository resources. The [Azure Repos Git repository in another organization](../library/service-endpoints.md#azure-repos), [GitHub](../library/service-endpoints.md#github-service-connection), and [Bitbucket Cloud](../library/service-endpoints.md#bitbucket-cloud-service-connection) repository resources require [service connections](../library/service-endpoints.md), which are specified as the `endpoint` for those repository resources. For cross-organization Azure Repos Git access, use an [Azure DevOps service connection](../library/add-devops-entra-service-connection.md) for PAT-free authentication. This example has four `checkout` steps, which checks out the three repositories declared as repository resources along with the current `self` repository that contains the pipeline YAML.
 
 ```yaml
 resources:
@@ -186,14 +187,14 @@ steps:
 
 Unless a `path` is specified in the `checkout` step, source code is placed in a default directory. This directory is different depending on whether you are checking out a single repository or multiple repositories. 
 
-- **Single repository**: If you have a single `checkout` step in your job, or you have no checkout step which is equivalent to `checkout: self`, your source code is checked out into a directory called `s` located as a subfolder of `(Agent.BuildDirectory)`. If `(Agent.BuildDirectory)` is `C:\agent\_work\1`, your code is checked out to `C:\agent\_work\1\s`.
-- **Multiple repositories**: If you have multiple `checkout` steps in your job, your source code is checked out into directories named after the repositories as a subfolder of `s` in `(Agent.BuildDirectory)`. If `(Agent.BuildDirectory)` is `C:\agent\_work\1` and your repositories are named `tools` and `code`, your code is checked out to `C:\agent\_work\1\s\tools` and `C:\agent\_work\1\s\code`.
+- **Single repository**: If you have a single `checkout` step in your job, or you have no checkout step which is equivalent to `checkout: self`, your source code is checked out into a directory called `s` located as a subfolder of `$(Agent.BuildDirectory)`. If `$(Agent.BuildDirectory)` is `C:\agent\_work\1`, your code is checked out to `C:\agent\_work\1\s`.
+- **Multiple repositories**: If you have multiple `checkout` steps in your job, your source code is checked out into directories named after the repositories as a subfolder of `s` in `$(Agent.BuildDirectory)`. If `$(Agent.BuildDirectory)` is `C:\agent\_work\1` and your repositories are named `tools` and `code`, your code is checked out to `C:\agent\_work\1\s\tools` and `C:\agent\_work\1\s\code`.
   
   > [!NOTE]
   > If no `path` is specified in the `checkout` step, the name of the repository is used for the folder,
   > not the `repository` value which is used to reference the repository in the `checkout` step.
 
-If a `path` is specified for a `checkout` step, that path is used, relative to `(Agent.BuildDirectory)`.
+If a `path` is specified for a `checkout` step, that path is used, relative to `$(Agent.BuildDirectory)`.
 
 > [!NOTE]
 > If you are using default paths, adding a second repository `checkout` step changes the default path of the code for the first repository. For example, the code for a repository named `tools` would be checked out to `C:\agent\_work\1\s` when `tools` is the only repository, but if a second repository is added, `tools` would then be checked out to `C:\agent\_work\1\s\tools`. If you have any steps that depend on the source code being in the original location, those steps must be updated.
@@ -224,6 +225,46 @@ If you are using inline syntax, designate the ref by appending `@<ref>`. For exa
 - checkout: git://MyProject/MyRepo@features/tools # checks out the features/tools branch
 - checkout: git://MyProject/MyRepo@refs/heads/features/tools # also checks out the features/tools branch
 - checkout: git://MyProject/MyRepo@refs/tags/MyTag # checks out the commit referenced by MyTag.
+```
+    
+> [!IMPORTANT]
+> The `checkout` value, including the inline `@<ref>` portion, resolves at compile time as a resource reference. **Macro syntax variables (`$(var)`) aren't expanded** in the `checkout` value. For example, `checkout: git://MyProject/MyRepo@$(branch)` doesn't resolve the variable — the pipeline tries to check out a ref literally named `$(branch)`, which typically fails with a "ref not found" error.
+>
+> To parameterize the branch, use [template expressions](../process/template-expressions.md) (`${{ }}`) with [runtime parameters](../process/runtime-parameters.md), as shown in the following examples. `${{ variables.myVar }}` only works for variables defined as literal values in YAML (known at compile time), not for queue-time or dynamically set variables.
+
+### Parameterize branch with inline syntax
+
+Define a [runtime parameter](../process/runtime-parameters.md) and reference it with a template expression in the inline checkout value:
+
+```yaml
+parameters:
+  - name: branch
+    type: string
+    default: 'main'
+
+steps:
+  - checkout: git://MyProject/MyRepo@${{ parameters.branch }}
+```
+
+### Parameterize branch with a repository resource
+
+Use the `ref` property on a [repository resource](../process/resources.md#define-a-repositories-resource) to set the branch from a parameter:
+
+```yaml
+parameters:
+  - name: branch
+    type: string
+    default: 'main'
+
+resources:
+  repositories:
+    - repository: MyRepo
+      type: git
+      name: MyProject/MyRepo
+      ref: ${{ parameters.branch }}
+
+steps:
+  - checkout: MyRepo
 ```
 
 When using a repository resource, specify the ref using the `ref` property. The following example checks out the `features/tools/` branch of the designated repository.
@@ -266,9 +307,9 @@ You can trigger a pipeline when an update is pushed to the `self` repository or 
 - You keep your YAML file in a separate repository from the application code. You want to trigger the pipeline every time an update is pushed to the application repository.
 
 > [!IMPORTANT]
-> Repository resource triggers only work for Azure Repos Git repositories in the same organization and when the `self` repository type is Azure Repos Git. They do not work for GitHub or Bitbucket repository resources.
+> Repository resource triggers only work for Azure Repos Git repositories in the same organization and when the `self` repository type is Azure Repos Git. They don't work for GitHub or Bitbucket repository resources.
 >
-> `batch` is not supported in repository resource triggers.
+> `batch` isn't supported in repository resource triggers.
 
 If you do not specify a `trigger` section in a repository resource, then the pipeline won't be triggered by changes to that repository. If you specify a `trigger` section, then the behavior for triggering is similar to how CI triggers work for the self repository.
 

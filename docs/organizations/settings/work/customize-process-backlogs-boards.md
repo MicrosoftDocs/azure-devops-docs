@@ -51,17 +51,17 @@ If you want to track Issues or Impediments or other inherited work item types (W
 
 ::: moniker range="<=azure-devops"
 
-| **Process** | **Work item types** |
+| Process | Work item types |
 | ----------- | ------------------- |
 | Agile       | Issue               |
 | Scrum       | Impediment          |
 | CMMI        | Change request, issue, review, risk |
 
-Each **Edit backlog level** dialog automatically includes inherited and custom work item types that aren't assigned to other backlog levels. For example, unassigned Agile work item types are listed under the **Other work item types**.
+Each Edit backlog level dialog automatically includes inherited and custom work item types that aren't assigned to other backlog levels. For example, unassigned Agile work item types are listed under the Other work item types.
 
 :::image type="content" source="media/backlogs/other-work-item-types-agile.png" alt-text="Screenshot showing Web portal, Process, Backlog levels, Other work item types section, Agile process.":::
 
-These same WITs, along with any custom work item types, appear in the **Edit backlog level** dialog of all backlog levels, until they get assigned to a particular backlog level.
+These same WITs, along with any custom work item types, appear in the Edit backlog level dialog of all backlog levels, until they get assigned to a particular backlog level.
 
 :::image type="content" source="media/backlogs/edit-backlog-level-requirements-agile.png" alt-text="Screenshot of Web portal, Process, Backlog levels, Edit backlog level dialog.":::
 
@@ -76,9 +76,9 @@ When you add a WIT to a backlog level, certain fields are automatically added to
 
 | Backlog level | Fields added | Description |
 |---------------|--------------|-------------|
-| Portfolio backlog |- **Stack Rank** (Agile, CMMI)<br>- **Backlog Priority** (Scrum) | The Stack Rank and Backlog Priority fields capture the relative priority of work items as they get reordered on a backlog or board. For more information, see [Behind the scenes: the Backlog Priority or Stack Rank field](https://blogs.msdn.microsoft.com/devops/2014/05/14/behind-the-scenes-the-backlog-priority-or-stack-rank-field/).   |
-| Requirement backlog |- **Stack Rank**, **Story Points** (Agile)<br>- **Stack Rank**, **Size** (CMMI)<br>- **Backlog Priority**, **Effort** (Scrum) |The Story Points, Size, and Effort fields capture the relative work required to complete a WIT assigned to the Requirement backlog. This value is used to compute [velocity](../../../report/dashboards/team-velocity.md).|
-| Iteration backlog |- **Activity**, **Remaining Work**, **Stack Rank** (Agile)<br>- **Discipline**, **Remaining Work**, **Stack Rank** (CMMI)<br>- **Activity**, **Remaining Work**, **Backlog Priority** (Scrum) |Remaining Work is used in [Sprint burndown and capacity charts](../../../boards/sprints/define-sprints.md).|
+| Portfolio backlog |- Stack Rank (Agile, CMMI)<br>- Backlog Priority (Scrum) | The Stack Rank and Backlog Priority fields capture the relative priority of work items as they get reordered on a backlog or board. For more information, see [Behind the scenes: the Backlog Priority or Stack Rank field](https://blogs.msdn.microsoft.com/devops/2014/05/14/behind-the-scenes-the-backlog-priority-or-stack-rank-field/).   |
+| Requirement backlog |- Stack Rank, Story Points (Agile)<br>- Stack Rank, Size (CMMI)<br>- Backlog Priority, Effort (Scrum) |The Story Points, Size, and Effort fields capture the relative work required to complete a WIT assigned to the Requirement backlog. This value is used to compute [velocity](../../../report/dashboards/team-velocity.md).|
+| Iteration backlog |- Activity, Remaining Work, Stack Rank (Agile)<br>- Discipline, Remaining Work, Stack Rank (CMMI)<br>- Activity, Remaining Work, Backlog Priority (Scrum) |Remaining Work is used in [Sprint burndown and capacity charts](../../../boards/sprints/define-sprints.md).|
 
 ## Prerequisites
 

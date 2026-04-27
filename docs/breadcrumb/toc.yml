@@ -21,3 +21,6 @@
     - name: Azure Test Plans
       tocHref: /azure/devops/test/
       topicHref: /azure/devops/test/index
+    - name: Troubleshoot
+      tocHref: /azure/devops/troubleshoot/
+      topicHref: /azure/devops/troubleshoot/index

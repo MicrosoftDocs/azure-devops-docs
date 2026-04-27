@@ -8,7 +8,7 @@ ms.topic: include
 
 ### Work item linking for Advanced Security alerts generally available 
 
-Advanced Security customers can now link work items directly to Advanced Security alerts from your security alerts or from your work items. For more information, see [Link work items to Advanced Security alerts](/azure/devops/boards/backlogs/add-link?view=azure-devops&tabs=browser#link-work-items-to-advanced-security-alerts).
+Advanced Security customers can now link work items directly to Advanced Security alerts from your security alerts or from your work items. For more information, see [Link work items to Advanced Security alerts](/azure/devops/boards/backlogs/add-link?view=azure-devops&tabs=browser#link-work-items-to-advanced-security-alerts&preserve-view=true).
 
 This integration eliminates manual tracking steps, keeping your security and project management tools synchronized.
 
