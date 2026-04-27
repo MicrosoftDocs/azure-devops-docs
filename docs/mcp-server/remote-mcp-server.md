@@ -207,29 +207,29 @@ Core tools are always available.
 
 The repository tools are consolidated into grouped dispatchers using an `action` parameter, following the same pattern as the wiki tools. The previous individual tool names continue to work as aliases. Use `repo_create_branch` and `repo_search_commits` directly — they were not consolidated.
 
-| Tool | Description | Read-only |
-|---|---|:---:|
-| `repo_pull_request` (`action: get`) | Get a pull request by ID | ✅ |
-| `repo_pull_request` (`action: list`) | List pull requests in a repository or project | ✅ |
-| `repo_pull_request` (`action: list_by_commits`) | Find pull requests that contain specific commit IDs | ✅ |
-| `repo_pull_request_thread` (`action: list`) | List comment threads on a pull request | ✅ |
-| `repo_pull_request_thread` (`action: list_comments`) | List comments in a specific thread | ✅ |
-| `repo_repository` (`action: get`) | Get a repository by name or ID | ✅ |
-| `repo_repository` (`action: list`) | List repositories in a project | ✅ |
-| `repo_branch` (`action: get`) | Get a branch by name | ✅ |
-| `repo_branch` (`action: list`) | List branches in a repository | ✅ |
-| `repo_branch` (`action: list_mine`) | List branches the current user has pushed to | ✅ |
-| `repo_file` (`action: get_content`) | Get the text content of a file at a specific branch, tag, or commit | ✅ |
-| `repo_file` (`action: list_directory`) | List files and folders in a directory, with optional recursive listing | ✅ |
-| `repo_search_commits` | Search commits with filtering by text, author, date range, and more | ✅ |
-| `repo_pull_request_write` (`action: create`) | Create a pull request | ❌ |
-| `repo_pull_request_write` (`action: update`) | Update a pull request, including setting autocomplete | ❌ |
-| `repo_pull_request_write` (`action: update_reviewers`) | Add or remove pull request reviewers | ❌ |
-| `repo_pull_request_write` (`action: vote`) | Cast a vote on a pull request | ❌ |
-| `repo_pull_request_thread_write` (`action: create`) | Create a new comment thread on a pull request | ❌ |
-| `repo_pull_request_thread_write` (`action: reply`) | Reply to a comment in a thread | ❌ |
-| `repo_pull_request_thread_write` (`action: update_status`) | Update the status of a comment thread | ❌ |
-| `repo_create_branch` | Create a branch | ❌ |
+| Tool | Action | Description | Read-only |
+|---|---|---|:---:|
+| `repo_pull_request` | `get` | Get a pull request by ID | ✅ |
+| `repo_pull_request` | `list` | List pull requests in a repository or project | ✅ |
+| `repo_pull_request` | `list_by_commits` | Find pull requests that contain specific commit IDs | ✅ |
+| `repo_pull_request_thread` | `list` | List comment threads on a pull request | ✅ |
+| `repo_pull_request_thread` | `list_comments` | List comments in a specific thread | ✅ |
+| `repo_repository` | `get` | Get a repository by name or ID | ✅ |
+| `repo_repository` | `list` | List repositories in a project | ✅ |
+| `repo_branch` | `get` | Get a branch by name | ✅ |
+| `repo_branch` | `list` | List branches in a repository | ✅ |
+| `repo_branch` | `list_mine` | List branches the current user has pushed to | ✅ |
+| `repo_file` | `get_content` | Get the text content of a file at a specific branch, tag, or commit | ✅ |
+| `repo_file` | `list_directory` | List files and folders in a directory, with optional recursive listing | ✅ |
+| `repo_search_commits` | `N/A` | Search commits with filtering by text, author, date range, and more | ✅ |
+| `repo_pull_request_write` | `create` | Create a pull request | ❌ |
+| `repo_pull_request_write` | `update` | Update a pull request, including setting autocomplete | ❌ |
+| `repo_pull_request_write` | `update_reviewers` | Add or remove pull request reviewers | ❌ |
+| `repo_pull_request_write` | `vote` | Cast a vote on a pull request | ❌ |
+| `repo_pull_request_thread_write` | `create` | Create a new comment thread on a pull request | ❌ |
+| `repo_pull_request_thread_write` | `reply` | Reply to a comment in a thread | ❌ |
+| `repo_pull_request_thread_write` | `update_status` | Update the status of a comment thread | ❌ |
+| `repo_create_branch` |  | Create a branch | ❌ |
 
 ### Wit
 
@@ -284,14 +284,14 @@ The repository tools are consolidated into grouped dispatchers using an `action`
 
 The wiki read operations are consolidated into a single `wiki` tool. Use the `action` parameter to select the operation.
 
-| Tool | Description | Read-only |
-|---|---|:---:|
-| `wiki` (`action: list_wikis`) | List wikis in a project or organization | ✅ |
-| `wiki` (`action: get_wiki`) | Get a wiki by identifier | ✅ |
-| `wiki` (`action: list_pages`) | List pages in a wiki | ✅ |
-| `wiki` (`action: get_page`) | Get page content and metadata | ✅ |
-| `search_wiki` | Full-text wiki search | ✅ |
-| `wiki_upsert_page` | Create or update a wiki page | ❌ |
+| Tool | Action | Description | Read-only |
+|---|---|---|:---:|
+| `wiki` | `list_wikis` | List wikis in a project or organization | ✅ |
+| `wiki` | `get_wiki` | Get a wiki by identifier | ✅ |
+| `wiki` | `list_pages` | List pages in a wiki | ✅ |
+| `wiki` | `get_page` | Get page content and metadata | ✅ |
+| `search_wiki` | `N/A` | Full-text wiki search | ✅ |
+| `wiki_upsert_page` | `N/A` | Create or update a wiki page | ❌ |
 
 ### Test plans
 
