@@ -205,31 +205,33 @@ Core tools are always available.
 
 ### Repos
 
+The repository tools are consolidated into grouped dispatchers using an `action` parameter, following the same pattern as the wiki tools. The previous individual tool names continue to work as aliases. Use `repo_create_branch` and `repo_search_commits` directly — they were not consolidated.
+
 | Tool | Description | Read-only |
 |---|---|:---:|
-| `repo_list_repos_by_project` | List repositories in a project | ✅ |
-| `repo_list_pull_requests_by_repo_or_project` | List pull requests | ✅ |
-| `repo_list_branches_by_repo` | List branches | ✅ |
-| `repo_list_my_branches_by_repo` | List branches created by the current user | ✅ |
-| `repo_list_pull_request_threads` | List pull request comment threads | ✅ |
-| `repo_list_pull_request_thread_comments` | List comments in a pull request thread | ✅ |
-| `repo_list_pull_requests_by_commits` | Find pull requests by commit IDs | ✅ |
-| `repo_get_repo_by_name_or_id` | Get repository details | ✅ |
-| `repo_get_branch_by_name` | Get branch details | ✅ |
-| `repo_get_pull_request_by_id` | Get a pull request | ✅ |
-| `repo_get_file_content` | Get the content of a file from a repository at a specific branch, tag, or commit | ✅ |
-| `repo_list_directory` | List files and folders in a directory within a repository | ✅ |
-| `repo_search_commits` | Search commits | ✅ |
-| `repo_create_pull_request` | Create a pull request | ❌ |
+| `repo_pull_request` (`action: get`) | Get a pull request by ID | ✅ |
+| `repo_pull_request` (`action: list`) | List pull requests in a repository or project | ✅ |
+| `repo_pull_request` (`action: list_by_commits`) | Find pull requests that contain specific commit IDs | ✅ |
+| `repo_pull_request_thread` (`action: list`) | List comment threads on a pull request | ✅ |
+| `repo_pull_request_thread` (`action: list_comments`) | List comments in a specific thread | ✅ |
+| `repo_repository` (`action: get`) | Get a repository by name or ID | ✅ |
+| `repo_repository` (`action: list`) | List repositories in a project | ✅ |
+| `repo_branch` (`action: get`) | Get a branch by name | ✅ |
+| `repo_branch` (`action: list`) | List branches in a repository | ✅ |
+| `repo_branch` (`action: list_mine`) | List branches the current user has pushed to | ✅ |
+| `repo_file` (`action: get_content`) | Get the text content of a file at a specific branch, tag, or commit | ✅ |
+| `repo_file` (`action: list_directory`) | List files and folders in a directory, with optional recursive listing | ✅ |
+| `repo_search_commits` | Search commits with filtering by text, author, date range, and more | ✅ |
+| `repo_pull_request_write` (`action: create`) | Create a pull request | ❌ |
+| `repo_pull_request_write` (`action: update`) | Update a pull request, including setting autocomplete | ❌ |
+| `repo_pull_request_write` (`action: update_reviewers`) | Add or remove pull request reviewers | ❌ |
+| `repo_pull_request_write` (`action: vote`) | Cast a vote on a pull request | ❌ |
+| `repo_pull_request_thread_write` (`action: create`) | Create a new comment thread on a pull request | ❌ |
+| `repo_pull_request_thread_write` (`action: reply`) | Reply to a comment in a thread | ❌ |
+| `repo_pull_request_thread_write` (`action: update_status`) | Update the status of a comment thread | ❌ |
 | `repo_create_branch` | Create a branch | ❌ |
-| `repo_create_pull_request_thread` | Add a comment thread to a PR | ❌ |
-| `repo_reply_to_comment` | Reply to a PR comment | ❌ |
-| `repo_update_pull_request` | Update a pull request | ❌ |
-| `repo_update_pull_request_reviewers` | Add or remove PR reviewers | ❌ |
-| `repo_update_pull_request_thread` | Update a PR comment thread | ❌ |
-| `repo_vote_pull_request` | Cast a vote on a pull request | ❌ |
 
-### Work Item Tracking
+### Wit
 
 | Tool | Description | Read-only |
 |---|---|:---:|
