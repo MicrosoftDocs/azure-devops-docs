@@ -9,7 +9,7 @@ ms.author: pliaros
 ms.reviewer: chcomley
 author: rohit-batra
 monikerRange: '<= azure-devops'
-ms.date: 04/01/2026
+ms.date: 04/28/2026
 ms.update-cycle: 1095-days
 ---
 
@@ -180,24 +180,6 @@ You can fix test steps while the test is still running. Select the **Edit test s
 ## Capture diagnostic data
 
 While running tests, you can capture screenshots, action logs, and screen recordings. For detailed steps, see [Collect diagnostic data](collect-diagnostic-data.md).
-
-### Capture a screenshot
-
-Use the web runner to take screenshots of the app while testing.
-
-![Screenshot shows the button for capturing a screenshot during a test.](media/run-manual-tests/test-capture-screen.png)
-
-### Capture an action log
-
-Use the web runner to capture your actions on the app as image logs while testing.
-
-![Screenshot shows the button for capturing an image action log from the app.](media/run-manual-tests/test-capture-action.png)
-
-### Capture a screen recording
-
-Use the web runner to capture screen recordings of your web and desktop apps while testing.
-
-![Screenshot shows the button for capturing a screen recording from the app.](media/run-manual-tests/test-capture-screen-recording.png)
 
 ## Run tests with TCM
 
