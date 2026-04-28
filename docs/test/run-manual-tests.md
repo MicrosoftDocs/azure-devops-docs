@@ -21,18 +21,6 @@ Use Microsoft Test Runner to run manual tests and record results for each test s
 
 During a test run, you can capture screenshots, record actions, and create or update bugs directly from Test Runner with test steps, screenshots, and comments automatically included.
 
-In this article, you learn how to:
-
-> [!div class="checklist"]
-> - [Run tests for web apps](#run-web)
-> - [Create or add to a bug](#create-or-add-to-a-bug)
-> - [Save and review results](#save-and-review-results)
-> - [Run tests for desktop apps](#run-tests-for-desktop-apps)
-> - [Run all tests](#run-all-tests)
-> - [Run tests for a build](#run-tests-for-a-build)
-> - [Modify a test step during a test run](#modify-a-test-step-during-a-test-run)
-> - [Capture diagnostic data](#capture-diagnostic-data)
-
 ## Test points
 
 [!INCLUDE [test-point-definition](includes/test-point-definition.md)]

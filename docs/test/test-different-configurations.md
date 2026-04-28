@@ -20,15 +20,6 @@ Users install or run your app on a wide variety of configurations, such as diffe
 
 Use test plans to decide which tests to run on which configurations. Make sure that when you run your tests, you set up your stages for the configurations that you need.
 
-In this article, you learn how to:
-
-> [!div class="checklist"]
-> - [View existing configurations and variables](#view-configs)
-> - [Create configurations and variables](#create-configs)
-> - [Assign configurations to test plans and suites](#assign-configs)
-> - [Run tests with each configuration](#run-tests-with-each-configuration)
-> - [Track test results for each configuration](#track-test-results-for-each-configuration)
-
 The following schematic matrix shows example combinations that you might want to test:
 
 :::image type="content" source="media/shared/testing-configurations-schematic.png" alt-text="Diagram that shows a test matrix of browser and operating system configurations.":::

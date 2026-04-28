@@ -24,21 +24,6 @@ ms.update-cycle: 1095-days
 
 Create manual test cases to validate that each deliverable meets user requirements. Test cases define the individual steps testers perform, and can include [shared steps](share-steps-between-test-cases.md) and [parameters for data-driven testing](repeat-test-with-different-data.md). Organize test cases in [test plans and test suites](create-a-test-plan.md), and then assign testers to run them.
 
-In this article, you learn how to:
-
-> [!div class="checklist"]
-> - [Create test cases](#create-test-cases)
-> - [Open a test case](#open-a-test-case)
-> - [Assign configurations to test cases](#assign-configurations-to-test-cases)
-> - [Reorder test cases and test steps](#reorder-test-cases)
-> - [Add existing test cases to a test suite](#add-existing-test-cases-to-a-test-suite)
-> - [Use the Grid view to edit test cases](#use-the-grid-view-to-edit-test-cases)
-> - [Assign testers](#assign-testers)
-> - [Bulk edit test cases](#bulk-edit-test-cases)
-> - [Use tags for test cases](#use-tags-for-test-cases)
-> - [Rename or remove test cases](#rename-or-remove-test-cases)
-> - [Use AI to manage test cases](#use-ai-to-manage-test-cases)
-
 For key concepts, see [Test objects and terms](test-objects-overview.md).
 
 > [!NOTE]
