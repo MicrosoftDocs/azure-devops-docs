@@ -40,7 +40,7 @@ We recommend keeping your repository size under 100 GB for optimal performance. 
 
 This parameter indicates the number of objects in the repository, which are accessible from any reference or tag. Objects include not only files (blobs), but also directories, commits, and tags. More details [Git-Internals-Git-Objects](https://git-scm.com/book/en/v2/Git-Internals-Git-Objects). 
 
-The greater the number of objects, the longer Git takes to traverse the repository’s history affecting time to display the history of commits, and other objects. Additionally ADO's implementation has a hard limit object limit.  Azure Repos can't contain more than 100 million objects in a single repository.
+The greater the number of objects, the longer Git takes to traverse the repository’s history affecting time to display the history of commits, and other objects.
 
 ## Number of refs
 
