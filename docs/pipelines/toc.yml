@@ -417,9 +417,12 @@
         href: ecosystems/containers/content-trust.md
       - name: Kubernetes
         items:
-        - name: Deploy to Kubernetes
+        - name: Overview
           displayName: kubernetes, aks, gke, eks, canary
           href: ecosystems/kubernetes/deploy.md
+        - name: Deploy to Azure Kubernetes Service
+          href: release/deploy-kubernetes.md
+          displayName: AKS, Kubernetes, deploy, deployment, Azure
         - name: Use a canary deployment strategy
           href: ecosystems/kubernetes/canary-demo.md
     - name: Deploy apps (Classic)
