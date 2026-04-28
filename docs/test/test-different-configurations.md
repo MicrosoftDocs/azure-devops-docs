@@ -6,8 +6,10 @@ ms.service: azure-devops-test-plans
 ms.topic: how-to
 ms.author: pliaros
 author: rohit-batra
+ms.update-cycle: 1095-days
+ms.custom: UpdateFrequency3, sfi-image-nochange
 monikerRange: '<= azure-devops'
-ms.date: 04/23/2026
+ms.date: 04/28/2026
 ---
 
 # Test different configurations
@@ -17,6 +19,15 @@ ms.date: 04/23/2026
 Users install or run your app on a wide variety of configurations, such as different operating systems, web browsers, and other variations. Run at least some of your tests in stages that have those different configurations.
 
 Use test plans to decide which tests to run on which configurations. Make sure that when you run your tests, you set up your stages for the configurations that you need.
+
+In this article, you learn how to:
+
+> [!div class="checklist"]
+> - [View existing configurations and variables](#view-configs)
+> - [Create configurations and variables](#create-configs)
+> - [Assign configurations to test plans and suites](#assign-configs)
+> - [Run tests with each configuration](#run-tests-with-each-configuration)
+> - [Track test results for each configuration](#track-test-results-for-each-configuration)
 
 The following schematic matrix shows example combinations that you might want to test:
 
