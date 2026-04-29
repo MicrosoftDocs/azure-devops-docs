@@ -7,16 +7,16 @@ ms.author: chcomley
 author: chcomley
 ms.topic: conceptual
 monikerRange: 'azure-devops'
-ms.date: 04/22/2026
+ms.date: 04/30/2026
 ---
 
 # Public projects retirement in Azure DevOps
 
 [!INCLUDE [version-eq-azure-devops](../../includes/version-eq-azure-devops.md)]
 
-Public projects in Azure DevOps are being retired. All existing public projects will be automatically converted to private projects, and anonymous (unauthenticated) access will be permanently disabled. This article explains the timeline, what changes, and what you need to do to prepare.
+Public projects in Azure DevOps are retired, and new public projects can no longer be created. In 2027, all existing public projects will automatically convert to private projects, and anonymous (unauthenticated) access permanently disabled. This article explains the timeline, what changes, and what you need to do to prepare.
 
-## Why public projects are being retired
+## Why public projects were retired
 
 When Azure DevOps introduced public projects, the goal was to provide a space for open-source collaboration. Since then, [GitHub](https://github.com) has become the industry-standard platform for open-source development, offering a purpose-built ecosystem with features like GitHub Actions, GitHub Packages, GitHub Discussions, and GitHub Sponsors.
 

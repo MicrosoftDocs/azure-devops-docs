@@ -7,7 +7,7 @@ ms.author: chcomley
 author: chcomley
 ms.topic: how-to
 monikerRange: 'azure-devops'
-ms.date: 04/27/2026
+ms.date: 04/30/2026
 ---
 
 # Migrate from a public project to GitHub
