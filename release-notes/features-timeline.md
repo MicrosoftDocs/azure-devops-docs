@@ -2,7 +2,7 @@
 title: Azure DevOps Roadmap
 author: gloridelmorales
 ms.author: glmorale
-ms.date: 04/02/2026
+ms.date: 04/29/2026
 ms.topic: article
 ms.service: azure-devops
 ms.subservice: azure-devops-release-notes
@@ -210,7 +210,7 @@ For the past several years, all our pipelines investments have been in the area 
       <tr>
          <td><a href="/azure/devops/release-notes/roadmap/2024/stage-traceability" data-raw-source="[Stage-level traceability](/azure/devops/release-notes/roadmap/2024/stage-traceability)">Stage-level traceability</a></td>
          <td>Pipelines</td>
-         <td><img src="roadmap/2023/media/checkmark.png" alt="Done">2026 Q1</td>
+         <td>2026 Q2</td>
       </tr>
       <tr>
          <td><a href="/azure/devops/release-notes/roadmap/2025/on-demand-execution" data-raw-source="[On-demand out of order execution of stages](/azure/devops/release-notes/roadmap/2025/on-demand-execution)">On-demand out of order execution of stages</a></td>
@@ -267,18 +267,18 @@ Below, you'll find several investments that we plan to deliver as part of this i
          <td>Test Plans</td>
          <td><img src="roadmap/2023/media/checkmark.png" alt="Done" />2025 Q4</td>
       </tr>
-      <tr>
-         <td><a href="/azure/devops/release-notes/roadmap/2025/testplans/support-for-playwright" data-raw-source="[Support for JavaScript (Playwright) in Azure Test Plans](/azure/devops/release-notes/roadmap/2025/testplans/support-for-pytest)">Support for JavaScript (Playwright) in Azure Test Plans</a></td>
-         <td>Test Plans</td>
-         <td>2026 Q2</td>
-      </tr>
-      <tr>
+       <tr>
          <td><a href="/azure/devops/release-notes/roadmap/2025/testplans/support-yaml-pipelines" data-raw-source="[Support YAML pipelines in Azure Test Plans](/azure/devops/release-notes/roadmap/2025/testplans/support-yaml-pipelines)">Support YAML pipelines in Azure Test Plans</a></td>
          <td>Test Plans</td>
-         <td>2026 Q2</td>
+         <td><img src="roadmap/2023/media/checkmark.png" alt="Done" />2025 Q4</td>
       </tr>
       <tr>
          <td><a href="/azure/devops/release-notes/roadmap/2026/testplans/support-for-rerunning" data-raw-source="[Support for re-running of data driven tests ](/azure/devops/release-notes/roadmap/2026/testplans/support-for-rerunning)">Support for re-running of data driven tests </a></td>
+         <td>Test Plans</td>
+         <td><img src="roadmap/2023/media/checkmark.png" alt="Done" />2025 Q4</td>
+      </tr>
+      <tr>
+         <td><a href="/azure/devops/release-notes/roadmap/2025/testplans/support-for-playwright" data-raw-source="[Support for JavaScript (Playwright) in Azure Test Plans](/azure/devops/release-notes/roadmap/2025/testplans/support-for-pytest)">Support for JavaScript (Playwright) in Azure Test Plans</a></td>
          <td>Test Plans</td>
          <td>2026 Q2</td>
       </tr>
@@ -308,7 +308,7 @@ Below, you'll find several investments that we plan to deliver as part of this i
         </tr>
     </thead>
     <tbody>       
-      <td rowspan="16"><strong>2026 Q2</strong></td>
+      <td rowspan="13"><strong>2026 Q2</strong></td>
       <td><a href="/azure/devops/release-notes/roadmap/2023/commits-search" data-raw-source="[Commits search](/azure/devops/release-notes/roadmap/2023/commits-search)">Commits search</a></td>
         <td>General</td>
       </tr>
@@ -329,14 +329,6 @@ Below, you'll find several investments that we plan to deliver as part of this i
          <td>Boards</td>
       </tr>       
       <tr>
-         <td><a href="/azure/devops/release-notes/roadmap/2024/stage-traceability" data-raw-source="[Stage-level traceability](/azure/devops/release-notes/roadmap/2024/stage-traceability)">Stage-level traceability</a></td>
-         <td>Pipelines</td>
-      </tr>
-      <tr>
-        <td><a href="/azure/devops/release-notes/roadmap/2025/on-demand-execution" data-raw-source="[On-demand out of order execution of stages](/azure/devops/release-notes/roadmap/2025/on-demand-execution)">On-demand out of order execution of stages</a></td>
-        <td>Pipelines</td>
-      </tr>
-      <tr>
         <td><a href="/azure/devops/release-notes/roadmap/macos-agents-apple-silicon" data-raw-source="[Hosted macOS agents on Apple Silicon](/azure/devops/release-notes/roadmap/agents-apple-silicon)">Hosted macOS agents on Apple Silicon</a></td>
         <td>Pipelines</td>
       </tr>
@@ -345,15 +337,11 @@ Below, you'll find several investments that we plan to deliver as part of this i
         <td>Pipelines</td>
       </tr>
       <tr>
-         <td><a href="/azure/devops/release-notes/roadmap/2025/testplans/support-yaml-pipelines" data-raw-source="[Support YAML pipelines in Azure Test Plans](/azure/devops/release-notes/roadmap/2025/testplans/support-yaml-pipelines)">Support YAML pipelines in Azure Test Plans</a></td>
-         <td>Test Plans</td>
+        <td><a href="/azure/devops/release-notes/roadmap/control-access-to-github-repos" data-raw-source="[Control access to GitHub repositories](/azure/devops/release-notes/roadmap/control-access-to-github-repos)">Control access to GitHub repositories</a></td>
+        <td>Pipelines</td>
       </tr>
       <tr>
          <td><a href="/azure/devops/release-notes/roadmap/2025/testplans/support-for-playwright" data-raw-source="[Support for JavaScript (Playwright) in Azure Test Plans](/azure/devops/release-notes/roadmap/2025/testplans/support-for-playwrigth)">Support for JavaScript (Playwright) in Azure Test Plans</a></td>
-         <td>Test Plans</td>
-      </tr>
-      <tr>
-         <td><a href="/azure/devops/release-notes/roadmap/2026/testplans/support-for-rerunning" data-raw-source="[Support for re-running of data driven tests ](/azure/devops/release-notes/roadmap/2026/testplans/support-for-rerunning)">Support for re-running of data driven tests </a></td>
          <td>Test Plans</td>
       </tr>
       <tr>
@@ -372,7 +360,7 @@ Below, you'll find several investments that we plan to deliver as part of this i
          <td><a href="/azure/devops/release-notes/roadmap/2026/wiki-monaco-editor" data-raw-source="[Replace existing Wiki editor with Monaco Editor](/azure/devops/release-notes/roadmap/2026/wiki-monaco-editor)">Replace existing Wiki editor with Monaco Editor</a></td>
          <td>Wiki</td>
       </tr>
-      <td rowspan="20"><strong>Future</strong></td>
+      <td rowspan="16"><strong>Future</strong></td>
         <td><a href="/azure/devops/release-notes/roadmap/auditing-ga" data-raw-source="[Auditing GA](/azure/devops/release-notes/roadmap/auditing-ga)">Auditing GA</a></td>
         <td>General</td>
       </tr>     
@@ -409,22 +397,6 @@ Below, you'll find several investments that we plan to deliver as part of this i
       <tr>
         <td><a href="/azure/devops/release-notes/roadmap/2026/retire-node-6" data-raw-source="[Retire Node 6, 10 and 16 from the Agent](/azure/devops/release-notes/roadmap/2026/retire-node-6)">Retire Node 6, 10 and 16 from the Agent</a></td>
         <td>Pipelines</td>
-      </tr>
-      <tr>
-        <td><a href="/azure/devops/release-notes/roadmap/control-access-to-github-repos" data-raw-source="[Control access to GitHub repositories](/azure/devops/release-notes/roadmap/control-access-to-github-repos)">Control access to GitHub repositories</a></td>
-        <td>Pipelines</td>
-      </tr>
-      <tr>
-        <td><a href="/azure/devops/release-notes/roadmap/support-pipelines-app" data-raw-source="[Support Pipelines App with GitHub Enterprise Server](/azure/devops/release-notes/roadmap/support-pipelines-app)">Support Pipelines App with GitHub Enterprise Server</a></td>
-        <td>Pipelines</td>
-      </tr>
-      <tr>
-         <td><a href="/azure/devops/release-notes/roadmap/2022/service-connections-in-checks" data-raw-source="[Service connections in checks](/azure/devops/release-notes/roadmap/2022/service-connections-in-checks)">Service connections in checks</a></td>
-         <td>Pipelines</td>
-      </tr>
-      <tr>
-         <td><a href="/azure/devops/release-notes/roadmap/2022/checks-extensibility" data-raw-source="[Checks extensibility](/azure/devops/release-notes/roadmap/2022/checks-extensibility)">Checks extensibility</a></td>
-         <td>Pipelines</td>
       </tr>
       <tr>
          <td><a href="/azure/devops/release-notes/roadmap/2025/testplans/seamless-build-pipelines" data-raw-source="[Seamless build pipeline integration for Test Case Run](/azure/devops/release-notes/roadmap/2025/testplans/seamless-build-pipelines)">Seamless build pipeline integration for Test Case Run</a></td>
