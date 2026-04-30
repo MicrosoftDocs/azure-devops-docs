@@ -4,7 +4,7 @@ titleSuffix: Azure DevOps
 description: Learn how to configure CI/CD for the app and platform of your choice using Azure Pipelines.  
 ms.topic: install-set-up-deploy
 ms.assetid: 00f4ed452-fbb8-45f9-8f0a-343702aac5b8  
-ms.manager: mijacobs 
+ms.manager: wiwagn 
 ms.author: sdanie
 author: steved0x
 ms.custom: freshness-fy22q2

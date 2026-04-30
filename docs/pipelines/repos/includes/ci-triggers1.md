@@ -1,7 +1,7 @@
 ---
 ms.topic: include
 ms.service: azure-devops-pipelines
-ms.manager: mijacobs
+ms.manager: wiwagn
 ms.date: 12/18/2023
 ---
 

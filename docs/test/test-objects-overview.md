@@ -58,7 +58,7 @@ The following table describes the work item types used to support the Azure DevO
    :::column span="3":::
       Group test cases into separate testing scenarios within a single test plan. Grouping test cases makes it easier to see which scenarios are complete. When creating a test suite, you can specify one of three types: 
       - **Static test suites**: Used to group test cases under a single test suite. 
-      - [**Requirement-based suites**](create-a-test-plan.md#backlog): Select one or more requirements from a query that you link to the test suite. 
+      - [**Requirement-based suites**](create-test-suites.md#backlog): Select one or more requirements from a query that you link to the test suite. 
       - [**Query-based suites**](reference-qa.yml#what-s-the-difference-between-static--requirement-based--and-query-based-test-suites): Select one or more test cases that you link to the test suite.    
       > [!TIP]
       > The [**Test Suite Type**](../boards/queries/build-test-integration.md) read-only field indicates the type of suite selected. To add test suites, see [Create test plans and test suites](create-a-test-plan.md). 

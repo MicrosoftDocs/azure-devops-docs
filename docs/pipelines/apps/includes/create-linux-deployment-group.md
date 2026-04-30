@@ -2,9 +2,9 @@
 ms.topic: include
 ms.service: azure-devops-pipelines
 ms.custom: linux-related-content
-ms.manager: mijacobs
-ms.author: jukullam
-author: juliakm
+ms.manager: wiwagn
+ms.author: rabououn
+author: ramiMSFT
 ms.date: 12/09/2025
 ---
 

@@ -8,8 +8,7 @@ metadata:
   author: chcomley
   ms.topic: faq
   monikerRange: '<= azure-devops'
-  "recommendations": "true"
-  ms.date: 09/29/2025
+  ms.date: 04/20/2026
 
 title: Azure Boards FAQs  
 
@@ -118,11 +117,11 @@ sections:
           Yes. Configure two backlog-level rules:
           1. Set the parent to Active when any child becomes Active.
           2. Set the parent to Resolved or Closed when all children are Closed.
-          For details, see [Automate work item state transitions](work-items/automate-work-item-state-transitions.md).
+          For details, see [Automate work item state transitions](backlogs/automate-work-item-state-transitions.md).
 
       - question: Why are my work items automatically changing state?
         answer: |
-          Administrators can configure backlog rules that automatically update work item states. For details and examples, see [Automate work item state transitions](work-items/automate-work-item-state-transitions.md).
+          Administrators can configure backlog rules that automatically update work item states. For details and examples, see [Automate work item state transitions](backlogs/automate-work-item-state-transitions.md).
 
       - question: Why don't rules trigger when I reactivate a child item?
         answer: |
@@ -134,11 +133,11 @@ sections:
 
       - question: Can I set up automation rules for user stories but not for features or epics?
         answer: |
-          Yes. Configure rules per backlog level. A rule on the user stories backlog doesn't affect features or epics. You can also configure separate rules for features and epics. See [Automate work item state transitions](work-items/automate-work-item-state-transitions.md).
+          Yes. Configure rules per backlog level. A rule on the user stories backlog doesn't affect features or epics. You can also configure separate rules for features and epics. See [Automate work item state transitions](backlogs/automate-work-item-state-transitions.md).
 
       - question: Why are automation rules not working if the child or parent item belongs to a different team or project?
         answer: |
-          Rules only trigger when both parent and child belong to the same team. This prevents rules from automatically affecting items owned by other teams. For details, see [Automate work item state transitions](work-items/automate-work-item-state-transitions.md).
+          Rules only trigger when both parent and child belong to the same team. This prevents rules from automatically affecting items owned by other teams. For details, see [Automate work item state transitions](backlogs/automate-work-item-state-transitions.md).
 
   - name: Backlogs and boards
     questions:
@@ -287,5 +286,5 @@ additionalContent: |
   - [Azure Boards Configuration and Customization FAQs](../organizations/settings/work/faqs.yml)
   - [FAQs: Work in Excel connected to Azure Boards](backlogs/office/faqs.yml)
   - [Work across projects FAQs](../project/work-across-projects-faqs.yml)
-  - [Azure Boards extensions](extensions/index.md)
+  - [Azure Boards migration and integration](extensions/migrate-integrate.md)
   - [About teams and Agile tools](../organizations/settings/about-teams-and-settings.md)

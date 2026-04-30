@@ -4,7 +4,7 @@ description: Learn how retention policies work for pipeline runs, classic releas
 ms.topic: overview
 ms.assetid: A9AC68EB-E013-4F86-8604-E69BB330817B
 ms.author: rabououn
-author: juliakm
+author: ramiMSFT
 ms.date: 03/30/2026
 ms.custom: cross-service
 monikerRange: '<= azure-devops'
@@ -92,6 +92,9 @@ The **number of recent runs to keep for each pipeline** setting is interpreted d
     | Run 3  | branch1 | Not retained | Neither latest 3 for main, nor for pipeline |
     | Run 2  | release | Retained | Latest 3 for release |
     | Run 1  | main    | Not retained | Neither latest 3 for main, nor for pipeline |
+
+
+The number of days to retain is calculated from when the run is completed. For example, there are two runs on a main branch on Jan 19th. The run that completed later is retained.
 
 - **All other Git repositories:** Azure Pipelines retains the configured number of latest runs for the whole pipeline.
 

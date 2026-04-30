@@ -1,14 +1,14 @@
 ---
 ms.subservice: azure-devops-service-hooks
-ms.topic: troubleshooting-general
-title: Troubleshoot Service Hook Integrations
+ms.topic: troubleshooting
+title: Troubleshoot service hook integrations
 description: Find out how to access the history of service hook subscriptions in Azure DevOps. Get information about HTTP response failures that affect subscription states.
 ms.assetid: dcf00653-24c5-4ab6-b9e8-19ec098bbb66
 ms.custom: engagement-fy23, copilot-scenario-highlight
 ms.author: chcomley
 author: chcomley
 monikerRange: '<= azure-devops'
-ms.date: 12/03/2025
+ms.date: 04/20/2026
 # customer intent: As a team member, I want to become familiar with service hook failure types and find out how to access the history of subscriptions so that I can troubleshoot problems with service hooks in Azure DevOps.
 ---
 
@@ -161,3 +161,9 @@ The following status codes provide examples of each type of failure:
 ### Q: Can I programmatically create subscriptions? 
 
 **A:** Yes, use [REST APIs](create-subscription.md).
+
+## Related content
+
+- [Service hooks overview](overview.md)
+- [Create a service hook subscription](create-subscription.md)
+- [All troubleshooting guides & FAQs](../troubleshoot/index.yml)

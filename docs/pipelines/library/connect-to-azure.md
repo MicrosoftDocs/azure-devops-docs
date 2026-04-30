@@ -2,9 +2,9 @@
 title: Use an Azure Resource Manager service connection
 description: Learn how to use an Azure Resource Manager service connection to connect Azure Pipelines to Azure services.
 ms.topic: concept-article
-ms.author: jukullam
-author: juliakm
-ms.date: 01/09/2026
+ms.author: rabououn
+author: ramiMSFT
+ms.date: 04/22/2026
 ai-usage: ai-assisted
 monikerRange: '<= azure-devops'
 ms.custom: devx-track-arm-template, arm2024, sfi-image-nochange
@@ -353,5 +353,11 @@ To create a service connection that uses an existing service principal:
 1. Select **Verify and save** to validate and create the service connection.
 
 ::: moniker-end
+
+## Related content
+
+- [Access Azure DevOps with Microsoft Entra workload identity](add-devops-entra-service-connection.md)
+- [Manage service connections](service-endpoints.md)
+- [Troubleshoot Azure Resource Manager service connections](../release/azure-rm-endpoint.md)
 
 [!INCLUDE [rm-help-support-shared](../includes/rm-help-support-shared.md)]

@@ -1,10 +1,10 @@
 ---
-title: Troubleshooting dependency scanning for GitHub Advanced Security for Azure DevOps 
+title: Troubleshoot dependency scanning for GitHub Advanced Security for Azure DevOps
 titleSuffix: Azure Repos
-description: Troubleshooting dependency scanning for GitHub Advanced Security for Azure DevOps
+description: Troubleshoot dependency scanning issues in GitHub Advanced Security for Azure DevOps.
 ms.service: azure-devops
 ms.subservice: azure-devops-integration
-ms.topic: how-to 
+ms.topic: troubleshooting
 ms.custom: cross-service
 ms.author: laurajiang
 author: laurajjiang

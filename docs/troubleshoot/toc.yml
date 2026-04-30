@@ -10,6 +10,10 @@
       href: ../boards/plans/faqs.yml?toc=/azure/devops/troubleshoot/toc.json
     - name: Work item queries
       href: ../boards/queries/query-faqs.yml?toc=/azure/devops/troubleshoot/toc.json
+    - name: Backlog reordering and nesting
+      href: ../boards/backlogs/resolve-backlog-reorder-issues.md?toc=/azure/devops/troubleshoot/toc.json
+    - name: Office integration issues
+      href: ../boards/backlogs/office/tfs-office-integration-issues.md?toc=/azure/devops/troubleshoot/toc.json
 - name: Azure Pipelines
   items:
     - name: Pipeline runs
@@ -22,6 +26,8 @@
       href: ../pipelines/release/troubleshoot-workload-identity.md?toc=/azure/devops/troubleshoot/toc.json
     - name: Azure Web App deployment
       href: ../pipelines/troubleshooting/troubleshoot-azure-web-app-deploy.md?toc=/azure/devops/troubleshoot/toc.json
+    - name: Azure Resource Manager service connections
+      href: ../pipelines/release/azure-rm-endpoint.md?toc=/azure/devops/troubleshoot/toc.json
 - name: Azure Repos
   items:
     - name: Code scanning
@@ -42,6 +48,8 @@
       href: ../user-guide/troubleshoot-connection.md?toc=/azure/devops/troubleshoot/toc.json
     - name: Access and permission issues
       href: ../organizations/security/troubleshoot-permissions.md?toc=/azure/devops/troubleshoot/toc.json
+    - name: Capture browser trace
+      href: ../user-guide/capture-browser-trace.md?toc=/azure/devops/troubleshoot/toc.json
     - name: Microsoft Entra access
       href: ../organizations/accounts/faq-azure-access.yml?toc=/azure/devops/troubleshoot/toc.json
     - name: User and permissions management
@@ -60,12 +68,8 @@
       href: ../project/work-across-projects-faqs.yml?toc=/azure/devops/troubleshoot/toc.json
 - name: Notifications
   items:
-    - name: Not receiving emails
+    - name: Troubleshoot notification emails
       href: ../organizations/notifications/troubleshoot-not-getting-email.md?toc=/azure/devops/troubleshoot/toc.json
-    - name: Delayed emails
-      href: ../organizations/notifications/troubleshoot-delayed-email.md?toc=/azure/devops/troubleshoot/toc.json
-    - name: Unexpected emails
-      href: ../organizations/notifications/troubleshoot-unexpected-email.md?toc=/azure/devops/troubleshoot/toc.json
     - name: FAQs
       href: ../organizations/notifications/faq-notifications.yml?toc=/azure/devops/troubleshoot/toc.json
 - name: Reporting and Analytics

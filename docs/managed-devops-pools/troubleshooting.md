@@ -1,8 +1,9 @@
 ---
 title: Troubleshoot Managed DevOps Pools issues
 description: Learn how to troubleshoot common issues with Managed DevOps Pools.
-ms.topic: how-to
-ms.date: 05/21/2025
+ms.topic: troubleshooting
+monikerRange: 'azure-devops'
+ms.date: 04/20/2026
 ---
 
 # Troubleshoot Managed DevOps Pools issues
@@ -77,7 +78,7 @@ For more information, see [Manage cost and performance - Pre-provisioning with s
 
 #### Automatic standby mode for new pools
 
-Manage DevOps Pools uses historical pool usage data to help make its [automatic standby mode](./configure-scaling.md#automatic) scaling predictions. New pools don't have any historical data, so agents might be created on demand. To improve performance, you can switch to manual standby mode for the first month, and switch to automatic standby mode once Managed DevOps Pools has had time to observe your pool's usage.
+Managed DevOps Pools uses historical pool usage data to help make its [automatic standby mode](./configure-scaling.md#automatic) scaling predictions. New pools don't have any historical data, so agents might be created on demand. To improve performance, you can switch to manual standby mode for the first month, and switch to automatic standby mode once Managed DevOps Pools has had time to observe your pool's usage.
 
 #### Check standby agent percentage if using standby agents with multiple images
 
@@ -121,8 +122,9 @@ If the image versions are different between the recent failed pipeline run and t
 
 Managed DevOps Pools keeps the past 20 images available for Selected marketplace images and the past 10 images available for Azure Pipelines images. Past versions of Azure Compute Gallery images are maintained by the owners of those Azure Compute Galleries.
 
-## See also
+## Related content
 
 * [Managed DevOps Pools prerequisites](./prerequisites.md)
 * [Configure Managed DevOps Pools networking](./configure-networking.md)
 * [Manage cost and performance](./manage-costs.md)
+* [Troubleshoot scale set agents](../pipelines/agents/scale-set-agents.md#troubleshooting-issues) - predecessor to Managed DevOps Pools

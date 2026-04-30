@@ -1,14 +1,13 @@
 ### YamlMime:FAQ
 metadata:
   title: Set up Visual Studio with Azure DevOps FAQs
-  titleSuffix: Azure DevOps Services
+  titleSuffix: Azure DevOps
   description: Having problems installing Visual Studio, signing in, or handling an expired subscription? Learn answers to these frequently asked questions (FAQs).
   ms.subservice: azure-devops-organizations
-  ms.assetid: 985fcb48-0d9e-44ef-811d-7178df1cb09b
   ms.topic: faq
   ms.author: chcomley
   author: chcomley
-  ms.date: 03/11/2020
+  ms.date: 04/20/2026
   monikerRange: 'azure-devops'
 title: Set up Visual Studio with Azure DevOps FAQs
 summary: |
@@ -26,7 +25,7 @@ sections:
           like automatic brace completion, 
           are saved with your profile. 
           These settings roam with your [personal Microsoft account](https://www.microsoft.com/account), 
-          or your [work or school account](/azure/active-directory/fundamentals/sign-up-organization), 
+          or your [work or school account](/entra/fundamentals/create-new-tenant), 
           when you sign in to Visual Studio on any computer. 
           
           Sign in to Visual Studio during the 30-day 
@@ -46,55 +45,25 @@ sections:
           Why can't I sign in?
         answer: |
           Sign in with a [personal Microsoft account](https://www.microsoft.com/account) 
-          or a [work or school account](/azure/active-directory/fundamentals/sign-up-organization) 
-          that's managed by Microsoft Entra ID.
+          or a [work or school account](/entra/fundamentals/create-new-tenant) 
+           managed by Microsoft Entra ID.
           
           <a name="vs-versions"></a>
           
       - question: |
           Which versions of Visual Studio can I use with Azure DevOps?
         answer: |
-          > [!IMPORTANT]  
-          > While previous versions of Visual Studio are compatible with Azure DevOps, it's a best practice to make sure you are on the latest update of that version and to use [supported versions](/visualstudio/productinfo/vs-servicing#older-versions-of-visual-studio) of Visual Studio whenever possible.
-        
-          You can use the following versions:
+          For the best experience, use a [supported version of Visual Studio](/visualstudio/releases/2026/servicing-vs#support-for-older-versions). The following versions are currently supported:
                   
-          * Visual Studio 2019
-          * Visual Studio 2017
-          * Visual Studio 2015
-          * Visual Studio 2013
-          * Visual Studio 2012
-          * Visual Studio 2010, 
-          which requires Service Pack 1 and [KB2662296](https://support.microsoft.com/kb/2662296)
-          * Visual Studio 2008 SP1, which requires a [GDR update](https://support.microsoft.com/kb/2673642)
+          * Visual Studio 2026
+          * Visual Studio 2022
+          * Visual Studio 2019 (extended support)
+          * Visual Studio 2017 (extended support through April 2027)
           
-          To connect to Azure DevOps with Visual Studio 2008 through Visual Studio 2012:
+          Earlier versions of Visual Studio (2015 and older) are out of support and might not work reliably with Azure DevOps Services.
           
-          1.    Start Visual Studio.
-          2.    From the **Team** menu or Team Explorer, 
-          go to **Connect to TFS** > **Select Team Projects** > **Servers**.
-          3.    Add your organization ({yourorganization}.visualstudio.com).
-          4.    Select your project and prepare connection.
-          
-          If you get connection errors, try choosing HTTPS as your protocol.
-          
-          To connect to Azure DevOps with Visual Studio 2015 and later, 
+          To connect to Azure DevOps with Visual Studio 2017 and later, 
           learn [how to connect to team projects](../projects/connect-to-projects.md). 
-          
-      - question: |
-          Can I use Visual Studio 2015 with Visual Studio 2013 and 2012 on the same computer?
-        answer: |
-          Yes, you can run all of these versions on the same computer.
-          
-      - question: |
-          Can I use earlier versions of Visual Studio to connect to Azure DevOps?
-        answer: |
-          Yes, you can use Visual Studio 2013 or 2012. You can also use Visual Studio 2010, 
-          but you need to install [Service Pack 1](https://www.microsoft.com/download/details.aspx?id=34677) 
-          and [KB2662296](https://support.microsoft.com/kb/2662296) first. Or, use Visual 
-          Studio 2008 SP1, with [this GDR update](https://support.microsoft.com/kb/2673642). 
-          Launch Visual Studio, and then connect to Azure DevOps  
-          and select your project.
           
       - question: |
           My subscription expired. What do I do?
@@ -108,15 +77,16 @@ sections:
         answer: |
           Learn more about:
           
-          *    [Installing Visual Studio](/visualstudio/install/install-visual-studio-2015).
+          *    [Installing Visual Studio](/visualstudio/install/install-visual-studio).
           *    [Signing in to Visual Studio](/visualstudio/ide/signing-in-to-visual-studio).
           *    [Managing multiple user organizations](/visualstudio/ide/work-with-multiple-user-accounts).
           
           Or contact [Visual Studio Support](https://visualstudio.microsoft.com/support/support-overview-vs). 
           
-      - question: |
-          Related articles 
-        answer: |
-          - [Access with Microsoft Entra FAQ](faq-azure-access.yml)
-          - [Configure and customize organization FAQ](faq-configure-customize-organization.yml)
-          - [User and permissions management FAQ](faq-user-and-permissions-management.yml)
+additionalContent: |
+
+  ## Related content
+  
+  - [Access with Microsoft Entra FAQ](faq-azure-access.yml)
+  - [Configure and customize organization FAQ](faq-configure-customize-organization.yml)
+  - [User and permissions management FAQ](faq-user-and-permissions-management.yml)

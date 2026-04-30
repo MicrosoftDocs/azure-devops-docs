@@ -2,7 +2,7 @@
 title: Self-hosted agent authentication options
 description: Learn about authentication options for registering a self-hosted agent
 ms.topic: concept-article
-ms.date: 03/26/2025
+ms.date: 04/22/2026
 ms.custom: arm2024
 monikerRange: '<= azure-devops'
 ---
@@ -21,6 +21,9 @@ Azure Pipelines provides a choice of several authentication options you can use 
 | [Alternate (ALT)](#alternate-alt) | Not supported | Supported when server is configured with HTTPS |
 
 ## Personal access token (PAT)
+
+> [!NOTE]
+> Agent registration requires a PAT or service principal. For pipeline-level access to Azure DevOps resources (repos, REST APIs) without PATs, see [Access Azure DevOps with Microsoft Entra workload identity](../library/add-devops-entra-service-connection.md).
 
 Specify **PAT** for authentication type during agent configuration to use a personal access token to authenticate during agent registration, then specify a personal access token (PAT) with **Agent Pools (read, manage)** scope (or **Deployment group (read, manage)** scope for a [deployment group](../release/deployment-groups/index.md) agent) can be used for agent registration.
 

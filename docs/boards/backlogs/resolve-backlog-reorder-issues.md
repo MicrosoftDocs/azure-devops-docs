@@ -5,39 +5,38 @@ description: Learn how to fix reordering and nesting issues for work items in Az
 ms.custom: boards-backlogs, copilot-scenario-highlight
 ai-usage: ai-assisted
 ms.service: azure-devops-boards
-ms.assetid: BDEAA5D4-83A3-49FC-BEEB-EE685E92B68B
 ms.topic: troubleshooting
 ms.author: chcomley
 author: chcomley
 monikerRange: '<= azure-devops'
-ms.date: 02/28/2026
+ms.date: 04/20/2026
 #customer intent: as a team member or lead, I want to address warnings or errors that occur in Azure Boards regarding reordering or nesting work items.
 ---
 
-# Troubleshoot reordering and nesting issues
+# Troubleshoot reordering and nesting problems
 
 <a id="display-hierarchy">  </a>
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 <!--- Supports FWLINK https://go.microsoft.com/fwlink/?linkid=529135 --> 
 
-When you reorder, nest, and display work items, Azure Boards expects a [natural hierarchy](#natural-hierarchy-for-work-item-types). The natural hierarchy breaks when you create same-category or same-type links between work items. For example, parent to child links that are bug to bug or user story to user story or *requirements* category to *task* category. Use this article to address error messages when you add links that aren't in the natural hierarchy.
+When you reorder, nest, and display work items, Azure Boards expects a [natural hierarchy](#natural-hierarchy-for-work-item-types). The natural hierarchy breaks when you create same-category or same-type links between work items. For example, parent-to-child links that are bug to bug or user story to user story. Use this article to address error messages when you add links that aren't in the natural hierarchy.
 
 ## Prerequisites
 
 [!INCLUDE [temp](../includes/prerequisites.md)]
 
-## You cannot reorder work items and some work items might not be shown
+## You can't reorder work items and some work items might not be shown
 
 You might see an error similar to one of the following messages:
 
-> - You cannot reorder work items and some work items might not be shown
+> - You can't reorder work items and some work items might not be shown
 > - No work item IDs are listed
 
-To address this error, do the following steps:
+To address this error, follow these steps:
 
 1. Open your backlog.
-1. Review the list of items to identify those items of the same type that are nested.  
+1. Review the list of items to identify items of the same type that are nested.  
 
    - **Example #1:** The following image shows a user story as a child of another user story.
 
@@ -50,20 +49,20 @@ To address this error, do the following steps:
 1. Remove any parent-child links that exist among nested items of the same work item type or category, or consider changing the link type to *Related*.
 1. Refresh your backlog.
 
-These steps should resolve the issue, and the error message no longer displays.
+These steps resolve the issue, and the error message no longer displays.
 
 ## Work item can't be reordered because its parent is on the same category
 
 You might see an error similar to one of the following messages:
 
-> - You cannot reorder work items and some work items might not be shown. See work item(s) 7 to either remove the parent to child link or change the link type to Related.
+> - You can't reorder work items and some work items might not be shown. See work item 7 to either remove the parent to child link or change the link type to *Related*.
 > - Work item 3 can't be reordered because its parent is on the same category.
 
-To address this error, do the following steps:
+To address this error, follow these steps:
 
 1. Open the work item listed in the error message.
 1. Look for a parent or child link. Make sure this link goes to a work item in the same category as the work item you opened. Look for a link that goes to another work item that appears on the same backlog level as the work item you opened. Depending on your team's bug behavior setting, bugs might appear with requirements or tasks.
-1. Remove the problem parent-child link. If you would like to keep these items associated, use *Related* link type instead.
+1. Remove the problem parent-child link. If you want to keep these items associated, use the *Related* link type instead.
 
 The message no longer displays.
 
@@ -71,11 +70,11 @@ The message no longer displays.
 
 You might see an error similar to the following message:
 
-> Items added to the backlog might disappear on a refresh because your team project marks them as "in progress". Those items appear when you change the "In progress" filter to Show.
+> Items you add to the backlog might disappear on a refresh because your team project marks them as "in progress". Those items appear when you change the "In progress" filter to Show.
 
 This message indicates that the **In Progress** filter for the backlog is turned off.  
 
-When you refresh your browser, the work items display based on your selected filters. To reset the filters, do the following steps.
+When you refresh your browser, the work items display based on your selected filters. To reset the filters, follow these steps.
 
 ::: moniker range="<=azure-devops"
 
@@ -107,17 +106,17 @@ The following image shows the natural hierarchy for the Agile, Scrum, and Capabi
 **Do:**
 
 - Maintain a flat list, rather than nesting requirements, bugs, and tasks.
-- Only create parent-child links one level deep between items that belong to a different category. The category a work item belongs to gets determined by your process levels and your team's selected bug behavior.
-- Use the *feature* work item type to group user stories (Agile), issues (Basic), work items (Scrum), or requirements (CMMI). You can map work items to features. This mapping creates parent-child links in the background. For more information, see [Organize your backlog](organize-backlog.md).
+- Only create parent-child links one level deep between items that belong to different categories. Your process levels and your team's selected bug behavior determine the category a work item belongs to.
+- Use the *feature* work item type to group user stories (Agile), product backlog items (Scrum), or requirements (CMMI). You can map work items to features. This mapping creates parent-child links in the background. For more information, see [Organize your backlog](organize-backlog.md).
 
 **Don't:**
 
 - Create a hierarchy of work items, tasks, and bugs.
-- Establish same-category hierarchies, such as parent-child links among work items of the same type. For example, create story-story, bug-bug, task-task, or issue-issue links. The backlog, board, and sprints experiences don't support reordering for same-category hierarchies, because that approach introduces confusion by ordering a work item that doesn't belong at that level.
+- Establish same-category hierarchies, such as parent-child links among work items of the same type. For example, don't create story-story, bug-bug, task-task, or issue-issue links. The backlog, board, and sprints experiences don't support reordering for same-category hierarchies, because that approach introduces confusion by ordering a work item that doesn't belong at that level.
 
 ## Track bugs as requirements or tasks  
 
-Each team has the flexibility to choose to track bugs as requirements, tasks, or neither. See the following guidelines:
+Each team can choose to track bugs as requirements, tasks, or neither. See the following guidelines:
 
 - **If you track bugs as *requirements*:** Nest them only under the *Feature* level.
 
@@ -131,11 +130,11 @@ For more information, see [Show bugs on backlogs and boards](../../organizations
 
 ## Display nested items on backlogs and boards
 
-Sprint backlogs and Taskboards exclusively display the last node in a same-category hierarchy, which is referred to as the leaf node.
+Sprint backlogs and taskboards exclusively display the last node in a same-category hierarchy, which is referred to as the leaf node.
 
-### Sprint backlogs and Taskboards
+### Sprint backlogs and taskboards
 
-When tasks and bugs link to their parent requirements, they group them correctly on the sprint backlog and Taskboard. When you establish parent-child links between a requirement and a bug, and between the bug and a task, as demonstrated here, the task appears on the sprint backlog and Taskboard, while the bug doesn't.
+When you link tasks and bugs to their parent requirements, you group them correctly on the sprint backlog and taskboard. When you establish parent-child links between a requirement and a bug, and between the bug and a task, as demonstrated in this article, the task appears on the sprint backlog and taskboard, while the bug doesn't.
 
 **Hierarchy of items assigned to a sprint backlog**  
 
@@ -145,11 +144,11 @@ When tasks and bugs link to their parent requirements, they group them correctly
 
 :::image type="content" source="media/resolve/sprint-backlog-leaf-only.png" alt-text="Screenshot of Sprint backlog with leaf node task."::: 
 
-**Only leaf nodes appear on Taskboards**
+**Only leaf nodes appear on taskboards**
 
 :::image type="content" source="media/resolve/bugs-appear-on-taskboard.png" alt-text="Screenshot of Sprint board with leaf node task.":::
 
-## Use AI to troubleshoot backlog reordering issues
+## Use AI to troubleshoot backlog reordering problems
 
 The following example prompt for Copilot Chat helps you troubleshoot Azure Boards backlog reordering and hierarchy problems. Copy and paste this prompt into Copilot Chat, replacing the placeholders with your specific information.
 
@@ -189,3 +188,4 @@ A: No, not at this time. You can always check the entire list of items assigned 
 
 - [Create and manage your backlog](create-your-backlog.md)  
 - [Learn about Kanban boards](../boards/kanban-overview.md)
+- [All troubleshooting guides & FAQs](../../troubleshoot/index.yml)

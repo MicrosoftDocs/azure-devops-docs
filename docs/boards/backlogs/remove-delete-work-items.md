@@ -9,7 +9,7 @@ ms.author: chcomley
 author: chcomley
 ms.topic: how-to
 monikerRange: '<= azure-devops'
-ms.date: 02/28/2026
+ms.date: 04/17/2026
 #customer intent: As a team member or administrator, I want to understand how to remove or restore work items in Azure Boards to manage them.
 ---
 
@@ -17,7 +17,7 @@ ms.date: 02/28/2026
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
-Work items can live forever in your work tracking data store. You never have to delete them. However, you might want to set up a work item management process for one of the following actions:
+Work items can stay forever in your work tracking data store. You never have to delete them. However, you might want to set up a work item management process for one of the following actions:
 
 [!INCLUDE [ai-assistance-mcp-server-tip](../../includes/ai-assistance-mcp-server-tip.md)]
 
@@ -65,11 +65,11 @@ You can also delete or destroy work items in batch with a REST API. For more inf
 
 ### Remove work items
 
-By changing the **State** of a work item to *Removed*, you effectively remove it from a backlog or board view: product, portfolio, and sprint backlogs, boards, and Taskboards. The *Removed* state corresponds to the **Removed** workflow category state. If you define custom workflow states, any state you map to the **Removed** workflow category state act in a similar way. For more information, see [Customize the workflow](../../organizations/settings/work/customize-process-workflow.md).
+When you change the **State** of a work item to *Removed*, you effectively remove it from a backlog or board view: product, portfolio, and sprint backlogs, boards, and Taskboards. The *Removed* state corresponds to the **Removed** workflow category state. If you define custom workflow states, any state you map to the **Removed** workflow category state acts in a similar way. For more information, see [Customize the workflow](../../organizations/settings/work/customize-process-workflow.md).
 
 :::image type="content" source="media/move-change-delete/remove-state.png" alt-text="Screenshot of work item form, Change State to Removed.":::  
 
-To cause removed items to not show up in queries, you must add a clause that filters on the **State** field.  
+To prevent removed items from showing up in queries, add a clause that filters on the **State** field.  
 
 ::: moniker range="<=azure-devops"
 
@@ -83,7 +83,7 @@ To cause removed items to not show up in queries, you must add a clause that fil
 
 ### Delete work items
 
-Deleted work items don't appear in your backlogs, boards, or queries. When you delete an item, it goes to the **Recycle Bin**. You can restore it from there if you change your mind. To delete a test case, test plan, or other test-related work item types, see [Delete test artifacts](delete-test-artifacts.md).  
+Deleted work items don't appear in your backlogs, boards, or queries. When you delete an item, it goes to the **Recycle Bin**. Items remain in the Recycle Bin until you restore or permanently delete them. To delete a test case, test plan, or other test-related work item types, see [Delete test artifacts](delete-test-artifacts.md).  
 ::: moniker range="<=azure-devops"
 
 You can delete work items in one of the following ways:
@@ -118,7 +118,7 @@ You can delete work items in one of the following ways:
 
 ## Restore or destroy work items
 
-You can't open work items from the **Recycle Bin**. You only see the **Permanently delete option** if your [Permanently delete work items](../../organizations/security/set-permissions-access-work-tracking.md#move-delete-permissions) project-level permission is set to **Allow**.  
+You can't open work items from the **Recycle Bin**. The Recycle Bin never automatically deletes items. They stay in the Recycle Bin until you restore or permanently delete them. The **Permanently delete** option is available only if your [Permanently delete work items](../../organizations/security/set-permissions-access-work-tracking.md#move-delete-permissions) project-level permission is set to **Allow**.  
 
 ::: moniker range="<=azure-devops"
 
@@ -143,7 +143,7 @@ Restore deleted work items or permanently delete them from the web portal **Recy
 ::: moniker-end
 
 > [!NOTE]
-> Test artifacts such as test plans, test suites, and test cases are all considered work items in Azure DevOps. However, the method used to [Delete test artifacts in Azure Boards](../backlogs/delete-test-artifacts.md) differs from the method for deleting nontest work items. Azure DevOps Services supports a soft-deletion model, where Test Plans and Test Suites are in a soft-delete state for 14 days after they're deleted. While they are in the soft-deleted state, they can be restored.
+> Test artifacts such as test plans, test suites, and test cases are all considered work items in Azure DevOps. However, the method used to [Delete test artifacts in Azure Boards](../backlogs/delete-test-artifacts.md) differs from the method for deleting nontest work items. Azure DevOps Services supports a soft-deletion model, where Test Plans and Test Suites are in a soft-delete state for 14 days after they're deleted. While they're in the soft-deleted state, you can restore them.
 
 <a id="az-boards-cli"></a>
 
@@ -151,7 +151,7 @@ Restore deleted work items or permanently delete them from the web portal **Recy
 
 ## Delete or destroy work items from the command line
 
-You can delete or destroy a work item with the [az boards work-item delete](/cli/azure/boards/work-item#az-boards-work-item-delete) command. To get started, see [Get started with Azure DevOps CLI](../../cli/index.md).  
+Use the [az boards work-item delete](/cli/azure/boards/work-item#az-boards-work-item-delete) command to delete or destroy a work item. To get started, see [Get started with Azure DevOps CLI](../../cli/index.md).  
 
 > [!NOTE]
 > You can restore *deleted* work items, but you can't restore *destroyed* work items.
@@ -166,8 +166,8 @@ az boards work-item delete --id
 
 - **id**: Required. The ID of the work item.
 - **destroy**: Optional. Permanently delete this work item.
-- **org**: Azure DevOps organization URL. You can configure the default organization using `az devops configure -d organization=ORG_URL`. Required if not configured as default or picked up using `git config`. Example: `--org https://dev.azure.com/MyOrganizationName/`.
-- **project**: Name or ID of the project. You can configure the default project using `az devops configure -d project=NAME_OR_ID`. Required if not configured as default or picked up using `git config`.
+- **org**: Azure DevOps organization URL. Configure the default organization by using `az devops configure -d organization=ORG_URL`. If you don't configure the default organization or if `git config` doesn't pick up an organization, you need to specify this parameter. Example: `--org https://dev.azure.com/MyOrganizationName/`.
+- **project**: Name or ID of the project. Configure the default project by using `az devops configure -d project=NAME_OR_ID`. If you don't configure the default project or if `git config` doesn't pick up a project, you need to specify this parameter.
 - **yes**: Optional. Don't prompt for confirmation.
 
 The following command permanently deletes the bug with the ID 864 and doesn't prompt you for confirmation.
@@ -180,29 +180,29 @@ az boards work-item delete --id 864 --destroy --yes
 
 ## Delete and restore processes
 
-**When you delete a work item, Azure DevOps does the following actions:**
+**When you delete a work item, Azure DevOps performs the following actions:**
 
-- Generates a new revision of the work item  
-- Updates the **Changed By/Changed Date** fields to support traceability  
-- Preserves the work item completely, including all field assignments, attachments, tags, and links  
-- Causes the work item to become nonqueryable and, as such, doesn't appear in any work tracking experience, query result, or report  
-- Updates charts correctly. The CFD, velocity, burndown, and lightweight charts are updated to remove deleted work items  
-- Removes work tracking extensions  
-- Preserves trend data except for the latest value
-- Removes the work item from the data warehouse/cube similar to as if it was permanently removed
+- Generates a new revision of the work item.  
+- Updates the **Changed By/Changed Date** fields to support traceability.  
+- Preserves the work item completely, including all field assignments, attachments, tags, and links.  
+- Makes the work item nonqueryable, so it doesn't appear in any work tracking experience, query result, or report.  
+- Updates charts correctly. The CFD, velocity, burndown, and lightweight charts are updated to remove deleted work items.  
+- Removes work tracking extensions.  
+- Preserves trend data except for the latest value.
+- Removes the work item from the data warehouse/cube similar to as if it was permanently removed.
 
-**When you restore a work item, Azure DevOps does the following actions:**
+**When you restore a work item, Azure DevOps performs the following actions:**
 
-- Causes a new revision of the work item to be made
-- Updates the **Changed By/Changed Date** fields to support traceability
-- Becomes queryable
-- All fields remain unchanged
-- History contains two new revisions, one for deletion, and one for restore
-- Reattaches work tracking extensions
-- Updates charts correctly. The CFD, velocity, burndown, and lightweight charts are updated to include the restored work items
-- Restores trend data
-- Adds the work item back to the data warehouse/cube
-- Sets the area or iteration path fields to the root node if the previous area path or iteration paths were deleted
+- Creates a new revision of the work item.
+- Updates the **Changed By/Changed Date** fields to support traceability.
+- Makes the work item queryable.
+- Keeps all fields unchanged.
+- Adds two new revisions to the history, one for deletion, and one for restore.
+- Reattaches work tracking extensions.
+- Updates charts correctly. The CFD, velocity, burndown, and lightweight charts are updated to include the restored work items.
+- Restores trend data.
+- Adds the work item back to the data warehouse/cube.
+- Sets the area or iteration path fields to the root node if the previous area path or iteration paths were deleted.
 
 ## Use a REST API to delete, restore, and destroy work items
 
@@ -215,7 +215,7 @@ To programmatically delete, restore, and destroy work items, see one of the foll
 
 ## Use AI to find work items to remove
 
-If you have the [Azure Boards MCP Server](../../mcp-server/mcp-server-overview.md) connected to your AI agent in agent mode, you can use natural language prompts to find and update work items before removing or deleting them.
+If you connect the [Azure Boards MCP Server](../../mcp-server/mcp-server-overview.md) to your AI agent in agent mode, you can use natural language prompts to find and update work items before removing or deleting them.
 
 | Task | Example prompt |
 |------|----------------|
@@ -225,7 +225,7 @@ If you have the [Azure Boards MCP Server](../../mcp-server/mcp-server-overview.m
 | Identify closed items | `List all work items closed more than a year ago in the <Contoso> project` |
 | Find abandoned work | `List active work items in <Contoso> assigned to people who are no longer on the team` |
 | Identify duplicate candidates | `Show bugs in <Contoso> with the same title or very similar titles` |
-| Find items with no activity | `List work items in <Contoso> that have never had a state change and were created more than 60 days ago` |
+| Find items with no activity | `List work items in <Contoso> that never had a state change and were created more than 60 days ago` |
 | Preview removal impact | `Show all child work items linked to user story <1234> so I can review before removing it` |
 | Bulk state change | `Set all user stories in area path <Contoso\\DeprecatedModule> to the Removed state` |
 | Audit removed items | `List all work items in <Contoso> that were moved to the Removed state in the last 30 days and show who changed them` |

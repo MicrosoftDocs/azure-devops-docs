@@ -8,11 +8,11 @@ ms.author: chcomley
 author: chcomley
 ms.topic: how-to
 monikerRange: '<= azure-devops'
-ms.date: 12/22/2025
+ms.date: 04/24/2026
 #customer intent: As a stakeholder, I want to understand how to use my access to manage work items for my team in Azure Boards. 
 ---
 
-# Get started as a Stakeholder
+# Get started as a stakeholder
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
@@ -27,6 +27,12 @@ ms.date: 12/22/2025
 ::: moniker-end  
 
 For more information, see the [Stakeholder access quick reference](stakeholder-access.md) and the [feature matrix](https://azure.microsoft.com/pricing/details/devops/azure-devops-services/).
+
+> [!IMPORTANT]
+> If your Visual Studio subscription or GitHub Enterprise license expires, your Azure DevOps access might be limited to Stakeholder, restricting access to repos, pipelines, and other features.
+>
+> - [What happens when a Visual Studio subscription is no longer detected?](../accounts/faq-user-and-permissions-management.yml#q--what-happens-when-a-visual-studio-subscription-is-no-longer-detected-)
+> - [What happens when a GitHub Enterprise license is no longer detected?](../accounts/faq-user-and-permissions-management.yml#q--what-happens-when-a-github-enterprise-license-is-no-longer-detected-)
 
 ## Prerequisites
 
@@ -159,7 +165,7 @@ Drag a work item downstream as you finish work.
 
 ### Add details
 
-To open a work item, double-click the title or highlight it, and then select **Enter**. This example shows how to assign work. You can only assign work to a user who was added to the project.
+To open a work item, double-click the title or highlight it, and then select **Enter**. This example shows how to assign work. You can only assign work to a user who is added to the project.
 
 #### [Agile process](#tab/agile-process)
 
@@ -191,7 +197,7 @@ This example assigns the Requirement work item to Jamal Hartnett. When you're fi
 
 ***
 
-To add more details, change field values, add a description or tags, and add comments. For more information, see:
+To add more details, change field values, add a description or tags, and add comments, see:
 
 - [Plan and track work in Azure Boards](../../boards/get-started/plan-track-work.md).
 - [Add tags to work items](../../boards/queries/add-tags-to-work-items.md). As a Stakeholder, you can add existing tags to a work item, but you can't create new tags.
