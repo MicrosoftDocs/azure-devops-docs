@@ -14,6 +14,8 @@ monikerRange: '<= azure-devops'
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
+[!INCLUDE [public-projects-retirement](../../organizations/projects/includes/public-projects-retirement.md)]
+
 ::: moniker range="<azure-devops"
 
 > [!IMPORTANT]

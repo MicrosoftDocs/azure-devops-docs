@@ -11,6 +11,8 @@ monikerRange: 'azure-devops'
 
 [!INCLUDE [version-eq-azure-devops](../../includes/version-eq-azure-devops.md)]
 
+[!INCLUDE [public-projects-retirement](../../organizations/projects/includes/public-projects-retirement.md)]
+
 Azure Artifacts helps you to manage all your dependencies from a single feed. By setting up upstream sources, you can consume packages from feeds and public registries such as *NuGet.org*, and *npmjs.com*. This article walks you through setting up upstream sources in a public feed and restoring your packages.
 
 ## Prerequisites

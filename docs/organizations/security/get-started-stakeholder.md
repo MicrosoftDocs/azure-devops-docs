@@ -16,6 +16,8 @@ ms.date: 04/24/2026
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
+[!INCLUDE [public-projects-retirement](../projects/includes/public-projects-retirement.md)]
+
 ::: moniker range="azure-devops"
 *Stakeholders* are users with free but limited access to Azure DevOps features and functions. With Stakeholder access, you can add and modify work items, manage build and release pipelines, and view dashboards. You can check project status and provide direction, feedback, feature ideas, and business alignment to a team. For more information, see [Create your first pipeline](../../pipelines/create-first-pipeline.md) and [Supported source repositories](../../pipelines/repos/index.md).
 ::: moniker-end  

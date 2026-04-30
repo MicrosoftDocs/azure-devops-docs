@@ -13,6 +13,8 @@ monikerRange: "<=azure-devops"
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
+[!INCLUDE [public-projects-retirement](../../organizations/projects/includes/public-projects-retirement.md)]
+
 Azure Artifacts feeds are organizational constructs that allow you to store, manage, and share your packages while controlling access. A single feed can host multiple package types, including npm, NuGet, Maven, Python, Cargo, and Universal Packages packages.
 Azure Artifacts feeds also support saving packages from public registries like *nuget.org* through upstream sources, ensuring continued access to your packages even if the public source becomes temporarily unavailable.
 

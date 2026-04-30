@@ -11,6 +11,8 @@ ms.topic: how-to
 
 [!INCLUDE [version-eq-azure-devops](../../includes/version-eq-azure-devops.md)]
 
+[!INCLUDE [public-projects-retirement](../../organizations/projects/includes/public-projects-retirement.md)]
+
 Azure Artifacts provides an easy way to share packages with users outside your organization, including external customers, by using public feeds. Packages stored in public feeds can be accessed and installed by anyone on the internet without requiring an Azure DevOps account.
 
 ## Prerequisites
