@@ -5,7 +5,7 @@ ms.date: 5/5/2026
 ms.topic: include
 ---
 
-### Public preview: Capture actual result per step in manual test runs
+### Capture actual result per step in manual test runs in public preview
 
 This feature has been one of the top [requests](https://developercommunity.visualstudio.com/t/actual-result-field-needed-in-test-results-test-pl/890708) from the community, and we're thrilled to make it available.
 

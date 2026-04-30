@@ -1,14 +1,14 @@
 ---
-title: Capture actual results in Test Plans and Windows ARM64 agent in public preview
+title: Repository Scalability Improved with Removal of Git Object Limit
 author: gloridelmorales
 ms.author: glmorale
 ms.date: 5/5/2026
-description: Capture actual results in Test Plans and Windows ARM64 agent in public preview
+description: Repository Scalability Improved with Removal of Git Object Limit
 ---
 
-# Capture actual results in Test Plans and Windows ARM64 agent in public preview
+# Repository Scalability Improved with Removal of Git Object Limit
 
-This sprint brings public preview of the **Capture actual result per step** feature in Azure Test Plans, public preview of the **Windows ARM64** self-hosted pipeline agent, an enhanced **copy work item** experience that lets you decouple parent and child links, an **External** badge for pull request status checks, an **unresolved comments** indicator on the pull request list, and the removal of the Git object count limit.
+Azure Repos improvements in this sprint enhance PR visibility and remove key scaling limits. External badges now clarify third‑party status checks, unresolved comments are surfaced directly in PR lists, and the removal of the Git object limit enables unrestricted repository growth for large-scale development.
 
 Check out the release notes for details.
 

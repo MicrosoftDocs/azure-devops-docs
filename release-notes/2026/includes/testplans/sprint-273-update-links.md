@@ -5,4 +5,4 @@ ms.date: 5/5/2026
 ms.topic: include
 ---
 
-- [Public preview: Capture actual result per step in manual test runs](#public-preview-capture-actual-result-per-step-in-manual-test-runs)
+- [Capture actual result per step in manual test runs in public preview](#capture-actual-result-per-step-in-manual-test-runs-in-public-preview)
