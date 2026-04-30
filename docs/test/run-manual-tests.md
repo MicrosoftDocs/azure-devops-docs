@@ -40,7 +40,11 @@ To access run options, in the **Execute** tab, select a test, and then select **
 
 [!INCLUDE [prerequisites-run](includes/prerequisites-run.md)] 
 
+::: moniker range="< azure-devops"
+
 [!INCLUDE [prerequisites-tcm](includes/prerequisites-tcm.md)] 
+
+::: moniker-end
 
 <a name="run-web"></a>
 
@@ -416,6 +420,8 @@ The following command publishes a test run for the test suite with **ID** `161` 
 ```tcm 
 tcm run /publish /suiteid:167 /configid:9 /resultowner:"Jamal Hartnett" /resultsfile:"c:\temp\ResultsForDeveloper.trx" /assignfailurestouser:"Chuck Reinhart" /collection:https://fabrikamprime.visualstudio.com /teamproject:"Fabrikam Fiber"
 ```
+
+::: moniker-end
 
 ## Frequently asked questions
 
