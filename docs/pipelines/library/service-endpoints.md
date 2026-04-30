@@ -263,7 +263,7 @@ Use the following parameters to define and secure a connection to a [Cargo](../.
 
 ### Chef service connection
 
-Use the following parameters to define and secure a connection to a [Chef](https://docs.chef.io/chef_overview.html) automation server.
+Use the following parameters to define and secure a connection to a [Chef](https://docs.chef.io) automation server.
 
 | Parameter | Description |
 | --------- | ----------- |
