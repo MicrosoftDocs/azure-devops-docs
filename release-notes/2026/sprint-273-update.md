@@ -8,7 +8,7 @@ description: Capture actual results in Test Plans and Windows ARM64 agent in pub
 
 # Capture actual results in Test Plans and Windows ARM64 agent in public preview
 
-This sprint brings public preview of the **Capture actual result per step** feature in Azure Test Plans, public preview of the **Windows ARM64** self-hosted pipeline agent, an enhanced **copy work item** experience that lets you decouple parent and child links, an **External** badge for pull request status checks, and the removal of the Git object count limit.
+This sprint brings public preview of the **Capture actual result per step** feature in Azure Test Plans, public preview of the **Windows ARM64** self-hosted pipeline agent, an enhanced **copy work item** experience that lets you decouple parent and child links, an **External** badge for pull request status checks, an **unresolved comments** indicator on the pull request list, and the removal of the Git object count limit.
 
 Check out the release notes for details.
 

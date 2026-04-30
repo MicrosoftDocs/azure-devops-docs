@@ -6,4 +6,5 @@ ms.topic: include
 ---
 
 - [Improvements to pull request status checks](#improvements-to-pull-request-status-checks)
+- [Show unresolved comments on pull request list](#show-unresolved-comments-on-pull-request-list)
 - [Git object count limit removed](#git-object-count-limit-removed)

@@ -38,11 +38,12 @@ You can also [view the build numbers for each version](#azure-devops-server-buil
         </tr>
     </thead>
 <tr>
-    <td rowspan="6"><a href="2026/sprint-273-update.md" data-raw-source="[5 May 2026](2026/sprint-273-update.md)">May 5 2026</a></td>
+    <td rowspan="7"><a href="2026/sprint-273-update.md" data-raw-source="[5 May 2026](2026/sprint-273-update.md)">May 5 2026</a></td>
     <td>Latest version of Azure DevOps Data Migration Tool</td><td>General</td><td>Future</td></tr>
     <td>Improved copy work item choices</td><td>Boards</td><td>Future</td></tr>
     <td>Windows ARM64 agent available in public preview</td><td>Pipelines</td><td>Future</td></tr>
     <td>Improvements to pull request status checks</td><td>Repos</td><td>Future</td></tr>
+    <td>Show unresolved comments on pull request list</td><td>Repos</td><td>Future</td></tr>
     <td>Git object count limit removed</td><td>Repos</td><td>Future</td></tr>
     <td>Public preview: Capture actual result per step in manual test runs</td><td>Test Plans</td><td>Future</td></tr>
 <tr>
