@@ -263,22 +263,24 @@ The repository tools are consolidated into grouped dispatchers using an `action`
 
 ### Pipelines
 
-| Tool | Description | Read-only |
-|---|---|:---:|
-| `pipelines_get_build_definitions` | List build definitions | ✅ |
-| `pipelines_get_build_definition_revisions` | List definition revisions | ✅ |
-| `pipelines_get_builds` | List builds | ✅ |
-| `pipelines_get_build_changes` | Get changes for a build | ✅ |
-| `pipelines_get_build_status` | Get the status of a build | ✅ |
-| `pipelines_get_build_log` | Get build logs | ✅ |
-| `pipelines_get_build_log_by_id` | Get a specific build log | ✅ |
-| `pipelines_get_run` | Get a pipeline run | ✅ |
-| `pipelines_list_runs` | List pipeline runs | ✅ |
-| `pipelines_list_artifacts` | List build artifacts | ✅ |
-| `pipelines_download_artifact` | Download a build artifact | ✅ |
-| `pipelines_update_build_stage` | Update a build stage | ❌ |
-| `pipelines_create_pipeline` | Create a pipeline definition | ❌ |
-| `pipelines_run_pipeline` | Trigger a pipeline run | ❌ |
+The pipeline tools are consolidated into grouped dispatchers using an `action` parameter, following the same pattern as the wiki and repo tools. The previous individual tool names continue to work as aliases.
+
+| Tool | Action | Description | Read-only |
+|---|---|---|:---:|
+| `pipelines_build` | `list` | List builds with optional filters | ✅ |
+| `pipelines_build` | `get_status` | Get status, issues, and report metadata for a build | ✅ |
+| `pipelines_build` | `get_changes` | Get commits and work items associated with a build | ✅ |
+| `pipelines_build_log` | `list` | List available logs for a build | ✅ |
+| `pipelines_build_log` | `get_content` | Get the text content of a specific log by ID | ✅ |
+| `pipelines_definition` | `list` | List pipeline definitions with optional filters | ✅ |
+| `pipelines_definition` | `list_revisions` | List revision history for a pipeline definition | ✅ |
+| `pipelines_run` | `get` | Get a single pipeline run | ✅ |
+| `pipelines_run` | `list` | List runs for a pipeline | ✅ |
+| `pipelines_artifact` | `list` | List artifacts for a build | ✅ |
+| `pipelines_artifact` | `download` | Download a named build artifact | ✅ |
+| `pipelines_write` | `run_pipeline` | Queue a new pipeline run | ❌ |
+| `pipelines_write` | `create_pipeline` | Create a new YAML pipeline definition | ❌ |
+| `pipelines_write` | `update_build_stage` | Cancel, retry, or run a stage on an in-flight build | ❌ |
 
 ### Wiki
 
