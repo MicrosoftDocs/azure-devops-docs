@@ -16,6 +16,8 @@ ms.date: 10/21/2025
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
+[!INCLUDE [public-projects-retirement](../projects/includes/public-projects-retirement.md)]
+
 This article contains PowerShell scripts that audit security across your Azure DevOps organization and provide administrative tools for common security tasks. Use these scripts to audit user access, review service connections, scan dependencies for vulnerabilities, and perform specific administrative tasks like changing project visibility and managing group memberships.
 
 These scripts help you maintain visibility into your security posture, identify potential risks, and streamline select administrative security tasks through automation.
