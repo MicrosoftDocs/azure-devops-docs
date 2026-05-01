@@ -7,6 +7,9 @@ ms.topic: include
 
 ### CodeQL default setup for code scanning (public preview)
 
+> [!IMPORTANT]
+> **Update (May 1, 2026):** The rollout of CodeQL default setup has been delayed due to issues discovered during the rollout process. The team is actively working to resolve these issues and plans to resume rollout as soon as possible.
+
 CodeQL default setup is now available in public preview for GitHub Advanced Security for Azure DevOps. With CodeQL default setup, you can enable code scanning for your repositories without any manual pipeline configuration. Once enabled, CodeQL automatically scans your code using Azure Pipelines and surfaces security vulnerabilities directly in your repository alerts.
 
 To get started, enable CodeQL default setup from your organization, project, or repository settings. You can optionally configure or change the agent pool used for scanning through organization settings under **All Repositories**.
