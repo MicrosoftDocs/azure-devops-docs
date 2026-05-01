@@ -197,7 +197,18 @@ The agent pool and scan schedule for default setup are shared across all reposit
 To generate alerts, default setup runs on a weekly schedule. Any detected vulnerabilities are displayed in the Advanced Security tab.
 -->
 
-Code scanning is a pipeline-based scanning tool where results are aggregated per repository. For details on configuring code scanning, see [Set up code scanning](github-advanced-security-code-scanning.md#advanced-setup-for-code-scanning).
+Code scanning is a pipeline-based scanning tool where results are aggregated per repository. You can configure code scanning by adding CodeQL tasks directly to your Azure Pipelines.
+
+To set up code scanning, add the following tasks to your pipeline in order:
+
+1. [AdvancedSecurity-Codeql-Init@1](/azure/devops/pipelines/tasks/reference/advanced-security-codeql-init-v1) — initializes CodeQL
+1. Your custom build steps (for compiled languages)
+1. [AdvancedSecurity-Codeql-Analyze@1](/azure/devops/pipelines/tasks/reference/advanced-security-codeql-analyze-v1) — runs the CodeQL analysis
+
+Specify the language you're analyzing in the Initialize CodeQL task. Supported languages include: `csharp, cpp, go, java, javascript, python, ruby, swift`.
+
+> [!TIP]
+> We recommend adding the code scanning tasks to a separate, cloned pipeline of your main production pipeline or creating a new pipeline. For more details on configuration options, see [Set up code scanning](github-advanced-security-code-scanning.md#advanced-setup-for-code-scanning).
 
 ## Set up pull request annotations 
 
