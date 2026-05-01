@@ -7,6 +7,9 @@ ms.topic: include
 
 ### Advanced Security status checks for pull requests
 
+> [!IMPORTANT]
+> **Update (May 1, 2026):** The rollout of Advanced Security status checks has been delayed due to issues discovered during the rollout process. The team is actively working to resolve these issues and plans to resume rollout as soon as possible.
+
 Advanced Security now publishes configurable status checks that integrate with Azure DevOps' built-in branch policy system. When Advanced Security scanning runs against a pull request, it automatically publishes status checks that can be used as required branch policies.
 
 Two new status checks are available:
