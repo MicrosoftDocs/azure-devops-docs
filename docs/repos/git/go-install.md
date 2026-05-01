@@ -18,6 +18,8 @@ ms.subservice: azure-devops-repos-git
 
 [!INCLUDE [use-microsoft-entra-reduce-pats](../../includes/use-microsoft-entra-reduce-pats.md)]
 
+[!INCLUDE [public-projects-retirement](../../organizations/projects/includes/public-projects-retirement.md)]
+
 Go is an open-source programming language, also referred to as Golang. 
 In Go, you can use the `install` command to download and install packages and dependencies.
 Azure Repos Git provides support for `go install` within an Azure Repos Git repository.

@@ -15,6 +15,8 @@ monikerRange: 'azure-devops'
 
 [!INCLUDE [alt-creds-deprecation-notice](../../includes/alt-creds-deprecation-notice.md)]
 
+[!INCLUDE [public-projects-retirement](../projects/includes/public-projects-retirement.md)]
+
 This article shows how to manage your organization's security policies that determine how users and applications can access services and resources in your organization. You can access most of these policies in **Organization settings**.
 
 ## Prerequisites

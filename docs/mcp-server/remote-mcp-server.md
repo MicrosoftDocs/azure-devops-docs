@@ -233,52 +233,56 @@ The repository tools are consolidated into grouped dispatchers using an `action`
 
 ### Wit
 
-| Tool | Description | Read-only |
-|---|---|:---:|
-| `wit_list_backlogs` | List backlogs for a team | ✅ |
-| `wit_list_backlog_work_items` | List work items in a backlog | ✅ |
-| `wit_get_work_item` | Get a work item by ID | ✅ |
-| `wit_get_work_items_batch_by_ids` | Get multiple work items by ID | ✅ |
-| `wit_list_work_item_comments` | List comments on a work item | ✅ |
-| `wit_list_work_item_revisions` | List revisions of a work item | ✅ |
-| `wit_get_work_items_for_iteration` | List work items in an iteration | ✅ |
-| `wit_my_work_items` | Get work items assigned to the current user | ✅ |
-| `wit_get_work_item_type` | Get a work item type | ✅ |
-| `wit_get_query` | Get a query by ID or path | ✅ |
-| `wit_get_query_results_by_id` | Run a saved query | ✅ |
-| `wit_query_by_wiql` | Execute a WIQL query and return matching work items | ✅ |
-| `search_workitem` | Full-text work item search | ✅ |
-| `wit_add_work_item_comment` | Add a comment to a work item | ❌ |
-| `wit_update_work_item` | Update a work item | ❌ |
-| `wit_create_work_item` | Create a work item | ❌ |
-| `wit_update_work_items_batch` | Update work items in batch | ❌ |
-| `wit_work_items_link` | Link work items together | ❌ |
-| `wit_work_item_unlink` | Remove links from a work item | ❌ |
-| `wit_add_child_work_items` | Create child work items | ❌ |
-| `wit_link_work_item_to_pull_request` | Link a work item to a pull request | ❌ |
-| `wit_add_artifact_link` | Add artifact links to a work item | ❌ |
+The work item tools are consolidated into grouped dispatchers using an `action` parameter, following the same pattern as the repo and pipeline tools. The previous individual tool names continue to work as aliases. Use `search_workitem` directly — it was not consolidated.
+
+| Tool | Action | Description | Read-only |
+|---|---|---|:---:|
+| `wit_work_item` | `get` | Get a work item by ID | ✅ |
+| `wit_work_item` | `get_batch` | Get multiple work items by IDs | ✅ |
+| `wit_work_item` | `list_comments` | List comments on a work item | ✅ |
+| `wit_work_item` | `my` | Get work items relevant to the authenticated user | ✅ |
+| `wit_work_item` | `list_revisions` | List revisions of a work item | ✅ |
+| `wit_work_item` | `list_for_iteration` | List work items for a team iteration | ✅ |
+| `wit_work_item` | `get_type` | Get metadata for a work item type | ✅ |
+| `wit_query` | `get` | Get a query by ID or path | ✅ |
+| `wit_query` | `get_results` | Run a saved query | ✅ |
+| `wit_backlog` | `list` | List backlog levels for a team | ✅ |
+| `wit_backlog` | `list_work_items` | List work items in a specific backlog level | ✅ |
+| `search_workitem` | `N/A` | Full-text work item search | ✅ |
+| `wit_work_item_write` | `create` | Create a new work item | ❌ |
+| `wit_work_item_write` | `update` | Update fields on a work item | ❌ |
+| `wit_work_item_write` | `update_batch` | Update multiple work items in one call | ❌ |
+| `wit_work_item_write` | `add_child` | Create child work items under a parent | ❌ |
+| `wit_work_item_comment_write` | `add` | Add a comment to a work item | ❌ |
+| `wit_work_item_comment_write` | `update` | Update an existing comment on a work item | ❌ |
+| `wit_work_item_link_write` | `link` | Link two work items | ❌ |
+| `wit_work_item_link_write` | `unlink` | Remove links from a work item | ❌ |
+| `wit_work_item_link_write` | `link_to_pull_request` | Link a work item to a pull request | ❌ |
+| `wit_work_item_link_write` | `add_artifact_link` | Add a repository, branch, commit, or build artifact link to a work item | ❌ |
 
 > [!NOTE]
 > `wit_query_by_wiql` is currently available only to MCP Insiders by using the `X-MCP-Insiders` header.
 
 ### Pipelines
 
-| Tool | Description | Read-only |
-|---|---|:---:|
-| `pipelines_get_build_definitions` | List build definitions | ✅ |
-| `pipelines_get_build_definition_revisions` | List definition revisions | ✅ |
-| `pipelines_get_builds` | List builds | ✅ |
-| `pipelines_get_build_changes` | Get changes for a build | ✅ |
-| `pipelines_get_build_status` | Get the status of a build | ✅ |
-| `pipelines_get_build_log` | Get build logs | ✅ |
-| `pipelines_get_build_log_by_id` | Get a specific build log | ✅ |
-| `pipelines_get_run` | Get a pipeline run | ✅ |
-| `pipelines_list_runs` | List pipeline runs | ✅ |
-| `pipelines_list_artifacts` | List build artifacts | ✅ |
-| `pipelines_download_artifact` | Download a build artifact | ✅ |
-| `pipelines_update_build_stage` | Update a build stage | ❌ |
-| `pipelines_create_pipeline` | Create a pipeline definition | ❌ |
-| `pipelines_run_pipeline` | Trigger a pipeline run | ❌ |
+The pipeline tools are consolidated into grouped dispatchers using an `action` parameter, following the same pattern as the wiki and repo tools. The previous individual tool names continue to work as aliases.
+
+| Tool | Action | Description | Read-only |
+|---|---|---|:---:|
+| `pipelines_build` | `list` | List builds with optional filters | ✅ |
+| `pipelines_build` | `get_status` | Get status, issues, and report metadata for a build | ✅ |
+| `pipelines_build` | `get_changes` | Get commits and work items associated with a build | ✅ |
+| `pipelines_build_log` | `list` | List available logs for a build | ✅ |
+| `pipelines_build_log` | `get_content` | Get the text content of a specific log by ID | ✅ |
+| `pipelines_definition` | `list` | List pipeline definitions with optional filters | ✅ |
+| `pipelines_definition` | `list_revisions` | List revision history for a pipeline definition | ✅ |
+| `pipelines_run` | `get` | Get a single pipeline run | ✅ |
+| `pipelines_run` | `list` | List runs for a pipeline | ✅ |
+| `pipelines_artifact` | `list` | List artifacts for a build | ✅ |
+| `pipelines_artifact` | `download` | Download a named build artifact | ✅ |
+| `pipelines_write` | `run_pipeline` | Queue a new pipeline run | ❌ |
+| `pipelines_write` | `create_pipeline` | Create a new YAML pipeline definition | ❌ |
+| `pipelines_write` | `update_build_stage` | Cancel, retry, or run a stage on an in-flight build | ❌ |
 
 ### Wiki
 
@@ -290,8 +294,8 @@ The wiki read operations are consolidated into a single `wiki` tool. Use the `ac
 | `wiki` | `get_wiki` | Get a wiki by identifier | ✅ |
 | `wiki` | `list_pages` | List pages in a wiki | ✅ |
 | `wiki` | `get_page` | Get page content and metadata | ✅ |
-| `search_wiki` | `N/A` | Full-text wiki search | ✅ |
-| `wiki_upsert_page` | `N/A` | Create or update a wiki page | ❌ |
+| `search_wiki` |  | Full-text wiki search | ✅ |
+| `wiki_upsert_page` |  | Create or update a wiki page | ❌ |
 
 ### Test plans
 

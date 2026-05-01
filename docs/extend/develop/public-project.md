@@ -17,6 +17,8 @@ ms.date: 04/03/2026
 
 [!INCLUDE [version-eq-azure-devops](../../includes/version-eq-azure-devops.md)]
 
+[!INCLUDE [public-projects-retirement](../../organizations/projects/includes/public-projects-retirement.md)]
+
 Azure DevOps Services supports both private and public projects. Private projects restrict access to authenticated users with explicit permissions. Public projects allow nonmember users to view project contents in a read-only state.
 
 A nonmember user can be either:

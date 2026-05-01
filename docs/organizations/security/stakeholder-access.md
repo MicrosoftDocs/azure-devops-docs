@@ -16,6 +16,8 @@ ms.date: 04/13/2026
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
+[!INCLUDE [public-projects-retirement](../projects/includes/public-projects-retirement.md)]
+
 **Stakeholder** access gives an unlimited number of users free, limited access to your organization. Stakeholders can:
 
 - **Azure Boards** — Create and modify work items, create and save queries, assign existing tags

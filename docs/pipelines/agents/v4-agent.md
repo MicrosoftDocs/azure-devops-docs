@@ -8,6 +8,9 @@ ms.date: 06/30/2025
 
 # Agent software version 4
 
+> [!NOTE]
+> The Windows ARM64 agent is now available in **public preview** for Windows 11. For more information, see the [supported operating systems](#upgrade-to-4x-agent-on-supported-operating-systems) section.
+
 The pipelines team is upgrading the agent software from version 3.x to version 4.x (using .NET 8).
 
 ## Upgrade to 4.x agent on supported operating systems
