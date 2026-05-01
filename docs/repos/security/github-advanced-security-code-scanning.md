@@ -8,7 +8,7 @@ ms.topic: how-to
 ms.author: laurajiang
 author: laurajjiang
 monikerRange: 'azure-devops'
-ms.date: 02/20/2025
+ms.date: 04/30/2026
 ms.custom: cross-service, sfi-image-nochange
 ---
 
@@ -24,6 +24,7 @@ CodeQL is the code analysis engine developed by GitHub to automate security chec
 
 [!INCLUDE [github-advanced-security-prerequisites](includes/github-advanced-security-prerequisites.md)]
 
+<!-- TODO: Temporarily removed default setup content - restore when feature is re-enabled
 ## About code scanning setup types
 
 There are two main ways to set up code scanning for your repository: **default setup** and **advanced setup**. 
@@ -71,6 +72,7 @@ Select when CodeQL default setup scans run for all repositories in the organizat
 ### Cancel running or queued scans
 
 If you need to stop any actively running or queued default setup scans, you can manually cancel them through **Organization settings** > **Repositories**. Users with the **Advanced Security: manage settings** permission on the repository can cancel running or queued default setup runs.
+-->
 
 ## Advanced setup for code scanning
 
