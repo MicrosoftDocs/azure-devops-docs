@@ -233,30 +233,32 @@ The repository tools are consolidated into grouped dispatchers using an `action`
 
 ### Wit
 
-| Tool | Description | Read-only |
-|---|---|:---:|
-| `wit_list_backlogs` | List backlogs for a team | ✅ |
-| `wit_list_backlog_work_items` | List work items in a backlog | ✅ |
-| `wit_get_work_item` | Get a work item by ID | ✅ |
-| `wit_get_work_items_batch_by_ids` | Get multiple work items by ID | ✅ |
-| `wit_list_work_item_comments` | List comments on a work item | ✅ |
-| `wit_list_work_item_revisions` | List revisions of a work item | ✅ |
-| `wit_get_work_items_for_iteration` | List work items in an iteration | ✅ |
-| `wit_my_work_items` | Get work items assigned to the current user | ✅ |
-| `wit_get_work_item_type` | Get a work item type | ✅ |
-| `wit_get_query` | Get a query by ID or path | ✅ |
-| `wit_get_query_results_by_id` | Run a saved query | ✅ |
-| `wit_query_by_wiql` | Execute a WIQL query and return matching work items | ✅ |
-| `search_workitem` | Full-text work item search | ✅ |
-| `wit_add_work_item_comment` | Add a comment to a work item | ❌ |
-| `wit_update_work_item` | Update a work item | ❌ |
-| `wit_create_work_item` | Create a work item | ❌ |
-| `wit_update_work_items_batch` | Update work items in batch | ❌ |
-| `wit_work_items_link` | Link work items together | ❌ |
-| `wit_work_item_unlink` | Remove links from a work item | ❌ |
-| `wit_add_child_work_items` | Create child work items | ❌ |
-| `wit_link_work_item_to_pull_request` | Link a work item to a pull request | ❌ |
-| `wit_add_artifact_link` | Add artifact links to a work item | ❌ |
+The work item tools are consolidated into grouped dispatchers using an `action` parameter, following the same pattern as the repo and pipeline tools. The previous individual tool names continue to work as aliases. Use `search_workitem` directly — it was not consolidated.
+
+| Tool | Action | Description | Read-only |
+|---|---|---|:---:|
+| `wit_work_item` | `get` | Get a work item by ID | ✅ |
+| `wit_work_item` | `get_batch` | Get multiple work items by IDs | ✅ |
+| `wit_work_item` | `list_comments` | List comments on a work item | ✅ |
+| `wit_work_item` | `my` | Get work items relevant to the authenticated user | ✅ |
+| `wit_work_item` | `list_revisions` | List revisions of a work item | ✅ |
+| `wit_work_item` | `list_for_iteration` | List work items for a team iteration | ✅ |
+| `wit_work_item` | `get_type` | Get metadata for a work item type | ✅ |
+| `wit_query` | `get` | Get a query by ID or path | ✅ |
+| `wit_query` | `get_results` | Run a saved query | ✅ |
+| `wit_backlog` | `list` | List backlog levels for a team | ✅ |
+| `wit_backlog` | `list_work_items` | List work items in a specific backlog level | ✅ |
+| `search_workitem` | `N/A` | Full-text work item search | ✅ |
+| `wit_work_item_write` | `create` | Create a new work item | ❌ |
+| `wit_work_item_write` | `update` | Update fields on a work item | ❌ |
+| `wit_work_item_write` | `update_batch` | Update multiple work items in one call | ❌ |
+| `wit_work_item_write` | `add_child` | Create child work items under a parent | ❌ |
+| `wit_work_item_comment_write` | `add` | Add a comment to a work item | ❌ |
+| `wit_work_item_comment_write` | `update` | Update an existing comment on a work item | ❌ |
+| `wit_work_item_link_write` | `link` | Link two work items | ❌ |
+| `wit_work_item_link_write` | `unlink` | Remove links from a work item | ❌ |
+| `wit_work_item_link_write` | `link_to_pull_request` | Link a work item to a pull request | ❌ |
+| `wit_work_item_link_write` | `add_artifact_link` | Add a repository, branch, commit, or build artifact link to a work item | ❌ |
 
 > [!NOTE]
 > `wit_query_by_wiql` is currently available only to MCP Insiders by using the `X-MCP-Insiders` header.
