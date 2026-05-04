@@ -10,6 +10,21 @@ Welcome to what's new in the Azure DevOps docs. The following sections provide d
 
 ## April 2026
 
+- [Administration](#administration)
+- [Artifacts](#artifacts)
+- [Azure Boards](#azure-boards)
+- [Azure DevOps Reporting and Analytics service](#azure-devops-reporting-and-analytics-service)
+- [Azure Pipelines](#azure-pipelines)
+- [Azure Repos](#azure-repos)
+- [Azure Test Plans](#azure-test-plans)
+- [Extend](#extend)
+- [Managed DevOps Pools](#managed-devops-pools)
+- [Marketplace](#marketplace)
+- [Migrate](#migrate)
+- [Miscellaneous](#miscellaneous)
+- [Project](#project)
+- [User guide](#user-guide)
+
 ### Administration
 
 #### New articles
