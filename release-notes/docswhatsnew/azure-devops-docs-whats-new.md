@@ -1,16 +1,18 @@
 ---
-title: "Azure DevOps docs: What's new for March 1, 2026 - March 31, 2026"
-description: "What's new in the Azure DevOps docs for March 1, 2026 - March 31, 2026."
+title: "What's new in Azure DevOps docs"
+description: "What's new in the Azure DevOps documentation."
 ms.date: 04/02/2026
 ---
 
-# Azure DevOps docs: What's new for March 1, 2026 - March 31, 2026
+# What's new in Azure DevOps docs
 
-Welcome to what's new in the Azure DevOps docs from March 1, 2026 through March 31, 2026. This article lists some of the major changes to docs during this period.
+Welcome to what's new in the Azure DevOps docs. The following sections provide details on the previous three months of new and updated content.
 
-## Administration
+## March 2026
 
-### Updated articles
+### Administration
+
+#### Updated articles
 
 - [Select backlog navigation levels](/azure/devops/organizations/settings/select-backlog-navigation-levels)
 - [Apply rules to workflow states (Inheritance process)](/azure/devops/organizations/settings/work/apply-rules-to-workflow-states)
@@ -60,21 +62,21 @@ Welcome to what's new in the Azure DevOps docs from March 1, 2026 through March 
 - [Manage and configure team tools](/azure/devops/organizations/settings/manage-teams)
 - [Turn a service on or off](/azure/devops/organizations/settings/set-services)
 
-## Artifacts
+### Artifacts
 
-### New articles
+#### New articles
 
 - [Set up an internal feed as an upstream source](/azure/devops/artifacts/how-to/upstream-internal-feed)
 
-### Updated articles
+#### Updated articles
 
 - [Consume packages from Python package index (PyPI)](/azure/devops/artifacts/python/use-packages-from-pypi)
 - [Package sizes and count limits](/azure/devops/artifacts/reference/limits)
 - [Universal Packages upstream sources](/azure/devops/artifacts/universal-packages/universal-packages-upstream)
 
-## Azure Boards
+### Azure Boards
 
-### Updated articles
+#### Updated articles
 
 - [Drive Git development from a work item in Azure Boards](/azure/devops/boards/backlogs/connect-work-items-to-git-dev-ops)
 - [Manage problems or impediments in Azure Boards](/azure/devops/boards/backlogs/manage-issues-impediments)
@@ -141,9 +143,9 @@ Welcome to what's new in the Azure DevOps docs from March 1, 2026 through March 
 - [View and add work items](/azure/devops/boards/work-items/view-add-work-items)
 - [List work item fields and attributes](/azure/devops/boards/work-items/work-item-fields)
 
-## Azure DevOps Reporting and Analytics service
+### Azure DevOps Reporting and Analytics service
 
-### Updated articles
+#### Updated articles
 
 - [Transform Analytics data to generate Power BI reports](/azure/devops/report/powerbi/transform-analytics-data-report-generation)
 - [Create a Power BI report from a default Analytics view](/azure/devops/report/powerbi/create-quick-report)
@@ -161,13 +163,13 @@ Welcome to what's new in the Azure DevOps docs from March 1, 2026 through March 
 - [Connect with data by using Power BI and OData queries](/azure/devops/report/powerbi/odataquery-connect)
 - [Secure your analytics and reporting](/azure/devops/report/secure-your-analytics-reporting)
 
-## Azure Pipelines
+### Azure Pipelines
 
-### New articles
+#### New articles
 
 - [Antivirus scanning exclusions for Azure DevOps](/azure/devops/pipelines/troubleshooting/anti-virus-exclusion)
 
-### Updated articles
+#### Updated articles
 
 - [Deploy multiple branches to different stages with Classic release pipelines](/azure/devops/pipelines/release/deploy-multiple-branches)
 - [What is Azure Pipelines?](/azure/devops/pipelines/get-started/what-is-azure-pipelines)
@@ -180,9 +182,9 @@ Welcome to what's new in the Azure DevOps docs from March 1, 2026 through March 
 - [Define variables](/azure/devops/pipelines/process/variables)
 - [Check out multiple repositories in your pipeline](/azure/devops/pipelines/repos/multi-repo-checkout)
 
-## Azure Repos
+### Azure Repos
 
-### Updated articles
+#### Updated articles
 
 - [Set Git repository settings and policies](/azure/devops/repos/git/repository-settings)
 - [Create a README file for your repo](/azure/devops/repos/git/create-a-readme)
@@ -193,9 +195,9 @@ Welcome to what's new in the Azure DevOps docs from March 1, 2026 through March 
 - [Set Git repository permissions](/azure/devops/repos/git/set-git-repository-permissions)
 - [Configure GitHub Advanced Security for Azure DevOps](/azure/devops/repos/security/configure-github-advanced-security-features)
 
-## Azure Test Plans
+### Azure Test Plans
 
-### Updated articles
+#### Updated articles
 
 - [Bulk import or export test cases](/azure/devops/test/bulk-import-export-test-cases)
 - [Copy or clone test plans, test suites, and test cases](/azure/devops/test/copy-clone-test-items)
@@ -205,15 +207,15 @@ Welcome to what's new in the Azure DevOps docs from March 1, 2026 through March 
 - [Run automated tests from test plans](/azure/devops/test/run-automated-tests-from-test-hub)
 - [Manage test runs in Azure DevOps Test Plans](/azure/devops/test/test-runs)
 
-## Extend
+### Extend
 
-### Updated articles
+#### Updated articles
 
 - [Publish an Azure DevOps extension from the command line](/azure/devops/extend/publish/command-line)
 
-## Integrate
+### Integrate
 
-### Updated articles
+#### Updated articles
 
 - [Authentication methods for Azure DevOps](/azure/devops/integrate/get-started/authentication/authentication-guidance)
 - [Best practices for integration](/azure/devops/integrate/concepts/integration-bestpractices)
@@ -224,21 +226,21 @@ Welcome to what's new in the Azure DevOps docs from March 1, 2026 through March 
 - [Create a bug in Azure DevOps Services using .NET client libraries](/azure/devops/integrate/quickstarts/create-bug-quickstart)
 - [Fetch work items with queries programmatically](/azure/devops/integrate/quickstarts/work-item-quickstart)
 
-## Marketplace
+### Marketplace
 
-### New articles
+#### New articles
 
 - [Allow extensions to access local network resources](/azure/devops/marketplace/allow-extensions-local-network)
 
-## Miscellaneous
+### Miscellaneous
 
-### Updated articles
+#### Updated articles
 
 - [Azure DevOps documentation](/azure/devops/index)
 
-## Reference
+### Reference
 
-### Updated articles
+#### Updated articles
 
 - [Add or modify a work item type](/azure/devops/reference/add-modify-wit)
 - [Add a portfolio backlog level](/azure/devops/reference/add-portfolio-backlogs)
@@ -247,9 +249,9 @@ Welcome to what's new in the Azure DevOps docs from March 1, 2026 through March 
 - [Provide help text, hyperlinks, or web content on a work item form](/azure/devops/reference/xml/provide-help-text-hyperlinks-web-content-form)
 - [Rollup of work and other fields](/azure/devops/reference/xml/support-rollup-of-work-and-other-fields)
 
-## User guide
+### User guide
 
-### Updated articles
+#### Updated articles
 
 - [Manage manual inline tests](/azure/devops/user-guide/add-run-manual-tests)
 - [Share your code by using Git](/azure/devops/user-guide/code-with-git)
