@@ -42,19 +42,7 @@ git log --after="AFTER_DATE" --before="BEFORE_DATE" --diff-filter=M --name-only 
 
 Filter out files under `docs/**/includes/` and `release-notes/**` files. Filter out any files that do not exist in the repository at the time the command is run. Sort the list of files in descending order by size of the changes, so that articles with the most changes are first. Omit any updated articles that have 25 or fewer lines of changes. If there are fewer than 25 changed articles in total across areas, lower the threshold to 10 or fewer lines of changes and try again.
 
-### Step 4: Build the file-to-commit-description mapping
-
-Skip this step and go to the next step. Do not include messages.
-
-Run a git command that pairs each file with its commit messages:
-
-```
-git log --after="AFTER_DATE" --before="BEFORE_DATE" --diff-filter=M --name-only --pretty=format:"COMMIT_MSG:%s" -- "docs/**/*.md"
-```
-
-Parse the output to build a mapping of `file → [list of commit messages]`. Deduplicate files. This mapping drives the descriptions for each entry.
-
-### Step 5: Extract article titles
+### Step 4: Extract article titles
 
 For each changed file, extract the `title:` field from its YAML front matter using `Select-String`:
 
@@ -62,30 +50,7 @@ For each changed file, extract the `title:` field from its YAML front matter usi
 Select-String -Path $file -Pattern '^title:\s*"?(.+?)"?\s*$'
 ```
 
-### Step 6: Identify community contributors
-
-Skip this step and go to the next step.
-
-Run this command to find all non-Microsoft contributors:
-
-```
-git log --after="AFTER_DATE" --before="BEFORE_DATE" --pretty=format:"%an|||%ae" -- "docs/**/*.md"
-```
-
-Filter out:
-- `@microsoft.com` email addresses
-- `prmerger-automator[bot]`
-- `Learn Build Service`
-
-Also get merge commit subjects to count PRs per external contributor:
-
-```
-git log --after="AFTER_DATE" --before="BEFORE_DATE" --merges --pretty=format:"%s" -- "docs/**/*.md"
-```
-
-**Important**: The contributor list will need manual review by the author. Some contributors with `@users.noreply.github.com` emails may still be Microsoft employees (vendors, contractors). The author knows who they are and will remove internal contributors after generation.
-
-### Step 7: Compose the new month section
+### Step 5: Compose the new month section
 
 Build the section using these formatting rules.
 
@@ -128,20 +93,10 @@ Only include sections that have changes. Skip areas with no new or updated artic
 
 #### Entry format
 
-Each article entry is a Markdown link using a **site-relative path** that starts with `/azure/devops/` followed by the area (path the the article excluding `docs/`) followed by the filename of the article, without the `.md` extension, followed by a brief description derived from the commit messages. For example, a file located at `docs/pipelines/ci-cd.md` would be linked as `/azure/devops/pipelines/ci-cd`.
+Each article entry is a Markdown link using a **site-relative path** that starts with `/azure/devops/` followed by the area (path the the article excluding `docs/`) followed by the filename of the article, without the `.md` extension. For example, a file located at `docs/pipelines/ci-cd.md` would be linked as `/azure/devops/pipelines/ci-cd`.
 
 ```markdown
-- [Article Title](/azure/devops/area/filename) - Brief description of change
-```
-
-#### Grouping related changes
-
-When multiple files share the same commit message or change purpose, group them under a single description:
-
-```markdown
-- Description of shared change
-	- [Article 1](/azure/devops/area/file1)
-	- [Article 2](/azure/devops/area/file2)
+- [Article Title](/azure/devops/area/filename)
 ```
 
 #### New vs Updated
@@ -157,35 +112,12 @@ Within each area section, list **New articles** first (if any), then **Updated a
 
 **Updated articles**
 
-- [Updated Article Title](/azure/devops/updated-article) - What changed
+- [Updated Article Title](/azure/devops/updated-article)
 ```
 
 If there are no new articles for an area, omit the **New articles** sub-heading entirely.
 
-#### Description guidelines
-
-- Derive descriptions from meaningful commit messages, not generic ones like "edits", "metadata", "fix typo"
-- Consolidate multiple small commits on the same file into one meaningful description
-- For screenshot-only updates, use "Review and update screenshots"
-- For broad freshness passes, use "Review and update"
-- Feature-related changes should name the feature (e.g., "Add content for middle-click scroll")
-- Don't include internal commit artifacts like PR numbers
-
-#### Community contributors section
-
-Add at the end of the month, **after all area sections**:
-
-```markdown
-### Community contributors
-
-The following people contributed to the Visual Studio docs during this period. Thank you! Learn how to contribute by following the links under "Get involved" in the [what's new landing page](index.yml).
-
-- [GitHubUsername](https://github.com/GitHubUsername) - Display Name ![N pull requests.](https://img.shields.io/badge/Merged%20Pull%20Requests-N-green)
-```
-
-Sort by PR count (descending), then alphabetically. Use the contributor's GitHub username for the link and their git author name as the display name.
-
-### Step 8: Insert the section and update metadata
+### Step 6: Insert the section and update metadata
 
 1. **Insert** the new month section immediately after the intro paragraph ("Welcome to what's new...") and **before** the previous month's section.
 
@@ -194,22 +126,21 @@ Sort by PR count (descending), then alphabetically. Use the contributor's GitHub
 3. **Update `ms.date`** in the YAML front matter to the current date in `MM/DD/YYYY` format.
 4. If the article, with the new month section added, now has more than three months, **Remove the oldest months** so the file always shows exactly **three months** of content. The oldest month section starts at its `## Month Year` heading and runs to the end of the file.
 
-### Step 9: Update the TOC
+### Step 7: Update the TOC
 
 1. Update the table of contents in `release-notes\docswhatsnew\toc.yml` to include the links to the latest 3 months. The newest month should link to what's new article, and the two previous months should link to the corresponding sections within the same article so that readers can quickly navigate to each month's content. This section should have a maximum of 3 entries, so delete any older entries if adding the newest months would exceed that limit.
 
-### Step 10: Update the index
+### Step 8: Update the index
 
 Update the links to the 3 months of What' new in `release-notes\docswhatsnew\azure-devops-docs-whats-new.md` to include the links to the latest 3 months. The newest month should link to what's new article, and the two previous months should link to the corresponding sections within the same article so that readers can quickly navigate to each month's content. This section should have a maximum of 3 entries, so delete any older entries if adding the newest months would exceed that limit.
 
 
-### Step 11: Final review
+### Step 9: Final review
 
 - Verify all relative links use the `/azure/devops/area/filename` pattern
 - Verify article titles match the `title:` field in each file's front matter
 - Confirm three months are shown (new month + two previous)
 - Confirm no `docs/**/includes/` files appear in the listing
-- Confirm the community contributors section is present (even if empty with a note)
 
 ## Reference: Current file location
 
