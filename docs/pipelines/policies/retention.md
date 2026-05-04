@@ -38,7 +38,7 @@ To open the retention settings pages in your project and choose the policy area 
 
 1. Sign in to your Azure DevOps project.
 
-1. Select ![gear icon](../../media/icons/gear-icon.png) **Project settings**.
+1. Select ![gear icon](../../media/icons/gear-icon.png) > **Project settings**.
 
 1. Select one of the following options:
 
@@ -54,9 +54,9 @@ In most cases, you don't need to keep completed runs indefinitely. Run retention
 
 ::: moniker range="<=azure-devops"
 
-1. Go to the ![gear icon](../../media/icons/gear-icon.png) **Settings** tab of your project's settings.
+1. Go to the ![gear icon](../../media/icons/gear-icon.png) > **Settings** tab of your project's settings.
 
-1. Select **Settings** in the **Pipelines** section:
+1. In the **Pipelines** section, select **Settings**:
 
   * Set how many days to keep [artifacts](../artifacts/artifacts-overview.md), symbols, and attachments.
   * Set how many days to keep [runs](../process/runs.md).
@@ -76,7 +76,7 @@ In most cases, you don't need to keep completed runs indefinitely. Run retention
 
 The **number of recent runs to keep for each pipeline** setting is interpreted differently based on repository type:
 
-- **Azure repos**: Azure Pipelines retains the configured number of latest runs for the [pipeline's default branch](../process/pipeline-default-branch.md) and for each protected branch in the repository. A protected branch is any branch with branch policies configured.
+- **Azure Repos**: Azure Pipelines retains the configured number of latest runs for the [pipeline's default branch](../process/pipeline-default-branch.md) and for each protected branch in the repository. A protected branch is any branch with branch policies configured.
 
   For example, consider a repository with two branches: `main` and `release`. If the pipeline default branch is `main` and `release` has a branch policy, then `release` is treated as a protected branch. If you configure retention to keep three runs, Azure Pipelines keeps the latest three runs for `main`, the latest three runs for `release`, and the latest three runs for the pipeline overall (regardless of branch).
 
@@ -95,7 +95,7 @@ The **number of recent runs to keep for each pipeline** setting is interpreted d
     | Run 2  | release | Retained | Latest 3 for release |
     | Run 1  | main    | Not retained | Not the latest 3 for main or for pipeline |
 
-   The number of days to retain is calculated from that date when the run is completed. For example, there are two runs on a main branch on January 19. The run that completed later is retained.
+   The number of days to retain is calculated from that date when the run is finished. For example, there are two runs on a main branch on January 19. The run that finished later is retained.
 
 - **All other Git repositories**: Azure Pipelines retains the configured number of latest runs for the whole pipeline.
 - **TFVC**: Azure Pipelines retains the configured number of latest runs for the whole pipeline, irrespective of the branch.
@@ -114,7 +114,7 @@ When a run is deleted, the following data is removed:
 * Binaries
 * Test results
 * Run metadata
-* Source labels (TFVC) or tags (Git)
+* Source labels with Team Foundation Version Control (TFVC) or tags (Git)
 
 Pipeline run retention doesn't govern Universal Packages, NuGet, npm, and other packages.
 
@@ -131,7 +131,7 @@ A run is deleted if all the following conditions are true:
 - It isn't marked for indefinite retention.
 - It isn't retained by a release.
 
-Retention policies are processed once per day. Processing time varies because the work is distributed throughout the day for load balancing. This schedule can't be changed.
+Retention policies are processed once per day. Processing time varies because the work is distributed throughout the day for load balancing. You can't change this schedule.
 
 ::: moniker-end
 
@@ -261,9 +261,9 @@ If you use classic releases to deploy to production, customize retention on the 
 
 If you use multistage YAML pipelines, you can configure retention only in project settings. You can't configure retention by deployment environment.
 
-### I didn't mark runs to be retained indefinitely, but a large number of runs are being retained. How can I prevent this behavior?
+### I didn't mark runs to be retained indefinitely, but many runs are being retained. How can I prevent this behavior?
 
-This behavior could be for one of the following reasons:
+This behavior might occur because of one of the following reasons:
 
 - Someone in your project marked the runs for indefinite retention.
 - A release consumes the runs, and the release holds a retention lock on these runs. Customize the release retention policy as previously explained.
@@ -272,11 +272,11 @@ If the runs are no longer needed, or if the releases that retained them are alre
 
 ### How does the setting work for minimum releases to keep?
 
-The **minimum releases to keep** value is defined at the stage level. Azure DevOps always keeps that number of most recently deployed releases for the stage, even if they're outside the retention period. A release counts toward this minimum only when deployment to that stage has started. Both successful and failed deployments are counted. Releases pending approval aren't counted.
+The **Minimum releases to keep** value is defined at the stage level. Azure DevOps always keeps that number of most recently deployed releases for the stage, even if they're outside the retention period. A release counts toward this minimum only when deployment to that stage starts. Both successful and failed deployments are counted. Releases pending approval aren't counted.
 
-### How is retention period decided when release is deployed to multiple stages that have different retention periods?
+### How is the retention period decided when the release is deployed to multiple stages that have different retention periods?
 
-The final retention period is determined by the **days to retain** settings across all stages where the release is deployed, by using the maximum value among those stages. **Minimum releases to keep** is stage-specific and doesn't change based on whether a release was deployed to one or multiple stages. **Retain associated artifacts** applies only when a release is deployed to a stage where that option is enabled.
+The final retention period is determined by the **Days to retain** settings across all stages where the release is deployed, by using the maximum value among those stages. **Minimum releases to keep** is stage-specific and doesn't change based on whether a release was deployed to one or multiple stages. **Retain associated artifacts** applies only when a release is deployed to a stage where that option is enabled.
 
 ### I deleted a stage for which I have some old releases. What retention is considered for this case?
 
@@ -290,7 +290,7 @@ You can also use REST APIs to download run information and artifacts, and then s
 
 ### I lost some runs. Is there a way to get them back?
 
-If you believe that runs were lost because of a service bug, create a support ticket immediately. If a build definition was manually deleted more than a week earlier, it can't be recovered. If runs were deleted as expected by retention policy, you can't recover them.
+If you think that runs were lost because of a service bug, create a support ticket immediately. If a build definition was manually deleted more than a week earlier, you can't recover it. If runs were deleted as expected by retention policy, you can't recover them.
 
 ### How do I use the Build.Cleanup capability of agents?
 
@@ -321,7 +321,7 @@ No. Manual test results aren't deleted.
 If labels or tags must be preserved after a build is deleted, apply them in a pipeline task, add them manually outside the pipeline, or retain the build indefinitely.
 
 > [!IMPORTANT]
-> Any version control labels or tags applied during a build pipeline that aren't automatically created by the **Sources** task are preserved, even if the build is deleted. However, labels or tags automatically created by the **Sources** task during a build are treated as build artifacts and are deleted with the build.
+> Any version control labels or tags applied during a build pipeline that aren't automatically created by the **Sources** task are preserved, even if the build is deleted. Labels or tags that are automatically created by the **Sources** task during a build are treated as build artifacts and are deleted with the build.
 
 ::: moniker-end
 
