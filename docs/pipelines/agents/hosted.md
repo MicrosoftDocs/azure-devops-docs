@@ -70,7 +70,7 @@ You can see the installed software for each macOS hosted agent by choosing the *
 
 | Image | Classic Editor Agent Specification | YAML VM Image Label | Included software |
 | --- | --- | --- | --- |
-| macOS 26<br>*public preview* | *macOS-26* | `macOS-26` | [Link](https://github.com/actions/runner-images/blob/main/images/macos/macos-26-Readme.md) |
+| macOS 26 Tahoe<br>*(public preview)* | *macOS-26* | `macOS-26` | [Link](https://github.com/actions/runner-images/blob/main/images/macos/macos-26-Readme.md) |
 | macOS 15 Sequoia | *macOS-15* | `macOS-latest` OR `macOS-15` | [Link](https://github.com/actions/runner-images/blob/main/images/macos/macos-15-Readme.md) |
 | macOS 14 Sonoma<br>*[macOS 14 Sonoma hosted image deprecation schedule](./hosted-deprecation-schedule.md?tabs=macos-images#macos-14-sonoma-hosted-image-deprecation-schedule)* | *macOS-14* | `macOS-14` | [Link](https://aka.ms/macOS-14-readme) |
 
