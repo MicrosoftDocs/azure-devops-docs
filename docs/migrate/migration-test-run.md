@@ -359,69 +359,9 @@ SqlPackage.exe /sourceconnectionstring:"Data Source=localhost;Initial Catalog=Fo
 ```
 
 The output of the command is a DACPAC file, generated from the collection database *Foo* called *Foo.dacpac*. 
- 
-#### Configure your collection for migration
 
-After your collection database restores on your Azure VM, configure a SQL sign-in to allow Azure DevOps Services to connect to the database to migration the data. This sign-in allows only *read* access to a single database. 
-
-To start, open SQL Server Management Studio on the VM, and then open a new query window against the database to be imported. 
-
-Set the database's recovery to simple: 
-
-```sql
-ALTER DATABASE [<Database name>] SET RECOVERY SIMPLE;
-```
-
-Create a SQL sign-in for the database, and assign that sign-in the 'TFSEXECROLE':
-
-```sql
-USE [<database name>]
-CREATE LOGIN <pick a username> WITH PASSWORD = '<pick a password>'
-CREATE USER <username> FOR LOGIN <username> WITH DEFAULT_SCHEMA=[dbo]
-EXEC sp_addrolemember @rolename='TFSEXECROLE', @membername='<username>'
-```
-
-Following our Fabrikam example, the two SQL commands would look like the following example:
-
-```sql
-ALTER DATABASE [Fabrikam] SET RECOVERY SIMPLE;
-
-USE [Foo]
-CREATE LOGIN fabrikam WITH PASSWORD = 'fabrikampassword'
-CREATE USER fabrikam FOR LOGIN fabrikam WITH DEFAULT_SCHEMA=[dbo]
-EXEC sp_addrolemember @rolename='TFSEXECROLE', @membername='fabrikam'
-```
-> [!NOTE] 
-> Enable [SQL Server and Windows authentication mode](/sql/database-engine/configure-windows/change-server-authentication-mode?view=sql-server-ver15#change-authentication-mode-with-ssms&preserve-view=true) in SQL Server Management Studio on the VM. If you don't enable authentication mode, the migration fails.  
-
-#### Configure the migration specification file to target the VM
-
-Update the migration specification file to include information about how to connect to the SQL Server instance. Open your migration specification file and make the following updates.
-
-1. Remove the DACPAC parameter from the source files object.
-
-    The migration specification before the change is shown in the following code.
-    
-    ![Screenshot of the migration specification before the change.](media/import-spec-before.png)
-    
-    The migration specification after the change is shown in the following code.
-    
-    ![Screenshot of the migration specification after the change.](media/import-spec-after.png)
-
-2. Fill out the required parameters and add the following properties object within your source object in the specification file.
-
-    ```json
-    "Properties":
-    {
-        "ConnectionString": "Data Source={SQL Azure VM Public IP};Initial Catalog={Database Name};Integrated Security=False;User ID={SQL Login Username};Password={SQL Login Password};Encrypt=True;TrustServerCertificate=True" 
-    }
-    ```
-
-After you apply the changes, the migration specification looks like the following example.
-
-![Screenshot of the migration specification referencing a SQL Azure VM.](media/import-spec-iaas.png)
-
-Your migration specification is now configured to use a SQL Azure VM for migration. Proceed with the rest of preparation steps to migration to Azure DevOps Services. After the migration finishes, be sure to delete the SQL sign-in or rotate the password. Microsoft doesn't retain the sign-in information after the migration finished. 
+> [!NOTE]
+> If the Data Migration Tool indicated that you can't use the DACPAC method, follow the SQL Azure VM alternative described in [Set up a SQL Azure VM to migrate to Azure DevOps Services](migration-prepare-test-run.md#set-up-a-sql-azure-vm-to-migrate-to-azure-devops-services), which includes [Configure your collection for migration](migration-prepare-test-run.md#configure-your-collection-for-migration) and [Configure the migration specification file to target the VM](migration-prepare-test-run.md#configure-the-migration-specification-file-to-target-the-vm). Otherwise, continue with [Step 3: Upload the DACPAC file](#step-3-upload-the-dacpac-file).
 
 ### Step 3: Upload the DACPAC file
 
@@ -455,6 +395,9 @@ After the migration finishes, delete the blob container and accompanying storage
 ### Step 4: Generate an SAS token
 
 A [shared access signature (SAS) token](/azure/storage/common/storage-sas-overview) provides delegated access to resources in a storage account. The token allows you to give Microsoft the lowest level of privilege required to access your data for executing the migration. 
+
+> [!IMPORTANT]
+> Generate the SAS token at the **container** level, not at the storage account level or the individual blob level. An account-level SAS grants broader access than the migration requires, and a blob-level SAS doesn't grant the **List** permission needed for the import. Open the storage container that holds your DACPAC, then select **Generate SAS** from the container's context menu.
 
 You can generate SAS tokens [using the Azure portal](/azure/storage/blobs/blob-containers-portal#generate-a-shared-access-signature). From a security point-of-view, we recommend doing the following tasks:
 
