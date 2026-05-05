@@ -27,6 +27,10 @@ This article guides you through creating a feed, configuring your project, and p
 
 ## Set up the Azure Artifacts Credential Provider
 
+Select the scenario that matches your operating system, and then follow the steps to install the Azure Artifacts Credential Provider.
+
+#### [Windows](#tab/windows/)
+
 Use one of the following methods to install the Azure Artifacts Credential Provider.
 
 ### Manual installation
@@ -35,7 +39,7 @@ Use one of the following methods to install the Azure Artifacts Credential Provi
 
 1. Extract the zip file.
 
-1. Copy the `netfx` folder from the extracted archive to `$env:UserProfile\.nuget\plugins` (`%UserProfile%/.nuget/plugins/`).
+1. Copy the `netcore` and `netfx` folders from the extracted archive to `$env:UserProfile\.nuget\plugins` (`%UserProfile%/.nuget/plugins/`).
 
 ### Install using the helper script
 
@@ -54,6 +58,43 @@ If you prefer PowerShell, make sure you have [PowerShell 5.1 or later](https://l
     ```powershell
     iex "& { $(irm https://aka.ms/install-artifacts-credprovider.ps1) } -AddNetFx48"
     ```
+
+See the [Azure Artifacts Credential Provider](https://github.com/microsoft/artifacts-credprovider?tab=readme-ov-file#azure-artifacts-credential-provider) repository for more details.
+
+#### [Linux/Mac](#tab/linuxMac/)
+
+Make sure you've setup the [Prerequisites](https://github.com/microsoft/artifacts-credprovider?tab=readme-ov-file#for-linux-self-contained-installs), then use one of the following methods to install the Azure Artifacts Credential Provider.
+
+### Manual installation
+
+1. Download the latest [Microsoft.NuGet.CredentialProvider.tar.gz](https://github.com/Microsoft/artifacts-credprovider/releases) release.
+
+1. Extract the tar file.
+
+1. Copy the `netcore` and `netfx` folders from the extracted archive to `$HOME/.nuget/plugins`.
+
+### Install using the helper script
+
+This helper script installs only the netcore version of the plugin. If you need both netcore and netfx binaries for mono MSBuild support, download the complete version by following the Manual installation steps above.
+
+1. Download the [Install Credential Provider](https://github.com/microsoft/artifacts-credprovider/blob/master/helpers/installcredprovider.sh) helper script.
+
+1. Run one of the following commands:
+    - Using wget:
+    
+        ```bash
+        wget -qO- https://aka.ms/install-artifacts-credprovider.sh | bash
+        ```
+    
+    - Using curl:
+    
+        ```bash
+        sh -c "$(curl -fsSL https://aka.ms/install-artifacts-credprovider.sh)"
+        ```
+
+See the [Azure Artifacts Credential Provider](https://github.com/microsoft/artifacts-credprovider?tab=readme-ov-file#azure-artifacts-credential-provider) repository for more details.
+
+***
 
 ## Create a feed
 
