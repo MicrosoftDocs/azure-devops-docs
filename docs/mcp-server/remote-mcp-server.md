@@ -9,7 +9,7 @@ ms.topic: how-to
 ms.author: chcomley
 author: chcomley
 monikerRange: 'azure-devops'
-ms.date: 04/21/2026
+ms.date: 05/05/2026
 #customer intent: As a user, I want to set up the remote Azure DevOps MCP Server so I can use AI assistance with my Azure DevOps data without installing and running a local server.
 ---
 
@@ -33,7 +33,7 @@ The remote server provides the same capabilities as the local server, including 
 | Feature | Remote MCP Server (preview) | Local MCP Server |
 |--------|-----------------------------|------------------|
 | **Installation** | No installation required | Requires Node.js 20.0+ and `npx` |
-| **Transport** | Streamable HTTP | Studio |
+| **Transport** | Streamable HTTP | `stdio` |
 | **Authentication** | Microsoft Entra ID (OAuth) | Azure DevOps PAT or Microsoft Entra ID |
 | **Hosting** | Azure DevOps–hosted service | Runs locally on your machine |
 | **Configuration** | Minimal `mcp.json` | Environment-specific setup |
