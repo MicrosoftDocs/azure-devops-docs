@@ -1158,7 +1158,7 @@ Preview page is not available for on-premises versions.
    `Project, UPDATE_VISIBILITY`
    :::column-end:::
    :::column span="2":::
-   Can [change the project visibility](../projects/make-project-public.md) from private to public or public to private. Applies to Azure DevOps Services only.
+   Can [change the project visibility](../projects/make-project-public.md) from public to private. Public projects are retired and can't be made public again. Applies to Azure DevOps Services only.
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -1563,7 +1563,7 @@ Manage project-level permissions through the [web portal admin context](change-p
    `Project, UPDATE_VISIBILITY`
    :::column-end:::
    :::column span="2":::
-   Can [change the project visibility](../projects/make-project-public.md) from private to public or public to private. Applies to Azure DevOps Services only.
+   Can [change the project visibility](../projects/make-project-public.md) from public to private. Public projects are retired and can't be made public again. Applies to Azure DevOps Services only.
    :::column-end:::
 :::row-end:::
 :::row:::
