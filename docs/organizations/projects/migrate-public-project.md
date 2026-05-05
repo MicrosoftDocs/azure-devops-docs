@@ -102,7 +102,7 @@ git push --mirror https://github.com/{owner}/{new-repo}.git
 
 ### Use GitHub Actions Importer
 
-GitHub Actions Importer automates the conversion of Azure DevOps pipelines to GitHub Actions workflows.
+GitHub Actions Importer automates the conversion of Azure Pipelines to GitHub Actions workflows.
 
 1. Install the GitHub Actions Importer CLI extension:
 
@@ -250,7 +250,7 @@ After migrating your content, verify the following items:
 ## Related content
 
 - [Public projects retirement in Azure DevOps](public-projects-retirement.md)
-- [Change project visibility to public or private](make-project-public.md)
+- [Change project visibility to private](make-project-public.md)
 - [About projects](about-projects.md)
 - [Create a project](create-project.md)
 - [GitHub Actions documentation](https://docs.github.com/actions)

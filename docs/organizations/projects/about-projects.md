@@ -73,7 +73,7 @@ For more information, see [Create a project](create-project.md).
 
 ## Limit project visibility
 
-By default, users added to an organization can view all organization and project information and settings. For more information, see [Limit user visibility for projects and more](../../user-guide/manage-organization-collection.md#limit-user-visibility-for-projects-and-more) and [Change project visibility to public or private](make-project-public.md).
+By default, users added to an organization can view all organization and project information and settings. For more information, see [Limit user visibility for projects and more](../../user-guide/manage-organization-collection.md#limit-user-visibility-for-projects-and-more) and [Change project visibility to private](make-project-public.md).
 
 ### View historical data
 
@@ -120,7 +120,7 @@ You might want to add another project in the following instances:
 
 [!INCLUDE [public-projects-retirement](includes/public-projects-retirement.md)]
 
-You can have both private and public projects. You can also [change the visibility of a project from either one to the other](make-project-public.md).
+You can have both private and public projects. To convert a public project to private, see [Change project visibility to private](make-project-public.md).
 
 **Private projects**:
 - Require adding and managing user access.
@@ -136,7 +136,7 @@ For more information, see [Resources granted to project members](resources-grant
 - Support sharing code with others.
 - Support continuous integration/continuous deployment (CI/CD) of open-source software.
 
-For more information, see [Change visibility of a project](make-project-public.md).
+For more information, see [Change project visibility to private](make-project-public.md).
 
 ## Version control support
 
@@ -315,7 +315,7 @@ Several of the following tasks require permissions granted to a member of the Pr
 - [Set favorites](../../project/navigation/set-favorites.md)  
 - [Set iteration paths](../settings/set-iteration-paths-sprints.md)  
 - [Set project-level permissions](../security/change-project-level-permissions.md) 
-- [Set project visibility](../projects/make-project-public.md)  
+- [Change project visibility to private](../projects/make-project-public.md)  
 - [Switch project, repository, team](../../project/navigation/go-to-project-repo.md)  
    :::column-end:::
 :::row-end:::

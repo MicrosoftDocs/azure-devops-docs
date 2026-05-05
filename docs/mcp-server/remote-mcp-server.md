@@ -77,7 +77,7 @@ You can also omit the organization name from the URL. However, if you omit the o
 
 ### Toolsets
 
-Specify toolsets to restrict the tools available to the MCP server. Should not be combined with `X-MCP-Tools`.
+Specify toolsets to restrict the tools available to the MCP server. Shouldn't be combined with `X-MCP-Tools`.
 
 ```json
 {
@@ -143,7 +143,7 @@ Use the `X-MCP-Readonly` header to restrict the server to read-only operations. 
 
 ### Individual tools
 
-Use the `X-MCP-Tools` header to enable only specific tools. Should not be combined with `X-MCP-Toolsets`.
+Use the `X-MCP-Tools` header to enable only specific tools. Shouldn't be combined with `X-MCP-Toolsets`.
 
 ```json
 {
@@ -205,7 +205,7 @@ Core tools are always available.
 
 ### Repos
 
-The repository tools are consolidated into grouped dispatchers using an `action` parameter, following the same pattern as the wiki tools. The previous individual tool names continue to work as aliases. Use `repo_create_branch` and `repo_search_commits` directly — they were not consolidated.
+The repository tools are consolidated into grouped dispatchers using an `action` parameter, following the same pattern as the wiki tools. The previous individual tool names continue to work as aliases. Use `repo_create_branch` and `repo_search_commits` directly—they weren't consolidated.
 
 | Tool | Action | Description | Read-only |
 |---|---|---|:---:|
@@ -233,7 +233,7 @@ The repository tools are consolidated into grouped dispatchers using an `action`
 
 ### Wit
 
-The work item tools are consolidated into grouped dispatchers using an `action` parameter, following the same pattern as the repo and pipeline tools. The previous individual tool names continue to work as aliases. Use `search_workitem` directly — it was not consolidated.
+The work item tools are consolidated into grouped dispatchers using an `action` parameter, following the same pattern as the repo and pipeline tools. The previous individual tool names continue to work as aliases. Use `search_workitem` directly—it wasn't consolidated.
 
 | Tool | Action | Description | Read-only |
 |---|---|---|:---:|
@@ -323,7 +323,7 @@ The wiki read operations are consolidated into a single `wiki` tool. Use the `ac
 
 The remote Azure DevOps MCP Server requires your user account and Azure DevOps organization to connect to Microsoft Entra ID.
 
-Not all MCP clients support Entra authentication by default. Some environments require extra steps to register the client application.
+Not all MCP clients support Microsoft Entra authentication by default. Some environments require extra steps to register the client application.
 
 Currently supported environments include:
 
@@ -372,11 +372,11 @@ For support, you can create an issue in the [local MCP Server](https://github.co
 
 ### What about other clients like GitHub Copilot CLI, Claude Desktop, Claude Code, CodeX, or Cursor?
 
-Additional client tools such as CodeX, Claude Desktop, Claude Code, and ChatGPT require dynamic registration of an OAuth Client ID in Entra before they can be used with the MCP server. We are working closely with the Entra team to enable this capability. For now, only Visual Studio and Visual Studio Code are supported.
+Other client tools such as CodeX, Claude Desktop, Claude Code, and ChatGPT require dynamic registration of an OAuth Client ID in Microsoft Entra before they can be used with the MCP server. We're working closely with the Microsoft Entra team to enable this capability. For now, only Visual Studio and Visual Studio Code are supported.
 
 ### What services can use Azure DevOps MCP Server?
 
-Support for other services, including Azure AI Foundry, Microsoft 365 Copilot, and Copilot Studio, is not yet available but will be added soon.
+Support for other services, including Azure AI Foundry, Microsoft 365 Copilot, and Copilot Studio, isn't yet available but will be added soon.
 
 ### Does the Azure DevOps MCP Server support AgentId?
 

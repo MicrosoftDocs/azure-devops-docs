@@ -689,6 +689,6 @@ If your on-premises deployment is integrated with SQL Server Reports, you must m
 
 - [Manage permissions with command line tool](manage-tokens-namespaces.md)
 
-- [Change project visibility to public or private](../../organizations/projects/make-project-public.md)
+- [Change project visibility to private](../../organizations/projects/make-project-public.md)
 
 :::moniker-end
