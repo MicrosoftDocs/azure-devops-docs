@@ -120,7 +120,7 @@ While human user accounts are the primary focus, Azure DevOps also supports vari
 ::: moniker range="azure-devops"
 - **Organization owner**: The creator of an Azure DevOps Services organization or assigned owner.
   To find the owner for your organization, see [Look up the organization owner](look-up-organization-owner.md).
-- **Service accounts**: Internal Azure DevOps accounts used to support a specific service, such as Agent Pool Service, PipelinesSDK.
+- **Service accounts**: Internal accounts used to support a specific service, such as Agent Pool Service, PipelinesSDK.
   For descriptions of service accounts, see [Security groups, service accounts, and permissions](permissions.md#collection-level-groups).
 - **Service principals or managed identities**: [Microsoft Entra applications or managed identities](../../integrate/get-started/authentication/service-principal-managed-identity.md) added to your organization to perform actions on behalf of a non-Microsoft application.
   Some service principals refer to internal Azure DevOps organization to support internal operations.
@@ -132,7 +132,7 @@ Throughout the security-related articles, "users" refers to all identities added
 ::: moniker-end
 
 ::: moniker range="< azure-devops"
-- **Service accounts**: Internal Azure DevOps accounts used to support a specific service, such as Agent Pool Service, PipelinesSDK.
+- **Service accounts**: Internal accounts used to support a specific service, such as Agent Pool Service, PipelinesSDK.
   For descriptions of service accounts, see [Security groups, service accounts, and permissions](permissions.md#collection-level-groups).
 - **Service principals or managed identities**: Microsoft Entra applications or managed identities added to your organization to perform actions on behalf of a non-Microsoft application.
   Some service principals refer to internal Azure DevOps organization to support internal operations.
@@ -220,7 +220,7 @@ To secure your organization and code, organization-level ([Project Collection Ad
 Key policies to consider include:
 
 - [Specify a privacy policy URL](../accounts/add-privacy-policy-url.md) to describe how you handle internal and external guest data privacy.
-- Decide whether users in your organization are [allowed to create public projects](../projects/make-project-public.md).
+- Public projects are retired. For more information, see [Public projects retirement](../projects/public-projects-retirement.md).
 
 If your organization is connected to Microsoft Entra ID, you have access to the following other security features:
 
