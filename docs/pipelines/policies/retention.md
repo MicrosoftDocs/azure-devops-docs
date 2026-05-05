@@ -21,7 +21,7 @@ Retention policies control how long pipeline runs, classic releases, and test da
 | Product | Requirements |
 |-------------|------------------|
 | Azure DevOps | - An [Azure DevOps organization](../../organizations/accounts/create-organization.md).<br>- An [Azure DevOps project](../../organizations/projects/create-project.md). |
-| Permissions | - By default, users in the Contributors, Build admins, Project admins, and Release admins groups can manage retention policies.<br>- To manage retention policies, you need one of the following subscriptions: [Enterprise](https://visualstudio.microsoft.com/vs/enterprise/), [Test Professional](https://visualstudio.microsoft.com/vs/test-professional/), or [MSDN Platforms](https://visualstudio.microsoft.com/msdn-platforms/).<br>- You can also purchase monthly Azure Test Plans access and assign the [Basic + Test Plans](https://marketplace.visualstudio.com/items?itemName=ms.vss-testmanager-web) access level. For more information, see [Testing access by user role](../../test/manual-test-permissions.md#access-by-user-role). |
+| Permissions | - By default, you can manage retention policies if you're a member in the Contributors, Build admins, Project admins, or Release admins groups.<br>- To manage retention policies, you need one of the following subscriptions: [Enterprise](https://visualstudio.microsoft.com/vs/enterprise/), [Test Professional](https://visualstudio.microsoft.com/vs/test-professional/), or [MSDN Platforms](https://visualstudio.microsoft.com/msdn-platforms/).<br>- You can also purchase monthly Azure Test Plans access and assign the [Basic + Test Plans](https://marketplace.visualstudio.com/items?itemName=ms.vss-testmanager-web) access level. For more information, see [Testing access by user role](../../test/manual-test-permissions.md#access-by-user-role). |
 
 ::: moniker range="azure-devops-2022"
 
@@ -98,7 +98,7 @@ The **number of recent runs to keep for each pipeline** setting is interpreted d
    The number of days to retain is calculated from that date when the run is finished. For example, there are two runs on a main branch on January 19. The run that finished later is retained.
 
 - **All other Git repositories**: Azure Pipelines retains the configured number of latest runs for the whole pipeline.
-- **TFVC**: Azure Pipelines retains the configured number of latest runs for the whole pipeline, irrespective of the branch.
+- **Team Foundation Version Control (TFVC)**: Azure Pipelines retains the configured number of latest runs for the whole pipeline, irrespective of the branch.
 
 ::: moniker-end
 
@@ -114,7 +114,7 @@ When a run is deleted, the following data is removed:
 * Binaries
 * Test results
 * Run metadata
-* Source labels with Team Foundation Version Control (TFVC) or tags (Git)
+* Source labels (TFVC) or tags (Git)
 
 Pipeline run retention doesn't govern Universal Packages, NuGet, npm, and other packages.
 
