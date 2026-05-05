@@ -264,7 +264,7 @@ az boards iteration team list --team
 
 #### Example
 
-For example, the following command lists the iterations for the Service Delivery team. For other output format options, see [Output formats for Azure CLI commands](/cli/azure/format-output-azure-cli)
+For example, the following command lists the iterations for the Service Delivery team. For other output format options, see [Output formats for Azure CLI commands](/cli/azure/format-output-azure-cli).
 
 > [!div class="tabbedCodeSnippets"]
 ```azurecli
