@@ -49,7 +49,7 @@ The service you disabled is no longer present in the sidebar menu of Azure DevOp
 ::: moniker range="azure-devops"
 - [Learn about projects and scaling the organization](../projects/about-projects.md)  
 - [Learn about user, team, project, and organization-level settings](about-settings.md)
-- [Change the project visibility to public or private](../projects/make-project-public.md)
+- [Change project visibility to private](../projects/make-project-public.md)
 ::: moniker-end
 
 ::: moniker range=" < azure-devops"

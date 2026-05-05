@@ -220,7 +220,7 @@ To secure your organization and code, organization-level ([Project Collection Ad
 Key policies to consider include:
 
 - [Specify a privacy policy URL](../accounts/add-privacy-policy-url.md) to describe how you handle internal and external guest data privacy.
-- Decide whether users in your organization are [allowed to create public projects](../projects/make-project-public.md).
+- Public projects are retired. For more information, see [Public projects retirement](../projects/public-projects-retirement.md).
 
 If your organization is connected to Microsoft Entra ID, you have access to the following other security features:
 

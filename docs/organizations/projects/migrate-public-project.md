@@ -250,7 +250,7 @@ After migrating your content, verify the following items:
 ## Related content
 
 - [Public projects retirement in Azure DevOps](public-projects-retirement.md)
-- [Change project visibility to public or private](make-project-public.md)
+- [Change project visibility to private](make-project-public.md)
 - [About projects](about-projects.md)
 - [Create a project](create-project.md)
 - [GitHub Actions documentation](https://docs.github.com/actions)

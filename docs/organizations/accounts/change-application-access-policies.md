@@ -68,7 +68,7 @@ If you disable the policy, the system no longer checks expiration dates, and exp
 | [**Validate SSH key expiration**](#validate-ssh-key-expiration) | ✅ |  |
 | [**Log audit events**](../audit/azure-devops-auditing.md) | ✅ |  |
 | [**Restrict personal access token creation**](manage-pats-with-policies-for-administrators.md#restrict-personal-access-token-creation-organization-policy) | ✅ |  |
-| [**Allow public projects**](../projects/make-project-public.md) | ✅ |  |
+| [**Allow public projects**](../projects/public-projects-retirement.md) | ✅ |  |
 | [**Additional protections when using public package registries**](https://devblogs.microsoft.com/devops/changes-to-azure-artifact-upstream-behavior/) | ✅ |  |
 | [**Enable IP Conditional Access policy validation on non-interactive flows**](conditional-access-policies.md) | ✅ |  | 
 | [**External guest access**](add-external-user.md) | ✅ |  |

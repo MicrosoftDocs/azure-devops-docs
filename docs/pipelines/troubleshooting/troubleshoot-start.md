@@ -63,7 +63,7 @@ To check your limits, navigate to **Project settings**, **Parallel jobs**.
 
 ![Pipelines concurrent jobs](../media/troubleshooting/concurrent-pipeline-limits.png)
 
-If you're using [Microsoft-hosted](../agents/hosted.md) agents, check the parallel job limits for **Microsoft-hosted** for **Private projects** or **Public projects**, depending on whether your Azure DevOps project is a [private project (default) or public project](../../organizations/projects/make-project-public.md).
+If you're using [Microsoft-hosted](../agents/hosted.md) agents, check the parallel job limits for **Microsoft-hosted** for **Private projects** or **Public projects**, depending on whether your Azure DevOps project is a private project (default) or public project. Public projects are [retired](../../organizations/projects/public-projects-retirement.md) and existing public projects convert to private in 2027.
 
 After reviewing the limits, check concurrency to see how many jobs are currently running and how many are available.
 

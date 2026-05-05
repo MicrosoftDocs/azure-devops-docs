@@ -19,7 +19,7 @@ Azure Artifacts helps you to manage all your dependencies from a single feed. By
 
 | **Product**        | **Requirements**                       |
 |--------------------|----------------------------------------|
-| **Azure DevOps**   | - An Azure DevOps [organization](../../organizations/accounts/create-organization.md).<br>- An Azure DevOps [project](../../organizations/projects/create-project.md).<br> - Set your project visibility to [public](../../organizations/projects/make-project-public.md). |
+| **Azure DevOps**   | - An Azure DevOps [organization](../../organizations/accounts/create-organization.md).<br>- An Azure DevOps [project](../../organizations/projects/create-project.md).<br> - A [public project](../../organizations/projects/public-projects-retirement.md) (public projects are retired; this feature applies only to existing public projects). |
 
 ## Create a public feed
 
