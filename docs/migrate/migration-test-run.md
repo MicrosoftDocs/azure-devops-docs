@@ -275,7 +275,7 @@ Now you have everything ready to execute on your  test run migration. Schedule d
 Step 1: [Take the collection offline and detach it](#step-1-detach-your-collection).
 Step 2: [Generate a DACPAC file from the collection you're going to migrate](#step-2-generate-a-dacpac-file).  
 Step 3: [Upload the DACPAC file and migration files to an Azure storage account](#step-3-upload-the-dacpac-file).  
-Step 4: [Generate an SAS token to access the storage account](#step-4-generate-an-sas-token).  
+Step 4: [Generate a SAS token to access the storage account](#step-4-generate-an-sas-token).  
 Step 5: [Complete the migration specification](#step-5-complete-the-migration-specification). 
 
 > [!NOTE]  
@@ -392,7 +392,7 @@ After the migration finishes, delete the blob container and accompanying storage
 > [!NOTE] 
 > If your DACPAC file is larger than 10 GB, we recommend that you use [AzCopy](/azure/storage/common/storage-use-azcopy-v10), as it has multithreaded upload support for faster uploads.
 
-### Step 4: Generate an SAS token
+### Step 4: Generate a SAS token
 
 A [shared access signature (SAS) token](/azure/storage/common/storage-sas-overview) provides delegated access to resources in a storage account. The token allows you to give Microsoft the lowest level of privilege required to access your data for executing the migration. 
 
