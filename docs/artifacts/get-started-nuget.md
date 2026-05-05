@@ -23,7 +23,37 @@ This article guides you through creating a feed, configuring your project, and p
 
 | **Product**        | **Requirements**   |
 |--------------------|--------------------|
-| **Azure DevOps**   | - An Azure DevOps [organization](../organizations/accounts/create-organization.md).<br>- An Azure DevOps [project](../organizations/projects/create-project.md).<br> - Download and install the [Azure Artifacts Credential Provider](https://github.com/microsoft/artifacts-credprovider).<br> - Install the [latest NuGet version](https://www.nuget.org/downloads). |
+| **Azure DevOps**   | - An Azure DevOps [organization](../organizations/accounts/create-organization.md).<br>- An Azure DevOps [project](../organizations/projects/create-project.md).<br> - Download and install [nuget.exe](https://www.nuget.org/downloads) version `4.8.0.5385` or later. We recommend NuGet *5.5.x* or later, which includes important bug fixes for cancellations and timeouts. |
+
+## Set up the Azure Artifacts Credential Provider
+
+Use one of the following methods to install the Azure Artifacts Credential Provider.
+
+### Manual installation
+
+1. Download the latest [Microsoft.Net8.NuGet.CredentialProvider.zip](https://github.com/Microsoft/artifacts-credprovider/releases) release.
+
+1. Extract the zip file.
+
+1. Copy the `netfx` folder from the extracted archive to `$env:UserProfile\.nuget\plugins` (`%UserProfile%/.nuget/plugins/`).
+
+### Install using the helper script
+
+If you prefer PowerShell, make sure you have [PowerShell 5.1 or later](https://learn.microsoft.com/powershell/scripting/install/installing-powershell), and then follow these steps:
+
+1. Download the [Install Credential Provider](https://github.com/microsoft/artifacts-credprovider/blob/master/helpers/installcredprovider.ps1) helper script.
+
+1. Navigate to the script path and run:
+
+    ```powershell
+    iex "& { $(irm https://aka.ms/install-artifacts-credprovider.ps1) } -AddNetfx"
+    ```
+
+1. To install .NET Framework 4.8.1 support, use the `-AddNetFx48` instead:
+
+    ```powershell
+    iex "& { $(irm https://aka.ms/install-artifacts-credprovider.ps1) } -AddNetFx48"
+    ```
 
 ## Create a feed
 
