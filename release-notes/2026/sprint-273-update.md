@@ -15,6 +15,9 @@ Check out the release notes for details.
 ### General
 [!INCLUDE [sprint-273-update-links](includes/general/sprint-273-update-links.md)]
 
+### GitHub Advanced Security for Azure DevOps
+[!INCLUDE [sprint-273-update-links](includes/ghazdo/sprint-273-update-links.md)]
+
 ### Azure Boards
 [!INCLUDE [sprint-273-update-links](includes/boards/sprint-273-update-links.md)]
 

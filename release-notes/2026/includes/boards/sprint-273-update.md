@@ -16,6 +16,6 @@ This provides greater flexibility and makes it easier in cases where you want to
 
 ### Enhanced Security for GitHub Integration REST APIs
 
-We’ve upgraded the [GitHub integration REST APIs](https://learn.microsoft.com/en-us/rest/api/azure/devops/wit/github-connections?view=azure-devops-rest-7.2) to use GitHub App OAuth tokens instead of classic OAuth tokens for user authentication. As a security enhancement, users will be prompted to re-authenticate once via a provided URL the first time they interact with GitHub connections after this change.
+We’ve upgraded the [GitHub integration REST APIs](/rest/api/azure/devops/wit/github-connections?view=azure-devops-rest-7.2) to use GitHub App OAuth tokens instead of classic OAuth tokens for user authentication. As a security enhancement, users will be prompted to re-authenticate once via a provided URL the first time they interact with GitHub connections after this change.
 
 After completing this one-time step, all API interactions will continue as usual. This update enables automatic token refresh, reducing interruptions and eliminating the need for repeated manual reauthorization.
