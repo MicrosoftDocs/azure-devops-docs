@@ -93,7 +93,7 @@ Only include sections that have changes. Skip areas with no new or updated artic
 
 #### Entry format
 
-Each article entry is a Markdown link using a **site-relative path** that starts with `/azure/devops/` followed by the area (path the the article excluding `docs/`) followed by the filename of the article, without the `.md` extension. For example, a file located at `docs/pipelines/ci-cd.md` would be linked as `/azure/devops/pipelines/ci-cd`.
+Each article entry is a Markdown link using a **site-relative path** that starts with `/azure/devops/` followed by the area (path to the article excluding `docs/`) followed by the filename of the article, without the `.md` extension. For example, a file located at `docs/pipelines/ci-cd.md` would be linked as `/azure/devops/pipelines/ci-cd`.
 
 ```markdown
 - [Article Title](/azure/devops/area/filename)
@@ -132,7 +132,7 @@ If there are no new articles for an area, omit the **New articles** sub-heading 
 
 ### Step 8: Update the index
 
-Update the links to the 3 months of What' new in `release-notes\docswhatsnew\azure-devops-docs-whats-new.md` to include the links to the latest 3 months. The newest month should link to what's new article, and the two previous months should link to the corresponding sections within the same article so that readers can quickly navigate to each month's content. This section should have a maximum of 3 entries, so delete any older entries if adding the newest months would exceed that limit.
+Update the links to the 3 months of What's new in `release-notes\docswhatsnew\azure-devops-docs-whats-new.md` to include the links to the latest 3 months. The newest month should link to what's new article, and the two previous months should link to the corresponding sections within the same article so that readers can quickly navigate to each month's content. This section should have a maximum of 3 entries, so delete any older entries if adding the newest months would exceed that limit.
 
 
 ### Step 9: Final review
