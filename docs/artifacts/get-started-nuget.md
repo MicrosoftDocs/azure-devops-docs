@@ -69,7 +69,7 @@ Make sure you've setup the [Prerequisites](https://github.com/microsoft/artifact
 
 ### Manual installation
 
-1. Download the latest [Microsoft.NuGet.CredentialProvider.tar.gz](https://github.com/Microsoft/artifacts-credprovider/releases) release.
+1. Download the latest [Microsoft.NetFx48.NuGet.CredentialProvider.tar.gz](https://github.com/Microsoft/artifacts-credprovider/releases) release.
 
 1. Extract the tar file.
 
