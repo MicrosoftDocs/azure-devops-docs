@@ -38,7 +38,7 @@ You can also [view the build numbers for each version](#azure-devops-server-buil
         </tr>
     </thead>
 <tr>
-    <td rowspan="7"><a href="2026/sprint-273-update.md" data-raw-source="[5 May 2026](2026/sprint-273-update.md)">May 5 2026</a></td>
+    <td rowspan="8"><a href="2026/sprint-273-update.md" data-raw-source="[5 May 2026](2026/sprint-273-update.md)">May 5 2026</a></td>
     <td>Latest version of Azure DevOps Data Migration Tool</td><td>General</td><td>Future</td></tr>
     <td>Improved copy work item choices</td><td>Boards</td><td>Future</td></tr>
     <td>Windows ARM64 agent available in public preview</td><td>Pipelines</td><td>Future</td></tr>
@@ -46,6 +46,7 @@ You can also [view the build numbers for each version](#azure-devops-server-buil
     <td>Show unresolved comments on pull request list</td><td>Repos</td><td>Future</td></tr>
     <td>Git object count limit removed</td><td>Repos</td><td>Future</td></tr>
     <td>Public preview: Capture actual result per step in manual test runs</td><td>Test Plans</td><td>Future</td></tr>
+    <td>Deleted and disabled repositories no longer appear in security overview</td><td>GitHub Advanced Security for Azure DevOps</td><td>N/A</td></tr>
 <tr>
     <td rowspan="7"><a href="2026/sprint-272-update.md" data-raw-source="[14 April 2026](2026/sprint-272-update.md)">April 14 2026</a></td>
     <td>Built-in Code Search, no extension required</td><td>General</td><td>Future</td></tr>

@@ -1025,6 +1025,8 @@
         items:
         - name: "2026"
           items:
+          - name: May 5
+            href: 2026/ghazdo/sprint-273-update.md
           - name: April 14
             href: 2026/ghazdo/sprint-272-update.md
           - name: March 31

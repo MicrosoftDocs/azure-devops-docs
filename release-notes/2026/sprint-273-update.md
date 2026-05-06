@@ -27,6 +27,9 @@ Check out the release notes for details.
 ### Azure Test Plans
 [!INCLUDE [sprint-273-update-links](includes/testplans/sprint-273-update-links.md)]
 
+### GitHub Advanced Security for Azure DevOps
+[!INCLUDE [sprint-273-update-links](includes/ghazdo/sprint-273-update-links.md)]
+
 ## General
 [!INCLUDE [sprint-273-update](includes/general/sprint-273-update.md)]
 
@@ -41,6 +44,9 @@ Check out the release notes for details.
 
 ## Azure Test Plans
 [!INCLUDE [sprint-273-update](includes/testplans/sprint-273-update.md)]
+
+## GitHub Advanced Security for Azure DevOps
+[!INCLUDE [sprint-273-update](includes/ghazdo/sprint-273-update.md)]
 
 ## Next steps
 
