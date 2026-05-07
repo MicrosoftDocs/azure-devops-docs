@@ -4,7 +4,6 @@ titleSuffix: Azure Boards
 description: Learn how to track work by creating queries to list work items in Azure Boards and Azure DevOps.
 ms.custom: boards-queries, cross-project, engagement-fy23
 ms.service: azure-devops-boards
-ms.assetid: 285a014e-89bf-4e5f-bebf-11094e93d796
 ms.topic: overview
 ms.author: chcomley
 author: chcomley

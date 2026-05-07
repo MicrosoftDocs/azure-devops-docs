@@ -3,7 +3,6 @@ ms.subservice: azure-devops-ecosystem
 ms.custom: UpdateFrequency3
 title: Deploy extension backend to Azure
 description: Host your Azure DevOps extension's backend logic on Azure App Service or Azure Functions.
-ms.assetid: 86c9d7d9-51ea-4169-bf2e-f95138679a00
 ms.topic: how-to
 monikerRange: '<= azure-devops'
 ms.author: chcomley

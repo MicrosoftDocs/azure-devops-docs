@@ -2,7 +2,6 @@
 title: Check in your work to the team's codebase
 titleSuffix: Azure Repos
 description: Learn how to check in your work to the team's codebase in Azure Repos, including possible outcomes and conflicts.
-ms.assetid: 325ef815-f163-4b3c-8fcb-2b7faf09c83d
 ms.service: azure-devops-repos
 ms.topic: how-to
 ms.date: 10/11/2022

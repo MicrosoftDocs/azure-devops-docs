@@ -3,7 +3,6 @@ ms.subservice: azure-devops-ecosystem
 title: Package and publish an integration
 titleSuffix: Azure DevOps
 description: Package and publish your integration to the Visual Studio Marketplace so users can discover your tool, service, or product.
-ms.assetid: 61550050-c6d7-40e1-9ea7-030b48b04e3b
 ms.topic: how-to
 ms.custom: UpdateFrequency3
 monikerRange: '<= azure-devops'

@@ -3,7 +3,6 @@ ms.subservice: azure-devops-service-hooks
 ms.topic: how-to
 title: Create a Service Hook for Azure DevOps with Datadog
 description: Find out how to use service hooks to send Azure DevOps events to Datadog so you can build dashboards and monitors from the event metrics and data.
-ms.assetid: 7472f06c-11f3-4603-953c-9a0de5abe29d
 ms.author: chcomley
 author: chcomley
 monikerRange: "<=azure-devops"

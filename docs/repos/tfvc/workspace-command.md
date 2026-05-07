@@ -2,7 +2,6 @@
 title: TFVC workspace command
 titleSuffix: Azure Repos
 description: Use the Team Foundation Version Control workspace command to create, delete, view, or modify properties and mappings that are associated with a workspace.
-ms.assetid: a7b374f5-02c2-4318-9130-31533bf0732c
 ms.service: azure-devops-repos
 ms.topic: reference
 ms.date: 11/10/2022

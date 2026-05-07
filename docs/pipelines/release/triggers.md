@@ -1,7 +1,6 @@
 ---
 title: Classic release triggers
 description: Learn the different types of release triggers and how to use them in your release pipelines.
-ms.assetid: FDB5DA41-1ADA-485E-86BD-8BF147788568
 ms.topic: tutorial
 ms.author: ronai
 author: RoopeshNair

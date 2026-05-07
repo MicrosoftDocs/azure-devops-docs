@@ -4,7 +4,6 @@ titleSuffix: Azure DevOps Services
 description: Create and apply an inherited process to a project, manage the process by adding work item types, states, fields, rules to track your work.
 ms.custom: inherited-process, copilot-scenario-highlight
 ms.service: azure-devops-boards
-ms.assetid: 6EB45080-22E2-43AD-92F9-77D03D5C136F  
 ms.author: chcomley
 author: chcomley
 ai-usage: ai-assisted

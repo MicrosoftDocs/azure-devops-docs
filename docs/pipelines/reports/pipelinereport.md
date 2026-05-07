@@ -1,7 +1,6 @@
 ---
 title: Pipeline reports
 description: Get meaningful insights with pipeline reports in the pipeline
-ms.assetid: 678DF283-CE38-4CAF-BA74-D331B357F510
 ms.topic: concept-article
 ms.custom: continuous-test
 ms.date: 08/21/2019

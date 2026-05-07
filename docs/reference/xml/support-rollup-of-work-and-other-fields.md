@@ -4,7 +4,6 @@ titleSuffix: Azure DevOps
 description: Provides summed values of select fields for all child work items of a parent.
 ms.service: azure-devops-boards
 ms.custom: process, archive-candidate
-ms.assetid: 03d26ae1-cbfa-4156-82e3-1d2fc27f48f3
 ms.author: chcomley
 author: chcomley
 ms.topic: overview

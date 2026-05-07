@@ -3,7 +3,6 @@ title: Get started with Stakeholder access
 titleSuffix: Azure DevOps 
 description: Learn how to add and update work items and view work tracking progress with Stakeholder access in Azure Boards.
 ms.service: azure-devops-boards
-ms.assetid: D76507F1-3154-4EE5-A23A-9179C2F5A365
 ms.author: chcomley
 author: chcomley
 ms.topic: how-to

@@ -2,7 +2,6 @@
 title: Git permission command
 titleSuffix: Azure Repos
 description: See how to use the tf git permission command to manage permissions for git projects.
-ms.assetid: 14c451c2-c59e-46c7-afd5-c727ba683eb2
 ms.service: azure-devops-repos
 ms.topic: reference
 ms.date: 11/14/2022

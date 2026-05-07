@@ -4,7 +4,6 @@ titleSuffix: Azure DevOps
 description: List or delete fields, or change a field attribute defined on Azure DevOps
 ms.service: azure-devops-boards
 ms.custom: witadmin
-ms.assetid: 445d9c20-2e7d-420b-9bdc-2448e8883cd6
 ms.topic: reference
 ms.author: chcomley
 author: chcomley

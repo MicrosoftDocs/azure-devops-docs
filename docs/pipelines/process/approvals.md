@@ -2,7 +2,6 @@
 title: Pipeline deployment approvals
 description: Use approvals to determine when a deployment stage can run.
 ms.topic: concept-article
-ms.assetid: 94977D91-5EC7-471D-9D1A-E100390B8FDD
 ms.author: sandrica
 author: silviuandrica
 ms.date: 08/29/2024

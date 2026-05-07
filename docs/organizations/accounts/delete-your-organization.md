@@ -3,7 +3,6 @@ title: Delete or remove an organization
 titleSuffix: Azure DevOps Services
 description: Learn how to permanently delete an Azure DevOps organization, what happens to users and data, recovery options, and administrator deletion capabilities for Microsoft Entra ID administrators.
 ms.subservice: azure-devops-organizations
-ms.assetid: 82433ad3-d665-4a11-95b7-82178f493fb5
 ai-usage: ai-assisted
 ms.topic: how-to
 ms.author: chcomley

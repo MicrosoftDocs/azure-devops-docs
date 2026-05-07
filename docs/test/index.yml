@@ -9,7 +9,6 @@ metadata:
   description: Plan, run, and track manual and exploratory tests, collect stakeholder feedback, and review automated test results with Azure Test Plans.
   ms.service: azure-devops-test-plans
   ms.custom: UpdateFrequency3
-  ms.assetid: 00f4ed452-fbb8-45f9-8f0a-343702aac5b8  
   ms.topic: landing-page 
   ms.author: pliaros
   author: chcomley

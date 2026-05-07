@@ -2,7 +2,6 @@
 title: Branch TFVC command
 titleSuffix: Azure Repos
 description: See how to use the Branch command in TFVC.
-ms.assetid: 2e075024-9830-4373-a3d4-ac6a194d133f
 ms.service: azure-devops-repos
 ms.topic: reference
 ms.date: 10/22/2022

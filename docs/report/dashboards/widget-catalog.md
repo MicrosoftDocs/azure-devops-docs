@@ -4,7 +4,6 @@ titleSuffix: Azure DevOps
 description: Learn about the widgets that you might want to add to your dashboards when you work in Azure DevOps.
 ms.custom: dashboards, engagement-fy23
 ms.subservice: azure-devops-analytics
-ms.assetid: C9FD12C0-033E-4A4D-AF63-6EF67E7B4828
 ms.topic: overview
 ms.author: chcomley
 author: chcomley

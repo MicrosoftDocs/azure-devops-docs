@@ -2,7 +2,6 @@
 ms.topic: how-to
 title: OAuth 2.0 Authentication for Azure DevOps REST APIs
 description: Learn how to use OAuth 2.0 authentication with Azure DevOps REST APIs, with Microsoft Entra ID as the recommended approach.
-ms.assetid: 19285121-1805-4421-B7C4-63784C9A7CFA
 ai-usage: ai-assisted
 ms.custom: pat-reduction
 ms.subservice: azure-devops-security

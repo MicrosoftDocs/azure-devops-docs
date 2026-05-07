@@ -2,7 +2,6 @@
 title: Destroy version-controlled files
 titleSuffix: Azure Repos
 description: See how to permanently destroy version-controlled files in Team Foundation Version Control (TFVC).
-ms.assetid: 9be4d796-b448-4084-a102-a0e95e7b0053
 ms.service: azure-devops-repos
 ms.topic: how-to
 ms.date: 10/31/2022

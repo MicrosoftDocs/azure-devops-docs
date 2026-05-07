@@ -2,7 +2,6 @@
 title: Resources in YAML pipelines
 description: Learn about defining YAML resources that you can consume in your pipelines and using them to download artifacts, call variables, or trigger pipeline automation.
 ms.topic: concept-article
-ms.assetid: b3ca305c-b587-4cb2-8ac5-52f6bd46c25e
 ms.date: 08/05/2025
 monikerRange: "<=azure-devops"
 #customer intent: As an Azure Pipelines user, I want to know about defining and consuming resources in YAML pipelines so I can use the resources to access artifacts and automate workflows.

@@ -4,7 +4,6 @@ titleSuffix: Azure DevOps
 description: Add, edit, reorder, and manage pages for your team project wiki in Azure DevOps.
 ms.subservice: azure-devops-wiki
 ms.custom: wiki, devx-track-azurecli, devdivchpfy22
-ms.assetid: BD03B9EE-D4DC-4EDC-B0BF-5C11B34E14C9 
 ai-usage: ai-assisted
 ms.author: chcomley
 author: chcomley

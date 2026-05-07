@@ -4,7 +4,6 @@ titleSuffix: Azure Boards
 description: Set Work In Progress limits in Azure Boards to streamline your Kanban process, reduce bottlenecks, and enhance team collaboration. Get started now.
 ms.custom: boards-kanban, copilot-scenario-highlight
 ms.service: azure-devops-boards
-ms.assetid: d18351c1-e9e1-4c16-869d-e15ca478c748
 ms.author: chcomley
 ms.reviewer: chcomley
 author: chcomley

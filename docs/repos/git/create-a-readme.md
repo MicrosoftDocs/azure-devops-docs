@@ -2,7 +2,6 @@
 title: Create a README File for Your Git Repo
 titleSuffix: Azure Repos
 description: Tips, advice, and suggestions on how to create a README file for your Git repo.
-ms.assetid: fcd84ee1-909c-4837-9c39-bf036afe6232
 toc: show
 ms.service: azure-devops-repos
 ms.custom: wiki, devdivchpfy22

@@ -2,7 +2,6 @@
 title: Use Source Control Explorer to manage files
 titleSuffix: Azure Repos
 description: Use Source Control Explorer in Visual Studio to manage files in Team Foundation Version Control. See frequently asked questions about Source Control Explorer.
-ms.assetid: 2781688e-ac66-4ea5-acd3-f045ba757f13
 ms.service: azure-devops-repos
 ms.topic: how-to
 ms.date: 11/29/2022

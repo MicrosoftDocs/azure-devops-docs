@@ -5,7 +5,6 @@ ms.custom: ai-video-demo, pat-reduction, copilot-scenario-highlight
 ai-usage: ai-assisted
 description: Learn how to create and manage personal access tokens (PATs) as alternate passwords to authenticate to Azure DevOps.
 ms.subservice: azure-devops-security
-ms.assetid: d980d58e-4240-47c7-977c-baaa7028a1d8
 ms.topic: how-to
 ms.author: chcomley
 author: chcomley

@@ -4,7 +4,6 @@ titleSuffix: Azure DevOps
 description: Learn how to create, edit, and delete Azure DevOps dashboards. Find out how to set dashboard permissions and add widgets to dashboards to view progress and trends.
 ms.custom: "dashboards"
 ms.subservice: azure-devops-analytics
-ms.assetid: B080CEFA-4D94-44B2-99E3-0E3E85616D04
 ai-usage: ai-assisted
 ms.author: chcomley
 author: chcomley

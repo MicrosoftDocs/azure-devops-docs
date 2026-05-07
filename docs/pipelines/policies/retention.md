@@ -2,7 +2,6 @@
 title: Retention policies
 description: Learn how retention policies work for pipeline runs, classic releases, and test data in Azure Pipelines.
 ms.topic: overview
-ms.assetid: A9AC68EB-E013-4F86-8604-E69BB330817B
 ms.author: rabououn
 author: ramiMSFT
 ms.date: 03/30/2026

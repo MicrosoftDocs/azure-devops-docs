@@ -1,7 +1,6 @@
 ---
 title: YAML pipeline container jobs
 description: Learn about configuring and running Azure Pipelines YAML pipeline jobs inside containers.
-ms.assetid: 8d35f78a-f386-4699-9280-7bd933de9e7b
 ms.topic: concept-article
 ms.date: 08/19/2025
 monikerRange: "<=azure-devops"

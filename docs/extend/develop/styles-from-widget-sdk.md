@@ -4,7 +4,6 @@ ms.custom: UpdateFrequency3
 title: Basic styles for widgets
 titleSuffix: Azure DevOps
 description: Use CSS classes from the Widget SDK to style widgets on Azure DevOps dashboards.
-ms.assetid: E5CB346F-E3EA-4A47-B10C-FFC300766585
 ms.topic: how-to
 monikerRange: '<= azure-devops'
 ms.author: chcomley

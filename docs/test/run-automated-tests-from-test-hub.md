@@ -1,7 +1,6 @@
 ---
 title: Run automated tests from test plans
 description: Run automated tests on-demand from test plans in Azure Test Plans with a build or release pipeline.
-ms.assetid: 2886C58B-0F4B-4C0C-A248-3980CA629FD8 
 ms.service: azure-devops-test-plans
 ms.custom: UpdateFrequency3, copilot-scenario-highlight
 ai-usage: ai-assisted

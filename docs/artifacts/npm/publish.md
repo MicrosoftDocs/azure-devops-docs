@@ -1,7 +1,6 @@
 ---
 title: Publish npm packages from the command line
 description: Learn how to connect to your feed and publish npm packages from the command line.
-ms.assetid: 85773969-1491-4242-A060-BD5D193961A0
 ms.service: azure-devops-artifacts
 ms.custom: engagement-fy23
 ms.topic: tutorial

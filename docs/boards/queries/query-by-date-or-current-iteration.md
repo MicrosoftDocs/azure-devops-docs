@@ -4,7 +4,6 @@ titleSuffix: Azure Boards
 description: Learn how to query for work items based on a date, a team's current iteration, or a sliding window of sprints in Azure Boards. 
 ms.custom: boards-queries, copilot-scenario-highlight
 ms.service: azure-devops-boards
-ms.assetid: 95D9F558-E3C4-4D5F-BB69-76A3BD7625D8
 ms.author: chcomley
 author: chcomley
 ms.topic: example-scenario

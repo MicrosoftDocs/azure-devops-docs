@@ -3,7 +3,6 @@ title: About permissions and security groups
 titleSuffix: Azure DevOps
 description: Understand permissions and access levels in Azure DevOps via inheritance, security groups, roles, and more.
 ms.subservice: azure-devops-security
-ms.assetid: 
 toc: show
 ms.topic: overview
 ms.author: chcomley

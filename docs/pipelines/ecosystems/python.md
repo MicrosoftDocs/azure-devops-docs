@@ -3,7 +3,6 @@ title: Build and publish a Python app
 description: Learn how to automatically build and test Python apps with Azure Pipelines.
 ms.topic: quickstart
 ms.date: 08/22/2025
-ms.assetid: 141149f8-d1a9-49fa-be98-ee9a825a951a
 monikerRange: "<=azure-devops"
 ms.author: rabououn
 ms.custom: devx-track-python, freshness-fy22q2, sfi-image-nochange

@@ -2,7 +2,6 @@
 title: Rename command (Team Foundation Version Control)
 titleSuffix: Azure Repos
 description: Use the Team Foundation Version Control rename command to change the name or the path of a file or folder.
-ms.assetid: ef4aa5f8-b62e-4dd2-9fb8-1e28b7e0123f
 ms.service: azure-devops-repos
 ms.topic: reference
 ms.date: 11/29/2022

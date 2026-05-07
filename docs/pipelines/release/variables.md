@@ -3,7 +3,6 @@ title: Use variables in Classic release pipelines
 description: Learn how to use the different types of variables in a Classic release pipeline.
 author: geekzter
 ms.author: ericvan
-ms.assetid: 864FEB87-FE29-446D-804E-AD6ABDEA82C3
 ms.topic: concept-article
 ms.date: 01/20/2026
 monikerRange: '<= azure-devops'

@@ -3,7 +3,6 @@ title: Branch policies
 titleSuffix: Azure Repos    
 description: Learn about branch policies in Azure DevOps Services & TFS  
 ms.service: azure-devops-repos
-ms.assetid: 36A4986E-BFB8-422B-BFC9-8A0CB75D0603    
 ms.topic: overview
 ms.date: 02/17/2026
 monikerRange: '<= azure-devops'

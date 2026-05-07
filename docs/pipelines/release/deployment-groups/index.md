@@ -1,7 +1,6 @@
 ---
 title: Use Deployment Groups in Classic Release Pipelines
 description: Learn how to create and use deployment groups in classic release pipelines in Azure Pipelines.
-ms.assetid: 21416B0A-F60F-436F-AB46-D6C2A54D5707
 ms.topic: how-to
 ms.author: ronai
 author: RoopeshNair

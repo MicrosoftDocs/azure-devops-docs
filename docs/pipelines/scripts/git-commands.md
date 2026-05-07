@@ -2,7 +2,6 @@
 title: Run Git commands in a script
 description: Learn how you can run Git commands for your workflow in Azure Pipelines build scripts.
 ms.topic: how-to
-ms.assetid: B5481254-F39C-4F1C-BE98-44DC0A95F2AD
 ms.date: 08/25/2025
 monikerRange: '<= azure-devops'
 #customer intent: As a developer, I want to learn how to run GitHub commands in Azure Pipelines scripts so I can run pipelines to work with my code from GitHub.

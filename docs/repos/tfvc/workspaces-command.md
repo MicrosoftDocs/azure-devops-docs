@@ -2,7 +2,6 @@
 title: Workspaces command
 titleSuffix: Azure Repos
 description: Use the Team Foundation Version Control workspaces command to see information about workspaces and to update cached usernames and computer name changes.
-ms.assetid: 4b6f05fb-0520-44f8-8a31-7108ff956a72
 ms.service: azure-devops-repos
 ms.topic: reference
 ms.date: 11/10/2022

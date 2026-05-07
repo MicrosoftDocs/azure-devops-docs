@@ -3,7 +3,6 @@ title: Start Azure Test Plans Free Trial – Azure DevOps Services
 titleSuffix: Azure DevOps Services
 description: Azure Test Plans trial lets you manage and run tests for 30 days at no cost. Get started today and empower your team with advanced testing features.
 ms.subservice: azure-devops-billing
-ms.assetid: 435fb3a4-1766-4172-928d-80c09cfb1410
 ms.topic: how-to
 ms.author: chcomley
 ms.reviewer: chcomley

@@ -1,7 +1,6 @@
 ---
 title: Add Users or Groups to Team or Project
 description: Add users or groups to a team, or add members or groups to a project by following these procedures for Azure DevOps.
-ms.assetid: 3cfefdd2-b161-4e04-8dc0-e2deeac50262
 ai-usage: ai-assisted
 ms.subservice: azure-devops-security
 ms.author: chcomley

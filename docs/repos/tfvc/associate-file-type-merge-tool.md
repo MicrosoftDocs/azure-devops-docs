@@ -2,7 +2,6 @@
 title: Associate a file type with a merge tool
 titleSuffix: Azure Repos
 description: See how to associate a file type with a merge tool in Visual Studio or with a developer command prompt.
-ms.assetid: be153b5c-b26d-4bfe-aec2-fd23156ead68
 ms.service: azure-devops-repos
 ms.topic: how-to
 ms.date: 10/07/2022

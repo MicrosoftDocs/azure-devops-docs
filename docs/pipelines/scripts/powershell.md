@@ -2,7 +2,6 @@
 title: PowerShell scripts for pipelines
 description: Learn about using PowerShell scripts to customize your pipelines by adding business logic.
 ms.topic: concept-article
-ms.assetid: 7D184F55-18BC-40E5-8BE7-283A0DB8E823
 ms.date: 08/19/2025
 monikerRange: '<= azure-devops'
 #customer intent: As a developer, I want to know how PowerShell scripts work in pipelines so I can add business logic to my pipelines.

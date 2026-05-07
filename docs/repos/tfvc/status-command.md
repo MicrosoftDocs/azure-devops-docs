@@ -2,7 +2,6 @@
 title: Status command (Team Foundation Version Control)
 titleSuffix: Azure Repos
 description: Use the Team Foundation Version Control (TFVC) Status command to display information about pending changes and pending change candidates.
-ms.assetid: e9f0b3a1-b8b1-45cf-b113-9fea2948405d
 ms.service: azure-devops-repos
 ms.topic: reference
 ms.date: 12/02/2022

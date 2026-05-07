@@ -4,7 +4,6 @@ description: Learn how to use OpenID Connect (OIDC)-based authentication to secu
 ms.subservice: azure-devops-service-hooks
 ms.topic: how-to
 ms.custom: engagement-fy23, pat-reduction
-ms.assetid: 314a28cd-b2ae-41a0-8dfb-330222c1aed0
 ms.author: chcomley
 author: chcomley
 monikerRange: '<= azure-devops'

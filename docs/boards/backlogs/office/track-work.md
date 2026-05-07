@@ -3,7 +3,6 @@ title: Connect Azure Boards to an Office client to track your work
 titleSuffix: Azure Boards
 description: Learn how to connect to Excel to integrate and track your work in Azure DevOps.
 ms.service: azure-devops-boards
-ms.assetid: fbd7b5e1-e4c4-4976-9596-236e980fdb3b
 ms.author: chcomley
 author: chcomley
 ms.topic: how-to

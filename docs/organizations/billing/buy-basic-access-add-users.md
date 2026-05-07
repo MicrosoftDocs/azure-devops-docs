@@ -4,7 +4,6 @@ titleSuffix: Azure DevOps
 ms.custom: freshness-fy22q1, engagement-fy23, copilot-scenario-highlight
 description: Assign paid access and control the default access of your new users in Azure DevOps.
 ms.subservice: azure-devops-billing
-ms.assetid: 02cb8774-6d1d-4f15-8818-b56541033b1f
 ai-usage: ai-assisted
 ms.topic: how-to
 ms.author: chcomley

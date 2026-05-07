@@ -1,7 +1,6 @@
 ---
 title: Collect diagnostic data
 description: Learn about collecting diagnostic data while testing web and desktop apps with Azure Test Plans in manual and exploratory testing.
-ms.assetid: F536C364-BEFC-48A8-B977-19233941EF6A
 ms.service: azure-devops-test-plans
 ms.custom: UpdateFrequency3
 ms.topic: how-to

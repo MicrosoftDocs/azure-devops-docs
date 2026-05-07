@@ -2,7 +2,6 @@
 title: Use Git tags
 titleSuffix: Azure Repos
 description: Learn how to use Git tags
-ms.assetid: f8273944-a319-43bf-b145-b34a9ad5647f
 ms.service: azure-devops-repos
 ms.topic: how-to
 ms.date: 09/28/2021

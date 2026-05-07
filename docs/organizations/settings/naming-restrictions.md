@@ -4,7 +4,6 @@ titleSuffix: Azure DevOps
 description: See requirements for labeling Azure DevOps objects like organizations, projects, templates, and tags, to enforce consistency and compatibility.
 ms.subservice: azure-devops-settings
 ms.topic: overview
-ms.assetid: F4ED2B52-EDE9-4F2B-B3B5-A3FB504D84B9
 ms.author: chcomley
 author: chcomley
 monikerRange: '<= azure-devops'

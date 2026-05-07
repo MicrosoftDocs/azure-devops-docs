@@ -2,7 +2,6 @@
 title: Configure command
 titleSuffix: Azure Repos
 description: See how to use the Configure command in TFVC.
-ms.assetid: c61c2a48-20d4-4452-b6e1-6c1aa3b521ee
 ms.service: azure-devops-repos
 ms.topic: reference
 ms.date: 10/22/2022

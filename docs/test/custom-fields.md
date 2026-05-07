@@ -1,7 +1,6 @@
 ---
 title: Custom fields for test runs and test results
 description: Store custom data against the test runs and test results.
-ms.assetid: 606679F2-1604-40EA-A720-63CDDA93DD76
 ms.service: azure-devops-test-plans
 ms.custom: UpdateFrequency3
 ms.topic: how-to

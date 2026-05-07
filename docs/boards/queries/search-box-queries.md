@@ -4,7 +4,6 @@ titleSuffix: Azure Boards
 description: Learn how to use the search box to quickly filter for assigned to, created by, state, or work item type in Azure Boards.  
 ms.custom: boards-queries, copilot-scenario-highlight
 ms.service: azure-devops-boards
-ms.assetid: D5A98F10-AAD2-46DD-91DE-41497CF5ECEF 
 ms.author: chcomley
 author: chcomley
 ms.topic: how-to

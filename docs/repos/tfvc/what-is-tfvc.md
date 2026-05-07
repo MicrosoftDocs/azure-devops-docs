@@ -2,7 +2,6 @@
 title: What is Team Foundation Version Control
 titleSuffix: Azure Repos
 description: Find out how to get started with Team Foundation Version Control (TFVC), a centralized version control system. Understand the benefits of using version control.
-ms.assetid: 1d629052-c65d-4c5d-81eb-eaa4413fe285
 ms.service: azure-devops-repos
 ms.topic: overview
 ms.date: 02/17/2026

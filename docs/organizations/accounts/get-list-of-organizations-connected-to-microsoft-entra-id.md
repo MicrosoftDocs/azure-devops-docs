@@ -3,7 +3,6 @@ title: Get list of organizations connected to Microsoft Entra ID
 titleSuffix: Azure DevOps
 description: Learn how to download a complete list of organizations backed by or connected to Microsoft Entra ID.
 ms.subservice: azure-devops-organizations
-ms.assetid: 629a48b6-b2ab-4706-8256-d187c8ed5ce7
 ms.topic: how-to
 ms.author: chcomley
 author: chcomley

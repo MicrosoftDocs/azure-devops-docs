@@ -2,7 +2,6 @@
 title: Cross-platform scripting
 description: Patterns for safe cross-platform scripting
 ms.topic: concept-article
-ms.assetid: 96b7da24-617e-4a58-b65f-040c374e60e2
 ms.date: 09/12/2025
 monikerRange: '<= azure-devops'
 #customer intent: As an Azure Pipelines user, I want to understand how cross-platform scripting works so I can easily support different build platforms in my pipelines.

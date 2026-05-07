@@ -2,7 +2,6 @@
 title: Create a new Git branch from the web
 titleSuffix: Azure Repos
 description: Learn about Git branches and how to create a new branch in your local Git repo, Azure Repos Git repo, and GitHub.
-ms.assetid: 13783230-7762-4fd0-b392-5187c7f9fe1e
 ms.service: azure-devops-repos
 ms.topic: how-to
 ms.date: 10/19/2022

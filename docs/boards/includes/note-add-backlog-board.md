@@ -1,6 +1,5 @@
 ---
 ms.service: azure-devops-boards
-ms.assetid: 
 ms.manager: wiwagn
 ms.author: chcomley
 author: chcomley

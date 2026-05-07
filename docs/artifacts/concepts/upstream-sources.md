@@ -1,7 +1,6 @@
 ---
 title: What are upstream sources?
 description: Learn what is Azure Artifacts upstream sources, their benefits for package management, and recommended best practices.
-ms.assetid: 7cb70122-7c5b-46c1-b07e-1382cfc7d62b
 ms.service: azure-devops-artifacts
 ms.topic: overview
 ms.date: 09/11/2025

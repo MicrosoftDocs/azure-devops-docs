@@ -4,7 +4,6 @@ titleSuffix: Azure Boards
 description: Add tasks, subtasks, to do lists, bugs, or other child work items as checklists to your board for lightweight tracking in Azure Board and Azure DevOps.
 ms.custom: boards-kanban, copilot-scenario-highlight
 ms.service: azure-devops-boards
-ms.assetid: D4CE68D6-8056-4CB7-ACFA-1FCD05223040 
 ms.author: chcomley
 author: chcomley
 ms.topic: tutorial

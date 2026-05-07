@@ -4,7 +4,6 @@ titleSuffix: Azure DevOps
 description: Add work item types to customize your tracking capabilities on product backlogs and Kanban, Scrum, Sprint, and task boards in Azure DevOps Services & Team Foundation Server  
 ms.service: azure-devops-boards
 ms.custom: process
-ms.assetid: f3e42cd4-912b-4fff-a6f2-cf584edc782a
 ms.author: chcomley
 author: chcomley
 ms.topic: how-to

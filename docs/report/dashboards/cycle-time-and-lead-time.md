@@ -4,7 +4,6 @@ titleSuffix: Azure DevOps
 description: Learn how to configure and use the lead time and cycle time widgets to track delivery speed and improve team processes in Azure DevOps.
 ms.custom: dashboards, copilot-scenario-highlight
 ms.subservice: azure-devops-analytics
-ms.assetid: C444622C-A2CA-4FCF-9E68-90D8D4896E6B  
 ms.topic: how-to
 ms.author: chcomley
 author: chcomley

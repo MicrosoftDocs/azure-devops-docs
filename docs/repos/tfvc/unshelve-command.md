@@ -2,7 +2,6 @@
 title: Unshelve TFVC command
 titleSuffix: Azure Repos
 description: Use the Team Foundation Version Control unshelve command to restore shelved files and other items or to remove an existing shelveset from the server.
-ms.assetid: 468ab1f4-f565-41d9-a5ad-1481ad29b176
 ms.service: azure-devops-repos
 ms.topic: reference
 ms.date: 11/29/2022

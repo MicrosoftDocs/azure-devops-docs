@@ -3,7 +3,6 @@ title: Create an organization
 titleSuffix: Azure DevOps
 description: Learn how to create an Azure DevOps organization using a personal Microsoft account, GitHub account, or work or school account.
 ms.subservice: azure-devops-organizations
-ms.assetid: e2eacd25-e6be-4294-b1da-5529195f30d0
 ms.topic: how-to
 ms.custom: copilot-scenario-highlight
 ms.author: chcomley

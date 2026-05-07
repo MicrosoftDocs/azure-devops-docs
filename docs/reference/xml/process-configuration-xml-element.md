@@ -4,7 +4,6 @@ titleSuffix: Azure DevOps
 description: XML syntax and usage for all ProcessConfiguration elements to support customization of work item types and Agile tool backlogs and boards 
 ms.service: azure-devops-boards
 ms.custom: process
-ms.assetid: 4314c6ad-d6ca-4cf2-a3c8-46e4e8ed759a
 ms.author: chcomley
 author: chcomley
 ms.topic: reference

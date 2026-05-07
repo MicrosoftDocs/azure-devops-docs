@@ -4,7 +4,6 @@ titleSuffix: Azure DevOps Services
 ms.custom: engagement-fy23
 description: About user authentication, and controlling conditional access to your organization with a Microsoft Entra tenant.
 ms.subservice: azure-devops-organizations
-ms.assetid: c9aecaaf-9dfb-4877-84b4-60da253e3dc2
 ms.topic: overview
 ms.author: chcomley
 author: chcomley

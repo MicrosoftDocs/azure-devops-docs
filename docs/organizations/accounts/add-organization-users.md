@@ -5,7 +5,6 @@ ms.custom: devx-track-azurecli, copilot-scenario-highlight
 description: Learn how to add users to an organization and manage users' access levels, direct assignments, invitations, and more.
 ms.topic: how-to
 ms.subservice: azure-devops-organizations
-ms.assetid: 19ac647f-04c1-4ddd-9953-b3ecfa0f1457
 ai-usage: ai-assisted
 ms.author: chcomley
 author: chcomley

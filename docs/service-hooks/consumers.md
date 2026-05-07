@@ -2,7 +2,6 @@
 title: Service Hook Consumers
 description: Find information about Azure DevOps service hook consumers, including settings to use when you create subscriptions in Azure DevOps and configure consumers.
 ms.custom: engagement-fy23, devx-track-jenkins, pat-reduction
-ms.assetid: CDACB8A1-4BAB-499F-B9ED-BD1680743B26
 ms.subservice: azure-devops-service-hooks
 ms.topic: overview
 ms.author: chcomley

@@ -3,7 +3,6 @@ title: Get started with Maven packages
 description: Learn how to publish and restore Maven packages to Azure Artifacts feeds.
 ms.service: azure-devops-artifacts
 ms.topic: quickstart
-ms.assetid: C5112218-DA7E-4016-986D-2D0F70DAFA44
 ms.date: 09/29/2025
 monikerRange: "<=azure-devops"
 ---

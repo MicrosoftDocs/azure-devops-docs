@@ -2,7 +2,6 @@
 title: Check in to a folder controlled by gated check-in
 titleSuffix: Azure Repos
 description: Check in to a folder that's controlled by a gated check-in build process.
-ms.assetid: 28fabf92-d3e0-43bb-96b5-7e5c10baa336
 ms.service: azure-devops-repos
 ms.topic: how-to
 ms.date: 10/22/2022

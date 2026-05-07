@@ -4,7 +4,6 @@ titleSuffix: Azure Boards
 description: Learn how to adjust items assigned to a sprint to align with a team's sprint capacity. 
 ms.custom: boards-sprints, copilot-scenario-highlight
 ms.service: azure-devops-boards
-ms.assetid: 
 ms.author: chcomley
 author: chcomley
 ms.topic: how-to

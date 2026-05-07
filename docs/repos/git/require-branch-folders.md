@@ -2,7 +2,6 @@
 title: Require branches to be created in folders
 titleSuffix: Azure Repos
 description: Keep your repository's branch layout clean and understandable by requiring the use of branch folders.
-ms.assetid: dd0fa717-0150-4fd3-8677-29d80b979e65
 ms.service: azure-devops-repos
 ms.topic: how-to
 ms.date: 02/24/2026

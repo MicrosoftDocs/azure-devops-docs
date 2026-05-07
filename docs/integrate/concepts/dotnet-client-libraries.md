@@ -1,7 +1,6 @@
 ---
 title: .NET client libraries
 description: Learn how to use Azure DevOps .NET client libraries to integrate work items, Git repositories, builds, and pipelines into your C# applications and Windows services.
-ms.assetid: 474cdb4f-9a5e-49fb-84b2-9c540ebcf98b
 ai-usage: ai-assisted
 ms.subservice: azure-devops-ecosystem
 ms.custom: devx-track-dotnet, pat-reduction

@@ -3,7 +3,6 @@ title: Implement SAFe® with Azure Boards - Complete guide
 titleSuffix: Azure Boards
 description: Complete guide to implementing Scaled Agile Framework (SAFe®) with Azure Boards. Configure teams, customize processes, plan and track work, monitor progress, and validate your SAFe® implementation.
 ms.service: azure-devops-boards
-ms.assetid: 
 ms.author: chcomley
 author: chcomley
 ms.topic: tutorial

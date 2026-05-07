@@ -4,7 +4,6 @@ ms.custom: devx-track-js, UpdateFrequency3
 title: Add a menu action
 titleSuffix: Azure DevOps
 description: Add a context menu action to your Azure DevOps extension.
-ms.assetid: 7b117bbf-f188-41ce-8ff6-3723ebccea81
 ms.topic: how-to
 monikerRange: '<= azure-devops'
 ms.author: chcomley

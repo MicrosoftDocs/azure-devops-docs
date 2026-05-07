@@ -2,7 +2,6 @@
 title: Rollback command (Team Foundation Version Control)
 titleSuffix: Azure Repos
 description: Use the Team Foundation Version Control (TFVC) rollback command to roll back the effects of one or more changesets to one or more version-controlled items.
-ms.assetid: 8cbca369-eda2-459b-aa37-c86ec2eab3b0
 ms.service: azure-devops-repos
 ms.topic: reference
 ms.date: 11/28/2022

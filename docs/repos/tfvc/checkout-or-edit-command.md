@@ -2,7 +2,6 @@
 title: Checkout or Edit command
 titleSuffix: Azure Repos
 description: Checkout or Edit command
-ms.assetid: 377fec8a-bdc5-4e3c-ac8c-79ee85eef4ce
 ms.service: azure-devops-repos
 ms.topic: reference
 ms.date: 10/17/2022

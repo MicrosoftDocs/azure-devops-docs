@@ -2,7 +2,6 @@
 title: Classic pipelines configuration
 description: Learn about the options available to configure your agent and the different build properties for your Classic pipeline.
 ms.topic: reference
-ms.assetid: 7C469647-117D-4867-B094-8BC811C0003E
 ms.date: 10/07/2024
 monikerRange: '<= azure-devops'
 ---

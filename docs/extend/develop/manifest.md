@@ -2,7 +2,6 @@
 ms.subservice: azure-devops-ecosystem
 title: Extension Manifest Reference| Extensions for Azure DevOps
 description: How to create a manifest for your extension to Azure DevOps
-ms.assetid: e3150221-3cdf-47e1-b7e9-24211498cc29
 ms.topic: reference
 ms.custom: UpdateFrequency3
 monikerRange: '<= azure-devops'

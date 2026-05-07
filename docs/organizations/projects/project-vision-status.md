@@ -4,7 +4,6 @@ titleSuffix: Azure DevOps
 description: Learn how to view and update your project summary page to share project vision, objectives, and activity for Azure DevOps.
 ms.topic: quickstart
 ms.subservice: azure-devops-projects
-ms.assetid: A9ED2BF5-BD0B-4114-A7BD-693C5D747E16
 ms.custom: copilot-scenario-highlight
 ms.author: chcomley
 author: chcomley

@@ -2,7 +2,6 @@
 title: Reconcile differences between two folders
 titleSuffix: Azure Repos
 description: Reconcile differences between two folders in Team Foundation Version Control (TFVC).
-ms.assetid: 8776e3dd-fc70-422c-a191-81b22a989403
 ms.service: azure-devops-repos
 ms.topic: how-to
 ms.date: 11/29/2022

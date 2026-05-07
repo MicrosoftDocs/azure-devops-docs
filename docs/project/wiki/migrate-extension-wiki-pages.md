@@ -4,7 +4,6 @@ titleSuffix: Azure DevOps
 description: Migrate wiki pages created with the Marketplace extension to your team project wiki in Azure DevOps.
 ms.custom: wiki, devdivchpfy22
 ms.subservice: azure-devops-wiki
-ms.assetid: 535245F2-6227-410C-B91D-559FA509D81B
 ms.author: chcomley
 author: chcomley
 ms.topic: how-to

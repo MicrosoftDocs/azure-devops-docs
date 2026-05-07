@@ -2,7 +2,6 @@
 title: Build and test Go projects
 description: Build and test Go projects with Azure Pipelines & Azure DevOps
 ms.topic: how-to
-ms.assetid: a72557df-6df4-4fb6-b437-be0730624e3c
 ms.custom: freshness-fy22q2, devdivchpfy22
 ms.date: 01/16/2026
 monikerRange: 'azure-devops'

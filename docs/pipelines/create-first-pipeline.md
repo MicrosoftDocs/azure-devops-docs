@@ -3,7 +3,6 @@ title: Create your first pipeline
 ms.custom: devx-track-azurecli, py-fresh-zinc, copilot-scenario-highlight
 description: Create your first pipeline in Azure Pipelines, Azure DevOps, & Team Foundation Server
 ms.topic: get-started
-ms.assetid: 038A5329-1B8F-46D9-A0C3-DA3FCFA43996
 ms.author: sdanie
 author: steved0x
 ms.date: 03/10/2026

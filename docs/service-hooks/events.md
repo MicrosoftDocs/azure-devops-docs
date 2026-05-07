@@ -2,7 +2,6 @@
 title: Service Hook Events
 titleSuffix: Azure DevOps  
 description: Find information about events in Azure DevOps projects that service hooks can trigger on. See sample payloads and settings to use during subscription creation. 
-ms.assetid: 1DC15791-5614-405E-8372-79A5ED6E66EE
 ms.custom: engagement-fy23
 ms.subservice: azure-devops-service-hooks
 ms.topic: overview

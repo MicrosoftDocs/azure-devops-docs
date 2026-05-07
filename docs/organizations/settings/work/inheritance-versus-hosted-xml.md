@@ -4,7 +4,6 @@ titleSuffix: Azure DevOps Services
 description: Differences between Inheritance and Hosted XML
 ms.custom: inherited-process
 ms.service: azure-devops-boards
-ms.assetid:
 ms.author: dahellem
 author: danhellem
 ms.topic: overview

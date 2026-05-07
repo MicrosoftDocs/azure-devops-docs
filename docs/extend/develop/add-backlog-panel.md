@@ -1,7 +1,6 @@
 ---
 title: Add Panels to Azure DevOps Backlog Pages
 description: Add panels on backlog pages in Azure DevOps to enhance your workflow. Learn how to extend backlogs with custom panels and streamline project management.
-ms.assetid: 34f01da42-5a98-4bc5-981e-3f8d1ffdf163
 ms.subservice: azure-devops-ecosystem
 ms.topic: how-to
 ms.custom: UpdateFrequency3

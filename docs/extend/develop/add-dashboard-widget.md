@@ -3,7 +3,6 @@ title: Add a Dashboard Widget
 titleSuffix: Azure DevOps
 description: Learn how to create a widget that you can then add to a dashboard in Azure DevOps.
 ms.subservice: azure-devops-ecosystem
-ms.assetid: 1D393A4A-2D25-479D-972B-304F99B5B1F8
 ai-usage: ai-assisted
 ms.topic: concept-article
 ms.custom: UpdateFrequency3

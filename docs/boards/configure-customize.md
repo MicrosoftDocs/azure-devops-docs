@@ -5,7 +5,6 @@ description: Learn how to configure area paths, iterations, work item types, wor
 ms.service: azure-devops-boards
 ms.topic: concept-article
 ai-usage: ai-assisted
-ms.assetid: 
 ms.author: chcomley
 author: chcomley
 monikerRange: '<= azure-devops'

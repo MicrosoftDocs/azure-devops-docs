@@ -3,7 +3,6 @@ ms.subservice: azure-devops-ecosystem
 title: Package and publish extensions
 titleSuffix: Azure DevOps
 description: Package, publish, share, and manage extensions for Azure DevOps in the Visual Studio Marketplace.
-ms.assetid: 77b385a2-069a-4704-9a17-ad9f79a36f17
 ai-usage: ai-assisted
 ms.topic: how-to
 monikerRange: '<= azure-devops'

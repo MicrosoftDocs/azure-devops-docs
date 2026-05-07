@@ -3,7 +3,6 @@ title: Use team delivery plans
 titleSuffix: Azure Boards
 description: Learn how to review and use delivery plans in Azure Boards to track and interact with multiple team deliverables, schedules, and dependencies.
 ms.service: azure-devops-boards
-ms.assetid: 3B41D55E-B7B1-41B1-B68F-7A83BA2890A5  
 ms.author: chcomley
 author: chcomley
 ms.topic: tutorial

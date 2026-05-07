@@ -3,7 +3,6 @@ title: Install extensions
 description: Learn how to install, assign, disable, and uninstall extensions for Azure DevOps.
 ms.topic: how-to
 ms.subservice: azure-devops-marketplace
-ms.assetid: dd117c5c-111f-4361-91c6-ed37fb476c75 
 ms.author: chcomley
 author: chcomley
 ai-usage: ai-assisted

@@ -2,7 +2,6 @@
 title: Set Git branch security and permissions
 titleSuffix: Azure Repos
 description: Set permissions for Git branches in Azure DevOps.
-ms.assetid: 0dacda14-c251-4a89-8141-ae60a47dab52
 ms.service: azure-devops-repos
 ms.topic: how-to
 ms.date: 02/17/2025

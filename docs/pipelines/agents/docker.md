@@ -3,7 +3,6 @@ title: Run a self-hosted agent in Docker
 ms.topic: concept-article
 ms.custom: linux-related-content
 description: Instructions for running your Azure Pipelines agent in Docker
-ms.assetid: e34461fc-8e77-4c94-8f49-cf604a925a19
 ms.date: 04/05/2024
 monikerRange: "<=azure-devops"
 ---

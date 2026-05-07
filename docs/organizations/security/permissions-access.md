@@ -4,7 +4,6 @@ titleSuffix: Azure DevOps
 description: Learn about default permissions and access to common user tasks for Azure DevOps.
 ms.custom: "permissions, engagement-fy23" 
 ms.subservice: azure-devops-security
-ms.assetid: B656A277-BA3D-472D-824D-CDD4E067053E
 toc: show
 ms.author: chcomley
 author: chcomley

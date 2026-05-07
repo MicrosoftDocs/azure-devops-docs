@@ -2,7 +2,6 @@
 title: View commit details
 titleSuffix: Azure Repos
 description: View Git commit details in Visual Studio
-ms.assetid: 82aa7c10-c304-400a-84c9-d5ed87d66180
 toc: show
 ms.service: azure-devops-repos
 ms.topic: reference

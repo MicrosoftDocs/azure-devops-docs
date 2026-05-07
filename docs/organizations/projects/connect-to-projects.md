@@ -4,7 +4,6 @@ titleSuffix: Azure DevOps
 description: Learn how to connect a browser or client, like Visual Studio, to a project in Azure DevOps.
 ms.subservice: azure-devops-projects
 ms.topic: quickstart
-ms.assetid: 1372e56c-b34f-42c2-b72c-94b57620c75c
 ms.author: sdanie
 author: steved0x 
 monikerRange: "<=azure-devops"

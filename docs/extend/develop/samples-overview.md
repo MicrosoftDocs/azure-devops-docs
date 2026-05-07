@@ -2,7 +2,6 @@
 ms.subservice: azure-devops-ecosystem
 title: Samples overview | Extensions for Azure DevOps
 description: Azure DevOps extension samples help you quickly build custom features. Explore real-world examples, source code, and start developing your own extension today.
-ms.assetid: 2639a776-d2f7-4866-b54f-1da3883b1b91
 ms.custom: engagement-fy23, UpdateFrequency3
 ms.topic: overview
 monikerRange: '<= azure-devops'

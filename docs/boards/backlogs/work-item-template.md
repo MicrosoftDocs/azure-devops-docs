@@ -3,7 +3,6 @@ title: Update Work Items with Templates in Azure Boards
 titleSuffix: Azure Boards
 description: Add and manage Azure DevOps work item templates, update work items, and prepopulate work item fields in the web portal and Visual Studio.
 ms.service: azure-devops-boards
-ms.assetid: 9b575c05-16f3-4027-aa5a-67b017a0089d
 ms.author: chcomley
 author: chcomley
 ms.topic: how-to

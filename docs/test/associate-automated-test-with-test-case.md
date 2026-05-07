@@ -1,7 +1,6 @@
 ---
 title: Associate automated tests with test cases
 description: Learn how to associate automated tests with test cases in Azure Test Plans to enable traceability, run tests from pipelines, and track requirement quality.
-ms.assetid: 606679F2-1604-40EA-A720-63CDDA93DD76
 ms.service: azure-devops-test-plans
 ms.custom: UpdateFrequency3
 ms.topic: how-to

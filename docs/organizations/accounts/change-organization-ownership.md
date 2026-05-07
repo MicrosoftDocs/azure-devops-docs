@@ -4,7 +4,6 @@ titleSuffix: Azure DevOps Services
 ms.custom: linked-from-support
 description: Learn how to assign a different user as the owner for your organization and which permissions are required.
 ms.subservice: azure-devops-organizations
-ms.assetid: ec935536-6a5e-4b62-adf2-4207a70440bd
 ms.topic: how-to
 ms.author: chcomley
 author: chcomley

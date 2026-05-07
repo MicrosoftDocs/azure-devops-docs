@@ -2,7 +2,6 @@
 title: Shelvesets command (Team Foundation Version Control)
 titleSuffix: Azure Repos
 description: Use the Team Foundation Version Control (TFVC) Shelvesets command to display information about a set of shelved changes.
-ms.assetid: 731a4339-1ba7-45ab-a551-51c3f4ae158c
 ms.service: azure-devops-repos
 ms.topic: reference
 ms.date: 12/02/2022

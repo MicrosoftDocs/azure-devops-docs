@@ -2,7 +2,6 @@
 title: Authenticate with your Git repos
 titleSuffix: Azure Repos
 description: Learn how to authenticate with Azure Repos using Microsoft Entra OAuth tokens (recommended), personal access tokens, or SSH keys for secure Git operations.
-ms.assetid: 138f12d0-e3fd-4fde-a727-1b39d45c05c4
 ms.service: azure-devops-repos
 ms.topic: overview
 ms.date: 02/24/2026

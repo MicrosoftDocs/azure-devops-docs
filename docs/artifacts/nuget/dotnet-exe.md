@@ -1,7 +1,6 @@
 ---
 title: Publish NuGet packages with dotnet CLI
 description: Learn how to connect to a feed and use the dotnet CLI to publish NuGet packages.
-ms.assetid: CA2DCB9D-93FB-4E2D-B953-BF78D5687B35
 ms.service: azure-devops-artifacts
 ms.custom: devx-track-dotnet
 ms.topic: tutorial

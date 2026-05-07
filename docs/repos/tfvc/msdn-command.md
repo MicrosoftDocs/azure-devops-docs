@@ -2,7 +2,6 @@
 title: Msdn command (Team Foundation Version Control)
 titleSuffix: Azure Repos
 description: See how to use the tf msdn command to display a help topic from learn.microsoft.com documentation.
-ms.assetid: 6a1c9dfe-dacb-466b-a68e-efe3cd6df3e8
 ms.service: azure-devops-repos
 ms.topic: reference
 ms.date: 11/15/2022

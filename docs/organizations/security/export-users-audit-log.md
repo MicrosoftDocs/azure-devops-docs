@@ -3,7 +3,6 @@ title: Export a list of users and their access levels
 titleSuffix: Azure DevOps
 description: Determine the access level-stakeholder, basic, advanced, or Visual Studio Enterprise-granted to user accounts.  
 ms.subservice: azure-devops-security
-ms.assetid: 
 ms.topic: how-to
 ms.reviewer:  
 ms.author: chcomley

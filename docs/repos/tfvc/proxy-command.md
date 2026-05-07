@@ -2,7 +2,6 @@
 title: Proxy command (Team Foundation Version Control)
 titleSuffix: Azure Repos
 description: Use the Team Foundation Version Control proxy command to configure your client computer to use a proxy server.
-ms.assetid: c36b124d-f1cf-4e6f-a053-3b7d501a234c
 ms.service: azure-devops-repos
 ms.topic: reference
 ms.date: 11/29/2022

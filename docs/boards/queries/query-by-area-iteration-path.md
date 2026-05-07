@@ -4,7 +4,6 @@ titleSuffix: Azure Boards
 description: Learn how to query for work items based on their area or iteration path in Azure Boards.
 ms.custom: boards-queries, copilot-scenario-highlight
 ms.service: azure-devops-boards
-ms.assetid: 65066197-F5BE-45F3-898E-1BA3C7BFDCA3
 ms.author: chcomley
 author: chcomley
 ms.topic: example-scenario

@@ -4,7 +4,6 @@ titleSuffix: Azure DevOps Services
 description: Learn about work tracking customizations supported by the inherited process model for Azure DevOps Services.
 ms.custom: inherited-process
 ms.service: azure-devops-boards
-ms.assetid: 
 ms.author: chcomley
 author: chcomley
 ms.topic: overview 

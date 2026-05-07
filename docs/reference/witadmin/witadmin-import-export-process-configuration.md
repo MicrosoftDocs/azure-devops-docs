@@ -4,7 +4,6 @@ titleSuffix: Azure DevOps
 description: Modify the display of the Azure Boards pages that you view through the web portal using command line tools.
 ms.service: azure-devops-boards
 ms.custom: witadmin
-ms.assetid: 95fd448f-d702-4399-b9c2-d61cdce33c02
 ms.author: chcomley
 author: chcomley
 ms.topic: reference

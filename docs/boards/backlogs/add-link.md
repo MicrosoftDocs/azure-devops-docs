@@ -4,7 +4,6 @@ titleSuffix: Azure Boards
 description: Learn how to link work items to user stories, bugs, remote work items, a git branch, and other elements in Azure Boards.
 ms.custom: cross-project, devx-track-azurecli, engagement-fy24, peer-review-program, copilot-scenario-highlight
 ms.service: azure-devops-boards
-ms.assetid: 7130A14B-C760-4622-B97A-8DA27A1B3D02  
 ai-usage: ai-assisted
 ms.author: chcomley
 author: chcomley

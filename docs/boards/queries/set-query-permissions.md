@@ -4,7 +4,6 @@ titleSuffix: Azure Boards
 description: Learn how to set permissions on work item queries and folders when working in Azure Boards and Azure DevOps.
 ms.custom: boards-queries, linked-from-support, engagement-fy23
 ms.service: azure-devops-boards
-ms.assetid: 682f0eb0-462d-41e2-b6a2-41949d1b90fb  
 ms.author: chcomley
 author: chcomley
 ms.topic: how-to
