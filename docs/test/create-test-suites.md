@@ -31,15 +31,15 @@ For key concepts, see [Test objects and terms](test-objects-overview.md).
 
 1. In your test plan, select **More options** for a test suite, and then select **New Suite** > **Static suite**.
 
-   :::image type="content" border="true" source="media/create-test-plan/create-static-suite.png" alt-text="Screenshot shows creating a static test suite from the More options menu.":::
+   :::image type="content" border="true" source="media/create-test-suite/create-static-suite.png" alt-text="Screenshot shows creating a static test suite from the More options menu.":::
 
 2. Enter a name for the suite.
 
-   :::image type="content" border="true" source="media/create-test-plan/enter-static-suite-name.png" alt-text="Screenshot shows box for entering the new static test suite name.":::
+   :::image type="content" border="true" source="media/create-test-suite/enter-static-suite-name.png" alt-text="Screenshot shows box for entering the new static test suite name.":::
 
 You can drag and drop test suites to nest them under static suites, and drag test cases to reorder them.
 
-:::image type="content" border="true" source="media/create-test-plan/drag-drop-test-suite.png" alt-text="Screenshot shows using drag and drop to move a test.":::
+:::image type="content" border="true" source="media/create-test-suite/drag-drop-test-suite.png" alt-text="Screenshot shows using drag and drop to move a test.":::
 
 <a name="backlog"></a>
 
