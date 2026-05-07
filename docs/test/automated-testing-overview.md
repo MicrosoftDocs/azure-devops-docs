@@ -1,5 +1,5 @@
 ---
-title: Set up automated testing with Azure Test Plans
+title: Set Up Automated Testing With Azure Test Plans
 titleSuffix: Azure Test Plans
 description: Learn how to set up end-to-end automated testing with Azure Test Plans, from creating tests to running them from pipelines and tracking results.
 ms.service: azure-devops-test-plans
@@ -17,9 +17,9 @@ ms.update-cycle: 1095-days
 
 [!INCLUDE [version-lt-eq-azure-devops](../includes/version-lt-eq-azure-devops.md)]
 
-Automated testing in Azure Test Plans connects your automated test code to test case work items, so you can run tests on demand from test plans, track results alongside manual tests, and measure requirement-level quality. This article walks through the complete workflow from writing tests to analyzing results.
+Automated testing in Azure Test Plans connects your automated test code to test case work items. You can run tests on demand from test plans, track results alongside manual tests, and measure requirement-level quality. This article walks through the complete workflow from writing tests to analyzing results.
 
-## End-to-end workflow
+## End-to-end automated testing workflow
 
 Setting up automated testing involves the following steps:
 
@@ -42,7 +42,7 @@ Additionally:
 
 ## Step 1: Create automated tests
 
-Write automated tests using any supported framework and check the test project into Azure Repos or a connected GitHub repository.
+Write automated tests by using any supported framework. Check the test project into Azure Repos or a connected GitHub repository.
 
 ### Supported frameworks
 
@@ -71,7 +71,7 @@ To publish test results from non-Microsoft test runners, use the [Publish Test R
 
 ## Step 3: Associate automated tests with test cases
 
-Associating a test method with a test case work item enables:
+When you associate a test method with a test case work item, you get these benefits:
 
 - **On-demand execution** from Test Plans
 - **Requirements traceability** — when test cases link to user stories, automated results show requirement-level quality
@@ -102,11 +102,11 @@ Run automated tests as part of your build or release pipeline. Tests execute aut
 - **Run tests in parallel** — Distribute tests across multiple agents to reduce execution time. See [Run VSTest tests in parallel](../pipelines/test/parallel-testing-vstest.md) or [Run any tests in parallel](../pipelines/test/parallel-testing-any-test-runner.md).
 - **Run only impacted tests** — Use Test Impact Analysis to automatically select tests affected by code changes. See [Test Impact Analysis](../pipelines/test/test-impact-analysis.md).
 
-## Step 5: Review results and track quality
+## Step 5: Review test results and track quality
 
 ### Test results
 
-- **In Test Plans** — View pass/fail results for automated and manual tests together in the [Test Run Hub](test-runs.md). Select any test run to see detailed results, error messages, and stack traces.
+- **In Test Plans** — View pass and fail results for automated and manual tests together in the [Test Run Hub](test-runs.md). Select any test run to see detailed results, error messages, and stack traces.
 - **In Pipelines** — View test results on the **Tests** tab of any pipeline run. See [Review test results](../pipelines/test/review-continuous-test-results-after-build.md).
 
 ### Analytics and trends
@@ -117,7 +117,7 @@ Run automated tests as part of your build or release pipeline. Tests execute aut
 
 ### Requirements traceability
 
-When test cases are linked to requirements (user stories, PBIs), automated test results flow through to show requirement-level quality. Track which requirements pass, fail, or lack test coverage. See [Requirements traceability](../pipelines/test/requirements-traceability.md).
+When you link test cases to requirements (user stories, PBIs), automated test results show requirement-level quality. Track which requirements pass, fail, or lack test coverage. See [Requirements traceability](../pipelines/test/requirements-traceability.md).
 
 ## Related content
 
