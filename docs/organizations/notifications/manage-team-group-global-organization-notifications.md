@@ -3,7 +3,6 @@ title: Manage Notifications - Team, Project, Organization
 titleSuffix: Azure DevOps
 description: Configure email notifications for your team, project, or organization when changes occur to source code, git, work items, and builds in Azure DevOps.
 ms.subservice: azure-devops-notifications
-ms.assetid: 6edc44d0-2729-46f5-8108-c8a5160a6a7a
 ms.custom: cross-project, copilot-scenario-highlight
 ms.author: chcomley
 author: chcomley

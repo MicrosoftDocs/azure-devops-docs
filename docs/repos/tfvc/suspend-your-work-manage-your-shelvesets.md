@@ -2,7 +2,6 @@
 title: Suspend your work and manage your shelvesets
 titleSuffix: Azure Repos
 description: Use shelvesets in Team Foundation Version Control to set aside in-progress work. Use Team Explorer to suspend and resume work and to manage shelvesets.
-ms.assetid: 91b026a7-a590-45d1-81cf-97dfa7acba1d
 ms.service: azure-devops-repos
 ms.topic: how-to
 ms.date: 12/06/2022

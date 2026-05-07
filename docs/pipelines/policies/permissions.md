@@ -2,7 +2,6 @@
 title: Manage security in Azure Pipelines
 ms.topic: how-to
 description: Manage security in Azure Pipelines.
-ms.assetid: A7C38A15-C9FE-4353-8680-21BAC0F6C873
 ms.author: chcomley
 author: chcomley
 ms.date: 12/22/2025

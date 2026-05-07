@@ -2,7 +2,6 @@
 title: Classic process parameters
 description: Learn how to link essential task settings as process parameters across your pipeline.
 ms.topic: concept-article
-ms.assetid: 27AD0094-FDF1-4B36-A82E-B845980984AF
 ms.date: 12/16/2025
 monikerRange: '<= azure-devops'
 ---

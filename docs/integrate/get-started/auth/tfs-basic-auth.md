@@ -3,7 +3,6 @@ ms.subservice: azure-devops-ecosystem
 ms.topic: overview
 title: Cross-platform CLI authentication for Azure DevOps
 description: Learn authentication options for the cross-platform CLI for Azure DevOps, including personal access tokens and basic authentication.
-ms.assetid: 6dc7f977-4b62-4bd6-b77a-1c6cade1ffa8
 monikerRange: '<= azure-devops'
 ms.custom: pat-reduction
 ms.author: chcomley

@@ -2,7 +2,6 @@
 title: Save your changes with Git commits
 titleSuffix: Azure Repos
 description: Learn how to use Git commits to save your work into Git version control, by using Visual Studio or the Git command line.
-ms.assetid: 223c0064-06ec-433e-8ec2-d73a5435cf23
 ms.service: azure-devops-repos
 ms.topic: tutorial
 ms.date: 10/19/2022

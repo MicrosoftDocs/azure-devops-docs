@@ -4,7 +4,6 @@ titleSuffix: Azure Boards
 description: Learn how to use the Scrum process work item types and workflow to track work in Azure Boards and Azure DevOps.
 ms.custom: work-items, engagement-fy23
 ms.service: azure-devops-boards
-ms.assetid: 34c866ea-a130-4371-bfc4-a3d9f87dccca
 ms.topic: overview
 ms.author: chcomley
 author: chcomley

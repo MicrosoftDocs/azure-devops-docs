@@ -4,7 +4,6 @@ titleSuffix: Azure DevOps Services
 description: Customize a process by adding or modifying a custom control for work item type when working in Azure DevOps Services.
 ms.custom: inherited-process
 ms.service: azure-devops-boards
-ms.assetid: 7FC3CF0F-1E2B-4AAE-876C-5E358E7B2B72
 ms.author: chcomley
 author: chcomley
 ms.topic: how-to

@@ -2,7 +2,6 @@
 title: Manage access to specific features
 titleSuffix: Azure DevOps 
 description: Discover how to set permissions in Azure DevOps to control access to specific functionalities. Ensure secure collaboration with tailored access settings.
-ms.assetid: ee4c4a8f-0478-4ade-8b12-4e5ffd0054c7
 ai-usage: ai-assisted
 ms.topic: overview
 ms.subservice: azure-devops-security

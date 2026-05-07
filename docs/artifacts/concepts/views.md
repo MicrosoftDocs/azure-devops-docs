@@ -1,7 +1,6 @@
 ---
 title: What are feed views?
 description: Learn what Azure Artifacts feed views are, and how it's useful for package release.
-ms.assetid: 28527A09-8025-4615-A746-9D213CF8202C
 ms.service: azure-devops-artifacts
 ms.topic: overview
 ms.date: 12/09/2025

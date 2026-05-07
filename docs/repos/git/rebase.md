@@ -2,7 +2,6 @@
 title: Update your branch history with rebase
 titleSuffix: Azure Repos
 description: Learn when and how to rebase to update a local branch, force push to update a remote branch, and interactively rebase to squash local commits.
-ms.assetid: 7f6312b8-6c98-4f44-9b6e-eecbeafbbaea
 ms.service: azure-devops-repos
 ms.topic: tutorial
 ms.date: 10/18/2022

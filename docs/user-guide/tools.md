@@ -3,7 +3,6 @@ title: Tools and Clients that Connect to Azure DevOps
 titleSuffix: Azure DevOps
 description: Review tools that support connecting to Azure DevOps, including browser and command-line tools, tools for developers and Office integration, and more.
 ms.subservice: azure-devops-new-user
-ms.assetid: 3836C81D-6E0A-46B5-8D1D-20E973E4F373
 ms.author: chcomley
 author: chcomley
 ms.topic: concept-article

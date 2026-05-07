@@ -2,7 +2,6 @@
 title: Import a Git repository into a project
 titleSuffix: Azure Repos
 description: Import a Git repository from GitHub, GitLab, Bitbucket, or other locations into your Azure DevOps project using secure authentication methods including Microsoft Entra ID tokens.
-ms.assetid: 5439629e-23fd-44f1-a345-f00a435f1430
 ms.service: azure-devops-repos
 ms.topic: how-to
 monikerRange: '<= azure-devops'

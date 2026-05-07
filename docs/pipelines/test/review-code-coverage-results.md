@@ -1,7 +1,6 @@
 ---
 title: Review and configure code coverage results in Azure Pipelines
 description: Learn how to set up, configure, and troubleshoot code coverage in Azure Pipelines, including diff coverage for pull requests.
-ms.assetid: 86D94FB7-D730-4ECE-8300-5E76934090A5
 ms.topic: how-to
 ms.custom: continuous-test, cross-service
 ms.author: chcomley

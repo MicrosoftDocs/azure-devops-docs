@@ -4,7 +4,6 @@ titleSuffix: Azure DevOps
 description: Find out how to configure and view cumulative flow diagrams (CFDs) so you can improve your Kanban processes by monitoring the flow of work through your system.
 ms.custom: dashboards 
 ms.subservice: azure-devops-analytics
-ms.assetid: 9A16EDA7-6249-49E1-84A3-FE7550028E9F  
 ms.author: chcomley
 author: chcomley
 ms.topic: tutorial

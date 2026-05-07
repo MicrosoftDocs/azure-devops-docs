@@ -4,7 +4,6 @@ titleSuffix: Azure Boards
 description: Learn how to assign work to a sprint or iteration by using Agile processes and tools in Azure Boards.
 ms.custom: boards-sprints, copilot-scenario-highlight
 ms.service: azure-devops-boards
-ms.assetid: 
 ms.author: chcomley
 author: chcomley
 ms.topic: tutorial

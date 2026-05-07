@@ -2,7 +2,6 @@
 ms.subservice: azure-devops-ecosystem
 title: Develop a web extension
 description: Learn how to develop your first web extension for Azure DevOps.
-ms.assetid: ae82118c-82fa-40ec-9f29-989ce981f566
 ms.custom: engagement-fy23, UpdateFrequency3
 ms.topic: how-to
 monikerRange: '<= azure-devops'

@@ -1,7 +1,6 @@
 ---
 title: Test different configurations
 description: Learn how to test different configurations in Azure Test Plans by creating configuration variables, assigning configurations to test plans and suites, and tracking results.
-ms.assetid: 750F033E-A39E-4C85-BF85-012629C33DE6
 ms.service: azure-devops-test-plans
 ms.topic: how-to
 ms.author: pliaros

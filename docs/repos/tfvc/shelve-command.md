@@ -2,7 +2,6 @@
 title: Shelve command (Team Foundation Version Control)
 titleSuffix: Azure Repos
 description: Use the Team Foundation Version Control (TFVC) Shelve command to store a set of pending changes on the server without actually checking them in.
-ms.assetid: f6b9e3c8-9a5a-4ebb-9823-d3a430ca08de
 ms.service: azure-devops-repos
 ms.topic: reference
 ms.date: 12/01/2022

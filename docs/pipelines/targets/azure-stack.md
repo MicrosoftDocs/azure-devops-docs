@@ -1,7 +1,6 @@
 ---
 title: Deploy to Azure Stack Hub App Service using Azure Pipelines
 description: Understand how to deploy to Azure Stack Hub App Service using Azure Pipelines
-ms.assetid: 76C2080A-C1D9-44AF-AA76-1953BA4C2837
 ms.topic: how-to
 ms.author: ronai
 author: RoopeshNair

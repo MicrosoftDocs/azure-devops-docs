@@ -2,7 +2,6 @@
 title: Undo TFVC command
 titleSuffix: Azure Repos
 description: Use the Team Foundation Version Control undo command to discard one or more pending changes to files or folders.
-ms.assetid: e10ca7c5-98d5-4c51-99fa-74b4eb7ceb49
 ms.service: azure-devops-repos
 ms.topic: reference
 ms.date: 12/06/2022

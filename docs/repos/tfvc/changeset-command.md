@@ -2,7 +2,6 @@
 title: Changeset command
 titleSuffix: Azure Repos
 description: See how to use the Changeset command in TFVC.
-ms.assetid: 74d584cf-277f-41f9-b7a1-642ebab963af
 ms.service: azure-devops-repos
 ms.topic: reference
 ms.date: 10/22/2022

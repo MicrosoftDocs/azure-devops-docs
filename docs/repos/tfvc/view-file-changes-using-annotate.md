@@ -2,7 +2,6 @@
 title: View file changes using annotate in Visual Studio
 titleSuffix: Azure Repos
 description: Use annotate to a see changes in earlier versions of a file in Team Foundation Version Control using Visual Studio.
-ms.assetid: 34e29de4-0972-4e32-9d3d-26dc09f00713
 ms.service: azure-devops-repos
 ms.topic: how-to
 ms.date: 05/30/2024

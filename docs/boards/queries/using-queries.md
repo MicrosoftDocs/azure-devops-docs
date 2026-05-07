@@ -4,7 +4,6 @@ titleSuffix: Azure Boards
 description: Learn how to use queries and perform tasks like define a flat-list, clause, or hyperlink, and use a tree, direct link, hyperlink, or logical expression. Also learn how to query across or within projects and view results in a dashboard, and best practices.
 ms.custom: boards-queries, linked-from-support, cross-project, engagement-fy23, copilot-scenario-highlight
 ms.service: azure-devops-boards
-ms.assetid: 364000d3-200a-495a-bfb9-83915240af67
 ai-usage: ai-assisted
 ms.author: chcomley
 author: chcomley

@@ -2,7 +2,6 @@
 title: Rename a Git Repo in Your Project
 titleSuffix: Azure Repos
 description: You can rename a Git repository in a few steps. Your team must take a few more steps to adapt to the change.
-ms.assetid: 05971618-4ea9-4997-bb51-2d74211352ef
 ms.service: azure-devops-repos
 ms.topic: how-to
 monikerRange: '<= azure-devops'

@@ -2,7 +2,6 @@
 title: Delete a Git branch
 titleSuffix: Azure Repos
 description: "Learn how to delete a Git branch by using two different methods: in Visual Studio and from the command line."
-ms.assetid: 4b18a164-d1cb-4f87-89cb-8dc227e64af1
 ms.service: azure-devops-repos
 ms.topic: tutorial
 ms.date: 02/22/2018

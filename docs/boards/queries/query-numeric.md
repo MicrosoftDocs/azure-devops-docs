@@ -4,7 +4,6 @@ titleSuffix: Azure Boards
 description: Track work by creating queries based on effort, story points, schedules, or time tracking fields in Azure Boards and Azure DevOps.
 ms.custom: boards-queries, engagement-fy23, copilot-scenario-highlight
 ms.service: azure-devops-boards
-ms.assetid: 78fe418f-fbd8-4ae2-97d7-c754c14dd3cd
 ms.author: chcomley
 author: chcomley
 ms.topic: example-scenario

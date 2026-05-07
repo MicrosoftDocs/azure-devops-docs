@@ -4,7 +4,6 @@ titleSuffix: Azure DevOps
 description: Quickly access views or artifacts by favoriting them in Azure DevOps
 ms.custom: "navigation, cross-project, cross-service"
 ms.subservice: azure-devops-projects
-ms.assetid: 473E452D-59F7-4F6F-97C6-657ECD99ADCB
 ms.author: chcomley
 author: chcomley
 ms.topic: tutorial

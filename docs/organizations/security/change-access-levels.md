@@ -3,7 +3,6 @@ title: Change Access Levels
 titleSuffix: Azure DevOps 
 description: Learn how to set the access level for a user or group based on their license. 
 ms.subservice: azure-devops-security
-ms.assetid: 84B0D454-09A7-414B-A9E0-FE9A9ACD7E99
 ms.topic: how-to
 ms.reviewer:  
 ms.author: chcomley

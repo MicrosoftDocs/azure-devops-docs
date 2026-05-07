@@ -4,7 +4,6 @@ titleSuffix: Azure DevOps
 description: Use a README file or wiki to share information about your project or repository with your team or contributors in Azure DevOps. 
 ms.subservice: azure-devops-wiki
 ms.custom: wiki, devdivchpfy22
-ms.assetid:  
 ms.author: chcomley
 author: chcomley
 ms.reviewer: gopinach

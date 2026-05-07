@@ -1,7 +1,6 @@
 ---
 title: (Classic) Deployment Group Jobs in Release Pipelines
 description: Understand deployment group jobs in Azure Pipelines.
-ms.assetid: 05956924-242A-43D6-AA29-C93149C0265B
 ms.topic: concept-article
 ms.date: 01/26/2023
 monikerRange: '<= azure-devops'

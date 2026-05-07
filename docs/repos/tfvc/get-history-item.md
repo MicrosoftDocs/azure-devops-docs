@@ -2,7 +2,6 @@
 title: Get the history of a TFVC item
 titleSuffix: Azure Repos
 description: See how to use the History window in Visual Studio to get the history of a Team Foundation Version Control (TFVC) item.
-ms.assetid: 5a29031c-7fb6-42ac-885c-276b59a4b951
 ms.service: azure-devops-repos
 ms.topic: how-to
 ms.date: 11/14/2022

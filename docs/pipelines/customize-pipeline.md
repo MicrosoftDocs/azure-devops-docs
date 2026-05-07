@@ -3,7 +3,6 @@ title: Customize your pipeline
 ms.custom: devx-track-azurecli, copilot-scenario-highlight
 description: Step-by-step tutorial to customize a pipeline
 ms.topic: quickstart
-ms.assetid: b3a9043e-aa64-4824-9999-afb2be72f141
 ms.date: 03/10/2026
 monikerRange: "<=azure-devops"
 ai-usage: ai-assisted

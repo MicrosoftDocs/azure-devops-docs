@@ -2,7 +2,6 @@
 title: View where and when changesets have been merged
 titleSuffix: Azure Repos
 description: Use the Team Foundation Version Control Tracking Changeset window to see which code branches received which changes and to see when the changes were merged.
-ms.assetid: 457567ff-7da3-4098-b047-bd169bad5a38
 ms.service: azure-devops-repos
 ms.topic: how-to
 ms.date: 11/22/2022

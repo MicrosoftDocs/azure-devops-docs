@@ -2,7 +2,6 @@
 ms.subservice: azure-devops-ecosystem
 title: Integrate Custom Build Tasks with Extensions
 description: Learn how to create and integrate custom build pipeline tasks with extensions in Azure DevOps.
-ms.assetid: 00806e48-3839-40eb-880f-12ec53bfdf73
 ms.topic: concept-article
 ms.custom: UpdateFrequency3
 monikerRange: '<= azure-devops'

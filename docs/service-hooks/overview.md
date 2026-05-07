@@ -1,7 +1,6 @@
 ---
 title: Integrate with Service Hooks
 description: Become familiar with service hooks and find out how to use them to perform tasks in other services when events happen in your Azure DevOps project.
-ms.assetid: c0617128-b67c-4ec4-b1c9-e65e1b3ab82c
 ms.subservice: azure-devops-service-hooks
 ms.topic: overview
 ms.author: chcomley

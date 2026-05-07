@@ -2,7 +2,6 @@
 title: Configure check-in notes
 titleSuffix: Azure Repos
 description: See how to require and configure check-in notes for TFVC in Visual Studio.
-ms.assetid: c7829273-4d53-412c-99d6-4944780ebc74
 ms.service: azure-devops-repos
 ms.topic: how-to
 ms.date: 10/12/2022

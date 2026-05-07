@@ -4,7 +4,6 @@ titleSuffix: Azure DevOps
 description: Work with Team Explorer in Visual Studio. Build and manage pipelines from the Web Portal and Task Board, maintain project files in Git or TFVC, and download Azure DevOps clients.
 keywords: Download Azure DevOps clients 
 ms.subservice: azure-devops-new-user
-ms.assetid: fd7a5cf7-7916-4fa0-b5e6-5a83cf377a02
 ms.author: chcomley
 author: chcomley
 ms.topic: concept-article

@@ -2,7 +2,6 @@
 title: Clean up files when users leave
 titleSuffix: Azure Repos
 description: Learn how to clean up TFVC files when users leave.
-ms.assetid: 7e8249cc-2933-4caa-8bee-ea93a3aff01a
 ms.service: azure-devops-repos
 ms.topic: how-to
 monikerRange: '<= azure-devops'

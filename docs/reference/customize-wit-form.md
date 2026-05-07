@@ -4,7 +4,6 @@ titleSuffix: Azure DevOps
 description: Customize the web version of the work item form in Azure DevOps Services & Team Foundation Server    
 ms.service: azure-devops-boards
 ms.custom: process, engagement-fy23
-ms.assetid: 4DE53686-3349-41B8-A361-814B2519E60F
 ms.author: chcomley
 author: chcomley
 ms.topic: how-to

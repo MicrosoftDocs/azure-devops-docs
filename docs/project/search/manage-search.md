@@ -1,7 +1,6 @@
 ---
 title: Manage Search, indexing
 description: Check indexing status, pause, resume, and reindex repositories or collections for Search in Azure DevOps Server.
-ms.assetid: 
 ms.custom: engagement-fy23
 ms.subservice: azure-devops-search
 ai-usage: ai-assisted

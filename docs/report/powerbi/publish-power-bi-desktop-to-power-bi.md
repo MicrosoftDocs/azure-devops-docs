@@ -4,7 +4,6 @@ titleSuffix: Azure DevOps
 description: Learn how to publish and enable refresh of a Power BI Desktop file to Power BI that uses Analytics for Azure DevOps.
 ms.subservice: azure-devops-analytics
 ms.topic: how-to
-ms.assetid: C03A04EC-F011-4043-A38E-5C5394F777CE
 ms.author: chcomley
 monikerRange: "<=azure-devops"
 author: chcomley

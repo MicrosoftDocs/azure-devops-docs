@@ -3,7 +3,6 @@ title: Create a project
 titleSuffix: Azure DevOps
 ms.custom: devx-track-azurecli, engagement-fy23, copilot-scenario-highlight
 description: Learn how to create a project in Azure DevOps to plan, track, and collaborate on software development. Follow step-by-step instructions to get started.
-ms.assetid: 21F3C364-34F4-41B0-9EFC-6D4A141D81E0
 ms.subservice: azure-devops-projects
 ms.topic: how-to
 ai-usage: ai-assisted

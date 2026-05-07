@@ -2,7 +2,6 @@
 title: Unlabel TFVC command
 titleSuffix: Azure Repos
 description: Use the unlabel command of the Team Foundation Version Control tf command-line utility to remove an item from an existing label.
-ms.assetid: 37b15bd4-ec75-4fbe-938e-544793c88a3c
 ms.service: azure-devops-repos
 ms.topic: reference
 ms.date: 12/06/2022

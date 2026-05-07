@@ -2,7 +2,6 @@
 title: Clone an existing Git repo
 titleSuffix: Azure Repos
 description: Learn how to create a local clone of any remote Git repo using Visual Studio or the Git command line.
-ms.assetid: b6240e2f-2d3d-4874-9953-7e554d5e3b97
 ms.service: azure-devops-repos
 ms.topic: tutorial
 ms.date: 02/24/2026

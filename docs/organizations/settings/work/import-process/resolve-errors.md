@@ -4,7 +4,6 @@ titleSuffix: Azure DevOps Services
 description: Fix errors reported upon importing a process to support customization of tracking work in Azure DevOps Services.  
 ms.service: azure-devops-boards
 ms.custom: engagement-fy23, copilot-scenario-highlight
-ms.assetid: 2407FB2B-FAE6-4BBB-99CB-B88904293A43 
 ai-usage: ai-assisted 
 ms.topic: troubleshooting
 ms.author: chcomley

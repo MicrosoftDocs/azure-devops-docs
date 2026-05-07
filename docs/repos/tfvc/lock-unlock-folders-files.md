@@ -2,7 +2,6 @@
 title: Lock and unlock folders or files in TFVC
 titleSuffix: Azure Repos
 description: Lock and unlock Team Foundation Version Control (TFVC) folders or files by using Visual Studio Source Control Explorer.
-ms.assetid: 3fe6cce2-b152-4733-8aa1-4f74072e8767
 ms.service: azure-devops-repos
 ms.topic: how-to
 ms.date: 11/15/2022

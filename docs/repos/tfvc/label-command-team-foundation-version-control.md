@@ -2,7 +2,6 @@
 title: Label command (Team Foundation Version Control)
 titleSuffix: Azure Repos
 description: See how to use the tf label command to attach or remove labels from files or folders in Team Foundation Version Control (TFVC).
-ms.assetid: 815fd18a-1511-4f72-8a4a-7b1b0d3b2144
 ms.service: azure-devops-repos
 ms.topic: reference
 ms.date: 11/15/2022

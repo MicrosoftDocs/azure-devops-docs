@@ -4,7 +4,6 @@ titleSuffix: Azure DevOps
 description: View and update work items from your mobile client using Azure DevOps.
 ms.subservice: azure-devops-projects
 ms.topic: how-to
-ms.assetid: 1B91BB7F-1205-4E51-B33C-1349D3117408
 ms.author: chcomley
 author: chcomley
 ai-usage: ai-assisted

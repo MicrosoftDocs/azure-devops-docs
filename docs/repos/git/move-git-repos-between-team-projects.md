@@ -3,7 +3,6 @@ title: Move Git Repositories Between Projects
 description: Explore how to move Git repositories between team projects with full-fidelity history.
 ms.topic: how-to
 ms.service: azure-devops-repos
-ms.assetid: 5CB114EA-EC65-4FF8-BC71-1B7E4B15D921
 ms.date: 09/28/2021
 monikerRange: '<= azure-devops'
 ms.subservice: azure-devops-repos-git

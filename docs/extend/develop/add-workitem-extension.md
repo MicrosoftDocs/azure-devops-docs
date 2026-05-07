@@ -2,7 +2,6 @@
 title: Extend the work item form
 titleSuffix: Azure DevOps
 description: Add groups, pages, menu actions, observers, and controls to the work item form in Azure DevOps extensions.
-ms.assetid: bffc76b7-f6ba-41f0-8460-ccb44d45d670
 ai-usage: ai-assisted
 ms.subservice: azure-devops-ecosystem
 ms.topic: how-to

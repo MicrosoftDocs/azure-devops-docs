@@ -2,7 +2,6 @@
 title: Git view command
 titleSuffix: Azure Repos
 description: See how to use the tf git view command to view a file from a Git repository on your computer.
-ms.assetid: e9ec11ff-9f66-454a-8448-e2b354ae5b74
 ms.service: azure-devops-repos
 ms.topic: reference
 ms.date: 11/14/2022

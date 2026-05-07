@@ -2,7 +2,6 @@
 title: Version control
 titleSuffix: Azure Repos
 description: Learn about version control in Git with Azure DevOps.
-ms.assetid: 0270b0fa-461b-4079-9703-cdcf53bdf39f
 ms.service: azure-devops-repos
 ms.topic: overview
 ms.date: 02/17/2026

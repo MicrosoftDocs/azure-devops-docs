@@ -1,7 +1,6 @@
 ---
 title: Share packages using package badges in Azure Artifacts
 description: Learn how to share your packages using package badges in Azure Artifacts.
-ms.assetid: 60a3f33a-d8bc-436a-a676-c1bd4b3066e7
 ms.service: azure-devops-artifacts
 ms.topic: how-to
 ms.date: 06/03/2025

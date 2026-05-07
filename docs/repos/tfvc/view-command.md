@@ -2,7 +2,6 @@
 title: Retrieve a file using the TFVC View command
 titleSuffix: Azure Repos
 description: Use the Team Foundation Version Control view command to retrieve a specific version of a file, store it in a temporary folder on your computer, and display it.
-ms.assetid: d67fcb55-6f54-434f-ba05-4564f976b8d9
 ms.service: azure-devops-repos
 ms.topic: reference
 ms.date: 11/22/2022

@@ -4,7 +4,6 @@ titleSuffix: Azure DevOps
 description: Learn about requesting and providing feedback about your software applications in Azure DevOps 
 ms.subservice: azure-devops-feedback
 ms.topic: overview
-ms.assetid:  
 ms.author: chcomley
 author: chcomley 
 monikerRange: '<= azure-devops'

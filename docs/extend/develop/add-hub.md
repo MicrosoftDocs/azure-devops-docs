@@ -2,7 +2,6 @@
 title: Add a hub
 titleSuffix: Azure DevOps
 description: Create a custom hub extension that appears in Azure DevOps navigation.
-ms.assetid: 0d06c2d8-402f-4373-a2d3-2513ae278443
 ms.subservice: azure-devops-ecosystem
 ms.custom: UpdateFrequency3
 ms.topic: how-to

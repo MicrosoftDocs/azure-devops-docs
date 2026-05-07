@@ -3,7 +3,6 @@ title: Restrict organization creation
 titleSuffix: Azure DevOps Services
 description: Restrict who can create Azure DevOps organizations by enabling the Microsoft Entra tenant policy and managing the allowlist.
 ms.subservice: azure-devops-organizations
-ms.assetid:
 ai-usage: ai-assisted
 ms.topic: how-to
 ms.author: chcomley

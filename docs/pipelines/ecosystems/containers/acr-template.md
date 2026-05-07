@@ -2,7 +2,6 @@
 title: Use Docker YAML to build and push images to Azure Container Registry
 description: Use an Azure Pipelines Docker template to create a YAML pipeline that builds and pushes a Docker image to Azure Container Registry.
 ms.topic: tutorial
-ms.assetid: 2ae9bd01-22ff-4147-a5bb-24d884812635
 ms.author: ericvan
 author: geekzter
 ms.date: 08/12/2024

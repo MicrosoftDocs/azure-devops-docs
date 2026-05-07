@@ -3,7 +3,6 @@ title: Add an Active Directory / Microsoft Entra group to a built-in security gr
 titleSuffix: Azure DevOps
 description: Efficiently manage large user groups by adding Active Directory / Microsoft Entra groups to built-in security groups.
 ms.subservice: azure-devops-security
-ms.assetid: 
 ms.author: chcomley
 author: chcomley
 ms.topic: tutorial

@@ -4,7 +4,6 @@ titleSuffix: Azure Boards
 description: Effectively define, capture, triage, and manage bugs and code defects using Azure Boards to maintain high software quality and control technical debt.
 ms.custom: boards-backlogs, copilot-scenario-highlight
 ms.service: azure-devops-boards
-ms.assetid: 6E5710EE-21C8-4264-AD65-A827D186F134
 ms.author: chcomley
 author: chcomley
 ms.topic: how-to

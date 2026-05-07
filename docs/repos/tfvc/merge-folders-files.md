@@ -2,7 +2,6 @@
 title: Merge folders and files
 titleSuffix: Azure Repos
 description: Learn how to use the Visual Studio graphical user interface to merge changes made in different branches in TFVC.
-ms.assetid: b23efc53-f715-4eef-9631-64455663cfcc
 ms.service: azure-devops-repos
 ms.topic: how-to
 ms.date: 11/15/2022

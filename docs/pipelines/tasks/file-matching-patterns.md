@@ -3,7 +3,6 @@ title: File matching patterns reference
 description: A reference guide that can help you to understand the file matching patterns for Azure Pipelines and Team Foundation Server (TFS).
 ms.topic: reference
 ai-usage: ai-assisted
-ms.assetid: 8A92C09C-3EE2-48EF-A2C0-3B2005AACFD7
 ms.date: 06/24/2025
 monikerRange: '<= azure-devops'
 ---

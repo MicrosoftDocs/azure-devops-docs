@@ -2,7 +2,6 @@
 title: Review your repo history
 titleSuffix: Azure Repos
 description: Learn how to review Git history to find out when files changed, who changed them, and what changes were made.
-ms.assetid: aed4bd97-378a-45f6-8b13-59143fccfe3b
 ms.service: azure-devops-repos
 ms.topic: how-to
 monikerRange: '<= azure-devops'

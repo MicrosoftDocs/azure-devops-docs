@@ -2,7 +2,6 @@
 title: Building multiple branches
 description: Build multiple branches with Azure Pipelines
 ms.topic: how-to
-ms.assetid: E9684A1D-8D2B-4D5E-808A-D3677D314DB6
 ms.date: 06/14/2023
 monikerRange: '<= azure-devops'
 "recommendations": "true"

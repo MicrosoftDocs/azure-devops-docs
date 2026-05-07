@@ -3,7 +3,6 @@ title: Access Analytics data through Excel
 titleSuffix: Azure DevOps
 description: Learn how to access Analytics OData from Excel for Azure DevOps. 
 ms.subservice: azure-devops-analytics
-ms.assetid: E661D20C-073E-44F1-A91C-B1460A93E2B2 
 ms.author: chcomley
 author: chcomley
 ms.topic: how-to

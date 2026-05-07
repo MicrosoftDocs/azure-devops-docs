@@ -1,8 +1,7 @@
-﻿---
+---
 title: Migrate Custom Check-in Policies
 titleSuffix: Azure Repos
 description: Learn how to migrate custom TFVC check-in policies from PolicyBase to CheckinPolicyBase class.
-ms.assetid:
 ms.service: azure-devops-repos
 ms.topic: how-to
 ms.date: 01/19/2026

@@ -4,7 +4,6 @@ titleSuffix: Azure DevOps
 description: How to grant or restrict access to test plans, test suites, test cases, and other test-related features.
 ms.subservice: azure-devops-security
 ai-usage: ai-assisted
-ms.assetid: 
 ms.author: chcomley
 author: chcomley
 ms.topic: how-to

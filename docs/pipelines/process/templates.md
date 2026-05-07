@@ -1,7 +1,6 @@
 ---
 title: How to use YAML templates for reusable and secure pipelines
 description: Learn how to create reusable YAML pipeline templates to streamline and secure your CI/CD processes.
-ms.assetid: 6f26464b-1ab8-4e5b-aad8-3f593da556cf
 ms.topic: how-to
 ms.date: 08/21/2025
 monikerRange: "<=azure-devops"

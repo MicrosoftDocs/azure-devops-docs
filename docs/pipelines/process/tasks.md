@@ -2,7 +2,6 @@
 title: Task types and usage
 description: Learn about tasks in Azure Pipelines pipeline jobs, including setting inputs and controlling run conditions.
 ms.topic: concept-article
-ms.assetid: 3293E200-6B8C-479D-9EA0-B3E82CE1450F
 ms.date: 08/18/2025
 monikerRange: '<= azure-devops'
 ai-usage: ai-assisted

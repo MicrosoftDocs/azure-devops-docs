@@ -1,7 +1,6 @@
 ---
 title: Debug with symbols in WinDbg
 description: Use WinDbg to consume symbols and debug your application
-ms.assetid: C8C003EA-79C8-49EF-BEBD-35548505F0CF
 ms.service: azure-devops-artifacts
 ms.topic: how-to
 ms.date: 09/26/2023

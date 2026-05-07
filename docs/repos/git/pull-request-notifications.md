@@ -2,7 +2,6 @@
 title: Pull request update notifications
 titleSuffix: Azure Repos
 description: Learn how to view, edit, and subscribe to pull request update notifications.
-ms.assetid: 4C9DFD24-E894-454A-A080-DA511C90CA74
 ms.service: azure-devops-repos
 ms.topic: overview
 ms.date: 10/07/2021

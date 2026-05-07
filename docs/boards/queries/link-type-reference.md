@@ -4,7 +4,6 @@ titleSuffix: Azure Boards
 description: Use this reference guide to understand all the link types defined for Azure DevOps and Azure Boards. 
 ms.service: azure-devops-boards
 ms.custom: work-items, cross-project, cross-service, engagement-fy23
-ms.assetid: 219717a0-de6e-4f70-8558-54f813f82507
 ms.author: chcomley
 author: chcomley
 ms.topic: reference

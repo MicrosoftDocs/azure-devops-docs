@@ -1,7 +1,6 @@
 ---
 title: Jobs in Azure Pipelines
 description: Understand jobs in Azure Pipelines and Azure DevOps Server
-ms.assetid: B05BCE88-73BA-463E-B35E-B54787631B3F
 ms.topic: concept-article
 ms.date: 02/03/2026
 monikerRange: '<= azure-devops'

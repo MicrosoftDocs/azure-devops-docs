@@ -6,7 +6,6 @@ ms.subservice: azure-devops-wiki
 ai-usage: ai-assisted
 ms.custom:
 ms.topic: how-to
-ms.assetid: 
 ms.author: chcomley
 author: chcomley
 monikerRange: '<= azure-devops'

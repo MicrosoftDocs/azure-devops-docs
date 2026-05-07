@@ -2,7 +2,6 @@
 title: Add tabs on query result pages
 titleSuffix: Azure DevOps
 description: Add a custom tab to query result pages in your Azure DevOps extension.
-ms.assetid: b3a55a38-f4c0-464f-b689-86582c430b84
 ms.subservice: azure-devops-ecosystem
 ms.custom: UpdateFrequency3
 ms.topic: how-to

@@ -1,7 +1,6 @@
 ---
 title: Explore work items when exploratory testing
 description: Test tools - Manual and exploratory testing - explore work items from the board or by using the Microsoft Test & Feedback extension
-ms.assetid: AFD66FBF-5DEC-4457-8867-A47FFB8EF407
 ms.service: azure-devops-test-plans
 ms.custom: UpdateFrequency3
 ms.topic: how-to

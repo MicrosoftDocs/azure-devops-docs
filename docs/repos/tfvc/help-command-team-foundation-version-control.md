@@ -2,7 +2,6 @@
 title: Help command (Team Foundation Version Control)
 titleSuffix: Azure Repos
 description: See how to use the tf help command to get information about syntax for tf command-line utility commands.
-ms.assetid: 8cd73edc-8d60-42be-a840-616e6207a1d8
 ms.service: azure-devops-repos
 ms.topic: reference
 ms.date: 07/13/2022

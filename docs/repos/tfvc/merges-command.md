@@ -2,7 +2,6 @@
 title: Merges command (Team Foundation Version Control)
 titleSuffix: Azure Repos
 description: See how to use the tf merges command to display detailed information about past merges between specified source and destination branches.
-ms.assetid: dfa1c139-028d-4329-aa03-0f9845337f82
 ms.service: azure-devops-repos
 ms.topic: reference
 ms.date: 11/15/2022

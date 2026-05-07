@@ -1,7 +1,6 @@
 ---
 title: Manage test failure type
 description: Learn about managing failure type in Azure Test Plans. You can add, remove or edit the default test failure types.
-ms.assetid: 
 ms.service: azure-devops-test-plans
 ms.custom: UpdateFrequency3
 ms.topic: overview

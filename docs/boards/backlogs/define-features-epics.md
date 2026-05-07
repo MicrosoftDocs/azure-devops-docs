@@ -4,7 +4,6 @@ titleSuffix: Azure Boards
 description: Learn about features and epics in Azure Boards and how to use them to organize your product and portfolio backlogs.
 ms.custom: boards-backlogs, copilot-scenario-highlight
 ms.service: azure-devops-boards
-ms.assetid: 9B517FEE-14FA-41FA-87CD-99D33168D01E
 ms.author: chcomley
 author: chcomley
 ms.topic: how-to

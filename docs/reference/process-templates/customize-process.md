@@ -4,7 +4,6 @@ titleSuffix: Azure DevOps
 description: Define the objects and processes available to you when you create a project in Azure DevOps.
 ms.custom: engagement-fy23
 ms.service: azure-devops-boards
-ms.assetid: 3122f0e7-2ad9-46a1-a65f-32af37c0f444
 ms.author: chcomley
 author: chcomley
 ai-usage: ai-assisted

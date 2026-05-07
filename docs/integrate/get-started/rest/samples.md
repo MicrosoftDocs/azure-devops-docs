@@ -1,7 +1,6 @@
 ---
 title: REST API samples for Azure DevOps
 description: Learn REST API basics with practical samples for Azure DevOps Services, including authentication patterns and common operations.
-ms.assetid: 9E17A266-051F-403F-A285-7F21D9CC52F0
 ai-usage: ai-assisted
 ms.subservice: azure-devops-ecosystem
 ms.topic: sample

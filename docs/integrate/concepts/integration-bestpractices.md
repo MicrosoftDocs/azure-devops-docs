@@ -3,7 +3,6 @@ title: Integration Best Practices
 titleSuffix: Azure DevOps Services 
 description: Learn about best practices for integrating Azure DevOps Services.
 ms.subservice: azure-devops-ecosystem
-ms.assetid: 9E1F3FD7-E1C1-44D9-B265-5368B3BD621E
 ms.custom: content-health, FY22Q3, freshness, copilot-scenario-highlight
 ai-usage: ai-assisted
 monikerRange: 'azure-devops'

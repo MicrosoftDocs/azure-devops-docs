@@ -1,7 +1,6 @@
 ---
 title: Asset library
 description: Understand the Azure Pipelines asset library for secure files and variable groups.
-ms.assetid: 45C5042C-9E31-41F8-B63B-6D5C241EEC21
 ms.topic: concept-article
 ms.author: ronai
 author: RoopeshNair

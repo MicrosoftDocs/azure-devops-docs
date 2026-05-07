@@ -4,7 +4,6 @@ titleSuffix: Azure Boards
 description: Learn how to map, add, and edit columns on your team's board to effectively manage your workflow in Azure Boards or Azure DevOps.
 ms.custom: boards-kanban, engagement-fy23, copilot-scenario-highlight
 ms.service: azure-devops-boards
-ms.assetid: 8afd3481-6fab-401d-90ff-0dd443da0f0e
 ai-usage: ai-assisted
 ms.author: chcomley
 author: chcomley

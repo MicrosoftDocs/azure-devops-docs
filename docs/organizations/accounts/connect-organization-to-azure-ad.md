@@ -3,7 +3,6 @@ title: Connect organization to Microsoft Entra ID
 titleSuffix: Azure DevOps Services
 description: Connect Azure DevOps to Microsoft Entra ID for enterprise security, single sign-on, centralized user management, and seamless authentication.
 ms.subservice: azure-devops-organizations
-ms.assetid: 629a48b6-b2ab-4706-8256-d187c8ed5ce7
 ai-usage: ai-assisted
 ms.topic: how-to
 ms.author: chcomley

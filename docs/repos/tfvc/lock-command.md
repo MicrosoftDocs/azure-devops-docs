@@ -2,7 +2,6 @@
 title: Lock command (Team Foundation Version Control)
 titleSuffix: Azure Repos
 description: See how to use the lock command to lock or unlock files or folders in Team Foundation Version Control (TFVC).
-ms.assetid: 5b62627b-fdb3-4832-a387-811dcc2808e3
 ms.service: azure-devops-repos
 ms.topic: reference
 ms.date: 11/15/2022

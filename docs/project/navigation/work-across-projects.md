@@ -4,7 +4,6 @@ titleSuffix: Azure DevOps
 description: How to access work items, pull requests, team projects, and more using your account home page in Azure DevOps
 ms.custom: navigation, cross-project
 ms.subservice: azure-devops-projects
-ms.assetid: B4406575-4D4D-42E3-88FD-93830546B67F
 ms.topic: how-to
 ms.author: chcomley   
 author: chcomley

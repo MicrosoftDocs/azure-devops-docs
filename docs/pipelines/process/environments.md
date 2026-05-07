@@ -2,7 +2,6 @@
 title: Create and target Azure DevOps environments for pipelines
 description: Learn how to create, target, secure, and view deployment history for Azure DevOps environments. Manage Kubernetes and virtual machine resources for CI/CD pipelines.
 ms.topic: how-to
-ms.assetid: 4abec444-5d74-4959-832d-20fd0acee81d
 ms.date: 04/09/2025
 monikerRange: "<=azure-devops"
 keywords: Azure DevOps environments, CI/CD pipelines, Kubernetes, virtual machines, deployment history, secure environments

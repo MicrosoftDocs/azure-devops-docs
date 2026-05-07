@@ -2,7 +2,6 @@
 title: Set TFVC repository permissions
 titleSuffix: Azure Repos
 description: Follow steps to manage access to a Team Foundation Version Control (TFVC) repository feature or function.
-ms.assetid:  
 ms.service: azure-devops-repos
 ms.topic: quickstart
 monikerRange: '<= azure-devops'

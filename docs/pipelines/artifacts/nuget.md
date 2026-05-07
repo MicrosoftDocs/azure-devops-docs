@@ -1,7 +1,6 @@
 ---
 title: Publish NuGet packages with Azure Pipelines
 description: Learn how to publish NuGet packages to internal and external feeds using Classic and YAML Pipelines.
-ms.assetid: 29101A33-7C17-437C-B61D-DF7AA4CB9EA2
 ms.topic: tutorial
 ms.date: 12/12/2025
 monikerRange: '>= azure-devops-2022'

@@ -2,7 +2,6 @@
 title: Use labels to take a snapshot of your files
 titleSuffix: Azure Repos
 description: Find out how you can use Team Foundation Version Control labels to take a snapshot of your files. See how to create, list, edit, apply, and delete labels.
-ms.assetid: 8945006e-3a03-4ae1-b5a1-79be57610321
 ms.service: azure-devops-repos
 ms.topic: how-to
 ms.date: 11/29/2022

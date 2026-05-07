@@ -2,7 +2,6 @@
 title: Remove TFVC check-in policies
 titleSuffix: Azure Repos
 description: Remove check-in policies from your Team Foundation Version Control (TFVC) project.
-ms.assetid: fb4b62ef-e413-4f03-81fe-ae560c9f60ff
 ms.service: azure-devops-repos
 ms.topic: how-to
 ms.date: 11/29/2022

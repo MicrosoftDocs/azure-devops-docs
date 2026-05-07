@@ -2,7 +2,6 @@
 title: Delete command (Team Foundation Version Control)
 titleSuffix: Azure Repos
 description: See how to use the tf delete command  in Team Foundation Version Control.
-ms.assetid: c4cf7a59-26c8-490c-a065-279888019c36
 ms.service: azure-devops-repos
 ms.topic: reference
 ms.date: 10/31/2022

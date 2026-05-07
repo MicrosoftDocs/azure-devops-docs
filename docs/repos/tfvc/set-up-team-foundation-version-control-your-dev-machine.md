@@ -2,7 +2,6 @@
 title: Set up Team Foundation Version Control on your dev machine
 titleSuffix: Azure Repos
 description: Create a workspace and then add your code to set up Team Foundation Version Control (TFVC) on your dev machine.
-ms.assetid: 15428962-f5fc-4aa4-81dc-7d53a8e3a00c
 ms.service: azure-devops-repos
 ms.topic: how-to
 monikerRange: '<= azure-devops'

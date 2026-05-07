@@ -3,7 +3,6 @@ title: Use GitHub Copilot with Azure Boards
 titleSuffix: Azure Boards
 description: Learn how to use GitHub Copilot with work items to automatically create pull requests and track coding progress in Azure DevOps.
 ms.service: azure-devops-boards
-ms.assetid: 
 ms.author: chcomley
 author: chcomley
 ms.topic: how-to

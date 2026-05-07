@@ -2,7 +2,6 @@
 title: Work with large files in your Git repo
 titleSuffix: Azure Repos
 description: Get recommendations on how to manage large binary files in Git, Visual Studio, and Azure DevOps Server.
-ms.assetid: 57ad13a3-9178-4f31-b776-79f32b1afa58
 ms.service: azure-devops-repos
 ms.topic: how-to
 ms.date: 03/14/2018

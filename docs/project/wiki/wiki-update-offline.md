@@ -5,7 +5,6 @@ description: Add and update pages offline for your built-in team project wiki in
 ms.subservice: azure-devops-wiki
 ms.custom: wiki, devdivchpfy22
 ms.topic: concept-article
-ms.assetid:
 ms.author: chcomley
 author: chcomley
 ms.reviewer: gopinach

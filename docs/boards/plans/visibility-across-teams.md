@@ -4,7 +4,6 @@ titleSuffix: Azure Boards
 description: Determine which methods best support your ability to monitor status and progress across several teams in Azure Boards and Azure DevOps.  
 ms.service: azure-devops-boards
 ms.custom: cross-project  
-ms.assetid: C9F129A7-97F9-4C1A-91E2-F59D6EFABE2E
 ms.author: chcomley
 author: chcomley
 ms.topic: overview

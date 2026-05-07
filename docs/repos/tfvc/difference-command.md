@@ -2,7 +2,6 @@
 title: Difference command
 titleSuffix: Azure Repos
 description: Use the difference command to display differences between files in Team Foundation Version Control (TFVC)
-ms.assetid: d7bf3b53-b0b8-4b57-a9ce-5a475b715e1d
 ms.service: azure-devops-repos
 ms.topic: reference
 ms.date: 06/30/2022

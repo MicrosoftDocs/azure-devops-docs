@@ -4,7 +4,6 @@ titleSuffix: Azure DevOps
 description: Learn how to configure and customize work tracking processes for a project by customizing an inherited process in Azure DevOps.
 ms.custom: inherited-process, copilot-scenario-highlight
 ms.service: azure-devops-boards
-ms.assetid: 31CA1DCB-8E3E-4B9E-A64A-D47DF23490A3   
 ms.author: chcomley
 author: chcomley
 ai-usage: ai-assisted

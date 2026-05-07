@@ -1,7 +1,6 @@
 ---
 title: Deploy to Azure SQL Database
 description: Learn how to deploy an Azure SQL database with Azure Pipelines.
-ms.assetid: B4255EC0-1A25-48FB-B57D-EC7FDB7124D9
 ms.topic: how-to
 ms.date: 04/02/2025
 monikerRange: '<= azure-devops'

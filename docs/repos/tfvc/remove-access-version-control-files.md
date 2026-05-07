@@ -2,7 +2,6 @@
 title: Remove access to TFVC files
 titleSuffix: Azure Repos
 description: Remove access to files that are under version control in Team Foundation Version Control (TFVC).
-ms.assetid: 4264ddaf-ef39-430a-a388-770e2d06b319
 ms.service: azure-devops-repos
 ms.topic: how-to
 ms.date: 11/29/2022

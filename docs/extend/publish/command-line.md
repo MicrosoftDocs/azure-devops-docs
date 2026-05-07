@@ -3,7 +3,6 @@ ms.subservice: azure-devops-ecosystem
 title: Publish an Azure DevOps Extension From the Command Line
 description: Learn how to publish your Azure DevOps extension from the command line using tfx-cli. Follow step-by-step instructions for Microsoft Entra or PAT authentication.
 #customer intent: As a developer, I want to learn how to publish an Azure DevOps extension from the command line so that I can automate the deployment process.
-ms.assetid: 7adcb1a2-1894-4751-8bed-7c04d084b5cf
 ms.topic: how-to
 monikerRange: '<= azure-devops'
 ms.author: chcomley

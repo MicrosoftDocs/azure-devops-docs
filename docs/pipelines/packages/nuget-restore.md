@@ -1,7 +1,6 @@
 ---
 title: Restore NuGet packages with Azure Pipelines
 description: Learn how to restore your NuGet packages with Classic and YAML Pipelines.
-ms.assetid: C3D7008E-7C23-49A4-9642-E5906DAE3BAD
 ms.author: rabououn
 ms.reviewer: rabououn
 author: ramiMSFT

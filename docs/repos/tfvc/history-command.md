@@ -2,7 +2,6 @@
 title: History command (Team Foundation Version Control)
 titleSuffix: Azure Repos
 description: See how to use the tf history command to display the revision history of files or folders.
-ms.assetid: 14c451c2-c59e-46c7-afd5-c727ba683eb2
 ms.service: azure-devops-repos
 ms.topic: reference
 ms.date: 11/15/2022

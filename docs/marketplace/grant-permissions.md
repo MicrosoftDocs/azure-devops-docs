@@ -4,7 +4,6 @@ description: Grant users or groups permission for managing extensions for Azure 
 ms.topic: how-to
 ms.custom: engagement-fy23
 ms.subservice: azure-devops-marketplace
-ms.assetid: 5b0786ec-9f5e-419f-acef-c15d15985285
 ms.author: chcomley
 author: chcomley
 ms.date: 03/03/2025

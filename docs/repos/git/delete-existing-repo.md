@@ -3,7 +3,6 @@ title: Delete a Git Repo from Your Project
 titleSuffix: Azure Repos
 description: Learn how to delete a Git repository from your Azure DevOps project. Follow these steps to remove unused repos and keep your project organized.
 #customer intent: As a developer, I want to understand how to delete a Git repo from the Azure DevOps web interface so that I can manage repositories effectively.
-ms.assetid: 271f8473-e77d-4a95-80d9-0bd347de7533
 ms.custom: support-driven-update
 ai-usage: ai-assisted
 ms.service: azure-devops-repos

@@ -3,7 +3,6 @@ title: Create and manage manual test cases
 titleSuffix: Azure Test Plans
 description: Create and manage manual test cases in Azure Test Plans to validate deliverables, assign testers, and organize your testing process. Start improving quality now.
 #customer intent: As a tester, I want to create manual test cases so that I can validate deliverables against user requirements.
-ms.assetid: C3C10A82-C7F2-4AB6-9CED-B43DAF722800
 ms.service: azure-devops-test-plans
 ms.custom: UpdateFrequency3, copilot-scenario-highlight
 ms.topic: how-to

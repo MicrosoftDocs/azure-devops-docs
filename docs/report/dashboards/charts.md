@@ -4,7 +4,6 @@ titleSuffix: Azure DevOps
 description: Learn how to add status, progress, and trend charts to dashboards from flat-list queries in Azure DevOps.
 ms.custom: dashboards, copilot-scenario-highlight, awp-ai
 ms.subservice: azure-devops-analytics
-ms.assetid: EFAD32DB-8B19-4ACC-8F72-87CC5A513798
 ms.author: chcomley
 author: chcomley
 ms.topic: how-to

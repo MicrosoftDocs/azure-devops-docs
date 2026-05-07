@@ -2,7 +2,6 @@
 title: Suspend work, fix a bug, and conduct a code review
 titleSuffix: Azure Repos
 description: Day in the life of a devops developer. Suspend work, fix a bug, and conduct a code review.
-ms.assetid: 2fc2a1ff-70a2-4b4e-8dff-73238628f956
 ms.service: azure-devops-repos
 ms.topic: tutorial
 ms.date: 10/25/2022

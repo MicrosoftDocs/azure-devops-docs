@@ -2,7 +2,6 @@
 title: Info or properties command (Team Foundation Version Control)
 titleSuffix: Azure Repos
 description: Use the tf info or deprecated properties command to display information about items that are under version control.
-ms.assetid: f306bc7a-db55-47d8-aa22-e2399260e838
 ms.service: azure-devops-repos
 ms.topic: reference
 ms.date: 11/29/2022

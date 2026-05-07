@@ -1,7 +1,6 @@
 ---
 title: Deployment gates concepts
 description: Understand deployment gates in Azure Pipelines
-ms.assetid: 0824A7C4-9353-4BDA-B652-5B826E0EF2A5
 ms.topic: concept-article
 ms.author: sandrica
 author: silviuandrica

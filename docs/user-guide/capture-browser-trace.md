@@ -2,7 +2,6 @@
 title: Capture a browser trace for troubleshooting
 titleSuffix: Azure DevOps
 description: Capture network information from a browser trace to help troubleshoot issues with Azure DevOps.
-ms.assetid: 
 ms.author: chcomley
 author: chcomley
 ms.topic: how-to
