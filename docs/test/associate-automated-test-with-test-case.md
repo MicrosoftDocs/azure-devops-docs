@@ -128,6 +128,7 @@ If the default values don't match your organization's needs, you can create a cu
 
 ## Related content
 
+- [Set up automated testing with Azure Test Plans](automated-testing-overview.md)
 - [Run automated tests from test plans](run-automated-tests-from-test-hub.md)
 - [Requirements traceability](../pipelines/test/requirements-traceability.md)
 - [Review test results](../pipelines/test/review-continuous-test-results-after-build.md)
