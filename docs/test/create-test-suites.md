@@ -35,7 +35,7 @@ For key concepts, see [Test objects and terms](test-objects-overview.md).
 
 2. Enter a name for the suite.
 
-   :::image type="content" border="true" source="media/create-test-suite/enter-static-suite-name.png" alt-text="Screenshot shows box for entering the new static test suite name.":::
+   :::image type="content" border="true" source="media/create-test-suite/enter-new-suite-name.png" alt-text="Screenshot shows box for entering the new static test suite name.":::
 
 You can drag and drop test suites to nest them under static suites, and drag test cases to reorder them.
 
