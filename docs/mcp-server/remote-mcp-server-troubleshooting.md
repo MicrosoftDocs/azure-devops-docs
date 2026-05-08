@@ -299,7 +299,7 @@ For non-Microsoft clients, use the [local Azure DevOps MCP Server](mcp-server-ov
 
 ### Enable debug logging in VS Code
 
-To capture more detail when troubleshooting:
+To capture more detail when you're troubleshooting:
 
 1. Open the Output panel in VS Code (**View** > **Output**).
 1. Select **GitHub Copilot** or **MCP** from the output channel dropdown.
@@ -315,7 +315,7 @@ After setup, test the remote MCP Server with a simple query:
 
 If these queries return correct data, the server is working properly.
 
-## FAQ
+## FAQs
 
 ### Can I use the remote MCP Server with a personal Microsoft account?
 
@@ -340,20 +340,6 @@ The remote server accesses the same Azure DevOps data as the REST API, scoped to
 ### How do I report an issue with the remote MCP Server?
 
 Create an issue using the [Remote MCP Server issue template](https://github.com/microsoft/azure-devops-mcp/issues/new?template=remote-mcp-server-issue.md) in the Azure DevOps MCP Server GitHub repository.
-
-## Support boundaries
-
-The following table summarizes which team owns different types of issues. Use this information to route support requests correctly.
-
-| Issue type | Owner | Notes |
-|---|---|---|
-| `AADSTS` sign-in errors | Microsoft Entra ID | Standard authentication failure, not MCP-specific |
-| Authorization after sign-in | Azure DevOps | Missing permissions in Azure DevOps |
-| Conditional Access blocks | Microsoft Entra ID | Same as standard Azure DevOps Conditional Access |
-| Non-Microsoft client can't authenticate | Not supported | Known platform limitation — use local MCP Server |
-| MCP tool returns Azure DevOps error | Azure DevOps | Standard Azure DevOps errors returned through MCP |
-| AI agent fails before tool call | AI assistant provider | Orchestration issue, not Azure DevOps |
-| VS Code or Visual Studio configuration | Azure DevOps | Supported first-party clients |
 
 ## Related content
 

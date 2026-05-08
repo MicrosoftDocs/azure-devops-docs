@@ -88,6 +88,10 @@
       href: ../managed-devops-pools/troubleshooting.md?toc=/azure/devops/troubleshoot/toc.json
     - name: FAQs
       href: ../managed-devops-pools/faq.md?toc=/azure/devops/troubleshoot/toc.json
+- name: MCP Server
+  items:
+    - name: Remote MCP Server
+      href: ../mcp-server/remote-mcp-server-troubleshooting.md?toc=/azure/devops/troubleshoot/toc.json
 - name: CLI and service hooks
   items:
     - name: Azure DevOps CLI

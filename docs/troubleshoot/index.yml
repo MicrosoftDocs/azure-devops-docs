@@ -134,6 +134,12 @@ landingContent:
         links:
           - text: Managed DevOps Pools FAQs
             url: ../managed-devops-pools/faq.md?toc=/azure/devops/troubleshoot/toc.json
+  - title: MCP Server
+    linkLists:
+      - linkListType: how-to-guide
+        links:
+          - text: Troubleshoot the remote MCP Server
+            url: ../mcp-server/remote-mcp-server-troubleshooting.md?toc=/azure/devops/troubleshoot/toc.json
   - title: CLI and service hooks
     linkLists:
       - linkListType: how-to-guide
