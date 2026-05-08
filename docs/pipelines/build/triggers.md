@@ -33,7 +33,7 @@ trigger:
 
 :::moniker range=">azure-devops-2022"
 
-If not explicitly configured in your pipeline, CI triggers are enabled by default, unless [Disable implied CI trigger](../troubleshooting/troubleshoot-triggers.md#disable-implied-yaml-ci-trigger-setting-is-enabled) is set or [UI settings override YAML trigger](../troubleshooting/troubleshoot-triggers.md#ui-settings-override-yaml-trigger-setting).
+If not explicitly configured in your pipeline, CI triggers are enabled by default for all branches, unless [Disable implied CI trigger](../troubleshooting/troubleshoot-triggers.md#disable-implied-yaml-ci-trigger-setting-is-enabled) is set or [UI settings override YAML trigger](../troubleshooting/troubleshoot-triggers.md#ui-settings-override-yaml-trigger-setting).
 
 :::moniker-end
 
@@ -120,7 +120,7 @@ Comment triggers configure a pipeline to run when contributors make a pull reque
 
 #### [YAML](#tab/yaml/)
 
-Scheduled triggers run a pipeline on a predefined schedule. Scheduled triggers in YAML pipelines are supported by [all repository types that support YAML pipelines](../repos/index.md) (Azure Repos Git, GitHub, GitHub Enterprise, and Bitbucket Cloud).
+Scheduled triggers run a pipeline on a predefined schedule. Scheduled triggers in YAML pipelines are supported by [all repository types that support YAML pipelines](../repos/index.md) (Azure Repos Git, GitHub, GitHub Enterprise Server, and Bitbucket Cloud).
 
 To define a scheduled trigger in YAML, use the `schedules` keyword and define your schedule using cron syntax. The following example configures a schedule that runs every day at midnight.
 
