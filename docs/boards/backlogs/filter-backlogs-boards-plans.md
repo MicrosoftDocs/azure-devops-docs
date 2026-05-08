@@ -9,14 +9,14 @@ ms.author: chcomley
 author: chcomley
 ms.topic: how-to
 monikerRange: '<= azure-devops'
-ms.date: 02/28/2026
+ms.date: 05/08/2026
 ---
 
 # Filter and focus your work in Azure Boards
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)] 
 
-By using interactive filtering in Azure Boards, you can focus your work management. You can narrow down large sets of work items across all board tools. Each Azure Boards tool comes with built-in filters that provide relevant starting points:
+By using interactive filtering in Azure Boards, you can focus your work management. You can narrow down large sets of work items across all board tools using built-in fields, tags, parent work items, and custom fields. Each Azure Boards tool comes with built-in filters that provide relevant starting points:
 
 - **Backlogs and boards**: Display work items based on team-configured **Area Paths** and **Iteration Paths**
 - **Query results**: Show work items matching specific query criteria
@@ -73,6 +73,9 @@ Filtering capabilities vary across Azure Boards tools based on their specific fu
 > Use the version selector to view the specific filters available for your Azure DevOps version.
 
 The following table shows supported filter options for each tool. Backlogs and boards inherit team-level filters as described in [Create and manage your backlog](create-your-backlog.md).
+
+> [!TIP]
+> For Azure DevOps Services, backlogs and boards also support [filtering by custom fields](#filter-by-custom-fields). Add any field as a backlog column or card field, and it becomes available as a filter.
 
 :::row:::
    :::column span="1.5":::
@@ -786,7 +789,37 @@ Tag-based filtering provides flexible work item categorization beyond formal are
 - Combine tag filtering with other criteria for precise results.
 
 For comprehensive tag management guidance, see [Add tags to work items to categorize and filter lists and boards](../queries/add-tags-to-work-items.md).
-  
+
+::: moniker range="azure-devops"
+
+## Filter by custom fields
+
+In addition to the standard filter fields, you can filter backlogs and boards by any custom field — including fields your team added to your process.
+
+### How custom field filtering works
+
+Filtering is performed client-side, which means a field must be present in the data loaded by the page before it can appear as a filter option:
+
+- **Backlogs** — Add the field as a [backlog column](set-column-options.md). Once the column is visible, the field appears in the filter panel.
+- **Boards** — Add the field to your [card display](../boards/customize-cards.md). Once the field is shown on cards, it appears in the filter panel.
+
+The standard filters (Assigned To, Work Item Type, States, Area Path, Iteration Path, Tags, Parent Work Item) are always available and can't be removed. Custom field filters appear in addition to these defaults.
+
+### Add a custom field filter
+
+1. Add the field as a backlog column or card field (as described previously).
+1. Select **Filter** :::image type="icon" source="../../media/icons/filter-icon.png" border="false"::: to open the filter panel.
+1. The custom field appears as a new filter option. Select it and choose values to filter by.
+
+### Remove a custom field filter
+
+If you remove a column from the backlog or a field from the card display, the corresponding filter option is automatically removed from the filter panel.
+
+> [!NOTE]
+> Custom field filtering is currently available for backlogs and boards. Support for sprint backlogs, sprint boards, queries, and delivery plans is planned.
+
+::: moniker-end
+
 ::: moniker range="azure-devops"
 
 ## Filter the history view within a work item form 
