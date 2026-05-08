@@ -8,7 +8,7 @@ ms.author: chcomley
 author: chcomley
 ms.topic: how-to
 monikerRange: '<= azure-devops'
-ms.date: 02/28/2026
+ms.date: 05/08/2026
 #customer intent: As an Azure Boards user, I want to duplicate work items, copy work item details or URLs, or copy lists of selected work items so I can distribute them to my teammates and stakeholders.
 
 ---
@@ -52,7 +52,7 @@ You *copy* a work item to adjust prepopulated values, and *clone* a work item to
 
 Copy a work item to create a new work item with a new ID and prepopulated fields from the original. You can modify the fields as needed.
 
-Related links to the original work item and any parents, and a discussion comment, are automatically created in the copy. You can copy other links and attachments depending on the options you select. History isn't copied over.
+Related links to the original work item and a discussion comment are automatically created in the copy. You can copy other links, parent links, child links, and attachments depending on the options you select. History isn't copied over.
 
 To copy a work item:
 
@@ -70,20 +70,33 @@ To copy a work item:
 
 Optionally, you can select any or all of the following options in the **Copy Work Item** form:
 
-- **Include existing links** includes all **Related** and external links from the copied work item. A **Related** link to the original work item and a comment in the **Discussion** section are always created, whether you select this item or not.
+::: moniker range="azure-devops"
+
+- **Include existing links** includes all **Related** and external links from the copied work item. A **Related** link to the original work item and a comment in the **Discussion** section are always created, whether you select this option or not.
+- **Include existing attachments** includes attachments from the original work item in the new work item.
+- **Include parent link** links the copied work item to the same parent as the original work item. Select this option to keep the copy in the same hierarchy without also bringing over child links.
+- **Include child work items** creates a copy of each direct child work item and links them to the copied work item through parent-child links. This option isn't recursive — only direct children are included.
+
+  > [!NOTE]
+  > - You can select **Include parent link** and **Include child work items** independently. For example, copy a work item with just the parent link to place it under the same feature, or copy with just child items to create a standalone hierarchy.
+  > - If you copy the work item to a different project or work item type, **Include child work items** is disabled.
+
+::: moniker-end
+
+::: moniker range="< azure-devops"
+
+- **Include existing links** includes all **Related** and external links from the copied work item. A **Related** link to the original work item and a comment in the **Discussion** section are always created, whether you select this option or not.
 - **Include existing attachments** includes attachments from the original work item in the new work item.
 - **Include child work items** includes existing links to child work items in the copied work item. This feature isn't recursive. Only direct child links of the original work item are included. This option appears even if there are no child items in the original work item.
 
   > [!NOTE]
   > - If you copy a work item and choose to **Include child work items**, a copy of each child work item is created and linked to the copied work item through a parent-child link.
   > - If you copy the work item to a different project or work item type, **Include child work items** is disabled.
-  
-  ::: moniker range="<azure-devops"
-  
+
   > [!NOTE]
   > For Azure DevOps Server, **Include child work items** requires installing the Azure DevOps Server 2020.1 update.
-  
-  ::: moniker-end
+
+::: moniker-end
 
 <a id="copy-url">  </a>
 ## Copy the work item URL or information
