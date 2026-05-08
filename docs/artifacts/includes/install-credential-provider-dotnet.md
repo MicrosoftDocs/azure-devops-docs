@@ -28,7 +28,7 @@ dotnet tool install --global Microsoft.Artifacts.CredentialProvider.NuGet.Tool -
 The first time you perform an operation that requires authentication, you should authenticate by either:
 
 - Running with `--interactive` so dotnet can prompt you to authenticate.
-- Providing credentials through [environment variables]((https://www.nuget.org/packages/Microsoft.Artifacts.CredentialProvider.NuGet.Tool#environment-variables)) (for example, in unattended scenarios).
+- Providing credentials through [environment variables](https://www.nuget.org/packages/Microsoft.Artifacts.CredentialProvider.NuGet.Tool#environment-variables) (for example, in unattended scenarios).
 
 If interactive authorization is available, navigate to your project directory and run:
 

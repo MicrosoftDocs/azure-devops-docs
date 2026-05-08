@@ -9,7 +9,7 @@ ms.date: 05/07/2026
 
 The Azure Artifacts Credential Provider enables secure authentication to your Azure Artifacts feeds. To use it with nuget.exe, you must configure the NuGet Authentication Plugin, which acts as an intermediary between NuGet and your credential provider.
 
-First, refer to the [NuGet authentication plugin](https://github.com/NuGet/Home/wiki/NuGet-cross-plat-authentication-plugin#plugin-installation-and-discovery) wiki and add the credential provider to NuGet's plugin search path. Then, follow the installation steps for your operating system below:
+First, refer to the [NuGet authentication plugin](https://github.com/NuGet/Home/wiki/NuGet-cross-plat-authentication-plugin#plugin-installation-and-discovery) wiki and add the credential provider to NuGet's plugin search path. Then, follow the installation steps for your operating system:
 
 #### [Windows](#tab/windows/)
 
@@ -45,7 +45,7 @@ See the [Azure Artifacts Credential Provider](https://github.com/microsoft/artif
 
 #### [Linux/Mac](#tab/linuxMac/)
 
-Make sure you've setup the [Prerequisites](https://github.com/microsoft/artifacts-credprovider?tab=readme-ov-file#for-linux-self-contained-installs), then use one of the following methods to install the Azure Artifacts Credential Provider:
+Make sure you have setup the [Prerequisites](https://github.com/microsoft/artifacts-credprovider?tab=readme-ov-file#for-linux-self-contained-installs), then use one of the following methods to install the Azure Artifacts Credential Provider:
 
 ### Manual installation
 

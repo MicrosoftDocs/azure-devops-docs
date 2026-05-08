@@ -45,7 +45,7 @@ Use one of the following methods to install the Azure Artifacts Credential Provi
 
 ### Install using the helper script
 
-Alternatively, you can use the automated helper script for a streamlined installation. Ensure you have [PowerShell 5.1 or later](https://learn.microsoft.com/powershell/scripting/install/installing-powershell), then follow these steps:
+Alternatively, you can use the automated helper script for a streamlined installation. Ensure you have [PowerShell 5.1 or later](/powershell/scripting/install/installing-powershell), then follow these steps:
 
 1. Download the [Install Credential Provider](https://github.com/microsoft/artifacts-credprovider/blob/master/helpers/installcredprovider.ps1) helper script.
 

@@ -23,7 +23,7 @@ This guide walks you through configuring your project to publish NuGet packages 
 
 ## Set up the Azure Artifacts Credential Provider
 
-[!INCLUDE [](includes/install-credential-provider-dotnet.md)]
+[!INCLUDE [](../includes/install-credential-provider-dotnet.md)]
 
 ## Create a feed 
 

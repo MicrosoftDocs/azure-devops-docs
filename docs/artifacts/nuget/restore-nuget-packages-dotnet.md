@@ -21,7 +21,7 @@ This guide walks you through configuring your project and restoring your NuGet p
 
 ## Set up the Azure Artifacts Credential Provider
 
-[!INCLUDE [](includes/install-credential-provider-dotnet.md)]
+[!INCLUDE [](../includes/install-credential-provider-dotnet.md)]
 
 ## Connect to a feed
 

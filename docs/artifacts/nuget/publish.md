@@ -23,7 +23,7 @@ This article guides you through setting up your project and publishing your NuGe
 
 ## Set up the Azure Artifacts Credential Provider
 
-[!INCLUDE [](includes/install-credential-provider-nuget.md)]
+[!INCLUDE [](../includes/install-credential-provider-nuget.md)]
 
 ## Connect to a feed
 

@@ -23,7 +23,7 @@ Azure Artifacts upstream sources make it easy for developers to pull packages fr
 
 ## Set up the Azure Artifacts Credential Provider
 
-[!INCLUDE [](includes/install-credential-provider-dotnet.md)]
+[!INCLUDE [](../includes/install-credential-provider-dotnet.md)]
 
 ## Create a feed and enable upstream sources
 
