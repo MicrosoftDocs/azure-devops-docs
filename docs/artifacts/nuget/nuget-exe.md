@@ -60,7 +60,7 @@ Alternatively, you can use the automated helper script for a streamlined install
 
 See the [Azure Artifacts Credential Provider](https://github.com/microsoft/artifacts-credprovider?tab=readme-ov-file#azure-artifacts-credential-provider) repository for more details.
 
-#### [Linux/Mac](#tab/linuxMac/)
+#### [Linux/Mac](#tab/linuxmac/)
 
 Make sure you've setup the [Prerequisites](https://github.com/microsoft/artifacts-credprovider?tab=readme-ov-file#for-linux-self-contained-installs), then use one of the following methods to install the Azure Artifacts Credential Provider:
 
