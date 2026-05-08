@@ -146,6 +146,7 @@ If you configure the [Azure DevOps MCP Server](../mcp-server/mcp-server-overview
 
 ## Related content
 
+* [Set up automated testing with Azure Test Plans](automated-testing-overview.md)
 * [Troubleshooting and FAQs](reference-qa.yml)
 * [Associate automated tests with test cases](associate-automated-test-with-test-case.md)
 * [Associate automated test results with requirements](../pipelines/test/requirements-traceability.md)
