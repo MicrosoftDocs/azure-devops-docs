@@ -72,7 +72,7 @@ For more information using CI triggers with a specific repository type, see the 
 - [CI triggers in Bitbucket Cloud](../repos/bitbucket.md?tabs=classic#ci-triggers)
 - [CI triggers in TFVC](../repos/tfvc.md#ci-triggers)
 
-CI triggers are supported in classic build pipelines for [GitHub Enterprise Server](../repos/github-enterprise.md), [BitBucket Server](../repos/on-premises-bitbucket.md), and [Subversion](../repos/subversion.md) repositories if the repositories are accessible to Azure Pipelines.
+CI triggers are supported in classic build pipelines for [GitHub Enterprise Server](../repos/github-enterprise.md), [Bitbucket Server](../repos/on-premises-bitbucket.md), and [Subversion](../repos/subversion.md) repositories if the repositories are accessible to Azure Pipelines.
 
 * * *
 
@@ -90,13 +90,13 @@ pr:
 - main
 ```
 
-If not explicitly configured in your pipeline, PR triggers are enabled by default, unless [UI settings override YAML trigger](../troubleshooting/troubleshoot-triggers.md#ui-settings-override-yaml-trigger-setting), and pull requests to any branch trigger a pipeline run. To disable CI triggers in your pipeline, use the following syntax.
+If not explicitly configured in your pipeline, PR triggers are enabled by default, unless [UI settings override YAML trigger](../troubleshooting/troubleshoot-triggers.md#ui-settings-override-yaml-trigger-setting), and pull requests to any branch trigger a pipeline run. To disable PR triggers in your pipeline, use the following syntax.
 
 ```yml
 pr: none
 ```
 
-YAML PR triggers are supported for GitHub and BitBucket Cloud. For more information about using PR triggers with these types of repositories, see [PR triggers in GitHub](../repos/github.md#pr-triggers) and [PR triggers in BitBucket Cloud](../repos/bitbucket.md#pr-triggers). For information on the full YAML PR trigger syntax, see [pr definition](/azure/devops/pipelines/yaml-schema/pr).
+YAML PR triggers are supported for GitHub and Bitbucket Cloud. For more information about using PR triggers with these types of repositories, see [PR triggers in GitHub](../repos/github.md#pr-triggers) and [PR triggers in Bitbucket Cloud](../repos/bitbucket.md#pr-triggers). For information on the full YAML PR trigger syntax, see [pr definition](/azure/devops/pipelines/yaml-schema/pr).
 
 Azure Repos Git uses branch policies to implement PR triggers. For more information, see [PR triggers in Azure Repos Git](../repos/azure-repos-git.md#pr-triggers).
 
@@ -104,7 +104,7 @@ Azure Repos Git uses branch policies to implement PR triggers. For more informat
 
 Pull request (PR) triggers cause a pipeline to run whenever you open a pull request, or when you push changes to the source branch of an existing pull request.
 
-PR triggers are supported for GitHub and BitBucket Cloud. For more information about using PR triggers with these types of repositories, see [PR triggers in GitHub](../repos/github.md#pr-triggers) and [PR triggers in BitBucket Cloud](../repos/bitbucket.md#pr-triggers).
+PR triggers are supported for GitHub and Bitbucket Cloud. For more information about using PR triggers with these types of repositories, see [PR triggers in GitHub](../repos/github.md#pr-triggers) and [PR triggers in Bitbucket Cloud](../repos/bitbucket.md#pr-triggers).
 
 Azure Repos Git uses branch policies to implement PR triggers. For more information, see [PR triggers in Azure Repos Git](../repos/azure-repos-git.md#pr-triggers).
 
@@ -120,7 +120,7 @@ Comment triggers configure a pipeline to run when contributors make a pull reque
 
 #### [YAML](#tab/yaml/)
 
-Scheduled triggers run a pipeline on a predefined schedule. Scheduled triggers in YAML pipelines are supported by [all repository types that support YAML pipelines](../repos/index.md) (Azure Repos Git, GitHub, GitHub Enterprise, and BitBucket Cloud).
+Scheduled triggers run a pipeline on a predefined schedule. Scheduled triggers in YAML pipelines are supported by [all repository types that support YAML pipelines](../repos/index.md) (Azure Repos Git, GitHub, GitHub Enterprise, and Bitbucket Cloud).
 
 To define a scheduled trigger in YAML, use the `schedules` keyword and define your schedule using cron syntax. The following example configures a schedule that runs every day at midnight.
 
