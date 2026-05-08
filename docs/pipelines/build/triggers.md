@@ -17,7 +17,7 @@ A pipeline trigger tells a pipeline when to run. A trigger can configure a pipel
 * Scheduled triggers run a pipeline on a predefined schedule.
 * Pipeline completion triggers run a pipeline when another pipeline completes.
 
-This article provides an overview of [YAML pipeline](../get-started/pipelines-get-started.md#define-pipelines-using-yaml-syntax) triggers and [classic build pipeline](../get-started/pipelines-get-started.md#define-pipelines-using-the-classic-interface) triggers. [Classic release pipelines](../release/index.md) have similar versions of the triggers described in the previous list and are covered in [Classic release pipeline triggers](../release/triggers.md).
+This article provides an overview of [YAML pipeline](../get-started/pipelines-get-started.md#define-pipelines-using-yaml) triggers and [classic build pipeline](../get-started/pipelines-get-started.md#define-pipelines-using-the-classic-interface) triggers. [Classic release pipelines](../release/index.md) have similar versions of the triggers described in the previous list and are covered in [Classic release pipeline triggers](../release/triggers.md).
 
 <a name="ci"></a>
 ## CI triggers
@@ -43,12 +43,6 @@ If not explicitly configured in your pipeline, CI triggers are enabled by defaul
 
 > [!NOTE]
 > **Disable implied CI trigger** is only available in Azure DevOps Server 2022.2 and higher. In Azure DevOps Server 2022 and 2022.1, CI triggers are enabled by default if not explicitly configured.
-
-:::moniker-end
-
-:::moniker range="<azure-devops-2022"
-
-If not explicitly configured in your pipeline, CI triggers are enabled by default for all branches.
 
 :::moniker-end
 
@@ -126,8 +120,6 @@ Comment triggers configure a pipeline to run when contributors make a pull reque
 
 #### [YAML](#tab/yaml/)
 
-:::moniker range=">azure-devops-2019"
-
 Scheduled triggers run a pipeline on a predefined schedule. Scheduled triggers in YAML pipelines are supported by [all repository types that support YAML pipelines](../repos/index.md) (Azure Repos Git, GitHub, GitHub Enterprise, and BitBucket Cloud).
 
 To define a scheduled trigger in YAML, use the `schedules` keyword and define your schedule using cron syntax. The following example configures a schedule that runs every day at midnight.
@@ -144,14 +136,6 @@ schedules:
 
 For more information and examples, see [Scheduled triggers](../process/scheduled-triggers.md), [schedules definition](/azure/devops/pipelines/yaml-schema/schedules), and [schedules.cron definition](/azure/devops/pipelines/yaml-schema/schedules-cron).
 
-:::moniker-end
-
-:::moniker range="=azure-devops-2019"
-
-Scheduled builds aren't supported in YAML syntax in Azure DevOps Server 2019. After you create your YAML build pipeline, you can use [pipeline settings](../troubleshooting/troubleshoot-triggers.md#ui-settings-override-yaml-scheduled-triggers) to specify a scheduled trigger.
-
-:::moniker-end
-
 #### [Classic build](#tab/classic-build/)
 
 Scheduled triggers run a pipeline on a predefined schedule. Scheduled triggers are supported by [all repository types](../repos/index.md) supported by Azure DevOps. For information and examples, see [Scheduled triggers](../process/scheduled-triggers.md?tabs=classic).
@@ -163,8 +147,6 @@ Scheduled triggers run a pipeline on a predefined schedule. Scheduled triggers a
 [Pipeline triggers](../process/pipeline-triggers.md) in YAML pipelines and [build completion triggers](../process/pipeline-triggers-classic.md) in classic build pipelines allow you to trigger one pipeline upon the completion of another.
 
 #### [YAML](#tab/yaml/)
-
-:::moniker range=">azure-devops-2019"
 
 Configure a pipeline resource trigger in your pipeline to start a pipeline run when the source pipeline completes a run.
 
@@ -182,14 +164,6 @@ You can have multiple pipeline resources in your pipeline and can configure the 
 For more information and examples, see [Pipeline completion triggers](../process/pipeline-triggers.md).
 
 For the full syntax and trigger options, see [resources.pipelines.pipeline definition](/azure/devops/pipelines/yaml-schema/resources-pipelines-pipeline).
-
-:::moniker-end
-
-:::moniker range="=azure-devops-2019"
-
-Pipeline completion triggers aren't supported in YAML syntax in Azure DevOps Server 2019. After you create your YAML build pipeline, you can configure build completion triggers in [pipeline settings](../troubleshooting/troubleshoot-triggers.md#ui-settings-override-yaml-scheduled-triggers) to specify a pipeline completion trigger.
-
-:::moniker-end
 
 #### [Classic build](#tab/classic-build/)
 
