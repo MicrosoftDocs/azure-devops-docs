@@ -23,7 +23,7 @@ Custom controls allow you to change how users view and interact with a field on 
 
 Include the azure-devops-extension-sdk in your project:
 
-1. Install the SDK via npm: `npm install azure-devops-extension-sdk`.
+1. Install the SDK through npm: `npm install azure-devops-extension-sdk`.
 2. Initialize it in your JavaScript code: 
 
     ```javascript
@@ -120,7 +120,7 @@ Supported `workItemFieldTypes` values: `String`, `Integer`, `DateTime`, `PlainTe
 
 ## JavaScript sample
 
-A custom control extension works like a group or page extension, with the addition that it reads user input values via `SDK.getConfiguration().witInputs`. The following sample registers a provider that responds to work item form events:
+A custom control extension works like a group or page extension, with the addition that it reads user input values through `SDK.getConfiguration().witInputs`. The following sample registers a provider that responds to work item form events:
 
 ```typescript
 import { Control } from "control";

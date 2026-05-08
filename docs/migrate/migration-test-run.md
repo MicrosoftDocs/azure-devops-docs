@@ -33,7 +33,7 @@ Complete the [Prepare test run phase](migration-prepare-test-run.md) before you 
 >   - The test run times out
 >   - A new test run with the same name is run
 >   - A production run starts
->   - The organization is manually deleted via organization settings
+>   - The organization is manually deleted through organization settings
 
 ## Validate a collection 
 
@@ -134,7 +134,7 @@ Migrator prepare /collection:http://fabrikam:8080/DefaultCollection /tenantDomai
 
 When the Data Migration Tool runs the `prepare` command, it runs a complete validation to ensure that nothing changed with your collection since the last full validation. If any new issues are detected, no migration files are generated. 
 
-Shortly after the command starts running, a Microsoft Entra sign-in window displays. Sign in with an identity that belongs to the tenant domain, which is specified in the command. Make sure that the specified Microsoft Entra tenant is the one you want your future organization to be backed with. In our Fabrikam example, a user enters credentials that are similar to the following example screenshot.
+Shortly after the command starts running, a Microsoft Entra sign-in window displays. Sign in with an identity that belongs to the tenant domain, which is specified in the command. Ensure that the specified Microsoft Entra tenant is the one you want your future organization to be backed with. In our Fabrikam example, a user enters credentials that are similar to the following example screenshot.
 
 > [!IMPORTANT] 
 > Don't use a test Microsoft Entra tenant for a test migration and your production Microsoft Entra tenant for the production run. Using a test Microsoft Entra tenant can result in identity migration issues when you begin your production run with your organization's production Microsoft Entra tenant.
@@ -495,7 +495,7 @@ Test run organizations have 45 days before they're deleted. After the specified 
 ## Delete test runs
 
 Delete any previous test runs before you attempt a new one. When your team is ready to perform a production migration, you need to manually delete the test run organization. 
-Before you can run a second test run migration or the final production migration, make sure you delete any previous Azure DevOps Services organizations that you created in a previous test run. For more information, see [Delete organization](../organizations/accounts/delete-your-organization.md). 
+Before you can run a second test run migration or the final production migration, ensure you delete any previous Azure DevOps Services organizations that you created in a previous test run. For more information, see [Delete organization](../organizations/accounts/delete-your-organization.md). 
 
 > [!TIP]
 > Optional information to help a user be more successfulAny test run migration that follows the first is expected to take longer given the extra time required to clean up resources from previous test runs. 
@@ -513,12 +513,12 @@ Your team is now ready to begin the process of running a migration. We recommend
 
 > [!NOTE]
 > - If you need to repeat a completed production-run migration for a collection, such as due to a rollback, contact Azure DevOps Services [Customer Support](https://azure.microsoft.com/support/devops/) before you queue another migration.
-- Azure administrators can prevent users from creating new Azure DevOps organizations. If the Microsoft Entra tenant policy is turned on, your migration fails to finish. Before you begin, verify that the policy isn't set or that there's an exception for the user that's performing the migration. For more information, see [Restrict organization creation via Microsoft Entra tenant policy](../organizations/accounts/azure-ad-tenant-policy-restrict-org-creation.md).
+- Azure administrators can prevent users from creating new Azure DevOps organizations. If the Microsoft Entra tenant policy is turned on, your migration fails to finish. Before you begin, verify that the policy isn't set or that there's an exception for the user that's performing the migration. For more information, see [Restrict organization creation through Microsoft Entra tenant policy](../organizations/accounts/azure-ad-tenant-policy-restrict-org-creation.md).
 - Azure DevOps Services doesn't support per-pipeline retention policies, and they aren't carried over to the hosted version.
 
 ### Considerations for rollback plans
 
-A common concern for teams doing a final production run is their rollback plan, if anything goes wrong with migration. We highly recommend doing a test run to make sure that you can test the migration settings you provide to the Data Migration Tool for Azure DevOps.
+A common concern for teams doing a final production run is their rollback plan, if anything goes wrong with migration. We highly recommend doing a test run to ensure that you can test the migration settings you provide to the Data Migration Tool for Azure DevOps.
 
 Rollback for the final production run is fairly simple. Before you queue the migration, detach the team project collection from Azure DevOps Server, which makes it unavailable to your team members. If for any reason you need to roll back the production run and bring the on-premises server back online for your team members, you can do so. Attach the team project collection on-premises again and inform your team that they continue to work normally while your team regroups to understand any potential failures.
 
@@ -564,7 +564,7 @@ When your team initiates a migration, an email notification is sent to the user 
 
 The Data Migration Tool flags errors that you need to correct before migration. This article describes the most common warnings and errors that you might receive when you're preparing to migrate. After you correct each error, run the **migrator validate** command again to verify resolution.
 
-## Next steps
+## Next step
 
 > [!div class="nextstepaction"]
 > [Resolve migration errors](migration-troubleshooting.md)

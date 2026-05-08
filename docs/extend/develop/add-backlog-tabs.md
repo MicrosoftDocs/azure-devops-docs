@@ -114,7 +114,7 @@ SDK.register("backlogTabObject", {
 
 Learn about all of the places where you can add a hub in [Extensibility points](../reference/targets/overview.md).
 
-## Next steps
+## Next step
 
 > [!div class="nextstepaction"]
 > [Package, Publish, and Install](../publish/overview.md)

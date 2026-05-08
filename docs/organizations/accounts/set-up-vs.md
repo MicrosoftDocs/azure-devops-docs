@@ -1,7 +1,7 @@
 ---
 title: Set up Visual Studio with Azure DevOps Services
 titleSuffix: Azure DevOps Services
-description: Learn how to set up and connect Visual Studio via Azure DevOps Services.
+description: Learn how to set up and connect Visual Studio through Azure DevOps Services.
 ms.subservice: azure-devops-organizations
 ms.topic: how-to
 ms.author: chcomley
@@ -10,7 +10,7 @@ ms.date: 10/24/2024
 monikerRange: 'azure-devops'
 ---
 
-# Launch Visual Studio via Azure DevOps Services
+# Launch Visual Studio through Azure DevOps Services
 
 [!INCLUDE [version-eq-azure-devops](../../includes/version-eq-azure-devops.md)]
 
@@ -68,7 +68,7 @@ You can also use Azure DevOps Services with any IDE or code editor, like the fol
 
 7. To view your new organization, sign in to ```https://dev.azure.com/{Your_Organization}```.
 
-## Next steps
+## Next step
 
 > [!div class="nextstepaction"]
 > [Add users to your organization](add-organization-users.md)

@@ -28,7 +28,7 @@ Extra-large collections might generate one of the following messages after runni
 The following warning means you need to use the SQL Azure VM method to complete your migration. Once a database reaches a certain size, it becomes faster to set up a SQL Azure VM to complete the migration to Azure DevOps Services. To set up the VM and complete your migration, follow the instructions linked from the warning message. 
 
 ```cmdline
-The database is currently {Database Size}GBs. This is above the recommended size of {DACPAC Size Limit}GBs to use the DACPAC migration method. Please see the following page to learn how to migration using a SQL Azure VM: https://aka.ms/AzureDevOpsImportLargeCollection
+The database is currently {Database Size}GBs. This is above the recommended size of {DACPAC Size Limit}GBs to use the DACPAC migration method. See the following page to learn how to migration using a SQL Azure VM: https://aka.ms/AzureDevOpsImportLargeCollection
 ```
 
 This warning **DOES NOT** mean that your collection is too large for migration. 
@@ -38,7 +38,7 @@ This warning **DOES NOT** mean that your collection is too large for migration.
 Similar to the previous warning, the following warning means you must use the SQL Azure Virtual Machine (VM) method to complete the migration. To set up the VM and complete your migration, follow the instructions linked from the warning message.  
 
 ```cmdline
-The largest table size is currently {Table size}GBs. This is above the recommended size of {Size limit}GBs to use the DACPAC migration method. Please see the following page to learn how to migration using a SQL Azure VM: https://aka.ms/AzureDevOpsImportLargeCollection  
+The largest table size is currently {Table size}GBs. This is above the recommended size of {Size limit}GBs to use the DACPAC migration method. See the following page to learn how to migration using a SQL Azure VM: https://aka.ms/AzureDevOpsImportLargeCollection  
 ```
 
 This warning **DOES NOT** mean that your collection is too large for migration. 
@@ -88,7 +88,7 @@ For instance, you might notice different ordering for strings containing non-Eng
 If the Data Migration Tool can't connect to the internet, it can't validate conversion of your collation. It's only a warning, so you can continue with your migration process. However, when you run the **prepare** command, an internet connection is required and collation conversion is validated at that time.
 
 ```cmdline
-The collections database's collation '{collation}' is not natively supported in Azure DevOps Services. It could not be validated that the collation can be converted during migration to a supported Azure DevOps Services collation, as there was no internet connection. Please run the command again from a machine with an internet connection. See more details at https://aka.ms/AzureDevOpsImportCollations
+The collections database's collation '{collation}' is not natively supported in Azure DevOps Services. It could not be validated that the collation can be converted during migration to a supported Azure DevOps Services collation, as there was no internet connection. Run the command again from a machine with an internet connection. See more details at https://aka.ms/AzureDevOpsImportCollations
 ```
 
 ### Unsupported database collation  
@@ -279,7 +279,7 @@ This error occurs when the system detects an inconsistency in collection files. 
 
 Field name conflicts sometimes occur between your local collection and an Azure DevOps Services system field.
 
-`In order to migrate successfully, you must rename field *{TFSfieldReferenceName}*. Given name *{TFSfieldName}* is reserved for field *{VSTSfieldReferenceName}*.`
+`To migrate successfully, you must rename field *{TFSfieldReferenceName}*. Given name *{TFSfieldName}* is reserved for field *{VSTSfieldReferenceName}*.`
 
 To resolve this error, change the name of your collection field. Use the **`witadmin changefield`** command from [witadmin](../reference/witadmin/witadmin-customize-and-manage-objects-for-tracking-work.md).  
 
@@ -292,7 +292,7 @@ witadmin changefield /collection:http://AdventureWorksServer:8080/DefaultCollect
 This error indicates a field name conflict exists between your local collection and a specific Azure DevOps Services field. 
 
 
-`In order to migrate successfully, you must rename field *{TFSfieldReferenceName}* to *{VSTSfieldName}*. Given name for *{TFSfieldReferenceName}* is *{TFSfieldName}*`
+`To migrate successfully, you must rename field *{TFSfieldReferenceName}* to *{VSTSfieldName}*. Given name for *{TFSfieldReferenceName}* is *{TFSfieldName}*`
 
 To resolve this error, use the **`witadmin changefield`** command. For details, see [witadmin](../reference/witadmin/witadmin-customize-and-manage-objects-for-tracking-work.md).
 
@@ -306,7 +306,7 @@ This error indicates a field type conflict exists between your local collection 
 
 Using [witadmin](../reference/witadmin/witadmin-customize-and-manage-objects-for-tracking-work.md), you can change the data type only for HTML or PlainText fields. 
 
-`In order to migrate successfully, you must set type of field *{TFSfieldReferenceName}* to *{Type}*. Given type for *{TFSfieldReferenceName}* is *{collectionType}*.`
+`To migrate successfully, you must set type of field *{TFSfieldReferenceName}* to *{Type}*. Given type for *{TFSfieldReferenceName}* is *{collectionType}*.`
 
 If your field type is HTML or PlainText, you can change its type to the required type.
 
@@ -341,7 +341,7 @@ Open your migration specification file and update the region that you provided w
 
 The organization name your team selected is already in use by an existing organization. All Azure DevOps Services migrations go into a new organization that is created at migration time. 
 
-`VS403249: The organization {0} already exists. Please select a different name and try the migration again.`
+`VS403249: The organization {0} already exists. Select a different name and try the migration again.`
 
 Select a different organization name and update the migration specification file before retrying the migration. 
 
@@ -395,7 +395,7 @@ Your SQL sign in user account doesn't have the required database role.
 
 `VS403263: The User ID {0} must be member of the database role {1}.`
 
-Make sure the user account for sign in is assigned the ['TFSEXECROLE'](migration-test-run.md#configure-your-collection-for-migration) role. 
+Ensure the user account for sign in is assigned the ['TFSEXECROLE'](migration-test-run.md#configure-your-collection-for-migration) role. 
 
 > [!NOTE]   
 > There's a known issue with using `sp_addrolemember` to add `TFSEXECROLE` to an existing SQL login. The role membership isn't applied until all open connections using that identity are closed. If you receive the VS403263 error and you confirmed your identity has the role, create a new identity for your migration.
@@ -412,7 +412,7 @@ Verify or correct the connection string points to your collection database.
 
 The Azure DevOps Server Update queued the file migration job. You can't perform migrations until this job completes. The completion time for this job depends on the size of the collection. 
 
-`VS403255: The collection can't be imported due to an ongoing post upgrade job. Please wait and try again later`
+`VS403255: The collection can't be imported due to an ongoing post upgrade job. Wait and try again later`
 
 You can track job progress by running the following query on the collection database:
 
@@ -429,7 +429,7 @@ Once the number of files remaining to migrate is zero, you can run the Data Migr
 
 A new line character exists in the source location value. This character might remain after copying the SAS key from your windows console.
 
-`VS403282: The source location parameter contains a new line character. Please ensure the SAS key is defined on a single line in the migration specification file.`
+`VS403282: The source location parameter contains a new line character. Ensure the SAS key is defined on a single line in the migration specification file.`
 
 Remove the line break and try again.
 
@@ -437,7 +437,7 @@ Remove the line break and try again.
 
 Your migration files and DACPAC aren't located in the **required** Azure region to complete the migration to your target Azure DevOps Services region. 
 
-`VS403271: It appears that your DACPAC was uploaded to East US. It's required that customers targeting Central US for migration put their DACPACs in Central US. Please move your DACPAC to Central US and requeue the migration.` 
+`VS403271: It appears that your DACPAC was uploaded to East US. It's required that customers targeting Central US for migration put their DACPACs in Central US. Move your DACPAC to Central US and requeue the migration.` 
 
 [Create a new Microsoft Azure storage account](/azure/storage/common/storage-create-storage-account) in the required region and copy your files. The following example shows how to copy your data using **AzCopy**.
 
@@ -449,7 +449,7 @@ AzCopy.exe /Source:https://accountSCUS.blob.core.windows.net/mycontainer /Source
 
 Inconsistencies were detected in some Team Foundation version control (TFVC) files within your collection.
 
-`VS403316: An inconsistency was detected in some TFVC files for this collection. The inconsistency needs to be corrected prior to running a migration to Azure DevOps Services. Please reach out to https://aka.ms/AzureDevOpsImportSupport for assistance with addressing this issue.`
+`VS403316: An inconsistency was detected in some TFVC files for this collection. The inconsistency needs to be corrected prior to running a migration to Azure DevOps Services. Reach out to https://aka.ms/AzureDevOpsImportSupport for assistance with addressing this issue.`
 
 Work with Azure DevOps Services [customer support](https://aka.ms/AzureDevOpsImportSupport). Open a support ticket and they work with you to resolve the error. 
 
@@ -458,7 +458,7 @@ Work with Azure DevOps Services [customer support](https://aka.ms/AzureDevOpsImp
 The Data Migration Tool can't connect to the SQL Azure VM. 
 
 ```
-VS403366: A problem occurred while attempting to connect to your database. Please verify that your connection string is correct and that all required IP addresses for Azure DevOps Services have been provided exceptions for your machines firewall.
+VS403366: A problem occurred while attempting to connect to your database. Verify that your connection string is correct and that all required IP addresses for Azure DevOps Services have been provided exceptions for your machines firewall.
 
 List of Azure DevOps Services IPs:
 ```
@@ -477,7 +477,7 @@ From SQL Server Management Studio (SSMS), open the extended properties for the s
 
 Data migration fails as one or more projects found in this collection are in the soft-deleted stage. Restore the soft-deleted projects or delete them permanently before running the data migration. For details, see [Delete a project](../organizations/projects/delete-project.md).
 
-`VS403379: Data migration fails as one or more projects found in this collection are in the soft-deleted stage. Please restore the soft-deleted projects or delete them permanently before running the data migration.`
+`VS403379: Data migration fails as one or more projects found in this collection are in the soft-deleted stage. Restore the soft-deleted projects or delete them permanently before running the data migration.`
 
 Verify the collection against which you're running the Data Migration Tool has projects in the soft-deleted stage. Once a project is deleted, it remains in a soft-delete state for 28 days during which you can restore the deleted project. You can read about how to restore a deleted project in [Restore a project](../organizations/projects/delete-project.md#restore-a-deleted-project). If you have projects in the soft-deleted stage, remove them completely or restore them before running data migration.
 

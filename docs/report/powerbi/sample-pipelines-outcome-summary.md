@@ -450,6 +450,6 @@ From the Power Query Editor, select the `TotalCount` column, and then select **D
 
 	:::image type="content" source="media/pipeline-reports/single-pipeline-run-split-by-outcome-report.png" alt-text="Screenshot of Power BI sample Pipelines Outcome Summary report.":::
 
-## Related articles
+## Related content
 
 [!INCLUDE [temp](includes/sample-related-articles-pipelines.md)]

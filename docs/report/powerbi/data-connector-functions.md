@@ -63,7 +63,7 @@ Currently, the `VSTS.AccountContents()` method only works for the subdomains lis
 - `https://analytics.dev.azure.com/`
 - `https://vsrm.dev.azure.com/`
 
-## Related articles
+## Related content
 
 * [Power Query M language specification](/powerquery-m/power-query-m-language-specification)
 * [Power Query M formula language - Accessing data functions](/powerquery-m/accessing-data-functions)

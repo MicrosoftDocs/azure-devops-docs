@@ -195,6 +195,6 @@ Your report should look similar to the following image.
 
 :::image type="content" source="media/reports-test-plans/test-execution-stacked-area-trend.png" alt-text="Screenshot of Power BI Sample Test Plan Execution stacked area trend report.":::
 
-## Related articles
+## Related content
 
 [!INCLUDE [temp](includes/sample-related-articles-test.md)]

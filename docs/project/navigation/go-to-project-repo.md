@@ -50,7 +50,7 @@ From the **Projects** page you can quickly navigate to a project that you have p
 	> [!div class="mx-imgBorder"]  
 	> ![Screenshot showing opening the service of interest for that project.](media/projects-page/projects-page-vert.png)
 
-1. You can filter the project and team list using the *Filter projects* search box. Simply type a keyword contained within the name of a project or team. Here we type **Fabrikam** to find all projects or teams with *Fabrikam* in their name. 
+1. You can filter the project and team list using the *Filter projects* search box. type a keyword contained within the name of a project or team. Here we type **Fabrikam** to find all projects or teams with *Fabrikam* in their name. 
 
 	> [!div class="mx-imgBorder"]  
 	> ![Screenshot showing Projects page, filter on Fabrikam.](media/projects-page/filter-projects-vert.png) 

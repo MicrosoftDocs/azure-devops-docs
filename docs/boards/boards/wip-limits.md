@@ -86,7 +86,7 @@ Discuss these sources as a team and collaboratively find solutions.
 
 ## Set WIP limits
 
-Before you set WIP limits, make sure you [mapped your team's workflow to columns](add-columns.md).
+Before you set WIP limits, ensure you [mapped your team's workflow to columns](add-columns.md).
 
 1. [Open your board](kanban-quickstart.md).
 

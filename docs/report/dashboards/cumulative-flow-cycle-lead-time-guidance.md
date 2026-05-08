@@ -236,7 +236,7 @@ The following chart shows several outliers because some bugs took longer than av
 
 You also see how process changes affect your lead and cycle times. For example, on May 15, the team worked to limit the WIP and fix stale bugs. The standard deviation narrows after that date, showing improved predictability.
 
-## Next steps
+## Next step
 
 > [!div class="nextstepaction"]
 > [View and configure a cumulative flow diagram](cumulative-flow.md)

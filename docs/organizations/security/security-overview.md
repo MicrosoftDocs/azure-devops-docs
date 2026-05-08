@@ -38,7 +38,7 @@ For more information, see [Application management best practices](/azure/active-
 
 ## Implement Zero Trust
 
-Adopt [Zero Trust](/azure/security/fundamentals/zero-trust) principles across your DevOps processes to make sure every access request is thoroughly verified, regardless of its origin. Zero Trust operates on the principle of "never trust, always verify," meaning that no entity, whether inside or outside the network, is trusted by default. By implementing Zero Trust, you can significantly reduce the risk of security breaches and ensure that only authorized users and devices can access your resources.
+Adopt [Zero Trust](/azure/security/fundamentals/zero-trust) principles across your DevOps processes to ensure every access request is thoroughly verified, regardless of its origin. Zero Trust operates on the principle of "never trust, always verify," meaning that no entity, whether inside or outside the network, is trusted by default. By implementing Zero Trust, you can significantly reduce the risk of security breaches and ensure that only authorized users and devices can access your resources.
 
 - Fortify your [DevOps platform](/security/zero-trust/develop/secure-devops-platform-environment-zero-trust)
 - Safeguard your [development environment](/security/zero-trust/develop/secure-dev-environment-zero-trust)

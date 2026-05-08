@@ -258,6 +258,6 @@ https://analytics.dev.azure.com/{OrganizationName}/_odata/{version}/WorkItems?
 > [!div class="nextstepaction"]
 > [Query aggregate data](aggregated-data-analytics.md)
 
-## Related articles
+## Related content
 
 - [Query guidelines](odata-query-guidelines.md)

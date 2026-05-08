@@ -146,7 +146,7 @@ To add a markdown file to a dashboard, you must complete the steps in [Add Markd
    
 As you update the Markdown file, changes automatically appear on the dashboard upon refresh.
 
-## Related articles
+## Related content
 
 - [Learn how to use burndown charts](burndown-guidance.md)
 - [Understand cumulative flow and lead/cycle time](cumulative-flow-cycle-lead-time-guidance.md)

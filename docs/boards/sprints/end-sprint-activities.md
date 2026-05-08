@@ -93,7 +93,7 @@ As shown in the following image, sprints from 2012 and 2013 were moved under the
 
 The Sprint backlog automatically points to the current sprint as the active sprint based on the start and end dates. If the current date falls within the sprint period, then the corresponding sprint is the current sprint. No further action is required to make the next sprint the active current sprint.  
 
-As a project or team administrator, make sure to meet the following guidance for managing sprints.
+As a project or team administrator, ensure to meet the following guidance for managing sprints.
 
 - Start and end dates defined for your project's sprints shouldn't overlap. 
 - All sprints of interest to a team should be selected for that team's configuration.  

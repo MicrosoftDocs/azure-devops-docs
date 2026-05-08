@@ -1,5 +1,5 @@
 ---
-title: Manage wikis via CLI
+title: Manage wikis through CLI
 titleSuffix: Azure DevOps
 description: Manage wikis with the command-line interface (CLI) in Azure DevOps.
 ms.subservice: azure-devops-wiki
@@ -59,7 +59,7 @@ az devops wiki create [--mapped-path]
 
 - **--mapped-path**: [Required for `codewiki` type] Mapped path of the new wiki, for example, `/` to publish from root of repository.
 - **--name**: Name of the new wiki.
-- **--project -p**: Optional. Name or ID of the project. Configure the default project by using `az devops configure -d project=NAME_OR_ID`. Required if not configured as default or picked up via git config.
+- **--project -p**: Optional. Name or ID of the project. Configure the default project by using `az devops configure -d project=NAME_OR_ID`. Required if not configured as default or picked up through git config.
 - **--repository -r**: [Required for `codewiki` type] Name or ID of the repository to publish the wiki from.
 - **--subscription**: Optional. Name or ID of subscription. Configure the default subscription by using `az account set -s NAME_OR_ID`.
 - **--type --wiki-type**: Type of wiki to create. Accepted values: `codewiki`, `projectwiki`. Default value: `projectwiki`.
@@ -100,7 +100,7 @@ az devops wiki delete
 ### Parameters
 
 - **--wiki**: Required. Name or ID of the wiki to delete.
-- **--project -p**: Optional. Name or ID of the project. You can configure the default project by using `az devops configure -d project=NAME_OR_ID`. Required if not configured as default or picked up via git config.
+- **--project -p**: Optional. Name or ID of the project. You can configure the default project by using `az devops configure -d project=NAME_OR_ID`. Required if not configured as default or picked up through git config.
 - **--subscription**: Optional. Name or ID of subscription. You can configure the default subscription by using `az account set -s NAME_OR_ID`.
 - **--yes -y**: Optional. Don't prompt for confirmation.
 

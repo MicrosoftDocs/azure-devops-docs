@@ -66,7 +66,7 @@ To share a private view, edit the view and change the sharing option to **Shared
  
 
 > [!IMPORTANT]
-> If you plan to share [Power BI reports or dashboards](/power-bi/service-share-dashboards) based on an Analytics view, make sure the view is **Shared**. Otherwise, you are the only one who can modify the view and manually refresh the data. We recommend sharing views to support shared reports and dashboards.
+> If you plan to share [Power BI reports or dashboards](/power-bi/service-share-dashboards) based on an Analytics view, ensure the view is **Shared**. Otherwise, you are the only one who can modify the view and manually refresh the data. We recommend sharing views to support shared reports and dashboards.
 > 
 > [!div class="mx-imgBorder"]
 > ![Screenshot of New View dialog, General tab.](media/editable-views/general.png)
@@ -94,12 +94,12 @@ To delete a view, select the :::image type="icon" source="../media/icons/actions
 
 <a id="q-a">  </a>
 
-## Next steps
+## Next step
 
 > [!div class="nextstepaction"]
 > [Create a Power BI report using an Analytics view](data-connector-connect.md)
 
-## Related articles
+## Related content
 - [Create an Analytics view](analytics-views-create.md) 
 - [Data available from Analytics](data-available-in-analytics.md)
 - [Grant permissions to access Analytics](./analytics-security.md)

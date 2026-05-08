@@ -68,7 +68,7 @@ Review the services that you granted authorization to access your organization.
 
    :::image type="content" source="media/revoke-authorized-app.png" alt-text="Screenshot showing highlighted Revoke trash can for selection.":::
 
-## Next steps
+## Next step
 
 > [!div class="nextstepaction"]
 > [Set user preferences](set-your-preferences.md)

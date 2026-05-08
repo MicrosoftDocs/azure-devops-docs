@@ -16,7 +16,7 @@ ai-usage: ai-assisted
 
 [!INCLUDE [version-lt-eq-azure-devops](../../../includes/version-lt-eq-azure-devops.md)]
 
-Work items are the backbone for planning and tracking work. As such, make sure each work item type (WIT) tracks the data your team needs. 
+Work items are the backbone for planning and tracking work. As such, ensure each work item type (WIT) tracks the data your team needs. 
 
 [!INCLUDE [temp](../includes/note-on-prem-link.md)]
 

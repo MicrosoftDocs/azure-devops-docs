@@ -24,7 +24,7 @@ This article explains how to share your Power BI Desktop file, along with its da
 
 ## Publish to Power BI
 
-1. If you're using an [Analytics view](what-are-analytics-views.md), make sure the view is set to **Shared**, not **Private**.
+1. If you're using an [Analytics view](what-are-analytics-views.md), ensure the view is set to **Shared**, not **Private**.
 
 1. Open your **Power BI Desktop** file that contains the data you want to publish.
 

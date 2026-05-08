@@ -36,7 +36,7 @@ A privacy policy is legally required for all websites and apps that collect or u
 
    ![Screenshot showing where you can add your privacy policy URL in Organization settings](media/add-privacy-url/privacy-url-in-organization-settings.png)
 
-4.  Select **Save**.
+4. Select **Save**.
 
    A link to your organization's privacy document gets added. This link provides users with direct access to your custom privacy policy, detailing how you handle both internal and external guest data privacy. The link appears in the **Organization settings** on the **Overview** page, ensuring that users can easily find and review your privacy practices.
 

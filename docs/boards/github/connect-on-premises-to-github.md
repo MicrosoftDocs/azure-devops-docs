@@ -73,7 +73,7 @@ You can connect up to 250 GitHub repositories to an Azure Boards project.
 1.	To create a GitHub PAT, see [Create a GitHub PAT](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens).
 
 	> [!TIP]  
-	> When you create your GitHub PAT, make sure that you include these scopes: `repo, admin:repo_hook, read:user, user:email`. 
+	> When you create your GitHub PAT, ensure that you include these scopes: `repo, admin:repo_hook, read:user, user:email`. 
 	
 1.	Enter the URL for your GitHub Enterprise server and the **Personal access token** credentials recognized by that server. And then select **Connect**.
 
@@ -165,7 +165,7 @@ When it updates, the section should appear as follows.
 > </Group>  
 > ```
 
-## Next steps
+## Next step
 
 > [!div class="nextstepaction"]
 > [Link GitHub commits and pull requests to work items](link-to-from-github.md) 

@@ -254,7 +254,7 @@ az devops project list [--org]
 
 #### Parameters 
 
-- org: Optional. Azure DevOps organization URL. You can configure the default organization by using `az devops configure -d organization=ORG_URL`. Required if not configured as default or picked up via `git config`. Example: `https://dev.azure.com/MyOrganizationName/`.
+- org: Optional. Azure DevOps organization URL. You can configure the default organization by using `az devops configure -d organization=ORG_URL`. Required if not configured as default or picked up through `git config`. Example: `https://dev.azure.com/MyOrganizationName/`.
 - skip: Optional. Number of results to skip.
 - top: Optional. Maximum number of results to list.
 
@@ -343,7 +343,7 @@ If you use GitHub Copilot, the [Azure DevOps MCP Server](../../mcp-server/mcp-se
 > [!TIP]
 > For the best results, use these prompts in agent mode with the Azure DevOps MCP Server connected. Customize the prompts with your specific organization name, process template, or team structure.
 
-## Next steps
+## Next step
 
 > [!div class="nextstepaction"]
 > [Structure your project](about-projects.md#structure-your-project)

@@ -236,7 +236,7 @@ For more information, see:
 
 ::: moniker-end
 
-## Next steps
+## Next step
 
 > [!div class="nextstepaction"]
 > [Create your product backlog](../../boards/backlogs/create-your-backlog.md)

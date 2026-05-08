@@ -16,7 +16,7 @@ ai-usage: ai-assisted
 
 [!INCLUDE [version-lt-azure-devops](../includes/version-lt-azure-devops.md)]  
 
-This article applies to customizations you can make when you use the Hosted XML process model or the On-premises Xml process model for an on-premises Azure DevOps Server.  For the Inheritance process model, see [Customize a process](../organizations/settings/work/customize-process.md). For an overview of process models, see [Customize your work tracking experience](customize-work.md). 
+This article applies to customizations you can make when you use the Hosted XML process model or the On-premises Xml process model for an on-premises Azure DevOps Server. For the Inheritance process model, see [Customize a process](../organizations/settings/work/customize-process.md). For an overview of process models, see [Customize your work tracking experience](customize-work.md). 
 
 
 ## Import and export XML definition files 

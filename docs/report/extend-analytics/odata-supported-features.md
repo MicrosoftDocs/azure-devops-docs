@@ -121,7 +121,7 @@ However, you can't enter the following string:
 - ```topsum```  
 - ```toppercent```  
 
-## Related articles  
+## Related content  
 
 - [Query your work tracking data](wit-analytics.md)  
 - [Aggregate data](aggregated-data-analytics.md)

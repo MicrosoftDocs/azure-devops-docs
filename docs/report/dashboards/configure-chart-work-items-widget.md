@@ -48,7 +48,7 @@ For more information about dashboard permissions, see [Set dashboard permissions
 
 From the **Chart for Work Items** widget, you select the query that contains the work items you want to chart. When creating a query to support your chart, follow the guidelines provided in [Create a flat-list query](charts.md#create-a-flat-list-query).  
 > [!TIP]   
-> If you start to configure a **Chart for Work Items** widget and then add the query you want to select, you must refresh your dashboard browser page in order to select the newly added query. 
+> If you start to configure a **Chart for Work Items** widget and then add the query you want to select, you must refresh your dashboard browser page to select the newly added query. 
 
 ### Create a dashboard 
 
@@ -83,7 +83,7 @@ Prior to adding a widget to a dashboard, you must first add the dashboard to the
 
 	:::image type="content" source="media/chart-work-items/configure-chart-widget-2020.png" alt-text="Configuration dialog for chart work items widget, Azure DevOps Server 2020 and later versions.":::
 
-	Based on your chart type, specify values for the remaining fields. Change a chart color simply by choosing another color from those shown. For additional guidance on choosing and configuring specific chart types, see [Track progress with status and trend query-based charts](charts.md).
+	Based on your chart type, specify values for the remaining fields. Change a chart color by choosing another color from those shown. For additional guidance on choosing and configuring specific chart types, see [Track progress with status and trend query-based charts](charts.md).
 
 6. After you save your changes, you'll see the new chart has been added to the dashboard. 
 
@@ -105,7 +105,7 @@ Prior to adding a widget to a dashboard, you must first add the dashboard to the
 > [!NOTE]   
 > You can't group a query-based chart by tags, however, you can group a **Chart for Work Items** widget by tags that you add to a dashboard.  
 
-To group a chart by tags, perform the same steps provided in the previous section. Make sure that your flat-list query contains **Tags** in the query clause or as a column option. Then, select **Tags** for the **Group by** selection. To filter the chart to show only some tags, select the **Selected tags** radio button and then choose the tags you want the chart to display.  
+To group a chart by tags, perform the same steps provided in the previous section. Ensure that your flat-list query contains **Tags** in the query clause or as a column option. Then, select **Tags** for the **Group by** selection. To filter the chart to show only some tags, select the **Selected tags** radio button and then choose the tags you want the chart to display.  
 
 :::image type="content" source="media/charts/configure-chart-widget-tags.png" alt-text="Screenshot of Chart by Work Items, Configure, Group by Tags.":::
 
@@ -114,7 +114,7 @@ For more information about using tags, see [Add tags to work items](../../boards
 ::: moniker-end
  
 
-## Related articles
+## Related content
 
 - [Track progress with status and trend query-based charts](charts.md)
 - [FAQs on Azure DevOps dashboards, charts, and reports](faqs.yml) 

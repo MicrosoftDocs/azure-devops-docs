@@ -396,7 +396,7 @@ This table describes activity-based and numeric fields you can use to track work
 > 3. To change the ProcessConfiguration field assignment (on-premises only), see [Process configuration XML element reference](../../reference/xml/process-configuration-xml-element.md).
 > 4. Each team configures whether bugs behave like requirements or tasks. Because bugs can appear with either, fields used to estimate effort at both levels are included on the work item form.
 
-## Next steps
+## Next step
 
 > [!div class="nextstepaction"]
 > [Customize your work tracking experience](../../reference/customize-work.md)

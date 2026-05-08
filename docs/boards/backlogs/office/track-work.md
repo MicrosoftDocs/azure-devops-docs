@@ -132,7 +132,7 @@ To connect from your Office client to an Azure DevOps Services project, do the f
 
 1. Start with a blank worksheet.
 
-1. If your client is signed into a user account, make sure that it's your Azure DevOps user account. If not, choose your account name and sign in as another user.
+1. If your client is signed into a user account, ensure that it's your Azure DevOps user account. If not, choose your account name and sign in as another user.
 
    :::image type="content" source="media/connect/sign-in-as-other-user.png" alt-text="Screenshot shows Excel Team Ribbon, Choose New List.":::
 
@@ -160,7 +160,7 @@ To connect from your Office client to an Azure DevOps Services project, do the f
 
    :::image type="content" source="media/connect/choose-project.png" alt-text="Screenshot shows the Connect to Azure DevOps dialog, where you can choose a project.":::
 
-   Make sure your Azure DevOps user account appears at the bottom of the dialog. If it isn't, choose **Switch User** and sign in to the correct account.
+   Ensure your Azure DevOps user account appears at the bottom of the dialog. If it isn't, choose **Switch User** and sign in to the correct account.
 
 1. From the **New List** dialog, choose **Input list**. Or, if you want to work with a list of work items defined in a query, choose **Query list**.
 
@@ -172,7 +172,7 @@ To connect from your Office client to an Azure DevOps Server project, do the fol
 
 1. Start with a blank worksheet.
 
-1. If your client is signed into a user account, make sure that it's yours. If not, choose your account name and sign in as another user.
+1. If your client is signed into a user account, ensure that it's yours. If not, choose your account name and sign in as another user.
 
    :::image type="content" source="media/connect/sign-in-as-other-user.png" alt-text="Screenshot to select sign-in on Excel ribbon.":::
 
@@ -194,7 +194,7 @@ To connect from your Office client to an Azure DevOps Server project, do the fol
 
    :::image type="content" source="media/connect/connect-on-premises.png" alt-text="Screenshot shows the Connect to Azure Server dialogs, on-premises versions.":::
 
-   Choose **Close** to close the add/remove servers dialog. From the **Select an Azure DevOps Server** dialog, make sure the server you added is selected, and choose **Connect**.
+   Choose **Close** to close the add/remove servers dialog. From the **Select an Azure DevOps Server** dialog, ensure the server you added is selected, and choose **Connect**.
 
    If you can't connect, [get added as a team member](../../../organizations/security/add-users-team-project.md#add-team-members).
 
@@ -202,7 +202,7 @@ To connect from your Office client to an Azure DevOps Server project, do the fol
 
    :::image type="content" source="media/connect/choose-project.png" alt-text="Screenshot shows the Connect to Azure DevOps dialog where you can choose a project, on-premises version.":::
 
-   Make sure your Azure DevOps user account appears at the bottom of the dialog. If it isn't, choose **Switch User** and sign in to the correct account.
+   Ensure your Azure DevOps user account appears at the bottom of the dialog. If it isn't, choose **Switch User** and sign in to the correct account.
 
 1. From the **New List** dialog, choose **Input list**. Or, if you want to work with a list of work items defined in a query, choose **Query list**.
 

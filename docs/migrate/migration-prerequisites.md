@@ -43,7 +43,7 @@ Ensure your team has a functional Microsoft Entra ID tenant for authenticating m
 Synchronize your on-premises Active Directory with Microsoft Entra ID, so your team members can use the same credentials to authenticate. Also, your Azure DevOps Services administrators can use your Active Directory groups for setting permissions within your organization. 
 
 To set up the synchronization, do the following steps: 
-1. Utilize the [Microsoft Entra ID Connect](https://aka.ms/AzureADConnect) technology. 
+1. Use the [Microsoft Entra ID Connect](https://aka.ms/AzureADConnect) technology. 
 2. To configure Microsoft Entra ID Connect with your on-premises environment, collaborate with your IT department, DevOps Partner, Microsoft Premier Support, or Microsoft Consulting Services. 
 
 For more information on setting up Microsoft Entra ID Connect, see [Microsoft Entra Connect Sync](https://aka.ms/AzureADConnect).

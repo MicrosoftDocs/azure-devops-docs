@@ -27,7 +27,7 @@ To help you get started, use the guidance provided in the following table to det
 |Create reports or dashboards based on Analytics data | Power BI | You can specify a Power BI query or OData query within Power BI to filter the data. For more information, see [Overview of sample reports using OData queries](../powerbi/sample-odata-overview.md). |  
 | Write and test OData  | [Visual Studio Code](https://code.visualstudio.com/download)<br/>[OData for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=stansw.vscode-odata) | Visual Studio Code is a free code editor available on Windows, Mac, and Linux. The OData extension provides syntax highlighting and other functions that are useful for writing and testing queries. |  
 
-## Related articles
+## Related content
 
 - [What is the Analytics service?](../powerbi/what-is-analytics.md)
 - [Construct OData queries for Analytics](analytics-query-parts.md)

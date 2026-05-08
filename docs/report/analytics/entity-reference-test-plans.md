@@ -93,7 +93,7 @@ Navigational properties include [`Project`](entity-reference-general.md#projects
 |**Test Result Outcome** | `LastResultOutcome` | Enumerated | Specifies the last test result outcome. Valid values are listed as follows for [TestOutcome](#testoutcome-enumerated-type-members).  | 
 |**Test Suite Id**   | `TestSuiteId` | Int32 | The work item ID assigned to the associated test suite.     |  
 
-To review test points via the user interface, see [Run manual tests, Save and review results](../../test/run-manual-tests.md#save-and-review-results). 
+To review test points through the user interface, see [Run manual tests, Save and review results](../../test/run-manual-tests.md#save-and-review-results). 
 
 ### Navigation properties
 
@@ -372,7 +372,7 @@ The following members are defined for the `TestSuiteType` enumerated type.
 |`Static`                | 2            | Static              |      
 |`RequirementBased`      | 3            | Requirement Based   |
  
-## Related articles
+## Related content
 
 - [Data model for Analytics](../extend-analytics/data-model-analytics-service.md)
 - [What is Azure Test Plans?](../../test/overview.md) 

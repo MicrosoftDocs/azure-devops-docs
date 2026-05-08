@@ -9,7 +9,7 @@ ms.author: pliaros
 author: raviLiftr
 ms.topic: how-to
 monikerRange: '<= azure-devops'
-ms.date: 03/17/2026
+ms.date: 05/07/2026
 ms.update-cycle: 1095-days
 ---
 
@@ -213,6 +213,9 @@ When you create the test plan for a new sprint, you often want to repeat some of
 > - When you import a test suite to a new project, the new suite contains copies of all test cases in the source suite. However, it doesn't retain any historical data like the previous test runs, related bugs, or old results.
 > - The process also clones and creates shared steps that the test cases in the destination project reference.
 > - You can't clone test cases from and to the same test plan, even into a different suite. To accomplish this scenario, you must first move the test cases to a different, temporary test plan. Then, use the temporary test plan as the source plan and clone the test cases back to the source test plan by putting the ID into the destination test plan place. This process also duplicates shared steps present in the test cases. 
+> - Suite import copies all links from source suite to new suite, except child and clone-tracking links. 
+> - Affects/Affected By links on the source suite create reciprocal links on the target work items.
+> - Repeated imports from the same source accumulate links on the source Test Plan work item. When the 1000-link limit is reached, the import fails with the error TF237201. **Workaround:** Periodically remove unnecessary **Affected By** links from the source Test Plan work item by using the REST API.
 
 ::: moniker range="<=azure-devops"
 
@@ -342,7 +345,7 @@ If you configure the [Azure DevOps MCP Server](../mcp-server/mcp-server-overview
 | Prepare for cloning | `Show all test suites in test plan <12345> that contain automated test cases` |
 
 > [!TIP]
-> If you're using Visual Studio Code, [agent mode](https://code.visualstudio.com/docs/copilot/chat/chat-agent-mode) is especially helpful for troubleshooting complex copy and clone operations.
+> - If you're using Visual Studio Code, [agent mode](https://code.visualstudio.com/docs/copilot/chat/chat-agent-mode) is especially helpful for troubleshooting complex copy and clone operations.
 > - To avoid using stale or cached data from previous queries, add to your prompt, "Do not use previously fetched data."
 
 ::: moniker-end

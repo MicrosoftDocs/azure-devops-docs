@@ -153,7 +153,7 @@ From the Project stats or Activity section, you can view updates made to the pro
 
 ## Chat with a project member or send an email
 
-From the Members section, you can see some of the members added to the project, and connect to them via email or chat with a member. 
+From the Members section, you can see some of the members added to the project, and connect to them through email or chat with a member. 
 
 :::image type="content" source="media/summary/project-members.png" alt-text="Screenshot of Summary page, Members section.":::
 

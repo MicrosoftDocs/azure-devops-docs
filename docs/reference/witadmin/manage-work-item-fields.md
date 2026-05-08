@@ -218,37 +218,37 @@ You can change the friendly name of a work item field to meet the naming convent
   
 #### To rename a work item field  
   
-1.  Enter the following command to rename the friendly name assigned to `Microsoft.VSTS.Common.Rank` to **Important Rank**.  
+1. Enter the following command to rename the friendly name assigned to `Microsoft.VSTS.Common.Rank` to **Important Rank**.  
   
     ```  
     witadmin changefield /collection:http://AdventureWorksServer:8080/tfs/DefaultCollection /n:Microsoft.VSTS.Common.Rank /name:"Important Rank"  
     ```  
   
-2.  At the confirmation prompt, enter `y` and then select **ENTER**. Wait until you receive the following message:  
+2. At the confirmation prompt, enter `y` and then select **ENTER**. Wait until you receive the following message:  
   
      **Field renamed.**  
   
 #### To verify changes imported to a single project  
   
-1.  In Team Explorer, choose ![Refresh](media/icon_refreshnode.png "Icon_refreshNode") **Refresh**.  
+1. In Team Explorer, choose ![Refresh](media/icon_refreshnode.png "Icon_refreshNode") **Refresh**.  
   
      The latest updates are downloaded from the server, which include the changes that you just made to the field name. Wait several seconds for the refresh to finish.  
   
-2.  Choose **New Query** to create a query.  
+2. Choose **New Query** to create a query.  
   
-3.  In the Query Editor, choose the **Click here to add a clause** link to add a row, select the blank **Field** cell, and in the cell, enter `Rank`. The following message that appears above the results list. This message indicates that the Rank can't be found.  
+3. In the Query Editor, choose the **Select here to add a clause** link to add a row, select the blank **Field** cell, and in the cell, enter `Rank`. The following message that appears above the results list. This message indicates that the Rank can't be found.  
   
      **Run the query to see the query results.**  TF51005: The query references a field that doesn't exist. The error is caused by `<\<Rank>>`.  
   
-4.  Delete the value **Rank** from the **Field** cell, and enter `Important Rank` into the cell.  
+4. Delete the value **Rank** from the **Field** cell, and enter `Important Rank` into the cell.  
   
-5.  Select **<>** in the **Operator** cell, and enter `1` into the **Value** cell.  
+5. Select **<>** in the **Operator** cell, and enter `1` into the **Value** cell.  
   
-6.  On the **Query** toolbar, choose ![Run Query](media/icon_runquery.png "Icon_runQuery")**Run**.  
+6. On the **Query** toolbar, choose ![Run Query](media/icon_runquery.png "Icon_runQuery")**Run**.  
   
-7.  Open the shortcut menu for any row in the results and select **Column Options**. Scroll down in the **Available columns** list. Notice that the **Rank** field is no longer present but the **Important Rank** field is present.  
+7. Open the shortcut menu for any row in the results and select **Column Options**. Scroll down in the **Available columns** list. Notice that the **Rank** field is no longer present but the **Important Rank** field is present.  
   
-8.  Select **Important Rank** in the **Available columns** box, and then choose the **>** button (add selected columns). Choose **OK**.  
+8. Select **Important Rank** in the **Available columns** box, and then choose the **>** button (add selected columns). Choose **OK**.  
   
      Notice that the friendly name for Microsoft.VSTS.Common. Rank is renamed from **Rank** to **Important Rank** throughout the query builder and results list.  
   
@@ -293,17 +293,17 @@ witadmin listfields /collection:http://AdventureWorksServer:8080/tfs/DefaultColl
 
 #### Enable synchronization  
   
-1.  To enable synchronization for a person-named field, type the following command, substituting your data for the arguments that are shown here:  
+1. To enable synchronization for a person-named field, type the following command, substituting your data for the arguments that are shown here:  
   
     ```  
     witadmin changefield /collection:http://AdventureWorksServer:8080/tfs/DefaultCollection /n:MyCompany.CustomerName /syncnamechanges:true  
     ```  
   
-2.  The following confirmation prompt appears:  
+2. The following confirmation prompt appears:  
   
      **This will change properties for field {0} on the Azure DevOps Server. Do you want to continue?**  
   
-3.  Enter `0` to confirm that you want to change the field, or `1` to cancel the request.  
+3. Enter `0` to confirm that you want to change the field, or `1` to cancel the request.  
   
      If the change request succeeds, the following confirmation message appears:  
   
@@ -321,7 +321,7 @@ witadmin deletefield /collection:http://AdventureWorksServer:8080/tfs/DefaultCol
   
 #### Verify a field isn't in use  
   
-1.  Enter the following command, specifying the reference name for the work item field, such as `MyCompany.MyProcess.MyField`.  
+1. Enter the following command, specifying the reference name for the work item field, such as `MyCompany.MyProcess.MyField`.  
   
     ```  
     witadmin listfields /collection:http://AdventureWorksServer:8080/tfs/DefaultCollection /n:MyCompany.MyProcess.MyField  
@@ -338,7 +338,7 @@ witadmin deletefield /collection:http://AdventureWorksServer:8080/tfs/DefaultCol
     Indexed: False  
     ```  
   
-2.  If the **Use** field indicates that the field is in use, then you must delete it from each work item type for each project that is listed. For example, the `Microsoft.VSTS.TCM.SystemInfo` field indicates that it's being used by the Bug and Code Defect work item types for four projects: Arroyo, Desert, Palm, and Springs.  
+2. If the **Use** field indicates that the field is in use, then you must delete it from each work item type for each project that is listed. For example, the `Microsoft.VSTS.TCM.SystemInfo` field indicates that it's being used by the Bug and Code Defect work item types for four projects: Arroyo, Desert, Palm, and Springs.  
   
     ```  
     Field: Microsoft.VSTS.TCM.SystemInfo  
@@ -362,7 +362,7 @@ witadmin deletefield /collection:http://AdventureWorksServer:8080/tfs/DefaultCol
 Enter **y** at the confirmation prompt to complete this step.  
 
   
-## Related articles 
+## Related content 
 
 -  [Customizing your work tracking experience](../customize-work.md)   
 -  [Work item field index](../../boards/work-items/guidance/work-item-field.md)   

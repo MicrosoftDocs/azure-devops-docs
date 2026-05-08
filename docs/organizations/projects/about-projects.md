@@ -140,7 +140,7 @@ For more information, see [Change project visibility to private](make-project-pu
 
 ## Version control support
 
-Git repositories can be browsed and cloned only via HTTPS. SSH and GVFS endpoints are unavailable. Clients like Visual Studio and IntelliJ work with the HTTPS clone URL but don't offer the connected experience linking to work items and other collateral.
+Git repositories can be browsed and cloned only through HTTPS. SSH and GVFS endpoints are unavailable. Clients like Visual Studio and IntelliJ work with the HTTPS clone URL but don't offer the connected experience linking to work items and other collateral.
 
 <a id="dashboard-widget-support"></a>
 
@@ -191,7 +191,7 @@ As your organization grows, you can add teams equipped with configurable Agile t
 
 ## Connect to a project with other clients
 
-Aside from connecting via a web browser, you can connect to a project from the following clients:
+Aside from connecting through a web browser, you can connect to a project from the following clients:
 
 - [Visual Studio (Professional, Enterprise, Test Professional)](https://visualstudio.microsoft.com/vs/compare/)
 - [Visual Studio Code](https://code.visualstudio.com/Docs)

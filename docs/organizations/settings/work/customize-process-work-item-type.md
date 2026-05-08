@@ -73,7 +73,7 @@ For example, you might want to capture customer issues in a custom Ticket WIT.
 	> [!div class="mx-imgBorder"]
 	> ![Screenshot of Work Items page, add new work item, Ticket.](media/process/add-custom-wit-verify-ticket.png)
 
-	If you don't see the custom work item type, refresh your browser to make sure it registers all the custom changes you made.
+	If you don't see the custom work item type, refresh your browser to ensure it registers all the custom changes you made.
 
 1. Verify that the field you added appears on the form.
 	The :::image type="icon" source="../../../media/icons/required-icon.png" border="false"::: (exclamation mark) icon indicates the field is required.

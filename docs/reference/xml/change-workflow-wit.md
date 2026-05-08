@@ -45,7 +45,7 @@ If you're new to WIT customization, note the following:
 
 To customize the workflow, follow these two steps:   
 
-1.  Modify the `WORKFLOW` section of the WIT definition as described in this topic.
+1. Modify the `WORKFLOW` section of the WIT definition as described in this topic.
 
 1.  [Modify the process configuration to map new workflow states to metastates](process-configuration-xml-element.md).  
 

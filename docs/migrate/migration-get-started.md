@@ -130,7 +130,7 @@ Do the following steps to reserve your organization name.
 
 By following this approach, you have a smooth transition while ensuring your preferred organization name remains available. 
 
-## Next steps 
+## Next step 
 
 > [!div class="nextstepaction"]
 > [Complete prerequisites for migration](migration-prerequisites.md)

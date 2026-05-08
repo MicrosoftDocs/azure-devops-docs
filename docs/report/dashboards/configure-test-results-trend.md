@@ -82,7 +82,7 @@ You can configure your Test Results Trend (Advanced) widget to show results for 
    
 	![Screenshot of Test Results Trend Advanced widget.](media/test-results-trend-widget/passed-bypriority-pass.png)
 
-## Next steps
+## Next step
 
 > [!div class="nextstepaction"]
 > [Test Analytics report](../../pipelines/test/test-analytics.md#view-test-analytics-for-builds).

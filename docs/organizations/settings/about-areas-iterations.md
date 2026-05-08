@@ -30,7 +30,7 @@ Define area and iteration paths for a project, and teams can select which paths 
 ::: moniker range="< azure-devops" 
 
 > [!NOTE] 
-> Area paths and iteration paths are also referred to as *Classification Nodes*. You can manage them programmatically via the [Classification Nodes (REST API)](/rest/api/azure/devops/wit/classification%20nodes).
+> Area paths and iteration paths are also referred to as *Classification Nodes*. You can manage them programmatically through the [Classification Nodes (REST API)](/rest/api/azure/devops/wit/classification%20nodes).
 
 ::: moniker-end
 
@@ -134,7 +134,7 @@ You can run queries to find features and work items that are assigned to a speci
 
 ## Naming restrictions 
 
-The **Area Path** and **Iteration Path** fields, [data type=TreePath](../../boards/work-items/work-item-fields.md), consist of multiple node items separated by the backslash (&#92;) character. Minimize the names of nodes and make sure you conform to the following restrictions when you're adding child nodes.
+The **Area Path** and **Iteration Path** fields, [data type=TreePath](../../boards/work-items/work-item-fields.md), consist of multiple node items separated by the backslash (&#92;) character. Minimize the names of nodes and ensure you conform to the following restrictions when you're adding child nodes.
 
 [!INCLUDE [area-iteration-paths](includes/name-restrictions/area-iteration-paths.md)] 
 

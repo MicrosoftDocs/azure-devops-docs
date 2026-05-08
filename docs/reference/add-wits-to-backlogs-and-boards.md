@@ -24,7 +24,7 @@ To satisfy select business processes, your team may want to track additional wor
 
 For example, you may want to track different types of requirements based on their target customer, or different types of bugs based on their source. Here the Fabrikam Fiber team has added the Service App WIT to track work that supports their customer service team.   
 
-![Add a custom WIT, e.g., Service App, to the Requirement Category to track it like a requirement](media/ALM_AWB_Intro.png)
+![Add a custom WIT, for example, Service App, to the Requirement Category to track it like a requirement](media/ALM_AWB_Intro.png)
 
 > [!TIP]  
 > If all you want to do is add bugs to your backlogs and boards, see [Show bugs on backlogs and boards](../organizations/settings/show-bugs-on-backlog.md) to make your team's selection. If you want to add another WIT and portfolio backlog, see [Add a portfolio backlog level](add-portfolio-backlogs.md).</p>
@@ -72,7 +72,7 @@ You'll first export your work tracking definition files, update them, and then i
 
 ## Add a WIT to track it like a requirement   
 
-WITs that you add to the Requirement Category show up on the product backlog and board. You must make sure that the WIT definition contains required fields to support the Agile planning tools.  
+WITs that you add to the Requirement Category show up on the product backlog and board. You must ensure that the WIT definition contains required fields to support the Agile planning tools.  
 
 1. Export your process (Hosted XML) or your definition files (On-premises XML) as indicated in [First steps](#first-steps).
 2. Edit the WIT definition to support planning tools. 
@@ -149,7 +149,7 @@ WITs that you add to the Requirement Category show up on the product backlog and
       Update or verify the `WORKFLOW` section as follows: 
       - Agile, User Story: Add transitions from `Active` to `Removed` and `Resolved` to `Removed`; remove rules that populate `Activated By` and `Activated Date` fields when state=`Resolved`   
       - Scrum, Product backlog item: Add transition from `Committed` to `Removed`  
-      If you've customized the `WORKFLOW`, make sure to define the required state-to-metastate mappings in the [ProcessConfiguration `RequirementBacklog` section](/previous-versions/azure/devops/reference/upgrade/add-features-manually#update-processconfiguration).
+      If you've customized the `WORKFLOW`, ensure to define the required state-to-metastate mappings in the [ProcessConfiguration `RequirementBacklog` section](/previous-versions/azure/devops/reference/upgrade/add-features-manually#update-processconfiguration).
    :::column-end:::
    :::row-end:::
    :::row:::
@@ -189,11 +189,11 @@ WITs that you add to the Requirement Category show up on the product backlog and
     </CATEGORY>
    ```
 
-4. Update or verify ProcessConfiguration definition: `RequirementBacklog` section for the WIT you're adding. Specifically, make sure that the following conditions are met:
+4. Update or verify ProcessConfiguration definition: `RequirementBacklog` section for the WIT you're adding. Specifically, ensure that the following conditions are met:
 	- Map the start of each workflow state to `type="Proposed"` 
 	- Map each intermediate workflow state you want to have show up on the board to `type="InProgress"` 
 	- Map the end of each workflow state to `type="Complete"`
-	- Make sure that you have only one State mapped to `type="Complete"`  
+	- Ensure that you have only one State mapped to `type="Complete"`  
    For example, add the Pending workflow state:  
     > [!div class="tabbedCodeSnippets"]
     ```XML
@@ -332,7 +332,7 @@ WITs that you add to the Task Category show up on the sprint backlogs and task b
       Update or verify the `WORKFLOW` section as follows:
       - Agile, User Story: Add transitions from `Active` to `Removed` and `Resolved` to `Removed`; remove rules that populate  `Activated By` and `Activated Date` fields when state=`Resolved`   
       - Scrum, Product backlog item: Add transition from `Committed` to `Removed`  
-      If you've customized the `WORKFLOW`, make sure to define the required state-to-metastate mappings in the [ProcessConfiguration `TestBacklog` section](/previous-versions/azure/devops/reference/upgrade/add-features-manually#update-processconfiguration).  
+      If you've customized the `WORKFLOW`, ensure to define the required state-to-metastate mappings in the [ProcessConfiguration `TestBacklog` section](/previous-versions/azure/devops/reference/upgrade/add-features-manually#update-processconfiguration).  
    :::column-end:::
    :::row-end:::
    :::row:::
@@ -371,11 +371,11 @@ WITs that you add to the Task Category show up on the sprint backlogs and task b
     ```
 
 4. Update or verify ProcessConfiguration definition: ```TaskBacklog``` section for the WIT you're adding.  
-	Specifically, make sure that the following conditions are met:
+	Specifically, ensure that the following conditions are met:
 	- Map the start of each workflow state to `type="Proposed"`  
 	- Map each intermediate workflow state you want to have show up on the task board to `type="InProgress"`  
 	- Map the end of each workflow state to `type="Complete"`  
-	- Make sure that you have only one State mapped to `type="Complete"` 
+	- Ensure that you have only one State mapped to `type="Complete"` 
 
 	For example, add the `Blocked` workflow state:
     > [!div class="tabbedCodeSnippets"]
@@ -430,11 +430,11 @@ WITs that you add to the Bug Category will be treated based on the [team setting
 
 4. Update or verify ProcessConfiguration definition: `BugWorkItems` section for the WIT you're adding.  
 
-   Specifically, make sure that the following conditions are met:
+   Specifically, ensure that the following conditions are met:
 	- Map the start of each workflow state to `type="Proposed"` 
 	- Map each intermediate workflow state you want to have show up on the board or Taskboard to `type="InProgress"` 
 	- Map the end of each workflow state to `type="Complete"` 
-	- Make sure that you have only one State mapped to `type="Complete"`  
+	- Ensure that you have only one State mapped to `type="Complete"`  
    
    For example, add the `Investigate` workflow state:  
     > [!div class="tabbedCodeSnippets"]

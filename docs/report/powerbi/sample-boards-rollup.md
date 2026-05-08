@@ -410,6 +410,6 @@ The example report displays.
  
 :::image type="content" source="media/reports-boards/feature-rollup-report.png" alt-text="Screenshot of Sample Feature rollup matrix report.":::
  
-## Related articles
+## Related content
 
 [!INCLUDE [temp](includes/sample-relatedarticles.md)]

@@ -237,7 +237,7 @@ If you configure the [Azure DevOps MCP Server](../../mcp-server/mcp-server-overv
 
 ::: moniker-end
 
-## Related articles
+## Related content
 
 - [Burndown and burnup guidance](burndown-guidance.md)
 - [Configure a burndown or burnup widget](configure-burndown-burnup-widgets.md)

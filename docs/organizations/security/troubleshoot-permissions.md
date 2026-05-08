@@ -102,7 +102,7 @@ If a user's having permissions issues and you use default security groups or cus
 
 ::: moniker-end
 
-Users can receive their effective permissions either directly or via groups.
+Users can receive their effective permissions either directly or through groups.
 
 Complete the following steps so administrators can understand where exactly those permissions are coming from and adjust them, as needed.
 
@@ -114,7 +114,7 @@ Complete the following steps so administrators can understand where exactly thos
 
    You should now have a user-specific view that shows what permissions they have.
 
-2.  To trace why a user does or doesn't have any of the listed permissions, select the information icon next to the permission in question.
+2. To trace why a user does or doesn't have any of the listed permissions, select the information icon next to the permission in question.
 
    :::image type="content" source="media/select-information-icon.png" alt-text="Screenshot of select the information icon next to the permission in question.":::
 

@@ -212,7 +212,7 @@ If you connect [Azure DevOps MCP Server](../../mcp-server/mcp-server-overview.md
 > [!NOTE]
 > Agent mode and the MCP Server use natural language, so you can adjust these prompts or ask follow-up questions to refine the results.
 
-## Next steps
+## Next step
 
 > [!div class="nextstepaction"]
 > [Try REST API samples](../get-started/rest/samples.md)

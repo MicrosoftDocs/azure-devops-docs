@@ -297,7 +297,7 @@ To limit the account names that are valid within an identity field, specify the 
     </FIELD>
 ```
 
-Before you import the process, make sure you created the group in the projects that the process updates.
+Before you import the process, ensure you created the group in the projects that the process updates.
 
 ##### Incorrect example
 

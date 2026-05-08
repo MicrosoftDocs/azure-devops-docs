@@ -51,7 +51,7 @@ Azure DevOps is pre-configured with default security groups. You can add and man
 The following parameters are optional for all commands, and not listed in the examples provided in this article. 
 
 - **detect**: Automatically detect organization. Accepted values: false, true. Default is true.
-- **org**: Azure DevOps organization URL. You can configure the default organization using az devops configure -d organization=ORG_URL. Required if not configured as default or picked up via git config. Example: `--org https://dev.azure.com/MyOrganizationName/`.
+- **org**: Azure DevOps organization URL. You can configure the default organization using az devops configure -d organization=ORG_URL. Required if not configured as default or picked up through git config. Example: `--org https://dev.azure.com/MyOrganizationName/`.
 
 ## Create a security group
 

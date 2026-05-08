@@ -49,7 +49,7 @@ $orgUrl = $env:SYSTEM_TEAMFOUNDATIONCOLLECTIONURI
 Write-Host $orgUrl
 ```
 
-The output depends on the organization's primary URL form - either `https://dev.azure.com/{organization}` or `https://{organization}.visualstudio.com`. Make sure your pipelines tasks and service hook consumers handle both URL forms.
+The output depends on the organization's primary URL form - either `https://dev.azure.com/{organization}` or `https://{organization}.visualstudio.com`. Ensure your pipelines tasks and service hook consumers handle both URL forms.
 
 ## URLs returned in REST APIs
 

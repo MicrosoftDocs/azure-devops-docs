@@ -15,7 +15,7 @@ ms.date: 04/02/2026
 
 [!INCLUDE [version-eq-azure-devops](../../../includes/version-eq-azure-devops.md)]
 
-The Microsoft identity platform offers many ways to authenticate users via [the OAuth 2.0 protocol](/entra/identity-platform/v2-protocols). In this article, *OAuth tokens* refers to [on-behalf-of user flows](/entra/identity-platform/v2-oauth2-on-behalf-of-flow), also known as [delegated flows](/entra/identity-platform/delegated-access-primer), where apps request tokens to perform actions for their users. 
+The Microsoft identity platform offers many ways to authenticate users through [the OAuth 2.0 protocol](/entra/identity-platform/v2-protocols). In this article, *OAuth tokens* refers to [on-behalf-of user flows](/entra/identity-platform/v2-oauth2-on-behalf-of-flow), also known as [delegated flows](/entra/identity-platform/delegated-access-primer), where apps request tokens to perform actions for their users. 
 
 This approach differs from apps that perform actions on-behalf-of themselves. For that approach, use [service principals and managed identities](service-principal-managed-identity.md).
  

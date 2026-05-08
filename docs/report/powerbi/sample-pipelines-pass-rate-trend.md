@@ -541,6 +541,6 @@ From the **Transform** menu, change the data type for the following columns. To 
  
  
 
-## Related articles
+## Related content
 
 [!INCLUDE [temp](includes/sample-related-articles-pipelines.md)]

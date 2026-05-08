@@ -50,7 +50,7 @@ Personal or organizational email rules can affect message delivery and change th
 
 ### Confirm subscription is enabled
 
-Different **Notification** settings and configuration scenarios can disable a subscription. Make sure the subscription is enabled as expected. In your personal subscriptions, locate the subscription for which you're expecting to receive the email. For more information, see [Open your personal subscriptions](navigating-the-ui.md#open-person-level).
+Different **Notification** settings and configuration scenarios can disable a subscription. Ensure the subscription is enabled as expected. In your personal subscriptions, locate the subscription for which you're expecting to receive the email. For more information, see [Open your personal subscriptions](navigating-the-ui.md#open-person-level).
 
 Azure DevOps displays a disabled subscription as grayed (not available) in the **Notification** settings user interface. The following screenshot shows an example with two subscriptions, where the first subscription is enabled and the second is disabled:
 

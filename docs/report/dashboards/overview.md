@@ -420,12 +420,12 @@ Azure Advisor is a personalized cloud consultant that helps you follow best prac
 
 For more information, see [Introduction to Azure Advisor](/azure/advisor/advisor-overview).
 
-## Next steps
+## Next step
 
 > [!div class="nextstepaction"]
 > [Add a widget to a dashboard](add-widget-to-dashboard.md)
 
-## Related articles
+## Related content
 
 - [FAQs on Azure DevOps dashboards, charts, and reports](faqs.yml)
 - [Widget catalog](widget-catalog.md)

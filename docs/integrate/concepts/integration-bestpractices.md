@@ -76,7 +76,7 @@ Updates and queries fail when resource limits or frequency of utilization crosse
 
 `VS402335: The timeout period (30 seconds) elapsed prior to completion of the query or the server is not responding.`
 
-When you're consuming the REST APIs, make sure you design your code to handle failures appropriately.
+When you're consuming the REST APIs, ensure you design your code to handle failures appropriately.
 
 ## Limit your links
 

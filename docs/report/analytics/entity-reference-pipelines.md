@@ -14,7 +14,7 @@ ms.date: 11/04/2022
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)] 
 
-The Analytics service collects pipeline and test activity generated via Azure Pipelines.  This article describes the properties that you can use to generate an Analytics report for pipelines. You use a combination of properties to filter a query, aggregate data, or build a report.  
+The Analytics service collects pipeline and test activity generated through Azure Pipelines. This article describes the properties that you can use to generate an Analytics report for pipelines. You use a combination of properties to filter a query, aggregate data, or build a report.  
  
 
 [!INCLUDE [note-analytics-early-draft](../includes/note-analytics-data-model.md)]
@@ -296,7 +296,7 @@ Navigation properties include those listed in the following table.
 | [**Project**](entity-reference-general.md#projects)  | `Project`|  `ProjectSK`| `ProjectSK` | 
 | **Started On**   | `StartedOn`  |`QueuedDateSK`|`DateSK`           | 
 
-## Related articles
+## Related content
 
 - [Historical data representation in Analytics](analytics-historical-filtering.md)
 - [Data model for Analytics](../extend-analytics/data-model-analytics-service.md)

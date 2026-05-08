@@ -488,7 +488,7 @@ Your report should look similar to the following image.
 
 :::image type="content" source="media/pipeline-test-reports/test-duration-table-report.png" alt-text="Screenshot of Sample Test Duration Table report."::: 
 
-## Related articles
+## Related content
 
 [!INCLUDE [temp](includes/sample-related-articles-pipelines.md)]
  

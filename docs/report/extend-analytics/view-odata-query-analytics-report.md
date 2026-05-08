@@ -108,7 +108,7 @@ The following syntax represents the OData query for a velocity chart set to show
 ```
  
 
-## Related articles
+## Related content
 
 - [Construct aggregate data queries](aggregated-data-analytics.md) to count and analyze groups of related data.
 - [Data model for Analytics](data-model-analytics-service.md)

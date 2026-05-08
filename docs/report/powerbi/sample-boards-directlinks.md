@@ -415,7 +415,7 @@ The example report displays.
 
 :::image type="content" source="media/reports-boards/parent-child-links-table-report.png" alt-text="Screenshot of Sample Parent-child links of Features and User Stories table report.":::
 
-## Related articles
+## Related content
 
 [!INCLUDE [temp](includes/sample-relatedarticles.md)]
  

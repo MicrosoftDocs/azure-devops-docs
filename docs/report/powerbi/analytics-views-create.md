@@ -213,12 +213,12 @@ If you configure the [Azure DevOps MCP Server](/azure/devops/mcp-server/mcp-serv
 
 <a id="q-a">  </a>
 
-## Next steps
+## Next step
 
 > [!div class="nextstepaction"]
 > [Create an active bugs Power BI report with a custom Analytics view](active-bugs-sample-report.md)
 
-## Related articles
+## Related content
 
 - [Manage Analytics views](analytics-views-manage.md) 
 - [Learn about data available from Analytics](data-available-in-analytics.md)

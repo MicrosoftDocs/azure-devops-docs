@@ -48,7 +48,7 @@ az --version
    az extension add --name azure-devops
    ```
 
-   If you already have the extension installed and want to make sure you have the latest version, run the update command:
+   If you already have the extension installed and want to ensure you have the latest version, run the update command:
 
    ```azurecli
    az extension update --name azure-devops
@@ -56,7 +56,7 @@ az --version
 
 1. To confirm the installation, run the command `az extension list` or `az extension show --name azure-devops`.
 
-1. To sign in, run the `az login` command. Azure CLI supports only interactive sign-in by using user name and password with `az login`. To sign in by using a personal access token (PAT), see [Sign in via Azure DevOps PAT](log-in-via-pat.md).
+1. To sign in, run the `az login` command. Azure CLI supports only interactive sign-in by using user name and password with `az login`. To sign in by using a personal access token (PAT), see [Sign in through Azure DevOps PAT](log-in-via-pat.md).
 
    [!INCLUDE [use-microsoft-entra-reduce-pats](../includes/use-microsoft-entra-reduce-pats.md)]
 
@@ -103,7 +103,7 @@ Subgroups:
 Commands:
     configure        : Configure the Azure DevOps CLI or view your configuration.
     feedback         : Displays information on how to provide feedback to the Azure DevOps CLI team.
-    invoke           : This command will invoke request for any DevOps area and resource. Please use
+    invoke           : This command will invoke request for any DevOps area and resource. Use
                        only json output as the response of this command is not fixed. Helpful docs -
                        https://learn.microsoft.com/rest/api/azure/devops/.
     login            : Set the credential to use for a particular organization.

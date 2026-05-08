@@ -103,7 +103,7 @@ This behavior is different from the behavior provided by the current Work Item Q
 
 Because of this scenario, the recommended approach for querying Analytics is to always provide a project level filter instead of using a global query. For information on providing a project level filter, see [WIT analytics](../extend-analytics/wit-analytics.md).
 
-## Related articles 
+## Related content 
 
 -  [Change project-level permissions](../../organizations/security/change-project-level-permissions.md)
 -  [Power BI integration overview](overview.md)

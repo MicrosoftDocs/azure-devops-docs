@@ -571,7 +571,7 @@ Optimize your view before applying filters:
 **Taskboards:** Select **All**, **Unassigned**, or specific team member from **Person** menu
 
 ### Step 3: Add relevant columns or fields
-Make sure you can see the fields you want to filter on:
+Ensure you can see the fields you want to filter on:
 - **List views**: Add columns through **Column Options** 
 - **Card views**: Choose which fields show up on cards
 - **Common filter fields**: Assigned To, Work Item Type, State, Area Path, Iteration Path

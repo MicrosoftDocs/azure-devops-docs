@@ -254,7 +254,7 @@ To learn how, see [Transform Analytics data to generate Power BI reports](transf
 
 ### Handling nested data
 
-Before you perform a pivot operation, make sure your dataset doesn't contain any columns with nested data. Follow these steps:
+Before you perform a pivot operation, ensure your dataset doesn't contain any columns with nested data. Follow these steps:
 1. **Identify nested columns**: Check your dataset for any columns that might contain lists, records, or tables within a single cell.
 1. **Flatten or remove nested data**: Remove the nested columns or flatten them by expanding into separate columns by using the **Expand** feature in Power Query.
 1. **Perform the pivot operation**: After you address the nested data, you can proceed with the pivot operation without encountering errors.
@@ -278,6 +278,6 @@ The example report displays.
 
 :::image type="content" source="media/reports-boards/feature-progress-stacked-bar-chart.png" alt-text="Screenshot of Sample Feature Progress stacked bar chart report.":::
  
-## Related articles
+## Related content
 
 [!INCLUDE [temp](includes/sample-relatedarticles.md)]

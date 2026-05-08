@@ -324,7 +324,7 @@ Use these fields to filter queries and build reports. Some fields update as an i
    <a id="test-suite-audit">Test Suite Audit</a>
    :::column-end:::
    :::column span="2":::
-   Tracks operations performed when modifying a test suite (for example, adding tests or changing configurations). Viewable through the History tab or via queries.  
+   Tracks operations performed when modifying a test suite (for example, adding tests or changing configurations). Viewable through the History tab or through queries.  
    `Reference name=Microsoft.VSTS.TCM.TestSuiteAudit, Data type=PlainText`
    :::column-end:::
    :::column span="1":::

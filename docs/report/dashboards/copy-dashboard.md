@@ -63,14 +63,14 @@ Do the following steps to copy the source dashboards and create your new dashboa
 
 	:::image type="content" source="media/copy-dashboard/dashboard-copy-dashboard-selected.png" alt-text="Screenshot of Create a dashboard dialog.":::
 
-2. Enter a **Name** and **Description** for the new dashboard. Make sure you specify a unique name for the dashboard. To copy the dashboard as a team dashboard, select **Team Dashboard** and then select the **Project** and the **Team**. To copy the dashboard as a project dashboard, select **Project Dashboard** and then the **Project**. 
+2. Enter a **Name** and **Description** for the new dashboard. Ensure you specify a unique name for the dashboard. To copy the dashboard as a team dashboard, select **Team Dashboard** and then select the **Project** and the **Team**. To copy the dashboard as a project dashboard, select **Project Dashboard** and then the **Project**. 
 
 	Here we choose to copy the Fabrikam Fiber project - Fabrikam Team Bug Activity dashboard to the Design Agile project, Design Agile team dashboard. 
 
 
 	:::image type="content" source="media/copy-dashboard/new-dashboard-dialog.png" alt-text="New dashboard dialog, copy dashboard for a different team.":::
 
-	Check the **Select folder to copy dashboard queries** checkbox to choose the folder into which dashboard queries get copied. Make sure to select a folder where you have permissions to contribute queries. When you copy dashboards to a different project, this checkbox is automatically selected and requires you to select a folder in the project. 
+	Check the **Select folder to copy dashboard queries** checkbox to choose the folder into which dashboard queries get copied. Ensure to select a folder where you have permissions to contribute queries. When you copy dashboards to a different project, this checkbox is automatically selected and requires you to select a folder in the project. 
   
 3. Select **Create**.
 
@@ -82,12 +82,12 @@ Do the following steps to copy the source dashboards and create your new dashboa
 
 4. (Optional) Open each query and widget in the new dashboard, as needed, to verify or modify the name and configuration. Dashboard widget changes automatically update.  
 
-## Next steps
+## Next step
 
 > [!div class="nextstepaction"]
 > [Add a widget to a dashboard](add-widget-to-dashboard.md)
   
-## Related articles
+## Related content
 
 - [Add a team](../../organizations/settings/add-teams.md)
 - [Widget catalog](widget-catalog.md)

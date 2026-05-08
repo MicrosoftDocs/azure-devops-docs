@@ -80,7 +80,7 @@ The primary errors we find are process template issues. These issues stem from e
 
 Consider the following tools for resolving process errors: 
 
-- Utilize the witadmin.exe command-line tool included with Visual Studio installations. Detailed technical documentation on addressing these errors is available at this link. 
+- Use the witadmin.exe command-line tool included with Visual Studio installations. Detailed technical documentation on addressing these errors is available at this link. 
 - Automate exporting process templates for each team project using an undocumented migrator tool command: Migrator validates /collection:http://localhost:8080/tfs/DefaultCollection /SaveProcesses. 
 - Explore the TFS Team Project Manager on GitHub (link). It allows you to compare team projects with known process templates, including out-of-the-box templates.
 
@@ -147,7 +147,7 @@ Do the following steps, for each project, to align your process:
 1. Identify the initial process your project started with (Scrum, Agile, or CMMI). 
 2. Visit the Process Customization Scripts on GitHub and download the repository. 
 3. Focus on the contents in the Migration folder. 
-4. Utilize the following `ConformProject.ps1` script to align a project of your choice with the Agile system process. This action updates the entire project to be Agile. 
+4. Use the following `ConformProject.ps1` script to align a project of your choice with the Agile system process. This action updates the entire project to be Agile. 
 
 ```cmdline
 .\ConformProject.ps1 "<collection url>" "<project name>" "c:\process-customization-scripts\import\agile"  
@@ -155,7 +155,7 @@ Do the following steps, for each project, to align your process:
 
 ## Common validation errors
 
-### VS402841: Field X in work item type Bug has syncnamechanges=false but has rules making it an identity field. Identity fields must have syncnamechanges=true. Please update your process template to include this change. 
+### VS402841: Field X in work item type Bug has syncnamechanges=false but has rules making it an identity field. Identity fields must have syncnamechanges=true. Update your process template to include this change. 
 
 In Azure DevOps Services, we added a rule so that every identity field must have the `syncnamechanges=true` attribute. In Azure DevOps Server that rule doesn't apply. Therefore, the Data Migration Tool identifies this as an issue. Making this change on Azure DevOps Server on-premises doesn't cause any harm. 
 
@@ -187,7 +187,7 @@ Azure DevOps Services natively supports 64 global lists. This error typically ar
 
 In each iteration, address errors and conduct validation checks to resolve them, as indicated by the validation log files. Persist with this cycle until all errors are rectified and you receive confirmation that the collection validation checks are successful.
 
-## Next steps 
+## Next step 
 
 > [!div class="nextstepaction"]
 > [Prepare for test run](migration-prepare-test-run.md) 

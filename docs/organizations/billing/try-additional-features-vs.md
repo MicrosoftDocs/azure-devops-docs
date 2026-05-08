@@ -46,7 +46,7 @@ Start a Test Plans trial and assign any of your users Basic + Test Plans for 30 
    > [!IMPORTANT]
    > During the trial, users assigned **Basic + Test Plans** have full access. After trial expiration, you start **getting charged** for users assigned **Basic + Test Plans**. If you didn't [set up billing](set-up-billing-for-your-organization-vs.md), those users receive **Stakeholder** access.
 
-## Next steps
+## Next step
 
 > [!div class="nextstepaction"]
 > [Create a test plan](../../test/create-a-test-plan.md)

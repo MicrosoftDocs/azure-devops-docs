@@ -31,7 +31,7 @@ The pipeline widgets include:
 
 To manage your dashboard widgets, see [Add a widget to a dashboard](../../report/dashboards/add-widget-to-dashboard.md).
 
-## Related articles
+## Related content
 
 - [Widget catalog](../../report/dashboards/widget-catalog.md)
 - [Dashboards, charts, and quick reference](../../report/dashboards/quick-ref.md)

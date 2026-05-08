@@ -69,7 +69,7 @@ Follow these steps to add a field to an existing work item type. You can't use t
 
 	:::image type="content" source="media/process/cpfield-bug-customer-ticket-options.png" alt-text="Screenshot shows the Options page where you can make the field required and specify a default value.":::
 
-	If a field is required, users must specify a value for the field in order to save it. The default value you specify is set when you create a work item and every time a work item is opened and the field is empty.
+	If a field is required, users must specify a value for the field to save it. The default value you specify is set when you create a work item and every time a work item is opened and the field is empty.
 
 	<a id="layout"></a>
 1. (Optional) On the **Layout** tab, you can enter a different form label than the name of the field. Also, you can choose the page and group where the field appears on the form. 
@@ -121,7 +121,7 @@ We recommend that you create a test project and apply your customized inherited 
 
 [!INCLUDE [temp](../includes/change-project-to-inherited-process.md)] 
 
-## Next steps
+## Next step
 
 > [!div class="nextstepaction"]
 > [Add a custom work item type](add-custom-wit.md) 

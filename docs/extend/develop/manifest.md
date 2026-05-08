@@ -257,7 +257,7 @@ An administrator can then review and authorize the new set of scopes:
 
 As the name implies, installation targets define the products and services where you can install your extension. `Microsoft.VisualStudio.Services` is the most common installation target and indicates that the extension can be installed into Azure DevOps.
 
-The installation targets for an extension or integration are specified via the `targets` field in the manifest. 
+The installation targets for an extension or integration are specified through the `targets` field in the manifest. 
 
 Supported identifiers for **extensions**:
 
@@ -328,7 +328,7 @@ Installation targets can also be used in the manifest of integrations. For examp
 
 Some installation target identifiers, like `Microsoft.TeamFoundation.Server` and `Microsoft.TeamFoundation.Server.Integration`, support an optional version range. This optional version range further clarifies the supported releases the extension or integration is supported on. 
 
-The version or version range is specified via the `version` field on the installation target object. This value can be either:
+The version or version range is specified through the `version` field on the installation target object. This value can be either:
 
 * A specific version, for example: `15.0` (2017 RTM only)
 * A range of supported versions, for example: `[14.0)` (2015 RTM and later), `[14.3,15.1]` (2015 Update 3 through 2017 Update 1). Range values are refined using:

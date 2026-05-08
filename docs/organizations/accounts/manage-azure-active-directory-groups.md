@@ -48,7 +48,7 @@ For more information on [Microsoft Entra ID benefits](/azure/active-directory/fu
 
     [Why am I asked to choose between my work or school account and my personal account?](faq-user-and-permissions-management.yml#ChooseOrgAcctMSAcct)
 
-2.  Go to **Organization settings**.
+2. Go to **Organization settings**.
 
     ![Screenshot showing highlighted Organization settings button.](../../media/settings/open-admin-settings-vert.png)
 
@@ -72,7 +72,7 @@ For more information on [Microsoft Entra ID benefits](/azure/active-directory/fu
 
     [Why am I asked to choose between my work or school account and my personal account?](faq-user-and-permissions-management.yml#ChooseOrgAcctMSAcct)
 
-2.  Go to **Organization settings**.
+2. Go to **Organization settings**.
 
     ![Screenshot showing highlighted Organization settings button.](../../media/settings/open-admin-settings-vert.png)
 

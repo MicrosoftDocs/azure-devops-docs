@@ -195,15 +195,15 @@ To email items from Visual Studio, open a query, highlight the items from the li
 
 With this option, you can copy an HTML formatted table of selected items. You can then email this list using your choice of email client.  
 
-1.  From the web portal, open a backlog or a list of query results.  
+1. From the web portal, open a backlog or a list of query results.  
 
-2.  Select the work items you want to copy.   
+2. Select the work items you want to copy.   
 
     ![Copy as HTML selected work items](../queries/media/IC777601.png)  
 
     The formatted table contains a link to each work item included in your selected results list.  
 
-3.  Paste the contents of the clipboard into your email client or other application. To open a linked work item, users need read access to the project or area node for those work items.   
+3. Paste the contents of the clipboard into your email client or other application. To open a linked work item, users need read access to the project or area node for those work items.   
 
 <a id="print-items"></a>
 
@@ -268,7 +268,7 @@ From any query, you can export a list of work items as a comma-delimited list. O
 
 ## Best practices for emailing work items
 
-Consider these best practices when sharing work items via email:
+Consider these best practices when sharing work items through email:
 
 - **Verify recipients have access**: Ensure all email recipients have the appropriate permissions to view the work items you're sharing.
 - **Use descriptive subject lines**: Include relevant context in your email subject line to help recipients understand the content.

@@ -426,7 +426,7 @@ The example report displays burndown on both the count of Stories and sum of **S
 :::image type="content" source="media/reports-boards/release-burndown-clustered-column-chart-report.png" alt-text="Screenshot of Power BI Sample Release burndown clustered column chart report.":::
 
  
-## Related articles
+## Related content
 
 [!INCLUDE [temp](includes/sample-relatedarticles.md)]
 

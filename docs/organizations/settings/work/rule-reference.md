@@ -19,7 +19,7 @@ ms.date: 01/17/2023
 
 Rules are used to set or restrict value assignments to a work item field. There are two main types of rules, auto-generated rules and custom rules defined for a process or project. Auto-generated rules minimize the need to add custom rules for areas that should work in a standard way. 
 
-You define custom rules in order to support your business use cases. Depending on a field's data type, you can set various restrictions on what data can be entered into that field. You can specify values for a pick list (drop-down menu), set default values, clear entries, or restrict changes. With conditional rules, you can apply rules to a field based on dependencies between different fields' values. You can also restrict who can modify a field or scope a rule to only apply to a group.
+You define custom rules to support your business use cases. Depending on a field's data type, you can set various restrictions on what data can be entered into that field. You can specify values for a pick list (drop-down menu), set default values, clear entries, or restrict changes. With conditional rules, you can apply rules to a field based on dependencies between different fields' values. You can also restrict who can modify a field or scope a rule to only apply to a group.
 
 Read this article to understand the following:
 
@@ -80,7 +80,7 @@ There isn't a one-to-one mapping between the two processes. In some cases, the X
 Note the following:  
 - Rules are always enforced, not only when you are interacting with the form but also when interfacing through other tools. For example, setting a field as read-only not only applies the rule on the work item form, but also through the API and Excel Azure DevOps Server Add-in.
 - Inherited process entries specify conditions and actions to make a complete rule. XML elements don't make those distinctions.  
-- Field rules don't support assigning values that are the sum of two other fields or performing other- mathematical calculations. However, you may find a solution that fits your needs via the [TFS Aggregator (Web Service)](https://marketplace.visualstudio.com/items?itemName=tfsaggregatorteam.tfs-aggregator-web-service) Marketplace extension. See also [Rollup of work and other fields](../../../reference/xml/support-rollup-of-work-and-other-fields.md).
+- Field rules don't support assigning values that are the sum of two other fields or performing other- mathematical calculations. However, you may find a solution that fits your needs through the [TFS Aggregator (Web Service)](https://marketplace.visualstudio.com/items?itemName=tfsaggregatorteam.tfs-aggregator-web-service) Marketplace extension. See also [Rollup of work and other fields](../../../reference/xml/support-rollup-of-work-and-other-fields.md).
 - You may find additional solutions to applying custom rules to fields using a Marketplace extensions, such as the [Work item form control library extension](https://marketplace.visualstudio.com/items?itemName=mohitbagra.vsts-wit-control-library&ssr=false#overview). 
 
 ### Rule composition
@@ -92,7 +92,7 @@ Note the following:
 For an inherited process, each rule consists of two parts: Conditions and Actions. Conditions define the circumstances which must be met in order for the rule to be applied. Actions define the operations to perform. 
 - You cannot have multiple rules using the same conditions and actions on the same work item type.
 - For most rules, you can specify a maximum of two conditions and 10 actions per rule.
-- All custom rules require all conditions to be met in order to be run. 
+- All custom rules require all conditions to be met to be run. 
 
 As an example, you can make a field required based on the value assigned to the state and another field. For example:
 
@@ -323,7 +323,7 @@ These rules support setting defaults, copying values from one field to another, 
       `DEFAULT`
    :::column-end:::
    :::column span="3":::
-      Specifies a value for a field that is empty when a user creates or modifies a work item. If a field already has a value, the `DEFAULT` rule is ignored.  Default rules execute only if the `Is` value of the field is currently empty. Supported values include the current time (`from = "clock"`), the current user (`from = "currentuser"`), a literal value (`from = "value"  value = "literal"`), or the value of another field (`from = field  field = "referenceNameField"`).
+      Specifies a value for a field that is empty when a user creates or modifies a work item. If a field already has a value, the `DEFAULT` rule is ignored. Default rules execute only if the `Is` value of the field is currently empty. Supported values include the current time (`from = "clock"`), the current user (`from = "currentuser"`), a literal value (`from = "value"  value = "literal"`), or the value of another field (`from = field  field = "referenceNameField"`).
       > [!div class="tabbedCodeSnippets"]  
       > ```XML  
       > <FIELD refname="MyCorp.Priority" name="Priority" type="String" 
@@ -979,25 +979,25 @@ This section describes the expected behavior and interactions when you apply con
 
 The following steps show, in the correct sequence, the interactions that Azure DevOps performs and by the user of a work-item form. Only steps 1, 8, and 13 are performed by the user.
 
-1.  From an Azure DevOps client--such as the web portal or Visual Studio Team Explorer--a user creates a new work item or edits an existing work item.
+1. From an Azure DevOps client--such as the web portal or Visual Studio Team Explorer--a user creates a new work item or edits an existing work item.
 
-2.  Fill in field defaults. For all fields, apply any defaults assigned to the field that aren't part of a conditional clause.
+2. Fill in field defaults. For all fields, apply any defaults assigned to the field that aren't part of a conditional clause.
 
-3.  Copy or set field values. For all fields, apply any rules to copy a value or set the value of a field that aren't part of a conditional clause.
+3. Copy or set field values. For all fields, apply any rules to copy a value or set the value of a field that aren't part of a conditional clause.
 
-4.  For all fields with a When conditional rule that matches, apply rules to set or copy a field value.  
+4. For all fields with a When conditional rule that matches, apply rules to set or copy a field value.  
 
-5.  For all fields with a When Not conditional rule that matches, apply rules to set or copy a field value.  
+5. For all fields with a When Not conditional rule that matches, apply rules to set or copy a field value.  
 
     The system always processes **When** rules before **When Not** rules. 
 
-6.  For all fields that have had their values changed since step 1 and that contain **When Changed** rules, apply rules to set or copy a field value.  
+6. For all fields that have had their values changed since step 1 and that contain **When Changed** rules, apply rules to set or copy a field value.  
 
-7.  Allow the user to start editing. 
+7. Allow the user to start editing. 
 
-8.  The user changes a field value and then moves focus from the field.
+8. The user changes a field value and then moves focus from the field.
 
-9.  Process any **When** rules for that field that match the new value.
+9. Process any **When** rules for that field that match the new value.
 
 10. Process any **When Not** rules for that field that match the new value.
 
@@ -1013,25 +1013,25 @@ The following steps show, in the correct sequence, the interactions that Azure D
 
 Rules are typically processed in the sequence in which they are listed. However, when you use the **WHEN**, **DEFAULT**, and **COPY** elements, additional behaviors may apply. The following steps show, in the correct sequence, the interactions that Azure DevOps performs and by the user of a work-item form. Only steps 1, 8, and 13 are performed by the user.
 
-1.  From an Azure DevOps client--such as the web portal or Visual Studio Team Explorer--a user creates a new work item or edits an existing work item.
+1. From an Azure DevOps client--such as the web portal or Visual Studio Team Explorer--a user creates a new work item or edits an existing work item.
 
-2.  Fill in field defaults. For all fields, apply any **DEFAULT** rules specified outside or **WHEN** rules.
+2. Fill in field defaults. For all fields, apply any **DEFAULT** rules specified outside or **WHEN** rules.
 
-3.  Copy field values. For all fields, use any **COPY** rules that are outside **WHEN** clauses.
+3. Copy field values. For all fields, use any **COPY** rules that are outside **WHEN** clauses.
 
-4.  For all fields with a **WHEN** rule that matches, first do **DEFAULT** and then **COPY** rules inside.
+4. For all fields with a **WHEN** rule that matches, first do **DEFAULT** and then **COPY** rules inside.
 
-5.  For all fields with a **WHENNOT** rule that matches, first do **DEFAULT** and then **COPY** rules inside.
+5. For all fields with a **WHENNOT** rule that matches, first do **DEFAULT** and then **COPY** rules inside.
 
     The system always processes **WHEN** rules before **WHENNOT** rules.
 
-6.  For all fields that have had their values changed since step 1 and that contain **WHENCHANGED** rules, first do **DEFAULT** and then **COPY** rules inside.
+6. For all fields that have had their values changed since step 1 and that contain **WHENCHANGED** rules, first do **DEFAULT** and then **COPY** rules inside.
 
-7.  Allow the user to start editing.
+7. Allow the user to start editing.
 
-8.  The user changes a field value and then moves focus from the field.
+8. The user changes a field value and then moves focus from the field.
 
-9.  Raise any **WHEN** rules for that field that match the new value.
+9. Raise any **WHEN** rules for that field that match the new value.
 
 10. Raise any **WHENNOT** rules for that field that match the new value.
 

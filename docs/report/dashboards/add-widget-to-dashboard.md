@@ -18,7 +18,7 @@ ms.date: 02/17/2026
 Widgets smartly format data to provide access to easily consumable data. You add widgets to your team dashboards to gain visibility into the status and trends occurring as you develop your software project. 
 
 Each widget provides access to a chart, user-configurable information, or a set of links that open a feature or function. 
-You can add one or more charts or widgets to your dashboard. Up to 200 widgets total. You add several widgets at a time simply by selecting each one.   
+You can add one or more charts or widgets to your dashboard. Up to 200 widgets total. You add several widgets at a time by selecting each one.   
 
 [!INCLUDE [ai-assistance-callout](../../includes/ai-assistance-callout.md)]
 
@@ -145,14 +145,14 @@ If your organization owner or project collection administrator disables a market
 
 To regain access, request your administrator to reinstate or reinstall the widget. 
 
-## Next steps
+## Next step
 
 > [!div class="nextstepaction"]
 > [Review the widget catalog](widget-catalog.md)
 > or
 > [Review Marketplace widgets](https://marketplace.visualstudio.com/search?term=widget&target=VSTS&category=All%20categories&sortBy=Relevance)
  
-## Related articles
+## Related content
 
 - [Find answers to FAQs on Azure DevOps dashboards, charts, and reports](faqs.yml)
 - [Explore analytics-based widgets](../dashboards/analytics-widgets.md)

@@ -1045,7 +1045,7 @@ The permissions available for Azure DevOps Server 2019 and later versions vary d
 ## Project-level permissions
 
 > [!IMPORTANT]
-> To access project-level resources, the **View project-level information** permission must be set to **Allow**.  This permission gates all other project-level permissions.
+> To access project-level resources, the **View project-level information** permission must be set to **Allow**. This permission gates all other project-level permissions.
 
 ::: moniker range="azure-devops" 
 
@@ -1100,7 +1100,7 @@ Preview page is not available for on-premises versions.
    :::column span="2":::
    Can [delete a project](../projects/delete-project.md) from an organization or project collection.
    > [!NOTE]   
-   > Even if you set this permission to **Deny**, users granted permission at the project level can likely delete the project for which they have permission. To ensure that a user can't delete a project, make sure you set the **Delete team project** at the project-level to **Deny** as well. 
+   > Even if you set this permission to **Deny**, users granted permission at the project level can likely delete the project for which they have permission. To ensure that a user can't delete a project, ensure you set the **Delete team project** at the project-level to **Deny** as well. 
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -1147,7 +1147,7 @@ Preview page is not available for on-premises versions.
    :::column span="2":::
    Users with this permission can update work items without generating notifications. This feature is useful when performing migrations of bulk updates by tools and want to skip generating notifications.  
 
-   Consider granting this permission to service accounts or users with the **Bypass rules on work item updates** permission. You can set the `suppressNotifications` parameter to `true` when updating working via [Work Items - update REST API](/rest/api/azure/devops/wit/work-items/update).
+   Consider granting this permission to service accounts or users with the **Bypass rules on work item updates** permission. You can set the `suppressNotifications` parameter to `true` when updating working through [Work Items - update REST API](/rest/api/azure/devops/wit/work-items/update).
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -1552,7 +1552,7 @@ Manage project-level permissions through the [web portal admin context](change-p
    :::column-end:::
    :::column span="2":::
    Users with this permission can update work items without generating notifications. Useful for performing migrations of bulk updates by tools and skipping generating notifications.  <br />
-   Consider granting this permission to service accounts or users with the **Bypass rules on work item updates** permission. You can set the `suppressNotifications` parameter to `true` when updating working via [Work Items - update REST API](/rest/api/azure/devops/wit/work-items/update).
+   Consider granting this permission to service accounts or users with the **Bypass rules on work item updates** permission. You can set the `suppressNotifications` parameter to `true` when updating working through [Work Items - update REST API](/rest/api/azure/devops/wit/work-items/update).
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -1870,7 +1870,7 @@ You can define the following permissions in Build at both levels.
    `Build, EditPipelineQueueConfigurationPermission`
    :::column-end:::
    :::column span="2":::
-   Can specify values for free-text parameters (e.g., of type `object` or `array`) and pipeline variables when queueing new builds.
+   Can specify values for free-text parameters (for example, of type `object` or `array`) and pipeline variables when queueing new builds.
    :::column-end:::
 :::row-end:::
 ::: moniker-end
@@ -2021,7 +2021,7 @@ To manage Git repo and branch permissions, see [Set branch permissions](../../re
    Lack of this permission doesn't limit users from creating branches in their local repository; it merely prevents them from publishing local branches to the server.  
    
    > [!NOTE]  
-   > When you create a new branch on the server, you have Contribute, Edit Policies, Force Push, Manage Permissions, and Remove Others' Locks permissions for that branch by default. This means that you can add new commits to the repo via your branch.
+   > When you create a new branch on the server, you have Contribute, Edit Policies, Force Push, Manage Permissions, and Remove Others' Locks permissions for that branch by default. This means that you can add new commits to the repo through your branch.
    :::column-end:::
 :::row-end:::
 :::row:::

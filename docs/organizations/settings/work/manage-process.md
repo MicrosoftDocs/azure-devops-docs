@@ -19,7 +19,7 @@ ms.date: 03/03/2026
 
 [!INCLUDE [version-lt-eq-azure-devops](../../../includes/version-lt-eq-azure-devops.md)]
 
-In Azure DevOps, you have the flexibility to customize your project, Agile tools, and the work tracking system by using inherited processes. The customizations apply to all projects that utilize the same process.
+In Azure DevOps, you have the flexibility to customize your project, Agile tools, and the work tracking system by using inherited processes. The customizations apply to all projects that use the same process.
 
 An inherited process serves as the foundation for your work tracking system. When you create a new project, you choose a process to define its building blocks. The building blocks include work item types, states, fields, and rules. By customizing an inherited process, you tailor it to your team's specific needs. For more information about what you can customize, see [About process customization and inherited processes](inheritance-process-model.md).
 

@@ -116,7 +116,7 @@ As you plan how you want to grow your Agile tool set, consider the following are
    :::column-end:::
    :::column span="2":::
       Beyond meeting the needs set by the organization, teams determine any other details they need to manage and track to reduce their risks. Whether they use a white board with sticky notes or a full Gantt chart, they manage the details.
-      For example, teams might add a backlog item to track a dependency they have on another team. Or they might track their risks via a list of issues or impediments. Also, teams regularly contribute to improving the process and infrastructure to support the organization's ability to manage risk and gain insights.
+      For example, teams might add a backlog item to track a dependency they have on another team. Or they might track their risks through a list of issues or impediments. Also, teams regularly contribute to improving the process and infrastructure to support the organization's ability to manage risk and gain insights.
    :::column-end:::
 :::row-end:::
 

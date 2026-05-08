@@ -46,7 +46,7 @@ To help you understand the Azure DevOps Services approach to data protection, he
 
 - [Azure SQL Database](/azure/azure-sql/database) stores the structured and transactional aspects of your organization, including project metadata, the versioned source-control history, and details of work items. Database storage gives you fast access to the important elements of your project. It provides indexes into the blob storage to look up files and attachments.
 
-Administrators can manage access to resources by [granting or restricting permissions](/previous-versions/azure/devops/reference/process-templates/configure-initial-groups-teams-members-permissions) on user identities or groups. Azure DevOps uses federated authentication of user identities via [Microsoft Entra ID](../accounts/access-with-azure-ad.md) and Microsoft accounts.
+Administrators can manage access to resources by [granting or restricting permissions](/previous-versions/azure/devops/reference/process-templates/configure-initial-groups-teams-members-permissions) on user identities or groups. Azure DevOps uses federated authentication of user identities through [Microsoft Entra ID](../accounts/access-with-azure-ad.md) and Microsoft accounts.
 
 During authentication, the user is routed to the authentication provider, where they provide their credentials. After the authentication provider verifies the user's credentials, Azure DevOps issues an authentication cookie to the user. This cookie allows the user to remain authenticated against Azure DevOps.
 
@@ -77,7 +77,7 @@ Regarding data redundancy and failover:
 
 To safeguard against accidental data loss, Microsoft employs point-in-time backups for both blobs stored in Azure Blob Storage and databases within Azure SQL Database. Each storage account maintains a separate copy of all blobs, with changes being appended to the existing data. These backups are immutable, eliminating the need to rewrite any existing storage during backup procedures.
 
-Azure SQL Database includes standard backup features utilized by Azure DevOps. Your data is retained for 28 days, with these backups also being replicated in a paired region to facilitate recovery during a regional outage.
+Azure SQL Database includes standard backup features used by Azure DevOps. Your data is retained for 28 days, with these backups also being replicated in a paired region to facilitate recovery during a regional outage.
 
 You can recover deleted organizations or projects within the 28-day window following deletion. But, once this time period elapses, these entities are permanently deleted and can't be restored. While these backups serve as a crucial component for disaster recovery, it's essential for customers to practice appropriate data management and backup strategies to ensure comprehensive protection of their data.
 
@@ -193,7 +193,7 @@ Microsoft maintains strict control over who gets access to our production enviro
 
 We track and monitor access requests and approvals in a separate system. All access to the system correlates against these approvals. If we detect unapproved access, we alert the operations team to investigate.
 
-We use two-factor authentication for all remote system access. If the username and password for one of our developers or operations staff are stolen, the data remains protected. More authentication checks via smart card or a phone call to a preapproved number must occur before we permit any remote access to the service.
+We use two-factor authentication for all remote system access. If the username and password for one of our developers or operations staff are stolen, the data remains protected. More authentication checks through smart card or a phone call to a preapproved number must occur before we permit any remote access to the service.
 
 To manage and maintain the service, Microsoft uses secrets such as RDP passwords, SSL certificates, and encryption keys. These secrets are all managed, stored, and transmitted securely through the Azure portal. Any access to these secrets requires specific permission, which is logged and recorded securely. All secrets are rotated on a regular cadence, and we can rotate them on demand if there's a security event.
 
@@ -203,9 +203,9 @@ Operations team members must provide specific credentials with two-factor authen
 
 ### Intrusion protection and response
 
-We encrypt data via HTTPS and SSL to help ensure that it isn't intercepted or modified while in transit between you and Azure DevOps. Data that we store on your behalf in Azure DevOps is encrypted as follows:
+We encrypt data through HTTPS and SSL to help ensure that it isn't intercepted or modified while in transit between you and Azure DevOps. Data that we store on your behalf in Azure DevOps is encrypted as follows:
 
-- Data stored in Azure SQL databases is encrypted via [transparent data encryption](/sql/relational-databases/security/encryption/transparent-data-encryption). This feature helps protect against malicious activity by doing real-time encryption of the database, associated backups, and transaction log files at rest.
+- Data stored in Azure SQL databases is encrypted through [transparent data encryption](/sql/relational-databases/security/encryption/transparent-data-encryption). This feature helps protect against malicious activity by doing real-time encryption of the database, associated backups, and transaction log files at rest.
 
 - Azure Blob Storage connections are encrypted to help protect your data in transit. For data at rest stored in Azure Blob Storage, Azure DevOps uses [service-side encryption](/azure/storage/common/storage-service-encryption).
 

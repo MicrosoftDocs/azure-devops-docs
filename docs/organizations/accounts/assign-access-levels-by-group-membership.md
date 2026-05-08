@@ -33,7 +33,7 @@ When a user leaves a Microsoft Entra group, Azure DevOps adjusts their access le
 | Category | Requirements |
 |--------------|-------------|
 |**Permissions**| Member of the [Project Collection Administrators group](../security/look-up-project-collection-administrators.md). Organization owners are automatically members of this group.|
-|**Microsoft Entra** |Member of the Microsoft Entra ID that backs your organization. For more information, see [Access via Microsoft Entra FAQs. Microsoft Entra guests can't search the Microsoft Entra ID in the manner required by Azure DevOps](../accounts/faq-azure-access.yml#no-identities)  |
+|**Microsoft Entra** |Member of the Microsoft Entra ID that backs your organization. For more information, see [Access through Microsoft Entra FAQs. Microsoft Entra guests can't search the Microsoft Entra ID in the manner required by Azure DevOps](../accounts/faq-azure-access.yml#no-identities)  |
 
 ## Add a group rule
 
@@ -114,7 +114,7 @@ When a user has a direct assignment and a group rule grants a higher access leve
 
 #### Q: How do Visual Studio Subscriptions work with group rules?
 
-A: Visual Studio Subscribers are always directly assigned via the [Visual Studio Admin Portal](https://manage.visualstudio.com/) and take precedence in Azure DevOps over access levels assigned directly or via group rules. When you view these users from the Users Hub, the License Source always shows as Direct. The only exception is Visual Studio Professional subscribers who are assigned Basic + Test Plans. Since Basic + Test Plans provides more access in Azure DevOps, it takes precedence over a Visual Studio Professional subscription. You can't configure a group rule to assign Visual Studio subscription access because Visual Studio assigns that license directly through its portal. 
+A: Visual Studio Subscribers are always directly assigned through the [Visual Studio Admin Portal](https://manage.visualstudio.com/) and take precedence in Azure DevOps over access levels assigned directly or through group rules. When you view these users from the Users Hub, the License Source always shows as Direct. The only exception is Visual Studio Professional subscribers who are assigned Basic + Test Plans. Since Basic + Test Plans provides more access in Azure DevOps, it takes precedence over a Visual Studio Professional subscription. You can't configure a group rule to assign Visual Studio subscription access because Visual Studio assigns that license directly through its portal. 
 
 #### Q: How do GitHub Enterprise licenses work with group rules? 
 

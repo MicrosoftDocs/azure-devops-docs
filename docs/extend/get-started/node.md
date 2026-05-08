@@ -150,7 +150,7 @@ An extension is a set of files that includes a required manifest file. Package t
 
    [!INCLUDE [preview](../_data/get-help.md)]
 
-## Next steps
+## Next step
 
 > [!div class="nextstepaction"]
 > [Package and publish your extension](../publish/overview.md)

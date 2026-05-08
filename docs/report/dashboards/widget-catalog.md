@@ -514,7 +514,7 @@ To support adding, add one or more of the following widgets:
       For team admins, supports access to the quick dialog to [add or remove team members](../../organizations/settings/add-teams.md).     
       
       > [!NOTE]  
-      > This widget is a convenient way to add team members to specific teams within projects.  If you remove it, you can still add users to your team from the team administration page.  
+      > This widget is a convenient way to add team members to specific teams within projects. If you remove it, you can still add users to your team from the team administration page.  
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -562,7 +562,7 @@ Using the REST API service, you can [create a dashboard widget](../../extend/dev
 
 <a id="related-notes"></a>  
 
-## Related articles
+## Related content
 
 - [View FAQs on Azure DevOps dashboards, charts, and reports](faqs.yml)
 - [Track progress with status and trend query-based charts](charts.md)

@@ -56,7 +56,7 @@ All members of a team can favorite team artifacts and define work item templates
 - [Set personal or team favorites](../../project/navigation/set-favorites.md)
 - [Use work item templates](../../boards/backlogs/work-item-template.md)
 
-If team members don't have access to all the features they want, make sure they have [permissions needed for those features](../security/set-permissions-access-work-tracking.md).  
+If team members don't have access to all the features they want, ensure they have [permissions needed for those features](../security/set-permissions-access-work-tracking.md).  
 
 ## Add an administrator
 

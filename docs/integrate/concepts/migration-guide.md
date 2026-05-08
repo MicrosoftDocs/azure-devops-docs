@@ -92,7 +92,7 @@ var witClient = connection.GetClient<WorkItemTrackingHttpClient>();
 // var credentials = new VssBasicCredential(string.Empty, personalAccessToken);
 ```
 
-## Next steps and resources
+## Next step and resources
 
 ### 📖 Essential migration resources
 - **[Modern .NET client library samples](../get-started/client-libraries/samples.md)** - Production-ready code examples with modern authentication

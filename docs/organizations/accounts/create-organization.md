@@ -64,7 +64,7 @@ Your new organization includes the following free tier benefits:
 
 If you exceed these free tier limits, you pay for extra usage through your linked Azure subscription. For more information, see [What happens when free tier limits are reached?](../billing/billing-faq.yml#what-happens-when-free-tier-limits-are-reached-)
 
-## Next steps
+## Next step
 
 > [!div class="nextstepaction"]
 > [Create a project](../projects/create-project.md)

@@ -29,7 +29,7 @@ Rather than maintain two separate open-source hosting experiences, Microsoft is 
 | Retirement announced | April 2026 | Public project retirement announced and organizations can no longer create new public projects |
 | Existing public projects converted | 2027* | All remaining public projects are automatically converted to private |
 
-*Exact dates for converting public projects will be shared via in-product banners within public projects.
+*Exact dates for converting public projects will be shared through in-product banners within public projects.
 
 ## What changes when your project converts to private
 

@@ -237,7 +237,7 @@ To verify the integration is working, perform the following steps:
 	-  [Drive Git development from a work item](../../boards/backlogs/connect-work-items-to-git-dev-ops.md)  
 	-  [Link to work items from other objects](../../organizations/notifications/add-links-to-work-items.md)
 
-1.  Run the pipeline. 
+1. Run the pipeline. 
 
 2. Open one of the linked work items and view the [**Deployment**](../../boards/backlogs/add-link.md#link-work-items-to-deployments) control. As shown in the following image, the **Deployment** control shows release information for two release stages for work items that linked to a Git commit or pull request for a release pipeline configured to integrate with Azure Boards.  
 
@@ -351,7 +351,7 @@ Include Jira issues in work items and create links to all issues on stage comple
 
 :::image type="content" source="media/pipelines-integration/integration-options-classic-jira.png" alt-text="Screenshot of Integrations options for Classic pipelines showing Report deployment status to Jira settings.":::
 
-To support integration with Jira issue tracking, install [Azure DevOps for Jira](https://marketplace.atlassian.com/apps/1232793/azure-devops-for-jira-official?tab=overview&clickid=wZpQbS3IRxyKRK1xlHSsJQF1UkC3gaVNRWqmxY0&irgwc=1&utm_medium=paid-affiliate&utm_source=impact&ircid=17715&irpid=390418&irmpname=Wildfire%20Systems&irmptype=mediapartner&irshareid=A56&irmpgroupname=%22Non-Tech%22&iraid=2022041&utm_content=Wildfire%20-%20Atlassian%20Tracking--TEXT_LINK--&irclkid=wZpQbS3IRxyKRK1xlHSsJQF1UkC3gaVNRWqmxY0&hosting=cloud) and connect your Azure DevOps organizations with your Jira Software instance. You can connect multiple organizations with one instance and get data for all your teams and related projects. For more information, see [Connect Azure DevOps to Jira](https://support.atlassian.com/jira-cloud-administration/docs/integrate-azure-devops-with-jira/). 
+To support integration with Jira issue tracking, install [Azure DevOps for Jira](https://marketplace.atlassian.com/apps/1232793/azure-devops-for-jira-official?tab=overview&selectid=wZpQbS3IRxyKRK1xlHSsJQF1UkC3gaVNRWqmxY0&irgwc=1&utm_medium=paid-affiliate&utm_source=impact&ircid=17715&irpid=390418&irmpname=Wildfire%20Systems&irmptype=mediapartner&irshareid=A56&irmpgroupname=%22Non-Tech%22&iraid=2022041&utm_content=Wildfire%20-%20Atlassian%20Tracking--TEXT_LINK--&irclkid=wZpQbS3IRxyKRK1xlHSsJQF1UkC3gaVNRWqmxY0&hosting=cloud) and connect your Azure DevOps organizations with your Jira Software instance. You can connect multiple organizations with one instance and get data for all your teams and related projects. For more information, see [Connect Azure DevOps to Jira](https://support.atlassian.com/jira-cloud-administration/docs/integrate-azure-devops-with-jira/). 
 
 ::: moniker-end
  
@@ -401,7 +401,7 @@ For more information, see [Speed up testing by using Test Impact Analysis (TIA),
 
 -->
  
-## Related articles  
+## Related content  
 
 - [Define a multi-stage continuous deployment (CD) pipeline](../release/define-multistage-release-process.md)
 - [Link work items to other objects](../../boards/backlogs/add-link.md)

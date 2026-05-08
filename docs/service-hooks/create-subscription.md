@@ -116,7 +116,7 @@ Resource versioning is applicable when an API is in preview. For most scenarios,
 
 The event payload sent to certain consumers includes a JSON representation of a subject resource. For instance, the payload sent to webhooks, Azure Service Bus, and Azure Storage includes information about a build or work item. The representation of this resource can have various forms or versions.
 
-You can specify the version of the resource that you want to send to the consumer service via the `resourceVersion` field on the subscription.
+You can specify the version of the resource that you want to send to the consumer service through the `resourceVersion` field on the subscription.
 
 The resource version is the same as the [API version](../integrate/concepts/rest-api-versioning.md). If you don't specify a resource version, the latest version, `latest released`, is used. To help ensure a consistent event payload over time, always specify a resource version.
 

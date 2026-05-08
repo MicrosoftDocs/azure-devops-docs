@@ -26,7 +26,7 @@ Azure DevOps offers a spectrum of service models to accommodate the unique needs
 
 - **End-to-end project management**: Azure DevOps stands as a cohesive suite of services designed to support the complete lifecycle of your software projects. It encompasses everything from initial planning and development, through rigorous testing, to final deployment.
 
-- **Client/server model delivery**: Azure DevOps operates on a client/server model, offering flexibility in how you interact with its services. The web interface provides a convenient way to utilize most services and is compatible with all major browsers. Additionally, certain services like source control, build pipelines, and work tracking offer client-based management options for enhanced control.
+- **Client/server model delivery**: Azure DevOps operates on a client/server model, offering flexibility in how you interact with its services. The web interface provides a convenient way to use most services and is compatible with all major browsers. Additionally, certain services like source control, build pipelines, and work tracking offer client-based management options for enhanced control.
 
 - **Flexible and scalable service options**: Azure DevOps caters to teams of all sizes by offering a range of service options. For small teams, many services are complimentary, ensuring that you have access to robust project management tools without any initial investment. For larger teams or more advanced needs, services are accessible through a subscription model or on a pay-per-use basis.
 
@@ -99,7 +99,7 @@ Flow: Plan → Code → Build → Test → Deploy → Monitor → Repeat
 3. **Build** and package with Azure Pipelines and Azure Artifacts
 4. **Test** manually and automatically using Azure Test Plans
 5. **Deploy** through Azure Pipelines to various environments
-6. **Monitor** progress and metrics via Dashboards
+6. **Monitor** progress and metrics through Dashboards
 7. **Iterate** based on feedback and new requirements
 
 For more information, see [Tools and clients that connect to Azure DevOps](tools.md).

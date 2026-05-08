@@ -52,7 +52,7 @@ The following table summarizes the integration points between Azure Boards and A
 | Auto complete work items with pull requests | When you link a work item to a pull request (PR), you can [automatically complete](../boards/work-items/auto-complete-work-items-pull-requests.md) those work items when you successfully complete the PR. The system defaults to your selection for future PRs. |
 | View list of code objects a single work item is linked to | You can link work items to code changes, builds, and releases—providing an audit trail of the feature development. |
 | Query for external links | You can [query for work items that contain links](../boards/queries/linking-attachments.md) to branches, commits, pull requests, or tags. |
-| Configure branch policies to support work tracking | To ensure that changes to a branch have links to work items, you configure the branch policy for a Git repository in repo settings. Turn on the **Check for linked work items** option. Choose **Required** to mandate all pull requests have at least one linked work item in order to be completed. Choose **Optional** to allow pull requests without linked work items, but warn about it. |
+| Configure branch policies to support work tracking | To ensure that changes to a branch have links to work items, you configure the branch policy for a Git repository in repo settings. Turn on the **Check for linked work items** option. Choose **Required** to mandate all pull requests have at least one linked work item to be completed. Choose **Optional** to allow pull requests without linked work items, but warn about it. |
 
 ## Azure Boards and Azure Pipelines integration
 
@@ -76,7 +76,7 @@ The following features are available only with Azure DevOps Services:
 
 | **Feature** | **Description** |
 |-------------|-----------------|
-| Link work items via Classic or YAML pipelines | Choose an option and a branch for a Classic or YAML pipeline to create *Integrated in build* and *Integrated in release stage* links for work items linked to a branch, commit, or pull request. For more information, see [Configure pipelines to support integration](../pipelines/integrations/configure-pipelines-work-tracking.md). |
+| Link work items through Classic or YAML pipelines | Choose an option and a branch for a Classic or YAML pipeline to create *Integrated in build* and *Integrated in release stage* links for work items linked to a branch, commit, or pull request. For more information, see [Configure pipelines to support integration](../pipelines/integrations/configure-pipelines-work-tracking.md). |
 | View work items linked to a pipeline | Lists all work items linked to a release since the previous selected release. You can sort the list by each column. |
 | Create a work item on build failure | Automatically create a work item and set fields when a build fails. For more information, see [Build options](../pipelines/build/options.md) for Classic pipelines, and [Customize pipelines, Create work item on failure](../pipelines/customize-pipeline.md#create-work-item-on-failure). |
 
@@ -150,7 +150,7 @@ The Bug work item type supports the following integrations that you should be aw
 
 ## Azure Pipelines and Azure Test Plans integration
 
-Azure Test Plans is fully integrated with Azure Pipelines to support testing within continuous integration/continuous deployment (CI/CD). You can associate test plans and test cases with build or release pipelines. Add pipeline tasks to pipeline definitions to capture and publish test results. Review test results via built-in progress reports and pipeline test reports. The following table summarizes the integration points between Azure Pipelines and Azure Test Plans.  
+Azure Test Plans is fully integrated with Azure Pipelines to support testing within continuous integration/continuous deployment (CI/CD). You can associate test plans and test cases with build or release pipelines. Add pipeline tasks to pipeline definitions to capture and publish test results. Review test results through built-in progress reports and pipeline test reports. The following table summarizes the integration points between Azure Pipelines and Azure Test Plans.  
 
 | **Feature** | **Description** |
 |-------------|-----------------|

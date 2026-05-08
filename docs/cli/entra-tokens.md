@@ -18,7 +18,7 @@ Use the [**Azure CLI**](/cli/azure/install-azure-cli) to issue a [Microsoft Entr
 
 | Category | Requirements |
 |------------|------------|
-| Entra tenant and subscription    | Make sure the subscription is associated with the tenant connected to the Azure DevOps organization you're trying to access. If you don't know your tenant or subscription ID, you can find it in the [Azure portal](/azure/azure-portal/get-subscription-tenant-id).     |
+| Entra tenant and subscription    | Ensure the subscription is associated with the tenant connected to the Azure DevOps organization you're trying to access. If you don't know your tenant or subscription ID, you can find it in the [Azure portal](/azure/azure-portal/get-subscription-tenant-id).     |
 | Azure CLI     | Download and install the [Azure CLI](/cli/azure/install-azure-cli). |
 | Entra app | (If authenticating for a service principal) Create the Entra application and have the app client ID and client secret ready. |
 
@@ -27,7 +27,7 @@ Use the [**Azure CLI**](/cli/azure/install-azure-cli) to issue a [Microsoft Entr
 # [Azure CLI](#tab/azure-cli)
 
 1. Sign in to the Azure CLI using the `az login` command and follow the on-screen instructions.
-1. Set the correct subscription for the signed-in user with these bash commands. Make sure the Azure subscription ID is associated with the tenant connected to the Azure DevOps organization you're trying to access. If you don't know your subscription ID, you can find it in the [Azure portal](/azure/azure-portal/get-subscription-tenant-id).
+1. Set the correct subscription for the signed-in user with these bash commands. Ensure the Azure subscription ID is associated with the tenant connected to the Azure DevOps organization you're trying to access. If you don't know your subscription ID, you can find it in the [Azure portal](/azure/azure-portal/get-subscription-tenant-id).
   
    ```bash
    az account set -s <subscription-id>
@@ -46,7 +46,7 @@ Use the [**Azure CLI**](/cli/azure/install-azure-cli) to issue a [Microsoft Entr
 ## Get a token for a user
 
 1. Sign in to Azure PowerShell using the `Connect-AzAccount` command and follow the on-screen instructions.
-2. Set the correct subscription for the signed-in user with these PowerShell commands. Make sure the Azure subscription ID is associated with the tenant connected to the Azure DevOps organization you're trying to access. If you don't know your subscription ID, you can find it in the [Azure portal](/azure/azure-portal/get-subscription-tenant-id).
+2. Set the correct subscription for the signed-in user with these PowerShell commands. Ensure the Azure subscription ID is associated with the tenant connected to the Azure DevOps organization you're trying to access. If you don't know your subscription ID, you can find it in the [Azure portal](/azure/azure-portal/get-subscription-tenant-id).
   
    ```azurepowershell-interactive
    Set-AzContext -Subscription <subscriptionID>

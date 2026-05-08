@@ -102,7 +102,7 @@ Choose **Save** to move to the next tab in the panel. If you need to revisit a t
     > ![Verify the view](media/active-bugs-report/active-bugs-verify.png)
   
     > [!NOTE]   
-    > Verification time will vary based on the amount of data defined in your view. Verify your view to make sure all the definitions are correct.  
+    > Verification time will vary based on the amount of data defined in your view. Verify your view to ensure all the definitions are correct.  
 
     Once your view successfully verifies, choose **Save**. You can then start using it in Power BI. Verification also returns an estimate of the number of rows in the dataset.
 
@@ -144,7 +144,7 @@ Choose **Save** to move to the next tab in the panel. If you need to revisit a t
 	:::image type="content" source="media/active-bugs-report/active-bugs-stacked-area-chart.png" alt-text="Screenshot of Sample Active Bug trends stacked area chart.":::
 
 > [!TIP]    
-> If you need to modify your Analytics view, you can do so and then return to your Power BI report and refresh the data. Simply select the **Refresh** option as shown.  
+> If you need to modify your Analytics view, you can do so and then return to your Power BI report and refresh the data. select the **Refresh** option as shown.  
 > 
 > ![Screenshot of Power BI, Refresh report data.](media/active-bugs-report/refresh-report-updated-view.png)
 
@@ -163,7 +163,7 @@ Analytics views provide you with a great deal of power and flexibility to filter
 
  
 
-## Related articles 
+## Related content 
 
 - [Power BI integration overview](overview.md) 
 - [Create Analytics views](analytics-views-create.md)

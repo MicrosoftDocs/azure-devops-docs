@@ -14,7 +14,7 @@ ms.date: 08/07/2025
 
 Moving from Azure DevOps Server to Azure DevOps Services is an essential step for organizations that want to take advantage of cloud-based collaboration, scalability, and enhanced features. In this overview, we explore the options for transferring your valuable data from the on-premises Azure DevOps Server to the cloud-based Azure DevOps Services. 
 
-Regardless of your selected migration option, we recommend that you determine your most important assets, such as source code and work items. You should think about your data size, organization complexity and make sure that you have enough time for test runs before actual migration for a smooth and successful transition. 
+Regardless of your selected migration option, we recommend that you determine your most important assets, such as source code and work items. You should think about your data size, organization complexity and ensure that you have enough time for test runs before actual migration for a smooth and successful transition. 
 
 ### Approaches to migration 
 
@@ -39,7 +39,7 @@ For example, when the Azure DevOps team at Microsoft chose to move from Azure De
 1. Consider making the source Azure DevOps Server deployments read-only. You can do so in the following ways: 
    - [Adjust project-level permissions](../organizations/security/change-project-level-permissions.md): Set the permissions for all users or groups to read-only at the project level, which you can do by modifying the security roles in **Project settings**. 
    - [Modify repository settings](../organizations/security/set-object-level-permissions.md): For each repository, you can change the settings to make them read-only, which involves adjusting the permissions for each user or group to only allow read actions. 
-   - [Use built-in security groups](../organizations/security/permissions-access.md): Utilize the built-in security groups to manage permissions more efficiently. You can assign users to groups like "Readers" to provide read-only access. 
+   - [Use built-in security groups](../organizations/security/permissions-access.md): Use the built-in security groups to manage permissions more efficiently. You can assign users to groups like "Readers" to provide read-only access. 
    - Scripting permission changes: If you have many projects or repositories, you might need to script them. You can use the [Azure CLI DevOps extension](../cli/index.md) to list all permissions and update them as needed.
    - Disable repository feature: Disables access to the repository, including builds and pull requests, but keeps the repository discoverable with a warning. Go to **Project settings** > **Repositories** > your repo, and next to Disable Repository, move the toggle to **On**. 
 
@@ -130,7 +130,7 @@ When migrating into Azure DevOps Services, keep in mind the following key princi
 - [Report an issue in the Developer Community](https://developercommunity.visualstudio.com/AzureDevOps/report) 
 - [Get support and provide feedback](../user-guide/provide-feedback.md)
 
-## Next steps 
+## Next step 
 
 > [!div class="nextstepaction"]
 > [Get started with the Azure DevOps Data Migration Tool](migration-get-started.md)

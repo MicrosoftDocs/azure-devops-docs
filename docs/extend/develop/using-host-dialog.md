@@ -91,7 +91,7 @@ import * as SDK from "azure-devops-extension-sdk";
 
 SDK.init();
 SDK.ready().then(() => {
-    // Retrieve configuration passed via the dialog options
+    // Retrieve configuration passed through the dialog options
     const config = SDK.getConfiguration();
     console.log("Dialog configuration:", config);
 
@@ -258,7 +258,7 @@ dialogService.openMessageDialog("Do you want to save changes?", {
 
 ## Enable light dismiss
 
-For custom dialogs, set `lightDismiss` to `true` so that clicking outside the dialog closes it:
+For custom dialogs, set `lightDismiss` to `true` so that selecting outside the dialog closes it:
 
 ```javascript
 dialogService.openCustomDialog(contributionId, {

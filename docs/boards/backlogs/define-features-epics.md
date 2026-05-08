@@ -184,7 +184,7 @@ For more information, see [Show bugs on backlogs and boards](../../organizations
 
 [!INCLUDE [display rollup section](../includes/display-rollup-section.md)]
 
-## Next steps
+## Next step
 
 > [!div class="nextstepaction"]
 > [Organize your backlog](organize-backlog.md)
