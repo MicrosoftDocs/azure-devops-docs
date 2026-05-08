@@ -75,7 +75,7 @@ Filtering capabilities vary across Azure Boards tools based on their specific fu
 The following table shows supported filter options for each tool. Backlogs and boards inherit team-level filters as described in [Create and manage your backlog](create-your-backlog.md).
 
 > [!TIP]
-> For Azure DevOps Services, backlogs and boards also support [filtering by custom fields](#filter-by-custom-fields). Add any field as a backlog column or card field, and it becomes available as a filter.
+> For Azure DevOps Services, backlogs, boards, sprint backlogs, and sprint boards also support [filtering by custom fields](#filter-by-custom-fields). Add any field as a backlog column or card field, and it becomes available as a filter.
 
 :::row:::
    :::column span="1.5":::
@@ -794,14 +794,14 @@ For comprehensive tag management guidance, see [Add tags to work items to catego
 
 ## Filter by custom fields
 
-In addition to the standard filter fields, you can filter backlogs and boards by any custom field — including fields your team added to your process.
+In addition to the standard filter fields, you can filter backlogs, boards, sprint backlogs, and sprint boards by any custom field — including fields your team added to your process.
 
 ### How custom field filtering works
 
 Filtering is performed client-side, which means a field must be present in the data loaded by the page before it can appear as a filter option:
 
-- **Backlogs** — Add the field as a [backlog column](set-column-options.md). Once the column is visible, the field appears in the filter panel.
-- **Boards** — Add the field to your [card display](../boards/customize-cards.md). Once the field is shown on cards, it appears in the filter panel.
+- **Backlogs and sprint backlogs** — Add the field as a [backlog column](set-column-options.md). Once the column is visible, the field appears in the filter panel.
+- **Boards and sprint boards** — Add the field to your [card display](../boards/customize-cards.md). Once the field is shown on cards, it appears in the filter panel.
 
 The standard filters (Assigned To, Work Item Type, States, Area Path, Iteration Path, Tags, Parent Work Item) are always available and can't be removed. Custom field filters appear in addition to these defaults.
 
@@ -816,7 +816,7 @@ The standard filters (Assigned To, Work Item Type, States, Area Path, Iteration 
 If you remove a column from the backlog or a field from the card display, the corresponding filter option is automatically removed from the filter panel.
 
 > [!NOTE]
-> Custom field filtering is currently available for backlogs and boards. Support for sprint backlogs, sprint boards, queries, and delivery plans is planned.
+> Custom field filtering is currently available for backlogs, boards, sprint backlogs, and sprint boards. Support for queries and delivery plans is planned.
 
 ::: moniker-end
 

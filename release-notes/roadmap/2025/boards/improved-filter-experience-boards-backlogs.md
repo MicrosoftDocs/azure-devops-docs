@@ -13,7 +13,7 @@ hide_comments: true
 # Improved filtering experience in boards and backlogs
 
 > [!NOTE]
-> This feature is available for boards and backlogs in Azure DevOps Services. Support for sprint boards and sprint backlogs is planned for Q2 2026.
+> This feature is available for boards, backlogs, sprint boards, and sprint backlogs in Azure DevOps Services. Support for queries and delivery plans is planned.
 
 You can now filter on more fields, including custom fields. Any field shown as a backlog column or displayed on a board card is available as a filter option. For more information, see [Filter by custom fields](/azure/devops/boards/backlogs/filter-backlogs-boards-plans#filter-by-custom-fields).
 
