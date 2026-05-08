@@ -96,7 +96,7 @@ You can assign work items to a sprint through drag-and-drop from the product bac
 
 ::: moniker range="<=azure-devops"
 
-1. The next step is to open the Planning pane. Choose the :::image type="icon" source="../../media/icons/view-options-icon.png" border="false"::: view options icon and select **Planning**. While you're at it, make sure **Parents** and **Forecasting** are off. You can set **In Progress items** to on or off.
+1. The next step is to open the Planning pane. Choose the :::image type="icon" source="../../media/icons/view-options-icon.png" border="false"::: view options icon and select **Planning**. While you're at it, ensure **Parents** and **Forecasting** are off. You can set **In Progress items** to on or off.
 
 	:::image type="content" source="media/define-sprints/view-options-planning-menu.png" alt-text="Screenshot shows the View options menu where you can select Planning.":::
 
@@ -115,7 +115,7 @@ You can assign work items to a sprint through drag-and-drop from the product bac
 
 	:::image type="content" source="media/assign-items-sprint/sprint-window-effort.png" alt-text="Screenshot show the content of a sprint, with the Planning Effort and the backlog items":::   
 
-	*Planned Effort* provides a sum of all *Story Points* or *Effort* defined for backlog items assigned to the sprint. This sum represents your initial guess at the amount of work your team completes in the sprint. Next, define tasks, estimate that work, and use your team's capacity to make sure it fits in the sprint.
+	*Planned Effort* provides a sum of all *Story Points* or *Effort* defined for backlog items assigned to the sprint. This sum represents your initial guess at the amount of work your team completes in the sprint. Next, define tasks, estimate that work, and use your team's capacity to ensure it fits in the sprint.
 
 ::: moniker-end
 

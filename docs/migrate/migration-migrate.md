@@ -30,7 +30,7 @@ Do the following steps to queue the migration with the Data Migration Tool.
     - Ownership: The user who queued the migration owns the migrated organization. 
     - Notifications: The owner receives an email for migration success or [failure](migration-troubleshooting.md).
 
-## Next steps
+## Next step
 
 > [!div class="nextstepaction"]
 > [Complete post-migration tasks](migration-post-migration.md)

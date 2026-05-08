@@ -187,7 +187,7 @@ Before you set tag colors, [add tags to backlog items](../queries/add-tags-to-wo
 5. When you're done, select **Save**.
 
    > [!TIP]
-   > If tags don't display on the cards, select **Fields** and make sure you checked **Show Tags**. 
+   > If tags don't display on the cards, select **Fields** and ensure you checked **Show Tags**. 
 
 <a id="use-ai-assistance"></a>
 

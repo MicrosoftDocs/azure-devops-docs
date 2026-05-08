@@ -137,7 +137,7 @@ This action queues a Bamboo build.
   | Input ID | Name | Description | Data type | Required |
   | --- | --- | --- | --- | --- |
   | `serverBaseUrl` | Bamboo base URL | The URI that contains the hostname of the Bamboo server. | `uri` | Yes |
-  | `basicAuthCredentials` | Basic authentication credentials | Standard credentials to use to authenticate to the Bamboo server. To avoid sending credentials in plain text, use the HTTPS protocol to encrypt the credentials via Transport Layer Security (TLS). We recommend using [service principals and managed identities in Azure DevOps](../integrate/get-started/authentication/service-principal-managed-identity.md). | `string` | Yes |
+  | `basicAuthCredentials` | Basic authentication credentials | Standard credentials to use to authenticate to the Bamboo server. To avoid sending credentials in plain text, use the HTTPS protocol to encrypt the credentials through Transport Layer Security (TLS). We recommend using [service principals and managed identities in Azure DevOps](../integrate/get-started/authentication/service-principal-managed-identity.md). | `string` | Yes |
   | `planName` | Plan | The name of the plan to queue. | `string` | Yes |
 
 ## Datadog
@@ -196,7 +196,7 @@ This action uses the [Jenkins Git plug-in](https://plugins.jenkins.io/git/) to t
   | Input ID | Name | Description | Data type | Required |
   | --- | --- | --- | --- | --- |
   | `serverBaseUrl` | Jenkins base URL | The URI that contains the hostname of the Jenkins server. | `uri` | Yes |
-  | `basicAuthCredentials` | Basic authentication credentials | Standard HTTP authentication credentials. To avoid sending credentials in plain text, use the HTTPS protocol to encrypt the credentials via TLS. We recommend using [service principals and managed identities in Azure DevOps](../integrate/get-started/authentication/service-principal-managed-identity.md). | `string` | Yes |
+  | `basicAuthCredentials` | Basic authentication credentials | Standard HTTP authentication credentials. To avoid sending credentials in plain text, use the HTTPS protocol to encrypt the credentials through TLS. We recommend using [service principals and managed identities in Azure DevOps](../integrate/get-started/authentication/service-principal-managed-identity.md). | `string` | Yes |
   | `useTfsPlugin` | Integration level | The selected integration level, which is one of two values:<br>- The built-in Jenkins API<br>- The extended integration provided by the Azure DevOps Server plug-in if that plug-in is installed on the Jenkins server | `string` | No |
 
 ### Trigger a generic build
@@ -211,7 +211,7 @@ This action triggers a generic Jenkins build that invokes the Jenkins build URL.
   | Input ID | Name | Description | Data type | Required |
   | --- | --- | --- | --- | --- |
   | `serverBaseUrl` | Jenkins base URL | The URI that contains the hostname of the Jenkins server. | `uri` | Yes |
-  | `basicAuthCredentials` | Basic authentication credentials | Standard HTTP authentication credentials. To avoid sending credentials in plain text, use the HTTPS protocol to encrypt the credentials via TLS. We recommend using [service principals and managed identities in Azure DevOps](../integrate/get-started/authentication/service-principal-managed-identity.md). | `string` | Yes |
+  | `basicAuthCredentials` | Basic authentication credentials | Standard HTTP authentication credentials. To avoid sending credentials in plain text, use the HTTPS protocol to encrypt the credentials through TLS. We recommend using [service principals and managed identities in Azure DevOps](../integrate/get-started/authentication/service-principal-managed-identity.md). | `string` | Yes |
   | `buildName` | Build | The name of the build to trigger. | `string` | Yes |
   | `useTfsPlugin` | Integration level | The selected integration level, which is one of two values:<br>- The built-in Jenkins API<br>- The extended integration provided by the Azure DevOps Server plug-in if that plug-in is installed on the Jenkins server | `string` | No |
   | `buildAuthToken` | Build token | An authorization token for a build. Only users who know the token can remotely trigger builds. | `string` | No |
@@ -278,7 +278,7 @@ This action creates a list on an existing board in Trello. A list is used to org
 
 Webhooks provide a way to send a JSON representation of an Azure DevOps event to any service that has a public endpoint.
 
-### Post via HTTP
+### Post through HTTP
 
 This action posts a JSON object representation of an event to a specified URL. HTTPS endpoints are recommended due to the potential for private data in the event payload. For more information, see [Webhooks](services/webhooks.md).
 
@@ -291,7 +291,7 @@ This action posts a JSON object representation of an event to a specified URL. H
   | --- | --- | --- | --- | --- |
   | `url` | URL | The URL to send an HTTP POST to. | `uri` | Yes |
   | `acceptUntrustedCerts` | Accept untrusted SSL certificates | An option for not requiring a trusted Secure Sockets Layer (SSL) certificate for an endpoint. Use this option only during development and testing. | `boolean` | No |
-  | `basicAuthCredentials` | Basic authentication credentials | Standard HTTP authentication credentials. To avoid sending credentials in plain text, use the HTTPS protocol to encrypt the credentials via TLS. We recommend using [service principals and managed identities in Azure DevOps](../integrate/get-started/authentication/service-principal-managed-identity.md). | `string` | Yes |
+  | `basicAuthCredentials` | Basic authentication credentials | Standard HTTP authentication credentials. To avoid sending credentials in plain text, use the HTTPS protocol to encrypt the credentials through TLS. We recommend using [service principals and managed identities in Azure DevOps](../integrate/get-started/authentication/service-principal-managed-identity.md). | `string` | Yes |
   | `httpHeaders` | HTTP headers | HTTP header keys and values in the form of key-value pairs. In each pair, the key and value are separated by a colon, such as `<key>:<value>`. Each key-value pair appears on its own line. These values are viewable by anyone who has access to the service hook subscription. | `string` | No |
   | `resourceDetailsToSend` | Resource details to send | The number of resource fields to send to the queue. Possibilities are all fields, a minimum number, and none. | `string` | No |
   | `messagesToSend` | Messages to send | The types of messages to send to the queue. | `string` | No |

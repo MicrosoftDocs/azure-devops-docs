@@ -405,6 +405,6 @@ The report displayed should look similar to the following image.
 :::image type="content" source="media/pipeline-reports/duration-trend-report.png" alt-text="Screenshot of Power BI sample Pipelines Duration trend report.":::
   
 
-## Related articles
+## Related content
 
 [!INCLUDE [temp](includes/sample-related-articles-pipelines.md)]

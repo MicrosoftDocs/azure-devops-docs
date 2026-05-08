@@ -128,7 +128,7 @@ Combining Text and Hyperlinks in a Single Label
       <!-- Standalone label control 3 -->  
       <Control Type="LabelControl" Name="Microsoft.VSTS.Common.GuidanceLabel3">  
          <LabelText>  
-               <Text>Click here for </Text>  
+               <Text>Select here for </Text>  
                <Text>  
                <Link UrlRoot="http://www.msn.com"></Link>  
                work item guidance</Text>  

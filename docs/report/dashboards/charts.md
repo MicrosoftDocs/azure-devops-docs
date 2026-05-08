@@ -176,7 +176,7 @@ If you configure the [Azure DevOps MCP Server](../../mcp-server/mcp-server-overv
 
 ::: moniker-end
 
-## Related articles
+## Related content
 
 - [Example query charts](../../boards/queries/example-query-charts.md)
 - [Chart for Work Items widget](configure-chart-work-items-widget.md)

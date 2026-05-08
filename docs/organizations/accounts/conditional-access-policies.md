@@ -89,7 +89,7 @@ The following groups still require access to Azure Resource Manager. Consider ad
 
 ## Continuous Access Evaluation
 
-Azure DevOps supports [Continuous Access Evaluation (CAE) via Microsoft Entra ID](/entra/identity/conditional-access/concept-continuous-access-evaluation), which enables near real-time enforcement of Conditional Access policies. With CAE, access tokens can be revoked immediately when critical events occur—such as when a user is disabled, a password changes, or a location/IP shift happens—without waiting for token expiration. This approach enhances security, reduces operational overhead, and improves resilience during identity service outages.
+Azure DevOps supports [Continuous Access Evaluation (CAE) through Microsoft Entra ID](/entra/identity/conditional-access/concept-continuous-access-evaluation), which enables near real-time enforcement of Conditional Access policies. With CAE, access tokens can be revoked immediately when critical events occur—such as when a user is disabled, a password changes, or a location/IP shift happens—without waiting for token expiration. This approach enhances security, reduces operational overhead, and improves resilience during identity service outages.
 
 App developers who use the latest [.NET client library version](../../integrate/concepts/dotnet-client-libraries.md) (20.259.0-preview and later) should support CAE-enabled tokens by [gracefully handling claims challenges](/entra/identity-platform/claims-challenge?tabs=dotnet).
 

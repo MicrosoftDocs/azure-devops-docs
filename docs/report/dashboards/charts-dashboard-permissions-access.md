@@ -39,7 +39,7 @@ You set [permissions](../../report/powerbi/analytics-security.md) for the servic
 
 [!INCLUDE [temp](../../organizations/security/includes/analytics.md)]
 
-## Related articles
+## Related content
 
 - [Work across projects](../../project/navigation/work-across-projects.md)
 - [Add a team administrator](../../organizations/settings/add-team-administrator.md) 

@@ -41,7 +41,7 @@ To change the **Organization owner**, see [Change organization owner](../account
    > [!div class="mx-imgBorder"]  
    > ![Screenshot showing the Organization owner on the Overview page.](../../media/settings/organization-settings-info.png)
 
-## Next steps
+## Next step
 
 > [!div class="nextstepaction"]
 > [Look up a project collection administrator](look-up-project-collection-administrators.md)

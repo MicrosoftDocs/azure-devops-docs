@@ -31,7 +31,7 @@ Your extension's static content is useful when you're enhancing or decorating da
 
 ### Steps
 
-1. In your extension manifest file, specify the files you want to include via the `files` property: 
+1. In your extension manifest file, specify the files you want to include through the `files` property: 
    ```json
    {
      "files": [
@@ -50,7 +50,7 @@ Your extension's static content is useful when you're enhancing or decorating da
 
 <div class="alert alert-danger">
 > [!IMPORTANT]
-> Make sure to increment the version of your extension when you make changes to static content files included in your .vsix.<br/></div> 
+> Ensure to increment the version of your extension when you make changes to static content files included in your .vsix.<br/></div> 
 
 Keep in mind:
 
@@ -86,7 +86,7 @@ In this model, static content is served from your own service and not included i
 
  Azure DevOps Services loads the contents of this hub when it's rendered at `https://myservice.net/extension/hello-world.html`.
 
-## Next steps
+## Next step
 
 > [!div class="nextstepaction"]
 > [Package, publish, and install extensions](../publish/overview.md)

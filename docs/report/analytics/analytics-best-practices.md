@@ -18,7 +18,7 @@ ms.custom: analytics, sfi-image-nochange
 Analytics is the reporting platform for Azure DevOps, which allows you to gain insights from your data and make data-driven decisions. Analytics is optimized for fast read-access and server-based aggregations, and it provides various tools to visualize and analyze your data. In this article, we share some best practices for using Analytics in Azure DevOps.
 
 [!INCLUDE [prerequisites-simple](../includes/analytics-prerequisites-simple.md)]
-- If you're an extension developer, make sure to review [OData Analytics query guidelines](../extend-analytics/odata-query-guidelines.md).
+- If you're an extension developer, ensure to review [OData Analytics query guidelines](../extend-analytics/odata-query-guidelines.md).
 
 ## Get familiar with the Analytics metadata 
 
@@ -73,7 +73,7 @@ All queries must contain an `$apply` or `$select` clause, otherwise you might re
 
 ### Limit the columns you request in your query 
 
-You specify columns of data to return using the `$select` clause. With customization, work items can have numerous fields associated with them. The more properties or fields that a query references, the more expensive it's to process. Consider the report you want to generate and make sure you're only requesting the fields you need.  
+You specify columns of data to return using the `$select` clause. With customization, work items can have numerous fields associated with them. The more properties or fields that a query references, the more expensive it's to process. Consider the report you want to generate and ensure you're only requesting the fields you need.  
 
 For example, to return the ID, Work Item Type, Title, and State fields for a filtered set of work items, specify the following `$select` clause: `$select=WorkItemId, WorkItemType, Title, State`.  
 
@@ -139,7 +139,7 @@ You can review usage for the service and for individuals by going to **Organizat
 
 ::: moniker-end
  
-## Related articles
+## Related content
 
 - [What is the Analytics service?](../powerbi/what-is-analytics.md)
 - [Construct OData queries for Analytics](analytics-query-parts.md)

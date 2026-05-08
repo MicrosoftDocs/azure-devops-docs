@@ -1,5 +1,5 @@
 ---
-title: Access your organization via Microsoft Entra ID
+title: Access your organization through Microsoft Entra ID
 titleSuffix: Azure DevOps Services
 ms.custom: engagement-fy23
 description: About user authentication, and controlling conditional access to your organization with a Microsoft Entra tenant.
@@ -12,7 +12,7 @@ ms.date: 07/28/2025
 monikerRange: 'azure-devops'
 ---
 
-# About accessing your organization via Microsoft Entra ID
+# About accessing your organization through Microsoft Entra ID
 
 [!INCLUDE [version-eq-azure-devops](../../includes/version-eq-azure-devops.md)]
 
@@ -34,7 +34,7 @@ These organizations are integrated with Microsoft Entra ID, enabling centralized
 **Benefits:**
 
 - **Centralized management**: Manage user access and permissions from a single location. Microsoft Entra administrators oversee user access, providing secure and centralized control.
-- **Enhanced security**: Utilize advanced security features like MFA and conditional access.
+- **Enhanced security**: Use advanced security features like MFA and conditional access.
 - **Simplified user experience**: Provide a seamless sign-in experience with SSO.
 - **Directory-based authentication**: Only users who are members or guests in your directory can access your organization.
 - **Access revocation**: Disabled or removed users have no access by any mechanism, including PATs or SSH.

@@ -268,7 +268,7 @@ The following table shows security roles for environments:
 > | **Creator** | Can create environments in the project. It only applies to project-level security. Contributors are automatically assigned this role. |
 > | **Reader** | Can view the environment. |
 > | **User** | Can use the environment when creating or editing YAML pipelines. |
-> | **Administrator** | Can administer permissions, create, manage, view and use environments. The creator of an environment is granted the administrator role for that environment.  Administrators can also open access to an environment for all pipelines in the project. |
+> | **Administrator** | Can administer permissions, create, manage, view and use environments. The creator of an environment is granted the administrator role for that environment. Administrators can also open access to an environment for all pipelines in the project. |
 
 The following table shows default user and group role assignments:
 
@@ -811,7 +811,7 @@ To set permissions for individual task groups, do the following steps:
 
     :::image type="content" source="media/task-group-permissions.png" alt-text="Screenshot of Task group selection.":::
 
-2.  Select a task group. 
+2. Select a task group. 
 
 3. Select **More commands** :::image type="icon" source="../../media/icons/actions-icon.png" border="false"::: and select **Security**. 
 
@@ -1119,7 +1119,7 @@ To add project users or groups that aren't listed in the security dialog, do the
 
 ::: moniker-end
 
-## Related articles
+## Related content
 
 - [Get started with permissions, access, and security groups](../../organizations/security/about-permissions.md)
 - [Default permissions and access](../../organizations/security/permissions-access.md)

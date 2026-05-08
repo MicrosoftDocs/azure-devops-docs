@@ -1298,7 +1298,7 @@ The following example creates a collapsible section on a wiki page:
 ```html
 # A collapsible section with Markdown syntax
 <details>
-  <summary>Click to expand!</summary>
+  <summary>Select to expand!</summary>
   
   ## Heading
   1. A numbered

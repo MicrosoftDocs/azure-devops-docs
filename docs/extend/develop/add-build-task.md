@@ -253,7 +253,7 @@ For production tasks, add security restrictions to limit command usage and varia
 - `setsecret`, `setvariable`, `debug`, `settaskvariable`
 - `prependpath`, `publish`
 
-**Variable allowlist** controls which variables can be set via `setvariable` or `prependpath`. Supports basic regex patterns.
+**Variable allowlist** controls which variables can be set through `setvariable` or `prependpath`. Supports basic regex patterns.
 
 > [!NOTE]
 > This feature requires [agent version 2.182.1](https://github.com/microsoft/azure-pipelines-agent/releases/tag/v2.182.1) or later.

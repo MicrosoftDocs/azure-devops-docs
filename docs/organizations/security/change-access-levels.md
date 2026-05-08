@@ -66,7 +66,7 @@ Changes you make to the access level settings take effect immediately.
 
 To assign a different access level to a user or group, you need to first delete their current access level and then grant them the new one.
 
-Make sure to set each user's access level based on what you purchased for that user. Basic access includes all Stakeholder features. Advanced and Visual Studio Enterprise subscriber access levels include all Basic features.
+Ensure to set each user's access level based on what you purchased for that user. Basic access includes all Stakeholder features. Advanced and Visual Studio Enterprise subscriber access levels include all Basic features.
 
 1. Choose the user or group and then select **Remove**.
 
@@ -76,7 +76,7 @@ Make sure to set each user's access level based on what you purchased for that u
 
 ## Change the default access level
 
-Make sure the default access level is the same as the access you're licensed for. When you set the default access level to Stakeholder, only the users who are given the Basic or a higher level can access more features than the Stakeholder level.
+Ensure the default access level is the same as the access you're licensed for. When you set the default access level to Stakeholder, only the users who are given the Basic or a higher level can access more features than the Stakeholder level.
 
 You can set an access level from its page. Choose **Set as default access level** as shown.
 

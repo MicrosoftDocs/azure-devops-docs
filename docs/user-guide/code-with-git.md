@@ -29,7 +29,7 @@ Share your code with others in Azure DevOps by using a Git repository. Clone the
 
 ## 1. Clone the repo to your computer
 
-When you clone a repo, you create a complete local copy so you can work offline and push changes back later. Before you clone, make sure your code is in an Azure Repos Git repository:
+When you clone a repo, you create a complete local copy so you can work offline and push changes back later. Before you clone, ensure your code is in an Azure Repos Git repository:
 
 - **No code yet** — [Create a new Git repo](../repos/git/create-new-repo.md#create-a-repo-using-the-web-portal).
 - **Code in another Git repo** (for example, GitHub) — [Import it into Azure Repos](../repos/git/import-git-repository.md).
@@ -172,7 +172,7 @@ If you configure the [Azure DevOps MCP Server](../mcp-server/mcp-server-overview
 
 ::: moniker-end
 
-## Next steps  
+## Next step  
 
 > [!div class="nextstepaction"]
 > [Set up continuous integration & delivery](../pipelines/create-first-pipeline.md?bc=%252fazure%252fdevops%252fuser-guide%252fbreadcrumb%252ftoc.json&toc=%252fazure%252fdevops%252fuser-guide%252ftoc.json)

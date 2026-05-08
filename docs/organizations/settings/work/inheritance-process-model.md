@@ -53,7 +53,7 @@ You can switch the process a project uses from one process to another. For more 
 
 By following the general guidance in the listed articles, you can make other changes such as from CMMI to Agile or Agile to CMMI. Before you change a project process, familiarize yourself with the process you're changing to. For more information, see [About processes and process templates](../../../boards/work-items/guidance/choose-process.md).
 
-When you transition a project to a different process, some existing tools or work items might become invalid. For example, work items that lack a field required in the new process might display errors. To proceed with changes and save the work items, you must resolve these errors. If the process change adds, removes, or hides workflow states for a WIT that appears on a board, make sure to update the board column configurations for all teams defined in the project.
+When you transition a project to a different process, some existing tools or work items might become invalid. For example, work items that lack a field required in the new process might display errors. To proceed with changes and save the work items, you must resolve these errors. If the process change adds, removes, or hides workflow states for a WIT that appears on a board, ensure to update the board column configurations for all teams defined in the project.
 
 <a id="process-naming"></a>
 ### Change or rename an inherited process

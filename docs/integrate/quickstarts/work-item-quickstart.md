@@ -432,7 +432,7 @@ class Program
         var executor = new ServicePrincipalQueryExecutor("your-organization-name", clientId, clientSecret, tenantId);
         var workItems = await executor.QueryOpenBugsAsync("your-project-name");
         
-        Console.WriteLine($"Found {workItems.Count} open bugs via automation");
+        Console.WriteLine($"Found {workItems.Count} open bugs through automation");
         foreach (var item in workItems)
         {
             Console.WriteLine($"Bug {item.Id}: {item.Fields["System.Title"]}");

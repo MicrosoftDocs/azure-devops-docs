@@ -41,7 +41,7 @@ The Azure DevOps MCP Server integrates with various development environments and
 | **Visual Studio (2022 and later)** | [GitHub Copilot component](/visualstudio/ide/visual-studio-github-copilot-install-and-states) | [Visual Studio setup guide](https://github.com/microsoft/azure-devops-mcp/blob/main/README.md#visual-studio) | Full IntelliSense integration with Azure DevOps data |
 | **Cursor** | Built-in AI assistant (no extensions needed) | [Cursor setup guide](https://github.com/microsoft/azure-devops-mcp/blob/main/README.md#cursor) | Native MCP integration |
 | **Claude Desktop** | Claude Desktop application | [Claude Desktop setup guide](https://github.com/microsoft/azure-devops-mcp/blob/main/README.md#claude-desktop) | Standalone application with full Azure DevOps integration |
-| **JetBrains IDEs** | Compatible AI assistant plugin | [JetBrains setup guide](https://github.com/microsoft/azure-devops-mcp/blob/main/README.md#jetbrains) | IDE-specific integration via plugins |
+| **JetBrains IDEs** | Compatible AI assistant plugin | [JetBrains setup guide](https://github.com/microsoft/azure-devops-mcp/blob/main/README.md#jetbrains) | IDE-specific integration through plugins |
 | **Other environments** | Varies by environment | [Azure DevOps MCP Server docs repository](https://github.com/microsoft/azure-devops-mcp) | See repository for all options |
 
 > [!TIP]

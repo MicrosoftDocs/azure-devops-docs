@@ -149,7 +149,7 @@ Without the `clickable` class, the default blue link color applies to all text i
     <a href="https://bing.com"  target="_blank">
 		<h2 class="title">Counter widget</h2>
 		<div class="big-count">223</div>
-		<div>Click me!</div>
+		<div>Select me!</div>
 	</a>
 </div>
 ```

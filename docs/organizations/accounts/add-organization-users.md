@@ -282,7 +282,7 @@ For more information, see [Add or remove users or groups, manage security groups
 
 ### Q: Why does the permissions level show as 'Custom' when I add a user to a project in the Users Hub?
 
-**A:** By design, the permissions settings accessible via the Users Hub are intended to provide a quick way to set user permissions after they get added. However, these settings don't override custom permissions that might be assigned through group membership or direct assignments in other areas.
+**A:** By design, the permissions settings accessible through the Users Hub are intended to provide a quick way to set user permissions after they get added. However, these settings don't override custom permissions that might be assigned through group membership or direct assignments in other areas.
 
 For example, if a user is designated as a standard contributor in a project but is also granted a specific permission, such as "Allow force push" for a repository within that project, the Users Hub  displays their permission level as 'Custom.' So, any changes made in the Users Hub don't revert the permission display back to 'Contributor' or any other standard role.
 
@@ -337,7 +337,7 @@ If you have the [Azure DevOps MCP Server](../../mcp-server/mcp-server-overview.m
 > If you're using Visual Studio Code, [agent mode](/visualstudio/ide/copilot-chat-context#agent-mode) is especially helpful for reviewing user access levels and managing bulk user operations.
 > - To avoid using stale or cached data from previous queries, add to your prompt, `Do not use previously fetched data`.
 
-## Next steps
+## Next step
 
 > [!div class="nextstepaction"]
 > [Set up billing](../billing/set-up-billing-for-your-organization-vs.md#set-up-billing)

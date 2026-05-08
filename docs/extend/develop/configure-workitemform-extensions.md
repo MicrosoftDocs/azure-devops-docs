@@ -1,5 +1,5 @@
 ---
-title: Configure work item form extensions via XML
+title: Configure work item form extensions through XML
 titleSuffix: Azure DevOps Server
 description: Add and configure work item form extensions in Azure DevOps Server using work item type definition XML and the witadmin tool.
 ms.contentid: DEC28077-2F52-490D-B87C-48D4785CD597
@@ -22,13 +22,13 @@ ai-usage: ai-assisted
 > [!IMPORTANT]
 > This article applies only to Azure DevOps Server (on-premises). For Azure DevOps Services, customize work item forms through the [inheritance process model](../../organizations/settings/work/inheritance-process-model.md) instead.
 
-You can export a work item type as XML using the `witadmin` tool, which includes the layout of the work item form. As part of this example, we add the page, group, and control contributions to the layout.  We also add the control to the Agile "User Story" work item type. For more information, see [WebLayout xml reference](/previous-versions/azure/devops/reference/xml/weblayout-xml-elements). 
+You can export a work item type as XML using the `witadmin` tool, which includes the layout of the work item form. As part of this example, we add the page, group, and control contributions to the layout. We also add the control to the Agile "User Story" work item type. For more information, see [WebLayout xml reference](/previous-versions/azure/devops/reference/xml/weblayout-xml-elements). 
 
 ## Add extension in work item form
 
 1. Install work item form extensions in Azure DevOps Server.
 
-2. Open the `Developer Command Prompt`.  Export the xml file to your desktop with the following command.
+2. Open the `Developer Command Prompt`. Export the xml file to your desktop with the following command.
 
    ```
    witadmin exportwitd /collection:CollectionURL /p:Project /n:TypeName /f:FileName
@@ -137,4 +137,4 @@ If a control contribution has any required input defined, users must give a valu
 
    `witadmin importwitd /collection:CollectionURL /p:Project /f:FileName`
 
-Your extension is configured via the work item form!
+Your extension is configured through the work item form!

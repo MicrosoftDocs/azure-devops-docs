@@ -115,7 +115,7 @@ You receive email notifications when team members perform the following actions:
 
 ## View and manage items you follow
 
-### Option 1: Quick access via Queries
+### Option 1: Quick access through Queries
 
 **Path**: **Boards** → **Queries** → **All** → **My Queries** → **Followed work items**
 

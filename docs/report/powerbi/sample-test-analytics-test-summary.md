@@ -453,7 +453,7 @@ The following table describes each part of the query.
 
 	:::image type="content" source="media/pipeline-test-reports/visualizations-test-summary.png" alt-text="Screenshot of visualization fields selections for Test Summary report.":::
 
-1. Add the following fields to **Values**, in the order shown. Right-click each field and make sure **Sum** is selected.
+1. Add the following fields to **Values**, in the order shown. Right-click each field and ensure **Sum** is selected.
 	- `ResultPassCount`
 	- `ResultFailCount`
 	- `ResultNotExecutedCount`
@@ -462,6 +462,6 @@ Your report should look similar to the following image.
 
 :::image type="content" source="media/pipeline-test-reports/test-summary-donut-report.png" alt-text="Screenshot of Sample Test Summary Donut report.":::
 
-## Related articles
+## Related content
 
 [!INCLUDE [temp](includes/sample-related-articles-pipelines.md)]

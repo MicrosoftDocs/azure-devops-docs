@@ -56,7 +56,7 @@ The following steps show how to use the developer tools in Microsoft Edge. For m
    :::image type="content" source="media/capture-browser-trace/microsoft-edge-network-tab-check-preserve-log.png" alt-text="Screenshot shows check next to Preserve log in Network tab in Microsoft Edge.":::
 
 8. Go to the step before where the issue occurs.
-9. Record the steps you take in Azure DevOps using [Steps Recorder](https://support.microsoft.com/windows/record-steps-to-reproduce-a-problem-46582a9b-620f-2e36-00c9-04e25d784e47). Steps Recorder doesn't automatically start recording HAR traces in DevTools, so make sure to start the recording in DevTools, too.
+9. Record the steps you take in Azure DevOps using [Steps Recorder](https://support.microsoft.com/windows/record-steps-to-reproduce-a-problem-46582a9b-620f-2e36-00c9-04e25d784e47). Steps Recorder doesn't automatically start recording HAR traces in DevTools, so ensure to start the recording in DevTools, too.
 10. When you're done recording, stop recording in Step Recorder. In DevTools, stop recording and long press **Export** so that it shows a menu. If you only do a short press, a sanitized version of the HAR gets exported, which is missing information needed for troubleshooting. 
 
 11. Select **Export HAR (with sensitive data)**.	 
@@ -90,7 +90,7 @@ The following steps show how to use the developer tools in Google Chrome. For mo
 7. Go to the step before where the issue occurs.
 8. Start recording the steps you take in Azure DevOps, using [Steps Recorder](https://support.microsoft.com/windows/record-steps-to-reproduce-a-problem-46582a9b-620f-2e36-00c9-04e25d784e47).
 9. When you're done recording, long press the export button so that it shows a menu. If you only do a short press, a sanitized version of the HAR gets exported, which is missing information needed for troubleshooting.
-10.  Select **Export HAR (with sensitive data)**.	 
+10. Select **Export HAR (with sensitive data)**.	 
 
    :::image type="content" source="media/capture-browser-trace/google-chrome-export-har-with-sensitive-data.png" alt-text="Screenshot shows highlighted selection, Export HAR with sensitive data, in Google Chrome.":::
 

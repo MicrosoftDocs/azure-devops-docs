@@ -47,7 +47,7 @@ From your web portal or the Azure DevOps CLI command, get a list of the users in
 
 ### List users
 
-You can list the users in an organization with the [az devops user list](/cli/azure/devops/user#az-devops-user-list) command. This action doesn't apply to users added via Microsoft Entra groups, as certain commands or features might not directly apply to users added via Microsoft Entra. When you export the list, you might notice that group users get indicated with an "assignmentSource" of "groupRule." This assignment signifies that their access gets determined by the group membership rules, rather than individual settings. To get started, see [Azure DevOps CLI](../../cli/index.md).
+You can list the users in an organization with the [az devops user list](/cli/azure/devops/user#az-devops-user-list) command. This action doesn't apply to users added through Microsoft Entra groups, as certain commands or features might not directly apply to users added through Microsoft Entra. When you export the list, you might notice that group users get indicated with an "assignmentSource" of "groupRule." This assignment signifies that their access gets determined by the group membership rules, rather than individual settings. To get started, see [Azure DevOps CLI](../../cli/index.md).
 
 ```azurecli
 az devops user list [--org] [--skip] [--top]

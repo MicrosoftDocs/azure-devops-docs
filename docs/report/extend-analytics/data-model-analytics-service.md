@@ -66,10 +66,10 @@ Some navigation properties result in a single entity, while others result in a c
 
 The Analytics data model uses several types of relationships:
 
-- **One-to-many**: A single parent entity relates to multiple child entities (e.g., one Area to many WorkItems)
-- **Many-to-one**: Multiple entities relate to a single parent entity (e.g., many WorkItems to one Area)
+- **One-to-many**: A single parent entity relates to multiple child entities (for example, one Area to many WorkItems)
+- **Many-to-one**: Multiple entities relate to a single parent entity (for example, many WorkItems to one Area)
 - **One-to-one**: A single entity relates to exactly one other entity
-- **Many-to-many**: Multiple entities relate to multiple other entities (e.g., WorkItems to Tags)
+- **Many-to-many**: Multiple entities relate to multiple other entities (for example, WorkItems to Tags)
 
 ### Relationship keys
 
@@ -210,7 +210,7 @@ Different API versions provide different capabilities:
 
 Choose the appropriate version based on your reporting requirements and the entities you need to access.
 
-## Related articles 
+## Related content 
 
 - [OData Analytics query guidelines](odata-query-guidelines.md)
 - [WIT analytics](wit-analytics.md)  

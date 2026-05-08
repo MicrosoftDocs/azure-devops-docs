@@ -57,7 +57,7 @@ For more information on concepts related to security permissions, see the [Secur
 The following parameters are optional for all commands. The examples in this article don't show these parameters. 
 
 - **detect**: Automatically detect organization. Accepted values: false, true. Default is true.
-- **org**: Azure DevOps organization URL. You can configure the default organization by using `az devops configure -d organization=ORG_URL`. Required if not configured as default or picked up via git config. Example: `--org https://dev.azure.com/MyOrganizationName/`. 
+- **org**: Azure DevOps organization URL. You can configure the default organization by using `az devops configure -d organization=ORG_URL`. Required if not configured as default or picked up through git config. Example: `--org https://dev.azure.com/MyOrganizationName/`. 
 
 <a id="list-namespaces"></a>
 

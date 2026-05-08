@@ -439,6 +439,6 @@ The following image shows the resulting report.
 :::image type="content" source="media/pipeline-reports/task-duration-line-chart-report.png" alt-text="Screenshot of Power BI Pipelines sample task duration trend report."::: 
  
 
-## Related articles
+## Related content
 
 [!INCLUDE [temp](includes/sample-related-articles-pipelines.md)]

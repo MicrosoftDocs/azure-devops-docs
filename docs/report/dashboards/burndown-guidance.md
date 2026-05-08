@@ -91,11 +91,11 @@ For example, when the actual remaining work (blue area) goes flat for a while, o
 
 Teams should meet immediately to course correct and either reassign work, recruit more resources, or reset expectations.
 
-## Next steps
+## Next step
 > [!div class="nextstepaction"]
 > [Configure and monitor sprint burndown](configure-sprint-burndown.md) or [Configure a burndown or burnup widget](configure-burndown-burnup-widgets.md)
 
-## Related articles
+## Related content
 
 - [View and configure velocity](team-velocity.md)
 - [Implement Scrum practices for your team in Azure Boards](../../boards/sprints/scrum-overview.md)

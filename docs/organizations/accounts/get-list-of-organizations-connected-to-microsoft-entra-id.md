@@ -64,7 +64,7 @@ To get started, see [Azure DevOps CLI](../../cli/index.md).
 
    This command lists all the tenants you have access to.
 
-2.  There's no direct Azure CLI command to list Azure DevOps organizations connected to a specific Microsoft Entra ID tenant.
+2. There's no direct Azure CLI command to list Azure DevOps organizations connected to a specific Microsoft Entra ID tenant.
     However, you can use the Azure DevOps REST API in combination with the Azure CLI.
 
    1. Set the Azure DevOps organization and project:

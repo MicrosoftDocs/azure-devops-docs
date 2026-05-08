@@ -61,7 +61,7 @@ For more information about the requirements to access Azure Test Plans, see [Cha
 > **Benefits of paying for Azure DevOps Server users through Basic + Test Plans in Azure DevOps Services:**
 > - Users can access both Azure DevOps Server and Azure DevOps Services for the same price.
 > - Pay monthly for users who need temporary access.
-> - Utilize all Azure purchasing options, including credit card, Cloud Solution Provider (CSP) partner, Enterprise Agreement, and more.
+> - Use all Azure purchasing options, including credit card, Cloud Solution Provider (CSP) partner, Enterprise Agreement, and more.
 >
 > **Important considerations:**
 > - Azure DevOps Server doesn't detect activities in Azure DevOps Services.

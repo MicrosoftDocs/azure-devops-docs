@@ -57,7 +57,7 @@ Analytics offers several advantages over legacy reporting solutions:
 
 Analytics is generally available for Azure DevOps Services and Azure DevOps Server 2020 and later versions. It is in preview for Azure DevOps Server 2019. The service provides a comprehensive data model over Azure DevOps functionality. 
 
-Data available via the Analytics service depends on your version and platform. For specifics, read [Data available in Analytics](./data-available-in-analytics.md) and [Data model for Analytics](../extend-analytics/data-model-analytics-service.md).
+Data available through the Analytics service depends on your version and platform. For specifics, read [Data available in Analytics](./data-available-in-analytics.md) and [Data model for Analytics](../extend-analytics/data-model-analytics-service.md).
 
 ### Data coverage by feature area
 
@@ -145,7 +145,7 @@ For more information, see [What are Analytics views?](what-are-analytics-views.m
 
 ## OData queries and metadata access
 
-Analytics provides full accessibility via OData (Open Data Protocol). From a web browser, you can query the Analytics metadata or data using OData queries, enabling programmatic access to your Azure DevOps data.
+Analytics provides full accessibility through OData (Open Data Protocol). From a web browser, you can query the Analytics metadata or data using OData queries, enabling programmatic access to your Azure DevOps data.
 
 ### OData capabilities
 
@@ -236,12 +236,12 @@ Analytics respects Azure DevOps security permissions:
 - **Read-only access**: Analytics provides read-only views of your data
 - **Azure AD integration**: Supports enterprise authentication and authorization
 
-## Next steps
+## Next step
 
 > [!div class="nextstepaction"]
 > [Data available in Analytics](./data-available-in-analytics.md) 
 
-## Related articles 
+## Related content 
 
 ::: moniker range="azure-devops"
 - [What are Analytics views?](what-are-analytics-views.md)   

@@ -118,13 +118,13 @@ Use Azure Boards tools to prioritize and refine your backlog, ensuring your requ
 
 ## Group and organize requirements
 
-Use Azure Boards to group your requirements by features or business objectives. Utilize portfolio work item types, portfolio backlogs and boards, and the Mapping tool to link requirements to higher-level work items.
+Use Azure Boards to group your requirements by features or business objectives. Use portfolio work item types, portfolio backlogs and boards, and the Mapping tool to link requirements to higher-level work items.
 
 You can also use work item tags to group requirements in different ways.
 
 ### Epics, features, and portfolio backlogs
 
-Use parent-child links to create a hierarchy of requirements, features, and epics. Parent-child links are useful for organizations with multiple teams that want to see how their work contributes to overall goals and utilize portfolio planning tools.
+Use parent-child links to create a hierarchy of requirements, features, and epics. Parent-child links are useful for organizations with multiple teams that want to see how their work contributes to overall goals and use portfolio planning tools.
 
 With a hierarchy, you can manage a set of features that different teams work on. You can also view summaries of estimates, progress, and more on the product backlogs.
 

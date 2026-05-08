@@ -1023,7 +1023,7 @@ Review the `STATES` section in the ProcessConfiguration.xml file for the named e
 
 #### Error example
 
-ProcessConfiguration.xml `RequirementBacklog` element is missing the state `New` which exists on the `User Story` work item type.  It should be in the `STATES` list mapped to `type=Proposed"`. 
+ProcessConfiguration.xml `RequirementBacklog` element is missing the state `New` which exists on the `User Story` work item type. It should be in the `STATES` list mapped to `type=Proposed"`. 
 
 ```xml
 <RequirementBacklog category="Microsoft.RequirementCategory" pluralName="Stories" singularName="Story">
@@ -1100,7 +1100,7 @@ Review [ProcessConfiguration XML element reference](../../../../reference/xml/pr
 
 ### TF402572: Cannot find specified file in the process template package.
 
-A file specified in a plug-in file for upload is missing from the zip file. Review all files specified for upload and make sure they're included in the process zip file.  
+A file specified in a plug-in file for upload is missing from the zip file. Review all files specified for upload and ensure they're included in the process zip file.  
 
 Review [ProcessConfiguration XML element reference](../../../../reference/xml/process-configuration-xml-element.md) for required elements.
 

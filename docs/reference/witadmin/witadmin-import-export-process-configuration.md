@@ -136,15 +136,15 @@ You can add fields for any quick add panel. For example, the following example a
 
 The panel only displays fields that are included in the `FIELDS` section of the WIT definition for the WIT selected. For example, if you select the bug WIT, then only Title displays, as Business Value isn't defined for bugs. To add another WIT to the panel, you add it to the Requirements Category. See [Add a work item type to a backlog and board](../add-wits-to-backlogs-and-boards.md).  
 
-1.  If you don't have administrative permissions for your project, [get them](../../organizations/security/change-organization-collection-level-permissions.md).  
+1. If you don't have administrative permissions for your project, [get them](../../organizations/security/change-organization-collection-level-permissions.md).  
 
-2.  Open a Command Prompt window according to the instructions provided in [How to run the witadmin command-line tool](#run-witadmin-tool). For example:   
+2. Open a Command Prompt window according to the instructions provided in [How to run the witadmin command-line tool](#run-witadmin-tool). For example:   
 
     ```
     cd %programfiles(x86)%\Microsoft Visual Studio\2017\Community\Common7\IDE\CommonExtensions\Microsoft\TeamFoundation\Team Explorer
     ```    
 
-3.  Export the process configuration file.  
+3. Export the process configuration file.  
 
     ```  
     witadmin exportprocessconfig /collection:CollectionURL /p:ProjectName /f:"DirectoryPath\ProcessConfiguration.xml"  
@@ -152,7 +152,7 @@ The panel only displays fields that are included in the `FIELDS` section of the 
 
     An example of a *CollectionURL* is http://MyServer:8080/tfs/TeamProjectCollectionName.  
 
-4.  Add the field reference name to the `AddPanel` section.  
+4. Add the field reference name to the `AddPanel` section.  
 
      For example, the following syntax adds the **Priority** element to the panel.  
 
@@ -169,13 +169,13 @@ The panel only displays fields that are included in the `FIELDS` section of the 
     > -  You can look up the reference name for a field using this [index](../../boards/work-items/guidance/work-item-field.md).    
     > -  Add all required fields for work item types defined for the Requirements Category. That way, you avoid having to open the work item form to fill them in when you add backlog items through the panel.  
 
-5.  Import the process configuration file.  
+5. Import the process configuration file.  
 
     ```  
     witadmin importprocessconfig /collection:CollectionURL /p:ProjectName /f:"DirectoryPath\ProcessConfiguration.xml"  
     ```  
 
-6.  Refresh your backlog page to view the updated panel.  
+6. Refresh your backlog page to view the updated panel.  
 
 <a name="test_manager"></a> 
 
@@ -251,7 +251,7 @@ The panel only displays fields that are included in the `FIELDS` section of the 
 >   </TestSuiteWorkItems>
 > ```
 
-If you modify the test suite workflow, then you have to make a similar update if you want to map new states. You would add it within a `TestSuiteWorkItems` section.  See [ProcessConfiguration](../xml/process-configuration-xml-element.md).  
+If you modify the test suite workflow, then you have to make a similar update if you want to map new states. You would add it within a `TestSuiteWorkItems` section. See [ProcessConfiguration](../xml/process-configuration-xml-element.md).  
 
 ## Q & A  
 
@@ -416,7 +416,7 @@ If you modify the test suite workflow, then you have to make a similar update if
 **A:** If you've added a custom work item type and want to add that to either the backlog or task board, you can. You just can't have them appear in both places. Learn how by reading [Add work item types to backlogs and boards](../add-wits-to-backlogs-and-boards.md).
 
 
-## Related articles
+## Related content
 - [Configure features after an upgrade](/previous-versions/azure/devops/reference/upgrade/configure-features-after-upgrade?view=tfs-2017&preserve-view=true) 
 - [Control XML element reference](/previous-versions/azure/devops/reference/xml/control-xml-element-reference?view=tfs-2015&preserve-view=true)   
 - [Edit a work item type definition to add web content to a work item form](..//xml/edit-wit-definition-add-web-content-form.md)

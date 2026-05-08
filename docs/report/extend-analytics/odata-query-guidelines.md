@@ -98,13 +98,13 @@ Queries that violate an OData error rule results in a failed response with a 400
 
 ### ✔️ DO limit the query to the project(s) you have access to
 
-If your query targets data from a project you don't have access to, the query returns a "Project access denied" message. To ensure that you have access, make sure your **View analytics** permission is set to Allow for all projects that you query. For more information, see [Permissions required to access Analytics](../powerbi/analytics-security.md).
+If your query targets data from a project you don't have access to, the query returns a "Project access denied" message. To ensure that you have access, ensure your **View analytics** permission is set to Allow for all projects that you query. For more information, see [Permissions required to access Analytics](../powerbi/analytics-security.md).
 
 If you don't have access to a project, the following message displays: 
 
 ><em>The query results include data in one or more projects for which you don't have access. Add one or more projects filters to specify the project(s) you have access to in 'WorkItems' entity. If you are using $expand or navigation properties, project filter is required for those entities.</em>
 
-<!---One of the core principles of Analytics is that one query returns the same result for all users of fails in a user does not have permissions to the data. There are no implicit filters added based on who runs the query. One consequence is that you, the query author, have to pay attention to project filters to make sure that the target audience can execute them. 
+<!---One of the core principles of Analytics is that one query returns the same result for all users of fails in a user does not have permissions to the data. There are no implicit filters added based on who runs the query. One consequence is that you, the query author, have to pay attention to project filters to ensure that the target audience can execute them. 
 
 If a query tries to access the data in a project for which you don't have access, you get the following error message.-->
 
@@ -202,7 +202,7 @@ To learn how to design efficient OData queries, refer to [Performance Guidelines
 
 Similar to exceeding usage limits, you should wait or stop the operation if your query comes across a timeout. It could signal a transient problem, so you may retry once to see if the problem resolves. However, persistent timeouts indicate that the query is probably too expensive to run. Further retries only result in exceeding usage limits and you get blocked.
 
->*TF400733: The request has been canceled: The request has exceeded request timeout, please try again.*
+>*TF400733: The request has been canceled: The request has exceeded request timeout, try again.*
 
 Timeouts indicate that a query requires optimization. To learn how to design efficient OData queries, see [Performance guidelines](#performance-guidelines) later in this article.
 
@@ -351,7 +351,7 @@ To resolve this problem, use the OData batch endpoint as explained in the specif
 
 We restrict use of the batch endpoint from handling a batch of multiple requests. A single request can still have only one query. If you try to send a batch of several queries, the operation fails with the following error message. The only solution is to split queries into multiple requests.
 
-*Analytics doesn't support processing of multiple operations that the current batch message contains. Analytics uses OData batch in order to support POST requests, but requires that you limit the operation to a single request.*
+*Analytics doesn't support processing of multiple operations that the current batch message contains. Analytics uses OData batch to support POST requests, but requires that you limit the operation to a single request.*
 
 <a name="odata_query_result_width_invalid"></a>
 
@@ -386,7 +386,7 @@ Another scenario that tends to generate long queries occurs when you include man
 
 The time zone (`Edm.DateTimeOffset`) exposes all date and time information with an offset that matches the [organization's time zone settings](../../organizations/accounts/change-time-zone.md). This data is precise and simple to interpret at the same time. Another nonobvious consequence is that all the filters have to pass the time zone information as well. If you skip it, you get the following error message.
 
-> *The query specified in the URI is not valid. No datetime offset was specified.  Please use either of these formats YYYY-MM-ddZ to specify everything since midnight or yyyy-MM-ddThh:mm-hh:mm (ISO 8601 standard representation of dates and times) to specify the offset.*
+> *The query specified in the URI is not valid. No datetime offset was specified. Use either of these formats YYYY-MM-ddZ to specify everything since midnight or yyyy-MM-ddThh:mm-hh:mm (ISO 8601 standard representation of dates and times) to specify the offset.*
 
 To solve this problem, add the time zone information. For example, assuming that the organization is configured to display data in "*(UTC-08:00) Pacific Time (US & Canada)*" time zone, the following query gets all the work items created since the beginning of 2020.
 
@@ -759,7 +759,7 @@ Host: analytics.dev.azure.com/{OrganizationName}
 ```
 If the dataset exceeds the limit of 1000 records, the query immediately fails with the following error.
 
-> *Query result contains 1,296 rows and it exceeds maximum allowed size of 1000. Please reduce the number of records by applying additional filters*
+> *Query result contains 1,296 rows and it exceeds maximum allowed size of 1000. Reduce the number of records by applying additional filters*
 
 For information about setting the max page size, see [ODataPreferenceHeader.MaxPageSize property](/dotnet/api/microsoft.odata.odatapreferenceheader.maxpagesize?view=odata-core-7.0&preserve-view=true).
 
@@ -897,7 +897,7 @@ Another useful annotation is `Org.OData.Capabilities.V1.ExpandRestrictions`, whi
 > </EntitySet>
 > ```
 
-## Related articles
+## Related content
 
 - [Construct OData queries for Analytics](../analytics/analytics-query-parts.md)
 - [Query work item tracking data](wit-analytics.md)

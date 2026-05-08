@@ -121,7 +121,7 @@ Limits for swimlane rules:
 - Only AND conditions are supported
 
 > [!NOTE]
-> Manual movement into lanes with configured rules might be restricted to ensure consistency. To move an item into a rule-managed lane, make sure the item meets the lane's rule criteria.
+> Manual movement into lanes with configured rules might be restricted to ensure consistency. To move an item into a rule-managed lane, ensure the item meets the lane's rule criteria.
 
 ### Swimlane rules—availability
 

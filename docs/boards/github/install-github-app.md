@@ -196,7 +196,7 @@ If you uninstall the Azure Boards app for GitHub, the following message displays
 
 :::image type="content" source="media/change-repo-access/boards-remove-connection.png" alt-text="Screenshot shows uninstalled Azure Boards GitHub app.":::
 
-## Next steps
+## Next step
 
 > [!div class="nextstepaction"]
 > [Link GitHub commits, pull requests, and branches to work items](link-to-from-github.md) 

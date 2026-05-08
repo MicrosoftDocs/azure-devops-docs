@@ -297,7 +297,7 @@ Set permissions for members who belong to a custom security group or for individ
 
 For examples that illustrate how to restrict modification of work items or select fields, see [Sample rule scenarios](../settings/work/rule-samples.md).   
 
-## Next steps
+## Next step
 
 > [!div class="nextstepaction"]
 > [Delete a user](/entra/fundamentals/how-to-create-delete-users#delete-a-user)

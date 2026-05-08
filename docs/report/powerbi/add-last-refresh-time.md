@@ -129,7 +129,7 @@ To add the last refresh date based on a Power BI or OData query, do the followin
    > [!TIP]
    > If the **To Table** option isn't available, you can use the following alternative steps to add the last refresh date and time to your reports:
    > 1. Select the **Home** tab and select **Get Data**. Choose **Blank Query** from the options.
-   > 2. In the Queries pane, right-select on the new query and select **Advanced Editor**. 
+   > 2. In the Queries pane, right-select the new query and select **Advanced Editor**. 
    > 3. To create a table with the current date and time, replace the existing code with the following code:
    > ```
    > let
@@ -163,7 +163,7 @@ Choose **Refresh** to refresh report page data and the data model. After all que
 
 :::image type="content" source="media/last-refresh/refresh-data.png" alt-text="Screenshot of the Power BI Desktop refresh option.":::
 
-## Related articles
+## Related content
 
 - [Learn about Power BI integration](overview.md)
 - [Create an Analytics view in Azure DevOps](analytics-views-create.md)

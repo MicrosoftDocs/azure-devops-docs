@@ -130,7 +130,7 @@ You can find additional functionality to add to your dashboard by installing Mar
 
  
 
-## Related articles
+## Related content
 
 - [About dashboards, charts, reports, & widgets](overview.md)
 - [FAQs on Azure DevOps dashboards, charts, and reports](faqs.yml)

@@ -78,8 +78,8 @@ az devops team update --team
 - `team`: Optional. Name or ID of a team.  
 - `description`: Optional. Description to apply to the team.  
 - `name`: Optional. Name to apply to rename the team.   
-- `org`: Optional. URL of organization. You can configure the default organization by using `az devops configure -d org=URL`. Required if not configured as default or picked up via git config.
-- `project`: Optional. Name or ID of the project. Example: `--project "Fabrikam Fiber"`. You can configure the default project by using `az devops configure -d project=NAME_OR_ID`. Required if not configured as default or picked up via git config.
+- `org`: Optional. URL of organization. You can configure the default organization by using `az devops configure -d org=URL`. Required if not configured as default or picked up through git config.
+- `project`: Optional. Name or ID of the project. Example: `--project "Fabrikam Fiber"`. You can configure the default project by using `az devops configure -d project=NAME_OR_ID`. Required if not configured as default or picked up through git config.
 
 #### Example
 

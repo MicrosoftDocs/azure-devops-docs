@@ -109,7 +109,7 @@ Ensure the following IP addresses are allowed for inbound connections on **port 
 > |  | North Europe | 20.166.41.0/24 |
 > | United Kingdom | United Kingdom South | 51.104.26.0/24 |  
 
-Azure Service Tags are supported only for *inbound* connections. Instead of allowing the previously listed IP ranges, you may use the **AzureDevOps** service tag for Azure Firewall and Network Security Group (NSG) or on-premises firewall via a JSON file download.  
+Azure Service Tags are supported only for *inbound* connections. Instead of allowing the previously listed IP ranges, you may use the **AzureDevOps** service tag for Azure Firewall and Network Security Group (NSG) or on-premises firewall through a JSON file download.  
 
 > [!NOTE]
 > The Service Tag or previously mentioned inbound IP addresses don't apply to Microsoft Hosted agents. Customers are still required to allow the [entire geography for the Microsoft Hosted agents](../../pipelines/agents/hosted.md#agent-ip-ranges). If allowing the entire geography is a concern, we recommend using the [Microsoft Managed DevOps Pools](../../managed-devops-pools/overview.md). Alternatively, you can also use [Azure Virtual Machine Scale Set agents](../../pipelines/agents/scale-set-agents.md). Managed DevOps Pools and Scale Set agents are a form of self-hosted agents that can be auto-scaled to meet your demands.  

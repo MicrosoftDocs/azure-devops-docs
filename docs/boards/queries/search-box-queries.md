@@ -70,7 +70,7 @@ Free text search searches across all work item fields, including custom fields, 
 3. Select a snippet of a work item and display it in the right window. 
 
    Open the search results in a new browser tab from a search box by
-   pressing _Ctrl_ + _Enter_ or by holding _Ctrl_ and clicking  the
+   pressing _Ctrl_ + _Enter_ or by holding _Ctrl_ and selecting  the
    ![start search icon](../../project/search/media/shared/start-search-icon.png) icon.
    In Google Chrome, press _Ctrl_ + _Shift_ + _Enter_ to switch the focus
    to the new browser tab. 

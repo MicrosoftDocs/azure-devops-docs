@@ -121,7 +121,7 @@ not allowed. To handle this scenario, you could expand the Project column in the
 
 Now you can list Areas by Project and get a count of Areas in each project.
 
-## Related articles
+## Related content
 
 - [Historical data representation in Analytics](analytics-historical-filtering.md)
 - [Data model for Analytics](../extend-analytics/data-model-analytics-service.md)

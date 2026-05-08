@@ -31,7 +31,7 @@ This article shows you how to configure your backlog view options—including ba
 | Configured backlogs | Both product and portfolio backlogs set up for your team. |
 
 > [!TIP]
-> You can't sort your backlog directly by clicking on a column header. To view a sorted list, select **Create query** from your backlog. Save and open the query, then modify it to a flat list query if needed to apply sorting to the results. For more information about queries, see [Use the query editor to list and manage queries](../queries/using-queries.md).
+> You can't sort your backlog directly by selecting on a column header. To view a sorted list, select **Create query** from your backlog. Save and open the query, then modify it to a flat list query if needed to apply sorting to the results. For more information about queries, see [Use the query editor to list and manage queries](../queries/using-queries.md).
 
 ## Backlog configuration options
 

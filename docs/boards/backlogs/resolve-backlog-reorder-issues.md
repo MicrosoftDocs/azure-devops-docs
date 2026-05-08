@@ -61,7 +61,7 @@ You might see an error similar to one of the following messages:
 To address this error, follow these steps:
 
 1. Open the work item listed in the error message.
-1. Look for a parent or child link. Make sure this link goes to a work item in the same category as the work item you opened. Look for a link that goes to another work item that appears on the same backlog level as the work item you opened. Depending on your team's bug behavior setting, bugs might appear with requirements or tasks.
+1. Look for a parent or child link. Ensure this link goes to a work item in the same category as the work item you opened. Look for a link that goes to another work item that appears on the same backlog level as the work item you opened. Depending on your team's bug behavior setting, bugs might appear with requirements or tasks.
 1. Remove the problem parent-child link. If you want to keep these items associated, use the *Related* link type instead.
 
 The message no longer displays.

@@ -190,6 +190,6 @@ The following image shows the resulting report.
 
 :::image type="content" source="media/reports-test-plans/test-plan-progress-donut-reports.png" alt-text="Screenshot of Power BI sample Test Plan Progress report.":::
  
-## Related articles
+## Related content
 
 [!INCLUDE [temp](includes/sample-related-articles-test.md)]

@@ -60,7 +60,7 @@ The following services are available as targets of service hooks. For more infor
 |[Slack](services/slack.md)   |  All | Post a message to a channel | In Azure DevOps |
 |[Trello](services/trello.md)  | All | Create a card or list | In Azure DevOps |
 |[UserVoice](https://www.uservoice.com) | Work item created, work item updated | Send a linked work item event | In UserVoice |
-|[Webhooks](services/webhooks.md) | All | Post a request via HTTP | In Azure DevOps |
+|[Webhooks](services/webhooks.md) | All | Post a request through HTTP | In Azure DevOps |
 |[Workplace messaging apps](services/workplace-messaging-apps.md) | All | Send a notification | In workplace messaging apps |
 |[Zapier](https://zapier.com/apps/webhook/integrations) | All | Send a notification | In Zapier |
 |[Zendesk](consumers.md#zendesk) | Work item commented on | Create a private comment in a ticket | In Azure DevOps |
@@ -82,7 +82,7 @@ The following services are available as targets of service hooks. For more infor
 |[Slack](services/slack.md)   |  All | Post a message to a channel | In Azure DevOps |
 |[Trello](services/trello.md)  | All | Create a card or list | In Azure DevOps |
 |[UserVoice](https://www.uservoice.com) | Work item created, work item updated | Send a linked work item event | In UserVoice |
-|[Webhooks](services/webhooks.md) | All | Post a request via HTTP | In Azure DevOps |
+|[Webhooks](services/webhooks.md) | All | Post a request through HTTP | In Azure DevOps |
 |[Zendesk](consumers.md#zendesk) | Work item commented on | Create a private comment in a ticket | In Azure DevOps |
 
 ::: moniker-end
@@ -153,7 +153,7 @@ A: Yes. You can revoke authorizations from your profile.
 
 1. Go to [https://visualstudio.microsoft.com](https://visualstudio.microsoft.com). Select your profile photo, and then select **Visual Studio profile**.
 
-   Make sure you start from the Visual Studio site, https://visualstudio.microsoft.com, when you manage authorizations. From that site, you can access the correct implementation of the authorizations management feature. Don't start from your organization (`https://dev.azure.com/{organization-name}`).
+   Ensure you start from the Visual Studio site, https://visualstudio.microsoft.com, when you manage authorizations. From that site, you can access the correct implementation of the authorizations management feature. Don't start from your organization (`https://dev.azure.com/{organization-name}`).
 
 1. Select **Manage authorizations**.
 	

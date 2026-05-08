@@ -23,7 +23,7 @@ WIQL supports all functions available through the web portal Query Editor plus a
 [!INCLUDE [ai-assistance-mcp-server-tip](../../includes/ai-assistance-mcp-server-tip.md)]
 
 > [!IMPORTANT]
-> WIQL syntax is used to execute the [Query By Wiql REST API](/rest/api/azure/devops/wit/wiql/query%20by%20wiql). The API only returns work item IDs, regardless of which fields you include in the `SELECT` statement. To get full information, (1) get the IDs from WIQL, then (2) get the work items via [Get a list of work items by ID and for specific fields](/rest/api/azure/devops/wit/work-items/list).
+> WIQL syntax is used to execute the [Query By Wiql REST API](/rest/api/azure/devops/wit/wiql/query%20by%20wiql). The API only returns work item IDs, regardless of which fields you include in the `SELECT` statement. To get full information, (1) get the IDs from WIQL, then (2) get the work items through [Get a list of work items by ID and for specific fields](/rest/api/azure/devops/wit/work-items/list).
 
 ## Prerequisites
 

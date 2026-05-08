@@ -134,7 +134,7 @@ Avoid running builds from forks on self-hosted agents. If you use self-hosted ag
 
 #### Review code changes
 
-Before you run your pipeline on a forked pull request, carefully review the proposed changes, and make sure you're comfortable running it.
+Before you run your pipeline on a forked pull request, carefully review the proposed changes, and ensure you're comfortable running it.
 
 The version of the YAML pipeline you run is the one from the pull request. Pay special attention to changes to the YAML code and to the code that runs when the pipeline runs, such as command line scripts or unit tests.
 
@@ -200,7 +200,7 @@ The Auditing service records many pipeline events.
 Review the audit log periodically to ensure no malicious changes slipped past.
 To get started, visit `https://dev.azure.com/ORG-NAME/_settings/audit`.
 
-## Next steps
+## Next step
 
 >[!div class="nextstepaction"]
 >[Review the security overview](overview.md)

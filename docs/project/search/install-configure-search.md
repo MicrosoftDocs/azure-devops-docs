@@ -153,7 +153,7 @@ If the Search service is on the same machine as Azure DevOps Server, administrat
 
 > [!NOTE]
 > * Credential values should both be between 8 and 64 characters in length.
-> * Search credentials only authenticate the users and make sure that unauthenticated users can't access the Elasticsearch endpoint. However, Elasticsearch doesn't support HTTPS and so these credentials get sent over the network as Base64 encoded strings. If there's a possibility of intermediate access to request, configure appropriate security settings based on your corporate security and compliance requirements.
+> * Search credentials only authenticate the users and ensure that unauthenticated users can't access the Elasticsearch endpoint. However, Elasticsearch doesn't support HTTPS and so these credentials get sent over the network as Base64 encoded strings. If there's a possibility of intermediate access to request, configure appropriate security settings based on your corporate security and compliance requirements.
 > * Aim to limit access to both searching and indexing to specific users or user groups using encryption through IPSec, described as follows. 
 
 Consider the following techniques for using IPSec to secure Elasticsearch on a Windows server:

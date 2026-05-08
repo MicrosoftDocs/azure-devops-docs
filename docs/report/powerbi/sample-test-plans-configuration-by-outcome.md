@@ -158,6 +158,6 @@ Your report should look similar to the following image.
 
 :::image type="content" source="media/odatapowerbi-configurationbyoutcome.png" alt-text="Screenshot of Power BI Sample Configuration by Outcome matrix report.":::
 
-## Related articles
+## Related content
 
 [!INCLUDE [temp](includes/sample-related-articles-test.md)]

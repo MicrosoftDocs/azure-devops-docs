@@ -196,7 +196,7 @@ Optionally, you can remove the link from the work item's **Links** tab.
 
 ## Create a query of dependencies 
 
-To open a set of dependent work items, select them in the same way you would via a [bulk edit](../backlogs/bulk-modify-work-items.md). Select the  :::image type="icon" source="../../media/icons/actions-icon.png" border="false"::: actions icon from one of the selected linked work items and choose **Open in Query** from the menu. 
+To open a set of dependent work items, select them in the same way you would through a [bulk edit](../backlogs/bulk-modify-work-items.md). Select the  :::image type="icon" source="../../media/icons/actions-icon.png" border="false"::: actions icon from one of the selected linked work items and choose **Open in Query** from the menu. 
 
 > [!div class="mx-imgBorder"]  
 > ![Screenshot of work item list, Create a query of dependencies.](media/tracker/open-as-query.png)

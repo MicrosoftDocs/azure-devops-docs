@@ -65,7 +65,7 @@ Common causes include:
 
 **For Microsoft-hosted agents with ASE:**
 
-Make sure your ASE network security rules allow inbound connections from the Microsoft-hosted agent IP ranges for your geography.
+Ensure your ASE network security rules allow inbound connections from the Microsoft-hosted agent IP ranges for your geography.
 For the list of IP address ranges, see [Allowed IP addresses and domain URLs](/azure/devops/organizations/security/allow-list-ip-url).
 
 **For self-hosted agents:**

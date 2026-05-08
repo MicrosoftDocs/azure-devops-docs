@@ -76,7 +76,7 @@ If you don't manage your user base with Microsoft Entra ID, as described in the 
    > [!div class="mx-imgBorder"]  
    > ![Screenshot shows Web portal, Project Overview page, Invite new users dialog box.](media/org-manage/invite-members-dialog.png)
   
-   Unless users are granted an access level directly or through a group rule, they get assigned the best available access level. If there are no more free Basic slots available, the user gets added with Stakeholder access. You can change the access level later via the **Organization settings** > **Users** page.
+   Unless users are granted an access level directly or through a group rule, they get assigned the best available access level. If there are no more free Basic slots available, the user gets added with Stakeholder access. You can change the access level later through the **Organization settings** > **Users** page.
 
 > [!TIP]
 > If you need more than the free users and services included with your organization,
@@ -107,7 +107,7 @@ To add users through Microsoft Entra ID, do the following tasks:
 
 ### Group rules
 
-A best practice for managing users is to use security groups. You can utilize default security groups, create custom security groups, or reference Microsoft Entra groups. These groups allow you to add and manage user access levels using group rules. For more information, see [Add a group rule to assign access levels and extensions](assign-access-levels-by-group-membership.md).
+A best practice for managing users is to use security groups. You can use default security groups, create custom security groups, or reference Microsoft Entra groups. These groups allow you to add and manage user access levels using group rules. For more information, see [Add a group rule to assign access levels and extensions](assign-access-levels-by-group-membership.md).
 
 ## Other organization management tasks
 

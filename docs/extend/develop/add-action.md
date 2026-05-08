@@ -104,7 +104,7 @@ Your menu action is represented by a JavaScript script embedded in an HTML file.
 
 [!INCLUDE [tip-for-more-information](../includes/tip-for-more-information.md)]
 
-## Next steps
+## Next step
 
 Package, publish, and install your extension.
 

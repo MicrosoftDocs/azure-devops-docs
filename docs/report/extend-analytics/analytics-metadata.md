@@ -222,13 +222,13 @@ Aggregation annotations define the set of [transformations](./odata-supported-fe
 > </Annotation>
 > ```
 
-## Next steps
+## Next step
 
 > [!div class="nextstepaction"]
 > [Data model for Analytics](data-model-analytics-service.md)
  
 
-## Related articles
+## Related content
 
 - [Data model for Analytics](data-model-analytics-service.md)
 - [Organization and project-scoped queries](account-scoped-queries.md).

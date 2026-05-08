@@ -69,7 +69,7 @@ For more information, see [Create inherited process](manage-process.md#create-an
 
    :::image type="content" source="media/process/cpfield-bug-customer-ticket-options.png" alt-text="Screenshot shows the Options page where you can make the field required and specify a default value.":::
 
-   If a field is required, users must specify a value for the field in order to save it. The default value you specify is set when you create a work item and every time a work item is opened and the field is empty.
+   If a field is required, users must specify a value for the field to save it. The default value you specify is set when you create a work item and every time a work item is opened and the field is empty.
 
    <a id="layout">  </a>
 1. (Optional) On the **Layout** tab, you can enter a different form label than the name of the field. Also, you can choose the page and group where the field appears on the form.  
@@ -117,7 +117,7 @@ We recommend that you create a test project and apply your customized inherited 
 
 	:::image type="content" source="media/process/add-custom-wit-verify-ticket.png" alt-text="Screenshot shows Work Items with New Work Item selected and the custom Ticket item highlighted."::: 
 
-	If you don't see the custom WIT, refresh your browser to make sure it registers all the custom changes. 
+	If you don't see the custom WIT, refresh your browser to ensure it registers all the custom changes. 
 
 1. Verify that the field you added appears on the form. The :::image type="icon" source="../../../media/icons/required-icon.png" border="false"::: (exclamation mark) icon indicates the field is required.  
 

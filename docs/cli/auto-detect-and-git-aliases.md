@@ -59,7 +59,7 @@ Say a customer runs the following commands
 ~/$ az repos list --organization=https://dev.azure.com/contosoTest --project=testApplication
 ````
 
-The organization and project parameter provided via command will be used since command parameters take top priority.
+The organization and project parameter provided through command will be used since command parameters take top priority.
 
 Let's have a look at another example. Say a user has pre-configured the default organization to `contoso` and project to `webApp`. However, the user is working out of a local checkout of a git repo, which is in the `contosoTest` organization and `testApplication` project. Further, `--detect` is `true` by default. 
 

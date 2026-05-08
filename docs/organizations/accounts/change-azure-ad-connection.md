@@ -41,7 +41,7 @@ If you [add any new custom domains](/azure/active-directory/fundamentals/add-cus
 >
 > - **Microsoft Entra groups**: The system doesn't transfer Microsoft Entra groups added to your Azure DevOps organization when you change the Microsoft Entra connection. These groups cease to exist in your organization. All permissions and membership relationships associated with these Microsoft Entra groups also cease to exist after you complete the transfer.
 > - **Project access**: If you grant access to projects through membership in a Microsoft Entra group, users lose this access and you must grant access individually or through different groups in the new directory.
-> - **License assignment**: If you assign licenses via Microsoft Entra group-based licensing rules, these assignments are lost when you transfer.
+> - **License assignment**: If you assign licenses through Microsoft Entra group-based licensing rules, these assignments are lost when you transfer.
 
 <a name='change-the-azure-ad-connection'></a>
 

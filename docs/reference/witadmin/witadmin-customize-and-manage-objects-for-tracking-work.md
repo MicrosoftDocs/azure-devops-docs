@@ -485,7 +485,7 @@ Customize the resolution types, bug work item type, and failure types used with 
 
 ::: moniker-end
 
-## Related articles
+## Related content
 
 ::: moniker range="azure-devops"
 

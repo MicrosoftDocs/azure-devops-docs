@@ -166,7 +166,7 @@ To add reports to your on-premises Azure DevOps Server deployment, see [Add repo
   
     For more information about adding fields, see [Modify a field or add a custom field](../add-modify-field.md).  
   
-- Determine the unit of time you use to track work and make sure your team or organization uses it consistently. For example, you can track tasks by using hours or days.    
+- Determine the unit of time you use to track work and ensure your team or organization uses it consistently. For example, you can track tasks by using hours or days.    
 - Decide if you want to make rollup values read-only on the work item form. By making them read-only, you prevent users from entering inaccurate data. Use the `Control` field `Readonly` attribute to make fields read-only.  
   
 ## Q & A  

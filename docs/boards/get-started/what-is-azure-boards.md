@@ -46,7 +46,7 @@ The following table summarizes key benefits.
 |--------|--------|
 | Start simply, scale as you grow | Use predefined work item types for features, user stories, bugs, and tasks to get started quickly. Support different agile methods and add teams as your organization grows so each team can manage its own backlog and boards. |
 | Use visual, interactive tools | Visualize work with [Boards](../boards/kanban-quickstart.md), [Backlogs](../backlogs/create-your-backlog.md), Scrum planning tools, and [Delivery Plans](../plans/review-team-plans.md). |
-| Customize easily | Configure boards, taskboards, and delivery plans through the UI. Add custom fields, work item types, and portfolio backlogs via the process settings. |
+| Customize easily | Configure boards, taskboards, and delivery plans through the UI. Add custom fields, work item types, and portfolio backlogs through the process settings. |
 | Built-in collaboration | Use work item forms to capture discussions and decisions. Bring teammates into conversations with @mentions and maintain a history of changes. |
 | Capture information and attachments | Store detailed work descriptions, inline images, and attachments (up to 60 MB per file; up to 100 attachments per work item). Link work items to other items to build hierarchies and traceability. |
 | Find what you need and get notified | Follow work items, use pivot views for items assigned to you, run queries to filter by fields, and subscribe to notifications for changes. |
@@ -86,7 +86,7 @@ Define teams by name, members, and area paths. Teams let you scope Boards, Backl
 
 :::image type="content" source="../../organizations/settings/media/agile-tools/agile-tools-team-assets.png" border="false" alt-text="Conceptual diagram showing team tools for planning, tracking, collaboration, monitoring, and learning.":::
 
-Azure Boards integrates with chat tools such as [Microsoft Teams](../integrations/boards-teams.md) and [Slack](../integrations/boards-slack.md) and supports Marketplace extensions to add capabilities via the [Azure DevOps Marketplace](https://marketplace.visualstudio.com/azuredevops).
+Azure Boards integrates with chat tools such as [Microsoft Teams](../integrations/boards-teams.md) and [Slack](../integrations/boards-slack.md) and supports Marketplace extensions to add capabilities through the [Azure DevOps Marketplace](https://marketplace.visualstudio.com/azuredevops).
 
 ## New Azure Boards
 

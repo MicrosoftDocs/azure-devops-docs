@@ -132,7 +132,7 @@ The **Auditing** page provides a simple view into the audit events recorded for 
 |Category     | Description of the type of action that occurred (for example, modify, rename, create, delete, remove, execute, and access event).   |
 |Details    | Brief description of what happened during the event.        |
 
-Each audit event also records additional information beyond what's available on the **Auditing** page. This information includes the authentication mechanism, a correlation ID to link similar events together, user agent, and more data depending on the audit event type. You can access this information only by exporting the auditing events via CSV or JSON.
+Each audit event also records additional information beyond what's available on the **Auditing** page. This information includes the authentication mechanism, a correlation ID to link similar events together, user agent, and more data depending on the audit event type. You can access this information only by exporting the auditing events through CSV or JSON.
 
 ### ID and correlation ID
 

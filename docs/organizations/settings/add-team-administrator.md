@@ -139,7 +139,7 @@ From the **Administrators** section, choose ![delete icon](../../media/icons/del
 
 ::: moniker-end
 
-## Next steps  
+## Next step  
 
 > [!div class="nextstepaction"]
 > [Manage teams and configure team tools](manage-teams.md) 

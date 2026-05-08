@@ -528,7 +528,7 @@ Your report should look similar to the following image.
 
 [!INCLUDE [temp](includes/pipeline-test-task-resources.md)]
 
-## Related articles
+## Related content
 
 [!INCLUDE [temp](includes/sample-related-articles-pipelines.md)]
 

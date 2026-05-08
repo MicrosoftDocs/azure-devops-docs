@@ -31,7 +31,7 @@ These scripts are examples provided for convenience. Review them, test in a nonp
 | Category | Description |
 |---|---|
 | Azure DevOps | - An Azure DevOps organization and project. [Create one for free](../../user-guide/sign-up-invite-teammates.md).<br>- **Permissions:** Organization Owner or Project Collection Administrator for organization-level scripts; Project Administrator for project-level operations |
-| Authentication | Microsoft Entra ID tokens. Scripts acquire tokens via Azure CLI: `az account get-access-token --resource 499b84ac-1321-427f-aa17-267ca6975798`. Ensure you're logged in with `az login` |
+| Authentication | Microsoft Entra ID tokens. Scripts acquire tokens through Azure CLI: `az account get-access-token --resource 499b84ac-1321-427f-aa17-267ca6975798`. Ensure you're logged in with `az login` |
 | Tools | - Azure CLI (`az`) and PowerShell (`pwsh`) required<br>- Scripts written for PowerShell 7+; adapt for Windows PowerShell<br>- Azure PowerShell module (`Install-Module -Name Az`) for some scripts |
 | Safety | - Test in nonproduction organization first<br>- Reassign or close active work before removing users<br>- Review project visibility prerequisites before making projects public<br>- Keep audit trail of automated changes |
 | Security | - Store credentials and tokens securely (Key Vault or pipeline secret variables)<br>- Revoke tokens/service principals after bulk operations if credential rotation needed |
@@ -503,9 +503,9 @@ foreach ($pkg in $packageJsons) {
             $name = $prop.Name
             $info = $prop.Value
             $sev  = To-Severity $info.severity
-            $via  = $info.via
-            if ($via -is [System.Collections.IEnumerable]) {
-              $viaText = ($via -join ", ")
+            $through  = $info.via
+            if ($through -is [System.Collections.IEnumerable]) {
+              $viaText = ($through -join ", ")
             } else {
               $viaText = "$via"
             }
@@ -578,7 +578,7 @@ try {
     $tokenResponse = az account get-access-token --resource $resourceUrl --output json
     
     if ($LASTEXITCODE -ne 0) {
-        Write-Error "Failed to get access token. Make sure you're logged in with 'az login'"
+        Write-Error "Failed to get access token. Ensure you're logged in with 'az login'"
         exit 1
     }
     
@@ -609,7 +609,7 @@ try {
 }
 catch {
     Write-Error "Failed to get project details: $($_.Exception.Message)"
-    Write-Error "Make sure the organization name and project ID are correct, and you have proper permissions"
+    Write-Error "Ensure the organization name and project ID are correct, and you have proper permissions"
     exit 1
 }
 
@@ -684,7 +684,7 @@ try {
         } while ($attempt -lt $maxAttempts)
         
         if ($attempt -ge $maxAttempts) {
-            Write-Warning "Operation status check timed out. Please verify the change manually in Azure DevOps."
+            Write-Warning "Operation status check timed out. Verify the change manually in Azure DevOps."
         }
     }
     else {
@@ -764,7 +764,7 @@ try {
     $tokenResponse = az account get-access-token --resource $resourceUrl --output json
     
     if ($LASTEXITCODE -ne 0) {
-        Write-Error "Failed to get access token. Make sure you're logged in with 'az login'"
+        Write-Error "Failed to get access token. Ensure you're logged in with 'az login'"
         exit 1
     }
     
@@ -897,7 +897,7 @@ try {
             Write-Error "Access denied. You need appropriate permissions to manage group memberships."
         }
         elseif ($errorMessage -like "*404*" -or $errorMessage -like "*Not Found*") {
-            Write-Error "Group or member not found. Please verify the IDs are correct."
+            Write-Error "Group or member not found. Verify the IDs are correct."
         }
         else {
             Write-Error "Failed to remove member from group: $errorMessage"
@@ -941,7 +941,7 @@ try {
     $tokenResponse = az account get-access-token --resource $resourceUrl --output json
     
     if ($LASTEXITCODE -ne 0) {
-        Write-Error "Failed to get access token. Make sure you're logged in with 'az login'"
+        Write-Error "Failed to get access token. Ensure you're logged in with 'az login'"
         exit 1
     }
     
@@ -1005,7 +1005,7 @@ foreach ($workItemId in $workItemIds) {
         )
         
         # Add a comment about the reassignment
-        $comment = "Work item reassigned from '$currentAssignee' to '$newAssignee' via automation on $(Get-Date -Format 'yyyy-MM-dd HH:mm:ss')"
+        $comment = "Work item reassigned from '$currentAssignee' to '$newAssignee' through automation on $(Get-Date -Format 'yyyy-MM-dd HH:mm:ss')"
         $updatePayload += @{
             op = "add"
             path = "/fields/System.History"

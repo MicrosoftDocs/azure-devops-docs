@@ -120,7 +120,7 @@ Complete the following steps to restore a complete wiki with the REST API.
     ```
 
 The repository contents restore.
-If the wiki UI doesn't reappear automatically, publish the restored repo as a wiki or create a wiki via the Wiki REST API to [re-register it with the project](#reassociate-a-restored-wiki).
+If the wiki UI doesn't reappear automatically, publish the restored repo as a wiki or create a wiki through the Wiki REST API to [re-register it with the project](#reassociate-a-restored-wiki).
 
 ## Restore a wiki page
 
@@ -159,7 +159,7 @@ The recycle-bin restore recovers the Git repository (wiki pages and history) but
 
 If the wiki doesn't appear after you restore the repo, you have two options:
 
-#### Option 1: Republish via UI
+#### Option 1: Republish through UI
 
 1. Go to **Overview** > **Wiki** in your project.
 1. If no wiki appears, select **Publish code as wiki**.

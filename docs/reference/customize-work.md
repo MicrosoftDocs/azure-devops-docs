@@ -640,11 +640,11 @@ Before implementing customizations, consider:
 4. **Alternative solutions**: Evaluate if existing features meet your needs
 5. **Migration path**: Plan for future updates and migrations
 
-## Next steps
+## Next step
 > [!div class="nextstepaction"]
 > [Configure and customize Azure Boards](../boards/configure-customize.md?toc=/azure/devops/reference/toc.json&bc=/azure/devops/reference/breadcrumb/toc.json)  
 
-## Related articles
+## Related content
  
 - [Work item field index](../boards/work-items/guidance/work-item-field.md)
 - [witAdmin command-line tool](witadmin/witadmin-customize-and-manage-objects-for-tracking-work.md)
