@@ -355,11 +355,8 @@ The following table summarizes which team owns different types of issues. Use th
 | AI agent fails before tool call | AI assistant provider | Orchestration issue, not Azure DevOps |
 | VS Code or Visual Studio configuration | Azure DevOps | Supported first-party clients |
 
-For a detailed breakdown, see [Remote MCP Server support boundaries](remote-mcp-server-support-boundaries.md).
-
 ## Related content
 
 - [Set up the remote Azure DevOps MCP Server (preview)](remote-mcp-server.md)
-- [Remote MCP Server support boundaries](remote-mcp-server-support-boundaries.md)
 - [Azure DevOps MCP Server overview](mcp-server-overview.md)
 - [Azure DevOps MCP Server GitHub repository](https://github.com/microsoft/azure-devops-mcp)
