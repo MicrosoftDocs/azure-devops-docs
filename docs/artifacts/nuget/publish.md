@@ -16,9 +16,14 @@ This article guides you through setting up your project and publishing your NuGe
 
 ## Prerequisites
 
-| **Product**        | **Requirements**                                                                                                                                                                                                                                                                                                                        |
-|--------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **Azure DevOps**   | - An Azure DevOps [organization](../../organizations/accounts/create-organization.md).<br>- An Azure DevOps [project](../../organizations/projects/create-project.md).<br> - An Azure Artifacts [feed](../get-started-nuget.md#create-a-feed).<br> - Download and install the [Azure Artifacts Credential Provider](https://github.com/microsoft/artifacts-credprovider).<br> - The latest [NuGet version](https://www.nuget.org/downloads). |
+| **Product**        | **Requirements**       |
+|--------------------|------------------------|
+| **Azure DevOps**   | - An Azure DevOps [organization](../../organizations/accounts/create-organization.md).<br>- An Azure DevOps [project](../../organizations/projects/create-project.md).<br> - An Azure Artifacts [feed](../get-started-nuget.md#create-a-feed).<br> - Download and install [nuget.exe](https://www.nuget.org/downloads) version `4.8.0.5385` or later. We recommend NuGet *5.5.x* or later, which includes important bug fixes for cancellations and timeouts. |
+
+
+## Set up the Azure Artifacts Credential Provider
+
+[!INCLUDE [](includes/install-credential-provider-nuget.md)]
 
 ## Connect to a feed
 
