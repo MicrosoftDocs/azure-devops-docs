@@ -2,3 +2,5 @@
   href: mcp-server-overview.md
 - name: Remote MCP Server (preview)
   href: remote-mcp-server.md
+- name: Troubleshoot the remote MCP Server
+  href: remote-mcp-server-troubleshooting.md

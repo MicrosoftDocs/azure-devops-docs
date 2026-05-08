@@ -366,6 +366,8 @@ If the AI assistant returns results from your Azure DevOps organization, the rem
 | **No data returned** | Confirm you have appropriate permissions for the project or resources being queried. |
 | **Preview not available** | The preview is rolling out gradually. Check back later or contact your organization administrator. |
 
+For more troubleshooting help, see [Troubleshoot the remote Azure DevOps MCP Server](remote-mcp-server-troubleshooting.md).
+
 For support, you can create an issue in the [local MCP Server](https://github.com/microsoft/azure-devops-mcp/issues/new?template=remote-mcp-server-issue.md) repo. Be sure to use the **Remote** issue template.
 
 ## FAQ
@@ -384,5 +386,6 @@ AgentId support is coming soon.
 
 ## Related content
 
+- [Troubleshoot the remote Azure DevOps MCP Server](remote-mcp-server-troubleshooting.md)
 - [Azure DevOps MCP Server overview](mcp-server-overview.md)
 - [Azure DevOps MCP Server GitHub repository](https://github.com/microsoft/azure-devops-mcp)
