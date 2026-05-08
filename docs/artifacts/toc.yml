@@ -61,18 +61,18 @@
   items:
   - name: NuGet
     items:
-    - name: Project setup (NuGet.exe)
-      displayName: publish, nuget, package
-      href: nuget/nuget-exe.md
-    - name: Publish NuGet packages (NuGet.exe)
-      displayName: publish, nuget, package
-      href: nuget/publish.md
     - name: Project setup (dotnet)
-      displayName: dotnet package, authenticate
       href: nuget/dotnet-setup.md
+      displayName: dotnet package, authenticate
     - name: Publish NuGet packages (dotnet)
-      displayName: dotnet, publish, packages
       href: nuget/dotnet-exe.md
+      displayName: dotnet, publish, packages
+    - name: Project setup (NuGet.exe)
+      href: nuget/nuget-exe.md
+      displayName: publish, nuget, package
+    - name: Publish NuGet packages (NuGet.exe)
+      href: nuget/publish.md
+      displayName: publish, nuget, package
     - name: Publish from GitHub Actions
       displayName: github, actions, publish
       href: quickstarts/github-actions.md
@@ -138,21 +138,21 @@
   items:
   - name: NuGet
     items:
-    - name: Project setup (NuGet.exe)
-      displayName: nuget package, artifacts feeds, publish packages, download packages
-      href: nuget/nuget-exe.md
-    - name: Restore NuGet packages (NuGet.exe)
-      displayName: nuget, restore
-      href: nuget/restore-nuget-packages-nuget-exe.md
     - name: Project setup (dotnet)
-      displayName: dotnet package, authenticate
       href: nuget/dotnet-setup.md
+      displayName: dotnet, authenticate, connect
     - name: Restore NuGet packages (dotnet)
-      displayName: dotnet, restore
       href: nuget/restore-nuget-packages-dotnet.md
+      displayName: dotnet, restore
+    - name: Project setup (NuGet.exe)
+      href: nuget/nuget-exe.md
+      displayName: nuget, authenticate, connect
+    - name: Restore NuGet packages (NuGet.exe)
+      href: nuget/restore-nuget-packages-nuget-exe.md
+      displayName: nuget, restore
     - name: Install NuGet packages with Visual Studio
-      displayName: install package, nuget, visual studio
       href: nuget/install-nuget-packages-with-visual-studio.md
+      displayName: install package, nuget, visual studio
   - name: npm
     items:
     - name: Project setup
