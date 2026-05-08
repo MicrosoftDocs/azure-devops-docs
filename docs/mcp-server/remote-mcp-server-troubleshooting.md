@@ -98,7 +98,7 @@ The remote MCP Server uses Microsoft Entra ID (OAuth) for authentication. Person
 
 ### Conditional Access policies block access
 
-**Symptom:** Sign-in is blocked by a Microsoft Entra Conditional Access policy.
+**Symptom:** A Microsoft Entra Conditional Access policy blocks your sign-in.
 
 **Resolution:**
 
@@ -130,9 +130,9 @@ If either step is missing, access fails. Treat this issue the same as a standard
 
 | Error code | Meaning | Action |
 |---|---|---|
-| `AADSTS50076` | Multi-factor authentication required | Complete the MFA prompt |
+| `AADSTS50076` | Multifactor authentication required | Complete the MFA prompt |
 | `AADSTS700016` | Application not found in tenant | Verify your tenant configuration |
-| `AADSTS65001` | User or admin hasn't consented | Request admin consent for the application |
+| `AADSTS65001` | User or admin didn't consent | Request admin consent for the application |
 | `AADSTS50105` | User not assigned to the application | Contact your admin to assign access |
 
 For a full list of error codes, see [Microsoft Entra authentication and authorization error codes](/entra/identity-platform/reference-error-codes).
@@ -150,7 +150,7 @@ Verify your `mcp.json` uses the correct format for the remote server:
 - **Remote server** uses `"type": "http"` and `"url"`.
 - **Local server** uses `"type": "stdio"`, `"command"`, and `"args"`.
 
-Don't mix remote and local configuration formats. If you have both a remote and local server configured, ensure they use different server names:
+Don't mix remote and local configuration formats. If you configure both a remote and local server, ensure they use different server names.
 
 ```json
 {
@@ -174,10 +174,10 @@ Don't mix remote and local configuration formats. If you have both a remote and 
 
 **Resolution:**
 
-- Don't combine `X-MCP-Toolsets` and `X-MCP-Tools` headers — they're mutually exclusive.
+- Don't combine `X-MCP-Toolsets` and `X-MCP-Tools` headers—they're mutually exclusive.
 - Verify the toolset names are correct: `repos`, `wit`, `wiki`, `pipelines`, `work`, `testplan`.
 - When using `X-MCP-Tools`, specify exact tool names separated by commas.
-- Check for typos in header names — headers are case-sensitive.
+- Check for typos in header names - headers are case-sensitive.
 
 ```json
 {
@@ -213,15 +213,15 @@ Verify the header value is the string `"true"`:
 
 ### Tools not appearing in the AI assistant
 
-**Symptom:** After connecting the remote MCP Server, no Azure DevOps tools appear in your AI assistant.
+**Symptom:** After you connect the remote MCP Server, no Azure DevOps tools appear in your AI assistant.
 
 **Resolution:**
 
 1. Confirm the server status shows as connected in your IDE.
    - In VS Code, check the MCP server status in the Output panel (**View** > **Output** > select **GitHub Copilot** or **MCP** from the dropdown).
 1. Reload the VS Code window (**Ctrl+Shift+P** > **Developer: Reload Window**).
-1. Verify you're in **agent mode** in GitHub Copilot — MCP tools only appear in agent mode, not in chat mode.
-1. Check that you haven't exceeded the 128-tool limit. If you have multiple MCP servers configured, the combined tool count might exceed this limit.
+1. Verify you're in **agent mode** in GitHub Copilot—MCP tools only appear in agent mode, not in chat mode.
+1. Check that you don't exceed the 128-tool limit. If you have multiple MCP servers configured, the combined tool count might exceed this limit.
 
 ### Missing required parameter errors
 
@@ -229,7 +229,7 @@ Verify the header value is the string `"true"`:
 
 **Resolution:**
 
-This is the most commonly reported error and is expected behavior. Many tools require a project name or other context:
+This error is the most commonly reported error and is expected behavior. Many tools require a project name or other context:
 
 - Include the project name in your prompt: "List work items in the **Contoso** project."
 - If you omitted the organization from your URL, include the organization in your prompt too.
@@ -263,7 +263,7 @@ This is the most commonly reported error and is expected behavior. Many tools re
 
 **Resolution:**
 
-Add "Do not use previously fetched data" to your prompt to force a fresh query. AI assistants might cache tool results within a conversation session.
+Add "Don't use previously fetched data" to your prompt to force a fresh query. AI assistants might cache tool results within a conversation session.
 
 ### Agent fails before tool call
 
@@ -285,7 +285,7 @@ This issue is outside the Azure DevOps MCP boundary. The failure occurs in the A
 
 **Resolution:**
 
-This is a known platform limitation. Microsoft Entra ID doesn't currently support dynamic client registration, which these non-Microsoft clients require.
+Non-Microsoft clients can't authenticate with the remote MCP Server because Microsoft Entra ID doesn't currently support dynamic client registration, which these clients require.
 
 **Currently supported clients:**
 - Visual Studio Code
@@ -321,7 +321,7 @@ No. The remote MCP Server requires your Azure DevOps organization to be connecte
 
 ### Can I use both remote and local MCP Servers at the same time?
 
-Yes, but give them different server names in your `mcp.json`. Be aware that running both servers might contribute to the 128-tool limit. Consider using [toolset headers](remote-mcp-server.md#toolsets) to limit the remote server's tools.
+Yes, but give them different server names in your `mcp.json`. Running both servers might contribute to the 128-tool limit. Consider using [toolset headers](remote-mcp-server.md#toolsets) to limit the remote server's tools.
 
 ### Why do I see different tools with the remote vs. local server?
 
@@ -337,7 +337,7 @@ The remote server accesses the same Azure DevOps data as the REST API, scoped to
 
 ### How do I report an issue with the remote MCP Server?
 
-Create an issue using the [Remote MCP Server issue template](https://github.com/microsoft/azure-devops-mcp/issues/new?template=remote-mcp-server-issue.md) in the Azure DevOps MCP Server GitHub repository.
+Create an issue by using the [Remote MCP Server issue template](https://github.com/microsoft/azure-devops-mcp/issues/new?template=remote-mcp-server-issue.md) in the Azure DevOps MCP Server GitHub repository.
 
 ## Related content
 
