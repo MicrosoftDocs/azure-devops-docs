@@ -15,9 +15,9 @@ ms.date: 04/04/2022
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)] 
 
-Several features depend on the project, repository, or team that you have selected. For example, dashboards, backlogs, and board views will change depending on the project and team you select.
+Several features depend on the project, repository, or team that you select. For example, dashboards, backlogs, and board views change depending on the project and team you select.
 
-Also, when you add a work item, the system references the default area and iteration paths defined for the team context. Work items you add from the team dashboard (new work item widget) and queries page are assigned the team default iteration. Work items you add from a team backlog or board, are assigned the team default backlog iteration. For more information, see [About teams and Agile tools](../../organizations/settings/about-teams-and-settings.md).  
+When you add a work item, the system references the default area and iteration paths defined for the team context. Work items you add from the team dashboard (new work item widget) and queries page are assigned the team default iteration. Work items you add from a team backlog or board are assigned the team default backlog iteration. For more information, see [About teams and Agile tools](../../organizations/settings/about-teams-and-settings.md).  
 
 ## Prerequisites 
  
@@ -26,7 +26,7 @@ Also, when you add a work item, the system references the default area and itera
 ::: moniker range="azure-devops"  
 
 > [!NOTE]  
-> If the **Limit user visibility and collaboration to specific projects** preview feature is enabled for the organization, users added to the **Project-Scoped Users** group won't be able to access projects that they haven't been added to. For more information including important security-related call-outs, see [Manage your organization, Limit  user visibility for projects and more](../../user-guide/manage-organization-collection.md#project-scoped-user-group). 
+> If the **Limit user visibility and collaboration to specific projects** preview feature is enabled for the organization, users added to the **Project-Scoped Users** group can't access projects that they aren't added to. For more information, including important security-related call-outs, see [Manage your organization, Limit  user visibility for projects and more](../../user-guide/manage-organization-collection.md#project-scoped-user-group). 
 
 ::: moniker-end  
 
@@ -34,28 +34,28 @@ Also, when you add a work item, the system references the default area and itera
 
 ## View and open a project 
 
-From the **Projects** page you can quickly navigate to a project that you have permissions to view. 
+From the **Projects** page, you can quickly go to a project that you have permission to view. 
 
 ::: moniker range="<=azure-devops"
 
-1. Choose the :::image type="icon" source="../../media/icons/project-icon.png" border="false"::: Azure DevOps logo to open **Projects**.  
+1. Select the :::image type="icon" source="../../media/icons/project-icon.png" border="false"::: Azure DevOps logo to open **Projects**.  
 
 	> [!div class="mx-imgBorder"]  
 	> ![Screenshot showing web portal, Azure DevOps logo.](../../media/settings/open-projects-page-vert-brn.png)
 
-	The projects you most recently viewed are displayed, followed by a list of all projects in alphabetic order. 
+	The projects you most recently viewed are displayed, followed by a list of all projects in alphabetical order. 
 
 1. Hover over the dots and you can open the service of interest for that project. 
 
 	> [!div class="mx-imgBorder"]  
 	> ![Screenshot showing opening the service of interest for that project.](media/projects-page/projects-page-vert.png)
 
-1. You can filter the project and team list using the *Filter projects* search box. type a keyword contained within the name of a project or team. Here we type **Fabrikam** to find all projects or teams with *Fabrikam* in their name. 
+1. You can filter the project and team list by using the *Filter projects* search box. Enter a keyword contained within the name of a project or team. In this example, enter **Fabrikam** to find all projects or teams with *Fabrikam* in their name. 
 
 	> [!div class="mx-imgBorder"]  
 	> ![Screenshot showing Projects page, filter on Fabrikam.](media/projects-page/filter-projects-vert.png) 
 
-1. Choose **Create Project** to add a project. Be an account administrator or a member of the Project Collection Administrators group to [add a project](../../organizations/projects/create-project.md).
+1. Select **Create Project** to add a project. Be an account administrator or a member of the Project Collection Administrators group to [add a project](../../organizations/projects/create-project.md).
 
 	> [!div class="mx-imgBorder"]  
 	> ![Screenshot showing selection of account home, Projects page, New project.](../../organizations/projects/media/create-project/projects-hub-vert-create-project.png) 
@@ -66,12 +66,12 @@ From the **Projects** page you can quickly navigate to a project that you have p
 
 ::: moniker range="<=azure-devops"
 
-1. Choose **Repos>Files**.
+1. Select **Repos** > **Files**.
 
 	> [!div class="mx-imgBorder"]
 	> ![Screenshot showing Open Code, new nav.](../../organizations/projects/media/browse-code/open-code-vert-brn.png) 
 
-1. Select the repository of interest from the repository selector.  
+1. Select the repository you want from the repository selector.  
 	> [!div class="mx-imgBorder"]
 	> ![Screenshot showing selecting repository.](../../organizations/projects/media/browse-code/select-repository-vert.png) 
 
