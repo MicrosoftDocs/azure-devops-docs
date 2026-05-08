@@ -52,7 +52,7 @@ You *copy* a work item to adjust prepopulated values, and *clone* a work item to
 
 Copy a work item to create a new work item with a new ID and prepopulated fields from the original. You can modify the fields as needed.
 
-Related links to the original work item and a discussion comment are automatically created in the copy. You can copy other links, parent links, child links, and attachments depending on the options you select. History isn't copied over.
+The process automatically creates related links to the original work item and a discussion comment in the copy. You can copy other links, parent links, child links, and attachments depending on the options you select. History isn't copied over.
 
 To copy a work item:
 
@@ -64,18 +64,18 @@ To copy a work item:
 
    :::image type="content" source="media/copy/copy-work-item-s171.png" alt-text="Screenshot shows copy work item dialog.":::
 
-1. In the new work item, change the **Title**, update other fields and add details as needed, and then select **Save** or **Save and Close**.
+1. In the new work item, change the **Title**, update other fields, and add details as needed. When you're done, select **Save** or **Save and Close**.
 
 ### Copy options
 
-Optionally, you can select any or all of the following options in the **Copy Work Item** form:
+Optionally, select any or all of the following options in the **Copy Work Item** form:
 
 ::: moniker range="azure-devops"
 
-- **Include existing links** includes all **Related** and external links from the copied work item. A **Related** link to the original work item and a comment in the **Discussion** section are always created, whether you select this option or not.
-- **Include existing attachments** includes attachments from the original work item in the new work item.
 - **Include parent link** links the copied work item to the same parent as the original work item. Select this option to keep the copy in the same hierarchy without also bringing over child links.
-- **Include child work items** creates a copy of each direct child work item and links them to the copied work item through parent-child links. This option isn't recursive — only direct children are included.
+- **Include child work items** creates a copy of each direct child work item and links them to the copied work item through parent-child links. This option isn't recursive - only direct children are included.
+- **Include all other existing links** includes all **Related** and external links from the copied work item. A **Related** link to the original work item and a comment in the **Discussion** section are always created, whether you select this option or not.
+- **Include existing attachments** includes attachments from the original work item in the new work item.
 
   > [!NOTE]
   > - You can select **Include parent link** and **Include child work items** independently. For example, copy a work item with just the parent link to place it under the same feature, or copy with just child items to create a standalone hierarchy.
@@ -128,32 +128,32 @@ You can copy an HTML formatted table of selected items from a backlog page or qu
 
 ### Copy as HTML
 
-Selecting **Copy as HTML** produces an HTML-formatted table that contains links and details for your selected work items. You can paste the table into an Excel spreadsheet, Word doc, or other application.
+When you select **Copy as HTML**, you get an HTML-formatted table that contains links and details for your selected work items. You can paste the table into an Excel spreadsheet, Word document, or other application.
 
-You can email the work item list using your chosen email client and recipients. To open linked work items, viewers need read access to the project or area node for those work items.
+You can email the work item list by using your chosen email client and recipients. To open linked work items, viewers need read access to the project or area node for those work items.
 
 ### Send email to project or team members
 
-Selecting **Email** opens a **Send work items in email** screen that includes the HTML-formatted table of work item links. To send email, select team or project members in the **To** field, complete the **Subject** and optional **Note** fields, and then select **Send**.
+When you select **Email**, it opens a **Send work items in email** screen that includes the HTML-formatted table of work item links. To send the email, select team or project members in the **To** field, complete the **Subject** and optional **Note** fields, and then select **Send**.
 
 :::image type="content" source="media/copy/send-email.png" alt-text="Screenshot shows the Send work items in email form with work item list table.":::
 
-The email sends through your default mail client, and includes a link to a query that returns only the selected work items.
+Your default mail client sends the email, and it includes a link to a query that returns only the selected work items.
 
 > [!NOTE]
-> **Send work items in email** is a built-in Azure Boards function that behaves as if a default subscription with **Skip initiator** enabled triggers the email. Therefore, you don't receive emails you send to yourself using this feature. To send a list of work items to yourself, paste the HTML-formatted list into an email and send that to yourself manually.
+> **Send work items in email** is a built-in Azure Boards function that behaves as if a default subscription with **Skip initiator** enabled triggers the email. Therefore, you don't receive emails you send to yourself by using this feature. To send a list of work items to yourself, paste the HTML-formatted list into an email and send that email to yourself manually.
 
 ## Change work item types
 
 To change a large number of work item types, select **Change type** from the context menu for the multiselected list. For more information, see [Change work item type](move-change-type.md).
 
-If the **Change type** option isn't available, you can export a set of work items to Excel or CSV, copy them to a new list, and reimport them specifying a different work item type. For more information, see [Bulk add or modify work items with Excel](office/bulk-add-modify-work-items-excel.md) or [Import or update work items in bulk by using CSV files](../queries/import-work-items-from-csv.md).
+If the **Change type** option isn't available, you can export a set of work items to Excel or CSV, copy them to a new list, and reimport them by specifying a different work item type. For more information, see [Bulk add or modify work items with Excel](office/bulk-add-modify-work-items-excel.md) or [Import or update work items in bulk by using CSV files](../queries/import-work-items-from-csv.md).
 
 <a id="use-ai-assistance"></a>
 
 ## Use AI to create similar work items
 
-If you have the [Azure Boards MCP Server](../../mcp-server/mcp-server-overview.md) connected to your AI agent in agent mode, you can use natural language prompts to create new work items based on existing ones.
+If you connect the [Azure Boards MCP Server](../../mcp-server/mcp-server-overview.md) to your AI agent in agent mode, you can use natural language prompts to create new work items based on existing ones.
 
 | Task | Example prompt |
 |------|----------------|
