@@ -134,7 +134,7 @@ landingContent:
         links:
           - text: Managed DevOps Pools FAQs
             url: ../managed-devops-pools/faq.md?toc=/azure/devops/troubleshoot/toc.json
-  - title: MCP Server
+  - title: Azure DevOps Remote MCP Server
     linkLists:
       - linkListType: how-to-guide
         links:

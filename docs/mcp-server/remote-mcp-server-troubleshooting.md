@@ -17,8 +17,6 @@ ms.date: 05/08/2026
 
 [!INCLUDE [version-eq-azure-devops](../includes/version-eq-azure-devops.md)]
 
-[!INCLUDE [remote-mcp-server-preview-note](includes/remote-mcp-server-preview-note.md)]
-
 This article helps you diagnose and resolve common problems with the [remote Azure DevOps MCP Server](remote-mcp-server.md). For local MCP Server issues, see the [local MCP Server troubleshooting guide](https://github.com/microsoft/azure-devops-mcp/blob/main/docs/TROUBLESHOOTING.md).
 
 ## Connection failures
