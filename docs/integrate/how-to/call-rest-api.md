@@ -1,7 +1,6 @@
 ---
 title: Get started with the REST APIs for Azure DevOps
 description: Learn the fundamental concepts and patterns for Azure DevOps REST APIs, including URL structure, authentication methods, HTTP operations, and response handling.
-ms.assetid: 14ac2881-2aaf-4291-8dfe-3f7e3f591861
 ms.subservice: azure-devops-ecosystem
 ms.topic: quickstart
 ms.custom: pat-reduction, copilot-scenario-highlight
@@ -213,7 +212,7 @@ If you connect [Azure DevOps MCP Server](../../mcp-server/mcp-server-overview.md
 > [!NOTE]
 > Agent mode and the MCP Server use natural language, so you can adjust these prompts or ask follow-up questions to refine the results.
 
-## Next steps
+## Next step
 
 > [!div class="nextstepaction"]
 > [Try REST API samples](../get-started/rest/samples.md)

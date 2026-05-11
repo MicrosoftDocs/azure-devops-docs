@@ -3,7 +3,6 @@ title: Deploy an Azure Pipelines agent on Linux
 description: Learn how you can easily deploy a self-hosted agent on Linux for Azure Pipelines.
 ms.topic: concept-article
 ms.custom: linux-related-content
-ms.assetid: 834FFB19-DCC5-40EB-A3AD-18B7EDCA976E
 ms.date: 11/07/2025
 monikerRange: '<= azure-devops'
 ---

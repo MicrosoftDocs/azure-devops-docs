@@ -4,7 +4,6 @@ titleSuffix: Azure Boards
 description: Learn how to query work item history and comments to support audit requirements when working in Azure Boards.
 ms.service: azure-devops-boards
 ms.custom: boards-queries, engagement-fy23, copilot-scenario-highlight
-ms.assetid: A5AC271A-8DF0-40AD-9867-1B1E9E5B1FE9
 ai-usage: ai-assisted
 ms.author: chcomley
 author: chcomley
@@ -325,7 +324,7 @@ Use these fields to filter queries and build reports. Some fields update as an i
    <a id="test-suite-audit">Test Suite Audit</a>
    :::column-end:::
    :::column span="2":::
-   Tracks operations performed when modifying a test suite (for example, adding tests or changing configurations). Viewable through the History tab or via queries.  
+   Tracks operations performed when modifying a test suite (for example, adding tests or changing configurations). Viewable through the History tab or through queries.  
    `Reference name=Microsoft.VSTS.TCM.TestSuiteAudit, Data type=PlainText`
    :::column-end:::
    :::column span="1":::

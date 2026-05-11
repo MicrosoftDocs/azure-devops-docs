@@ -1,7 +1,6 @@
 ---
 title: Add Users or Groups to Team or Project
 description: Add users or groups to a team, or add members or groups to a project by following these procedures for Azure DevOps.
-ms.assetid: 3cfefdd2-b161-4e04-8dc0-e2deeac50262
 ai-usage: ai-assisted
 ms.subservice: azure-devops-security
 ms.author: chcomley
@@ -689,6 +688,6 @@ If your on-premises deployment is integrated with SQL Server Reports, you must m
 
 - [Manage permissions with command line tool](manage-tokens-namespaces.md)
 
-- [Change project visibility to public or private](../../organizations/projects/make-project-public.md)
+- [Change project visibility to private](../../organizations/projects/make-project-public.md)
 
 :::moniker-end

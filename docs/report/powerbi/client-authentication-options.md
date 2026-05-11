@@ -3,7 +3,6 @@ title: Client authentication options
 titleSuffix: Azure DevOps   
 description: Learn how to enter or change authentication credentials when you connect to Analytics from Power BI or Excel.
 ms.subservice: azure-devops-analytics
-ms.assetid: 91C6424B-3C3D-4773-B252-C627A5CE7C6D
 ms.author: chcomley
 author: chcomley
 ms.topic: how-to
@@ -199,7 +198,7 @@ If you receive an access denied message, you might need to change your authentic
 ## Publish to Power BI
 
 After you create a model and load it with data, you can [publish it to Power BI](publish-power-bi-desktop-to-power-bi.md).
-When you use Microsoft Entra ID or Windows, make sure to select the **oAuth2** option.
+When you use Microsoft Entra ID or Windows, ensure to select the **oAuth2** option.
 
 ## Related content
  

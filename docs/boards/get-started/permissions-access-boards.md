@@ -4,7 +4,6 @@ titleSuffix: Azure Boards
 description: Learn about default permissions and access levels in Azure Boards.  
 ms.custom: boards-get-started, engagement-fy23
 ms.service: azure-devops-boards
-ms.assetid: 
 ms.author: chcomley
 author: chcomley
 ms.topic: overview
@@ -65,7 +64,7 @@ Use [**Queries**](../queries/view-run-query.md) to filter and list work items by
 Stakeholder access supports business owners, product managers, and others who need to add context, review progress, and contribute to the backlog without using every Boards feature. Assign Stakeholder access to users who don’t need the full developer experience.
 
 - For public projects, Stakeholder access provides full access to work-tracking features. For more information, see [Stakeholder access quick reference](../../organizations/security/stakeholder-access.md).
-- For private projects, Stakeholders can view and modify many work items, and they can add child tasks and comments, but they can't perform certain actions such as reordering backlog items via drag-and-drop or updating some card fields.
+- For private projects, Stakeholders can view and modify many work items, and they can add child tasks and comments, but they can't perform certain actions such as reordering backlog items through drag-and-drop or updating some card fields.
 
 ::: moniker range="azure-devops"
 > [!NOTE]   

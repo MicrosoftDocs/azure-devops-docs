@@ -2,7 +2,6 @@
 title: View Classic pipeline history
 description: Learn how to check your Classic pipeline history to find previous changes.
 ms.topic: how-to
-ms.assetid: AB81E23E-DD84-4BDB-ACD9-AE03D783A303
 ms.date: 12/23/2025
 monikerRange: '<= azure-devops'
 ---

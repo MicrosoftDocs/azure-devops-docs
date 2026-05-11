@@ -2,7 +2,6 @@
 title: Set Git Repository Settings
 titleSuffix: Azure Repos
 description: Learn how to configure a Git repository and its branches.   
-ms.assetid: 9336ed18-c239-4394-aa4c-64b6d01130f9
 ms.service: azure-devops-repos
 ms.topic: how-to
 ms.custom: cross-service, devx-track-azurecli, copilot-scenario-highlight

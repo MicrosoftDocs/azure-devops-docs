@@ -1,9 +1,8 @@
 ---
 title: About permissions and security groups
 titleSuffix: Azure DevOps
-description: Understand permissions and access levels in Azure DevOps via inheritance, security groups, roles, and more.
+description: Understand permissions and access levels in Azure DevOps through inheritance, security groups, roles, and more.
 ms.subservice: azure-devops-security
-ms.assetid: 
 toc: show
 ms.topic: overview
 ms.author: chcomley
@@ -259,7 +258,7 @@ To manage organizational access with Microsoft Entra ID, see the following artic
 * [Troubleshoot access with Microsoft Entra ID](../accounts/faq-azure-access.yml) 
 
 Azure DevOps registers changes made to a Microsoft Entra group within an hour of that change in Microsoft Entra ID.
-Any inherited permissions via group membership are refreshed.
+Any inherited permissions through group membership are refreshed.
 To refresh your Microsoft Entra membership and inherited permissions in Azure DevOps, sign out and then sign back in, or [trigger a refresh to reevaluate your permission](request-changes-permissions.md#refresh-or-reevaluate-your-permissions).
 ::: moniker-end
 

@@ -2,7 +2,6 @@
 title: View, filter, and open pull requests
 titleSuffix: Azure Repos
 description: Learn about different ways to list, filter, and open Git pull requests in Azure Repos.
-ms.assetid: 4C9DFD24-E894-454A-A080-DA511C90CA74
 ms.service: azure-devops-repos
 ms.topic: how-to
 ms.date: 03/31/2022

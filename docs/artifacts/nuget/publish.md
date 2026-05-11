@@ -1,7 +1,6 @@
 ---
 title: Publish NuGet packages with the NuGet CLI
 description: Learn how to connect to an Azure Artifacts feed and publish NuGet packages using the NuGet CLI.
-ms.assetid: C7D75946-1F00-4BD7-87C8-225BBAE9982B
 ms.service: azure-devops-artifacts
 ms.topic: tutorial
 ms.date: 01/14/2025

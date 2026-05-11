@@ -4,7 +4,6 @@ titleSuffix: Azure DevOps
 description: Manage work item types for a project 
 ms.service: azure-devops-boards
 ms.custom: witadmin
-ms.assetid: 97d7ea1c-df1f-4999-adc9-b38dd2a6cca6
 ms.topic: reference
 ms.author: chcomley
 author: chcomley
@@ -166,7 +165,7 @@ Changing the workflow or renaming a WIT might require you to perform some manual
 If you want to restrict creation of a specific WIT to a group of users, there are two ways to restrict access:  
   
 - [Add the WIT to the Hidden Categories group](../xml/use-categories-to-group-work-item-types.md) to prevent the majority of contributors from creating them. If you want to allow a group of users access, you [can create a hyperlink to a template](../../boards/backlogs/work-item-template.md) that opens the work item form and share that link with those team members who you do want to create them.  
-- Add [a field rule to the workflow](../../organizations/settings/work/rule-reference.md) for the System.CreatedBy field to effectively restrict a group of users from creating a work item of a specific type. As the following example shows, the user who creates the work item must belong to the `Allowed Group` in order to save the work item.  
+- Add [a field rule to the workflow](../../organizations/settings/work/rule-reference.md) for the System.CreatedBy field to effectively restrict a group of users from creating a work item of a specific type. As the following example shows, the user who creates the work item must belong to the `Allowed Group` to save the work item.  
   
 > [!div class="tabbedCodeSnippets"]
 > ```XML 
@@ -194,7 +193,7 @@ When you delete a WIT that belongs to a category, you must update the categories
   
 For more information, see [Import and export categories](/previous-versions/azure/devops/reference/witadmin/witadmin-import-export-categories).  
   
-## Related articles  
+## Related content  
 -  [Customize your work tracking experience](../customize-work.md)
 -  [Work item field index](../../boards/work-items/guidance/work-item-field.md)   
 -  [witAdmin: Customize and manage objects for tracking work](witadmin-customize-and-manage-objects-for-tracking-work.md)

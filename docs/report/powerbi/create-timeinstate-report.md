@@ -52,7 +52,7 @@ This article provides recipes using Data Analysis Expressions (DAX) to evaluate 
 [!INCLUDE [prerequisites-simple](../includes/analytics-prerequisites-simple.md)]
 
 > [!NOTE]  
-> To exercise all the time-in-state measures described in this article, make sure to include the following fields in your Analytics views, Power Query, or OData query: **Created Date** and **State Category** in addition to the default fields: **Area Path**, **Assigned To**, **Iteration Path**, **State**, **Title**, **Work Item ID**, and **Work Item Type**.  
+> To exercise all the time-in-state measures described in this article, ensure to include the following fields in your Analytics views, Power Query, or OData query: **Created Date** and **State Category** in addition to the default fields: **Area Path**, **Assigned To**, **Iteration Path**, **State**, **Title**, **Work Item ID**, and **Work Item Type**.  
 > 
 > Also, consider using an Analytics view based on a **Daily** granularity. Examples in this article are based on the Active Bugs Analytics view defined in [Create an active bugs report in Power BI based on a custom Analytics view](active-bugs-sample-report.md), with the exception that 60 days of **History** and **Daily** granularity are selected. Determine also if you want to review completed or closed work items. 
 
@@ -485,7 +485,7 @@ Additional information is provided in this section for the DAX functions used to
 |-----|-------------|
 | [`ALLEXCEPT`](/dax/allexcept-function-dax) | Removes all context filters in the table except filters applied to the specified columns. Essentially, `ALLEXCEPT ('View Name'', 'View Name'[Work Item Id])` reduces the rows in the table down to only the ones that share the same work item ID as the current row. |   
 | [`CALCULATE`](/dax/calculate-function-dax) | This function is the basis for nearly all examples. The basic structure is an expression followed by a series of filters that are applied to the expression. |   
-| [`COUNTROWS`](/dax/countrows-function-dax) | This function, `COUNTROWS ( 'View Name' )`, simply counts the number of rows that remain after the filters are applied. |   
+| [`COUNTROWS`](/dax/countrows-function-dax) | This function, `COUNTROWS ( 'View Name' )`, counts the number of rows that remain after the filters are applied. |   
 | [`DATEDIFF`](/dax/datediff-function-dax) | Returns the count of interval boundaries crossed between two dates. `DATEDIFF` subtracts *Date Previous* from *Date* to determine the number of days between them.|   
 | [`EARLIER`](/dax/earlier-function-dax) | Returns the current value of the specified column in an outer evaluation pass of the mentioned column. For example, `'View Name'[Date] < EARLIER ( 'View Name'[Date] )` further reduces the data set to only those rows that occurred before the date for the current row that is referenced by using the `EARLIER` function. `EARLIER` doesn't refer to previous dates; it specifically defines the row context of the calculated column. |   
 | [`ISBLANK`](/dax/isblank-function-dax) | Checks whether a value is blank, and returns TRUE or FALSE. `ISBLANK` evaluates the current row to determine if *Date Previous* has a value. If it doesn't, the If statement sets *Date Diff in Days* to 1.|   
@@ -493,7 +493,7 @@ Additional information is provided in this section for the DAX functions used to
 | [`LOOKUPVALUE`](/dax/lookupvalue-function-dax) | Returns the value in *result_columnName* for the row that meets all criteria specified by *search_columnName* and *search_value*. |   
 | [`MAX`](/dax/max-function-dax) | Returns the largest numeric value in a column, or between two scalar expressions. We apply  `MAX ( 'View Name'[Date] )`, to determine the most recent date after all filters are applied.  |   
 
-## Related articles
+## Related content
 
 - [Learn about Power BI integration](overview.md)
 - [Create Analytics views](analytics-views-create.md)

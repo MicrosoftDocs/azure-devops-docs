@@ -4,7 +4,6 @@ titleSuffix: Azure Boards
 description: Learn how to determine how much work your team can deliver across several sprints by forecasting in Azure Boards. 
 ms.custom: boards-sprints, copilot-scenario-highlight
 ms.service: azure-devops-boards
-ms.assetid: C46ED4AA-4B8F-4D5D-BC51-52F6D67BF8C6
 ms.author: chcomley
 author: chcomley
 ms.topic: tutorial

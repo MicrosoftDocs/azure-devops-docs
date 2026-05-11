@@ -2,7 +2,6 @@
 title: Use Azure CLI to share Git code
 titleSuffix: Azure Repos
 description: Use Azure CLI to share code in Git repository.  
-ms.assetid: 4b299dbf-3ca9-47af-bd6d-8c40bafac447
 ms.service: azure-devops-repos
 ms.topic: quickstart
 ms.custom: devx-track-azurecli

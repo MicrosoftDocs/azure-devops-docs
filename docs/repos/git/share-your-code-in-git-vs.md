@@ -2,7 +2,6 @@
 title: Share your code with Git using Visual Studio 2015
 titleSuffix: Azure Repos
 description: Learn how to share your Visual Studio solution with others by hosting your code in a Git repository in Azure Repos.
-ms.assetid: 0c1dc48e-6f52-499d-a03e-6361c9a838dd
 ms.service: azure-devops-repos
 toc: show
 ms.topic: tutorial

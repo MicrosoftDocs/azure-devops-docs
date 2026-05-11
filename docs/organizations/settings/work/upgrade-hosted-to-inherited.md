@@ -82,7 +82,7 @@ Create a test project based on the inherited process created in the previous ste
 5. Manually reapply customizations that were ignored during clone.
 6. Create a test project to verify customizations.  
 
-## Next steps
+## Next step
 
 > [!div class="nextstepaction"]
 > [Change a project from a Hosted XML process to Inheritance](change-process-from-hosted-to-inherited.md) 

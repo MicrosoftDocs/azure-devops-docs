@@ -3,7 +3,6 @@ title: Define area paths and assign to a team
 titleSuffix: Azure Boards
 description: Group work items based on team, product, or feature area by defining area paths for Azure Boards and Azure DevOps.
 ms.subservice: azure-devops-settings
-ms.assetid: 97358022-AE19-4775-AE25-47BA24FF3C74
 ms.author: chcomley
 author: chcomley
 ms.topic: how-to
@@ -110,11 +109,11 @@ ID     Identifier                            Name                Path           
 55303  637dc203-0549-4415-9663-b6358ac27d21  Internet            \Fabrikam Fiber\Area\Service Delivery\Internet      False
 55306  3f2067f9-684f-4121-8004-4a4745198b39  Voice               \Fabrikam Fiber\Area\Service Delivery\Voice         False
 55372  4afc9ede-db1d-4703-8be6-95899b99be44  Email               \Fabrikam Fiber\Area\Service Delivery\Email         False
-55381  f96d4738-c67e-42d0-bd4e-99f6b3fdeb22  Service Status      \Fabrikam Fiber\Area\Service Delivery\Service S...  False
+55381  f96d4738-c67e-42d0-bd4e-99f6b3fdeb22  Service Status      \Fabrikam Fiber\Area\Service Delivery\Service S... False
 55384  3a0c1189-6454-4ccd-9354-d72b653b7f74  TV                  \Fabrikam Fiber\Area\Service Delivery\TV            False
 55380  4ea27e90-248c-41a0-8d11-eace6c9fd90e  Account Management  \Fabrikam Fiber\Area\Account Management             True
-55382  4235f40d-753b-49dd-868f-82372065ec83  Shopping Cart       \Fabrikam Fiber\Area\Account Management\Shoppin...  False
-55383  49d34650-6c65-446c-aff6-79edd3a21a75  Customer Profile    \Fabrikam Fiber\Area\Account Management\Custome...  False
+55382  4235f40d-753b-49dd-868f-82372065ec83  Shopping Cart       \Fabrikam Fiber\Area\Account Management\Shoppin... False
+55383  49d34650-6c65-446c-aff6-79edd3a21a75  Customer Profile    \Fabrikam Fiber\Area\Account Management\Custome... False
 ```
 ::: moniker-end
 
@@ -500,7 +499,7 @@ If you use GitHub Copilot, the [Azure DevOps MCP Server](../../mcp-server/mcp-se
 > [!TIP]
 > For the best results, use these prompts in agent mode with the Azure DevOps MCP Server connected. Customize the prompts with your specific project, team names, or area path structure.
 
-## Next steps
+## Next step
 
 > [!div class="nextstepaction"]
 > [Set iteration paths or sprints](set-iteration-paths-sprints.md)
@@ -523,14 +522,14 @@ Area paths and iteration paths are also referred to as *Classification Nodes*.
 ::: moniker range="azure-devops"
 - [Use the az boards area (Azure DevOps CLI)](/cli/azure/boards/area).
 - [Use the Teams (REST API)](/rest/api/azure/devops/core/teams) to manage team configurations.
-- [Utilize the Classification Nodes (REST API)](/rest/api/azure/devops/wit/classification%20nodes) to organize work item classifications.
+- [Use the Classification Nodes (REST API)](/rest/api/azure/devops/wit/classification%20nodes) to organize work item classifications.
 
 ::: moniker-end
 
 ::: moniker range="< azure-devops"
 
 - [Use the Teams (REST API)](/rest/api/azure/devops/core/teams) to manage team configurations.
-- [Utilize the Classification Nodes (REST API)](/rest/api/azure/devops/wit/classification%20nodes) to organize work item classifications.
+- [Use the Classification Nodes (REST API)](/rest/api/azure/devops/wit/classification%20nodes) to organize work item classifications.
 - [Configure the process by defining the classification plug-in (Process Template)](/previous-versions/azure/devops/reference/process-templates/define-classification-plug-in).
 
 ::: moniker-end

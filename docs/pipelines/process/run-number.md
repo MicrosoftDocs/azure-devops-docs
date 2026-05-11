@@ -2,7 +2,6 @@
 title: Run and build numbers
 description: Learn about Azure Pipelines run numbers and build numbers and how you can configure them in your pipelines.
 ms.topic: concept-article
-ms.assetid: 7C469647-117D-4867-B094-8BC811C0003E
 ms.date: 08/12/2025
 monikerRange: "<=azure-devops"
 #customer intent: As an Azure Pipelines customer, I want to understand the composition of run numbers so I can customize them to be more meaningful and useful for my team.

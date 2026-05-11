@@ -216,7 +216,7 @@ Azure DevOps OAuth apps support dual secrets to enable zero-downtime rotation:
 
 ### Rotate secrets
 
-1. **Generate a new secret** in your [Visual Studio profile](https://aex.dev.azure.com/me) or via the [Registration Secret APIs](/rest/api/azure/devops/delegatedauth/registration-secret).
+1. **Generate a new secret** in your [Visual Studio profile](https://aex.dev.azure.com/me) or through the [Registration Secret APIs](/rest/api/azure/devops/delegatedauth/registration-secret).
 
    :::image type="content" source="media/app-page-new-secret.png" alt-text="Screenshot of app page with secondary secret generated.":::
 
@@ -315,7 +315,7 @@ A: Common causes include:
 
 ### Q: Why do I get HTTP 401 errors with OAuth tokens but not with PATs?
 
-A: Check if your organization administrator disabled **Third-party application access via OAuth** at:
+A: Check if your organization administrator disabled **Third-party application access through OAuth** at:
 `https://dev.azure.com/{your-org-name}/_settings/organizationPolicy`
 
 When disabled, OAuth authorization flows work, but API calls return `TF400813: The user "<GUID>" is not authorized to access this resource.`
@@ -336,7 +336,7 @@ A:
 - **Azure DevOps OAuth**: Deprecated, Azure DevOps-specific, limited security features
 - **Microsoft Entra ID OAuth**: Modern, enterprise-grade, enhanced security, long-term support
 
-## Next steps
+## Next step
 
 **For existing applications:**
 > [!div class="nextstepaction"]

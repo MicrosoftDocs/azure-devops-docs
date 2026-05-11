@@ -2,7 +2,6 @@
 title: Power BI integration and supported connections methods
 titleSuffix: Azure DevOps
 description: Learn about how to access Analytics for Azure DevOps and the different integration options you can use to connect to Power BI.
-ms.assetid: 8026A5ED-CD58-417A-913F-72A20272E7DC
 ms.subservice: azure-devops-analytics
 ms.topic: overview
 ms.author: chcomley
@@ -114,7 +113,7 @@ The following Marketplace extensions are available to support Power BI integrati
 - [(WIQL to OData)](https://marketplace.visualstudio.com/items?itemName=ms-eswm.wiql-to-odata) translates an Azure DevOps work item query into an OData query for use with Azure DevOps Analytics OData endpoints, which can be useful to as a simple OData query.
 - [vscode-odata](https://marketplace.visualstudio.com/items?itemName=stansw.vscode-odata) extension adds rich language support to Visual Studio Code for the OData query language.
 
-## Related articles
+## Related content
 
 - [Dashboards](../dashboards/dashboards.md)
 - [Sample reports and quick reference index](../extend-analytics/quick-ref.md)

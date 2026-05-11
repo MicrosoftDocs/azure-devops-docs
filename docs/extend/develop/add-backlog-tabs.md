@@ -2,7 +2,6 @@
 title: Add tabs on backlog pages
 titleSuffix: Azure DevOps
 description: Add custom tabs to product and iteration backlog pages in your Azure DevOps extension.
-ms.assetid: 3D0B51DA-66AA-45C7-B9F1-08973CFF7E5E
 ms.subservice: azure-devops-ecosystem
 ms.custom: UpdateFrequency3
 ms.topic: how-to
@@ -115,7 +114,7 @@ SDK.register("backlogTabObject", {
 
 Learn about all of the places where you can add a hub in [Extensibility points](../reference/targets/overview.md).
 
-## Next steps
+## Next step
 
 > [!div class="nextstepaction"]
 > [Package, Publish, and Install](../publish/overview.md)

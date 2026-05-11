@@ -2,7 +2,6 @@
 title: Merge command (Team Foundation Version Control)
 titleSuffix: Azure Repos
 description: See how to use the tf merge command to apply changes from one branch into another in Team Foundation Version Control (TFVC).
-ms.assetid: 4075b4a8-1d11-49d5-8dbe-4fd00cdb0fca
 ms.service: azure-devops-repos
 ms.topic: reference
 ms.date: 11/15/2022

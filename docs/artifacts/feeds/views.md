@@ -1,7 +1,6 @@
 ---
 title: Promote packages and manage feed views 
 description: Learn how to promote packages to a specific view and manage feed views in Azure Artifacts.
-ms.assetid: EB40D23E-1053-4EBF-9D1D-19CF1BBAF1C6
 ms.service: azure-devops-artifacts
 ms.topic: how-to
 ms.date: 01/22/2026

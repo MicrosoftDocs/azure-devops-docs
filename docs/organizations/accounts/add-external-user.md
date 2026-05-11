@@ -3,7 +3,6 @@ title: Add, invite guest external users to your organization
 titleSuffix: Azure DevOps Services
 description: Learn how to invite an external user or outside guest to your organization.
 ms.subservice: azure-devops-organizations
-ms.assetid: ec935536-6a5e-4b62-adf2-4207a70440bd
 ms.topic: how-to
 ms.author: chcomley
 author: chcomley
@@ -15,7 +14,7 @@ monikerRange: 'azure-devops'
 
 [!INCLUDE [version-eq-azure-devops](../../includes/version-eq-azure-devops.md)]
 
-Learn how to invite external users to your organization. If you access Azure DevOps via Microsoft Entra ID, you must add the identities of those users to your Microsoft Entra ID. Doing so also grants the users more privileges. For more information, see [more organization-level resources](../projects/resources-granted-to-project-members.md).
+Learn how to invite external users to your organization. If you access Azure DevOps through Microsoft Entra ID, you must add the identities of those users to your Microsoft Entra ID. Doing so also grants the users more privileges. For more information, see [more organization-level resources](../projects/resources-granted-to-project-members.md).
 
 ## Prerequisites
 
@@ -46,7 +45,7 @@ Learn how to invite external users to your organization. If you access Azure Dev
     - **Access level**: You can add up to five users with *Basic* access. You're included as one of the five users. Otherwise, you can add an unlimited number of users with *Stakeholder* access. In public projects, both Stakeholder and Basic access levels grant full access to **Code**, **Work**, and **Build and Release**. But, Stakeholders only get partial access to **Test** and **Dashboards**. For more information, see [Default roles & permissions](../security/permissions-access.md).
     - **Add to projects**: Select each public project that you want to add the user to.  
     - **Azure DevOps Groups**: Leave this entry at Project Contributors, the default security group for people who contribute to your project. For more information, see [Default permissions and access assignments](../security/permissions-access.md).
-    - **Send email invites**: Check this box to invite your new users via their email addresses.
+    - **Send email invites**: Check this box to invite your new users through their email addresses.
 
 5. Advise the external user to locate the email that they received from `AzureDevOps@microsoft.com` with the subject, **You have been invited to an Azure DevOps project** and select **Join now**. This final step adds the user to your organization. The invitation looks similar to the following image.
 

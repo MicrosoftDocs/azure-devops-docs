@@ -3,7 +3,6 @@ title: Resolve common Azure DevOps Office integration issues
 titleSuffix: Azure Boards
 description: Learn how to resolve common integration issues that occur with Azure DevOps Office integrations. 
 ms.service: azure-devops-boards
-ms.assetid: 819EA180-2BAC-46DB-A17E-A5179E6BEADC
 ai-usage: ai-assisted
 ms.custom: copilot-scenario-highlight
 ms.author: chcomley
@@ -53,7 +52,7 @@ If you still don't see the **Team** ribbon, do the steps in the following sectio
 
    :::image type="content" source="media/excel-options-com-add-ins.png" alt-text="Screenshot of sequence to add COM add-in.":::
 
-3. Make sure there's a check in the **Team Foundation Add-in** box.
+3. Ensure there's a check in the **Team Foundation Add-in** box.
 
    > [!div class="mx-imgBorder"]
    > ![Screenshot of COM Add-ins dialog, Team Foundation Add-in checked.](media/tfs-office-issues-excel-tfs-add-in-checkbox.png)
@@ -139,7 +138,7 @@ If the previous steps don't help, try the next steps:
 
 1. [Repair Office](https://support.office.com/article/Repair-an-Office-application-7821d4b6-7c1d-4205-aa0e-a6b40c5bb88b?ui=en-US&rs=en-US&ad=US).  
 2. Uninstall Office and then reinstall Office.
-3. Contact Microsoft via the [Developer Community](https://developercommunity.visualstudio.com/home).  
+3. Contact Microsoft through the [Developer Community](https://developercommunity.visualstudio.com/home).  
 
 ## User can't sign in to Azure DevOps from Excel after password change
 

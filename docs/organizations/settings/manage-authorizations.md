@@ -3,7 +3,6 @@ ms.topic: how-to
 title: Authorize other services to access Azure DevOps
 description: Discover how to grant and manage service authorizations in Azure DevOps while ensuring secure access to your organization’s resources.
 ms.subservice: azure-devops-security
-ms.assetid: 314a28cd-b2ae-41a0-8dfb-330222c1aed0
 ai-usage: ai-assisted
 monikerRange: 'azure-devops'
 ms.author: chcomley
@@ -69,7 +68,7 @@ Review the services that you granted authorization to access your organization.
 
    :::image type="content" source="media/revoke-authorized-app.png" alt-text="Screenshot showing highlighted Revoke trash can for selection.":::
 
-## Next steps
+## Next step
 
 > [!div class="nextstepaction"]
 > [Set user preferences](set-your-preferences.md)

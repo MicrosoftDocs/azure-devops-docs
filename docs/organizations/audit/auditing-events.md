@@ -3,7 +3,6 @@ title: Auditing events list
 titleSuffix: Azure DevOps
 description: Learn which events are available through Azure DevOps Auditing.
 ms.subservice: azure-devops-audit
-ms.assetid: 9F1D0A0F-02D5-4E06-A5EC-C220472A0F66
 ms.author: chcomley
 author: chcomley
 ms.topic: overview

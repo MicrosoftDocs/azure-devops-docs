@@ -4,7 +4,6 @@ titleSuffix: Azure DevOps
 description: How to grant or restrict access to test plans, test suites, test cases, and other test-related features.
 ms.subservice: azure-devops-security
 ai-usage: ai-assisted
-ms.assetid: 
 ms.author: chcomley
 author: chcomley
 ms.topic: how-to
@@ -16,7 +15,7 @@ ms.date: 03/09/2026
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
-To fully utilize Azure Test Plans, you need to understand and configure the necessary permissions and access levels. This article outlines the steps, so you can:
+To fully use Azure Test Plans, you need to understand and configure the necessary permissions and access levels. This article outlines the steps, so you can:
 
 - Grant access to manual testing features
 - Manage test plans and test suites
@@ -124,7 +123,7 @@ In the following example, you grant members assigned to the Test Admin group per
 
 ::: moniker-end    
 
-## Next steps
+## Next step
 
 > [!div class="nextstepaction"]
 > [Navigate Test Plans](../../test/navigate-test-plans.md)

@@ -3,7 +3,6 @@ title: Understand Source Control
 titleSuffix: Azure DevOps
 description: Understand what is source control or version control in Azure DevOps, including Git and Team Foundation Version Control (TFVC).
 ms.subservice: azure-devops-new-user
-ms.assetid: 7E769466-2165-4223-96FA-80A687287EFC
 ms.author: chcomley
 author: chcomley
 ms.topic: overview

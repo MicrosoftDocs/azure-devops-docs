@@ -1,7 +1,6 @@
 ---
 title: Dir command  (Team Foundation Version Control)
 description: Use the dir command to display all or some of the contents of the server for Team Foundation Version Control.
-ms.assetid: 1e226700-a685-4c42-970b-fa6fd764726f
 ms.service: azure-devops-repos
 ms.topic: reference
 ms.date: 11/01/2022

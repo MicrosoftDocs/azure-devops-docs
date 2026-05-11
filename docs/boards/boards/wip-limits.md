@@ -4,7 +4,6 @@ titleSuffix: Azure Boards
 description: Set Work In Progress limits in Azure Boards to streamline your Kanban process, reduce bottlenecks, and enhance team collaboration. Get started now.
 ms.custom: boards-kanban, copilot-scenario-highlight
 ms.service: azure-devops-boards
-ms.assetid: d18351c1-e9e1-4c16-869d-e15ca478c748
 ms.author: chcomley
 ms.reviewer: chcomley
 author: chcomley
@@ -87,7 +86,7 @@ Discuss these sources as a team and collaboratively find solutions.
 
 ## Set WIP limits
 
-Before you set WIP limits, make sure you [mapped your team's workflow to columns](add-columns.md).
+Before you set WIP limits, ensure you [mapped your team's workflow to columns](add-columns.md).
 
 1. [Open your board](kanban-quickstart.md).
 

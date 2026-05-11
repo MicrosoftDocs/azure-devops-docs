@@ -4,7 +4,6 @@ ms.custom: devx-track-jenkins
 ms.topic: how-to
 title: Create a service hook for Jenkins
 description: See how to set up a service hook subscription to trigger a Jenkins build for your Azure DevOps project.
-ms.assetid: 3e9cf797-092f-48da-a515-e4d0cc93c4a1
 monikerRange: '<= azure-devops'
 ms.date: 08/13/2024
 ---

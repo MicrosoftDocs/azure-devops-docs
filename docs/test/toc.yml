@@ -98,6 +98,9 @@
     href: manage-test-failure-type.md
 - name: Automated tests
   items:
+  - name: Set up automated testing
+    displayName: automated, overview, pipeline, end-to-end, workflow
+    href: automated-testing-overview.md
   - name: Associate automated tests with test cases
     displayName: test cases, automated, associate
     href: associate-automated-test-with-test-case.md

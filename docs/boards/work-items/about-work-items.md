@@ -4,7 +4,6 @@ titleSuffix: Azure Boards
 description: Learn how Azure Boards supports work items to plan, track, and collaborate with others when developing software applications in Azure DevOps. 
 ms.custom: work-items, engagement-fy23
 ms.service: azure-devops-boards
-ms.assetid:  
 ms.author: chcomley
 author: chcomley
 ms.topic: overview
@@ -308,7 +307,7 @@ The following table summarizes permissions that affect a member's ability to vie
 
 Users with Basic access have full access to work tracking features. Stakeholder access limits certain features. For details, see [Set permissions and access for work tracking](../../organizations/security/set-permissions-access-work-tracking.md) and [Stakeholder access quick reference](../../organizations/security/stakeholder-access.md).
 
-## Next steps
+## Next step
 
 > [!div class="nextstepaction"]
 > [Add a work item](view-add-work-items.md)

@@ -2,7 +2,6 @@
 ms.topic: how-to
 title: Authenticate to Azure DevOps with Microsoft Entra ID
 description: Use Microsoft Entra ID authentication for secure access to Azure DevOps Services with modern identity management capabilities.
-ms.assetid: 19285121-1805-4421-B7C4-63784C9A7CFA
 ms.subservice: azure-devops-security
 ms.custom: pat-reduction
 ai-usage: ai-assisted

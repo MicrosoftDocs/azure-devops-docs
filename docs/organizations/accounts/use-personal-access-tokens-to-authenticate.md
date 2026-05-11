@@ -5,7 +5,6 @@ ms.custom: ai-video-demo, pat-reduction, copilot-scenario-highlight
 ai-usage: ai-assisted
 description: Learn how to create and manage personal access tokens (PATs) as alternate passwords to authenticate to Azure DevOps.
 ms.subservice: azure-devops-security
-ms.assetid: d980d58e-4240-47c7-977c-baaa7028a1d8
 ms.topic: how-to
 ms.author: chcomley
 author: chcomley
@@ -117,7 +116,7 @@ For more information, see [Configure an SMTP server and customize email for aler
 If you receive an unexpected PAT notification, it might mean that an administrator or tool created a PAT for you.
 Here are some examples:
 
-- A token named `git: https://dev.azure.com/{yourorganization} on YourMachine` is created when you connect to an Azure DevOps Git repo via git.exe.
+- A token named `git: https://dev.azure.com/{yourorganization} on YourMachine` is created when you connect to an Azure DevOps Git repo through git.exe.
 - A token named `Service Hooks: Azure App Service: Deploy web app` is created when you or an administrator sets up an Azure App Service web app deployment.
 - A token named `WebAppLoadTestCDIntToken` is created when web load testing is set up as part of a pipeline by you or an administrator.
 - A token named `Microsoft Teams Integration` is created when a Microsoft Teams Integration Messaging Extension is set up.
@@ -138,7 +137,7 @@ After your app code is working, switch to [Microsoft Entra OAuth to acquire toke
 Don't keep running apps or scripts with PATs long term.
 You can use Microsoft Entra tokens anywhere that a PAT is used.
 
-Consider [acquiring a Microsoft Entra token via the Azure CLI](../../cli/entra-tokens.md) for unplanned requests.
+Consider [acquiring a Microsoft Entra token through the Azure CLI](../../cli/entra-tokens.md) for unplanned requests.
 
 ### [Windows](#tab/Windows/)
 
@@ -228,7 +227,7 @@ If you integrate with PATs and have PAT validation built in, ensure your validat
 
 ### Consider alternatives
 
-- Acquire a Microsoft Entra token via the [Azure CLI](../../cli/entra-tokens.md) for unplanned requests instead of minting a longer-lived PAT.
+- Acquire a Microsoft Entra token through the [Azure CLI](../../cli/entra-tokens.md) for unplanned requests instead of minting a longer-lived PAT.
 - Use credential managers like [Git Credential Manager](https://github.com/git-ecosystem/git-credential-manager) or [Azure Artifacts Credential Manager](https://github.com/microsoft/artifacts-credprovider) to simplify credential management, with authentication set to `oauth` or Microsoft Entra tokens.
 
 ### Create PATs
@@ -243,7 +242,7 @@ If you integrate with PATs and have PAT validation built in, ensure your validat
 
 - *Don't share your PATs!*
 - *Store your PATs in a secure key management solution*, like [Azure Key Vault](/azure/key-vault/general/overview).
-- Regularly rotate or regenerate your PATs via the UI or by using PAT Lifecycle Management APIs.
+- Regularly rotate or regenerate your PATs through the UI or by using PAT Lifecycle Management APIs.
 - Revoke PATs when they're no longer needed.
 
 ### For admins

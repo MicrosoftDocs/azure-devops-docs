@@ -37,7 +37,7 @@ Sign up for Azure Pipelines with either a Microsoft account or GitHub account.
 
 ---
 
-## Next steps  
+## Next step  
 
 > [!div class="nextstepaction"]
 > [Create your first pipeline](../create-first-pipeline.md)

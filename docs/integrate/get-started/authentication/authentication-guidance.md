@@ -2,7 +2,6 @@
 title: Authentication Methods for Azure DevOps
 titleSuffix: Azure DevOps
 description: Choose the right authentication method for your Azure DevOps integration, with Microsoft Entra ID as the recommended approach.
-ms.assetid: 15CCEB1E-F42B-4439-8C35-B8A225F5546C
 ms.subservice: azure-devops-security
 ms.topic: concept-article
 ms.custom: arm2024, pat-reduction, copilot-scenario-highlight

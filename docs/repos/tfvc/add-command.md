@@ -2,7 +2,6 @@
 title:  Add TFVC command 
 titleSuffix: Azure Repos
 description: See how to use the Add command in Visual Studio to add files to a TFVC repository.
-ms.assetid: 0b61e4c6-a3da-48d6-bda0-7b14452049a4
 ms.service: azure-devops-repos
 ms.topic: reference
 ms.date: 10/06/2022

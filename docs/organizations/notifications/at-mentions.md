@@ -24,7 +24,7 @@ The **@mention** control helps you quickly add a user or group to a work item or
 For organizations that manage their users and groups using Microsoft Entra ID, people pickers support searching all users and groups within Microsoft Entra ID. You can search for users and groups beyond those users added to your project. For more information, see [Limit user visibility for projects and more](../../user-guide/manage-organization-collection.md#limit-user-visibility-for-projects-and-more).
 
 > [!NOTE]
-> You can post an @mention via API. To get the Azure DevOps User ID, see [Get the Azure DevOps User ID](/rest/api/azure/devops/graph/users/get?&preserve-view=true/view=azure-devops-rest-6.0).
+> You can post an @mention through API. To get the Azure DevOps User ID, see [Get the Azure DevOps User ID](/rest/api/azure/devops/graph/users/get?&preserve-view=true/view=azure-devops-rest-6.0).
 >
 > - If your organization uses the existing HTML editor, add the following HTML code:
 >   ```html

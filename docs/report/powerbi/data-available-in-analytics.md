@@ -49,6 +49,6 @@ When you query Analytics, you always specify an Analytics version. The latest ve
 > [!div class="nextstepaction"]
 > [Construct OData queries for Analytics](../analytics/analytics-query-parts.md)
 
-## Related articles
+## Related content
 
 - [Data model for Analytics](../extend-analytics/data-model-analytics-service.md)

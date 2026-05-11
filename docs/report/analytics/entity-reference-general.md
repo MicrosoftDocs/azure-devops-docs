@@ -30,7 +30,7 @@ The following properties are valid for the **CalendarDate** entity type. The sur
 
 |**Display name** | **Name**           | **Data type** | **Description** | 
 |-----------------|--------------------|---------------|--------------------------------------|
-|  | `IsLastDayOfPeriod` | Enumerated | Use to filter data to determine if a day finishes in different periods such as days, weeks, months, or years.  Valid values are listed below for [Period](#period-enumerated-type-members).|
+|  | `IsLastDayOfPeriod` | Enumerated | Use to filter data to determine if a day finishes in different periods such as days, weeks, months, or years. Valid values are listed below for [Period](#period-enumerated-type-members).|
 |**Date**         | `Date` | DateTime | A specific calendar date.  | 
 |**Day Name**     | `DayName` | String | The name of a day, such as Monday, Tuesday, Wednesday, and so on.   |
 |**Day Short Name** | `DayShortName` | String | The short name assigned to a day, such as Mon, Tue, Wed, and so on.  | 
@@ -60,7 +60,7 @@ When you aggregate data for a snapshot entity, you should include the `DateSK` o
 
 ### Period enumerated type members 
 
-The following members are defined for the `Period` enumerated type that you can use with other filter expressions to remove days that don't finish a given week or month.  Reference one of these members to specify a weekly or monthly period for trend queries that span a long time period. The `Period` enumerated type has a single attribute, `IsFlags`, which is set to `True`.  
+The following members are defined for the `Period` enumerated type that you can use with other filter expressions to remove days that don't finish a given week or month. Reference one of these members to specify a weekly or monthly period for trend queries that span a long time period. The `Period` enumerated type has a single attribute, `IsFlags`, which is set to `True`.  
 
 | Member name            | Value        | Display name          |  
 |------------------------|--------------|-----------------------|  
@@ -99,7 +99,7 @@ The following navigation properties are valid for the **Project** entity type.
 
 ### ProjectVisibility enumerated type members 
 
-The following members are defined for the `ProjectVisibility` enumerated type.  Reference one of these members to filter on specific projects.   
+The following members are defined for the `ProjectVisibility` enumerated type. Reference one of these members to filter on specific projects.   
 
  Member name            | Value        | Display name          |  
 ------------------------|--------------|-----------------------|  
@@ -132,7 +132,7 @@ The following members are defined for the `UserType` enumerated type.
 |`Organization`        | 3            | Organization           |     
 |`Bot`                 | 4            | Bot                    |  
 
-## Related articles
+## Related content
 
 - [Data model for Analytics](../extend-analytics/data-model-analytics-service.md)
 - [Entities and properties reference for Azure Boards](entity-reference-boards.md)   

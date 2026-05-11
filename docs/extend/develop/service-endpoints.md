@@ -4,7 +4,6 @@ title: Create a service endpoint
 titleSuffix: Azure DevOps
 description: Create a custom service endpoint to connect your Azure DevOps extension to an external service.
 ms.custom: engagement-fy23, UpdateFrequency3
-ms.assetid: ad0ea9de-620e-4605-8fcd-3c1443b26d8c
 ms.topic: tutorial
 monikerRange: '<= azure-devops'
 ms.author: chcomley
@@ -52,21 +51,7 @@ The steps involved in completing this task are:
 
 ## Create the manifest file: `vss-extension.json`
 
-The [manifest file](./manifest.md) defines the custom endpoint and links to the task.json manifest for the build task. 
-
-In this article, the manifest file creation is separated into the following three parts:
-
-- [Create a service endpoint](#create-a-service-endpoint)
-  - [Task overview](#task-overview)
-  - [Create the manifest file: `vss-extension.json`](#create-the-manifest-file-vss-extensionjson)
-    - [Create basic manifest file](#create-basic-manifest-file)
-    - [Add the custom endpoint contribution](#add-the-custom-endpoint-contribution)
-    - [Add the build task contribution](#add-the-build-task-contribution)
-  - [Create the build task](#create-the-build-task)
-    - [task.json components](#taskjson-components)
-  - [Authentication](#authentication)
-  - [Next steps](#next-steps)
-  - [Related content](#related-content)
+The [manifest file](./manifest.md) defines the custom endpoint and links to the task.json manifest for the build task.
 
 ### Create basic manifest file
 
@@ -304,7 +289,7 @@ The authentication scheme in a service endpoint determines the credentials that 
 - Certificate-based authentication
 - No authentication
 
-## Next steps
+## Next step
 
 > [!div class="nextstepaction"]
 > [Package, publish, and install extensions](../publish/overview.md)

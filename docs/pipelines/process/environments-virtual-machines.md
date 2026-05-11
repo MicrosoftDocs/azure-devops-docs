@@ -3,7 +3,6 @@ title: Manage VM resources in environments
 description: Learn how to create and use virtual machine (VM) resources in Azure Pipelines environments.
 ms.topic: how-to
 ms.custom: pipelinesresourcesrefresh
-ms.assetid: b318851c-4240-4dc2-8688-e70aba1cec55
 ms.manager: wiwagn
 ms.date: 09/08/2025
 monikerRange: "<=azure-devops"

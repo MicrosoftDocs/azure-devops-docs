@@ -3,7 +3,6 @@ title: Elements of Agile culture
 titleSuffix: Azure Boards 
 description: Create an Agile culture of autonomous teams and an aligned enterprise. Create the culture by using Agile tools when working in Azure Boards and Azure DevOps.
 ms.service: azure-devops-boards
-ms.assetid: 3C43B829-3514-4493-8D5A-896375835FE7  
 ms.author: chcomley
 author: chcomley
 ms.topic: best-practice
@@ -117,7 +116,7 @@ As you plan how you want to grow your Agile tool set, consider the following are
    :::column-end:::
    :::column span="2":::
       Beyond meeting the needs set by the organization, teams determine any other details they need to manage and track to reduce their risks. Whether they use a white board with sticky notes or a full Gantt chart, they manage the details.
-      For example, teams might add a backlog item to track a dependency they have on another team. Or they might track their risks via a list of issues or impediments. Also, teams regularly contribute to improving the process and infrastructure to support the organization's ability to manage risk and gain insights.
+      For example, teams might add a backlog item to track a dependency they have on another team. Or they might track their risks through a list of issues or impediments. Also, teams regularly contribute to improving the process and infrastructure to support the organization's ability to manage risk and gain insights.
    :::column-end:::
 :::row-end:::
 

@@ -4,7 +4,6 @@ titleSuffix: Azure DevOps Services
 description: Customize the web form for a work item type and Inheritance process model for a project  
 ms.custom: inherited-process   
 ms.service: azure-devops-boards
-ms.assetid: E0AACC40-9A9E-4A48-A1D7-1CE70D53EEA8  
 ms.author: chcomley
 author: chcomley
 monikerRange: "<=azure-devops"
@@ -17,7 +16,7 @@ ai-usage: ai-assisted
 
 [!INCLUDE [version-lt-eq-azure-devops](../../../includes/version-lt-eq-azure-devops.md)]
 
-Work items are the backbone for planning and tracking work. As such, make sure each work item type (WIT) tracks the data your team needs. 
+Work items are the backbone for planning and tracking work. As such, ensure each work item type (WIT) tracks the data your team needs. 
 
 [!INCLUDE [temp](../includes/note-on-prem-link.md)]
 

@@ -3,7 +3,6 @@ title: Create audit streaming for Azure DevOps
 titleSuffix: Azure DevOps 
 description: Get started sending your audit data to other locations for further processing for Azure DevOps, by creating and enabling a stream.  
 ms.subservice: azure-devops-audit
-ms.assetid: 
 ms.author: chcomley
 author: chcomley
 ms.topic: quickstart
@@ -32,7 +31,7 @@ Audit streams represent a pipeline that flows audit events from your Azure DevOp
 Private linked workspaces aren't supported today.
 
 > [!NOTE]
-> Auditing isn't available for on-premises deployments. It's possible to connect an audit stream to an on-premises or cloud-based instance of Splunk, but make sure you allow IP ranges for inbound connections. For details, see [Allowed address lists and network connections, IP addresses and range restrictions](../security/allow-list-ip-url.md#range-restrictions).
+> Auditing isn't available for on-premises deployments. It's possible to connect an audit stream to an on-premises or cloud-based instance of Splunk, but ensure you allow IP ranges for inbound connections. For details, see [Allowed address lists and network connections, IP addresses and range restrictions](../security/allow-list-ip-url.md#range-restrictions).
 
 ## Prerequisites
 
@@ -69,7 +68,7 @@ Private linked workspaces aren't supported today.
 
 ### Set up a Splunk stream
 
-Streams send data to Splunk via the HTTP Event Collector endpoint.
+Streams send data to Splunk through the HTTP Event Collector endpoint.
 
 1. Enable this feature in Splunk. For more information, see this [Splunk documentation](https://aka.ms/adostreamingsplunkdocumentation).
    
@@ -137,7 +136,7 @@ The stream is enabled and new events begin to flow within half an hour or less. 
 
 ## Edit a stream
 
-Details about your stream target can change over time. To reflect these changes in your streams, you can edit them. To edit a stream, make sure that you have the *Manage audit streams* permission.
+Details about your stream target can change over time. To reflect these changes in your streams, you can edit them. To edit a stream, ensure that you have the *Manage audit streams* permission.
 
 1. Next to the stream that you want to edit, select the vertical three dots on the far right, and then select **Edit stream**. 
 
@@ -163,7 +162,7 @@ You can re-enable a disabled stream. It catches up on any audit events that were
 
 ## Delete a stream
 
-To delete a stream, make sure that you have the *Delete audit streams* permission.
+To delete a stream, ensure that you have the *Delete audit streams* permission.
 
 > [!IMPORTANT]
 > Once you delete a stream, you can't get it back.

@@ -2,7 +2,6 @@
 title: Create and manage test plans
 titleSuffix: Azure Test Plans
 description: Learn how to create, rename, and delete test plans in Azure Test Plans.
-ms.assetid: 99FD819E-A861-4F28-A486-FD452DB65D69
 ms.service: azure-devops-test-plans
 ms.custom: UpdateFrequency3, copilot-scenario-highlight
 ai-usage: ai-assisted

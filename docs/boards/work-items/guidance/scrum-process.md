@@ -4,7 +4,6 @@ titleSuffix: Azure Boards
 ms.custom: work-items
 description: Learn how to use Scrum process objects to plan and track work and monitor progress and trends when you're connected to Azure DevOps.
 ms.service: azure-devops-boards
-ms.assetid: f4e77db3-e54c-472a-ba60-92ceb8331882
 ms.topic: overview
 ms.author: chcomley
 author: chcomley

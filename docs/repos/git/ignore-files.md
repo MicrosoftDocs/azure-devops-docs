@@ -2,7 +2,6 @@
 title: Ignore files in your Git repo
 titleSuffix: Azure Repos
 description: Learn how to exclude files from Git version control by using files, commands, and repo management.
-ms.assetid: 60982d10-67f1-416f-94ec-eba8d655f601
 ms.service: azure-devops-repos
 ms.topic: how-to
 ms.date: 02/14/2025

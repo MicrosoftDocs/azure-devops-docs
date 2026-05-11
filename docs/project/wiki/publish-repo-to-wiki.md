@@ -5,7 +5,6 @@ description: Maintain your Markdown files in a Git code repository and publish t
 ms.subservice: azure-devops-wiki
 ms.custom: wiki, devx-track-azurecli, devdivchpfy22, engagement-fy23
 ms.topic: how-to
-ms.assetid:
 ms.author: chcomley
 ms.reviewer: gopinach
 author: chcomley

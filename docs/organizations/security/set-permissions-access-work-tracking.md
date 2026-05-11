@@ -4,7 +4,6 @@ titleSuffix: Azure DevOps
 description: Learn how to grant or restrict access to work tracking tasks by setting object or project-level permissions for Azure DevOps, and default permissions for objects.
 ms.custom: boards-permissions, linked-from-support, engagement-fy23
 ms.subservice: azure-devops-security
-ms.assetid: 5AD0BF62-C91E-46DD-8C1A-C8D1F8F8D05F
 ms.author: chcomley
 author: chcomley
 ms.topic: how-to

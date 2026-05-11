@@ -3,7 +3,6 @@ title: Quick reference to dashboards, charts, and reports
 titleSuffix: Azure DevOps  
 description: An index of articles that explain dashboard, chart, report, and widget tasks for Azure Boards in Azure DevOps.
 ms.custom: dashboards
-ms.assetid: 7BAD53A1-080E-40E8-8866-24EC00395D39
 ms.subservice: azure-devops-analytics
 ms.author: chcomley
 author: chcomley
@@ -131,7 +130,7 @@ You can find additional functionality to add to your dashboard by installing Mar
 
  
 
-## Related articles
+## Related content
 
 - [About dashboards, charts, reports, & widgets](overview.md)
 - [FAQs on Azure DevOps dashboards, charts, and reports](faqs.yml)

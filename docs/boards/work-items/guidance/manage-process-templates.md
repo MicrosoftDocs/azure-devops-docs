@@ -4,7 +4,6 @@ titleSuffix: Azure DevOps
 description: Learn how to upload, download, delete, or make default a process template for a project collection in Azure Boards.
 ms.custom: work-items, engagement-fy23
 ms.service: azure-devops-boards
-ms.assetid: 5D5AF176-B3C6-47AD-87FF-5FAFE1BA4AAE
 ms.topic: how-to
 ms.author: chcomley
 author: chcomley
@@ -48,7 +47,7 @@ You can also set a template as the default for new projects.
 
 ## Import a process template (Hosted XML process)   
 
-1.  From the **Processes** tab, select **Import process**, and then drag and drop or browse to the .zip file of the process you customized.
+1. From the **Processes** tab, select **Import process**, and then drag and drop or browse to the .zip file of the process you customized.
 
 	> [!div class="mx-imgBorder"]  
 	> ![Screenshot of Import Process link.](../../../organizations/settings/work/import-process/media/import-process-import-link.png)
@@ -56,7 +55,7 @@ You can also set a template as the default for new projects.
     > [!NOTE]    
     > If the **Import process** link doesn't appear, your organization isn't set up to support the Hosted XML process model. Use the [Inheritance process model](../../../organizations/settings/work/manage-process.md) for your customization needs. The Hosted XML process model is only supported if your account was created through the [Data Import Service](../../../migrate/migration-overview.md).
 
-2.  Select the file to upload. Your [custom process must meet specific constraints](../../../organizations/settings/work/import-process/customize-process.md) to pass validation checks during import.
+2. Select the file to upload. Your [custom process must meet specific constraints](../../../organizations/settings/work/import-process/customize-process.md) to pass validation checks during import.
 
 	> [!div class="mx-imgBorder"]  
 	> ![Import process dialog for selecting a process file.](../../../organizations/settings/work/import-process/media/import-process-dialog.png)
@@ -67,14 +66,14 @@ You can also set a template as the default for new projects.
 	> [!IMPORTANT]  
 	> You can't update the locked processes: Agile, Basic, CMMI, and Scrum.
 
-3.  After a successful import, a confirmation message appears.
+3. After a successful import, a confirmation message appears.
 
 	> [!div class="mx-imgBorder"]  
 	> ![Screenshot shows Import process success confirmation dialog.](../../../organizations/settings/work/import-process/media/import-process-success-dialog.png)
 
     If the process doesn't pass validation checks, a list of error messages appears. [Correct each error](../../../organizations/settings/work/import-process/resolve-errors.md) and retry the import.
 
-4.  You can immediately create a project using the newly imported process.
+4. You can immediately create a project using the newly imported process.
 
 	> [!div class="mx-imgBorder"]  
 	> ![Screenshot of Import process actions menu, Create new team project from imported process.](../../../organizations/settings/work/import-process/media/import-process-new-team-project.png)

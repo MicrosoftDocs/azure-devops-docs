@@ -3,7 +3,6 @@ title: Analytics permissions and security
 titleSuffix: Azure DevOps     
 description: Learn about the required permissions necessary to access Analytics and how to handle project access denied errors.
 ms.subservice: azure-devops-analytics
-ms.assetid: 868DC7E6-540C-4F9F-B4A3-7680F1C49FC9
 ms.author: chcomley
 author: chcomley
 ms.topic: how-to
@@ -104,7 +103,7 @@ This behavior is different from the behavior provided by the current Work Item Q
 
 Because of this scenario, the recommended approach for querying Analytics is to always provide a project level filter instead of using a global query. For information on providing a project level filter, see [WIT analytics](../extend-analytics/wit-analytics.md).
 
-## Related articles 
+## Related content 
 
 -  [Change project-level permissions](../../organizations/security/change-project-level-permissions.md)
 -  [Power BI integration overview](overview.md)

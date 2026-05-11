@@ -106,7 +106,7 @@ By default, all team members have permissions to create and edit dashboards for 
 
 ::: moniker-end
 
-## Related articles
+## Related content
 
 - [Add, rename, and delete dashboards](dashboards.md)
 - [Add users to a project or specific team](../../organizations/security/add-users-team-project.md)

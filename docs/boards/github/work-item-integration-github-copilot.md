@@ -3,7 +3,6 @@ title: Use GitHub Copilot with Azure Boards
 titleSuffix: Azure Boards
 description: Learn how to use GitHub Copilot with work items to automatically create pull requests and track coding progress in Azure DevOps.
 ms.service: azure-devops-boards
-ms.assetid: 
 ms.author: chcomley
 author: chcomley
 ms.topic: how-to
@@ -62,7 +61,7 @@ This broad support means you can use GitHub Copilot with work items from any pro
 4. Select the target GitHub repository and branch where Copilot should create the pull request.
    
    > [!NOTE]
-   > Only GitHub repositories connected via GitHub App authentication appear in the repository list. Azure Repos aren't supported.
+   > Only GitHub repositories connected through GitHub App authentication appear in the repository list. Azure Repos aren't supported.
 
 5. (Optional) Add special instructions to guide Copilot's implementation approach. For example, you could add, "Create README with setup instructions".
 
@@ -153,7 +152,7 @@ For more information, see our training module, [Get started with GitHub Copilot]
   - Verify the GitHub App connection between Azure DevOps and GitHub.
   - Ensure you have access to GitHub repositories (not Azure Repos).
   - Check repository permissions and GitHub App authentication.
-  - Confirm the repository is connected via the proper GitHub App integration.
+  - Confirm the repository is connected through the proper GitHub App integration.
 
 ### Copilot errors
 - **Problem**: Coding agent encounters errors.

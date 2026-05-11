@@ -343,6 +343,6 @@ Your report should look similar to the following image.
 
 :::image type="content" source="media/pipeline-reports/stagewise-stacked-bar-report.png" alt-text="Screenshot of Power BI Pipelines sample stagewise failures stacked column report."::: 
 
-## Related articles
+## Related content
 
 [!INCLUDE [temp](includes/sample-related-articles-pipelines.md)]

@@ -4,7 +4,6 @@ titleSuffix: Azure DevOps
 description: Customize the web version of the work item form in Azure DevOps Services & Team Foundation Server    
 ms.service: azure-devops-boards
 ms.custom: process, engagement-fy23
-ms.assetid: 4DE53686-3349-41B8-A361-814B2519E60F
 ms.author: chcomley
 author: chcomley
 ms.topic: how-to
@@ -17,7 +16,7 @@ ai-usage: ai-assisted
 
 [!INCLUDE [version-lt-azure-devops](../includes/version-lt-azure-devops.md)]  
 
-This article applies to customizations you can make when you use the Hosted XML process model or the On-premises Xml process model for an on-premises Azure DevOps Server.  For the Inheritance process model, see [Customize a process](../organizations/settings/work/customize-process.md). For an overview of process models, see [Customize your work tracking experience](customize-work.md). 
+This article applies to customizations you can make when you use the Hosted XML process model or the On-premises Xml process model for an on-premises Azure DevOps Server. For the Inheritance process model, see [Customize a process](../organizations/settings/work/customize-process.md). For an overview of process models, see [Customize your work tracking experience](customize-work.md). 
 
 
 ## Import and export XML definition files 

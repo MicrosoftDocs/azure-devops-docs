@@ -4,7 +4,6 @@ titleSuffix: Azure DevOps
 description: Choose how to get bugs and user stories to appear on Agile tools in Azure Boards. You can track bugs as requirements or tasks.
 ms.service: azure-devops-boards
 ms.custom: teams. engagement-fy23
-ms.assetid: 27DCB879-30F6-44F3-998A-755DF66D6E24
 ms.author: chcomley
 author: chcomley
 ms.topic: how-to

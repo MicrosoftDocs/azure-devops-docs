@@ -31,7 +31,7 @@ The following table describes the entity sets that you can use to create histori
 |[**TestPointHistorySnapshot**](../analytics/entity-reference-test-plans.md#testpointhistorysnapshot) | (Composite) Individual execution results for a specific **Test** associated with a **TestRun**. |[Manual test execution trend sample report](sample-test-plans-execution-trend.md)| 
 |[**TestResultsDaily**](../analytics/entity-reference-test-plans.md#testresultsdaily) | A daily snapshot aggregate of **TestResult** executions, grouped by Test.|[Test summary trend sample report](../powerbi/sample-test-summary-trend.md)| 
 
-A snapshot provides a record of the values defined for the entity type each day. The record is written to Analytics once a day at the same time each day. You use snapshots when you want to generate a trend report.  By default, all the snapshot tables are modeled as daily snapshot fact tables. If you query for a time range it will get a value for each day. Long time ranges result in a large number of records. If you don't need such high precision, you can use weekly or even monthly snapshots.
+A snapshot provides a record of the values defined for the entity type each day. The record is written to Analytics once a day at the same time each day. You use snapshots when you want to generate a trend report. By default, all the snapshot tables are modeled as daily snapshot fact tables. If you query for a time range it will get a value for each day. Long time ranges result in a large number of records. If you don't need such high precision, you can use weekly or even monthly snapshots.
 
 ## Periodic snapshot fact tables
 
@@ -143,7 +143,7 @@ For more information, see [Install or enable the Analytics service](../dashboard
 
 To restate, when reporting on historical data, all filters are applied to the work item's version as-of the historical point in time. Work items will appear in your trend when they meet the filter criteria. They'll disappear from your trend when they no longer meet the filter criteria.  
 
-## Related articles
+## Related content
 
 - [OData Analytics query guidelines](../extend-analytics/odata-query-guidelines.md)
 - [Entities and properties reference for Azure Boards](../analytics/entity-reference-boards.md)

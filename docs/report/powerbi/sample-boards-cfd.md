@@ -260,6 +260,6 @@ https://analytics.dev.azure.com/{organization}/{project}/_odata/V3.0-preview/Boa
 > [!NOTE]
 > If any work items are in a column that you deleted, they appear as "Blank" in the preceding report. 
 
-## Related articles
+## Related content
 
 [!INCLUDE [temp](includes/sample-relatedarticles.md)]

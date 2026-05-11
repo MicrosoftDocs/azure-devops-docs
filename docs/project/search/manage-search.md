@@ -1,7 +1,6 @@
 ---
 title: Manage Search, indexing
 description: Check indexing status, pause, resume, and reindex repositories or collections for Search in Azure DevOps Server.
-ms.assetid: 
 ms.custom: engagement-fy23
 ms.subservice: azure-devops-search
 ai-usage: ai-assisted
@@ -36,7 +35,7 @@ You can download all of these scripts from the **[Code-Search GitHub repository]
 Use the **Download ZIP** option to download all scripts into a local folder on the server that runs the database for Azure DevOps Server.
 
 The PowerShell scripts require the SQL script files.
-Make sure the **SqlScripts** folder and its contents are present, along with the PowerShell scripts.
+Ensure the **SqlScripts** folder and its contents are present, along with the PowerShell scripts.
 
 :::image type="content" source="media/administration/script-filesv2.png" alt-text="Screenshot showing download script files for administration." border="true":::
 

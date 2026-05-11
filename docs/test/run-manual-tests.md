@@ -1,7 +1,6 @@
 ---
 title: Run Manual Tests with Azure Test Plans
 description: Run manual tests in Azure Test Plans to validate web and desktop apps, capture diagnostics, and manage bugs. Start testing your software today.
-ms.assetid: 616919f3-7339-4813-9dcf-82ead3476b1a
 ms.service: azure-devops-test-plans
 ms.custom: UpdateFrequency3
 ms.topic: how-to

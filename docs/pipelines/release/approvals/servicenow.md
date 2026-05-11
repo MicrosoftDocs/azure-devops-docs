@@ -1,7 +1,6 @@
 ---
 title: Integrate with ServiceNow change management
 description: Learn how to integrate ServiceNow change management by using gated releases with the Azure Pipelines ServiceNow extension.
-ms.assetid: 0824A7C4-9353-4BDA-B652-5B826E0EF2A5
 ms.topic: tutorial
 ms.author: ericvan
 author: geekzter

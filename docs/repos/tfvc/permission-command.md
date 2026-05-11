@@ -2,7 +2,6 @@
 title: Permission command (Team Foundation Version Control)
 titleSuffix: Azure Repos
 description: Use the TFVC permission command to modify the user access control list (ACL) and display authorization settings for an item.
-ms.assetid: 7a0b5521-ee07-44eb-9b8f-f145d918ebeb
 ms.service: azure-devops-repos
 ms.topic: reference
 ms.date: 11/29/2022

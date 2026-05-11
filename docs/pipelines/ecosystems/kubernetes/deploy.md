@@ -2,7 +2,6 @@
 title: Deploy to Kubernetes
 description: Use Azure Pipelines to deploy to Kubernetes clusters
 ms.topic: how-to
-ms.assetid: 710a03c9-d8ba-4013-bf8f-e672efc7abe4
 ms.date: 05/27/2025
 monikerRange: '>= azure-devops-2022'
 ms.custom: engagement-fy23

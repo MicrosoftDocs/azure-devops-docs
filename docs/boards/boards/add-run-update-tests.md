@@ -4,7 +4,6 @@ titleSuffix: Azure Boards
 description: Learn how to add, run, update, and track manual test cases inline in your board work items for lightweight management.
 ms.custom: boards-kanban 
 ms.service: azure-devops-boards
-ms.assetid: ED3CC394-EE6C-4E12-A2BC-F43A0EE17318  
 ms.author: chcomley
 author: chcomley
 ms.topic: how-to

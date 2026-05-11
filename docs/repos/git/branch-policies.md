@@ -2,7 +2,6 @@
 title: Git branch policies and settings
 titleSuffix: Azure Repos
 description: Branch policies and settings provide teams with the means to protect their important branches.
-ms.assetid: 5D76697E-16A0-4048-91D1-806FE24C92A3
 ms.service: azure-devops-repos
 ms.topic: overview
 ms.custom: cross-service, devx-track-azurecli

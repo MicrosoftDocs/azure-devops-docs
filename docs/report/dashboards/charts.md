@@ -4,7 +4,6 @@ titleSuffix: Azure DevOps
 description: Learn how to add status, progress, and trend charts to dashboards from flat-list queries in Azure DevOps.
 ms.custom: dashboards, copilot-scenario-highlight, awp-ai
 ms.subservice: azure-devops-analytics
-ms.assetid: EFAD32DB-8B19-4ACC-8F72-87CC5A513798
 ms.author: chcomley
 author: chcomley
 ms.topic: how-to
@@ -177,7 +176,7 @@ If you configure the [Azure DevOps MCP Server](../../mcp-server/mcp-server-overv
 
 ::: moniker-end
 
-## Related articles
+## Related content
 
 - [Example query charts](../../boards/queries/example-query-charts.md)
 - [Chart for Work Items widget](configure-chart-work-items-widget.md)

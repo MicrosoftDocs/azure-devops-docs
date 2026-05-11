@@ -234,7 +234,7 @@ Analytics supports several widgets and built-in reports. In addition, we've crea
 - [WIQL to OData](https://marketplace.visualstudio.com/items?itemName=ms-eswm.wiql-to-odata)
 - [OData for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=stansw.vscode-odata)  
 
-## Related articles
+## Related content
 
 - [Power BI](../powerbi/overview.md)  
 - [Dashboards, charts, reports, & widgets](../dashboards/overview.md)  

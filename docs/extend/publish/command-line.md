@@ -3,7 +3,6 @@ ms.subservice: azure-devops-ecosystem
 title: Publish an Azure DevOps Extension From the Command Line
 description: Learn how to publish your Azure DevOps extension from the command line using tfx-cli. Follow step-by-step instructions for Microsoft Entra or PAT authentication.
 #customer intent: As a developer, I want to learn how to publish an Azure DevOps extension from the command line so that I can automate the deployment process.
-ms.assetid: 7adcb1a2-1894-4751-8bed-7c04d084b5cf
 ms.topic: how-to
 monikerRange: '<= azure-devops'
 ms.author: chcomley
@@ -24,7 +23,7 @@ For more information, see the overview of [publish, install, and share](./overvi
 
 | Category | Requirements |
 |----------|-------------|
-| **Tools** | [Cross-platform CLI for Azure DevOps (tfx-cli)](#get-the-tfx-cli-tool) installed via npm |
+| **Tools** | [Cross-platform CLI for Azure DevOps (tfx-cli)](#get-the-tfx-cli-tool) installed through npm |
 | **Authentication** | A [Microsoft Entra token](#publish-with-a-microsoft-entra-token) (recommended) or a [personal access token (PAT)](../../organizations/accounts/use-personal-access-tokens-to-authenticate.md) with **Marketplace (publish)** scope |
 | **Publisher** | A [publisher account](./overview.md) set up in the Visual Studio Marketplace |
 
@@ -45,7 +44,7 @@ npm install -g tfx-cli
 You can publish an extension as a [service principal](../../integrate/get-started/authentication/service-principal-managed-identity.md).
 
 1. Add the service principal as a member to a publisher account.
-   Get the service principal's ID through the REST API by signing in via the Azure CLI and querying the service principal's profile:
+   Get the service principal's ID through the REST API by signing in through the Azure CLI and querying the service principal's profile:
 
 # [Bash](#tab/bash)
 
@@ -75,7 +74,7 @@ $response
 
 Then, use the ID from the previous step to [add the service principal as a member](/visualstudio/extensibility/walkthrough-publishing-a-visual-studio-extension#add-additional-users-to-manage-your-publisher-account) to the publisher.
 
-1. Publish an extension via [TFX CLI](/azure/devops/extend/publish/command-line) using a service principal. Run the following [TFX CLI](https://github.com/microsoft/tfs-cli/blob/master/docs/extensions.md) command to use its access token:
+1. Publish an extension through [TFX CLI](/azure/devops/extend/publish/command-line) using a service principal. Run the following [TFX CLI](https://github.com/microsoft/tfs-cli/blob/master/docs/extensions.md) command to use its access token:
 ```
 tfx extension publish --publisher my-publisher --vsix my-publisher.my-extension-1.0.0.vsix --auth-type pat -t <ENTRA_TOKEN>
 ```

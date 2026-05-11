@@ -3,7 +3,6 @@ title: Update Work Items with Templates in Azure Boards
 titleSuffix: Azure Boards
 description: Add and manage Azure DevOps work item templates, update work items, and prepopulate work item fields in the web portal and Visual Studio.
 ms.service: azure-devops-boards
-ms.assetid: 9b575c05-16f3-4027-aa5a-67b017a0089d
 ms.author: chcomley
 author: chcomley
 ms.topic: how-to
@@ -165,7 +164,7 @@ From the work item type page, select :::image type="icon" source="../media/icons
 
 - **Delete**: To remove the template, select **Delete**. In the confirmation dialog, select **Delete**. After you delete a template, you can't recover it.
 
-- **Copy link**: To get a copy of the URL for the template, select **Copy link**. Use the URL whenever you want to add a work item of the same type with predefined values. You can save the URL as a text file, add it to a web page as a hyperlink, copy the link to a shared network, or send it to your team via email. Also, consider [adding a link to the team dashboard](#add-a-template-link-to-a-team-dashboard).
+- **Copy link**: To get a copy of the URL for the template, select **Copy link**. Use the URL whenever you want to add a work item of the same type with predefined values. You can save the URL as a text file, add it to a web page as a hyperlink, copy the link to a shared network, or send it to your team through email. Also, consider [adding a link to the team dashboard](#add-a-template-link-to-a-team-dashboard).
 
 - **Create copy**: To make a copy of the template, select **Create copy**. Enter a name for the template copy, and optionally add, remove, and update fields. Select **Save** when you're done. 
 
@@ -205,7 +204,7 @@ Use the following procedure to define a work item template in Visual Studio and 
 
 ### Edit, use, copy, or delete a template
 
-You can perform several other actions on a work item template in Visual Studio and Team Explorer via the right-click context menu.
+You can perform several other actions on a work item template in Visual Studio and Team Explorer through the right-click context menu.
 
 - **Edit**, **Copy**, **Delete**, and more: In the **Team Explorer** pane **Work Item Templates** section, right-click the work item template and select the desired action: 
 

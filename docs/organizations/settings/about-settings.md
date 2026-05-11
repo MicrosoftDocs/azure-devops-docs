@@ -257,7 +257,7 @@ From the administrative **Project settings** page, you can configure settings av
    :::column-end:::
    :::column span="2":::
       - Set project description
-      - [Change the project visibility, public or private](../projects/make-project-public.md)
+      - [Change project visibility to private](../projects/make-project-public.md)
    :::column-end:::
    :::column span="2":::
       Update the project description or change its visibility.
@@ -783,7 +783,7 @@ For an overview of managing collections, see [Configure and manage Azure DevOps 
 
 Members of the [Team Foundation Server Administrators group](/azure/devops/server/admin/add-administrator) configure resources for all project collections. They also can do all tasks to administer projects, collections, and server instances.     
 
-Server Administrators set access levels for a user or security group via the web portal. See [Change access levels](../security/change-access-levels.md). 
+Server Administrators set access levels for a user or security group through the web portal. See [Change access levels](../security/change-access-levels.md). 
 
 For more information, see [Team Foundation Server Administration Documentation](/azure/devops/server/server).
 

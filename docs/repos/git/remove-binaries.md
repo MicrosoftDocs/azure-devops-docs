@@ -1,7 +1,6 @@
 ---
 title: Remove Large Binaries from Your Git History
 description: Learn how to remove a large binary from your Git history to manage the size of cloned repositories.
-ms.assetid: ea4cadcc-c8c7-4f05-adc3-9a3ba07a2bd6
 ms.topic: how-to
 ms.service: azure-devops-repos
 ms.date: 04/27/2018

@@ -4,7 +4,6 @@ titleSuffix: Azure DevOps
 description: Create and embed work items with selected text in wiki content in Azure DevOps.
 ms.subservice: azure-devops-wiki
 ms.custom: wiki, devdivchpfy22
-ms.assetid: 
 ms.author: chcomley
 author: chcomley
 ms.reviewer: anian

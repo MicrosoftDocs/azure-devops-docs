@@ -2,7 +2,6 @@
 title: Labels command (Team Foundation Version Control)
 titleSuffix: Azure Repos
 description: See how to use the tf labels command to list the labels in the server for Team Foundation Version Control (TFVC).
-ms.assetid: 7772bc3d-7c43-47d8-ba5c-eee89aeed3ce
 ms.service: azure-devops-repos
 ms.topic: reference
 ms.date: 11/15/2022

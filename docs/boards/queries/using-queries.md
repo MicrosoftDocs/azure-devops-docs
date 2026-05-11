@@ -4,7 +4,6 @@ titleSuffix: Azure Boards
 description: Learn how to use queries and perform tasks like define a flat-list, clause, or hyperlink, and use a tree, direct link, hyperlink, or logical expression. Also learn how to query across or within projects and view results in a dashboard, and best practices.
 ms.custom: boards-queries, linked-from-support, cross-project, engagement-fy23, copilot-scenario-highlight
 ms.service: azure-devops-boards
-ms.assetid: 364000d3-200a-495a-bfb9-83915240af67
 ai-usage: ai-assisted
 ms.author: chcomley
 author: chcomley
@@ -254,7 +253,7 @@ For example, search for all work items assigned to you by specifying the **Assig
 > [!IMPORTANT]
 > Use the [default view](../work-items/view-add-work-items.md?view=azure-devops&tabs=visual-studio&preserve-view=true#view-work-items) instead of this legacy view. The default view is designed for you to quickly access a list of work items based on your assignment, following, mentioned, or recent updates. The legacy view is no longer being enhanced and is expected to be removed in a future release of Visual Studio.
 
-Select **Click here to add a clause** to add another clause at the end of the query, and then select the **Field**, **Operator**, and **Value** for that clause.  
+Select **Select here to add a clause** to add another clause at the end of the query, and then select the **Field**, **Operator**, and **Value** for that clause.  
 
 :::image type="content" source="media/using-queries/visual-studio-add-new-clause.png" alt-text="Screenshot of Visual Studio Query Editor, add new clause.":::  
 
@@ -392,7 +391,7 @@ You can also group several grouped clauses. Check the boxes of each clause. Then
 
 If your query results don't return expected results, try the following steps: 
 
-- Make sure that each clause is defined as you intended.  
+- Ensure that each clause is defined as you intended.  
 - Verify `And`/`Or` assignments to each clause. If your results contain more work items than expected, often an `Or` clause is present instead of an `And` clause.  
 - Determine if you need to group or change the grouping of the query clauses and the `And`/`Or` assignments of each grouped clause.  
 - Add more query clauses to refine your query filter criteria.  
@@ -432,7 +431,7 @@ To view the results of a query with the **Parent** title displayed, complete the
 1. Create a query that filters the work items of interest. The query can be a flat-list, tree, or direct-links query. 
 1. Add the **Parent** field as a column. While you can include the **Parent** field, the default behavior might only show the ID of the parent work item. To ensure that the name displays alongside the ID, combine the **Work Item Type** and **Parent** fields with the **Title** field in the query structure. 
 1. Save the query as a Shared query or Team favorite. 
-1. Add the **Query results widget** to your dashboard and configure the query. Make sure the Parent field is set to display. 
+1. Add the **Query results widget** to your dashboard and configure the query. Ensure the Parent field is set to display. 
 
 The following image illustrates a query results widget that displays the **Parent** field. 
 

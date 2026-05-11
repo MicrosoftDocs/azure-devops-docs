@@ -4,7 +4,6 @@ titleSuffix: Azure Boards
 description: Learn how to add work item tags to categorize and filter lists & boards when working in Azure Boards.
 ms.custom: boards-queries, copilot-scenario-highlight
 ms.service: azure-devops-boards
-ms.assetid: 79A08F31-BB8A-48BD-AD17-477EE0B76BC7
 ms.author: chcomley
 author: chcomley
 ms.topic: how-to
@@ -120,7 +119,7 @@ Highlight tags on board cards by color-coding them. These colors only appear on 
 
 You can't group a query-based chart by tags, but, you can group a **Chart for Work Items** widget by tags that you add to a dashboard. This feature is in public preview. To enable it, see [Manage or enable features](../../project/navigation/preview-features.md) and turn on **Enable group by tags for work item chart widget on dashboard**. 
 
-To group a **Chart for Work Items** widget by tags, complete the same steps provided in [Add a chart to a dashboard](../../report/dashboards/charts.md#add-a-chart-to-a-dashboard). Make sure that your flat-list query contains **Tags** in the query clause or as a column option. Then, choose **Tags** for the **Group by** selection. To filter the chart to show only some tags, choose the **Selected tags** radio button and then choose the tags you want the chart to display.  
+To group a **Chart for Work Items** widget by tags, complete the same steps provided in [Add a chart to a dashboard](../../report/dashboards/charts.md#add-a-chart-to-a-dashboard). Ensure that your flat-list query contains **Tags** in the query clause or as a column option. Then, choose **Tags** for the **Group by** selection. To filter the chart to show only some tags, choose the **Selected tags** radio button and then choose the tags you want the chart to display.  
 
 :::image type="content" source="../../report/dashboards/media/charts/configure-chart-widget-tags.png" alt-text="Screenshot shows Chart by Work Items configured to group by tags.":::
 

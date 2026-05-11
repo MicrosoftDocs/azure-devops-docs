@@ -3,7 +3,6 @@ title: Get list of organizations connected to Microsoft Entra ID
 titleSuffix: Azure DevOps
 description: Learn how to download a complete list of organizations backed by or connected to Microsoft Entra ID.
 ms.subservice: azure-devops-organizations
-ms.assetid: 629a48b6-b2ab-4706-8256-d187c8ed5ce7
 ms.topic: how-to
 ms.author: chcomley
 author: chcomley
@@ -65,7 +64,7 @@ To get started, see [Azure DevOps CLI](../../cli/index.md).
 
    This command lists all the tenants you have access to.
 
-2.  There's no direct Azure CLI command to list Azure DevOps organizations connected to a specific Microsoft Entra ID tenant.
+2. There's no direct Azure CLI command to list Azure DevOps organizations connected to a specific Microsoft Entra ID tenant.
     However, you can use the Azure DevOps REST API in combination with the Azure CLI.
 
    1. Set the Azure DevOps organization and project:

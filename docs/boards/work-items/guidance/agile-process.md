@@ -4,7 +4,6 @@ titleSuffix: Azure Boards
 description: Learn to use agile process artifacts to plan and track work and monitor progress. Learn to use trends when you connect to Azure Boards and Azure DevOps.
 ms.custom: work-items
 ms.service: azure-devops-boards
-ms.assetid: 28e9cb42-f049-45eb-a2d8-f7a3b93471b8
 ms.topic: overview
 ms.author: chcomley
 author: chcomley

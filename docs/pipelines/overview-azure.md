@@ -1,7 +1,6 @@
 ---
 title: Deploy to Azure services with Azure Pipelines
 description: Discover how Azure Pipelines connects with Azure services like App Service, Kubernetes, and databases to optimize your CI/CD processes.
-ms.assetid: BC7FACEF-6E79-4BBA-BF53-07BD27EEB235
 ms.author: rabououn
 ms.reviewer: ramiMSFT
 author: ramiMSFT

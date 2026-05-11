@@ -3,7 +3,6 @@ title: Understand dashboards, charts, reports, and widgets
 titleSuffix: Azure DevOps  
 description: Learn about charts, widgets, dashboards, and reports available to monitor status and trends in Azure DevOps.
 ms.custom: dashboards
-ms.assetid: 7BAD53A1-080E-40E8-8866-24EC00395D39
 ms.subservice: azure-devops-analytics
 ms.author: chcomley
 author: chcomley
@@ -421,12 +420,12 @@ Azure Advisor is a personalized cloud consultant that helps you follow best prac
 
 For more information, see [Introduction to Azure Advisor](/azure/advisor/advisor-overview).
 
-## Next steps
+## Next step
 
 > [!div class="nextstepaction"]
 > [Add a widget to a dashboard](add-widget-to-dashboard.md)
 
-## Related articles
+## Related content
 
 - [FAQs on Azure DevOps dashboards, charts, and reports](faqs.yml)
 - [Widget catalog](widget-catalog.md)

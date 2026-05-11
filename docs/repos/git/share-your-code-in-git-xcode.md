@@ -2,7 +2,6 @@
 title: Share your Xcode project with Git and Azure Repos
 titleSuffix: Azure Repos
 description: Learn how to share and collaborate on Xcode projects using Azure Repos with modern authentication methods including Microsoft Entra ID tokens and SSH keys.
-ms.assetid: "f1fedd72-d9b9-45cf-99aa-2e624c899c45"
 ms.service: azure-devops-repos
 ms.topic: how-to
 ms.date: 02/24/2026

@@ -3,7 +3,6 @@ title: Supported roles for software development
 titleSuffix: Azure DevOps
 description: Understand how Azure DevOps tools support various software development roles
 ms.subservice: azure-devops-new-user
-ms.assetid: 4600B0D9-3799-4902-814B-F6EC9098C4CE
 ms.author: chcomley
 author: chcomley
 ms.topic: overview
@@ -67,7 +66,7 @@ You can integrate Microsoft Excel with Azure DevOps to plan and track your work.
 
 ### Scrum masters
 
-Scrum masters help to facilitate scrum to the larger team by ensuring the scrum framework gets followed. They're committed to the practices, but stay flexible and open to opportunities for the team to improve their workflow. Scrum masters utilize the same features as [product owners](#product-owners).
+Scrum masters help to facilitate scrum to the larger team by ensuring the scrum framework gets followed. They're committed to the practices, but stay flexible and open to opportunities for the team to improve their workflow. Scrum masters use the same features as [product owners](#product-owners).
 ### DevOps: builders, testers, and release managers
 
 An advantage of working with Azure DevOps is the suite of tools and integrated functionality that support build, testing, and deploying software applications. See the following general DevOps-associated tasks that Azure DevOps supports.

@@ -2,7 +2,6 @@
 title: Dates in Git
 titleSuffix: Azure Repos
 description: Learn how dates work in Git.
-ms.assetid: c5e233e2-cc84-4ca6-8ca3-8eb6d686533a
 ms.service: azure-devops-repos
 ms.topic: overview
 ms.date: 03/14/2018

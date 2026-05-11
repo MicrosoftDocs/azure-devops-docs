@@ -175,7 +175,7 @@ For automatic refresh problems:
 1. **Monitor gateway connectivity**: Verify on-premises gateway connectivity if applicable.
 1. **Review refresh history**: Check Power BI refresh logs for specific error details.
 
-## Related articles
+## Related content
 
 - [Create an Analytics view](analytics-views-create.md) 
 - [Manage Analytics views](analytics-views-manage.md)

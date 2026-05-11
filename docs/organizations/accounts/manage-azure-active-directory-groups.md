@@ -3,7 +3,6 @@ title: Manage access with Microsoft Entra groups
 titleSuffix: Azure DevOps Services
 description: Learn how to control who can access Azure DevOps with Microsoft Entra groups
 ms.subservice: azure-devops-organizations
-ms.assetid: 882E6E07-F407-478A-9DCC-9324493CBE11
 ms.topic: how-to
 ms.author: chcomley
 author: chcomley
@@ -49,7 +48,7 @@ For more information on [Microsoft Entra ID benefits](/azure/active-directory/fu
 
     [Why am I asked to choose between my work or school account and my personal account?](faq-user-and-permissions-management.yml#ChooseOrgAcctMSAcct)
 
-2.  Go to **Organization settings**.
+2. Go to **Organization settings**.
 
     ![Screenshot showing highlighted Organization settings button.](../../media/settings/open-admin-settings-vert.png)
 
@@ -73,7 +72,7 @@ For more information on [Microsoft Entra ID benefits](/azure/active-directory/fu
 
     [Why am I asked to choose between my work or school account and my personal account?](faq-user-and-permissions-management.yml#ChooseOrgAcctMSAcct)
 
-2.  Go to **Organization settings**.
+2. Go to **Organization settings**.
 
     ![Screenshot showing highlighted Organization settings button.](../../media/settings/open-admin-settings-vert.png)
 

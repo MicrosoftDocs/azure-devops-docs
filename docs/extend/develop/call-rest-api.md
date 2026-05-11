@@ -4,7 +4,6 @@ ms.custom: devx-track-js, UpdateFrequency3
 title: Call a REST API
 titleSuffix: Azure DevOps
 description: Call Azure DevOps REST APIs from your extension using the REST client services.
-ms.assetid: 99794e1e-0127-4e65-83fb-93a71f496d93
 ms.topic: how-to
 monikerRange: '<= azure-devops'
 ms.author: chcomley

@@ -4,7 +4,6 @@ titleSuffix: Azure DevOps
 description: Learn how to publish and enable refresh of a Power BI Desktop file to Power BI that uses Analytics for Azure DevOps.
 ms.subservice: azure-devops-analytics
 ms.topic: how-to
-ms.assetid: C03A04EC-F011-4043-A38E-5C5394F777CE
 ms.author: chcomley
 monikerRange: "<=azure-devops"
 author: chcomley
@@ -25,7 +24,7 @@ This article explains how to share your Power BI Desktop file, along with its da
 
 ## Publish to Power BI
 
-1. If you're using an [Analytics view](what-are-analytics-views.md), make sure the view is set to **Shared**, not **Private**.
+1. If you're using an [Analytics view](what-are-analytics-views.md), ensure the view is set to **Shared**, not **Private**.
 
 1. Open your **Power BI Desktop** file that contains the data you want to publish.
 

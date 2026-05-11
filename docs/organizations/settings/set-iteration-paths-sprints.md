@@ -4,7 +4,6 @@ titleSuffix: Azure Boards
 description: Learn how to define the iteration and sprint fields when you assign work items and configure dashboards in Azure DevOps.
 ms.subservice: azure-devops-settings
 ms.custom: teams, engagement-fy23, devx-track-azurecli, copilot-scenario-highlight
-ms.assetid: 27631A15-9EB1-4E79-814E-8145BB7707C8
 ms.author: chcomley
 author: chcomley
 ai-usage: ai-assisted
@@ -17,7 +16,7 @@ ms.date: 03/03/2026
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
-Iteration Paths, also known as *sprints*, assign work items to specific time-boxed intervals. Define iteration paths at the project level and have each team select the paths they use. Iteration paths are shared among all teams that select them. You can create a flat or hierarchical structure of iteration paths to support releases, subreleases, and sprints. If your team doesn't use sprints for planning and tracking work, retain the default team assignments and utilize product and portfolio backlogs and boards, though sprint planning tools aren't available.
+Iteration Paths, also known as *sprints*, assign work items to specific time-boxed intervals. Define iteration paths at the project level and have each team select the paths they use. Iteration paths are shared among all teams that select them. You can create a flat or hierarchical structure of iteration paths to support releases, subreleases, and sprints. If your team doesn't use sprints for planning and tracking work, retain the default team assignments and use product and portfolio backlogs and boards, though sprint planning tools aren't available.
 
 [!INCLUDE [temp](../../boards/includes/list-sprint-dependent-tools.md)] 
 
@@ -226,7 +225,7 @@ az boards iteration project create --name "Sprint 36" --start-date 2019-09-01 --
 
 Define both areas and iterations from Project settings > Boards > Team configuration. Quickly navigate to it from a team work tracking backlog, board, or dashboard. 
 
-1.  Open a backlog or board for a team and choose :::image type="icon" source="../../media/icons/team.png" border="false"::: Team profile and then Team Settings. 
+1. Open a backlog or board for a team and choose :::image type="icon" source="../../media/icons/team.png" border="false"::: Team profile and then Team Settings. 
 
 	Here we open the Board for the Web team and from there the team profile. 
 
@@ -264,7 +263,7 @@ az boards iteration team list --team
 
 #### Example
 
-For example, the following command lists the area paths for the Service Delivery team. For other output format options, see [Output formats for Azure CLI commands](/cli/azure/format-output-azure-cli)
+For example, the following command lists the iterations for the Service Delivery team. For other output format options, see [Output formats for Azure CLI commands](/cli/azure/format-output-azure-cli).
 
 > [!div class="tabbedCodeSnippets"]
 ```azurecli
@@ -558,14 +557,14 @@ Area paths and iteration paths are also referred to as *Classification Nodes*.
 
 - [Use the az boards iteration (Azure DevOps CLI)](/cli/azure/boards/iteration)
 - [Use the Teams (REST API)](/rest/api/azure/devops/core/teams)
-- [Utilize the Classification Nodes (REST API)](/rest/api/azure/devops/wit/classification%20nodes)
+- [Use the Classification Nodes (REST API)](/rest/api/azure/devops/wit/classification%20nodes)
 
 ::: moniker-end
 
 ::: moniker range="< azure-devops"
 
 - [Use the Teams (REST API)](/rest/api/azure/devops/core/teams)
-- [Utilize the Classification Nodes (REST API)](/rest/api/azure/devops/wit/classification%20nodes)
+- [Use the Classification Nodes (REST API)](/rest/api/azure/devops/wit/classification%20nodes)
 - [Define the classification plug-in (Process Template)](/previous-versions/azure/devops/reference/process-templates/define-classification-plug-in)
 
 ::: moniker-end

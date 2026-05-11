@@ -4,7 +4,6 @@ titleSuffix: Azure DevOps
 description: Learn about default permissions and access to common user tasks for Azure DevOps.
 ms.custom: "permissions, engagement-fy23" 
 ms.subservice: azure-devops-security
-ms.assetid: B656A277-BA3D-472D-824D-CDD4E067053E
 toc: show
 ms.author: chcomley
 author: chcomley
@@ -45,7 +44,7 @@ To assign or change an access level, see [Add users and assign licenses](../acco
 
 ## Azure Boards
 
-You can plan and track work from the web portal **Boards** hub, and by using Visual Studio, Excel, and other clients. For an overview of work tracking features, see [What is Azure Boards?](../../boards/get-started/what-is-azure-boards.md) To change permissions, see [Set work tracking permissions](set-permissions-access-work-tracking.md). In addition to the permissions set at the [project level via the built-in groups](change-project-level-permissions.md), you can set permissions for the following objects: [area and iteration paths](set-permissions-access-work-tracking.md) and individual [queries and query folders](../../boards/queries/set-query-permissions.md).  
+You can plan and track work from the web portal **Boards** hub, and by using Visual Studio, Excel, and other clients. For an overview of work tracking features, see [What is Azure Boards?](../../boards/get-started/what-is-azure-boards.md) To change permissions, see [Set work tracking permissions](set-permissions-access-work-tracking.md). In addition to the permissions set at the [project level through the built-in groups](change-project-level-permissions.md), you can set permissions for the following objects: [area and iteration paths](set-permissions-access-work-tracking.md) and individual [queries and query folders](../../boards/queries/set-query-permissions.md).  
 
 ::: moniker-end
 

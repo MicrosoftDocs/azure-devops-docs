@@ -3,7 +3,6 @@ title: Rename or Remove a Team
 titleSuffix: Azure DevOps 
 description: Learn how to rename or remove, delete a team in Azure DevOps. 
 ms.subservice: azure-devops-settings
-ms.assetid: 9F1D0A0F-02D5-4E06-A5EC-C220472A0F66
 ms.author: chcomley
 author: chcomley
 ms.topic: how-to
@@ -79,8 +78,8 @@ az devops team update --team
 - `team`: Optional. Name or ID of a team.  
 - `description`: Optional. Description to apply to the team.  
 - `name`: Optional. Name to apply to rename the team.   
-- `org`: Optional. URL of organization. You can configure the default organization by using `az devops configure -d org=URL`. Required if not configured as default or picked up via git config.
-- `project`: Optional. Name or ID of the project. Example: `--project "Fabrikam Fiber"`. You can configure the default project by using `az devops configure -d project=NAME_OR_ID`. Required if not configured as default or picked up via git config.
+- `org`: Optional. URL of organization. You can configure the default organization by using `az devops configure -d org=URL`. Required if not configured as default or picked up through git config.
+- `project`: Optional. Name or ID of the project. Example: `--project "Fabrikam Fiber"`. You can configure the default project by using `az devops configure -d project=NAME_OR_ID`. Required if not configured as default or picked up through git config.
 
 #### Example
 

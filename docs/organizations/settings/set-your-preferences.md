@@ -102,7 +102,7 @@ A:
 
 #### Q: Why did I stop getting email notifications from Azure DevOps?
 
-A: Azure DevOps sends notification emails to the email address configured for your account in Microsoft Entra. If you aren't getting notifications, make sure you configured an email address in Microsoft Entra. 
+A: Azure DevOps sends notification emails to the email address configured for your account in Microsoft Entra. If you aren't getting notifications, ensure you configured an email address in Microsoft Entra. 
 
 ::: moniker-end
 

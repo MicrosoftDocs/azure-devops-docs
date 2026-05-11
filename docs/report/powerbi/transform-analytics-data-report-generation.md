@@ -217,7 +217,7 @@ If you configure the [Azure DevOps MCP Server](../../mcp-server/mcp-server-overv
 
 ::: moniker-end
 
-## Related articles 
+## Related content 
 
 - [Create a Power BI report with an OData Query](create-quick-report-odataq.md)
 - [Connect with data by using Power BI and OData queries](odataquery-connect.md) 

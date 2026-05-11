@@ -2,7 +2,6 @@
 title: Destroy command (Team Foundation Version Control)
 titleSuffix: Azure Repos
 description: See how to destroy, or permanently delete, files and folders in Team Foundation Version Control (TFVC).
-ms.assetid: fc14da45-891e-4f18-bbc2-9829b80531db
 ms.service: azure-devops-repos
 ms.topic: reference
 ms.date: 10/31/2022

@@ -4,7 +4,6 @@ description: Request extensions and approve extension requests for a project or 
 ms.custom: engagement-fy23
 ms.topic: how-to 
 ms.subservice: azure-devops-marketplace
-ms.assetid: 93a88b2c-559d-43ae-aaa9-e75ba33272fe
 ms.author: chcomley
 author: chcomley
 ms.date: 03/03/2025

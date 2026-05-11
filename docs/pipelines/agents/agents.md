@@ -3,7 +3,6 @@ title: Azure Pipelines Agents
 ms.topic: concept-article
 ms.custom: devx-track-azurecli
 description: Learn how you can build code and deploy software by using agents in Azure Pipelines.
-ms.assetid: 5C14A166-CA77-4484-8074-9E0AA060DE58
 ms.date: 01/24/2025
 monikerRange: '<= azure-devops'
 ---

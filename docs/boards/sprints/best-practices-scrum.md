@@ -4,7 +4,6 @@ titleSuffix: Azure Boards
 description: Learn best practices for planning effective sprints, managing technical debt, and optimizing your team's workflow in Azure Boards.
 ms.service: azure-devops-boards
 ms.custom: boards-sprints, engagement-fy23 
-ms.assetid: 1E2F0BDC-C267-4724-86E8-E4BBD75B50B2
 ms.author: chcomley
 ms.reviewer: chcomley
 author: chcomley

@@ -4,7 +4,6 @@ titleSuffix: Azure DevOps
 description: Quickly access views or artifacts by favoriting them in Azure DevOps
 ms.custom: "navigation, cross-project, cross-service"
 ms.subservice: azure-devops-projects
-ms.assetid: 473E452D-59F7-4F6F-97C6-657ECD99ADCB
 ms.author: chcomley
 author: chcomley
 ms.topic: tutorial
@@ -102,7 +101,7 @@ You can favorite several Agile tools for a team from a **Boards** page.
 	> [!div class="mx-imgBorder"]  
 	> ![Screenshot shows Choose another team selection.](../../boards/sprints/media/assign-items-sprint/team-selector-backlogs-agile.png) 
 
-2.  Choose the :::image type="icon" source="../../media/icons/icon-favorite-star.png" border="false"::: star icon to favorite a team backlog. Favorite artifacts (:::image type="icon" source="../../media/icons/icon-favorited.png" border="false"::: favorite icon) appear on your **Favorites** page and towards the top of the team backlog selector menu.
+2. Choose the :::image type="icon" source="../../media/icons/icon-favorite-star.png" border="false"::: star icon to favorite a team backlog. Favorite artifacts (:::image type="icon" source="../../media/icons/icon-favorited.png" border="false"::: favorite icon) appear on your **Favorites** page and towards the top of the team backlog selector menu.
 
 ## Favorite a shared query 
 
@@ -160,7 +159,7 @@ You can unfavorite an artifact from your **Favorites** page. Choose the :::image
 
 Similarly, you can unfavorite an artifact from the same page where you marked it as a favorite. 
 
-## Next steps
+## Next step
 > [!div class="nextstepaction"]
 > [Follow a user story, bug, issue, or other work item or pull request](../../boards/work-items/follow-work-items.md)
 

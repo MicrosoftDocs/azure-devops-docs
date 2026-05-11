@@ -3,7 +3,6 @@ title: Create a project
 titleSuffix: Azure DevOps
 ms.custom: devx-track-azurecli, engagement-fy23, copilot-scenario-highlight
 description: Learn how to create a project in Azure DevOps to plan, track, and collaborate on software development. Follow step-by-step instructions to get started.
-ms.assetid: 21F3C364-34F4-41B0-9EFC-6D4A141D81E0
 ms.subservice: azure-devops-projects
 ms.topic: how-to
 ai-usage: ai-assisted
@@ -255,7 +254,7 @@ az devops project list [--org]
 
 #### Parameters 
 
-- org: Optional. Azure DevOps organization URL. You can configure the default organization by using `az devops configure -d organization=ORG_URL`. Required if not configured as default or picked up via `git config`. Example: `https://dev.azure.com/MyOrganizationName/`.
+- org: Optional. Azure DevOps organization URL. You can configure the default organization by using `az devops configure -d organization=ORG_URL`. Required if not configured as default or picked up through `git config`. Example: `https://dev.azure.com/MyOrganizationName/`.
 - skip: Optional. Number of results to skip.
 - top: Optional. Maximum number of results to list.
 
@@ -344,7 +343,7 @@ If you use GitHub Copilot, the [Azure DevOps MCP Server](../../mcp-server/mcp-se
 > [!TIP]
 > For the best results, use these prompts in agent mode with the Azure DevOps MCP Server connected. Customize the prompts with your specific organization name, process template, or team structure.
 
-## Next steps
+## Next step
 
 > [!div class="nextstepaction"]
 > [Structure your project](about-projects.md#structure-your-project)

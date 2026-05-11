@@ -4,7 +4,6 @@ titleSuffix: Azure DevOps
 description: Learn how to query trend data in Azure DevOps using OData aggregation. Filter, group, and analyze snapshot entity sets for actionable insights.
 ms.subservice: azure-devops-analytics
 ms.custom: copilot-scenario-highlight, awp-ai
-ms.assetid: FEF88D72-32D7-4DE8-B11E-BCB1A491C3FC
 ms.author: chcomley
 author: chcomley
 ms.topic: how-to

@@ -41,7 +41,7 @@ If you need to keep using these extensions, toggle on the security policy **Allo
 > [!NOTE]
 > The policy is **Off** by default. An authorized user must toggle it **On** if needed.
 
-## Related articles
+## Related content
 
 - [Manage extension permissions](grant-permissions.md)
 - [Manage high privilege extensions](manage-high-privilege-extensions.md)

@@ -6,7 +6,6 @@ ms.subservice: azure-devops-ecosystem
 ai-usage: ai-assisted
 ms.custom: pat-reduction
 ms.topic: overview
-ms.assetid: 30272A34-2CE1-41B3-BA7A-815D69309CBE
 ms.author: chcomley
 author: chcomley
 monikerRange: 'azure-devops'
@@ -93,7 +92,7 @@ var witClient = connection.GetClient<WorkItemTrackingHttpClient>();
 // var credentials = new VssBasicCredential(string.Empty, personalAccessToken);
 ```
 
-## Next steps and resources
+## Next step and resources
 
 ### 📖 Essential migration resources
 - **[Modern .NET client library samples](../get-started/client-libraries/samples.md)** - Production-ready code examples with modern authentication

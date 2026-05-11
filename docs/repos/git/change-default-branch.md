@@ -1,7 +1,6 @@
 ---
 title: Change the default branch
 description: Learn how to change your default branch name
-ms.assetid: cd71e039-6e11-44f9-80fd-66c3bc146b46
 ms.topic: how-to
 ms.service: azure-devops-repos
 ms.date: 10/07/2020

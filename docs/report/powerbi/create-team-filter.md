@@ -152,7 +152,7 @@ Now you can filter all visualization on a report using a slicer or any other sup
 > ![Power BI Desktop, Count Filtered by Team](media/CountFilteredByTeam.png)  
  
 
-## Related articles
+## Related content
 
 - [Power BI integration overview](overview.md) 
 - [Create Analytics views](analytics-views-create.md)

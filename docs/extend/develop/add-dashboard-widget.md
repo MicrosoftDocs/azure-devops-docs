@@ -3,7 +3,6 @@ title: Add a Dashboard Widget
 titleSuffix: Azure DevOps
 description: Learn how to create a widget that you can then add to a dashboard in Azure DevOps.
 ms.subservice: azure-devops-ecosystem
-ms.assetid: 1D393A4A-2D25-479D-972B-304F99B5B1F8
 ai-usage: ai-assisted
 ms.topic: concept-article
 ms.custom: UpdateFrequency3
@@ -728,7 +727,7 @@ The `IWidgetConfiguration` contract requires these key functions:
 | `onSave()` | Serialize user input and validate settings | When user selects **Save** |
 
 > [!TIP]
-> **Data serialization**: This example uses JSON to serialize settings. The widget accesses these settings via `widgetSettings.customSettings.data` and must deserialize them accordingly.
+> **Data serialization**: This example uses JSON to serialize settings. The widget accesses these settings through `widgetSettings.customSettings.data` and must deserialize them accordingly.
 
 ### Enable live preview
 
@@ -894,7 +893,7 @@ $list.append($('<li>').text("Created By: " + (query.createdBy ? query.createdBy.
 
 // Add a clickable element to open detailed view
 var $detailsLink = $('<button class="details-link">View Details</button>');
-$detailsLink.on('click', function() {
+$detailsLink.on('select', function() {
     showQueryDetails(query);
 });
 
@@ -917,7 +916,7 @@ function showQueryDetails(query) {
     
     // Add close button
     var $closeBtn = $('<button class="lightbox-close">&times;</button>');
-    $closeBtn.on('click', function() {
+    $closeBtn.on('select', function() {
         $overlay.remove();
     });
     
@@ -943,8 +942,8 @@ function showQueryDetails(query) {
     // Add to document and show
     $('body').append($overlay);
     
-    // Close on overlay click
-    $overlay.on('click', function(e) {
+    // Close on overlay select
+    $overlay.on('select', function(e) {
         if (e.target === $overlay[0]) {
             $overlay.remove();
         }
@@ -1160,7 +1159,7 @@ Your complete enhanced widget with lightbox functionality:
                                 $list.append($('<li>').text("Created By: " + (query.createdBy ? query.createdBy.displayName : "<unknown>")));
 
                                 var $detailsLink = $('<button class="details-link">View Details</button>');
-                                $detailsLink.on('click', function() {
+                                $detailsLink.on('select', function() {
                                     showQueryDetails(query);
                                 });
 

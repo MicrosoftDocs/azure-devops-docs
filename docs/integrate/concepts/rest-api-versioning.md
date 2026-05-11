@@ -1,7 +1,6 @@
 ---
 title: REST API Versioning for Azure DevOps
 description: Learn about the importance of versioning in REST APIs and explore guidance on implementing versioning in your projects in Azure DevOps.
-ms.assetid: 5fc6efd4-9947-40f2-b4f6-9695a24de87c
 ms.subservice: azure-devops-ecosystem
 ms.topic: concept-article
 ms.custom: engagement-fy23
@@ -44,7 +43,7 @@ Uri query parameter:
 ```
 [scheme"://"][host[':'port]]"/v" major-version '/'namespace '/'resource ('/'resource)* '?' query
 
-i.e. GET https://dev.azure.com/v1.0/{organization}/_apis/{area}/{resource}?some-query=1000
+that is, GET https://dev.azure.com/v1.0/{organization}/_apis/{area}/{resource}?some-query=1000
 ```
 
 ### Supported versions

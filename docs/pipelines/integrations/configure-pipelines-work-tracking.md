@@ -237,7 +237,7 @@ To verify the integration is working, perform the following steps:
 	-  [Drive Git development from a work item](../../boards/backlogs/connect-work-items-to-git-dev-ops.md)  
 	-  [Link to work items from other objects](../../organizations/notifications/add-links-to-work-items.md)
 
-1.  Run the pipeline. 
+1. Run the pipeline. 
 
 2. Open one of the linked work items and view the [**Deployment**](../../boards/backlogs/add-link.md#link-work-items-to-deployments) control. As shown in the following image, the **Deployment** control shows release information for two release stages for work items that linked to a Git commit or pull request for a release pipeline configured to integrate with Azure Boards.  
 
@@ -401,7 +401,7 @@ For more information, see [Speed up testing by using Test Impact Analysis (TIA),
 
 -->
  
-## Related articles  
+## Related content  
 
 - [Define a multi-stage continuous deployment (CD) pipeline](../release/define-multistage-release-process.md)
 - [Link work items to other objects](../../boards/backlogs/add-link.md)

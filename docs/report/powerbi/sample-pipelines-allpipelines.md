@@ -211,7 +211,7 @@ The following table describes each part of the query.
 Before you create the report, expand the `Pipeline` column that returns records that might contain one or more fields.  
 
 1. Close the **Advanced Editor**. 
-1. From the Power Query Editor, select the `Pipeline` column expand button, make sure that `PipelineName` is selected, and then select **OK**.  
+1. From the Power Query Editor, select the `Pipeline` column expand button, ensure that `PipelineName` is selected, and then select **OK**.  
 
 	:::image type="content" source="media/pipeline-reports/expand-pipelines-column.png" alt-text="Screenshot of Pipelines column expand menu. ":::
 
@@ -236,7 +236,7 @@ From the Power Query Editor, select the `TotalCount` column, select **Data Type*
  
 1. Add `Pipeline.PipelineName` or the renamed column `Pipeline Name` to **Axis**. 
 
-1. Add the following fields to **Values** in the order indicated. For each field, right-click it and make sure **Sum** is selected.    
+1. Add the following fields to **Values** in the order indicated. For each field, right-click it and ensure **Sum** is selected.    
 	- `SucceededCount` 
 	- `FailedCount` 
 	- `CanceledCount`  
@@ -255,6 +255,6 @@ The report appears as follows.
 :::image type="content" source="media/pipeline-reports/all-pipelines-outcome-summary-report.png" alt-text="Screenshot of sample All Pipelines Outcome Summary Report.":::
  
 
-## Related articles
+## Related content
 
 [!INCLUDE [temp](includes/sample-related-articles-pipelines.md)]

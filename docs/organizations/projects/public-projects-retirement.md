@@ -29,7 +29,7 @@ Rather than maintain two separate open-source hosting experiences, Microsoft is 
 | Retirement announced | April 2026 | Public project retirement announced and organizations can no longer create new public projects |
 | Existing public projects converted | 2027* | All remaining public projects are automatically converted to private |
 
-*Exact dates for converting public projects will be shared via in-product banners within public projects.
+*Exact dates for converting public projects will be shared through in-product banners within public projects.
 
 ## What changes when your project converts to private
 
@@ -52,7 +52,7 @@ When a public project becomes private, the following changes take effect immedia
 |---|---|---|
 | **You need public visibility** | Migrate to GitHub | Move your public-facing content to GitHub for open-source collaboration. For step-by-step guidance, see [Migrate from a public project to GitHub](migrate-public-project.md). |
 | **You only need private collaboration** | No action required | Your project is automatically converted to private on the conversion date. All existing members, permissions, and data are preserved. |
-| **You want to convert proactively** | Convert to private now | Convert your project to private before the automatic conversion date. For instructions, see [Change project visibility to public or private](make-project-public.md). |
+| **You want to convert proactively** | Convert to private now | Convert your project to private before the automatic conversion date. For instructions, see [Change project visibility to private](make-project-public.md). |
 
 ## Frequently asked questions
 
@@ -83,6 +83,6 @@ Yes. All historical data, including build logs, test results, and work item hist
 ## Related content
 
 - [Migrate from a public project to GitHub](migrate-public-project.md)
-- [Change project visibility to public or private](make-project-public.md)
+- [Change project visibility to private](make-project-public.md)
 - [About projects](about-projects.md)
 - [Create a project](create-project.md)

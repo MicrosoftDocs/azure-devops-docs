@@ -4,7 +4,6 @@ titleSuffix: Azure Boards
 description: Learn about choosing a process or process template based on the process model you use in your Azure Boards project.
 ms.custom: work-items 
 ms.service: azure-devops-boards
-ms.assetid: 702EE9E5-7AEA-49B6-9DB0-B12A882979C8
 ms.topic: overview
 ms.author: chcomley
 author: chcomley

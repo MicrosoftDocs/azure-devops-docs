@@ -3,7 +3,6 @@ title: Access Analytics data through Excel
 titleSuffix: Azure DevOps
 description: Learn how to access Analytics OData from Excel for Azure DevOps. 
 ms.subservice: azure-devops-analytics
-ms.assetid: E661D20C-073E-44F1-A91C-B1460A93E2B2 
 ms.author: chcomley
 author: chcomley
 ms.topic: how-to
@@ -16,7 +15,7 @@ ms.custom: sfi-image-nochange
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
-You can access data through Excel, generate reports, and then publish the charts to Power BI or use the Excel file as a basis for Power BI reports. At this time, you need alternate credentials enabled to access data Analytics via Excel.
+You can access data through Excel, generate reports, and then publish the charts to Power BI or use the Excel file as a basis for Power BI reports. At this time, you need alternate credentials enabled to access data Analytics through Excel.
 
 ## Prerequisites
 
@@ -106,7 +105,7 @@ The Tags, Teams, and Users aren't related to any of the other data due to the na
 
 Handling multiple relationships can be done fairly simply. For example, in the default model, you can edit the query, select the **`AssignedTo`** column of the `WorkItems` table, and expand the column to include all data from the `Users` table. Repeat this process for the `CreatedBy` and `ChangedBy` columns as well. This approach avoids having multiple links from one table to another, which isn't allowed.
 
-## Related articles
+## Related content
 
 - [Client authentication options](client-authentication-options.md)
 - [Microsoft Power Query for Excel](https://powerquery.microsoft.com/excel/)

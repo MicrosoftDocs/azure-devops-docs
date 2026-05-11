@@ -2,7 +2,6 @@
 title: Delete or restore files and folders using TFVC 
 titleSuffix: Azure Repos
 description: See how to delete or restore files and folders in Team Foundation Version Control (TFVC).
-ms.assetid: 8891c77c-490c-489c-99c7-860b4a92737c
 ms.service: azure-devops-repos
 ms.topic: how-to
 ms.date: 10/31/2022

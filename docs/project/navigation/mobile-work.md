@@ -1,10 +1,9 @@
 ---
-title: View and update work items via mobile browser 
+title: View and update work items through mobile browser 
 titleSuffix: Azure DevOps
 description: View and update work items from your mobile client using Azure DevOps.
 ms.subservice: azure-devops-projects
 ms.topic: how-to
-ms.assetid: 1B91BB7F-1205-4E51-B33C-1349D3117408
 ms.author: chcomley
 author: chcomley
 ai-usage: ai-assisted
@@ -13,7 +12,7 @@ ms.date: 01/27/2025
 ms.custom: Navigation, sfi-image-nochange
 ---
 
-# View and update work items via mobile browser
+# View and update work items through mobile browser
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
@@ -85,7 +84,7 @@ Mobile form controls operate as follows:
  
 To update the state, select the desired state from the dropdown menu. This action changes the work item's status, helping to track its progress. After making your selection, ensure you save your changes by selecting the ![save icon](../../boards/media/icons/icon-save-wi.png) save icon.
 
-:::image type="content" source="media/mobile-work-change-state.png" alt-text="Screenshot of State change options via mobile browser."::: 
+:::image type="content" source="media/mobile-work-change-state.png" alt-text="Screenshot of State change options through mobile browser."::: 
 
 ### Add or remove tags 
 
@@ -121,9 +120,9 @@ When you open the browser, it defaults to the **Assigned to me** page. From ther
 :::image type="content" source="media/mobile-work-account-work-items-pages.png" alt-text="Screenshot of the Assigned to me page in the browser."::: 
 
 > [!TIP]
-> From your mobile device, you can perform most functions in Azure Boards, Azure Repos, Azure Pipelines, Azure Test Plans, and Azure Artifacts, just as you would via the desktop browser. The following example shows mobile access to **Repos** > **Pull requests**.
+> From your mobile device, you can perform most functions in Azure Boards, Azure Repos, Azure Pipelines, Azure Test Plans, and Azure Artifacts, just as you would through the desktop browser. The following example shows mobile access to **Repos** > **Pull requests**.
 > 
->:::image type="content" source="../media/mobile-azure-devops-hubs.png" alt-text="Screenshot showing Azure DevOps hubs accessible via mobile browser.":::
+>:::image type="content" source="../media/mobile-azure-devops-hubs.png" alt-text="Screenshot showing Azure DevOps hubs accessible through mobile browser.":::
 
 ## Related content  
 

@@ -4,7 +4,6 @@ titleSuffix: Azure DevOps Services
 description: Customize a Hosted XML process to support custom fields, work item types, global lists, and process configuration.
 ms.service: azure-devops-boards
 ms.custom: engagement-fy23
-ms.assetid: AA5B592D-8F76-4974-9918-B8B523A6F23F
 ai-usage: ai-assisted
 ms.topic: how-to
 ms.author: chcomley
@@ -298,7 +297,7 @@ To limit the account names that are valid within an identity field, specify the 
     </FIELD>
 ```
 
-Before you import the process, make sure you created the group in the projects that the process updates.
+Before you import the process, ensure you created the group in the projects that the process updates.
 
 ##### Incorrect example
 

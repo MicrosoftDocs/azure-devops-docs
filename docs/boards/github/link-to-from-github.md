@@ -186,7 +186,7 @@ By enabling GitHub annotations on the board, you can quickly open linked GitHub 
 
 :::image type="content" source="media/link/board-view-github-links.png" border="true" alt-text="Screenshot of board that shows GitHub links on work item cards.":::
 
-## Next steps
+## Next step
 
 > [!div class="nextstepaction"]
 > [Configure status badges](configure-status-badges.md)

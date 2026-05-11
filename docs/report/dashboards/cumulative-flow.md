@@ -4,7 +4,6 @@ titleSuffix: Azure DevOps
 description: Find out how to configure and view cumulative flow diagrams (CFDs) so you can improve your Kanban processes by monitoring the flow of work through your system.
 ms.custom: dashboards 
 ms.subservice: azure-devops-analytics
-ms.assetid: 9A16EDA7-6249-49E1-84A3-FE7550028E9F  
 ms.author: chcomley
 author: chcomley
 ms.topic: tutorial
@@ -113,7 +112,7 @@ CFD reports are available for product and portfolio backlogs. Each report offers
 
 1. Ensure your team's board is configured with defined [columns](../../boards/boards/add-columns.md) and [swimlanes](../../boards/boards/expedite-work.md) that support your workflow processes.
 
-1. If you want fixed-scope CFDs, make sure [sprint iterations are defined](../../boards/sprints/define-sprints.md) for sprints of interest.
+1. If you want fixed-scope CFDs, ensure [sprint iterations are defined](../../boards/sprints/define-sprints.md) for sprints of interest.
 
 1. To add a CFD to your team dashboard, follow the steps in [Add widgets to a dashboard](add-widget-to-dashboard.md), and use the Cumulative Flow Diagram widget.
 

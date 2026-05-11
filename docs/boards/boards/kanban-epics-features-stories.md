@@ -4,7 +4,6 @@ titleSuffix: Azure Boards
 description: Quickly define and view the status of child features, user stories, or backlog items using features or epic boards in Azure Boards and Azure DevOps.
 ms.custom: boards-kanban, copilot-scenario-highlight
 ms.service: azure-devops-boards
-ms.assetid: 489C612D-983E-47D3-BD1A-F13C5DCD74E2  
 ms.topic: how-to
 ms.author: chcomley
 author: chcomley

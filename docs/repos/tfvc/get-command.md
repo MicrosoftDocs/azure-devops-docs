@@ -2,7 +2,6 @@
 title: Get command (Team Foundation Version Control)
 titleSuffix: Azure Repos
 description: Get files or folders that are under TFVC version control by using the get command.
-ms.assetid: f374dfcb-9c1b-4cab-9a20-3c81d29593a3
 ms.service: azure-devops-repos
 ms.topic: reference
 ms.date: 11/08/2022

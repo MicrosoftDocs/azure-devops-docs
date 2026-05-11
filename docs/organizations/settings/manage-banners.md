@@ -129,7 +129,7 @@ Admin settings configure resources for all projects in a project collection. For
 The following parameters are optional for all commands, and not listed in the examples provided in this article. 
 
 - `detect`: Automatically detect organization. Accepted values: false, true. Default is true.
-- `org`: Azure DevOps organization URL. You can configure the default organization by using `az devops configure -d organization=ORG_URL`. Required if not configured as default or picked up via git config. Example: `--org https://dev.azure.com/<my-organization-name>/`. 
+- `org`: Azure DevOps organization URL. You can configure the default organization by using `az devops configure -d organization=ORG_URL`. Required if not configured as default or picked up through git config. Example: `--org https://dev.azure.com/<my-organization-name>/`. 
 
 ### Add a banner
 
@@ -341,7 +341,7 @@ If you use GitHub Copilot, the [Azure DevOps MCP Server](../../mcp-server/mcp-se
 | Audit and clean up stale banners | `List all active banners in my organization using the CLI, show their expiration dates, and remove any that are past their expiration or no longer relevant` |
 | Communicate a policy change | `Post an error-level banner across our Azure DevOps organization announcing that all repos now require branch policies for main branches, effective next Monday, with a link to our wiki page explaining the new policy` |
 | Create banners for multiple collections | `I manage three Azure DevOps Server collections. Generate CLI commands to post the same maintenance notification banner to all three collections simultaneously` |
-| Set up a welcome banner for new users | `Create a persistent information banner that welcomes users to our Azure DevOps organization with a link to our onboarding wiki. Make sure it stays visible until I manually remove it` |
+| Set up a welcome banner for new users | `Create a persistent information banner that welcomes users to our Azure DevOps organization with a link to our onboarding wiki. Ensure it stays visible until I manually remove it` |
 
 > [!TIP]
 > For the best results, use these prompts in agent mode with the Azure DevOps MCP Server connected. Customize the prompts with your specific organization name, banner message, or schedule.

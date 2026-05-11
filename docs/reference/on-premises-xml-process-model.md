@@ -204,7 +204,7 @@ The default configuration for projects associates each team with an area path. I
 
 [Use team fields instead of area paths to support teams](/previous-versions/azure/devops/reference/upgrade/use-team-fields-instead-area-paths) describes how to change the default configuration.
 
-## Related articles
+## Related content
 
 - [Customize work](customize-work.md) 
 - [witAdmin: Customize and manage objects for tracking work](witadmin/witadmin-customize-and-manage-objects-for-tracking-work.md)

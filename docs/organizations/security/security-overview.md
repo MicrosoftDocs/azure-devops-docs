@@ -38,7 +38,7 @@ For more information, see [Application management best practices](/azure/active-
 
 ## Implement Zero Trust
 
-Adopt [Zero Trust](/azure/security/fundamentals/zero-trust) principles across your DevOps processes to make sure every access request is thoroughly verified, regardless of its origin. Zero Trust operates on the principle of "never trust, always verify," meaning that no entity, whether inside or outside the network, is trusted by default. By implementing Zero Trust, you can significantly reduce the risk of security breaches and ensure that only authorized users and devices can access your resources.
+Adopt [Zero Trust](/azure/security/fundamentals/zero-trust) principles across your DevOps processes to ensure every access request is thoroughly verified, regardless of its origin. Zero Trust operates on the principle of "never trust, always verify," meaning that no entity, whether inside or outside the network, is trusted by default. By implementing Zero Trust, you can significantly reduce the risk of security breaches and ensure that only authorized users and devices can access your resources.
 
 - Fortify your [DevOps platform](/security/zero-trust/develop/secure-devops-platform-environment-zero-trust)
 - Safeguard your [development environment](/security/zero-trust/develop/secure-dev-environment-zero-trust)
@@ -62,7 +62,7 @@ Ensure your Azure DevOps environment complies with industry standards and regula
 
 Review all the security policies available to administrators to restrict and control who has access to the organization. Maintain control of the organization by preventing unnecessary project creation.
 
-- **Disable *"Allow public projects"*:** Disable the option to [create public projects](../projects/make-project-public.md). Switch project visibility from public to private as needed. Users who never signed in have read-only access to public projects, while signed-in users can be granted access to private projects and make permitted changes.
+- **Public projects retired:** Public projects are retired and new public projects can no longer be created. Existing public projects are automatically converted to private in 2027. For more information, see [Public projects retirement](../projects/public-projects-retirement.md).
   - Automate switching project visibility with the [Change project visibility script](security-scripts.md#change-project-visibility-public--private-using-microsoft-entra-id), which requires a Microsoft Entra token. 
 - **[Restrict unnecessary authentication mechanisms](../accounts/change-application-access-policies.md)** and limit who has access to allowed authentication.
 - **Limit access with Conditional Access Policies**: Protect your organization by [defining Conditional Access policies (CAPs)](/entra/identity/conditional-access/overview) on Microsoft Entra that react to sign-in events and request other actions before a user is granted access.

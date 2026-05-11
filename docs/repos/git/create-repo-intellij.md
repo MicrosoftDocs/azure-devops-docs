@@ -2,7 +2,6 @@
 title: Azure DevOps Plugin for IntelliJ, IDEA, Android Studio
 titleSuffix: Azure Repos
 description: Tutorial for the IntelliJ plugin available for Azure DevOps.
-ms.assetid:
 ms.service: azure-devops-repos
 ms.topic: tutorial
 ms.date: 02/18/2025

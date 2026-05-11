@@ -4,7 +4,6 @@ titleSuffix: Azure Boards
 description: Learn how to manage your queries by using favorites and folders in Azure Boards and Azure DevOps.
 ms.custom: boards-queries, engagement-fy23
 ms.service: azure-devops-boards
-ms.assetid: BAD9F638-3F26-4FE3-8A7D-F5C0793BE8AC
 ms.author: chcomley
 author: chcomley
 ms.topic: how-to

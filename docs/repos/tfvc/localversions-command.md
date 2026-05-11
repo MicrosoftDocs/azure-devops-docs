@@ -2,7 +2,6 @@
 title: Localversions command  (Team Foundation Version Control)
 titleSuffix: Azure Repos
 description: See how to use the tf localversions command to display the version of one or more items in a workspace.
-ms.assetid: 5531edc7-0333-43eb-bea0-59db9bc35c33
 ms.service: azure-devops-repos
 ms.topic: reference
 ms.date: 11/15/2022

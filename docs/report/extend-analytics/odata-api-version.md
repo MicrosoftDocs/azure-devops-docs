@@ -164,7 +164,7 @@ Consider a scenario where we revert to the original structure of the `User` enti
 
 Since removal of the `UserType` field is a breaking change, the field isn't removed until version **v2.0** of the API. Version **v1.0** of the data model continues to include the `UserType` field.
 
-## Related articles
+## Related content
 
 - [Data model for Analytics](data-model-analytics-service.md)
 - [OData Version 4.0 Part 5: Versioning](https://docs.oasis-open.org/odata/odata/v4.0/errata03/os/complete/part1-protocol/odata-v4.0-errata03-os-part1-protocol-complete.html#_Toc453752208)

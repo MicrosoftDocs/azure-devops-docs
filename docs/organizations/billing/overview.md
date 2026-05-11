@@ -4,7 +4,6 @@ titleSuffix: Azure DevOps
 ms.custom: freshness-fy22q1, engagement-fy23
 description: Understand billing management tasks, including how to set up billing, make purchases, and change the Azure subscription for billing.
 ms.subservice: azure-devops-billing
-ms.assetid: d5bd13e2-aa7c-4191-aefd-bd9f05663e7b
 ms.topic: overview
 ms.author: chcomley
 author: chcomley
@@ -20,9 +19,9 @@ If you need more than the [free tier](#free-tier) of resources in your organizat
 
 [!INCLUDE [ai-assistance-callout](../../includes/ai-assistance-callout.md)]
 
-## Services billed via Azure
+## Services billed through Azure
 
-During your first purchase for your organization, you're prompted to select the Azure subscription to use for billing. The subscription can be part of your Enterprise Agreement, pay-as-you-go, Cloud Solution Provider (CSP), or other types of Azure subscriptions. All services get billed via Azure. You aren't required to pay for or use any other Azure services.
+During your first purchase for your organization, you're prompted to select the Azure subscription to use for billing. The subscription can be part of your Enterprise Agreement, pay-as-you-go, Cloud Solution Provider (CSP), or other types of Azure subscriptions. All services get billed through Azure. You aren't required to pay for or use any other Azure services.
 
 ::: moniker range=" azure-devops"
 [!INCLUDE [pricing-calculator-tip](../../includes/pricing-calculator-tip.md)]
@@ -53,7 +52,7 @@ All charges appear on your monthly Azure bill. Azure supports payment by credit 
 
 ::: moniker-end
 
-## Next steps
+## Next step
 
 > [!div class="nextstepaction"]
 > [Set up billing](set-up-billing-for-your-organization-vs.md#set-up-billing)

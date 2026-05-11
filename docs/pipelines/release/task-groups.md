@@ -1,7 +1,6 @@
 ---
 title: Task groups in Classic pipelines
 description: Understand, create, and manage task groups in Classic pipelines for Azure Pipelines.
-ms.assetid: 0FEAE814-2AF8-441B-A099-E77B1008D2F0
 ms.topic: how-to
 ms.author: ronai
 author: RoopeshNair

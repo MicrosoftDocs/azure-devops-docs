@@ -4,7 +4,6 @@ titleSuffix: Azure Boards & Azure Repos
 description: Track updates to work items and pull requests by following them to receive targeted notifications in Azure DevOps.
 ms.custom: work-items, cross-project, copilot-scenario-highlight
 ms.service: azure-devops-boards
-ms.assetid: 77CAEE8E-BF1A-47DA-9818-A0C52BAC813C
 ai-usage: ai-assisted
 ms.author: chcomley
 author: chcomley
@@ -116,7 +115,7 @@ You receive email notifications when team members perform the following actions:
 
 ## View and manage items you follow
 
-### Option 1: Quick access via Queries
+### Option 1: Quick access through Queries
 
 **Path**: **Boards** → **Queries** → **All** → **My Queries** → **Followed work items**
 

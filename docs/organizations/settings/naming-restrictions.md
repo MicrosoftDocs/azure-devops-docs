@@ -4,7 +4,6 @@ titleSuffix: Azure DevOps
 description: See requirements for labeling Azure DevOps objects like organizations, projects, templates, and tags, to enforce consistency and compatibility.
 ms.subservice: azure-devops-settings
 ms.topic: overview
-ms.assetid: F4ED2B52-EDE9-4F2B-B3B5-A3FB504D84B9
 ms.author: chcomley
 author: chcomley
 monikerRange: '<= azure-devops'
@@ -342,8 +341,8 @@ Your on-premises build computer must conform to the following restrictions.
 |Build directory   | Must be a local path such as *C:\\BuildDirectory*.        |
 |Drop location directory    | Must be a UNC path such as *\\server*\\share*.        |
 |Drop location permissions   | Each generated build must be put in a new directory in the drop folder.<br>- The Team Foundation Server Service account, for example `Domain\TFSSERVICE`, must have **Full Control** access to the UNC drop location.<br>- The UNC drop location must be a shared folder.        |
-|Team Foundation Build Service account  | If you change the TFS Service account after the initial installation, you must make sure that:<br>- The account is a member of the Build Services group.<br>- The account has read/write permissions to the temporary folders and the ASP.NET temporary folder.<br>- The account has **Full Control** permission to the build directory and drop location. |
-|Firewall|If the build computer is firewall enabled, make sure that the program **tfsbuildservice** is in the exceptions list.        |
+|Team Foundation Build Service account  | If you change the TFS Service account after the initial installation, you must ensure that:<br>- The account is a member of the Build Services group.<br>- The account has read/write permissions to the temporary folders and the ASP.NET temporary folder.<br>- The account has **Full Control** permission to the build directory and drop location. |
+|Firewall|If the build computer is firewall enabled, ensure that the program **tfsbuildservice** is in the exceptions list.        |
 
 ### Build types
 

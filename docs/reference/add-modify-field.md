@@ -4,7 +4,6 @@ titleSuffix: Azure DevOps
 description: Modify or add a work item field for supporting queries, reports, and workflow in Azure DevOps.
 ms.service: azure-devops-boards
 ms.custom: process, engagement-fy23
-ms.assetid: 32775755-CCC1-4859-95ED-0FF9FF8DBCD2  
 ms.author: chcomley
 author: chcomley
 ms.topic: how-to
@@ -293,9 +292,9 @@ To enable or disable indexing for a field, use the [**witadmin indexfield** comm
 
 When you remove a field from a specific WIT, the field remains in the collection or the database server, even if it's no longer referenced by any WIT. To completely remove a field, follow these steps.
 
-1.  Remove the `FIELD` definition from all WIT definitions and any global workflows that reference it.
+1. Remove the `FIELD` definition from all WIT definitions and any global workflows that reference it.
 
-2.  Verify the field isn't in use. For example:
+2. Verify the field isn't in use. For example:
 
     ```
     witadmin listfields /collection:http://AdventureWorksServer:8080/tfs/DefaultCollection /n:MyCompany.CustomContact
@@ -308,13 +307,13 @@ When you remove a field from a specific WIT, the field remains in the collection
     Indexed: False
     ```
 
-3.  Delete the field. For example:
+3. Delete the field. For example:
 
     ```
     witadmin deletefield /collection:http://AdventureWorksServer:8080/tfs/DefaultCollection /n:MyCompany.CustomContact
     ```
 
-4.  If the deleted field was reportable and your project uses SQL Server Reporting Services, [rebuild the data warehouse to purge the old field and its values](/previous-versions/azure/devops/report/admin/rebuild-data-warehouse-and-cube).
+4. If the deleted field was reportable and your project uses SQL Server Reporting Services, [rebuild the data warehouse to purge the old field and its values](/previous-versions/azure/devops/report/admin/rebuild-data-warehouse-and-cube).
 
 For more information, see [Manage work item fields](witadmin/manage-work-item-fields.md).
 
@@ -338,7 +337,7 @@ For example, you can add the **Found In** and **Integrated in Build** fields, wh
 
 For more information, see [Query based on build and test integration fields](../boards/queries/build-test-integration.md).
 
-## Related articles
+## Related content
 
 - [Review work tracking object limits](../organizations/settings/work/object-limits.md)  
 - [Customize your work tracking experience](customize-work.md)  

@@ -221,12 +221,12 @@ For more information, see [Transform Analytics data to generate Power BI reports
 
 1. Add `Assigned To` to **Rows**.
 1. Add  `State` to **Columns**.
-1. Add `WorkItemId` to **Values**. Right-click `WorkItemId` and make sure **Count** is selected.
+1. Add `WorkItemId` to **Values**. Right-click `WorkItemId` and ensure **Count** is selected.
 
 The example report displays. 
  
 :::image type="content" source="media/reports-boards/open-bugs-report.png" alt-text="Screenshot of Sample Open Bugs matrix report.":::
 
-## Related articles
+## Related content
 
 [!INCLUDE [temp](includes/sample-relatedarticles.md)]

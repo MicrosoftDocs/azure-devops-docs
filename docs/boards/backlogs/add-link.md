@@ -4,7 +4,6 @@ titleSuffix: Azure Boards
 description: Learn how to link work items to user stories, bugs, remote work items, a git branch, and other elements in Azure Boards.
 ms.custom: cross-project, devx-track-azurecli, engagement-fy24, peer-review-program, copilot-scenario-highlight
 ms.service: azure-devops-boards
-ms.assetid: 7130A14B-C760-4622-B97A-8DA27A1B3D02  
 ai-usage: ai-assisted
 ms.author: chcomley
 author: chcomley
@@ -60,8 +59,8 @@ The following types of links help you manage the relationships between work item
 | Build | Connects a work item to a build number, found in build, or integrated in build. |
 | Code | Connects a work item to a branch, changeset, commit, pull request, tag, or versioned item. |
 | GitHub | Connects a work item to a GitHub repository branch, commit, issue, or pull request. |
-| Remote work | Connects a work item defined in a different organization that either consumes from, produces for, or is remotely related via URL. |
-| Requirement | Connects a work item to a storyboard via URL. |
+| Remote work | Connects a work item defined in a different organization that either consumes from, produces for, or is remotely related through URL. |
+| Requirement | Connects a work item to a storyboard through URL. |
 | Test | Connects a work item to a test attachment or result. |
 | Wiki | Connects a work item to a wiki page. |
 | Work item | Connects a work item to aspects of your work, including: <br> - Affected by <br> - Affects <br> - Child <br> - Duplicate <br> - Duplicate of <br> - Hyperlink <br> - Integrated in release stage <br> - Parent <br> - Predecessor <br> - Referenced by <br> - References <br> - Related <br> - Shared steps <br> - Successor <br> - Test case <br> - Tested by <br> - Tests |

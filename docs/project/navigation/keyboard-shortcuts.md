@@ -204,7 +204,7 @@ You can use shortcuts for query results when you're viewing a list of work items
 
 Team Explorer is a plug-in for Visual Studio. You gain access to Team Explorer when you install the free [Visual Studio Community](https://visualstudio.microsoft.com/products/free-developer-offers-vs.aspx) version, another version of Visual Studio, or Visual Studio Team Explorer 2017.  
 
-## Next steps
+## Next step
 
 >[!div class="nextstepaction"]
 >[Work in Team Explorer](../../user-guide/work-team-explorer.md)

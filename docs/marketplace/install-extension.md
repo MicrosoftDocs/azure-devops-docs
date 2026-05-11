@@ -3,7 +3,6 @@ title: Install extensions
 description: Learn how to install, assign, disable, and uninstall extensions for Azure DevOps.
 ms.topic: how-to
 ms.subservice: azure-devops-marketplace
-ms.assetid: dd117c5c-111f-4361-91c6-ed37fb476c75 
 ms.author: chcomley
 author: chcomley
 ai-usage: ai-assisted
@@ -344,24 +343,24 @@ az devops extension list --include-built-in false --include-disabled false -outp
 
 Publisher Id    Extension Id             Name                     Version              Last Updated     States         		 Flags
 --------------  -----------------------  -----------------------  -------------------  ---------------  -----------------------  -------
-ms              vss-analytics            Analytics                18.160.0.2130149925  2019-11-22       multiVersion, truste...  trusted
-ms              vss-code-search          Code Search              18.160.0.1640944814  2019-11-22       multiVersion, truste...  trusted
-ms              vss-plans                Delivery Plans           18.160.0.1266795967  2019-11-25       multiVersion, truste...  trusted
+ms              vss-analytics            Analytics                18.160.0.2130149925  2019-11-22       multiVersion, truste... trusted
+ms              vss-code-search          Code Search              18.160.0.1640944814  2019-11-22       multiVersion, truste... trusted
+ms              vss-plans                Delivery Plans           18.160.0.1266795967  2019-11-25       multiVersion, truste... trusted
 ms-eswm         dependencytracker        Dependency Tracker       2.1910.12801         2019-10-28       none
-ms-devlabs      workitem-feature-tim...  Feature timeline and...  0.0.357              2019-10-14       none
+ms-devlabs      workitem-feature-tim... Feature timeline and...  0.0.357              2019-10-14       none
 AgileParts      gantt                    GANTT chart              1.0.79               2019-10-25       none
 gordon-bee...   github                   GitHub Widget            0.10.0               2016-03-16       none
-ms-devlabs      vsts-extensions-mult...  Multivalue control       2.2.26               2019-11-15       none
+ms-devlabs      vsts-extensions-mult... Multivalue control       2.2.26               2019-11-15       none
 agile-exte...   product-vision           Product Vision           2.0.6                2019-06-04       none
 mohitbagra      related-workitems        Related Work items       2.0.4                2017-11-12       none
 YodLabs         TagsManager2             Tags Manager             0.9.31               2019-02-04       none
 ms-devlabs      team-calendar            Team Calendar            2.0.15               2019-11-01       none
-ms              vss-testmanager-web      Test Manager for TFS...  18.160.0.2130893445  2019-11-25       multiVersion, truste...  trusted
-mmanela         vsts-workitem-recent...  Who recently viewed ...  1.0.4                2019-03-22       none
+ms              vss-testmanager-web      Test Manager for TFS...  18.160.0.2130893445  2019-11-25       multiVersion, truste... trusted
+mmanela         vsts-workitem-recent... Who recently viewed ...  1.0.4                2019-03-22       none
 ottostreif...   wiql-editor              Wiql Editor              2.0.90               2019-06-21       none
 mohitbagra      workitem-checklist       Work item checklist      3.2.4                2019-06-24       none
 mohitbagra      witoneclickactions       Work item form one c...  2.3.2                2018-04-03       none
-ms-devlabs      WorkItemVisualizatio...  Work Item Visualizat...  1.4.64               2018-04-03       none
+ms-devlabs      WorkItemVisualizatio... Work Item Visualizat...  1.4.64               2018-04-03       none
 ``` 
 
 ## List extension information
@@ -399,7 +398,7 @@ Publisher Id    Extension Id    Name         Version      Last Updated     State
 To resolve common problems, follow these troubleshooting steps:
 
 - **Extension fails to install:**
-  - **Check permissions:** To install extensions, make sure you're a Project Collection Administrator or have the necessary permissions granted by an administrator.
+  - **Check permissions:** To install extensions, ensure you're a Project Collection Administrator or have the necessary permissions granted by an administrator.
   - **Verify extension compatibility:** Ensure the extension is compatible with your version of Azure DevOps. Check the extension's details page for compatibility information.
   - **Network problems:** Verify that your network connection is stable and that no firewall or proxy settings block the installation process.
 
@@ -421,7 +420,7 @@ To resolve common problems, follow these troubleshooting steps:
 
 A: If you don't see your organization when buying from the Azure DevOps Marketplace, try the following steps:
 1. Check the identity that you use to sign in to the Visual Studio Marketplace. In the upper-right corner, select your user name to view your profile. 
-1. Make sure your email address and directory are correct.
+1. Ensure your email address and directory are correct.
 1. Close all browser windows.
 1. Open a private or incognito browsing session.
 1. Sign in to the Visual Studio Marketplace. Use the identity of a user in the organization that you want.
@@ -464,7 +463,7 @@ A: You can't install extensions for Azure DevOps Server for one of the following
 
 A: You must be a member of your project collection. Follow these steps to check the identity you use to sign in to the Marketplace.
 1. On your Azure DevOps Server web portal home page (`https://{server}:8080/tfs/`), go to the top-right corner of the page, and select your user name to view your profile.
-1. On the left side of your profile, make sure that your email address and directory are correct.
+1. On the left side of your profile, ensure that your email address and directory are correct.
 1. Close all browser windows.
 1. Open a private or incognito browsing session.
 1. Sign in to your Azure DevOps Server home page (`https://{server}:8080/tfs/`) with the identity that's a user in the project collection where you want to install the extension.

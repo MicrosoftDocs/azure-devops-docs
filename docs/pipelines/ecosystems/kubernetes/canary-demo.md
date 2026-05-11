@@ -2,7 +2,6 @@
 title: Use a canary deployment strategy for Kubernetes
 description: Learn how to perform and evaluate canary deployments on Kubernetes clusters by using Azure Pipelines.
 ms.topic: tutorial
-ms.assetid: 33ffbd7f-746b-4338-8669-0cd6adce6ef4
 ms.date: 01/14/2026
 ms.custom: fasttrack-edit
 monikerRange: '>= azure-devops-2022'

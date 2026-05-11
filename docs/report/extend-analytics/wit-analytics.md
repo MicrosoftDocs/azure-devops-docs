@@ -4,7 +4,6 @@ titleSuffix: Azure DevOps
 description: Learn how to construct OData queries for Azure DevOps to retrieve and analyze work tracking data. Master filtering, expanding, and sorting techniques.
 ms.subservice: azure-devops-analytics
 ms.custom: engagement-fy23, copilot-scenario-highlight
-ms.assetid: 0ABC2F7B-AFA5-465F-8DFE-4779D90452CD  
 ms.author: chcomley
 author: chcomley
 ms.topic: how-to

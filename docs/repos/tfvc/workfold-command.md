@@ -2,7 +2,6 @@
 title: TFVC workfold command
 titleSuffix: Azure Repos
 description: Use the Team Foundation Version Control workfold command to create, modify, or display information about the mappings between workspace and server folders.
-ms.assetid: f4d18139-bd2e-4621-be4e-a761ca537280
 ms.service: azure-devops-repos
 ms.topic: reference
 ms.date: 11/10/2022

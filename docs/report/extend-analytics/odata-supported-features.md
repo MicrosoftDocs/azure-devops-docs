@@ -3,7 +3,6 @@ title: Supported OData functions and clauses
 titleSuffix: Azure DevOps 
 description: Learn about the current level of support for OData specification in Analytics for Azure DevOps.
 ms.subservice: azure-devops-analytics
-ms.assetid: 8D81FEFD-F432-4E10-A415-9167B5FE9A57 
 ms.reviewer: desalg
 ms.author: chcomley
 author: chcomley
@@ -122,7 +121,7 @@ However, you can't enter the following string:
 - ```topsum```  
 - ```toppercent```  
 
-## Related articles  
+## Related content  
 
 - [Query your work tracking data](wit-analytics.md)  
 - [Aggregate data](aggregated-data-analytics.md)

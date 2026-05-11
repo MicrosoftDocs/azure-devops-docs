@@ -4,7 +4,6 @@ titleSuffix: Azure DevOps
 description: Learn how to choose and configure multiple backlog and portfolio backlog levels for your team in Azure DevOps to suit your workflow.
 ms.service: azure-devops-boards
 ms.custom: teams
-ms.assetid: BB1E56B6-988A-4D0A-AA56-560F2DF681DD  
 ms.author: chcomley
 author: chcomley
 ms.topic: how-to

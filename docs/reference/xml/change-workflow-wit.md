@@ -4,7 +4,6 @@ titleSuffix: Azure DevOps
 description: Add States, Transitions, Reasons, or Actions to customize the workflow for a WIT in Team Foundation Server 
 ms.service: azure-devops-boards
 ms.custom: archive-candidate
-ms.assetid: ca8dff64-7ece-46cf-b985-2751480dff32
 ms.author: chcomley
 author: chcomley
 ms.topic: how-to
@@ -46,7 +45,7 @@ If you're new to WIT customization, note the following:
 
 To customize the workflow, follow these two steps:   
 
-1.  Modify the `WORKFLOW` section of the WIT definition as described in this topic.
+1. Modify the `WORKFLOW` section of the WIT definition as described in this topic.
 
 1.  [Modify the process configuration to map new workflow states to metastates](process-configuration-xml-element.md).  
 

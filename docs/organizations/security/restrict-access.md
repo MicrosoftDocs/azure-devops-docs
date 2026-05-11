@@ -2,7 +2,6 @@
 title: Manage access to specific features
 titleSuffix: Azure DevOps 
 description: Discover how to set permissions in Azure DevOps to control access to specific functionalities. Ensure secure collaboration with tailored access settings.
-ms.assetid: ee4c4a8f-0478-4ade-8b12-4e5ffd0054c7
 ai-usage: ai-assisted
 ms.topic: overview
 ms.subservice: azure-devops-security
@@ -298,7 +297,7 @@ Set permissions for members who belong to a custom security group or for individ
 
 For examples that illustrate how to restrict modification of work items or select fields, see [Sample rule scenarios](../settings/work/rule-samples.md).   
 
-## Next steps
+## Next step
 
 > [!div class="nextstepaction"]
 > [Delete a user](/entra/fundamentals/how-to-create-delete-users#delete-a-user)

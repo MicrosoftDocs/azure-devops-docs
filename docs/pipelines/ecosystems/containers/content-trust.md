@@ -2,7 +2,6 @@
 title: Docker Content Trust in Azure Pipelines
 description: Use Azure Pipelines to sign and push trusted images to container registries
 ms.topic: quickstart
-ms.assetid: b66517e3-85de-4847-82f6-b1b0431d2915
 ms.author: ericvan
 author: geekzter
 ms.date: 05/21/2025

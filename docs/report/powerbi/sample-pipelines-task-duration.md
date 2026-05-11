@@ -249,6 +249,6 @@ The following image shows a portion of the resulting report.
 
 :::image type="content" source="media/pipeline-reports/task-duration-table-report.png" alt-text="Screenshot of Power BI Pipelines sample task duration table trend report."::: 
 
-## Related articles
+## Related content
 
 [!INCLUDE [temp](includes/sample-related-articles-pipelines.md)]

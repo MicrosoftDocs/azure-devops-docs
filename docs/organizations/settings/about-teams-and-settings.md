@@ -4,7 +4,6 @@ titleSuffix: Azure DevOps
 description: Learn about adding and configuring teams in Azure DevOps.
 ms.subservice: azure-devops-settings
 ms.custom: teams
-ms.assetid: 24C97BED-88F4-4D91-98D1-4AC0B39AB7D7
 ms.author: chcomley
 author: chcomley
 ms.topic: overview
@@ -222,7 +221,7 @@ You can also use the *\@mention* control within discussions and pull requests to
 
 Can a user account belong to more than one team?  
 
-Yes. You can add user accounts as members of the project or to one or more teams added to the project. If you work on two or more Scrum teams, make sure you [specify your sprint capacity for each team you work on](../../boards/sprints/set-capacity.md). 
+Yes. You can add user accounts as members of the project or to one or more teams added to the project. If you work on two or more Scrum teams, ensure you [specify your sprint capacity for each team you work on](../../boards/sprints/set-capacity.md). 
 
 ## Team member permissions 
 

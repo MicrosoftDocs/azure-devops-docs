@@ -21,7 +21,7 @@ Power BI reports often include data from multiple teams for aggregation and comp
 > [!IMPORTANT]
 > The team filter requires that the **"AreaSK"** field is included in the query used by the report you want to filter. 
 > All of the queries provided in the sample reports already include **"AreaSK"**. 
-> If you created your own query, make sure it returns "AreaSK" in either the $select or groupby() clauses.
+> If you created your own query, ensure it returns "AreaSK" in either the $select or groupby() clauses.
 
 [!INCLUDE [temp](includes/sample-required-reading.md)]
 
@@ -133,7 +133,7 @@ After selecting **Close & Apply** and returning to Power BI, follow these steps:
     
 ## Add the team filter to an existing report
 
-1. On the page where you want to add the team filter, make sure you don't select any charts. Then, choose **Slicer** from the **Visualizations** pane. 
+1. On the page where you want to add the team filter, ensure you don't select any charts. Then, choose **Slicer** from the **Visualizations** pane. 
 
 	:::image type="content" source="media/reports-boards/team-slicer-visualizations.png" alt-text="Screenshot of Power BI Visualizations and Fields selections for team slicer. ":::
 
@@ -141,6 +141,6 @@ After selecting **Close & Apply** and returning to Power BI, follow these steps:
 
 For more information about working with slicers, see [Slicers in Power BI](/power-bi/visuals/power-bi-visualization-slicers).
 
-## Related articles
+## Related content
 
 [!INCLUDE [temp](includes/sample-relatedarticles.md)]

@@ -2,7 +2,6 @@
 title: Branch strategically
 titleSuffix: Azure Repos
 description: Branch strategically
-ms.assetid: f586f036-a63f-40f9-8143-732e1d01323f
 ms.service: azure-devops-repos
 ms.topic: overview
 ms.date: 06/30/2022

@@ -1,7 +1,6 @@
 ---
 title: REST API samples for Azure DevOps
 description: Learn REST API basics with practical samples for Azure DevOps Services, including authentication patterns and common operations.
-ms.assetid: 9E17A266-051F-403F-A285-7F21D9CC52F0
 ai-usage: ai-assisted
 ms.subservice: azure-devops-ecosystem
 ms.topic: sample
@@ -169,7 +168,7 @@ public async Task<string> CreateWorkItemAsync(string organization, string projec
     var patchOperations = new[]
     {
         new { op = "add", path = "/fields/System.Title", value = "Sample work item" },
-        new { op = "add", path = "/fields/System.Description", value = "Created via REST API with Microsoft Entra ID" },
+        new { op = "add", path = "/fields/System.Description", value = "Created through REST API with Microsoft Entra ID" },
         new { op = "add", path = "/fields/System.Tags", value = "api; sample; entra-id" }
     };
     
@@ -217,7 +216,7 @@ $body = @(
     @{
         op = "add"
         path = "/fields/System.Description"
-        value = "Created via REST API with Microsoft Entra ID"
+        value = "Created through REST API with Microsoft Entra ID"
     },
     @{
         op = "add"
@@ -442,7 +441,7 @@ public async Task<WorkItem> CreateWorkItemAsync(string organizationUrl, string p
         {
             Operation = Operation.Add,
             Path = "/fields/System.Title",
-            Value = "Sample work item created via .NET client with Microsoft Entra ID"
+            Value = "Sample work item created through .NET client with Microsoft Entra ID"
         },
         new JsonPatchOperation
         {

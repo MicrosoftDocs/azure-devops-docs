@@ -3,7 +3,6 @@ title: Buy access to Azure Test Plans
 titleSuffix: Azure DevOps Server
 description: Steps for how to buy monthly access to Azure Test Plans.
 ms.subservice: azure-devops-billing
-ms.assetid: B6BED64A-DA53-4AB0-B200-85F86A869D7B
 ai-usage: ai-assisted
 ms.topic: how-to
 ms.author: chcomley
@@ -62,7 +61,7 @@ For more information about the requirements to access Azure Test Plans, see [Cha
 > **Benefits of paying for Azure DevOps Server users through Basic + Test Plans in Azure DevOps Services:**
 > - Users can access both Azure DevOps Server and Azure DevOps Services for the same price.
 > - Pay monthly for users who need temporary access.
-> - Utilize all Azure purchasing options, including credit card, Cloud Solution Provider (CSP) partner, Enterprise Agreement, and more.
+> - Use all Azure purchasing options, including credit card, Cloud Solution Provider (CSP) partner, Enterprise Agreement, and more.
 >
 > **Important considerations:**
 > - Azure DevOps Server doesn't detect activities in Azure DevOps Services.

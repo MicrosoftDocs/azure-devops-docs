@@ -1,7 +1,6 @@
 ---
 title: Create a bug using .NET client libraries in Azure DevOps
 description: Use .NET client libraries to create a bug in Azure DevOps Services with modern authentication methods.
-ms.assetid: ea2e5303-46b5-41d0-b6f5-b3d8ce515a64
 ms.subservice: azure-devops-ecosystem
 ai-usage: ai-assisted
 ms.topic: how-to
@@ -543,7 +542,7 @@ public class BugReportFunction
         var bug = await bugCreator.CreateBugAsync(
             project: "your-project-name",
             title: "Function-detected Issue",
-            reproSteps: "Issue reported via Azure Function...",
+            reproSteps: "Issue reported through Azure Function...",
             priority: 3,
             severity: "4 - Low"
         );
@@ -649,7 +648,7 @@ When creating work items, you'll commonly use these fields:
 - **Required field missing**: Ensure all required fields are included in the patch document
 - **Invalid field values**: Verify field values match the expected format and allowed values
 - **Field not found**: Check field names are spelled correctly and exist for the work item type
-- **Read-only field errors**: Some fields cannot be set during creation (e.g., System.CreatedBy)
+- **Read-only field errors**: Some fields cannot be set during creation (for example, System.CreatedBy)
 
 ### Common exceptions
 - **VssUnauthorizedException**: Authentication failed or insufficient permissions
@@ -680,7 +679,7 @@ If you have the [Azure DevOps MCP Server](../../mcp-server/mcp-server-overview.m
 > [!NOTE]
 > Agent mode and the MCP Server use natural language, so you can adjust these prompts or ask follow-up questions to refine the results.
 
-## Next steps
+## Next step
 
 - [Get work items with queries](./work-item-quickstart.md)
 - [Learn about authentication options](../get-started/authentication/authentication-guidance.md)

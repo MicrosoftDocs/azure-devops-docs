@@ -2,7 +2,6 @@
 ms.subservice: azure-devops-ecosystem
 title: Develop a web extension
 description: Learn how to develop your first web extension for Azure DevOps.
-ms.assetid: ae82118c-82fa-40ec-9f29-989ce981f566
 ms.custom: engagement-fy23, UpdateFrequency3
 ms.topic: how-to
 monikerRange: '<= azure-devops'
@@ -151,7 +150,7 @@ An extension is a set of files that includes a required manifest file. Package t
 
    [!INCLUDE [preview](../_data/get-help.md)]
 
-## Next steps
+## Next step
 
 > [!div class="nextstepaction"]
 > [Package and publish your extension](../publish/overview.md)

@@ -3,7 +3,6 @@ title: Buy Azure DevOps for Cloud Solution Providers
 titleSuffix: Azure DevOps Services
 description: Cloud Solution Provider (CSP) partners can enable their customers to pay for Azure DevOps with CSP-based Azure subscription.
 ms.subservice: azure-devops-billing
-ms.assetid: a7d8ce85-c95f-495a-82f3-9237b49b29de
 ms.custom: freshness-fy22q1, engagement-fy23
 ms.topic: how-to
 ms.author: chcomley

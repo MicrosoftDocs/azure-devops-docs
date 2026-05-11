@@ -3,7 +3,6 @@ title: Conditional Access policies on Azure DevOps
 titleSuffix: Azure DevOps Services
 description: Set up Microsoft Entra Conditional Access policies to grant or restrict access to tenant resources
 ms.subservice: azure-devops-organizations
-ms.assetid: 2fdfbfe2-b9b2-4d61-ad3e-45f11953ef3e
 ms.topic: how-to
 ms.custom: copilot-scenario-highlight
 ms.author: chcomley
@@ -90,7 +89,7 @@ The following groups still require access to Azure Resource Manager. Consider ad
 
 ## Continuous Access Evaluation
 
-Azure DevOps supports [Continuous Access Evaluation (CAE) via Microsoft Entra ID](/entra/identity/conditional-access/concept-continuous-access-evaluation), which enables near real-time enforcement of Conditional Access policies. With CAE, access tokens can be revoked immediately when critical events occur—such as when a user is disabled, a password changes, or a location/IP shift happens—without waiting for token expiration. This approach enhances security, reduces operational overhead, and improves resilience during identity service outages.
+Azure DevOps supports [Continuous Access Evaluation (CAE) through Microsoft Entra ID](/entra/identity/conditional-access/concept-continuous-access-evaluation), which enables near real-time enforcement of Conditional Access policies. With CAE, access tokens can be revoked immediately when critical events occur—such as when a user is disabled, a password changes, or a location/IP shift happens—without waiting for token expiration. This approach enhances security, reduces operational overhead, and improves resilience during identity service outages.
 
 App developers who use the latest [.NET client library version](../../integrate/concepts/dotnet-client-libraries.md) (20.259.0-preview and later) should support CAE-enabled tokens by [gracefully handling claims challenges](/entra/identity-platform/claims-challenge?tabs=dotnet).
 

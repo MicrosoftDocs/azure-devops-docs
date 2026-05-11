@@ -2,7 +2,6 @@
 title: TFVC code review in Visual Studio
 titleSuffix: Azure Repos
 description: Request code review, respond to review requests, and suspend and resume work for Team Foundation Version Control (TFVC) in Visual Studio.
-ms.assetid: 115cc8ee-e3b3-4bb4-a50f-604a75d52a8e
 toc: show
 ms.service: azure-devops-repos
 ms.topic: tutorial

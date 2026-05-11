@@ -2,7 +2,6 @@
 ms.subservice: azure-devops-ecosystem
 title: Work with Organization URLs in Azure DevOps Extensions
 description: "Azure DevOps URLs: Discover best practices for handling URLs in extensions and integrations. Learn how to keep your tools resilient and compatible."
-ms.assetid: 1f27f05e-2c55-4873-ab4a-8c9c0947a7fe
 ms.topic: concept-article
 ms.custom: UpdateFrequency3
 monikerRange: '<= azure-devops'
@@ -50,7 +49,7 @@ $orgUrl = $env:SYSTEM_TEAMFOUNDATIONCOLLECTIONURI
 Write-Host $orgUrl
 ```
 
-The output depends on the organization's primary URL form - either `https://dev.azure.com/{organization}` or `https://{organization}.visualstudio.com`. Make sure your pipelines tasks and service hook consumers handle both URL forms.
+The output depends on the organization's primary URL form - either `https://dev.azure.com/{organization}` or `https://{organization}.visualstudio.com`. Ensure your pipelines tasks and service hook consumers handle both URL forms.
 
 ## URLs returned in REST APIs
 

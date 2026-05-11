@@ -4,7 +4,6 @@ titleSuffix: Azure DevOps Services
 description: Learn how to add or remove workflow states to a work item type for an inherited process in Azure Boards.
 ms.custom: inherited-process, copilot-scenario-highlight
 ms.service: azure-devops-boards
-ms.assetid: 35971F8F-26EF-4C99-9825-4AC072A6EBE4  
 ms.author: chcomley
 author: chcomley
 ai-usage: ai-assisted

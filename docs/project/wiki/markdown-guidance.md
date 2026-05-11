@@ -4,7 +4,6 @@ titleSuffix: Azure DevOps
 ms.custom: wiki, devdivchpfy22
 description: Use Markdown syntax to format content as tables, lists, headings, links, math notation, and more. Share information effectively in pull requests, README files, dashboards, and wikis in Azure DevOps.
 ms.subservice: azure-devops-wiki
-ms.assetid: 43D2156E-2E20-42B8-B816-43E95CB479C5 
 ai-usage: ai-assisted 
 ms.author: chcomley
 author: chcomley
@@ -1299,7 +1298,7 @@ The following example creates a collapsible section on a wiki page:
 ```html
 # A collapsible section with Markdown syntax
 <details>
-  <summary>Click to expand!</summary>
+  <summary>Select to expand!</summary>
   
   ## Heading
   1. A numbered

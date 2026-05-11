@@ -1,7 +1,6 @@
 ---
 title: Deploy to Linux VMs in an environment
 description: Use Azure Pipelines to deploy a Java or JavaScript web application to Linux VM web servers in an environment.
-ms.assetid: 9EBB0342-7FD2-473C-9809-9BCA2250CBC3
 ms.topic: quickstart
 ms.custom: freshness-fy22q2, linux-related-content
 ms.date: 10/07/2025

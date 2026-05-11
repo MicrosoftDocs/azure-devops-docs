@@ -2,7 +2,6 @@
 title: Resolve Team Foundation Version Control conflicts
 titleSuffix: Azure Repos
 description: Resolve Team Foundation Version Control (TFVC) conflicts between versions of files.
-ms.assetid: 61cae295-0864-4ae9-8327-9bd1dd14cae9
 ms.service: azure-devops-repos
 ms.topic: how-to
 ms.date: 11/28/2022

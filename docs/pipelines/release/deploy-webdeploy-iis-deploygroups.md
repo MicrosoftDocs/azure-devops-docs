@@ -1,7 +1,6 @@
 ---
 title: Deploy web apps to an IIS server on a Windows VM
 description: Use a Classic pipeline to deploy web apps to an IIS web server on a Windows virtual machine in a deployment group.
-ms.assetid: 979E4504-C88A-4D0A-A912-6E5998D87445
 ms.topic: quickstart
 ms.author: ronai
 author: RoopeshNair

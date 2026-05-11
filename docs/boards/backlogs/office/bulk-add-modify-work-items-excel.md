@@ -3,7 +3,6 @@ title: Bulk Modify Azure Boards Work Items with Excel
 titleSuffix: Azure Boards
 description: Use the Microsoft Excel plugin in Azure DevOps to bulk add or modify Azure Boards work items, such as tasks, bugs, backlog items, or issues.
 ms.service: azure-devops-boards
-ms.assetid: 1399B4B1-72AE-4328-AAD8-3AAF0B808761
 ms.author: chcomley
 author: chcomley
 ms.custom: linked-from-support
@@ -145,7 +144,7 @@ The following features behave differently when you use a worksheet connected to 
 - Use **Outdent** and **Indent** to change the location of a work item within the tree. 
 - The Undo (**Ctrl** + **Z**) action might not work. To revert an action, refresh the worksheet. 
 
-We recommend you publish and refresh your worksheet often to make sure your local work remains in sync with Azure Boards data store. For more information about Excel, see [Basic Excel tasks](https://support.office.com/article/basic-tasks-in-excel-dc775dd1-fa52-430f-9c3c-d998d1735fca).
+We recommend you publish and refresh your worksheet often to ensure your local work remains in sync with Azure Boards data store. For more information about Excel, see [Basic Excel tasks](https://support.office.com/article/basic-tasks-in-excel-dc775dd1-fa52-430f-9c3c-d998d1735fca).
 
 ### Sort work items
 
@@ -382,7 +381,7 @@ If you want to change a query, flat list to a tree list, you must first reconfig
 
 To convert your query list to an input list, follow these steps:
 
-1. Select **Publish** to make sure all changes in your worksheet are saved.
+1. Select **Publish** to ensure all changes in your worksheet are saved.
 
 1. On the **Team** ribbon, select **Configure** > **List**:
 

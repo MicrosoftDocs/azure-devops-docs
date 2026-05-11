@@ -64,7 +64,7 @@ Each user within your team must [restart their clients](#restart-clients) and th
 - [Update Git remotes](#update-git-remotes) — if your project uses Git repositories
 - [Update TFVC server workspaces](#update-tfvc-server-workspaces) — if your project uses TFVC with server workspaces
 - [Update TFVC local workspaces](#update-tfvc-local-workspaces) — if your project uses TFVC with local workspaces
-- [Update OData feeds](#update-odata-feeds) — if you connect Power BI reports via OData
+- [Update OData feeds](#update-odata-feeds) — if you connect Power BI reports through OData
 - [Update Analytics views](#update-analytics-views) — if you created custom Analytics views
 
 ### Restart clients
@@ -124,7 +124,7 @@ If you use GitHub Copilot, the [Azure DevOps MCP Server](../../mcp-server/mcp-se
 | Communicate a rename to the team | `Draft an announcement for my team explaining that our Azure DevOps project is being renamed, what actions each developer needs to take to update their Git remotes and local workspaces, and a timeline for the change` |
 | Fix broken service connections | `After renaming my project, my Azure Resource Manager service connections using workload identity federation stopped working. Walk me through updating the federation subjects to use the new project name` |
 | Update Git remotes in bulk | `Generate a script I can share with my team that detects their current Git remote URLs pointing to the old project name and updates them to use the new project name` |
-| Update reporting after a rename | `I renamed my project and now my Power BI dashboards connected via OData show errors. Guide me through updating the Analytics views and OData feed URLs to use the new project name` |
+| Update reporting after a rename | `I renamed my project and now my Power BI dashboards connected through OData show errors. Guide me through updating the Analytics views and OData feed URLs to use the new project name` |
 | Recover from a problematic rename | `I renamed a project but some team members can't open their TFVC local workspaces anymore. Help me understand why and walk me through the steps to fix both server and local workspaces` |
 
 > [!TIP]

@@ -3,7 +3,6 @@ title: Disconnect organization from Microsoft Entra ID
 titleSuffix: Azure DevOps Services
 description: Learn how to stop using your organization's Microsoft Entra ID and sign in with a Microsoft account by disconnecting your organization from your directory
 ms.subservice: azure-devops-organizations
-ms.assetid: 3eb744cf-854d-4cbd-b725-c2e070bd922b
 ms.topic: how-to
 ms.author: chcomley
 author: chcomley

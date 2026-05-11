@@ -4,7 +4,6 @@ titleSuffix: Azure Boards
 description: Learn about work queries based on titles, IDs, and rich-text fields in Azure Boards and Azure DevOps.
 ms.custom: boards-queries, copilot-scenario-highlight
 ms.service: azure-devops-boards
-ms.assetid: c0b1fcb1-c4f4-4651-a401-171fa4372518
 ms.author: chcomley
 author: chcomley
 ai-usage: ai-assisted

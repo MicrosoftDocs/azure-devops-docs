@@ -4,7 +4,6 @@ titleSuffix: Azure DevOps
 description: XML syntax and usage for all ProcessConfiguration elements to support customization of work item types and Agile tool backlogs and boards 
 ms.service: azure-devops-boards
 ms.custom: process
-ms.assetid: 4314c6ad-d6ca-4cf2-a3c8-46e4e8ed759a
 ms.author: chcomley
 author: chcomley
 ms.topic: reference
@@ -192,7 +191,7 @@ You configure backlogs within the XML sections that appear in the following samp
 - By default, each backlog is restricted to a total of 1000 work items. You can change this limit by specifying a value for the `workItemCountLimit` attribute.  
 - The values assigned to *CategoryName* must correspond to a category group defined for the project. Specify category groups in the definition file for Categories.  
 - You use [portfolio backlogs](../../boards/backlogs/organize-backlog.md) to organize your backlog, view the rollup of backlog items at lower levels, and to view progress across several teams. New and upgraded projects contain two portfolio backlog levels: Features and Epics. You can add up to three additional levels. Only the top level portfolio backlog doesn't specify a parent category.  
-- Your [product backlog](../../boards/backlogs/create-your-backlog.md) corresponds to your project plan, the roadmap for what your team plans to deliver. It lists work items whose WITs belong to the Requirements Category. In order to manage different WITs than those provided by your default project, you can add WITs to the Requirements Category and map the workflow states to state categories.  
+- Your [product backlog](../../boards/backlogs/create-your-backlog.md) corresponds to your project plan, the roadmap for what your team plans to deliver. It lists work items whose WITs belong to the Requirements Category. To manage different WITs than those provided by your default project, you can add WITs to the Requirements Category and map the workflow states to state categories.  
 - Your [sprint or iteration backlogs](../../boards/sprints/assign-work-sprint.md) display both the set of requirements that you and your team have committed to in a specific sprint cycle and the tasks that you have linked to those requirements. You link tasks to requirements using the parent-child link type. Because the WITs that appear on these backlogs correspond to the same types that appear on the product backlog, much of the customization work that you do for the product backlog will define the functionality of the sprint backlog.  
 
 <a id="map">  </a>
@@ -909,8 +908,8 @@ The color you associate with your work item states will appear across the produc
 - Work item form (web portal, see [New work item experience](../process/new-work-item-experience.md))  
 - Work item form links control (web portal, see [LinksControlOptions XML elements reference](linkscontroloptions-xml-elements.md))     
 - Cards displayed on the [board](../../boards/boards/kanban-overview.md) and [task boards](../../boards/sprints//task-board.md) (For settings, see [Customize cards](../../boards/boards/customize-cards.md))       
-- All backlogs (add State via column options)  
-- Query results (add State via column options)
+- All backlogs (add State through column options)  
+- Query results (add State through column options)
 
 Here we show how it appears in the work item form:  
 
@@ -921,8 +920,8 @@ Here we show how it appears in the work item form:
 
 **Details:**
 - You must specify the color as an eight-digit hexadecimal value, similar to that used for the color defined for a WIT    
-- To add or edit colors, simply reimport your process configuration with the updated property  
-- State colors are defined by name across all work item types, i.e., there is no way to have "Active" be one color for User Story and a different color for Bug    
+- To add or edit colors, reimport your process configuration with the updated property  
+- State colors are defined by name across all work item types, that is, there is no way to have "Active" be one color for User Story and a different color for Bug    
 - Unmapped colors are defaulted at runtime based on their meta-state mapping  
 - States with no color defined, and no meta-state mapping will show an empty circle.  
 
@@ -953,7 +952,7 @@ and, here the icon is shown within the work item form.
 ![Bug work item form header, Work item type icon shown](media/process-config-bug-form-header-bug-icon.png) 
 
 
-## Related articles
+## Related content
 
 Learn more about the web work item form and how to customize it from these additional topics: 
 

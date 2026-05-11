@@ -4,7 +4,6 @@ titleSuffix: Azure DevOps Services
 ms.custom: references_regions
 description: Find your organization's default location and choose your organization's geography location when you create one.
 ms.subservice: azure-devops-organizations
-ms.assetid: cc4fd0d6-b24f-48ec-8b90-8e5f18e18d65
 ms.topic: how-to
 ms.author: chcomley
 author: chcomley

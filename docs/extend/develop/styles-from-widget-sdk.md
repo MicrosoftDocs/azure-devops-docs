@@ -4,7 +4,6 @@ ms.custom: UpdateFrequency3
 title: Basic styles for widgets
 titleSuffix: Azure DevOps
 description: Use CSS classes from the Widget SDK to style widgets on Azure DevOps dashboards.
-ms.assetid: E5CB346F-E3EA-4A47-B10C-FFC300766585
 ms.topic: how-to
 monikerRange: '<= azure-devops'
 ms.author: chcomley
@@ -150,7 +149,7 @@ Without the `clickable` class, the default blue link color applies to all text i
     <a href="https://bing.com"  target="_blank">
 		<h2 class="title">Counter widget</h2>
 		<div class="big-count">223</div>
-		<div>Click me!</div>
+		<div>Select me!</div>
 	</a>
 </div>
 ```

@@ -2,7 +2,6 @@
 title: Use Visual Studio with Git
 titleSuffix: Azure Repos
 description: See resources for using Visual Studio with Git so that you can host your code in an Azure Repos Git repository or GitHub repository.
-ms.assetid: 32f46ecd-1b03-4ef0-a9c4-8a120da2b03f
 ms.service: azure-devops-repos
 ms.topic: how-to
 ms.date: 11/29/2022

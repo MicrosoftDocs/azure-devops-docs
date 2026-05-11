@@ -3,7 +3,6 @@ title: What is Azure Artifacts?
 description: Learn how to get started with Azure Artifacts.
 ms.service: azure-devops-artifacts
 ms.topic: overview
-ms.assetid: 45ECCEFD-3804-4D8C-8567-57C84F92A705
 ms.author: rabououn
 author: ramiMSFT
 ms.date: 08/22/2025

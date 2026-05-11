@@ -2,7 +2,6 @@
 title: Microsoft-hosted agents for Azure Pipelines
 description: Learn about using the Microsoft-hosted agents provided in Azure Pipelines
 ms.topic: concept-article
-ms.assetid: D17E9C01-8026-41E8-B44A-AB17EDE4AFBD
 ms.date: 03/10/2026
 monikerRange: '<= azure-devops'
 ---
@@ -70,6 +69,7 @@ You can see the installed software for each macOS hosted agent by choosing the *
 
 | Image | Classic Editor Agent Specification | YAML VM Image Label | Included software |
 | --- | --- | --- | --- |
+| macOS 26 Tahoe<br>*(public preview)* | *macOS-26* | `macOS-26` | [Link](https://github.com/actions/runner-images/blob/main/images/macos/macos-26-Readme.md) |
 | macOS 15 Sequoia | *macOS-15* | `macOS-latest` OR `macOS-15` | [Link](https://github.com/actions/runner-images/blob/main/images/macos/macos-15-Readme.md) |
 | macOS 14 Sonoma<br>*[macOS 14 Sonoma hosted image deprecation schedule](./hosted-deprecation-schedule.md?tabs=macos-images#macos-14-sonoma-hosted-image-deprecation-schedule)* | *macOS-14* | `macOS-14` | [Link](https://aka.ms/macOS-14-readme) |
 
@@ -80,6 +80,7 @@ You can see the installed software for each macOS hosted agent by choosing the *
 
 #### macOS images updates
 
+* The macOS 26 (Intel) Azure Pipelines hosted agent image is in public preview.
 * [[macOS] Deprecation of simulator runtimes for Xcode 16.3 and older on macOS 15 on January 12th, 2026.](https://github.com/actions/runner-images/issues/13392)
 * The macOS 14 Sonoma image will be deprecated starting July 6, 2026. For more information, see [macOS 14 Sonoma hosted image deprecation schedule](./hosted-deprecation-schedule.md?tabs=macos-images#macos-14-sonoma-hosted-image-deprecation-schedule).
 * The macOS 15 Sequoia ARM64 limited public preview has been paused.

@@ -1,7 +1,6 @@
 ---
 title: Install The Test And Feedback Extension
 description: Install and set up the Test & Feedback browser extension to run exploratory tests on web apps, capture screenshots and recordings, and submit feedback to Azure DevOps.
-ms.assetid: 1426e139-c7d4-4270-8db7-af7d6da80574
 ai-usage: ai-assisted
 ms.service: azure-devops-test-plans
 ms.custom: UpdateFrequency3

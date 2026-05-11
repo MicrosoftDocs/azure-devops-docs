@@ -2,7 +2,6 @@
 title: Secure agents, projects, and containers
 description: Other tips for securing your pipelines, including protecting shared infrastructure, repositories, and projects.
 ms.author: chcomley
-ms.assetid: 95fe319a-60bd-4b1b-9111-5fd8852f7839
 ms.date: 01/16/2026
 monikerRange: "<=azure-devops"
 ms.topic: best-practice
@@ -135,7 +134,7 @@ Avoid running builds from forks on self-hosted agents. If you use self-hosted ag
 
 #### Review code changes
 
-Before you run your pipeline on a forked pull request, carefully review the proposed changes, and make sure you're comfortable running it.
+Before you run your pipeline on a forked pull request, carefully review the proposed changes, and ensure you're comfortable running it.
 
 The version of the YAML pipeline you run is the one from the pull request. Pay special attention to changes to the YAML code and to the code that runs when the pipeline runs, such as command line scripts or unit tests.
 
@@ -201,7 +200,7 @@ The Auditing service records many pipeline events.
 Review the audit log periodically to ensure no malicious changes slipped past.
 To get started, visit `https://dev.azure.com/ORG-NAME/_settings/audit`.
 
-## Next steps
+## Next step
 
 >[!div class="nextstepaction"]
 >[Review the security overview](overview.md)

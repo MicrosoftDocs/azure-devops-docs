@@ -370,13 +370,13 @@ If you use GitHub Copilot, the [Azure DevOps MCP Server](../../mcp-server/mcp-se
 | Scale from one team to many | `Our single default team has grown to 30 people working on different features. Help me split into three feature teams, redistribute existing work items based on area paths, and set up independent backlogs for each team` |
 | Audit team membership | `List all teams in my project with their members and administrators. Identify any teams with no administrator, teams with members who left the organization, or teams with overlapping membership that might cause confusion` |
 | Set up a virtual team for cross-cutting work | `Create a DevOps team that spans Backend and Frontend teams for infrastructure and deployment work. Configure their area path to include sub-areas from both teams so they can track cross-cutting concerns` |
-| Automate team creation via CLI | `Generate Azure DevOps CLI commands to create 5 teams from a list of names, add specific members to each, and set the default team for our project` |
+| Automate team creation through CLI | `Generate Azure DevOps CLI commands to create 5 teams from a list of names, add specific members to each, and set the default team for our project` |
 | Configure team defaults and permissions | `I just created a new Platform team. Walk me through setting their default area path, backlog iteration, sprint iterations, working days, and granting the team lead permissions to manage the team settings` |
 
 > [!TIP]
 > For the best results, use these prompts in agent mode with the Azure DevOps MCP Server connected. Customize the prompts with your specific team names, member lists, or project structure.
 
-## Next steps
+## Next step
 
 > [!div class="nextstepaction"]
 > [Manage teams and configure team tools](manage-teams.md)

@@ -2,7 +2,6 @@
 title: Folderdiff command
 titleSuffix: Azure Repos
 description: Use the folderdiff command to compare differences between folders in Team Foundation Version Control (TFVC).
-ms.assetid: 6bfb8318-ee32-4114-b5d1-d7196b1a1855
 ms.service: azure-devops-repos
 ms.topic: reference
 ms.date: 11/08/2022

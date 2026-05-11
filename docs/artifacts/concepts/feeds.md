@@ -1,7 +1,6 @@
 ---
 title: What are Azure Artifacts feeds?
 description: Learn what Azure Artifacts feeds are, explore the different feed types and how to manage them in Azure Artifacts.  
-ms.assetid: 21673f53-68a3-4d44-866e-ad29435a3fde
 ms.custom: peer-review-program
 ms.service: azure-devops-artifacts
 ms.topic: overview

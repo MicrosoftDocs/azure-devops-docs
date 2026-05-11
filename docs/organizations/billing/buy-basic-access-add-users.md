@@ -4,7 +4,6 @@ titleSuffix: Azure DevOps
 ms.custom: freshness-fy22q1, engagement-fy23, copilot-scenario-highlight
 description: Assign paid access and control the default access of your new users in Azure DevOps.
 ms.subservice: azure-devops-billing
-ms.assetid: 02cb8774-6d1d-4f15-8818-b56541033b1f
 ai-usage: ai-assisted
 ms.topic: how-to
 ms.author: chcomley
@@ -47,7 +46,7 @@ Ensure you have the following items in place:
 | Category | Requirements |
 |--------------|-------------|
 |Permissions| Member of the [Project Collection Administrators group](../security/look-up-project-collection-administrators.md). Organization owners are automatically members of this group.  |
-|Licensing| [Licensing set up for your organization via Azure](https://azure.microsoft.com/pricing/details/devops/server/)|
+|Licensing| [Licensing set up for your organization through Azure](https://azure.microsoft.com/pricing/details/devops/server/)|
 
 ::: moniker-end
 
@@ -142,9 +141,9 @@ For more information, see [multi-organization billing FAQs](./billing-faq.yml). 
 
 ::: moniker range=" < azure-devops"
 
-## Pay via Azure
+## Pay through Azure
 
-To pay via Azure, do the following steps:
+To pay through Azure, do the following steps:
 
 1. [Create an Azure DevOps organization](../accounts/create-organization.md), even if you don't intend to use it.
 2. [Set up billing](set-up-billing-for-your-organization-vs.md#set-up-billing) using an Azure subscription and add users or buy CI/CD.

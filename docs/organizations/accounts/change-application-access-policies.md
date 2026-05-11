@@ -3,7 +3,6 @@ title: Change application connection and security policies for organizations
 titleSuffix: Azure DevOps Services
 description: Manage security policies for accessing organization through Conditional Access, OAuth, SSH, and personal access tokens (PATs).
 ms.subservice: azure-devops-organizations
-ms.assetid: 2fdfbfe2-b9b2-4d61-ad3e-45f11953ef3e
 ms.topic: how-to
 ms.author: chcomley
 author: chcomley
@@ -32,7 +31,7 @@ This article shows how to manage your organization's security policies that dete
 To allow seamless access to your organization without repeatedly prompting for user credentials, applications can use authentication methods, like [OAuth](../../integrate/get-started/authentication/oauth.md), [SSH](../../repos/git/use-ssh-keys-to-authenticate.md), and [personal access token (PATs)](use-personal-access-tokens-to-authenticate.md). By default, all existing organizations allow access for all authentication methods.
 
 You can limit access to these authentication methods by disabling the following application connection policies:
-- **Third-party application access via OAuth**: Enable Azure DevOps OAuth apps to access resources in your organization through OAuth. This policy is defaulted to *off* for all new organizations. If you want access to [Azure DevOps OAuth apps](../../integrate/get-started/authentication/azure-devops-oauth.md), enable this policy to ensure these apps can access resources in your organization. This policy doesn't affect [Microsoft Entra ID OAuth app access](../../integrate/get-started/authentication/entra-oauth.md).
+- **Third-party application access through OAuth**: Enable Azure DevOps OAuth apps to access resources in your organization through OAuth. This policy is defaulted to *off* for all new organizations. If you want access to [Azure DevOps OAuth apps](../../integrate/get-started/authentication/azure-devops-oauth.md), enable this policy to ensure these apps can access resources in your organization. This policy doesn't affect [Microsoft Entra ID OAuth app access](../../integrate/get-started/authentication/entra-oauth.md).
 - **SSH authentication**: Enable applications to connect to your organization's Git repos through SSH.
 - Tenant admins can [**restrict global personal access token creation**](manage-pats-with-policies-for-administrators.md#restrict-creation-of-global-pats-tenant-policy), [**restrict full-scoped personal access token creation**](manage-pats-with-policies-for-administrators.md#restrict-creation-of-full-scoped-pats-tenant-policy), and [**enforce maximum personal access token lifespan**](manage-pats-with-policies-for-administrators.md#set-maximum-lifespan-for-new-pats-tenant-policy) through tenant-level policies on the _Microsoft Entra_ settings page. Add Microsoft Entra users or groups to exempt them from these policies.
 - Organization admins can [**restrict personal access token creation**](manage-pats-with-policies-for-administrators.md#restrict-personal-access-token-creation-organization-policy) in their respective organizations. Subpolicies allow admins to permit the creation of packaging-only PATs or the creation of any-scope PATs to allowlisted Microsoft Entra users or groups.
@@ -43,7 +42,7 @@ When you deny access to an authentication method, no application can access your
 
 ## Conditional Access policy support on Azure DevOps
 
-[Conditional Access (CA) in Azure DevOps](conditional-access-policies.md) is enforced through Microsoft Entra ID and supports both interactive (web) and non-interactive (client credential) flows, validating policies like MFA, IP restrictions, and device compliance during sign-in and periodically via token checks. 
+[Conditional Access (CA) in Azure DevOps](conditional-access-policies.md) is enforced through Microsoft Entra ID and supports both interactive (web) and non-interactive (client credential) flows, validating policies like MFA, IP restrictions, and device compliance during sign-in and periodically through token checks. 
 
 ## SSH key policies
 
@@ -63,12 +62,12 @@ If you disable the policy, the system no longer checks expiration dates, and exp
 
 | Policy | Org-level | Tenant-level |
 |--------------|-------------|
-| [**Third-party application access via OAuth**](#restrict-authentication-methods) | ✅ | |
+| [**Third-party application access through OAuth**](#restrict-authentication-methods) | ✅ | |
 | [**SSH authentication**](#restrict-authentication-methods) | ✅ |  |
 | [**Validate SSH key expiration**](#validate-ssh-key-expiration) | ✅ |  |
 | [**Log audit events**](../audit/azure-devops-auditing.md) | ✅ |  |
 | [**Restrict personal access token creation**](manage-pats-with-policies-for-administrators.md#restrict-personal-access-token-creation-organization-policy) | ✅ |  |
-| [**Allow public projects**](../projects/make-project-public.md) | ✅ |  |
+| [**Allow public projects**](../projects/public-projects-retirement.md) | ✅ |  |
 | [**Additional protections when using public package registries**](https://devblogs.microsoft.com/devops/changes-to-azure-artifact-upstream-behavior/) | ✅ |  |
 | [**Enable IP Conditional Access policy validation on non-interactive flows**](conditional-access-policies.md) | ✅ |  | 
 | [**External guest access**](add-external-user.md) | ✅ |  |

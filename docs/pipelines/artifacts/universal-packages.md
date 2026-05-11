@@ -1,7 +1,6 @@
 ---
 title: Publish & download Universal Packages
 description: Learn how to publish and download Universal Packages with Azure Pipelines YAML/Classic
-ms.assetid: 6c980df0-9e90-4625-88c9-955b11d54f10
 ms.topic: how-to
 ms.date: 02/27/2025
 monikerRange: 'azure-devops'

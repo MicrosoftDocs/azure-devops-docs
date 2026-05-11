@@ -4,7 +4,6 @@ titleSuffix: Azure DevOps
 description: Understand how Azure DevOps Services status is monitored and available to users, and check if the state of your service is healthy, degraded, or under advisory.
 ms.topic: concept-article
 ms.subservice: azure-devops-organizations
-ms.assetid: 3F3BD90B-1D08-4C8F-9CDC-D4B806F65448
 ms.author: chcomley
 author: chcomley
 monikerRange: 'azure-devops'

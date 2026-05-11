@@ -2,7 +2,6 @@
 title: Undo changes in another user's workspace
 titleSuffix: Azure Repos
 description: Use Team Foundation Version Control commands to remove a lock that another user has placed on a file or to delete the workspace of another user.
-ms.assetid: 038a4364-0a70-436e-95cc-24735d0ad9e7
 ms.service: azure-devops-repos
 ms.topic: how-to
 ms.date: 12/06/2022

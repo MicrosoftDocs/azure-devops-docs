@@ -3,7 +3,6 @@ title: Implement Agile practices that scale for working in Azure Boards and Azur
 titleSuffix: Azure Boards
 description: Learn about scaling Agile recommended practices for working in Azure Boards and Azure DevOps.   
 ms.service: azure-devops-boards
-ms.assetid: 46F7A310-B6BD-46FA-88E2-91521BEE3BC4  
 ms.author: chcomley
 author: chcomley
 ms.topic: best-practice
@@ -140,4 +139,4 @@ Along with the above practices, you can find more guidance around scaling your A
 - **Estimating large initiatives**: Part of waterfall project methods involved estimating resources and schedules. The larger the initiatives, the less likely these estimates provide any value. As projects grow, risks and unforeseen issues and impediments can arise, invalidating many estimates.   
 - **Velocity as a cross-team metric**: While [team velocity](../../report/dashboards/team-velocity.md) can provide a useful metric for gaining insight into how much work each team can complete during a sprint cycle, you can't add team velocities to gain meaningful or useful metrics. Also, using velocity gained from many teams to reliably complete long-range forecasts is problematic. Teams can vary in how they estimate their work, and those variations increase over time.  
 - **Top-down prescriptive solutions**: One size doesn't fit all, and one solution typically doesn't fit all teams. Supporting team autonomy means letting teams find their own solutions while providing the necessary frameworks and support.
-- **Cargo cult Agile**: Simply adopting Agile ceremonies without understanding their purpose or adapting them to your context often leads to ineffective implementations.
+- **Cargo cult Agile**: adopting Agile ceremonies without understanding their purpose or adapting them to your context often leads to ineffective implementations.

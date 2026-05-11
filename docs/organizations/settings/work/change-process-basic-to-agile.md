@@ -112,7 +112,7 @@ Update existing backlog work items to use the new work item types and states. Fo
 
    :::image type="content" source="media/change-process/query-basic-items.png" alt-text="Screenshot of querying all items.":::
 
-1. In the query editor, select **Column options** and make sure the **State** and **Reason** fields appear.
+1. In the query editor, select **Column options** and ensure the **State** and **Reason** fields appear.
 
 1. Select the **Sorting** tab of the **Column options** screen and set it to sort the list by **Work item type** and **State**. Select **OK**.
 
@@ -138,7 +138,7 @@ Update existing backlog work items to use the new work item types and states. Fo
 
 1. Repeat these steps to change items with the **Done** state to **Closed** and items with the **To Do** state to **New**.
 
-1.  Select **Save items** to save your changes.
+1. Select **Save items** to save your changes.
 
 ## Verify your changes
 

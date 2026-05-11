@@ -101,7 +101,7 @@ With Analytics disabled or removed, the following actions occur:
 
 For more information about the data tables, see [Analytics data model](../extend-analytics/data-model-analytics-service.md).
 
-## Related articles
+## Related content
 
 - [What is Analytics](../powerbi/what-is-analytics.md)
 - [Data available from Analytics](../powerbi/data-available-in-analytics.md)

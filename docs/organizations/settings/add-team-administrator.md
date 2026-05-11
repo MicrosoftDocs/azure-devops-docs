@@ -3,7 +3,6 @@ title: Add, remove team administrator
 titleSuffix: Azure DevOps
 description: Add another user to the team administrator role in Azure DevOps.  
 ms.subservice: azure-devops-settings
-ms.assetid: 843D5E56-D24E-4DEA-9915-19B1F76E9A56
 ai-usage: ai-assisted
 ms.author: chcomley
 author: chcomley
@@ -140,7 +139,7 @@ From the **Administrators** section, choose ![delete icon](../../media/icons/del
 
 ::: moniker-end
 
-## Next steps  
+## Next step  
 
 > [!div class="nextstepaction"]
 > [Manage teams and configure team tools](manage-teams.md) 

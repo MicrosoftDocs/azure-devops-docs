@@ -4,7 +4,6 @@ titleSuffix: Azure Boards
 description: Track work by creating queries based on effort, story points, schedules, or time tracking fields in Azure Boards and Azure DevOps.
 ms.custom: boards-queries, engagement-fy23, copilot-scenario-highlight
 ms.service: azure-devops-boards
-ms.assetid: 78fe418f-fbd8-4ae2-97d7-c754c14dd3cd
 ms.author: chcomley
 author: chcomley
 ms.topic: example-scenario
@@ -397,7 +396,7 @@ This table describes activity-based and numeric fields you can use to track work
 > 3. To change the ProcessConfiguration field assignment (on-premises only), see [Process configuration XML element reference](../../reference/xml/process-configuration-xml-element.md).
 > 4. Each team configures whether bugs behave like requirements or tasks. Because bugs can appear with either, fields used to estimate effort at both levels are included on the work item form.
 
-## Next steps
+## Next step
 
 > [!div class="nextstepaction"]
 > [Customize your work tracking experience](../../reference/customize-work.md)

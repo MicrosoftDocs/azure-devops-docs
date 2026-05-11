@@ -3,7 +3,6 @@ title: Manage billing for your organization
 titleSuffix: Azure DevOps Services
 description: Use an Azure subscription to configure billing and pay for users, CI/CD concurrency, and extensions for Azure DevOps.
 ms.subservice: azure-devops-billing
-ms.assetid: 87b994d6-2a92-46e5-b667-afe4eb198e25
 ai-usage: ai-assisted
 ms.topic: how-to
 ms.author: chcomley

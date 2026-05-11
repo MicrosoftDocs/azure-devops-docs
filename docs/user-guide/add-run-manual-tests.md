@@ -134,7 +134,7 @@ If you configure the [Azure DevOps MCP Server](../mcp-server/mcp-server-overview
 
 ::: moniker-end
 
-## Next steps
+## Next step
   
 > [!div class="nextstepaction"]
 > [Create manual tests](../test/create-test-cases.md)

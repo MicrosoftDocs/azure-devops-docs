@@ -2,7 +2,6 @@
 title: Delete, remove, restore project
 titleSuffix: Azure DevOps
 description: Delete or remove a project from your organization in Azure DevOps. Restore a recently deleted project.
-ms.assetid: f8638962-1732-4600-94bb-3dc34e0ac48e
 ms.subservice: azure-devops-projects
 ms.topic: how-to
 ms.author: chcomley
@@ -277,7 +276,7 @@ If you inadvertently delete a project in Azure DevOps, you can restore it within
 
 ::: moniker range="azure-devops"
 
-1. Execute the following PowerShell script to get a list of deleted projects and make sure to update `{yourPAT}` and `{organization}`.
+1. Execute the following PowerShell script to get a list of deleted projects and ensure to update `{yourPAT}` and `{organization}`.
 
    ```
    $MyPat = '{yourPAT}'
@@ -286,7 +285,7 @@ If you inadvertently delete a project in Azure DevOps, you can restore it within
    (irm -Method Get -Uri "https://dev.azure.com/$MyOrg/_apis/projects?stateFilter=deleted&api-version=7.2-preview.4" -Headers @{Authorization = $headerValue}).value
    ```
 
-2. Use the following script to restore a project and make sure to update `{yourPAT}`, `{yourOrganization}`, and `{deletedProjectName}`.
+2. Use the following script to restore a project and ensure to update `{yourPAT}`, `{yourOrganization}`, and `{deletedProjectName}`.
 
     ```
     $MyPat = '{yourPAT}'
@@ -303,7 +302,7 @@ Your project and associated data are restored.
 
 ::: moniker range="< azure-devops"
 
-1. Execute the following PowerShell script to get a list of deleted projects and make sure to update `$collectionUrl`.
+1. Execute the following PowerShell script to get a list of deleted projects and ensure to update `$collectionUrl`.
 
    ```
    $collectionUrl = "https://localhost/defaultcollection"
@@ -311,7 +310,7 @@ Your project and associated data are restored.
    deleted&api-version=5.0-preview.3" -UseDefaultCredentials).value
    ```
 
-2. Use the following script to restore a project and make sure to update `$collectionUrl` and `$projectName`.
+2. Use the following script to restore a project and ensure to update `$collectionUrl` and `$projectName`.
 
     ```
     $collectionUrl = "https://localhost/defaultcollection"
@@ -358,7 +357,7 @@ If you use GitHub Copilot, the [Azure DevOps MCP Server](../../mcp-server/mcp-se
 | Restore an accidentally deleted project | `A team member accidentally deleted our staging project yesterday. Show me how to restore it before the 28-day permanent deletion window expires and verify all repos and pipelines are intact` |
 | Clean up after a migration | `We migrated from Azure DevOps Server to Azure DevOps Services and have leftover projects in the old collection. Guide me through identifying which ones are safe to hard-delete from the admin console` |
 | Audit projects for deletion candidates | `List all projects in my organization that have had zero commits, no pipeline runs, and no work item updates in the last 6 months so I can evaluate them for deletion` |
-| Automate project deletion via CLI | `I need to delete 5 test projects we created during a proof of concept. Show me how to use the Azure DevOps CLI to delete them in batch and verify each deletion completed` |
+| Automate project deletion through CLI | `I need to delete 5 test projects we created during a proof of concept. Show me how to use the Azure DevOps CLI to delete them in batch and verify each deletion completed` |
 | Troubleshoot broken work item links | `After deleting a project, work items in our other projects still show links to the deleted project. Explain when these links get cleaned up and how to remove them manually if needed` |
 
 > [!TIP]

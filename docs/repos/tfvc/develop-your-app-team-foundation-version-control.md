@@ -2,7 +2,6 @@
 title: Develop your app in Team Foundation Version Control
 titleSuffix: Azure Repos
 description: See resources about how to develop your app in Team Foundation Version Control (TFVC).
-ms.assetid: 8535caa8-584a-454b-8c71-ce0cd362d9b1
 ms.service: azure-devops-repos
 ms.topic: how-to
 monikerRange: '<= azure-devops'

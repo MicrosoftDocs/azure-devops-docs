@@ -2,7 +2,6 @@
 title: Undelete command
 titleSuffix: Azure Repos
 description: Use the Team Foundation Version Control undelete command to restore deleted items. Specify options to use locks or to prevent retrieval from the server.
-ms.assetid: f3b7c02e-7799-4632-b786-551f31741401
 ms.service: azure-devops-repos
 ms.topic: reference
 ms.date: 12/06/2022

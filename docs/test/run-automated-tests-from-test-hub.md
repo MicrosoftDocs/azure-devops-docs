@@ -1,7 +1,6 @@
 ---
 title: Run automated tests from test plans
 description: Run automated tests on-demand from test plans in Azure Test Plans with a build or release pipeline.
-ms.assetid: 2886C58B-0F4B-4C0C-A248-3980CA629FD8 
 ms.service: azure-devops-test-plans
 ms.custom: UpdateFrequency3, copilot-scenario-highlight
 ai-usage: ai-assisted
@@ -147,6 +146,7 @@ If you configure the [Azure DevOps MCP Server](../mcp-server/mcp-server-overview
 
 ## Related content
 
+* [Set up automated testing with Azure Test Plans](automated-testing-overview.md)
 * [Troubleshooting and FAQs](reference-qa.yml)
 * [Associate automated tests with test cases](associate-automated-test-with-test-case.md)
 * [Associate automated test results with requirements](../pipelines/test/requirements-traceability.md)

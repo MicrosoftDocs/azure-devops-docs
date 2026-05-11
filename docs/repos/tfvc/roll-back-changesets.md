@@ -2,7 +2,6 @@
 title: Roll back changesets
 titleSuffix: Azure Repos
 description: Understand how to roll back changesets by using Visual Studio with Team Foundation Version Control (TFVC).
-ms.assetid: 11864092-7a1d-4810-ae01-148afbaa7852
 ms.service: azure-devops-repos
 ms.topic: how-to
 ms.date: 11/23/2022

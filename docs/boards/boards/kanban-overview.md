@@ -4,7 +4,6 @@ titleSuffix: Azure Boards
 description: Learn about Kanban board basics, including key concepts and best practices in Azure Boards.   
 ms.custom: boards-kanban 
 ms.service: azure-devops-boards
-ms.assetid:  
 ms.author: chcomley
 author: chcomley
 ms.topic: overview

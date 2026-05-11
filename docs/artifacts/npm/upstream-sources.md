@@ -1,7 +1,6 @@
 ---
 title: Use packages from the npm registry
 description: Learn how to consume packages from the npm registry with Azure Artifacts upstream sources.
-ms.assetid: E2DB1217-7113-4A75-A66D-3CADDB07AD37
 ms.service: azure-devops-artifacts
 ms.topic: quickstart
 ms.date: 10/08/2025

@@ -4,7 +4,6 @@ titleSuffix: Azure Boards
 description: Learn how to customize cards to show relevant information and highlight important work items on your team's board in Azure Boards.
 ms.custom: boards-kanban, engagement-fy23, copilot-scenario-highlight
 ms.service: azure-devops-boards
-ms.assetid: 951A73EA-7411-4A2A-B3F0-ACBBC7EFC68F
 ai-usage: ai-assisted
 ms.author: chcomley
 author: chcomley

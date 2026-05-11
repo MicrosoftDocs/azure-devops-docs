@@ -363,7 +363,7 @@ From the **Transform** menu, change the data type for the following columns to *
 
 	:::image type="content" source="media/pipeline-reports/duration-clustered-column-visualizations.png" alt-text="Screenshot of Power BI Pipelines clustered column Visualizations and field selections.":::
 
-1. Add the following fields to the **Y-Axis**, right-click each field, and make sure **Sum** is selected.
+1. Add the following fields to the **Y-Axis**, right-click each field, and ensure **Sum** is selected.
 	- `Duration50thPercentileInSeconds` 
 	- `Duration80thPercentileInSeconds` 
 	- `Duration95thPercentileInSeconds` 
@@ -374,6 +374,6 @@ Your report should look similar to the following image.
  
 :::image type="content" source="media/pipeline-reports/duration-clustered-column-report.png" alt-text="Screenshot of Power BI Sample Pipelines Duration clustered column report.":::
 
-## Related articles
+## Related content
 
 [!INCLUDE [temp](includes/sample-related-articles-pipelines.md)]

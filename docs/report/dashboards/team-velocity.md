@@ -4,7 +4,6 @@ titleSuffix: Azure DevOps
 description: Learn how to calculate and track team velocity across sprints using the in-context Analytics report or Velocity widget chart in Azure DevOps.
 ms.custom: dashboards   
 ms.subservice: azure-devops-analytics
-ms.assetid: 31CBF001-CFF2-49CF-97A1-FDFFEFDDF3AB
 ms.topic: tutorial
 ms.author: chcomley
 author: chcomley
@@ -202,12 +201,12 @@ For your team to gain the greatest utility from the Velocity charts, follow thes
 
 If each team wants their own backlog view, Velocity chart, and forecast tool, you can [add a new team](../../organizations/settings/add-teams.md). Each team has access to its own set of Agile tools, which filter work items to include only the assigned area paths and iteration paths [specific to that team](../../organizations/settings/about-teams-and-settings.md).
 
-## Next steps
+## Next step
 
 > [!div class="nextstepaction"]
 > [Plan your sprint](../../boards/sprints/assign-work-sprint.md)
 
-## Related articles
+## Related content
 
 -  [Forecast your sprints](../../boards/sprints/forecast.md) 
 -  [Set dashboard permissions](dashboard-permissions.md)

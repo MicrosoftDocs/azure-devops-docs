@@ -2,7 +2,6 @@
 title: Repository health
 titleSuffix: Azure Repos
 description: How to keep git repositories healthy
-ms.assetid: 
 ms.service: azure-devops-repos
 ms.topic: reference
 ms.date: 07/15/2024

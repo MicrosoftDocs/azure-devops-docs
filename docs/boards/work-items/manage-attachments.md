@@ -26,7 +26,7 @@ Each work item can include up to **100 attachments**, with each file limited to 
 ::: moniker-end
 
 ::: moniker range="< azure-devops"
-By default, each work item can include up to **100 attachments**, with each file limited to **4 MB**. The maximum size of attachments can be configured via the Azure DevOps Server Administration Console. 
+By default, each work item can include up to **100 attachments**, with each file limited to **4 MB**. The maximum size of attachments can be configured through the Azure DevOps Server Administration Console. 
 
 ::: moniker-end
 

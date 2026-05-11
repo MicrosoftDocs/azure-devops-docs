@@ -4,7 +4,6 @@ titleSuffix: Azure DevOps
 description: Learn how to monitor test trends and gain insights about pipeline test efforts using Analytics Test Results Trend (Advanced) widget in Azure DevOps.
 ms.custom: dashboards, engagement-fy23   
 ms.subservice: azure-devops-analytics
-ms.assetid: 
 ms.topic: tutorial 
 ms.author: chcomley
 author: chcomley
@@ -83,7 +82,7 @@ You can configure your Test Results Trend (Advanced) widget to show results for 
    
 	![Screenshot of Test Results Trend Advanced widget.](media/test-results-trend-widget/passed-bypriority-pass.png)
 
-## Next steps
+## Next step
 
 > [!div class="nextstepaction"]
 > [Test Analytics report](../../pipelines/test/test-analytics.md#view-test-analytics-for-builds).

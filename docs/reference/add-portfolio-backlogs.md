@@ -4,7 +4,6 @@ titleSuffix: Azure DevOps
 description: Learn how to add up to two additional work item types and portfolio backlogs in Azure DevOps.
 ms.service: azure-devops-boards
 ms.custom: process, engagement-fy23
-ms.assetid: 764D98C3-9DAD-4F40-8D5D-D0C95E023485
 ms.author: chcomley
 author: chcomley
 ms.topic: how-to
@@ -165,7 +164,7 @@ Since you're adding a custom category, label the category by using your company 
 In this last step, add the Initiative portfolio backlog to the process and modify the Feature portfolio backlog to reflect the hierarchy between Initiatives and Features.
 The process configuration determines the parent-child relationships among the portfolio backlogs.
 
-1.  Edit the ProcessConfiguration file to add a new portfolio backlog within the ```PortfolioBacklogs``` section. (The ProcessConfiguration.xml file is located in the WorkItem Tracking/Process folder of the ProcessTemplate folder.)
+1. Edit the ProcessConfiguration file to add a new portfolio backlog within the ```PortfolioBacklogs``` section. (The ProcessConfiguration.xml file is located in the WorkItem Tracking/Process folder of the ProcessTemplate folder.)
 
     Add the Initiative Category by adding the following syntax. Replace the names, workflow state values, and default column fields to match those that you use. 
 
@@ -197,7 +196,7 @@ The process configuration determines the parent-child relationships among the po
     If you modified the workflow states, verify that each workflow state is mapped to one of the metastates of ```Proposed```, ```InProgress```, and ```Complete```.
     The last state within the workflow must map to ```Complete```.
 
-1.  Edit the ```PortfolioBacklog``` element for the Epic Category to point to ```Initiative``` as the parent backlog.
+1. Edit the ```PortfolioBacklog``` element for the Epic Category to point to ```Initiative``` as the parent backlog.
 
     ```xml
     <PortfolioBacklog category="Microsoft.EpicCategory" pluralName="Epics"  
@@ -209,7 +208,7 @@ The process configuration determines the parent-child relationships among the po
 
     Intermediate portfolio backlogs require specifying the parent category, which must be configured as a portfolio backlog.
 
-1.  Add the color to use for Initiative to the ```WorkItemColors``` section.
+1. Add the color to use for Initiative to the ```WorkItemColors``` section.
     ```xml
         <WorkItemColor primary="FFCC66FF" secondary="FFF0D1FF" name="Initiative" />
     ```
@@ -220,16 +219,16 @@ The process configuration determines the parent-child relationships among the po
 
 ## 5. Update your project and verify access to the new portfolio backlog
 
-1.  Update your project:
+1. Update your project:
     - For **Hosted XML:** [Import your process](../organizations/settings/work/import-process/import-process.md).
     - For **On-premises XML:** [Import the definition files you updated](#import-export) in this order:
         a. Initiative.xml
         b. Categories.xml
         c. ProcessConfiguration.xml
 
-1.  Open or refresh the web portal and confirm that Initiative appears as a portfolio backlog as expected.
+1. Open or refresh the web portal and confirm that Initiative appears as a portfolio backlog as expected.
     For more information, see [Organize your backlog](../boards/backlogs/organize-backlog.md).
-1.  Grant [Advanced access](../organizations/security/change-access-levels.md) to users who need to exercise all the features available with portfolio backlogs.
+1. Grant [Advanced access](../organizations/security/change-access-levels.md) to users who need to exercise all the features available with portfolio backlogs.
     For **Hosted XML:** See [Assign licenses to users](../organizations/accounts/add-organization-users.md).
 
 

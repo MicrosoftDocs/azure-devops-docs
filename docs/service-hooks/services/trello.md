@@ -3,7 +3,6 @@ ms.subservice: azure-devops-service-hooks
 ms.topic: how-to
 title: Create a service hook with Trello
 description: Use Trello with your Azure DevOps Services organization
-ms.assetid: 7472f06c-11f3-4603-953c-9a0de5abe29d
 monikerRange: '<= azure-devops'
 ms.date: 07/27/2020
 ---

@@ -157,7 +157,7 @@ Next, bulk update work items. Follow this sequence:
 
 7. Repeat the preceding steps to change the work item type for Impediment to Issue, and update the states to valid states for the work item types.
 
-8. When done, make sure you choose the :::image type="icon" source="../../../media/icons/actions-icon.png" border="false"::: actions icon and select **Save items**.
+8. When done, ensure you choose the :::image type="icon" source="../../../media/icons/actions-icon.png" border="false"::: actions icon and select **Save items**.
 
 > [!TIP]  
 > If you have a number of field value changes, such as populating the Story Points field with the value held in Effort, use Excel. See [Bulk add or modify work items with Excel](../../../boards/backlogs/office/bulk-add-modify-work-items-excel.md).

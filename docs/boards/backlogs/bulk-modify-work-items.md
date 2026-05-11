@@ -4,7 +4,6 @@ titleSuffix: Azure Boards
 description: Learn how to make the same change to many work items in Azure Boards using the bulk modify feature in Azure Boards.
 ms.service: azure-devops-boards
 ms.custom: boards-backlogs, linked-from-support, copilot-scenario-highlight
-ms.assetid: 152CAFE0-2360-470A-98AC-F613A67C24D2
 ms.author: chcomley
 author: chcomley
 ms.topic: tutorial

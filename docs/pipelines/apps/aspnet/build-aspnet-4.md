@@ -2,7 +2,6 @@
 title: Build apps with .NET Framework
 description: Use .NET Framework to build ASP.NET apps in Azure Pipelines.
 ms.topic: how-to
-ms.assetid: 840F4B48-D9F1-4B5F-98D9-00945501FA98
 ms.custom: devx-track-dotnet
 ms.date: 01/12/2026
 monikerRange: '<= azure-devops'

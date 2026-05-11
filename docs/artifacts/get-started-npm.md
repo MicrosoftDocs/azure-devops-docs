@@ -3,7 +3,6 @@ title: Publish and download npm packages with Azure Artifacts
 description: Learn how to configure your npm project to publish and consume packages using Azure Artifacts.
 ms.service: azure-devops-artifacts
 ms.topic: quickstart
-ms.assetid: 5BFBA0C3-85ED-40C9-AC5F-F686923160D6
 ms.date: 06/17/2025
 monikerRange: "<=azure-devops"
 "recommendations": "true"

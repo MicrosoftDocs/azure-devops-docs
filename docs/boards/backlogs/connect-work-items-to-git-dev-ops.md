@@ -4,7 +4,6 @@ titleSuffix: Azure Boards
 description: Learn how to create a branch, commit, or a pull request in Azure Boards. Also, automatically link work items with source control branches, builds, and commits.
 ms.custom: boards-backlogs, copilot-scenario-highlight
 ms.service: azure-devops-boards
-ms.assetid: BD7CE3C1-9E15-4BD6-B9CD-F78569C74D0D
 ai-usage: ai-assisted
 ms.author: chcomley
 author: chcomley

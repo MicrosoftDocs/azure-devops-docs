@@ -4,7 +4,6 @@ titleSuffix: Azure DevOps
 description: Learn about the widgets that you might want to add to your dashboards when you work in Azure DevOps.
 ms.custom: dashboards, engagement-fy23
 ms.subservice: azure-devops-analytics
-ms.assetid: C9FD12C0-033E-4A4D-AF63-6EF67E7B4828
 ms.topic: overview
 ms.author: chcomley
 author: chcomley
@@ -515,7 +514,7 @@ To support adding, add one or more of the following widgets:
       For team admins, supports access to the quick dialog to [add or remove team members](../../organizations/settings/add-teams.md).     
       
       > [!NOTE]  
-      > This widget is a convenient way to add team members to specific teams within projects.  If you remove it, you can still add users to your team from the team administration page.  
+      > This widget is a convenient way to add team members to specific teams within projects. If you remove it, you can still add users to your team from the team administration page.  
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -563,7 +562,7 @@ Using the REST API service, you can [create a dashboard widget](../../extend/dev
 
 <a id="related-notes"></a>  
 
-## Related articles
+## Related content
 
 - [View FAQs on Azure DevOps dashboards, charts, and reports](faqs.yml)
 - [Track progress with status and trend query-based charts](charts.md)

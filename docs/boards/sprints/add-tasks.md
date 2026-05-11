@@ -4,7 +4,6 @@ titleSuffix: Azure Boards
 description: Learn how to add tasks to user stories assigned to a sprint. You can also add tasks to an iteration working with Scrum methods in Azure Boards.
 ms.service: azure-devops-boards
 ms.custom: copilot-scenario-highlight
-ms.assetid: 
 ms.author: chcomley
 author: chcomley
 ms.topic: tutorial
@@ -68,7 +67,7 @@ If tasks don't appear as children of a backlog item, you can reparent them. Unpa
 
 ## Add tasks to backlog items
 
-Before you start, make sure you [assigned backlog items to your sprint](assign-work-sprint.md) and [set the sprint dates](define-sprints.md#quick-start-schedule).
+Before you start, ensure you [assigned backlog items to your sprint](assign-work-sprint.md) and [set the sprint dates](define-sprints.md#quick-start-schedule).
 
 Add a task for each backlog item. Tasks added from the sprint backlog or board are automatically linked to their parent backlog item and assigned to the sprint's **Iteration Path**.
 

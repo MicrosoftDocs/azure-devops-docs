@@ -213,7 +213,7 @@ If you use different emails or tenants for Microsoft Teams and Azure DevOps, fol
 
 ## Troubleshoot authentication issues
 
-If you receive the error **Configuration failed. Please make sure that the organization '{organization name}' exists and that you have sufficient permissions**, try the following steps to resolve the error.
+If you receive the error **Configuration failed. Ensure that the organization '{organization name}' exists and that you have sufficient permissions**, try the following steps to resolve the error.
 
 1. In the same browser, start a new tab and sign in to `https://teams.microsoft.com/`.
 

@@ -4,7 +4,6 @@ description: Inject steps before and after every pipeline job.
 ms.topic: reference
 ms.subservice: azure-devops-ecosystem
 ms.custom: UpdateFrequency3
-ms.assetid: 3347cdf7-07db-42af-85f0-6f1d8d371087
 ms.author: chcomley
 author: chcomley
 ms.date: 04/03/2026
@@ -208,7 +207,7 @@ Tasks will be injected before/after all instances of specified target task.
 ### Inject target task inputs
 You can specify a list of inputs of the target task that you want to inject as inputs to the injected task.
 
-This feature is designed to work with [custom pipeline tasks](add-build-task.md). It isn't intended to provide access to target pipeline task inputs via pipeline variables.
+This feature is designed to work with [custom pipeline tasks](add-build-task.md). It isn't intended to provide access to target pipeline task inputs through pipeline variables.
 
 To get access to the target pipeline task inputs (inputs with the `target_` prefix), the injected pipeline task should use methods from the [azure-pipelines-tasks-task-lib](https://github.com/Microsoft/azure-pipelines-task-lib), and not the pipeline variables, for example `const inputString = tl.getInput('target_targetInput')`). 
 

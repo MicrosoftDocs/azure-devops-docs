@@ -4,7 +4,6 @@ titleSuffix: Azure Boards
 description: In this tutorial, determine team capacity, adjust work to fit team capacity, and set capacity for a sprint in Azure Boards.
 ms.service: azure-devops-boards
 ms.custom: boards-sprints, copilot-scenario-highlight
-ms.assetid: 
 ms.author: chcomley
 author: chcomley
 ms.topic: tutorial
@@ -23,7 +22,7 @@ ms.date: 02/28/2026
 
 While velocity correlates to how your team estimates requirements, *capacity* correlates to actual task time. Time is calculated in either hours or days. Capacity takes into consideration the variation in work hours by team members, as well as holidays, vacation days, and nonworking days.
 
-Because days off and time available for each team member might vary from sprint to sprint, set capacity for each sprint. The capacity tool helps you make sure your team isn't overcommitted or undercommitted for the sprint. As you work day-to-day, you see if your team is on track.
+Because days off and time available for each team member might vary from sprint to sprint, set capacity for each sprint. The capacity tool helps you ensure your team isn't overcommitted or undercommitted for the sprint. As you work day-to-day, you see if your team is on track.
 
 [!INCLUDE [ai-assistance-mcp-server-tip](../../includes/ai-assistance-mcp-server-tip.md)]
 
@@ -115,7 +114,7 @@ From the **Capacity** page, you can add team members, enter the team time off, a
    > [!TIP]
    > Your sprint planning and tracking tools automatically consider days off when calculating capacity and sprint burndown. You only need to indicate planned days off for the team. For more information, see [Set capacity for the team and team members](../../boards/sprints/set-capacity.md#set-capacity-for-the-team-and-team-members).
 
-4. Set the **Activity/Discipline** and **Capacity** per day for each team member. If you track capacity simply by team member, you can leave the Activity or Discipline selection unassigned.
+4. Set the **Activity/Discipline** and **Capacity** per day for each team member. If you track capacity by team member, you can leave the Activity or Discipline selection unassigned.
 
    For example, Christie Church's capacity is 6 hours/day for design work.
 

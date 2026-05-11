@@ -4,7 +4,6 @@ titleSuffix: Azure DevOps
 description: Find out how to create OData queries against Analytics for Azure DevOps to retrieve information about linked work items.
 ms.subservice: azure-devops-analytics
 ms.topic: tutorial
-ms.assetid: BF30FE4E-0370-4C9B-A660-51207D816F8B
 ms.author: chcomley
 author: chcomley
 monikerRange: "<=azure-devops"

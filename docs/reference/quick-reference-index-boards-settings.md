@@ -289,7 +289,7 @@ With the On-premises XML process model, you modify the XML definition of work it
 ::: moniker-end
  
 
-## Related articles
+## Related content
  
 - [Work item field index](../boards/work-items/guidance/work-item-field.md)
 - [witadmin command-line tool](witadmin/witadmin-customize-and-manage-objects-for-tracking-work.md)

@@ -2,7 +2,6 @@
 title: Develop code and manage pending changes
 titleSuffix: Azure Repos
 description: See how to use Visual Studio to develop code and manage pending changes in Team Foundation Version Control (TFVC).
-ms.assetid: dded21d3-4869-4e19-bca4-62e27179539c
 ms.service: azure-devops-repos
 f1_keywords:
 - vs.tfc.sourcecontrol.DialogOpenFromScc
