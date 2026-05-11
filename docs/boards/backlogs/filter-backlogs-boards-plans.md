@@ -796,6 +796,9 @@ For comprehensive tag management guidance, see [Add tags to work items to catego
 
 In addition to the standard filter fields, you can filter backlogs, boards, sprint backlogs, and sprint boards by any custom field — including fields your team added to your process.
 
+> [!IMPORTANT]
+> A custom field only appears as a filter option after you add it to the view. For backlogs and sprint backlogs, [add the field as a column](set-column-options.md). For boards and sprint boards, [add the field to your card display](../boards/customize-cards.md). If you remove the field from the view, the filter option is also removed.
+
 ### How custom field filtering works
 
 Filtering is performed client-side, which means a field must be present in the data loaded by the page before it can appear as a filter option:
