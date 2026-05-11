@@ -395,17 +395,17 @@ If you experience the following errors, follow the steps in this section to trou
 
 - ```Public network access is disabled and request is not from a trusted service nor via an approved private link.```
 
-This error indicates that public access was disabled, and a private endpoint connection and firewall exceptions weren't set up. Follow the steps under [Configure inbound access from a self-hosted agent](#step-1-configure-inbound-access-from-a-self-hosted-agent) and [Configure inbound access from Azure DevOps](#step-2-configure-inbound-access-from-azure-devops) to set up access to your private key vault.
+  This error indicates that public access was disabled, and a private endpoint connection and firewall exceptions weren't set up. Follow the steps under [Configure inbound access from a self-hosted agent](#step-1-configure-inbound-access-from-a-self-hosted-agent) and [Configure inbound access from Azure DevOps](#step-2-configure-inbound-access-from-azure-devops) to set up access to your private key vault.
 
 - ```Request was not allowed by NSP rules and the client address is not authorized and caller was ignored because bypass is set to None Client address: <x.x.x.x>```
 
-This error message indicates that the key vault's public access was disabled and the **Allow trusted Microsoft services to bypass this firewall** option is left blank, but the client IP address wasn't added to the key vault firewall. Go to your key vault in the Azure portal, select **Settings** > **Networking**, and then add your client IP to the firewall's allow list.
+  This error message indicates that the key vault's public access was disabled and the **Allow trusted Microsoft services to bypass this firewall** option is left blank, but the client IP address wasn't added to the key vault firewall. Go to your key vault in the Azure portal, select **Settings** > **Networking**, and then add your client IP to the firewall's allow list.
 
 - ```Error: Client address is not authorized and caller is not a trusted service.```
 
-Make sure that you add your geography's IPV4 ranges to your key vault allow list. For more information, see [Configure inbound access from Azure DevOps](#step-2-configure-inbound-access-from-azure-devops).
+  Make sure that you add your geography's IPV4 ranges to your key vault allow list. For more information, see [Configure inbound access from Azure DevOps](#step-2-configure-inbound-access-from-azure-devops).
 
-Alternatively, you can jump to [Dynamically allow Microsoft-hosted agent IP](#alternative-method-dynamically-allow-microsoft-hosted-agent-ip) to learn how to add your client IP to the key vault's firewall during runtime.
+  Alternatively, you can jump to [Dynamically allow Microsoft-hosted agent IP](#alternative-method-dynamically-allow-microsoft-hosted-agent-ip) to learn how to add your client IP to the key vault's firewall during runtime.
 
 ## Related content
 
