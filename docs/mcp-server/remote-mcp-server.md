@@ -359,16 +359,9 @@ If the AI assistant returns results from your Azure DevOps organization, the rem
 
 ## Troubleshooting
 
-| Issue | Resolution |
-|------|------------|
-| **Authentication fails** | Verify your Microsoft Entra credentials and confirm you have access to the Azure DevOps organization. |
-| **Server not found** | Check the server URL format: `https://mcp.dev.azure.com/{organization}`. |
-| **No data returned** | Confirm you have appropriate permissions for the project or resources being queried. |
-| **Preview not available** | The preview is rolling out gradually. Check back later or contact your organization administrator. |
+If you run into issues with connection, authentication, tool resolution, or Copilot integration, see [Troubleshoot the remote Azure DevOps MCP Server](remote-mcp-server-troubleshooting.md).
 
-For more troubleshooting help, see [Troubleshoot the remote Azure DevOps MCP Server](remote-mcp-server-troubleshooting.md).
-
-For support, you can create an issue in the [local MCP Server](https://github.com/microsoft/azure-devops-mcp/issues/new?template=remote-mcp-server-issue.md) repo. Be sure to use the **Remote** issue template.
+For support, create an issue using the [Remote MCP Server issue template](https://github.com/microsoft/azure-devops-mcp/issues/new?template=remote-mcp-server-issue.md) in the Azure DevOps MCP Server GitHub repository.
 
 ## FAQ
 
