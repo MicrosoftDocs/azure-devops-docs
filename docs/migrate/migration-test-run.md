@@ -275,7 +275,7 @@ Now you have everything ready to execute on your  test run migration. Schedule d
 Step 1: [Take the collection offline and detach it](#step-1-detach-your-collection).
 Step 2: [Generate a DACPAC file from the collection you're going to migrate](#step-2-generate-a-dacpac-file).  
 Step 3: [Upload the DACPAC file and migration files to an Azure storage account](#step-3-upload-the-dacpac-file).  
-Step 4: [Generate a SAS token to access the storage account](#step-4-generate-an-sas-token).  
+Step 4: [Generate a SAS token to access the storage account](#step-4-generate-a-sas-token).  
 Step 5: [Complete the migration specification](#step-5-complete-the-migration-specification). 
 
 > [!NOTE]  
