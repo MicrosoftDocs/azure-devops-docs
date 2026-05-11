@@ -816,7 +816,7 @@ The standard filters (Assigned To, Work Item Type, States, Area Path, Iteration 
 If you remove a column from the backlog or a field from the card display, the corresponding filter option is automatically removed from the filter panel.
 
 > [!NOTE]
-> Custom field filtering is currently available for backlogs, boards, sprint backlogs, and sprint boards. Support for queries and delivery plans is planned.
+> Custom field filtering is currently available for backlogs, boards, sprint backlogs, and sprint boards. Queries and delivery plans don't support custom field filtering.
 
 ::: moniker-end
 
