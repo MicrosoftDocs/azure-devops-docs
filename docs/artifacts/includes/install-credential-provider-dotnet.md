@@ -33,7 +33,7 @@ The first time you perform an operation that requires authentication, use one of
 
 Before you run an interactive command, make sure your project is set up and your feed is added to *nuget.config*. For setup details, see [project setup](../nuget/dotnet-setup.md).
 
-Once your project is setup and connected to your feed, navigate to your project directory and run:
+Once your project is set up and connected to your feed, navigate to your project directory and run:
 
 ```dotnetcli
 dotnet restore --interactive
