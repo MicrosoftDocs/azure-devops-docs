@@ -21,7 +21,7 @@ Retention policies control how long pipeline runs, classic releases, and test da
 | Product | Requirements |
 |-------------|------------------|
 | Azure DevOps | - An [Azure DevOps organization](../../organizations/accounts/create-organization.md).<br>- An [Azure DevOps project](../../organizations/projects/create-project.md). |
-| Permissions | - By default, you can manage retention policies if you're a member in the Contributors, Build admins, Project admins, or Release admins groups.<br>- To manage retention policies, you need one of the following subscriptions: [Enterprise](https://visualstudio.microsoft.com/vs/enterprise/), [Test Professional](https://visualstudio.microsoft.com/vs/test-professional/), or [MSDN Platforms](https://visualstudio.microsoft.com/msdn-platforms/).<br>- You can also purchase monthly Azure Test Plans access and assign the [Basic + Test Plans](https://marketplace.visualstudio.com/items?itemName=ms.vss-testmanager-web) access level. For more information, see [Testing access by user role](../../test/manual-test-permissions.md#access-by-user-role). |
+| Permissions | - By default, you can manage retention policies if you're a member in the Contributors, Build Admins, Project Admins, or Release Admins groups.<br>- To manage retention policies, you need one of the following subscriptions: [Enterprise](https://visualstudio.microsoft.com/vs/enterprise/), [Test Professional](https://visualstudio.microsoft.com/vs/test-professional/), or [MSDN Platforms](https://visualstudio.microsoft.com/msdn-platforms/).<br>- You can also purchase monthly Azure Test Plans access and assign the [Basic + Test Plans](https://marketplace.visualstudio.com/items?itemName=ms.vss-testmanager-web) access level. For more information, see [Testing access by user role](../../test/manual-test-permissions.md#access-by-user-role). |
 
 ::: moniker range="azure-devops-2022"
 
@@ -42,9 +42,9 @@ To open the retention settings pages in your project and choose the policy area 
 
 1. Select one of the following options:
 
-  * Under **Pipelines**, select **Settings** to configure retention for runs, artifacts, symbols, attachments, and pull request runs.
-  * Under **Pipelines**, select **Release retention** to configure release retention settings, including when releases are deleted or permanently destroyed.
-  * Under **Test**, select **Retention** to configure how long manual and automated test runs are kept.
+   * Under **Pipelines**, select **Settings** to configure retention for runs, artifacts, symbols, attachments, and pull request runs.
+   * Under **Pipelines**, select **Release retention** to configure release retention settings, including when releases are deleted or permanently destroyed.
+   * Under **Test**, select **Retention** to configure how long manual and automated test runs are kept.
 
 ::: moniker-end
 
@@ -58,10 +58,10 @@ In most cases, you don't need to keep completed runs indefinitely. Run retention
 
 1. In the **Pipelines** section, select **Settings**:
 
-  * Set how many days to keep [artifacts](../artifacts/artifacts-overview.md), symbols, and attachments.
-  * Set how many days to keep [runs](../process/runs.md).
-  * Set how many days to keep pull request [runs](../process/runs.md).
-  * Set the number of recent [runs](../process/runs.md) to keep for each pipeline.
+   * Set how many days to keep [artifacts](../artifacts/artifacts-overview.md), symbols, and attachments.
+   * Set how many days to keep [runs](../process/runs.md).
+   * Set how many days to keep pull request [runs](../process/runs.md).
+   * Set the number of recent [runs](../process/runs.md) to keep for each pipeline.
 
 ::: moniker-end
 
@@ -80,7 +80,7 @@ The **number of recent runs to keep for each pipeline** setting is interpreted d
 
   For example, consider a repository with two branches: `main` and `release`. If the pipeline default branch is `main` and `release` has a branch policy, then `release` is treated as a protected branch. If you configure retention to keep three runs, Azure Pipelines keeps the latest three runs for `main`, the latest three runs for `release`, and the latest three runs for the pipeline overall (regardless of branch).
 
-  The following example assumes that the most recent run is listed first. It shows which runs are retained when you configure retention to keep the latest three runs (ignoring the days-based setting):
+  The following example assumes that the most recent run is listed first. It shows which runs are retained when you configure retention to keep the latest three runs (ignoring the days-based setting).
 
     | Run # | Branch | Retained/Not retained | Why? |
     |-------|--------|-------------------------|------|
