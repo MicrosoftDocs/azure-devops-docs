@@ -18,7 +18,7 @@ Developers can use Azure key vaults to securely store and manage sensitive infor
 
 | Product | Requirements   |
 |-------------|--------------------|
-| Azure DevOps | - An [Azure DevOps project](../../organizations/projects/create-project.md).<br>   - Permissions:<br>      &nbsp;&nbsp;&nbsp;&nbsp;- To grant access to all pipelines in the project: You must be a member of the [Project administrators group](../../organizations/security/change-project-level-permissions.md).<br>      &nbsp;&nbsp;&nbsp;&nbsp;- To create service connections: You must have the Administrator or Creator role for [service connections](../library/add-resource-protection.md). |
+| Azure DevOps | - An [Azure DevOps project](../../organizations/projects/create-project.md).<br>   - Permissions:<br>      &nbsp;&nbsp;&nbsp;&nbsp;- To grant access to all pipelines in the project: You must be a member of the [Project Administrators group](../../organizations/security/change-project-level-permissions.md).<br>      &nbsp;&nbsp;&nbsp;&nbsp;- To create service connections: You must have the Administrator or Creator role for [service connections](../library/add-resource-protection.md). |
 | GitHub | - A [GitHub](https://github.com) account and a [GitHub repository](../../repos/git/create-new-repo.md). <br>   - A [GitHub service connection](../library/service-endpoints.md#github-service-connection) to authorize Azure Pipelines.|
 | Azure | - An [Azure subscription](https://azure.microsoft.com/pricing/purchase-options/azure-account?cid=msft_learn). |
 
@@ -140,9 +140,9 @@ Developers can use Azure key vaults to securely store and manage sensitive infor
 
 In this step, you create a new [service principal](/cli/azure/azure-cli-sp-tutorial-1) in Azure so that your pipelines can access Azure Key Vault.
 
-1. Go to the [Azure portal](https://portal.azure.com/), and then select the **>_** icon from the top menu to open the cloud shell.
+1. Go to the [Azure portal](https://portal.azure.com/), and then select the **>_** icon from the top menu to open Azure Cloud Shell.
 
-1. Select either **PowerShell** or **Bash** depending on your preference.
+1. Select either **PowerShell** or **Bash**, depending on your preference.
 
 1. Run the following command to create a new service principal:
 
@@ -260,7 +260,7 @@ steps:
     MY_MAPPED_ENV_VAR: $(SECRET_NAME)
 ```
 
-The output from the last bash step should look like this example:
+The output from the last Bash step should look like this example:
 
 ```
 Secret Found! ***
