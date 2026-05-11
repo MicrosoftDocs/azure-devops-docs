@@ -395,7 +395,7 @@ Your SQL sign in user account doesn't have the required database role.
 
 `VS403263: The User ID {0} must be member of the database role {1}.`
 
-Ensure the user account for sign in is assigned the ['TFSEXECROLE'](migration-test-run.md#configure-your-collection-for-migration) role. 
+Ensure the user account for sign in is assigned the ['TFSEXECROLE'](migration-prepare-test-run.md#configure-your-collection-for-migration) role. 
 
 > [!NOTE]   
 > There's a known issue with using `sp_addrolemember` to add `TFSEXECROLE` to an existing SQL login. The role membership isn't applied until all open connections using that identity are closed. If you receive the VS403263 error and you confirmed your identity has the role, create a new identity for your migration.
