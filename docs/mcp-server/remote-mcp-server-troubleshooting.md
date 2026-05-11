@@ -44,9 +44,8 @@ This article helps you diagnose and resolve common problems with the [remote Azu
    - Use `https://mcp.dev.azure.com/{organization}` — replace `{organization}` with your actual organization name.
    - Use just the organization name (for example, `contoso`), not the full Azure DevOps URL.
    - The `type` must be `"http"`, not `"stdio"`.
-   - The organization name is case-sensitive.
 
-1. If you omit the organization name from the URL (`https://mcp.dev.azure.com/`), you must provide the organization name as context in each tool call.
+2. If you omit the organization name from the URL (`https://mcp.dev.azure.com/`), you must provide the organization name as context in each tool call.
 
 ### Network or firewall blocks
 
@@ -105,6 +104,7 @@ The remote MCP Server uses Microsoft Entra ID (OAuth) for authentication. Person
 Conditional Access policies apply to the remote MCP Server the same way they apply to Azure DevOps. If your tenant enforces policies such as location-based or device-based restrictions:
 
 - Ensure you're signing in from a compliant device and network location.
+- If your tenant uses location-based Conditional Access policies, your Microsoft Entra ID administrator might need to allow-list the remote MCP Server IP addresses: `20.125.155.22` and `40.74.28.81`.
 - Contact your Microsoft Entra ID administrator for specific policy requirements.
 
 ### Guest (B2B) access fails
@@ -117,8 +117,9 @@ For guest access to work, the user must be:
 1. Added to the Microsoft Entra tenant as a [guest user](/entra/external-id/what-is-b2b).
 1. Added to the Azure DevOps organization with appropriate permissions.
 1. Granted access to the specific projects and resources they need.
+1. Using the organization-specific URL (`https://mcp.dev.azure.com/{organization}`). Guest users can't use the root URL (`https://mcp.dev.azure.com/`) — they must include the organization name in the URL.
 
-If either step is missing, access fails. Treat this issue the same as a standard Azure DevOps guest access problem.
+If any of these steps are missing, access fails. Treat this issue the same as a standard Azure DevOps guest access problem.
 
 ### `AADSTS` error codes
 
