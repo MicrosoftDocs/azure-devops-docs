@@ -9,7 +9,7 @@ ms.topic: troubleshooting
 ms.author: chcomley
 author: chcomley
 monikerRange: 'azure-devops'
-ms.date: 05/08/2026
+ms.date: 05/11/2026
 #customer intent: As a developer, I want to troubleshoot issues with the remote Azure DevOps MCP Server so I can resolve connection, authentication, and tool problems without escalating to support.
 ---
 
@@ -150,23 +150,10 @@ Verify your `mcp.json` uses the correct format for the remote server:
 - **Remote server** uses `"type": "http"` and `"url"`.
 - **Local server** uses `"type": "stdio"`, `"command"`, and `"args"`.
 
-Don't mix remote and local configuration formats. If you configure both a remote and local server, ensure they use different server names.
+Don't mix remote and local configuration formats. Don't run both servers at the same time — choose one:
 
-```json
-{
-  "servers": {
-    "ado-remote": {
-      "url": "https://mcp.dev.azure.com/{organization}",
-      "type": "http"
-    },
-    "ado-local": {
-      "type": "stdio",
-      "command": "npx",
-      "args": ["-y", "@azure-devops/mcp", "{organization}"]
-    }
-  }
-}
-```
+- **Remote server** — Use for Visual Studio Code and Visual Studio. No local installation required.
+- **Local server** — Use for non-Microsoft clients (Claude Desktop, Claude Code, Cursor, Codex) that don't support Microsoft Entra authentication.
 
 ### Toolset or tool filtering not working
 
@@ -291,7 +278,7 @@ Non-Microsoft clients can't authenticate with the remote MCP Server because Micr
 - Visual Studio Code
 - Visual Studio (2022 and later)
 
-For non-Microsoft clients, use the [local Azure DevOps MCP Server](mcp-server-overview.md) with PAT or Azure CLI authentication instead.
+For non-Microsoft clients, use the [local Azure DevOps MCP Server](mcp-server-overview.md) with PAT or Azure CLI authentication instead. Don't run both the remote and local servers at the same time — choose the one that matches your client.
 
 ## Diagnostic tips
 
@@ -319,17 +306,17 @@ If these queries return correct data, the server is working properly.
 
 No. The remote MCP Server requires your Azure DevOps organization to be connected to Microsoft Entra ID. Personal Microsoft accounts (MSA) aren't supported.
 
-### Can I use both remote and local MCP Servers at the same time?
+### Should I use the remote or local MCP Server?
 
-Yes, but give them different server names in your `mcp.json`. Running both servers might contribute to the 128-tool limit. Consider using [toolset headers](remote-mcp-server.md#toolsets) to limit the remote server's tools.
+Use the remote server if your client supports it (Visual Studio Code or Visual Studio). Use the local server only if you're using a non-Microsoft client like Claude Desktop, Claude Code, Cursor, or Codex. Don't run both servers at the same time.
 
 ### Why do I see different tools with the remote vs. local server?
 
 The remote and local servers might be at different versions. The remote server is updated independently of the local npm package. Use the `X-MCP-Insiders` header to access the latest remote tools. For the local server, update the npm package to the latest version.
 
-### Does the remote MCP Server work with Azure DevOps Server (on-premises)?
+### Does the MCP Server work with Azure DevOps Server (on-premises)?
 
-No. The remote MCP Server is available only for Azure DevOps Services (cloud). For Azure DevOps Server (on-premises), use the [local MCP Server](mcp-server-overview.md).
+No. Neither the remote nor the local MCP Server supports Azure DevOps Server (on-premises). Both servers require Azure DevOps Services (cloud).
 
 ### What data does the remote MCP Server access?
 
