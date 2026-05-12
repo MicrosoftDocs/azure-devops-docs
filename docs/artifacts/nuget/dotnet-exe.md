@@ -18,7 +18,11 @@ This guide walks you through configuring your project to publish NuGet packages 
 
 | **Product**        | **Requirements**                           |
 |--------------------|--------------------------------------------|
-| **Azure DevOps**   | - An Azure DevOps [organization](../../organizations/accounts/create-organization.md).<br>- An Azure DevOps [project](../../organizations/projects/create-project.md).<br> - An Azure Artifacts [feed](../get-started-nuget.md#create-a-feed).<br> - Download and install the [Azure Artifacts Credential Provider](https://github.com/microsoft/artifacts-credprovider).<br> - Download and install [.NET Core SDK (2.1.400+)](https://dotnet.microsoft.com/en-us/download). |
+| **Azure DevOps**   | - An Azure DevOps [organization](../../organizations/accounts/create-organization.md).<br>- An Azure DevOps [project](../../organizations/projects/create-project.md).<br> - An Azure Artifacts [feed](../get-started-nuget.md#create-a-feed).<br> - Download and install the [.NET SDK](https://dotnet.microsoft.com/en-us/download) version *9.0.200* or later. |
+
+## Set up the Azure Artifacts Credential Provider
+
+[!INCLUDE [](../includes/install-credential-provider-dotnet.md)]
 
 ## Create a feed 
 
