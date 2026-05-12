@@ -1,4 +1,6 @@
-- name: Azure DevOps MCP Server overview
+- name: Overview
   href: mcp-server-overview.md
-- name: Remote MCP Server (preview)
+- name: Remote MCP Server
   href: remote-mcp-server.md
+- name: Troubleshoot remote MCP Server
+  href: remote-mcp-server-troubleshooting.md
