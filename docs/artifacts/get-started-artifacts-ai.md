@@ -123,7 +123,7 @@ The following example walks you through using GitHub Copilot to set up your pack
 
 1. Once build is successful, GitHub Copilot will prompt you again to confirm generating the NuGet package. Select **Continue** to proceed.
 
-    :::image type="content" source="media/generate-package-github-copilot.png" alt-text="A screenshot showing prompt asking for confirmation to generatethe NuGet package.":::
+    :::image type="content" source="media/generate-package-github-copilot.png" alt-text="A screenshot showing prompt asking for confirmation to generate the NuGet package.":::
 
 1. After completion, you’ll see a confirmation that the package was created successfully, including the metadata and where the package is saved locally.
 

@@ -27,7 +27,7 @@ This article guides you through creating a feed, configuring your project, and p
 
 ## Set up the Azure Artifacts Credential Provider
 
-The Azure Artifacts Credential Provider enables secure authentication to your Azure Artifacts feeds. To use it with nuget.exe, you must first add it to NuGet’s plugin search path. For details, see [Plugin Installation and discovery](https://github.com/NuGet/Home/wiki/NuGet-cross-plat-authentication-plugin#plugin-installation-and-discovery). Once the plugin is added, follow the installation steps for your operating system below:
+The Azure Artifacts Credential Provider enables secure authentication to your Azure Artifacts feeds. To use it with nuget.exe, you must first add it to NuGet’s plugin search path. For details, see [Plugin Installation and discovery](https://github.com/NuGet/Home/wiki/NuGet-cross-plat-authentication-plugin#plugin-installation-and-discovery). Once the plugin is added, follow the installation steps for your operating system:
 
 #### [Windows](#tab/windows/)
 

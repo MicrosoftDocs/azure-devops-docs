@@ -7,7 +7,7 @@ author: ramiMSFT
 ms.date: 05/07/2026
 ---
 
-The Azure Artifacts Credential Provider enables secure authentication to your Azure Artifacts feeds. To use it with nuget.exe, you must first add it to NuGet’s plugin search path. For details, see [Plugin Installation and discovery](https://github.com/NuGet/Home/wiki/NuGet-cross-plat-authentication-plugin#plugin-installation-and-discovery). Once the plugin is added, follow the installation steps for your operating system below:
+The Azure Artifacts Credential Provider enables secure authentication to your Azure Artifacts feeds. To use it with nuget.exe, you must first add it to NuGet’s plugin search path. For details, see [Plugin Installation and discovery](https://github.com/NuGet/Home/wiki/NuGet-cross-plat-authentication-plugin#plugin-installation-and-discovery). Once the plugin is added, follow the installation steps for your operating system:
 
 #### [Windows](#tab/windows/)
 
@@ -29,7 +29,7 @@ Alternatively, you can use the automated helper script for a streamlined install
 iex "& { $(irm https://aka.ms/install-artifacts-credprovider.ps1) } -AddNetfx"
 ```
 
-See the [Azure Artifacts Credential Provider](https://github.com/microsoft/artifacts-credprovider?tab=readme-ov-file#azure-artifacts-credential-provider) repository for more details.
+For more information, see the [Azure Artifacts Credential Provider](https://github.com/microsoft/artifacts-credprovider?tab=readme-ov-file#azure-artifacts-credential-provider) repository.
 
 #### [Linux/Mac](#tab/linuxMac/)
 
@@ -45,7 +45,7 @@ Make sure you have setup the [Prerequisites](https://github.com/microsoft/artifa
 
 ### Install using the helper script
 
-The helper script provides an automated installation of the netcore version. If you need both netcore and netfx binaries for scenarios like mono MSBuild, use the manual installation method above instead.
+The helper script provides an automated installation of the *netcore* version. If you need both *netcore* and *netfx* binaries for scenarios like mono MSBuild, use the manual installation method instead.
 
 1. Download the [Install Credential Provider](https://github.com/microsoft/artifacts-credprovider/blob/master/helpers/installcredprovider.sh) helper script.
 
@@ -62,6 +62,6 @@ The helper script provides an automated installation of the netcore version. If 
         sh -c "$(curl -fsSL https://aka.ms/install-artifacts-credprovider.sh)"
         ```
 
-See the [Azure Artifacts Credential Provider](https://github.com/microsoft/artifacts-credprovider?tab=readme-ov-file#azure-artifacts-credential-provider) repository for more details.
+For more information, see the [Azure Artifacts Credential Provider](https://github.com/microsoft/artifacts-credprovider?tab=readme-ov-file#azure-artifacts-credential-provider) repository.
 
 * * *
