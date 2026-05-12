@@ -19,7 +19,40 @@ Azure Artifacts enables developers to seamlessly publish packages to feeds and s
 
 | **Product**        | **Requirements**                       |
 |--------------------|----------------------------------------|
-| **Azure DevOps**   | - An Azure DevOps [organization](../../organizations/accounts/create-organization.md).<br>- An Azure DevOps [project](../../organizations/projects/create-project.md).<br> - An Azure Artifacts [feed](../get-started-nuget.md#create-a-feed).<br> - Download and install the [Azure Artifacts Credential Provider](https://github.com/microsoft/artifacts-credprovider).<br> - Download and install the [.NET Core SDK](https://dotnet.microsoft.com/en-us/download). |
+| **Azure DevOps**   | - An Azure DevOps [organization](../../organizations/accounts/create-organization.md).<br>- An Azure DevOps [project](../../organizations/projects/create-project.md).<br> - An Azure Artifacts [feed](../get-started-nuget.md#create-a-feed).<br> - Download and install the [.NET SDK](https://dotnet.microsoft.com/en-us/download) version *9.0.200* or later. |
+
+## Set up the Azure Artifacts Credential Provider
+
+To authenticate with your feed, you must first install the Azure Credential Provider. Using the tool installer included with dotnet, you can install the credential provider from the CLI using the following command:
+
+```dotnetcli
+dotnet tool install --global Microsoft.Artifacts.CredentialProvider.NuGet.Tool
+```
+
+If your repository-level *nuget.config* is configured to use only Azure Artifacts sources, run the install command from outside that directory, or explicitly set `nuget.org` as the source:
+
+```dotnetcli
+dotnet tool install --global Microsoft.Artifacts.CredentialProvider.NuGet.Tool --source https://api.nuget.org/v3/index.json
+```
+
+Optionally, pin the tool to a major version (for example, in container images where reproducibility matters):
+
+```dotnetcli
+dotnet tool install --global Microsoft.Artifacts.CredentialProvider.NuGet.Tool --version 2.* --source https://api.nuget.org/v3/index.json
+```
+
+The first time you perform an operation that requires authentication, you should authenticate by either:
+
+- Running with `--interactive` so dotnet can prompt you to authenticate.
+- Providing credentials through [environment variables](https://www.nuget.org/packages/Microsoft.Artifacts.CredentialProvider.NuGet.Tool#environment-variables) (for example, in unattended scenarios).
+
+If interactive authorization is available, navigate to your project directory and run:
+
+```dotnetcli
+dotnet restore --interactive
+```
+
+This command signs you in and acquires a token. After sign-in succeeds, you can run authenticated commands without `--interactive` until the token expires. See [Session token cache locations](https://www.nuget.org/packages/Microsoft.Artifacts.CredentialProvider.NuGet.Tool#session-token-cache-locations) for more details.
 
 ## Connect to a feed
 

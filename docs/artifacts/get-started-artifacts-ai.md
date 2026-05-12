@@ -21,7 +21,7 @@ This article walks you through publishing your first NuGet package to an Azure A
 
 | **Product**        | **Requirements**   |
 |--------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **Azure DevOps**   | - An Azure DevOps [organization](../organizations/accounts/create-organization.md).<br>- An Azure DevOps [project](../organizations/projects/create-project.md).<br> - Download and install the [Azure Artifacts Credential Provider](https://github.com/microsoft/artifacts-credprovider).<br> - Donwload and install the [latest NuGet version](https://www.nuget.org/downloads). |
+| **Azure DevOps**   | - An Azure DevOps [organization](../organizations/accounts/create-organization.md).<br>- An Azure DevOps [project](../organizations/projects/create-project.md).<br> - Download and install the [.NET SDK](https://dotnet.microsoft.com/en-us/download) version *9.0.200* or later. |
 | **GitHub Copilot** (Optional)  | - [Set up GitHub Copilot and Visual Studio Code](https://docs.github.com/en/copilot/using-github-copilot/using-github-copilot-code-suggestions-in-your-editor?tool=vscode). A 30-day GitHub Copilot free trial is available if you haven't signed up yet. |
 
 ## Create a feed
@@ -123,13 +123,17 @@ The following example walks you through using GitHub Copilot to set up your pack
 
 1. Once build is successful, GitHub Copilot will prompt you again to confirm generating the NuGet package. Select **Continue** to proceed.
 
-    :::image type="content" source="media/generate-package-github-copilot.png" alt-text="A screenshot showing prompt asking for confirmation to generatethe NuGet package.":::
+    :::image type="content" source="media/generate-package-github-copilot.png" alt-text="A screenshot showing prompt asking for confirmation to generate the NuGet package.":::
 
 1. After completion, you’ll see a confirmation that the package was created successfully, including the metadata and where the package is saved locally.
 
     :::image type="content" source="media/package-created-confirmation.png" alt-text="A screenshot showing GitHub Copilot confirming successful creation of the NuGet package.":::
 
 * * *
+
+## Set up the Azure Artifacts Credential Provider
+
+[!INCLUDE [](includes/install-credential-provider-dotnet.md)]
 
 ## Connect to a feed
 
