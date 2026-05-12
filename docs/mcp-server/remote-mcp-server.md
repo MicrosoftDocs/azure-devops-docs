@@ -190,6 +190,7 @@ Core tools are always available.
 
 | Tool | Description |
 |---|---|
+| `core_list_orgs` | List Azure DevOps organizations the authenticated user has access to |
 | `core_list_projects` | List projects in an organization |
 | `core_list_project_teams` | List teams in a project |
 
@@ -202,6 +203,9 @@ Core tools are always available.
 | `work_get_team_capacity` | Get team capacity for an iteration. | ✅ |
 | `work_create_iterations` | Create iterations. | ❌ |
 | `work_assign_iterations` | Assign iterations to a team. | ❌ |
+| `work_update_team_capacity` | Update the team capacity of a team member for a specific iteration. | ❌ |
+| `work_get_team_settings` | Get team settings including default iteration, backlog iteration, and default area path. | ✅ |
+| `work_get_iteration_capacities` | Get an iteration's capacity for all teams in the iteration and project. | ✅ |
 
 ### Repos
 
@@ -259,6 +263,7 @@ The work item tools are consolidated into grouped dispatchers using an `action` 
 | `wit_work_item_link_write` | `unlink` | Remove links from a work item | ❌ |
 | `wit_work_item_link_write` | `link_to_pull_request` | Link a work item to a pull request | ❌ |
 | `wit_work_item_link_write` | `add_artifact_link` | Add a repository, branch, commit, or build artifact link to a work item | ❌ |
+| `wit_work_item_attachment` | `N/A` | Download a work item attachment by ID; returns base64-encoded content with filename and MIME type | ✅ |
 
 > [!NOTE]
 > `wit_query_by_wiql` is currently available only to MCP Insiders by using the `X-MCP-Insiders` header.
