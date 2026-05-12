@@ -5,7 +5,7 @@ description: Learn about the retirement of public projects in Azure DevOps, key 
 ms.subservice: azure-devops-public-projects
 ms.author: chcomley
 author: chcomley
-ms.topic: conceptual
+ms.topic: article
 monikerRange: 'azure-devops'
 ms.date: 04/30/2026
 ---
