@@ -121,21 +121,18 @@ Pipelines can reference tasks executed within the pipeline. Some tasks include a
 
 Applying the  **Enable shell tasks arguments validation** setting validates `argument` parameters for built-in shell tasks to check for inputs that can inject commands into scripts. The check ensures that the shell correctly executes characters like semicolons, quotes, and parentheses in the following pipeline tasks:
 
-- PowerShell (`PowerShell@2`)
-- BatchScript (`BatchScript@1`)
-- Bash (`Bash@3`)
-- Ssh (`Ssh@0`)
-- AzureFileCopy (`AzureFileCopy@1` – `AzureFileCopy@6`)
-- WindowsMachineFileCopy (`WindowsMachineFileCopy@1` – `WindowsMachineFileCopy@2`)
-- PowerShellOnTargetMachines (`PowerShellOnTargetMachines@3`)
-- SqlAzureDacpacDeployment (`SqlAzureDacpacDeployment@1`)
-- SqlDacpacDeploymentOnMachineGroup (`SqlDacpacDeploymentOnMachineGroup@0`)
-- AzureCLI (`AzureCLI@2`, `AzureCLI@3`)
-- AzurePowerShell (`AzurePowerShell@2` – `AzurePowerShell@5`)
-- ServiceFabricPowerShell (`ServiceFabricPowerShell@1`)
-
-> [!NOTE]
-> For tasks added to the list after the original 2023 rollout (PowerShellOnTargetMachines, SqlAzureDacpacDeployment, SqlDacpacDeploymentOnMachineGroup, AzureCLI, AzurePowerShell, ServiceFabricPowerShell), argument sanitization fires only when **both** the org-level **Enable shell tasks arguments validation** setting and a per-task pipeline-level feature flag are enabled. The per-task feature flags are rolled out gradually by Microsoft to avoid regressions for pipelines that opted into the org-level setting before these tasks were onboarded. Customers do not need to take action; the per-task flags are managed centrally.
+- PowerShell
+- BatchScript
+- Bash
+- Ssh
+- AzureFileCopy
+- WindowsMachineFileCopy
+- PowerShellOnTargetMachines
+- SqlAzureDacpacDeployment
+- SqlDacpacDeploymentOnMachineGroup
+- AzureCLI
+- AzurePowerShell
+- ServiceFabricPowerShell
 
 You can apply **Enable shell tasks arguments validation** at the organization level under **Organization Settings** > **Pipelines** > **Settings** or at the project level under **Project settings** > **Pipelines** > **Settings**. If the organization-level setting is enabled, it applies to all projects in the organization and can't be turned off at the project level.
 
