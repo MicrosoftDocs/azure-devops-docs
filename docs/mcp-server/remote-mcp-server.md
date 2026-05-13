@@ -209,7 +209,7 @@ Core tools are always available.
 
 ### Repos
 
-The repository tools are consolidated into grouped dispatchers using an `action` parameter, following the same pattern as the wiki tools. Use `repo_create_branch` and `repo_search_commits` directly—they weren't consolidated.
+The repository tools are consolidated into grouped dispatchers using an `action` parameter.
 
 | Tool | Action | Description | Read-only |
 |---|---|---|:---:|
