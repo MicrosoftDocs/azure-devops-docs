@@ -209,7 +209,7 @@ Core tools are always available.
 
 ### Repos
 
-The repository tools are consolidated into grouped dispatchers using an `action` parameter, following the same pattern as the wiki tools. The previous individual tool names continue to work as aliases. Use `repo_create_branch` and `repo_search_commits` directly—they weren't consolidated.
+The repository tools are consolidated into grouped dispatchers using an `action` parameter, following the same pattern as the wiki tools. Use `repo_create_branch` and `repo_search_commits` directly—they weren't consolidated.
 
 | Tool | Action | Description | Read-only |
 |---|---|---|:---:|
@@ -225,7 +225,7 @@ The repository tools are consolidated into grouped dispatchers using an `action`
 | `repo_branch` | `list_mine` | List branches the current user has pushed to | ✅ |
 | `repo_file` | `get_content` | Get the text content of a file at a specific branch, tag, or commit | ✅ |
 | `repo_file` | `list_directory` | List files and folders in a directory, with optional recursive listing | ✅ |
-| `repo_search_commits` | `N/A` | Search commits with filtering by text, author, date range, and more | ✅ |
+| `repo_search_commits` | | Search commits with filtering by text, author, date range, and more | ✅ |
 | `repo_pull_request_write` | `create` | Create a pull request | ❌ |
 | `repo_pull_request_write` | `update` | Update a pull request, including setting autocomplete | ❌ |
 | `repo_pull_request_write` | `update_reviewers` | Add or remove pull request reviewers | ❌ |
@@ -237,7 +237,7 @@ The repository tools are consolidated into grouped dispatchers using an `action`
 
 ### Wit
 
-The work item tools are consolidated into grouped dispatchers using an `action` parameter, following the same pattern as the repo and pipeline tools. The previous individual tool names continue to work as aliases. Use `search_workitem` directly—it wasn't consolidated.
+The work item tools are consolidated into grouped dispatchers using an `action` parameter.
 
 | Tool | Action | Description | Read-only |
 |---|---|---|:---:|
@@ -252,7 +252,7 @@ The work item tools are consolidated into grouped dispatchers using an `action` 
 | `wit_query` | `get_results` | Run a saved query | ✅ |
 | `wit_backlog` | `list` | List backlog levels for a team | ✅ |
 | `wit_backlog` | `list_work_items` | List work items in a specific backlog level | ✅ |
-| `search_workitem` | `N/A` | Full-text work item search | ✅ |
+| `search_workitem` | | Full-text work item search | ✅ |
 | `wit_work_item_write` | `create` | Create a new work item | ❌ |
 | `wit_work_item_write` | `update` | Update fields on a work item | ❌ |
 | `wit_work_item_write` | `update_batch` | Update multiple work items in one call | ❌ |
@@ -263,14 +263,14 @@ The work item tools are consolidated into grouped dispatchers using an `action` 
 | `wit_work_item_link_write` | `unlink` | Remove links from a work item | ❌ |
 | `wit_work_item_link_write` | `link_to_pull_request` | Link a work item to a pull request | ❌ |
 | `wit_work_item_link_write` | `add_artifact_link` | Add a repository, branch, commit, or build artifact link to a work item | ❌ |
-| `wit_work_item_attachment` | `N/A` | Download a work item attachment by ID; returns base64-encoded content with filename and MIME type | ✅ |
+| `wit_work_item_attachment` |  | Download a work item attachment by ID; returns base64-encoded content with filename and MIME type | ✅ |
 
 > [!NOTE]
 > `wit_query_by_wiql` is currently available only to MCP Insiders by using the `X-MCP-Insiders` header.
 
 ### Pipelines
 
-The pipeline tools are consolidated into grouped dispatchers using an `action` parameter, following the same pattern as the wiki and repo tools. The previous individual tool names continue to work as aliases.
+The pipeline tools are consolidated into grouped dispatchers using an `action` parameter.
 
 | Tool | Action | Description | Read-only |
 |---|---|---|:---:|
@@ -304,17 +304,19 @@ The wiki read operations are consolidated into a single `wiki` tool. Use the `ac
 
 ### Test plans
 
-| Tool | Description | Read-only |
-|---|---|:---:|
-| `testplan_list_test_plans` | List test plans in a project. | ✅ |
-| `testplan_list_test_suites` | List test suites in a test plan. | ✅ |
-| `testplan_list_test_cases` | List test cases in a suite. | ✅ |
-| `testplan_show_test_results_from_build_id` | Get test results from a build. | ✅ |
-| `testplan_create_test_plan` | Create a test plan. | ❌ |
-| `testplan_create_test_suite` | Create a test suite. | ❌ |
-| `testplan_create_test_case` | Create a test case. | ❌ |
-| `testplan_update_test_case_steps` | Update test case steps. | ❌ |
-| `testplan_add_test_cases_to_suite` | Add test cases to a suite. | ❌ |
+The test plan tools are consolidated into grouped dispatchers using an `action` parameter.
+
+| Tool | Action | Description | Read-only |
+|---|---|---|:---:|
+| `testplan` | `list_plans` | List test plans in a project | ✅ |
+| `testplan` | `list_suites` | List test suites under a test plan | ✅ |
+| `testplan` | `list_cases` | List test cases under a test suite | ✅ |
+| `testplan_show_test_results_from_build_id` |  | Get test results from a build | ✅ |
+| `testplan_test_plan_write` | `create` | Create a test plan | ❌ |
+| `testplan_test_suite_write` | `create` | Create a test suite | ❌ |
+| `testplan_test_suite_write` | `add_test_cases` | Add test cases to a suite | ❌ |
+| `testplan_test_case_write` | `create` | Create a test case | ❌ |
+| `testplan_test_case_write` | `update_steps` | Update test case steps | ❌ |
 
 ### Search
 
@@ -364,9 +366,14 @@ If the AI assistant returns results from your Azure DevOps organization, the rem
 
 ## Troubleshooting
 
-If you run into issues with connection, authentication, tool resolution, or Copilot integration, see [Troubleshoot the remote Azure DevOps MCP Server](remote-mcp-server-troubleshooting.md).
+| Issue | Resolution |
+|------|------------|
+| **Authentication fails** | Verify your Microsoft Entra credentials and confirm you have access to the Azure DevOps organization. |
+| **Server not found** | Check the server URL format: `https://mcp.dev.azure.com/{organization}`. |
+| **No data returned** | Confirm you have appropriate permissions for the project or resources being queried. |
+| **Preview not available** | The preview is rolling out gradually. Check back later or contact your organization administrator. |
 
-For support, create an issue using the [Remote MCP Server issue template](https://github.com/microsoft/azure-devops-mcp/issues/new?template=remote-mcp-server-issue.md) in the Azure DevOps MCP Server GitHub repository.
+For support, you can create an issue in the [local MCP Server](https://github.com/microsoft/azure-devops-mcp/issues/new?template=remote-mcp-server-issue.md) repo. Be sure to use the **Remote** issue template.
 
 ## FAQ
 
@@ -384,6 +391,5 @@ AgentId support is coming soon.
 
 ## Related content
 
-- [Troubleshoot the remote Azure DevOps MCP Server](remote-mcp-server-troubleshooting.md)
 - [Azure DevOps MCP Server overview](mcp-server-overview.md)
 - [Azure DevOps MCP Server GitHub repository](https://github.com/microsoft/azure-devops-mcp)
