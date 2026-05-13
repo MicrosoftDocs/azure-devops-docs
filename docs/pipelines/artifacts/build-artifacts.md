@@ -17,11 +17,11 @@ monikerRange: "<=azure-devops"
 
 ::: moniker-end
 
-Azure Artifacts enables teams to use feeds and upstream sources to manage their dependencies. You can use Azure Pipelines to publish and download different types of artifacts as part of your CI/CD workflow.
+You can use Azure Pipelines to publish and download different types of artifacts as part of your CI/CD workflow.
 
 ## Publish artifacts
 
-Artifacts can be published at any stage of your pipeline. You can use YAML or the classic Azure DevOps editor to publish your packages.
+Artifacts can be published at any stage of your pipeline. You can use YAML or the classic Azure DevOps editor to publish your build artifacts.
 
 #### [YAML](#tab/yaml/)
 ::: moniker range="<=azure-devops"
@@ -236,9 +236,9 @@ Add the :::image type="icon" source="../tasks/utility/media/downloadbuildartifac
 
 - `Build.ArtifactStagingDirectory` path is cleaned up after each build.
 
-- Deleting a build associated with packages published to a file share will result in the deletion of all Artifacts in that UNC path.  
+- Deleting a build associated with artifacts published to a file share will result in the deletion of all Artifacts in that UNC path.  
 
-- If you're publishing your packages to a file share, make sure you provide access to the build agent.
+- If you're publishing your build artifacts to a file share, make sure you provide access to the build agent.
 
 - Make sure you allow [Azure Artifacts Domain URLs and IP addresses](../../organizations/security/allow-list-ip-url.md#azure-artifacts) if your organization is using a firewall.
 
@@ -246,4 +246,6 @@ Add the :::image type="icon" source="../tasks/utility/media/downloadbuildartifac
 
 - [Publish and download artifacts in Azure Pipelines](./pipeline-artifacts.md)
 - [Define your multi-stage classic pipeline](../release/define-multistage-release-process.md)
+- [Retention Policies](/docs/pipelines/policies/retention.md)
 - [How to mitigate risk when using private package feeds](https://azure.microsoft.com/resources/3-ways-to-mitigate-risk-using-private-package-feeds/)
+  
