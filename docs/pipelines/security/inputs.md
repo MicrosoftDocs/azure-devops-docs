@@ -119,7 +119,7 @@ A running pipeline can't modify pipeline parameters, unlike variables. Parameter
 
 Pipelines can reference tasks executed within the pipeline. Some tasks include an `arguments` parameter that allows users to specify more options for the task.
 
-Applying the  **Enable shell tasks arguments validation** setting validates `argument` parameters for built-in shell tasks to check for inputs that can inject commands into scripts. The check ensures that the shell correctly executes characters like semicolons, quotes, and parentheses in the following pipeline tasks:
+Applying the  **Enable shell tasks arguments validation** setting validates `arguments` parameters for built-in shell tasks to check for inputs that can inject commands into scripts. The check ensures that the shell correctly executes characters like semicolons, quotes, and parentheses in the following pipeline tasks:
 
 - PowerShell
 - BatchScript
