@@ -20,7 +20,7 @@ The following section describes new features in development for Managed DevOps P
 
 * **Custom Startup Script**: We are adding the option to run a PowerShell script (Windows) or a shell script (Linux) for every image in a pool before they are assigned to an agent, to enable scenarios such as installing Trusted root CAs and setting environment variables. **Planned for June 2026**.
 
-* **Instance Mix**: Instance Mix allows you to specify multiple Virtual Machine sizes for a single Managed DevOps Pool. Instead of being limited to a single VM SKU, you can define up to five VM sizes, increasing the likelihood of successful provisioning and providing more flexibility in how compute resources are allocated across the pool. This feature is built on top of [Azure Virtual Machine Scale Sets Instance Mix capabilities](/azure/virtual-machine-scale-sets/instance-mix-create) and primarily helps improve resiliency and provisioning reliability. **Planned for late 2026.**
+* **Instance Mix**: Instance Mix allows you to specify multiple Virtual Machine sizes for a single Managed DevOps Pool. Instead of being limited to a single VM SKU, you can define up to five VM sizes, increasing the likelihood of successful provisioning and providing more flexibility in how compute resources are allocated across the pool. This feature is built on top of [Azure Virtual Machine Scale Sets Instance Mix capabilities](/azure/virtual-machine-scale-sets/instance-mix-overview) and primarily helps improve resiliency and provisioning reliability. **Planned for late 2026.**
 
 * **Container agents**: We're adding support for provisioning a container and starting the agent inside the container. **Planned for late 2026.**
 
