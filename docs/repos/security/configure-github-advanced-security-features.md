@@ -148,6 +148,11 @@ Secret scanning push protection and repository scanning are automatically enable
 :::image type="content" source="media/adv-sec-repository-settings-secret-protection-options.png" lightbox="media/adv-sec-repository-settings-secret-protection-options.png" alt-text="Screenshot of enabling push protection.":::
 
 Secret scanning repository scanning is automatically kicked off upon enabling Secret Protection for a selected repository. 
+
+> [!NOTE]
+> Push protection evaluates only pushes that occur after the feature is enabled for the repository and does not retroactively block existing commits or repository history.
+> However, repository secret scanning can still detect secrets already present in the repository, including historical commits.
+
 :::zone-end
 
 ## Set up dependency scanning
