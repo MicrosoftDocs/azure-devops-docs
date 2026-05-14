@@ -67,7 +67,7 @@ Now that you've created your `.nupkg` package, generate an API key so you can pu
 
 You can publish your package by using the NuGet.org web UI, the dotnet CLI, or nuget.exe. This tutorial uses the dotnet CLI. To publish, you need the package file name, your API key, and the NuGet.org source URL.
 
-1. In an command prompt window, navigate to the folder that contains your `.nupkg` file.
+1. In a command prompt window, go to the folder that contains your `.nupkg` file.
 
 1. Run the following command to publish the package to NuGet.org. Replace the placeholders with your package file name and API key.
 
