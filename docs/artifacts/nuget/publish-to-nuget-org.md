@@ -33,9 +33,9 @@ You can use an existing .NET project to build and generate a NuGet package, or c
 
 1. Enter a name for your project and solution, choose a local folder, and then select **Next**.
 
-1. Select your **Framework**, then select **Create** when you're ready.
+1. Select your **Framework**, and then select **Create** when you're ready.
     
-The default class library template is sufficient to create a NuGet package, so this tutorial uses the generated project without additional code changes.
+The default class library template is sufficient to create a NuGet package, so this tutorial uses the generated project without making any code changes.
 
 ## Set up and generate a package
 
@@ -75,7 +75,7 @@ You can publish your package by using the NuGet.org web UI, the dotnet CLI, or n
     dotnet nuget push <packageName> --api-key <APIKey> --source https://api.nuget.org/v3/index.json
     ```
 
-1. Verify that the command output indicates the package was pushed successfully.
+1. Check that the command output shows the package was pushed successfully.
 
     :::image type="content" source="media/package-published.png" alt-text="Screenshot of command prompt output confirming the dotnet nuget push command successfully published the package.":::
 
