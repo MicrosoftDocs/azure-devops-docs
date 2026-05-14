@@ -29,7 +29,7 @@ You can use an existing .NET project to build and generate a NuGet package, or c
 
 1. In Visual Studio, select **File** > **New** > **Project**.
 
-1. Select the **Class Library template, and then select **Next**.
+1. Select the **Class Library** template, and then select **Next**.
 
 1. Enter a name for your project and solution, choose a local folder, and then select **Next**.
 
