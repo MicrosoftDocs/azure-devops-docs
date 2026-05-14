@@ -49,7 +49,7 @@ The default class library template is sufficient to create a NuGet package, so t
 
 ## Generate an API key
 
-Now that you've created your `.nupkg` package, generate an API key so you can publish it to NuGet.org.
+Now that you created your `.nupkg` package, generate an API key so you can publish it to NuGet.org.
 
 1. Sign in to your [NuGet.org](https://www.nuget.org/users/account/LogOn?returnUrl=%2F) account or create one if you haven't.
 
