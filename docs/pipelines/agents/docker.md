@@ -315,42 +315,104 @@ Next, create the Dockerfile.
     #!/bin/bash
     set -e
 
-    if [ -z "${AZP_URL}" ]; then
-      echo 1>&2 "error: missing AZP_URL environment variable"
-      exit 1
-    fi
+    # Load a token either from the environment variable or by using the service principal credentials.
+    load_azp_token() {
+      # Always un-export AZP_CLIENTSECRET so it is never inherited by
+      # child processes (e.g., agent job processes). It remains available
+      # as a shell variable so that it can be used to generate a token.
+      export -n AZP_CLIENTSECRET
 
-    if [ -n "$AZP_CLIENTID" ]; then
-      echo "Using service principal credentials to get token"
-      az login --allow-no-subscriptions --service-principal --username "$AZP_CLIENTID" --password "$AZP_CLIENTSECRET" --tenant "$AZP_TENANTID"
-      # adapted from https://learn.microsoft.com/en-us/azure/databricks/dev-tools/user-aad-token
-      AZP_TOKEN=$(az account get-access-token --query accessToken --output tsv)
-      echo "Token retrieved"
-    fi
+      if [ -n "$AZP_CLIENTID" ]; then
+        if [ -z "$AZP_CLIENTSECRET" ]; then
+          echo 1>&2 "error: AZP_CLIENTSECRET must be set when AZP_CLIENTID is used"
+          exit 1
+        fi
 
-    if [ -z "${AZP_TOKEN_FILE}" ]; then
-      if [ -z "${AZP_TOKEN}" ]; then
-        echo 1>&2 "error: missing AZP_TOKEN environment variable"
-        exit 1
+        if [ -z "$AZP_TENANTID" ]; then
+          echo 1>&2 "error: AZP_TENANTID must be set when AZP_CLIENTID is used"
+          exit 1
+        fi
+
+        echo "Using service principal credentials to get token"
+        # Isolate Azure CLI state to a dedicated, restrictive directory to avoid
+        # leaking cached credentials/tokens to subsequent pipeline job processes.
+        AZP_TOKEN="$(
+           export AZURE_CONFIG_DIR="$(mktemp -d)"
+           chmod 700 "$AZURE_CONFIG_DIR"
+           az_cli_cleanup() {
+             # Log out and remove the isolated Azure CLI config directory to purge cached tokens.
+             az logout --username "$AZP_CLIENTID" >/dev/null 2>&1 || true
+             az account clear >/dev/null 2>&1 || true
+             rm -rf "$AZURE_CONFIG_DIR"
+           }
+           trap az_cli_cleanup EXIT
+           az login --allow-no-subscriptions --service-principal --username "$AZP_CLIENTID" --password "$AZP_CLIENTSECRET" --tenant "$AZP_TENANTID" >/dev/null
+           # adapted from https://learn.microsoft.com/en-us/azure/databricks/dev-tools/user-aad-token
+           az account get-access-token --query accessToken --output tsv
+         )"
+        echo "Token retrieved"
       fi
 
-      AZP_TOKEN_FILE="/azp/.token"
-      echo -n "${AZP_TOKEN}" > "${AZP_TOKEN_FILE}"
-    fi
+      if [ -z "${AZP_TOKEN_FILE}" ]; then
+        if [ -z "${AZP_TOKEN}" ]; then
+          echo 1>&2 "error: missing AZP_TOKEN environment variable"
+          exit 1
+        fi
 
-    unset AZP_CLIENTSECRET
-    unset AZP_TOKEN
+        AZP_TOKEN_FILE="$(dirname "$0")/.token"
+      fi
 
-    if [ -n "${AZP_WORK}" ]; then
-      mkdir -p "${AZP_WORK}"
-    fi
+      if [ -n "${AZP_TOKEN-}" ]; then
+        if [ -d "${AZP_TOKEN_FILE}" ]; then
+          echo 1>&2 "error: AZP_TOKEN_FILE is a directory, expected a file path: ${AZP_TOKEN_FILE}"
+          exit 1
+        fi
+        # If the file already exists, it must itself be writable. 
+        if [ -e "${AZP_TOKEN_FILE}" ]; then
+          if [ ! -w "${AZP_TOKEN_FILE}" ]; then
+            echo 1>&2 "error: existing AZP_TOKEN_FILE is not writable: ${AZP_TOKEN_FILE}"
+            exit 1
+          fi
+        else
+          if [ ! -w "$(dirname "${AZP_TOKEN_FILE}")" ]; then
+            echo 1>&2 "error: AZP_TOKEN_FILE parent directory is missing or not writable: $(dirname "${AZP_TOKEN_FILE}")"
+            exit 1
+          fi
+        fi
+        (umask 177 && echo -n "${AZP_TOKEN}" > "${AZP_TOKEN_FILE}")
+        chmod 600 "${AZP_TOKEN_FILE}" || true
+      else
+        if [ ! -r "${AZP_TOKEN_FILE}" ]; then
+          echo 1>&2 "error: AZP_TOKEN_FILE is not readable: ${AZP_TOKEN_FILE}"
+          exit 1
+        fi
+        if [ ! -s "${AZP_TOKEN_FILE}" ]; then
+          echo 1>&2 "error: AZP_TOKEN_FILE is empty: ${AZP_TOKEN_FILE}"
+          exit 1
+        fi
+      fi
 
+      # Unset the AZP_TOKEN environment variable to prevent it from being exposed.
+      # At this point the token is only available in the file specified by AZP_TOKEN_FILE.
+      unset AZP_TOKEN
+    }
+
+    # Cleanup function to remove the agent configuration.
     cleanup() {
       trap "" EXIT
 
       if [ -e ./config.sh ]; then
         print_header "Cleanup. Removing Azure Pipelines agent..."
 
+        # Try to get a new token if using service principal credentials, as the old one
+        # might have expired between the time it was waiting to run a job and now.
+        # If refresh fails, continue cleanup with the existing token file.
+        if [ -n "$AZP_CLIENTID" ]; then
+          if ! ( load_azp_token ); then
+             echo "Warning: failed to refresh Azure Pipelines token during cleanup. Continuing with the existing token."
+          fi
+        fi
+    
         # If the agent has some running jobs, the configuration removal process will fail.
         # So, give it some time to finish the job.
         while true; do
@@ -368,8 +430,20 @@ Next, create the Dockerfile.
       echo -e "\n${lightcyan}$1${nocolor}\n"
     }
 
-    # Let the agent ignore the token env variables
-    export VSO_AGENT_IGNORE="AZP_TOKEN,AZP_TOKEN_FILE"
+    if [ -z "${AZP_URL}" ]; then
+      echo 1>&2 "error: missing AZP_URL environment variable"
+      exit 1
+    fi
+
+    # Load the AZP token for initial setup.
+    load_azp_token
+    
+    if [ -n "${AZP_WORK}" ]; then
+      mkdir -p "${AZP_WORK}"
+    fi
+    
+    # Let the agent ignore sensitive env variables, including tokens and the client secret.
+    export VSO_AGENT_IGNORE="AZP_TOKEN,AZP_TOKEN_FILE,AZP_CLIENTSECRET"
 
     print_header "1. Determining matching Azure Pipelines agent..."
 
