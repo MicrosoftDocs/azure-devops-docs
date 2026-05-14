@@ -43,15 +43,9 @@ The default class library template is sufficient to create a NuGet package, so t
 
 1. Enter your package details, and make sure your **Package id** is unique so it doesn't conflict with existing packages on NuGet.org. A common naming pattern is `Company.Product.Feature`. To generate the package each time you build the project, select **Generate NuGet package on build**.
 
-    :::image type="content" source="media/package-properties.png" alt-text="Configure package properties":::
-
 1. In **Solution Explorer**, right-click your project, and then select **Pack** to generate the `.nupkg` file.
 
-    :::image type="content" source="media/pack-package.png" alt-text="Generate package":::
-
 1. Check the status of the pack command in the output window.
-
-    :::image type="content" source="media/pack-output.png" alt-text="Pack output":::
 
 ## Generate an API key
 
@@ -63,11 +57,11 @@ Now that you've created your `.nupkg` package, generate an API key so you can pu
 
 1. Select **Create**, enter a name for the key, set the scope to **Push new packages and package versions**, and enter `*` in the glob pattern to allow all packages. When you're done, select **Create**.
 
-    :::image type="content" source="media/create-api-key.png" alt-text="Create API key":::
+    :::image type="content" source="media/create-api-key.png" alt-text="Screenshot of the NuGet.org Create API key page with scope and package pattern fields configured for package publishing.":::
 
 1. Select **Copy**, and store the API key in a secure location. You use this key when you publish the package.
 
-    :::image type="content" source="media/api-key.png" alt-text="Copy API key":::
+    :::image type="content" source="media/api-key.png" alt-text="Screenshot of NuGet.org showing the generated API key and the Copy action used to save it securely.":::
 
 ## Publish a package to NuGet.org
 
@@ -83,7 +77,7 @@ You can publish your package by using the NuGet.org web UI, the dotnet CLI, or n
 
 1. Verify that the command output indicates the package was pushed successfully.
 
-    :::image type="content" source="media/package-published.png" alt-text="Publish package output":::
+    :::image type="content" source="media/package-published.png" alt-text="Screenshot of command prompt output confirming the dotnet nuget push command successfully published the package.":::
 
 ## Related content
 
