@@ -156,6 +156,12 @@ The following features are available when using Azure Artifacts as an artifact s
 | Work items and commits | Link work items to see them displayed in the release details. Commits will be shown when using Git or TFVC.|
 | [Artifact download](#artifact-download) | By default, pipeline artifacts are downloaded to the agent running the pipeline. You can also configure a step in your stage to [skip downloading](/azure/devops/pipelines/yaml-schema/steps-download) the artifact if needed. |
 
+
+> [!NOTE]
+> When using Feeds with 1000 packages or more, you may see that the packages in Package drop down in Azure Artifacts source may be truncated after certain packages.
+> To work around this issue, create a new Custom View and [promote](https://learn.microsoft.com/en-us/azure/devops/artifacts/feeds/views?view=azure-devops&tabs=nuget%2Cnugetserver22%2Cpowershell) packages to that view. And then in the Release pipeline, specify the View in the Azure Artifact source.
+> Or you can you can provide the package ID, which you can find using the instructions [here](https://learn.microsoft.com/en-us/rest/api/azure/devops/artifacts/artifact-details/get-packages?view=azure-devops-rest-5.0).
+
 #### Handling Maven snapshots
 
 When using Maven snapshots, multiple versions can be downloaded at once (example `myApplication-2.1.0.BUILD-20190920.220048-3.jar`, `myApplication-2.1.0.BUILD-20190820.221046-2.jar`, `myApplication-2.1.0.BUILD-20190820.220331-1.jar`). You might need to remove the old versions and only keep the latest artifact before deployment.
