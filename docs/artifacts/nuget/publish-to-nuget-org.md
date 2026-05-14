@@ -14,7 +14,7 @@ monikerRange: "<=azure-devops"
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
-NuGet.org is the public package repository for .NET that enables developers to share reusable code. A NuGet package is a compressed file with a `.nupkg` extension that contains compiled code and related metadata that can be reused in other projects. Publishing your package to NuGet.org makes it available to developers worldwide.
+NuGet.org is the public package repository for .NET that enables developers to share reusable code. A NuGet package is a compressed file with a `.nupkg` extension that contains compiled code and related metadata that you can reuse in other projects. When you publish your package to NuGet.org, you make it available to developers worldwide.
 
 ## Prerequisites
 
