@@ -30,6 +30,11 @@ Dependency scanning generates an alert for any open-source component, direct or 
 
 A new snapshot of your components is stored whenever the dependency graph for a repository changes, and after a pipeline that contains the dependency scanning task is executed. 
 
+> [!NOTE]
+> Dependency scanning requires a pipeline configured with the `AdvancedSecurity-Dependency-Scanning@1` task.
+> Enabling GitHub Advanced Security alone doesn't execute dependency scanning automatically.
+> For more information about the task to be added in the pipeline, see [AdvancedSecurity-Dependency-Scanning@1 task](../../pipelines/tasks/reference/advanced-security-dependency-scanning-v1.md).
+
 For every vulnerable component detected in use, the component and vulnerability are listed in the build log and displayed as an alert in the Advanced Security tab. Only advisories that reviewed by GitHub and added to the [GitHub Advisory Database](https://docs.github.com/en/code-security/dependabot/dependabot-alerts/browsing-security-advisories-in-the-github-advisory-database) create a dependency scanning alert. The build log includes a link to the individual alert for further investigation. For more information on the alert detail, view Fixing dependency scanning alerts.  
 
 The build log also contains basic information about each detected vulnerability. These details include the severity, the affected component, the title of the vulnerability, and the associated CVE.  
