@@ -161,7 +161,7 @@ sections:
           [Enterprise Agreement (EA)](https://azure.microsoft.com/pricing/enterprise-agreement/), Azure subscriptions set up by
           Cloud Solution Providers (CSPs), through Microsoft Open License resellers, and pay-as-you-go.
           
-          The only notable exclusion is that you can't use the [Azure free trial](https://azure.microsoft.com/pricing/free-trial/), Government, or National cloud subscriptions.
+          The only notable exclusion is that you can't use the [Azure free trial](https://azure.microsoft.com/pricing/purchase-options/azure-account?cid=msft_learn), Government, or National cloud subscriptions.
 
       - question: |
           Can I use the monthly Azure credits from my Visual Studio subscription to buy Azure DevOps?
