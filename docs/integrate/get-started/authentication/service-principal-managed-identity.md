@@ -143,7 +143,7 @@ For more information, see the following articles:
 After you create your identity in Microsoft Entra ID, add it to your Azure DevOps organization to grant access to resources.
 
 > [!IMPORTANT]
-> Service principals don't automatically materialize in Azure DevOps. Adding a service principal to a Microsoft Entra security group doesn't grant access to your organization. You must explicitly add the service principal to the organization and assign it to the **Project Collection Administrators** (PCA) group (or another appropriate group) to grant access.
+> Service principals don't automatically appear in Azure DevOps. Adding a service principal to a Microsoft Entra security group doesn't grant access to your organization. You must explicitly add the service principal to the organization and assign it to the **Project Collection Administrators** (PCA) group (or another appropriate group) to grant access.
 
 #### Prerequisites
 
