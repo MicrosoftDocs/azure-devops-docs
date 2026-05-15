@@ -4,10 +4,10 @@
 
 You can link most [Azure subscriptions](https://azure.microsoft.com/pricing/purchase-options/) to your organization for billing, except the following:
 
-* [Azure Free Trial](https://azure.microsoft.com/offers/ms-azr-0044p/)
+* [Azure Free Trial](https://azure.microsoft.com/offers/ms-azr-0044p?cid=msft_learn)
 * [Free Microsoft Entra subscription](/microsoft-365/compliance/use-your-free-azure-ad-subscription-in-office-365)
 
-If you have one of these subscription types, set up a separate [pay-as-you-go Azure subscription](https://azure.microsoft.com/offers/ms-azr-0003p/).
+If you have one of these subscription types, set up a separate [pay-as-you-go Azure subscription](https://azure.microsoft.com/offers/ms-azr-0003p?cid=msft_learn).
 
 > [!IMPORTANT]
 > **Visual Studio subscribers and Visual Studio Dev Essentials members:**

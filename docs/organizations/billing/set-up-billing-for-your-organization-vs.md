@@ -39,7 +39,7 @@ This article guides you through managing billing in Azure DevOps, which is essen
 |Subscription| An [Azure subscription](https://azure.microsoft.com/pricing/purchase-options/) in the same Microsoft Entra ID as your Azure DevOps organization.|
 
 > [!NOTE]
-> Azure DevOps doesn't support the [Azure Free Trial](https://azure.microsoft.com/offers/ms-azr-0044p/).
+> Azure DevOps doesn't support the [Azure Free Trial](https://azure.microsoft.com/offers/ms-azr-0044p?cid=msft_learn).
 
 <a name="set-up-billing"></a>
 
