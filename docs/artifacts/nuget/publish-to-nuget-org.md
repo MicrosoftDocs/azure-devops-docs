@@ -1,11 +1,11 @@
 ---
 title: Publish packages to NuGet.org
-description: How to publish packages to NuGet.org
+description: Learn how to publish NuGet packages to NuGet.org using the dotnet CLI.
 ms.service: azure-devops-artifacts
 ms.author: rabououn
 author: ramiMSFT
 ms.topic: tutorial
-ms.date: 4/01/2021
+ms.date: 05/13/2026
 monikerRange: "<=azure-devops"
 "recommendations": "true"
 ---
@@ -14,93 +14,75 @@ monikerRange: "<=azure-devops"
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
-NuGet.org is a package manager that enables developers to share reusable code. A NuGet package is a compressed file with `.nupkg` extension that contains compiled code that can be consumed in other projects. Packages hosted in NuGet.org are available to all developers around the world.
+NuGet.org is the public package repository for .NET that enables developers to share reusable code. A NuGet package is a compressed file with a `.nupkg` extension that contains compiled code and related metadata that you can reuse in other projects. When you publish your package to NuGet.org, you make it available to developers worldwide.
 
 ## Prerequisites
 
-- Any version of [Visual Studio 2019](https://visualstudio.microsoft.com) and the .NET Core workload.
-- `dotnet` CLI. If you don't have it already, install the [.NET Core SDK](https://dotnet.microsoft.com/download/).
-- Register for a free account on [nuget.org](/nuget/nuget-org/individual-accounts#add-a-new-individual-account) if you don't have one already.
+| **Product**        | **Requirements**                       |
+|--------------------|----------------------------------------|
+| **Visual Studio & .NET**   | - [Visual Studio](https://visualstudio.microsoft.com) with a .NET workload.<br> - The latest [.NET SDK](https://dotnet.microsoft.com/download). |
+| **NuGet.org**      | - A free [NuGet.org account](/nuget/nuget-org/individual-accounts#add-a-new-individual-account) | 
 
 ## Create a project
 
-You can use your own .NET project to build and generate a NuGet package, or create a new basic .NET class library as follows:
+You can use an existing .NET project to build and generate a NuGet package, or create a new class library project for this tutorial:
 
-1. In Visual Studio, select **File**, **New**, then **Project**.
-1. Select the **Class Library (.NET Standard)** template and select **Next**.
-1. Name your project and your solution then select a location to save the project locally. Select **Create** when you are done.
+1. In Visual Studio, select **File** > **New** > **Project**.
+
+1. Select the **Class Library** template, and then select **Next**.
+
+1. Enter a name for your project and solution, choose a local folder, and then select **Next**.
+
+1. Select your **Framework**, and then select **Create** when you're ready.
     
-    :::image type="content" source="media/class-library-project.png" alt-text="Create a class library project":::
-
-The template class library is sufficient to create a NuGet package so for this tutorial we will use the existing template and we won't be writing any additional code.
+The default class library template is sufficient to create a NuGet package, so this tutorial uses the generated project without making any code changes.
 
 ## Set up and generate a package
 
-1. Select your project from the solution explorer, right-click and select **properties** then **Package**.
+1. In **Solution Explorer**, right-click your project, and then select **Properties** > **Package**.
 
-1. Fill out the form and make sure that your **package id** is unique otherwise it may conflict with existing packages on NuGet.org. A common naming convention is something like: Company.Product.Feature. If you want to generate your package every time you build your project, select the **Generate NuGet package on build** checkbox.
+1. Enter your package details, and make sure your **Package id** is unique so it doesn't conflict with existing packages on NuGet.org. A common naming pattern is `Company.Product.Feature`. To generate the package each time you build the project, select **Generate NuGet package on build**.
 
-    :::image type="content" source="media/package-properties.png" alt-text="Configure package properties":::
-
-1. Select your project from the solution explorer, right-click then select **Pack** to generate your `.nupkg` package.
-
-    :::image type="content" source="media/pack-package.png" alt-text="Generate package":::
+1. In **Solution Explorer**, right-click your project, and then select **Pack** to generate the `.nupkg` file.
 
 1. Check the status of the pack command in the output window.
 
-    :::image type="content" source="media/pack-output.png" alt-text="Pack output":::
-
 ## Generate an API key
 
-Now that we created our `nupkg` package, we are almost ready to publish it, but first we need to generate an API key to connect to the NuGet.org API.
+Now that you created your `.nupkg` package, generate an API key so you can publish it to NuGet.org.
 
 1. Sign in to your [NuGet.org](https://www.nuget.org/users/account/LogOn?returnUrl=%2F) account or create one if you haven't.
 
-1. Select your user name icon then select **API Keys**.
+1. Select your user icon, and then select **API Keys**.
 
-1. Select **Create** then enter a name for your key. Give your key a **Push new packages and package version** scope, and enter `*` in the glob pattern field to select all packages. Select **Create** when you are done.
+1. Select **Create**, enter a name for the key, set the scope to **Push new packages and package versions**, and enter `*` in the glob pattern to allow all packages. When you're done, select **Create**.
 
-    :::image type="content" source="media/create-api-key.png" alt-text="Create API key":::
+    :::image type="content" source="media/create-api-key.png" alt-text="Screenshot of the NuGet.org Create API key page with scope and package pattern fields configured for package publishing.":::
 
-1. Select **Copy** and save your API key in a secure location. We will need this key to publish our NuGet package.
+1. Select **Copy**, and store the API key in a secure location. You use this key when you publish the package.
 
-    :::image type="content" source="media/api-key.png" alt-text="Copy API key":::
+    :::image type="content" source="media/api-key.png" alt-text="Screenshot of NuGet.org showing the generated API key and the Copy action used to save it securely.":::
 
 ## Publish a package to NuGet.org
 
-You can publish your package using the web UI, dotnet CLI, or nuget.exe CLI. We are going to focus on publishing packages by using the command line in this section. You will need the name of your package, an API key, and the source URL to do so.
+You can publish your package by using the NuGet.org web UI, the dotnet CLI, or nuget.exe. This tutorial uses the dotnet CLI. To publish, you need the package file name, your API key, and the NuGet.org source URL.
 
-### [dotnet CLI](#tab/dotnet/)
+1. In a command prompt window, go to the folder that contains your `.nupkg` file.
 
-1. In an elevated command prompt, navigate to the folder containing your `nupkg` package.
-
-1. Run the following command to publish your package to NuGet.org. Replace the placeholders with your package name and API key.
+1. Run the following command to publish the package to NuGet.org. Replace the placeholders with your package file name and API key.
 
     ```Command
     dotnet nuget push <packageName> --api-key <APIKey> --source https://api.nuget.org/v3/index.json
     ```
 
-1. The output of the previous command should look something like this.
+1. Check that the command output shows the package was pushed successfully.
 
-    :::image type="content" source="media/package-published.png" alt-text="Publish package output":::
+    :::image type="content" source="media/package-published.png" alt-text="Screenshot of command prompt output confirming the dotnet nuget push command successfully published the package.":::
 
-### [nuget.exe](#tab/nuget/)
+## Related content
 
-1. In an elevated command prompt, navigate to the folder containing your `nupkg` package.
+- [Publish packages to Azure Artifacts feeds](dotnet-exe.md)
 
-1. Run the following command to publish your package to NuGet.org. Replace the placeholders with your package name and API key.
+- [Restore packages from a feed](restore-nuget-packages-dotnet.md)
 
-    ```Command
-    nuget push <packageName> <APIKey> -Source https://api.nuget.org/v3/index.json
-    ```
-1. The output of the previous command should look something like this.
-
-    :::image type="content" source="media/package-published-nuget-exe.png" alt-text="Publish package output":::
-
----
-
-## Related articles
-
-- [Consume NuGet packages in Visual Studio](consume.md)
-- [Get started with NuGet packages and Azure Artifacts](../get-started-nuget.md)
-- [Publish NuGet packages with Azure Pipelines](../../pipelines/artifacts/nuget.md)
+- [Publish packages with Azure Pipelines](../../pipelines/artifacts/nuget.md)
