@@ -6,7 +6,7 @@ ms.subservice: azure-devops-analytics
 ms.custom: dashboards, engagement-fy23, copilot-scenario-highlight, awp-ai
 ms.author: chcomley
 author: chcomley
-ms.topic: conceptual
+ms.topic: article
 monikerRange: "<= azure-devops"
 ai-usage: ai-assisted
 ms.date: 03/23/2026
