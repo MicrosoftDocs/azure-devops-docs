@@ -36,6 +36,9 @@ To lock your project's dependencies, add the **RestorePackagesWithLockFile** pro
 </PropertyGroup>
 ```
 
+> [!NOTE]
+> If you use package lock files, consider specifying an exact .NET SDK version in a `global.json` file and setting `rollForward` to `disable`. This can help prevent locked restore failures when implicit dependencies vary across .NET SDK versions. For more information, see [.NET SDK global.json](/dotnet/core/tools/global-json).
+
 ## Cache NuGet packages
 
 To cache NuGet packages, define a pipeline variable that points to the location of the packages on the agent running the pipeline.
