@@ -37,7 +37,7 @@ To lock your project's dependencies, add the **RestorePackagesWithLockFile** pro
 ```
 
 > [!NOTE]
-> It's also recommended to pin the version of the .NET SDK that's used so the SDK version and dependency graph stay in lockstep. See [global.json](/dotnet/core/tools/global-json) and especially the `rollForward` section with the `disable` value [global.json rollForward Policy](/dotnet/core/tools/global-json#rollforward). For related issues when not pinning, see [ASP.NET Core GitHub issue](https://github.com/dotnet/aspnetcore/issues/65061) and [.NET Core SDK GitHub issue](https://github.com/dotnet/sdk/issues/48795)
+> If you use package lock files, consider specifying an exact .NET SDK version in a `global.json` file and setting `rollForward` to `disable`. This can help prevent locked restore failures when implicit dependencies vary across .NET SDK versions. For more information, see [.NET SDK global.json](/dotnet/core/tools/global-json).
 
 ## Cache NuGet packages
 
