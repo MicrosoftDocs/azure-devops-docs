@@ -77,7 +77,7 @@ CI triggers are supported in classic build pipelines for [GitHub Enterprise Serv
 * * *
 
 > [!IMPORTANT]
-> Paths in Git are case sensitive, including CI and PR trigger path filters.
+> Paths in Git are case-sensitive, including CI and PR trigger path filters.
 
 ## PR triggers
 
