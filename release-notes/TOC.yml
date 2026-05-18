@@ -10,6 +10,8 @@
       items:
         - name: "2026"
           items:
+          - name: May 21
+            href: 2026/sprint-274-update.md
           - name: May 5
             href: 2026/sprint-273-update.md
           - name: April 14
@@ -323,6 +325,8 @@
         items:
         - name: "2026"
           items:
+          - name: May 21
+            href: 2026/boards/sprint-274-update.md
           - name: May 5
             href: 2026/boards/sprint-273-update.md
           - name: April 14
@@ -1325,6 +1329,11 @@
         expanded: false
       - name: Wiki
         items:
+        - name: "2026"
+          items:
+          - name: May 21
+            href: 2026/wiki/sprint-274-update.md
+          expanded: false
         - name: "2025"
           items:
           expanded: false

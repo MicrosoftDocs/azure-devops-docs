@@ -38,6 +38,10 @@ You can also [view the build numbers for each version](#azure-devops-server-buil
         </tr>
     </thead>
 <tr>
+    <td rowspan="2"><a href="2026/sprint-274-update.md" data-raw-source="[21 May 2026](2026/sprint-274-update.md)">May 21 2026</a></td>
+    <td>Filter Sprint board and Sprint backlog by additional fields</td><td>Boards</td><td>Future</td></tr>
+    <td>Standard Mermaid syntax in Markdown editors</td><td>Wiki</td><td>Future</td></tr>
+<tr>
     <td rowspan="9"><a href="2026/sprint-273-update.md" data-raw-source="[5 May 2026](2026/sprint-273-update.md)">May 5 2026</a></td>
     <td>Latest version of Azure DevOps Data Migration Tool</td><td>General</td><td>Future</td></tr>
     <td>Deleted and disabled repositories no longer appear in security overview</td><td>GitHub Advanced Security for Azure DevOps</td><td>N/A</td></tr>
