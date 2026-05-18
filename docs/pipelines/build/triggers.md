@@ -10,14 +10,14 @@ monikerRange: '<= azure-devops'
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
-A pipeline trigger tells a pipeline when to run. A trigger can configure a pipeline to run based on a schedule, or in response to an event, such as the creation of a pull request. Azure Pipelines supports the following types of triggers.
+A pipeline trigger tells a pipeline when to run. You can configure a trigger to run a pipeline based on a schedule or in response to an event, such as the creation of a pull request. Azure Pipelines supports the following types of triggers:
 
-* Continuous integration triggers (CI triggers) run a pipeline when a push is made to a branch.
-* Pull request triggers (PR triggers) run a pipeline when a PR is raised or pushes are made to the source branch of an open PR. GitHub repositories support comment triggers that run a pipeline when comments are made on an open pull request.
+* Continuous integration triggers (CI triggers) run a pipeline when you push code to a branch.
+* Pull request triggers (PR triggers) run a pipeline when you raise a PR or push code to the source branch of an open PR. GitHub repositories support comment triggers that run a pipeline when you add comments on an open pull request.
 * Scheduled triggers run a pipeline on a predefined schedule.
 * Pipeline completion triggers run a pipeline when another pipeline completes.
 
-This article provides an overview of [YAML pipeline](../get-started/pipelines-get-started.md#define-pipelines-using-yaml) triggers and [classic build pipeline](../get-started/pipelines-get-started.md#define-pipelines-using-the-classic-interface) triggers. [Classic release pipelines](../release/index.md) have similar versions of the triggers described in the previous list and are covered in [Classic release pipeline triggers](../release/triggers.md).
+This article provides an overview of [YAML pipeline](../get-started/pipelines-get-started.md#define-pipelines-using-yaml) triggers and [classic build pipeline](../get-started/pipelines-get-started.md#define-pipelines-using-the-classic-interface) triggers. [Classic release pipelines](../release/index.md) have similar versions of the triggers described in the previous list. For more information, see [Classic release pipeline triggers](../release/triggers.md).
 
 <a name="ci"></a>
 ## CI triggers
@@ -33,13 +33,13 @@ trigger:
 
 :::moniker range=">azure-devops-2022"
 
-If not explicitly configured in your pipeline, CI triggers are enabled by default for all branches, unless [Disable implied CI trigger](../troubleshooting/troubleshoot-triggers.md#disable-implied-yaml-ci-trigger-setting-is-enabled) is set or [UI settings override YAML trigger](../troubleshooting/troubleshoot-triggers.md#ui-settings-override-yaml-trigger-setting).
+If you don't explicitly configure your pipeline, all branches have CI triggers enabled by default, unless [Disable implied CI trigger](../troubleshooting/troubleshoot-triggers.md#disable-implied-yaml-ci-trigger-setting-is-enabled) is set or [UI settings override YAML trigger](../troubleshooting/troubleshoot-triggers.md#ui-settings-override-yaml-trigger-setting).
 
 :::moniker-end
 
 :::moniker range="=azure-devops-2022"
 
-If not explicitly configured in your pipeline, CI triggers are enabled by default for all branches, unless [Disable implied CI trigger](../troubleshooting/troubleshoot-triggers.md#disable-implied-yaml-ci-trigger-setting-is-enabled) is set or [UI settings override YAML trigger](../troubleshooting/troubleshoot-triggers.md#ui-settings-override-yaml-trigger-setting).
+If you don't explicitly configure your pipeline, all branches have CI triggers enabled by default, unless [Disable implied CI trigger](../troubleshooting/troubleshoot-triggers.md#disable-implied-yaml-ci-trigger-setting-is-enabled) is set or [UI settings override YAML trigger](../troubleshooting/troubleshoot-triggers.md#ui-settings-override-yaml-trigger-setting).
 
 > [!NOTE]
 > **Disable implied CI trigger** is only available in Azure DevOps Server 2022.2 and higher. In Azure DevOps Server 2022 and 2022.1, CI triggers are enabled by default if not explicitly configured.
@@ -52,7 +52,7 @@ To disable CI triggers in your pipeline, use the following syntax.
 trigger: none
 ```
 
-CI triggers are supported in YAML pipelines for the following repository types. For specific information about using CI triggers with a specific repository type, see the following articles.
+YAML pipelines support CI triggers for the following repository types. For specific information about using CI triggers with a specific repository type, see the following articles.
 
 - [CI triggers in Azure Repos Git](../repos/azure-repos-git.md#ci-triggers)
 - [CI triggers in GitHub](../repos/github.md#ci-triggers)
@@ -72,7 +72,7 @@ For more information about using CI triggers with a specific repository type, se
 - [CI triggers in Bitbucket Cloud](../repos/bitbucket.md?tabs=classic#ci-triggers)
 - [CI triggers in TFVC](../repos/tfvc.md#ci-triggers)
 
-CI triggers are supported in classic build pipelines for [GitHub Enterprise Server](../repos/github-enterprise.md), [Bitbucket Server](../repos/on-premises-bitbucket.md), and [Subversion](../repos/subversion.md) repositories if the repositories are accessible to Azure Pipelines.
+Classic build pipelines support CI triggers for [GitHub Enterprise Server](../repos/github-enterprise.md), [Bitbucket Server](../repos/on-premises-bitbucket.md), and [Subversion](../repos/subversion.md) repositories if Azure Pipelines can access the repositories.
 
 * * *
 
@@ -90,7 +90,7 @@ pr:
 - main
 ```
 
-If not explicitly configured in your pipeline, PR triggers are enabled by default, unless [UI settings override YAML trigger](../troubleshooting/troubleshoot-triggers.md#ui-settings-override-yaml-trigger-setting), and pull requests to any branch trigger a pipeline run. To disable PR triggers in your pipeline, use the following syntax.
+If you don't explicitly configure PR triggers in your pipeline, they're enabled by default, unless [UI settings override YAML trigger](../troubleshooting/troubleshoot-triggers.md#ui-settings-override-yaml-trigger-setting). Pull requests to any branch trigger a pipeline run. To disable PR triggers in your pipeline, use the following syntax.
 
 ```yml
 pr: none
@@ -120,9 +120,9 @@ Comment triggers configure a pipeline to run when contributors make a pull reque
 
 #### [YAML](#tab/yaml/)
 
-Scheduled triggers run a pipeline on a predefined schedule. Scheduled triggers in YAML pipelines are supported by [all repository types that support YAML pipelines](../repos/index.md) (Azure Repos Git, GitHub, GitHub Enterprise Server, and Bitbucket Cloud).
+Scheduled triggers run a pipeline on a predefined schedule. [All repository types that support YAML pipelines](../repos/index.md) support scheduled triggers in YAML pipelines. These repository types include Azure Repos Git, GitHub, GitHub Enterprise Server, and Bitbucket Cloud.
 
-To define a scheduled trigger in YAML, use the `schedules` keyword and define your schedule using cron syntax. The following example configures a schedule that runs every day at midnight.
+To define a scheduled trigger in YAML, use the `schedules` keyword and define your schedule by using cron syntax. The following example configures a schedule that runs every day at midnight.
 
 ```yml
 # YAML file in the main branch
@@ -138,7 +138,7 @@ For more information and examples, see [Scheduled triggers](../process/scheduled
 
 #### [Classic build](#tab/classic-build/)
 
-Scheduled triggers run a pipeline on a predefined schedule. Scheduled triggers are supported by [all repository types](../repos/index.md) supported by Azure DevOps. For information and examples, see [Scheduled triggers](../process/scheduled-triggers.md?tabs=classic).
+Scheduled triggers run a pipeline on a predefined schedule. [All repository types](../repos/index.md) supported by Azure DevOps support scheduled triggers. For information and examples, see [Scheduled triggers](../process/scheduled-triggers.md?tabs=classic).
 
 * * *
 
@@ -148,7 +148,7 @@ Scheduled triggers run a pipeline on a predefined schedule. Scheduled triggers a
 
 #### [YAML](#tab/yaml/)
 
-Configure a pipeline resource trigger in your pipeline to start a pipeline run when the source pipeline completes a run.
+Set up a pipeline resource trigger in your pipeline to start a pipeline run when the source pipeline finishes a run.
 
 ```yml
 resources:
@@ -159,7 +159,7 @@ resources:
     trigger: true # Run this pipeline when any run of source-pipeline completes
 ```
 
-You can have multiple pipeline resources in your pipeline and can configure the trigger to run when any version of the source pipeline completes, or limit it to certain branches.
+You can add multiple pipeline resources in your pipeline. You can configure the trigger to run when any version of the source pipeline finishes, or limit it to certain branches.
 
 For more information and examples, see [Pipeline completion triggers](../process/pipeline-triggers.md).
 
@@ -167,7 +167,7 @@ For the full syntax and trigger options, see [resources.pipelines.pipeline defin
 
 #### [Classic build](#tab/classic-build/)
 
-Configure build completion triggers in the classic designer to have your pipeline run when another pipeline in the same project as yours completes. You can optionally download artifacts from the completed run. For more information, see [Build completion triggers (classic)](../process/pipeline-triggers-classic.md).
+Set up build completion triggers in the classic designer to run your pipeline when another pipeline in the same project finishes. You can optionally download artifacts from the completed run. For more information, see [Build completion triggers (classic)](../process/pipeline-triggers-classic.md).
 
 * * *
 
