@@ -97,12 +97,12 @@ Specify toolsets to restrict the tools available to the MCP server. Shouldn't be
 | Toolset value | Included tools |
 |---|---|
 | `all` *(default)* | All tools from every toolset |
-| `repos` | Repository and pull request tools (`repo_*`) |
-| `wit` | Work item tools (`wit_*`) and `search_workitem` |
-| `pipelines` | Pipeline and build tools (`pipelines_*`) |
-| `wiki` | Wiki tools (`wiki`, `wiki_upsert_page`) and `search_wiki` |
-| `work` | Iteration and capacity tools (`work_*`) |
-| `testplan` | Test plan tools (`testplan_*`) |
+| `repos` | Repository and pull request tools |
+| `wit` | Work item tools and `search_workitem` |
+| `pipelines` | Pipeline and build tools |
+| `wiki` | Wiki tools and `search_wiki` |
+| `work` | Iteration and capacity tools |
+| `testplan` | Test plan tools |
 
 ### Read-only tools
 
@@ -196,16 +196,18 @@ Core tools are always available.
 
 ### Work
 
-| Tool | Description | Read-only |
-|---|---|:---:|
-| `work_list_team_iterations` | List iterations for a team. | ✅ |
-| `work_list_iterations` | List all iterations in a project. | ✅ |
-| `work_get_team_capacity` | Get team capacity for an iteration. | ✅ |
-| `work_create_iterations` | Create iterations. | ❌ |
-| `work_assign_iterations` | Assign iterations to a team. | ❌ |
-| `work_update_team_capacity` | Update the team capacity of a team member for a specific iteration. | ❌ |
-| `work_get_team_settings` | Get team settings including default iteration, backlog iteration, and default area path. | ✅ |
-| `work_get_iteration_capacities` | Get an iteration's capacity for all teams in the iteration and project. | ✅ |
+The work tools are consolidated into grouped dispatchers using an `action` parameter.
+
+| Tool | Action | Description | Read-only |
+|---|---|---|:---:|
+| `work` | `list_iterations` | List all iterations in a project | ✅ |
+| `work` | `list_team_iterations` | List iterations assigned to a team | ✅ |
+| `work` | `get_team_settings` | Get team settings including default iteration, backlog iteration, and default area path | ✅ |
+| `work` | `get_team_capacity` | Get team capacity for an iteration | ✅ |
+| `work` | `get_iteration_capacities` | Get an iteration's capacity for all teams in the iteration and project | ✅ |
+| `work_iteration_write` | `create` | Create iterations | ❌ |
+| `work_iteration_write` | `assign` | Assign iterations to a team | ❌ |
+| `work_capacity_write` | `update` | Update the team capacity of a team member for a specific iteration | ❌ |
 
 ### Repos
 
