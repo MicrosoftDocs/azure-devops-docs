@@ -65,7 +65,7 @@ For information on the full YAML trigger syntax and options available for CI tri
 
 CI triggers run a pipeline when a push is made to a branch that meets the criteria defined by the trigger.
 
-For more information using CI triggers with a specific repository type, see the following articles.
+For more information about using CI triggers with a specific repository type, see the following articles.
 
 - [CI triggers in Azure Repos Git](../repos/azure-repos-git.md?tabs=classic#ci-triggers)
 - [CI triggers in GitHub](../repos/github.md?tabs=classic#ci-triggers)
