@@ -3,7 +3,9 @@
 .github/agents/
 !.github/agents/release-notes.agent.md
 .github/instructions/*
-.github/prompts/
+.github/prompts/*
+# Allow Visual Studio prompts
+!.github/prompts/update-whats-new.prompt.md
 .github/skills/
 .vscode/settings.json
 .vscode/mcp.json
