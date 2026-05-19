@@ -176,7 +176,6 @@ For more information, see our training module, [Get started with GitHub Copilot]
 Be aware of the following limitations when using GitHub Copilot with Azure Boards:
 
 - **Dependencies**: Handling dependencies between work items isn't supported. Each work item should be self-contained.
-- **Concurrent operations**: Managing multiple concurrent Copilot operations across different work items isn't supported. Complete one Copilot operation before starting another.
 - **Data sharing**: Only work item title, large text fields, comments, and the work item link are shared with GitHub Copilot.
 - **Complexity**: Overly complex or verbose work item descriptions might reduce Copilot's effectiveness.
 
