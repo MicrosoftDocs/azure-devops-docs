@@ -1,9 +1,9 @@
 ---
-title: Access Private Key Vaults from Your Pipeline
+title:  Access a private key vault from your pipeline
 description: Learn how to access a private key vault from your pipeline.
 ms.author: rabououn
 author: ramiMSFT
-ms.date: 05/02/2024
+ms.date: 05/17/2026
 ms.service: azure-devops-pipelines
 ms.topic: tutorial
 monikerRange: "<=azure-devops"
@@ -13,41 +13,40 @@ ms.custom: sfi-image-nochange
 
 # Access a private key vault from your pipeline
 
-Azure Key Vault offers a secure solution for managing credentials such as keys, secrets, and certificates with seamless security. With Azure Pipelines, you can streamline the process of accessing and using key vaults to store and retrieve credentials.
+Azure Key Vault provides a secure way to manage credentials, including keys, secrets, and certificates. With Azure Pipelines, you can streamline the process of accessing and using key vaults to store and retrieve credentials.
 
-In certain scenarios, organizations prioritize security by restricting access to key vaults exclusively to designated Azure virtual networks to ensure the highest level of security for critical applications.
-
-In this tutorial, you learn how to:
-
-> [!div class="checklist"]
->
-> - Create a service principal.
-> - Create a service connection.
-> - Configure your inbound access points.
-> - Query a private Azure key vault from your pipeline.
+In certain scenarios, organizations prioritize security by restricting access to key vaults exclusively to designated Azure virtual networks to ensure the highest level of security for critical applications. In this tutorial, you learn how to set up authentication and configure inbound access so your pipeline can query and retrieve data from a private Azure Key Vault.
 
 ## Prerequisites
 
-- An Azure DevOps organization and a project. Create an [organization](../../organizations/accounts/create-organization.md) or a [project](../../organizations/projects/create-project.md#create-a-project) if you haven't already.
-- An Azure subscription. [Create a free Azure account](https://azure.microsoft.com/free) if you don't have one already.
-- An Azure key vault. [Create a new Azure key vault](/azure/key-vault/general/quick-create-portal) if you don't have one already.
+| Product | Requirements   |
+|-------------|--------------------|
+| Azure DevOps | - An Azure DevOps [organization](../../organizations/accounts/create-organization.md).<br>- An Azure DevOps [project](../../organizations/projects/create-project.md).<br>   - Permissions:<br>      &nbsp;&nbsp;&nbsp;&nbsp;- To grant access to all pipelines in the project: You must be a member of the [Project Administrators group](../../organizations/security/change-project-level-permissions.md).<br>      &nbsp;&nbsp;&nbsp;&nbsp;- To create service connections: You must have the Administrator or Creator role for [service connections](../library/add-resource-protection.md). |
+| Azure | - An [Azure subscription](https://azure.microsoft.com/pricing/purchase-options/azure-account?cid=msft_learn).<br>- An [Azure key vault](/azure/key-vault/general/quick-create-portal). |
 
 ## Access a private key vault
 
 Developers can use Azure Pipelines to link an Azure key vault to a variable group and map selective vault secrets to it. A key vault that's used as a variable group can be accessed:
 
-- From Azure DevOps, during the variable group configuration time.
-- From a self-hosted agent, during the pipeline job runtime.
+- From Azure DevOps during variable group configuration.
+- From a self-hosted agent during pipeline job runtime.
 
 :::image type="content" source="media/access-private-key-vault.png" alt-text="Diagram that shows the two different paths to access a private key vault.":::
 
+
+To set up access to your private key vault, complete the following steps in order:
+
+1. Create a service principal to authenticate with Azure resources.
+1. Create an Azure Resource Manager service connection in Azure DevOps using the service principal.
+1. Create a federated credential for your service principal in Azure.
+
 ## Create a service principal
 
-Start by creating a new service principal so that you can access Azure resources. Next, you need to create a new Azure Resource Manager service connection in Azure DevOps. Then you set up a federated credential for your service principal in Azure before you verify and save your service connection in Azure DevOps.
+Create a service principal to authenticate with Azure resources:
 
 1. Go to the [Azure portal](https://ms.portal.azure.com/).
 
-1. On the service menu, open **Azure Cloud Shell**, and then select **Bash**.
+1. On the top menu, open **Azure Cloud Shell**, and then select **Bash**.
 
 1. Run the following command to create a new service principal:
 
@@ -55,11 +54,13 @@ Start by creating a new service principal so that you can access Azure resources
     az ad sp create-for-rbac --name YOUR_SERVICE_PRINCIPAL_NAME
     ```
 
-1. Make sure to copy the output because you use it to create the service connection in the next step.
+1. Copy the command output. You need these values in the next step when you create the service connection.
 
 ::: moniker range="azure-devops"
 
 ## Create a service connection
+
+With your service principal created, use its output values to create an Azure Resource Manager service connection in Azure DevOps.
 
 1. Sign in to your Azure DevOps organization, and then go to your project.
 
@@ -82,6 +83,8 @@ Start by creating a new service principal so that you can access Azure resources
     :::image type="content" source="media/automatic-service-connection-service-principal.png" alt-text="Screenshot that shows how to configure an Azure Resource Manager service connection for a service principal.":::
 
 ## Create a federated credential
+
+Now that your service connection is saved, configure a federated credential in Azure to establish trust between your service principal and Azure DevOps.
 
 1. Go to the [Azure portal](https://portal.azure.com/), enter your service principal's client ID in the search bar, and then select your application.
 
@@ -109,6 +112,8 @@ Start by creating a new service principal so that you can access Azure resources
 
 ## Create a service connection
 
+With your service principal created, use its output values to create an Azure Resource Manager service connection in Azure DevOps.
+
 1. Sign in to your Azure DevOps organization, and then go to your project.
 
 1. Select **Project settings** > **Service connections** > **New service connection**.
@@ -122,7 +127,7 @@ Start by creating a new service principal so that you can access Azure resources
 1. After successful verification, name your service connection, add a description, and then select the **Grant access permission to all pipelines** checkbox. Select **Verify and save**.
 
 > [!TIP]
-> If you can't verify your service principal connection, grant the service principal Reader access to your subscription.
+> If you can't verify your service principal connection, grant the service principal **Reader** access to your subscription.
 
 ::: moniker-end
 
@@ -130,9 +135,11 @@ Start by creating a new service principal so that you can access Azure resources
 
 ## Access a private key vault from Azure DevOps
 
-In this section, we explore two methods for accessing a private key vault from Azure DevOps. First, we use variable groups to link and map secrets from your key vault, followed by setting up inbound access by allowing static IP ranges. We establish inbound access because Azure Pipelines uses the posted Azure DevOps public IP when querying the Azure key vault from a variable group. By adding inbound connections to the key vault firewall, you can successfully connect to your Azure key vault.
+This section covers two methods for accessing a private key vault from Azure DevOps.
 
-For the second approach, we demonstrate dynamically adding the Microsoft-hosted agent IP address to your key vault's firewall allow list, querying the key vault, and later removing the IP after completion. This second approach is for demonstration purposes only. We don't recommend this approach for Azure Pipelines.
+The first method uses variable groups to link and map secrets from your key vault, followed by setting up inbound access by allowing static IP ranges. Azure Pipelines uses the Azure DevOps public IP when querying a key vault from a variable group, so you need to allow those IP ranges in the key vault firewall.
+
+The second method dynamically adds the Microsoft-hosted agent IP address to the key vault firewall allow list at the start of the pipeline, queries the key vault, and then finally removes the IP. This method is for demonstration purposes only and is not recommended for production use.
 
 ## Step 1: Map key vault secrets with a variable group
 
@@ -197,7 +204,7 @@ For the second approach, we demonstrate dynamically adding the Microsoft-hosted 
 
 ## Step 2: Configure inbound access from Azure DevOps
 
-To enable access to your key vault from Azure DevOps, you must grant access from specific static IP ranges. The geographical location of your Azure DevOps organization determines these ranges.
+With your variable group configured, allow inbound access from Azure DevOps to your key vault by adding the static IP ranges for your organization's geographical region.
 
 1. Sign in to your Azure DevOps organization.
 
@@ -216,7 +223,7 @@ To enable access to your key vault from Azure DevOps, you must grant access from
 
 ## Step 3: Query a private key vault with a variable group
 
-In this example, you use the variable group that was set up earlier and authorized with a service principal to query and copy your secret from your private Azure key vault by using the linked variable group. Azure Pipelines uses the posted public IP when it queries the Azure key vault from a variable group, so make sure that you [configured inbound access](#step-2-configure-inbound-access-from-azure-devops) for this action to work properly.
+With your variable group linked and inbound access configured, use the following pipeline to query your private key vault and copy the retrieved secret. Azure Pipelines uses its public IP to query the key vault from a variable group, so make sure you [configured inbound access](#step-2-configure-inbound-access-from-azure-devops) before running the pipeline.
 
 ```yml
 variables:
@@ -241,7 +248,7 @@ steps:
 
 ## Alternative method: Dynamically allow Microsoft-hosted agent IP
 
-In this second approach, you query the IP of the Microsoft-hosted agent at the beginning of your pipeline. Then, you add it to the key vault allow list. Proceed with the remaining tasks, and then remove the IP from the key vault's firewall allow list.
+In this approach, the pipeline queries the Microsoft-hosted agent IP at startup, adds it to the key vault firewall allow list, runs the key vault tasks, and then removes the IP before the pipeline finishes.
 
 > [!NOTE]
 > This approach is for demonstration purposes only. We don't recommend this approach for Azure Pipelines.
@@ -286,9 +293,9 @@ In this second approach, you query the IP of the Microsoft-hosted agent at the b
 
 ## Access a private key vault from a self-hosted agent
 
-To access a private key vault from an Azure Pipelines agent, you need to use either a self-hosted agent ([Windows](../agents/windows-agent.md), [Linux](../agents/linux-agent.md), or [Mac](../agents/osx-agent.md)) or [Virtual Machine Scale Sets agents](../agents/scale-set-agents.md). This requirement is because Microsoft hosted agents, like other generic compute services, aren't included in the key vault's list of [trusted services](/azure/key-vault/general/overview-vnet-service-endpoints#trusted-services).
+To access a private key vault from an Azure Pipelines agent, use either a self-hosted agent ([Windows](../agents/windows-agent.md), [Linux](../agents/linux-agent.md), or [Mac](../agents/osx-agent.md)) or [Virtual Machine Scale Sets agents](../agents/scale-set-agents.md). Microsoft-hosted agents, like other generic compute services, aren't included in the key vault list of [trusted services](/azure/key-vault/general/overview-vnet-service-endpoints#trusted-services).
 
-To establish connectivity with your private key vault, you must configure a private endpoint for your key vault to provide [line-of-sight](../agents/agents.md#communication-to-deploy-to-target-servers) connectivity. This endpoint must be routable and have its private Domain Name System name resolvable from the self-hosted pipeline agent.
+To establish connectivity to your private key vault, configure a private endpoint for [line-of-sight](../agents/agents.md#communication-to-deploy-to-target-servers) access. This endpoint must be routable, and its private DNS name must be resolvable from the self-hosted pipeline agent.
 
 ## Step 1: Configure inbound access from a self-hosted agent
 
@@ -320,6 +327,8 @@ To establish connectivity with your private key vault, you must configure a priv
 
 ## Step 2: Allow your virtual network
 
+With the private endpoint configured, allow the virtual network that hosts your self-hosted agent in the key vault firewall settings.
+
 1. Go to the [Azure portal](https://portal.azure.com/), and then find your Azure key vault.
 
 1. Select **Settings** > **Networking**, and make sure that you're on the **Firewalls and virtual networks** tab.
@@ -334,7 +343,7 @@ To establish connectivity with your private key vault, you must configure a priv
 
 ## Step 3: Query a private key vault from a self-hosted agent
 
-The following example uses an agent set up on the virtual network's virtual machine to query the private key vault through the variable group:
+With the virtual network allowed, use the following pipeline to query the private key vault through the linked variable group from a self-hosted agent:
 
 ```yml
 pool: Self-hosted-pool
@@ -359,7 +368,7 @@ steps:
     publishLocation: 'Container'
 ```
 
-If you don't want to grant Azure DevOps inbound access to your private key vault, you can use the [AzureKeyVault](/azure/devops/pipelines/tasks/reference/azure-key-vault-v2) task to query your key vault. You must ensure that you allow the virtual network that hosts your agent in your key vault firewall settings.
+If you don't want to grant Azure DevOps inbound access to your private key vault, use the [AzureKeyVault](/azure/devops/pipelines/tasks/reference/azure-key-vault-v2) task to query the key vault directly. In this case, make sure the virtual network that hosts your self-hosted agent is allowed in the key vault firewall settings.
 
 ```yml
 pool: Self-hosted-pool
