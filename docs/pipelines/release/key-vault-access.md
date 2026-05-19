@@ -13,7 +13,7 @@ ms.custom: sfi-image-nochange
 
 # Access a private key vault from your pipeline
 
-Azure Key Vault provides a secure way to manage credentials, including keys, secrets, and certificates. With Azure Pipelines, you can streamline the process of accessing and using key vaults to store and retrieve credentials.
+Azure Key Vault provides a secure way to manage credentials, including keys, secrets, and certificates. By using Azure Pipelines, you can streamline the process of accessing and using key vaults to store and retrieve credentials.
 
 In certain scenarios, organizations prioritize security by restricting access to key vaults exclusively to designated Azure virtual networks to ensure the highest level of security for critical applications. In this tutorial, you learn how to set up authentication and configure inbound access so your pipeline can query and retrieve data from a private Azure Key Vault.
 
