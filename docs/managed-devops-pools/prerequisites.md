@@ -119,6 +119,7 @@ Managed DevOps Pools uses [Azure Quotas](/azure/quotas/quotas-overview) to manag
 * `standardDPSv5Family`
 * `standardDSv2Family`
 * `standardDSv5Family`
+* `standardDsv6Family`
 * `standardDv2Family`
 * `standardEASv4Family`
 * `standardEDSv5Family`
