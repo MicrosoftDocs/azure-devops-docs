@@ -415,13 +415,19 @@ Next, create the Dockerfile.
         fi
     
         # If the agent has some running jobs, the configuration removal process will fail.
-        # So, give it some time to finish the job.
-        while true; do
+        # So, give it some time to finish the job. But only try max_attempts and then exit.
+        max_attempts=10
+        attempt=1
+        while [ $attempt -le $max_attempts ]; do
           ./config.sh remove --unattended --auth "PAT" --token $(cat "${AZP_TOKEN_FILE}") && break
 
-          echo "Retrying in 30 seconds..."
+          echo "Attempt $attempt failed. Retrying in 30 seconds..."
+          attempt=$((attempt+1))
           sleep 30
         done
+        if [ $attempt -gt $max_attempts ]; then
+           echo 1>&2 "warning: failed to remove agent configuration after $max_attempts attempts"
+        fi
       fi
     }
 
@@ -465,7 +471,7 @@ Next, create the Dockerfile.
 
     curl -LsS "${AZP_AGENT_PACKAGE_LATEST_URL}" | tar -xz & wait $!
 
-    source ./env.sh
+    . ./env.sh
 
     trap "cleanup; exit 0" EXIT
     trap "cleanup; exit 130" INT
