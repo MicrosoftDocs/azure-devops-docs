@@ -112,7 +112,7 @@ Now that your service connection is saved, configure a federated credential in A
 
 ## Create a service connection
 
-With your service principal created, use its output values to create an Azure Resource Manager service connection in Azure DevOps.
+After creating your service principal, use its output values to create an Azure Resource Manager service connection in Azure DevOps.
 
 1. Sign in to your Azure DevOps organization, and then go to your project.
 
