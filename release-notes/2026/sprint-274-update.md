@@ -1,14 +1,16 @@
 ---
-title: Filter Sprint Board and Sprint Backlog by Additional Fields
+title: Improved planning flexibility with enhanced Sprint board filtering
 author: gloridelmorales
 ms.author: glmorale
 ms.date: 5/21/2026
-description: Filter Sprint Board and Sprint Backlog by Additional Fields
+description: Improved planning flexibility with enhanced Sprint board filtering
 ---
 
-# Filter Sprint board and Sprint backlog by additional fields
+# Improved planning flexibility with enhanced Sprint board filtering
 
-Azure DevOps improvements in this sprint focus on more flexible filtering and broader Markdown compatibility. You can now filter the Sprint board and Sprint backlog by additional fields, including custom fields, bringing them in line with the filtering experience already available on the product backlog and Boards. Markdown editors across wiki, pull requests, and work items also now support the standard fenced ` ```mermaid ` code block syntax, making it easier to share Mermaid diagrams across Azure DevOps and other tools.
+In this sprint, you can now filter the Sprint board and Sprint backlog by additional fields, including custom fields, bringing them in line with the filtering experience already available on the product backlog and Boards. 
+
+In Azure Pipelines, we've added finer-grained control over comment requirements for PR validation runs from GitHub forks, a new stage index panel for faster navigation of complex CD pipelines, and the option to cancel paused runs when re-enabling a pipeline. 
 
 Check out the release notes for details.
 
