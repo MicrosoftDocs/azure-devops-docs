@@ -5,10 +5,11 @@ ms.date: 5/21/2026
 ms.topic: include
 ---
 
-### Filter Sprint board and Sprint backlog by additional fields
+### Filter sprint boards and backlogs by additional fields
 
-You can now filter the Sprint board and Sprint backlog by additional fields, including custom fields. This brings the Sprint experience in line with the filtering already available on the product backlog and Boards, so you can quickly narrow down work items by the fields that matter most to your team.
+Following the introduction of [additional filters for boards and backlogs](/azure/devops/release-notes/2026/sprint-272-update#filter-boards-and-backlogs-by-additional-fields), we've now completed a long-standing request from the developer community to extend this capability to sprint boards and sprint backlogs as well.
 
-Use the filter bar settings to choose which fields appear as filter options on the Sprint board and Sprint backlog, then filter by those fields the same way you filter today on other backlog and board views.
+Teams can now use additional fields, including custom fields, to filter sprint boards and backlogs, making it easier to find and focus on the right work during sprint planning and execution. This enhancement addresses a highly requested feature originally raised in the [Azure DevOps Developer Community](https://developercommunity.visualstudio.com/t/add-the-ability-to-filter-boards-by-custom-fields/606538).
 
-This feature addresses a long-standing [Developer Community](https://developercommunity.visualstudio.com/) suggestion with more than 600 customer votes.
+> [!div class="mx-imgBorder"]
+> ![Filter sprint boards and backlogs by additional fields](../../media/274-boards-sprint-filters.png)

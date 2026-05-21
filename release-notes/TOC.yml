@@ -631,6 +631,8 @@
         items:
         - name: "2026"
           items:
+          - name: May 21
+            href: 2026/pipelines/sprint-274-update.md
           - name: May 5
             href: 2026/pipelines/sprint-273-update.md
           - name: April 14

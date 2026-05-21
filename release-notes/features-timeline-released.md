@@ -2,7 +2,7 @@
 title: Azure DevOps Released Features
 author: gloridelmorales
 ms.author: glmorale
-ms.date: 5/5/2026
+ms.date: 5/21/2026
 ms.topic: release-notes
 ms.service: azure-devops
 ms.subservice: azure-devops-release-notes
@@ -38,8 +38,11 @@ You can also [view the build numbers for each version](#azure-devops-server-buil
         </tr>
     </thead>
 <tr>
-    <td rowspan="2"><a href="2026/sprint-274-update.md" data-raw-source="[21 May 2026](2026/sprint-274-update.md)">May 21 2026</a></td>
-    <td>Filter Sprint board and Sprint backlog by additional fields</td><td>Boards</td><td>Future</td></tr>
+    <td rowspan="5"><a href="2026/sprint-274-update.md" data-raw-source="[21 May 2026](2026/sprint-274-update.md)">May 21 2026</a></td>
+    <td>Filter sprint boards and backlogs by additional fields</td><td>Boards</td><td>Future</td></tr>
+    <td>Finer-grained comment requirement for running PR validation runs from GitHub repositories</td><td>Pipelines</td><td>Future</td></tr>
+    <td>Faster pipeline stage navigation</td><td>Pipelines</td><td>Future</td></tr>
+    <td>Enable pipeline and cancel paused runs</td><td>Pipelines</td><td>Future</td></tr>
     <td>Standard Mermaid syntax in Markdown editors</td><td>Wiki</td><td>Future</td></tr>
 <tr>
     <td rowspan="9"><a href="2026/sprint-273-update.md" data-raw-source="[5 May 2026](2026/sprint-273-update.md)">May 5 2026</a></td>

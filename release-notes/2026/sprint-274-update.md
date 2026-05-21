@@ -15,11 +15,17 @@ Check out the release notes for details.
 ### Azure Boards
 [!INCLUDE [sprint-274-update-links](includes/boards/sprint-274-update-links.md)]
 
+### Azure Pipelines
+[!INCLUDE [sprint-274-update-links](includes/pipelines/sprint-274-update-links.md)]
+
 ### Wiki
 [!INCLUDE [sprint-274-update-links](includes/wiki/sprint-274-update-links.md)]
 
 ## Azure Boards
 [!INCLUDE [sprint-274-update](includes/boards/sprint-274-update.md)]
+
+## Azure Pipelines
+[!INCLUDE [sprint-274-update](includes/pipelines/sprint-274-update.md)]
 
 ## Wiki
 [!INCLUDE [sprint-274-update](includes/wiki/sprint-274-update.md)]
