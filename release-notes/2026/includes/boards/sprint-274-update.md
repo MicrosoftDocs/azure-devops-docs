@@ -12,4 +12,4 @@ Following the introduction of [additional filters for boards and backlogs](/azur
 Teams can now use additional fields, including custom fields, to filter sprint boards and backlogs, making it easier to find and focus on the right work during sprint planning and execution. This enhancement addresses a highly requested feature originally raised in the [Azure DevOps Developer Community](https://developercommunity.visualstudio.com/t/add-the-ability-to-filter-boards-by-custom-fields/606538).
 
 > [!div class="mx-imgBorder"]
-> ![Filter sprint boards and backlogs by additional fields](../../media/274-boards-sprint-filters.png)
+> ![Filter sprint boards and backlogs by additional fields](../../media/274-boards-01.png)
