@@ -15,7 +15,7 @@ ms.custom: sfi-image-nochange
 
 Azure Key Vault provides a secure way to manage credentials, including keys, secrets, and certificates. By using Azure Pipelines, you can streamline the process of accessing and using key vaults to store and retrieve credentials.
 
-In certain scenarios, organizations prioritize security by restricting access to key vaults exclusively to designated Azure virtual networks to ensure the highest level of security for critical applications. In this tutorial, you learn how to set up authentication and configure inbound access so your pipeline can query and retrieve data from a private Azure Key Vault.
+In certain scenarios, organizations prioritize security by restricting access to key vaults exclusively to designated Azure virtual networks. This restriction ensures the highest level of security for critical applications. In this tutorial, you learn how to set up authentication and configure inbound access so your pipeline can query and retrieve data from a private Azure Key Vault.
 
 ## Prerequisites
 
@@ -204,7 +204,7 @@ The second method dynamically adds the Microsoft-hosted agent IP address to the 
 
 ## Step 2: Configure inbound access from Azure DevOps
 
-With your variable group configured, allow inbound access from Azure DevOps to your key vault by adding the static IP ranges for your organization's geographical region.
+After you configure your variable group, allow inbound access from Azure DevOps to your key vault by adding the static IP ranges for your organization's geographical region.
 
 1. Sign in to your Azure DevOps organization.
 
