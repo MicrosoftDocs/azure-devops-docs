@@ -84,7 +84,7 @@ With your service principal created, use its output values to create an Azure Re
 
 ## Create a federated credential
 
-Now that your service connection is saved, configure a federated credential in Azure to establish trust between your service principal and Azure DevOps.
+After you save your service connection, configure a federated credential in Azure to establish trust between your service principal and Azure DevOps.
 
 1. Go to the [Azure portal](https://portal.azure.com/), enter your service principal's client ID in the search bar, and then select your application.
 
