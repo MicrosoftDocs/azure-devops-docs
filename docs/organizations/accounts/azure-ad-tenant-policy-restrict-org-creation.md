@@ -50,7 +50,7 @@ After you enable the policy, you can manage which users and groups are allowed t
 > [!WARNING]
 > We recommend using groups with your tenant policy allowlist. If you use a named user, a reference to the named user's identity resides in the United States, Europe (EU), and Southeast Asia (Singapore).
 
-Users or groups on the allowlist can create organizations when you enable the **Restrict organization creation** policy. All other users, except for Azure DevOps administrators, are blocked unless they're on this list.
+When you enable the **Restrict organization creation** policy, users or groups on the allowlist can create organizations. All other users, except for Azure DevOps administrators, are blocked unless they're on this list.
 
 To add a user or group to the allowlist:
 
