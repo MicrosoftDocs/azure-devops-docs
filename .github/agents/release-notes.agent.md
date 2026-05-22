@@ -1,7 +1,7 @@
 ---
 description: "Generate and update Azure DevOps sprint release notes. Use when: creating release notes, sprint release notes, pull ADO work items for release notes, generate sprint update files, add feature to sprint, remove feature, refresh content from ADO, change sprint date."
 name: Release Notes
-tools: [read, edit, search, execute, todo]
+tools: [execute/runNotebookCell, execute/getTerminalOutput, execute/killTerminal, execute/sendToTerminal, execute/createAndRunTask, execute/runInTerminal, read/getNotebookSummary, read/problems, read/readFile, read/viewImage, read/terminalSelection, read/terminalLastCommand, edit/createDirectory, edit/createFile, edit/createJupyterNotebook, edit/editFiles, edit/editNotebook, edit/rename, search/changes, search/codebase, search/fileSearch, search/listDirectory, search/textSearch, search/usages, azure-mcp/search, com.microsoft/azure/search, ado/wit_get_query_results_by_id, ado/wit_get_work_item, todo]
 argument-hint: "Provide the ADO query path or ID, sprint number, year, and sprint title. Optionally include the release date for TOC and released timeline updates."
 ---
 
