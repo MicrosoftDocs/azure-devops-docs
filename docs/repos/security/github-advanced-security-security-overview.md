@@ -14,13 +14,13 @@ ms.date: 04/14/2026
 
 #  Security overview 
 
-Security overview provides a single pane of glass to view a summary of your organization's security risk and Advanced Security enablement status. All organizations, regardless of if they have an Advanced Security-enabled repository or not, are able to see the security overview tab in their organization settings.
+Security overview provides a single pane of glass to view a summary of your organization's security risk and Advanced Security enablement status. All organizations, regardless of whether they have an Advanced Security-enabled repository, can see the security overview tab in their organization settings.
 
 [!INCLUDE [GitHub Advanced Security for Azure DevOps is different from GitHub Advanced Security.](includes/github-advanced-security.md)]
 
 ## About security overview
 
-Security overview is available to view for all members of the organization who have access to view organization settings. Security overview includes three tabs:
+All members of the organization who have access to view organization settings can view the security overview. The security overview includes three tabs:
 
 - **Risk** — shows the distribution of total alerts and of alerts by severity across all projects and repositories with Advanced Security enabled.
 - **Coverage** — shows the enablement status of Advanced Security features across all repositories in your organization.
@@ -28,7 +28,7 @@ Security overview is available to view for all members of the organization who h
 
 ## Risk tab
 
-To access the security overview for your organization, navigate to **Organization settings > Security overview**. The default view is of the **Risk** tab, which shows a summary of security alerts across your organization.
+To access the security overview for your organization, go to **Organization settings > Security overview**. The default view is the **Risk** tab, which shows a summary of security alerts across your organization.
 
 In the **Risk** view, only repositories with Advanced Security enabled appear. The reported alert counts are only for alerts discovered on the default branch for each repository. Disabled and deleted repositories are automatically excluded from results.
 
@@ -40,7 +40,7 @@ You can export results from the Risk tab to a CSV file for offline analysis or r
 
 ## Coverage tab
 
-Under the **Coverage** tab, security overview shows all repositories in your enterprise, regardless of their enablement status. Disabled and deleted repositories are automatically excluded from results. For any repositories that have Advanced Security enabled, a breakdown of each tool is also included:
+Under the **Coverage** tab, the security overview shows all repositories in your enterprise, regardless of their enablement status. The results automatically exclude disabled and deleted repositories. For any repositories that have Advanced Security enabled, the overview includes a breakdown of each tool:
 
 :::image type="content" source="media/security-overview-coverage.png" lightbox="media/security-overview-coverage.png" alt-text="Screenshot of Coverage tab in security overview for an organization.":::
 
@@ -56,29 +56,29 @@ The **Alerts** tab gives you a combined view of individual security alerts acros
 
 ### Filtering and search
 
-The Alerts tab supports filtering by:
+The **Alerts** tab supports filtering by:
 
-- **Tool** — filter by alert source (code scanning, dependency scanning, or secret scanning).
-- **Severity** — filter by alert severity level (critical, high, medium, or low).
-- **State** — filter by alert state (open, dismissed, or fixed).
+- **Tool** — filter by alert source, such as code scanning, dependency scanning, or secret scanning.
+- **Severity** — filter by alert severity level, such as critical, high, medium, or low.
+- **State** — filter by alert state, such as open, dismissed, or fixed.
 - **Project** — filter by Azure DevOps project.
 - **Repository** — filter by specific repository.
 - **Time-bound** — filter alerts by when they were introduced.
 
-Once you've selected a specific tool, specific filters will be available. For secrets, this includes validity and secret type. For dependencies, this includes package and ecosystem. For code, this includes tool and rule.
+When you select a specific tool, you see specific filters. For secrets, these filters include validity and secret type. For dependencies, these filters include package and ecosystem. For code, these filters include tool and rule.
 
 :::image type="content" source="media/advanced-security-security-overview-alerts.png" lightbox="media/advanced-security-security-overview-alerts.png" alt-text="Screenshot of enabling Alerts page in the security overview tab.":::
 
 
 ### Export
 
-You can export up to the first 1,000 alerts from the Alerts tab to a CSV file for offline analysis, reporting, or integration with other tools. The export respects your currently applied filters.
+You can export up to the first 1,000 alerts from the **Alerts** tab to a CSV file for offline analysis, reporting, or integration with other tools. The export respects your currently applied filters.
 
 ### Security campaigns
 
-Security campaigns let you create and share filtered views of alerts to coordinate remediation efforts across teams. Use filters to focus on specific vulnerability types, severity levels, or repositories, then share the campaign view with your team using the URL.
+Security campaigns let you create and share filtered views of alerts to coordinate remediation efforts across teams. Use filters to focus on specific vulnerability types, severity levels, or repositories, and then share the campaign view with your team by using the URL.
 
-Filters are applied as URL parameters, making it easy to share a specific filtered view with colleagues by copying the URL. 
+The page applies filters as URL parameters. You can easily share a specific filtered view with your team by copying the URL.
 
 :::image type="content" source="media/advanced-security-security-overview-alerts-filters.png" lightbox="media/advanced-security-security-overview-alerts-filters.png" alt-text="Screenshot of enabling Alerts page in the security overview tab.":::
 
