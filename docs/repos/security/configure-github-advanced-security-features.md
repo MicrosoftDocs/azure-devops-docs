@@ -139,7 +139,7 @@ Secret scanning push protection and repository scanning are automatically enable
 
 :::image type="content" source="media/secret-scanning-push-protection.png" lightbox="media/secret-scanning-push-protection.png" alt-text="Screenshot of enabling push protection.":::
 
-Repository-level secret scanning is automatically kicked off upon enabling Advanced Security for a selected repository. 
+When you turn on Advanced Security for a selected repository, it automatically starts repository-level secret scanning. 
 :::zone-end
 
 :::zone pivot="standalone-ghazdo"
@@ -147,10 +147,10 @@ Secret scanning push protection and repository scanning are automatically enable
 
 :::image type="content" source="media/adv-sec-repository-settings-secret-protection-options.png" lightbox="media/adv-sec-repository-settings-secret-protection-options.png" alt-text="Screenshot of enabling push protection.":::
 
-Repository-level secret scanning is automatically kicked off upon enabling Secret Protection for a selected repository. 
+When you turn on Secret Protection for a selected repository, it automatically starts repository-level secret scanning. 
 :::zone-end 
 
-Push protection only evaluates pushes that occur after the feature is enabled. Repository-level secret scanning will detect and alert on existing secrets, including from historical commits.
+Push protection only evaluates pushes that occur after the feature is enabled. Repository-level secret scanning detects and alerts on existing secrets, including those from historical commits.
 
 ## Set up dependency scanning
 
