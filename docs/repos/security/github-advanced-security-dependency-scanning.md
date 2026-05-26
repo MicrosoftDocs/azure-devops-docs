@@ -34,7 +34,11 @@ For every vulnerable component detected in use, the component and vulnerability 
 
 The build log also contains basic information about each detected vulnerability. These details include the severity, the affected component, the title of the vulnerability, and the associated CVE.  
 
-![Screenshot of a dependency scanning build output](./media/dependency-scanning-build-log.png) 
+![Screenshot of a dependency scanning build output](./media/dependency-scanning-build-log.png)  
+
+> [!NOTE]
+> Dependency scanning requires running a pipeline configured with the `AdvancedSecurity-Dependency-Scanning@1` task or running a pipeline in a repository with dependency scanning default setup enabled.
+> Enabling Advanced Security or Code Security doesn't execute dependency scanning automatically.
 
 For a list of supported component ecosystems and versions, see [Supported package ecosystems](./github-advanced-security-dependency-scanning-ecosystems.md).
 
