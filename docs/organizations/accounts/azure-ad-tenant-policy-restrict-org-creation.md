@@ -33,7 +33,7 @@ To turn on the policy that restricts users from creating new organizations, foll
 
 1. Sign in to your organization (`https://dev.azure.com/{Your_Organization}`).
 
-2. Select :::image type="content" source="../../media/icons/gear-icon.png" alt-text="Screenshot shows the gear icon."::: **Organization settings**.
+1. Select :::image type="content" source="../../media/icons/gear-icon.png" alt-text="Screenshot shows the gear icon."::: **Organization settings**.
 
     :::image type="content" source="../../media/settings/open-admin-settings-vert.png" alt-text="Screenshot showing highlighted Organization settings button.":::
 
