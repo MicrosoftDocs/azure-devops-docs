@@ -50,8 +50,6 @@ Hovering on a specific repository and selecting the cog icon directs you to that
 
 You can export results from the Coverage tab to a CSV file.
 
-:::image type="content" source="media/enable-github-advanced-security.png" lightbox="media/enable-github-advanced-security.png" alt-text="Screenshot of enabling GitHub Advanced Security.":::
-
 ## Alerts tab
 
 The **Alerts** tab gives you a combined view of individual security alerts across all repositories in your organization. Instead of navigating to each repository individually, you can search, filter, and prioritize alerts from one centralized dashboard.
@@ -65,11 +63,12 @@ The Alerts tab supports filtering by:
 - **State** — filter by alert state (open, dismissed, or fixed).
 - **Project** — filter by Azure DevOps project.
 - **Repository** — filter by specific repository.
-- **Rule** — filter by the specific detection rule that generated the alert.
-- **Confidence** — for secret scanning alerts, filter by confidence level (high or other). The "All" filter shows all secret alerts at once without having to cycle through individual confidence levels.
 - **Time-bound** — filter alerts by when they were introduced.
 
-Filters are applied as URL parameters, making it easy to share a specific filtered view with colleagues by copying the URL.
+Once you've selected a specific tool, specific filters will be available. For secrets, this includes validity and secret type. For dependencies, this includes package and ecosystem. For code, this includes tool and rule.
+
+:::image type="content" source="media/advanced-security-security-overview-alerts.png" lightbox="media/advanced-security-security-overview-alerts.png" alt-text="Screenshot of enabling Alerts page in the security overview tab.":::
+
 
 ### Export
 
@@ -78,6 +77,10 @@ You can export up to the first 1,000 alerts from the Alerts tab to a CSV file fo
 ### Security campaigns
 
 Security campaigns let you create and share filtered views of alerts to coordinate remediation efforts across teams. Use filters to focus on specific vulnerability types, severity levels, or repositories, then share the campaign view with your team using the URL.
+
+Filters are applied as URL parameters, making it easy to share a specific filtered view with colleagues by copying the URL. 
+
+:::image type="content" source="media/advanced-security-security-overview-alerts-filters.png" lightbox="media/advanced-security-security-overview-alerts-filters.png" alt-text="Screenshot of enabling Alerts page in the security overview tab.":::
 
 Campaigns are useful for:
 
