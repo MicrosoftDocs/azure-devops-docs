@@ -33,9 +33,9 @@ To turn on the policy that restricts users from creating new organizations, foll
 
 1. Sign in to your organization (`https://dev.azure.com/{Your_Organization}`).
 
-2. Select ![gear icon](../../media/icons/gear-icon.png) **Organization settings**.
+2. Select :::image type="content" source="../../media/icons/gear-icon.png" alt-text="Screenshot shows the gear icon."::: **Organization settings**.
 
-    ![Screenshot showing highlighted Organization settings button.](../../media/settings/open-admin-settings-vert.png)
+    :::image type="content" source="../../media/settings/open-admin-settings-vert.png" alt-text="Screenshot showing highlighted Organization settings button.":::
 
 3. Select **Microsoft Entra ID**, and then switch the toggle to turn on the policy, restricting organization creation.
 
@@ -68,11 +68,11 @@ You can change the error message that users see when they're blocked from creati
 2. Select **Edit display message**.
 3. Enter your customized message, and then select **Save**.
 
-   ![Screenshot shows Customize error message dialog.](media/azure-ad-tenant-policy/display-error-message-dialog.png)
+   :::image type="content" source="media/azure-ad-tenant-policy/display-error-message-dialog.png" alt-text="Screenshot shows Customize error message dialog.":::
 
 The following image shows an example of a customized error message.
 
-![Screenshot shows customized error message.](media/azure-ad-tenant-policy/error-message-example-ui.png)
+:::image type="content" source="media/azure-ad-tenant-policy/error-message-example-ui.png" alt-text="Screenshot shows customized error message.":::
 
 ## Related content
 
