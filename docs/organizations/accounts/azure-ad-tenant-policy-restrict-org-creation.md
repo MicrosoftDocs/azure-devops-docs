@@ -1,7 +1,7 @@
 ---
 title: Restrict organization creation
 titleSuffix: Azure DevOps Services
-description: Restrict who can create Azure DevOps organizations by enabling the Microsoft Entra tenant policy and managing the allowlist.
+description: Restrict who can create Azure DevOps organizations by enabling the Microsoft Entra tenant policy and managing the allow list.
 ms.subservice: azure-devops-organizations
 ai-usage: ai-assisted
 ms.topic: how-to
@@ -16,7 +16,7 @@ ms.custom: sfi-image-nochange, awp-ai
 
 [!INCLUDE [version-eq-azure-devops](../../includes/version-eq-azure-devops.md)]
 
-By default, any user in a Microsoft Entra tenant can create new Azure DevOps organizations. You can enable the **Restrict organization creation** policy to control this behavior. When you turn on this policy, only users and groups on the allowlist can create organizations. All other users, except for Azure DevOps administrators, are blocked unless explicitly added to the allowlist.
+By default, any user in a Microsoft Entra tenant can create new Azure DevOps organizations. You can enable the **Restrict organization creation** policy to control this behavior. When you turn on this policy, only users and groups on the allow list can create organizations. All other users, except for Azure DevOps administrators, are blocked unless explicitly added to the allow list.
 
 > [!NOTE]
 > This policy only affects the creation of new organizations. It doesn't change access to existing organizations or affect their settings.
@@ -41,18 +41,18 @@ To turn on the policy that restricts users from creating new organizations, foll
 
    :::image type="content" source="media/azure-ad-tenant-policy/restrict-organization-creation-toggle.png" alt-text="Screenshot shows highlighted toggle for Restrict organization creation.":::
 
-## Configure the allowlist and error message
+## Configure the allow list and error message
 
 After you enable the policy, you can manage which users and groups are allowed to create organizations, and customize the error message that blocked users see.
 
-### Add users or groups to the allowlist
+### Add users or groups to the allow list
 
 > [!WARNING]
-> We recommend using groups with your tenant policy allowlist. If you use a named user, a reference to the named user's identity resides in the United States, Europe (EU), and Southeast Asia (Singapore).
+> We recommend using groups with your tenant policy allow list. If you use a named user, a reference to the named user's identity resides in the United States, Europe (EU), and Southeast Asia (Singapore).
 
-When you enable the **Restrict organization creation** policy, users or groups on the allowlist can create organizations. All other users, except for Azure DevOps administrators, are blocked unless they're on this list.
+When you enable the **Restrict organization creation** policy, users or groups on the allow list can create organizations. All other users, except for Azure DevOps administrators, are blocked unless they're on this list.
 
-To add a user or group to the allowlist:
+To add a user or group to the allow list:
 
 1. Go to **Organization settings** > **Microsoft Entra ID**.
 2. Under **Allow list**, select **Add Microsoft Entra user or group**.
