@@ -409,7 +409,7 @@ Select **Azure Compute Gallery images** to specify an image from any gallery ava
 >
 > Managed DevOps Pools doesn't support Azure Compute Gallery images that you create by using a paid base image. If you receive an error like "Image Base is not supported, since it's a paid image. Please provide a different image that is free," select a different Azure Compute Gallery image based on a VM that you create by using a [free pricing plan](/marketplace/purchase-vm-in-azure-portal#purchase-a-vm-using-the-marketplace-experience) for the base image.
 >
-> If you're using **v6** and **v7** Azure VM [agent sizes](./configure-pool-settings.md#agent-size), the Azure Compute Gallery image must have the `DiskControllerType` setting set to `DiskControllerTypes="SCSI,NVMe"`, or you'll get an `SkuNotCompatibleWithImageDiskControllerType` error.
+> If you're using **v6** and **v7** Azure VM [agent sizes](./configure-pool-settings.md#agent-size), the Azure Compute Gallery image must have the `DiskControllerType` [image definition setting](/azure/virtual-machines/shared-image-galleries#image-definitions) set to `DiskControllerTypes="SCSI,NVMe"`, or you'll get an `SkuNotCompatibleWithImageDiskControllerType` error.
 
 #### [Azure portal](#tab/azure-portal/)
 
