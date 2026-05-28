@@ -1,7 +1,7 @@
 ---
 title: Configure images
 description: Learn how to configure agent images for Managed DevOps Pools.
-ms.date: 04/02/2026
+ms.date: 05/28/2026
 ms.topic: how-to
 ---
 
@@ -258,6 +258,11 @@ The lifecycle of Azure Pipelines images offered in Managed DevOps Pools follows 
 
 For more information on Managed DevOps Pools images lifecycle, see [Image lifecycle](#image-lifecycle).
 
+> [!IMPORTANT]
+> Azure Pipelines images are currently not supported with **v6** and **v7** Azure VM [agent sizes](./configure-pool-settings.md#agent-size). For example, if you choose `Standard D2as v6` with an Azure Pipelines image, you'll get an error like `SkuNotCompatibleWithImageDiskControllerType: Incompatible DiskControllerType between Image(s) MMSWindows2025-g2 and Pool SKU Standard_D2as_v6. Select a different image or sku for pool mdp-11-21-2025.`.
+>
+> To resolve this issue, choose a different agent size that isn't **v6** or **v7**.
+
 #### [Azure portal](#tab/azure-portal/)
 
 To specify an Azure Pipelines image, choose it from the list.
@@ -403,6 +408,8 @@ Select **Azure Compute Gallery images** to specify an image from any gallery ava
 > Managed DevOps Pools supports only [generalized](/azure/virtual-machines/generalize) Azure Compute Gallery images.
 >
 > Managed DevOps Pools doesn't support Azure Compute Gallery images that you create by using a paid base image. If you receive an error like "Image Base is not supported, since it's a paid image. Please provide a different image that is free," select a different Azure Compute Gallery image based on a VM that you create by using a [free pricing plan](/marketplace/purchase-vm-in-azure-portal#purchase-a-vm-using-the-marketplace-experience) for the base image.
+>
+> If you're using **v6** and **v7** Azure VM [agent sizes](./configure-pool-settings.md#agent-size), the Azure Compute Gallery image must have the `DiskControllerType` setting set to `DiskControllerTypes="SCSI,NVMe"`, or you'll get an `SkuNotCompatibleWithImageDiskControllerType` error.
 
 #### [Azure portal](#tab/azure-portal/)
 
