@@ -310,7 +310,7 @@ You can also use a self-hosted agent that includes the exact versions of softwar
 
 ### What if I need a bigger machine with more processing power, memory, or disk space?
 
-We can't increase the memory, processing power, or disk space for Microsoft-hosted agents, but you can use [self-hosted agents](agents.md#install) or [scale set agents](scale-set-agents.md) or [Managed DevOps Pools](../../managed-devops-pools/overview.md#usage-scenarios) hosted on machines with your desired specifications.
+We can't increase the memory, processing power, or disk space for Microsoft-hosted agents, but you can use [Github-hosted agents](github-hosted.md), [self-hosted agents](agents.md#install), [scale set agents](scale-set-agents.md), or [Managed DevOps Pools](../../managed-devops-pools/overview.md#usage-scenarios) hosted on machines with your desired specifications.
 
 ### I can't select a Microsoft-hosted agent and I can't queue my build or deployment. What should I do?
 

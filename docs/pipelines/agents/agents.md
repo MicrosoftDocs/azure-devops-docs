@@ -20,6 +20,7 @@ Azure Pipelines provides several different types of agents.
 | Agent type | Description | Availability |
 |------------|-------------|--------------|
 | [Microsoft-hosted agents](#microsoft-hosted-agents) | Agents hosted and managed by Microsoft. | Azure DevOps Services |
+| [GitHub-hosted agents](#github-hosted-agents) | Agents hosted and managed by Microsoft that run on GitHub-hosted infrastructure with pay-as-you-go billing. | Azure DevOps Services |
 | [Self-hosted agents](#install) | Agents that you configure and manage that are hosted on your virtual machines (VMs). | Azure DevOps Services, Azure DevOps Server |
 | [Managed DevOps Pools agents](#managed-devops-pools-agents) | Managed DevOps Pools is a fully managed service. Virtual machines or containers that power the agents live in a Microsoft Azure subscription and not in your own Azure subscription. | Azure DevOps Services |
 | [Azure Virtual Machine Scale Sets agents](#azure-virtual-machine-scale-set-agents) | A form of self-hosted agents that uses Azure Virtual Machine Scale Sets and can be autoscaled to meet demands. <br><br>If you're considering using autoscalable, self-hosted agent pools, we recommend that you consider Managed DevOps Pools. For more information, see [Compare Managed DevOps Pools with Azure Virtual Machine Scale Sets agents](../../managed-devops-pools/migrate-from-scale-set-agents.md) and [Managed DevOps Pools overview](../../managed-devops-pools/overview.md). | Azure DevOps Services |
@@ -28,13 +29,27 @@ Azure Pipelines provides several different types of agents.
 You can run jobs [directly on the host machine of the agent](../process/phases.md) or [in a container](../process/container-phases.md).
 ::: moniker-end
 
-::: moniker range="azure-devops"
-
 ## Microsoft-hosted agents
 
 [!INCLUDE [include](includes/hosted-agent-intro.md)]
 
 [Learn more about Microsoft-hosted agents](hosted.md).
+
+::: moniker range="<azure-devops"
+
+> [!IMPORTANT]
+> Microsoft-hosted agents are available only in Azure DevOps Services and aren't available in Azure DevOps Server.
+
+::: moniker-end
+
+## GitHub-hosted agents
+
+GitHub-hosted agents provide higher performance virtual machines for Azure Pipelines with pay-as-you-go (PAYG) billing. Unlike the [Microsoft-hosted agents](hosted.md) that use a concurrency-based pool, GitHub-hosted agents bill per minute of usage and offer more powerful machine configurations. For more information, see [GitHub-hosted agents for Azure Pipelines (pay-as-you-go)](github-hosted.md).
+
+::: moniker range="<azure-devops"
+
+> [!IMPORTANT]
+> GitHub-hosted agents are available only in Azure DevOps Services and aren't available in Azure DevOps Server.
 
 ::: moniker-end
 

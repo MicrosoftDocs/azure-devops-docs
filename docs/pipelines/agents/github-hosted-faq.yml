@@ -1,0 +1,88 @@
+### YamlMime:FAQ
+metadata:
+  title: GitHub-hosted agents FAQ
+  description: Find answers to frequently asked questions about GitHub-hosted agents for Azure Pipelines.
+  ms.topic: faq
+  ms.date: 05/20/2026
+  monikerRange: 'azure-devops'
+title: GitHub-hosted agents FAQ
+summary: |
+  [!INCLUDE [version-eq-azure-devops](../../includes/version-eq-azure-devops.md)]
+
+  In this article, find answers to frequently asked questions about GitHub-hosted agents for Azure Pipelines.
+
+  > [!IMPORTANT]
+  > This feature is currently in preview. It may change before general availability.
+
+sections:
+  - name: General
+    questions:
+      - question: |
+          How is billing different from Microsoft-hosted agents?
+        answer: |
+          Microsoft-hosted agents use a concurrency-based billing model where you pay for the maximum number of jobs running in parallel. GitHub-hosted agents use pay-as-you-go billing where you're charged per minute of pipeline execution time. For more information, see [Pricing for Azure DevOps](https://azure.microsoft.com/pricing/details/devops/azure-devops-services).
+
+      - question: |
+          What is the impact of enabling the 'GitHub-hosted agents' pool?
+        answer: |
+          Initially, nothing. No existing pipelines use this pool unless you explicitly update them to do so. Existing standard-sized Intel images continue to be available in the Microsoft-hosted 'Azure Pipelines' pool. Over time, as you create and update pipelines to use the new 'GitHub-hosted agents' pool, you see usage and billing based on the GitHub-hosted agents pool.
+
+      - question: |
+          Do pay-as-you-go jobs consume existing parallelism settings?
+        answer: |
+          No, the 'GitHub-hosted agents' pool is a brand new pool where agents are only metered by the minute.
+
+      - question: |
+          How are GitHub-hosted agents related to GitHub Actions?
+        answer: |
+          GitHub-hosted agents run on the same infrastructure and use the same agent specifications and pricing as GitHub Actions do. Over time, more agent types available in GitHub Actions will become available in Azure Pipelines.
+
+      - question: |
+          Can I still use the Azure Pipelines pool for new versions of operating systems?
+        answer: |
+          The Azure Pipelines pool and parallelism pricing continue to be available for the standard size Intel-based agents that use it. New Intel versions of Ubuntu and Windows are available in the Azure Pipelines pool. As Apple indicates macOS 26 Tahoe is the last version with native Intel support, new versions of macOS are available in the **GitHub-hosted agents** pool only.
+
+      - question: |
+          If I don't specify any pool in YAML, what pool is used?
+        answer: |
+          If you don't specify a pool in your YAML pipeline, the default pool used is the Microsoft-hosted 'Azure Pipelines' pool.
+
+      - question: |
+          I enabled GitHub-hosted agents in billing, but don't see any changes
+        answer: |
+          It can take up to 24 hours for the new **GitHub-hosted agents** pool to be provisioned in your organization. If the pool isn't provisioned within that time, [create a support case](/azure/devops/user-guide/provide-feedback).
+
+      - question: |
+          Some of my jobs get queued. How can I increase the number of virtual agents?
+        answer: |
+          During the preview, the number of virtual agents is 8 per agent SKU. Over the period of the public preview, we will gradually increase this number. If you want to have the number of virtual agents for a specific agent SKU raised to a higher number, [create a support case](/azure/devops/user-guide/provide-feedback).
+
+      - question: |
+          Can I use GitHub-hosted agents for both build and release pipelines?
+        answer: |
+          The GitHub-hosted agents pool is available in classic build and YAML build pipelines. Microsoft will add support for classic release pipelines in summer 2026.
+
+      - question: |
+          How can I see how many minutes the new agents are using?
+        answer: |
+          In addition to the monitoring available in Azure Cost Management today, we will add an analytics experience on the pool directly. For more information, see [Monitor usage](github-hosted.md#monitoring-usage).
+
+      - question: |
+          How can I forecast the usage of pay-as-you-go agents?
+        answer: |
+          Forecasting requires making some assumptions on what pipelines will be updated to use pay-as-you-go agents. We will add some usage data on the billing page that can be used before pay-as-you-go billing is enabled, combined with updates to the Azure Pricing Calculator. Together, these will give organization admins some idea of the impact before pay-as-you-go billing is enabled.
+
+      - question: |
+          Are there plans for additional agent types?
+        answer: |
+          We are planning to add larger Linux and Windows agents to the **GitHub-hosted agents** pool at a later point in time.
+          
+additionalContent: |
+
+  ## Related content  
+
+  - [Microsoft-hosted agents](hosted.md)
+  - [Self-hosted agents](agents.md)
+  - [Pricing for Azure DevOps](https://azure.microsoft.com/pricing/details/devops/azure-devops-services)
+  - [Create and manage agent pools](pools-queues.md)
+  - [Managed DevOps Pools](../../managed-devops-pools/overview.md)
