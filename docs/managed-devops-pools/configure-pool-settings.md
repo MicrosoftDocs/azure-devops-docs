@@ -1,7 +1,7 @@
 ---
 title: Configure pool settings
 description: Learn how to configure settings in Managed DevOps Pools.
-ms.date: 01/29/2026
+ms.date: 06/01/2026
 ms.custom: sfi-image-nochange
 ms.topic: how-to
 ---
@@ -388,9 +388,7 @@ To resolve the issue, see [Review Managed DevOps Pools quotas](./prerequisites.m
 Not all SKUs are supported for all Azure regions. If you receive an error like `SKU family <sku-family> is not available in location <region>`, ensure that your SKU size is supported for your region. For more information, see [Sizes for virtual machines in Azure](/azure/virtual-machines/sizes) and [Products available by region](https://azure.microsoft.com/explore/global-infrastructure/products-by-region/).
 
 > [!IMPORTANT]
-> Azure Pipelines images aren't currently supported with **v6** and **v7** Azure VM agent sizes. For example, if you choose `Standard D2as v6` with an Azure Pipelines image, you get an error like `SkuNotCompatibleWithImageDiskControllerType: Incompatible DiskControllerType between Image(s) MMSWindows2025-g2 and Pool SKU Standard_D2as_v6. Select a different image or sku for pool mdp-11-21-2025.`.
->
-> To resolve this issue, choose a different agent size that isn't **v6** or **v7**.
+> [!INCLUDE [disk-controller-error](./includes/disk-controller-error.md)]
 
 ### OS disk type
 

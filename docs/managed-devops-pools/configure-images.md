@@ -1,7 +1,7 @@
 ---
 title: Configure images
 description: Learn how to configure agent images for Managed DevOps Pools.
-ms.date: 05/28/2026
+ms.date: 06/01/2026
 ms.topic: how-to
 ---
 
@@ -258,15 +258,8 @@ The lifecycle of Azure Pipelines images offered in Managed DevOps Pools follows 
 
 For more information on Managed DevOps Pools images lifecycle, see [Image lifecycle](#image-lifecycle).
 
-[!INCLUDE [disk-controller-error](./includes/disk-controller-error.md)]
-
 > [!IMPORTANT]
 > [!INCLUDE [disk-controller-error](./includes/disk-controller-error.md)]
-
-> [!IMPORTANT]
-> Azure Pipelines images aren't currently supported with **v6** and **v7** Azure VM [agent sizes](./configure-pool-settings.md#agent-size). For example, if you choose `Standard D2as v6` with an Azure Pipelines image, you get an error like `SkuNotCompatibleWithImageDiskControllerType: Incompatible DiskControllerType between Image(s) MMSWindows2025-g2 and Pool SKU Standard_D2as_v6. Select a different image or sku for pool mdp-11-21-2025.`.
->
-> To resolve this issue, choose a different agent size that isn't **v6** or **v7**.
 
 #### [Azure portal](#tab/azure-portal/)
 
