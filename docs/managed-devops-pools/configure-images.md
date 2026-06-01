@@ -258,6 +258,11 @@ The lifecycle of Azure Pipelines images offered in Managed DevOps Pools follows 
 
 For more information on Managed DevOps Pools images lifecycle, see [Image lifecycle](#image-lifecycle).
 
+[!INCLUDE [disk-controller-error](./includes/disk-controller-error.md)]
+
+> [!IMPORTANT]
+> [!INCLUDE [disk-controller-error](./includes/disk-controller-error.md)]
+
 > [!IMPORTANT]
 > Azure Pipelines images aren't currently supported with **v6** and **v7** Azure VM [agent sizes](./configure-pool-settings.md#agent-size). For example, if you choose `Standard D2as v6` with an Azure Pipelines image, you get an error like `SkuNotCompatibleWithImageDiskControllerType: Incompatible DiskControllerType between Image(s) MMSWindows2025-g2 and Pool SKU Standard_D2as_v6. Select a different image or sku for pool mdp-11-21-2025.`.
 >
