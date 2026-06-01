@@ -99,6 +99,9 @@ Build your project plan by creating a backlog of work items. These items represe
 
 If your team uses GitHub for source control, you can also start work directly from a backlog item with [GitHub Copilot integration for Azure Boards](../github/work-item-integration-github-copilot.md), which creates a branch, drafts a pull request, and updates the work item with progress.
 
+<a id="stack-rank"></a>
+<a id="backlog-priority-or-stack-rank-order"></a>
+
 ## Backlog priority and stack rank order
 
 Where you add or move the items on the page determines the sequence of items on each backlog. For more information, see [Reorder your backlog](create-your-backlog.md#move-items-priority-order).
