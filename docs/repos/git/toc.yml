@@ -139,6 +139,8 @@
     href: pull-requests.md
   - name: Review pull requests
     href: review-pull-requests.md
+  - name: Copilot Code Reviews
+    href: copilot-code-reviews.md
   - name: Complete pull requests
     href: complete-pull-requests.md
   - name: Pull request notifications

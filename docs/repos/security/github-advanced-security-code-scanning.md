@@ -322,6 +322,7 @@ To see the entire set of results for your pull request branch, navigate to **Rep
 
 ## Related articles
 
+- [Copilot Autofix for code scanning](github-advanced-security-code-scanning-autofix.md)
 - [Troubleshoot code scanning](github-advanced-security-code-scanning-troubleshoot.md)
 - [Set up dependency scanning](github-advanced-security-dependency-scanning.md)
 - [Set up secret scanning](github-advanced-security-secret-scanning.md)

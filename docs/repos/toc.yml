@@ -82,6 +82,8 @@
     items:
     - name: Configure code scanning
       href: security/github-advanced-security-code-scanning.md
+    - name: Copilot Autofix for code scanning
+      href: security/github-advanced-security-code-scanning-autofix.md
     - name: Using custom queries and query packs
       href: security/github-advanced-security-code-scanning-queries.md
     - name: Integrate third-party code scanning tools
