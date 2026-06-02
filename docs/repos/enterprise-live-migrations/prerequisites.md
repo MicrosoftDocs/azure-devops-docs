@@ -128,6 +128,14 @@ The steps in this section use the command line. Install the Azure CLI and the Az
    az extension update -n azure-devops
    ```
 
+1. (Recommended) Set your Azure DevOps organization as the default so every `migrations` command targets the right host:
+
+   ```azurecli
+   az devops configure --defaults organization=https://dev.azure.com/<org>
+   ```
+
+   If you skip this step and run commands from a folder whose `git` remote points to a different organization, the CLI's auto-detection picks that remote instead of your `--org` value. To force it off for a single command, add `--detect false`.
+
 ## Configure a self-hosted Linux agent
 
 Use the Azure DevOps portal to select or create an agent pool, and then run the agent setup scripts on a Linux machine.

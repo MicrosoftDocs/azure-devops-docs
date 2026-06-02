@@ -69,6 +69,7 @@ If your migration is in **Failed** status during the **Cutover** stage, check `e
 | Requests go to old org URL | Stale default org in config. | Run `az devops configure --defaults organization=https://dev.azure.com/<org>`. |
 | `az devops migrations` command not found | Azure DevOps extension isn't installed or is outdated. | Install or update: `az extension add -n azure-devops` or `az extension update -n azure-devops`. |
 | Active-state error on resume | Migration is already active. | Pause first with `az devops migrations pause`, and then resume. |
+| `cutover cancel` returns an error | Stage has already advanced to `Cutover` — cancel is only allowed during `Synchronization`. | Use `az devops migrations abandon` to stop the migration, or contact the ELM team if cutover is in progress. |
 | Wrong repository migrated | Wrong repository GUID used. | Always verify with `az repos show --query id` before creating a migration. |
 
 ## Post-migration issues

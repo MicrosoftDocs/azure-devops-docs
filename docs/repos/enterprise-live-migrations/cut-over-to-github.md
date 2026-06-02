@@ -51,6 +51,9 @@ az devops migrations cutover cancel --org https://dev.azure.com/<org>
                                     --repository-id <repo-guid>
 ```
 
+> [!NOTE]
+> `cutover cancel` only works while the migration is still in the **Synchronization** stage. Once the stage advances to **Cutover**, the server rejects the cancel request and the CLI returns a non-zero exit code. If you need to stop a cutover that's already in progress, use `az devops migrations abandon` or contact the ELM team.
+
 ## What happens during cutover
 
 1. The Azure DevOps repository is placed into a controlled read-only state.
@@ -120,6 +123,9 @@ az devops migrations cutover approve --org https://dev.azure.com/<org>
 ```
 
 Set `<N>` to a value greater than or equal to `totalUnprocessedCount` from the cutover review.
+
+> [!WARNING]
+> Approval is irreversible. There's no API to revoke an approval. If you approve by mistake, the only recovery path is `az devops migrations abandon` followed by recreating the migration.
 
 > [!NOTE]
 > If new failures appear after you review and before you approve, the command is rejected with an HTTP 400 surfaced as a `CLIError` indicating the failure count no longer matches. Run `cutover review` again, note the updated `totalUnprocessedCount`, and retry the approval. Scripts and automation can match on the non-zero exit code.

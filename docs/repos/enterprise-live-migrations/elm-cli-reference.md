@@ -27,9 +27,9 @@ This article lists the Azure DevOps CLI commands and parameters you use to run E
 | `pause` | `--org`, `--repository-id` | `--detect` | PUT | Pause an active migration. |
 | `resume` | `--org`, `--repository-id` | `--validate-only`, `--migration`, `--detect` | PUT | Resume a stopped migration. |
 | `cutover set` | `--org`, `--repository-id`, `--date` | `--detect` | PUT | Schedule a cutover date and time. |
-| `cutover cancel` | `--org`, `--repository-id` | `--detect` | PUT | Cancel a scheduled cutover. |
+| `cutover cancel` | `--org`, `--repository-id` | `--detect` | PUT | Cancel a scheduled cutover. Only valid while stage is `Synchronization`; rejected once stage advances to `Cutover`. Sends the `DateTimeOffset.MinValue` sentinel (`0001-01-01T00:00:00+00:00`) because the server ignores `null` for `scheduledCutoverDate`. |
 | `cutover review` | `--org`, `--repository-id` | `--detect` | GET | List cutover failures awaiting approval. |
-| `cutover approve` | `--org`, `--repository-id`, `--accept-failures` | `--detect` | PUT | Approve cutover by accepting a count of unresolved failures. |
+| `cutover approve` | `--org`, `--repository-id`, `--accept-failures` | `--detect` | PUT | Approve cutover by accepting a count of unresolved failures. Irreversible — no revoke API; recover with `abandon` + recreate. |
 | `abandon` | `--org`, `--repository-id` | `--remove-read-only`, `--yes`, `--detect` | DELETE | Permanently delete a migration. Prompts for confirmation. |
 
 ## Parameter details
@@ -37,13 +37,13 @@ This article lists the Azure DevOps CLI commands and parameters you use to run E
 | Parameter | Type | Used by | Description |
 |---|---|---|---|
 | `--org` | URL | All | Azure DevOps organization URL, for example `https://dev.azure.com/<org>`. Set this value as a default. |
-| `--repository-id` | GUID | All except `list` | Azure Repos repository GUID. Get the value from `az repos show --query id`. |
+| `--repository-id` | GUID | All except `list` | Azure Repos repository GUID. Get the value from `az repos show --query id`. Migrations are identified by `repositoryId` only — the API response has no separate migration ID field, and there can be at most one active migration per repository. |
 | `--target-repository` | URL | `create` | Target repository URL, for example `https://<enterprise>.ghe.com/<org>/<repo>`. The server validates this value. |
 | `--target-owner-user-id` | string | `create` | GitHub user ID (handle) of the target repository owner. |
 | `--service-endpoint-id` | GUID | `create` | Azure DevOps service connection ID that holds the GitHub PAT used to authenticate to the target. |
 | `--agent-pool` | string | `create` | Agent pool name for migration work. |
-| `--validate-only` | flag | `create`, `resume` | On `create`: run pre-migration checks only. On `resume`: switch to validate-only mode. |
-| `--migration` | flag | `resume` | Switch to full migration mode (clears validate-only). Mutually exclusive with `--validate-only`. |
+| `--validate-only` | flag | `create`, `resume` | On `create`: run pre-migration checks only. On `resume`: switch to validate-only mode. Validate-only results expire 24 hours after the run succeeds; start (or promote to) the full migration within that window. |
+| `--migration` | flag | `resume` | Promote a succeeded validate-only run to a full migration (sets `validateOnly=false` and `statusRequested=active`). Only valid when the previous validate-only run finished with `status: Succeeded`. Mutually exclusive with `--validate-only`. |
 | `--cutover-date` | ISO 8601 | `create` | Pre-schedule cutover at creation time, for example `2030-12-31T11:59:00Z`. |
 | `--date` | ISO 8601 | `cutover set` | Schedule cutover date and time, for example `2030-12-31T11:59:00Z`. |
 | `--skip-validation` | string | `create` | Comma-separated list of validation policies to skip. |
