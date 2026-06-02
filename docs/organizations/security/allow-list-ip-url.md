@@ -68,8 +68,6 @@ Ensure the following IP addresses are allowed for outbound connections on **port
 
 ---
 
-If you're currently allowing the `13.107.6.183` and `13.107.9.183` IP addresses, leave them in place, as you don't need to remove them.
-
 > [!NOTE]
 > [Azure Service Tags](/azure/virtual-network/service-tags-overview) aren't supported for *outbound* connections.
 
