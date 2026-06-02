@@ -118,3 +118,5 @@ After you abandon a migration:
 ## Related content
 
 - [Start the migration](start-migration.md)
+- [ELM CLI reference](elm-cli-reference.md)
+- [Troubleshoot ELM](troubleshoot.md)

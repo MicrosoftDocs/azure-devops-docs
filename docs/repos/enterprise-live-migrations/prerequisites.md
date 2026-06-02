@@ -173,3 +173,4 @@ Use this checklist to collect the values you need before you start the migration
 
 - [Learn about Enterprise Live Migrations](overview.md)
 - [Start the migration](start-migration.md)
+- [ELM CLI reference](elm-cli-reference.md)

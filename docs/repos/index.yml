@@ -32,6 +32,32 @@ landingContent:
             url: ./get-started/what-is-repos.md
           - text: Compare Git and TFVC
             url: ./tfvc/comparison-git-tfvc.md
+  - title: Migrate to GitHub
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: Learn about Enterprise Live Migrations (ELM)
+            url: ./enterprise-live-migrations/overview.md
+      - linkListType: get-started
+        links:
+          - text: Complete prerequisites
+            url: ./enterprise-live-migrations/prerequisites.md
+          - text: Start the migration
+            url: ./enterprise-live-migrations/start-migration.md
+          - text: Monitor the migration
+            url: ./enterprise-live-migrations/monitor-migration.md
+          - text: Cutover to GitHub
+            url: ./enterprise-live-migrations/cut-over-to-github.md
+          - text: Complete post-migration tasks
+            url: ./enterprise-live-migrations/post-migration.md
+      - linkListType: reference
+        links:
+          - text: ELM CLI reference
+            url: ./enterprise-live-migrations/elm-cli-reference.md
+      - linkListType: how-to-guide
+        links:
+          - text: Troubleshoot ELM
+            url: ./enterprise-live-migrations/troubleshoot.md
   - title: Connect & authentication
     linkLists:
       - linkListType: overview
