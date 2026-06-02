@@ -1,5 +1,5 @@
 ---
-title: Cutover to GitHub for an Enterprise Live Migration (ELM)
+title: Cutover to GitHub for an Enterprise Live Migrations (ELM)
 titleSuffix: Azure DevOps
 description: Schedule and complete cutover from Azure DevOps to GitHub Enterprise Cloud, review unresolved failures, and approve a Review for cutover.
 ms.subservice: azure-devops-migrate
@@ -11,7 +11,7 @@ ms.date: 06/01/2026
 #customer intent: As a migration operator, I want to schedule and run cutover so that GitHub becomes the authoritative system of record.
 ---
 
-# Cutover to GitHub for an Enterprise Live Migration (ELM)
+# 5. Cutover to GitHub
 
 [!INCLUDE [version-eq-azure-devops](../../includes/version-eq-azure-devops.md)]
 
@@ -32,7 +32,7 @@ Confirm the following conditions:
 - Hardcoded Azure DevOps URLs in pipelines, scripts, and tooling are identified for update.
 
 > [!NOTE]
-> Scheduling, monitoring, and approving cutover use the Azure DevOps CLI. After cutover, you validate the migrated repository in the GitHub portal. For more information, see [Post-migration activities](post-migration.md).
+> Scheduling, monitoring, and approving cutover use the Azure DevOps CLI. After cutover, you validate the migrated repository in the GitHub portal. For more information, see [Complete post-migration tasks](post-migration.md).
 
 ## Schedule cutover
 
@@ -136,9 +136,9 @@ After approval, the migration moves to **ReadyForCutover**:
 ## Next step
 
 > [!div class="nextstepaction"]
-> [Post-migration activities](post-migration.md)
+> [Complete post-migration tasks](post-migration.md)
 
 ## Related content
 
 - [Monitor the migration](monitor-migration.md)
-- [Introduction to ELM](overview.md)
+- [Learn about Enterprise Live Migrations](overview.md)

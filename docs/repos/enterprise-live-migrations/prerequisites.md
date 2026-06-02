@@ -1,7 +1,7 @@
 ---
-title: Prerequisites for Enterprise Live Migration (ELM)
+title: Prerequisites for Enterprise Live Migrations (ELM)
 titleSuffix: Azure DevOps
-description: Review the source and target requirements, access, authentication, tooling, and agent setup needed before you start an Enterprise Live Migration (ELM).
+description: Review the source and target requirements, access, authentication, tooling, and agent setup needed before you start an Enterprise Live Migrations (ELM).
 ms.subservice: azure-devops-migrate
 ms.topic: how-to
 ms.author: chcomley
@@ -11,7 +11,7 @@ ms.date: 06/01/2026
 #customer intent: As a migration operator, I want to confirm all ELM prerequisites so I can start a migration without getting blocked on access, tooling, or authentication.
 ---
 
-# Prerequisites for Enterprise Live Migration (ELM)
+# 2. Complete prerequisites
 
 [!INCLUDE [version-eq-azure-devops](../../includes/version-eq-azure-devops.md)]
 
@@ -48,7 +48,7 @@ To get the Azure DevOps repository GUID, use either method:
 
 ### Azure DevOps Services
 
-- You must have the **Enterprise Live Migration: Manage Migrations** permission set to **Allow** at the repository level. To check, go to **Project Settings** > **Repositories** > **Security** and confirm your group or user account has this permission. If you don't, contact your Project Collection Administrator (PCA) or Project Administrator (PA) to request access. For more information, see [Set Git repository permissions](../../repos/git/set-git-repository-permissions.md).
+- You must have the **Enterprise Live Migrations: Manage Migrations** permission set to **Allow** at the repository level. To check, go to **Project Settings** > **Repositories** > **Security** and confirm your group or user account has this permission. If you don't, contact your Project Collection Administrator (PCA) or Project Administrator (PA) to request access. For more information, see [Set Git repository permissions](../git/set-git-repository-permissions.md).
 - If no self-hosted Linux agent is available, a PCA or someone with permission to administer the agent queue must create and register one.
 - A user with the appropriate permissions must create the service connection that uses the GitHub PAT.
 
@@ -171,5 +171,5 @@ Use this checklist to collect the values you need before you start the migration
 
 ## Related content
 
-- [Introduction to Enterprise Live Migration (ELM)](overview.md)
+- [Learn about Enterprise Live Migrations](overview.md)
 - [Start the migration](start-migration.md)

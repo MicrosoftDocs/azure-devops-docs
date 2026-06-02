@@ -1,5 +1,5 @@
 ---
-title: Post-migration activities for Enterprise Live Migration (ELM)
+title: Post-migration activities for Enterprise Live Migrations (ELM)
 titleSuffix: Azure DevOps
 description: Validate the migrated GitHub repository, review branch rulesets, reclaim mannequins, and prepare teams to work from GitHub after ELM cutover.
 ms.subservice: azure-devops-migrate
@@ -11,7 +11,7 @@ ms.date: 06/01/2026
 #customer intent: As a migration operator, I want to validate the migrated GitHub repository after cutover so that teams can work from GitHub with the expected protections and access.
 ---
 
-# Post-migration activities for Enterprise Live Migration (ELM)
+# 6. Complete post-migration tasks
 
 [!INCLUDE [version-eq-azure-devops](../../includes/version-eq-azure-devops.md)]
 
@@ -36,7 +36,7 @@ ELM migrates Azure DevOps branch policies to GitHub branch rulesets. After cutov
 | Reset votes on new push | Dismiss stale reviews (migrated) | Confirm the setting is enabled on protected branches. |
 | Build validation | Required status checks (migrated) | Might require updating check names after pipelines are rewired. |
 | Merge strategy | Allowed merge methods (migrated) | Validate merge settings (merge/squash/rebase) on the repository. |
-| File size restriction | Max file size (migrated) | Large files might require Git LFS or history cleanup. |
+| File size restriction | Max file size (migrated) | Large files might require Git LFS (future) or history cleanup. |
 | Required reviewers (path-based) | CODEOWNERS + required code owner review (manual) | Create or validate `CODEOWNERS` entries to match path rules. |
 | Block force push | Block force pushes (migrated) | Confirm enforcement on protected branches. |
 | Block branch deletion | Restrict deletions (migrated) | Confirm branch deletion is blocked where required. |
@@ -69,4 +69,4 @@ Pipeline rewiring and Azure Boards connection support are still in development. 
 ## Related content
 
 - [Cutover to GitHub](cut-over-to-github.md)
-- [Introduction to ELM](overview.md)
+- [Learn about Enterprise Live Migrations](overview.md)

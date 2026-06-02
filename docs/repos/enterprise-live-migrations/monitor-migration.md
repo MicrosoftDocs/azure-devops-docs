@@ -1,7 +1,7 @@
 ---
-title: Monitor an Enterprise Live Migration (ELM)
+title: Monitor an Enterprise Live Migrations (ELM)
 titleSuffix: Azure DevOps
-description: Monitor sync progress, pause and resume, and cancel an Enterprise Live Migration (ELM) from Azure DevOps to GitHub Enterprise Cloud.
+description: Monitor sync progress, pause and resume, and cancel an Enterprise Live Migrations (ELM) from Azure DevOps to GitHub Enterprise Cloud.
 ms.subservice: azure-devops-migrate
 ms.topic: how-to
 ms.author: chcomley
@@ -11,7 +11,7 @@ ms.date: 06/01/2026
 #customer intent: As a migration operator, I want to monitor sync progress and manage in-flight ELM migrations so I can cutover with confidence.
 ---
 
-# Monitor an Enterprise Live Migration (ELM)
+# 4. Monitor the migration
 
 [!INCLUDE [version-eq-azure-devops](../../includes/version-eq-azure-devops.md)]
 

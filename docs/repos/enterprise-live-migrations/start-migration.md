@@ -1,7 +1,7 @@
 ---
-title: Start an Enterprise Live Migration (ELM)
+title: Start an Enterprise Live Migrations (ELM)
 titleSuffix: Azure DevOps
-description: Authenticate into Azure DevOps, validate your repository, and start the initial synchronization for an Enterprise Live Migration (ELM).
+description: Authenticate into Azure DevOps, validate your repository, and start the initial synchronization for an Enterprise Live Migrations (ELM).
 ms.subservice: azure-devops-migrate
 ms.topic: how-to
 ms.author: chcomley
@@ -11,7 +11,7 @@ ms.date: 06/01/2026
 #customer intent: As a migration operator, I want to authenticate, validate, and start an ELM so the initial sync to GitHub Enterprise Cloud begins successfully.
 ---
 
-# Start an Enterprise Live Migration (ELM)
+# 3. Start the migration
 
 [!INCLUDE [version-eq-azure-devops](../../includes/version-eq-azure-devops.md)]
 
@@ -166,5 +166,5 @@ During the initial sync:
 
 ## Related content
 
-- [Prerequisites for ELM](prerequisites.md)
+- [Complete prerequisites](prerequisites.md)
 - [Cutover to GitHub](cut-over-to-github.md)
