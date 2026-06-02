@@ -8,7 +8,7 @@ ms.author: chcomley
 author: chcomley
 ms.topic: overview
 monikerRange: '<= azure-devops'
-ms.date: 06/01/2026
+ms.date: 06/02/2026
 #customer intent: As a project administrator, I want to understand backlogs in Azure Boards and how to use them to plan and improve my team workflow.
 ---
 
@@ -18,84 +18,77 @@ ms.date: 06/01/2026
 
 A *backlog* is the prioritized list of work that drives every sprint. In Azure Boards, backlogs help your team capture user stories and requirements, rank them by value, and turn them into the work that ships.
 
-Azure Boards automatically creates a backlog when you add a project or team. Each team owns its product, portfolio, and sprint backlogs, and team-level settings determine which work items appear on each one. To learn more, see [About teams and Agile tools](../../organizations/settings/about-teams-and-settings.md#each-team-gets-their-own-set-of-tools). If you're a project administrator setting things up for the first time, see [Configure and customize Azure Boards](../configure-customize.md).
+Each team owns its own product, portfolio, and sprint backlogs, and team-level settings control which work items appear on each one.
+
+- New to backlogs? Go to [About teams and Agile tools](../../organizations/settings/about-teams-and-settings.md#each-team-gets-their-own-set-of-tools).
+- Setting up a project for the first time? Go to [Configure and customize Azure Boards](../configure-customize.md).
 
 [!INCLUDE [ai-assistance-callout](../../includes/ai-assistance-callout.md)]
 
-In this article, you learn:
-
-- What a backlog is and how product and portfolio backlogs differ
-- How team configuration controls what appears on a backlog
-- How to prioritize, organize, and share backlogs across teams
-- What controls are available on the product backlog page
-
 ## About backlogs
 
-An Azure Boards backlog is a prioritized list of work items that guides your development team's effort. A backlog helps manage project scope and facilitates effective communication and collaboration throughout the software development lifecycle.
+Use a backlog to guide your team's effort, keep scope in check, and give everyone a shared view of what's next.
 
-Use backlogs to do the following tasks:
+Common tasks, grouped by intent:
 
-- [Define user stories, product backlog items, or requirements](create-your-backlog.md)
-- [Reorder your backlog](create-your-backlog.md#reorder-your-backlog)
-- [Add details and estimates to your backlog items](create-your-backlog.md#add-details-and-estimates-to-backlog-items)
-- [Bulk update work items](bulk-modify-work-items.md)
-- [Drag items to a sprint](../sprints/assign-work-sprint.md)
-- [Map backlog items within a hierarchy](organize-backlog.md)
-- [Review work assigned to multiple teams](#multi-team)
-- [Forecast work](../sprints/forecast.md)
-- [Display rollup progress, counts, or totals](display-rollup.md)
+| To do this... | Use |
+|---|---|
+| **Capture work** | [Define user stories, product backlog items, or requirements](create-your-backlog.md) &bull; [Add details and estimates](create-your-backlog.md#add-details-and-estimates-to-backlog-items) |
+| **Organize and prioritize** | [Reorder your backlog](create-your-backlog.md#reorder-your-backlog) &bull; [Map items in a hierarchy](organize-backlog.md) &bull; [Bulk update items](bulk-modify-work-items.md) |
+| **Plan and forecast** | [Drag items to a sprint](../sprints/assign-work-sprint.md) &bull; [Forecast work](../sprints/forecast.md) &bull; [Display rollup progress, counts, or totals](display-rollup.md) |
+| **Coordinate across teams** | [Review work assigned to multiple teams](#multi-team) |
 
 [!INCLUDE [note setup backlog](../includes/setup-backlogs-boards.md)]
 
 ## Product and portfolio backlogs
 
-Backlogs present work items as lists. A *product backlog* represents your project plan, the roadmap for what your team plans to deliver. It also provides a repository of all the information you need to track and share with your team.
+Azure Boards presents work items as lists. Two backlog types serve different planning horizons:
 
-In [Agile methodologies](/devops/plan/what-is-agile), a *portfolio backlog* lets you group and organize your backlog into a hierarchy. You can display high-level initiatives, epics, or projects that your organization plans to work on over a longer period of time. These initiatives are often too large or complex to fit in the scope of a single team's backlog. They require coordination and planning at a higher organizational level.
+| Backlog type | What it represents | Best for |
+|---|---|---|
+| **Product backlog** | Your team's project plan and roadmap of work to deliver. Acts as the shared repository for what's planned, in progress, and tracked. | Day-to-day team planning of user stories, requirements, and bugs. |
+| **Portfolio backlog** | A hierarchy that groups product backlog items under features, epics, or higher-level initiatives. Learn more in [Agile methodologies](/devops/plan/what-is-agile). | Long-running initiatives that span teams or are too large for a single team backlog. |
 
 :::image type="content" source="../work-items/media/about-agile/view-backlogs.png" alt-text="Screenshot of Boards Backlogs.":::  
 
 ## Backlog configuration
 
-[!INCLUDE [note add backlog](../includes/note-add-backlog-board.md)]
+> [!NOTE]
+> You don't add backlogs or boards directly. When you create a team, Azure Boards automatically provisions its own set of backlogs and boards. For more information, see [About teams and Agile tools](../../organizations/settings/about-teams-and-settings.md).
 
-Each backlog is associated with a team. The team configuration settings determine the work items that appear on the team backlog. The team administrator completes the following tasks for their team:
+Each backlog is associated with a team, and team configuration settings determine which work items appear on it. Team administrators configure the following settings for their team:
 
-- Select the active Area Paths for the team. Only work items assigned to these area paths appear on the team's backlog.
-- Set the default Area Path and Iteration Path used when defining work items from the team backlog.
-- Select the active Iteration Paths for the team.
-- Determine which backlog levels are active for the team.
-- Define how to treat bugs, as requirements or as tasks.
-
-For more information, see the following articles: 
-
-- [Define iteration (sprint) paths and configure team iterations](../../organizations/settings/set-iteration-paths-sprints.md)
-- [Define area paths and assign to a team](../../organizations/settings/set-area-paths.md)
-- [Select backlog levels](../../organizations/settings/select-backlog-navigation-levels.md)
-- [Show bugs on backlogs or boards](../../organizations/settings/show-bugs-on-backlog.md)
-
-[!INCLUDE [tip configure backlog view](../includes/tip-configure-backlog-view.md)]
+| Setting | What it controls | Reference |
+|---|---|---|
+| Active area paths | Which work items appear on the team's backlog. Only items assigned to the selected area paths are shown. | [Define area paths and assign to a team](../../organizations/settings/set-area-paths.md) |
+| Default area path and iteration path | The values assigned to new work items created from the team backlog. | [Define area paths and assign to a team](../../organizations/settings/set-area-paths.md) |
+| Active iteration paths | Which sprints the team uses for planning and capacity. | [Define iteration (sprint) paths and configure team iterations](../../organizations/settings/set-iteration-paths-sprints.md) |
+| Active backlog levels | Which portfolio, product, and sprint backlogs are visible to the team. | [Select backlog levels](../../organizations/settings/select-backlog-navigation-levels.md) |
+| Bug behavior | Whether bugs are treated as requirements or as tasks. | [Show bugs on backlogs or boards](../../organizations/settings/show-bugs-on-backlog.md) |
 
 > [!TIP]
-> To reduce vertical scrolling on large backlogs and boards, turn on the **Condensed card display** option in your team's board settings.
+> A few extra view tweaks make large backlogs easier to scan:
+> - Each team member has their own controls (**Expand/Collapse one level**, **Column Options**, **Backlog level selector**, **View options**, and **Filter**). Options set per backlog level are distinct and persist until changed. For more information, see [Configure your backlog view](configure-your-backlog-view.md).
+> - To reduce vertical scrolling on large backlogs and boards, turn on the **Condensed card display** option in your team's board settings.
 
 ### Configure a shared backlog view across teams
 
-You can't define one backlog configuration that multiple teams subscribe to. Each team controls its own team settings and backlog configurations independently.
-
-::: moniker range="azure-devops"
-Because each user configures their own **Column Options** and **View Options**, there's no way to set a common backlog view for all teams. There are also no default column options that you can set for a team.  
-::: moniker-end
+Each team controls its own settings and backlog configuration independently &mdash; you can't define one configuration that other teams subscribe to. **Column Options** and **View Options** are also per-user, so there's no built-in way to enforce a common view across a team.
 
 ::: moniker range="< azure-devops"
-Because each user can configure their own **Column Options** and **View Options**, there's no way to configure a common backlog view for all teams. You can, however, define the default column options for all team members by editing the process configuration. To learn how, see [Process configuration XML element reference, Set default columns](../../reference/xml/process-configuration-xml-element.md#columns).
+You can, however, set default column options for all team members by editing the process configuration. For more information, see [Process configuration XML element reference, Set default columns](../../reference/xml/process-configuration-xml-element.md#columns).
 ::: moniker-end
 
 ## Define work items and create your backlog
 
-Build your project plan by creating a backlog of work items. These items represent the features, requirements, user stories, or other work to complete. Portfolio backlogs provide support for organizing work in a hierarchical fashion. They help track major product initiatives or scenarios that rely on many stories or requirements. Different types of work items help you track different types of work, such as user stories, tasks, bugs, and issues.  
+Build your project plan by adding work items to your backlog. Each work item type tracks a different kind of work:
 
-[:::image type="content" source="media/overview/gs-planning-define-stories.png" alt-text="Diagram titled Define stories conceptual image of tasks.":::](create-your-backlog.md)[:::image type="content" source="media/overview/gs-planning-organize-backlog.png" alt-text="Diagram titled Organize backlog conceptual image of tasks.":::](organize-backlog.md)[:::image type="content" source="media/overview/gs-planning-manage-bugs.png" alt-text="Diagram titled Manage bugs conceptual image of tasks.":::](manage-bugs.md)[:::image type="content" source="media/overview/gs-planning-manage-issues.png" alt-text="Diagram titled Manage issues conceptual image of tasks.":::](manage-issues-impediments.md)
+| Work item type | Use it to |
+|---|---|
+| **User story**, **product backlog item**, or **requirement** | Capture a unit of customer-facing value to plan and deliver. Go to [Create your backlog](create-your-backlog.md). |
+| **Feature** and **epic** | Group related stories into a multi-tier hierarchy for portfolio planning. Go to [Organize your backlog](organize-backlog.md). |
+| **Bug** | Track defects. Choose whether bugs appear as requirements or tasks per team. Go to [Manage bugs](manage-bugs.md). |
+| **Issue** or **impediment** | Track blockers and risks separate from delivery work. Go to [Manage issues](manage-issues-impediments.md). |
 
 If your team uses GitHub for source control, you can also start work directly from a backlog item with [GitHub Copilot integration for Azure Boards](../github/work-item-integration-github-copilot.md), which creates a branch, drafts a pull request, and updates the work item with progress.
 
@@ -104,35 +97,63 @@ If your team uses GitHub for source control, you can also start work directly fr
 
 ## Backlog priority and stack rank order
 
-Where you add or move the items on the page determines the sequence of items on each backlog. For more information, see [Reorder your backlog](create-your-backlog.md#move-items-priority-order).
+Rank backlogs from top to bottom: the position of an item on the page *is* its priority. When you drag an item, Azure Boards updates a hidden ranking field in the background:
 
-As you drag items within the backlog list, a background process updates the *Stack Rank* [(Agile and Capability Maturity Model Integration (CMMI) processes)](../queries/planning-ranking-priorities.md) or *Backlog Priority* [(Scrum process)](../queries/planning-ranking-priorities.md) fields. The system uses these fields to track the relative ranking of items on the product, feature, epic, or other portfolio backlog. By default, these fields don't appear on the work item form.
+| Process | Field updated |
+|---|---|
+| Scrum | *Backlog Priority* |
+| Agile, CMMI | *Stack Rank* |
 
-:::image type="content" source="media/create-backlog/cyb-order-backlog.png" alt-text="Screenshot showing how to reorder work items.":::  
+These fields don't appear on the work item form by default, but you can [query and report on them](../queries/planning-ranking-priorities.md). For step-by-step reordering, go to [Reorder your backlog](create-your-backlog.md#move-items-priority-order).
 
-Don't use the bulk modify function to change the value of the backlog priority field. While you can assign a value to these fields, you assign the same value to all items that you select for bulk edit.  
+For bulk reordering, use multiselect to move items to the top, bottom, or a specific position on the page. To reorder many items at once, edit them in [Excel](../backlogs/office/bulk-add-modify-work-items-excel.md): export a query, update *Backlog Priority* or *Stack Rank*, and publish.
 
-The preferred method for bulk edit is to use multiselect to move items to the top, bottom, or specific position within the page. If you must edit one of the backlog order fields in bulk to get a large number of work items in the priority order you want, use [Excel](../backlogs/office/bulk-add-modify-work-items-excel.md). You can export a query that contains the backlog items, update either the Backlog Priority or Stack Rank fields, and then publish your changes.
+> [!WARNING]
+> Don't use bulk modify to change *Backlog Priority* or *Stack Rank*. Bulk modify assigns the same value to every selected item, which wipes out the relative ordering. Use multiselect or Excel (earlier in this article) instead.
 
 ## In Progress items and work listed on the backlog
 
-Backlogs are designed to display work that corresponds to a Proposed, In Progress, or Resolved category state. When you complete work and its state enters a *Done*, or *Closed* state, it falls off the backlog view. You can always [create a query](../queries/using-queries.md) to view completed work, or view the **Recently completed** pivot from the **Work Items** page. For more information, see [View and add work items](../work-items/view-add-work-items.md).
+Backlogs show work in a Proposed, In Progress, or Resolved category state. The following table maps category states to what appears on the backlog and where to find items that don't:
 
-In general, you display all items that are in the **In Progress** category state, which corresponds to the *Active* and *Committed* states. To focus on work that is proposed but not in progress, you can toggle the backlog view to turn off [**In Progress**](create-your-backlog.md#convert-ideas). This toggle is useful when [forecasting your product backlog](../sprints/forecast.md).
+| Category state | Example workflow states | Shown on backlog? | Where to find it |
+|---|---|---|---|
+| Proposed | New, Approved | Yes | Default view |
+| In Progress | Active, Committed | Yes, unless you turn off the **In Progress** toggle | Toggle [**In Progress**](create-your-backlog.md#convert-ideas) back on; useful to leave off when [forecasting](../sprints/forecast.md) |
+| Resolved | Resolved | Yes | Default view |
+| Completed | Done, Closed | No | The **Recently completed** pivot on the **Work Items** page, or a [custom query](../queries/using-queries.md) |
 
-If your backlog is missing items, check whether the **In Progress** view is turned off. For more information, see [Workflow states and state categories](../work-items/workflow-and-state-categories.md).
+If your backlog is missing items you expected, the **In Progress** toggle is the most common culprit. For more on category-to-state mapping, see [Workflow states and state categories](../work-items/workflow-and-state-categories.md).
 
-## Organize your backlog by mapping and reparenting backlog items
+## Map and reparent backlog items
 
-When you have many initiatives your teams are working on, you might want to group the work according to these initiatives. By defining features and epics, you can group your work into a three-tiered hierarchy consisting of epics, features, and backlog items.
+Group related work by parenting backlog items under features and epics. This structure creates a three-tier hierarchy that makes rollup, planning, and cross-team coordination easier:
 
-For example, the Customer Service team organized several backlog items under two features and one epic.
+| Level | Purpose |
+|---|---|
+| **Epic** | A long-running initiative that spans multiple features. |
+| **Feature** | A shippable capability composed of related backlog items. |
+| **Backlog item** (user story, product backlog item, or requirement) | A single unit of customer-facing value. |
 
-:::image type="content" source="media/overview/customer-service-backlog-parents-on.png" alt-text="Screenshot of Backlog that shows parents and multi-team ownership.":::  
+The following screenshot shows the Customer Service team's backlog items grouped under two features and one epic:
 
- 
+:::image type="content" source="media/overview/customer-service-backlog-parents-on.png" alt-text="Screenshot of Backlog that shows parents and multi-team ownership.":::
 
-[!INCLUDE [velocity](../includes/velocity-section.md)]
+For step-by-step mapping and reparenting, see [Organize your backlog](organize-backlog.md).
+
+## Velocity
+
+When you assign backlog items to sprints, Azure Boards calculates an in-context velocity report for both product and portfolio backlogs. Velocity helps your team forecast how much work it can complete in upcoming sprints based on past performance.
+
+Configure the report to measure work by:
+
+- Work item count
+- Story Points or Effort
+- Remaining Work
+- Any other numeric field on your work item type
+
+:::image type="content" source="../../report/dashboards/media/velocity/analytics-velocity-azure-devops.png" alt-text="Screenshot shows Velocity Analytics which displays a bar chart.":::
+
+For more information, see [View and configure team velocity](../../report/dashboards/team-velocity.md).
 
 [!INCLUDE [display rollup](../includes/display-rollup-section.md)]
 
@@ -140,87 +161,90 @@ For example, the Customer Service team organized several backlog items under two
 
 ## Work with multi-team ownership of backlog items  
 
-When you have several teams, your hierarchical views can show items that belong to other teams.
+In a project with multiple teams, hierarchical views can include items belonging to other teams. The following rules govern what's visible and what you can change:
+
+| What's visible | Your team's backlog items (matched by area path), plus parent epics and features from other teams when **Parents** is on. |
+|---|---|
+| You can reorder | Only items in your team's area paths. |
+| You can reparent | Items you own, plus items other teams own. |
+| You can't change | Items marked with the information icon :::image type="icon" source="../../media/icons/info.png" border="false":::. Another team owns them. |
+
+> [!TIP]
+> Add the **Node Name** field as a column to identify which area path (and team) owns each item.
 
 ### View backlog items and parent items owned by other teams
 
-Your team's product backlog lists only those items whose area path matches items assigned to your team. If you show parents, you see the parent epic of the features and backlog items, even if another team owns the epic or feature.
-
-Other team-owned items appear with an information icon :::image type="icon" source="../../media/icons/info.png" border="false":::.
+When **Parents** is on, your backlog shows the parent epic of any feature or backlog item your team owns, even if another team owns the parent.
 
 :::image type="content" source="media/multi-ownership/customer-service-backlog-parents-on-s155.png" alt-text="Screenshot of backlog items and parent items owned by other teams.":::
-
-> [!TIP]
-> Add the **Node Name** field as a column to identify the area path or team associated with the work items.
-
- 
 
 For more information, see [Define area paths and assign to a team](../../organizations/settings/set-area-paths.md).
 
 ### View epics and child items owned by other teams
 
-The following example shows the **Epics** backlog for the **Management** team. By drilling down, you can see all the backlog items and features, even though they belong to one of three different teams: Customer Service, Phone, and Web.
+Drill into a portfolio backlog to view all child items, even those owned by other teams. For example, the **Management** team's **Epics** backlog expands to show features and backlog items owned by the Customer Service, Phone, and Web teams.
 
 :::image type="content" source="media/multi-ownership/management-team-backlog-epics-s155.png" alt-text="Screenshot of view Epics and child items owned by other teams.":::
 
- 
-
-From these views, you can reparent items that you own and items other teams own. You can't reorder items that another team owns.  
-
-This organization enables management teams to focus on high-level features and epics, and development teams to focus on just the backlog items they're responsible to deliver. For example, you can create a team structure similar to this one with two management and three development teams. For more information, see [Create or add a team](../../organizations/settings/add-teams.md).
-
-:::image type="content" source="media/ALM_OB_MultiTeam_C.png" alt-text="Diagram shows backlogs and multi-team ownership with a division between management and development teams.":::
-
-For more information about hierarchical team and backlog structures, see [Manage your product and portfolio backlogs](../plans/portfolio-management.md).
+This split lets management teams focus on epics and features while development teams focus on the backlog items they deliver. A typical structure pairs two management teams with three development teams. For more information, see [Create or add a team](../../organizations/settings/add-teams.md) and [Manage your product and portfolio backlogs](../plans/portfolio-management.md).
 
 > [!IMPORTANT]
-> You have the flexibility to establish child links with work items from different projects. However, if the processes differ between projects, the hierarchy isn't visible on the backlog for those child items that reside in the separate projects. Nonetheless, you can view all of the associated child items directly on the work item form.
-
-### Reordering and reparenting work items
-
-All backlogs and boards support dragging to reorder and reparent work items. Updates made to one team's backlogs and boards are reflected in other team backlogs and boards that share the same area path. You might need to refresh the page to view the changes.
-
-You can only use dragging to reorder or reparent work items assigned to area paths selected for your team. When the **Parents** view option is enabled, work items might appear on your backlog that your team doesn't own. Anything that appears with the :::image type="icon" source="../../media/icons/info.png" border="false"::: information icon can't be reordered or reparented because another team owns it.  
-
-:::image type="content" source="../plans/media/config-teams/information-message-owned-by-other-team.png" alt-text="Screenshot of information message on team ownership.":::
+> You can create child links to work items in other projects, but if the projects use different processes, the cross-project hierarchy isn't visible on the backlog. Open the work item form to view all associated child items.
 
 <a id="leaf-node"></a>
 
 ## Display leaf node work items
 
-Sprint backlogs and taskboards only show the last node in a same-category hierarchy, called the *leaf node*.
-
 [!INCLUDE [describe leaf node](../includes/display-leaf-nodes.md)]  
 
 ## Product backlog controls
 
-Use the following controls to change or filter your product backlog view. For more information, see [Configure your backlog view](configure-your-backlog-view.md).
+The product backlog toolbar groups controls into pivots, view options, and command menus. For full details, see [Configure your backlog view](configure-your-backlog-view.md).
 
-> [!IMPORTANT]  
-> If you turn the **In Progress** control off, items that are in the *Active*, *Committed*, or *Resolved* states or in the In Progress category workflow state don't appear in the backlog. For more information about category workflow states, see [About workflow states in backlogs and boards](../work-items/workflow-and-state-categories.md).
+**Pivots**
 
-| Control | Function |
+| Control | Description |
 |---|---|
-| **Backlog** | [Switch to backlog view](create-your-backlog.md) |
-| **Analytics** | [Switch to Analytics in-context reports](../../report/dashboards/overview.md#work-tracking-analytics) |
-| Backlog selector :::image type="icon" source="../../media/icons/backlogs.png" border="false"::: | [Switch backlog view](create-your-backlog.md) |
-| View options :::image type="icon" source="../../media/icons/view-options-icon.png" border="false"::: | [Turn Parents on/off](organize-backlog.md) (not available for top-level portfolio backlog) <br/> [Turn Forecasting on/off](../sprints/forecast.md) (only available on product backlog) <br/> [Turn In Progress items on/off](create-your-backlog.md#show-hide-in-progress) <br/> [Turn Completed child items on/off](create-your-backlog.md#show-hide-completed) <br/> [Show Mapping](organize-backlog.md) (not available for top-level portfolio backlog) <br/> [Show Planning](../sprints/assign-work-sprint.md) |
-| Filter :::image type="icon" source="../media/icons/filter-icon.png"::: | [Turn filtering on or off](filter-backlogs-boards-plans.md) |
-| Settings :::image type="icon" source="../../media/icons/blue-gear.png" border="false"::: | [Manage teams and configure team tools](../../organizations/settings/manage-teams.md) |
-| Full screen :::image type="icon" source="../../media/icons/full-screen-icon.png"::: / :::image type="icon" source="../../media/icons/exit-full-screen-icon.png"::: | Enter or exit full screen mode |
-| Expand/Collapse :::image type="icon" source="../media/icons/expand_icon.png"::: / :::image type="icon" source="../media/icons/collapse_icon.png"::: | Expand or collapse one level of the tree hierarchy |
-| More commands :::image type="icon" source="../../media/icons/actions-icon.png"::: | [Set column options](set-column-options.md) <br/> [Create Query](../queries/organize-queries.md) <br/> [Send email](../work-items/email-work-items.md) |
+| **Backlog** | [Show the work item list](create-your-backlog.md). |
+| **Analytics** | [Show in-context Analytics reports](../../report/dashboards/overview.md#work-tracking-analytics). |
+| Backlog selector :::image type="icon" source="../../media/icons/backlogs.png" border="false"::: | [Switch between portfolio, product, and sprint backlogs](create-your-backlog.md). |
 
-> [!NOTE]
-> Even if you turn on the **Show Parents** option, the **Create Query** and **Email** :::image type="icon" source="../media/icons/mail_icon.png"::: controls only list items at the currently selected level.
+**View options** :::image type="icon" source="../../media/icons/view-options-icon.png" border="false":::
+
+| Toggle | Description |
+|---|---|
+| **Parents** | [Show parent epics and features](organize-backlog.md). Not available on the top-level portfolio backlog. |
+| **Forecasting** | [Estimate which items fit in upcoming sprints](../sprints/forecast.md). Product backlog only. |
+| **In Progress items** | [Show or hide items in Active, Committed, or Resolved states](create-your-backlog.md#show-hide-in-progress). |
+| **Completed child items** | [Show or hide completed child items](create-your-backlog.md#show-hide-completed). |
+| **Mapping** | [Open the mapping pane to parent items by drag](organize-backlog.md). Not available on the top-level portfolio backlog. |
+| **Planning** | [Open the planning pane to drag items into sprints](../sprints/assign-work-sprint.md). |
+
+**Toolbar actions**
+
+| Control | Description |
+|---|---|
+| Filter :::image type="icon" source="../media/icons/filter-icon.png"::: | [Filter the backlog by keyword, tag, or field](filter-backlogs-boards-plans.md). |
+| Settings :::image type="icon" source="../../media/icons/blue-gear.png" border="false"::: | [Manage teams and configure team tools](../../organizations/settings/manage-teams.md). |
+| Expand/Collapse :::image type="icon" source="../media/icons/expand_icon.png"::: :::image type="icon" source="../media/icons/collapse_icon.png"::: | Expand or collapse one level of the hierarchy. |
+| Full screen :::image type="icon" source="../../media/icons/full-screen-icon.png"::: :::image type="icon" source="../../media/icons/exit-full-screen-icon.png"::: | Enter or exit full-screen mode. |
+| More commands :::image type="icon" source="../../media/icons/actions-icon.png"::: | [Set column options](set-column-options.md), [create a query](../queries/organize-queries.md), or [send email](../work-items/email-work-items.md). |
+
+> [!IMPORTANT]
+> When **Parents** is on, **Create Query** and **Send email** still only act on items at the currently selected backlog level.
 
 ## Permissions and access
 
-As a member of the Contributors group in a project, you can use most features under **Boards** or **Work**. Users with Basic access have full access to all features. Users with Stakeholder access are limited to certain features. For more information, see [Stakeholder access quick reference](../../organizations/security/stakeholder-access.md).
+What you can do on a backlog depends on your access level and group membership:
 
-For more information about permissions and access, see [Set work tracking permissions](../../organizations/security/permissions-access-work-tracking.md) and [Stakeholder access quick reference](../../organizations/security/stakeholder-access.md).
+| Access level or group | What you can do |
+|---|---|
+| **Basic** access | Full access to all backlog and board features. |
+| **Stakeholder** access | View backlogs and boards, add and edit work items, but limited control over backlog ordering and configuration. For details, see [Stakeholder access quick reference](../../organizations/security/stakeholder-access.md). |
+| **Contributors** group | Use most features under **Boards** or **Work** (with Basic access). |
+| **Project Administrators** group | Configure team settings, manage area and iteration paths, and customize backlog levels. |
 
-To add users to a project, see [Add users to a project or team](../../organizations/security/add-users-team-project.md).
+For the full permission matrix, see [Set work tracking permissions](../../organizations/security/set-permissions-access-work-tracking.md). To grant access, see [Add users to a project or team](../../organizations/security/add-users-team-project.md).
 
 [!INCLUDE [add portfolio backlogs and boards](../includes/add-portfolio-backlogs.md)]
 
