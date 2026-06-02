@@ -30,7 +30,7 @@ This article lists the Azure DevOps CLI commands and parameters you use to run E
 | `cutover cancel` | `--org`, `--repository-id` | `--detect` | PUT | Cancel a scheduled cutover. |
 | `cutover review` | `--org`, `--repository-id` | `--detect` | GET | List cutover failures awaiting approval. |
 | `cutover approve` | `--org`, `--repository-id`, `--accept-failures` | `--detect` | PUT | Approve cutover by accepting a count of unresolved failures. |
-| `abandon` | `--org`, `--repository-id` | `--remove-read-only`, `--detect` | DELETE | Permanently delete a migration. Prompts for confirmation. |
+| `abandon` | `--org`, `--repository-id` | `--remove-read-only`, `--yes`, `--detect` | DELETE | Permanently delete a migration. Prompts for confirmation. |
 
 ## Parameter details
 
@@ -49,6 +49,7 @@ This article lists the Azure DevOps CLI commands and parameters you use to run E
 | `--skip-validation` | string | `create` | Comma-separated list of validation policies to skip. |
 | `--accept-failures` | integer | `cutover approve` | Count of unresolved cutover failures to accept. Must be greater than or equal to `totalUnprocessedCount` returned by `cutover review`. |
 | `--remove-read-only` | flag | `abandon` | After cutover, lift the read-only state on the source Azure DevOps repository. No effect before cutover. |
+| `--yes` (`-y`) | flag | `abandon` | Skip the interactive confirmation prompt. Useful for scripted cleanup. |
 | `--include-inactive` | flag | `list` | Include completed, failed, and suspended migrations. |
 | `--detect` | flag | All | Auto-detect organization from the git remote (default: `true`). Use `--detect false` to disable. |
 
@@ -59,6 +60,8 @@ This article lists the Azure DevOps CLI commands and parameters you use to run E
 | Validation | Running pre-migration checks. |
 | Synchronization | Copying and syncing repository content. |
 | Cutover | Running the final sync and transitioning to GitHub. |
+| ReviewForCutover | Cutover reached the scheduled time with unresolved failures and is waiting for `cutover approve` (or rescheduling). |
+| ReadyForCutover | Approved and waiting for the next ELM job to perform the final cutover. |
 | Migrated | Migration complete. GitHub is the system of record. |
 
 ## Migration statuses
@@ -66,7 +69,8 @@ This article lists the Azure DevOps CLI commands and parameters you use to run E
 | Status | Meaning |
 |---|---|
 | Active | Migration is running. |
-| Succeeded / Completed | Current phase completed successfully. |
+| Succeeded | Current phase completed successfully. |
+| Completed | Migration reached the terminal `Migrated` stage. |
 | Failed | Error occurred. You can resume the migration after fixing the issue. |
 | Suspended | Manually paused. You can resume the migration. |
 

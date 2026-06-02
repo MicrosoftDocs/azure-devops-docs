@@ -95,7 +95,7 @@ The command returns a summary of unresolved items:
 | `totalUnprocessedCount` | Total items requiring approval. |
 | `unprocessedItems` | Detailed list of unprocessed items with URLs and error messages. |
 
-Review the `failedItems` list carefully so you understand which items aren't migrated if you choose to continue.
+Review the `unprocessedItems` list carefully so you understand which items aren't migrated if you choose to continue.
 
 ### Options in ReviewForCutover
 
