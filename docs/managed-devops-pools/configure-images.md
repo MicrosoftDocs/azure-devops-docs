@@ -317,7 +317,8 @@ Each image includes the following installed software:
 
 | Image | Included software |
 |-------|-------------------|
-| Azure Pipelines - Windows Server 2025 [Gen 2](#azure-pipelines-generation-2-images) | [Included software](https://github.com/actions/runner-images/blob/main/images/windows/Windows2025-Readme.md) |
+| Azure Pipelines - Windows Server 2025 [Gen 2](#azure-pipelines-generation-2-images) | [Included software](https://github.com/actions/runner-images/blob/main/images/windows/Windows2025-VS2026-Readme.md) |
+| Azure Pipelines - Windows Server 2025 Simple [Gen 2](#azure-pipelines-generation-2-images) | [Included software](https://github.com/actions/runner-images/blob/main/images/windows/Windows2025-Readme.md) |
 | Azure Pipelines - Windows Server 2022 [Gen 2](#azure-pipelines-generation-2-images) | [Included software](https://github.com/actions/runner-images/blob/main/images/windows/Windows2022-Readme.md) |
 | Azure Pipelines - Ubuntu 24.04 [Gen 2](#azure-pipelines-generation-2-images) | [Included software](https://github.com/actions/runner-images/blob/main/images/ubuntu/Ubuntu2404-Readme.md) |
 | Azure Pipelines - Ubuntu 22.04 [Gen 2](#azure-pipelines-generation-2-images) | [Included software](https://github.com/actions/runner-images/blob/main/images/ubuntu/Ubuntu2204-Readme.md) |
@@ -550,6 +551,7 @@ In addition to any aliases that you configure, Azure Pipelines images have the f
 | Azure Pipelines image | Predefined alias |
 |-----------------------|------------------|
 | Azure Pipelines - Windows Server 2025 [Gen 2](#azure-pipelines-generation-2-images) | `windows-2025-g2` |
+| Azure Pipelines - Windows Server 2025 Simple [Gen 2](#azure-pipelines-generation-2-images) | `windows-2025-simple-g2` |
 | Azure Pipelines - Windows Server 2022 [Gen 2](#azure-pipelines-generation-2-images) | `windows-2022-g2` |
 | Azure Pipelines - Ubuntu 24.04 [Gen 2](#azure-pipelines-generation-2-images) | `ubuntu-24.04-g2` |
 | Azure Pipelines - Ubuntu 22.04 [Gen 2](#azure-pipelines-generation-2-images) | `ubuntu-22.04-g2` |
