@@ -52,7 +52,7 @@ az devops migrations cutover cancel --org https://dev.azure.com/<org>
 ```
 
 > [!NOTE]
-> `cutover cancel` only works while the migration is still in the **Synchronization** stage. Once the stage advances to **Cutover**, the server rejects the cancel request and the CLI returns a non-zero exit code. If you need to stop a cutover that's already in progress, use `az devops migrations abandon` or contact the ELM team.
+> The `cutover cancel` command works only while the migration is still in the **Synchronization** stage. Once the stage advances to **Cutover**, the server rejects the cancel request and the CLI returns a non-zero exit code. If you need to stop a cutover that's already in progress, use `az devops migrations abandon` or contact the ELM team.
 
 ## What happens during cutover
 
