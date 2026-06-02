@@ -4,6 +4,23 @@
   href: get-started/what-is-repos.md
 - name: Get started
   href: get-started/toc.yml
+- name: Enterprise Live Migrations (ELM)
+  displayName: ELM, GitHub Enterprise Cloud, ADO to GitHub, live migration
+  items:
+  - name: 1. Learn about Enterprise Live Migrations
+    href: enterprise-live-migrations/overview.md
+  - name: 2. Complete prerequisites
+    href: enterprise-live-migrations/prerequisites.md
+  - name: 3. Start the migration
+    href: enterprise-live-migrations/start-migration.md
+  - name: 4. Monitor the migration
+    href: enterprise-live-migrations/monitor-migration.md
+  - name: 5. Cutover to GitHub
+    href: enterprise-live-migrations/cut-over-to-github.md
+  - name: 6. Complete post-migration tasks
+    href: enterprise-live-migrations/post-migration.md
+  - name: ELM CLI reference
+    href: enterprise-live-migrations/elm-cli-reference.md
 - name: Cross-service integration
   items:
   - name: Cross-service integration overview
@@ -33,21 +50,6 @@
   href: git/toc.yml
 - name: Team Foundation version control
   href: tfvc/toc.yml
-- name: Enterprise Live Migrations (ELM)
-  displayName: ELM, GitHub Enterprise Cloud, ADO to GitHub, live migration
-  items:
-  - name: 1. Learn about Enterprise Live Migrations
-    href: enterprise-live-migrations/overview.md
-  - name: 2. Complete prerequisites
-    href: enterprise-live-migrations/prerequisites.md
-  - name: 3. Start the migration
-    href: enterprise-live-migrations/start-migration.md
-  - name: 4. Monitor the migration
-    href: enterprise-live-migrations/monitor-migration.md
-  - name: 5. Cutover to GitHub
-    href: enterprise-live-migrations/cut-over-to-github.md
-  - name: 6. Complete post-migration tasks
-    href: enterprise-live-migrations/post-migration.md
 - name: Security
   items:
   - name: Configure GitHub Advanced Security

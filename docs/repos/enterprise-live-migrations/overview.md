@@ -183,3 +183,4 @@ The following table lists the current tool limits checked during validation and 
 ## Related content
 
 - [Complete prerequisites](prerequisites.md)
+- [ELM CLI reference](elm-cli-reference.md)

@@ -70,3 +70,4 @@ Pipeline rewiring and Azure Boards connection support are still in development. 
 
 - [Cutover to GitHub](cut-over-to-github.md)
 - [Learn about Enterprise Live Migrations](overview.md)
+- [ELM CLI reference](elm-cli-reference.md)

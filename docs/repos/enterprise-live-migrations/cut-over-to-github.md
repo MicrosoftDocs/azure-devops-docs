@@ -142,3 +142,4 @@ After approval, the migration moves to **ReadyForCutover**:
 
 - [Monitor the migration](monitor-migration.md)
 - [Learn about Enterprise Live Migrations](overview.md)
+- [ELM CLI reference](elm-cli-reference.md)

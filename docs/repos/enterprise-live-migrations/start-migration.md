@@ -168,3 +168,4 @@ During the initial sync:
 
 - [Complete prerequisites](prerequisites.md)
 - [Cutover to GitHub](cut-over-to-github.md)
+- [ELM CLI reference](elm-cli-reference.md)
