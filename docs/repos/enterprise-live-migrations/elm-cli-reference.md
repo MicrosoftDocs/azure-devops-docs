@@ -57,6 +57,7 @@ This article lists the Azure DevOps CLI commands and parameters you use to run E
 
 | Stage | Description |
 |---|---|
+| Queued | Migration accepted; work hasn't started yet. |
 | Validation | Running pre-migration checks. |
 | Synchronization | Copying and syncing repository content. |
 | Cutover | Running the final sync and transitioning to GitHub. |

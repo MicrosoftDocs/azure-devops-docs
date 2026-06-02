@@ -41,6 +41,7 @@ az devops migrations list --org https://dev.azure.com/<org>
 
 | Stage | Description |
 |---|---|
+| Queued | Migration accepted; work hasn't started yet. |
 | Validation | Running pre-migration checks. |
 | Synchronization | Copying and syncing repository content. |
 | Cutover | Running the final sync and transitioning to GitHub. |

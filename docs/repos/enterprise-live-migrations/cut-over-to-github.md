@@ -93,9 +93,9 @@ The command returns a summary of unresolved items:
 | `blockedCount` | Number of items blocked by dependencies. |
 | `pendingCount` | Number of items still pending. |
 | `totalUnprocessedCount` | Total items requiring approval. |
-| `unprocessedItems` | Detailed list of unprocessed items with URLs and error messages. |
+| `failedItems` | Detailed list of unprocessed items with state, type, and pull-request URL. |
 
-Review the `unprocessedItems` list carefully so you understand which items aren't migrated if you choose to continue.
+Review the `failedItems` list carefully so you understand which items aren't migrated if you choose to continue.
 
 ### Options in ReviewForCutover
 
