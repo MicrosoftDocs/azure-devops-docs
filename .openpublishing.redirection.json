@@ -1,6 +1,36 @@
 {
   "redirections": [
     {
+      "source_path": "docs/migrate/enterprise-live-migration/overview.md",
+      "redirect_url": "/azure/devops/repos/enterprise-live-migrations/overview",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/migrate/enterprise-live-migration/prerequisites.md",
+      "redirect_url": "/azure/devops/repos/enterprise-live-migrations/prerequisites",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/migrate/enterprise-live-migration/start-migration.md",
+      "redirect_url": "/azure/devops/repos/enterprise-live-migrations/start-migration",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/migrate/enterprise-live-migration/monitor-migration.md",
+      "redirect_url": "/azure/devops/repos/enterprise-live-migrations/monitor-migration",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/migrate/enterprise-live-migration/cut-over-to-github.md",
+      "redirect_url": "/azure/devops/repos/enterprise-live-migrations/cut-over-to-github",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/migrate/enterprise-live-migration/post-migration.md",
+      "redirect_url": "/azure/devops/repos/enterprise-live-migrations/post-migration",
+      "redirect_document_id": true
+    },
+    {
       "source_path": "docs/artifacts/artifacts-key-concepts.md",
       "redirect_url": "/previous-versions/azure/devops/artifacts/artifacts-key-concepts",
       "redirect_document_id": false,

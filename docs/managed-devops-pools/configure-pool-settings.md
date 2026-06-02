@@ -1,7 +1,7 @@
 ---
 title: Configure pool settings
 description: Learn how to configure settings in Managed DevOps Pools.
-ms.date: 01/29/2026
+ms.date: 06/01/2026
 ms.custom: sfi-image-nochange
 ms.topic: how-to
 ---
@@ -386,6 +386,9 @@ If your subscription doesn't have the capacity to configure your pool with the A
 To resolve the issue, see [Review Managed DevOps Pools quotas](./prerequisites.md#review-managed-devops-pools-quotas).
 
 Not all SKUs are supported for all Azure regions. If you receive an error like `SKU family <sku-family> is not available in location <region>`, ensure that your SKU size is supported for your region. For more information, see [Sizes for virtual machines in Azure](/azure/virtual-machines/sizes) and [Products available by region](https://azure.microsoft.com/explore/global-infrastructure/products-by-region/).
+
+> [!IMPORTANT]
+> [!INCLUDE [disk-controller-error](./includes/disk-controller-error.md)]
 
 ### OS disk type
 

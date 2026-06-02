@@ -1,21 +1,21 @@
 ---
-title: Introduction to Enterprise Live Migration (ELM)
+title: Introduction to Enterprise Live Migrations (ELM)
 titleSuffix: Azure DevOps
-description: Learn how Enterprise Live Migration (ELM) helps you migrate Azure DevOps repositories to GitHub Enterprise Cloud with data residency.
+description: Learn how Enterprise Live Migrations (ELM) helps you migrate Azure DevOps repositories to GitHub Enterprise Cloud with data residency.
 ms.subservice: azure-devops-migrate
 ms.topic: overview
 ms.author: chcomley
 author: chcomley
 monikerRange: 'azure-devops'
 ms.date: 06/01/2026
-#customer intent: As an Azure DevOps administrator, I want to understand Enterprise Live Migration so I can plan a migration of my Azure Repos to GitHub Enterprise Cloud.
+#customer intent: As an Azure DevOps administrator, I want to understand Enterprise Live Migrations so I can plan a migration of my Azure Repos to GitHub Enterprise Cloud.
 ---
 
-# About Enterprise Live Migration (ELM)
+# 1. Learn about Enterprise Live Migrations
 
 [!INCLUDE [version-eq-azure-devops](../../includes/version-eq-azure-devops.md)]
 
-Enterprise Live Migration (ELM) helps you migrate Azure DevOps repositories to GitHub Enterprise Cloud with data residency with minimal disruption. ELM continuously synchronizes the source and target repositories, so your teams can keep working in Azure DevOps Services until you're ready to cutover.
+Enterprise Live Migrations (ELM) helps you migrate Azure DevOps repositories to GitHub Enterprise Cloud with data residency with minimal disruption. ELM continuously synchronizes the source and target repositories, so your teams can keep working in Azure DevOps Services until you're ready to cutover.
 
 > [!NOTE]
 > ELM is currently in private preview. If you're interested in joining, [sign up here](https://aka.ms/elm-signup).
@@ -66,7 +66,7 @@ ELM stores only operational metadata about your migration—repository IDs, migr
 
 ELM writes migration lifecycle events to the Azure DevOps audit log so enterprise administrators can review who started, paused, resumed, scheduled cutover for, or abandoned a migration. Use the audit log to support compliance reviews and to reconstruct the migration timeline if you need to investigate an issue.
 
-To view audit events, go to **Organization settings** > **Auditing** and filter by the **Enterprise Live Migration** area.
+To view audit events, go to **Organization settings** > **Auditing** and filter by the **Enterprise Live Migrations** area.
 
 <!-- TODO: Expand this subsection after the next ring rollout. Confirm the exact event names and area filter, list which fields each event records, and add any new events that ship (for example, validate, cutover approve, review-for-cutover). Add operator-visible telemetry (CLI status fields, Azure Pipelines run logs to retain) as a separate "Telemetry" subsection once that story is finalized. -->
 
@@ -144,12 +144,12 @@ Each ELM job can run for up to one hour, but Azure Pipelines billing is based on
 
 At a high level, an ELM migration follows these steps. Each step links to detailed instructions.
 
-1. **Confirm prerequisites and collect values.** Verify access, tooling, and authentication, and gather the IDs you need to run migration commands. For more information, see [Prerequisites](prerequisites.md).
-1. **Authenticate and set defaults.** Sign in to Azure DevOps and set your default organization and project. For more information, see [Start the migration](start-migration.md).
-1. **Start a migration.** Use the ELM CLI to start the initial synchronization. For more information, see [Start the migration](start-migration.md).
-1. **Monitor sync progress.** Watch the initial sync and follow-on incremental syncs. For more information, see [Monitor the migration](monitor-migration.md).
-1. **Schedule the cutover.** Schedule the cutover as soon as you're ready. You must complete cutover within 21 days of starting the full migration (when the initial sync begins). For more information, see [Cutover to GitHub](cut-over-to-github.md).
-1. **Validate post-migration.** Confirm everything works after the migration completes. For more information, see [Post-migration activities](post-migration.md).
+1. **Learn about Enterprise Live Migrations.** Review this overview to understand what ELM does, what it migrates, and how it fits into your migration plan.
+1. **Complete prerequisites.** Verify access, tooling, and authentication, and gather the IDs you need to run migration commands. For more information, see [Complete prerequisites](prerequisites.md).
+1. **Start the migration.** Authenticate into Azure DevOps, set your defaults, and use the ELM CLI to start the initial synchronization. For more information, see [Start the migration](start-migration.md).
+1. **Monitor the migration.** Watch the initial sync and follow-on incremental syncs. For more information, see [Monitor the migration](monitor-migration.md).
+1. **Cutover to GitHub.** Schedule the cutover as soon as you're ready. You must complete cutover within 21 days of starting the full migration (when the initial sync begins). For more information, see [Cutover to GitHub](cut-over-to-github.md).
+1. **Complete post-migration tasks.** Confirm everything works after the migration completes. For more information, see [Complete post-migration tasks](post-migration.md).
 
 ## Pre-migration validation checks
 
@@ -157,7 +157,7 @@ The following table lists the current tool limits checked during validation and 
 
 | Limit | Threshold | If not addressed | Recommended action |
 |---|---|---|---|
-| Single file size in history | > 400 MB | Validation fails and the migration can't start until the file is removed or moved to LFS. | Rewrite history to remove the file or migrate it to Git LFS, then rerun validation. |
+| Single file size in history | > 400 MB | Validation fails and the migration can't start until the file is removed or moved to Git LFS (future). | Rewrite history to remove the file or migrate it to Git LFS (future), then rerun validation. |
 | Push pack size | > 2 GB | Validation fails and the migration can't start until the size is reduced. | Reduce repository size by removing or splitting large commits, migrate large files to Git LFS (future), or rewrite history to remove oversized objects. |
 | Branch or tag reference name length | > 255 bytes | Validation fails and the migration can't start until refs are renamed or deleted. | Rename or delete the offending branch or tag, then rerun validation. |
 | Validation result freshness | Must start the migration within 24 hours of a successful validate-only run. | You must rerun validation before you start a full migration. | Resume or start the full migration promptly after validation, or rerun validate-only. |
@@ -170,7 +170,7 @@ The following table lists the current tool limits checked during validation and 
 | Role | Description | Responsibilities |
 |---|---|---|
 | Migration operator (ELM user) | Person running the migration with the CLI | Generate a personal access token (PAT) for migration. Run validation and migration commands by using the Azure CLI. Provide the repository GUID, agent pool, and service connection ID. Monitor migration status and resolve errors. Schedule and run the cutover. |
-| Azure DevOps Project Collection Administrator (PCA) and Project Administrator (PA) | Organization-level and project-level admin in Azure DevOps | Grant the **Enterprise Live Migration: Manage Migrations** permission to the migration operator. Create or manage agent pools. Grant access to agent pools and service connections. |
+| Azure DevOps Project Collection Administrator (PCA) and Project Administrator (PA) | Organization-level and project-level admin in Azure DevOps | Grant the **Enterprise Live Migrations: Manage Migrations** permission to the migration operator. Create or manage agent pools. Grant access to agent pools and service connections. |
 | Agent pool owner | Person managing build agents | Set up a self-hosted Linux agent. Ensure the agent pool is available and accessible. Maintain agent health during migration. |
 | Repository owner or dev team | Team that owns the Azure DevOps repository | Clean up the repository before migration (large files, pull requests, and so on). Validate the migrated repository (branches, pull requests, history). Update pipelines, scripts, and tooling post-migration. |
 | GitHub Enterprise admin | Admin of the target GitHub organization | Generate a PAT for migration. Ensure the PAT has required scopes (for example, `repo`, `workflow`, `org`). Create the service connection in Azure DevOps by using the PAT. Share the service connection ID with the migration operator. Ensure the target organization exists and is ready. Grant access to users and configure SSO. Install the Azure Boards GitHub app. |
@@ -178,8 +178,8 @@ The following table lists the current tool limits checked during validation and 
 ## Next step
 
 > [!div class="nextstepaction"]
-> [Prerequisites for ELM](prerequisites.md)
+> [Complete prerequisites](prerequisites.md)
 
 ## Related content
 
-- [Prerequisites for ELM](prerequisites.md)
+- [Complete prerequisites](prerequisites.md)

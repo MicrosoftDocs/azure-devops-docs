@@ -25,18 +25,3 @@
 - name: Resolve migration errors
   displayName: migration errors, migration issues, migration problems, troubleshoot migration
   href: migration-troubleshooting.md
-- name: Enterprise Live Migration (ELM)
-  displayName: ELM, GitHub Enterprise Cloud, ADO to GitHub, live migration
-  items:
-  - name: Introduction to ELM
-    href: enterprise-live-migration/overview.md
-  - name: Prerequisites
-    href: enterprise-live-migration/prerequisites.md
-  - name: Start the migration
-    href: enterprise-live-migration/start-migration.md
-  - name: Monitor the migration
-    href: enterprise-live-migration/monitor-migration.md
-  - name: Cutover to GitHub
-    href: enterprise-live-migration/cut-over-to-github.md
-  - name: Post-migration activities
-    href: enterprise-live-migration/post-migration.md
