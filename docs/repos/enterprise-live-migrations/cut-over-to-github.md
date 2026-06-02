@@ -105,11 +105,9 @@ After you review the failures, choose one of the following options:
 |---|---|---|
 | Approve and proceed | Accepts the failures and advances to cutover. | You've reviewed all failures and are OK proceeding without those items. |
 | Clear cutover date | Resets to **Synchronization**. Migration keeps syncing. | You want to fix the issues first and schedule a new cutover later. |
-| Reschedule cutover | Resets to **Synchronization** with a new cutover date. | You want more time. If failures resolve by the new date, cutover proceeds automatically. |
-| Delete the migration | Aborts the GitHub migration and marks it as **Failed**. | You want to abandon this migration entirely. |
+| Reschedule cutover | Resets to **Synchronization** with a new cutover date. Run `az devops migrations cutover set --date <new>` again to set a new date. If failures resolve by the new date, cutover proceeds automatically. | You want more time. |
+| Delete the migration | Deletes the migration record. An audit event is written; the source Azure DevOps repository is unchanged. | You want to abandon this migration entirely. |
 | Pause the migration | Suspends syncing until you manually resume it. | You need to pause all activity while you investigate. |
-
-<!-- TODO: Document the CLI command to reschedule cutover. Is it `az devops migrations cutover set` again with a new `--date`, or a separate `reschedule` action? The other options in this table map to explicit commands; this one doesn't. -->
 
 ### Approve cutover
 
@@ -124,9 +122,7 @@ az devops migrations cutover approve --org https://dev.azure.com/<org>
 Set `<N>` to a value greater than or equal to `totalUnprocessedCount` from the cutover review.
 
 > [!NOTE]
-> If new failures appear after you review and before you approve, the command is rejected. Run the review again, note the updated count, and retry the approval.
-
-<!-- TODO: Document the exact error message or error code returned when `cutover approve` is rejected due to new failures, so operators can match it in scripts/automation. -->
+> If new failures appear after you review and before you approve, the command is rejected with an HTTP 400 surfaced as a `CLIError` indicating the failure count no longer matches. Run `cutover review` again, note the updated `totalUnprocessedCount`, and retry the approval. Scripts and automation can match on the non-zero exit code.
 
 After approval, the migration moves to **ReadyForCutover**:
 

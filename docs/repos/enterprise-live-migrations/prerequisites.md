@@ -108,14 +108,13 @@ The steps in this section use the command line. Install the Azure CLI and the Az
    winget install -e --id Microsoft.AzureCLI
    ```
 
-1. Install the Azure DevOps CLI extension. For more information, see [Get started with Azure DevOps CLI](../../cli/index.md).
-1. Install the ELM extension:
+1. Install the Azure DevOps CLI extension. For more information, see [Get started with Azure DevOps CLI](../../cli/index.md):
 
    ```azurecli
    az extension add -n azure-devops
    ```
 
-   <!-- TODO: The phrase "ELM extension" is misleading. `azure-devops` is the standard Azure DevOps CLI extension that happens to expose the `az devops migrations` commands. Confirm whether a dedicated ELM extension is planned. If not, rename this step to "Install (or update) the Azure DevOps CLI extension" and remove the duplication with step 2 just above. -->
+   The `az devops migrations` commands ship as part of the standard `azure-devops` extension. There's no separate ELM extension to install.
 
 1. Verify the extension is loaded:
 
