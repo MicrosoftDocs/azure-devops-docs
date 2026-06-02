@@ -21,6 +21,8 @@
     href: enterprise-live-migrations/post-migration.md
   - name: ELM CLI reference
     href: enterprise-live-migrations/elm-cli-reference.md
+  - name: Troubleshoot ELM
+    href: enterprise-live-migrations/troubleshoot.md
 - name: Cross-service integration
   items:
   - name: Cross-service integration overview

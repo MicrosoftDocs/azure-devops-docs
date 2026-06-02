@@ -54,6 +54,10 @@ landingContent:
         links:
           - text: ELM CLI reference
             url: ./enterprise-live-migrations/elm-cli-reference.md
+      - linkListType: how-to-guide
+        links:
+          - text: Troubleshoot ELM
+            url: ./enterprise-live-migrations/troubleshoot.md
   - title: Connect & authentication
     linkLists:
       - linkListType: overview
