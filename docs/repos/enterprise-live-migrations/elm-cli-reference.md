@@ -48,7 +48,7 @@ This article lists the Azure DevOps CLI commands and parameters you use to run E
 | `--date` | ISO 8601 | `cutover set` | Schedule cutover date and time, for example `2030-12-31T11:59:00Z`. |
 | `--skip-validation` | string | `create` | Comma-separated list of validation policies to skip. |
 | `--accept-failures` | integer | `cutover approve` | Count of unresolved cutover failures to accept. Must be greater than or equal to `totalUnprocessedCount` returned by `cutover review`. |
-| `--remove-read-only` | flag | `abandon` | After cutover, lift the read-only state on the source Azure DevOps repository. No effect before cutover. |
+| `--remove-read-only` | flag | `abandon` | After cutover, the source Azure DevOps repository is set to read-only. Add this flag to restore write access. Only applies after cutover. |
 | `--yes` (`-y`) | flag | `abandon` | Skip the interactive confirmation prompt. Useful for scripted cleanup. |
 | `--include-inactive` | flag | `list` | Include completed, failed, and suspended migrations. |
 | `--detect` | flag | All | Auto-detect organization from the git remote (default: `true`). Use `--detect false` to disable. |

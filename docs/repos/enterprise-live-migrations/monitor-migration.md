@@ -106,7 +106,7 @@ az devops migrations abandon --org https://dev.azure.com/<org>
                              --repository-id <repo-guid>
 ```
 
-If you're abandoning a migration *after* cutover and the source Azure DevOps repository is still in the controlled read-only state, add `--remove-read-only` to lift it. The flag has no effect before cutover.
+After cutover, the Azure DevOps repository is set to read-only. If you want to resume writing to it, add `--remove-read-only` to restore write access. This flag only applies after cutover.
 
 ```azurecli
 az devops migrations abandon --org https://dev.azure.com/<org>
