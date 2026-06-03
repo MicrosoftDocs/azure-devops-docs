@@ -1449,42 +1449,11 @@ If you connect [Azure DevOps MCP Server](../../mcp-server/mcp-server-overview.md
 | Format code samples | `Format the following PowerShell snippet as a fenced code block with syntax highlighting` |
 | Create a README | `Generate a README.md for the <Contoso> repo that includes a project overview, prerequisites, build steps, and a contributing section` |
 | Fix Markdown issues | `Review this wiki page Markdown and fix broken links, heading levels, and table alignment` |
+| Troubleshoot rendering | `My Markdown table isn't rendering in my Azure DevOps wiki. Review the syntax and tell me what's wrong and how to fix it` |
 | Summarize a wiki page | `Summarize the linked wiki page into a short paragraph suitable for a pull request description` |
 
 > [!NOTE]
 > Agent mode and the MCP Server use natural language, so you can adjust these prompts or ask follow-up questions to refine the results.
-
-## Troubleshoot Markdown rendering
-
-Use the following guidance to resolve common Markdown rendering issues in wiki pages, README files, and pull requests.
-
-### Markdown renders as plain text
-
-Make sure the file uses the `.md` extension and that the surface you're viewing supports Markdown. Some fields, such as work item description fields that aren't configured for rich text, render the raw characters instead of formatted output. For the supported surfaces, see [Support for Azure DevOps features](#support-for-azure-devops-features).
-
-### Tables don't render
-
-Tables require a header row, a separator row that uses hyphens (`---`), and a blank line above the table. If any of these elements is missing, the table renders as plain text. For the correct syntax, see [Tables](#tables).
-
-### Images don't display
-
-Image paths are case-sensitive and resolve differently in each surface. In a wiki, reference attached images with `/.attachments/image-name.png`. In a Git repo, use a path that's relative to the Markdown file. If the image still doesn't appear, confirm the file is committed to the same branch you're viewing.
-
-### Mermaid or KaTeX blocks don't render
-
-Fenced code blocks must include the language tag `mermaid` or `math` for diagrams and equations to render. These features are only supported in wiki pages. For details, see [Work with Mermaid diagrams](#work-with-mermaid-diagrams) and [Mathematical notation and characters](#math-notation).
-
-### Headings create unexpected anchor links
-
-Azure DevOps generates heading anchors automatically by lowercasing the heading text and replacing spaces with hyphens. Punctuation is removed. When you link to a heading, match the generated anchor exactly. For more information, see [Anchor links](#anchor-links).
-
-### HTML tags are stripped
-
-Markdown in Azure DevOps doesn't support JavaScript, iframes, or other interactive HTML elements. Inline HTML for formatting, such as `<sup>`, `<sub>`, `<span>`, and `<small>`, is supported in wiki pages. Unsupported tags are removed when the page renders.
-
-### Line breaks are ignored
-
-Markdown collapses single newlines into a single paragraph. To force a line break, end the line with two trailing spaces, or insert a blank line to start a new paragraph.
 
 ## Frequently asked questions
 
