@@ -1,9 +1,10 @@
 ---
 ms.topic: include
+ms.date: 06/02/2026
 ---
 
-You can create a hierarchy of backlog items, tasks, and bugs. We don't recommend that you create same-category hierarchies. In other words, don't create parent-child links for work items of the same type, such as story-story, bug-bug, or task-task.
+Keep each work item type in a flat list, and link parents and children only across different types &mdash; for example, epic to feature, feature to story, story to task. Avoid same-type hierarchies like story-to-story, bug-to-bug, or task-to-task.
 
-The last node in a same-category hierarchy might only appear on boards, sprint backlogs, and Taskboards. For example, if you link items within a same-category hierarchy that's four levels deep, only the items at the fourth level appear on the board, sprint backlog, and Taskboard.  
+If you create a same-category hierarchy, only the leaf node appears on boards, sprint backlogs, and taskboards. For example, in a four-level chain of tasks, only the fourth-level tasks show up.
 
-Rather than nest requirements, bugs, and tasks, we recommend that you maintain a flat list. Create parent-child links one level deep between items that belong to a different category. For more information, see [Troubleshoot reordering and nesting issues](../backlogs/resolve-backlog-reorder-issues.md).
+For more information, see [Troubleshoot reordering and nesting issues](../backlogs/resolve-backlog-reorder-issues.md).

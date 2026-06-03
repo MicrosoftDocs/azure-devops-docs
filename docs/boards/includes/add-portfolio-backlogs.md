@@ -3,29 +3,30 @@ ms.service: azure-devops-boards
 ms.author: chcomley
 author: chcomley
 ms.topic: include
-ms.date: 08/01/2023
+ms.date: 06/02/2026
 ---
 
 ## Add portfolio backlogs and boards
 
+To add a portfolio backlog or board, customize your process to add or modify work item types, then enable those types on the backlogs and boards you want.
+
 ::: moniker range="azure-devops"
 
-To add a portfolio backlog or board, customize your process, add new work item types, and then configure your backlogs and boards. You can also add or modify the fields defined for a work item type (WIT) or add a custom WIT. For more information, see [About process customization and inherited processes](../../organizations/settings/work/inheritance-process-model.md) and [Customize your backlogs or boards](../../organizations/settings/work/customize-process-backlogs-boards.md). 
+Use the inherited process model:
+
+- [Customize an inherited process](../../organizations/settings/work/inheritance-process-model.md)
+- [Customize your backlogs or boards for a process](../../organizations/settings/work/customize-process-backlogs-boards.md)
 
 ::: moniker-end
 
 ::: moniker range="<azure-devops"
 
-To add a portfolio backlog or board, either customize your inherited process or modify your XML definition files. You can also add or modify the fields defined for a work item type (WIT) or add a custom WIT. For more information, see the following articles based on the process model used to update your project: 
+Choose your process model:
 
-**Inheritance process model:**
-- [Customize your backlogs or boards for a process](../../organizations/settings/work/customize-process-backlogs-boards.md)
-- [Customize an inheritance process](../../organizations/settings/work/inheritance-process-model.md)
-
-**On-premises XML process model:**
-- [Customize work tracking](../../reference/customize-work.md)
-- [Add portfolio backlogs](../../reference/add-portfolio-backlogs.md)
-- [Customize the On-premises XML process model](../../reference/on-premises-xml-process-model.md)
+| Process model | Reference |
+|---|---|
+| Inherited process | [Customize an inherited process](../../organizations/settings/work/inheritance-process-model.md) &bull; [Customize your backlogs or boards](../../organizations/settings/work/customize-process-backlogs-boards.md) |
+| On-premises XML | [Customize work tracking](../../reference/customize-work.md) &bull; [Add portfolio backlogs](../../reference/add-portfolio-backlogs.md) &bull; [Customize the On-premises XML process model](../../reference/on-premises-xml-process-model.md) |
 
 ::: moniker-end
 
