@@ -7,4 +7,4 @@ Keep each work item type in a flat list, and link parents and children only acro
 
 If you create a same-category hierarchy, only the leaf node appears on boards, sprint backlogs, and taskboards. For example, in a four-level chain of tasks, only the fourth-level tasks show up.
 
-For more information, go to [Troubleshoot reordering and nesting issues](../backlogs/resolve-backlog-reorder-issues.md).
+For more information, see [Troubleshoot reordering and nesting issues](../backlogs/resolve-backlog-reorder-issues.md).
