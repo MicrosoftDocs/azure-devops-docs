@@ -4,7 +4,8 @@ description: Learn how to troubleshoot pipeline runs in Azure Pipelines using lo
 ms.author: sdanie
 ms.reviewer: steved0x
 ms.topic: troubleshooting
-ms.date: 04/20/2026
+ms.custom: copilot-scenario-highlight
+ms.date: 06/03/2026
 monikerRange: '<= azure-devops'
 author: steved0x
 ---
@@ -14,6 +15,8 @@ author: steved0x
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 If your pipeline run fails to complete, use the diagnostic information and logs on the pipeline run summary page to troubleshoot the issue. This guide provides instructions for diagnosing pipeline failures using logs, error analysis tools, and common troubleshooting techniques. Learn how to identify root causes and implement solutions to keep your pipelines running smoothly.
+
+[!INCLUDE [ai-assistance-mcp-server-tip](../../includes/ai-assistance-mcp-server-tip.md)]
 
 :::image type="content" source="./media/pipeline-run-summary-troubleshooting.png" lightbox="./media/pipeline-run-summary-troubleshooting.png" alt-text="Screenshot of pipeline run summary page with diagnostic information.":::
 
@@ -442,6 +445,33 @@ For information on capturing additional resource utilization logs, see [Capture 
 
 In this scenario, you can use the [Azure File Copy task](/azure/devops/pipelines/tasks/reference/azure-file-copy-v4) to upload content to the website. You can use any of the tools described in [Uploading content](/azure/storage/blobs/storage-blob-static-website#uploading-content) to upload content to the web container.
 
+## Use AI to troubleshoot pipeline runs
+
+If you connect [Azure DevOps MCP Server](../../mcp-server/mcp-server-overview.md) to your AI agent in agent mode, you can use natural language prompts to investigate failed runs, surface log details, and suggest fixes for common pipeline issues.
+
+| Task | Example prompt |
+|------|----------------|
+| Diagnose a failed run | `Get the most recent failed run for the <Contoso-CI> pipeline and summarize the root cause from the logs` |
+| Find failing task logs | `Show me the failing task in build <12345> and include the surrounding 50 lines of log output` |
+| Compare with the last success | `Compare the failing run of <Contoso-CI> with the last successful run and tell me what changed` |
+| Investigate flaky tests | `List tests that failed intermittently across the last 10 runs of the <Contoso-CI> pipeline` |
+| Triage permission errors | `Build <12345> failed with a resource authorization error. Identify which resource needs approval and how to grant it` |
+| Analyze agent issues | `Check the agent that ran build <12345> for capacity, capability, and connectivity problems` |
+| Investigate timeouts | `Find jobs in the <Contoso-CI> pipeline that exceeded their timeout in the past week and show their durations` |
+| Surface common failure patterns | `Cluster the failure messages from the last 20 failed runs of <Contoso-CI> and rank the top causes` |
+| Suggest YAML fixes | `Read the failing job in build <12345> and propose a YAML change that resolves the error` |
+| Check service connection health | `List service connections used by <Contoso-CI> and flag any that are expired or about to expire` |
+
+> [!NOTE]
+> Agent mode and the MCP Server use natural language, so you can adjust these prompts or ask follow-up questions to refine the results.
+
 ## Next step
 
-* [Review logs](./review-logs.md) to uncover additional diagnostic tools.  
+* [Review logs](./review-logs.md) to uncover additional diagnostic tools. 
+
+## Related content
+
+- [Azure DevOps MCP Server overview](../../mcp-server/mcp-server-overview.md)
+- [Review logs to diagnose pipeline issues](./review-logs.md)
+- [Azure Pipelines key concepts](../get-started/key-pipelines-concepts.md)
+   
