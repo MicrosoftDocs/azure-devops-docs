@@ -465,12 +465,9 @@ If you connect [Azure DevOps MCP Server](../../mcp-server/mcp-server-overview.md
 > [!NOTE]
 > Agent mode and the MCP Server use natural language, so you can adjust these prompts or ask follow-up questions to refine the results.
 
-## Next step
-
-* [Review logs](./review-logs.md) to uncover additional diagnostic tools. 
-
 ## Related content
 
+- [Review logs](./review-logs.md) to uncover additional diagnostic tools. 
 - [Azure DevOps MCP Server overview](../../mcp-server/mcp-server-overview.md)
 - [Review logs to diagnose pipeline issues](./review-logs.md)
 - [Azure Pipelines key concepts](../get-started/key-pipelines-concepts.md)
