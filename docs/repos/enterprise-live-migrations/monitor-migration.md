@@ -41,9 +41,12 @@ az devops migrations list --org https://dev.azure.com/<org>
 
 | Stage | Description |
 |---|---|
+| Queued | Migration accepted; work hasn't started yet. |
 | Validation | Running pre-migration checks. |
 | Synchronization | Copying and syncing repository content. |
 | Cutover | Running the final sync and transitioning to GitHub. |
+| ReviewForCutover | Cutover reached the scheduled time with unresolved failures and is waiting for `cutover approve` (or rescheduling). |
+| ReadyForCutover | Approved and waiting for the next ELM job to perform the final cutover. |
 | Migrated | Migration complete. GitHub is the system of record. |
 
 ### Migration statuses
@@ -52,6 +55,7 @@ az devops migrations list --org https://dev.azure.com/<org>
 |---|---|
 | Active | Migration is running. |
 | Succeeded | Current phase completed successfully. |
+| Completed | Migration reached the terminal `Migrated` stage. |
 | Failed | An error occurred. You can resume after you fix the issue. |
 | Suspended | Manually paused. You can resume. |
 
@@ -101,6 +105,16 @@ At any point during syncing, if you want to stop and delete a migration, run the
 az devops migrations abandon --org https://dev.azure.com/<org>
                              --repository-id <repo-guid>
 ```
+
+After cutover, the Azure DevOps repository is set to read-only. If you want to resume writing to it, add `--remove-read-only` to restore write access. This flag only applies after cutover.
+
+```azurecli
+az devops migrations abandon --org https://dev.azure.com/<org>
+                             --repository-id <repo-guid>
+                             --remove-read-only
+```
+
+To skip the interactive confirmation prompt (for scripted cleanup), add `--yes`.
 
 After you abandon a migration:
 

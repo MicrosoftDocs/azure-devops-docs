@@ -35,7 +35,7 @@ Otherwise, Docker for Windows won't start.
 ### Install Docker for Windows
 
 If you're using Windows 10, you can install the [Docker Community Edition](https://docs.docker.com/docker-for-windows/install).
-For Windows Server 2016, install the [Docker Enterprise Edition](https://docs.docker.com/install/windows/docker-ee).
+For Windows Server 2016, install the [Mirantis Container Runtime](/virtualization/windowscontainers/quick-start/set-up-environment) (formerly Docker Enterprise Edition).
 
 ### Switch Docker to use Windows containers
 

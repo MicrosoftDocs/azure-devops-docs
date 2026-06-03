@@ -140,8 +140,8 @@ az devops migrations status --org https://dev.azure.com/<org>
 
 Look for:
 
-- `status` — current migration status (`Active`, `Failed`, `Suspended`, `Succeeded`)
-- `stage` — current migration phase (`Validation`, `Synchronization`, `Cutover`, `Migrated`)
+- `status` — current migration status (`Active`, `Succeeded`, `Completed`, `Failed`, `Suspended`)
+- `stage` — current migration phase (`Queued`, `Validation`, `Synchronization`, `Cutover`, `ReviewForCutover`, `ReadyForCutover`, `Migrated`)
 - `validationIssues` — list of precheck failures with error codes and messages
 - `errorMessage` — details about the failure
 
