@@ -23,7 +23,10 @@ Use this article to diagnose and resolve common errors that occur during an Ente
 |---|---|---|
 | `403 Forbidden` on `migrations create` | Insufficient Azure DevOps permissions. | Confirm you have the **Enterprise Live Migrations: Manage Migrations** permission. |
 | Target repository already under migration | Another migration exists for the same target. | Wait for it to complete or abandon it, and then try again. |
+<<<<<<< HEAD
 | `TargetRepositoryDoesNotExist` precheck fails | The target GitHub repository already exists (often because a prior migration was abandoned without cleanup). | Delete the target GitHub repository and run `migrations create` again. If you intentionally want to reuse a non-empty target, pass `--skip-validation TargetRepositoryDoesNotExist`, but only after confirming the existing contents are safe to overwrite. |
+=======
+>>>>>>> f9ef3d9f08a14dbbea8a24046a11d5c8d497af54
 | Target repository in incompatible state | Target isn't empty or was used by a different source repo. | Use an empty target repository. If you previously canceled a migration, delete the target repo and try again. |
 | Wrong org in `--org` | Auto-detect overrode `--org`. | Add `--detect false` to the command, or update the default org. |
 | `The migrations command is not recognized` | Azure DevOps CLI extension isn't installed or is outdated. | Install or update the Azure DevOps CLI extension, and then verify the command is available before starting again. |
@@ -69,7 +72,10 @@ If your migration is in **Failed** status during the **Cutover** stage, check `e
 | Requests go to old org URL | Stale default org in config. | Run `az devops configure --defaults organization=https://dev.azure.com/<org>`. |
 | `az devops migrations` command not found | Azure DevOps extension isn't installed or is outdated. | Install or update: `az extension add -n azure-devops` or `az extension update -n azure-devops`. |
 | Active-state error on resume | Migration is already active. | Pause first with `az devops migrations pause`, and then resume. |
+<<<<<<< HEAD
 | `cutover cancel` returns an error | Stage has already advanced to `Cutover` — cancel is only allowed during `Synchronization`. | Use `az devops migrations abandon` to stop the migration, or contact the ELM team if cutover is in progress. |
+=======
+>>>>>>> f9ef3d9f08a14dbbea8a24046a11d5c8d497af54
 | Wrong repository migrated | Wrong repository GUID used. | Always verify with `az repos show --query id` before creating a migration. |
 
 ## Post-migration issues
