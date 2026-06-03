@@ -1,7 +1,7 @@
 ---
 title: Markdown Syntax for Files, Widgets, Wikis
 titleSuffix: Azure DevOps  
-ms.custom: wiki, devdivchpfy22
+ms.custom: wiki, devdivchpfy22, copilot-scenario-highlight
 description: Use Markdown syntax to format content as tables, lists, headings, links, math notation, and more. Share information effectively in pull requests, README files, dashboards, and wikis in Azure DevOps.
 ms.subservice: azure-devops-wiki
 ai-usage: ai-assisted 
@@ -10,7 +10,7 @@ author: chcomley
 ms.reviewer: gopinach
 ms.topic: concept-article
 monikerRange: '<= azure-devops'
-ms.date: 02/18/2026
+ms.date: 06/03/2026
 #customer intent: As an Azure DevOps developer, I want to use Markdown to create tables, lists, headings, and more, so I can share my project information in pull requests, README files, dashboards, and wikis.
 ---
 
@@ -24,7 +24,7 @@ This article describes the basic syntax for using Markdown (*.md*) format with A
 
 Two formatting options are available: common [Markdown conventions](https://daringfireball.net/projects/markdown/syntax), and [Markdown extensions for GitHub](https://docs.github.com/get-started/writing-on-github).
 
-[!INCLUDE [ai-assistance-callout](../../includes/ai-assistance-callout.md)]
+[!INCLUDE [ai-assistance-mcp-server-tip](../../includes/ai-assistance-mcp-server-tip.md)]
 
 ## Support for Azure DevOps features
 
@@ -540,7 +540,7 @@ When a Markdown file renders as HTML, the system assigns an anchor ID to each he
 
 - Replace spaces in the header text with hyphens `-`.
 - Change uppercase letters to lowercase.
-- Convert most special characters and punctuation to hyphens, including `:`, `"`, `?`, `@`, `, `#`.
+- Convert most special characters and punctuation to hyphens, including `:`, `"`, `?`, `@`, `,`, and `#`.
 - Remove or convert other special characters according to the rendering engine's rules.
 
 Use the hash mark `#` to link to the header in the document, as in `[Display text](#<header-anchor>)`.
@@ -595,7 +595,7 @@ Here's an example that adds an illustration to a Markdown file:
 ```
 
 > [!IMPORTANT]
-> External images in markdown (files, widgets, and wikis) may not display if the host does not provide the required CORS or CORP headers. The renderer automatically applies `crossorigin="anonymous"` to all external images, which may cause images from unsupported sources to be blocked.
+> External images in markdown (files, widgets, and wikis) might not display if the host doesn't provide the required CORS or CORP headers. The renderer automatically applies `crossorigin="anonymous"` to all external images, which might cause images from unsupported sources to be blocked.
 
 ### Image path
 
@@ -1264,7 +1264,7 @@ The following example shows how the publishing system ignores extra formatting f
 
 ## Table of subpages for a wiki page
 
-Add a table of subpages for a wiki page by using the `[[_TOSP_]]` syntax tag. The title of the table on the page is "Child Pages." The table includes an entry for each subpage of the wiki page.
+Add a table of subpages for a wiki page by using the `[[_TOSP_]]` syntax tag. The title of the table on the page is **Child Pages**. The table includes an entry for each subpage of the wiki page.
 
 To create the table of subpages, add the `[[_TOSP_]]` syntax tag to the wiki page in Markdown or select **More options** (**...**) > **Table of Subpages** in the **Edit** view for the page.
 
@@ -1432,8 +1432,70 @@ Here's the same published page in Dark theme view:
 
 :::image type="content" source="media/wiki/green-red-dark-theme.png" border="true" alt-text="Screenshot of a published wiki page that uses HTML rich text formatting, as shown in Dark theme view.":::
 
+<a id="use-ai-assistance"></a>
+
+## Use AI to author Markdown content
+
+If you connect [Azure DevOps MCP Server](../../mcp-server/mcp-server-overview.md) to your AI agent in agent mode, you can use natural language prompts to draft, format, and review Markdown content for wiki pages, README files, and pull requests.
+
+| Task | Example prompt |
+|------|----------------|
+| Draft a wiki page | `Create a Markdown wiki page that documents the onboarding process for new engineers on <Contoso>` |
+| Convert content to Markdown | `Convert the following bulleted outline into a properly formatted Markdown wiki page with headings and a table of contents` |
+| Generate a table | `Create a Markdown table that compares the supported Markdown features across pull requests, wikis, and README files` |
+| Build a checklist | `Generate a Markdown task list for reviewing a pull request in <Contoso>` |
+| Add a Mermaid diagram | `Add a Mermaid sequence diagram to my wiki page that shows the deployment flow from build to release` |
+| Insert math notation | `Write the quadratic formula in KaTeX so it renders in an Azure DevOps wiki` |
+| Format code samples | `Format the following PowerShell snippet as a fenced code block with syntax highlighting` |
+| Create a README | `Generate a README.md for the <Contoso> repo that includes a project overview, prerequisites, build steps, and a contributing section` |
+| Fix Markdown issues | `Review this wiki page Markdown and fix broken links, heading levels, and table alignment` |
+| Troubleshoot rendering | `My Markdown table isn't rendering in my Azure DevOps wiki. Review the syntax and tell me what's wrong and how to fix it` |
+| Summarize a wiki page | `Summarize the linked wiki page into a short paragraph suitable for a pull request description` |
+
+> [!NOTE]
+> Agent mode and the MCP Server use natural language, so you can adjust these prompts or ask follow-up questions to refine the results.
+
+## Frequently asked questions
+
+### Does Azure DevOps support GitHub Flavored Markdown?
+
+Azure DevOps supports common Markdown conventions and most GitHub Flavored Markdown extensions, including tables, task lists, fenced code blocks, and emojis. Support varies by surface. For a feature-by-feature matrix, see [Support for Azure DevOps features](#support-for-azure-devops-features).
+
+### Can I use JavaScript or iframes in a wiki page?
+
+No. Markdown in Azure DevOps doesn't support JavaScript or iframes. You can't embed interactive elements such as countdown timers or third-party widgets.
+
+### Which Markdown features work in pull request descriptions versus wiki pages?
+
+Pull requests and wiki pages share most Markdown features, but a few differ. For example, the **Suggest change** syntax only works in pull requests, while attachments and table of contents tags are wiki-only. For the full matrix, see [Support for Azure DevOps features](#support-for-azure-devops-features).
+
+### How do I link to a heading on the same wiki page?
+
+Use an anchor link with the lowercased heading text and hyphens in place of spaces. For example, link to **Work with Mermaid diagrams** with `[Mermaid](#work-with-mermaid-diagrams)`. For more information, see [Anchor links](#anchor-links).
+
+### Can I include emojis in pull request comments and wiki pages?
+
+Yes. Use the `:emoji-name:` syntax in pull request comments and wiki pages. For examples, see [Emojis](#emoji-reactions).
+
+### How do I attach a file to a wiki page?
+
+Drag the file into the editor, or paste it from your clipboard. Azure DevOps stores the file in the wiki's `.attachments` folder and inserts a Markdown link. For more information, see [Attachments](#attachments).
+
+### Does the wiki support diagrams?
+
+Yes. Wiki pages support Mermaid diagrams, including sequence, flowchart, Gantt, class, and state diagrams. For supported diagram types and syntax, see [Work with Mermaid diagrams](#work-with-mermaid-diagrams).
+
+### How do I render math equations?
+
+Wiki pages render math equations with KaTeX. Wrap inline math in single dollar signs (`$...$`) and block math in a fenced code block with the `math` language tag. For examples, see [Mathematical notation and characters](#math-notation).
+
+### Can I write Markdown with AI assistance?
+
+Yes. Connect the [Azure DevOps MCP Server](../../mcp-server/mcp-server-overview.md) to your AI agent in agent mode and use natural language prompts to draft and format Markdown content. For example prompts, see [Use AI to author Markdown content](#use-ai-to-author-markdown-content).
+
 ## Related content  
 
 - [Project page or Welcome pages](../../organizations/projects/project-vision-status.md)
 - [Widget catalog](../../report/dashboards/widget-catalog.md)
 - [Add and edit Wiki pages](add-edit-wiki.md)
+- [Azure DevOps MCP Server overview](../../mcp-server/mcp-server-overview.md)
