@@ -80,7 +80,7 @@ Security campaigns let you create and share filtered views of alerts to coordina
 
 The page applies filters as URL parameters. You can easily share a specific filtered view with your team by copying the URL.
 
-:::image type="content" source="media/advanced-security-security-overview-alerts-filters.png" lightbox="media/advanced-security-security-overview-alerts-filters.png" alt-text="Screenshot of enabling Alerts page in the security overview tab.":::
+:::image type="content" source="media/advanced-security-security-overview-alerts-filters.png" lightbox="media/advanced-security-security-overview-alerts-filters.png" alt-text="Screenshot of a filtered Alerts view used to create a security campaign in the security overview tab.":::
 
 Campaigns are useful for:
 
