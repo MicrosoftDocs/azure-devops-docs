@@ -86,13 +86,13 @@ sections:
       - question: |
           How many Azure DevOps organizations can I create?
         answer: |
-          Azure DevOps limits the number of organizations you can create to help protect the service and ensure a reliable experience for all customers.
-          The number you can create varies based on your Azure subscription and usage history.
-
-          If you reach your limit, this behavior is expected.
-          The limit resets automatically over time, and support can't manually increase it.
-          If you need to create more organizations sooner, you can use a different Azure subscription.
-          This behavior applies to Microsoft Entra ID accounts (work or school accounts).
+          Microsoft Entra ID accounts (work or school accounts) can create multiple organizations. 
+          The number of organizations that an account can create varies, Azure DevOps limits the total number of organizations based on the Azure subscription and usage history.
+          
+          If the limit for an account is reached, no more organizations can be created by that account until the limit resets over time.  
+          Support can not manually increase the limit.  
+          If new organizations need to be created urgently, a different Azure subscription can be used to create them.
+          
           Microsoft accounts can create a single Azure DevOps organization.
           
       - question: |
