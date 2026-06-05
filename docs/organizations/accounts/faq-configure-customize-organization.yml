@@ -90,7 +90,7 @@ sections:
           The number of organizations that an account can create varies, Azure DevOps limits the total number of organizations based on the Azure subscription and usage history.
           
           If the limit for an account is reached, no more organizations can be created by that account until the limit resets over time.  
-          Support can not manually increase the limit.  
+          Support can't manually increase the limit.  
           If new organizations need to be created urgently, a different Azure subscription can be used to create them.
           
           Microsoft accounts can create a single Azure DevOps organization.
