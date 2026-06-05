@@ -224,6 +224,7 @@ The repository tools are consolidated into grouped dispatchers using an `action`
 | `repo_file` | `get_content` | Get the text content of a file at a specific branch, tag, or commit | ✅ |
 | `repo_file` | `list_directory` | List files and folders in a directory, with optional recursive listing | ✅ |
 | `repo_search_commits` | | Search commits with filtering by text, author, date range, and more | ✅ |
+| `search_code` | Full-text code search. | ✅ |
 | `repo_pull_request_write` | `create` | Create a pull request | ❌ |
 | `repo_pull_request_write` | `update` | Update a pull request, including setting autocomplete | ❌ |
 | `repo_pull_request_write` | `update_reviewers` | Add or remove pull request reviewers | ❌ |
@@ -315,14 +316,6 @@ The test plan tools are consolidated into grouped dispatchers using an `action` 
 | `testplan_test_suite_write` | `add_test_cases` | Add test cases to a suite | ❌ |
 | `testplan_test_case_write` | `create` | Create a test case | ❌ |
 | `testplan_test_case_write` | `update_steps` | Update test case steps | ❌ |
-
-### Search
-
-| Tool | Description | Read-only |
-|---|---|:---:|
-| `search_code` | Full-text code search. | ✅ |
-| `search_wiki` | Full-text wiki search. | ✅ |
-| `search_workitem` | Full-text work item search. | ✅ |
 
 ## Supported environments
 
