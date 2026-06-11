@@ -1,95 +1,81 @@
 ---
-title: Connect Azure Boards to an Office client to track your work
+title: Connect Azure Boards to Excel (legacy)
 titleSuffix: Azure Boards
-description: Learn how to connect to Excel to integrate and track your work in Azure DevOps.
+description: Learn how to use the legacy Office integration add-in to connect Excel to Azure Boards for work item tracking.
 ms.service: azure-devops-boards
 ms.author: chcomley
 author: chcomley
 ms.topic: how-to
 monikerRange: '<= azure-devops'
-ms.date: 08/07/2025
+ms.date: 06/08/2026
+ai-usage: ai-assisted
 #customer intent: As a team member or lead, I want to use Microsoft Excel in working with Azure Boards or Azure DevOps Server to improve my team's tracking efforts.
 ---
 
-# Connect Azure Boards to an Office client
+# Connect Azure Boards to Excel (legacy)
 
 [!INCLUDE [version-lt-eq-azure-devops](../../../includes/version-lt-eq-azure-devops.md)]
 
 [!INCLUDE [deprecate-office-integration](../../includes/deprecate-office-integration.md)]
 
-::: moniker range="<=azure-devops"
+> [!NOTE]
+> This article describes the legacy Azure DevOps Office integration add-in. For new bulk work item workflows, use [CSV import/export](../../queries/import-work-items-from-csv.md) or [bulk modify work items in the web portal](../bulk-modify-work-items.md) instead. The following steps remain documented for teams who must continue using existing Excel-based workflows.
 
-To support your work tracking efforts, you can use Microsoft Excel. You can either work in online mode, where you're connected to either Azure Boards or Azure DevOps Server. Or, work in offline mode, where you access the local computer and document.
-
-::: moniker-end
+To support legacy work tracking workflows, you can use Microsoft Excel to add or update work items. You can either work in online mode (connected to Azure Boards or Azure DevOps Server) or in offline mode (against a local copy of the document).
 
 > [!TIP]
 > For bulk import or to update work items, use the [web portal](../bulk-modify-work-items.md) or [CSV import](../../queries/import-work-items-from-csv.md).
 
 ## Supported Office clients and Azure DevOps versions
 
-The following table indicates the Office clients supported for each Azure DevOps version. 
+The following table indicates the Office clients supported for each Azure DevOps version.
 
 macOS isn't supported. Even if you installed Visual Studio for Mac, connection to Azure DevOps from Excel or any other Office client isn't supported.
-
----
 
 | Azure DevOps/Visual Studio version | Excel | Project<sup>1</sup> | PowerPoint Storyboarding<sup>2</sup> |
 |-------------------------------------|-------|---------------------|--------------------------------------|
 | Azure DevOps Services<br>Azure DevOps Server 2020<br>Visual Studio 2022<br>Visual Studio 2019<br>Azure DevOps Office Integration 2019 | ✔️ | | |
-| Visual Studio 2017 | ✔️ | ✔️ | ✔️ |
+| Visual Studio 2017 (legacy) | ✔️ | ✔️ | ✔️ |
 
-> [!NOTE]  
+> [!NOTE]
 > 1. Support for Project integration and the **TFSFieldMapping** command is deprecated. You might find support using one of the [Marketplace extensions](#marketplace-extensions).
 > 2. Support for linking PowerPoint files to work items from within PowerPoint is deprecated starting with Visual Studio 2019 and Azure DevOps Office Integration 2019. You can still link to PowerPoint using the Storyboard link from within a work item. Also, the Visual Studio Gallery for PowerPoint Storyboarding is deprecated.
 
 ## Prerequisites
 
-::: moniker range="azure-devops"
-
 | Category | Requirements |
 |----------|-------------|
-| Software | - Office Excel 2010 or later version, including Office Excel 365<br>- Visual Studio or the free Azure DevOps Office Integration 2019 (see the following installation note)<br>- Azure DevOps Office Integration plug-in (installed with Visual Studio or Azure DevOps Office Integration) |
-| Permissions | - [Project member](../../../organizations/security/add-users-team-project.md) access to connect to an Azure Boards project |
-| Project | - If you don't have an Azure Boards project yet, you can [create one](../../get-started/sign-up-invite-teammates.md) |
-
-::: moniker-end
-
-::: moniker range="< azure-devops"
-
-| Category | Requirements |
-|----------|-------------|
-| Software | - Office Excel 2010 or later version, including Microsoft 365<br>- Visual Studio or the free Azure DevOps Office Integration 2019 (see the following installation note)<br>- Team Foundation plug-in (installed with Visual Studio or Azure DevOps Office Integration 2019) |
-| Permissions | - [Project member](../../../organizations/security/add-users-team-project.md) access to connect to an Azure Boards project |
-| Project | - If you don't have an Azure Boards project yet, you can [create one](../../../organizations/projects/create-project.md) |
-
-::: moniker-end
+| Software | - Microsoft Excel 2016 or later, including Microsoft 365 versions.<br>- Visual Studio or the free Azure DevOps Office Integration 2019 (see the following installation note).<br>- The Azure DevOps Office Integration plug-in (installed with Visual Studio or with Azure DevOps Office Integration 2019). |
+| Permissions | - [Project member](../../../organizations/security/add-users-team-project.md) access to connect to an Azure Boards project. |
+| Project | - An Azure Boards project. If you don't have one, see [Create a project](../../../organizations/projects/create-project.md). |
 
 > [!NOTE]
 > **To download Azure DevOps Office Integration 2019:**
-> 1. Go to [Visual Studio Downloads](https://visualstudio.microsoft.com/downloads/)
-> 2. Scroll down to **All Downloads**
-> 3. Expand **Other Tools, Frameworks, and Redistributables**
-> 4. Look for **Azure DevOps Office Integration 2019** and select **Download**
-> 
+>
+> 1. Go to [Visual Studio Downloads](https://visualstudio.microsoft.com/downloads/).
+> 1. Scroll down to **All Downloads**.
+> 1. Expand **Other Tools, Frameworks, and Redistributables**.
+> 1. Find **Azure DevOps Office Integration 2019** and select **Download**.
+>
 > If you can't locate the download or don't have access, you might need to sign in with a Microsoft account or contact your administrator for access permissions.
 
 For information about compatibility requirements, see [Azure DevOps client compatibility](/azure/devops/server/compatibility).
 
-> [!IMPORTANT]
-> You might receive the following error if you install Microsoft Office 2010 on the same computer as a previous version of Office.  
->
-> **Team Foundation Error**, **Interface not registered (Exception from HRESULT: 0x80040155)**  
->
-> You might resolve this error by repairing Office. Access the Repair option by opening the **Control Panel**, choose **Uninstall or change a program**, open the context menu for Office 2010, and then choose **Change**. For more information, see [Resolve Azure DevOps and Office integration issues](tfs-office-integration-issues.md).
+## Limitations and known issues
+
+The Azure DevOps Office integration add-in predates modern Microsoft 365 authentication and is no longer actively maintained. Expect the following limitations:
+
+- **Modern authentication:** Sign-in might fail in environments that require Conditional Access, multifactor authentication (MFA), or device compliance policies. If interactive sign-in fails, try signing into your Office client with the same account used for Azure DevOps before opening the worksheet.
+- **Personal access tokens (PATs):** Some scenarios prompt for a PAT instead of interactive sign-in. PATs are long-lived credentials and aren't recommended&mdash;use [Microsoft Entra tokens](../../../integrate/get-started/authentication/entra.md) where supported. If you must use a PAT, see [Use personal access tokens](../../../organizations/accounts/use-personal-access-tokens-to-authenticate.md).
+- **Microsoft 365 (web) and macOS:** The add-in works only with the desktop versions of Office on Windows. Excel for the web and Office for Mac aren't supported.
+- **Hosted agents and automation:** The add-in is interactive only and isn't supported for unattended or pipeline-based scenarios. Use the [Azure DevOps REST API](/rest/api/azure/devops/wit/work-items) instead.
+- **Large datasets:** Publishing or refreshing thousands of work items in a single worksheet can time out. Split work across multiple worksheets or use CSV import/export.
+
+For supported alternatives, see [Bulk modify work items in the web portal](../bulk-modify-work-items.md) and [Bulk import or update work items using CSV files](../../queries/import-work-items-from-csv.md).
 
 ## Publish and refresh work items
 
-::: moniker range="<=azure-devops"
-
 When you add or update work items from Excel, local copies of your work items are created. To keep data in sync, refresh your local file when you open it and publish and refresh frequently during a long online session.
-
-::: moniker-end
 
 At first, the data in the local document matches the data in the database. But you or other team members can change the data about work items and cause the two to differ. To view the most recent changes from the database, refresh the document. The refresh downloads the latest values in the data store to your local document. To write changes from the document to the database, publish the changes. Publishing uploads the changes you made to the work item tracking data store.
 
@@ -97,9 +83,11 @@ To keep work items in sync from your local data store and Azure Boards, publish 
 
 ### Azure DevOps and Excel
 
-:::image type="content" source="media/connect/excel-sequence.png" alt-text="Diagram shows the Team Explorer and Excel workflow.":::
+The following diagram shows how Team Explorer and Excel exchange work item data with Azure DevOps. Excel publishes your edits to Azure DevOps and refreshes its local copy with server-side updates.
 
-To work in Excel, see [Bulk add work items with Excel](bulk-add-modify-work-items-excel.md).
+:::image type="content" source="media/connect/excel-sequence.png" alt-text="Diagram that shows the bidirectional publish-and-refresh flow between Excel, Team Explorer, and Azure DevOps.":::
+
+For the full Excel workflow, see [Bulk add work items with Excel](bulk-add-modify-work-items-excel.md).
 
 ## Connect an Azure DevOps project to Excel
 
@@ -108,134 +96,131 @@ To add or modify work items by using Excel, connect your worksheet to a project.
 > [!NOTE]
 >
 > - This section illustrates how to connect Excel to an Azure Boards project. The steps to connect to PowerPoint are similar.
-> - When you connect to Azure Boards in the cloud, the **Team Project Collection** automatically gets selected, because there's only one collection associated with your Azure DevOps Services organization. When you connect to Azure Boards in an on-premises server, choose the **Team Project Collection** before you choose the project.
+> - When you connect to Azure Boards in the cloud, the **Team Project Collection** is selected automatically because only one collection is associated with your Azure DevOps Services organization. When you connect to Azure Boards in an on-premises server, select the **Team Project Collection** before you select the project.
 
 You can start work from the web portal, Excel, or Visual Studio/Team Explorer. Your worksheet is associated with either a list of work items or a work item query.
 
-### [Open query in Excel (web portal)](#tab/open-excel)
+### [From the web portal](#tab/open-excel)
 
-This connection method requires that you install [Azure DevOps Open in Excel](https://marketplace.visualstudio.com/items?itemName=blueprint.vsts-open-work-items-in-excel). It also requires Visual Studio 2017 or later version.
+This connection method requires the [Azure DevOps Open in Excel](https://marketplace.visualstudio.com/items?itemName=blueprint.vsts-open-work-items-in-excel) Marketplace extension and Visual Studio 2017 or later.
 
-1. From your web browser, check that you selected the right project, choose **Boards** > **Queries**, and then choose **All**.
+1. From your web browser, confirm you selected the correct project, select **Boards** > **Queries**, and then select **All**.
 
-   :::image type="content" source="../../queries/media/view-run-queries/open-queries-vert.png" alt-text="Screenshot shows selecting Boards, then Queries.":::
+   :::image type="content" source="../../queries/media/view-run-queries/open-queries-vert.png" alt-text="Screenshot that shows the Boards menu expanded with the Queries item highlighted.":::
 
-1. Choose the query you want to open in Excel.
+1. Select the query you want to open in Excel.
 
-1. From the **Results** tab, choose the :::image type="icon" source="../../../media/icons/actions-icon.png" border="false"::: actions icon.
+1. From the **Results** tab, select the :::image type="icon" source="../../../media/icons/actions-icon.png" border="false"::: actions icon, and then select **Open in Excel**.
 
-   :::image type="content" source="media/connect/open-in-excel-from-portal.png" alt-text="Screenshot shows Query Results, context menu, Open in Excel Open Boards Queries.":::
+   :::image type="content" source="media/connect/open-in-excel-from-portal.png" alt-text="Screenshot that shows the query results context menu with the Open in Excel command highlighted.":::
 
-### [Connect from client to Azure Boards](#tab/open-excel-cloud)
+### [From an Office client (cloud)](#tab/open-excel-cloud)
 
-To connect from your Office client to an Azure DevOps Services project, do the following steps.
-
-1. Start with a blank worksheet.
-
-1. If your client is signed into a user account, ensure that it's your Azure DevOps user account. If not, choose your account name and sign in as another user.
-
-   :::image type="content" source="media/connect/sign-in-as-other-user.png" alt-text="Screenshot shows Excel Team Ribbon, Choose New List.":::
-
-1. If you don't see the **Team** ribbon or the **Team** menu if you use Office 2007, see [Resolve Azure DevOps and Office integration issues](tfs-office-integration-issues.md).
-
-1. Select **Team**, place your cursor in `Cell A1`, and then select **New List**.
-
-   :::image type="content" source="media/excel/team-ribbon.png" alt-text="Screenshot shows the Excel New List option.":::
-
-1. The **Connect to Azure DevOps Server** dialog opens.
-
-   :::image type="content" source="media/connect/connect-to-azure-devops.png" alt-text="Screenshot shows the Connect to Azure DevOps Server dialog.":::
-
-   If you're signed into your Office client with your Azure DevOps user account, the set of servers, both cloud and on-premises that you have access to, automatically populate in the drop-down menu.
-
-   If you're not signed-in, you're working from an older version of an Office client, or you aren't connected to any servers, add them now.
-
-1. Add a server. Choose **Servers...**, choose **Add...**, enter the URL of your Azure Boards organization, and check that the preview matches the URL that you entered. Choose **OK**.
-
-   :::image type="content" source="media/connect/connect-cloud.png" alt-text="Screenshot shows the Connect to Azure DevOps Server dialogs to add or remove a server.":::
-
-   If you can't connect, [get added as a team member](../../../organizations/security/add-users-team-project.md#add-team-members).
-
-1. With the server selected, choose the project you want to connect to, and then choose **Connect**.
-
-   :::image type="content" source="media/connect/choose-project.png" alt-text="Screenshot shows the Connect to Azure DevOps dialog, where you can choose a project.":::
-
-   Ensure your Azure DevOps user account appears at the bottom of the dialog. If it isn't, choose **Switch User** and sign in to the correct account.
-
-1. From the **New List** dialog, choose **Input list**. Or, if you want to work with a list of work items defined in a query, choose **Query list**.
-
-   :::image type="content" source="media/excel/2019-input-list-dialog.png" alt-text="Screenshot shows the New List dialog where you can select Input list.":::
-
-### [Connect client to Azure DevOps on-premises](#tab/open-excel-on-prem)
-
-To connect from your Office client to an Azure DevOps Server project, do the following steps.
+To connect from your Office client to an Azure DevOps Services project, follow these steps.
 
 1. Start with a blank worksheet.
 
-1. If your client is signed into a user account, ensure that it's yours. If not, choose your account name and sign in as another user.
+1. If your client is signed in to a user account, confirm it's your Azure DevOps user account. If not, select your account name and sign in as another user.
 
-   :::image type="content" source="media/connect/sign-in-as-other-user.png" alt-text="Screenshot to select sign-in on Excel ribbon.":::
+   :::image type="content" source="media/connect/sign-in-as-other-user.png" alt-text="Screenshot that shows the account name menu in Excel for signing in as another user.":::
 
-1. If you don't see the **Team** ribbon or the **Team** menu if you use Office 2007, see [Resolve Azure DevOps and Office integration issues](tfs-office-integration-issues.md).
+1. If the **Team** ribbon isn't available, see [Resolve Azure DevOps and Office integration issues](tfs-office-integration-issues.md).
 
-1. Choose the **Team** tab, place your cursor in Cell A1, and then choose **New List**.
+1. Select **Team**, place your cursor in cell A1, and then select **New List**.
 
-   :::image type="content" source="media/excel/team-ribbon.png" alt-text="Screenshot of Excel New List option on Team ribbon.":::
+   :::image type="content" source="media/excel/team-ribbon.png" alt-text="Screenshot that shows the New List button on the Excel Team ribbon.":::
 
-   The Connect to Azure DevOps Server dialog opens.
+1. The **Connect to Azure DevOps Server** dialog opens. (The dialog name is historical; it's used for both Azure DevOps Services and Azure DevOps Server connections.)
 
-   :::image type="content" source="media/connect/connect-to-azure-devops.png" alt-text="Screenshot shows the Connect to Azure DevOps Server dialog, on-premises version.":::
+   :::image type="content" source="media/connect/connect-to-azure-devops.png" alt-text="Screenshot of the Connect to Azure DevOps Server dialog listing available servers.":::
 
-   If you're signed into your Office client with your Azure DevOps user account, the set of servers that you have access to, both cloud and on-premises, automatically populate in the dropdown menu.
+   If you're signed in to your Office client with your Azure DevOps user account, the dropdown menu lists the cloud and on-premises servers you can access.
 
-   If you're not signed-in, you're working from an older version of an Office client, or you aren't connected to any servers, add them now.
+   If you aren't signed in, you're working from an older Office client, or you aren't connected to any servers, add a server now.
 
-1. Add a server. Select **Servers...**, choose **Add...**, enter the name of your Azure DevOps Server instance. As needed, change the Port number if your deployment uses a nondefault port number. The Preview entry should display the correct URL for your deployment. Choose **OK**.
+1. Select **Servers**, select **Add**, enter the URL of your Azure Boards organization, confirm the preview matches the URL you entered, and then select **OK**.
 
-   :::image type="content" source="media/connect/connect-on-premises.png" alt-text="Screenshot shows the Connect to Azure Server dialogs, on-premises versions.":::
-
-   Choose **Close** to close the add/remove servers dialog. From the **Select an Azure DevOps Server** dialog, ensure the server you added is selected, and choose **Connect**.
+   :::image type="content" source="media/connect/connect-cloud.png" alt-text="Screenshot of the Add/Remove Team Foundation Server dialog with a cloud organization URL entered.":::
 
    If you can't connect, [get added as a team member](../../../organizations/security/add-users-team-project.md#add-team-members).
 
-1. With the server selected, choose the project you want to connect to, and choose **Connect**.
+1. With the server selected, select the project you want to connect to, and then select **Connect**.
 
-   :::image type="content" source="media/connect/choose-project.png" alt-text="Screenshot shows the Connect to Azure DevOps dialog where you can choose a project, on-premises version.":::
+   :::image type="content" source="media/connect/choose-project.png" alt-text="Screenshot of the Connect to Azure DevOps dialog with a project selected.":::
 
-   Ensure your Azure DevOps user account appears at the bottom of the dialog. If it isn't, choose **Switch User** and sign in to the correct account.
+   Confirm your Azure DevOps user account appears at the bottom of the dialog. If it doesn't, select **Switch User** and sign in with the correct account.
 
-1. From the **New List** dialog, choose **Input list**. Or, if you want to work with a list of work items defined in a query, choose **Query list**.
+1. In the **New List** dialog, select **Input list**. Or, to work with a list of work items defined in a query, select **Query list**.
 
-   :::image type="content" source="media/excel/2019-input-list-dialog.png" alt-text="Screenshot of New list, Select input list, on-premises version.":::
+   :::image type="content" source="media/excel/2019-input-list-dialog.png" alt-text="Screenshot of the New List dialog with Input list selected.":::
 
-### [Open Excel from Visual Studio](#tab/open-excel-vs)
+### [From an Office client (on-premises)](#tab/open-excel-on-prem)
+
+To connect from your Office client to an Azure DevOps Server project, follow these steps.
+
+1. Start with a blank worksheet.
+
+1. If your client is signed in to a user account, confirm it's yours. If not, select your account name and sign in as another user.
+
+   :::image type="content" source="media/connect/sign-in-as-other-user.png" alt-text="Screenshot that shows the account name menu in Excel for signing in as another user.":::
+
+1. If the **Team** ribbon isn't available, see [Resolve Azure DevOps and Office integration issues](tfs-office-integration-issues.md).
+
+1. Select the **Team** tab, place your cursor in cell A1, and then select **New List**.
+
+   :::image type="content" source="media/excel/team-ribbon.png" alt-text="Screenshot that shows the New List button on the Excel Team ribbon.":::
+
+   The **Connect to Azure DevOps Server** dialog opens.
+
+   :::image type="content" source="media/connect/connect-to-azure-devops.png" alt-text="Screenshot of the Connect to Azure DevOps Server dialog showing on-premises server entries.":::
+
+   If you're signed in to your Office client with your Azure DevOps user account, the dropdown menu lists the cloud and on-premises servers you can access.
+
+   If you aren't signed in, you're working from an older Office client, or you aren't connected to any servers, add a server now.
+
+1. Select **Servers**, select **Add**, and then enter the name of your Azure DevOps Server instance. Change the port number if your deployment uses a nondefault port. The **Preview** entry should display the correct URL for your deployment. Select **OK**.
+
+   :::image type="content" source="media/connect/connect-on-premises.png" alt-text="Screenshot of the Add Team Foundation Server dialog with on-premises server details entered.":::
+
+   Select **Close** to close the Add/Remove Team Foundation Server dialog. In the **Select an Azure DevOps Server** dialog, confirm the server you added is selected, and then select **Connect**.
+
+   If you can't connect, [get added as a team member](../../../organizations/security/add-users-team-project.md#add-team-members).
+
+1. With the server selected, select the project you want to connect to, and then select **Connect**.
+
+   :::image type="content" source="media/connect/choose-project.png" alt-text="Screenshot of the Connect to Azure DevOps dialog with an on-premises project selected.":::
+
+   Confirm your Azure DevOps user account appears at the bottom of the dialog. If it doesn't, select **Switch User** and sign in with the correct account.
+
+1. In the **New List** dialog, select **Input list**. Or, to work with a list of work items defined in a query, select **Query list**.
+
+   :::image type="content" source="media/excel/2019-input-list-dialog.png" alt-text="Screenshot of the New List dialog with Input list selected (on-premises connection).":::
+
+### [From Visual Studio](#tab/open-excel-vs)
 
 1. Open Visual Studio and then Team Explorer.
 
    > [!IMPORTANT]
-   > To work from Visual Studio/Team Explorer, select **Tools** > **Options** > **Work Items** > 
-**General** > **Legacy experience**. For more information, see [Set the Work Items experience](../../work-items/set-work-item-experience-vs.md).  
+   > To work from Visual Studio/Team Explorer, select **Tools** > **Options** > **Work Items** > **General** > **Legacy experience**. For more information, see [Set the Work Items experience](../../work-items/set-work-item-experience-vs.md).
 
-   :::image type="content" source="media/connect/work-items-legacy-experience.png" alt-text="Screenshot shows the Visual Studio Options dialog, with Work Items and General selected.":::
+   :::image type="content" source="media/connect/work-items-legacy-experience.png" alt-text="Screenshot of the Visual Studio Options dialog with Work Items > General > Legacy experience selected.":::
 
 1. Connect to your Azure DevOps project that contains the work items you want to add to or update. For more information, see [Connect to a project](../../../organizations/projects/connect-to-projects.md).
 
-1. Right-click the query you want to open and choose.
+1. Right-click the query you want to open and select **Open in Microsoft Excel**.
 
-   :::image type="content" source="media/connect/open-from-visual-studio-query.png" alt-text="Screenshot shows a Team Explorer context menu with the option Open in Microsoft Excel.":::
+   :::image type="content" source="media/connect/open-from-visual-studio-query.png" alt-text="Screenshot of a Team Explorer query context menu with Open in Microsoft Excel highlighted.":::
 
    Excel opens with the work items listed in the query that you selected.
 
 ***
-
-For more information, see [Bulk add work items with Excel](bulk-add-modify-work-items-excel.md).
 
 > [!TIP]
 > You can use multiple worksheets within an Excel workbook to work with different input or query lists. You can only connect to one project per workbook.
 
 ::: moniker range="< azure-devops"
 
-If you move your Azure DevOps project to a different project collection in the same instance of Azure DevOps, your documents automatically reconnect. If the project moves to a different instance of Azure DevOps, you must manually reconnect your documents to the new server.
+If you move your Azure DevOps project to a different project collection in the same Azure DevOps Server instance, your documents reconnect automatically. If the project moves to a different Azure DevOps Server instance, you must manually reconnect your documents to the new server.
 
 ::: moniker-end
 
@@ -252,7 +237,7 @@ To disconnect an Excel document file from the network:
 
 1. Open the document that you want to change while you're offline.
 
-1. Refresh the work item list to retrieve the latest information from the work item database. In Excel, on the **Team** ribbon, in the **Work Items** group, choose **Refresh**.
+1. Refresh the work item list to retrieve the latest information from the work item database. In Excel, on the **Team** ribbon, in the **Work Items** group, select **Refresh**.
 
 1. Add to the work item list the columns for all fields that you want to modify. You can't add columns when the work item list is disconnected from the server.
 
@@ -270,18 +255,18 @@ To reconnect an Excel document file:
 
 1. Reconnect your computer to the network, or copy the file to a computer that is connected to Azure Boards.
 
-1. If you changed the document offline, in Excel, on the **Team** ribbon, in the **Work Items** group, choose **Publish**.
+1. If you changed the document offline, in Excel, on the **Team** ribbon, in the **Work Items** group, select **Publish**.
 
-1. If you didn't change the document offline, in Excel, on the **Team** ribbon, in the **Work Items** group, choose **Refresh**.
+1. If you didn't change the document offline, in Excel, on the **Team** ribbon, in the **Work Items** group, select **Refresh**.
 
 1. Resolve any data validation errors or conflicts that occur.
 
 ## Marketplace extensions
 
-The following Marketplace extensions support integration between Azure DevOps and Office products.
+The following Marketplace extensions support integration between Azure DevOps and Office products:
 
-- [Azure DevOps Open in Excel](https://marketplace.visualstudio.com/items?itemName=blueprint.vsts-open-work-items-in-excel): Opens a selected query in Excel.
-- [Office 365 Integration](https://marketplace.visualstudio.com/items?itemName=ms-vsts.vss-services-o365): Pushes notifications of configurable Azure DevOps events to an Office 365 Group.
+- [Azure DevOps Open in Excel](https://marketplace.visualstudio.com/items?itemName=blueprint.vsts-open-work-items-in-excel): Opens a selected query or set of work items in Excel from the web portal. Maintained by Microsoft DevLabs and updated as recently as 2025. Requires Microsoft Excel and the Azure DevOps Office Integration client.
+- [Office 365 Integration](https://marketplace.visualstudio.com/items?itemName=ms-vsts.vss-services-o365): Sends notifications of Azure DevOps events (such as build completion, code pushes, and work item changes) to a Microsoft 365 group inbox through service hooks. Pre-installed with Azure DevOps Services.
 
 ## Related content
 
