@@ -163,7 +163,7 @@ If you're using ExpressRoute, you need to allow writes by temporarily dropping o
 > [!IMPORTANT]
 > The pool and virtual network must be in the same region. Otherwise, you get an error similar to the following when you try to create the pool or update the network configuration: "Virtual network MDPVN is in region eastus, but pool mdpnonprodsub is in region australiaeast. These must be in the same region."
 >
-> Avoid using `172.17.0.0/16` for your pool's VNet. It is the default for Docker bridge network and may conflict with other networks that you want to connect to the VNet. If you use `172.17.0.0/16` for your pool's VNet, your pipelines might fail with errors like "dial tcp 172.17.x.x:443: connect: no route to host".
+> If your VNET uses [private endpoints](/azure/private-link/private-endpoint-overview), avoid using the range `172.17.0.0/16` for your endpoints, as this range is used by Managed DevOps Pools.If your pipelines fail with errors like "dial tcp 172.17.x.x:443: connect: no route to host", check to see if your environment has private endpoints in the `172.17.0.0/16` range.
 
 <a name = "grant-reader-and-network-contributor-access-to-devopsinfrastructure-service-principal"></a>
 #### Grant Reader and Network Contributor access to the DevOpsInfrastructure service principal
