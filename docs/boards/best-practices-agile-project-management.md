@@ -7,32 +7,33 @@ ms.topic: best-practice
 ms.custom: cross-project
 ms.author: chcomley
 author: chcomley
-monikerRange: '<= azure-devops' 
-ms.date: 09/29/2025
-#customer intent: As a product manager or lead, I want to understand the Azure Boards tools that support Agile development for my product. 
+monikerRange: '<= azure-devops'
+ms.date: 06/08/2026
+ai-usage: ai-assisted
+#customer intent: As a product manager or lead, I want to understand the Azure Boards tools that support Agile development for my product.
 ---
 
 # Best practices for Agile product management
 
 [!INCLUDE [version-lt-eq-azure-devops](../includes/version-lt-eq-azure-devops.md)]
 
-This guide helps product managers get started with Azure Boards. It summarizes practical recommendations for configuring teams, planning work, and using Boards, Backlogs, Iterations, and Delivery Plans to deliver value predictably.
+This guide helps product managers get started with Azure Boards. It summarizes practical recommendations for configuring teams, planning work, and using boards, backlogs, iterations, and Delivery Plans to deliver value predictably.
 
 > [!NOTE]
 > If your team follows Kanban or Scrum specifically, see [About Boards and Kanban](boards/kanban-overview.md) or the [Scrum tutorials](./sprints/scrum-overview.md).
 
-Most recommendations apply to both Azure DevOps Services (cloud) and Azure DevOps Server (on-premises). Some features, including Rollup, Analytics, and some portfolio planning tools, are available only in the cloud.
+Most recommendations apply to both Azure DevOps Services (cloud) and Azure DevOps Server (on-premises). Some newer features, such as the latest Analytics views and some portfolio planning previews, appear in Azure DevOps Services first and might not yet be available on Azure DevOps Server.
 
 [!INCLUDE [ai-assistance-callout](../includes/ai-assistance-callout.md)]
 
 ## Configure teams
 
-Define a team for each delivery group that should work autonomously. Configure teams along value streams so each team can plan, track, and deliver independently while still rolling up to product-level roadmaps.
+Define a team for each delivery group that works autonomously. Configure teams along value streams so each team can plan, track, and deliver independently while still rolling up to product-level roadmaps.
 
 Recommendations:
-- Create a team per feature or delivery group (commonly 6–12 developers).
+- Create a team for each feature or delivery group. Keep teams small enough to stay nimble (typically about 5–9 members) and large enough to deliver meaningful value.
 - Give each team its own area path and iteration cadence.
-- Use team settings to assign default Area and Iteration paths so work items added by the team inherit correct context.
+- Use team settings to assign default area and iteration paths so work items the team adds inherit the correct context.
 
 More information:
 - [Configure a hierarchy of teams](plans/configure-hierarchical-teams.md)
@@ -40,14 +41,14 @@ More information:
 
 ## Configure iterations
 
-Define iteration paths (iterations) at the product level, then assign teams to appropriate iterations. Keep a consistent iteration cadence across related teams where it helps coordination.
+Define iteration paths (iterations) at the product level, and then assign teams to the appropriate iterations. Keep a consistent iteration cadence across related teams when it helps coordination.
 
 Recommendations:
-- Choose a common cadence for teams that deliver together (1–4 weeks typical).
-- Create at least six iterations to support planning for the next 3–6 months.
+- Choose a common cadence for teams that deliver together (typically one to four weeks).
+- Create at least six iterations to support planning for the next three to six months.
 - Use iterations consistently for forecasting and iteration planning.
 - Consider continuous flow approaches for teams that can deliver incrementally without fixed time boundaries.
-- For flow-based teams, focus on Work in Progress (WIP) limits rather than iteration capacity.
+- For flow-based teams, focus on work in progress (WIP) limits rather than iteration capacity.
 
 More information:
 - [Define and assign iteration paths](../organizations/settings/about-areas-iterations.md#define-and-assign-iteration-paths)
@@ -55,13 +56,23 @@ More information:
 
 ## Choose work item types
 
-Pick the work item types that match how your teams plan and deliver work. Map product-level work (Features, Epics) to team-level work (User Stories, Issues, PBIs) and optionally let teams break work into Tasks.
+Pick the work item types that match how your teams plan and deliver work. Map product-level work (epics and features) to team-level work (requirements) and optionally let teams break work into tasks.
+
+The team-level requirement type depends on your project's process:
+
+| Process | Portfolio types | Team-level requirement | Estimation field |
+|---------|-----------------|------------------------|------------------|
+| Agile | Epic, Feature | User Story | Story Points |
+| Scrum | Epic, Feature | Product Backlog Item | Effort |
+| CMMI | Epic, Feature | Requirement | Size |
+| Basic | Epic | Issue | (none by default) |
 
 Recommendations:
-- Use Feature to represent customer-facing value.
-- Use requirements (User Story / Issue / Product Backlog Item) for team-scoped work depending on your process.
-- Use Task for developer work that fits within an iteration.
-- Agree how teams handle Bugs (as backlog items or as development work).
+- Use **Epic** to represent large initiatives that span multiple features or releases.
+- Use **Feature** to represent customer-facing value that ships as a coherent capability.
+- Use the team-level requirement type for work scoped to a single iteration.
+- Use **Task** for developer work that fits within an iteration.
+- Decide how teams handle **Bugs**—as backlog items alongside requirements, as tasks under requirements, or tracked separately. For the project-level setting, see [Show bugs on backlogs and boards](../organizations/settings/show-bugs-on-backlog.md).
 
 More information:
 - [About work items](work-items/about-work-items.md)
@@ -71,20 +82,22 @@ More information:
 
 ## Create and maintain your product roadmap
 
-Use the Features backlog as your product roadmap. Have product managers order and refine features; let teams decompose features into backlog items and optionally tasks.
+Use the Features backlog as your product roadmap. Have product managers order and refine features. Let teams decompose features into backlog items and optionally tasks.
 
 Recommendations:
 - Keep the Features backlog ordered.
 - Break features into sized requirements that teams can complete within iterations.
-- Review and refine backlogs regularly (backlog grooming / refinement).
+- Review and refine backlogs regularly through backlog refinement sessions.
 
 ### Features backlog
+
 Product managers create and order features in the Features backlog. Each feature should represent a shippable capability.
 
 :::image type="content" source="media/best-practices/features-backlog.png" alt-text="Screenshot showing a features backlog.":::
 
-### Requirement backlog
-Teams add requirements to the requirement backlog, size them for an iteration, and map them to parent Features.
+### Team backlog
+
+Teams add requirements—called **Stories**, **Backlog items**, **Issues**, or **Requirements** depending on your process—to the team backlog, size them for an iteration, and map them to parent features.
 
 :::image type="content" source="media/best-practices/product-backlog.png" alt-text="Screenshot showing a product backlog with user stories.":::
 
@@ -110,11 +123,11 @@ Recommendations:
 
 ## Manage dependencies
 
-Track cross-team dependencies using Predecessor/Successor links and by surfacing dependencies in Delivery Plans.
+Track cross-team dependencies by using **Predecessor/Successor** links and by surfacing dependencies in Delivery Plans. A Delivery Plan is an interactive multiteam calendar view that shows scheduled work across teams and projects.
 
 Recommendations:
 - Tag dependent work with a consistent tag (for example, `dependency`) for quick queries.
-- Use Predecessor/Successor link types to capture formal dependencies.
+- Use **Predecessor/Successor** link types to capture formal dependencies.
 - Visualize dependencies in Delivery Plans or use query-based reports to triage blocking items.
 
 :::image type="content" source="plans/media/dependencies/dependency-lines.png" alt-text="Screenshot showing dependency lines between linked work items.":::
@@ -124,11 +137,11 @@ More information:
 - [Link work items](backlogs/add-link.md)
 
 > [!NOTE]
-> Marketplace extensions (for example, Work Item Visualization) can help visualize relationships but aren't product-supported features by the Azure Boards product team.
+> Marketplace extensions, such as Work Item Visualization, can help visualize relationships. However, they're community-supported and aren't maintained by the Azure Boards team.
 
 ## Work in iterations
 
-Use the iteration backlog and Taskboard to plan and deliver iteration work. Update statuses daily so progress charts remain accurate.
+Use the sprint backlog and taskboard to plan and deliver iteration work. Update statuses daily so progress charts remain accurate.
 
 Recommendations:
 - Plan each iteration with the team and define a goal.
@@ -171,6 +184,7 @@ Recommendations:
 More information:
 - [View and configure team velocity](../report/dashboards/team-velocity.md)
 - [Add and manage dashboards](../report/dashboards/dashboards.md)
+- [Cycle time and lead time controls](../report/dashboards/cycle-time-and-lead-time.md)
 
 ## Optimize work flow
 
@@ -195,4 +209,5 @@ More information:
 
 - [Manage requirements](../cross-service/manage-requirements.md)
 - [Work with multi-team ownership of backlog items](backlogs/backlogs-overview.md#multi-team)
-- [Why use Azure Boards to plan and track your work](get-started/why-use-azure-boards.md)
+- [What is Azure Boards?](get-started/what-is-azure-boards.md)
+- [Plan and track work](get-started/plan-track-work.md)
