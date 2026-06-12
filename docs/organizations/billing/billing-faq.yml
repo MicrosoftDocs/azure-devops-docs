@@ -12,8 +12,9 @@ metadata:
   ms.topic: faq
   ms.author: chcomley
   author: chcomley
-  ms.date: 04/20/2026
+  ms.date: 06/12/2026
   monikerRange: '<= azure-devops'
+  ai-usage: ai-assisted
 title: Billing FAQs
 summary: |
   [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
@@ -32,6 +33,26 @@ sections:
           
           Azure DevOps is available only in the Azure public cloud, so subscriptions in other Azure clouds are not supported.
   
+      
+      - question: |
+          Why don't I see the Azure subscription I expect when I create an organization or set up billing?
+        answer: |
+          If the Azure subscription you expect doesn't appear in the picker, the most common cause is a stale authentication token in the Azure portal—especially in cross-tenant scenarios where the subscription lives in a different Microsoft Entra tenant than the one you're signed in to. Refresh your sign-in to the target directory to make the subscription appear:
+          
+          1. Sign in to the [Azure portal](https://portal.azure.com/).
+          1. Select **Settings** ![gear icon](../../media/icons/gear-icon.png).
+          1. Select **Directories + subscriptions** (also labeled **All Directories** in some views).
+          1. Find the directory that owns the subscription you expect, and then select **Switch**.
+          1. When prompted, sign in again to complete the directory switch. Completing the sign-in loop is what refreshes your token.
+          
+          After you complete the sign-in, return to Azure DevOps and try to create your organization or [set up billing](set-up-billing-for-your-organization-vs.md#set-up-billing) again. The subscription should now appear in the picker.
+          
+          If the subscription still doesn't appear, confirm that:
+          
+          * You have at least **Contributor** or **Owner** access to the Azure subscription.
+          * The subscription is in the Azure public cloud (Azure DevOps doesn't support other Azure clouds).
+          * The subscription isn't disabled or past due.
+
       - question: |
           What happens when free tier limits are reached?
         answer: |
