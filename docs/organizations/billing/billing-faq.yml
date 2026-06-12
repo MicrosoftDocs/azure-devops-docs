@@ -41,7 +41,7 @@ sections:
           
           1. Sign in to the [Azure portal](https://portal.azure.com/).
           1. Select **Settings** ![gear icon](../../media/icons/gear-icon.png).
-          1. Select **Directories + subscriptions** (also labeled **All Directories** in some views).
+          1. Select **All Directories**.
           1. Find the directory that owns the subscription you expect, and then select **Switch**.
           1. When prompted, sign in again to complete the directory switch. Completing the sign-in loop is what refreshes your token.
           
