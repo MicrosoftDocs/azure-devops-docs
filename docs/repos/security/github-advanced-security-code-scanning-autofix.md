@@ -17,9 +17,9 @@ ms.custom: cross-service
 Copilot Autofix is an AI-powered feature of GitHub Advanced Security for Azure DevOps that generates suggested fixes for code scanning alerts. When CodeQL identifies a vulnerability or coding error, you can generate a fix for the alert directly from the Advanced Security tab. Copilot Autofix uses the Copilot coding agent to produce the fix and opens a pull request with the proposed change, so you can review, edit, and merge it through your normal pull request workflow.
 
 > [!NOTE]
-> This feature is in limited public preview. Not everyone who signs up for the preview receives access.
-
-You need either GitHub Advanced Security for Azure DevOps or, if you're using the standalone experience, GitHub Code Security for Azure DevOps enabled, along with [code scanning](github-advanced-security-code-scanning.md) configured for your repository.
+> This feature is in limited public preview. To request access for your organization, [sign up for the public preview](https://aka.ms/ghazdo-autofix/preview).
+>
+> Functionality might change or be removed without notice. Preview features have no Service Level Agreement (SLA) and limited support.
 
 [!INCLUDE [GitHub Advanced Security for Azure DevOps is different from GitHub Advanced Security.](includes/github-advanced-security.md)]
 
@@ -50,15 +50,11 @@ Copilot Autofix supports the same languages that CodeQL analyzes for code scanni
 
 Copilot Autofix is included with your GitHub Advanced Security for Azure DevOps license. Generating a fix consumes AI credits from your organization's Azure billing meter.
 
-Each fix generation consumes tokens, which include:
-
-- **Input tokens** for the code context sent to the model.
-- **Output tokens** for the suggested change.
-- **Cached tokens** that reuse existing context.
+Each fix generation consumes tokens, which include input tokens for the code context sent to the model, output tokens for the suggested change, and cached tokens that reuse existing context.
 
 To keep billing simple, these tokens are converted into a standard unit called a **GitHub AI credit**, where 1 credit equals $0.01 USD. The charges are billed to the Azure subscription linked to your Azure DevOps organization and appear as a separate meter in Azure Cost Management.
 
-The cost of each fix varies with the size of the surrounding code context and the complexity of the change. Before you roll out Copilot Autofix widely, enable it on one or two repositories first and monitor daily usage.
+The cost of each fix varies with the size of the surrounding code context and the complexity of the change.
 
 To monitor your daily charges, go to **Subscription** > **Cost Management** > **Cost analysis** in the [Azure portal](https://portal.azure.com).
 
