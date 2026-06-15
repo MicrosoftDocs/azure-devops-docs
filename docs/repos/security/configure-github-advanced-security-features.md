@@ -178,7 +178,7 @@ To gain access to code scanning features, you need the **Code Security** product
 
 Code scanning is also a pipeline-based scanning tool where results are aggregated per repository. You can enable code scanning using **default setup** or **advanced setup**. You can run both in the same organization, depending on your needs and level of scanning control.
 
-**Default setup** is the quickest way to enable code scanning. Default setup runs on a scheduled basis using Azure Pipelines, detects the supported languages in your repository, and automatically configures scanning for them. If the languages in your repository change, the scanning configuration updates automatically. Default setup currently supports C#, Java, JavaScript/TypeScript, Python, Ruby, and Rust. C/C++, Go, and Swift aren't supported by default setup; use advanced setup to scan them. 
+**Default setup** is the quickest way to enable code scanning. Default setup runs on a scheduled basis by using Azure Pipelines, detects the supported languages in your repository, and automatically configures scanning for them. If the languages in your repository change, the scanning configuration updates automatically. Default setup currently supports C#, Java, JavaScript/TypeScript, Python, Ruby, and Rust. C/C++, Go, and Swift aren't supported by default setup; use advanced setup to scan them. 
 
 :::zone pivot="bundled-ghazdo"
 :::image type="content" source="media/advanced-security-codeql-default-setup-enablement-repo.png" lightbox="media/advanced-security-codeql-default-setup-enablement-repo.png" alt-text="Screenshot of repository settings showing the Run CodeQL analysis with default setup checkbox enabled under Advanced Security.":::
