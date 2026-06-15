@@ -159,9 +159,9 @@ The following features are available when using Azure Artifacts as an artifact s
 
 
 > [!NOTE]
-> When using Feeds with 1000 packages or more, you may see that the packages in Package drop down in Azure Artifacts source may be truncated after certain packages.
-> To work around this issue, create a new Custom View and [promote](https://learn.microsoft.com/en-us/azure/devops/artifacts/feeds/views?view=azure-devops&tabs=nuget%2Cnugetserver22%2Cpowershell) packages to that view. And then in the Release pipeline, specify the View in the Azure Artifact source.
-> Or you can you can provide the package ID, which you can find using the instructions [here](https://learn.microsoft.com/en-us/rest/api/azure/devops/artifacts/artifact-details/get-packages?view=azure-devops-rest-5.0).
+> When using a **Feed** with 1,000 packages or more, the packages listed in the **Package** dropdown for the Azure Artifacts source might be truncated.
+> To work around this issue, create a new custom view and [promote](https://learn.microsoft.com/en-us/azure/devops/artifacts/feeds/views?view=azure-devops&tabs=nuget%2Cnugetserver22%2Cpowershell) packages to that view. Then, in the release pipeline, specify the view in the Azure Artifacts source.
+> Alternatively, you can provide the package ID. For instructions, see [Get Packages - Artifact Details](/rest/api/azure/devops/artifacts/artifact-details/get-packages?view=azure-devops-rest-5.0).
 
 #### Handling Maven snapshots
 
