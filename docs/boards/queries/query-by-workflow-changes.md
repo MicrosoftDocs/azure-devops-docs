@@ -594,7 +594,7 @@ For more information about field attributes, see [Work item fields and attribute
       The name of the team member who changed the status of a work item to a *Resolved* category state. 
       ::: moniker-end 
       ::: moniker range="< azure-devops"
-      The name of the team member who changed the status of a work item to *Resolved* or done workflow state. 
+      The name of the team member who changed the status of a work item to a *Resolved* or done workflow state. 
       ::: moniker-end 
       Reference name=`Microsoft.VSTS.Common.ResolvedBy`, Data type=String (Identity)
    :::column-end:::
@@ -613,7 +613,7 @@ For more information about field attributes, see [Work item fields and attribute
    :::column-end:::
    :::column span="2":::
       ::: moniker range="azure-devops"
-      The date and time when the work item was changed to an *In Resolved* category state. 
+      The date and time when the work item was changed to a *Resolved* category state. 
       ::: moniker-end 
       ::: moniker range="< azure-devops"
       The date and time when the work item was moved into a *Resolved* or done workflow state. 
