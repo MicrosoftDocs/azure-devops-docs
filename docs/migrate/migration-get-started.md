@@ -3,12 +3,11 @@ title: Get started with Azure DevOps Data Migration Tool
 description: Overview of the high fidelity migration process from on-premises Server to cloud Azure DevOps Services.
 ms.topic: how-to
 ms.subservice: azure-devops-migrate
-ms.contentid:
 ai-usage: ai-assisted
 ms.author: chcomley
 author: chcomley
 monikerRange: '<= azure-devops'
-ms.date: 08/07/2025
+ms.date: 06/08/2026
 ---
 
 # Get started with Azure DevOps Data Migration Tool
@@ -19,7 +18,7 @@ Before you use the [Azure DevOps Data Migration Tool](https://www.microsoft.com/
 
 ## Learn which data gets migrated 
 
-Not all data gets migrated. Separate databases outside the collection, for example, reporting and SharePoint data, don’t get migrated. The following sections list more detail about which data gets migrated.
+Not all data gets migrated. Separate databases outside the collection, for example, reporting and SharePoint data, don't get migrated. The following sections list more detail about which data gets migrated.
 
 ### Included data
 
@@ -27,7 +26,7 @@ The following table shows data included in migration.
 
 |Included data |Description |
 |---------|---------|
-|Collection mapping     |Each collection in Azure DevOps Server corresponds to one database. During migration, the whole collection—including work items, history, Team Foundation Version Control (TFVC) changesets, Git data, build definitions, and more—get migrated to Azure DevOps Services. Work item, TFVC changeset, and Git commit numbers/IDs remain unchanged.         |
+|Collection mapping     |Each collection in Azure DevOps Server corresponds to one database. During migration, the whole collection - including work items, history, Team Foundation Version Control (TFVC) changesets, Git data, build definitions, and more - gets migrated to Azure DevOps Services. Work item, TFVC changeset, and Git commit numbers/IDs remain unchanged.         |
 
 ### Excluded data
 
@@ -35,30 +34,30 @@ The following table shows data included in migration.
 
 |Excluded data    | Description        |
 |-----------------|----------|
-|Extensions     | Extensions must be reinstalled post-migration. You should publish local extensions to the Marketplace as private extensions and shared with the account.        |
-|Service Hooks   |Service Hooks data isn’t included in the migration; reconfigure after migration.         |
-|Load test    |Load test data isn’t brought over; reconfigure load tests after migration.         |
+|Extensions     | You must reinstall extensions after migration. Publish local extensions to the Marketplace as private extensions and share them with the account.        |
+|Service Hooks   | Service Hooks data isn't included in the migration. Reconfigure after migration.         |
+|Load test    | Load test data isn't brought over. Reconfigure load tests after migration.         |
 |Pipeline agents and agent pools  | Reconfigure pipeline agents and agent pools after migration.        |
-|Mentions   | User mentions in work item discussions retain on-premises identity, not the new Microsoft Entra ID. Hovering on usernames doesn’t display contact cards, and some hyperlinks might be invalid.        |
+|Mentions   | User mentions in work item discussions retain on-premises identity, not the new Microsoft Entra ID. Hovering on usernames doesn't display contact cards, and some hyperlinks might be invalid.        |
 |Project Server integrations     | Not available for Azure DevOps Services. For example, XAML Builds, Microsoft Test Manager, SharePoint, SQL Data Warehouse, and so on.        |
 |Preview features    | Some Azure DevOps Server features can be previewed during migration to Azure DevOps Services.        |
 
 ## Project limits 
 
-If your collection contains numerous projects, Azure DevOps Services imposes a limit of 1,000 projects per organization, although we recommend 300 or less. Beyond this threshold, certain experiences—such as connecting to the organization from Visual Studio—might degrade. To stay within the limit, consider either splitting the collection or deleting older projects. 
+If your collection contains numerous projects, Azure DevOps Services imposes a limit of 1,000 projects per organization, although 300 or fewer is recommended. Beyond this threshold, certain experiences - such as connecting to the organization from Visual Studio - might degrade. To stay within the limit, consider either splitting the collection or deleting older projects. 
 
 ## Understand the relationship between on-premises databases and Azure DevOps organizations. 
 
-Before you dive too deeply into planning your migration, it’s important to understand at an elevated level how the database migration process functions. Migrations operate on the following main concepts: 
+Before you dive too deeply into planning your migration, it's important to understand at an elevated level how the database migration process functions. Migrations operate on the following main concepts: 
 
 - **Team Project Collection**: Collections in Azure DevOps Server are a physical container for team projects and their artifacts. Each collection equates to a single SQL database and is the source of migrations to Azure DevOps Services.
 - **Azure DevOps Services organization**: Organizations are the management unit in the cloud-hosted service. Logically they map 1:1 to the concept of a team project collection in Azure DevOps Server. Therefore, organizations are the destination of migrations to Azure DevOps Services. For example, Azure DevOps Services organizations are represented as `https://dev.azure.com/Contoso` where Contoso represents the name of the Azure DevOps Services organization. 
 
-When you migrate a team project collection SQL database, the Data Migration Tool creates a new Azure DevOps organization with a user-provided name. Migrating a collection database into an existing Azure DevOps Services organization or consolidating multiple collection databases into a single Azure DevOps Services organization isn't possible. The mapping is strictly one-to-one between team project collections and Azure DevOps Services organizations. 
+When you migrate a team project collection SQL database, the Data Migration Tool creates a new Azure DevOps organization with a user-provided name. You can't migrate a collection database into an existing Azure DevOps Services organization or consolidate multiple collection databases into a single Azure DevOps Services organization. The mapping is strictly one-to-one between team project collections and Azure DevOps Services organizations. 
 
 ## Choose data center 
 
-When you set up your Azure DevOps Services organization, you can choose the location for your data. During initial sign-up and organization creation, select a region that suits your needs. To use later for migration, make a note of the region's shorthand code.
+When you set up your Azure DevOps Services organization, choose the location for your data. During initial sign-up and organization creation, select a region that suits your needs. To use later for migration, make a note of the region's shorthand code.
 
 > [!IMPORTANT]
 > Not all Azure regions support the Data Migration Tool. Setting up temporary SQL VMs or other migration infrastructure in unsupported regions can cause delays and require reconfiguration. Review the supported regions before proceeding with your migration planning.
@@ -78,11 +77,11 @@ The following table lists the Azure regions that support the Azure DevOps Data M
 | Southeast Asia (Singapore) | SEA |
 | Canada Central | CC |
 
-For the complete migration process and most up to date region considerations, see [Supported Azure regions for migration](migration-test-run.md#supported-azure-regions-for-migration).
+For the complete migration process and most up-to-date region considerations, see [Supported Azure regions for migration](migration-test-run.md#supported-azure-regions-for-migration).
 
 ## Understand pricing 
 
-A question that typically comes up with migration is what type of licensing a company needs to use Azure DevOps Services. The good news is you're likely to have all the licenses you already need. We created an example worksheet that should cover most cases. If you have any specific questions about your situation, reach out to your Developer Solution Sales Specialist or Microsoft Reseller. For more information, see Pricing for Azure DevOps. 
+A common question about migration is what type of licensing a company needs to use Azure DevOps Services. The good news is that you likely already have all the licenses you need. An example worksheet is available that should cover most cases. If you have any specific questions about your situation, reach out to your Developer Solution Sales Specialist or Microsoft Reseller. For more information, see [Pricing for Azure DevOps](https://azure.microsoft.com/pricing/details/devops/). 
 
 ### User licenses worksheet 
 
@@ -91,17 +90,17 @@ A question that typically comes up with migration is what type of licensing a co
 |1|Number of team members              |         |
 |2|Number of stakeholders              |         |
 |3|Subtract the value in line 2 from the value in line 1*    |         |
-|4|# of Visual Studio subscribers**    |         |
+|4|Number of Visual Studio subscribers**    |         |
 |5|Subtract the value in line 4 from the value in line 3     |         |
 |6|Subtract the value in line 5 from the value in line 5***  |         |
 
-- *Stakeholders are free 
-- ** Visual Studio Subscribers have Azure DevOps Services included as a benefit of the subscription 
-- ***Each Azure DevOps Services organization gets five free users 
+- *Stakeholders are free. 
+- ** Visual Studio Subscribers have Azure DevOps Services included as a benefit of the subscription. 
+- ***Each Azure DevOps Services organization gets five free users. 
 
 For more information about cost-effective options for accessing features, see the [Billing overview](../organizations/billing/overview.md) and the [Azure Pricing Calculator](https://azure.microsoft.com/pricing/calculator/?service=azure-devops). 
 
-Buy any needed Azure DevOps Services user licenses through the Visual Studio Marketplace or the Azure portal. We delve into this process during the [Prepare for test run phase](migration-prepare-test-run.md). 
+Buy any needed Azure DevOps Services user licenses through the Visual Studio Marketplace or the Azure portal. This process is covered during the [Prepare for test run phase](migration-prepare-test-run.md). 
 
 In addition to the core features, the following value-added services are available in Azure DevOps that you might find beneficial: 
 
@@ -113,20 +112,24 @@ Some of these services might come with extra costs, so it’s essential to evalu
 
 ## Reserve your new organization 
 
-Considering the migration project’s timeline, we recommend that you reserve the name of your organization early on to ensure that your desired name is available for your final migration. 
+Considering the migration project’s timeline, reserve the name of your organization early to ensure that your desired name is available for your final migration. 
 
-For instance, if your company is Contoso and you want an organization with a matching name, for example, `https://dev.azure.com/contoso`, you can create an organization with that name now. But keep in mind that you can only migrate into a brand-new Azure DevOps Services organization. 
+For example, if your company is Contoso and you want an organization with a matching name, such as `https://dev.azure.com/contoso`, create an organization with that name now. But keep in mind that you can only migrate into a brand-new Azure DevOps Services organization. 
 
-Do the following steps to reserve your organization name. 
+Complete the following steps to reserve your organization name.
 
-1. Initial reservation: 
-   1. Create an organization with a temporary name, for example, `https://dev.azure.com/contoso-temporary`.
-   2. Reserve this temporary name for your future migration. 
-2. Final migration: 
-   1. When you’re ready to begin the final migration, perform it into the `https://dev.azure.com/contoso-temporary` organization.
-   2. After successful migration, rename the reserved organization to open your desired name for the imported organization. Rename it rather than deleting it because a deletion can take up to an hour to release the name, when renaming it's immediate.
-   3. Immediately rename the migrated organization to the desire name, for example, `https://dev.azure.com/contoso`, that you just cleared by renaming.
-   4. Optionally, you can delete the originally reserved and renamed organization at this point. 
+1. Initial reservation:
+   1. Create an organization with your desired final name, such as `https://dev.azure.com/contoso`. This step reserves the name so no one else can claim it during your migration window.
+   1. Keep this organization in place until you're ready to migrate.
+1. Final migration:
+   1. When you're ready to begin the final migration, perform it into a temporary organization, such as `https://dev.azure.com/contoso-temporary`. You can't migrate into an existing organization.
+   1. After successful migration, rename the reserved organization (`https://dev.azure.com/contoso`) to a placeholder name, such as `https://dev.azure.com/contoso-remove-later`. Renaming the organization is preferable to deleting it because a deletion can take up to an hour to release the name.
+
+      > [!NOTE]
+      > Wait at least one hour after a rename operation before renaming another organization. For more information, see [Rename your organization](../organizations/accounts/rename-organization.md).
+
+   1. Rename the migrated organization (`https://dev.azure.com/contoso-temporary`) to your desired final name (`https://dev.azure.com/contoso`).
+   1. Optionally, delete the placeholder organization (`https://dev.azure.com/contoso-remove-later`).
 
 By following this approach, you have a smooth transition while ensuring your preferred organization name remains available. 
 
