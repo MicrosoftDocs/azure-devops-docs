@@ -8,7 +8,7 @@ ms.topic: how-to
 ms.author: laurajiang
 author: laurajjiang
 monikerRange: 'azure-devops'
-ms.date: 05/26/2026
+ms.date: 06/15/2026
 ms.custom: cross-service, sfi-image-nochange
 ---
 
@@ -31,12 +31,14 @@ There are two main ways to set up code scanning for your repository: **default s
 | | Default setup | Advanced setup |
 |---|---|---|
 | **Configuration** | Automatic, no pipeline configuration required | Manual, requires adding CodeQL tasks to a pipeline |
-| **Language detection** | Automatically detects and scans CodeQL-supported languages | You specify languages in the pipeline task |
+| **Language detection** | Automatically detects and scans the supported languages | You specify languages in the pipeline task |
 | **Branch coverage** | Scans default branch only | Scans any branch that triggers the pipeline |
 | **Build customization** | No custom build steps — uses `none` build mode | Full control over build steps for compiled languages |
 | **Best for** | Quick enablement, standard scanning needs | Multi-branch scanning, custom agent pool or scanning frequency |
 
 **Default setup** is the quickest way to enable code scanning. It creates a managed scanning configuration behind the scenes and requires no pipeline changes. We recommend starting with default setup for most repositories.
+
+Default setup scans the following languages: C#, Java, JavaScript/TypeScript, Python, Ruby, and Rust. C/C++, Go, and Swift aren't currently supported by default setup. To scan these languages, use advanced setup.
 
 **Advanced setup** gives you full control by adding CodeQL tasks directly to your Azure Pipelines. Use advanced setup when you need to:
 - Manage specific agent pools for different languages or compute needs
@@ -177,6 +179,7 @@ CodeQL supports and uses the following language identifiers:
 | JavaScript/TypeScript  | `javascript`            |
 | Python                 | `python`                | 
 | Ruby                   | `ruby`                  | 
+| Rust                   | `rust`                  | 
 | Swift                  | `swift`                 | 
 
 > [!TIP]
