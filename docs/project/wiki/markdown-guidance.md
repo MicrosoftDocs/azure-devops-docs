@@ -933,22 +933,34 @@ When you work with Mermaid diagram in Azure DevOps, keep in mind the following l
 
 #### Example: Add Mermaid diagram to wiki page
 
-To add a Mermaid diagram to a wiki page, start and end the notation with three colons `:`. Specify the `mermaid` keyword, the diagram type, such as `sequenceDiagram`, and provide the information to illustrate. The information to diagram is specified as an indented section in the syntax.
+To add a Mermaid diagram to a wiki page, you can use either of these formats:
 
-The following example shows how to add a Mermaid diagram to a wiki page:
+- The `:::` container syntax with the `mermaid` keyword.
+- A standard fenced code block with the `mermaid` language identifier.
+
+Specify the diagram type, such as `sequenceDiagram`, and then provide the diagram content as an indented block.
+
+The following examples show both supported formats:
 
 ```md
 ::: mermaid
 <diagram type>
-   <diagam information>
+  <diagram information>
 :::
 ```
+
+````md
+```mermaid
+<diagram type>
+  <diagram information>
+```
+````
 
 #### Example: Sequence diagram
 
 A sequence diagram (type `sequenceDiagram`) is an interaction illustration that shows how processes operate with one another and in which order.
 
-The following example shows how to add a sequence diagram to a wiki page:
+The following examples show how to add a sequence diagram by using either syntax:
 
 ```md
 ::: mermaid
@@ -958,6 +970,15 @@ sequenceDiagram
     Christie->>Josh: See you later!
 :::
 ```
+
+````md
+```mermaid
+sequenceDiagram
+    Christie->>Josh: Hello Josh, how are you?
+    Josh-->>Christie: Great!
+    Christie->>Josh: See you later!
+```
+````
 
 Here's the published view of the sequence diagram:
 
