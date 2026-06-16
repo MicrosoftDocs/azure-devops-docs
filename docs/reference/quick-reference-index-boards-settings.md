@@ -71,7 +71,7 @@ You customize your work tracking experience to support your business and reporti
 
 ::: moniker range="azure-devops"
 
-You customize Azure Boards work tracking using the Inheritance process model which uses a WYSIWYG user interface to customize work tracking objects and tools. For select organizations who migrated to Azure DevOps Services using the data migration tool for Azure DevOps, the Hosted XML process model is used. This model relies on modifying and importing process templates to customize work tracking objects and tools. 
+You customize Azure Boards work tracking using the Inheritance process model, which provides a visual editor in the web portal for customizing work tracking objects and tools. For select organizations who migrated to Azure DevOps Services using the data migration tool for Azure DevOps, the Hosted XML process model is used. This model relies on modifying and importing process templates to customize work tracking objects and tools. 
 
 ::: moniker-end
 

@@ -2,13 +2,14 @@
 title: Default processes and process templates
 titleSuffix: Azure Boards
 description: Learn about choosing a process or process template based on the process model you use in your Azure Boards project.
-ms.custom: work-items 
+ms.custom: work-items
 ms.service: azure-devops-boards
 ms.topic: overview
 ms.author: chcomley
 author: chcomley
 monikerRange: '<= azure-devops'
-ms.date: 12/22/2025
+ms.date: 06/16/2026
+ai-usage: ai-assisted
 #customer intent: As a team leader, I want to understand the processes that Azure Boards uses to manage work items for my project.
 ---
 
@@ -16,91 +17,46 @@ ms.date: 12/22/2025
 
 [!INCLUDE [version-lt-eq-azure-devops](../../../includes/version-lt-eq-azure-devops.md)]
 
-Azure Boards offers various processes for managing work items. Selecting the right process helps optimize project workflow and ensure your project's success. In this article, explore the different processes available with Azure Boards. This article provides guidance on how to choose the most suitable process for your project.
+Azure Boards offers several processes for managing work items. Selecting the right process helps optimize your project workflow and sets your team up for success. This article describes the processes available in Azure Boards and helps you choose the one that fits your project.
 
 [!INCLUDE [process terms](../../../includes/choose-process-introduction.md)]
 
-The default process types are *Basic*, *Agile*, *Capability Maturity Model Integration (CMMI)*, and *Scrum*. The work tracking objects in the default processes and process templates are the same. They're summarized in this article.
+The default process types are *Basic*, *Agile*, *Capability Maturity Model Integration (CMMI)*, and *Scrum*. The work tracking objects in the default processes and process templates are the same. This article summarizes them.
 
 [!INCLUDE [process templates](../../includes/get-latest-process-templates.md)]
 
 ## Default processes
 
-The default processes differ mainly in the work item types they provide for planning and tracking work. The default processes are:
+The default processes mainly differ in the work item types they provide for planning and tracking work. Use the following guide to choose the process that fits your team:
 
-- **Basic**: Is the most lightweight.
-- **Scrum**: Is the next most lightweight.
-- **Agile**: Supports many Agile method terms.
-- **CMMI**: Provides the most support for formal processes and change management.
+- Choose **Basic** for the simplest experience - track work as Epics, Issues, and Tasks.
+- Choose **Agile** if your team uses Agile methods and you want to track User Stories with separate development and test activities.
+- Choose **Scrum** if your team follows Scrum and tracks Product Backlog Items and Bugs.
+- Choose **CMMI** if your team needs formal change management, an auditable record of decisions, and tracking for Requirements, Change Requests, Risks, and Reviews.
 
-:::row:::
-   :::column span="2":::
+### Choose the right process
 
-   **Basic**
+If you're not sure which process fits your team, use the following scenarios as a starting point:
 
-   Choose [Basic](../../get-started/plan-track-work.md) when your team wants the simplest model that uses Issue, Task, and Epic work item types to track work.
+| Scenario | Recommended process | Why |
+|---|---|---|
+| You're new to Azure Boards or want the lightest-weight tracking. | **Basic** | Three work item types (Epic, Issue, Task) and a simple `To Do` / `Doing` / `Done` workflow. |
+| Your team practices Agile, tracks user stories, and separates development from test work. | **Agile** | User Stories with separate Bug tracking; richer states (`New`, `Active`, `Resolved`, `Closed`, `Removed`). |
+| Your team practices Scrum with sprints, product backlog items, and impediments. | **Scrum** | Product Backlog Items and Bugs on the board; `Approved` and `Committed` states map directly to Scrum ceremonies. |
+| You work in a regulated environment that requires formal change control, an auditable record of decisions, and risk and review tracking. | **CMMI** | Adds Requirement, Change Request, Risk, and Review work item types and supports formal change-management activities. |
 
-   Tasks support tracking Remaining Work.
+> [!IMPORTANT]
+> You can't change a project's base process after the project is created. You can [customize an inherited process](../../../organizations/settings/work/customize-process.md) to add fields, states, and work item types, or you can [create a new project](../../../organizations/projects/create-project.md) on a different process and [move work items between projects](../../backlogs/move-change-type.md).
 
-   :::column-end:::
-   :::column span="2":::
+> [!NOTE]
+> Choosing or customizing a process requires membership in the **Project Collection Administrators** group. For more information, see [Default permissions quick reference](../../../organizations/security/permissions-access.md).
 
-   :::image type="content" source="../../get-started/media/about-boards/basic-process-epics-issues-tasks-2.png" alt-text="Diagram shows Basic work item types in a hierarchy.":::
-   :::column-end:::
-:::row-end:::
----
-:::row:::
-   :::column span="2":::
-
-   **Agile**
-
-   Choose [Agile](agile-process.md) when your team uses Agile planning methods, including Scrum, and tracks development and test activities separately. This process works great for tracking User Stories and, optionally, bugs on the board. You can also track bugs and tasks on the taskboard.
-
-   For more information about Agile methodologies, see [Agile Alliance](https://www.agilealliance.org/).
-
-   Tasks support tracking Original Estimate, Remaining Work, and Completed Work.
-
-   :::column-end:::
-   :::column span="2":::
-
-   :::image type="content" source="media/ALM_PT_Agile_WIT_Artifacts.png" alt-text="Diagram shows Agile work item types in a hierarchy.":::
-   :::column-end:::
-:::row-end:::
----
-:::row:::
-   :::column span="2":::
-
-   **Scrum**
-
-   Choose [Scrum](scrum-process.md) when your team practices Scrum. This process works great for tracking product backlog items and bugs on the board. You can also break down product backlog items and bugs into tasks on the taskboard.
-
-   This process supports the Scrum methodology as defined by the [Scrum organization](https://www.scrum.org/).
-
-   Tasks support tracking Remaining Work only.
-
-   :::column-end:::
-   :::column span="2":::
-
-   :::image type="content" source="media/ALM_PT_Scrum_WIT_Artifacts.png" alt-text="Diagram shows Scrum work item types in a hierarchy.":::
-   :::column-end:::
-:::row-end:::
----
-:::row:::
-   :::column span="2":::
-
-   **CMMI**
-
-   Choose [CMMI](cmmi-process.md) when your team follows more formal project methods that require a framework for process improvement and an auditable record of decisions. With this process, you can track requirements, change requests, risks, and reviews.
-
-   This process supports [formal change management activities](./cmmi/guidance-background-to-cmmi.md). Tasks support tracking Original Estimate, Remaining Work, and Completed Work.
-
-   :::column-end:::
-   :::column span="2":::
-
-   :::image type="content" source="media/ALM_PT_CMMI_WIT_Artifacts.png" alt-text="Screenshot shows CMMI work item types in a hierarchy.":::
-   :::column-end:::
-  :::row-end:::
----
+| Process | Work item hierarchy |
+|---|---|
+| **Basic**<br/><br/>Choose [Basic](../../get-started/plan-track-work.md) when your team wants the simplest model that uses Issue, Task, and Epic work item types to track work.<br/><br/>Tasks support tracking Remaining Work. | :::image type="content" source="../../get-started/media/about-boards/basic-process-epics-issues-tasks-2.png" alt-text="Diagram shows Basic work item types in a hierarchy."::: |
+| **Agile**<br/><br/>Choose [Agile](agile-process.md) when your team uses Agile planning methods, including Scrum, and tracks development and test activities separately. This process works great for tracking User Stories and, optionally, bugs on the board. You can also track bugs and tasks on the taskboard.<br/><br/>For more information about Agile methodologies, see [Agile Alliance](https://www.agilealliance.org/).<br/><br/>Tasks support tracking Original Estimate, Remaining Work, and Completed Work. | :::image type="content" source="media/ALM_PT_Agile_WIT_Artifacts.png" alt-text="Diagram shows Agile work item types in a hierarchy."::: |
+| **Scrum**<br/><br/>Choose [Scrum](scrum-process.md) when your team practices Scrum. This process works great for tracking product backlog items and bugs on the board. You can also break down product backlog items and bugs into tasks on the taskboard.<br/><br/>This process supports the Scrum methodology as defined by the [Scrum organization](https://www.scrum.org/).<br/><br/>Tasks support tracking Remaining Work only. | :::image type="content" source="media/ALM_PT_Scrum_WIT_Artifacts.png" alt-text="Diagram shows Scrum work item types in a hierarchy."::: |
+| **CMMI**<br/><br/>Choose [CMMI](cmmi-process.md) when your team follows more formal project methods that require a framework for process improvement and an auditable record of decisions. With this process, you can track requirements, change requests, risks, and reviews.<br/><br/>This process supports [formal change management activities](./cmmi/guidance-background-to-cmmi.md). Tasks support tracking Original Estimate, Remaining Work, and Completed Work. | :::image type="content" source="media/ALM_PT_CMMI_WIT_Artifacts.png" alt-text="Diagram that shows CMMI work item types in a hierarchy."::: |
 
 If you need more than two or three backlog levels, add more based on the process model that you use:
 
@@ -109,216 +65,25 @@ If you need more than two or three backlog levels, add more based on the process
 
 <a id="main-distinctions"></a>
 
-## Main distinctions among the default process
+## Main distinctions among the default processes
 
-The default processes are designed to meet the needs of most teams. If your team has unusual needs and connects to an on-premises server, customize a process and then create the project. You can also create a project from a process and then customize the project.
+The default processes meet the needs of most teams. If your team has unusual needs and connects to an on-premises server, customize a process and then create the project. You can also create a project from a process and then customize the project.
 
 The following table summarizes the main distinctions between the work item types and states used by the four default processes.
 
-:::row:::
-   :::column span="1":::
-   **Tracking area**
-   :::column-end:::
-   :::column span="1":::
-   **Basic**
-   :::column-end:::
-   :::column span="1":::
-   **Agile**
-   :::column-end:::
-   :::column span="1":::
-   **Scrum**
-   :::column-end:::
-   :::column span="1":::
-   **CMMI**
-   :::column-end:::
-:::row-end:::
----
-:::row:::
-   :::column span="1":::
+| Tracking area | Basic | Agile | Scrum | CMMI |
+|---|---|---|---|---|
+| **Workflow states** | - To Do<br/>- Doing<br/>- Done | - New<br/>- Active<br/>- Resolved<br/>- Closed<br/>- Removed | - New<br/>- Approved<br/>- Committed<br/>- Done<br/>- Removed | - Proposed<br/>- Active<br/>- Resolved<br/>- Closed |
+| **Product planning** (see Note 1) | - Issue | - User Story<br/>- Bug (optional) | - Product backlog item<br/>- Bug (optional) | - Requirement<br/>- Bug (optional) |
+| **Portfolio backlogs** (see Note 2) | - Epic | - Epic<br/>- Feature | - Epic<br/>- Feature | - Epic<br/>- Feature |
+| **Task and sprint planning** (see Note 3) | - Task | - Task<br/>- Bug (optional) | - Task<br/>- Bug (optional) | - Task<br/>- Bug (optional) |
+| **Bug backlog management** (see Note 1) | - Issue | - Bug | - Bug | - Bug |
+| **Issue and risk management** | - Issue | - Issue | - Impediment | - Change Request<br/>- Issue<br/>- Risk<br/>- Review |
 
-   Workflow states
-   :::column-end:::
-   :::column span="1":::
-
-   - To Do
-   - Doing
-   - Done
-
-   :::column-end:::
-   :::column span="1":::
-
-   - New
-   - Active
-   - Resolved
-   - Closed
-   - Removed
-
-   :::column-end:::
-      :::column span="1":::
-
-   - New
-   - Approved
-   - Committed
-   - Done
-   - Removed
-   :::column-end:::   
-   :::column span="1":::
-
-   - Proposed
-   - Active
-   - Resolved
-   - Closed
-
-   :::column-end:::
-:::row-end:::
-:::row:::
-   :::column span="1":::
-
-   Product planning (see Note 1)
-   :::column-end:::
-   :::column span="1":::
-
-   - Issue
-
-   :::column-end:::
-   :::column span="1":::
-
-   - User Story
-   - Bug (optional)
-
-   :::column-end:::
-   :::column span="1":::
-
-   - Product backlog item
-   - Bug (optional)
-
-   :::column-end:::
-   :::column span="1":::
-
-   - Requirement
-   - Bug (optional)
-
-   :::column-end:::
-:::row-end:::
-:::row:::
-   :::column span="1":::
-
-   Portfolio backlogs (see Note 2)
-   :::column-end:::
-   :::column span="1":::
-
-   - Epic
-
-   :::column-end:::
-   :::column span="1":::
-
-   - Epic
-   - Feature
-
-   :::column-end:::
-   :::column span="1":::
-
-   - Epic
-   - Feature
-
-   :::column-end:::
-   :::column span="1":::
-
-   - Epic
-   - Feature
-
-   :::column-end:::
-:::row-end:::
-:::row:::
-   :::column span="1":::
-
-   Task and sprint planning (see Note 3)
-   :::column-end:::
-   :::column span="1":::
-
-   - Task
-
-   :::column-end:::
-   :::column span="1":::
-
-   - Task
-   - Bug (optional)
-
-   :::column-end:::
-      :::column span="1":::
-
-   - Task
-   - Bug (optional)
-
-   :::column-end:::
-   :::column span="1":::
-
-   - Task
-   - Bug (optional)
-
-   :::column-end:::
-:::row-end:::
-:::row:::
-   :::column span="1":::
-
-   Bug backlog management (see Note 1)
-   :::column-end:::
-   :::column span="1":::
-
-   - Issue
-
-   :::column-end:::
-   :::column span="1":::
-
-   - Bug
-
-   :::column-end:::
-   :::column span="1":::
-
-   - Bug
-
-   :::column-end:::
-   :::column span="1":::
-
-   - Bug
-
-   :::column-end:::
-:::row-end:::
-:::row:::
-   :::column span="1":::
-
-   Issue and risk management
-   :::column-end:::
-   :::column span="1":::
-
-   - Issue
-
-   :::column-end:::
-   :::column span="1":::
-
-   - Issue
-
-   :::column-end:::
-   :::column span="1":::
-
-   - Impediment
-
-   :::column-end:::
-   :::column span="1":::
-
-   - Issue
-   - Risk
-   - Review
-
-   :::column-end:::
-:::row-end:::
----
-
-Notes:
-
-1. Add work items from the [product backlog](../../backlogs/create-your-backlog.md) or [board](../../boards/kanban-overview.md). The product backlog shows a single view of the current backlog of work that can be dynamically reordered and grouped. Product owners can prioritize work and outline dependencies and relationships. Each team can configure how they want [bugs to show up on their backlogs and boards](../../../organizations/settings/show-bugs-on-backlog.md).
-1. Define a hierarchy of portfolio backlogs to understand the scope of work across several teams and see how that work rolls up into broader initiatives. Each team configures which [portfolio backlogs appear for their use](../../../organizations/settings/select-backlog-navigation-levels.md).
-1. Define tasks from the [sprint backlog and taskboard](../../sprints/assign-work-sprint.md). With capacity planning, teams can determine if they're over capacity or under capacity for a sprint.
+> [!NOTE]
+> 1. Add work items from the [product backlog](../../backlogs/create-your-backlog.md) or [board](../../boards/kanban-overview.md). The product backlog shows a single view of the current backlog of work that you can dynamically reorder and group. Product owners can prioritize work and outline dependencies and relationships. Each team can configure how they want [bugs to show up on their backlogs and boards](../../../organizations/settings/show-bugs-on-backlog.md).
+> 1. Define a hierarchy of portfolio backlogs to understand the scope of work across several teams and see how that work rolls up into broader initiatives. Each team configures which [portfolio backlogs appear for their use](../../../organizations/settings/select-backlog-navigation-levels.md).
+> 1. Define tasks from the [sprint backlog and taskboard](../../sprints/assign-work-sprint.md). With capacity planning, teams can determine if they're over capacity or under capacity for a sprint.
 
 <a id="workflow-states"></a>
 
@@ -327,7 +92,7 @@ Notes:
 Workflow states support tracking the status of work as it moves from a `New` state to a `Closed` or a `Done` state. Each workflow consists of a set of states, the valid transitions between the states, and the reasons for transitioning the work item to the selected state.
 
 > [!IMPORTANT]
-> **Workflow transitions:** The default workflow transitions support any state to any state transition for Azure DevOps. You can customize these workflows to restrict specific transitions based on your team's requirements. For more information, see [Customize your work tracking experience](../../../reference/customize-work.md).
+> **Workflow transitions:** The default workflows in Azure DevOps support any-state-to-any-state transitions. You can customize these workflows to restrict specific transitions based on your team's requirements. For more information, see [Customize your work tracking experience](../../../reference/customize-work.md).
 >
 > **Visualizing workflows:** To view the supported workflow transitions for each work item type, install the [State Model Visualization](https://marketplace.visualstudio.com/items?itemName=taavi-koosaar.StateModelVisualization) Marketplace extension. This extension adds a **State Visualizer** hub under **Boards** where you can select a work item type and view its complete workflow state model.
 
@@ -469,12 +234,15 @@ Change the workflow to support other states, transitions, and reasons. For more 
 
 <a id="removed-closed-done"></a>
 
-### Work item states
+### How Removed, Closed, and Done states behave on backlogs
 
 When you change the state of a work item to `Removed`, `Closed`, or `Done`, the system responds as follows:
 
-- `Closed` or `Done`: Work items in this state don't appear on the portfolio backlog and backlog pages. However, they do appear on the sprint backlog pages, board, and taskboard. When you change the portfolio backlog view to **Show backlog items**, for example, to view features to product backlog items, work items in the `Closed` and `Done` state appear.
+- `Closed` or `Done`: Work items in this state don't appear on portfolio backlog or backlog pages, but they do appear on the sprint backlog pages, board, and taskboard. When you change the portfolio backlog view to **Show backlog items** - for example, to view features alongside product backlog items - work items in the `Closed` and `Done` states also appear.
 - `Removed`: Work items in this state don't appear on any backlog or board.
+
+> [!NOTE]
+> The default CMMI workflow doesn't include a `Removed` state. To take a CMMI work item out of active tracking, set its state to `Closed` and choose an appropriate reason (for example, *Deferred* or *Rejected*). You can [customize an inherited process](../../../organizations/settings/work/customize-process-workflow.md) to add a `Removed` state if your team needs one.
 
 Your project maintains work items as long as the project is active. Even if you set work items to `Closed`, `Done`, or `Removed`, the data store keeps a record. You can use this record to create queries or reports.
 
@@ -490,31 +258,36 @@ The following work item types are added to all processes except the Basic proces
 
 :::image type="content" source="media/ALM_PT_WITS_shared.png" alt-text="Diagram that shows work item types used by Test Plans, Microsoft Test Manager, My Work, and Feedback.":::
 
-Your team can create and work with these types by using the corresponding tool.
+Your team can create and work with these types by using the corresponding tool. These work item types remain in the schema for historical compatibility. Microsoft Test Manager and the Team Explorer **My Work** experience are legacy tools that are largely replaced by the web portal.
 
 | Tool  | Work item types |
 |:---------|:---------|
-| Microsoft Test Manager | `Test Plan`, `Test Suite`, `Test Case Shared Steps`, `Shared Parameters` |
+| Microsoft Test Manager (legacy) | `Test Plan`, `Test Suite`, `Test Case Shared Steps`, `Shared Parameters` |
 | Request Feedback | `Feedback Request`, `Feedback Response` |
-| My Work (from Team Explorer), Code Review | `Code Review Request`, `Code Review Response` |
+| My Work (from Team Explorer, legacy), Code Review | `Code Review Request`, `Code Review Response` |
 
-Work items from these type definitions aren't meant to be created manually and are then added to the `Hidden Types` category. Work item types added to the `Hidden Types` category don't appear on the menus that create new work items.
+You can't manually create work items from these type definitions. They're added to the `Hidden Types` category. Work item types added to the `Hidden Types` category don't appear on the menus that create new work items.
 
 <a id="test-experience"></a>
 
 ### Work item types that support the test experience
 
-Work item types that support the test experience and work with Test Manager and the web portal are linked together by using the link types shown in the following image.
+The link types shown in the following image connect work item types that support the test experience and work with Test Manager and the web portal.
 
 :::image type="content" source="media/ALM_PT_WITS_TestExperience.png" alt-text="Diagram that shows test management work item types.":::
 
-From the web portal or Microsoft Test Manager, view which test cases are defined for a test suite and view which test suites are defined for a test plan. However, these objects aren't connected to each other through link types. Customize these work item types as you would any other work item types. For more information, see [Customize your work tracking experience](../../../reference/customize-work.md).
+From the web portal or Microsoft Test Manager, you can view which test cases are defined for a test suite and view which test suites are defined for a test plan. However, these objects aren't connected to each other through link types. Customize these work item types as you would any other work item types. For more information, see [Customize your work tracking experience](../../../reference/customize-work.md).
 
-If you change the workflow for the test plan and test suite, you might need to update the process configuration as described here. For definitions of each test field, see [Create a query based on build and test integration fields](../../queries/build-test-integration.md).
+If you change the workflow for the test plan and test suite, you might need to update the process configuration as described in this article. For definitions of each test field, see [Create a query based on build and test integration fields](../../queries/build-test-integration.md).
 
 ## Related content
 
-<a id="term-note"></a>
-
 - [Customize your work tracking experience](../../../reference/customize-work.md)
 - [Upload and download process templates](manage-process-templates.md)
+- [Manage processes](../../../organizations/settings/work/manage-process.md)
+- [Create a project](../../../organizations/projects/create-project.md)
+- [Track work items by using GitHub Copilot](../../github/work-item-integration-github-copilot.md)
+- [Agile process](agile-process.md)
+- [Scrum process](scrum-process.md)
+- [CMMI process](cmmi-process.md)
+- [Plan and track work (Basic process)](../../get-started/plan-track-work.md)
