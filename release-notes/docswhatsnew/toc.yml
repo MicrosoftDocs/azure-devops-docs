@@ -1,11 +1,11 @@
 - name: What's new
   href: ./index.yml
-- name: April 2026
+- name: May 2026
   href: ./azure-devops-docs-whats-new.md
+- name: April 2026
+  href: ./azure-devops-docs-whats-new.md#april-2026
 - name: March 2026
   href: ./azure-devops-docs-whats-new.md#march-2026
-- name: February 2026
-  href: ./azure-devops-docs-whats-new.md#february-2026
 
 
 
