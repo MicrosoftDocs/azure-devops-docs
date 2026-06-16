@@ -135,7 +135,7 @@ Your project defines the work item types (WITs) available for tracking work and 
 
 > [!NOTE]    
 >The method you use to customize work tracking depends on the process model you subscribe to: 
->- **Inheritance**: Supports WYSIWYG customization, available for Azure DevOps Services, Azure DevOps Server 2019, and Azure DevOps Server 2020.  
+>- **Inheritance**: Supports visual customization in the web portal. 
 >- **Hosted XML**: Supports customization through import/export of process templates, available for a select number of customers of Azure DevOps Services who have opted into this model.     
 >- **On-premises XML**: Supports customization through import/export of XML definition files for work tracking objects and is available for all on-premises deployments.        
 
@@ -161,7 +161,7 @@ The following table summarizes the differences between the three supported proce
 ---
 :::row:::
    :::column span="3":::
-      WYSIWYG editing
+      Visual editing in the web portal
    :::column-end:::
    :::column span="1":::
       ✔️
@@ -383,7 +383,7 @@ Choose your process model based on your organization's needs:
 
 #### Inheritance Process Model (Recommended)
 - **Best for**: Teams wanting intuitive, web-based customization
-- **Advantages**: WYSIWYG editing, automatic updates, easy maintenance
+- **Advantages**: Visual editing in the web portal, automatic updates, easy maintenance
 - **Use when**: You need moderate customization with minimal complexity
 
 #### Hosted XML Process Model
