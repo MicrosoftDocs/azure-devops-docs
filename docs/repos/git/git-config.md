@@ -35,7 +35,7 @@ Within those categories, settings can be:
 
 - [Visual Studio Git-related settings](#modify-visual-studio-git-related-settings), which are Visual Studio settings that relate to Git but aren't stored in any Git configuration file. You can only view and modify these settings in Visual Studio. An example of one of these settings is the default folder path where Visual Studio clones repos.
 
-In this article, learn how to:
+In this article, you learn how to:
 
 >[!div class="checklist"]
 >* Explore Git settings
