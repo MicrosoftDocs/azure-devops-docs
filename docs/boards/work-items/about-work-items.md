@@ -8,7 +8,7 @@ ms.author: chcomley
 author: chcomley
 ms.topic: overview
 monikerRange: '<= azure-devops'
-ms.date: 10/08/2025
+ms.date: 06/16/2026
 ai-usage: ai-assisted
 --- 
 
@@ -16,11 +16,11 @@ ai-usage: ai-assisted
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
-Use work items to track features, requirements, code defects, bugs, and project issues or risks. Each work item uses a work item type that determines which fields are available for tracking information. The work item types available depend on the [process used when your project was created](../../boards/work-items/guidance/choose-process.md): **Agile**, **Basic**, **Scrum**, or **CMMI**.
+A **work item** is a record in Azure Boards that represents a unit of work - a feature to build, a bug to fix, a task to complete, or an issue or risk to track. Teams use work items to plan delivery, assign ownership, capture discussion and history, and connect code changes to the work they support. Each work item receives a unique identifier within an organization or project collection and is stored in the work item data store.
 
-Each work item is an object stored in the work item data store and receives a unique identifier within an organization or project collection.
+Every work item uses a **work item type**, which determines the fields available for tracking information. The available work item types depend on the [process used when your project was created](../../boards/work-items/guidance/choose-process.md): **Agile**, **Basic**, **Scrum**, or **CMMI**. If you didn't create a project yet, your choice of process determines the work item types and workflows referenced throughout this article.
 
-If you're getting started, read this article. To start tracking work on a board, see [Plan and track work](../get-started/plan-track-work.md). For a quick reference to common work item tasks and concepts, see [Work item quick reference](quick-ref.md).
+To start tracking work on a board, see [Plan and track work](../get-started/plan-track-work.md). For a quick reference to common work item tasks and concepts, see [Work item quick reference](quick-ref.md).
 
 [!INCLUDE [ai-assistance-callout](../../includes/ai-assistance-callout.md)]
 
@@ -32,10 +32,12 @@ Choose a specific work item type to track different kinds of work. The following
 
 [!INCLUDE [temp](../includes/work-item-types.md)]
 
+Work item types form a hierarchy: Epics group Features, Features group Requirements (User Stories, Product Backlog Items, Issues, or Requirements), and Requirements group Tasks. You connect items across the hierarchy with parent-child links. For more information, see [Backlogs, portfolios, and Agile project management](../backlogs/backlogs-overview.md).
+
 Each work item type belongs to a category. Categories group work item types and determine which types appear on backlogs and boards.
 
-|Category | Work item type | Controls backlogs/boards |
-|----------|----------------|--------------------------|
+|Category | Work item type | Controls backlogs and boards |
+|----------|----------------|------------------------------|
 |Epic  | Epic | Epic portfolio backlogs and boards |
 |Feature   | Feature | Feature portfolio backlogs and boards |
 |Requirement| User Story (Agile)<br/>Issue (Basic)<br/>Product Backlog Item (Scrum)<br/>Requirement (CMMI)| Product backlogs and boards and Sprints backlog  |
@@ -59,7 +61,7 @@ Teams choose how to track bugs. You can show bugs on the product backlog and boa
 Add or revise fields in a work item type, create a custom work item type, or adjust which types appear on backlogs and boards. Which customization options you can use depends on your project's process model. See:
 
 ::: moniker range="azure-devops" 
-- [Customize your work tracking experience](../../organizations/settings/work/inheritance-process-model.md) 
+- [Customize your work tracking experience](../../organizations/settings/work/customize-process.md) 
 - [About process customization and inherited processes](../../organizations/settings/work/inheritance-process-model.md) 
 - [Hosted XML process model](../../organizations/settings/work/hosted-xml-process-model.md).
 ::: moniker-end
@@ -81,25 +83,20 @@ The **Details** tab contains common fields, other fields defined for the work it
 
 ### Work item form controls
 
-| Control                  | Function                      |
-|--------------------------|-------------------------------|
-| ![Screenshot that shows the copy to clipboard icon.](../backlogs/media/icon-copy-to-clipboard.png) | Copy the work item URL to the clipboard (appears when you hover over the work item title)  |
-| ![Screenshot that shows the Discussions icon.](../media/icons/icon-discussions-wi.png) | Open the Discussions section  |
-|   :::image type="icon" source="../media/icons/actions-icon.png" border="false":::  | Open the Actions menu for more work item tasks |
-| ![Screenshot that shows the Refresh icon.](../media/icons/icon-refresh-wi.png) | Refresh the work item with the latest changes  |  
-| ![Screenshot that shows the Undo icon.](../media/icons/icon-undo-changes-wi.png) | Revert changes to the work item           |  
-| ![Screenshot that shows the History tab icon.](../media/icons/icon-history-tab-wi.png) | Open the History tab        |
-| ![Screenshot that shows the Links tab icon.](../media/icons/icon-links-tab-wi.png) | Open the Links tab     |
-| ![Screenshot that shows the Attachments tab icon.](../backlogs/media/icon-attachments-tab-wi.png) | Open the Attachments tab   |
-| ![Screenshot that shows the full screen icon and exit full screen icon.](../media/icons/fullscreen_icon.png) / ![Screenshot that shows exit full screen icon.](../media/icons/exitfullscreen_icon.png) | Enter or exit full display mode for a section within the form   |
-| ![Screenshot that shows the collapse and expand section icons.](../media/icons/collapse-wi-section.png)/![Screenshot that shows the expand section icon.](../media/icons/expand-wi-section.png) | Collapse or expand a section within the form   |  
-| ![Screenshot that shows the New linked work item icon.](../media/icons/new-linked-work-item.png) | Add a new work item and link it to an existing work item (might appear under the Actions menu)  |  
-| ![Screenshot that shows the Change work item type icon.](../media/icons/change-type-icon.png) | [Change work item type](../backlogs/remove-delete-work-items.md) (Appears under the Actions menu)  | 
-| ![Screenshot that shows the Change project icon.](../media/icons/change-team-project-icon.png) | [Move work item to a different project](../backlogs/remove-delete-work-items.md) (Appears under the Actions menu)  | 
-| ![Screenshot that shows the Clone icon.](../media/icons/clone-icon.png) | [Copy work item and optionally change work item type](../backlogs/copy-clone-work-items.md#copy-clone) (Appears under the Actions menu)  |  
-| ![Screenshot that shows the Email icon.](../media/icons/email-icon.png) | [Send email with a work item](email-work-items.md)  (Appears under the Actions menu)  |  
-| ![Screenshot that shows the Delete icon.](../media/icons/delete_icon.png) | [Recycle work item](../backlogs/remove-delete-work-items.md)  (Appears under the Actions menu)  | 
-| ![Screenshot that shows the Storyboard icon.](../media/icons/storyboard-icon.png) | [Storyboard with PowerPoint](/previous-versions/azure/devops/boards/backlogs/office/storyboard-your-ideas-using-powerpoint)  (Appears under the Actions menu)  |  
+The form header and tabs include controls to copy, refresh, revert, expand, and navigate the work item.
+
+| Control | Function |
+|---------|----------|
+| ![Screenshot that shows the copy to clipboard icon.](../backlogs/media/icon-copy-to-clipboard.png) | Copy the work item URL to the clipboard. The icon appears when you hover over the work item title. |
+| ![Screenshot that shows the Discussions icon.](../media/icons/icon-discussions-wi.png) | Open the Discussions section. |
+| :::image type="icon" source="../media/icons/icon-refresh-wi.png" border="false"::: | Refresh the work item with the latest changes. |
+| :::image type="icon" source="../media/icons/icon-undo-changes-wi.png" border="false"::: | Revert changes to the work item. |
+| :::image type="icon" source="../media/icons/icon-history-tab-wi.png" border="false"::: | Open the History tab. |
+| :::image type="icon" source="../media/icons/icon-links-tab-wi.png" border="false"::: | Open the Links tab. |
+| :::image type="icon" source="../backlogs/media/icon-attachments-tab-wi.png" border="false"::: | Open the Attachments tab. |
+| :::image type="icon" source="../media/icons/fullscreen_icon.png" border="false"::: / :::image type="icon" source="../media/icons/exitfullscreen_icon.png" border="false"::: | Enter or exit full display mode for a section within the form. |
+| :::image type="icon" source="../media/icons/collapse-wi-section.png" border="false"::: / :::image type="icon" source="../media/icons/expand-wi-section.png" border="false"::: | Collapse or expand a section within the form. |
+| :::image type="icon" source="../media/icons/actions-icon.png" border="false"::: | Open the **Actions** menu. For the full list of Actions menu tasks, see [Follow updates and use the Actions menu](#follow-updates-and-use-the-actions-menu). |
 
 ### Copy the URL
 
@@ -125,8 +122,8 @@ The following common fields appear in the header area of most work item forms. T
 |[Assigned To](#assign)   |Assign the work item to the team member responsible for the work. The drop-down lists team members or contributors depending on context.|
 |[State](#workflow-states)   |When you create the work item, the **State** defaults to the first workflow state. Update it to reflect current progress.|
 |[Reason](#workflow-states)   | Azure DevOps updates this automatically when you change the State. Each State has a default Reason.|
-|[Area](../queries/query-by-area-iteration-path.md)   |Choose the area path associated with the product or team, or leave it blank until planning. To edit area paths, see [Define area paths and assign to a team](../../organizations/settings/set-area-paths.md).|
-|[Iteration](../queries/query-by-area-iteration-path.md)|Choose the sprint or iteration for the work, or assign it later during planning. To edit iterations, see [Define iteration paths (sprints) and configure team iterations](../../organizations/settings//set-iteration-paths-sprints.md).|
+|[Area](../queries/query-by-area-iteration-path.md)   |Area paths group work items by product, feature, or team. Choose the area path associated with the product or team, or leave it blank until planning. To edit area paths, see [Define area paths and assign to a team](../../organizations/settings/set-area-paths.md).|
+|[Iteration](../queries/query-by-area-iteration-path.md)|Iteration paths group work items by time-boxed delivery, such as a sprint or release. Choose the sprint or iteration for the work, or assign it later during planning. To edit iterations, see [Define iteration paths (sprints) and configure team iterations](../../organizations/settings/set-iteration-paths-sprints.md).|
 
 <a id="workflow-states">  </a> 
 
@@ -164,7 +161,7 @@ You can assign a work item to only one person at a time. The **Assigned To** fie
 
 When your account connects to Microsoft Entra ID or Active Directory, Azure DevOps synchronizes identity fields such as **Activated By**, **Assigned To**, **Closed By**, **Created By**, and **Resolved By**.
 
-To grant project access, add security groups defined in Microsoft Entra ID or Active Directory. For details, see [Add or delete users using Microsoft Entra ID](/azure/active-directory/fundamentals/add-users-azure-active-directory) or [Set up groups for on-premises Azure DevOps Server deployments](/azure/devops/server/admin/setup-ad-groups).
+To grant project access, add security groups defined in Microsoft Entra ID or Active Directory. For details, see [Create, invite, and delete users in Microsoft Entra ID](/entra/fundamentals/how-to-create-delete-users) or [Set up groups for on-premises Azure DevOps Server deployments](/azure/devops/server/admin/setup-ad-groups).
 
 <a id="templates"></a>
 
@@ -172,9 +169,18 @@ To grant project access, add security groups defined in Microsoft Entra ID or Ac
 
 Work item templates let you quickly create work items with prepopulated field values. For example, create a task template that sets Area Path, Iteration Path, and discipline whenever you create that task. See [Use templates to add and update work items](../backlogs/work-item-template.md).
 
-## Follow, Refresh, Revert, and Actions menu
+<a id="tags"></a>
 
-The **Follow**, **Refresh**, **Revert changes**, and **Actions** menu controls appear on all work item forms.
+### Categorize work items with tags
+
+Tags are custom labels you add to work items to filter backlogs, queries, and boards. Apply one or more tags to any work item type - a single bug might use **regression** and **payment-flow**, while a user story might use **mobile** and **accessibility**. Tags work across work item types, so you can group related items that span features, requirements, and bugs.
+
+Add tags from the work item form. To create new tag definitions, you need the **Create tag definition** permission. For more information, see [Add work item tags to categorize and filter](../queries/add-tags-to-work-items.md).
+
+## Follow updates and use the Actions menu
+
+The **Follow**, **Refresh**, **Revert changes**, and **Actions** menu controls appear on all work item forms. Use them to subscribe to changes, sync the form with the latest edits, undo your changes, and act on the work item.
+
 
 :::row:::
    :::column span="1":::
@@ -187,7 +193,7 @@ The **Follow**, **Refresh**, **Revert changes**, and **Actions** menu controls a
       - Use the **Actions** menu for tasks such as:
         - [New linked work item](../backlogs/add-link.md)
         - [Change type](../backlogs/move-change-type.md#change-the-work-item-type)
-        - [Move to team project](../backlogs/move-change-type.md#change-the-work-item-type)
+        - [Move to another project](../backlogs/move-change-type.md#move-a-work-item-to-another-project)
         - [Create copy of a work item](../backlogs/copy-clone-work-items.md)
         - [Send email with work item](email-work-items.md) 
         - [Delete](../backlogs/remove-delete-work-items.md) 
@@ -202,10 +208,11 @@ The **Follow**, **Refresh**, **Revert changes**, and **Actions** menu controls a
 
 ## Discussion control
 
-Use the **Discussion** control to add and review comments about the work. The rich text editor toolbar appears when you focus the entry box. Each comment records an entry in the **History** field. For details, see [View and add work items](../backlogs/manage-work-items.md#capture-comments-in-the-discussion-section). To query Discussion or History, see [Query work item history and discussion fields](../queries/history-and-auditing.md).
+Use the **Discussion** control to add and review comments about the work. The rich text editor toolbar appears when you focus the entry box. Each comment records an entry in the **History** field. For details, see [View and add work items](../backlogs/manage-work-items.md). To query Discussion or History, see [Query work item history and discussion fields](../queries/history-and-auditing.md).
 
-> [!div class="mx-imgBorder"]  
-> ![Screenshot that shows the Discussion section within a work item form.](../backlogs/media/discussion-section.png)
+In the comment box, type `@` to mention a project member, `#` to link to another work item, or `!` to link to a pull request. Mentioned users receive a notification. For more information, see [Use @mentions in work items and pull requests](../../organizations/notifications/at-mentions.md).
+
+:::image type="content" source="../backlogs/media/discussion-section.png" alt-text="Screenshot that shows the Discussion section within a work item form." border="true":::
 
 ## Deployment, Development, and Related Work controls
 
@@ -229,7 +236,7 @@ The **Development** control surfaces branches, commits, pull requests, and build
 
 The **Related Work** control shows linked work items and lets you add or remove links quickly. See [Link user stories, issues, bugs, and other work items](../backlogs/add-link.md).
 
-## History, Links, and Attachment tabs
+## History, Links, and Attachments tabs
 
 The :::image type="icon" source="../backlogs/media/icon-history-tab-wi.png" border="false"::: **History**, :::image type="icon" source="../backlogs/media/icon-links-tab-wi.png" border="false"::: **Links**, and :::image type="icon" source="../backlogs/media/icon-attachments-tab-wi.png" border="false"::: **Attachments** tabs support auditing, traceability, and sharing. Use them to review change history, manage links, and attach files.
 
@@ -259,7 +266,7 @@ For more, see [Link work items to other objects](../backlogs/add-link.md) and [L
 
 ### Attachments: Attach files to a work item
 
-From the :::image type="icon" source="../media/icons/icon-links-tab-wi.png" border="false"::: **Attachments** tab, add, remove, or view files and images attached to the work item. You can add up to 100 attachments; attachments are limited to 60 MB each. For more, see [Share information within work items and social tools](../queries/share-plans.md).
+From the :::image type="icon" source="../backlogs/media/icon-attachments-tab-wi.png" border="false"::: **Attachments** tab, add, remove, or view files and images attached to the work item. Drag and drop files into the tab to attach them, or paste images directly into the **Discussion** control. You can add up to 100 attachments per work item, and each attachment is limited to 60 MB. For more information, see [Manage attachments to work items](manage-attachments.md).
 
 <a id="portal-clients"></a>  
 
@@ -293,19 +300,22 @@ In addition to backlog/board types, Azure Boards provides work item types for te
 
 Members of the Contributors group can use most features under the **Boards** hub. To add users to a project, see [Add users to a project or team](../../organizations/security/add-users-team-project.md).
 
-The following table summarizes permissions that affect a member's ability to view and edit work items.
+The following permissions affect a member's ability to view and edit work items.
 
-| Level |  Permission | 
-|-----|--------| 
-|Area path | **View work items in this node**| 
-|Area path | **Edit work items in this node**| 
-|Project |   **Create tag definition**| 
-|Project |   **Change work item type**|  
-|Project |   **Move work items out of this project**|  
-|Project |   **Delete and restore work items**| 
-|Project |   **Permanently delete work items**|    
+**Area path permissions**
 
-Users with Basic access have full access to work tracking features. Stakeholder access limits certain features. For details, see [Set permissions and access for work tracking](../../organizations/security/set-permissions-access-work-tracking.md) and [Stakeholder access quick reference](../../organizations/security/stakeholder-access.md).
+- View work items in this node
+- Edit work items in this node
+
+**Project-level permissions**
+
+- Create tag definition
+- Change work item type
+- Move work items out of this project
+- Delete and restore work items
+- Permanently delete work items
+
+Users with Basic access have full access to work tracking features. Stakeholder access limits certain features. For more information, see [Set permissions and access for work tracking](../../organizations/security/set-permissions-access-work-tracking.md) and [Stakeholder access quick reference](../../organizations/security/stakeholder-access.md).
 
 ## Next step
 
@@ -316,7 +326,7 @@ Users with Basic access have full access to work tracking features. Stakeholder 
 
 - [Learn key concepts and work item tasks in Azure Boards](quick-ref.md)
 - [Navigate the web portal](../../project/navigation/index.md)
-- [Use work item form controls](about-work-items.md#work-item-form-controls)
+- [Manage work items](../backlogs/manage-work-items.md)
 - [Explore backlogs, portfolios, and Agile project management](../backlogs/backlogs-overview.md)
 - [Understand Kanban and Agile project management](../boards/kanban-overview.md)
 - [Choose between Agile, Scrum, and CMMI processes](./guidance/choose-process.md)
