@@ -2,7 +2,7 @@
 title: Azure DevOps Released Features
 author: gloridelmorales
 ms.author: glmorale
-ms.date: 5/21/2026
+ms.date: 6/10/2026
 ms.topic: release-notes
 ms.service: azure-devops
 ms.subservice: azure-devops-release-notes
@@ -37,6 +37,18 @@ You can also [view the build numbers for each version](#azure-devops-server-buil
             <th>Server</th>
         </tr>
     </thead>
+<tr>
+    <td rowspan="10"><a href="2026/sprint-275-update.md" data-raw-source="[June 17 2026](2026/sprint-275-update.md)">June 17 2026</a></td>
+    <td>Coding agent model selection option</td><td>Boards</td><td>Future</td></tr>
+    <td>GitHub Copilot Autofix for code scanning (limited public preview)</td><td>GitHub Advanced Security for Azure DevOps</td><td>N/A</td></tr>
+    <td>CodeQL default setup rollout completed</td><td>GitHub Advanced Security for Azure DevOps</td><td>N/A</td></tr>
+    <td>Advanced Security status checks for pull requests (general availability)</td><td>GitHub Advanced Security for Azure DevOps</td><td>N/A</td></tr>
+    <td>Build identity access to view alerts is being removed</td><td>GitHub Advanced Security for Azure DevOps</td><td>N/A</td></tr>
+    <td>Finer-grained comment requirement for pull request validation from GitHub forks</td><td>Pipelines</td><td>Future</td></tr>
+    <td>Access Azure DevOps with Microsoft Entra authentication</td><td>Pipelines</td><td>Future</td></tr>
+    <td>Apple Silicon for macOS pipeline agents (Pay-as-you-Go preview)</td><td>Pipelines</td><td>Future</td></tr>
+    <td>Enable commit comparison in branch compare page</td><td>Repos</td><td>Future</td></tr>
+    <td>Copilot code reviews for Azure Repos (Limited Public Preview)</td><td>Repos</td><td>Future</td></tr>
 <tr>
     <td rowspan="5"><a href="2026/sprint-274-update.md" data-raw-source="[21 May 2026](2026/sprint-274-update.md)">May 21 2026</a></td>
     <td>Filter sprint boards and backlogs by additional fields</td><td>Boards</td><td>Future</td></tr>
