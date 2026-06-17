@@ -7,20 +7,21 @@ ms.author: chcomley
 author: chcomley
 ms.topic: how-to
 monikerRange: 'azure-devops'
-ms.date: 11/19/2025
+ai-usage: ai-assisted
+ms.date: 06/17/2026
 ---
 
 # Use GitHub Copilot with Azure Boards
 
 [!INCLUDE [version-eq-azure-devops](../../includes/version-eq-azure-devops.md)]
 
-Azure Boards integrates with GitHub Copilot to streamline your development workflow. You can use work items directly with Copilot, which automatically creates branches, implements code changes, and generates draft pull requests while keeping your work item updated with progress.
+Use Azure Boards with GitHub Copilot to move from work item to draft pull request faster. Start Copilot from a work item to create a branch, generate code changes, and open a draft pull request while Azure DevOps tracks progress on the work item.
 
-This integration allows you to:
-- Initiate automated coding from work items
-- Track GitHub Copilot's progress directly in Azure DevOps
-- Automatically link generated pull requests and branches to work items
-- Monitor when draft pull requests are ready for review
+Use this integration to:
+- Start automated coding from work items.
+- Track GitHub Copilot progress directly in Azure DevOps.
+- Link generated branches and pull requests to work items.
+- Monitor when draft pull requests are ready for review.
 
 > [!IMPORTANT]
 > This integration requires GitHub repositories and GitHub App authentication. Azure Repos (Azure DevOps Git repositories) aren't supported for GitHub Copilot integration.
@@ -29,60 +30,70 @@ This integration allows you to:
 
 | Category | Requirements |
 |----------|-------------|
-| Licensing | Active GitHub Copilot subscription |
+| Licensing | Active GitHub Copilot subscription. For pricing, see [GitHub Copilot plans](https://github.com/features/copilot/plans). |
 | Repository | GitHub repository (not Azure Repos) with appropriate permissions |
 | Authentication | GitHub App authentication configured between Azure DevOps and GitHub (personal access tokens not supported) |
 | Permissions | **Contribute** access in Azure DevOps to work items and ability to link artifacts |
 | Azure Boards connection | [Connect Azure Boards to GitHub](connect-to-github.md)|
 
+## For team administrators
+
+Use the following checklist to set up this integration for teams:
+
+- Configure GitHub App integration at the organization level. For setup steps, see [Connect Azure Boards to GitHub](connect-to-github.md).
+- Ensure each team member has the required access in both systems:
+   - Azure DevOps permissions to update work items and link artifacts.
+   - GitHub repository access to the target repositories and branches.
+
 ## Supported work item types
 
-The GitHub Copilot integration supports any work item type under the requirements and task category, including:
+The GitHub Copilot integration supports work item types in the Requirements and Task categories, including:
 
-- Standard work item types: User Story, Product Backlog Item, Requirement, Task, Bug, Issue
-- Custom work item types you created in your process template
+- Standard work item types, such as User Story, Product Backlog Item, Requirement, Task, Bug, and Issue.
+- Custom work item types you define in your process template.
 
-This broad support means you can use GitHub Copilot with work items from any process template (Agile, Scrum, CMMI, or custom) in your Azure DevOps project.
+Custom types are supported when your process maps them to the Requirements or Task categories.
+
+You can use GitHub Copilot with work items from Agile, Scrum, CMMI, and custom process templates in your Azure DevOps project.
 
 ## Start GitHub Copilot from work items
 
-1. Open a work item that you want to use with GitHub Copilot.
+1. Open the work item you want to implement by using GitHub Copilot.
 
-2. In the work item form, select the GitHub icon.
+1. In the work item form, select the GitHub icon.
 
-   If multiple options are available, the button becomes a dropdown menu with different choices.
+   If multiple options are available, the icon appears as a dropdown menu.
 
    :::image type="content" source="media/github-coding-agent/select-github-copilot-icon.png" alt-text="Screenshot showing highlighted GitHub Copilot icon in work item.":::
 
-3. Select **Create a pull request with GitHub Copilot**.
+1. Select **Create a pull request with GitHub Copilot**.
 
    :::image type="content" source="media/github-coding-agent/create-a-pull-request-with-github-copilot.png" alt-text="Screenshot showing selected GitHub menu dropdown and option to Start a GitHub pull request.":::
 
-4. Select the target GitHub repository and branch where Copilot should create the pull request.
+1. Select the target GitHub repository and branch for the pull request.
    
    > [!NOTE]
-   > Only GitHub repositories connected through GitHub App authentication appear in the repository list. Azure Repos aren't supported.
+   > The repository list shows only GitHub repositories connected through GitHub App authentication. Azure Repos aren't supported.
 
-5. (Optional) Add special instructions to guide Copilot's implementation approach. For example, you could add, "Create README with setup instructions".
+1. (Optional) Add special instructions to guide implementation.
 
-6. Select **Create** to begin the automated coding process.
+   Example instructions:
+   - Create a README with setup instructions.
+   - Use async/await patterns for new asynchronous code.
+   - Add unit tests for new logic.
+   - Follow the repository's existing code style and naming conventions.
+
+1. Select **Create**.
 
    :::image type="content" source="media/github-coding-agent/create-github-pr-select-repo-branch.png" alt-text="Screenshot shows menu dropdowns for repo and branch, for creating a draft pull request with Copilot.":::
 
 ## What happens when you start Copilot
 
-When you start Copilot from a work item, the following automated processes occur:
+When you start Copilot from a work item, Azure DevOps performs the following actions:
 
-- **Data sharing**: Azure DevOps shares the work item title, large text fields (such as description and acceptance criteria), comments, and a link back to the work item with GitHub Copilot.
-- **License validation**: Azure DevOps verifies your GitHub Copilot license.
-   - If validation fails, a **Get a license** option appears to purchase GitHub Copilot.
-- **Repository preparation**: Copilot creates a new branch for the work.
-- **Pull request creation**: A draft pull request is automatically generated and linked to your work item.
-- **Work item updates**: 
-   - A comment gets added to the work item discussion.
-   - Status indicator appears above the Development section.
-   - Branch and pull request links are automatically added.
-- **Progress tracking**: Real-time status updates show Copilot's progress.
+- **Share work item context** with GitHub Copilot: title, large text fields (such as description and acceptance criteria), comments, and a link to the work item.
+- **Create a branch and draft pull request** in the selected GitHub repository, then link them to the work item.
+- **Update work item status** so you can track in-progress, ready-for-review, and error states.
 
 ## Monitor GitHub Copilot progress
 
@@ -90,53 +101,54 @@ When you start Copilot from a work item, the following automated processes occur
 
 Azure DevOps displays Copilot status directly on your work item with three possible states:
 
-- **In Progress**: Copilot is actively working on code changes.
-- **Ready for Review**: Draft pull request is complete and ready for your review.
-- **Error**: Issues occurred during the coding process (hover for details).
+- **In Progress**: Copilot is generating code changes.
+- **Ready for Review**: The draft pull request is ready for review.
+- **Error**: The coding process failed. Hover over the status for details.
 
 > [!NOTE]
 > Expect the Copilot operation to take 5-15 minutes to complete, depending on the complexity of the work item.
 
 ### Board card indicators
 
-When you view work items on your board, you can identify the GitHub Copilot status directly on the work item card. A GitHub Copilot icon appears on the card and indicates that Copilot is working on or completed work for that item.
+Work items on your board display GitHub Copilot status directly on the work item card. A GitHub Copilot icon appears on the card and indicates that Copilot is working on or completed work for that item.
 
 :::image type="content" source="media/github-coding-agent/board-card-github-icon-in-progress.png" alt-text="Screenshot showing work item card on board with GitHub Copilot status icon indicating progress.":::
 
-This visual indicator helps you quickly identify which work items have active Copilot operations without opening each individual work item.
+This indicator helps you identify work items with active or completed Copilot operations without opening each item.
 
 ### Development section updates
 
 The Development section of your work item automatically shows:
-- Linked branch created by Copilot.
-- Drafted pull request with real-time status.
-- Direct links to review the generated code in GitHub.
+- Branch created by Copilot.
+- Draft pull request with real-time status.
+- Direct link to review generated code in GitHub.
 
 ## Review and merge the pull request
 
 1. Select the pull request link to review Copilot's implementation in GitHub.
-2. If you're satisfied with the changes, convert the draft to a regular pull request.
-   The work item discussion receives automatic updates about pull request status changes.
+1. If you're satisfied with the changes, convert the draft pull request to a regular pull request.
 
-3. Use GitHub's interface to review, comment, and approve the generated code.
+   The work item discussion updates automatically as pull request status changes.
 
-4. Complete the merge process in GitHub when you're ready.
+1. Use GitHub's interface to review, comment, and approve the generated code.
+
+1. Merge the pull request in GitHub when you're ready.
 
    - The merge commit automatically links to your work item.
-   - Branch links are removed if the branch is deleted.
+   - Branch links are removed if you delete the branch.
    - Copilot status indicators are hidden after successful merge.
 
-5. After the pull request merges:
-   1. To reflect completion, update your work item state.
-   2. Verify that the merge commit appears in the Development section.
-   3. Close the work item if the implementation fully addresses the requirements.
+1. After the pull request merges:
+   1. Update your work item state to reflect completion.
+   1. Verify that the merge commit appears in the Development section.
+   1. Close the work item if the implementation fully addresses the requirements.
 
-For more information, see our training module, [Get started with GitHub Copilot](/training/modules/get-started-github-copilot/).
+For more information, see [What is GitHub Copilot?](https://docs.github.com/en/copilot/about-github-copilot/what-is-github-copilot)
 
 ## Troubleshoot issues
 
-- **Check error details**: Hover over the error icon for specific information about what went wrong.
-- **Rerun Copilot**: Select **Rerun Copilot** to attempt the process again with the same or modified instructions.
+- **Check error details**: Hover over the error icon to view details.
+- **Rerun Copilot**: Select **Rerun Copilot** to try again with the same or updated instructions.
    
    :::image type="content" source="media/github-coding-agent/rerun-copilot.png" alt-text="Screenshot shows selected More actions icon, then Rerun Copilot selection in Development area.":::
 
@@ -144,23 +156,35 @@ For more information, see our training module, [Get started with GitHub Copilot]
 
 ### License issues
 - **Problem**: License validation fails.
-- **Solution**: Ensure you have an active GitHub Copilot subscription and select **Get a license** if needed.
+- **Solution**: Confirm that you have an active GitHub Copilot subscription, then select **Get a license** if prompted.
 
 ### Repository access
 - **Problem**: Can't see expected repositories.
 - **Solution**: 
-  - Verify the GitHub App connection between Azure DevOps and GitHub.
-  - Ensure you have access to GitHub repositories (not Azure Repos).
-  - Check repository permissions and GitHub App authentication.
-  - Confirm the repository is connected through the proper GitHub App integration.
+   - Verify the GitHub App connection between Azure DevOps and GitHub.
+   - Confirm that you have access to the target GitHub repositories.
+   - Check repository permissions and GitHub App authentication.
+   - Confirm that the repository is connected through the correct GitHub App integration.
 
 ### Copilot errors
-- **Problem**: Coding agent encounters errors.
-- **Solution**: Review error details, check instructions for clarity, and try rerunning Copilot.
+- **Problem**: Copilot encounters errors.
+- **Solution**: Review the error details, clarify your instructions, and rerun Copilot.
+
+### Repeated failures after rerun
+- **Problem**: Copilot continues to fail after rerunning.
+- **Solution**:
+   - Check the linked branch and pull request in GitHub for the latest operation state.
+   - Confirm that repository and branch permissions still allow Copilot to create branches and pull requests.
+   - If the problem continues, contact your project or organization administrator with the work item link and pull request link.
+
+### Cancel an in-progress operation
+
+> [!NOTE]
+> After starting a GitHub Copilot operation from a work item, you can't cancel it. The Copilot coding agent runs to completion. To address unwanted results, manage or discard the generated pull request in GitHub.
 
 ### Status not updating
 - **Problem**: Progress status remains stuck.
-- **Solution**: Check GitHub for actual progress, as status updates depend on GitHub reporting.
+- **Solution**: Check GitHub for actual progress because status updates depend on GitHub reporting.
 
 ## Best practices
 
@@ -173,15 +197,15 @@ For more information, see our training module, [Get started with GitHub Copilot]
 
 ## Limitations
 
-Be aware of the following limitations when using GitHub Copilot with Azure Boards:
+Review the following limitations when you use GitHub Copilot with Azure Boards:
 
-- **Dependencies**: Handling dependencies between work items isn't supported. Each work item should be self-contained.
-- **Data sharing**: Only work item title, large text fields, comments, and the work item link are shared with GitHub Copilot.
-- **Complexity**: Overly complex or verbose work item descriptions might reduce Copilot's effectiveness.
+- **Dependencies**: Copilot doesn't handle dependencies between work items. Keep each work item self-contained.
+- **Data sharing**: GitHub Copilot receives only the work item title, large text fields, comments, and the work item link.
+- **Complexity**: Overly complex or verbose work item descriptions can reduce Copilot effectiveness.
 
 ## Related content
 
 - [Link work items to development artifacts](../../boards/backlogs/connect-work-items-to-git-dev-ops.md)
 - [Configure GitHub integration](../../boards/github/connect-to-github.md)
 - [Work with pull requests in Azure Repos](../../repos/git/pull-requests.md)
-- [Track work with linking and attachments](../../boards/queries/link-work-items-support-traceability.md)
+- [Track work with linking and attachments](../../boards/queries/linking-attachments.md)
