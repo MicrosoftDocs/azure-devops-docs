@@ -4,10 +4,10 @@ description: Learn how to manually set an Azure Resource Manager workload identi
 ms.topic: concept-article
 ms.author: rabououn
 author: ramiMSFT
-ms.date: 04/22/2026
+ms.date: 06/09/2026
 monikerRange: '>= azure-devops'
 ms.custom: devx-track-arm-template, arm2024, sfi-image-nochange
-"recommendations": "true"
+recommendations: true
 ---
 
 # Manually set an Azure Resource Manager workload identity service connection
@@ -16,9 +16,28 @@ ms.custom: devx-track-arm-template, arm2024, sfi-image-nochange
 
 When you [troubleshoot an Azure Resource Manager workload identity service connection](troubleshoot-workload-identity.md#i-dont-have-permissions-to-create-a-service-principal-in-the-microsoft-entra-tenant), you might need to manually configure the connection instead of using the automated tool that's available in Azure DevOps.
 
-Before you begin a manual configuration, [try the automated approach](../library/connect-to-azure.md#create-an-azure-resource-manager-service-connection-that-uses-workload-identity-federation).
+Before you begin a manual configuration, [try the automated approach](../library/connect-to-azure.md#create-an-app-registration-with-workload-identity-federation-automatic).
 
 For authentication, you can use either a managed identity or an app registration. The managed identity option is useful if you don't have permissions to create service principals or if you're using a different Microsoft Entra tenant than your Azure DevOps user.
+
+## Azure DevOps issuer deprecation
+
+Azure DevOps issuer workload identity federation service connections are being deprecated. If your service connection is flagged as deprecated, convert it to the Microsoft Entra issuer.
+
+This deprecation applies only to eligible service connections in Azure public cloud that use single-tenant Microsoft Entra applications or managed identities. Service connections that target non-public clouds and service connections that use multitenant applications are out of scope for this deprecation. If you have an existing service connection that uses the Azure DevOps issuer, convert the existing connection instead of creating a replacement connection. See [Convert service connections](convert-service-connections.md) for more details.
+
+### Required permissions
+
+To configure or convert a workload identity service connection, you might need permissions in both Azure DevOps and Azure or Microsoft Entra.
+
+| Area | Permission needed |
+| --- | --- |
+| Azure DevOps | Service connection administrator or endpoint administrator permission on the service connection. |
+| User-assigned managed identity | Permission to update the managed identity and add federated credentials. The minimum role might be **Managed Identity Federated Credential Contributor**, **Managed Identity Contributor**, or another role that allows creating federated credentials. |
+| App registration | Owner access to the app registration or another Microsoft Entra role that allows managing federated credentials. |
+| Target Azure resource | Permission to assign the identity the required role, such as **Contributor**, on the subscription, resource group, or resource. |
+
+Azure DevOps permissions and Azure permissions are separate. A user might be able to edit a service connection in Azure DevOps but still need help from an Azure administrator or identity owner to add the federated credential in Azure or Microsoft Entra.
 
 ## Setup process overview
 
@@ -26,29 +45,61 @@ The following diagram illustrates the high-level steps to configure a workload i
 
 :::image type="content" source="media/workload-identity-options.png" alt-text="Diagram displaying the two optional paths when configuring workload identity." lightbox="media/workload-identity-options.png":::
 
-## Set a workload identity service connection 
+## Convert existing service connections
+
+If an existing service connection uses the deprecated Azure DevOps issuer, convert it to use the Microsoft Entra issuer.
+
+### Use automatic conversion when available
+
+1. In Azure DevOps, open your project and go to :::image type="icon" source="../../media/icons/gear-icon.png" border="false"::: **Project settings** > **Pipelines** > **Service connections**.
+
+1. Select the service connection that's flagged as deprecated.
+
+1. Select the option to update the service connection.
+
+1. Let Azure DevOps attempt the conversion.
+
+If the conversion succeeds, the service connection uses the Microsoft Entra issuer and no further manual configuration is required. See [Convert service connections](convert-service-connections.md) for detailed conversion steps.
+
+### Use manual conversion when automatic conversion doesn't complete
+
+If Azure DevOps can't update the identity automatically, it shows the federated credential values that you need to add in Azure or Microsoft Entra. Use the values shown in Azure DevOps to create the federated credential on the identity that's associated with the service connection.
+
+You need the following values from Azure DevOps:
+
+- **Issuer**
+- **Subject identifier**
+
+After you add the federated credential in Azure or Microsoft Entra, return to the service connection in Azure DevOps and complete the setup. For detailed conversion steps, see [Convert service connections](convert-service-connections.md).
+
+
+## Limitations
+
+The Azure DevOps issuer deprecation experience doesn't apply to every workload identity scenario.
+
+- Service connections that target non-public clouds are out of scope for this deprecation.
+- Service connections that use multitenant applications are out of scope for this deprecation.
+
+## Set a workload identity service connection
 
 #### [Managed identity](#tab/managed-identity)
 
-<a name="set-a-workload-identity-service-connection-to-use-managed-identity-authentication"></a>
-
 To manually set up managed identity authentication for your Azure Pipelines, follow these steps to create a managed identity in the Azure portal, establish a service connection in Azure DevOps, add federated credentials, and grant the necessary permissions. Follow these steps in this order:
 
-1. Create the managed identity in Azure portal. 
-1. Create the service connection in Azure DevOps and save as a draft. 
+1. Create the managed identity in Azure portal.
+1. Create the service connection in Azure DevOps and save as a draft.
 1. Add a federated credential to your managed identity in Azure portal.
 1. Grant permissions to the managed identity in Azure portal.
 1. Save your service connection in Azure DevOps.
 
 You can also use the REST API for this process.
 
-### Prerequisites for managed identity authentication
+#### Prerequisites for managed identity authentication
 
 - To create a user-assigned managed identity, your Azure account needs the [Managed Identity Contributor](/azure/role-based-access-control/built-in-roles/identity#managed-identity-contributor) or higher role assignment.
 - To use a managed identity to access Azure resources in your pipeline, [assign the managed identity access to the resource](/entra/identity/managed-identities-azure-resources/how-to-assign-access-azure-resource).  
 
-
-### Create a managed identity in Azure portal
+#### Create a managed identity in Azure portal
 
 1. Sign in to the [Azure portal](https://portal.azure.com).
 
@@ -63,7 +114,7 @@ You can also use the REST API for this process.
     - **Region**: Select a region to deploy the user-assigned managed identity (example: **East US**).
     - **Name**: Enter the name for your user-assigned managed identity (example: **UADEVOPS**).
 
-1. Select **Review + create** to create a new managed identity. When your deployment is complete, select **Go to resource**. 
+1. Select **Review + create** to create a new managed identity. When your deployment is complete, select **Go to resource**.
 
 1. Copy the **Subscription**, **Subscription ID**, and **Client ID**  values for your managed identity to use later.
 
@@ -71,7 +122,7 @@ You can also use the REST API for this process.
 
 1. Copy the **Tenant Id** value to use later.
 
-### Create a service connection for managed identity authentication in Azure DevOps
+#### Create a service connection for managed identity authentication in Azure DevOps
 
 1. In Azure DevOps, open your project and go to :::image type="icon" source="../../media/icons/gear-icon.png" border="false"::: > **Pipelines** > **Service connections**.
 
@@ -139,7 +190,7 @@ You can also use the REST API for this process.
 1. Select **Keep as draft** to save a draft credential. You can't complete setup until your managed identity has a federated credential in Azure portal. 
 
 
-### Add a federated credential in Azure portal
+#### Add a federated credential in Azure portal
 
 1. In a new browser window, within your managed identity in Azure portal, go to **Settings** > **Federated credentials**.
 
@@ -155,7 +206,7 @@ You can also use the REST API for this process.
 
 1. Select **Add**.
 
-### Grant permissions to the managed identity in Azure portal
+#### Grant permissions to the managed identity in Azure portal
 
 1. In Azure portal, go to the Azure resource that you want to grant permissions for (for example, a resource group).
 
@@ -167,36 +218,32 @@ You can also use the REST API for this process.
 
 1. Select **Review and assign**.
 
-### Save your Azure DevOps service connection 
+#### Save your Azure DevOps service connection 
 
-1. In Azure DevOps, go back to your draft service connection. 
+1. In Azure DevOps, go back to your draft service connection.
 
 1. Select **Finish setup**. 
 
 1. Select **Verify and save**. When this step completes successfully, your managed identity is fully configured. 
 
-#### [App registration](#tab/app-registration)
-
-<a name="app-registration-workload-identity"></a>
+### [App registration](#tab/app-registration)
 
 This section guides you through setting up an app registration and federated credentials in the Azure portal, creating a service connection for service principal authentication in Azure DevOps, adding federated credentials to your app registration, and granting the necessary permissions. The app registration uses service principal authentication. Complete these steps in the following order:
 
-1. Create the app registration with service principal authentication in Azure portal. 
-1. Create the service connection in Azure DevOps and save as a draft. 
+1. Create the app registration with service principal authentication in Azure portal.
+1. Create the service connection in Azure DevOps and save as a draft.
 1. Add a federated credential to your app registration in Azure portal.
 1. Grant permissions to the app registration in Azure portal.
 1. Save your service connection in Azure DevOps.
 
 You can also use the REST API for this process.
 
-
-### Prerequisites for app registration authentication
+#### Prerequisites for app registration authentication
 
 - To create a service connection, your Azure account needs to be able to create app registrations. 
     - If [creating app registrations is disabled in your tenant](/entra/identity/role-based-access-control/delegate-app-roles#to-disable-the-default-ability-to-create-application-registrations-or-consent-to-applications), then you need to have the [Application Developer role](/entra/identity/role-based-access-control/permissions-reference#application-developer) to create application registrations. 
 
-
-### Create an app registration and federated credentials in the Azure portal
+#### Create an app registration and federated credentials in the Azure portal
 
 1. In the Azure portal, search for [app registrations](https://portal.azure.com/#view/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/~/RegisteredApps).
 
@@ -204,16 +251,16 @@ You can also use the REST API for this process.
 
     :::image type="content" source="approvals/media/new-app-registration.png" alt-text="Screenshot that shows a new app registration.":::
 
-1. For **Name**, enter a name for your app registration. Then select **Who can use this application or access this API**. 
+1. For **Name**, enter a name for your app registration. Then select **Who can use this application or access this API**.
 
-1. Select **Register**. 
+1. Select **Register**.
 
 1. When your new app registration opens, copy the values for **Application (client) ID** and **Directory (tenant) ID** to use later.
 
     :::image type="content" source="approvals/media/app-registration-client-tenant.png" alt-text="Screenshot that shows the app registration client ID and tenant ID.":::
 
 
-### Create a service connection for app registration authentication in Azure DevOps
+#### Create a service connection for app registration authentication in Azure DevOps
 
 1. In Azure DevOps, open your project and go to :::image type="icon" source="../../media/icons/gear-icon.png" border="false"::: > **Pipelines** > **Service connections**.
 
@@ -281,7 +328,7 @@ You can also use the REST API for this process.
 1. Select **Keep as draft** to save a draft credential. You can't complete setup until your managed identity has a federated credential in Azure portal. 
 
 
-### Add a federated credential to your app registration in Azure portal
+#### Add a federated credential to your app registration in Azure portal
 
 1. In Azure portal, open your app registration and go to **Manage** > **Certificates & secrets**.
 
@@ -301,7 +348,7 @@ You can also use the REST API for this process.
 
 1. Select **Save**.
 
-### Grant permissions to the app registration in Azure portal
+#### Grant permissions to the app registration in Azure portal
 
 1. In the Azure portal, go to the Azure resource that you want to grant permissions for (for example, a resource group).
 
@@ -313,7 +360,7 @@ You can also use the REST API for this process.
 
 1. Select **Review and assign**.
 
-###  Save your app registration Azure DevOps service connection
+#### Save your app registration Azure DevOps service connection
 
 1. In Azure DevOps, go back to your draft service connection. 
 
@@ -325,7 +372,7 @@ You can also use the REST API for this process.
 
 ## Related content
 
-- [Access Azure DevOps with Microsoft Entra workload identity](../library/add-devops-entra-service-connection.md)
+- [Access Azure DevOps with Microsoft Entra workload identity](../../integrate/get-started/authentication/service-principal-managed-identity.md)
 - [Use scripts to automate Azure Resource Manager with workload identity service connections](automate-service-connections.md)
 - [Troubleshoot workload identity service connections](troubleshoot-workload-identity.md)
-
+- [Troubleshoot Azure Resource Manager service connections](azure-rm-endpoint.md)
