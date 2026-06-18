@@ -1,7 +1,7 @@
 ---
 title: Configure networking
 description: Learn how to configure networking for Managed DevOps Pools.
-ms.date: 11/18/2025
+ms.date: 06/11/2026
 ms.custom: sfi-image-nochange
 ms.topic: how-to
 ---
@@ -162,6 +162,8 @@ If you're using ExpressRoute, you need to allow writes by temporarily dropping o
 
 > [!IMPORTANT]
 > The pool and virtual network must be in the same region. Otherwise, you get an error similar to the following when you try to create the pool or update the network configuration: "Virtual network MDPVN is in region eastus, but pool mdpnonprodsub is in region australiaeast. These must be in the same region."
+>
+> Managed DevOps Pools uses the `172.17.0.0/16` IP address range for its internal operations. Don't choose this range for your VNET. If your VNET connects to other networks that use this rage, such as [private endpoints](/azure/private-link/private-endpoint-overview), avoid using the range `172.17.0.0/16` for your endpoints. If your pipelines fail with errors like "dial tcp 172.17.x.x:443: connect: no route to host", check to see if your environment has private endpoints or other networks using the `172.17.0.0/16` range.
 
 <a name = "grant-reader-and-network-contributor-access-to-devopsinfrastructure-service-principal"></a>
 #### Grant Reader and Network Contributor access to the DevOpsInfrastructure service principal
