@@ -130,8 +130,8 @@ You must either have permissions in Microsoft Entra ID to create app registratio
 
 You have two options to resolve the issue:
 
-- [Solution 1: Manually configure workload identity by using managed identity authentication](configure-workload-identity.md#set-a-workload-identity-service-connection-to-use-managed-identity-authentication)
-- [Solution 2: Manually configure workload identity by using app registration authentication](configure-workload-identity.md#app-registration-workload-identity)
+- [Solution 1: Manually configure workload identity by using managed identity authentication](configure-workload-identity.md#set-a-workload-identity-service-connection)
+- [Solution 2: Manually configure workload identity by using app registration authentication](configure-workload-identity.md#prerequisites-for-app-registration-authentication)
 
 ### How do I create a workload identity federation service connection in automation? 
 
