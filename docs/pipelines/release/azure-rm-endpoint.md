@@ -18,9 +18,8 @@ monikerRange: '<= azure-devops'
 This article presents common troubleshooting scenarios to help you resolve issues you might encounter when creating an Azure Resource Manager (ARM) service connection. See [Manage service connections](../library/service-endpoints.md) to learn how to create, edit, and secure service connections. See [Troubleshoot an Azure Resource Manager workload identity service connection](troubleshoot-workload-identity.md) to learn how to fix workload-identity related issues. 
 
 This article uses the terms "tenant" and "directory" in ways that might overlap. A tenant is a dedicated, isolated instance of Microsoft Entra ID that your organization receives and manages all identities and access control for your cloud services. A directory is a container within that tenant that holds objects like users, groups, and applications used to manage access to resources. 
-
-> [!TIP]
-> You can ask [Copilot](/copilot/) for help troubleshooting error messages. To learn more, see [Use AI to troubleshoot an Azure DevOps service connection error](#use-ai-to-troubleshoot-an-azure-devops-service-connection-error).
+> [!IMPORTANT]
+> If your Azure Resource Manager service connection uses the deprecated Azure DevOps issuer for workload identity federation, Azure DevOps shows a warning on the service connection or in pipeline experiences that use the connection. That warning means the service connection should be converted to the Microsoft Entra issuer. This deprecation applies only to eligible service connections in Azure public cloud that use single-tenant Microsoft Entra applications or managed identities. Service connections that target non-public clouds and service connections that use multitenant applications are out of scope for this deprecation. See [Convert service connections](convert-service-connections.md) for more details.
 
 ## What happens when you create an Azure Resource Manager service connection
 
@@ -37,6 +36,72 @@ When you save your new Azure Resource Manager service connection, Azure DevOps t
 
 > [!NOTE]
 > To create service connections, you need to be assigned the Creator or Administrator role for the Endpoint Creator group in your project settings: **Project settings** > **Service connections** > **More Actions** > **Security**. Project Contributors are added to this group by default.
+
+## Troubleshoot workload identity federation scenarios
+
+The following issues might occur when you create, update, or use service connections:
+
+- [Pipeline shows a deprecated Azure DevOps issuer warning](#pipeline-shows-a-deprecated-azure-devops-issuer-warning)
+- [Automatic conversion fails](#automatic-conversion-fails)
+- [You can edit the service connection but can't add the federated credential](#you-can-edit-the-service-connection-but-cant-add-the-federated-credential)
+- [Federated credential values don't match](#federated-credential-values-dont-match)
+- [You don't know who owns the app registration or managed identity](#you-dont-know-who-owns-the-app-registration-or-managed-identity)
+- [The service connection uses a multitenant app](#the-service-connection-uses-a-multitenant-app)
+
+### Pipeline shows a deprecated Azure DevOps issuer warning
+
+A pipeline warning means the pipeline is using a workload identity federation service connection that still uses the deprecated Azure DevOps issuer.
+
+To resolve the warning:
+
+1. Open the service connection linked from the warning.
+1. Convert the service connection to use the Microsoft Entra issuer.
+1. If automatic conversion doesn't complete, follow the manual conversion steps in [Set a Resource Manager workload identity service connection](configure-workload-identity.md).
+1. Run the pipeline again after the service connection is converted.
+
+### Automatic conversion fails
+
+Azure DevOps first attempts to convert the service connection automatically. Automatic conversion can fail if Azure DevOps can't update the associated app registration or managed identity.
+
+To resolve the issue:
+
+1. Confirm that you have service connection administrator or endpoint administrator permission in Azure DevOps.
+1. Confirm that you or the identity owner can add federated credentials to the associated app registration or managed identity.
+1. Copy the **Issuer** and **Subject identifier** values shown in Azure DevOps.
+1. Add the federated credential to the associated identity in Azure or Microsoft Entra.
+1. Return to the Azure DevOps service connection and complete setup.
+
+### You can edit the service connection but can't add the federated credential
+
+Azure DevOps service connection permissions don't grant permission to update identities in Azure or Microsoft Entra. The app registration or managed identity might be owned by a different user or team.
+
+To resolve the issue, ask an Azure administrator, app registration owner, or managed identity owner to add the federated credential. Provide the generated **Issuer** and **Subject identifier** values from the Azure DevOps service connection.
+
+### Federated credential values don't match
+
+A workload identity service connection depends on matching federated credential values. If the issuer or subject identifier in Azure or Microsoft Entra doesn't match the values generated by Azure DevOps, authentication can fail.
+
+To resolve the issue:
+
+1. Open the service connection in Azure DevOps.
+1. Copy the generated **Issuer** and **Subject identifier** values.
+1. Open the associated app registration or managed identity in Azure or Microsoft Entra.
+1. Compare the federated credential values.
+1. Update or recreate the federated credential so the values match.
+
+### You don't know who owns the app registration or managed identity
+
+Some organizations separate Azure DevOps administration from Azure or Microsoft Entra identity administration. If the current service connection administrator doesn't own the identity, the administrator might not be able to complete conversion.
+
+To resolve the issue:
+
+- For app registrations, check the app registration owners in Microsoft Entra.
+- For managed identities, check who has role assignments over the managed identity or its resource group.
+- If you can't identify the owner, contact the tenant administrator or subscription administrator.
+
+### The service connection uses a multitenant app
+
+Multitenant app scenarios are out of scope for this deprecation. The Azure DevOps issuer continues to be supported for service connections that use multitenant applications.
 
 ## The user has only guest permission in the directory
 
@@ -318,6 +383,9 @@ To resolve this issue:
    ```
 
 3. After deleting the connection, manually remove or update the associated service principal from [App registrations](https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/RegisteredApps) in the Azure portal.
+
+> [!TIP]
+> You can ask [Copilot](/copilot/) for help troubleshooting error messages. To learn more, see [Use AI to troubleshoot an Azure DevOps service connection error](#use-ai-to-troubleshoot-an-azure-devops-service-connection-error).
 
 ## Use AI to troubleshoot an Azure DevOps service connection error
 
