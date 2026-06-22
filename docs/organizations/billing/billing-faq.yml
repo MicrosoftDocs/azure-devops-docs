@@ -364,8 +364,6 @@ sections:
           >    - Basic
           >    - Azure Artifacts
           >    - Azure Test Plans
-          >    - Microsoft-hosted CI/CD
-          >    - Self-hosted CI/CD
 
       - question: |
           Why is the name of my organization resource incorrect? 
@@ -381,8 +379,6 @@ sections:
           >    - Basic
           >    - Azure Artifacts
           >    - Azure Test Plans
-          >    - Microsoft-hosted CI/CD
-          >    - Self-hosted CI/CD
          
       - question: |
           What happens if I delete my organization resource? 

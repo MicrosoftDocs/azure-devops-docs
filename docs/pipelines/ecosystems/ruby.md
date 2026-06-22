@@ -3,7 +3,7 @@ title: Build and test Ruby apps
 description: Learn how to use Azure Pipelines and scripts to build and test your Ruby projects.
 ms.topic: how-to
 ms.custom: freshness-fy22q2, kr2b-contr-experiment
-ms.date: 11/04/2025
+ms.date: 06/17/2026
 monikerRange: "<=azure-devops"
 # Customer intent: As a Ruby developer, I want to set up a CI/CD pipeline so that I can automate building, testing, and deploying my Ruby applications.
 ---
@@ -22,7 +22,7 @@ Ruby is preinstalled on [Microsoft-hosted agents](../agents/hosted.md) for Linux
 
 | **Product** | **Requirements**   |
 |---|---|
-| **Azure DevOps** | - An [Azure DevOps project](../../organizations/projects/create-project.md).<br>   - An ability to run pipelines on Microsoft-hosted agents. You can either purchase a [parallel job](../licensing/concurrent-jobs.md) or you can request a free tier.  <br> - Basic knowledge of YAML and Azure Pipelines. For more information, see [Create your first pipeline](../create-first-pipeline.md). <br> - **Permissions:**<br>      &nbsp;&nbsp;&nbsp;&nbsp; - To create a pipeline: you must be in the **Contributors** group and the group needs to have *Create build pipeline* permission set to Allow. Members of the [Project Administrators group](../../organizations/security/permissions.md) can manage pipelines. <br> &nbsp;&nbsp;&nbsp;&nbsp;- To create service connections: You must have the *Administrator* or *Creator* role for [service connections](../library/add-resource-protection.md).
+| **Azure DevOps** | - An [Azure DevOps project](../../organizations/projects/create-project.md).<br>   - The ability to run pipelines on Microsoft-hosted agents. [Enable the free tier](../licensing/concurrent-jobs.md#how-do-i-enable-the-free-tier-of-parallel-jobs), or purchase a [parallel job](../licensing/concurrent-jobs.md).  <br> - Basic knowledge of YAML and Azure Pipelines. For more information, see [Create your first pipeline](../create-first-pipeline.md). <br> - **Permissions:**<br>      &nbsp;&nbsp;&nbsp;&nbsp; - To create a pipeline: you must be in the **Contributors** group and the group needs to have *Create build pipeline* permission set to Allow. Members of the [Project Administrators group](../../organizations/security/permissions.md) can manage pipelines. <br> &nbsp;&nbsp;&nbsp;&nbsp;- To create service connections: You must have the *Administrator* or *Creator* role for [service connections](../library/add-resource-protection.md).
 | **GitHub** | - A [GitHub](https://github.com) account. <br>   - A [GitHub service connection](../library/service-endpoints.md) to authorize Azure Pipelines.|
 
 ::: moniker-end

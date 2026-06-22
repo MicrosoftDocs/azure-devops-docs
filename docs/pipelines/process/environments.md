@@ -2,7 +2,7 @@
 title: Create and target Azure DevOps environments for pipelines
 description: Learn how to create, target, secure, and view deployment history for Azure DevOps environments. Manage Kubernetes and virtual machine resources for CI/CD pipelines.
 ms.topic: how-to
-ms.date: 04/09/2025
+ms.date: 06/17/2026
 monikerRange: "<=azure-devops"
 keywords: Azure DevOps environments, CI/CD pipelines, Kubernetes, virtual machines, deployment history, secure environments
 ---
@@ -40,7 +40,7 @@ If a YAML pipeline refers to an environment that doesn't exist:
 
 | Category | Requirements |
 |--------------|-------------|
-| **Azure DevOps** | - An [Azure DevOps project](../../organizations/projects/create-project.md).<br>   - An ability to run pipelines on Microsoft-hosted agents. You can either purchase a [parallel job](../licensing/concurrent-jobs.md) or you can request a free tier.  <br> - Basic knowledge of YAML and Azure Pipelines. For more information, see [Create your first pipeline](../create-first-pipeline.md). <br> - **Permissions:**<br>      &nbsp;&nbsp;&nbsp;&nbsp; To add environments, the [Creator role for environments](../library/add-resource-protection.md#environments) in your project.  By default, members of the **Build Administrators**, **Release Administrators**, and **Project Administrators** groups can also create environments. |
+| **Azure DevOps** | - An [Azure DevOps project](../../organizations/projects/create-project.md).<br>   - The ability to run pipelines on Microsoft-hosted agents. [Enable the free tier](../licensing/concurrent-jobs.md#how-do-i-enable-the-free-tier-of-parallel-jobs), or purchase a [parallel job](../licensing/concurrent-jobs.md).  <br> - Basic knowledge of YAML and Azure Pipelines. For more information, see [Create your first pipeline](../create-first-pipeline.md). <br> - **Permissions:**<br>      &nbsp;&nbsp;&nbsp;&nbsp; To add environments, the [Creator role for environments](../library/add-resource-protection.md#environments) in your project.  By default, members of the **Build Administrators**, **Release Administrators**, and **Project Administrators** groups can also create environments. |
 | **Azure** | An [Azure subscription](https://azure.microsoft.com/pricing/purchase-options/azure-account?cid=msft_learn). |
 
 ## Create an environment

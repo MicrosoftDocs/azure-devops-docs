@@ -2,7 +2,7 @@
 title: Build and publish a Python app
 description: Learn how to automatically build and test Python apps with Azure Pipelines.
 ms.topic: quickstart
-ms.date: 08/22/2025
+ms.date: 06/17/2026
 monikerRange: "<=azure-devops"
 ms.author: rabououn
 ms.custom: devx-track-python, freshness-fy22q2, sfi-image-nochange
@@ -23,7 +23,7 @@ Python is preinstalled on [Microsoft-hosted agents](../agents/hosted.md) for Lin
 
 | **Product** | **Requirements**   |
 |---|---|
-| **Azure DevOps** | - An [Azure DevOps project](../../organizations/projects/create-project.md).<br>   - An ability to run pipelines on Microsoft-hosted agents. You can either purchase a [parallel job](../licensing/concurrent-jobs.md) or you can request a free tier.  <br> - Basic knowledge of YAML and Azure Pipelines. For more information, see [Create your first pipeline](../create-first-pipeline.md). <br> - **Permissions:**<br>      &nbsp;&nbsp;&nbsp;&nbsp; - To create a pipeline: you must be in the **Contributors** group and the group needs to have *Create build pipeline* permission set to Allow. Members of the [Project Administrators group](../../organizations/security/permissions.md) can manage pipelines. <br> &nbsp;&nbsp;&nbsp;&nbsp;- To create service connections: You must have the *Administrator* or *Creator* role for [service connections](../library/add-resource-protection.md).
+| **Azure DevOps** | - An [Azure DevOps project](../../organizations/projects/create-project.md).<br>   - The ability to run pipelines on Microsoft-hosted agents. [Enable the free tier](../licensing/concurrent-jobs.md#how-do-i-enable-the-free-tier-of-parallel-jobs), or purchase a [parallel job](../licensing/concurrent-jobs.md).  <br> - Basic knowledge of YAML and Azure Pipelines. For more information, see [Create your first pipeline](../create-first-pipeline.md). <br> - **Permissions:**<br>      &nbsp;&nbsp;&nbsp;&nbsp; - To create a pipeline: you must be in the **Contributors** group and the group needs to have *Create build pipeline* permission set to Allow. Members of the [Project Administrators group](../../organizations/security/permissions.md) can manage pipelines. <br> &nbsp;&nbsp;&nbsp;&nbsp;- To create service connections: You must have the *Administrator* or *Creator* role for [service connections](../library/add-resource-protection.md).
 | **GitHub** | - A [GitHub](https://github.com) account. <br>   - A [GitHub service connection](../library/service-endpoints.md) to authorize Azure Pipelines.|
 
 ::: moniker-end
