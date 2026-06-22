@@ -2,7 +2,7 @@
 title: Build, test, and deploy .NET Core projects
 description: Learn how to use Azure Pipelines to build, test, and deploy .NET Core projects and apps.
 ms.topic: concept-article
-ms.date: 01/20/2026
+ms.date: 06/17/2026
 ms.custom: freshness-fy22q2, content-freshness, devx-track-dotnet
 monikerRange: "<=azure-devops"
 #customer intent: As a .NET developer, I want to know how to use Azure Pipelines to work with .NET Core projects so I can build, test, and deploy my .NET Core apps.
@@ -47,9 +47,9 @@ This article describes how to use Azure Pipelines to work with .NET Core project
 To complete all the procedures in this article, you need the following prerequisites:
 
 - An Azure DevOps organization. You can [create one for free](../get-started/pipelines-sign-up.md).
-- Membership in the organization [Project Administrators group](../../organizations/security/change-project-level-permissions.md#add-members-to-the-project-administrators-group), so you can create Azure DevOps projects and grant project access to pipelines. Azure DevOps organization owners automatically have this membership.
+- Membership in the organization [Project Administrators group](../../organizations/security/change-project-level-permissions.md#add-members-to-the-project-administrators-group), so you can create Azure DevOps Projects and grant project access to pipelines. Azure DevOps organization owners automatically have this membership.
 - An Azure DevOps project in the organization. [Create a project in Azure DevOps](../../organizations/projects/create-project.md).
-- The ability to run pipelines on Microsoft-hosted agents, by requesting a free tier of parallel jobs. This request can take several business days to process. For more information, see [Configure and pay for parallel jobs](../licensing/concurrent-jobs.md).
+- The ability to run pipelines on Microsoft-hosted agents. [Enable the free tier](../licensing/concurrent-jobs.md#how-do-i-enable-the-free-tier-of-parallel-jobs), or purchase a [parallel job](../licensing/concurrent-jobs.md).
 - The **Administrator** or **Creator** role for [service connections](../library/add-resource-protection.md), which you can assign as a Project Administrator.
 - A [GitHub](https://github.com) account and repository.
 
@@ -61,7 +61,7 @@ To complete all the procedures in this article, you need the following prerequis
 
 - An Azure DevOps collection.
 - An Azure DevOps project created in the organization. For instructions, see [Create a project in Azure DevOps](../../organizations/projects/create-project.md).
-- Membership in the [Project Administrators group](../../organizations/security/change-project-level-permissions.md), so you can create Azure DevOps projects and grant project access to pipelines. Azure DevOps Organization owners automatically have this membership.
+- Membership in the [Project Administrators group](../../organizations/security/change-project-level-permissions.md), so you can create Azure DevOps Projects and grant project access to pipelines. Azure DevOps Organization owners automatically have this membership.
 - The **Administrator** or **Creator** role for [service connections](../library/add-resource-protection.md), which you can assign as a Project Administrator.
 - A [GitHub](https://github.com) account and repository.
 

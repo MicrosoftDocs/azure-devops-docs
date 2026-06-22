@@ -2,7 +2,7 @@
 title: Deploy a container to Azure App Service with Azure Pipelines
 description: How to deploy containerized web apps to Azure App Service with Azure Pipelines
 ms.topic: quickstart
-ms.date: 05/14/2025
+ms.date: 06/17/2026
 monikerRange: '<= azure-devops'
 ms.custom: sfi-image-nochange
 "recommendations": "true"
@@ -25,7 +25,7 @@ Using Azure Pipelines, you can build, test, and automatically deploy your web ap
 
 | **Product** | **Requirements**   |
 |---|---|
-| **Azure DevOps** | - An Azure DevOps organization and project. [Create one for free](../../get-started/pipelines-sign-up.md). <br>   - **Permissions:**<br>      &nbsp;&nbsp;&nbsp;&nbsp;- To grant access to all pipelines in the project: You must be a member of the [Project Administrators group](../../../organizations/security/change-project-level-permissions.md).<br>      &nbsp;&nbsp;&nbsp;&nbsp;- To create service connections: You must have the *Administrator* or *Creator* role for [service connections](../../library/add-resource-protection.md).<br>   - An ability to run pipelines on Microsoft-hosted agents. You can either purchase a [parallel job](../../licensing/concurrent-jobs.md) or you can request a free tier.  |
+| **Azure DevOps** | - An Azure DevOps organization and project. [Create one for free](../../get-started/pipelines-sign-up.md). <br>   - **Permissions:**<br>      &nbsp;&nbsp;&nbsp;&nbsp;- To grant access to all pipelines in the project: You must be a member of the [Project Administrators group](../../../organizations/security/change-project-level-permissions.md).<br>      &nbsp;&nbsp;&nbsp;&nbsp;- To create service connections: You must have the *Administrator* or *Creator* role for [service connections](../../library/add-resource-protection.md).<br>   - The ability to run pipelines on Microsoft-hosted agents. [Enable the free tier](../../licensing/concurrent-jobs.md#how-do-i-enable-the-free-tier-of-parallel-jobs), or purchase a [parallel job](../../licensing/concurrent-jobs.md).  |
 | **GitHub** | - A [GitHub](https://github.com) account.|
 | **Azure** | - An Azure Container Registry. [Create an Azure container registry](/azure/container-registry/container-registry-get-started-portal#create-a-container-registry) if you don't have one already.|
 

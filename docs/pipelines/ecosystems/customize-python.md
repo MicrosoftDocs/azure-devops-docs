@@ -3,7 +3,7 @@ title: Customize Python pipelines
 description:  See how to use Azure Pipelines to customize, build, test, package, and deliver Python apps and code.
 ms.topic: concept-article
 ms.custom: devx-track-python
-ms.date: 06/09/2025
+ms.date: 06/17/2026
 monikerRange: '<= azure-devops'
 ---
 
@@ -14,7 +14,7 @@ This article describes how to customize building, testing, packaging, and delive
 ::: moniker range=">=azure-devops"
 With [Microsoft-hosted agents](../agents/hosted.md) in Azure Pipelines, you can build Python apps without setting up your own infrastructure. Tools that you commonly use to build, test, and run Python apps, including `pip`, are preinstalled.
 
-You might need to [request the free grant of parallel jobs](https://aka.ms/azpipelines-parallelism-request) or purchase a [parallel job](../licensing/concurrent-jobs.md) to run your pipelines.
+To get the free grant of parallel jobs, [enable the free tier](../licensing/concurrent-jobs.md#how-do-i-enable-the-free-tier-of-parallel-jobs). Or, purchase a [parallel job](../licensing/concurrent-jobs.md) to run your pipelines.
 ::: moniker-end
 
 ::: moniker range="< azure-devops"

@@ -2,7 +2,7 @@
 title: What is Azure Pipelines?
 description: Learn how Azure Pipelines can use continuous integration, testing, and delivery to automatically build, test, and deploy your code.
 ms.topic: overview
-ms.date: 03/10/2026
+ms.date: 06/17/2026
 ms.custom: copilot-scenario-highlight
 ai-usage: ai-assisted
 monikerRange: '<= azure-devops'
@@ -96,9 +96,12 @@ To produce packages that external users can consume, you can integrate package m
 
 ::: moniker range=">= azure-devops"
 
-Azure DevOps grants a free tier of parallel jobs to every organization for both Microsoft-hosted and self-hosted private and public projects. For private projects, the free tier provides one parallel job that can take up to 60 minutes to run, up to 1,800 minutes per month. For public projects, the free grant provides one parallel job with unlimited minutes for self-hosted agents, or up to 10 parallel jobs for Microsoft-hosted projects.
+Azure DevOps grants a free tier of parallel jobs to every organization that has billing set up with a valid Azure subscription. For private projects, the free tier provides one parallel job that can take up to 60 minutes to run, up to 1,800 minutes per month.
 
-Public projects and some private projects in new Azure DevOps organizations don't automatically get the free grant of parallel jobs by default. You need to request the free grant of parallel jobs by completing the [Azure DevOps Parallelism Request](https://aka.ms/azpipelines-parallelism-request). The request can take several business days to process.
+To receive the free grant of parallel jobs, [set up billing for your organization](../../organizations/billing/set-up-billing-for-your-organization-vs.md) by linking a valid Azure subscription. Once billing is configured, the free grant is automatically applied to private projects in the organization.
+
+> [!NOTE]
+> [Public projects are retired](../../organizations/projects/public-projects-retirement.md). New public projects can no longer be created. Existing public projects retain their current free parallelism grants until they convert to private in 2027.
 
 If the free tier of parallel jobs isn't sufficient for your project, you can purchase more capacity per parallel job or [buy more parallel jobs](../licensing/concurrent-jobs.md?tabs=self-hosted#how-do-i-buy-more-parallel-jobs). Paid parallel jobs can take up to 360 minutes to run and have no monthly time limit.
 
