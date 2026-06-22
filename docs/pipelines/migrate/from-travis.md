@@ -3,7 +3,7 @@ title: Migrate from Travis to Azure Pipelines
 titleSuffix: Azure Pipelines
 description: How to migrate from Travis to Azure Pipelines
 ms.topic: how-to
-ms.date: 01/15/2026
+ms.date: 06/17/2026
 ai-usage: ai-assisted
 monikerRange: azure-devops
 ---
@@ -29,7 +29,7 @@ Travis and Azure Pipelines differ in many ways, including:
 * A GitHub account where you can create a repository. [Create one for free](https://github.com).
 * An Azure DevOps organization. [Create one for free](../get-started/pipelines-sign-up.md). 
   If your team already has an Azure DevOps organization, make sure you're an administrator of the Azure DevOps project that you want to use.
-* The ability to run pipelines on Microsoft-hosted agents. You can either purchase a [parallel job](../licensing/concurrent-jobs.md) or you can [request a free tier](../troubleshooting/troubleshoot-start.md#check-for-available-parallel-jobs).
+* The ability to run pipelines on Microsoft-hosted agents. [Enable the free tier](../licensing/concurrent-jobs.md#how-do-i-enable-the-free-tier-of-parallel-jobs), or purchase a [parallel job](../licensing/concurrent-jobs.md).
 * Basic knowledge of Azure Pipelines. If you're new to Azure Pipelines, see the following articles to learn more about Azure Pipelines and how it works before starting your migration:
     * [Create your first pipeline](../create-first-pipeline.md)
     * [Key concepts for new Azure Pipelines users](../get-started/key-pipelines-concepts.md)

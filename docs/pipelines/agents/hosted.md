@@ -2,7 +2,7 @@
 title: Microsoft-hosted agents for Azure Pipelines
 description: Learn about using the Microsoft-hosted agents provided in Azure Pipelines
 ms.topic: concept-article
-ms.date: 03/10/2026
+ms.date: 06/17/2026
 monikerRange: '<= azure-devops'
 ---
 
@@ -264,9 +264,8 @@ Microsoft-hosted agents:
   * You get a freshly imaged agent for each job in your pipeline.
 * Provide 10 GB of storage for your source and build outputs.
 * Provide a free tier:
-  * Public project: 10 free Microsoft-hosted parallel jobs that can run for up to 360 minutes (6 hours) each time, with no overall time limit per month. [Contact us](https://azure.microsoft.com/support/devops/) to get your free tier limits increased.
-  * Private project: One free parallel job that can run for up to 60 minutes each time, until you've used 1,800 minutes (30 hours) per month. You can pay for additional capacity per parallel job. Paid parallel jobs remove the monthly time limit and allow you to run each job for up to 360 minutes (6 hours). [Buy Microsoft-hosted parallel jobs](https://marketplace.visualstudio.com/items?itemName=ms.build-release-hosted-pipelines).
-  * When you create a new Azure DevOps organization, you aren't given these free grants by default. To request the free grant for public or private projects, submit [a request](https://aka.ms/azpipelines-parallelism-request).
+  * Private project: One free parallel job that can run for up to 60 minutes each time, until you use 1,800 minutes (30 hours) per month. For more information, see [How do I qualify for the free tier of parallel jobs](../licensing/concurrent-jobs.md#how-do-i-enable-the-free-tier-of-parallel-jobs). You can pay for additional capacity per parallel job. Paid parallel jobs remove the monthly time limit and allow you to run each job for up to 360 minutes (6 hours). [Buy Microsoft-hosted parallel jobs](https://marketplace.visualstudio.com/items?itemName=ms.build-release-hosted-pipelines).
+  * [Public projects are retired](../../organizations/projects/public-projects-retirement.md). You can no longer create new public projects. Existing public projects retain their current free parallelism grants until they convert to private in 2027.
 * Run on Microsoft Azure general purpose virtual machines [Standard_DS2_v2](/azure/virtual-machines/dv2-dsv2-series#dsv2-series).
 * Run as an administrator on Windows and a passwordless sudo user on Linux.
 * (Linux only) Run steps in a `cgroup` that offers 6 GB of physical memory and 13 GB of total memory.
@@ -326,7 +325,7 @@ If you are just setting up a pipeline and are comparing the performance of Micro
 
 ### I need more agents. What can I do?
 
-All Azure DevOps organizations are provided with several free parallel jobs for open-source projects, and one free parallel job and limited minutes each month for private projects. If you need additional minutes or parallel jobs for your open-source project, contact [support](https://azure.microsoft.com/support/devops/). If you need additional minutes or parallel jobs for your private project, then you can [buy more](../licensing/concurrent-jobs.md).
+All Azure DevOps organizations get one free parallel job and 1,800 free minutes (30 hours) each month for private projects when the organization is [linked to a valid Azure subscription](../../organizations/billing/set-up-billing-for-your-organization-vs.md). If you need more minutes or parallel jobs for your private project, [buy more](../licensing/concurrent-jobs.md).
 
 ### My pipeline succeeds on self-hosted agent, but fails on Microsoft-hosted agents. What should I do?
 

@@ -3,7 +3,7 @@ title: Build apps with .NET Framework
 description: Use .NET Framework to build ASP.NET apps in Azure Pipelines.
 ms.topic: how-to
 ms.custom: devx-track-dotnet
-ms.date: 01/12/2026
+ms.date: 06/17/2026
 monikerRange: '<= azure-devops'
 ai-usage: ai-assisted
 # Customer intent: As an Azure DevOps user, I want to build and deploy ASP.NET apps with the .NET Framework so that I can automate my CI/CD workflows and ensure consistent, reliable deployments.
@@ -19,7 +19,7 @@ This article describes how to build a .NET Framework project with Azure Pipeline
 
 | **Product** | **Requirements** |
 |---|---|
-| **Azure DevOps** | - An [Azure DevOps project](../../../organizations/projects/create-project.md).<br>   - An ability to run pipelines on Microsoft-hosted agents. You can either purchase a [parallel job](../../licensing/concurrent-jobs.md) or you can request a free tier.<br> - Basic knowledge of YAML and Azure Pipelines. For more information, see [Create your first pipeline](../../create-first-pipeline.md).<br> - **Permissions:**<br>      &nbsp;&nbsp;&nbsp;&nbsp; - To create a pipeline: you must be in the **Contributors** group and the group needs to have *Create build pipeline* permission set to Allow. Members of the [Project Administrators group](../../../organizations/security/permissions.md) can manage pipelines.<br> &nbsp;&nbsp;&nbsp;&nbsp;- To create service connections: You must have the *Administrator* or *Creator* [role for service connections](../../library/add-resource-protection.md). |
+| **Azure DevOps** | - An [Azure DevOps project](../../../organizations/projects/create-project.md).<br>   - The ability to run pipelines on Microsoft-hosted agents. [Enable the free tier](../../licensing/concurrent-jobs.md#how-do-i-enable-the-free-tier-of-parallel-jobs), or purchase a [parallel job](../../licensing/concurrent-jobs.md).<br> - Basic knowledge of YAML and Azure Pipelines. For more information, see [Create your first pipeline](../../create-first-pipeline.md).<br> - **Permissions:**<br>      &nbsp;&nbsp;&nbsp;&nbsp; - To create a pipeline: you must be in the **Contributors** group and the group needs to have *Create build pipeline* permission set to Allow. Members of the [Project Administrators group](../../../organizations/security/permissions.md) can manage pipelines.<br> &nbsp;&nbsp;&nbsp;&nbsp;- To create service connections: You must have the *Administrator* or *Creator* [role for service connections](../../library/add-resource-protection.md). |
 | **.NET Framework** | - A .NET Framework project (version 4.5 or later recommended).<br> - Experience with Visual Studio or another .NET development environment.<br> - The appropriate [.NET Framework SDK](https://dotnet.microsoft.com/download) installed on your local machine. |
 | **GitHub** | - A [GitHub](https://github.com) account. <br>   - A [GitHub service connection](../../library/service-endpoints.md) to authorize Azure Pipelines.|
 

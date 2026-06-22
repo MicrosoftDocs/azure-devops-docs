@@ -4,7 +4,7 @@ description: Learn how to troubleshoot pipeline starting issues in Azure Pipelin
 ms.author: sdanie
 ms.reviewer: steved0x
 ms.topic: troubleshooting
-ms.date: 04/02/2024
+ms.date: 06/17/2026
 monikerRange: '<= azure-devops'
 author: steved0x
 ---
@@ -57,13 +57,13 @@ If you're currently running other pipelines, you might not have any remaining pa
 ### Check for available parallel jobs
 
 > [!NOTE]
-> Azure Pipelines has temporarily disabled the automatic free grant of Microsoft-hosted parallel jobs in new organizations for public projects and for certain private projects. If you don't have any parallel jobs, your pipelines will fail with the following error: `##[error]No hosted parallelism has been purchased or granted. To request a free parallelism grant, please fill out the following form https://aka.ms/azpipelines-parallelism-request`.  Check your Microsoft-hosted parallel jobs as described in the following section, and if you have zero parallel jobs, you can request a free grant of parallel jobs. To request the free grant of parallel jobs for your organization, submit [a request](https://aka.ms/azpipelines-parallelism-request). Your request can take several business days to process.
+> To receive the free grant of Microsoft-hosted parallel jobs, your Azure DevOps organization must be linked to a valid Azure subscription. If you don't have any parallel jobs, your pipelines fail with the following error: `##[error]No hosted parallelism has been purchased or granted`. To resolve this issue, [set up billing for your organization](../../organizations/billing/set-up-billing-for-your-organization-vs.md) by linking a valid Azure subscription. Once billing is configured, the free grant of parallel jobs is automatically applied to your organization.
 
 To check your limits, navigate to **Project settings**, **Parallel jobs**.
 
 ![Pipelines concurrent jobs](../media/troubleshooting/concurrent-pipeline-limits.png)
 
-If you're using [Microsoft-hosted](../agents/hosted.md) agents, check the parallel job limits for **Microsoft-hosted** for **Private projects** or **Public projects**, depending on whether your Azure DevOps project is a private project (default) or public project. Public projects are [retired](../../organizations/projects/public-projects-retirement.md) and existing public projects convert to private in 2027.
+If you're using [Microsoft-hosted](../agents/hosted.md) agents, check the parallel job limits for **Microsoft-hosted** for **Private projects**. [Public projects are retired](../../organizations/projects/public-projects-retirement.md) and existing public projects convert to private in 2027.
 
 After reviewing the limits, check concurrency to see how many jobs are currently running and how many are available.
 

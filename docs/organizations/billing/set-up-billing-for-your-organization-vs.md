@@ -25,8 +25,6 @@ This article guides you through managing billing in Azure DevOps, which is essen
 >    - Basic
 >    - Azure Artifacts
 >    - Azure Test Plans
->    - Microsoft-hosted CI/CD
->    - Self-hosted CI/CD
 > - When you cancel or change billing, a resource group remains in the old Azure subscription. Despite Azure's warning that "Dependent resources will be deleted," it's safe to delete these resource groups. The Azure DevOps organization isn't deleted or harmed. These resource groups use the naming format, `VisualStudioOnline-<DEVOPS-ORG-HOSTID-WITHOUT-DASHES>`.
 
 [!INCLUDE [ai-assistance-mcp-server-tip](../../includes/ai-assistance-mcp-server-tip.md)]
