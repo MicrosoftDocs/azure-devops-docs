@@ -9,7 +9,7 @@ ms.topic: how-to
 ms.author: chcomley
 author: chcomley
 monikerRange: 'azure-devops'
-ms.date: 05/05/2026
+ms.date: 06/23/2026
 #customer intent: As a user, I want to set up the remote Azure DevOps MCP Server so I can use AI assistance with my Azure DevOps data without installing and running a local server.
 ---
 
@@ -319,7 +319,7 @@ The test plan tools are consolidated into grouped dispatchers using an `action` 
 
 ### Enterprise Live Migration (preview)
 
-The Enterprise Live Migration tools are consolidated into grouped dispatchers using an `action` parameter. [Learn more](https://devblogs.microsoft.com/devops/enterprise-live-migrations/) about the Enterprise Live Migration preview.
+The Enterprise Live Migration tools are consolidated into grouped dispatchers using an `action` parameter. [Learn more]((../repos/enterprise-live-migrations/overview.md) about the Enterprise Live Migration preview.
 
 | Tool | Action | Description | Read-only |
 |---|---|---|:---:|
