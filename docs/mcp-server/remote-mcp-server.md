@@ -319,7 +319,7 @@ The test plan tools are consolidated into grouped dispatchers using an `action` 
 
 ### Enterprise Live Migration (preview)
 
-The Enterprise Live Migration tools are consolidated into grouped dispatchers using an `action` parameter. [Learn more]((../repos/enterprise-live-migrations/overview.md) about the Enterprise Live Migration preview.
+The Enterprise Live Migration tools use an `action` parameter to group and dispatch tasks. [Learn more](../repos/enterprise-live-migrations/overview.md) about the Enterprise Live Migration preview.
 
 | Tool | Action | Description | Read-only |
 |---|---|---|:---:|
