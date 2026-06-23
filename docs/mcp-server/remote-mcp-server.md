@@ -317,6 +317,45 @@ The test plan tools are consolidated into grouped dispatchers using an `action` 
 | `testplan_test_case_write` | `create` | Create a test case | ❌ |
 | `testplan_test_case_write` | `update_steps` | Update test case steps | ❌ |
 
+### Enterprise Live Migration (preview)
+
+The Enterprise Live Migration tools are consolidated into grouped dispatchers using an `action` parameter. [Learn more](https://devblogs.microsoft.com/devops/enterprise-live-migrations/) about the Enterprise Live Migration preview.
+
+| Tool | Action | Description | Read-only |
+|---|---|---|:---:|
+| `enterprise_live_migration` | `list` | List migrations for the organization; optional project filter and includeAllMigrations flag | ✅ |
+| `enterprise_live_migration` | `get` | Get migration status for a repository | ✅ |
+| `enterprise_live_migration` | `get_cutover_review` | Get failed/blocked items before cutover | ✅ |
+| `enterprise_live_migration` | `get_device_flow_config` | Get GitHub App device flow config | ✅ |
+| `enterprise_live_migration` | `list_pipelines` | List pipelines and rewiring status | ✅ |
+| `enterprise_live_migration_write` | `create` | Create a new migration | ❌ |
+| `enterprise_live_migration_write` | `pause` | Pause an active migration | ❌ |
+| `enterprise_live_migration_write` | `resume` | Resume a paused migration | ❌ |
+| `enterprise_live_migration_write` | `cutover_set` | Schedule a cutover date | ❌ |
+| `enterprise_live_migration_write` | `cutover_cancel` | Cancel a scheduled cutover | ❌ |
+| `enterprise_live_migration_write` | `approve_cutover` | Accept failures and proceed with cutover | ❌ |
+| `enterprise_live_migration_write` | `abandon` | Permanently delete a migration | ❌ |
+| `enterprise_live_migration_pipelines_write` | `submit` | Submit pipelines for rewiring | ❌ |
+| `enterprise_live_migration_pipelines_write` | `update` | Update pipeline rewiring config | ❌ |
+| `enterprise_live_migration_pipelines_write` | `delete` | Delete all pipeline clones for a terminal migration | ❌ |
+
+The Enterprise Live Migration tools are disabled by default. To enable them, use the `X-MCP-Toolsets` header with the `elm` value:
+
+```json
+{
+  "servers": {
+    "ado-remote-mcp": {
+      "url": "https://mcp.dev.azure.com/{organization}",
+      "type": "http",
+      "headers": {
+        "X-MCP-Toolsets": "elm"
+      }
+    }
+  },
+  "inputs": []
+}
+```
+
 ## Supported environments
 
 The remote Azure DevOps MCP Server requires your user account and Azure DevOps organization to connect to Microsoft Entra ID.
