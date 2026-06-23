@@ -2,13 +2,17 @@
 title: Deploy an Azure Pipelines agent on Windows
 description: Learn how to use Windows agents to build and deploy your Windows and Azure code for Azure Pipelines
 ms.topic: concept-article
-ms.date: 11/07/2025
+ms.date: 06/23/2026
 monikerRange: '<= azure-devops'
+ms.custom: copilot-scenario-highlight
+ai-usage: ai-assisted
 ---
 
 # Self-hosted Windows agents
 
 [!INCLUDE [version-gt-2022](../../includes/version-gt-2022.md)]
+
+[!INCLUDE [ai-assistance-mcp-server-tip](../../includes/ai-assistance-mcp-server-tip.md)]
 
 To build and deploy Windows, Azure, and other Visual Studio solutions you'll need at least one Windows agent. Windows agents can also build Java and Android apps.
 
@@ -281,6 +285,23 @@ To learn about other options:
 The help provides information on authentication alternatives and unattended configuration.
 
 [!INCLUDE [include](includes/capabilities.md)]
+
+<a id="use-ai-assistance"></a>
+
+## Use AI to plan, configure, and operate Windows agents
+
+The following example prompts for Copilot Chat help you plan agent setup, configure and validate your environment, and troubleshoot issues when needed. Copy and paste these prompts into Copilot Chat, and replace placeholders with your environment details.
+
+| Task | Example prompt |
+|------|----------------|
+| Plan agent deployment | `Given these pipelines and workloads, help me decide how many Windows self-hosted agents to run, where to host them, and whether to use interactive or service mode.` |
+| Build a setup checklist | `Create a step-by-step checklist for installing and configuring a Windows self-hosted agent with service mode, including permissions and security hardening.` |
+| Validate readiness before first run | `Review my agent configuration and confirm whether this machine is ready to run builds, including required tools, capabilities, and folder permissions.` |
+| Review capability and demand fit | `This pipeline says no suitable agent found. Compare this job's demands with my Windows agent capabilities and tell me what to fix.` |
+| Troubleshoot registration failures | `Help me troubleshoot why this Windows self-hosted agent registration failed. Here is the config.cmd output: <paste output>.` |
+| Resolve runtime module path issues | `I see this error on a Windows agent: Error in TypeData System.Security.AccessControl.ObjectSecurity. Explain the root cause and how to fix it safely.` |
+
+*Copilot is powered by AI, so surprises and mistakes are possible. For more information, see [Copilot general use FAQs](https://aka.ms/copilot-general-use-faqs).*
 
 ## FAQ
 
