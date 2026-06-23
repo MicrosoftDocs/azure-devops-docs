@@ -325,7 +325,7 @@ The Enterprise Live Migration tools are consolidated into grouped dispatchers us
 |---|---|---|:---:|
 | `enterprise_live_migration` | `list` | List migrations for the organization; optional project filter and includeAllMigrations flag | ✅ |
 | `enterprise_live_migration` | `get` | Get migration status for a repository | ✅ |
-| `enterprise_live_migration` | `get_cutover_review` | Get failed/blocked items before cutover | ✅ |
+| `enterprise_live_migration` | `get_cutover_review` | Get failed or blocked items before cutover | ✅ |
 | `enterprise_live_migration` | `get_device_flow_config` | Get GitHub App device flow config | ✅ |
 | `enterprise_live_migration` | `list_pipelines` | List pipelines and rewiring status | ✅ |
 | `enterprise_live_migration_write` | `create` | Create a new migration | ❌ |
