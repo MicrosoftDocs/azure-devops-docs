@@ -6,6 +6,8 @@ ms.author: ericvan
 ms.topic: concept-article
 ms.date: 01/20/2026
 monikerRange: '<= azure-devops'
+ms.custom: copilot-scenario-highlight
+ai-usage: ai-assisted
 ---
 
 # Use variables in Classic release pipelines
@@ -28,6 +30,8 @@ When you set up tasks to deploy your application in each stage of your Classic r
 
 > [!NOTE] 
 > For YAML pipelines, see [user-defined variables](../process/variables.md) and [predefined variables](../build/variables.md) for more details.
+
+[!INCLUDE [ai-assistance-mcp-server-tip](../../includes/ai-assistance-mcp-server-tip.md)]
 
 ## Default variables
 
@@ -214,6 +218,24 @@ Running a release in debug mode can help you diagnose and resolve problems by di
 
 > [!TIP]
 > If you encounter an error related to Azure Resource Manager service connections, see [How to: Troubleshoot Azure Resource Manager service connections](azure-rm-endpoint.md) for more details.
+
+<a id="use-ai-assistance"></a>
+
+## Use AI to design, validate, and troubleshoot release variables
+
+The following example prompts for Copilot Chat help you understand variable scope and precedence, design a maintainable variable strategy, validate current usage, and troubleshoot variable resolution issues when needed. Copy and paste these prompts into Copilot Chat, and replace placeholders with your stage, task, and variable names.
+
+| Task | Example prompt |
+|------|----------------|
+| Explain variable precedence | `Explain how variable precedence works in this Classic release pipeline across variable groups, release scope, and stage scope, using my variable names as examples.` |
+| Design a variable strategy | `Propose a naming and scoping convention for Classic release variables in this pipeline so values are clear, reusable, and less likely to conflict.` |
+| Diagnose scope overlap | `In my Classic release pipeline, explain scope overlap for variable <VariableName> and tell me which value wins between release scope and stage scope.` |
+| Validate script variable mapping | `Convert these Classic release variable references to the correct script environment variable names and explain why each one works.` |
+| Audit variable group conflicts | `Identify potential naming conflicts across linked variable groups and stage variables in this Classic release pipeline, and recommend safer names.` |
+| Troubleshoot variable not found | `Help me troubleshoot this Classic release pipeline error: variable not found for <VariableName>. Check macro syntax, scope, and task context.` |
+| Troubleshoot "varialbe not found" typo scenario | `I see a "varialbe not found" error in a deployment script. Help me determine whether this is a misspelled variable name, wrong scope, or incorrect environment variable mapping.` |
+
+*Copilot is powered by AI, so surprises and mistakes are possible. For more information, see [Copilot general use FAQs](https://aka.ms/copilot-general-use-faqs).*
 
 ## Related content
 
