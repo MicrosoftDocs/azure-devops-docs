@@ -12,17 +12,15 @@ ai-usage: ai-assisted
 
 [!INCLUDE [version-gt-2022](../../includes/version-gt-2022.md)]
 
-[!INCLUDE [ai-assistance-mcp-server-tip](../../includes/ai-assistance-mcp-server-tip.md)]
-
 To build and deploy Windows, Azure, and other Visual Studio solutions you'll need at least one Windows agent. Windows agents can also build Java and Android apps.
 
-:::moniker range=">=azure-devops-server"
+:::moniker range=" azure-devops"
 
 This article provides guidance for using the [4.x agent software](v4-agent.md) with Azure DevOps Services and Azure DevOps Server.
 
-:::moniker-end
+::: moniker-end
 
-:::moniker range="<azure-devops-server"
+:::moniker range="< azure-devops-server"
 
 This article provides guidance for using the [3.x agent software](v3-agent.md) with Azure DevOps Server 2022 and Azure DevOps Server 2020. For a list of Azure DevOps Server versions that support the 3.x agent, see [Does Azure DevOps Server support the 3.x agent](v3-agent.md#does-azure-devops-server-support-the-3x-agent).
 
@@ -35,6 +33,8 @@ This article provides guidance for using the [3.x agent software](v3-agent.md) w
 > The Windows ARM64 agent is now available in **public preview** for Windows 11. For more information, see the [v4 agent supported operating systems](v4-agent.md#upgrade-to-4x-agent-on-supported-operating-systems). 
 
 [!INCLUDE [include](includes/concepts.md)]
+
+[!INCLUDE [ai-assistance-mcp-server-tip](../../includes/ai-assistance-mcp-server-tip.md)]
 
 ## Check prerequisites
 

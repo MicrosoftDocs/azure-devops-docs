@@ -14,8 +14,6 @@ ai-usage: ai-assisted
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
-[!INCLUDE [ai-assistance-mcp-server-tip](../../includes/ai-assistance-mcp-server-tip.md)]
-
 Using variables in Classic release pipelines is a convenient way to exchange and transport data throughout your pipeline. Each variable is stored as a string, and its value can change between pipeline runs.
 
 ::: moniker range="azure-devops"
@@ -32,6 +30,8 @@ When you set up tasks to deploy your application in each stage of your Classic r
 
 > [!NOTE] 
 > For YAML pipelines, see [user-defined variables](../process/variables.md) and [predefined variables](../build/variables.md) for more details.
+
+[!INCLUDE [ai-assistance-mcp-server-tip](../../includes/ai-assistance-mcp-server-tip.md)]
 
 ## Default variables
 

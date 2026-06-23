@@ -16,11 +16,11 @@ ai-usage: ai-assisted
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 [!INCLUDE [version-vs-gt-eq-2019](../../includes/version-vs-gt-eq-2019.md)]
 
-[!INCLUDE [ai-assistance-mcp-server-tip](../../includes/ai-assistance-mcp-server-tip.md)]
-
 Git Credential Manager simplifies authentication with your Azure Repos Git repositories.
 Credential managers let you use the same credentials that you use for the Azure DevOps web portal, supporting secure authentication through Microsoft account or Microsoft Entra ID with built-in multifactor authentication.
 Git Credential Manager also supports [two-factor authentication](https://help.github.com/articles/about-two-factor-authentication/) with GitHub repositories.
+
+[!INCLUDE [ai-assistance-mcp-server-tip](../../includes/ai-assistance-mcp-server-tip.md)]
 
 ## Authentication options
 
