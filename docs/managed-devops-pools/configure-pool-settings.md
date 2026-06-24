@@ -486,7 +486,7 @@ resource managedDevOpsPools 'Microsoft.DevOpsInfrastructure/pools@2025-09-20' = 
 
 ### NVMe temp disk path
 
-Managed DevOps Pools automatically enables the [NVM Express (NVMe)](/azure/virtual-machines/nvme-overview) protocol when communicating with your pool image's temp disk if the following condition are met:
+Managed DevOps Pools automatically enables the [NVM Express (NVMe)](/azure/virtual-machines/nvme-overview) protocol when communicating with your pool image's temp disk if the following conditions are met:
 
 - Your VM image is a [Generation 2](/azure/virtual-machines/generation-2) image.
 - Your VM size has a temp disk and supports NVMe. For more information on supported VM sizes, see [General FAQ for NVMe: Which VM generations support NVMe disks?](/azure/virtual-machines/enable-nvme-faqs#which-vm-generations-support-nvme-disks-)
