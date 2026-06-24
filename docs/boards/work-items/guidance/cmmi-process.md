@@ -1,14 +1,15 @@
 ---
-title: Understand process template artifacts in Azure Boards and Azure DevOps
+title: Understand CMMI process template artifacts
 titleSuffix: Azure Boards  
 ms.custom: work-items
-description: Learn about Capability Maturity Model Integration (CMMI) process objects used to plan and track work, monitor progress, and trends when connecting to Azure Boards and Azure DevOps. 
+description: CMMI work tracking artifacts support formal change management and process improvement. Learn how to plan work, build queries, and create dashboards in Azure Boards.
 ms.service: azure-devops-boards
 ms.topic: overview
 ms.author: chcomley
+ms.reviewer: chcomley
 author: chcomley
 monikerRange: '<= azure-devops'
-ms.date: 10/08/2025
+ms.date: 06/22/2026
 ai-usage: ai-assisted
 ---
 
@@ -16,11 +17,105 @@ ai-usage: ai-assisted
 
 [!INCLUDE [version-lt-eq-azure-devops](../../../includes/version-lt-eq-azure-devops.md)]
 
-The Capability Maturity Model Integration (CMMI) process provides work item types (WITs) you use to plan and track work, tests, feedback, and code reviews. When you create a project with the CMMI process, the project creates artifacts such as requirements, change requests, tasks, and bugs based on the CMMI framework. These artifacts help teams capture scope, monitor progress, and record engineering and review activities.
+The Capability Maturity Model Integration (CMMI) process provides a structured framework for managing software development in regulated and compliance-heavy environments.
+
+CMMI is ideal for teams working in regulated industries, those requiring formal change-control procedures, or organizations adopting process improvement frameworks. This article introduces CMMI work item types, queries, charts, and dashboards. If you're new to CMMI, start here.
 
 :::image type="content" source="media/cmmi-process-work-tracking-wits.png" alt-text="Conceptual image that shows CMMI process work item types.":::
 
-Teams use queries to list and filter work items so they can analyze progress and make data-driven decisions.
+## Prerequisites
+
+- An [Azure DevOps organization](https://go.microsoft.com/fwlink/?LinkId=307137).
+- **Basic** access level or higher and **Project Creator** permission.
+- Familiarity with work item tracking concepts and process templates.
+- Optional: Read access to [process template settings](../../../organizations/settings/work/customize-process.md).
+
+If CMMI isn't suitable for your team, consider alternative process templates:
+- [Agile process](./agile-process.md) — Best for teams using iterative development with flexible ceremonies
+- [Scrum process](./scrum-process.md) — Best for teams practicing sprint-based development with formal reviews
+
+## Background: Capability Maturity Model Integration
+
+The Capability Maturity Model Integration (CMMI) is a maturity framework developed by the Software Engineering Institute (SEI) at Carnegie Mellon University. CMMI helps organizations assess process maturity and guides process improvement to produce more predictable results and higher-quality products. It provides a structured approach to risk management and measuring how well an organization manages risk.
+
+> [!NOTE]
+> This article bases its guidance on CMMI version 1.3, which Azure Boards supports. The content isn't being updated to later CMMI versions.
+In CMMI, requirements represent customer needs and project scope, while tasks represent the implementation work. Link requirements to tasks to enable rollup tracking and progress monitoring across teams. Use change requests and bugs to track formal modifications and defects.
+### What is the purpose of CMMI?
+
+CMMI helps teams and organizations:
+
+- **Improve predictability** — Higher-maturity organizations tend to apply quantitative management practices, show lower process variability, and use leading indicators for defensible management decisions.
+- **Manage risk** — The ability to manage risk contributes directly to an organization's capacity to deliver high-quality, compliant results.
+- **Streamline communication** — CMMI provides a common framework and language that improves communication about process improvement.
+- **Balance innovation and control** — CMMI focuses process standardization in regulated environments while supporting continuous improvement.
+
+Work item queries help you list items by type - change requests, bugs, tasks, and requirements. Use queries to focus on current work, triage problems, and prepare for planning and reporting.
+
+Use CMMI as a foundation for a process-improvement program, not as a prescriptive checklist you must follow verbatim. Treat appraisals as one way to measure progress rather than the primary goal. Remember that higher maturity can reduce innovation speed, while lower maturity may foster innovation but with less predictability.
+
+CMMI defines 22 process areas that help organizations improve across engineering, project management, and organizational support. The model provides two complementary representations:
+
+- **Staged representation:** Groups the 22 process areas into five maturity levels (1–5), yielding a single maturity level for an organization. This representation helps executives and managers understand organizational capability.
+- **Continuous representation:** Assesses capability per process area, letting you focus improvement where it delivers the most business value.
+
+### CMMI process areas
+
+The CMMI-DEV model defines 22 process areas in version 1.3:
+
+|Acronym|Process Area|
+|-------------|----------------|
+|CAR|Causal Analysis & Resolution|
+|CM|Configuration Management|
+|DAR|Decision Analysis & Resolution|
+|IPM|Integrated Project Management|
+|MA|Measurement & Analysis|
+|OID|Organizational Innovation & Deployment|
+|OPD|Organizational Process Definition|
+|OPF|Organizational Process Focus|
+|OPP|Organizational Process Performance|
+|OT|Organizational Training|
+|PI|Product Integration|
+|PMC|Project Monitoring & Control|
+|PP|Project Planning|
+|PPQA|Process & Product Quality Assurance|
+|QPM|Quantitative Project Management|
+|RD|Requirements Definition|
+|REQM|Requirements Management|
+|RSKM|Risk Management|
+|SAM|Supplier Agreement Management|
+|TS|Technical Solution|
+|VER|Verification|
+|VAL|Validation|
+
+<a id="get-started"></a>
+
+## Get started with CMMI
+
+To create your first CMMI project in Azure DevOps, follow these steps:
+
+To get started, follow these steps:
+
+1. **[Create a new project with CMMI](../../../organizations/projects/create-project.md)** — Select the CMMI template during project creation.
+
+1. **[Plan your first work](#plan-and-track-work-with-cmmi)** — Create requirements to capture customer needs and tasks to break down implementation work. Requirements and tasks work together to enable rollup tracking across your team.
+
+1. **[Set up queries and dashboards](#list-work-items-with-queries)** — Build work item queries to focus on current work and create charts to monitor progress. Queries help you analyze dependencies and maintain compliance.
+
+For detailed workflow guidance, see [CMMI work item types and workflow](cmmi-process-workflow.md).
+
+## CMMI work item types and workflows
+
+CMMI includes five primary work item types, each with a defined lifecycle. Understanding these types and their workflows helps you apply the CMMI process effectively.
+
+| Work Item Type | Purpose | Workflow | Unique to CMMI? |
+|---|---|---|---|
+| **Requirement** | Capture customer needs and project scope | Proposed → Active → Resolved → Closed | Equivalent to "User Story" in Agile/Scrum |
+| **Change Request** | Formally request modifications to requirements or design | Proposed → Active → Resolved → Closed | **Yes**—enables formal change management |
+| **Task** | Break down work and track implementation steps | New → Active → Completed → Closed | Available in all processes |
+| **Bug** | Document defects in code or design | New → Active → Resolved → Closed | Available in all processes |
+
+**Key difference:** Unlike Agile and Scrum, CMMI includes Change Requests to enforce formal change-control procedures. This approach enables teams to maintain audit trails and comply with regulations in controlled environments.
 
 [!INCLUDE [temp](../../includes/process-customize.md)] 
 
@@ -28,7 +123,9 @@ Teams use queries to list and filter work items so they can analyze progress and
 
 ## Plan and track work with CMMI
 
-Teams plan projects by capturing features and requirements. When teams work in sprints, they create tasks and link them to requirements. Program managers link requirements to features to view rollups across teams. Teams track blocking problems with issues. For hands-on guidance, see CMMI process work item types and workflow.
+In CMMI, requirements represent customer needs and project scope, while tasks represent the implementation work. Link requirements to tasks to enable rollup tracking and progress monitoring across teams. Use change requests and bugs to track formal modifications and defects.
+
+For more information about how to create requirements, link tasks, and manage work item workflows, see [CMMI work item types and workflow](./cmmi-process-workflow.md).
 
 [!INCLUDE [temp](../../includes/process-guidance-conceptual.md)] 
 
@@ -36,7 +133,16 @@ Teams plan projects by capturing features and requirements. When teams work in s
 
 ## List work items with queries
 
-Use work item queries to list items by type—change requests, bugs, tasks, and requirements. Queries help you focus on current work, triage issues, and prepare for planning and reporting.
+Work item queries help you list items by type - change requests, bugs, tasks, and requirements. Use queries to focus on current work, triage problems, and prepare for planning and reporting.
+
+**Common CMMI query patterns:**
+- Show all requirements linked to an epic or feature
+- List change requests awaiting approval or in review
+- Show bugs blocking a release
+- Find tasks not yet started in the current sprint
+- Show requirements by status (Proposed, Active, Resolved, Closed)
+
+These queries help you analyze progress, identify dependencies, and maintain compliance with your process.
 
 [!INCLUDE [temp](../../includes/shared-queries.md)] 
 
@@ -44,7 +150,14 @@ Use work item queries to list items by type—change requests, bugs, tasks, and 
 
 ## Monitor progress  
 
-All processes—Agile, Scrum, and CMMI—support building status and trend charts and dashboards. Several charts populate automatically based on the Agile tools you use; these charts appear in the web portal.
+CMMI supports building status and trend charts and dashboards that populate automatically based on work tracking tools in Azure Boards. Key chart types include:
+
+- **Cumulative flow:** Shows requirement, task, and bug progress over time
+- **Burndown:** Displays sprint progress toward iteration goals
+- **Velocity:** Reveals completed work across sprints
+- **Trend:** Reveals patterns in bug discoveries and resolutions
+
+These charts appear in the web portal and help teams make data-driven decisions about process improvement and progress.
 
 [!INCLUDE [temp](../../includes/create-lightweight-charts.md)] 
 
@@ -57,24 +170,52 @@ As the CMMI process template evolves, its version number changes. The template p
 > [!div class="mx-tdCol2BreakAll"]
 > |Version | CMMI name | Major version |
 > |-------------|-------------------|--------------|
-> | Azure DevOps Services<br/>Azure DevOps Server 2022 | CMMI | 18 |
+> | Azure DevOps Services (2026) | CMMI | 18.4 |
+> | Azure DevOps Server 2022 | CMMI | 18 |
 > | Azure DevOps Server 2020 | CMMI | 17 |
 
-For a summary of updates to on-premises process templates, see Release Notes for Azure DevOps Server.
+**Version context:** Azure Boards Services uses version 18.4. Organizations running on-premises Azure DevOps Server use the versions mapped in the previous table based on their server release.
 
 ### Use the CMMI process effectively
 
-Teams follow different practices and established processes. This guidance highlights activities relevant to using the CMMI process effectively.
+To effectively implement CMMI, tailor the framework to your organization's context and maturity level. Explore these resources to guide your CMMI adoption:
 
-- [Learn about CMMI](cmmi/guidance-background-to-cmmi.md): Understand CMMI and its six capability levels.
-- [Manage projects](/previous-versions/azure/devops/boards/work-items/guidance/cmmi/guidance-project-management): Get guidance on managing, planning, and coordinating software development and maintenance with the CMMI model.
-- [Explore engineering activities](cmmi/guidance-engineering.md): Discover value-added activities for designing and building software products.
+- [Manage projects](cmmi/guidance-project-management.md): Get guidance on managing, planning, and coordinating software development and maintenance using the CMMI model.
+- [Explore engineering activities](cmmi/guidance-engineering.md): Discover value-added activities for designing and building software products aligned with CMMI practices.
 
 Use the CMMI template and guidance as part of a process improvement program and adapt them based on:
 - Product type and history
 - Project scale
 - Team skills and backgrounds
 - Accepted practices in your organization
+
+### CMMI capability maturity levels
+
+CMMI defines five capability levels that guide process improvement. As your team matures, you advance through these levels by implementing CMMI practices and work tracking:
+
+1. **Incomplete:** Processes are unpredictable and poorly controlled.
+1. **Performed:** Teams document and understand processes.
+1. **Managed:** Teams proactively manage processes with metrics and controls.
+1. **Defined:** Teams tailor processes from organizational standards.
+1. **Optimizing:** Teams continuously improve processes through innovation and optimization.
+
+## Frequently asked questions about CMMI (FAQs)
+
+**Q: What's the difference between a Change Request and a Task?**  
+A: Tasks break work into implementation steps. Change Requests formally request modifications to requirements or design, with approval workflows and compliance tracking. Use Change Requests in regulated environments. Use Tasks for routine work breakdown.
+
+**Q: What if I created a project with the wrong process template?**  
+A: [Create a new project with CMMI](../../../organizations/projects/create-project.md) or [change your process template](../../../organizations/settings/work/customize-process.md) to CMMI.
+
+**Q: How do I customize CMMI for my team?**  
+A: See [Customize the CMMI process](../../../organizations/settings/work/customize-process.md) for guidance on tailoring work item types, fields, and workflows to your team's needs.
+
+## See also
+
+- [CMMI work item types and workflow](./cmmi-process-workflow.md)
+- [Create a project with CMMI](../../../organizations/projects/create-project.md)
+- [Customize the CMMI process](../../../organizations/settings/work/customize-process.md)
+- [CMMI background and context](#background-capability-maturity-model-integration)
 
 <a id="predefined-queries"></a>
 
