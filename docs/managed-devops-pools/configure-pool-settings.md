@@ -498,7 +498,7 @@ Managed DevOps Pools uses the following paths for NVMe temp disks:
 - Linux images: `/mnt/azure_nvme_temp`
 
 > [!NOTE]
-> Managed DevOps Pools is adding support for specifying a different NVMe temp disk path in an a future update.
+> Managed DevOps Pools is adding support for specifying a different NVMe temp disk path in a future update.
 
 ## Images
 
