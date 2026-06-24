@@ -5,6 +5,7 @@ description: Learn how to configure the remote Azure DevOps MCP Server for AI-as
 ms.service: azure-devops
 ms.collection: ce-skilling-ai-copilot
 ai-usage: ai-assisted
+ms.custom: copilot-scenario-highlight
 ms.topic: how-to
 ms.author: chcomley
 author: chcomley
@@ -394,12 +395,32 @@ Examples:
 
 If the AI assistant returns results from your Azure DevOps organization, the remote MCP Server is configured correctly.
 
+<a id="use-ai-assistance"></a>
+
+## Use AI to validate and troubleshoot remote MCP setup
+
+The following example prompts for Copilot Chat help you choose the right MCP approach, configure and validate remote setup, improve day-to-day usage prompts, and troubleshoot failures when needed. Copy and paste these prompts into Copilot Chat, and replace placeholders with your actual organization, client, and error details.
+
+| Task | Example prompt |
+|------|----------------|
+| Choose remote vs local | `For my environment and client tools, help me decide whether to use the remote Azure DevOps MCP Server or the local server, and explain the tradeoffs.` |
+| Build a least-privilege config | `Generate a remote mcp.json configuration for organization <contoso> that uses only the needed toolsets and read-only mode.` |
+| Validate `mcp.json` setup | `Review this remote Azure DevOps MCP server configuration and tell me whether anything is missing or incorrect for Visual Studio Code.` |
+| Verify authentication assumptions | `Help me verify whether this remote MCP setup can authenticate with Microsoft Entra ID for organization <contoso>.` |
+| Improve query prompts for daily work | `Give me better prompt wording to reliably fetch fresh Azure DevOps data from remote MCP for project <project-name>, including how to avoid stale results.` |
+| Diagnose Connection Refused | `I'm getting Connection Refused when connecting to https://mcp.dev.azure.com/<organization>. Give me step-by-step network, proxy, and firewall checks to fix it.` |
+| Diagnose missing data | `The remote MCP server connects, but queries return no data. Help me determine whether this is a permissions issue or missing project context.` |
+| Debug tool filtering headers | `Check my X-MCP-Toolsets and X-MCP-Tools header configuration and explain why expected tools are not appearing.` |
+
+*Copilot is powered by AI, so surprises and mistakes are possible. For more information, see [Copilot general use FAQs](https://aka.ms/copilot-general-use-faqs).*
+
 ## Troubleshooting
 
 | Issue | Resolution |
 |------|------------|
 | **Authentication fails** | Verify your Microsoft Entra credentials and confirm you have access to the Azure DevOps organization. |
 | **Server not found** | Check the server URL format: `https://mcp.dev.azure.com/{organization}`. |
+| **Connection Refused** | Confirm your network allows outbound HTTPS to `mcp.dev.azure.com`. If you're on a corporate proxy or firewall, ask your administrator to allow-list the endpoint and retry without VPN to isolate network path issues. |
 | **No data returned** | Confirm you have appropriate permissions for the project or resources being queried. |
 | **Preview not available** | The preview is rolling out gradually. Check back later or contact your organization administrator. |
 

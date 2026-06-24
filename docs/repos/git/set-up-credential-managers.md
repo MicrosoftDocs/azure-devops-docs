@@ -6,8 +6,8 @@ ms.service: azure-devops-repos
 ms.topic: how-to
 monikerRange: '<= azure-devops'
 ms.subservice: azure-devops-repos-git
-ms.date: 02/24/2026
-ms.custom: sfi-image-nochange, pat-reduction
+ms.date: 06/23/2026
+ms.custom: sfi-image-nochange, pat-reduction, copilot-scenario-highlight
 ai-usage: ai-assisted
 ---
 
@@ -19,6 +19,8 @@ ai-usage: ai-assisted
 Git Credential Manager simplifies authentication with your Azure Repos Git repositories.
 Credential managers let you use the same credentials that you use for the Azure DevOps web portal, supporting secure authentication through Microsoft account or Microsoft Entra ID with built-in multifactor authentication.
 Git Credential Manager also supports [two-factor authentication](https://help.github.com/articles/about-two-factor-authentication/) with GitHub repositories.
+
+[!INCLUDE [ai-assistance-mcp-server-tip](../../includes/ai-assistance-mcp-server-tip.md)]
 
 ## Authentication options
 
@@ -91,6 +93,23 @@ You must also set at least one authentication mechanism if you set this value:
 - [credential.azreposServicePrincipalSecret](https://github.com/git-ecosystem/git-credential-manager/blob/main/docs/configuration.md#credentialazreposserviceprincipalsecret)
 - [credential.azreposServicePrincipalCertificateThumbprint](https://github.com/git-ecosystem/git-credential-manager/blob/main/docs/configuration.md#credentialazreposserviceprincipalcertificatethumbprint)
 - [credential.azreposServicePrincipalCertificateSendX5C](https://github.com/git-ecosystem/git-credential-manager/blob/main/docs/configuration.md#credentialazreposserviceprincipalcertificatesendx5c)
+
+<a id="use-ai-assistance"></a>
+
+## Use AI to configure and manage credential manager authentication
+
+The following example prompts for Copilot Chat help you understand authentication options, configure Git Credential Manager, validate your setup, and troubleshoot issues when needed. Copy and paste these prompts into Copilot Chat, and replace placeholders with your repository and organization details.
+
+| Task | Example prompt |
+|------|----------------|
+| Choose the right auth method | `For this team setup, compare Microsoft Entra ID tokens, Microsoft account sign-in, PAT, and service principal authentication in Git Credential Manager, and recommend the safest default.` |
+| Configure Microsoft Entra as default | `Show me the exact Git Credential Manager commands to make Microsoft Entra ID token auth the default for Azure Repos on this machine.` |
+| Validate current authentication mode | `Review this repository and tell me whether Git Credential Manager is currently using Microsoft Entra ID tokens, Microsoft account auth, or a PAT for Azure Repos.` |
+| Audit credential security posture | `Check this Git authentication setup and point out any security risks, including PAT overuse, tenant mismatch risk, or missing credential hardening steps.` |
+| Validate service principal setup | `Check this Git Credential Manager service principal configuration and explain what is missing for Azure Repos authentication to work.` |
+| Troubleshoot repeated sign-in prompts | `I get prompted to sign in every time I run git fetch against Azure Repos. Help me troubleshoot Git Credential Manager token caching and credential store issues.` |
+
+*Copilot is powered by AI, so surprises and mistakes are possible. For more information, see [Copilot general use FAQs](https://aka.ms/copilot-general-use-faqs).*
 
 ## Get help
 

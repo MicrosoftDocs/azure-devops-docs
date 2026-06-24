@@ -3,7 +3,7 @@ title: Enhance project security with npm audit
 description: Use npm audit to scan and fix package vulnerabilities
 ms.service: azure-devops-artifacts
 ms.topic: how-to
-ms.date: 12/18/2023
+ms.date: 05/22/2026
 monikerRange: 'azure-devops'
 "recommendations": "true"
 ---
@@ -17,6 +17,11 @@ Addressing these vulnerabilities is crucial for preventing potential problems li
 
 >[!WARNING]
 > Executing *npm audit* will transmit the names of all packages specified in your *package.json* to the public registry.
+
+> [!IMPORTANT]
+> *npm audit* reports known vulnerability advisories. It might not detect malicious packages or active supply-chain attacks.
+>
+> For command behavior, options, and troubleshooting, see the official [npm audit documentation](https://docs.npmjs.com/cli/v11/commands/npm-audit). Azure Artifacts doesn't add audit-specific behavior because npm handles the audit operation and results.
 
 ## Run npm audit locally 
 
@@ -48,6 +53,10 @@ After running *npm audit fix*, make sure to conduct a thorough testing on your a
 ## Run npm audit from your pipeline
 
 Azure Pipelines doesn't currently support *npm audit*. If you try using the regular *npm audit* command in your pipeline, it will fail. Instead, execute *npm audit* with the *--registry* argument and provide your feed's source URL.
+
+> [!IMPORTANT]
+> Follow these best practices when you run npm commands in pipelines: limit the secrets available to the job, use least-privilege service connections and tokens, and lock dependency versions with lockfiles.
+> If your packages don't require install scripts to build or run, also consider disabling npm lifecycle scripts during install by setting `ignore-scripts=true` in an *.npmrc* file or by using `--ignore-scripts`. See [npm audit](https://docs.npmjs.com/cli/v11/commands/npm-audit) for more details.
 
 # [Classic](#tab/classic)
 
