@@ -1368,7 +1368,7 @@
     },
     {
       "source_path": "docs/boards/work-items/guidance/cmmi/guidance-background-to-cmmi.md",
-      "redirect_url": "/previous-versions/azure/devops/boards/work-items/guidance/cmmi/guidance-background-to-cmmi",
+      "redirect_url": "/azure/devops/boards/work-items/guidance/cmmi-process#background-capability-maturity-model-integration",
       "redirect_document_id": false,
       "monikers": [
         "azure-devops-2020"
@@ -8588,7 +8588,7 @@
     },
     {
       "source_path": "docs/boards/work-items/guidance/cmmi/guidance-background-to-cmmi.md",
-      "redirect_url": "/previous-versions/azure/devops/boards/work-items/guidance/cmmi/guidance-background-to-cmmi",
+      "redirect_url": "/azure/devops/boards/work-items/guidance/cmmi-process#background-capability-maturity-model-integration",
       "redirect_document_id": false,
       "monikers": [
         "azure-devops-2019"

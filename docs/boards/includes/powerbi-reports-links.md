@@ -1,5 +1,9 @@
 ---
+ms.service: azure-devops-boards
+ms.author: chcomley
+author: chcomley
 ms.topic: include
+ms.date: 06/22/2026
 ---
 
 <a id="powerbi-reports"></a>

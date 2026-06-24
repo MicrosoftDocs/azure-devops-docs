@@ -24,9 +24,6 @@
   - name: CMMI workflow
     href: cmmi-process-workflow.md
     displayname: requirements
-  - name: CMMI background
-    displayName: Capability Maturity Model Integration, Capability Maturity Model, CMM
-    href: cmmi/guidance-background-to-cmmi.md
   - name: CMMI process (Archived articles)
     items:
     - name: CMMI process-specific fields
