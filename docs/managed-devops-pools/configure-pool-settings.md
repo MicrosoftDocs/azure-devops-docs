@@ -484,6 +484,44 @@ resource managedDevOpsPools 'Microsoft.DevOpsInfrastructure/pools@2025-09-20' = 
 
 * * *
 
+### NVMe temp disk path
+
+Managed DevOps Pools automatically enables the [NVM Express (NVMe)](/azure/virtual-machines/nvme-overview) protocol when communicating with your pool image's temp disk if the following condition are met:
+
+Your VM image is a [Generation 2](/azure/virtual-machines/generation-2) image.
+Your VM size has a temp disk and supports NVMe. For more information on supported VM sizes, see [General FAQ for NVMe: Which VM generations support NVMe disks?](/azure/virtual-machines/enable-nvme-faqs#which-vm-generations-support-nvme-disks-)
+Your operating system supports NVMe. For a list of supported operating systems, see [Supported OS images for remote NVMe](/azure/virtual-machines/enable-nvme-interface).
+
+Managed DevOps Pools uses the following paths by default for NVMe temp disks:
+
+- Windows images: `N:`
+- Linux images: `/mnt/azure_nvme_temp`
+
+> [!NOTE]
+> Managed DevOps Pools is adding support for specifying a different NVMe temp disk path in an a future update.
+
+If pool configuration fails due an NVMe setting, you'll receive one of the following error codes.
+
+| Error code | Description |
+| --- | --- |
+| `NVMeWindowsDriveUnsupported` | `Cannot use windowsNvmeDrive for pool {poolName} as the SKU {skuName} does not support temp NVMe Disk.` |
+| `NVMeLinuxPathUnsupported` | `Cannot use linuxNvmePath for pool {poolName} as the SKU {skuName} does not support temp NVMe Disk.` |
+| `InvalidLinuxNvmePath` | `Invalid linuxNvmePath for pool {poolName}. The path must be an absolute Linux path starting with '/'.` |
+
+NVMeWindowsDriveUnsupported
+
+Cannot use windowsNvmeDrive for pool {poolName} as the SKU {skuName} does not support temp NVMe Disk.
+
+NVMeLinuxPathUnsupported
+
+Cannot use linuxNvmePath for pool {poolName} as the SKU {skuName} does not support temp NVMe Disk.
+
+InvalidLinuxNvmePath
+
+Invalid linuxNvmePath for pool {poolName}. The path must be an absolute Linux path starting with '/'.
+
+
+
 ## Images
 
 Managed DevOps Pools provides you with several VM image options to use to run pipelines in your pool. You can create your pool by using selected marketplace VM images, your own custom images in an Azure Compute Gallery instance, or the same Windows and Linux images that are used by Azure Pipelines Microsoft-hosted agents.
