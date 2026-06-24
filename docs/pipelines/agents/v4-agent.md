@@ -3,26 +3,25 @@ title: Agent software version 4
 description: Learn how to run pipelines using the version 4 agent software.
 monikerRange: 'azure-devops'
 ms.topic: concept-article
-ms.date: 06/30/2025
+ms.date: 06/02/2026
 ---
 
 # Agent software version 4
 
-> [!NOTE]
-> The Windows ARM64 agent is now available in **public preview** for Windows 11. For more information, see the [supported operating systems](#upgrade-to-4x-agent-on-supported-operating-systems) section.
-
-The pipelines team is upgrading the agent software from version 3.x to version 4.x (using .NET 8).
+> [!IMPORTANT]
+> The pipelines team is upgrading the agent software from version 4.x to version 5.x (using .NET 10). We recommend upgrading to the [v5 agent](v5-agent.md) for the latest features and operating system support.
 
 ## Upgrade to 4.x agent on supported operating systems
 
-If you're running your self-hosted agents on newer operating systems [supported by .NET 8](https://github.com/dotnet/core/blob/main/release-notes/8.0/supported-os.md#net-8---supported-os-versions), the upgrade to the new agent version is automatic.
+If you run your self-hosted agents on newer operating systems [supported by .NET 8](https://github.com/dotnet/core/blob/main/release-notes/8.0/supported-os.md#net-8---supported-os-versions), the upgrade to the new agent version is automatic if any feature or tasks require a newer version of the agent software.
 
 To manually initiate the update, see [Update self-hosted agents](./agents.md#to-update-self-hosted-agents).
 
 The following operating systems are supported by the 4.x agent.
 
 > [!NOTE]
-> See [.NET 8 - Supported OS versions](https://github.com/dotnet/core/blob/main/release-notes/8.0/supported-os.md#net-8---supported-os-versions) for the full list of operating systems.
+> The Windows ARM64 agent is now available in **public preview** for Windows 11.  
+ See [.NET 8 - Supported OS versions](https://github.com/dotnet/core/blob/main/release-notes/8.0/supported-os.md#net-8---supported-os-versions) for the full list of operating systems.
 
 * **Linux**
   [!INCLUDE [v4-linux-os](./includes/v4-linux-os.md)] 
