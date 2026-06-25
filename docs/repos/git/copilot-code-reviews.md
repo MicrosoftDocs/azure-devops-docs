@@ -93,10 +93,6 @@ If Copilot identifies potential issues, it adds comments and suggestions directl
 
 Copilot doesn't automatically re-review a pull request when you push new commits. To get a fresh review after a commit, select **Request** again next to **GitHub Copilot** in the **Reviewers** list.
 
-### Give feedback on a review
-
-Each Copilot comment includes thumbs-up and thumbs-down controls. Use them to tell the Copilot team whether a specific comment was helpful. If you select thumbs-down, you can optionally choose a reason and add details before you submit.
-
 <!-- Coming soon:
 ### Customize Copilot's reviews
 
