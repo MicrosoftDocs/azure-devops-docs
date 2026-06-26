@@ -131,8 +131,10 @@ To filter on pay-as-you-go Pipelines usage, select:
 - Unit Of Measure: 1/Minute
 
 Additionally, you can filter on:
-- Meter
 - Tag: `_organizationname_`
+- Tag: `_projectname_`
+
+The following screenshot shows a typical cost analysis view in Azure Cost Management:
 
 :::image type="content" source="media/github-hosted/cost-management.png" alt-text="Screenshot that shows how to monitor pay-as-you-go cost.":::
 
