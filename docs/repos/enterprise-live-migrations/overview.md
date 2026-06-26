@@ -7,7 +7,7 @@ ms.topic: overview
 ms.author: chcomley
 author: chcomley
 monikerRange: 'azure-devops'
-ms.date: 06/11/2026
+ms.date: 06/26/2026
 #customer intent: As an Azure DevOps administrator, I want to understand Enterprise Live Migrations so I can plan a migration of my Azure Repos to GitHub Enterprise Cloud.
 ---
 
@@ -15,7 +15,7 @@ ms.date: 06/11/2026
 
 [!INCLUDE [version-eq-azure-devops](../../includes/version-eq-azure-devops.md)]
 
-Enterprise Live Migrations (ELM) helps you migrate Azure DevOps repositories to GitHub Enterprise Cloud with data residency with minimal disruption. ELM continuously synchronizes the source and target repositories, so your teams can keep working in Azure DevOps Services until you're ready to cutover.
+Enterprise Live Migrations (ELM) helps you migrate Azure DevOps repositories to GitHub Enterprise Cloud with data residency with minimal disruption. ELM continuously synchronizes the source and target repositories, so your teams can keep working in Azure DevOps Services until you're ready to cutover. There are two migration paths: cut over fully to GitHub, or use a hybrid model where source code moves to GitHub while teams continue using Azure Boards and Azure Pipelines.
 
 > [!NOTE]
 > ELM is currently in private preview. If you're interested in joining, [sign up here](https://nam.dcv.ms/VeDNq3VRhX).

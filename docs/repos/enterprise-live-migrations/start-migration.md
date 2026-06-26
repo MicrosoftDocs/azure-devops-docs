@@ -7,7 +7,7 @@ ms.topic: how-to
 ms.author: chcomley
 author: chcomley
 monikerRange: 'azure-devops'
-ms.date: 06/01/2026
+ms.date: 06/26/2026
 #customer intent: As a migration operator, I want to authenticate, validate, and start an ELM so the initial sync to GitHub Enterprise Cloud begins successfully.
 ---
 
@@ -15,14 +15,28 @@ ms.date: 06/01/2026
 
 [!INCLUDE [version-eq-azure-devops](../../includes/version-eq-azure-devops.md)]
 
-After you complete the [prerequisites](prerequisites.md), authenticate into Azure DevOps and start the initial synchronization for your repository. Use the service connection ID you created in the prerequisites when you start the migration.
+After you complete the [prerequisites](prerequisites.md), authenticate into Azure DevOps and then start the initial synchronization for your repository. Use the service connection ID you created in the prerequisites when you start the migration.
 
-> [!NOTE]
-> All steps in this article use the Azure DevOps CLI. The only exception is checking that your self-hosted Linux agent is online, which you can do from the Azure DevOps portal.
+## Prerequisites
+
+| Requirement | Details |
+|---|---|
+| Azure DevOps Repository GUID | Obtained from the `az repos show --query id` command for your Azure DevOps repository, or from the Azure DevOps portal repository settings. |
+| Self-hosted Linux agent | Agent installed and registered in your Azure DevOps project, and running (**Online**) under **Project Settings** > **Agent pools**. |
+| Azure DevOps Service connection to GitHub | Created in Azure DevOps with GitHub Enterprise Admin's PAT. |
+| GitHub Personal Access Token | Generated with required scopes: `repo`, `admin:org`, `delete_repo`. Token must be valid during migration (up to 21 days). |
+| Azure DevOps permissions | The migration operator must have the Enterprise Live Migrations: Manage Migrations permission. |
+| Network access | Firewall rules allow the agent machine to communicate with both Azure DevOps (`dev.azure.com`) and GitHub endpoints. |
+| (Optional) Pipeline Connection ID | Created from the Azure DevOps service connection for pipeline rewiring. |
+| (Optional) Azure Pipelines and Azure Boards | Installed Azure Pipelines and Azure Boards in your target GitHub enterprise. |
+
+If any item is incomplete, see the [prerequisites](prerequisites.md) before you continue.
 
 ## Authenticate into Azure DevOps
 
 ELM requires authenticated access to Azure DevOps.
+
+#### [Azure DevOps CLI](#tab/azure-devops-cli)
 
 1. Sign in to the Azure CLI:
 
@@ -55,9 +69,22 @@ ELM requires authenticated access to Azure DevOps.
                  -o tsv
    ```
 
+#### [Azure DevOps portal](#tab/azure-devops-portal)
+
+1. Sign in to your Azure DevOps organization at `https://dev.azure.com/<org>`.
+1. Open the target project, and then select **Project settings**.
+1. Select **Repositories** and confirm the repository you plan to migrate is present.
+1. Keep the portal open so you can verify agent status later under **Project settings** > **Agent pools**.
+
+---
+
 ## Start the agent
 
 Your self-hosted Linux agent must be online and listening before you start a migration.
+
+**Required: Interactive agent startup**
+
+Complete these steps to start the agent interactively. This step is required for the migration.
 
 1. Check the agent status in the Azure DevOps portal under **Project Settings** > **Agent pools**. Select your pool, open the **Agents** tab, and confirm the agent shows as **Online**.
 1. If the agent is offline, sign in to the Linux machine where the agent is installed and change to the agent install directory.
@@ -67,6 +94,12 @@ Your self-hosted Linux agent must be online and listening before you start a mig
    ./run.sh
    ```
 
+The agent runs in the foreground. Keep this terminal session open while the migration is in progress.
+
+**Optional: Production setup - run the agent as a service**
+
+For long-running migrations, configure the agent to run as a system service so it can restart if the machine reboots or the connection drops.
+
 1. To run the agent as a service so it stays online across reboots:
 
    ```bash
@@ -74,64 +107,62 @@ Your self-hosted Linux agent must be online and listening before you start a mig
    sudo ./svc.sh start
    ```
 
+When to use each mode:
+
+- Use service mode for migrations expected to take more than two hours, migrations during off-hours, or scenarios where the machine might reboot or the connection could drop.
+- Use interactive mode for quick migrations (less than 30 minutes), attended migrations where you monitor progress, or environments where system services require extra approval.
+- Agent mode doesn't affect sync speed. Whether you run `./run.sh` or `sudo ./svc.sh start`, migration speed and data transfer rate are the same.
+
 For more information, see [Run a self-hosted agent in Linux](../../pipelines/agents/linux-agent.md).
 
-## (Optional) Validate the repository before you start
+### Troubleshoot agent startup
 
-Run validation first to identify eligibility problems before any data transfers. After you resolve all problems, the repository is ready to sync. You have 24 hours to start the migration before validation expires. If you miss this window, rerun validation.
+If the agent fails to start or stays offline after you run `./run.sh`, check the following items:
 
-1. Run validation only:
+- Permissions: Make sure the agent directory has execute permissions (`chmod +x run.sh`) and the user has write access to the directory.
+- Port conflict: Check that the agent listener port isn't used by another process (`netstat -an | grep <agent-port>`).
+- Network: Confirm the agent machine can reach `dev.azure.com` and required GitHub endpoints.
+- Service startup failure: If you use `sudo ./svc.sh start`, review service logs by using `journalctl -u vstsagent.<org>-<project>-<agent-name>.service`.
 
-   ```azurecli
-   az devops migrations create --org https://dev.azure.com/<org>
-                               --repository-id <repo-guid>
-                               --target-repository https://<enterprise>.ghe.com/<org>/<repo>
-                               --target-owner-user-id <id>
-                               --service-endpoint-id <service-connection-guid>
-                               --agent-pool <agent-pool-name>
-                               --validate-only
-   ```
+## Choose your migration path
 
-1. Check validation status:
+Before you start migration, choose your operating path:
 
-   ```azurecli
-   az devops migrations status --org https://dev.azure.com/<org>
-                               --repository-id <repo-guid>
-   ```
+- Move fully to GitHub and stop using Azure DevOps for source control.
+- Use a hybrid model and move source code to GitHub while continuing to use Azure DevOps for pipelines and/or boards.
 
-   For details, see `validationIssues` and `errorMessage` in the output. For current thresholds, see the [validation checks](overview.md#pre-migration-validation-checks).
+For hybrid mode, decide whether ELM rewires Azure Pipelines and creates the Azure Boards connection, or whether your team handles those updates separately.
 
-   > [!IMPORTANT]
-   > Proceeding with unresolved validation errors significantly increases the likelihood that the migration fails later. Fix all errors before you continue.
-
-1. After validation succeeds, promote to a full migration:
-
-   ```azurecli
-   az devops migrations resume --org https://dev.azure.com/<org>
-                               --repository-id <repo-guid>
-                               --migration
-   ```
-
-   <!-- TODO: Clarify the promote-to-full-migration flow. If validation expired (24 hours), does `resume --migration` re-run validation, fail, or silently start the full sync with stale results? Document the expected behavior and which error appears if validation is stale. -->
+Also decide whether to validate first and start sync within 24 hours, or let ELM start synchronization automatically after validation succeeds.
 
 ## Start the synchronization
 
-Start the synchronization by running the following command. In `--target-repository`, `<repo>` is the GitHub repository name. Choose any available name. It doesn't have to match the Azure DevOps repository name.
+#### [Azure DevOps CLI](#tab/elm-cli-start)
 
-<!-- TODO: Clarify two parameter values that aren't documented anywhere:
-     1. `--target-owner-user-id` — Is this a GitHub user login (handle), a numeric GitHub user ID, or a GitHub organization slug? Add the format and a how-to-find-it pointer.
-     2. `--target-repository` URL — Confirm the canonical hostname format for GitHub Enterprise Cloud with data residency (e.g., `https://<enterprise>.ghe.com/<org>/<repo>` vs. `https://github.<enterprise>.com/...`). Add to the Values to collect checklist in prerequisites.md once confirmed. -->
+Start with this base command for every migration:
 
 ```azurecli
 az devops migrations create --org https://dev.azure.com/<org>
                             --repository-id <repo-guid>
-                            --target-repository https://<enterprise>.ghe.com/<org>/<repo>
-                            --target-owner-user-id <id>
-                            --agent-pool <agent-pool-name>
+                            --target-repository https://github.com/<org>/<repo>
+                            --github-token <github-pat>
                             --service-endpoint-id <service-connection-guid>
+                            --agent-pool <agent-pool-name>
 ```
 
-Check status:
+In `--target-repository`, `<repo>` is the GitHub repository name. Choose any available name. It doesn't need to match the Azure DevOps repository name.
+
+Add optional parameters based on your migration scenario:
+
+| Scenario | Add this parameter | Result |
+|---|---|---|
+| Validate before syncing | `--validate-only` | ELM runs validation only. You must start sync within the 24-hour validation window. |
+| Automatically start sync after validation | No extra parameter | ELM validates first, then starts synchronization automatically if validation succeeds. |
+| Automatically discover and rewire pipelines | `--enable-auto-discover-pipelines` and `--pipeline-service-connection-id <service-connection-id>` | ELM finds pipelines that reference the source repository and rewires them to GitHub. |
+| Manually choose pipelines to rewire later | `--pipeline-service-connection-id <service-connection-id>` | ELM prepares migration for manual pipeline rewiring after sync starts. |
+| Don't use ELM for pipeline rewiring | Omit both pipeline rewiring parameters | ELM migrates the repository only. You can update pipelines separately. |
+
+Check migration status:
 
 ```azurecli
 az devops migrations status --org https://dev.azure.com/<org>
@@ -140,15 +171,170 @@ az devops migrations status --org https://dev.azure.com/<org>
 
 Look for:
 
-- `status` — current migration status (`Active`, `Succeeded`, `Completed`, `Failed`, `Suspended`)
-- `stage` — current migration phase (`Queued`, `Validation`, `Synchronization`, `Cutover`, `ReviewForCutover`, `ReadyForCutover`, `Migrated`)
-- `validationIssues` — list of precheck failures with error codes and messages
-- `errorMessage` — details about the failure
+- `status` - current migration status (`Active`, `Succeeded`, `Completed`, `Failed`, `Suspended`)
+- `stage` - current migration phase (`Queued`, `Validation`, `Synchronization`, `Cutover`, `ReviewForCutover`, `ReadyForCutover`, `Migrated`)
+- `validationIssues` - list of precheck failures with error codes and messages
+- `errorMessage` - details about the failure
 
-For current thresholds, see the [validation checks](overview.md#pre-migration-validation-checks).
+#### [Azure DevOps portal](#tab/elm-portal-start)
+
+1. In your project, open **Project settings**.
+1. Under **Repos**, select **Migration to GitHub**.
+1. Select **Start a new migration**.
+1. Choose one or more repositories to migrate, and then select **Next**.
+1. On the migration details page, provide the following values:
+   - **Migrate action**: Select either **Migrate selected repositories after validation** or **Run validation and migrate later**.
+   - **Target repository**: Enter the GitHub repository URL in the format `https://<enterpriseUrl>/<orgname>/<repo>`.
+   - **GitHub token**: Paste your GitHub personal access token.
+   - **Customize target repository names for all selected repos** (optional): Add a prefix and/or suffix. Don't use spaces in repository names.
+   - **Service connection**: Select the GitHub service connection created in prerequisites.
+   - **Agent pool**: Select the self-hosted Linux agent pool where your migration agent is running.
+   - **Create a Boards connection** (optional): Select if you want ELM to create a Boards connection.
+   - **Automatically discover and rewire pipelines** (optional): Select to use pipeline rewiring.
+   - **Pipeline service connection** (optional): Select the pipeline service connection created in prerequisites.
+1. Select **Run validation** or **Start migration**, based on the migrate action you selected.
+1. Open the migration details and confirm validation is running.
+
+---
+
+## Validate before syncing
+
+Use this flow if you started migration with `--validate-only` or selected **Run validation and migrate later**.
+
+#### [Azure DevOps CLI](#tab/elm-cli-validate)
+
+1. Start sync within 24 hours after validation succeeds:
+
+   ```azurecli
+   az devops migrations resume --org https://dev.azure.com/<org>
+                               --repository-id <repo-guid>
+                               --migration
+   ```
+
+1. Recheck status:
+
+   ```azurecli
+   az devops migrations status --org https://dev.azure.com/<org>
+                               --repository-id <repo-guid>
+   ```
+
+#### [Azure DevOps portal](#tab/elm-portal-validate)
+
+1. In your Azure DevOps project, go to **Project settings** > **Repos** > **Migration to GitHub**.
+1. Open the migration that completed validation successfully.
+1. Select **Start sync** to promote validation to full synchronization.
+1. Confirm the migration status changes to the synchronization stage.
 
 > [!IMPORTANT]
-> Unresolved validation errors significantly increase the risk of migration failure. Fix all errors before you proceed.
+> Proceeding with unresolved validation errors significantly increases the likelihood that migration fails later. Fix all errors before you promote to full migration.
+
+> [!IMPORTANT]
+> 24-hour validation window: Each validation is valid for 24 hours from completion. If you don't promote to full migration within this window, validation expires and you must rerun validation.
+
+---
+
+## Manual pipeline rewiring (hybrid mode)
+
+Use this workflow when you choose to rewire pipelines manually.
+
+#### [Azure DevOps CLI](#tab/elm-cli-manual-rewire)
+
+1. List pipelines tied to the migrating repository:
+
+   ```azurecli
+   az devops migrations pipelines list --org $org --repository-id $rid -o table
+   ```
+
+1. Submit selected pipeline definition IDs for rewiring (maximum 200 IDs per request):
+
+   ```azurecli
+   az devops migrations pipelines submit --org $org \
+                                        --repository-id $rid \
+                                        --pipeline-ids 42 43 44 \
+                                        --service-connection-id $scid
+   ```
+
+   `--service-connection-id` is optional if you already set `--pipeline-service-connection-id` in `migrations create`.
+
+1. If a pipeline references other repositories, map each source repository to its GitHub target:
+
+   ```azurecli
+   az devops migrations pipelines submit --org $org \
+                                        --repository-id $rid \
+                                        --pipeline-ids 42 43 44 \
+                                        --service-connection-id $scid \
+                                        --repository-mapping aaaaaaaa-aaaa-aaaa-aaaa-aaaaaaaaaaaa=<GH_ORG>/shared-templates \
+                                        --repository-mapping bbbbbbbb-bbbb-bbbb-bbbb-bbbbbbbbbbbb=<GH_ORG>/another-repo
+   ```
+
+   Format: `--repository-mapping <sourceRepoId>=<targetOwner>/<targetRepo>` (repeatable).
+
+1. Monitor and adjust the pipeline set:
+
+   ```azurecli
+   az devops migrations pipelines list --org $org --repository-id $rid -o table
+   ```
+
+   ```azurecli
+   az devops migrations pipelines update --org $org \
+                                        --repository-id $rid \
+                                        --add-ids 50 51 \
+                                        --remove-ids 42 \
+                                        --retry-ids 43 \
+                                        --service-connection-id $scid
+   ```
+
+   - `--add-ids`: add more pipelines.
+   - `--remove-ids`: remove pipelines from rewiring.
+   - `--retry-ids`: retry pipelines in `Failed` state.
+   - At least one of `--add-ids`, `--remove-ids`, `--retry-ids`, `--service-connection-id`, or `--repository-mapping` is required.
+
+   Retry-only shortcut:
+
+   ```azurecli
+   az devops migrations pipelines retry --org $org --repository-id $rid --pipeline-ids 43
+   ```
+
+1. Review and approve at cutover when stage is `ReviewForCutover`:
+
+   ```azurecli
+   az devops migrations cutover review --org $org --repository-id $rid -o table
+   ```
+
+   Review key fields:
+
+   | Field | Meaning |
+   |---|---|
+   | `BlockedCount` / `PendingCount` / `TotalUnprocessedCount` | Items not yet processed |
+   | `RequiresPipelineVerification` (`requiresPipelineVerificationAcknowledgment`) | If `true`, approval must include `--pipelines-verified` |
+   | `failedItems[].state` / `type` / `pullRequestUrl` | Per-item failure details |
+
+1. Approve cutover:
+
+   ```azurecli
+   az devops migrations cutover approve --org $org \
+                                       --repository-id $rid \
+                                       --pipelines-verified
+   ```
+
+   If you also accept unprocessed items:
+
+   ```azurecli
+   az devops migrations cutover approve --org $org \
+                                       --repository-id $rid \
+                                       --accept-failures 3 \
+                                       --pipelines-verified
+   ```
+
+   You must supply at least one of `--accept-failures` or `--pipelines-verified`.
+
+#### [Azure DevOps portal](#tab/elm-portal-manual-rewire)
+
+1. In the migration dashboard, open the menu for the migrating repository and select **Rewire pipelines**.
+1. Select **Rewire** on the pipelines you want to connect.
+1. A blue status indicator shows rewired pipelines.
+
+---
 
 During the initial sync:
 
@@ -157,7 +343,7 @@ During the initial sync:
 - The target GitHub repository is automatically set to private.
 
 > [!IMPORTANT]
-> After you start a full migration, you must complete cutover within 21 days. The clock starts when the initial sync begins.
+> After you start a full migration, you must complete cutover within 21 days. The clock starts when initial sync begins.
 
 ## Next step
 
