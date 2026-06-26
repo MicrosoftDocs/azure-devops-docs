@@ -237,6 +237,9 @@ Use this flow if you started migration with `--validate-only` or selected **Run 
 
 Use this workflow when you choose to rewire pipelines manually.
 
+> [!NOTE]
+> The `az devops migrations pipelines` commands (`list`, `submit`, `update`, `retry`, and `delete`) are in preview.
+
 #### [Azure DevOps CLI](#tab/elm-cli-manual-rewire)
 
 1. Find the pipeline definition IDs that reference the migrating repository.
@@ -265,7 +268,7 @@ Use this workflow when you choose to rewire pipelines manually.
                                         --service-connection-id $scid
    ```
 
-   `--service-connection-id` is optional if you already set `--pipeline-service-connection-id` in `migrations create`.
+   `--service-connection-id` is optional if you already attached a connection through `--pipeline-service-connection-id` in `migrations create` or a previous `pipelines update --service-connection-id`.
 
 1. If a pipeline references other repositories, map each source repository to its GitHub target:
 
@@ -326,9 +329,9 @@ Use this workflow when you choose to rewire pipelines manually.
 
    | Field | Meaning |
    |---|---|
-   | `BlockedCount` / `PendingCount` / `TotalUnprocessedCount` | Items not yet processed |
+   | `FailedCount` / `BlockedCount` / `PendingCount` / `TotalUnprocessedCount` | Counts of unprocessed items (failed, blocked, pending, and total) |
    | `RequiresPipelineVerification` (`requiresPipelineVerificationAcknowledgment`) | If `true`, approval must include `--pipelines-verified` |
-   | `failedItems[].state` / `type` / `pullRequestUrl` | Per-item failure details |
+   | `State` / `Type` / `PullRequestUrl` (from `failedItems[]`) | Per-item failure details |
 
 1. Approve cutover:
 
