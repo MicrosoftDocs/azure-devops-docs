@@ -134,7 +134,7 @@ Additionally, you can filter on:
 - Tag: `_organizationname_`
 - Tag: `_projectname_`
 
-The following screenshot shows a typical budget configuration in Azure Cost Management:
+The following screenshot shows a typical cost analysis view in Azure Cost Management:
 
 :::image type="content" source="media/github-hosted/cost-management.png" alt-text="Screenshot that shows how to monitor pay-as-you-go cost.":::
 
