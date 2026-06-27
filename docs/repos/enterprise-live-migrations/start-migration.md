@@ -237,13 +237,27 @@ Use this flow if you started migration with `--validate-only` or selected **Run 
 
 Use this workflow when you choose to rewire pipelines manually.
 
+> [!NOTE]
+> The `az devops migrations pipelines` commands (`list`, `submit`, `update`, `retry`, and `delete`) are in preview.
+
 #### [Azure DevOps CLI](#tab/elm-cli-manual-rewire)
 
-1. List pipelines tied to the migrating repository:
+1. Find the pipeline definition IDs that reference the migrating repository.
+
+   `az devops migrations pipelines list` reports only the pipelines that are *already enrolled* in rewiring and their rewiring status. Before you submit any pipelines, it returns an empty result, so you can't use it to discover candidate pipelines. To find the definition IDs to rewire, list the pipelines that build from the source repository:
 
    ```azurecli
-   az devops migrations pipelines list --org $org --repository-id $rid -o table
+   az pipelines list --org $org \
+                     --project $project \
+                     --repository $rid \
+                     --repository-type tfsgit \
+                     --query "[].{id:id, name:name}" -o table
    ```
+
+   Use the `id` values from the output as the `--pipeline-ids` in the next step.
+
+   > [!NOTE]
+   > `az pipelines list --repository` returns only pipelines whose default trigger repository is the source repository. A pipeline that references the repository through a resource, template, or checkout step (rather than as its primary repository) might not appear here. Include those definition IDs as well if you know they depend on the migrating repository.
 
 1. Submit selected pipeline definition IDs for rewiring (maximum 200 IDs per request):
 
@@ -254,7 +268,7 @@ Use this workflow when you choose to rewire pipelines manually.
                                         --service-connection-id $scid
    ```
 
-   `--service-connection-id` is optional if you already set `--pipeline-service-connection-id` in `migrations create`.
+   `--service-connection-id` is optional if you already attached a connection through `--pipeline-service-connection-id` in `migrations create` or a previous `pipelines update --service-connection-id`.
 
 1. If a pipeline references other repositories, map each source repository to its GitHub target:
 
@@ -274,6 +288,16 @@ Use this workflow when you choose to rewire pipelines manually.
    ```azurecli
    az devops migrations pipelines list --org $org --repository-id $rid -o table
    ```
+
+   After you submit pipelines, this command lists each enrolled pipeline and its rewiring status:
+
+   | Column | Meaning |
+   |---|---|
+   | `DefinitionId` | Pipeline definition ID |
+   | `Name` | Pipeline name (falls back to the YAML filename if the name isn't available yet) |
+   | `Classification` | How the pipeline references the repository |
+   | `Status` | Current rewiring state of the pipeline |
+   | `ErrorMessage` | Failure detail when the pipeline is in a failed state |
 
    ```azurecli
    az devops migrations pipelines update --org $org \
@@ -305,9 +329,9 @@ Use this workflow when you choose to rewire pipelines manually.
 
    | Field | Meaning |
    |---|---|
-   | `BlockedCount` / `PendingCount` / `TotalUnprocessedCount` | Items not yet processed |
+   | `FailedCount` / `BlockedCount` / `PendingCount` / `TotalUnprocessedCount` | Counts of unprocessed items (failed, blocked, pending, and total) |
    | `RequiresPipelineVerification` (`requiresPipelineVerificationAcknowledgment`) | If `true`, approval must include `--pipelines-verified` |
-   | `failedItems[].state` / `type` / `pullRequestUrl` | Per-item failure details |
+   | `State` / `Type` / `PullRequestUrl` (from `failedItems[]`) | Per-item failure details |
 
 1. Approve cutover:
 
