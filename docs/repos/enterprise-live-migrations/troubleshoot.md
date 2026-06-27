@@ -7,7 +7,7 @@ ms.topic: troubleshooting
 ms.author: chcomley
 author: chcomley
 monikerRange: 'azure-devops'
-ms.date: 06/02/2026
+ms.date: 06/26/2026
 #customer intent: As a migration operator, I want to diagnose and resolve ELM errors so I can complete the migration successfully.
 ---
 
@@ -21,10 +21,11 @@ Use this article to diagnose and resolve common errors that occur during an Ente
 
 | Symptom | Likely cause | Resolution |
 |---|---|---|
-| `403 Forbidden` on `migrations create` | Insufficient Azure DevOps permissions. | Confirm you have the **Enterprise Live Migrations: Manage Migrations** permission. |
+| `403 Forbidden` on `migrations create`/`status`, or `migrations list` returns nothing | Your identity lacks the **Manage enterprise live migrations** permission on the repository. This permission is scoped per repository, so you can have it on one repository and not another. The `list` command only returns migrations you're allowed to see, so a missing permission shows up as an empty result rather than an error. | Ask a repository administrator to grant **Manage enterprise live migrations** on the specific repository. The CLI passes the server's authorization decision through unchanged, so re-running `az login` doesn't help. |
 | Target repository already under migration | Another migration exists for the same target. | Wait for it to complete or abandon it, and then try again. |
 | `TargetRepositoryDoesNotExist` precheck fails | The target GitHub repository already exists (often because a prior migration was abandoned without cleanup). | Delete the target GitHub repository and run `migrations create` again. If you intentionally want to reuse a non-empty target, pass `--skip-validation TargetRepositoryDoesNotExist`, but only after confirming the existing contents are safe to overwrite. |
 | Target repository in incompatible state | Target isn't empty or was used by a different source repo. | Use an empty target repository. If you previously canceled a migration, delete the target repo and try again. |
+| `migrations create` rejects `--enable-auto-discover-pipelines` | You enabled automatic pipeline discovery without a pipeline service connection. | Add `--pipeline-service-connection-id <guid>`. The CLI rejects auto-discovery without a service connection because discovery can't run without one. |
 | Wrong org in `--org` | Auto-detect overrode `--org`. | Add `--detect false` to the command, or update the default org. |
 | `The migrations command is not recognized` | Azure DevOps CLI extension isn't installed or is outdated. | Install or update the Azure DevOps CLI extension, and then verify the command is available before starting again. |
 
@@ -50,6 +51,7 @@ If your migration is in **Failed** status during the **Synchronization** stage, 
 |---|---|---|
 | Sync stalled (last sync time is stale) | Transient connectivity or rate-limit issue. | ELM retries automatically. If sync is stalled for more than one hour, resume manually with `az devops migrations resume`. |
 | Commits missing in GitHub | Sync was interrupted. | Check status. Resume the migration if `status: Failed` or `status: Suspended`. |
+| `status: Failed` with `validationIssues: "Migration NN: GitHub migration is no longer active."` | The GitHub-side migration object expired (it has a limited lifetime), or GitHub-side sync failed early. | Abandon the migration and create it again — a fresh `create` provisions a new GitHub migration. Then clean up any leftover pipeline rewiring data with `az devops migrations pipelines delete --repository-id <guid> --migration-id NN`. |
 
 ## Cutover errors
 
@@ -60,6 +62,19 @@ If your migration is in **Failed** status during the **Cutover** stage, check `e
 | Azure DevOps repo stuck in read-only state | Cutover failed partway through. | Contact the ELM team. Don't attempt to manually re-enable Azure DevOps write access. |
 
 <!-- TODO: "Contact the ELM team" appears here but no support channel is documented anywhere in the docset. Add a support/contact section (preview support email, internal escalation alias, or Developer Community link) and link to it from every "Contact the ELM team" instruction. -->
+
+## Pipeline rewiring errors
+
+Pipeline rewiring re-points pipelines that reference the source Azure Repos repository at the migrated GitHub repository. Check per-pipeline status with `az devops migrations pipelines list --org <url> --repository-id <guid>`.
+
+| Symptom | Likely cause | Resolution |
+|---|---|---|
+| `pipelines list` shows 0 enrolled pipelines after auto-discovery | The migration was created with `--enable-auto-discover-pipelines` but no `--pipeline-service-connection-id`, so discovery ran as a no-op. | Attach a connection with `pipelines update --service-connection-id <guid>`, then enroll the definitions with `pipelines submit --pipeline-ids <ids>`. Attaching a connection doesn't retroactively enroll pipelines. |
+| Pipeline status `preCheckFailed` with `UnreadableYaml` | The pipeline's YAML file isn't present on the repository's default branch. The pre-check reads YAML from the default branch only. | Merge the YAML file to the default branch and run `pipelines retry --pipeline-ids <id>`, or exclude the pipeline with `pipelines update --remove-ids <id>`. |
+| Disabled pipelines enrolled and failing pre-checks | Auto-discovery enrolls disabled definitions, which often have stale or missing YAML on the default branch. | Remove benign or disabled pipelines from the rewiring set with `pipelines update --remove-ids <ids>` rather than accepting the failures. You can re-add them later with `--add-ids`. |
+| Swap fails: `Repository rule violations found. Changes must be made through a pull request.` | At cutover, ELM commits each clone YAML file (`.migrations/<name>-<defId>.yml`) directly to the default branch of the target GitHub repository, which a branch ruleset blocks. | Allow the ELM identity to push directly to the target default branch (or pre-create the file through a pull request), then run `pipelines retry --pipeline-ids <id>`. |
+| `pipelines submit` returns `400 "A valid service connection ID is required"` | No service connection is attached to the migration. | Pass `--service-connection-id <guid>` on `submit`, or attach one first with `pipelines update --service-connection-id <guid>` (or at create time with `--pipeline-service-connection-id`). |
+| `pipelines list` returns `400` for a failed migration | Pipeline information isn't available for failed migrations. | Clean up rewiring data with `pipelines delete --repository-id <guid> --migration-id NN`. Get `NN` from the `Migration NN:` prefix in the `validationIssues` text of `migrations status`. Abandoning a migration alone doesn't remove rewiring data. |
 
 ## Common CLI and configuration issues
 
@@ -89,7 +104,8 @@ If your migration is in **Failed** status during the **Cutover** stage, check `e
 | Migration status and stage | `az devops migrations status --org <url> --repository-id <guid>` |
 | Full JSON output with error details | `az devops migrations status ... -o json` |
 | Validation failure details | `validationIssues` field in JSON status output |
-| List of all migrations (including inactive) | `az devops migrations list --org <url> --include-inactive` |
+| Pipeline rewiring status | `az devops migrations pipelines list --org <url> --repository-id <guid>` |
+| List of all migrations (including inactive) | `az devops migrations list --org <url> --include-all` |
 | Azure DevOps repository GUID | `az repos show --org <url> --project <proj> --repository <name> --query id -o tsv` |
 
 ## Command, parameter, status, and stage reference
