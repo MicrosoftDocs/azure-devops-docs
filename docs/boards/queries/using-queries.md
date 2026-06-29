@@ -27,8 +27,6 @@ You can create queries from the web portal or from a supported client, such as V
 
 ::: moniker range="azure-devops"
 
-[!INCLUDE [note-new-boards-hub-default-images](../includes/note-new-boards-hub-default-images.md)]
-
 ::: moniker-end
 
 Check out the recommended [best practices](#best-practices) later in this article.

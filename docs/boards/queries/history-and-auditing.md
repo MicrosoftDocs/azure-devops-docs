@@ -172,8 +172,6 @@ To view only comments added to the log, select Discussion Only. To view all chan
 
 The History tab records all changes to a work item to provide full traceability. Use filtering to find revisions by who updated an item or which fields changed.
 
-> [!NOTE]
-> The Toggle filter feature requires the New Boards Hub feature (enabled by default). See the linked guidance to manage preview features.
 
 To review updates by specific people, choose names from the Updated by menu.
 

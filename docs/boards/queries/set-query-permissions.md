@@ -24,8 +24,6 @@ Set permissions on queries and query folders to control who can create, edit, de
 For more information, see [Organize queries](organize-queries.md).
 ::: moniker range="azure-devops"
 
-[!INCLUDE [note-new-boards-hub-default-images](../includes/note-new-boards-hub-default-images.md)]
-
 ::: moniker-end
 
 ## Prerequisites
