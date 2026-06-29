@@ -15,22 +15,10 @@ Managed DevOps Pools provides the following metrics:
 
 [!INCLUDE [include](~/../docs/reusable-content/ce-skilling/azure/includes/azure-monitor/reference/metrics/microsoft-devopsinfrastructure-pools-metrics-include.md)]
 
-| Metric | Unit | [Aggregations](/azure/azure-monitor/essentials/metrics-aggregation-explained) | [Dimensions](/azure/azure-monitor/essentials/analyze-metrics#use-dimension-filters-and-splitting) |
-|---|---|---|---|
-| **AllocationDurationMS**<br>Average pool request duration | Milliseconds | Average | `Image`, `PoolId`, `ResourceRequestType`, `Type` |
-| **Allocated**<br>Number of Azure DevOps Agents with jobs currently running | Count | Average, Min, Max | `Images`, `PoolId`, `ProviderName`, `SKU` |
-| **NotReady**<br>Number of Azure DevOps Agents that are not set up for testing | Count | Average, Min, Max | `Images`, `PoolId`, `ProviderName`, `SKU` |
-| **PendingReimage**<br>Number of Azure DevOps Agents in the process of being reimaged | Count | Average, Min, Max | `Images`, `PoolId`, `ProviderName`, `SKU` |
-| **PendingReturn**<br>Number of Azure DevOps Agents that are post-cleanup, waiting to be deleted (which occur in batches) | Count | Average, Min, Max | `Images`, `PoolId`, `ProviderName`, `SKU` |
-| **Provisioned**<br>Number of Azure DevOps Agents currently up | Count | Average, Min, Max | `Images`, `PoolId`, `ProviderName`, `SKU` |
-| **Ready**<br>Number of Azure DevOps Agents present that are prepared to accept a job | Count | Average, Min, Max | `Images`, `PoolId`, `ProviderName`, `SKU` |
-| **Starting**<br>Number of Azure DevOps Agents being prepared | Count | Average, Min, Max | `Images`, `PoolId`, `ProviderName`, `SKU` |
-| **Total**<br>Total number of Azure DevOps Agents | Count | Average, Min, Max | `Images`, `PoolId`, `ProviderName`, `SKU` |
-| **Count**<br>Total number of agents provisioned, grouped by status | Count | Count | `ErrorCode`, `FailureStage`, `PoolId`, `RequestType`, `Status`, `Type` |
+<a name="filtering-and-splitting"></a>
+## Dimension filters and splitting
 
-### Filtering and splitting
-
-Azure Monitor supports filtering and splitting for metrics that have dimensions. Managed DevOps Pools provides the following dimensions. See the previous table to a list of which dimensions apply for a particular metric.
+Azure Monitor supports filtering and splitting for metrics that have dimensions. Managed DevOps Pools provides the following dimensions. See the previous table for a list of which dimensions apply for a particular metric.
 
 | Dimension | Description |
 |-----------|-------------|
