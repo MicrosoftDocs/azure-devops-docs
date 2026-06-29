@@ -53,6 +53,9 @@ If your migration is in **Failed** status during the **Synchronization** stage, 
 | Commits missing in GitHub | Sync was interrupted. | Check status. Resume the migration if `status: Failed` or `status: Suspended`. |
 | `status: Failed` with `validationIssues: "Migration NN: GitHub migration is no longer active."` | The GitHub-side migration object expired (it has a limited lifetime), or GitHub-side sync failed early. | Abandon the migration and create it again — a fresh `create` provisions a new GitHub migration. Then clean up any leftover pipeline rewiring data with `az devops migrations pipelines delete --repository-id <guid> --migration-id NN`. |
 
+> [!WARNING]
+> Creating a new migration with `migrations create` resets the 21-day cutover window. If you're approaching the end of your original window, plan your cutover schedule accordingly before starting the new migration.
+
 ## Cutover errors
 
 If your migration is in **Failed** status during the **Cutover** stage, check `errorMessage` in the JSON output.
@@ -107,6 +110,7 @@ Pipeline rewiring re-points pipelines that reference the source Azure Repos repo
 | Pipeline rewiring status | `az devops migrations pipelines list --org <url> --repository-id <guid>` |
 | List of all migrations (including inactive) | `az devops migrations list --org <url> --include-all` |
 | Azure DevOps repository GUID | `az repos show --org <url> --project <proj> --repository <name> --query id -o tsv` |
+| Migration lifecycle audit trail (who started, paused, scheduled cutover, or abandoned) | **Organization settings** > **Auditing**, filter by the **Enterprise Live Migrations** area |
 
 ## Command, parameter, status, and stage reference
 
