@@ -20,7 +20,7 @@ Enterprise Live Migrations (ELM) helps you migrate Azure DevOps repositories to 
 > [!NOTE]
 > ELM is currently in private preview. If you're interested in joining, [sign up here](https://nam.dcv.ms/VeDNq3VRhX).
 
-Run ELM from the command line using the Azure DevOps CLI. All migration operations - validate, start, monitor, pause, resume, cutover, and abandon - happen at the CLI. Use the Azure DevOps portal only for one-time setup tasks such as creating a service connection, registering an agent, and checking permissions.
+ELM is available in two experiences: the Azure DevOps CLI and the Azure DevOps portal. Use the CLI when you want to script or run migrations from the command line. Use the portal when you want a guided experience for selecting repositories, starting migrations, and tracking progress. 
 
 > [!IMPORTANT]
 > ELM only supports migrations from Azure DevOps Services to GitHub Enterprise Cloud with data residency. If you currently use Azure DevOps Server, first migrate to Azure DevOps Services before you use ELM.
@@ -29,13 +29,11 @@ Run ELM from the command line using the Azure DevOps CLI. All migration operatio
 
 ELM provides the following core capabilities:
 
-- **Continuous synchronization.** ELM syncs changes from Azure DevOps to GitHub by using incremental sync and delta tracking, so teams can keep working in Azure DevOps until cutover. Plan for a brief read-only window at cutover - typically under 30 minutes for most repositories.
-- **Single-repository migrations.** During private preview, you start and manage one migration at a time from the CLI. Run the migration commands for each repository in sequence.
-<!-- TODO: When the UX ships, update this bullet (and add a planning/sequencing article) to cover multi-repo selection, migration batches, dependencies, and cutover strategies. CLI users still migrate one repository per command, but the UX will let them select and orchestrate multiple repos. Original bullet to restore/adapt: "**Orchestration through migration plans.** ELM manages orchestration through configurable migration plans that let IT teams define migration batches, dependencies, and cutover strategies." -->
-- **End-to-end migration workflow.** ELM tracks repository states through initialization, syncing, cutover, validation, and completion. This model gives you visibility into migration progress and supports troubleshooting.
-- **Customer-scheduled cutover.** You choose and schedule the cutover time to switch the system of record from Azure DevOps to GitHub.
-- **Migration of code and pull requests.** ELM migrates repository code with history and pull requests. Future releases add support for pipeline rewiring and work item board connections.
-<!-- TODO: Track the shipping dates for pipeline rewiring and Azure Boards (work item board) connection support. When each ships, update this bullet, the "What you do manually" list, the GitHub Enterprise admin role row, the prerequisites "Azure Boards is installed in the target organization. (Future)" line, and the cut-over-to-github.md "Features in development" section. -->
+- **Continuous synchronization:** ELM syncs changes from Azure DevOps to GitHub by using incremental sync and delta tracking, so teams can keep working in Azure DevOps until cutover. Plan for a brief read-only window at cutover - typically under 30 minutes for most repositories.
+- **Multi-repository migrations:** ELM supports migrating multiple repositories, with up to 20 concurrent migration jobs. In the CLI, run the migration command for each repository one at a time. In the UI, you can select up to 20 repositories to migrate together. 
+- **End-to-end migration workflow:** ELM tracks repository states through initialization, syncing, cutover, validation, and completion. This model gives you visibility into migration progress and supports troubleshooting.
+- **Customer-scheduled cutover:** You choose and schedule the cutover time to switch the system of record from Azure DevOps to GitHub.
+- **Post-migration setup made easier:** ELM helps reduce the manual work after cutover by setting up the Azure Boards connection and rewiring Azure Pipelines to point to the migrated GitHub repository. This makes it easier for teams to keep using Azure DevOps for planning and pipelines while working from GitHub for source code, with less handoff pain and fewer follow-up tasks. 
 
 ## Migration data flow
 
@@ -51,12 +49,10 @@ All communication between Azure DevOps, the self-hosted Linux agent, and GitHub 
 
 ### PAT handling
 
-The GitHub personal access token (PAT) authorizes ELM to write to your target GitHub repository. Treat it as a secret:
+ELM requires two GitHub personal access tokens (PATs), each used for a different purpose. Treat both as secrets and grant only the scopes documented in Prerequisites. Set short expirations for both PATs and rotate or revoke them after the migration completes. Revoke either PAT immediately if you suspect exposure. Limit who can view or edit the service connection to the migration operator and required administrators. 
 
-- Store the PAT only in an Azure DevOps service connection. Don't commit it to source control, share it in chat, or paste it into logs.
-- Grant only the scopes documented in [Prerequisites](prerequisites.md#authentication-setup) (`repo`, `workflow`, `read:org`, `read:user`, `admin:enterprise`). Don't add broader scopes.
-- Set a short expiration on the PAT and rotate it after the migration completes. Revoke it immediately if you suspect exposure.
-- Limit who can view or edit the service connection to the migration operator and required administrators.
+- **Service connection PAT:** A GitHub Enterprise admin creates this PAT and uses it to create the Azure DevOps service connection for the target GitHub organization. Store this PAT only in the service connection. Don't commit it to source control, share it in chat, or paste it into logs. 
+- **Personal migration PAT:** The person performing the migration creates this PAT and uses it to authenticate to GitHub during the migration.  
 
 ### What Microsoft retains
 
@@ -68,8 +64,6 @@ ELM writes migration lifecycle events to the Azure DevOps audit log so enterpris
 
 To view audit events, go to **Organization settings** > **Auditing** and filter by the **Enterprise Live Migrations** area.
 
-<!-- TODO: Expand this subsection after the next ring rollout. Confirm the exact event names and area filter, list which fields each event records, and add any new events that ship (for example, validate, cutover approve, review-for-cutover). Add operator-visible telemetry (CLI status fields, Azure Pipelines run logs to retain) as a separate "Telemetry" subsection once that story is finalized. -->
-
 ## Scope of ELM
 
 ### What ELM automates
@@ -79,15 +73,15 @@ To view audit events, go to **Organization settings** > **Auditing** and filter 
 - Syncs pull requests, including titles, descriptions, comments, and user history.
 - Creates the target GitHub repository.
 - Migrates branch policies to GitHub branch rulesets.
+- Rewires Azure Pipelines to reference the new GitHub repository.
+- Creates a boards connection.
 - Cuts over from Azure DevOps to GitHub.
 
 ### What you do manually
 
 - Clean up the Azure DevOps repository before migration (large files, pull requests with 10,000+ files, long ref names).
-<!-- TODO: Clarify the 10,000+ files-per-PR threshold. Does ELM fail validation, skip the PR, or warn? Add the exact behavior and remediation (split the PR, exclude, etc.) to both this bullet and the validation checks table. -->
 - Create the target GitHub organization.
 - Verify the post-migration repository state (branches, tags, history, pull requests).
-- Rewire Azure Pipelines to reference the new GitHub repository (future).
 - Verify and adjust migrated branch rulesets.
 - Update hardcoded Azure DevOps repository URLs in scripts, pipelines, and tooling.
 - Set up team and user access in GitHub.
@@ -144,7 +138,7 @@ Each ELM job can run for up to one hour, but Azure Pipelines billing is based on
 
 At a high level, an ELM migration follows these steps. Each step links to detailed instructions.
 
-1. **Learn about Enterprise Live Migrations.** Review this overview to understand what ELM does, what it migrates, and how it fits into your migration plan.
+1. **Learn about Enterprise Live Migrations.** Review this overview to understand what ELM does, what it migrates, and how it fits into your migration plan. Decide whether your team plans to fully move development workflows to GitHub or continue using Azure DevOps and GitHub together in a hybrid model. If you choose a hybrid model, ELM can help reduce post-migration setup by rewiring Azure Pipelines to the migrated GitHub repository and creating the Azure Boards connection.
 1. **Complete prerequisites.** Verify access, tooling, and authentication, and gather the IDs you need to run migration commands. For more information, see [Complete prerequisites](prerequisites.md).
 1. **Start the migration.** Authenticate into Azure DevOps, set your defaults, and use the ELM CLI to start the initial synchronization. For more information, see [Start the migration](start-migration.md).
 1. **Monitor the migration.** Watch the initial sync and follow-on incremental syncs. For more information, see [Monitor the migration](monitor-migration.md).
