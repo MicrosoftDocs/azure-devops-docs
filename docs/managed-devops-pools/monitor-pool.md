@@ -22,17 +22,23 @@ Azure Monitor supports filtering and splitting for metrics that have dimensions.
 
 | Dimension | Description |
 |-----------|-------------|
+| `DataDiskType` | Data disk type attached to the resource |
+| `ErrorCode` | One of the error codes listed in [Error codes](#error-codes) |
+| `FailureStage` | Stage of provisioning at which a request failed (used to group provisioning failures) |
 | `Image` | Image name |
 | `Images` | List of images |
+| `ImageVersion` | Version of the image |
+| `NewState` | State that the resource transitioned to |
 | `PoolId` | Name of Managed DevOps Pool |
+| `PremountConfigurations` | Premount configurations applied to the resource |
+| `PreviousState` | State that the resource transitioned from |
 | `ProviderName` | CI/CD provider (AzureProvider is currently the only provider) |
-| `ResourceRequestType` |  |
+| `RequestType` | Type of request made against the pool (for example, allocate, return, or reimage) |
+| `ResourceRequestType` | Type of resource allocation request being timed |
 | `SKU` | VM size |
-| `Type` |  |
-| `ErrorCode` | One of the error codes listed in [Error codes](#error-codes) |
-| `FailureStage` |  |
-| `RequestType` |  |
 | `Status` | Agent status |
+| `Type` |  |
+| `VMPriority` | VM priority (for example, Regular or Spot) |
 
 
 **Filtering** lets you choose which dimension values are included in the chart. You might want to show successful requests when you chart the **Total number of agents provisions Count** metric. You apply the filter on the **Status** dimension.
