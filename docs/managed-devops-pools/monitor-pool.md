@@ -1,7 +1,7 @@
 ---
 title: Monitor
 description: Learn how to view the health of your Managed DevOps Pools.
-ms.date: 04/25/2025
+ms.date: 06/29/2026
 ms.topic: concept-article
 ---
 
@@ -12,6 +12,8 @@ Managed DevOps Pools provides several options for monitoring your pool instances
 ## Available metrics
 
 Managed DevOps Pools provides the following metrics:
+
+[!INCLUDE [include](~/../docs/reusable-content/ce-skilling/azure/includes/azure-monitor/reference/metrics/microsoft-devopsinfrastructure-pools-metrics-include.md)]
 
 | Metric | Unit | [Aggregations](/azure/azure-monitor/essentials/metrics-aggregation-explained) | [Dimensions](/azure/azure-monitor/essentials/analyze-metrics#use-dimension-filters-and-splitting) |
 |---|---|---|---|
