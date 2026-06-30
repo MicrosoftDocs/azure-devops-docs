@@ -1,65 +1,69 @@
 ---
 title: Scale Agile practices with Azure Boards
 titleSuffix: Azure Boards
-description: Overview of Azure Boards scaling capabilities including portfolios, delivery plans, and dashboards for scaling Agile practices across teams.
+description: Learn how to scale Agile practices with Azure Boards by using portfolio management, delivery plans, and multi-team dashboards.
 ms.service: azure-devops-boards
 ms.author: chcomley
 author: chcomley
 ms.topic: overview
 monikerRange: '<= azure-devops'
-ms.date: 09/03/2025
+ms.date: 06/29/2026
 ---
 
 # Scale Agile practices across teams
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
-As organizations grow, Azure Boards provides scalable tools to extend Agile practices across multiple teams and projects. The platform's team-based architecture enables both team autonomy and organizational visibility, supporting everything from small startups to large organizations.
+As your organization grows, Azure Boards helps you scale Agile practices across teams and projects. Its team-based model supports team autonomy while giving program and leadership stakeholders the visibility they need to coordinate delivery.
 
 [!INCLUDE [ai-assistance-callout](../../includes/ai-assistance-callout.md)]
 
 ## Core scaling approach
 
-Azure Boards scales through a flexible team model where each team operates independently while contributing to larger organizational goals. This approach provides:
+Azure Boards scales through a flexible team model where teams work independently while aligning to shared organizational goals. This model provides:
 
 - **Team autonomy** with dedicated backlogs, boards, and sprint planning
 - **Organizational visibility** through portfolio rollups and cross-team reporting
 - **Flexible hierarchies** that adapt to your organizational structure
 - **Coordinated delivery** across multiple teams and projects
 
-Each team gets their own configurable set of Agile tools while maintaining connections to the broader organizational context. For guidance on team setup, see [About teams and Agile tools](../../organizations/settings/about-teams-and-settings.md).
+Each team gets its own configurable Agile tools while staying connected to the broader organizational context. For guidance on team setup, see [About teams and Agile tools](../../organizations/settings/about-teams-and-settings.md).
 
 ## Video: Agile at Scale 
+
+This video explains how Azure Boards supports cross-team planning and visibility as organizations scale.
 
 > [!VIDEO https://learn-video.azurefd.net/vod/player?id=40ca5566-4875-4611-ba66-3ec22fa0c343]
 
 ## Scaling capabilities
 
+Azure Boards includes complementary scaling capabilities for planning, coordination, and reporting across teams.
+
 ### Portfolio management
 
-Portfolio management in Azure Boards enables executives and program managers to gain visibility across multiple teams and projects. Key capabilities include:
+Portfolio management in Azure Boards helps program managers and leaders gain cross-team visibility into delivery progress across projects. Use portfolio management in these scenarios:
 
-- **Multi-level work hierarchies** from epics down to tasks across teams
-- **Cross-team progress tracking** with rollup reporting
-- **Resource allocation visibility** and capacity planning
-- **Dependency management** between teams and projects
-- **Leadership dashboards** with high-level metrics and KPIs
+- **Connect work hierarchies** from epics down to team-level items.
+- **Track cross-team progress** with rollup reporting.
+- **Manage dependencies** between teams and projects.
+- **Support leadership reporting** with high-level metrics.
 
-Portfolio views help leaders understand delivery progress, identify bottlenecks, and make informed decisions about resource allocation and priorities.
+Portfolio views help you identify bottlenecks and review progress against larger objectives.
 
 For more information, see [Manage portfolios](portfolio-management.md).
 
 ### Delivery plans
 
-Delivery Plans provide timeline-based coordination for multi-team environments. These interactive calendar views show:
+Delivery Plans provide timeline-based coordination for multiteam environments. In Azure DevOps Services and Azure DevOps Server 2022, Delivery Plans are built in. For Azure DevOps Server 2020 and earlier, use the Delivery Plans extension.
 
-- **Cross-team feature delivery** across multiple sprints
-- **Timeline visualization** of planned work and milestones
-- **Dependency relationships** between teams and work items
-- **Capacity planning** and resource allocation insights
-- **Release coordination** for complex, multi-team deliveries
+Use Delivery Plans in these scenarios:
 
-Delivery Plans help program managers coordinate releases, identify scheduling conflicts, and ensure aligned execution across development teams.
+- **Cross-team feature delivery** across multiple sprints.
+- **Timeline visualization** of planned work and milestones.
+- **Dependency relationships** between teams and work items.
+- **Release coordination** for complex, multiteam deliveries.
+
+Use sprint tools for detailed team capacity planning. For more information, see [Set and track team capacity](../sprints/set-capacity.md).
 
 For more information, see [Review delivery plans](review-team-plans.md).
 
@@ -67,11 +71,11 @@ For more information, see [Review delivery plans](review-team-plans.md).
 
 Azure Boards provides flexible dashboard capabilities for both operational and strategic reporting:
 
-- **Team dashboards** for sprint tracking and daily operations
-- **Program dashboards** aggregating metrics across multiple teams
-- **Leadership dashboards** with strategic KPIs and health indicators
-- **Custom widgets** for organization-specific metrics
-- **Real-time data** reflecting current project status
+- **Team or project dashboards** for sprint tracking and daily operations.
+- **Cross-team dashboard views** that aggregate metrics across teams.
+- **Leadership-focused views** with strategic indicators.
+- **Custom widgets** for organization-specific metrics.
+- **Near real-time data** reflecting current project status.
 
 You can tailor dashboards to different audiences, from developers tracking sprint progress to leaders monitoring overall portfolio health.
 
@@ -79,89 +83,101 @@ For more information, see [Add and manage dashboards](../../report/dashboards/da
 
 ## When to use scaling features
 
+Use this table to quickly choose the right capability for your scenario.
+
+| Capability | Primary audience | Best for | Primary output | Not sufficient when |
+|---|---|---|
+| Portfolio management | Program managers, leadership | Tracking hierarchy and delivery progress across teams | Rollup and dependency visibility | You need detailed timeline coordination |
+| Delivery plans | Program managers, release managers | Coordinating multi-team timelines and milestones | Timeline and dependency view | You need detailed team capacity planning |
+| Multi-team dashboards | Team leads, stakeholders, leadership | Monitoring project health and trends | Shared visual metrics and status | You need hierarchical planning and dependency mapping |
+
+Use the sections that follow to confirm fit for each capability.
+
 ### Portfolio management
-Use portfolio management when you need:
-- Visibility across multiple teams or projects
-- Leadership reporting on delivery progress
-- Cross-team dependency tracking
-- Resource allocation planning at scale
+Choose portfolio management when you need the following features:
+- Visibility across multiple teams or projects.
+- Leadership reporting on delivery progress.
+- Cross-team dependency tracking.
+- Resource allocation planning at scale.
 
 ### Delivery plans
-Use delivery plans when you need:
-- Coordinated releases across multiple teams
-- Timeline visualization of feature delivery
-- Dependency management between teams
-- Capacity planning across sprints and teams
+Choose delivery plans when you need the following features:
+- Coordinated releases across multiple teams.
+- Timeline visibility for feature delivery.
+- Dependency management between teams.
+- Cross-team milestone tracking.
 
 ### Multi-team dashboards
-Use multi-team dashboards when you need:
-- Stakeholder reporting at various organizational levels
-- Real-time visibility into project health
-- Custom metrics specific to your organization
-- Automated reporting to reduce manual overhead
+Choose multi-team dashboards when you need the following features:
+- Stakeholder reporting across organizational levels.
+- Near real-time visibility into project health.
+- Custom metrics specific to your organization.
+- Automated reporting to reduce manual overhead.
 
 ## Scaling considerations
 
-When implementing Azure Boards at scale, consider these organizational, technical, and cultural factors that affect success.
+When you scale Azure Boards, assess organizational, technical, and cultural factors that influence adoption and delivery outcomes.
 
 ### Organizational factors
-- **Team structure**: How teams are organized and their relationships
-- **Communication patterns**: How information flows between teams
-- **Decision-making processes**: Who makes what decisions and when
-- **Reporting needs**: What visibility different stakeholders require
+- **Team topology**: How teams are organized and how they interact.
+- **Communication paths**: How information flows across teams and stakeholders.
+- **Decision ownership**: Who makes delivery, scope, and priority decisions.
+- **Reporting expectations**: What visibility each stakeholder group needs.
 
 For comprehensive guidance on scaling organizational practices, see [Practices that scale](practices-that-scale.md).
 
 ### Technical factors
-- **Work item hierarchies**: How work is broken down and organized
-- **Area path strategy**: How to organize work by feature or team boundaries
-- **Iteration alignment**: Whether teams share sprint schedules or operate independently
-- **Integration needs**: How Azure Boards connects with other development tools
+- **Work hierarchy design**: How work is decomposed and linked across levels.
+- **Area path model**: How ownership is divided by feature, product, or team.
+- **Iteration cadence**: Whether teams share sprint dates or operate independently.
+- **Integration requirements**: How Azure Boards connects with your other engineering tools.
 
 To understand cross-team coordination approaches, see [Visibility across teams](visibility-across-teams.md).
 
 ### Cultural factors
-- **Agile maturity**: How comfortable teams are with Agile practices
-- **Collaboration patterns**: How teams work together and share information
-- **Change management**: How the organization adapts to new processes and tools
-- **Continuous improvement**: How teams and the organization learn and evolve
+- **Agile maturity**: How consistently teams apply Agile practices.
+- **Collaboration norms**: How teams coordinate, share context, and resolve issues.
+- **Change readiness**: How effectively the organization adopts new tools and processes.
+- **Continuous improvement habits**: How teams inspect outcomes and adapt.
 
 Learn more about fostering the right mindset in [Agile culture and scale](agile-culture.md). For broader organizational change, see [Agile culture](/devops/plan/adopting-agile).
 
 ## Benefits of scaling with Azure Boards
 
+Scaling with Azure Boards provides distinct benefits for delivery teams, program managers, and leadership.
+
 ### For development teams
-- Maintain autonomy while contributing to organizational goals
-- Focus on their specific work without losing broader context
-- Collaborate effectively with other teams when needed
-- Access tools that adapt to their preferred working style
+- Maintain team autonomy while aligning work to shared goals.
+- Focus on team priorities while keeping cross-team context visible.
+- Coordinate dependencies with other teams more effectively.
+- Use flexible planning and tracking tools that fit team workflows.
 
 ### For program managers
-- Gain visibility across multiple teams without micromanaging
-- Coordinate complex deliveries involving multiple teams
-- Identify and resolve cross-team dependencies
-- Plan and track progress toward larger organizational objectives
+- Gain cross-team visibility without introducing micromanagement.
+- Coordinate complex, multi-team releases with clearer timelines.
+- Identify and resolve dependencies earlier.
+- Plan and track progress against program-level objectives.
 
 ### For leadership
-- Understand delivery progress and organizational health
-- Make informed decisions about priorities and resource allocation
-- Track progress toward strategic objectives
-- Maintain visibility without detailed operational involvement
+- Monitor delivery progress and overall organizational health.
+- Make better-informed decisions on priorities and resource allocation.
+- Track execution against strategic objectives.
+- Maintain high-level visibility without day-to-day operational overhead.
 
 ## Getting started with scaling features
 
-Azure Boards scaling capabilities build upon foundational team practices. Organizations typically evolve their usage as they grow:
+Azure Boards scaling capabilities build on foundational team practices. As your organization grows, scale in phases:
 
-1. **Start with individual teams** using basic backlogs and boards
-2. **Add cross-team visibility** as coordination needs emerge
-3. **Implement portfolio management** for leadership reporting
-4. **Scale delivery planning** for complex, multi-team releases
+1. **Start with individual teams** by using team backlogs and boards.
+1. **Add cross-team visibility** when teams need to coordinate dependencies.
+1. **Introduce portfolio management** to support leadership planning and reporting.
+1. **Expand delivery planning** for complex, multiteam releases.
 
-The platform grows with your organization, supporting both simple team workflows and complex organizational scenarios.
+Azure Boards scales with your organization, from small team workflows to complex cross-team delivery.
 
-Whether you're just beginning to scale or looking to optimize existing practices, these resources provide deeper insights into expanding team structures and optimizing dynamics:
+To deepen your approach, use these resources:
 
-- **Expand team structures**: Learn strategies to [scale Agile to large teams](/devops/plan/scaling-agile) effectively
-- **Optimize team dynamics**: Discover approaches for [creating productive teams](/devops/plan/building-productive-teams) at scale
+- **Expand team structures**: Learn strategies to [scale Agile to large teams](/devops/plan/scaling-agile).
+- **Improve team dynamics**: Discover approaches for [creating productive teams](/devops/plan/building-productive-teams).
 
-These resources complement Azure Boards capabilities by addressing the people and process aspects of scaling Agile practices successfully.
+Together, these resources complement Azure Boards by addressing the people and process aspects of scaling Agile practices.
