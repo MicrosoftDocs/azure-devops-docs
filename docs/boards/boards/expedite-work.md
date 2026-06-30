@@ -78,8 +78,6 @@ Identify the swimlanes that support your tracking needs and add them to your boa
 2. Choose :::image type="icon" source="../../media/icons/team-settings-gear-icon.png" border="false"::: **Configure board settings**.
 3. Choose **Swimlanes**, choose **Add swimlane**, and enter the swimlane name (for example, *Expedite*). Use the more actions icon :::image type="icon" source="../../media/icons/more-actions.png" border="false"::: to insert a lane above or below another lane.
 
-   [!INCLUDE [note-new-boards-hub-default-images](../includes/note-new-boards-hub-default-images.md)]
-
    :::image type="content" source="media/expedite/add-swimlane-new-board-hubs-enabled.png" alt-text="Screenshot showing the Add swimlane dialog in board settings.":::
 
 4. To set the color of the swimlane, choose a color from the drop-down menu. To reset the swimlane to the default, choose :::image type="icon" source="../media/icons/refresh.png" border="false"::: **Reset to default color**. 

@@ -26,8 +26,6 @@ Boards give your team a visual way to manage projects, track work items, and col
 
 [!INCLUDE [temp](../includes/prerequisites-kanban.md)]
 
-[!INCLUDE [note-new-boards-hub-default-images](../includes/note-new-boards-hub-default-images.md)]
-
 [!INCLUDE [enable-mcp-server](../includes/enable-mcp-server.md)]
 
 [!INCLUDE [temp](../includes/open-kanban-board.md)]

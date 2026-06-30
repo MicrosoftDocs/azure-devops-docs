@@ -5,7 +5,7 @@ description: Learn how to enable and configure GitHub Copilot code review for pu
 ms.service: azure-devops-repos
 ms.subservice: azure-devops-repos-git
 ms.topic: how-to
-ms.date: 06/02/2026
+ms.date: 06/29/2026
 ms.author: chcomley
 author: chcomley
 ---
@@ -137,6 +137,25 @@ To monitor your daily charges:
 
    :::image type="content" source="media/copilot-code-reviews/billing-cost-analysis.png" alt-text="Screenshot of Azure Cost Management Cost analysis filtered by product to show Copilot code review charges."::: 
 
+### Set a budget alert
+
+Create an Azure budget that notifies you when spending reaches a threshold you set. Budgets only notify you. They don't stop reviews or change any resources. You need **Owner**, **Contributor**, or **Cost Management Contributor** access on the subscription linked to your Azure DevOps organization.
+
+1. In the [Azure portal](https://portal.azure.com), open the subscription linked to your Azure DevOps organization.
+1. Select **Cost Management** > **Budgets**, and then select **Add**.
+1. Under **Filters**, add a filter for **Product** and select **GitHub Copilot for AzDO**.
+
+   :::image type="content" source="media/copilot-code-reviews/azure-portal-cost-management-budget-addition.png" alt-text="Screenshot of Azure Cost Management budget filters with Product set to GitHub Copilot for AzDO.":::
+
+1. If the subscription is linked to multiple Azure DevOps organizations, add a filter for **Tag** and select the organization name tags you want the alert to target.
+1. Enter a budget name, choose a reset period and expiration date, set the budget amount, and then select **Next**.
+1. Add one or more alert thresholds as a percentage of the budget (for example, 75% and 90%), set **Type** to **Actual** or **Forecasted**, and enter the email addresses to notify.
+1. Select **Create**.
+
+   :::image type="content" source="media/copilot-code-reviews/create-azure-budget.png" alt-text="Screenshot of Azure Cost Management Budgets page with Add selected to create a new budget.":::
+
+When spending reaches a threshold, Azure sends an email within an hour of the next evaluation. To review triggered alerts, select **Cost Management** > **Cost alerts**. To keep alert emails out of your junk folder, add `azure-noreply@microsoft.com` to your approved senders. For more information, see [Create and manage budgets](/azure/cost-management-billing/costs/tutorial-acm-create-budgets?tabs=psbudget).
+
 ## Frequently asked questions (FAQs)
 
 ### Where can I find the list prices that I'm charged for tokens?
@@ -147,9 +166,9 @@ See [Models and pricing](https://docs.github.com/en/copilot/reference/copilot-bi
 
 Token consumption depends on factors such as the size of the repository, the size of the change, and the complexity of the code being reviewed.
 
-### Do credits I purchased with Copilot subscriptions count toward code review usage in Azure DevOps? Can I use AI credits from a GitHub Copilot plan?
+### Do credits I purchase with Copilot subscriptions count toward code review usage in Azure DevOps? Can I use AI credits from a GitHub Copilot plan?
 
-No, usage in Azure DevOps doesn't draw down AI credits from GitHub Copilot plans.
+No, usage in Azure DevOps doesn't use AI credits from GitHub Copilot plans.
 
 ## Turn off Copilot code review
 
