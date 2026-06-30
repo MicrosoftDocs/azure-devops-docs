@@ -1,5 +1,5 @@
 ---
-title: Configure and Customize Azure Boards
+title: Configure and customize Azure Boards
 titleSuffix: Azure Boards
 description: Learn how to configure area paths, iterations, work item types, workflows, and team settings in Azure Boards to match your organization's processes and reporting needs.
 ms.service: azure-devops-boards
@@ -8,7 +8,7 @@ ai-usage: ai-assisted
 ms.author: chcomley
 author: chcomley
 monikerRange: '<= azure-devops'
-ms.date: 01/30/2026
+ms.date: 06/29/2026
 #customer intent: As an Azure DevOps developer, I want to explore options for customizing and configuring Azure Boards, so I can best support my specific portfolio, dependencies, and monitoring needs.
 ---
 
@@ -18,6 +18,8 @@ ms.date: 01/30/2026
 
 Customize Azure Boards to match your team's processes and portfolio needs. This article describes recommended tasks and considerations for administrators who configure area and iteration structure, work item types (WITs), workflows, and board behavior.
 
+Use this article to decide how your project should be organized before you customize boards, backlogs, and team settings.
+
 If you already know the configuration tasks you want, start with these articles:
 
 - [Customize cards](boards/customize-cards.md)
@@ -26,13 +28,13 @@ If you already know the configuration tasks you want, start with these articles:
 - [Configure your backlog view](backlogs/configure-your-backlog-view.md)
 
 > [!NOTE]  
-> Most guidance here applies to both cloud and on-premises deployments. Some features, such as Rollup, Analytics, and portfolio planning tools, are cloud-only.
+> Most guidance here applies to both Azure DevOps Services and Azure DevOps Server. Some capabilities, such as Analytics and delivery planning experiences, vary by version or installation. Delivery Plans are built in to Azure DevOps Server 2022 and later and were previously available as a Marketplace extension.
 
 [!INCLUDE [ai-assistance](../includes/ai-assistance-callout.md)]
 
 ## Key considerations
 
-Before you change settings, decide how teams work and what management needs to see.
+Use these questions to shape the configuration you choose.
 
 | Area | Questions to answer |
 |------|---------------------|
@@ -43,32 +45,32 @@ Before you change settings, decide how teams work and what management needs to s
 | Customizations | How do custom fields, workflows, and WITs affect boards, backlogs, and reports? |
 | Permissions and governance | Who can change processes, area/iteration trees, and team settings? |
 
-Document your choices so teams apply them consistently.
+Document your choices so teams apply them consistently across the project.
 
-## Work item types and portfolio backlogs
+## Choose work item types and portfolio backlogs
 
 Choose a process (Agile, Basic, Scrum, or CMMI) when you create a project. Each process defines a default set of WITs and portfolio/backlog levels. You can add custom WITs and portfolio backlogs to support your organization.
 
 [!INCLUDE [work-item-types](includes/work-item-types.md)]
 
-Use custom WITs and portfolio backlogs when you need extra planning layers (for example, Objectives and Key Results).
+Use custom WITs and portfolio backlogs when you need extra planning layers, such as Objectives and Key Results, or when teams need a rollup level above features.
 
 :::image type="content" source="media/config-custom/portfolio-backlogs-objectives-results.png" alt-text="Screenshot showing a project that adds Objectives and Key Results as custom portfolio backlogs.":::
 
-## Recommended tracking options
+## Compare tracking approaches
 
-Choose one of the following high-level tracking approaches based on team practices:
+Choose the tracking model that best matches how your teams plan and report work.
 
-| Approach | Recommendation | Best for |
-|----------|----------------|----------|
-| Tasks only | Not recommended | Offers limited prioritization and no portfolio planning |
-| Requirements with child tasks | Recommended | Scrum teams that estimate and track time |
-| Requirements only | Recommended | Kanban or Scrumban teams that don't track time |
-| Requirements grouped under portfolio WITs | Recommended | Multiple teams that need rollups and cross-team calendars |
+| Approach | Use when | Tradeoff |
+|----------|----------|----------|
+| Tasks only | You need simple task tracking with little hierarchy | Limited prioritization and no portfolio planning |
+| Requirements with child tasks | Scrum teams estimate work and track it in sprints | More hierarchy to manage |
+| Requirements only | Kanban or Scrumban teams don't track time | Less task-level detail |
+| Requirements grouped under portfolio WITs | Multiple teams need rollups and cross-team calendar views | Requires more upfront process design |
 
-Explain your chosen approach to teams and update process documentation.
+Explain the model you choose to teams and update process documentation so everyone uses the same pattern.
 
-## Areas, iterations, and team setup
+## Set up areas, iterations, and teams
 
 <a id="area-path"></a>
 
@@ -86,11 +88,11 @@ Related content:
 - [About area and iteration paths](../organizations/settings/about-areas-iterations.md)
 - [Configure a hierarchy of teams](plans/configure-hierarchical-teams.md)
 
-## Show bugs on boards & backlogs
+## Show bugs on boards and backlogs
 
 <a id="show-bugs"></a>
 
-Each team decides whether bugs appear on the product backlog (as requirements) or are tracked as tasks tied to requirements. Teams that use Scrum often show bugs on the backlog; teams using Agile or CMMI can choose whether bugs appear on backlogs. To change how bugs display for a team, update the team settings:
+Each team decides whether bugs appear on the product backlog as requirements or are tracked as tasks tied to requirements. Teams that use Scrum often show bugs on the backlog. Teams that use Agile or CMMI can choose whether bugs appear on backlogs. The Basic process doesn't use the Bug work item type; it uses Issue instead. To change how bugs display for a team, update the team settings:
 
 - [Show bugs on backlogs and boards](../organizations/settings/show-bugs-on-backlog.md)
 - [Troubleshooting](backlogs/resolve-backlog-reorder-issues.md#display-nested-items-on-backlogs-and-boards)
@@ -101,11 +103,11 @@ Keep a consistent team policy so queries, boards, and rollups behave predictably
 
 <a id="rollup"></a>
 
-Add rollup columns to backlogs to show progress bars, counts, or sums for child items. Use Delivery Plans and feature timelines to view cross-team schedules and dependencies.
+Add rollup columns to backlogs to show progress bars, counts, or sums for child items. Use Delivery Plans to review cross-team schedules and dependencies. If you use a roadmap-style view such as the Feature Timeline extension, call it out separately in project guidance.
 
 :::image type="content" source="media/config-custom/progress-by-work-items.png" alt-text="Screenshot showing progress rollup bars on a backlog.":::
 
-For cross-team planning, use Delivery Plans and the Feature timeline extensions where appropriate.
+For cross-team planning, use Delivery Plans and any roadmap-style extension your organization has standardized on.
 
 ## Boards, columns, and workflows
 
@@ -150,7 +152,7 @@ Adding or modifying work item types (WITs) and workflows affects many tools.
 
 ## Permissions and who can change what
 
-Control who changes processes, area and iteration trees, and team configuration.
+Control who can change processes, area and iteration trees, and team configuration.
 
 | Change type | Who can make changes |
 |-------------|---------------------|
@@ -164,7 +166,15 @@ Related content:
 
 ## Time tracking and sprint planning
 
-Use **Remaining Work**, **Original Estimate**, and **Completed Work** fields for sprint planning and capacity. If you track time for billing or other purposes, evaluate Marketplace extensions for richer time-tracking support.
+Use the work tracking fields that match your process and team planning model:
+
+| Field | Common use |
+|------|-------------|
+| **Remaining Work** | Track the effort left to finish a task or sprint item. |
+| **Original Estimate** | Capture the initial estimate when your team wants a baseline. |
+| **Completed Work** | Record the effort already spent on a task. |
+
+If you track time for billing or reporting, evaluate Marketplace extensions for richer time-tracking support.
 
 Related content:
 - [Sprint capacity](sprints/set-capacity.md)
