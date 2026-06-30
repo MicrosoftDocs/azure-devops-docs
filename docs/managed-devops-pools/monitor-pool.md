@@ -1,7 +1,7 @@
 ---
 title: Monitor
 description: Learn how to view the health of your Managed DevOps Pools.
-ms.date: 04/25/2025
+ms.date: 06/29/2026
 ms.topic: concept-article
 ---
 
@@ -13,36 +13,32 @@ Managed DevOps Pools provides several options for monitoring your pool instances
 
 Managed DevOps Pools provides the following metrics:
 
-| Metric | Unit | [Aggregations](/azure/azure-monitor/essentials/metrics-aggregation-explained) | [Dimensions](/azure/azure-monitor/essentials/analyze-metrics#use-dimension-filters-and-splitting) |
-|---|---|---|---|
-| **AllocationDurationMS**<br>Average pool request duration | Milliseconds | Average | `Image`, `PoolId`, `ResourceRequestType`, `Type` |
-| **Allocated**<br>Number of Azure DevOps Agents with jobs currently running | Count | Average, Min, Max | `Images`, `PoolId`, `ProviderName`, `SKU` |
-| **NotReady**<br>Number of Azure DevOps Agents that are not set up for testing | Count | Average, Min, Max | `Images`, `PoolId`, `ProviderName`, `SKU` |
-| **PendingReimage**<br>Number of Azure DevOps Agents in the process of being reimaged | Count | Average, Min, Max | `Images`, `PoolId`, `ProviderName`, `SKU` |
-| **PendingReturn**<br>Number of Azure DevOps Agents that are post-cleanup, waiting to be deleted (which occur in batches) | Count | Average, Min, Max | `Images`, `PoolId`, `ProviderName`, `SKU` |
-| **Provisioned**<br>Number of Azure DevOps Agents currently up | Count | Average, Min, Max | `Images`, `PoolId`, `ProviderName`, `SKU` |
-| **Ready**<br>Number of Azure DevOps Agents present that are prepared to accept a job | Count | Average, Min, Max | `Images`, `PoolId`, `ProviderName`, `SKU` |
-| **Starting**<br>Number of Azure DevOps Agents being prepared | Count | Average, Min, Max | `Images`, `PoolId`, `ProviderName`, `SKU` |
-| **Total**<br>Total number of Azure DevOps Agents | Count | Average, Min, Max | `Images`, `PoolId`, `ProviderName`, `SKU` |
-| **Count**<br>Total number of agents provisioned, grouped by status | Count | Count | `ErrorCode`, `FailureStage`, `PoolId`, `RequestType`, `Status`, `Type` |
+[!INCLUDE [include](~/../docs/reusable-content/ce-skilling/azure/includes/azure-monitor/reference/metrics/microsoft-devopsinfrastructure-pools-metrics-include.md)]
 
-### Filtering and splitting
+<a name="filtering-and-splitting"></a>
+## Dimension filters and splitting
 
-Azure Monitor supports filtering and splitting for metrics that have dimensions. Managed DevOps Pools provides the following dimensions. See the previous table to a list of which dimensions apply for a particular metric.
+Azure Monitor supports filtering and splitting for metrics that have dimensions. Managed DevOps Pools provides the following dimensions. See the previous table for a list of which dimensions apply for a particular metric.
 
 | Dimension | Description |
 |-----------|-------------|
+| `DataDiskType` | Data disk type attached to the resource |
+| `ErrorCode` | One of the error codes listed in [Error codes](#error-codes) |
+| `FailureStage` | Stage of provisioning at which a request failed (used to group provisioning failures) |
 | `Image` | Image name |
 | `Images` | List of images |
+| `ImageVersion` | Version of the image |
+| `NewState` | State that the resource transitioned to |
 | `PoolId` | Name of Managed DevOps Pool |
+| `PremountConfigurations` | Premount configurations applied to the resource |
+| `PreviousState` | State that the resource transitioned from |
 | `ProviderName` | CI/CD provider (AzureProvider is currently the only provider) |
-| `ResourceRequestType` |  |
+| `RequestType` | Type of request made against the pool (for example, allocate, return, or reimage) |
+| `ResourceRequestType` | Type of resource allocation request being timed |
 | `SKU` | VM size |
-| `Type` |  |
-| `ErrorCode` | One of the error codes listed in [Error codes](#error-codes) |
-| `FailureStage` |  |
-| `RequestType` |  |
 | `Status` | Agent status |
+| `Type` |  |
+| `VMPriority` | VM priority (for example, Regular or Spot) |
 
 
 **Filtering** lets you choose which dimension values are included in the chart. You might want to show successful requests when you chart the **Total number of agents provisions Count** metric. You apply the filter on the **Status** dimension.

@@ -20,8 +20,6 @@ You can organize your personal or shared queries by adding query folders. You ca
 
 ::: moniker range="azure-devops"
 
-[!INCLUDE [note-new-boards-hub-default-images](../includes/note-new-boards-hub-default-images.md)]
-
 ::: moniker-end
 
 ## Prerequisites
@@ -80,12 +78,9 @@ To define a query efficiently, start with an existing shared query. The followin
 
 1. Select **Save as** in the more actions ![More actions](../../media/icons/more-actions.png) menu.
 
-    > [!NOTE]
-    > If you disable the **New Boards Hubs** feature, the **Save As** selection appears at the top of the page.
-
 1. Save the query to your **My Queries** folder.  
 
-    :::image type="content" source="media/view-run-queries/save-as-new-boards-hubs.png" alt-text="Screenshot of Save As query dialog, new boards hubs experience.":::
+    :::image type="content" source="media/view-run-queries/save-as-new-boards-hubs.png" alt-text="Screenshot of Save As query dialog in Boards.":::
 
    To save a query to the **Shared Queries** folder, you need to be a member of the [Project Administrators group](../../organizations/security/add-users-team-project.md), or have your **Contribute** permissions on the folder set to **Allow**. For more information, see [Set query permissions](set-query-permissions.md). 
 

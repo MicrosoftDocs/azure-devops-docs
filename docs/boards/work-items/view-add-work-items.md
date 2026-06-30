@@ -34,8 +34,6 @@ To create test cases and link them to user stories, see [Add, run, and update in
 
 [!INCLUDE [temp](../includes/prerequisites-work-items.md)] 
 
-[!INCLUDE [note-new-boards-hub-default-images](../includes/note-new-boards-hub-default-images.md)]
-
 [!INCLUDE [enable-mcp-server](../includes/enable-mcp-server.md)] 
 
 ## Open the Work items page

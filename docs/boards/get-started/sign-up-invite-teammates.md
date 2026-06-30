@@ -54,8 +54,6 @@ You can sign up using either a Microsoft account (personal or Microsoft Entra) o
 > [!IMPORTANT]  
 > If your GitHub email address is associated with an Azure DevOps organization that uses Microsoft Entra ID, you can't sign in with GitHub for that organization. Use your Microsoft Entra account instead.
 
-[!INCLUDE [note-new-boards-hub-default-images](../includes/note-new-boards-hub-default-images.md)]
-
 [!INCLUDE [enable-mcp-server](../includes/enable-mcp-server.md)]
 
 ## Create a project

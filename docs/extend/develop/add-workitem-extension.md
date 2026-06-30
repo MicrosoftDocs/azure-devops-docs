@@ -283,7 +283,7 @@ Use `ms.vss-web.action-provider` when dynamically loading menu items by using `g
 
 The following patterns are no longer supported:
 
-- `require("VSS/Events/Document")` - not supported with New Boards Hub
+- `require("VSS/Events/Document")` - not supported in the current Boards experience
 - `SDK.js` script tag with `usePlatformScripts: true` - use the npm package `azure-devops-extension-sdk` instead
 
 ## Related content
