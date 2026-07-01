@@ -1,27 +1,34 @@
 ---
 title: Edit user stories and other work items in bulk
 titleSuffix: Azure Boards
-description: Learn how to make the same change to many work items in Azure Boards using the bulk modify feature in Azure Boards.
+description: Bulk modify work items in Azure Boards to update fields, reassign work, move items to sprints, and add or remove tags without opening each item.
 ms.service: azure-devops-boards
 ms.custom: boards-backlogs, linked-from-support, copilot-scenario-highlight
 ms.author: chcomley
 author: chcomley
-ms.topic: tutorial
+ms.topic: how-to
+ai-usage: ai-assisted
 monikerRange: '<= azure-devops'
-ms.date: 01/13/2026
-#customer intent: As a team lead, I want to learn how to make changes to multiple work items at once to assign items to team members or sprints.
+ms.date: 07/01/2026
+#customer intent: As a team lead, I want to make the same change to many work items at once so I can assign items, update fields, and manage sprints efficiently.
 ---
 
 # Modify work items in bulk in Azure Boards 
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
-Use bulk modify when you need to quickly make the same change to many work items. For example, you might want to change the priority of several bugs or reassign several tasks to the same team member. Use the web portal to quickly modify one or more fields for work items that contain the same value.  
+Use bulk modify to update many work items at once without opening each one individually. From the web portal, you can:
+
+- Update field values across selected items
+- Reassign work to a team member
+- Move items to a sprint or iteration
+- Add or remove tags
+- Change the work item type or move items to another project
+
+Available options depend on your access level and permissions.
 
 > [!TIP]
-> To add work items in bulk or update multiple fields with different values, use [CSV Import](../queries/import-work-items-from-csv.md). You can't complete a bulk add of work items through the web portal.
-
-By using bulk modify, you can edit fields and add or remove tags. You can also reassign work or move work to a specific sprint. You can also use bulk modify to change the work item type or move work items to other projects. The options available to you depend on the platform you work from and the permissions assigned to you.
+> To add work items in bulk, or to set different values per item, use [CSV import](../queries/import-work-items-from-csv.md) instead. The web portal bulk edit applies the same value to all selected items.
 
 [!INCLUDE [ai-assistance-mcp-server-tip](../../includes/ai-assistance-mcp-server-tip.md)]
 
@@ -31,7 +38,7 @@ By using bulk modify, you can edit fields and add or remove tags. You can also r
 
 ## Supported tasks
 
-Team members in the Contributors group can complete the following tasks. Members with Stakeholder access can run multi-select, bulk edit, change type, email, and copy as HTML/copy to clipboard actions. For more information, see [Get started as a Stakeholder](../../organizations/security/get-started-stakeholder.md).  
+**Contributors** can complete all the following tasks. Members with **Stakeholder** access are limited to multi-select, bulk edit, change type, email, and copy as HTML/copy to clipboard. For more information, see [Get started as a Stakeholder](../../organizations/security/get-started-stakeholder.md).
 
 ::: moniker range="<=azure-devops"
 
@@ -46,16 +53,16 @@ Team members in the Contributors group can complete the following tasks. Members
 ---
 :::row:::
    :::column span="1":::
-   Multi-select work items  
+   Multi-select work items
    :::column-end:::
    :::column span="1":::
-   - [Multi-select-query results](#multi-select)
-   - [Multi-select-backlog](#multi-select)
+   - [Multi-select — query results](#multi-select)
+   - [Multi-select — backlog](#multi-select)
    :::column-end:::
 :::row-end:::
 :::row:::
    :::column span="1":::
-   Link work items 
+   Link work items
    :::column-end:::
    :::column span="1":::
    - [Link to a new item](add-link.md)
@@ -75,41 +82,44 @@ Team members in the Contributors group can complete the following tasks. Members
    - [Change parent](organize-backlog.md#reparent)
    - [Add/remove tags](#tags)
    - [Update from template](work-item-template.md)<sup>1</sup>
-   - [Delete](remove-delete-work-items.md#delete) <sup>1</sup>
+   - [Delete](remove-delete-work-items.md#delete)<sup>1</sup>
    :::column-end:::
 :::row-end:::
 :::row:::
    :::column span="1":::
-   Copy, clone, change type, move, or email work items  
+   Copy, clone, change type, move, or send email
    :::column-end:::
    :::column span="1":::
-   - [Clone or copy a single item](copy-clone-work-items.md#copy-clone) <sup>2</sup>
+   - [Clone or copy a single item](copy-clone-work-items.md#copy-clone)<sup>2</sup>
    - [Copy as HTML/Copy to clipboard](copy-clone-work-items.md)
    - [Send email with selected items](../work-items/email-work-items.md)
    - [Change work item type](move-change-type.md#change-type)<sup>1</sup>
-   - [Move items to another project](move-change-type.md#move)<sup>1, 3</sup>
+   - [Move items to another project](move-change-type.md#move)<sup>1,3</sup>
    :::column-end:::
 :::row-end:::
 
-> [!NOTE]  
-> - You can't perform certain functions on work items whose [work item types](../work-items/about-work-items.md) belong to the [hidden types category](../work-items/agile-glossary.md#hidden-types). This category includes all work items that track tests (such as test cases, shared steps, and shared parameters), code review requests and responses, and feedback requests and responses.
-> - You can choose to copy or clone a single work item from a query results list or from the [Actions menu of the work item form](remove-delete-work-items.md). You can only perform a clone or copy action for a single work item. Select **Copy work item** when you want to create a copy of a work item and change its work item type. Select **Clone** when you want to create another instance of the work item without changes to its work item type.
-> - Be a member of the Project Administrators group or be granted explicit permissions to [**Move work items**](../../organizations/security/set-permissions-access-work-tracking.md#move-delete-permissions).  
+> [!NOTE]
+> - **Hidden work item types**: Some bulk actions aren't available for [hidden type category](../work-items/agile-glossary.md#hidden-types) work items. This category includes test cases, shared steps, shared parameters, code review requests and responses, and feedback requests and responses.
+> - **Copy vs. Clone (single item only)**: Both actions apply to one work item at a time, from a query results list or the [Actions menu](remove-delete-work-items.md) on the work item form. Use **Copy work item** to copy an item and change its type. Use **Clone** to create an identical copy of the same type.
+> - **Move work items permission**: To move items to another project, be a member of the **Project Administrators** group or have explicit [Move work items](../../organizations/security/set-permissions-access-work-tracking.md#move-delete-permissions) permission.
 
 ::: moniker-end
 
 <a id="multi-select"> </a>  
 <a id="edit"> </a>  
 
-## Edit multiple work items in bulk
+## Select work items for bulk edit
 
-To start a bulk edit, multi-select the work items you want to modify. Select them from query results or the backlog. You can craft your query using the query editor or search box. For more information, see [Define a work item query](../queries/using-queries.md).
+Select multiple work items from query results, the backlog, or sprint backlogs. The process for selecting multiple work items works the same way across all three. To build a targeted list, see [Define a work item query](../queries/using-queries.md).
 
-Multi-select of work items on the backlog and sprint backlogs works in the same way as multi-select works within query results.
+From the backlog context menu, you can:
 
-Use bulk modify by selecting work items from the backlog page or query results list. From the backlog page context menu, change the backlog priority of several items: **Change position** or **Move to iteration**. Then, assign them to a team member, move them to a different sprint, or [map them to a feature](organize-backlog.md#mapping).
+- Change priority with **Change position**
+- Move items to a sprint with **Move to iteration**
+- Assign items to a team member
+- [Map items to a feature](organize-backlog.md#mapping)
 
-The menu options available to you change depending on the platform you work from and whether you work from a backlog page or query results list.  
+The available menu options differ between the backlog and query results, as shown in the following section.
 
 :::row:::
    :::column span="1":::
@@ -126,47 +136,56 @@ The menu options available to you change depending on the platform you work from
 
 ### Select multiple items and open the context menu
 
-To select several items in a sequence, select the first item of the sequence, hold down **Shift**, and select the last item of the sequence. To select several nonsequential items, hold down **Ctrl** and select the items to be selected one after the other. You can either drag the selected items to a new position within the backlog or to a different sprint if the `Planning` side pane is enabled.
+Use the following keyboard shortcuts to select work items:
 
-To open the context menu, select (:::image type="icon" source="../media/icons/actions-icon.png" border="false":::) or (:::image type="icon" source="../media/icons/context_menu.png":::), and then choose the option from the menu.
+- **Sequential items**: Select the first item, hold **Shift**, and select the last item in the range.
+- **Nonsequential items**: Hold **Ctrl** and select each item individually.
 
-This example uses the context menu to move several nonsequential items to the current sprint.
+To open the context menu, select :::image type="icon" source="../media/icons/actions-icon.png" border="false"::: or :::image type="icon" source="../media/icons/context_menu.png":::, and then choose an option.
+
+The following example moves several nonsequential items to the current sprint using the context menu.
 
 ::: moniker range="<=azure-devops"
 
-:::image type="content" source="media/bulk-modify/move-iteration.png" alt-text="Screenshot of Product backlog context menu, where you can move several backlog items to a different iteration.":::
+:::image type="content" source="media/bulk-modify/move-iteration.png" alt-text="Screenshot of Product backlog context menu with Move to iteration selected for multiple work items.":::
 
-::: moniker-end  
+::: moniker-end
 
-> [!TIP]  
-> Use the backlog **Create Query** feature to create a query with the backlog items. You can then open the query within the web portal or [Excel](../backlogs/office/bulk-add-modify-work-items-excel.md) to perform additional bulk updates.  
+> [!TIP]
+> You can also drag selected items to a new position in the backlog or onto a sprint in the **Planning** pane. To use the **Planning** pane, enable it from the view options menu. To create a query from the current backlog for further bulk updates in Excel, use the **Create Query** feature.
 
 <a id="move-iteration"> </a>
 <a id="assign-to"> </a>  
 
-## Reassign work items 
+## Reassign work items
 
-Select work items, open the context menu for any selected item, and reassign all of them. You can assign them to a member of your team or to another sprint or iteration at the same time.
+1. Select the work items you want to reassign.
+1. Open the context menu on any selected item by selecting :::image type="icon" source="../media/icons/actions-icon.png" border="false":::, and then select **Assign to** or **Move to iteration**.
 
-:::image type="content" source="media/bulk-modify/assign-from-query.png" alt-text="Screenshot of Queries Results page where a context menu can assign work items to a team member.":::
+   :::image type="content" source="media/bulk-modify/assign-from-query.png" alt-text="Screenshot of Query Results page context menu with Assign to and Move to iteration highlighted.":::
 
-For more information about the *Assign To* and *Iteration Path* fields, see [Workflow and board fields](../queries/query-by-workflow-changes.md#workflow-fields) and [Query by area or iteration path](../queries/query-by-area-iteration-path.md).
+1. Select a team member (**Assign to**) or a sprint (**Move to iteration**), and then confirm.
+
+For more information about the **Assign To** and **Iteration Path** fields, see [Workflow and board fields](../queries/query-by-workflow-changes.md#workflow-fields) and [Query by area or iteration path](../queries/query-by-area-iteration-path.md).
 
 <a id="edit-fields"> </a>  
 
-## Edit one or more fields
-
-To assign or modify several fields, choose **Edit** from the context menu of one of the selected work items. Enter a value for each field that you want to update.  
+## Edit field values in bulk
 
 ::: moniker range="<=azure-devops"
 
-1. For audit purposes, add a description for your bulk update task. For more information about each field, see the [Work item field index](../work-items/guidance/work-item-field.md).
+1. Select the work items you want to update, and then choose **Edit** from the context menu.
 
-   :::image type="content" source="media/bulk-modify/edit-work-items-new-text-editor.png" alt-text="Screenshot of Edit work items dialog.":::  
+1. In the **Edit work items** dialog, select a field, enter or select the new value, and optionally add a description for audit purposes. Repeat for each field to update. For a full list of available fields, see the [Work item field index](../work-items/guidance/work-item-field.md).
 
-1. From the Query results page, save all work items that you bulk-modified. When you bulk modify items from the backlog, the process automatically saves them. Work items shown in bold text indicate that local changes aren't saved to the data store. The **Save items** button might be in a different place in the UI than shown in the following picture, depending on the layout of your browser and the specific version in use.
+   :::image type="content" source="media/bulk-modify/edit-work-items-new-text-editor.png" alt-text="Screenshot of Edit work items dialog with a field selected and a value entered.":::
 
-   :::image type="content" source="media/bulk-modify/query-results-bulk-save-items.png" alt-text="Screenshot of Query results page with Save items selected.":::
+1. Select **Save changes**.
+
+   :::image type="content" source="media/bulk-modify/query-results-bulk-save-items.png" alt-text="Screenshot of Query results page with Save items highlighted.":::
+
+   > [!NOTE]
+   > When you bulk modify work items from the **backlog**, the changes save automatically. When you work from **query results**, items shown in bold have unsaved local changes - select **Save items** to commit them.
 
 ::: moniker-end
 
@@ -176,31 +195,35 @@ To assign or modify several fields, choose **Edit** from the context menu of one
 
 ## Modify rich-text fields in bulk
 
-Rich-text fields support entry of HTML syntax tags to support formatting. Rich-text fields correspond to the **Description**, **Acceptance Criteria**, **Repos Steps**, and others listed in [Example queries for select fields](../queries/query-index-quick-ref.md#example-queries-for-select-fields).
+Rich-text fields accept HTML syntax for formatting. They include **Description**, **Acceptance Criteria**, **Repro Steps**, and other fields listed in [Example queries for select fields](../queries/query-index-quick-ref.md#example-queries-for-select-fields).
 
-You can bulk update a rich-text field by using the bulk modify tool, selecting the field, and entering the text with syntax in the **Value** field. Or, you can create a work item template with the text you want to use and complete a bulk update by applying the template to the selected work items. For more information, see [Use work item templates](work-item-template.md).
+To bulk update rich-text fields, use one of the following options:
 
-For an example using templates showing entry of HTML formatted syntax, see [Sample work item templates, Add guidance in a rich-text field](../work-items/work-item-template-examples.md#rich-text).
+- **Direct entry**: In the bulk edit dialog, select the field and enter your text with HTML syntax in the **Value** field.
+- **Work item template**: Create a template with the formatted text, and then apply it to selected work items. For more information, see [Use work item templates](work-item-template.md) and [Sample work item templates — Add guidance in a rich-text field](../work-items/work-item-template-examples.md#rich-text).
 
 <a id="tags"></a>
 
-## Modify tags in bulk 
+## Modify tags in bulk
 
-From the **Edit work items** dialog, select **Tags (Add)** or **Tags (Remove)**.  
+1. Select the work items you want to tag.
+1. Open the context menu, select **Edit**, and then in the **Edit work items** dialog, select **Tags (Add)** or **Tags (Remove)**.
+1. Enter or select the tags to add or remove, and then select **Save changes**.
 
-This example adds the *Service* tag to the selected work items.
+   :::image type="content" source="media/bulk-modify/edit-tags-dialog.png" alt-text="Screenshot of Edit work items dialog with Tags (Add) selected and a tag value entered.":::
 
-:::image type="content" source="media/bulk-modify/edit-tags-dialog.png" alt-text="Screenshot of Edit work items dialog where you can add tags.":::
+> [!NOTE]
+> To add new tags, you need the **Create tag definition** permission at the project level. By default, the **Contributors** group has this permission.
 
 ## Migrate or change a large number of work items
 
-For large scale, organizational moves, use the REST API calls for [Work item batch operations](/rest/api/azure/devops/wit/work%20items#operations).
+For large-scale or organizational moves, use the [Work item batch operations](/rest/api/azure/devops/wit/work%20items#operations) REST API.
 
-At this time, you can't move work items to a different organization or collection. You can only migrate work item information by exporting and then importing them by using [Excel](../backlogs/office/bulk-add-modify-work-items-excel.md).
+You can't move work items to a different organization or collection. To migrate work item data, export and then import it by using [Excel](office/bulk-add-modify-work-items-excel.md) or [CSV import](../queries/import-work-items-from-csv.md).
 
-## Add multiple values to a field  
+## Add multiple values to a field
 
-If you implemented a [custom control that supports multiple values](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.vsts-extensions-multivalue-control), you can use Excel to bulk edit the field. You can't modify it by using the web portal. You can only select a single value for the field.
+If you use a [custom control that supports multiple values](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.vsts-extensions-multivalue-control), use Excel to bulk edit that field. The web portal supports selecting only a single value per field and doesn't support bulk editing multi-value fields.
 
 <a id="use-ai-assistance"></a>
 
@@ -226,4 +249,8 @@ If you configure the [Azure DevOps MCP Server](../../mcp-server/mcp-server-overv
 
 ## Related content
 
-To add fields or customize a work item form, see [Customize your work tracking experience](../../reference/customize-work.md). The method you use depends on the process model that supports your project.  
+- [Add a link to a work item](add-link.md)
+- [Copy or clone work items](copy-clone-work-items.md)
+- [Change work item type or move to another project](move-change-type.md)
+- [Use work item templates](work-item-template.md)
+- [Import work items from CSV](../queries/import-work-items-from-csv.md)

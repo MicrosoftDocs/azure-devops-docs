@@ -10,7 +10,7 @@ ms.date: 04/07/2022
 ::: moniker range="azure-devops"
 
 > [!NOTE]
-> Completed or closed work items don't display on the backlogs and boards after their **Changed Date** value is greater than 183 days (about a half a year). You can still list these items by using a query. If you want them to show up on a backlog or board, you can make a minor change to them, which resets the clock.  
+> Completed or closed work items don't appear on backlogs and boards after their **Changed Date** is more than 183 days old (about half a year). You can still list these items with a query. To show them again on a backlog or board, make a minor update to reset the clock.
 
 ::: moniker-end
 
@@ -18,7 +18,7 @@ ms.date: 04/07/2022
 ::: moniker range="< azure-devops"
  
 > [!NOTE]
-> Completed or closed work items don't display on the backlogs and boards after their **Changed Date** value is greater than a year old. You can still list these items by using a query. If you want them to show up on a backlog or board, you can make a minor change to them, which resets the clock.  
+> Completed or closed work items don't appear on backlogs and boards after their **Changed Date** is more than one year old. You can still list these items with a query. To show them again on a backlog or board, make a minor update to reset the clock.
 
 
 ::: moniker-end
