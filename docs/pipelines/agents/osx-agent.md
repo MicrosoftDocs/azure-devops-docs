@@ -18,7 +18,7 @@ This article provides guidance for using the [4.x agent software](v4-agent.md) w
 
 :::moniker range="<azure-devops-server"
 
-This article provides guidance for using the [3.x agent software](v3-agent.md) with Azure DevOps Server 2022 and Azure DevOps Server 2020. For a list of Azure DevOps Server versions that support the 3.x agent, see [Does Azure DevOps Server support the 3.x agent](v3-agent.md#does-azure-devops-server-support-the-3x-agent).
+This article provides guidance for using the [3.x agent software](/previous-versions/azure/devops/pipelines/agents/v3-agent?view=azure-devops-2020&preserve-view=true) with Azure DevOps Server 2022 and Azure DevOps Server 2020. For a list of Azure DevOps Server versions that support the 3.x agent, see [Does Azure DevOps Server support the 3.x agent](/previous-versions/azure/devops/pipelines/agents/v3-agent?view=azure-devops-2020&preserve-view=true#does-azure-devops-server-support-the-3x-agent).
 
 > [!IMPORTANT]
 > If you're using Azure DevOps Services or Azure DevOps Server, you should be using the [4.x agent software](v4-agent.md).
@@ -274,7 +274,7 @@ Normally, the agent service runs only after the user logs in. If you want the ag
 
 <h3 id="service-update-environment-variables">Update environment variables</h3>
 
-When you configure the service, it takes a snapshot of some useful environment variables for your current logon user such as PATH, LANG, JAVA_HOME, ANT_HOME, and MYSQL_PATH. If you need to update the variables (for example, after installing some new software):
+When you configure the service, it takes a snapshot of some useful environment variables for your current signed in user such as PATH, LANG, JAVA_HOME, ANT_HOME, and MYSQL_PATH. If you need to update the variables (for example, after installing some new software):
 
 ```bash
 ./env.sh

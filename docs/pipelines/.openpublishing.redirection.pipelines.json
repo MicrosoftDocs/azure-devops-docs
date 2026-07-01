@@ -260,6 +260,10 @@
     {
       "source_path_from_root": "/docs/pipelines/integrations/microsoft-teams.md",
       "redirect_url": "/microsoftteams/m365-custom-connectors#update-connectors-url"
+    },
+    {
+      "source_path_from_root": "/docs/pipelines/agents/v3-agent.md",
+      "redirect_url": "/previous-versions/azure/devops/pipelines/agents/v3-agent"
     }
   ]
 }

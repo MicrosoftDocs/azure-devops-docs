@@ -19,7 +19,7 @@ This article provides guidance for using the [4.x agent software](v4-agent.md) w
 
 :::moniker range="<azure-devops-server"
 
-This article provides guidance for using the [3.x agent software](v3-agent.md) with Azure DevOps Server 2022 and Azure DevOps Server 2020. For a list of Azure DevOps Server versions that support the 3.x agent, see [Does Azure DevOps Server support the 3.x agent](v3-agent.md#does-azure-devops-server-support-the-3x-agent).
+This article provides guidance for using the [3.x agent software](/previous-versions/azure/devops/pipelines/agents/v3-agent?view=azure-devops-2020&preserve-view=true) with Azure DevOps Server 2022 and Azure DevOps Server 2020. For a list of Azure DevOps Server versions that support the 3.x agent, see [Does Azure DevOps Server support the 3.x agent](/previous-versions/azure/devops/pipelines/agents/v3-agent?view=azure-devops-2020&preserve-view=true#does-azure-devops-server-support-the-3x-agent).
 
 > [!IMPORTANT]
 > If you're using Azure DevOps Services or Azure DevOps Server, you should be using the [4.x agent software](v4-agent.md).
@@ -311,8 +311,6 @@ It's important to avoid situations in which the agent fails or become unusable b
 [!INCLUDE [include](includes/capabilities.md)]
 
 ## FAQ
-
-[!INCLUDE [v3 Agent overview](./includes/v3-agent-overview.md)]
 
 <!-- BEGINSECTION class="md-qanda" -->
 
