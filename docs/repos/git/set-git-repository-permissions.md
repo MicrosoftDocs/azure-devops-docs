@@ -140,8 +140,8 @@ The permission changes are automatically saved for the selected group.
 
 To enable or disable inheritance for a specific repository, select the repository and then move the **Inheritance** slider to either the on or off position.
 
-[!div class="mx-imgBorder"] 
-![Screenshot that shows enabling or disabling Inheritance for a specific repository.](media/git-permissions/disable-inheritance-specific-repo.png)
+> [!div class="mx-imgBorder"]
+> ![Screenshot that shows enabling or disabling Inheritance for a specific repository.](media/git-permissions/disable-inheritance-specific-repo.png)
 
 To learn about inheritance, see [About permissions and groups](../../organizations/security/about-permissions.md#permission-inheritance).
 
