@@ -184,6 +184,12 @@ YAML pipelines can have different versions of the pipeline in different branches
 | Scheduled triggers         | See [Branch considerations for scheduled triggers](../process/scheduled-triggers.md?tabs=yaml#branch-considerations-for-scheduled-triggers). |
 | Pipeline completion triggers | See [Branch considerations for pipeline completion triggers](../process/pipeline-triggers.md?tabs=yaml#branch-considerations). |
 
+## Resource triggers for YAML pipelines
+
+Repository resource triggers let you start a pipeline when changes land in a repo defined as a `repositories` resource — you configure CI-style `trigger` (branches) and `pr` (pull request) filters on the resource so commits or PRs in an external Azure Repos Git, GitHub, GitHub Enterprise, or Bitbucket Cloud repo can kick off runs of the current pipeline. Azure Pipelines supports similar event-driven triggers on other resource types as well, including `pipelines` (on completion of an upstream CI pipeline, with optional branch, tag, and stage filters), `builds` (on new artifacts from an external CI system such as Jenkins), `containers` (on new image tags in Azure Container Registry), `packages` (on new NuGet or npm GitHub package versions), and `webhooks` (on arbitrary events from external services like GitHub, Nexus, or Artifactory via an incoming webhook service connection).
+
+For more information, see [Resources in YAML pipelines](../process/resources.md).
+
 ## Generic webhook based triggers for YAML pipelines
 
 Webhook trigger support in YAML pipelines lets you subscribe to events from any external service (such as GitHub, GitHub Enterprise, Nexus, or Artifactory) via its webhooks and automatically trigger pipelines. This feature expands automated triggers beyond built-in resources like pipelines, containers, builds, and packages. You can integrate pipeline automation with any external service.
