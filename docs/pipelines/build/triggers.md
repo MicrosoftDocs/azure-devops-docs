@@ -2,7 +2,7 @@
 title: Triggers in Azure Pipelines
 description: Learn about how you can specify CI, scheduled, gated, and other triggers in Azure Pipelines
 ms.topic: concept-article
-ms.date: 05/08/2026
+ms.date: 07/20/2026
 monikerRange: '<= azure-devops'
 ---
 
@@ -183,6 +183,35 @@ YAML pipelines can have different versions of the pipeline in different branches
 | GitHub pull request comment triggers    | The version of the pipeline in the source branch for the pull request is used. |
 | Scheduled triggers         | See [Branch considerations for scheduled triggers](../process/scheduled-triggers.md?tabs=yaml#branch-considerations-for-scheduled-triggers). |
 | Pipeline completion triggers | See [Branch considerations for pipeline completion triggers](../process/pipeline-triggers.md?tabs=yaml#branch-considerations). |
+
+## Generic webhook based triggers for YAML pipelines
+
+Webhook trigger support in YAML pipelines lets you subscribe to events from any external service (such as GitHub, GitHub Enterprise, Nexus, or Artifactory) via its webhooks and automatically trigger pipelines. This expands automated triggers beyond built-in resources like pipelines, containers, builds, and packages, allowing you to integrate pipeline automation with any external service.
+
+To use it, define a webhooks resource in your YAML pipeline and point it to an Incoming Webhook service connection that subscribes to the event. You can add filters against the JSON payload to fine-tune when each pipeline runs, and access the payload values as variables in your jobs.
+
+```yml
+resources:
+  webhooks:
+    - webhook: MyWebhookTrigger          ### Webhook alias
+      connection: MyWebhookConnection    ### Incoming webhook service connection
+      filters:
+        - path: repositoryName      ### JSON path in the payload
+          value: maven-releases     ### Expected value in the path provided
+        - path: action
+          value: CREATED
+steps:
+- task: PowerShell@2
+  inputs:
+    targetType: 'inline'
+    ### JSON payload data is available in the form of ${{ parameters.<WebhookAlias>.<JSONPath>}}
+    script: |
+      Write-Host ${{ parameters.MyWebhookTrigger.repositoryName}}
+      Write-Host ${{ parameters.MyWebhookTrigger.component.group}}
+```
+
+For more information, see [Generic webhook based triggers for YAML pipelines](/azure/devops/release-notes/2020/sprint-172-update#generic-webhook-based-triggers-for-yaml-pipelines) and [resources.webhooks.webhook definition](/azure/devops/pipelines/yaml-schema/resources-webhooks-webhook).
+
 
 ## Classic release pipelines
 
