@@ -1,5 +1,5 @@
 ---
-ms.service: azure-devops-boards
+ms.service: azure-boards
 ms.author: chcomley
 author: chcomley
 ms.prod: azure-devops

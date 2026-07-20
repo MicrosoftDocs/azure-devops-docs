@@ -2,7 +2,7 @@
 title: Edit user stories and other work items in bulk
 titleSuffix: Azure Boards
 description: Bulk modify work items in Azure Boards to update fields, reassign work, move items to sprints, and add or remove tags without opening each item.
-ms.service: azure-devops-boards
+ms.service: azure-boards
 ms.custom: boards-backlogs, linked-from-support, copilot-scenario-highlight
 ms.author: chcomley
 author: chcomley

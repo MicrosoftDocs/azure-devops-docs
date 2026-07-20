@@ -3,7 +3,7 @@ title: Manage work items effectively
 titleSuffix: Azure Boards 
 description: Optimize work item management in Azure Boards. Learn to create, update, link, track, and organize work items with best practices for team collaboration.
 ms.custom: devx-track-azurecli, copilot-scenario-highlight
-ms.service: azure-devops-boards
+ms.service: azure-boards
 ai-usage: ai-assisted
 ms.author: chcomley
 monikerRange: '<= azure-devops'

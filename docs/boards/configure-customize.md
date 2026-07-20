@@ -2,7 +2,7 @@
 title: Configure and customize Azure Boards
 titleSuffix: Azure Boards
 description: Learn how to configure area paths, iterations, work item types, workflows, and team settings in Azure Boards to match your organization's processes and reporting needs.
-ms.service: azure-devops-boards
+ms.service: azure-boards
 ms.topic: concept-article
 ai-usage: ai-assisted
 ms.author: chcomley

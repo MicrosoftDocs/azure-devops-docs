@@ -2,7 +2,7 @@
 title: Customize a process that imports by using Hosted XML
 titleSuffix: Azure DevOps Services
 description: Customize a Hosted XML process to support custom fields, work item types, global lists, and process configuration.
-ms.service: azure-devops-boards
+ms.service: azure-boards
 ms.custom: engagement-fy23
 ai-usage: ai-assisted
 ms.topic: how-to

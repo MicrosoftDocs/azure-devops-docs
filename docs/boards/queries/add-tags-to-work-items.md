@@ -3,7 +3,7 @@ title: Add Tags to Work Items to Categorize Lists and Boards
 titleSuffix: Azure Boards
 description: Learn how to add work item tags to categorize and filter lists & boards when working in Azure Boards.
 ms.custom: boards-queries, copilot-scenario-highlight
-ms.service: azure-devops-boards
+ms.service: azure-boards
 ms.author: chcomley
 author: chcomley
 ms.topic: how-to

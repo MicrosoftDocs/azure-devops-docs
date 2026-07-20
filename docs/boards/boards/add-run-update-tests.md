@@ -3,7 +3,7 @@ title: Manage tests inline
 titleSuffix: Azure Boards
 description: Learn how to add, run, update, and track manual test cases inline in your board work items for lightweight management.
 ms.custom: boards-kanban 
-ms.service: azure-devops-boards
+ms.service: azure-boards
 ms.author: chcomley
 author: chcomley
 ms.topic: how-to

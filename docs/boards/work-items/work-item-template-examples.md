@@ -2,7 +2,7 @@
 title: View sample work item templates that show usage in Azure Boards
 titleSuffix: Azure Boards
 description: Learn about sample work item templates you can use to prepopulate fields and provide guidance in work item forms.
-ms.service: azure-devops-boards
+ms.service: azure-boards
 ms.author: chcomley
 author: chcomley
 ai-usage: ai-assisted

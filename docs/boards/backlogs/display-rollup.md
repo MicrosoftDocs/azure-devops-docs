@@ -2,7 +2,7 @@
 title: Display rollup columns to show progress, counts, or totals in Azure Boards
 titleSuffix: Azure Boards
 description: Learn how to add rollup columns that automatically sum child work item values to display progress bars, counts, and totals on parent items in Azure Boards.
-ms.service: azure-devops-boards
+ms.service: azure-boards
 ms.topic: how-to
 ms.author: chcomley
 author: chcomley

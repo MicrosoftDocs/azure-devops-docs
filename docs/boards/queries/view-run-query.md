@@ -3,7 +3,7 @@ title: View, run, or email a query
 titleSuffix: Azure Boards
 description: Learn how to view, run, favorite, or email queries in Azure Boards.
 ms.custom: boards-queries, copilot-scenario-highlight
-ms.service: azure-devops-boards
+ms.service: azure-boards
 ms.author: chcomley
 author: chcomley
 ms.topic: quickstart

@@ -3,7 +3,7 @@ title: About migrating and integrating work tracking data
 titleSuffix: Azure Boards
 description: Learn how you can migrate or integrate work tracking data from other software applications to Azure Boards, plus available extensions.
 ms.custom: extensions, engagement-fy23
-ms.service: azure-devops-boards
+ms.service: azure-boards
 ms.topic: overview
 ms.author: chcomley
 author: chcomley

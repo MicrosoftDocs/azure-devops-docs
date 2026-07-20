@@ -2,7 +2,7 @@
 title: Track progress and individual items on the Taskboard
 titleSuffix: Azure Boards 
 description: Learn how to update tasks, monitor progress, and manage your sprint Taskboard in Azure Boards.
-ms.service: azure-devops-boards
+ms.service: azure-boards
 ms.custom: boards-sprints, engagement-fy23, copilot-scenario-highlight
 ms.author: chcomley
 author: chcomley

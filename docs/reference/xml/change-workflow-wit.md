@@ -2,7 +2,7 @@
 title: Change the workflow for a work item type
 titleSuffix: Azure DevOps
 description: Add States, Transitions, Reasons, or Actions to customize the workflow for a WIT in Team Foundation Server 
-ms.service: azure-devops-boards
+ms.service: azure-boards
 ms.custom: archive-candidate
 ms.author: chcomley
 author: chcomley

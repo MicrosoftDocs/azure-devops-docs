@@ -2,7 +2,7 @@
 title: Connect an Azure Boards or Azure DevOps project to a GitHub repository
 titleSuffix: Azure Boards
 description: Configure one or more GitHub repositories to integrate with Azure Boards. 
-ms.service: azure-devops-boards
+ms.service: azure-boards
 ms.topic: how-to
 ms.author: chcomley
 author: chcomley

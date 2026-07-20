@@ -3,7 +3,7 @@ metadata:
   title: Azure Boards configuration and customization FAQs
   description: Get answers to frequently asked questions about configuring and customizing Azure Boards.
   titleSuffix: Azure Boards
-  ms.service: azure-devops-boards
+  ms.service: azure-boards
   ms.author: chcomley
   author: chcomley
   ms.topic: faq

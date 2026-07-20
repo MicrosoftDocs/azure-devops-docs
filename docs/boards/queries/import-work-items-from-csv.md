@@ -3,7 +3,7 @@ title: Export, update, and import bulk work items with CSV files
 titleSuffix: Azure Boards
 description: Learn how to export, update, and import work items in bulk from a CSV formatted file in Azure Boards. 
 ms.custom: "boards-queries, linked-from-support, copilot-scenario-highlight"
-ms.service: azure-devops-boards
+ms.service: azure-boards
 ai-usage: ai-assisted
 ms.author: chcomley
 author: chcomley

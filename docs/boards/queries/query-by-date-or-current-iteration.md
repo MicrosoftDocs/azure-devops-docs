@@ -3,7 +3,7 @@ title: Query by date or current iteration in Azure Boards
 titleSuffix: Azure Boards
 description: Learn how to query for work items based on a date, a team's current iteration, or a sliding window of sprints in Azure Boards. 
 ms.custom: boards-queries, copilot-scenario-highlight
-ms.service: azure-devops-boards
+ms.service: azure-boards
 ms.author: chcomley
 author: chcomley
 ms.topic: example-scenario

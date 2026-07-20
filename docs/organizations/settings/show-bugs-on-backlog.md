@@ -2,7 +2,7 @@
 title: Show bugs on backlogs and boards
 titleSuffix: Azure DevOps 
 description: Choose how to get bugs and user stories to appear on Agile tools in Azure Boards. You can track bugs as requirements or tasks.
-ms.service: azure-devops-boards
+ms.service: azure-boards
 ms.custom: teams. engagement-fy23
 ms.author: chcomley
 author: chcomley

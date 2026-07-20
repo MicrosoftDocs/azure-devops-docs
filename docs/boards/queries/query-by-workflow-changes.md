@@ -3,7 +3,7 @@ title: Query by account, user, workflow, or board changes
 titleSuffix: Azure Boards
 description: Learn how to list work items based on changes made to their assignment, state, or board column or swimlane in Azure Boards. 
 ms.custom: boards-queries, copilot-scenario-highlight
-ms.service: azure-devops-boards
+ms.service: azure-boards
 ai-usage: ai-assisted
 ms.author: chcomley
 author: chcomley

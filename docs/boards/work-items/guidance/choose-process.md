@@ -3,7 +3,7 @@ title: Default processes and process templates
 titleSuffix: Azure Boards
 description: Learn about choosing a process or process template based on the process model you use in your Azure Boards project.
 ms.custom: work-items
-ms.service: azure-devops-boards
+ms.service: azure-boards
 ms.topic: overview
 ms.author: chcomley
 author: chcomley

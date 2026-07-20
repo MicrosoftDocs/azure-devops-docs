@@ -3,7 +3,7 @@ title: Define features and epics to organize backlog items
 titleSuffix: Azure Boards
 description: Learn about features and epics in Azure Boards and how to use them to organize your product and portfolio backlogs.
 ms.custom: boards-backlogs, copilot-scenario-highlight
-ms.service: azure-devops-boards
+ms.service: azure-boards
 ms.author: chcomley
 author: chcomley
 ms.topic: how-to

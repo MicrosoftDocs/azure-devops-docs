@@ -3,7 +3,7 @@ title: Customize a process template
 titleSuffix: Azure DevOps 
 description: Define the objects and processes available to you when you create a project in Azure DevOps.
 ms.custom: engagement-fy23
-ms.service: azure-devops-boards
+ms.service: azure-boards
 ms.author: chcomley
 author: chcomley
 ai-usage: ai-assisted

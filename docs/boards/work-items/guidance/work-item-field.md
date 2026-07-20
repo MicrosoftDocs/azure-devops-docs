@@ -3,7 +3,7 @@ title: Work Item Fields For Agile and Scrum Processes
 titleSuffix: Azure Boards
 description: Explore the default and system work item fields used by the Agile and Scrum processes and process templates for Azure Boards and Azure DevOps.
 ms.custom: work-items, engagement-fy23
-ms.service: azure-devops-boards
+ms.service: azure-boards
 ai-usage: ai-assisted
 ms.topic: concept-article 
 ms.author: chcomley

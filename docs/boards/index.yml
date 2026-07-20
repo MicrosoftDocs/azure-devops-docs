@@ -6,7 +6,7 @@ summary: Plan, track, and discuss work across teams. Define and update issues, b
 metadata:
   title: Azure Boards documentation
   description: Plan, track, and discuss work across teams. Define and update issues, bugs, user stories, and other work with customizable Kanban, Scrum, and Agile tools.
-  ms.service: azure-devops-boards
+  ms.service: azure-boards
   ms.topic: landing-page
   ai-usage: ai-assisted 
   author: chcomley

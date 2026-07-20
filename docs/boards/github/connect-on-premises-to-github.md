@@ -2,7 +2,7 @@
 title: Connect an on-premises project to a GitHub Enterprise Server 
 titleSuffix: Azure DevOps Server
 description: Learn how to configure one or more GitHub repositories to integrate with an Azure Boards on-premises project.
-ms.service: azure-devops-boards
+ms.service: azure-boards
 ms.topic: how-to
 ms.author: chcomley
 author: chcomley

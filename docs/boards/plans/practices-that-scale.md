@@ -2,7 +2,7 @@
 title: Implement Agile practices that scale for working in Azure Boards and Azure DevOps
 titleSuffix: Azure Boards
 description: Learn about scaling Agile recommended practices for working in Azure Boards and Azure DevOps.   
-ms.service: azure-devops-boards
+ms.service: azure-boards
 ms.author: chcomley
 author: chcomley
 ms.topic: best-practice

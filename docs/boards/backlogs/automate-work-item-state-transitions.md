@@ -2,7 +2,7 @@
 title: Set work item automation rules for your team
 titleSuffix: Azure Boards   
 description: Learn how to set rules to update the state of your team's work items automatically, according to the state of the child tasks.  
-ms.service: azure-devops-boards
+ms.service: azure-boards
 ai-usage: ai-assisted
 ms.custom: cross-service
 ms.author: chcomley

@@ -2,7 +2,7 @@
 title: Track dependencies in Delivery Plans
 titleSuffix: Azure Boards
 description: Learn how to view and manage work item dependencies using dependency tracking features in Delivery Plans.
-ms.service: azure-devops-boards
+ms.service: azure-boards
 ms.custom: cross-project, copilot-scenario-highlight
 ms.author: chcomley
 author: chcomley

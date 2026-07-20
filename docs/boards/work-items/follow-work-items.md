@@ -3,7 +3,7 @@ title: Follow work items and pull requests
 titleSuffix: Azure Boards & Azure Repos
 description: Track updates to work items and pull requests by following them to receive targeted notifications in Azure DevOps.
 ms.custom: work-items, cross-project, copilot-scenario-highlight
-ms.service: azure-devops-boards
+ms.service: azure-boards
 ai-usage: ai-assisted
 ms.author: chcomley
 author: chcomley

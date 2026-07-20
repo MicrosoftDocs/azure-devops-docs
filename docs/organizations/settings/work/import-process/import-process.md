@@ -2,7 +2,7 @@
 title: Import a Hosted XML process 
 titleSuffix: Azure DevOps Services     
 description: Import a Hosted XML process to support Azure Boards customization in Azure DevOps Services 
-ms.service: azure-devops-boards
+ms.service: azure-boards
 ai-usage: ai-assisted
 ms.topic: how-to
 ms.author: chcomley

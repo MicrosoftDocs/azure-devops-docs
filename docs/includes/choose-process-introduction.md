@@ -1,6 +1,6 @@
 ---
 ms.topic: include
-ms.service: azure-devops-boards
+ms.service: azure-boards
 ms.author: chcomley
 author: chcomley
 ms.date: 05/02/2023

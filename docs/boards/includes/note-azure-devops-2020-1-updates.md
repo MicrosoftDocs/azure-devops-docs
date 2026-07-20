@@ -1,5 +1,5 @@
 ---
-ms.service: azure-devops-boards
+ms.service: azure-boards
 ms.manager: wiwagn
 ms.author: chcomley
 author: chcomley

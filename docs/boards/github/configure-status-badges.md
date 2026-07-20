@@ -2,7 +2,7 @@
 title: Add status badges for your GitHub repo
 titleSuffix: Azure Boards
 description: Learn how to add and configure your board badge status so it appears on your GitHub repo. 
-ms.service: azure-devops-boards
+ms.service: azure-boards
 ms.topic: how-to
 ms.author: chcomley
 author: chcomley

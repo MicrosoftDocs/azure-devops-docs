@@ -3,7 +3,7 @@ title: Customize Backlogs and Boards
 titleSuffix: Azure Boards 
 description: Learn how to add and edit backlog levels for the Inheritance process model. 
 ms.custom: inherited-process
-ms.service: azure-devops-boards
+ms.service: azure-boards
 ms.author: chcomley
 author: chcomley
 monikerRange: '<= azure-devops'

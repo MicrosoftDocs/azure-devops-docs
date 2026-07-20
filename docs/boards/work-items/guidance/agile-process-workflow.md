@@ -4,7 +4,7 @@ titleSuffix: Azure Boards
 description: Explore how to use the Agile process in Azure Boards and track your work by using the work item types.
 ms.custom: work-items, engagement-fy23
 ai-usage: ai-assisted
-ms.service: azure-devops-boards
+ms.service: azure-boards
 ms.topic: concept-article
 ms.author: chcomley
 author: chcomley

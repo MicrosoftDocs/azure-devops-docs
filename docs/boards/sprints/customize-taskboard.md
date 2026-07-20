@@ -3,7 +3,7 @@ title: Customize a sprint taskboard in Azure Boards
 titleSuffix: Azure Boards
 description: Learn how to customize cards on a sprint taskboard in Azure Boards or Azure DevOps.
 ms.custom: boards-kanban 
-ms.service: azure-devops-boards
+ms.service: azure-boards
 ms.author: chcomley
 author: chcomley
 ms.topic: how-to

@@ -3,7 +3,7 @@ title: Use Agile Process Template Artifacts
 titleSuffix: Azure Boards  
 description: Overview of Agile process work item types and artifacts in Azure Boards, with guidance to plan and track work, run queries, and monitor progress.
 ms.custom: work-items
-ms.service: azure-devops-boards
+ms.service: azure-boards
 ms.topic: overview
 ms.author: chcomley
 author: chcomley
