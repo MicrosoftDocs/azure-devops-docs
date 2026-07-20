@@ -186,9 +186,9 @@ YAML pipelines can have different versions of the pipeline in different branches
 
 ## Generic webhook based triggers for YAML pipelines
 
-Webhook trigger support in YAML pipelines lets you subscribe to events from any external service (such as GitHub, GitHub Enterprise, Nexus, or Artifactory) via its webhooks and automatically trigger pipelines. This expands automated triggers beyond built-in resources like pipelines, containers, builds, and packages, allowing you to integrate pipeline automation with any external service.
+Webhook trigger support in YAML pipelines lets you subscribe to events from any external service (such as GitHub, GitHub Enterprise, Nexus, or Artifactory) via its webhooks and automatically trigger pipelines. This feature expands automated triggers beyond built-in resources like pipelines, containers, builds, and packages. You can integrate pipeline automation with any external service.
 
-To use it, define a webhooks resource in your YAML pipeline and point it to an Incoming Webhook service connection that subscribes to the event. You can add filters against the JSON payload to fine-tune when each pipeline runs, and access the payload values as variables in your jobs.
+To use this feature, define a webhooks resource in your YAML pipeline and point it to an Incoming Webhook service connection that subscribes to the event. You can add filters against the JSON payload to fine-tune when each pipeline runs, and access the payload values as variables in your jobs.
 
 ```yml
 resources:
