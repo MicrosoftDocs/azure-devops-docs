@@ -210,6 +210,7 @@ There's no built-in migration tool for work items from Azure Boards to GitHub Is
 - **Azure DevOps to GitHub Issues migrator** — open-source tools on GitHub that convert work items to issues, preserving titles, descriptions, and labels.
 - **CSV export/import** — export work items from Azure Boards as CSV, then use the GitHub CLI or API to create issues.
 - **REST API scripting** — use the [Azure DevOps Work Items REST API](/rest/api/azure/devops/wit/work-items/get-work-item) and [GitHub Issues REST API](https://docs.github.com/rest/issues/issues#create-an-issue) to build a custom migration script.
+- **Third-party migration tools** — Consider [third-party migration solutions](https://marketplace.visualstudio.com/items?itemName=vs-publisher-1455028.OMM) that help preserve custom fields, attachments, links, and work item history. 
 
 ### Export work items with the Azure DevOps CLI
 
