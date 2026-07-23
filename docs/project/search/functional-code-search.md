@@ -180,5 +180,6 @@ You can use APIs to extend or supplement the capabilities listed in this article
 ## Related articles
 
 * [Get started with Search](get-started-search.md)
+* [Search commits](functional-commit-search.md)
 * [Search artifacts and packages](functional-package-search.md)
 * [Search work items](functional-work-item-search.md)

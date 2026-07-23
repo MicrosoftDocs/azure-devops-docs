@@ -84,6 +84,8 @@ You can also search for a commit using its Commit ID. You can search for all com
 
 ![Commit search page](media/commit-history/13-SearchCommit.png)
 
+To find a commit when you don't know its ID, use commit search to search across repositories by the text in the commit message (title and description). You can filter the results by **Project**, **Repository**, **Author**, and **Branch**, and sort them by **Commit time** or **Relevance**. For more information, see [Functional commit search](../../project/search/functional-commit-search.md).
+
 ## Commit for file renames
 
 In case a file or folder is renamed, you'll see all commits until the file or folder got renamed. You'll also see a link suggesting **Show rename history**. 

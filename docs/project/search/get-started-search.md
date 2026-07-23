@@ -16,12 +16,13 @@ monikerRange: '<= azure-devops'
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
-You can quickly find work items, code files, wiki pages, or packages based on a keyword, wildcards, and other supported search filters with the search function.
+You can quickly find work items, code files, commits, wiki pages, or packages based on a keyword, wildcards, and other supported search filters with the search function.
 
 For more information, see the following links:
 
 - [Functional code search](functional-code-search.md)
 - [Code Search extension](https://marketplace.visualstudio.com/items?itemName=ms.vss-code-search)
+- [Functional commit search](functional-commit-search.md)
 - [Functional work item search](functional-work-item-search.md)
 - [Functional package search](functional-package-search.md)
 
@@ -292,6 +293,7 @@ Search has the following limitation: If you do a disaster recovery (DR) operatio
 
 ## Related articles
 
+- [Functional commit search](functional-commit-search.md)
 - [Functional work item search](functional-work-item-search.md)
 - [Functional artifact or package search](functional-package-search.md)
 - [Code search blog posts](https://devblogs.microsoft.com/search?query=Code+search&blog=%2Fdevops%2F)
