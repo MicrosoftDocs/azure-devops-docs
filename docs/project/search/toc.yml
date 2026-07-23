@@ -2,6 +2,8 @@
   href: get-started-search.md
 - name: Functional code search
   href: functional-code-search.md
+- name: Functional commit search
+  href: functional-commit-search.md
 - name: Functional work item search
   href: functional-work-item-search.md
 - name: Functional package search

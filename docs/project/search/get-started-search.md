@@ -15,7 +15,7 @@ monikerRange: '<= azure-devops'
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
-Azure DevOps provides powerful search capabilities that help you quickly find work items, code files, wiki pages, and packages across your projects and organization. Use keywords, wildcards, and advanced search filters to locate exactly what you need.
+Azure DevOps provides powerful search capabilities that help you quickly find work items, code files, commits, wiki pages, and packages across your projects and organization. Use keywords, wildcards, and advanced search filters to locate exactly what you need.
 
 [!INCLUDE [ai-assistance-callout](../../includes/ai-assistance-callout.md)]
 
@@ -23,6 +23,7 @@ Azure DevOps provides powerful search capabilities that help you quickly find wo
 
 - **Work items**: Find bugs, user stories, tasks, and other work items.
 - **Code**: Search through source code files and repositories.  
+- **Commits**: Find Git commits by their message, and filter by project, repository, author, and branch.
 - **Wiki pages**: Locate information in project and published wikis.
 - **Packages**: Find artifacts in Azure Artifacts feeds.
 
@@ -30,6 +31,7 @@ For detailed information about specific search types, see:
 
 - [Functional code search](functional-code-search.md)
 - [Code Search extension](https://marketplace.visualstudio.com/items?itemName=ms.vss-code-search)
+- [Functional commit search](functional-commit-search.md)
 - [Functional work item search](functional-work-item-search.md)
 - [Functional package search](functional-package-search.md)
 
@@ -154,6 +156,7 @@ Enhance your search capabilities with these marketplace extensions:
 
 ## Related content
 
+- [Functional commit search](functional-commit-search.md)
 - [Functional work item search](functional-work-item-search.md)
 - [Functional artifact or package search](functional-package-search.md)
 - [Code search blog posts](https://devblogs.microsoft.com/search?query=Code+search&blog=%2Fdevops%2F)
