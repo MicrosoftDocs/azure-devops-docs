@@ -1,7 +1,7 @@
 ---
 title: Install NuGet packages with Visual Studio
 description: Learn how to use Visual Studio to install NuGet packages from Azure Artifacts feeds and NuGet.org.
-ms.service: azure-devops-artifacts
+ms.service: azure-artifacts
 ms.custom: engagement-fy23
 ms.topic: how-to
 ms.date: 03/04/2025

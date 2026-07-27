@@ -1,7 +1,7 @@
 ---
 title: Publish and download NuGet packages with Azure Artifacts
 description: Learn how to use Azure Artifacts to publish and download NuGet packages.
-ms.service: azure-devops-artifacts
+ms.service: azure-artifacts
 ms.topic: quickstart
 ms.author: rabououn
 author: ramiMSFT

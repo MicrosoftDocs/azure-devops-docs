@@ -1,5 +1,5 @@
 ---
-ms.subservice: azure-devops-ecosystem
+ms.subservice: azure-devops-developer
 title: Extension Manifest Reference| Extensions for Azure DevOps
 description: How to create a manifest for your extension to Azure DevOps
 ms.topic: reference

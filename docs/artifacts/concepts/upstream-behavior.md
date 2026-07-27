@@ -1,7 +1,7 @@
 ---
 title: Safeguard against malicious public packages
 description: Learn how to control access to public registries and protect your environment from malicious public packages.
-ms.service: azure-devops-artifacts
+ms.service: azure-artifacts
 ms.topic: overview
 ms.date: 10/21/2025
 ms.author: rabououn

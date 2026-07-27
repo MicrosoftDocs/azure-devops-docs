@@ -1,5 +1,5 @@
 ---
-ms.subservice: azure-devops-ecosystem
+ms.subservice: azure-devops-developer
 title: Contribution model
 titleSuffix: Azure DevOps
 description: Understand the contribution model for Azure DevOps extensions, including contribution types, contributions, and targeting.

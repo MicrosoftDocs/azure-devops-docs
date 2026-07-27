@@ -1,6 +1,6 @@
 ---
 ms.topic: include
-ms.service: azure-devops-artifacts
+ms.service: azure-artifacts
 ms.manager: wiwagn
 ms.author: rabououn
 author: ramiMSFT

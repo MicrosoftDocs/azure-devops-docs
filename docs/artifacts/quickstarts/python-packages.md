@@ -1,7 +1,7 @@
 ---
 title: Publish and download Python packages with Azure Artifacts
 description: Learn how to configure your project to publish and download Python packages with Azure Artifacts.
-ms.service: azure-devops-artifacts
+ms.service: azure-artifacts
 ms.topic: quickstart
 ms.date: 07/02/2025
 monikerRange: "<=azure-devops"

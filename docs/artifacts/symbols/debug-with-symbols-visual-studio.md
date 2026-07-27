@@ -1,7 +1,7 @@
 ---
 title: Debug with symbols in Visual Studio
 description: Use symbols to debug your application with Visual Studio.
-ms.service: azure-devops-artifacts
+ms.service: azure-artifacts
 ms.topic: how-to
 ms.date: 07/20/2021
 monikerRange: "<=azure-devops"

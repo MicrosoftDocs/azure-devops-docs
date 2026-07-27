@@ -2,7 +2,7 @@
 title: Migrate from WIT Client OM to REST APIs
 titleSuffix: Azure DevOps Services
 description: Step-by-step migration guide for upgrading from legacy WIT Client OM to modern REST-based .NET client libraries with secure authentication.
-ms.subservice: azure-devops-ecosystem
+ms.subservice: azure-devops-developer
 ai-usage: ai-assisted
 ms.custom: pat-reduction
 ms.topic: overview

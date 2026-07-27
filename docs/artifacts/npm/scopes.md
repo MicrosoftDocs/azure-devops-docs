@@ -1,7 +1,7 @@
 ---
 title: Use npm scopes
 description: Learn how to use npm scopes to manage scoped packages in Azure Artifacts.
-ms.service: azure-devops-artifacts
+ms.service: azure-artifacts
 ms.topic: how-to
 ms.date: 06/22/2026
 monikerRange: "<=azure-devops"

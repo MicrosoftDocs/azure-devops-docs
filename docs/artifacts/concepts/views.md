@@ -1,7 +1,7 @@
 ---
 title: What are feed views?
 description: Learn what Azure Artifacts feed views are, and how it's useful for package release.
-ms.service: azure-devops-artifacts
+ms.service: azure-artifacts
 ms.topic: overview
 ms.date: 12/09/2025
 monikerRange: "<=azure-devops"

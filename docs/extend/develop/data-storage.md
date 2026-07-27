@@ -1,5 +1,5 @@
 ---
-ms.subservice: azure-devops-ecosystem
+ms.subservice: azure-devops-developer
 ms.custom: UpdateFrequency3
 title: Data and Setting Storage | Extensions for Azure DevOps
 description: DevOps extensions can store user preferences and complex data structures just like other project data. Use REST APIs or a Microsoft client service to do so.

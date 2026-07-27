@@ -1,5 +1,5 @@
 ---
-ms.subservice: azure-devops-ecosystem
+ms.subservice: azure-devops-developer
 title: Samples overview | Extensions for Azure DevOps
 description: Azure DevOps extension samples help you quickly build custom features. Explore real-world examples, source code, and start developing your own extension today.
 ms.custom: engagement-fy23, UpdateFrequency3

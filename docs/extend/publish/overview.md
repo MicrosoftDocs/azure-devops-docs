@@ -1,5 +1,5 @@
 ---
-ms.subservice: azure-devops-ecosystem
+ms.subservice: azure-devops-developer
 title: Package and publish extensions
 titleSuffix: Azure DevOps
 description: Package, publish, share, and manage extensions for Azure DevOps in the Visual Studio Marketplace.

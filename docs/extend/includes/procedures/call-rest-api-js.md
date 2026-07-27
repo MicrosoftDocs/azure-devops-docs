@@ -3,7 +3,7 @@ ms.topic: include
 ms.author: chcomley
 author: chcomley
 ms.date: 04/03/2026
-ms.subservice: azure-devops-ecosystem
+ms.subservice: azure-devops-developer
 ---
 
 1. Get the REST client. In this example, use the work item tracking client.

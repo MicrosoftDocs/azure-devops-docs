@@ -138,6 +138,65 @@ If any of these steps are missing, access fails. Treat this issue the same as a 
 
 For a full list of error codes, see [Microsoft Entra authentication and authorization error codes](/entra/identity-platform/reference-error-codes).
 
+## Entra issues
+
+### Can't find the Azure DevOps MCP enterprise application in the tenant
+
+You can't find the **Azure DevOps MCP** enterprise application in **Microsoft Entra ID** > **Enterprise applications**, and remote MCP Server authentication fails.
+
+**Resolution:**
+
+The following procedure creates the missing service principal for Azure DevOps MCP in your tenant.
+
+> [!NOTE]
+> This procedure only creates the Azure DevOps MCP service principal. It doesn’t enable unsupported clients, expose custom MCP resource audiences, or add delegated scopes that aren’t available in your tenant.
+
+- Who needs to run this: A user with **Application Administrator**, **Cloud Application Administrator**, or **Global Administrator** permissions in your tenant.
+- Prerequisite: [Install Azure CLI](/cli/azure/install-azure-cli).
+- App ID: `2a72489c-aab2-4b65-b93a-a91edccf33b8`.
+
+Run each step one at a time and keep the command output.
+
+1. Step 0 - Sign in to your tenant (replace `<yourTenantId>`):
+
+   ```azurecli
+   az login --tenant <yourTenantId> --allow-no-subscriptions
+   ```
+
+   ```azurecli
+   az account show --query "{tenant:tenantId, user:user.name}" -o table
+   ```
+
+   Confirm the tenant value matches your tenant ID.
+
+1. Step 1 - Confirm the app is currently missing:
+
+   ```azurecli
+   az rest --method get --url "https://graph.microsoft.com/v1.0/servicePrincipals(appId='2a72489c-aab2-4b65-b93a-a91edccf33b8')"
+   ```
+
+   Expected result: `404` with `Request_ResourceNotFound`. This result confirms the issue.
+
+1. Step 2 - Create the app in your tenant:
+
+   ```azurecli
+   az ad sp create --id 2a72489c-aab2-4b65-b93a-a91edccf33b8
+   ```
+
+1. Step 3 - Verify the app now exists:
+
+   ```azurecli
+   az rest --method get --url "https://graph.microsoft.com/v1.0/servicePrincipals(appId='2a72489c-aab2-4b65-b93a-a91edccf33b8')"
+   ```
+
+   Expected result: `200` response containing `"displayName": "Azure DevOps MCP"` and `"accountEnabled": true`.
+
+1. Step 4 - Confirm in the portal:
+
+   Go to **portal.azure.com** > **Microsoft Entra ID** > **Enterprise applications**, set **Application type** to **All applications**, and search for **Azure DevOps MCP** or `2a72489c-aab2-4b65-b93a-a91edccf33b8`.
+
+The app should now appear, and you can manage its permissions.
+
 ## Server configuration issues
 
 ### Incorrect `mcp.json` configuration

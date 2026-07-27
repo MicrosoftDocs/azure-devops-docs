@@ -1,7 +1,7 @@
 ---
 title: .NET Client Library Samples for Azure DevOps
 description: Learn how to extend and integrate with Azure DevOps by using C# samples with modern authentication and best practices.
-ms.subservice: azure-devops-ecosystem
+ms.subservice: azure-devops-developer
 ms.custom: devx-track-dotnet, pat-reduction, copilot-scenario-highlight
 ai-usage: ai-assisted
 ms.topic: sample

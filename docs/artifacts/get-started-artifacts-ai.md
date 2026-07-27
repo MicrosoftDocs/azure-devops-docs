@@ -1,7 +1,7 @@
 ---
 title: Publish your first package to an Azure Artifacts feed - Copilot
 description: Learn how to publish your first package to an Azure Artifacts feed.
-ms.service: azure-devops-artifacts
+ms.service: azure-artifacts
 ms.topic: quickstart
 ms.author: rabououn
 author: ramiMSFT

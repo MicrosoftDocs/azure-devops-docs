@@ -1,7 +1,7 @@
 ---
 title: REST API Versioning for Azure DevOps
 description: Learn about the importance of versioning in REST APIs and explore guidance on implementing versioning in your projects in Azure DevOps.
-ms.subservice: azure-devops-ecosystem
+ms.subservice: azure-devops-developer
 ms.topic: concept-article
 ms.custom: engagement-fy23
 monikerRange: '<= azure-devops'

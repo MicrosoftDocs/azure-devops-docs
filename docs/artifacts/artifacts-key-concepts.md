@@ -1,7 +1,7 @@
 ---
 title: Azure Artifacts key concepts 
 description: Understand the key concepts in Azure Artifacts.
-ms.service: azure-devops-artifacts
+ms.service: azure-artifacts
 ms.topic: concept-article
 ms.date: 02/12/2025
 monikerRange: "<=azure-devops"

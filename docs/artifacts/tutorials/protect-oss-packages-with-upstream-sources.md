@@ -1,7 +1,7 @@
 ---
 title: How to restore packages from upstream sources in your Azure Artifacts feed
 description: Learn how to consume packages from public registries with upstream sources in Azure Artifacts.
-ms.service: azure-devops-artifacts
+ms.service: azure-artifacts
 ms.date: 06/24/2025
 monikerRange: "<=azure-devops"
 ms.custom: sfi-image-nochange

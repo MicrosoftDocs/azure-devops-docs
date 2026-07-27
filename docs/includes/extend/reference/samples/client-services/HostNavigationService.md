@@ -1,5 +1,5 @@
 ---
-ms.subservice: azure-devops-ecosystem
+ms.subservice: azure-devops-developer
 title: Extension host navigation service example
 description: A sample that shows how to use a host navigation service with an Azure DevOps Services extension
 ms.author: chcomley

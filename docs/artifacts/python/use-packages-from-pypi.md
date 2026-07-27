@@ -1,7 +1,7 @@
 ---
 title: Consume packages from PyPI
 description: Learn how to consume packages from Python package index (PyPI) with upstream sources in Azure Artifacts.
-ms.service: azure-devops-artifacts
+ms.service: azure-artifacts
 ms.custom: devx-track-python
 ms.date: 03/16/2026
 monikerRange: "<=azure-devops"

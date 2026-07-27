@@ -1,7 +1,7 @@
 ---
 title: Use packages from Google Maven Repository upstream source
 description: Learn how to consume packages from Google Maven Repository upstream source in Azure Artifacts feeds.
-ms.service: azure-devops-artifacts
+ms.service: azure-artifacts
 ms.topic: tutorial
 ms.date: 04/12/2026
 monikerRange: "<=azure-devops"

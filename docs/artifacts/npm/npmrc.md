@@ -1,7 +1,7 @@
 ---
 title: Connect to an Azure Artifacts feed - npm
 description: Learn how to set up your npm project and connect to an Azure Artifacts feed.
-ms.service: azure-devops-artifacts
+ms.service: azure-artifacts
 ms.custom: engagement-fy23
 ms.topic: how-to
 ms.date: 07/08/2025

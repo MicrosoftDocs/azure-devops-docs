@@ -2,7 +2,7 @@
 title: Rate and usage limits 
 titleSuffix: Azure DevOps 
 description: Description of limits on rates and the resources used in Azure DevOps. 
-ms.subservice: azure-devops-ecosystem
+ms.subservice: azure-devops-developer
 ms.topic: overview
 ms.author: chcomley
 author: chcomley

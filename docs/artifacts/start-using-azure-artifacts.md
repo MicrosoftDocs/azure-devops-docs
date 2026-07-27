@@ -1,7 +1,7 @@
 ---
 title: What is Azure Artifacts?
 description: Learn how to get started with Azure Artifacts.
-ms.service: azure-devops-artifacts
+ms.service: azure-artifacts
 ms.topic: overview
 ms.author: rabououn
 author: ramiMSFT

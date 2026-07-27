@@ -1,7 +1,7 @@
 ---
 title: Consume packages from the NuGet Gallery
 description: Learn how to consume packages from nuget.org with Azure Artifacts upstream sources.
-ms.service: azure-devops-artifacts
+ms.service: azure-artifacts
 ms.topic: how-to
 ms.date: 09/5/2025
 monikerRange: "<=azure-devops"

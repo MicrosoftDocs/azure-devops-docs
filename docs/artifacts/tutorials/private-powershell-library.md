@@ -1,7 +1,7 @@
 ---
 title: Use an Azure Artifacts feed as a private PowerShell repository
 description: Learn how to use an Azure Artifacts feed as a private PowerShell repository
-ms.service: azure-devops-artifacts
+ms.service: azure-artifacts
 ms.author: rabououn
 author: ramiMSFT
 ms.date: 07/03/2024

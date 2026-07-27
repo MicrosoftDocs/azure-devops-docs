@@ -1,7 +1,7 @@
 ---
 title: Publish Universal Packages in Azure Artifacts
 description: Learn how to publish Universal Packages to an Azure Artifacts feed.
-ms.service: azure-devops-artifacts
+ms.service: azure-artifacts
 ms.custom: devx-track-azurecli
 ms.topic: how-to
 ms.date: 01/16/2025

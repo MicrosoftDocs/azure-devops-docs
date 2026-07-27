@@ -1,7 +1,7 @@
 ---
 title: Jitpack upstream source
 description: How to add JitPack upstream source
-ms.service: azure-devops-artifacts
+ms.service: azure-artifacts
 ms.topic: how-to
 ms.date: 03/22/2022
 monikerRange: "<=azure-devops"

@@ -1,6 +1,6 @@
 ---
 ms.topic: include
-ms.service: azure-devops-artifacts
+ms.service: azure-artifacts
 ms.author: rabououn
 author: ramiMSFT
 ms.date: 05/15/2024

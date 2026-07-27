@@ -1,7 +1,7 @@
 ---
 title: Project-scoped vs organization-scoped feeds
 description: Learn the differences between project-scoped and organization-scoped feeds in Azure Artifacts.
-ms.service: azure-devops-artifacts
+ms.service: azure-artifacts
 ms.topic: how-to
 ms.date: 10/24/2024
 monikerRange: "<=azure-devops"

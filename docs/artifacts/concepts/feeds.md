@@ -2,7 +2,7 @@
 title: What are Azure Artifacts feeds?
 description: Learn what Azure Artifacts feeds are, explore the different feed types and how to manage them in Azure Artifacts.  
 ms.custom: peer-review-program
-ms.service: azure-devops-artifacts
+ms.service: azure-artifacts
 ms.topic: overview
 ms.date: 12/02/2025
 monikerRange: "<=azure-devops"

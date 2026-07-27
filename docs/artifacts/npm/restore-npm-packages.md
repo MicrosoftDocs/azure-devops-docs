@@ -1,7 +1,7 @@
 ---
 title: Restore npm packages from the command line
 description: Learn how to authenticate with your Azure Artifacts feed and restore npm packages from the command line.
-ms.service: azure-devops-artifacts
+ms.service: azure-artifacts
 ms.topic: tutorial
 ms.date: 02/21/2025
 monikerRange: "<=azure-devops"

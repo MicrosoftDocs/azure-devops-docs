@@ -2,7 +2,7 @@
 title: Pipeline decorator context
 description: Contextual data available to pipeline decorators
 ms.topic: reference
-ms.subservice: azure-devops-ecosystem
+ms.subservice: azure-devops-developer
 ms.custom: UpdateFrequency3
 ms.author: chcomley
 author: chcomley

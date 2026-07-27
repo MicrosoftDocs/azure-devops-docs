@@ -1,7 +1,7 @@
 ---
 title: Set up an internal feed as an upstream source
 description: Learn how to set up an internal feed as an upstream source in Azure Artifacts.
-ms.service: azure-devops-artifacts
+ms.service: azure-artifacts
 ms.topic: tutorial
 ms.date: 02/26/2026
 monikerRange: "<=azure-devops"

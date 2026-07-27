@@ -2,7 +2,7 @@
 title: Author a pipeline decorator
 description: Inject steps before and after every pipeline job.
 ms.topic: reference
-ms.subservice: azure-devops-ecosystem
+ms.subservice: azure-devops-developer
 ms.custom: UpdateFrequency3
 ms.author: chcomley
 author: chcomley

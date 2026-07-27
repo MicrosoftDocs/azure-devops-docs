@@ -1,7 +1,7 @@
 ---
 title: Restore NuGet packages with dotnet CLI
 description: Learn how to connect to a feed and use the dotnet CLI to restore NuGet packages.
-ms.service: azure-devops-artifacts
+ms.service: azure-artifacts
 ms.topic: tutorial
 ms.date: 01/13/2025
 monikerRange: "<=azure-devops"

@@ -1,7 +1,7 @@
 ---
 title: Publish npm packages from the command line
 description: Learn how to connect to your feed and publish npm packages from the command line.
-ms.service: azure-devops-artifacts
+ms.service: azure-artifacts
 ms.custom: engagement-fy23
 ms.topic: tutorial
 ms.date: 02/21/2025

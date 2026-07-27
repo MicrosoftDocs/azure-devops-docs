@@ -1,7 +1,7 @@
 ---
 title: Restore Cargo packages (CLI)
 description: Learn how to connect to your feed and restore Cargo packages using the command line.
-ms.service: azure-devops-artifacts
+ms.service: azure-artifacts
 ms.topic: how-to
 ms.date: 08/01/2025
 monikerRange: '>= azure-devops-2022'

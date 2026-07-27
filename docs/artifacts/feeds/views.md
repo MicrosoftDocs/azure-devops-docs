@@ -1,7 +1,7 @@
 ---
 title: Promote packages and manage feed views 
 description: Learn how to promote packages to a specific view and manage feed views in Azure Artifacts.
-ms.service: azure-devops-artifacts
+ms.service: azure-artifacts
 ms.topic: how-to
 ms.date: 01/22/2026
 monikerRange: "<=azure-devops"

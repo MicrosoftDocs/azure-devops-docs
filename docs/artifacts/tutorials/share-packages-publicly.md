@@ -1,7 +1,7 @@
 ---
 title: Share packages publicly with public feeds
 description: Learn how to use Azure Artifacts public feeds to share packages publicly.
-ms.service: azure-devops-artifacts
+ms.service: azure-artifacts
 ms.date: 07/30/2025
 monikerRange: 'azure-devops'
 ms.topic: how-to

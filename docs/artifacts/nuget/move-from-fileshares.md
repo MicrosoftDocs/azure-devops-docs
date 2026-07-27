@@ -1,7 +1,7 @@
 ---
 title: Migrate from file shares
 description: How to migrate from file shares to Azure Artifacts
-ms.service: azure-devops-artifacts
+ms.service: azure-artifacts
 ms.topic: upgrade-and-migration-article
 ms.date: 06/16/2023
 monikerRange: "<=azure-devops"

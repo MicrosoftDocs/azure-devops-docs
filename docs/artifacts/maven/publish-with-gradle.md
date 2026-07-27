@@ -1,7 +1,7 @@
 ---
 title: Publish artifacts with Gradle
 description: Learn how to connect to a feed and publish your packages with Gradle.
-ms.service: azure-devops-artifacts
+ms.service: azure-artifacts
 ms.topic: how-to
 ms.date: 05/12/2025
 ms.author: rabououn

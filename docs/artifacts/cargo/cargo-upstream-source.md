@@ -1,7 +1,7 @@
 ---
 title: Consume Cargo packages from Crates.io
 description: Learn how to consume Crates from Crates.io with Azure Artifacts.
-ms.service: azure-devops-artifacts
+ms.service: azure-artifacts
 ms.author: rabououn
 author: ramiMSFT
 ms.topic: quickstart

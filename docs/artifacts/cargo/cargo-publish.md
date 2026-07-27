@@ -1,7 +1,7 @@
 ---
 title: Publish Cargo packages from the command line
 description: Learn how to connect to your feed and publish your Cargo packages from the command line.
-ms.service: azure-devops-artifacts
+ms.service: azure-artifacts
 ms.topic: how-to
 ms.date: 03/25/2025
 monikerRange: '>= azure-devops-2022'

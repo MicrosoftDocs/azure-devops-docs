@@ -1,7 +1,7 @@
 ---
 title: Universal Packages upstream sources
 description: Learn how to set up internal and external feeds as Universal Packages upstream sources in Azure Artifacts.
-ms.service: azure-devops-artifacts
+ms.service: azure-artifacts
 ms.topic: how-to
 ms.date: 03/09/2026
 monikerRange: 'azure-devops'

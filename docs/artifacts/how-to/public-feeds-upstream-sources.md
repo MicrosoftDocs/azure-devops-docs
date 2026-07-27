@@ -1,7 +1,7 @@
 ---
 title: Use upstream sources in a public feed
 description: Learn how to enable and add upstream sources to a public feed in Azure Artifacts.
-ms.service: azure-devops-artifacts
+ms.service: azure-artifacts
 ms.topic: tutorial
 ms.date: 10/31/2025
 monikerRange: 'azure-devops'

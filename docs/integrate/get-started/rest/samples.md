@@ -2,7 +2,7 @@
 title: REST API samples for Azure DevOps
 description: Learn REST API basics with practical samples for Azure DevOps Services, including authentication patterns and common operations.
 ai-usage: ai-assisted
-ms.subservice: azure-devops-ecosystem
+ms.subservice: azure-devops-developer
 ms.topic: sample
 ms.custom: devx-track-dotnet, pat-reduction, copilot-scenario-highlight
 monikerRange: '<= azure-devops'

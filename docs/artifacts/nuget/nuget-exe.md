@@ -1,7 +1,7 @@
 ---
 title: Connect to Azure Artifacts feeds with NuGet.exe
 description: Learn how to authenticate to Azure Artifacts feeds with NuGet.exe.
-ms.service: azure-devops-artifacts
+ms.service: azure-artifacts
 ms.topic: how-to
 ms.custom: pat-reduction
 ms.date: 07/10/2026

@@ -1,7 +1,7 @@
 ---
 title: Package notifications
 description: Learn how to follow a package and get notified every time a new version is published with Azure Artifacts.
-ms.service: azure-devops-artifacts
+ms.service: azure-artifacts
 ms.topic: how-to
 ms.date: 01/08/2025
 monikerRange: "<=azure-devops"

@@ -1,7 +1,7 @@
 ---
 title: Azure Artifacts best practices
 description: Learn best practices for publishing, consuming, and managing packages with Azure Artifacts.
-ms.service: azure-devops-artifacts
+ms.service: azure-artifacts
 ms.topic: best-practice
 ms.date: 03/11/2025
 ms.custom: engagement-fy23

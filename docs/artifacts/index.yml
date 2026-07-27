@@ -6,7 +6,7 @@ summary: Create, host, and share NuGet, npm, Maven, Python, Cargo, and Universal
 metadata:
   title: Azure Artifacts documentation
   description: Create, host, and share NuGet, npm, Maven, Python, Cargo, and Universal Packages with Azure Artifacts. Learn how to manage feeds, publish and restore packages, configure upstream sources, and support package workflows across teams and organizations.
-  ms.service: azure-devops-artifacts
+  ms.service: azure-artifacts
   ms.topic: landing-page 
   ms.author: rabououn
   author: ramiMSFT

@@ -1,7 +1,7 @@
 ---
 title: Manage permissions
 description: How to configure permissions for Azure Artifacts, Azure Artifacts feeds, feed views, and pipelines access.
-ms.service: azure-devops-artifacts
+ms.service: azure-artifacts
 ms.topic: overview
 ms.date: 08/19/2025
 monikerRange: "<=azure-devops"

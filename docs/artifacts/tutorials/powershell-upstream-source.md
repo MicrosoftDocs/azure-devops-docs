@@ -1,7 +1,7 @@
 ---
 title: Use packages from PowerShell Gallery
 description: How to use the PowerShell Gallery as an upstream source
-ms.service: azure-devops-artifacts
+ms.service: azure-artifacts
 ms.author: rabououn
 author: ramiMSFT
 ms.topic: tutorial

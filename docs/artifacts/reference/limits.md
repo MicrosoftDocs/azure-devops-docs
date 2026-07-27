@@ -1,7 +1,7 @@
 ---
 title: Size and count limits
 description: Learn about the count and size limits for each package type in Azure Artifacts.
-ms.service: azure-devops-artifacts
+ms.service: azure-artifacts
 ms.topic: limits-and-quotas
 ms.date: 03/10/2026
 monikerRange: "<=azure-devops"

@@ -1,5 +1,5 @@
 ---
-ms.subservice: azure-devops-ecosystem
+ms.subservice: azure-devops-developer
 title: Authenticate and secure web extensions
 titleSuffix: Azure DevOps
 description: Call Azure DevOps REST APIs from your extension and authenticate requests to your backend service.

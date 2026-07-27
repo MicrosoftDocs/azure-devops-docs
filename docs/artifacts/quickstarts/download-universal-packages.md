@@ -1,7 +1,7 @@
 ---
 title: Download Universal Packages in Azure Artifacts
 description: Learn how to download Universal Packages from an Azure Artifacts feed.
-ms.service: azure-devops-artifacts
+ms.service: azure-artifacts
 ms.topic: how-to
 ms.date: 01/16/2025
 monikerRange: 'azure-devops'

@@ -1,7 +1,7 @@
 ---
 title: Construct a complete package graph
 description: Package graphs in Azure Artifacts
-ms.service: azure-devops-artifacts
+ms.service: azure-artifacts
 ms.topic: quickstart
 ms.reviewer: amullans
 monikerRange: "<=azure-devops"
