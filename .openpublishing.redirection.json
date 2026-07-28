@@ -6996,6 +6996,11 @@
     },
     {
       "source_path": "docs/test/how-long-to-keep-test-results.md",
+      "redirect_url": "/azure/devops/pipelines/policies/retention",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/test/how-long-to-keep-test-results.md",
       "redirect_url": "/previous-versions/azure/devops/test/how-long-to-keep-test-results",
       "redirect_document_id": false,
       "monikers": [

@@ -116,7 +116,7 @@ Responsible for configuring project-level resources, including:
 - [Area paths](../organizations/settings/set-area-paths.md) and [iteration paths](../organizations/settings/set-iteration-paths-sprints.md)  
 - [Project permissions and repository security](../organizations/security/permissions.md)  
 - [Build agents, pools, and service connections](../pipelines/get-started/what-is-azure-pipelines.md)  
-- [Test](../test/how-long-to-keep-test-results.md) and [release](../pipelines/policies/retention.md) retention policies  
+- [Test retention policies](../pipelines/policies/retention.md) and [release](../pipelines/policies/retention.md) retention policies
 ::: moniker-end  
 
   
