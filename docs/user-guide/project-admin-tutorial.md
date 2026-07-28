@@ -79,7 +79,7 @@ Set policies to help enforce code quality, compliance, and resource management a
 - **Branch policies** — Require reviewers, enforce successful builds, or block direct pushes to protected branches. See [Manage branch policies](../repos/git/branch-policies.md).
 - **TFVC check-in policies** — Enforce rules like code analysis or work item association before check-in. See [Add check-in policies](../repos/tfvc/add-check-policies.md).
 - **Pipeline retention policies** — Control how long to keep build and release runs, artifacts, and logs. See [Set retention policies](../pipelines/policies/retention.md).
-- **Test retention policies** — Set how long to keep automated and manual test results. See [Set test retention policies](../test/how-long-to-keep-test-results.md).
+- **Test retention policies** — Set how long to keep automated and manual test results. See [Set test retention policies](../pipelines/policies/retention.md).
  
 ## Configure and customize Azure Boards 
 

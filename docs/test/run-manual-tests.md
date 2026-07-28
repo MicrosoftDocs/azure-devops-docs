@@ -430,7 +430,7 @@ tcm run /publish /suiteid:167 /configid:9 /resultowner:"Jamal Hartnett" /results
 
 ### Q: How do I control how long I keep my test data?
 
-**A:** See [Set test retention policies](how-long-to-keep-test-results.md).
+**A:** See [Set test retention policies](../pipelines/policies/retention.md).
 
 ### Q: Can I run tests offline and then import the results?
 
