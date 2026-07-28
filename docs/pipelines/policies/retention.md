@@ -342,6 +342,6 @@ Classic releases retain pipelines that they consume automatically. If you're usi
 
 ## Related content
 
-- [Set test retention policies](../../test/how-long-to-keep-test-results.md)
+- [Test retention policies](../../pipelines/policies/retention.md)
 - [Delete test artifacts](../../boards/backlogs/delete-test-artifacts.md)
 - [Use tasks to increase run retention](../../pipelines/build/run-retention.md)

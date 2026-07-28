@@ -304,5 +304,5 @@ Here are common patterns for natural-language queries:
 ## Related content   
 
 - [Create a test plan](../../test/create-a-test-plan.md)
-- [Control how long to keep test results](../../test/how-long-to-keep-test-results.md) 
+- [Set test retention policies](../../pipelines/policies/retention.md)
 - [Set permissions and access for work tracking, Manage test artifacts](../../organizations/security/set-permissions-access-work-tracking.md#manage-test-artifacts)
