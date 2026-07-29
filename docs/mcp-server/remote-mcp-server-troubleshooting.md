@@ -200,7 +200,7 @@ Verify your `mcp.json` uses the correct format for the remote server:
 
 Don't mix remote and local configuration formats. Don't run both servers at the same time — choose one:
 
-- **Remote server** — Recommended for supported environments, including Visual Studio Code, Visual Studio, Microsoft Foundry, Microsoft Copilot Studio, and GitHub Copilot. No local installation required.
+- **Remote server** - Recommended for supported environments, including Visual Studio Code, Visual Studio, Microsoft Foundry, Microsoft Copilot Studio, and GitHub Copilot. No local installation required.
 - **Local server** — Use for non-Microsoft clients (Claude Desktop, Claude Code, Cursor, Codex) that don't support Microsoft Entra authentication.
 
 ### Toolset or tool filtering not working

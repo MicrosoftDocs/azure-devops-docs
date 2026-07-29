@@ -36,7 +36,7 @@ Use the local server for clients such as Claude Desktop, Claude Code, Cursor, an
 
 ### Prerequisites
 
-**System requirements:** [Node.js 20.0+](https://nodejs.org/) and an active [Azure DevOps organization](../organizations/accounts/create-organization.md)
+**System requirements:** [Node.js 20.0+](https://nodejs.org/) and an active [Azure DevOps organization](../organizations/accounts/create-organization.md).
 
 The Azure DevOps MCP Server integrates with various development environments and AI assistants. Choose your preferred environment for instructions. The prerequisites listed in the table are environment-specific requirements in addition to the system requirements previously listed.
 
