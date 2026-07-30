@@ -5,7 +5,7 @@ ms.service: azure-artifacts
 ms.topic: quickstart
 ms.author: rabououn
 author: ramiMSFT
-ms.date: 08/08/2025
+ms.date: 07/22/2026
 ms.update-cycle: 180-days
 ms.collection: ce-skilling-ai-copilot
 monikerRange: "<=azure-devops"
@@ -13,7 +13,7 @@ monikerRange: "<=azure-devops"
 
 # Publish your first package to an Azure Artifacts feed
 
-Azure Artifacts enables developers to efficiently manage all their dependencies from a single feed. Feeds in Azure Artifacts serve as organizational repositories for storing, managing, and sharing packages whether within a team, across organizations, or publicly on the internet. Azure Artifacts supports a wide range of package types, including NuGet, npm, Python, Maven, Cargo, and Universal Packages.
+Azure Artifacts enables developers to efficiently manage all their dependencies from a single feed. Feeds in Azure Artifacts serve as organizational repositories for storing, managing, and sharing packages within a team, across organizations, or, for existing public projects, publicly on the internet. Azure Artifacts supports a wide range of package types, including NuGet, npm, Python, Maven, Cargo, and Universal Packages.
 
 This article walks you through publishing your first NuGet package to an Azure Artifacts feed. Optionally, you can follow the instructions to use GitHub Copilot to help set up your project and prepare your package for publishing.
 

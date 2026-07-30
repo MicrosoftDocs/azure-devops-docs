@@ -3,7 +3,7 @@ title: What are feed views?
 description: Learn what Azure Artifacts feed views are, and how it's useful for package release.
 ms.service: azure-artifacts
 ms.topic: overview
-ms.date: 12/09/2025
+ms.date: 07/22/2026
 monikerRange: "<=azure-devops"
 "recommendations": "true"
 ---
@@ -13,6 +13,9 @@ monikerRange: "<=azure-devops"
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 Feed views allow developers to share a specific subset of package versions with consumers. This is useful when you want to provide access to packages that have been tested and validated, while withholding those still under development or that don’t meet your quality standards.
+
+> [!IMPORTANT]
+> Public feeds depend on public projects. Starting in 2027, existing public projects will automatically convert to private. When that happens, public feeds will no longer be publicly accessible because they inherit the visibility of the hosting project. For more information, see [Public projects retirement](../../organizations/projects/public-projects-retirement.md).
 
 ## Default view
 
@@ -37,7 +40,7 @@ To allow other Azure Artifacts feeds to use your feed as an upstream source, you
 If you choose Microsoft Entra ID, all people in your organization will be able to access your feed, and all feeds in your organization and other organizations associated with the same Microsoft Entra tenant will be able to upstream to your feed.
 
 > [!NOTE]
-> All feed views in a public feed are accessible to everyone on the internet.
+> All feed views in a public feed are accessible to everyone on the internet while the hosting project remains public. Starting in 2027, existing public projects will automatically convert to private, and public feeds will no longer be publicly accessible.
 
 ## Release packages with feed views
 

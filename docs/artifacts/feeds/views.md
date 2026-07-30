@@ -3,7 +3,7 @@ title: Promote packages and manage feed views
 description: Learn how to promote packages to a specific view and manage feed views in Azure Artifacts.
 ms.service: azure-artifacts
 ms.topic: how-to
-ms.date: 01/22/2026
+ms.date: 07/22/2026
 monikerRange: "<=azure-devops"
 ---
  
@@ -16,6 +16,10 @@ Feed views enable developers to control package visibility by sharing some packa
 By default, Azure Artifacts includes three views: *@Local*, *@Prerelease*, and *@Release*. The *@Local* view is the default and contains all published packages, along with packages saved from upstream sources. All views support NuGet, npm, Maven, Python, Cargo, and Universal Packages.
 
 You can change the default view in **Feed Settings** > **Views**. However, changing the default view doesn’t allow direct publishing to that view. Packages can only be published to the base feed, where they're available in the *@Local* view.
+
+> [!IMPORTANT]
+> Public feeds depend on public projects. Starting in 2027, existing public projects will automatically convert to private. When that happens, public feeds will no longer be publicly accessible because they inherit the visibility of the hosting project. For more information, see [Public projects retirement](../../organizations/projects/public-projects-retirement.md).
+
 
 ## Prerequisites
 
@@ -253,7 +257,7 @@ $ curl -X PATCH "YOUR_ENDPOINT_URL" \
 ::: moniker range="azure-devops"
 
 > [!NOTE]
-> All feed views in a public project are publicly accessible and can be viewed by anyone on the internet.
+> All feed views in a public project are publicly accessible. Anyone on the internet can view them while the hosting project remains public. Starting in 2027, existing public projects will automatically convert to private, and public feeds will no longer be publicly accessible.
 
 ::: moniker-end
 

@@ -4,7 +4,7 @@ description: Learn how to authenticate to Azure Artifacts feeds with NuGet.exe.
 ms.service: azure-artifacts
 ms.topic: how-to
 ms.custom: pat-reduction
-ms.date: 07/10/2026
+ms.date: 07/22/2026
 monikerRange: "<=azure-devops"
 "recommendations": "true"
 ---
@@ -13,7 +13,7 @@ monikerRange: "<=azure-devops"
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
-Azure Artifacts helps you store and manage your packages from a single feed. You can share packages within your team, across organizations, or publicly.
+Azure Artifacts helps you store and manage your packages from a single feed. You can share packages within your team, across organizations, or, for existing public projects, publicly.
 This article shows you how to set up your project and authenticate to your Azure Artifacts feed by using NuGet.exe.
 
 ## Prerequisites

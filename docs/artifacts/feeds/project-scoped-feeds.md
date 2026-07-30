@@ -3,7 +3,7 @@ title: Project-scoped vs organization-scoped feeds
 description: Learn the differences between project-scoped and organization-scoped feeds in Azure Artifacts.
 ms.service: azure-artifacts
 ms.topic: how-to
-ms.date: 10/24/2024
+ms.date: 07/22/2026
 monikerRange: "<=azure-devops"
 "recommendations": "true"
 ---
@@ -12,9 +12,12 @@ monikerRange: "<=azure-devops"
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
-Azure Artifacts enables developers to manage their dependencies from a single feed. A feed acts as an organizational space to host various types of packages, giving you control over who can access it, whether it's team members within your organization or even public users.
+Azure Artifacts enables developers to manage their dependencies from a single feed. A feed acts as an organizational space to host various types of packages, giving you control over who can access it, whether it's team members within your organization or, for existing public projects, public users.
 
 When creating a new feed in Azure Artifacts, you can choose to scope it to either a project or your organization, depending on your scenario. However, Azure Artifacts recommends scoping new feeds to a project. In this article, you'll learn about the key differences between the two types of feeds.
+
+> [!IMPORTANT]
+> Public feeds depend on public projects. Starting in 2027, existing public projects will automatically convert to private. When that happens, public feeds will no longer be publicly accessible because they inherit the visibility of the hosting project. For more information, see [Public projects retirement](../../organizations/projects/public-projects-retirement.md).
 
 ## Create a feed
 
@@ -48,7 +51,7 @@ A project-scoped feed is scoped to a project instead of an organization. Here ar
 > To add a feed from a different organization as an upstream source, the target feed owner must share the target view with **All feeds and people in organizations associated with my Microsoft Entra tenant** by navigating to **Feed Settings** > **Views** > selecting the ellipsis button on the right for the specified view > then selecting **Edit**.
 
 > [!TIP]
-> If you want to add an extra layer of security to your project-scoped feed and protect your feed's visibility, you can disable the **Allow public projects** policy from the [Organization Policy Settings](../../organizations/accounts/change-application-access-policies.md).
+> If your organization still has existing public projects, you can add an extra layer of security by disabling the **Allow public projects** policy from the [Organization Policy Settings](../../organizations/accounts/change-application-access-policies.md). Starting in 2027, existing public projects will automatically convert to private, and public feeds will no longer be publicly accessible.
 
 ## Q&A
 

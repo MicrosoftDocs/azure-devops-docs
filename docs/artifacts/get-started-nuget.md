@@ -5,7 +5,7 @@ ms.service: azure-artifacts
 ms.topic: quickstart
 ms.author: rabououn
 author: ramiMSFT
-ms.date: 06/20/2025
+ms.date: 07/22/2026
 monikerRange: "<=azure-devops"
 "recommendations": "true"
 ---
@@ -14,7 +14,7 @@ monikerRange: "<=azure-devops"
 
 [!INCLUDE [version-lt-eq-azure-devops](../includes/version-lt-eq-azure-devops.md)]
 
-Azure Artifacts enables developers to publish and download NuGet packages from feeds or public registries. Feeds can be either private, allowing you to share packages with specific users, or public, making your packages accessible to anyone on the internet.
+Azure Artifacts enables developers to publish and download NuGet packages from feeds or public registries. Feeds can be either private, so you can share packages with specific users, or public in an existing public project, so your packages are accessible to anyone on the internet while the hosting project remains public.
 
 This article guides you through creating a feed, configuring your project, and publishing and downloading NuGet packages.
 
