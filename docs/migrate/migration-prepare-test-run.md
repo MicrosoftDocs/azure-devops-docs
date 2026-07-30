@@ -96,7 +96,8 @@ You don't need to repeat a test run migration if users don't automatically get u
 
 Restrict access to your Azure Storage account to only IPs from Azure DevOps Services. You can restrict access by only allowing connections from Azure DevOps Services IPs that are involved in the collection database migration process. The IPs that need access to your storage account depend on the region you're migrating into. 
 
-During a DACPAC migration, two parties access the storage container: the machine that you use to upload the DACPAC, for example by using AzCopy or Azure Storage Explorer, and the hosted Azure DevOps Data Import Service. If the storage account firewall is enabled, allow the public egress IP of the upload machine, in addition to the same-region limitation described in [Option 2: Use IP List](#option-2-use-ip-list).
+During a DACPAC migration, two parties access the storage container: the machine that you use to upload the DACPAC, for example by using AzCopy or Azure Storage Explorer, and the hosted Azure DevOps Data Import Service. If you enable the storage account firewall, you must allow the public egress IP of the upload machine, in addition to the same-region limitation described in [Option 2: Use IP List](#option-2-use-ip-list).
+
 
 The `Migrator validate` and `Migrator prepare` commands connect to your collection database and to Microsoft Entra ID. The `Migrator import` command connects to neither. It submits the prepared package to the hosted Data Import Service over HTTPS by using a personal access token (PAT), and it can run from any machine that has internet access. None of these commands read the storage container. Only the upload step does.
 
