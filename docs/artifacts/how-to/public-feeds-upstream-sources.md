@@ -3,7 +3,7 @@ title: Use upstream sources in a public feed
 description: Learn how to enable and add upstream sources to a public feed in Azure Artifacts.
 ms.service: azure-artifacts
 ms.topic: tutorial
-ms.date: 10/31/2025
+ms.date: 07/22/2026
 monikerRange: 'azure-devops'
 ---
 
@@ -11,23 +11,24 @@ monikerRange: 'azure-devops'
 
 [!INCLUDE [version-eq-azure-devops](../../includes/version-eq-azure-devops.md)]
 
-[!INCLUDE [public-projects-retirement](../../organizations/projects/includes/public-projects-retirement.md)]
-
 Azure Artifacts helps you to manage all your dependencies from a single feed. By setting up upstream sources, you can consume packages from feeds and public registries such as *NuGet.org*, and *npmjs.com*. This article walks you through setting up upstream sources in a public feed and restoring your packages.
+
+> [!IMPORTANT]
+> Public feeds depend on public projects. Starting in 2027, existing public projects will automatically convert to private. When that happens, public feeds are no longer publicly accessible because they inherit the visibility of the hosting project. Plan any continued public package distribution and upstream strategy before 2027. For more information, see [Public projects retirement](../../organizations/projects/public-projects-retirement.md).
 
 ## Prerequisites
 
 | **Product**        | **Requirements**                       |
 |--------------------|----------------------------------------|
-| **Azure DevOps**   | - An Azure DevOps [organization](../../organizations/accounts/create-organization.md).<br>- An Azure DevOps [project](../../organizations/projects/create-project.md).<br> - A [public project](../../organizations/projects/public-projects-retirement.md) (public projects are retired; this feature applies only to existing public projects). |
+| **Azure DevOps**   | - An Azure DevOps [organization](../../organizations/accounts/create-organization.md).<br>- An Azure DevOps [project](../../organizations/projects/create-project.md).<br> - An existing [public project](../../organizations/projects/public-projects-retirement.md). Public projects are retired, and this feature applies only to projects that remain public until the 2027 automatic conversion to private. |
 
 ## Create a public feed
 
 [!INCLUDE [allow-public-project-policy](../../organizations/projects/includes/allow-public-project-policy.md)]
 
-A public feed is a project-scoped feed in a public project. Public feeds inherit the visibility settings of the hosting project. If you already have a public feed you can skip to the next section, otherwise create one as follows:
+A public feed is a project-scoped feed in an existing public project. Public feeds inherit the visibility settings of the hosting project. If you already have a public feed, you can skip to the next section. Otherwise, if you still have an existing public project, create one as follows:
 
-1. Sign in to Azure DevOps, then navigate to your public project.
+1. Sign in to Azure DevOps, and then go to your existing public project.
 
 1. Select **Artifacts**, then select **Create Feed**.
 
@@ -44,7 +45,7 @@ A public feed is a project-scoped feed in a public project. Public feeds inherit
 
 Now that your public feed is set up, you can start adding upstream sources. For public feeds, you can only configure public registries or other public Azure Artifacts feeds as upstream sources. Follow these steps to add an upstream source:
 
-1. Sign in to Azure DevOps, then navigate to your public project.
+1. Sign in to Azure DevOps, and then go to your existing public project.
 
 1. Select **Artifacts**, then select your public feed from the dropdown menu.
 
