@@ -4,7 +4,7 @@ description: Learn what Azure Artifacts feeds are, explore the different feed ty
 ms.custom: peer-review-program
 ms.service: azure-artifacts
 ms.topic: overview
-ms.date: 12/02/2025
+ms.date: 07/22/2026
 monikerRange: "<=azure-devops"
 ---
 
@@ -19,15 +19,15 @@ Azure Artifacts feeds also support saving packages from public registries like *
 
 ## Feed types
 
-Azure Artifacts feeds can be scoped to an organization or a project. A feed can also be public if it's scoped to a public project:
+You can scope Azure Artifacts feeds to an organization or a project. A feed can also be public if it's scoped to an existing public project:
 
-**Project-scoped feeds**: Feeds scoped to a project. They’re only viewable within the hosting project, and only project-scoped feeds can be designated as [public feeds](#public-feeds) by switching the project's visibility to **Public** in Project Settings.
+**Project-scoped feeds**: Feeds scoped to a project. They're only viewable within the hosting project. Only project-scoped feeds hosted in an existing public project can function as [public feeds](#public-feeds).
 
 **Organization-scoped feeds**: Feeds scoped to an organization. They’re viewable from any project within the organization. Organization-scoped feeds **cannot** be converted into project-scoped feeds.
 
 **Private feeds**: Can be either project-scoped (private project) or organization-scoped. Packages in a private feed are available only to authenticated users with at least **Feed Reader** permission.
 
-**Public feeds**: Feeds scoped to a **public** project. Packages in a public feed are available to both authenticated and anonymous users.
+**Public feeds**: Feeds scoped to an existing **public** project. Both authenticated and anonymous users can access packages in a public feed while the hosting project remains public. Starting in 2027, existing public projects will automatically convert to private, and public feeds will no longer be publicly accessible.
 
 See [Feed scoped](../feeds/project-scoped-feeds.md) to learn more about the differences between project-scoped feeds and organization scoped feeds.
 
@@ -71,22 +71,24 @@ Public feeds allow you to share your packages publicly with anyone on the intern
 
 Public feeds are **project-scoped** and inherit the visibility settings of the hosting project. Here are some important key points:
 
-- Public feeds can only be created within public projects.
+- You can only create public feeds within existing public projects.
+
+- Starting in 2027, Azure DevOps will automatically convert existing public projects to private. When that change happens, associated public feeds will no longer be publicly accessible.
 
 - Public feeds are not intended to replace existing public registries such as NuGet.org, npmjs.com, etc..
 
 - Public users cannot download universal Packages, but all other package types are supported for public access.
 
 > [!NOTE]
-> All feed views in a public feed are accessible to everyone on the internet.
+> Everyone on the internet can access all feed views in a public feed while the hosting project remains public. Starting in 2027, Azure DevOps will automatically convert existing public projects to private, and public feeds will no longer be publicly accessible.
 
 ## Create a public feed
 
 [!INCLUDE [allow-public-project-policy](../../organizations/projects/includes/allow-public-project-policy.md)]
 
-Public feeds are project-scoped feeds in a public project. Follow these steps to create a new public feed:
+Public feeds are project-scoped feeds in an existing public project. Follow these steps to create a new public feed:
 
-1. Sign in to your Azure DevOps organization and navigate to your project. Make sure that your project is **Public** in order to create a public feed.
+1. Sign in to your Azure DevOps organization and go to your existing public project.
 
 1. Select **Artifacts** > **Create Feed**.
 

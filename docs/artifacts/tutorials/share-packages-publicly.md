@@ -2,7 +2,7 @@
 title: Share packages publicly with public feeds
 description: Learn how to use Azure Artifacts public feeds to share packages publicly.
 ms.service: azure-artifacts
-ms.date: 07/30/2025
+ms.date: 07/22/2026
 monikerRange: 'azure-devops'
 ms.topic: how-to
 ---
@@ -11,9 +11,10 @@ ms.topic: how-to
 
 [!INCLUDE [version-eq-azure-devops](../../includes/version-eq-azure-devops.md)]
 
-[!INCLUDE [public-projects-retirement](../../organizations/projects/includes/public-projects-retirement.md)]
-
 Azure Artifacts provides an easy way to share packages with users outside your organization, including external customers, by using public feeds. Packages stored in public feeds can be accessed and installed by anyone on the internet without requiring an Azure DevOps account.
+
+> [!IMPORTANT]
+> Public feeds depend on public projects. Starting in 2027, existing public projects will automatically convert to private. When that happens, public feeds are no longer publicly accessible because they inherit the visibility of the hosting project. If you still need to distribute packages publicly after that conversion, plan a migration before 2027. For more information, see [Public projects retirement](../../organizations/projects/public-projects-retirement.md).
 
 ## Prerequisites
 
@@ -28,9 +29,9 @@ Azure Artifacts provides an easy way to share packages with users outside your o
 
 [!INCLUDE [allow-public-project-policy](../../organizations/projects/includes/allow-public-project-policy.md)]
 
-Public feeds are project-scoped feeds in a public project. Public feeds inherit the visibility settings of the hosting project.
+Public feeds are project-scoped feeds in an existing public project. Public feeds inherit the visibility settings of the hosting project.
 
-1. Sign in to your Azure DevOps organization, and then navigate to your public project.
+1. Sign in to your Azure DevOps organization, and then go to your existing public project.
 
 1. Select **Artifacts**, and then select **Create Feed**.
 
@@ -40,7 +41,7 @@ Public feeds are project-scoped feeds in a public project. Public feeds inherit 
 
 ## Share packages
 
-To share your packages publicly, you can simply share your feed URL, for example: `https://dev.azure.com/<ORGANIZATION_NAME>/<PROJECT-NAME>/_artifacts/feed/<FEED_NAME>` or share individual packages using [package badges](../package-badges.md). As long as your project remains public, anyone can access and download packages from your public feed without requiring an Azure DevOps account.
+To share your packages publicly, you can simply share your feed URL, for example: `https://dev.azure.com/<ORGANIZATION_NAME>/<PROJECT-NAME>/_artifacts/feed/<FEED_NAME>` or share individual packages using [package badges](../package-badges.md). Anyone can access and download packages from your public feed without requiring an Azure DevOps account while the hosting project remains public. Starting in 2027, existing public projects will automatically convert to private, and public feeds will no longer be publicly accessible.
 
 :::image type="content" source="../media/packages-public-feed.png" alt-text="A screenshot displaying a package in a public feed.":::
 

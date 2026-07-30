@@ -4,7 +4,7 @@ description: Learn how to connect to Azure Artifacts feeds - dotnet
 ms.service: azure-artifacts
 ms.custom: devx-track-dotnet
 ms.topic: how-to
-ms.date: 04/09/2025
+ms.date: 07/22/2026
 monikerRange: "<=azure-devops"
 "recommendations": "true"
 ---
@@ -13,7 +13,7 @@ monikerRange: "<=azure-devops"
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
-Azure Artifacts enables developers to seamlessly publish packages to feeds and share them privately or publicly, depending on the feed’s visibility settings. This guide walks you through setting up your project and authenticating with your Azure Artifacts feed.
+Azure Artifacts enables developers to seamlessly publish packages to feeds and share them privately or, for existing public projects, publicly, depending on the feed’s visibility settings. This guide walks you through setting up your project and authenticating with your Azure Artifacts feed.
 
 ## Prerequisites
 
