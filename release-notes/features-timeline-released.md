@@ -2,7 +2,7 @@
 title: Azure DevOps Released Features
 author: gloridelmorales
 ms.author: glmorale
-ms.date: 6/10/2026
+ms.date: 7/30/2026
 ms.topic: release-notes
 ms.service: azure-devops
 ms.subservice: azure-devops-release-notes
@@ -37,6 +37,15 @@ You can also [view the build numbers for each version](#azure-devops-server-buil
             <th>Server</th>
         </tr>
     </thead>
+<tr>
+    <td rowspan="7"><a href="2026/sprint-277-update.md" data-raw-source="[July 30 2026](2026/sprint-277-update.md)">July 30 2026</a></td>
+    <td>Enterprise Live Migration MCP Server Tools (Preview)</td><td>General</td><td>N/A</td></tr>
+    <td>View development dependency information on the Alerts page</td><td>GitHub Advanced Security for Azure DevOps</td><td>N/A</td></tr>
+    <td>Copilot Autofix avoids empty branches and pull requests</td><td>GitHub Advanced Security for Azure DevOps</td><td>N/A</td></tr>
+    <td>Copilot Autofix pull requests appear automatically in alert details</td><td>GitHub Advanced Security for Azure DevOps</td><td>N/A</td></tr>
+    <td>Copilot Autofix pull requests are easier to identify</td><td>GitHub Advanced Security for Azure DevOps</td><td>N/A</td></tr>
+    <td>Pull request annotations on cards</td><td>Boards</td><td>Future</td></tr>
+    <td>Azure DevOps service connection support in InvokeRestAPI task</td><td>Pipelines</td><td>Future</td></tr>
 <tr>
     <td rowspan="11"><a href="2026/sprint-276-update.md" data-raw-source="[July 9 2026](2026/sprint-276-update.md)">July 9 2026</a></td>
     <td>Enterprise Live Migration tools added to the Azure DevOps Remote MCP Server</td><td>General</td><td>Future</td></tr>
