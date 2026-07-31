@@ -7,7 +7,7 @@ ai-usage: ai-assisted
 ms.author: chcomley
 author: chcomley
 monikerRange: '<= azure-devops'
-ms.date: 04/13/2026
+ms.date: 07/30/2026
 ms.custom: sfi-image-nochange
 ---
 
@@ -96,11 +96,26 @@ You don't need to repeat a test run migration if users don't automatically get u
 
 Restrict access to your Azure Storage account to only IPs from Azure DevOps Services. You can restrict access by only allowing connections from Azure DevOps Services IPs that are involved in the collection database migration process. The IPs that need access to your storage account depend on the region you're migrating into. 
 
+During a DACPAC migration, two parties access the storage container: the machine that you use to upload the DACPAC, for example by using AzCopy or Azure Storage Explorer, and the hosted Azure DevOps Data Import Service. If you enable the storage account firewall, you must allow the public egress IP of the upload machine, in addition to the same-region limitation described in [Option 2: Use IP List](#option-2-use-ip-list).
+
+
+The `Migrator validate` and `Migrator prepare` commands connect to your collection database and to Microsoft Entra ID. The `Migrator import` command connects to neither. It submits the prepared package to the hosted Data Import Service over HTTPS by using a personal access token (PAT), and it can run from any machine that has internet access. None of these commands read the storage container. Only the upload step does.
+
 ### Option 1: Use Service Tags 
+
+This option applies to the SQL Azure VM migration method, where a network security group (NSG) protects the VM. Azure Storage account firewalls don't support service tags, so you can't use this option to allow access to the DACPAC storage container. For DACPAC migrations, use [Option 2: Use IP List](#option-2-use-ip-list) and review the same-region limitation described in that section.
 
 You can easily allow connections from all Azure DevOps Services regions by adding the `azuredevops` service tag to your network security groups or firewalls either through the portal or programmatically. 
 
 ### Option 2: Use IP List 
+
+> [!IMPORTANT]
+> Azure Storage IP firewall rules don't apply to requests that originate from the same Azure region as the storage account. For more information, see [Restrictions for IP network rules](/azure/storage/common/storage-network-security-limitations#restrictions-for-ip-network-rules). Because the DACPAC storage account must be in the same Azure region as your destination organization, Azure Storage ignores the IPs that `Migrator IpList` returns, and DACPAC access fails with error `VS403247`.
+
+To work around the same-region limitation, use one of the following approaches. The more secure approach is listed first:
+
+- Use the SQL Azure VM migration method, where a network security group (NSG) with the `azuredevops` service tag is a supported path. The VM must still be in the destination region.
+- Temporarily set **Public network access** to **All networks** on the storage account for the duration of the import. The shared access signature (SAS) still enforces authorization. Revert **Public network access** to **Selected networks** immediately after the import completes. Leaving the storage account open to all networks after the migration is a security regression.
 
 Use the `IpList` command to get the list of IPs that need access to allow connections from a specific Azure DevOps Services region. 
 
