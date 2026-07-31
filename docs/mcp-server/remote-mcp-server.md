@@ -1,5 +1,5 @@
 ---
-title: Set up the remote Azure DevOps MCP Server (preview)
+title: Set up the remote Azure DevOps MCP Server
 titleSuffix: Azure DevOps Services
 description: Learn how to configure the remote Azure DevOps MCP Server for AI-assisted development without local installation by using streamable HTTP transport.
 ms.service: azure-devops
@@ -10,31 +10,31 @@ ms.topic: how-to
 ms.author: chcomley
 author: chcomley
 monikerRange: 'azure-devops'
-ms.date: 06/23/2026
+ms.date: 07/31/2026
 #customer intent: As a user, I want to set up the remote Azure DevOps MCP Server so I can use AI assistance with my Azure DevOps data without installing and running a local server.
 ---
 
-# Set up the remote Azure DevOps MCP Server (preview)
+# Set up the remote Azure DevOps MCP Server
 
 [!INCLUDE [version-eq-azure-devops](../includes/version-eq-azure-devops.md)]
-
-> [!IMPORTANT]
-> The remote Azure DevOps MCP Server is currently in public preview. Preview features might have limited functionality and can change before general availability.
 
 The remote Azure DevOps MCP Server is a hosted version of the [Azure DevOps MCP Server](mcp-server-overview.md) that doesn't require a local installation. Instead of running the server on your machine, you connect your AI assistant directly to the Azure DevOps–hosted endpoint by using streamable HTTP transport.
 
 The remote server provides the same capabilities as the local server, including access to work items, pull requests, pipelines, and more, while eliminating local setup complexity.
 
-## Remote vs. local MCP Server
+## Choose remote first
 
-| Feature | Remote MCP Server (preview) | Local MCP Server |
-|--------|-----------------------------|------------------|
+Use the **remote MCP Server** when your environment supports it. The remote server is the recommended option because Azure DevOps hosts and updates it, and you don't need to install Node.js or manage a local server process.
+
+Use the **local MCP Server** when your client can't authenticate to the remote server with Microsoft Entra ID. This limitation currently applies to clients such as Claude Desktop, Claude Code, Cursor, and Codex. For local setup instructions, see [Enable AI assistance with the Azure DevOps MCP Server](mcp-server-overview.md#install-the-local-azure-devops-mcp-server).
+
+| Feature | Remote MCP Server | Local MCP Server |
+|--------|-------------------|------------------|
 | **Installation** | No installation required | Requires Node.js 20.0+ and `npx` |
 | **Transport** | Streamable HTTP | `stdio` |
 | **Authentication** | Microsoft Entra ID (OAuth) | Azure DevOps PAT or Microsoft Entra ID |
 | **Hosting** | Azure DevOps–hosted service | Runs locally on your machine |
 | **Configuration** | Minimal `mcp.json` | Environment-specific setup |
-| **Status** | Public preview | Generally available |
 
 ## Prerequisites
 
@@ -366,10 +366,16 @@ The remote Azure DevOps MCP Server requires your user account and Azure DevOps o
 
 Not all MCP clients support Microsoft Entra authentication by default. Some environments require extra steps to register the client application.
 
-Currently supported environments include:
+Supported environments include:
 
 - Visual Studio Code
 - Visual Studio
+- Microsoft Foundry
+- Microsoft Copilot Studio
+- GitHub Copilot
+
+> [!IMPORTANT]
+> Claude Desktop, Claude Code, Cursor, and Codex don't currently support the Microsoft Entra authentication flow required by the remote Azure DevOps MCP Server. Use the [local MCP Server](mcp-server-overview.md#install-the-local-azure-devops-mcp-server) with these clients.
 
 ### Visual Studio Code
 
@@ -425,20 +431,19 @@ The following example prompts for Copilot Chat help you choose the right MCP app
 | **Server not found** | Check the server URL format: `https://mcp.dev.azure.com/{organization}`. |
 | **Connection Refused** | Confirm your network allows outbound HTTPS to `mcp.dev.azure.com`. If you're on a corporate proxy or firewall, ask your administrator to allow-list the endpoint and retry without VPN to isolate network path issues. |
 | **No data returned** | Confirm you have appropriate permissions for the project or resources being queried. |
-| **Preview not available** | The preview is rolling out gradually. Check back later or contact your organization administrator. |
 | **ELM tools not available after setting `X-MCP-Toolsets: elm`** | ELM support in the remote MCP Server is in private preview and not enabled for all organizations. Setting `X-MCP-Toolsets: elm` is necessary but not sufficient—your organization must also be enrolled in the ELM private preview. Contact your organization administrator or see the [Enterprise Live Migrations overview](../repos/enterprise-live-migrations/overview.md) to request access. |
 
 For support, you can create an issue in the [local MCP Server](https://github.com/microsoft/azure-devops-mcp/issues/new?template=remote-mcp-server-issue.md) repo. Be sure to use the **Remote** issue template.
 
 ## FAQ
 
-### What about other clients like GitHub Copilot CLI, Claude Desktop, Claude Code, CodeX, or Cursor?
+### What about other clients like Claude Desktop, Claude Code, Codex, or Cursor?
 
-Other client tools such as CodeX, Claude Desktop, Claude Code, and ChatGPT require dynamic registration of an OAuth Client ID in Microsoft Entra before they can be used with the MCP server. We're working closely with the Microsoft Entra team to enable this capability. For now, only Visual Studio and Visual Studio Code are supported.
+Claude Desktop, Claude Code, Codex, and Cursor require dynamic registration of an OAuth client ID in Microsoft Entra ID before they can use the remote MCP Server. Microsoft Entra ID doesn't currently support the dynamic client registration flow these clients require. Use the [local MCP Server](mcp-server-overview.md#install-the-local-azure-devops-mcp-server) with these clients.
 
 ### What services can use Azure DevOps MCP Server?
 
-Support for other services, including Azure AI Foundry, Microsoft 365 Copilot, and Copilot Studio, isn't yet available but will be added soon.
+The remote Azure DevOps MCP Server supports Visual Studio Code, Visual Studio, Microsoft Foundry, Microsoft Copilot Studio, and GitHub Copilot.
 
 ### Does the Azure DevOps MCP Server support AgentId?
 
