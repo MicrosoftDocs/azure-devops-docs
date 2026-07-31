@@ -9,7 +9,7 @@ ms.topic: troubleshooting
 ms.author: chcomley
 author: chcomley
 monikerRange: 'azure-devops'
-ms.date: 05/11/2026
+ms.date: 07/31/2026
 #customer intent: As a developer, I want to troubleshoot issues with the remote Azure DevOps MCP Server so I can resolve connection, authentication, and tool problems without escalating to support.
 ---
 
@@ -56,18 +56,6 @@ This article helps you diagnose and resolve common problems with the [remote Azu
 - Ensure your network allows outbound HTTPS traffic to `mcp.dev.azure.com`.
 - If you're behind a corporate proxy or firewall, verify that `mcp.dev.azure.com` isn't blocked. Contact your network administrator to allow-list this endpoint.
 - VPN configurations might interfere with connectivity. Try connecting without VPN to isolate the issue.
-
-### Preview availability
-
-**Symptom:** You get an error indicating the service isn't available.
-
-**Resolution:**
-
-The remote MCP Server is in public preview and is rolling out gradually. If you can't connect:
-
-- Verify your organization is connected to [Microsoft Entra ID](/entra/fundamentals/whatis).
-- Check back later, as the preview continues to expand.
-- Confirm with your organization administrator that no policies block preview features.
 
 ## Authentication errors
 
@@ -212,7 +200,7 @@ Verify your `mcp.json` uses the correct format for the remote server:
 
 Don't mix remote and local configuration formats. Don't run both servers at the same time — choose one:
 
-- **Remote server** — Use for Visual Studio Code and Visual Studio. No local installation required.
+- **Remote server** - Recommended for supported environments, including Visual Studio Code, Visual Studio, Microsoft Foundry, Microsoft Copilot Studio, and GitHub Copilot. No local installation required.
 - **Local server** — Use for non-Microsoft clients (Claude Desktop, Claude Code, Cursor, Codex) that don't support Microsoft Entra authentication.
 
 ### Toolset or tool filtering not working
@@ -337,6 +325,11 @@ Non-Microsoft clients can't authenticate with the remote MCP Server because Micr
 **Currently supported clients:**
 - Visual Studio Code
 - Visual Studio (2022 and later)
+- Microsoft Foundry
+- Microsoft Copilot Studio
+- GitHub Copilot
+- GitHub Copilot CLI
+- GitHub Copilot app
 
 For non-Microsoft clients, use the [local Azure DevOps MCP Server](mcp-server-overview.md) with PAT or Azure CLI authentication instead. Don't run both the remote and local servers at the same time — choose the one that matches your client.
 
@@ -368,7 +361,7 @@ No. The remote MCP Server requires your Azure DevOps organization to be connecte
 
 ### Should I use the remote or local MCP Server?
 
-Use the remote server if your client supports it (Visual Studio Code or Visual Studio). Use the local server only if you're using a non-Microsoft client like Claude Desktop, Claude Code, Cursor, or Codex. Don't run both servers at the same time.
+Use the remote server if your environment supports it. The remote server is recommended because it requires no local installation and Azure DevOps manages its updates. Use the local server only if you're using a client like Claude Desktop, Claude Code, Cursor, or Codex that can't authenticate to the remote server. Don't run both servers at the same time.
 
 ### Why do I see different tools with the remote vs. local server?
 
@@ -388,6 +381,6 @@ Create an issue by using the [Remote MCP Server issue template](https://github.c
 
 ## Related content
 
-- [Set up the remote Azure DevOps MCP Server (preview)](remote-mcp-server.md)
+- [Set up the remote Azure DevOps MCP Server](remote-mcp-server.md)
 - [Azure DevOps MCP Server overview](mcp-server-overview.md)
 - [Azure DevOps MCP Server GitHub repository](https://github.com/microsoft/azure-devops-mcp)
