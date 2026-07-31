@@ -10,6 +10,8 @@
       items:
         - name: "2026"
           items:
+          - name: July 30
+            href: 2026/sprint-277-update.md
           - name: July 9
             href: 2026/sprint-276-update.md
           - name: June 17
@@ -329,6 +331,8 @@
         items:
         - name: "2026"
           items:
+          - name: July 30
+            href: 2026/boards/sprint-277-update.md
           - name: June 17
             href: 2026/boards/sprint-275-update.md
           - name: May 21
@@ -641,6 +645,8 @@
         items:
         - name: "2026"
           items:
+          - name: July 30
+            href: 2026/pipelines/sprint-277-update.md
           - name: July 9
             href: 2026/pipelines/sprint-276-update.md
           - name: June 17
@@ -1047,6 +1053,8 @@
         items:
         - name: "2026"
           items:
+          - name: July 30
+            href: 2026/ghazdo/sprint-277-update.md
           - name: July 9
             href: 2026/ghazdo/sprint-276-update.md
           - name: June 17
@@ -1135,6 +1143,8 @@
         items:
         - name: "2026"
           items:
+          - name: July 30
+            href: 2026/general/sprint-277-update.md
           - name: July 9
             href: 2026/general/sprint-276-update.md
           - name: May 5
