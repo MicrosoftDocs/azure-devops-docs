@@ -7,7 +7,7 @@ ms.topic: how-to
 ms.author: chcomley
 author: chcomley
 monikerRange: 'azure-devops'
-ms.date: 06/26/2026
+ms.date: 07/31//2026
 #customer intent: As a migration operator, I want to authenticate, validate, and start an ELM so the initial sync to GitHub Enterprise Cloud begins successfully.
 ---
 
@@ -161,6 +161,7 @@ Add optional parameters based on your migration scenario:
 | Automatically discover and rewire pipelines | `--enable-auto-discover-pipelines` and `--pipeline-service-connection-id <service-connection-id>` | ELM finds pipelines that reference the source repository and rewires them to GitHub. |
 | Manually choose pipelines to rewire later | `--pipeline-service-connection-id <service-connection-id>` | ELM prepares migration for manual pipeline rewiring after sync starts. |
 | Don't use ELM for pipeline rewiring | Omit both pipeline rewiring parameters | ELM migrates the repository only. You can update pipelines separately. |
+| Opt in to provisioning the Azure Boards GitHub connection at cutover. The Azure Boards GitHub App must be installed on the target GitHub organization before the migration runs. | `--enable-boards-github-connection` (`--enable-boards-gh`) | ELM provisions the Azure Boards connection for the migrated repository so teams can link work items from GitHub pull requests by using the `AB#<workItemId>` syntax without completing the connection manually after cutover. |
 
 Check migration status:
 
