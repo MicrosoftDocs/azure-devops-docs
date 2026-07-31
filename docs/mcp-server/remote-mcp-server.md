@@ -10,7 +10,7 @@ ms.topic: how-to
 ms.author: chcomley
 author: chcomley
 monikerRange: 'azure-devops'
-ms.date: 07/29/2026
+ms.date: 07/31/2026
 #customer intent: As a user, I want to set up the remote Azure DevOps MCP Server so I can use AI assistance with my Azure DevOps data without installing and running a local server.
 ---
 
@@ -22,7 +22,7 @@ The remote Azure DevOps MCP Server is a hosted version of the [Azure DevOps MCP 
 
 The remote server provides the same capabilities as the local server, including access to work items, pull requests, pipelines, and more, while eliminating local setup complexity.
 
-## Choose remote or local
+## Choose remote first
 
 Use the **remote MCP Server** when your environment supports it. The remote server is the recommended option because Azure DevOps hosts and updates it, and you don't need to install Node.js or manage a local server process.
 

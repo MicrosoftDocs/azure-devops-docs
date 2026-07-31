@@ -9,7 +9,7 @@ ms.topic: troubleshooting
 ms.author: chcomley
 author: chcomley
 monikerRange: 'azure-devops'
-ms.date: 07/29/2026
+ms.date: 07/31/2026
 #customer intent: As a developer, I want to troubleshoot issues with the remote Azure DevOps MCP Server so I can resolve connection, authentication, and tool problems without escalating to support.
 ---
 
@@ -328,6 +328,8 @@ Non-Microsoft clients can't authenticate with the remote MCP Server because Micr
 - Microsoft Foundry
 - Microsoft Copilot Studio
 - GitHub Copilot
+- GitHub Copilot CLI
+- GitHub Copilot app
 
 For non-Microsoft clients, use the [local Azure DevOps MCP Server](mcp-server-overview.md) with PAT or Azure CLI authentication instead. Don't run both the remote and local servers at the same time — choose the one that matches your client.
 

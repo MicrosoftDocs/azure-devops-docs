@@ -59,11 +59,10 @@ Traditional AI assistants lack context about your specific projects, work items,
 
 The Azure DevOps MCP Server provides contextual intelligence based on your actual project data, not generic responses. You can ask natural language questions about your work items, sprints, and releases, and receive insights that understand your team's specific processes and terminology. This process eliminates context switching between tools, provides instant answers without navigating through the Azure DevOps web interface, and automates routine project management tasks through natural language.
 
-## Security and privacy for the local server
+## Security and privacy
 
-The local Azure DevOps MCP Server prioritizes data security and privacy:
+The Azure DevOps MCP Server prioritizes data security and privacy:
 
-- **Local execution**: No data leaves your environment - everything runs locally within your secure network
 - **No external API calls**: The server doesn't make external API calls that could expose sensitive project information  
 - **User control**: You maintain full control over what data your AI assistant can access
 - **Secure integration**: Works seamlessly with your existing AI coding environments without compromising security
