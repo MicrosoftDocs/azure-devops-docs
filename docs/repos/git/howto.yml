@@ -14,6 +14,9 @@ summary: |
   [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
   Find answers to frequently asked questions about using Git with Azure Repos, including branch management, commit practices, configuration, and troubleshooting clone, push, proxy, SSL, and authentication issues.
+
+  > [!NOTE]
+  > For Copilot code review (preview) troubleshooting, see [Troubleshoot Copilot code review](copilot-code-reviews-faq.md).
 sections:
   - name: Ignored
     questions:
