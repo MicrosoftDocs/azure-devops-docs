@@ -89,7 +89,7 @@ Copilot Autofix generates the fix and opens a pull request from a branch named `
 
 For CodeQL alerts, the pull request appears automatically under **Related pull requests** on the alert detail view and continues to update as generation and completion progress, so you don't need to refresh the page.
 
-If Copilot Autofix doesn't produce any code changes for the alert, no branch and no pull request are created, and no pull request is linked on the alert detail view. In this case, remediate the alert manually. For more information, see [When a fix isn't available](#when-a-fix-isnt-available).
+If Copilot Autofix doesn't produce any code changes for the alert, it doesn't create a branch or a pull request, and it doesn't link a pull request on the alert detail view. In this case, remediate the alert manually. For more information, see [When a fix isn't available](#when-a-fix-isnt-available).
 
 ## Review and merge the fix
 
@@ -97,7 +97,7 @@ The pull request that Copilot Autofix opens behaves like any other Azure Repos p
 
 :::image type="content" source="media/advanced-security-autofix-pull-request.png" lightbox="media/advanced-security-autofix-pull-request.png" alt-text="Screenshot of a pull request created by Copilot Autofix, showing the alert ID, severity, and fix details in the description.":::
 
-Autofix pull requests are identified by the **Copilot Autofix** label. Earlier previews identified these pull requests by adding a suffix to the pull request title.
+The **Copilot Autofix** label identifies autofix pull requests. Earlier previews identified these pull requests by adding a suffix to the pull request title.
 
 1. Open the pull request from the alert's **Related pull requests** section, or from **Repos** > **Pull requests**.
 1. Review the proposed change in the **Files** tab across all affected files.
