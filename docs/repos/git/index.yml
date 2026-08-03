@@ -85,8 +85,12 @@ landingContent:
         links:
           - text: Review pull requests
             url: ./review-pull-requests.md
-          - text: Copilot code reviews (preview)
+          - text: Copilot code review (preview) - Get started
             url: ./copilot-code-reviews.md
+          - text: Copilot code review (preview) - Configure instructions
+            url: ./configure-copilot-code-review-instructions.md
+          - text: Copilot code review (preview) - Troubleshoot
+            url: ./copilot-code-reviews-faq.md
           - text: Complete pull requests
             url: ./complete-pull-requests.md
   - title: History and compare
