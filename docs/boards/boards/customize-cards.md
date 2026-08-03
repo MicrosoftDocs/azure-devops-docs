@@ -9,7 +9,7 @@ ms.author: chcomley
 author: chcomley
 ms.topic: how-to
 monikerRange: '<= azure-devops'
-ms.date: 02/28/2026
+ms.date: 08/03/2026
 ---
  
 # Customize cards on a board  
@@ -44,7 +44,7 @@ You can customize the following aspects of board cards:
 | [Fields](#add-fields-to-cards) | Control which fields appear on cards, including parent work item information |
 | [Styles](#apply-style-rules) | Change card colors and text styling based on field criteria |
 | [Tag colors](#set-tag-colors) | Assign specific colors to tags for visual categorization |
-| [Annotations](#manage-annotations) | Enable or disable icons showing related items (tasks, tests, GitHub) |
+| [Annotations](#manage-annotations) | Enable or disable icons showing related items and development artifacts (tasks, tests, pull requests, GitHub) |
 | [Tests](#configure-tests) | Configure how inline tests appear and behave |
 | [Card reordering](#configure-card-reordering) | Control behavior when reordering cards |
 ::: moniker-end
@@ -136,7 +136,7 @@ Assign colors to specific tags for visual categorization.
 
 ## Manage annotations
 
-Annotations display icons on cards that show related items like tasks, tests, or GitHub commits.
+Annotations display icons on cards that show related items and development artifacts like tasks, tests, pull requests, or GitHub commits.
 
 1. In your board settings, select **Annotations**.
 2. Check the box next to the annotations that you want to use.
@@ -155,6 +155,16 @@ Enabled annotations appear as numbered icons on cards:
 > [!IMPORTANT]
 > - When you disable an annotation, you also disable the ability to add those items directly from the board.
 > - Test annotations appear on cards only when a requirement-based test suite exists for the work item. Creating tests directly from the card automatically creates this suite. However, linking tests to a work item from the work item form alone doesn't create a requirement-based suite, so those tests don't appear as annotations on the card. For more information, see [Manage tests inline](add-run-update-tests.md).
+
+::: moniker range="azure-devops"
+
+### Show pull requests on cards
+
+The **Pull Request** annotation is enabled by default. When it's enabled, the pull requests linked to a work item appear directly on its card, so you can see development activity without opening the work item.
+
+To turn this annotation on or off, go to **Board settings** > **Annotations**, select or clear the **Pull Request** checkbox, and then select **Save**. When you clear it, linked pull requests no longer appear on cards.
+
+::: moniker-end
 
 <a id="configure-inline-tests">  </a>
 

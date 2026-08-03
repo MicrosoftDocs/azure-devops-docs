@@ -10,7 +10,7 @@ ms.topic: how-to
 ms.author: chcomley
 author: chcomley
 monikerRange: 'azure-devops'
-ms.date: 07/31/2026
+ms.date: 08/03/2026
 #customer intent: As a user, I want to set up the remote Azure DevOps MCP Server so I can use AI assistance with my Azure DevOps data without installing and running a local server.
 ---
 
@@ -323,7 +323,7 @@ The test plan tools are consolidated into grouped dispatchers using an `action` 
 The Enterprise Live Migration tools use an `action` parameter to group and dispatch tasks. [Learn more](../repos/enterprise-live-migrations/overview.md) about the Enterprise Live Migration preview.
 
 > [!IMPORTANT]
-> ELM support in the remote Azure DevOps MCP Server is currently in **private preview** and isn't available to all organizations. Even if you set `X-MCP-Toolsets: elm`, the ELM tools only work if your organization is enrolled in the private preview. If you need access, contact your organization administrator or refer to the [Enterprise Live Migrations overview](../repos/enterprise-live-migrations/overview.md) for more information.
+> ELM support in the remote Azure DevOps MCP Server is currently in **preview**. These tools require your organization to have access to the ELM limited public preview. If you need access, refer to the [Enterprise Live Migrations overview](../repos/enterprise-live-migrations/overview.md) for more information.
 
 | Tool | Action | Description | Read-only |
 |---|---|---|:---:|
@@ -343,7 +343,7 @@ The Enterprise Live Migration tools use an `action` parameter to group and dispa
 | `enterprise_live_migration_pipelines_write` | `update` | Update pipeline rewiring config | ❌ |
 | `enterprise_live_migration_pipelines_write` | `delete` | Delete all pipeline clones for a terminal migration | ❌ |
 
-The Enterprise Live Migration tools are disabled by default. Additionally, because ELM support in the remote MCP Server is in **private preview**, they're not accessible unless your organization is enrolled in the preview. To enable the ELM tools for your organization after enrollment, use the `X-MCP-Toolsets` header with the `elm` value:
+The Enterprise Live Migration tools are disabled by default. Because ELM support in the remote MCP Server is in **preview**, they require your organization to have access to the ELM limited public preview. To enable the ELM tools, use the `X-MCP-Toolsets` header with the `elm` value:
 
 ```json
 {
@@ -440,14 +440,6 @@ For support, you can create an issue in the [local MCP Server](https://github.co
 ### What about other clients like Claude Desktop, Claude Code, Codex, or Cursor?
 
 Claude Desktop, Claude Code, Codex, and Cursor require dynamic registration of an OAuth client ID in Microsoft Entra ID before they can use the remote MCP Server. Microsoft Entra ID doesn't currently support the dynamic client registration flow these clients require. Use the [local MCP Server](mcp-server-overview.md#install-the-local-azure-devops-mcp-server) with these clients.
-
-### What services can use Azure DevOps MCP Server?
-
-The remote Azure DevOps MCP Server supports Visual Studio Code, Visual Studio, Microsoft Foundry, Microsoft Copilot Studio, and GitHub Copilot.
-
-### Does the Azure DevOps MCP Server support AgentId?
-
-AgentId support is coming soon.
 
 ## Related content
 
