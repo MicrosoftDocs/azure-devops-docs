@@ -9,7 +9,7 @@ ai-usage: ai-assisted
 ms.author: chcomley
 author: chcomley
 monikerRange: '<= azure-devops'
-ms.date: 11/17/2025
+ms.date: 08/03/2026
 ms.custom: sfi-image-nochange
 ---
 
@@ -368,9 +368,9 @@ The output of the command is a DACPAC file, generated from the collection databa
 > [!NOTE] 
 > If you're using the SQL Azure VM method, you need to provide only the connection string. You don't have to upload any files, and you can skip this step.  
 
-Your DACPAC must be placed in an Azure storage container, which can be an existing container or one created specifically for your migration effort. It's important to ensure that your container is created in the right geographical locations.
+Your DACPAC must be placed in an Azure storage container, which can be an existing container or one created specifically for your migration effort.
 
-Azure DevOps Services is available in multiple [geographical locations](https://azure.microsoft.com/regions/services/). When you're importing to these locations, it's critical to place your data correctly to ensure that the migration can start successfully. Your data must be placed in the same geographical location that you're importing to. Placing the data anywhere else results in the migration being unable to start. The following table lists the acceptable geographical locations for creating your storage account and uploading your data.
+Azure DevOps Services is available in multiple [geographical locations](https://azure.microsoft.com/regions/services/). For the best migration performance, place your data in the same geographical location that you're importing to. Data in a different location doesn't block the migration, but the transfer takes longer and can incur data transfer charges. The following table lists the recommended geographical locations for creating your storage account and uploading your data.
 
 | Desired migration geographical location | Storage account geographical location |
 | --- | --- |

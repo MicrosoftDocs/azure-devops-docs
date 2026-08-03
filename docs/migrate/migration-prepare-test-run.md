@@ -7,7 +7,7 @@ ai-usage: ai-assisted
 ms.author: chcomley
 author: chcomley
 monikerRange: '<= azure-devops'
-ms.date: 07/30/2026
+ms.date: 08/03/2026
 ms.custom: sfi-image-nochange
 ---
 
@@ -110,11 +110,11 @@ You can easily allow connections from all Azure DevOps Services regions by addin
 ### Option 2: Use IP List 
 
 > [!IMPORTANT]
-> Azure Storage IP firewall rules don't apply to requests that originate from the same Azure region as the storage account. For more information, see [Restrictions for IP network rules](/azure/storage/common/storage-network-security-limitations#restrictions-for-ip-network-rules). Because the DACPAC storage account must be in the same Azure region as your destination organization, Azure Storage ignores the IPs that `Migrator IpList` returns, and DACPAC access fails with error `VS403247`.
+> Azure Storage IP firewall rules don't apply to requests that originate from the same Azure region as the storage account. For more information, see [Restrictions for IP network rules](/azure/storage/common/storage-network-security-limitations#restrictions-for-ip-network-rules). So, if your DACPAC storage account is in the same Azure region as your destination organization and **Public network access** is set to **Selected networks**, Azure Storage can't match the IPs that `Migrator IpList` returns, and DACPAC access fails with error `VS403247`.
 
 To work around the same-region limitation, use one of the following approaches. The more secure approach is listed first:
 
-- Use the SQL Azure VM migration method, where a network security group (NSG) with the `azuredevops` service tag is a supported path. The VM must still be in the destination region.
+- Use the SQL Azure VM migration method, where a network security group (NSG) with the `azuredevops` service tag is a supported path.
 - Temporarily set **Public network access** to **All networks** on the storage account for the duration of the import. The shared access signature (SAS) still enforces authorization. Revert **Public network access** to **Selected networks** immediately after the import completes. Leaving the storage account open to all networks after the migration is a security regression.
 
 Use the `IpList` command to get the list of IPs that need access to allow connections from a specific Azure DevOps Services region. 
@@ -195,7 +195,7 @@ The performance of your SQL Azure VM and attached data disks significantly affec
 - Use managed disks. 
 - Consult [virtual machine and disk performance](/azure/virtual-machines/disks-performance). Ensure your infrastructure is configured so that the VM IOPS (input/output per second) and storage IOPS don't become a bottleneck on the performance of the migration. For example, ensure the number of data disks attached to your VM is sufficient to support the IOPS from the VM. 
 
-Azure DevOps Services is available in several [Azure regions across the globe](migration-test-run.md#supported-azure-regions-for-migration). To ensure that the migration starts successfully, it's critical to place your data in the correct region. If you set up your SQL Azure VM in a wrong location, the migration fails to start. 
+Azure DevOps Services is available in several [Azure regions across the globe](migration-test-run.md#supported-azure-regions-for-migration). For the best migration performance, create your SQL Azure VM in the same region as your destination organization. A VM in a different region doesn't block the migration, but the Data Migration Tool warns you and asks you to confirm before it queues the migration.
 
 > [!IMPORTANT]
 > The Azure VM requires a public IP address. 
@@ -278,7 +278,7 @@ Your migration specification is now configured to use a SQL Azure VM for migrati
 
 ## Create an Azure Storage Container in chosen data center 
 
-Using the Data Migration Tool for Azure DevOps requires having an Azure Storage container in the same Azure data center as the final Azure DevOps Services organization. For example, if you intend for your Azure DevOps Services organization to be created in the Central United States data center, then create the Azure Storage container in that same data center. This action drastically speeds up the time that it takes to migrate the SQL database, since the transfer occurs within the same data center. 
+Using the Data Migration Tool for Azure DevOps requires an Azure Storage container. For the best migration performance, create the container in the same Azure data center as the final Azure DevOps Services organization. For example, if you intend for your Azure DevOps Services organization to be created in the Central United States data center, then create the Azure Storage container in that same data center. This action drastically speeds up the time that it takes to migrate the SQL database, since the transfer occurs within the same data center. A container in a different data center doesn't block the migration, but the transfer takes longer and can incur data transfer charges.
 
 For more information, see [Create a storage account](/azure/storage/common/storage-account-create?tabs=azure-portal). 
 

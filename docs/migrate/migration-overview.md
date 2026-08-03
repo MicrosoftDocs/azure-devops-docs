@@ -7,7 +7,7 @@ ms.contentid: 3d6edd06-ceed-43b4-9e77-4a121864594c
 ms.author: chcomley
 author: chcomley
 monikerRange: '<= azure-devops'
-ms.date: 08/07/2025
+ms.date: 08/03/2026
 ---
 
 # Migration overview 
@@ -67,7 +67,7 @@ The tool allows you to "lift and shift" one Azure DevOps Server Collection to on
 
 ### Regional limitations
 
-The Data Migration Tool is only supported in specific Azure regions. Organizations must be created in supported regions, and any temporary infrastructure (such as SQL VMs for large migrations) must also be deployed in these regions. See [Supported regions for migration](migration-get-started.md#supported-azure-regions-for-migration) for the complete list.
+The Data Migration Tool is only supported in specific Azure regions. Organizations must be created in supported regions. Temporary infrastructure, such as SQL VMs for large migrations, doesn't have to be in the same region as your organization, but same-region placement gives the best migration performance. See [Supported regions for migration](migration-get-started.md#supported-azure-regions-for-migration) for the complete list.
 
 ## Migration Tool process
 
