@@ -441,14 +441,6 @@ For support, you can create an issue in the [local MCP Server](https://github.co
 
 Claude Desktop, Claude Code, Codex, and Cursor require dynamic registration of an OAuth client ID in Microsoft Entra ID before they can use the remote MCP Server. Microsoft Entra ID doesn't currently support the dynamic client registration flow these clients require. Use the [local MCP Server](mcp-server-overview.md#install-the-local-azure-devops-mcp-server) with these clients.
 
-### What services can use Azure DevOps MCP Server?
-
-The remote Azure DevOps MCP Server supports Visual Studio Code, Visual Studio, Microsoft Foundry, Microsoft Copilot Studio, and GitHub Copilot.
-
-### Does the Azure DevOps MCP Server support AgentId?
-
-AgentId support is coming soon.
-
 ## Related content
 
 - [Azure DevOps MCP Server overview](mcp-server-overview.md)
