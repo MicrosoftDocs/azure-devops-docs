@@ -29,6 +29,9 @@
     href: about-security-identity.md
   - name: Authentication types
     displayName: permission, security, mechanism, type, application
+    href: authentication-guidance.md
+  - name: Integration authentication methods
+    displayName: integration, service principal, managed identity, oauth, pat, service connection
     href: ../../integrate/get-started/authentication/authentication-guidance.md?toc=/azure/devops/organizations/security/toc.json
   expanded: true
 - name: Access levels and Stakeholder access
