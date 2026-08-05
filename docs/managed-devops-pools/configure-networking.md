@@ -1,7 +1,7 @@
 ---
 title: Configure networking
 description: Learn how to configure networking for Managed DevOps Pools.
-ms.date: 07/06/2026
+ms.date: 08/05/2026
 ms.custom: sfi-image-nochange
 ms.topic: how-to
 ---
@@ -368,6 +368,8 @@ Confirm that you can use a subnet with Managed DevOps Pools by running the follo
 
 To run the script with PowerShell Core, or PowerShell 5 or later, save the following script as `ValidateMDPEndpoints.ps1`. Run the following PowerShell command: `.\ValidateMDPEndpoints.ps1 -organization "<your-organization>"`.
 
+If your workload matches any of the items described in [Required endpoints for some Azure DevOps features](#required-endpoints-for-some-azure-devops-features), [Azure-related endpoints](#azure-related-endpoints), or [Akamai CDN delivery IPs](#akamai-cdn-delivery-ips), add the URLS described in those sections to the script to validate that your agent access.
+
 ```powershell
 # ValidateMDPEndpoints.ps1
 param (
@@ -386,8 +388,7 @@ $azureDevOpsUris = @(
     "https://${organization}.vstmr.visualstudio.com",
     "https://${organization}.pkgs.visualstudio.com",
     "https://${organization}.vssps.visualstudio.com",
-    "https://download.agent.dev.azure.com",
-    "download.agent.dev.azure.com"
+    "https://download.agent.dev.azure.com"
 )
 $managedDevOpsPoolsControlPlaneUris = @(
     # List of agent queue endpoints - maps to *.queue.core.windows.net
@@ -417,7 +418,15 @@ $managedDevOpsPoolsControlPlaneUris = @(
     "default.sea.prod.manageddevops.microsoft.com",
     "default.szn.prod.manageddevops.microsoft.com",
     "default.uks.prod.manageddevops.microsoft.com",
-    "default.wus3.prod.manageddevops.microsoft.com"
+    "default.wus3.prod.manageddevops.microsoft.com",
+    # Endpoints required for provisioning Linux agents
+    # Disregard these if you are using Windows agents
+    "http://azure.archive.ubuntu.com",
+    "https://www.microsoft.com",
+    "https://security.ubuntu.com",
+    "https://packages.microsoft.com",
+    "https://ppa.launchpad.net",
+    "https://dl.fedoraproject.org"
 )
 $unreachableUris = @()
 foreach ($uri in $azureDevOpsUris) {
