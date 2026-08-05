@@ -93,13 +93,15 @@ Specify toolsets to restrict the tools available to the MCP server. Shouldn't be
 
 | Toolset value | Included tools |
 |---|---|
-| `all` *(default)* | All tools from every toolset |
+| `all` *(default)* | All tools except toolsets that require explicit opt-in, such as `elm` |
 | `repos` | Repository and pull request tools |
+| `advsec` | Advanced Security alert tools |
 | `wit` | Work item tools and `search_workitem` |
 | `pipelines` | Pipeline and build tools |
 | `wiki` | Wiki tools and `search_wiki` |
 | `work` | Iteration and capacity tools |
 | `testplan` | Test plan tools |
+| `elm` | Enterprise Live Migration tools (private preview; explicit opt-in) |
 
 ### Read-only tools
 
@@ -142,6 +144,8 @@ Use the `X-MCP-Readonly` header to restrict the server to read-only operations. 
 
 Use the `X-MCP-Tools` header to enable only specific tools. Shouldn't be combined with `X-MCP-Toolsets`.
 
+Specify tool names that appear in the [available tools](#available-tools) list. For consolidated tools such as `wit_work_item`, choose the operation by using the tool's `action` parameter when you call it.
+
 ```json
 {
   "servers": {
@@ -149,7 +153,7 @@ Use the `X-MCP-Tools` header to enable only specific tools. Shouldn't be combine
       "url": "https://mcp.dev.azure.com/{organization}",
       "type": "http",
       "headers": {
-        "X-MCP-Tools": "core_list_projects, wit_my_work_items, wit_get_work_items_batch_by_ids"
+        "X-MCP-Tools": "core_list_projects, wit_work_item"
       }
     }
   },
@@ -183,13 +187,17 @@ As we experiment and introduce new tools and updates to existing ones, you can g
 
 ### Core tools
 
-Core tools are always available.
+Core tools are always available unless noted otherwise.
 
 | Tool | Description |
 |---|---|
 | `core_list_orgs` | List Azure DevOps organizations the authenticated user has access to |
 | `core_list_projects` | List projects in an organization |
 | `core_list_project_teams` | List teams in a project |
+| `core_list_group_members` | List direct members and child groups of an Azure DevOps group |
+
+> [!NOTE]
+> `core_list_group_members` is currently available only to MCP Insiders by using the `X-MCP-Insiders` header.
 
 ### Work
 
@@ -215,6 +223,7 @@ The repository tools are consolidated into grouped dispatchers using an `action`
 | `repo_pull_request` | `get` | Get a pull request by ID | ✅ |
 | `repo_pull_request` | `list` | List pull requests in a repository or project | ✅ |
 | `repo_pull_request` | `list_by_commits` | Find pull requests that contain specific commit IDs | ✅ |
+| `repo_pull_request` | `get_changes` | Get file changes and optional line-by-line diffs for a pull request iteration | ✅ |
 | `repo_pull_request_thread` | `list` | List comment threads on a pull request | ✅ |
 | `repo_pull_request_thread` | `list_comments` | List comments in a specific thread | ✅ |
 | `repo_repository` | `get` | Get a repository by name or ID | ✅ |
@@ -225,7 +234,7 @@ The repository tools are consolidated into grouped dispatchers using an `action`
 | `repo_file` | `get_content` | Get the text content of a file at a specific branch, tag, or commit | ✅ |
 | `repo_file` | `list_directory` | List files and folders in a directory, with optional recursive listing | ✅ |
 | `repo_search_commits` | | Search commits with filtering by text, author, date range, and more | ✅ |
-| `search_code` | Full-text code search. | ✅ |
+| `search_code` | | Full-text code search | ✅ |
 | `repo_pull_request_write` | `create` | Create a pull request | ❌ |
 | `repo_pull_request_write` | `update` | Update a pull request, including setting autocomplete | ❌ |
 | `repo_pull_request_write` | `update_reviewers` | Add or remove pull request reviewers | ❌ |
@@ -250,6 +259,9 @@ The work item tools are consolidated into grouped dispatchers using an `action` 
 | `wit_work_item` | `get_type` | Get metadata for a work item type | ✅ |
 | `wit_query` | `get` | Get a query by ID or path | ✅ |
 | `wit_query` | `get_results` | Run a saved query | ✅ |
+| `wit_query` | `search` | Search queries by name | ✅ |
+| `wit_query` | `list` | List root query folders and their children | ✅ |
+| `wit_query_by_wiql` | | Run a WIQL query and return matching work items | ✅ |
 | `wit_backlog` | `list` | List backlog levels for a team | ✅ |
 | `wit_backlog` | `list_work_items` | List work items in a specific backlog level | ✅ |
 | `search_workitem` | | Full-text work item search | ✅ |
@@ -262,7 +274,7 @@ The work item tools are consolidated into grouped dispatchers using an `action` 
 | `wit_work_item_link_write` | `link` | Link two work items | ❌ |
 | `wit_work_item_link_write` | `unlink` | Remove links from a work item | ❌ |
 | `wit_work_item_link_write` | `link_to_pull_request` | Link a work item to a pull request | ❌ |
-| `wit_work_item_link_write` | `add_artifact_link` | Add a repository, branch, commit, or build artifact link to a work item | ❌ |
+| `wit_work_item_link_write` | `add_artifact_link` | Add a repository, branch, commit, build, or wiki artifact link to a work item | ❌ |
 | `wit_work_item_attachment` |  | Download a work item attachment by ID; returns base64-encoded content with filename and MIME type | ✅ |
 
 > [!NOTE]
@@ -312,11 +324,25 @@ The test plan tools are consolidated into grouped dispatchers using an `action` 
 | `testplan` | `list_suites` | List test suites under a test plan | ✅ |
 | `testplan` | `list_cases` | List test cases under a test suite | ✅ |
 | `testplan_show_test_results_from_build_id` |  | Get test results from a build | ✅ |
+| `testplan_test_run` | `get_results` | Get results for a test run with optional detail and outcome filters | ✅ |
 | `testplan_test_plan_write` | `create` | Create a test plan | ❌ |
 | `testplan_test_suite_write` | `create` | Create a test suite | ❌ |
 | `testplan_test_suite_write` | `add_test_cases` | Add test cases to a suite | ❌ |
 | `testplan_test_case_write` | `create` | Create a test case | ❌ |
 | `testplan_test_case_write` | `update_steps` | Update test case steps | ❌ |
+| `testplan_test_run_write` | `create_run` | Create a test run for manual test execution | ❌ |
+| `testplan_test_run_write` | `update_results` | Update outcomes and details for test results in a run | ❌ |
+| `testplan_test_run_write` | `complete_run` | Complete or abort a test run based on its results | ❌ |
+| `testplan_test_run_write` | `update_test_point_outcome` | Update or reset outcomes for test points | ❌ |
+
+### Advanced Security
+
+The Advanced Security tools are consolidated into a grouped dispatcher using an `action` parameter.
+
+| Tool | Action | Description | Read-only |
+|---|---|---|:---:|
+| `advsec_alerts` | `list` | List Advanced Security alerts for a repository with optional filters | ✅ |
+| `advsec_alerts` | `get` | Get an Advanced Security alert by ID | ✅ |
 
 ### Enterprise Live Migration (preview)
 
