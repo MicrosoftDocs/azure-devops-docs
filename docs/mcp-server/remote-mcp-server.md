@@ -337,7 +337,7 @@ The test plan tools are consolidated into grouped dispatchers using an `action` 
 
 ### Advanced Security
 
-The Advanced Security tools are consolidated into a grouped dispatcher using an `action` parameter.
+The Advanced Security tools are consolidated into a grouped dispatcher that uses an `action` parameter.
 
 | Tool | Action | Description | Read-only |
 |---|---|---|:---:|
