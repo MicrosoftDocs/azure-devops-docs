@@ -8,7 +8,7 @@ ms.topic: how-to
 ms.author: laurajiang
 author: laurajjiang
 monikerRange: 'azure-devops'
-ms.date: 06/12/2026
+ms.date: 08/03/2026
 ms.custom: cross-service
 ---
 
@@ -85,13 +85,19 @@ After you enable Copilot Autofix, you can generate a fix from any supported code
 
 :::image type="content" source="media/advanced-security-autofix-generate-fix.png" lightbox="media/advanced-security-autofix-generate-fix.png" alt-text="Screenshot of a code scanning alert detail view with the Generate fix button in the upper right.":::
 
-Copilot Autofix generates the fix and opens a pull request from a branch named `copilot-autofix/...`. After the fix is generated, the pull request appears under **Related pull requests** on the alert detail view.
+Copilot Autofix generates the fix and opens a pull request from a branch named `copilot-autofix/...`. The pull request is labeled with a **Copilot Autofix** tag, which you can use to identify Autofix pull requests in the pull requests list.
+
+For CodeQL alerts, the pull request appears automatically under **Related pull requests** on the alert detail view and continues to update as generation and completion progress, so you don't need to refresh the page.
+
+If Copilot Autofix doesn't produce any code changes for the alert, it doesn't create a branch or a pull request, and it doesn't link a pull request on the alert detail view. In this case, remediate the alert manually. For more information, see [When a fix isn't available](#when-a-fix-isnt-available).
 
 ## Review and merge the fix
 
 The pull request that Copilot Autofix opens behaves like any other Azure Repos pull request. Its description summarizes the alert that the fix addresses.
 
 :::image type="content" source="media/advanced-security-autofix-pull-request.png" lightbox="media/advanced-security-autofix-pull-request.png" alt-text="Screenshot of a pull request created by Copilot Autofix, showing the alert ID, severity, and fix details in the description.":::
+
+The **Copilot Autofix** label identifies autofix pull requests. Earlier previews identified these pull requests by adding a suffix to the pull request title.
 
 1. Open the pull request from the alert's **Related pull requests** section, or from **Repos** > **Pull requests**.
 1. Review the proposed change in the **Files** tab across all affected files.
@@ -110,6 +116,7 @@ Copilot Autofix can't generate a fix for every alert. A fix might not be availab
 - The alert type isn't currently supported by Copilot Autofix.
 - Copilot determines that the alert is a false positive.
 - A custom query or a third-party tool, rather than CodeQL, generates the alert.
+- Copilot Autofix runs but doesn't produce any code changes. In this case, no branch or pull request is created.
 
 When a fix isn't available, use the **Recommendation** and **Example** sections of the alert to remediate it or dismiss the alert manually. For more information, see [Alert details](github-advanced-security-code-scanning.md#alert-details).
 
