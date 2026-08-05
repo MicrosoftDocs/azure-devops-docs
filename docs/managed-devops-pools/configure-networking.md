@@ -365,6 +365,10 @@ Confirm that you can use a subnet with Managed DevOps Pools by running the follo
 
 > [!IMPORTANT]
 > You must run this script on a resource in your subnet (like a VM or container) to validate that the network path is open from that subnet to the required endpoints.
+>
+> This script includes common Azure DevOps endpoints, but can't test for every possible scenario. Review the list in [Required endpoints for some Azure DevOps features](#required-endpoints-for-some-azure-devops-features) for additional URLs that might need to be allowlisted.
+>
+> If you're configuring a data disk, you must allowlist the `md-*.blob.storage.azure.net` domain. The script does not check connectivity to this domain. For more information, see [Azure-related endpoints](#azure-related-endpoints).
 
 To run the script with PowerShell Core, or PowerShell 5 or later, save the following script as `ValidateMDPEndpoints.ps1`. Run the following PowerShell command: `.\ValidateMDPEndpoints.ps1 -organization "<your-organization>"`.
 
@@ -468,7 +472,7 @@ $azureDevOpsArtifactsUnreachableUris = @(Test-EndpointCollection -Uris $azureDev
 if ($azureDevOpsArtifactsUnreachableUris.Count -eq 0) {
     Write-Output "Azure DevOps Artifacts endpoints are reachable."
 } else {
-    Write-Output "The following Azure DevOps Artifactsendpoints could not be reached. Disregard these if you aren't using Artifacts in your pipeline."
+    Write-Output "The following Azure DevOps Artifactsendpoints could not be reached. Disregard if you aren't using Artifacts in your pipeline."
     $azureDevOpsArtifactsUnreachableUris | ForEach-Object { Write-Output $_ }
 }
 
