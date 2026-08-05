@@ -12,7 +12,7 @@ ms.topic: overview
 
 The following section describes new features in development for Managed DevOps Pools.
 
-* **Instance Mix**: Instance Mix allows you to specify multiple Azure Virtual Machine (VM) sizes for a single Managed DevOps Pool. Instead of being limited to a single VM size, you can define up to five VM sizes, which increases the likelihood of successful provisioning and provides more flexibility in how compute resources are allocated across the pool. This feature is built on top of [Azure Virtual Machine Scale Sets Instance Mix capabilities](/azure/virtual-machine-scale-sets/instance-mix-overview) and primarily helps improve resiliency and provisioning reliability. **Planned for July 2026.**
+* **Instance Mix**: Instance Mix allows you to specify multiple Azure Virtual Machine (VM) sizes for a single Managed DevOps Pool. Instead of being limited to a single VM size, you can define up to five VM sizes, which increases the likelihood of successful provisioning and provides more flexibility in how compute resources are allocated across the pool. This feature is built on top of [Azure Virtual Machine Scale Sets Instance Mix capabilities](/azure/virtual-machine-scale-sets/instance-mix-overview) and primarily helps improve resiliency and provisioning reliability. **Planned for August 2026.**
 
 * **Purge agents**: We're adding the ability for you to manually recycle your agents if desired. **Planned for August 2026.**
 
