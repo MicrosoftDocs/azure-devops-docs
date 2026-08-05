@@ -368,7 +368,7 @@ Confirm that you can use a subnet with Managed DevOps Pools by running the follo
 
 To run the script with PowerShell Core, or PowerShell 5 or later, save the following script as `ValidateMDPEndpoints.ps1`. Run the following PowerShell command: `.\ValidateMDPEndpoints.ps1 -organization "<your-organization>"`.
 
-If your workload matches any of the items described in [Required endpoints for some Azure DevOps features](#required-endpoints-for-some-azure-devops-features), [Azure-related endpoints](#azure-related-endpoints), or [Akamai CDN delivery IPs](#akamai-cdn-delivery-ips), add the URLs described in those sections to the script to validate that your agent access.
+If your workload matches any of the items described in [Required endpoints for some Azure DevOps features](#required-endpoints-for-some-azure-devops-features), [Azure-related endpoints](#azure-related-endpoints), or [Akamai CDN delivery IPs](#akamai-cdn-delivery-ips), add the URLs described in those sections to the script to validate that your agent has access.
 
 ```powershell
 # ValidateMDPEndpoints.ps1
@@ -431,8 +431,9 @@ $managedDevOpsPoolsControlPlaneUris = @(
 $unreachableUris = @()
 foreach ($uri in $azureDevOpsUris) {
     try {
-        $hostName = ($uri -replace "^https?://", "") -replace "/.*", ""
-        $connection = Test-NetConnection -ComputerName $hostName -Port 443 -WarningAction SilentlyContinue
+    $uriWithScheme = if ($uri -match "^https?://") { $uri } else { "https://$uri" }
+    $parsedUri = [System.Uri]$uriWithScheme
+    $connection = Test-NetConnection -ComputerName $parsedUri.Host -Port $parsedUri.Port -WarningAction SilentlyContinue
         if (-not $connection.TcpTestSucceeded) {
             $unreachableUris += $uri
         }
@@ -448,8 +449,9 @@ if ($unreachableUris.Count -eq 0) {
 }
 foreach ($uri in $managedDevOpsPoolsControlPlaneUris) {
     try {
-        $hostName = ($uri -replace "^https?://", "") -replace "/.*", ""
-        $connection = Test-NetConnection -ComputerName $hostName -Port 443 -WarningAction SilentlyContinue
+    $uriWithScheme = if ($uri -match "^https?://") { $uri } else { "https://$uri" }
+    $parsedUri = [System.Uri]$uriWithScheme
+    $connection = Test-NetConnection -ComputerName $parsedUri.Host -Port $parsedUri.Port -WarningAction SilentlyContinue
 
         if (-not $connection.TcpTestSucceeded) {
             $unreachableUris += $uri
