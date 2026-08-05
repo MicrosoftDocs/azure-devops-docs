@@ -8,7 +8,7 @@ ms.topic: how-to
 ms.author: laurajiang
 author: laurajjiang
 monikerRange: 'azure-devops'
-ms.date: 08/03/2026
+ms.date: 08/05/2026
 ms.custom: cross-service
 ---
 
@@ -62,7 +62,13 @@ To monitor your daily charges, go to **Subscription** > **Cost Management** > **
 
 ## Enable Copilot Autofix
 
-Enable Copilot Autofix per repository as part of your Code Security settings. 
+You can enable Copilot Autofix at the organization, project, or repository level. When you enable Autofix at a broader scope, the setting applies to all repositories within that scope. You can turn it on once instead of configuring each repository individually.
+
+- **Organization** — enable Autofix for all repositories in the organization from **Organization settings** > **Repositories**.
+- **Project** — enable Autofix for all repositories in a project from **Project settings** > **Repositories**.
+- **Repository** — enable Autofix for a single repository by using the following steps.
+
+To enable Copilot Autofix for a repository as part of your Code Security settings:
 
 1. Sign in to your Azure DevOps organization (`https://dev.azure.com/{yourorganization}`).
 1. Select **Project settings** > **Repositories**, and then select the repository you want to configure.
@@ -85,9 +91,15 @@ After you enable Copilot Autofix, you can generate a fix from any supported code
 
 :::image type="content" source="media/advanced-security-autofix-generate-fix.png" lightbox="media/advanced-security-autofix-generate-fix.png" alt-text="Screenshot of a code scanning alert detail view with the Generate fix button in the upper right.":::
 
+While Copilot Autofix works on the fix, the alert detail view shows that the fix is in progress. Copilot Autofix opens a pull request when the fix is ready.
+
+:::image type="content" source="media/github-advanced-security-code-scanning-autofix/autofix-fix-in-progress.png" lightbox="media/github-advanced-security-code-scanning-autofix/autofix-fix-in-progress.png" alt-text="Screenshot of code scanning alert detail view showing Copilot Autofix working on a fix before it opens a pull request.":::
+
 Copilot Autofix generates the fix and opens a pull request from a branch named `copilot-autofix/...`. The pull request is labeled with a **Copilot Autofix** tag, which you can use to identify Autofix pull requests in the pull requests list.
 
 For CodeQL alerts, the pull request appears automatically under **Related pull requests** on the alert detail view and continues to update as generation and completion progress, so you don't need to refresh the page.
+
+:::image type="content" source="media/github-advanced-security-code-scanning-autofix/autofix-related-pull-request.png" lightbox="media/github-advanced-security-code-scanning-autofix/autofix-related-pull-request.png" alt-text="Screenshot of code scanning alert detail view showing an active Autofix pull request under Related pull requests.":::
 
 If Copilot Autofix doesn't produce any code changes for the alert, it doesn't create a branch or a pull request, and it doesn't link a pull request on the alert detail view. In this case, remediate the alert manually. For more information, see [When a fix isn't available](#when-a-fix-isnt-available).
 
@@ -97,7 +109,7 @@ The pull request that Copilot Autofix opens behaves like any other Azure Repos p
 
 :::image type="content" source="media/advanced-security-autofix-pull-request.png" lightbox="media/advanced-security-autofix-pull-request.png" alt-text="Screenshot of a pull request created by Copilot Autofix, showing the alert ID, severity, and fix details in the description.":::
 
-The **Copilot Autofix** label identifies autofix pull requests. Earlier previews identified these pull requests by adding a suffix to the pull request title.
+The **Copilot Autofix** label identifies autofix pull requests.
 
 1. Open the pull request from the alert's **Related pull requests** section, or from **Repos** > **Pull requests**.
 1. Review the proposed change in the **Files** tab across all affected files.
@@ -109,14 +121,26 @@ After the pull request merges and the next code scanning run completes, the aler
 > [!TIP]
 > A generated fix is a starting point, not a final answer. Treat the pull request like any other change: review it, test it, and request additional reviewers as needed before you merge.
 
+## When a run fails
+
+If a Copilot Autofix run can't complete, the alert shows a prominent failure state so you can quickly see that the run didn't succeed. From the failure state, you can retry the run to generate a new fix.
+
+:::image type="content" source="media/github-advanced-security-code-scanning-autofix/autofix-run-failure-state.png" lightbox="media/github-advanced-security-code-scanning-autofix/autofix-run-failure-state.png" alt-text="Screenshot of a code scanning alert showing a Copilot Autofix run in a failed state with the option to retry the run.":::
+
+A run can fail for transient reasons, or when the run doesn't produce a usable code change. Retry the run to generate the fix again.
+
 ## When a fix isn't available
 
 Copilot Autofix can't generate a fix for every alert. A fix might not be available when:
 
 - The alert type isn't currently supported by Copilot Autofix.
-- Copilot determines that the alert is a false positive.
+- Copilot determines that the alert could be a false positive.
 - A custom query or a third-party tool, rather than CodeQL, generates the alert.
 - Copilot Autofix runs but doesn't produce any code changes. In this case, no branch or pull request is created.
+
+If Copilot Autofix determines that the alert could be a false positive and doesn't produce any changes, the alert detail view shows the result. You can review the run or retry the fix.
+
+:::image type="content" source="media/github-advanced-security-code-scanning-autofix/autofix-no-changes-produced.png" lightbox="media/github-advanced-security-code-scanning-autofix/autofix-no-changes-produced.png" alt-text="Screenshot of code scanning alert detail view showing that Copilot determined the alert could be a false positive and produced no fix, with options to view the run or retry the fix.":::
 
 When a fix isn't available, use the **Recommendation** and **Example** sections of the alert to remediate it or dismiss the alert manually. For more information, see [Alert details](github-advanced-security-code-scanning.md#alert-details).
 
