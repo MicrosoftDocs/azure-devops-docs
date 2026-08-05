@@ -197,7 +197,7 @@ Core tools are always available unless noted otherwise.
 | `core_list_group_members` | List direct members and child groups of an Azure DevOps group |
 
 > [!NOTE]
-> `core_list_group_members` is currently available only to MCP Insiders by using the `X-MCP-Insiders` header.
+> Only MCP Insiders can use `core_list_group_members` by using the `X-MCP-Insiders` header.
 
 ### Work
 
