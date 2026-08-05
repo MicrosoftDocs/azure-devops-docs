@@ -390,6 +390,9 @@ $azureDevOpsUris = @(
     "https://${organization}.vssps.visualstudio.com",
     "https://download.agent.dev.azure.com"
 )
+$azureDevOpsArtifactsUris = @(
+    "https://${organization}.vsblob.visualstudio.com"
+)
 $managedDevOpsPoolsControlPlaneUris = @(
     # List of agent queue endpoints - maps to *.queue.core.windows.net
     "https://rmprodaedefaultcq.queue.core.windows.net",
@@ -405,7 +408,7 @@ $managedDevOpsPoolsControlPlaneUris = @(
     "https://rmproduksdefaultcq.queue.core.windows.net",
     "https://rmprodwus3defaultcq.queue.core.windows.net",
     # CDN for downloading the Managed DevOps Pools agent - maps to *.prod.managedevops.microsoft.com
-    "rm-agent.prod.manageddevops.microsoft.com"
+    "rm-agent.prod.manageddevops.microsoft.com",
     # List of control plane endpoints - maps to *.manageddevops.microsoft.com
     "default.ae.prod.manageddevops.microsoft.com",
     "default.brs.prod.manageddevops.microsoft.com",
@@ -418,9 +421,9 @@ $managedDevOpsPoolsControlPlaneUris = @(
     "default.sea.prod.manageddevops.microsoft.com",
     "default.szn.prod.manageddevops.microsoft.com",
     "default.uks.prod.manageddevops.microsoft.com",
-    "default.wus3.prod.manageddevops.microsoft.com",
-    # Endpoints required for provisioning Linux agents
-    # Disregard these if you are using Windows agents
+    "default.wus3.prod.manageddevops.microsoft.com"
+)
+$linuxAgentsUris = @(
     "http://azure.archive.ubuntu.com",
     "https://www.microsoft.com",
     "https://security.ubuntu.com",
@@ -428,43 +431,61 @@ $managedDevOpsPoolsControlPlaneUris = @(
     "https://ppa.launchpad.net",
     "https://dl.fedoraproject.org"
 )
-$unreachableUris = @()
-foreach ($uri in $azureDevOpsUris) {
-    try {
-    $uriWithScheme = if ($uri -match "^https?://") { $uri } else { "https://$uri" }
-    $parsedUri = [System.Uri]$uriWithScheme
-    $connection = Test-NetConnection -ComputerName $parsedUri.Host -Port $parsedUri.Port -WarningAction SilentlyContinue
-        if (-not $connection.TcpTestSucceeded) {
+
+function Test-EndpointCollection {
+    param (
+        [string[]]$Uris
+    )
+
+    $unreachableUris = @()
+
+    foreach ($uri in $Uris) {
+        try {
+            $uriWithScheme = if ($uri -match "^https?://") { $uri } else { "https://$uri" }
+            $parsedUri = [System.Uri]$uriWithScheme
+            $connection = Test-NetConnection -ComputerName $parsedUri.Host -Port $parsedUri.Port -WarningAction SilentlyContinue
+
+            if (-not $connection.TcpTestSucceeded) {
+                $unreachableUris += $uri
+            }
+        } catch {
             $unreachableUris += $uri
         }
-    } catch {
-        $unreachableUris += $uri
     }
+
+    return $unreachableUris
 }
-if ($unreachableUris.Count -eq 0) {
+
+$azureDevOpsUnreachableUris = @(Test-EndpointCollection -Uris $azureDevOpsUris)
+if ($azureDevOpsUnreachableUris.Count -eq 0) {
     Write-Output "All Azure DevOps endpoints are reachable."
 } else {
     Write-Output "The following Azure DevOps endpoints could not be reached:"
-    $unreachableUris | ForEach-Object { Write-Output $_ }
+    $azureDevOpsUnreachableUris | ForEach-Object { Write-Output $_ }
 }
-foreach ($uri in $managedDevOpsPoolsControlPlaneUris) {
-    try {
-    $uriWithScheme = if ($uri -match "^https?://") { $uri } else { "https://$uri" }
-    $parsedUri = [System.Uri]$uriWithScheme
-    $connection = Test-NetConnection -ComputerName $parsedUri.Host -Port $parsedUri.Port -WarningAction SilentlyContinue
 
-        if (-not $connection.TcpTestSucceeded) {
-            $unreachableUris += $uri
-        }
-    } catch {
-        $unreachableUris += $uri
-    }
+$azureDevOpsArtifactsUnreachableUris = @(Test-EndpointCollection -Uris $azureDevOpsArtifactsUris)
+if ($azureDevOpsArtifactsUnreachableUris.Count -eq 0) {
+    Write-Output "Azure DevOps Artifacts endpoints are reachable."
+} else {
+    Write-Output "The following Azure DevOps Artifactsendpoints could not be reached. Disregard these if you aren't using Artifacts in your pipeline."
+    $azureDevOpsArtifactsUnreachableUris | ForEach-Object { Write-Output $_ }
 }
-if ($unreachableUris.Count -eq 0) {
-    Write-Output "All Azure Managed DevOps Pools endpoints are reachable."
+
+$managedDevOpsPoolsUnreachableUris = @(Test-EndpointCollection -Uris $managedDevOpsPoolsControlPlaneUris)
+if ($managedDevOpsPoolsUnreachableUris.Count -eq 0) {
+    Write-Output "All Managed DevOps Pools endpoints are reachable."
 } else {
     Write-Output "The following Managed DevOps Pools endpoints could not be reached:"
-    $unreachableUris | ForEach-Object { Write-Output $_ }
+    $managedDevOpsPoolsUnreachableUris | ForEach-Object { Write-Output $_ }
+}
+
+$linuxAgentsUnreachableUris = @(Test-EndpointCollection -Uris $linuxAgentsUris)
+if ($linuxAgentsUnreachableUris.Count -eq 0) {
+    Write-Output "All Linux agent provisioning endpoints are reachable."
+} else {
+    Write-Output "The following Linux agent provisioning endpoints could not be reached. Disregard if you are using only Windows agents."
+    $linuxAgentsUnreachableUris | ForEach-Object { Write-Output $_ }
 }
 ```
 
