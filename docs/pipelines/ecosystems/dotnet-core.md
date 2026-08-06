@@ -677,7 +677,6 @@ To run tests and publish code coverage with Coverlet:
   - task: UseDotNet@2
     inputs:
       version: '8.x'
-      includePreviewVersions: true # Required for preview versions
     
   - task: DotNetCoreCLI@2
     displayName: 'dotnet build'
