@@ -261,14 +261,6 @@ The following URL is required if you're migrating from Azure DevOps Server to th
 https://dataimport.dev.azure.com
 ```
 
-> [!NOTE]
-> Azure DevOps uses Content Delivery Networks (CDNs) to serve static content. Users in **China** should also add the following domain URLs to an allowlist:
->
-> ``` NuGetDomainURLs
-> https://*.vsassetscdn.azure.cn
-> https://*.gallerycdn.azure.cn
-> ```
-
 We recommend you open port `443` to all traffic on the following IP addresses and domains. We also recommend you open port `22` to a smaller subset of targeted IP addresses.
 
 **Port configuration summary:**
