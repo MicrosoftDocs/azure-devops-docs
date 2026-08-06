@@ -169,7 +169,7 @@ PAT connections, including connections that use fine-grained PATs, don't support
 - Pull request status checks, which require a GitHub App connection.
 - [GitHub Copilot integration with Azure Boards](work-item-integration-github-copilot.md), which requires GitHub App authentication.
 
-### Adding the connection
+### Create a connection
 
 1. Select **Personal Access Token** in the **New Connection** dialog. 
 
