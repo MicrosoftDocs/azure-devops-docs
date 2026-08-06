@@ -7,7 +7,7 @@ ms.topic: how-to
 ms.author: chcomley
 author: chcomley
 monikerRange: 'azure-devops'
-ms.date: 07/31/2026
+ms.date: 08/06/2026
 #customer intent: As a migration operator, I want to authenticate, validate, and start an ELM so the initial sync to GitHub Enterprise Cloud begins successfully.
 ---
 
@@ -23,7 +23,7 @@ After you complete the [prerequisites](prerequisites.md), authenticate into Azur
 |---|---|
 | Azure DevOps Repository GUID | Obtained from the `az repos show --query id` command for your Azure DevOps repository, or from the Azure DevOps portal repository settings. |
 | Self-hosted Linux agent | Agent installed and registered in your Azure DevOps project, and running (**Online**) under **Project Settings** > **Agent pools**. |
-| Azure DevOps Service connection to GitHub | Created in Azure DevOps with GitHub Enterprise Admin's PAT. |
+| Install ELM app from GitHub Marketplace | The ELM app is installed at both the GitHub enterpriese and organization levels. |
 | GitHub Personal Access Token | Generated with required scopes: `repo`, `admin:org`, `delete_repo`. Token must be valid during migration (up to 21 days). |
 | Azure DevOps permissions | The migration operator must have the Enterprise Live Migrations: Manage Migrations permission. |
 | Network access | Firewall rules allow the agent machine to communicate with both Azure DevOps (`dev.azure.com`) and GitHub endpoints. |
@@ -145,8 +145,6 @@ Start with this base command for every migration:
 az devops migrations create --org https://dev.azure.com/<org>
                             --repository-id <repo-guid>
                             --target-repository https://github.com/<org>/<repo>
-                            --github-token <github-pat>
-                            --service-endpoint-id <service-connection-guid>
                             --agent-pool <agent-pool-name>
 ```
 
@@ -188,7 +186,6 @@ Look for:
    - **Target repository**: Enter the GitHub repository URL in the format `https://<enterpriseUrl>/<orgname>/<repo>`.
    - **GitHub token**: Paste your GitHub personal access token.
    - **Customize target repository names for all selected repos** (optional): Add a prefix and/or suffix. Don't use spaces in repository names.
-   - **Service connection**: Select the GitHub service connection created in prerequisites.
    - **Agent pool**: Select the self-hosted Linux agent pool where your migration agent is running.
    - **Create a Boards connection** (optional): Select if you want ELM to create a Boards connection.
    - **Automatically discover and rewire pipelines** (optional): Select to use pipeline rewiring.
