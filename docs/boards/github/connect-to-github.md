@@ -7,7 +7,7 @@ ms.topic: how-to
 ms.author: chcomley
 author: chcomley
 monikerRange: 'azure-devops'
-ms.date: 03/24/2026
+ms.date: 08/06/2026
 ms.custom: sfi-image-nochange, pat-reduction
 ai-usage: ai-assisted
 ---
@@ -133,8 +133,43 @@ To change the configuration or manage the Azure Boards app for GitHub, see [Chan
 
 [!INCLUDE [use-microsoft-entra-reduce-pats](../../includes/use-microsoft-entra-reduce-pats.md)]
 
-> [!TIP]  
-> When you create your GitHub PAT, include these scopes: `repo, read:user, user:email, admin:repo_hook`. 
+GitHub supports fine-grained and classic PATs. Fine-grained PATs provide more control over repository access and permissions.
+
+### Fine-grained PAT permissions
+
+The account that creates the fine-grained PAT must have administrator access to each repository you connect. When you [create a fine-grained PAT](https://docs.github.com/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens#creating-a-fine-grained-personal-access-token), select the repositories to connect and grant the following repository permissions:
+
+| Permission | Access | Used for |
+|------------|--------|----------|
+| **Metadata** | Read-only | Accessing repository metadata. GitHub automatically requires this permission when you select repository permissions. |
+| **Contents** | Read and write | Listing commits to link to work items and creating branches from work items. |
+| **Webhooks** | Read and write | Creating and administering webhooks for connection updates and secret rotation. |
+| **Pull requests** | Read and write | Listing pull requests to link or mention in work item comments and adding **AB#** links to pull request descriptions. |
+| **Issues** | Read and write | Optional. Required to list GitHub Issues and add **AB#** links to issue descriptions. |
+
+If the resource owner of the fine-grained PAT is a GitHub organization, also grant the following organization permission:
+
+| Permission | Access | Used for |
+|------------|--------|----------|
+| **Members** | Read-only | Listing the organization during connection administration. |
+
+> [!IMPORTANT]
+> Fine-grained PAT permissions don't grant the token owner additional repository access. The token owner must have administrator access to each connected repository so Azure Boards can administer webhooks and rotate webhook secrets. GitHub organization policies can further restrict or require approval for fine-grained PATs.
+
+If a required permission is missing, only some integration features might work. Permission changes can also take effect after a delay. For example, after you remove **Webhooks** write access, existing webhooks can continue to work until the next webhook secret rotation.
+
+### Classic PAT scopes
+
+For a classic PAT, include these scopes: `repo, read:user, user:email, admin:repo_hook`.
+
+### PAT connection limitations
+
+PAT connections, including connections that use fine-grained PATs, don't support the following features:
+
+- Pull request status checks, which require a GitHub App connection.
+- [GitHub Copilot integration with Azure Boards](work-item-integration-github-copilot.md), which requires GitHub App authentication.
+
+### Create a connection
 
 1. Select **Personal Access Token** in the **New Connection** dialog. 
 
