@@ -7,7 +7,7 @@ ms.topic: how-to
 ms.author: chcomley
 author: chcomley
 monikerRange: 'azure-devops'
-ms.date: 06/01/2026
+ms.date: 08/06/2026
 #customer intent: As a migration operator, I want to schedule and run cutover so that GitHub becomes the authoritative system of record.
 ---
 
@@ -19,8 +19,6 @@ After the initial sync finishes, your repository is ready for cutover. Complete 
 
 > [!IMPORTANT]
 > Cutover typically completes in under 30 minutes, during which the Azure DevOps repository is read-only. While the repository is read-only, pushes and pull request updates are blocked, but users can still browse and clone. Notify all affected teams before you schedule cutover.
-
-<!-- TODO: Confirm with Soo: (1) the "typically under 30 minutes" duration matches what we say in overview.md and is the current measured/expected behavior; (2) the read-only behavior is accurate — pushes and PR updates blocked, browse and clone still allowed. Adjust if any of those assumptions are wrong. -->
 
 ## Before you schedule cutover
 
@@ -79,7 +77,7 @@ Wait until the migration shows `status: Succeeded` and `stage: Migrated`.
 
 ## Review for cutover
 
-If unresolved failures remain when the scheduled cutover time arrives, ELM moves the migration to **ReviewForCutover** instead of continuing automatically. For example, this condition can happen when some pull requests can't be migrated. In this state, you must review the failures and explicitly decide whether to proceed.
+If pipeline rewiring is enabled or unresolved failures remain at the scheduled cutover time, ELM pauses the migration in **ReviewForCutover** instead of proceeding automatically. For example, this condition can occur when some pull requests can't be migrated. Review the failures, and then explicitly choose whether to continue.
 
 ### Review cutover failures
 
@@ -120,9 +118,12 @@ If you decide to continue, approve the cutover by accepting the number of items 
 az devops migrations cutover approve --org https://dev.azure.com/<org>
                                      --repository-id <repo-guid>
                                      --accept-failures <N>
+                                     --pipelines-verified
 ```
 
 Set `<N>` to a value greater than or equal to `totalUnprocessedCount` from the cutover review.
+
+Include `--pipelines-verified` when the cutover review returns `requiresPipelineVerificationAcknowledgment: true`. This flag confirms that you reviewed and verified all rewired pipelines. You must supply at least one of `--accept-failures` or `--pipelines-verified`.
 
 > [!WARNING]
 > Approval is irreversible. There's no API to revoke an approval. If you approve by mistake, the only recovery path is `az devops migrations abandon` followed by recreating the migration.
