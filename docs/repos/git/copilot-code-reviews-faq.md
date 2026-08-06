@@ -81,7 +81,7 @@ A: Review the failed job logs:
 1. Go to **Organization settings** > **Agent pools**.
 1. Select the agent pool used to run Copilot code reviews. The default agent pool is **Azure Pipelines**.
 1. Find and open the failed job.
-4. Review the raw logs in JSON format to identify the cause of the failure.
+1. Review the raw logs in JSON format to identify the cause of the failure.
 
 ## Troubleshoot custom instructions
 
