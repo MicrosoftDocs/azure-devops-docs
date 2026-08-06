@@ -209,6 +209,8 @@ If your subscription is defined in an [Azure Government Cloud](/azure/azure-gove
 > [!TIP]
 > For PAT-free authentication to Azure DevOps resources from pipelines, use the [Azure DevOps service connection](add-devops-entra-service-connection.md), which uses Microsoft Entra workload identity federation.
 
+For a broader comparison of pipeline, app, and script authentication choices, see [Authentication methods for Azure DevOps](../../integrate/get-started/authentication/authentication-guidance.md). For Azure Pipelines access to Azure DevOps resources, the Azure DevOps service connection is the recommended starting point.
+
 Connect to an Azure DevOps organization or project collection using basic or token-based authentication.
 Use the following parameters to define and secure a connection to another Azure DevOps organization.
 
@@ -448,14 +450,14 @@ Then, complete the following steps to register your GitHub account in your profi
 2. Choose **Personal access tokens**.
 3. Select **Add** and enter the information required to create the token.
 
-### Incoming WebHook service connection
+### Incoming Webhook service connection
 
 Use the following parameters to create an incoming Webhook service connection.
 
 | Parameter | Description  |
 |--|--|
-| WebHook Name | Required. The name of the WebHook. |
-| Secret | Optional. The secret to use to authenticate with the WebHook. |
+| Webhook Name | Required. The name of the Webhook. |
+| Secret | Optional. The secret to use to authenticate with the Webhook. |
 | HTTP Header | Optional. The headers name on which checksum is sent. |
 | Connection name | Required. The name you use to refer to the service connection in task properties. If you're using YAML, use the name as the **azureSubscription** or the equivalent subscription name value in the script. |
 | Description | Optional. The description of the service connection. |
@@ -656,7 +658,7 @@ Use the following parameters when you define and secure a connection to a Python
 |Parameter | Description  |
 |-----------------------|-------------------|
 | Authentication method | Required. Select **Username and Password** or **Authentication Token**. |
-| Python repository url for upload | Required. The URL of the Python feed. |
+| Python repository URL for upload | Required. The URL of the Python feed. |
 | EndpointName | Required. The unique repository used for the twine upload. Spaces and special characters aren't allowed. |
 | Personal Access Token | see [Use personal access tokens](../../organizations/accounts/use-personal-access-tokens-to-authenticate.md). |
 | Username | Required when connection type is **Username and Password**. The username for authentication.|
@@ -679,7 +681,7 @@ When creating a service connection to a Service Fabric cluster, you have three o
 | Client Certificate | Required when connection type is **Certificate based**. Base64 encoding of the cluster's client certificate file. You can use the following PowerShell script to encode the certificate: `[System.Convert]::ToBase64String([System.IO.File]::ReadAllBytes("C:\path\to\certificate.pfx"))`|
 | Username|  Required when connection type is **Microsoft Entra credential**. The username for authentication.|
 | Password|  Required when connection type is **Microsoft Entra credential**. Optional when the authentication method is **Certificate based**. The certificate password.|
-| Unsecured | Optional. Select this option to skip windows security authentication. |
+| Unsecured | Optional. Select this option to skip Windows security authentication. |
 | Cluster SPN | Optional. Applicable if Unsecured is selected. |
 | Connection name | Required. The name you use to refer to the service connection in task properties. If you're using YAML, use the name as the **azureSubscription** or the equivalent subscription name value in the script. |
 | Description | Optional. The description of the service connection. |
@@ -695,7 +697,7 @@ When creating a service connection to a Service Fabric cluster, you have three o
 | Server Certificate Common Name(s) | Required when the Server Certificate Lookup is **Common Name**. The common names of the cluster's certificates used to verify the identity of the cluster. This value overrides the publish profile. Separate multiple common names with a comma (',')|
 | Client Certificate | Required when connection type is **Certificate based**. Base64 encoding of the cluster's client certificate file. You can use the following PowerShell script to encode the certificate: `[System.Convert]::ToBase64String([System.IO.File]::ReadAllBytes("C:\path\to\certificate.pfx"))`|
 | Password|  Required when connection type is **Microsoft Entra credential**. Optional when the authentication method is **Certificate based**. The certificate password.|
-| Unsecured | Optional. Select this option to skip windows security authentication. |
+| Unsecured | Optional. Select this option to skip Windows security authentication. |
 | Cluster SPN | Optional. Applicable if Unsecured is selected. |
 | Connection name | Required. The name you use to refer to the service connection in task properties. If you're using YAML, use the name as the **azureSubscription** or the equivalent subscription name value in the script. |
 | Description | Optional. The description of the service connection. |
@@ -706,7 +708,7 @@ When creating a service connection to a Service Fabric cluster, you have three o
 |  Parameter  | Description  |
 |-------------------------------|-------------------|
 | Cluster Endpoint | Required. The client connection endpoint for the cluster. Prefix the value with *tcp://*. This value overrides the publish profile. |
-| Unsecured | Optional. Select this option to skip windows security authentication. |
+| Unsecured | Optional. Select this option to skip Windows security authentication. |
 | Cluster SPN | Optional. Fully qualified domain SPN for gMSA account. This parameter is applicable only if **Unsecured** option is disabled. For more information about using gMSA with a cluster, see [Configure Windows security using gMSA](/azure/service-fabric/service-fabric-windows-cluster-windows-security#configure-windows-security-using-gmsa) |
 | Connection name | Required. The name you use to refer to the service connection in task properties. If you're using YAML, use the name as the **azureSubscription** or the equivalent subscription name value in the script. |
 | Description | Optional. The description of the service connection. |
