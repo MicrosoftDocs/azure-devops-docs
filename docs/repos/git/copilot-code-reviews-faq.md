@@ -5,7 +5,7 @@ description: Get answers to common questions and troubleshoot issues with GitHub
 ms.service: azure-devops-repos
 ms.topic: troubleshooting
 ai-usage: ai-assisted
-ms.date: 07/23/2026
+ms.date: 08/06/2026
 ms.author: chcomley
 author: chcomley
 ---
@@ -71,6 +71,17 @@ A: Yes. Copilot code review for Azure Repos is in limited preview:
 - Preview features can change or be removed without notice.
 - Preview features have no Service Level Agreement (SLA) and limited support.
 - Data residency for this feature doesn't align with Azure DevOps organization data residency boundaries.
+
+## Troubleshoot failed code reviews
+
+### Q: What should I do when a Copilot code review fails?
+
+A: Review the failed job logs:
+
+1. Go to **Organization settings** > **Agent pools**.
+1. Select the agent pool used to run Copilot code reviews. The default agent pool is **Azure Pipelines**.
+1. Find and open the failed job.
+1. Review the raw logs in JSON format to identify the cause of the failure.
 
 ## Troubleshoot custom instructions
 
