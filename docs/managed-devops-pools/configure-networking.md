@@ -411,8 +411,6 @@ $managedDevOpsPoolsControlPlaneUris = @(
     "https://rmprodszndefaultcq.queue.core.windows.net",
     "https://rmproduksdefaultcq.queue.core.windows.net",
     "https://rmprodwus3defaultcq.queue.core.windows.net",
-    # MDP worker binaries and startup scripts
-    "rmprodbuilds.azureedge.net",
     # CDN for downloading the Managed DevOps Pools agent - maps to *.prod.managedevops.microsoft.com
     "rm-agent.prod.manageddevops.microsoft.com",
     # List of control plane endpoints - maps to *.manageddevops.microsoft.com
