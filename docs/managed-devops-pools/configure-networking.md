@@ -411,6 +411,8 @@ $managedDevOpsPoolsControlPlaneUris = @(
     "https://rmprodszndefaultcq.queue.core.windows.net",
     "https://rmproduksdefaultcq.queue.core.windows.net",
     "https://rmprodwus3defaultcq.queue.core.windows.net",
+    # MDP worker binaries and startup scripts
+    "rmprodbuilds.azureedge.net",
     # CDN for downloading the Managed DevOps Pools agent - maps to *.prod.managedevops.microsoft.com
     "rm-agent.prod.manageddevops.microsoft.com",
     # List of control plane endpoints - maps to *.manageddevops.microsoft.com
@@ -470,7 +472,7 @@ if ($azureDevOpsUnreachableUris.Count -eq 0) {
 
 $azureDevOpsArtifactsUnreachableUris = @(Test-EndpointCollection -Uris $azureDevOpsArtifactsUris)
 if ($azureDevOpsArtifactsUnreachableUris.Count -eq 0) {
-    Write-Output "Azure DevOps Artifacts endpoints are reachable."
+    Write-Output "All Azure DevOps Artifacts endpoints are reachable."
 } else {
     Write-Output "The following Azure DevOps Artifactsendpoints could not be reached. Disregard if you aren't using Artifacts in your pipeline."
     $azureDevOpsArtifactsUnreachableUris | ForEach-Object { Write-Output $_ }
