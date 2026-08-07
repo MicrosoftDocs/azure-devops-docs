@@ -7,7 +7,7 @@ ms.topic: how-to
 ms.author: chcomley
 author: chcomley
 monikerRange: 'azure-devops'
-ms.date: 06/26/2026
+ms.date: 08/06/2026
 #customer intent: As a migration operator, I want to confirm all ELM prerequisites so I can start a migration without getting blocked on access, tooling, or authentication.
 ---
 
@@ -17,13 +17,10 @@ ms.date: 06/26/2026
 
 Before you use ELM, ensure the following requirements are met across Azure DevOps Services and GitHub Enterprise Cloud with data residency.
 
-> [!NOTE]
-> Prerequisite setup uses both the Azure DevOps portal and GitHub UI (for one-time tasks such as creating a service connection, registering an agent, and creating a PAT) and the command line (for installing tooling). Each section is labeled so you know where to work.
-
 ## Source and target repository requirements
 
 - The migration must originate from Azure DevOps Services (`dev.azure.com`). Azure DevOps Server isn't supported.
-- A target GitHub Enterprise Cloud with data residency organization must already exist.
+- A target GitHub Enterprise Cloud with data residency enterprise (`<enterprise>.ghe.com`) must already exist.
 - The target GitHub repository name must not be in use.
 
 To get the Azure DevOps repository GUID, choose one of the following tabs:
@@ -39,8 +36,8 @@ The command returns the repository GUID. Save it for use when you start the migr
 ### [Azure DevOps portal](#tab/azure-devops-portal)
 
 1. In your Azure DevOps project, go to **Project Settings** > **Repositories**.
-2. Select the repository you want to migrate.
-3. In the browser address bar, copy the GUID that appears after `repositoryId=`. It looks like `xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx`. Save it for use when you start the migration.
+1. Select the repository you want to migrate.
+1. In the browser address bar, copy the GUID that appears after `repositoryId=`. It looks like `xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx`. Save it for use when you start the migration.
 
 ---
 
@@ -52,56 +49,27 @@ The command returns the repository GUID. Save it for use when you start the migr
 |---|---|
 | Enterprise Live Migrations permission | You must have the **Enterprise Live Migrations: Manage Migrations** permission set to **Allow** at the repository level. To check, go to **Project Settings** > **Repositories** > **Security** and confirm your group or user account has this permission. If you don't, contact your Project Collection Administrator (PCA) or Project Administrator (PA) to request access. For more information, see [Set Git repository permissions](../git/set-git-repository-permissions.md). |
 | Self-hosted Linux agent availability | If no self-hosted Linux agent is available, a PCA or someone with permission to administer the agent queue must create and register one. |
-| Service connection creation permission | A user with the appropriate permissions must create the service connection that uses the GitHub PAT. |
+| Service connection creation permission | A user with the appropriate permissions must create the service connection for pipeline rewiring. |
 
-### GitHub Enterprise Cloud with Data Residency
+## Install the Azure DevOps ELM app from GitHub Marketplace 
+As a GitHub enterprise admin, install the Azure DevOps ELM app for both your enterprise and the target organization.
 
-- A GitHub Enterprise admin must create the personal access token (PAT) and be able to create a service connection in Azure DevOps. The admin then shares the service connection ID with the person running the migration.
+1. Go to `https://<enterprise>.ghe.com/apps/external-app/azure-devops-elm`.
+1. Select your target enterprise.
 
-## Authentication setup
+   :::image type="content" source="media/complete-prerequisites/select-target-enterprise-elm.png" alt-text="Screenshot of the Azure DevOps ELM installation page with the target enterprise and organizations available for selection.":::
 
-Create two PATs in GitHub:
+1. Select **Install**.
 
-- One PAT for the service connection.
-- One personal PAT for the migration operator.
+   :::image type="content" source="media/complete-prerequisites/select-install-azure-devops-elm.png" alt-text="Screenshot of the Azure DevOps ELM enterprise installation page with the migration permission and Install button.":::
 
-### Create the service connection PAT and service connection
+1. Return to `https://<enterprise>.ghe.com/apps/external-app/azure-devops-elm`, and then select your target organization.
 
-1. In GitHub, go to **Settings** > **Developer Settings** and select **Personal access tokens**.
-1. As a GitHub Enterprise admin, create a classic PAT with the following permissions:
+   :::image type="content" source="media/complete-prerequisites/select-target-organization-elm.png" alt-text="Screenshot of the Azure DevOps ELM installation page with the target organization available for selection.":::
 
-   - `repo` (all)
-   - `workflow`
-   - `read:org`
-   - `read:user`
-   - `admin:enterprise` (all)
+1. Select **All repositories** > **Install**.
 
-1. Copy the PAT and store it securely.
-1. Select **Configure SSO** to grant the PAT access to the target organization.
-1. Sign in to your Azure DevOps organization.
-1. Go to **Project Settings** > **Pipelines** > **Service connections**.
-1. Select **New service connection**, choose **GitHub Enterprise Server**, and then select **Next**.
-
-   :::image type="content" source="media/complete-prerequisites/github-enterprise-server-service-connection.png" alt-text="Screenshot showing the GitHub Enterprise Server service connection form in Azure DevOps service connection dialog." border="true":::
-
-1. For **Authentication method**, select **Personal Access Token**.
-1. Enter the GitHub Enterprise URL and paste the GitHub PAT from step 3.
-1. Verify and save the service connection.
-1. Open the service connection and copy the ID. You need this ID when you start the migration.
-
-### Create the personal migration PAT in GitHub (GitHub portal)
-
-The person performing the migration creates this PAT and uses it to authenticate to GitHub.
-
-1. In GitHub, go to **Settings** > **Developer Settings** and select **Personal access tokens**.
-1. Create a classic PAT with the following scopes:
-
-   - `repo` (full)
-   - `workflow`
-   - `admin:org`
-   - `user:email`
-
-1. Copy the PAT and store it securely.
+   :::image type="content" source="media/complete-prerequisites/select-all-repositories-elm.png" alt-text="Screenshot of the Azure DevOps ELM organization installation page with All repositories selected and the Install button.":::
 
 ## Required tooling
 
@@ -193,15 +161,14 @@ Use this checklist if you plan to start and manage migration by using Azure DevO
 
 | Field | Example | Your value |
 |---|---|---|
-| Azure DevOps organization URL | `https://dev.azure.com/myorg` |  |
+| Azure DevOps organization URL | `https://dev.azure.com/<org>` |  |
 | Azure DevOps project name | `MyProject` |  |
 | Azure DevOps repository name | `my-repo` |  |
 | Azure DevOps repository GUID | `xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx` |  |
-| Target GitHub organization URL | `https://contoso.ghe.com/MyOrg` |  |
+| Target GitHub organization URL | `https://<enterprise>.ghe.com/<org>` |  |
 | Target repository name | `MyProject-MyRepo` |  |
-| Service connection ID | `cd32d354-xxxx-xxxx-xxxx-xxxx` |  |
 | Pipeline connection ID | `9f6aa94e-xxxx-xxxx-xxxx-xxxx` |  |
-| Self-hosted Linux agent pool name | `Default` |  |
+| Self-hosted Linux agent pool name | `<agent pool name>` |  |
 
 ## Next step
 
