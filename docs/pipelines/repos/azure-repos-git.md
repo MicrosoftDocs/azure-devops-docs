@@ -76,8 +76,6 @@ Continuous integration (CI) triggers cause a pipeline to run whenever you push a
 
 ### Skipping CI for individual pushes
 
-::: moniker range="<=azure-devops"
-
 You can also tell Azure Pipelines to skip running a pipeline that a push would normally trigger. Just include `[skip ci]` in the message or description of any of the commits that are part of a push, and Azure Pipelines will skip running CI for this push. You can also use any of the following variations.
 
 - `[skip ci]` or `[ci skip]`
@@ -87,7 +85,8 @@ You can also tell Azure Pipelines to skip running a pipeline that a push would n
 - `[skip azp]` or `[azp skip]`
 - `***NO_CI***`
 
-::: moniker-end
+> [!NOTE]
+> If you add a tag to a commit that has `[skip ci]` in its message, the pipeline runs on that commit if the tag matches the filters for that CI trigger.
 
 [!INCLUDE [ci-triggers](includes/ci-triggers5.md)]
 
