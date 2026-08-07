@@ -282,7 +282,7 @@ You can also use the REST API for this process.
    | **Service Connection Name** | Required. You'll use this value in your federated credential subject identifier. |
    | **Description** | Optional. The description of the service connection. |
    | **Environment** | Required. Choose a cloud environment to connect to. If you select **Azure Stack**, enter the environment URL, which is something like `https://management.local.azurestack.external`. |
-   | **Directory (tenant) ID** | Required. Enter the Tenant ID from your managed identity. |
+   | **Directory (tenant) ID** | Required. Enter the Tenant ID from your app registration. |
 
 1. Select **Next**.
 
