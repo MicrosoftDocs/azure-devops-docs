@@ -134,7 +134,16 @@ You can also use the REST API for this process.
 
     :::image type="content" source="media/workload-identity-manual-app-workload.png" alt-text="Screenshot that shows selecting the Workload Identity service connection for managed identity.":::
 
-1. For **Service connection name**, enter a value such as `uamanagedidentity`. You'll use this value in your federated credential subject identifier.
+1. In **Step 1: Basics**:
+
+    **Step 1: Basics** contains the following parameters. Enter or select the following parameters:
+
+   | Parameter | Description |
+   | --------- | ----------- |
+   | **Service Connection Name** | Required. You'll use this value in your federated credential subject identifier. |
+   | **Description** | Optional. The description of the service connection. |
+   | **Environment** | Required. Choose a cloud environment to connect to. If you select **Azure Stack**, enter the environment URL, which is something like `https://management.local.azurestack.external`. |
+   | **Directory (tenant) ID** | Required. Enter the Tenant ID from your managed identity. |
 
 1. Select **Next**.
 
@@ -146,8 +155,6 @@ You can also use the REST API for this process.
    | --------- | ----------- |
    | **Issuer** | Required. DevOps automatically creates the issuer URL. |
    | **Subject identifier** | Required. DevOps automatically creates the subject identifier. |
-   | **Environment** | Required. Choose a cloud environment to connect to. If you select **Azure Stack**, enter the environment URL, which is something like `https://management.local.azurestack.external`. |
-
 
     1. Select the **Scope Level**. Select **Subscription**, **Management Group**, or **Machine Learning Workspace**. [Management groups](/azure/azure-resource-manager/management-groups-overview) are containers that help you manage access, policy, and compliance across multiple subscriptions. A [Machine Learning Workspace](/azure/machine-learning/concept-workspace) is place to create machine learning artifacts.
     
@@ -175,13 +182,7 @@ You can also use the REST API for this process.
             | **ML Workspace Name** | Required. Enter the name of the existing Azure Machine Learning workspace. |
             | **ML Workspace Location** | Required. Enter the location of the existing Azure Machine Learning workspace. |    
     
-    1. In the **Authentication** section, enter or select the following parameters:
-    
-        | Parameter | Description |
-        | --------- | ----------- |
-        | **Application (client) ID** | Required. Enter the Client ID for your managed identity. |
-        | **Directory (tenant) ID** | Required. Enter the Tenant ID from your managed identity. |
-    
+    1. In the **Authentication** section, for **Application (client) ID**, enter the Client ID for your managed identity.
     
     1. In the **Security** section, if you select **Grant access permission to all pipelines**, all pipelines can use this connection. Don't use this option. Instead, [authorize each pipeline individually to use the service connection](../library/service-endpoints.md#authorize-pipelines).
 
@@ -272,7 +273,16 @@ You can also use the REST API for this process.
 
     :::image type="content" source="media/workload-identity-manual-app-workload.png" alt-text="Screenshot that shows selecting the Workload Identity service connection.":::
 
-1. For **Service connection name**, enter a value such as `uaappregistration`. You'll use this value in your federated credential subject identifier.
+1. In **Step 1: Basics**:
+
+    **Step 1: Basics** contains the following parameters. Enter or select the following parameters:
+
+   | Parameter | Description |
+   | --------- | ----------- |
+   | **Service Connection Name** | Required. You'll use this value in your federated credential subject identifier. |
+   | **Description** | Optional. The description of the service connection. |
+   | **Environment** | Required. Choose a cloud environment to connect to. If you select **Azure Stack**, enter the environment URL, which is something like `https://management.local.azurestack.external`. |
+   | **Directory (tenant) ID** | Required. Enter the Tenant ID from your managed identity. |
 
 1. Select **Next**.
 
@@ -284,7 +294,6 @@ You can also use the REST API for this process.
    | --------- | ----------- |
    | **Issuer** | Required. DevOps automatically creates the issuer URL. |
    | **Subject identifier** | Required. DevOps automatically creates the subject identifier. |
-   | **Environment** | Required. Choose a cloud environment to connect to. If you select **Azure Stack**, enter the environment URL, which is something like `https://management.local.azurestack.external`. |
 
 
     1. Select the **Scope Level**. Select **Subscription**, **Management Group**, or **Machine Learning Workspace**. [Management groups](/azure/azure-resource-manager/management-groups-overview) are containers that help you manage access, policy, and compliance across multiple subscriptions. A [Machine Learning Workspace](/azure/machine-learning/concept-workspace) is place to create machine learning artifacts.
@@ -313,13 +322,7 @@ You can also use the REST API for this process.
             | **ML Workspace Name** | Required. Enter the name of the existing Azure Machine Learning workspace. |
             | **ML Workspace Location** | Required. Enter the location of the existing Azure Machine Learning workspace. |    
     
-    1. In the **Authentication** section, enter or select the following parameters:
-    
-        | Parameter | Description |
-        | --------- | ----------- |
-        | **Application (client) ID** | Required. Enter the Application (client) ID for your app registration. |
-        | **Directory (tenant) ID** | Required. Enter the Directory (tenant) ID for your app registration. |
-    
+    1. In the **Authentication** section, for **Application (client) ID**, enter the Client ID for your app registration.    
     
     1. In the **Security** section, if you select **Grant access permission to all pipelines**, all pipelines can use this connection. Don't use this option. Instead, [authorize each pipeline individually to use the service connection](../library/service-endpoints.md#authorize-pipelines).
 
