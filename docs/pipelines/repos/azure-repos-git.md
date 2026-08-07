@@ -2,7 +2,7 @@
 title: Build Azure Repos Git repositories
 description: Using an Azure Repos Git repository with Azure Pipelines
 ms.topic: reference
-ms.date: 04/22/2026
+ms.date: 08/07/2026
 monikerRange: '<= azure-devops'
 ---
 
