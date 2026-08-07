@@ -19,7 +19,7 @@ Here is the behavior when you push a new branch (that matches the branch filters
 
 - If your pipeline has path filters, it will be triggered only if the new branch has changes to files that match that path filter.
 - If your pipeline does not have path filters, it will be triggered even if there are no changes in the new branch.
-- If your new branch was based on a branch that has a `[skip ci]` comment in the latest commit, the pipeline won't be triggered for the new branch, even if it matches the branch filters.
+- If your new branch is based on a branch that has a `[skip ci]` comment in the latest commit, the pipeline doesn't trigger for the new branch, even if it matches the branch filters.
 
 ### Wildcards
 
