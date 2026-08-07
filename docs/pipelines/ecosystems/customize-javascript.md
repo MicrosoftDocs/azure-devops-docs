@@ -550,9 +550,7 @@ To publish code coverage results to the server, add the [Publish code coverage r
 ```yaml
 - task: PublishCodeCoverageResults@1
   inputs: 
-    codeCoverageTool: Cobertura
     summaryFileLocation: '$(System.DefaultWorkingDirectory)/**/*coverage.xml'
-    reportDirectory: '$(System.DefaultWorkingDirectory)/**/coverage'
 ```
 
 #### [Classic](#tab/classic)
