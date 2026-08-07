@@ -136,7 +136,7 @@ You can also use the REST API for this process.
 
 1. In **Step 1: Basics**:
 
-    **Step 1: Basics** contains the following parameters. Enter or select the following parameters:
+    **Step 1: Basics**, enter or select the following parameters:
 
    | Parameter | Description |
    | --------- | ----------- |
@@ -149,7 +149,7 @@ You can also use the REST API for this process.
 
 1. In **Step 2: App registration details**:
 
-    **Step 2: App registration details** contains the following parameters. Enter or select the following parameters:
+    **Step 2: App registration details**, enter or select the following parameters:
 
    | Parameter | Description |
    | --------- | ----------- |
@@ -275,7 +275,7 @@ You can also use the REST API for this process.
 
 1. In **Step 1: Basics**:
 
-    **Step 1: Basics** contains the following parameters. Enter or select the following parameters:
+    **Step 1: Basics**, enter or select the following parameters:
 
    | Parameter | Description |
    | --------- | ----------- |
@@ -288,7 +288,7 @@ You can also use the REST API for this process.
 
 1. In **Step 2: App registration details**:
 
-    **Step 2: App registration details** contains the following parameters. Enter or select the following parameters:
+    **Step 2: App registration details**, enter or select the following parameters:
 
    | Parameter | Description |
    | --------- | ----------- |
