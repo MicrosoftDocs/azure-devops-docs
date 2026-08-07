@@ -86,7 +86,7 @@ You can also tell Azure Pipelines to skip running a pipeline that a push would n
 - `***NO_CI***`
 
 > [!NOTE]
-> If you add a tag to a commit that has `[skip ci]` in its message, the pipeline runs on that commit if the tag matches the tag filters for that CI trigger, even though the tag has a `[skip ci]` message.
+> If you add a tag to a commit that has `[skip ci]` in its message, the pipeline runs on that commit if the tag matches the tag filters for that CI trigger. The tag's message isn't evaluated, so the pipeline runs even if the tag has a `[skip ci]` message.
 
 [!INCLUDE [ci-triggers](includes/ci-triggers5.md)]
 
