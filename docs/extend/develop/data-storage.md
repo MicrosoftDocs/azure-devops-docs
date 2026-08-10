@@ -7,7 +7,7 @@ ms.topic: overview
 monikerRange: '<= azure-devops'
 ms.author: chcomley
 author: chcomley
-ms.date: 04/03/2026
+ms.date: 08/10/2026
 ai-usage: ai-assisted
 ---
 
@@ -123,19 +123,6 @@ Obtaining a document from a collection using its identifier is straightforward, 
 ```
 
 This operation tries to fetch a document with the ID "MyDocumentId" from the "MyCollection" collection. In the absence of a provided scope, the service defaults to using the collection scoped to the entire instance of this extension. If either this collection or a document with the specified ID doesn't exist, a 404 error is returned, which the extension should handle. The returned document is a JSON object that includes all its properties, along with the special ID and `__etag` properties used by the data storage service.
-
-```js
-    // Get data service
-    SDK.getService(SDK.getContributionId()).then(function(dataService) {
-        // Get document by id
-        dataService.getDocument("MyCollection", "MyDocumentId").then(function(doc) {
-            // Assuming document has a property named foo
-            console.log("Doc foo: " + doc.foo);
-        });
-    });
-```
-
-This call attempts to retrieve a document with the ID "MyDocumentId," from the collection "MyCollection." Since no scope is provided, the collection that the service uses gets scoped to the default of the entire instance of this extension. If this collection doesn't exist or a document with that ID doesn't exist, then a 404 gets returned, which the extension should handle. The document that is returned is a JSON object containing all of its own properties, in addition to the special ID and `__etag` properties used by the data storage service.
 
 ### Create a document
 
