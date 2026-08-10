@@ -10,7 +10,7 @@ ms.author: pliaros
 author: wisdeom
 ms.topic: how-to
 monikerRange: '<= azure-devops'
-ms.date: 04/23/2026
+ms.date: 08/10/2026
 ms.update-cycle: 1095-days
 ---
 
@@ -86,7 +86,7 @@ For web portal alternatives like copy, clone, and direct updates, see [Copy or c
    - **Step Expected**
    - **Area Path** — must match an existing path (for example, `MyProject\MyArea`)
    - **Assigned To** — valid user in your organization
-   - **State** — must be `Design`
+   - **State** — defaults to `Design`
 
    :::image type="content" source="media/bulk-import-test-case/import-wizard-mapping.png" alt-text="Screenshot of the import wizard showing field mapping interface.":::
 
