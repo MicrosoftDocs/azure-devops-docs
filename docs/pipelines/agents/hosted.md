@@ -2,7 +2,7 @@
 title: Microsoft-hosted agents for Azure Pipelines
 description: Learn about using the Microsoft-hosted agents provided in Azure Pipelines
 ms.topic: concept-article
-ms.date: 06/17/2026
+ms.date: 08/10/2026
 monikerRange: '<= azure-devops'
 ---
 
@@ -53,6 +53,7 @@ You can see the installed software for each Linux hosted agent image by choosing
 
 | Image | Classic Editor Agent Specification | YAML VM Image Label | Included software |
 | --- | --- | --- | --- |
+| Ubuntu 24.06 | *ubuntu-24.06* | `ubuntu-24.06` | [Link](https://github.com/actions/runner-images/blob/main/images/ubuntu/Ubuntu2406-Readme.md) |
 | Ubuntu 24.04 | *ubuntu-24.04* | `ubuntu-latest` OR `ubuntu-24.04` | [Link](https://github.com/actions/runner-images/blob/main/images/ubuntu/Ubuntu2404-Readme.md) |
 | Ubuntu 22.04 | *ubuntu-22.04* | `ubuntu-22.04` | [Link](https://aka.ms/ubuntu-22.04-readme) |
 
@@ -60,6 +61,7 @@ The `ubuntu-latest` image is the default image for YAML pipelines if no image is
 
 #### Linux images updates
 
+* The Ubuntu 24.06 hosted agent image is now available. Specify `ubuntu-24.06` in your pipeline configuration to use it.
 * [[Windows & Ubuntu] .NET 6 was removed from the images on August 1, 2025.](https://github.com/actions/runner-images/issues/12241)
 * [The Ubuntu 20.04 image is retired](https://devblogs.microsoft.com/devops/upcoming-updates-for-azure-pipelines-agents-images/#ubuntu).
 
