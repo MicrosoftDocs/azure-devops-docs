@@ -253,7 +253,7 @@ To publish test results, use the [Publish test results](/azure/devops/pipelines/
 
 ### Publish code coverage results
 
-If your test scripts run a code coverage tool such as [Istanbul](https://github.com/istanbuljs), add the [Publish code coverage results](/azure/devops/pipelines/tasks/reference/publish-code-coverage-results-v1) task. You can then see coverage metrics in the build summary and download HTML reports for further analysis.
+If your test scripts run a code coverage tool such as [Istanbul](https://github.com/istanbuljs), add the [Publish code coverage results](/azure/devops/pipelines/tasks/reference/publish-code-coverage-results-v2) task. You can then see coverage metrics in the build summary and download HTML reports for further analysis.
 
 The task expects Cobertura or JaCoCo reporting output. Ensure that your code coverage tool runs with the necessary options to generate the right output, for example `--report cobertura`.
 
@@ -545,7 +545,7 @@ To publish JUnit or xUnit test results to the server, add the [Publish test resu
     testRunTitle: 'Test results for JavaScript using gulp'
 ```
 
-To publish code coverage results to the server, add the [Publish code coverage results](/azure/devops/pipelines/tasks/reference/publish-code-coverage-results-v1) task. You can find coverage metrics in the build summary, and you can download HTML reports for further analysis.
+To publish code coverage results to the server, add the [Publish code coverage results](/azure/devops/pipelines/tasks/reference/publish-code-coverage-results-v2) task. You can find coverage metrics in the build summary, and you can download HTML reports for further analysis.
 
 ```yaml
 - task: PublishCodeCoverageResults@2
