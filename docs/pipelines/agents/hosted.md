@@ -2,7 +2,7 @@
 title: Microsoft-hosted agents for Azure Pipelines
 description: Learn about using the Microsoft-hosted agents provided in Azure Pipelines
 ms.topic: concept-article
-ms.date: 07/19/2026
+ms.date: 08/10/2026
 monikerRange: '<= azure-devops'
 ---
 
@@ -155,7 +155,7 @@ All of these machines have at least 10 GB of free disk space available for your 
 
 In some setups, you may need to know the range of IP addresses where agents are deployed. For instance, if you need to grant the hosted agents access through a firewall, you may wish to restrict that access by IP address. Because Azure DevOps uses the Azure global network, IP ranges vary over time. Microsoft publishes a [weekly JSON file](https://www.microsoft.com/download/details.aspx?id=56519) listing IP ranges for Azure datacenters, broken out by region. This file is updated weekly with new planned IP ranges. Only the latest version of the file is available for download. If you need previous versions, you must download and archive them each week as they become available. The new IP ranges become effective the following week. We recommend that you check back frequently (at least once every week) to ensure you keep an up-to-date list. If agent jobs begin to fail, a key first troubleshooting step is to make sure your configuration matches the latest list of IP addresses. The IP address ranges for the hosted agents are listed in the weekly file under `AzureCloud.<region>`, such as `AzureCloud.westus` for the West US region.
 
-Your hosted agents run within the same [Azure geography](https://azure.microsoft.com/global-infrastructure/geographies/) as your organization. For Microsoft-hosted agents, the mapping between the Azure geography and its regions differs from the standard Azure geography-to-regions mapping, but it honors the data residency restrictions. A hosted agent can be assigned from any of the mapped regions of your geography, as shown in the [Regions in each geography](#regions-in-each-geography) table. While your agent might run in the same region as your organization, it isn't guaranteed to do so. To obtain the complete list of possible IP ranges for your agent, you must allowlist the IP ranges for *all* of the regions mapped to your geography in the table, not just your organization's region.
+Your hosted agents run within the same [Azure geography](https://azure.microsoft.com/global-infrastructure/geographies/) as your organization. A hosted agent can run in any of the regions mapped to your geography, as shown in the [Regions in each geography](#regions-in-each-geography) table, and always honors data residency restrictions. While your agent might run in the same region as your organization, it isn't guaranteed to do so. To get the complete list of possible IP ranges for your agent, allowlist the IP ranges for *all* of the regions mapped to your geography in the table, not just your organization's region.
 
 To determine your geography, navigate to `https://dev.azure.com/<your_organization>/_settings/organizationOverview` and note your organization's region. Find the geography that contains that region in the [Regions in each geography](#regions-in-each-geography) table. Then use the IP ranges from the [weekly file](https://www.microsoft.com/download/details.aspx?id=56519) for every region listed for that geography.
 
@@ -164,10 +164,10 @@ To determine your geography, navigate to `https://dev.azure.com/<your_organizati
 
 ### Regions in each geography
 
-Microsoft-hosted agents are provisioned from the regions mapped to your organization's Azure geography. This mapping differs from the standard Azure geography-to-regions mapping, but it honors the data residency restrictions. Because your agent can be assigned from any of the mapped regions, you must allowlist the IP ranges for *every* region in your geography. The following table lists the regions mapped to each geography for Microsoft-hosted agents.
+Microsoft-hosted agents can run in any of the regions mapped to your organization's geography, and always honor data residency restrictions. Because your agent can run in any of these regions, allowlist the IP ranges for *every* region mapped to your geography. The following table lists these regions.
 
 > [!NOTE]
-> This geography-to-regions mapping is specific to Microsoft-hosted agents and follows data residency restrictions. It differs from the mapping shown on the [Azure geographies](https://azure.microsoft.com/global-infrastructure/geographies/) page. For example, the **Europe** geography maps to regions that the Azure geographies page lists under separate France, Sweden, Poland, Spain, Austria, and Belgium geographies. Organizations in the European Union are always assigned agents from regions within the EU data residency boundary.
+> Organizations in the European Union are always served agents from regions within the EU data residency boundary.
 
 | Geography | Regions |
 |-----------|---------|
@@ -176,19 +176,18 @@ Microsoft-hosted agents are provisioned from the regions mapped to your organiza
 | Canada | Canada Central, Canada East |
 | Europe | West Europe, North Europe, France Central, Sweden Central, Poland Central, Spain Central, Austria East, Belgium Central |
 | India | Central India, South India, West India |
-| Japan | Japan East, Japan West |
 | United Kingdom | UK South, UK West |
-| United States | Central US, East US, East US 2, North Central US, South Central US, West Central US, West US, West US 2, West US 3, East US 2 EUAP |
+| United States | Central US, East US, East US 2, North Central US, South Central US, West Central US, West US, West US 2, West US 3 |
 
 ### To identify the possible IP ranges for Microsoft-hosted agents
 
 1. Identify the [region for your organization](../../organizations/accounts/change-organization-location.md) in **Organization settings**.
 2. Find the geography that contains your organization's region in the [Regions in each geography](#regions-in-each-geography) table.
 3. For each region in your geography, locate its entry in the [weekly file](https://www.microsoft.com/download/details.aspx?id=56519) under the name `AzureCloud.<region>`, where `<region>` is the region name in lowercase with spaces removed. For example, **West US** is `AzureCloud.westus` and **France Central** is `AzureCloud.francecentral`.
-4. Retrieve the IP addresses for all regions in your geography from the [weekly file](https://www.microsoft.com/download/details.aspx?id=56519). If your region is **Brazil South**, you must include additional IP ranges based on your fallback geography, as described in the following note.
+4. Retrieve the IP addresses for all regions in your geography from the [weekly file](https://www.microsoft.com/download/details.aspx?id=56519). If your region is **Brazil South**, include additional IP ranges based on your fallback geography, as described in the following note.
 
 >[!NOTE]
->Due to capacity restrictions, some organizations in the **Brazil South** region may occasionally see their hosted agents located outside their expected geography. In these cases, in addition to including the IP ranges for all the regions in your geography as described in the previous section, additional IP ranges must be included for the regions in the capacity fallback geography.
+>Due to capacity restrictions, some organizations in the **Brazil South** region might occasionally see their hosted agents located outside their expected geography. In these cases, in addition to including the IP ranges for all the regions in your geography as described in the previous section, include additional IP ranges for the regions in the capacity fallback geography.
 >
 >If your organization is in the **Brazil South** region, your capacity fallback geography is **United States**, and you must include the IP ranges for all regions in the **United States** geography in addition to the IP ranges for all regions in the **Brazil South** geography.
 >
@@ -216,7 +215,7 @@ namespace WeeklyFileIPRanges
         {
             // United States geography has the following regions:
             // Central US, East US, East US 2, North Central US, South Central US,
-            // West Central US, West US, West US 2, West US 3, East US 2 EUAP
+            // West Central US, West US, West US 2, West US 3
             // For the current list of regions in each geography, see the
             // "Regions in each geography" table earlier in this article.
             List<string> USGeographyRegions = new List<string>
@@ -229,8 +228,7 @@ namespace WeeklyFileIPRanges
                 "westcentralus",
                 "westus",
                 "westus2",
-                "westus3",
-                "eastus2euap"
+                "westus3"
             };
 
             // Load the weekly file
