@@ -548,7 +548,7 @@ To publish JUnit or xUnit test results to the server, add the [Publish test resu
 To publish code coverage results to the server, add the [Publish code coverage results](/azure/devops/pipelines/tasks/reference/publish-code-coverage-results-v1) task. You can find coverage metrics in the build summary, and you can download HTML reports for further analysis.
 
 ```yaml
-- task: PublishCodeCoverageResults@1
+- task: PublishCodeCoverageResults@2
   inputs: 
     summaryFileLocation: '$(System.DefaultWorkingDirectory)/**/*coverage.xml'
 ```
