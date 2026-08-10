@@ -86,7 +86,7 @@ For web portal alternatives like copy, clone, and direct updates, see [Copy or c
    - **Step Expected**
    - **Area Path** — must match an existing path (for example, `MyProject\MyArea`)
    - **Assigned To** — valid user in your organization
-   - **State** — defaults to `Design`
+   - **State** — for a new test case, use a state in the `Proposed` state category for your process. The default state is `Design`. For an existing test case, use its current state or a valid next state defined by the workflow.
 
    :::image type="content" source="media/bulk-import-test-case/import-wizard-mapping.png" alt-text="Screenshot of the import wizard showing field mapping interface.":::
 
@@ -133,6 +133,8 @@ ID,Work Item Type,Title,Test Step,Step Action,Step Expected,Area Path,Assigned T
 ```
 
 Leave the **ID** column empty to create new test cases, or provide an existing ID to update. All rows for the same test case must share the same **Title** and field values.
+
+The example uses `Design`, the default state for new test cases. If your process uses a customized state in the `Proposed` state category, replace `Design` with that state.
 
 ::: moniker range="azure-devops"
 
