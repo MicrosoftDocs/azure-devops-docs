@@ -2,7 +2,7 @@
 title: Microsoft-hosted agents for Azure Pipelines
 description: Learn about using the Microsoft-hosted agents provided in Azure Pipelines
 ms.topic: concept-article
-ms.date: 06/17/2026
+ms.date: 08/10/2026
 monikerRange: '<= azure-devops'
 ---
 
@@ -53,6 +53,7 @@ You can see the installed software for each Linux hosted agent image by choosing
 
 | Image | Classic Editor Agent Specification | YAML VM Image Label | Included software |
 | --- | --- | --- | --- |
+| Ubuntu 26.04<br>*(public preview)* | *ubuntu-26.04* | `ubuntu-26.04` | [Link](https://github.com/actions/runner-images/blob/main/images/ubuntu/Ubuntu2604-Readme.md) |
 | Ubuntu 24.04 | *ubuntu-24.04* | `ubuntu-latest` OR `ubuntu-24.04` | [Link](https://github.com/actions/runner-images/blob/main/images/ubuntu/Ubuntu2404-Readme.md) |
 | Ubuntu 22.04 | *ubuntu-22.04* | `ubuntu-22.04` | [Link](https://aka.ms/ubuntu-22.04-readme) |
 
@@ -60,6 +61,7 @@ The `ubuntu-latest` image is the default image for YAML pipelines if no image is
 
 #### Linux images updates
 
+* The Ubuntu 26.04 hosted agent image is in public preview. Specify `ubuntu-26.04` in your pipeline configuration to use it.
 * [[Windows & Ubuntu] .NET 6 was removed from the images on August 1, 2025.](https://github.com/actions/runner-images/issues/12241)
 * [The Ubuntu 20.04 image is retired](https://devblogs.microsoft.com/devops/upcoming-updates-for-azure-pipelines-agents-images/#ubuntu).
 
@@ -69,7 +71,7 @@ You can see the installed software for each macOS hosted agent by choosing the *
 
 | Image | Classic Editor Agent Specification | YAML VM Image Label | Included software |
 | --- | --- | --- | --- |
-| macOS 26 Tahoe<br>*(public preview)* | *macOS-26* | `macOS-26` | [Link](https://github.com/actions/runner-images/blob/main/images/macos/macos-26-Readme.md) |
+| macOS 26 Tahoe | *macOS-26* | `macOS-26` | [Link](https://github.com/actions/runner-images/blob/main/images/macos/macos-26-Readme.md) |
 | macOS 15 Sequoia | *macOS-15* | `macOS-latest` OR `macOS-15` | [Link](https://github.com/actions/runner-images/blob/main/images/macos/macos-15-Readme.md) |
 | macOS 14 Sonoma<br>*[macOS 14 Sonoma hosted image deprecation schedule](./hosted-deprecation-schedule.md?tabs=macos-images#macos-14-sonoma-hosted-image-deprecation-schedule)* | *macOS-14* | `macOS-14` | [Link](https://aka.ms/macOS-14-readme) |
 
@@ -80,7 +82,7 @@ You can see the installed software for each macOS hosted agent by choosing the *
 
 #### macOS images updates
 
-* The macOS 26 (Intel) Azure Pipelines hosted agent image is in public preview.
+* The macOS 26 (Intel) Azure Pipelines hosted agent image is now generally available.
 * [[macOS] Deprecation of simulator runtimes for Xcode 16.3 and older on macOS 15 on January 12th, 2026.](https://github.com/actions/runner-images/issues/13392)
 * The macOS 14 Sonoma image will be deprecated starting July 6, 2026. For more information, see [macOS 14 Sonoma hosted image deprecation schedule](./hosted-deprecation-schedule.md?tabs=macos-images#macos-14-sonoma-hosted-image-deprecation-schedule).
 * The macOS 15 Sequoia ARM64 limited public preview has been paused.
