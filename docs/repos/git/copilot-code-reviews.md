@@ -196,7 +196,7 @@ For answers to frequently asked questions about Copilot code review billing and 
 Charges go to the Azure subscription linked to your Azure DevOps organization and appear as a separate meter in Azure Cost Management. The cost of each review varies based on factors like pull request size and the number of lines changed. To estimate expected costs in your environment, enable the feature for one or two repositories first and monitor daily usage.
 
 > [!IMPORTANT]
-> Charges will take 48 hours after a code review is completed to appear in the Azure portal.
+> Charges take 48 hours after a code review is completed to appear in the Azure portal.
 
 Copilot code review charges in Azure Cost Management now include **Azure DevOps project tags**, enabling per-project cost reporting. You can filter or group cost analysis by these project tags to attribute usage and spend to individual Azure DevOps projects.
 
