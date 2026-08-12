@@ -368,7 +368,7 @@ The output of the command is a DACPAC file, generated from the collection databa
 > [!NOTE] 
 > If you're using the SQL Azure VM method, you need to provide only the connection string. You don't have to upload any files, and you can skip this step.  
 
-Your DACPAC must be placed in an Azure storage container, which can be an existing container or one created specifically for your migration effort.
+Place your DACPAC in an Azure storage container, which can be an existing container or one you create specifically for your migration effort.
 
 Azure DevOps Services is available in multiple [geographical locations](https://azure.microsoft.com/regions/services/). For the best migration performance, place your data in the same geographical location that you're importing to. Data in a different location doesn't block the migration, but the transfer takes longer and can incur data transfer charges. The following table lists the recommended geographical locations for creating your storage account and uploading your data.
 
