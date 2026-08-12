@@ -1,7 +1,7 @@
 ---
 title: Securely use variables and parameters
 description: Find out how to safely accept input from pipeline users in Azure Pipelines.
-ms.date: 08/15/2025
+ms.date: 05/12/2026
 monikerRange: "<=azure-devops"
 #customer intent: As an Azure Pipeline administrator, I want to understand how to securely accept user input so I can avoid security risks from variable and parameter usage in my pipelines.
 ms.topic: best-practice
@@ -119,14 +119,20 @@ A running pipeline can't modify pipeline parameters, unlike variables. Parameter
 
 Pipelines can reference tasks executed within the pipeline. Some tasks include an `arguments` parameter that allows users to specify more options for the task.
 
-Applying the  **Enable shell tasks arguments validation** setting validates `argument` parameters for built-in shell tasks to check for inputs that can inject commands into scripts. The check ensures that the shell correctly executes characters like semicolons, quotes, and parentheses in the following pipeline tasks:
+Applying the  **Enable shell tasks arguments validation** setting validates `arguments` parameters for built-in shell tasks to check for inputs that can inject commands into scripts. The check ensures that the shell correctly executes characters like semicolons, quotes, and parentheses in the following pipeline tasks:
 
-- PowerShell 
+- PowerShell
 - BatchScript
-- Bash 
+- Bash
 - Ssh
 - AzureFileCopy
 - WindowsMachineFileCopy
+- PowerShellOnTargetMachines
+- SqlAzureDacpacDeployment
+- SqlDacpacDeploymentOnMachineGroup
+- AzureCLI
+- AzurePowerShell
+- ServiceFabricPowerShell
 
 You can apply **Enable shell tasks arguments validation** at the organization level under **Organization Settings** > **Pipelines** > **Settings** or at the project level under **Project settings** > **Pipelines** > **Settings**. If the organization-level setting is enabled, it applies to all projects in the organization and can't be turned off at the project level.
 
