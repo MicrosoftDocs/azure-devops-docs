@@ -279,7 +279,8 @@ To renew the access token for an automatically created service principal or secr
 The token for your service principal or secret is now renewed for three more months.
 
    > [!NOTE]
-   > This operation is available even if the service principal's token hasn't expired.
+   > You can renew the service principal secret even if it hasn't expired.
+   > If **Rotate secret** isn't shown, open the service connection, select **Edit**, and then select **Save** to renew the secret.
    > Make sure that the user performing the operation has proper permissions on the subscription and Microsoft Entra ID, because it updates the secret for the app registered for the service principal. For more information, see [Create an app registration with a secret](../library/azure-resource-manager-alternate-approaches.md#create-an-app-registration-with-a-secret-automatic) and [What happens when you create a Resource Manager service connection?](/azure/devops/pipelines/release/azure-rm-endpoint#what-happens-when-you-create-an-azure-resource-manager-service-connection)
 
 ## Failed to obtain the JWT by using the service principal client ID
