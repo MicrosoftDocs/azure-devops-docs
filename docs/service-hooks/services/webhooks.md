@@ -4,7 +4,7 @@ ms.topic: overview
 title: Webhooks with Azure DevOps
 description: Set up a webhook subscription that sends JSON representations of Azure DevOps events to any service that has a public endpoint.
 monikerRange: '<= azure-devops'
-ms.date: 08/13/2024
+ms.date: 08/07/2026
 ms.custom: sfi-image-nochange
 ---
 
@@ -21,8 +21,8 @@ This article describes webhooks and how to set them up for your Azure DevOps pro
 
 | Category | Requirements |
 |--------------|-------------|
-|**Permissions**| - Member of the [Project Collection Administrators group](../../organizations/security/look-up-project-collection-administrators.md). Organization owners are automatically members of this group.|
-|**Project and service**|- A project in the organization<br>- A service with a public HTTPS endpoint to which you want to send Azure DevOps events.|
+|**Permissions**|Member of one of the following groups:<ul><li>[Project Collection Administrators group](../../organizations/security/look-up-project-collection-administrators.md). Organization owners are automatically members of this group.</li><li>[Project administrator group](../../organizations/security/change-organization-collection-level-permissions.md#add-members-to-the-project-administrators-group).</li></ul>|
+|**Project and service**|<ul><li>A project in the organization.</li><li>A service with a public HTTPS endpoint to which you want to send Azure DevOps events.</li></ul>|
 
   > [!IMPORTANT]
   > - Use only HTTPS endpoints. HTTP has the potential to send private data, including authentication headers, unencrypted in the event payload. You must use HTTPS for basic authentication on a webhook. 
