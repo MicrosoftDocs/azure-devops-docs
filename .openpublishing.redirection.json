@@ -5484,11 +5484,8 @@
     },
     {
       "source_path": "docs/repos/git/create-repo-intellij.md",
-      "redirect_url": "/previous-versions/azure/devops/repos/git/create-repo-intellij",
-      "redirect_document_id": false,
-      "monikers": [
-        "azure-devops-2020"
-      ]
+      "redirect_url": "/azure/devops/repos/git/clone",
+      "redirect_document_id": true
     },
     {
       "source_path": "docs/repos/git/creatingrepo.md",
@@ -12098,14 +12095,6 @@
     {
       "source_path": "docs/repos/git/create-pr-status-server.md",
       "redirect_url": "/previous-versions/azure/devops/repos/git/create-pr-status-server",
-      "redirect_document_id": false,
-      "monikers": [
-        "azure-devops-2019"
-      ]
-    },
-    {
-      "source_path": "docs/repos/git/create-repo-intellij.md",
-      "redirect_url": "/previous-versions/azure/devops/repos/git/create-repo-intellij",
       "redirect_document_id": false,
       "monikers": [
         "azure-devops-2019"

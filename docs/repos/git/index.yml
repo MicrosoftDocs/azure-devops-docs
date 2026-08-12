@@ -55,8 +55,6 @@ landingContent:
             url: /visualstudio/version-control/git-with-visual-studio/
           - text: Create repo - Visual Studio
             url: ./share-your-code-in-git-vs.md
-          - text: Create repo - IntelliJ
-            url: ./create-repo-intellij.md
           - text: Create repo - Eclipse
             url: ./share-your-code-in-git-eclipse.md
           - text: Create repo - Xcode
