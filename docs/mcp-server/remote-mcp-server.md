@@ -10,7 +10,7 @@ ms.topic: how-to
 ms.author: chcomley
 author: chcomley
 monikerRange: 'azure-devops'
-ms.date: 08/03/2026
+ms.date: 08/12/2026
 #customer intent: As a user, I want to set up the remote Azure DevOps MCP Server so I can use AI assistance with my Azure DevOps data without installing and running a local server.
 ---
 
@@ -19,8 +19,6 @@ ms.date: 08/03/2026
 [!INCLUDE [version-eq-azure-devops](../includes/version-eq-azure-devops.md)]
 
 The remote Azure DevOps MCP Server is a hosted version of the [Azure DevOps MCP Server](mcp-server-overview.md) that doesn't require a local installation. Instead of running the server on your machine, you connect your AI assistant directly to the Azure DevOps–hosted endpoint by using streamable HTTP transport.
-
-The remote server provides the same capabilities as the local server, including access to work items, pull requests, pipelines, and more, while eliminating local setup complexity.
 
 ## Choose remote first
 
@@ -40,7 +38,7 @@ Use the **local MCP Server** when your client can't authenticate to the remote s
 
 | Category | Requirements |
 |----------|-------------|
-| **Azure DevOps** | An active [Azure DevOps organization](../organizations/accounts/create-organization.md) connected to [Microsoft Entra ID](/entra/fundamentals/whatis) |
+| **Azure DevOps** | An active [Azure DevOps organization](../organizations/accounts/create-organization.md) backed by a [Microsoft Entra tenant](/entra/fundamentals/whatis). Standalone Microsoft account (MSA) organizations aren't supported for remote MCP Server usage. |
 | **Permissions** | Membership in the project and access to the resources you want to query |
 | **Environment** | A supported AI assistant environment (see [Supported environments](#supported-environments)) |
 
@@ -392,13 +390,14 @@ The remote Azure DevOps MCP Server requires your user account and Azure DevOps o
 
 Not all MCP clients support Microsoft Entra authentication by default. Some environments require extra steps to register the client application.
 
-Supported environments include:
+Supported environments for the remote endpoint, when Microsoft Entra authentication is available, include:
 
-- Visual Studio Code
+- Visual Studio with GitHub Copilot
 - Visual Studio
 - Microsoft Foundry
 - Microsoft Copilot Studio
-- GitHub Copilot
+- GitHub Copilot CLI
+- GitHub Copilot app
 
 > [!IMPORTANT]
 > Claude Desktop, Claude Code, Cursor, and Codex don't currently support the Microsoft Entra authentication flow required by the remote Azure DevOps MCP Server. Use the [local MCP Server](mcp-server-overview.md#install-the-local-azure-devops-mcp-server) with these clients.
