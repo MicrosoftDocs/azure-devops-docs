@@ -10,7 +10,7 @@ ms.topic: overview
 ms.author: chcomley
 author: chcomley
 monikerRange: 'azure-devops'
-ms.date: 07/29/2026
+ms.date: 08/12/2026
 #customer intent: As a project member, I want to understand what the Azure DevOps MCP Server is and how it can enhance my AI assistant with real-time Azure DevOps context to improve my productivity and decision-making.
 ---
 
@@ -20,7 +20,10 @@ ms.date: 07/29/2026
 
 Consider asking your AI assistant "Get my current sprint work items, then identify which ones might be at risk" and getting instant access to your actual Azure DevOps data. The Azure DevOps Model Context Protocol (MCP) Server provides your AI assistant with secure access to work items, pull requests, builds, test plans, and documentation from your Azure DevOps organization.
 
-Azure DevOps provides remote and local MCP Servers. The remote server is hosted and managed by Azure DevOps. The local server runs on your machine and supports clients that can't authenticate to the remote server.
+Azure DevOps provides remote and local MCP Servers. The remote server is an Azure DevOps-hosted endpoint that uses streamable HTTP transport, so you don't need to host or install the server. The local server runs on your machine and remains available for clients that can't authenticate to the remote server.
+
+> [!NOTE]
+> The remote Azure DevOps MCP Server uses Microsoft Entra authentication and requires your Azure DevOps organization to be backed by a Microsoft Entra tenant. Standalone Microsoft account (MSA) Azure DevOps organizations aren't supported with the remote server.
 
 > [!IMPORTANT]
 > - The Azure DevOps MCP Server is free to use. However, standard Azure DevOps pricing applies to your organization and any data access through the service. AI assistant usage might have separate costs depending on your chosen AI platform.
@@ -28,9 +31,9 @@ Azure DevOps provides remote and local MCP Servers. The remote server is hosted 
 
 ## Choose remote or local
 
-Use the [remote Azure DevOps MCP Server](remote-mcp-server.md) when your environment supports it. The remote server is the recommended option because it requires no local installation and Azure DevOps manages its updates. Supported environments include Visual Studio Code, Visual Studio, Microsoft Foundry, Microsoft Copilot Studio, and GitHub Copilot.
+Use the [remote Azure DevOps MCP Server](remote-mcp-server.md) when your environment supports it. The remote server is the recommended option because it requires no local installation and Azure DevOps manages its updates. Supported environments include Visual Studio Code with GitHub Copilot, Visual Studio, Microsoft Foundry, Microsoft Copilot Studio, GitHub Copilot CLI, and the GitHub Copilot app.
 
-Use the local server for clients such as Claude Desktop, Claude Code, Cursor, and Codex that can't authenticate to the remote server with Microsoft Entra ID.
+Some clients still require Microsoft Entra dynamic OAuth client registration, which isn't supported for the authentication flow needed by the remote MCP Server. Use the local server for clients such as Claude Desktop, Claude Code, Cursor, and Codex in those cases.
 
 ## Install the local Azure DevOps MCP Server
 
