@@ -49,6 +49,8 @@ Visual Studio 2022 provides a Git version control experience by using the **Git*
 
 [!INCLUDE [Compare file versions](includes/review-history-compare-file-versions.md)]
 
+To compare a historical version with your current working tree, select a commit in the **Git History** tab and choose **Compare with Working Tree**. The **Diff** view compares the file content in the selected commit with the file in the currently checked-out working tree, including any uncommitted edits. This comparison isn't a cross-branch file comparison.
+
 #### [Visual Studio 2019 - Git menu](#tab/visual-studio-2019-git-menu)
 
 Visual Studio 2019 provides a Git version control experience by using the **Git** menu, **Git Changes**, and through context menus in **Solution Explorer**.
