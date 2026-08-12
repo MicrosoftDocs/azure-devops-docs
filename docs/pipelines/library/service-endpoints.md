@@ -5,7 +5,7 @@ description: Learn how to manage Azure Pipelines service connections and get a r
 ms.topic: concept-article
 ms.author: ronai
 author: RoopeshNair
-ms.date: 07/15/2026
+ms.date: 08/12/2026
 monikerRange: '<= azure-devops'
 ---
 
@@ -182,6 +182,13 @@ Azure Pipelines supports the following service connection types by default. You 
 | [SSH](#ssh-service-connection) | Connect to a host via SSH. |
 | [Subversion](#subversion-service-connection) | Connect to an Apache Subversion repository. |
 | [Visual Studio App Center](#visual-studio-app-center-service-connection) | Connect to Visual Studio App Center server. |
+
+> [!NOTE]
+> For workload identity federation (WIF) service connections in Azure public cloud, Azure DevOps is retiring the Azure DevOps issuer (`https://vstoken.dev.azure.com`) and standardizing on the Microsoft Entra issuer (`https://login.microsoftonline.com/`). New WIF service connections now use the Microsoft Entra issuer by default.
+>
+> This issuer change applies to service connections that use single-tenant Microsoft Entra applications or managed identities. It doesn't apply to service connections targeting non-public clouds or to service connections that use multi-tenant applications, which continue to use the Azure DevOps issuer.
+>
+> To move existing connections, use the **Update**/**Convert** flow described in [Connect to Azure with an Azure Resource Manager service connection](connect-to-azure.md#convert-an-existing-service-connection-to-use-workload-identity-federation). If you can't use that flow because you don't have identity access, use the manual federated credential approach in [Set up workload identity federation for Azure Resource Manager manually](../release/configure-workload-identity.md).
 
 ### Azure Classic service connection
 
