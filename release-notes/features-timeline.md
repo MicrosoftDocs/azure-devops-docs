@@ -70,6 +70,10 @@ This feature is currently in limited public preview.
             <td><a href="/azure/devops/release-notes/roadmap/2026/repos/copilot-code-reviews-azure-repos" data-raw-source="[Support for Managed DevOps Pools](/azure/devops/release-notes/roadmap/2026/repos/copilot-code-reviews-azure-repos)">Support for Managed DevOps Pools</a></td>
             <td>2026 Q3</td>
          </tr>
+          <tr>
+            <td><a href="/azure/devops/release-notes/roadmap/2026/repos/copilot-code-reviews-azure-repos" data-raw-source="[Support for Managed DevOps Pools](/azure/devops/release-notes/roadmap/2026/repos/copilot-code-reviews-azure-repos)">Select level of effort</a></td>
+            <td>2026 Q3</td>
+         </tr>
     </tbody>
 </table>
 
