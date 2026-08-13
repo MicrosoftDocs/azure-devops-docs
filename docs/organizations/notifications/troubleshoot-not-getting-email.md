@@ -3,13 +3,13 @@ title: Troubleshoot notification emails
 titleSuffix: Azure DevOps
 description: Troubleshoot missing, delayed, or unexpected notification emails from Azure DevOps subscriptions and fix the problem.
 ms.subservice: azure-devops-notifications
-ms.custom: quarterly-update, copilot-scenario-highlight
+ms.custom: quarterly-update, copilot-scenario-highlight, support-driven-update
 ms.reviewer: wismythe
 ai-usage: ai-assisted
 ms.author: chcomley
 author: chcomley
 ms.topic: troubleshooting
-ms.date: 04/20/2026
+ms.date: 08/13/2026
 monikerRange: '<= azure-devops'
 #customer intent: As a developer, I want to troubleshoot why I'm not receiving, getting delayed, or receiving unexpected notification emails so I can fix the problem.
 ---
@@ -99,9 +99,22 @@ Specify the full email address for each team member of any Windows AD group.
 
 ### Ensure recipient permissions for event artifacts
 
-An event email includes any event artifact data, such as a work item. The intended email recipients must have permission to view the event artifacts. Recipients without sufficient permission don't receive the email. The system filters the email recipients to include only members with sufficient permissions.
+Permission checks for notification delivery depend on the event and recipient type. For a project-scoped notification addressed to an Azure DevOps team or group, the **View project-level information** permission determines whether the group passes the notification check. If this permission is set to **Deny**, Azure DevOps filters the group and its nested members from the recipient list.
+
+Resource-specific permissions don't replace the project-level notification check. For example, an Azure DevOps group can receive a _Build completes_ notification when **View project-level information** is **Allow**, even if **View builds** is **Deny** for the specific pipeline.
 
 Determine whether filtering based on permissions is causing the missing email notification by checking the notification delivery logs. For more information, see [How to enable subscription logging for troubleshooting](use-subscription-logging.md).
+
+### Check mail-enabled Microsoft Entra group delivery
+
+When a mail-enabled Microsoft Entra group doesn't receive a notification, identify how the subscription addresses the group:
+
+1. If the subscription addresses the Microsoft Entra group directly, Azure DevOps sends the message to the group address without expanding the group or checking each member's Azure DevOps permissions. Confirm that the group is mail-enabled and that its membership and mail-delivery settings are correct.
+1. If the Microsoft Entra group is nested in an Azure DevOps team or group, check the parent team's or group's effective **View project-level information** permission. An explicit **Deny** overrides an inherited **Allow**. If the permission is **Deny**, Azure DevOps filters the parent and doesn't evaluate the nested Microsoft Entra group.
+1. If **View project-level information** is **Allow**, don't treat a resource-specific denial as evidence that Azure DevOps filtered the subscription. For example, **View builds** set to **Deny** for a specific pipeline doesn't prevent delivery of that pipeline's _Build completes_ notification to the Azure DevOps group.
+1. Enable [subscription logging](use-subscription-logging.md) and review the delivery result to confirm whether Azure DevOps filtered the parent group because **View project-level information** was **Deny**.
+
+For a comparison of direct and nested delivery, see [Mail-enabled Microsoft Entra group as recipient](concepts-email-recipients.md#mail-enabled-microsoft-entra-group-as-recipient). To change the recipient configuration, see [Create email subscription](manage-team-group-global-organization-notifications.md#create-email-subscription).
 
 ### Confirm subscription creator or modifier permissions
 

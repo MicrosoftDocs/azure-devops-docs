@@ -7,9 +7,10 @@ ms.reviewer: wismythe
 ms.author: chcomley
 author: chcomley
 ms.topic: concept-article
-ms.date: 05/15/2025
+ms.date: 08/13/2026
+ai-usage: ai-assisted
 monikerRange: '<= azure-devops'
-ms.custom: sfi-image-nochange
+ms.custom: sfi-image-nochange, support-driven-update
 #customer intent: As an Azure DevOps developer, I want to understand how email recipients are determined for notifications and events, so I can ensure users receive the correct messages.
 ---
 
@@ -124,6 +125,8 @@ When a team or group receives a notification, and either the subscription or del
 
 Only members who are **not** opted out of the subscription are considered for the final recipient list. Any member who's an individual user is added to the recipient list. 
 
+For project-scoped events, Azure DevOps checks whether the team or group has the **View project-level information** permission. If this permission is set to **Deny**, Azure DevOps filters the team or group from the recipient list and doesn't evaluate its nested members. Resource-specific permissions don't replace this project-level notification check. For example, after **View project-level information** is set to **Allow**, a group can receive a _Build completes_ notification even if **View builds** is set to **Deny** for the specific pipeline.
+
 Only Azure DevOps Services groups remain. For each group, the group's delivery preferences are examined:
 
 - **Do not deliver**: No further evaluation is done on this group and the next member group is evaluated.
@@ -136,7 +139,7 @@ This section explores several example scenarios. The following examples use symb
 
 - `I`: Individual user
 - `T`: Nested team or group
-- `E`: Email-enabled Microsoft Entra group
+- `E`: Mail-enabled Microsoft Entra group
 
 #### Team member enables "Do not deliver" setting
 
@@ -171,13 +174,27 @@ Example team members:
 
 Because team `T1` has the **Do not deliver** setting enabled, the team **isn't** expanded to identify its members. Although team `T2` has the **Deliver to individual members** setting enabled, team `T2` is nested within team `T1`. The **Do not deliver** delivery preferences for `T1` takes precedence over settings made by its members. Only users `I1` and `I2` receive the notification messages at their preferred contact email address.
 
-#### Team member is Microsoft Entra group
+#### Mail-enabled Microsoft Entra group as recipient
 
-In this example, the primary team has three members: users `I1` and `I2`, and nested Microsoft Entra group `E1`.
+Azure DevOps handles a mail-enabled Microsoft Entra group differently depending on whether the notification subscription addresses the group directly or reaches it through an Azure DevOps team or group:
 
-Only users `I1` and `I2` receive the notification messages at their preferred contact email address unless `E1` is configured as an email-enabled security group. If `E1` is email-enabled, all members of `E1` will also receive the notifications.
+- **Direct recipient**: When the subscription is configured directly for the mail-enabled Microsoft Entra group, Azure DevOps sends the notification to the group's email address. Azure DevOps doesn't expand the group or evaluate each member's Azure DevOps permissions.
+- **Nested recipient**: When the mail-enabled Microsoft Entra group is a member of an Azure DevOps team or group, Azure DevOps first evaluates the parent team's or group's delivery settings and **View project-level information** permission. If this permission is set to **Deny** for the parent, Azure DevOps filters the parent and doesn't add the nested Microsoft Entra group to the recipient list.
 
-Azure DevOps notifications don't expand to Microsoft Entra groups for delivering notifications to individual users. However, if you're using an Active Directory (AD) group that is categorized as an Email-enabled Security group in the Azure Portal, notifications can be delivered to all members within that group. This means that if your Entra Group is configured as an email-enabled security group, all members receive notifications as intended.
+The following cases show the expected results for a _Build completes_ notification when the mail-enabled Microsoft Entra group is also a member of the Azure DevOps group:
+
+| Subscriber | Permission configuration | Expected result |
+|---|---|---|
+| Azure DevOps group | **View project-level information** is **Deny** for the Azure DevOps group. | The Azure DevOps group is filtered, so the nested Microsoft Entra group doesn't receive the notification. |
+| Mail-enabled Microsoft Entra group | **View project-level information** is **Deny** for the Azure DevOps group that contains the Microsoft Entra group. | The Microsoft Entra group receives the notification because the subscription addresses it directly. The parent Azure DevOps group's permission doesn't apply to this subscription. |
+| Azure DevOps group | **View project-level information** is **Allow**, but **View builds** is **Deny** for the specific pipeline. | The Azure DevOps group receives the notification. The pipeline-specific denial doesn't filter the group after it passes the project-level notification check. |
+
+To ensure delivery, use one of the following configurations:
+
+- Keep the Microsoft Entra group nested and set **View project-level information** to **Allow** for the parent Azure DevOps team or group.
+- Configure the mail-enabled Microsoft Entra group as the direct recipient when Azure DevOps should send the notification directly to the group address.
+
+Before you configure direct delivery, confirm that all members of the mail-enabled Microsoft Entra group are authorized to receive the event details. Azure DevOps sends the message to the group address without validating each member's access to the Azure DevOps resources.
 
 ## Related content
 
