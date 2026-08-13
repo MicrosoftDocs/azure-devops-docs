@@ -4,7 +4,7 @@ titleSuffix: Azure Boards
 description: Learn how to resolve common integration issues that occur with Azure DevOps Office integrations. 
 ms.service: azure-boards
 ai-usage: ai-assisted
-ms.custom: copilot-scenario-highlight, support-driven
+ms.custom: copilot-scenario-highlight, support-driven-update
 ms.author: chcomley
 author: chcomley
 ms.topic: troubleshooting
