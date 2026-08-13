@@ -96,7 +96,7 @@ The following table provides information about setting permissions at the object
 
 | Object | Default group membership | How to access security | Inherited? |
 |--|--|--|--|
-| [Repos](../../repos/git/set-git-repository-permissions.md#open-security-for-a-repository) | [Project Administrator](../../organizations/security/permissions.md#project-level-groups) | Open **Project settings**, **Repositories** > highlight your repo > **Security**. | ✔️  |
+| [Repos](../../repos/git/set-git-repository-permissions.md#open-repository-security) | [Project Administrator](../../organizations/security/permissions.md#project-level-groups) | Open **Project settings**, **Repositories** > highlight your repo > **Security**. | ✔️  |
 | [Git repository](../../repos/git/set-git-repository-permissions.md) |[Project Administrator](../security/change-project-level-permissions.md)  | Open **Project settings** > **Repositories** and the Git repository. | ✔️ (from project settings for Git repository) |
 | [Git branch](../../repos/git/branch-permissions.md) |[Project Administrator](../security/change-project-level-permissions.md) | Open **Repos** > **Branches** > your branch > **More** ... > **Branch security**. | ✔️ |
 | [TFVC repository](../../repos/tfvc/set-tfvc-repository-permissions.md) |[Project Administrator](../security/change-project-level-permissions.md) | Open **Project settings** > **Repositories** and the TFVC repository. | ✔️ |
