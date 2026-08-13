@@ -4,7 +4,7 @@ description: Learn how to use an Azure Resource Manager service connection to co
 ms.topic: concept-article
 ms.author: rabououn
 author: ramiMSFT
-ms.date: 07/15/2026
+ms.date: 08/12/2026
 ai-usage: ai-assisted
 monikerRange: '<= azure-devops'
 ms.custom: devx-track-arm-template, arm2024, sfi-image-nochange
@@ -21,6 +21,11 @@ An Azure Resource Manager service connection allows you to connect to Azure reso
 
 ::: moniker range="azure-devops"
 You have multiple authentication options for connecting to Azure with an Azure Resource Manager service connection. We recommend using [workload identity federation](/azure/active-directory/workload-identities/workload-identity-federation) with either an app registration or managed identity. Workload identity federation eliminates the need for secrets and secret management. 
+
+> [!NOTE]
+> For workload identity federation (WIF) service connections in Azure public cloud, Azure DevOps is deprecating the Azure DevOps issuer (`https://vstoken.dev.azure.com`) and standardizing on the Microsoft Entra issuer (`https://login.microsoftonline.com/`). New WIF service connections now use the Microsoft Entra issuer by default.
+>
+> This change affects issuer behavior when you create or convert applicable service connections.
 
 Recommended options:
 * [App registration (automatic) with workload identity federation](#create-an-app-registration-with-workload-identity-federation-automatic) 
@@ -45,7 +50,7 @@ Recommended options:
 You can use this approach if all the following items are true for your scenario:
 
 * You have the Owner role for your Azure subscription.
-* You're not connecting to the [Azure Stack](azure-resource-manager-alternate-approaches.md#connect-to-azure-stack) or the [Azure US Government](azure-resource-manager-alternate-approaches.md#connect-to-an-azure-government) environments.
+* You're not connecting to the [Azure Stack](azure-resource-manager-alternate-approaches.md#connect-to-azure-stack) or the [Azure US Government](azure-resource-manager-alternate-approaches.md#connect-to-an-azure-government) environments. This limitation applies to this automatic app registration method. It's separate from the issuer retirement scope.
 * Any Marketplace extensions tasks that you use are updated to support workload identity federation.
 
 With this selection, Azure DevOps automatically queries for the subscription, management group, or Machine Learning workspace that you want to connect to and creates a workload identity federation for authentication.
@@ -155,6 +160,13 @@ You can quickly convert an existing Azure Resource Manager service connection to
 
 * Azure DevOps originally created the service connection. If you manually create your service connection, you can't convert the service connection by using the service connection conversion tool because Azure DevOps doesn't have permissions to modify its own credentials.
 * Only one project uses the service connection. You can't convert [cross-project service connections](../policies/permissions.md#set-service-connection-project-permissions).
+
+> [!NOTE]
+> **Applies to:** Service connections in Azure public cloud that use workload identity federation with single-tenant Microsoft Entra applications or managed identities.
+>
+> **Exclusions:** Service connections that target non-public clouds (for example, Azure US Government or Azure Stack) and service connections that use multi-tenant applications are excluded from this issuer deprecation scope and continue to use the Azure DevOps issuer.
+>
+> For applicable service connections, conversion updates the connection to use workload identity federation with the Microsoft Entra issuer. Use the **Convert** (or **Update**) flow in Azure DevOps when available. If you can't complete the automated flow because you don't have required identity access, use the manual federated credential process in [Set up workload identity federation for Azure Resource Manager manually](../release/configure-workload-identity.md).
 
 To convert a service connection:
 
