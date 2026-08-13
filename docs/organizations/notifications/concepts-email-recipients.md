@@ -125,7 +125,7 @@ When a team or group receives a notification, and either the subscription or del
 
 Only members who are **not** opted out of the subscription are considered for the final recipient list. Any member who's an individual user is added to the recipient list. 
 
-For project-scoped events, Azure DevOps checks whether the team or group has the **View project-level information** permission. If this permission is set to **Deny**, Azure DevOps filters the team or group from the recipient list and doesn't evaluate its nested members. Resource-specific permissions don't replace this project-level notification check. For example, after **View project-level information** is set to **Allow**, a group can receive a _Build completes_ notification even if **View builds** is set to **Deny** for the specific pipeline.
+For project-scoped events, Azure DevOps checks whether the team or group has the **View project-level information** permission. If you set this permission to **Deny**, Azure DevOps filters the team or group from the recipient list and doesn't evaluate its nested members. Resource-specific permissions don't replace this project-level notification check. For example, after **View project-level information** is set to **Allow**, a group can receive a _Build completes_ notification even if **View builds** is set to **Deny** for the specific pipeline.
 
 Only Azure DevOps Services groups remain. For each group, the group's delivery preferences are examined:
 

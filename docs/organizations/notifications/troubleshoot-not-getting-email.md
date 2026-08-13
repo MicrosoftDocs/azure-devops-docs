@@ -99,7 +99,7 @@ Specify the full email address for each team member of any Windows AD group.
 
 ### Ensure recipient permissions for event artifacts
 
-Permission checks for notification delivery depend on the event and recipient type. For a project-scoped notification addressed to an Azure DevOps team or group, the **View project-level information** permission determines whether the group passes the notification check. If this permission is set to **Deny**, Azure DevOps filters the group and its nested members from the recipient list.
+Permission checks for notification delivery depend on the event and recipient type. For a project-scoped notification addressed to an Azure DevOps team or group, the **View project-level information** permission determines whether the group passes the notification check. If you set this permission to **Deny**, Azure DevOps filters the group and its nested members from the recipient list.
 
 Resource-specific permissions don't replace the project-level notification check. For example, an Azure DevOps group can receive a _Build completes_ notification when **View project-level information** is **Allow**, even if **View builds** is **Deny** for the specific pipeline.
 
