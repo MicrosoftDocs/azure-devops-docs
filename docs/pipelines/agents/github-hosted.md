@@ -2,7 +2,7 @@
 title: GitHub-hosted agents for Azure Pipelines (pay-as-you-go)
 description: Learn about using GitHub-hosted agents with pay-as-you-go billing in Azure Pipelines for higher performance builds and deployments.
 ms.topic: concept-article
-ms.date: 05/27/2026
+ms.date: 08/14/2026
 monikerRange: 'azure-devops'
 ---
 
@@ -84,6 +84,9 @@ In the classic editor, select the GitHub-hosted agent image you want from the **
 
 GitHub-hosted agents offer higher performance configurations compared to the standard Microsoft-hosted agent [configurations](./hosted.md#hardware). The **GitHub-hosted agents** pool offers the following hardware specifications and virtual machine images.
 
+> [!IMPORTANT]
+> During the public preview, organizations are limited to eight **Standard** and eight **XLarge** GitHub-hosted agents. If more than eight pipeline jobs queue per hardware specification, the first eight jobs run and the remainder queue until the initial jobs complete. If you need more than eight agents per hardware specification during the public preview, create a support case.
+
 #### [macOS images](#tab/macos-images/)
 
 GitHub-hosted agents provides images for the following macOS versions:
@@ -91,6 +94,7 @@ GitHub-hosted agents provides images for the following macOS versions:
 | macOS version | Included software |
 |---------------|-------------------|
 | macOS 26 ARM 64 | [Link](https://github.com/actions/runner-images/blob/main/images/macos/macos-26-arm64-Readme.md) |
+| macOS with XCode 27 (public preview) | [Link](https://github.com/actions/runner-images/blob/main/images/macos/xcode-27-arm64-Readme.md)
 
 This macOS image can run pipelines using the following hardware specifications:
 
@@ -103,12 +107,16 @@ To run your pipelines by using a GitHub-hosted agent, specify the image label th
 
 | Operating system (OS) | Hardware specification | Image | YAML VM Image Label |
 |-----------------------|------------------|-------|---------------------|
-| macOS 26 | Standard | **macOS 26 ARM64** | `macos-26-arm64` |
-| macOS 26 | XLarge | **macOS 26 ARM64 XL** | `macos-26-arm64-xl` |
+| macOS 26 | Standard | **macOS ARM64** | `macos-26-arm64` |
+| macOS 26 | XLarge | **macOS ARM64 XL** | `macos-26-arm64-xl` |
+| Xcode 27 | Standard | **macOS ARM64** | `xcode-27` |
+| Xcode 27 | XLarge | **macOS ARM64 XL** | `xcode-27-xlarge` |
 
-> [!IMPORTANT]
-> During the public preview, organizations are limited to eight **Standard** and eight **XLarge** GitHub-hosted agents. If more than eight pipeline jobs queue per hardware specification, the first eight jobs run and the remainder queue until the initial jobs complete. If you need more than eight agents per hardware specification during the public preview, create a support case.
+### Xcode-based naming convention for macOS images
 
+With the release of the **macOS with XCode 27 (public preview)** image, we're changing to a new naming convention for macOS images, where each new image name is based on a major Xcode version rather than the underlying operating system, with one major Xcode version supported per image version.
+
+This naming model enables developers to target the desired Apple toolchain and reflects how macOS CI jobs are commonly defined, which is by their required Xcode toolchain rather than by the underlying operating system. To see the software included with the Xcode 27 image, follow the link provided in the previous image.
 
 * * *
 
