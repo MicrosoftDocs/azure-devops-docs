@@ -11,7 +11,7 @@ metadata:
   author: chcomley
   ms.topic: faq
   monikerRange: '<= azure-devops'
-  ms.date: 04/20/2026
+  ms.date: 08/14/2026
   ms.update-cycle: 1095-days
 
 title: Test Plans FAQs
@@ -218,7 +218,7 @@ sections:
 
       - question: Is the desktop Test Runner client being retired?
         answer: |
-            **Yes**. The Test Runner Client for Windows is scheduled for retirement. After the retirement date, it will no longer be available or supported. Transition to the **web-based test runner**, which provides the same functionality with improved performance and ongoing development.
+            **Yes**. The Test Runner Client for Windows retires on **November 30, 2026**. After this date, the client is no longer available or supported. Transition to the **web-based test runner**, which provides the same functionality with improved performance and ongoing development.
 
             For more information, see [Run manual tests](run-manual-tests.md).
 
