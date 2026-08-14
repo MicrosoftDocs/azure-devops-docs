@@ -94,7 +94,10 @@ GitHub-hosted agents provides images for the following macOS versions:
 | macOS version | Included software |
 |---------------|-------------------|
 | macOS 26 ARM 64 | [Link](https://github.com/actions/runner-images/blob/main/images/macos/macos-26-arm64-Readme.md) |
-| macOS with XCode 27 (public preview) | [Link](https://github.com/actions/runner-images/blob/main/images/macos/xcode-27-arm64-Readme.md)
+| macOS with XCode 27 (public preview) | [Link](https://github.com/actions/runner-images/blob/main/images/macos/xcode-27-arm64-Readme.md) |
+
+> [!NOTE]
+> The Xcode 27 image is rolling out to the **GitHub-hosted agents** pool over the next few weeks. If you don't see the image in your organization, check back later.
 
 This macOS image can run pipelines using the following hardware specifications:
 
@@ -109,14 +112,14 @@ To run your pipelines by using a GitHub-hosted agent, specify the image label th
 |-----------------------|------------------|-------|---------------------|
 | macOS 26 | Standard | **macOS ARM64** | `macos-26-arm64` |
 | macOS 26 | XLarge | **macOS ARM64 XL** | `macos-26-arm64-xl` |
-| Xcode 27 | Standard | **macOS ARM64** | `xcode-27` |
-| Xcode 27 | XLarge | **macOS ARM64 XL** | `xcode-27-xlarge` |
+| macOS with Xcode 27 | Standard | **macOS ARM64** | `xcode-27` |
+| macOS with Xcode 27 | XLarge | **macOS ARM64 XL** | `xcode-27-xlarge` |
 
 ### Xcode-based naming convention for macOS images
 
 With the release of the **macOS with XCode 27 (public preview)** image, we're changing to a new naming convention for macOS images, where each new image name is based on a major Xcode version rather than the underlying operating system, with one major Xcode version supported per image version.
 
-This naming model enables developers to target the desired Apple toolchain and reflects how macOS CI jobs are commonly defined, which is by their required Xcode toolchain rather than by the underlying operating system. To see the software included with the Xcode 27 image, follow the link provided in the previous image.
+This naming model enables developers to target the desired Apple toolchain and reflects how macOS CI jobs are commonly defined, which is by their required Xcode toolchain rather than by the underlying operating system, which might change over the lifetime of the image. To see the software included with the Xcode 27 image, including the macOS version, follow the included software link for the image in the previous table.
 
 * * *
 
