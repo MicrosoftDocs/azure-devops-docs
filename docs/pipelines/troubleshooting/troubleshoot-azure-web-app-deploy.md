@@ -47,7 +47,7 @@ For more complicated deployment scenarios that require XML transformation, use t
 
 ### Symptom
 
-After a File Transform or App Service deployment task updates to a newer version, XML transformation fails with an error that mentions `xdt:Import`, or a message that a custom XDT transform or locator type isn't allowed. The task log shows that the transform file is rejected before `ctt.exe` runs.
+After you update the File Transform or App Service deployment task to a newer version, XML transformation fails with an error that mentions `xdt:Import`, or a message that a custom XDT transform or locator type isn't allowed. The task log shows that the transform file is rejected before `ctt.exe` runs.
 
 ### Cause
 
