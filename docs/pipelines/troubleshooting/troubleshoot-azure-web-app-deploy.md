@@ -5,7 +5,7 @@ ms.service: azure-devops-pipelines
 ms.topic: troubleshooting
 ms.author: chcomley
 author: chcomley
-ms.date: 02/23/2026
+ms.date: 08/12/2026
 ai-usage: ai-assisted
 monikerRange: '<= azure-devops'
 ---
@@ -42,6 +42,20 @@ Use the [Azure Web App (`AzureWebApp@1`)](/azure/devops/pipelines/tasks/referenc
 The `AzureWebApp@1` task handles large packages more efficiently.
 
 For more complicated deployment scenarios that require XML transformation, use the [Azure App Service Deploy (`AzureRmWebAppDeployment@4`)](/azure/devops/pipelines/tasks/reference/azure-rm-web-app-deployment-v4) task with a smaller package, or split transformations into a separate pipeline step.
+
+## XML transformation or variable substitution fails after a file transform security update
+
+### Symptom
+
+After you update the File Transform or App Service deployment task to a newer version, XML transformation fails with an error that mentions `xdt:Import`, or a message that a custom XDT transform or locator type isn't allowed. The task log shows that the transform file is rejected before `ctt.exe` runs.
+
+### Cause
+
+To prevent untrusted transform files from loading and running arbitrary code on the agent, file transformations process only the built-in XDT transform and locator types. The `xdt:Import` element (which loads a custom transform assembly by name or path) and any custom `xdt:Transform` or `xdt:Locator` types are blocked.
+
+### Resolution
+
+Use the built-in XDT transforms, or apply any custom transforms before the pipeline consumes the package (for example, in an earlier step that you control). If you understand the risk and must temporarily restore the previous behavior, set the pipeline variable `AZP_ALLOW_UNSAFE_XDT_TRANSFORMS` to `true`. This reenables loading the assemblies that the transform file references and isn't recommended.
 
 ## "ECONNRESET" during deployment
 
