@@ -119,7 +119,7 @@ To run your pipelines by using a GitHub-hosted agent, specify the image label th
 
 With the release of the **macOS with XCode 27 (public preview)** image, we're changing to a new naming convention for macOS images, where each new image name is based on a major Xcode version rather than the underlying operating system, with one major Xcode version supported per image version.
 
-This naming model enables developers to target the desired Apple toolchain and reflects how macOS CI jobs are commonly defined, which is by their required Xcode toolchain rather than by the underlying operating system, which might change over the lifetime of the image. To see the software included with the Xcode 27 image, including the macOS version, follow the included software link for the image in the previous table.
+This naming model enables developers to target the desired Apple toolchain and reflects how macOS CI jobs are commonly defined, which is by their required Xcode toolchain rather than by the underlying operating system, which might change over the lifetime of the image. To see the software included with the Xcode 27 image, including the macOS operating system version, follow the included software link for the image in the previous table.
 
 * * *
 
