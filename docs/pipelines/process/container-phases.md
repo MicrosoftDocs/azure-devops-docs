@@ -2,7 +2,7 @@
 title: YAML pipeline container jobs
 description: Learn about configuring and running Azure Pipelines YAML pipeline jobs inside containers.
 ms.topic: concept-article
-ms.date: 08/19/2025
+ms.date: 08/14/2026
 monikerRange: "<=azure-devops"
 #customer intent: As an Azure Pipelines builder and tester, I want to learn about running pipeline jobs in containers so I can build and test pipelines in various agent configurations.
 ---
@@ -136,6 +136,23 @@ steps:
 Run `docker create --help` to get the list of options you can pass to Docker invocation. Not all these options are guaranteed to work with Azure Pipelines. Check first to see if you can use a `container` property for the same purpose.
 
 For more information, see the [docker container create](https://docs.docker.com/reference/cli/docker/container/create/) command reference and the [resources.containers.container](/azure/devops/pipelines/yaml-schema/resources-containers-container) definition in the [YAML schema reference for Azure Pipelines](/azure/devops/pipelines/yaml-schema).
+
+## Docker socket mapping
+
+By default, container jobs on Linux agents don't mount the host Docker socket (`/var/run/docker.sock`) into the job container. This default follows the principle of least privilege, so jobs that don't need Docker-in-container behavior aren't granted access to the host Docker daemon.
+
+If your container job runs Docker commands against the host daemon (Docker-in-container), explicitly opt in by setting `mapDockerSocket` to `true` on the container resource.
+
+```yaml
+resources:
+  containers:
+  - container: my_container
+    image: ubuntu:22.04
+    mapDockerSocket: true
+```
+
+> [!CAUTION]
+> Mapping the Docker socket has serious security implications. Code inside the container can run as root on your Docker host. Only set `mapDockerSocket: true` when your job requires Docker-in-container behavior.
 
 ## Reusable container definition
 
