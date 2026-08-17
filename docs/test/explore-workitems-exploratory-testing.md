@@ -106,7 +106,6 @@ For more information, see [View your sessions and gain insights](insights-explor
 
 * [Find answers to FAQs for manual testing](reference-qa.yml#test---feedback-extension)
 * [Use the Test & Feedback extension in Connected mode](connected-mode-exploratory-testing.md)
-* [Add findings to existing bugs with exploratory testing](add-to-bugs-exploratory-testing.md)
 * [Gain insights across your exploratory testing sessions](insights-exploratory-testing.md)
 * [Use the Test & Feedback extension in Standalone mode](standalone-mode-exploratory-testing.md)
 * [Perform exploratory testing with Microsoft Test Manager](/previous-versions/azure/devops/test/mtm/exploratory-testing-using-microsoft-test-manager)

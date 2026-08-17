@@ -8,7 +8,7 @@ ms.topic: quickstart
 ms.author: pliaros
 author: rohit-batra
 monikerRange: '<= azure-devops'
-ms.date: 08/14/2026
+ms.date: 08/17/2026
 ms.update-cycle: 1095-days
 ---
 
@@ -93,12 +93,12 @@ Do the following steps to start your exploratory testing session and create bugs
    Page load data provides preliminary information about the time it takes to load
    the pages, such as the resource timings and navigation timelines.
 
-1. Enter a title for the bug or task and add any other notes 
+1. Enter a title for the bug or task and add any other notes
    you require to the description. Then save the bug or task.
 
    ![Screenshot of a new bug form with a captured screen recording and the Save button highlighted.](media/connected-mode-exploratory-testing/create-bugs-04.png)
 
-   You can also [add your findings to an existing similar bug](reference-qa.yml#can-i-edit-an-existing-bug-instead-of-creating-a-new-bug-when-using-the-test---feedback-extension). 
+   When you enter a bug title, the extension automatically searches for existing bugs with similar title keywords. To avoid creating a duplicate bug, you can [add your findings to an existing similar bug](#add-findings-to-an-existing-similar-bug).
 
 1. View a list of all your activities in reverse chronological order
    in the **Session timeline** page. The timeline shows all the screenshots, videos, notes, the work items such as bugs, tasks, and test cases you already
@@ -118,7 +118,29 @@ Do the following steps to start your exploratory testing session and create bugs
    ![Screenshot of a bug work item with captured observations and a screen recording link.](media/connected-mode-exploratory-testing/create-bugs-10.png)
 
 [How do I play the video recordings I created with the extension?](reference-qa.yml#how-do-i-play-the-video-recordings-i-created-with-the-extension)
- 
+
+## Add findings to an existing similar bug
+
+1. After you enter a title for a new bug, select the link that shows the number of similar bugs.
+
+   ![Select the link to view similar bugs.](media/connected-mode-exploratory-testing/add-to-existing-bugs-01.png)
+
+   If the extension doesn't find any matching bugs, the form displays **0 Similar**. Continue entering the details for the new bug, and then save it.
+
+2. Select a bug from the list of similar bugs, and then select **Edit**.
+
+   ![Select a similar bug to edit.](media/connected-mode-exploratory-testing/add-to-existing-bugs-02.png)
+
+   The extension appends your screenshots, notes, and videos to the existing bug.
+
+3. Save the updated bug.
+
+   ![Save the findings to the existing bug.](media/connected-mode-exploratory-testing/add-to-existing-bugs-03.png)
+
+4. To create a new bug instead, select **New bug** to return to the bug details form. Enter the details, and then save the new bug.
+
+   ![Return to the form to create a new bug.](media/connected-mode-exploratory-testing/add-to-existing-bugs-04.png)
+
 <a name="create-testcase"></a>
 
 ## Create test cases

@@ -428,7 +428,7 @@ sections:
         answer: |
             Yes, the extension automatically shows bugs that might be related to the one you're creating
             and allows you to add your screenshots, notes, and videos to this existing bug.
-            For more information, see [Add findings to existing bugs with exploratory testing](add-to-bugs-exploratory-testing.md).
+            For more information, see [Add findings to an existing similar bug](connected-mode-exploratory-testing.md#add-findings-to-an-existing-similar-bug).
 
       - question: What browsers support the Test & Feedback extension?
         answer: |
