@@ -3,12 +3,13 @@ title: Navigate Test Plans in Azure DevOps
 description: "Test Plans navigation: Learn how to find, organize, and manage test plans, suites, and cases in Azure DevOps. Start optimizing your test workflow today."
 ms.service: azure-devops-test-plans
 ms.custom: UpdateFrequency3
+ai-usage: ai-assisted
 ms.topic: overview
 ms.author: pliaros
 ms.reviewer: chcomley
 author: raviLiftr
 monikerRange: "<=azure-devops"
-ms.date: 04/01/2026
+ms.date: 08/14/2026
 ms.update-cycle: 1095-days
 ---
 
@@ -47,7 +48,7 @@ You can also add a plan to your favorites list while you view it.
 
 ## Test plan header
 
-:::image type="content" source="media/navigate/test-plan-header.png" alt-text="Screenshot of the test plan header.":::
+:::image type="content" source="media/navigate/test-plan-header.png" alt-text="Screenshot of a test plan header with the More actions menu open.":::
 
 From the test plan header, you can:
 
@@ -146,7 +147,7 @@ From the **Define** tab, you can complete the following tasks.
 
 :::image type="content" source="media/navigate/define-tab-toolbar-2.png" alt-text="Screenshot of the Define tab toolbar options.":::
 
-From the **Define** tab, toolbar, use the following options: 
+From the **Define** tab toolbar, use the following options: 
 
 - **Export test cases to CSV**: Export existing test cases to a CSV file and make changes by using Excel.
 - **Export test cases to XLSX**: Export existing test cases to an XLSX file and make changes by using Excel.
@@ -203,7 +204,7 @@ Select a cell to edit the text in that cell. Right-click within a cell to choose
 
 Use the **Execute** tab to assign test points or run tests.   
 
-:::image type="content" source="media/navigate/execute-tab-test-points-overview.png" alt-text="Screenshot of the Execute tab overview.":::
+:::image type="content" source="media/navigate/execute-tab-test-points-overview.png" alt-text="Screenshot of the Execute tab with test points and the outcome menu open.":::
 
 **What is a test point?** [!INCLUDE [test-point-definition](includes/test-point-definition.md)]
 
@@ -232,7 +233,7 @@ Choose :::image type="icon" source="media/navigate/column-options-icon.png" bord
 
 Select :::image type="icon" source="../media/icons/more-actions.png" border="false"::: **More options** on a test point to access the following actions:
 
-- **View execution history**: View the execution history for the test point in a side pane. You can navigate to the detailed test case execution history from the pane.
+- **View execution history**: View the execution history for the selected test point in a side pane.
 - **Mark Outcome**: Quickly mark the outcome of the test points&mdash;**Passed**, **Failed**, **Blocked**, or **Not Applicable**.
 - **Run** - Initiate a test runner with options to **Run for web application**, **Run for desktop**, **Run with options**.
 - **Reset test to active**: Reset the test outcome to **Active**, ignoring the last outcome of the test point. 
@@ -240,6 +241,14 @@ Select :::image type="icon" source="../media/icons/more-actions.png" border="fal
 - **Assign tester**: Assign the test points to a tester for test execution.
 
 For more information about executing tests, see [Run manual tests](run-manual-tests.md) and [Run automated tests from test plans](run-automated-tests-from-test-hub.md).
+
+::: moniker range="azure-devops"
+
+The execution history pane shows the outcome, test run, tester, and completion time for each execution of the selected test point. Select **View all history** to open the complete execution history for the associated test case.
+
+:::image type="content" source="media/navigate/test-point-execution-history.png" alt-text="Screenshot of a test point execution history pane with the View all history action.":::
+
+::: moniker-end
 
 ## Chart test cases and test results 
 

@@ -14534,6 +14534,11 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "docs/test/add-to-bugs-exploratory-testing.md",
+      "redirect_url": "/azure/devops/test/connected-mode-exploratory-testing#add-findings-to-an-existing-similar-bug",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "docs/test/provide-stakeholder-feedback.md",
       "redirect_url": "/azure/devops/test/request-stakeholder-feedback",
       "redirect_document_id": true
