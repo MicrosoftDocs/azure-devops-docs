@@ -1,13 +1,14 @@
 ---
 title: Explore work items when exploratory testing
-description: Test tools - Manual and exploratory testing - explore work items from the board or by using the Microsoft Test & Feedback extension
+description: Test tools - Manual and exploratory testing - explore work items from the board or by using the Microsoft Test & Feedback extension.
 ms.service: azure-devops-test-plans
 ms.custom: UpdateFrequency3
+ai-usage: ai-assisted
 ms.topic: how-to
 ms.author: pliaros
 author: rohit-batra 
 monikerRange: '<= azure-devops'
-ms.date: 02/13/2025
+ms.date: 08/14/2026
 ms.update-cycle: 1095-days
 ---
 
@@ -27,7 +28,7 @@ Explore the following items:
 | Category | Requirements |
 |--------------|-------------|
 | **Access levels** | - At least **Basic** access, with permissions to view work items under the corresponding Area Path.<br>- To add test plans and test suites, delete test artifacts, and define test configurations: [Basic + Test Plans](https://marketplace.visualstudio.com/items?itemName=ms.vss-testmanager-web) access.<br>Or, one of the following **Visual Studio subscriptions**:<br> - [Enterprise](https://visualstudio.microsoft.com/vs/enterprise/)<br>- [Test Professional](https://visualstudio.microsoft.com/vs/test-professional/)<br>  - [MSDN Platforms](https://visualstudio.microsoft.com/msdn-platforms/) |
-| **Permissions** | - To add or modify test plans, test suites, test cases, or other test-based work item types: **Edit work items in this node** permission set to **Allow** under the corresponding **Area Path**.<br>- To modify test plan properties such as build and test settings: **Manage test plans** permission set to **Allow** under the corresponding **Area Path**.<br>- to create and delete test suites, add and remove test cases from test suites, change test configurations associated with test suites, and modify a test suite hierarchy (move a test suite): **Manage test suites** permission set to **Allow** under the corresponding **Area Path**. |
+| **Permissions** | - To add or modify test plans, test suites, test cases, or other test-based work item types: **Edit work items in this node** permission set to **Allow** under the corresponding **Area Path**.<br>- To modify test plan properties such as build and test settings: **Manage test plans** permission set to **Allow** under the corresponding **Area Path**.<br>- To create and delete test suites, add and remove test cases from test suites, change test configurations associated with test suites, and modify a test suite hierarchy (move a test suite): **Manage test suites** permission set to **Allow** under the corresponding **Area Path**. |
 |**Extensions**| [Test & Feedback](https://marketplace.visualstudio.com/items?itemName=ms.vss-exploratorytesting-web) extension. If the extension isn't installed, the option to explore work items from the board isn't visible.|
 
 <a name="kanban"></a>
@@ -87,7 +88,17 @@ To explore another work item, first dissociate the current work item from the in
 
 ## View your exploratory session results
 
-After you file bugs, create tasks, or create test cases, they appear on the "Recent exploratory sessions" page in Azure Test Plans.
+::: moniker range="azure-devops"
+
+After you file bugs, create tasks, or create test cases, they appear on the **Exploratory sessions** page. In your Azure DevOps project, select **Test Plans** > **Exploratory sessions**.
+
+::: moniker-end
+
+::: moniker range="< azure-devops"
+
+After you file bugs, create tasks, or create test cases, they appear on the **Recent exploratory sessions** page. In your Azure DevOps project, select **Test Plans** > **Runs** > **Recent exploratory sessions**.
+
+::: moniker-end
 
 For more information, see [View your sessions and gain insights](insights-exploratory-testing.md).
 

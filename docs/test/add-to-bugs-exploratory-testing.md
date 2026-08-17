@@ -1,13 +1,14 @@
 ---
-title: Add findings to existing bugs
-description: Manual and exploratory testing - add findings to  existing bugs when using the Test &amp; Feedback extension
+title: Add exploratory testing findings to existing bugs
+description: Learn how to use the Test & Feedback extension to find similar Azure DevOps bugs and add screenshots, notes, and recordings to an existing bug.
 ms.service: azure-devops-test-plans
 ms.custom: UpdateFrequency3
+ai-usage: ai-assisted
 ms.topic: how-to
 ms.author: pliaros
 author: rohit-batra
 monikerRange: '<= azure-devops'
-ms.date: 09/14/2021
+ms.date: 08/14/2026
 ms.update-cycle: 1095-days
 ---
 
@@ -57,7 +58,17 @@ searches for and displays existing bugs, based on the keywords in the title as y
 
 ## See your exploratory session results 
 
-After you file bugs, create tasks, or create test cases, they show up in the "Recent exploratory sessions" page in Azure Test Plans.
+::: moniker range="azure-devops"
+
+After you file bugs, create tasks, or create test cases, they appear on the **Exploratory sessions** page. In your Azure DevOps project, select **Test Plans** > **Exploratory sessions**.
+
+::: moniker-end
+
+::: moniker range="< azure-devops"
+
+After you file bugs, create tasks, or create test cases, they appear on the **Recent exploratory sessions** page. In your Azure DevOps project, select **Test Plans** > **Runs** > **Recent exploratory sessions**.
+
+::: moniker-end
 
 See how you can [view your sessions and get insights](insights-exploratory-testing.md).
 

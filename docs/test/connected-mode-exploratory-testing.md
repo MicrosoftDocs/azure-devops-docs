@@ -1,13 +1,14 @@
 ---
 title: Exploratory testing in connected mode
-description: Manual and exploratory testing - exploratory testing by using the Test & Feedback extension in Connected mode
+description: Learn how to connect the Test & Feedback extension to Azure DevOps, run exploratory tests, capture findings, and review sessions.
 ms.service: azure-devops-test-plans
 ms.custom: UpdateFrequency3
+ai-usage: ai-assisted
 ms.topic: quickstart
 ms.author: pliaros
 author: rohit-batra
 monikerRange: '<= azure-devops'
-ms.date: 09/16/2024
+ms.date: 08/14/2026
 ms.update-cycle: 1095-days
 ---
 
@@ -20,7 +21,7 @@ To use the Test & Feedback extension in Connected mode, connect to an Azure DevO
 * Users with **Basic** access can use the extension to perform exploratory
   testing, as described in this article.
 * Users with **Stakeholder** access can use the extension to respond to feedback requests or to [provide feedback](request-stakeholder-feedback.md#voluntary) voluntarily.
-* Users with **Basic** or **Stakeholder** access can use extension to respond to feedback requests sent by the team by choosing the **Provide feedback** link in the email. for more information, see [Provide stakeholder feedback](request-stakeholder-feedback.md#email).
+* Users with **Basic** or **Stakeholder** access can use the extension to respond to feedback requests sent by the team by choosing the **Provide feedback** link in the email. For more information, see [Provide stakeholder feedback](request-stakeholder-feedback.md#email).
 
 ## Prerequisites
 
@@ -63,7 +64,7 @@ Do the following steps to start your exploratory testing session and create bugs
 
 1. Start your exploratory testing session. 
 
-   ![Start your exploratory testing session](media/connected-mode-exploratory-testing/create-bugs-01.png)
+   ![Screenshot of the Test and Feedback toolbar with the Start session button highlighted.](media/connected-mode-exploratory-testing/create-bugs-01.png)
 
 1. Open the web application you want to test, and start exploring it. 
 
@@ -72,7 +73,7 @@ Do the following steps to start your exploratory testing session and create bugs
 
    ![Take a screenshot, make notes, or record your actions as a video](media/connected-mode-exploratory-testing/create-bugs-01a.png)
 
-   >Some browsers may not provide all of the capture capabilities.
+   Some browsers might not provide all of the capture capabilities.
    See [Supported web browsers for the extension](perform-exploratory-tests.md#browser-support).
 
 1. When you're done exploring and capturing information, create a bug or a task. 
@@ -87,7 +88,7 @@ Do the following steps to start your exploratory testing session and create bugs
 
    ![Decide whether to include the image action log and page load data](media/connected-mode-exploratory-testing/create-bugs-03.png)
 
-   >The image action log is the sequence of steps you took that led to the issue.
+   The image action log is the sequence of steps you took that led to the issue.
    It can be used to reproduce the issue and understand the context.
    Page load data provides preliminary information about the time it takes to load
    the pages, such as the resource timings and navigation timelines.
@@ -95,7 +96,7 @@ Do the following steps to start your exploratory testing session and create bugs
 1. Enter a title for the bug or task and add any other notes 
    you require to the description. Then save the bug or task.
 
-   ![Save the bug or task](media/connected-mode-exploratory-testing/create-bugs-04.png)
+   ![Screenshot of a new bug form with a captured screen recording and the Save button highlighted.](media/connected-mode-exploratory-testing/create-bugs-04.png)
 
    You can also [add your findings to an existing similar bug](reference-qa.yml#can-i-edit-an-existing-bug-instead-of-creating-a-new-bug-when-using-the-test---feedback-extension). 
 
@@ -110,11 +111,11 @@ Do the following steps to start your exploratory testing session and create bugs
 
 1. To view a bug or task in Azure DevOps, choose the link in the session timeline.
 
-   ![Screenshot of view a bug or task.](media/connected-mode-exploratory-testing/create-bugs-09.png)
+   ![Screenshot of the session timeline with a newly created bug selected.](media/connected-mode-exploratory-testing/create-bugs-09.png)
 
    The work item form opens in Azure DevOps.
 
-   ![Screenshot of the bug or task.](media/connected-mode-exploratory-testing/create-bugs-10.png)
+   ![Screenshot of a bug work item with captured observations and a screen recording link.](media/connected-mode-exploratory-testing/create-bugs-10.png)
 
 [How do I play the video recordings I created with the extension?](reference-qa.yml#how-do-i-play-the-video-recordings-i-created-with-the-extension)
  
@@ -149,13 +150,35 @@ The extension lets you create test cases as you explore your application.
 
    ![Screenshot of View the exploratory testing session.](media/connected-mode-exploratory-testing/create-bugs-06.png)
 
-   Alternatively, open the **Recent exploratory sessions** list directly in the **Runs** page of the **Test Plans** web portal.
- 
-   ![Screenshot of the view of the exploratory testing sessions on the server.](media/connected-mode-exploratory-testing/create-bugs-07.png)
+::: moniker range="azure-devops"
+
+Alternatively, in your Azure DevOps project, select **Test Plans** > **Exploratory sessions**.
+
+![Screenshot of the Test Plans menu with Exploratory sessions highlighted.](media/insights-exploratory-testing/exploratory-sessions-navigation.png)
+
+::: moniker-end
+
+::: moniker range="< azure-devops"
+
+Alternatively, in your Azure DevOps project, select **Test Plans** > **Runs** > **Recent exploratory sessions**.
+
+![Screenshot of the Recent exploratory sessions page in Azure DevOps Server.](media/connected-mode-exploratory-testing/create-bugs-07.png)
+
+::: moniker-end
 
 ## See your exploratory session results 
 
-After you file bugs, create tasks, or create test cases, they show up in the "Recent exploratory sessions" page in Azure Test Plans.
+::: moniker range="azure-devops"
+
+After you file bugs, create tasks, or create test cases, they appear on the **Exploratory sessions** page in Azure Test Plans.
+
+::: moniker-end
+
+::: moniker range="< azure-devops"
+
+After you file bugs, create tasks, or create test cases, they appear on the **Recent exploratory sessions** page in Azure Test Plans.
+
+::: moniker-end
 
 See how you can [view your sessions and get insights](insights-exploratory-testing.md).
 
