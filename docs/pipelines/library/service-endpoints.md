@@ -156,7 +156,7 @@ Azure Pipelines supports the following service connection types by default. You 
 | Service connection type | Description |
 |-------------------------|-------------|
 | [Azure Classic](#azure-classic-service-connection) | Connect to your Azure subscription via credentials or certificate. |
-| [Azure DevOps](add-devops-entra-service-connection.md) | Connect to Azure DevOps resources using Microsoft Entra workload identity federation (service principal or managed identity) instead of personal access tokens (PATs) or session tokens. This connection type is currently in preview. |
+| [Azure DevOps](add-devops-entra-service-connection.md) | Connect to Azure DevOps resources using Microsoft Entra workload identity federation (service principal or managed identity) instead of personal access tokens (PATs) or session tokens. |
 | [Azure Repos/Team Foundation Server](#azure-repos) | Connect to Azure Repos in your DevOps organization or collection.|
 | [Azure Resource Manager](#azure-resource-manager-service-connection) | Connect to Azure resources. |
 | [Azure Service Bus](#azure-service-bus-service-connection) | Connect to an Azure Service Bus queue. |
