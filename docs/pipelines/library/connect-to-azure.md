@@ -4,7 +4,7 @@ description: Learn how to use an Azure Resource Manager service connection to co
 ms.topic: concept-article
 ms.author: rabououn
 author: ramiMSFT
-ms.date: 08/12/2026
+ms.date: 08/18/2026
 ai-usage: ai-assisted
 monikerRange: '<= azure-devops'
 ms.custom: devx-track-arm-template, arm2024, sfi-image-nochange
@@ -17,13 +17,13 @@ ms.custom: devx-track-arm-template, arm2024, sfi-image-nochange
 An Azure Resource Manager service connection allows you to connect to Azure resources like Azure Key Vault from your pipeline. This connection lets you use a pipeline to deploy to Azure resources, such as an Azure App Service app, without needing to authenticate each time.
 
 > [!IMPORTANT]
-> Azure Pipelines is starting to automatically disable service connections that haven't been used for 100 days. A service connection administrator, such as the creator of the connection, or a Project Administrator can re-enable the connection from **Project settings** > **Service connections** if it's still needed. 
+> Service connection administrators and Project Administrators can disable Azure Resource Manager service connections, and Azure Pipelines may automatically disable connections that haven't been used for 100 days. Pipelines that reference a disabled connection can fail until the connection is re-enabled from **Project settings** > **Service connections**. Azure DevOps records disable and enable events in the [Audit log](../../organizations/audit/azure-devops-auditing.md).
 
 ::: moniker range="azure-devops"
 You have multiple authentication options for connecting to Azure with an Azure Resource Manager service connection. We recommend using [workload identity federation](/azure/active-directory/workload-identities/workload-identity-federation) with either an app registration or managed identity. Workload identity federation eliminates the need for secrets and secret management. 
 
 > [!NOTE]
-> For workload identity federation (WIF) service connections in Azure public cloud, Azure DevOps is deprecating the Azure DevOps issuer (`https://vstoken.dev.azure.com`) and standardizing on the Microsoft Entra issuer (`https://login.microsoftonline.com/`). New WIF service connections now use the Microsoft Entra issuer by default.
+> For workload identity federation (WIF) service connections in Azure public cloud, Azure DevOps is deprecating the Azure DevOps issuer (`https://vstoken.dev.azure.com`), which retires on July 1, 2027, and standardizing on the Microsoft Entra issuer (`https://login.microsoftonline.com/`). New WIF service connections use the Microsoft Entra issuer by default. This applies to service connections that use single-tenant Microsoft Entra applications or managed identities; non-public clouds and multi-tenant applications are excluded.
 >
 > This change affects issuer behavior when you create or convert applicable service connections.
 
@@ -166,7 +166,7 @@ You can quickly convert an existing Azure Resource Manager service connection to
 >
 > **Exclusions:** Service connections that target non-public clouds (for example, Azure US Government or Azure Stack) and service connections that use multi-tenant applications are excluded from this issuer deprecation scope and continue to use the Azure DevOps issuer.
 >
-> For applicable service connections, conversion updates the connection to use workload identity federation with the Microsoft Entra issuer. Use the **Convert** (or **Update**) flow in Azure DevOps when available. If you can't complete the automated flow because you don't have required identity access, use the manual federated credential process in [Set up workload identity federation for Azure Resource Manager manually](../release/configure-workload-identity.md).
+> Azure DevOps flags applicable service connections in the service connection list and configuration UI. Select **Update** to convert the connection to use workload identity federation with the Microsoft Entra issuer. If you can't complete the automated flow because you don't have required identity access, use the manual federated credential process in [Set up workload identity federation for Azure Resource Manager manually](../release/configure-workload-identity.md).
 
 To convert a service connection:
 
