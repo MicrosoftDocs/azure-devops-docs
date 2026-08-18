@@ -5,7 +5,7 @@ description: Learn how to manage Azure Pipelines service connections and get a r
 ms.topic: concept-article
 ms.author: ronai
 author: RoopeshNair
-ms.date: 08/12/2026
+ms.date: 08/18/2026
 monikerRange: '<= azure-devops'
 ---
 
@@ -16,7 +16,7 @@ monikerRange: '<= azure-devops'
 This article covers service connections in Azure Pipelines. Service connections are authenticated connections between Azure Pipelines and external or remote services that you use to execute tasks in a job.
 
 > [!IMPORTANT]
-> Service connections have standing access to the services they connect to. If a connection is still referenced in a pipeline but that pipeline is no longer being used, the access can remain longer than intended. To reduce unnecessary standing access, Azure Pipelines is starting to automatically disable service connections that haven't been used for 100 days.
+> Service connections have standing access to the services they connect to. If a connection is still referenced in a pipeline but that pipeline is no longer being used, the access can remain longer than intended. To reduce unnecessary standing access, Azure Pipelines might automatically disable service connections that you didn't use for 100 days.
 
 For example, your pipelines might use the following categories of service connections: 
 
@@ -116,9 +116,9 @@ To view information about a service connection, from your project select **Proje
 
 - You can also select **Security** or **Delete** on the **More options** menu. For more information about managing security permissions, see [Set service connection permissions](../policies/permissions.md#set-service-connection-security-in-azure-pipelines).
 
-- Select **Disable** on the **More options** menu to prevent pipelines from using the service connection when the connection is no longer needed or should no longer have standing access.
+- Service connection administrators and Project Administrators can select **Disable** on the **More options** menu to prevent pipelines from using the service connection when the connection is no longer needed or should no longer have standing access. Pipelines that reference a disabled connection fail or are denied access until the connection is enabled again.
 
-- If Azure Pipelines disables a service connection after 100 days of inactivity, select **Enable** on the same menu after you confirm the connection is still required.
+- Azure Pipelines might automatically disable a service connection after 100 days of inactivity. The service connection list and configuration UI show that the connection is disabled. After you confirm the connection is still required, select **Enable** on the same menu to restore access. Azure DevOps records disable and enable events in the [Audit log](../../organizations/audit/azure-devops-auditing.md).
 
 - To edit existing approvals and checks, select from the **More options** menu next to the approval on the **Approvals and checks** tab.
 
@@ -156,7 +156,7 @@ Azure Pipelines supports the following service connection types by default. You 
 | Service connection type | Description |
 |-------------------------|-------------|
 | [Azure Classic](#azure-classic-service-connection) | Connect to your Azure subscription via credentials or certificate. |
-| [Azure DevOps](add-devops-entra-service-connection.md) | Connect to Azure DevOps resources using Microsoft Entra workload identity federation. |
+| [Azure DevOps](add-devops-entra-service-connection.md) | Connect to Azure DevOps resources using Microsoft Entra workload identity federation (service principal or managed identity) instead of personal access tokens (PATs) or session tokens. |
 | [Azure Repos/Team Foundation Server](#azure-repos) | Connect to Azure Repos in your DevOps organization or collection.|
 | [Azure Resource Manager](#azure-resource-manager-service-connection) | Connect to Azure resources. |
 | [Azure Service Bus](#azure-service-bus-service-connection) | Connect to an Azure Service Bus queue. |
@@ -184,11 +184,11 @@ Azure Pipelines supports the following service connection types by default. You 
 | [Visual Studio App Center](#visual-studio-app-center-service-connection) | Connect to Visual Studio App Center server. |
 
 > [!NOTE]
-> For workload identity federation (WIF) service connections in Azure public cloud, Azure DevOps is retiring the Azure DevOps issuer (`https://vstoken.dev.azure.com`) and standardizing on the Microsoft Entra issuer (`https://login.microsoftonline.com/`). New WIF service connections now use the Microsoft Entra issuer by default.
+> For workload identity federation (WIF) service connections in Azure public cloud, Azure DevOps is deprecating the Azure DevOps issuer (`https://vstoken.dev.azure.com`), which retires on July 1, 2027, and standardizing on the Microsoft Entra issuer (`https://login.microsoftonline.com/`). New WIF service connections use the Microsoft Entra issuer by default.
 >
 > This issuer change applies to service connections that use single-tenant Microsoft Entra applications or managed identities. It doesn't apply to service connections targeting non-public clouds or to service connections that use multi-tenant applications, which continue to use the Azure DevOps issuer.
 >
-> To move existing connections, use the **Update**/**Convert** flow described in [Connect to Azure with an Azure Resource Manager service connection](connect-to-azure.md#convert-an-existing-service-connection-to-use-workload-identity-federation). If you can't use that flow because you don't have identity access, use the manual federated credential approach in [Set up workload identity federation for Azure Resource Manager manually](../release/configure-workload-identity.md).
+> Azure DevOps flags affected connections in the service connection list and configuration UI. Select **Update** to convert the connection to the Microsoft Entra issuer. If you can't use that action because you don't have identity access, use the manual federated credential approach in [Set up workload identity federation for Azure Resource Manager manually](../release/configure-workload-identity.md).
 
 ### Azure Classic service connection
 
@@ -217,6 +217,11 @@ If your subscription is defined in an [Azure Government Cloud](/azure/azure-gove
 > For PAT-free authentication to Azure DevOps resources from pipelines, use the [Azure DevOps service connection](add-devops-entra-service-connection.md), which uses Microsoft Entra workload identity federation.
 
 For a broader comparison of pipeline, app, and script authentication choices, see [Authentication methods for Azure DevOps](../../integrate/get-started/authentication/authentication-guidance.md). For Azure Pipelines access to Azure DevOps resources, the Azure DevOps service connection is the recommended starting point.
+
+The Azure DevOps service connection supports scenarios such as cross-organization repository checkout and YAML template reuse across organizations, without requiring a PAT. It can also be used for PAT-free authentication to Azure Artifacts feeds across organizations. For more information about these scenarios, see [Create an Azure DevOps service connection](add-devops-entra-service-connection.md).
+
+> [!NOTE]
+> You can also use the [AzureCLI@3 task](/azure/devops/pipelines/tasks/reference/azure-cli-v3) to create a Microsoft Entra-authenticated Azure DevOps CLI session, or to obtain a Microsoft Entra access token for calling the Azure DevOps REST API, when using the Azure DevOps service connection.
 
 Connect to an Azure DevOps organization or project collection using basic or token-based authentication.
 Use the following parameters to define and secure a connection to another Azure DevOps organization.
