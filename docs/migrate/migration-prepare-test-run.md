@@ -110,7 +110,7 @@ You can easily allow connections from all Azure DevOps Services regions by addin
 ### Option 2: Use IP List 
 
 > [!IMPORTANT]
-> Azure Storage IP firewall rules don't apply to requests that originate from the same Azure region as the storage account. For more information, see [Restrictions for IP network rules](/azure/storage/common/storage-network-security-limitations#restrictions-for-ip-network-rules). So, if your DACPAC storage account is in the same Azure region as your destination organization and **Public network access** is set to **Selected networks**, Azure Storage can't match the IPs that `Migrator IpList` returns, and DACPAC access fails with error `VS403247`.
+> Azure Storage IP firewall rules don't apply to requests that originate from the same Azure region as the storage account. For more information, see [Restrictions for IP network rules](/azure/storage/common/storage-network-security-limitations#restrictions-for-ip-network-rules). If your DACPAC storage account is in the same Azure region as your destination organization and **Public network access** is set to **Selected networks**, Azure Storage can't match the IPs that `Migrator IpList` returns, and DACPAC access fails with error `VS403247`.
 
 To work around the same-region limitation, use one of the following approaches. The more secure approach is listed first:
 
