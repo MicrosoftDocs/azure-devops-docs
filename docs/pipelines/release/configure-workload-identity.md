@@ -4,7 +4,7 @@ description: Learn how to manually set an Azure Resource Manager workload identi
 ms.topic: concept-article
 ms.author: rabououn
 author: ramiMSFT
-ms.date: 06/09/2026
+ms.date: 08/18/2026
 monikerRange: '>= azure-devops'
 ms.custom: devx-track-arm-template, arm2024, sfi-image-nochange
 recommendations: true
@@ -22,9 +22,9 @@ For authentication, you can use either a managed identity or an app registration
 
 ## Azure DevOps issuer deprecation
 
-Azure DevOps issuer workload identity federation service connections are being deprecated. If your service connection is flagged as deprecated, convert it to the Microsoft Entra issuer.
+Workload identity federation service connections that use the Azure DevOps issuer (`https://vstoken.dev.azure.com`) are deprecated and will retire on July 1, 2027. New workload identity federation service connections use the Microsoft Entra issuer (`https://login.microsoftonline.com/`) by default. If your existing service connection is flagged as deprecated, convert it to the Microsoft Entra issuer before the retirement date.
 
-This deprecation applies only to eligible service connections in Azure public cloud that use single-tenant Microsoft Entra applications or managed identities. Service connections that target non-public clouds and service connections that use multitenant applications are out of scope for this deprecation. If you have an existing service connection that uses the Azure DevOps issuer, convert the existing connection instead of creating a replacement connection. See [Convert service connections](convert-service-connections.md) for more details.
+This deprecation applies only to eligible service connections in Azure public cloud that use single-tenant Microsoft Entra applications or managed identities. Service connections that target non-public clouds and service connections that use multitenant applications are out of scope for this deprecation. Azure DevOps flags affected service connections in the service connection list and configuration UI. If you have an existing service connection that uses the Azure DevOps issuer, convert the existing connection instead of creating a replacement connection. See [Convert service connections](convert-service-connections.md) for more details.
 
 ### Required permissions
 
@@ -53,9 +53,9 @@ If an existing service connection uses the deprecated Azure DevOps issuer, conve
 
 1. In Azure DevOps, open your project and go to :::image type="icon" source="../../media/icons/gear-icon.png" border="false"::: **Project settings** > **Pipelines** > **Service connections**.
 
-1. Select the service connection that's flagged as deprecated.
+1. Select the service connection that's flagged as deprecated in the list or configuration UI.
 
-1. Select the option to update the service connection.
+1. Select **Update** to update the service connection.
 
 1. Let Azure DevOps attempt the conversion.
 
