@@ -156,7 +156,7 @@ Azure Pipelines supports the following service connection types by default. You 
 | Service connection type | Description |
 |-------------------------|-------------|
 | [Azure Classic](#azure-classic-service-connection) | Connect to your Azure subscription via credentials or certificate. |
-| [Azure DevOps](add-devops-entra-service-connection.md) | Connect to Azure DevOps resources using Microsoft Entra workload identity federation. |
+| [Azure DevOps](add-devops-entra-service-connection.md) | Connect to Azure DevOps resources using Microsoft Entra workload identity federation (service principal or managed identity) instead of personal access tokens (PATs) or session tokens. |
 | [Azure Repos/Team Foundation Server](#azure-repos) | Connect to Azure Repos in your DevOps organization or collection.|
 | [Azure Resource Manager](#azure-resource-manager-service-connection) | Connect to Azure resources. |
 | [Azure Service Bus](#azure-service-bus-service-connection) | Connect to an Azure Service Bus queue. |
@@ -217,6 +217,11 @@ If your subscription is defined in an [Azure Government Cloud](/azure/azure-gove
 > For PAT-free authentication to Azure DevOps resources from pipelines, use the [Azure DevOps service connection](add-devops-entra-service-connection.md), which uses Microsoft Entra workload identity federation.
 
 For a broader comparison of pipeline, app, and script authentication choices, see [Authentication methods for Azure DevOps](../../integrate/get-started/authentication/authentication-guidance.md). For Azure Pipelines access to Azure DevOps resources, the Azure DevOps service connection is the recommended starting point.
+
+The Azure DevOps service connection supports scenarios such as cross-organization repository checkout and YAML template reuse across organizations, without requiring a PAT. It can also be used for PAT-free authentication to Azure Artifacts feeds across organizations. For more information about these scenarios, see [Create an Azure DevOps service connection](add-devops-entra-service-connection.md).
+
+> [!NOTE]
+> You can also use the [AzureCLI@3 task](/azure/devops/pipelines/tasks/reference/azure-cli-v3) to create a Microsoft Entra-authenticated Azure DevOps CLI session, or to obtain a Microsoft Entra access token for calling the Azure DevOps REST API, when using the Azure DevOps service connection.
 
 Connect to an Azure DevOps organization or project collection using basic or token-based authentication.
 Use the following parameters to define and secure a connection to another Azure DevOps organization.
