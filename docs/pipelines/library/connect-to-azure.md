@@ -17,13 +17,13 @@ ms.custom: devx-track-arm-template, arm2024, sfi-image-nochange
 An Azure Resource Manager service connection allows you to connect to Azure resources like Azure Key Vault from your pipeline. This connection lets you use a pipeline to deploy to Azure resources, such as an Azure App Service app, without needing to authenticate each time.
 
 > [!IMPORTANT]
-> Service connection administrators and Project Administrators can disable Azure Resource Manager service connections, and Azure Pipelines may automatically disable connections that haven't been used for 100 days. Pipelines that reference a disabled connection can fail until the connection is re-enabled from **Project settings** > **Service connections**. Azure DevOps records disable and enable events in the [Audit log](../../organizations/audit/azure-devops-auditing.md).
+> Service connection administrators and Project Administrators can disable Azure Resource Manager service connections. Azure Pipelines might automatically disable connections that you didn't use for 100 days. Pipelines that reference a disabled connection can fail until you re-enable the connection from **Project settings** > **Service connections**. Azure DevOps records disable and enable events in the [Audit log](../../organizations/audit/azure-devops-auditing.md).
 
 ::: moniker range="azure-devops"
 You have multiple authentication options for connecting to Azure with an Azure Resource Manager service connection. We recommend using [workload identity federation](/azure/active-directory/workload-identities/workload-identity-federation) with either an app registration or managed identity. Workload identity federation eliminates the need for secrets and secret management. 
 
 > [!NOTE]
-> For workload identity federation (WIF) service connections in Azure public cloud, Azure DevOps is deprecating the Azure DevOps issuer (`https://vstoken.dev.azure.com`), which retires on July 1, 2027, and standardizing on the Microsoft Entra issuer (`https://login.microsoftonline.com/`). New WIF service connections use the Microsoft Entra issuer by default. This applies to service connections that use single-tenant Microsoft Entra applications or managed identities; non-public clouds and multi-tenant applications are excluded.
+> For workload identity federation (WIF) service connections in Azure public cloud, Azure DevOps is deprecating the Azure DevOps issuer (`https://vstoken.dev.azure.com`), which retires on July 1, 2027, and standardizing on the Microsoft Entra issuer (`https://login.microsoftonline.com/`). New WIF service connections use the Microsoft Entra issuer by default. This change applies to service connections that use single-tenant Microsoft Entra applications or managed identities. Non-public clouds and multitenant applications are excluded.
 >
 > This change affects issuer behavior when you create or convert applicable service connections.
 

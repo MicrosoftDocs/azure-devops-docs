@@ -16,7 +16,7 @@ monikerRange: '<= azure-devops'
 This article covers service connections in Azure Pipelines. Service connections are authenticated connections between Azure Pipelines and external or remote services that you use to execute tasks in a job.
 
 > [!IMPORTANT]
-> Service connections have standing access to the services they connect to. If a connection is still referenced in a pipeline but that pipeline is no longer being used, the access can remain longer than intended. To reduce unnecessary standing access, Azure Pipelines may automatically disable service connections that haven't been used for 100 days.
+> Service connections have standing access to the services they connect to. If a connection is still referenced in a pipeline but that pipeline is no longer being used, the access can remain longer than intended. To reduce unnecessary standing access, Azure Pipelines might automatically disable service connections that you didn't use for 100 days.
 
 For example, your pipelines might use the following categories of service connections: 
 
@@ -118,7 +118,7 @@ To view information about a service connection, from your project select **Proje
 
 - Service connection administrators and Project Administrators can select **Disable** on the **More options** menu to prevent pipelines from using the service connection when the connection is no longer needed or should no longer have standing access. Pipelines that reference a disabled connection fail or are denied access until the connection is enabled again.
 
-- Azure Pipelines may automatically disable a service connection after 100 days of inactivity. The service connection list and configuration UI show that the connection is disabled. After you confirm the connection is still required, select **Enable** on the same menu to restore access. Azure DevOps records disable and enable events in the [Audit log](../../organizations/audit/azure-devops-auditing.md).
+- Azure Pipelines might automatically disable a service connection after 100 days of inactivity. The service connection list and configuration UI show that the connection is disabled. After you confirm the connection is still required, select **Enable** on the same menu to restore access. Azure DevOps records disable and enable events in the [Audit log](../../organizations/audit/azure-devops-auditing.md).
 
 - To edit existing approvals and checks, select from the **More options** menu next to the approval on the **Approvals and checks** tab.
 
