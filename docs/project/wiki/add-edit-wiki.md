@@ -257,7 +257,7 @@ az devops wiki page update --path 'Get Started' --wiki MyProjectwiki --file-path
 You can delete a wiki page by using the `az devops wiki page delete` command:
 
 > [!NOTE]
-> For pages deleted in the browser or with the Azure DevOps CLI, recreating the page at the same path within 30 days retains the original page ID and preserves existing links. Recreating the page after 30 days, or at a different path, assigns a new page ID and can break existing links.
+> For pages you delete in the browser or by using the Azure DevOps CLI, if you recreate the page at the same path within 30 days, you keep the original page ID and preserve existing links. If you recreate the page after 30 days or at a different path, you get a new page ID and can break existing links.
 
 > [!div class="tabbedCodeSnippets"]
 ```azurecli
