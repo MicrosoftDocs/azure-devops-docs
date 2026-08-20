@@ -2,7 +2,7 @@
 title: Azure DevOps Released Features
 author: gloridelmorales
 ms.author: glmorale
-ms.date: 7/30/2026
+ms.date: 8/19/2026
 ms.topic: release-notes
 ms.service: azure-devops
 ms.subservice: azure-devops-release-notes
@@ -37,6 +37,16 @@ You can also [view the build numbers for each version](#azure-devops-server-buil
             <th>Server</th>
         </tr>
     </thead>
+<tr>
+    <td rowspan="8"><a href="2026/sprint-278-update.md" data-raw-source="[August 20 2026](2026/sprint-278-update.md)">August 20 2026</a></td>
+    <td>Azure DevOps Remote MCP Server is now generally available</td><td>General</td><td>N/A</td></tr>
+    <td>Azure Monitor Logs audit streaming now uses Microsoft Entra authentication for workspace authorization</td><td>General</td><td>Future</td></tr>
+    <td>Audit events for expired Visual Studio subscriptions and GitHub Enterprise licenses</td><td>General</td><td>Future</td></tr>
+    <td>Audit events for service hooks</td><td>General</td><td>Future</td></tr>
+    <td>Support for ARM64 with VSTest v3 task</td><td>Pipelines</td><td>N/A</td></tr>
+    <td>Improved code coverage experience for Azure Pipelines</td><td>Pipelines</td><td>Future</td></tr>
+    <td>Pipeline builds are moving to Microsoft Entra-issued access tokens</td><td>Pipelines</td><td>Future</td></tr>
+    <td>Improved Wiki page recovery</td><td>Wiki</td><td>Future</td></tr>
 <tr>
     <td rowspan="7"><a href="2026/sprint-277-update.md" data-raw-source="[July 30 2026](2026/sprint-277-update.md)">July 30 2026</a></td>
     <td>Enterprise Live Migration MCP Server Tools (Preview)</td><td>General</td><td>N/A</td></tr>
