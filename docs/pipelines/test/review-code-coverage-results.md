@@ -28,7 +28,7 @@ This article shows you how to view, configure, and troubleshoot code coverage in
 
 ### Supported formats
 
-Azure Pipelines can publish coverage results through the Publish Code Coverage Results v2 task. The task can display results in two views:
+Azure Pipelines can publish coverage results through the **Publish Code Coverage Results v2** task. The task can display results in two views:
 
 - For Cobertura, JaCoCo, Clover, gcov, pcov, and other XML formats, Azure Pipelines shows the enhanced Code Coverage experience by default and can also provide an HTML report for supported publishing scenarios.
 - For `.coverage`/`.cjson`/`.covx`, Azure Pipelines shows coverage data in the Code Coverage tab and supports drill-down when source mappings are available.
@@ -39,11 +39,11 @@ You can view the code coverage artifacts published during the build under the **
 
 :::image type="content" source="media/review-code-coverage-results/summary-tab-pipeline-summary.png" alt-text="Screenshot shows Summary tab with a manual run and 2 published items.":::
 
-Additionally, you can review the results from the code coverage report in the **Code Coverage** tab. The enhanced Code Coverage tab provides aggregated coverage at folder and file levels and supports drill-down navigation (folder > file > source view) where source coverage is available.
+You can also review the results from the code coverage report in the **Code Coverage** tab. The enhanced Code Coverage tab provides aggregated coverage at folder and file levels and supports drill-down navigation (folder > file > source view) where source coverage is available.
 
 :::image type="content" source="media/review-code-coverage-results/code-coverage-tab-summary.png" alt-text="Screenshot shows Code Coverage tab contents with summary, metrics, and coverage.":::
 
-- If you publish code coverage using supported **Visual Studio Test** or **Publish Code Coverage Results v2** scenarios, you can use the Code Coverage tab toggle to switch between the enhanced experience and the HTML report view. HTML report availability depends on the published coverage format and tooling.
+- If you publish code coverage by using supported **Visual Studio Test** or **Publish Code Coverage Results v2** scenarios, you can use the Code Coverage tab toggle to switch between the enhanced experience and the HTML report view. HTML report availability depends on the published coverage format and tooling.
   :::image type="content" source="media/review-code-coverage-results/view-html-report.png" alt-text="Screenshot shows HTML report summary.":::
 - For .NET and .NET Core, you can access the link to download the artifact by choosing the code coverage milestone in the build summary.
 - **Visual Studio Test** can collect coverage for .NET and .NET Core apps. It produces `.coverage` files that you can download and use for further analysis in Visual Studio.
