@@ -196,7 +196,7 @@ To delete a wiki page, select the wiki page in the page list, then select **More
 After you select **Delete**, confirm the delete in the dialog.
 
 > [!NOTE]  
-> When you delete a wiki page, Azure DevOps deletes the page and any subpages attached to the page. If you recreate the deleted page at the same path within 30 days, Azure DevOps retains the original page ID, which preserves existing links to that page.
+> When you delete a wiki page, Azure DevOps deletes the page metadata and any subpages attached to the page. If you recreate the deleted page at the same path within 30 days, Azure DevOps retains the original page ID, which preserves existing links to that page.
 
 ### [Azure DevOps CLI](#tab/azure-devops-cli)
 
@@ -316,9 +316,7 @@ Use drag and drop on page titles in the tree view to complete the following task
 
 ### Fix broken links after page moves
 
-To fix a broken link after you move a page in the wiki sequence, follow these steps:
-
-Broken links can also occur after a page is deleted and recreated after 30 days or at a different path, because that scenario can create a new page ID.
+To fix a broken link after you move a page in the wiki sequence, follow these steps. Broken links can also occur after a page is deleted and recreated after 30 days or at a different path, because that scenario can create a new page ID.
 
 1. Test the other pages in your wiki and look for links to the moved page.
 
