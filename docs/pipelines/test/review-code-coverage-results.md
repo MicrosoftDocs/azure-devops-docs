@@ -44,10 +44,10 @@ Additionally, you can review the results from the code coverage report in the **
 :::image type="content" source="media/review-code-coverage-results/code-coverage-tab-summary.png" alt-text="Screenshot shows Code Coverage tab contents with summary, metrics, and coverage.":::
 
 - If you publish code coverage using supported **Visual Studio Test** or **Publish Code Coverage Results v2** scenarios, you can use the Code Coverage tab toggle to switch between the enhanced experience and the HTML report view. HTML report availability depends on the published coverage format and tooling.
-  :::image type="content" source="media/review-code-coverage-results/view-html-report.png" alt-text="Screenshot show HTML report summary.":::
+  :::image type="content" source="media/review-code-coverage-results/view-html-report.png" alt-text="Screenshot shows HTML report summary.":::
 - For .NET and .NET Core, you can access the link to download the artifact by choosing the code coverage milestone in the build summary.
 - **Visual Studio Test** can collect coverage for .NET and .NET Core apps. It produces `.coverage` files that you can download and use for further analysis in Visual Studio.
-  :::image type="content" source="media/review-code-coverage-results/view-dot-coverage-report.png" alt-text="Screenshot show code coverage results.":::
+  :::image type="content" source="media/review-code-coverage-results/view-dot-coverage-report.png" alt-text="Screenshot shows code coverage results.":::
 
 > [!NOTE]
 > The Code Coverage tab UI is updated over time. If your experience looks different from these screenshots, look for equivalent coverage summary, drill-down navigation, and report toggle options in the same tab.
