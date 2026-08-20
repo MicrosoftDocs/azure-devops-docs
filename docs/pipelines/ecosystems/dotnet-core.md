@@ -694,7 +694,6 @@ To run tests and publish code coverage with Coverlet:
   - task: PublishCodeCoverageResults@2
     displayName: 'Publish code coverage report'
     inputs:
-      codeCoverageTool: 'Cobertura'
       summaryFileLocation: '$(Agent.TempDirectory)/**/coverage.cobertura.xml'
   ```
 

@@ -190,7 +190,6 @@ Add the [Publish code coverage results task](/azure/devops/pipelines/tasks/refer
 ```yaml
 - task: PublishCodeCoverageResults@2
   inputs:
-    codeCoverageTool: Cobertura
     summaryFileLocation: '$(System.DefaultWorkingDirectory)/**/coverage.xml'
 ```
 
