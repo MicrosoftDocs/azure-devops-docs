@@ -316,7 +316,7 @@ Use drag and drop on page titles in the tree view to complete the following task
 
 ### Fix broken links after page moves
 
-To fix a broken link after you move a page in the wiki sequence, follow these steps.
+To fix a broken link after you move a page in the wiki sequence, follow these steps:
 
 > [!NOTE]
 > Broken links can also occur after a page is deleted and recreated after 30 days or at a different path, because that scenario creates a new page ID. For delete and recreate guidance, see the **Delete wiki page in the browser** and **Delete wiki page** sections earlier in this article.
