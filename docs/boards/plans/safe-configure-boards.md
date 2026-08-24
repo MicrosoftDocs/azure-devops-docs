@@ -542,7 +542,6 @@ Add these extensions for enhanced SAFe® functionality:
 
 - [Delivery Plans](../plans/review-team-plans.md)
 - [Feature Timeline and Epic Roadmap](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.workitem-feature-timeline-extension)
-- [Dependency Tracker](../extensions/dependency-tracker.md)
 - [Retrospectives](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.team-retrospectives)
 
 > [!NOTE]

@@ -123,12 +123,10 @@ sections:
           Two project management tools in wide use are Program Evaluation Review Technique (PERT) charts and Gantt charts. PERT charts help calculate the amount of time it takes to realistically finish a project. Horizontal bar charts developed by Henry Gantt help visualize project schedules. Azure DevOps doesn't provide native support for either PERT or Gantt charts. However, it provides the following tools and extensions for visualizing schedules and dependencies:
           ::: moniker range=">= azure-devops-2022"
           - [**Delivery Plans**](../../boards/plans/review-team-plans.md): Displays the scheduled work items by sprint of selected teams against a calendar view, including support for visualizing dependencies.  
-          - [**Dependency Tracker**](../../boards/extensions/dependency-tracker.md): A marketplace extension that supports planning and managing dependencies across teams, projects, and organizations. It provides filterable views to show all dependencies a team is consuming and producing.
           - [**Gantt-chart extensions**](https://marketplace.visualstudio.com/search?term=Gantt&target=AzureDevOps&category=All%20categories&sortBy=Relevance): Marketplace extensions for visualizing portfolio roadmaps.
           ::: moniker-end
           ::: moniker range="< azure-devops"
           - [**Delivery Plans**](../../boards/plans/review-team-plans.md): A marketplace extension that displays scheduled work items by sprint of selected teams against a calendar view.
-          - [**Dependency Tracker**](../../boards/extensions/dependency-tracker.md): A marketplace extension that supports planning and managing dependencies across teams, projects, and organizations. It provides filterable views to show all dependencies a team is consuming and producing.
           - [**Gantt-chart extensions**](https://marketplace.visualstudio.com/search?term=Gantt&target=AzureDevOps&category=All%20categories&sortBy=Relevance): Marketplace extensions for visualizing portfolio roadmaps.
           ::: moniker-end
 
