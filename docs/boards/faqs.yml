@@ -94,8 +94,6 @@ sections:
           Use [Delivery Plans](plans/review-team-plans.md) to visualize dependencies across teams.
           ::: moniker-end
 
-          For cross-organization dependencies, consider the [Dependency Tracker extension](extensions/dependency-tracker.md).
-
       - question: What determines which work item type should be a parent for another work item type?
         answer: |
           Each process defines default backlog levels (for example: requirement, feature, epic). Work item types assigned to those backlog levels naturally form parent-child relationships. For more information, see [Organize your backlog, map child work items to parents](backlogs/organize-backlog.md). To customize backlogs, see [Customize your backlogs or boards, Edit or rename the requirement backlog](../organizations/settings/work/customize-process-backlogs-boards.md).
