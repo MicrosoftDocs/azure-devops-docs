@@ -12,7 +12,7 @@ ms.topic: overview
 
 In this article, you learn about the architecture and key concepts for Microsoft Managed DevOps Pools. Microsoft Managed DevOps Pools gives developers self-service access to managed compute resources to run their CI/CD workloads. You can configure the service to meet your development team and project structure, and manage security and network settings to access resources securely. 
 
-Managed DevOps Pools is supported with Azure DevOps Services and Azure public cloud, and is not supported on any other [national cloud offerings](/entra/identity-platform/authentication-national-cloud).
+Managed DevOps Pools is supported with Azure DevOps Services and Azure public cloud, and isn't supported on any other [national cloud offerings](/entra/identity-platform/authentication-national-cloud).
 
 ## Microsoft Managed DevOps Pools architecture
 
