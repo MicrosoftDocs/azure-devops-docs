@@ -1,11 +1,17 @@
 ---
 title: Managed DevOps Pools FAQ
 description: Get answers to frequently asked questions about Managed DevOps Pools, including quotas, VM SKUs, regions, and pricing.
-ms.date: 04/20/2026
+ms.date: 08/24/2026
 ms.topic: faq
 ---
 
 # Managed DevOps Pools frequently asked questions
+
+## Where is Managed DevOps Pools available?
+
+Managed DevOps Pools is supported with Azure DevOps Services and Azure public cloud, and is not supported on any other [national cloud offerings](/entra/identity-platform/authentication-national-cloud).
+
+For a list of Azure regions that support Managed DevOps Pools, see [Register the Managed DevOps Pools resource provider in your Azure Subscription](./prerequisites.md#register-the-managed-devops-pools-resource-provider-in-your-azure-subscription).
 
 ## How many agents can I create?
 
