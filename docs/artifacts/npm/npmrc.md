@@ -50,7 +50,7 @@ The following steps guide you through setting up the project-level configuration
 
 1. Add a *.npmrc* to your project, in the same directory as your *package.json* and paste the provided snippet from the **Project setup** section into the file.
 
-    :::image type="content" source="../media/npm-project-setup-azure-devops.png" alt-text="A screenshot displaying how to set up your npm project and connect to a feed.":::
+    :::image type="content" source="../media/npm-project-setup-azure-devops.png" alt-text="A screenshot displaying how to set up your npm project and connect to a feed." lightbox="../media/npm-project-setup-azure-devops.png":::
 
 1. Run the following command to get an Azure Artifacts token added to your user-level *npmrc* file. You don’t need to run this every time—npm will return a **401 Unauthorized** error when it’s time to refresh the token.
 
@@ -74,8 +74,6 @@ The following steps guide you through setting up the project-level configuration
 
     ```
     registry=https://pkgs.dev.azure.com/<ORGANIZATION_NAME>/<PROJECT_NAME>/_packaging/<FEED_NAME>/npm/registry/ 
-                        
-    always-auth=true
     ```
 
 ### Setup credentials
@@ -140,7 +138,7 @@ The following steps guide you through setting up the project-level configuration
 
 1. Select **npm** from the left, and then follow the steps in the **Project setup** section to configure your *npmrc* file and authenticate with your feed.
 
-   :::image type="content" source="../media/npm-project-setup-server-2022-1.png" alt-text="A screenshot showing how to set up your npm project in Azure DevOps Server 2022.1.":::
+   :::image type="content" source="../media/npm-project-setup-server-2022-1.png" alt-text="A screenshot showing how to set up your npm project in Azure DevOps Server 2022.1." lightbox="../media/npm-project-setup-server-2022-1.png":::
 
 ### [Other](#tab/other/)
 
@@ -154,8 +152,6 @@ The following steps guide you through setting up the project-level configuration
 
     ```
     registry=http://<SERVER_NAME>/<COLLECTION_NAME>/<PROJECT_NAME>/_packaging/<FEED_NAME>/npm/registry/
-                        
-    always-auth=true
     ```
 
 ### Setup credentials

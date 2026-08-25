@@ -22,16 +22,12 @@ ms.date: 09/11/2023
     
         ```Command
         registry=https://pkgs.dev.azure.com/<ORGANIZATION_NAME/_packaging/<FEED_NAME>/npm/registry/
-        
-        always-auth=true
         ```
 
     - **Project-scoped feed**:
 
         ```Command
         registry=https://pkgs.dev.azure.com/<ORGANIZATION_NAME>/<PROJECT_NAME>/_packaging/<FEED_NAME>/npm/registry/
-        
-        always-auth=true
         ```
 
 ### Set up credentials
