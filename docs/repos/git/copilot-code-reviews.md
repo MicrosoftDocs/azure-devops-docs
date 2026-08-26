@@ -112,6 +112,12 @@ Some organizations disable the default Azure Pipelines pool. In that configurati
 
 If your organization has configured a [Managed DevOps Pool](../../managed-devops-pools/overview.md), you can select it to run Copilot code review instead of the default pool.
 
+When selecting an image for Managed DevOps Pool, ensure you select the latest `Ubuntu Server`.
+
+:::image type="content" source="media/copilot-code-reviews/select-managed-pool.png" alt-text="Screenshot of the Managed DevOps Pool image selection with the latest Ubuntu Server image selected." lightbox="media/copilot-code-reviews/select-managed-pool.png":::
+
+Windows images aren't supported for Copilot Code Reviews. Don't mix your pool with both Ubuntu and Windows agents.
+
 > [!NOTE]
 > Self-hosted agent pools aren't supported for Copilot code review.
 
