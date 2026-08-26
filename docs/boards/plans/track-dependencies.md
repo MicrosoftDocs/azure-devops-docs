@@ -115,6 +115,5 @@ If you have the [Azure Boards MCP Server](../../mcp-server/mcp-server-overview.m
 - [Add or edit a Delivery Plan](add-edit-delivery-plan.md)
 - [Review team Delivery Plans](review-team-plans.md)
 - [Link work items](../backlogs/add-link.md)
-- [Use the Dependency Tracker extension](../extensions/dependency-tracker.md)
 - [Manage dependencies](../best-practices-agile-project-management.md#manage-dependencies)
 

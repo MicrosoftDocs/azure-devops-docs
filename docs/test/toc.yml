@@ -83,9 +83,6 @@
   - name: Explore work items
     displayName: items, workitems, exploratory
     href: explore-workitems-exploratory-testing.md
-  - name: Add to existing bugs
-    displayName: bugs, exploratory
-    href: add-to-bugs-exploratory-testing.md
   - name: Get insights from sessions
     displayName: insights, exploratory, sessions
     href: insights-exploratory-testing.md

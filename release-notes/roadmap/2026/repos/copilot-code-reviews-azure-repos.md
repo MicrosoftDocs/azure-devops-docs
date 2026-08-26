@@ -17,7 +17,8 @@ Copilot Code Reviews for Azure Repos will go into public preview, bringing AI-as
 ## Summary of additional improvements
 
 - Improvements to onboarding and enablement at the organization, project, and repository levels.
-- Support for `copilot.instructions.md` and skills.
+- Support for copilot instructions at the organization, project, and repository levels.
 - Automatic code reviews for new pull requests.
 - Ability to cancel an active Copilot code review run.
 - Support for Managed DevOps Pools.
+- Configure a default level of effort and choose a specific level for each review.

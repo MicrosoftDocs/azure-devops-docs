@@ -2,7 +2,7 @@
 title: Azure DevOps Roadmap
 author: gloridelmorales
 ms.author: glmorale
-ms.date: 07/16/2026
+ms.date: 08/05/2026
 ms.topic: article
 ms.service: azure-devops
 ms.subservice: azure-devops-release-notes
@@ -70,6 +70,10 @@ This feature is currently in limited public preview.
             <td><a href="/azure/devops/release-notes/roadmap/2026/repos/copilot-code-reviews-azure-repos" data-raw-source="[Support for Managed DevOps Pools](/azure/devops/release-notes/roadmap/2026/repos/copilot-code-reviews-azure-repos)">Support for Managed DevOps Pools</a></td>
             <td>2026 Q3</td>
          </tr>
+          <tr>
+            <td><a href="/azure/devops/release-notes/roadmap/2026/repos/copilot-code-reviews-azure-repos" data-raw-source="[Support for Managed DevOps Pools](/azure/devops/release-notes/roadmap/2026/repos/copilot-code-reviews-azure-repos)">Select level of effort</a></td>
+            <td>2026 Q3</td>
+         </tr>
     </tbody>
 </table>
 
@@ -97,7 +101,31 @@ Upcoming capabilities we expect to deliver include:
     </thead>
     <tbody>
       <tr>
-        <td><a href="/azure/devops/release-notes/roadmap/2024/ghazdo/dependabot" data-raw-source="[Automatically fix detected dependency scanning vulnerabilities with Dependabot security updates](/azure/devops/release-notes/roadmap/2024/ghazdo/dependabot)">Automatically fix detected dependency scanning vulnerabilities with Dependabot security updates</a></td>       
+        <td><a href="/azure/devops/release-notes/roadmap/2026/ghazdo/copilot-autofix" data-raw-source="[Copilot Autofix for code scanning alerts (public preview)](/azure/devops/release-notes/roadmap/2026/ghazdo/copilot-autofix)">Copilot Autofix for code scanning alerts (public preview)</a></td>
+        <td>2026 Q3</td>
+      </tr>
+      <tr>
+        <td><a href="/azure/devops/release-notes/roadmap/2026/ghazdo/malware-alerts" data-raw-source="[Malware alerts for dependency scanning](/azure/devops/release-notes/roadmap/2026/ghazdo/malware-alerts)">Malware alerts for dependency scanning</a></td>
+        <td>2026 Q3</td>
+      </tr>
+      <tr>
+        <td><a href="/azure/devops/release-notes/roadmap/2026/ghazdo/dependency-scanning-ecosystem-improvements" data-raw-source="[Dependency scanning ecosystem improvements](/azure/devops/release-notes/roadmap/2026/ghazdo/dependency-scanning-ecosystem-improvements)">Dependency scanning ecosystem improvements</a></td>
+        <td>2026 Q3</td>
+      </tr>
+      <tr>
+        <td><a href="/azure/devops/release-notes/roadmap/2026/ghazdo/security-detections" data-raw-source="[AI security detections for non-CodeQL supported languages](/azure/devops/release-notes/roadmap/2026/ghazdo/security-detections)">AI security detections for non-CodeQL supported languages</a></td>
+        <td>2026 Q4</td>
+      </tr>
+      <tr>
+        <td><a href="/azure/devops/release-notes/roadmap/2026/ghazdo/codeql-default" data-raw-source="[CodeQL default setup runs on pull request trigger](/azure/devops/release-notes/roadmap/2026/ghazdo/codeql-default)">CodeQL default setup runs on pull request trigger</a></td>
+        <td>2026 Q4</td>
+      </tr>
+      <tr>
+        <td><a href="/azure/devops/release-notes/roadmap/2026/ghazdo/code-to-cloud" data-raw-source="[Code-to-cloud integration with Defender for Cloud](/azure/devops/release-notes/roadmap/2026/ghazdo/code-to-cloud)">Code-to-cloud integration with Defender for Cloud</a></td>
+        <td>Future</td>
+      </tr>
+      <tr>
+        <td><a href="/azure/devops/release-notes/roadmap/2026/ghazdo/autofix-dependency-scanning" data-raw-source="[Copilot Autofix for dependency scanning alerts](/azure/devops/release-notes/roadmap/2026/ghazdo/autofix-dependency-scanning)">Copilot Autofix for dependency scanning alerts</a></td>
         <td>Future</td>
       </tr>
    </tbody>
@@ -220,7 +248,7 @@ Below, you'll find several investments that we plan to deliver as part of this i
         </tr>
     </thead>
     <tbody>       
-      <td rowspan="13"><strong>2026 Q3</strong></td>
+      <td rowspan="14"><strong>2026 Q3</strong></td>
       <td><a href="/azure/devops/release-notes/roadmap/2023/commits-search" data-raw-source="[Commits search](/azure/devops/release-notes/roadmap/2023/commits-search)">Commits search</a></td>
         <td>General</td>
       </tr>
@@ -269,10 +297,22 @@ Below, you'll find several investments that we plan to deliver as part of this i
         <td>GitHub Advanced Security for Azure DevOps</td>
       </tr>
       <tr>
+        <td><a href="/azure/devops/release-notes/roadmap/2026/ghazdo/malware-alerts" data-raw-source="[Malware alerts for dependency scanning](/azure/devops/release-notes/roadmap/2026/ghazdo/malware-alerts)">Malware alerts for dependency scanning</a></td>
+        <td>GitHub Advanced Security for Azure DevOps</td>
+      </tr>
+      <tr>
+        <td><a href="/azure/devops/release-notes/roadmap/2026/ghazdo/dependency-scanning-ecosystem-improvements" data-raw-source="[Dependency scanning ecosystem improvements](/azure/devops/release-notes/roadmap/2026/ghazdo/dependency-scanning-ecosystem-improvements)">Dependency scanning ecosystem improvements</a></td>
+        <td>GitHub Advanced Security for Azure DevOps</td>
+      </tr>
+      <td rowspan="2"><strong>2026 Q4</strong></td>
         <td><a href="/azure/devops/release-notes/roadmap/2026/ghazdo/security-detections" data-raw-source="[AI security detections for non-CodeQL supported languages](/azure/devops/release-notes/roadmap/2026/ghazdo/security-detections)">AI security detections for non-CodeQL supported languages</a></td>
         <td>GitHub Advanced Security for Azure DevOps</td>
-      </tr>      
-      <td rowspan="20"><strong>Future</strong></td>
+      </tr>
+      <tr>
+        <td><a href="/azure/devops/release-notes/roadmap/2026/ghazdo/codeql-default" data-raw-source="[CodeQL default setup runs on pull request trigger](/azure/devops/release-notes/roadmap/2026/ghazdo/codeql-default)">CodeQL default setup runs on pull request trigger</a></td>
+        <td>GitHub Advanced Security for Azure DevOps</td>
+      </tr>
+      <td rowspan="18"><strong>Future</strong></td>
         <td><a href="/azure/devops/release-notes/roadmap/auditing-ga" data-raw-source="[Auditing GA](/azure/devops/release-notes/roadmap/auditing-ga)">Auditing GA</a></td>
         <td>General</td>
       </tr>     
@@ -331,15 +371,7 @@ Below, you'll find several investments that we plan to deliver as part of this i
          <td>Test Plans</td>
       </tr>
       <tr>
-        <td><a href="/azure/devops/release-notes/roadmap/2024/ghazdo/dependabot" data-raw-source="[DependaBot Security Update Support](/azure/devops/release-notes/roadmap/2024/ghazdo/dependabot)">Dependabot Security Update Support</a></td>
-        <td>GitHub Advanced Security for Azure DevOps</td>
-      </tr>
-      <tr>
         <td><a href="/azure/devops/release-notes/roadmap/2026/ghazdo/code-to-cloud" data-raw-source="[Code-to-cloud integration with Defender for Cloud](/azure/devops/release-notes/roadmap/2026/ghazdo/code-to-cloud)">Code-to-cloud integration with Defender for Cloud</a></td>
-        <td>GitHub Advanced Security for Azure DevOps</td>
-      </tr>
-      <tr>
-        <td><a href="/azure/devops/release-notes/roadmap/2026/ghazdo/codeql-default" data-raw-source="[CodeQL default setup runs on pull request trigger](/azure/devops/release-notes/roadmap/2026/ghazdo/codeql-default)">CodeQL default setup runs on pull request trigger</a></td>
         <td>GitHub Advanced Security for Azure DevOps</td>
       </tr>
       <tr>

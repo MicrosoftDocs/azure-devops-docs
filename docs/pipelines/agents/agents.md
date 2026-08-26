@@ -3,7 +3,7 @@ title: Azure Pipelines Agents
 ms.topic: concept-article
 ms.custom: devx-track-azurecli
 description: Learn how you can build code and deploy software by using agents in Azure Pipelines.
-ms.date: 01/24/2025
+ms.date: 08/18/2026
 monikerRange: '<= azure-devops'
 ---
 
@@ -50,6 +50,11 @@ GitHub-hosted agents provide higher performance virtual machines for Azure Pipel
 
 > [!IMPORTANT]
 > GitHub-hosted agents are available only in Azure DevOps Services and aren't available in Azure DevOps Server.
+
+> [!NOTE]
+> GitHub-hosted agents now include Apple Silicon macOS (arm64) options, with macOS 26 arm64 VM images available in both standard and XL configurations. These images are billed per minute under the PAYG model. Consider these images when you need Apple Silicon-native builds. For configuration and pricing details, see [GitHub-hosted agents for Azure Pipelines (pay-as-you-go)](github-hosted.md).
+>
+> You can monitor PAYG minute usage for GitHub-hosted agents through pool analytics, and track usage over time in Azure Cost Management.
 
 ::: moniker-end
 

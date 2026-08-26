@@ -759,6 +759,11 @@
       ]
     },
     {
+      "source_path": "docs/boards/extensions/dependency-tracker.md",
+      "redirect_url": "/azure/devops/boards/plans/track-dependencies",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "docs/boards/extensions/migrate-integrate.md",
       "redirect_url": "/previous-versions/azure/devops/boards/extensions/migrate-integrate",
       "redirect_document_id": false,
@@ -5484,11 +5489,8 @@
     },
     {
       "source_path": "docs/repos/git/create-repo-intellij.md",
-      "redirect_url": "/previous-versions/azure/devops/repos/git/create-repo-intellij",
-      "redirect_document_id": false,
-      "monikers": [
-        "azure-devops-2020"
-      ]
+      "redirect_url": "/azure/devops/repos/git/clone",
+      "redirect_document_id": true
     },
     {
       "source_path": "docs/repos/git/creatingrepo.md",
@@ -12104,14 +12106,6 @@
       ]
     },
     {
-      "source_path": "docs/repos/git/create-repo-intellij.md",
-      "redirect_url": "/previous-versions/azure/devops/repos/git/create-repo-intellij",
-      "redirect_document_id": false,
-      "monikers": [
-        "azure-devops-2019"
-      ]
-    },
-    {
       "source_path": "docs/repos/git/creatingrepo.md",
       "redirect_url": "/previous-versions/azure/devops/repos/git/creatingrepo",
       "redirect_document_id": false,
@@ -14542,6 +14536,11 @@
     {
       "source_path_from_root": "/docs/pipelines/test/codecoverage-for-pullrequests.md",
       "redirect_url": "/azure/devops/pipelines/test/review-code-coverage-results",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/test/add-to-bugs-exploratory-testing.md",
+      "redirect_url": "/azure/devops/test/connected-mode-exploratory-testing#add-findings-to-an-existing-similar-bug",
       "redirect_document_id": false
     },
     {

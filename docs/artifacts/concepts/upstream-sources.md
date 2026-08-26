@@ -40,7 +40,6 @@ In order for your feed to provide a [deterministic restore](#search-order), make
 
     ```.npmrc
     registry=https://pkgs.dev.azure.com/fabrikam/_packaging/FabrikamFiber/npm/registry/
-    always-auth=true
     ```
 
     ```nuget.config

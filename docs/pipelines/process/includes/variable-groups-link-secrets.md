@@ -6,7 +6,7 @@ ms.author: rabououn
 author: ramiMSFT
 ms.date: 01/27/2025
 ai-usage: ai-assisted
-ms.custom: arm2024, sfi-image-nochange, support-driven
+ms.custom: arm2024, sfi-image-nochange, support-driven-update
 ---
 
 You can create a variable group that links to existing Azure key vaults and maps selected key vault secrets to the variable group. Only the secret names map to the variable group, not the secret values. When pipelines run, they link to the variable group to fetch the latest secret values from the vault at runtime.

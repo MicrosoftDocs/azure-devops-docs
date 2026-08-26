@@ -7,7 +7,7 @@ ms.author: chcomley
 author: chcomley
 ms.topic: quickstart
 monikerRange: 'azure-devops'
-ms.date: 12/01/2025
+ms.date: 08/20/2026
 ms.custom: sfi-image-nochange
 ---
 
@@ -106,28 +106,14 @@ Once you have your Event Grid stream configured, you can set up subscriptions on
 
 ### Set up an Azure Monitor Log stream
 
-1. Create a [Log Analytics workspace](/azure/azure-monitor/learn/quick-create-workspace).
-2. Open the workspace and select **Overview**.
-3. Make note of the workspace ID, Resource group, and Workspace name.
-4. Get the shared key using one of the following methods:
-  - **Using PowerShell and the Az.OperationalInsights module:**
-    ```PowerShell
-    Get-AzOperationalInsightsWorkspaceSharedKey -ResourceGroupName <Resource group> -Name <Workspace name>
-    ```
-  - **Using Azure CLI:**
-    ```Azure CLI
-    az monitor log-analytics workspace get-shared-keys --resource-group <Resource group> --workspace-name <Workspace name>
-    ```
-  - **Using the REST API:** Call the [Get Shared Keys API](/rest/api/loganalytics/shared-keys/get-shared-keys?view=rest-loganalytics-2025-07-01&tabs=HTTP&preserve-view=true )
-
-> [!NOTE]
-> Direct access to workspace keys through the Azure portal is deprecated. Use PowerShell, Azure CLI, or REST API methods to retrieve shared keys programmatically.
- 
-5. Set up your Azure Monitor log stream by proceeding through the same initial steps to create a stream.
-6. For target options, select **Azure Monitor Logs**.
-7. Enter the workspace ID and primary key, and then select **Set up**. The primary key is stored securely within Azure DevOps and never displayed again in the UI. Rotate the key regularly, which you can do by getting a new key from Azure Monitor Log and editing the stream.
-
-   :::image type="content" source="media/auditing-streaming/create-stream-azure-monitor-logs.png" alt-text="Enter workspace ID and primary key and then select Set up.":::
+1. Create a [Log Analytics workspace](/azure/azure-monitor/logs/quick-create-workspace).
+2. In the Azure portal, open the workspace and select **Overview** > **JSON View**.
+3. Copy the value of the `id` property. This value is the workspace resource ID.
+4. In the Azure portal, select **Microsoft Entra ID** > **Overview**, and copy the **Tenant ID** for the directory associated with the workspace's subscription. For other ways to find this value, see [How to find your Microsoft Entra tenant ID](/entra/fundamentals/how-to-find-tenant).
+5. In Azure DevOps, follow the initial steps to [create a stream](#create-a-stream).
+6. For the stream target, select **Azure Monitor Logs**.
+7. Enter the workspace **Resource ID** and **Tenant ID**, and then select **Set up**.
+8. If prompted, sign in to Azure with a Microsoft Entra identity that has access to the workspace. Azure DevOps uses the signed-in identity to validate workspace access through Azure Resource Manager.
 
 The stream is enabled and new events begin to flow within half an hour or less. You can reference the AzureDevOpsAuditing table.
 

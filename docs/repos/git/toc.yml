@@ -48,8 +48,6 @@
     href: creatingrepo.md
   - name: Create repo - CLI
     href: share-your-code-in-git-cmdline.md
-  - name: Create repo - IntelliJ
-    href: create-repo-intellij.md
   - name: Create repo - Eclipse
     href: share-your-code-in-git-eclipse.md
   - name: Create repo - Xcode

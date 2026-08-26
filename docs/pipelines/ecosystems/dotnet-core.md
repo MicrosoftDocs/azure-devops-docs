@@ -673,6 +673,16 @@ To run tests and publish code coverage with Coverlet:
 1. Add the following snippet to your *azure-pipelines.yml* file. Don't add extra `DataCollectionRunSettings` arguments because the `XPlat Code Coverage` collector already produces a Cobertura report.
 
   ```yaml
+  - task: UseDotNet@2
+    inputs:
+      version: '8.x'
+    
+  - task: DotNetCoreCLI@2
+    displayName: 'dotnet build'
+    inputs:
+      command: 'build'
+      arguments: '--configuration $(buildConfiguration)'
+    
   - task: DotNetCoreCLI@2
     displayName: 'dotnet test'
     inputs:
@@ -684,7 +694,6 @@ To run tests and publish code coverage with Coverlet:
   - task: PublishCodeCoverageResults@2
     displayName: 'Publish code coverage report'
     inputs:
-      codeCoverageTool: 'Cobertura'
       summaryFileLocation: '$(Agent.TempDirectory)/**/coverage.cobertura.xml'
   ```
 
