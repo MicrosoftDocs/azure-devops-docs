@@ -84,7 +84,7 @@ Higher effort levels generally consume more tokens and can increase the cost of 
 1. Under **GitHub Copilot code review**, select an option from **Default effort level**.
 1. To let repository administrators set a different default, select **Allow individual repositories to set their own default effort level**. Clear this option to require all repositories to use the project default.
 
-   :::image type="content" source="media/copilot-code-reviews/project-review-effort-settings.png" alt-text="Screenshot of project settings with Medium selected as the default effort and repository overrides cleared." lightbox="media/copilot-code-reviews/project-review-effort-settings.png":::
+   <!-->:::image type="content" source="media/copilot-code-reviews/project-review-effort-settings.png" alt-text="Screenshot of project settings with Medium selected as the default effort and repository overrides cleared." lightbox="media/copilot-code-reviews/project-review-effort-settings.png":::-->
 
 #### Set a repository default
 
@@ -96,7 +96,7 @@ If the project allows repository overrides, a repository administrator can set a
 
 If the project doesn't allow repository overrides, **Default effort level** is read-only and displays the inherited project setting.
 
-:::image type="content" source="media/copilot-code-reviews/repository-review-effort-settings.png" alt-text="Screenshot of repository settings with the inherited Medium default effort unavailable for editing." lightbox="media/copilot-code-reviews/repository-review-effort-settings.png":::
+<!-->:::image type="content" source="media/copilot-code-reviews/repository-review-effort-settings.png" alt-text="Screenshot of repository settings with the inherited Medium default effort unavailable for editing." lightbox="media/copilot-code-reviews/repository-review-effort-settings.png":::-->
 
 ### Set up automatic review policies
 
@@ -174,13 +174,13 @@ By default, **GitHub Copilot** reviews a pull request only when you ask for one:
    - To use a different effort level for this review, open the dropdown menu next to **Request** and select an effort level.
 1. Wait for the review to complete. The review might take a few moments, depending on the size of the repository and the number of changes in the pull request. When the review finishes, the status changes to **Review completed**.
 
-   :::image type="content" source="media/copilot-code-reviews/select-review-effort.png" alt-text="Screenshot of a pull request with the Copilot review effort menu showing Low, Medium, and High options." lightbox="media/copilot-code-reviews/select-review-effort.png":::
+   <!-->:::image type="content" source="media/copilot-code-reviews/select-review-effort.png" alt-text="Screenshot of a pull request with the Copilot review effort menu showing Low, Medium, and High options." lightbox="media/copilot-code-reviews/select-review-effort.png":::-->
 
 If Copilot identifies potential issues, it adds comments and suggestions directly to the pull request for you to examine and address.
 
 The selected effort level applies only to that review. Azure DevOps records the requester and effort level in the pull request activity.
 
-:::image type="content" source="media/copilot-code-reviews/review-effort-request.png" alt-text="Screenshot of pull request activity showing a user requested a balanced review from Copilot." lightbox="media/copilot-code-reviews/review-effort-request.png":::
+<!-->:::image type="content" source="media/copilot-code-reviews/review-effort-request.png" alt-text="Screenshot of pull request activity showing a user requested a balanced review from Copilot." lightbox="media/copilot-code-reviews/review-effort-request.png":::-->
 
 ### Read Copilot's comments
 
