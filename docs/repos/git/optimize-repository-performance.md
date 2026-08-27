@@ -81,7 +81,7 @@ Keep the number of direct entries in any single directory manageable. A count ab
 
 ### Unused branches
 
-A large number of branches increases load and slows operations.
+Too many long-lived, unused branches can increase the repository size and slow down operations. When you `git clone` a repository, Git downloads objects reachable from every remote branch, including files that were never merged into `main`.
 
 #### Recommended actions
 
@@ -97,7 +97,7 @@ Both actions reduce the number of refs that clients and the server negotiate dur
 
 No matter how healthy a repository is, clients can reduce the amount of data they download:
 
-- A **shallow clone** limits how much history is fetched, which works well for CI that only needs the latest commits. Repeated fetching from a shallow clone can lead to reduced performance over time.
+- A **shallow clone** limits how much history is fetched, which works well for CI that only needs the latest commits.
 - A **partial clone** preserves the full history but downloads file contents only when needed.
 
 For more information about both options, see [Git Partial Clone in Azure DevOps](https://devblogs.microsoft.com/devops/git-partial-clone-now-supported-in-azure-devops/).
