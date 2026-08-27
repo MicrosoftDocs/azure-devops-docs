@@ -5,7 +5,7 @@ description: Learn how to review pull requests in Azure Repos, including how to 
 ms.service: azure-devops-repos
 ms.topic: how-to
 monikerRange: '<= azure-devops'
-ms.date: 05/27/2026
+ms.date: 08/26/2026
 ms.subservice: azure-devops-repos-git
 ms.custom: sfi-image-nochange
 ai-usage: ai-assisted
@@ -62,7 +62,7 @@ For more information, see [Resolve merge conflicts](/azure/devops/repos/git/merg
 
 You can ask GitHub Copilot to review a pull request alongside human reviewers. Copilot posts comments and suggestions directly on the changed code, so you can address common issues before a human reviewer signs off.
 
-To request a review, open a pull request and select **Request** next to **GitHub Copilot** in the **Reviewers** section. Copilot always leaves a **Comment** review, so its feedback doesn't satisfy required-reviewer policies and doesn't block merging.
+To request a review with the repository's default effort level, open a pull request and select **Request** next to **GitHub Copilot** in the **Reviewers** section. To choose a different effort level for one review, open the dropdown menu next to **Request** and select an effort level. Copilot always leaves a **Comment** review, so its feedback doesn't satisfy required-reviewer policies and doesn't block merging.
 
 This feature is in limited public preview and requires sign-up. For setup, billing, and limits, see [Get started with Copilot code review for pull requests](copilot-code-reviews.md).
 
