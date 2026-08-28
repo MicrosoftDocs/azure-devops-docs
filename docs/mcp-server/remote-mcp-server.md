@@ -24,7 +24,7 @@ The remote Azure DevOps MCP Server is a hosted version of the [Azure DevOps MCP 
 
 Use the **remote MCP Server** when your environment supports it. The remote server is the recommended option because Azure DevOps hosts and updates it, and you don't need to install Node.js or manage a local server process.
 
-Use the **local MCP Server** when your client can't authenticate to the remote server with Microsoft Entra ID. This limitation currently applies to clients such as Claude Desktop, Claude Code, Cursor, and Codex. For local setup instructions, see [Enable AI assistance with the Azure DevOps MCP Server](mcp-server-overview.md#install-the-local-azure-devops-mcp-server).
+Use the **local MCP Server** when your client can't authenticate to the remote server with Microsoft Entra ID. This limitation currently applies to clients such as Claude Desktop, Claude Code, and Codex. Cursor requires a custom Microsoft Entra app registration to authenticate. For local setup instructions, see [Enable AI assistance with the Azure DevOps MCP Server](mcp-server-overview.md#install-the-local-azure-devops-mcp-server).
 
 | Feature | Remote MCP Server | Local MCP Server |
 |--------|-------------------|------------------|
@@ -398,9 +398,10 @@ Supported environments for the remote endpoint, when Microsoft Entra authenticat
 - Microsoft Copilot Studio
 - GitHub Copilot CLI
 - GitHub Copilot app
+- Cursor with a custom Microsoft Entra app registration
 
 > [!IMPORTANT]
-> Claude Desktop, Claude Code, Cursor, and Codex don't currently support the Microsoft Entra authentication flow required by the remote Azure DevOps MCP Server. Use the [local MCP Server](mcp-server-overview.md#install-the-local-azure-devops-mcp-server) with these clients.
+> Claude Desktop, Claude Code, and Codex don't currently support the Microsoft Entra authentication flow required by the remote Azure DevOps MCP Server. Use the [local MCP Server](mcp-server-overview.md#install-the-local-azure-devops-mcp-server) with these clients.
 
 ### Visual Studio Code
 
@@ -416,6 +417,47 @@ After authentication completes, a list of available tools appears.
 ### Visual Studio (2022 and later)
 
 Configure the remote MCP Server in Visual Studio by adding the server URL to your MCP settings. For more information, see [Use MCP servers in Visual Studio](/visualstudio/ide/mcp-servers).
+
+### Cursor
+
+Cursor requires a custom Microsoft Entra app registration to access the remote Azure DevOps MCP Server.
+
+#### Register the application
+
+1. Confirm that the **Azure DevOps MCP** enterprise application is provisioned in your tenant. If you can't find it, see [Can't find the Azure DevOps MCP enterprise application in the tenant](remote-mcp-server-troubleshooting.md#cant-find-the-azure-devops-mcp-enterprise-application-in-the-tenant).
+1. In the Microsoft Entra admin center, go to **App registrations**, and then create an app registration.
+1. In the app registration, select **Authentication (Preview)** > **Add redirect URI** > **Mobile and desktop applications**.
+1. Enter `http://localhost:8787/callback` as the redirect URI, and then save your changes.
+1. On the **Authentication (Preview)** page, select the **Settings** tab, and then enable **Allow public client flows**.
+1. On the **API permissions** page, select **Add a permission** > **APIs my organization uses**.
+1. Search for **Azure DevOps MCP** or the application ID `2a72489c-aab2-4b65-b93a-a91edccf33b8`, and then select the application.
+1. Select the delegated permissions that your app requires, and then select **Add permissions**.
+1. Select **Grant admin consent**. Depending on your role, a tenant administrator might need to complete this step.
+
+Copy the **Application (client) ID** from the app registration. You need this value to configure Cursor.
+
+#### Configure Cursor
+
+1. In Cursor, open **Settings** > **Tools & MCP**.
+1. Select **New MCP Server**.
+1. Add the following configuration, replacing `{client-id}` with the application (client) ID that you copied:
+
+   ```json
+   {
+     "mcpServers": {
+       "ado": {
+         "url": "https://mcp.dev.azure.com",
+         "type": "http",
+         "auth": {
+           "CLIENT_ID": "{client-id}"
+         }
+       }
+     }
+   }
+   ```
+
+1. Save the configuration, and then return to **Settings** > **Tools & MCP**.
+1. Locate the **ado** server, and then select **Authenticate**.
 
 ## Verify the connection
 
@@ -462,9 +504,9 @@ For support, you can create an issue in the [local MCP Server](https://github.co
 
 ## FAQ
 
-### What about other clients like Claude Desktop, Claude Code, Codex, or Cursor?
+### What about other clients like Claude Desktop, Claude Code, or Codex?
 
-Claude Desktop, Claude Code, Codex, and Cursor require dynamic registration of an OAuth client ID in Microsoft Entra ID before they can use the remote MCP Server. Microsoft Entra ID doesn't currently support the dynamic client registration flow these clients require. Use the [local MCP Server](mcp-server-overview.md#install-the-local-azure-devops-mcp-server) with these clients.
+Claude Desktop, Claude Code, and Codex require dynamic registration of an OAuth client ID in Microsoft Entra ID before they can use the remote MCP Server. Microsoft Entra ID doesn't currently support the dynamic client registration flow these clients require. Use the [local MCP Server](mcp-server-overview.md#install-the-local-azure-devops-mcp-server) with these clients.
 
 ## Related content
 
