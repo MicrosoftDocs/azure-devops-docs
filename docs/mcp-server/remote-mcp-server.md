@@ -506,7 +506,7 @@ For support, you can create an issue in the [local MCP Server](https://github.co
 
 ### What about other clients like Claude Desktop, Claude Code, or Codex?
 
-Claude Desktop, Claude Code, and Codex require dynamic registration of an OAuth client ID in Microsoft Entra ID before they can use the remote MCP Server. Microsoft Entra ID doesn't currently support the dynamic client registration flow these clients require. Use the [local MCP Server](mcp-server-overview.md#install-the-local-azure-devops-mcp-server) with these clients.
+Claude Desktop, Claude Code, and Codex require dynamic registration of an OAuth client ID in Microsoft Entra ID before they can use the remote MCP Server. Microsoft Entra ID doesn't currently support the dynamic client registration flow that these clients require. Use the [local MCP Server](mcp-server-overview.md#install-the-local-azure-devops-mcp-server) with these clients.
 
 ## Related content
 
