@@ -1,7 +1,7 @@
 ---
 title: Configure networking
 description: Learn how to configure networking for Managed DevOps Pools.
-ms.date: 08/05/2026
+ms.date: 08/31/2026
 ms.custom: sfi-image-nochange
 ms.topic: how-to
 ---
@@ -472,7 +472,7 @@ $azureDevOpsArtifactsUnreachableUris = @(Test-EndpointCollection -Uris $azureDev
 if ($azureDevOpsArtifactsUnreachableUris.Count -eq 0) {
     Write-Output "All Azure DevOps Artifacts endpoints are reachable."
 } else {
-    Write-Output "The following Azure DevOps Artifactsendpoints could not be reached. Disregard if you aren't using Artifacts in your pipeline."
+    Write-Output "The following Azure DevOps Artifacts endpoints could not be reached. Disregard if you aren't using Artifacts in your pipeline."
     $azureDevOpsArtifactsUnreachableUris | ForEach-Object { Write-Output $_ }
 }
 
@@ -491,6 +491,16 @@ if ($linuxAgentsUnreachableUris.Count -eq 0) {
     Write-Output "The following Linux agent provisioning endpoints could not be reached. Disregard if you are using only Windows agents."
     $linuxAgentsUnreachableUris | ForEach-Object { Write-Output $_ }
 }
+
+Write-Output "Endpoint validation completed."
+Write-Output "This script validates the most common endpoints but does not validate IP address ranges like '150.171.22.0/24'"
+Write-Output "that may be required for Azure DevOps Services or Azure connectivity."
+Write-Output "If you still have issues, ensure that the outbound IP address ranges listed in the documentation under"
+Write-Output "'Required endpoints for some Azure DevOps features'"
+Write-Output "https://learn.microsoft.com/azure/devops/managed-devops-pools/configure-networking#required-endpoints-for-some-azure-devops-features"
+Write-Output "and 'Azure-related endpoints'"
+Write-Output "https://learn.microsoft.com/azure/devops/managed-devops-pools/configure-networking#azure-related-endpoints"
+Write-Output "are allowed through your firewall."
 ```
 
 ## Configure the Azure DevOps agent to run behind a proxy
