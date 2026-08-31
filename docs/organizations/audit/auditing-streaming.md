@@ -112,7 +112,10 @@ Once you have your Event Grid stream configured, you can set up subscriptions on
 4. In the Azure portal, select **Microsoft Entra ID** > **Overview**, and copy the **Tenant ID** for the directory associated with the workspace's subscription. For other ways to find this value, see [How to find your Microsoft Entra tenant ID](/entra/fundamentals/how-to-find-tenant).
 5. In Azure DevOps, follow the initial steps to [create a stream](#create-a-stream).
 6. For the stream target, select **Azure Monitor Logs**.
-7. Enter the workspace **Resource ID** and **Tenant ID**, and then select **Set up**.
+7. Enter the workspace **Resource ID** and **Tenant ID**, and then **Sign in to Azure**.
+
+   :::image type="content" source="media/auditing-streaming/create-stream-azure-monitor-logs.png" alt-text="Screenshot of entering the workspace resource ID and tenant ID, and then selecting Sign in to Azure." lightbox="media/auditing-streaming/create-stream-azure-monitor-logs.png":::
+
 8. If prompted, sign in to Azure with a Microsoft Entra identity that has access to the workspace. Azure DevOps uses the signed-in identity to validate workspace access through Azure Resource Manager.
 
 The stream is enabled and new events begin to flow within half an hour or less. You can reference the AzureDevOpsAuditing table.
