@@ -503,11 +503,8 @@ Write-Output "Endpoint validation completed."
 Write-Output "This script validates the most common endpoints but does not validate IP address ranges like '150.171.22.0/24'"
 Write-Output "that may be required for Azure DevOps Services or Azure connectivity."
 Write-Output "If you still have issues, ensure that the outbound IP address ranges listed in the documentation under"
-Write-Output "'Required endpoints for some Azure DevOps features'"
-Write-Output "https://learn.microsoft.com/azure/devops/managed-devops-pools/configure-networking#required-endpoints-for-some-azure-devops-features"
-Write-Output "and 'Azure-related endpoints'"
-Write-Output "https://learn.microsoft.com/azure/devops/managed-devops-pools/configure-networking#azure-related-endpoints"
-Write-Output "are allowed through your firewall."
+Write-Output "'Required endpoints for some Azure DevOps features' and 'Azure-related endpoints' are allowed through your firewall."
+Write-Output "https://aka.ms/mdp-network-outbound-connectivity"
 ```
 
 ## Configure the Azure DevOps agent to run behind a proxy
