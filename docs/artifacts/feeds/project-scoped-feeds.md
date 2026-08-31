@@ -31,7 +31,7 @@ When creating a new feed in Azure Artifacts, you can choose to scope it to eithe
 
 1. Select **Create** when you're done.
 
-    :::image type="content" source="../media/proj-org-scoped-feed.png" alt-text="A screenshot showing how to create project and organization scoped feeds.":::
+    :::image type="content" source="../media/proj-org-scoped-feed.png" alt-text="Screenshot showing how to create project and organization scoped feeds.":::
 
 > [!NOTE]
 > Organization-scoped feeds cannot be converted to project-scoped feeds.

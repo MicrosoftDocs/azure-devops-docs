@@ -42,7 +42,7 @@ This setup lets you share your configuration file without exposing your credenti
 
 1. Under the **Project setup** section, select **Windows** or **Other** depending on your operating system, then follow the provided instructions to configure your config file and connect to your Azure Artifacts feed.
 
-    :::image type="content" source="media/npm-project-setup-azure-devops.png" alt-text="A screenshot displaying how to set up an npm project and connect to a feed in Azure DevOps Services.":::
+    :::image type="content" source="media/npm-project-setup-azure-devops.png" alt-text="Screenshot showing how to set up an npm project and connect to a feed in Azure DevOps Services.":::
 
 ::: moniker-end
 
@@ -59,7 +59,7 @@ This setup lets you share your configuration file without exposing your credenti
 
 1. Under the **Project setup** section, select **Windows** or **Other** depending on your operating system, then follow the provided instructions to configure your config file and connect to your Azure Artifacts feed.
 
-   :::image type="content" source="media/npm-project-setup-server-2022-1.png" alt-text="A screenshot displaying how to set up an npm project and connect to an Azure Artifacts feed in Azure DevOps Server 2022.":::
+   :::image type="content" source="media/npm-project-setup-server-2022-1.png" alt-text="Screenshot showing how to set up an npm project and connect to an Azure Artifacts feed in Azure DevOps Server 2022.":::
 
 ::: moniker-end
 

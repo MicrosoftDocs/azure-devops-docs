@@ -38,7 +38,7 @@ To enable consuming external versions for a specific package, follow these steps
 
 1. Toggle **Allow External Versions** to enable the feature, then select **Close** when you're done.
 
-    :::image type="content" source="media\allow-externally-sourced-versions.png" alt-text="A screenshot displaying how to enable external versions for a specific package in Azure Artifacts." lightbox="media\allow-externally-sourced-versions.png":::
+    :::image type="content" source="media\allow-externally-sourced-versions.png" alt-text="Screenshot showing how to enable external versions for a specific package in Azure Artifacts." lightbox="media\allow-externally-sourced-versions.png":::
 
 ## Allow external versions using the REST API
 
@@ -114,13 +114,13 @@ Public versions are blocked from being saved to the feed when the **Allow Extern
 
 If a private package is later made public, the feed blocks any new versions with the same package name from public sources.
 
-:::image type="content" source="media\internal-to-public.svg" alt-text="An illustration showing an internal package version made public.":::
+:::image type="content" source="media\internal-to-public.svg" alt-text="Illustration showing an internal package version made public.":::
 
 #### Having both private and public packages 
 
 When a team uses both private and public packages, the feed blocks any new package versions from the public registry when the allow external version is enabled.
 
-:::image type="content" source="media\private-and-public-packages.svg" alt-text="An illustration showing available private and public packages.":::
+:::image type="content" source="media\private-and-public-packages.svg" alt-text="Illustration showing available private and public packages.":::
 
 ### Scenario 2: Public versions are allowed
 
@@ -136,19 +136,19 @@ Public versions are allowed to be saved to the feed when the **Allow External Ve
 
 If all packages are private and the team doesn’t plan to use public packages, enabling this setting has no impact on the team's workflow.
 
-:::image type="content" source="media\only-private-packages.svg" alt-text="An illustration showing feed with only private packages.":::
+:::image type="content" source="media\only-private-packages.svg" alt-text="Illustration showing feed with only private packages.":::
 
 #### All packages are public
 
 If the team exclusively consumes public packages from registries or open-source repositories, enabling the setting doesn't affect their workflow.
 
-:::image type="content" source="media\public-packages-only.svg" alt-text="An illustration showing feed with only public packages.":::
+:::image type="content" source="media\public-packages-only.svg" alt-text="Illustration showing feed with only public packages.":::
 
 #### Public package made private
 
 When a public package is later converted to private, enabling the allow external versions setting doesn't affect the team's workflow.
 
-:::image type="content" source="media\public-to-internal.svg" alt-text="An illustration showing a package converted from public to private.":::
+:::image type="content" source="media\public-to-internal.svg" alt-text="Illustration showing a package converted from public to private.":::
 
 ## Related content
 

@@ -36,7 +36,7 @@ A public feed is a project-scoped feed in an existing public project. Public fee
 
 1. Select **Create** when you're done.
     
-    :::image type="content" source="../media/new-public-feed.png" alt-text="A screenshot displaying how to create a new public feed in Azure Artifacts.":::
+    :::image type="content" source="../media/new-public-feed.png" alt-text="Screenshot showing how to create a new public feed in Azure Artifacts.":::
 
 > [!IMPORTANT]
 > Public feeds do not support upstreaming to private Artifacts feeds. You can only upstream to public registries or other **Public** Azure Artifacts feeds.
@@ -69,43 +69,43 @@ Run the following command in your project directory to restore your packages:
 > [!NOTE]
 > You must have **Feed and Upstream Reader (Collaborator)** or higher permissions to install new package versions from upstream sources. Anonymous users can only install packages that already exist in the feed.
 
-#### [NuGet](#tab/nuget)
+### [NuGet](#tab/nuget)
 
 ```
 nuget.exe restore
 ```
 
-#### [Dotnet](#tab/dotnet)
+### [Dotnet](#tab/dotnet)
 
 ```
 dotnet restore --interactive
 ```
 
-#### [Npm](#tab/npm)
+### [Npm](#tab/npm)
 
 ```
 npm install
 ```
 
-#### [Maven](#tab/maven)
+### [Maven](#tab/maven)
 
 ```
 mvn install
 ```
 
-#### [Gradle](#tab/gradle)
+### [Gradle](#tab/gradle)
 
 ```
 gradle build
 ```
 
-#### [Python](#tab/python)
+### [Python](#tab/python)
 
 ```
 pip install
 ```
 
-#### [Cargo](#tab/cargo)
+### [Cargo](#tab/cargo)
 
 Users with the **Feed and Upstream Reader (Collaborator)** role or higher must include an additional flag to authenticate with their public feed when installing packages. If you haven’t authenticated yet, follow the steps in [Cargo - Connect to your feed](../cargo/cargo-upstream-source.md#connect-to-your-feed), then run the following command in your project directory to restore your packages: 
 
@@ -117,7 +117,7 @@ cargo build
 
 ## Q&A
 
-#### Q: I'm trying to restore my packages but I keep getting a 401 unauthorized error. Why?
+### Q: I'm trying to restore my packages but I keep getting a 401 unauthorized error. Why?
 
 The contents of a feed can only be changed by an authenticated and authorized identity with the appropriate permissions. This includes saving packages from an upstream source.
 
@@ -131,7 +131,7 @@ If anonymous users repeatedly encounter credential prompts (401 errors), try the
 	
 - Use lock files (where supported) so package clients only request the exact versions needed during restore or install operations.
 
-#### Q: I'm restoring packages in Visual Studio, but they're coming from a different source. Why?
+### Q: I'm restoring packages in Visual Studio, but they're coming from a different source. Why?
 
 A: Ensure Visual Studio uses the source specified in your nuget.config file, not the local NuGet package manager. See [Package sources](/nuget/consume-packages/install-use-packages-visual-studio#package-sources) for more details. 
 

@@ -14,6 +14,6 @@ ms.date: 05/15/2024
 
 1. Select **Visual Studio** from the left navigation pane, then copy your **Source** URL.
 
-    :::image type="content" source="../../media/nuget-visual-studio-newnav.png" alt-text="A screenshot displaying how to find the feed's Source URL.":::
+    :::image type="content" source="../../media/nuget-visual-studio-newnav.png" alt-text="Screenshot showing how to find the feed's Source URL.":::
 
 ::: moniker-end

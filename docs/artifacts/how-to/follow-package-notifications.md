@@ -29,7 +29,7 @@ Follow these steps to follow a package and get notified whenever a new version i
 
 1. Select the package you want to follow, then select **Follow** to start getting notifications when a new version is published.
 
-    :::image type="content" source="../media/follow-package-notifications.png" alt-text="A screenshot displaying how to follow a package in an Azure Artifacts feed.":::
+    :::image type="content" source="../media/follow-package-notifications.png" alt-text="Screenshot showing how to follow a package in an Azure Artifacts feed.":::
 
 ## Follow promoted packages
 
@@ -42,11 +42,11 @@ This can be helpful for filtering alerts so you only receive the notifications y
 
 1. Select the **View** dropdown from the left, then select a view to filter (for example, @Prerelease, @Release).
 
-    :::image type="content" source="../media/notifications-filter-view.png" alt-text="A screenshot displaying how to filter packages by a specific view.":::
+    :::image type="content" source="../media/notifications-filter-view.png" alt-text="Screenshot showing how to filter packages by a specific view.":::
 
 1. Select the package you want to follow, then select **Follow**.
 
-    :::image type="content" source="../media/promoted-package-notifications.png" alt-text="A screenshot displaying how to follow promoted packages in Azure Artifacts.":::
+    :::image type="content" source="../media/promoted-package-notifications.png" alt-text="Screenshot showing how to follow promoted packages in Azure Artifacts.":::
 
 ## Follow packages with personal notifications
 
@@ -61,11 +61,11 @@ In addition to following a package directly from the *Feeds* page, you can also 
 
 1. Select **New subscription**, then select **Artifacts**. Select the **A package is changed** template, then select **Next**.
 
-    :::image type="content" source="../media/personal-notifications-artifacts.png" alt-text="A screenshot displaying how to create a new notification subscription.":::
+    :::image type="content" source="../media/personal-notifications-artifacts.png" alt-text="Screenshot showing how to create a new notification subscription.":::
 
 1. Add a **Description**, then select an email address for the notifications. By default, your preferred email address is used. You can also add filters to only receive notifications when specific criteria are met. In the example below, two clauses have been added: a notification is triggered when the the feed is *Fabrikam_Feed*, **and** the type of change is *Delete*.
 
-    :::image type="content" source="../media/filter-notifications.png" alt-text="A screenshot displaying how to configure a notification subscription and add filters.":::
+    :::image type="content" source="../media/filter-notifications.png" alt-text="Screenshot showing how to configure a notification subscription and add filters.":::
 
 1. Select **Finish** when you're done.
 

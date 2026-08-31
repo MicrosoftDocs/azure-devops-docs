@@ -38,7 +38,7 @@ If you already have a feed, you can skip this section. Otherwise, follow the ste
 
 1. Select **Create** when you're done.
 
-    :::image type="content" source="media/create-new-feed-azure-devops.png" alt-text="A screenshot displaying how to create a new feed in Azure DevOps Services.":::
+    :::image type="content" source="media/create-new-feed-azure-devops.png" alt-text="Screenshot showing how to create a new feed in Azure DevOps Services.":::
 
 ::: moniker-end
 
@@ -56,7 +56,7 @@ If you already have a feed, you can skip this section. Otherwise, follow the ste
 
 4. Select **Create** when you're done.
 
-    :::image type="content" source="media/create-new-feed-server-2022.png" alt-text="A screenshot displaying how to create a new feed in Azure DevOps Server 2022.":::
+    :::image type="content" source="media/create-new-feed-server-2022.png" alt-text="Screenshot showing how to create a new feed in Azure DevOps Server 2022.":::
 
 ::: moniker-end
 
@@ -111,23 +111,23 @@ The following example walks you through using GitHub Copilot to set up your pack
     Company: FabrikamFiber
     ```
 
-    :::image type="content" source="media/add-package-metadata-github-copilot.png" alt-text="A screenshot displaying how to add package metada using GitHub Copilot in Visual Studio Code.":::
+    :::image type="content" source="media/add-package-metadata-github-copilot.png" alt-text="Screenshot showing how to add package metadata using GitHub Copilot in Visual Studio Code.":::
 
 1. After a few seconds, GitHub Copilot will confirm that the package metadata has been added to your *csproj* file.
 
-    :::image type="content" source="media/package-metadata-confirmation.png" alt-text="A screenshot showing GitHub Copilot confirming successful addition of the package metadata.":::
+    :::image type="content" source="media/package-metadata-confirmation.png" alt-text="Screenshot showing GitHub Copilot confirming that the package metadata was added successfully.":::
 
 1. In the GitHub Copilot prompt box, ask copilot to build your project and generate the NuGet package. When prompted for confirmation, select **Continue**.
 
-    :::image type="content" source="media/build-project-github-copilot.png" alt-text="A screenshot showing prompt asking for confirmation to build the project.":::
+    :::image type="content" source="media/build-project-github-copilot.png" alt-text="Screenshot showing the GitHub Copilot prompt asking for confirmation to build the project.":::
 
 1. Once build is successful, GitHub Copilot will prompt you again to confirm generating the NuGet package. Select **Continue** to proceed.
 
-    :::image type="content" source="media/generate-package-github-copilot.png" alt-text="A screenshot showing prompt asking for confirmation to generate the NuGet package.":::
+    :::image type="content" source="media/generate-package-github-copilot.png" alt-text="Screenshot showing the GitHub Copilot prompt asking for confirmation to generate the NuGet package.":::
 
 1. After completion, you’ll see a confirmation that the package was created successfully, including the metadata and where the package is saved locally.
 
-    :::image type="content" source="media/package-created-confirmation.png" alt-text="A screenshot showing GitHub Copilot confirming successful creation of the NuGet package.":::
+    :::image type="content" source="media/package-created-confirmation.png" alt-text="Screenshot showing GitHub Copilot confirming that the NuGet package was created successfully.":::
 
 * * *
 
@@ -185,7 +185,7 @@ Follow the steps below to set up your project and connect to your Azure Artifact
 
 1. Follow the instructions in the **Project setup** section to set up your *nuget.config* file.
 
-    :::image type="content" source="media/connect-to-feed-dotnet-server-2020-and-2022.png" alt-text="A screenshot that shows how to connect to a feed in Azure DevOps Server 2020 and 2022.":::
+    :::image type="content" source="media/connect-to-feed-dotnet-server-2020-and-2022.png" alt-text="Screenshot showing how to connect to a feed in Azure DevOps Server 2020 and 2022.":::
 
 ::: moniker-end
 

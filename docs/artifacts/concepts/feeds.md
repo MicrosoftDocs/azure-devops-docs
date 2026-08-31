@@ -45,7 +45,7 @@ Follow these steps and choose the appropriate scope to create a project-scoped o
 
 1. Select **Create** when you're done.
 
-    :::image type="content" source="../media/create-new-feed-devops-services.png" alt-text="A screenshot displaying how to create a new feed in Azure DevOps Services.":::
+    :::image type="content" source="../media/create-new-feed-devops-services.png" alt-text="Screenshot showing how to create a new feed in Azure DevOps Services.":::
 
 ::: moniker-end
 
@@ -59,7 +59,7 @@ Follow these steps and choose the appropriate scope to create a project-scoped o
 
 1. Select **Create** when you're done.
 
-    :::image type="content" source="../media/create-new-feed-server-2022.png" alt-text="A screenshot displaying how to create a new feed in Azure DevOps Server 2022 and Server 2020.":::
+    :::image type="content" source="../media/create-new-feed-server-2022.png" alt-text="Screenshot showing how to create a new feed in Azure DevOps Server 2022 and Server 2020.":::
 
 ::: moniker-end
 
@@ -96,7 +96,7 @@ Public feeds are project-scoped feeds in an existing public project. Follow thes
 
 1. Select **Create** when you're done.
 
-    :::image type="content" source="../media/new-public-feed.png" alt-text="A screenshot displaying how to create a new public feed in Azure DevOps Services.":::
+    :::image type="content" source="../media/new-public-feed.png" alt-text="Screenshot showing how to create a new public feed in Azure DevOps Services.":::
 
 ::: moniker-end
 
@@ -113,7 +113,7 @@ Public feeds are project-scoped feeds in an existing public project. Follow thes
 
 1. Select **Delete feed**, then select **Delete** again to confirm.
 
-    :::image type="content" source="media/delete-warning.png" alt-text="A screenshot displaying the warning message that appears before deleting a feed.":::
+    :::image type="content" source="media/delete-warning.png" alt-text="Screenshot showing the warning message that appears before deleting a feed.":::
 
 ## Restore deleted feeds
 
@@ -131,11 +131,11 @@ To restore a feed pending permanent deletion:
 
 1. Select **Artifacts**, open the feed picker dropdown menu, and select the **Deleted Feeds** tab.
 
-    :::image type="content" source="media/deleted-feeds.png" alt-text="A screenshot that shows how to access feeds pending permanent deletion.":::
+    :::image type="content" source="media/deleted-feeds.png" alt-text="Screenshot showing how to access feeds pending permanent deletion.":::
 
 1. Select the feed you want to restore, then select **Feed Settings**, then select **Restore Feed** when you're ready to restore your feed.
 
-    :::image type="content" source="media/feed-settings-button.png" alt-text="A screenshot displaying the feed settings button for a feed pending permanent deletion.":::
+    :::image type="content" source="media/feed-settings-button.png" alt-text="Screenshot showing the feed settings button for a feed pending permanent deletion.":::
 
 ## Permanently delete a feed
 

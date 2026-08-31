@@ -35,11 +35,11 @@ The organization‑level storage view provides an overview of total storage usag
 
 1. You can view your **Total storage summary**, **Storage by artifact type**, and **Storage by projects** in your organization.
 
-    :::image type="content" source="media/org-level-storage.png" alt-text="A screenshot showing the storage consumption levels.":::
+    :::image type="content" source="media/org-level-storage.png" alt-text="Screenshot showing the storage consumption levels.":::
 
 1. Select **View storage breakdown** from the **Storage by type** section to view total storage for packages in your organization-scoped feeds.
 
-    :::image type="content" source="media/packages-org-scoped-feeds.png" alt-text="A screenshot showing the total storage for packages in organization-scoped feeds.":::
+    :::image type="content" source="media/packages-org-scoped-feeds.png" alt-text="Screenshot showing the total storage for packages in organization-scoped feeds.":::
 
 > [!NOTE]
 > The **Storage by projects** list includes only projects with the largest storage consumption, not the complete list of projects in your organization.
@@ -54,11 +54,11 @@ The project-level storage view provides an overview of total storage usage, incl
 
 1. You can view your **Total storage summary** and **Storage by artifact type** for your project.
 
-    :::image type="content" source="media/proj-level-storage.png" alt-text="A screenshot showing project level storage consumption.":::
+    :::image type="content" source="media/proj-level-storage.png" alt-text="Screenshot showing project-level storage consumption.":::
 
 1. Select **View storage breakdown** from the **Storage by type** section to view the total storage for packages in your project-scoped feeds.
 
-    :::image type="content" source="media/packages-proj-scoped-feeds.png" alt-text="A screenshot showing the total storage for packages in project-scoped feeds.":::
+    :::image type="content" source="media/packages-proj-scoped-feeds.png" alt-text="Screenshot showing the total storage for packages in project-scoped feeds.":::
 
 > [!NOTE]
 > Azure Artifacts provides 2 GiB of free storage for each organization. The free tier is designed to help you evaluate if Azure Artifacts fits your workflow. As your organization starts handling more critical tasks, we recommend [set up billing](../organizations/billing/set-up-billing-for-your-organization-vs.md#set-up-billing) to ensure you have the appropriate resources.
@@ -92,38 +92,38 @@ Azure Artifacts includes 2 GiB of free storage per organization. Once your org
 
 1. Select **Save** when you're done.
 
-   :::image type="content" source="media/increase-usage-limit.png" alt-text="A screenshot displaying how to increase Artifacts storage limit." lightbox="media/increase-usage-limit.png":::
+   :::image type="content" source="media/increase-usage-limit.png" alt-text="Screenshot showing how to increase Artifacts storage limit." lightbox="media/increase-usage-limit.png":::
 
 ## FAQs
 
-#### Q: What counts toward my total billed storage?
+### Q: What counts toward my total billed storage?
 
 A: All package types, including npm, NuGet, Python, Maven, Cargo, and Universal Packages count toward your billed storage. Packages saved from upstream sources also count toward your billed storage. However, Pipeline Artifacts and Pipeline Caching do not contribute to storage charges.
 
-#### Q: Do packages in the recycle bin affect my storage usage?
+### Q: Do packages in the recycle bin affect my storage usage?
 
 A: Yes, packages in the recycle bin still count toward your total storage. They are automatically deleted after 30 days, but you can manually remove them earlier by deleting them from the recycle bin.
 
-#### Q: What happens if I remove my Azure Subscription from my Azure DevOps organization?
+### Q: What happens if I remove my Azure Subscription from my Azure DevOps organization?
 
 A: Removing your Azure Subscription from your Azure DevOps organization limits your access to the free tier. If your storage usage exceeds 2 GiB, you will have read-only access to packages. To publish new packages, you must reduce your storage usage below 2 GiB, or reconnect your Azure subscription and set up billing to [upgrade your storage tier](#increase-artifacts-storage-limit).
 
-#### Q: Why does my storage usage show as 0 GiB even though I have artifacts stored?
+### Q: Why does my storage usage show as 0 GiB even though I have artifacts stored?
 
 A: The smallest unit of storage measurement is 1 GiB. If your usage is below that threshold, it will display as 0 GiB.
 
-#### Q: How long does it take for deleted artifacts to reflect in billed storage?
+### Q: How long does it take for deleted artifacts to reflect in billed storage?
 
 A: Storage metrics typically update within 24 hours, but it may take up to 48 hours. If you're unable to upload artifacts, a temporary workaround is to increase your usage level and reduce it again once metrics refresh.
 
 > [!NOTE]
 > The **Used** column in your **Organization settings** > **Billing** page is updated once a day, so changes may not be reflected right away. However, the **Artifacts** > **Storage** page in your **Organization settings** is updated more frequently, which could result in a slight discrepancy between the two pages.
 
-#### Q: How can I manage retention for outdated packages?
+### Q: How can I manage retention for outdated packages?
 
 A: You can configure retention policies to automatically delete outdated packages. However, packages promoted to a view are exempt from these policies. See [How to use retention policies to delete old packages](how-to/delete-and-recover-packages.md#delete-packages-automatically-with-retention-policies) for more details.
 
-#### Q: How do I manually delete specific packages?
+### Q: How do I manually delete specific packages?
 
 A: See [Delete and recover packages](how-to/delete-and-recover-packages.md) for step-by-step instructions.
 

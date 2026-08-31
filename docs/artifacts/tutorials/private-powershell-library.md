@@ -55,7 +55,7 @@ A personal access token acts as your digital identity and serves as an alternati
 
 1. Select **Create** when you're done, and make sure you copy and store your PAT in a safe location.
 
-    :::image type="content" source="../media/config-new-pat.png" alt-text="A screenshot that shows how to set up a new personal access token.":::
+    :::image type="content" source="../media/config-new-pat.png" alt-text="Screenshot showing how to set up a new personal access token.":::
 
 ## Create a PowerShell module
 
@@ -182,7 +182,7 @@ VERBOSE: Successfully published the resource to
 VERBOSE: Deleting temporary directory 'C:\Users\xxxx\AppData\Local\Temp\xxxxxxx'
 ```
 
-:::image type="content" source="media/publish-psresource-example-package.png" alt-text="A screenshot displaying the PowerShell demo package published to the feed.":::
+:::image type="content" source="media/publish-psresource-example-package.png" alt-text="Screenshot showing the PowerShell demo package published to the feed.":::
 
 ## Install a package
 
@@ -246,7 +246,7 @@ A personal access token acts as your digital identity and serves as an alternati
 
 1. Select **Create** when you're done, and make sure you copy and store your PAT in a safe location.
 
-    :::image type="content" source="../media/config-new-pat.png" alt-text="A screenshot that shows how to set up a new personal access token.":::
+    :::image type="content" source="../media/config-new-pat.png" alt-text="Screenshot showing how to set up a new personal access token.":::
 
 ## Create a PowerShell module
 

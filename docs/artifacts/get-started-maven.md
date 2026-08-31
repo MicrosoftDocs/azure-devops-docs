@@ -106,7 +106,7 @@ Now that you've authenticated with your feed, you’re ready to publish and rest
 
 1. After successfully publishing your package, it will shortly be available in your Azure Artifacts feed.
 
-    :::image type="content" source="media/get-started-maven/maven-package-published-to-feed-contracted.png" alt-text="A screenshot that shows a Maven package deployed to a feed." lightbox="media/get-started-maven/maven-package-published-to-feed.png":::
+    :::image type="content" source="media/get-started-maven/maven-package-published-to-feed-contracted.png" alt-text="Screenshot showing a Maven package deployed to a feed." lightbox="media/get-started-maven/maven-package-published-to-feed.png":::
 
 > [!NOTE]
 > If your organization is using a firewall or a proxy server, make sure you allow [Azure Artifacts Domain URLs and IP addresses](../organizations/security/allow-list-ip-url.md#azure-artifacts).

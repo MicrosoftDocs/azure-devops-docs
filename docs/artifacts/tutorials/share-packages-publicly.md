@@ -37,13 +37,13 @@ Public feeds are project-scoped feeds in an existing public project. Public feed
 
 1. Enter a **Name** for your feed, select *Project: PublicProject (Recommended)* for its **scope**, and then select **Create**.
 
-    :::image type="content" source="../media/create-new-public-feed.png" alt-text="A screenshot displaying how to create a new public feed.":::
+    :::image type="content" source="../media/create-new-public-feed.png" alt-text="Screenshot showing how to create a new public feed in Azure Artifacts.":::
 
 ## Share packages
 
 To share your packages publicly, you can simply share your feed URL, for example: `https://dev.azure.com/<ORGANIZATION_NAME>/<PROJECT-NAME>/_artifacts/feed/<FEED_NAME>` or share individual packages using [package badges](../package-badges.md). Anyone can access and download packages from your public feed without requiring an Azure DevOps account while the hosting project remains public. Starting in 2027, existing public projects will automatically convert to private, and public feeds will no longer be publicly accessible.
 
-:::image type="content" source="../media/packages-public-feed.png" alt-text="A screenshot displaying a package in a public feed.":::
+:::image type="content" source="../media/packages-public-feed.png" alt-text="Screenshot showing a package in a public feed.":::
 
 > [!NOTE]
 > You must be a **Feed Administrator** to enable package badges. See [Manage permissions](../feeds/feed-permissions.md) for more details.

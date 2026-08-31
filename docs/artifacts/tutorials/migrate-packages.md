@@ -74,7 +74,7 @@ To migrate your packages, you'll need to get the source URLs for both the source
 
 1. Select **Artifacts**, select your feed from the dropdown menu and then select **Connect to feed**.
 
-    :::image type="content" source="../media/connect-to-feed-devops.png" alt-text="A screenshot showing how to connect to feed.":::
+    :::image type="content" source="../media/connect-to-feed-devops.png" alt-text="Screenshot showing the Connect to feed action for an Azure Artifacts feed.":::
 
 1. Select **NuGet.exe** and then copy your feed's source URL.
 

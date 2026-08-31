@@ -61,7 +61,7 @@ After your feed is connected to one or more upstream sources, you can search fro
 
 1. Select **Search Upstream Sources** in the upper-right corner.
 
-    :::image type="content" source="../media/search-upstream-from-feed.png" alt-text="A screenshot showing the Search Upstream Sources button in an Azure Artifacts feed.":::
+    :::image type="content" source="../media/search-upstream-from-feed.png" alt-text="Screenshot showing the Search Upstream Sources button in an Azure Artifacts feed.":::
 
 1. In the search panel, select the **Package type**, and then enter the **Package Name**.
 
@@ -69,11 +69,11 @@ After your feed is connected to one or more upstream sources, you can search fro
 
 1. Select **Search** when you're ready.
 
-    :::image type="content" source="../media/search-packages-in-upstreams.png" alt-text="A screenshot showing how to search for a package in upstream sources.":::
+    :::image type="content" source="../media/search-packages-in-upstreams.png" alt-text="Screenshot showing how to search for a package in upstream sources.":::
 
 1. Review the search results. Azure Artifacts displays the matching package versions.
 
-    :::image type="content" source="../media/packages-available-in-upstreams.png" alt-text="A screenshot showing the package versions available in upstream sources.":::
+    :::image type="content" source="../media/packages-available-in-upstreams.png" alt-text="Screenshot showing the package versions available in upstream sources.":::
 
 > [!NOTE]
 > Searching upstream sources from your feed is supported only in Azure DevOps Services.
@@ -86,13 +86,13 @@ After you find a package version in upstream search results, you can save it to 
 
 1. Select the ellipsis button next to that version, and then select **Save to feed**.
 
-    :::image type="content" source="../media/save-package-version-to-feed.png" alt-text="A screenshot showing how to save a specific package version from an upstream source.":::
+    :::image type="content" source="../media/save-package-version-to-feed.png" alt-text="Screenshot showing how to save a specific package version from an upstream source.":::
 
 1. In the confirmation dialog, select **Save** to confirm.
 
 1. Verify that the saved version shows the `In this feed` tag and is now available in your feed.
 
-    :::image type="content" source="../media/version-saved-from-upstream.png" alt-text="A screenshot showing the version saved from upstream.":::
+    :::image type="content" source="../media/version-saved-from-upstream.png" alt-text="Screenshot showing the version saved from upstream.":::
 
 ## Related content
 

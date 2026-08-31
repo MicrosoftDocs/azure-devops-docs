@@ -1,4 +1,4 @@
-﻿---
+---
 title: Connect to an Azure Artifacts feed - npm
 description: Learn how to configure project and user .npmrc files to connect npm clients to an Azure Artifacts feed.
 ms.service: azure-artifacts
@@ -50,7 +50,7 @@ Select the tab that matches your operating system and follow the steps to config
 
 1. Add a *.npmrc* file to your project in the same directory as your `package.json`, and then paste the snippet from the **Project setup** section into the file.
 
-    :::image type="content" source="../media/npm-project-setup-azure-devops.png" alt-text="A screenshot displaying how to set up your npm project and connect to a feed." lightbox="../media/npm-project-setup-azure-devops.png":::
+    :::image type="content" source="../media/npm-project-setup-azure-devops.png" alt-text="Screenshot showing how to set up your npm project and connect to a feed." lightbox="../media/npm-project-setup-azure-devops.png":::
 
 1. Run the following command to add a token to your user-level *.npmrc* file. npm returns a **401 Unauthorized** error when the token expires—run this command again to refresh it.
 
@@ -136,7 +136,7 @@ Select the tab that matches your operating system and follow the steps to config
 
 1. Select **npm**, and then follow the steps in the **Project setup** section to configure your *.npmrc* file and authenticate with your feed.
 
-   :::image type="content" source="../media/npm-project-setup-server-2022-1.png" alt-text="A screenshot showing how to set up your npm project in Azure DevOps Server 2022.1." lightbox="../media/npm-project-setup-server-2022-1.png":::
+   :::image type="content" source="../media/npm-project-setup-server-2022-1.png" alt-text="Screenshot showing how to set up your npm project in Azure DevOps Server 2022.1." lightbox="../media/npm-project-setup-server-2022-1.png":::
 
 ### [Other](#tab/other/)
 

@@ -43,7 +43,7 @@ Follow these steps to promote a package to a specific view in your feed:
 
 1. Select a view from the dropdown menu, then select **Promote** once more.
 
-    :::image type="content" source="media/promote-packages-select-view.png" alt-text="A screenshot displaying how to promote a package to a view in Azure Artifacts.":::
+    :::image type="content" source="media/promote-packages-select-view.png" alt-text="Screenshot showing how to promote a package to a view in Azure Artifacts.":::
 
 > [!IMPORTANT]
 > Azure Artifacts doesn't support package demotion. Once a package is promoted, it can't be reverted to a previous view.
@@ -271,11 +271,11 @@ By default, Azure Artifacts includes three views: *@Local*, *@Prerelease*, and *
 
 1. Select the gear icon :::image type="icon" source="../../media/icons/gear-icon.png" border="false"::: to open your feed's settings.
 
-    :::image type="content" source="../media/feed-settings.png" alt-text="A screenshot showing how to access feed settings in Azure Artifacts.":::
+    :::image type="content" source="../media/feed-settings.png" alt-text="Screenshot showing how to access feed settings in Azure Artifacts.":::
 
 1. Select **Views**, choose a view, and then select **Edit** to modify it. To create a new view, select **Add view**.
 
-    :::image type="content" source="./media/manage-views.png" alt-text="A screenshot showing how to add, edit, or delete feed views.":::
+    :::image type="content" source="./media/manage-views.png" alt-text="Screenshot showing how to add, edit, or delete feed views.":::
 
 1. Select **Save** when you're done.
 

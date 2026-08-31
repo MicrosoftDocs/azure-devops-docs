@@ -33,7 +33,7 @@ If you get the following error: *Unknown lifecycle phase "build"(...)* when you 
 
 1. Select **Run**.
 
-    :::image type="content" source="../../maven/media/build-eclipse.png" alt-text="A screenshot showing how to build a project using Eclipse.":::
+    :::image type="content" source="../../maven/media/build-eclipse.png" alt-text="Screenshot showing how to build a project using Eclipse.":::
 
 If you want to publish a third-party artifact, you can use the [deploy:deploy-file](https://maven.apache.org/plugins/maven-deploy-plugin/usage.html) mojo. This can be used with or without a POM file to deploy your packages.
 
