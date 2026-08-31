@@ -23,19 +23,19 @@ With Azure Artifacts feeds, you can enable upstream sources to include packages 
 
 1. Select **Upstream Sources**, and then select **Add Upstream**.
 
-    :::image type="content" source="./media/gradle-upstream-source.png" alt-text="A screenshot showing how to access upstream sources to add a new upstream.":::
+    :::image type="content" source="./media/gradle-upstream-source.png" alt-text="Screenshot showing how to access upstream sources to add a new upstream.":::
 
 1. Select **Public source**, and then select **Gradle Plugins (https://plugins.gradle.org/m2/)** from the dropdown menu.
 
 1. Select **Add** when you're done, and then select **Save** at the top right corner to save your changes.
 
-    :::image type="content" source="./media/gradle-plugins.png" alt-text="A screenshot showing how to add Gradle Plugins.":::
+    :::image type="content" source="./media/gradle-plugins.png" alt-text="Screenshot showing the Add upstream source pane with Gradle Plugins selected as the public source.":::
 
 ## View saved packages
 
 To view the packages from Gradle Plugins, select **Gradle Plugins** from the **Source** dropdown menu.
 
-:::image type="content" source="./media/packages-gradle-plugins.png" alt-text="A screenshot showing packages from Gradle Plugins.":::
+:::image type="content" source="./media/packages-gradle-plugins.png" alt-text="Screenshot showing packages from the Gradle Plugins upstream source listed in the feed.":::
 
 > [!NOTE]
 > Maven snapshots are not supported with Maven upstream sources.

@@ -12,7 +12,7 @@ ms.date: 09/11/2023
 
 1. Select **Artifacts**, and then select **Connect to feed**.
 
-    :::image type="content" source="../../npm/media/npm-scopes-connect-to-feed.png" alt-text="A screenshot showing how to connect to a feed.":::
+    :::image type="content" source="../../npm/media/npm-scopes-connect-to-feed.png" alt-text="Screenshot showing the Connect to feed button in Azure Artifacts.":::
 
 1. Select **npm**, and then select **Other**.
 

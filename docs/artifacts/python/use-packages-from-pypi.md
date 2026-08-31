@@ -34,7 +34,7 @@ If you don’t already have a feed, follow the steps below to create one and ena
 
 1. Select **Create** when you're done.
 
-    :::image type="content" source="media/python-demo-feed.png" alt-text="A screenshot showing how to create a need feed and enable upstream sources in Azure Artifacts.":::
+    :::image type="content" source="media/python-demo-feed.png" alt-text="Screenshot showing how to create a new feed and enable upstream sources in Azure Artifacts.":::
 
 ## Add PyPI upstream
 
@@ -113,7 +113,7 @@ In this example, you’ll install *requests*, a popular HTTP library for Python.
 
 1. Once the installation completes, Azure Artifacts saves a copy of the package to your feed. Navigate to your feed to verify that the package is available, as shown in the following screenshot.
 
-    :::image type="content" source="media/package-saved-from-python-upstream-source.png" alt-text="A screenshot showing the requests package installed from PyPI upstream." lightbox="media/package-saved-from-python-upstream-source.png":::
+    :::image type="content" source="media/package-saved-from-python-upstream-source.png" alt-text="Screenshot showing the requests package installed from PyPI upstream." lightbox="media/package-saved-from-python-upstream-source.png":::
 
 ## Related content
 

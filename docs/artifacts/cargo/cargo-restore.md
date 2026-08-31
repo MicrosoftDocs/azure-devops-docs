@@ -29,7 +29,7 @@ To consume and publish Rust crates with Azure Artifacts, it's recommended to use
 
 1. Select **Create** when you're done.
 
-    :::image type="content" source="media/create-a-new-feed.png" alt-text="A screenshot showing how to create a new feed in Azure Artifacts.":::
+    :::image type="content" source="media/create-a-new-feed.png" alt-text="Screenshot showing how to create a new feed in Azure Artifacts.":::
 
 ## Restore packages
 
@@ -57,7 +57,7 @@ CRATE_NAME = { version = "VERSION_NUMBER", registry = "FEED_NAME" }
 
 The downloaded crates are cached locally in your `~/.cargo/registry/cache/<registry-hash>/` where the *registry-hash* is a unique identifier based on your feed URL.
 
-:::image type="content" source="media/cargo-fetch-packages.png" alt-text="A screenshot displaying the result of the cargo fetch command.":::
+:::image type="content" source="media/cargo-fetch-packages.png" alt-text="Screenshot showing the result of the cargo fetch command.":::
 
 ## Related content
 

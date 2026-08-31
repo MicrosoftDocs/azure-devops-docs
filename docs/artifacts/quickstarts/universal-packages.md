@@ -55,7 +55,7 @@ Before you can publish a Universal Package, you need a feed to publish it to. A 
 
 1. Select **Create** when you're done.
 
-    :::image type="content" source="../media/create-new-feed-azure-devops.png" alt-text="A screenshot displaying how to create a new feed in Azure DevOps Services.":::
+    :::image type="content" source="../media/create-new-feed-azure-devops.png" alt-text="Screenshot showing how to create a new feed in Azure DevOps Services.":::
 
 ## Publish Universal Packages
 
@@ -89,7 +89,7 @@ After you publish your package, you can confirm it's available in your feed.
 
 1. Select **Artifacts**, and then select your feed from the dropdown menu. If the publish completed successfully, your package should be available in your feed.
 
-    :::image type="content" source="media/view-published-package.png" alt-text="A screenshot displaying the newly published Universal Package." lightbox="media/view-published-package.png":::
+    :::image type="content" source="media/view-published-package.png" alt-text="Screenshot showing the newly published Universal Package." lightbox="media/view-published-package.png":::
 
 ## Related content
 

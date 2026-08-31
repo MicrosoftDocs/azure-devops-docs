@@ -33,11 +33,11 @@ If the PowerShell Gallery upstream source is not available in your feed by defau
 
 1. Select **Upstream Sources**, and then select **Add Upstream**.
 
-    :::image type="content" source="media/add-upstream-source.png" alt-text="A screenshot showing how to add a new upstream source.":::
+    :::image type="content" source="media/add-upstream-source.png" alt-text="Screenshot showing how to add a new upstream source.":::
 
 1. Select **Public source**, and then select **PowerShell Gallery** from the dropdown menu. Select **Add** when you're done.
 
-    :::image type="content" source="media/add-powershell-gallery-upstream.png" alt-text="A screenshot showing how to add the PowerShell Gallery as an upstream source.":::
+    :::image type="content" source="media/add-powershell-gallery-upstream.png" alt-text="Screenshot showing how to add the PowerShell Gallery as an upstream source.":::
 
 1. Select **Save** in the upper right corner to save your changes. Select **Save** again if prompted to confirm your choices.
 
@@ -89,7 +89,7 @@ You can access the packages you've saved from the PowerShell Gallery by choosing
 
 1. Select **Source** on the right, and then select **PowerShell Gallery** to filter for packages saved from upstream. You can see that the *PSScriptAnalyzer* package, which we installed in the previous step, has been saved to our feed.
 
-    :::image type="content" source="media/saved-package-from-upstream-cropped.png" alt-text="A screenshot showing packages saved from upstream in an Azure Artifacts feed." lightbox="media/saved-package-from-upstream.png":::
+    :::image type="content" source="media/saved-package-from-upstream-cropped.png" alt-text="Screenshot showing packages saved from upstream in an Azure Artifacts feed." lightbox="media/saved-package-from-upstream.png":::
 
 ## Related articles
 

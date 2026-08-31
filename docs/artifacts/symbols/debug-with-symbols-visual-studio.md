@@ -22,15 +22,15 @@ To debug with symbols from the Azure Artifacts symbol server, we must authentica
 
 1. Select **Symbols** from the list, and then select the `+` sign to add a new Azure DevOps symbol server location.
 
-    :::image type="content" source="media/add-server-location.png" alt-text="Add a new Azure DevOps symbol server location":::
+    :::image type="content" source="media/add-server-location.png" alt-text="Screenshot showing the Add symbol server button in Visual Studio.":::
 
 1. A new dialog box **Connect to Azure DevOps Symbol Server** will open, select your account from the dropdown menu, and then select the organization that you wish to connect to. Select **Connect** when you are done to connect to the symbol server.
 
-    :::image type="content" source="media/connect-to-symbol-server.png" alt-text="Connect to Azure DevOps Symbol Server":::
+    :::image type="content" source="media/connect-to-symbol-server.png" alt-text="Screenshot showing the Connect to Azure DevOps Symbol Server dialog.":::
 
 1. Your symbol server is then added to the list of symbol file locations.
 
-    :::image type="content" source="media/symbol-locations.png" alt-text="New symbol server added to the list of symbol file locations":::
+    :::image type="content" source="media/symbol-locations.png" alt-text="Screenshot showing the Azure DevOps symbol server in the list of symbol file locations.":::
 
 ## Debug optimized modules
 
@@ -38,7 +38,7 @@ If you're planning to debug an optimized module (example release binaries) or a 
 
 To do so, select **Tools** > **Options** and then **Debugging**. Select **General** from the list and then uncheck **Enable Just My Code**.
 
-:::image type="content" source="media/enable-just-my-code.png" alt-text="Enable just my code - enable 3rd party source code debugging":::
+:::image type="content" source="media/enable-just-my-code.png" alt-text="Screenshot showing the Enable Just My Code option in Visual Studio Debugging settings.":::
 
 > [!NOTE]
 > To enable support for portable PDB files, check the **Enable Source Link Support** checkbox, and to enable support for Windows PDB files on symbol servers, check the **Enable Source Server Support** checkbox, both located under **Tools** > **Options** > **Debugging** > **General**.

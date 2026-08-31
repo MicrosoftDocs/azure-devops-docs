@@ -46,7 +46,7 @@ Azure Artifacts recommends using one feed for consuming packages and a separate 
 
 1. Once published, navigate to your feed. You should see your packages listed, as shown in the example below:
     
-    :::image type="content" source="media/publish-package-gradle.png" alt-text="A screenshot displaying a package successfully published to the feed.":::
+    :::image type="content" source="media/publish-package-gradle.png" alt-text="Screenshot showing a package successfully published to the feed.":::
 
 ## Related content
 

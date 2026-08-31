@@ -24,7 +24,7 @@ ms.date: 05/15/2024
 
 1. Select **OK** when you're done.
 
-    :::image type="content" source="../../media/vs-addsource.png" alt-text="A screenshot that shows selections for setting up Visual Studio in Windows.":::
+    :::image type="content" source="../../media/vs-addsource.png" alt-text="Screenshot showing selections for setting up Visual Studio in Windows.":::
 
 #### [macOS](#tab/macOS/)
 
@@ -42,7 +42,7 @@ ms.date: 05/15/2024
 
 1. Select **OK** when you're done.
 
-    :::image type="content" source="../../media/vs-mac-settings.png" alt-text="A screenshot that shows selections for setting up Visual Studio in macOS.":::
+    :::image type="content" source="../../media/vs-mac-settings.png" alt-text="Screenshot showing selections for setting up Visual Studio in macOS.":::
 
 ---
 
@@ -52,6 +52,6 @@ ms.date: 05/15/2024
 
 1. Select **Browse**, and then select your feed from the **Package source** dropdown menu.
 
-    :::image type="content" source="../../media/select-pkg-src.png" alt-text="Screenshot that shows selection of a package source in Visual Studio.":::
+    :::image type="content" source="../../media/select-pkg-src.png" alt-text="Screenshot showing selection of a package source in Visual Studio.":::
 
 1. Use the search bar to search for packages from your feed.

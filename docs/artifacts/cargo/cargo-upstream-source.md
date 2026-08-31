@@ -34,7 +34,7 @@ Azure Artifacts recommends having a dedicated feed for consuming crates from cra
 
 1. Select **Create** when you're done.
 
-    :::image type="content" source="media/cargo-crates-feed.png" alt-text="A screenshot displaying how to create a feed to consume crates from Crates.io upstream.":::
+    :::image type="content" source="media/cargo-crates-feed.png" alt-text="Screenshot showing how to create a feed to consume crates from Crates.io upstream.":::
 
 ## Connect to your feed
 
@@ -220,7 +220,7 @@ The following example demonstrates how to consume the `reqwest` crate, an HTTP c
 
 Once the package is installed, a copy will be saved to your feed. You can verify this by navigating to your feed in Azure DevOps. The package should be available in your feed, as shown below:
 
-:::image type="content" source="media/consume-crate-from-cargo-upstream.png" alt-text="A screenshot displaying the reqwest crate listed in an Azure Artifacts feed after being saved from Crates.io." lightbox="media/consume-crate-from-cargo-upstream.png":::
+:::image type="content" source="media/consume-crate-from-cargo-upstream.png" alt-text="Screenshot showing the reqwest crate listed in an Azure Artifacts feed after being saved from Crates.io." lightbox="media/consume-crate-from-cargo-upstream.png":::
 
 [!INCLUDE [save-requires-collaborator](../includes/save-requires-collaborator.md)]
 

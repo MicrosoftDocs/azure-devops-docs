@@ -45,7 +45,7 @@ Ensure that you have Azure CLI (version 2.10.1 or higher) installed. Then, follo
 
 1. Select **Create** when you're done.
 
-    :::image type="content" source="../media/create-new-feed-azure-devops.png" alt-text="A screenshot displaying how to create a new feed in Azure DevOps Services.":::
+    :::image type="content" source="../media/create-new-feed-azure-devops.png" alt-text="Screenshot showing how to create a new feed in Azure DevOps Services.":::
 
 ## Download Universal Packages
 

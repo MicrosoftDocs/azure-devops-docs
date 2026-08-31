@@ -31,7 +31,7 @@ Azure Artifacts recommends using a dedicated feed for consuming crates from *cra
 
 1. Select **Create** when you're done.
 
-    :::image type="content" source="media/cargo-create-a-feed.png" alt-text="A screenshot displaying how to create a new feed in Azure Artifacts.":::
+    :::image type="content" source="media/cargo-create-a-feed.png" alt-text="Screenshot showing how to create a new feed in Azure Artifacts.":::
 
 ## Publish packages
 

@@ -17,7 +17,7 @@ ms.date: 03/15/2024
 
 1. Select **Create** when you're done.
 
-    :::image type="content" source="../media/create-new-feed-azure-devops.png" alt-text="Screenshot that shows selections for creating a new feed in Azure DevOps Services.":::
+    :::image type="content" source="../media/create-new-feed-azure-devops.png" alt-text="Screenshot showing selections for creating a new feed in Azure DevOps Services.":::
 
 ::: moniker-end
 
@@ -35,7 +35,7 @@ ms.date: 03/15/2024
 
 4. Select **Create** when you're done.
 
-    :::image type="content" source="../media/create-new-feed-server-2022.png" alt-text="Screenshot that shows selections for creating a new feed in Azure DevOps 2022.":::
+    :::image type="content" source="../media/create-new-feed-server-2022.png" alt-text="Screenshot showing selections for creating a new feed in Azure DevOps 2022.":::
 
 ::: moniker-end
 

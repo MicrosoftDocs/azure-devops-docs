@@ -70,7 +70,7 @@ This guide walks you through configuring your project and restoring your NuGet p
 
 1. Follow the instructions in the **Project setup** section to connect to your feed.
 
-    :::image type="content" source="../media/connect-to-feed-dotnet-server-2020-and-2022.png" alt-text="A screenshot showing how to connect to a feed with dotnet in Azure DevOps Server 2020 and 2022." lightbox="../media/connect-to-feed-dotnet-server-2020-and-2022.png":::
+    :::image type="content" source="../media/connect-to-feed-dotnet-server-2020-and-2022.png" alt-text="Screenshot showing how to connect to a feed with dotnet in Azure DevOps Server 2020 and 2022." lightbox="../media/connect-to-feed-dotnet-server-2020-and-2022.png":::
 
 ::: moniker-end
 

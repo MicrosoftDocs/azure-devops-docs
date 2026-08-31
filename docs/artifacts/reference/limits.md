@@ -73,7 +73,7 @@ When your organization reaches the 2 GiB free‑tier storage limit, you won’
 
 1. Select **Save** when you're done.
 
-   :::image type="content" source="../media/increase-usage-limit.png" alt-text="A screenshot displaying how to increase Artifacts storage limit." lightbox="../media/increase-usage-limit.png":::
+   :::image type="content" source="../media/increase-usage-limit.png" alt-text="Screenshot showing how to increase Artifacts storage limit." lightbox="../media/increase-usage-limit.png":::
 
 ## Related content
 

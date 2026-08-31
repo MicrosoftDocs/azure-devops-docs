@@ -28,11 +28,11 @@ This article guides you through creating a feed, configuring your project, and p
 
 The Azure Artifacts Credential Provider enables secure authentication to your Azure Artifacts feeds. To use it with nuget.exe, you must first add it to NuGet’s plugin search path. For details, see [Plugin Installation and discovery](https://github.com/NuGet/Home/wiki/NuGet-cross-plat-authentication-plugin#plugin-installation-and-discovery). Once the plugin is added, follow the installation steps for your operating system:
 
-#### [Windows](#tab/windows/)
+### [Windows](#tab/windows/)
 
 Use one of the following methods to install the Azure Artifacts Credential Provider:
 
-### Manual installation
+#### Manual installation
 
 1. Download the latest [Microsoft.NetFx48.NuGet.CredentialProvider.zip](https://github.com/Microsoft/artifacts-credprovider/releases) release.
 
@@ -40,7 +40,7 @@ Use one of the following methods to install the Azure Artifacts Credential Provi
 
 1. Copy the `netfx` folder from the extracted archive to `%UserProfile%/.nuget/plugins/`. The `netfx` folder is required for nuget.exe compatibility.
 
-### Install using the helper script
+#### Install using the helper script
 
 Alternatively, you can use the automated helper script for a streamlined installation. Ensure you have [PowerShell 5.1 or later](/powershell/scripting/install/installing-powershell), and then run:
 
@@ -50,11 +50,11 @@ iex "& { $(irm https://aka.ms/install-artifacts-credprovider.ps1) } -AddNetfx"
 
 See the [Azure Artifacts Credential Provider](https://github.com/microsoft/artifacts-credprovider?tab=readme-ov-file#azure-artifacts-credential-provider) repository for more details.
 
-#### [Linux/Mac](#tab/linuxMac/)
+### [Linux/Mac](#tab/linuxMac/)
 
 Make sure you've set up the [Prerequisites](https://github.com/microsoft/artifacts-credprovider?tab=readme-ov-file#for-linux-self-contained-installs), then use one of the following methods to install the Azure Artifacts Credential Provider:
 
-### Manual installation
+#### Manual installation
 
 1. Download the latest [Microsoft.NetFx48.NuGet.CredentialProvider.tar.gz](https://github.com/Microsoft/artifacts-credprovider/releases) release.
 
@@ -62,7 +62,7 @@ Make sure you've set up the [Prerequisites](https://github.com/microsoft/artifac
 
 1. Copy the `netfx` folder from the extracted archive to `$HOME/.nuget/plugins`. The `netfx` folder supports MSBuild scenarios.
 
-### Install using the helper script
+#### Install using the helper script
 
 The helper script provides an automated installation of the netcore version. If you need both netcore and netfx binaries for scenarios like mono MSBuild, use the manual installation method above instead.
 
@@ -99,7 +99,7 @@ See the [Azure Artifacts Credential Provider](https://github.com/microsoft/artif
 
 1. Follow the provided instructions under the **Project setup** section to set up your *nuget.config* file and connect to your Azure Artifacts feed.
 
-    :::image type="content" source="./media/project-setup.png" alt-text="A screenshot displaying how to set up your project and connect to your feed in Azure DevOps Services.":::
+    :::image type="content" source="./media/project-setup.png" alt-text="Screenshot showing how to set up your project and connect to your feed in Azure DevOps Services.":::
 
 ::: moniker-end
 
@@ -113,7 +113,7 @@ See the [Azure Artifacts Credential Provider](https://github.com/microsoft/artif
 
 1. Follow the provided instructions under the **Project setup** section to set up your *nuget.config* file and connect to your Azure Artifacts feed.
 
-    :::image type="content" source="./media/connect-to-feed-nuget-server-2020.png" alt-text="A screenshot displaying how to set up your project and connect to your feed in Azure DevOps Server 2020 and 2022.":::
+    :::image type="content" source="./media/connect-to-feed-nuget-server-2020.png" alt-text="Screenshot showing how to set up your project and connect to your feed in Azure DevOps Server 2020 and 2022.":::
 
 ::: moniker-end
 
@@ -128,7 +128,7 @@ To publish a package to your feed, run the following command. The `ApiKey` param
 nuget.exe push -Source <SOURCE_NAME> -ApiKey key <PACKAGE_PATH>
 ```
 
-#### Examples
+### Examples
 
 - **Project-scoped feed**:
 

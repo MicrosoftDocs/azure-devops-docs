@@ -43,7 +43,7 @@ From the Azure Artifacts feed settings, you can manage various aspects of your f
 
 1. Select **Permissions**, then select **Add users/groups**.
 
-    :::image type="content" source="media/feed-permissions.png" alt-text="A screenshot displaying how to access feed permissions.":::
+    :::image type="content" source="media/feed-permissions.png" alt-text="Screenshot showing how to access feed permissions.":::
 
 1. Add the new user(s) or group(s), and assign the appropriate **Role**:
     1. **Feed Owner**: Can delete packages, allow external package versions, edit feed settings, and manage upstream sources, in addition to contributor permissions.
@@ -113,7 +113,7 @@ If you want to completely hide your packages, you must restrict access to both t
 
 1. Select **Save** when you're done. The access permissions column will update to reflect your changes.
 
-    :::image type="content" source="media/edit-views.png" alt-text="A screenshot showing the permissions settings for the @Prerelease view in Azure Artifacts.":::
+    :::image type="content" source="media/edit-views.png" alt-text="Screenshot showing the permissions settings for the @Prerelease view in Azure Artifacts.":::
 
 > [!NOTE]
 > To add a feed from a different organization as an upstream source, the target feed owner must share the target view with **All feeds and people in organizations associated with my Microsoft Entra tenant**. This can be done by navigating to **Feed Settings** > **Views**, selecting the ellipsis next to the specified view, selecting **Edit**, and adjusting the permissions.
@@ -131,9 +131,9 @@ The project-level build identity is named `[Project name] Build Service ([Organi
 
 1. Select **Permissions**, then select **Add users/groups**. Add your build identity and assign it the **Feed and Upstream Reader (Collaborator)** role. If your pipeline needs to publish packages to the feed, make sure that both the *Project Collection Build Service* and your *project's Build Service* identities have the **Feed Publisher (Contributor)** role.
 
-    :::image type="content" source="media/feed-pipelines-permissions.png" alt-text="A screenshot displaying how to add a build identity to the feed permissions.":::
+    :::image type="content" source="media/feed-pipelines-permissions.png" alt-text="Screenshot showing how to add a build identity to the feed permissions.":::
 
-#### Examples
+### Examples
 
 See the examples below to learn how to authenticate and publish packages to your feed with Azure Pipelines.
 
