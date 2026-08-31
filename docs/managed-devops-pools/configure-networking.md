@@ -299,6 +299,13 @@ resource managedDevOpsPools 'Microsoft.DevOpsInfrastructure/pools@2025-09-20' = 
 
 If you have systems in place on your network (for example, network security groups or firewalls) that restrict outbound connectivity, you need to add certain endpoints to an allowlist to fully support Managed DevOps Pools. These endpoints are divided into globally required endpoints (necessary on any machine using Managed DevOps Pools) and endpoints that you need for certain scenarios. All endpoints are HTTPS, unless otherwise stated.
 
+- [Required endpoints for starting Managed DevOps Pools](#required-endpoints-for-starting-managed-devops-pools)
+- [Required endpoints for connecting to Azure DevOps](#required-endpoints-for-connecting-to-azure-devops)
+- [Required endpoints for Linux machines](#required-endpoints-for-linux-machines)
+- [Required endpoints for some Azure DevOps features](#required-endpoints-for-some-azure-devops-features)
+- [Azure-related endpoints](#azure-related-endpoints)
+- [Akamai CDN delivery IPs](#akamai-cdn-delivery-ips)
+
 ### Required endpoints for starting Managed DevOps Pools
 
 If you don't add these endpoints to an allowlist, machines fail to come online as part of the Managed DevOps Pools service, and you can't run pipelines on the pool:
