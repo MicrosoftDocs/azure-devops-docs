@@ -10,7 +10,7 @@ ms.topic: how-to
 ms.author: chcomley
 author: chcomley
 monikerRange: 'azure-devops'
-ms.date: 08/12/2026
+ms.date: 08/31/2026
 #customer intent: As a user, I want to set up the remote Azure DevOps MCP Server so I can use AI assistance with my Azure DevOps data without installing and running a local server.
 ---
 
@@ -91,7 +91,7 @@ Specify toolsets to restrict the tools available to the MCP server. Shouldn't be
 
 | Toolset value | Included tools |
 |---|---|
-| `all` *(default)* | All tools except toolsets that require explicit opt-in, such as `elm` |
+| `all` *(default)* | All tools |
 | `repos` | Repository and pull request tools |
 | `advsec` | Advanced Security alert tools |
 | `wit` | Work item tools and `search_workitem` |
@@ -99,7 +99,7 @@ Specify toolsets to restrict the tools available to the MCP server. Shouldn't be
 | `wiki` | Wiki tools and `search_wiki` |
 | `work` | Iteration and capacity tools |
 | `testplan` | Test plan tools |
-| `elm` | Enterprise Live Migration tools (private preview; explicit opt-in) |
+| `elm` | Enterprise Live Migration tools (preview; enabled by default) |
 
 ### Read-only tools
 
@@ -347,7 +347,7 @@ The Advanced Security tools are consolidated into a grouped dispatcher that uses
 The Enterprise Live Migration tools use an `action` parameter to group and dispatch tasks. [Learn more](../repos/enterprise-live-migrations/overview.md) about the Enterprise Live Migration preview.
 
 > [!IMPORTANT]
-> ELM support in the remote Azure DevOps MCP Server is currently in **preview**. These tools require your organization to have access to the ELM limited public preview. If you need access, refer to the [Enterprise Live Migrations overview](../repos/enterprise-live-migrations/overview.md) for more information.
+> ELM support in the remote Azure DevOps MCP Server is currently in **preview**. The tools are enabled by default.
 
 | Tool | Action | Description | Read-only |
 |---|---|---|:---:|
@@ -367,7 +367,7 @@ The Enterprise Live Migration tools use an `action` parameter to group and dispa
 | `enterprise_live_migration_pipelines_write` | `update` | Update pipeline rewiring config | ❌ |
 | `enterprise_live_migration_pipelines_write` | `delete` | Delete all pipeline clones for a terminal migration | ❌ |
 
-The Enterprise Live Migration tools are disabled by default. Because ELM support in the remote MCP Server is in **preview**, they require your organization to have access to the ELM limited public preview. To enable the ELM tools, use the `X-MCP-Toolsets` header with the `elm` value:
+To make only the Enterprise Live Migration tools available, use the `X-MCP-Toolsets` header with the `elm` value:
 
 ```json
 {
@@ -498,7 +498,7 @@ The following example prompts for Copilot Chat help you choose the right MCP app
 | **Server not found** | Check the server URL format: `https://mcp.dev.azure.com/{organization}`. |
 | **Connection Refused** | Confirm your network allows outbound HTTPS to `mcp.dev.azure.com`. If you're on a corporate proxy or firewall, ask your administrator to allow-list the endpoint and retry without VPN to isolate network path issues. |
 | **No data returned** | Confirm you have appropriate permissions for the project or resources being queried. |
-| **ELM tools not available after setting `X-MCP-Toolsets: elm`** | ELM support in the remote MCP Server is in private preview and not enabled for all organizations. Setting `X-MCP-Toolsets: elm` is necessary but not sufficient—your organization must also be enrolled in the ELM private preview. Contact your organization administrator or see the [Enterprise Live Migrations overview](../repos/enterprise-live-migrations/overview.md) to request access. |
+| **ELM tools aren't available** | ELM tools are enabled by default. If you restrict available toolsets, confirm that the `X-MCP-Toolsets` header includes `elm`. Then reconnect the MCP Server and verify that your identity has the required Azure DevOps permissions. For prerequisites, see the [Enterprise Live Migrations overview](../repos/enterprise-live-migrations/overview.md). |
 
 For support, you can create an issue in the [local MCP Server](https://github.com/microsoft/azure-devops-mcp/issues/new?template=remote-mcp-server-issue.md) repo. Be sure to use the **Remote** issue template.
 

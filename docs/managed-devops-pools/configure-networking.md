@@ -1,7 +1,7 @@
 ---
 title: Configure networking
 description: Learn how to configure networking for Managed DevOps Pools.
-ms.date: 07/06/2026
+ms.date: 08/31/2026
 ms.custom: sfi-image-nochange
 ms.topic: how-to
 ---
@@ -299,6 +299,13 @@ resource managedDevOpsPools 'Microsoft.DevOpsInfrastructure/pools@2025-09-20' = 
 
 If you have systems in place on your network (for example, network security groups or firewalls) that restrict outbound connectivity, you need to add certain endpoints to an allowlist to fully support Managed DevOps Pools. These endpoints are divided into globally required endpoints (necessary on any machine using Managed DevOps Pools) and endpoints that you need for certain scenarios. All endpoints are HTTPS, unless otherwise stated.
 
+- [Required endpoints for starting Managed DevOps Pools](#required-endpoints-for-starting-managed-devops-pools)
+- [Required endpoints for connecting to Azure DevOps](#required-endpoints-for-connecting-to-azure-devops)
+- [Required endpoints for Linux machines](#required-endpoints-for-linux-machines)
+- [Required endpoints for some Azure DevOps features](#required-endpoints-for-some-azure-devops-features)
+- [Azure-related endpoints](#azure-related-endpoints)
+- [Akamai CDN delivery IPs](#akamai-cdn-delivery-ips)
+
 ### Required endpoints for starting Managed DevOps Pools
 
 If you don't add these endpoints to an allowlist, machines fail to come online as part of the Managed DevOps Pools service, and you can't run pipelines on the pool:
@@ -365,8 +372,14 @@ Confirm that you can use a subnet with Managed DevOps Pools by running the follo
 
 > [!IMPORTANT]
 > You must run this script on a resource in your subnet (like a VM or container) to validate that the network path is open from that subnet to the required endpoints.
+>
+> This script includes common Azure DevOps endpoints, but it can't test for every possible scenario. Review the list in [Required endpoints for some Azure DevOps features](#required-endpoints-for-some-azure-devops-features) for additional URLs that might need to be allow listed.
+>
+> If you're configuring a data disk, you must allow list the `md-*.blob.storage.azure.net` domain. The script doesn't check connectivity to this domain. For more information, see [Azure-related endpoints](#azure-related-endpoints).
 
 To run the script with PowerShell Core, or PowerShell 5 or later, save the following script as `ValidateMDPEndpoints.ps1`. Run the following PowerShell command: `.\ValidateMDPEndpoints.ps1 -organization "<your-organization>"`.
+
+If your workload matches any of the items described in [Required endpoints for some Azure DevOps features](#required-endpoints-for-some-azure-devops-features), [Azure-related endpoints](#azure-related-endpoints), or [Akamai CDN delivery IPs](#akamai-cdn-delivery-ips), add the URLs described in those sections to the script to validate that your agent has access.
 
 ```powershell
 # ValidateMDPEndpoints.ps1
@@ -386,8 +399,10 @@ $azureDevOpsUris = @(
     "https://${organization}.vstmr.visualstudio.com",
     "https://${organization}.pkgs.visualstudio.com",
     "https://${organization}.vssps.visualstudio.com",
-    "https://download.agent.dev.azure.com",
-    "download.agent.dev.azure.com"
+    "https://download.agent.dev.azure.com"
+)
+$azureDevOpsArtifactsUris = @(
+    "https://${organization}.vsblob.visualstudio.com"
 )
 $managedDevOpsPoolsControlPlaneUris = @(
     # List of agent queue endpoints - maps to *.queue.core.windows.net
@@ -404,7 +419,7 @@ $managedDevOpsPoolsControlPlaneUris = @(
     "https://rmproduksdefaultcq.queue.core.windows.net",
     "https://rmprodwus3defaultcq.queue.core.windows.net",
     # CDN for downloading the Managed DevOps Pools agent - maps to *.prod.managedevops.microsoft.com
-    "rm-agent.prod.manageddevops.microsoft.com"
+    "rm-agent.prod.manageddevops.microsoft.com",
     # List of control plane endpoints - maps to *.manageddevops.microsoft.com
     "default.ae.prod.manageddevops.microsoft.com",
     "default.brs.prod.manageddevops.microsoft.com",
@@ -419,42 +434,77 @@ $managedDevOpsPoolsControlPlaneUris = @(
     "default.uks.prod.manageddevops.microsoft.com",
     "default.wus3.prod.manageddevops.microsoft.com"
 )
-$unreachableUris = @()
-foreach ($uri in $azureDevOpsUris) {
-    try {
-        $hostName = ($uri -replace "^https?://", "") -replace "/.*", ""
-        $connection = Test-NetConnection -ComputerName $hostName -Port 443 -WarningAction SilentlyContinue
-        if (-not $connection.TcpTestSucceeded) {
+$linuxAgentsUris = @(
+    "http://azure.archive.ubuntu.com",
+    "https://www.microsoft.com",
+    "https://security.ubuntu.com",
+    "https://packages.microsoft.com",
+    "https://ppa.launchpad.net",
+    "https://dl.fedoraproject.org"
+)
+
+function Test-EndpointCollection {
+    param (
+        [string[]]$Uris
+    )
+
+    $unreachableUris = @()
+
+    foreach ($uri in $Uris) {
+        try {
+            $uriWithScheme = if ($uri -match "^https?://") { $uri } else { "https://$uri" }
+            $parsedUri = [System.Uri]$uriWithScheme
+            $connection = Test-NetConnection -ComputerName $parsedUri.Host -Port $parsedUri.Port -WarningAction SilentlyContinue
+
+            if (-not $connection.TcpTestSucceeded) {
+                $unreachableUris += $uri
+            }
+        } catch {
             $unreachableUris += $uri
         }
-    } catch {
-        $unreachableUris += $uri
     }
+
+    return $unreachableUris
 }
-if ($unreachableUris.Count -eq 0) {
+
+$azureDevOpsUnreachableUris = @(Test-EndpointCollection -Uris $azureDevOpsUris)
+if ($azureDevOpsUnreachableUris.Count -eq 0) {
     Write-Output "All Azure DevOps endpoints are reachable."
 } else {
     Write-Output "The following Azure DevOps endpoints could not be reached:"
-    $unreachableUris | ForEach-Object { Write-Output $_ }
+    $azureDevOpsUnreachableUris | ForEach-Object { Write-Output $_ }
 }
-foreach ($uri in $managedDevOpsPoolsControlPlaneUris) {
-    try {
-        $hostName = ($uri -replace "^https?://", "") -replace "/.*", ""
-        $connection = Test-NetConnection -ComputerName $hostName -Port 443 -WarningAction SilentlyContinue
 
-        if (-not $connection.TcpTestSucceeded) {
-            $unreachableUris += $uri
-        }
-    } catch {
-        $unreachableUris += $uri
-    }
+$azureDevOpsArtifactsUnreachableUris = @(Test-EndpointCollection -Uris $azureDevOpsArtifactsUris)
+if ($azureDevOpsArtifactsUnreachableUris.Count -eq 0) {
+    Write-Output "All Azure DevOps Artifacts endpoints are reachable."
+} else {
+    Write-Output "The following Azure DevOps Artifacts endpoints could not be reached. Disregard if you aren't using Artifacts in your pipeline."
+    $azureDevOpsArtifactsUnreachableUris | ForEach-Object { Write-Output $_ }
 }
-if ($unreachableUris.Count -eq 0) {
-    Write-Output "All Azure Managed DevOps Pools endpoints are reachable."
+
+$managedDevOpsPoolsUnreachableUris = @(Test-EndpointCollection -Uris $managedDevOpsPoolsControlPlaneUris)
+if ($managedDevOpsPoolsUnreachableUris.Count -eq 0) {
+    Write-Output "All Managed DevOps Pools endpoints are reachable."
 } else {
     Write-Output "The following Managed DevOps Pools endpoints could not be reached:"
-    $unreachableUris | ForEach-Object { Write-Output $_ }
+    $managedDevOpsPoolsUnreachableUris | ForEach-Object { Write-Output $_ }
 }
+
+$linuxAgentsUnreachableUris = @(Test-EndpointCollection -Uris $linuxAgentsUris)
+if ($linuxAgentsUnreachableUris.Count -eq 0) {
+    Write-Output "All Linux agent provisioning endpoints are reachable."
+} else {
+    Write-Output "The following Linux agent provisioning endpoints could not be reached. Disregard if you are using only Windows agents."
+    $linuxAgentsUnreachableUris | ForEach-Object { Write-Output $_ }
+}
+
+Write-Output "Endpoint validation completed."
+Write-Output "This script validates the most common endpoints but does not validate IP address ranges like '150.171.22.0/24'"
+Write-Output "that may be required for Azure DevOps Services or Azure connectivity."
+Write-Output "If you still have issues, ensure that the outbound IP address ranges listed in the documentation under"
+Write-Output "'Required endpoints for some Azure DevOps features' and 'Azure-related endpoints' are allowed through your firewall."
+Write-Output "https://aka.ms/mdp-network-outbound-connectivity"
 ```
 
 ## Configure the Azure DevOps agent to run behind a proxy
