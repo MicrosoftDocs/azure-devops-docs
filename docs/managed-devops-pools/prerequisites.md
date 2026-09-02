@@ -261,6 +261,9 @@ When you create a Managed DevOps Pool, the account you use to sign in to the Azu
 > [!NOTE]
 > If you're creating a Managed DevOps Pool from a pipeline, add the service connection's app registration or managed identity to the Azure DevOps organization and grant it the permissions described in the previous table. For more information, see [Connect to Azure with an Azure Resource Manager service connection](../pipelines/library/connect-to-azure.md) and [Use service principals & managed identities in Azure DevOps](../integrate/get-started/authentication/service-principal-managed-identity.md).
 
+> [!NOTE]
+> When creating a new MDP, project-level Agent Pool Administrator or Creator permissions are typically sufficient. However, when updating an existing MDP or adding additional projects to an existing pool, the deployment identity must also be an Administrator on the organization-level agent pool under Organization Settings → Agent Pools → Security. Without this permission, pool updates may fail with "needs Manage permissions for pool" errors.
+
 ### Verify membership in the Azure DevOps organization
 
 You must be a member of the Azure DevOps organization before the permissions in this section can be assigned to your account.
