@@ -51,7 +51,7 @@ This feature is currently in limited public preview.
             <td><img src="roadmap/2023/media/checkmark.png" alt="Done" /> 2026 Q3</td>
          </tr>
          <tr>
-            <td><a href="https://devblogs.microsoft.com/devops/copilot-code-reviews-for-azure-repos-public-preview/" data-raw-source="[Improvements to onboarding and enablement of Copilot code reviews at the organization, project, and repository levels](https://devblogs.microsoft.com/devops/copilot-code-reviews-for-azure-repos-public-preview/)">Improvements to onboarding and enablement of Copilot code reviews at the organization, project, and repository levels</a></td>
+            <td><a href="https://devblogs.microsoft.com/devops/copilot-code-reviews-for-azure-repos-public-preview/" data-raw-source="[Improvements to onboarding and enablement](https://devblogs.microsoft.com/devops/copilot-code-reviews-for-azure-repos-public-preview/)">Improvements to onboarding and enablement</a></td>
             <td><img src="roadmap/2023/media/checkmark.png" alt="Done" /> 2026 Q3</td>
          </tr>
          <tr>
