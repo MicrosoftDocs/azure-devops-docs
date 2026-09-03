@@ -219,6 +219,7 @@ Copilot reviews a pull request only when it meets these requirements:
 | Pull request merge status | No merge conflicts (**Merge Succeeded**) |
 | Repository size | 10 GB or less |
 | Pull request changed files | 100 files or fewer |
+| Number of changes in the pull request | 100 changes or fewer |
 
 These concurrency and rate limits also apply:
 
