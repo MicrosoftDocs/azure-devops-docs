@@ -479,8 +479,14 @@ Copy the **Application (client) ID** from the app registration. You need this va
 
 #### Configure Claude Code
 
-1. In the root of your repository, create a `.mcp.json` file.
-1. Add the following configuration, replacing `{client-id}` with the application (client) ID that you copied and `{organization}` with your Azure DevOps organization name:
+1. Run the following command, replacing `{client-id}` with the application (client) ID that you copied and `{organization}` with your Azure DevOps organization name:
+
+   ```bash
+   claude mcp add --transport http ado https://mcp.dev.azure.com/{organization} \
+     --client-id {client-id} --callback-port 3118
+   ```
+
+   Alternatively, create a `.mcp.json` file in the root of your repository with the following configuration:
 
    ```json
    {
@@ -497,9 +503,7 @@ Copy the **Application (client) ID** from the app registration. You need this va
    }
    ```
 
-1. Save the file.
 1. Start Claude Code by running `claude`.
-1. If prompted, review and approve the project MCP server.
 1. Run `/mcp`, and then follow the browser sign-in flow to authenticate with your Microsoft Entra account.
 
 For more information about these options, see [Connect Claude Code to tools via MCP](https://code.claude.com/docs/en/mcp#use-pre-configured-oauth-credentials).
