@@ -1,7 +1,7 @@
 ---
 title: Use personal access tokens
 titleSuffix: Azure DevOps
-ms.custom: ai-video-demo, pat-reduction, copilot-scenario-highlight
+ms.custom: ai-video-demo, pat-reduction, copilot-scenario-highlight, support-driven-update
 ai-usage: ai-assisted
 description: Create, manage, rotate, and audit personal access tokens (PATs) in Azure DevOps. Apply security best practices for PAT lifecycle management.
 ms.subservice: azure-devops-security
