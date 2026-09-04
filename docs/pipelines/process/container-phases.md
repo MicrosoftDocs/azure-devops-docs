@@ -139,7 +139,7 @@ For more information, see the [docker container create](https://docs.docker.com/
 
 ## Docker socket mapping
 
-By default, container jobs on Linux agents don't mount the host Docker socket (`/var/run/docker.sock`) into the job container. This default follows the principle of least privilege, so jobs that don't need Docker-in-container behavior aren't granted access to the host Docker daemon.
+By default, starting with [Agent version 5.279.0](https://github.com/microsoft/azure-pipelines-agent/releases#release-v5.279.0), container jobs on Linux agents don't mount the host Docker socket (`/var/run/docker.sock`) into the job container. This default follows the principle of least privilege, so jobs that don't need Docker-in-container behavior aren't granted access to the host Docker daemon.
 
 If your container job runs Docker commands against the host daemon (Docker-in-container), explicitly opt in by setting `mapDockerSocket` to `true` on the container resource.
 
