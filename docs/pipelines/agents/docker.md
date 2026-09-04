@@ -576,7 +576,7 @@ In order to use Docker from within a Docker container, you bind-mount the Docker
 If you're sure you want to do this, see the [bind mount](https://docs.docker.com/storage/bind-mounts/) documentation on Docker.com.
 
 > [!NOTE]
-> For Azure Pipelines [container jobs](../process/container-phases.md), the host Docker socket (`/var/run/docker.sock`) isn't mapped into the job container by default on Linux agents. If your container job needs Docker-in-container access to the host daemon, set `mapDockerSocket: true` on the container resource. For more information, see [Docker socket mapping](../process/container-phases.md#docker-socket-mapping).
+> For Azure Pipelines [container jobs](../process/container-phases.md), the host Docker socket (`/var/run/docker.sock`) isn't mapped into the job container by default. If your container job needs Docker-in-container access to the host daemon, set `mapDockerSocket: true` on the container resource. For more information, see [Docker socket mapping](../process/container-phases.md#docker-socket-mapping).
 
 ## Use Azure Kubernetes Service cluster
 
