@@ -8,7 +8,7 @@ description: Advance notice that the pipeline agent changes the default of mapDo
 
 # Docker socket no longer mapped by default for Linux container jobs
 
-In this sprint, we're giving advance notice of an upcoming breaking change in Azure Pipelines. To follow the principle of least privilege, the pipeline agent will change the default value of `mapDockerSocket` to `false` for Linux container jobs, so the host Docker socket is no longer mounted into the job container by default. Container jobs that rely on Docker-in-container behavior must explicitly set `mapDockerSocket: true`.
+In this sprint, we're giving advance notice of an upcoming breaking change in Azure Pipelines. To follow the principle of least privilege, the pipeline agent changes the default value of `mapDockerSocket` to `false` for Linux container jobs, so the host Docker socket isn't mounted into the job container by default. Container jobs that rely on Docker-in-container behavior must explicitly set `mapDockerSocket: true`.
 
 Check out the release notes for details.
 
@@ -21,7 +21,7 @@ Check out the release notes for details.
 ## Next steps
 
 > [!NOTE]
-> These features will roll out over the next two to three weeks.
+> These features roll out over the next two to three weeks.
 Go to Azure DevOps and take a look.
 
 > [!div class="nextstepaction"]

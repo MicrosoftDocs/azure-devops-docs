@@ -7,7 +7,7 @@ ms.date: 9/10/2026
 ms.topic: release-notes
 ---
 
-# Azure Pipelines - Sprint 279 Update
+# Azure Pipelines - Sprint 279 update
 
 ## Features
 
