@@ -8,7 +8,7 @@ ms.subservice: azure-devops-security
 ms.topic: how-to
 ms.author: chcomley
 author: chcomley
-ms.date: 07/07/2026
+ms.date: 09/04/2026
 monikerRange: '<= azure-devops'
 ---
 
@@ -34,7 +34,7 @@ If you use tools that don't support Microsoft Entra accounts, or if you prefer n
 
 | Category | Requirements |
 |--------------|-------------|
-|**Permissions** |Permission to access and modify your user settings where PATs are managed. <br>- Go to your profile and select **User settings** > **Personal access tokens**. If you can see and manage your PATs here, you have the necessary permissions.<br>- Go to your project and select **Project settings** > **Permissions**. Find your user account in the list and check the permissions that are assigned to you. Look for permissions related to managing tokens or user settings.<br>- If your [organization has policies in place](manage-pats-with-policies-for-administrators.md), an administrator might need to grant you specific permissions or add you to an allow list to create and manage PATs.<br>- PATs are connected to the user account that minted the token. Depending on the tasks the PAT performs, you might need more permissions yourself.|
+|**Permissions** |Permission to access and modify your user settings where PATs are managed. <br>- Go to your profile and select **User settings** > **Personal access tokens**. If the page lists your PATs and provides options to manage them, you have the necessary permissions.<br>- Go to your project and select **Project settings** > **Permissions**. Find your user account in the list and check the permissions that are assigned to you. Review permissions related to managing tokens or user settings.<br>- If your [organization has policies in place](manage-pats-with-policies-for-administrators.md), an administrator might need to grant you specific permissions or add you to an allow list to create and manage PATs.<br>- PATs are connected to the user account that minted the token. Depending on the tasks the PAT performs, you might need more permissions yourself.|
 |**Access levels** |At least Basic access.|
 |**Tasks**|*Use PATs only when necessary and always rotate them regularly.* See the section [Best practices for using PATs](#best-practices-for-using-pats).|
 
@@ -69,10 +69,10 @@ If you use tools that don't support Microsoft Entra accounts, or if you prefer n
    :::image type="content" source="media/pats/select-pat-scopes-preview.png" alt-text="Screenshot shows scope selection options for a PAT.":::
 
    Your administrator might [restrict you from creating full-scoped PATs or limit you to packaging-scope PATs only](manage-pats-with-policies-for-administrators.md).
-   Reach out to your admin to get on the allow list if you need access to more scopes.
-   Some scopes, for example, `vso.governance`, might not be available in the user interface (UI) if they aren't for widespread public use.
+   Contact your admin to get on the allow list if you need access to more scopes.
+   Some scopes, such as `vso.governance`, might not be available in the user interface (UI) if they're not for widespread public use.
 
-1. When you're finished, copy the token and store it in a secure location. For your security, it doesn't display again.
+1. When you finish, copy the token and store it in a secure location. For your security, it doesn't display again.
 
    :::image type="content" source="media/pats/copy-token-to-clipboard.png" alt-text="Screenshot shows Copy token to clipboard button with the generated PAT value.":::
 
@@ -101,10 +101,10 @@ If you use tools that don't support Microsoft Entra accounts, or if you prefer n
    :::image type="content" source="media/pats/select-pat-scopes-preview.png" alt-text="Screenshot shows scope selection options for a PAT.":::
 
    Your administrator might [restrict you from creating full-scoped PATs or limit you to packaging-scope PATs only](manage-pats-with-policies-for-administrators.md).
-   Reach out to your admin to get on the allow list if you need access to more scopes.
-   Some scopes, for example, `vso.governance`, might not be available in the user interface (UI) if they aren't for widespread public use.
+   Contact your admin to get on the allow list if you need access to more scopes.
+   Some scopes, such as `vso.governance`, might not be available in the user interface (UI) if they're not for widespread public use.
 
-1. When you're finished, copy the token and store it in a secure location. For your security, it doesn't display again.
+1. When you finish, copy the token and store it in a secure location. For your security, it doesn't display again.
 
    :::image type="content" source="media/pats/copy-token-to-clipboard.png" alt-text="Screenshot shows Copy token to clipboard button with the generated PAT value.":::
 
@@ -231,7 +231,7 @@ When a PAT expires or is revoked, any service or tool using that PAT immediately
 
 ### Service impact by scenario
 
-| Scenario | Behavior | Error Message | Timeline |
+| Scenario | Behavior | Error message | Timeline |
 |----------|----------|---------------|----------|
 | **Git operations (clone, push, pull)** | Authentication fails; operations blocked | `fatal: Authentication failed for '<url>'` or `401 Unauthorized` | Immediate |
 | **Azure Pipelines CI/CD** | Build or release job fails at authentication step | `Error: Personal access token (PAT) is invalid or expired` | Next pipeline run |
@@ -259,7 +259,7 @@ When a PAT expires or is revoked, any service or tool using that PAT immediately
 
 To avoid service disruptions, follow these practices:
 
-- **Regenerate early**: Create a new PAT **at least 7 days before expiration**, then test and update all integrations before the old one expires.
+- **Regenerate early**: Create a new PAT **at least seven days before expiration**, then test and update all integrations before the old one expires.
 - **Automate monitoring**: Use the [PAT Lifecycle Management APIs](#pat-lifecycle-management-apis) to programmatically check expiration dates.
 - **Stagger PAT lifespans**: Don't let all your PATs expire on the same day. Rotate them quarterly on different schedules.
 - **Document PAT usage**: Maintain a list of where each PAT is used (pipeline, script, integration) so you can update them during rotation.
@@ -276,7 +276,7 @@ If you experience authentication failures, here's how to recover:
    - Build agents
    - Scripts and integrations
    - Environment variables
-1. **Test connectivity**: Run a test operation (e.g., `git clone`, API call) to verify the new PAT works.
+1. **Test connectivity**: Run a test operation (for example, `git clone`, API call) to verify the new PAT works.
 1. **Revoke the old PAT**: Remove it from your account to reduce security risk.
 
 ### For on-premises scenarios
@@ -336,7 +336,7 @@ Follow these steps to rotate a PAT without disrupting services:
 1. Enter the **same name** as the old token (for easy tracking).
 1. Set expiration to **90 days** from today.
 1. Select the **exact same scopes** as the old token.
-1. Select **Create** and copy the new token immediately (it won't display again).
+1. Select **Create** and copy the new token immediately (it doesn't display again).
 
 #### Step 2: Test the new PAT
 Before retiring the old PAT, validate that the new one works:
@@ -671,66 +671,66 @@ Organization administrators can audit and manage all PATs across the entire orga
 
 ::: moniker range="azure-devops"
 
-1. Go to **Organization Settings** > **Security** > **Personal access tokens**
-1. By default, you see your own PATs
-1. Select **All PATs** from the dropdown to view tokens across all users
+1. Go to **Organization Settings** > **Security** > **Personal access tokens**.
+1. By default, the page displays your own PATs.
+1. Select **All PATs** from the dropdown to view tokens across all users.
 
 ::: moniker-end
 
 ::: moniker range="< azure-devops"
 
-1. Go to **Collection Settings** > **Security** > **Personal access tokens**
-1. Select **All PATs** to view all tokens in the collection
+1. Go to **Collection Settings** > **Security** > **Personal access tokens**.
+1. Select **All PATs** to view all tokens in the collection.
 
 ::: moniker-end
 
 #### Step 2: Filter and identify high-risk tokens
 
-Look for:
-- **Long-lived tokens** (expiration > 90 days): Candidates for rotation or revocation
-- **Full-scoped tokens** (scope = all): Highest security risk; enforce policies to restrict
-- **Global tokens** (access multiple organizations): Avoid these tokens; consider org-scoped alternatives
-- **Stale tokens** (no recent activity): Safe to revoke
-- **Tokens created outside business hours**: Potential security incident
+Review the following token characteristics:
+- **Long-lived tokens** (expiration > 90 days): Candidates for rotation or revocation.
+- **Full-scoped tokens** (scope = all): Highest security risk; enforce policies to restrict.
+- **Global tokens** (access multiple organizations): Avoid these tokens; consider org-scoped alternatives.
+- **Stale tokens** (no recent activity): Safe to revoke.
+- **Tokens created outside business hours**: Potential security incident.
 
 #### Step 3: Review the audit log for PAT events
 
-1. Go to **Organization Settings** > **Audit log**
+1. Go to **Organization Settings** > **Audit log**.
 1. Filter by event type:
-   - `PatCreated` — Find when tokens were issued
-   - `PatRevoked` — Track when tokens were disabled
-   - `PatRegenerated` — Monitor rotation activity
-1. Export audit logs for compliance reporting (90-day retention)
+   - `PatCreated` — Find when tokens were issued.
+   - `PatRevoked` — Track when tokens were disabled.
+   - `PatRegenerated` — Monitor rotation activity.
+1. Export audit logs for compliance reporting (90-day retention).
 
 #### Step 4: Revoke compromised or unused tokens
 
 If you find a compromised or unnecessary PAT:
 
-1. Go to **Organization Settings** > **Security** > **Personal access tokens**
-1. Select **All PATs**
-1. Select the PAT you want to revoke
-1. Select **Revoke** and confirm
-1. Notify the token owner to create a replacement PAT if needed
+1. Go to **Organization Settings** > **Security** > **Personal access tokens**.
+1. Select **All PATs**.
+1. Select the PAT you want to revoke.
+1. Select **Revoke** and confirm.
+1. Notify the token owner to create a replacement PAT if needed.
 
 #### Step 5: Enforce organizational policies
 
-1. Go to **Organization Settings** > **Policies**
+1. Go to **Organization Settings** > **Policies**.
 1. Configure:
-   - **Restrict full-scoped PAT creation** — Require scoped tokens
-   - **Restrict global PAT creation** — Require org-scoped tokens
-   - **Set maximum PAT lifetime** — Example: no token can exceed 90 days
-1. Document your policy in your security handbook or wiki
+   - **Restrict full-scoped PAT creation** — Require scoped tokens.
+   - **Restrict global PAT creation** — Require org-scoped tokens.
+   - **Set maximum PAT lifetime** — Example: no token can exceed 90 days.
+1. Document your policy in your security handbook or wiki.
 
 #### Example: Bulk revocation for offboarding
 
-When a user leaves, revoke all their PATs:
+When a user leaves your organization, revoke all their PATs:
 
-1. Go to **Organization Settings** > **Security** > **Personal access tokens** > **All PATs**
-2. Filter by the departing user's name or email
-3. Select all their PATs
-4. Select **Revoke** (bulk action) and confirm
+1. Go to **Organization Settings** > **Security** > **Personal access tokens** > **All PATs**.
+2. Filter by the departing user's name or email.
+3. Select all their PATs.
+4. Select **Revoke** (bulk action) and confirm.
 
-All of their PATs are immediately revoked, preventing any service from using those credentials.
+You immediately revoke all their PATs, so no service can use those credentials.
 
 ## FAQs
 
@@ -740,9 +740,9 @@ A. Sign in to the organization where your PAT is scoped. You can view your PATs 
 
 ### Q. What happens to a PAT if a user account is disabled?
 
-A. When a user is removed from Azure DevOps, the PAT is invalidated within one hour.
-If your organization is connected to Microsoft Entra ID, the PAT is also invalidated in Microsoft Entra ID because it belongs to the user.
-Rotate the PAT to another user or service account to keep services running.
+A. When a user’s account is disabled or the user is removed from the organization, their PATs can no longer be used to access organization resources because the user is no longer authorized. PATs aren't automatically deleted or revoked.
+
+If the user’s access is restored or they're added back to the organization, any existing PATs that aren't expired or revoked work again with the permissions available to the user. The user also continues to see these PATs on their personal access tokens page.
 
 ### Q. Can I use PATs with all Azure DevOps REST APIs?
 
@@ -755,7 +755,7 @@ When detected, Azure DevOps notifies the token owner and logs the event in your 
 Unless disabled, leaked PATs are automatically revoked.
 For more information, see [Revoke leaked PATs automatically](manage-pats-with-policies-for-administrators.md#revoke-leaked-pats-automatically-tenant-policy).
 
-### Q. Can I use a personal access token as an API key to publish NuGet packages to an Azure Artifacts feed by using the dotnet/nuget.exe command line?
+### Q. Can I use a personal access token as an API key to publish NuGet packages to an Azure Artifacts feed by using the dotnet or nuget.exe command line?
 
 A. No. Azure Artifacts doesn't support passing a PAT as an API key.
 When you use a local development environment, install the [Azure Artifacts Credential Provider](https://github.com/microsoft/artifacts-credprovider) to authenticate with Azure Artifacts.
