@@ -3,12 +3,13 @@ title: Run Manual Tests with Azure Test Plans
 description: Run manual tests in Azure Test Plans to validate web and desktop apps, capture diagnostics, and manage bugs. Start testing your software today.
 ms.service: azure-devops-test-plans
 ms.custom: UpdateFrequency3
+ai-usage: ai-assisted
 ms.topic: how-to
 ms.author: pliaros
 ms.reviewer: chcomley
 author: rohit-batra
 monikerRange: '<= azure-devops'
-ms.date: 04/28/2026
+ms.date: 08/14/2026
 ms.update-cycle: 1095-days
 ---
 
@@ -130,6 +131,16 @@ Instead of creating a new bug, update an existing bug with the failure details. 
 > [!TIP]
 > You can also run tests offline and then import the results. For more information, see the [Offline Test Execution extension](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.OfflineTestExecution).
 
+::: moniker range="azure-devops"
+
+## Resume a paused test
+
+When you return to a paused manual test, **Resume** is the default action. Select **Resume** to continue from the step where you paused the test.
+
+If you select another action for a paused test, Azure Test Plans displays a warning that continuing with the action might discard your saved progress. Review the warning before you proceed.
+
+::: moniker-end
+
 <a name="run-desktop"></a>
 
 ## Run tests for desktop apps
@@ -183,6 +194,8 @@ You can fix test steps while the test is still running. Select the **Edit test s
 ## Capture diagnostic data
 
 While running tests, you can capture screenshots, action logs, and screen recordings. For detailed steps, see [Collect diagnostic data](collect-diagnostic-data.md).
+
+::: moniker range="< azure-devops"
 
 ## Run tests with TCM
 

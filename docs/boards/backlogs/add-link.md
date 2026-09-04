@@ -444,7 +444,7 @@ Azure DevOps provides several ways to view dependencies and track related work:
 
 - **Query Editor**: You can use the Query Editor to create custom queries that show all work items linked to a specific work item.
 - **Backlogs and Boards**: The Backlogs and Boards views show parent-child relationships between work items, allowing you to see dependencies at a glance.
-- **Dependency Tracker**: The Dependency Tracker is a Power BI report that provides a visual representation of dependencies between work items.
+- **Delivery Plans**: Use [Delivery Plans](../plans/track-dependencies.md) to view dependencies between work items scheduled for different teams.
 
 To view the list of all objects linked to a work item, do the following steps:
 

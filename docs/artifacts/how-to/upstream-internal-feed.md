@@ -42,7 +42,7 @@ Use the following steps to configure your project and authenticate with your fee
 
 1. Select **Artifacts**, choose your feed from the dropdown menu, and then select **Connect to feed**.
 
-    :::image type="content" source="../media/select-feed-dropdown.png" alt-text="A screenshot displaying how to select a feed from the dropdown list in Azure Artifacts.":::
+    :::image type="content" source="../media/select-feed-dropdown.png" alt-text="Screenshot showing how to select a feed from the dropdown list in Azure Artifacts.":::
 
 1. From the left navigation pane, select **Cargo**.
 
@@ -57,7 +57,7 @@ Use the following steps to configure your project and authenticate with your fee
 
 1. [Log in to the registry](../cargo/project-setup-cargo.md#log-in-to-the-registry)
 
-#### Project setup for other package types
+### Project setup for other package types
 
 If you’re using a different technology, use the links below to follow the appropriate project setup guidance to connect to your feed:
 
@@ -98,11 +98,11 @@ Follow these steps to set up an internal feed from the same organization as an u
 
 1. Select **Add** when you're done.
 
-    :::image type="content" source="../media/new-internal-feed-upstream-source.png" alt-text="A screenshot showing how to add a new internal feed as an upstream source in Azure Artifacts.":::
+    :::image type="content" source="../media/new-internal-feed-upstream-source.png" alt-text="Screenshot showing how to add a new internal feed as an upstream source in Azure Artifacts.":::
 
 1. Select **Save** to apply your changes.
 
-    :::image type="content" source="../media/save-upstream-sources.png" alt-text="A screenshot showing how to save upstream sources in Azure Artifacts.":::
+    :::image type="content" source="../media/save-upstream-sources.png" alt-text="Screenshot showing how to save upstream sources in Azure Artifacts.":::
 
 ## Install packages from upstream
 
@@ -136,7 +136,7 @@ When a collaborator (or higher) installs a package from *Test_Feed* that is avai
 
 1. Verify that the package you installed locally now appears in your downstream feed. Azure Artifacts automatically saves a copy of the package when it’s installed from an upstream source.
 
-    :::image type="content" source="../media/package-saved-from-internal-upstream.png" alt-text="A screenshot showing a package saved from an internal upstream in Azure Artifacts." lightbox="../media/package-saved-from-internal-upstream.png":::
+    :::image type="content" source="../media/package-saved-from-internal-upstream.png" alt-text="Screenshot showing a package saved from an internal upstream in Azure Artifacts." lightbox="../media/package-saved-from-internal-upstream.png":::
 
 ## Related content
 

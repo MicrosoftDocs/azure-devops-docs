@@ -34,7 +34,7 @@ If you don't have a feed yet, follow these steps to create a new feed and enable
     
 1. Select **Create** when you're done.
 
-    :::image type="content" source="../media/new-feed-with-enabled-upstreams.png" alt-text="A screenshot showing how to create a new feed with upstream sources enabled in Azure Artifacts.":::
+    :::image type="content" source="../media/new-feed-with-enabled-upstreams.png" alt-text="Screenshot showing how to create a new feed with upstream sources enabled in Azure Artifacts.":::
 
 ## Enable upstream sources for an existing feed
 
@@ -69,7 +69,7 @@ Follow these steps to add a feed from the same organization as an upstream sourc
 
 1. Select **Add** when you're done.
 
-    :::image type="content" source="../media/add-upstream-same-org.png" alt-text="A screenshot displaying how to add a feed from your organization as an upstream source.":::
+    :::image type="content" source="../media/add-upstream-same-org.png" alt-text="Screenshot showing how to add a feed from your organization as an upstream source.":::
 
 ## Add a feed from a different organization as an upstream source
 
@@ -101,7 +101,7 @@ Follow these steps to add a feed from a different organization as an upstream so
 
 1. Select **Add** when you're done.
 
-    :::image type="content" source="../media/add-upstream-diff-org.png" alt-text="A screenshot displaying how to add a feed from a different organization as an upstream source.":::
+    :::image type="content" source="../media/add-upstream-diff-org.png" alt-text="Screenshot showing how to add a feed from a different organization as an upstream source.":::
 
 > [!IMPORTANT]
 > To add a feed from a different organization as an upstream source, the target feed owner must share the target view with **All feeds and people in organizations associated with my Microsoft Entra tenant** by navigating to **Feed Settings** > **Views** > Select the ellipsis button for the specified view > **Edit**.
@@ -118,29 +118,29 @@ Follow these steps to add a feed from a different organization as an upstream so
 
 ## FAQs
 
-##### Q: Why can’t I find my package even though I can see it in one of my feed's upstreams?
+### Q: Why can’t I find my package even though I can see it in one of my feed's upstreams?
 
 A: Packages from upstream sources become available in the feed soon after they're published, but they aren’t visible to readers until they’re saved to the feed.
 
 A package is saved when a user with [Feed and Upstream Reader (Collaborator)](../feeds/feed-permissions.md#feed-roles-and-permissions) or higher permissions installs it. Azure Artifacts then automatically saves a copy of the package to the feed, making it permanently available to all readers and visible in the web UI.
 
-##### Q: Why can’t I find the feed I want to configure as an upstream source?
+### Q: Why can’t I find the feed I want to configure as an upstream source?
 
 A: If the feed is in a different organization, make sure that the target feed owner has shared a view with *All feeds and people in organizations associated with my Microsoft Entra tenant*. See [Add a feed in a different organization as an upstream source](../how-to/set-up-upstream-sources.md#add-a-feed-from-a-different-organization-as-an-upstream-source) for more details.
 
-##### Q: What are feed views?
+### Q: What are feed views?
 
 A: Feed views let you share a subset of package versions that have been tested and validated, excluding those still in development or not meeting quality criteria. See [What are feed views](../concepts/views.md) for more details.
 
-##### Q: Can a user with the **Feed Reader** role download packages from an upstream source?
+### Q: Can a user with the **Feed Reader** role download packages from an upstream source?
 
 A: No. **Feed Reader** can only download packages that are already saved to the feed. Packages are saved when a **Feed and Upstream Reader (Collaborator)**, **Feed Publisher (Contributor)**, or **Feed Owner** installs them from an upstream source.
 
-##### Q: What happens if a package saved from an upstream source is deleted or unpublished?
+### Q: What happens if a package saved from an upstream source is deleted or unpublished?
 
 A: The package becomes unavailable for download, and the version number is permanently reserved. That version will no longer sync from upstream, but earlier and later versions remain unaffected.
 
-##### Q: What happens if a package saved from an upstream source is deprecated?
+### Q: What happens if a package saved from an upstream source is deprecated?
 
 A: A warning message is added to the package metadata. This warning appears whenever the package is viewed or installed from the feed.
 

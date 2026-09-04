@@ -32,7 +32,7 @@ Enabling upstream sources offers several advantages for managing your product’
 
 To take full advantage of the benefits of upstream sources as a package consumer, follow these best practices:
 
-#### Use a single feed in your configuration file
+### Use a single feed in your configuration file
 
 In order for your feed to provide a [deterministic restore](#search-order), make sure that your configuration file (such as *nuget.config* or *npmrc*) references **only one feed** with upstream sources enabled. 
 
@@ -40,7 +40,6 @@ In order for your feed to provide a [deterministic restore](#search-order), make
 
     ```.npmrc
     registry=https://pkgs.dev.azure.com/fabrikam/_packaging/FabrikamFiber/npm/registry/
-    always-auth=true
     ```
 
     ```nuget.config
@@ -53,7 +52,7 @@ In order for your feed to provide a [deterministic restore](#search-order), make
     > [!NOTE]
     > NuGet compiles several [configuration files](/nuget/consume-packages/configuring-nuget-behavior) to determine the complete set of options to apply. Using `<clear />` ensures that all other package sources specified in higher-level configuration files are ignored.
 
-#### Order your upstream sources intentionally
+### Order your upstream sources intentionally
 
 If you're using only public registries like *NuGet.org* or *npmjs.com*, the order of upstream sources doesn’t affect behavior. Requests to the feed follow the sequence outlined in the [search order](#search-order) section.
 
@@ -66,7 +65,7 @@ If your organization follows this practice, place the upstream source containing
 
 To ensure your feed can be easily configured as an upstream source, follow these best practices:
 
-#### Use the default view
+### Use the default view
 
 All newly created feeds use the `@Local` view by default. This view includes:
 
@@ -75,7 +74,7 @@ All newly created feeds use the `@Local` view by default. This view includes:
 
 If you want to use other views such as a view for newly released package versions, you can promote your packages to the `@Release` view and then make that view available to your target consumers. See [Feed views](views.md) for more details.
 
-#### Construct a package graph
+### Construct a package graph
 
 To construct a package graph, simply connect to the feed's default view and install the package you want to share. Once a package is saved to the default view, users who want to consume it will be able to resolve the package graph and install the desired version. Packages from upstream sources are displayed based on the configured view for the corresponding upstream source. See [How upstreams construct the set of available packages](package-graph.md#how-upstreams-construct-the-set-of-available-packages) for more details.
 
@@ -136,11 +135,11 @@ If a feed has a failing upstream source, metadata for packages using the same pr
 
 1. Select the gear icon ![gear icon](../../media/icons/gear-icon.png) to open **Feed settings**, then select **Upstream sources**.
 
-    :::image type="content" source="media/last-sync-upstreams.png" alt-text="A screenshot showing the upstream sources last sync up status.":::
+    :::image type="content" source="media/last-sync-upstreams.png" alt-text="Screenshot showing the upstream sources last upstream sync status.":::
 
 1. If any failures occur, a warning message will be displayed. Select the *Failed* status to view detailed information, including the cause of the failure and steps to resolve it.
 
-    :::image type="content" source="media/last-sync-upstreams-details.png" alt-text="A screenshot displaying details of the sync up failure.":::
+    :::image type="content" source="media/last-sync-upstreams-details.png" alt-text="Screenshot showing details of the upstream sync failure.":::
 
 > [!NOTE]
 > For public registries like *NuGet.org*, there is typically a 3-6 hour delay between when a package is pushed to the public registry and when it becomes available for download. This delay depends on job timing and data propagation. However, when the upstream source is an Azure Artifacts feed, the latency is usually no more than a few minutes.

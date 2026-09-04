@@ -68,8 +68,6 @@ Also update your *package.json* file to include both the scope name and the pack
 
     ```.npmrc file
     @ScopeName:registry=https://pkgs.dev.azure.com/<ORGANIZATION_NAME>/_packaging/<FEED_NAME>/npm/registry/
-        
-    always-auth=true
     ```
     
     ```package.json
@@ -82,8 +80,6 @@ Also update your *package.json* file to include both the scope name and the pack
 
     ```.npmrc file
     @ScopeName:registry=https://pkgs.dev.azure.com/<ORGANIZATION_NAME>/<PROJECT_NAME>/_packaging/<FEED_NAME>/npm/registry/
-        
-    always-auth=true
     ```
 
     ```package.json
@@ -98,8 +94,6 @@ Also update your *package.json* file to include both the scope name and the pack
 
     ```.npmrc file
     @local:registry=https://pkgs.dev.azure.com/FabrikamOrg/NpmDemo/_packaging/FabrikamFeed/npm/registry/
-        
-    always-auth=true
     ```
 
 - The *package.json* file:

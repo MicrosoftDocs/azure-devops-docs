@@ -5,7 +5,7 @@ description: Learn how to enable, configure, and use GitHub Copilot to review pu
 ms.service: azure-devops-repos
 ms.topic: how-to
 ai-usage: ai-assisted
-ms.date: 08/11/2026
+ms.date: 08/26/2026
 ms.author: chcomley
 author: chcomley
 ---
@@ -18,7 +18,7 @@ author: chcomley
 
 Use GitHub Copilot to review pull requests in Azure Repos. Copilot acts as an automated reviewer that posts comments and suggestions on changed code, so you get feedback before a human reviewer signs off.
 
-To use the feature, a Project Collection Administrator turns it on for the organization, a Project Administrator manages project-level defaults, repository owners override settings for individual repositories, and individual users opt in through Preview features (unless the administrator enables the preview for everyone).
+To use the feature, a Project Collection Administrator turns it on for the organization, a Project Administrator manages project-level defaults and repository overrides, repository administrators configure individual repositories when overrides are allowed, and individual users opt in through Preview features (unless the administrator enables the preview for everyone).
 
 ## Prerequisites
 
@@ -28,7 +28,7 @@ To use the feature, a Project Collection Administrator turns it on for the organ
 | **Repository** | A Git repository in Azure Repos. TFVC isn't supported. |
 | **Organization permissions** | **Project Collection Administrator** to enable the feature at the organization level. |
 | **Project permissions** | **Project Administrator** to enable the feature at the project level. |
-| **Repository permissions** | Repository owner or administrator to enable the feature for a repository. |
+| **Repository permissions** | Repository owner or administrator to enable the feature and configure the default review effort for a repository when project settings allow overrides. |
 | **Billing** | An Azure subscription linked to your Azure DevOps organization. Copilot code review usage is billed through Azure Cost Management. For details, see [Billing](#billing). |
 
 ## Enable Copilot code review
@@ -43,7 +43,7 @@ If you select the organization-level **Enable all** option, Copilot code review 
 1. Select **Organization settings** > **Repos** > **Repositories**.
 1. Under **GitHub Copilot code review**, toggle **Allow repositories in this organization to use Copilot code review** to **On**.
 
-   :::image type="content" source="media/copilot-code-reviews/organization-level-preview-feature.png" alt-text="Screenshot of organization settings showing Copilot code review configuration." lightbox="media/copilot-code-reviews/organization-level-preview-feature.png":::
+   :::image type="content" source="media/copilot-code-reviews/organization-level-preview-feature.png" alt-text="Screenshot of organization settings with the Copilot code review enable toggle." lightbox="media/copilot-code-reviews/organization-level-preview-feature.png":::
 
 ### At the project level
 
@@ -53,6 +53,8 @@ If you select the project-level **Enable all** option, Copilot code review is en
 
 1. Select **Project settings** > **Repos** > **Repositories**.
 1. Under **GitHub Copilot code review**, toggle **Enable Copilot code review for this project** to **On**.
+
+   :::image type="content" source="media/copilot-code-reviews/project-custom-instructions.png" alt-text="Screenshot of project settings with the Copilot code review enable toggle." lightbox="media/copilot-code-reviews/project-custom-instructions.png":::
 
    This setting applies to all repositories in the project unless overridden at the repository level. You can still enable or disable the feature for individual repositories as needed.
 
@@ -71,6 +73,32 @@ To verify the feature is enabled, open any pull request in the repository. **Git
 ## Configure Copilot code review
 
 After you enable the feature at all three scopes, you can configure how Copilot reviews pull requests in your repositories.
+
+### Configure the default review effort
+
+The review effort controls how thoroughly Copilot analyzes a pull request. A project administrator sets the default effort for all repositories in a project and decides whether repository administrators can override it. Users can select a different effort level for an individual review without changing the project or repository default.
+
+Higher effort levels generally consume more tokens and can increase the cost of a review. For more information, see [Billing](#billing).
+
+#### Set the project default
+
+1. Select **Project settings** > **Repos** > **Repositories**.
+1. Under **GitHub Copilot code review**, select an option from **Default effort level**.
+1. To let repository administrators set a different default, select **Allow individual repositories to set their own default effort level**. Clear this option to require all repositories to use the project default.
+   
+   :::image type="content" source="media/copilot-code-reviews/repository-review-effort-settings.png" alt-text="Screenshot of project settings with balanced selected as the default effort and repository overrides cleared." lightbox="media/copilot-code-reviews/repository-review-effort-settings.png":::
+ 
+#### Set a repository default
+
+If the project allows repository overrides, a repository administrator can set a different default:
+
+1. Select **Project settings** > **Repos** > **Repositories**.
+1. Select the repository, and then select the **Settings** tab.
+1. Under **GitHub Copilot code review**, select an option from **Default effort level**.
+
+If the project doesn't allow repository overrides, **Default effort level** is read-only and displays the inherited project setting.
+
+:::image type="content" source="media/copilot-code-reviews/repository-level-preview-feature.png" alt-text="Screenshot of repository settings with the inherited Medium default effort unavailable for editing." lightbox="media/copilot-code-reviews/repository-level-preview-feature.png":::
 
 ### Set up automatic review policies
 
@@ -112,6 +140,12 @@ Some organizations disable the default Azure Pipelines pool. In that configurati
 
 If your organization has configured a [Managed DevOps Pool](../../managed-devops-pools/overview.md), you can select it to run Copilot code review instead of the default pool.
 
+When selecting an image for Managed DevOps Pool, ensure you select the latest `Ubuntu Server`.
+
+:::image type="content" source="media/copilot-code-reviews/select-managed-pool.png" alt-text="Screenshot of the Managed DevOps Pool image selection with the latest Ubuntu Server image selected." lightbox="media/copilot-code-reviews/select-managed-pool.png":::
+
+Windows images aren't supported for Copilot Code Reviews. Don't mix your pool with both Ubuntu and Windows agents.
+
 > [!NOTE]
 > Self-hosted agent pools aren't supported for Copilot code review.
 
@@ -137,10 +171,20 @@ With the feature enabled at all three scopes, you can ask Copilot to review a pu
 By default, **GitHub Copilot** reviews a pull request only when you ask for one:
 
 1. Open a pull request.
-1. In the **Reviewers** section, select **Request** next to **GitHub Copilot**.
+1. In the **Reviewers** section, use one of the following options next to **GitHub Copilot**:
+   - To use the repository's default effort level, select **Request**.
+   - To use a different effort level for this review, open the dropdown menu next to **Request** and select an effort level.
 1. Wait for the review to complete. The review might take a few moments, depending on the size of the repository and the number of changes in the pull request. When the review finishes, the status changes to **Review completed**.
 
+   :::image type="content" source="media/copilot-code-reviews/select-review-effort.png" alt-text="Screenshot of a pull request with the Copilot review effort menu showing Low, Medium, and High options." lightbox="media/copilot-code-reviews/select-review-effort.png":::
+   
 If Copilot identifies potential issues, it adds comments and suggestions directly to the pull request for you to examine and address.
+
+The selected effort level applies only to that review. Azure DevOps records the requester and effort level in the pull request activity.
+
+<!--
+:::image type="content" source="media/copilot-code-reviews/review-effort-request.png" alt-text="Screenshot of pull request activity showing a user requested a balanced review from Copilot." lightbox="media/copilot-code-reviews/review-effort-request.png":::
+-->
 
 ### Read Copilot's comments
 
@@ -175,6 +219,7 @@ Copilot reviews a pull request only when it meets these requirements:
 | Pull request merge status | No merge conflicts (**Merge Succeeded**) |
 | Repository size | 10 GB or less |
 | Pull request changed files | 100 files or fewer |
+| Number of changes in the pull request | 100 changes or fewer |
 
 These concurrency and rate limits also apply:
 
@@ -187,13 +232,13 @@ These concurrency and rate limits also apply:
 
 ## Billing
 
-Each completed code review consumes tokens, including input tokens sent to the model, output tokens generated by the model, and cached tokens that reuse existing context. Tokens used for each review are converted into a standard billing unit called a *GitHub AI credit*, where 1 credit equals $0.01 USD.
+Each completed code review consumes tokens, including input tokens you send to the model, output tokens the model generates, and cached tokens that reuse existing context. Tokens used for each review convert into a standard billing unit called a *GitHub AI credit*, where 1 credit equals $0.01 USD.
 
-
+The selected review effort affects consumption. Higher effort levels generally analyze more context and consume more tokens than lower effort levels. Pull request size, repository custom instructions, and model changes can also affect consumption. For current reference ranges and caveats, see [Estimated consumption](https://docs.github.com/en/copilot/concepts/agents/code-review#estimated-consumption).
 
 For answers to frequently asked questions about Copilot code review billing and costs, see [Troubleshoot Copilot code review](copilot-code-reviews-faq.md#billing-and-credits).
 
-Charges go to the Azure subscription linked to your Azure DevOps organization and appear as a separate meter in Azure Cost Management. The cost of each review varies based on factors like pull request size and the number of lines changed. To estimate expected costs in your environment, enable the feature for one or two repositories first and monitor daily usage.
+Charges go to the Azure subscription linked to your Azure DevOps organization and appear as a separate meter in Azure Cost Management. To estimate expected costs in your environment, enable the feature for one or two repositories, compare review effort levels, and monitor daily usage.
 
 > [!IMPORTANT]
 > Charges take 48 hours after a code review is completed to appear in the Azure portal.
@@ -203,8 +248,8 @@ Copilot code review charges in Azure Cost Management now include **Azure DevOps 
 To monitor your daily charges:
 
 1. In the [Azure portal](https://portal.azure.com), go to your subscription.
-1. Select **Cost Management** > **Cost analysis**.
-1. Filter by product to view the organization's daily costs. To view costs for a specific project, add a filter or group by the Azure DevOps project tag.
+2. Select **Cost Management** > **Cost analysis**.
+3. Filter by product to view the organization's daily costs. To view costs for a specific project, add a filter or group by the Azure DevOps project tag.
 
    :::image type="content" source="media/copilot-code-reviews/billing-cost-analysis.png" alt-text="Screenshot of Cost Management showing Copilot review charges by product." lightbox="media/copilot-code-reviews/billing-cost-analysis.png":::
 

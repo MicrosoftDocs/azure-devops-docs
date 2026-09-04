@@ -36,6 +36,8 @@
     href: ignore-files.md
   - name: Manage large files
     href: manage-large-files.md
+  - name: Optimize performance
+    href: optimize-repository-performance.md
   - name: Understand dates in Git
     href: git-dates.md
   - name: Understand names in Git

@@ -32,13 +32,13 @@ Before you can start using package badges, you must first enable them in your fe
 
 1. Select **Artifacts**, select your feed from the dropdown menu, and then select the gear icon ![gear icon](../media/icons/gear-icon.png) to access **Feed settings**.
 
-   :::image type="content" source="media/feed-settings.png" alt-text="A screenshot displaying how to navigate to feed settings.":::
+   :::image type="content" source="media/feed-settings.png" alt-text="Screenshot showing how to navigate to feed settings.":::
 
 1. Under **Feed Details**, find the **Package sharing** section and check the **Enable package badges** checkbox.
 
 1. Select **Save** when you're done.
 
-   :::image type="content" source="media\enable-package-badges.png" alt-text="A screenshot displaying how to enable package badges in Azure Artifacts.":::
+   :::image type="content" source="media\enable-package-badges.png" alt-text="Screenshot showing how to enable package badges in Azure Artifacts.":::
 
 ## Create a package badge
 
@@ -50,11 +50,11 @@ With package sharing enabled, you can now create a badge for any package in your
 
 1. Under **Overview**, select the ellipsis button, and then select **Create badge**.
 
-    :::image type="content" source="media/create-badge-new-ui.png" alt-text="A screenshot showing how to create a new package badge.":::
+    :::image type="content" source="media/create-badge-new-ui.png" alt-text="Screenshot showing how to create a new package badge.":::
 
 1. Select a **Feed view** for your package badge. If you're using release views, select the view that contains the packages you want to share.
 
-    :::image type="content" source="media/package-badge-setup.png" alt-text="A screenshot showing the create a package badge panel.":::
+    :::image type="content" source="media/package-badge-setup.png" alt-text="Screenshot showing the Create badge pane with feed view options for the selected package.":::
 
 1. You can now share your package by copying the Markdown snippet or the direct image link, and pasting it into your project home page or any markdowm file.
 

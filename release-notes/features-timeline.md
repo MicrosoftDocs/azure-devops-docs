@@ -47,36 +47,35 @@ This feature is currently in limited public preview.
             <td><img src="roadmap/2023/media/checkmark.png" alt="Done" /> 2026 Q2</td>            
          </tr>         
          <tr>
-            <td><a href="/azure/devops/release-notes/roadmap/2026/repos/copilot-code-reviews-azure-repos" data-raw-source="[Copilot Code Reviews for Azure Repos (public preview)](/azure/devops/release-notes/roadmap/2026/repos/copilot-code-reviews-azure-repos)">Copilot Code Reviews for Azure Repos (public preview)</a></td>
-            <td>2026 Q3</td>
+            <td><a href="https://devblogs.microsoft.com/devops/copilot-code-reviews-for-azure-repos-public-preview/" data-raw-source="[Copilot Code Reviews for Azure Repos (public preview)](https://devblogs.microsoft.com/devops/copilot-code-reviews-for-azure-repos-public-preview/)">Copilot Code Reviews for Azure Repos (public preview)</a></td>
+            <td><img src="roadmap/2023/media/checkmark.png" alt="Done" /> 2026 Q3</td>
          </tr>
          <tr>
-            <td><a href="/azure/devops/release-notes/roadmap/2026/repos/copilot-code-reviews-azure-repos" data-raw-source="[Improvements to onboarding and enablement of Copilot code reviews at the organization, project, and repository levels](/azure/devops/release-notes/roadmap/2026/repos/copilot-code-reviews-azure-repos)">Improvements to onboarding and enablement of Copilot code reviews at the organization, project, and repository levels</a></td>
-            <td>2026 Q3</td>
+            <td><a href="https://devblogs.microsoft.com/devops/copilot-code-reviews-for-azure-repos-public-preview/" data-raw-source="[Improvements to onboarding and enablement](https://devblogs.microsoft.com/devops/copilot-code-reviews-for-azure-repos-public-preview/)">Improvements to onboarding and enablement</a></td>
+            <td><img src="roadmap/2023/media/checkmark.png" alt="Done" /> 2026 Q3</td>
          </tr>
          <tr>
-            <td><a href="/azure/devops/release-notes/roadmap/2026/repos/copilot-code-reviews-azure-repos" data-raw-source="[Support for Copilot Instructions](/azure/devops/release-notes/roadmap/2026/repos/copilot-code-reviews-azure-repos)">Support for Copilot Instructions</a></td>
-            <td>2026 Q3</td>
+            <td><a href="https://devblogs.microsoft.com/devops/copilot-code-reviews-for-azure-repos-public-preview/" data-raw-source="[Support for Copilot Instructions](https://devblogs.microsoft.com/devops/copilot-code-reviews-for-azure-repos-public-preview/)">Support for Copilot Instructions</a></td>
+            <td><img src="roadmap/2023/media/checkmark.png" alt="Done" /> 2026 Q3</td>
          </tr>
          <tr>
-            <td><a href="/azure/devops/release-notes/roadmap/2026/repos/copilot-code-reviews-azure-repos" data-raw-source="[Automatic code reviews for new pull requests](/azure/devops/release-notes/roadmap/2026/repos/copilot-code-reviews-azure-repos)">Automatic code reviews for new pull requests</a></td>
-            <td>2026 Q3</td>
+            <td><a href="https://devblogs.microsoft.com/devops/copilot-code-reviews-for-azure-repos-public-preview/" data-raw-source="[Automatic code reviews for new pull requestshttps://devblogs.microsoft.com/devops/copilot-code-reviews-for-azure-repos-public-preview/)">Automatic code reviews for new pull requests</a></td>
+            <td><img src="roadmap/2023/media/checkmark.png" alt="Done" /> 2026 Q3</td>
          </tr>         
          <tr>
-            <td><a href="/azure/devops/release-notes/roadmap/2026/repos/copilot-code-reviews-azure-repos" data-raw-source="[Cancel Copilot Code Review run](/azure/devops/release-notes/roadmap/2026/repos/copilot-code-reviews-azure-repos)">Cancel Copilot Code Review run</a></td>
-            <td>2026 Q3</td>
+            <td><a href="https://devblogs.microsoft.com/devops/copilot-code-reviews-for-azure-repos-public-preview/" data-raw-source="[Cancel Copilot Code Review run](https://devblogs.microsoft.com/devops/copilot-code-reviews-for-azure-repos-public-preview/)">Cancel Copilot Code Review run</a></td>
+            <td><img src="roadmap/2023/media/checkmark.png" alt="Done" /> 2026 Q3</td>
          </tr>
          <tr>
-            <td><a href="/azure/devops/release-notes/roadmap/2026/repos/copilot-code-reviews-azure-repos" data-raw-source="[Support for Managed DevOps Pools](/azure/devops/release-notes/roadmap/2026/repos/copilot-code-reviews-azure-repos)">Support for Managed DevOps Pools</a></td>
-            <td>2026 Q3</td>
+            <td><a href="https://devblogs.microsoft.com/devops/copilot-code-reviews-for-azure-repos-public-preview/" data-raw-source="[Support for Managed DevOps Pools](https://devblogs.microsoft.com/devops/copilot-code-reviews-for-azure-repos-public-preview/)">Support for Managed DevOps Pools</a></td>
+            <td><img src="roadmap/2023/media/checkmark.png" alt="Done" /> 2026 Q3</td>
          </tr>
           <tr>
-            <td><a href="/azure/devops/release-notes/roadmap/2026/repos/copilot-code-reviews-azure-repos" data-raw-source="[Support for Managed DevOps Pools](/azure/devops/release-notes/roadmap/2026/repos/copilot-code-reviews-azure-repos)">Select level of effort</a></td>
-            <td>2026 Q3</td>
+            <td><a href="https://devblogs.microsoft.com/devops/copilot-code-reviews-for-azure-repos-public-preview/" data-raw-source="[Select level of effort](https://devblogs.microsoft.com/devops/copilot-code-reviews-for-azure-repos-public-preview/)">Select level of effort</a></td>
+            <td><img src="roadmap/2023/media/checkmark.png" alt="Done" /> 2026 Q3</td>
          </tr>
     </tbody>
 </table>
-
 
 
 ### GitHub Advanced Security for Azure DevOps

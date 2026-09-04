@@ -7,7 +7,7 @@ ms.topic: overview
 monikerRange: '<= azure-devops'
 ms.author: chcomley
 author: chcomley
-ms.date: 08/10/2026
+ms.date: 08/20/2026
 ai-usage: ai-assisted
 ---
 
@@ -36,6 +36,8 @@ Settings and document collections can be scoped to either the:
 
 - **Project Collection**: shared by all users of the project collection to which the extension is installed
 - **User**: a single user of a project collection to which the extension is installed
+
+An extension access token can access only data associated with its publisher ID and extension ID. Requests for another extension's data return HTTP 401, even when both extensions have the same publisher. Extensions that need to share data must use a single extension identity or an external service with explicit authorization.
 
 ## Settings storage
 

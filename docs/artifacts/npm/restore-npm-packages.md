@@ -30,7 +30,7 @@ If this is your first time using Azure Artifacts with npm on your machine, follo
 1. Run the following command to install `vsts-npm-auth`.
 
     ```
-    npm install -g vsts-npm-auth --registry https://registry.npmjs.com --always-auth false
+    npm install -g vsts-npm-auth --registry https://registry.npmjs.com
     ```
 
 ### [Other](#tab/other/)

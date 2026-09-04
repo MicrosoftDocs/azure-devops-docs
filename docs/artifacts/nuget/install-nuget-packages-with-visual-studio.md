@@ -43,7 +43,7 @@ Now that you have your feed's source URL, follow these steps to set up Visual St
 
 1. Select **OK** when you're done.
 
-    :::image type="content" source="../media/vs-addsource.png" alt-text="A screenshot displaying how to add a new package source in Visual Studio for Windows.":::
+    :::image type="content" source="../media/vs-addsource.png" alt-text="Screenshot showing how to add a new package source in Visual Studio for Windows.":::
 
 #### [Mac](#tab/macOS/)
 
@@ -59,7 +59,7 @@ Now that you have your feed's source URL, follow these steps to set up Visual St
 
 1. Select **Add Source** when you're done.
 
-    :::image type="content" source="media/add-new-source-mac.png" alt-text="A screenshot displaying how to add a new package source in Visual Studio for Mac.":::
+    :::image type="content" source="media/add-new-source-mac.png" alt-text="Screenshot showing how to add a new package source in Visual Studio for Mac.":::
 
 ---
 
@@ -75,7 +75,7 @@ Now that you've set up Visual Studio and added your feed as a package source, yo
     
 1. Use the search bar to find and install packages from your feed.
     
-    :::image type="content" source="../media/select-pkg-src.png" alt-text="A screenshot displaying the list of package sources in Visual Studio.":::
+    :::image type="content" source="../media/select-pkg-src.png" alt-text="Screenshot showing the list of package sources in Visual Studio.":::
 
 #### [Mac](#tab/macOS/)
 
@@ -85,7 +85,7 @@ Now that you've set up Visual Studio and added your feed as a package source, yo
 
 1. Use the search bar to find and install packages from your feed.
 
-    :::image type="content" source="media/search-package-sources-mac.png" alt-text="A screenshot displaying how to search for packages in Visual Studio for Mac.":::
+    :::image type="content" source="media/search-package-sources-mac.png" alt-text="Screenshot showing how to search for packages in Visual Studio for Mac.":::
 
 ---
 

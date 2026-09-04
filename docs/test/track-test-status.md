@@ -1,14 +1,15 @@
 ---
-title: View progress report 
+title: Track test status in Azure Test Plans
 titleSuffix: Azure Test Plans
-description: Learn how to view the status of your planned testing using an out-of-the-box Progress Report and lightweight charts.
+description: Learn how to track planned testing with charts, test-point history, recent results, and requirement traceability in Azure Test Plans.
 ms.service: azure-devops-test-plans
 ms.custom: UpdateFrequency3
+ai-usage: ai-assisted
 ms.topic: how-to
 ms.author: pliaros
 author: rohit-batra
 monikerRange: '<= azure-devops'
-ms.date: 12/08/2021
+ms.date: 08/14/2026
 ms.update-cycle: 1095-days
 ---
 
@@ -113,8 +114,18 @@ You can track why tests are failing for your team.
 For failure analysis, use either a stacked bar chart or a pivot table chart.
 Select **Tester** and **Failure type**.
 
+::: moniker range="azure-devops"
+
+To set the failure type, open the test result in the Test Run Hub and update **Analysis**. For more information, see [Manage test failure types](manage-test-failure-type.md).
+
+::: moniker-end
+
+::: moniker range="< azure-devops"
+
 > [!NOTE]
-> Failure type for test results can only be set using Microsoft Test Manager.
+> In Azure DevOps Server, set the failure type by using Microsoft Test Manager.
+
+::: moniker-end
 
 ### Track resolutions for failing tests
 
@@ -123,8 +134,18 @@ You can track the resolution for failing tests for your team.
 For resolution analysis, use either a stacked bar chart or a pivot table chart.
 Choose **Tester** and **Resolution**.
 
+::: moniker range="azure-devops"
+
+To set the resolution, open the test result in the Test Run Hub and update **Analysis**. For more information, see [Analyze detailed test results](test-runs.md#analyze-detailed-test-results).
+
+::: moniker-end
+
+::: moniker range="< azure-devops"
+
 > [!NOTE]
-> Resolution type for test results can only be set using Microsoft Test Manager.
+> In Azure DevOps Server, set the resolution by using Microsoft Test Manager.
+
+::: moniker-end
 
 ## Track test case status
 
@@ -163,6 +184,29 @@ If you already know how to add a chart, jump to the [examples](#ExamplesTestCase
 
 These examples show common ways to interact with test case results.
 
+::: moniker range="azure-devops"
+
+### View the latest test result from a user story
+
+When you associate a user story with tests through a requirement-based suite, the **Related Work** section shows the most recent test result. The result summary includes the outcome and completion time, so you can review current test progress without leaving the work item.
+
+Open the user story and expand **Related Work** to view the latest result. Select the result to open its details.
+
+::: moniker-end
+
+::: moniker range="azure-devops"
+
+### View test-point execution history
+
+1. In a test suite, select the **Execute** tab.
+1. For a test point, select **More options** > **View execution history**.
+1. Review the point-specific outcomes, test runs, testers, and completion times in the side pane.
+1. To open the complete execution history for the associated test case, select **View all history**.
+
+:::image type="content" source="media/navigate/test-point-execution-history.png" alt-text="Screenshot of test-point execution history with outcomes and the View all history action.":::
+
+::: moniker-end
+
 ### View recent test results
 
 You can view the recent test results for an individual test case.
@@ -176,10 +220,18 @@ You can view the recent test results for an individual test case.
 
 ::: moniker-end
 
-1. View the recent test results for this test case.
+::: moniker range="azure-devops"
 
-::: moniker range="<=azure-devops"
-![Screenshot shows the Test Runs pane with information about individual test run.](media/track-test-status/test-case-results.png)
+Azure DevOps opens the result details in the Test Run Hub. Review the summary, test steps, linked work items, analysis information, and attachments. For more information, see [Analyze detailed test results](test-runs.md#analyze-detailed-test-results).
+
+::: moniker-end
+
+::: moniker range="< azure-devops"
+
+Azure DevOps Server opens the **Test Runs** pane for the selected test case.
+
+![Screenshot of the Test Runs pane with results for the selected test case.](media/track-test-status/test-case-results.png)
+
 ::: moniker-end
 
 ### Track burn down by using a stacked area chart

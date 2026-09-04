@@ -100,7 +100,7 @@ This command signs you in and acquires a token. After sign-in succeeds, you can 
 
 1. Add a *nuget.config* file to your project. Place it in the same folder as your *.csproj* or *.sln* file, and paste the snippet provided in the **Project setup** section into it.
 
-    :::image type="content" source="../media/connect-to-feed-dotnet-server-2020-and-2022.png" alt-text="A screenshot displaying how to connect to a feed in Azure DevOps Server 2020 and 2022.":::
+    :::image type="content" source="../media/connect-to-feed-dotnet-server-2020-and-2022.png" alt-text="Screenshot showing how to connect to a feed in Azure DevOps Server 2020 and 2022.":::
 
 ::: moniker-end
 

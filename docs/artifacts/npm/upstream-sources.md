@@ -29,7 +29,7 @@ If this is your first time using Azure Artifacts with npm on your machine, follo
 Make sure you've installed [Node.js and npm](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm), then run the following command to install `vsts-npm-auth`:
 
 ```
-npm install -g vsts-npm-auth --registry https://registry.npmjs.com --always-auth false
+npm install -g vsts-npm-auth --registry https://registry.npmjs.com
 ```
 
 ### [Other](#tab/other/)
@@ -110,7 +110,7 @@ Now that you've installed a package from the npm registry, you can see how Azure
 
 1. The *mongoose* package you installed in the previous step should now appear in your feed. Azure Artifacts saved a copy automatically when you ran the install command.
 
-    :::image type="content" source="media/npm-package-saved-from-upstream.png" alt-text="A screenshot displaying the new Mongoose package that was saved from the public npm registry." lightbox="media/npm-package-saved-from-upstream.png":::
+    :::image type="content" source="media/npm-package-saved-from-upstream.png" alt-text="Screenshot showing the new Mongoose package that was saved from the public npm registry." lightbox="media/npm-package-saved-from-upstream.png":::
 
 ## Related content
 

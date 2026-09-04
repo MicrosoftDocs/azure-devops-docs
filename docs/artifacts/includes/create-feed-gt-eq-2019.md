@@ -13,7 +13,7 @@ ms.date: 02/22/2024
 
 1. Select **Artifacts**, and then select **Create Feed**.
 
-    :::image type="content" source="../media/new-feed-dialog-azure-devops.png" alt-text="A screenshot showing how to create a  feed.":::
+    :::image type="content" source="../media/new-feed-dialog-azure-devops.png" alt-text="Screenshot showing how to create a new feed in Azure DevOps Services.":::
 
 1. Enter the following information for your feed:
 
@@ -32,7 +32,7 @@ ms.date: 02/22/2024
 
 1. Select **Artifacts**, and then select **Create Feed**.
 
-    :::image type="content" source="../media/new-feed-dialog-devops-server.png" alt-text="A screenshot showing how to create a  feed in DevOps Server.":::
+    :::image type="content" source="../media/new-feed-dialog-devops-server.png" alt-text="Screenshot showing the Create feed dialog in Azure DevOps Server.":::
 
 1. Enter the following information for your feed:
 

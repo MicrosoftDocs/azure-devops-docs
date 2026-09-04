@@ -3,7 +3,7 @@ metadata:
   title: GitHub-hosted agents FAQ
   description: Find answers to frequently asked questions about GitHub-hosted agents for Azure Pipelines.
   ms.topic: faq
-  ms.date: 05/20/2026
+  ms.date: 08/14/2026
   monikerRange: 'azure-devops'
 title: GitHub-hosted agents FAQ
 summary: |
@@ -51,6 +51,11 @@ sections:
           I enabled GitHub-hosted agents in billing, but don't see any changes
         answer: |
           It can take up to 24 hours for the new **GitHub-hosted agents** pool to be provisioned in your organization. If the pool isn't provisioned within that time, [create a support case](/azure/devops/user-guide/provide-feedback).
+
+      - question: |
+          Why isn't the Xcode 27 image available in my organization?
+        answer: |
+          The Xcode 27 image is rolling out to the **GitHub-hosted agents** pool over the next few weeks. If you don't see the image in your organization, check back later.
 
       - question: |
           Some of my jobs get queued. How can I increase the number of virtual agents?

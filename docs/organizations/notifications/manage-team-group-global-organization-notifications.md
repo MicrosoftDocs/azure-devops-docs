@@ -8,7 +8,7 @@ ms.author: chcomley
 author: chcomley
 ai-usage: ai-assisted
 ms.topic: how-to
-ms.date: 08/13/2026
+ms.date: 08/19/2026
 monikerRange: '<= azure-devops'
 #customer intent: As a developer, I want to set notifications for my team, project, or organization, so I can receive email about changes to source code, git, work items, and builds in Azure DevOps.
 ---
@@ -79,7 +79,7 @@ A subscription lets you control the activity events that trigger notifications a
 
       - **Team preference**: Use the team's default delivery preference. For more information, see [Manage delivery settings](#manage-global-delivery-settings).
 
-      - **Custom email address**: Send email to a specified email address.
+      - **Custom email address**: Send email to a [custom email address](about-notifications.md#custom-email-subscriptions).
 
       - **Members of \<Name> Team**: Send individual email to each member of the team.
       
