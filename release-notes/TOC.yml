@@ -10,6 +10,8 @@
       items:
         - name: "2026"
           items:
+          - name: September 4
+            href: 2026/sprint-279-update.md
           - name: August 20
             href: 2026/sprint-278-update.md
           - name: July 30
@@ -333,6 +335,8 @@
         items:
         - name: "2026"
           items:
+          - name: September 4
+            href: 2026/boards/sprint-279-update.md
           - name: July 30
             href: 2026/boards/sprint-277-update.md
           - name: June 17
@@ -528,6 +532,8 @@
         items:
         - name: "2026"
           items:
+          - name: September 4
+            href: 2026/repos/sprint-279-update.md
           - name: July 9
             href: 2026/repos/sprint-276-update.md
           - name: June 17
@@ -647,6 +653,8 @@
         items:
         - name: "2026"
           items:
+          - name: September 4
+            href: 2026/pipelines/sprint-279-update.md
           - name: August 20
             href: 2026/pipelines/sprint-278-update.md
           - name: July 30
@@ -1057,6 +1065,8 @@
         items:
         - name: "2026"
           items:
+          - name: September 4
+            href: 2026/ghazdo/sprint-279-update.md
           - name: July 30
             href: 2026/ghazdo/sprint-277-update.md
           - name: July 9
@@ -1147,6 +1157,8 @@
         items:
         - name: "2026"
           items:
+          - name: September 4
+            href: 2026/general/sprint-279-update.md
           - name: August 20
             href: 2026/general/sprint-278-update.md
           - name: July 30
@@ -1371,6 +1383,8 @@
         items:
         - name: "2026"
           items:
+          - name: September 4
+            href: 2026/wiki/sprint-279-update.md
           - name: August 20
             href: 2026/wiki/sprint-278-update.md
           - name: May 21
