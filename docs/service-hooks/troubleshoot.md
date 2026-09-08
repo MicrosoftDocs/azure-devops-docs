@@ -7,7 +7,7 @@ ms.custom: engagement-fy23, copilot-scenario-highlight
 ms.author: chcomley
 author: chcomley
 monikerRange: '<= azure-devops'
-ms.date: 04/20/2026
+ms.date: 08/24/2026
 # customer intent: As a team member, I want to become familiar with service hook failure types and find out how to access the history of subscriptions so that I can troubleshoot problems with service hooks in Azure DevOps.
 ---
 
@@ -85,9 +85,9 @@ When an enduring failure occurs in a subscription, the subscription is placed on
 
 ### Probation
 
-When a subscription is on probation, any new events are lost. The system makes a limited number of attempts to resend the failed notification.
+When a subscription is on probation, it loses any new events. The system makes a limited number of attempts to resend the failed notification.
 
-The following table lists approximate backoff times and total probation times for retries that are attempted during probation. At most seven retries are attempted, and the maximum backoff time for a probation retry is 15 hours.
+The following table lists approximate backoff times and total probation times for retries that the system attempts during probation. The system attempts at most seven retries, and the maximum backoff time for a probation retry is 15 hours.
 
 | Retry number | Backoff time | Total probation time in hours |
 |---------|---------|---------|
@@ -99,7 +99,13 @@ The following table lists approximate backoff times and total probation times fo
 | 6 | 10 hours 40 minutes | 21 |
 | 7 | 15 hours | 36 |
 
-If the subscription receives a successful response while on probation, it gets restored to a fully enabled state, and events are published again. If all seven retries fail, the subscription state gets set to _DisabledBySystem_.
+If the subscription receives a successful response while on probation, the system restores it to a fully enabled state, and it publishes events again. If all seven retries fail, the system sets the subscription state to _DisabledBySystem_.
+
+## Subscriptions disabled due to inactivity
+
+Azure DevOps automatically disables a subscription when its most recent successful notification delivery was more than six months ago. The subscription stops receiving events until a user re-enables it.
+
+This inactivity check considers only the last successful delivery. It doesn't consider when the subscription was created or last edited, or how many events matched the subscription. A subscription that continues to deliver notifications successfully isn't disabled because of inactivity, regardless of its age. A subscription with no recorded successful deliveries isn't affected by the inactivity check.
 
 ## Use AI to troubleshoot a service hook
 
@@ -126,20 +132,32 @@ Context: This is for a service hook in Azure DevOps.
 
 **A:** A subscription becomes restricted if too many failures occur. Being in the _Enabled (restricted)_ state is the same as being on probation.
 
-### Q: What does the state Disabled (due to failures) mean?
+### Q: Why can a subscription become disabled?
 
 **A:** A subscription is automatically disabled in the following cases:
 
 * A terminal failure is encountered.
 * A series of consecutive failures occurs over a prolonged period.
+* Its most recent successful notification delivery was more than six months ago.
+* The user who created the subscription is no longer a member of the team.
 
-Notifications that result in transient failures are retried several times before being declared enduring failures. Enduring failure notifications are retried a limited number of times during [probation](#probation). If all probation retries fail, the subscription gets disabled.
+### Q: What does the state Disabled (due to failures) mean?
+
+**A:** Notifications that result in transient failures are retried several times before being declared enduring failures. Enduring failure notifications are retried a limited number of times during [probation](#probation). If all probation retries fail, the subscription gets disabled.
 
 The following status codes provide examples of each type of failure:
 
 * Transient: 408 (Request Timeout), 502 (Bad Gateway), 503 (Service Unavailable), 504 (Gateway Timeout)
 * Terminal: 410 (Gone)
 * Enduring: All failures that aren't transient or terminal
+
+### Q: What does the state Disabled (due to inactivity) mean?
+
+**A:** The subscription's most recent successful notification delivery was more than six months ago, so Azure DevOps disabled it. This state differs from _Disabled (due to failures)_, which means Azure DevOps attempted delivery and the delivery failed repeatedly. Re-enable the subscription if the integration is still needed.
+
+### Q: Why are inactive subscriptions disabled?
+
+**A:** Azure DevOps evaluates every subscription when a matching event is published, even when the receiving integration is no longer active. Over time, organizations can accumulate inactive subscriptions as pipelines are retired and integrations are abandoned. Some organizations have tens of thousands of subscriptions that didn't deliver notifications in years. Disabling inactive subscriptions helps keep service hooks fast and reliable for subscriptions that are still in use.
 
 ### Q: What does the state Disabled (user left project) mean?
 
@@ -155,7 +173,7 @@ The following status codes provide examples of each type of failure:
 
 ### Q: Can I grant a regular project user the ability to view and manage service hook subscriptions for a project? 
 
-**A:** By default, only project administrators have these permissions. To grant them to other users directly, you can use the [command-line tool](../organizations/security/manage-tokens-namespaces.md) or the [Security](/rest/api/azure/devops/security/) REST API. 
+**A:** By default, only project administrators have these permissions. To grant them to other users directly, use the [command-line tool](../organizations/security/manage-tokens-namespaces.md) or the [Security](/rest/api/azure/devops/security/) REST API. 
 
 ### Q: Can I programmatically create subscriptions? 
 

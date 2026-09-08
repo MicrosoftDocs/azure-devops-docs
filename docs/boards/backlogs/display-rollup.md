@@ -2,13 +2,14 @@
 title: Display rollup columns to show progress, counts, or totals in Azure Boards
 titleSuffix: Azure Boards
 description: Learn how to add rollup columns that automatically sum child work item values to display progress bars, counts, and totals on parent items in Azure Boards.
-ms.service: azure-devops-boards
+ms.service: azure-boards
+ms.custom: copilot-scenario-highlight
 ms.topic: how-to
 ms.author: chcomley
 author: chcomley
 ai-usage: ai-assisted
 monikerRange: '<= azure-devops'
-ms.date: 07/06/2026
+ms.date: 07/20/2026
 # customer intent: As a team member, I want to display rollup columns that automatically sum child work item values so that I can track progress, counts, and totals across my backlog hierarchy.
 ---
 
@@ -17,6 +18,8 @@ ms.date: 07/06/2026
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 Rollup automatically sums child work item values to display totals on parent items. Use it to track work estimates, effort, size, or story points across your backlog hierarchy. Learn how to add rollup columns to backlogs, sprint planning, and taskboards.
+
+[!INCLUDE [ai-assistance-mcp-server-tip](../../includes/ai-assistance-mcp-server-tip.md)]
 
 > [!IMPORTANT]
 > - Rollup supports progress bars, work item counts, and numeric field sums for descendant work items within the same project.
@@ -241,6 +244,28 @@ Use this table when rollup results don't appear as expected.
 | Rollup values don't match expected totals | Links include unsupported scenarios (for example, test case links) or hierarchy is incomplete | Review linked descendants and ensure rollup inputs come from supported parent-child hierarchy only. |
 | Rollup values appear stale | Analytics processing delay | Wait for Analytics processing to complete, then refresh the page. |
 | Cross-project totals are missing in Delivery Plans | Delivery Plans rollup doesn't include child items from other projects | Use same-project hierarchy for Delivery Plans rollup calculations. |
+
+<a id="use-ai-assistance"></a>
+
+## Use AI to set up rollup columns
+
+If you configure the [Azure DevOps MCP Server](../../mcp-server/mcp-server-overview.md), you can describe your rollup needs in natural language instead of manually configuring columns.
+
+| Task | Example prompt |
+|------|----------------|
+| Sum story points | `Create a rollup column on Features that sums the story points from all child stories in project <Contoso>` |
+| Count child work items | `Add a rollup column to Epics that counts the total number of child user stories and features` |
+| Show effort totals | `Set up rollup on my Features to display the total Effort from all child tasks` |
+| Track multiple fields | `Add two rollup columns to my Epics: one that sums story points and another that counts the total number of descendants` |
+| Sum custom numeric fields | `Add a rollup column to Features that sums the <CustomField> from all descendant work items` |
+| Show completed items count | `Create a rollup column on Features that counts how many child stories are closed` |
+| Display progress visually | `Show progress bars on my Feature backlog based on the percentage of completed child stories` |
+| Set up size rollup | `Add rollup to my Epics to sum the Size field from all descendant stories and features` |
+| Verify rollup hierarchy | `Check if my parent-child relationships are set up correctly for rollup calculations to work on Epics and Features` |
+| Diagnose missing rollup values | `Why are some of my rollup columns showing blank values? Help me troubleshoot` |
+
+> [!NOTE]
+> Agent mode and the MCP Server use natural language, so you can adjust these prompts or ask follow-up questions to refine the results.
 
 ## Related content
 

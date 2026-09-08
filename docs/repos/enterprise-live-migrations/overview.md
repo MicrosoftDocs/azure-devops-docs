@@ -7,7 +7,7 @@ ms.topic: overview
 ms.author: chcomley
 author: chcomley
 monikerRange: 'azure-devops'
-ms.date: 07/14/2026
+ms.date: 08/31/2026
 #customer intent: As an Azure DevOps administrator, I want to understand Enterprise Live Migrations so I can plan a migration of my Azure Repos to GitHub Enterprise Cloud.
 ---
 
@@ -18,12 +18,12 @@ ms.date: 07/14/2026
 Enterprise Live Migrations (ELM) helps you migrate Azure DevOps repositories to GitHub Enterprise Cloud with data residency with minimal disruption. ELM continuously synchronizes the source and target repositories, so your teams can keep working in Azure DevOps Services until you're ready to cutover. There are two migration paths: cut over fully to GitHub, or use a hybrid model where source code moves to GitHub while teams continue using Azure Boards and Azure Pipelines.
 
 > [!NOTE]
-> ELM is currently in limited public preview. To sign up and get started, [sign up here](https://nam.dcv.ms/VeDNq3VRhX).
+> ELM is currently in preview.
 
 ELM is available in two experiences: the Azure DevOps CLI and the Azure DevOps portal. Use the CLI when you want to script or run migrations from the command line. Use the portal when you want a guided experience for selecting repositories, starting migrations, and tracking progress. 
 
 > [!NOTE]
-> ELM support in the Azure DevOps Remote MCP Server is currently in **private preview**. To use ELM through the Remote MCP Server, your organization must be enrolled in the private preview. For more information, see the [Azure DevOps Remote MCP Server documentation](../../mcp-server/remote-mcp-server.md).
+> ELM support in the Azure DevOps Remote MCP Server is currently in **preview** and enabled by default. The Remote MCP Server exposes ELM tools that let you automate migrations of Azure DevOps repositories to GitHub Enterprise Cloud, including building custom agents and skills for repository migration tasks. For tool names, prerequisites, and configuration details, see the [Azure DevOps Remote MCP Server documentation](../../mcp-server/remote-mcp-server.md#enterprise-live-migration-preview).
 
 > [!IMPORTANT]
 > ELM only supports migrations from Azure DevOps Services to GitHub Enterprise Cloud with data residency. If you currently use Azure DevOps Server, first migrate to Azure DevOps Services before you use ELM.
@@ -160,17 +160,15 @@ The following table lists the current tool limits checked during validation and 
 | Validation result freshness | Must start the migration within 24 hours of a successful validate-only run. | You must rerun validation before you start a full migration. | Resume or start the full migration promptly after validation, or rerun validate-only. |
 | Cutover scheduling window | Must complete cutover within 21 days of starting the full migration (when the initial sync begins). | The migration can't remain in the syncing state indefinitely. You must complete or cancel cutover within the window or restart the migration. | Plan a cutover date early, keep syncs healthy, and coordinate communications before the window closes. |
 
-<!-- TODO: Confirm the 2 GB push pack size limit with engineering. Is this the GitHub-imposed limit, an ELM-imposed limit, or per-push? Also clarify whether ELM's "future" Git LFS support changes this number. -->
-
 ## Key roles and responsibilities
 
 | Role | Description | Responsibilities |
 |---|---|---|
-| Migration operator (ELM user) | Person running the migration with the CLI | Generate a personal access token (PAT) for migration. Run validation and migration commands by using the Azure CLI. Provide the repository GUID, agent pool, and service connection ID. Monitor migration status and resolve errors. Schedule and run the cutover. |
+| Migration operator (ELM user) | Person who runs and monitors the migration in either the portal or the Azure CLI. | Run validation and migration operations in the selected experience. Monitor migration status, troubleshoot and resolve errors, and schedule and run the cutover. |
 | Azure DevOps Project Collection Administrator (PCA) and Project Administrator (PA) | Organization-level and project-level admin in Azure DevOps | Grant the **Enterprise Live Migrations: Manage Migrations** permission to the migration operator. Create or manage agent pools. Grant access to agent pools and service connections. |
 | Agent pool owner | Person managing build agents | Set up a self-hosted Linux agent. Ensure the agent pool is available and accessible. Maintain agent health during migration. |
 | Repository owner or dev team | Team that owns the Azure DevOps repository | Clean up the repository before migration (large files, pull requests, and so on). Validate the migrated repository (branches, pull requests, history). Update pipelines, scripts, and tooling post-migration. |
-| GitHub Enterprise admin | Admin of the target GitHub organization | Generate a PAT for migration. Ensure the PAT has required scopes (for example, `repo`, `workflow`, `org`). Create the service connection in Azure DevOps by using the PAT. Share the service connection ID with the migration operator. Ensure the target organization exists and is ready. Grant access to users and configure SSO. Install the Azure Boards GitHub app. |
+| GitHub Enterprise admin | Admin of the target GitHub organization | - Install the ELM app from GitHub Marketplace on both the target enterprise and organization.</br> - Install Azure Pipelines and Azure Boards when needed to rewire pipelines or connect the GitHub repository to Azure Boards. |
 
 ## Next step
 

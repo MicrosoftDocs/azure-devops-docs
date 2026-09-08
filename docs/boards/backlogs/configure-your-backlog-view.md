@@ -2,14 +2,14 @@
 title: Configure your backlog view in Azure Boards
 titleSuffix: Azure Boards
 description: Learn how to set your backlog level, view options, and column options to support your project management tasks in Azure Boards and Azure DevOps.   
-ms.custom: boards-backlogs
-ms.service: azure-devops-boards
+ms.custom: boards-backlogs, copilot-scenario-highlight
+ms.service: azure-boards
 ai-usage: ai-assisted
 ms.author: chcomley
 author: chcomley
 ms.topic: how-to
 monikerRange: '<= azure-devops'
-ms.date: 06/16/2026
+ms.date: 07/20/2026
 # customer intent: As a team member, I want to configure my backlog view options so that I can organize, prioritize, and track work items effectively for my team's workflow and project requirements. -->
 ---
 
@@ -20,6 +20,8 @@ ms.date: 06/16/2026
 Backlogs help teams define, prioritize, and organize work hierarchically while assigning tasks to iterations and forecasting progress. Each backlog is a shared team resource, so changes to items, priorities, and parent-child links update for all team members in real time.
 
 This article shows you how to configure your backlog view options - including backlog levels, view settings, column options, and filtering - to align with your team's workflow and project requirements.
+
+[!INCLUDE [ai-assistance-mcp-server-tip](../../includes/ai-assistance-mcp-server-tip.md)]
 
 ## Prerequisites
 
@@ -309,6 +311,27 @@ The **Forecast** tool is available only for the product backlog. To forecast you
 > To reprioritize items, drag them with forecast lines shown. You can also use the **Planning** pane with the **Forecast** tool turned on.  
 
 For more information, see [Forecast your product backlog](../sprints/forecast.md).
+
+<a id="use-ai-assistance"></a>
+
+## Use AI to configure your backlog
+
+If you connect the [Azure Boards MCP Server](../../mcp-server/mcp-server-overview.md) to your AI agent in agent mode, you can use natural language prompts to configure your backlog view and find optimal settings for your team's workflow.
+
+| Task | Example prompt |
+|------|----------------|
+| Set up for a distributed team | `My team is distributed across three time zones. What backlog configuration should I use? Should I enable Parents view, Planning pane, or Mapping?` |
+| Manage technical debt visibility | `Our backlog mixes new features and technical debt. How should I configure the backlog view so technical debt doesn't get lost? Should I use custom columns or filtering?` |
+| Simplify for stakeholders | `My stakeholders need to see high-level progress but also drill down into stories. What backlog configuration shows this best?` |
+| Handle multi-team collaboration | `Two teams contribute to the same backlog. How should I configure it to show work ownership and avoid conflicts? Should I use Area paths or custom columns?` |
+| Streamline for high-volume intake | `We add 30+ work items per week. How should I configure the backlog to quickly capture items and triage later without being overwhelmed?` |
+| Reduce visual complexity | `My backlog view is cluttered with too many options. What's the minimal configuration I need for a clean, distraction-free view when adding work items?` |
+| Create a sprint planning view | `I want a backlog view that's optimized for sprint planning. What options should I enable or disable?` |
+| Set up portfolio management | `I'm managing multiple portfolio levels (Epics, Features, Stories). What backlog configuration helps me track dependencies and rollup metrics?` |
+| Apply a configuration | `Apply these settings to my product backlog: add Story Points and Effort columns, enable Parents view, and turn on the Planning pane.` |
+
+> [!NOTE]
+> Agent mode and the MCP Server use natural language, so you can adjust these prompts or ask follow-up questions to refine the results.
 
 ## Troubleshoot common issues
 

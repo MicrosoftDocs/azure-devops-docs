@@ -1,5 +1,5 @@
 ---
-ms.subservice: azure-devops-ecosystem
+ms.subservice: azure-devops-developer
 title: Package and publish an integration
 titleSuffix: Azure DevOps
 description: Package and publish your integration to the Visual Studio Marketplace so users can discover your tool, service, or product.

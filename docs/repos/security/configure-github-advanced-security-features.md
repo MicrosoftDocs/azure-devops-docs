@@ -9,7 +9,7 @@ ms.custom: cross-service
 ms.author: laurajiang
 author: laurajjiang
 monikerRange: 'azure-devops'
-ms.date: 07/06/2026
+ms.date: 08/14/2026
 zone_pivot_groups: configure-ghazdo-bundled-individual-products
 ---
 
@@ -49,7 +49,7 @@ GitHub Advanced Security for Azure DevOps is only available for Azure DevOps Ser
 
 ### Extra prerequisites for self-hosted agents
 
-If your organization uses self-hosted agents, add the following URLs to your Allowlist so the dependency scanning task can fetch vulnerability advisory data. For more information, see [Allowed IP addresses and domain URLs](../../organizations/security/allow-list-ip-url.md). 
+If your organization uses self-hosted agents, add the following URLs to your allow list so the dependency scanning task can fetch vulnerability advisory data. For more information, see [Allowed IP addresses and domain URLs](../../organizations/security/allow-list-ip-url.md).
 
 | Domain URL  | Description |
 | ----------- | ----------- |
@@ -204,7 +204,7 @@ Copilot Autofix is an AI-powered feature that analyzes CodeQL code scanning aler
 You can enable Copilot Autofix at the organization, project, or repository level.
 
 > [!NOTE]
-> Copilot Autofix is in limited public preview. To request access for your organization, [sign up for the public preview](https://aka.ms/ghazdo-autofix/preview).
+> Copilot Autofix is in limited public preview. Microsoft isn't currently accepting additional users for the preview.
 >
 > Functionality might change or be removed without notice. Preview features have no Service Level Agreement (SLA) and limited support.
 

@@ -2,7 +2,7 @@
 title: Scale Agile practices with Azure Boards
 titleSuffix: Azure Boards
 description: Learn how to scale Agile practices with Azure Boards by using portfolio management, delivery plans, and multi-team dashboards.
-ms.service: azure-devops-boards
+ms.service: azure-boards
 ms.author: chcomley
 author: chcomley
 ms.topic: overview

@@ -1,7 +1,7 @@
 ---
 title: How to restore packages from upstream sources in your Azure Artifacts feed
 description: Learn how to consume packages from public registries with upstream sources in Azure Artifacts.
-ms.service: azure-devops-artifacts
+ms.service: azure-artifacts
 ms.date: 06/24/2025
 monikerRange: "<=azure-devops"
 ms.custom: sfi-image-nochange
@@ -33,7 +33,7 @@ This tutorial walks you through enabling upstream sources in your feed and consu
 
 1. Select **Create** when you're done.
 
-    :::image type="content" source="../media/new-feed-with-upstream-source.png" alt-text="a Screenshot displaying how to create a new feed and enable upstream sources in Azure Artifacts.":::
+    :::image type="content" source="../media/new-feed-with-upstream-source.png" alt-text="Screenshot showing how to create a new feed with upstream sources enabled in Azure Artifacts.":::
 
 > [!IMPORTANT]
 > To add a feed from a different organization as an upstream source, the target feed owner must share the target view with **All feeds and people in organizations associated with my Microsoft Entra tenant** by navigating to **Feed Settings** > **Views** > Select the ellipsis button on the right for the specified view > **Edit** .
@@ -50,7 +50,7 @@ Now that you've created your feed, select the appropriate tab based on the techn
 
 1. Select **npm** from the left navigation pane, and follow the provided instructions in the **Project setup** section to set up your config file. If you don’t already have a *.npmrc* file, create a new one in the root of your project (the same folder as your *package.json*). Open your new *.npmrc* file and paste in the provided snippet.
 
-    :::image type="content" source="../media/connect-to-feed-npm-registry-azure-devops-newnav.png" alt-text="A screenshot displaying how to set up your npm project in Azure Artifacts.":::
+    :::image type="content" source="../media/connect-to-feed-npm-registry-azure-devops-newnav.png" alt-text="Screenshot showing how to set up your npm project in Azure Artifacts.":::
 
 #### [NuGet](#tab/nuget/)
 

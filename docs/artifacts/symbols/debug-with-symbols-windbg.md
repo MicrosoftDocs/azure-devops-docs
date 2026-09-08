@@ -1,7 +1,7 @@
 ---
 title: Debug with symbols in WinDbg
 description: Use WinDbg to consume symbols and debug your application
-ms.service: azure-devops-artifacts
+ms.service: azure-artifacts
 ms.topic: how-to
 ms.date: 09/26/2023
 monikerRange: "<=azure-devops"

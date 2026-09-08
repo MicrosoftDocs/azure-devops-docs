@@ -2,7 +2,7 @@
 title: Select backlog navigation levels
 titleSuffix: Azure DevOps
 description: Learn how to choose and configure multiple backlog and portfolio backlog levels for your team in Azure DevOps to suit your workflow.
-ms.service: azure-devops-boards
+ms.service: azure-boards
 ms.custom: teams
 ms.author: chcomley
 author: chcomley

@@ -2,7 +2,7 @@
 title: Automate work item completion with pull requests
 titleSuffix: Azure Boards   
 description: Learn how to automatically complete work items and transition their workflow states when you merge pull requests in Azure Boards and Azure DevOps.  
-ms.service: azure-devops-boards
+ms.service: azure-boards
 ai-usage: ai-assisted
 ms.custom: cross-service, copilot-scenario-highlight
 ms.author: chcomley

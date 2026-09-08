@@ -6,7 +6,7 @@ ms.custom: boards-work-items, devx-track-azurecli, engagement-fy23, copilot-scen
 f1_keywords: 
 - vs.tfc.teamexplorer.workitems
 - vs.tfc.teamexplorer.TeamExplorer
-ms.service: azure-devops-boards
+ms.service: azure-boards
 ai-usage: ai-assisted
 ms.author: chcomley
 author: chcomley

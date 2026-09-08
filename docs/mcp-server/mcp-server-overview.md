@@ -10,7 +10,7 @@ ms.topic: overview
 ms.author: chcomley
 author: chcomley
 monikerRange: 'azure-devops'
-ms.date: 12/11/2025
+ms.date: 08/12/2026
 #customer intent: As a project member, I want to understand what the Azure DevOps MCP Server is and how it can enhance my AI assistant with real-time Azure DevOps context to improve my productivity and decision-making.
 ---
 
@@ -20,17 +20,26 @@ ms.date: 12/11/2025
 
 Consider asking your AI assistant "Get my current sprint work items, then identify which ones might be at risk" and getting instant access to your actual Azure DevOps data. The Azure DevOps Model Context Protocol (MCP) Server provides your AI assistant with secure access to work items, pull requests, builds, test plans, and documentation from your Azure DevOps organization.
 
-Unlike cloud-based solutions that require sending your data externally, the Azure DevOps MCP Server runs locally within your secure environment, ensuring your sensitive project information never leaves your network while still delivering enterprise-grade AI capabilities.
+Azure DevOps provides remote and local MCP Servers. The remote server is an Azure DevOps-hosted endpoint that uses streamable HTTP transport, so you don't need to host or install the server. The local server runs on your machine and remains available for clients that can't authenticate to the remote server.
+
+> [!NOTE]
+> The remote Azure DevOps MCP Server uses Microsoft Entra authentication and requires your Azure DevOps organization to be backed by a Microsoft Entra tenant. Standalone Microsoft account (MSA) Azure DevOps organizations aren't supported with the remote server.
 
 > [!IMPORTANT]
 > - The Azure DevOps MCP Server is free to use. However, standard Azure DevOps pricing applies to your organization and any data access through the service. AI assistant usage might have separate costs depending on your chosen AI platform.
 > - The Azure DevOps MCP Server requires your AI assistant to operate in agent-mode to access Azure DevOps data and perform operations.
 
-## Prerequisites
+## Choose remote or local
 
-**System requirements:** [Node.js 20.0+](https://nodejs.org/) and an active [Azure DevOps organization](../organizations/accounts/create-organization.md)
+Use the [remote Azure DevOps MCP Server](remote-mcp-server.md) when your environment supports it. The remote server is the recommended option because it requires no local installation and Azure DevOps manages its updates. Supported environments include Visual Studio Code with GitHub Copilot, Visual Studio, Microsoft Foundry, Microsoft Copilot Studio, GitHub Copilot CLI, and the GitHub Copilot app.
 
-## Install Azure DevOps MCP Server
+Some clients still require Microsoft Entra dynamic OAuth client registration, which isn't supported for the authentication flow needed by the remote MCP Server. Use the local server for clients such as Claude Desktop, Claude Code, Cursor, and Codex in those cases.
+
+## Install the local Azure DevOps MCP Server
+
+### Prerequisites
+
+**System requirements:** [Node.js 20.0+](https://nodejs.org/) and an active [Azure DevOps organization](../organizations/accounts/create-organization.md).
 
 The Azure DevOps MCP Server integrates with various development environments and AI assistants. Choose your preferred environment for instructions. The prerequisites listed in the table are environment-specific requirements in addition to the system requirements previously listed.
 
@@ -57,7 +66,6 @@ The Azure DevOps MCP Server provides contextual intelligence based on your actua
 
 The Azure DevOps MCP Server prioritizes data security and privacy:
 
-- **Local execution**: No data leaves your environment - everything runs locally within your secure network
 - **No external API calls**: The server doesn't make external API calls that could expose sensitive project information  
 - **User control**: You maintain full control over what data your AI assistant can access
 - **Secure integration**: Works seamlessly with your existing AI coding environments without compromising security

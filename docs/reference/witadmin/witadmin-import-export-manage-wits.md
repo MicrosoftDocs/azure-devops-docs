@@ -2,7 +2,7 @@
 title: Import, export, and manage work item types
 titleSuffix: Azure DevOps  
 description: Manage work item types for a project 
-ms.service: azure-devops-boards
+ms.service: azure-boards
 ms.custom: witadmin
 ms.topic: reference
 ms.author: chcomley

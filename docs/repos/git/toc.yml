@@ -36,6 +36,8 @@
     href: ignore-files.md
   - name: Manage large files
     href: manage-large-files.md
+  - name: Optimize performance
+    href: optimize-repository-performance.md
   - name: Understand dates in Git
     href: git-dates.md
   - name: Understand names in Git
@@ -48,8 +50,6 @@
     href: creatingrepo.md
   - name: Create repo - CLI
     href: share-your-code-in-git-cmdline.md
-  - name: Create repo - IntelliJ
-    href: create-repo-intellij.md
   - name: Create repo - Eclipse
     href: share-your-code-in-git-eclipse.md
   - name: Create repo - Xcode
@@ -143,8 +143,14 @@
     href: pull-requests.md
   - name: Review pull requests
     href: review-pull-requests.md
-  - name: Copilot Code Reviews
-    href: copilot-code-reviews.md
+  - name: Copilot code review
+    items:
+    - name: Get started
+      href: copilot-code-reviews.md
+    - name: Configure instructions
+      href: configure-copilot-code-review-instructions.md
+    - name: Troubleshooting and FAQs
+      href: copilot-code-reviews-faq.md
   - name: Complete pull requests
     href: complete-pull-requests.md
   - name: Pull request notifications

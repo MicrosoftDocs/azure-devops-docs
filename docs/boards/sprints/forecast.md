@@ -3,7 +3,7 @@ title: Forecast your product backlog in Azure Boards
 titleSuffix: Azure Boards   
 description: Learn how to determine how much work your team can deliver across several sprints by forecasting in Azure Boards. 
 ms.custom: boards-sprints, copilot-scenario-highlight
-ms.service: azure-devops-boards
+ms.service: azure-boards
 ms.author: chcomley
 author: chcomley
 ms.topic: tutorial

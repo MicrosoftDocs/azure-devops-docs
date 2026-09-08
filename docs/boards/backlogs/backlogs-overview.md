@@ -3,7 +3,7 @@ title: Use backlogs to manage projects
 titleSuffix: Azure Boards
 description: Learn about how to plan, track, and organize user stories, features, and bugs using backlogs and multiple teams in Azure Boards.
 ms.custom: boards-backlogs
-ms.service: azure-devops-boards
+ms.service: azure-boards
 ms.author: chcomley
 author: chcomley
 ms.topic: overview

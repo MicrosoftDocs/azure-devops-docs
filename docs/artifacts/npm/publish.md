@@ -1,7 +1,7 @@
 ---
 title: Publish npm packages from the command line
 description: Learn how to connect to your feed and publish npm packages from the command line.
-ms.service: azure-devops-artifacts
+ms.service: azure-artifacts
 ms.custom: engagement-fy23
 ms.topic: tutorial
 ms.date: 02/21/2025
@@ -32,7 +32,7 @@ If this is your first time using Azure Artifacts with npm on your machine, follo
 1. Run the following command to install `vsts-npm-auth`.
 
     ```
-    npm install -g vsts-npm-auth --registry https://registry.npmjs.com --always-auth false
+    npm install -g vsts-npm-auth --registry https://registry.npmjs.com
     ```
 
 ### [Other](#tab/other/)
@@ -92,7 +92,7 @@ If authentication continues to fail, follow these steps to reset your *vsts-npm-
 1. Reinstall vsts-npm-auth:
     
     ```
-    npm install -g vsts-npm-auth --registry https://registry.npmjs.com --always-auth false
+    npm install -g vsts-npm-auth --registry https://registry.npmjs.com
     ```
 
 #### Unable to publish

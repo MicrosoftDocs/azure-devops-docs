@@ -1,7 +1,7 @@
 ---
 title: Connect your Maven project to an Azure Artifacts feed
 description: Learn how to set up your Maven project and connect to an Azure Artifacts feed.
-ms.service: azure-devops-artifacts
+ms.service: azure-artifacts
 ms.topic: how-to
 ms.date: 05/05/2025
 monikerRange: "<=azure-devops"

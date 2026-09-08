@@ -1,5 +1,5 @@
 ---
-ms.subservice: azure-devops-ecosystem
+ms.subservice: azure-devops-developer
 title: Azure DevOps Services Host Dialog Service Example
 description: A sample that shows how to use a host dialog service with an Azure DevOps Services extension
 ms.author: chcomley

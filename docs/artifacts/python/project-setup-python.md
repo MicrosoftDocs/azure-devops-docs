@@ -1,7 +1,7 @@
 ---
 title: Connect your Python project to an Azure Artifacts feed
 description: Learn how to set up your Python project and connect to an Azure Artifacts feed.
-ms.service: azure-devops-artifacts
+ms.service: azure-artifacts
 ms.topic: how-to
 ms.date: 01/24/2025
 monikerRange: "<=azure-devops"

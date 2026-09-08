@@ -2,7 +2,7 @@
 title: Install the Azure Boards App for GitHub
 titleSuffix: Azure Boards
 description: Use this quickstart to configure the Azure Boards app to connect one or more GitHub repositories to Azure Boards, and change GitHub repo access.  
-ms.service: azure-devops-boards
+ms.service: azure-boards
 ms.topic: quickstart
 ms.author: chcomley
 author: chcomley

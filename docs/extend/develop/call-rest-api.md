@@ -1,5 +1,5 @@
 ---
-ms.subservice: azure-devops-ecosystem
+ms.subservice: azure-devops-developer
 ms.custom: devx-track-js, UpdateFrequency3
 title: Call a REST API
 titleSuffix: Azure DevOps

@@ -1,23 +1,25 @@
 ---
-title: Authentication Methods for Azure DevOps
+title: Authentication methods for Azure DevOps integrations
 titleSuffix: Azure DevOps
 description: Choose the right authentication method for your Azure DevOps integration, with Microsoft Entra ID as the recommended approach.
 ms.subservice: azure-devops-security
 ms.topic: concept-article
-ms.custom: arm2024, pat-reduction, copilot-scenario-highlight
+ms.custom: arm2024, pat-reduction, copilot-scenario-highlight, support-driven-update
 ai-usage: ai-assisted
 monikerRange: '<= azure-devops'
 ms.author: chcomley
 author: chcomley
-ms.date: 03/18/2026
+ms.date: 07/21/2026
 ---
 
-# Authentication methods for Azure DevOps
+# Authentication methods for Azure DevOps integrations
 
 [!INCLUDE [version-lt-eq-azure-devops](../../../includes/version-lt-eq-azure-devops.md)]
 
-This article describes authentication methods for Azure DevOps integration and helps you choose the best option for your scenario.
-Modern authentication approaches like Microsoft Entra ID provide enhanced security and are the best approach for new applications.
+This article focuses on integration authentication patterns for apps, scripts, and pipelines that call Azure DevOps.
+Use modern Microsoft Entra ID-based authentication for new integrations because it provides stronger security and better long-term compatibility.
+
+If you need an organization-level overview that covers user sign-in, governance controls, and platform-level security posture, see [Authentication guidance for Azure DevOps](../../../organizations/security/authentication-guidance.md).
 
 Use Microsoft Entra ID authentication for new applications that integrate with Azure DevOps Services.
 Use personal access tokens sparingly, and only when Microsoft Entra ID isn't available.
@@ -29,6 +31,24 @@ OAuth 2.0 and Microsoft Entra ID authentication are available for Azure DevOps S
 For on-premises scenarios, use [.NET client libraries](../../concepts/dotnet-client-libraries.md), Windows authentication, or [personal access tokens](../../../organizations/accounts/use-personal-access-tokens-to-authenticate.md).
 
 [!INCLUDE [ai-assistance-mcp-server-tip](../../../includes/ai-assistance-mcp-server-tip.md)]
+
+## Compare common authentication choices
+
+Use the following table to compare the most common authentication choices for apps, scripts, and pipelines.
+
+| Method | Best for | Security posture | Credential management | Works with | Avoid when |
+|---|---|---|---|---|---|
+| Managed identity | Azure-hosted automation, such as Azure Functions, App Service, or virtual machines | Strongest option for Azure-hosted workloads because tokens are short-lived and Azure manages the identity lifecycle | No client secret to store or rotate; Azure manages the identity and token acquisition | Azure DevOps Services; Azure-hosted workloads in the same Microsoft Entra tenant after you add the identity to Azure DevOps | The workload doesn't run on Azure, or you need a portable identity that isn't tied to an Azure resource |
+| Service principal | Automation that runs outside Azure, across multiple environments, or in external CI/CD systems | Strong option when you use certificate-based auth or federated approaches and apply least privilege | You manage the application identity and any client secret or certificate unless a federated flow removes the secret | Azure DevOps Services; apps, scripts, and services that need a Microsoft Entra application identity | You can use a managed identity instead for the same Azure-hosted workload, or the tool supports only PAT-based auth |
+| Azure DevOps service connection | Azure Pipelines access to Azure DevOps resources | Strong option for pipeline automation because it uses Microsoft Entra workload identity federation instead of long-lived tokens | Azure DevOps manages the service connection, and pipelines don't need to store PATs in variables | Azure DevOps Services; pipelines that access repos, feeds, or REST APIs across organizations | The scenario doesn't run through Azure Pipelines |
+| Personal access token (PAT) | Short-lived personal scripts, one-off testing, or legacy scenarios that can't yet use Microsoft Entra-based auth | Highest risk of the common choices because the token is a long-lived bearer secret tied to a user account | You must create, store, rotate, and revoke the token manually | Azure DevOps Services and Azure DevOps Server; CLI, REST calls, and legacy integrations that support PATs | The integration is a production service, shared automation, or any scenario where a service principal, managed identity, or service connection is available |
+
+## Quick recommendations
+
+- Choose managed identity first when the workload runs on Azure and Azure can own the identity lifecycle.
+- Choose a service principal when you need an application identity but the workload doesn't run on Azure or must move across environments.
+- Choose an Azure DevOps service connection when Azure Pipelines needs to access Azure DevOps resources without a PAT.
+- Choose a PAT only for personal, temporary, legacy, or Azure DevOps Server scenarios where the more secure options don't apply.
 
 ## Authentication methods by scenario
 

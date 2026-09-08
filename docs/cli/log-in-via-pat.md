@@ -19,6 +19,8 @@ ai-usage: ai-assisted
 
 This article explains how to sign in using an Azure DevOps personal access token (PAT). You can sign in [interactively with Microsoft Entra through the az login command](index.md) or by using an Azure DevOps PAT. To create a PAT, see [Use personal access tokens](../organizations/accounts/use-personal-access-tokens-to-authenticate.md#create-a-pat).
 
+For a broader comparison of Microsoft Entra, PAT, service principal, and pipeline-based authentication options, see [Authentication methods for Azure DevOps](../integrate/get-started/authentication/authentication-guidance.md). This article focuses on PAT-specific sign-in flows for the Azure DevOps CLI.
+
 [!INCLUDE [use-microsoft-entra-reduce-pats](../includes/use-microsoft-entra-reduce-pats.md)]
 
 For pipeline automation, use a PAT only when necessary. For service-connection-based authentication, see [Manage service connections](../pipelines/library/service-endpoints.md).

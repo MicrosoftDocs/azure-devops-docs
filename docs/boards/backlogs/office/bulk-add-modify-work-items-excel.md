@@ -2,7 +2,7 @@
 title: Bulk Modify Azure Boards Work Items with Excel
 titleSuffix: Azure Boards
 description: Bulk edit work items in Azure Boards with the Excel plugin. Discover how to import flat lists, create tree hierarchies, and update items from a query.
-ms.service: azure-devops-boards
+ms.service: azure-boards
 ms.author: chcomley
 ms.reviewer: chcomley
 author: chcomley

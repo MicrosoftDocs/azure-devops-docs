@@ -1,10 +1,11 @@
 ---
 title: Delete a Git branch
 titleSuffix: Azure Repos
-description: "Learn how to delete a Git branch by using two different methods: in Visual Studio and from the command line."
+description: Learn how to delete local and remote Git branches in Azure Repos by using the web portal, Visual Studio, or the Git command line.
+ms.date: 08/12/2026
+ai-usage: ai-assisted
 ms.service: azure-devops-repos
 ms.topic: tutorial
-ms.date: 02/22/2018
 monikerRange: '<= azure-devops'
 ms.subservice: azure-devops-repos-git
 ---
@@ -15,7 +16,7 @@ ms.subservice: azure-devops-repos-git
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 [!INCLUDE [version-vs-gt-eq-2019](../../includes/version-vs-gt-eq-2019.md)]
 
-This article describes how to delete a Git branch by using two different methods: in Visual Studio and from the command line.
+This article describes how to delete local and remote Git branches by using the Azure DevOps web portal, Visual Studio, or the Git command line.
 
 > [!NOTE] 
 > Deleting a branch in your local repo doesn't remove the branch on the remote.
@@ -23,6 +24,18 @@ This article describes how to delete a Git branch by using two different methods
 ## Prerequisites
 
 [!INCLUDE [azure-repos-prerequisites](includes/azure-repos-prerequisites.md)]
+
+The following requirements depend on whether you delete a local or remote branch:
+
+| Category | Requirements |
+|----------|--------------|
+| **Local branch** | Check out a different branch before you delete the branch. Azure DevOps permissions, policies, and locks don't apply when you delete only a local branch. |
+| **Remote branch permission** | Have the branch-level [**Force push (rewrite history, delete branches and tags)** permission](branch-permissions.md#set-permissions) set to **Allow**. This requirement applies whether you delete the remote branch in the web portal, Visual Studio, or from the command line. Branch creators receive this permission by default unless the permission assignment is changed. |
+| **Required branch policies** | [Disable or remove all required branch policies](branch-policies.md) before you delete the branch. You need the **Edit policies** permission or membership in the **Project Administrators** security group to manage branch policies. |
+| **Default branch** | [Set another branch as the repository's default branch](change-default-branch.md) before you delete the current default branch. |
+| **Locked branch** | [Unlock the branch](lock-branches.md) before you delete it. To unlock a branch that another user locked, you need the **Remove others' locks** permission. |
+
+If **Delete branch** isn't available, check your effective **Force push** permission and verify that the branch has no required policies, isn't the repository's default branch, and isn't locked.
 
 ## Delete branch
 
@@ -77,3 +90,10 @@ git push origin --delete <branch_name>
 
 > [!div class="nextstepaction"]
 > [Restore a deleted branch](./restore-deleted-branch.md)
+
+## Related content
+
+- [Set branch permissions](branch-permissions.md)
+- [Set and manage branch policies](branch-policies.md)
+- [Change the default branch](change-default-branch.md)
+- [Lock a branch](lock-branches.md)

@@ -2,7 +2,7 @@
 title: Manage work item fields using witadmin
 titleSuffix: Azure DevOps  
 description: List or delete fields, or change a field attribute defined on Azure DevOps
-ms.service: azure-devops-boards
+ms.service: azure-boards
 ms.custom: witadmin
 ms.topic: reference
 ms.author: chcomley

@@ -4,12 +4,13 @@ titleSuffix: Azure Test Plans
 description: "Azure Test Plans test objects: Discover essential terms, work item types, and controls to streamline your manual and automated testing workflows."
 ms.service: azure-devops-test-plans
 ms.custom: UpdateFrequency3
+ai-usage: ai-assisted
 ms.topic: overview
 ms.author: pliaros
 ms.reviewer: chcomley
 author: raviLiftr
 monikerRange: '<= azure-devops'
-ms.date: 04/01/2026
+ms.date: 08/14/2026
 ms.update-cycle: 1095-days
 ---
 
@@ -29,7 +30,7 @@ Read this article to gain an understanding of the objects and terms used in manu
 
 To support manual and automated testing, add and group three main types of test-specific work item types: **Test Plans**, **Test Suites**, and **Test Cases**. To support sharing of various test steps and test parameters, define **Shared Steps** and **Shared Parameters**. The work tracking data store stores these objects as specific types of work items. 
 
-![Test management work item types](../boards/work-items/guidance/media/ALM_PT_WITS_TestExperience.png)
+![Diagram that shows relationships among test plans, suites, cases, requirements, bugs, shared steps, and parameters.](../boards/work-items/guidance/media/ALM_PT_WITS_TestExperience.png)
 
 The following table describes the work item types used to support the Azure DevOps test experience. Test-specific work items link together by using the link types shown in the previous image.  
  
@@ -81,7 +82,7 @@ The following table describes the work item types used to support the Azure DevO
      **Shared steps**
    :::column-end:::
    :::column span="3":::
-      Use to share steps between multiple test cases. For example, log-in and verify steps for signing into an application are steps that you can share across a number of test cases. To learn how, see [Share steps between test cases](share-steps-between-test-cases.md). 
+      Use to share steps between multiple test cases. For example, sign in and verify steps for signing into an application are steps that you can share across a number of test cases. To learn how, see [Share steps between test cases](share-steps-between-test-cases.md). 
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -220,6 +221,12 @@ Several controls appear in several test-specific work items, as described in the
    :::column-end:::
 :::row-end:::
 ---
+
+::: moniker range="azure-devops"
+
+For user stories associated with test cases through a requirement-based suite, **Related Work** also shows a summary of the most recent test result, including its outcome and completion time. For more information, see [Track test status](track-test-status.md#view-the-latest-test-result-from-a-user-story).
+
+::: moniker-end
 
 ## Customize test-specific work item types
 

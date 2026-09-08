@@ -46,6 +46,7 @@ The following tables describe the events (or actions) available through Azure De
 | [Process events](#process-events)        | Create, modify, and delete attributes for processes (portfolio backlogs, controls, fields, groups, lists, pages, processes, rules, states, control settings, work items, etc.) in Azure Boards.           |
 | [Project events](#project-events)        | Create, modify, change visibility of, delete, and restore projects in Azure Boards. Create, modify, and delete Area paths. |
 | [Release events](#release-events)        | Create, modify, and delete releases and release pipelines in Azure Pipelines. Track deployments and deployment approvals.      |
+| [Service hook events](#service-hook-events) | Create, modify, delete, and change the status of service hook (webhook) subscriptions. |
 | [Security events](#security-events)    | Create, modify, and delete Pipelines in Azure Pipelines. Authorize and unauthorize resource for projects and pipelines. Modify pipeline retention settings. Retain and unretain pipeline runs. |
 | [Token events](#token-events)            | Create, modify, revoke, and delete Personal Access Tokens (PATs) or SSH Keys. Track public repository discovery and system revocations of PATs. Token access events aren't currently logged. |
 
@@ -241,7 +242,6 @@ The following tables describe the events (or actions) available through Azure De
 | `CheckConfiguration.Enabled`| A check of type {Type} was enabled for {ResourceType} "{ResourceName}" in project "{ResolveProjectId:ProjectId}" |
 | `CheckConfiguration.Updated`| A check of type {Type} was updated for {ResourceType} "{ResourceName}" in project "{ResolveProjectId:ProjectId}" |
 
-
 ### Policy events
 
 | Action | Description |
@@ -344,6 +344,15 @@ The following tables describe the events (or actions) available through Azure De
 | `Release.ReleasePipelineCreated` | Release Pipeline "{PipelineName}" created in Project {ResolveProjectId:ProjectId}. |
 | `Release.ReleasePipelineDeleted` | Release Pipeline "{PipelineName}" deleted in Project {ResolveProjectId:ProjectId}. |
 | `Release.ReleasePipelineModified` | Release Pipeline "{PipelineName}" modified in Project {ResolveProjectId:ProjectId}. |
+
+### Service hook events
+
+| Action | Description |
+|--------|-------------|
+| `ServiceHooks.SubscriptionCreated` | Created service hook subscription "{SubscriptionId}" for event "{EventType}" with consumer "{ConsumerId}" in project {ResolveProjectId:ProjectId}. |
+| `ServiceHooks.SubscriptionModified` | Modified service hook subscription "{SubscriptionId}" for event "{EventType}" with consumer "{ConsumerId}" in project {ResolveProjectId:ProjectId}. |
+| `ServiceHooks.SubscriptionDeleted` | Deleted service hook subscription "{SubscriptionId}" in project {ResolveProjectId:ProjectId}. |
+| `ServiceHooks.SubscriptionStatusChanged` | Changed status of service hook subscription "{SubscriptionId}" from "{OldStatus}" to "{NewStatus}" in project {ResolveProjectId:ProjectId}. |
 
 ### Security events
 

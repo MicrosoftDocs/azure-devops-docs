@@ -4,7 +4,7 @@ titleSuffix: Azure Boards
 ms.global_help.title: Add swimlanes
 description: Learn how to use swimlanes to differentiate different types of work you track on the board in Azure Boards.
 ms.custom: boards-kanban, engagement-fy23, copilot-scenario-highlight
-ms.service: azure-devops-boards
+ms.service: azure-boards
 ms.author: chcomley
 author: chcomley
 ai-usage: ai-assisted

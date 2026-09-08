@@ -2,7 +2,7 @@
 title: Support rollup of work and other fields
 titleSuffix: Azure DevOps
 description: Provides summed values of select fields for all child work items of a parent.
-ms.service: azure-devops-boards
+ms.service: azure-boards
 ms.custom: process, archive-candidate
 ms.author: chcomley
 author: chcomley

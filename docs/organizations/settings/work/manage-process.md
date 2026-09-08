@@ -3,7 +3,7 @@ title: Create and Manage an Inherited Process
 titleSuffix: Azure DevOps Services
 description: Create and apply an inherited process to a project, manage the process by adding work item types, states, fields, rules to track your work.
 ms.custom: inherited-process, copilot-scenario-highlight
-ms.service: azure-devops-boards
+ms.service: azure-boards
 ms.author: chcomley
 author: chcomley
 ai-usage: ai-assisted

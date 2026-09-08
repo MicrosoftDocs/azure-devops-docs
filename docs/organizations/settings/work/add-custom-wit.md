@@ -3,7 +3,7 @@ title: Add Custom Work Item Type to Inherited Process
 titleSuffix: Azure DevOps Services
 description: Learn how to add a custom work item type for an Inheritance process model and apply it to a project.  
 ms.custom: inherited-process
-ms.service: azure-devops-boards
+ms.service: azure-boards
 ms.author: chcomley
 author: chcomley
 ms.topic: quickstart

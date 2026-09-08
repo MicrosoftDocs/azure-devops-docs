@@ -1,7 +1,7 @@
 ---
 title: Get started with the REST APIs for Azure DevOps
 description: Learn the fundamental concepts and patterns for Azure DevOps REST APIs, including URL structure, authentication methods, HTTP operations, and response handling.
-ms.subservice: azure-devops-ecosystem
+ms.subservice: azure-devops-developer
 ms.topic: quickstart
 ms.custom: pat-reduction, copilot-scenario-highlight
 ai-usage: ai-assisted

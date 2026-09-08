@@ -7,7 +7,7 @@ ms.topic: how-to
 ms.author: chcomley
 author: chcomley
 monikerRange: 'azure-devops'
-ms.date: 06/01/2026
+ms.date: 08/06/2026
 #customer intent: As a migration operator, I want to monitor sync progress and manage in-flight ELM migrations so I can cutover with confidence.
 ---
 
@@ -17,25 +17,27 @@ ms.date: 06/01/2026
 
 The initial sync can take several hours or even days to complete, depending on the size of your repository. After the initial synchronization finishes, ELM continues to perform periodic syncs for up to 21 days to capture ongoing updates. During this 21-day window, you must run the cutover to finalize the migration.
 
-> [!NOTE]
-> All steps in this article use the Azure DevOps CLI.
-
 To see which repositories are in each phase, run `az devops migrations list` and filter by the `stage` field. Errors surface in the migration status output so you can identify and fix issues before you continue.
 
-<!-- TODO: When the portal experience ships, restore the UX-flavored description: "Throughout the migration workflow, you can select each phase to view the repositories currently in that stage. If errors are detected during a phase, they appear so you can identify and fix issues before you continue." Also confirm the exact CLI filter syntax for `stage` (for example, `--query "[?stage=='Synchronization']"`) and add an example. -->
-
 > [!IMPORTANT]
-> **Concurrency limit**: You can have up to 20 active migrations in progress at the same time. To start another migration, complete cutover for at least one active migration first.
-
-<!-- TODO: Confirm the 20-concurrent-migration limit with engineering. Is this per organization, per project, per agent pool, or per tenant? What error does the operator see when they hit the limit? -->
+> **Concurrency limit**: Each enterprise can have up to 30 active migrations in progress at once, including a maximum of 20 initial migrations. To free capacity for another migration, complete the cutover for an existing migration.
 
 ## Track migration status
 
-To list all migrations for your organization:
+#### [Azure DevOps CLI](#tab/track-cli)
+
+List all migrations for your organization:
 
 ```azurecli
 az devops migrations list --org https://dev.azure.com/<org>
 ```
+
+#### [Azure DevOps portal](#tab/track-portal)
+
+1. In your project, open **Project settings**.
+1. Under **Repos**, select **Migration to GitHub**.
+
+---
 
 ### Migration stages
 
@@ -65,41 +67,59 @@ az devops migrations list --org https://dev.azure.com/<org>
 - **Sync state** — identify whether the migration is progressing or stalled.
 - **Error conditions** — ELM retries transient failures automatically. Persistent errors require investigation.
 
-<!-- TODO: Quantify "on schedule" and "stalled." What's the expected sync cadence (every 30–60 min per cut-over-to-github.md)? At what age of last successful sync should the operator consider the migration stalled and intervene? How many automatic retries does ELM perform before marking the migration Failed? -->
-
 ## Resume after a sync error
 
-If sync errors occur, investigate the error details and fix the underlying issue. Then, let ELM resume automatically, or run:
+If sync errors occur, investigate the error details and fix the underlying issue. Then, let ELM resume automatically, or use one of the following methods.
+
+#### [Azure DevOps CLI](#tab/error-cli)
 
 ```azurecli
 az devops migrations resume --org https://dev.azure.com/<org>
                             --repository-id <repo-guid>
 ```
 
+#### [Azure DevOps portal](#tab/error-portal)
+
+On the migration dashboard, locate the repository, and then select **Resume sync**.
+
+---
+
 ## Pause and resume the migration
 
 If you need to temporarily stop a migration and restart it in the same mode:
 
-Pause:
+#### [Azure DevOps CLI](#tab/pause-resume-cli)
+
+To pause the migration, run:
 
 ```azurecli
 az devops migrations pause --org https://dev.azure.com/<org>
                            --repository-id <repo-guid>
 ```
 
-Resume:
+To resume the migration, run:
 
 ```azurecli
 az devops migrations resume --org https://dev.azure.com/<org>
                             --repository-id <repo-guid>
 ```
 
+#### [Azure DevOps portal](#tab/pause-resume-portal)
+
+On the migration dashboard, locate the repository, select the ellipsis (**...**), and then select **Pause** or **Resume**.
+
+---
+
 > [!NOTE]
 > You can pause a migration for any length of time, but the 21-day cutover window still applies.
 
 ## Cancel the migration
 
-At any point during syncing, if you want to stop and delete a migration, run the following command. This action permanently deletes the migration record, and you're prompted to confirm.
+At any point during syncing, you can stop and delete a migration. This action permanently deletes the migration record.
+
+#### [Azure DevOps CLI](#tab/cancel-cli)
+
+Run the following command. You're prompted to confirm.
 
 ```azurecli
 az devops migrations abandon --org https://dev.azure.com/<org>
@@ -116,13 +136,17 @@ az devops migrations abandon --org https://dev.azure.com/<org>
 
 To skip the interactive confirmation prompt (for scripted cleanup), add `--yes`.
 
+#### [Azure DevOps portal](#tab/cancel-portal)
+
+On the migration dashboard, locate the repository, and then select **Cancel**.
+
+---
+
 After you abandon a migration:
 
 - **Source repository**: Your Azure DevOps repository is unchanged and fully writable. No cleanup is required.
 - **Audit trail**: The migration record isn't retained, but an audit event is written to record that the migration was abandoned. For more information, see [Audit](overview.md#audit).
 - **Starting a new migration**: You can create a new migration for the same source repository, but a short cooldown applies before the new migration can start. If you want to reuse the same target GitHub repository name, first delete the existing GitHub repository. You must have **Delete repository** permission in GitHub to do this.
-
-<!-- TODO: Confirm the exact cooldown duration after `abandon` (engineering says "not immediate" but couldn't quantify). Update this section with the specific wait time (or range) once known. -->
 
 ## Next step
 

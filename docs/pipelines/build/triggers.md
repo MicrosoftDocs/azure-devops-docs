@@ -2,7 +2,7 @@
 title: Triggers in Azure Pipelines
 description: Learn about how you can specify CI, scheduled, gated, and other triggers in Azure Pipelines
 ms.topic: concept-article
-ms.date: 05/08/2026
+ms.date: 07/20/2026
 monikerRange: '<= azure-devops'
 ---
 
@@ -183,6 +183,49 @@ YAML pipelines can have different versions of the pipeline in different branches
 | GitHub pull request comment triggers    | The version of the pipeline in the source branch for the pull request is used. |
 | Scheduled triggers         | See [Branch considerations for scheduled triggers](../process/scheduled-triggers.md?tabs=yaml#branch-considerations-for-scheduled-triggers). |
 | Pipeline completion triggers | See [Branch considerations for pipeline completion triggers](../process/pipeline-triggers.md?tabs=yaml#branch-considerations). |
+
+## Resource triggers for YAML pipelines
+
+Repository resource triggers let you start a pipeline when changes land in a repo defined as a `repositories` resource. Configure CI-style `trigger` filters on the [resource](/azure/devops/pipelines/yaml-schema/resources-repositories-repository) so commits or PRs in an external Azure Repos Git, GitHub, GitHub Enterprise, or Bitbucket Cloud repo can kick off runs of the current pipeline.
+
+Azure Pipelines supports similar event-driven triggers on other resource types:
+
+- `pipelines`: on completion of an upstream CI pipeline (with optional branch, tag, and stage filters)
+- `builds`: on new artifacts from an external CI system such as Jenkins
+- `containers`: on new image tags in Azure Container Registry
+- `packages`: on new NuGet or npm GitHub package versions
+- `webhooks`: on arbitrary events from external services like GitHub, Nexus, or Artifactory via an incoming webhook service connection
+
+For more information, see [Resources in YAML pipelines](../process/resources.md).
+
+## Generic webhook based triggers for YAML pipelines
+
+Webhook trigger support in YAML pipelines lets you subscribe to events from any external service (such as GitHub, GitHub Enterprise, Nexus, or Artifactory) via its webhooks and automatically trigger pipelines. This feature expands automated triggers beyond built-in resources like pipelines, containers, builds, and packages. You can integrate pipeline automation with any external service.
+
+To use this feature, define a `webhook` resource under `resources.webhooks` in your YAML pipeline and point it to an incoming webhook service connection that subscribes to the event. You can add filters against the JSON payload to fine-tune when each pipeline runs, and access the payload values as variables in your jobs.
+
+```yml
+resources:
+  webhooks:
+    - webhook: MyWebhookTrigger          ### Webhook alias
+      connection: MyWebhookConnection    ### Incoming webhook service connection
+      filters:
+        - path: repositoryName      ### JSON path in the payload
+          value: maven-releases     ### Expected value in the path provided
+        - path: action
+          value: CREATED
+steps:
+- task: PowerShell@2
+  inputs:
+    targetType: 'inline'
+    ### JSON payload data is available in the form of ${{ parameters.<WebhookAlias>.<JSONPath>}}
+    script: |
+      Write-Host ${{ parameters.MyWebhookTrigger.repositoryName}}
+      Write-Host ${{ parameters.MyWebhookTrigger.component.group}}
+```
+
+For more information, see [Generic webhook based triggers for YAML pipelines](/azure/devops/release-notes/2020/sprint-172-update#generic-webhook-based-triggers-for-yaml-pipelines) and [resources.webhooks.webhook definition](/azure/devops/pipelines/yaml-schema/resources-webhooks-webhook).
+
 
 ## Classic release pipelines
 

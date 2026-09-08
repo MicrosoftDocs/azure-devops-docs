@@ -3,7 +3,7 @@ title: Configure work item form extensions through XML
 titleSuffix: Azure DevOps Server
 description: Add and configure work item form extensions in Azure DevOps Server using work item type definition XML and the witadmin tool.
 ms.contentid: DEC28077-2F52-490D-B87C-48D4785CD597
-ms.subservice: azure-devops-ecosystem
+ms.subservice: azure-devops-developer
 ms.custom: freshness-fy22q3, UpdateFrequency3
 ms.topic: how-to
 monikerRange: '< azure-devops'

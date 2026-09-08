@@ -3,7 +3,7 @@ title: "Tutorial: Add Tasks or Other Child Work Items to Checklists"
 titleSuffix: Azure Boards
 description: Add tasks, subtasks, to do lists, bugs, or other child work items as checklists to your board for lightweight tracking in Azure Board and Azure DevOps.
 ms.custom: boards-kanban, copilot-scenario-highlight
-ms.service: azure-devops-boards
+ms.service: azure-boards
 ms.author: chcomley
 author: chcomley
 ms.topic: tutorial

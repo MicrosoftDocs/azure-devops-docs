@@ -173,5 +173,6 @@ Use APIs to extend or supplement the capabilities listed in this article. For in
 ## Related content
 
 * [Get started with Search](get-started-search.md)
+* [Search commits](functional-commit-search.md)
 * [Search artifacts and packages](functional-package-search.md)
 * [Search work items](functional-work-item-search.md)

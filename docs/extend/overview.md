@@ -1,5 +1,5 @@
 ---
-ms.subservice: azure-devops-ecosystem
+ms.subservice: azure-devops-developer
 title: Extensions overview
 description: Learn about extensions for Azure DevOps, including how to develop, package, publish, and manage them.
 ms.topic: overview

@@ -2,7 +2,7 @@
 title: Add or remove columns within a work item list in Azure Boards
 titleSuffix: Azure Boards
 description: Manage columns in Azure Boards work item lists to display and organize fields that matter most. Discover step-by-step guidance and boost productivity.
-ms.service: azure-devops-boards
+ms.service: azure-boards
 ms.custom: copilot-scenario-highlight
 ms.author: chcomley
 ms.reviewer: chcomley

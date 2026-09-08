@@ -3,7 +3,7 @@ title: Manage work item attachments
 titleSuffix: Azure Boards 
 description: Learn how to manage work item attachments in Azure DevOps.
 ms.custom: devx-track-azurecli
-ms.service: azure-devops-boards
+ms.service: azure-boards
 ms.author: chcomley
 author: chcomley
 ai-usage: ai-assisted

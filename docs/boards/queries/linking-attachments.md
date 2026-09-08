@@ -3,7 +3,7 @@ title: Query Work Items By Link Or Attachment Count In Azure Boards
 titleSuffix: Azure Boards
 description: Learn how to query work items based on link type, link count, link restrictions, and attached file count in Azure Boards.
 ms.custom: boards-queries, engagement-fy23, copilot-scenario-highlight
-ms.service: azure-devops-boards
+ms.service: azure-boards
 ms.author: chcomley
 author: chcomley
 ms.topic: example-scenario

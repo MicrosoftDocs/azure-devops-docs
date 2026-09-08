@@ -5,7 +5,7 @@ description: How to troubleshoot Azure Resource Manager service connections in A
 ms.topic: troubleshooting
 ms.author: rabououn
 author: ramiMSFT
-ms.date: 07/15/2026
+ms.date: 08/18/2026
 ai-usage: ai-assisted
 monikerRange: '<= azure-devops'
 "recommendations": "true"
@@ -15,10 +15,10 @@ monikerRange: '<= azure-devops'
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
-This article presents common troubleshooting scenarios to help you resolve issues you might encounter when creating an Azure Resource Manager (ARM) service connection. See [Manage service connections](../library/service-endpoints.md) to learn how to create, edit, and secure service connections. See [Troubleshoot an Azure Resource Manager workload identity service connection](troubleshoot-workload-identity.md) to learn how to fix workload-identity related issues. 
+This article presents common troubleshooting scenarios to help you resolve issues you might encounter when creating an Azure Resource Manager (ARM) service connection. See [Manage service connections](../library/service-endpoints.md) to learn how to create, edit, secure, and enable service connections. See [Troubleshoot an Azure Resource Manager workload identity service connection](troubleshoot-workload-identity.md) to learn how to fix workload-identity related issues.
 
 > [!IMPORTANT]
-> Azure Resource Manager service connections have standing access to Azure resources. To help reduce unnecessary standing access, Azure Pipelines automatically disables service connections after 100 days of inactivity. If a deployment starts failing after a long period of inactivity, check whether the service connection is disabled before troubleshooting authentication issues, rotating secrets, or recreating the connection.
+> A service connection administrator or Project Administrator can disable Azure Resource Manager service connections. Azure Pipelines might also automatically disable a connection after 100 days of inactivity. A disabled connection can affect pipeline runs, so check its enabled state before troubleshooting authentication issues, rotating secrets, or recreating the connection.
 
 This article uses the terms "tenant" and "directory" in ways that might overlap. A tenant is a dedicated, isolated instance of Microsoft Entra ID that your organization receives and manages all identities and access control for your cloud services. A directory is a container within that tenant that holds objects like users, groups, and applications used to manage access to resources. 
 > [!IMPORTANT]
@@ -44,7 +44,7 @@ When you save your new Azure Resource Manager service connection, Azure DevOps t
 
 The following issues might occur when you create, update, or use service connections:
 
-- [Service connection was disabled after inactivity](#service-connection-was-disabled-after-inactivity)
+- [Service connection is disabled](#service-connection-is-disabled)
 - [Pipeline shows a deprecated Azure DevOps issuer warning](#pipeline-shows-a-deprecated-azure-devops-issuer-warning)
 - [Automatic conversion fails](#automatic-conversion-fails)
 - [You can edit the service connection but can't add the federated credential](#you-can-edit-the-service-connection-but-cant-add-the-federated-credential)
@@ -52,15 +52,16 @@ The following issues might occur when you create, update, or use service connect
 - [You don't know who owns the app registration or managed identity](#you-dont-know-who-owns-the-app-registration-or-managed-identity)
 - [The service connection uses a multitenant app](#the-service-connection-uses-a-multitenant-app)
 
-### Service connection was disabled after inactivity
+### Service connection is disabled
 
-Azure Pipelines is starting to automatically disable service connections after 100 days of inactivity. Tasks that depend on a disabled service connection can fail before they authenticate to Azure.
+A service connection administrator or Project Administrator can disable a service connection, and Azure Pipelines might automatically disable one after 100 days of inactivity. Tasks that depend on a disabled service connection can fail before they authenticate to Azure, with authorization or connection-not-available messages.
 
 To resolve the issue:
 
 1. In Azure DevOps, go to **Project settings** > **Service connections**.
 1. Open the Azure Resource Manager service connection used by the failing pipeline.
 1. Review the **Usage history** tab to confirm when the connection was last used.
+1. Review the [Azure DevOps Audit log](../../organizations/audit/azure-devops-auditing.md) for service connection disable or enable events to determine why the connection was disabled.
 1. Confirm that the connection is still required and should continue to have access to the target Azure resources.
 1. Select **More actions** > **Enable**.
 1. Run the pipeline again.
@@ -279,7 +280,8 @@ To renew the access token for an automatically created service principal or secr
 The token for your service principal or secret is now renewed for three more months.
 
    > [!NOTE]
-   > This operation is available even if the service principal's token hasn't expired.
+   > You can renew the service principal secret even if it hasn't expired.
+   > If **Rotate secret** isn't shown, open the service connection, select **Edit**, and then select **Save** to renew the secret.
    > Make sure that the user performing the operation has proper permissions on the subscription and Microsoft Entra ID, because it updates the secret for the app registered for the service principal. For more information, see [Create an app registration with a secret](../library/azure-resource-manager-alternate-approaches.md#create-an-app-registration-with-a-secret-automatic) and [What happens when you create a Resource Manager service connection?](/azure/devops/pipelines/release/azure-rm-endpoint#what-happens-when-you-create-an-azure-resource-manager-service-connection)
 
 ## Failed to obtain the JWT by using the service principal client ID

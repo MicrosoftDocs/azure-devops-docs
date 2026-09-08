@@ -414,7 +414,7 @@ From the administrative **Project settings** page, you can configure settings av
       **Test**
    :::column-end:::
    :::column span="2":::
-      - [Set test retention policies](../../test/how-long-to-keep-test-results.md)
+      - [Set test retention policies](../../pipelines/policies/retention.md)
       - [Manage test-related permissions at project level](../security/change-project-level-permissions.md)
       - [Set area path-level test permissions](../security/set-permissions-access-work-tracking.md#set-permissions-area-path)
    :::column-end:::

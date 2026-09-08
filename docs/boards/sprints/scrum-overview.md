@@ -3,7 +3,7 @@ title: Scrum work processes overview
 titleSuffix: Azure Boards 
 description: Learn about Scrum work practices, work tracking, and progress and trends monitoring in Azure Boards.
 ms.custom: boards-sprints, engagement-fy23
-ms.service: azure-devops-boards 
+ms.service: azure-boards 
 ms.author: chcomley
 author: chcomley
 ms.topic: overview

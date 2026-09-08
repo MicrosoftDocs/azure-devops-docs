@@ -2,7 +2,7 @@
 title: Add or edit a Delivery Plan in Azure Boards
 titleSuffix: Azure Boards
 description: Learn how to add or edit a Delivery Plan in Azure Boards.
-ms.service: azure-devops-boards
+ms.service: azure-boards
 ms.author: chcomley
 author: chcomley
 ai-usage: ai-assisted

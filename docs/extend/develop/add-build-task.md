@@ -1,7 +1,7 @@
 ---
 title: Add a Custom Build or Release Task in an Extension 
 description: Learn how to create, test, and publish custom build or release pipeline tasks as Azure DevOps extensions with TypeScript and Node.js.
-ms.subservice: azure-devops-ecosystem
+ms.subservice: azure-devops-developer
 ms.custom: freshness-fy22q3, UpdateFrequency3
 ms.topic: how-to
 ai-usage: ai-assisted

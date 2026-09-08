@@ -2,9 +2,9 @@
 title: What are Azure Artifacts feeds?
 description: Learn what Azure Artifacts feeds are, explore the different feed types and how to manage them in Azure Artifacts.  
 ms.custom: peer-review-program
-ms.service: azure-devops-artifacts
+ms.service: azure-artifacts
 ms.topic: overview
-ms.date: 12/02/2025
+ms.date: 07/22/2026
 monikerRange: "<=azure-devops"
 ---
 
@@ -19,15 +19,15 @@ Azure Artifacts feeds also support saving packages from public registries like *
 
 ## Feed types
 
-Azure Artifacts feeds can be scoped to an organization or a project. A feed can also be public if it's scoped to a public project:
+You can scope Azure Artifacts feeds to an organization or a project. A feed can also be public if it's scoped to an existing public project:
 
-**Project-scoped feeds**: Feeds scoped to a project. They’re only viewable within the hosting project, and only project-scoped feeds can be designated as [public feeds](#public-feeds) by switching the project's visibility to **Public** in Project Settings.
+**Project-scoped feeds**: Feeds scoped to a project. They're only viewable within the hosting project. Only project-scoped feeds hosted in an existing public project can function as [public feeds](#public-feeds).
 
 **Organization-scoped feeds**: Feeds scoped to an organization. They’re viewable from any project within the organization. Organization-scoped feeds **cannot** be converted into project-scoped feeds.
 
 **Private feeds**: Can be either project-scoped (private project) or organization-scoped. Packages in a private feed are available only to authenticated users with at least **Feed Reader** permission.
 
-**Public feeds**: Feeds scoped to a **public** project. Packages in a public feed are available to both authenticated and anonymous users.
+**Public feeds**: Feeds scoped to an existing **public** project. Both authenticated and anonymous users can access packages in a public feed while the hosting project remains public. Starting in 2027, existing public projects will automatically convert to private, and public feeds will no longer be publicly accessible.
 
 See [Feed scoped](../feeds/project-scoped-feeds.md) to learn more about the differences between project-scoped feeds and organization scoped feeds.
 
@@ -45,7 +45,7 @@ Follow these steps and choose the appropriate scope to create a project-scoped o
 
 1. Select **Create** when you're done.
 
-    :::image type="content" source="../media/create-new-feed-devops-services.png" alt-text="A screenshot displaying how to create a new feed in Azure DevOps Services.":::
+    :::image type="content" source="../media/create-new-feed-devops-services.png" alt-text="Screenshot showing how to create a new feed in Azure DevOps Services.":::
 
 ::: moniker-end
 
@@ -59,7 +59,7 @@ Follow these steps and choose the appropriate scope to create a project-scoped o
 
 1. Select **Create** when you're done.
 
-    :::image type="content" source="../media/create-new-feed-server-2022.png" alt-text="A screenshot displaying how to create a new feed in Azure DevOps Server 2022 and Server 2020.":::
+    :::image type="content" source="../media/create-new-feed-server-2022.png" alt-text="Screenshot showing how to create a new feed in Azure DevOps Server 2022 and Server 2020.":::
 
 ::: moniker-end
 
@@ -71,22 +71,24 @@ Public feeds allow you to share your packages publicly with anyone on the intern
 
 Public feeds are **project-scoped** and inherit the visibility settings of the hosting project. Here are some important key points:
 
-- Public feeds can only be created within public projects.
+- You can only create public feeds within existing public projects.
+
+- Starting in 2027, Azure DevOps will automatically convert existing public projects to private. When that change happens, associated public feeds will no longer be publicly accessible.
 
 - Public feeds are not intended to replace existing public registries such as NuGet.org, npmjs.com, etc..
 
 - Public users cannot download universal Packages, but all other package types are supported for public access.
 
 > [!NOTE]
-> All feed views in a public feed are accessible to everyone on the internet.
+> Everyone on the internet can access all feed views in a public feed while the hosting project remains public. Starting in 2027, Azure DevOps will automatically convert existing public projects to private, and public feeds will no longer be publicly accessible.
 
 ## Create a public feed
 
 [!INCLUDE [allow-public-project-policy](../../organizations/projects/includes/allow-public-project-policy.md)]
 
-Public feeds are project-scoped feeds in a public project. Follow these steps to create a new public feed:
+Public feeds are project-scoped feeds in an existing public project. Follow these steps to create a new public feed:
 
-1. Sign in to your Azure DevOps organization and navigate to your project. Make sure that your project is **Public** in order to create a public feed.
+1. Sign in to your Azure DevOps organization and go to your existing public project.
 
 1. Select **Artifacts** > **Create Feed**.
 
@@ -94,7 +96,7 @@ Public feeds are project-scoped feeds in a public project. Follow these steps to
 
 1. Select **Create** when you're done.
 
-    :::image type="content" source="../media/new-public-feed.png" alt-text="A screenshot displaying how to create a new public feed in Azure DevOps Services.":::
+    :::image type="content" source="../media/new-public-feed.png" alt-text="Screenshot showing how to create a new public feed in Azure DevOps Services.":::
 
 ::: moniker-end
 
@@ -111,7 +113,7 @@ Public feeds are project-scoped feeds in a public project. Follow these steps to
 
 1. Select **Delete feed**, then select **Delete** again to confirm.
 
-    :::image type="content" source="media/delete-warning.png" alt-text="A screenshot displaying the warning message that appears before deleting a feed.":::
+    :::image type="content" source="media/delete-warning.png" alt-text="Screenshot showing the warning message that appears before deleting a feed.":::
 
 ## Restore deleted feeds
 
@@ -129,11 +131,11 @@ To restore a feed pending permanent deletion:
 
 1. Select **Artifacts**, open the feed picker dropdown menu, and select the **Deleted Feeds** tab.
 
-    :::image type="content" source="media/deleted-feeds.png" alt-text="A screenshot that shows how to access feeds pending permanent deletion.":::
+    :::image type="content" source="media/deleted-feeds.png" alt-text="Screenshot showing how to access feeds pending permanent deletion.":::
 
 1. Select the feed you want to restore, then select **Feed Settings**, then select **Restore Feed** when you're ready to restore your feed.
 
-    :::image type="content" source="media/feed-settings-button.png" alt-text="A screenshot displaying the feed settings button for a feed pending permanent deletion.":::
+    :::image type="content" source="media/feed-settings-button.png" alt-text="Screenshot showing the feed settings button for a feed pending permanent deletion.":::
 
 ## Permanently delete a feed
 

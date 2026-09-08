@@ -20,9 +20,6 @@
   - name: Explore work items
     displayName: items, workitems
     href: ../../test/explore-workitems-exploratory-testing.md
-  - name: Add to existing bugs
-    displayName: bugs, exploratory
-    href: ../../test/add-to-bugs-exploratory-testing.md
 - name: Microsoft Feedback client (Archived)
   items:
   - name: Request feedback

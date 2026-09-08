@@ -3,7 +3,7 @@ title: Customize work item type for inherited process
 titleSuffix: Azure DevOps
 description: Learn how to customize a process by adding or modifying a work item type for a project in Azure DevOps.
 ms.custom: inherited-process
-ms.service: azure-devops-boards
+ms.service: azure-boards
 ms.author: chcomley
 author: chcomley
 monikerRange: "<=azure-devops"

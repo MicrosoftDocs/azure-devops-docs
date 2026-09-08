@@ -263,7 +263,7 @@ In this approach, the pipeline queries the Microsoft-hosted agent IP at startup,
     Inline: |
      $ip = (Invoke-WebRequest -uri "http://ifconfig.me/ip").Content
      Add-AzKeyVaultNetworkRule -VaultName "YOUR_KEY_VAULT_NAME" -ResourceGroupName "YOUR_RESOURCE_GROUP_NAME" -IpAddressRange $ip
-     echo "##vso[task.setvariable variable=agentIP]ip"
+     echo "##vso[task.setvariable variable=agentIP]$ip"
     
 - task: AzureKeyVault@2
   inputs:
@@ -279,7 +279,7 @@ In this approach, the pipeline queries the Microsoft-hosted agent IP at startup,
     azurePowerShellVersion: LatestVersion
     ScriptType: InlineScript
     Inline: |
-     $ipRange = $env:agentIP + "/32"
+     $ipRange = "$(agentIP)/32"
      Remove-AzKeyVaultNetworkRule -VaultName "YOUR_KEY_VAULT_NAME" -IpAddressRange $ipRange
   condition: succeededOrFailed()
 ```

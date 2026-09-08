@@ -6,7 +6,7 @@ ms.custom: continuous-test, cross-service
 ms.author: chcomley
 author: chcomley
 ai-usage: ai-assisted
-ms.date: 11/07/2025
+ms.date: 08/20/2026
 monikerRange: '<= azure-devops'
 ---
 
@@ -28,10 +28,10 @@ This article shows you how to view, configure, and troubleshoot code coverage in
 
 ### Supported formats
 
-Azure Pipelines can publish coverage results, through the Publish Code Coverage Results v2 task. The task can display the results in 2 different views:
+Azure Pipelines can publish coverage results through the **Publish Code Coverage Results v2** task. The task can display results in two views:
 
-- For cobertura, jacoco, clover, gcov, pcov, and other xml formats, an HTML view generates, containing more details of the code coverage report, and is preferred by most of the customers.
-- For `.coverage`/`.cjson`/`.covx` – a tabular view generates, containing less details than the HTML view.
+- For Cobertura, JaCoCo, Clover, gcov, pcov, and other XML formats, Azure Pipelines shows the enhanced Code Coverage experience by default and can also provide an HTML report for supported publishing scenarios.
+- For `.coverage`/`.cjson`/`.covx`, Azure Pipelines shows coverage data in the Code Coverage tab and supports drill-down when source mappings are available.
 
 ### Artifacts and results
 
@@ -39,15 +39,22 @@ You can view the code coverage artifacts published during the build under the **
 
 :::image type="content" source="media/review-code-coverage-results/summary-tab-pipeline-summary.png" alt-text="Screenshot shows Summary tab with a manual run and 2 published items.":::
 
-Additionally, you can review the results from the code coverage report in the **Code Coverage** tab:
+You can also review the results from the code coverage report in the **Code Coverage** tab. The enhanced Code Coverage tab provides aggregated coverage at folder and file levels and supports drill-down navigation (folder > file > source view) where source coverage is available.
 
 :::image type="content" source="media/review-code-coverage-results/code-coverage-tab-summary.png" alt-text="Screenshot shows Code Coverage tab contents with summary, metrics, and coverage.":::
 
-- If you publish code coverage using Cobertura or JaCoCo coverage formats, the code coverage artifact contains an `.html` file that you can view offline for further analysis.
-  :::image type="content" source="media/review-code-coverage-results/view-html-report.png" alt-text="Screenshot show HTML report summary.":::
+- If you publish code coverage by using supported **Visual Studio Test** or **Publish Code Coverage Results v2** scenarios, you can use the Code Coverage tab toggle to switch between the enhanced experience and the HTML report view. HTML report availability depends on the published coverage format and tooling.
+  :::image type="content" source="media/review-code-coverage-results/view-html-report.png" alt-text="Screenshot shows HTML report summary.":::
 - For .NET and .NET Core, you can access the link to download the artifact by choosing the code coverage milestone in the build summary.
 - **Visual Studio Test** can collect coverage for .NET and .NET Core apps. It produces `.coverage` files that you can download and use for further analysis in Visual Studio.
-  :::image type="content" source="media/review-code-coverage-results/view-dot-coverage-report.png" alt-text="Screenshot show code coverage results.":::
+  :::image type="content" source="media/review-code-coverage-results/view-dot-coverage-report.png" alt-text="Screenshot shows code coverage results.":::
+
+> [!NOTE]
+> The Code Coverage tab UI is updated over time. If your experience looks different from these screenshots, look for equivalent coverage summary, drill-down navigation, and report toggle options in the same tab.
+
+### Use the details view to inspect coverage composition
+
+Use the **Details** view in the Code Coverage tab to break down coverage by module and, when available, by build configuration. This view helps you understand how overall coverage is composed and identify modules or configurations that reduce total coverage.
 
 ### Tasks
 
@@ -136,7 +143,7 @@ Several reasons can cause this issue:
 
 - **Build configuration issues**: Sometimes multiple build configuration values exist and you don't set all values like BuildFlavour or BuildPlatform. The UI shows only values of particular build configurations, which is why other modules are missing.
 
-- **Large HTML files**: If the `.html` file is larger than 7 MB, the report isn't available in the Code Coverage tab. As a workaround, download the "Code Coverage Report_*" artifact from the published artifacts in the Summary.
+- **Large HTML files**: If the `.html` file is larger than 7 MB, it might not load when you switch to HTML report view from the Code Coverage tab. As a workaround, download the "Code Coverage Report_*" artifact from the published artifacts in **Summary**.
 
 - **Failure messages**: If the Code Coverage tab contains a failure message related to a user-specific error, investigate what triggered that error message.
 
@@ -205,7 +212,7 @@ Several factors can cause this issue:
 
 ### In the Code Coverage tab, I don't see the right HTML report
 
-When there are problems generating the `.html` report, the system falls back to a simplified view.
+When there are problems generating the `.html` report after you switch from the enhanced experience to HTML report view, the system falls back to a simplified view.
 
 :::image type="content" source="media/review-code-coverage-results/code-coverage-modules.png" alt-text="Screenshot shows Code Coverage tab and list of modules and visual indicator of coverage chart, which is the fallback simplified view.":::
 

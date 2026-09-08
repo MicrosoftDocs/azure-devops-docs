@@ -2,7 +2,7 @@
 title: Connect Azure Boards to Excel (legacy)
 titleSuffix: Azure Boards
 description: Learn how to use the legacy Office integration add-in to connect Excel to Azure Boards for work item tracking.
-ms.service: azure-devops-boards
+ms.service: azure-boards
 ms.author: chcomley
 author: chcomley
 ms.topic: how-to

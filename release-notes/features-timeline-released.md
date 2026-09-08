@@ -2,7 +2,7 @@
 title: Azure DevOps Released Features
 author: gloridelmorales
 ms.author: glmorale
-ms.date: 6/10/2026
+ms.date: 9/4/2026
 ms.topic: release-notes
 ms.service: azure-devops
 ms.subservice: azure-devops-release-notes
@@ -37,6 +37,39 @@ You can also [view the build numbers for each version](#azure-devops-server-buil
             <th>Server</th>
         </tr>
     </thead>
+<tr>
+    <td rowspan="12"><a href="2026/sprint-279-update.md" data-raw-source="[September 4 2026](2026/sprint-279-update.md)">September 4 2026</a></td>
+    <td>Remote MCP Server handling rate limits</td><td>General</td><td>N/A</td></tr>
+    <td>Azure DevOps plugin now available in GitHub Copilot app</td><td>General</td><td>N/A</td></tr>
+    <td>Malware alerts (private preview)</td><td>GitHub Advanced Security for Azure DevOps</td><td>N/A</td></tr>
+    <td>Security overview metrics (private preview)</td><td>GitHub Advanced Security for Azure DevOps</td><td>N/A</td></tr>
+    <td>Project-level billing for Autofix AI credit usage</td><td>GitHub Advanced Security for Azure DevOps</td><td>N/A</td></tr>
+    <td>Improved security for work item notification emails</td><td>Boards</td><td>Future</td></tr>
+    <td>GitHub Copilot Code Review (public preview)</td><td>Repos</td><td>N/A</td></tr>
+    <td>Longer pull request descriptions in Azure Repos</td><td>Repos</td><td>Future</td></tr>
+    <td>Azure DevOps Enterprise Live Migrations (public preview)</td><td>Repos</td><td>N/A</td></tr>
+    <td>Automatic titles for multi-commit pull requests</td><td>Repos</td><td>Future</td></tr>
+    <td>Docker socket no longer mapped by default for Linux container jobs</td><td>Pipelines</td><td>Future</td></tr>
+    <td>Faster wiki search by page title</td><td>Wiki</td><td>Future</td></tr>
+<tr>
+    <td rowspan="8"><a href="2026/sprint-278-update.md" data-raw-source="[August 20 2026](2026/sprint-278-update.md)">August 20 2026</a></td>
+    <td>Azure DevOps Remote MCP Server is now generally available</td><td>General</td><td>N/A</td></tr>
+    <td>Azure Monitor Logs audit streaming now uses Microsoft Entra authentication for workspace authorization</td><td>General</td><td>Future</td></tr>
+    <td>Audit events for expired Visual Studio subscriptions and GitHub Enterprise licenses</td><td>General</td><td>Future</td></tr>
+    <td>Audit events for service hooks</td><td>General</td><td>Future</td></tr>
+    <td>Support for ARM64 with VSTest v3 task</td><td>Pipelines</td><td>N/A</td></tr>
+    <td>Improved code coverage experience for Azure Pipelines</td><td>Pipelines</td><td>Future</td></tr>
+    <td>Pipeline builds are moving to Microsoft Entra-issued access tokens</td><td>Pipelines</td><td>Future</td></tr>
+    <td>Improved Wiki page recovery</td><td>Wiki</td><td>Future</td></tr>
+<tr>
+    <td rowspan="7"><a href="2026/sprint-277-update.md" data-raw-source="[July 30 2026](2026/sprint-277-update.md)">July 30 2026</a></td>
+    <td>Enterprise Live Migration MCP Server Tools (Preview)</td><td>General</td><td>N/A</td></tr>
+    <td>View development dependency information on the Alerts page</td><td>GitHub Advanced Security for Azure DevOps</td><td>N/A</td></tr>
+    <td>Copilot Autofix avoids empty branches and pull requests</td><td>GitHub Advanced Security for Azure DevOps</td><td>N/A</td></tr>
+    <td>Copilot Autofix pull requests appear automatically in alert details</td><td>GitHub Advanced Security for Azure DevOps</td><td>N/A</td></tr>
+    <td>Copilot Autofix pull requests are easier to identify</td><td>GitHub Advanced Security for Azure DevOps</td><td>N/A</td></tr>
+    <td>Pull request annotations on cards</td><td>Boards</td><td>Future</td></tr>
+    <td>Azure DevOps service connection support in InvokeRestAPI task</td><td>Pipelines</td><td>Future</td></tr>
 <tr>
     <td rowspan="11"><a href="2026/sprint-276-update.md" data-raw-source="[July 9 2026](2026/sprint-276-update.md)">July 9 2026</a></td>
     <td>Enterprise Live Migration tools added to the Azure DevOps Remote MCP Server</td><td>General</td><td>Future</td></tr>

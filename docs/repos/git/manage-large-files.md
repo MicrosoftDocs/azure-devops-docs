@@ -1,105 +1,144 @@
 ---
-title: Work with large files in your Git repo
+title: Manage and Store Large Files in Git
 titleSuffix: Azure Repos
-description: Get recommendations on how to manage large binary files in Git, Visual Studio, and Azure DevOps Server.
+description: Learn where to store large files in Git, when to use Azure Artifacts or Git LFS, and how to clean history. Follow these steps to optimize your repo.
 ms.service: azure-devops-repos
+ms.custom: support-driven-update, support
+ai-usage: ai-assisted
 ms.topic: how-to
-ms.date: 03/14/2018
+ms.date: 07/21/2026
 monikerRange: '<= azure-devops'
 ms.subservice: azure-devops-repos-git
 ---
 
 
-# Manage and store large files in Git
+# Work with large files in your Git repo
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
-Git helps keep the footprint of your source code small because the differences between versions are easily picked out and code is easily compressed.
-Large files that don't compress well and that change entirely between versions (such as binaries) present problems when they're stored in your Git repos.
-Git's fast performance comes from its ability to address and switch to all versions of a file from its local storage.
+Use Git for source files, Azure Artifacts for dependencies, and Git LFS for large binary files that change often. If your repo already contains large files, this article helps you decide what to keep in Git, what to move out, and when to remove binaries from history.
 
-If you have large, undiffable files in your repo (such as binaries), you keep a full copy of those files in your repo every time you commit a change to them.
+## Decide where to store each file
+
+If you're deciding what to do with files that are already in a repo, start here:
+
+- Keep source files, scripts, and text files in Git.
+- Move dependencies and reusable packages to [Azure Artifacts package management](../../artifacts/start-using-azure-artifacts.md).
+- Use Git LFS for large binary files that change often and don't diff well.
+- Remove large binaries from the repository history if they're already checked in and no longer belong there. See [Remove large files from a repo](remove-binaries.md).
+
+If your repo is already large, review the repository and push limits before you choose a storage approach. See [Git limits](limits.md) for the file, push, and path limits that affect large repos.
+
+## Choose the right storage option for Git, package management, and Git LFS
+
+Use this table to pick the best fit.
+
+| File type or scenario | Use |
+|---|---|
+| Source code, scripts, and text files | Git |
+| Dependencies and reusable packages | Azure Artifacts package management |
+| Large binary files that change often | Git LFS |
+| Azure DevOps Server Git LFS and Kerberos | See the Kerberos guidance in this article and the linked article at the end |
+
+Git works best for text-based source files and other content that changes in small, readable increments.
+
+Large binaries aren't a good fit for regular Git storage because:
+
+- Git stores version differences efficiently for source code, scripts, and text files.
+- Large files that change entirely between versions don't compress or diff well.
+- Big binary files increase clone, fetch, branch, and checkout times.
+
+If you add large, undiffable files such as binaries to your repo, you keep a full copy of those files in your repo every time you commit a change to them.
 If many versions of these files exist in your repo, they dramatically increase the time to check out, branch, fetch, and clone your code.  
 
-## What kinds of files should you store in Git?
+## Which files belong in Git?
 
-### Commit source code, not dependencies
+Use the simplest option that fits the file type and how often it changes.
 
-As your team works with editors and tools to create and update files, you should put these files into Git so your team can enjoy the benefits of Git's workflow.
-Don't commit other types of files into your repo: for example, DLLs, library files, and other dependencies that your team doesn't create but your code depends on. Deliver these files
-through [package management](../../artifacts/start-using-azure-artifacts.md) to your systems.
+### Keep source code in Git, not dependencies
+
+Use Git for files your team edits directly. Keep dependencies out of the repo and deliver them through [package management](../../artifacts/start-using-azure-artifacts.md).
+
+- Put source files in Git.
+- Store DLLs, library files, and other dependencies outside the repo.
+- Use package management to version and deploy dependencies.
 
 Package management bundles your dependencies and installs the files on your system when you deploy the package.
 Packages are versioned to ensure that code tested in one environment runs the same in another environment, as long as the environments have the same installed packages.
 
-### Don't commit outputs
+### Don't commit build outputs
 
-Don't commit the binaries, logs, tracing output, or diagnostic data from your builds and tests. These are outputs from your code, not the source code itself. Share logs and trace information
-with your team through [work item tracking](../../boards/backlogs/add-work-items.md) tools or through team file sharing.
+Use Git for source, not build output or test artifacts.
 
-### Store small, infrequently updated binary sources in Git
+- Don't commit binaries, logs, tracing output, or diagnostic data.
+- Share logs and trace information through [work item tracking](../../boards/work-items/view-add-work-items.md) or team file sharing.
 
-Binary source files that are infrequently updated have relatively few versions committed. They don't take up much space if their file size is small.
-Images for the web, icons, and other smaller art assets can fall into this category. It's better to store these files in Git with the rest of your source so your team can use a
-consistent workflow.
+### Store small binary files in Git
+
+Use Git for small binary files only when they change infrequently.
+
+- Good examples include web images, icons, and other small art assets.
+- Keeping these files in Git preserves a consistent workflow for the team.
 
 > [!IMPORTANT]
-> Even small binaries can cause problems if they're updated often. For example, 100 changes to a 100-KB binary file use as much storage as 10 changes to a 1-MB binary. Due to the frequency of updates, the smaller binary will slow down branching performance more often than the large binary.
+> Even small binaries can cause problems if they're updated often. For example, 100 changes to a 100-KB binary file use as much storage as 10 changes to a 1-MB binary. Due to the frequency of updates, the smaller binary file slows down branching performance more often than the large binary file.
 
-### Don't commit large, frequently updated binary assets
+### Avoid large, frequently updated binary assets
 
-Git manages one main version of a file and then stores only the differences from that version, in a process known as *deltification*.
-Deltification and file compression allow Git to store your entire code history in your local repo.
-Large binaries usually change entirely between versions and are often already compressed. These files are difficult for Git to manage because the differences between versions are large.
+Git can't efficiently store large binaries because these files often change between versions and are usually already compressed.
 
-Git must store the entire contents of each version of the file and has difficulty saving space through deltification and compression.
-Storing the full versions of these files causes the repo size to increase over time. The increased repo size reduces branching performance, increases the clone times, and expands storage requirements.
+- Git stores the full contents of each version.
+- The repository size grows over time.
+- Clone, branch, fetch, and checkout operations slow down.
 
-## Strategies for working with large binary source files
+Because Git must store the full contents of each version, deltification and compression don't help much.
+As these files accumulate, the repository gets larger, branching gets slower, and clone times increase.
 
-- Don't commit compressed archives of data. It's better to uncompress the files and commit the diffable sources. Let Git handle compressing the data in your repo.
-- Avoid committing compiled code and other binary dependencies. Commit the source and build the dependencies, or use a package management solution to version and supply these files
-to your system.
-- Store configuration and other structured data in diffable plain-text formats, such as JSON.
+## Strategies for large binary source files
 
-## What is Git LFS?
+- Don't commit compressed archives. Uncompress the data and commit the diffable sources instead.
+- Avoid committing compiled code and other binary dependencies. Build them or supply them through package management.
+- Store configuration and other structured data in diffable plain-text formats such as JSON.
 
-When you have source files with large differences between versions and frequent updates, you can use [Git Large File Storage (LFS)](https://git-lfs.github.com/) to manage these file types.
-Git LFS is an extension to Git that provides data that describes the large files in a commit to your repo. It stores the binary file contents into separate remote storage.
+## What is Git Large File Storage (Git LFS)?
 
-When you clone and switch branches in your repo, Git LFS downloads the correct version from that remote storage.
-Your local development tools transparently work with the files as if they were committed directly to your repo.
+Use [Git Large File Storage (LFS)](https://git-lfs.github.com/) for source files that change often and differ significantly between versions.
 
-### Benefits
+Git LFS:
 
-A benefit of Git LFS is that your team can use the familiar end-to-end Git workflow no matter what files your team creates.
-LFS handles large files to prevent them from adversely affecting the overall repository.
-Additionally, as of version 2.0, Git LFS supports [file locking](https://github.com/git-lfs/git-lfs/wiki/File-Locking) to help your team work on large, undiffable assets like videos, sounds, and game maps.
+- Stores pointers to large files in your repo instead of the full file contents.
+- Stores the binary content in separate remote storage.
+- Downloads the correct version when you clone or switch branches.
+- Keeps your normal Git workflow for large binaries without moving the full file contents through every clone and branch change.
 
-Git LFS is [is fully supported and free in Azure DevOps Services](https://devblogs.microsoft.com/devops/announcing-git-lfs-on-all-vso-git-repos/).
-To use LFS with Visual Studio, you need [Visual Studio 2015 Update 2](/visualstudio/releasenotes/vs2017-relnotes) or later.
-Just follow the [instructions to install the client](https://git-lfs.github.com/), set up LFS tracking for files on your local repo, and then push your changes to Azure Repos.
+### Git LFS benefits
 
-### Limitations
+Git LFS keeps the Git workflow while moving large file content out of the main repo.
 
-Git LFS has some drawbacks that you should consider before adopting it:
+- Your team can keep using the same end-to-end Git workflow.
+- Large files stay out of the main repository history, which helps keep the repo manageable.
+- File locking supports shared work on large, undiffable assets like videos, sounds, and game maps.
 
-- Every Git client that your team uses must install the Git LFS client and understand its [tracking configuration](https://github.com/github/git-lfs/tree/main/docs).
-- If the Git LFS client is not installed and configured correctly, you won't see the binary files committed through Git LFS when you clone your repo.
-   Git will download the data that describes the large file (which is what Git LFS commits to the repo) and not the binary file.
-   Committing large binaries without the Git LFS client installed will push the binary to your repo.
-- Git can't merge the changes from two different versions of a binary file, even if both versions have a common parent.
-   If two people are working on the same file at the same time, they must work together to reconcile their changes to avoid overwriting the other's work.
-   Git LFS provides [file locking](https://github.com/git-lfs/git-lfs/wiki/File-Locking) to help.
-   Users must still take care to always pull the latest copy of a binary asset before beginning work.
-- Azure Repos currently doesn't support using Secure Shell (SSH) in repos with Git LFS tracked files.
-- If a user drags a binary file via the web interface into a repo that's configured for Git LFS, the binary is committed to the repo--not the pointers that would be committed via the Git LFS client.
-- Although there isn't a strict file-size restriction, the server's available free space and current workload could constrain the performance and functionality.
-- The time limit for one file upload is one hour.
+Azure DevOps Services fully supports Git LFS and offers it for free.
+To use LFS, install the [Git LFS client](https://git-lfs.github.com/), configure tracking for the files you want to store in LFS, and then push your changes to Azure Repos.
 
-### File format
+For Azure DevOps Server and Kerberos-specific guidance, see [Kerberos and Git LFS](lfs-kerberos.md).
 
-The file written into your repo for a Git LFS tracked file has a few lines with a key/value pair on each line:
+### Git LFS limitations
+
+Git LFS still has a few tradeoffs to plan for:
+
+- Every Git client must install the Git LFS client and understand its [tracking configuration](https://github.com/github/git-lfs/tree/main/docs).
+- If the client isn't installed or configured correctly, clones download pointer data instead of the binary file.
+- Git can't merge different versions of a binary file, so teammates still need to coordinate changes.
+- Git LFS provides [file locking](https://github.com/git-lfs/git-lfs/wiki/File-Locking), but users still need to pull the latest copy before they begin work.
+- Azure Repos doesn't support Secure Shell (SSH) for repos with Git LFS tracked files.
+- Dragging a binary file into the web interface commits the binary to the repo, not the LFS pointer.
+- Large uploads can be constrained by available free space, current workload, and the one-hour upload limit.
+
+### Git LFS file format
+
+The file you write into your repo for a Git LFS tracked file has a few lines with a key/value pair on each line:
 
 ```
 version https://git-lfs.github.com/spec/v1
@@ -108,9 +147,17 @@ size 4923023
 ```
 
 > [!NOTE]
-> The GitHub URL included for the version value only defines the LFS pointer file type. It's not a link to your binary file.
+> - The GitHub URL included for the version value only defines the LFS pointer file type. It's not a link to your binary file.
+> - For Git LFS earlier than 2.10.0 with Azure DevOps Server, upgrade to Git LFS 2.10.0 or later to use Kerberos authentication. For current guidance, see [Kerberos and Git LFS](lfs-kerberos.md) and [Reconfigure Azure DevOps Server to use Kerberos instead of NTLM](https://devblogs.microsoft.com/devops/reconfigure-azure-devops-server-to-use-kerberos-instead-of-ntlm/).
 
-### Known issues
+## Plan for Azure DevOps Server and Kerberos
 
-If you use a version of LFS earlier than 2.4.0 with Azure DevOps Server, an extra setup step is required to [authenticate via NTLM instead of Kerberos](lfs-kerberos.md).
-This step is no longer necessary as of LFS 2.4.0, and we highly recommend that you upgrade.
+If you use Azure DevOps Server and Windows Authentication, plan for Kerberos when you use Git LFS. Git LFS 2.10.0 and later supports Kerberos authentication.
+
+If you need to update older Azure DevOps Server guidance, start with [Kerberos and Git LFS](lfs-kerberos.md) and the linked Azure DevOps Server authentication guidance.
+
+## Related content
+
+- [Kerberos and Git LFS](lfs-kerberos.md)
+- [Manage repository limits](limits.md)
+- [Remove large files from a repo](remove-binaries.md)

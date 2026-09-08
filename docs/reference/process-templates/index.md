@@ -3,7 +3,7 @@ title: Process templates overview
 titleSuffix: Azure DevOps  
 description: Learn about process templates for Azure DevOps
 ms.custom: engagement-fy23  
-ms.service: azure-devops-boards
+ms.service: azure-boards
 ms.author: chcomley
 author: chcomley
 ms.topic: overview

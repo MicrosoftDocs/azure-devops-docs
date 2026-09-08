@@ -34,7 +34,7 @@ This article shows how to create an RSA key pair, add the public key to your pro
 
 | Category | Requirements |
 |--------------|-------------|
-|**Permissions**| [Access to clone the repository](set-git-repository-permissions.md#default-repository-permissions)|
+|**Permissions**| [Access to clone the repository](set-git-repository-permissions.md#review-default-repository-permissions)|
 |**Policies**| [SSH authentication enabled](../../organizations/accounts/change-application-access-policies.md)|
 |**Local tools**| Git and an OpenSSH client available from a terminal or shell |
 |**Windows environment**| If you use Windows, [Git for Windows](https://www.git-scm.com/download/win) or another environment where `git`, `ssh`, and `ssh-keygen` are available |

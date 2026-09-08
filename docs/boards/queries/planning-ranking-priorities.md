@@ -3,7 +3,7 @@ title: Create queries based on rank and priority fields
 titleSuffix: Azure Boards
 description: Learn how to create queries based on planning, ranking, priority, and picklist fields in Azure DevOps and Azure Boards.
 ms.custom: boards-queries, copilot-scenario-highlight
-ms.service: azure-devops-boards
+ms.service: azure-boards
 ms.author: chcomley
 author: chcomley
 ms.topic: example-scenario

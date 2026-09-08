@@ -2,7 +2,7 @@
 title: Query Work Items By History
 titleSuffix: Azure Boards
 description: Learn how to query work item history and comments to support audit requirements when working in Azure Boards.
-ms.service: azure-devops-boards
+ms.service: azure-boards
 ms.custom: boards-queries, engagement-fy23, copilot-scenario-highlight
 ai-usage: ai-assisted
 ms.author: chcomley

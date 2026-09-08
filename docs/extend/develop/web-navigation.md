@@ -1,5 +1,5 @@
 ---
-ms.subservice: azure-devops-ecosystem
+ms.subservice: azure-devops-developer
 ms.custom: UpdateFrequency3
 title: Developing extensions for vertical web navigation
 description: Guidance for developing extensions to be used with vertical web navigation

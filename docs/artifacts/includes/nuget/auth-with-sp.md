@@ -1,6 +1,6 @@
 ---
 ms.topic: include
-ms.service: azure-devops-artifacts
+ms.service: azure-artifacts
 ms.author: wonga
 author: wonga
 ms.date: 12/10/2024

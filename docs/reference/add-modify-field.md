@@ -2,7 +2,7 @@
 title: Add or modify a work tracking field
 titleSuffix: Azure DevOps 
 description: Modify or add a work item field for supporting queries, reports, and workflow in Azure DevOps.
-ms.service: azure-devops-boards
+ms.service: azure-boards
 ms.custom: process, engagement-fy23
 ms.author: chcomley
 author: chcomley

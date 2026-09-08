@@ -2,7 +2,7 @@
 title: Code review and feedback field reference
 titleSuffix: Azure Boards
 description: Learn how to use the code review and feedback fields to track code review and feedback requests and responses.
-ms.service: azure-devops-boards
+ms.service: azure-boards
 ms.topic: reference
 ms.author: chcomley
 author: chcomley

@@ -3,7 +3,7 @@ title: About work items and work item types
 titleSuffix: Azure Boards
 description: Learn how Azure Boards supports work items to plan, track, and collaborate with others when developing software applications in Azure DevOps. 
 ms.custom: work-items, engagement-fy23
-ms.service: azure-devops-boards
+ms.service: azure-boards
 ms.author: chcomley
 author: chcomley
 ms.topic: overview

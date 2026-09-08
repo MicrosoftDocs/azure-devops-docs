@@ -2,7 +2,7 @@
 title: Sprint and scrum best practices
 titleSuffix: Azure Boards 
 description: Learn best practices for planning effective sprints, managing technical debt, and optimizing your team's workflow in Azure Boards.
-ms.service: azure-devops-boards
+ms.service: azure-boards
 ms.custom: boards-sprints, engagement-fy23 
 ms.author: chcomley
 ms.reviewer: chcomley

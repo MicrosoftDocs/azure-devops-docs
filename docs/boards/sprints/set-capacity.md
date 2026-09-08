@@ -2,7 +2,7 @@
 title: Set the team sprint capacity in Azure Boards
 titleSuffix: Azure Boards 
 description: In this tutorial, determine team capacity, adjust work to fit team capacity, and set capacity for a sprint in Azure Boards.
-ms.service: azure-devops-boards
+ms.service: azure-boards
 ms.custom: boards-sprints, copilot-scenario-highlight
 ms.author: chcomley
 author: chcomley

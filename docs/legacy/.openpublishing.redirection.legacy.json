@@ -4798,7 +4798,7 @@
     },
     {
       "source_path_from_root": "/docs/test/manual-exploratory-testing/add-to-bugs-exploratory-testing.md",
-      "redirect_url": "/azure/devops/test/add-to-bugs-exploratory-testing",
+      "redirect_url": "/azure/devops/test/connected-mode-exploratory-testing#add-findings-to-an-existing-similar-bug",
       "redirect_document_id": false
     },
     {
@@ -5108,7 +5108,7 @@
     },
     {
       "source_path_from_root": "/docs/manual-test/add-to-bugs-exploratory-testing.md",
-      "redirect_url": "/azure/devops/test/add-to-bugs-exploratory-testing",
+      "redirect_url": "/azure/devops/test/connected-mode-exploratory-testing#add-findings-to-an-existing-similar-bug",
       "redirect_document_id": false
     },
     {

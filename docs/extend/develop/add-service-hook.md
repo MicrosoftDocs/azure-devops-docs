@@ -1,5 +1,5 @@
 ---
-ms.subservice: azure-devops-ecosystem
+ms.subservice: azure-devops-developer
 title: Create a custom consumer for service hooks
 titleSuffix: Azure DevOps
 description: Learn how to create a custom consumer for service hooks in Azure DevOps.

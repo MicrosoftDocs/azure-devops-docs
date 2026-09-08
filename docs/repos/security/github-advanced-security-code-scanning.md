@@ -8,7 +8,7 @@ ms.topic: how-to
 ms.author: laurajiang
 author: laurajjiang
 monikerRange: 'azure-devops'
-ms.date: 06/15/2026
+ms.date: 06/24/2026
 ms.custom: cross-service, sfi-image-nochange
 ---
 
@@ -39,6 +39,8 @@ There are two main ways to set up code scanning for your repository: **default s
 **Default setup** is the quickest way to enable code scanning. It creates a managed scanning configuration behind the scenes and requires no pipeline changes. We recommend starting with default setup for most repositories.
 
 Default setup scans the following languages: C#, C/C++, Java, JavaScript/TypeScript, Python, Ruby, and Rust. Go and Swift aren't currently supported by default setup. To scan these languages, use advanced setup.
+
+When you enable default setup on a repository that contains C/C++, C/C++ appears as a supported language in the additional details panel and is scanned as part of your configured default setup runs.
 
 **Advanced setup** gives you full control by adding CodeQL tasks directly to your Azure Pipelines. Use advanced setup when you need to:
 - Manage specific agent pools for different languages or compute needs
@@ -73,9 +75,26 @@ Select the agent pool used to run CodeQL default setup scans across all reposito
 
 Select when CodeQL default setup scans run for all repositories in the organization. You can choose a specific day of the week for weekly scans. The next scheduled run date is displayed below the dropdown.
 
+> [!NOTE]
+> When you enable default setup at the organization or project level, an initial run is automatically queued so you don't have to wait for the scheduled weekly run to get your first results.
+
 ### Cancel running or queued scans
 
 If you need to stop any actively running or queued default setup scans, you can manually cancel them through **Organization settings** > **Repositories**. Users with the **Advanced Security: manage settings** permission on the repository can cancel running or queued default setup runs.
+
+## Monitor default setup runs
+
+You can monitor and find your CodeQL default setup runs from the agent pool job log view.
+
+- **Enhanced log viewer** — when a default setup run fails, the failure appears at the top of the log viewer. You can quickly investigate what went wrong without scanning through the entire log.
+
+   :::image type="content" source="media/github-advanced-security-code-scanning/codeql-default-setup-log-viewer.png" lightbox="media/github-advanced-security-code-scanning/codeql-default-setup-log-viewer.png" alt-text="Screenshot of the log viewer for a CodeQL default setup run, with the failure surfaced at the top of the log.":::
+
+- **Run naming** — default setup runs follow a naming convention that makes them easy to identify at a glance in the agent pool job log view.
+
+- **State and repository filters** — filter jobs by **State** and **Repository** for better visibility into what happened to a job across your agent pool. These filters apply to all jobs in the view, not just default setup runs.
+
+   :::image type="content" source="media/github-advanced-security-code-scanning/codeql-default-setup-job-filters.png" lightbox="media/github-advanced-security-code-scanning/codeql-default-setup-job-filters.png" alt-text="Screenshot of the agent pool job log view with the State and Repository filters.":::
 
 ## Advanced setup for code scanning
 

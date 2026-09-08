@@ -3,7 +3,7 @@ title: Remove, delete, and restore work items in Azure Boards
 titleSuffix: Azure Boards
 description: Learn how to remove, delete, or restore work items in Azure Boards to manage backlogs and boards more efficiently.
 ms.custom: boards-backlogs, linked-from-support, copilot-scenario-highlight
-ms.service: azure-devops-boards
+ms.service: azure-boards
 ms.author: chcomley
 author: chcomley
 ms.topic: how-to

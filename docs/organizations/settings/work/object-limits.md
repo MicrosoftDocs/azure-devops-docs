@@ -1,14 +1,14 @@
 ---
 title: Work tracking, process, and project limits
 titleSuffix: Azure DevOps
-description: See limits on numbers of objects and operations you cn specify for work items, queries, backlogs, boards, and other work tracking objects in Azure DevOps.
-ms.custom: "inherited-process, linked-from-support, cross-project"
-ms.service: azure-devops-boards
+description: See limits on numbers of objects and operations you can specify for work items, queries, backlogs, boards, and other work tracking objects in Azure DevOps.
+ms.custom: "inherited-process, linked-from-support, cross-project, support-driven-update"
+ms.service: azure-boards
 ms.author: chcomley
 author: chcomley
 ms.topic: reference
 monikerRange: "<= azure-devops"
-ms.date: 11/06/2025
+ms.date: 07/22/2026
 #customer intent: As an Azure DevOps administrator, I want to understand the operational and practical limits on objects and operations so I can manage my projects, teams, and tools effectively.
 ---
 
@@ -17,6 +17,9 @@ ms.date: 11/06/2025
 [!INCLUDE [version-lt-eq-azure-devops](../../../includes/version-lt-eq-azure-devops.md)]
 
 This article describes operational and object limits that Azure DevOps places on work tracking operations and customizations. Some practical limits also apply. Consider these limits when you customize work item types (WITs).
+
+> [!TIP]
+> Use the **Object Limit Tracker** for real-time visibility into your organization's resource usage across all limit categories. For more information, see [Introducing Object Limit Tracker in Azure DevOps](https://devblogs.microsoft.com/devops/introducing-object-limit-tracker-in-azure-devops/).
 
 ## Work items and queries
 
@@ -38,7 +41,13 @@ The following limits apply to work item and query definitions.
 | Work item revisions (REST API)\* | 10,000 | 
 | Favorite queries per project | 200 queries |
 
-\*The REST API for Azure DevOps Services enforces a work item revision limit of 10,000 updates. This limit restricts updates made through the REST API, but doesn't apply to updates from the web portal.
+\*The REST API for Azure DevOps Services enforces a work item revision limit of 10,000 updates. This limit applies only to REST API updates and doesn't affect updates made through the web portal. If you're automating work item updates via the API and encounter this limit, consider creating a new work item to continue tracking instead of updating the existing one.
+
+**What happens when you reach a limit:**
+- **Query execution time:** The query stops and returns a timeout error. Add more specific filter conditions or date ranges to reduce scope.
+- **Query results:** Results are truncated at 20,000 items - no error is shown. Refine your filter conditions or split the query into multiple saved queries.
+- **Attachment size:** The attachment is rejected at upload time with an error message. Compress or split the file before attaching.
+- **Work item links:** New links are blocked when the limit is reached. Consider consolidating related links or archiving older work items.
 
 ::: moniker-end
 
@@ -61,7 +70,7 @@ The following limits apply to work item and query definitions.
 
 ::: moniker-end
 
-For information about improving query performance, see [Best practices to define a query](../../../boards/queries/using-queries.md#best-practices).
+If a query times out or returns too many results, see [Best practices to define a query](../../../boards/queries/using-queries.md#best-practices) for guidance on optimizing query performance.
 
 ## Backlogs, boards, dashboards, and teams
 
@@ -90,19 +99,22 @@ The following operational and object limits apply to teams, work item tags, back
 
 \*Each backlog can display up to 10,000 work items, but there's no specific limit on the number of work items you can define. If your backlog exceeds 10,000 items, consider adding a team and moving some work items to the new team's backlog.
 
+**What happens when you reach a limit:**
+- **Backlog display:** Work items beyond the display limit are hidden from the backlog but aren't deleted. Use a query to find and manage hidden items.
+- **Board cards:** Cards beyond the limit are hidden from board view. Items in the **Proposed** and **Completed** state categories don't count toward the 1,000-card limit.
+- **Dashboard limit:** New dashboards can't be created once the limit is reached. Review and remove unused dashboards to free space.
+
 > [!TIP]
-> If you're approaching the dashboard limits, you can take the following actions to reduce their number.
-> - Review the last accessed date or check with team members, then remove dashboards that are duplicates or unused.
+> If you're approaching the dashboard limits, take the following actions to reduce their number.
+> - Review the last accessed date or check with team members, and then remove dashboards that are duplicates or unused.
 > - Export the data and then archive old dashboards.
 > - Combine and consolidate similar dashboards by adding more widgets to dashboards.
-> - Use the Object Limit Tracker for real-time visibility into resource usage, including dashboards. This feature can help you proactively manage your limits and avoid potential issues. For more information, see [Introducing Object Limit Tracker in Azure DevOps](https://devblogs.microsoft.com/devops/introducing-object-limit-tracker-in-azure-devops/).
 
-#### Other limits
+### Additional considerations
 
-- Completed or closed work items don't display on backlogs and boards if their **Changed Date** is older than a year. You can still list these items using a query. To make the items appear on a backlog or board, make a minor change to reset the display clock.
+- Backlogs and boards don't show completed or closed work items if their **Changed Date** is older than a year. This behavior is expected, not a bug. You can still find these work items by running a query. To make a work item reappear on a backlog or board, make any minor update to reset its **Changed Date** - for example, add a comment or update a field value.
 - Avoid nesting backlog items of the same type. For more information, see [Fix reordering and nesting issues](../../../boards/backlogs/resolve-backlog-reorder-issues.md).
 - Avoid assigning the same area paths to more than one team. For more information, see [Limitations of multiteam board views](../../../boards/boards/kanban-overview.md).
-- By default, work item limits might be set to lower values initially.
 
 ::: moniker-end
 
@@ -123,7 +135,7 @@ The following operational display and object limits apply to teams, work item ta
 
 \*Each backlog can display up to 999 work items. If your backlog exceeds this limit, consider creating a new team and moving some of the work items to the new team's backlog.
 
-#### Other limits
+### Additional considerations
 
 - Avoid nesting backlog items of the same type. For more information, see [Fix reordering and nesting issues](../../../boards/backlogs/resolve-backlog-reorder-issues.md).
 - Avoid assigning the same area paths to multiple teams. For more information, see [Limitations of multiteam board views](../../../boards/boards/kanban-overview.md).
@@ -140,19 +152,21 @@ If you [integrate your project with GitHub](../../../cross-service/github-integr
 | Azure Boards web UI | 1,000 connected GitHub repositories per connection |
 | Azure Boards API\*| 2,000 connected GitHub repositories per connection |
 
-\*For more information, see [GitHub Connections - Get GitHub Connections](/rest/api/azure/devops/wit/github-connections/get-github-connections?view=azure-devops-rest-7.2&tabs=HTTP&preserve-view=true).
+\*For more information, see [GitHub Connections - Get GitHub Connections](/rest/api/azure/devops/wit/github-connections/get-github-connections?view=azure-devops-rest-latest&tabs=HTTP&preserve-view=true).
+
+**What happens when you reach a limit:** When a connection reaches its repository limit, you can't add more repositories to that connection. Create a new GitHub connection to add additional repositories.
 
 ## Projects
 
 ::: moniker range="azure-devops"
 
-Azure DevOps Services limits each organization to 1,000 projects, an increase over the previous limit of 300 projects. Above 300 projects, certain experiences, like connecting to a project from Visual Studio, might degrade.
+Azure DevOps Services limits each organization to 1,000 projects. When you go beyond 300 projects, certain experiences, like connecting to a project from Visual Studio, might degrade. If you're experiencing performance problems in an organization with many projects, consider consolidating projects or distributing work across multiple organizations.
 
 ::: moniker-end
 
 ::: moniker range="< azure-devops"
 
-For on-premises Azure DevOps Server, there are no hard limits on projects per collection, but performance issues might arise as the number of projects nears 300. Certain experiences, like connecting to a project from Visual Studio, might degrade.
+For on-premises Azure DevOps Server, there are no hard limits on projects per collection, but performance problems might arise as the number of projects nears 300. Certain experiences, like connecting to a project from Visual Studio, might degrade.
 
 When migrating to Azure DevOps Services, observe a maximum limit of 1,000 projects. If your collection exceeds this limit, split the collection or delete older projects. For more information, see [Migrate data from Azure DevOps Server to Azure DevOps Services](../../../migrate/migration-overview.md).
 
@@ -160,7 +174,7 @@ When migrating to Azure DevOps Services, observe a maximum limit of 1,000 projec
 
 ## Process customization
 
-There are many limits on the number of objects you can define for a process. For more information, see [Customize your work tracking experience](../../../reference/customize-work.md).
+Limits exist on the number of objects you can define for a process. For more information, see [Customize your work tracking experience](../../../reference/customize-work.md).
 
 ::: moniker range="azure-devops"
 
@@ -192,7 +206,7 @@ The following table lists the maximum number of objects you can define for the I
 
 ::: moniker-end
 
-::: moniker range="<azure-devops"
+::: moniker range="< azure-devops"
 
 The following table lists the maximum number of objects you can define for the Inheritance and On-premises XML process models. Practical limits might also apply.
 
@@ -220,7 +234,7 @@ The following table lists the maximum number of objects you can define for the I
 
 ## Practical limits
 
-To minimize performance issues, follow this guidance:
+Even when you're within the hard object limits, performance can degrade as the number of custom objects grows. The following guidance represents the Microsoft-recommended operating range for predictable performance. To minimize performance problems, follow this guidance:
 
 - Limit the number of custom fields you define. All custom fields contribute to the total allowed for a process, collection, or organization. You can specify different behaviors, such as rules and picklists, for the same field in different WITs.
 
@@ -234,19 +248,22 @@ To minimize performance issues, follow this guidance:
 
 ::: moniker-end
 
-### Work Item Rules Validation Exceeds SQL Limits
+### Work item rules validation exceeds SQL limits
 
 A single SQL expression is defined per project to validate work items whenever they're created or updated. This expression grows with the number of rules specified for all work item types in the project.
 
 Each behavioral qualifier for a field increases the number of subexpressions. Nested rules, rules that apply only on a transition, or rules conditioned on the value of another field add more conditions to an `IF` statement.
 
-When users save work items, the system validates all rules associated with the fields for that work item type. Once the expression reaches a certain size or complexity, SQL can no longer evaluate it efficiently and may generate an error. To resolve this error, remove some WITs or eliminate some rules.
+When users save work items, the system validates all rules associated with the fields for that work item type. Once the expression reaches a certain size or complexity, SQL can no longer evaluate it efficiently and might generate an error. To resolve this error, remove some WITs or eliminate some rules.
+
+> [!TIP]
+> If users see errors when saving work items and you heavily customized rules, review the number of rules across all WITs in the project. Reducing conditional rules (such as those that apply only during state transitions or depend on another field's value) has the greatest impact on reducing expression complexity.
 
 ::: moniker range="azure-devops"
 
 ## Rate limits
 
-Azure DevOps Services, like many Software-as-a-Service solutions, uses multitenancy to reduce costs and enhance scalability and performance. To ensure good performance and minimize the risk of outages, Azure DevOps Services limits the resources individuals can consume and the number of requests they can make to certain commands. When these limits are exceeded, subsequent requests might be delayed or blocked.
+Azure DevOps Services, like many software as a service solutions, uses multitenancy to reduce costs and enhance scalability and performance. To ensure good performance and minimize the risk of outages, Azure DevOps Services limits the resources individuals can consume and the number of requests they can make to certain commands. When users exceed these limits, the service might delay or block subsequent requests.
 
 Most rate limits are reached through REST API calls or nonoptimized queries. For more information, see [Rate limits](../../../integrate/concepts/rate-limits.md) and [Best practices to avoid hitting rate limits](../../../integrate/concepts/integration-bestpractices.md).
 
@@ -256,13 +273,15 @@ Most rate limits are reached through REST API calls or nonoptimized queries. For
 
 ## Migration and import limits
 
-When you migrate from on-premises Azure DevOps Server to Azure DevOps Services, you might encounter the following size issues:
+When you migrate from on-premises Azure DevOps Server to Azure DevOps Services, your collection must meet the following size requirements:
 
-- Database size exceeding the recommended size
-- Largest table size exceeding the recommended size
-- Database metadata size exceeding the supported size
+| Measure | Recommended limit |
+|---|---|
+| Total database size | 150 GB |
+| Largest individual table | 30 GB |
+| Database metadata size | 2 GB |
 
-For more information, see [Migrate data from Azure DevOps Server to Azure DevOps Services](../../../migrate/migration-overview.md) and [Troubleshoot import and migration errors](../../../migrate/migration-troubleshooting.md).
+If your collection exceeds these limits, migration validation fails before any data is transferred. To resolve the issue, see [Troubleshoot import and migration errors](../../../migrate/migration-troubleshooting.md) for options including data clean-up and collection splitting. For the full migration process, see [Migrate data from Azure DevOps Server to Azure DevOps Services](../../../migrate/migration-overview.md).
 ::: moniker-end
 
 ## Related content
@@ -271,7 +290,8 @@ For more information, see [Migrate data from Azure DevOps Server to Azure DevOps
 - [Learn about process customization and inherited processes](inheritance-process-model.md)
 - [Follow naming restrictions and conventions](../naming-restrictions.md)
 - [Create an inheritance process](manage-process.md)
-- [Follow best practices](../../../integrate/concepts/integration-bestpractices.md)
+- [Rate and usage limits](../../../integrate/concepts/rate-limits.md)
+- [Best practices to avoid hitting rate limits](../../../integrate/concepts/integration-bestpractices.md)
 
 ::: moniker-end
 

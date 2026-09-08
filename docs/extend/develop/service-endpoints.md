@@ -1,5 +1,5 @@
 ---
-ms.subservice: azure-devops-ecosystem
+ms.subservice: azure-devops-developer
 title: Create a service endpoint
 titleSuffix: Azure DevOps
 description: Create a custom service endpoint to connect your Azure DevOps extension to an external service.

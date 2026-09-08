@@ -1,7 +1,7 @@
 ---
 title: Publish Python packages (CLI)
 description: Learn how to publish Python packages from the command-line interface.
-ms.service: azure-devops-artifacts
+ms.service: azure-artifacts
 ms.topic: how-to
 ms.custom: engagement-fy23, devx-track-python
 ms.date: 01/15/2025

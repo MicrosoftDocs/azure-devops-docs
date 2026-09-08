@@ -3,7 +3,7 @@ title: Change the Work Items Page Experience
 titleSuffix: Azure Boards
 description: Learn how to change the Work Items page setting from legacy to default.
 ms.custom: work-items
-ms.service: azure-devops-boards
+ms.service: azure-boards
 ai-usage: ai-assisted
 ms.author: chcomley
 ms.topic: how-to

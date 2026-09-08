@@ -1,5 +1,5 @@
 ---
-ms.subservice: azure-devops-ecosystem
+ms.subservice: azure-devops-developer
 ms.topic: overview
 title: Build secure applications and services with Azure DevOps
 description: Learn how to build secure, scalable applications that integrate with Azure DevOps using modern authentication and best practices.

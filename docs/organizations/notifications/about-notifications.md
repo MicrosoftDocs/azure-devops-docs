@@ -7,7 +7,7 @@ ms.custom: quarterly-update, engagement-fy23
 ms.author: chcomley
 author: chcomley
 ms.topic: concept-article
-ms.date: 02/17/2026
+ms.date: 08/19/2026
 #customer intent: As a developer, I want to configure and manage notifications in Azure DevOps organizations so I can stay informed and improve collaboration within my development teams.
 ---
 
@@ -88,9 +88,19 @@ Members of the **Project Collection Administrators** group have permission to en
 
 ### Custom email subscriptions
 
-Organization or team administrators can create **Custom email subscriptions** that apply to all members of the organization or team. For more information, see [Manage notifications for a team, project, or organization](./manage-team-group-global-organization-notifications.md). To learn more about querying with group clauses, see [Define a work item query](../../boards/queries/using-queries.md#group-clauses).
+Organization or team administrators can create **Custom email subscriptions** that apply to all members of the organization or team. For more information, see [Manage notifications for a team, project, or organization](./manage-team-group-global-organization-notifications.md).
 
-Users can also create custom subscriptions, which apply only to them. For more information, see [Manage your personal notifications](manage-your-personal-notifications.md).
+The email address you enter must resolve to an identity that already has access to the tenant or organization. 
+
+- In organizations backed by Microsoft accounts, the address must belong to a member of the organization. 
+
+- In organizations connected to Microsoft Entra ID, the address must be in a domain your organization allows, or belong to a user in the connected tenant. 
+
+If the address doesn't meet these requirements, Azure DevOps displays an error when you save the subscription. 
+
+To learn more about querying with group clauses, see [Define a work item query](../../boards/queries/using-queries.md#group-clauses).
+
+Users can also create custom subscriptions, which apply only to them. For more information, see [Manage your personal notifications](manage-your-personal-notifications.md). The same recipient limits apply to personal custom subscriptions.
 
 ### Custom service hook subscriptions
 

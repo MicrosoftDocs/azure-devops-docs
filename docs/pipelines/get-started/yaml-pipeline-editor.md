@@ -130,7 +130,7 @@ You can [preview the fully parsed YAML document](/azure/devops/release-notes/202
 
 :::image type="content" source="media/yaml-pipeline-editor/yaml-pipeline-validate.png" alt-text="Validate and Download full YAML.":::
 
-**Download full YAML** [Runs](/rest/api/azure/devops/pipelines/runs/run%20pipeline?view=azure-devops-rest-6.1&preserve-view=true) the Azure DevOps REST API for Azure Pipelines and initiates a download of the rendered YAML from the editor.
+**Download full YAML** [Runs](/rest/api/azure/devops/pipelines/runs/run%20pipeline?view=azure-devops-rest-6.1&preserve-view=true) the Azure DevOps REST API for Azure Pipelines and initiates a download of the rendered YAML from the editor. You need to have Read access to all the template repositories used by the pipeline.
 
 :::moniker-end
 

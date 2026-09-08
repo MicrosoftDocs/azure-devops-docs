@@ -222,7 +222,7 @@ If you want test runs to never be deleted, select the **Never delete** option.
 
 To keep automated test results after their associated builds are deleted, edit the build retention policy and configure test result retention separately. For Git repositories, you can specify retention based on the branch.
 
-For detailed configuration steps, see [Set test retention policies](how-long-to-keep-test-results.md). For build-level retention settings, see [Set retention policies for builds, releases, and tests](../pipelines/policies/retention.md).
+For detailed configuration steps, see [Set test retention policies](../pipelines/policies/retention.md). For build-level retention settings, see [Set retention policies for builds, releases, and tests](../pipelines/policies/retention.md).
 
 <a id="use-ai-assistance"></a>
 
@@ -251,7 +251,7 @@ If you configure the [Azure DevOps MCP Server](../mcp-server/mcp-server-overview
 
 ## Related content
 
-- [Set test retention policies](how-long-to-keep-test-results.md)
+- [Set test retention policies](../pipelines/policies/retention.md)
 - [Create test plans and test suites](create-a-test-plan.md)
 - [Create test cases](create-test-cases.md)
 - [Run manual tests](run-manual-tests.md)

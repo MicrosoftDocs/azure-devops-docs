@@ -1,7 +1,7 @@
 ---
 title: Publish and restore Cargo packages
 description: Learn how to publish and restore Cargo packages to and from Azure Artifacts feeds.
-ms.service: azure-devops-artifacts
+ms.service: azure-artifacts
 ms.topic: quickstart
 ms.date: 06/19/2026
 monikerRange: '>= azure-devops-2022'

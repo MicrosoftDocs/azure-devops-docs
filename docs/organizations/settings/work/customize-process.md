@@ -3,7 +3,7 @@ title: Customize a project
 titleSuffix: Azure DevOps
 description: Learn how to configure and customize work tracking processes for a project by customizing an inherited process in Azure DevOps.
 ms.custom: inherited-process, copilot-scenario-highlight
-ms.service: azure-devops-boards
+ms.service: azure-boards
 ms.author: chcomley
 author: chcomley
 ai-usage: ai-assisted

@@ -83,6 +83,6 @@ Filter by **Test Suites**, **Configuration**, **Tester**, Test Case **Priority**
 
 ## Related content
 
-- [Control how long to keep test results](how-long-to-keep-test-results.md)
+- [Set test retention policies](../pipelines/policies/retention.md)
 - [FAQs for manual testing](reference-qa.yml#test-status-tracking-charts)
 

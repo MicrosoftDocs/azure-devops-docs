@@ -96,7 +96,6 @@ You can add more **scripts** or **tasks** as steps to your pipeline. A task is a
     - task: PublishCodeCoverageResults@2
       inputs:
         summaryFileLocation: "$(System.DefaultWorkingDirectory)/**/site/jacoco/jacoco.xml" # Path to summary files
-        reportDirectory: "$(System.DefaultWorkingDirectory)/**/site/jacoco" # Path to report directory
         failIfCoverageEmpty: true # Fail if code coverage results are missing
     ```
     

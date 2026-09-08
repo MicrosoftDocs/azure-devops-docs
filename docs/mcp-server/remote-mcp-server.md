@@ -1,5 +1,5 @@
 ---
-title: Set up the remote Azure DevOps MCP Server (preview)
+title: Set up the remote Azure DevOps MCP Server
 titleSuffix: Azure DevOps Services
 description: Learn how to configure the remote Azure DevOps MCP Server for AI-assisted development without local installation by using streamable HTTP transport.
 ms.service: azure-devops
@@ -10,37 +10,35 @@ ms.topic: how-to
 ms.author: chcomley
 author: chcomley
 monikerRange: 'azure-devops'
-ms.date: 06/23/2026
+ms.date: 09/03/2026
 #customer intent: As a user, I want to set up the remote Azure DevOps MCP Server so I can use AI assistance with my Azure DevOps data without installing and running a local server.
 ---
 
-# Set up the remote Azure DevOps MCP Server (preview)
+# Set up the remote Azure DevOps MCP Server
 
 [!INCLUDE [version-eq-azure-devops](../includes/version-eq-azure-devops.md)]
 
-> [!IMPORTANT]
-> The remote Azure DevOps MCP Server is currently in public preview. Preview features might have limited functionality and can change before general availability.
-
 The remote Azure DevOps MCP Server is a hosted version of the [Azure DevOps MCP Server](mcp-server-overview.md) that doesn't require a local installation. Instead of running the server on your machine, you connect your AI assistant directly to the Azure DevOps–hosted endpoint by using streamable HTTP transport.
 
-The remote server provides the same capabilities as the local server, including access to work items, pull requests, pipelines, and more, while eliminating local setup complexity.
+## Choose remote first
 
-## Remote vs. local MCP Server
+Use the **remote MCP Server** when your environment supports it. The remote server is the recommended option because Azure DevOps hosts and updates it, and you don't need to install Node.js or manage a local server process.
 
-| Feature | Remote MCP Server (preview) | Local MCP Server |
-|--------|-----------------------------|------------------|
+Use the **local MCP Server** when your client can't authenticate to the remote server with Microsoft Entra ID. This limitation currently applies to clients such as Claude Desktop and Codex. Cursor and Claude Code require a custom Microsoft Entra app registration to authenticate. For local setup instructions, see [Enable AI assistance with the Azure DevOps MCP Server](mcp-server-overview.md#install-the-local-azure-devops-mcp-server).
+
+| Feature | Remote MCP Server | Local MCP Server |
+|--------|-------------------|------------------|
 | **Installation** | No installation required | Requires Node.js 20.0+ and `npx` |
 | **Transport** | Streamable HTTP | `stdio` |
 | **Authentication** | Microsoft Entra ID (OAuth) | Azure DevOps PAT or Microsoft Entra ID |
 | **Hosting** | Azure DevOps–hosted service | Runs locally on your machine |
 | **Configuration** | Minimal `mcp.json` | Environment-specific setup |
-| **Status** | Public preview | Generally available |
 
 ## Prerequisites
 
 | Category | Requirements |
 |----------|-------------|
-| **Azure DevOps** | An active [Azure DevOps organization](../organizations/accounts/create-organization.md) connected to [Microsoft Entra ID](/entra/fundamentals/whatis) |
+| **Azure DevOps** | An active [Azure DevOps organization](../organizations/accounts/create-organization.md) backed by a [Microsoft Entra tenant](/entra/fundamentals/whatis). Standalone Microsoft account (MSA) organizations aren't supported for remote MCP Server usage. |
 | **Permissions** | Membership in the project and access to the resources you want to query |
 | **Environment** | A supported AI assistant environment (see [Supported environments](#supported-environments)) |
 
@@ -93,13 +91,15 @@ Specify toolsets to restrict the tools available to the MCP server. Shouldn't be
 
 | Toolset value | Included tools |
 |---|---|
-| `all` *(default)* | All tools from every toolset |
+| `all` *(default)* | All tools |
 | `repos` | Repository and pull request tools |
+| `advsec` | Advanced Security alert tools |
 | `wit` | Work item tools and `search_workitem` |
 | `pipelines` | Pipeline and build tools |
 | `wiki` | Wiki tools and `search_wiki` |
 | `work` | Iteration and capacity tools |
 | `testplan` | Test plan tools |
+| `elm` | Enterprise Live Migration tools (preview; enabled by default) |
 
 ### Read-only tools
 
@@ -142,6 +142,8 @@ Use the `X-MCP-Readonly` header to restrict the server to read-only operations. 
 
 Use the `X-MCP-Tools` header to enable only specific tools. Shouldn't be combined with `X-MCP-Toolsets`.
 
+Specify tool names that appear in the [available tools](#available-tools) list. For consolidated tools such as `wit_work_item`, choose the operation by using the tool's `action` parameter when you call it.
+
 ```json
 {
   "servers": {
@@ -149,7 +151,7 @@ Use the `X-MCP-Tools` header to enable only specific tools. Shouldn't be combine
       "url": "https://mcp.dev.azure.com/{organization}",
       "type": "http",
       "headers": {
-        "X-MCP-Tools": "core_list_projects, wit_my_work_items, wit_get_work_items_batch_by_ids"
+        "X-MCP-Tools": "core_list_projects, wit_work_item"
       }
     }
   },
@@ -183,13 +185,17 @@ As we experiment and introduce new tools and updates to existing ones, you can g
 
 ### Core tools
 
-Core tools are always available.
+Core tools are always available unless noted otherwise.
 
 | Tool | Description |
 |---|---|
 | `core_list_orgs` | List Azure DevOps organizations the authenticated user has access to |
 | `core_list_projects` | List projects in an organization |
 | `core_list_project_teams` | List teams in a project |
+| `core_list_group_members` | List direct members and child groups of an Azure DevOps group |
+
+> [!NOTE]
+> Only MCP Insiders can use `core_list_group_members` by using the `X-MCP-Insiders` header.
 
 ### Work
 
@@ -215,6 +221,7 @@ The repository tools are consolidated into grouped dispatchers using an `action`
 | `repo_pull_request` | `get` | Get a pull request by ID | ✅ |
 | `repo_pull_request` | `list` | List pull requests in a repository or project | ✅ |
 | `repo_pull_request` | `list_by_commits` | Find pull requests that contain specific commit IDs | ✅ |
+| `repo_pull_request` | `get_changes` | Get file changes and optional line-by-line diffs for a pull request iteration | ✅ |
 | `repo_pull_request_thread` | `list` | List comment threads on a pull request | ✅ |
 | `repo_pull_request_thread` | `list_comments` | List comments in a specific thread | ✅ |
 | `repo_repository` | `get` | Get a repository by name or ID | ✅ |
@@ -225,7 +232,7 @@ The repository tools are consolidated into grouped dispatchers using an `action`
 | `repo_file` | `get_content` | Get the text content of a file at a specific branch, tag, or commit | ✅ |
 | `repo_file` | `list_directory` | List files and folders in a directory, with optional recursive listing | ✅ |
 | `repo_search_commits` | | Search commits with filtering by text, author, date range, and more | ✅ |
-| `search_code` | Full-text code search. | ✅ |
+| `search_code` | | Full-text code search | ✅ |
 | `repo_pull_request_write` | `create` | Create a pull request | ❌ |
 | `repo_pull_request_write` | `update` | Update a pull request, including setting autocomplete | ❌ |
 | `repo_pull_request_write` | `update_reviewers` | Add or remove pull request reviewers | ❌ |
@@ -250,6 +257,9 @@ The work item tools are consolidated into grouped dispatchers using an `action` 
 | `wit_work_item` | `get_type` | Get metadata for a work item type | ✅ |
 | `wit_query` | `get` | Get a query by ID or path | ✅ |
 | `wit_query` | `get_results` | Run a saved query | ✅ |
+| `wit_query` | `search` | Search queries by name | ✅ |
+| `wit_query` | `list` | List root query folders and their children | ✅ |
+| `wit_query_by_wiql` | | Run a WIQL query and return matching work items | ✅ |
 | `wit_backlog` | `list` | List backlog levels for a team | ✅ |
 | `wit_backlog` | `list_work_items` | List work items in a specific backlog level | ✅ |
 | `search_workitem` | | Full-text work item search | ✅ |
@@ -262,7 +272,7 @@ The work item tools are consolidated into grouped dispatchers using an `action` 
 | `wit_work_item_link_write` | `link` | Link two work items | ❌ |
 | `wit_work_item_link_write` | `unlink` | Remove links from a work item | ❌ |
 | `wit_work_item_link_write` | `link_to_pull_request` | Link a work item to a pull request | ❌ |
-| `wit_work_item_link_write` | `add_artifact_link` | Add a repository, branch, commit, or build artifact link to a work item | ❌ |
+| `wit_work_item_link_write` | `add_artifact_link` | Add a repository, branch, commit, build, or wiki artifact link to a work item | ❌ |
 | `wit_work_item_attachment` |  | Download a work item attachment by ID; returns base64-encoded content with filename and MIME type | ✅ |
 
 > [!NOTE]
@@ -312,18 +322,32 @@ The test plan tools are consolidated into grouped dispatchers using an `action` 
 | `testplan` | `list_suites` | List test suites under a test plan | ✅ |
 | `testplan` | `list_cases` | List test cases under a test suite | ✅ |
 | `testplan_show_test_results_from_build_id` |  | Get test results from a build | ✅ |
+| `testplan_test_run` | `get_results` | Get results for a test run with optional detail and outcome filters | ✅ |
 | `testplan_test_plan_write` | `create` | Create a test plan | ❌ |
 | `testplan_test_suite_write` | `create` | Create a test suite | ❌ |
 | `testplan_test_suite_write` | `add_test_cases` | Add test cases to a suite | ❌ |
 | `testplan_test_case_write` | `create` | Create a test case | ❌ |
 | `testplan_test_case_write` | `update_steps` | Update test case steps | ❌ |
+| `testplan_test_run_write` | `create_run` | Create a test run for manual test execution | ❌ |
+| `testplan_test_run_write` | `update_results` | Update outcomes and details for test results in a run | ❌ |
+| `testplan_test_run_write` | `complete_run` | Complete or abort a test run based on its results | ❌ |
+| `testplan_test_run_write` | `update_test_point_outcome` | Update or reset outcomes for test points | ❌ |
+
+### Advanced Security
+
+The Advanced Security tools are consolidated into a grouped dispatcher that uses an `action` parameter.
+
+| Tool | Action | Description | Read-only |
+|---|---|---|:---:|
+| `advsec_alerts` | `list` | List Advanced Security alerts for a repository with optional filters | ✅ |
+| `advsec_alerts` | `get` | Get an Advanced Security alert by ID | ✅ |
 
 ### Enterprise Live Migration (preview)
 
 The Enterprise Live Migration tools use an `action` parameter to group and dispatch tasks. [Learn more](../repos/enterprise-live-migrations/overview.md) about the Enterprise Live Migration preview.
 
 > [!IMPORTANT]
-> ELM support in the remote Azure DevOps MCP Server is currently in **private preview** and isn't available to all organizations. Even if you set `X-MCP-Toolsets: elm`, the ELM tools only work if your organization is enrolled in the private preview. If you need access, contact your organization administrator or refer to the [Enterprise Live Migrations overview](../repos/enterprise-live-migrations/overview.md) for more information.
+> ELM support in the remote Azure DevOps MCP Server is currently in **preview**. The tools are enabled by default.
 
 | Tool | Action | Description | Read-only |
 |---|---|---|:---:|
@@ -343,7 +367,7 @@ The Enterprise Live Migration tools use an `action` parameter to group and dispa
 | `enterprise_live_migration_pipelines_write` | `update` | Update pipeline rewiring config | ❌ |
 | `enterprise_live_migration_pipelines_write` | `delete` | Delete all pipeline clones for a terminal migration | ❌ |
 
-The Enterprise Live Migration tools are disabled by default. Additionally, because ELM support in the remote MCP Server is in **private preview**, they're not accessible unless your organization is enrolled in the preview. To enable the ELM tools for your organization after enrollment, use the `X-MCP-Toolsets` header with the `elm` value:
+To make only the Enterprise Live Migration tools available, use the `X-MCP-Toolsets` header with the `elm` value:
 
 ```json
 {
@@ -366,10 +390,18 @@ The remote Azure DevOps MCP Server requires your user account and Azure DevOps o
 
 Not all MCP clients support Microsoft Entra authentication by default. Some environments require extra steps to register the client application.
 
-Currently supported environments include:
+Supported environments for the remote endpoint, when Microsoft Entra authentication is available, include:
 
-- Visual Studio Code
+- Visual Studio with GitHub Copilot
 - Visual Studio
+- Microsoft Foundry
+- Microsoft Copilot Studio
+- GitHub Copilot CLI
+- GitHub Copilot app
+- Cursor or Claude Code with a custom Microsoft Entra app registration
+
+> [!IMPORTANT]
+> Claude Desktop and Codex don't currently support the Microsoft Entra authentication flow required by the remote Azure DevOps MCP Server. Use the [local MCP Server](mcp-server-overview.md#install-the-local-azure-devops-mcp-server) with these clients.
 
 ### Visual Studio Code
 
@@ -385,6 +417,96 @@ After authentication completes, a list of available tools appears.
 ### Visual Studio (2022 and later)
 
 Configure the remote MCP Server in Visual Studio by adding the server URL to your MCP settings. For more information, see [Use MCP servers in Visual Studio](/visualstudio/ide/mcp-servers).
+
+### Cursor
+
+Cursor requires a custom Microsoft Entra app registration to access the remote Azure DevOps MCP Server.
+
+#### Register the application
+
+1. Confirm that the **Azure DevOps MCP** enterprise application is provisioned in your tenant. If you can't find it, see [Can't find the Azure DevOps MCP enterprise application in the tenant](remote-mcp-server-troubleshooting.md#cant-find-the-azure-devops-mcp-enterprise-application-in-the-tenant).
+1. In the Microsoft Entra admin center, go to **App registrations**, and then create an app registration.
+1. In the app registration, select **Authentication (Preview)** > **Add redirect URI** > **Mobile and desktop applications**.
+1. Enter `http://localhost:8787/callback` as the redirect URI, and then save your changes.
+1. On the **Authentication (Preview)** page, select the **Settings** tab, and then enable **Allow public client flows**.
+1. On the **API permissions** page, select **Add a permission** > **APIs my organization uses**.
+1. Search for **Azure DevOps MCP** or the application ID `2a72489c-aab2-4b65-b93a-a91edccf33b8`, and then select the application.
+1. Select the delegated permissions that your app requires, and then select **Add permissions**.
+1. Select **Grant admin consent**. Depending on your role, a tenant administrator might need to complete this step.
+
+Copy the **Application (client) ID** from the app registration. You need this value to configure Cursor.
+
+#### Configure Cursor
+
+1. In Cursor, open **Settings** > **Tools & MCP**.
+1. Select **New MCP Server**.
+1. Add the following configuration, replacing `{client-id}` with the application (client) ID that you copied:
+
+   ```json
+   {
+     "mcpServers": {
+       "ado": {
+         "url": "https://mcp.dev.azure.com",
+         "type": "http",
+         "auth": {
+           "CLIENT_ID": "{client-id}"
+         }
+       }
+     }
+   }
+   ```
+
+1. Save the configuration, and then return to **Settings** > **Tools & MCP**.
+1. Locate the **ado** server, and then select **Authenticate**.
+
+### Claude Code
+
+Claude Code requires a custom Microsoft Entra app registration to access the remote Azure DevOps MCP Server.
+
+#### Register the application
+
+1. Confirm that the **Azure DevOps MCP** enterprise application is provisioned in your tenant. If you can't find it, see [Can't find the Azure DevOps MCP enterprise application in the tenant](remote-mcp-server-troubleshooting.md#cant-find-the-azure-devops-mcp-enterprise-application-in-the-tenant).
+1. In the Microsoft Entra admin center, go to **App registrations**, and then create an app registration.
+1. In the app registration, select **Authentication (Preview)** > **Add redirect URI** > **Mobile and desktop applications**.
+1. Enter `http://localhost:3118/callback` as the redirect URI, and then save your changes.
+1. On the **Authentication (Preview)** page, select the **Settings** tab, and then enable **Allow public client flows**.
+1. On the **API permissions** page, select **Add a permission** > **APIs my organization uses**.
+1. Search for **Azure DevOps MCP** or the application ID `2a72489c-aab2-4b65-b93a-a91edccf33b8`, and then select the application.
+1. Select the delegated permissions that your app requires, and then select **Add permissions**.
+1. Select **Grant admin consent**. Depending on your role, a tenant administrator might need to complete this step.
+
+Copy the **Application (client) ID** from the app registration. You need this value to configure Claude Code.
+
+#### Configure Claude Code
+
+1. Run the following command, replacing `{client-id}` with the application (client) ID that you copied and `{organization}` with your Azure DevOps organization name:
+
+   ```bash
+   claude mcp add --transport http ado https://mcp.dev.azure.com/{organization} \
+     --client-id {client-id} --callback-port 3118
+   ```
+
+   Alternatively, create a `.mcp.json` file in the root of your repository with the following configuration:
+
+   ```json
+   {
+     "mcpServers": {
+       "ado": {
+         "type": "http",
+         "url": "https://mcp.dev.azure.com/{organization}",
+         "oauth": {
+           "clientId": "{client-id}",
+           "callbackPort": 3118
+         }
+       }
+     }
+   }
+   ```
+
+1. Start Claude Code by running `claude`.
+1. Run `/mcp`, and then follow the browser sign-in flow to authenticate with your Microsoft Entra account.
+
+For more information about these options, see [Connect Claude Code to tools via MCP](https://code.claude.com/docs/en/mcp#use-pre-configured-oauth-credentials).
 
 ## Verify the connection
 
@@ -425,24 +547,15 @@ The following example prompts for Copilot Chat help you choose the right MCP app
 | **Server not found** | Check the server URL format: `https://mcp.dev.azure.com/{organization}`. |
 | **Connection Refused** | Confirm your network allows outbound HTTPS to `mcp.dev.azure.com`. If you're on a corporate proxy or firewall, ask your administrator to allow-list the endpoint and retry without VPN to isolate network path issues. |
 | **No data returned** | Confirm you have appropriate permissions for the project or resources being queried. |
-| **Preview not available** | The preview is rolling out gradually. Check back later or contact your organization administrator. |
-| **ELM tools not available after setting `X-MCP-Toolsets: elm`** | ELM support in the remote MCP Server is in private preview and not enabled for all organizations. Setting `X-MCP-Toolsets: elm` is necessary but not sufficient—your organization must also be enrolled in the ELM private preview. Contact your organization administrator or see the [Enterprise Live Migrations overview](../repos/enterprise-live-migrations/overview.md) to request access. |
+| **ELM tools aren't available** | ELM tools are enabled by default. If you restrict available toolsets, confirm that the `X-MCP-Toolsets` header includes `elm`. Then reconnect the MCP Server and verify that your identity has the required Azure DevOps permissions. For prerequisites, see the [Enterprise Live Migrations overview](../repos/enterprise-live-migrations/overview.md). |
 
 For support, you can create an issue in the [local MCP Server](https://github.com/microsoft/azure-devops-mcp/issues/new?template=remote-mcp-server-issue.md) repo. Be sure to use the **Remote** issue template.
 
 ## FAQ
 
-### What about other clients like GitHub Copilot CLI, Claude Desktop, Claude Code, CodeX, or Cursor?
+### What about other clients like Claude Desktop or Codex?
 
-Other client tools such as CodeX, Claude Desktop, Claude Code, and ChatGPT require dynamic registration of an OAuth Client ID in Microsoft Entra before they can be used with the MCP server. We're working closely with the Microsoft Entra team to enable this capability. For now, only Visual Studio and Visual Studio Code are supported.
-
-### What services can use Azure DevOps MCP Server?
-
-Support for other services, including Azure AI Foundry, Microsoft 365 Copilot, and Copilot Studio, isn't yet available but will be added soon.
-
-### Does the Azure DevOps MCP Server support AgentId?
-
-AgentId support is coming soon.
+Claude Desktop and Codex require dynamic registration of an OAuth client ID in Microsoft Entra ID before they can use the remote MCP Server. Microsoft Entra ID doesn't currently support the dynamic client registration flow that these clients require. Use the [local MCP Server](mcp-server-overview.md#install-the-local-azure-devops-mcp-server) with these clients.
 
 ## Related content
 

@@ -5,7 +5,7 @@ description: Learn how to manage Azure Pipelines service connections and get a r
 ms.topic: concept-article
 ms.author: ronai
 author: RoopeshNair
-ms.date: 07/15/2026
+ms.date: 08/18/2026
 monikerRange: '<= azure-devops'
 ---
 
@@ -16,7 +16,7 @@ monikerRange: '<= azure-devops'
 This article covers service connections in Azure Pipelines. Service connections are authenticated connections between Azure Pipelines and external or remote services that you use to execute tasks in a job.
 
 > [!IMPORTANT]
-> Service connections have standing access to the services they connect to. If a connection is still referenced in a pipeline but that pipeline is no longer being used, the access can remain longer than intended. To reduce unnecessary standing access, Azure Pipelines is starting to automatically disable service connections that haven't been used for 100 days.
+> Service connections have standing access to the services they connect to. If a connection is still referenced in a pipeline but that pipeline is no longer being used, the access can remain longer than intended. To reduce unnecessary standing access, Azure Pipelines might automatically disable service connections that you didn't use for 100 days.
 
 For example, your pipelines might use the following categories of service connections: 
 
@@ -116,9 +116,9 @@ To view information about a service connection, from your project select **Proje
 
 - You can also select **Security** or **Delete** on the **More options** menu. For more information about managing security permissions, see [Set service connection permissions](../policies/permissions.md#set-service-connection-security-in-azure-pipelines).
 
-- Select **Disable** on the **More options** menu to prevent pipelines from using the service connection when the connection is no longer needed or should no longer have standing access.
+- Service connection administrators and Project Administrators can select **Disable** on the **More options** menu to prevent pipelines from using the service connection when the connection is no longer needed or should no longer have standing access. Pipelines that reference a disabled connection fail or are denied access until the connection is enabled again.
 
-- If Azure Pipelines disables a service connection after 100 days of inactivity, select **Enable** on the same menu after you confirm the connection is still required.
+- Azure Pipelines might automatically disable a service connection after 100 days of inactivity. The service connection list and configuration UI show that the connection is disabled. After you confirm the connection is still required, select **Enable** on the same menu to restore access. Azure DevOps records disable and enable events in the [Audit log](../../organizations/audit/azure-devops-auditing.md).
 
 - To edit existing approvals and checks, select from the **More options** menu next to the approval on the **Approvals and checks** tab.
 
@@ -156,7 +156,7 @@ Azure Pipelines supports the following service connection types by default. You 
 | Service connection type | Description |
 |-------------------------|-------------|
 | [Azure Classic](#azure-classic-service-connection) | Connect to your Azure subscription via credentials or certificate. |
-| [Azure DevOps](add-devops-entra-service-connection.md) | Connect to Azure DevOps resources using Microsoft Entra workload identity federation. |
+| [Azure DevOps](add-devops-entra-service-connection.md) | Connect to Azure DevOps resources using Microsoft Entra workload identity federation (service principal or managed identity) instead of personal access tokens (PATs) or session tokens. |
 | [Azure Repos/Team Foundation Server](#azure-repos) | Connect to Azure Repos in your DevOps organization or collection.|
 | [Azure Resource Manager](#azure-resource-manager-service-connection) | Connect to Azure resources. |
 | [Azure Service Bus](#azure-service-bus-service-connection) | Connect to an Azure Service Bus queue. |
@@ -183,6 +183,13 @@ Azure Pipelines supports the following service connection types by default. You 
 | [Subversion](#subversion-service-connection) | Connect to an Apache Subversion repository. |
 | [Visual Studio App Center](#visual-studio-app-center-service-connection) | Connect to Visual Studio App Center server. |
 
+> [!NOTE]
+> For workload identity federation (WIF) service connections in Azure public cloud, Azure DevOps is deprecating the Azure DevOps issuer (`https://vstoken.dev.azure.com`), which retires on July 1, 2027, and standardizing on the Microsoft Entra issuer (`https://login.microsoftonline.com/`). New WIF service connections use the Microsoft Entra issuer by default.
+>
+> This issuer change applies to service connections that use single-tenant Microsoft Entra applications or managed identities. It doesn't apply to service connections targeting non-public clouds or to service connections that use multi-tenant applications, which continue to use the Azure DevOps issuer.
+>
+> Azure DevOps flags affected connections in the service connection list and configuration UI. Select **Update** to convert the connection to the Microsoft Entra issuer. If you can't use that action because you don't have identity access, use the manual federated credential approach in [Set up workload identity federation for Azure Resource Manager manually](../release/configure-workload-identity.md).
+
 ### Azure Classic service connection
 
 Use the following parameters to define and secure a connection to a Microsoft Azure subscription, using Azure credentials or an Azure management certificate.
@@ -208,6 +215,13 @@ If your subscription is defined in an [Azure Government Cloud](/azure/azure-gove
 
 > [!TIP]
 > For PAT-free authentication to Azure DevOps resources from pipelines, use the [Azure DevOps service connection](add-devops-entra-service-connection.md), which uses Microsoft Entra workload identity federation.
+
+For a broader comparison of pipeline, app, and script authentication choices, see [Authentication methods for Azure DevOps](../../integrate/get-started/authentication/authentication-guidance.md). For Azure Pipelines access to Azure DevOps resources, the Azure DevOps service connection is the recommended starting point.
+
+The Azure DevOps service connection supports scenarios such as cross-organization repository checkout and YAML template reuse across organizations, without requiring a PAT. It can also be used for PAT-free authentication to Azure Artifacts feeds across organizations. For more information about these scenarios, see [Create an Azure DevOps service connection](add-devops-entra-service-connection.md).
+
+> [!NOTE]
+> You can also use the [AzureCLI@3 task](/azure/devops/pipelines/tasks/reference/azure-cli-v3) to create a Microsoft Entra-authenticated Azure DevOps CLI session, or to obtain a Microsoft Entra access token for calling the Azure DevOps REST API, when using the Azure DevOps service connection.
 
 Connect to an Azure DevOps organization or project collection using basic or token-based authentication.
 Use the following parameters to define and secure a connection to another Azure DevOps organization.
@@ -448,14 +462,14 @@ Then, complete the following steps to register your GitHub account in your profi
 2. Choose **Personal access tokens**.
 3. Select **Add** and enter the information required to create the token.
 
-### Incoming WebHook service connection
+### Incoming Webhook service connection
 
 Use the following parameters to create an incoming Webhook service connection.
 
 | Parameter | Description  |
 |--|--|
-| WebHook Name | Required. The name of the WebHook. |
-| Secret | Optional. The secret to use to authenticate with the WebHook. |
+| Webhook Name | Required. The name of the Webhook. |
+| Secret | Optional. The secret to use to authenticate with the Webhook. |
 | HTTP Header | Optional. The headers name on which checksum is sent. |
 | Connection name | Required. The name you use to refer to the service connection in task properties. If you're using YAML, use the name as the **azureSubscription** or the equivalent subscription name value in the script. |
 | Description | Optional. The description of the service connection. |
@@ -656,7 +670,7 @@ Use the following parameters when you define and secure a connection to a Python
 |Parameter | Description  |
 |-----------------------|-------------------|
 | Authentication method | Required. Select **Username and Password** or **Authentication Token**. |
-| Python repository url for upload | Required. The URL of the Python feed. |
+| Python repository URL for upload | Required. The URL of the Python feed. |
 | EndpointName | Required. The unique repository used for the twine upload. Spaces and special characters aren't allowed. |
 | Personal Access Token | see [Use personal access tokens](../../organizations/accounts/use-personal-access-tokens-to-authenticate.md). |
 | Username | Required when connection type is **Username and Password**. The username for authentication.|
@@ -679,7 +693,7 @@ When creating a service connection to a Service Fabric cluster, you have three o
 | Client Certificate | Required when connection type is **Certificate based**. Base64 encoding of the cluster's client certificate file. You can use the following PowerShell script to encode the certificate: `[System.Convert]::ToBase64String([System.IO.File]::ReadAllBytes("C:\path\to\certificate.pfx"))`|
 | Username|  Required when connection type is **Microsoft Entra credential**. The username for authentication.|
 | Password|  Required when connection type is **Microsoft Entra credential**. Optional when the authentication method is **Certificate based**. The certificate password.|
-| Unsecured | Optional. Select this option to skip windows security authentication. |
+| Unsecured | Optional. Select this option to skip Windows security authentication. |
 | Cluster SPN | Optional. Applicable if Unsecured is selected. |
 | Connection name | Required. The name you use to refer to the service connection in task properties. If you're using YAML, use the name as the **azureSubscription** or the equivalent subscription name value in the script. |
 | Description | Optional. The description of the service connection. |
@@ -695,7 +709,7 @@ When creating a service connection to a Service Fabric cluster, you have three o
 | Server Certificate Common Name(s) | Required when the Server Certificate Lookup is **Common Name**. The common names of the cluster's certificates used to verify the identity of the cluster. This value overrides the publish profile. Separate multiple common names with a comma (',')|
 | Client Certificate | Required when connection type is **Certificate based**. Base64 encoding of the cluster's client certificate file. You can use the following PowerShell script to encode the certificate: `[System.Convert]::ToBase64String([System.IO.File]::ReadAllBytes("C:\path\to\certificate.pfx"))`|
 | Password|  Required when connection type is **Microsoft Entra credential**. Optional when the authentication method is **Certificate based**. The certificate password.|
-| Unsecured | Optional. Select this option to skip windows security authentication. |
+| Unsecured | Optional. Select this option to skip Windows security authentication. |
 | Cluster SPN | Optional. Applicable if Unsecured is selected. |
 | Connection name | Required. The name you use to refer to the service connection in task properties. If you're using YAML, use the name as the **azureSubscription** or the equivalent subscription name value in the script. |
 | Description | Optional. The description of the service connection. |
@@ -706,7 +720,7 @@ When creating a service connection to a Service Fabric cluster, you have three o
 |  Parameter  | Description  |
 |-------------------------------|-------------------|
 | Cluster Endpoint | Required. The client connection endpoint for the cluster. Prefix the value with *tcp://*. This value overrides the publish profile. |
-| Unsecured | Optional. Select this option to skip windows security authentication. |
+| Unsecured | Optional. Select this option to skip Windows security authentication. |
 | Cluster SPN | Optional. Fully qualified domain SPN for gMSA account. This parameter is applicable only if **Unsecured** option is disabled. For more information about using gMSA with a cluster, see [Configure Windows security using gMSA](/azure/service-fabric/service-fabric-windows-cluster-windows-security#configure-windows-security-using-gmsa) |
 | Connection name | Required. The name you use to refer to the service connection in task properties. If you're using YAML, use the name as the **azureSubscription** or the equivalent subscription name value in the script. |
 | Description | Optional. The description of the service connection. |

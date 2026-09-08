@@ -4,7 +4,7 @@ titleSuffix: Azure Boards
 description: Plan and track work on your Kanban board in Azure Boards by adding work items, customizing columns, setting WIP limits, and monitoring flow.
 ms.custom: boards-kanban, copilot-scenario-highlight
 ms.topic: quickstart
-ms.service: azure-devops-boards
+ms.service: azure-boards
 ai-usage: ai-assisted
 ms.author: chcomley
 author: chcomley

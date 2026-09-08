@@ -3,7 +3,7 @@ title: End-of-sprint activities when working in Scrum and Azure Boards
 titleSuffix: Azure Boards  
 description: Learn about tasks to perform to close a sprint when using Scrum in Azure Boards. 
 ms.custom: boards-sprints, engagement-fy23, copilot-scenario-highlight
-ms.service: azure-devops-boards 
+ms.service: azure-boards 
 ai-usage: ai-assisted
 ms.author: chcomley
 author: chcomley
