@@ -99,6 +99,9 @@ The **number of recent runs to keep for each pipeline** setting is interpreted d
 - **All other Git repositories**: Azure Pipelines retains the configured number of latest runs for the whole pipeline.
 - **Team Foundation Version Control (TFVC)**: Azure Pipelines retains the configured number of latest runs for the whole pipeline, irrespective of the branch.
 
+> [!NOTE]
+> Retention policy retains only the succeeded and partially-succeeded runs.
+
 ::: moniker-end
 
 ### What parts of the run get deleted
