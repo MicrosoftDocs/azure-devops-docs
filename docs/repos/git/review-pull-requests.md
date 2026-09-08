@@ -5,7 +5,7 @@ description: Learn how to review pull requests in Azure Repos, including how to 
 ms.service: azure-devops-repos
 ms.topic: how-to
 monikerRange: '<= azure-devops'
-ms.date: 08/26/2026
+ms.date: 09/08/2026
 ms.subservice: azure-devops-repos-git
 ms.custom: sfi-image-nochange
 ai-usage: ai-assisted
@@ -64,7 +64,10 @@ You can ask GitHub Copilot to review a pull request alongside human reviewers. C
 
 To request a review with the repository's default effort level, open a pull request and select **Request** next to **GitHub Copilot** in the **Reviewers** section. To choose a different effort level for one review, open the dropdown menu next to **Request** and select an effort level. Copilot always leaves a **Comment** review, so its feedback doesn't satisfy required-reviewer policies and doesn't block merging.
 
-GitHub Copilot code review is available in public preview for all Azure DevOps customers. You can also configure branch policies to automatically trigger reviews for new and draft pull requests. For setup, billing, and limits, see [Get started with Copilot code review for pull requests](copilot-code-reviews.md).
+You can also configure branch policies to automatically trigger reviews for new and draft pull requests.
+
+> [!NOTE]
+> GitHub Copilot code review is available in public preview for all Azure DevOps customers. For setup, billing, and limits, see [Get started with Copilot code review for pull requests](copilot-code-reviews.md).
 
 ### Review changes as a human reviewer
 
@@ -191,7 +194,7 @@ PR authors should reply to comments to let the reviewers know how they're addres
 
 ### Change comment status
 
-New comments start with an **Active** status. PR authors update the status during the review process to indicate how they addressed reviewer feedback and suggestions. PR authors can select a comment status from the status dropdown list:
+New comments start with an **Active** status. PR authors update the status during the review process to show how they addressed reviewer feedback and suggestions. PR authors can select a comment status from the status dropdown list:
 
 :::image type="content" source="media/review-pull-requests/2022/comment-status-dropdown.png" border="true" alt-text="Screenshot of the comment status options in a PR comment.":::
 
@@ -213,7 +216,7 @@ You can select which comments or updates show on the **Overview** tab by selecti
 
 For convenience, PR authors can edit files directly in Azure Repos. For example, you might accept a reviewer's suggested code change and want to make similar changes elsewhere.
 
-1. Select **Repos > Files**, select the PR source branch, select a file, and then choose **Edit**.
+1. Select **Repos** > **Files**, select the PR source branch, select a file, and then choose **Edit**.
 
     :::image type="content" source="media/review-pull-requests/2022/file-edit.png" border="true" alt-text="Screenshot of the Edit button to update a file in Azure Repos." lightbox="media/review-pull-requests/2022/file-edit-lrg.png":::
 
