@@ -64,7 +64,7 @@ You can ask GitHub Copilot to review a pull request alongside human reviewers. C
 
 To request a review with the repository's default effort level, open a pull request and select **Request** next to **GitHub Copilot** in the **Reviewers** section. To choose a different effort level for one review, open the dropdown menu next to **Request** and select an effort level. Copilot always leaves a **Comment** review, so its feedback doesn't satisfy required-reviewer policies and doesn't block merging.
 
-This feature is in limited public preview and requires sign-up. For setup, billing, and limits, see [Get started with Copilot code review for pull requests](copilot-code-reviews.md).
+GitHub Copilot code review is available in public preview for all Azure DevOps customers. You can also configure branch policies to automatically trigger reviews for new and draft pull requests. For setup, billing, and limits, see [Get started with Copilot code review for pull requests](copilot-code-reviews.md).
 
 ### Review changes as a human reviewer
 
