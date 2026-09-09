@@ -32,14 +32,14 @@ To access the security overview for your organization, go to **Organization sett
 
 In the **Risk** view, only repositories with Advanced Security enabled appear. The reported alert counts are only for alerts discovered on the default branch for each repository. Disabled and deleted repositories are automatically excluded from results.
 
-You can sort by each of the column headers in the table (`Open`, `New`, `Dismissed`, `Fixed`) and modify your query using the search bar for keywords or drop-down filters for project, repository, toolset, severity, and time-bound (period). The time-bound will default to showing results from the past seven days. Any filters applied will also be pushed as a URL parameter to facilitate sharability of your query.
+You can sort by each of the column headers in the table (`Open`, `New`, `Dismissed`, `Fixed`) and modify your query by using the search bar for keywords or drop-down filters for project, repository, toolset, severity, and time-bound (period). The time-bound filter defaults to showing results from the past seven days. The URL updates with any applied filters to make it easier to share your query.
 
-The Risk tab also includes organization-level rollup metrics that summarize alert exposure across all filtered projects and repositories, so you can gauge overall risk without having to review each repository individually.
+The **Risk** tab also includes organization-level rollup metrics that summarize alert exposure across all filtered projects and repositories, so you can gauge overall risk without reviewing each repository individually.
 
 You can export results from the Risk tab to a CSV file for offline analysis or reporting.
 
 > [!NOTE]
-> Organization-level rollup metrics on the Risk tab are currently in private preview, so availability may vary by organization.
+> Organization-level rollup metrics on the **Risk** tab are currently in private preview, so availability might vary by organization.
 
 :::image type="content" source="media/security-overview-risk.png" lightbox="media/security-overview-risk.png" alt-text="Screenshot of Risk tab in security overview for an organization.":::
 
@@ -58,7 +58,7 @@ You can export results from the Coverage tab to a CSV file.
 The Coverage tab also includes organization-level rollup metrics for scanning coverage and exposure, which you can segment using filters for project, repository, toolset, period, and coverage state.
 
 > [!NOTE]
-> Organization-level rollup metrics on the Coverage tab are currently in private preview, so availability may vary by organization.
+> Organization-level rollup metrics on the Coverage tab are currently in private preview, so availability might vary by organization.
 
 ## Alerts tab
 
@@ -80,7 +80,7 @@ When you select a specific tool, you see specific filters. For secrets, these fi
 Malware findings appear as a distinct alert type alongside existing dependency scanning alerts in the **Dependencies** view and in the security overview **Alerts** tab. As with other alert types, you can filter, investigate, dismiss, and reopen malware findings.
 
 > [!NOTE]
-> Malware findings are currently in private preview, so availability may vary by organization.
+> Malware findings are currently in private preview, so availability might vary by organization.
 
 :::image type="content" source="media/advanced-security-security-overview-alerts.png" lightbox="media/advanced-security-security-overview-alerts.png" alt-text="Screenshot of enabling Alerts page in the security overview tab.":::
 
