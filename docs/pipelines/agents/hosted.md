@@ -144,7 +144,7 @@ layout of the hosted agents is subject to change without warning.
 
 Microsoft-hosted agents that run Windows and Linux images are provisioned on Azure general purpose virtual machines with a 2 core CPU, 7 GB of RAM, and 14 GB of SSD disk space. These virtual machines are colocated in the same geography as your Azure DevOps organization.
 
-Agents that run macOS images are provisioned on Mac pros with a 3 core CPU, 14 GB of RAM, and 14 GB of SSD disk space, except the macOS 15 Sequoia ARM64 image which runs on Apple Silicon hardware with 3 cores, 7 GB of RAM, and 14 GB of SSD disk space. These agents always run in the US irrespective of the location of your Azure DevOps organization.
+Agents that run macOS images run on Mac pros with a 3-core CPU, 14 GB of RAM, and 14 GB of SSD disk space, except the macOS 15 Sequoia ARM64 image which runs on Apple Silicon hardware with 3 cores, 7 GB of RAM, and 14 GB of SSD disk space. These agents always run in the US irrespective of the location of your Azure DevOps organization.
 
 All of these machines have at least 10 GB of free disk space available for your pipelines to run. This free space is consumed when your pipeline checks out source code, downloads packages, pulls docker images, or generates intermediate files.
 
