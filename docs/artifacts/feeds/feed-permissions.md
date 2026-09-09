@@ -1,9 +1,9 @@
 ---
 title: Manage permissions
-description: How to configure permissions for Azure Artifacts, Azure Artifacts feeds, feed views, and pipelines access.
+description: Learn how to configure permissions for Azure Artifacts, Azure Artifacts feeds, feed views, and pipelines access.
 ms.service: azure-artifacts
 ms.topic: overview
-ms.date: 08/19/2025
+ms.date: 09/08/2026
 monikerRange: "<=azure-devops"
 "recommendations": "true"
 ---
@@ -12,46 +12,47 @@ monikerRange: "<=azure-devops"
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
-Azure Artifacts enables developers to efficiently manage dependencies by hosting various types of packages in a single feed. With flexible permission settings, you can fine-tune access to your packages, control who can create or administer feeds, and manage how packages are accessed from Azure Pipelines.
+Use Azure Artifacts permissions to control access to feeds, packages, views, and pipelines. This article explains the available permission levels for Azure Artifacts settings, feeds, views, and pipeline identities.
 
 ## Azure Artifacts settings
 
-With Azure Artifacts settings, you can control who can create and administrer feeds.
+Use Azure Artifacts settings to control who can create feeds and who can administer feeds across Azure Artifacts.
 
-> [!NOTE]
-> you must be a feed owner or a [project collection administrator](../../organizations/security/look-up-project-collection-administrators.md) to configure Azure Artifacts settings.
+> [!IMPORTANT]
+> You must be a **Feed Owner** or a [Project Collection Administrator](../../organizations/security/look-up-project-collection-administrators.md) to configure Azure Artifacts settings.
 
-1. Sign in to your Azure DevOps organization, and navigate to your project.
+1. Sign in to your Azure DevOps organization, and then go to your project.
 
 1. Select **Artifacts**, then select your feed from the dropdown menu.
 
 1. Select the **Azure Artifacts settings** icon on the right.
 
-1. Select **Who can create feeds** and **Who can administer feeds**, then select **Save** when you're done. 
+1. Choose **Who can create feeds** and **Who can administer feeds**, and then select **Save**.
 
     :::image type="content" source="media/artifact-feed-settings.png" alt-text="Screenshot showing how to set up Azure Artifacts settings.":::
 
 ## Feed settings
 
-From the Azure Artifacts feed settings, you can manage various aspects of your feed, such as enabling package sharing, configuring retention policies, adding new users or groups, managing view permissions, and setting up or modifying upstream sources. Here's how to add a new user or group to your feed:
+Use feed settings to manage feed-level access, package sharing, retention policies, view permissions, and upstream sources. To add users or groups to a feed:
 
-1. Sign in to your Azure DevOps organization, then navigate to your project.
+1. Sign in to your Azure DevOps organization, and then go to your project.
 
 1. Select **Artifacts**, then select your feed from the dropdown menu. 
 
-1. Select the gear icon on the right to navigate to your **Feed Settings**.
+1. Select the gear icon to open **Feed settings**.
 
 1. Select **Permissions**, then select **Add users/groups**.
 
     :::image type="content" source="media/feed-permissions.png" alt-text="Screenshot showing how to access feed permissions.":::
 
-1. Add the new user(s) or group(s), and assign the appropriate **Role**:
-    1. **Feed Owner**: Can delete packages, allow external package versions, edit feed settings, and manage upstream sources, in addition to contributor permissions.
-    1. **Feed Publisher (Contributor)**: Can publish, promote, or deprecate packages along with collaborator permissions.
-    1. **Feed and Upstream Reader (Collaborator)**: Can save packages from upstream source in addition to reader permissions.
-    1. **Feed Reader**: Can view and download packages from the feed.
+1. Add the user or group, and then assign the appropriate role:
 
-1. Select **Save** when you're done.
+    - **Feed Owner**: Can manage feed settings, manage upstream sources, allow external package versions, and delete packages or the feed itself, in addition to all **Contributor** permissions.
+    - **Feed Publisher (Contributor)**: Can publish, promote, deprecate, and unlist packages, in addition to all **Collaborator** permissions.
+    - **Feed and Upstream Reader (Collaborator)**: Can save packages from upstream sources, in addition to all **Reader** permissions.
+   - **Feed Reader**: Can list, view, and download packages from the feed.
+
+1. Select **Save** when you're ready.
 
 ::: moniker range="azure-devops"
 
@@ -69,7 +70,7 @@ From the Azure Artifacts feed settings, you can manage various aspects of your f
 
 ## Feed roles and permissions
 
-Azure Artifacts provides a flexible permission model to manage access within feeds. Each role comes with specific privileges that determine what actions a user or group can perform. The table below outlines the key permissions associated with each role:
+Each feed role grants a specific set of capabilities. Use the following table to decide which role to assign:
 
 | Permission                           | Feed Reader | Feed and Upstream Reader (Collaborator) | Feed Publisher (Contributor) | Feed Owner |
 | ------------------------------------ | ----------- | --------------------------------------- | ---------------------------- | ---------- |
@@ -90,28 +91,28 @@ Azure Artifacts provides a flexible permission model to manage access within fee
 
 ## Feed views settings
 
-Feed views in Azure Artifacts enable users to share specific packages while keeping others private. A common use case is sharing a package version that has been tested and validated, while keeping packages still under development restricted.
+Feed views let you share selected package versions without exposing everything in the feed. A common pattern is to share validated packages through one view while keeping in-progress packages private.
 
-By default, each feed includes three views: *@Local*, *@Prerelease*, and *@Release*. The latter two are suggested views that can be renamed or deleted as needed. The @Local view is the default and includes all packages published directly to the feed, as well as packages saved from upstream sources.
+By default, each feed includes three views: *@Local*, *@Prerelease*, and *@Release*. You can rename or delete the *@Prerelease* and *@Release* views. The *@Local* view contains all packages published directly to the feed, as well as packages saved from upstream sources.
 
 > [!IMPORTANT]
-> Users who have access to a specific view are able to access and download packages from the feed through that view even if they don't have direct access to that feed.
-If you want to completely hide your packages, you must restrict access to both the feed and its views.
+> Users who can access a view can download packages through that view even if they don't have direct access to that feed.
+> If you need to fully restrict package access, you must restrict access to both the feed and its views.
 
-1. Sign in to your Azure DevOps organization, then navigate to your project.
+1. Sign in to your Azure DevOps organization, and then go to your project.
 
 1. Select **Artifacts**, then select your feed from the dropdown menu.
 
-1. Select the gear icon to navigate to your **Feed Settings**.
+1. Select the gear icon to open **Feed settings**.
 
-1. Select **Views**, select the ellipsis button next to your view, then select **Edit** to modify its permission. 
+1. Select **Views**, select the ellipsis next to the view, and then select **Edit**.
 
-1. To restrict access to your view, change the visibility setting to **specific people**.
+1. To restrict access to the view, change **Visibility** to **Specific people**.
 
     > [!IMPORTANT]
     > Views inherit permissions from the parent feed. If you set a view's visibility to *Specific people* without specifying any users or groups, the view's permissions will default back to the permissions of the parent feed.
 
-1. Select **Save** when you're done. The access permissions column will update to reflect your changes.
+1. Select **Save** when you're done. The **Access permissions** column updates to reflect your changes.
 
     :::image type="content" source="media/edit-views.png" alt-text="Screenshot showing the permissions settings for the @Prerelease view in Azure Artifacts.":::
 
@@ -120,16 +121,22 @@ If you want to completely hide your packages, you must restrict access to both t
 
 ## Pipelines permissions
 
-To access your feed from your pipeline, the [corresponding build identity](../../pipelines/process/access-tokens.md#scoped-build-identities) must have the necessary permissions.
-The project-level build identity is named `[Project name] Build Service ([Organization name])`, for example `FabrikamFiber Build Service (codesharing-demo)` while the organization-level build identity is named `Project Collection Build Service ([Organization name])`, for example `Project Collection Build Service (codesharing-demo)`. Here's how to add the build identity to your feed's permissions:
+To access a feed from a pipeline, the [corresponding build identity](../../pipelines/process/access-tokens.md#scoped-build-identities) must have the necessary permissions.
+The project-level build identity is named `[Project name] Build Service ([Organization name])`, for example `FabrikamFiber Build Service (codesharing-demo)`. The organization-level build identity is named `Project Collection Build Service ([Organization name])`, for example `Project Collection Build Service (codesharing-demo)`.
 
-1. Sign in to your Azure DevOps organization, then navigate to your project.
+To add a build identity to a feed:
+
+1. Sign in to your Azure DevOps organization, and then go to your project.
 
 1. Select **Artifacts**, then select your feed from the dropdown menu. 
 
-1. Select the gear icon ![gear icon](../../media/icons/gear-icon.png) to navigate to **Feed settings**.
+1. Select the gear icon ![gear icon](../../media/icons/gear-icon.png) to open **Feed settings**.
 
-1. Select **Permissions**, then select **Add users/groups**. Add your build identity and assign it the **Feed and Upstream Reader (Collaborator)** role. If your pipeline needs to publish packages to the feed, make sure that both the *Project Collection Build Service* and your *project's Build Service* identities have the **Feed Publisher (Contributor)** role.
+1. Select **Permissions**, and then select **Add users/groups**.
+
+1. Add the build identity and assign it the **Feed and Upstream Reader (Collaborator)** role.
+
+1. If the pipeline needs to publish packages, assign the **Feed Publisher (Contributor)** role to both the *Project Collection Build Service* identity and the project-level *Build Service* identity.
 
     :::image type="content" source="media/feed-pipelines-permissions.png" alt-text="Screenshot showing how to add a build identity to the feed permissions.":::
 
@@ -167,8 +174,8 @@ See the examples below to learn how to authenticate and publish packages to your
 
 ## Related content
 
-- [Monitor Artifacts storage consumption](../artifact-storage.md)
-
-- [Promote packages and manage feed views](./views.md)
+- [Best practices](../concepts/best-practices.md)
 
 - [Set up upstream sources](../how-to/set-up-upstream-sources.md)
+
+- [Monitor Artifacts storage consumption](../artifact-storage.md)
