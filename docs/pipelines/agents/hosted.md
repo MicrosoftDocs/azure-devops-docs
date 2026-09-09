@@ -189,7 +189,7 @@ Microsoft-hosted agents can run in any of the regions mapped to your organizatio
 4. Retrieve the IP addresses for all regions in your geography from the [weekly file](https://www.microsoft.com/download/details.aspx?id=56519). If your region is **Brazil South**, include additional IP ranges based on your fallback geography, as described in the following note.
 
 >[!NOTE]
->Due to capacity restrictions, some organizations in the **Brazil South** region might occasionally see their hosted agents located outside their expected geography. In these cases, in addition to including the IP ranges for all the regions in your geography as described in the previous section, include the IP ranges for the regions in the capacity fallback geography.
+> Due to capacity restrictions, some organizations in the **Brazil South** region might occasionally see their hosted agents located outside their expected geography. In these cases, in addition to including the IP ranges for all the regions in your geography as described in the previous section, include the IP ranges for the regions in the capacity fallback geography.
 >
 >If your organization is in the **Brazil South** region, your capacity fallback geography is **United States**, and you must include the IP ranges for all regions in the **United States** geography in addition to the IP ranges for all regions in the **Brazil South** geography.
 >
