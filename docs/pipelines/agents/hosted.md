@@ -144,7 +144,7 @@ layout of the hosted agents is subject to change without warning.
 
 Microsoft-hosted agents that run Windows and Linux images are provisioned on Azure general purpose virtual machines with a 2 core CPU, 7 GB of RAM, and 14 GB of SSD disk space. These virtual machines are colocated in the same geography as your Azure DevOps organization.
 
-Agents that run macOS images are provisioned on Mac pros with a 3 core CPU, 14 GB of RAM, and 14 GB of SSD disk space, except the macOS 15 Sequoia ARM64 image which runs on Apple Silicon hardware with 3 cores, 7 GB of RAM, and 14 GB of SSD disk space. These agents always run in the US irrespective of the location of your Azure DevOps organization. If data sovereignty is important to you and if your organization isn't in the US, then you shouldn't use macOS images. [Learn more](../../organizations/security/data-location.md).
+Agents that run macOS images are provisioned on Mac pros with a 3 core CPU, 14 GB of RAM, and 14 GB of SSD disk space, except the macOS 15 Sequoia ARM64 image which runs on Apple Silicon hardware with 3 cores, 7 GB of RAM, and 14 GB of SSD disk space. These agents always run in the US irrespective of the location of your Azure DevOps organization.
 
 All of these machines have at least 10 GB of free disk space available for your pipelines to run. This free space is consumed when your pipeline checks out source code, downloads packages, pulls docker images, or generates intermediate files.
 
@@ -160,7 +160,7 @@ In some setups, you may need to know the range of IP addresses where agents are 
 Your hosted agents run within the same [Azure geography](https://azure.microsoft.com/global-infrastructure/geographies/) as your organization. A hosted agent can run in any of the regions mapped to your geography, as shown in the [Regions in each geography](#regions-in-each-geography) table, and always honors data residency restrictions. While your agent might run in the same region as your organization, it isn't guaranteed to do so. To get the complete list of possible IP ranges for your agent, allow list the IP ranges for *all* of the regions mapped to your geography in the table, not just your organization's region.
 
 > [!NOTE]
-> Agents that run macOS images always run in the US irrespective of the location of your Azure DevOps organization. If data sovereignty is important to you and if your organization isn't in the US, then you shouldn't use macOS images. [Learn more](../../organizations/security/data-location.md).
+> Agents that run macOS images always run in the US irrespective of the location of your Azure DevOps organization.
 
 To determine your geography, go to `https://dev.azure.com/<your_organization>/_settings/organizationOverview` and note your organization's region. Find the geography that contains that region in the [Regions in each geography](#regions-in-each-geography) table. Then use the IP ranges from the [weekly file](https://www.microsoft.com/download/details.aspx?id=56519) for every region listed for that geography.
 
