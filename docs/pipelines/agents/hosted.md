@@ -159,6 +159,9 @@ In some setups, you may need to know the range of IP addresses where agents are 
 
 Your hosted agents run within the same [Azure geography](https://azure.microsoft.com/global-infrastructure/geographies/) as your organization. A hosted agent can run in any of the regions mapped to your geography, as shown in the [Regions in each geography](#regions-in-each-geography) table, and always honors data residency restrictions. While your agent might run in the same region as your organization, it isn't guaranteed to do so. To get the complete list of possible IP ranges for your agent, allow list the IP ranges for *all* of the regions mapped to your geography in the table, not just your organization's region.
 
+> [!NOTE]
+> Agents that run macOS images always run in the US irrespective of the location of your Azure DevOps organization. If data sovereignty is important to you and if your organization isn't in the US, then you shouldn't use macOS images. [Learn more](../../organizations/security/data-location.md).
+
 To determine your geography, go to `https://dev.azure.com/<your_organization>/_settings/organizationOverview` and note your organization's region. Find the geography that contains that region in the [Regions in each geography](#regions-in-each-geography) table. Then use the IP ranges from the [weekly file](https://www.microsoft.com/download/details.aspx?id=56519) for every region listed for that geography.
 
 > [!IMPORTANT]
