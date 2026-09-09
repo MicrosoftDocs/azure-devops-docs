@@ -2,7 +2,7 @@
 title: GitHub-hosted agents for Azure Pipelines (pay-as-you-go)
 description: Learn about using GitHub-hosted agents with pay-as-you-go billing in Azure Pipelines for higher performance builds and deployments.
 ms.topic: concept-article
-ms.date: 08/14/2026
+ms.date: 09/09/2026
 monikerRange: 'azure-devops'
 ---
 
@@ -16,6 +16,8 @@ GitHub-hosted agents provide higher performance virtual machines for Azure Pipel
 > This feature is being deployed and might not be available in all regions yet. To check if it's deployed to your region, check your [Azure DevOps billing page](#enable-github-hosted-agents-billing) for the **GitHub-hosted agents** setting.
 >
 > This feature is currently in preview. It might change before general availability.
+>
+> GitHub-hosted agents always run in the US irrespective of the location of your Azure DevOps organization.
 
 ## Prerequisites
 
