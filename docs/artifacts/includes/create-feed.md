@@ -4,7 +4,7 @@ ms.service: azure-artifacts
 ms.manager: wiwagn
 ms.author: rabououn
 author: ramiMSFT
-ms.date: 03/15/2024
+ms.date: 09/02/2026
 ---
 
 ::: moniker range="azure-devops"
@@ -13,7 +13,13 @@ ms.date: 03/15/2024
 
 1. Select **Artifacts**, and then select **Create Feed**.
 
-1. Provide a **Name** for your feed, choose the **Visibility** option that defines who can view your packages, check **Include packages from common public sources** if you want to include packages from sources like *nuget.org* or *npmjs.com*, and for **Scope**, decide whether the feed should be scoped to your project or the entire organization.
+1. Enter a **Name** for your feed.
+
+1. Choose a **Visibility** setting to control who can view packages in the feed.
+
+1. Select **Include packages from common public sources** if you want your feed to use upstream packages from sources such as *nuget.org* or *npmjs.com*.
+
+1. For **Scope**, choose whether the feed is scoped to the current project or the entire organization.
 
 1. Select **Create** when you're done.
 
@@ -25,19 +31,25 @@ ms.date: 03/15/2024
 
 1. Sign in to your Azure DevOps server, and then go to your project.
 
-2. Select **Artifacts**, and then select **Create Feed**.
+1. Select **Artifacts**, and then select **Create Feed**.
 
-3. Provide a **Name** for your feed, choose the **Visibility** option that defines who can view your packages, check **Include packages from common public sources** if you want to include packages from sources like *nuget.org* or *npmjs.com*, and for **Scope**, decide whether the feed should be scoped to your project or the entire organization.
+1. Enter a **Name** for your feed.
+
+1. Choose a **Visibility** setting to control who can view packages in the feed.
+
+1. Select **Include packages from common public sources** if you want your feed to use upstream packages from sources such as *nuget.org* or *npmjs.com*.
+
+1. For **Scope**, choose whether the feed is scoped to the current project or the entire organization.
 
 ::: moniker-end
 
 ::: moniker range="azure-devops-2022"
 
-4. Select **Create** when you're done.
+1. Select **Create** when you're done.
 
     :::image type="content" source="../media/create-new-feed-server-2022.png" alt-text="Screenshot showing selections for creating a new feed in Azure DevOps 2022.":::
 
 ::: moniker-end
 
 > [!NOTE]
-> By default, the **Build Service** for the project *(for example: projectName Build Service (orgName))* is assigned the **Feed and Upstream Reader (Collaborator)** role when a new feed is created.
+> When you create a feed, the project's **Build Service** account, such as *projectName Build Service (orgName)*, is assigned the **Feed and Upstream Reader (Collaborator)** role by default.
