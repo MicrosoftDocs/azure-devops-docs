@@ -2,7 +2,7 @@
 title: Microsoft-hosted agents for Azure Pipelines
 description: Learn about using the Microsoft-hosted agents provided in Azure Pipelines
 ms.topic: concept-article
-ms.date: 08/10/2026
+ms.date: 09/09/2026
 monikerRange: '<= azure-devops'
 ---
 
@@ -157,30 +157,43 @@ All of these machines have at least 10 GB of free disk space available for your 
 
 In some setups, you may need to know the range of IP addresses where agents are deployed. For instance, if you need to grant the hosted agents access through a firewall, you may wish to restrict that access by IP address. Because Azure DevOps uses the Azure global network, IP ranges vary over time. Microsoft publishes a [weekly JSON file](https://www.microsoft.com/download/details.aspx?id=56519) listing IP ranges for Azure datacenters, broken out by region. This file is updated weekly with new planned IP ranges. Only the latest version of the file is available for download. If you need previous versions, you must download and archive them each week as they become available. The new IP ranges become effective the following week. We recommend that you check back frequently (at least once every week) to ensure you keep an up-to-date list. If agent jobs begin to fail, a key first troubleshooting step is to make sure your configuration matches the latest list of IP addresses. The IP address ranges for the hosted agents are listed in the weekly file under `AzureCloud.<region>`, such as `AzureCloud.westus` for the West US region.
 
-Your hosted agents run in the same [Azure geography](https://azure.microsoft.com/global-infrastructure/geographies/) as your organization. Each geography contains one or more regions. While your agent may run in the same region as your organization, it isn't guaranteed to do so. To obtain the complete list of possible IP ranges for your agent, you must use the IP ranges from all of the regions that are contained in your geography. For example, if your organization is located in the **United States** geography, you must use the IP ranges for all of the regions in that geography.
+Your hosted agents run within the same [Azure geography](https://azure.microsoft.com/global-infrastructure/geographies/) as your organization. A hosted agent can run in any of the regions mapped to your geography, as shown in the [Regions in each geography](#regions-in-each-geography) table, and always honors data residency restrictions. While your agent might run in the same region as your organization, it isn't guaranteed to do so. To get the complete list of possible IP ranges for your agent, allow list the IP ranges for *all* of the regions mapped to your geography in the table, not just your organization's region.
 
-To determine your geography, navigate to `https://dev.azure.com/<your_organization>/_settings/organizationOverview`, get your region, and find the associated geography from the [Azure geography](https://azure.microsoft.com/global-infrastructure/geographies/) table. Once you have identified your geography, use the IP ranges from the [weekly file](https://www.microsoft.com/download/details.aspx?id=56519) for all regions in that geography.
+To determine your geography, go to `https://dev.azure.com/<your_organization>/_settings/organizationOverview` and note your organization's region. Find the geography that contains that region in the [Regions in each geography](#regions-in-each-geography) table. Then use the IP ranges from the [weekly file](https://www.microsoft.com/download/details.aspx?id=56519) for every region listed for that geography.
 
 > [!IMPORTANT]
 > You can't use private connections such as [ExpressRoute](https://azure.microsoft.com/services/expressroute/) or VPN to connect Microsoft-hosted agents to your corporate network. The traffic between Microsoft-hosted agents and your servers will be over public network.
 
+### Regions in each geography
+
+Microsoft-hosted agents can run in any of the regions mapped to your organization's geography, and they always honor data residency restrictions. Because your agent can run in any of these regions, allow list the IP ranges for *every* region mapped to your geography. The following table lists these regions.
+
+> [!NOTE]
+> Organizations in the European Union are always served agents from regions within the EU data residency boundary.
+
+| Geography | Regions |
+|-----------|---------|
+| Asia Pacific | East Asia, Southeast Asia |
+| Australia | Australia East, Australia Southeast, Australia Central |
+| Canada | Canada Central, Canada East |
+| Europe | West Europe, North Europe, France Central, Sweden Central, Poland Central, Spain Central, Austria East, Belgium Central |
+| India | Central India, South India, West India |
+| United Kingdom | UK South, UK West |
+| United States | Central US, East US, East US 2, North Central US, South Central US, West Central US, West US, West US 2, West US 3 |
+
 ### To identify the possible IP ranges for Microsoft-hosted agents
 
 1. Identify the [region for your organization](../../organizations/accounts/change-organization-location.md) in **Organization settings**.
-2. Identify the [Azure Geography](https://azure.microsoft.com/global-infrastructure/geographies/) for your organization's region by reviewing the [Azure regions list](/azure/reliability/regions-list), which is grouped by geography.
-3. Map the names of the regions in your geography to the format used in the weekly file, following the format of `AzureCloud.<region>`, such as `AzureCloud.westus`. You can map the names of the regions from the [Azure Geography](https://azure.microsoft.com/global-infrastructure/geographies/) list to the format used in the weekly file by reviewing the region names passed to the constructor of the regions defined in the [source code for the Region class](https://github.com/Azure/azure-libraries-for-net/blob/master/src/ResourceManagement/ResourceManager/Region.cs), from the [Azure Management Libraries for .NET](https://github.com/Azure/azure-libraries-for-net).
-    > [!NOTE]
-    > Since there is no API in the [Azure Management Libraries for .NET](https://github.com/Azure/azure-libraries-for-net) to list the regions for a geography, you must list them manually as shown in the following example.
-1. Retrieve the IP addresses for all regions in your geography from the [weekly file](https://www.microsoft.com/download/details.aspx?id=56519). If your region is **Brazil South** or **West Europe**, you must include additional IP ranges based on your fallback geography, as described in the following note.
+1. Find the geography that contains your organization's region in the [Regions in each geography](#regions-in-each-geography) table.
+1. For each region in your geography, locate its entry in the [weekly file](https://www.microsoft.com/download/details.aspx?id=56519) under the name `AzureCloud.<region>`, where `<region>` is the region name in lowercase with spaces removed. For example, **West US** is `AzureCloud.westus` and **France Central** is `AzureCloud.francecentral`.
+4. Retrieve the IP addresses for all regions in your geography from the [weekly file](https://www.microsoft.com/download/details.aspx?id=56519). If your region is **Brazil South**, include additional IP ranges based on your fallback geography, as described in the following note.
 
->[!NOTE]
->Due to capacity restrictions, some organizations in the **Brazil South** or **West Europe** regions may occasionally see their hosted agents located outside their expected geography. In these cases, in addition to including the IP ranges for all the regions in your geography as described in the previous section, additional IP ranges must be included for the regions in the capacity fallback geography.
+> [!NOTE]
+> Due to capacity restrictions, some organizations in the **Brazil South** region might occasionally see their hosted agents located outside their expected geography. In these cases, in addition to including the IP ranges for all the regions in your geography as described in the previous section, include the IP ranges for the regions in the capacity fallback geography.
 >
->If your organization is in the **Brazil South** region, your capacity fallback geography is **United States**, and you must include the IP ranges for all regions in the **United States** geography in addition to the IP ranges for all regions in the **Brazil South** geography.
+> If your organization is in the **Brazil South** region, your capacity fallback geography is **United States**, and you must include the IP ranges for all regions in the **United States** geography in addition to the IP ranges for all regions in the **Brazil South** geography.
 >
->If your organization is in the **West Europe** region, the capacity fallback geography is **France**, and you must include the IP ranges for all regions in the **France** geography in addition to the IP ranges for all regions in the **West Europe** geography.
->
->Our Mac IP ranges aren't included in the Azure IPs above, as they're hosted in GitHub's macOS cloud. You can retrieve IP ranges by using the [GitHub metadata API](https://docs.github.com/en/rest/reference/meta#get-github-meta-information) and following the instructions provided [here](https://docs.github.com/en/actions/reference/runners/github-hosted-runners#ip-addresses).
+> Our Mac IP ranges aren't included in the Azure IPs above, as they're hosted in GitHub's macOS cloud. You can retrieve IP ranges by using the [GitHub metadata API](https://docs.github.com/en/rest/reference/meta#get-github-meta-information) and following the instructions provided [here](https://docs.github.com/en/actions/reference/runners/github-hosted-runners#ip-addresses).
 
 #### Example
 
@@ -203,15 +216,15 @@ namespace WeeklyFileIPRanges
         static void Main(string[] args)
         {
             // United States geography has the following regions:
-            // Central US, East US, East US 2, East US 3, North Central US, 
-            // South Central US, West Central US, West US, West US 2, West US 3
-            // This list is accurate as of 9/8/2023
+            // Central US, East US, East US 2, North Central US, South Central US,
+            // West Central US, West US, West US 2, West US 3
+            // For the current list of regions in each geography, see the
+            // "Regions in each geography" table earlier in this article.
             List<string> USGeographyRegions = new List<string>
             {
                 "centralus",
                 "eastus",
                 "eastus2",
-                "eastus3",
                 "northcentralus",
                 "southcentralus",
                 "westcentralus",
