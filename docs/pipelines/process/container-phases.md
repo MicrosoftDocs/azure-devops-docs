@@ -151,8 +151,7 @@ resources:
     mapDockerSocket: true
 ```
 
-For managing mass-deployments needing Docker-in-container, it may be more convenient to set the `AZP_AGENT_DEFAULT_MAP_DOCKER_SOCKET_TO_FALSE=false` environment variable short term, that reverts the agent to the old behavior rather than having to duplicate this change across many places.
-
+For large-scale deployments where updating YAML everywhere is impractical, you can temporarily set the agent host environment variable `AZP_AGENT_DEFAULT_MAP_DOCKER_SOCKET_TO_FALSE=false` to restore the previous default behavior (mounting `/var/run/docker.sock` into Linux container jobs). Use this only as a short-term mitigation, as it re-enables Docker socket mapping by default.
 > [!CAUTION]
 > Mapping the Docker socket has serious security implications. Code inside the container can run as root on your Docker host. Only set `mapDockerSocket: true` when your job requires Docker-in-container behavior.
 
