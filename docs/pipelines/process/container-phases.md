@@ -2,7 +2,7 @@
 title: YAML pipeline container jobs
 description: Learn about configuring and running Azure Pipelines YAML pipeline jobs inside containers.
 ms.topic: concept-article
-ms.date: 08/14/2026
+ms.date: 09/09/2026
 monikerRange: "<=azure-devops"
 #customer intent: As an Azure Pipelines builder and tester, I want to learn about running pipeline jobs in containers so I can build and test pipelines in various agent configurations.
 ---
@@ -150,6 +150,8 @@ resources:
     image: ubuntu:22.04
     mapDockerSocket: true
 ```
+
+For large-scale deployments where updating YAML everywhere is impractical, you can temporarily set the agent host environment variable `AZP_AGENT_DEFAULT_MAP_DOCKER_SOCKET_TO_FALSE=false` to restore the previous default behavior, where Linux container jobs map `/var/run/docker.sock` unless `mapDockerSocket` is explicitly configured. Use this setting only as a short-term mitigation, as it re-enables Docker socket mapping by default.
 
 > [!CAUTION]
 > Mapping the Docker socket has serious security implications. Code inside the container can run as root on your Docker host. Only set `mapDockerSocket: true` when your job requires Docker-in-container behavior.
