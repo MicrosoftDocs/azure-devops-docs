@@ -576,7 +576,7 @@ az repos pr work-item add --id
 Use tags to show important details and help organize PRs. Tags can communicate extra information to reviewers, such as that the PR is still a work in progress, or is a hotfix for an upcoming release.
 
 > [!NOTE]
-> PR tag names, also called labels, and work item tag names share the same pool in an organization or project collection. The combined limit is 150,000 unique tag names. For more information, see [Work tracking, process, and project limits](../../organizations/settings/work/object-limits.md#backlogs-boards-dashboards-and-teams) and [Pull Request Labels](/rest/api/azure/devops/git/pull-request-labels?view=azure-devops-rest-7.1).
+> PR tag names, also called labels, and work item tag names share the same pool in an organization or project collection. The combined limit is 150,000 unique tag names. For more information, see [Work tracking, process, and project limits](../../organizations/settings/work/object-limits.md#backlogs-boards-dashboards-and-teams) and [Pull Request Labels](/rest/api/azure/devops/git/pull-request-labels).
 
 ![Screenshot showing P Rs with tags.](media/pull-requests/pull-request-labels.png)
 

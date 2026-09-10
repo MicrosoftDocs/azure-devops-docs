@@ -23,7 +23,7 @@ You can add and modify tags from the web portal or from Team Explorer plug-in fo
 Tags are a better choice for filtering work items than using text strings as described in [Define a work item query](using-queries.md). Tags are a shared resource associated with a project and not a team. If your project contains multiple teams, all teams add to and work from the same set of tags.
 
 > [!NOTE]
-> Work item tag names and pull request (PR) tag names, also called labels, share the same pool in an organization or project collection. The combined limit is 150,000 unique tag names. For more information, see [Work tracking, process, and project limits](../../organizations/settings/work/object-limits.md#backlogs-boards-dashboards-and-teams) and [Pull Request Labels](/rest/api/azure/devops/git/pull-request-labels?view=azure-devops-rest-7.1).
+> Work item tag names and pull request (PR) tag names, also called labels, share the same pool in an organization or project collection. The combined limit is 150,000 unique tag names. For more information, see [Work tracking, process, and project limits](../../organizations/settings/work/object-limits.md#backlogs-boards-dashboards-and-teams) and [Pull Request Labels](/rest/api/azure/devops/git/pull-request-labels).
 
 [!INCLUDE [ai-assistance-mcp-server-tip](../../includes/ai-assistance-mcp-server-tip.md)]
 
