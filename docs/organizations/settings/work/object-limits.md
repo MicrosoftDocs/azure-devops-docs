@@ -8,7 +8,7 @@ ms.author: chcomley
 author: chcomley
 ms.topic: reference
 monikerRange: "<= azure-devops"
-ms.date: 07/22/2026
+ms.date: 09/10/2026
 #customer intent: As an Azure DevOps administrator, I want to understand the operational and practical limits on objects and operations so I can manage my projects, teams, and tools effectively.
 ---
 
@@ -149,7 +149,7 @@ If you [integrate your project with GitHub](../../../cross-service/github-integr
 
 | Integration |  Limit |
 |--------|-------|
-| Azure Boards web UI | 1,000 connected GitHub repositories per connection |
+| Azure Boards web UI | 2,000 connected GitHub repositories per connection |
 | Azure Boards API\*| 2,000 connected GitHub repositories per connection |
 
 \*For more information, see [GitHub Connections - Get GitHub Connections](/rest/api/azure/devops/wit/github-connections/get-github-connections?view=azure-devops-rest-latest&tabs=HTTP&preserve-view=true).
