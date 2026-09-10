@@ -7,7 +7,7 @@ ms.topic: how-to
 ms.author: chcomley
 author: chcomley
 monikerRange: 'azure-devops'
-ms.date: 08/06/2026
+ms.date: 09/10/2026
 ms.custom: sfi-image-nochange, pat-reduction
 ai-usage: ai-assisted
 ---
@@ -79,7 +79,7 @@ The following authentication options are supported based on the GitHub platform 
 
 ## Add a GitHub connection with GitHub credentials 
 
-You can connect up to 1,000 GitHub repositories to an Azure Boards project. 
+You can connect up to 2,000 GitHub repositories per connection to an Azure Boards project.
 
 1. Sign in with your GitHub credentials. Choose an account where you're a repository administrator.
 
