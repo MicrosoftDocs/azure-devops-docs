@@ -4,10 +4,10 @@ titleSuffix: Azure Repos
 description: Learn how to create pull requests or draft pull requests in Azure Repos using Git, and add details and reviewers. 
 ms.service: azure-devops-repos
 ms.topic: how-to
-ms.date: 07/06/2026
+ms.date: 09/10/2026
 monikerRange: '<= azure-devops'
 ms.subservice: azure-devops-repos-git
-ms.custom: devx-track-azurecli
+ms.custom: devx-track-azurecli, support-driven-update
 ai-usage: ai-assisted
 ---
 
@@ -573,7 +573,10 @@ az repos pr work-item add --id
 
 ## Add tags to a pull request
 
-Use tags to show important details and help organize PRs. Tags can communicate extra information to reviewers, such as that the PR is still a work in progress, or is a hotfix for an upcoming release. 
+Use tags to show important details and help organize PRs. Tags can communicate extra information to reviewers, such as that the PR is still a work in progress, or is a hotfix for an upcoming release.
+
+> [!NOTE]
+> PR tag names, also called labels, and work item tag names share the same pool in an organization or project collection. The combined limit is 150,000 unique tag names. For more information, see [Work tracking, process, and project limits](../../organizations/settings/work/object-limits.md#backlogs-boards-dashboards-and-teams) and [Pull Request Labels](/rest/api/azure/devops/git/pull-request-labels?view=azure-devops-rest-7.1).
 
 ![Screenshot showing P Rs with tags.](media/pull-requests/pull-request-labels.png)
 

@@ -93,7 +93,7 @@ The following operational and object limits apply to teams, work item tags, back
 | Team dashboards per team | 500, specific to the team and used to track team-specific metrics and data |
 | Teams per project | 5,000 |
 | Work item tags per work item | 100 |
-| Work item tags per organization or collection | 150,000 |
+| Work item tag and pull request label names per organization or collection | 150,000 combined |
 | Delivery plans per project | 1,500 |
 | Templates per work item type | 100 |
 
@@ -129,7 +129,7 @@ The following operational display and object limits apply to teams, work item ta
 | Dashboards per project | 500 |
 | Taskboard | 800 work items |
 | Teams per project | 5,000 |
-| Work item tags per project organization or collection | 150,000 |
+| Work item tag and pull request label names per organization or collection | 150,000 combined |
 | Work item tags per work item | 100 |
 | Templates per work item type | 100 |
 

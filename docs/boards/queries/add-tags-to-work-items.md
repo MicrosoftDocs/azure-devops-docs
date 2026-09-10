@@ -2,13 +2,13 @@
 title: Add Tags to Work Items to Categorize Lists and Boards 
 titleSuffix: Azure Boards
 description: Learn how to add work item tags to categorize and filter lists & boards when working in Azure Boards.
-ms.custom: boards-queries, copilot-scenario-highlight
+ms.custom: boards-queries, copilot-scenario-highlight, support-driven-update
 ms.service: azure-boards
 ms.author: chcomley
 author: chcomley
 ms.topic: how-to
 monikerRange: '<= azure-devops'
-ms.date: 02/28/2026
+ms.date: 09/10/2026
 #customer intent: As a team member with organizational responsibilities, I want to use tags to organize team activities.
 ---
 
@@ -21,6 +21,9 @@ Tag work items to quickly filter the product backlog or a work item query by cat
 You can add and modify tags from the web portal or from Team Explorer plug-in for Visual Studio. Also, you can open a query in [Excel](../backlogs/office/bulk-add-modify-work-items-excel.md) to modify tags in bulk.
 
 Tags are a better choice for filtering work items than using text strings as described in [Define a work item query](using-queries.md). Tags are a shared resource associated with a project and not a team. If your project contains multiple teams, all teams add to and work from the same set of tags.
+
+> [!NOTE]
+> Work item tag names and pull request (PR) tag names, also called labels, share the same pool in an organization or project collection. The combined limit is 150,000 unique tag names. For more information, see [Work tracking, process, and project limits](../../organizations/settings/work/object-limits.md#backlogs-boards-dashboards-and-teams) and [Pull Request Labels](/rest/api/azure/devops/git/pull-request-labels?view=azure-devops-rest-7.1).
 
 [!INCLUDE [ai-assistance-mcp-server-tip](../../includes/ai-assistance-mcp-server-tip.md)]
 
