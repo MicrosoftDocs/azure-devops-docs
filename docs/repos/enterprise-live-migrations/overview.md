@@ -7,7 +7,7 @@ ms.topic: overview
 ms.author: chcomley
 author: chcomley
 monikerRange: 'azure-devops'
-ms.date: 08/31/2026
+ms.date: 09/10/2026
 #customer intent: As an Azure DevOps administrator, I want to understand Enterprise Live Migrations so I can plan a migration of my Azure Repos to GitHub Enterprise Cloud.
 ---
 
@@ -33,7 +33,7 @@ ELM is available in two experiences: the Azure DevOps CLI and the Azure DevOps p
 ELM provides the following core capabilities:
 
 - **Continuous synchronization:** ELM syncs changes from Azure DevOps to GitHub by using incremental sync and delta tracking, so teams can keep working in Azure DevOps until cutover. Plan for a brief read-only window at cutover - typically under 30 minutes for most repositories.
-- **Multi-repository migrations:** ELM supports migrating multiple repositories, with up to 20 concurrent migration jobs. In the CLI, run the migration command for each repository one at a time. In the UI, you can select up to 20 repositories to migrate together. 
+- **Multi-repository migrations:** ELM supports migrating up to 30 repositories, with up to 20 repositories in the initial sync stage and 10 additional repositories in the incremental sync stage. In the CLI, run the migration command for each repository one at a time. In the UI, you can select up to 20 repositories initially. After the initial sync completes for those repositories, you can initiate migrations for up to 10 additional repositories.
 - **End-to-end migration workflow:** ELM tracks repository states through initialization, syncing, cutover, validation, and completion. This model gives you visibility into migration progress and supports troubleshooting.
 - **Customer-scheduled cutover:** You choose and schedule the cutover time to switch the system of record from Azure DevOps to GitHub.
 - **Post-migration setup made easier:** ELM helps reduce the manual work after cutover by setting up the Azure Boards connection and rewiring Azure Pipelines to point to the migrated GitHub repository. This makes it easier for teams to keep using Azure DevOps for planning and pipelines while working from GitHub for source code, with less handoff pain and fewer follow-up tasks. 
