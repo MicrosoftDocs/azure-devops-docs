@@ -4,11 +4,12 @@ titleSuffix: Azure DevOps Services
 description: Learn how to rename your organization and what to do before and after you rename it.
 ms.subservice: azure-devops-organizations
 ms.topic: how-to
+ai-usage: ai-assisted
 ms.author: chcomley
 author: chcomley
-ms.date: 10/24/2024
+ms.date: 09/10/2026
 monikerRange: 'azure-devops'
-ms.custom: sfi-image-nochange
+ms.custom: sfi-image-nochange, support-driven-update
 ---
 
 # Rename your organization in Azure DevOps
@@ -18,7 +19,7 @@ ms.custom: sfi-image-nochange
 You can change your organization name (URL) at any time in Azure DevOps. This action allows you to update the URL to better reflect your organization's branding or structure. Changing the organization name updates the URL used to access your Azure DevOps resources, including the URLs of your projects, repositories and other resources in the organization. Follow the steps in this article to rename your organization and ensure a smooth transition for your team.
 
 > [!CAUTION]
-> The rename operation affects your organization's connections and individuals who are currently working with your organization. Before you start, meet the [prerequisites](#prerequisites) and find out [what to do after renaming your organization](/troubleshoot/azure/devops/rename-service-url). The URL of projects, repositories, and other resources within the organization will change. Ensure to update any bookmarks or links to these resources.
+> The rename operation affects your organization's connections and individuals who are currently working with your organization. Before you start, meet the [prerequisites](#prerequisites). The URLs of projects, repositories, and other resources within the organization change when you enable the new organization URL. After the rename, complete the applicable [required updates](#update-references-after-the-rename).
 
 ## Prerequisites
 
@@ -50,6 +51,24 @@ You can change your organization name (URL) at any time in Azure DevOps. This ac
    :::image type="content" source="media/rename-vso-organization/VSOConfirmOrganizationRename.png" alt-text="Screenshot showing confirmation screen for organization rename.":::
 
 Your organization is renamed.
+
+## Update references after the rename
+
+When you enable the new organization URL, notify your users and update references that contain the previous organization name. Complete the following actions as applicable:
+
+- **Bookmarks and links:** Update saved links to projects, repositories, work items, pipelines, and other resources.
+- **Client connections:** Reconnect clients such as Visual Studio and Azure DevOps Office Integration to the new organization URL.
+- **Git remotes:** Update the remote URL in each local repository. For more information, see [Update the Git remotes on your dev machines](../../repos/git/repo-rename.md#update-the-git-remotes-on-your-dev-machines).
+- **TFVC workspaces:** Update the cached organization URL by running the following command for each affected workspace. For more information, see [Workspaces command](../../repos/tfvc/workspaces-command.md).
+
+   ```cmd
+   tf workspaces /collection:https://dev.azure.com/{neworganization}
+   ```
+
+- **Self-hosted agents:** Remove and reconfigure agents that were registered with the previous organization URL. For more information, see [Remove and reconfigure a Windows agent](../../pipelines/agents/windows-agent.md#remove-and-reconfigure-an-agent), [Linux agent](../../pipelines/agents/linux-agent.md), or [macOS agent](../../pipelines/agents/osx-agent.md).
+- **Analytics and Power BI:** Update OData feed URLs and other data source URLs that contain the previous organization name. For the OData URL format, see [Connect with Power BI Data Connector](../../report/powerbi/access-analytics-power-bi.md).
+- **Tools and integrations:** Update hardcoded organization URLs in scripts, REST API clients, extensions, pipeline variables, webhooks, and other external integrations. Then, test each integration with the new URL.
+- **Workload identity federation:** Check Azure Resource Manager service connections that use a name-based subject in the format `sc://<organization-name>/<project-name>/<service-connection-name>`. If the subject contains the previous organization name, update the federated credential. ID-based subjects don't require an update. For more information, see [Check the issuer URL for accuracy](../../pipelines/release/troubleshoot-workload-identity.md#check-the-issuer-url-for-accuracy).
 
 ## Frequently asked questions (FAQs)
 
