@@ -32,6 +32,8 @@
     href: configure-storage.md
   - name: Configure images
     href: configure-images.md
+  - name: Configure provisioning scripts
+    href: configure-provisioning-scripts.md
   - name: Configure security settings
     href: configure-security.md
   - name: Configure identity

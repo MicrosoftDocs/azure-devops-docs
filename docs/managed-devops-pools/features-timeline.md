@@ -14,13 +14,15 @@ The following section describes new features in development for Managed DevOps P
 
 * **Instance Mix**: Instance Mix allows you to specify multiple Azure Virtual Machine (VM) sizes for a single Managed DevOps Pool. Instead of being limited to a single VM size, you can define up to five VM sizes, which increases the likelihood of successful provisioning and provides more flexibility in how compute resources are allocated across the pool. This feature is built on top of [Azure Virtual Machine Scale Sets Instance Mix capabilities](/azure/virtual-machine-scale-sets/instance-mix-overview) and primarily helps improve resiliency and provisioning reliability. **Planned for September 2026.**
 
-* **Custom Startup Script**: We're adding the option to run a PowerShell script (Windows) or a shell script (Linux) for every image in a pool before they're assigned to an agent. This feature enables scenarios such as installing Trusted root CAs and setting environment variables. **Planned for September 2026**.
-
 * **Purge agents**: We're adding the ability for you to manually recycle your agents if desired. **Planned for October 2026.**
 
 * **Spot Virtual Machines instances**: Reduce your Azure cost [by up to 90%](/azure/architecture/guide/spot/spot-eviction#understand-spot-vm-pricing) by switching your non-time-critical pipelines to Spot Virtual Machines. CI/CD workloads make ideal candidates to use Spot Virtual Machines due to the ephemeral nature of CI/CD agents. For more information on Spot Virtual Machines, see [Spot Virtual Machines overview](https://azure.microsoft.com/products/virtual-machines/spot). **Planned for Late 2026.**
 
 * **Container agents**: We're adding support for provisioning a container and starting the agent inside the container. **Planned for late 2026.**
+
+## August 2026
+
+* **Custom Startup Script**: We've added the option to run a PowerShell script (Windows) or a shell script (Linux) for every image in a pool before they're assigned to an agent. This feature enables scenarios such as installing Trusted root CAs and setting environment variables. For more information, see [Configure provisioning scripts](./configure-provisioning-scripts.md).
 
 ## June 2026
 
