@@ -7,7 +7,7 @@ ms.topic: how-to
 ms.author: chcomley
 author: chcomley
 monikerRange: 'azure-devops'
-ms.date: 06/01/2026
+ms.date: 09/10/2026
 #customer intent: As a migration operator, I want to validate the migrated GitHub repository after cutover so that teams can work from GitHub with the expected protections and access.
 ---
 
@@ -30,19 +30,19 @@ ELM migrates Azure DevOps branch policies to GitHub branch rulesets. After cutov
 
 ### Branch policy migration: high-level mapping
 
-| Azure DevOps policy | GitHub equivalent | Notes and customer action |
-|---|---|---|
-| Minimum approval count | Required approving reviews (migrated) | Verify branch patterns and reviewer count after cutover. |
-| Reset votes on new push | Dismiss stale reviews (migrated) | Confirm the setting is enabled on protected branches. |
-| Build validation | Required status checks (migrated) | Might require updating check names after pipelines are rewired. |
-| Merge strategy | Allowed merge methods (migrated) | Validate merge settings (merge/squash/rebase) on the repository. |
-| File size restriction | Max file size (migrated) | Large files might require Git LFS (future) or history cleanup. |
-| Required reviewers (path-based) | CODEOWNERS + required code owner review (manual) | Create or validate `CODEOWNERS` entries to match path rules. |
-| Block force push | Block force pushes (migrated) | Confirm enforcement on protected branches. |
-| Block branch deletion | Restrict deletions (migrated) | Confirm branch deletion is blocked where required. |
-| Commit author email validation | Commit email pattern checks (partially supported) | Review and adjust patterns after migration to match your policy intent. |
-| Auto-complete | Auto-merge (behavior differs) | GitHub auto-merge is enabled per pull request. Validate your preferred workflow. |
-| Path length, reserved names, file name restrictions, case enforcement | No direct equivalent | Resolve these issues before migration to meet GitHub limits. |
+| Azure DevOps policy | ELM support | GitHub equivalent | What you need to do |
+|---|---|---|---|
+| Minimum approval count | Automatically migrated | Required approving reviews | After cutover, verify that the required number of reviewers on each protected branch matches your Azure DevOps configuration. |
+| Reset votes on new push | Automatically migrated | Dismiss stale reviews | Confirm that stale pull request approvals are dismissed when new commits are pushed to the branch. |
+| Build validation | Automatically migrated | Required status checks | Verify that all required build checks are present and reporting successfully. If pipelines were rewired or renamed after migration, update the required status check names on the branch protection rule. |
+| Merge strategy | Automatically migrated | Allowed merge methods | Confirm that the repository allows only the merge methods your team uses (merge, squash, and/or rebase). |
+| File size restriction | Automatically migrated | Max file size limits | Test pushes involving larger files and verify that repository limits align with your governance requirements. Consider Git LFS if repositories contain large binary assets. |
+| Required reviewers (path-based) | Manual configuration required | CODEOWNERS + required code owner review | ELM doesn't automatically convert Azure DevOps path-based reviewer rules into a `CODEOWNERS` file. Create or update a `CODEOWNERS` file that reflects your existing ownership model, then enable required code owner reviews in branch protection settings. |
+| Block force push | Automatically migrated | Block force pushes | Confirm that force-push protection remains enabled on all protected branches. |
+| Block branch deletion | Automatically migrated | Restrict deletions | Verify that protected branches can't be deleted by users. |
+| Commit author email validation | Partial support | Commit email pattern checks | GitHub and Azure DevOps implement email validation differently. Review your existing allow/block patterns and confirm they produce the intended enforcement behavior after migration. Test with representative pull requests and commits. |
+| Auto-complete | Behavior differs | Auto-merge | GitHub auto-merge isn't identical to Azure DevOps auto-complete. Review how pull requests are completed in your workflow and train users on any behavioral differences before cutover. |
+| Path length, reserved names, file name restrictions, case enforcement | Not migrated | No direct equivalent | These Azure DevOps validations don't have a direct GitHub equivalent. Before migration, identify repositories that depend on these restrictions and remediate any files, paths, or naming patterns that might cause issues in GitHub. |
 
 ## Validate the migrated repository
 
