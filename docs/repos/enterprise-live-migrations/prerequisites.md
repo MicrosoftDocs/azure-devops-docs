@@ -7,7 +7,7 @@ ms.topic: how-to
 ms.author: chcomley
 author: chcomley
 monikerRange: 'azure-devops'
-ms.date: 08/06/2026
+ms.date: 09/10/2026
 #customer intent: As a migration operator, I want to confirm all ELM prerequisites so I can start a migration without getting blocked on access, tooling, or authentication.
 ---
 
@@ -50,6 +50,10 @@ The command returns the repository GUID. Save it for use when you start the migr
 | Enterprise Live Migrations permission | You must have the **Enterprise Live Migrations: Manage Migrations** permission set to **Allow** at the repository level. To check, go to **Project Settings** > **Repositories** > **Security** and confirm your group or user account has this permission. If you don't, contact your Project Collection Administrator (PCA) or Project Administrator (PA) to request access. For more information, see [Set Git repository permissions](../git/set-git-repository-permissions.md). |
 | Self-hosted Linux agent availability | If no self-hosted Linux agent is available, a PCA or someone with permission to administer the agent queue must create and register one. |
 | Service connection creation permission | A user with the appropriate permissions must create the service connection for pipeline rewiring. |
+
+### GitHub
+
+When you use the portal, create a personal access token (PAT) with the `repo`, `admin:org`, and `delete_repo` scopes. The token must remain valid throughout the migration.
 
 ## Install the Azure DevOps ELM app from GitHub Marketplace 
 As a GitHub enterprise admin, install the Azure DevOps ELM app for both your enterprise and the target organization.

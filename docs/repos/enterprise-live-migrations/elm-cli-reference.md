@@ -7,7 +7,7 @@ ms.topic: reference
 ms.author: chcomley
 author: chcomley
 monikerRange: 'azure-devops'
-ms.date: 06/26/2026
+ms.date: 09/10/2026
 #customer intent: As a migration operator, I want a complete reference for ELM CLI commands and parameters so I can run, monitor, and troubleshoot migrations from the command line.
 ---
 
@@ -64,7 +64,7 @@ Pipeline rewiring re-points pipelines that reference the source Azure Repos repo
 | `--migration` | flag | `resume` | Promote a succeeded validate-only run to a full migration (sets `validateOnly=false` and `statusRequested=active`). Only valid when the previous validate-only run finished with `status: Succeeded`. Mutually exclusive with `--validate-only`. |
 | `--cutover-date` | ISO 8601 | `create` | Pre-schedule cutover at creation time, for example `2030-12-31T11:59:00Z`. |
 | `--date` | ISO 8601 | `cutover set` | Schedule cutover date and time, for example `2030-12-31T11:59:00Z`. Must be in the future. |
-| `--skip-validation` | string | `create` | Comma-separated list of validation policy names, or a non-negative integer bitmask. Policy names (case-insensitive): `None`, `ActivePullRequestCount`, `PullRequestDeltaSize`, `AgentPoolExists`, `MaxFileSize`, `MaxPullRequestSize`, `MaxPushPackSize`, `MaxReferenceNameLength`, `TargetRepositoryDoesNotExist`, `SourceRepositoryContainsLfsObjects`, `SourceRepositoryNotReadOnly`, `BoardsGitHubConnectionProvisioning`, `All`. |
+| `--skip-validation` | string | `create` | We strongly recommend that you avoid this parameter because it significantly increases the risk of migration failure, as explained in [Introduction to Enterprise Live Migrations (ELM)](overview.md). Comma-separated list of validation policy names, or a non-negative integer bitmask. Policy names (case-insensitive): `None`, `ActivePullRequestCount`, `PullRequestDeltaSize`, `AgentPoolExists`, `MaxFileSize`, `MaxPullRequestSize`, `MaxPushPackSize`, `MaxReferenceNameLength`, `TargetRepositoryDoesNotExist`, `SourceRepositoryContainsLfsObjects`, `SourceRepositoryNotReadOnly`, `BoardsGitHubConnectionProvisioning`, `All`. |
 | `--enable-boards-github-connection` (`--enable-boards-gh`) | flag | `create` | Opt in to provisioning the Azure Boards GitHub connection at cutover. Off by default. Requires the Azure Boards GitHub App to be installed on the target GitHub organization before the migration runs. |
 | `--enable-auto-discover-pipelines` (`--auto-discover`) | flag | `create` | Opt in to automatic pipeline discovery at cutover. Off by default. Requires `--pipeline-service-connection-id`; the CLI rejects the command if you pass this flag without a service connection. |
 | `--pipeline-service-connection-id` (`--pipeline-sc-id`) | GUID | `create` | Project-scoped GitHub service connection ID attached at create time for pipeline rewiring. Required for auto-discovery; optional in manual mode, where it pre-attaches the connection so later `pipelines submit` calls only need `--pipeline-ids`. |

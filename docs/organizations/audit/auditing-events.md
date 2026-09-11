@@ -7,7 +7,7 @@ ms.author: chcomley
 author: chcomley
 ms.topic: overview
 monikerRange: '= azure-devops'
-ms.date: 02/24/2026
+ms.date: 09/10/2026
 ai-usage: ai-assisted
 ---
 
@@ -16,7 +16,7 @@ ai-usage: ai-assisted
 [!INCLUDE [version-eq-azure-devops](../../includes/version-eq-azure-devops.md)]
 
 > [!NOTE]
-> - Auditing is in public preview.
+> - Auditing is in preview.
 > - New actions are continually added to this list. To request an event that isn't currently included in the following tables, share your feedback in the [Developer Community](https://developercommunity.visualstudio.com/search?space=21).
 
 The following tables describe the events (or actions) available through Azure DevOps Auditing.
@@ -34,6 +34,7 @@ The following tables describe the events (or actions) available through Azure De
 | [Artifacts events](#artifacts-events)    | Create, modify permissions, and delete feed views and both organization-scoped and project-scoped feeds. |
 | [AuditLog events](#auditlog-events)      | View and download audit logs. Access, create, modify, enable, disable, and delete audit streams. |
 | [Billing events](#billing-events)        | Add, change, or remove Azure Subscriptions. Modify billing quantities for Pipelines, Artifacts, and Cloud Load Test usage.  |
+| [Enterprise Live Migrations events](#enterprise-live-migrations-events) | Track repository migration activities performed by Enterprise Live Migrations (ELM), including validation, synchronization, cutover, pipeline rewiring, repository access changes, and migration status events. |
 | [Extension events](#extension-events)    | Install, modify, enable, disable, and uninstall extensions for Extensions Marketplace.           |
 | [Git licensing events](#git-licensing-events)                | Create, modify, enable, disable, fork, delete, and undelete Git repositories in Azure Repos. Bypass PR policies. Change branch policies.   |
 | [Group events](#group-events)            | Create groups and modify group memberships.          |
@@ -115,6 +116,26 @@ The following tables describe the events (or actions) available through Azure De
 | `Billing.SubscriptionLink` | Billing relationship set up to {NewSubscriptionGuid}. |
 | `Billing.SubscriptionUnlink` | Billing relationship removed from {PreviousSubscriptionGuid}. |
 | `Billing.SubscriptionUpdate` | Billing relationship changed from {PreviousSubscriptionGuid} to {NewSubscriptionGuid}. |
+
+### Enterprise Live Migrations events
+
+| Action | Description |
+|--------|-------------|
+| `ELM.RepoMigrationFailed` | Repository migration for repository {RepoName} (ID: {RepoId}) in project {ProjectName} failed. Reason: {FailureReason}. |
+| `ELM.RepoMigrationCompleted` | Repository migration for repository {RepoName} (ID: {RepoId}) in project {ProjectName} completed successfully. Repository migrated to {TargetRepository}. |
+| `ELM.RepoMigrationCancelled` | Repository migration for repository {RepoName} (ID: {RepoId}) in project {ProjectName} was cancelled. |
+| `ELM.RepoMigrationRestarted` | Repository migration for repository {RepoName} (ID: {RepoId}) in project {ProjectName} was restarted. |
+| `ELM.RepoValidationStarted` | Validation started for repository {RepoName} (ID: {RepoId}) in project {ProjectName}. |
+| `ELM.RepoValidationCompleted` | Validation completed for repository {RepoName} (ID: {RepoId}) in project {ProjectName}. |
+| `ELM.RepoInitialSyncStarted` | Initial synchronization started for repository {RepoName} (ID: {RepoId}) in project {ProjectName}. |
+| `ELM.RepoInitialSyncCompleted` | Initial synchronization completed for repository {RepoName} (ID: {RepoId}) in project {ProjectName}. |
+| `ELM.RepoSyncPaused` | Synchronization was paused for repository {RepoName} (ID: {RepoId}) in project {ProjectName}. |
+| `ELM.RepoSyncResumed` | Synchronization resumed for repository {RepoName} (ID: {RepoId}) in project {ProjectName}. |
+| `ELM.RepoAdminGranted` | Administrative access was granted to the migrated repository {TargetRepository} for repository {RepoName} (ID: {RepoId}). |
+| `ELM.RepoCutoverScheduled` | Cutover was scheduled for repository {RepoName} (ID: {RepoId}) in project {ProjectName} on {ScheduledCutoverDate}. |
+| `ELM.RepoRWConverted` | Source repository {RepoName} (ID: {RepoId}) in project {ProjectName} was converted to read-only mode as part of migration cutover. |
+| `ELM.RepoPipelineRewireCompleted` | Pipeline rewiring completed for repository {RepoName} (ID: {RepoId}) in project {ProjectName}. |
+| `ELM.RepoBoardsConnectionProvisioned` | Azure Boards connection was provisioned for migrated repository {TargetRepository}. |
 
 ### Extension events
 
