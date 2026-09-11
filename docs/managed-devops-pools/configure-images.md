@@ -1,7 +1,7 @@
 ---
 title: Configure images
 description: Learn how to configure agent images for Managed DevOps Pools.
-ms.date: 06/01/2026
+ms.date: 09/11/2026
 ms.topic: how-to
 ---
 
@@ -584,6 +584,14 @@ pool:
   demands:
   - ImageOverride -equals windows-2022
 ```
+
+## Configure provisioning script
+
+Managed DevOps Pools allows you to configure a PowerShell script for Windows or a shell script for Linux to run when an agent starts.
+
+:::image type="content" source="./media/configure-images/configure-provisioning-script-menu.png" alt-text="Screenshot that shows the Configure provisioning script menu option."
+
+For information on configuring your image to run a provisioning script when it starts, see [Configure provisioning scripts](./configure-provisioning-scripts.md).
 
 ## Image lifecycle
 
