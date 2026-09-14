@@ -52,7 +52,7 @@ To share your packages publicly, you can simply share your feed URL, for example
 
 | Package Type        | Articles                                                                 |
 |---------------------|----------------------------------------------------------------------------------|
-| **NuGet**           | - [Publish NuGet packages - (NuGet.exe)](../nuget/publish.md#publish-packages-to-a-feed-in-the-same-organization)  <br>- [Publish NuGet packages - (dotnet)](../nuget/dotnet-exe.md#publish-packages-to-a-feed-in-the-same-organization) |
+| **NuGet**           | - [Publish NuGet packages - (NuGet.exe)](../nuget/publish.md#publish-to-a-feed-in-the-same-organization)  <br>- [Publish NuGet packages - (dotnet)](../nuget/dotnet-exe.md#publish-packages-to-a-feed-in-the-same-organization) |
 | **Npm**             | - [Publish npm packages](../npm/publish.md)                                      |
 | **Maven**           | - [Publish Maven Artifacts](../get-started-maven.md#publish-packages)            |
 | **Gradle**          | - [Publish Artifacts using Gradle](../maven/publish-with-gradle.md)              |
