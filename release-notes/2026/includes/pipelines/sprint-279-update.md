@@ -1,9 +1,20 @@
 ---
 author: gloridelmorales
 ms.author: glmorale
-ms.date: 9/4/2026
+ms.date: 9/10/2026
 ms.topic: include
 ---
+
+### Test pipeline tasks without unsupported Node.js runners
+
+Node.js 6, 10, and 16 reached end of support and are scheduled for removal from the Azure Pipelines agent on November 24, 2026. You can now identify pipelines that depend on these runners before they're removed.
+
+In **Organization settings** > **Pipelines** > **Settings**, under **Task restrictions**, enable **Restrict out of support Node.js versions in pipeline tasks**. When enabled, tasks that target Node.js 6, 10, or 16 run on a newer available Node.js runner. The pipeline log warns you about affected tasks so you can test and update them.
+
+> [!IMPORTANT]
+> A task written for an unsupported Node.js runner might fail or behave unexpectedly on a newer runner. Update custom tasks to use a supported Node.js version before the unsupported runners are removed.
+
+For more information, see [Restrict out of support Node.js versions in pipeline tasks](/azure/devops/pipelines/agents/nodejs-runners#test-tasks-before-end-of-life-nodejs-runners-are-removed).
 
 ### Docker socket no longer mapped by default for Linux container jobs
 
