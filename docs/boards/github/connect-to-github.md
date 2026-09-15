@@ -361,7 +361,7 @@ When the Azure Boards connection to GitHub loses access, a red-X alert appears i
 
 <a id="ghe-dataimport"></a>
 
-### Resolve AB# Mention Issues
+### Resolve AB# mention issues
 If you use the Azure Boards app for GitHub and find that your commits, pull requests, and issues aren't automatically linked to your work items when using `AB#` syntax, check that the Azure Boards app has adequate permissions on the area path your work items belong to:
  1. Go to **Project Settings** > **Boards** > **Project configuration**, and then select **Areas**.
     :::image type="content" source="../../organizations/settings/media/areas/open-project-work-areas-settings-vert.png" alt-text="Screenshot showing opening Project Settings, Work, Project Configuration."::: 
