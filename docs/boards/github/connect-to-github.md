@@ -366,7 +366,7 @@ If you use the Azure Boards app for GitHub and find that your commits, pull requ
  1. Go to **Project Settings** > **Boards** > **Project configuration**, and then select **Areas**.
     :::image type="content" source="../../organizations/settings/media/areas/open-project-work-areas-settings-vert.png" alt-text="Screenshot showing opening Project Settings, Work, Project Configuration."::: 
 2. Choose the **...** context menu for the node you want to manage and select **Security**.
-   :::image type="content" source="../../organizations/security/media/work-tracking/open-area-node-permissions.png" alt-text="Screenshot of context menu for Area Path, choose Security." lightbox="media/work-tracking/open-area-node-permissions.png":::
+   :::image type="content" source="../../organizations/security/media/work-tracking/open-area-node-permissions.png" alt-text="Screenshot of context menu for Area Path, choose Security." lightbox="../../organizations/security/media/work-tracking/open-area-node-permissions.png":::
 3. Ensure the **Azure Boards** user has *View work items in this node* and *Edit work items in this node* set to **Allow**.
 
 ### Resolve broken GitHub Enterprise Server connection  
