@@ -7,8 +7,8 @@ ms.topic: how-to
 ms.author: chcomley
 author: chcomley
 monikerRange: 'azure-devops'
-ms.date: 09/10/2026
-ms.custom: sfi-image-nochange, pat-reduction
+ms.date: 09/15/2026
+ms.custom: sfi-image-nochange, pat-reduction, support-driven-update
 ai-usage: ai-assisted
 ---
 
