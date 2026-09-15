@@ -7,8 +7,8 @@ ms.topic: how-to
 ms.author: chcomley
 author: chcomley
 monikerRange: 'azure-devops'
-ms.date: 09/10/2026
-ms.custom: sfi-image-nochange, pat-reduction
+ms.date: 09/15/2026
+ms.custom: sfi-image-nochange, pat-reduction, support-driven-update
 ai-usage: ai-assisted
 ---
 
@@ -360,6 +360,14 @@ When the Azure Boards connection to GitHub loses access, a red-X alert appears i
 	Recreate the PAT with the required scopes: `repo, read:user, user:email, admin:repo_hook`. For more information, see [Best practices for using PATs](../../organizations/accounts/use-personal-access-tokens-to-authenticate.md#best-practices-for-using-pats).
 
 <a id="ghe-dataimport"></a>
+
+### Resolve AB# mention issues
+If you use the Azure Boards app for GitHub and find that your commits, pull requests, and issues aren't automatically linked to your work items when using `AB#` syntax, check that the Azure Boards app has adequate permissions on the area path your work items belong to:
+ 1. Go to **Project Settings** > **Boards** > **Project configuration**, and then select **Areas**.
+    :::image type="content" source="../../organizations/settings/media/areas/open-project-work-areas-settings-vert.png" alt-text="Screenshot showing opening Project Settings, Work, Project Configuration."::: 
+2. Choose the **...** context menu for the node you want to manage and select **Security**.
+   :::image type="content" source="../../organizations/security/media/work-tracking/open-area-node-permissions.png" alt-text="Screenshot of context menu for Area Path, choose Security." lightbox="../../organizations/security/media/work-tracking/open-area-node-permissions.png":::
+3. Ensure the **Azure Boards** user has *View work items in this node* and *Edit work items in this node* set to **Allow**.
 
 ### Resolve broken GitHub Enterprise Server connection  
 
