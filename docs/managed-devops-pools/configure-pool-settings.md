@@ -1,7 +1,7 @@
 ---
 title: Configure pool settings
 description: Learn how to configure settings in Managed DevOps Pools.
-ms.date: 06/01/2026
+ms.date: 09/16/2026
 ms.custom: sfi-image-nochange
 ms.topic: how-to
 ---
@@ -39,7 +39,7 @@ To configure your pool, use the following settings:
 * [Agent size](#agent-size)
 * [OS disk type](#os-disk-type)
 
-### Dev Center project
+## Dev Center project
 
 #### [Azure portal](#tab/azure-portal/)
 
@@ -121,7 +121,7 @@ In the following example, the `devCenterProjectResourceId` is retrieved from a *
 
 * * *
 
-### Azure DevOps organization
+## Azure DevOps organization
 
 #### [Azure portal](#tab/azure-portal/)
 
@@ -224,7 +224,7 @@ resource managedDevOpsPools 'Microsoft.DevOpsInfrastructure/pools@2025-09-20' = 
 
 By default, your pool is available to all projects in your specified organizations. To limit your pool to specific projects, see [Security settings: Configure organization access](configure-security.md#configure-organization-access).
 
-### Maximum agents
+## Maximum agents
 
 Specify the maximum number of agents that can be provisioned at the same time in your pool. For example, if you specify a **Maximum agents** value of **2**, you can run a maximum of two agents at the same time. If more than two jobs are queued, only two agents run jobs, while the other jobs wait.
 
@@ -296,19 +296,23 @@ resource managedDevOpsPools 'Microsoft.DevOpsInfrastructure/pools@2025-09-20' = 
 > [!NOTE]
 > The **Maximum agents** value configures the maximum number of agents that can be provisioned at the same time, but your organization's self-hosted parallel jobs count specifies the number of jobs that can run concurrently. Ensure that you have enough self-hosted parallel jobs available in your organization to enable your agents to run jobs. For more information, see [Azure DevOps Services parallel job pricing](./pricing.md#azure-devops-services-parallel-job-pricing).
 
-### Agent size
+## Agent size
 
-The **Agent size** setting specifies the [Azure virtual machine size](/azure/virtual-machines/sizes) to use to host your Managed DevOps Pools agents.
+The **Agent size** setting specifies the [Azure virtual machine size](/azure/virtual-machines/sizes) to use to host your Managed DevOps Pools agents. Managed DevOps Pools supports up to five agent sizes per pool by using [Instance mix](#instance-mix).
 
 #### [Azure portal](#tab/azure-portal/)
 
 :::image type="content" source="./media/pool-settings/agent-size.png" alt-text="Screenshot that shows the Agent size setting.":::
 
-To view and select an Azure virtual machine size that's available in your Azure region, select **Change size**. Agent sizes (SKUs) with available Managed DevOps Pools quotas are marked **Available**. You can request more quota for SKUs that are marked **Not Available**. After a quota request for a **Not Available** SKU is approved, it's marked **Available**. Learn more about [Managed DevOps Pools quotas](./prerequisites.md#view-your-quotas).
+To view and select an Azure virtual machine size that's available in your Azure region, select **Select up to 5 SKU sizes**. Agent sizes (SKUs) with available Managed DevOps Pools quotas are marked **Available**. You can request more quota for SKUs that are marked **Not Available**. After a quota request for a **Not Available** SKU is approved, it's marked **Available**. Learn more about [Managed DevOps Pools quotas](./prerequisites.md#view-your-quotas).
+
+To reorder the agent sizes, drag and drop them using the handle in the desired order. The order determines the priority for provisioning agents, with the topmost size having the highest priority.
+
+:::image type="content" source="./media/pool-settings/multiple-agent-sizes.png" alt-text="Screenshot that shows multiple agents in the Agent size setting.":::
 
 #### [ARM template](#tab/arm/)
 
-You can configure agent size by using the `sku` property in the `fabricProfile` section. In the following example, a `Standard_D2ads_v5` VM size is specified.
+You can configure a single agent size by using the `sku` property in the `fabricProfile` section. In the following example, a `Standard_D2ads_v5` VM size is specified.
 
 ```json
 {
@@ -332,6 +336,42 @@ You can configure agent size by using the `sku` property in the `fabricProfile` 
     ]
 }
 ```
+
+To use [Instance mix](#instance-mix), specify `Mix` as the `sku.name` value, and provide a list of VM sizes in `vmSizes`. The order of the VM sizes in the list determines the priority for provisioning agents.
+
+```json
+{
+  "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
+  "contentVersion": "1.0.0.0",
+  "resources": [
+    {
+      "name": "fabrikam-managed-pool",
+      "type": "microsoft.devopsinfrastructure/pools",
+      "apiVersion": "2025-09-20",
+      "location": "eastus",
+      "properties": {
+        ...
+        "fabricProfile": {
+          "sku": {
+            "name": "Mix",
+            "vmSizes": [
+              {
+                "name": "Standard_D2ads_v5"
+              },
+              {
+                "name": "Standard_D2ds_v5"
+              }
+            ]
+          }
+        }
+      }
+    }
+  ]
+}
+```
+
+> [!NOTE]
+> Instance mix is available in API version `2026-06-02` or later.
 
 #### [Azure CLI](#tab/azure-cli/)
 
@@ -358,9 +398,21 @@ The following example shows the `sku` section of the `fabric-profile.json` file.
 }
 ```
 
+To configure instance mix for an existing pool, call [az resource update](/cli/azure/resource#az-resource-update), specify API version `2026-06-02` or later, set `sku.name` to `Mix`, and provide the VM sizes in `sku.vmSizes`. The order of the VM sizes determines the priority for provisioning agents.
+
+```azurecli
+az resource update \
+  --ids "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.DevOpsInfrastructure/pools/{poolName}" \
+  --api-version "2026-06-02" \
+  --set properties.fabricProfile.sku='{"name":"Mix","vmSizes":[{"name":"Standard_D2ads_v5"},{"name":"Standard_D2ds_v5"}]}'
+```
+
+> [!NOTE]
+> Instance mix is available in API version `2026-06-02` or later.
+
 #### [Bicep](#tab/bicep/)
 
-You can configure the agent size by using the `sku` property in the `fabricProfile` section. In the following example, a `Standard_D2ads_v5` VM size is specified.
+You can configure a single agent size by using the `sku` property in the `fabricProfile` section. In the following example, a `Standard_D2ads_v5` VM size is specified.
 
 ```bicep
 resource managedDevOpsPools 'Microsoft.DevOpsInfrastructure/pools@2025-09-20' = {
@@ -377,7 +429,94 @@ resource managedDevOpsPools 'Microsoft.DevOpsInfrastructure/pools@2025-09-20' = 
 }
 ```
 
+To use [Instance mix](#instance-mix), specify `Mix` as the `sku.name` value, and provide a list of VM sizes in `vmSizes`. The order of the VM sizes in the list determines the priority for provisioning agents.
+
+```bicep
+resource managedDevOpsPools 'Microsoft.DevOpsInfrastructure/pools@2025-09-20' = {
+  name: 'fabrikam-managed-pool'
+  location: 'eastus'
+  properties: {
+    fabricProfile: {
+      ...
+      sku: {
+        name: 'Mix'
+        vmSizes: [
+          {
+            name: 'Standard_D2ads_v5'
+          }
+          {
+            name: 'Standard_D2ds_v5'
+          }
+        ]
+      }
+    }
+  }
+}
+```
+
+> [!NOTE]
+> Instance mix is available in API version `2026-06-02` or later.
+
 * * *
+
+### Instance mix
+
+Managed DevOps Pools supports up to five agent sizes per pool. This feature uses [Virtual Machine Scale Set instance mix](/azure/virtual-machine-scale-sets/instance-mix-overview) capabilities.
+
+To use Managed DevOps Pools instance mix, configure more than one agent size for your pool. When you specify more than one agent size, Managed DevOps Pools first attempts to provision an agent with the first size in the pool configuration. If that size is unavailable, it tries the next size in the list. This allocation strategy maps to the [Prioritized](/azure/virtual-machine-scale-sets/instance-mix-overview#allocation-strategies) instance mix allocation strategy to determine which VM size to provision first, with the agent sizes in your pool ranked in the order in which they are displayed in **Pool settings**, which is the same as the order they are listed in the pool's configuration.
+
+When you configure multiple agent sizes for your pool, keep the following recommendations and requirements in mind.
+
+- **Recommendations**
+  - To ensure balanced load distribution, use VM sizes with similar vCPU and memory.
+  - For consistent performance, use VM sizes of similar type (for example, both D-series).
+- **Requirements**
+  - You must have sufficient quota for each VM size in the target subscription and region.
+  - Up to five VM sizes can be specified.
+  - Supported VM families: [A](/azure/virtual-machines/sizes/general-purpose/a-family), [B](/azure/virtual-machines/sizes/general-purpose/b-family), [D](/azure/virtual-machines/sizes/general-purpose/d-family), [E](/azure/virtual-machines/sizes/memory-optimized/e-family), and [F](/azure/virtual-machines/sizes/compute-optimized/f-family) families only.
+  - Each selected VM size must be from a different VM series. For example, you can't use both `Standard_D8ads_v5` and `Standard_D16ads_v5` because they're both from the `Dadsv5` series. But you could use both `Standard_D8ads_v5` and `Standard_D8ds_v5` because they belong to different series (`Dadsv5` and `Ddsv5`) and have consistent architecture, storage, and local-disk characteristics. For more information about VM series and sizes, see [Sizes for virtual machines in Azure: Name structure breakdown](/azure/virtual-machines/sizes/overview#name-structure-breakdown).
+  - You can't mix VM architectures (for example, Arm64 and x64) in the same instance mix.
+  - VMs with different storage interfaces (SCSI vs NVMe) can't be mixed.
+  - You can't mix VM SKUs that use premium storage and non-premium storage in the same instance mix.
+  - All VMs must share the same Security Profile and local disk configuration.
+
+> [!NOTE]
+> These requirements are a subset of the [Virtual Machine Scale Set instance mix: Limitations and unsupported scenarios](/azure/virtual-machine-scale-sets/instance-mix-overview#limitations-and-unsupported-scenarios), with the exception of the **Each selected VM size must be from a different VM series** requirement, which is specific to Managed DevOps Pools.
+
+Use the [VM size name structure](/azure/virtual-machines/sizes/overview#name-structure-breakdown) to identify potentially compatible sizes. Start with sizes from supported families that belong to different VM series, and prefer sizes with the same vCPU count and feature letters as your primary size. In particular, check the processor indicator (`a`, `p`, or no indicator), local temporary disk indicator (`d`), and Premium Storage indicator (`s`).
+
+The VM size name doesn't identify every compatibility characteristic. Before you add a size, review its VM-series documentation and verify that its architecture, storage interface, Premium Storage capability, security-profile support, and local-disk configuration are compatible with the other sizes in the pool. You can also use Copilot to help generate and evaluate a list of potentially compatible sizes.
+
+#### Use Copilot to identify eligible VM sizes
+
+The following example prompt for Copilot Chat helps you identify VM sizes that might be eligible to pair with your preferred size. Copy and paste the prompt into Copilot Chat, and replace the placeholders with your configuration details.
+
+```copilot-prompt
+I want to configure a Managed DevOps Pools instance mix with the following settings:
+
+- Primary VM size: [PRIMARY VM SIZE]
+- Azure region: [AZURE REGION]
+
+Identify up to four additional VM sizes that are eligible to pair with my primary VM size. Use only current official Microsoft Learn documentation, starting with these sources and following their links to the relevant VM family and series documentation:
+
+- https://learn.microsoft.com/azure/virtual-machines/sizes/overview
+- https://learn.microsoft.com/azure/virtual-machine-scale-sets/instance-mix-overview
+
+Apply all of these requirements:
+
+1. Use only VM sizes from the A, B, D, E, or F families.
+2. Select each VM size from a different VM series, including a series different from the primary VM size and from every other suggested size.
+3. Use the same architecture, storage interface, premium-storage capability, security-profile support, and local-disk configuration as the primary VM size.
+4. Recommend no more than four additional sizes because a Managed DevOps Pools instance mix supports up to five sizes total.
+
+Also apply the instance mix recommendations by preferring VM sizes with similar vCPU and memory specifications and of a similar type to the primary VM size.
+
+Return a comparison table that shows the VM size, family, series, vCPUs, memory, architecture, storage interface, premium-storage capability, local-disk configuration, and security-profile support. Explain why each suggested size is eligible and rank the suggestions from best to worst match. Cite an official Microsoft Learn source for every technical claim. Don't assume that a size is available or that I have sufficient quota in my region. Clearly identify the regional availability and quota checks that I must perform separately. If you can't verify a requirement for a VM size, exclude that size.
+```
+
+*Copilot is powered by AI, so surprises and mistakes are possible. Verify each suggested VM size in **Pool settings** and confirm that you have sufficient quota before you update the pool. For more information, see [Copilot general use FAQs](https://aka.ms/copilot-general-use-faqs).*
+
+### Common quota and capacity issues
 
 If your subscription doesn't have the capacity to configure your pool with the Azure VM SKU and maximum agents count that you specify, you receive an error message like this:
 
@@ -390,7 +529,7 @@ Not all SKUs are supported for all Azure regions. If you receive an error like `
 > [!IMPORTANT]
 > [!INCLUDE [disk-controller-error](./includes/disk-controller-error.md)]
 
-### OS disk type
+## OS disk type
 
 Managed DevOps Pools provides the following disk types for the OS disk:
 
