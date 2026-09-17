@@ -3,7 +3,7 @@ ms.topic: include
 ms.service: azure-devops-repos
 ms.author: laurajiang
 author: laurajiang
-ms.date: 08/06/2025
+ms.date: 09/17/2026
 ---
 
 | Rule ID | Token Name  | User Alerts | Validity Checking |
