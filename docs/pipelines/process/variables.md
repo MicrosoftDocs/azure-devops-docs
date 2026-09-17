@@ -76,7 +76,10 @@ User-defined and environment variables can consist of letters, numbers, `.`, and
 
 Azure Pipelines supports three different ways to reference variables: macro, template expression, and runtime expression. You can use each syntax for a different purpose and each has some limitations. 
 
-In a pipeline, template expression variables (`${{ variables.var }}`) get processed at compile time, before runtime starts. Macro syntax variables (`$(var)`) get processed during runtime before a task runs. Runtime expressions (`$[variables.var]`) also get processed during runtime but are intended to be used with [conditions](conditions.md) and [expressions](expressions.md). When you use a runtime expression, it must take up the entire right side of a definition. 
+In a pipeline, template expression variables (`${{ variables.var }}`) get processed at compile time, before runtime starts. Macro syntax variables (`$(var)`) get processed during runtime before a task runs. Runtime expressions (`$[ variables.var ]`) also get processed during runtime but are intended to be used with [conditions](conditions.md) and [expressions](expressions.md). When you use a runtime expression, it must take up the entire right side of a definition. 
+
+> [!NOTE]
+> Both template expressions and runtime expressions support two ways to reference a variable: property dereference syntax (`variables.var`) and index syntax (`variables['var']`). The two forms are equivalent, but index syntax is required for variable names that aren't valid identifiers, such as system variables that contain periods (for example, `variables['Build.SourceBranch']`). For more information, see [Expressions - Variables](expressions.md#variables).
 
 In this example, you can see that the template expression still has the initial value of the variable after the variable is updated. The value of the macro syntax variable updates. The template expression value doesn't change because the pipeline processes all template expression variables at compile time before tasks run. In contrast, macro syntax variables evaluate before each task runs. 
 
@@ -128,20 +131,45 @@ steps:
  ```
 
 ### Template expression syntax 
-Use template expression syntax to expand both [template parameters](template-parameters.md) and variables (`${{ variables.var }}`). The system processes template variables at compile time, and replaces them before runtime starts. Use template expressions for reusing parts of YAML as templates. 
+Use template expression syntax to expand both [template parameters](template-parameters.md) and variables. The system processes template variables at compile time, and replaces them before runtime starts. Use template expressions for reusing parts of YAML as templates. 
+
+You can reference a variable in a template expression by using property dereference syntax (`${{ variables.var }}`) or index syntax (`${{ variables['var'] }}`). Use index syntax when the variable name isn't a valid identifier, for example when it contains a period, such as `${{ variables['my.variable'] }}`.
 
  Template variables silently coalesce to empty strings when a replacement value isn't found. Template expressions, unlike macro and runtime expressions, can appear as either keys (left side) or values (right side). The following is valid: `${{ variables.key }} : ${{ variables.value }}`.
 
 ### Runtime expression syntax
-Use runtime expression syntax for variables that expand at runtime (`$[variables.var]`). Runtime expression variables silently coalesce to empty strings when a replacement value isn't found. Use runtime expressions in job conditions to support conditional execution of jobs or whole stages.
+Use runtime expression syntax for variables that expand at runtime. Runtime expression variables silently coalesce to empty strings when a replacement value isn't found. Use runtime expressions in job conditions to support conditional execution of jobs or whole stages.
+
+As with template expressions, you can reference a variable in a runtime expression by using property dereference syntax (`$[ variables.var ]`) or index syntax (`$[ variables['var'] ]`). The two forms are equivalent, but property dereference syntax only works when the variable name starts with a letter or underscore and contains only letters, numbers, and underscores.
+
+Many system variables, such as `Build.SourceBranch`, contain periods, which aren't valid in property dereference syntax. For these variables, and for any variable name that isn't a valid identifier, use index syntax instead. For example, use `$[ variables['Build.SourceBranch'] ]`, not `$[ variables.Build.SourceBranch ]`.
+
+```yaml
+variables:
+  isMain: $[ eq(variables['Build.SourceBranch'], 'refs/heads/main') ] # index syntax is required because the variable name contains periods
+```
+
+This example contrasts both forms for a simple variable name with the required form for a dotted system variable:
+
+```yaml
+variables:
+  simpleVar: hello
+
+steps:
+- bash: echo $[ variables.simpleVar ]        # property dereference syntax works because "simpleVar" is a valid identifier
+- bash: echo $[ variables['simpleVar'] ]     # index syntax also works for "simpleVar"
+- bash: echo $[ variables['Build.SourceBranch'] ] # index syntax is required because the name contains a period
+```
+
+For more information about referencing variables in expressions, see [Expressions - Variables](expressions.md#variables).
 
 Runtime expression variables only expand when they're used for a value, not as a keyword. Values appear on the right side of a pipeline definition. The following is valid: `key: $[variables.value]`. The following isn't valid: `$[variables.key]: value`. The runtime expression must take up the entire right side of a key-value pair. For example, `key: $[variables.value]` is valid but `key: $[variables.value] foo` isn't. 
 
 |Syntax|Example|When is it processed?|Where does it expand in a pipeline definition?|How does it render when not found?|
 |---|---|---|---|---|
 |macro|`$(var)`|runtime before a task executes|value (right side)|prints `$(var)`|
-|template expression|`${{ variables.var }}`|compile time|key or value (left or right side)|empty string|
-|runtime expression|`$[variables.var]`|runtime|value (right side)|empty string|
+|template expression|`${{ variables.var }}` or `${{ variables['var'] }}`|compile time|key or value (left or right side)|empty string|
+|runtime expression|`$[ variables.var ]` or `$[ variables['var'] ]`|runtime|value (right side)|empty string|
 
 ### What syntax should I use?
 
