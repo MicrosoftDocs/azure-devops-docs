@@ -303,7 +303,7 @@ Below, you'll find several investments that we plan to deliver as part of this i
         <td><a href="/azure/devops/release-notes/roadmap/2026/ghazdo/dependency-scanning-ecosystem-improvements" data-raw-source="[Dependency scanning ecosystem improvements](/azure/devops/release-notes/roadmap/2026/ghazdo/dependency-scanning-ecosystem-improvements)">Dependency scanning ecosystem improvements</a></td>
         <td>GitHub Advanced Security for Azure DevOps</td>
       </tr>
-      <td rowspan="2"><strong>2026 Q4</strong></td>
+         <td rowspan="3"><strong>2026 Q4</strong></td>
         <td><a href="/azure/devops/release-notes/roadmap/2026/ghazdo/security-detections" data-raw-source="[AI security detections for non-CodeQL supported languages](/azure/devops/release-notes/roadmap/2026/ghazdo/security-detections)">AI security detections for non-CodeQL supported languages</a></td>
         <td>GitHub Advanced Security for Azure DevOps</td>
       </tr>
@@ -311,7 +311,11 @@ Below, you'll find several investments that we plan to deliver as part of this i
         <td><a href="/azure/devops/release-notes/roadmap/2026/ghazdo/codeql-default" data-raw-source="[CodeQL default setup runs on pull request trigger](/azure/devops/release-notes/roadmap/2026/ghazdo/codeql-default)">CodeQL default setup runs on pull request trigger</a></td>
         <td>GitHub Advanced Security for Azure DevOps</td>
       </tr>
-      <td rowspan="18"><strong>Future</strong></td>
+         <tr>
+            <td><a href="/azure/devops/release-notes/roadmap/2026/wiki-monaco-editor" data-raw-source="[Replace existing Wiki editor with Monaco Editor](/azure/devops/release-notes/roadmap/2026/wiki-monaco-editor)">Replace existing Wiki editor with Monaco Editor</a></td>
+            <td>Wiki</td>
+         </tr>
+      <td rowspan="17"><strong>Future</strong></td>
         <td><a href="/azure/devops/release-notes/roadmap/auditing-ga" data-raw-source="[Auditing GA](/azure/devops/release-notes/roadmap/auditing-ga)">Auditing GA</a></td>
         <td>General</td>
       </tr>     
@@ -332,11 +336,7 @@ Below, you'll find several investments that we plan to deliver as part of this i
             <a href="/azure/devops/release-notes/roadmap/2024/boards-yaml-stage-status-on-work-item" data-raw-source="[Report YAML stage status in deployment control on work items](/azure/devops/release-notes/roadmap/2024/boards-yaml-stage-status-on-work-item)">Report YAML stage status in deployment control on work items</a>
          </td>
          <td>Boards</td>         
-      </tr>                
-      <tr>
-        <td><a href="/azure/devops/release-notes/roadmap/track-repo-cloning" data-raw-source="[Track repo cloning](/azure/devops/release-notes/roadmap/track-repo-cloning)">Track repo cloning</a></td>
-        <td>Repos</td>
-      </tr>
+      </tr>  
       <tr>
          <td><a href="/azure/devops/release-notes/roadmap/2022/pick-next-runner" data-raw-source="[Ability to run tasks on next available Node version, if targeted version is not available](/azure/devops/release-notes/roadmap/2022/pick-next-runner)">Ability to run tasks on next available Node version, if targeted<br>version is not available</a></td>
          <td>Pipelines</td>
@@ -399,7 +399,7 @@ Below, you'll find several investments that we plan to deliver as part of this i
         </tr>
     </thead>
     <tbody>         
-      <td rowspan="35"><strong>Future</strong></td>
+      <td rowspan="34"><strong>Future</strong></td>
         <td><a href="/azure/devops/release-notes/roadmap/disable-alternate-auth-policy" data-raw-source="[Policies to disable authentication methods](/azure/devops/release-notes/roadmap/disable-alternate-auth-policy)">Policies to disable authentication methods</a></td>
         <td>General</td>
       </tr>
@@ -424,11 +424,7 @@ Below, you'll find several investments that we plan to deliver as part of this i
       <tr>          
         <td><a href="/azure/devops/release-notes/roadmap/2023/work-item-support-for-markdown" data-raw-source="[Markdown editor for work item multi-line fields](/azure/devops/release-notes/roadmap/2023/work-item-support-for-markdown)">Markdown editor for work item multi-line fields</a></td>
         <td>Boards</td>
-      </tr>
-      <tr>
-        <td><a href="/azure/devops/release-notes/roadmap/track-repo-cloning" data-raw-source="[Track repo cloning](/azure/devops/release-notes/roadmap/track-repo-cloning)">Track repo cloning</a></td>
-        <td>Repos</td>
-      </tr>
+      </tr>     
       <tr>
         <td><a href="/azure/devops/release-notes/roadmap/2022/remove-node-6" data-raw-source="[Stop shipping Node 6 and Node 10 runners with the agent](/azure/devops/release-notes/roadmap/2022/remove-node-6)">Stop shipping Node 6 and Node 10 runners with the agent</a></td>
         <td>Pipelines</td>
