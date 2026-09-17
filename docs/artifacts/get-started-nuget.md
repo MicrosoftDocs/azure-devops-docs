@@ -97,7 +97,31 @@ See the [Azure Artifacts Credential Provider](https://github.com/microsoft/artif
 
 1. Select **Connect to Feed**, and then select **NuGet.exe** from the left navigation pane. If this is your first time using Azure Artifacts with *Nuget.exe*, make sure you've installed the prerequisites.
 
-1. Follow the provided instructions under the **Project setup** section to set up your *nuget.config* file and connect to your Azure Artifacts feed.
+1. Add a `nuget.config` file to your project in the same folder as your `.csproj` or `.sln` file, and then paste the provided snippet into it. Your `nuget.config` file should resemble one of the following examples:
+
+    - **Project-scoped feed**:
+    
+        ```xml
+        <?xml version="1.0" encoding="utf-8"?>
+        <configuration>
+          <packageSources>
+            <clear />
+            <add key="<SOURCE_NAME>" value="https://pkgs.dev.azure.com/<ORGANIZATION_NAME>/<PROJECT_NAME>/_packaging/<FEED_NAME>/nuget/v3/index.json" />
+          </packageSources>
+        </configuration>
+        ```
+    
+    - **Organization-scoped feed**:
+    
+        ```xml
+        <?xml version="1.0" encoding="utf-8"?>
+        <configuration>
+          <packageSources>
+            <clear />
+            <add key="<SOURCE_NAME>" value="https://pkgs.dev.azure.com/<ORGANIZATION_NAME>/_packaging/<FEED_NAME>/nuget/v3/index.json" />
+          </packageSources>
+        </configuration>
+        ```
 
     :::image type="content" source="./media/project-setup.png" alt-text="Screenshot showing how to set up your project and connect to your feed in Azure DevOps Services.":::
 
@@ -111,7 +135,7 @@ See the [Azure Artifacts Credential Provider](https://github.com/microsoft/artif
 
 1. Select **Connect to Feed**, and then select **NuGet.exe** from the left navigation pane.
 
-1. Follow the provided instructions under the **Project setup** section to set up your *nuget.config* file and connect to your Azure Artifacts feed.
+1. Add a `nuget.config` file to your project in the same folder as your `.csproj` or `.sln` file, and then paste the snippet provided in the **Project setup** section into your file.
 
     :::image type="content" source="./media/connect-to-feed-nuget-server-2020.png" alt-text="Screenshot showing how to set up your project and connect to your feed in Azure DevOps Server 2020 and 2022.":::
 
