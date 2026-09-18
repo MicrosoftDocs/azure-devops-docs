@@ -243,7 +243,9 @@ For more information, see [Authenticate access with personal access tokens for A
 
 ### Azure Resource Manager service connection
 
-For information about creating a service connection to an Azure Resource Manager service, see [Connect to Azure by using an Azure Resource Manager service connection](connect-to-azure.md).
+Azure Pipelines supports multiple authentication options to [connect to Azure with an Azure Resource Manager service connection](connect-to-azure.md). Use [workload identity federation](/azure/active-directory/workload-identities/workload-identity-federation) with either an [app registration](connect-to-azure.md#create-an-app-registration-with-workload-identity-federation-automatic) or [managed identity](connect-to-azure.md#create-a-service-connection-for-an-existing-user-assigned-managed-identity). Workload identity federation eliminates the need for secrets and secret management.
+
+If you configure the connection manually, Azure Pipelines generates the **Issuer** and **Subject identifier** values required to create a federated credential for your app registration or managed identity in the Azure portal. For step-by-step instructions, see [Set up a workload identity service connection manually](../release/configure-workload-identity.md#set-a-workload-identity-service-connection).
 
 ### Azure Service Bus service connection
 
