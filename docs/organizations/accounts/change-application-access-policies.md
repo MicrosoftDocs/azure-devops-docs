@@ -6,7 +6,7 @@ ms.subservice: azure-devops-organizations
 ms.topic: how-to
 ms.author: chcomley
 author: chcomley
-ms.date: 10/10/2025
+ms.date: 09/18/2026
 monikerRange: 'azure-devops'
 ---
 
@@ -34,7 +34,7 @@ You can limit access to these authentication methods by disabling the following 
 - **Third-party application access through OAuth**: Enable Azure DevOps OAuth apps to access resources in your organization through OAuth. This policy is defaulted to *off* for all new organizations. If you want access to [Azure DevOps OAuth apps](../../integrate/get-started/authentication/azure-devops-oauth.md), enable this policy to ensure these apps can access resources in your organization. This policy doesn't affect [Microsoft Entra ID OAuth app access](../../integrate/get-started/authentication/entra-oauth.md).
 - **SSH authentication**: Enable applications to connect to your organization's Git repos through SSH.
 - Tenant admins can [**restrict global personal access token creation**](manage-pats-with-policies-for-administrators.md#restrict-creation-of-global-pats-tenant-policy), [**restrict full-scoped personal access token creation**](manage-pats-with-policies-for-administrators.md#restrict-creation-of-full-scoped-pats-tenant-policy), and [**enforce maximum personal access token lifespan**](manage-pats-with-policies-for-administrators.md#set-maximum-lifespan-for-new-pats-tenant-policy) through tenant-level policies on the _Microsoft Entra_ settings page. Add Microsoft Entra users or groups to exempt them from these policies.
-- Organization admins can [**restrict personal access token creation**](manage-pats-with-policies-for-administrators.md#restrict-personal-access-token-creation-organization-policy) in their respective organizations. Subpolicies allow admins to permit the creation of packaging-only PATs or the creation of any-scope PATs to allowlisted Microsoft Entra users or groups. Disabling this will also prevent git-credential-manager from being able to generate new PAT for git operations, unless users are allow-listed. (GCM defaults to authentication via PAT. There is option to Authenticate via OAuth. see GCM docs)
+- Organization admins can [**restrict personal access token creation**](manage-pats-with-policies-for-administrators.md#restrict-personal-access-token-creation-organization-policy) in their respective organizations. Subpolicies allow admins to permit the creation of packaging-only PATs or any-scope PATs for allowlisted Microsoft Entra users or groups. When admins disable PAT creation, Azure DevOps also prevents Git Credential Manager (GCM) from generating new PATs for Git operations unless the user is allowlisted. GCM defaults to PAT-based authentication, but users can authenticate with OAuth instead. For more information, see the [GCM documentation](../../repos/git/set-up-credential-managers).
 
 When you deny access to an authentication method, no application can access your organization through that method. Any application that previously had access encounter authentication errors and lose access.
 
