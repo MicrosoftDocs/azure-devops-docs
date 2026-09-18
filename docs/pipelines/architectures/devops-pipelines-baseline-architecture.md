@@ -1,25 +1,15 @@
 ---
 title: Azure Pipelines baseline architecture 
-description: This architecture illustrates building a continuous integration and deployment pipeline using Azure Pipelines.
-ms.date: 01/24/2025
-ms.topic: example-scenario
+description: Understand the baseline architecture to build a continuous integration and deployment pipeline using Azure Pipelines.
+ms.date: 09/18/2026
+ms.topic: concept-article
 ms.custom: devops, app-development, internal-intro
-name: CI/CD baseline architecture with Azure Pipelines
-azureCategories:
-  - developer-tools
-  - devops
-  - web
-  - featured
-summary: This architecture illustrates building a continuous integration and deployment pipeline using Azure Pipelines.
 monikerRange: '<= azure-devops'
 ---
 
-# CI/CD baseline architecture with Azure Pipelines
+# Azure Pipelines CI/CD baseline architecture
 
-This article describes a high-level DevOps workflow for deploying application changes to staging and production environments in Azure. The solution uses continuous integration/continuous deployment (CI/CD) practices with Azure Pipelines.
-
-> [!IMPORTANT]
-> This article covers a general CI/CD architecture using Azure Pipelines. It isn't intended to cover the specifics of deploying to different environments, such as Azure App Services, Virtual Machines, and Azure Power Platform. Deployment platform specifics are covered in separate articles.
+This article presents a baseline architecture for building a continuous integration and continuous deployment (CI/CD) pipeline with Azure Pipelines. Use this architecture as a starting point if you need to automate building, testing, and deploying applications to staging and production environments in Azure. The architecture defines three pipelines, pull request (PR), continuous integration (CI), and continuous deployment (CD), and shows how they work together with Azure Repos, Azure Key Vault, and Azure Monitor to validate, build, and deploy your apps safely.
 
 ## Architecture
 
@@ -44,8 +34,12 @@ The data flows through the scenario as follows:
 
     If any of the checks fail, the pipeline run ends and the developer will have to make the required changes. If all checks pass, the pipeline should require a PR review. If the PR review fails, the pipeline ends and the developer will have to make the required changes. If all the checks and PR reviews pass, the PR will successfully merge.
 
-1. **CI pipeline** - A merge to Azure Repos Git triggers a CI pipeline. This pipeline runs the same checks as the PR pipeline with some important additions. The CI pipeline runs integration tests. Integration tests can be resource-intensive, so running them in the CI pipeline balances development speed and bug detection. It's also important to note that passing tests in a PR does not always ensure they will succeed after merging, as changes in the main branch can introduce new issues, highlighting the need for post-merge testing. These factors make the CI pipeline a better place for integration tests than the PR pipeline. 
-These integration tests shouldn't require the deployment of the solution, as the build artifacts haven't been created yet. If the integration tests require secrets, the pipeline gets those secrets from Azure Key Vault. If any of the checks fail, the pipeline ends and the developer will have to make the required changes. The result of a successful run of this pipeline is the creation and publishing of build artifacts.
+1. **CI pipeline** - A merge to Azure Repos Git triggers a CI pipeline. This pipeline runs the same checks as the PR pipeline, plus integration tests. The CI pipeline runs integration tests instead of the PR pipeline for two reasons:
+
+    - Integration tests can be resource-intensive, so running them after a merge balances development speed with bug detection.
+    - Passing tests in a PR doesn't guarantee they still pass after the merge, because changes to the main branch can introduce new issues that only post-merge testing catches.
+
+    These integration tests shouldn't require deploying the solution, since the build artifacts aren't created yet. If a test requires secrets, the pipeline retrieves them from Azure Key Vault. If any check fails, the pipeline ends and the developer needs to make the required changes. A successful run of this pipeline creates and publishes the build artifacts.
 
 1. **CD pipeline trigger** - The publishing of artifacts [triggers the CD pipeline](/azure/devops/pipelines/process/pipeline-triggers).
 
@@ -64,7 +58,7 @@ These integration tests shouldn't require the deployment of the solution, as the
   - CI pipelines run after code is merged. They perform the same validation as PR pipelines, but add integration testing and publish build artifacts if everything succeeds.
   - CD pipelines deploy build artifacts, run acceptance tests, and release to production.
 
-- [Azure Artifact Feeds](/azure/devops/artifacts/concepts/feeds) allow you to manage and share software packages, such as Maven, npm, and NuGet. Artifact feeds allow you to manage the lifecycle of your packages, including versioning, promoting, and retiring packages. This helps you to ensure that your team is using the latest and most secure versions of your packages.
+- [Azure Artifacts feeds](/azure/devops/artifacts/concepts/feeds) let you manage and share software packages, such as Maven, npm, and NuGet. Feeds let you manage the lifecycle of your packages, including versioning, promoting, and retiring packages, which helps ensure your team uses the latest and most secure versions of your dependencies.
 
 - [Key Vault](/azure/key-vault) provides a way to manage secure data for your solution, including secrets, encryption keys, and certificates. In this architecture, it's used to store application secrets. These secrets are accessed through the pipeline. Secrets can be accessed by Azure Pipelines with a [Key Vault task](/azure/devops/pipelines/tasks/deploy/azure-key-vault) or by [linking secrets from Key Vault](/azure/devops/pipelines/library/variable-groups?tabs=yaml#link-secrets-from-an-azure-key-vault).
 
@@ -88,9 +82,9 @@ While this article focuses on Azure Pipelines, you could consider these alternat
 
 This article focuses on general CI/CD practices with Azure Pipelines. The following are some compute environments to which you could consider deploying:
 
-- [App Service](/azure/app-service) is an HTTP-based service for hosting web applications, REST APIs, and mobile back ends. You can develop in your favorite language, and applications run and scale with ease on both Windows and Linux-based environments. Web Apps supports deployment slots like staging and production. You can deploy an application to a staging slot and release it to the production slot.
+- [App Service](/azure/app-service) is an HTTP-based service for hosting web applications, REST APIs, and mobile back ends. You can develop in your favorite language, and applications run and scale with ease on both Windows and Linux-based environments. App Service supports deployment slots like staging and production, so you can deploy an application to a staging slot and release it to the production slot.
 
-- [Azure Virtual Machines](/azure/virtual-machines) handles workloads that require a high degree of control, or depend on OS components and services that aren't possible with Web Apps.
+- [Azure Virtual Machines](/azure/virtual-machines) handles workloads that require a high degree of control, or depend on OS components and services that aren't possible with App Service.
 
 - [Azure Power Platform](/power-platform) is a collection of cloud services that enable users to build, deploy, and manage applications without the need for infrastructure or technical expertise.
 
@@ -106,7 +100,7 @@ Using proven CI and CD practices to deploy application or infrastructure changes
 
 - **Shorter release cycles** - Automated CI/CD processes allow you to deploy faster than manual practices. Many organizations deploy multiple times per day.
 - **Better code quality** - Quality gates in CI pipelines, such as linting and unit testing, result in higher quality code.
-- **Decreased risk of releasing** - Proper CI/CD practices dramatically decreases the risk of releasing new features. The deployment can be tested prior to release.
+- **Decreased risk of releasing** - Proper CI/CD practices dramatically decrease the risk of releasing new features, since the deployment can be tested prior to release.
 - **Increased productivity** - Automated CI/CD frees developers from working on manual integrations and deployments so they can focus on new features.
 - **Enable rollbacks** - While proper CI/CD practices lower the number of bugs or regressions that are released, they still occur. CI/CD can enable automated rollbacks to earlier releases.
 
@@ -120,17 +114,15 @@ Consider Azure Pipelines and CI/CD processes for:
 
 ## Considerations
 
-These considerations implement the pillars of the Azure Well-Architected Framework, which is a set of guiding tenets that can be used to improve the quality of a workload. For more information, see [Microsoft Azure Well-Architected Framework](/azure/architecture/framework).
+These considerations implement the pillars of the Azure Well-Architected Framework, which is a set of guiding tenets that you can use to improve the quality of a workload. For more information, see [Microsoft Azure Well-Architected Framework](/azure/well-architected/).
 
 ### Operational excellence
 
 - Consider implementing [Infrastructure as Code (IaC)](/devops/deliver/what-is-infrastructure-as-code) to define your infrastructure and to deploy it in your pipelines.
 
-- Consider using one of the [Tokenization Tasks](https://marketplace.visualstudio.com/search?term=token&target=VSTS&category=All%20categories&sortBy=Relevance) available in the VSTS marketplace, in the context often refer to a process where sensitive information (such as API keys, passwords, or other secrets) is replaced with tokens or placeholders during deployment or configuration.
-
 - Use [Release Variables](/azure/devops/pipelines/release/variables) in your release definitions to drive configuration changes of your environments. Release variables can be scoped to an entire release or a given environment. When using variables for secret information, ensure that you select the padlock icon.
 
-- Consider using [Self-hosted agents](/azure/devops/pipelines/agents/agents?tabs=browser#install) if you're deploying to resources running in a secured virtual network. You might also consider self-hosted agents if you're running a high volume of builds. In cases of high build volumes, self-hosted agents can be used to speed up builds in a cost efficient manner.
+- Consider using [self-hosted agents](/azure/devops/pipelines/agents/agents?tabs=browser#install) if you're deploying to resources running in a secured virtual network, or if you run a high volume of builds. Self-hosted agents can help you speed up builds in a cost-efficient manner at scale.
 
 - Consider using [Application Insights](/azure/application-insights/app-insights-overview) and other monitoring tools as early as possible in your release pipeline. Many organizations only begin monitoring in their production environment. By monitoring your other environments, you can identify bugs earlier in the development process and avoid issues in your production environment.
 
@@ -144,7 +136,7 @@ These considerations implement the pillars of the Azure Well-Architected Framewo
 
 ### Cost optimization
 
-Cost optimization is about looking at ways to reduce unnecessary expenses and improve operational efficiencies. For more information, see [Overview of the cost optimization pillar](/azure/architecture/framework/cost/overview).
+Cost optimization is about looking at ways to reduce unnecessary expenses and improve operational efficiencies. For more information, see [Overview of the cost optimization pillar](/industry/well-architected/cost-optimization).
 
 Azure DevOps costs depend on the number of users in your organization that require access, along with other factors like the number of concurrent build/releases required and number of test users. For more information, see [Azure DevOps pricing](https://azure.microsoft.com/pricing/details/visual-studio-team-services).
 
@@ -158,26 +150,17 @@ Azure DevOps is billed on a per-user per-month basis. There might be more charge
 
 - Ensure all changes to environments are done through pipelines. Implement role-based access controls (RBAC) on the principle of least privilege, preventing users from accessing environments.
 
-- Consider integrating steps in Azure Pipelines to track dependencies, manage licensing, scan for vulnerabilities, and keep dependencies to date.
+- Consider integrating steps in Azure Pipelines to track dependencies, manage licensing, scan for vulnerabilities, and keep dependencies up to date.
 
 ## Next steps
 
-Review the following resources to learn more about CI/CD and Azure DevOps:
-
-- [What is DevOps?](/devops/what-is-devops)
-- [DevOps at Microsoft - How we work with Azure DevOps](https://azure.microsoft.com/solutions/devops/devops-at-microsoft)
-- [Create a CI/CD pipeline for .NET with Azure DevOps Projects](/azure/devops-project/azure-devops-project-aspnet-core)
-- [What is Azure Repos?](/azure/devops/repos/get-started/what-is-repos)
-- [What is Azure Pipelines?](/azure/devops/pipelines/get-started/what-is-azure-pipelines)
-- [Azure DevOps](https://azure.microsoft.com/services/devops)
-- [App Service overview](/azure/app-service/overview)
-- [Introduction to Azure Functions](/azure/azure-functions/functions-overview)
-- [Azure Key Vault basic concepts](/azure/key-vault/general/basic-concepts)
-- [Azure Monitor overview](/azure/azure-monitor/overview)
+> [!div class="nextstepaction"]
+> [Create your first pipeline](/azure/devops/pipelines/create-first-pipeline)
+> [Build, test, and deploy .NET Core projects](../ecosystems/dotnet-core.md)
+> [Build and deploy a Node.js web app](../ecosystems/nodejs-tutorial.md)
 
 ## Related resources
 
-- [DevOps Checklist](/azure/architecture/checklist/dev-ops)
-- [CI/CD for Azure VMs](/azure/architecture/solution-ideas/articles/cicd-for-azure-vms)
-- [CI/CD for Containers](/azure/architecture/solution-ideas/articles/cicd-for-containers)
+- [Architecture strategies](/azure/architecture/checklist/dev-ops)
+- [DevOps for IaaS solutions architecture](devops-pipelines-iaas-vms-architecture.md)
 - [Build a CI/CD pipeline for microservices on Kubernetes](/azure/architecture/microservices/ci-cd-kubernetes)
