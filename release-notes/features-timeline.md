@@ -28,11 +28,11 @@ Each feature is linked to an article where you can learn more about a particular
 
 ## Initiatives
 
-### Copilot Code Reviews for Azure DevOps
+### Copilot Code Reviews for Azure DevOps (public preview)
 
 Copilot Code Reviews for Azure DevOps brings AI-assisted pull request reviews to Azure Repos. During review, Copilot analyzes pull request changes and posts comments with potential issues and suggested improvements so teams can identify problems earlier and strengthen code quality before merge. The experience is designed for organizations that continue to build on Azure Repos.
 
-This feature is currently in limited public preview.
+To learn more, see [Copilot code reviews for Azure Repos](https://devblogs.microsoft.com/devops/copilot-code-reviews-for-azure-repos-public-preview/).
 
 <table>
       <thead>
@@ -41,38 +41,22 @@ This feature is currently in limited public preview.
                   <th>Quarter</th>
             </tr>
       </thead>
-      <tbody>
-         <tr>
-            <td><a href="/azure/devops/release-notes/2026/sprint-275-update#copilot-code-reviews-for-azure-repos-limited-public-preview" data-raw-source="[Copilot Code Reviews for Azure Repos (limited public preview)](/azure/devops/release-notes/2026/sprint-275-update#copilot-code-reviews-for-azure-repos-limited-public-preview)">Copilot Code Reviews for Azure Repos (limited public preview)</a></td>
-            <td><img src="roadmap/2023/media/checkmark.png" alt="Done" /> 2026 Q2</td>            
-         </tr>         
+      <tbody>            
          <tr>
             <td><a href="https://devblogs.microsoft.com/devops/copilot-code-reviews-for-azure-repos-public-preview/" data-raw-source="[Copilot Code Reviews for Azure Repos (public preview)](https://devblogs.microsoft.com/devops/copilot-code-reviews-for-azure-repos-public-preview/)">Copilot Code Reviews for Azure Repos (public preview)</a></td>
             <td><img src="roadmap/2023/media/checkmark.png" alt="Done" /> 2026 Q3</td>
          </tr>
          <tr>
-            <td><a href="https://devblogs.microsoft.com/devops/copilot-code-reviews-for-azure-repos-public-preview/" data-raw-source="[Improvements to onboarding and enablement](https://devblogs.microsoft.com/devops/copilot-code-reviews-for-azure-repos-public-preview/)">Improvements to onboarding and enablement</a></td>
-            <td><img src="roadmap/2023/media/checkmark.png" alt="Done" /> 2026 Q3</td>
-         </tr>
-         <tr>
-            <td><a href="https://devblogs.microsoft.com/devops/copilot-code-reviews-for-azure-repos-public-preview/" data-raw-source="[Support for Copilot Instructions](https://devblogs.microsoft.com/devops/copilot-code-reviews-for-azure-repos-public-preview/)">Support for Copilot Instructions</a></td>
-            <td><img src="roadmap/2023/media/checkmark.png" alt="Done" /> 2026 Q3</td>
-         </tr>
-         <tr>
-            <td><a href="https://devblogs.microsoft.com/devops/copilot-code-reviews-for-azure-repos-public-preview/" data-raw-source="[Automatic code reviews for new pull requestshttps://devblogs.microsoft.com/devops/copilot-code-reviews-for-azure-repos-public-preview/)">Automatic code reviews for new pull requests</a></td>
-            <td><img src="roadmap/2023/media/checkmark.png" alt="Done" /> 2026 Q3</td>
+            <td><a href="/azure/devops/release-notes/roadmap/2026/repos/copilot-code-reviews-azure-repos#additional-improvements-coming" data-raw-source="[Automatically resolve comments when applying suggestions](/azure/devops/release-notes/roadmap/2026/repos/copilot-code-reviews-azure-repos#additional-improvements-coming)">Automatically resolve comments when applying suggestions</a></td>
+            <td>2026 Q4</td>
          </tr>         
          <tr>
-            <td><a href="https://devblogs.microsoft.com/devops/copilot-code-reviews-for-azure-repos-public-preview/" data-raw-source="[Cancel Copilot Code Review run](https://devblogs.microsoft.com/devops/copilot-code-reviews-for-azure-repos-public-preview/)">Cancel Copilot Code Review run</a></td>
-            <td><img src="roadmap/2023/media/checkmark.png" alt="Done" /> 2026 Q3</td>
+            <td><a href="/azure/devops/release-notes/roadmap/2026/repos/copilot-code-reviews-azure-repos#additional-improvements-coming" data-raw-source="[Copilot Code Review configuration changes in the audit log](/azure/devops/release-notes/roadmap/2026/repos/copilot-code-reviews-azure-repos#additional-improvements-coming)">Copilot Code Review configuration changes in the audit log</a></td>
+            <td>2026 Q4</td>
          </tr>
          <tr>
-            <td><a href="https://devblogs.microsoft.com/devops/copilot-code-reviews-for-azure-repos-public-preview/" data-raw-source="[Support for Managed DevOps Pools](https://devblogs.microsoft.com/devops/copilot-code-reviews-for-azure-repos-public-preview/)">Support for Managed DevOps Pools</a></td>
-            <td><img src="roadmap/2023/media/checkmark.png" alt="Done" /> 2026 Q3</td>
-         </tr>
-          <tr>
-            <td><a href="https://devblogs.microsoft.com/devops/copilot-code-reviews-for-azure-repos-public-preview/" data-raw-source="[Select level of effort](https://devblogs.microsoft.com/devops/copilot-code-reviews-for-azure-repos-public-preview/)">Select level of effort</a></td>
-            <td><img src="roadmap/2023/media/checkmark.png" alt="Done" /> 2026 Q3</td>
+            <td><a href="/azure/devops/release-notes/roadmap/2026/repos/copilot-code-reviews-azure-repos#additional-improvements-coming" data-raw-source="[Support for self-hosted runners](/azure/devops/release-notes/roadmap/2026/repos/copilot-code-reviews-azure-repos#additional-improvements-coming)">Support for self-hosted runners</a></td>
+            <td>2026 Q4</td>
          </tr>
     </tbody>
 </table>
@@ -247,7 +231,7 @@ Below, you'll find several investments that we plan to deliver as part of this i
         </tr>
     </thead>
     <tbody>       
-      <td rowspan="14"><strong>2026 Q3</strong></td>
+      <td rowspan="13"><strong>2026 Q3</strong></td>
       <td><a href="/azure/devops/release-notes/roadmap/2023/commits-search" data-raw-source="[Commits search](/azure/devops/release-notes/roadmap/2023/commits-search)">Commits search</a></td>
         <td>General</td>
       </tr>
@@ -259,10 +243,6 @@ Below, you'll find several investments that we plan to deliver as part of this i
         <td><a href="/azure/devops/release-notes/roadmap/2026/boards/pull-request-status-on-work-item-cards" data-raw-source="[Show pull request annotations on cards](/azure/devops/release-notes/roadmap/2026/boards/pull-request-status-on-work-item-cards)">Show pull request annotations on cards</a></td>
         <td>Boards</td>
       </tr>      
-      <tr>
-         <td><a href="/azure/devops/release-notes/roadmap/2026/boards/bulk-attachment-actions" data-raw-source="[Bulk attachment actions in Azure Boards](/azure/devops/release-notes/roadmap/2026/boards/bulk-attachment-actions)">Bulk attachment actions in Azure Boards</a></td>
-         <td>Boards</td>
-      </tr>   
       <tr>
       <td><a href="/azure/devops/release-notes/roadmap/2026/repos/copilot-code-reviews-azure-repos" data-raw-source="[Copilot Code Reviews for Azure Repos (public preview)](/azure/devops/release-notes/2026/sprint-275-update#copilot-code-reviews-for-azure-repos-limited-public-preview)">Copilot Code Reviews for Azure Repos (public preview)</a></td>
         <td>Repos</td>
@@ -303,7 +283,31 @@ Below, you'll find several investments that we plan to deliver as part of this i
         <td><a href="/azure/devops/release-notes/roadmap/2026/ghazdo/dependency-scanning-ecosystem-improvements" data-raw-source="[Dependency scanning ecosystem improvements](/azure/devops/release-notes/roadmap/2026/ghazdo/dependency-scanning-ecosystem-improvements)">Dependency scanning ecosystem improvements</a></td>
         <td>GitHub Advanced Security for Azure DevOps</td>
       </tr>
-         <td rowspan="3"><strong>2026 Q4</strong></td>
+         <td rowspan="8"><strong>2026 Q4</strong></td>
+            <td><a href="/azure/devops/release-notes/roadmap/2026/azure-devops-mcp-server-elicitation" data-raw-source="[Elicitation support for organization and project selection of tools](/azure/devops/release-notes/roadmap/2026/azure-devops-mcp-server-elicitation)">MCP Server, elicitation support for organization and project selection</a></td>
+            <td>General</td>
+         </tr>
+         <tr>
+            <td><a href="/azure/devops/release-notes/roadmap/2026/repos/copilot-code-reviews-azure-repos" data-raw-source="[Improvements to Copilot Code Review (Public Preview)](/azure/devops/release-notes/roadmap/2026/repos/copilot-code-reviews-azure-repos)">Improvements to Copilot Code Review (Public Preview)</a></td>
+            <td>Repos</td>
+         </tr>
+         <tr>
+            <td><a href="/azure/devops/release-notes/roadmap/2026/repos/pull-request-commenter-filtering" data-raw-source="[Pull request commenter filtering](/azure/devops/release-notes/roadmap/2026/repos/pull-request-commenter-filtering)">Pull request commenter filtering</a></td>
+            <td>Repos</td>
+         </tr>
+         <tr>
+            <td><a href="/azure/devops/release-notes/roadmap/2026/wiki-monaco-editor" data-raw-source="[Replace existing Wiki editor with Monaco Editor](/azure/devops/release-notes/roadmap/2026/wiki-monaco-editor)">Replace existing Wiki editor with Monaco Editor</a></td>
+            <td>Wiki</td>
+         </tr>
+         <tr>
+            <td><a href="/azure/devops/release-notes/roadmap/2026/boards/bulk-attachment-actions" data-raw-source="[Bulk attachment actions in Azure Boards](/azure/devops/release-notes/roadmap/2026/boards/bulk-attachment-actions)">Bulk attachment actions in Azure Boards</a></td>
+            <td>Boards</td>
+         </tr>
+         <tr>
+            <td><a href="/azure/devops/release-notes/roadmap/2026/boards/import-export-excel" data-raw-source="[Import/Export to Microsoft Excel](/azure/devops/release-notes/roadmap/2026/boards/import-export-excel)">Work item Import/Export to Microsoft Excel</a></td>
+            <td>Boards</td>
+         </tr>
+         <tr>
         <td><a href="/azure/devops/release-notes/roadmap/2026/ghazdo/security-detections" data-raw-source="[AI security detections for non-CodeQL supported languages](/azure/devops/release-notes/roadmap/2026/ghazdo/security-detections)">AI security detections for non-CodeQL supported languages</a></td>
         <td>GitHub Advanced Security for Azure DevOps</td>
       </tr>
@@ -311,10 +315,6 @@ Below, you'll find several investments that we plan to deliver as part of this i
         <td><a href="/azure/devops/release-notes/roadmap/2026/ghazdo/codeql-default" data-raw-source="[CodeQL default setup runs on pull request trigger](/azure/devops/release-notes/roadmap/2026/ghazdo/codeql-default)">CodeQL default setup runs on pull request trigger</a></td>
         <td>GitHub Advanced Security for Azure DevOps</td>
       </tr>
-         <tr>
-            <td><a href="/azure/devops/release-notes/roadmap/2026/wiki-monaco-editor" data-raw-source="[Replace existing Wiki editor with Monaco Editor](/azure/devops/release-notes/roadmap/2026/wiki-monaco-editor)">Replace existing Wiki editor with Monaco Editor</a></td>
-            <td>Wiki</td>
-         </tr>
       <td rowspan="17"><strong>Future</strong></td>
         <td><a href="/azure/devops/release-notes/roadmap/auditing-ga" data-raw-source="[Auditing GA](/azure/devops/release-notes/roadmap/auditing-ga)">Auditing GA</a></td>
         <td>General</td>
@@ -336,7 +336,7 @@ Below, you'll find several investments that we plan to deliver as part of this i
             <a href="/azure/devops/release-notes/roadmap/2024/boards-yaml-stage-status-on-work-item" data-raw-source="[Report YAML stage status in deployment control on work items](/azure/devops/release-notes/roadmap/2024/boards-yaml-stage-status-on-work-item)">Report YAML stage status in deployment control on work items</a>
          </td>
          <td>Boards</td>         
-      </tr>  
+      </tr>                
       <tr>
          <td><a href="/azure/devops/release-notes/roadmap/2022/pick-next-runner" data-raw-source="[Ability to run tasks on next available Node version, if targeted version is not available](/azure/devops/release-notes/roadmap/2022/pick-next-runner)">Ability to run tasks on next available Node version, if targeted<br>version is not available</a></td>
          <td>Pipelines</td>
