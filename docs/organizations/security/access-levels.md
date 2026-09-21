@@ -8,7 +8,7 @@ ms.author: chcomley
 author: chcomley
 monikerRange: '<= azure-devops'
 ai-usage: ai-assisted
-ms.date: 02/19/2026
+ms.date: 09/21/2026
 ---
 
 # About access levels
@@ -21,6 +21,12 @@ Administrators ensure that their user base has access to the features they need 
 For more information, see [Stakeholder access quick reference](stakeholder-access.md) and [Manage users and access](../accounts/add-organization-users.md).
 
 [!INCLUDE [temp](../../includes/version-selector.md)] 
+
+::: moniker range="azure-devops"
+
+[!INCLUDE [public-projects-retirement](../projects/includes/public-projects-retirement.md)]
+
+::: moniker-end
 
 When you add a user or group to a team or project, they automatically gain access to the features associated with the default access level and security group.
 For most users, assigning them to the **Basic** access level and the **Contributors** security group provides access to most features.
@@ -38,7 +44,7 @@ Assign users or groups of users to one of the following access levels:
   Assign to users with a Visual Studio Professional subscription, an Azure DevOps Server CAL, and to users for whom you're paying for Basic access in an organization.
 - **Basic + Test Plans**: Provides access to all features included in **Basic** and Azure Test Plans.
   Assign to users with a Visual Studio Test Professional or MSDN Platforms subscription, and to users for whom you're paying for Basic + Test Plans access in an organization.
-- **Stakeholder**: Provides limited access to private projects and nearly full access to public projects.
+- **Stakeholder**: Provides free, limited access to private projects. Stakeholders in existing public projects have broader access until those projects convert to private in 2027.
   Assign to an unlimited number of users without requiring a license or subscription, ideal for those needing access to a restricted set of features.
   Stakeholders can perform various tasks, including viewing work items, participating in discussion, and accessing dashboards.
 - **Visual Studio subscriber**: Assign to users who already have a Visual Studio subscription.
@@ -82,13 +88,13 @@ Visual Studio Test Professional and MSDN Platform subscriptions grant access to 
       **Basic**, **GitHub Enterprise**, &<br/>**Visual Studio Professional**
    :::column-end:::
    :::column span="1":::
-      **Basic + Test Plans &**<br/>**Visual Studio Enterprise**
+      **Basic + Test Plans** &<br/>**Visual Studio Enterprise**
    :::column-end:::
 :::row-end:::
 ---
 ::: moniker-end  
 
-::: moniker range=" < azure-devops"
+::: moniker range="< azure-devops"
 
 :::row:::
    :::column span="3":::
@@ -171,12 +177,12 @@ Visual Studio Test Professional and MSDN Platform subscriptions grant access to 
    :::column-end:::
 :::row-end:::
 ---
-::: moniker range="<=azure-devops"
+::: moniker range="azure-devops"
 
 :::row:::
    :::column span="3":::
       **Agile boards**  
-      Stakeholders get limited access to [boards](../../boards/boards/kanban-quickstart.md) and [Taskboards](../../boards/sprints/task-board.md).
+      Stakeholders get limited access to [boards](../../boards/boards/kanban-quickstart.md) and [Taskboards](../../boards/sprints/task-board.md) in private projects.
       Stakeholders use drag-and-drop to create and change work items, but they can only change the State field on cards.
       They can only view [the sprint capacity settings](../../boards/sprints/set-capacity.md).
    :::column-end:::
@@ -192,6 +198,26 @@ Visual Studio Test Professional and MSDN Platform subscriptions grant access to 
 :::row-end:::
 ---
 ::: moniker-end  
+
+::: moniker range="< azure-devops"
+
+:::row:::
+   :::column span="3":::
+   **Agile boards**
+      Stakeholders can view [boards](../../boards/boards/kanban-quickstart.md) and open and edit work items. They add work items from the backlog rather than from a board, and they can't use drag-and-drop to update status or priority.
+   :::column-end:::
+   :::column span="1":::
+      ✔️
+   :::column-end:::
+   :::column span="1":::
+      ✔️
+   :::column-end:::
+   :::column span="1":::
+      ✔️
+   :::column-end:::
+:::row-end:::
+---
+::: moniker-end
  
 :::row:::
    :::column span="3":::
@@ -209,6 +235,7 @@ Visual Studio Test Professional and MSDN Platform subscriptions grant access to 
       ✔️
    :::column-end:::
 :::row-end:::
+::: moniker range="azure-devops"
 :::row:::
    :::column span="3":::
       [**Artifacts**](../../artifacts/start-using-azure-artifacts.md)  
@@ -225,59 +252,14 @@ Visual Studio Test Professional and MSDN Platform subscriptions grant access to 
    :::column-end:::
 :::row-end:::
 ---
+::: moniker-end
+::: moniker range="< azure-devops"
 :::row:::
    :::column span="3":::
-      **Author Release Pipelines and Manage Releases**  
-      Includes defining [release pipelines](../../pipelines/release/index.md), [multi-stage continuous deployment (CD) pipelines](../../pipelines/release/define-multistage-release-process.md), and [using approvals and gates to control deployments](../../pipelines/release/deploy-using-approvals.md).
+      [**Artifacts**](../../artifacts/start-using-azure-artifacts.md)
+      Includes access to Azure Artifacts feeds. Azure DevOps Server requires **Basic** or a higher access level.
    :::column-end:::
    :::column span="1":::
-      ✔️ 
-   :::column-end:::
-   :::column span="1":::
-      ✔️
-   :::column-end:::
-   :::column span="1":::
-      ✔️
-   :::column-end:::
-:::row-end:::
-:::row:::
-   :::column span="3":::
-      **Basic backlog and sprint planning tools**  
-      Includes limited access to add and modify items on [backlogs](../../boards/backlogs/backlogs-overview.md) and [sprint backlogs and Taskboards](../../boards/sprints/scrum-overview.md).
-      Stakeholders can't assign items to an iteration, use the mapping pane, or forecasting.
-   :::column-end:::
-   :::column span="1":::
-       
-   :::column-end:::
-   :::column span="1":::
-      ✔️
-   :::column-end:::
-   :::column span="1":::
-      ✔️
-   :::column-end:::
-:::row-end:::
-:::row:::
-   :::column span="3":::
-      **Build**  
-      Includes full access to all features to [manage continuous integration and continuous delivery of software](../../pipelines/get-started/what-is-azure-pipelines.md).
-   :::column-end:::
-   :::column span="1":::
-      ✔️
-   :::column-end:::
-   :::column span="1":::
-      ✔️
-   :::column-end:::
-   :::column span="1":::
-      ✔️
-   :::column-end:::
-:::row-end:::
-:::row:::
-   :::column span="3":::
-      **Chart Authoring**  
-      Can create work tracking [query charts](../../report/dashboards/charts.md).
-   :::column-end:::
-   :::column span="1":::
-       
    :::column-end:::
    :::column span="1":::
       ✔️
@@ -287,15 +269,61 @@ Visual Studio Test Professional and MSDN Platform subscriptions grant access to 
    :::column-end:::
 :::row-end:::
 ---
+::: moniker-end
 :::row:::
    :::column span="3":::
-      **Chart Viewing**  
-      Can only view work tracking query charts.
-      Stakeholders can't view query charts from the Queries page.
-      They can view them when added to a dashboard.
+      **Author Release Pipelines and Manage Releases**
+      Includes defining [release pipelines](../../pipelines/release/index.md), [multi-stage continuous deployment (CD) pipelines](../../pipelines/release/define-multistage-release-process.md), and [using approvals and gates to control deployments](../../pipelines/release/deploy-using-approvals.md).
+      Stakeholders can view releases and act on assigned approvals, but they can't author release pipelines or manage releases.
+   :::column-end:::
+   :::column span="1":::
+   :::column-end:::
+   :::column span="1":::
+      ✔️
+   :::column-end:::
+   :::column span="1":::
+      ✔️
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="3":::
+      **Basic backlog and sprint planning tools**
+      Includes limited access to add and modify items on [backlogs](../../boards/backlogs/backlogs-overview.md) and [sprint backlogs and Taskboards](../../boards/sprints/scrum-overview.md).
+      Stakeholders can't assign items to an iteration, use the mapping pane, or forecasting.
+   :::column-end:::
+   :::column span="1":::
+   :::column-end:::
+   :::column span="1":::
+      ✔️
+   :::column-end:::
+   :::column span="1":::
+      ✔️
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="3":::
+   **Build**
+      Includes full access to all features to [manage continuous integration and continuous delivery of software](../../pipelines/get-started/what-is-azure-pipelines.md).
+      Stakeholders can view builds but can't create, edit, or manage build pipelines.
    :::column-end:::
    :::column span="1":::
        
+   :::column-end:::
+   :::column span="1":::
+      ✔️
+   :::column-end:::
+   :::column span="1":::
+      ✔️
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="3":::
+   **Query chart access**
+      Can view and create work tracking [query charts](../../report/dashboards/charts.md).
+      In private projects and Azure DevOps Server, Stakeholders can view charts only when the charts are added to a dashboard. In existing public projects, Stakeholders can view and create query charts.
+   :::column-end:::
+   :::column span="1":::
+      Limited
    :::column-end:::
    :::column span="1":::
       ✔️
@@ -357,10 +385,11 @@ Visual Studio Test Professional and MSDN Platform subscriptions grant access to 
 :::row-end:::
 ---
 ::: moniker-end
+::: moniker range="azure-devops-2022"
 :::row:::
    :::column span="3":::
       [**Request and Manage Feedback**](/previous-versions/azure/devops/project/feedback/get-feedback)
-      Includes full access to request and manage feedback on working software.  
+   Includes full access to request and manage formal feedback on working software in Azure DevOps Server 2022.
    :::column-end:::
    :::column span="1":::
        
@@ -373,6 +402,7 @@ Visual Studio Test Professional and MSDN Platform subscriptions grant access to 
    :::column-end:::
 :::row-end:::
 ---
+::: moniker-end
 :::row:::
    :::column span="3":::
       **Standard Features**  
@@ -459,7 +489,7 @@ Visual Studio Test Professional and MSDN Platform subscriptions grant access to 
 :::row:::
    :::column span="3":::
       **View My Work Items**  
-      Access to [add and modify work items](../../boards/work-items/about-work-items.md), [follow work items](../../boards/work-items/follow-work-items.md), [view and create queries](../../boards/queries/view-run-query.md), and [submit, view, and change feedback responses](/previous-versions/azure/devops/project/feedback/give-feedback).
+      Access to [add and modify work items](../../boards/work-items/about-work-items.md), [follow work items](../../boards/work-items/follow-work-items.md), and [view and create queries](../../boards/queries/view-run-query.md).
       Stakeholders can only assign existing tags to work items (can't add new tags) and can only save queries under My Queries (can't save under Shared Queries).
    :::column-end:::
    :::column span="1":::
@@ -516,7 +546,7 @@ With Visual Studio Enterprise (VS Enterprise) access, users gain access to any f
 
 ::: moniker range="< azure-devops"
 
-Advanced access gives users all the Basic features, plus [web-based test case management tools](../../test/create-a-test-plan.md).
+**Basic + Test Plans** access gives users all the Basic features, plus [web-based test case management tools](../../test/create-a-test-plan.md).
 You can [buy monthly access](../billing/buy-access-tfs-test-hub.md#buy-monthly-access-to-test-plans) or add users who already have a Visual Studio Test Professional with MSDN or MSDN Platforms subscription.
  
 ::: moniker-end
@@ -527,35 +557,20 @@ You can [buy monthly access](../billing/buy-access-tfs-test-hub.md#buy-monthly-a
 
 ::: moniker range="azure-devops"
 
-You can manage access levels programmatically by using the [`az devops user add` (Azure DevOps Services only)](../accounts/add-organization-users.md) or the [User Entitlement - Add REST API](/rest/api/azure/devops/memberentitlementmanagement/user-entitlements/add).
-The following table provides a mapping of the access level selected through the user interface and the `AccountLicenseType`, `licensingSource`, and `msdnLicenseType` parameters.
+In Azure DevOps Services, manage user access levels programmatically with [`az devops user add`](/cli/azure/devops/user#az-devops-user-add) or the [User Entitlements - Add REST API](/rest/api/azure/devops/memberentitlementmanagement/user-entitlements/add?view=azure-devops-rest-7.1&preserve-view=true).
 
-| Access level (user interface)<br/>licenseDisplayName  | accountLicenseType | licensingSource | msdnLicenseType | GitHubLicenseType |
-| ------------------------------------------------------|--------------------|----------------|------------------|-------------------|
-| Basic                                                 | express            | account        | none             | none              |
-| Basic + Test Plans                                    | advanced           | account        | none             | none              |
-| Visual Studio Subscriber                              | none               | msdn           | eligible         | none              |
-| Stakeholder                                           | stakeholder        | account        | none             | none              |
-| Visual Studio Enterprise subscription                 | none               | msdn           | enterprise       | none              |
-| GitHub Enterprise                                     | none            | gitHub        | none       | enterprise        | 
+The following table maps user interface access levels to the `accessLevel` properties accepted by the REST API. GitHub Enterprise access is detected automatically and isn't assigned through these properties.
+
+| Access level in the user interface | `accountLicenseType` | `licensingSource` | `msdnLicenseType` |
+|---|---|---|---|
+| Basic | `express` | `account` | `none` |
+| Basic + Test Plans | `advanced` | `account` | `none` |
+| Visual Studio Subscriber | `none` | `msdn` | `eligible` |
+| Stakeholder | `stakeholder` | `account` | `none` |
+| Visual Studio Enterprise subscription | `none` | `msdn` | `enterprise` |
 
  > [!NOTE]   
  > The `earlyAdopter` accountLicenseType is an internal value used solely by Microsoft.  
-
-::: moniker-end
-
-::: moniker range="< azure-devops"
-
-You can manage access levels programmatically by using the [User Entitlement - Add REST API](/rest/api/azure/devops/memberentitlementmanagement/user-entitlements/add).
-The following table provides a mapping of the access level selected through the user interface and the `AccountLicenseType`, `licensingSource`, and `msdnLicenseType` parameters.
-
-| Access level (user interface)<br/>licenseDisplayName  | accountLicenseType | licensingSource | msdnLicenseType | 
-| ------------------------------------------------------|--------------------|----------------|------------------|
-| Basic                                                 | express            | account        | none             | 
-| Basic + Test Plans                                    | advanced           | account        | none             | 
-| Visual Studio Subscriber                              | none               | msdn           | eligible         | 
-| Stakeholder                                           | stakeholder        | account        | none             | 
-| VS Enterprise                                         | none               | msdn           | enterprise       | 
 
 ::: moniker-end
 
@@ -568,7 +583,7 @@ If a user belongs to a group that has **Basic** access and another group that ha
 ## Service account access
 
 Add Azure DevOps [service accounts](/azure/devops/server/admin/service-accounts-dependencies) to the default access level.
-If you make Stakeholder the default access level, you must add the service accounts to Basic or Advanced/VS Enterprise access.
+If you make Stakeholder the default access level, you must add the service accounts to **Basic**, **Basic + Test Plans**, or **VS Enterprise** access.
 
 Service accounts don't require a CAL or other purchase.
 
