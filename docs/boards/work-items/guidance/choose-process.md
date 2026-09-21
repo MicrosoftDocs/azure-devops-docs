@@ -143,7 +143,7 @@ Each image shows only the default reason associated with the transition.
    :::column span="1":::
 
    #### Task
-   :::image type="content" source="media/ALM_PT_Agile_WF_Task.png" alt-text="Diagram that shows Task workflow states by using the Agile process.":::
+   :::image type="content" source="media/agile-workflow-task.png" alt-text="Diagram that shows Task workflow states by using the Agile process.":::
    :::column-end:::
    :::column span="1":::
 
