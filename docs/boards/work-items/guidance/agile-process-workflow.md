@@ -135,7 +135,7 @@ As teams update workflow states, they can identify which items are new, in progr
    :::column-end:::
    :::column span="1":::
 
-   :::image type="content" source="media/ALM_PT_Agile_WF_Task.png" alt-text="Conceptual image of Task workflow states, Agile process.":::
+   :::image type="content" source="media/agile-workflow-task.png" alt-text="Conceptual image of Task workflow states, Agile process.":::
    
    :::column-end:::
 :::row-end:::

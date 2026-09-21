@@ -9,7 +9,7 @@ ms.author: chcomley
 author: chcomley
 monikerRange: '<= azure-devops'
 ai-usage: ai-assisted
-ms.date: 07/16/2026
+ms.date: 09/18/2026
 ---
 
 # About permissions and security groups
@@ -50,10 +50,9 @@ Assign *permissions* to security groups that either **Allow** or **Deny** access
 Managing permissions in Azure DevOps involves two key groups: Project Collection Administrators and Project Administrators.
 
 **Project Collection Administrators:**
-- Hold the highest authority within an organization or project collection.
-- Perform all operations for the entire collection.
+- Have broad administrative permissions within an organization or project collection.
 - Manage settings, policies, and processes for the organization.
-- Create and manage all projects and extensions.
+- Create and manage projects.
 
 **Project Administrators:**
 - Operate at the project level.
@@ -77,19 +76,15 @@ Assign permissions to grant or restrict access:
 
 |Permission state  |Description  |
 |---------|---------|
-|**Allow**   |Explicitly grants users the ability to perform specific tasks, and isn't inherited from group membership.         |
-|**Allow (inherited)**    |Grants group members the ability to perform specific tasks.         |
-|**Allow (system)**   |Grants permission that takes precedence over user permissions. Uneditable and stored in a configuration database, invisible to users.         |
-|**Deny**    |Explicitly restricts users from performing specific tasks, and isn't inherited from group membership. For most groups and almost all permissions, **Deny** overrides **Allow**. If a user belongs to two groups, and one of them has a specific permission set to **Deny**, that user can't perform tasks that require that permission even if they belong to a group that has that permission set to **Allow**.        |
-|**Deny (inherited)**    |Restricts group members from performing specific tasks. Overrides an explicit **Allow**.         |  
-|**Deny (system)**   | Restricts permission that takes precedence over user permissions. Uneditable and stored in a configuration database, invisible to users.         |
-|**Not set**    | Implicitly denies users the ability to perform tasks that require that permission, but allows membership in a group that does have that permission to take precedence, also known as **Allow (inherited)** or **Deny (inherited)**.         |
+|**Allow**   |Explicitly grants the permission to the selected user or group at the current scope.         |
+|**Allow (inherited)**    |Grants the permission through a parent scope or group membership.         |
+|**Allow (system)**   |Grants a permission that Azure DevOps manages. You can't edit system permissions.         |
+|**Deny**    |Explicitly denies the permission to the selected user or group at the current scope.         |
+|**Deny (inherited)**    |Denies the permission through a parent scope or group membership.         |
+|**Deny (system)**   |Denies a permission that Azure DevOps manages. You can't edit system permissions.         |
+|**Not set**    |Neither grants nor denies the permission at the current scope. Other applicable assignments determine the effective permission.         |
 
-Members of the **Project Collection Administrators** or **Team Foundation Administrators** groups might always receive permissions even if denied in another group. The following examples explain this scenario further:
-- A user might still access project settings or manage users.
-  However, for tasks like work item deletion or pipeline management, being a member of the Project Collection Administrators group doesn't override **Deny** permissions set elsewhere.
-- If a user is denied permission to delete work items in a specific project, they can't delete work items even if they're part of the Project Collection Administrators group.
-  Similarly, if pipeline permissions are denied, they can't manage or run pipelines despite their administrative role.
+Azure DevOps calculates effective permissions from direct assignments, group memberships, and inherited assignments. When it combines assignments at the same scope, **Deny** generally takes precedence over **Allow**. In an object hierarchy, an explicit assignment on a child object can replace the value inherited from its parent for the same identity.
 
 > [!WARNING]
 > When you modify a permission for a group, it affects all users in that group. Even a single permission change can impact hundreds of users, so consider the potential effects before making any adjustments.
@@ -100,24 +95,20 @@ Permissions follow a hierarchy, so you can inherit permissions from a parent nod
 
 **Group inheritance:** 
 
-- Users inherit permissions from the groups they belong to. 
-- If a user has an **Allow** permission directly or through group membership but also has a **Deny** permission through another group, the **Deny** permission takes precedence.
-- Members of Project Collection Administrators or Team Foundation Administrators retain most allowed permissions, even if they belong to other groups that deny those permissions (except for work item operations).
+- Users receive the combined permissions of the groups they belong to.
+- At the same scope, a **Deny** from one group generally takes precedence over an **Allow** from another group.
+- **Not set** doesn't grant or deny a permission and doesn't override an assignment from another group.
 
 **Object-level inheritance:** 
 
 You assign object-level permissions to nodes like areas, iterations, version control folders, and work item query folders. These permissions are inherited down the hierarchy.
 
-**Permission inheritance and specificity rules:**
+**Object hierarchy rules:**
 
-- Explicit permissions always take precedence over inherited ones.
 - Permissions set at a higher-level node get inherited by all subnodes unless explicitly overridden.
 - If a permission isn't explicitly allowed or denied for a subnode, it inherits the permission from its parent.
-- If a permission is explicitly set for a subnode, the parent’s permission isn't inherited, regardless of whether it's allowed or denied.
-
-**Specificity:**
-
-In the object hierarchy, specificity trumps inheritance. The most specific permission takes precedence if conflicting permissions exist.
+- If a permission is explicitly set for an identity on a subnode, the value inherited from the parent for that identity doesn't apply on the subnode.
+- After resolving the object hierarchy, Azure DevOps combines the applicable direct and group assignments. A **Deny** from another group at the resulting scope can still take precedence over an **Allow**.
 
 **Example:**
 
@@ -125,17 +116,8 @@ In the object hierarchy, specificity trumps inheritance. The most specific permi
 - Explicitly **Allow** for `area-1/sub-area-1` (child node).
 - In this case, the user receives an **Allow** on `area-1/sub-area-1`, overriding the inherited **Deny** from the parent node.
 
-To understand why a permission is inherited, pause over a permission setting, and then select **Why?**
+To understand why a permission is inherited, select **Why?** for that permission.
 To open a **Security** page, see [View permissions](view-permissions.md).
-
-::: moniker range="= azure-devops"
-
-> [!NOTE]   
-> To enable the **Project Permissions settings page** preview page, see [Enable preview features](../../project/navigation/preview-features.md).
-
-::: moniker-end
-
-#### [Preview page](#tab/preview-page) 
 
 ::: moniker range="= azure-devops"
 > [!div class="mx-imgBorder"]  
@@ -145,19 +127,13 @@ A new dialog opens that shows the inheritance information for that permission.
 ::: moniker-end
 
 ::: moniker range="< azure-devops"
-The preview user interface for the Project Permissions settings page isn't available for Azure DevOps Server 2020 and earlier versions.
-::: moniker-end
-
-#### [Current page](#tab/current-page) 
-
 > [!div class="mx-imgBorder"]  
 > ![Screenshot showing Permissions dialog, current page, Why link annotated.](media/about-permissions-why.png)
 
 A new window shows the inheritance information for that permission.  
 
 ![Screenshot showing the Permissions trace dialog.](media/about-permissions-trace.png)
-
-* * *
+::: moniker-end
 
 ## Security groups and membership
 
@@ -179,7 +155,7 @@ For more information, see [Set object-level permissions](set-object-level-permis
 Most Azure DevOps users are added to the **Contributors** security group and granted the **Basic** access level.
 The **Contributors** group provides read and write access to repositories, work tracking, pipelines, and more.
 **Basic** access provides access to all features and tasks for using Azure Boards, Azure Repos, Azure Pipelines, and Azure Artifacts.
-Users who need access to manage Azure Test Plans require **Basic + Test Plans** or **Advanced** access.
+Users who need access to manage Azure Test Plans require **Basic + Test Plans** or an applicable Visual Studio subscription benefit.
 
 ::: moniker range="azure-devops"
 The following security groups are defined by default for each project and organization.
@@ -223,7 +199,7 @@ Azure DevOps controls access through these three inter-connected functional area
    Object-level permissions set permissions on a file, folder, build pipeline, or a shared query.
    Permission settings correspond to **Allow**, **Deny**, **Inherited allow**, **Inherited deny**, **System allow**, **System deny**, and **Not set**.
 -  **Access level management** controls access to web portal features.
-   Based on what's purchased for a user, administrators set the user's access level to **Stakeholder**, **Basic**, **Basic + Test**, or **Visual Studio Enterprise** (previously **Advanced**). 
+   Based on licensing and the user's role, administrators assign **Stakeholder**, **Basic**, **Basic + Test Plans**, or an applicable Visual Studio subscription access level.
 
 Each functional area uses security groups to simplify management across the deployment.
 You add users and groups through the web administration context.
@@ -237,7 +213,7 @@ Security group members can be a combination of users, other groups, and Microsof
 ::: moniker range="< azure-devops"
 Security group members can be a combination of users, other groups, and Active Directory groups or a Workgroup. 
 
-You can create [local groups or Active Directory (AD) groups to manage your users](/azure/devops/server/admin/setup-ad-groups). 
+You can create [local groups or Active Directory (AD) groups to manage your users](/azure/devops/server/admin/setup-ad-groups?view=azure-devops-2022&preserve-view=true).
 ::: moniker-end
 
 ### Active Directory and Microsoft Entra security groups
@@ -293,25 +269,21 @@ When you add user accounts directly to a security group, the users automatically
 
 The default permissions assigned to these groups primarily provide read access, such as **View build resources**, **View project-level information**, and **View collection-level information**.
 
-All users you add to one project can view the objects in other projects within a collection.
-To restrict view access, you can [set restrictions through the area path node](../../organizations/security/set-permissions-access-work-tracking.md).
-If you remove or deny the **View instance-level information** permission for one of the Valid Users groups,
-no members of the group can access the project, collection, or deployment, depending on the group you set.
+To access project resources, a user needs **View project-level information** and any permissions required for the specific resource. [Area path permissions](set-permissions-access-work-tracking.md#set-permissions-area-path) control access to work items and test artifacts within a project; they don't control whether a user can access the project.
+Don't change the default permissions for a Valid Users group. Denying **View project-level information**, **View collection-level information**, or **View instance-level information** to one of these groups can block all its members from the corresponding scope.
 
 ::: moniker range="azure-devops"
 
 ### Project-scoped users group 
 
-By default, users you add to an organization can view all organization and project information and settings.
-These settings include the list of users, the list of projects, billing details, usage data, and more, which you can access through **Organization settings**.
+By default, users you add to an organization can view organization and project information beyond the projects they're members of.
 
 To restrict specific users, such as Stakeholders, Microsoft Entra guest users, or members of a particular security group, you can enable the **Limit user visibility and collaboration to specific projects** preview feature for the organization.
-Once enabled, any user or group you add to the **Project-scoped Users** group can't access the **Organization settings** pages, except for **Overview** and **Projects**.
-They only have access to the projects to which you add them.
+When you enable this feature, users and groups in the **Project-Scoped Users** group can access only the projects to which you explicitly add them. The feature also limits their access to organization settings and identities in people pickers.
 
 [!INCLUDE [project-scoped-users-warning](../../includes/project-scoped-users-warning.md)]
 
-For more information, see [Manage preview features](../../project/navigation/preview-features.md).
+For setup steps and limitations, see [Limit user visibility](../../user-guide/manage-organization-collection.md#limit-user-visibility-for-projects-and-more).
 
 [!INCLUDE [version-all](./includes/hidden-security-groups.md)]
 
@@ -347,9 +319,9 @@ Members of the Project Administrators or Project Collection Administrators group
 
 ## Preview features
 
-Feature flags control access to new features.
-Azure DevOps periodically introduces new features behind a feature flag.
-Project members and organization owners can enable or disable preview features.
+Preview features provide early access to functionality before it becomes generally available.
+Users can manage preview features offered at the user level.
+Members of the **Project Collection Administrators** group can manage organization-level preview features in Azure DevOps Services and collection-level preview features in Azure DevOps Server.
 For more information, see [Manage or enable features](../../project/navigation/preview-features.md).
  
 ## Next step

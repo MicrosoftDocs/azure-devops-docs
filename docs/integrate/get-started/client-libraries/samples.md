@@ -558,7 +558,7 @@ private static bool IsTransientError(Exception ex)
 - Deploy incrementally to production
 - Monitor for authentication issues
 
-For detailed migration guidance, see [Replace PATs with Microsoft Entra tokens](../authentication/entra.md#migration-from-legacy-authentication).
+For detailed migration guidance, see [Replace PATs with Microsoft Entra tokens](../authentication/entra.md#migrate-from-legacy-authentication).
 
 <a id="use-ai-assistance"></a>
 
