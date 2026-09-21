@@ -10,7 +10,7 @@ ms.topic: how-to
 ms.author: chcomley
 author: chcomley
 monikerRange: 'azure-devops'
-ms.date: 09/03/2026
+ms.date: 09/21/2026
 #customer intent: As a user, I want to set up the remote Azure DevOps MCP Server so I can use AI assistance with my Azure DevOps data without installing and running a local server.
 ---
 
@@ -398,7 +398,7 @@ Supported environments for the remote endpoint, when Microsoft Entra authenticat
 - Microsoft Copilot Studio
 - GitHub Copilot CLI
 - GitHub Copilot app
-- Cursor or Claude Code with a custom Microsoft Entra app registration
+- Cursor desktop, Cursor Cloud Agents, or Claude Code with a custom Microsoft Entra app registration
 
 > [!IMPORTANT]
 > Claude Desktop and Codex don't currently support the Microsoft Entra authentication flow required by the remote Azure DevOps MCP Server. Use the [local MCP Server](mcp-server-overview.md#install-the-local-azure-devops-mcp-server) with these clients.
@@ -422,7 +422,7 @@ Configure the remote MCP Server in Visual Studio by adding the server URL to you
 
 Cursor requires a custom Microsoft Entra app registration to access the remote Azure DevOps MCP Server.
 
-#### Register the application
+#### Register the application for Cursor desktop
 
 1. Confirm that the **Azure DevOps MCP** enterprise application is provisioned in your tenant. If you can't find it, see [Can't find the Azure DevOps MCP enterprise application in the tenant](remote-mcp-server-troubleshooting.md#cant-find-the-azure-devops-mcp-enterprise-application-in-the-tenant).
 1. In the Microsoft Entra admin center, go to **App registrations**, and then create an app registration.
@@ -436,7 +436,7 @@ Cursor requires a custom Microsoft Entra app registration to access the remote A
 
 Copy the **Application (client) ID** from the app registration. You need this value to configure Cursor.
 
-#### Configure Cursor
+#### Configure Cursor desktop
 
 1. In Cursor, open **Settings** > **Tools & MCP**.
 1. Select **New MCP Server**.
@@ -458,6 +458,44 @@ Copy the **Application (client) ID** from the app registration. You need this va
 
 1. Save the configuration, and then return to **Settings** > **Tools & MCP**.
 1. Locate the **ado** server, and then select **Authenticate**.
+
+#### Configure Cursor Cloud Agents
+
+Cursor Cloud Agents require a web redirect URI and a client secret in addition to the custom Microsoft Entra app registration.
+
+1. In the Microsoft Entra admin center, open the app registration that you created for Cursor.
+1. Select **Authentication (Preview)** > **Add redirect URI** > **Web**.
+1. Enter `https://www.cursor.com/agents/mcp/oauth/callback` as the redirect URI, and then save your changes.
+1. Select **Certificates & secrets** > **Client secrets** > **New client secret**.
+1. Enter a description, select an expiration period, and then select **Add**.
+1. Copy the client secret value. The value appears only once.
+1. In Cursor, open the Cloud Agents MCP server configuration, and then add or edit the custom MCP server.
+1. Set the server URL to `https://mcp.dev.azure.com`.
+1. Enter the application (client) ID from your app registration in **Client ID** and the client secret value in **Client Secret**.
+
+   Alternatively, edit the JSON configuration and replace the placeholders with your app registration values:
+
+   ```json
+   {
+     "mcpServers": {
+       "ado": {
+         "url": "https://mcp.dev.azure.com",
+         "type": "http",
+         "auth": {
+           "CLIENT_ID": "{client-id}",
+           "CLIENT_SECRET": "{client-secret}"
+         }
+       }
+     }
+   }
+   ```
+
+1. Save the configuration, and then select **Log in** from [Cursor Cloud Agents](https://cursor.com/agents) to complete Microsoft Entra authentication.
+
+> [!IMPORTANT]
+> Treat the client secret like a password. Don't commit it to source control. Before it expires, create a replacement secret and update the Cursor Cloud Agents configuration.
+
+If Microsoft Entra returns error `AADSTS50011`, verify that the web redirect URI exactly matches `https://www.cursor.com/agents/mcp/oauth/callback`. If token exchange fails with error `AADSTS7000218`, verify that the current client secret value is configured in Cursor Cloud Agents.
 
 ### Claude Code
 
