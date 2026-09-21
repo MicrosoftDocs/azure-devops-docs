@@ -114,7 +114,7 @@ ms.date: 02/02/2023
       
    :::column-end:::
    :::column span="1":::
-      ✔️
+      
    :::column-end:::
    :::column span="1":::
       ✔️
@@ -209,5 +209,5 @@ ms.date: 02/02/2023
 :::row-end:::
 
 > [!NOTE] 
-> Work items are subject to rules applied to them. Conditional rules based on user or group membership are cached for your web browser. If you find yourself restricted to update a work item, you may have encountered one of these rules. If you believe you've encountered an issue that doesn't apply to you, see [Work item form IndexDB caching issues](../../settings/work/troubleshoot-work-item-form-caching-issues.md). For more information, see [Rules and rule evaluation](../../settings/work/rule-reference.md).
+> Work items are subject to rules applied to them. Your web browser caches conditional rules based on user or group membership. If you're unexpectedly restricted from updating a work item, you might have encountered one of these rules. For more information, see [Rules and rule evaluation](../../settings/work/rule-reference.md).
    
