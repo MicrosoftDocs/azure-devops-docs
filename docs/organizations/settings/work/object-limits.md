@@ -242,6 +242,8 @@ Even when you're within the hard object limits, performance can degrade as the n
 
 - Limit the number of custom WITs you define.
 
+- Avoid having long-lived work items that are linked to multiple builds. The more **Integrated in Build** links a work item has, the more likely you are to see "Integrated in build link could not be read" errors on that work item. In addition to using shorter-lived work items, we recommend considering disabling "Automatically link work items included in this run" for some of your pipelines or using the Rest API to remove any build links that are no longer needed.
+
 ::: moniker range="< azure-devops"
 
 - Limit the number of reportable fields you define. Reportable fields can affect the performance of your data warehouse.
