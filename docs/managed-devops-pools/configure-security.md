@@ -1,7 +1,7 @@
 ---
 title: Configure security
 description: Learn how to configure security settings for Managed DevOps Pools.
-ms.date: 07/01/2026
+ms.date: 09/22/2026
 ms.custom: sfi-image-nochange
 ms.topic: how-to
 ---
@@ -613,6 +613,101 @@ resource managedDevOpsPools 'Microsoft.DevOpsInfrastructure/pools@2025-09-20' = 
       }
       storageProfile: {...}
       kind: 'Vmss'
+    }
+  }
+}
+```
+
+* * *
+
+## Configure Azure DevOps pool description
+
+When you create or update a Managed DevOps Pool, you can customize the pool description that appears in the Azure DevOps agent pool.
+
+| Allow Managed DevOps Pools to update the Azure DevOps pool description? | Settings |
+| --- | --- |
+| No | Set `updateDescription` to `false`, or clear the **Update Description** checkbox in the Azure portal. This setting prevents Managed DevOps Pools from updating the description of the Azure DevOps agent pool, so you can manage it yourself in Azure DevOps.<br><br>This setting is the default for existing pools. |
+| Yes, using the default description provided by Managed DevOps Pools | Set `updateDescription` to `true`, or select the **Update Description** checkbox in the Azure portal, and leave the description empty. This setting allows Managed DevOps Pools to update the description of the Azure DevOps agent pool with a default description that includes the pool name and selected properties of the pool.<br><br>This setting is the default for new pools. |
+| Yes, using a custom description that I'll provide | Set `updateDescription` to `true`, or select the **Update Description** checkbox in the Azure portal, and provide a custom description. This setting allows Managed DevOps Pools to update the description of the Azure DevOps agent pool with your custom description. The maximum length for the custom description is 280 characters. |
+
+#### [Azure portal](#tab/azure-portal/)
+
+:::image type="content" source="./media/configure-security/azure-devops-pool-description.png" alt-text="Screenshot that shows how to configure the Azure DevOps pool description.":::
+
+Select **Update Description** to allow Managed DevOps Pools to update the description of the Azure DevOps agent pool. Leave **Description** empty to use the default description, which includes the pool name and the organizations that can use the pool, or enter a custom description. Clear **Update Description** to prevent Managed DevOps Pools from updating the description so that you can manage it directly in Azure DevOps. **Update Description** is selected by default for new pools and cleared by default for existing pools.
+
+#### [ARM template](#tab/arm/)
+
+> [!NOTE]
+> This feature is available in API version `2026-06-02` or later.
+
+Configure the Azure DevOps pool description in the `organizationProfile` property. Set `updateDescription` to `true` to allow Managed DevOps Pools to update the description, and set `description` to the custom description. Omit `description` to use the default description.
+
+```json
+{
+    "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
+    "contentVersion": "1.0.0.0",
+    "resources": [
+        {
+            "name": "fabrikam-managed-pool",
+            "type": "microsoft.devopsinfrastructure/pools",
+            "apiVersion": "2026-06-02",
+            "location": "eastus",
+            "properties": {
+                ...
+                "organizationProfile": {
+                    "organizations": [...],
+                    "permissionProfile": {...},
+                    "description": "Pool used to build and test the Fabrikam application.",
+                    "updateDescription": true,
+                    "kind": "AzureDevOps"
+                }
+            }
+        }
+    ]
+}
+```
+
+#### [Azure CLI](#tab/azure-cli/)
+
+> [!NOTE]
+> This feature is available in API version `2026-06-02` or later.
+
+Set the `description` and `updateDescription` values by calling [az resource update](/cli/azure/resource#az-resource-update) with the following parameters.
+
+| Parameter | Description |
+| --- | --- |
+| `--ids` | The resource ID of the Managed DevOps Pool. |
+| `--api-version` | The Managed DevOps Pools API version, which must be `2026-06-02` or later. |
+| `--set` | The properties to update, in this case `properties.organizationProfile.description` and `properties.organizationProfile.updateDescription`. |
+
+```bash
+az resource update \
+  --ids "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.DevOpsInfrastructure/pools/{poolName}" \
+  --api-version "2026-06-02" \
+  --set properties.organizationProfile.updateDescription=true \
+        properties.organizationProfile.description="Pool used to build and test the Fabrikam application."
+```
+
+#### [Bicep](#tab/bicep/)
+
+> [!NOTE]
+> This feature is available in API version `2026-06-02` or later.
+
+Configure the Azure DevOps pool description in the `organizationProfile` property. Set `updateDescription` to `true` to allow Managed DevOps Pools to update the description, and set `description` to the custom description. Omit `description` to use the default description.
+
+```bicep
+resource managedDevOpsPools 'Microsoft.DevOpsInfrastructure/pools@2026-06-02' = {
+  name: 'fabrikam-managed-pool'
+  location: 'eastus'
+  properties: {
+    ...
+    organizationProfile: {
+      organizations: [...]
+      permissionProfile: {...}
+      description: 'Pool used to build and test the Fabrikam application.'
+      updateDescription: true
+      kind: 'AzureDevOps'
     }
   }
 }
