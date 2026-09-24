@@ -39,6 +39,9 @@
     - name: Author a pipeline decorator
       displayName: YAML, install, debug, job, create, add
       href: ../extend/develop/add-pipeline-decorator.md?toc=/azure/devops/marketplace-extensibility/toc.json
+    - name: Authenticate and secure web extensions
+      displayName: authentication, OAuth, REST API, token, security, web extension
+      href: ../extend/develop/auth.md?toc=/azure/devops/marketplace-extensibility/toc.json
   - name: Samples
     items:
     - name: Extension samples

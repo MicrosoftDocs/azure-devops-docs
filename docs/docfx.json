@@ -192,7 +192,7 @@
         "pipelines/apps/**": "azure-devops-pipelines-apps",
         "pipelines/artifacts/**": "azure-devops-pipelines-artifacts",
         "pipelines/build/**": "azure-devops-pipelines-build",
-        "pipelines/ecosystems/**": "azure-devops-ecosystem",
+        "pipelines/ecosystems/**": "azure-devops-developer",
         "pipelines/get-started/**": "azure-devops-pipelines-get-started",
         "pipelines/integrations/**": "azure-devops-pipelines-integrations",
         "pipelines/library/**": "azure-devops-pipelines-library",

@@ -2,7 +2,7 @@
 title: Add portfolio backlogs
 titleSuffix: Azure DevOps
 description: Learn how to add up to two additional work item types and portfolio backlogs in Azure DevOps.
-ms.service: azure-devops-boards
+ms.service: azure-boards
 ms.custom: process, engagement-fy23
 ms.author: chcomley
 author: chcomley

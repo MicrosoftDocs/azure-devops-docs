@@ -1,9 +1,9 @@
 ---
 title: What are feed views?
 description: Learn what Azure Artifacts feed views are, and how it's useful for package release.
-ms.service: azure-devops-artifacts
+ms.service: azure-artifacts
 ms.topic: overview
-ms.date: 12/09/2025
+ms.date: 07/22/2026
 monikerRange: "<=azure-devops"
 "recommendations": "true"
 ---
@@ -13,6 +13,9 @@ monikerRange: "<=azure-devops"
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
 Feed views allow developers to share a specific subset of package versions with consumers. This is useful when you want to provide access to packages that have been tested and validated, while withholding those still under development or that don’t meet your quality standards.
+
+> [!IMPORTANT]
+> Public feeds depend on public projects. Starting in 2027, existing public projects will automatically convert to private. When that happens, public feeds will no longer be publicly accessible because they inherit the visibility of the hosting project. For more information, see [Public projects retirement](../../organizations/projects/public-projects-retirement.md).
 
 ## Default view
 
@@ -37,7 +40,7 @@ To allow other Azure Artifacts feeds to use your feed as an upstream source, you
 If you choose Microsoft Entra ID, all people in your organization will be able to access your feed, and all feeds in your organization and other organizations associated with the same Microsoft Entra tenant will be able to upstream to your feed.
 
 > [!NOTE]
-> All feed views in a public feed are accessible to everyone on the internet.
+> All feed views in a public feed are accessible to everyone on the internet while the hosting project remains public. Starting in 2027, existing public projects will automatically convert to private, and public feeds will no longer be publicly accessible.
 
 ## Release packages with feed views
 
@@ -51,9 +54,9 @@ When creating release packages, it's important to convey three pieces of informa
 
 - **Quality of the change**: Whether the package meets your validation standards.
 
-:::image type="content" source="media/release-views-quality-nature.png" alt-text="A screenshot displaying the semantic version breakdown.":::
+:::image type="content" source="media/release-views-quality-nature.png" alt-text="Diagram showing semantic version numbers on the left and a prerelease quality label on the right to distinguish nature of change from quality of change.":::
 
-#### Nature and risk of the change
+### Nature and risk of the change
 
 Both nature and risk relate to the intent of the change, which is known at the start of development:
 
@@ -70,13 +73,13 @@ Most teams use [Semantic Versioning](https://semver.org) (SemVer) to convey this
 └──── Major (breaking changes)
 ```
 
-#### Quality of the change
+### Quality of the change
 
 The **quality** of the change isn't generally known until the validation process is complete. This is determined after validation, once the package is built and tested. Because of this, it's not feasible to communicate the quality of the change in the numerical segment of the version number (e.g 1.2.3). 
 
  While workarounds exist to prevalidate (for example, consuming the build's DLLs directly before they're packaged and publishing the packages to a "debug" or "CI" environment, then validating and republishing those packages to a "release" environment), they don’t guarantee the final package meets quality standards.
 
-:::image type="content" source="media/release-views-flow.png" alt-text="A diagram representing the workflow for publishing packages.":::
+:::image type="content" source="media/release-views-flow.png" alt-text="Diagram showing a package release workflow with stages for making changes, building, packaging, validating, and releasing, with callouts showing when package version and quality are determined.":::
 
 Instead, you can use feed views to communicate quality. Using the `@Release` view, you can share only packages that have passed validation and met your quality bar. This allows your consumers to see only the subset of package versions that were tested, validated, and are ready to be consumed. This approach ensures consumers access stable, production-ready packages. See [Promote packages and manage feed views](../feeds/views.md) for more details.
 

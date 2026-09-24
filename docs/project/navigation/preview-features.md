@@ -10,7 +10,7 @@ author: chcomley
 ai-usage: ai-assisted
 ms.topic: how-to
 monikerRange: '<= azure-devops'
-ms.date: 04/02/2026
+ms.date: 06/29/2026
 ---
 
 # Manage preview features 
@@ -88,7 +88,6 @@ The following table lists the preview features that you can turn on or off based
 |[Experimental themes](#experimental-themes) | ✔️ | ✔️ | 
 |[Limit user visibility and collaboration to specific projects](../../user-guide/manage-organization-collection.md#project-scoped-user-group)|   | ✔️ |    
 |New Artifacts (Feeds) Experience (accessibility updates) | ✔️ | ✔️ |   
-|[New Boards Hubs](../../boards/work-items/quick-ref.md) | ✔️ | ✔️ |
 |[New service connections experience](../../pipelines/library/service-endpoints.md)| ✔️ | ✔️ |
 | New Settings Search in the organization settings panel| ✔️ |✔️   |    
 |[New workflow identity authentication option](../../pipelines/library/connect-to-azure.md)| ✔️ | ✔️ |    

@@ -251,8 +251,6 @@
     href: agents/v5-agent.md
   - name: Agent version 4.x
     href: agents/v4-agent.md
-  - name: Agent version 3.x
-    href: agents/v3-agent.md
   - name: Create & manage agent pools
     displayName: queue, default, hosted, maintenance
     href: agents/pools-queues.md

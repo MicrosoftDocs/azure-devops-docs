@@ -1,6 +1,6 @@
 ---
 ms.topic: include
-ms.service: azure-devops-boards
+ms.service: azure-boards
 ms.date: 02/10/2026
 ---
 

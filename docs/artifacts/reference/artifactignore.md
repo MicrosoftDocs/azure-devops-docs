@@ -1,7 +1,7 @@
 ---
 title: Use the .artifactignore file
 description: Learn how to use the .artifactignore file to exclude specific files and folders when publishing artifacts in Azure Pipelines.
-ms.service: azure-devops-artifacts
+ms.service: azure-artifacts
 ms.topic: reference
 ms.date: 05/19/2025
 monikerRange: 'azure-devops'

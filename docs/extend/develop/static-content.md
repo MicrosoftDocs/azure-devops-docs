@@ -1,5 +1,5 @@
 ---
-ms.subservice: azure-devops-ecosystem
+ms.subservice: azure-devops-developer
 ms.custom: UpdateFrequency3
 title: Static Content Hosting for Extension Content | Extensions for Azure DevOps Services
 description: Options for hosting static content required by your extension.

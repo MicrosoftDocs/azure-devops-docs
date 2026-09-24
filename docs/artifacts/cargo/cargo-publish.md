@@ -1,7 +1,7 @@
 ---
 title: Publish Cargo packages from the command line
 description: Learn how to connect to your feed and publish your Cargo packages from the command line.
-ms.service: azure-devops-artifacts
+ms.service: azure-artifacts
 ms.topic: how-to
 ms.date: 03/25/2025
 monikerRange: '>= azure-devops-2022'
@@ -31,7 +31,7 @@ Azure Artifacts recommends using a dedicated feed for consuming crates from *cra
 
 1. Select **Create** when you're done.
 
-    :::image type="content" source="media/cargo-create-a-feed.png" alt-text="A screenshot displaying how to create a new feed in Azure Artifacts.":::
+    :::image type="content" source="media/cargo-create-a-feed.png" alt-text="Screenshot showing how to create a new feed in Azure Artifacts.":::
 
 ## Publish packages
 

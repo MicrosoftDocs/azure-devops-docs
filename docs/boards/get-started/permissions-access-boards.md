@@ -3,7 +3,7 @@ title: Default permissions and access for Azure Boards
 titleSuffix: Azure Boards 
 description: Learn about default permissions and access levels in Azure Boards.  
 ms.custom: boards-get-started, engagement-fy23
-ms.service: azure-devops-boards
+ms.service: azure-boards
 ms.author: chcomley
 author: chcomley
 ms.topic: overview

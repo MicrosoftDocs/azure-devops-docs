@@ -1,5 +1,5 @@
 ---
-ms.subservice: azure-devops-ecosystem
+ms.subservice: azure-devops-developer
 title: Work with Organization URLs in Azure DevOps Extensions
 description: "Azure DevOps URLs: Discover best practices for handling URLs in extensions and integrations. Learn how to keep your tools resilient and compatible."
 ms.topic: concept-article

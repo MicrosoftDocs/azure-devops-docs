@@ -6,7 +6,7 @@ ms.custom: boards-work-items, devx-track-azurecli, engagement-fy23, copilot-scen
 f1_keywords: 
 - vs.tfc.teamexplorer.workitems
 - vs.tfc.teamexplorer.TeamExplorer
-ms.service: azure-devops-boards
+ms.service: azure-boards
 ai-usage: ai-assisted
 ms.author: chcomley
 author: chcomley
@@ -33,8 +33,6 @@ To create test cases and link them to user stories, see [Add, run, and update in
 ## Prerequisites
 
 [!INCLUDE [temp](../includes/prerequisites-work-items.md)] 
-
-[!INCLUDE [note-new-boards-hub-default-images](../includes/note-new-boards-hub-default-images.md)]
 
 [!INCLUDE [enable-mcp-server](../includes/enable-mcp-server.md)] 
 

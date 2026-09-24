@@ -1,7 +1,7 @@
 ---
 title: Create a Managed DevOps Pool using the Azure portal
 description: Learn how to create a Managed DevOps Pool using the Azure portal.
-ms.date: 04/30/2025
+ms.date: 07/01/2026
 ms.topic: quickstart
 #Customer intent: As a developer, I want to learn how to create a Managed DevOps Pool using the Azure portal and run a pipeline in the new pool.
 ---
@@ -28,6 +28,9 @@ Before completing the steps in this article, you must configure your Azure subsc
 1. Specify the **Azure DevOps organization** you want to use with your pool, the name of the pool, and the region for your pool.
 
    :::image type="content" source="./media/get-started/azure-devops-organization-and-pool.png" alt-text="Screenshot of Azure DevOps organization field.":::
+
+   > [!IMPORTANT]
+   > The name of the Managed DevOps Pool must be globally unique in Azure.
 
    By default pools are configured for all projects in a single organization. You can configure additional organizations or limit the projects on the [Security](./configure-security.md) tab. Choose a region that is close to the other Azure resources you're using for [best cost and performance](./manage-costs.md#pool-region-co-location).
 

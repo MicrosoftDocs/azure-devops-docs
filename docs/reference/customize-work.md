@@ -2,7 +2,7 @@
 title: Customize your work tracking experience
 titleSuffix: Azure DevOps 
 description: Guide to configuring and customizing work tracking features. 
-ms.service: azure-devops-boards
+ms.service: azure-boards
 ms.custom: process
 ms.author: chcomley
 author: chcomley

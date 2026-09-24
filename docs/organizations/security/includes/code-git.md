@@ -3,7 +3,7 @@ ms.service: azure-devops-repos
 ms.author: chcomley
 author: chcomley
 ms.topic: include
-ms.date: 04/15/2021
+ms.date: 08/13/2026
 ms.subservice: azure-devops-repos-git
 ---
 
@@ -20,10 +20,10 @@ ms.subservice: azure-devops-repos-git
      **Contributors**
    :::column-end:::
    :::column span="1":::
-     **Build Admins**
+   **Build Administrators**
    :::column-end:::
    :::column span="1":::
-     **Project Admins**
+   **Project Administrators**
    :::column-end:::
 :::row-end:::
 ---
@@ -46,7 +46,7 @@ ms.subservice: azure-devops-repos-git
 :::row-end:::
 :::row:::
    :::column span="2":::
-      **Contribute**, **Create branches**, **Create tags**, and **Manage notes**
+      **Contribute**, **Create branch**, **Create tag**, and **Manage notes**
    :::column-end:::
    :::column span="1":::
       

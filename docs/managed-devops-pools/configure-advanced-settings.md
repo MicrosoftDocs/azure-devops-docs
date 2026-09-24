@@ -1,7 +1,7 @@
 ---
 title: Configure advanced settings
 description: Learn how to configure advanced settings in Managed DevOps Pools.
-ms.date: 12/17/2025
+ms.date: 07/01/2026
 ms.custom: sfi-image-nochange
 ms.topic: how-to
 ---
@@ -66,6 +66,21 @@ The `workfolder` property in the `runtimeConfiguration` section specifies the **
         }
     ]
 }
+```
+
+#### [Azure CLI](#tab/azure-cli/)
+
+You can set the `workFolder` value by calling [az resource update](/cli/azure/resource#az-resource-update) using the following parameters.
+
+| Parameter | Description |
+|-----------|-------------|
+| `--ids` | The resource ID of the Managed DevOps Pool. |
+| `--set` | The property to update, in this case `properties.runtimeConfiguration.workFolder`. |
+
+```bash
+az resource update \
+  --ids "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.DevOpsInfrastructure/pools/{poolName}" \
+  --set properties.runtimeConfiguration.workFolder="C:\\my-custom-work-folder"
 ```
 
 #### [Bicep](#tab/bicep/)

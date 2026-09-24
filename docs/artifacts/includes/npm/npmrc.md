@@ -1,6 +1,6 @@
 ---
 ms.topic: include
-ms.service: azure-devops-artifacts
+ms.service: azure-artifacts
 ms.author: rabououn
 author: ramiMSFT
 ms.date: 09/11/2023
@@ -12,7 +12,7 @@ ms.date: 09/11/2023
 
 1. Select **Artifacts**, and then select **Connect to feed**.
 
-    :::image type="content" source="../../npm/media/npm-scopes-connect-to-feed.png" alt-text="A screenshot showing how to connect to a feed.":::
+    :::image type="content" source="../../npm/media/npm-scopes-connect-to-feed.png" alt-text="Screenshot showing the Connect to feed button in Azure Artifacts.":::
 
 1. Select **npm**, and then select **Other**.
 
@@ -22,16 +22,12 @@ ms.date: 09/11/2023
     
         ```Command
         registry=https://pkgs.dev.azure.com/<ORGANIZATION_NAME/_packaging/<FEED_NAME>/npm/registry/
-        
-        always-auth=true
         ```
 
     - **Project-scoped feed**:
 
         ```Command
         registry=https://pkgs.dev.azure.com/<ORGANIZATION_NAME>/<PROJECT_NAME>/_packaging/<FEED_NAME>/npm/registry/
-        
-        always-auth=true
         ```
 
 ### Set up credentials

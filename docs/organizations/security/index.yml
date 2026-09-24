@@ -11,7 +11,7 @@ metadata:
   ms.topic: landing-page 
   author: chcomley 
   ms.author: chcomley 
-  ms.date: 10/16/2025
+  ms.date: 07/13/2026
 
 # linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
 
@@ -27,6 +27,8 @@ landingContent:
             url: about-permissions.md
           - text: About authentication, authorization, & security policies
             url: about-security-identity.md              
+          - text: Authentication guidance for Azure DevOps
+            url: authentication-guidance.md
           - text: Security checklist
             url: security-overview.md
       - linkListType: quickstart
@@ -108,6 +110,8 @@ landingContent:
         links:
           - text: Grant or restrict permissions to select tasks
             url: restrict-access.md 
+          - text: Optimize permissions for performance
+            url: permission-performance-recommendations.md
           - text: Use security automation scripts
             url: security-scripts.md
       - linkListType: quickstart
@@ -136,4 +140,3 @@ landingContent:
             url: permissions-lookup-guide.md
           - text: Permissions and groups reference
             url: permissions.md
-

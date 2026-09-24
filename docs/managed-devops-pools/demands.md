@@ -1,7 +1,7 @@
 ---
 title: Configure demands
 description: Learn how to configure demands for Managed DevOps Pools.
-ms.date: 12/17/2025
+ms.date: 07/06/2026
 ms.topic: how-to
 ---
 
@@ -109,6 +109,10 @@ pool:
 
 > [!TIP]
 > If you think a pipeline is failing due to an image update, follow the procedure in [Troubleshooting: Check to see if there was an image update](./troubleshooting.md#check-to-see-if-there-has-been-an-image-update).
+
+## Attached data disk
+
+[!INCLUDE [attached-data-disk-demands](./includes/attached-data-disk-demands.md)]
 
 ## CustomCapabilities
 

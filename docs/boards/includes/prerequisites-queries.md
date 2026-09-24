@@ -1,9 +1,9 @@
 ---
-ms.service: azure-devops-boards
+ms.service: azure-boards
 ms.author: chcomley
 author: chcomley
 ms.topic: include
-ms.date: 01/13/2025
+ms.date: 07/06/2026
 ---
 
 
@@ -11,11 +11,12 @@ ms.date: 01/13/2025
 
 | Category | Requirements |
 |--------------|-------------|
-| Access levels | - To view and run shared queries: [Project member](../../organizations/security/add-users-team-project.md). <br> - To add and save a shared query: At least **Basic** access. |
-| Permissions | **Contribute** permission set to **Allow** for the folder that you want to add a query to. By default, the **Contributors** group doesn't have this permission. |
+| Project membership | You must be [added as a member](../../organizations/security/add-users-team-project.md) of the project. |
+| Access levels | - To view and run shared queries: You must be a **Project member**. <br> - To add and save a shared query: You must have at least [**Basic** access](../../organizations/security/access-levels.md). |
+| Permissions | Ensure **Contribute** permission is set to **Allow** for the folder where you want to add a query. Your organization might need to manually configure the **Contributors** group to grant this permission. |
 
-> [!NOTE]  
-> Users with **Stakeholder** access for a public project have full access to query features just like users with **Basic** access. For more information, see [Stakeholder access quick reference](../../organizations/security/stakeholder-access.md).
+> [!NOTE]
+> You need both a sufficient access level and **Contribute** permission to save shared queries. Basic access isn't enough.
 
 ::: moniker-end
 
@@ -23,7 +24,11 @@ ms.date: 01/13/2025
 
 | Category | Requirements |
 |--------------|-------------|
-| Access levels | - To view and run shared queries: [Project member](../../organizations/security/add-users-team-project.md). <br> - To add and save a shared query: At least [**Basic** access](../../organizations/security/access-levels.md). |
-| Permissions | **Contribute** permission set to **Allow** for the folder that you want to add a query to. By default, the **Contributors** group doesn't have this permission. |
+| Project membership | You must be [added as a member](../../organizations/security/add-users-team-project.md) of the project. |
+| Access levels | - To view and run shared queries: You must be a **Project member**. <br> - To add and save a shared query: You must have at least [**Basic** access](../../organizations/security/access-levels.md). |
+| Permissions | Ensure **Contribute** permission is set to **Allow** for the folder where you want to add a query. Your organization might need to manually configure the **Contributors** group to grant this permission. |
+
+> [!NOTE]
+> You need both a sufficient access level and **Contribute** permission to save shared queries. Basic access isn't enough.
 
 ::: moniker-end

@@ -123,7 +123,7 @@ steps:
 > List of published artifacts will be available only in following dependant jobs. Therefore, use `current` option only in separate jobs, that has dependency on jobs with publish artifacts tasks. 
 
 > [!TIP]
-> You can use [Pipeline resources](../process/resources.md#define-a-pipelines-resource) to define your source in one place and use it anywhere in your pipeline.
+> You can use [Pipeline resources](../process/resources.md#pipelines-resource) to define your source in one place and use it anywhere in your pipeline.
 
 > [!NOTE]
 > The `download` keyword downloads artifacts. For more information, see [steps.download](/azure/devops/pipelines/yaml-schema/steps-download).
@@ -161,7 +161,28 @@ steps:
 ---
 
 To download a pipeline artifact from a different project within your organization, make sure that you have the appropriate [permissions](../../artifacts/feeds/project-scoped-feeds.md#q-how-can-i-download-a-pipeline-artifact-from-another-project-within-the-same-organization) configured for both the downstream project and the pipeline generating the artifact.
-By default, files are downloaded to **$(Pipeline.Workspace)**. If an artifact name wasn't specified, a subdirectory will be created for each downloaded artifact. You can use matching patterns to limit which files get downloaded. See [File matching patterns](../tasks/file-matching-patterns.md) for more details.
+
+### Download location
+
+By default, Azure Pipelines downloads artifacts to a subdirectory of `$(Pipeline.Workspace)`, the directory on the agent where the pipeline stores artifacts and other pipeline data:
+
+- Artifacts published by the *current* pipeline run are downloaded to `$(Pipeline.Workspace)/<artifact name>`.
+- Artifacts from a [pipeline resource](../process/resources.md#pipelines-resource) (another pipeline) are downloaded to `$(Pipeline.Workspace)/<pipeline resource identifier>/<artifact name>`.
+
+This subdirectory structure applies whether you download a single named artifact or leave the artifact name empty to download all artifacts available to the run. You can use matching patterns to limit which files get downloaded. See [File matching patterns](../tasks/file-matching-patterns.md) for more details.
+
+To download to a different location, use the [Download Pipeline Artifact task](/azure/devops/pipelines/tasks/reference/download-pipeline-artifact-v2) with its `path` input instead of the `download` shortcut keyword. The `download` keyword always uses the default location and doesn't support a custom destination.
+
+```yaml
+steps:
+- task: DownloadPipelineArtifact@2
+  inputs:
+    artifact: WebApp
+    path: $(Build.SourcesDirectory)/bin
+```
+
+> [!NOTE]
+> The `target` property in the [steps.download YAML schema reference](/azure/devops/pipelines/yaml-schema/steps-download) is unrelated to the download destination. `target` selects the execution context that the step itself runs in, either the agent host or a container defined in your pipeline, not where artifact files are saved. For more information, see [Step targets](../process/tasks.md#step-target).
 
 ```yml
 steps:

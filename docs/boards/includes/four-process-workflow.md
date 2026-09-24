@@ -16,7 +16,7 @@ ms.topic: include
 :::image type="content" source="../get-started/media/track-issues/basic-process-workflow.png" alt-text="Diagram that shows the Issue workflow states for the Basic process.":::
 
 > [!NOTE]  
-> The Basic process is available when you create a new project from Azure DevOps Services or Azure DevOps Server 2020 and later versions. For earlier on-premises deployments, choose the Agile, Scrum, or Capability Maturity Model Integration (CMMI) process. 
+> You can use the Basic process when you create a new project in Azure DevOps Services or Azure DevOps Server 2020 and later. For earlier on-premises deployments, use the Agile, Scrum, or Capability Maturity Model Integration (CMMI) process.
 
 
 #### [Scrum process](#tab/scrum-process) 

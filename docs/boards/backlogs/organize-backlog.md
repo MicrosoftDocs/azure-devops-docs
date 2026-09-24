@@ -3,7 +3,7 @@ title: "Tutorial: Organize Your Product Backlog in Azure Boards"
 titleSuffix: Azure Boards
 description: Learn how to map or parent backlog items to features. Then learn how to map features to epics in Azure Boards.
 ms.custom: boards-backlogs, copilot-scenario-highlight
-ms.service: azure-devops-boards
+ms.service: azure-boards
 ms.author: chcomley
 author: chcomley
 ms.topic: tutorial

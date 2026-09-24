@@ -227,7 +227,10 @@ For more information on pull requests, see the [Pull request](pull-requests.md) 
 	> git push -u origin ReadMeFix
     ```
 
-1. Open the project in the web portal and browse to your repository under the **Code** tab. Select **Create a pull request** to create a pull request for the branch that you pushed.
+   > [!NOTE]
+   > When you push a new branch to Azure Repos (Azure DevOps Services), the `git push` output might include a direct URL to create a pull request. You can open that link immediately to start the PR creation flow without first navigating to the web portal.
+
+1. To create a pull request, follow the URL shown in the push output (if using Azure DevOps Services). If no URL appears, open the project in the web portal and browse to your repository under the **Code** tab, and then select **Create a pull request** for the branch that you pushed.
 
    ![Creating a new Pull Request in Azure Repos](media/gitquickstart/visual-studio-2017/create-pull-request-web-portal.png)
 

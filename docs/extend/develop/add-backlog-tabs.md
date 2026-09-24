@@ -2,7 +2,7 @@
 title: Add tabs on backlog pages
 titleSuffix: Azure DevOps
 description: Add custom tabs to product and iteration backlog pages in your Azure DevOps extension.
-ms.subservice: azure-devops-ecosystem
+ms.subservice: azure-devops-developer
 ms.custom: UpdateFrequency3
 ms.topic: how-to
 monikerRange: 'azure-devops'

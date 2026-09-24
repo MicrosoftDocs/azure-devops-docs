@@ -2,7 +2,7 @@
 title: Track dependencies in Delivery Plans
 titleSuffix: Azure Boards
 description: Learn how to view and manage work item dependencies using dependency tracking features in Delivery Plans.
-ms.service: azure-devops-boards
+ms.service: azure-boards
 ms.custom: cross-project, copilot-scenario-highlight
 ms.author: chcomley
 author: chcomley
@@ -115,6 +115,5 @@ If you have the [Azure Boards MCP Server](../../mcp-server/mcp-server-overview.m
 - [Add or edit a Delivery Plan](add-edit-delivery-plan.md)
 - [Review team Delivery Plans](review-team-plans.md)
 - [Link work items](../backlogs/add-link.md)
-- [Use the Dependency Tracker extension](../extensions/dependency-tracker.md)
 - [Manage dependencies](../best-practices-agile-project-management.md#manage-dependencies)
 

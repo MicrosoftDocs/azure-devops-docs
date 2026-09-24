@@ -114,7 +114,7 @@ additionalContent:
         links:
             - text: Enable AI assistance with Azure DevOps MCP Server
               url: ./mcp-server/mcp-server-overview.md
-            - text: Set up remote Azure DevOps MCP Server (preview)
+            - text: Set up remote Azure DevOps MCP Server
               url: ./mcp-server/remote-mcp-server.md
             - text: Use GitHub Copilot with Azure Boards
               url: ./boards/github/work-item-integration-github-copilot.md

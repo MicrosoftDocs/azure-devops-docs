@@ -1,14 +1,14 @@
 ---
 title: Use Agile Process Template Artifacts
 titleSuffix: Azure Boards  
-description: Learn to use agile process artifacts to plan and track work and monitor progress. Learn to use trends when you connect to Azure Boards and Azure DevOps.
+description: Overview of Agile process work item types and artifacts in Azure Boards, with guidance to plan and track work, run queries, and monitor progress.
 ms.custom: work-items
-ms.service: azure-devops-boards
+ms.service: azure-boards
 ms.topic: overview
 ms.author: chcomley
 author: chcomley
 monikerRange: '<= azure-devops'
-ms.date: 10/08/2025
+ms.date: 07/06/2026
 ai-usage: ai-assisted
 --- 
 
@@ -16,19 +16,25 @@ ai-usage: ai-assisted
 
 [!INCLUDE [version-lt-eq-azure-devops](../../../includes/version-lt-eq-azure-devops.md)]
 
-The Agile process provides work item types (WITs) you use to plan and track work, tests, feedback, and code review. Different WITs let you track features, user stories, tasks, and other types of work. When you create a project with the Agile process, Azure DevOps creates these artifacts based on agile principles and values.  
+The Agile process provides work item types (WITs) that help teams plan, track, and manage delivery. These WITs support common planning and execution scenarios, such as managing features, user stories, tasks, bugs, feedback, and code review. When you create a project with the Agile process, Azure DevOps creates these artifacts for you.  
  
-:::image type="content" source="media/agile-process-work-tracking-wits.png" alt-text="Screenshot that shows a conceptual diagram of Agile process work item types.":::
+:::image type="content" source="media/agile-process-work-tracking-wits.png" alt-text="Diagram that shows Agile process work item types and how they relate.":::
 
-Along with the WITs, teams use work item queries to track information, analyze progress, and make decisions.  
+Teams also use work item queries to track status, analyze progress, and support planning decisions.  
 
 [!INCLUDE [temp](../../includes/process-customize.md)] 
 
 <a id="start-using"></a>
 
+## Prerequisites
+
+| Requirement | Details |
+|---|---|
+| Organization and project access | You have access to an Azure DevOps organization and project with Azure Boards enabled. |
+
 ## Plan and track work with Agile
  
-Build your project plan by creating a backlog of user stories that represent the work you want to develop and ship. Track bugs, tasks, and blocking issues using the Bug, Task, and Issue WITs. For portfolio management, create Features and Epics to view rollups of user stories within and across teams. For details, see [Agile process work item types and workflow](agile-process-workflow.md).  
+Build your project plan by creating a backlog of user stories that represent the work you want to develop and ship. Track bugs, tasks, and blocking issues by using the Bug, Task, and Issue WITs. For portfolio management, create Features and Epics to view rollups of user stories within and across teams. For details, see [Agile process work item types and workflow](agile-process-workflow.md).  
 
 [!INCLUDE [temp](../../includes/process-guidance-conceptual.md)] 
 
@@ -36,7 +42,7 @@ Build your project plan by creating a backlog of user stories that represent the
 
 ## List work items by using queries
 
-Regularly review the status of user stories and tasks to manage workload effectively. Use shared work item queries to list items for a current sprint or the product backlog.
+Regularly review the status of user stories and tasks to manage your workload effectively. Use shared work item queries to list items for a current sprint or the product backlog.
 
 [!INCLUDE [temp](../../includes/shared-queries.md)] 
 
@@ -44,7 +50,7 @@ Regularly review the status of user stories and tasks to manage workload effecti
 
 ## Monitor progress  
 
-All processes, including Agile, Scrum, and CMMI, support building charts and dashboards to show status and trends. Azure DevOps also generates several charts automatically based on the Agile tools you use; these charts appear in the web portal.
+All processes, including Agile, Scrum, and CMMI, support building charts and dashboards to show status and trends. Azure DevOps also generates several charts automatically based on the Agile tools you use. These charts appear in the web portal.
 
 [!INCLUDE [temp](../../includes/create-lightweight-charts.md)] 
 
@@ -52,15 +58,14 @@ All processes, including Agile, Scrum, and CMMI, support building charts and das
 
 ## Agile process versions  
 
-When the Agile process template receives updates, its version number changes. The template exposes a `version` element that specifies major and minor versions. For Azure Boards (cloud) the latest version is applied automatically; on-premises process templates follow the versioning shown here.
+When the Agile process template receives updates, its version number changes. The template exposes a `version` element that specifies major and minor versions. For Azure Boards (cloud), the latest version is applied automatically. On-premises process templates follow the versioning shown here.
 
 > [!div class="mx-tdCol2BreakAll"]
 > |Version | Agile process name | Major version |
 > |-------------|-------------------|--------------|
 > | Azure DevOps Services<br/>Azure DevOps Server 2022 | Agile | 18 |
-> | Azure DevOps Server 2020|
 
-For a summary of process-template updates, see [Release Notes for Azure DevOps Server](/azure/devops/server/release-notes/azuredevops2020u1).
+For process-template update details by server version, see [Azure DevOps Server release notes](/azure/devops/server/release-notes/azuredevops2022?view=azure-devops&preserve-view=true).
 
 <a id="predefined-queries"></a>
 

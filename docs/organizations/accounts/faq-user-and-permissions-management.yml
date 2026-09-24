@@ -12,7 +12,7 @@ metadata:
   ms.topic: faq
   ms.author: chcomley
   author: chcomley
-  ms.date: 06/11/2026
+  ms.date: 07/09/2026
   monikerRange: '<= azure-devops'
 title: User and permissions management FAQs
 summary: |
@@ -115,7 +115,7 @@ sections:
           A: When a user no longer has a Visual Studio subscription, they're treated like a new user.
           
           - If your organization's [default access level](../billing/buy-basic-access-add-users.md#select-default-access-level-for-new-users) is Basic, they get assigned Basic automatically.
-          - If your organization established [group rules](assign-access-levels-by-group-membership.md), the user receives the access specified by their group membership.
+          - If your organization established [group rules](assign-access-levels-by-group-membership.md) that grant Basic or Basic + Test Plans, the user is assigned that access.
           - If the user has a GitHub Enterprise license, they're assigned GitHub Enterprise.
           - Otherwise, affected users maintain Stakeholder access until an administrator assigns them a paid access level.
 

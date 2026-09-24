@@ -1,56 +1,68 @@
 ---
-title: Git branch policies and settings
+title: Set and manage branch policies
 titleSuffix: Azure Repos
-description: Branch policies and settings provide teams with the means to protect their important branches.
+description: Set and manage branch policies in Azure Repos to require reviewers, builds, status checks, and other pull request protections.
 ms.service: azure-devops-repos
-ms.topic: overview
-ms.custom: cross-service, devx-track-azurecli
+ms.topic: how-to
+ms.custom: cross-service, devx-track-azurecli, copilot-scenario-highlight
 ai-usage: ai-assisted
-ms.date: 03/31/2022
+ms.date: 07/15/2026
 monikerRange: '<= azure-devops'
 ms.subservice: azure-devops-repos-git
 ---
 
-# Branch policies and settings
+# Set and manage branch policies
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
-[!INCLUDE [ai-assistance-callout](../../includes/ai-assistance-callout.md)]
+Use branch policies to protect important [branches](./create-branch.md) by requiring pull requests, reviewers, builds, and other checks before changes merge. This article shows how to configure and manage branch policies in the Azure DevOps web portal and Azure DevOps CLI. For a summary of available branch policies and branching guidance, see [About branches and branch policies](branch-policies-overview.md).
 
-Branch policies help teams protect their important [branches](./create-branch.md) of development. Policies enforce your team's code quality and change management standards. This article describes how to set and manage branch policies. For an overview of all repository and branch policies and settings, see [Git repository settings and policies](repository-settings.md).
+For a comprehensive security guide covering branch policies, repository access control, commit signing, and real-world implementation scenarios, see [Secure repositories and pull requests](secure-repositories-pull-requests.md).
 
-A branch with required policies configured can't be deleted, and requires pull requests (PRs) for all changes.
+You can't delete a branch with required policies configured, and all changes must go through pull requests (PRs).
+
+[!INCLUDE [ai-assistance-mcp-server-tip](../../includes/ai-assistance-mcp-server-tip.md)]
 
 ## Prerequisites 
 
 ::: moniker range="azure-devops"
 
-- To set branch policies, be a member of the Project Administrators security group or have repository-level **Edit policies** permissions. For more information, see [Set Git repository permissions](set-git-repository-permissions.md).
-
-- If you want to use Azure DevOps CLI [az repos policy](/cli/azure/repos/policy) commands to manage branch policies, follow the steps in [Get started with Azure DevOps CLI](../../cli/index.md).
+| Requirement | Details |
+|---|---|
+| Permissions | Be a member of the Project Administrators security group, or have repository-level **Edit policies** permissions. For more information, see [Set Git repository permissions](set-git-repository-permissions.md). |
+| Azure DevOps CLI setup (optional) | To use Azure DevOps CLI [az repos policy](/cli/azure/repos/policy) commands, complete [Get started with Azure DevOps CLI](../../cli/index.md). |
+| Repository targeting for CLI (optional) | Before you create or update policies in CLI, identify the repository ID by running `az repos list`. To avoid repeating `--org` and `--project`, set defaults with `az devops configure --defaults`. |
+| Policy dependencies | Before you configure **Build validation**, have a build pipeline ready. Before you configure **Status checks**, make sure the external service or built-in integration can already post pull request status. |
+| AI assistance setup (optional) | To use AI assistance with Azure DevOps MCP Server, use Azure DevOps Services, enable agent mode in your AI assistant, and install [Node.js 20.0+](https://nodejs.org/). For more information, see [Enable AI assistance with Azure DevOps MCP Server](../../mcp-server/mcp-server-overview.md). |
 ::: moniker-end
 
 ::: moniker range="< azure-devops"
-- To set branch policies, be a member of the Project Administrators security group or have repository-level **Edit policies** permissions. For more information, see [Set Git repository permissions](set-git-repository-permissions.md).
+| Requirement | Details |
+|---|---|
+| Permissions | Be a member of the Project Administrators security group, or have repository-level **Edit policies** permissions. For more information, see [Set Git repository permissions](set-git-repository-permissions.md). |
 ::: moniker-end
 
-## Configure branch policies
+## Open branch policy settings
+
+<a id="configure-branch-policies"></a>
 
 # [Browser](#tab/browser)
 
-To manage branch policies, select **Repos** > **Branches** to open the **Branches** page in the web portal.
+To open branch policy settings in the web portal:
+
+1. Select **Repos** > **Branches**.
+1. Find the branch that you want to manage.
+1. Select the **More options** icon next to the branch, and then select **Branch policies**.
 
 ![Screenshot that shows the Branches menu item.](media/branch-policies/branches-new-nav.png)
 
-You can also get to branch policy settings with **Project Settings** > **Repository** > **Policies** > **Branch Policies** > **\<Branch Name>**.
+You can also open branch policy settings from **Project settings** > **Repository** > **Policies** > **Branch Policies** > **\<Branch name>**.
 
 ::: moniker range="<=azure-devops"
 
-Branches that have policies display a policy icon. You can select the icon to go directly to the branch's policy settings.
+Branches that have policies display a policy icon. Select the icon to go directly to the branch's policy settings.
 
-To set branch policies, locate the branch you want to manage. You can browse the list or search for your branch in the **Search branch name** box at upper right.
-
-Select the **More options** icon next to the branch, and then select **Branch policies** from the context menu.
+You can browse the list or search for the branch in the **Search branch name** box.
 
 ![Screenshot that shows Open the branch policies from the context menu.](media/branch-policies/new-branches-page.png)
 
@@ -58,7 +70,7 @@ Select the **More options** icon next to the branch, and then select **Branch po
 
 ::: moniker range="<=azure-devops"
 
-Configure policies on the branch's settings page. See the following sections for descriptions and instructions for each policy type.
+Configure policies on the branch's settings page. Use the following sections to turn each policy on or update an existing policy.
 
 ::: moniker-end
 
@@ -66,7 +78,9 @@ Configure policies on the branch's settings page. See the following sections for
 
 ::: moniker range="azure-devops" 
 
-You can use Azure DevOps CLI to list or show policies for a branch or repository.
+Use Azure DevOps CLI to list existing policies for a branch or repository before you create or update a policy.
+
+If you use Azure DevOps CLI often, set default values for your organization and project with `az devops configure --defaults`. When you want a policy to apply only to one branch, use `--branch-match-type exact`. Use `prefix` only when you want the policy to apply across a branch folder such as `release/`.
 
 ### List policies
 
@@ -77,7 +91,6 @@ az repos policy list [--branch]
                      [--detect {false, true}]
                      [--org]
                      [--project]
-                     [--query-examples]
                      [--repository-id]
                      [--subscription]
 ```
@@ -88,15 +101,14 @@ az repos policy list [--branch]
 |---------|-----------|
 |`branch`|Branch name to filter results by exact match. The `--repository-id` parameter is required to use the branch filter. For example: `--branch main`.|
 |`detect`|Automatically detect organization. Accepted values: `false`, `true`.|
-|`org`, `organization`|Azure DevOps organization URL. You can configure the default organization by using `az devops configure -d organization=<ORG_URL>`. **Required** if not configured as default or picked up via git config. Example: `https://dev.azure.com/MyOrganizationName/`.|
-|`project`, `p`|Name or ID of the project. You can configure the default project using `az devops configure -d project=<NAME_OR_ID>`. **Required** if not configured as default or picked up via git config.|
-|`query-examples`|Recommended JMESPath string. You can copy one of the queries and paste it after the `--query` parameter in double quotation marks to see the results. You can add one or more positional keywords so suggestions are based on these keywords.|
+|`org`, `organization`|Azure DevOps organization URL. Configure the default organization by using `az devops configure -d organization=<ORG_URL>`. **Required** if not configured as default or picked up via git config. Example: `https://dev.azure.com/MyOrganizationName/`.|
+|`project`, `p`|Name or ID of the project. Configure the default project using `az devops configure -d project=<NAME_OR_ID>`. **Required** if not configured as default or picked up via git config.|
 |`repository-id`|ID of the repository to filter results by exact match. For example, `--repository-ID e556f204-53c9-4153-9cd9-ef41a11e3345`.|
-|`subscription`|Name or ID of subscription. You can configure the default subscription using `az account set -s <NAME_OR_ID>`.|
+|`subscription`|Name or ID of subscription. Configure the default subscription using `az account set -s <NAME_OR_ID>`.|
 
 **Example**
 
-The following command returns all the branch policies in effect in the `main` branch of the Fabrikam repository, ID `d28cd374-e7f0-4b1f-ad60-f349f155d47c`. You can get the repository ID by running `az repos list`.
+The following command returns all the branch policies in effect in the `main` branch of the Fabrikam repository, ID `d28cd374-e7f0-4b1f-ad60-f349f155d47c`. Get the repository ID by running `az repos list`.
 
 This example uses the following default configuration: `az devops configure --defaults organization=https://dev.azure.com/fabrikamprime project="Fabrikam Fiber"`.
 
@@ -121,7 +133,6 @@ az repos policy show --id
                      [--detect {false, true}]
                      [--org]
                      [--project]
-                     [--query-examples]
                      [--subscription]
 ```
 **Parameters**
@@ -130,10 +141,9 @@ az repos policy show --id
 |---------|-----------|
 |`id`, `policy-id`|ID of the policy. **Required**.|
 |`detect`|Automatically detect organization. Accepted values: `false`, `true`.|
-|`org`, `organization`|Azure DevOps organization URL. You can configure the default organization by using `az devops configure -d organization=<ORG_URL>`. **Required** if not configured as default or picked up via git config. Example: `https://dev.azure.com/MyOrganizationName/`.|
-|`project`, `p`|Name or ID of the project. You can configure the default project using `az devops configure -d project=<NAME_OR_ID>`. **Required** if not configured as default or picked up via git config.|
-|`query-examples`|Recommended JMESPath string. You can copy one of the queries and paste it after the `--query` parameter in double quotation marks to see the results. You can add one or more positional keywords so suggestions are based on these keywords.|
-|`subscription`|Name or ID of subscription. You can configure the default subscription using `az account set -s <NAME_OR_ID>`.|
+|`org`, `organization`|Azure DevOps organization URL. Configure the default organization by using `az devops configure -d organization=<ORG_URL>`. **Required** if not configured as default or picked up via git config. Example: `https://dev.azure.com/MyOrganizationName/`.|
+|`project`, `p`|Name or ID of the project. Configure the default project using `az devops configure -d project=<NAME_OR_ID>`. **Required** if not configured as default or picked up via git config.|
+|`subscription`|Name or ID of subscription. Configure the default subscription using `az account set -s <NAME_OR_ID>`.|
 
 ::: moniker-end
 
@@ -143,9 +153,11 @@ az repos policy show --id
 
 <a name="require_reviewers"></a>
 
-## Require a minimum number of reviewers
+<a id="require-a-minimum-number-of-reviewers"></a>
 
-Code reviews are important for software development projects. To ensure that teams review and approve PRs, you can require approval from a minimum number of reviewers. The basic policy requires that a specified number of reviewers approve the code, with no rejections.
+## Set a minimum reviewer policy
+
+Require approval from a minimum number of reviewers before a pull request can complete.
 
 # [Browser](#tab/browser)
 
@@ -155,7 +167,7 @@ To set the policy, under **Branch Policies**, set **Require a minimum number of 
 
 :::image type="content" source="media/branch-policies/require-minimum-reviewers-2020.png" alt-text="Screenshot that shows the Enable the Require Code Reviews policy.":::
 
-- Select **Allow requestors to approve their own changes** to allow a PR's creator to vote on its approval. Otherwise, the creator can still vote **Approve** on the PR, but their vote does't count toward the minimum number of reviewers.
+- Select **Allow requestors to approve their own changes** to allow a PR's creator to vote on its approval. Otherwise, the creator can still vote **Approve** on the PR, but their vote doesn't count toward the minimum number of reviewers.
 
 - Select **Prohibit the most recent pusher from approving their own changes** to enforce segregation of duties. By default, anyone with push permission on the source branch can both add commits and vote on PR approval. Selecting this option means the most recent pusher's vote doesn't count, even if they can ordinarily approve their own changes.
 
@@ -216,8 +228,8 @@ az repos policy approver-count create --allow-downvotes {false, true}
 |`branch-match-type`|Use the `branch` argument to apply the policy. If the value is `exact`, the policy applies on a branch that exactly matches the `--branch` argument. If the value is `prefix`, the policy applies across all branch folders that match the prefix in the `--branch` argument. Accepted values: `exact`, `prefix`. Default value: `exact`.|
 |`detect`|Automatically detect organization. Accepted values: `false`, `true`.|
 |`org`|Azure DevOps organization URL. You can configure the default organization by using `az devops configure -d organization=<ORG_URL>`. **Required** if not configured as default or picked up via git config. Example: `https://dev.azure.com/MyOrganizationName/`.|
-|`project`, `p`|Name or ID of the project. You can configure the default project using `az devops configure -d project=<NAME_OR_ID>`. **Required** if not configured as default or picked up via git config.|
-|`subscription`|Name or ID of subscription. You can configure the default subscription using `az account set -s <NAME_OR_ID>`.|
+|`project`, `p`|Name or ID of the project. Configure the default project using `az devops configure -d project=<NAME_OR_ID>`. **Required** if not configured as default or picked up via git config.|
+|`subscription`|Name or ID of subscription. Configure the default subscription using `az account set -s <NAME_OR_ID>`.|
 
 **Example**
 
@@ -269,10 +281,10 @@ az repos policy approver-count update --id
 |`enabled`|Enable the policy. Accepted values: `false`, `true`.|
 |`minimum-approver-count`|Minimum number of approvers required. For example: `2`.|
 |`org`|Azure DevOps organization URL. You can configure the default organization by using `az devops configure -d organization=<ORG_URL>`. **Required** if not configured as default or picked up via git config. Example: `https://dev.azure.com/MyOrganizationName/`.|
-|`project`, `p`|Name or ID of the project. You can configure the default project using `az devops configure -d project=<NAME_OR_ID>`. **Required** if not configured as default or picked up via git config.|
+|`project`, `p`|Name or ID of the project. Configure the default project using `az devops configure -d project=<NAME_OR_ID>`. **Required** if not configured as default or picked up via git config.|
 |`repository-id`|ID of the repository to filter results by exact match. For example, `--repository-ID e556f204-53c9-4153-9cd9-ef41a11e3345`.|
 |`reset-on-source-push`|Reset votes when changes are pushed to the source. Accepted values: `false`, `true`.|
-|`subscription`|Name or ID of subscription. You can configure the default subscription using `az account set -s <NAME_OR_ID>`.|
+|`subscription`|Name or ID of subscription. Configure the default subscription using `az account set -s <NAME_OR_ID>`.|
 
 ::: moniker-end
 
@@ -282,7 +294,7 @@ az repos policy approver-count update --id
 
 <a id="check-linked-wi"></a>
 
-## Check for linked work items
+## Require linked work items
 
 For [work item management tracking](../../boards/backlogs/connect-work-items-to-git-dev-ops.md), you can require associations between PRs and work items. Linking work items provides more context for changes, and ensures that updates go through your work item tracking process.
 
@@ -333,8 +345,8 @@ az repos policy work-item-linking create --blocking {false, true}
 |`branch-match-type`|Use the `branch` argument to apply the policy. If the value is `exact`, the policy applies on a branch that exactly matches the `--branch` argument. If the value is `prefix`, the policy applies across all branch folders that match the prefix in the `--branch` argument. Accepted values: `exact`, `prefix`. Default value: `exact`.|
 |`detect`|Automatically detect organization. Accepted values: `false`, `true`.|
 |`org`|Azure DevOps organization URL. You can configure the default organization by using `az devops configure -d organization=<ORG_URL>`. **Required** if not configured as default or picked up via git config. Example: `https://dev.azure.com/MyOrganizationName/`.|
-|`project`, `p`|Name or ID of the project. You can configure the default project using `az devops configure -d project=<NAME_OR_ID>`. **Required** if not configured as default or picked up via git config.|
-|`subscription`|Name or ID of subscription. You can configure the default subscription using `az account set -s <NAME_OR_ID>`.|
+|`project`, `p`|Name or ID of the project. Configure the default project using `az devops configure -d project=<NAME_OR_ID>`. **Required** if not configured as default or picked up via git config.|
+|`subscription`|Name or ID of subscription. Configure the default subscription using `az account set -s <NAME_OR_ID>`.|
 
 <a id="update-wi-policy"></a> 
 
@@ -365,18 +377,17 @@ az repos policy work-item-linking update --id
 |`branch-match-type`|Use the `branch` argument to apply the policy. If the value is `exact`, the policy applies on a branch that exactly matches the `--branch` argument. If the value is `prefix`, the policy applies across all branch folders that match the prefix in the `--branch` argument. Accepted values: `exact`, `prefix`. Default value: `exact`.|
 |`detect`|Automatically detect organization. Accepted values: `false`, `true`.|
 |`enabled`|Enable the policy. Accepted values: `false`, `true`.|
-|`minimum-approver-count`|Minimum number of approvers required. For example: `2`.|
 |`org`|Azure DevOps organization URL. You can configure the default organization by using `az devops configure -d organization=<ORG_URL>`. **Required** if not configured as default or picked up via git config. Example: `https://dev.azure.com/MyOrganizationName/`.|
-|`project`, `p`|Name or ID of the project. You can configure the default project using `az devops configure -d project=<NAME_OR_ID>`. **Required** if not configured as default or picked up via git config.|
+|`project`, `p`|Name or ID of the project. Configure the default project using `az devops configure -d project=<NAME_OR_ID>`. **Required** if not configured as default or picked up via git config.|
 |`repository-id`|ID of the repository to filter results by exact match. For example, `--repository-ID e556f204-53c9-4153-9cd9-ef41a11e3345`.|
-|`subscription`|Name or ID of subscription. You can configure the default subscription using `az account set -s <NAME_OR_ID>`.|
+|`subscription`|Name or ID of subscription. Configure the default subscription using `az account set -s <NAME_OR_ID>`.|
 
 **Example**
 
 The following example updates the policy ID `3` for the `main` branch of the Fabrikam repository to be enabled but optional. The example uses the default configuration `az devops configure --defaults organization=https://dev.azure.com/fabrikamprime project="Fabrikam Fiber"`.
 
 ```azurecli
->az repos policy work-item-linking update --id 3 --blocking false --branch main --enabled true --repository-id d28cd374-e7f0-4b1f-ad60-f349f155d47c --output table
+az repos policy work-item-linking update --id 3 --blocking false --branch main --enabled true --repository-id d28cd374-e7f0-4b1f-ad60-f349f155d47c --output table
 
 ID    Name               Is Blocking    Is Enabled    Repository Id                         Branch
 ----  -----------------  -------------  ------------  ------------------------------------  ---------------
@@ -391,7 +402,7 @@ ID    Name               Is Blocking    Is Enabled    Repository Id             
 
 <a id="check-comment-resolution"></a>
 
-## Check for comment resolution
+## Require comment resolution
 
 The **Check for comment resolution** policy checks whether all PR comments are resolved.
 
@@ -399,11 +410,11 @@ The **Check for comment resolution** policy checks whether all PR comments are r
 
 ::: moniker range="<=azure-devops"
 
-Configure a comment resolution policy for your branch by setting **Check for comment resolution** to **On**. Then select whether to make the policy **Required** or **Optional**.
+Set **Check for comment resolution** to **On** to configure a comment resolution policy for your branch. Then select whether to make the policy **Required** or **Optional**.
 
 :::image type="content" source="media/branch-policies/check-comment-resolution-2020.png" alt-text="Screenshot of Check for comment resolution.":::
 
-For more information on working with pull request comments, see [Review pull requests](review-pull-requests.md).
+For more information about working with pull request comments, see [Review pull requests](review-pull-requests.md).
 
 ::: moniker-end
 
@@ -411,7 +422,7 @@ For more information on working with pull request comments, see [Review pull req
 
 ::: moniker range="azure-devops" 
 
-You can use Azure DevOps CLI [az repos policy comment-required](/cli/azure/repos/policy/comment-required) to set and update comment resolution policy.
+Use Azure DevOps CLI [az repos policy comment-required](/cli/azure/repos/policy/comment-required) to set and update the comment resolution policy.
 
 ### Create comment resolution policy
 
@@ -440,8 +451,8 @@ az repos policy comment-required create --blocking {false, true}
 |`branch-match-type`|Use the `branch` argument to apply the policy. If the value is `exact`, the policy applies on a branch that exactly matches the `--branch` argument. If the value is `prefix`, the policy applies across all branch folders that match the prefix in the `--branch` argument. Accepted values: `exact`, `prefix`. Default value: `exact`.|
 |`detect`|Automatically detect organization. Accepted values: `false`, `true`.|
 |`org`|Azure DevOps organization URL. You can configure the default organization by using `az devops configure -d organization=<ORG_URL>`. **Required** if not configured as default or picked up via git config. Example: `https://dev.azure.com/MyOrganizationName/`.|
-|`project`, `p`|Name or ID of the project. You can configure the default project using `az devops configure -d project=<NAME_OR_ID>`. **Required** if not configured as default or picked up via git config.|
-|`subscription`|Name or ID of subscription. You can configure the default subscription using `az account set -s <NAME_OR_ID>`.|
+|`project`, `p`|Name or ID of the project. Configure the default project using `az devops configure -d project=<NAME_OR_ID>`. **Required** if not configured as default or picked up via git config.|
+|`subscription`|Name or ID of subscription. Configure the default subscription using `az account set -s <NAME_OR_ID>`.|
 
 ### Update comment resolution policy
 
@@ -471,9 +482,9 @@ az repos policy comment-required update --id
 |`detect`|Automatically detect organization. Accepted values: `false`, `true`.|
 |`enabled`|Enable the policy. Accepted values: `false`, `true`.|
 |`org`|Azure DevOps organization URL. You can configure the default organization by using `az devops configure -d organization=<ORG_URL>`. **Required** if not configured as default or picked up via git config. Example: `https://dev.azure.com/MyOrganizationName/`.|
-|`project`, `p`|Name or ID of the project. You can configure the default project using `az devops configure -d project=<NAME_OR_ID>`. **Required** if not configured as default or picked up via git config.|
+|`project`, `p`|Name or ID of the project. Configure the default project using `az devops configure -d project=<NAME_OR_ID>`. **Required** if not configured as default or picked up via git config.|
 |`repository-id`|ID of the repository to filter results by exact match. For example, `--repository-ID e556f204-53c9-4153-9cd9-ef41a11e3345`.|
-|`subscription`|Name or ID of subscription. You can configure the default subscription using `az account set -s <NAME_OR_ID>`.|
+|`subscription`|Name or ID of subscription. Configure the default subscription using `az account set -s <NAME_OR_ID>`.|
 
 **Example**
 
@@ -499,7 +510,7 @@ ID    Name                  Is Blocking    Is Enabled    Repository Id          
 
 ## Limit merge types
 
-Azure Repos has several merge strategies, and by default, all of them are allowed. You can maintain a consistent branch history by enforcing a merge strategy for PR completion.
+Azure Repos supports several merge strategies, and by default, it allows all of them. To keep a consistent branch history, enforce a merge strategy for PR completion.
 
 ::: moniker-end
 
@@ -507,12 +518,12 @@ Azure Repos has several merge strategies, and by default, all of them are allowe
 
 ::: moniker range="<=azure-devops"
 
-Set **Limit merge types** to **On** to limit which merge types to allow in your repo.
+Set **Limit merge types** to **On** to limit which merge types are allowed in your repo.
 
 :::image type="content" source="media/branch-policies/limit-merge-types-2020.png" alt-text="Screenshot of Limit merge types.":::
 
 - **Basic merge (no fast-forward)** creates a merge commit in the target whose parents are the target and source branches.
-- **Squash merge** creates a linear history with a single commit in the target branch with the changes from the source branch. [Learn more about squash merging](merging-with-squash.md) and how it affects branch history.
+- **Squash merge** creates a linear history with a single commit in the target branch that includes the changes from the source branch. [Learn more about squash merging](merging-with-squash.md) and how it affects branch history.
 - **Rebase and fast-forward** creates a linear history by replaying source commits onto the target branch with no merge commit.
 - **Rebase with merge commit** replays the source commits onto the target and also creates a merge commit.
 
@@ -522,7 +533,7 @@ Set **Limit merge types** to **On** to limit which merge types to allow in your 
 
 ::: moniker range="azure-devops"
 
-You can use Azure DevOps CLI [az repos policy merge-strategy](/cli/azure/repos/policy/merge-strategy) to set and update merge strategy policy.
+Use Azure DevOps CLI [az repos policy merge-strategy](/cli/azure/repos/policy/merge-strategy) to set and update the merge strategy policy.
 
 ### Create a merge strategy policy
 
@@ -560,8 +571,8 @@ az repos policy merge-strategy create --blocking {false, true}
 |`branch-match-type`|Use the `branch` argument to apply the policy. If the value is `exact`, the policy applies on a branch that exactly matches the `--branch` argument. If the value is `prefix`, the policy applies across all branch folders that match the prefix in the `--branch` argument. Accepted values: `exact`, `prefix`. Default value: `exact`.|
 |`detect`|Automatically detect organization. Accepted values: `false`, `true`.|
 |`org`|Azure DevOps organization URL. You can configure the default organization by using `az devops configure -d organization=<ORG_URL>`. **Required** if not configured as default or picked up via git config. Example: `https://dev.azure.com/MyOrganizationName/`.|
-|`project`, `p`|Name or ID of the project. You can configure the default project using `az devops configure -d project=<NAME_OR_ID>`. **Required** if not configured as default or picked up via git config.|
-|`subscription`|Name or ID of subscription. You can configure the default subscription using `az account set -s <NAME_OR_ID>`.|
+|`project`, `p`|Name or ID of the project. Configure the default project using `az devops configure -d project=<NAME_OR_ID>`. **Required** if not configured as default or picked up via git config.|
+|`subscription`|Name or ID of subscription. Configure the default subscription using `az account set -s <NAME_OR_ID>`.|
 |`use-squash-merge`|Always squash merge. This option isn't available for other merge types. Accepted values: `false`, `true`.<br /><br />**Note**: `use-squash-merge` is deprecated and will be removed in a future release. Use `--allow-squash` instead.|
 
 **Example**
@@ -613,9 +624,9 @@ az repos policy merge-strategy update --id
 |`detect`|Automatically detect organization. Accepted values: `false`, `true`.|
 |`enabled`|Enable the policy. Accepted values: `false`, `true`.|
 |`org`|Azure DevOps organization URL. You can configure the default organization by using `az devops configure -d organization=<ORG_URL>`. **Required** if not configured as default or picked up via git config. Example: `https://dev.azure.com/MyOrganizationName/`.|
-|`project`, `p`|Name or ID of the project. You can configure the default project using `az devops configure -d project=<NAME_OR_ID>`. **Required** if not configured as default or picked up via git config.|
+|`project`, `p`|Name or ID of the project. Configure the default project using `az devops configure -d project=<NAME_OR_ID>`. **Required** if not configured as default or picked up via git config.|
 |`repository-id`|ID of the repository to filter results by exact match. For example, `--repository-ID e556f204-53c9-4153-9cd9-ef41a11e3345`.|
-|`subscription`|Name or ID of subscription. You can configure the default subscription using `az account set -s <NAME_OR_ID>`.|
+|`subscription`|Name or ID of subscription. Configure the default subscription using `az account set -s <NAME_OR_ID>`.|
 |`use-squash-merge`|Whether to squash merge always. This option doesn't work for other merge types. Accepted values: `false`, `true`.|
 
 ::: moniker-end 
@@ -634,15 +645,15 @@ az repos policy merge-strategy update --id
 
 ::: moniker range="<=azure-devops"
 
-## Build validation
+## Set build validation
 
-You can set a policy requiring PR changes to build successfully before the PR can complete.
+Set a policy that requires PR changes to build successfully before the PR can complete.
 Build policies reduce breaks and keep your test results passing. Build policies help even if you're using [continuous integration](/devops/develop/what-is-continuous-integration) (CI) on your development branches to catch problems early.
 
-A build validation policy queues a new build when a new PR is created or changes are pushed to an existing PR that targets the branch. The build policy evaluates the build results to determine whether the PR can be completed.
+When you set the policy trigger to **Automatic**, a build validation policy queues a new build when you create a new PR or push changes to an existing PR that targets the branch. If you set the policy trigger to **Manual**, users must queue the build themselves. In both cases, the policy evaluates the build results to determine whether the PR can be completed.
 
 > [!IMPORTANT]
-> Before specifying a build validation policy, have a build pipeline. If you don't have a pipeline, see [Create a build pipeline](../../pipelines/create-first-pipeline.md). Choose the type of build that matches your project type.
+> Before specifying a build validation policy, create a build pipeline. If you don't have a pipeline, see [Create a build pipeline](../../pipelines/create-first-pipeline.md). Choose the type of build that matches your project type.
 
 ::: moniker-end 
 
@@ -662,7 +673,7 @@ To add a build validation policy
 
    - Select the **Build pipeline**.
 
-   - Optionally set a **Path filter**. [Learn more about path filters](#path-filters) in branch policies.
+  - Optionally set a **Path filter**. [Learn more about path filters](#use-path-filters-with-branch-policies) in branch policies.
 
    - Under **Trigger**, select **Automatic (whenever the source branch is updated)** or **Manual**.
 
@@ -692,7 +703,7 @@ If you have an **Immediately when \<branch name> is updated** or **After \<n> ho
 
 ::: moniker range="azure-devops"
 
-You can use Azure DevOps CLI [az repos policy build](/cli/azure/repos/policy/build) to set and update build validation policy.
+Use Azure DevOps CLI [az repos policy build](/cli/azure/repos/policy/build) to set and update the build validation policy.
 
 ### Create a build validation policy
 
@@ -733,8 +744,8 @@ az repos policy build create --blocking {false, true}
 |`detect`|Automatically detect organization. Accepted values: `false`, `true`.|
 |`org`|Azure DevOps organization URL. You can configure the default organization by using `az devops configure -d organization=<ORG_URL>`. **Required** if not configured as default or picked up via git config. Example: `https://dev.azure.com/MyOrganizationName/`.|
 |`path-filter`|Path on which to apply the policy is applied. Supports absolute paths, wildcards, and multiple paths separated by `;`. Examples: `/WebApp/Models/Data.cs`, `/WebApp/*`, or `*.cs,` or `/WebApp/Models/Data.cs;ClientApp/Models/Data.cs`.|
-|`project`, `p`|Name or ID of the project. You can configure the default project using `az devops configure -d project=<NAME_OR_ID>`. **Required** if not configured as default or picked up via git config.|
-|`subscription`|Name or ID of subscription. You can configure the default subscription using `az account set -s <NAME_OR_ID>`.|
+|`project`, `p`|Name or ID of the project. Configure the default project using `az devops configure -d project=<NAME_OR_ID>`. **Required** if not configured as default or picked up via git config.|
+|`subscription`|Name or ID of subscription. Configure the default subscription using `az account set -s <NAME_OR_ID>`.|
 
 **Example**
 
@@ -786,10 +797,10 @@ az repos policy build update --id
 |`manual-queue-only`|Whether to allow only manual queue of builds. Accepted values: `false`, `true`.|
 |`org`|Azure DevOps organization URL. You can configure the default organization by using `az devops configure -d organization=<ORG_URL>`. **Required** if not configured as default or picked up via git config. Example: `https://dev.azure.com/MyOrganizationName/`.|
 |`path-filter`|Paths on which to apply the policy is applied. Supports absolute paths, wildcards, and multiple paths separated by `;`. Examples: `/WebApp/Models/Data.cs`, `/WebApp/*`, or `*.cs,` or `/WebApp/Models/Data.cs;ClientApp/Models/Data.cs`.|
-|`project`, `p`|Name or ID of the project. You can configure the default project using `az devops configure -d project=<NAME_OR_ID>`. **Required** if not configured as default or picked up via git config.|
+|`project`, `p`|Name or ID of the project. Configure the default project using `az devops configure -d project=<NAME_OR_ID>`. **Required** if not configured as default or picked up via git config.|
 |`queue-on-source-update-only`|Whether to queue builds only when source updates. Accepted values: `false`, `true`.|
 |`repository-id`|ID of the repository to filter results by exact match. For example, `--repository-ID e556f204-53c9-4153-9cd9-ef41a11e3345`.|
-|`subscription`|Name or ID of subscription. You can configure the default subscription using `az account set -s <NAME_OR_ID>`.|
+|`subscription`|Name or ID of subscription. Configure the default subscription using `az account set -s <NAME_OR_ID>`.|
 |`valid-duration`|Policy validity duration, in minutes.|
 
 ::: moniker-end 
@@ -802,13 +813,28 @@ az repos policy build update --id
 
 <a name="require-approval-from-external-services"></a>
 
-## Status checks
+<a id="status-checks"></a>
+
+## Require status checks
  
 External services can use the PR [Status API](/rest/api/azure/devops/git/pull%20request%20statuses) to post detailed status to your PRs. The branch policy for additional services enables those external services to participate in the PR workflow and establish policy requirements.
 
 :::image type="content" source="media/branch-policies/status-checks-2020.png" alt-text="Screenshot of Require external services to approve.":::
 
-For instructions on configuring this policy, see [Configure a branch policy for an external service](pr-status-policy.md).
+To configure a status check policy:
+
+1. Make sure the service can post pull request status to Azure Repos.
+1. In **Branch policies**, under **Status checks**, select **+**.
+1. In **Status to check**, select the posted check from the list. If the service hasn't posted status yet, type the `genre/name` value directly.
+1. Set **Policy requirement** to **Required** or **Optional**.
+1. Optionally configure **Authorized identity**, **Reset conditions**, **Policy applicability**, and **Path filter**.
+   - Use **Apply by default** if the policy should apply as soon as the pull request is created.
+   - Use **Conditional** if the policy should apply only after the first status is posted.
+1. Create or update a pull request that targets the branch, and confirm that the policy appears in the PR's **Policies** section.
+
+For built-in Azure DevOps Services checks and their `genre/name` identifiers, see [Available pull request status checks](available-pr-status-checks.md). For a full walkthrough of external service setup, see [Configure a branch policy for an external service](pr-status-policy.md).
+
+If a new integration doesn't appear in the dropdown yet, post status once from the service and then add the policy, or type the `genre/name` value directly.
 
 ::: moniker-end 
 
@@ -818,7 +844,7 @@ For instructions on configuring this policy, see [Configure a branch policy for 
 
 ::: moniker range="<=azure-devops"
 
-## Automatically include code reviewers
+## Automatically include reviewers
 
 You can automatically add reviewers to pull requests that change files in specific directories and files, or to all pull requests in a repo.
 
@@ -857,7 +883,7 @@ You can automatically add reviewers to pull requests that change files in specif
 
 ::: moniker range="azure-devops"
 
-You can use Azure DevOps CLI [az repos policy required-reviewer](/cli/azure/repos/policy/required-reviewer) to set and update required reviewer policy.
+Use Azure DevOps CLI [az repos policy required-reviewer](/cli/azure/repos/policy/required-reviewer) to set and update the required reviewer policy.
 
 ### Create a required reviewer policy
 
@@ -892,8 +918,8 @@ az repos policy required-reviewer create --blocking {false, true}
 |`detect`|Automatically detect organization. Accepted values: `false`, `true`.|
 |`org`|Azure DevOps organization URL. You can configure the default organization by using `az devops configure -d organization=<ORG_URL>`. **Required** if not configured as default or picked up via git config. Example: `https://dev.azure.com/MyOrganizationName/`.|
 |`path-filter`|Paths on which to apply the policy is applied. Supports absolute paths, wildcards, and multiple paths separated by `;`. Examples: `/WebApp/Models/Data.cs`, `/WebApp/*`, or `*.cs,` or `/WebApp/Models/Data.cs;ClientApp/Models/Data.cs`.|
-|`project`, `p`|Name or ID of the project. You can configure the default project using `az devops configure -d project=<NAME_OR_ID>`. **Required** if not configured as default or picked up via git config.|
-|`subscription`|Name or ID of subscription. You can configure the default subscription using `az account set -s <NAME_OR_ID>`.|
+|`project`, `p`|Name or ID of the project. Configure the default project using `az devops configure -d project=<NAME_OR_ID>`. **Required** if not configured as default or picked up via git config.|
+|`subscription`|Name or ID of subscription. Configure the default subscription using `az account set -s <NAME_OR_ID>`.|
 
 **Example**
 
@@ -941,10 +967,10 @@ az repos policy required-reviewer update --id
 |`message`|Activity feed message that appears in the pull request.|
 |`org`|Azure DevOps organization URL. You can configure the default organization by using `az devops configure -d organization=<ORG_URL>`. **Required** if not configured as default or picked up via git config. Example: `https://dev.azure.com/MyOrganizationName/`.|
 |`path-filter`|Paths on which to apply the policy is applied. Supports absolute paths, wildcards, and multiple paths separated by `;`. Examples: `/WebApp/Models/Data.cs`, `/WebApp/*`, or `*.cs,` or `/WebApp/Models/Data.cs;ClientApp/Models/Data.cs`.|
-|`project`, `p`|Name or ID of the project. You can configure the default project using `az devops configure -d project=<NAME_OR_ID>`. **Required** if not configured as default or picked up via git config.|
+|`project`, `p`|Name or ID of the project. Configure the default project using `az devops configure -d project=<NAME_OR_ID>`. **Required** if not configured as default or picked up via git config.|
 |`repository-id`|ID of the repository to filter results by exact match. For example, `--repository-ID e556f204-53c9-4153-9cd9-ef41a11e3345`.|
 |`required-reviewer-ids`|Reviewer email addresses separated by `;`. For example: `john@contoso.com;alice@contoso.com`.|
-|`subscription`|Name or ID of subscription. You can configure the default subscription using `az account set -s <NAME_OR_ID>`.|
+|`subscription`|Name or ID of subscription. Configure the default subscription using `az account set -s <NAME_OR_ID>`.|
 
 ::: moniker-end 
 
@@ -954,9 +980,12 @@ az repos policy required-reviewer update --id
 
  
 
-## Bypass branch policies
+<a id="bypass-branch-policies"></a>
+<a id="allow-policy-bypass-when-needed"></a>
 
-In some cases, you might need to bypass policy requirements. Bypass permissions let you push changes to a branch directly, or complete pull requests that don't satisfy branch policies. You can grant bypass permissions to a user or group. You can scope bypass permissions to an entire project, a repo, or a single branch.
+## Allow policy bypass when needed
+
+In some cases, you might need to bypass policy requirements. Bypass permissions let you push changes to a branch directly, or complete pull requests that don't satisfy branch policies. You can grant bypass permissions to a user or group, and scope those permissions to an entire project, a repo, or a single branch.
 
 ::: moniker range="<=azure-devops"
 Two permissions allow users to bypass branch policy in different ways:
@@ -976,31 +1005,33 @@ For more information about managing these permissions, see [Git permissions](../
 
 ::: moniker range="<=azure-devops"
 
-## Path filters
+<a id="path-filters"></a>
 
-Several branch policies offer path filters. If a path filter is set, the policy applies only to files that match the path filter. Leaving this field blank means that the policy applies to all files in the branch.
+## Use path filters with branch policies
 
-You can specify absolute paths (path must start either by `/` or a wildcard) and wildcards.
+Several branch policies support path filters. If you set a path filter, the policy applies only to files that match the filter. Leave this field blank to apply the policy to all files in the branch.
+
+You can specify absolute paths (the path must start with `/` or a wildcard) and wildcards.
 Examples:
 - `/WebApp/Models/Data.cs`
 - `/WebApp/*`
 - `*/Models/Data.cs`
 - `*.cs`
 
-You can specify multiple paths using `;` as a separator.
+You can specify multiple paths by using `;` as a separator.
 Example:
 - `/WebApp/Models/Data.cs;/ClientApp/Models/Data.cs`
 
-Paths prefixed with `!` are excluded if they would otherwise be included.
+If you prefix paths with `!`, you exclude them if they're otherwise included.
 Example:
 - `/WebApp/*;!/WebApp/Tests/*` includes all files in `/WebApp` except files in `/WebApp/Tests`
 - `!/WebApp/Tests/*` specifies no files, since nothing is included first
 
-The order of filters is significant. Filters are applied left-to-right.
+The order of filters is significant. Apply filters left-to-right.
 
 ::: moniker-end
  
-## Q & A
+## Troubleshoot branch policies
 
 - [Can I push changes directly to branches that have branch policies?](#can-i-push-changes-directly-to-branches-that-have-branch-policies)
 - [What is autocomplete?](#what-is-autocomplete)
@@ -1011,29 +1042,29 @@ The order of filters is significant. Filters are applied left-to-right.
 - [How can I configure multiple users as required reviewers, but require only one of them to approve?](#how-can-i-configure-multiple-users-as-required-reviewers-but-require-only-one-of-them-to-approve)
 - [I have bypass policy permissions. Why do I still see policy failures in the pull request status?](#i-have-bypass-policy-permissions-why-do-i-still-see-policy-failures-in-the-pull-request-status)
 - [Why can't I complete my own pull requests when "Allow requestors to approve their own changes" is set?](#why-cant-i-complete-my-own-pull-requests-when-allow-requestors-to-approve-their-own-changes-is-set)
-- [What happens when path in path filters doesn't start with `/` or with a wildcard?](#what-happens-when-path-in-path-filters-doesnt-start-with--or-with-a-wildcard)
+- [What happens when a path filter doesn't start with `/` or a wildcard?](#what-happens-when-a-path-filter-doesnt-start-with--or-a-wildcard)
 
-#### Can I push changes directly to branches that have branch policies?
+### Can I push changes directly to branches that have branch policies?
 
-You can't push changes directly to branches with *required* branch policies unless you have permissions to [bypass branch policies](#bypass-branch-policies). Changes to these branches can be made only through [pull requests](pull-requests.md). You can push changes directly to branches that have *optional* branch policies, if they have no required branch policies.
+You can't push changes directly to branches with *required* branch policies unless you have permissions to [bypass branch policies](#allow-policy-bypass-when-needed). You can only make changes to these branches through [pull requests](pull-requests.md). You can push changes directly to branches that have *optional* branch policies, if they have no required branch policies.
 
-#### What is autocomplete?
+### What is autocomplete?
 
-Pull requests into branches with branch policies configured have the **Set auto-complete** button. Select this option to [automatically complete](complete-pull-requests.md#complete-automatically) the pull request once it fulfills all policies. Autocomplete is useful when you don't expect any problems with your changes.
+Branches with branch policies configured for pull requests have the **Set auto-complete** button. Select this option to [set a pull request to autocomplete](complete-pull-requests.md#set-a-pull-request-to-autocomplete) once it fulfills all policies. Autocomplete is useful when you don't expect any problems with your changes.
 
 <a name="how_works"></a>
 
-#### When are branch policy conditions checked?
+### When are branch policy conditions checked?
 
-Branch policies reevaluate on the server when pull request owners push changes and when reviewers vote. If a policy triggers a build, the build status sets to waiting until the build completes.
+The server reevaluates branch policies when pull request owners push changes and when reviewers vote. If a policy triggers a build, the build status sets to waiting until the build completes.
 
-#### Can I use XAML build definitions in branch policies?
+### Can I use XAML build definitions in branch policies?
 
 No, you can't use XAML build definitions in branch policies.
 
-#### What wildcard characters can I use for required code reviewers?
+### What wildcard characters can I use for required code reviewers?
 
-Single asterisks `*` match any number of characters, including both forward-slashes `/` and back-slashes `\`. Question marks `?` match any single character.
+Single asterisks `*` match any number of characters, including both forward slashes `/` and backslashes `\`. Question marks `?` match any single character.
 
 Examples:
 
@@ -1042,19 +1073,21 @@ Examples:
 - `/.gitattributes` matches the.gitattributes* file in the root of the repo.
 - `*/.gitignore` matches any *.gitignore* file in the repo.
 
-#### Are the required code reviewer paths case-sensitive?
+### Are the required code reviewer paths case-sensitive?
 
 No, branch policies aren't case-sensitive.
 
-#### How can I configure multiple users as required reviewers, but require only one of them to approve?
+### How can I configure multiple users as required reviewers, but require only one of them to approve?
 
 You can [add the users to a group](../../organizations/security/add-users-team-project.md), and then add the group as a reviewer. Any member of the group can then approve to meet the policy requirement.
 
-#### I have bypass policy permissions. Why do I still see policy failures in the pull request status?
+### I have bypass policy permissions. Why do I still see policy failures in the pull request status?
 
-Configured policies are always evaluated for pull request changes. For users that have bypass policy permissions, the reported policy status is advisory only. If the user with bypass permissions approves, the failure status doesn't block pull request completion.
+The system always evaluates configured policies for pull request changes. For users who have bypass policy permissions, the reported policy status is advisory only. If the user with bypass permissions approves, the failure status doesn't block pull request completion.
 
-#### Why can't I complete my own pull requests when "Allow requestors to approve their own changes is set"?
+### Why can't I complete my own pull requests when I set "Allow requestors to approve their own changes"?
+
+<a id="why-cant-i-complete-my-own-pull-requests-when-allow-requestors-to-approve-their-own-changes-is-set"></a>
 
 Both the **Require a minimum number of reviewers** policy and the **Automatically included reviewers** policy have options to **Allow requestors to approve their own changes**. In each policy, the setting applies only to that policy. The setting doesn't affect the other policy.
 
@@ -1067,17 +1100,38 @@ For example, your pull request has the following policies set:
 
 In this case, your approval satisfies **Automatically included reviewers**, but not **Require a minimum number of reviewers**, so you can't complete the pull request.
 
-There might also be other policies, such as **Prohibit the most recent pusher from approving their own changes**, that prevent you from approving your own changes even if **Allow requestors to approve their own changes** is set.
+Other policies might prevent you from approving your own changes, even if **Allow requestors to approve their own changes** is set. For example, **Prohibit the most recent pusher from approving their own changes**.
 
-#### What happens when path in path filters doesn't start with `/` or with a wildcard?
+### What happens when a path filter doesn't start with `/` or a wildcard?
 
-The path in path filters that doesn't start with `/` or with a wildcard has no effect, and the path filter evaluates as if that path wasn't specified. Such a path can't match the `/` the absolute file path starts with.
+A path in path filters that doesn't start with `/` or with a wildcard has no effect. The path filter evaluates as if that path wasn't specified. Such a path can't match the `/` the absolute file path starts with.
 
-## Related articles
+::: moniker range="azure-devops"
+<a id="use-ai-assistance"></a>
+
+## Use AI to configure and manage branch policies
+
+If you configure the [Azure DevOps MCP Server](../../mcp-server/mcp-server-overview.md), you can use natural language to gather repository, branch, pull request, and build context before you update branch policies in Azure DevOps Services.
+
+The Azure DevOps MCP Server requires Azure DevOps Services, agent mode in your AI assistant, and [Node.js 20.0+](https://nodejs.org/). Current MCP documentation doesn't describe direct branch-policy read or write actions, so use the Azure DevOps web portal or Azure DevOps CLI to create and update policies.
+
+| Task | Example prompt |
+|------|----------------|
+| List branches in a repository | `List the branches in repo <Contoso.Web> in project <Contoso>` |
+| Review pull requests before tightening policy | `What pull requests require my review in project <Contoso>?` |
+| Inspect a pull request and linked work items | `Get details for pull request <67> and its linked work items in project <Contoso>` |
+| Check build status before making build validation required | `Get the latest build status for pipeline <Contoso-CI> in project <Contoso>` |
+
+> [!NOTE]
+> If you're using Visual Studio Code, [agent mode](/visualstudio/ide/copilot-chat-context#agent-mode) is especially helpful for gathering the project context you need before you update branch policies.
+
+::: moniker-end
+
+## Related content
 
 - [About branches and branch policies](branch-policies-overview.md)
+- [Available pull request status checks](available-pr-status-checks.md)
+- [Configure a branch policy for an external service](pr-status-policy.md)
+- [Set branch permissions](branch-permissions.md)
+- [Secure repositories and pull requests](secure-repositories-pull-requests.md)
 - [Configure Git repository policies using a configuration file](../../cli/policy-configuration-file.md)
-- [Default Git permissions (Security)](../../organizations/security/default-git-permissions.md?toc=/azure/devops/repos/toc.json&bc=/azure/devops/repos/breadcrumb/toc.json)
-- [Set permissions (Security)](set-git-repository-permissions.md?toc=/azure/devops/repos/toc.json&bc=/azure/devops/repos/breadcrumb/toc.json)
-- [Cross-service integration overview](../../cross-service/cross-service-overview.md?toc=/azure/devops/repos/toc.json&bc=/azure/devops/repos/breadcrumb/toc.json)
-- [Azure DevOps REST API: Policy](/rest/api/azure/devops/policy)

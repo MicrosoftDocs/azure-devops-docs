@@ -10,7 +10,7 @@ ai-usage: ai-assisted
 ms.author: chcomley
 author: chcomley
 monikerRange: '<= azure-devops'
-ms.date: 04/20/2026
+ms.date: 08/03/2026
 ---
 
 # Resolve migration errors
@@ -435,15 +435,11 @@ Remove the line break and try again.
 
 #### VS403271   
 
-Your migration files and DACPAC aren't located in the **required** Azure region to complete the migration to your target Azure DevOps Services region. 
+This error indicated that your DACPAC and your target Azure DevOps Services organization were in different Azure regions.
 
 `VS403271: It appears that your DACPAC was uploaded to East US. It's required that customers targeting Central US for migration put their DACPACs in Central US. Move your DACPAC to Central US and requeue the migration.` 
 
-[Create a new Microsoft Azure storage account](/azure/storage/common/storage-create-storage-account) in the required region and copy your files. The following example shows how to copy your data using **AzCopy**.
-
-```cmdline
-AzCopy.exe /Source:https://accountSCUS.blob.core.windows.net/mycontainer /SourceKey:"primary access key" /Dest:https://accountCUS.blob.core.windows.net/mycontainer /DestKey:"primary access key" /S
-```
+The migration no longer requires the DACPAC and the target organization to be in the same Azure region, so this error is no longer expected. Same-region placement is still recommended for the best migration performance.
 
 #### VS403316
 

@@ -3,7 +3,7 @@ title: Manage and resolve issues or impediments in Azure Boards
 titleSuffix: Azure Boards
 description: Manage issues and impediments in Azure Boards to improve team productivity. Discover step-by-step guidance and start resolving blockers today.
 ms.custom: boards-backlogs, copilot-scenario-highlight
-ms.service: azure-devops-boards
+ms.service: azure-boards
 ms.author: chcomley
 ms.reviewer: chcomley
 author: chcomley

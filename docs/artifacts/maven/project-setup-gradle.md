@@ -1,7 +1,7 @@
 ---
 title: Connect to an Azure Artifacts feed - Gradle
 description: Learn how to set up your project and connect to an Azure Artifacts feed with Gradle.
-ms.service: azure-devops-artifacts
+ms.service: azure-artifacts
 ms.topic: how-to
 ms.author: rabououn
 author: ramiMSFT

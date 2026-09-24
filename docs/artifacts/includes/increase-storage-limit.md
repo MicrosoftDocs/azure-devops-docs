@@ -1,6 +1,6 @@
 ---
 ms.topic: include
-ms.service: azure-devops-artifacts
+ms.service: azure-artifacts
 ms.manager: wiwagn
 ms.author: rabououn
 author: ramiMSFT
@@ -15,4 +15,4 @@ Azure Artifacts provides 2 GiB of free storage for each organization. Once your 
 
 1. Select **Save** when you're done.
 
-   :::image type="content" source="../media/adjust-artifacts-usage-limit.png" alt-text="A screenshot displaying how to increase Artifacts storage limit.":::
+   :::image type="content" source="../media/adjust-artifacts-usage-limit.png" alt-text="Screenshot showing how to increase Artifacts storage limit.":::

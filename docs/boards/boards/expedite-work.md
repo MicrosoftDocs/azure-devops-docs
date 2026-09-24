@@ -4,7 +4,7 @@ titleSuffix: Azure Boards
 ms.global_help.title: Add swimlanes
 description: Learn how to use swimlanes to differentiate different types of work you track on the board in Azure Boards.
 ms.custom: boards-kanban, engagement-fy23, copilot-scenario-highlight
-ms.service: azure-devops-boards
+ms.service: azure-boards
 ms.author: chcomley
 author: chcomley
 ai-usage: ai-assisted
@@ -77,8 +77,6 @@ Identify the swimlanes that support your tracking needs and add them to your boa
 1. [Open your board](kanban-quickstart.md). If you're not a team admin, [get added as one](../../organizations/settings/add-team-administrator.md). Only team and project administrators can customize the board.
 2. Choose :::image type="icon" source="../../media/icons/team-settings-gear-icon.png" border="false"::: **Configure board settings**.
 3. Choose **Swimlanes**, choose **Add swimlane**, and enter the swimlane name (for example, *Expedite*). Use the more actions icon :::image type="icon" source="../../media/icons/more-actions.png" border="false"::: to insert a lane above or below another lane.
-
-   [!INCLUDE [note-new-boards-hub-default-images](../includes/note-new-boards-hub-default-images.md)]
 
    :::image type="content" source="media/expedite/add-swimlane-new-board-hubs-enabled.png" alt-text="Screenshot showing the Add swimlane dialog in board settings.":::
 

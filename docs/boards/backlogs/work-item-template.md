@@ -2,14 +2,14 @@
 title: Update Work Items with Templates in Azure Boards
 titleSuffix: Azure Boards
 description: Add and manage Azure DevOps work item templates, update work items, and prepopulate work item fields in the web portal and Visual Studio.
-ms.service: azure-devops-boards
+ms.service: azure-boards
 ms.author: chcomley
 author: chcomley
 ms.topic: how-to
-ms.custom: work-items
+ms.custom: work-items, copilot-scenario-highlight
 monikerRange: '<= azure-devops'
 ai-usage: ai-assisted
-ms.date: 06/17/2026
+ms.date: 07/16/2026
 #customer intent: As a project member, I want to use Azure DevOps work item templates, so I can update work items in Azure Boards.
 ---
 
@@ -20,57 +20,59 @@ ms.date: 06/17/2026
 
 <!--- Supports FWLINK https://go.microsoft.com/fwlink/?LinkId=824070 -->
 
-Use work item templates to quickly create work items with predefined field values and apply consistent updates across multiple items. This article explains how to add and manage templates in the web portal and, for legacy environments, in Visual Studio 2015 or earlier. For examples, see [Sample work item templates](../work-items/work-item-template-examples.md).
+Use work item templates to create work items with predefined values and apply consistent updates across similar items. This article covers template workflows in the web portal and, for legacy environments, in Visual Studio 2015 or earlier. For examples, see [Sample work item templates](../work-items/work-item-template-examples.md).
 
-Use the web portal for the current Azure DevOps experience. Use Visual Studio 2015 with Power Tools only when your environment still depends on Team Explorer-based template management.
+For most teams, use the web portal. Use Visual Studio 2015 with Power Tools only when you still rely on Team Explorer-based template management.
 
-Work item templates are different from process templates. For more information, see [About processes and process templates](../work-items/guidance/choose-process.md) and the default process template articles for [Basic](../get-started/plan-track-work.md?tabs=basic-process&preserve-view=true), [Agile](../work-items/guidance/agile-process.md), [Scrum](../work-items/guidance/scrum-process.md), and [Capability Maturity Model Integration (CMMI)](../work-items/guidance/cmmi-process.md).  
+Work item templates are different from process templates. For background, see [About processes and process templates](../work-items/guidance/choose-process.md) and the default process guidance for [Basic](../get-started/plan-track-work.md?tabs=basic-process&preserve-view=true), [Agile](../work-items/guidance/agile-process.md), [Scrum](../work-items/guidance/scrum-process.md), and [Capability Maturity Model Integration (CMMI)](../work-items/guidance/cmmi-process.md).  
+
+[!INCLUDE [ai-assistance-mcp-server-tip](../../includes/ai-assistance-mcp-server-tip.md)]
 
 ## Choose your workflow
 
-Use this table to choose the right workflow.
+Use this table to choose the best workflow for your scenario.
 
 | If you want to... | Use... | Why |
 | --- | --- | --- |
-| Capture, manage, and apply templates in the current experience | **Web portal** (primary) | Team-scoped templates are managed in Azure DevOps.
-| Reuse centrally managed defaults for a team and work item type | **Saved templates** | Templates are discoverable and reusable by team members.
-| Share a quick link that opens a new work item with predefined values | **Template URLs** | Best for lightweight sharing in dashboards, wikis, or messages.
-| Continue a Team Explorer-based legacy workflow | **Visual Studio 2015 with Power Tools** (legacy) | Applies only when your environment still depends on legacy tooling.
+| Create, manage, and apply templates in current Azure DevOps | **Web portal** (primary) | Supports team-scoped templates in the standard web experience.
+| Reuse shared defaults by team and work item type | **Saved templates** | Helps teams apply consistent fields and values.
+| Share a direct link that opens a prefilled work item | **Template URLs** | Best for lightweight sharing in dashboards, wikis, and chat.
+| Continue Team Explorer-based template workflows | **Visual Studio 2015 with Power Tools** (legacy) | Use only when your environment still depends on legacy tooling.
 
 ## Prerequisites
 
-| Prerequisite    | Description |
-| ----------------|-------------|
-| Web portal workflow (primary) | - Access to an Azure DevOps organization and project. <br>- To manage templates, be a member of the team that owns the templates. <br>- To use templates, have **Contributor** access to the project. <br>- Use a supported browser and open Azure DevOps in the web portal. |
-| Visual Studio 2015 workflow (legacy) | - Use this workflow only when your environment still depends on Team Explorer template management. <br>- Install [Microsoft Visual Studio Team Foundation Server 2015 Power Tools](https://marketplace.visualstudio.com/items?itemName=TFSPowerToolsTeam.MicrosoftVisualStudioTeamFoundationServer2015Power). <br>- Templates captured in this workflow are user-scoped and appear only in Team Explorer. |
+| Workflow | Requirements |
+|---|---|
+| **Web portal** (primary) | - Access to an Azure DevOps organization and project.<br>- To manage templates, be a member of the team that owns the templates.<br>- To apply templates, have **Contributor** access to the project.<br>- Use a supported browser and open Azure DevOps in the web portal. |
+| **Visual Studio 2015 with Power Tools** (legacy) | - Use this workflow only if your environment still depends on Team Explorer template management.<br>- Install [Microsoft Visual Studio Team Foundation Server 2015 Power Tools](https://marketplace.visualstudio.com/items?itemName=TFSPowerToolsTeam.MicrosoftVisualStudioTeamFoundationServer2015Power).<br>- Templates created in this workflow are user-scoped and appear only in Team Explorer. |
 
 ### Restrictions for using templates
 
-Templates defined in the web portal are separate from templates defined in Visual Studio.
+Web portal templates and Visual Studio templates are separate stores. A template created in one client doesn't appear in the other client.
 
-| Template type | Scope | Where you can manage and apply it |
+| Template type | Scope | Where you can manage it | Where you can apply it |
 | --- | --- | --- |
-| Web portal template | Team-scoped | Web portal only |
-| Visual Studio template | User-scoped | Visual Studio only |
+| Web portal template | Team-scoped | Web portal | Web portal |
+| Visual Studio template | User-scoped | Visual Studio | Visual Studio |
 
-You can use the URL from either template type to add work items through the web portal.
+You can still use the URL from either template type to create work items in the web portal.
 
 ## Supported template tasks
 
-The availability of template tasks depends on your client and platform configuration. Use the web portal for the primary Azure DevOps workflow. Use Visual Studio 2015 with Power Tools only for legacy scenarios.
+Task availability depends on the client you use. Use the web portal for primary Azure DevOps workflows, and use Visual Studio 2015 with Power Tools only for legacy scenarios.
 
-The following table summarizes task availability in the web portal and in the legacy Visual Studio workflow.
+The following table shows support by client.
 
 | Template task | Web portal | Visual Studio |
 |---------------|:----------:|:-------------:|
-| [Capture a work item as a template](#capture-a-work-item-as-a-template) | ✔️ | ✔️ |
-| [Manage work item templates](#manage-work-item-templates) <br>(Define, edit, delete, copy link, create copy, and rename) | ✔️ | ✔️ |
-| [Copy the link (URL) of a template](#edit-delete-copy-link-or-create-copy) | ✔️ | ✔️ |
-| [Add a work item by using a template](#add-a-work-item-by-using-a-template) | ✔️ | ✔️ |
-| [Define a work item template](#create-a-work-item-template) | ✔️ | ✔️ |
-| [Apply a template to one or more work items](#apply-a-template-to-new-or-existing-work-items) | ✔️ | ✔️ |
-| [Add or remove tags from templates](#add-or-remove-tags-from-templates) |  | ✔️ |
-| [Define a template with a hyperlink](#create-a-work-item-from-a-template-url) | ✔️ |  |
+| [Capture a work item as a template](#capture-a-work-item-as-a-template) | ✅ Supported | ✅ Supported |
+| [Manage work item templates](#manage-work-item-templates) <br>(Define, edit, delete, copy link, create copy, and rename) | ✅ Supported | ✅ Supported |
+| [Copy the link (URL) of a template](#edit-delete-copy-link-or-create-copy) | ✅ Supported | ✅ Supported |
+| [Add a work item by using a template](#add-a-work-item-by-using-a-template) | ✅ Supported | ✅ Supported |
+| [Define a work item template](#create-a-work-item-template) | ✅ Supported | ✅ Supported |
+| [Apply a template to one or more work items](#apply-a-template-to-new-or-existing-work-items) | ✅ Supported | ✅ Supported |
+| [Add or remove tags from templates](#add-or-remove-tags-from-templates) | ❌ Not supported | ✅ Supported |
+| [Define a template with a hyperlink](#create-a-work-item-from-a-template-url) | ✅ Supported | ❌ Not supported |
 
 ## Capture a work item as a template
 
@@ -424,6 +426,32 @@ For setup steps, see [Add Markdown to a dashboard, Markdown widgets](../../repor
 - **Template URL opens without expected values**: Confirm that each field reference name is valid for the target work item type and that values are URL-encoded (for example, spaces as `+` or `%20`).
 - **Template URL fails to load**: Confirm that the URL uses the correct organization, project, and work item type, and that you're signed in to an account with project access.
 - **Some fields from a template don't populate**: Confirm that the fields still exist on the work item type and aren't restricted by process customization rules.
+
+<a id="use-ai-assistance"></a>
+
+## Use AI to create and apply work item templates
+
+If you configure the [Azure DevOps MCP Server](../../mcp-server/mcp-server-overview.md), you can describe template-related tasks in natural language instead of doing each step manually in the web portal or Team Explorer.
+
+Treat the following prompts as scenario examples. Available operations can vary by MCP Server version, enabled tools, and your permissions.
+
+Before you run a prompt, replace placeholders with values from your environment: `<ProjectName>`, `<TeamName>`, `<TemplateName>`, `<WorkItemId>`, and `<IterationPath>`.
+
+| Task | Example prompt |
+|------|----------------|
+| Create a template from an item | `Capture work item <WorkItemId> in project <ProjectName> as a template named "Security bug" for team <TeamName>` |
+| Create a new template | `Create a Bug template named "Regression" for team <TeamName> in project <ProjectName> with Priority 2 and tag "regression"` |
+| Apply a template to one item | `Apply the "<TemplateName>" template to work item <WorkItemId> in project <ProjectName>` |
+| Bulk apply a template | `Apply the "<TemplateName>" template to all active Bugs tagged "regression" in project <ProjectName>` |
+| Create work items from a template | `Create 5 Bugs in project <ProjectName> for team <TeamName> using the "<TemplateName>" template with the titles I provide` |
+| Generate a template URL | `Generate a template URL that creates a Task in project <ProjectName> with Activity=Development and Iteration=<IterationPath>` |
+| Update a template | `Update the "<TemplateName>" template for team <TeamName> in project <ProjectName> to set Severity to 2 - High` |
+| Copy a template | `Create a copy of the "<TemplateName>" template named "Regression - Mobile" for team <TeamName> in project <ProjectName>` |
+| Find teams missing a template | `List teams in project <ProjectName> that don't have a Bug template defined` |
+| Audit template usage | `Show which work items in iteration <IterationPath> were created from the "<TemplateName>" template in project <ProjectName>` |
+
+> [!NOTE]
+> If you're using Visual Studio Code, [agent mode](/visualstudio/ide/copilot-chat-context#agent-mode) is especially helpful for complex template operations.
 
 ## Related content
 

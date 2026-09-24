@@ -1,5 +1,5 @@
 ---
-ms.service: azure-devops-boards
+ms.service: azure-boards
 ms.topic: include
 ms.manager: wiwagn
 ms.author: chcomley

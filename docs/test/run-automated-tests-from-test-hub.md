@@ -1,13 +1,13 @@
 ---
 title: Run automated tests from test plans
-description: Run automated tests on-demand from test plans in Azure Test Plans with a build or release pipeline.
+description: Learn how to configure a release pipeline, run associated automated tests on demand, and review test run results in Azure Test Plans.
 ms.service: azure-devops-test-plans
 ms.custom: UpdateFrequency3, copilot-scenario-highlight
 ai-usage: ai-assisted
 ms.topic: how-to 
 ms.author: pliaros
 author: wisdeom
-ms.date: 03/17/2026
+ms.date: 08/14/2026
 ms.update-cycle: 1095-days
 ---
 
@@ -89,31 +89,57 @@ Run automated tests on demand directly from **Azure Test Plans** without setting
 
 1. Select the test cases to run, and then select **Run for web application**.
 
-   :::image type="content" border="true" source="media/run-automated-tests-from-test-hub/executing-automated-tests.png" alt-text="Screenshot shows selecting Run test.":::
+   :::image type="content" border="true" source="media/run-automated-tests-from-test-hub/executing-automated-tests.png" alt-text="Screenshot of selected automated test points with Run for web application highlighted." lightbox="media/run-automated-tests-from-test-hub/executing-automated-tests.png":::
 
    The system validates your selection (automated tests only, it skips manual tests), confirms the Visual Studio Test task is configured correctly, verifies your release permissions, creates a test run, and triggers a release to the selected stage.
 
    :::image type="content" border="true" source="media/run-automated-tests-from-test-hub/test-results.png" alt-text="Screenshot shows starting the test execution.":::
 
-1. Select **View test run** to monitor progress. Failed test results include the error message, stack trace, console logs, and attachments.
- 
-1. After execution completes, the **Run summary** page shows an overview of the results. Use the **Release** link to open the release that ran the tests and view the release logs.
+::: moniker range="azure-devops"
 
-   :::image type="content" border="true" source="media/run-automated-tests-from-test-hub/run-summary.png" alt-text="Screenshot shows the test run summary.":::
+1. Select **View test run** to monitor progress in the Test Run Hub. Failed test results include the error message, stack trace, console logs, and attachments.
+ 
+1. After execution completes, the run details page shows a summary of the results. Use the **Release** link to open the release that ran the tests and view its logs.
+
+   :::image type="content" border="true" source="media/test-runs/run-main-view.png" alt-text="Screenshot of the current Test Run Hub summary with test case results." lightbox="media/test-runs/run-main-view.png":::
 
    > [!NOTE]
    > Manually attaching files isn't supported for automated test results.
 
-1. On the **Test results** page, select any test to see detailed debugging information.
+1. In the test case results list, select any test to view its detailed debugging information.
 
-   :::image type="content" border="true" source="media/run-automated-tests-from-test-hub/test-run-results.png" alt-text="Screenshot shows viewing the test results details.":::
+   :::image type="content" border="true" source="media/test-runs/detailed-test-case-results.png" alt-text="Screenshot of detailed test results with summary and analysis information.":::
 
-1. To see all runs, go to the **Runs** page and select any run to open its detailed view.
+1. To view all runs, select **Test Plans** > **Runs**, and then select a run to open its details.
 
-   :::image type="content" border="true" source="media/run-automated-tests-from-test-hub/test-results-overview.png" alt-text="Screenshot shows the Runs page with an overview of all test runs.":::
+   :::image type="content" border="true" source="media/test-runs/test-runs-landing-page.png" alt-text="Screenshot of the Test Run Hub listing manual and automated test runs.":::
 
-   > [!TIP]
-   > If your tests don't run, see [What are the typical errors when automated tests don't run?](reference-qa.yml#what-are-the-typical-errors-when-automated-tests-don-t-run)
+For more information about filtering runs, reviewing analytics, and analyzing individual results, see [Manage test runs in Azure DevOps Test Plans](test-runs.md).
+
+::: moniker-end
+
+::: moniker range="< azure-devops"
+
+1. Select **View test run** to monitor progress. Failed test results include the error message, stack trace, console logs, and attachments.
+1. After execution completes, the **Run summary** page shows an overview of the results. Use the **Release** link to open the release that ran the tests and view its logs.
+
+   :::image type="content" border="true" source="media/run-automated-tests-from-test-hub/run-summary.png" alt-text="Screenshot of an Azure DevOps Server test run summary with outcome details." lightbox="media/run-automated-tests-from-test-hub/run-summary.png":::
+
+   > [!NOTE]
+   > Manually attaching files isn't supported for automated test results.
+
+1. On the **Test results** page, select a test to view its detailed debugging information.
+
+   :::image type="content" border="true" source="media/run-automated-tests-from-test-hub/test-run-results.png" alt-text="Screenshot of detailed automated test results in Azure DevOps Server.":::
+
+1. To view all runs, open the **Runs** page, and then select a run to open its details.
+
+   :::image type="content" border="true" source="media/run-automated-tests-from-test-hub/test-results-overview.png" alt-text="Screenshot of the Azure DevOps Server Runs page with test run results." lightbox="media/run-automated-tests-from-test-hub/test-results-overview.png":::
+
+::: moniker-end
+
+> [!TIP]
+> If your tests don't run, see [What are the typical errors when automated tests don't run?](reference-qa.yml#what-are-the-typical-errors-when-automated-tests-don-t-run)
 
 ::: moniker range="azure-devops"
 

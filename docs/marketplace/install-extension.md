@@ -346,7 +346,6 @@ Publisher Id    Extension Id             Name                     Version       
 ms              vss-analytics            Analytics                18.160.0.2130149925  2019-11-22       multiVersion, truste... trusted
 ms              vss-code-search          Code Search              18.160.0.1640944814  2019-11-22       multiVersion, truste... trusted
 ms              vss-plans                Delivery Plans           18.160.0.1266795967  2019-11-25       multiVersion, truste... trusted
-ms-eswm         dependencytracker        Dependency Tracker       2.1910.12801         2019-10-28       none
 ms-devlabs      workitem-feature-tim... Feature timeline and...  0.0.357              2019-10-14       none
 AgileParts      gantt                    GANTT chart              1.0.79               2019-10-25       none
 gordon-bee...   github                   GitHub Widget            0.10.0               2016-03-16       none

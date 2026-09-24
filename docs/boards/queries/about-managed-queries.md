@@ -3,7 +3,7 @@ title: Use managed queries to list work items
 titleSuffix: Azure Boards
 description: Learn how to track work by creating queries to list work items in Azure Boards and Azure DevOps.
 ms.custom: boards-queries, cross-project, engagement-fy23
-ms.service: azure-devops-boards
+ms.service: azure-boards
 ms.topic: overview
 ms.author: chcomley
 author: chcomley

@@ -3,7 +3,7 @@ title: Agent software version 5
 description: Learn how to run pipelines using the version 5 agent software.
 monikerRange: 'azure-devops'
 ms.topic: concept-article
-ms.date: 06/02/2026
+ms.date: 09/11/2026
 ---
 
 # Agent software version 5
@@ -11,11 +11,14 @@ ms.date: 06/02/2026
 The pipelines team is upgrading the agent software from version 4.x to version 5.x (using .NET 10). We highly recommend upgrading your agents to version 5.x.
 
 > [!NOTE]
-> The Windows ARM64 agent is now available in **public preview** for Windows 11. For more information, see the [supported operating systems](#upgrade-to-5x-agent-on-supported-operating-systems) section.
+> The Windows ARM64 agent is generally available for Windows 11. For more information, see the [supported operating systems](#upgrade-to-5x-agent-on-supported-operating-systems) section.
 
 ## Upgrade to 5.x agent on supported operating systems
 
-If you're running self-hosted agents on newer operating systems [supported by .NET 10](https://github.com/dotnet/core/blob/main/release-notes/10.0/supported-os.md), the upgrade to the new agent version is automatic if any feature or tasks require a newer version of the agent software.
+Before upgrading a self-hosted agent to version 5.x, verify that its operating system is [supported by .NET 10](https://github.com/dotnet/core/blob/main/release-notes/10.0/supported-os.md). When a feature or task requires a newer agent version, the agent can upgrade automatically. The automatic upgrade doesn't check whether the operating system supports .NET 10.
+
+> [!IMPORTANT]
+> If an agent automatically upgrades on an operating system that doesn't support .NET 10, the upgrade can fail or the agent might not start. Verify operating system compatibility before an automatic or manual upgrade.
 
 To manually initiate the update, see [Update self-hosted agents](./agents.md#to-update-self-hosted-agents).
 
@@ -51,10 +54,8 @@ The following operating systems support self-hosted 4.x agents, but aren't suppo
     * macOS 13.0 "Ventura"
 * **Windows**
   * Client OS
-    * Windows 10
-      * 1607
     * Windows 11
-      * 23H2, 22H2, 21H2
+      * 22H2, 21H2
 
 > [!NOTE]
 > The previous list is a partial list of commonly used operating systems that don't support .NET 10 and the 5.x agent. See [.NET 10 - Out of support OS versions](https://github.com/dotnet/core/blob/main/release-notes/10.0/supported-os.md#out-of-support-os-versions) for the full list of operating systems that are out of support for .NET 10.
@@ -116,4 +117,4 @@ Agent version 5.x is releasing in 2026.
 
 ### What happens when a task requires an agent to be updated to agent version 5?
 
-Normally, when a task requires a newer version of the agent, the agent automatically updates itself. For now, while agent version 4 continues to be updated, auto update from agent version 4 to agent version 5 is disabled. Once it's enabled, for operating systems that aren't compatible with agent version 5, agent version 4.x doesn't attempt to update itself to the v5 agent. Instead, a warning is shown informing users they need to upgrade the operating system first: `The operating system the agent is running on is <OS>, which will not be supported by the .NET 10 based v5 agent. Please upgrade the operating system of this host to ensure compatibility with the v5 agent. See https://aka.ms/azdo-pipeline-agent-version`
+When a task requires a newer agent version, the agent normally updates itself automatically. The automatic upgrade doesn't check whether the operating system supports .NET 10 before it upgrades the agent to version 5.x. On an unsupported operating system, the upgrade can fail or the agent might not start afterward. Before an agent upgrade is required, compare the agent's operating system with the [operating systems supported by the 5.x agent](#upgrade-to-5x-agent-on-supported-operating-systems) and upgrade the operating system if necessary.

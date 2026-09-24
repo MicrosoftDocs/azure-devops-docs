@@ -151,5 +151,5 @@ To collect advanced diagnostic data such as code coverage, IntelliTrace, and Tes
 - [Exploratory test and submit feedback directly from your browser](perform-exploratory-tests.md)
 - [Overview of manual and exploratory testing](index.yml)
 - [Testing different configurations](test-different-configurations.md)
-- [Manage test results](how-long-to-keep-test-results.md)
+- [Set test retention policies](../pipelines/policies/retention.md)
 - [FAQs for manual testing](reference-qa.yml#test-configurations)

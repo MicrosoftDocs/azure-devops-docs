@@ -1,5 +1,5 @@
 ---
-ms.service: azure-devops-boards
+ms.service: azure-boards
 ms.author: chcomley
 author: chcomley
 ms.topic: include
@@ -11,17 +11,13 @@ ai-usage: ai-assisted
 
 ::: moniker range="azure-devops"
 
-For most work item types, you can add fields, change the workflow, add custom rules, and add custom pages to the work item form.
-You can also add custom work item types.
-For more information, see [Customize an inheritance process](../../organizations/settings/work/inheritance-process-model.md).
+For most work item types, you can add fields, update the workflow, define custom rules, add custom pages, and create custom work item types. For more information, see [Customize an inheritance process](../../organizations/settings/work/inheritance-process-model.md).
 
 ::: moniker-end
 
 ::: moniker range="<azure-devops"
 
-For most work item types, you can add fields, change the workflow, add custom rules, and add custom pages to the work item form.
-You can also add custom work item types.
-For more information, see [Customize an inheritance process](../../organizations/settings/work/inheritance-process-model.md) or [Customize the On-premises XML process model](../../reference/on-premises-xml-process-model.md), depending on the process model your project uses.
+For most work item types, you can add fields, update the workflow, define custom rules, add custom pages, and create custom work item types. For more information, see [Customize an inheritance process](../../organizations/settings/work/inheritance-process-model.md) or [Customize the On-premises XML process model](../../reference/on-premises-xml-process-model.md), depending on your process model.
 
 ::: moniker-end
 

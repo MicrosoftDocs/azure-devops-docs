@@ -3,7 +3,7 @@ title: Copy or clone work items
 titleSuffix: Azure Boards
 description: Learn how to copy or clone single or multiple Azure Boards work items, and add lists of work items to emails or other apps.
 ms.custom: cross-project, copilot-scenario-highlight
-ms.service: azure-devops-boards
+ms.service: azure-boards
 ms.author: chcomley
 author: chcomley
 ms.topic: how-to

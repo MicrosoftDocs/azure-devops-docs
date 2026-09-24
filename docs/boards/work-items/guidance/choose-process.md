@@ -3,7 +3,7 @@ title: Default processes and process templates
 titleSuffix: Azure Boards
 description: Learn about choosing a process or process template based on the process model you use in your Azure Boards project.
 ms.custom: work-items
-ms.service: azure-devops-boards
+ms.service: azure-boards
 ms.topic: overview
 ms.author: chcomley
 author: chcomley
@@ -33,6 +33,21 @@ The default processes mainly differ in the work item types they provide for plan
 - Choose **Agile** if your team uses Agile methods and you want to track User Stories with separate development and test activities.
 - Choose **Scrum** if your team follows Scrum and tracks Product Backlog Items and Bugs.
 - Choose **CMMI** if your team needs formal change management, an auditable record of decisions, and tracking for Requirements, Change Requests, Risks, and Reviews.
+
+### Choose the right process
+
+If you're not sure which process fits your team, use the following scenarios as a starting point:
+
+## Determine your project's process
+
+To find which process your project uses:
+
+1. Sign in to your Azure DevOps project.
+1. Select **Project settings** > **Process**.
+
+  The process name appears at the top of the page (for example, **Agile**, **Scrum**, **Basic**, or **CMMI**).
+
+For more information, see [Manage projects](../../../organizations/projects/about-projects.md).
 
 ### Choose the right process
 
@@ -128,7 +143,7 @@ Each image shows only the default reason associated with the transition.
    :::column span="1":::
 
    #### Task
-   :::image type="content" source="media/ALM_PT_Agile_WF_Task.png" alt-text="Diagram that shows Task workflow states by using the Agile process.":::
+   :::image type="content" source="media/agile-workflow-task.png" alt-text="Diagram that shows Task workflow states by using the Agile process.":::
    :::column-end:::
    :::column span="1":::
 

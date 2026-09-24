@@ -25,11 +25,11 @@ There are several ways to customize your Azure Repos Git repositories by using b
 
 - Branch policies cover branch-specific controls.
 
-  Branch policies include options like requiring a pull request, a successful build, or a code review before changes can merge into a branch. For more information, see [Branch policies and settings](branch-policies.md).
+  Branch policies include options like requiring a pull request, a successful build, or a code review before changes can merge into a branch. For comprehensive guidance on implementing branch policies and other security practices, see [Secure repositories and pull requests](secure-repositories-pull-requests.md). For policy reference details, see [Branch policies and settings](branch-policies.md).
 
 - Repository and branch security permissions control user assignments.
 
-  These permissions control who can read, write, contribute to pull requests, and take other specific actions. For more information, see [Set permissions for a repository](set-git-repository-permissions.md#git-repository).
+  These permissions control who can read, write, contribute to pull requests, and take other specific actions. For comprehensive guidance on access control and security best practices, see [Secure repositories and pull requests](secure-repositories-pull-requests.md). For detailed permission reference, see [Set permissions for a repository](set-git-repository-permissions.md#git-repository).
 
 [!INCLUDE [note-tfs-2018.2-update](includes/note-tfs-2018.2-update.md)]  
 

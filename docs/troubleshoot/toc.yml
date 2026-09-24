@@ -30,6 +30,8 @@
       href: ../pipelines/release/azure-rm-endpoint.md?toc=/azure/devops/troubleshoot/toc.json
 - name: Azure Repos
   items:
+    - name: Copilot code review
+      href: ../repos/git/copilot-code-reviews-faq.md?toc=/azure/devops/troubleshoot/toc.json
     - name: Code scanning
       href: ../repos/security/github-advanced-security-code-scanning-troubleshoot.md?toc=/azure/devops/troubleshoot/toc.json
     - name: Dependency scanning

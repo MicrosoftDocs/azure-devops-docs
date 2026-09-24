@@ -2,13 +2,13 @@
 title: Connect an Azure Boards or Azure DevOps project to a GitHub repository
 titleSuffix: Azure Boards
 description: Configure one or more GitHub repositories to integrate with Azure Boards. 
-ms.service: azure-devops-boards
+ms.service: azure-boards
 ms.topic: how-to
 ms.author: chcomley
 author: chcomley
 monikerRange: 'azure-devops'
-ms.date: 03/24/2026
-ms.custom: sfi-image-nochange, pat-reduction
+ms.date: 09/15/2026
+ms.custom: sfi-image-nochange, pat-reduction, support-driven-update
 ai-usage: ai-assisted
 ---
 
@@ -79,7 +79,7 @@ The following authentication options are supported based on the GitHub platform 
 
 ## Add a GitHub connection with GitHub credentials 
 
-You can connect up to 1,000 GitHub repositories to an Azure Boards project. 
+You can connect up to 2,000 GitHub repositories per connection to an Azure Boards project.
 
 1. Sign in with your GitHub credentials. Choose an account where you're a repository administrator.
 
@@ -133,8 +133,43 @@ To change the configuration or manage the Azure Boards app for GitHub, see [Chan
 
 [!INCLUDE [use-microsoft-entra-reduce-pats](../../includes/use-microsoft-entra-reduce-pats.md)]
 
-> [!TIP]  
-> When you create your GitHub PAT, include these scopes: `repo, read:user, user:email, admin:repo_hook`. 
+GitHub supports fine-grained and classic PATs. Fine-grained PATs provide more control over repository access and permissions.
+
+### Fine-grained PAT permissions
+
+The account that creates the fine-grained PAT must have administrator access to each repository you connect. When you [create a fine-grained PAT](https://docs.github.com/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens#creating-a-fine-grained-personal-access-token), select the repositories to connect and grant the following repository permissions:
+
+| Permission | Access | Used for |
+|------------|--------|----------|
+| **Metadata** | Read-only | Accessing repository metadata. GitHub automatically requires this permission when you select repository permissions. |
+| **Contents** | Read and write | Listing commits to link to work items and creating branches from work items. |
+| **Webhooks** | Read and write | Creating and administering webhooks for connection updates and secret rotation. |
+| **Pull requests** | Read and write | Listing pull requests to link or mention in work item comments and adding **AB#** links to pull request descriptions. |
+| **Issues** | Read and write | Optional. Required to list GitHub Issues and add **AB#** links to issue descriptions. |
+
+If the resource owner of the fine-grained PAT is a GitHub organization, also grant the following organization permission:
+
+| Permission | Access | Used for |
+|------------|--------|----------|
+| **Members** | Read-only | Listing the organization during connection administration. |
+
+> [!IMPORTANT]
+> Fine-grained PAT permissions don't grant the token owner additional repository access. The token owner must have administrator access to each connected repository so Azure Boards can administer webhooks and rotate webhook secrets. GitHub organization policies can further restrict or require approval for fine-grained PATs.
+
+If a required permission is missing, only some integration features might work. Permission changes can also take effect after a delay. For example, after you remove **Webhooks** write access, existing webhooks can continue to work until the next webhook secret rotation.
+
+### Classic PAT scopes
+
+For a classic PAT, include these scopes: `repo, read:user, user:email, admin:repo_hook`.
+
+### PAT connection limitations
+
+PAT connections, including connections that use fine-grained PATs, don't support the following features:
+
+- Pull request status checks, which require a GitHub App connection.
+- [GitHub Copilot integration with Azure Boards](work-item-integration-github-copilot.md), which requires GitHub App authentication.
+
+### Create a connection
 
 1. Select **Personal Access Token** in the **New Connection** dialog. 
 
@@ -325,6 +360,14 @@ When the Azure Boards connection to GitHub loses access, a red-X alert appears i
 	Recreate the PAT with the required scopes: `repo, read:user, user:email, admin:repo_hook`. For more information, see [Best practices for using PATs](../../organizations/accounts/use-personal-access-tokens-to-authenticate.md#best-practices-for-using-pats).
 
 <a id="ghe-dataimport"></a>
+
+### Resolve AB# mention issues
+If you use the Azure Boards app for GitHub and find that your commits, pull requests, and issues aren't automatically linked to your work items when using `AB#` syntax, check that the Azure Boards app has adequate permissions on the area path your work items belong to:
+ 1. Go to **Project Settings** > **Boards** > **Project configuration**, and then select **Areas**.
+    :::image type="content" source="../../organizations/settings/media/areas/open-project-work-areas-settings-vert.png" alt-text="Screenshot showing opening Project Settings, Work, Project Configuration."::: 
+2. Choose the **...** context menu for the node you want to manage and select **Security**.
+   :::image type="content" source="../../organizations/security/media/work-tracking/open-area-node-permissions.png" alt-text="Screenshot of context menu for Area Path, choose Security." lightbox="../../organizations/security/media/work-tracking/open-area-node-permissions.png":::
+3. Ensure the **Azure Boards** user has *View work items in this node* and *Edit work items in this node* set to **Allow**.
 
 ### Resolve broken GitHub Enterprise Server connection  
 

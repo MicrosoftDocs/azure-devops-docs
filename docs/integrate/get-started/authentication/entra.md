@@ -8,7 +8,7 @@ ai-usage: ai-assisted
 monikerRange: 'azure-devops'
 ms.author: chcomley
 author: chcomley
-ms.date: 04/22/2026
+ms.date: 09/18/2026
 ---
 
 # Authenticate to Azure DevOps with Microsoft Entra ID
@@ -17,14 +17,14 @@ ms.date: 04/22/2026
 
 [!INCLUDE [use-microsoft-entra-reduce-pats](../../../includes/use-microsoft-entra-reduce-pats.md)]
 
-This article explains the benefits of Microsoft Entra ID authentication and guides you through implementing it in your applications.
+Use this article to choose a Microsoft Entra ID authentication flow for applications that access Azure DevOps Services.
 
 ## Overview
 
 [Microsoft Entra ID](/entra/fundamentals/whatis) is Microsoft's cloud-based identity and access management platform that lets organizations:
 
 - Manage user identities and control access to resources.
-- Implement enterprise security policies like multifactor authentication and Microsoft Entra Conditional Access.
+- Apply security policies such as multifactor authentication and Microsoft Entra Conditional Access to supported sign-in scenarios.
 - Integrate with thousands of applications, including Azure DevOps Services.
 - Provide single sign-on across Microsoft and non-Microsoft services.
 
@@ -42,9 +42,9 @@ The [Microsoft Identity platform](/entra/identity-platform/) provides two primar
 **Best for**: Interactive applications that act for users
 
 - Users sign in with their Microsoft Entra ID credentials.
-- Applications receive delegated permissions to act as the signed-in user.
-- Support for multifactor authentication and Microsoft Entra Conditional Access policies.
-- Ideal for web applications, desktop apps, and user-facing tools.
+- Applications act within the signed-in user's Azure DevOps access level and permissions.
+- Multifactor authentication and Microsoft Entra Conditional Access policies evaluate user sign-ins.
+- This pattern works well for web applications, desktop apps, and other user-facing tools.
 
 **Get started**: [Microsoft Entra ID OAuth implementation](entra-oauth.md)
 
@@ -53,58 +53,54 @@ The [Microsoft Identity platform](/entra/identity-platform/) provides two primar
 **Best for**: Background services and automation scenarios
 
 - Applications authenticate by using their own identity (not user credentials).
-- Suitable for continuous integration and continuous delivery (CI/CD) pipelines, background services, and automated tools.
-- More secure for service-to-service communication.
-- Support for service principals and Azure managed identities.
+- This pattern works well for continuous integration and continuous delivery (CI/CD) pipelines, background services, and automated tools.
+- Add the identity to the Azure DevOps organization and assign the required access level and permissions.
+- Use managed identities for Azure-hosted applications. Use service principals with workload identity federation, certificates, or client secrets for other applications.
 
 **Get started**: [Service principals and managed identities](service-principal-managed-identity.md)
 
-## Benefits of Microsoft Entra ID authentication
+## Why use Microsoft Entra ID authentication
 
-Microsoft Entra ID authentication provides significant advantages over legacy Azure DevOps authentication methods.
+Microsoft Entra ID centralizes identity lifecycle and access controls for users and applications.
 
-### Enhanced security
+### Identity and credential controls
 
-- Short-lived tokens (one-hour expiration) reduce risk from compromised credentials.
-- Microsoft Entra Conditional Access policies protect against token theft and unauthorized access.
-- Multifactor authentication supports other security layers.
-- Advanced threat protection provides real-time risk assessment.
+- User authentication can use single sign-on, multifactor authentication, and supported Conditional Access policies.
+- Managed identities and workload identity federation can avoid stored application secrets in supported scenarios.
+- Administrators can disable an identity or change its Azure DevOps access without updating each application.
+
+Conditional Access behavior depends on the identity and authentication flow. For workload identity limitations, see [Service principals and managed identities](service-principal-managed-identity.md#conditional-access).
 
 ### Enterprise integration
 
 - Single sign-on across Microsoft and non-Microsoft applications
 - Centralized identity management for users and applications
-- Policy enforcement at the organizational level
+- Policy enforcement for supported identities and sign-in scenarios
 - Audit and compliance capabilities for governance requirements
 
 ### Developer experience
 
-- Modern authentication libraries (Microsoft Authentication Library) with automatic token refresh
+- Microsoft authentication libraries that acquire and cache tokens
 - Consistent identity platform across all Microsoft services
 - Rich documentation and samples for quick implementation
 - Active support and development with regular feature updates
 
-### Comparison with legacy methods
+## Handle access tokens
 
-| Feature | Microsoft Entra ID | Personal access tokens | Azure DevOps OAuth |
-|---------|-------------------|------------------------|-------------------|
-| Token lifespan | One hour (autorefresh) | Up to one year | Configurable |
-| Multifactor authentication | ✅ Native support | ❌ Not supported | ❌ Not supported |
-| Conditional access | ✅ Full support | ❌ Not supported | ❌ Not supported |
-| Enterprise policies | ✅ Enforced | ⚠️ Limited | ⚠️ Limited |
-| Audit logging | ✅ Comprehensive | ⚠️ Basic | ⚠️ Basic |
-| Future investment | ✅ Active development | ⚠️ Maintenance mode | ❌ Deprecated |
+Treat Microsoft Entra access tokens as sensitive, opaque credentials. Don't parse a token or hard-code its lifetime. Use the expiration information returned with the token, and use Microsoft Authentication Library (MSAL) or Azure Identity to cache tokens and acquire another token when needed. Whether a token can be renewed without user interaction depends on the authentication flow, session state, and applicable policies.
+
+## Migrate from legacy authentication
+
+Azure DevOps OAuth is deprecated, and Microsoft no longer accepts new app registrations as of April 2025. Use [Microsoft Entra ID OAuth](entra-oauth.md) for new applications and migrate existing Azure DevOps OAuth applications. For current deprecation milestones, see the [Azure DevOps OAuth deprecation announcement](https://devblogs.microsoft.com/devops/no-new-azure-devops-oauth-apps-beginning-february-2025/).
 
 > [!IMPORTANT]
-> **Token compatibility**: Microsoft Entra ID tokens and Azure DevOps tokens aren't interchangeable. Applications that migrate from Azure DevOps OAuth to Microsoft Entra ID OAuth require user reauthorization.
-
-### Migration from legacy authentication
+> Microsoft Entra access tokens and Azure DevOps OAuth access tokens aren't interchangeable. Applications that migrate to Microsoft Entra ID OAuth require user reauthorization.
 
 Organizations increasingly adopt [security policies that restrict personal access token (PAT) creation](../../../organizations/accounts/manage-pats-with-policies-for-administrators.md) because of security risks. Microsoft Entra ID authentication provides secure alternatives for common PAT scenarios.
 
 | PAT scenario | Microsoft Entra alternative |
 |------------|------------|
-| Authenticate with Git Credential Manager (GCM) | GCM defaults to authenticating with PATs. Set the default credential type to `oauth`. Learn more on the [Git Credential Manager (GCM) page](../../../repos/git/set-up-credential-managers.md). |
+| Authenticate with Git Credential Manager (GCM) | Configure GCM to use Microsoft identity OAuth tokens by setting the credential type to `oauth`. GCM normally defaults to PATs, although some cloud-hosted environments default to OAuth. For more information, see [Use Git Credential Manager](../../../repos/git/set-up-credential-managers.md#configure-microsoft-entra-id-authentication-recommended). |
 | Authenticate in a build or release pipeline | Use an [Azure DevOps service connection with workload identity federation](../../../pipelines/library/add-devops-entra-service-connection.md) for Azure DevOps resources, or a [service connection with Workload Identity Federation](../../../pipelines/library/connect-to-azure.md#create-an-azure-resource-manager-service-connection-that-uses-workload-identity-federation) for Azure resources. |
 | Ad hoc requests to Azure DevOps REST APIs | Issue a [one-off Microsoft Entra token by using the Azure CLI](../../../cli/entra-tokens.md).  |
 

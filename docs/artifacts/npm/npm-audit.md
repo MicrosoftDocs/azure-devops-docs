@@ -1,7 +1,7 @@
 ---
 title: Enhance project security with npm audit
 description: Use npm audit to scan and fix package vulnerabilities
-ms.service: azure-devops-artifacts
+ms.service: azure-artifacts
 ms.topic: how-to
 ms.date: 05/22/2026
 monikerRange: 'azure-devops'
@@ -84,7 +84,7 @@ Azure Pipelines doesn't currently support *npm audit*. If you try using the regu
     audit fix --registry=<FEED_SOURCE_URL>
     ```
 
-    :::image type="content" source="./media/npm-audit-classic-pipeline.png" alt-text="A screenshot showing the npm audit task in a classic pipeline.":::
+    :::image type="content" source="./media/npm-audit-classic-pipeline.png" alt-text="Screenshot showing the npm audit task in a classic pipeline.":::
 
 # [YAML](#tab/yaml)
 

@@ -2,7 +2,7 @@
 title: Develop extensions for public projects
 titleSuffix: Azure DevOps Services
 description: Learn how to develop Azure DevOps Services extensions that support nonmember and public users in public projects.
-ms.subservice: azure-devops-ecosystem
+ms.subservice: azure-devops-developer
 ms.topic: how-to
 ms.custom: UpdateFrequency3
 monikerRange: 'azure-devops'

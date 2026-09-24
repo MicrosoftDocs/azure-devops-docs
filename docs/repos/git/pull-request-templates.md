@@ -15,6 +15,8 @@ ms.subservice: azure-devops-repos-git
 
 Writing good pull request descriptions is a great way to help reviewers know what to expect when reviewing code. They're also a great way to help track things that should be done for every change, such as testing, adding unit tests, and updating documentation. Pull request templates can help your developers create great pull request descriptions that meet your organization's standards.
 
+For comprehensive guidance on pull request policies, branch policies, and security best practices, see [Secure repositories and pull requests](secure-repositories-pull-requests.md).
+
 This article shows you how to get started with pull request templates.
 
 >[!NOTE]
@@ -70,7 +72,7 @@ You can edit or add to this description and append [additional pull request temp
 
 ## Branch specific pull request templates
 
-Branch specific pull request templates can be configured for pull requests that target a specific branch. To configure your repository with a branch specific pull request template, create a `.txt` or `.md` file named after your branch. The name must match the first level of the branch name, such as `main`, `dev`, `release`, or `feature`. Each branch specific pull request template is applied any time a pull request targets that branch or any branches contained under it. For example the pull request template named `feature.md` would be applied if a pull request targeted the `feature` branch or any `feature/*` branches.
+Branch specific pull request templates can be configured for pull requests that target a specific branch. To configure your repository with a branch specific pull request template, create a `.txt` or `.md` file named after your branch, for example `feature.md` for `feature/*` or `release/october.md` for branches called `release/october` or `release/october/*`. The name can match the first level of the branch name, such as `main`, `dev`, `release`, or `feature`, or be nested in directories matching the mutiple levels of the branch name, as for `release/october/week1`. Each branch specific pull request template is applied any time a pull request targets that branch or any branches contained under it. For example the pull request template named `feature.md` would be applied if a pull request targeted the `feature` branch or any `feature/*` branches. Multi-level branches are supported up to 10 levels.
 
 Branch specific pull request templates must be saved in the default branch of your repository using the following folder hierarchy: `pull_request_template/branches/`. These folders must be based in one of the following folders in your repository.
 
@@ -99,7 +101,7 @@ In addition to the default and branch specific pull request templates, you can c
 - `<repository root>/docs/pull_request_template/`
 - `<repository root>/pull_request_template/`
 
-When a pull request is created, you can append any of the available pull request templates by choosing them from the **Add a template** drop-down. The names in the drop-down are based on the file names of the templates.
+When a pull request is created, you can append one of the available pull request templates by choosing them from the **Add a template** drop-down. The names in the drop-down are based on the file names of the templates. Note that branch-specific templates may not appear in this list.
 
 In the following example three templates are listed.
 

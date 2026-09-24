@@ -102,6 +102,8 @@ landingContent:
             url: ./git/create-new-repo.md
           - text: Set Git repository permissions
             url: ./git/set-git-repository-permissions.md 
+          - text: Secure repositories and pull requests
+            url: ./git/secure-repositories-pull-requests.md
           - text: Create a new branch
             url: ./git/create-branch.md
           - text: Improve code quality with branch policies

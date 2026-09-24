@@ -1,10 +1,10 @@
 ---
 title: Connect to Azure Artifacts feeds - dotnet
 description: Learn how to connect to Azure Artifacts feeds - dotnet
-ms.service: azure-devops-artifacts
+ms.service: azure-artifacts
 ms.custom: devx-track-dotnet
 ms.topic: how-to
-ms.date: 04/09/2025
+ms.date: 07/22/2026
 monikerRange: "<=azure-devops"
 "recommendations": "true"
 ---
@@ -13,7 +13,7 @@ monikerRange: "<=azure-devops"
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
-Azure Artifacts enables developers to seamlessly publish packages to feeds and share them privately or publicly, depending on the feed’s visibility settings. This guide walks you through setting up your project and authenticating with your Azure Artifacts feed.
+Azure Artifacts enables developers to seamlessly publish packages to feeds and share them privately or, for existing public projects, publicly, depending on the feed’s visibility settings. This guide walks you through setting up your project and authenticating with your Azure Artifacts feed.
 
 ## Prerequisites
 
@@ -100,7 +100,7 @@ This command signs you in and acquires a token. After sign-in succeeds, you can 
 
 1. Add a *nuget.config* file to your project. Place it in the same folder as your *.csproj* or *.sln* file, and paste the snippet provided in the **Project setup** section into it.
 
-    :::image type="content" source="../media/connect-to-feed-dotnet-server-2020-and-2022.png" alt-text="A screenshot displaying how to connect to a feed in Azure DevOps Server 2020 and 2022.":::
+    :::image type="content" source="../media/connect-to-feed-dotnet-server-2020-and-2022.png" alt-text="Screenshot showing how to connect to a feed in Azure DevOps Server 2020 and 2022.":::
 
 ::: moniker-end
 

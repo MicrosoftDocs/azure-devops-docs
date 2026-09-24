@@ -1,7 +1,7 @@
 ---
 title: Monitor
 description: Learn how to view the health of your Managed DevOps Pools.
-ms.date: 04/25/2025
+ms.date: 07/07/2026
 ms.topic: concept-article
 ---
 
@@ -13,36 +13,32 @@ Managed DevOps Pools provides several options for monitoring your pool instances
 
 Managed DevOps Pools provides the following metrics:
 
-| Metric | Unit | [Aggregations](/azure/azure-monitor/essentials/metrics-aggregation-explained) | [Dimensions](/azure/azure-monitor/essentials/analyze-metrics#use-dimension-filters-and-splitting) |
-|---|---|---|---|
-| **AllocationDurationMS**<br>Average pool request duration | Milliseconds | Average | `Image`, `PoolId`, `ResourceRequestType`, `Type` |
-| **Allocated**<br>Number of Azure DevOps Agents with jobs currently running | Count | Average, Min, Max | `Images`, `PoolId`, `ProviderName`, `SKU` |
-| **NotReady**<br>Number of Azure DevOps Agents that are not set up for testing | Count | Average, Min, Max | `Images`, `PoolId`, `ProviderName`, `SKU` |
-| **PendingReimage**<br>Number of Azure DevOps Agents in the process of being reimaged | Count | Average, Min, Max | `Images`, `PoolId`, `ProviderName`, `SKU` |
-| **PendingReturn**<br>Number of Azure DevOps Agents that are post-cleanup, waiting to be deleted (which occur in batches) | Count | Average, Min, Max | `Images`, `PoolId`, `ProviderName`, `SKU` |
-| **Provisioned**<br>Number of Azure DevOps Agents currently up | Count | Average, Min, Max | `Images`, `PoolId`, `ProviderName`, `SKU` |
-| **Ready**<br>Number of Azure DevOps Agents present that are prepared to accept a job | Count | Average, Min, Max | `Images`, `PoolId`, `ProviderName`, `SKU` |
-| **Starting**<br>Number of Azure DevOps Agents being prepared | Count | Average, Min, Max | `Images`, `PoolId`, `ProviderName`, `SKU` |
-| **Total**<br>Total number of Azure DevOps Agents | Count | Average, Min, Max | `Images`, `PoolId`, `ProviderName`, `SKU` |
-| **Count**<br>Total number of agents provisioned, grouped by status | Count | Count | `ErrorCode`, `FailureStage`, `PoolId`, `RequestType`, `Status`, `Type` |
+[!INCLUDE [include](~/../docs/reusable-content/ce-skilling/azure/includes/azure-monitor/reference/metrics/microsoft-devopsinfrastructure-pools-metrics-include.md)]
 
-### Filtering and splitting
+<a name="filtering-and-splitting"></a>
+## Dimension filters and splitting
 
-Azure Monitor supports filtering and splitting for metrics that have dimensions. Managed DevOps Pools provides the following dimensions. See the previous table to a list of which dimensions apply for a particular metric.
+Azure Monitor supports filtering and splitting for metrics that have dimensions. Managed DevOps Pools provides the following dimensions. See the previous table for a list of which dimensions apply for a particular metric.
 
 | Dimension | Description |
 |-----------|-------------|
+| `DataDiskType` | Data disk type attached to the resource |
+| `ErrorCode` | One of the error codes listed in [Error codes](#error-codes) |
+| `FailureStage` | Stage of provisioning at which a request failed (used to group provisioning failures) |
 | `Image` | Image name |
 | `Images` | List of images |
+| `ImageVersion` | Version of the image |
+| `NewState` | State that the resource transitioned to |
 | `PoolId` | Name of Managed DevOps Pool |
+| `PremountConfigurations` | Premount configurations applied to the resource |
+| `PreviousState` | State that the resource transitioned from |
 | `ProviderName` | CI/CD provider (AzureProvider is currently the only provider) |
-| `ResourceRequestType` |  |
+| `RequestType` | Type of request made against the pool (for example, allocate, return, or reimage) |
+| `ResourceRequestType` | Type of resource allocation request being timed |
 | `SKU` | VM size |
-| `Type` |  |
-| `ErrorCode` | One of the error codes listed in [Error codes](#error-codes) |
-| `FailureStage` |  |
-| `RequestType` |  |
 | `Status` | Agent status |
+| `Type` |  |
+| `VMPriority` | VM priority (for example, Regular or Spot) |
 
 
 **Filtering** lets you choose which dimension values are included in the chart. You might want to show successful requests when you chart the **Total number of agents provisions Count** metric. You apply the filter on the **Status** dimension.
@@ -108,6 +104,7 @@ For a list of error codes, see the following [Error codes](#error-codes) section
 |---|---|
 | `AzureInternalServerError` | The VM allocation failed due to an internal error. Retry later or try deploying to a different location. |
 | `ClusterOutOfCapacity` | Allocation failed. Note that allocation for this subscription is constrained to a set of clusters, which may be out of capacity. To remove the cluster constraint, contact the subscription administrator or Microsoft Support. Read more about improving likelihood of allocation success at `https://aka.ms/allocation-guidance`. |
+| `ConstraintsCannotBeAllocated` | Allocation failed. VM(s) with the following constraints cannot be allocated, because the condition is too restrictive. This generally implies that Azure is having issues providing the selected SKU in the region, even though you may have enough approved quota.
 | `CustomScriptError` | VM reported a failure when processing extension 'customScript' (publisher 'Microsoft.Compute' and type 'CustomScriptExtension'). Error message: 'Finished executing command'. More information on troubleshooting is available at `https://aka.ms/VMExtensionCSEWindowsTroubleshoot`. |
 | `DiskProcessingTimeout` | The processing of VM '...' is halted because of one or more disk processing errors encountered by VM '...' in the same Availability Set. Resolve the error with VM '...' before retrying the operation. For more information, refer to `https://aka.ms/activitylog`. |
 | `EndpointNotFound` | 404 - There are no listeners connected for the endpoint. TrackingId:00000000-0000-0000-0000-0000000000, SystemTracker:tipresourceprovider.servicebus.windows.net:tipresourceproviderconnection/pools/es_tap_prime_cus_d4ds, Timestamp:2024-02-15T21:15:57 |
@@ -132,6 +129,7 @@ For a list of error codes, see the following [Error codes](#error-codes) section
 | `VirtualNetworkIsNotFound` | The Virtual Network might be deleted. |
 | `WorkerSetupFailed`, `UnableToDownloadWorkerCheckNetwork`, `UnableToDownloadWorkerCheckNetwork[<endpoint>]`  | [The Network infrastructure is blocking access to one of the prerequisite endpoints.](./configure-networking.md#restricting-outbound-connectivity) |
 | `UnableToDownloadWorkerCheckNetwork_TLSIssue` | [TLS Handshake failed when contacting prerequisite endpoints.](./configure-networking.md#restricting-outbound-connectivity) |
+| `ConstraintsCannotBeAllocated` | Allocation failed. VM(s) with the following constraints cannot be allocated, because the condition is too restrictive. Please remove some constraints and try again. |
 
 
 ## See also

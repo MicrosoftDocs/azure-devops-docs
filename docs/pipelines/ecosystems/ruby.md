@@ -138,9 +138,7 @@ Add the [Publish Code Coverage Results](/azure/devops/pipelines/tasks/reference/
 ```yaml
 - task: PublishCodeCoverageResults@2
   inputs:
-    codeCoverageTool: Cobertura
     summaryFileLocation: '$(System.DefaultWorkingDirectory)/**/coverage.xml'
-    reportDirectory: '$(System.DefaultWorkingDirectory)/**/coverage'
     failIfCoverageEmpty: true 
 ```
 
@@ -190,9 +188,7 @@ steps:
 
 - task: PublishCodeCoverageResults@2
   inputs:
-    codeCoverageTool: Cobertura
     summaryFileLocation: '$(System.DefaultWorkingDirectory)/**/coverage.xml'
-    reportDirectory: '$(System.DefaultWorkingDirectory)/**/coverage'
     failIfCoverageEmpty: true
   displayName: 'Publish code coverage'
 ```

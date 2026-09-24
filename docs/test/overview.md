@@ -1,13 +1,14 @@
 ---
-title: What is Azure Test Plans? Manual, exploratory, and automated test tools. 
+title: What is Azure Test Plans? Manual and automated testing
 description: Learn about the test tools and capabilities that Azure Test Plans provides to drive quality and collaboration throughout the development process. 
 ms.service: azure-devops-test-plans
 ms.custom: UpdateFrequency3
+ai-usage: ai-assisted
 ms.topic: overview
 ms.author: pliaros
 author: raviLiftr
 monikerRange: '<= azure-devops'
-ms.date: 09/06/2024
+ms.date: 08/14/2026
 ms.update-cycle: 1095-days
 ---
 
@@ -47,7 +48,7 @@ Azure Test Plans provides software development teams the following benefits.
 
 - **Test on any platform**: With the **Test Plans** web portal, you can use any supported browser to access all the manual testing capabilities. It enables you to [create](create-test-cases.md) and [run manual tests](run-manual-tests.md) through an easy-to-use, browser-based interface that users can access from all major browsers on any platform.
 
-- **Rich diagnostic data collection**: Using the web-based Test Runner and Test Runner client you can [collect rich diagnostic data](collect-diagnostic-data.md) during your manual tests. This data includes screenshots, an image action log, screen recordings, code coverage, IntelliTrace traces, and test impact data for your apps under test. This data is automatically included in all the bugs you create during test, making it easy for developers to reproduce the issues.
+- **Rich diagnostic data collection**: Use the web-based Test Runner to [collect diagnostic data](collect-diagnostic-data.md) during manual tests, including screenshots, image action logs, and screen recordings. Azure Test Plans automatically includes the captured data in bugs you create during the test, which helps developers reproduce issues.
 
 - **End to End traceability**: Azure DevOps provides end-to-end traceability of your requirements, builds, tests, and bugs with [linking work items to other objects](../boards/backlogs/add-link.md?toc=/azure/devops/test/toc.json&bc=/azure/devops/test/breadcrumb/toc.json). Users can track their requirement quality from cards on the board. Bugs created while testing are automatically linked to the requirements and builds being tested, which helps you track the quality of the requirements or builds.
 
@@ -149,7 +150,7 @@ To support manual and exploratory testing, Azure Test Plans uses test-specific w
 
 The work item types&mdash;**Test Plans**, **Test Suites**, **Test Cases**, **Shared Steps**, and **Shared Parameters**&mdash;support several explicit links to support requirements tracking and sharing test steps and data across many test cases. Test cases can be assigned as manual or automated. For a description of each of these test items, see [Test objects and terms](test-objects-overview.md).
 
-![Test management work item types](../boards/work-items/guidance/media/ALM_PT_WITS_TestExperience.png)
+![Diagram that shows relationships among test plans, suites, cases, requirements, bugs, shared steps, and parameters.](../boards/work-items/guidance/media/ALM_PT_WITS_TestExperience.png)
 
 In Azure DevOps, the relationship between a test result, test run, and a test case can be understood as follows:
 
@@ -178,7 +179,7 @@ You define manual test cases by defining the test steps and optionally the test 
 
 Within each test case, you specify a set of test steps with their expected outcomes. Optionally, you can add [shared steps](share-steps-between-test-cases.md) or [shared parameters](repeat-test-with-different-data.md). For traceability, link test cases to the user stories, features, or bugs that they test. 
 
-:::image type="content" source="media/overview/test-case-form.png" alt-text="Screenshot of test case work item form.":::
+:::image type="content" source="media/overview/test-case-form.png" alt-text="Screenshot of a test case work item form with steps, expected results, and related work.":::
 
 <a id="parameters"></a>
 
@@ -202,8 +203,8 @@ With the [Configurations](test-different-configurations.md) hub, teams can defin
  
 With the following tools, developers, testers, and stakeholders can initiate tests and capture rich data as they execute tests and automatically log code defects linked to the tests. Test your application by executing tests across desktop or web apps. 
 
-- [**Test Runner**](#test-runner): A browser-based tool for testing web applications and a desktop client version for testing desktop applications that you launch from the **Test plans** hub to run manual tests. Test Runner supports rich data collection while performing tests, such as image action log, video recording, code coverage, etc. It also allows users to create bugs and mark the status of tests.  
-- [**Test & Feedback extension**](#exploratory-testing): A free extension to support exploratory testing that you access from Chrome, Microsoft Edge, or Firefox browsers. The extension captures interactions with the application being explored through images or video and entering verbal or type-written comments. Information is captured in the Feedback Response work item type to help track response data.
+- [**Test Runner**](#test-runner): A browser-based tool that you launch from the **Test plans** hub to run manual tests for web and desktop applications. Test Runner supports screenshots, image action logs, and screen recordings. You can also create bugs and record test outcomes.
+- [**Test & Feedback extension**](#exploratory-testing): A free extension for Chrome and Microsoft Edge that supports exploratory testing. The extension captures interactions with the application through images, video, and typed comments. Azure DevOps stores the information in a Feedback Response work item to help track response data.
 
 ### Test execution capability 
 
@@ -244,7 +245,7 @@ to help your developers reproduce the issues. For more information, see [Run tes
 
 User acceptance testing (UAT) helps ensure teams deliver the value requested by customers. You can create UAT test plans and suites, invite several testers to execute these tests, and monitor test progress and results using lightweight charts. To learn how, see [User acceptance testing](user-acceptance-testing.md).
 
-![Assigning testers to run all tests](media/overview/assign-testers.png)
+![Screenshot of the Assign testers dialog with three testers selected for all tests in a suite.](media/overview/assign-testers.png)
 
 <a name="exploratory-testing"></a>
 
@@ -256,7 +257,7 @@ anytime and anywhere, and is simple enough for everyone in the team to use.
 It helps to improve productivity by allowing you to spend more time
 finding issues, and less time filing them.
 
-![Exploratory testing your web apps](media/manual-testing/exploratory-testing-01.png)
+![Screenshot of the Test and Feedback extension showing a work item and its acceptance criteria.](media/manual-testing/exploratory-testing-01.png)
 
 <a name="stakeholder-feedback"></a>
 
@@ -355,7 +356,7 @@ easily analyze these results. Choose a retention policy to control how
 long your manual testing results are retained.
 See more at [Track test status](track-test-status.md).
 
-![Test status tracking](media/manual-testing/track-test-status-01.png)
+![Diagram that shows test result charts and the chart configuration options.](media/manual-testing/track-test-status-01.png)
 
 <a id="progress-report"></a>
 
@@ -375,16 +376,28 @@ With the [Progress report](progress-report.md) hub, teams can track progress of 
 
 ### Test runs 
 
-The [Runs](insights-exploratory-testing.md) hub displays the results of test runs, which include all test runs, both manual and automated. 
+::: moniker range="azure-devops"
+
+The [Test Run Hub](test-runs.md) displays manual and automated test runs. Use it to search and filter runs, review run summaries and analytics, inspect individual test results, preview attachments, and link results to work items.
+
+For current screenshots and detailed procedures, see [Manage test runs in Azure DevOps Test Plans](test-runs.md).
+
+::: moniker-end
+
+::: moniker range="< azure-devops"
+
+The **Runs** hub displays the results of manual and automated test runs.
 
 > [!NOTE]  
 > The **Runs** hub is available with Azure DevOps Server 2020 and later versions. It requires enabling the Analytics service which is used to store and manage test run data. For more information about the service, see [What is the Analytics service?](../report/powerbi/what-is-analytics.md)
 
-:::image type="content" source="media/overview/recent-test-runs.png" alt-text="Screenshot of Recent test runs":::
+:::image type="content" source="media/overview/recent-test-runs.png" alt-text="Screenshot of the Runs hub with recent manual and automated test runs.":::
 
-Choose any specific run to view a summary of the test run. 
+Select a run to view its summary.
 
-:::image type="content" source="media/overview/example-run-summary.png" alt-text="Screenshot of selected Test Runs summary":::
+:::image type="content" source="media/overview/example-run-summary.png" alt-text="Screenshot of a selected test run summary with outcome and duration details.":::
+
+::: moniker-end
 
 <a id="deployment-status"></a>
 
@@ -392,7 +405,7 @@ Choose any specific run to view a summary of the test run.
 
 The Deployment status widget configurable widget shows a combined view of the deployment status and test pass rate across multiple environments for a recent set of builds. You configure the widget by specifying a build pipeline, branch, and linked release pipelines. To view the test summary across multiple environments in a release, the widget provides a matrix view of each environment and corresponding test pass rate.
 
-:::image type="content" source="media/overview/deployment-status.png" alt-text="Screenshot of Deployment Status widget.":::
+:::image type="content" source="media/overview/deployment-status.png" alt-text="Screenshot of the Deployment status widget with test pass rates across builds and stages.":::
 
 Hover over any build summary, and you can view more details, specifically the number of tests passed and failed.   
 

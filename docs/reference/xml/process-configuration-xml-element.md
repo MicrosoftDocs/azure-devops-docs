@@ -2,7 +2,7 @@
 title: ProcessConfiguration syntax 
 titleSuffix: Azure DevOps  
 description: XML syntax and usage for all ProcessConfiguration elements to support customization of work item types and Agile tool backlogs and boards 
-ms.service: azure-devops-boards
+ms.service: azure-boards
 ms.custom: process
 ms.author: chcomley
 author: chcomley

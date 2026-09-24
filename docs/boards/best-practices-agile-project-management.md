@@ -2,7 +2,7 @@
 title: Best practices for Agile product management
 titleSuffix: Azure Boards
 description: Get started with this guide for product managers who are new to Azure Boards to plan and track your products.
-ms.service: azure-devops-boards
+ms.service: azure-boards
 ms.topic: best-practice
 ms.custom: cross-project
 ms.author: chcomley

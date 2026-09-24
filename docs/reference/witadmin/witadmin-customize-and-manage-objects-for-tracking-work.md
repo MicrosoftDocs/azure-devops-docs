@@ -2,7 +2,7 @@
 title: witAdmin Customize and manage objects for tracking work 
 titleSuffix: Azure DevOps  
 description: Learn how to use the witadmin command-line tool to customize work tracking objects like work item types, fields, categories, and link types.
-ms.service: azure-devops-boards
+ms.service: azure-boards
 ms.custom: witadmin, engagement-fy23
 ai-usage: ai-assisted
 ms.topic: reference

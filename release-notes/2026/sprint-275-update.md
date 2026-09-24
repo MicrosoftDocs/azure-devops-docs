@@ -1,5 +1,5 @@
 ---
-title: New in preview features: Copilot code reviews, GitHub Copilot autofix, and Apple Silicon for macOS pipeline agents
+title: Copilot code reviews, GitHub Copilot autofix, and Apple Silicon for macOS pipeline agents
 author: gloridelmorales
 ms.author: glmorale
 ms.date: 6/17/2026

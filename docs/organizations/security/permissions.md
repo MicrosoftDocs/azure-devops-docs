@@ -1299,7 +1299,7 @@ Preview page is not available for on-premises versions.
    :::column-end:::
    :::column span="2":::
    
-   Can add and remove test results and add or modify test runs. For more information, see [Control how long to keep test results](../../test/how-long-to-keep-test-results.md) and [Run manual tests](../../test/run-manual-tests.md). 
+   Can add and remove test results and add or modify test runs. For more information, see [Set test retention policies](../../pipelines/policies/retention.md) and [Run manual tests](../../test/run-manual-tests.md).
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -1417,7 +1417,7 @@ Manage project-level permissions through the [web portal admin context](change-p
    `Project, PUBLISH_TEST_RESULTS`
    :::column-end:::
    :::column span="2":::
-   Can add and remove test results and add or modify test runs. For more information, see [Control how long to keep test results](../../test/how-long-to-keep-test-results.md) and [Run manual tests](../../test/run-manual-tests.md). 
+   Can add and remove test results and add or modify test runs. For more information, see [Set test retention policies](../../pipelines/policies/retention.md) and [Run manual tests](../../test/run-manual-tests.md).
    :::column-end:::
 :::row-end:::
 :::row:::

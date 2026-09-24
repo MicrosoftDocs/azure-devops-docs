@@ -1,7 +1,7 @@
 ---
 title: Symbol files
 description: Working with symbols
-ms.service: azure-devops-artifacts
+ms.service: azure-artifacts
 ms.topic: overview
 ms.date: 07/15/2021
 monikerRange: "<=azure-devops"

@@ -52,6 +52,8 @@ landingContent:
     linkLists:
       - linkListType: how-to-guide
         links:
+          - text: Troubleshoot Copilot code review
+            url: ../repos/git/copilot-code-reviews-faq.md?toc=/azure/devops/troubleshoot/toc.json
           - text: Troubleshoot code scanning (GitHub Advanced Security)
             url: ../repos/security/github-advanced-security-code-scanning-troubleshoot.md?toc=/azure/devops/troubleshoot/toc.json
           - text: Troubleshoot dependency scanning (GitHub Advanced Security)

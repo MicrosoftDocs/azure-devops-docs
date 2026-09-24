@@ -1,14 +1,14 @@
 ---
 title: Use Service Principals and Managed Identities
 titleSuffix: Azure DevOps
-description: Learn how to add and manage service principals and managed identities in your Azure DevOps organizations.
+description: Learn how to add a Microsoft Entra service principal or managed identity to Azure DevOps and authenticate automation securely.
 ms.subservice: azure-devops-security
-ms.custom: pat-reduction, copilot-scenario-highlight
+ms.custom: pat-reduction
 ai-usage: ai-assisted
 ms.topic: how-to
 ms.author: wonga
 author: wonga
-ms.date: 05/15/2026
+ms.date: 09/21/2026
 monikerRange: 'azure-devops'
 ---
 
@@ -16,477 +16,231 @@ monikerRange: 'azure-devops'
 
 [!INCLUDE [version-eq-azure-devops](../../../includes/version-eq-azure-devops.md)]
 
-Service principals and managed identities provide secure, scalable authentication for Azure DevOps automation workflows. These [Microsoft Entra](entra.md) identity types offer enhanced security over traditional personal access tokens (PATs). They use automatic credential management, shorter token lifespans, and enterprise-grade access controls.
+Use a Microsoft Entra service principal or managed identity for Azure DevOps automation that runs without a user. These application identities aren't tied to an employee account, and they acquire short-lived Microsoft Entra access tokens instead of personal access tokens (PATs).
 
-[!INCLUDE [ai-assistance-mcp-server-tip](../../../includes/ai-assistance-mcp-server-tip.md)]
+Managed identities and service principals have different credential-management requirements:
 
-## Benefits of service principals and managed identities
+| Identity | Best for | Credential management |
+|----------|----------|-----------------------|
+| Managed identity | Workloads hosted on Azure | Azure manages the identity and its credentials. Your application doesn't store a client secret. |
+| Service principal | Workloads outside Azure or workloads that need a portable application identity | Your application uses workload identity federation, a certificate, or a client secret. You manage certificates and client secrets. |
 
-### Enhanced security
-
-- **Short-lived tokens**: Microsoft Entra tokens expire every hour, which reduces exposure risk compared to PATs (which can last up to one year).
-- **Automatic rotation**: Managed identities handle credential rotation automatically.
-- **No stored secrets**: The need to store long-lived credentials in code or configuration is eliminated.
+Prefer a managed identity for an Azure-hosted workload. For a service principal, prefer workload identity federation or a certificate over a client secret when the hosting environment supports it.
 
 [!INCLUDE [use-microsoft-entra-reduce-pats](../../../includes/use-microsoft-entra-reduce-pats.md)]
 
-### Operational excellence
-
-- **Centralized management**: Control access through Microsoft Entra ID policies and Azure DevOps permissions.
-- **Audit capabilities**: Track authentication and access patterns through comprehensive logging.
-- **Scale efficiently**: Support enterprise automation scenarios without individual user dependencies.
-
-### Modern authentication
-
-- **Standards based**: Uses OAuth 2.0 and OpenID Connect protocols.
-- **Multifactor authentication support**: Inherits organizational security policies.
-- **Conditional access**: Applies advanced security policies based on context.
-
-## Understand service principals and managed identities
+## Understand application identities
 
 ### Service principals
 
-[Service principals](/entra/identity-platform/app-objects-and-service-principals) are Microsoft Entra objects that represent applications within a tenant. They define what an application can do, which resources it can access, and who can use it. Service principals are created automatically when you register an application in Microsoft Entra ID and provide a secure way for applications to authenticate and access resources.
+A [service principal](/entra/identity-platform/app-objects-and-service-principals) is the local representation of an application in a Microsoft Entra tenant. Registering an application creates a service principal in its home tenant. A multitenant application can also have a service principal in each tenant that consents to the application.
 
-#### Key characteristics
+A service principal can authenticate by using:
 
-- Are created through application registration in Microsoft Entra ID.
-- Support multitenant scenarios.
-- Require explicit credential management (certificates or client secrets).
-- Are ideal for applications that need to authenticate across different environments.
+- A federated identity credential, when supported by the hosting platform.
+- A certificate.
+- A client secret, which you must store and rotate securely.
 
 ### Managed identities
 
-[Managed identities](/entra/identity/managed-identities-azure-resources/overview) are a special type of service principal that Azure manages automatically. They eliminate the need for developers to manage credentials by providing an automatically managed identity in Microsoft Entra ID for Azure resources.
+A [managed identity](/entra/identity/managed-identities-azure-resources/overview) is a special type of service principal whose credentials Azure manages.
 
-#### Types of managed identities
+- A **system-assigned managed identity** belongs to one Azure resource and is deleted with that resource.
+- A **user-assigned managed identity** is a separate Azure resource that can be assigned to multiple resources and managed independently.
 
-System-assigned managed identity:
+## Prerequisites
 
-- Automatically created and tied to a specific Azure resource.
-- Lifecycle managed by Azure (deleted when the resource is deleted).
-- One-to-one relationship with the Azure resource.
-- Best for applications deployed on a single Azure resource.
+- An Azure DevOps organization connected to a Microsoft Entra tenant.
+- A service principal or managed identity in the tenant connected to the organization.
+- Permission to add users to the organization. A member of **Project Collection Administrators** can add an identity. A project or team administrator can add an identity when the [invitation policy](../../../organizations/security/restrict-invitations.md) allows it.
+- The permissions and access level required for the Azure DevOps resources that the identity accesses.
 
-User-assigned managed identity:
+## Create an identity
 
-- Created as a standalone Azure resource.
-- Can be assigned to multiple Azure resources.
-- Lifecycle managed independently of associated resources.
-- Best for applications that run on multiple resources or need shared identity.
+Choose the identity type that matches the workload's hosting environment.
 
-When to use each type:
+### Create a service principal
 
-- **Service principals**: Cross-cloud deployments, continuous integration and continuous delivery (CI/CD) pipelines, applications outside Azure.
-- **System-assigned managed identities**: Single Azure resource applications (Azure Functions, Azure App Service).
-- **User-assigned managed identities**: Multi-resource applications, shared identity scenarios.
-
-## Implementation guide
-
-Follow these steps to implement service principals or managed identities for Azure DevOps authentication. For complete code examples, see our [sample applications](https://github.com/microsoft/azure-devops-auth-samples/tree/master/ServicePrincipalsSamples).
-
-### Step 1: Create your identity
-
-Choose the appropriate identity type based on your deployment scenario.
-
-#### Option A: Create a service principal (application registration)
-
-Service principals work well for CI/CD pipelines, cross-cloud scenarios, and applications that need flexible deployment options.
-
-1. Register an application in the [Microsoft Entra admin center](https://entra.microsoft.com).
-1. Go to **App registrations** > **New registration**.
-1. Configure the application:
-
-   - **Name**: Use a descriptive name for your application.
-   - **Account types**: Select appropriate tenant support.
-   - **Redirect URI**: Leave blank for service-to-service scenarios.
-1. Create authentication credentials:
-
-   - **Recommended**: Upload a certificate for enhanced security.
-   - **Alternative**: Create a client secret (requires regular rotation).
+1. In the [Microsoft Entra admin center](https://entra.microsoft.com), select **App registrations** > **New registration**.
+1. Enter a descriptive name and select the supported account type for your application.
+1. Leave **Redirect URI** empty for a service-to-service application.
+1. Add a federated identity credential or certificate. Create a client secret only when the workload can't use a stronger credential.
 
 > [!IMPORTANT]
-> When you register an application, Azure creates both an application object and a service principal object. Use the *service principal's object ID* (found on the **Enterprise applications** pane) when you add it to Azure DevOps, not the application's object ID.
+> An app registration has an application object and a service principal object. When you add the identity to Azure DevOps, use the service principal's **Object ID** from **Enterprise applications**, not the application object's ID from **App registrations**.
 
-For more information, see the following articles:
+For more information, see [Application and service principal objects](/entra/identity-platform/app-objects-and-service-principals) and [Create a service principal](/entra/identity-platform/howto-create-service-principal-portal).
 
-- [Application and service principal objects in Microsoft Entra ID](/entra/identity-platform/app-objects-and-service-principals)
-- [Create a service principal](/entra/identity-platform/howto-create-service-principal-portal)
+### Create a managed identity
 
-#### Option B: Create a managed identity
+To enable a system-assigned managed identity:
 
-Managed identities provide the simplest authentication experience for Azure-hosted applications.
+1. In the Azure portal, open the Azure resource that hosts your workload.
+1. Select **Identity** > **System assigned**.
+1. Set **Status** to **On**, and then select **Save**.
 
-For system-assigned managed identity:
+To create and assign a user-assigned managed identity:
 
-1. Go to your Azure resource, such as App Service or an Azure Functions app.
-1. Go to **Identity** > **System assigned**.
-1. Switch the status to **On**.
-1. Select **Save** to save the configuration.
+1. In the Azure portal, create a **Managed Identity** resource.
+1. Open the Azure resource that hosts your workload.
+1. Select **Identity** > **User assigned** > **Add**.
+1. Select the managed identity, and then select **Add**.
 
-For user-assigned managed identity:
+For more information, see [Manage user-assigned managed identities](/entra/identity/managed-identities-azure-resources/how-manage-user-assigned-managed-identities).
 
-1. Create the managed identity in the Azure portal.
-1. Go to **Create a resource** > **Managed Identity**.
-1. Configure basic settings and create the resource.
-1. Assign to resources as needed.
+## Add the identity to Azure DevOps
 
-> [!VIDEO https://learn-video.azurefd.net/vod/player?id=b9cf4e49-db98-4247-8770-b8707b043f17]
+You must explicitly add an application identity to each Azure DevOps organization that it accesses. Adding the identity only to a Microsoft Entra group doesn't make it available in Azure DevOps.
 
-For more information, see the following articles:
-
-- [Managed identities overview](/entra/identity/managed-identities-azure-resources/overview)
-- [Manage user-assigned managed identities](/entra/identity/managed-identities-azure-resources/how-manage-user-assigned-managed-identities)
-
-### Step 2: Add the identity to Azure DevOps
-
-After you create your identity in Microsoft Entra ID, add it to your Azure DevOps organization to grant access to resources.
-
-> [!IMPORTANT]
-> Service principals don't automatically appear in Azure DevOps. Adding a service principal to a Microsoft Entra security group doesn't grant access to your organization. A **Project Collection Administrator** (PCA) or **Project Administrator** (PA) must explicitly add the service principal to the organization and grant it the permissions required for its scenario. Follow [least-privilege principles](/entra/identity-platform/secure-least-privileged-access)—assign the service principal only to the specific project, team, or security group it needs.
-
-#### Prerequisites
-
-| Category | Requirement |
-|----------|-------------|
-| **Permissions** | Member of the **Project Collection Administrators** group. |
-| **Permissions** | **Project Administrator** or **Team Administrator** role, when the [invite policy](/azure/devops/organizations/security/restrict-invitations) allows team admins to add users. |
-
-#### Add the identity
-
-To add the identity through the Azure DevOps portal:
-
-1. Go to **Organization Settings** > **Users**.
+1. In Azure DevOps, select **Organization settings** > **Users**.
 1. Select **Add users**.
-1. Enter the display name of your service principal or managed identity.
-1. Select the appropriate access level and project access.
-1. Send the invitation.
+1. Enter the display name of the service principal or managed identity.
+1. Select the required access level and projects. Azure Repos access requires **Basic** or a higher functional access level. Visual Studio subscription benefits don't apply to application identities.
+1. Select **Add**. Azure DevOps doesn't send an invitation email to an application identity.
 
-   ![Screenshot that shows service principals and managed identities in the Users Hub.](./media/users-hub-sps.png)
+   ![Screenshot of service principal and managed identity entries on the Users page.](media/users-hub-sps.png)
 
-Add the identity programmatically:
+To automate this step, use the [Service Principal Entitlements API](/rest/api/azure/devops/memberentitlementmanagement/service-principal-entitlements?view=azure-devops-rest-7.1&preserve-view=true).
 
-Use the [ServicePrincipalEntitlements REST API](/rest/api/azure/devops/memberentitlementmanagement/service-principal-entitlements?view=azure-devops-rest-7.1&preserve-view=true) to automate the process.
+## Configure access
 
-Other considerations:
+Azure DevOps doesn't use Microsoft Entra application permissions to authorize an application identity. Assign an access level, Azure DevOps group memberships, and resource permissions just as you would for another organization member.
 
-- **Find the correct ID:** Use the service principal's object ID on the **Enterprise applications** pane in the Microsoft Entra admin center, not the application registration's object ID.
-- **Tenant restrictions:** You can add identities only from the same tenant to which your Azure DevOps organization is connected. For cross-tenant scenarios, see the [FAQ workaround](#q-can-i-add-a-managed-identity-from-a-different-tenant-to-my-organization).
+Follow these practices:
 
-### Step 3: Configure permissions
+- Assign the lowest access level that supports the scenario.
+- Add the identity to a purpose-specific Azure DevOps group instead of assigning many permissions directly.
+- Grant access only to the required projects and resources.
+- Review the identity's permissions and group memberships regularly.
 
-Configure granular permissions for your service principal or managed identity within Azure DevOps. Unlike other Azure services, Azure DevOps uses its own permission model rather than Microsoft Entra application permissions.
+For programmatic lookup and management, see the [Service Principal Graph API](/rest/api/azure/devops/graph/service-principals?view=azure-devops-rest-7.1&preserve-view=true).
 
-Permission options:
+## Acquire and use an access token
 
-- **Direct assignment**: Assign permissions directly to the identity.
-- **Group membership**: Add to Azure DevOps or Microsoft Entra security groups.
-- **Access levels**: Assign the appropriate license level (Basic, Basic + Test Plans, or Visual Studio subscriber).
+Request an access token for the Azure DevOps resource, and send it in the `Authorization` header as a bearer token. Treat access tokens as opaque. Don't depend on a fixed lifetime or decode claims from the token. Reuse the credential object so the Azure Identity library can cache tokens and acquire a new token when necessary.
 
-Best practices:
+The following .NET examples require the [Azure.Identity package](/dotnet/api/overview/azure/identity-readme).
 
-- **Apply least privilege**: Grant only the minimum permissions needed.
-- **Use groups**: Manage permissions through groups for easier maintenance.
-- **Regular reviews**: Audit permissions periodically.
+### Service principal with a certificate
 
-> [!VIDEO https://learn-video.azurefd.net/vod/player?id=e8ee6f58-3939-4170-b112-0ca1b39b0298]
-
-Permission management options:
-
-- **Azure DevOps portal**: Select **Organization settings** > **Permissions**.
-- **REST APIs**: Use [Service Principal Graph APIs](/rest/api/azure/devops/graph/service-principals?view=azure-devops-rest-7.1&preserve-view=true) for programmatic management.
-
-> [!IMPORTANT]
-> **Azure DevOps versus Microsoft Entra permissions:** Azure DevOps doesn't use Microsoft Entra ID application permissions. All access control is managed through the Azure DevOps permission system, which allows for granular project and resource-level permissions.
-
-### Step 4: Get Microsoft Entra ID tokens
-
-Get access tokens to authenticate your applications with Azure DevOps APIs and services.
-
-#### For service principals
-
-Use client credentials flow:
-
-```http
-POST https://login.microsoftonline.com/{tenant-id}/oauth2/v2.0/token
-Content-Type: application/x-www-form-urlencoded
-
-client_id={client-id}
-&scope=https://app.vssps.visualstudio.com/.default
-&client_secret={client-secret}
-&grant_type=client_credentials
-```
-
-Use certificate authentication (recommended):
+Set `AZURE_TENANT_ID`, `AZURE_CLIENT_ID`, and `AZURE_CLIENT_CERTIFICATE_PATH` in the workload's secure configuration.
 
 ```csharp
-using Microsoft.Identity.Client;
-
-var app = ConfidentialClientApplicationBuilder
-    .Create(clientId)
-    .WithCertificate(certificate)
-    .WithAuthority(new Uri($"https://login.microsoftonline.com/{tenantId}"))
-    .Build();
-
-var result = await app
-    .AcquireTokenForClient(new[] { "https://app.vssps.visualstudio.com/.default" })
-    .ExecuteAsync();
-
-string accessToken = result.AccessToken;
-```
-
-#### For managed identities
-
-From Azure resources:
-
-```csharp
-using Azure.Identity;
 using Azure.Core;
-
-var credential = new ManagedIdentityCredential();
-var tokenRequest = new TokenRequestContext(new[] { "https://app.vssps.visualstudio.com/.default" });
-var token = await credential.GetTokenAsync(tokenRequest);
-
-string accessToken = token.Token;
-```
-
-Use Azure Instance Metadata Service:
-
-```http
-GET http://169.254.169.254/metadata/identity/oauth2/token?api-version=2019-0801&resource=https://app.vssps.visualstudio.com/
-Metadata: true
-```
-
-#### Azure CLI for ad hoc operations
-
-For one-time operations or testing, use the Azure CLI:
-
-```bash
-# For service principal
-az login --service-principal --username {client-id} --password {client-secret} --tenant {tenant-id}
-az account get-access-token --scope https://app.vssps.visualstudio.com/.default
-
-# For managed identity (from Azure resource)
-az login --identity
-az account get-access-token --scope https://app.vssps.visualstudio.com/.default
-```
-
-For more information, see [Acquire Microsoft Entra tokens](../../../cli/entra-tokens.md#get-a-token-for-a-service-principal).
-
-### Step 5: Use tokens with Azure DevOps
-
-Use your acquired tokens to authenticate REST API calls and other Azure DevOps operations.
-
-Make authenticated API calls:
-
-```csharp
-using System.Net.Http;
+using Azure.Identity;
 using System.Net.Http.Headers;
 
-var client = new HttpClient();
-client.DefaultRequestHeaders.Authorization = 
-    new AuthenticationHeaderValue("Bearer", accessToken);
+string RequiredSetting(string name) =>
+    Environment.GetEnvironmentVariable(name)
+    ?? throw new InvalidOperationException($"Missing {name}.");
 
+// Create a service-principal credential from a certificate.
+var credential = new ClientCertificateCredential(
+    RequiredSetting("AZURE_TENANT_ID"),
+    RequiredSetting("AZURE_CLIENT_ID"),
+    RequiredSetting("AZURE_CLIENT_CERTIFICATE_PATH"));
+
+var token = await credential.GetTokenAsync(new TokenRequestContext(
+    new[] { "https://app.vssps.visualstudio.com/.default" }));
+
+// Call Azure DevOps with the Microsoft Entra token.
+using var client = new HttpClient();
+client.DefaultRequestHeaders.Authorization =
+    new AuthenticationHeaderValue("Bearer", token.Token);
 var response = await client.GetAsync(
-    "https://dev.azure.com/{organization}/_apis/projects?api-version=7.2");
+    "https://dev.azure.com/{organization}/_apis/projects?api-version=7.1");
+response.EnsureSuccessStatusCode();
+Console.WriteLine(await response.Content.ReadAsStringAsync());
 ```
 
-#### Video examples
+### User-assigned managed identity
 
-> [!VIDEO https://learn-video.azurefd.net/vod/player?id=8397f848-b946-4c30-8d0c-78aa4784a549]
+Set `AZURE_CLIENT_ID` to the client ID of the user-assigned managed identity. Assign that identity to the Azure resource that hosts the application.
 
-> [!VIDEO https://learn-video.azurefd.net/vod/player?id=f4a20e00-c2df-49cc-9b86-7454bd84b9ce]
+```csharp
+using Azure.Core;
+using Azure.Identity;
+using System.Net.Http.Headers;
 
-#### Common integration scenarios
+var managedIdentityClientId =
+    Environment.GetEnvironmentVariable("AZURE_CLIENT_ID")
+    ?? throw new InvalidOperationException("Missing AZURE_CLIENT_ID.");
 
-- **NuGet feeds**: Connect with [NuGet.exe](../../../artifacts/nuget/nuget-exe.md) or [dotnet CLI](../../../artifacts/nuget/dotnet-setup.md).
-- **Marketplace publishing**: [Publish extensions via command line](../../../extend/publish/command-line.md).
-- **Azure Pipelines**: [Access Azure DevOps with Entra workload identity](../../../pipelines/library/add-devops-entra-service-connection.md).
-- **Git operations**: [Clone repositories with the Git Credential Manager](../../../repos/git/set-up-credential-managers.md).
+// Select the user-assigned identity explicitly.
+var credential = new ManagedIdentityCredential(
+    ManagedIdentityId.FromUserAssignedClientId(managedIdentityClientId));
+var token = await credential.GetTokenAsync(new TokenRequestContext(
+    new[] { "https://app.vssps.visualstudio.com/.default" }));
 
-For complete code examples, see our [sample applications](https://github.com/microsoft/azure-devops-auth-samples/tree/master/ServicePrincipalsSamples).
+// Call Azure DevOps with the Microsoft Entra token.
+using var client = new HttpClient();
+client.DefaultRequestHeaders.Authorization =
+    new AuthenticationHeaderValue("Bearer", token.Token);
+var response = await client.GetAsync(
+    "https://dev.azure.com/{organization}/_apis/projects?api-version=7.1");
+response.EnsureSuccessStatusCode();
+Console.WriteLine(await response.Content.ReadAsStringAsync());
+```
 
-## Management considerations
+For a system-assigned managed identity, construct the credential with `ManagedIdentityId.SystemAssigned` instead. For more token-acquisition options, see [Acquire Microsoft Entra tokens](../../../cli/entra-tokens.md).
 
-Service principals and managed identities have different management characteristics compared to user accounts.
+## Manage application identities
 
-#### Licensing
+### Licensing
 
-- Each identity requires a license in every organization it joins.
-- [Multi-organization billing](../../../organizations/billing/buy-basic-access-add-users.md?#pay-for-a-user-once-across-multiple-organizations) doesn't apply to service principals.
-- Group-based licensing rules don't automatically apply. You must assign licenses directly.
+- Assign an access level directly to each application identity.
+- Each identity consumes a license in every organization where it's assigned a paid access level.
+- Multi-organization billing and Visual Studio subscription benefits for users don't apply to application identities.
 
-#### Identity management
+### Identity lifecycle
 
-- Email addresses aren't used, so there are no invitations via email.
-- Display names or avatars aren't modified in Azure DevOps.
-- Display names are inherited from Microsoft Entra ID.
+- Application identities don't have email addresses and don't receive invitations.
+- They can't sign in interactively or use the Azure DevOps web portal.
+- They can't create PATs or SSH keys, create organizations, or use Azure DevOps OAuth flows.
+- Removing an application identity from Microsoft Entra ID doesn't automatically remove its Azure DevOps membership. Remove stale identities from Azure DevOps as part of deprovisioning.
 
-#### Group membership
+### Conditional Access
 
-- Can be added to Microsoft Entra groups and Azure DevOps groups.
-- Has a technical limitation that prevents display in Microsoft Entra group member lists (UI limitation only).
-- Can still inherit permissions from Microsoft Entra groups to which they belong.
-
-#### Materialization
-
-- Must be explicitly added to organizations (no automatic materialization like users).
-- Required because service principals can't sign in interactively.
-
-## Key differences from user accounts
-
-Service principals and managed identities have specific limitations compared to regular users.
-
-#### Capabilities
-
-- ✅ Generate Microsoft Entra tokens for API access.
-- ✅ Access Azure DevOps resources with proper permissions.
-- ✅ Join security groups and teams.
-- ❌ Create PATs or Secure Shell keys.
-- ❌ Sign in interactively or access via a web UI.
-- ❌ Create or own organizations.
-- ❌ Support [Azure DevOps OAuth](./oauth.md) flows.
-
-#### Billing
-
-- Counted as a separate license in each organization. (There's no multi-organization discount.)
-- Must assign access level directly. (Group rules don't apply automatically.)
+[Conditional Access for workload identities](/entra/identity/conditional-access/workload-identity) can target service principals under its supported conditions and licensing requirements. It doesn't support managed identities. User controls such as multifactor authentication and device compliance don't apply to non-user identities.
 
 ## Frequently asked questions
 
-### Q. Why should I use a service principal or managed identity instead of a PAT?
+### Why use an application identity instead of a PAT?
 
-A. Service principals and managed identities offer significant security advantages over PATs.
+An application identity isn't tied to a user's employment lifecycle. It requests short-lived access tokens and can be governed separately in Microsoft Entra ID and Azure DevOps. Managed identities don't require an application secret. Service principals still require credential management unless they use workload identity federation.
 
-Security benefits:
+### What rate limits apply?
 
-- **Shorter lifespan**: Microsoft Entra tokens expire hourly compared to PATs, which can last up to a year.
-- **Automatic rotation**: Managed identities rotate credentials automatically.
-- **No shared secrets**: The risk of storing or accidentally exposing long-lived tokens is eliminated.
-- **Centralized control**: Managed through Microsoft Entra ID with enterprise security policies.
+Service principals and managed identities have the same [Azure DevOps rate limits](../../concepts/rate-limits.md) as users.
 
-Operational benefits:
+### How is an application identity billed?
 
-- **Audit trail**: Logs authentication and access patterns completely.
-- **Conditional access**: Applies policies based on location, device, and risk factors.
-- **No service accounts**: Eliminates dependency on individual user accounts for automation.
+Assign an access level based on the features the identity needs. A paid access level is billed separately in every organization. Group-based licensing, multi-organization user billing, and Visual Studio subscription benefits don't apply.
 
-For migration examples, see [Replace PATs with Microsoft Entra tokens](entra.md#migration-from-legacy-authentication).
+### Can I add an identity from a different tenant?
 
-### Q. What are the rate limits on service principals and managed identities?
+The service principal or managed identity object that you add must exist in the Microsoft Entra tenant connected to the Azure DevOps organization. You can't add a managed identity directly from another tenant.
 
-A. Service principals and managed identities have the same [rate limits](../../concepts/rate-limits.md) as users.
+### Why can't the identity access an Azure Repos repository?
 
-### Q. Will using this feature cost more?
+Confirm that the identity has **Basic** access or higher, membership in the project, and permission to access the repository. **Stakeholder** access doesn't include Azure Repos.
 
-A. Service principals and managed identities are priced like users based on access level. Key differences are:
+### Why can't Azure DevOps find my service principal?
 
-- **No multi-organization billing discount**: Each identity counts as a separate license in every organization.
-- **License assignment**: Access levels must be assigned directly. (Group rules don't apply automatically.)
-- **Same pricing tiers**: Basic, Basic + Test Plans, and Visual Studio subscriber rates apply.
+In the Microsoft Entra admin center, select **Enterprise applications**, open the application, and use its **Object ID**. Don't use the object ID from **App registrations**.
 
-### Q. Can I add a managed identity from a different tenant to my organization?
+### Why does the Graph API return an empty or incomplete list?
 
-A. You can add identities directly from your organization's connected tenant only. For cross-tenant scenarios, use this workaround.
+Follow the API's `continuationToken` values until no continuation token is returned. A service principal might appear on a later page.
 
-To set up a cross-tenant managed identity:
+### How do I resolve `TF401444: Sign-in required`?
 
-1. Create a user-assigned managed identity in the resource tenant.
-1. Assign it to an Azure resource, such as a virtual machine or a Functions app).
-1. Create a key vault and generate a certificate (non-PEM format).
-1. Grant managed identity access to the key vault with the **Get** and **List** secret permissions.
-1. Download the certificate in CER format (public key only).
-1. Register the application in the target tenant.
-1. Upload the certificate to application registration.
-1. Add the service principal to the Azure DevOps organization.
-1. Configure authentication by using the certificate from the key vault.
+Add the application identity explicitly to the Azure DevOps organization, assign an access level, and grant the required project and resource permissions.
 
-```csharp
-// Example: Acquire token using managed identity certificate
-public static async Task<string> GetSecret(string keyVaultName, string secretName)
-{
-    var keyVaultUri = new Uri($"https://{keyVaultName}.vault.azure.net");
-    var client = new SecretClient(keyVaultUri, new ManagedIdentityCredential());
-    var keyVaultSecret = await client.GetSecretAsync(secretName);
-    return keyVaultSecret.Value.Value;
-}
+## Related articles
 
-private static async Task<AuthenticationResult> GetAppRegistrationAADAccessToken(
-    string applicationClientID, string appTenantId)
-{
-    byte[] privateKeyBytes = Convert.FromBase64String(await GetSecret(keyVaultName, secretName));
-    var certificate = new X509Certificate2(privateKeyBytes, (string)null, X509KeyStorageFlags.MachineKeySet);
-
-    var app = ConfidentialClientApplicationBuilder.Create(applicationClientID)
-        .WithCertificate(certificate)
-        .WithAuthority(new Uri($"https://login.microsoftonline.com/{appTenantId}"))
-        .Build();
-
-    var result = await app.AcquireTokenForClient(
-        new[] { "499b84ac-1321-427f-aa17-267ca6975798/.default" })
-        .ExecuteAsync();
-
-    return result;
-}
-```
-
-> [!IMPORTANT]
-> Rotate certificates regularly for security best practices.
-
-## Common errors and solutions
-
-### The Git repository with name or identifier doesn't exist or you don't have permissions
-
-**Solution:** Ensure that the service principal has at least a Basic license. Stakeholder licenses don't provide repository access.
-
-### Failed to create service principal with object ID
-
-**Solution:** Verify that you're using the service principal's object ID from the **Enterprise applications** pane, not the application registration's object ID.
-
-To find the correct ID:
-
-1. Go to **Microsoft Entra admin center** > **Enterprise applications**.
-1. Search for your application name.
-1. Use the object ID on the **Enterprise applications** pane.
-
-### Access denied: Needs permissions to add users
-
-Possible causes and solutions:
-
-- **Insufficient role**: Must be a project collection administrator (PCA) or a project or team administrator with invite permissions enabled.
-- **Policy restriction**: Check if the [Allow team and project administrators to invite new users](../../../organizations/security/restrict-invitations.md) policy is enabled.
-- **License assignment**: Project admins can't assign licenses during invitation. Contact the PCA for license changes.
-
-### Azure DevOps Graphs List API returns empty list
-
-**Solution:** Use `continuationToken` to iterate through all pages. Service principals might appear on later pages because of API pagination behavior.
-
-### TF401444: Sign-in required error
-
-**Solution:** Ensure that the service principal is added properly to the organization with required permissions. This error indicates that the identity isn't recognized in the organization.
-
-<a id="use-ai-assistance"></a>
-
-## Use AI for service principal and managed identity setup
-
-If you have the [Azure DevOps MCP Server](../../../mcp-server/mcp-server-overview.md) connected to your AI agent in agent mode, you can use natural language prompts to set up and troubleshoot service principal and managed identity authentication.
-
-| Task | Example prompt |
-|------|----------------|
-| Set up managed identity | `Walk me through setting up a managed identity for an Azure Function that needs to access Azure DevOps APIs` |
-| Create a service principal | `Show me how to create a service principal in Microsoft Entra ID and add it to my Azure DevOps organization with the correct permissions` |
-| Acquire a token | `Write C# code to acquire a Microsoft Entra token for Azure DevOps using a service principal with certificate authentication` |
-| Cross-tenant access | `How do I configure a service principal to access Azure DevOps in a different tenant?` |
-| Troubleshoot auth errors | `I'm getting a VssUnauthorizedException when using a managed identity to call Azure DevOps APIs — help me troubleshoot` |
-| Migrate from PATs | `Help me migrate my Azure DevOps automation from PAT-based authentication to a managed identity for an Azure-hosted application` |
-
-> [!NOTE]
-> Agent mode and the MCP Server use natural language, so you can adjust these prompts or ask follow-up questions to refine the results.
-
-## Related content
-
-- [Sample applications and code examples](https://github.com/microsoft/azure-devops-auth-samples/tree/master/ServicePrincipalsSamples)
-- [Service Principal Entitlements API reference](/rest/api/azure/devops/memberentitlementmanagement/service-principal-entitlements?view=azure-devops-rest-7.1&preserve-view=true)
-- [Service Principal Graph API reference](/rest/api/azure/devops/graph/service-principals?view=azure-devops-rest-7.1&preserve-view=true)
-- [Microsoft Entra authentication options](entra.md)
-- [Authentication guidance for Azure DevOps](authentication-guidance.md)
+- [Authentication methods for Azure DevOps integrations](authentication-guidance.md)
+- [Microsoft Entra authentication](entra.md)
+- [Sample applications for service principals](https://github.com/microsoft/azure-devops-auth-samples/tree/master/ServicePrincipalsSamples)
+- [Service Principal Entitlements API](/rest/api/azure/devops/memberentitlementmanagement/service-principal-entitlements?view=azure-devops-rest-7.1&preserve-view=true)
+- [Access Azure DevOps with a workload identity](../../../pipelines/library/add-devops-entra-service-connection.md)

@@ -1,7 +1,7 @@
 ---
 title: Create a Managed DevOps Pool using Azure CLI
 description: Learn how to create a Managed DevOps Pool using Azure CLI.
-ms.date: 04/30/2025
+ms.date: 07/01/2026
 ms.topic: quickstart
 ms.custom: peer-review-program
 #Customer intent: As a developer, I want to learn how to create a Managed DevOps Pool using Azure CLI and run a pipeline in the new pool.
@@ -52,6 +52,9 @@ Open a command prompt (on Windows, use Windows Command Prompt or PowerShell) and
 ## Define environment variables
 
 1. Run the following commands to generate the names for the resources in this quickstart. This example uses the `EastUS2` region. Replace `EastUS2` with your desired region.
+
+   > [!IMPORTANT]
+   > The name of the Managed DevOps Pool, specified by the `POOL_NAME` variable in this example, must be globally unique in Azure.
 
     ```bash
     export REGION=EastUS2

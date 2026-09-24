@@ -1,7 +1,11 @@
 ---
+ms.service: azure-boards
+ms.author: chcomley
+author: chcomley
 ms.topic: include
+ms.date: 07/16/2026
 ---
  
 > [!IMPORTANT]   
-> Work items that appear on more than one team's board can yield results that don't meet your expectations because each team can customize its board columns and swimlanes. The values assigned to **Board Column**, **Board Column Done**, and **Board Lane** fields might differ from what you expect when another team updates the work item from a different board. For more information, see [Add, review, and update work items in Azure Boards](../boards/kanban-overview.md).
+> If a work item appears on more than one team's board, updates can produce unexpected results. Each team can customize board columns and swimlanes, so **Board Column**, **Board Column Done**, and **Board Lane** values can change when another team updates the same item from its board. For more information, see [Add, review, and update work items in Azure Boards](../boards/kanban-overview.md).
  

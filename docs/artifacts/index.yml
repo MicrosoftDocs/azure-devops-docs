@@ -1,16 +1,16 @@
 ### YamlMime:Landing
 
 title: Azure Artifacts documentation
-summary: Create, host, and share NuGet, npm, Maven, Python, Cargo, and Universal Packages with Azure Artifacts for seamless package management and collaboration across projects and organizations.
+summary: Create, host, and share NuGet, npm, Maven, Python, Cargo, and Universal Packages with Azure Artifacts. Manage feeds, configure upstream sources, and support package publishing and consumption across teams and organizations.
 
 metadata:
   title: Azure Artifacts documentation
-  description: Create, host, and share NuGet, npm, Maven, Python, Cargo, and Universal Packages with Azure Artifacts for seamless package management and collaboration across projects and organizations. 
-  ms.service: azure-devops-artifacts
+  description: Create, host, and share NuGet, npm, Maven, Python, Cargo, and Universal Packages with Azure Artifacts. Learn how to manage feeds, publish and restore packages, configure upstream sources, and support package workflows across teams and organizations.
+  ms.service: azure-artifacts
   ms.topic: landing-page 
   ms.author: rabououn
   author: ramiMSFT
-  ms.date: 02/11/2025
+  ms.date: 07/13/2026
 
 # linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
 # Schema location: https://static.docs.com/ui/latest/schemas/Landing.schema.json
@@ -24,13 +24,13 @@ landingContent:
       - linkListType: concept
         links:
           - text: What is Azure Artifacts?
-            url: ./start-using-azure-artifacts.md
-          - text: Limits on package sizes and counts
-            url: reference/limits.md
-          - text: Best practices
-            url: ./concepts/best-practices.md
+            url: start-using-azure-artifacts.md
           - text: Key concepts
             url: artifacts-key-concepts.md
+          - text: Best practices
+            url: concepts/best-practices.md
+          - text: Package sizes and count limits
+            url: reference/limits.md
       - linkListType: quickstart
         links:
           - text: Publish your first package
@@ -44,25 +44,51 @@ landingContent:
     - linkListType: concept
       links:
         - text: What are feeds?
-          url: ./concepts/feeds.md
+          url: concepts/feeds.md
         - text: What are feed views?
-          url: ./concepts/views.md
+          url: concepts/views.md
+        - text: Feed scopes
+          url: feeds/project-scoped-feeds.md
     - linkListType: quickstart
       links:
-        - text: Promote packages and manage views
+        - text: Promote packages and manage feed views
           url: feeds/views.md
-        - text: Use public feeds to share your packages publicly
-          url: tutorials/share-packages-publicly.md
+        - text: Delete and recover packages
+          url: how-to/delete-and-recover-packages.md
+        - text: Package badges
+          url: package-badges.md
+  - title: Project Setup
+    linkLists:
+      - linkListType: how-to-guide
+        links:
+          - text: dotnet
+            url: nuget/dotnet-setup.md
+          - text: NuGet
+            url: nuget/nuget-exe.md
+          - text: npm
+            url: npm/npmrc.md
+          - text: Maven
+            url: maven/project-setup-maven.md
+          - text: Gradle
+            url: maven/project-setup-gradle.md
+          - text: Python
+            url: python/project-setup-python.md
+          - text: Universal Packages
+            url: universal-packages/project-setup-universal-packages.md
+          - text: Cargo
+            url: cargo/project-setup-cargo.md
   - title: Publish
     linkLists:
       - linkListType: how-to-guide
         links:
-          - text: NuGet
-            url: nuget/publish.md
           - text: dotnet
             url: nuget/dotnet-exe.md
+          - text: NuGet
+            url: nuget/publish.md
           - text: npm
             url: npm/publish.md
+          - text: Maven
+            url: maven/publish-packages-maven.md
           - text: Gradle
             url: maven/publish-with-gradle.md
           - text: Python
@@ -70,17 +96,17 @@ landingContent:
           - text: Universal Packages
             url: quickstarts/universal-packages.md
           - text: Cargo
-            url: get-started-cargo.md
+            url: cargo/cargo-publish.md
   - title: Restore
     linkLists:
       - linkListType: how-to-guide
         links:
-          - text: NuGet
-            url: nuget/restore-nuget-packages-nuget-exe.md
           - text: dotnet
             url: nuget/restore-nuget-packages-dotnet.md
+          - text: NuGet
+            url: nuget/restore-nuget-packages-nuget-exe.md
           - text: npm
-            url: npm/publish.md
+            url: npm/restore-npm-packages.md
           - text: Maven
             url: maven/install.md
           - text: Python
@@ -88,33 +114,29 @@ landingContent:
           - text: Universal Packages
             url: quickstarts/download-universal-packages.md
           - text: Cargo
-            url: get-started-cargo.md
+            url: cargo/cargo-restore.md
   - title: Upstream sources
     linkLists:
       - linkListType: overview
         links:
-          - text: Upstream sources overview
+          - text: What are upstream sources?
             url: concepts/upstream-sources.md
+          - text: Safeguard against malicious public packages
+            url: concepts/upstream-behavior.md
+          - text: Package graphs
+            url: concepts/package-graph.md
       - linkListType: how-to-guide
         links:
           - text: Set up upstream sources
             url: how-to/set-up-upstream-sources.md
-          - text: Use upstream sources with public feeds
-            url: how-to/public-feeds-upstream-sources.md
+          - text: Upstream from internal feeds
+            url: how-to/upstream-internal-feed.md
           - text: Search for packages in upstream sources
             url: how-to/search-upstream.md
-          - text: Use packages from NuGet.org
-            url: nuget/upstream-sources.md
-          - text: Use packages from npmjs.com
-            url: npm/upstream-sources.md
-          - text: Use packages from Maven Central
-            url: maven/upstream-sources.md
-          - text: Use packages from PyPi
-            url: python/use-packages-from-pypi.md
-          - text: Universal Packages upstream sources
-            url: universal-packages/universal-packages-upstream.md
-          - text: Use packages from Crates.io
-            url: cargo/cargo-upstream-source.md
+          - text: Use upstream sources with public feeds
+            url: how-to/public-feeds-upstream-sources.md
+          - text: Restore packages from upstream sources
+            url: tutorials/protect-oss-packages-with-upstream-sources.md
   - title: Security
     linkLists:
       - linkListType: concept
@@ -129,6 +151,8 @@ landingContent:
         links:
           - text: Overview
             url: ../pipelines/artifacts/artifacts-overview.md
+          - text: Artifact sources
+            url: ../pipelines/release/artifacts.md
       - linkListType: quickstart
         links:
           - text: Publish and download pipeline artifacts
@@ -156,12 +180,30 @@ landingContent:
       - linkListType: concept
         links:
           - text: What are symbol files?
-            url: ./concepts/symbols.md
+            url: concepts/symbols.md
       - linkListType: how-to-guide
         links:
           - text: Debug with Visual Studio
-            url: ./symbols/debug-with-symbols-visual-studio.md
+            url: symbols/debug-with-symbols-visual-studio.md
           - text: Debug with WinDbg
-            url: ./symbols/debug-with-symbols-windbg.md
+            url: symbols/debug-with-symbols-windbg.md
           - text: Publish symbols with Azure Pipelines
             url: ../pipelines/artifacts/symbols.md
+  - title: Examples
+    linkLists:
+      - linkListType: how-to-guide
+        links:
+          - text: NuGet
+            url: get-started-nuget.md
+          - text: npm
+            url: get-started-npm.md
+          - text: Maven
+            url: get-started-maven.md
+          - text: Python
+            url: quickstarts/python-packages.md
+          - text: Universal Packages
+            url: quickstarts/universal-packages.md
+          - text: Cargo
+            url: get-started-cargo.md
+          - text: Use an Azure Artifacts feed as a private PowerShell repository
+            url: tutorials/private-powershell-library.md

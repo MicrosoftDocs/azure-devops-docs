@@ -1,7 +1,7 @@
 ---
 title: Features timeline and roadmap
 description: Learn about new features in Managed DevOps Pools.
-ms.date: 05/13/2026
+ms.date: 09/22/2026
 ms.topic: overview
 #Customer intent: As a platform engineer, I want to understand the new features in Managed DevOps Pools.
 ---
@@ -12,17 +12,23 @@ ms.topic: overview
 
 The following section describes new features in development for Managed DevOps Pools.
 
-* **Purge agents**: We're adding the ability for you to manually recycle your agents if desired. **Planned for June 2026.**
+* **Purge agents**: We're adding the ability for you to manually recycle your agents if desired. **Planned for October 2026.**
 
-* **Pool Alias**: We're adding the ability to add an Azure DevOps Pool name in addition to the Azure resource name to address [this ask from our community](https://developercommunity.visualstudio.com/t/Managed-Devops-Pools-Custom-agent-pool/10834336). **Planned for June 2026.**
-
-* **Spot Virtual Machines instances**: Reduce your Azure cost [by up to 90%](/azure/architecture/guide/spot/spot-eviction#understand-spot-vm-pricing) by switching your non-time-critical pipelines to Spot Virtual Machines. CI/CD workloads make ideal candidates to use Spot Virtual Machines due to the ephemeral nature of CI/CD agents. For more information on Spot Virtual Machines, see [Spot Virtual Machines overview](https://azure.microsoft.com/products/virtual-machines/spot). **Planned for June 2026.**
-
-* **Custom Startup Script**: We are adding the option to run a PowerShell script (Windows) or a shell script (Linux) for every image in a pool before they are assigned to an agent, to enable scenarios such as installing Trusted root CAs and setting environment variables. **Planned for June 2026**.
-
-* **Instance Mix**: Instance Mix allows you to specify multiple Virtual Machine sizes for a single Managed DevOps Pool. Instead of being limited to a single VM SKU, you can define up to five VM sizes, increasing the likelihood of successful provisioning and providing more flexibility in how compute resources are allocated across the pool. This feature is built on top of [Azure Virtual Machine Scale Sets Instance Mix capabilities](/azure/virtual-machine-scale-sets/instance-mix-overview) and primarily helps improve resiliency and provisioning reliability. **Planned for late 2026.**
+* **Spot Virtual Machines instances**: Reduce your Azure cost [by up to 90%](/azure/architecture/guide/spot/spot-eviction#understand-spot-vm-pricing) by switching your non-time-critical pipelines to Spot Virtual Machines. CI/CD workloads make ideal candidates to use Spot Virtual Machines due to the ephemeral nature of CI/CD agents. For more information on Spot Virtual Machines, see [Spot Virtual Machines overview](https://azure.microsoft.com/products/virtual-machines/spot). **Planned for Late 2026.**
 
 * **Container agents**: We're adding support for provisioning a container and starting the agent inside the container. **Planned for late 2026.**
+
+## September 2026
+
+* **Customize the Azure DevOps pool descriptions**: You can now allow Managed DevOps Pools to update the description of the associated Azure DevOps agent pool with either a default or custom description. For more information, see [Configure Azure DevOps pool description](./configure-security.md#configure-azure-devops-pool-description).
+
+* **Instance Mix**: Instance Mix allows you to specify multiple Azure Virtual Machine (VM) sizes for a single Managed DevOps Pool. Instead of being limited to a single VM size, you can define up to five VM sizes. This feature increases the likelihood of successful provisioning and provides more flexibility in how compute resources are allocated across the pool. This feature is built on top of [Azure Virtual Machine Scale Sets Instance Mix capabilities](/azure/virtual-machine-scale-sets/instance-mix-overview) and primarily helps improve resiliency and provisioning reliability. For more information, see [Configure pool settings: Agent size instance mix](./configure-pool-settings.md#instance-mix).
+
+* **Custom Startup Script**: We've added the option to run a PowerShell script (Windows) or a shell script (Linux) for every image in a pool before they're assigned to an agent. This feature enables scenarios such as installing Trusted root CAs and setting environment variables. For more information, see [Configure provisioning scripts](./configure-provisioning-scripts.md).
+
+## June 2026
+
+* **Pool Alias**: You can add an Azure DevOps Pool name in addition to the Azure resource name to address [this ask from our community](https://developercommunity.visualstudio.com/t/Managed-Devops-Pools-Custom-agent-pool/10834336). For more information, see [Configure pool aliases](./configure-security.md#configure-pool-aliases).
 
 ## April 2026
 

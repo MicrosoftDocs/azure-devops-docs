@@ -3,7 +3,7 @@ title: Add a Custom Field to an Inherited Process
 titleSuffix: Azure DevOps Services
 description: Learn how to add a custom field to the web form of a work item type for an Inheritance process model and apply it to a project. 
 ms.custom: inherited-process
-ms.service: azure-devops-boards
+ms.service: azure-boards
 ms.author: chcomley
 author: chcomley
 ms.topic: quickstart

@@ -2,7 +2,7 @@
 title: Task types and usage
 description: Learn about tasks in Azure Pipelines pipeline jobs, including setting inputs and controlling run conditions.
 ms.topic: concept-article
-ms.date: 08/18/2025
+ms.date: 09/10/2026
 monikerRange: '<= azure-devops'
 ai-usage: ai-assisted
 #customer intent: As an Azure Pipelines creator and user, I want to understand tasks in pipeline jobs so I can select and configure them correctly.
@@ -25,6 +25,16 @@ Tasks are available and installed at the Azure DevOps [organization](../../organ
 You can disable built-in tasks, Marketplace tasks, or both in **Organization Settings** > **Pipelines** > **Settings** under **Task restrictions**. If you disable both built-in and Marketplace tasks, only tasks you install by using the [Node CLI for Azure DevOps](https://www.npmjs.com/package/tfx-cli) are available.
 
 Disabling Marketplace tasks can help improve pipeline security. Under most circumstances, you shouldn't disable built-in tasks. For more information, see [Control available tasks](../security/misc.md#control-available-tasks).
+
+::: moniker range="azure-devops"
+
+### Restrict unsupported Node.js task runners
+
+Tasks use a Node.js runner included with the Azure Pipelines agent. To assess the effect of removing end-of-life Node.js 6, 10, and 16 runners, enable **Restrict out of support Node.js versions in pipeline tasks** under **Organization settings** > **Pipelines** > **Settings** > **Task restrictions**. 
+
+When enabled, the setting runs affected tasks with a newer available Node.js runner and logs a warning. This behavior helps you find and update pipelines using incompatible tasks before the end-of-life runners are removed. For detailed behavior, prerequisites, lifecycle dates, and troubleshooting guidance, see [Test tasks before end-of-life Node.js runners are removed](../agents/nodejs-runners.md#test-tasks-before-end-of-life-nodejs-runners-are-removed).
+
+::: moniker-end
 
 ## Custom tasks
 

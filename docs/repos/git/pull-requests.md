@@ -4,10 +4,10 @@ titleSuffix: Azure Repos
 description: Learn how to create pull requests or draft pull requests in Azure Repos using Git, and add details and reviewers. 
 ms.service: azure-devops-repos
 ms.topic: how-to
-ms.date: 02/15/2025
+ms.date: 09/10/2026
 monikerRange: '<= azure-devops'
 ms.subservice: azure-devops-repos-git
-ms.custom: devx-track-azurecli
+ms.custom: devx-track-azurecli, support-driven-update
 ai-usage: ai-assisted
 ---
 
@@ -19,6 +19,8 @@ ai-usage: ai-assisted
 [!INCLUDE [ai-assistance-callout](../../includes/ai-assistance-callout.md)]
 
 Create pull requests (PRs) to change, review, and merge code in a [Git repository](creatingrepo.md). You can create PRs from branches in the upstream repository or from branches in your [fork](forks.md) of the repository. Your team can [review the PRs](review-pull-requests.md) and give feedback on changes. Reviewers can step through the proposed changes, leave comments, and vote to approve or reject the PRs. Depending on [branch policies](branch-policies.md) and other requirements, your PR might need to meet various criteria before you can [complete the PR](complete-pull-requests.md) and merge the changes into the target branch.
+
+For comprehensive guidance on security practices including branch policies, repository access control, and commit verification, see [Secure repositories and pull requests](secure-repositories-pull-requests.md).
 
 For PR guidelines and management considerations, see [About pull requests](about-pull-requests.md).
 
@@ -51,7 +53,7 @@ For more information about permissions and access, see [Default Git repository a
 
 ## Create a pull request
 
-You can create a new PR from the Azure DevOps project website, from Visual Studio, or from the Azure DevOps CLI.
+You can create a new PR from the Azure DevOps project website, from Visual Studio, from the Azure DevOps CLI, or directly from the Git command line after pushing a branch. When you push a new branch to Azure Repos (Azure DevOps Services), the `git push` output might include a direct URL to create a pull request.
 
 # [Browser](#tab/browser)
 
@@ -98,6 +100,13 @@ Select **Create a pull request** to go to a page where you can [enter your PR de
 
 ::: moniker-end
 
+::: moniker range="azure-devops"
+
+> [!NOTE]
+> This feature is available in Azure DevOps Services only. Azure DevOps Server doesn't display the pull request URL in push output.
+
+::: moniker-end
+
 <a name="from-a-linked-work-item"></a>
 
 ### Create a PR from a linked work item
@@ -120,6 +129,8 @@ To create a pull request:
 1. Right-click a branch and select **Create Pull Request**.
 
 1. Edit the source and target branches as needed, enter a title and optional description, and select **Create**.
+
+Visual Studio 2022 supports an in-IDE pull request experience for Azure DevOps repos (and GitHub). For more information, see [View, filter, and open pull requests](view-pull-requests.md).
 
 Visual Studio 2019 version 16.8 and later versions provides a Git version control experience while maintaining the **Team Explorer** Git user interface. To use **Team Explorer**, uncheck **Tools** > **Options** > **Preview Features** > **New Git user experience** from the menu bar. You can exercise Git features from either interface interchangeably.
 
@@ -562,7 +573,10 @@ az repos pr work-item add --id
 
 ## Add tags to a pull request
 
-Use tags to show important details and help organize PRs. Tags can communicate extra information to reviewers, such as that the PR is still a work in progress, or is a hotfix for an upcoming release. 
+Use tags to show important details and help organize PRs. Tags can communicate extra information to reviewers, such as that the PR is still a work in progress, or is a hotfix for an upcoming release.
+
+> [!NOTE]
+> PR tag names, also called labels, and work item tag names share the same pool in an organization or project collection. The combined limit is 150,000 unique tag names. For more information, see [Work tracking, process, and project limits](../../organizations/settings/work/object-limits.md#backlogs-boards-dashboards-and-teams) and [Pull Request Labels](/rest/api/azure/devops/git/pull-request-labels).
 
 ![Screenshot showing P Rs with tags.](media/pull-requests/pull-request-labels.png)
 

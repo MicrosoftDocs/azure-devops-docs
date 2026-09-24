@@ -2,7 +2,7 @@
 title: Extensibility Points
 titleSuffix: Azure DevOps
 description: Reference of extensibility points that show where your extension can extend Azure DevOps, with contribution IDs for hubs, menus, toolbars, and more.
-ms.subservice: azure-devops-ecosystem
+ms.subservice: azure-devops-developer
 ms.author: chcomley
 author: chcomley
 monikerRange: '<= azure-devops'

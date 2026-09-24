@@ -4,12 +4,12 @@ titleSuffix: Azure DevOps
 description: Restore or revert a provisioned or published wiki that was accidentally deleted from Azure DevOps by using the REST API.
 ms.subservice: azure-devops-wiki
 ai-usage: ai-assisted
-ms.custom:
+ms.custom: support-driven-update
 ms.topic: how-to
 ms.author: chcomley
 author: chcomley
 monikerRange: '<= azure-devops'
-ms.date: 02/18/2026
+ms.date: 09/10/2026
 ---
 
 # Restore a deleted wiki
@@ -28,8 +28,8 @@ Although the UI doesn't provide options to delete a wiki, users might use the RE
 
 ## Restore a complete wiki
 
-Wikis, both project and code, are stored as repositories in your project in Azure DevOps.
-Complete the following steps to restore a complete wiki with the REST API.
+Azure DevOps stores both project and code wikis as repositories in your project.
+To restore a complete wiki, use the REST API and follow these steps:
 
 1. Retrieve Git repositories: [List repositories](/rest/api/azure/devops/git/repositories/list?view=azure-devops-rest-7.1&tabs=HTTP&preserve-view=true).
  
@@ -69,7 +69,7 @@ Complete the following steps to restore a complete wiki with the REST API.
     GET https://dev.azure.com/christiechurch/fabrikamfiber/_apis/git/recycleBin/repositories?api-version=7.1-preview.1
     ```
     
-   When you find your repository, often named as `.wiki`, take note of the repo ID.
+   When you find your repository, often named `.wiki`, take note of the repo ID.
 
     ```REST API
     {
@@ -155,7 +155,7 @@ DELETE https://dev.azure.com/christiechurch/fabrikamfiber/_apis/git/repositories
 
 ### Reassociate a restored wiki
 
-The recycle-bin restore recovers the Git repository (wiki pages and history) but doesn't always re-create the wiki registration or the file name association in the UI.
+The recycle bin restore recovers the Git repository (wiki pages and history) but doesn't always re-create the wiki registration or the file name association in the UI.
 
 If the wiki doesn't appear after you restore the repo, you have two options:
 
@@ -206,6 +206,30 @@ For detailed steps, see [Publish a Git repository to a wiki](publish-repo-to-wik
     GET https://dev.azure.com/{organization}/{project}/_apis/wiki/wikis?api-version=7.1-preview.2
     ```
 
+#### Known behavior: Page IDs after restoration
+
+When you restore and republish or re-register a complete wiki, Azure DevOps recovers the wiki content but regenerates the internal page identifiers (Page IDs). Links that reference the original Page IDs might no longer resolve after restoration.
+
+For example, a page URL before deletion might be:
+
+```text
+https://dev.azure.com/organization/project/_wiki/wikis/wiki/424/page-name
+```
+
+After restoration, the URL for the same page might be:
+
+```text
+https://dev.azure.com/organization/project/_wiki/wikis/wiki/3815/page-name
+```
+
+In this example, the page name remains the same, but the Page ID changes from `424` to `3815`. As a result:
+
+- Direct links that depend on the original Page ID can become invalid.
+- Bookmarks, external references, and integrations that store Page ID-based URLs might need to be updated.
+- Path-based links continue to work if the wiki structure and page paths remain unchanged.
+
+This behavior is expected because Azure DevOps creates new Page IDs when it restores the wiki registration. The original wiki's Page IDs aren't preserved.
+
 #### Post-restoration verification
 
 After using either option:
@@ -215,7 +239,7 @@ After using either option:
 1. Check permissions, links, and any widgets that referenced the old wiki.
 
 > [!NOTE]
-> - The recycle-bin and some wiki-registration APIs are in preview and can change.
+> - The recycle bin and some wiki registration APIs are in preview and can change.
 > Test in a nonproduction organization and use the api-version documented for your environment.
 > - For project wikis (provisioned wikis), use `type: "projectWiki"` instead of `"codeWiki"` in the REST API call and omit the `repositoryId` and `mappedPath` properties.
 

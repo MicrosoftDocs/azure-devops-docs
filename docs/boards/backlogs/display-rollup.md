@@ -2,13 +2,14 @@
 title: Display rollup columns to show progress, counts, or totals in Azure Boards
 titleSuffix: Azure Boards
 description: Learn how to add rollup columns that automatically sum child work item values to display progress bars, counts, and totals on parent items in Azure Boards.
-ms.service: azure-devops-boards
+ms.service: azure-boards
+ms.custom: copilot-scenario-highlight
 ms.topic: how-to
 ms.author: chcomley
 author: chcomley
 ai-usage: ai-assisted
 monikerRange: '<= azure-devops'
-ms.date: 07/01/2025
+ms.date: 07/20/2026
 # customer intent: As a team member, I want to display rollup columns that automatically sum child work item values so that I can track progress, counts, and totals across my backlog hierarchy.
 ---
 
@@ -18,10 +19,13 @@ ms.date: 07/01/2025
 
 Rollup automatically sums child work item values to display totals on parent items. Use it to track work estimates, effort, size, or story points across your backlog hierarchy. Learn how to add rollup columns to backlogs, sprint planning, and taskboards.
 
+[!INCLUDE [ai-assistance-mcp-server-tip](../../includes/ai-assistance-mcp-server-tip.md)]
+
 > [!IMPORTANT]
-> - Rollup supports progress bars, work item counts, and numeric field sums within a project only
-> - Cross-project child items and test case links aren't included in rollup calculations
-> - Rollup of Effort, Story Points, or Size fields isn't supported across product and portfolio backlogs
+> - Rollup supports progress bars, work item counts, and numeric field sums for descendant work items within the same project.
+> - Rollup requires parent-child links in the backlog hierarchy; test case links aren't included in rollup calculations.
+> - In Delivery Plans, child items from other projects aren't included in rollup calculations.
+> - Support for specific numeric fields, such as Effort, Story Points, or Size, depends on the selected backlog level and process configuration.
 
 In the following example, **Progress by Work Items** shows progress bars based on the percentage of closed descendant items. For Epics, this includes all child Features and their descendants. For Features, this includes all child User Stories and their descendants.
 
@@ -31,20 +35,19 @@ In the following example, **Progress by Work Items** shows progress bars based o
 ::: moniker range="azure-devops"
 
 > [!NOTE]
-> Rollup progress is available in the new Delivery Plans (public preview). Enable **New Delivery Plans Experience** in [preview features](../../project/navigation/preview-features.md). For more information, see [Review team Delivery Plans](../plans/review-team-plans.md).
+> Rollup progress is available in Delivery Plans. For more information, see [Review team Delivery Plans](../plans/review-team-plans.md).
 
 ::: moniker-end
 
 ## Prerequisites
 
-::: moniker range=" azure-devops"
+::: moniker range="azure-devops"
 
 | Category | Requirements |
 |--------------|-------------|
-| Permissions | To view delivery plans and rollup progress: Member of the **Project Collection Valid Users Group**. |
-| Access levels | One of the following access levels assigned: <br> - [**Basic:**](../../organizations/security/access-levels.md) Full access to all Azure Boards features, including viewing and modifying work items. <br> - **Stakeholder:** View and modify work items with limited features. |
-| Use parent-child links | Work items linked using parent-child relationships to support rollup. |
-| Add required fields | The fields you want to roll up are present in the work item types. |
+| Required access | You can open the target backlog or Delivery Plan, edit column options for your view, and have [**Basic** or **Stakeholder** access](../../organizations/security/access-levels.md), based on your project configuration. |
+| Hierarchy readiness | Parent and child work items are linked with parent-child relationships. |
+| Field readiness | The numeric fields you want to roll up are present on child work item types. |
 
 ::: moniker-end
 
@@ -52,162 +55,217 @@ In the following example, **Progress by Work Items** shows progress bars based o
 
 | Category | Requirements |
 |--------------|-------------|
-|**Analytics service** |Analytics service enabled on your on-premises Azure DevOps Server. For more information, see [Install/uninstall or enable/disable the Analytics service](../../report/dashboards/analytics-extension.md).|
-| Parent-child links | Work items linked using parent-child relationships to support rollup. |
-| Required fields | The fields you want to roll up are present in the work item types. |
+| Analytics service | Analytics must be enabled on Azure DevOps Server. For more information, see [Install/uninstall or enable/disable the Analytics service](../../report/dashboards/analytics-extension.md). |
+| Required access | You can open the target backlog and edit column options for your view. |
+| Hierarchy readiness | Parent and child work items are linked with parent-child relationships. |
+| Field readiness | The numeric fields you want to roll up are present on child work item types. |
 
 ::: moniker-end
 
 ## Rollup and hierarchical work items
 
-The default set of backlog work items that supports natural hierarchical grouping varies based on the process chosen for your project. The easiest way to create a hierarchy is by mapping work items or adding them to a parent item on a board. For more information, see [Organize your backlog, map child work items to parents](organize-backlog.md#map-items-to-group-them-under-a-feature-or-epic) and [Board features and epics](../boards/kanban-epics-features-stories.md).
+Backlog hierarchy differs by process, but the rollup setup pattern is the same:
+
+- Use parent-child links to build the hierarchy.
+- Map items in the backlog or add items directly under a parent.
+- Confirm the hierarchy before adding rollup columns.
+
+For setup details, see [Organize your backlog, map child work items to parents](organize-backlog.md#map-items-to-group-them-under-a-feature-or-epic) and [Board features and epics](../boards/kanban-epics-features-stories.md).
 
 #### [Agile process](#tab/agile-process)
 
-The following image shows the Agile process backlog work item hierarchy. Each team can configure how they manage bugs—either at the same level as User Stories or Tasks—by adjusting the [Working with bugs](../../organizations/settings/show-bugs-on-backlog.md) setting.
+In the Agile process, teams can manage bugs at the same level as User Stories or Tasks by adjusting the [Working with bugs](../../organizations/settings/show-bugs-on-backlog.md) setting.
 
 > [!div class="mx-tdCol2BreakAll"]
 > ![Screenshot of conceptual image of Agile process hierarchy.](media/rollup/agile-process-hierarchy.png)
 
-### [Basic process](#tab/basic-process)
+#### [Basic process](#tab/basic-process)
 
-The following image illustrates the Basic process backlog work item hierarchy, which includes Epics, Issues, and Tasks.
+The Basic process hierarchy includes Epics, Issues, and Tasks.
 
 > [!div class="mx-imgBorder"]
 > ![Screenshot of conceptual image of Basic process hierarchy.](media/rollup/basic-process-hierarchy.png)
 
-### [Scrum process](#tab/scrum-process)
+#### [Scrum process](#tab/scrum-process)
 
-The following image illustrates the Scrum process backlog work item hierarchy. Each team can configure how they manage bugs—either at the same level as Product Backlog Items or Tasks—by adjusting the [Working with bugs](../../organizations/settings/show-bugs-on-backlog.md) setting.
+In the Scrum process, teams can manage bugs at the same level as Product Backlog Items or Tasks by adjusting the [Working with bugs](../../organizations/settings/show-bugs-on-backlog.md) setting.
 
 > [!div class="mx-tdCol2BreakAll"]
 > ![Screenshot of conceptual image of Scrum process hierarchy.](media/rollup/scrum-process-hierarchy.png)
 
-### [CMMI process](#tab/cmmi-process)
+#### [CMMI process](#tab/cmmi-process)
 
-The following image illustrates the CMMI process backlog work item hierarchy. Each team can configure how they manage bugs—either at the same level as Requirements or Tasks—by adjusting the [Working with bugs](../../organizations/settings/show-bugs-on-backlog.md) setting.
+In the CMMI process, teams can manage bugs at the same level as Requirements or Tasks by adjusting the [Working with bugs](../../organizations/settings/show-bugs-on-backlog.md) setting.
 
 > [!div class="mx-imgBorder"]
 > ![Screenshot of conceptual image of CMMI process hierarchy.](media/rollup/cmmi-process-hierarchy.png)
 
-***
+---
 
 ## Open a product or portfolio backlog
 
-Each user can customize their column options, and these settings persist across sessions for each backlog.
+Column options are user-specific and persist for each backlog.
 
-1. Open a product or portfolio backlog. Optionally, enable **Show parents** in your view options. Even if child items aren't listed, rollup for them displays.
-
-   Open a portfolio backlog and select **In Progress Items** and **Completed Child Items**. This allows you to compare the State value of items with the rollup value.
+1. Open a product or portfolio backlog.
+1. In **View options**, select **Show parents** to keep parent context visible.
+1. For portfolio backlogs, select **In Progress Items** and **Completed Child Items** to compare each item's **State** with rollup values.
 
    > [!div class="mx-imgBorder"]  
    > ![Screenshot shows opening column options.](media/rollup/view-in-progress-and-completed-items.png)
 
-2. Select **Column options**, or select the  :::image type="icon" source="../../media/icons/actions-icon.png" border="false":::  actions icon and then select **Column options**.
+1. Select **Column options**. If **Column options** isn't visible, select the :::image type="icon" source="../../media/icons/actions-icon.png" border="false"::: actions icon, and then select **Column options**.
    
    > [!div class="mx-imgBorder"] 
    > ![Choose Column options and then select Column options.](media/rollup/open-column-options.png)
 
    > [!TIP]
-   > The Column options you select apply to the chosen backlog level and persists across your sessions until you change them.
+   > The column options you select apply to the chosen backlog level and persist across sessions until you change them.
 
 ## Add a rollup column
 
-1. From your backlog, select **Column Options** > **Add a rollup column** > **From quick list**, and then choose from the menu provided.
+Use **From quick list** to quickly add common rollup columns.
+
+1. From your backlog, select **Column options** > **Add a rollup column** > **From quick list**.
+1. Choose the rollup option you want.
    
    > [!div class="mx-imgBorder"]   
    > ![Screenshot of Column options dialog.](media/rollup/add-rollup-column-from-quick-list.png)
 
-   The menu options vary based on the process chosen for your project, the selected backlog level, and whether the **Show parents** view option is enabled.
+   Available options vary by:
 
-   For example, the following image shows that the Count of Tasks for the parent user stories is 2 and 4, respectively. The Count of Tasks for the parent Feature and Epic is 6.
+   - Process type
+   - Backlog level
+   - Whether **Show parents** is enabled
+
+   In this example, **Count of Tasks** is 2 and 4 for the parent user stories, and 6 for the parent Feature and Epic.
    
    > [!div class="mx-imgBorder"]    
    > ![Screenshot showing Count of tasks rollup column.](media/rollup/count-of-tasks.png)
 
-2. **Remaining Work of Tasks** shows the sum of Remaining Work of tasks linked to the parent item.
+1. (Optional) Add **Remaining Work of Tasks** to show the sum of **Remaining Work** across linked child tasks.
    
    > [!div class="mx-imgBorder"]  
    > ![Screenshot showing Sum of Remaining Work rollup column. ](media/rollup/sum-remaining-work.png)
 
    > [!TIP]
-   > When a task is closed, the Remaining Work field automatically sets to zero.
+   > When you close a task, the Remaining Work field automatically sets to zero.
 
 ## Get rollup data
 
-Use the following methods to get rollup data:
+Pick the method that matches your goal:
 
-- Create flat list queries:
-  - Create a flat list query to include the fields you want to roll up.
-  - Export the query results to Excel for further analysis.
-- Use extensions:
-  - Install extensions from the Azure DevOps Marketplace that support rollup functionality.
-  - Example: [Roll-up Board](https://marketplace.visualstudio.com/search?term=rollup&target=AzureDevOps&category=All%20categories&visibilityQuery=all&sortBy=Relevance) extension.
-- Use the Analytics Service:
-  - Use the Analytics Service to create custom reports and dashboards that include rollup data.
-  - Example: Create a Power BI report that displays rollup values for your work items.
+| Scenario | Best method |
+|---|---|
+| Day-to-day backlog tracking | Use product or portfolio backlogs |
+| Sprint execution tracking | Use sprint planning pane or taskboard |
+| One-time analysis | Create a flat list query and export to Excel |
+| Dashboard/reporting | Use Analytics Service with dashboards or Power BI |
+| Additional visualization options | Use Azure DevOps Marketplace extensions such as [Roll-up Board](https://marketplace.visualstudio.com/search?term=rollup&target=AzureDevOps&category=All%20categories&visibilityQuery=all&sortBy=Relevance) |
 
 ### Use product and portfolio backlogs
 
-1. Got to your product or portfolio backlog.
-2. Ensure that the backlog view includes the fields you want to roll up.
+Use this method for day-to-day backlog tracking.
+
+1. Go to your product or portfolio backlog.
+1. Ensure that the backlog view includes the fields you want to roll up.
   
-   The rollup values display in the backlog view.
+   Verify result: rollup values appear for parent items in the backlog.
 
 ### Use the sprint planning pane
 
-1. Open the sprint planning pane.
-2. Add the fields you want to roll up to the view.
+Use this method during sprint planning.
 
-   The rollup values display for the parent work items.
+1. Open the sprint planning pane.
+1. Add the fields you want to roll up to the view.
+
+   Verify result: rollup values appear for parent work items.
 
 ### Use a sprint backlog and taskboard
 
-1. Go to your sprint backlog or taskboards.
-2. Ensure that the view includes the fields you want to roll up.
+Use this method during sprint execution.
 
-   The rollup values display for the parent work items.
+1. Go to your sprint backlog or taskboard.
+1. Ensure that the view includes the fields you want to roll up.
+
+   Verify result: rollup values appear for parent work items.
 
 ## Analytics, latency, and error states
 
-Rollup data is calculated from the Analytics service. Large datasets may cause display latency. Hover over the :::image type="icon" source="../../media/icons/rollup.png" border="false"::: rollup icon to check data status.
+The Analytics service calculates rollup data.
 
-Errors appear as an :::image type="icon" source="../../media/icons/info.png" border="false"::: info icon with empty rows, indicating the Analytics service is still processing recent changes. Rollup columns refresh automatically once processing completes.
+What to expect:
+
+- Large datasets can cause temporary display latency.
+- You can check status by hovering over the :::image type="icon" source="../../media/icons/rollup.png" border="false"::: rollup icon.
+- If data isn't ready, the :::image type="icon" source="../../media/icons/info.png" border="false"::: info icon can appear and some rows might be empty.
+
+After Analytics finishes processing recent changes, rollup columns refresh automatically.
 
 > [!div class="mx-imgBorder"]  
 > ![Screenshot showing Error getting data.](media/rollup/error-getting-data.png)
 
-For more information, see [What is Analytics?](../../report/powerbi/what-is-analytics.md).
+For more information, see [What is Analytics?](../../report/powerbi/what-is-analytics.md)
 
-## Change the column order or remove a rollup column
+## Change rollup columns
 
-To change the order of the fields, drag and drop the field to your desired position within the set of selected fields. To remove a field, select the ![delete icon](../media/icons/delete_icon.png).
+Use these actions in **Column options**:
+
+- To change the column order, drag a field to a new position.
+- To resize a column, drag the divider to the right of the column name.
+- To remove a column, select ![delete icon](../media/icons/delete_icon.png).
 
 ## Rollup of custom work item types or custom fields
 
-If you add a custom work item type or field to a backlog level, you can view rollup data based on those options. For example, the Customer Request type is added to the Requirements category, and the following image shows a Count of Customer Requests.
+If you add a custom work item type or field to a backlog level, you can view rollup data based on those options. For example, if you add the Customer Request type to the Requirements category, the following image shows a Count of Customer Requests.
 
 > [!div class="mx-imgBorder"]
 > ![Screenshot of custom field, Count of Customer Requests rollup field.](media/rollup/count-of-customer-requests.png)
 
-1. From the Column options dialog, select  **Add a rollup column** > **Configure custom rollup**.
+1. From the **Column options** dialog, select **Add a rollup column** > **Configure custom rollup**.
 
-2. Choose the options you want from the Custom Rollup column dialog.
+1. Choose the options you want from the **Custom Rollup column** dialog.
    
    > [!div class="mx-imgBorder"]   
    > ![Screenshot of Custom Rollup column dialog.](media/rollup/custom-rollup-column-dialog.png)
 
-3. Select **OK** > **OK** to complete your operations.
+1. Select **OK** > **OK** to complete your operations.
 
    > [!TIP]
    > After adding custom fields or custom work item types, refresh the backlog page to see your changes.
 
-## Use keyboard shortcuts to change the column order, column width, or sort options
+## Troubleshoot rollup problems
 
-Change the column order, column size, or sort options using the following actions:
+Use this table when rollup results don't appear as expected.
 
-- **Change column order:** Select the field and drag it to a new location.
-- **Resize a column:** Select the column divider to the right of the field and drag it to adjust the size.
+| Symptom | Likely cause | Resolution |
+|---|---|---|
+| **Add a rollup column** option isn't available | Backlog level, permissions, or view context doesn't support the current action | Confirm you opened a supported backlog level and can edit **Column options** in your view. |
+| Rollup column shows blank values | Parent-child links are missing or selected field isn't available on child work item types | Verify parent-child relationships and confirm target fields exist on child work item types. |
+| Rollup values don't match expected totals | Links include unsupported scenarios (for example, test case links) or hierarchy is incomplete | Review linked descendants and ensure rollup inputs come from supported parent-child hierarchy only. |
+| Rollup values appear stale | Analytics processing delay | Wait for Analytics processing to complete, then refresh the page. |
+| Cross-project totals are missing in Delivery Plans | Delivery Plans rollup doesn't include child items from other projects | Use same-project hierarchy for Delivery Plans rollup calculations. |
+
+<a id="use-ai-assistance"></a>
+
+## Use AI to set up rollup columns
+
+If you configure the [Azure DevOps MCP Server](../../mcp-server/mcp-server-overview.md), you can describe your rollup needs in natural language instead of manually configuring columns.
+
+| Task | Example prompt |
+|------|----------------|
+| Sum story points | `Create a rollup column on Features that sums the story points from all child stories in project <Contoso>` |
+| Count child work items | `Add a rollup column to Epics that counts the total number of child user stories and features` |
+| Show effort totals | `Set up rollup on my Features to display the total Effort from all child tasks` |
+| Track multiple fields | `Add two rollup columns to my Epics: one that sums story points and another that counts the total number of descendants` |
+| Sum custom numeric fields | `Add a rollup column to Features that sums the <CustomField> from all descendant work items` |
+| Show completed items count | `Create a rollup column on Features that counts how many child stories are closed` |
+| Display progress visually | `Show progress bars on my Feature backlog based on the percentage of completed child stories` |
+| Set up size rollup | `Add rollup to my Epics to sum the Size field from all descendant stories and features` |
+| Verify rollup hierarchy | `Check if my parent-child relationships are set up correctly for rollup calculations to work on Epics and Features` |
+| Diagnose missing rollup values | `Why are some of my rollup columns showing blank values? Help me troubleshoot` |
+
+> [!NOTE]
+> Agent mode and the MCP Server use natural language, so you can adjust these prompts or ask follow-up questions to refine the results.
 
 ## Related content
 

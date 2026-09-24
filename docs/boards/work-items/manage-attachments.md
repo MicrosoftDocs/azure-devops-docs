@@ -3,7 +3,7 @@ title: Manage work item attachments
 titleSuffix: Azure Boards 
 description: Learn how to manage work item attachments in Azure DevOps.
 ms.custom: devx-track-azurecli
-ms.service: azure-devops-boards
+ms.service: azure-boards
 ms.author: chcomley
 author: chcomley
 ai-usage: ai-assisted
@@ -199,9 +199,6 @@ This action is typically reserved for situations requiring immediate removal, su
    :::image type="content" source="../backlogs/media/confirm-permanently-delete-attachment.png" alt-text="Screenshot showing Delete button for confirming permanent delete action.":::
 
 The attachment is permanently deleted and isn't accessible from any other links. 
-
-> [!NOTE]
-> This feature requires the **New Boards Hub**, which is enabled by default. For more information, see [Manage or enable features](../../project/navigation/preview-features.md).
 
 ::: moniker-end
 

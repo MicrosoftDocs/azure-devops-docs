@@ -10,7 +10,7 @@ metadata:
   ms.topic: landing-page
   ms.author: sdanie
   author: steved0x
-  ms.date: 08/01/2023
+  ms.date: 07/06/2026
   ms.subservice: azure-devops-repos-git
 
 # linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
@@ -55,8 +55,6 @@ landingContent:
             url: /visualstudio/version-control/git-with-visual-studio/
           - text: Create repo - Visual Studio
             url: ./share-your-code-in-git-vs.md
-          - text: Create repo - IntelliJ
-            url: ./create-repo-intellij.md
           - text: Create repo - Eclipse
             url: ./share-your-code-in-git-eclipse.md
           - text: Create repo - Xcode
@@ -75,6 +73,36 @@ landingContent:
             url: ./history.md
           - text: Pull requests
             url: ./pull-requests.md
+  - title: Pull requests and code review
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: About pull requests
+            url: ./about-pull-requests.md
+      - linkListType: how-to-guide
+        links:
+          - text: Review pull requests
+            url: ./review-pull-requests.md
+          - text: Copilot code review (preview) - Get started
+            url: ./copilot-code-reviews.md
+          - text: Copilot code review (preview) - Configure instructions
+            url: ./configure-copilot-code-review-instructions.md
+          - text: Copilot code review (preview) - Troubleshoot
+            url: ./copilot-code-reviews-faq.md
+          - text: Complete pull requests
+            url: ./complete-pull-requests.md
+  - title: History and compare
+    linkLists:
+      - linkListType: how-to-guide
+        links:
+          - text: Review history and compare branches
+            url: ./review-history.md
+      - linkListType: reference
+        links:
+          - text: Commit history
+            url: ./commit-history.md
+          - text: Commit details
+            url: ./commit-details.md
   - title: Set up your Azure Repos Git repositories
     linkLists:
       - linkListType: how-to-guide
@@ -89,6 +117,8 @@ landingContent:
     linkLists:
       - linkListType: how-to-guide
         links:
+          - text: Secure repositories and pull requests
+            url: ./secure-repositories-pull-requests.md
           - text: Configure repository settings
             url: ./repository-settings.md
           - text: Manage Git branch policies
@@ -101,6 +131,8 @@ landingContent:
     linkLists:
       - linkListType: reference
         links:
+          - text: Available pull request status checks
+            url: ./available-pr-status-checks.md
           - text: Git FAQs
             url: ./howto.yml
           - text: Git command reference

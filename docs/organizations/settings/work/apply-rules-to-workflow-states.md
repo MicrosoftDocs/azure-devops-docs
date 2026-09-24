@@ -3,7 +3,7 @@ title: Restrict workflow transitions and apply rules to workflow states
 titleSuffix: Azure DevOps Services
 description: Learn how to apply rules to workflow states to restrict transitions.
 ms.custom: inherited-process, copilot-scenario-highlight
-ms.service: azure-devops-boards
+ms.service: azure-boards
 ms.author: chcomley
 author: chcomley
 ai-usage: ai-assisted

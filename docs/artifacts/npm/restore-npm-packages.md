@@ -1,7 +1,7 @@
 ---
 title: Restore npm packages from the command line
 description: Learn how to authenticate with your Azure Artifacts feed and restore npm packages from the command line.
-ms.service: azure-devops-artifacts
+ms.service: azure-artifacts
 ms.topic: tutorial
 ms.date: 02/21/2025
 monikerRange: "<=azure-devops"
@@ -30,7 +30,7 @@ If this is your first time using Azure Artifacts with npm on your machine, follo
 1. Run the following command to install `vsts-npm-auth`.
 
     ```
-    npm install -g vsts-npm-auth --registry https://registry.npmjs.com --always-auth false
+    npm install -g vsts-npm-auth --registry https://registry.npmjs.com
     ```
 
 ### [Other](#tab/other/)

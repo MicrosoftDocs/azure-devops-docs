@@ -2,7 +2,7 @@
 title: Add or modify a work item type 
 titleSuffix: Azure DevOps Server
 description: Modify or add a work item type to support queries, reports, and workflow for On-premises XML process model for Azure DevOps  
-ms.service: azure-devops-boards
+ms.service: azure-boards
 ms.custom: process, engagement-fy23
 ms.author: chcomley
 author: chcomley

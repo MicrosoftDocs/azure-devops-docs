@@ -11,7 +11,7 @@ metadata:
   author: chcomley
   ms.topic: faq
   monikerRange: '<= azure-devops'
-  ms.date: 04/20/2026
+  ms.date: 08/14/2026
   ms.update-cycle: 1095-days
 
 title: Test Plans FAQs
@@ -146,7 +146,7 @@ sections:
             | Error | Solution |
             |-------|----------|
             | Missing mandatory headers | Add the required column headers with exact spelling. |
-            | Invalid field value found | Check that **Work Item Type** is exactly `Test Case`, **State** is `Design`, **Area Path** matches an existing path, **Assigned To** is a valid user, and **Test Step** is a number. |
+            | Invalid field value found | Check that **Work Item Type** is exactly `Test Case`, **State** is valid for your process and workflow, **Area Path** matches an existing path, **Assigned To** is a valid user, and **Test Step** is a number. |
             | Invalid data formats | Check date formats, numeric values, and text length limits. |
             | Incorrect field mappings | Verify that columns map to the correct Azure DevOps fields. |
             | Empty required fields | Ensure all mandatory fields contain valid data. |
@@ -176,7 +176,7 @@ sections:
             | **Step Expected** | Expected result after the action. |
             | **Area Path** | Must match an existing area path (for example, `MyProject\MyArea`). |
             | **Assigned To** | Valid user in your organization. |
-            | **State** | Must be `Design`. |
+            | **State** | For a new test case, use a state in the `Proposed` state category for your process. The default is `Design`. For an existing test case, use its current state or a valid next state defined by the workflow. |
 
       - question: Can I undo a bulk test case import?
         answer: |
@@ -186,7 +186,7 @@ sections:
         answer: |
             The following limitations apply:
 
-            - Test cases must be in **Design** state during import.
+            - For new test cases, the state must belong to the `Proposed` state category for your process. For existing test cases, the state must be the current state or a valid next state defined by the workflow.
             - Test case titles can't exceed 128 characters.
             - Import and export files have a 20-MB size limit.
             - You must have permissions for the area and iteration paths of the target test plan and test suite.
@@ -218,7 +218,7 @@ sections:
 
       - question: Is the desktop Test Runner client being retired?
         answer: |
-            **Yes**. The Test Runner Client for Windows is scheduled for retirement. After the retirement date, it will no longer be available or supported. Transition to the **web-based test runner**, which provides the same functionality with improved performance and ongoing development.
+            **Yes**. The Test Runner Client for Windows retires on **November 30, 2026**. After this date, the client is no longer available or supported. Transition to the **web-based test runner**, which provides the same functionality with improved performance and ongoing development.
 
             For more information, see [Run manual tests](run-manual-tests.md).
 
@@ -428,7 +428,7 @@ sections:
         answer: |
             Yes, the extension automatically shows bugs that might be related to the one you're creating
             and allows you to add your screenshots, notes, and videos to this existing bug.
-            For more information, see [Add findings to existing bugs with exploratory testing](add-to-bugs-exploratory-testing.md).
+            For more information, see [Add findings to an existing similar bug](connected-mode-exploratory-testing.md#add-findings-to-an-existing-similar-bug).
 
       - question: What browsers support the Test & Feedback extension?
         answer: |

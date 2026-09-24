@@ -3,7 +3,7 @@ title: Understand CMMI process template artifacts
 titleSuffix: Azure Boards  
 ms.custom: work-items
 description: CMMI work tracking artifacts support formal change management and process improvement. Learn how to plan work, build queries, and create dashboards in Azure Boards.
-ms.service: azure-devops-boards
+ms.service: azure-boards
 ms.topic: overview
 ms.author: chcomley
 ms.reviewer: chcomley

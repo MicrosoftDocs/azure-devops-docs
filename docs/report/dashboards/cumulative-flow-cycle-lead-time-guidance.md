@@ -26,10 +26,8 @@ Cumulative flow diagrams (CFDs) help you monitor your work process by visualizin
 :::row:::
    :::column span="2":::
       The continuous-flow CFD is the chart most teams that follow a lean process prefer.
+      But many teams combine lean practices with Scrum or other methods. They use lean practices during an iteration or sprint. In this case, the diagram looks a bit different. It shows two extra valuable pieces of information, as shown in the next chart (the fixed-period CFD).
 
-But many teams combine lean practices with Scrum or other methods. They use lean practices during an iteration or sprint. In this case, the diagram looks a bit different. It shows two extra,The continuous-flow CFD is the chart most teams that follow a lean process prefer.
-
-But many teams combine lean practices with Scrum or other methods. They use lean practices during an iteration or sprint. In this case, the diagram looks a bit different. It shows two extra, valuable pieces of information, as shown in the next chart, the fixed-period CFD.
       **Continuous-flow CFD**  
       :::image type="content" source="media/guidance/cfd-metrics.png" alt-text="Chart that shows an abstract continuous-flow CFD. Labels point out the lead time, cycle time, work in progress, and items in various states.":::
    :::column-end:::

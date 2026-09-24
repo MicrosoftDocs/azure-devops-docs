@@ -5,7 +5,7 @@ description: Learn how to review Git history to find out when files changed, who
 ms.service: azure-devops-repos
 ms.topic: how-to
 monikerRange: '<= azure-devops'
-ms.date: 10/18/2022
+ms.date: 07/06/2026
 ms.subservice: azure-devops-repos-git
 ---
 
@@ -48,6 +48,8 @@ The Azure DevOps team project site lets you compare two versions of the same fil
 Visual Studio 2022 provides a Git version control experience by using the **Git** menu, **Git Changes**, and through context menus in **Solution Explorer**. Visual Studio 2019 version 16.8 also offers the **Team Explorer** Git user interface. For more information, see the **Visual Studio 2019 - Team Explorer** tab.
 
 [!INCLUDE [Compare file versions](includes/review-history-compare-file-versions.md)]
+
+To compare a historical version with your current working tree, select a commit in the **Git History** tab and choose **Compare with Working Tree**. The **Diff** view compares the file content in the selected commit with the file in the currently checked-out working tree, including any uncommitted edits. This comparison isn't a cross-branch file comparison.
 
 #### [Visual Studio 2019 - Git menu](#tab/visual-studio-2019-git-menu)
 
@@ -204,6 +206,8 @@ Visual Studio 2019 and earlier versions don't support branch comparison, so if y
 1. In the **Branch compare** view, choose the two branches that you want to compare. Select the **Files** tab for a diff view of the new, deleted, or modified lines in each changed file.
 
    :::image type="content" source="media/review-history/browser/branch-compare.png" border="true" alt-text="Screenshot of the Files tab in the Branch Compare view on the Azure DevOps repo page." lightbox="media/review-history/browser/branch-compare-lrg.png":::
+
+1. To compare specific commits instead of branch tips, select the version picker and choose the **Commits** tab. Search for and select a commit by its SHA to perform commit-to-commit or branch-to-commit comparisons directly in the UI, without needing to construct a URL manually.
 
 >[!NOTE]
 > GitHub supports branch comparison. To compare two branches, append `/compare/<branch1>...<branch2>` to your GitHub repo URL to navigate to the comparison page. The comparison page contains a diff view of each file that differs. For more information on branch comparison in GitHub, see [Comparing branches](https://docs.github.com/pull-requests/committing-changes-to-your-project/viewing-and-comparing-commits/comparing-commits#comparing-branches).

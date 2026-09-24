@@ -1,7 +1,7 @@
 ---
 title: Publish NuGet packages with dotnet CLI
 description: Learn how to connect to a feed and use the dotnet CLI to publish NuGet packages.
-ms.service: azure-devops-artifacts
+ms.service: azure-artifacts
 ms.custom: devx-track-dotnet
 ms.topic: tutorial
 ms.date: 09/18/2025
@@ -74,7 +74,7 @@ Before you can publish packages to your feed, you must authenticate with Azure A
 
 1. Follow the instructions in the **Project setup** section to connect to your feed.
 
-    :::image type="content" source="../media/connect-to-feed-dotnet-server-2020-and-2022.png" alt-text="A screenshot showing how to connect to a feed with dotnet in Azure DevOps Server 2020 and 2022." lightbox="../media/connect-to-feed-dotnet-server-2020-and-2022.png":::
+    :::image type="content" source="../media/connect-to-feed-dotnet-server-2020-and-2022.png" alt-text="Screenshot showing how to connect to a feed with dotnet in Azure DevOps Server 2020 and 2022." lightbox="../media/connect-to-feed-dotnet-server-2020-and-2022.png":::
 
 ::: moniker-end
 
@@ -112,7 +112,7 @@ Before you can publish packages to your feed, you must authenticate with Azure A
 
 1. Follow the instructions in the **Project setup** section to connect to your feed.
 
-    :::image type="content" source="../media/connect-to-feed-dotnet-server-2020-and-2022.png" alt-text="A screenshot showing how to connect to a feed with dotnet in Azure DevOps Server 2020 and 2022." lightbox="../media/connect-to-feed-dotnet-server-2020-and-2022.png":::
+    :::image type="content" source="../media/connect-to-feed-dotnet-server-2020-and-2022.png" alt-text="Screenshot showing how to connect to a feed with dotnet in Azure DevOps Server 2020 and 2022." lightbox="../media/connect-to-feed-dotnet-server-2020-and-2022.png":::
 
 ::: moniker-end
 

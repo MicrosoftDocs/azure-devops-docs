@@ -1,46 +1,54 @@
 ---
-title: Kerberos and Git LFS
+title: Use Kerberos authentication with Git LFS on Azure DevOps Server
 titleSuffix: Azure Repos
-description: Using Git LFS versions older than 2.4.0 with TFS
+description: Learn when Git LFS uses Kerberos with Azure DevOps Server configured for Windows Authentication and which Git LFS versions are affected.
 ms.service: azure-devops-repos
 ms.topic: overview
-ms.date: 03/14/2018
+ms.date: 07/21/2026
+ai-usage: ai-assisted
 monikerRange: '< azure-devops'
 ms.subservice: azure-devops-repos-git
-ms.custom: sfi-image-nochange
+ms.custom: sfi-image-nochange, support-driven-update, support
 ---
 
-# Kerberos authentication
+# Use Kerberos authentication with Git LFS on Azure DevOps Server
 
 [!INCLUDE [version-lt-azure-devops](../../includes/version-lt-azure-devops.md)]
 
-If you use Azure DevOps to manage your Git repository, Git may be using the Kerberos protocol to authenticate. 
-(This doesn't apply to Azure DevOps Services, which uses a different form of authentication.)
-LFS doesn't support Kerberos, so you can get errors which say "Your user name must be of the form DOMAIN\user".
-As of Git LFS version 2.4.0, [NTLM authentication with SSPI](https://github.com/git-lfs/git-lfs/pull/2871) has been added.
-You'll no longer receive these errors and authentication will work without extra configuration.
+Use this article if you run Azure DevOps Server with Windows Authentication and need Git LFS to work with Kerberos.
 
-**We highly recommend you upgrade to Git LFS version 2.4.0 or later, where no extra configuration is necessary.**
+This guidance applies only to Azure DevOps Server. Azure DevOps Services uses a different authentication flow.
 
-If you can't upgrade to 2.4.0, you can remove the Kerberos credential and let Git pick up a new NTLM credential by using the following workaround.
+Before you continue, confirm that your environment matches these assumptions:
 
+- You're using Azure DevOps Server, not Azure DevOps Services.
+- Your Azure DevOps Server deployment uses Windows Authentication.
+- You use Git LFS with the repo that connects to Azure DevOps Server.
 
 > [!NOTE]
-> Credentials sent via HTTP will be passed in clear text.
-> [Ensure your instance of TFS is configured for HTTPS](/azure/devops/server/admin/websitesettings), and do not use HTTP with Git-LFS.
+> - This article doesn't apply to Azure DevOps Services. If you use Azure DevOps Services, you don't need Kerberos-specific guidance for Git LFS.
+> - For Azure DevOps Server guidance on Git LFS and Kerberos, see [Reconfigure Azure DevOps Server to use Kerberos instead of NTLM](https://devblogs.microsoft.com/devops/reconfigure-azure-devops-server-to-use-kerberos-instead-of-ntlm/) and [Upcoming change: NTLM removal in Git (libcurl) – Impact to Azure DevOps Server customers](https://devblogs.microsoft.com/devops/upcoming-change-ntlm-removal-in-git-libcurl-impact-to-azure-devops-server-customers/).
 
-1. Open the Windows Credential Manager. On Windows 10, you can press Start and then type "Credential Manager".
+## Git LFS version behavior
 
-   ![Open Credential Manager](media/manage-large-files/launch-credential-manager.png)
+Git LFS supports Kerberos authentication starting with Git LFS 2.10.0.
 
-2. Choose *Windows Credentials*.
+Earlier Git LFS releases supported NTLM authentication. However, NTLM support was removed starting with Git LFS 3.0.0.
 
-   ![Choose Windows Credentials](media/manage-large-files/choose-windows-credentials.png)
+If you connect to an Azure DevOps Server instance that uses Windows Authentication, Git LFS 3.0.0 and later requires Kerberos authentication for that scenario.
 
-3. Find your TFS URL in the credential list.
-4. Choose *Remove*.
+## What to verify before you change clients
 
-   ![Choose Remove](media/manage-large-files/choose-remove.png)
+Before you upgrade or troubleshoot Git LFS, confirm that your environment can use Kerberos successfully:
 
-5. Return to your Git client (Visual Studio or the command line) and push your changes.
-   When prompted for credentials, be sure to enter them in the form *DOMAIN\username*.
+- Verify that your Azure DevOps Server environment is configured for Windows Authentication.
+- Verify that client connections negotiate Kerberos instead of falling back to another authentication mechanism.
+- Review your environment constraints before you standardize on Kerberos. For example, workgroup and other non-domain scenarios can require separate planning.
+
+> [!IMPORTANT]
+> Upgrade to Git LFS 2.10.0 or later to use Kerberos authentication. If your Azure DevOps Server instance uses Windows Authentication and you're running Git LFS 3.0.0 or later, use Kerberos authentication.
+
+## Related content
+
+- [Reconfigure Azure DevOps Server to use Kerberos instead of NTLM](https://devblogs.microsoft.com/devops/reconfigure-azure-devops-server-to-use-kerberos-instead-of-ntlm/)
+- [Upcoming change: NTLM removal in Git (libcurl) – Impact to Azure DevOps Server customers](https://devblogs.microsoft.com/devops/upcoming-change-ntlm-removal-in-git-libcurl-impact-to-azure-devops-server-customers/)

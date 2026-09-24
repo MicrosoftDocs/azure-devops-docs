@@ -2,7 +2,7 @@
 title: Manage product and portfolio backlogs
 titleSuffix: Azure Boards
 description: Learn how to work with a hierarchical team structure to manage product and portfolio backlogs and track progress across teams.
-ms.service: azure-devops-boards
+ms.service: azure-boards
 ms.author: chcomley
 author: chcomley
 ms.topic: how-to

@@ -1,7 +1,7 @@
 ---
 title: Restore Maven packages from your Azure Artifacts feed
 description: Learn how to connect to your Azure Artifacts feed and restore your Maven packages.
-ms.service: azure-devops-artifacts
+ms.service: azure-artifacts
 ms.manager: wiwagn
 ms.topic: how-to
 ms.custom: engagement-fy23

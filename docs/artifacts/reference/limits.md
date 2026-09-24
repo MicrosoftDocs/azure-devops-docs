@@ -1,7 +1,7 @@
 ---
 title: Size and count limits
 description: Learn about the count and size limits for each package type in Azure Artifacts.
-ms.service: azure-devops-artifacts
+ms.service: azure-artifacts
 ms.topic: limits-and-quotas
 ms.date: 03/10/2026
 monikerRange: "<=azure-devops"
@@ -73,7 +73,7 @@ When your organization reaches the 2 GiB free‑tier storage limit, you won’
 
 1. Select **Save** when you're done.
 
-   :::image type="content" source="../media/increase-usage-limit.png" alt-text="A screenshot displaying how to increase Artifacts storage limit." lightbox="../media/increase-usage-limit.png":::
+   :::image type="content" source="../media/increase-usage-limit.png" alt-text="Screenshot showing how to increase Artifacts storage limit." lightbox="../media/increase-usage-limit.png":::
 
 ## Related content
 

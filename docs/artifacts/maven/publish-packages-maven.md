@@ -1,7 +1,7 @@
 ---
 title: Publish Maven packages to an Azure Artifacts feed
 description: Learn how to connect to a feed and publish your Maven packages.
-ms.service: azure-devops-artifacts
+ms.service: azure-artifacts
 ms.topic: how-to
 ms.author: rabououn
 author: ramiMSFT
@@ -46,7 +46,7 @@ If you already have a feed, you can skip this section. Otherwise, follow the ste
 
 1. Once published, navigate to your feed. You should see your packages listed, as shown in the example below:
     
-    :::image type="content" source="media/publish-package-maven.png" alt-text="A screenshot displaying a Maven package successfully published to the feed.":::
+    :::image type="content" source="media/publish-package-maven.png" alt-text="Screenshot showing a Maven package successfully published to the feed.":::
 
 ## Related content
 

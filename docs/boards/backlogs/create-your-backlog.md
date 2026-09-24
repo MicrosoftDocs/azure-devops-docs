@@ -3,7 +3,7 @@ title: Create and manage your product backlog
 titleSuffix: Azure Boards
 description: Create and prioritize your product backlog in Azure Boards. Add work items, estimate effort, and organize requirements to guide your team's development work.
 ms.custom: boards-backlogs, copilot-scenario-highlight
-ms.service: azure-devops-boards
+ms.service: azure-boards
 ai-usage: ai-assisted
 ms.author: chcomley
 author: chcomley

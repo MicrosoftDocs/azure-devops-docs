@@ -2,7 +2,7 @@
 title: Service endpoint authentication schemes
 titleSuffix: Azure DevOps
 description: Define authentication schemes for custom service endpoint types in Azure DevOps extensions.
-ms.subservice: azure-devops-ecosystem
+ms.subservice: azure-devops-developer
 ms.custom: pat-reduction, UpdateFrequency3
 ms.topic: concept-article
 monikerRange: '<= azure-devops'

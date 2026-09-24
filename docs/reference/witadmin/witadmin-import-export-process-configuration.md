@@ -2,7 +2,7 @@
 title: Import or export process configuration  
 titleSuffix: Azure DevOps
 description: Modify the display of the Azure Boards pages that you view through the web portal using command line tools.
-ms.service: azure-devops-boards
+ms.service: azure-boards
 ms.custom: witadmin
 ms.author: chcomley
 author: chcomley

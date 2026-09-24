@@ -3,7 +3,7 @@ title: Plan and track work in Azure Boards
 titleSuffix: Azure Boards 
 description: Learn how to plan and track work by using Azure Boards using the Agile, Basic, Scrum, or Capability Maturity Model Integration (CMMI) processes.
 ms.custom: boards-get-started, copilot-scenario-highlight
-ms.service: azure-devops-boards
+ms.service: azure-boards
 ms.author: chcomley
 author: chcomley
 ms.topic: how-to

@@ -1,5 +1,5 @@
 ---
-ms.service: azure-devops-boards
+ms.service: azure-boards
 ms.author: chcomley
 author: chcomley
 ms.topic: include
@@ -7,14 +7,16 @@ ms.date: 06/22/2026
 ---
 
 
-## Create light-weight charts  
+### Create lightweight charts  
 
-You can define a shared flat query and create a chart based on your tracking interests. Chart types include:
+You can create a chart from a flat-list query based on your tracking goals. Chart types include:
 
-- **status:** pie, bar, column, stacked bar, and pivot
-- **trend:** stacked area, line, and area   
+- **Status charts:** pie, bar, column, stacked bar, and pivot
+- **Trend charts:** stacked area, line, and area   
 
-Select one of the following images to go to the linked article.
+Use the following workflow:
 
-[:::image type="icon" source="../../report/dashboards/media/gs-chart-query.png" alt-text="Create query":::](../queries/using-queries.md)[:::image type="icon" source="../../report/dashboards/media/gs-chart-create.png" alt-text="Create chart":::](../../report/dashboards/charts.md)[:::image type="icon" source="../../report/dashboards/media/gs-chart-add-dashboard.png" alt-text="Add chart to dashboard":::](../../report/dashboards/add-charts-to-dashboard.md)
+- [Create a query](../queries/using-queries.md)
+- [Create a chart](../../report/dashboards/charts.md)
+- [Add the chart to a dashboard](../../report/dashboards/add-charts-to-dashboard.md)
   

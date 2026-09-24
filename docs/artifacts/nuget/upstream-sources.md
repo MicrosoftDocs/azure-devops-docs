@@ -1,7 +1,7 @@
 ---
 title: Consume packages from the NuGet Gallery
 description: Learn how to consume packages from nuget.org with Azure Artifacts upstream sources.
-ms.service: azure-devops-artifacts
+ms.service: azure-artifacts
 ms.topic: how-to
 ms.date: 09/5/2025
 monikerRange: "<=azure-devops"
@@ -38,7 +38,7 @@ If you haven't created a feed yet, follow the steps below to create a new feed a
 
 1. Select **Create** when you're done.
 
-    :::image type="content" source="../media/enable-upstream-nuget-gallery.png" alt-text="A screenshot displaying how to create a new feed and enable upstream sources in Azure Artifacts.":::
+    :::image type="content" source="../media/enable-upstream-nuget-gallery.png" alt-text="Screenshot showing the Create feed pane with upstream sources enabled in Azure Artifacts.":::
 
 ## Add NuGet Gallery upstream source
 
@@ -147,7 +147,7 @@ Once installed, a copy of the package will be automatically saved to your feed, 
 
 1. The *ModelContextProtocol* packages, installed in the previous step, is now available in our feed. Azure Artifacts automatically saved a copy to your feed.
 
-    :::image type="content" source="../media/package-saved-from-nuget-upstream.png" alt-text="A screenshot displaying the MCP package saved to the feed." lightbox="../media/package-saved-from-nuget-upstream.png":::
+    :::image type="content" source="../media/package-saved-from-nuget-upstream.png" alt-text="Screenshot showing the MCP package saved to the feed." lightbox="../media/package-saved-from-nuget-upstream.png":::
 
 ## Related content
 

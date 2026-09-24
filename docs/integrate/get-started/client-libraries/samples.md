@@ -1,7 +1,7 @@
 ---
 title: .NET Client Library Samples for Azure DevOps
 description: Learn how to extend and integrate with Azure DevOps by using C# samples with modern authentication and best practices.
-ms.subservice: azure-devops-ecosystem
+ms.subservice: azure-devops-developer
 ms.custom: devx-track-dotnet, pat-reduction, copilot-scenario-highlight
 ai-usage: ai-assisted
 ms.topic: sample
@@ -558,7 +558,7 @@ private static bool IsTransientError(Exception ex)
 - Deploy incrementally to production
 - Monitor for authentication issues
 
-For detailed migration guidance, see [Replace PATs with Microsoft Entra tokens](../authentication/entra.md#migration-from-legacy-authentication).
+For detailed migration guidance, see [Replace PATs with Microsoft Entra tokens](../authentication/entra.md#migrate-from-legacy-authentication).
 
 <a id="use-ai-assistance"></a>
 

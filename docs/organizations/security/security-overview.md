@@ -8,7 +8,7 @@ ms.custom: horz-security, pat-reduction
 ms.author: chcomley
 author: chcomley
 monikerRange: '<= azure-devops'
-ms.date: 02/26/2026
+ms.date: 07/16/2026
 --- 
 
 # Make your Azure DevOps secure
@@ -105,7 +105,7 @@ To ensure secure and efficient management of permissions, properly scope [permis
 
 To scope permissions effectively, complete the following actions:
 
-- **Disable inheritance:** Avoid [permissions inheritance](about-permissions.md#permission-inheritance) and prevent unintended access. Inheritance can inadvertently grant permissions to users who shouldn't have them, due to its allow-by-default nature. Carefully manage and explicitly set permissions to ensure that only the intended users have access.
+- **Use inheritance by default:** Set permissions at the highest scope that matches the intended access and let child resources inherit them. Inherited assignments reduce the need for object-level exceptions. Disable [permission inheritance](about-permissions.md#permission-inheritance) only when a child resource requires a different security boundary.
 - **Segment environments:** Use separate Azure accounts for different environments, such as Development, Testing, and Production, to enhance security and prevent conflicts. This approach minimizes the risk of resource conflicts and data contamination between environments and allows for better management and isolation of resources. For more information, see [Azure Landing Zone](/azure/cloud-adoption-framework/ready/landing-zone/).
 - **Control access and ensure compliance:** Use [Azure Policy](/azure/governance/policy/overview) to restrict access to unused Azure regions and services, ensuring compliance with organizational standards. This action helps enforce best practices and maintain a secure environment by preventing unauthorized access and usage.
 - **[Implement Azure role-based control (ABAC)](/azure/role-based-access-control/conditions-overview):** Use ABAC with properly tagged resources to limit unauthorized access. This action ensures that access permissions get granted based on specific attributes, enhancing security by preventing unauthorized resource creation and access.

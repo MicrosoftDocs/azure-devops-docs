@@ -3,7 +3,7 @@ title: Add a Custom Rule to a Work Item Type
 titleSuffix: Azure DevOps Services
 description: Learn how to add a custom rule to a work item type defined for an inherited process and project in Azure Boards.
 ms.custom: inherited-process
-ms.service: azure-devops-boards
+ms.service: azure-boards
 ms.author: chcomley
 author: chcomley
 monikerRange: "<=azure-devops"

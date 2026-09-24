@@ -2,7 +2,7 @@
 title: Deploy an Azure Pipelines agent on Windows
 description: Learn how to use Windows agents to build and deploy your Windows and Azure code for Azure Pipelines
 ms.topic: concept-article
-ms.date: 06/23/2026
+ms.date: 07/07/2026
 monikerRange: '<= azure-devops'
 ms.custom: copilot-scenario-highlight
 ai-usage: ai-assisted
@@ -22,7 +22,7 @@ This article provides guidance for using the [4.x agent software](v4-agent.md) w
 
 :::moniker range="< azure-devops-server"
 
-This article provides guidance for using the [3.x agent software](v3-agent.md) with Azure DevOps Server 2022 and Azure DevOps Server 2020. For a list of Azure DevOps Server versions that support the 3.x agent, see [Does Azure DevOps Server support the 3.x agent](v3-agent.md#does-azure-devops-server-support-the-3x-agent).
+This article provides guidance for using the [3.x agent software](/previous-versions/azure/devops/pipelines/agents/v3-agent?view=azure-devops-2020&preserve-view=true) with Azure DevOps Server 2022 and Azure DevOps Server 2020. For a list of Azure DevOps Server versions that support the 3.x agent, see [Does Azure DevOps Server support the 3.x agent](/previous-versions/azure/devops/pipelines/agents/v3-agent?view=azure-devops-2020&preserve-view=true#does-azure-devops-server-support-the-3x-agent).
 
 > [!IMPORTANT]
 > If you're using Azure DevOps Services or Azure DevOps Server, you should be using the [4.x agent software](v4-agent.md).
@@ -30,7 +30,7 @@ This article provides guidance for using the [3.x agent software](v3-agent.md) w
 :::moniker-end
 
 > [!NOTE]
-> The Windows ARM64 agent is now available in **public preview** for Windows 11. For more information, see the [v4 agent supported operating systems](v4-agent.md#upgrade-to-4x-agent-on-supported-operating-systems). 
+> The Windows ARM64 agent is generally available for Windows 11. For more information, see the [v4 agent supported operating systems](v4-agent.md#upgrade-to-4x-agent-on-supported-operating-systems). 
 
 [!INCLUDE [include](includes/concepts.md)]
 
@@ -71,9 +71,9 @@ Make sure your machine has these prerequisites:
 You should run agent setup manually the first time.
 After you get a feel for how agents work, or if you want to automate setting up many agents, consider using [unattended config](#unattended-config).
 
-### Hardware specs 
+### Hardware specifications 
 
-The hardware specs for your agents will vary with your needs, team size, etc.
+Your agent hardware specifications depend on your needs, team size, and other factors.
 It's not possible to make a general recommendation that will apply to everyone.
 As a point of reference, the Azure DevOps team builds the hosted agents code using pipelines that utilize [hosted agents](hosted.md).
 On the other hand, the bulk of the Azure DevOps code is built by 24-core server class machines
@@ -122,7 +122,7 @@ If you aren't sure which version of Windows is installed, [follow these instruct
 
 ## Install the agent
 
-1. Start an elevated (PowerShell) window and set the location to where you unpacked the agent.
+1. Start an elevated PowerShell window and set the location to where you unpacked the agent.
 
    ```ps
    cd C:\agents 

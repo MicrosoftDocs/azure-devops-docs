@@ -2,38 +2,49 @@
 title: Link GitHub commits, PRs, branches, and issues to work items
 titleSuffix: Azure Boards 
 description: Learn how to links work items to GitHub commits, pull requests, branches, and issues, and automatically transition work item states in Azure Boards.  
-ms.service: azure-devops-boards 
-ms.custom: work-items, github, engagement-fy23
+ms.service: azure-boards 
+ms.custom: work-items, github, engagement-fy23, copilot-scenario-highlight
 ms.author: chcomley
 author: chcomley
 ms.topic: quickstart
+ai-usage: ai-assisted
 monikerRange: "<=azure-devops"
-ms.date: 02/26/2026
+ms.date: 07/16/2026
 ---
 
 # Link GitHub commits, pull requests, branches, and issues to work items in Azure Boards
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)] 
 
-In this article, learn how to link work items to GitHub commits, pull requests, branches, and builds after connecting your Azure Boards project with a GitHub repository. You can use the **#mention** syntax for commits and branches, use `!` mentions to reference GitHub pull requests from work item discussions, or add a GitHub commit, pull request, or branch link directly from the Azure Boards work item.
+In this article, learn how to link work items to GitHub commits, pull requests, branches, and builds after you connect your Azure Boards project to a GitHub repository. Use **#mention** syntax for commits and branches, use `!` mentions to reference GitHub pull requests in work item discussions, or add a GitHub commit, pull request, or branch link directly from the Azure Boards work item.
 
 [!INCLUDE[temp](../includes/github-platform-support.md)]
+
+[!INCLUDE [ai-assistance-mcp-server-tip](../../includes/ai-assistance-mcp-server-tip.md)]
 
 ## Prerequisites 
 
 | Category | Requirements |
 |--------------|-------------|
-| Permissions | **Contributor** to both the Azure Boards project and the GitHub repository. |
-| Project connection | Azure Boards project is connected to the GitHub repository where the commits, pull requests, and branch you want to link to or from exist. For more information, see [Azure Boards-GitHub integration](index.md). |
+| Permissions | You have **Contributor** access to both the Azure Boards project and the GitHub repository. |
+| Project connection | Connect your Azure Boards project to the GitHub repository that contains the commits, pull requests, and branches you want to link. For more information, see [Azure Boards-GitHub integration](index.md). |
 
 ::: moniker range="azure-devops"
 > [!NOTE]   
-> To view the Development section and GitHub link types, projects that use the Hosted XML process model require updates to the work item types. For more information, see [Update XML definitions for select work item types](troubleshoot-github-connection.md#update-wits). 
+> If your project uses the Hosted XML process model, update the work item types to see the **Development** section and GitHub link types. For more information, see [Update XML definitions for select work item types](connect-to-github.md#update-wits). 
 ::: moniker-end
 
 ## Use `AB#` to link from GitHub to Azure Boards work items
 
-From a GitHub commit, pull request, or issue, use the following syntax to create a link to your Azure Boards work item. Enter the `AB#ID` within the text of a commit message. Or, for a pull request or issue, enter the `AB#ID` within the description. Using `AB#ID` in a comment or pull request title doesn't create a link on the work item.
+Use `AB#` mentions in GitHub text to link to Azure Boards work items.
+
+To create a link:
+
+1. Add `AB#{ID}` to a commit message, pull request description, or issue description.
+1. Push the commit or save the pull request or issue.
+1. Open the work item to confirm the link appears in the **Development** section.
+
+Using `AB#ID` in a comment or in a pull request title doesn't create a link on the work item.
 
 ```
 AB#{ID}
@@ -41,7 +52,7 @@ AB#{ID}
 
 For example, `AB#125` links to work item ID 125.
 
-You can also enter a commit or pull request message to transition the work item. The system recognizes `{state}` or `{state category}`, along with `fix`, `fixes`, `fixed`, and applies it to the #-mention item that follows. 
+You can also transition work items from commit or pull request text. Azure Boards recognizes `{state}` or `{state category}` and keywords such as `fix`, `fixes`, and `fixed`, and then applies that transition to the `AB#` reference that follows.
 
 When a pull request description includes a valid state name, for example, ``Closed AB#1234``, the system updates the referenced work item to that specific state. If the state name isn't recognized directly, Azure Boards tries to match it to a workflow category like ``Resolved`` or ``Completed``. If a match is found, the work item transitions to the first available state defined under that category.
 
@@ -52,16 +63,24 @@ By default, work items referenced with ``fix``, ``fixes``, or ``fixed`` transiti
 
 For more information, see [How workflow category states are used in Azure Boards backlogs and boards](../work-items/workflow-and-state-categories.md).
 
-Review the following table of examples:
+Use the following link-only examples:
+
+| Commit or pull request message              | Action |
+| :------------------------------------------ | :----------------------------------------------- |
+| `AB#123`                                    | Links Azure Boards work item 123. No state transition occurs. |
+| `Adds a new feature, AB#123.`               | Links Azure Boards work item 123. No state transition occurs. |
+| `AB#123, AB#124, and AB#126`                | Links Azure Boards work items 123, 124, and 126. No state transition occurs. |
+| `Fixing multiple bugs: issue #123 and user story AB#234` | Links to GitHub issue 123 and Azure Boards work item 234. No transitions are made. |
+
+Use the following link-and-transition examples:
 
 | Commit or pull request message              | Action |
 | :------------------------------------------ | :----------------------------------------------- |
 | `Fixed AB#123`                              | Links and transitions the work item to the *Resolved* workflow state category or, if none is defined, then the *Completed* workflow state category. |
-| `Closed AB#123`                             | Links and transitions the work item to the *Closed* workflow state. If none is defined, no transitions are made. 
-| `Adds a new feature, fixes AB#123.`         | Links and transitions the work item to  the *Resolved* workflow state category or, if none is defined, then the *Completed* workflow state category. |
-| `Fixes AB#123, AB#124, and AB#126`          | Links to Azure Boards work items 123, 124, and 126. Transitions only the first item, 123 to the *Resolved* workflow state category or, if none is defined, then the *Completed* workflow state category.|
-| `Fixes AB#123, Fixes AB#124, Fixes AB#125` | Links to Azure Boards work items 123, 124, and 126. Transitions all items to   either the *Resolved* workflow state category or, if none is defined, then the *Completed* workflow state category. |
-| `Fixing multiple bugs: issue #123 and user story AB#234` | Links to GitHub issue 123 and Azure Boards work item 234. No transitions are made. |
+| `Closed AB#123`                             | Links and transitions the work item to the *Closed* workflow state. If none is defined, no transitions are made. |
+| `Adds a new feature, fixes AB#123.`         | Links and transitions the work item to the *Resolved* workflow state category or, if none is defined, then the *Completed* workflow state category. |
+| `Fixes AB#123, AB#124, and AB#126`          | Links to Azure Boards work items 123, 124, and 126. Transitions only the first item, 123, to the *Resolved* workflow state category or, if none is defined, then the *Completed* workflow state category. |
+| `Fixes AB#123, Fixes AB#124, Fixes AB#125` | Links to Azure Boards work items 123, 124, and 125. Transitions all items to either the *Resolved* workflow state category or, if none is defined, then the *Completed* workflow state category. |
 
 > [!NOTE]   
 > If you connected the same GitHub repo to projects defined in two or more Azure DevOps organizations, you might see unexpected **AB#** mention linking. For more information, see [Resolve connection issues](connect-to-github.md#resolve-connection-issues). For this reason, we recommend that you only connect a GitHub repo to projects defined in a single Azure DevOps organization. 
@@ -130,7 +149,7 @@ Select the link to open the commit or pull request in GitHub.
 
 ### GitHub pull request insights
 
-Linked GitHub pull requests in the Development section show extra status details, so you can assess progress without opening the pull request in GitHub.
+Linked GitHub pull requests in the **Development** section show extra status details. You can assess progress without opening the pull request in GitHub.
 
 #### Prerequisites for pull request insights
 
@@ -141,15 +160,15 @@ To see pull request insights, go to the [Azure Boards app in GitHub](https://git
 #### View pull request status details
 
 1. Open a work item that has a linked GitHub pull request.
-2. In the **Development** section, find the linked pull request. The following status details appear next to the pull request link:
+1. In the **Development** section, find the linked pull request. The following status details appear next to the pull request link:
 
    - **Draft status**: Shows whether the pull request is still a draft.
-   - **Review status**: Shows whether the pull request needs review, has been approved, or has changes requested.
+   - **Review status**: Shows whether the pull request needs review, is approved, or has changes requested.
    - **Checks status**: Shows whether CI checks are passing, failing, or pending.
 
    :::image type="content" source="media/link/github-pr-status-detail-indicators.png" border="true" alt-text="Screenshot of the Development section showing a linked GitHub pull request with closed, review, and checks status detail indicators.":::
 
-3. Hover over a status indicator to see more details, or select the pull request link to open it directly in GitHub.
+1. Hover over a status indicator to see more details, or select the pull request link to open it directly in GitHub.
 
 <a id="mention-github-pull-requests">  </a>
 
@@ -182,9 +201,58 @@ For more information about configuring this setting, see [Configure pipelines to
 
 ## View GitHub objects on a board
 
-By enabling GitHub annotations on the board, you can quickly open linked GitHub commits, pull requests, or issues for more detail. For more information, see [Customize cards](../boards/customize-cards.md).
+When you enable GitHub annotations on the board, you can quickly open linked GitHub commits, pull requests, or issues for more detail. For more information, see [Customize cards](../boards/customize-cards.md).
 
 :::image type="content" source="media/link/board-view-github-links.png" border="true" alt-text="Screenshot of board that shows GitHub links on work item cards.":::
+
+<a id="use-ai-assistance"></a>
+
+## Use AI to link and manage GitHub work
+
+If you configure the [Azure DevOps MCP Server](../../mcp-server/mcp-server-overview.md), you can describe GitHub-to-work-item linking tasks in natural language instead of navigating the work item form manually.
+
+Use these prompts as scenario examples. Supported operations vary by configured toolsets, extension version, and your permissions.
+
+Some prompts might return guidance instead of performing a write action, or they might require multiple prompts depending on the MCP tools you enabled.
+
+Before you run a prompt, replace placeholders such as `<Contoso>`, `<owner/repo>`, and `<sha>` with your actual values.
+
+Use this quick run-and-verify flow:
+
+1. Run one prompt from the table.
+1. Review the response for the action taken.
+1. Open the work item and confirm the result in the **Development** section.
+1. Open the related GitHub artifact and confirm the expected link or update.
+
+Try these prompts first:
+
+- `Link work item AB#125 in project <Contoso> to GitHub pull request <owner/repo>#42`
+- `Link work item AB#312 in project <Contoso> to GitHub commit <owner/repo>@<sha>`
+- `Summarize all GitHub commits and pull requests linked to work item AB#312 in project <Contoso>`
+
+| Task | Example prompt |
+|------|----------------|
+| Link a work item to a pull request | `Link work item AB#125 in project <Contoso> to GitHub pull request <owner/repo>#42` |
+| Link a work item to a commit | `Link work item AB#312 in project <Contoso> to GitHub commit <owner/repo>@<sha>` |
+| Link a work item to an issue | `Link work item AB#500 in project <Contoso> to GitHub issue <owner/repo>#10` |
+| Create a GitHub branch from a work item | `Create a GitHub branch named feature/checkout for work item 500 in project <Contoso> from repo <owner/repo> base branch main` |
+| Update linked work item state after PR merge | `After PR <owner/repo>#42 merges, update linked work item AB#125 to Resolved` |
+| Bulk link related work items | `Link all active user stories in area path <Contoso\\Web> to GitHub PR <owner/repo>#42` |
+| Find unlinked work items | `List all closed work items in project <Contoso> from the last 30 days that have no linked GitHub pull request` |
+| Summarize GitHub activity for a work item | `Summarize all GitHub commits and pull requests linked to work item AB#312 in project <Contoso>` |
+| Add AB# reference to a PR | `Suggest an AB# reference line to add to PR <owner/repo>#42 description that links to work items 125 and 126` |
+| Check status of linked PRs | `Show the review and check status of all GitHub pull requests linked to active user stories in project <Contoso>` |
+
+> [!NOTE]
+> If you're using Visual Studio Code, use [agent mode](/visualstudio/ide/copilot-chat-context#agent-mode). Azure DevOps MCP Server operations require agent mode to access Azure DevOps data and perform operations.
+
+### Troubleshoot AI-assisted linking
+
+- If a prompt doesn't run, confirm that agent mode is enabled in your AI client.
+- If a prompt fails with access errors, verify that your account has access to the Azure DevOps project and GitHub repository.
+- If links aren't created, replace all placeholders (for example, `<Contoso>`, `<owner/repo>`, `<sha>`) with real values and run the prompt again.
+- If a bulk prompt fails, retry with a single work item first, then repeat with a smaller batch.
+- If results still don't match expectations, verify the outcome in the work item **Development** section and in the related GitHub artifact.
 
 ## Next step
 
@@ -197,4 +265,4 @@ By enabling GitHub annotations on the board, you can quickly open linked GitHub 
 - [Configure pipelines to support work tracking](../../pipelines/integrations/configure-pipelines-work-tracking.md)
 - [Understand how workflow category states are used in Azure Boards backlogs and boards](../work-items/workflow-and-state-categories.md)
 - [Link work items to objects](../backlogs/add-link.md)
-- [Troubleshoot GitHub and Azure Boards integration](troubleshoot-github-connection.md)
+- [Resolve GitHub and Azure Boards connection issues](connect-to-github.md#resolve-connection-issues)

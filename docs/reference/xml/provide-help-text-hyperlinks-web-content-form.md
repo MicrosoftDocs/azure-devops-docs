@@ -2,7 +2,7 @@
 title: Help text, hyperlinks, web content 
 titleSuffix: Azure DevOps
 description: Customize your work item form to provide information or links to content.
-ms.service: azure-devops-boards
+ms.service: azure-boards
 ms.custom: process
 ms.author: chcomley
 author: chcomley

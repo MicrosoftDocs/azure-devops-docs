@@ -8,7 +8,8 @@ ms.author: chcomley
 ms.reviewer: chcomley
 author: chcomley
 ms.topic: troubleshooting
-ms.date: 04/02/2026
+ai-usage: ai-assisted
+ms.date: 07/08/2026
 monikerRange: '<= azure-devops'
 ---
 
@@ -18,19 +19,28 @@ monikerRange: '<= azure-devops'
 
 This article helps you access support resources and provide feedback for Azure DevOps. Learn how to [**contact Support**](https://azure.microsoft.com/support/create-ticket/), report issues, suggest features, and give feedback on both the product and documentation.
 
-## Get support and give feedback
+## Self-help first
 
-| Action | More info |
-|---------|---------|
-| [**Contact Support**](https://azure.microsoft.com/support/create-ticket/) | In the Microsoft Azure portal, create a support request. Briefly describe the issue to get to solutions and support, and then follow the prompts for additional details.<br>:::image type="content" source="media/provide-feedback/azure-portal-support-troubleshooting.png" alt-text="Screenshot shows Help and support page in Azure portal with button selections."::: |
-| [**Get Virtual Agent support**](https://go.microsoft.com/fwlink/?linkid=2160944) | Chat with the Virtual Agent to get help with common issues, including user management, organization-level configuration and management, sign-in problems, geography moves, and more. |
-|**Troubleshoot access problems** |- [Collect an HTTP Archive (HAR) trace](capture-browser-trace.md) for sign-in problems through Microsoft Edge or Google Chrome.<br>- [Troubleshoot access and permissions problems](../organizations/security/troubleshoot-permissions.md).<br>- View [user and permissions management FAQs](../organizations/accounts/faq-user-and-permissions-management.yml).<br>- View [Microsoft Entra access FAQs](../organizations/accounts/faq-azure-access.yml).|
-| **Report a bug or problem** | Report a problem through the Developer Community, which is an open channel to Microsoft engineering teams:<br>- [Azure DevOps Services](https://developercommunity.visualstudio.com/AzureDevOps)<br>- [Azure DevOps Server](https://developercommunity.visualstudio.com/AzureDevOpsServerTFS) |
-| **Suggest a feature**|  Submit your suggestion through the Developer Community, which is an open channel to Microsoft engineering teams:<br>- [Azure DevOps Services](https://developercommunity.visualstudio.com/AzureDevOps)<br>- [Azure DevOps Server](https://developercommunity.visualstudio.com/AzureDevOpsServerTFS) |
-|[**Contact your project administrator**](../organizations/security/look-up-project-administrators.md) | Contact your project administrator for assistance with access problems, permission changes, project configuration, resource allocation, or troubleshooting. |
-| **Get advice** | Get advice from developers through Stack Overflow:<br>- [Azure DevOps Services](https://stackoverflow.com/questions/tagged/azure-devops)<br>- [Azure DevOps Server](https://stackoverflow.com/questions/tagged/azure-devops-server) |
-| [**Report security flaws**](https://www.microsoft.com/msrc/faqs-report-an-issue?rtc=1) | Report potential security problems to ensure the safety and integrity of the system. |
-| [**View Release Notes**](/azure/devops/release-notes/features-timeline-released) | Check out what's new in Azure DevOps Release Notes, which get updated every three weeks. |
+Try these options before opening a support request:
+
+- [Collect an HTTP Archive (HAR) trace](capture-browser-trace.md) for sign-in problems through Microsoft Edge or Google Chrome.
+- [Troubleshoot access and permissions problems](../organizations/security/troubleshoot-permissions.md).
+- See [user and permissions management FAQs](../organizations/accounts/faq-user-and-permissions-management.yml).
+- See [Microsoft Entra access FAQs](../organizations/accounts/faq-azure-access.yml).
+
+## Support and feedback channels
+
+Use the following table to choose the right channel quickly.
+
+| If you need to... | Use this channel | Link |
+|---|---|---|
+| Get help when you're blocked and can't continue work | Contact Support | [Create a support request](https://azure.microsoft.com/support/create-ticket/) |
+| Resolve project-specific access or configuration problems | Project administrator | [Contact your project administrator](../organizations/security/look-up-project-administrators.md) |
+| Report a product bug or defect | Developer Community | [Azure DevOps Services](https://developercommunity.visualstudio.com/AzureDevOps)<br>[Azure DevOps Server](https://developercommunity.visualstudio.com/AzureDevOpsServerTFS) |
+| Suggest a product feature | Developer Community | [Azure DevOps Services](https://developercommunity.visualstudio.com/AzureDevOps)<br>[Azure DevOps Server](https://developercommunity.visualstudio.com/AzureDevOpsServerTFS) |
+| Ask implementation questions | Stack Overflow | [Azure DevOps Services](https://stackoverflow.com/questions/tagged/azure-devops)<br>[Azure DevOps Server](https://stackoverflow.com/questions/tagged/azure-devops-server) |
+| Report a security vulnerability | Microsoft Security Response Center (MSRC) | [Report security flaws](https://www.microsoft.com/msrc/faqs-report-an-issue?rtc=1) |
+| Review recent product changes | Release notes | [View release notes](/azure/devops/release-notes/features-timeline-released) |
 
 ## Tips for effective feedback
 
@@ -39,10 +49,14 @@ If you want to vent about the product or the documentation, that's okay. It help
 * **Provide context**. What problem were you trying to solve? At what point did it go wrong?
 * **Include your role**. Are you a developer, manager, or business owner? Understanding the audience helps the product team create better solutions.
 * **Include your product version**. What other products were you using with it?
+* **For sign-in issues, include a HAR trace**. A [HAR trace](capture-browser-trace.md) helps the support team diagnose authentication problems faster.
 
 ### Give product feedback
 
 Enter clear, precise, detailed feedback when you [create a support request](https://azure.microsoft.com/support/create-ticket/).
+
+> [!IMPORTANT]
+> Don't include credentials, API keys, personal access tokens, or other sensitive information in your feedback.
 
 **Example:** "I'm a project manager for a small start-up using Azure DevOps. I'm trying to create work item templates through the UI, but my changes don't persist. It's not clear what I'm doing wrong."
 

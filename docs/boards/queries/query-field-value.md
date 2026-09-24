@@ -3,7 +3,7 @@ title: Query by field values
 titleSuffix: Azure Boards
 description: Learn how to create a query by filtering on field values that are compared to other field values in Azure Boards and Azure DevOps.
 ms.custom: boards-queries, copilot-scenario-highlight
-ms.service: azure-devops-boards
+ms.service: azure-boards
 ms.author: chcomley
 author: chcomley
 ms.topic: example-scenario
@@ -143,11 +143,11 @@ The table below lists fields that support comparison queries. Not all fields are
    ### I
    - [ID](titles-ids-descriptions.md#fields) (System)
    - [Impact Assessment](/previous-versions/azure/devops/boards/work-items/guidance/cmmi/guidance-requirements-field-reference-cmmi#fields) (CMMI)
-   - [Impact on Architecture](/previous-versions/azure/devops/boards/work-items/guidance/cmmi/guidance-change-request-field-reference-cmmi#fields) (CMMI)
-   - [Impact on Development](/previous-versions/azure/devops/boards/work-items/guidance/cmmi/guidance-change-request-field-reference-cmmi#fields) (CMMI)
-   - [Impact on Technical Publications](/previous-versions/azure/devops/boards/work-items/guidance/cmmi/guidance-change-request-field-reference-cmmi#fields) (CMMI)
-   - [Impact on Test](/previous-versions/azure/devops/boards/work-items/guidance/cmmi/guidance-change-request-field-reference-cmmi#fields) (CMMI)
-   - [Impact on User Experience](/previous-versions/azure/devops/boards/work-items/guidance/cmmi/guidance-change-request-field-reference-cmmi#fields) (CMMI)
+   - Impact on Architecture (CMMI)
+   - Impact on Development (CMMI)
+   - Impact on Technical Publications (CMMI)
+   - Impact on Test (CMMI)
+   - Impact on User Experience (CMMI)
    - [Integrated in Build](build-test-integration.md#fields) (TCM)
    - [Issue](build-test-integration.md#fields) (TCM)
    - [Iteration ID](query-by-area-iteration-path.md#fields) (System)
@@ -157,7 +157,7 @@ The table below lists fields that support comparison queries. Not all fields are
 :::row:::
    :::column span="1":::
    ### J–N
-   - [Justification](/previous-versions/azure/devops/boards/work-items/guidance/cmmi/guidance-change-request-field-reference-cmmi#fields) (CMMI)
+   - Justification (CMMI)
    - [Link Comment](linking-attachments.md#fields) (System)
    - [Link Description](linking-attachments.md#fields) (System)
    - [Local Data Source](build-test-integration.md#fields) (TCM)

@@ -1,5 +1,5 @@
 ---
-ms.subservice: azure-devops-ecosystem
+ms.subservice: azure-devops-developer
 title: Develop a web extension
 description: Learn how to develop your first web extension for Azure DevOps.
 ms.custom: engagement-fy23, UpdateFrequency3

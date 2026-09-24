@@ -4,7 +4,7 @@ titleSuffix: Azure Boards
 description: Learn how to fix reordering and nesting issues for work items in Azure Boards. Resolve error messages and maintain a natural hierarchy for your backlog.
 ms.custom: boards-backlogs, copilot-scenario-highlight
 ai-usage: ai-assisted
-ms.service: azure-devops-boards
+ms.service: azure-boards
 ms.topic: troubleshooting
 ms.author: chcomley
 author: chcomley

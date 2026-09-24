@@ -1,7 +1,7 @@
 ---
 title: Legacy SOAP client library samples for Azure DevOps
 description: C# samples showing how to integrate with Azure DevOps using legacy SOAP clients (.NET Framework only) - modern REST clients recommended.
-ms.subservice: azure-devops-ecosystem
+ms.subservice: azure-devops-developer
 ai-usage: ai-assisted
 ms.custom: devx-track-dotnet, pat-reduction
 ms.topic: sample

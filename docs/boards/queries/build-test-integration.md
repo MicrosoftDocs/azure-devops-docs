@@ -2,7 +2,7 @@
 title: Build and test integration queries
 titleSuffix: Azure DevOps
 description: Learn how to track work by creating queries based on build and test integration fields in Azure Boards.
-ms.service: azure-devops-boards
+ms.service: azure-boards
 ms.custom: cross-service, copilot-scenario-highlight
 ms.author: chcomley
 author: chcomley

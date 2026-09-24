@@ -5,7 +5,7 @@ description: Learn how to review pull requests in Azure Repos, including how to 
 ms.service: azure-devops-repos
 ms.topic: how-to
 monikerRange: '<= azure-devops'
-ms.date: 05/27/2026
+ms.date: 09/08/2026
 ms.subservice: azure-devops-repos-git
 ms.custom: sfi-image-nochange
 ai-usage: ai-assisted
@@ -17,7 +17,7 @@ ai-usage: ai-assisted
 
 [!INCLUDE [ai-assistance-callout](../../includes/ai-assistance-callout.md)]
 
-When you create a [pull request](pull-requests.md) (PR) and specify required and optional reviewers, Azure Repos notifies the reviewers that your PR is ready for review. All required reviewers must approve the changes in your PR before the changes can merge into the target branch. For PRs that change critical branches like `main`, your team might have [branch policies](branch-policies.md) that specify the reviewers or require a minimum number of reviewers. If branch policies add optional reviewers to your PR, you can keep them, require them, or remove them. If branch policies add required reviewers to your PR, you can't make them optional or remove them. For information about assigning reviewers through branch policies, see [Automatically include code reviewers](branch-policies.md#include-code-reviewers).
+When you create a [pull request](pull-requests.md) (PR) and specify required and optional reviewers, Azure Repos notifies the reviewers that your PR is ready for review. All required reviewers must approve the changes in your PR before the changes can merge into the target branch. For PRs that change critical branches like `main`, your team might have [branch policies](branch-policies.md) that specify the reviewers or require a minimum number of reviewers. If branch policies add optional reviewers to your PR, you can keep them, require them, or remove them. If branch policies add required reviewers to your PR, you can't make them optional or remove them. For information about assigning reviewers through branch policies and security best practices, see [Secure repositories and pull requests](secure-repositories-pull-requests.md) and [Automatically include code reviewers](branch-policies.md#include-code-reviewers).
 
 When you review a PR, give constructive feedback that's precise and easy to understand. For more information, see [Pull request feedback](about-pull-requests.md#quality-feedback-for-pull-requests).
 
@@ -62,9 +62,12 @@ For more information, see [Resolve merge conflicts](/azure/devops/repos/git/merg
 
 You can ask GitHub Copilot to review a pull request alongside human reviewers. Copilot posts comments and suggestions directly on the changed code, so you can address common issues before a human reviewer signs off.
 
-To request a review, open a pull request and select **Request** next to **GitHub Copilot** in the **Reviewers** section. Copilot always leaves a **Comment** review, so its feedback doesn't satisfy required-reviewer policies and doesn't block merging.
+To request a review with the repository's default effort level, open a pull request and select **Request** next to **GitHub Copilot** in the **Reviewers** section. To choose a different effort level for one review, open the dropdown menu next to **Request** and select an effort level. Copilot always leaves a **Comment** review, so its feedback doesn't satisfy required-reviewer policies and doesn't block merging.
 
-This feature is in limited public preview and requires sign-up. For setup, billing, and limits, see [Get started with Copilot code review for pull requests](copilot-code-reviews.md).
+You can also configure branch policies to automatically trigger reviews for new and draft pull requests.
+
+> [!NOTE]
+> GitHub Copilot code review is available in public preview for all Azure DevOps customers. For setup, billing, and limits, see [Get started with Copilot code review for pull requests](copilot-code-reviews.md).
 
 ### Review changes as a human reviewer
 
@@ -191,7 +194,7 @@ PR authors should reply to comments to let the reviewers know how they're addres
 
 ### Change comment status
 
-New comments start with an **Active** status. PR authors update the status during the review process to indicate how they addressed reviewer feedback and suggestions. PR authors can select a comment status from the status dropdown list:
+New comments start with an **Active** status. PR authors update the status during the review process to show how they addressed reviewer feedback and suggestions. PR authors can select a comment status from the status dropdown list:
 
 :::image type="content" source="media/review-pull-requests/2022/comment-status-dropdown.png" border="true" alt-text="Screenshot of the comment status options in a PR comment.":::
 
@@ -213,7 +216,7 @@ You can select which comments or updates show on the **Overview** tab by selecti
 
 For convenience, PR authors can edit files directly in Azure Repos. For example, you might accept a reviewer's suggested code change and want to make similar changes elsewhere.
 
-1. Select **Repos > Files**, select the PR source branch, select a file, and then choose **Edit**.
+1. Select **Repos** > **Files**, select the PR source branch, select a file, and then choose **Edit**.
 
     :::image type="content" source="media/review-pull-requests/2022/file-edit.png" border="true" alt-text="Screenshot of the Edit button to update a file in Azure Repos." lightbox="media/review-pull-requests/2022/file-edit-lrg.png":::
 

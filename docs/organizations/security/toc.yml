@@ -2,6 +2,9 @@
   href: index.yml
 - name: Security Best Practices
   href: security-overview.md
+- name: Permission performance recommendations
+  displayName: performance, scale, groups, inheritance, deny, repositories, large organizations
+  href: permission-performance-recommendations.md
 - name: Security automation scripts
   displayName: automation, PowerShell, audit, scripts, security management, user access, service connections
   href: security-scripts.md
@@ -26,6 +29,9 @@
     href: about-security-identity.md
   - name: Authentication types
     displayName: permission, security, mechanism, type, application
+    href: authentication-guidance.md
+  - name: Integration authentication methods
+    displayName: integration, service principal, managed identity, oauth, pat, service connection
     href: ../../integrate/get-started/authentication/authentication-guidance.md?toc=/azure/devops/organizations/security/toc.json
   expanded: true
 - name: Access levels and Stakeholder access

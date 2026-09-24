@@ -9,7 +9,7 @@ ms.author: chcomley
 author: chcomley 
 ms.topic: overview
 monikerRange: "<=azure-devops"
-ms.date: 02/17/2026
+ms.date: 07/16/2026
 --- 
 
 # About projects and scaling your organization
@@ -86,6 +86,12 @@ All project members can view identities added to comments, discussions, or assig
 One recommended approach is to use a single project to support your organization or enterprise. A single project can help minimize the maintenance of administrative tasks and provides the most optimized and flexible [cross-link object](../../boards/backlogs/add-link.md) experience.
 
 Even if you have many teams working on hundreds of different applications and software projects, you can easily manage them within a single project. A project isolates the data stored within it, and moving data from one project to another results in the loss of associated history.
+
+::: moniker range="azure-devops"
+
+At very large scale, avoid concentrating many thousands of repositories and most permission-protected resources in one project while other projects contain only a few resources. For more information, see [Permission performance recommendations](../security/permission-performance-recommendations.md#balance-resources-across-projects-and-organizations).
+
+::: moniker-end
 
 For more information, see [How many projects do you need?](../../user-guide/plan-your-azure-devops-org-structure.md#how-many-projects-do-you-need).
 

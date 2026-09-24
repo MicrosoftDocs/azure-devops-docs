@@ -4,21 +4,22 @@ ms.topic: include
 
 <a id="assign-to-sprint"></a>
 
-## Move work items to a sprint  
+## Move work items to a sprint
 
 ::: moniker range="<=azure-devops"
-From any product, sprint, or portfolio backlog, you can drag a multi-selected list of work items and drop it onto a sprint in the **Planning** pane to change its iteration path. This action is not supported for users with **Stakeholder** access.
 
-1. To open the **Planning** pane, choose the :::image type="icon" source="../../media/icons/view-options-icon.png" border="false"::: view options icon and select **Planning**. You can choose to set **In Progress items** to **On** or **Off**.
+From any product, sprint, or portfolio backlog, drag a multiselected list of work items onto a sprint in the **Planning** pane to update their iteration path. Users with **Stakeholder** access can't use this action.
 
-   :::image type="content" source="../sprints/media/define-sprints/view-options-planning-menu.png" alt-text="Screenshot of the Backlogs Open view options with Planning selected.":::
+1. Open the **Planning** pane by selecting the :::image type="icon" source="../../media/icons/view-options-icon.png" border="false"::: view options icon and choosing **Planning**. You can set **In Progress items** to **On** or **Off**.
 
-   The set of sprints selected for your team appears. If you don't see any sprints listed, you can add sprints or select existing sprints for your team's use. To learn how, see [Manage sprint timelines](../sprints/define-sprints.md).  
+   :::image type="content" source="../sprints/media/define-sprints/view-options-planning-menu.png" alt-text="Screenshot of the Backlogs view options menu with Planning selected.":::
 
-1. You can drag items from the **Backlog** onto a sprint.
+   Your team's sprints appear in the pane. If no sprints are listed, add sprints or select existing ones for your team. For more information, see [Manage sprint timelines](../sprints/define-sprints.md).
 
-   :::image type="content" source="../sprints/media/define-sprints/drag-drop-backlog-items-to-sprint.png" alt-text="Screenshot of the Backlog where you can drag items to a sprint.":::
+1. Drag the selected items from the **Backlog** onto the target sprint.
 
-   This action updates the Iteration Path of the backlog items and any of its child tasks to the sprint you selected.
+   :::image type="content" source="../sprints/media/define-sprints/drag-drop-backlog-items-to-sprint.png" alt-text="Screenshot of the Backlog with items being dragged to a sprint in the Planning pane.":::
+
+   This action updates the **Iteration Path** of the selected items and any of their child tasks to the sprint you chose.
 
 ::: moniker-end

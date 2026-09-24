@@ -1,12 +1,12 @@
 ---
-ms.service: azure-devops-boards
+ms.service: azure-boards
 ms.author: chcomley
 author: chcomley
 ms.topic: include
 ms.date: 09/09/2024
 ---
 
-[View and run queries](../queries/view-run-query.md) from the web portal or from the Team Explorer plug-in for Visual Studio. Modify a query using the [query editor to apply different filter criteria](../queries/using-queries.md) and [add queries to team dashboards](../../report/dashboards/dashboards.md).  
+[View and run queries](../queries/view-run-query.md) from the web portal. You can also view queries from the Team Explorer plug-in for Visual Studio. Modify a query in the web [query editor to apply different filter criteria](../queries/using-queries.md), and [add queries to team dashboards](../../report/dashboards/dashboards.md).  
 
 ### Tips for shared queries
 

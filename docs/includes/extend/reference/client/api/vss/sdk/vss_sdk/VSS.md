@@ -1,5 +1,5 @@
 ---
-ms.subservice: azure-devops-ecosystem
+ms.subservice: azure-devops-developer
 title: VSS SDK Reference for Azure DevOps Services
 description: An overview of the VSS SDK in Azure DevOps Services Integration
 ms.author: chcomley

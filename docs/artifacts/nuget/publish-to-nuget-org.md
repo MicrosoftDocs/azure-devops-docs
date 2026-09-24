@@ -1,7 +1,7 @@
 ---
 title: Publish packages to NuGet.org
 description: Learn how to publish NuGet packages to NuGet.org using the dotnet CLI.
-ms.service: azure-devops-artifacts
+ms.service: azure-artifacts
 ms.author: rabououn
 author: ramiMSFT
 ms.topic: tutorial

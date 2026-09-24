@@ -1,7 +1,7 @@
 ---
 title: Get work items programmatically from Azure DevOps Services
 description: Use REST APIs and .NET client libraries to fetch work items from Azure DevOps Services with queries in your own custom apps.
-ms.subservice: azure-devops-ecosystem
+ms.subservice: azure-devops-developer
 ms.topic: quickstart
 monikerRange: 'azure-devops'
 ms.author: chcomley

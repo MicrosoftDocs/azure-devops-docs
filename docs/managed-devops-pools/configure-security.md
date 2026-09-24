@@ -1,7 +1,7 @@
 ---
 title: Configure security
 description: Learn how to configure security settings for Managed DevOps Pools.
-ms.date: 11/18/2025
+ms.date: 09/22/2026
 ms.custom: sfi-image-nochange
 ms.topic: how-to
 ---
@@ -12,6 +12,152 @@ Learn how to configure security settings for Managed DevOps Pools. There are two
 
 * When you create a pool by using the **Security** tab
 * After you create a pool by using the **Security** settings pane
+
+## Configure pool aliases
+
+By default, the name of the agent pool in Azure DevOps is the same as your Managed DevOps Pool. You can specify a different name for the agent pool by configuring a pool alias. You can configure a top-level pool alias for all Azure DevOps organizations in your Managed DevOps Pool, or you can configure them on a per-organization basis.
+
+| Pool alias scope | Description |
+| --- | --- |
+| Top-level | This pool specifies the Azure DevOps agent pool name for all organizations in your Managed DevOps Pool. If you don't specify a top-level alias, the name of your Managed DevOps Pool is used as the Azure DevOps agent pool name. |
+| Organization-level | This pool alias specifies the Azure DevOps agent pool name for a specific organization in your Managed DevOps Pool. If you don't specify an organization-level alias, the top-level alias is used. If neither alias is specified, the name of your Managed DevOps Pool is used. |
+
+Aliases must be 128 characters or less, and must start with a letter or number, followed by letters, numbers, or hyphens, and must end with a letter or number.
+
+#### [Azure portal](#tab/azure-portal/)
+
+If you configure your Managed DevOps Pool for a single Azure DevOps organization, you can customize the name of the agent pool by providing a value for the **Alias** field. If you don't specify a value for **Alias**, the Managed DevOps Pool name is used.
+
+:::image type="content" source="./media/configure-security/configure-pool-alias.png" alt-text="Screenshot that shows how to configure a pool alias.":::
+
+If you configure your Managed DevOps Pool for multiple Azure DevOps organizations, you can customize the name of the agent pool on a per-organization basis by providing a value for the **Alias** field in each organization's settings. If you don't configure an organization-specific **Alias**, the top-level **Alias** is used. If neither **Alias** is configured, the Managed DevOps Pool name is used.
+
+:::image type="content" source="./media/configure-security/pool-alias-multiple-organizations.png" alt-text="Screenshot that shows how to configure a pool alias for multiple organizations.":::
+
+#### [ARM template](#tab/arm/)
+
+> [!NOTE]
+> The `alias` property is available starting with API version `2025-09-20`.
+
+You can configure a top-level pool `alias` in the `organizationProfile` section, and individual organization-level aliases by setting the `alias` property on the individual organizations in the `organizationProfile.organizations` list.
+
+The following example has a single organization, configured with a top-level pool alias of `fabrikam-pool`.
+
+```json
+"properties": {
+    ...
+    "organizationProfile": {
+        "alias": "fabrikam-pool",
+        "organizations": [
+            {
+                "url": "https://dev.azure.com/fabrikam-tailspin",
+                ...
+            }
+        ]
+    }
+}
+```
+
+The following example has two organizations, configured with a top-level pool alias of `fabrikam-pool`. The `fabrikam-tailspin` has an organization-level pool alias of `fabrikam-tailspin-pool`, so its Azure DevOps pool is named `fabrikam-tailspin-pool`. The `fabrikam-blue` organization doesn't have an organization-level alias, so its pool is named using the top-level alias.
+
+```json
+"properties": {
+    ...
+    "organizationProfile": {
+        "alias": "fabrikam-pool",
+        "organizations": [
+            {
+                "url": "https://dev.azure.com/fabrikam-tailspin",
+                "alias": "fabrikam-tailspin-pool"
+                ...
+            },
+            {
+                "url": "https://dev.azure.com/fabrikam-blue",
+                ...
+            }
+        ]
+    }
+}
+```
+
+#### [Azure CLI](#tab/azure-cli/)
+
+You can set the top-level `alias` and individual organization-level `alias` values by calling [az resource update](/cli/azure/resource#az-resource-update) using the following parameters.
+
+| Parameter | Description |
+|-----------|-------------|
+| `--ids` | The resource ID of the Managed DevOps Pool. |
+| `--set` | The property to update.<ul><li>To set the top-level `alias`, use `properties.organizationProfile.alias`.</li><li>If your Managed DevOps Pool is configured for multiple organizations, you can set an organization-level `alias` using `properties.organizationProfile.organizations[index].alias`, where `index` is the zero-based index of the organization in the `organizations` list.</li></ul> |
+
+The following example sets the top-level `alias` to `fabrikam-pool`.
+
+```bash
+az resource update \
+  --ids "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.DevOpsInfrastructure/pools/{poolName}" \
+  --set properties.organizationProfile.alias="fabrikam-pool"
+```
+
+This example sets the organization-level alias for the first organization in the organizations list to `fabrikam-tailspin-pool`.
+
+```bash
+az resource update \
+  --ids "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.DevOpsInfrastructure/pools/{poolName}" \
+  --set properties.organizationProfile.organizations[0].alias="fabrikam-tailspin-pool"
+```
+
+To view the ordered organizations list when your Managed DevOps Pool is configured for multiple organizations, go to your pool in the Azure portal, and go to **Settings** > **Security**. You can also retrieve the list by running the [az mdp pool show](/cli/azure/mdp/pool#az-mdp-pool-show) command.
+
+```bash
+az mdp pool show \
+  --name "{poolName}" \
+  --resource-group "{resourceGroupName}"
+```
+
+
+#### [Bicep](#tab/bicep/)
+
+> [!NOTE]
+> The `alias` property is available starting with API version `2025-09-20`.
+
+You can configure a top-level pool `alias` in the `organizationProfile` section, and individual organization-level aliases by setting the `alias` property on the individual organizations in the `organizationProfile.organizations` list.
+
+The following example has a single organization, configured with a pool alias of `fabrikam-pool`.
+
+```bicep
+properties: {
+    ...
+    organizationProfile: {
+        alias: 'my-pool-alias',
+        organizations: [
+            {
+                url: 'https://dev.azure.com/fabrikam-tailspin',
+                ...
+            }
+        ]
+    }
+```
+
+The following example has two organizations, configured with a top-level pool alias of `fabrikam-pool`. The `fabrikam-tailspin` has an organization-level pool alias of `fabrikam-tailspin-pool`, so its Azure DevOps pool is named `fabrikam-tailspin-pool`. The `fabrikam-blue` organization doesn't have an organization-level alias, so its pool is named using the top-level alias.
+
+```bicep
+properties: {
+    ...
+    organizationProfile: {
+        alias: 'fabrikam-pool',
+        organizations: [
+            {
+                url: 'https://dev.azure.com/fabrikam-tailspin',
+                alias: 'fabrikam-tailspin-pool'
+                ...
+            },
+            {
+                url: 'https://dev.azure.com/fabrikam-blue',
+                ...
+            }
+        ]
+    }
+```
+* * *
 
 ## Configure organization access
 
@@ -156,7 +302,7 @@ In the following example, the pool is configured to be available for the **Fabri
 
 :::image type="content" source="./media/configure-security/use-pool-multiple-organizations.png" alt-text="Screenshot that shows how to configure multiple organizations.":::
 
-If you receive an error like `The sum of parallelism for all organizations must equal the max concurrency`, ensure that the [Maximum agents](./configure-pool-settings.md#maximum-agents) count for the pool matches the sum of the **Parallelism** column.
+If you receive an error like `The sum of parallelism for all organizations must equal the max pool size`, ensure that the [Maximum agents](./configure-pool-settings.md#maximum-agents) count for the pool matches the sum of the **Parallelism** column.
 
 #### [ARM template](#tab/arm/)
 
@@ -467,6 +613,101 @@ resource managedDevOpsPools 'Microsoft.DevOpsInfrastructure/pools@2025-09-20' = 
       }
       storageProfile: {...}
       kind: 'Vmss'
+    }
+  }
+}
+```
+
+* * *
+
+## Configure Azure DevOps pool description
+
+When you create or update a Managed DevOps Pool, you can customize the pool description that appears in the Azure DevOps agent pool.
+
+| Allow Managed DevOps Pools to update the Azure DevOps pool description? | Settings |
+| --- | --- |
+| No | Set `updateDescription` to `false`, or clear the **Update Description** checkbox in the Azure portal. This setting prevents Managed DevOps Pools from updating the description of the Azure DevOps agent pool, so you can manage it yourself in Azure DevOps.<br><br>This setting is the default for existing pools. |
+| Yes, using the default description provided by Managed DevOps Pools | Set `updateDescription` to `true`, or select the **Update Description** checkbox in the Azure portal, and leave the description empty. This setting allows Managed DevOps Pools to update the description of the Azure DevOps agent pool with a default description that includes the pool name and selected properties of the pool.<br><br>This setting is the default for new pools. |
+| Yes, using a custom description that I'll provide | Set `updateDescription` to `true`, or select the **Update Description** checkbox in the Azure portal, and provide a custom description. This setting allows Managed DevOps Pools to update the description of the Azure DevOps agent pool with your custom description. The maximum length for the custom description is 280 characters. |
+
+#### [Azure portal](#tab/azure-portal/)
+
+:::image type="content" source="./media/configure-security/azure-devops-pool-description.png" alt-text="Screenshot that shows how to configure the Azure DevOps pool description.":::
+
+Select **Update Description** to allow Managed DevOps Pools to update the description of the Azure DevOps agent pool. Leave **Description** empty to use the default description, which includes the pool name and the organizations that can use the pool, or enter a custom description. Clear **Update Description** to prevent Managed DevOps Pools from updating the description so that you can manage it directly in Azure DevOps. **Update Description** is selected by default for new pools and cleared by default for existing pools.
+
+#### [ARM template](#tab/arm/)
+
+> [!NOTE]
+> This feature is available in API version `2026-06-02` or later.
+
+Configure the Azure DevOps pool description in the `organizationProfile` property. Set `updateDescription` to `true` to allow Managed DevOps Pools to update the description, and set `description` to the custom description. Omit `description` to use the default description.
+
+```json
+{
+    "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
+    "contentVersion": "1.0.0.0",
+    "resources": [
+        {
+            "name": "fabrikam-managed-pool",
+            "type": "microsoft.devopsinfrastructure/pools",
+            "apiVersion": "2026-06-02",
+            "location": "eastus",
+            "properties": {
+                ...
+                "organizationProfile": {
+                    "organizations": [...],
+                    "permissionProfile": {...},
+                    "description": "Pool used to build and test the Fabrikam application.",
+                    "updateDescription": true,
+                    "kind": "AzureDevOps"
+                }
+            }
+        }
+    ]
+}
+```
+
+#### [Azure CLI](#tab/azure-cli/)
+
+> [!NOTE]
+> This feature is available in API version `2026-06-02` or later.
+
+Set the `description` and `updateDescription` values by calling [az resource update](/cli/azure/resource#az-resource-update) with the following parameters.
+
+| Parameter | Description |
+| --- | --- |
+| `--ids` | The resource ID of the Managed DevOps Pool. |
+| `--api-version` | The Managed DevOps Pools API version, which must be `2026-06-02` or later. |
+| `--set` | The properties to update, in this case `properties.organizationProfile.description` and `properties.organizationProfile.updateDescription`. |
+
+```bash
+az resource update \
+  --ids "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.DevOpsInfrastructure/pools/{poolName}" \
+  --api-version "2026-06-02" \
+  --set properties.organizationProfile.updateDescription=true \
+        properties.organizationProfile.description="Pool used to build and test the Fabrikam application."
+```
+
+#### [Bicep](#tab/bicep/)
+
+> [!NOTE]
+> This feature is available in API version `2026-06-02` or later.
+
+Configure the Azure DevOps pool description in the `organizationProfile` property. Set `updateDescription` to `true` to allow Managed DevOps Pools to update the description, and set `description` to the custom description. Omit `description` to use the default description.
+
+```bicep
+resource managedDevOpsPools 'Microsoft.DevOpsInfrastructure/pools@2026-06-02' = {
+  name: 'fabrikam-managed-pool'
+  location: 'eastus'
+  properties: {
+    ...
+    organizationProfile: {
+      organizations: [...]
+      permissionProfile: {...}
+      description: 'Pool used to build and test the Fabrikam application.'
+      updateDescription: true
+      kind: 'AzureDevOps'
     }
   }
 }

@@ -4,7 +4,7 @@ titleSuffix: Azure Repos
 description: Learn about different ways to list, filter, and open Git pull requests in Azure Repos.
 ms.service: azure-devops-repos
 ms.topic: how-to
-ms.date: 03/31/2022
+ms.date: 07/06/2026
 monikerRange: '<= azure-devops'
 ms.subservice: azure-devops-repos-git
 ms.custom: devx-track-azurecli
@@ -63,6 +63,9 @@ You can list PRs by using the Azure DevOps project website, Visual Studio, or th
 # [Visual Studio](#tab/visual-studio)
 
 To list pull requests from Visual Studio, in the **Git** menu, select **\<your Git service>** > **View Pull Requests**.
+
+> [!NOTE]
+> Visual Studio 2022 supports browsing pull requests directly in the IDE for both Azure DevOps-hosted and GitHub repos. From the **Git** menu, select **View Pull Requests** to open the in-IDE pull request list. You can review PR details - including description, changed files, commits, and reviewers or related items - without checking out the PR branch. You can also open any PR in the browser if you prefer.
 
 Visual Studio 2019 version 16.8 and later versions provides a Git version control experience while maintaining the **Team Explorer** Git user interface. To use **Team Explorer**, uncheck **Tools** > **Options** > **Preview Features** > **New Git user experience** from the menu bar. You can exercise Git features from either interface interchangeably.
 
@@ -232,7 +235,7 @@ az repos pr list --creator "My Name" --status all --top 1
 
 ## Open a pull request
 
-When you open a PR from the browser, from Visual Studio, or from Azure CLI, the PR **Overview** page opens in the browser. 
+When you open a PR from the browser or from Azure CLI, the PR **Overview** page opens in the browser. In Visual Studio 2022, selecting a pull request opens an embedded PR review experience directly in the IDE. You can still open the PR in the browser as an alternative.
 
 # [Browser](#tab/browser)
 
@@ -244,7 +247,12 @@ On the PR **Files** tab, you can review the actual changes in the PR files. On t
 
 # [Visual Studio](#tab/visual-studio)
 
-To open a pull request from Visual Studio, in the **Git** menu, select **\<your Git service>** > **View Pull Requests**, then select a pull request to open it.
+In Visual Studio 2022, you can open a pull request directly in the IDE. In the **Git** menu, select **\<your Git service>** > **View Pull Requests**, and then select a pull request. The PR opens in an embedded in-IDE review experience where you can view the description, changed files, commits, and reviewers without checking out the branch.
+
+> [!NOTE]
+> The in-IDE PR review experience in Visual Studio 2022 supports inline diff commenting (including comment threads, replies, and resolution), displays status checks, merge conflicts, and required approvals, and lets you approve and complete or merge a PR from within the IDE. For full review workflows, see [Review pull requests](review-pull-requests.md).
+>
+> Some PR viewing and commenting capabilities might require enabling related Preview Features in Visual Studio. To check, go to **Tools** > **Options** > **Preview Features** and look for pull request–related options. Enabling these preview options makes the in-IDE PR experience available if it isn't visible by default. For the latest information on available preview features, see the [Visual Studio release notes](/visualstudio/releases/2026/release-notes).
 
 Or, from the Team Explorer **Pull Requests** view, right-click the PR and select **Open in browser** to open the PR in the web portal.
 

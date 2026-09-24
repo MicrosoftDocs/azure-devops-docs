@@ -3,7 +3,7 @@ title: Filter backlogs, boards, and plans for focused work management
 titleSuffix: Azure Boards
 description: Streamline your workflow with powerful filtering capabilities across Azure Boards tools. Learn to apply field, keyword, tag, and parent filters effectively.
 ms.custom: boards-backlogs, boards-kanban, copilot-scenario-highlight
-ms.service: azure-devops-boards
+ms.service: azure-boards
 ai-usage: ai-assisted
 ms.author: chcomley
 author: chcomley

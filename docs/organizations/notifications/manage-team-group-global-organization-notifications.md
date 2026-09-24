@@ -3,12 +3,12 @@ title: Manage Notifications - Team, Project, Organization
 titleSuffix: Azure DevOps
 description: Configure email notifications for your team, project, or organization when changes occur to source code, git, work items, and builds in Azure DevOps.
 ms.subservice: azure-devops-notifications
-ms.custom: cross-project, copilot-scenario-highlight
+ms.custom: cross-project, copilot-scenario-highlight, support-driven-update
 ms.author: chcomley
 author: chcomley
 ai-usage: ai-assisted
 ms.topic: how-to
-ms.date: 03/03/2026
+ms.date: 08/19/2026
 monikerRange: '<= azure-devops'
 #customer intent: As a developer, I want to set notifications for my team, project, or organization, so I can receive email about changes to source code, git, work items, and builds in Azure DevOps.
 ---
@@ -79,13 +79,25 @@ A subscription lets you control the activity events that trigger notifications a
 
       - **Team preference**: Use the team's default delivery preference. For more information, see [Manage delivery settings](#manage-global-delivery-settings).
 
-      - **Custom email address**: Send email to a specified email address.
+      - **Custom email address**: Send email to a [custom email address](about-notifications.md#custom-email-subscriptions).
 
       - **Members of \<Name> Team**: Send individual email to each member of the team.
       
       ::: moniker range="azure-devops"
       - **SOAP**: Send email notifications to subscribers of the SOAP service.
       ::: moniker-end
+
+      When you use a mail-enabled Microsoft Entra group, choose the configuration based on how Azure DevOps should evaluate the recipient:
+
+      - Configure the subscription directly for the mail-enabled Microsoft Entra group when Azure DevOps should send the notification directly to the group address.
+      - Keep the Microsoft Entra group nested in an Azure DevOps team or group when delivery should depend on the parent team's or group's **View project-level information** permission. Set this permission to **Allow** for the parent group.
+
+      For project-scoped events, setting a resource-specific permission to **Deny** doesn't prevent notification delivery after the Azure DevOps group passes the project-level check. For example, a group can receive a _Build completes_ notification when **View project-level information** is **Allow**, even if **View builds** is **Deny** for the specific pipeline.
+
+      For more information about permission filtering for direct and nested recipients, see [Mail-enabled Microsoft Entra group as recipient](concepts-email-recipients.md#mail-enabled-microsoft-entra-group-as-recipient).
+
+      > [!IMPORTANT]
+      > With direct delivery, Azure DevOps sends the message to the Microsoft Entra group address without validating each member's access to the event resources. Confirm that all group members are authorized to receive the event details.
 
    1. As needed, expand the **Roles** dropdown list and select the checkbox for any applicable role for the message recipients.
    

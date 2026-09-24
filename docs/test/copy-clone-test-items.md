@@ -174,9 +174,9 @@ Cloning is especially useful when you need to branch your application into two v
 
 1. Select **Test Plans** > **Test plans** from your project.
 2. Choose the test plan you want to copy from the **Mine** or **All** page.  
-3. Select :::image type="icon" source="../media/icons/more-actions.png" border="false"::: **More actions** > **Copy test plan**. This option lets you copy or clone test plans within a project. 
+3. Select :::image type="icon" source="../media/icons/more-actions.png" border="false"::: **More options** > **Copy test plan**. This option lets you copy or clone test plans within a project.
 
-	:::image type="content" source="media/copy-clone/copy-test-plan-menu-selection.png" alt-text="Screenshot showing Test Plan More Actions menu, copy test plan option.":::
+   :::image type="content" source="media/copy-clone/copy-test-plan-menu-selection.png" alt-text="Screenshot of the test plan More options menu showing the Copy test plan option.":::
 
 4. Enter the name of the new test plan, and select an **Area Path** and **Iteration Path** for the plan.  
 
@@ -232,9 +232,9 @@ To use the same test cases in different suites and plans, copy and paste test ca
 
 1. Select **Test Plans** > **Test plans**.
 2. Choose the test plan where you want to import a test suite from the **Mine** or **All** page.
-3. Select :::image type="icon" source="../media/icons/more-actions.png" border="false"::: **More actions** > **Import test suites**. This option lets you import test suites from another test plan. 
+3. Select :::image type="icon" source="../media/icons/more-actions.png" border="false"::: **More options** > **Import test suites**. This option lets you import test suites from another test plan.
 
-	:::image type="content" source="media/copy-clone/import-test-suites.png" alt-text="Screenshot showing Test Suite More Actions menu, Import test suites option.":::
+   :::image type="content" source="media/copy-clone/import-test-suites.png" alt-text="Screenshot of the test suite More options menu showing the Import test suites option.":::
 
 4. In the opened dialog, select the project if the test plan resides within a different project. Otherwise, enter the Test Plan Name or ID and Test Suite Name or ID. You can also select the name or ID from the dropdown menus.
 5. **Create** the import. You can only import one suite from a test plan at a time. 
@@ -273,9 +273,9 @@ You can copy test cases from either within a project or from another project wit
 3. Select the test suite that contains one or more test cases you want to copy. 
 4. From the **Define** page, select the check box for all test cases you want to copy. 
 
-5. Select  :::image type="icon" source="../media/icons/more-actions.png" border="false"::: **More actions** > **Copy test case**.   
+5. Select  :::image type="icon" source="../media/icons/more-actions.png" border="false"::: **More options** > **Copy test case**.
   
-	:::image type="content" source="media/copy-clone/copy-test-cases-menu-selection.png" alt-text="Screenshot showing Test Cases More Actions menu, copy test cases option.":::
+   :::image type="content" source="media/copy-clone/copy-test-cases-menu-selection.png" alt-text="Screenshot of the test case More options menu showing the Copy test case option.":::
 
 6. Choose the project from the dropdown menu, and then enter the test plan name or ID and test suite name or ID. You can also select the name or ID from the dropdown menus.
 

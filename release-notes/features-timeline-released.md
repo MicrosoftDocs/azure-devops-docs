@@ -2,7 +2,7 @@
 title: Azure DevOps Released Features
 author: gloridelmorales
 ms.author: glmorale
-ms.date: 6/10/2026
+ms.date: 9/4/2026
 ms.topic: release-notes
 ms.service: azure-devops
 ms.subservice: azure-devops-release-notes
@@ -38,6 +38,52 @@ You can also [view the build numbers for each version](#azure-devops-server-buil
         </tr>
     </thead>
 <tr>
+    <td rowspan="12"><a href="2026/sprint-279-update.md" data-raw-source="[September 4 2026](2026/sprint-279-update.md)">September 4 2026</a></td>
+    <td>Remote MCP Server handling rate limits</td><td>General</td><td>N/A</td></tr>
+    <td>Azure DevOps plugin now available in GitHub Copilot app</td><td>General</td><td>N/A</td></tr>
+    <td>Malware alerts (private preview)</td><td>GitHub Advanced Security for Azure DevOps</td><td>N/A</td></tr>
+    <td>Security overview metrics (private preview)</td><td>GitHub Advanced Security for Azure DevOps</td><td>N/A</td></tr>
+    <td>Project-level billing for Autofix AI credit usage</td><td>GitHub Advanced Security for Azure DevOps</td><td>N/A</td></tr>
+    <td>Improved security for work item notification emails</td><td>Boards</td><td>Future</td></tr>
+    <td>GitHub Copilot Code Review (public preview)</td><td>Repos</td><td>N/A</td></tr>
+    <td>Longer pull request descriptions in Azure Repos</td><td>Repos</td><td>Future</td></tr>
+    <td>Azure DevOps Enterprise Live Migrations (public preview)</td><td>Repos</td><td>N/A</td></tr>
+    <td>Automatic titles for multi-commit pull requests</td><td>Repos</td><td>Future</td></tr>
+    <td>Docker socket no longer mapped by default for Linux container jobs</td><td>Pipelines</td><td>Future</td></tr>
+    <td>Faster wiki search by page title</td><td>Wiki</td><td>Future</td></tr>
+<tr>
+    <td rowspan="8"><a href="2026/sprint-278-update.md" data-raw-source="[August 20 2026](2026/sprint-278-update.md)">August 20 2026</a></td>
+    <td>Azure DevOps Remote MCP Server is now generally available</td><td>General</td><td>N/A</td></tr>
+    <td>Azure Monitor Logs audit streaming now uses Microsoft Entra authentication for workspace authorization</td><td>General</td><td>Future</td></tr>
+    <td>Audit events for expired Visual Studio subscriptions and GitHub Enterprise licenses</td><td>General</td><td>Future</td></tr>
+    <td>Audit events for service hooks</td><td>General</td><td>Future</td></tr>
+    <td>Support for ARM64 with VSTest v3 task</td><td>Pipelines</td><td>N/A</td></tr>
+    <td>Improved code coverage experience for Azure Pipelines</td><td>Pipelines</td><td>Future</td></tr>
+    <td>Pipeline builds are moving to Microsoft Entra-issued access tokens</td><td>Pipelines</td><td>Future</td></tr>
+    <td>Improved Wiki page recovery</td><td>Wiki</td><td>Future</td></tr>
+<tr>
+    <td rowspan="7"><a href="2026/sprint-277-update.md" data-raw-source="[July 30 2026](2026/sprint-277-update.md)">July 30 2026</a></td>
+    <td>Enterprise Live Migration MCP Server Tools (Preview)</td><td>General</td><td>N/A</td></tr>
+    <td>View development dependency information on the Alerts page</td><td>GitHub Advanced Security for Azure DevOps</td><td>N/A</td></tr>
+    <td>Copilot Autofix avoids empty branches and pull requests</td><td>GitHub Advanced Security for Azure DevOps</td><td>N/A</td></tr>
+    <td>Copilot Autofix pull requests appear automatically in alert details</td><td>GitHub Advanced Security for Azure DevOps</td><td>N/A</td></tr>
+    <td>Copilot Autofix pull requests are easier to identify</td><td>GitHub Advanced Security for Azure DevOps</td><td>N/A</td></tr>
+    <td>Pull request annotations on cards</td><td>Boards</td><td>Future</td></tr>
+    <td>Azure DevOps service connection support in InvokeRestAPI task</td><td>Pipelines</td><td>Future</td></tr>
+<tr>
+    <td rowspan="11"><a href="2026/sprint-276-update.md" data-raw-source="[July 9 2026](2026/sprint-276-update.md)">July 9 2026</a></td>
+    <td>Enterprise Live Migration tools added to the Azure DevOps Remote MCP Server</td><td>General</td><td>Future</td></tr>
+    <td>Project-level cost reporting for Copilot Code Reviews</td><td>General</td><td>Future</td></tr>
+    <td>CodeQL default setup is now generally available</td><td>GitHub Advanced Security for Azure DevOps</td><td>N/A</td></tr>
+    <td>CodeQL default setup now supports C/C++</td><td>GitHub Advanced Security for Azure DevOps</td><td>N/A</td></tr>
+    <td>CodeQL default setup automatically queues an initial run on enablement</td><td>GitHub Advanced Security for Azure DevOps</td><td>N/A</td></tr>
+    <td>Enable Autofix at the organization, project, or repository level</td><td>GitHub Advanced Security for Azure DevOps</td><td>N/A</td></tr>
+    <td>Clear failure state and re-try for Autofix runs</td><td>GitHub Advanced Security for Azure DevOps</td><td>N/A</td></tr>
+    <td>Disable unused service connections after 100 days</td><td>Pipelines</td><td>Future</td></tr>
+    <td>Retirement of Azure DevOps issuer for service connections</td><td>Pipelines</td><td>Future</td></tr>
+    <td>Pull request link added to git push output</td><td>Repos</td><td>Future</td></tr>
+    <td>Actual Result feature for manual testing is now generally available</td><td>Test Plans</td><td>Future</td></tr>
+<tr>
     <td rowspan="10"><a href="2026/sprint-275-update.md" data-raw-source="[June 17 2026](2026/sprint-275-update.md)">June 17 2026</a></td>
     <td>Coding agent model selection option</td><td>Boards</td><td>Future</td></tr>
     <td>GitHub Copilot Autofix for code scanning (limited public preview)</td><td>GitHub Advanced Security for Azure DevOps</td><td>N/A</td></tr>
@@ -45,8 +91,8 @@ You can also [view the build numbers for each version](#azure-devops-server-buil
     <td>Advanced Security status checks for pull requests (general availability)</td><td>GitHub Advanced Security for Azure DevOps</td><td>N/A</td></tr>
     <td>Build identity access to view alerts is being removed</td><td>GitHub Advanced Security for Azure DevOps</td><td>N/A</td></tr>
     <td>Finer-grained comment requirement for pull request validation from GitHub forks</td><td>Pipelines</td><td>Future</td></tr>
-    <td>Access Azure DevOps with Microsoft Entra authentication</td><td>Pipelines</td><td>Future</td></tr>
-    <td>Apple Silicon for macOS pipeline agents (Pay-as-you-Go preview)</td><td>Pipelines</td><td>Future</td></tr>
+    <td>Access Azure DevOps with Microsoft Entra authentication</td><td>Pipelines</td><td>N/A</td></tr>
+    <td>Apple Silicon for macOS pipeline agents (Pay-as-you-Go preview)</td><td>Pipelines</td><td>N/A</td></tr>
     <td>Enable commit comparison in branch compare page</td><td>Repos</td><td>Future</td></tr>
     <td>Copilot code reviews for Azure Repos (Limited Public Preview)</td><td>Repos</td><td>Future</td></tr>
 <tr>
@@ -62,7 +108,7 @@ You can also [view the build numbers for each version](#azure-devops-server-buil
     <td>Deleted and disabled repositories no longer appear in security overview</td><td>GitHub Advanced Security for Azure DevOps</td><td>N/A</td></tr>
     <td>Improved copy work item choices</td><td>Boards</td><td>Future</td></tr>
     <td>Enhanced Security for GitHub Integration REST APIs</td><td>Boards</td><td>Future</td></tr>
-    <td>Windows ARM64 agent available in public preview</td><td>Pipelines</td><td>Future</td></tr>
+    <td>Windows ARM64 agent available in public preview</td><td>Pipelines</td><td>N/A</td></tr>
     <td>Improvements to pull request status checks</td><td>Repos</td><td>Future</td></tr>
     <td>Show unresolved comments on pull request list</td><td>Repos</td><td>Future</td></tr>
     <td>Git object count limit removed</td><td>Repos</td><td>Future</td></tr>
@@ -4313,12 +4359,12 @@ You can also [view the build numbers for each version](#azure-devops-server-buil
             <td></td><td>N/A</td>
         </tr>
         <tr>
-            <td><a href="https://azure.microsoft.com/blog/announcing-application-insights-public-preview-2/" data-raw-source="[29 April 2015](https://azure.microsoft.com/blog/announcing-application-insights-public-preview-2/)">29 April 2015</a></td>
+            <td>29 April 2015</td>
             <td>Application Insights Public Commercial Preview</td>
             <td></td><td>N/A</td>
         </tr>
         <tr>
-            <td><a href="/azure/devops/integrate/" data-raw-source="[29 April 2015](/azure/devops/integrate/)">29 April 2015</a></td>
+            <td>href="/azure/devops/integrate/" data-raw-source="[29 April 2015](/azure/devops/integrate/)"</td>
             <td>Extensions</td>
             <td></td><td>2015.2</td>
         </tr>

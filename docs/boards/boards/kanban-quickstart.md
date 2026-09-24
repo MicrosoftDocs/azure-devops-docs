@@ -2,43 +2,39 @@
 title: Quickstart - Use your Kanban board
 titleSuffix: Azure Boards
 description: Plan and track work on your Kanban board in Azure Boards by adding work items, customizing columns, setting WIP limits, and monitoring flow.
-ms.custom: boards-kanban
+ms.custom: boards-kanban, copilot-scenario-highlight
 ms.topic: quickstart
-ms.service: azure-devops-boards
+ms.service: azure-boards
 ai-usage: ai-assisted
 ms.author: chcomley
 author: chcomley
 monikerRange: '<= azure-devops'
-ms.update: 90-days
-ms.date: 06/08/2026
+ms.date: 07/16/2026
 ---
 
 # Quickstart: Use your board
 
 [!INCLUDE [version-lt-eq-azure-devops](../../includes/version-lt-eq-azure-devops.md)]
 
-Boards give your team a visual way to manage projects, track work items, and collaborate. Every project has a board for every team, so you can start using one as soon as you create your project. This quickstart walks through the most common board tasks: adding work items, customizing columns, setting work-in-progress (WIP) limits, filtering, and reviewing flow metrics.
+Boards give your team a visual way to manage projects, track work items, and collaborate. Each team in a project gets one board automatically, so you can start using a board as soon as you create your project. To add another board, add another team to the project. For more information, see [About teams and Agile tools](../../organizations/settings/about-teams-and-settings.md).
 
-> [!NOTE]
-> Each team in a project gets one board automatically. To add another board, add another team to the project. For more information, see [About teams and Agile tools](../../organizations/settings/about-teams-and-settings.md).
+This quickstart walks through the most common board tasks: adding work items, customizing columns, setting work-in-progress (WIP) limits, filtering, and reviewing flow metrics.
+
+[!INCLUDE [ai-assistance-mcp-server-tip](../../includes/ai-assistance-mcp-server-tip.md)]
 
 ## Prerequisites
 
 [!INCLUDE [temp](../includes/prerequisites-kanban.md)]
 
-[!INCLUDE [note-new-boards-hub-default-images](../includes/note-new-boards-hub-default-images.md)]
-
-[!INCLUDE [enable-mcp-server](../includes/enable-mcp-server.md)]
-
 [!INCLUDE [temp](../includes/open-kanban-board.md)]
 
 ## Map the flow of how your team works
 
-When you first open your board, there's one column for each workflow state. Your actual columns vary based on the [process](../work-items/guidance/choose-process.md) used to create your project.
+When you first open your board, Azure Boards creates one column for each workflow state. Your team can customize these columns based on the [process](../work-items/guidance/choose-process.md) your project uses.
 
-1. Identify your team's workflow stages - they often don't match the default states. Configure the board so it reflects the true handoffs your team uses.
+1. Identify your team's actual workflow stages. These stages often differ from the default states. Configure the board to reflect the real handoffs your team uses.
 
-   For example, for user stories, the **New**, **Active**, **Resolved**, and **Closed** states track progress from idea to completion.
+    For example, user stories usually move through **New**, **Active**, **Resolved**, and **Closed** from idea to completion.
 
     :::row:::
        :::column span="1":::
@@ -49,31 +45,43 @@ When you first open your board, there's one column for each workflow state. Your
        :::column-end:::
     :::row-end:::
 
-1. [Manage your columns](add-columns.md) so they match your workflow stages. Keep the number of columns small while still representing the key handoffs for your team.
+1. [Manage your columns](add-columns.md) so they match your workflow stages. Keep the number of columns small, but include every key handoff.
 
     :::image type="content" source="media/ALM_KB_Board2.png" alt-text="Screenshot of a board with columns customized to match a team's workflow stages.":::
 
 ## Set WIP limits
 
-Set work-in-progress (WIP) limits for each workflow stage. When items exceed the limit, the column count appears in red. Teams can use that visual signal to address bottlenecks immediately. For more information, see [Set WIP limits](wip-limits.md).
+Set a work-in-progress (WIP) limit for each workflow stage. When a stage exceeds its limit, Azure Boards shows the column count in red. Use that signal to identify bottlenecks and rebalance work quickly. For more information, see [Set WIP limits](wip-limits.md).
 
 :::image type="content" source="media/alm-kb-wip-limits.png" alt-text="Screenshot of a board column with the item count shown in red because it exceeds the WIP limit.":::
 
 ## Track work in progress
 
-The estimated size of work for each item appears at the bottom right of each card. Add items to your backlog in the first column. When priorities change, move items up or down within a column. As work completes in one stage, update the status by moving the card to a downstream stage.
+Use the board to keep work moving and priorities clear:
 
-Update your board frequently to keep the team in sync and to make the value stream visible.
+1. Add new items in the first column.
+1. Reorder items within a column as priorities change.
+1. Move cards to downstream columns as work progresses.
+
+Each card shows the estimated work size at the lower-right corner.
+
+Update the board frequently to keep the team in sync and make your value stream visible.
 
 [!INCLUDE [temp](../includes/note-kanban-boards-teams.md)]
 
 ## Add work items
 
-To add a work item, select the add icon ( **+** ), type a title, and press **Enter**. The system saves the work item automatically.
+Add work items directly from the first column:
+
+1. Select the add icon (**+**).
+1. Enter a title.
+1. Press **Enter** to save.
 
 :::image type="content" source="media/quickstart/add-new-item-agile-s155.png" alt-text="Screenshot of a board with the add icon highlighted in the first column and a new item title being entered.":::
 
-You can add as many work items as you want with this method. To add or edit details for any work item, select the title. You can also modify any field that appears on the card directly (for example, change **Assigned To**). For a description of each field, see [Create your backlog, Add details, and estimates](../backlogs/create-your-backlog.md#estimates). You can also [add tasks or child items as checklists on your cards](add-task-checklists.md).
+Repeat these steps to add as many work items as needed.
+
+To edit details, select a work item title. You can also update fields shown on the card directly (for example, **Assigned To**). For field descriptions, see [Create your backlog, Add details, and estimates](../backlogs/create-your-backlog.md#estimates). You can also [add tasks or child items as checklists on your cards](add-task-checklists.md).
 
 [!INCLUDE [temp](../includes/note-user-assigned.md)]
 
@@ -81,7 +89,11 @@ You can add as many work items as you want with this method. To add or edit deta
 
 ## Update work item status
 
-As work progresses, update the status of an item by dragging it to a downstream column.
+Update status directly on the board as work progresses:
+
+1. Select a card.
+1. Drag it to the next downstream column.
+1. Drop the card to save the new status.
 
 [!INCLUDE [note-closed-items](../includes/note-closed-items.md)]
 
@@ -89,13 +101,25 @@ As work progresses, update the status of an item by dragging it to a downstream 
 
 ## Update card fields
 
-Update a field or reassign ownership directly from the board. If the field you want to update isn't on the card, customize the card to display it. You can also show other work item types, such as change requests, incidents, issues, or custom types. For more information, see [Customize cards](../../boards/boards/customize-cards.md) and [About configuring and customizing Azure Boards](../configure-customize.md).
+Update fields and ownership directly from the board:
+
+1. Select the field on a card (for example, **Assigned To**).
+1. Enter a new value or select a different assignee.
+1. Confirm the update on the card.
+
+If a field isn't visible, customize the card to show it. You can also show other work item types, such as change requests, incidents, issues, and custom types. For more information, see [Customize cards](../../boards/boards/customize-cards.md) and [About configuring and customizing Azure Boards](../configure-customize.md).
 
 :::image type="content" source="media/alm-cc-update-card-field.png" alt-text="Screenshot of a card with an inline field being updated directly on the board.":::
 
 ## Filter your board with keywords, field values, or tags
 
-Apply interactive filters to focus on a subset of work. For example, filter the board to show work assigned to a specific team member during a sprint. To start filtering, select **Filter** :::image type="icon" source="../../media/icons/filter-icon.png" border="false":::. For more information, see [Filter your backlogs, boards, and plans](../backlogs/filter-backlogs-boards-plans.md).
+Filter the board to focus on the work you need to review:
+
+1. Select **Filter** :::image type="icon" source="../../media/icons/filter-icon.png" border="false":::.
+1. Choose one or more filter values, such as keyword, assignee, or tag.
+1. Review the filtered board results.
+
+For example, during a sprint, filter by **Assigned To** to review one team member's work. For more information, see [Filter your backlogs, boards, and plans](../backlogs/filter-backlogs-boards-plans.md).
 
 The following example image shows the board filtered to items assigned to Jamal and Raisa.
 
@@ -103,21 +127,30 @@ The following example image shows the board filtered to items assigned to Jamal 
 
 ## Invite others to work on your board
 
-All members of a project can view and contribute to your board. To invite users to contribute, copy the URL of your board and share it with them.
+Invite teammates by sharing a direct link to your board:
+
+1. Open your board in Azure Boards.
+1. Copy the URL from your browser address bar.
+1. Share the URL with your teammates in chat or email.
+
+Project members can open the link and contribute immediately based on their permissions.
 
 :::image type="content" source="media/quickstart/kanban-board-url-s155.png" alt-text="Screenshot of a board with the browser URL highlighted, ready to copy and share with teammates.":::
 
-To add users to your project, see [Add users to a project](../../organizations/security/add-users-team-project.md).
+If someone doesn't have access, add them to the project first. For details, see [Add users to a project](../../organizations/security/add-users-team-project.md).
 
 ## Monitor metrics
 
-After your team uses the board for several weeks, review key metrics like the Cumulative Flow Diagram (CFD) to optimize your process.
+Use board metrics to spot bottlenecks and improve flow.
 
-Select the **Analytics** tab, and then select **View full report** for the CFD.
+Review the Cumulative Flow Diagram (CFD) after your team uses the board for a few weeks:
+
+1. Select the **Analytics** tab.
+1. Select **View full report** on the CFD tile.
+1. Set the time range, swimlanes, and workflow states or board columns.
+1. Hover over a point on the chart to see how many items were in each state on that date.
 
 :::image type="content" source="media/quickstart/open-analytics.png" alt-text="Screenshot of the Analytics tab on a board with the CFD card and the View full report link highlighted.":::
-
-Use the interactive controls to select the time frame, swimlanes, and workflow states or board columns. Hover over a point on the CFD to see how many items were in a particular state at that time.
 
 In the following example, hovering over a single day shows that 101 items were in the *Researching* state on that date.
 
@@ -126,9 +159,9 @@ In the following example, hovering over a single day shows that 101 items were i
 > [!TIP]
 > Your selections persist across sessions until you change them.
 
-By monitoring these metrics, you can find opportunities to reduce lead time. For more information, see [Configure a cumulative flow chart](../../report/dashboards/cumulative-flow.md).
+Use these insights to decide where work is piling up, then adjust WIP limits, staffing, or handoffs to reduce lead time. For more information, see [Configure a cumulative flow chart](../../report/dashboards/cumulative-flow.md).
 
-You can also add Analytics widgets to your dashboard. The Analytics Service provides access to several widgets. For more information, see:
+You can also add Analytics widgets to your dashboard:
 
 - [Widgets based on the Analytics Service](../../report/dashboards/analytics-widgets.md)
 - [Add a widget to a dashboard](../../report/dashboards/add-widget-to-dashboard.md)
@@ -136,7 +169,38 @@ You can also add Analytics widgets to your dashboard. The Analytics Service prov
 
 ## View a board from a query
 
-The [Query Based Boards](https://marketplace.visualstudio.com/items?itemName=realdolmen.EdTro-AzureDevOps-Extensions-QueryBasedBoards-Public) Marketplace extension supports viewing a flat-list query of work items as a board. The query can contain different work item types and work items defined in different projects.
+Use the [Query Based Boards](https://marketplace.visualstudio.com/items?itemName=realdolmen.EdTro-AzureDevOps-Extensions-QueryBasedBoards-Public) Marketplace extension to view a flat-list query as a board.
+
+Use this option when you need one board view that spans:
+
+- Multiple work item types
+- Multiple projects
+
+To get started, install the extension, open your flat-list query, and switch to the board view provided by the extension.
+
+<a id="use-ai-assistance"></a>
+
+## Use AI to manage your Kanban board
+
+If you configure the [Azure DevOps MCP Server](../../mcp-server/mcp-server-overview.md), you can describe common Kanban board tasks in natural language instead of dragging cards through columns manually.
+
+Use these prompts as scenario examples. Supported operations vary by connected tools, extension version, and your permissions.
+
+| Task | Example prompt |
+|------|----------------|
+| Add a work item to the board | `Add a new user story "Enable dark mode" to the board for team <Web> in project <Contoso>` |
+| Move a card across columns | `Move user story 4321 to the "Doing" column on the board for team <Web> in project <Contoso>` |
+| Assign a card | `Assign user story 4321 to <Raisa> on the board for team <Web> in project <Contoso>` |
+| Bulk move cards | `Move all "Approved" user stories on the board for team <Web> to "Committed" in project <Contoso>` |
+| Filter the board | `Show all cards on the board for team <Web> in project <Contoso> tagged "customer-request"` |
+| Add child tasks | `Add 3 tasks under user story 4321 in project <Contoso> with the titles I provide` |
+| Update card details | `Set Story Points to 5 on user story 4321 in project <Contoso>` |
+| Identify blocked cards | `List all cards on the board for team <Web> in project <Contoso> that are blocked or at risk` |
+| Summarize board status | `Summarize the board for team <Web> in project <Contoso> - count of items in each column and any blockers` |
+| Reassign in bulk | `Reassign all "In Progress" cards from <Jamal> to <Raisa> on the board for team <Web> in project <Contoso>` |
+
+> [!NOTE]
+> If you're using Visual Studio Code, [agent mode](/visualstudio/ide/copilot-chat-context#agent-mode) is especially helpful for complex Kanban board operations.
 
 ## Next step
 

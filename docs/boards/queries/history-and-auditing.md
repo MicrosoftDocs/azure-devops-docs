@@ -2,7 +2,7 @@
 title: Query Work Items By History
 titleSuffix: Azure Boards
 description: Learn how to query work item history and comments to support audit requirements when working in Azure Boards.
-ms.service: azure-devops-boards
+ms.service: azure-boards
 ms.custom: boards-queries, engagement-fy23, copilot-scenario-highlight
 ai-usage: ai-assisted
 ms.author: chcomley
@@ -172,8 +172,6 @@ To view only comments added to the log, select Discussion Only. To view all chan
 
 The History tab records all changes to a work item to provide full traceability. Use filtering to find revisions by who updated an item or which fields changed.
 
-> [!NOTE]
-> The Toggle filter feature requires the New Boards Hub feature (enabled by default). See the linked guidance to manage preview features.
 
 To review updates by specific people, choose names from the Updated by menu.
 

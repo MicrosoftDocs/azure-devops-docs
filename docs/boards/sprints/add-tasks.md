@@ -2,7 +2,7 @@
 title: Add tasks to support sprint planning
 titleSuffix: Azure Boards
 description: Learn how to add tasks to user stories assigned to a sprint. You can also add tasks to an iteration working with Scrum methods in Azure Boards.
-ms.service: azure-devops-boards
+ms.service: azure-boards
 ms.custom: copilot-scenario-highlight
 ms.author: chcomley
 author: chcomley

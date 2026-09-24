@@ -2,13 +2,14 @@
 title: Add or remove columns within a work item list in Azure Boards
 titleSuffix: Azure Boards
 description: Manage columns in Azure Boards work item lists to display and organize fields that matter most. Discover step-by-step guidance and boost productivity.
-ms.service: azure-devops-boards
+ms.service: azure-boards
+ms.custom: copilot-scenario-highlight
 ms.author: chcomley
 ms.reviewer: chcomley
 author: chcomley
 ms.topic: how-to
 monikerRange: '<= azure-devops'
-ms.date: 03/24/2026
+ms.date: 07/15/2026
 ai-usage: ai-assisted
 ---
 
@@ -19,110 +20,30 @@ ai-usage: ai-assisted
 
 <a id="column-options">  </a>
 
-Each column in a work item list corresponds to a work item field. Add or remove columns to show the fields you need, or drag a column to reorder it. Your column settings persist per page and apply only to your views.
+Each work item list column maps to a work item field. Use **Column options** to add or remove columns, reorder them, and tailor the list to the fields you want to see. Your column settings persist for each page and apply only to your views.
 
-The following table shows which column actions are available in each list view:  
+The following table shows where you can perform each column action:
 
-:::row:::
-   :::column span="2":::
-      **Action**
-   :::column-end:::
-   :::column span="":::
-      [**Backlogs**](create-your-backlog.md)
-   :::column-end:::
-   :::column span="":::
-      [**Sprint backlogs**](../sprints/assign-work-sprint.md)
-   :::column-end:::
-   :::column span="":::
-      [**Queries**](../queries/view-run-query.md) 
-   :::column-end:::
-   :::column span="":::
-      [**Work items**](../work-items/view-add-work-items.md)
-   :::column-end:::
-:::row-end::: 
-:::row:::
-   :::column span="2":::
-      Add or remove a column field
-   :::column-end:::
-   :::column span="":::
-      Yes
-   :::column-end:::
-   :::column span="":::
-      Yes
-   :::column-end:::
-   :::column span="":::
-      Yes
-   :::column-end:::
-   :::column span="":::
-      Yes
-   :::column-end:::
-:::row-end::: 
-::: moniker range="<=azure-devops"
-:::row:::
-   :::column span="2":::
-      Add or remove the Parent field
-   :::column-end:::
-   :::column span="":::
-      Yes
-   :::column-end:::
-   :::column span="":::
-      Yes
-   :::column-end:::
-   :::column span="":::
-      Yes
-   :::column-end:::
-   :::column span="":::
-      Yes
-   :::column-end:::
-:::row-end::: 
-:::row:::
-   :::column span="2":::
-      Add or remove a rollup column
-   :::column-end:::
-   :::column span="":::
-      Yes
-   :::column-end:::
-   :::column span="":::
-      No
-   :::column-end:::
-   :::column span="":::
-      No
-   :::column-end:::
-   :::column span="":::
-      No
-   :::column-end:::
-:::row-end::: 
-::: moniker-end
-:::row:::
-   :::column span="2":::
-      Sort on a column
-   :::column-end:::
-   :::column span="":::
-      No
-   :::column-end:::
-   :::column span="":::
-      No
-   :::column-end:::
-   :::column span="":::
-      Yes
-   :::column-end:::
-   :::column span="":::
-      Yes
-   :::column-end:::
-:::row-end::: 
+| Action | [Backlogs](create-your-backlog.md) | [Sprint backlogs](../sprints/assign-work-sprint.md) | [Queries](../queries/view-run-query.md) | [Work items](../work-items/view-add-work-items.md) |
+|---|---|---|
+| Add or remove columns | ✅ | ✅ | ✅ | ✅ |
+| Add or remove the Parent field | ✅ | ✅ | ✅ | ✅ |
+| Add or remove a rollup column | ✅ | ❌ | ❌ | ❌ |
+| Sort on a column | ❌ | ❌ | ✅ | ✅ |
 
-> [!TIP]    
-> You can't sort a backlog by column. To sort backlog items, select **Create Query** on the backlog to create a query, then use the **Sorting** tab in the **Column options** dialog. Not all fields support sorting — for example, **Parent**, **History**, **Description**, and other rich-text fields return an error if you try to sort on them. 
+Backlogs don't support column-based sorting. To sort backlog items, select **Create Query** on the backlog, and then use the **Sorting** tab in the **Column options** dialog. Not all fields support sorting. For example, **Parent**, **History**, **Description**, and other rich-text fields return an error if you try to sort on them.
 
 ::: moniker range="azure-devops"
-You can add most fields listed in the [Work item field index](../work-items/guidance/work-item-field.md), including fields defined across the organization that aren't used in your project. To review available fields, go to [**Organization Settings > Process > Fields**](../work-items/work-item-fields.md#review-fields).
+Most fields in the [Work item field index](../work-items/guidance/work-item-field.md) are available, including fields defined across the organization that your project doesn't use. To review available fields, go to [**Organization Settings > Process > Fields**](../work-items/work-item-fields.md#review-fields).
 
 ::: moniker-end 
 
 ::: moniker range=" < azure-devops"
 
-You can add most fields listed in the [Work item field index](../work-items/guidance/work-item-field.md), including fields defined across the project collection that aren't used in your project. If your project uses the Inherited process model, review available fields at [**Organization Settings > Process > Fields**](../work-items/work-item-fields.md#review-fields).
+Most fields in the [Work item field index](../work-items/guidance/work-item-field.md) are available, including fields defined across the project collection that your project doesn't use. If your project uses the Inherited process model, review available fields at [**Organization Settings > Process > Fields**](../work-items/work-item-fields.md#review-fields).
 ::: moniker-end 
+
+[!INCLUDE [ai-assistance-mcp-server-tip](../../includes/ai-assistance-mcp-server-tip.md)]
 
 ## Column option persistence
 
@@ -185,7 +106,7 @@ To reorder fields, select a field and use the up or down arrows.
 
 ### Change column sort order
 
-Select the **Sorting** tab to control which fields sort query results. Add or remove fields the same way as on the **Fields** tab, then use the up and down arrows to set the sort priority. To reverse the sort direction, select the field and choose **Sort ascending** or **Sort descending**.  
+Select the **Sorting** tab to control which fields sort query results. Add or remove fields the same way as on the **Fields** tab, and then use the up and down arrows to set the sort priority. To reverse the sort direction, select the field and choose **Sort ascending** or **Sort descending**.  
 
 :::image type="content" source="media/columns/column-options-dialog-sorting-visual-studio.png" alt-text="Screenshot shows Column Options dialog, Visual Studio, Sorting tab.":::
 
@@ -215,6 +136,28 @@ To sort query results or **Work items** views, open the **Column options** dialo
 - **Sort by multiple columns** — Shift+select each column header in the order you want.
 
 For a full list of keyboard shortcuts, press **?** on any page. 
+
+<a id="use-ai-assistance"></a>
+
+## Use AI to configure board columns
+
+If you configure the [Azure DevOps MCP Server](../../mcp-server/mcp-server-overview.md), you can describe board column configuration in natural language instead of using the column settings dialog for each column.
+
+| Task | Example prompt |
+|------|----------------|
+| Add a column | `Add a "Ready for Review" column between "Doing" and "Done" on the board for team <Web> in project <Contoso>` |
+| Rename a column | `Rename the "Doing" column to "In Progress" on the board for team <Web> in project <Contoso>` |
+| Reorder columns | `Move the "Testing" column so it appears before "Done" on the board for team <Web> in project <Contoso>` |
+| Set a WIP limit | `Set a WIP limit of 5 on the "Doing" column on the board for team <Web> in project <Contoso>` |
+| Split a column | `Split the "Doing" column into "Doing" and "Done" swim lanes on the board for team <Web> in project <Contoso>` |
+| Map a column to a state | `Map the "In Review" column to the "Active" workflow state on the board for team <Web> in project <Contoso>` |
+| Set Definition of Done | `Add a Definition of Done checklist to the "Done" column on the board for team <Web> in project <Contoso>` |
+| Remove a column | `Remove the "Blocked" column from the board for team <Web> in project <Contoso>` |
+| Copy column layout | `Copy the column layout from team <Web> to team <Mobile> in project <Contoso>` |
+| Audit column setup | `List all boards in project <Contoso> that don't have WIP limits configured` |
+
+> [!NOTE]
+> If you're using Visual Studio Code, [agent mode](/visualstudio/ide/copilot-chat-context#agent-mode) is especially helpful for complex board configuration operations.
 
 ## Related content
 

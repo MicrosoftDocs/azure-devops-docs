@@ -3,7 +3,7 @@ title: Work Item Query Language (WIQL) reference syntax
 titleSuffix: Azure Boards   
 description: Learn about the reference syntax for the Work Item Query Language used by Azure Boards. 
 ms.custom: boards-queries, copilot-scenario-highlight  
-ms.service: azure-devops-boards
+ms.service: azure-boards
 ms.topic: reference
 ai-usage: ai-assisted
 ms.author: chcomley  
