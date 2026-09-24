@@ -85,7 +85,7 @@ A common question about migration is what type of licensing a company needs to u
 
 ### User licenses worksheet 
 
-| # |  | Example | 
+| # | Description | Example |
 |---|----------|----------| 
 | 1 | Number of team members | 100 team members |
 | 2 | Number of stakeholders | 10 stakeholders |
