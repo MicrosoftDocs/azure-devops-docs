@@ -91,7 +91,7 @@ Review the following recommendations:
 3. Move large inline scripts to script files stored in source control to improve maintainability and troubleshooting.
 4. Review network capacity and stability, particularly when using a custom virtual network. If multiple pipelines run simultaneously, consider increasing available network resources and engage your networking team if necessary.
 
-If the pipeline runs automated tests, review test parallelization settings. Running tests in parallel on smaller agent VMs can lead to increased CPU, memory, and network consumption. Consider temporarily disabling test parallelization to determine whether it contributes to the issue. For example, MSTest provides options to explicitly enable or disable test parallelization. For more information, see [MSTEST0001: Explicitly enable or disable test parallelization](https://learn.microsoft.com/dotnet/core/testing/mstest-analyzers/mstest0001).
+If the pipeline runs automated tests, review test parallelization settings. Running tests in parallel on smaller agent VMs can lead to increased CPU, memory, and network consumption. Consider temporarily disabling test parallelization to determine whether it contributes to the issue. For example, MSTest provides options to explicitly enable or disable test parallelization. For more information, see [MSTEST0001: Explicitly enable or disable test parallelization](/dotnet/core/testing/mstest-analyzers/mstest0001).
 
 If your pipeline uses the **Download Pipeline Artifact** task, consider reducing the download parallelism. By default, the task can use a high level of parallelism. You can reduce this by setting the AZURE\_PIPELINES\_DEDUP\_PARALLELISM variable in your pipeline:
 

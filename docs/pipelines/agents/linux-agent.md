@@ -193,7 +193,7 @@ We encourage you to review, and if needed, update the script before running it.
 
 Some important caveats:
 * If you run your agent as a service, you cannot run the agent service as `root` user.
-* Users running [SELinux](https://selinuxproject.org/) have reported difficulties with the provided `svc.sh` script.
+* Users running [SELinux](https://selinuxproject.github.io/) report difficulties with the provided `svc.sh` script.
 Refer to [this agent issue](https://github.com/microsoft/azure-pipelines-agent/issues/2738) as a starting point.
 SELinux is not an officially supported configuration.
 

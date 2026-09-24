@@ -5,7 +5,7 @@ description: Learn how to enable, configure, and use GitHub Copilot to review pu
 ms.service: azure-devops-repos
 ms.topic: how-to
 ai-usage: ai-assisted
-ms.date: 08/26/2026
+ms.date: 09/24/2026
 ms.author: chcomley
 author: chcomley
 ---
@@ -164,7 +164,7 @@ For guidance on using custom instructions and agent skills to tailor Copilot's c
 
 ## Use Copilot code review
 
-With the feature enabled at all three scopes, you can ask Copilot to review a pull request. The following sections describe what to expect.
+When you enable the feature at all three scopes, you can ask Copilot to review a pull request. The following sections describe what to expect.
 
 ### Request a review
 
@@ -205,7 +205,7 @@ If a code review takes longer than expected or you need to stop it, you can canc
 1. In the **Reviewers** section, next to **GitHub Copilot**, select the **Cancel** button (or select **More options** > **Cancel review**).
 1. Confirm the cancellation when prompted.
 
-The review run stops immediately, and no additional comments are added. The partial review results, including comments added before cancellation, remain on the pull request. You can request a new review at any time.
+The review run stops immediately, and no more comments are added. The partial review results, including comments added before cancellation, remain on the pull request. You can request a new review at any time.
 
 ## Requirements and limits
 
@@ -243,13 +243,21 @@ Charges go to the Azure subscription linked to your Azure DevOps organization an
 > [!IMPORTANT]
 > Charges take 48 hours after a code review is completed to appear in the Azure portal.
 
-Copilot code review charges in Azure Cost Management now include **Azure DevOps project tags**, enabling per-project cost reporting. You can filter or group cost analysis by these project tags to attribute usage and spend to individual Azure DevOps projects.
+## Azure cost management
 
 To monitor your daily charges:
 
 1. In the [Azure portal](https://portal.azure.com), go to your subscription.
 2. Select **Cost Management** > **Cost analysis**.
-3. Filter by product to view the organization's daily costs. To view costs for a specific project, add a filter or group by the Azure DevOps project tag.
+3. To filter on Copilot Code Review, select:
+
+   - **Meter category**: **GitHub**
+   - **Meter subcategory**: **GitHub Copilot for AzDO**
+
+   Filter or group by organization and project by using the following tags:
+
+   - **Organization**
+   - **Project**
 
    :::image type="content" source="media/copilot-code-reviews/billing-cost-analysis.png" alt-text="Screenshot of Cost Management showing Copilot review charges by product." lightbox="media/copilot-code-reviews/billing-cost-analysis.png":::
 
