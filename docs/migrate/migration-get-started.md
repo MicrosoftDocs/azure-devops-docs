@@ -85,14 +85,14 @@ A common question about migration is what type of licensing a company needs to u
 
 ### User licenses worksheet 
 
-|#|Column 1 |Column 2 | 
-||---------|---------| 
-|1|Number of team members              |         |
-|2|Number of stakeholders              |         |
-|3|Subtract the value in line 2 from the value in line 1*    |         |
-|4|Number of Visual Studio subscribers**    |         |
-|5|Subtract the value in line 4 from the value in line 3     |         |
-|6|Subtract the value in line 5 from the value in line 5***  |         |
+| # | Description | Example |
+|---|----------|----------| 
+| 1 | Number of team members | 100 team members |
+| 2 | Number of stakeholders | 10 stakeholders |
+| 3 | Subtract the value in line 2 from the value in line 1* | 100 - 10 = 90 |
+| 4 | Number of Visual Studio subscribers** | 20 Visual Studio subscribers |
+| 5 | Subtract the value in line 4 from the value in line 3 | 90 - 20 = 70 |
+| 6 | Subtract the value 5 from the value in line 5*** | 70 - 5 = 65 licenses needed |
 
 - *Stakeholders are free. 
 - ** Visual Studio Subscribers have Azure DevOps Services included as a benefit of the subscription. 
