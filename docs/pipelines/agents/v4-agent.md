@@ -9,7 +9,7 @@ ms.date: 09/11/2026
 # Agent software version 4
 
 > [!IMPORTANT]
-> The pipelines team is upgrading the agent software from version 4.x to version 5.x, which uses .NET 10. New versions of the v4 agent are no longer published. Upgrade to the [v5 agent](v5-agent.md) to continue receiving the latest features, servicing updates, and operating system support.
+> The pipelines team is upgrading the agent software from version 4.x to version 5.x, which uses .NET 10. New versions of the v4 agent aren't published. Upgrade to the [v5 agent](v5-agent.md) to continue receiving the latest features, servicing updates, and operating system support.
 
 ## Upgrade to 4.x agent on supported operating systems
 
