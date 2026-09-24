@@ -190,7 +190,7 @@ Continuing our commitment towards improved traceability, we are happy to announc
 
 ### Run from Package supported in Azure App Service deployments
 
-The Azure App Service Deploy task (4.*) version now supports [RunFromPackage](/azure/azure-functions/run-functions-from-deployment-package) (previously called [RunFromZip](https://github.com/Azure/app-service-announcements/issues/110).
+The Azure App Service Deploy task (4.*) version now supports [RunFromPackage](/azure/azure-functions/deployment-zip-push#run-functions-from-the-deployment-package) (previously called [RunFromZip](https://github.com/Azure/app-service-announcements/issues/110)).
 
 App Service supports a number of different techniques to deploy your files such as msdeploy (aka WebDeploy), git, ARM and more. But all these techniques have a limitation. Your files are deployed under your wwwroot folder (specifically d:\home\site\wwwroot) and the runtime then runs the files from there. 
 
