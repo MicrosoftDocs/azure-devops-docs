@@ -629,7 +629,7 @@ Managed DevOps Pools automatically enables the [NVM Express (NVMe)](/azure/virtu
 
 - Your VM image is a [Generation 2](/azure/virtual-machines/generation-2) image.
 - Your VM size has a temp disk and supports NVMe. For more information on supported VM sizes, see [General FAQ for NVMe: Which VM generations support NVMe disks?](/azure/virtual-machines/enable-nvme-faqs#which-vm-generations-support-nvme-disks-)
-- Your operating system supports NVMe. Ephemeral OS disks also consume local NVMe storage. On VM sizes with limited NVMe capacity, the available NVMe disk may already be allocated to the ephemeral OS disk. For a list of supported operating systems, see [Supported OS images for remote NVMe](/azure/virtual-machines/enable-nvme-interface).
+- Your operating system supports NVMe. Ephemeral OS disks also consume local NVMe storage. On VM sizes with limited NVMe capacity, the available NVMe disk might already be allocated to the ephemeral OS disk. For a list of supported operating systems, see [Supported OS images for remote NVMe](/azure/virtual-machines/enable-nvme-interface).
 
 Managed DevOps Pools uses the following paths for NVMe temp disks:
 
