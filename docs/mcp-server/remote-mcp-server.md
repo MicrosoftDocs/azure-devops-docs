@@ -418,6 +418,20 @@ After authentication completes, a list of available tools appears.
 
 Configure the remote MCP Server in Visual Studio by adding the server URL to your MCP settings. For more information, see [Use MCP servers in Visual Studio](/visualstudio/ide/mcp-servers).
 
+### Choose OAuth scopes for custom clients
+
+When you register a custom MCP client, grant only the delegated permissions required for the Azure DevOps operations that the client performs. OAuth scopes determine which Azure DevOps resources and operations the client can access. Enabling an MCP tool or toolset doesn't grant additional permissions.
+
+Follow the principle of least privilege:
+
+- Grant read scopes when the client uses only read-only MCP tools.
+- Grant write or manage scopes only when the client needs the corresponding write operations.
+- Review inherited scopes to avoid granting redundant permissions.
+
+For the available scopes and their relationships, see [OAuth scopes](/azure/devops/integrate/get-started/authentication/oauth#oauth-scopes).
+
+OAuth scopes don't override the permissions of the signed-in user. An MCP operation succeeds only when both the application scope and the user's Azure DevOps permissions allow it.
+
 ### Cursor
 
 Cursor requires a custom Microsoft Entra app registration to access the remote Azure DevOps MCP Server.
@@ -431,7 +445,7 @@ Cursor requires a custom Microsoft Entra app registration to access the remote A
 1. On the **Authentication (Preview)** page, select the **Settings** tab, and then enable **Allow public client flows**.
 1. On the **API permissions** page, select **Add a permission** > **APIs my organization uses**.
 1. Search for **Azure DevOps MCP** or the application ID `2a72489c-aab2-4b65-b93a-a91edccf33b8`, and then select the application.
-1. Select the delegated permissions that your app requires, and then select **Add permissions**.
+1. Select the delegated permissions that your client requires, following the [OAuth scope guidance](#choose-oauth-scopes-for-custom-clients), and then select **Add permissions**.
 1. Select **Grant admin consent**. Depending on your role, a tenant administrator might need to complete this step.
 
 Copy the **Application (client) ID** from the app registration. You need this value to configure Cursor.
@@ -510,7 +524,7 @@ Claude Code requires a custom Microsoft Entra app registration to access the rem
 1. On the **Authentication (Preview)** page, select the **Settings** tab, and then enable **Allow public client flows**.
 1. On the **API permissions** page, select **Add a permission** > **APIs my organization uses**.
 1. Search for **Azure DevOps MCP** or the application ID `2a72489c-aab2-4b65-b93a-a91edccf33b8`, and then select the application.
-1. Select the delegated permissions that your app requires, and then select **Add permissions**.
+1. Select the delegated permissions that your client requires, following the [OAuth scope guidance](#choose-oauth-scopes-for-custom-clients), and then select **Add permissions**.
 1. Select **Grant admin consent**. Depending on your role, a tenant administrator might need to complete this step.
 
 Copy the **Application (client) ID** from the app registration. You need this value to configure Claude Code.
