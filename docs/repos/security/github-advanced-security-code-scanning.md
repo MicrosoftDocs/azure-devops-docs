@@ -8,7 +8,7 @@ ms.topic: how-to
 ms.author: laurajiang
 author: laurajjiang
 monikerRange: 'azure-devops'
-ms.date: 06/24/2026
+ms.date: 09/28/2026
 ms.custom: cross-service, sfi-image-nochange
 ---
 
@@ -22,7 +22,7 @@ CodeQL is the code analysis engine developed by GitHub to automate security chec
 
 ## Prerequisites
 
-[!INCLUDE [github-advanced-security-prerequisites](includes/github-advanced-security-prerequisites.md)]
+[!INCLUDE [github-advanced-security-pipeline-scanning-prerequisites](includes/github-advanced-security-pipeline-scanning-prerequisites.md)]
 
 ## About code scanning setup types
 
