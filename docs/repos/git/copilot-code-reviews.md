@@ -5,7 +5,7 @@ description: Learn how to enable, configure, and use GitHub Copilot to review pu
 ms.service: azure-devops-repos
 ms.topic: how-to
 ai-usage: ai-assisted
-ms.date: 09/24/2026
+ms.date: 09/28/2026
 ms.author: chcomley
 author: chcomley
 ---
@@ -102,35 +102,18 @@ If the project doesn't allow repository overrides, **Default effort level** is r
 
 ### Set up automatic review policies
 
-Copilot can automatically review new pull requests without requiring manual requests. You can configure this policy for all repositories in a project or for individual repositories.
+Copilot can automatically review pull requests without requiring a manual request. To enable automatic reviews, configure a branch policy for each target branch where you want Copilot to review pull requests.
 
-Feature enablement and automatic review are separate settings. Enabling Copilot code review makes it available to a repository. An automatic review policy requests a Copilot review when a new pull request is created.
+Feature enablement and automatic review are separate settings. Enabling Copilot code review makes it available to a repository. The branch policy automatically requests a Copilot review when a pull request targets the configured branch.
 
-#### Configure automatic review for all repositories in a project
+You must have permission to edit policies for the branch. For more information, see [Set and manage branch policies](branch-policies.md).
 
-Use the project-level policy to automatically request Copilot reviews across every repository in the project. You don't need to configure the policy for each repository individually.
+1. Select **Repos** > **Branches**.
+1. Find the target branch that you want Copilot to review pull requests for.
+1. Select the **More options** icon next to the branch, and then select **Branch policies**.
+1. Enable the **Automatically request Copilot code review** policy.
 
-1. Select **Project settings** > **Repos** > **Repositories**.
-1. Under **GitHub Copilot code review**, toggle **Automatically request Copilot code review on new pull requests for all repositories in this project** to **On**.
-
-   This setting applies to all repositories in the project unless a repository-level policy overrides it.
-
-#### Configure automatic review for one repository
-
-Use repository-level policy when you need repository-specific behavior.
-
-1. Select **Project settings** > **Repos** > **Repositories**.
-1. Select the repository you want to configure.
-1. On the **Settings** tab, under **GitHub Copilot code review**, toggle **Automatically request Copilot code review on new pull requests** to **On**.
-1. (Optional) Configure review scope:
-   - **Apply to all pull requests:** Copilot reviews every new pull request in the repository.
-   - **Apply to specific branch policies:** Copilot reviews only pull requests that target specified branches (for example, main or develop).
-
-   Policy precedence for automatic reviews:
-   - The project-level automatic review policy applies to all repositories in the project.
-   - Repository-level automatic review settings override the project-level default for that repository.
-
-When you enable automatic review, Copilot starts reviewing new pull requests immediately upon creation. You can still request additional reviews manually by selecting **Request** next to **GitHub Copilot** in the pull request.
+Repeat these steps for each target branch where you want automatic reviews. You can still request additional reviews manually by selecting **Request** next to **GitHub Copilot** in the pull request.
 
 ### Select an agent pool
 
