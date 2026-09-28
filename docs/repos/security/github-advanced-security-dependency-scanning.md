@@ -9,7 +9,7 @@ ms.custom: cross-service
 ms.author: laurajiang
 author: laurajjiang
 monikerRange: 'azure-devops'
-ms.date: 02/20/2025
+ms.date: 09/28/2026
 ---
 
 # Set up dependency scanning 
@@ -20,7 +20,7 @@ Dependency scanning in [GitHub Advanced Security for Azure DevOps](configure-git
 
 ## Prerequisites
 
-[!INCLUDE [github-advanced-security-prerequisites](includes/github-advanced-security-prerequisites.md)]
+[!INCLUDE [github-advanced-security-pipeline-scanning-prerequisites](includes/github-advanced-security-pipeline-scanning-prerequisites.md)]
 
 ## About dependency scanning  
 
