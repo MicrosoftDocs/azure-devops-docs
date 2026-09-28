@@ -274,6 +274,8 @@ The work item tools are consolidated into grouped dispatchers using an `action` 
 | `wit_work_item_link_write` | `link_to_pull_request` | Link a work item to a pull request | ❌ |
 | `wit_work_item_link_write` | `add_artifact_link` | Add a repository, branch, commit, build, or wiki artifact link to a work item | ❌ |
 | `wit_work_item_attachment` |  | Download a work item attachment by ID; returns base64-encoded content with filename and MIME type | ✅ |
+| `wit_work_item_attachment_upload` |  | Upload file content (up to 20 MB, Base64-encoded) to the attachment store without attaching it to a work item | ❌ |
+| `wit_work_item_attachment_link` |  | Link a previously uploaded attachment to a work item | ❌ |
 
 > [!NOTE]
 > `wit_query_by_wiql` is currently available only to MCP Insiders by using the `X-MCP-Insiders` header.
