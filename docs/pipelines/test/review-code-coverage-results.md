@@ -127,7 +127,7 @@ Code coverage status posted from a pipeline follows the naming convention `{name
 
 ### Code coverage attachment size limit
 Azure Pipelines limits the total size of code coverage attachments processed for an individual pipeline build to 10 GB.
-If the code coverage attachments exceed this limit, Azure Pipelines does not process the coverage data for that build. As a result, code coverage results might not appear in the Code Coverage tab or be available for coverage reporting and policy evaluation.
+If the code coverage attachments exceed this limit, Azure Pipelines doesn't process the coverage data for that build. As a result, code coverage results might not appear in the Code Coverage tab or be available for coverage reporting and policy evaluation.  
 To reduce the size of code coverage attachments:
 - Configure your coverage producer to generate only the coverage data required for the build.
 - Remove duplicate or unnecessary coverage files before publishing.
