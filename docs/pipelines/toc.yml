@@ -107,6 +107,9 @@
     - name: Task types & usage
       displayName: custom tasks, task versions, task control options, conditions, task tool installers, build tool installers
       href: process/tasks.md
+    - name: Task retirement announcement
+      displayName: deprecated tasks, retired tasks, task removal, migration
+      href: tasks/task-retirement.md
     - name: Task groups (Classic)
       href: release/task-groups.md
     - name: Add a custom task extension

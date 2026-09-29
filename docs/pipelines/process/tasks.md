@@ -2,7 +2,7 @@
 title: Task types and usage
 description: Learn about tasks in Azure Pipelines pipeline jobs, including setting inputs and controlling run conditions.
 ms.topic: concept-article
-ms.date: 09/10/2026
+ms.date: 09/25/2026
 monikerRange: '<= azure-devops'
 ai-usage: ai-assisted
 #customer intent: As an Azure Pipelines creator and user, I want to understand tasks in pipeline jobs so I can select and configure them correctly.
@@ -21,6 +21,8 @@ By default, all steps in a job run in sequence in the same context, whether on t
 ## Task management
 
 Tasks are available and installed at the Azure DevOps [organization](../../organizations/accounts/organization-management.md) level. You can only use tasks and task versions that exist for your organization.
+
+For information about tasks scheduled for retirement on October 15, 2026, their removal date, and recommended replacements, see [Azure Pipelines task retirement announcement](../tasks/task-retirement.md).
 
 You can disable built-in tasks, Marketplace tasks, or both in **Organization Settings** > **Pipelines** > **Settings** under **Task restrictions**. If you disable both built-in and Marketplace tasks, only tasks you install by using the [Node CLI for Azure DevOps](https://www.npmjs.com/package/tfx-cli) are available.
 
