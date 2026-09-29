@@ -5,7 +5,7 @@ description: Learn how to enable, configure, and use GitHub Copilot to review pu
 ms.service: azure-devops-repos
 ms.topic: how-to
 ai-usage: ai-assisted
-ms.date: 09/28/2026
+ms.date: 09/29/2026
 ms.author: chcomley
 author: chcomley
 ---
@@ -239,8 +239,8 @@ To monitor your daily charges:
 
    Filter or group by organization and project by using the following tags:
 
-   - **Organization**
-   - **Project**
+   - Tag: `_organizationname_`
+   - Tag: `_projectname_`
 
    :::image type="content" source="media/copilot-code-reviews/billing-cost-analysis.png" alt-text="Screenshot of Cost Management showing Copilot review charges by product." lightbox="media/copilot-code-reviews/billing-cost-analysis.png":::
 
