@@ -12,13 +12,6 @@ monikerRange: 'azure-devops'
 
 GitHub-hosted agents provide higher performance virtual machines for Azure Pipelines with pay-as-you-go (PAYG) billing. Unlike the [Microsoft-hosted agents](hosted.md) that use a concurrency-based pool, GitHub-hosted agents bill per minute of usage and offer more powerful machine configurations. The charges depend on the operating system and dimensions of the agent used.
 
-> [!IMPORTANT]
-> This feature is being deployed and might not be available in all regions yet. To check if it's deployed to your region, check your [Azure DevOps billing page](#enable-github-hosted-agents-billing) for the **GitHub-hosted agents** setting.
->
-> This feature is currently in preview. It might change before general availability.
->
-> GitHub-hosted agents always run in the US irrespective of the location of your Azure DevOps organization.
-
 ## Prerequisites
 
 To enable GitHub-hosted agents, you must have the following prerequisites:
@@ -75,6 +68,37 @@ steps:
     hostinfo | grep memory
 ```
 
+```yaml
+pool:
+  name: 'GitHub-hosted Agents'
+  vmImage: 'ubuntu-24.04-8-core'
+steps:
+- bash: |
+    echo Hello from Ubuntu 24.04 8 core
+    lsb_release -d
+    echo "# cores: $(nproc)"
+    free -h
+- pwsh: |
+    Write-Host "`$PSVersionTable.OS"
+    $PSVersionTable.OS
+    Write-Host "Number of logical processors: $([Environment]::ProcessorCount)"
+    Get-Content /proc/meminfo | Select-String '^Mem(Total|Available):'
+```
+
+```yaml
+pool:
+  name: 'GitHub-hosted Agents'
+  vmImage: 'windows-2025-vs2026-16-core'
+steps:
+- pwsh: |
+    Write-Host "(Get-ComputerInfo).WindowsProductName"
+    Get-ComputerInfo | Select-Object WindowsProductName
+    Write-Host "`$PSVersionTable.OS"
+    $PSVersionTable.OS
+    Write-Host "Number of logical processors: $([Environment]::ProcessorCount)"
+    Write-Host "Installed memory (MB): $([Math]::Round((Get-ComputerInfo).CsTotalPhysicalMemory / 1MB))"
+```
+
 #### [Classic](#tab/classic)
 
 In the classic editor, select the GitHub-hosted agent image you want from the **Agent Specification** dropdown in the pipeline settings.
@@ -87,19 +111,19 @@ In the classic editor, select the GitHub-hosted agent image you want from the **
 GitHub-hosted agents offer higher performance configurations compared to the standard Microsoft-hosted agent [configurations](./hosted.md#hardware). The **GitHub-hosted agents** pool offers the following hardware specifications and virtual machine images.
 
 > [!IMPORTANT]
-> During the public preview, organizations are limited to eight **Standard** and eight **XLarge** GitHub-hosted agents. If more than eight pipeline jobs queue per hardware specification, the first eight jobs run and the remainder queue until the initial jobs complete. If you need more than eight agents per hardware specification during the public preview, create a support case.
+> During the public preview, organizations are limited to eight  GitHub-hosted agents per SKU. If more than eight pipeline jobs queue per hardware specification, the first eight jobs run and the remainder queue until the initial jobs complete. If you need more than eight agents per hardware specification during the public preview, create a support case.
 
 #### [macOS images](#tab/macos-images/)
 
-GitHub-hosted agents provides images for the following macOS versions:
+GitHub-hosted agents provide images for the following macOS versions:
 
 | macOS version | Included software |
 |---------------|-------------------|
 | macOS 26 ARM 64 | [Link](https://github.com/actions/runner-images/blob/main/images/macos/macos-26-arm64-Readme.md) |
-| macOS with XCode 27 (public preview) | [Link](https://github.com/actions/runner-images/blob/main/images/macos/xcode-27-arm64-Readme.md) |
+| macOS with Xcode 27 (public preview) | [Link](https://github.com/actions/runner-images/blob/main/images/macos/xcode-27-arm64-Readme.md) |
 
 > [!NOTE]
-> The Xcode 27 image is rolling out to the **GitHub-hosted agents** pool over the next few weeks. If you don't see the image in your organization, check back later.
+> GitHub-hosted macOS agents always run in the US irrespective of the location of your Azure DevOps organization.
 
 This macOS image can run pipelines using the following hardware specifications:
 
@@ -122,6 +146,62 @@ To run your pipelines by using a GitHub-hosted agent, specify the image label th
 With the release of the **macOS with Xcode 27 (public preview)** image, Microsoft introduced a new naming convention for macOS images. Each new image name is based on a major Xcode version rather than the underlying operating system. Each image version supports one major Xcode version.
 
 This naming model enables developers to target the desired Apple toolchain. It reflects how macOS CI jobs are commonly defined, which is by their required Xcode toolchain rather than by the underlying operating system. The operating system might change over the lifetime of the image. To see the software included with the Xcode 27 image, including the macOS operating system version, follow the included software link for the image in the previous table.
+
+#### [Linux images](#tab/linux-images/)
+
+GitHub-hosted agents provide images for the following Ubuntu versions:
+
+| Ubuntu version | Included software |
+|----------------|-------------------|
+| Ubuntu 24.04 | [Link](https://github.com/actions/runner-images/blob/main/images/ubuntu/Ubuntu2404-Readme.md) |
+| Ubuntu 26.04 | [Link](https://github.com/actions/runner-images/blob/main/images/ubuntu/Ubuntu2604-Readme.md) |
+
+> [!NOTE]
+> The Ubuntu images are rolling out to the **GitHub-hosted agents** pool over the next few weeks. If you don't see the image in your organization, check back later.
+
+This Linux image can run pipelines using the following hardware specifications:
+
+| Hardware specification | vCPU | RAM | Storage (SSD) | Architecture |
+|------|------|-----|---------------|--------------|
+| 8 Cores | 8 | 32 GB | 300 GB | x64 |
+| 16 Cores | 16 | 64 GB | 600 GB | x64 |
+
+To run your pipelines by using a GitHub-hosted agent, specify the image label that matches your desired operating system and hardware specification from the following list:
+
+| Operating system (OS) | Hardware specification | Image | YAML VM Image Label |
+|-----------------------|------------------|-------|---------------------|
+| Ubuntu 24.04 | 8 Core | **Linux 8-core** | `ubuntu-24.04-8-core` |
+| Ubuntu 24.04 | 16 Core | **Linux 16-core** | `ubuntu-24.04-16-core` |
+| Ubuntu 26.04 | 8 Core | **Linux 8-core** | `ubuntu-26.04-8-core` |
+| Ubuntu 26.04 | 16 Core | **Linux 16-core** | `ubuntu-26.04-16-core` |
+
+#### [Windows images](#tab/windows-images/)
+
+GitHub-hosted agents provide images for the following Windows versions:
+
+| Windows version | Included software |
+|----------------|-------------------|
+| Windows Server 2025 with Visual Studio 2022 | [Link](https://github.com/actions/runner-images/blob/main/images/windows/Windows2025-Readme.md) |
+| Windows Server 2025 with Visual Studio 2026 | [Link](https://github.com/actions/runner-images/blob/main/images/windows/Windows2025-VS2026-Readme.md) |
+
+> [!NOTE]
+> The Windows images are rolling out to the **GitHub-hosted agents** pool over the next few weeks. If you don't see the image in your organization, check back later.
+
+This Windows image can run pipelines using the following hardware specifications:
+
+| Hardware specification | vCPU | RAM | Storage (SSD) | Architecture |
+|------|------|-----|---------------|--------------|
+| 8 Cores | 8 | 32 GB | 300 GB | x64 |
+| 16 Cores | 16 | 64 GB | 600 GB | x64 |
+
+To run your pipelines by using a GitHub-hosted agent, specify the image label that matches your desired operating system and hardware specification from the following list:
+
+| Operating system (OS) | Hardware specification | Image | YAML VM Image Label |
+|-----------------------|------------------|-------|---------------------|
+| Windows Server 2025 with Visual Studio 2022 | 8 Core | **Windows 8-core** | `windows-2025-8-core` |
+| Windows Server 2025 with Visual Studio 2022 | 16 Core | **Windows 16-core** | `windows-2025-16-core` |
+| Windows Server 2025 with Visual Studio 2026 | 8 Core | **Windows 8-core** | `windows-2025-vs2026-8-core` |
+| Windows Server 2025 with Visual Studio 2026 | 16 Core | **Windows 16-core** | `windows-2025-vs2026-16-core` |
 
 * * *
 
@@ -185,7 +265,7 @@ GitHub-hosted agents:
 |---|---|---|---|
 | **Billing** | Parallel jobs (concurrency-based) | Per-minute (pay-as-you-go) | Your own infrastructure |
 | **Free tier** | Yes (limited) | No | N/A |
-| **Machine sizes** | Standard (2 vCPU, 7 GB RAM) | Various (larger than Microsoft-hosted) | Custom |
+| **Machine sizes** | Standard | Various (larger than Microsoft-hosted) | Custom |
 | **Maintenance** | Automatic | Automatic | Manual |
 | **Custom software** | Install during pipeline run | Install during pipeline run | Preinstalled |
 | **Corporate network** | No direct access | No direct access | Direct access |
