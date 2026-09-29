@@ -2,7 +2,7 @@
 title: Microsoft-hosted agents for Azure Pipelines
 description: Learn about using the Microsoft-hosted agents provided in Azure Pipelines
 ms.topic: concept-article
-ms.date: 09/09/2026
+ms.date: 09/29/2026
 monikerRange: '<= azure-devops'
 ---
 
@@ -32,18 +32,18 @@ You can see the installed software for each Windows hosted agent image by choosi
 
 | Image | Classic Editor Agent Specification | YAML VM Image Label | Included software |
 | --- | --- | --- | --- |
-| Windows Server 2025 with Visual Studio 2026 (public preview) | *windows-2025-vs2026* | `windows-2025-vs2026` | [Link](https://github.com/actions/runner-images/blob/main/images/windows/Windows2025-VS2026-Readme.md) |
+| Windows Server 2025 with Visual Studio 2026 | *windows-2025-vs2026* | `windows-2025-vs2026` | [Link](https://github.com/actions/runner-images/blob/main/images/windows/Windows2025-VS2026-Readme.md) |
 | Windows Server 2025 with Visual Studio 2022 | *windows-2025* | `windows-latest` OR `windows-2025` | [Link](https://github.com/actions/runner-images/blob/main/images/windows/Windows2025-Readme.md) |
 | Windows Server 2022 with Visual Studio 2022 | *windows-2022* | `windows-2022` | [Link](https://aka.ms/windows-2022-readme) |
 
-#### Windows Server 2025 with Visual Studio 2026 in public preview
+#### Windows Server 2025 with Visual Studio 2026
 
-> [!IMPORTANT]
-> A new Windows runner image with Visual Studio 2026 is now available in public preview. This dedicated image runs alongside the current windows-2025 image, providing a safe validation path ahead of the default Windows image migration. Visual Studio 2026 will be integrated into the windows-2025 image when it reaches general availability. During the preview, you can opt into using the new image by specifying `windows-2025-vs2026` in your pipeline configuration.
+> [!NOTE]
+> The Windows Server 2025 with Visual Studio 2026 image is generally available. This dedicated image runs alongside the Windows Server 2025 with Visual Studio 2022 image. To use the Visual Studio 2026 image, specify `windows-2025-vs2026` in your pipeline configuration.
 
 #### Windows image updates
 
-* Windows Server 2025 with Visual Studio 2026 is now available in public preview starting March 9, 2026. 
+* The Windows Server 2025 with Visual Studio 2026 hosted agent image became generally available on September 29, 2026.
 * The Windows Server 2019 hosted agent image was retired on December 31, 2025.
 * [[Windows & Ubuntu] .NET 6 was removed from the images on August 1, 2025.](https://github.com/actions/runner-images/issues/12241)
 
@@ -53,7 +53,7 @@ You can see the installed software for each Linux hosted agent image by choosing
 
 | Image | Classic Editor Agent Specification | YAML VM Image Label | Included software |
 | --- | --- | --- | --- |
-| Ubuntu 26.04<br>*(public preview)* | *ubuntu-26.04* | `ubuntu-26.04` | [Link](https://github.com/actions/runner-images/blob/main/images/ubuntu/Ubuntu2604-Readme.md) |
+| Ubuntu 26.04 | *ubuntu-26.04* | `ubuntu-26.04` | [Link](https://github.com/actions/runner-images/blob/main/images/ubuntu/Ubuntu2604-Readme.md) |
 | Ubuntu 24.04 | *ubuntu-24.04* | `ubuntu-latest` OR `ubuntu-24.04` | [Link](https://github.com/actions/runner-images/blob/main/images/ubuntu/Ubuntu2404-Readme.md) |
 | Ubuntu 22.04 | *ubuntu-22.04* | `ubuntu-22.04` | [Link](https://aka.ms/ubuntu-22.04-readme) |
 
@@ -61,7 +61,7 @@ The `ubuntu-latest` image is the default image for YAML pipelines if no image is
 
 #### Linux images updates
 
-* The Ubuntu 26.04 hosted agent image is in public preview. Specify `ubuntu-26.04` in your pipeline configuration to use it.
+* The Ubuntu 26.04 hosted agent image became generally available on September 29, 2026. Specify `ubuntu-26.04` in your pipeline configuration to use it.
 * [[Windows & Ubuntu] .NET 6 was removed from the images on August 1, 2025.](https://github.com/actions/runner-images/issues/12241)
 * [The Ubuntu 20.04 image is retired](https://devblogs.microsoft.com/devops/upcoming-updates-for-azure-pipelines-agents-images/#ubuntu).
 
