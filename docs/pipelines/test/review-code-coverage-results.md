@@ -125,6 +125,13 @@ Code coverage status posted from a pipeline follows the naming convention `{name
 
 ## Troubleshooting guide
 
+### Code coverage attachment size limit
+Azure Pipelines limits the total size of code coverage attachments for an individual pipeline build to 10 GB.  
+If the code coverage attachments exceed this limit, Azure Pipelines doesn't process the coverage data for that build. As a result, code coverage results might not appear in the Code Coverage tab or be available for coverage reporting and policy evaluation.  
+To reduce the size of code coverage attachments:
+- Configure your coverage producer to generate only the coverage data required for the build.
+- Remove duplicate or unnecessary coverage files before publishing.
+
 ### Why do I see duplicate DLLs in the coverage view of the Code Coverage tab?
 
 You might see duplicate DLLs when both .NET Core and .NET Framework are used in the pipeline. Expect duplicate DLLs when both are used, which is by design since the same module comes from different paths.
