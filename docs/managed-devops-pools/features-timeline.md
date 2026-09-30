@@ -12,11 +12,9 @@ ms.topic: overview
 
 The following section describes new features in development for Managed DevOps Pools.
 
-* **Purge agents**: We're adding the ability for you to manually recycle your agents if desired. **Planned for October 2026.**
+* **Purge agents**: We're adding the ability for you to manually recycle your agents if desired. **Late 2026.**
 
-* **Spot Virtual Machines instances**: Reduce your Azure cost [by up to 90%](/azure/architecture/guide/spot/spot-eviction#understand-spot-vm-pricing) by switching your non-time-critical pipelines to Spot Virtual Machines. CI/CD workloads make ideal candidates to use Spot Virtual Machines due to the ephemeral nature of CI/CD agents. For more information on Spot Virtual Machines, see [Spot Virtual Machines overview](https://azure.microsoft.com/products/virtual-machines/spot). **Planned for Late 2026.**
-
-* **Container agents**: We're adding support for provisioning a container and starting the agent inside the container. **Planned for late 2026.**
+* **Spot Virtual Machines instances**: Reduce your Azure cost [by up to 90%](/azure/architecture/guide/spot/spot-eviction#understand-spot-vm-pricing) by switching your non-time-critical pipelines to Spot Virtual Machines. CI/CD workloads make ideal candidates to use Spot Virtual Machines due to the ephemeral nature of CI/CD agents. For more information on Spot Virtual Machines, see [Spot Virtual Machines overview](https://azure.microsoft.com/products/virtual-machines/spot). **To be determined.**
 
 ## September 2026
 
