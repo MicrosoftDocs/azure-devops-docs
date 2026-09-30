@@ -9,7 +9,7 @@ ms.custom: cross-service
 ms.author: laurajiang
 author: laurajjiang
 monikerRange: 'azure-devops'
-ms.date: 09/28/2026
+ms.date: 09/30/2026
 ---
 
 # Set up dependency scanning 
@@ -34,7 +34,7 @@ For every vulnerable component detected in use, the component and vulnerability 
 
 The build log also contains basic information about each detected vulnerability. These details include the severity, the affected component, the title of the vulnerability, and the associated CVE.  
 
-![Screenshot of a dependency scanning build output](./media/dependency-scanning-build-log.png)  
+:::image type="content" source="./media/dependency-scanning-build-log.png" alt-text="Screenshot of a dependency scanning build output." lightbox="./media/dependency-scanning-build-log.png":::
 
 > [!NOTE]
 > Dependency scanning requires running a pipeline configured with the `AdvancedSecurity-Dependency-Scanning@1` task or running a pipeline in a repository with dependency scanning default setup enabled.
@@ -44,18 +44,42 @@ For a list of supported component ecosystems and versions, see [Supported packag
 
 ### Learn about dependency scanning alerts 
 
-The Advanced Security tab in Repos in Azure DevOps is the hub to view your security alerts, which by default shows dependency scanning alerts. You can filter by branch, pipeline, package, and severity. You can select into an alert for more details, including remediation guidance. At this time, the alerts hub doesn't display alerts for scanning completed on PR branches.
+The Advanced Security tab in Repos in Azure DevOps is the hub to view your security alerts, which by default shows dependency scanning alerts. You can filter by branch, pipeline, package, severity, dependency scope, and Exploit Prediction Scoring System (EPSS) percentile. You can select into an alert for more details, including remediation guidance. At this time, the alerts hub doesn't display alerts for scanning completed on PR branches.
 
 When a vulnerable package is detected in your repository, fixing dependency scanning alerts typically involves upgrading to a higher package version or removing an offending package. This advice holds true for both direct and transitive (or indirect) dependencies. The default view in your Advanced Security tab is active alerts for the default branch for your repository.
 
 There's no effect to results if pipelines or branches are renamed - it might take up to 24 hours before the new name is displayed.
 
-![Screenshot of dependency scanning alert view for a repository](./media/dependency-scanning-alerts.png)
+:::image type="content" source="./media/dependency-scanning-alerts.png" alt-text="Screenshot of the dependency scanning alerts page with the Scope and EPSS percentile filters." lightbox="./media/dependency-scanning-alerts.png":::
 
+#### Prioritize alerts by dependency scope
+
+Dependency scope indicates whether a vulnerable dependency is used at runtime or only during development. On the **Alerts** page, use the single-select **Scope** filter to show **Runtime** or **Development** dependency alerts.
+
+Development-only dependencies display a **Development** badge in the alert list. Alert details also display the dependency scope when the scanning result includes this metadata. If scope metadata is unavailable, Advanced Security omits the badge and scope detail without changing the alert's other behavior.
+
+Scope applies to the specific dependency result, not to the package globally. The same package can have a different scope when it's detected in another dependency path or project.
+
+#### Prioritize alerts with EPSS
+
+The [Exploit Prediction Scoring System (EPSS)](https://www.first.org/epss/) estimates the likelihood that a software vulnerability will be exploited in the wild. EPSS provides a score and percentile; Advanced Security displays the percentile for dependency scanning alerts. A higher percentile indicates that the vulnerability ranks higher for predicted exploitation likelihood relative to other scored vulnerabilities.
+
+Use EPSS percentile together with severity when you prioritize remediation. Severity reflects the potential impact of a vulnerability, while EPSS helps you assess how likely exploitation is. On the **Alerts** page, use the **EPSS percentile** filter to specify a percentile range and focus on dependency alerts that meet the range. The range boundaries are inclusive and combine with any other filters you apply.
+
+The **EPSS percentile** filter groups vulnerabilities into the following categories:
+
+| EPSS percentile | Category |
+|---|---|
+| 90-100% | Very high |
+| 70-90% | High |
+| 50-70% | Medium |
+| 0-50% | Low |
+
+EPSS data isn't available for every advisory. When an alert doesn't have EPSS metadata, Advanced Security doesn't display the EPSS percentile in the alert details. The missing metadata doesn't affect the alert's severity, state, or remediation guidance.
 
 An alert’s state is automatically updated to `Closed` when the vulnerable component is no longer detected in the latest build for any pipelines where the dependency scanning task is installed. To view your resolved alerts, utilize the `State` filter in the main toolbar and select `Closed`.
 
-![Screenshot of viewing closed dependency scanning alerts](./media/dependency-scanning-alerts-closed.png)
+:::image type="content" source="./media/dependency-scanning-alerts-closed.png" alt-text="Screenshot of viewing closed dependency scanning alerts." lightbox="./media/dependency-scanning-alerts-closed.png":::
 
 If you turn off Advanced Security for your repository, you lose access to the results in the Advanced Security tab and build task. The build task doesn't fail, but any results from builds run with the task while Advanced Security is disabled are hidden and not retained. 
 
@@ -63,10 +87,12 @@ If you turn off Advanced Security for your repository, you lose access to the re
 
 You can also drill into details about an alert by clicking into a specific alert, and remediation guidance. 
 
-![Screenshot showing details for a dependency scanning alert](./media/dependency-scanning-detail.png)
+:::image type="content" source="./media/dependency-scanning-detail.png" alt-text="Screenshot of EPSS percentile threat information in a dependency scanning alert." lightbox="./media/dependency-scanning-detail.png":::
 
 | Section  | Explanation  |
 |---|---|
+| Scope | The scope indicates whether the vulnerable dependency is used at runtime or only during development. This information appears only when dependency scope metadata is available for the result. |
+| EPSS percentile | The EPSS percentile indicates how the vulnerability ranks for predicted exploitation likelihood relative to other scored vulnerabilities. This row appears only when EPSS metadata is available for the advisory. |
 | Recommendation | The recommendation text comes directly from our vulnerability data provider, the GitHub Advisory Database. Typically, the guidance suggests upgrading the identified component to a nonvulnerable version. |
 | Location | The **Locations** section details the paths where the dependency scanning task discovers the vulnerable component in use. If the file can be resolved from the underlying build scan to a committed file in source, the Locations card appears as a clickable link. If a file was produced as part of a build (for example, a build artifact), the link isn't clickable. Review the build logs to better understand how the component was brought into the build. |
 | Description | The description is provided by the GitHub Advisory description. |
@@ -75,12 +101,12 @@ You can also drill into details about an alert by clicking into a specific alert
 
 The pipelines listed under the **Detections** tab are the pipelines where the vulnerable component was found. Each row details the latest build of the affected pipeline and the date when the package was first introduced. If the vulnerable package is fixed in some pipelines but not all, you see partially fixed rows.   
 
-![Screenshot of dependency scanning detections view for an alert without a fix](./media/dependency-scanning-detections-no-fix.png)
+:::image type="content" source="./media/dependency-scanning-detections-no-fix.png" alt-text="Screenshot of the dependency scanning detections view for an alert without a fix." lightbox="./media/dependency-scanning-detections-no-fix.png":::
 
 
 Once an alert gets resolved, the alert automatically moves to the `Closed` state and the latest run pipeline under the Detections tab displays a green checkmark, meaning that code containing the updated component was run in that pipeline: 
 
-![Screenshot of dependency scanning detections view for an alert](./media/dependency-scanning-detections.png)
+:::image type="content" source="./media/dependency-scanning-detections.png" alt-text="Screenshot of the dependency scanning detections view for an alert." lightbox="./media/dependency-scanning-detections.png":::
 
 #### Severity 
 
@@ -456,7 +482,7 @@ To dismiss an alert, do the following steps:
 5. Select **Close** to submit and close the alert. 
 6. The alert state changes from **Open** to **Closed** and displays your dismissal reason.
 
-   ![Screenshot showing how to dismiss a dependency scanning alert](./media/dependency-scanning-dismiss-alert.png)
+   :::image type="content" source="./media/dependency-scanning-dismiss-alert.png" alt-text="Screenshot showing how to dismiss a dependency scanning alert." lightbox="./media/dependency-scanning-dismiss-alert.png":::
 
 This action dismisses the alert across all branches. Other branches that contain the same vulnerability will also be dismissed. Any alert previously dismissed can be manually reopened. 
 
