@@ -8,7 +8,7 @@ ms.topic: how-to
 ms.author: laurajiang
 author: laurajjiang
 monikerRange: 'azure-devops'
-ms.date: 02/24/2026
+ms.date: 10/01/2026
 ms.custom: cross-service, sfi-image-nochange, pat-reduction
 ai-usage: ai-assisted
 # customer-intent: As a project administrator, I want to configure permissions and authentication for GitHub Advanced Security so I can control access to security alerts and enable secure API access for my development team.
@@ -31,7 +31,7 @@ Advanced Security introduces three specialized permissions that control access t
 
 | Permission | Description | Use cases |
 |------------|-------------|-----------|
-| **Advanced Security: Read alerts** | View security alerts, vulnerabilities, and scan results | Security analysts, developers reviewing code |
+| **Advanced Security: view alerts** | View security alerts, vulnerabilities, and scan results | Security analysts, developers reviewing code |
 | **Advanced Security: Manage and dismiss alerts** | Dismiss false positives, manage alert lifecycle | Security engineers, lead developers |
 | **Advanced Security: Manage settings** | Enable/disable Advanced Security features (billable action) | Project administrators, security managers |
 
@@ -39,9 +39,9 @@ Advanced Security introduces three specialized permissions that control access t
 
 | Azure DevOps group  | Default permissions |
 | ----------- | ----------- |
-| **Contributors** | Advanced Security: Read alerts |
-| **Project administrator** | Advanced Security: Read alerts, manage, and dismiss alerts |
-| **Project collection administrator** | Advanced Security: Read alerts, manage and dismiss alerts, manage settings |
+| **Contributors** | Advanced Security: view alerts |
+| **Project administrator** | Advanced Security: view alerts, manage, and dismiss alerts |
+| **Project collection administrator** | Advanced Security: view alerts, manage and dismiss alerts, manage settings |
 
 > [!NOTE]
 > Only users with "Manage settings" permission can enable Advanced Security features, which might incur billing charges. Use caution when granting this permission.
