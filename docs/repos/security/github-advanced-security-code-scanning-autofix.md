@@ -145,7 +145,7 @@ After you merge the pull request, run CodeQL on the merged target branch and upl
 
 ## Troubleshoot Copilot Autofix
 
-### A fix remains in progress
+### Fix in progress
 
 The time required to generate a fix varies based on the available pipeline capacity and the complexity of the change. If all parallel jobs are in use, the pipeline remains queued and the alert continues to show **Fix in progress** until capacity becomes available.
 
@@ -156,7 +156,7 @@ A request that remains pending before a pipeline is queued fails after 30 minute
 1. Wait for the request to reach a succeeded or failed state. Don't submit another request while the existing request is active.
 1. If the request fails, review the failure message and select **Retry fix** after you address the cause.
 
-### A pull request was created but isn't linked to the alert
+### Pull request created but not linked to the alert
 
 The pull request can be created successfully before it appears under **Related pull requests**. Refresh the alert detail page. If the pull request still isn't linked, select **Repos** > **Pull requests** and look for:
 
