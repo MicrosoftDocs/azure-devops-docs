@@ -8,7 +8,7 @@ ms.topic: how-to
 ms.author: laurajiang
 author: laurajjiang
 monikerRange: 'azure-devops'
-ms.date: 08/14/2026
+ms.date: 10/01/2026
 ms.custom: cross-service
 ---
 
@@ -29,6 +29,23 @@ Copilot Autofix is an AI-powered feature of GitHub Advanced Security for Azure D
 
 - [Code scanning](github-advanced-security-code-scanning.md) configured for your repository, using either default setup or advanced setup.
 - At least one CodeQL code scanning alert.
+- The **Advanced Security: view alerts** repository permission for the user who selects **Generate fix**.
+- Access to the **Azure Pipelines** agent pool. Copilot Autofix queues a Microsoft-hosted pipeline job to generate and publish the fix. The run requires an available parallel job. If all parallel jobs are in use, the fix remains queued until capacity becomes available.
+
+Copilot Autofix performs repository operations by using a dedicated identity named `GitHub Copilot ({organization})`, not a project or collection Build Service account. The service automatically grants the identity the following permissions:
+
+| Operation | Permission |
+| --- | --- |
+| Access the project | View project-level information |
+| Clone the repository | Read |
+| Create and push the fix branch | Contribute and Create branch |
+| Create and update the pull request | Contribute to pull requests |
+| Read the code scanning alert | Advanced Security: view alerts |
+| Add pull request discussions | Read and contribute to pull request discussions |
+| Update the pipeline run | Update build information |
+| Label the pull request | Create the **Copilot Autofix** label |
+
+You don't need to grant these permissions to a Build Service account. If your organization uses explicit deny permissions, verify that they don't block the `GitHub Copilot ({organization})` identity.
 
 ## About Copilot Autofix
 
@@ -100,6 +117,8 @@ While Copilot Autofix works on the fix, the alert detail view shows that the fix
 
 Copilot Autofix generates the fix and opens a pull request from a branch named `copilot-autofix/...`. The pull request is labeled with a **Copilot Autofix** tag, which you can use to identify Autofix pull requests in the pull requests list.
 
+Only one fix can be active for the same alert and branch. While a request is pending or its pipeline is running, **Generate fix** is unavailable. If another request is submitted at the same time, the alert shows that a fix is already being generated. You can generate another fix after the active request succeeds or fails.
+
 For CodeQL alerts, the pull request appears automatically under **Related pull requests** on the alert detail view and continues to update as generation and completion progress, so you don't need to refresh the page.
 
 :::image type="content" source="media/github-advanced-security-code-scanning-autofix/autofix-related-pull-request.png" lightbox="media/github-advanced-security-code-scanning-autofix/autofix-related-pull-request.png" alt-text="Screenshot of code scanning alert detail view showing an active Autofix pull request under Related pull requests.":::
@@ -119,12 +138,49 @@ The **Copilot Autofix** label identifies autofix pull requests.
 1. Edit the change if you need to match your code style, naming conventions, or project requirements.
 1. Approve and complete the pull request through your normal review workflow.
 
-After the pull request merges and the next code scanning run completes, the alert closes automatically if the fix removes the underlying vulnerability.
+After you merge the pull request, run CodeQL on the merged target branch and upload the new SARIF results. Copilot Autofix doesn't run this post-merge scan. The alert closes automatically after the updated analysis no longer reports the vulnerability.
 
 > [!TIP]
 > A generated fix is a starting point, not a final answer. Treat the pull request like any other change: review it, test it, and request additional reviewers as needed before you merge.
 
 ## Troubleshoot Copilot Autofix
+
+### A fix remains in progress
+
+The time required to generate a fix varies based on the available pipeline capacity and the complexity of the change. If all parallel jobs are in use, the pipeline remains queued and the alert continues to show **Fix in progress** until capacity becomes available.
+
+A request that remains pending before a pipeline is queued fails after 30 minutes. A queued or running pipeline has a two-hour timeout. The alert might stop updating automatically before the backend timeout is reached. If the alert remains in progress:
+
+1. Refresh the alert detail page.
+1. If **View run** is available, open the pipeline run and check whether it's queued or running.
+1. Wait for the request to reach a succeeded or failed state. Don't submit another request while the existing request is active.
+1. If the request fails, review the failure message and select **Retry fix** after you address the cause.
+
+### A pull request was created but isn't linked to the alert
+
+The pull request can be created successfully before it appears under **Related pull requests**. Refresh the alert detail page. If the pull request still isn't linked, select **Repos** > **Pull requests** and look for:
+
+- The **Copilot Autofix** label.
+- A source branch that begins with `copilot-autofix/`.
+- A pull request title that references the code scanning alert.
+
+Review and merge the pull request through the normal pull request workflow, even if the link doesn't appear on the alert.
+
+### Repository or pull request operations fail
+
+Copilot Autofix performs a shallow clone of the branch associated with the alert. It doesn't initialize Git submodules. It creates a uniquely named `copilot-autofix/...` branch, pushes the generated change, and opens a pull request that targets the alert branch.
+
+Use **View run** from the alert failure state to inspect the pipeline logs. The following table lists common causes and actions:
+
+| Failure | What to check |
+| --- | --- |
+| The repository or branch can't be cloned | Verify that the repository and alert branch still exist. For an alert found in a pull request, the source branch and pull request must still be active. If the branch was deleted, run CodeQL on the current branch and generate a fix from the resulting alert. |
+| The fix depends on code in a Git submodule | Copilot Autofix doesn't initialize submodules. Remediate the alert manually if the required code context is stored in a submodule. |
+| The default branch changed or the alert branch was deleted | Copilot Autofix targets the branch associated with the alert, which isn't necessarily the current default branch. Run CodeQL on the intended branch and generate a fix from that branch's alert. |
+| A fix branch can't be created | Check repository branch-name restrictions and explicit deny permissions for the `GitHub Copilot ({organization})` identity. Allow branches with the `copilot-autofix/` prefix. A retry creates a new uniquely named branch. |
+| A branch policy blocks the change | Pull request completion policies apply to the Autofix pull request like any other pull request. Satisfy the required reviewers and validation policies before you complete it. If a repository policy blocks the initial push, update the policy to allow the Autofix identity and branch prefix. |
+| The generated commit can't be pushed | Check the **Contribute** and **Create branch** permissions for the `GitHub Copilot ({organization})` identity, including explicit denies. Also check commit author email validation as described in [A fix was generated but couldn't be committed or pushed](#a-fix-was-generated-but-couldnt-be-committed-or-pushed). |
+| The pull request can't be created | Check the **Contribute to pull requests** permission and permission to create the **Copilot Autofix** label for the `GitHub Copilot ({organization})` identity. |
 
 ### A fix was generated but couldn't be committed or pushed
 
@@ -152,6 +208,16 @@ If a Copilot Autofix run can't complete, the alert shows a prominent failure sta
 :::image type="content" source="media/github-advanced-security-code-scanning-autofix/autofix-run-failure-state.png" lightbox="media/github-advanced-security-code-scanning-autofix/autofix-run-failure-state.png" alt-text="Screenshot of a code scanning alert showing a Copilot Autofix run in a failed state with the option to retry the run.":::
 
 A run can fail for transient reasons, or when the run doesn't produce a usable code change. Retry the run to generate the fix again.
+
+### An alert remains open after you merge the fix
+
+Merging an Autofix pull request doesn't close the alert until a later CodeQL analysis processes the merged code. If the alert remains open:
+
+1. Verify that the pull request was merged into the same branch where the alert was detected.
+1. Confirm that a CodeQL scan ran after the merge and analyzed the merged commit.
+1. Confirm that the scan successfully uploaded SARIF results for the correct repository and branch.
+1. Review the new results to verify that the vulnerability is no longer detected.
+1. If the vulnerability is still present, update the fix and run CodeQL again.
 
 ### Fix isn't available
 
