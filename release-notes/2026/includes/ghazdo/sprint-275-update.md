@@ -26,7 +26,7 @@ To get started, see [Configure code scanning](/azure/devops/repos/security/confi
 
 Advanced Security status checks for pull requests are now generally available. Use the configurable `AdvancedSecurity/NewHighAndCritical` and `AdvancedSecurity/AllHighAndCritical` branch policies to block pull request completion when high or critical severity alerts are detected, helping your team prevent new vulnerabilities from reaching protected branches.
 
-For more information, see [Configure status checks as branch policies](/azure/devops/repos/security/configure-github-advanced-security-features?view=azure-devops#configure-status-checks-as-branch-policies).
+For more information, see [Configure status checks as branch policies](/azure/devops/repos/security/configure-github-advanced-security-features?view=azure-devops#configure-status-checks-as-branch-policies&preserve-view=true).
 
 ### Build identity access to view alerts is being removed
 
