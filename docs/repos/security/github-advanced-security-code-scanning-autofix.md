@@ -147,7 +147,7 @@ After you merge the pull request, run CodeQL on the merged target branch and upl
 
 ### Fix in progress
 
-The time required to generate a fix varies based on the available pipeline capacity and the complexity of the change. If all parallel jobs are in use, the pipeline remains queued and the alert continues to show **Fix in progress** until capacity becomes available.
+Most Copilot Autofix runs complete in about 2-5 minutes. Run time can vary based on the available pipeline capacity and the complexity of the change. If all parallel jobs are in use, the pipeline remains queued and the alert continues to show **Fix in progress** until capacity becomes available.
 
 A request that remains pending before a pipeline is queued fails after 30 minutes. A queued or running pipeline has a two-hour timeout. The alert might stop updating automatically before the backend timeout is reached. If the alert remains in progress:
 
