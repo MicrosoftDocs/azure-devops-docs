@@ -5,7 +5,7 @@ ms.service: azure-devops-pipelines
 ms.topic: troubleshooting
 ms.author: chcomley
 author: chcomley
-ms.date: 08/12/2026
+ms.date: 10/02/2026
 ai-usage: ai-assisted
 monikerRange: '<= azure-devops'
 ---
@@ -55,7 +55,7 @@ To prevent untrusted transform files from loading and running arbitrary code on 
 
 ### Resolution
 
-Use the built-in XDT transforms, or apply any custom transforms before the pipeline consumes the package (for example, in an earlier step that you control). If you understand the risk and must temporarily restore the previous behavior, set the pipeline variable `AZP_ALLOW_UNSAFE_XDT_TRANSFORMS` to `true`. This change reenables loading the assemblies that the transform file references and isn't recommended.
+Use the built-in XDT transforms, or apply any custom transforms before the pipeline consumes the package (for example, in an earlier step that you control).
 
 ## "ECONNRESET" during deployment
 
