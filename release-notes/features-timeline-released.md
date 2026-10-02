@@ -2,7 +2,7 @@
 title: Azure DevOps Released Features
 author: gloridelmorales
 ms.author: glmorale
-ms.date: 9/4/2026
+ms.date: 9/24/2026
 ms.topic: release-notes
 ms.service: azure-devops
 ms.subservice: azure-devops-release-notes
@@ -37,6 +37,13 @@ You can also [view the build numbers for each version](#azure-devops-server-buil
             <th>Server</th>
         </tr>
     </thead>
+<tr>
+    <td rowspan="5"><a href="2026/sprint-280-update.md" data-raw-source="[October 2 2026](2026/sprint-280-update.md)">October 2 2026</a></td>
+    <td>Copilot Autofix now uses an agentic foundation and repository context</td><td>GitHub Advanced Security for Azure DevOps</td><td>N/A</td></tr>
+    <td>Prioritize dependency alerts with EPSS data</td><td>GitHub Advanced Security for Azure DevOps</td><td>N/A</td></tr>
+    <td>Effort level configuration for Copilot code reviews (public preview)</td><td>Repos</td><td>N/A</td></tr>
+    <td>Reliability improvements for pull request status checks</td><td>Repos</td><td>Future</td></tr>
+    <td>Code coverage supports multi-target framework projects</td><td>Test Plans</td><td>Future</td></tr>
 <tr>
     <td rowspan="12"><a href="2026/sprint-279-update.md" data-raw-source="[September 4 2026](2026/sprint-279-update.md)">September 4 2026</a></td>
     <td>Remote MCP Server handling rate limits</td><td>General</td><td>N/A</td></tr>
