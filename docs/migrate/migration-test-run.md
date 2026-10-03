@@ -102,13 +102,13 @@ Review the *TryMatchOobProcesses.log* file only if you're trying to migration yo
 The Data Migration Tool validated the collection and it's returning a result of "All collection validations passed." Before you take a collection offline to migrate it, generate the migration files. When you run the `prepare` command, you generate two migration files: 
 
 - *IdentityMapLog.csv*: Outlines your identity map between Active Directory and Microsoft Entra ID.
-- *migration.json*: Requires you to fill out the migration specification you want to use to kick off your migration. 
+- *import.json*: Requires you to fill out the migration specification you want to use to kick off your migration. 
 
 ### Prepare command
 
 The `prepare` command assists with generating the required migration files. Essentially, this command scans the collection to find a list of all users to populate the identity map log, *IdentityMapLog.csv*, and then tries to connect to Microsoft Entra ID to find each identity's match. To do so, your company needs to use the [Microsoft Entra Connect tool](/azure/active-directory/connect/active-directory-aadconnect) (formerly known as the Directory Synchronization tool, Directory Sync tool, or DirSync.exe tool). 
 
-If directory synchronization is set up, the Data Migration Tool should find the matching identities and mark them as *Active*. If there are no matches, the identity is marked as *Historical* in the identity map log, so you must investigate why the user isn't included in your directory sync. The migration specification file, *migration.json*, should be populated before the migration. 
+If directory synchronization is set up, the Data Migration Tool should find the matching identities and mark them as *Active*. If there are no matches, the identity is marked as *Historical* in the identity map log, so you must investigate why the user isn't included in your directory sync. The migration specification file, *import.json*, should be populated before the migration. 
 
 Unlike the `validate` command, `prepare` *does* require an internet connection, because it needs to connect to Microsoft Entra ID to populate the identity map log file. If your Azure DevOps Server instance doesn't have internet access, run the tool from a machine that does. As long as you can find a machine with an intranet connection to your Azure DevOps Server instance and an internet connection, you can run this command. For help with the `prepare` command, run the following command:
 
@@ -141,18 +141,18 @@ Shortly after the command starts running, a Microsoft Entra sign-in window displ
 
 When you run the `prepare` command successfully in the Data Migration Tool, the results window displays a set of logs and two migration files. In the log directory, find a logs folder and two files: 
 
-* *migration.json* is the migration specification file. We recommend that you take time to fill it out.
+* *import.json* is the migration specification file. We recommend that you take time to fill it out.
 * *IdentityMapLog.csv* contains the generated mapping of Active Directory to Microsoft Entra identities. Review it for completeness before you kick off a migration.
 
 The two files are described in greater detail in the next sections.
 
 ### The migration specification file
 
-The migration specification, *migration.json*, is a JSON file that provides migration settings. It includes the desired organization name, storage account information, and other information. Most of the fields are autopopulated, and some fields require your input before you attempt a migration.
+The migration specification, *import.json*, is a JSON file that provides migration settings. It includes the desired organization name, storage account information, and other information. Most of the fields are autopopulated, and some fields require your input before you attempt a migration.
 
 ![Screenshot of a newly generated migration specification file.](media/migration-import/importSpecHalfFilledOut.png)
 
-The *migration.json* file's displayed fields and required actions are described in the following table:
+The *import.json* file's displayed fields and required actions are described in the following table:
 
 | Field | Description | Required action |
 | --- | --- | --- |
@@ -409,9 +409,9 @@ You can generate SAS tokens [using the Azure portal](/azure/storage/blobs/blob-c
 
 ### Step 5: Complete the migration specification
 
-Earlier in the process you partially filled out the migration specification file, known as *migration.json*. At this point, you have enough information to complete all the remaining fields except for the migration type. The migration type is covered later, in the migration section. 
+Earlier in the process you partially filled out the migration specification file, known as *import.json*. At this point, you have enough information to complete all the remaining fields except for the migration type. The migration type is covered later, in the migration section. 
 
-In the *migration.json* specification file, under **Source**, complete the following fields.
+In the *import.json* specification file, under **Source**, complete the following fields.
 
 * **Location**: Paste the SAS key you generated from the script and then copied in the preceding step.
 * **Dacpac**: Ensure that the file, including the *.dacpac* file extension, has the same name as the DACPAC file you uploaded to the storage account. 
@@ -496,7 +496,7 @@ Migrator import /importFile:{location of migration specification file}
 The following example shows a completed import command:
 
 ```cmdline
-Migrator import /importFile:C:\DataMigrationToolFiles\migration.json
+Migrator import /importFile:C:\DataMigrationToolFiles\import.json
 ```
 
 After the validation passes, sign in to Microsoft Entra ID with an identity that's a member of the same Microsoft Entra tenant as the identity map log file was built against. The signed in user is the owner of the imported organization. 
