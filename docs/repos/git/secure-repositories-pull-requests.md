@@ -162,7 +162,7 @@ Good candidates include:
 1. Add the required people or groups.
 1. Choose whether the policy is **Required** or **Optional**.
 1. Add path filters for the files or folders that require their review.
-1. Disalow requestors to approve their own changes.
+1. Disallow requestors to approve their own changes.
 
 #### [Azure DevOps CLI](#tab/azure-devops-cli)
 

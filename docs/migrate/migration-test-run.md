@@ -95,7 +95,7 @@ The main log file is named *DataMigrationTool.log*. It contains details about ev
 
 For example, if TfsMigrator reports an error in the "Validating Project Processes" step, you can open the *ProjectProcessMap.log* file to view everything that was run for that step instead of having to scroll through the entire log. 
 
-Review the *TryMatchOobProcesses.log* file only if you're trying to migration your project processes to use the inherited model. If you don't want to use the inherited model, you can ignore these errors, because they don't prevent you from importing to Azure DevOps Services. For more information, see the [Validate phase of migration](migration-validate.md). 
+Review the *TryMatchOobProcesses.log* file only if you're trying to migrate your project processes to use the inherited model. If you don't want to use the inherited model, you can ignore these errors, because they don't prevent you from importing to Azure DevOps Services. For more information, see the [Validate phase of migration](migration-validate.md). 
 
 ## Generate migration files
 
@@ -160,7 +160,7 @@ The *migration.json* file's displayed fields and required actions are described 
 | Location | The shared access signature key to the Azure storage account that hosts the data-tier application package (DACPAC). | No action required. This field is covered in a later step. |
 | Files | The names of the files containing migration data. | No action required. Review information for the subfield actions to follow. |
 | DACPAC | A DACPAC file that packages the collection database to be used to bring in the data during the migration. | No action required. In a later step, you create this file by using your collection and then upload it to an Azure storage account. Update the file based on the name you use when you generate it later in this process. |
-| Target | Properties of the new organization to migration into. | No action required. Review information for the subfield actions to follow. |
+| Target | Properties of the new organization to migrate into. | No action required. Review information for the subfield actions to follow. |
 | Name | The name of the organization to be created during the migration. | Provide a name. The name can be quickly changed later after the migration completed.<br>**NOTE**: *Don't* create an organization with this name before you run the migration. The organization is created as part of the migration process. |
 | ImportType | The type of migration that you want to run. | No action required. In a later step, select the type of migration to run. |
 | Validation Data | Information needed to help drive your migration experience. | The Data Migration Tool generates the "ValidationData" section. It contains information to help drive your migration experience. Don't* edit the values in this section, or your migration could fail to start. |
@@ -258,7 +258,7 @@ If Microsoft Entra Connect isn't configured, all users in the identity map log f
 
 Running a migration with all historical identities has consequences that need to be considered carefully. Only teams with a few users and for which the cost of setting up Microsoft Entra Connect is deemed too high should consider. 
 
-To migration all identities as historical, follow the steps outlined in later sections. When you queue a migration, the identity used to queue the migration is bootstrapped into the organization as the organization owner. All other users are imported as historical. Organization owners can then [add the users back in](../organizations/accounts/add-organization-users.md?toc=/azure/devops/organizations/accounts/toc.json&bc=/azure/devops/organizations/accounts/breadcrumb/toc.json) by using their Microsoft Entra identity. The added users are treated as new users. They don't own any of their history, and there's no way to reparent this history to the Microsoft Entra identity. However, users can still look up their premigration history by searching for their `\<domain>\<Active Directory username>`.
+To migrate all identities as historical, follow the steps outlined in later sections. When you queue a migration, the identity used to queue the migration is bootstrapped into the organization as the organization owner. All other users are imported as historical. Organization owners can then [add the users back in](../organizations/accounts/add-organization-users.md?toc=/azure/devops/organizations/accounts/toc.json&bc=/azure/devops/organizations/accounts/breadcrumb/toc.json) by using their Microsoft Entra identity. The added users are treated as new users. They don't own any of their history, and there's no way to reparent this history to the Microsoft Entra identity. However, users can still look up their premigration history by searching for their `\<domain>\<Active Directory username>`.
 
 The Data Migration Tool displays a warning if it detects the complete historical identities scenario. If you decide to go down this migration path, you need to consent in the tool to the limitations. 
 

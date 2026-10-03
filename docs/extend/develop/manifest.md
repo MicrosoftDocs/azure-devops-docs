@@ -331,7 +331,7 @@ Some installation target identifiers, like `Microsoft.TeamFoundation.Server` and
 The version or version range is specified through the `version` field on the installation target object. This value can be either:
 
 * A specific version, for example: `15.0` (2017 RTM only)
-* A range of supported versions, for example: `[14.0)` (2015 RTM and later), `[14.3,15.1]` (2015 Update 3 through 2017 Update 1). Range values are refined using:
+* A range of supported versions, for example: `[14.0,)` (2015 RTM and later), `[14.3,15.1]` (2015 Update 3 through 2017 Update 1). Range values are refined using:
   * `[`: minimum version inclusive
   * `]`: maximum version inclusive
   * `(`: minimum version exclusive
