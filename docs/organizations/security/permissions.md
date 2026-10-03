@@ -364,7 +364,7 @@ So the full name of the administrator group for the default collection is
 
 ## Project-level groups
 
-For each project that you create, the system creates the followings project-level groups. These groups are assigned [project-level permissions](#team-project-level-permissions).
+For each project that you create, the system creates the following project-level groups. These groups are assigned [project-level permissions](#team-project-level-permissions).
 
 > [!NOTE]   
 > To enable the preview page for the **Project Permissions Settings Page**, see [Enable preview features](../../project/navigation/preview-features.md).

@@ -1096,7 +1096,7 @@ The following table describes the security namespaces and permissions that aren'
       `Write`  
    :::column-end:::
    :::column span="2":::
-      Manages permissions to read and write [pipeline cache entries](../../pipelines/release/caching.md). These permissions are only assigned to internal Azure DevOps service principles. 
+      Manages permissions to read and write [pipeline cache entries](../../pipelines/release/caching.md). These permissions are only assigned to internal Azure DevOps service principals. 
       <br/>
       **ID:** `62a7ad6b-8b8d-426b-ba10-76a7090e94d5` 
    :::column-end:::
