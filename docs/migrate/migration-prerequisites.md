@@ -82,7 +82,7 @@ Have the following items:
     For your first time validating a collection, keep it simple. Your command should have the following structure: 
     `Migrator validate /collection:{collection URL} /tenantDomainName:{name} /region:{region}`
 6. Replace {name} with the name of your Microsoft Entra tenant. For example, to run against the DefaultCollection and the fabrikam tenant, the command would look like this: 
-    `Migrator validate /collection:[^1^][4]	(http://localhost:8080/DefaultCollection) /tenantDomainName:fabrikam.OnMicrosoft.com /region:{region}`
+    `Migrator validate /collection:http://localhost:8080/DefaultCollection /tenantDomainName:fabrikam.OnMicrosoft.com /region:{region}`
     If you need to run the tool from a machine other than the Azure DevOps Server, use the `/connectionString` parameter. 
 
 ## Next step
