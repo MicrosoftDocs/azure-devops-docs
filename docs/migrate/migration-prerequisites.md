@@ -1,4 +1,4 @@
--- -
+---
 title: Complete Migration Prerequisites
 description: Learn about requirements before you begin migration from on-premises to the cloud in Azure DevOps Services.
 ms.topic: how-to
@@ -8,7 +8,7 @@ ms.author: chcomley
 author: chcomley
 monikerRange: '<= azure-devops'
 ms.date: 07/29/2025
--- -
+---
 
 # Complete migration prerequisites
 
