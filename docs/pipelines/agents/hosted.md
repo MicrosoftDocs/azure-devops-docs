@@ -2,7 +2,7 @@
 title: Microsoft-hosted agents for Azure Pipelines
 description: Learn about using the Microsoft-hosted agents provided in Azure Pipelines
 ms.topic: concept-article
-ms.date: 09/29/2026
+ms.date: 09/30/2026
 monikerRange: '<= azure-devops'
 ---
 
@@ -40,6 +40,8 @@ You can see the installed software for each Windows hosted agent image by choosi
 
 > [!NOTE]
 > The Windows Server 2025 with Visual Studio 2026 image is generally available. This dedicated image runs alongside the Windows Server 2025 with Visual Studio 2022 image. To use the Visual Studio 2026 image, specify `windows-2025-vs2026` in your pipeline configuration.
+>
+> In the coming weeks, the `windows-latest` label will point to `windows-2025-vs2026`, and the `windows-2025` image will also begin using Visual Studio 2026. We strongly recommend that you test your pipelines with the `windows-2025-vs2026` image before these changes roll out.
 
 #### Windows image updates
 
