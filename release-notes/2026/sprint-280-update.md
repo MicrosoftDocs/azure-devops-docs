@@ -4,12 +4,12 @@ author: gloridelmorales
 ms.author: glmorale
 ms.date: 10/02/2026
 ms.topic: release-notes
-description: Learn about agentic Copilot Autofix, EPSS data for dependency alerts, code review effort levels, and multi-target framework coverage.
+description: Learn about agentic Copilot Autofix, hosted agent images, code review effort levels, pull request status checks, and code coverage.
 ---
 
 # Copilot Autofix now uses an agentic foundation and repository context
 
-In this sprint, Copilot Autofix adds agentic capabilities and repository context. We're also introducing EPSS data to help prioritize dependency alerts, configurable Copilot code review effort levels, more reliable pull request status checks, and multi-target framework code coverage.
+In this sprint, Copilot Autofix adds agentic capabilities and repository context. We're also introducing EPSS data to help prioritize dependency alerts, configurable Copilot code review effort levels, more reliable pull request status checks, new Microsoft-hosted agent images, and multi-target framework code coverage.
 
 Check out the release notes for details.
 
@@ -19,6 +19,9 @@ Check out the release notes for details.
 ### Azure Repos
 [!INCLUDE [sprint-280-update-links](includes/repos/sprint-280-update-links.md)]
 
+### Azure Pipelines
+[!INCLUDE [sprint-280-update-links](includes/pipelines/sprint-280-update-links.md)]
+
 ### Azure Test Plans
 [!INCLUDE [sprint-280-update-links](includes/testplans/sprint-280-update-links.md)]
 
@@ -27,6 +30,9 @@ Check out the release notes for details.
 
 ## Azure Repos
 [!INCLUDE [sprint-280-update](includes/repos/sprint-280-update.md)]
+
+## Azure Pipelines
+[!INCLUDE [sprint-280-update](includes/pipelines/sprint-280-update.md)]
 
 ## Azure Test Plans
 [!INCLUDE [sprint-280-update](includes/testplans/sprint-280-update.md)]
