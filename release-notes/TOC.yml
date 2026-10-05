@@ -657,6 +657,8 @@
         items:
         - name: "2026"
           items:
+          - name: October 2
+            href: 2026/pipelines/sprint-280-update.md
           - name: September 4
             href: 2026/pipelines/sprint-279-update.md
           - name: August 20
