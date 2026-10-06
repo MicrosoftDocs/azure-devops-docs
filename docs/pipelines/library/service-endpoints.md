@@ -5,7 +5,7 @@ description: Learn how to manage Azure Pipelines service connections and get a r
 ms.topic: concept-article
 ms.author: ronai
 author: RoopeshNair
-ms.date: 08/18/2026
+ms.date: 10/06/2026
 monikerRange: '<= azure-devops'
 ---
 
@@ -253,19 +253,29 @@ For enhanced security, use the [Publish To Azure Service Bus v2 task](/azure/dev
 
 ### Bitbucket Cloud service connection
 
-Use OAuth with **Grant authorization** or a username and password with **Basic Authentication** to define a connection to Bitbucket Cloud. For pipelines to keep working, your repository access must remain active.
+Use OAuth or an API token to define a connection to Bitbucket Cloud. For pipelines to keep working, your repository and webhook access must remain active.
 
 | Parameter | Description  |
 |-----------------------|-----|
-| Authentication method | Select **Grant authorization** or **Basic Authentication**.|
-| OAuth configuration | Required for Grant authorization. OAuth connection to Bitbucket. |
-| Username | Required for Basic authentication. The username to connect to the service.|
-| Password  |  Required for Basic authentication. The password for the specified username.|
+| Authentication method | Select **OAuth** or **Email and API Token**. |
+| OAuth configuration | Required for OAuth. The OAuth connection to Bitbucket Cloud. Azure DevOps manages the permissions for its registered Bitbucket OAuth app. |
+| Email address | Required for Email and API Token. The email address for your Atlassian account. |
+| API Token | Required for Email and API Token. A Bitbucket API token with the required workspace, repository, and webhook scopes. |
 | Connection name | Required. The name you use to refer to the service connection in task properties. If you're using YAML, use the name as the **azureSubscription** or the equivalent subscription name value in the script. |
 | Description | Optional. The description of the service connection. |
 | Security | Optional. Select **Grant access permission to all pipelines** to allow all pipelines to use this connection. If you don't select this option, you must explicitly authorize the service connection for each pipeline that uses it. |
 
-Select **Verify** or **Authorize** to validate your connection information.
+For Email and API Token authentication, grant the following [Bitbucket API token permissions](https://support.atlassian.com/bitbucket-cloud/docs/api-token-permissions/):
+
+- `read:workspace:bitbucket`
+- `read:repository:bitbucket`
+- `read:webhook:bitbucket`
+- `write:webhook:bitbucket`
+- `delete:webhook:bitbucket`
+
+These permissions let Azure Pipelines list your workspaces and repositories and read, create, update, and delete repository webhooks. API token write permissions don't implicitly grant the corresponding read permissions.
+
+Select **Verify** or **Authorize** to validate your connection information. Azure DevOps rejects new or updated Email and API Token service connections when the API token doesn't include all required permissions.
 
 ### Cargo service connection
 
