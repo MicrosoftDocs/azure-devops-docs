@@ -257,7 +257,7 @@ Use OAuth or an API token to define a connection to Bitbucket Cloud. For pipelin
 
 | Parameter | Description  |
 |-----------------------|-----|
-| Authentication method | Select **OAuth** or **Email and API Token**. |
+| Authentication method | Select **OAuth** (recommended) or **Email and API Token**. |
 | OAuth configuration | Required for OAuth. The OAuth connection to Bitbucket Cloud. Azure DevOps manages the permissions for its registered Bitbucket OAuth app. |
 | Email address | Required for Email and API Token. The email address for your Atlassian account. |
 | API Token | Required for Email and API Token. A Bitbucket API token with the required workspace, repository, and webhook scopes. |
