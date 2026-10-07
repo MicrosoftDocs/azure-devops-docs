@@ -68,7 +68,7 @@ To publish the Markdown files in your Git repo to a wiki, follow these steps:
 
 	- If you don't see the **Publish code as wiki** option, you might need to first define a Git repo for your project. Follow the instructions in [Create a new Git repo](../../repos/git/create-new-repo.md), refresh the **Wiki** page, and then return to this procedure.
 
-   - If you already have a team project wiki, you can expand the project dropdown menu and select **Publish code wiki**:
+   - If you already have a team project wiki, you can expand the project dropdown menu and select **Publish code as wiki**:
 
       :::image type="content" source="media/wiki/publish-code-menu-option.png" alt-text="Screenshot that shows how to select the Publish code as wiki option for a project.":::
 
