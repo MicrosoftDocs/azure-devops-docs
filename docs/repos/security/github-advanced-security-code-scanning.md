@@ -8,7 +8,7 @@ ms.topic: how-to
 ms.author: laurajiang
 author: laurajjiang
 monikerRange: 'azure-devops'
-ms.date: 09/28/2026
+ms.date: 10/07/2026
 ms.custom: cross-service, sfi-image-nochange
 ---
 
@@ -17,6 +17,9 @@ ms.custom: cross-service, sfi-image-nochange
 Code scanning in GitHub Advanced Security for Azure DevOps lets you analyze the code in an Azure DevOps repository to find security vulnerabilities and coding errors. You'll need either GitHub Advanced Security for Azure DevOps or, if you're using the standalone experience, GitHub Code Security for Azure DevOps enabled. Any problems identified by the analysis are raised as an alert. Code scanning uses CodeQL to identify vulnerabilities. 
 
 CodeQL is the code analysis engine developed by GitHub to automate security checks. You can analyze your code using CodeQL and display the results as code scanning alerts. For more specific documentation about CodeQL, see [CodeQL documentation](https://codeql.github.com/docs/).
+
+> [!NOTE]
+> If you use the CodeQL CLI as a standalone tool with GitHub Advanced Security for Azure DevOps, follow the GitHub documentation for [scanning from the command line](https://docs.github.com/code-security/how-tos/find-and-fix-code-vulnerabilities/scan-from-the-command-line) to install and use the CLI. To publish the resulting SARIF file to Azure DevOps, use the [Advanced Security Publish task](/azure/devops/pipelines/tasks/reference/advanced-security-publish-v1).
 
 [!INCLUDE [GitHub Advanced Security for Azure DevOps is different from GitHub Advanced Security.](includes/github-advanced-security.md)]
 
