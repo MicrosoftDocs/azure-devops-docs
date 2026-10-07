@@ -28,7 +28,7 @@ Normal release cadence for new Azure DevOps Server versions is once every three 
 
 ## Implement Microsoft Entra ID
 
-Ensure your team has a functional Microsoft Entra ID tenant for authenticating members in your Azure DevOps Services organization. In Azure DevOps Services, user authentication relies on a Microsoft Entra ID tenant like Azure DevOps Server user authentication relies on Active Directory. During the Test Run phase(link), you verify an identity map log file to match your on-premises Active Directory organizations with Microsoft Entra ID organizations. This file isn't used by the migration service. This action ensures individual history visibility, security permissions preservation, and access to personal settings. 
+Ensure your team has a functional Microsoft Entra ID tenant for authenticating members in your Azure DevOps Services organization. In Azure DevOps Services, user authentication relies on a Microsoft Entra ID tenant like Azure DevOps Server user authentication relies on Active Directory. During the [Test Run phase](migration-test-run.md), you verify an identity map log file to match your on-premises Active Directory organizations with Microsoft Entra ID organizations. This file isn't used by the migration service. This action ensures individual history visibility, security permissions preservation, and access to personal settings. 
 
 > [!TIP]
 > - We recommend that you use the same Microsoft Entra ID tenant as other Microsoft Cloud services. If your company already has Microsoft Entra ID, skip this step. 
@@ -73,16 +73,16 @@ Have the following items:
 2. Copy the zip file to one of your Azure DevOps Server application tiers. 
 3. Unzip the file. 
     You can also run the tool from a different machine without Azure DevOps Server installed, if it can connect to the configuration database of the Azure DevOps Server instance. 
-1.Open a Command Prompt window on the server and go to the directory where the Data Migration Tool is stored. 
-1. Review the help content for the tool: 
+4. Open a Command Prompt window on the server and go to the directory where the Data Migration Tool is stored. 
+5. Review the help content for the tool: 
    1. To view the top-level help and guidance, run the following command:  
     `Migrator /help`
    2. View the help text for the validation command: 
     `Migrator validate /help`
     For your first time validating a collection, keep it simple. Your command should have the following structure: 
     `Migrator validate /collection:{collection URL} /tenantDomainName:{name} /region:{region}`
-2. Replace {name} with the name of your Microsoft Entra tenant. For example, to run against the DefaultCollection and the fabrikam tenant, the command would look like this: 
-    `Migrator validate /collection:[^1^][4]	(http://localhost:8080/DefaultCollection) /tenantDomainName:fabrikam.OnMicrosoft.com /region:{region}`
+6. Replace {name} with the name of your Microsoft Entra tenant. For example, to run against the DefaultCollection and the fabrikam tenant, the command would look like this: 
+    `Migrator validate /collection:http://localhost:8080/DefaultCollection /tenantDomainName:fabrikam.OnMicrosoft.com /region:{region}`
     If you need to run the tool from a machine other than the Azure DevOps Server, use the `/connectionString` parameter. 
 
 ## Next step
