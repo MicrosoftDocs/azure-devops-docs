@@ -39,6 +39,9 @@ The following table shows data included in migration.
 |Load test    | Load test data isn't brought over. Reconfigure load tests after migration.         |
 |Pipeline agents and agent pools  | Reconfigure pipeline agents and agent pools after migration.        |
 |Mentions   | User mentions in work item discussions retain on-premises identity, not the new Microsoft Entra ID. Hovering on usernames doesn't display contact cards, and some hyperlinks might be invalid.        |
+|Wiki comments     | Wiki comments aren't migrated. Copy important information into the wiki article before migration.        |
+|Wiki "About the Project" section     | This section isn't populated after migration.        |
+|Pull request images     | Images in pull request descriptions might not display after migration because their links still point to Azure DevOps Server.        |
 |Project Server integrations     | Not available for Azure DevOps Services. For example, XAML Builds, Microsoft Test Manager, SharePoint, SQL Data Warehouse, and so on.        |
 |Preview features    | Some Azure DevOps Server features can be previewed during migration to Azure DevOps Services.        |
 
