@@ -269,7 +269,7 @@
     - name: Use packages from PowerShell Gallery
       displayName: powershell gallery, upstream
       href: tutorials/powershell-upstream-source.md
-- name: Security
+- name: Security and troubleshooting
   items:
   - name: Manage permissions
     displayName: feed, view, artifacts, security, permissions
@@ -277,6 +277,9 @@
   - name: Safeguard against malicious public packages
     displayName: upstreams, behavior, configure upstreams
     href: concepts/upstream-behavior.md
+  - name: Troubleshoot Azure Artifacts
+    href: troubleshooting.md
+    displayName: troubleshoot, faq, publish, restore, upstream, auth, permissions
 - name: Examples
   items:
   - name: NuGet
