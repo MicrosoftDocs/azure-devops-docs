@@ -64,3 +64,19 @@ groups:
     title: PAT
   - id: service-connection
     title: Service Connection
+- id: artifacts-troubleshooting-technology
+  title: Package technology
+  prompt: Choose a package technology
+  pivots:
+  - id: nuget-dotnet
+    title: NuGet and .NET
+  - id: npm
+    title: npm
+  - id: maven-gradle
+    title: Maven and Gradle
+  - id: python
+    title: Python
+  - id: cargo
+    title: Cargo
+  - id: universal-packages
+    title: Universal Packages
