@@ -8,7 +8,7 @@ ms.topic: how-to
 ms.author: laurajiang
 author: laurajjiang
 monikerRange: 'azure-devops'
-ms.date: 10/07/2026
+ms.date: 10/10/2026
 ms.custom: cross-service, sfi-image-nochange
 ---
 
@@ -313,6 +313,10 @@ To display results, code scanning tasks need to run first. Once the first scan f
 By default, the alerts page shows code scanning results for the default branch of the repository. 
 
 The status of a given alert reflects the state for the default branch and latest run pipeline, even if the alert exists on other branches and pipelines. 
+
+### Automatic cleanup of alerts from stale pipeline configurations
+
+[!INCLUDE [github-advanced-security-stale-alert-cleanup](includes/github-advanced-security-stale-alert-cleanup.md)]
 
 ### Dismissing code scanning alerts
 
