@@ -285,6 +285,24 @@ git remote add --mirror=fetch upstream <original-repo-URL>
 git fetch upstream --tags
 git push origin --all
 ```
+### Q: What should I do if my Git import fails?
+
+A Git import can fail for several reasons, including:
+
+- An incorrect or inaccessible repository URL.
+- Invalid or expired credentials.
+- A source repository that requires an unsupported authentication method.
+- Network or DNS connectivity problems.
+- A source server that doesn't support required Git protocol capabilities such as `multi_ack`.
+- A redirect to an address that Azure DevOps can't safely access.
+
+Verify that you can clone the source repository using the same URL and credentials. If the problem continues, review the specific error displayed by Azure DevOps or contact your Git hosting provider.
+
+### Q: Why did my Git import fail because of a redirect address?
+
+The source Git server redirected the upload-pack request to another destination. Azure DevOps validates every redirect and blocks destinations that resolve to loopback, private, link-local, or other nonpublic IP address ranges.
+
+Verify the repository URL and check whether the Git server or proxy redirects requests to an internal address. Use a publicly accessible URL or contact your Git hosting provider to correct the redirect. If the redirect changes the host, use the final repository URL directly and provide credentials valid for that destination.
 
 ## Next steps
 
