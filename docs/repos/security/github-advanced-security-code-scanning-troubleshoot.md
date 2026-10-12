@@ -9,7 +9,7 @@ ms.custom: cross-service
 ms.author: laurajiang
 author: laurajjiang
 monikerRange: 'azure-devops'
-ms.date: 02/20/2025
+ms.date: 10/10/2026
 ---
 
 # Troubleshoot code scanning 
@@ -19,6 +19,12 @@ Generally, if you're encountering errors with CodeQL execution, the CodeQL CLI r
 ## Prerequisites
 
 [!INCLUDE [github-advanced-security-prerequisites](includes/github-advanced-security-prerequisites.md)]
+
+## An alert from an inactive branch remains visible or reappears
+
+The 90-day cleanup process tracks pipeline phase activity, not the age of an alert or branch. A run of the same phase on another branch can keep its configurations active or reactivate them. As a result, an older branch detection can appear without a new scan of that branch.
+
+Review runs of the same pipeline phase across branches. Then, run scanning on the affected branch if you need to verify its current state. For the cleanup rules and an example, see [Automatic cleanup of alerts from stale pipeline configurations](github-advanced-security-code-scanning.md#automatic-cleanup-of-alerts-from-stale-pipeline-configurations).
 
 ## Error: 'database finalize' CodeQL command (32) 
 This error indicates a problem with finalizing the CodeQL database creation, potentially due to extraction errors or missing build steps.

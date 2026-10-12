@@ -9,7 +9,7 @@ ms.custom: cross-service
 ms.author: laurajiang
 author: laurajjiang
 monikerRange: 'azure-devops'
-ms.date: 09/30/2026
+ms.date: 10/10/2026
 ---
 
 # Set up dependency scanning 
@@ -138,6 +138,10 @@ If the vulnerable package is only referenced as a transitive dependency, the pac
 By default, the alerts page shows dependency scanning results for the default branch of the repository. 
 
 The status of an alert reflects the state for the default branch and latest run pipeline, even if the alert exists on other branches and pipelines. 
+
+### Automatic cleanup of alerts from stale pipeline configurations
+
+[!INCLUDE [github-advanced-security-stale-alert-cleanup](includes/github-advanced-security-stale-alert-cleanup.md)]
 
 ### Fixing dependency scanning alerts 
 A direct dependency is a component that you have in your repository. A transitive or indirect dependency is a component that gets used by a direct dependency. Your project is still vulnerable regardless of whether the vulnerability is found in a direct or transitive dependency.
