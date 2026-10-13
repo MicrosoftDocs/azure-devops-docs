@@ -2,7 +2,7 @@
 title: Microsoft-hosted image deprecations for Azure Pipelines
 description: Learn about the lifecycle and deprecation schedule of Microsoft-hosted images provided in Azure Pipelines
 ms.topic: concept-article
-ms.date: 01/28/2026
+ms.date: 10/06/2026
 monikerRange: '<=azure-devops'
 ---
 
@@ -30,7 +30,7 @@ For more information on the software lifecycle and deprecation schedule of image
 |-----------------------|-----------------------|
 | macOS | [macOS 14 Sonoma hosted image deprecation schedule](#macos-14-sonoma-hosted-image-deprecation-schedule) |
 | Windows | No Windows hosted agent images are currently scheduled for deprecation. |
-| Linux | No Linux hosted agent images are currently scheduled for deprecation. |
+| Linux | [Ubuntu 22.04 hosted image deprecation schedule](#ubuntu-2204-hosted-image-deprecation-schedule) |
 
 #### [macOS images](#tab/macos-images/)
 
@@ -72,7 +72,38 @@ No Windows hosted agent images are currently scheduled for deprecation.
 
 #### [Linux images](#tab/linux-images/)
 
-No Linux hosted agent images are currently scheduled for deprecation.
+#### Ubuntu 22.04 hosted image deprecation schedule
+
+The Ubuntu 22.04 hosted image deprecation affects Azure DevOps customers using the `ubuntu-22.04` agent image in their Microsoft-hosted pipelines. This deprecation doesn't affect customers using Ubuntu 22.04 on self-hosted agents.
+
+The Ubuntu 22.04 image deprecation schedule:
+
+* Deprecation start date: September 17, 2026.
+* [Brownout schedule](#ubuntu-brownout-schedule): March 23, 2027 to April 14, 2027.
+* Scheduled removal date: April 17, 2027.
+
+During the deprecation period, pipelines that use Ubuntu 22.04 might experience longer queue times during peak usage hours.
+
+<a name="ubuntu-brownout-schedule"></a>
+
+##### Brownout schedule
+
+To raise awareness of the upcoming removal, we will temporarily fail jobs using the Ubuntu 22.04 hosted image. Builds that are scheduled to run during the brownout periods will fail. The brownouts are scheduled for the following dates and times:
+
+* March 23, 14:00 UTC - March 24, 00:00 UTC
+* March 30, 14:00 UTC - March 31, 00:00 UTC
+* April 6, 14:00 UTC - April 7, 00:00 UTC
+* April 13, 14:00 UTC - April 14, 00:00 UTC
+
+##### Recommended action
+
+Update pipelines that use the Ubuntu 22.04 hosted image to `ubuntu-latest`, `ubuntu-24.04`, or `ubuntu-26.04` before the scheduled removal date to avoid disruptions.
+
+To identify pipelines that use the Ubuntu 22.04 hosted image, follow the instructions in [How to identify pipelines using a deprecated hosted image](#how-to-identify-pipelines-using-a-deprecated-hosted-image).
+
+To update affected YAML pipelines, see [Update YAML pipelines to use a new image](#update-yaml-pipelines-to-use-a-new-image). To update affected classic pipelines, see [Update classic pipelines to use a new image](#update-classic-pipelines-to-use-a-new-image).
+
+For more information, see [Ubuntu 22.04 image deprecation](https://github.com/actions/runner-images/issues/14254).
 
 * * *
 
