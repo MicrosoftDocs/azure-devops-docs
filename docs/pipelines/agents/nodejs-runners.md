@@ -51,7 +51,7 @@ This setting helps you identify and update impacted pipelines before Node.js 6, 
 
 ### Prerequisites for this feature
 
-You need [Agent version 4.278.0](https://github.com/microsoft/azure-pipelines-agent/releases/tag/v4.278.0) or later for the preceding setting.
+You need [Agent version 4.278.0 or later](https://github.com/microsoft/azure-pipelines-agent/releases/) for the preceding setting.
 
 ### Enable the setting
 
