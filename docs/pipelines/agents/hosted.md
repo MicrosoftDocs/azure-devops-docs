@@ -2,7 +2,7 @@
 title: Microsoft-hosted agents for Azure Pipelines
 description: Learn about using the Microsoft-hosted agents provided in Azure Pipelines
 ms.topic: concept-article
-ms.date: 09/30/2026
+ms.date: 10/06/2026
 monikerRange: '<= azure-devops'
 ---
 
@@ -57,12 +57,13 @@ You can see the installed software for each Linux hosted agent image by choosing
 | --- | --- | --- | --- |
 | Ubuntu 26.04 | *ubuntu-26.04* | `ubuntu-26.04` | [Link](https://github.com/actions/runner-images/blob/main/images/ubuntu/Ubuntu2604-Readme.md) |
 | Ubuntu 24.04 | *ubuntu-24.04* | `ubuntu-latest` OR `ubuntu-24.04` | [Link](https://github.com/actions/runner-images/blob/main/images/ubuntu/Ubuntu2404-Readme.md) |
-| Ubuntu 22.04 | *ubuntu-22.04* | `ubuntu-22.04` | [Link](https://aka.ms/ubuntu-22.04-readme) |
+| Ubuntu 22.04 (deprecated) | *ubuntu-22.04* | `ubuntu-22.04` | [Link](https://aka.ms/ubuntu-22.04-readme) |
 
 The `ubuntu-latest` image is the default image for YAML pipelines if no image is specified. For more information, see [Designate a pool in your pipeline](pools-queues.md#designate-a-pool-in-your-pipeline).
 
 #### Linux images updates
 
+* The Ubuntu 22.04 hosted agent image is deprecated and scheduled for removal on April 17, 2027. For brownout dates and migration guidance, see the [Ubuntu 22.04 hosted image deprecation schedule](hosted-deprecation-schedule.md#ubuntu-2204-hosted-image-deprecation-schedule).
 * The Ubuntu 26.04 hosted agent image became generally available on September 29, 2026. Specify `ubuntu-26.04` in your pipeline configuration to use it.
 * [[Windows & Ubuntu] .NET 6 was removed from the images on August 1, 2025.](https://github.com/actions/runner-images/issues/12241)
 * [The Ubuntu 20.04 image is retired](https://devblogs.microsoft.com/devops/upcoming-updates-for-azure-pipelines-agents-images/#ubuntu).
