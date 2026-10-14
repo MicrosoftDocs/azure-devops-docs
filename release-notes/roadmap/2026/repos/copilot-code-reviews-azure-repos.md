@@ -20,4 +20,4 @@ To learn more, see [Copilot code reviews for Azure Repos](https://devblogs.micro
 
 - Automatically resolve a comment when you apply its suggestion
 - Add Copilot code review configuration changes to the audit log
-- Support self-hosted runners
+- ~~Support self-hosted runners~~

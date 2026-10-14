@@ -53,11 +53,7 @@ To learn more, see [Copilot code reviews for Azure Repos](https://devblogs.micro
          <tr>
             <td><a href="/azure/devops/release-notes/roadmap/2026/repos/copilot-code-reviews-azure-repos#additional-improvements-coming" data-raw-source="[Copilot Code Review configuration changes in the audit log](/azure/devops/release-notes/roadmap/2026/repos/copilot-code-reviews-azure-repos#additional-improvements-coming)">Copilot Code Review configuration changes in the audit log</a></td>
             <td>2026 Q4</td>
-         </tr>
-         <tr>
-            <td><a href="/azure/devops/release-notes/roadmap/2026/repos/copilot-code-reviews-azure-repos#additional-improvements-coming" data-raw-source="[Support for self-hosted runners](/azure/devops/release-notes/roadmap/2026/repos/copilot-code-reviews-azure-repos#additional-improvements-coming)">Support for self-hosted runners</a></td>
-            <td>2026 Q4</td>
-         </tr>
+         </tr>         
     </tbody>
 </table>
 
@@ -283,7 +279,7 @@ Below, you'll find several investments that we plan to deliver as part of this i
         <td><a href="/azure/devops/release-notes/roadmap/2026/ghazdo/dependency-scanning-ecosystem-improvements" data-raw-source="[Dependency scanning ecosystem improvements](/azure/devops/release-notes/roadmap/2026/ghazdo/dependency-scanning-ecosystem-improvements)">Dependency scanning ecosystem improvements</a></td>
         <td>GitHub Advanced Security for Azure DevOps</td>
       </tr>
-         <td rowspan="8"><strong>2026 Q4</strong></td>
+         <td rowspan="7"><strong>2026 Q4</strong></td>
             <td><a href="/azure/devops/release-notes/roadmap/2026/azure-devops-mcp-server-elicitation" data-raw-source="[Elicitation support for organization and project selection of tools](/azure/devops/release-notes/roadmap/2026/azure-devops-mcp-server-elicitation)">MCP Server, elicitation support for organization and project selection</a></td>
             <td>General</td>
          </tr>
@@ -300,11 +296,7 @@ Below, you'll find several investments that we plan to deliver as part of this i
             <td>Wiki</td>
          </tr>
          <tr>
-            <td><a href="/azure/devops/release-notes/roadmap/2026/boards/bulk-attachment-actions" data-raw-source="[Bulk attachment actions in Azure Boards](/azure/devops/release-notes/roadmap/2026/boards/bulk-attachment-actions)">Bulk attachment actions in Azure Boards</a></td>
-            <td>Boards</td>
-         </tr>
-         <tr>
-            <td><a href="/azure/devops/release-notes/roadmap/2026/boards/import-export-excel" data-raw-source="[Import/Export to Microsoft Excel](/azure/devops/release-notes/roadmap/2026/boards/import-export-excel)">Work item Import/Export to Microsoft Excel</a></td>
+            <td><a href="/azure/devops/release-notes/roadmap/2026/boards/bulk-attachment-actions" data-raw-source="[Bulk attachment download in Azure Boards](/azure/devops/release-notes/roadmap/2026/boards/bulk-attachment-actions)">Download multiple attachments from work item</a></td>
             <td>Boards</td>
          </tr>
          <tr>
@@ -314,6 +306,10 @@ Below, you'll find several investments that we plan to deliver as part of this i
       <tr>
         <td><a href="/azure/devops/release-notes/roadmap/2026/ghazdo/codeql-default" data-raw-source="[CodeQL default setup runs on pull request trigger](/azure/devops/release-notes/roadmap/2026/ghazdo/codeql-default)">CodeQL default setup runs on pull request trigger</a></td>
         <td>GitHub Advanced Security for Azure DevOps</td>
+      </tr>
+      <td rowspan="1"><strong>2027 Q1</strong></td>
+        <td><a href="/azure/devops/release-notes/roadmap/2026/boards/import-export-excel" data-raw-source="[Import/Export to Microsoft Excel](/azure/devops/release-notes/roadmap/2026/boards/import-export-excel)">Work item Import/Export to Microsoft Excel</a></td>
+        <td>Boards</td>
       </tr>
       <td rowspan="17"><strong>Future</strong></td>
         <td><a href="/azure/devops/release-notes/roadmap/auditing-ga" data-raw-source="[Auditing GA](/azure/devops/release-notes/roadmap/auditing-ga)">Auditing GA</a></td>

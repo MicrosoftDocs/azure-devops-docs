@@ -1,23 +1,23 @@
 ---
-title: Bulk attachment actions in Azure Boards
+title: Download multiple attachments from work items
 author: danhellem
 ms.author: dahellem
 ms.date: 07/02/2026
 ms.topic: article
 ms.service: azure-devops
 ms.subservice: azure-devops-release-notes
-description: Select multiple attachments to download or delete in Azure Boards
+description: Select and download multiple work item attachments at once in Azure Boards
 hide_comments: true
 ---
 
-# Bulk attachment actions in Azure Boards
+# Download multiple attachments from work items
 
-Bulk attachment actions in Azure Boards simplify managing attachments on work items.Expand commentComment on line R15Resolved
+Bulk attachment download in Azure Boards simplifies downloading attachments from work items.
 
-Select one or more attachments by using the checkboxes, and then choose **Download** or **Delete** from the new actions next to **Add**. These actions are available when you select at least one attachment.
+Select one or more attachments by using the checkboxes, and then choose **Download** next to **Add**. This action is available when you select at least one attachment.
 
-For downloads, a single selected file is downloaded directly. When you select multiple files, Azure Boards downloads one .zip file containing all selected attachments.
+A single selected file is downloaded directly. When you select multiple files, Azure Boards downloads one .zip file containing all selected attachments.
 
-For deletions, Azure Boards asks you to confirm before removing the selected attachments.
+Community suggestion ticket: [Download multiple attachments from work items](https://developercommunity.visualstudio.com/t/download-multiple-attachments-from-work-items-1/875062)
 
 These planned improvements are subject to change.
