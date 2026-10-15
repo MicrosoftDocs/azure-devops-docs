@@ -552,9 +552,9 @@ Add `PortfolioBacklog` to ProcessConfiguration to reference Microsoft.EpicCatego
         <Column refname="System.WorkItemType" width="100" />
         <Column refname="System.Title" width="400" />
         <Column refname="System.State" width="100" />
-        <Column refname="Microsoft.AzureDevOps.Scheduling.Effort" width="50" />
-        <Column refname="Microsoft.AzureDevOps.Common.BusinessValue" width="50" />
-        <Column refname="Microsoft.AzureDevOps.CMMI.RequirementType" width="100" />
+        <Column refname="Microsoft.VSTS.Scheduling.Effort" width="50" />
+        <Column refname="Microsoft.VSTS.Common.BusinessValue" width="50" />
+        <Column refname="Microsoft.VSTS.CMMI.RequirementType" width="100" />
         <Column refname="System.Tags" width="200" />
       </Columns>
       <AddPanel>
@@ -1119,13 +1119,13 @@ The Scrum process specifies the following `TypeField` elements. If any of these 
 ```xml
 <TypeFields>
     <TypeField refname="System.AreaPath" type="Team" />
-    <TypeField refname="Microsoft.AzureDevOps.Scheduling.RemainingWork" type="RemainingWork" format="format h" />
-    <TypeField refname="Microsoft.AzureDevOps.Common.BacklogPriority" type="Order" />
-    <TypeField refname="Microsoft.AzureDevOps.Scheduling.Effort" type="Effort" />
-    <TypeField refname="Microsoft.AzureDevOps.Common.Activity" type="Activity" />
-    <TypeField refname="Microsoft.AzureDevOps.Feedback.ApplicationStartInformation" type="ApplicationStartInformation" />
-    <TypeField refname="Microsoft.AzureDevOps.Feedback.ApplicationLaunchInstructions" type="ApplicationLaunchInstructions" />
-    <TypeField refname="Microsoft.AzureDevOps.Feedback.ApplicationType" type="ApplicationType">
+    <TypeField refname="Microsoft.VSTS.Scheduling.RemainingWork" type="RemainingWork" format="format h" />
+    <TypeField refname="Microsoft.VSTS.Common.BacklogPriority" type="Order" />
+    <TypeField refname="Microsoft.VSTS.Scheduling.Effort" type="Effort" />
+    <TypeField refname="Microsoft.VSTS.Common.Activity" type="Activity" />
+    <TypeField refname="Microsoft.VSTS.Feedback.ApplicationStartInformation" type="ApplicationStartInformation" />
+    <TypeField refname="Microsoft.VSTS.Feedback.ApplicationLaunchInstructions" type="ApplicationLaunchInstructions" />
+    <TypeField refname="Microsoft.VSTS.Feedback.ApplicationType" type="ApplicationType">
         <TypeFieldValues>
             <TypeFieldValue value="Web application" type="WebApp" />
             <TypeFieldValue value="Remote machine" type="RemoteMachine" />
@@ -1198,8 +1198,8 @@ Add the Epic `PortfolioBacklog` to the ProcessConfiguration.xml file.
       <Column refname="System.WorkItemType" width="100" />
       <Column refname="System.Title" width="400" />
       <Column refname="System.State" width="100" />
-      <Column refname="Microsoft.AzureDevOps.Common.BusinessValue" width="50" />
-      <Column refname="Microsoft.AzureDevOps.CMMI.RequirementType" width="100" />
+      <Column refname="Microsoft.VSTS.Common.BusinessValue" width="50" />
+      <Column refname="Microsoft.VSTS.CMMI.RequirementType" width="100" />
       <Column refname="System.Tags" width="200" />
     </Columns>
   </PortfolioBacklog>
@@ -1278,7 +1278,7 @@ You defined more WITs that are allowed in the process. Review your WorkItems.xml
 ### TF402573: Work item type WIT doesn't specify required `refname` attribute.  
 
 Work item types (Bug, User Story, Task, etc.) require the `refname` attribute. The refname value must be unique and can't contain any reserved namespaces.
-The namespaces-System.*XXX* and Microsoft.AzureDevOps.*XXX*-are reserved by Azure DevOps. 
+The namespaces-System.*XXX* and Microsoft.VSTS.*XXX*-are reserved by Azure DevOps. 
 
 #### Error example
 
@@ -1296,14 +1296,14 @@ The namespaces-System.*XXX* and Microsoft.AzureDevOps.*XXX*-are reserved by Azur
 
 ### TF402599: The work item type refname *[refName]* isn't valid as it uses a disallowed namespace [namespace].
 
-Reference names of custom fields and WITs can't use reserved namespaces: System.*XXX* and Microsoft.AzureDevOps.*XXX*.  
+Reference names of custom fields and WITs can't use reserved namespaces: System.*XXX* and Microsoft.VSTS.*XXX*.  
 
 Edit the `refname` attribute of the named WIT. 
 
 #### Error example
 
 ```xml
-<FIELD name="Custom Field" refname="Microsoft.AzureDevOps.CustomField" type="String" />
+<FIELD name="Custom Field" refname="Microsoft.VSTS.CustomField" type="String" />
 ```
 #### Resolution example
 
@@ -1427,7 +1427,7 @@ Global lists aren't supported in Azure DevOps. Replace all instances of `GLOBALL
 
 ### TF402542: The custom field refname *[refName]* isn't valid as it uses disallowed namespace *[namespace]*.
 
-The namespaces-System.*XXX* and Microsoft.AzureDevOps.*XXX*-are reserved in Azure DevOps. 
+The namespaces-System.*XXX* and Microsoft.VSTS.*XXX*-are reserved in Azure DevOps. 
 Reference names of custom fields and types can't use these namespaces.   
 
 To fix this error, rename the `refname` attribute for the named field in the WIT definition files where it appears. 
@@ -1439,7 +1439,7 @@ To fix this error, rename the `refname` attribute for the named field in the WIT
 
   - OR - 
 
-<FIELD name="CustomField" refname="Microsoft.AzureDevOps.CustomField" type="String" />
+<FIELD name="CustomField" refname="Microsoft.VSTS.CustomField" type="String" />
 ```
 
 
@@ -1456,11 +1456,11 @@ To fix this error, rename the `refname` attribute for the named field in the WIT
 
 Edit the named field in the named WIT to provide the missing `ALLOWEDVALUES` rule, referencing the named element for more details.  
 
-The ProcessConfiguration.xml file element, `TypeField refname="Microsoft.AzureDevOps.Common.Activity" type="Activity"`, 
-requires a pick list is defined for the Microsoft.AzureDevOps.Common.Activity field in all WITs that belong to the Task Category. 
+The ProcessConfiguration.xml file element, `TypeField refname="Microsoft.VSTS.Common.Activity" type="Activity"`, 
+requires a pick list is defined for the Microsoft.VSTS.Common.Activity field in all WITs that belong to the Task Category. 
 
 ```xml
-<TypeField refname="Microsoft.AzureDevOps.Common.Activity" type="Activity" />
+<TypeField refname="Microsoft.VSTS.Common.Activity" type="Activity" />
 ```
 
 If you added bugs to the Task Category, ensure that the Bug.xml file contains the 
@@ -1470,7 +1470,7 @@ named field and specifies the same pick list as is defined for it in the Task.xm
 
 Bug.xml has the field defined, but not the pick list.
 ```xml
-      <FIELD name="Activity" refname="Microsoft.AzureDevOps.Common.Activity" type="String" reportable="dimension">
+      <FIELD name="Activity" refname="Microsoft.VSTS.Common.Activity" type="String" reportable="dimension">
         <HELPTEXT>Type of work involved</HELPTEXT>
       </FIELD> 
 ```
@@ -1479,7 +1479,7 @@ Bug.xml has the field defined, but not the pick list.
 
 Corrected Bug.xml
 ```xml
-      <FIELD name="Activity" refname="Microsoft.AzureDevOps.Common.Activity" type="String" reportable="dimension">
+      <FIELD name="Activity" refname="Microsoft.VSTS.Common.Activity" type="String" reportable="dimension">
         <HELPTEXT>Type of work involved</HELPTEXT>
         <SUGGESTEDVALUES>
           <LISTITEM value="Development"/>
@@ -1544,10 +1544,10 @@ ProcessConfiguration.xml
 ```
 
 
-FeedbackRequest.xml is using the Microsoft.AzureDevOps.Feedback.ApplicationType field when it should be using the Custom.ApplicationType field.
+FeedbackRequest.xml is using the Microsoft.VSTS.Feedback.ApplicationType field when it should be using the Custom.ApplicationType field.
 
 ```xml
-  <FIELD name="Application Type" refname="Microsoft.AzureDevOps.Feedback.ApplicationType" type="String">
+  <FIELD name="Application Type" refname="Microsoft.VSTS.Feedback.ApplicationType" type="String">
     ...
   </FIELD>
 ```
@@ -1570,25 +1570,25 @@ If you are on an on-premises server and running **tfsMigrator**, this error is g
 
 #### Examples of Reserved Fields
 
-Reserved System.*XXX* and Microsoft.AzureDevOps.*XXX* fields require `name` and `type` values.
+Reserved System.*XXX* and Microsoft.VSTS.*XXX* fields require `name` and `type` values.
 
 | Field                                                    | Name                        | Type                                                                                                          |                                                                                                                
 |----------------------------------------------------------|-----------------------------|------------------|
 | System.Id                                                | ID                          | Integer          |
 | System.Title                                             | Title                       | String           |
-| Microsoft.AzureDevOps.Scheduling.StoryPoints                    | Story Points                | Double           |
-| Microsoft.AzureDevOps.Scheduling.RemainingWork                  | Remaining Work              | Double           |
-| Microsoft.AzureDevOps.Scheduling.OriginalEstimate               | Original Estimate           | Double           |
-| Microsoft.AzureDevOps.Scheduling.CompletedWork                  | Completed Work              | Double           |
+| Microsoft.VSTS.Scheduling.StoryPoints                    | Story Points                | Double           |
+| Microsoft.VSTS.Scheduling.RemainingWork                  | Remaining Work              | Double           |
+| Microsoft.VSTS.Scheduling.OriginalEstimate               | Original Estimate           | Double           |
+| Microsoft.VSTS.Scheduling.CompletedWork                  | Completed Work              | Double           |
 
 #### Error example
 
-TF402556: For field Microsoft.AzureDevOps.TCM.ReproSteps to be well defined, you must name it Repro Steps and set its type to HTML. Provided Microsoft.AzureDevOps.TCM.ReproSteps is My Repro Steps and type is HTML.
+TF402556: For field Microsoft.VSTS.TCM.ReproSteps to be well defined, you must name it Repro Steps and set its type to HTML. Provided Microsoft.VSTS.TCM.ReproSteps is My Repro Steps and type is HTML.
 
 In Bug.xml, the friendly field name changed to "My Repro Steps."
 
 ```xml
-  <FIELD name="My Repro Steps" refname="Microsoft.AzureDevOps.TCM.ReproSteps" type="HTML">
+  <FIELD name="My Repro Steps" refname="Microsoft.VSTS.TCM.ReproSteps" type="HTML">
     <HELPTEXT>How to see the bug. End by contrasting expected with actual behavior.</HELPTEXT>
   </FIELD> 
 ```
@@ -1596,7 +1596,7 @@ In Bug.xml, the friendly field name changed to "My Repro Steps."
 
 Bug.xml
 ```xml
-  <FIELD name="Repro Steps" refname="Microsoft.AzureDevOps.TCM.ReproSteps" type="HTML">
+  <FIELD name="Repro Steps" refname="Microsoft.VSTS.TCM.ReproSteps" type="HTML">
     <HELPTEXT>How to see the bug. End by contrasting expected with actual behavior.</HELPTEXT>
   </FIELD> 
 ```
@@ -1649,7 +1649,7 @@ Edit the named WIT and remove the extra custom fields to reduce the total number
 
 ### TF402563: You defined a total of *[n]* fields for all work item types. Only *[fieldLimit]* are allowed.
 
-You defined *[n]* fields for all WITs defined in the process. Only *[fieldLimit]* are allowed, which includes System.*XXX* and Microsoft.AzureDevOps.*XXX* namespace fields and custom fields.  
+You defined *[n]* fields for all WITs defined in the process. Only *[fieldLimit]* are allowed, which includes System.*XXX* and Microsoft.VSTS.*XXX* namespace fields and custom fields.  
 
 Review the `FIELDS` and `WORKFLOW` sections and determine which custom fields to remove.
 
@@ -1665,7 +1665,7 @@ Edit the named WIT and remove the extra field rules to reduce the total number o
 
 ### TF402568: You defined *[n]* fields with `syncnamechanges="true"` for work item type *[witName]*. A maximum of 64 is allowed.
 
-The number of fields with  `syncnamechanges="true"` defined for the named WIT exceeds the allowed limit, which includes System.*XXX* and Microsoft.AzureDevOps.*XXX* namespace fields and custom fields.  
+The number of fields with  `syncnamechanges="true"` defined for the named WIT exceeds the allowed limit, which includes System.*XXX* and Microsoft.VSTS.*XXX* namespace fields and custom fields.  
 
 Review the `FIELDS` section of the named WIT and determine which custom fields to remove or modify.
 
@@ -1727,7 +1727,7 @@ Review the `FIELDS` and `WORKFLOW` sections for the presence of `"for"` and `"no
 
 ### TF402593: Field rules aren't supported for field *[fieldName]*.
 
-Most System and Microsoft.AzureDevOps fields don't support rules. 
+Most System and Microsoft.VSTS fields don't support rules. 
 For more information, see [Rules and rule evaluation](../rule-reference.md).
 
 Edit the definition files for work item types that contain the named field to remove the field rules specified for it. 
@@ -1736,7 +1736,7 @@ Edit the definition files for work item types that contain the named field to re
 
 ### TF402602: The field *[refName]* must have exactly these values *[values]*.
 
-- **Don't alter reserved fields**: Don't alter any fields defined in the reserved namespaces `System.*XXX*` and `Microsoft.AzureDevOps.*XXX*`.
+- **Don't alter reserved fields**: Don't alter any fields defined in the reserved namespaces `System.*XXX*` and `Microsoft.VSTS.*XXX*`.
 - **Define custom fields**: To have a different list of values in the pick list fields, define your own custom field.
 
 #### Error example
@@ -1744,7 +1744,7 @@ Edit the definition files for work item types that contain the named field to re
 Bug.xml has the priority field defined, but has a different list of values than expected.
 
 ```xml
-    <FIELD name="Priority" refname="Microsoft.AzureDevOps.Common.Priority" type="Integer" reportable="dimension">
+    <FIELD name="Priority" refname="Microsoft.VSTS.Common.Priority" type="Integer" reportable="dimension">
         <ALLOWEDVALUES expanditems="true">
         <LISTITEM value="0"/>
         <LISTITEM value="1"/>
@@ -1758,7 +1758,7 @@ Bug.xml has the priority field defined, but has a different list of values than 
 
 Corrected Bug.xml including a new field
 ```xml
-      <FIELD name="Priority" refname="Microsoft.AzureDevOps.Common.Priority" type="Integer" reportable="dimension">
+      <FIELD name="Priority" refname="Microsoft.VSTS.Common.Priority" type="Integer" reportable="dimension">
         <HELPTEXT>Business importance. 1=must fix; 4=unimportant.</HELPTEXT>
         <ALLOWEDVALUES expanditems="true">
           <LISTITEM value="1"/>

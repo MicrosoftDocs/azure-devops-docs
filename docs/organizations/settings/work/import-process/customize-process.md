@@ -270,9 +270,9 @@ Identity fields correspond to fields used to contain account, user, or group nam
 | Authorized As    | `System.AuthorizedAs`                      |
 | Changed By       | `System.ChangedBy`                         |
 | Created By       | `System.CreatedBy`                         |
-| Activated By     | `Microsoft.AzureDevOps.Common.ActivatedBy` |
-| Closed By        | `Microsoft.AzureDevOps.Common.ClosedBy`    |
-| Resolved By      | `Microsoft.AzureDevOps.Common.ResolvedBy`  |
+| Activated By     | `Microsoft.VSTS.Common.ActivatedBy`        |
+| Closed By        | `Microsoft.VSTS.Common.ClosedBy`           |
+| Resolved By      | `Microsoft.VSTS.Common.ResolvedBy`         |
 
 ##### Add a custom identity field
 
