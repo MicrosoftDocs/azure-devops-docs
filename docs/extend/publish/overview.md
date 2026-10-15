@@ -79,21 +79,44 @@ If the packaged `.vsix` exceeds 50 MB, optimize it:
 
 [!INCLUDE [Package_extension](../includes/procedures/publish.md)]
 
-## Publish with OpenID Connect
+## Publish with OIDC Trusted Publishing
 
-Use OpenID Connect (OIDC) and workload identity federation to automate extension publishing without storing a personal access token (PAT).
+Trusted Publishing lets you publish from supported CI/CD providers without storing a long-lived personal access token (PAT). Visual Studio Marketplace uses OpenID Connect (OIDC) or Microsoft Entra workload identity federation to verify the publishing workflow.
 
-> [!IMPORTANT]
-> OIDC publishing with Azure Pipelines is available in Azure DevOps Services.
+### Supported CI/CD providers
 
-For Azure DevOps extensions, use an Azure Pipelines service connection backed by a Microsoft Entra service principal or managed identity:
+| Provider | Status | Marketplace setup |
+| -------- | ------ | ----------------- |
+| **GitHub Actions** | Supported | Create a policy on the publisher's **Trusted Publishing** page. |
+| **Azure Pipelines** | Supported | Use a Microsoft Entra-backed workload identity federation service connection and add its identity as a publisher contributor. No Marketplace policy is required. |
+| **Other OIDC providers** | Not currently supported | Providers such as GitLab CI and CircleCI aren't supported at this time. |
+
+### Get started with GitHub Actions
+
+1. Sign in to the [Visual Studio Marketplace publisher management portal](https://marketplace.visualstudio.com/manage).
+1. Open your publisher and select **Trusted Publishing**.
+1. Create a policy that identifies the GitHub repository and workflow allowed to publish. You can optionally restrict the policy to a GitHub environment.
+1. Grant the workflow permission to request a GitHub OIDC token:
+
+   ```yaml
+   permissions:
+     contents: read
+     id-token: write
+   ```
+
+1. Publish with an OIDC-capable Marketplace client.
+
+For a private repository, run the configured workflow within 48 hours of creating the policy. The first successful token exchange permanently activates the policy.
+
+### Publish from Azure Pipelines
+
+Azure Pipelines uses an Azure DevOps service connection with workload identity federation instead of a Marketplace Trusted Publishing policy:
 
 1. [Configure an Azure Pipelines service connection that uses workload identity federation](../../pipelines/library/add-devops-entra-service-connection.md#step-2-create-the-service-connection).
 1. [Add the service principal or managed identity as a member of your Visual Studio Marketplace publisher](/visualstudio/extensibility/walkthrough-publishing-a-visual-studio-extension#add-additional-users-to-manage-your-publisher-account), and grant it the **Contributor** role.
-1. Use the service connection to acquire a Microsoft Entra token and publish with `tfx-cli`. For more information, see [Publish with a Microsoft Entra token](./command-line.md#publish-with-a-microsoft-entra-token).
+1. Configure the publishing step to use the workload identity federation service connection.
 
-> [!NOTE]
-> You don't create a policy on the Marketplace **Trusted Publishing** page for Azure Pipelines. GitHub Actions Trusted Publishing policies are used for Visual Studio Code and Visual Studio extension publishing and aren't currently supported by `tfx-cli` for Azure DevOps extensions.
+For more information, see the [Trusted Publishing documentation](https://aka.ms/vsm/trustedpublishing).
 
 ## Share your extension
 
