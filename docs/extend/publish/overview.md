@@ -8,7 +8,7 @@ ms.topic: how-to
 monikerRange: '<= azure-devops'
 ms.author: chcomley
 author: chcomley
-ms.date: 04/03/2026
+ms.date: 10/15/2026
 ms.custom: engagement-fy23, sfi-image-nochange, UpdateFrequency3
 ---
 
@@ -78,6 +78,22 @@ If the packaged `.vsix` exceeds 50 MB, optimize it:
 ## Publish your extension
 
 [!INCLUDE [Package_extension](../includes/procedures/publish.md)]
+
+## Publish with OpenID Connect
+
+Use OpenID Connect (OIDC) and workload identity federation to automate extension publishing without storing a personal access token (PAT).
+
+> [!IMPORTANT]
+> OIDC publishing with Azure Pipelines is available in Azure DevOps Services.
+
+For Azure DevOps extensions, use an Azure Pipelines service connection backed by a Microsoft Entra service principal or managed identity:
+
+1. [Configure an Azure Pipelines service connection that uses workload identity federation](../../pipelines/library/add-devops-entra-service-connection.md#step-2-create-the-service-connection).
+1. [Add the service principal or managed identity as a member of your Visual Studio Marketplace publisher](/visualstudio/extensibility/walkthrough-publishing-a-visual-studio-extension#add-additional-users-to-manage-your-publisher-account), and grant it the **Contributor** role.
+1. Use the service connection to acquire a Microsoft Entra token and publish with `tfx-cli`. For more information, see [Publish with a Microsoft Entra token](./command-line.md#publish-with-a-microsoft-entra-token).
+
+> [!NOTE]
+> You don't create a policy on the Marketplace **Trusted Publishing** page for Azure Pipelines. GitHub Actions Trusted Publishing policies are used for Visual Studio Code and Visual Studio extension publishing and aren't currently supported by `tfx-cli` for Azure DevOps extensions.
 
 ## Share your extension
 
