@@ -267,7 +267,6 @@ Use OAuth or an API token to define a connection to Bitbucket Cloud. For pipelin
 
 For Email and API Token authentication, grant the following [Bitbucket API token permissions](https://support.atlassian.com/bitbucket-cloud/docs/api-token-permissions/):
 
-
 - `read:pullrequest:bitbucket`
 - `read:repository:bitbucket`
 - `read:webhook:bitbucket`
