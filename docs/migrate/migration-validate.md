@@ -59,7 +59,7 @@ The most common way to start validation is by specifying the URL of the team pro
 
 When the migrator tool completes, it generates log files and results displayed on the command prompt screen. If no errors occur and all validation checks pass, your team project collection is ready for the next phase. In case validation checks fail, review the log files to identify errors, and then address them. 
 
-Focus on the `Migrator.log` file, which contains essential details about the validation checks and helps you preserve customization. The other files correspond to specific validation errors based on their names. Search for the string "Validation - Starting validation of project 1." Each project is validated. Scan through all the projects and search for any lines that contain a prefix of `[Error...` 
+Focus on the `DataMigrationTool.log` file, which contains essential details about the validation checks and helps you preserve customization. The other files correspond to specific validation errors based on their names. Search for the string "Validation - Starting validation of project 1." Each project is validated. Scan through all the projects and search for any lines that contain a prefix of `[Error...` 
 
 Also, the `TryMatchOobProcesses.log` lists errors related to projects that use Out-of-Box (OOB) processes (such as Agile, Scrum, or CMMI). If a project uses an OOB process without customizations, the project is included in the inherited model. Importantly, errors in this file don’t hinder the migration process.
 
@@ -81,7 +81,7 @@ The primary errors we find are process template issues. These issues stem from e
 Consider the following tools for resolving process errors: 
 
 - Use the witadmin.exe command-line tool included with Visual Studio installations. Detailed technical documentation on addressing these errors is available at this link. 
-- Automate exporting process templates for each team project using an undocumented migrator tool command: Migrator validates /collection:http://localhost:8080/tfs/DefaultCollection /SaveProcesses. 
+- Automate exporting process templates for each team project using an undocumented migrator tool command: Migrator validate /collection:http://localhost:8080/tfs/DefaultCollection /SaveProcesses. 
 - Explore the TFS Team Project Manager on GitHub (link). It allows you to compare team projects with known process templates, including out-of-the-box templates.
 
 To fix the errors, change the XML syntax and apply the changes back to the project.
@@ -146,7 +146,7 @@ Do the following steps, for each project, to align your process:
 
 1. Identify the initial process your project started with (Scrum, Agile, or CMMI). 
 2. Visit the Process Customization Scripts on GitHub and download the repository. 
-3. Focus on the contents in the Migration folder. 
+3. Focus on the contents in the Import folder. 
 4. Use the following `ConformProject.ps1` script to align a project of your choice with the Agile system process. This action updates the entire project to be Agile. 
 
 ```cmdline

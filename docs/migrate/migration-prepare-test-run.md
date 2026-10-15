@@ -27,7 +27,7 @@ Generate the migration specification and related files to queue the migration of
 
 1. Run the Data Migration Tool prepare command with the following parameters: 
 
-    `/collection:http://localhost:8080/tfs/DefaultCollection/ tenantDomainName:contoso.com /Region:CUS` 
+    `/collection:http://localhost:8080/tfs/DefaultCollection /tenantDomainName:contoso.com /Region:CUS` 
 
    - Use the tenant domain name option as the name of your company’s Microsoft Entra ID tenant.  
    - The prepare command requires internet access. If your Azure DevOps Server lacks internet connectivity, run the command from a different computer. 

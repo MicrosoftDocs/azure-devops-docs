@@ -26,7 +26,7 @@ Ensure your test runs result in zero errors before you officially migrate to Azu
 Do the following steps to queue the migration with the Data Migration Tool.  
 
 1. Ensure the migration specification file is complete. 
-1. Use the following command to queue the migration: `Migration /importFile:C:\TFSDataImportFiles\import.json`. 
+1. Use the following command to queue the migration: `Migrator import /importFile:C:\TFSDataImportFiles\import.json`. 
     - Ownership: The user who queued the migration owns the migrated organization. 
     - Notifications: The owner receives an email for migration success or [failure](migration-troubleshooting.md).
 

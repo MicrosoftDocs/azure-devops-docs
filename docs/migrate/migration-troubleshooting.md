@@ -467,7 +467,7 @@ The IPs that the error message lists are for Azure DevOps Services. Azure DevOps
 
 The Data Migration Tool doesn't support migrating multiple copies of the **SAME** collection. However, it **DOES** support migrating **split** copies of a collection. Change the GUID for the **_DataImportCollectionID_**.
 
-From SQL Server Management Studio (SSMS), open the extended properties for the split copies that you didn't migrate yet. Add a newly generated GUID to the "TFS_DATAIMPORT_COLLECTIONID" property. Then rerun the **prepare** command and use the new **migration.json** file to queue the migration.
+From SQL Server Management Studio (SSMS), open the extended properties for the split copies that you didn't migrate yet. Add a newly generated GUID to the "TFS_DATAIMPORT_COLLECTIONID" property. Then rerun the **prepare** command and use the new **import.json** file to queue the migration.
 
 #### VS403379
 
