@@ -508,7 +508,7 @@ As a member of the **Project Administrators** group, you can add members to a pr
 ::: moniker range="< azure-devops"
 
 > [!NOTE]
-> For on-premises Azure DevOps, all email actions require a [configurated SMTP server](/azure/devops/server/admin/setup-customize-alerts).
+> For on-premises Azure DevOps, all email actions require a [configured SMTP server](/azure/devops/server/admin/setup-customize-alerts).
 
 :::moniker-end
 

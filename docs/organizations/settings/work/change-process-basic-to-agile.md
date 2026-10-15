@@ -1,7 +1,7 @@
 ---
 title: Change process from Basic to Agile
 titleSuffix: Azure Boards
-description: Learn how to to change a project process from Basic to Agile in Azure DevOps.
+description: Learn how to change a project process from Basic to Agile in Azure DevOps.
 ms.service: azure-boards
 ms.topic: how-to
 ms.author: chcomley

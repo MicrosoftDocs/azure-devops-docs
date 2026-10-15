@@ -1019,7 +1019,7 @@ Removed the `State` element for Committed.
 <a id="TF402552"></a>
 ### TF402552: Element *[elementName]* requires that for work item type *[witName]* you map exactly one state to metastate *[metastateName]* for the following states: *[stateNames]*.
 
-Review the `STATES` section in the ProcessConfiguration.xml file for the named element and ensure that each sate listed in the error message is present and mapped to a metastate.  
+Review the `STATES` section in the ProcessConfiguration.xml file for the named element and ensure that each state listed in the error message is present and mapped to a metastate.  
 
 #### Error example
 
