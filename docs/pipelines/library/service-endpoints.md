@@ -5,7 +5,7 @@ description: Learn how to manage Azure Pipelines service connections and get a r
 ms.topic: concept-article
 ms.author: ronai
 author: RoopeshNair
-ms.date: 10/06/2026
+ms.date: 10/15/2026
 monikerRange: '<= azure-devops'
 ---
 
@@ -267,13 +267,14 @@ Use OAuth or an API token to define a connection to Bitbucket Cloud. For pipelin
 
 For Email and API Token authentication, grant the following [Bitbucket API token permissions](https://support.atlassian.com/bitbucket-cloud/docs/api-token-permissions/):
 
-- `read:workspace:bitbucket`
+- `read:pullrequest:bitbucket`
 - `read:repository:bitbucket`
 - `read:webhook:bitbucket`
 - `write:webhook:bitbucket`
 - `delete:webhook:bitbucket`
+- `read:workspace:bitbucket`
 
-These permissions let Azure Pipelines list your workspaces and repositories and read, create, update, and delete repository webhooks. API token write permissions don't implicitly grant the corresponding read permissions.
+These permissions allow Azure Pipelines to list your workspaces, repositories, and pull requests. They also allow it to read, create, update, and delete repository webhooks. API token write permissions don't implicitly grant the corresponding read permissions.
 
 Select **Verify** or **Authorize** to validate your connection information. Azure DevOps rejects new or updated Email and API Token service connections when the API token doesn't include all required permissions.
 
