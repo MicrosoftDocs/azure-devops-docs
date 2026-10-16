@@ -96,15 +96,9 @@ Trusted Publishing lets you publish from supported CI/CD providers without stori
 1. Sign in to the [Visual Studio Marketplace publisher management portal](https://marketplace.visualstudio.com/manage).
 1. Open your publisher and select **Trusted Publishing**.
 1. Create a policy that identifies the GitHub repository and workflow allowed to publish. You can optionally restrict the policy to a GitHub environment.
-1. Grant the workflow permission to request a GitHub OIDC token:
-
-   ```yaml
-   permissions:
-     contents: read
-     id-token: write
-   ```
-
-1. Publish with an OIDC-capable Marketplace client.
+1. Follow the OIDC instructions for your publishing client:
+   - Visual Studio Code extensions with `vsce`: `[VSCE-OIDC-DOC-URL]`
+   - Visual Studio extensions with `VsixPublisher.exe`: `[VSIXPUBLISHER-OIDC-DOC-URL]`
 
 For a private repository, run the configured workflow within 48 hours of creating the policy. The first successful token exchange permanently activates the policy.
 
