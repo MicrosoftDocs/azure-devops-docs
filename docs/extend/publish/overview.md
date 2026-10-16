@@ -116,7 +116,7 @@ Azure Pipelines uses an Azure DevOps service connection with workload identity f
 1. [Add the service principal or managed identity as a member of your Visual Studio Marketplace publisher](/visualstudio/extensibility/walkthrough-publishing-a-visual-studio-extension#add-additional-users-to-manage-your-publisher-account), and grant it the **Contributor** role.
 1. Configure the publishing step to use the workload identity federation service connection.
 
-For more information, see the Trusted Publishing blog post at `[BLOG-POST-URL]`.
+For more information, see the OIDC Trusted Publishing blog post at `[BLOG-POST-URL]`.
 
 ## Share your extension
 
