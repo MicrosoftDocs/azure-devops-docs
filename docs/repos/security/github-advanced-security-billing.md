@@ -8,7 +8,7 @@ ms.topic: overview
 ms.author: laurajiang
 author: laurajjiang
 monikerRange: 'azure-devops'
-ms.date: 08/11/2025
+ms.date: 10/12/2026
 zone_pivot_groups: configure-ghazdo-bundled-individual-products
 ms.custom: cross-service, sfi-image-nochange
 ---
@@ -94,6 +94,17 @@ Use the following table for an example of how active committers and your potenti
 | August 1 | A PCA enables Secret Protection for a second repository, AdventureWorks. In the last 90 days, 30 developers committed to that repository. 10 of those developers also committed to Fabrikam and don't consume more licenses, so AdventureWorks only contributes 20 additional unique committers. | 20 + 20 = **40** |
 
 :::zone-end
+
+## Copilot Autofix usage charges
+
+Generating a fix with Copilot Autofix consumes AI credits. These usage charges are separate from active-committer license charges. They appear on the Azure subscription linked to your Azure DevOps organization under the **AI Credit for AzDO GAC** meter.
+
+In Azure Cost analysis, filter **Meter** to **AI Credit for AzDO GAC**, filter the `_organizationname_` tag to the organizations you want to review, and set **Group by** to the `_projectname_` tag. To see costs by date and project, select **Daily** granularity and the **Table** visualization. For screenshots and the full procedure, see [View Autofix costs by project](github-advanced-security-autofix.md#view-autofix-costs-by-project).
+
+> [!NOTE]
+> GitHub Copilot budget settings and user limits configured on GitHub don't apply to Copilot Autofix meter spend in Azure DevOps.
+
+For details about AI credits and usage charges, see [Copilot Autofix billing](github-advanced-security-autofix.md#billing). Copilot Autofix is in limited public preview.
 
 ## Related articles
 

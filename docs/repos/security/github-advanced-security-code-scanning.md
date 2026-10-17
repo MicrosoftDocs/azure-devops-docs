@@ -314,6 +314,12 @@ By default, the alerts page shows code scanning results for the default branch o
 
 The status of a given alert reflects the state for the default branch and latest run pipeline, even if the alert exists on other branches and pipelines. 
 
+### Generate a fix with Copilot Autofix
+
+For a supported alert, select **Generate fix** to have Copilot Autofix propose a change and open a pull request. Review, test, and merge the proposed fix, then run code scanning again to verify the result.
+
+Agentic Autofix can use checked-in repository instructions and relevant skills to help the proposed fix follow your coding standards. It is in limited public preview. For prerequisites, enablement, and repository-context guidance, see [Copilot Autofix for code security alerts](github-advanced-security-autofix.md).
+
 ### Automatic cleanup of alerts from stale pipeline configurations
 
 [!INCLUDE [github-advanced-security-stale-alert-cleanup](includes/github-advanced-security-stale-alert-cleanup.md)]
@@ -354,7 +360,7 @@ To see the entire set of results for your pull request branch, navigate to **Rep
 
 ## Related articles
 
-- [Copilot Autofix for code scanning](github-advanced-security-code-scanning-autofix.md)
+- [Copilot Autofix for code security alerts](github-advanced-security-autofix.md)
 - [Troubleshoot code scanning](github-advanced-security-code-scanning-troubleshoot.md)
 - [Set up dependency scanning](github-advanced-security-dependency-scanning.md)
 - [Set up secret scanning](github-advanced-security-secret-scanning.md)

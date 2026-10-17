@@ -58,10 +58,6 @@
     href: security/configure-github-advanced-security-features.md
   - name: Permissions for GitHub Advanced Security
     href: security/github-advanced-security-permissions.md
-  - name: Billing for GitHub Advanced Security
-    href: security/github-advanced-security-billing.md
-  - name: Security Overview for GitHub Advanced Security
-    href: security/github-advanced-security-security-overview.md
   - name: Secret Scanning for GitHub Advanced Security
     items:
     - name: Configure secret scanning
@@ -82,14 +78,18 @@
     items:
     - name: Configure code scanning
       href: security/github-advanced-security-code-scanning.md
-    - name: Copilot Autofix for code scanning
-      href: security/github-advanced-security-code-scanning-autofix.md
     - name: Using custom queries and query packs
       href: security/github-advanced-security-code-scanning-queries.md
     - name: Integrate third-party code scanning tools
       href: security/github-advanced-security-code-scanning-third-party.md
     - name: Troubleshoot code scanning
       href: security/github-advanced-security-code-scanning-troubleshoot.md
+  - name: Copilot Autofix for code security alerts
+    href: security/github-advanced-security-autofix.md
+  - name: Security Overview for GitHub Advanced Security
+    href: security/github-advanced-security-security-overview.md
+  - name: Billing for GitHub Advanced Security
+    href: security/github-advanced-security-billing.md
 - name: Integrations
   items:
   - name: Azure Repos with Slack

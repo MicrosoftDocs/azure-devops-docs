@@ -1,6 +1,11 @@
 {
   "redirections": [
     {
+      "source_path": "docs/repos/security/github-advanced-security-code-scanning-autofix.md",
+      "redirect_url": "/azure/devops/repos/security/github-advanced-security-autofix",
+      "redirect_document_id": true
+    },
+    {
       "source_path": "docs/migrate/enterprise-live-migration/overview.md",
       "redirect_url": "/azure/devops/repos/enterprise-live-migrations/overview",
       "redirect_document_id": true
