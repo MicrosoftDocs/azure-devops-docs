@@ -9,7 +9,7 @@ ms.custom: cross-service
 ms.author: laurajiang
 author: laurajjiang
 monikerRange: 'azure-devops'
-ms.date: 08/14/2026
+ms.date: 10/15/2026
 zone_pivot_groups: configure-ghazdo-bundled-individual-products
 ---
 
@@ -197,9 +197,9 @@ The agent pool and scan schedule for default setup are shared across all reposit
 
 To generate alerts, default setup runs on a weekly schedule. Any detected vulnerabilities are displayed in the Advanced Security tab. When you enable CodeQL default setup at the organization or project level, an initial scan run is automatically queued for all affected repositories, so results begin appearing without waiting for the next scheduled run.
 
-### Copilot Autofix for code scanning
+### Copilot Autofix for code security alerts
 
-Copilot Autofix is an AI-powered feature that analyzes CodeQL code scanning alerts and proposes targeted fixes. When you generate a fix for a supported alert, Copilot Autofix creates a pull request with the proposed code change so you can review, edit, and merge it through your normal pull request workflow.
+Copilot Autofix provides agentic remediation for code scanning alerts from CodeQL and third-party tools, and for dependency scanning security vulnerabilities. The Copilot coding agent can use checked-in repository instructions and relevant skills to review and refine a proposed fix. It creates a pull request with the proposed change, which you review, test, and merge through your normal pull request workflow.
 
 You can enable Copilot Autofix at the organization, project, or repository level.
 
@@ -210,11 +210,30 @@ You can enable Copilot Autofix at the organization, project, or repository level
 
 Keep the following constraints in mind when using Copilot Autofix:
 
-- Autofix applies only to **CodeQL-based code scanning alerts**. It doesn't generate fixes for dependency scanning or secret scanning alerts.
-- Autofix proposes a fix - it doesn't automatically remediate the alert. You must review the pull request, validate that the change is correct, and merge it manually before the alert is closed.
+- Autofix supports **code scanning alerts** and **dependency vulnerability alerts**. It doesn't generate fixes for malware findings or secret scanning alerts.
+- Autofix proposes a fix; it doesn't automatically remediate the alert. Review, test, and merge the pull request, then run the relevant scanner so Advanced Security can update the alert state.
 - If an Autofix run fails, a prominent failure state is shown in the alert detail view with an option to retry the run.
 
-For more information on enabling and using Copilot Autofix, see [Copilot Autofix for code scanning](github-advanced-security-code-scanning-autofix.md).
+:::zone pivot="bundled-ghazdo"
+To enable Autofix for a repository:
+
+1. Go to **Project settings** > **Repos** > **Repositories** and select your repository.
+1. With **Advanced Security** enabled, select **Autofix for security alerts**.
+
+:::image type="content" source="media/configure-github-advanced-security-features/autofix-enablement-bundled.png" lightbox="media/configure-github-advanced-security-features/autofix-enablement-bundled.png" alt-text="Screenshot of repository settings with Autofix for security alerts enabled under bundled Advanced Security.":::
+:::zone-end
+
+:::zone pivot="standalone-ghazdo"
+To enable Autofix for a repository:
+
+1. Go to **Project settings** > **Repos** > **Repositories** and select your repository.
+1. With the **Code Security plan** enabled, select **Options** to open the **Code Security features** panel.
+1. Select **Autofix for security alerts**, and then select **Apply**.
+
+:::image type="content" source="media/configure-github-advanced-security-features/autofix-enablement-standalone.png" lightbox="media/configure-github-advanced-security-features/autofix-enablement-standalone.png" alt-text="Screenshot of the standalone Code Security features panel with Autofix for security alerts enabled and the Azure Pipelines agent pool shown.":::
+:::zone-end
+
+The same Autofix setting covers both supported alert types. Enabling it doesn't configure scanning or generate fixes automatically. Generating a fix consumes AI credits. For more information, see [Copilot Autofix for code security alerts](github-advanced-security-autofix.md).
 
 ## Set up pull request annotations 
 
@@ -254,7 +273,7 @@ To disable Advanced Security, any alerts and state of alerts get retained in the
 
 * [Available pull request status checks](../git/available-pr-status-checks.md)
 * [Code scanning alerts for GitHub Advanced Security for Azure DevOps](github-advanced-security-code-scanning.md)
-* [Copilot Autofix for code scanning](github-advanced-security-code-scanning-autofix.md)
+* [Copilot Autofix for code security alerts](github-advanced-security-autofix.md)
 * [Dependency scanning alerts for GitHub Advanced Security for Azure DevOps](github-advanced-security-dependency-scanning.md)
 * [Secret scanning alerts for GitHub Advanced Security for Azure DevOps](github-advanced-security-secret-scanning.md)
 * [Permissions for GitHub Advanced Security for Azure DevOps](github-advanced-security-permissions.md)
