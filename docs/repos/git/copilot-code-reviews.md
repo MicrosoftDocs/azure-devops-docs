@@ -117,29 +117,10 @@ Repeat these steps for each target branch where you want automatic reviews. You 
 
 ### Select an agent pool
 
-Copilot code review runs review jobs by using an Azure Pipelines agent pool. By default, it uses the default Azure Pipelines pool in your organization.
-
-Some organizations disable the default Azure Pipelines pool. In that configuration, Copilot code review can't run until you select a supported alternative pool.
-
-If your organization has configured a [Managed DevOps Pool](../../managed-devops-pools/overview.md), you can select it to run Copilot code review instead of the default pool.
-
-When selecting an image for Managed DevOps Pool, ensure you select the latest `Ubuntu Server`.
-
-:::image type="content" source="media/copilot-code-reviews/select-managed-pool.png" alt-text="Screenshot of the Managed DevOps Pool image selection with the latest Ubuntu Server image selected." lightbox="media/copilot-code-reviews/select-managed-pool.png":::
-
-Windows images aren't supported for Copilot Code Reviews. Don't mix your pool with both Ubuntu and Windows agents.
+Copilot code review uses an Azure Pipelines agent pool to run code review jobs. By default, it uses your organization's default Azure Pipelines agent pool.
 
 > [!NOTE]
-> Self-hosted agent pools aren't supported for Copilot code review.
-
-1. Select **Organization settings** > **Repos** > **Repositories**.
-1. Under **GitHub Copilot code review**, select **Compute pool** from the dropdown menu.
-
-   Your organization's compute pool configuration determines the available pools. If no pools are available, contact your organization administrator.
-
-1. Select **Save**.
-
-The selected pool processes all Copilot code reviews for repositories in your organization. You can change this setting at any time. To use different pools for different projects or repositories, configure pool assignments through [Managed DevOps Pools](../../managed-devops-pools/configure-pool-settings.md).
+> Copilot code review requires Azure Pipelines. Self-hosted agent pools and Managed DevOps Pools are not currently supported.
 
 ### Customize Copilot's review behavior
 
