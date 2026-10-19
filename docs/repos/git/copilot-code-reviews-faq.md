@@ -62,7 +62,7 @@ A: Use these official references:
 - [GitHub General Privacy Statement](https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement)
 - [About GitHub Copilot code review](https://docs.github.com/copilot/using-github-copilot/code-review/using-copilot-code-review)
 
-## Preview limitations
+## Limitations
 
 ### Q: Are there preview-specific limitations or exceptions I should be aware of?
 
