@@ -113,7 +113,7 @@ If you see a message that indicates **no matching federated identity record foun
 |---------|---------------------------------------------------------------------|-------------------------------------------------------------------------|
 | Issuer  | `https://vstoken.dev.azure.com/<organization id>`                   | `https://login.microsoftonline.com/<microsoft entra tenant id>/v2.0`    |
 | Subject | `sc://<organization name>/<project name>/<service connection name>` | `<microsoft entra prefix>/sc/<organization id>/<service connection id>` |
-| Token exchange | Can be exchanged for access tokens from Microsoft Entra ID or other identity providers. | Can only be exchanged for Microsoft Entra access tokens. |
+| Token exchange | Can be exchanged for access tokens from Microsoft Entra ID or other identity providers | Can only be exchanged for Microsoft Entra access tokens |
 
 You can fix the issuer URL by editing and saving the service connection to update the issuer URL. If Azure DevOps didn't create the identity, the issuer URL must be updated manually. For Azure identities, the issuer URL automatically updates.  
 
