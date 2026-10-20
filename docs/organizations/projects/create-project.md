@@ -61,7 +61,9 @@ You can create up to 1,000 projects within an organization in Azure DevOps. For 
 > [!IMPORTANT]  
 > When you create a project from the web portal, Azure DevOps ignores several process template files. Specifically, the files that would create a Report Manager site aren't supported. You can add reports later by following the instructions provided in [Add reports to a teams project](/previous-versions/azure/devops/report/admin/add-reports-to-a-team-project). 
 
-There's no limit on the number of projects that you can create within a project collection. However, for performance purposes, limit the number to 300 or fewer. For more information, see [Work tracking, process, and project limits](../settings/work/object-limits.md). 
+Azure DevOps Server supports a maximum of 1,000 projects per collection. However, performance might degrade as the number of projects approaches 300, affecting experiences such as connecting to a project from Visual Studio or Excel.
+
+For more information, see [Work tracking, process, and project limits](../settings/work/object-limits.md). 
 
 ::: moniker-end
 

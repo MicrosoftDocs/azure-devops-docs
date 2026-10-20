@@ -166,7 +166,7 @@ Azure DevOps Services limits each organization to 1,000 projects. When you go be
 
 ::: moniker range="< azure-devops"
 
-For on-premises Azure DevOps Server, there are no hard limits on projects per collection, but performance problems might arise as the number of projects nears 300. Certain experiences, like connecting to a project from Visual Studio, might degrade.
+Azure DevOps Server supports a maximum of 1,000 projects per collection. However, performance might degrade as the number of projects approaches 300, affecting experiences such as connecting to a project from Visual Studio or Excel.
 
 When migrating to Azure DevOps Services, observe a maximum limit of 1,000 projects. If your collection exceeds this limit, split the collection or delete older projects. For more information, see [Migrate data from Azure DevOps Server to Azure DevOps Services](../../../migrate/migration-overview.md).
 
