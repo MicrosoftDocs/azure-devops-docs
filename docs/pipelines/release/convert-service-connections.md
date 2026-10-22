@@ -2,7 +2,7 @@
 title: Convert service connections from the Azure DevOps issuer to the Microsoft Entra issuer
 description: Learn how to convert workload identity federation service connections that use the deprecated Azure DevOps issuer to the Microsoft Entra issuer.
 ms.topic: how-to
-ms.date: 06/15/2026
+ms.date: 10/21/2026
 monikerRange: 'azure-devops'
 ---
 
@@ -33,9 +33,9 @@ Affected service connections can include Azure Resource Manager service connecti
 
 ## Before you begin
 
-Before you convert a service connection, make sure that you have permission to manage the service connection in Azure DevOps.
+Before you convert a service connection, ensure that you have permission to manage the service connection in Azure DevOps.
 
-If you can edit the service connection in Azure DevOps but don't have permission to update the identity in Azure or Microsoft Entra, you can still start the conversion. Azure DevOps provides the issuer and subject identifier values that you can hand off to an Azure administrator or identity owner to complete the federated credential setup.
+If you can edit the service connection in Azure DevOps but don't have permission to update the identity in Azure or Microsoft Entra, you can still start the conversion. Azure DevOps provides the issuer and subject identifier values that you can give to an Azure administrator or identity owner to complete the federated credential setup.
 
 | Area | Permission needed |
 | --- | --- |
@@ -46,7 +46,7 @@ If you can edit the service connection in Azure DevOps but don't have permission
 
 ## Automatically convert an affected service connection
 
-Use the conversion experience in Azure DevOps when it's available. This automatically updates the service connection so that it uses the Microsoft Entra issuer.
+Use the conversion experience in Azure DevOps when it's available. This experience automatically updates the service connection so that it uses the Microsoft Entra issuer.
 
 Affected service connections appear at the top of the service connection list with a warning that they require action. Convert the existing service connection instead of recreating it. Reusing the existing service connection avoids unnecessary updates to pipelines that already reference it.
 
@@ -56,23 +56,23 @@ To convert a service connection:
 
 1. Find the service connection that's flagged with the Azure DevOps issuer warning.
 
-    :::image type="content" source="media\flagged-service-connections.png" alt-text="Screenshot that shows service connections flagged with the Azure DevOps issuer warning." lightbox="media/flagged-service-connections.png":::
+    :::image type="content" source="media/flagged-service-connections.png" alt-text="Screenshot that shows service connections flagged with the Azure DevOps issuer warning." lightbox="media/flagged-service-connections.png":::
 
 1. Open the service connection, and then select **Update**.
 
-    :::image type="content" source="media\update-flagged-service-connection.png" alt-text="Screenshot that shows the Update action for a flagged service connection." lightbox="media/update-flagged-service-connection.png":::
+    :::image type="content" source="media/update-flagged-service-connection.png" alt-text="Screenshot that shows the Update action for a flagged service connection." lightbox="media/update-flagged-service-connection.png":::
 
 1. Select **Update** again to confirm your choice and update the service connection to use the Entra issuer.
 
 1. A pane shows that the update is in progress. The update can take a few minutes. When the update finishes, a dialog box confirms that the conversion succeeded. Your service connection now uses the Microsoft Entra issuer.
 
-    :::image type="content" source="media\service-connection-conversion-succeeded.png" alt-text="Screenshot that shows a confirmation that the service connection conversion succeeded." lightbox="media/service-connection-conversion-succeeded.png":::
+    :::image type="content" source="media/service-connection-conversion-succeeded.png" alt-text="Screenshot that shows a confirmation that the service connection conversion succeeded." lightbox="media/service-connection-conversion-succeeded.png":::
 
 ## Manually convert an affected service connection
 
-If automatic conversion fails, you can manually add the federated credential to the app registration or managed identity that the service connection uses.
+If automatic conversion fails, manually add the federated credential to the app registration or managed identity that the service connection uses.
 
-Manual fallback might be required when:
+You might need to use manual fallback when:
 
 - You don't have permission to update the identity in Microsoft Entra.
 - Another team owns the identity.
@@ -88,7 +88,7 @@ To create the federated credential and complete the service connection conversio
 
 1. Enter the **Issuer** and **Subject identifier** values that you copied from Azure DevOps.
 
-    :::image type="content" source="media\add-credential-in-azure.png" alt-text="Screenshot that shows entering the issuer and subject identifier values when adding a federated credential in Azure." lightbox="media/add-credential-in-azure.png":::
+    :::image type="content" source="media/add-credential-in-azure.png" alt-text="Screenshot that shows entering the issuer and subject identifier values when adding a federated credential in Azure." lightbox="media/add-credential-in-azure.png":::
 
 1. Complete the remaining fields, and then create the federated credential.
 
@@ -96,7 +96,60 @@ To create the federated credential and complete the service connection conversio
 
 1. Wait a few moments for the federated credential to propagate, and then select **Try again** in Azure DevOps to complete the service connection conversion.
 
-    :::image type="content" source="media\service-connection-manual-conversion.png" alt-text="Screenshot that shows the manual conversion instructions in Azure DevOps." lightbox="media/service-connection-manual-conversion.png":::
+    :::image type="content" source="media/service-connection-manual-conversion.png" alt-text="Screenshot that shows the manual conversion instructions in Azure DevOps." lightbox="media/service-connection-manual-conversion.png":::
+
+## Convert service connection with the Azure CLI
+
+Identity administrators can use Microsoft Graph to find matching federated credentials and convert service connections with the Azure CLI. This workflow requires permission to read and update the app registrations in Microsoft Entra, but doesn't require direct access to the service connections in Azure DevOps.
+
+The following PowerShell example finds single-tenant app registrations with federated credentials for an organization and project. It follows Microsoft Graph pagination links and asks for confirmation before converting each service connection.
+
+> [!NOTE]
+> This Azure CLI sample works only for service connections that use app registrations. Managed identities aren't supported by this sample yet. For service connections that use managed identities, use the conversion experience in Azure DevOps.
+
+Before you run the example:
+
+- Install [PowerShell 7.2 or later](/powershell/scripting/install/installing-powershell) and the [Azure CLI](/cli/azure/install-azure-cli).
+- Replace the tenant, organization, and project placeholders. Set `$project` to an empty string to include all projects in the organization.
+- Sign in with an account that has appropriate Microsoft Graph permission to read and update the affected app registrations. Azure DevOps treats users with permission to create a federated credential for an app registration as owner of the corresponding service connection, for the purpose of service connection conversion only. 
+
+```powershell
+$tenantId = "<tenant-id>"
+$organization = "<organization-name>"
+$project = "<project-name>"
+
+az login --tenant $tenantId --allow-no-subscriptions
+if ($LASTEXITCODE -ne 0) { throw "Azure CLI sign-in failed." }
+
+az extension add --name azure-devops --upgrade
+if ($LASTEXITCODE -ne 0) { throw "Couldn't install or update the Azure DevOps extension." }
+
+$subjectPrefix = if ($project) { "sc://$organization/$project/" } else { "sc://$organization/" }
+$graphUrl = "https://graph.microsoft.com/v1.0/applications?`$count=true&`$expand=federatedIdentityCredentials&`$filter=signInAudience eq 'AzureADMyOrg' and federatedIdentityCredentials/any(f:startsWith(f/subject,'$subjectPrefix'))&`$select=displayName,federatedIdentityCredentials"
+
+do {
+    $response = az rest --method get --url $graphUrl --headers ConsistencyLevel=eventual -o json
+    if ($LASTEXITCODE -ne 0) { throw "Couldn't retrieve applications from Microsoft Graph." }
+    $page = $response | ConvertFrom-Json -ErrorAction Stop
+
+    foreach ($application in $page.value) {
+        foreach ($credential in $application.federatedIdentityCredentials) {
+            if (!$credential.subject.StartsWith($subjectPrefix, [StringComparison]::Ordinal) -or
+                !$credential.issuer.StartsWith("https://vstoken.dev.azure.com/", [StringComparison]::Ordinal)) {
+                continue
+            }
+
+            $answer = Read-Host "Convert '$($credential.subject)' for '$($application.displayName)'? (y/N)"
+            if ($answer -ne "y") { continue }
+
+            az devops service-endpoint convert --azdo-subject $credential.subject -tenant-id $tenantId
+            if ($LASTEXITCODE -ne 0) { throw "Conversion failed for '$($credential.subject)'." }
+        }
+    }
+
+    $graphUrl = $page.'@odata.nextLink'
+} while ($graphUrl)
+```
 
 ## Limitations
 
@@ -109,12 +162,23 @@ Some scenarios aren't part of this deprecation or its initial conversion experie
 
 The following issues can occur when you convert or use your service connections:
 
-- [Pipeline shows a deprecated Azure DevOps issuer warning](#pipeline-shows-a-deprecated-azure-devops-issuer-warning)
-- [Automatic conversion fails](#automatic-conversion-fails)
-- [You can edit the service connection but can't add the federated credential](#you-can-edit-the-service-connection-but-cant-add-the-federated-credential)
-- [Federated credential values don't match](#federated-credential-values-dont-match)
-- [You don't know who owns the app registration or managed identity](#you-dont-know-who-owns-the-app-registration-or-managed-identity)
-- [The service connection uses a multitenant app](#the-service-connection-uses-a-multitenant-app)
+- [Convert service connections from the Azure DevOps issuer to the Microsoft Entra issuer](#convert-service-connections-from-the-azure-devops-issuer-to-the-microsoft-entra-issuer)
+  - [Why conversion is required](#why-conversion-is-required)
+  - [What service connections are affected](#what-service-connections-are-affected)
+  - [Before you begin](#before-you-begin)
+  - [Automatically convert an affected service connection](#automatically-convert-an-affected-service-connection)
+  - [Manually convert an affected service connection](#manually-convert-an-affected-service-connection)
+  - [Convert service connection with the Azure CLI](#convert-service-connection-with-the-azure-cli)
+  - [Limitations](#limitations)
+  - [Troubleshoot workload identity federation scenarios](#troubleshoot-workload-identity-federation-scenarios)
+    - [Pipeline shows a deprecated Azure DevOps issuer warning](#pipeline-shows-a-deprecated-azure-devops-issuer-warning)
+    - [Automatic conversion fails](#automatic-conversion-fails)
+    - [You can edit the service connection but can't add the federated credential](#you-can-edit-the-service-connection-but-cant-add-the-federated-credential)
+    - [Federated credential values don't match](#federated-credential-values-dont-match)
+    - [You don't know who owns the app registration or managed identity](#you-dont-know-who-owns-the-app-registration-or-managed-identity)
+    - [The service connection uses a multitenant app](#the-service-connection-uses-a-multitenant-app)
+  - [Troubleshoot conversion issues](#troubleshoot-conversion-issues)
+  - [Related content](#related-content)
 
 ### Pipeline shows a deprecated Azure DevOps issuer warning
 
